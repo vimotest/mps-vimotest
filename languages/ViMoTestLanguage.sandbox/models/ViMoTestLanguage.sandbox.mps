@@ -37,7 +37,7 @@
       <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
     </node>
     <node concept="2WVz4l" id="1Yc3x6zoKZ8" role="2WV$Zc">
-      <ref role="2WVz4k" node="1Yc3x6zo$jf" resolve="IsChecked" />
+      <ref role="2WVz4k" node="1Yc3x6zo$jf" resolve="Checked" />
     </node>
   </node>
   <node concept="2WVz3E" id="1Yc3x6zo$jf">

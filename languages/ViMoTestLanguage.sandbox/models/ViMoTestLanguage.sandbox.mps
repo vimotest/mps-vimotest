@@ -23,6 +23,7 @@
         <child id="2273207380833616349" name="features" index="2WV$Zc" />
       </concept>
       <concept id="2273207380833615620" name="ViMoTestLanguage.structure.WidgetFeatureRef" flags="ng" index="2WVz4l">
+        <property id="5354405605573450874" name="inherentFeature" index="3dRBvX" />
         <reference id="2273207380833615621" name="widgetFeature" index="2WVz4k" />
       </concept>
     </language>
@@ -30,14 +31,15 @@
   <node concept="2WVz3F" id="1Yc3x6zo$je">
     <property role="TrG5h" value="CheckBox" />
     <property role="3GE5qa" value="widgets" />
+    <node concept="2WVz4l" id="1Yc3x6zoKZ8" role="2WV$Zc">
+      <property role="3dRBvX" value="true" />
+      <ref role="2WVz4k" node="1Yc3x6zo$jf" resolve="Checked" />
+    </node>
     <node concept="2WVz4l" id="1Yc3x6zoTLY" role="2WV$Zc">
       <ref role="2WVz4k" node="1Yc3x6zoTLW" resolve="Visibility" />
     </node>
     <node concept="2WVz4l" id="1Yc3x6zoTM3" role="2WV$Zc">
       <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
-    </node>
-    <node concept="2WVz4l" id="1Yc3x6zoKZ8" role="2WV$Zc">
-      <ref role="2WVz4k" node="1Yc3x6zo$jf" resolve="Checked" />
     </node>
   </node>
   <node concept="2WVz3E" id="1Yc3x6zo$jf">

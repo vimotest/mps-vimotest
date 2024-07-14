@@ -134,6 +134,11 @@
     <property role="TrG5h" value="WidgetFeatureRef" />
     <property role="34LRSv" value="feature ref" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4DeESu7$dLU" role="1TKVEl">
+      <property role="IQ2nx" value="5354405605573450874" />
+      <property role="TrG5h" value="inherentFeature" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="1Yc3x6zozW5" role="1TKVEi">
       <property role="IQ2ns" value="2273207380833615621" />
       <property role="20kJfa" value="widgetFeature" />

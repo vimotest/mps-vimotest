@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:8afb90e1-6eeb-44b9-aed4-0af7c7530fac(ViMoTestLanguage.generator.templates@generator)">
+<model ref="r:8afb90e1-6eeb-44b9-aed4-0af7c7530fac(de.vimotest.widgetdsl.generator.templates@generator)">
   <persistence version="9" />
   <languages>
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
-    <import index="3255" ref="r:3f8a28d8-19f1-4a98-ae2b-f05e49ec6d87(ViMoTestLanguage.structure)" />
+    <import index="3255" ref="r:3f8a28d8-19f1-4a98-ae2b-f05e49ec6d87(de.vimotest.widgetdsl.structure)" />
   </imports>
   <registry>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">

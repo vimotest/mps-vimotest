@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:72110f26-d77a-4fe2-add0-e841f4017b83(ViMoTestLanguage.behavior)">
+<model ref="r:72110f26-d77a-4fe2-add0-e841f4017b83(de.vimotest.widgetdsl.behavior)">
   <persistence version="9" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />

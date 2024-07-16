@@ -2,7 +2,7 @@
 <model ref="r:5ff2bc6a-6b5a-4857-b90b-1da477d1b173(de.vimotest.widgetdsl.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="9a43c831-bbd9-4521-b233-9f7d6522a85c" name="ViMoTestLanguage" version="0" />
+    <use id="9a43c831-bbd9-4521-b233-9f7d6522a85c" name="de.vimotest.widgetdsl" version="0" />
   </languages>
   <imports />
   <registry>
@@ -14,15 +14,16 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="9a43c831-bbd9-4521-b233-9f7d6522a85c" name="ViMoTestLanguage">
-      <concept id="2273207380833615611" name="ViMoTestLanguage.structure.WidgetFeatureDefinition" flags="ng" index="2WVz3E">
+    <language id="9a43c831-bbd9-4521-b233-9f7d6522a85c" name="de.vimotest.widgetdsl">
+      <concept id="2273207380833615611" name="de.vimotest.widgetdsl.structure.WidgetFeatureDefinition" flags="ng" index="2WVz3E">
         <property id="2273207380833615617" name="tooltipMnemonic" index="2WVz4g" />
         <property id="2273207380833618135" name="shortName" index="2WV$r6" />
       </concept>
-      <concept id="2273207380833615610" name="ViMoTestLanguage.structure.WidgetDefinition" flags="ng" index="2WVz3F">
+      <concept id="2273207380833615610" name="de.vimotest.widgetdsl.structure.WidgetDefinition" flags="ng" index="2WVz3F">
+        <property id="8764372007625948681" name="shortName" index="2SiFfI" />
         <child id="2273207380833616349" name="features" index="2WV$Zc" />
       </concept>
-      <concept id="2273207380833615620" name="ViMoTestLanguage.structure.WidgetFeatureRef" flags="ng" index="2WVz4l">
+      <concept id="2273207380833615620" name="de.vimotest.widgetdsl.structure.WidgetFeatureRef" flags="ng" index="2WVz4l">
         <property id="5354405605573450874" name="inherentFeature" index="3dRBvX" />
         <reference id="2273207380833615621" name="widgetFeature" index="2WVz4k" />
       </concept>
@@ -31,6 +32,7 @@
   <node concept="2WVz3F" id="1Yc3x6zo$je">
     <property role="TrG5h" value="CheckBox" />
     <property role="3GE5qa" value="widgets" />
+    <property role="2SiFfI" value="checkbox" />
     <node concept="2WVz4l" id="1Yc3x6zoKZ8" role="2WV$Zc">
       <property role="3dRBvX" value="true" />
       <ref role="2WVz4k" node="1Yc3x6zo$jf" resolve="Checked" />

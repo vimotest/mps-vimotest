@@ -179,7 +179,7 @@
         <ref role="1k5W1q" to="dgt9:F907haLJXS" resolve="LeftBracket" />
       </node>
       <node concept="3F2HdR" id="F907haLJVP" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:F907haMmbJ" />
+        <ref role="1NtTu8" to="at53:F907haMmbJ" resolve="events" />
         <node concept="l2Vlx" id="F907haLJVR" role="2czzBx" />
         <node concept="pVoyu" id="F907haLJWb" role="3F10Kt">
           <property role="VOm3f" value="true" />

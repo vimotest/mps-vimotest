@@ -229,7 +229,7 @@
         <ref role="1k5W1q" node="F907haLJXS" resolve="LeftBracket" />
       </node>
       <node concept="3F2HdR" id="F907haMjlU" role="3EZMnx">
-        <ref role="1NtTu8" to="evry:F907haLJVs" />
+        <ref role="1NtTu8" to="evry:F907haLJVs" resolve="contents" />
         <node concept="l2Vlx" id="F907haMjlV" role="2czzBx" />
         <node concept="pVoyu" id="F907haMjlW" role="3F10Kt">
           <property role="VOm3f" value="true" />

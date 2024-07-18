@@ -11,7 +11,7 @@
     </facet>
   </facets>
   <languageVersions>
-    <language slang="l:9a43c831-bbd9-4521-b233-9f7d6522a85c:ViMoTestLanguage" version="0" />
+    <language slang="l:9a43c831-bbd9-4521-b233-9f7d6522a85c:de.vimotest.widgetdsl" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>
   <dependencyVersions>

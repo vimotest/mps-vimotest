@@ -21,6 +21,7 @@
       </concept>
       <concept id="2273207380833615610" name="de.vimotest.widgetdsl.structure.WidgetDefinition" flags="ng" index="2WVz3F">
         <property id="8764372007625948681" name="shortName" index="2SiFfI" />
+        <property id="777152910168742153" name="package" index="103t_X" />
         <child id="2273207380833616349" name="features" index="2WV$Zc" />
       </concept>
       <concept id="2273207380833615620" name="de.vimotest.widgetdsl.structure.WidgetFeatureRef" flags="ng" index="2WVz4l">
@@ -33,6 +34,7 @@
     <property role="TrG5h" value="CheckBox" />
     <property role="3GE5qa" value="widgets" />
     <property role="2SiFfI" value="checkbox" />
+    <property role="103t_X" value="widgets.standard" />
     <node concept="2WVz4l" id="1Yc3x6zoKZ8" role="2WV$Zc">
       <property role="3dRBvX" value="true" />
       <ref role="2WVz4k" node="1Yc3x6zo$jf" resolve="Checked" />

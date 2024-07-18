@@ -94,6 +94,11 @@
       <property role="TrG5h" value="shortName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="F907haLd$9" role="1TKVEl">
+      <property role="IQ2nx" value="777152910168742153" />
+      <property role="TrG5h" value="package" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1Yc3x6zozVV">
     <property role="EcuMT" value="2273207380833615611" />

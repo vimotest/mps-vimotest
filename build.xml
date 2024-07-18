@@ -428,7 +428,7 @@
       <chunk>
         <module file="${basedir}/solutions/de.vimotest.plugin/de.vimotest.plugin.msd" />
         <module file="${basedir}/languages/de.vimotest.viewmodel/de.vimotest.viewmodel.mpl" />
-        <module file="${basedir}/languages/de.vimotest.widgetdsl.sandbox/de.vimotest.widgetdsl.sandbox.msd" />
+        <module file="${basedir}/languages/de.vimotest.widgetdsl.widgets/de.vimotest.widgetdsl.widgets.msd" />
       </chunk>
       <chunk>
         <module file="${basedir}/solutions/de.vimotest.sandbox/de.vimotest.sandbox.msd" />
@@ -906,7 +906,7 @@
     <delete dir="${basedir}/solutions/de.vimotest.plugin/source_gen" />
     <delete dir="${basedir}/languages/de.vimotest.viewmodel/source_gen" />
     <delete dir="${basedir}/languages/de.vimotest.viewmodel/generator/source_gen" />
-    <delete dir="${basedir}/languages/de.vimotest.widgetdsl.sandbox/source_gen" />
+    <delete dir="${basedir}/languages/de.vimotest.widgetdsl.widgets/source_gen" />
     <delete dir="${basedir}/solutions/de.vimotest.sandbox/source_gen" />
   </target>
 </project>

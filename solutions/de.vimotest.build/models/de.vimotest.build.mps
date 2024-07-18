@@ -429,16 +429,16 @@
       </node>
       <node concept="1E1JtA" id="220dcIkyAiW" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.vimotest.widgetdsl.sandbox" />
+        <property role="TrG5h" value="de.vimotest.widgetdsl.widgets" />
         <property role="3LESm3" value="f53d971e-2fbc-4c6a-85a7-f2a681f2712b" />
         <property role="2GAjPV" value="true" />
         <node concept="55IIr" id="220dcIkyAiR" role="3LF7KH">
           <node concept="2Ry0Ak" id="220dcIkyAiS" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="220dcIkyAiT" role="2Ry0An">
-              <property role="2Ry0Am" value="de.vimotest.widgetdsl.sandbox" />
-              <node concept="2Ry0Ak" id="220dcIkyAiU" role="2Ry0An">
-                <property role="2Ry0Am" value="de.vimotest.widgetdsl.sandbox.msd" />
+              <property role="2Ry0Am" value="de.vimotest.widgetdsl.widgets" />
+              <node concept="2Ry0Ak" id="220dcIkzGrt" role="2Ry0An">
+                <property role="2Ry0Am" value="de.vimotest.widgetdsl.widgets.msd" />
               </node>
             </node>
           </node>
@@ -447,19 +447,19 @@
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="220dcIkyAki" role="1HemKq">
-            <node concept="55IIr" id="220dcIkyAkd" role="3LXTmr">
-              <node concept="2Ry0Ak" id="220dcIkyAke" role="iGT6I">
+          <node concept="3LXTmp" id="220dcIkzGrY" role="1HemKq">
+            <node concept="55IIr" id="220dcIkzGrU" role="3LXTmr">
+              <node concept="2Ry0Ak" id="220dcIkzGrV" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="220dcIkyAkf" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.vimotest.widgetdsl.sandbox" />
-                  <node concept="2Ry0Ak" id="220dcIkyAkg" role="2Ry0An">
+                <node concept="2Ry0Ak" id="220dcIkzGrW" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.vimotest.widgetdsl.widgets" />
+                  <node concept="2Ry0Ak" id="220dcIkzGrX" role="2Ry0An">
                     <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="220dcIkyAkj" role="3LXTna">
+            <node concept="3qWCbU" id="220dcIkzGrZ" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>

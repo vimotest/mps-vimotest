@@ -90,6 +90,9 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
     </language>
   </registry>
   <node concept="24kQdi" id="F907haLJXF">
@@ -212,6 +215,22 @@
         </node>
       </node>
       <node concept="l2Vlx" id="F907haMm89" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="26yOs7SrF7B">
+    <property role="TrG5h" value="CheckBoxWidget_Editor" />
+    <property role="3GE5qa" value="widgets.standard" />
+    <ref role="1XX52x" to="at53:F907haMeIO" resolve="CheckBoxWidget" />
+    <node concept="3EZMnI" id="26yOs7SrF7D" role="2wV5jI">
+      <node concept="PMmxH" id="26yOs7SrF7E" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" />
+      </node>
+      <node concept="3F0A7n" id="26yOs7SrF7F" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" />
+        <ref role="1k5W1q" to="dgt9:F907haMqVA" />
+      </node>
+      <node concept="2iRfu4" id="26yOs7SrF7G" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -123,5 +123,12 @@
     <property role="3GE5qa" value="widgets.standard" />
     <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
   </node>
+  <node concept="1TIwiD" id="L9c2Y9pj53">
+    <property role="EcuMT" value="885291782481719619" />
+    <property role="3GE5qa" value="widgets" />
+    <property role="TrG5h" value="ViewWidgetFeature" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+  </node>
 </model>
 

@@ -130,5 +130,26 @@
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
   </node>
+  <node concept="1TIwiD" id="4SDJcZBNVBS">
+    <property role="EcuMT" value="5632240410136918520" />
+    <property role="TrG5h" value="CheckedFeature" />
+    <property role="34LRSv" value="is checked" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
+  </node>
+  <node concept="1TIwiD" id="4SDJcZBNVBT">
+    <property role="EcuMT" value="5632240410136918521" />
+    <property role="TrG5h" value="VisibilityFeature" />
+    <property role="34LRSv" value="visibility" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
+  </node>
+  <node concept="1TIwiD" id="4SDJcZBNVBU">
+    <property role="EcuMT" value="5632240410136918522" />
+    <property role="TrG5h" value="EnabledFeature" />
+    <property role="34LRSv" value="enabled" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
+  </node>
 </model>
 

@@ -566,6 +566,11 @@
             <ref role="3bR37D" node="220dcIkyAiE" resolve="de.vimotest.viewmodel" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4SDJcZBO7VU" role="3bR37C">
+          <node concept="3bR9La" id="4SDJcZBO7VV" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="220dcIkyGGa" role="3989C9">

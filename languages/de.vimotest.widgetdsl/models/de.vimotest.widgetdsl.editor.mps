@@ -193,6 +193,15 @@
       <node concept="3F0A7n" id="1Yc3x6zo_3f" role="3EZMnx">
         <ref role="1NtTu8" to="3255:1Yc3x6zozW1" resolve="tooltipMnemonic" />
       </node>
+      <node concept="3F0ifn" id="6eqMDi1ocK3" role="3EZMnx">
+        <property role="3F0ifm" value="with color" />
+        <node concept="lj46D" id="6eqMDi1ocK5" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6eqMDi1ocK2" role="3EZMnx">
+        <ref role="1NtTu8" to="3255:6eqMDi1ocJX" resolve="tooltipMnemonicColor" />
+      </node>
       <node concept="l2Vlx" id="1Yc3x6zo_2r" role="2iSdaV" />
     </node>
   </node>

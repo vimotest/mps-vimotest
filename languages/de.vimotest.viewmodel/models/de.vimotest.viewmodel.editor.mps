@@ -4,6 +4,7 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
+    <use id="b1ab8c10-c118-4755-bf2a-cebab35cf533" name="jetbrains.mps.lang.editor.tooltips" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -43,17 +44,33 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
+        <child id="1186402402630" name="styles" index="V601i" />
+      </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
+        <property id="1221209241505" name="value" index="1lJzqX" />
+      </concept>
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ngI" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
         <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
+      <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ngI" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
+      <concept id="1215007762405" name="jetbrains.mps.lang.editor.structure.FloatStyleClassItem" flags="ln" index="3$6MrZ">
+        <property id="1215007802031" name="value" index="3$6WeP" />
+      </concept>
+      <concept id="1215007883204" name="jetbrains.mps.lang.editor.structure.PaddingLeftStyleClassItem" flags="ln" index="3$7fVu" />
+      <concept id="1215007897487" name="jetbrains.mps.lang.editor.structure.PaddingRightStyleClassItem" flags="ln" index="3$7jql" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -116,6 +133,13 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="b1ab8c10-c118-4755-bf2a-cebab35cf533" name="jetbrains.mps.lang.editor.tooltips">
+      <concept id="1285659875393567816" name="jetbrains.mps.lang.editor.tooltips.structure.CellModel_Tooltip" flags="ng" index="1v6uyg">
+        <property id="4804083432920625643" name="lazy" index="2oejA6" />
+        <child id="3877544518697818164" name="tooltipCell" index="wsdo6" />
+        <child id="9185659875393569181" name="visibleCell" index="1j7Clw" />
       </concept>
     </language>
   </registry>
@@ -315,6 +339,43 @@
       <ref role="1PE7su" node="L9c2Y9pjGJ" resolve="ViewWidget_Inspector_EC" />
     </node>
     <node concept="3F0ifn" id="L9c2Y9rFP6" role="2wV5jI" />
+  </node>
+  <node concept="PKFIW" id="6eqMDi1ocJH">
+    <property role="3GE5qa" value="features" />
+    <property role="TrG5h" value="CheckedFeature_Indication_EC" />
+    <ref role="1XX52x" to="at53:4SDJcZBNVBS" resolve="CheckedFeature" />
+    <node concept="1PE4EZ" id="6eqMDi1ocJJ" role="1PM95z">
+      <ref role="1PE7su" node="L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
+    </node>
+    <node concept="1v6uyg" id="43UPKEZbnQd" role="2wV5jI">
+      <property role="2oejA6" value="true" />
+      <node concept="3F0ifn" id="43UPKEZbnQe" role="wsdo6">
+        <property role="3F0ifm" value="supports check" />
+      </node>
+      <node concept="3F0ifn" id="43UPKEZbnQf" role="1j7Clw">
+        <property role="3F0ifm" value="C" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
+        <node concept="Veino" id="43UPKEZbnQg" role="3F10Kt">
+          <property role="Vb096" value="hGRnIZc/lightBlue" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="V5hpn" id="6eqMDi1ocJQ">
+    <property role="TrG5h" value="ViMoTestViewModelStyles" />
+    <property role="3GE5qa" value="styles" />
+    <node concept="14StLt" id="43UPKEZ9RW1" role="V601i">
+      <property role="TrG5h" value="FeatureIndication" />
+      <node concept="VSNWy" id="43UPKEZ9RW3" role="3F10Kt">
+        <property role="1lJzqX" value="6" />
+      </node>
+      <node concept="3$7fVu" id="43UPKEZanzx" role="3F10Kt">
+        <property role="3$6WeP" value="1" />
+      </node>
+      <node concept="3$7jql" id="43UPKEZanzt" role="3F10Kt">
+        <property role="3$6WeP" value="1" />
+      </node>
+    </node>
   </node>
 </model>
 

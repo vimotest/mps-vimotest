@@ -18,6 +18,7 @@
       <concept id="2273207380833615611" name="de.vimotest.widgetdsl.structure.WidgetFeatureDefinition" flags="ng" index="2WVz3E">
         <property id="2273207380833615617" name="tooltipMnemonic" index="2WVz4g" />
         <property id="2273207380833618135" name="shortName" index="2WV$r6" />
+        <property id="7177271695342881789" name="tooltipMnemonicColor" index="3yYw5D" />
       </concept>
       <concept id="2273207380833615610" name="de.vimotest.widgetdsl.structure.WidgetDefinition" flags="ng" index="2WVz3F">
         <property id="8764372007625948681" name="shortName" index="2SiFfI" />
@@ -51,18 +52,21 @@
     <property role="2WVz4g" value="C" />
     <property role="3GE5qa" value="features" />
     <property role="2WV$r6" value="is checked" />
+    <property role="3yYw5D" value="hGRnIZc/lightBlue" />
   </node>
   <node concept="2WVz3E" id="1Yc3x6zoTLW">
     <property role="3GE5qa" value="features" />
     <property role="TrG5h" value="Visibility" />
     <property role="2WV$r6" value="visibility" />
     <property role="2WVz4g" value="V" />
+    <property role="3yYw5D" value="fLJRk5A/lightGray" />
   </node>
   <node concept="2WVz3E" id="1Yc3x6zoTLX">
     <property role="3GE5qa" value="features" />
     <property role="TrG5h" value="Enabled" />
     <property role="2WV$r6" value="enabled" />
     <property role="2WVz4g" value="E" />
+    <property role="3yYw5D" value="fLJRk5B/darkGray" />
   </node>
 </model>
 

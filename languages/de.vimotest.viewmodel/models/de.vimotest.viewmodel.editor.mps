@@ -39,6 +39,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW">
         <child id="7033942394258392116" name="overridenEditorComponent" index="1PM95z" />
       </concept>
@@ -431,46 +432,25 @@
     </node>
   </node>
   <node concept="PKFIW" id="6eqMDi1ocJH">
-    <property role="3GE5qa" value="features" />
     <property role="TrG5h" value="CheckedFeature_Indication_EC" />
+    <property role="3GE5qa" value="features" />
     <ref role="1XX52x" to="at53:4SDJcZBNVBS" resolve="CheckedFeature" />
-    <node concept="1PE4EZ" id="6eqMDi1ocJJ" role="1PM95z">
+    <node concept="1PE4EZ" id="4OohpJRekrp" role="1PM95z">
       <ref role="1PE7su" node="L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
     </node>
-    <node concept="1v6uyg" id="43UPKEZbnQd" role="2wV5jI">
+    <node concept="1v6uyg" id="4OohpJRekrq" role="2wV5jI">
       <property role="2oejA6" value="true" />
-      <node concept="3F0ifn" id="43UPKEZbnQe" role="wsdo6">
-        <property role="3F0ifm" value="supports check" />
+      <node concept="3F0ifn" id="4OohpJRekrr" role="wsdo6">
+        <property role="3F0ifm" value="supports is checked" />
       </node>
-      <node concept="3F0ifn" id="43UPKEZbnQf" role="1j7Clw">
+      <node concept="3F0ifn" id="4OohpJRekrs" role="1j7Clw">
         <property role="3F0ifm" value="C" />
-        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
-        <node concept="Veino" id="43UPKEZbnQg" role="3F10Kt">
+        <ref role="1k5W1q" node="43UPKEZ9RW1" />
+        <node concept="Veino" id="4OohpJRekrt" role="3F10Kt">
           <property role="Vb096" value="hGRnIZc/lightBlue" />
         </node>
-      </node>
-    </node>
-  </node>
-  <node concept="PKFIW" id="6eqMDi1r7bC">
-    <property role="TrG5h" value="EnabledFeature_Indication_EC" />
-    <property role="3GE5qa" value="features" />
-    <ref role="1XX52x" to="at53:4SDJcZBNVBU" resolve="EnabledFeature" />
-    <node concept="1PE4EZ" id="6eqMDi1r7bE" role="1PM95z">
-      <ref role="1PE7su" node="L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
-    </node>
-    <node concept="1v6uyg" id="6eqMDi1r7bF" role="2wV5jI">
-      <property role="2oejA6" value="true" />
-      <node concept="3F0ifn" id="6eqMDi1r7bG" role="wsdo6">
-        <property role="3F0ifm" value="supports enabled" />
-      </node>
-      <node concept="3F0ifn" id="6eqMDi1r7bH" role="1j7Clw">
-        <property role="3F0ifm" value="E" />
-        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
-        <node concept="Veino" id="6eqMDi1r7bI" role="3F10Kt">
-          <property role="Vb096" value="fLJRk5B/darkGray" />
-        </node>
-        <node concept="VechU" id="6eqMDi1r7bJ" role="3F10Kt">
-          <property role="Vb096" value="hEZAO13/white" />
+        <node concept="VechU" id="4OohpJRekru" role="3F10Kt">
+          <property role="Vb096" value="6cZGtrcKCoS/black" />
         </node>
       </node>
     </node>
@@ -479,23 +459,76 @@
     <property role="TrG5h" value="VisibilityFeature_Indication_EC" />
     <property role="3GE5qa" value="features" />
     <ref role="1XX52x" to="at53:4SDJcZBNVBT" resolve="VisibilityFeature" />
-    <node concept="1PE4EZ" id="6eqMDi1r7by" role="1PM95z">
+    <node concept="1PE4EZ" id="4OohpJRekrx" role="1PM95z">
       <ref role="1PE7su" node="L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
     </node>
-    <node concept="1v6uyg" id="6eqMDi1r7bz" role="2wV5jI">
+    <node concept="1v6uyg" id="4OohpJRekry" role="2wV5jI">
       <property role="2oejA6" value="true" />
-      <node concept="3F0ifn" id="6eqMDi1r7b$" role="wsdo6">
+      <node concept="3F0ifn" id="4OohpJRekrz" role="wsdo6">
         <property role="3F0ifm" value="supports visibility" />
       </node>
-      <node concept="3F0ifn" id="6eqMDi1r7b_" role="1j7Clw">
+      <node concept="3F0ifn" id="4OohpJRekr$" role="1j7Clw">
         <property role="3F0ifm" value="V" />
-        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
-        <node concept="Veino" id="6eqMDi1r7bA" role="3F10Kt">
+        <ref role="1k5W1q" node="43UPKEZ9RW1" />
+        <node concept="Veino" id="4OohpJRekr_" role="3F10Kt">
           <property role="Vb096" value="fLJRk5A/lightGray" />
         </node>
-        <node concept="VechU" id="6eqMDi1r7bB" role="3F10Kt">
+        <node concept="VechU" id="4OohpJRekrA" role="3F10Kt">
           <property role="Vb096" value="6cZGtrcKCoS/black" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="6eqMDi1r7bC">
+    <property role="TrG5h" value="EnabledFeature_Indication_EC" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1XX52x" to="at53:4SDJcZBNVBU" resolve="EnabledFeature" />
+    <node concept="1PE4EZ" id="4OohpJRekrD" role="1PM95z">
+      <ref role="1PE7su" node="L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
+    </node>
+    <node concept="1v6uyg" id="4OohpJRekrE" role="2wV5jI">
+      <property role="2oejA6" value="true" />
+      <node concept="3F0ifn" id="4OohpJRekrF" role="wsdo6">
+        <property role="3F0ifm" value="supports enabled" />
+      </node>
+      <node concept="3F0ifn" id="4OohpJRekrG" role="1j7Clw">
+        <property role="3F0ifm" value="E" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" />
+        <node concept="Veino" id="4OohpJRekrH" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5B/darkGray" />
+        </node>
+        <node concept="VechU" id="4OohpJRekrI" role="3F10Kt">
+          <property role="Vb096" value="hEZAO13/white" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="4OohpJRekrN">
+    <property role="TrG5h" value="CheckBoxWidget_Rendering_EC" />
+    <property role="3GE5qa" value="widgets.standard" />
+    <ref role="1XX52x" to="at53:F907haMeIO" resolve="CheckBoxWidget" />
+    <node concept="1PE4EZ" id="4OohpJRekrP" role="1PM95z">
+      <ref role="1PE7su" node="L9c2Y9pvfV" resolve="ViewWidget_Rendering_EC" />
+    </node>
+    <node concept="3F0ifn" id="4OohpJRekrQ" role="2wV5jI" />
+  </node>
+  <node concept="PKFIW" id="4OohpJRekrR">
+    <property role="TrG5h" value="CheckBoxWidget_Features_EC" />
+    <property role="3GE5qa" value="widgets.standard" />
+    <ref role="1XX52x" to="at53:F907haMeIO" resolve="CheckBoxWidget" />
+    <node concept="1PE4EZ" id="4OohpJRekrT" role="1PM95z">
+      <ref role="1PE7su" node="4OohpJQEUlZ" resolve="ViewWidget_WidgetFeatures_EC" />
+    </node>
+    <node concept="3EZMnI" id="4OohpJRekrU" role="2wV5jI">
+      <node concept="2EHx9g" id="4OohpJRekrV" role="2iSdaV" />
+      <node concept="3F1sOY" id="4OohpJRekrW" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:4OohpJRekrK" resolve="checked" />
+      </node>
+      <node concept="3F1sOY" id="4OohpJRekrX" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:4OohpJRekrL" resolve="visibility" />
+      </node>
+      <node concept="3F1sOY" id="4OohpJRekrY" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:4OohpJRekrM" resolve="enabled" />
       </node>
     </node>
   </node>

@@ -139,32 +139,53 @@
     </node>
   </node>
   <node concept="1TIwiD" id="4SDJcZBNVBS">
-    <property role="EcuMT" value="5632240410136918520" />
+    <property role="EcuMT" value="5555266676531480276" />
     <property role="TrG5h" value="CheckedFeature" />
     <property role="34LRSv" value="is checked" />
     <property role="3GE5qa" value="features" />
     <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
   </node>
-  <node concept="1TIwiD" id="4SDJcZBNVBU">
-    <property role="EcuMT" value="5632240410136918522" />
-    <property role="TrG5h" value="EnabledFeature" />
-    <property role="34LRSv" value="enabled" />
-    <property role="3GE5qa" value="features" />
-    <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
-  </node>
   <node concept="1TIwiD" id="4SDJcZBNVBT">
-    <property role="EcuMT" value="5632240410136918521" />
+    <property role="EcuMT" value="5555266676531480277" />
     <property role="TrG5h" value="VisibilityFeature" />
     <property role="34LRSv" value="visibility" />
     <property role="3GE5qa" value="features" />
     <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
   </node>
+  <node concept="1TIwiD" id="4SDJcZBNVBU">
+    <property role="EcuMT" value="5555266676531480278" />
+    <property role="TrG5h" value="EnabledFeature" />
+    <property role="34LRSv" value="enabled" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
+  </node>
   <node concept="1TIwiD" id="F907haMeIO">
-    <property role="EcuMT" value="777152910169009076" />
+    <property role="EcuMT" value="5555266676531480303" />
     <property role="TrG5h" value="CheckBoxWidget" />
     <property role="34LRSv" value="checkbox" />
     <property role="3GE5qa" value="widgets.standard" />
     <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
+    <node concept="1TJgyj" id="4OohpJRekrK" role="1TKVEi">
+      <property role="IQ2ns" value="5555266676531480304" />
+      <property role="20kJfa" value="checked" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4SDJcZBNVBS" resolve="CheckedFeature" />
+    </node>
+    <node concept="1TJgyj" id="4OohpJRekrL" role="1TKVEi">
+      <property role="IQ2ns" value="5555266676531480305" />
+      <property role="20kJfa" value="visibility" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4SDJcZBNVBT" resolve="VisibilityFeature" />
+    </node>
+    <node concept="1TJgyj" id="4OohpJRekrM" role="1TKVEi">
+      <property role="IQ2ns" value="5555266676531480306" />
+      <property role="20kJfa" value="enabled" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
+    </node>
   </node>
 </model>
 

@@ -17,9 +17,13 @@
       </concept>
     </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
-      <concept id="5632240410136918520" name="de.vimotest.viewmodel.structure.CheckedFeature" flags="ng" index="2DTwkR" />
-      <concept id="777152910169009076" name="de.vimotest.viewmodel.structure.CheckBoxWidget" flags="ng" index="100uJ0">
-        <child id="5555266676524423269" name="checked" index="2VPtRY" />
+      <concept id="5555266676531480278" name="de.vimotest.viewmodel.structure.EnabledFeature" flags="ng" index="2U8gdd" />
+      <concept id="5555266676531480277" name="de.vimotest.viewmodel.structure.VisibilityFeature" flags="ng" index="2U8gde" />
+      <concept id="5555266676531480276" name="de.vimotest.viewmodel.structure.CheckedFeature" flags="ng" index="2U8gdf" />
+      <concept id="5555266676531480303" name="de.vimotest.viewmodel.structure.CheckBoxWidget" flags="ng" index="2U8gdO">
+        <child id="5555266676531480306" name="enabled" index="2U8gdD" />
+        <child id="5555266676531480305" name="visibility" index="2U8gdE" />
+        <child id="5555266676531480304" name="checked" index="2U8gdF" />
       </concept>
       <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelEvents" flags="ng" index="103ZXx" />
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
@@ -33,9 +37,10 @@
     <property role="TrG5h" value="MyView" />
     <node concept="103ZXx" id="F907haLUeD" role="103ZXC" />
     <node concept="103ZXB" id="F907haLUeE" role="103ZXF">
-      <node concept="100uJ0" id="F907haMjij" role="103ZUC">
-        <property role="TrG5h" value="MyCheckbox" />
-        <node concept="2DTwkR" id="4OohpJQO1_T" role="2VPtRY" />
+      <node concept="2U8gdO" id="4OohpJReT1Q" role="103ZUC">
+        <node concept="2U8gdf" id="4OohpJReT1R" role="2U8gdF" />
+        <node concept="2U8gde" id="4OohpJReT1S" role="2U8gdE" />
+        <node concept="2U8gdd" id="4OohpJReT1T" role="2U8gdD" />
       </node>
     </node>
   </node>

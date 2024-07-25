@@ -17,7 +17,10 @@
       </concept>
     </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
-      <concept id="777152910169009076" name="de.vimotest.viewmodel.structure.CheckBoxWidget" flags="ng" index="100uJ0" />
+      <concept id="5632240410136918520" name="de.vimotest.viewmodel.structure.CheckedFeature" flags="ng" index="2DTwkR" />
+      <concept id="777152910169009076" name="de.vimotest.viewmodel.structure.CheckBoxWidget" flags="ng" index="100uJ0">
+        <child id="5555266676524423269" name="checked" index="2VPtRY" />
+      </concept>
       <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelEvents" flags="ng" index="103ZXx" />
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
         <child id="777152910168882972" name="events" index="103ZXC" />
@@ -32,6 +35,7 @@
     <node concept="103ZXB" id="F907haLUeE" role="103ZXF">
       <node concept="100uJ0" id="F907haMjij" role="103ZUC">
         <property role="TrG5h" value="MyCheckbox" />
+        <node concept="2DTwkR" id="4OohpJQO1_T" role="2VPtRY" />
       </node>
     </node>
   </node>

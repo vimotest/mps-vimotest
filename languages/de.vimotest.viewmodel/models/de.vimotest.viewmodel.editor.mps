@@ -5,6 +5,7 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="b1ab8c10-c118-4755-bf2a-cebab35cf533" name="jetbrains.mps.lang.editor.tooltips" version="0" />
+    <use id="602c36ad-cc55-47ff-8c40-73d7f12f035c" name="jetbrains.mps.lang.editor.forms" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,6 +15,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" implicit="true" />
+    <import index="f9om" ref="f:diff_diff_model_0#r:8266d71c-f637-42a4-b405-9d6e3c00f282(de.vimotest.viewmodel.editor@diff_model_0)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -49,6 +51,9 @@
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
@@ -94,6 +99,12 @@
       <concept id="7033942394256351208" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclarationReference" flags="ng" index="1PE4EZ">
         <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
       </concept>
+      <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
+        <property id="1088613081987" name="vertical" index="1QpmdY" />
+        <child id="1145918517974" name="alternationCondition" index="3e4ffs" />
+        <child id="1088612958265" name="ifTrueCellModel" index="1QoS34" />
+        <child id="1088612973955" name="ifFalseCellModel" index="1QoVPY" />
+      </concept>
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -115,8 +126,22 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
+    </language>
+    <language id="602c36ad-cc55-47ff-8c40-73d7f12f035c" name="jetbrains.mps.lang.editor.forms">
+      <concept id="312429380032619384" name="jetbrains.mps.lang.editor.forms.structure.CellModel_Checkbox" flags="ng" index="2yq9I_">
+        <reference id="3696012239575138271" name="propertyDeclaration" index="225u1j" />
+        <child id="8215612579904156902" name="label" index="2fqkNU" />
+        <child id="1340057216891284122" name="ui" index="1563LE" />
+      </concept>
+      <concept id="1340057216891283515" name="jetbrains.mps.lang.editor.forms.structure.CheckboxUI_Text" flags="ng" index="1563Vb">
+        <property id="1340057216891283520" name="falseText" index="1563UK" />
+        <property id="1340057216891283518" name="trueText" index="1563Ve" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -126,6 +151,9 @@
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -275,6 +303,7 @@
       <node concept="2iRkQZ" id="2wrhDsWi67X" role="2iSdaV" />
       <node concept="PMmxH" id="L9c2Y9pf$f" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
       </node>
       <node concept="3EZMnI" id="2wrhDsWi680" role="3EZMnx">
         <node concept="PMmxH" id="2wrhDsWibxA" role="3EZMnx">
@@ -313,8 +342,8 @@
     <property role="TrG5h" value="ViewWidget_Inspector_EC" />
     <property role="3GE5qa" value="widgets" />
     <ref role="1XX52x" to="at53:F907haLIRF" resolve="ViewWidget" />
-    <node concept="3EZMnI" id="L9c2Y9pjGK" role="2wV5jI">
-      <node concept="2iRkQZ" id="L9c2Y9pjGL" role="2iSdaV" />
+    <node concept="PMmxH" id="4OohpJQEUm4" role="2wV5jI">
+      <ref role="PMmxG" node="4OohpJQEUlZ" resolve="ViewWidget_WidgetFeatures_EC" />
     </node>
   </node>
   <node concept="PKFIW" id="L9c2Y9pvfV">
@@ -322,45 +351,6 @@
     <property role="3GE5qa" value="widgets" />
     <ref role="1XX52x" to="at53:F907haLIRF" resolve="ViewWidget" />
     <node concept="3F0ifn" id="L9c2Y9pvfW" role="2wV5jI" />
-  </node>
-  <node concept="PKFIW" id="L9c2Y9qMld">
-    <property role="TrG5h" value="CheckBoxWidget_Rendering_EC" />
-    <property role="3GE5qa" value="widgets.standard" />
-    <ref role="1XX52x" to="at53:F907haMeIO" resolve="CheckBoxWidget" />
-    <node concept="1PE4EZ" id="L9c2Y9qMlf" role="1PM95z">
-      <ref role="1PE7su" node="L9c2Y9pvfV" resolve="ViewWidget_Rendering_EC" />
-    </node>
-    <node concept="3F0ifn" id="L9c2Y9qMlg" role="2wV5jI" />
-  </node>
-  <node concept="PKFIW" id="L9c2Y9rFP3">
-    <property role="TrG5h" value="CheckBoxWidget_Inspector_EC" />
-    <property role="3GE5qa" value="widgets.standard" />
-    <ref role="1XX52x" to="at53:F907haMeIO" resolve="CheckBoxWidget" />
-    <node concept="1PE4EZ" id="L9c2Y9rFP5" role="1PM95z">
-      <ref role="1PE7su" node="L9c2Y9pjGJ" resolve="ViewWidget_Inspector_EC" />
-    </node>
-    <node concept="3F0ifn" id="L9c2Y9rFP6" role="2wV5jI" />
-  </node>
-  <node concept="PKFIW" id="6eqMDi1ocJH">
-    <property role="3GE5qa" value="features" />
-    <property role="TrG5h" value="CheckedFeature_Indication_EC" />
-    <ref role="1XX52x" to="at53:4SDJcZBNVBS" resolve="CheckedFeature" />
-    <node concept="1PE4EZ" id="6eqMDi1ocJJ" role="1PM95z">
-      <ref role="1PE7su" node="L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
-    </node>
-    <node concept="1v6uyg" id="43UPKEZbnQd" role="2wV5jI">
-      <property role="2oejA6" value="true" />
-      <node concept="3F0ifn" id="43UPKEZbnQe" role="wsdo6">
-        <property role="3F0ifm" value="supports check" />
-      </node>
-      <node concept="3F0ifn" id="43UPKEZbnQf" role="1j7Clw">
-        <property role="3F0ifm" value="C" />
-        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
-        <node concept="Veino" id="43UPKEZbnQg" role="3F10Kt">
-          <property role="Vb096" value="hGRnIZc/lightBlue" />
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="V5hpn" id="6eqMDi1ocJQ">
     <property role="TrG5h" value="ViMoTestViewModelStyles" />
@@ -378,26 +368,86 @@
       </node>
     </node>
   </node>
-  <node concept="PKFIW" id="6eqMDi1r7bw">
-    <property role="TrG5h" value="VisibilityFeature_Indication_EC" />
-    <property role="3GE5qa" value="features" />
-    <ref role="1XX52x" to="at53:4SDJcZBNVBT" resolve="VisibilityFeature" />
-    <node concept="1PE4EZ" id="6eqMDi1r7by" role="1PM95z">
-      <ref role="1PE7su" node="L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
-    </node>
-    <node concept="1v6uyg" id="6eqMDi1r7bz" role="2wV5jI">
-      <property role="2oejA6" value="true" />
-      <node concept="3F0ifn" id="6eqMDi1r7b$" role="wsdo6">
-        <property role="3F0ifm" value="supports visibility" />
-      </node>
-      <node concept="3F0ifn" id="6eqMDi1r7b_" role="1j7Clw">
-        <property role="3F0ifm" value="V" />
-        <ref role="1k5W1q" node="43UPKEZ9RW1" />
-        <node concept="Veino" id="6eqMDi1r7bA" role="3F10Kt">
-          <property role="Vb096" value="fLJRk5A/lightGray" />
+  <node concept="PKFIW" id="4OohpJQEUlZ">
+    <property role="TrG5h" value="ViewWidget_WidgetFeatures_EC" />
+    <property role="3GE5qa" value="widgets" />
+    <ref role="1XX52x" to="at53:F907haLIRF" resolve="ViewWidget" />
+    <node concept="3F0ifn" id="4OohpJQEUm8" role="2wV5jI" />
+  </node>
+  <node concept="24kQdi" id="4OohpJQO1_V">
+    <property role="3GE5qa" value="widgets" />
+    <ref role="1XX52x" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
+    <node concept="3EZMnI" id="5cbOqfAiITs" role="2wV5jI">
+      <node concept="2iRfu4" id="5cbOqfAiITt" role="2iSdaV" />
+      <node concept="1QoScp" id="4OohpJQO3TO" role="3EZMnx">
+        <property role="1QpmdY" value="true" />
+        <node concept="pkWqt" id="4OohpJQO3TR" role="3e4ffs">
+          <node concept="3clFbS" id="4OohpJQO3TT" role="2VODD2">
+            <node concept="3clFbF" id="4OohpJQO4cV" role="3cqZAp">
+              <node concept="3fqX7Q" id="4OohpJQO4ME" role="3clFbG">
+                <node concept="2OqwBi" id="4OohpJQO4MG" role="3fr31v">
+                  <node concept="pncrf" id="4OohpJQO4MH" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="4OohpJQO4MI" role="2OqNvi">
+                    <ref role="3TsBF5" to="at53:4OohpJQO3Nl" resolve="inherentSupport" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
-        <node concept="VechU" id="6eqMDi1r7bB" role="3F10Kt">
-          <property role="Vb096" value="6cZGtrcKCoS/black" />
+        <node concept="2yq9I_" id="4OohpJQO48O" role="1QoS34">
+          <ref role="225u1j" to="at53:4OohpJQO3xr" resolve="supported" />
+          <node concept="1563Vb" id="4OohpJQO48P" role="1563LE">
+            <property role="1563UK" value="[ ]" />
+            <property role="1563Ve" value="[x]" />
+          </node>
+          <node concept="3EZMnI" id="4OohpJQO48Q" role="2fqkNU">
+            <node concept="2iRfu4" id="4OohpJQO48R" role="2iSdaV" />
+            <node concept="PMmxH" id="4OohpJQO48S" role="3EZMnx">
+              <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+              <node concept="VPM3Z" id="4OohpJQO48T" role="3F10Kt" />
+            </node>
+            <node concept="3F0ifn" id="4OohpJQO48U" role="3EZMnx">
+              <property role="3F0ifm" value="supported" />
+              <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+              <node concept="VPM3Z" id="4OohpJQO48V" role="3F10Kt" />
+            </node>
+          </node>
+        </node>
+        <node concept="3EZMnI" id="4OohpJQO4bH" role="1QoVPY">
+          <node concept="2iRfu4" id="4OohpJQO4bI" role="2iSdaV" />
+          <node concept="PMmxH" id="4OohpJQO4bJ" role="3EZMnx">
+            <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+            <node concept="VPM3Z" id="4OohpJQO4bK" role="3F10Kt" />
+          </node>
+          <node concept="3F0ifn" id="4OohpJQO4bL" role="3EZMnx">
+            <property role="3F0ifm" value="always supported" />
+            <node concept="VPM3Z" id="4OohpJQO4bM" role="3F10Kt" />
+            <node concept="Vb9p2" id="4OohpJQO4PL" role="3F10Kt">
+              <property role="Vbekb" value="g1_kEg4/ITALIC" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="6eqMDi1ocJH">
+    <property role="3GE5qa" value="features" />
+    <property role="TrG5h" value="CheckedFeature_Indication_EC" />
+    <ref role="1XX52x" to="at53:4SDJcZBNVBS" resolve="CheckedFeature" />
+    <node concept="1PE4EZ" id="6eqMDi1ocJJ" role="1PM95z">
+      <ref role="1PE7su" to="f9om:L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
+    </node>
+    <node concept="1v6uyg" id="43UPKEZbnQd" role="2wV5jI">
+      <property role="2oejA6" value="true" />
+      <node concept="3F0ifn" id="43UPKEZbnQe" role="wsdo6">
+        <property role="3F0ifm" value="supports check" />
+      </node>
+      <node concept="3F0ifn" id="43UPKEZbnQf" role="1j7Clw">
+        <property role="3F0ifm" value="C" />
+        <ref role="1k5W1q" to="f9om:43UPKEZ9RW1" resolve="FeatureIndication" />
+        <node concept="Veino" id="43UPKEZbnQg" role="3F10Kt">
+          <property role="Vb096" value="hGRnIZc/lightBlue" />
         </node>
       </node>
     </node>
@@ -407,7 +457,7 @@
     <property role="3GE5qa" value="features" />
     <ref role="1XX52x" to="at53:4SDJcZBNVBU" resolve="EnabledFeature" />
     <node concept="1PE4EZ" id="6eqMDi1r7bE" role="1PM95z">
-      <ref role="1PE7su" node="L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
+      <ref role="1PE7su" to="f9om:L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
     </node>
     <node concept="1v6uyg" id="6eqMDi1r7bF" role="2wV5jI">
       <property role="2oejA6" value="true" />
@@ -416,12 +466,36 @@
       </node>
       <node concept="3F0ifn" id="6eqMDi1r7bH" role="1j7Clw">
         <property role="3F0ifm" value="E" />
-        <ref role="1k5W1q" node="43UPKEZ9RW1" />
+        <ref role="1k5W1q" to="f9om:43UPKEZ9RW1" />
         <node concept="Veino" id="6eqMDi1r7bI" role="3F10Kt">
           <property role="Vb096" value="fLJRk5B/darkGray" />
         </node>
         <node concept="VechU" id="6eqMDi1r7bJ" role="3F10Kt">
           <property role="Vb096" value="hEZAO13/white" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="6eqMDi1r7bw">
+    <property role="TrG5h" value="VisibilityFeature_Indication_EC" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1XX52x" to="at53:4SDJcZBNVBT" resolve="VisibilityFeature" />
+    <node concept="1PE4EZ" id="6eqMDi1r7by" role="1PM95z">
+      <ref role="1PE7su" to="f9om:L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
+    </node>
+    <node concept="1v6uyg" id="6eqMDi1r7bz" role="2wV5jI">
+      <property role="2oejA6" value="true" />
+      <node concept="3F0ifn" id="6eqMDi1r7b$" role="wsdo6">
+        <property role="3F0ifm" value="supports visibility" />
+      </node>
+      <node concept="3F0ifn" id="6eqMDi1r7b_" role="1j7Clw">
+        <property role="3F0ifm" value="V" />
+        <ref role="1k5W1q" to="f9om:43UPKEZ9RW1" />
+        <node concept="Veino" id="6eqMDi1r7bA" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5A/lightGray" />
+        </node>
+        <node concept="VechU" id="6eqMDi1r7bB" role="3F10Kt">
+          <property role="Vb096" value="6cZGtrcKCoS/black" />
         </node>
       </node>
     </node>

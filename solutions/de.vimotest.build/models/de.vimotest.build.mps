@@ -576,6 +576,11 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4OohpJRf94F" role="3bR37C">
+          <node concept="3bR9La" id="4OohpJRf94G" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4p" resolve="jetbrains.mps.lang.behavior" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="220dcIkyGGa" role="3989C9">

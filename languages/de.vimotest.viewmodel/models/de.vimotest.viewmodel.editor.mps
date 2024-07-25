@@ -15,7 +15,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" implicit="true" />
-    <import index="f9om" ref="f:diff_diff_model_0#r:8266d71c-f637-42a4-b405-9d6e3c00f282(de.vimotest.viewmodel.editor@diff_model_0)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -436,7 +435,7 @@
     <property role="TrG5h" value="CheckedFeature_Indication_EC" />
     <ref role="1XX52x" to="at53:4SDJcZBNVBS" resolve="CheckedFeature" />
     <node concept="1PE4EZ" id="6eqMDi1ocJJ" role="1PM95z">
-      <ref role="1PE7su" to="f9om:L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
+      <ref role="1PE7su" node="L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
     </node>
     <node concept="1v6uyg" id="43UPKEZbnQd" role="2wV5jI">
       <property role="2oejA6" value="true" />
@@ -445,7 +444,7 @@
       </node>
       <node concept="3F0ifn" id="43UPKEZbnQf" role="1j7Clw">
         <property role="3F0ifm" value="C" />
-        <ref role="1k5W1q" to="f9om:43UPKEZ9RW1" resolve="FeatureIndication" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
         <node concept="Veino" id="43UPKEZbnQg" role="3F10Kt">
           <property role="Vb096" value="hGRnIZc/lightBlue" />
         </node>
@@ -457,7 +456,7 @@
     <property role="3GE5qa" value="features" />
     <ref role="1XX52x" to="at53:4SDJcZBNVBU" resolve="EnabledFeature" />
     <node concept="1PE4EZ" id="6eqMDi1r7bE" role="1PM95z">
-      <ref role="1PE7su" to="f9om:L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
+      <ref role="1PE7su" node="L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
     </node>
     <node concept="1v6uyg" id="6eqMDi1r7bF" role="2wV5jI">
       <property role="2oejA6" value="true" />
@@ -466,7 +465,7 @@
       </node>
       <node concept="3F0ifn" id="6eqMDi1r7bH" role="1j7Clw">
         <property role="3F0ifm" value="E" />
-        <ref role="1k5W1q" to="f9om:43UPKEZ9RW1" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
         <node concept="Veino" id="6eqMDi1r7bI" role="3F10Kt">
           <property role="Vb096" value="fLJRk5B/darkGray" />
         </node>
@@ -481,7 +480,7 @@
     <property role="3GE5qa" value="features" />
     <ref role="1XX52x" to="at53:4SDJcZBNVBT" resolve="VisibilityFeature" />
     <node concept="1PE4EZ" id="6eqMDi1r7by" role="1PM95z">
-      <ref role="1PE7su" to="f9om:L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
+      <ref role="1PE7su" node="L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
     </node>
     <node concept="1v6uyg" id="6eqMDi1r7bz" role="2wV5jI">
       <property role="2oejA6" value="true" />
@@ -490,7 +489,7 @@
       </node>
       <node concept="3F0ifn" id="6eqMDi1r7b_" role="1j7Clw">
         <property role="3F0ifm" value="V" />
-        <ref role="1k5W1q" to="f9om:43UPKEZ9RW1" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
         <node concept="Veino" id="6eqMDi1r7bA" role="3F10Kt">
           <property role="Vb096" value="fLJRk5A/lightGray" />
         </node>

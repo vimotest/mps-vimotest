@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/de.vimotest.testing/de.vimotest.testing.mpl" folder="testing" />
       <modulePath path="$PROJECT_DIR$/languages/de.vimotest.types/de.vimotest.types.mpl" folder="static" />
       <modulePath path="$PROJECT_DIR$/languages/de.vimotest.viewmodel/de.vimotest.viewmodel.mpl" folder="static" />
       <modulePath path="$PROJECT_DIR$/languages/de.vimotest.widgetdsl.widgets/de.vimotest.widgetdsl.widgets.msd" folder="metadsl" />

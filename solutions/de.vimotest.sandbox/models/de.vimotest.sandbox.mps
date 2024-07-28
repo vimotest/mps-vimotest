@@ -17,13 +17,13 @@
       </concept>
     </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
-      <concept id="5555266676531480278" name="de.vimotest.viewmodel.structure.EnabledFeature" flags="ng" index="2U8gdd" />
-      <concept id="5555266676531480277" name="de.vimotest.viewmodel.structure.VisibilityFeature" flags="ng" index="2U8gde" />
-      <concept id="5555266676531480276" name="de.vimotest.viewmodel.structure.CheckedFeature" flags="ng" index="2U8gdf" />
-      <concept id="5555266676531480303" name="de.vimotest.viewmodel.structure.CheckBoxWidget" flags="ng" index="2U8gdO">
-        <child id="5555266676531480306" name="enabled" index="2U8gdD" />
-        <child id="5555266676531480305" name="visibility" index="2U8gdE" />
-        <child id="5555266676531480304" name="checked" index="2U8gdF" />
+      <concept id="5213916851000129487" name="de.vimotest.viewmodel.structure.CheckedFeature" flags="ng" index="C4FCf" />
+      <concept id="5213916851000129488" name="de.vimotest.viewmodel.structure.VisibilityFeature" flags="ng" index="C4FCg" />
+      <concept id="5213916851000129489" name="de.vimotest.viewmodel.structure.EnabledFeature" flags="ng" index="C4FCh" />
+      <concept id="5213916851000129514" name="de.vimotest.viewmodel.structure.CheckBoxWidget" flags="ng" index="C4FCE">
+        <child id="5213916851000129515" name="checked" index="C4FCF" />
+        <child id="5213916851000129516" name="visibility" index="C4FCG" />
+        <child id="5213916851000129517" name="enabled" index="C4FCH" />
       </concept>
       <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelEvents" flags="ng" index="103ZXx" />
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
@@ -37,10 +37,10 @@
     <property role="TrG5h" value="MyView" />
     <node concept="103ZXx" id="F907haLUeD" role="103ZXC" />
     <node concept="103ZXB" id="F907haLUeE" role="103ZXF">
-      <node concept="2U8gdO" id="4OohpJReT1Q" role="103ZUC">
-        <node concept="2U8gdf" id="4OohpJReT1R" role="2U8gdF" />
-        <node concept="2U8gde" id="4OohpJReT1S" role="2U8gdE" />
-        <node concept="2U8gdd" id="4OohpJReT1T" role="2U8gdD" />
+      <node concept="C4FCE" id="4xrzs1wiY7l" role="103ZUC">
+        <node concept="C4FCf" id="4xrzs1wiY7m" role="C4FCF" />
+        <node concept="C4FCg" id="4xrzs1wiY7n" role="C4FCG" />
+        <node concept="C4FCh" id="4xrzs1wiY7o" role="C4FCH" />
       </node>
     </node>
   </node>

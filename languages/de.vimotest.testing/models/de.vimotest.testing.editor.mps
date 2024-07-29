@@ -40,9 +40,9 @@
     <property role="TrG5h" value="CheckBoxCheck_Editor" />
     <property role="3GE5qa" value="assert.checkbox" />
     <ref role="1XX52x" to="53m0:69Ym88BeFj9" resolve="CheckBoxCheck" />
-    <node concept="3F2HdR" id="4xrzs1wijwa" role="2wV5jI">
+    <node concept="3F2HdR" id="6vtOLtwdTAP" role="2wV5jI">
       <ref role="1NtTu8" to="53m0:4xrzs1wijw7" resolve="checks" />
-      <node concept="2iRkQZ" id="4xrzs1wijwb" role="2czzBx" />
+      <node concept="2iRkQZ" id="6vtOLtwdTAQ" role="2czzBx" />
     </node>
   </node>
 </model>

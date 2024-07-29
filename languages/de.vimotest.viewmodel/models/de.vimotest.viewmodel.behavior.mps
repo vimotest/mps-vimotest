@@ -107,7 +107,7 @@
                 </node>
               </node>
               <node concept="3TrcHB" id="6vtOLtwdTAJ" role="2OqNvi">
-                <ref role="3TsBF5" to="at53:4OohpJQO3Nl" />
+                <ref role="3TsBF5" to="at53:4OohpJQO3Nl" resolve="inherentSupport" />
               </node>
             </node>
           </node>

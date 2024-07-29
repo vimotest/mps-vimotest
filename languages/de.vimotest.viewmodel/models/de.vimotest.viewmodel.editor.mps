@@ -240,7 +240,7 @@
         <ref role="PMmxG" node="L9c2Y9pcOs" resolve="ViewWidget_TypeAlias_FeatureIndication_EC" />
       </node>
       <node concept="PMmxH" id="L9c2Y9pvfX" role="3EZMnx">
-        <ref role="PMmxG" node="L9c2Y9pvfV" resolve="ViewWidget_Rendering" />
+        <ref role="PMmxG" node="L9c2Y9pvfV" resolve="ViewWidget_Rendering_EC" />
       </node>
     </node>
     <node concept="PMmxH" id="L9c2Y9pjGP" role="6VMZX">
@@ -445,7 +445,7 @@
       </node>
       <node concept="3F0ifn" id="6vtOLtwdTA2" role="1j7Clw">
         <property role="3F0ifm" value="C" />
-        <ref role="1k5W1q" node="43UPKEZ9RW1" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
         <node concept="Veino" id="6vtOLtwdTA3" role="3F10Kt">
           <property role="Vb096" value="hGRnIZc/lightBlue" />
         </node>
@@ -469,7 +469,7 @@
       </node>
       <node concept="3F0ifn" id="6vtOLtwdTAa" role="1j7Clw">
         <property role="3F0ifm" value="V" />
-        <ref role="1k5W1q" node="43UPKEZ9RW1" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
         <node concept="Veino" id="6vtOLtwdTAb" role="3F10Kt">
           <property role="Vb096" value="fLJRk5A/lightGray" />
         </node>
@@ -493,7 +493,7 @@
       </node>
       <node concept="3F0ifn" id="6vtOLtwdTAi" role="1j7Clw">
         <property role="3F0ifm" value="E" />
-        <ref role="1k5W1q" node="43UPKEZ9RW1" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
         <node concept="Veino" id="6vtOLtwdTAj" role="3F10Kt">
           <property role="Vb096" value="fLJRk5B/darkGray" />
         </node>

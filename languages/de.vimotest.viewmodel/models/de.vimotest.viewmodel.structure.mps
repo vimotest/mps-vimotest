@@ -126,7 +126,7 @@
     <property role="3GE5qa" value="widgets" />
     <property role="TrG5h" value="ViewWidgetFeature" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4OohpJQO3xr" role="1TKVEl">
       <property role="IQ2nx" value="5555266676524595291" />
       <property role="TrG5h" value="supported" />

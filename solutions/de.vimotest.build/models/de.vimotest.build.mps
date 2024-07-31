@@ -310,6 +310,11 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5L3DBX$lsef" role="3bR37C">
+          <node concept="3bR9La" id="5L3DBX$lseg" role="1SiIV1">
+            <ref role="3bR37D" node="6vtOLtwgJp4" resolve="de.vimotest.mpswidgets.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="JW9DBRQiDv" role="2G$12L">
         <property role="BnDLt" value="true" />

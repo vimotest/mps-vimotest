@@ -165,6 +165,11 @@
     <property role="34LRSv" value="checkbox" />
     <property role="3GE5qa" value="widgets.standard" />
     <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
+    <node concept="1TJgyi" id="5L3DBX$l5cA" role="1TKVEl">
+      <property role="IQ2nx" value="6648340541003289382" />
+      <property role="TrG5h" value="defaultIsChecked" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="4xrzs1wijvF" role="1TKVEi">
       <property role="IQ2ns" value="5213916851000129515" />
       <property role="20kJfa" value="checked" />

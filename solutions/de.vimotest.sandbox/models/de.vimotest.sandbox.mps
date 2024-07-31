@@ -38,6 +38,7 @@
     <node concept="103ZXx" id="F907haLUeD" role="103ZXC" />
     <node concept="103ZXB" id="F907haLUeE" role="103ZXF">
       <node concept="C4FCE" id="6vtOLtwdT_M" role="103ZUC">
+        <property role="TrG5h" value="MyFlag" />
         <node concept="C4FCf" id="6vtOLtwdT_N" role="C4FCF" />
         <node concept="C4FCg" id="6vtOLtwdT_O" role="C4FCG" />
         <node concept="C4FCh" id="6vtOLtwdT_P" role="C4FCH" />

@@ -287,6 +287,10 @@
       <node concept="PMmxH" id="L9c2Y9pcOx" role="3EZMnx">
         <ref role="PMmxG" node="L9c2Y9pcOs" resolve="ViewWidget_TypeAlias_FeatureIndication_EC" />
       </node>
+      <node concept="3F0A7n" id="5L3DBX$lnjE" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="5L3DBX$ljfm" role="3EZMnx" />
       <node concept="PMmxH" id="L9c2Y9pvfX" role="3EZMnx">
         <ref role="PMmxG" node="L9c2Y9pvfV" resolve="ViewWidget_Rendering_EC" />
       </node>

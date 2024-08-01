@@ -181,7 +181,7 @@
     </node>
     <node concept="1TJgyj" id="2Yd1qrJONfu" role="1TKVEi">
       <property role="IQ2ns" value="3426401106045121502" />
-      <property role="20kJfa" value="component" />
+      <property role="20kJfa" value="widget" />
       <ref role="20lvS9" to="at53:F907haLIRF" resolve="ViewWidget" />
     </node>
     <node concept="PrWs8" id="65sofNQ5xLK" role="PzmwI">

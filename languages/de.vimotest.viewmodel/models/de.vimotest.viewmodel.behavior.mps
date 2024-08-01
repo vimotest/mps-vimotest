@@ -179,7 +179,7 @@
               </node>
               <node concept="13iPFW" id="6mWHjmRL0KB" role="37wK5m" />
               <node concept="Xl_RD" id="6mWHjmRL0KC" role="37wK5m">
-                <property role="Xl_RC" value="&lt;empty&gt;" />
+                <property role="Xl_RC" value="&lt;render not supported&gt;" />
               </node>
             </node>
           </node>

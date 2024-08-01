@@ -23,7 +23,7 @@
         <child id="3426401106044983341" name="tests" index="30n1Qb" />
       </concept>
       <concept id="3426401106045121475" name="de.vimotest.testing.structure.ViewWidgetAssertion" flags="ng" index="30nzp_">
-        <reference id="3426401106045121502" name="component" index="30nzpS" />
+        <reference id="3426401106045121502" name="widget" index="30nzpS" />
       </concept>
       <concept id="7205622933660482722" name="de.vimotest.testing.structure.ViewModelTestCase" flags="ng" index="3LKzX3">
         <property id="7205622933660497489" name="scenario" index="3LKBmK" />

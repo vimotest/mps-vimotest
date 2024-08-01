@@ -218,6 +218,11 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
     </node>
+    <node concept="1TJgyi" id="3CJ09vZEUcl" role="1TKVEl">
+      <property role="IQ2nx" value="4192570430934721301" />
+      <property role="TrG5h" value="defaultIsChecked" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2ZnRpGqKU3p">
     <property role="EcuMT" value="3447467698014101721" />

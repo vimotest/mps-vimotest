@@ -706,9 +706,7 @@
     <node concept="ftmFs" id="RUuBjGeUqO" role="ftER_">
       <node concept="tCFHf" id="RUuBjGeUqR" role="ftvYc">
         <ref role="tCJdB" node="RUuBjGePIA" resolve="GenerateWidgets" />
-        <node concept="3clFbT" id="4OohpJR37PI" role="2J__8u">
-          <property role="3clFbU" value="true" />
-        </node>
+        <node concept="3clFbT" id="4OohpJR37PI" role="2J__8u" />
       </node>
     </node>
     <node concept="tT9cl" id="RUuBjGeUqT" role="2f5YQi">

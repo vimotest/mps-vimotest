@@ -75,25 +75,6 @@
     <property role="3GE5qa" value="assert" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
-  <node concept="PlHQZ" id="69Ym88BeFj8">
-    <property role="EcuMT" value="5213916851000129541" />
-    <property role="TrG5h" value="ICheckBoxCheckValue" />
-    <property role="3GE5qa" value="assert.checkbox" />
-  </node>
-  <node concept="1TIwiD" id="69Ym88BeFj9">
-    <property role="EcuMT" value="5213916851000129542" />
-    <property role="TrG5h" value="CheckBoxCheck" />
-    <property role="34LRSv" value="check checkbox" />
-    <property role="3GE5qa" value="assert.checkbox" />
-    <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
-    <node concept="1TJgyj" id="4xrzs1wijw7" role="1TKVEi">
-      <property role="IQ2ns" value="5213916851000129543" />
-      <property role="20kJfa" value="checks" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2Yd1qrJOhwF">
     <property role="EcuMT" value="3426401106044983339" />
     <property role="TrG5h" value="ViewModelTestSuite" />
@@ -191,6 +172,60 @@
       <property role="IQ2nx" value="6523116078126804343" />
       <property role="TrG5h" value="descriptionLabel" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3CJ09vZN9RY">
+    <property role="EcuMT" value="4192570430936882686" />
+    <property role="TrG5h" value="CheckedCheckValue" />
+    <property role="34LRSv" value="is checked" />
+    <property role="3GE5qa" value="assert._checkvalues" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="3CJ09vZN9RZ" role="PzmwI">
+      <ref role="PrY4T" node="69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
+    </node>
+    <node concept="1TJgyi" id="3CJ09vZNkXV" role="1TKVEl">
+      <property role="IQ2nx" value="4192570430936928123" />
+      <property role="TrG5h" value="checked" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3CJ09vZN9S0">
+    <property role="EcuMT" value="4192570430936882688" />
+    <property role="TrG5h" value="VisibilityCheckValue" />
+    <property role="34LRSv" value="visibility" />
+    <property role="3GE5qa" value="assert._checkvalues" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="3CJ09vZN9S1" role="PzmwI">
+      <ref role="PrY4T" node="69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3CJ09vZN9S2">
+    <property role="EcuMT" value="4192570430936882690" />
+    <property role="TrG5h" value="EnabledCheckValue" />
+    <property role="34LRSv" value="enabled" />
+    <property role="3GE5qa" value="assert._checkvalues" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="3CJ09vZN9S3" role="PzmwI">
+      <ref role="PrY4T" node="69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="69Ym88BeFj8">
+    <property role="EcuMT" value="5213916851000129541" />
+    <property role="TrG5h" value="ICheckBoxCheckValue" />
+    <property role="3GE5qa" value="assert.checkbox" />
+  </node>
+  <node concept="1TIwiD" id="69Ym88BeFj9">
+    <property role="EcuMT" value="5213916851000129542" />
+    <property role="TrG5h" value="CheckBoxCheck" />
+    <property role="34LRSv" value="check checkbox" />
+    <property role="3GE5qa" value="assert.checkbox" />
+    <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
+    <node concept="1TJgyj" id="4xrzs1wijw7" role="1TKVEi">
+      <property role="IQ2ns" value="5213916851000129543" />
+      <property role="20kJfa" value="checks" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
     </node>
   </node>
 </model>

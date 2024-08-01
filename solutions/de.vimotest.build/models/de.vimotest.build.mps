@@ -390,6 +390,11 @@
             <ref role="1Busuk" node="220dcIkyAiE" resolve="de.vimotest.viewmodel" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3CJ09vZNCVh" role="3bR37C">
+          <node concept="3bR9La" id="3CJ09vZNCVi" role="1SiIV1">
+            <ref role="3bR37D" node="6vtOLtwgJp4" resolve="de.vimotest.mpswidgets.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="220dcIkyAiQ" role="2G$12L">
         <property role="BnDLt" value="true" />

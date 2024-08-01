@@ -18,13 +18,18 @@
       </concept>
     </language>
     <language id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.testing">
+      <concept id="5213916851000129542" name="de.vimotest.testing.structure.CheckBoxCheck" flags="ng" index="C4Fn6">
+        <child id="5213916851000129543" name="checks" index="C4Fn7" />
+      </concept>
       <concept id="3426401106044983339" name="de.vimotest.testing.structure.ViewModelTestSuite" flags="ng" index="30n1Qd">
         <reference id="3426401106044983489" name="targetViewModel" index="30n1PB" />
         <child id="3426401106044983341" name="tests" index="30n1Qb" />
       </concept>
       <concept id="3426401106045121475" name="de.vimotest.testing.structure.ViewWidgetAssertion" flags="ng" index="30nzp_">
         <reference id="3426401106045121502" name="widget" index="30nzpS" />
+        <child id="3426401106045146960" name="check" index="30nDbQ" />
       </concept>
+      <concept id="4192570430936882686" name="de.vimotest.testing.structure.CheckedCheckValue" flags="ng" index="35STPD" />
       <concept id="7205622933660482722" name="de.vimotest.testing.structure.ViewModelTestCase" flags="ng" index="3LKzX3">
         <property id="7205622933660497489" name="scenario" index="3LKBmK" />
         <child id="7205622933660496198" name="statements" index="3LKBaB" />
@@ -66,6 +71,9 @@
       <property role="3LKBmK" value="My Scenario" />
       <node concept="30nzp_" id="6fZwY6ignod" role="3LKBaB">
         <ref role="30nzpS" node="6vtOLtwdT_M" resolve="MyFlag" />
+        <node concept="C4Fn6" id="3CJ09vZQStU" role="30nDbQ">
+          <node concept="35STPD" id="3CJ09vZQStY" role="C4Fn7" />
+        </node>
       </node>
     </node>
   </node>

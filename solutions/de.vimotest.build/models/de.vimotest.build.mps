@@ -385,6 +385,11 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6fZwY6ih42D" role="3bR37C">
+          <node concept="1Busua" id="6fZwY6ih42E" role="1SiIV1">
+            <ref role="1Busuk" node="220dcIkyAiE" resolve="de.vimotest.viewmodel" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="220dcIkyAiQ" role="2G$12L">
         <property role="BnDLt" value="true" />

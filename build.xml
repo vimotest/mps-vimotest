@@ -267,10 +267,12 @@
           <module ref="31f56055-9d30-42b3-a2b1-fb3f554d7075(jetbrains.mps.lang.smodel.query.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="cl" />
+          <module ref="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0(de.vimotest.viewmodel)" kind="cl" />
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
           <module ref="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" kind="cl" />
         </dependencies>
         <uses>
+          <language id="l:ce7915b5-36b4-4478-a67c-f5a8a72ed4a0:de.vimotest.viewmodel" />
           <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
           <language id="l:774bf8a0-62e5-41e1-af63-f4812e60e48b:jetbrains.mps.baseLanguage.checkedDots" />
           <language id="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" />
@@ -774,14 +776,16 @@
         <module file="${basedir}/solutions/de.vimotest.build/de.vimotest.build.msd" />
         <module file="${basedir}/languages/de.vimotest.mpswidgets/de.vimotest.mpswidgets.mpl" />
         <module file="${basedir}/languages/de.vimotest.mpswidgets.runtime/de.vimotest.mpswidgets.runtime.msd" />
-        <module file="${basedir}/languages/de.vimotest.testing/de.vimotest.testing.mpl" />
         <module file="${basedir}/languages/de.vimotest.types/de.vimotest.types.mpl" />
         <module file="${basedir}/languages/de.vimotest.widgetdsl/de.vimotest.widgetdsl.mpl" />
       </chunk>
       <chunk>
-        <module file="${basedir}/solutions/de.vimotest.plugin/de.vimotest.plugin.msd" />
         <module file="${basedir}/languages/de.vimotest.viewmodel/de.vimotest.viewmodel.mpl" />
         <module file="${basedir}/languages/de.vimotest.widgetdsl.widgets/de.vimotest.widgetdsl.widgets.msd" />
+      </chunk>
+      <chunk>
+        <module file="${basedir}/solutions/de.vimotest.plugin/de.vimotest.plugin.msd" />
+        <module file="${basedir}/languages/de.vimotest.testing/de.vimotest.testing.mpl" />
       </chunk>
       <chunk>
         <module file="${basedir}/solutions/de.vimotest.sandbox/de.vimotest.sandbox.msd" />
@@ -935,7 +939,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.de.vimotest.testing" depends="fetchDependencies">
+  <target name="java.compile.de.vimotest.testing" depends="java.compile.de.vimotest.types, java.compile.de.vimotest.viewmodel, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.vimotest.testing/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.vimotest.testing" />
     <javac destdir="${build.tmp}/java/out/de.vimotest.testing" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -967,6 +971,8 @@
         <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <pathelement path="${build.tmp}/java/out/de.vimotest.types" />
+        <pathelement path="${build.tmp}/java/out/de.vimotest.viewmodel" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
@@ -996,7 +1002,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.de.vimotest.testing.generator" depends="java.compile.de.vimotest.testing, fetchDependencies">
+  <target name="java.compile.de.vimotest.testing.generator" depends="java.compile.de.vimotest.testing, java.compile.de.vimotest.types, java.compile.de.vimotest.viewmodel, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.vimotest.testing/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.vimotest.testing.generator" />
     <javac destdir="${build.tmp}/java/out/de.vimotest.testing.generator" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1029,6 +1035,8 @@
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <pathelement path="${build.tmp}/java/out/de.vimotest.testing" />
+        <pathelement path="${build.tmp}/java/out/de.vimotest.types" />
+        <pathelement path="${build.tmp}/java/out/de.vimotest.viewmodel" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
@@ -1598,16 +1606,16 @@
     <delete dir="${basedir}/languages/de.vimotest.mpswidgets/source_gen" />
     <delete dir="${basedir}/languages/de.vimotest.mpswidgets/generator/source_gen" />
     <delete dir="${basedir}/languages/de.vimotest.mpswidgets.runtime/source_gen" />
-    <delete dir="${basedir}/languages/de.vimotest.testing/source_gen" />
-    <delete dir="${basedir}/languages/de.vimotest.testing/generator/source_gen" />
     <delete dir="${basedir}/languages/de.vimotest.types/source_gen" />
     <delete dir="${basedir}/languages/de.vimotest.types/generator/source_gen" />
     <delete dir="${basedir}/languages/de.vimotest.widgetdsl/source_gen" />
     <delete dir="${basedir}/languages/de.vimotest.widgetdsl/generator/source_gen" />
-    <delete dir="${basedir}/solutions/de.vimotest.plugin/source_gen" />
     <delete dir="${basedir}/languages/de.vimotest.viewmodel/source_gen" />
     <delete dir="${basedir}/languages/de.vimotest.viewmodel/generator/source_gen" />
     <delete dir="${basedir}/languages/de.vimotest.widgetdsl.widgets/source_gen" />
+    <delete dir="${basedir}/solutions/de.vimotest.plugin/source_gen" />
+    <delete dir="${basedir}/languages/de.vimotest.testing/source_gen" />
+    <delete dir="${basedir}/languages/de.vimotest.testing/generator/source_gen" />
     <delete dir="${basedir}/solutions/de.vimotest.sandbox/source_gen" />
   </target>
 </project>

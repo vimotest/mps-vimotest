@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="0" />
+    <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.testing" version="0" />
   </languages>
   <imports />
   <registry>
@@ -14,6 +15,19 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.testing">
+      <concept id="3426401106044983339" name="de.vimotest.testing.structure.ViewModelTestSuite" flags="ng" index="30n1Qd">
+        <reference id="3426401106044983489" name="targetViewModel" index="30n1PB" />
+        <child id="3426401106044983341" name="tests" index="30n1Qb" />
+      </concept>
+      <concept id="3426401106045121475" name="de.vimotest.testing.structure.ViewWidgetAssertion" flags="ng" index="30nzp_">
+        <reference id="3426401106045121502" name="component" index="30nzpS" />
+      </concept>
+      <concept id="7205622933660482722" name="de.vimotest.testing.structure.ViewModelTestCase" flags="ng" index="3LKzX3">
+        <property id="7205622933660497489" name="scenario" index="3LKBmK" />
+        <child id="7205622933660496198" name="statements" index="3LKBaB" />
       </concept>
     </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
@@ -42,6 +56,16 @@
         <node concept="C4FCf" id="6vtOLtwdT_N" role="C4FCF" />
         <node concept="C4FCg" id="6vtOLtwdT_O" role="C4FCG" />
         <node concept="C4FCh" id="6vtOLtwdT_P" role="C4FCH" />
+      </node>
+    </node>
+  </node>
+  <node concept="30n1Qd" id="6fZwY6ifUAh">
+    <property role="TrG5h" value="MyViewTest" />
+    <ref role="30n1PB" node="F907haLUeC" resolve="MyView" />
+    <node concept="3LKzX3" id="6fZwY6ignob" role="30n1Qb">
+      <property role="3LKBmK" value="My Scenario" />
+      <node concept="30nzp_" id="6fZwY6ignod" role="3LKBaB">
+        <ref role="30nzpS" node="6vtOLtwdT_M" resolve="MyFlag" />
       </node>
     </node>
   </node>

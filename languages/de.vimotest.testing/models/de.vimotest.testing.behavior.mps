@@ -186,7 +186,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3CJ09vZFA7p">
-    <property role="3GE5qa" value="assert" />
+    <property role="3GE5qa" value="test.assert" />
     <ref role="13h7C2" to="53m0:2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     <node concept="13i0hz" id="3CJ09vZMLMB" role="13h7CS">
       <property role="TrG5h" value="createEditorCellForCheck" />
@@ -277,7 +277,7 @@
   </node>
   <node concept="13h7C7" id="6mWHjmRSkPQ">
     <property role="TrG5h" value="ICheckBoxCheckValue_Behavior" />
-    <property role="3GE5qa" value="assert.checkbox" />
+    <property role="3GE5qa" value="test.assert.checkbox" />
     <ref role="13h7C2" to="53m0:69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
     <node concept="13hLZK" id="5L3DBX$oEZz" role="13h7CW">
       <node concept="3clFbS" id="5L3DBX$oEZ$" role="2VODD2" />
@@ -299,7 +299,7 @@
   </node>
   <node concept="13h7C7" id="4xrzs1wijuT">
     <property role="TrG5h" value="CheckBoxCheck_Behavior" />
-    <property role="3GE5qa" value="assert.checkbox" />
+    <property role="3GE5qa" value="test.assert.checkbox" />
     <ref role="13h7C2" to="53m0:69Ym88BeFj9" resolve="CheckBoxCheck" />
     <node concept="13hLZK" id="5L3DBX$oEZM" role="13h7CW">
       <node concept="3clFbS" id="5L3DBX$oEZN" role="2VODD2">
@@ -490,7 +490,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3CJ09vZN9T1">
-    <property role="3GE5qa" value="assert._checkvalues" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="13h7C2" to="53m0:3CJ09vZN9RY" resolve="CheckedCheckValue" />
     <node concept="13hLZK" id="3CJ09vZN9T2" role="13h7CW">
       <node concept="3clFbS" id="3CJ09vZN9T3" role="2VODD2" />
@@ -510,7 +510,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3CJ09vZN9TQ">
-    <property role="3GE5qa" value="assert._checkvalues" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="13h7C2" to="53m0:3CJ09vZN9S2" resolve="EnabledCheckValue" />
     <node concept="13hLZK" id="3CJ09vZN9TR" role="13h7CW">
       <node concept="3clFbS" id="3CJ09vZN9TS" role="2VODD2" />
@@ -530,7 +530,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3CJ09vZN9UF">
-    <property role="3GE5qa" value="assert._checkvalues" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="13h7C2" to="53m0:3CJ09vZN9S0" resolve="VisibilityCheckValue" />
     <node concept="13hLZK" id="3CJ09vZN9UG" role="13h7CW">
       <node concept="3clFbS" id="3CJ09vZN9UH" role="2VODD2" />

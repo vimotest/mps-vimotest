@@ -35,9 +35,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
-        <child id="1169127546356" name="extends" index="PrDN$" />
-      </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -72,7 +70,7 @@
     <property role="EcuMT" value="3426401106045121504" />
     <property role="TrG5h" value="ViewWidgetCheck" />
     <property role="R5$K7" value="true" />
-    <property role="3GE5qa" value="assert" />
+    <property role="3GE5qa" value="test.assert" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="2Yd1qrJOhwF">
@@ -122,12 +120,26 @@
     <property role="TrG5h" value="ViewModelTestCase" />
     <property role="34LRSv" value="test" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="1TJgyj" id="6fZwY6ifv56" role="1TKVEi">
-      <property role="IQ2ns" value="7205622933660496198" />
+    <node concept="1TJgyj" id="6tib4XeIJNZ" role="1TKVEi">
+      <property role="IQ2ns" value="7445061853131767039" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="statements" />
+      <property role="20kJfa" value="contextWithDescription" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="3JdhG1lSFby" resolve="GivenDescriptionWithContext" />
+    </node>
+    <node concept="1TJgyj" id="6tib4XeIJOm" role="1TKVEi">
+      <property role="IQ2ns" value="7445061853131767062" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="stimuliWithDescription" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6fZwY6ifv53" resolve="ITestCaseStatement" />
+      <ref role="20lvS9" node="6tib4XeIJOl" resolve="WhenDescriptionWithStimuli" />
+    </node>
+    <node concept="1TJgyj" id="6tib4XeIJO9" role="1TKVEi">
+      <property role="IQ2ns" value="7445061853131767049" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="assertsWithDescription" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="6tib4XeIJNS" resolve="ThenDescriptionWithAssert" />
     </node>
     <node concept="1TJgyi" id="6fZwY6ifvph" role="1TKVEl">
       <property role="IQ2nx" value="7205622933660497489" />
@@ -137,16 +149,13 @@
   </node>
   <node concept="PlHQZ" id="6fZwY6ifv52">
     <property role="EcuMT" value="7205622933660496194" />
-    <property role="3GE5qa" value="test" />
+    <property role="3GE5qa" value="test.assert" />
     <property role="TrG5h" value="ITestCaseAssertion" />
-    <node concept="PrWs8" id="6fZwY6ifv54" role="PrDN$">
-      <ref role="PrY4T" node="6fZwY6ifv53" resolve="ITestCaseStatement" />
-    </node>
   </node>
   <node concept="PlHQZ" id="6fZwY6ifv53">
     <property role="EcuMT" value="7205622933660496195" />
-    <property role="3GE5qa" value="test" />
-    <property role="TrG5h" value="ITestCaseStatement" />
+    <property role="3GE5qa" value="test.stimuli" />
+    <property role="TrG5h" value="ITestCaseStimuli" />
   </node>
   <node concept="1TIwiD" id="2Yd1qrJONf3">
     <property role="EcuMT" value="3426401106045121475" />
@@ -178,7 +187,7 @@
     <property role="EcuMT" value="4192570430936882686" />
     <property role="TrG5h" value="CheckedCheckValue" />
     <property role="34LRSv" value="is checked" />
-    <property role="3GE5qa" value="assert._checkvalues" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="3CJ09vZN9RZ" role="PzmwI">
       <ref role="PrY4T" node="69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
@@ -193,7 +202,7 @@
     <property role="EcuMT" value="4192570430936882688" />
     <property role="TrG5h" value="VisibilityCheckValue" />
     <property role="34LRSv" value="visibility" />
-    <property role="3GE5qa" value="assert._checkvalues" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="3CJ09vZN9S1" role="PzmwI">
       <ref role="PrY4T" node="69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
@@ -203,7 +212,7 @@
     <property role="EcuMT" value="4192570430936882690" />
     <property role="TrG5h" value="EnabledCheckValue" />
     <property role="34LRSv" value="enabled" />
-    <property role="3GE5qa" value="assert._checkvalues" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="3CJ09vZN9S3" role="PzmwI">
       <ref role="PrY4T" node="69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
@@ -212,13 +221,13 @@
   <node concept="PlHQZ" id="69Ym88BeFj8">
     <property role="EcuMT" value="5213916851000129541" />
     <property role="TrG5h" value="ICheckBoxCheckValue" />
-    <property role="3GE5qa" value="assert.checkbox" />
+    <property role="3GE5qa" value="test.assert.checkbox" />
   </node>
   <node concept="1TIwiD" id="69Ym88BeFj9">
     <property role="EcuMT" value="5213916851000129542" />
     <property role="TrG5h" value="CheckBoxCheck" />
     <property role="34LRSv" value="check checkbox" />
-    <property role="3GE5qa" value="assert.checkbox" />
+    <property role="3GE5qa" value="test.assert.checkbox" />
     <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     <node concept="1TJgyj" id="4xrzs1wijw7" role="1TKVEi">
       <property role="IQ2ns" value="5213916851000129543" />
@@ -226,6 +235,77 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2Yd1qrJOMZM">
+    <property role="EcuMT" value="3426401106045120498" />
+    <property role="TrG5h" value="ITestCaseContext" />
+    <property role="3GE5qa" value="test.context" />
+  </node>
+  <node concept="1TIwiD" id="3JdhG1lSFby">
+    <property role="EcuMT" value="4309178210352018146" />
+    <property role="3GE5qa" value="test.description" />
+    <property role="TrG5h" value="GivenDescriptionWithContext" />
+    <ref role="1TJDcQ" node="3JdhG1lSFbA" resolve="TestDescriptionPart" />
+    <node concept="1TJgyj" id="6tib4XeIK8P" role="1TKVEi">
+      <property role="IQ2ns" value="7445061853131768373" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="context" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2Yd1qrJOMZM" resolve="ITestCaseContext" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3JdhG1lSFbA">
+    <property role="EcuMT" value="4309178210352018150" />
+    <property role="3GE5qa" value="test.description" />
+    <property role="TrG5h" value="TestDescriptionPart" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="3JdhG1lSFbB" role="1TKVEl">
+      <property role="IQ2nx" value="4309178210352018151" />
+      <property role="TrG5h" value="textBefore" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3JdhG1lSFbC" role="1TKVEl">
+      <property role="IQ2nx" value="4309178210352018152" />
+      <property role="TrG5h" value="textAfter" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6tib4XeIJNS">
+    <property role="EcuMT" value="7445061853131767032" />
+    <property role="3GE5qa" value="test.description" />
+    <property role="TrG5h" value="ThenDescriptionWithAssert" />
+    <ref role="1TJDcQ" node="3JdhG1lSFbA" resolve="TestDescriptionPart" />
+    <node concept="1TJgyj" id="6tib4XeIK94" role="1TKVEi">
+      <property role="IQ2ns" value="7445061853131768388" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="assert" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6fZwY6ifv52" resolve="ITestCaseAssertion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6tib4XeIJOl">
+    <property role="EcuMT" value="7445061853131767061" />
+    <property role="3GE5qa" value="test.description" />
+    <property role="TrG5h" value="WhenDescriptionWithStimuli" />
+    <ref role="1TJDcQ" node="3JdhG1lSFbA" resolve="TestDescriptionPart" />
+    <node concept="1TJgyj" id="6tib4XeIK96" role="1TKVEi">
+      <property role="IQ2ns" value="7445061853131768390" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="stimuli" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6fZwY6ifv53" resolve="ITestCaseStimuli" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2Yd1qrJQnE4">
+    <property role="EcuMT" value="3426401106045532804" />
+    <property role="3GE5qa" value="test.context" />
+    <property role="TrG5h" value="EmptyContext" />
+    <property role="34LRSv" value="empty context" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2Yd1qrJQnE5" role="PzmwI">
+      <ref role="PrY4T" node="2Yd1qrJOMZM" resolve="ITestCaseContext" />
     </node>
   </node>
 </model>

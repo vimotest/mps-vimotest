@@ -741,6 +741,12 @@
         <property role="3$6WeP" value="1" />
       </node>
     </node>
+    <node concept="14StLt" id="3JdhG1lSFbT" role="V601i">
+      <property role="TrG5h" value="DescriptionText" />
+      <node concept="Vb9p2" id="6tib4XeWUAU" role="3F10Kt">
+        <property role="Vbekb" value="g1_kEg4/ITALIC" />
+      </node>
+    </node>
   </node>
   <node concept="PKFIW" id="4OohpJQEUlZ">
     <property role="TrG5h" value="ViewWidget_WidgetFeatures_EC" />

@@ -21,6 +21,10 @@
       <concept id="5213916851000129542" name="de.vimotest.testing.structure.CheckBoxCheck" flags="ng" index="C4Fn6">
         <child id="5213916851000129543" name="checks" index="C4Fn7" />
       </concept>
+      <concept id="7445061853131767032" name="de.vimotest.testing.structure.ThenDescriptionWithAssert" flags="ng" index="DUd2R">
+        <child id="7445061853131768388" name="assert" index="DUiSb" />
+      </concept>
+      <concept id="3426401106045532804" name="de.vimotest.testing.structure.EmptyContext" flags="ng" index="30l7Wy" />
       <concept id="3426401106044983339" name="de.vimotest.testing.structure.ViewModelTestSuite" flags="ng" index="30n1Qd">
         <reference id="3426401106044983489" name="targetViewModel" index="30n1PB" />
         <child id="3426401106044983341" name="tests" index="30n1Qb" />
@@ -29,10 +33,20 @@
         <reference id="3426401106045121502" name="widget" index="30nzpS" />
         <child id="3426401106045146960" name="check" index="30nDbQ" />
       </concept>
-      <concept id="4192570430936882686" name="de.vimotest.testing.structure.CheckedCheckValue" flags="ng" index="35STPD" />
+      <concept id="4192570430936882686" name="de.vimotest.testing.structure.CheckedCheckValue" flags="ng" index="35STPD">
+        <property id="4192570430936928123" name="checked" index="35S$ZG" />
+      </concept>
+      <concept id="4309178210352018146" name="de.vimotest.testing.structure.GivenDescriptionWithContext" flags="ng" index="1IbZgy">
+        <child id="7445061853131768373" name="context" index="DUiTU" />
+      </concept>
+      <concept id="4309178210352018150" name="de.vimotest.testing.structure.TestDescriptionPart" flags="ng" index="1IbZgA">
+        <property id="4309178210352018151" name="textBefore" index="1IbZgB" />
+        <property id="4309178210352018152" name="textAfter" index="1IbZgC" />
+      </concept>
       <concept id="7205622933660482722" name="de.vimotest.testing.structure.ViewModelTestCase" flags="ng" index="3LKzX3">
         <property id="7205622933660497489" name="scenario" index="3LKBmK" />
-        <child id="7205622933660496198" name="statements" index="3LKBaB" />
+        <child id="7445061853131767039" name="contextWithDescription" index="DUd2K" />
+        <child id="7445061853131767049" name="assertsWithDescription" index="DUd56" />
       </concept>
     </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
@@ -67,13 +81,27 @@
   <node concept="30n1Qd" id="6fZwY6ifUAh">
     <property role="TrG5h" value="MyViewTest" />
     <ref role="30n1PB" node="F907haLUeC" resolve="MyView" />
-    <node concept="3LKzX3" id="6fZwY6ignob" role="30n1Qb">
+    <node concept="3LKzX3" id="3JdhG1lT89S" role="30n1Qb">
       <property role="3LKBmK" value="My Scenario" />
-      <node concept="30nzp_" id="6fZwY6ignod" role="3LKBaB">
-        <ref role="30nzpS" node="6vtOLtwdT_M" resolve="MyFlag" />
-        <node concept="C4Fn6" id="3CJ09vZQStU" role="30nDbQ">
-          <node concept="35STPD" id="3CJ09vZQStY" role="C4Fn7" />
+      <node concept="DUd2R" id="3JdhG1lT89X" role="DUd56">
+        <property role="1IbZgC" value="is not checked" />
+        <node concept="30nzp_" id="3JdhG1lT90w" role="DUiSb">
+          <ref role="30nzpS" node="6vtOLtwdT_M" resolve="MyFlag" />
+          <node concept="C4Fn6" id="3JdhG1lT90z" role="30nDbQ">
+            <node concept="35STPD" id="3JdhG1lT90E" role="C4Fn7">
+              <property role="35S$ZG" value="true" />
+            </node>
+          </node>
         </node>
+      </node>
+      <node concept="DUd2R" id="3JdhG1lT90G" role="DUd56">
+        <node concept="30nzp_" id="3JdhG1lT90O" role="DUiSb">
+          <ref role="30nzpS" node="6vtOLtwdT_M" resolve="MyFlag" />
+        </node>
+      </node>
+      <node concept="1IbZgy" id="3JdhG1lU09E" role="DUd2K">
+        <property role="1IbZgB" value="some" />
+        <node concept="30l7Wy" id="3JdhG1lU09I" role="DUiTU" />
       </node>
     </node>
   </node>

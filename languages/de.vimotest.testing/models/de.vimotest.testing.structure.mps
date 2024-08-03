@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="0" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -159,7 +160,7 @@
   </node>
   <node concept="1TIwiD" id="2Yd1qrJONf3">
     <property role="EcuMT" value="3426401106045121475" />
-    <property role="3GE5qa" value="test" />
+    <property role="3GE5qa" value="test.assert" />
     <property role="TrG5h" value="ViewWidgetAssertion" />
     <property role="34LRSv" value="assert" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -169,13 +170,11 @@
       <property role="20kJfa" value="check" />
       <ref role="20lvS9" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     </node>
-    <node concept="1TJgyj" id="2Yd1qrJONfu" role="1TKVEi">
-      <property role="IQ2ns" value="3426401106045121502" />
-      <property role="20kJfa" value="widget" />
-      <ref role="20lvS9" to="at53:F907haLIRF" resolve="ViewWidget" />
-    </node>
     <node concept="PrWs8" id="65sofNQ5xLK" role="PzmwI">
       <ref role="PrY4T" node="6fZwY6ifv52" resolve="ITestCaseAssertion" />
+    </node>
+    <node concept="PrWs8" id="6I6OCWxY3V6" role="PzmwI">
+      <ref role="PrY4T" node="6I6OCWxY3UW" resolve="IProvideWidget" />
     </node>
     <node concept="1TJgyi" id="5E6KScpoMPR" role="1TKVEl">
       <property role="IQ2nx" value="6523116078126804343" />
@@ -306,6 +305,16 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2Yd1qrJQnE5" role="PzmwI">
       <ref role="PrY4T" node="2Yd1qrJOMZM" resolve="ITestCaseContext" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6I6OCWxY3UW">
+    <property role="EcuMT" value="7748111721129590460" />
+    <property role="3GE5qa" value="test.assert" />
+    <property role="TrG5h" value="IProvideWidget" />
+    <node concept="1TJgyj" id="2Yd1qrJONfu" role="1TKVEi">
+      <property role="IQ2ns" value="3426401106045121502" />
+      <property role="20kJfa" value="widget" />
+      <ref role="20lvS9" to="at53:F907haLIRF" resolve="ViewWidget" />
     </node>
   </node>
 </model>

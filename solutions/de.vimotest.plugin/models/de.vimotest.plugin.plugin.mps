@@ -31,6 +31,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
+    <import index="ytrb" ref="r:cb6bce33-2081-4b8a-a90c-28810848f91f(de.vimotest.testing.editor)" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -4947,12 +4948,12 @@
           <node concept="3cpWsn" id="JW9DBRQiK9" role="3cpWs9">
             <property role="TrG5h" value="node" />
             <node concept="3Tqbb2" id="JW9DBRQiKa" role="1tU5fm">
-              <ref role="ehGHo" to="tpc2:fA4kQeF" resolve="ConceptEditorDeclaration" />
+              <ref role="ehGHo" to="tpc2:fGPKFH7" resolve="EditorComponentDeclaration" />
             </node>
             <node concept="2ShNRf" id="JW9DBRQiKb" role="33vP2m">
               <node concept="2fJWfE" id="JW9DBRQiKc" role="2ShVmc">
                 <node concept="3Tqbb2" id="JW9DBRQiKd" role="3zrR0E">
-                  <ref role="ehGHo" to="tpc2:fA4kQeF" resolve="ConceptEditorDeclaration" />
+                  <ref role="ehGHo" to="tpc2:fGPKFH7" resolve="EditorComponentDeclaration" />
                 </node>
               </node>
             </node>
@@ -5012,7 +5013,42 @@
                 <ref role="3cqZAo" node="JW9DBRQiK9" resolve="node" />
               </node>
               <node concept="3TrEf2" id="JW9DBRQiK_" role="2OqNvi">
-                <ref role="3Tt5mk" to="tpc2:gXXX56I" resolve="conceptDeclaration" />
+                <ref role="3Tt5mk" to="tpc2:gXXX56I" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6I6OCWxZ3v4" role="3cqZAp">
+          <node concept="37vLTI" id="6I6OCWxZ3v5" role="3clFbG">
+            <node concept="2OqwBi" id="6I6OCWxZ3v6" role="37vLTJ">
+              <node concept="2OqwBi" id="6I6OCWxZ3v7" role="2Oq$k0">
+                <node concept="2OqwBi" id="6I6OCWxZ3v8" role="2Oq$k0">
+                  <node concept="37vLTw" id="6I6OCWxZ3v9" role="2Oq$k0">
+                    <ref role="3cqZAo" node="JW9DBRQiK9" resolve="node" />
+                  </node>
+                  <node concept="3TrEf2" id="6I6OCWxZ3va" role="2OqNvi">
+                    <ref role="3Tt5mk" to="tpc2:66t_lsklggO" />
+                  </node>
+                </node>
+                <node concept="2DeJnY" id="6I6OCWxZ3vb" role="2OqNvi" />
+              </node>
+              <node concept="3TrEf2" id="6I6OCWxZ3vc" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpc2:66t_lskdu99" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6I6OCWxZ3vd" role="37vLTx">
+              <node concept="2tJFMh" id="6I6OCWxZ3ve" role="2Oq$k0">
+                <node concept="ZC_QK" id="6I6OCWxZ3vf" role="2tJFKM">
+                  <ref role="2aWVGs" to="ytrb:6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_EC" />
+                </node>
+              </node>
+              <node concept="Vyspw" id="6I6OCWxZ3vg" role="2OqNvi">
+                <node concept="2OqwBi" id="6I6OCWxZ3vh" role="Vysub">
+                  <node concept="Xjq3P" id="6I6OCWxZ3vi" role="2Oq$k0" />
+                  <node concept="2OwXpG" id="6I6OCWxZ3vj" role="2OqNvi">
+                    <ref role="2Oxat5" node="L9c2Y9qpZA" resolve="repository" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -5697,7 +5733,7 @@
       <node concept="17QB3L" id="6mWHjmRM9xs" role="3clF45" />
     </node>
     <node concept="2YIFZL" id="JW9DBRQiPl" role="jymVt">
-      <property role="TrG5h" value="getCheckEditorName" />
+      <property role="TrG5h" value="getCheckInspectorEditorComponentName" />
       <node concept="37vLTG" id="JW9DBRQiPm" role="3clF46">
         <property role="TrG5h" value="definitionNode" />
         <node concept="3Tqbb2" id="JW9DBRQiPn" role="1tU5fm">
@@ -5708,7 +5744,7 @@
         <node concept="3clFbF" id="JW9DBRQiPp" role="3cqZAp">
           <node concept="3cpWs3" id="JW9DBRQiPq" role="3clFbG">
             <node concept="Xl_RD" id="JW9DBRQiPt" role="3uHU7w">
-              <property role="Xl_RC" value="_Editor" />
+              <property role="Xl_RC" value="_Inspector_EC" />
             </node>
             <node concept="1rXfSq" id="4xrzs1wfv7A" role="3uHU7B">
               <ref role="37wK5l" node="JW9DBRQiP9" resolve="getCheckConceptName" />

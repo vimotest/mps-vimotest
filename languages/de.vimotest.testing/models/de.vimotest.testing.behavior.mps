@@ -52,7 +52,6 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -116,16 +115,23 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
         <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
         <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
       </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -240,7 +246,21 @@
       </node>
       <node concept="3Tm1VV" id="2Yd1qrJP3FG" role="1B3o_S" />
       <node concept="3cqZAl" id="2Yd1qrJP3FV" role="3clF45" />
-      <node concept="3clFbS" id="2Yd1qrJP3FI" role="3clF47" />
+      <node concept="3clFbS" id="2Yd1qrJP3FI" role="3clF47">
+        <node concept="3SKdUt" id="6I6OCWxY7OA" role="3cqZAp">
+          <node concept="1PaTwC" id="6I6OCWxY7OB" role="1aUNEU">
+            <node concept="3oM_SD" id="6I6OCWxY7OV" role="1PaTwD">
+              <property role="3oM_SC" value="implemented" />
+            </node>
+            <node concept="3oM_SD" id="6I6OCWxY7OX" role="1PaTwD">
+              <property role="3oM_SC" value="by" />
+            </node>
+            <node concept="3oM_SD" id="6I6OCWxY7P1" role="1PaTwD">
+              <property role="3oM_SC" value="sub-concepts" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="4jKdMMdJYzD" role="13h7CS">
       <property role="13i0it" value="true" />
@@ -250,24 +270,22 @@
         <ref role="ehGHo" to="at53:F907haLIRF" resolve="ViewWidget" />
       </node>
       <node concept="3clFbS" id="4jKdMMdJYzG" role="3clF47">
-        <node concept="3SKdUt" id="3CJ09vZFCPl" role="3cqZAp">
-          <node concept="1PaTwC" id="3CJ09vZFCPm" role="1aUNEU">
-            <node concept="3oM_SD" id="3CJ09vZFCPP" role="1PaTwD">
-              <property role="3oM_SC" value="TODO" />
+        <node concept="3clFbF" id="3CJ09vZFCOr" role="3cqZAp">
+          <node concept="2OqwBi" id="6I6OCWxY7Dc" role="3clFbG">
+            <node concept="2OqwBi" id="6I6OCWxY5xD" role="2Oq$k0">
+              <node concept="13iPFW" id="6I6OCWxY5mp" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="6I6OCWxY7iJ" role="2OqNvi">
+                <node concept="1xMEDy" id="6I6OCWxY7iL" role="1xVPHs">
+                  <node concept="chp4Y" id="6I6OCWxY7ld" role="ri$Ld">
+                    <ref role="cht4Q" to="53m0:6I6OCWxY3UW" resolve="IProvideWidget" />
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="3oM_SD" id="3CJ09vZFCPR" role="1PaTwD">
-              <property role="3oM_SC" value="not" />
-            </node>
-            <node concept="3oM_SD" id="3CJ09vZFCQ4" role="1PaTwD">
-              <property role="3oM_SC" value="implemented" />
-            </node>
-            <node concept="3oM_SD" id="3CJ09vZFCQ8" role="1PaTwD">
-              <property role="3oM_SC" value="yet" />
+            <node concept="3TrEf2" id="6I6OCWxY7M4" role="2OqNvi">
+              <ref role="3Tt5mk" to="53m0:2Yd1qrJONfu" resolve="widget" />
             </node>
           </node>
-        </node>
-        <node concept="3clFbF" id="3CJ09vZFCOr" role="3cqZAp">
-          <node concept="10Nm6u" id="3CJ09vZFCOq" role="3clFbG" />
         </node>
       </node>
     </node>
@@ -361,7 +379,9 @@
                   <node concept="1pGfFk" id="5L3DBX$l7fH" role="2ShVmc">
                     <property role="373rjd" value="true" />
                     <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,boolean,boolean)" resolve="PropertyAccessor" />
-                    <node concept="13iPFW" id="5L3DBX$l7fI" role="37wK5m" />
+                    <node concept="37vLTw" id="6I6OCWy1JIo" role="37wK5m">
+                      <ref role="3cqZAo" node="3CJ09vZNiej" resolve="checkedCheckValue" />
+                    </node>
                     <node concept="355D3s" id="5L3DBX$l7fJ" role="37wK5m">
                       <ref role="355D3t" to="53m0:3CJ09vZN9RY" resolve="CheckedCheckValue" />
                       <ref role="355D3u" to="53m0:3CJ09vZNkXV" resolve="checked" />

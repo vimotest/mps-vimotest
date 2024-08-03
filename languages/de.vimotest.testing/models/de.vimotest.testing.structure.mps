@@ -193,7 +193,7 @@
     </node>
     <node concept="1TJgyi" id="3CJ09vZNkXV" role="1TKVEl">
       <property role="IQ2nx" value="4192570430936928123" />
-      <property role="TrG5h" value="checked" />
+      <property role="TrG5h" value="expectedIsChecked" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>

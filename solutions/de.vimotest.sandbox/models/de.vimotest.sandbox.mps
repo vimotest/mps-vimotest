@@ -33,7 +33,7 @@
         <child id="3426401106045146960" name="check" index="30nDbQ" />
       </concept>
       <concept id="4192570430936882686" name="de.vimotest.testing.structure.CheckedCheckValue" flags="ng" index="35STPD">
-        <property id="4192570430936928123" name="checked" index="35S$ZG" />
+        <property id="4192570430936928123" name="expectedIsChecked" index="35S$ZG" />
       </concept>
       <concept id="7748111721129590460" name="de.vimotest.testing.structure.IProvideWidget" flags="ngI" index="1avIKN">
         <reference id="3426401106045121502" name="widget" index="30nzpS" />
@@ -96,9 +96,12 @@
           </node>
         </node>
       </node>
-      <node concept="DUd2R" id="3JdhG1lT90G" role="DUd56">
-        <node concept="30nzp_" id="3JdhG1lT90O" role="DUiSb">
+      <node concept="DUd2R" id="2_dDDaxu_de" role="DUd56">
+        <node concept="30nzp_" id="2_dDDaxu_dm" role="DUiSb">
           <ref role="30nzpS" node="6vtOLtwdT_M" resolve="MyFlag" />
+          <node concept="C4Fn6" id="2_dDDaxu_dp" role="30nDbQ">
+            <node concept="35STPD" id="2_dDDaxu_dq" role="C4Fn7" />
+          </node>
         </node>
       </node>
       <node concept="1IbZgy" id="3JdhG1lU09E" role="DUd2K">

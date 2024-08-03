@@ -780,7 +780,7 @@
     <ref role="1XX52x" to="53m0:3CJ09vZN9RY" resolve="CheckedCheckValue" />
     <node concept="3EZMnI" id="3JdhG1lRMSv" role="2wV5jI">
       <node concept="2yq9I_" id="3JdhG1lRMSD" role="3EZMnx">
-        <ref role="225u1j" to="53m0:3CJ09vZNkXV" resolve="checked" />
+        <ref role="225u1j" to="53m0:3CJ09vZNkXV" resolve="expectedIsChecked" />
         <node concept="1563Vb" id="3JdhG1lRMSF" role="1563LE">
           <property role="1563UK" value="[ ]" />
           <property role="1563Ve" value="[x]" />
@@ -989,9 +989,6 @@
               </node>
             </node>
           </node>
-        </node>
-        <node concept="xShMh" id="3CJ09vZJc4S" role="3F10Kt">
-          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="2iRfu4" id="2Yd1qrJPupb" role="2iSdaV" />

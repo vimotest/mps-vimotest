@@ -388,7 +388,7 @@
                     </node>
                     <node concept="355D3s" id="5L3DBX$l7fJ" role="37wK5m">
                       <ref role="355D3t" to="53m0:3CJ09vZN9RY" resolve="CheckedCheckValue" />
-                      <ref role="355D3u" to="53m0:3CJ09vZNkXV" resolve="checked" />
+                      <ref role="355D3u" to="53m0:3CJ09vZNkXV" resolve="expectedIsChecked" />
                     </node>
                     <node concept="3clFbT" id="5L3DBX$l7fK" role="37wK5m" />
                     <node concept="3clFbT" id="5L3DBX$l7fL" role="37wK5m" />

@@ -122,7 +122,9 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
-      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
+        <reference id="1139877738879" name="concept" index="1A0vxQ" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
         <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
@@ -321,15 +323,17 @@
     <ref role="13h7C2" to="53m0:69Ym88BeFj9" resolve="CheckBoxCheck" />
     <node concept="13hLZK" id="5L3DBX$oEZM" role="13h7CW">
       <node concept="3clFbS" id="5L3DBX$oEZN" role="2VODD2">
-        <node concept="3clFbF" id="5L3DBX$oEZP" role="3cqZAp">
-          <node concept="2OqwBi" id="5L3DBX$oEZQ" role="3clFbG">
-            <node concept="2OqwBi" id="5L3DBX$oEZR" role="2Oq$k0">
-              <node concept="13iPFW" id="5L3DBX$oEZS" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="6fZwY6igQ4$" role="2OqNvi">
-                <ref role="3TtcxE" to="53m0:4xrzs1wijw7" resolve="checks" />
+        <node concept="3clFbF" id="2_dDDaxtePq" role="3cqZAp">
+          <node concept="2OqwBi" id="2_dDDaxtePr" role="3clFbG">
+            <node concept="2OqwBi" id="2_dDDaxtePs" role="2Oq$k0">
+              <node concept="13iPFW" id="2_dDDaxtePt" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="2_dDDaxtDvj" role="2OqNvi">
+                <ref role="3TtcxE" to="53m0:4xrzs1wijw7" />
               </node>
             </node>
-            <node concept="WFELt" id="5L3DBX$oEZT" role="2OqNvi" />
+            <node concept="WFELt" id="2_dDDaxtePv" role="2OqNvi">
+              <ref role="1A0vxQ" to="53m0:3CJ09vZN9RY" resolve="CheckedCheckValue" />
+            </node>
           </node>
         </node>
       </node>

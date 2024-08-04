@@ -187,7 +187,7 @@
     <property role="TrG5h" value="CheckedCheckValue" />
     <property role="34LRSv" value="is checked" />
     <property role="3GE5qa" value="test.assert._checkvalues" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
     <node concept="PrWs8" id="3CJ09vZN9RZ" role="PzmwI">
       <ref role="PrY4T" node="69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
     </node>
@@ -202,9 +202,14 @@
     <property role="TrG5h" value="VisibilityCheckValue" />
     <property role="34LRSv" value="visibility" />
     <property role="3GE5qa" value="test.assert._checkvalues" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
     <node concept="PrWs8" id="3CJ09vZN9S1" role="PzmwI">
       <ref role="PrY4T" node="69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
+    </node>
+    <node concept="1TJgyi" id="5VrLp2zpM0p" role="1TKVEl">
+      <property role="IQ2nx" value="6835274084472266777" />
+      <property role="TrG5h" value="expectedIsVisible" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="3CJ09vZN9S2">
@@ -212,7 +217,12 @@
     <property role="TrG5h" value="EnabledCheckValue" />
     <property role="34LRSv" value="enabled" />
     <property role="3GE5qa" value="test.assert._checkvalues" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="1TJgyi" id="5VrLp2zpew1" role="1TKVEl">
+      <property role="IQ2nx" value="6835274084472121345" />
+      <property role="TrG5h" value="expectedIsEnabled" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="3CJ09vZN9S3" role="PzmwI">
       <ref role="PrY4T" node="69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
     </node>
@@ -316,6 +326,13 @@
       <property role="20kJfa" value="widget" />
       <ref role="20lvS9" to="at53:F907haLIRF" resolve="ViewWidget" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5VrLp2zrQlb">
+    <property role="EcuMT" value="6835274084472808779" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <property role="TrG5h" value="WidgetFeatureCheckValue" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
   </node>
 </model>
 

@@ -17,6 +17,7 @@
     <import index="53m0" ref="r:b38f4eba-3263-43b3-b5a0-ad906d4f1a11(de.vimotest.testing.structure)" />
     <import index="at53" ref="r:9e3a5843-688b-4c6d-b3dd-9f321700c21b(de.vimotest.viewmodel.structure)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="dgt9" ref="r:a46eceb8-d68d-4f8d-a755-6da4c2f592cc(de.vimotest.types.editor)" implicit="true" />
     <import index="czmc" ref="r:8266d71c-f637-42a4-b405-9d6e3c00f282(de.vimotest.viewmodel.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -135,6 +136,12 @@
         <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
       </concept>
       <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
+      <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
+        <property id="1088613081987" name="vertical" index="1QpmdY" />
+        <child id="1145918517974" name="alternationCondition" index="3e4ffs" />
+        <child id="1088612958265" name="ifTrueCellModel" index="1QoS34" />
+        <child id="1088612973955" name="ifFalseCellModel" index="1QoVPY" />
+      </concept>
       <concept id="1176749715029" name="jetbrains.mps.lang.editor.structure.QueryFunction_CellProvider" flags="in" index="3VJUX4" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -778,18 +785,39 @@
   <node concept="24kQdi" id="3JdhG1lRMSt">
     <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="1XX52x" to="53m0:3CJ09vZN9RY" resolve="CheckedCheckValue" />
-    <node concept="3EZMnI" id="3JdhG1lRMSv" role="2wV5jI">
-      <node concept="2yq9I_" id="3JdhG1lRMSD" role="3EZMnx">
+    <node concept="3EZMnI" id="5VrLp2zpL4V" role="2wV5jI">
+      <node concept="3F0ifn" id="5VrLp2zpL4W" role="3EZMnx">
+        <property role="3F0ifm" value="expect" />
+      </node>
+      <node concept="2yq9I_" id="5VrLp2zpL4X" role="3EZMnx">
         <ref role="225u1j" to="53m0:3CJ09vZNkXV" resolve="expectedIsChecked" />
-        <node concept="1563Vb" id="3JdhG1lRMSF" role="1563LE">
+        <node concept="1563Vb" id="5VrLp2zpL4Y" role="1563LE">
           <property role="1563UK" value="[ ]" />
           <property role="1563Ve" value="[x]" />
         </node>
-        <node concept="3F0ifn" id="3JdhG1lRMSI" role="2fqkNU">
-          <property role="3F0ifm" value="is checked" />
+        <node concept="1QoScp" id="5VrLp2zpL4Z" role="2fqkNU">
+          <property role="1QpmdY" value="true" />
+          <node concept="pkWqt" id="5VrLp2zpL50" role="3e4ffs">
+            <node concept="3clFbS" id="5VrLp2zpL51" role="2VODD2">
+              <node concept="3clFbF" id="5VrLp2zpL52" role="3cqZAp">
+                <node concept="2OqwBi" id="5VrLp2zpL53" role="3clFbG">
+                  <node concept="pncrf" id="5VrLp2zpL54" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5VrLp2zpL55" role="2OqNvi">
+                    <ref role="3TsBF5" to="53m0:3CJ09vZNkXV" resolve="expectedIsChecked" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5VrLp2zpL56" role="1QoS34">
+            <property role="3F0ifm" value="is checked" />
+          </node>
+          <node concept="3F0ifn" id="5VrLp2zpL57" role="1QoVPY">
+            <property role="3F0ifm" value="is not checked" />
+          </node>
         </node>
       </node>
-      <node concept="2iRfu4" id="3JdhG1lRMSy" role="2iSdaV" />
+      <node concept="2iRfu4" id="5VrLp2zpL58" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="3JdhG1lSFbG">
@@ -1007,6 +1035,82 @@
     </node>
     <node concept="1PE4EZ" id="6I6OCWxYiwl" role="1PM95z">
       <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_EC" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5VrLp2zpevP">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1XX52x" to="53m0:3CJ09vZN9S2" resolve="EnabledCheckValue" />
+    <node concept="3EZMnI" id="5VrLp2zpevR" role="2wV5jI">
+      <node concept="3F0ifn" id="5VrLp2zpIoH" role="3EZMnx">
+        <property role="3F0ifm" value="expect" />
+      </node>
+      <node concept="2yq9I_" id="5VrLp2zpevS" role="3EZMnx">
+        <ref role="225u1j" to="53m0:5VrLp2zpew1" resolve="expectedIsEnabled" />
+        <node concept="1563Vb" id="5VrLp2zpevT" role="1563LE">
+          <property role="1563UK" value="[ ]" />
+          <property role="1563Ve" value="[x]" />
+        </node>
+        <node concept="1QoScp" id="5VrLp2zpIoN" role="2fqkNU">
+          <property role="1QpmdY" value="true" />
+          <node concept="pkWqt" id="5VrLp2zpIoO" role="3e4ffs">
+            <node concept="3clFbS" id="5VrLp2zpIoP" role="2VODD2">
+              <node concept="3clFbF" id="5VrLp2zpIAB" role="3cqZAp">
+                <node concept="2OqwBi" id="5VrLp2zpIZY" role="3clFbG">
+                  <node concept="pncrf" id="5VrLp2zpIAA" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5VrLp2zpL23" role="2OqNvi">
+                    <ref role="3TsBF5" to="53m0:5VrLp2zpew1" resolve="expectedIsEnabled" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5VrLp2zpIAr" role="1QoS34">
+            <property role="3F0ifm" value="is enabled" />
+          </node>
+          <node concept="3F0ifn" id="5VrLp2zpIAw" role="1QoVPY">
+            <property role="3F0ifm" value="is not enabled" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="5VrLp2zpevV" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5VrLp2zpLyY">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1XX52x" to="53m0:3CJ09vZN9S0" resolve="VisibilityCheckValue" />
+    <node concept="3EZMnI" id="5VrLp2zpLz0" role="2wV5jI">
+      <node concept="3F0ifn" id="5VrLp2zpLz1" role="3EZMnx">
+        <property role="3F0ifm" value="expect" />
+      </node>
+      <node concept="2yq9I_" id="5VrLp2zpLz2" role="3EZMnx">
+        <ref role="225u1j" to="53m0:5VrLp2zpM0p" resolve="expectedIsVisible" />
+        <node concept="1563Vb" id="5VrLp2zpLz3" role="1563LE">
+          <property role="1563UK" value="[ ]" />
+          <property role="1563Ve" value="[x]" />
+        </node>
+        <node concept="1QoScp" id="5VrLp2zpLz4" role="2fqkNU">
+          <property role="1QpmdY" value="true" />
+          <node concept="pkWqt" id="5VrLp2zpLz5" role="3e4ffs">
+            <node concept="3clFbS" id="5VrLp2zpLz6" role="2VODD2">
+              <node concept="3clFbF" id="5VrLp2zpLz7" role="3cqZAp">
+                <node concept="2OqwBi" id="5VrLp2zpLz8" role="3clFbG">
+                  <node concept="pncrf" id="5VrLp2zpLz9" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5VrLp2zpLza" role="2OqNvi">
+                    <ref role="3TsBF5" to="53m0:5VrLp2zpM0p" resolve="expectedIsVisible" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5VrLp2zpLzb" role="1QoS34">
+            <property role="3F0ifm" value="is visible" />
+          </node>
+          <node concept="3F0ifn" id="5VrLp2zpLzc" role="1QoVPY">
+            <property role="3F0ifm" value="is not visible" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="5VrLp2zpLzd" role="2iSdaV" />
     </node>
   </node>
 </model>

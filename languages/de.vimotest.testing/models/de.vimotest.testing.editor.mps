@@ -1641,5 +1641,22 @@
       </node>
     </node>
   </node>
+  <node concept="PKFIW" id="7H4Lpx0iNqw">
+    <property role="TrG5h" value="LabelCheck_Inspector_EC" />
+    <property role="3GE5qa" value="test.assert.label" />
+    <ref role="1XX52x" to="53m0:7H4Lpx0iNqu" resolve="LabelCheck" />
+    <node concept="1PE4EZ" id="7H4Lpx0iNqy" role="1PM95z">
+      <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_EC" />
+    </node>
+    <node concept="3F2HdR" id="7H4Lpx0iNqz" role="2wV5jI">
+      <ref role="1NtTu8" to="53m0:7H4Lpx0iNqv" resolve="checks" />
+      <node concept="2iRkQZ" id="7H4Lpx0iNq$" role="2czzBx" />
+      <node concept="OXEIz" id="7H4Lpx0iNq_" role="1k68KV">
+        <node concept="1Y$tRT" id="7H4Lpx0iNqA" role="OY2wv">
+          <ref role="1Y$EBa" node="5VrLp2zyGot" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

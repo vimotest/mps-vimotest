@@ -646,5 +646,128 @@
       <node concept="3cqZAl" id="3CJ09vZN9V7" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="7H4Lpx0iNql">
+    <property role="TrG5h" value="ILabelCheckValue_Behavior" />
+    <property role="3GE5qa" value="test.assert.label" />
+    <ref role="13h7C2" to="53m0:7H4Lpx0iNqj" resolve="ILabelCheckValue" />
+    <node concept="13hLZK" id="7H4Lpx0iNqm" role="13h7CW">
+      <node concept="3clFbS" id="7H4Lpx0iNqn" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7H4Lpx0iNqo" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="applyOnLabel" />
+      <node concept="37vLTG" id="7H4Lpx0iNqp" role="3clF46">
+        <property role="TrG5h" value="labelEditorCell" />
+        <node concept="3uibUv" id="7H4Lpx0iNqq" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7H4Lpx0iNqr" role="1B3o_S" />
+      <node concept="3cqZAl" id="7H4Lpx0iNqs" role="3clF45" />
+      <node concept="3clFbS" id="7H4Lpx0iNqt" role="3clF47" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7H4Lpx0iNqB">
+    <property role="TrG5h" value="LabelCheck_Behavior" />
+    <property role="3GE5qa" value="test.assert.label" />
+    <ref role="13h7C2" to="53m0:7H4Lpx0iNqu" resolve="LabelCheck" />
+    <node concept="13hLZK" id="7H4Lpx0iNqC" role="13h7CW">
+      <node concept="3clFbS" id="7H4Lpx0iNqD" role="2VODD2">
+        <node concept="3clFbF" id="7H4Lpx0iNqF" role="3cqZAp">
+          <node concept="2OqwBi" id="7H4Lpx0iNqG" role="3clFbG">
+            <node concept="2OqwBi" id="7H4Lpx0iNqH" role="2Oq$k0">
+              <node concept="13iPFW" id="7H4Lpx0iNqI" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="7H4Lpx0jw7F" role="2OqNvi">
+                <ref role="3TtcxE" to="53m0:7H4Lpx0iNqv" resolve="checks" />
+              </node>
+            </node>
+            <node concept="WFELt" id="7H4Lpx0iNqJ" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7H4Lpx0iNqL" role="13h7CS">
+      <property role="TrG5h" value="applyOnWidget" />
+      <ref role="13i0hy" node="2Yd1qrJP3FF" />
+      <node concept="3Tm1VV" id="7H4Lpx0iNqM" role="1B3o_S" />
+      <node concept="3clFbS" id="7H4Lpx0iNqN" role="3clF47">
+        <node concept="3clFbF" id="7H4Lpx0iNqO" role="3cqZAp">
+          <node concept="2OqwBi" id="7H4Lpx0iNqP" role="3clFbG">
+            <node concept="2es0OD" id="7H4Lpx0iNqQ" role="2OqNvi">
+              <node concept="1bVj0M" id="7H4Lpx0iNqR" role="23t8la">
+                <node concept="3clFbS" id="7H4Lpx0iNqS" role="1bW5cS">
+                  <node concept="3clFbF" id="7H4Lpx0iNqT" role="3cqZAp">
+                    <node concept="2OqwBi" id="7H4Lpx0iNqU" role="3clFbG">
+                      <node concept="37vLTw" id="7H4Lpx0iNqV" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7H4Lpx0iNqY" resolve="it" />
+                      </node>
+                      <node concept="2qgKlT" id="7H4Lpx0iNqW" role="2OqNvi">
+                        <ref role="37wK5l" node="7H4Lpx0iNqo" resolve="applyOnLabel" />
+                        <node concept="37vLTw" id="7H4Lpx0iNqX" role="37wK5m">
+                          <ref role="3cqZAo" node="7H4Lpx0iNr2" resolve="editorCell" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="gl6BB" id="7H4Lpx0iNqY" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="7H4Lpx0iNqZ" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7H4Lpx0iNr0" role="2Oq$k0">
+              <node concept="13iPFW" id="7H4Lpx0iNr1" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="7H4Lpx0jwxx" role="2OqNvi">
+                <ref role="3TtcxE" to="53m0:7H4Lpx0iNqv" resolve="checks" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7H4Lpx0iNr2" role="3clF46">
+        <property role="TrG5h" value="editorCell" />
+        <node concept="3uibUv" id="7H4Lpx0iNr3" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7H4Lpx0iNr4" role="3clF46">
+        <property role="TrG5h" value="widget" />
+        <node concept="3Tqbb2" id="7H4Lpx0iNr5" role="1tU5fm">
+          <ref role="ehGHo" to="at53:F907haLIRF" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="7H4Lpx0iNr6" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7H4Lpx0mc7N">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="13h7C2" to="53m0:7H4Lpx0iNr7" resolve="TextCheckValue" />
+    <node concept="13hLZK" id="7H4Lpx0mc7O" role="13h7CW">
+      <node concept="3clFbS" id="7H4Lpx0mc7P" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7H4Lpx0mc86" role="13h7CS">
+      <property role="TrG5h" value="applyOnLabel" />
+      <ref role="13i0hy" node="7H4Lpx0iNqo" resolve="applyOnLabel" />
+      <node concept="3Tm1VV" id="7H4Lpx0mc89" role="1B3o_S" />
+      <node concept="3clFbS" id="7H4Lpx0mc8c" role="3clF47">
+        <node concept="3SKdUt" id="7H4Lpx0mc8C" role="3cqZAp">
+          <node concept="1PaTwC" id="7H4Lpx0mc8D" role="1aUNEU">
+            <node concept="3oM_SD" id="7H4Lpx0mc8H" role="1PaTwD">
+              <property role="3oM_SC" value="todo" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7H4Lpx0mc8d" role="3clF46">
+        <property role="TrG5h" value="labelEditorCell" />
+        <node concept="3uibUv" id="7H4Lpx0mc8e" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="7H4Lpx0mc8f" role="3clF45" />
+    </node>
+  </node>
 </model>
 

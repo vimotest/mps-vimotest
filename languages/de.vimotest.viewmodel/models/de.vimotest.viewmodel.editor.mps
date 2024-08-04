@@ -903,5 +903,47 @@
       </node>
     </node>
   </node>
+  <node concept="PKFIW" id="7H4Lpx0iNpv">
+    <property role="TrG5h" value="TextFeature_Indication_EC" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1XX52x" to="at53:7H4Lpx0iNpu" resolve="TextFeature" />
+    <node concept="1PE4EZ" id="7H4Lpx0iNpx" role="1PM95z">
+      <ref role="1PE7su" node="L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
+    </node>
+    <node concept="1v6uyg" id="7H4Lpx0iNpy" role="2wV5jI">
+      <property role="2oejA6" value="true" />
+      <node concept="3F0ifn" id="7H4Lpx0iNpz" role="wsdo6">
+        <property role="3F0ifm" value="supports text" />
+      </node>
+      <node concept="3F0ifn" id="7H4Lpx0iNp$" role="1j7Clw">
+        <property role="3F0ifm" value="T" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" />
+        <node concept="Veino" id="7H4Lpx0iNp_" role="3F10Kt" />
+        <node concept="VechU" id="7H4Lpx0iNpA" role="3F10Kt">
+          <property role="Vb096" value="6cZGtrcKCoS/black" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="7H4Lpx0iNpF">
+    <property role="TrG5h" value="LabelWidget_Features_EC" />
+    <property role="3GE5qa" value="widgets" />
+    <ref role="1XX52x" to="at53:7H4Lpx0iNpB" resolve="LabelWidget" />
+    <node concept="1PE4EZ" id="7H4Lpx0iNpH" role="1PM95z">
+      <ref role="1PE7su" node="4OohpJQEUlZ" resolve="ViewWidget_WidgetFeatures_EC" />
+    </node>
+    <node concept="3EZMnI" id="7H4Lpx0iNpI" role="2wV5jI">
+      <node concept="2EHx9g" id="7H4Lpx0iNpJ" role="2iSdaV" />
+      <node concept="3F1sOY" id="7H4Lpx0iNpK" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:7H4Lpx0iNpC" resolve="text" />
+      </node>
+      <node concept="3F1sOY" id="7H4Lpx0iNpL" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:7H4Lpx0iNpD" resolve="enabled" />
+      </node>
+      <node concept="3F1sOY" id="7H4Lpx0iNpM" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:7H4Lpx0iNpE" resolve="visibility" />
+      </node>
+    </node>
+  </node>
 </model>
 

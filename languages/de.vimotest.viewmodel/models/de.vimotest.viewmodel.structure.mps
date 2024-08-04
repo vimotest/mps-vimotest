@@ -229,5 +229,40 @@
     <property role="TrG5h" value="ILinkedViewModelTest" />
     <property role="3GE5qa" value="util" />
   </node>
+  <node concept="1TIwiD" id="7H4Lpx0iNpu">
+    <property role="EcuMT" value="8882441622785832542" />
+    <property role="TrG5h" value="TextFeature" />
+    <property role="34LRSv" value="text" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
+  </node>
+  <node concept="1TIwiD" id="7H4Lpx0iNpB">
+    <property role="EcuMT" value="8882441622785832551" />
+    <property role="TrG5h" value="LabelWidget" />
+    <property role="34LRSv" value="label" />
+    <property role="3GE5qa" value="widgets" />
+    <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
+    <node concept="1TJgyj" id="7H4Lpx0iNpC" role="1TKVEi">
+      <property role="IQ2ns" value="8882441622785832552" />
+      <property role="20kJfa" value="text" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7H4Lpx0iNpu" resolve="TextFeature" />
+    </node>
+    <node concept="1TJgyj" id="7H4Lpx0iNpD" role="1TKVEi">
+      <property role="IQ2ns" value="8882441622785832553" />
+      <property role="20kJfa" value="enabled" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
+    </node>
+    <node concept="1TJgyj" id="7H4Lpx0iNpE" role="1TKVEi">
+      <property role="IQ2ns" value="8882441622785832554" />
+      <property role="20kJfa" value="visibility" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4SDJcZBNVBT" resolve="VisibilityFeature" />
+    </node>
+  </node>
 </model>
 

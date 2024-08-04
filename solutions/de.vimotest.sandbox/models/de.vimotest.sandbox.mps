@@ -35,8 +35,6 @@
       <concept id="4192570430936882686" name="de.vimotest.testing.structure.CheckedCheckValue" flags="ng" index="35STPD">
         <property id="4192570430936928123" name="expectedIsChecked" index="35S$ZG" />
       </concept>
-      <concept id="4192570430936882690" name="de.vimotest.testing.structure.EnabledCheckValue" flags="ng" index="35STUl" />
-      <concept id="4192570430936882688" name="de.vimotest.testing.structure.VisibilityCheckValue" flags="ng" index="35STUn" />
       <concept id="7748111721129590460" name="de.vimotest.testing.structure.IProvideWidget" flags="ngI" index="1avIKN">
         <reference id="3426401106045121502" name="widget" index="30nzpS" />
       </concept>
@@ -62,6 +60,12 @@
         <child id="5213916851000129516" name="visibility" index="C4FCG" />
         <child id="5213916851000129517" name="enabled" index="C4FCH" />
       </concept>
+      <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6" />
+      <concept id="8882441622785832551" name="de.vimotest.viewmodel.structure.LabelWidget" flags="ng" index="V3ZfZ">
+        <child id="8882441622785832552" name="text" index="V3ZfK" />
+        <child id="8882441622785832553" name="enabled" index="V3ZfL" />
+        <child id="8882441622785832554" name="visibility" index="V3ZfM" />
+      </concept>
       <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelEvents" flags="ng" index="103ZXx" />
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
         <child id="777152910168882972" name="events" index="103ZXC" />
@@ -79,6 +83,12 @@
         <node concept="C4FCf" id="6vtOLtwdT_N" role="C4FCF" />
         <node concept="C4FCg" id="6vtOLtwdT_O" role="C4FCG" />
         <node concept="C4FCh" id="6vtOLtwdT_P" role="C4FCH" />
+      </node>
+      <node concept="V3ZfZ" id="7H4Lpx0kZbn" role="103ZUC">
+        <property role="TrG5h" value="MyLabel" />
+        <node concept="V3Zf6" id="7H4Lpx0kZbp" role="V3ZfK" />
+        <node concept="C4FCh" id="7H4Lpx0kZbr" role="V3ZfL" />
+        <node concept="C4FCg" id="7H4Lpx0kZbt" role="V3ZfM" />
       </node>
     </node>
   </node>
@@ -98,16 +108,9 @@
           </node>
         </node>
       </node>
-      <node concept="DUd2R" id="2_dDDaxu_de" role="DUd56">
-        <node concept="30nzp_" id="2_dDDaxu_dm" role="DUiSb">
-          <ref role="30nzpS" node="6vtOLtwdT_M" resolve="MyFlag" />
-          <node concept="C4Fn6" id="2_dDDaxu_dp" role="30nDbQ">
-            <node concept="35STPD" id="2_dDDaxu_dq" role="C4Fn7">
-              <property role="35S$ZG" value="true" />
-            </node>
-            <node concept="35STUn" id="7H4Lpx09Qiz" role="C4Fn7" />
-            <node concept="35STUl" id="7H4Lpx09QiK" role="C4Fn7" />
-          </node>
+      <node concept="DUd2R" id="7H4Lpx0kZbF" role="DUd56">
+        <node concept="30nzp_" id="7H4Lpx0kZbN" role="DUiSb">
+          <ref role="30nzpS" node="7H4Lpx0kZbn" resolve="MyLabel" />
         </node>
       </node>
       <node concept="1IbZgy" id="3JdhG1lU09E" role="DUd2K">

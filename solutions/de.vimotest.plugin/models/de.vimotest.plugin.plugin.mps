@@ -602,6 +602,34 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="69Ym88B3_S$" role="3cqZAp">
+          <node concept="2OqwBi" id="69Ym88B3_S_" role="3clFbG">
+            <node concept="2ShNRf" id="69Ym88B3_SA" role="2Oq$k0">
+              <node concept="1pGfFk" id="69Ym88B3_SB" role="2ShVmc">
+                <property role="373rjd" value="true" />
+                <ref role="37wK5l" node="JW9DBRQiGe" resolve="TestWidgetSupportGenerator" />
+                <node concept="37vLTw" id="69Ym88B3_SC" role="37wK5m">
+                  <ref role="3cqZAo" node="RUuBjGf7RE" resolve="widgetModel" />
+                </node>
+                <node concept="2OqwBi" id="69Ym88B3_SD" role="37wK5m">
+                  <node concept="2WthIp" id="69Ym88B3_SE" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="69Ym88B3_SF" role="2OqNvi">
+                    <ref role="2WH_rO" node="RUuBjGeV2Z" resolve="project" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="69Ym88B3_SG" role="37wK5m">
+                  <node concept="2WthIp" id="69Ym88B3_SH" role="2Oq$k0" />
+                  <node concept="2BZ7hE" id="69Ym88B3_SI" role="2OqNvi">
+                    <ref role="2WH_rO" node="4OohpJR35xo" resolve="regenerate" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="69Ym88B3_SJ" role="2OqNvi">
+              <ref role="37wK5l" node="JW9DBRQiGt" resolve="generateTestWidgetConcepts" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="JW9DBRQF2J" role="3cqZAp">
           <node concept="2OqwBi" id="JW9DBRQF2K" role="3clFbG">
             <node concept="2ShNRf" id="JW9DBRQF2L" role="2Oq$k0">
@@ -627,34 +655,6 @@
             </node>
             <node concept="liA8E" id="JW9DBRQF2U" role="2OqNvi">
               <ref role="37wK5l" node="69Ym88B3rv1" resolve="generateTestFeatureConcepts" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="69Ym88B3_S$" role="3cqZAp">
-          <node concept="2OqwBi" id="69Ym88B3_S_" role="3clFbG">
-            <node concept="2ShNRf" id="69Ym88B3_SA" role="2Oq$k0">
-              <node concept="1pGfFk" id="69Ym88B3_SB" role="2ShVmc">
-                <property role="373rjd" value="true" />
-                <ref role="37wK5l" node="JW9DBRQiGe" resolve="WidgetTestSupportGenerator" />
-                <node concept="37vLTw" id="69Ym88B3_SC" role="37wK5m">
-                  <ref role="3cqZAo" node="RUuBjGf7RE" resolve="widgetModel" />
-                </node>
-                <node concept="2OqwBi" id="69Ym88B3_SD" role="37wK5m">
-                  <node concept="2WthIp" id="69Ym88B3_SE" role="2Oq$k0" />
-                  <node concept="1DTwFV" id="69Ym88B3_SF" role="2OqNvi">
-                    <ref role="2WH_rO" node="RUuBjGeV2Z" resolve="project" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="69Ym88B3_SG" role="37wK5m">
-                  <node concept="2WthIp" id="69Ym88B3_SH" role="2Oq$k0" />
-                  <node concept="2BZ7hE" id="69Ym88B3_SI" role="2OqNvi">
-                    <ref role="2WH_rO" node="4OohpJR35xo" resolve="regenerate" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="liA8E" id="69Ym88B3_SJ" role="2OqNvi">
-              <ref role="37wK5l" node="JW9DBRQiGt" resolve="generateTestWidgetConcepts" />
             </node>
           </node>
         </node>
@@ -5741,7 +5741,7 @@
         <node concept="3clFbF" id="69Ym88B78UT" role="3cqZAp">
           <node concept="3cpWs3" id="69Ym88B78UV" role="3clFbG">
             <node concept="Xl_RD" id="69Ym88B78UW" role="3uHU7B">
-              <property role="Xl_RC" value="assert." />
+              <property role="Xl_RC" value="test.assert." />
             </node>
             <node concept="2OqwBi" id="69Ym88B78UX" role="3uHU7w">
               <node concept="37vLTw" id="69Ym88B78UY" role="2Oq$k0">
@@ -6098,7 +6098,7 @@
               </node>
             </node>
             <node concept="Xl_RD" id="5L3DBX$msGI" role="37vLTx">
-              <property role="Xl_RC" value="assert._checkvalues" />
+              <property role="Xl_RC" value="test.assert._checkvalues" />
             </node>
           </node>
         </node>

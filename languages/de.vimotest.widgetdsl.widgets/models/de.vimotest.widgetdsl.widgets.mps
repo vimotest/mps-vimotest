@@ -68,5 +68,27 @@
     <property role="2WVz4g" value="E" />
     <property role="3yYw5D" value="fLJRk5B/darkGray" />
   </node>
+  <node concept="2WVz3F" id="7H4Lpx0an3_">
+    <property role="103t_X" value="widgets" />
+    <property role="3GE5qa" value="widgets" />
+    <property role="TrG5h" value="Label" />
+    <property role="2SiFfI" value="label" />
+    <node concept="2WVz4l" id="7H4Lpx0an3B" role="2WV$Zc">
+      <property role="3dRBvX" value="true" />
+      <ref role="2WVz4k" node="7H4Lpx0an3A" resolve="Text" />
+    </node>
+    <node concept="2WVz4l" id="7H4Lpx0an3D" role="2WV$Zc">
+      <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
+    </node>
+    <node concept="2WVz4l" id="7H4Lpx0an3G" role="2WV$Zc">
+      <ref role="2WVz4k" node="1Yc3x6zoTLW" resolve="Visibility" />
+    </node>
+  </node>
+  <node concept="2WVz3E" id="7H4Lpx0an3A">
+    <property role="3GE5qa" value="features" />
+    <property role="TrG5h" value="Text" />
+    <property role="2WV$r6" value="text" />
+    <property role="2WVz4g" value="T" />
+  </node>
 </model>
 

@@ -36,7 +36,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -341,6 +343,38 @@
     <property role="EcuMT" value="6835274084472861022" />
     <property role="3GE5qa" value="test.assert._checkvalues" />
     <property role="TrG5h" value="IWidgetCheckValue" />
+  </node>
+  <node concept="PlHQZ" id="7H4Lpx0iNqj">
+    <property role="EcuMT" value="8882441622785832595" />
+    <property role="TrG5h" value="ILabelCheckValue" />
+    <property role="3GE5qa" value="test.assert.label" />
+    <node concept="PrWs8" id="7H4Lpx0iNqk" role="PrDN$">
+      <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7H4Lpx0iNqu">
+    <property role="EcuMT" value="8882441622785832606" />
+    <property role="TrG5h" value="LabelCheck" />
+    <property role="34LRSv" value="check label" />
+    <property role="3GE5qa" value="test.assert.label" />
+    <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
+    <node concept="1TJgyj" id="7H4Lpx0iNqv" role="1TKVEi">
+      <property role="IQ2ns" value="8882441622785832607" />
+      <property role="20kJfa" value="checks" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="7H4Lpx0iNqj" resolve="ILabelCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7H4Lpx0iNr7">
+    <property role="EcuMT" value="8882441622785832647" />
+    <property role="TrG5h" value="TextCheckValue" />
+    <property role="34LRSv" value="text" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="PrWs8" id="7H4Lpx0iNr8" role="PzmwI">
+      <ref role="PrY4T" node="7H4Lpx0iNqj" resolve="ILabelCheckValue" />
+    </node>
   </node>
 </model>
 

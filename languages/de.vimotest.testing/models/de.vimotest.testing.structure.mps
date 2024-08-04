@@ -208,6 +208,9 @@
     <node concept="PrWs8" id="3CJ09vZN9S1" role="PzmwI">
       <ref role="PrY4T" node="69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
     </node>
+    <node concept="PrWs8" id="2_MKLxJoJYK" role="PzmwI">
+      <ref role="PrY4T" node="7H4Lpx0iNqj" resolve="ILabelCheckValue" />
+    </node>
     <node concept="1TJgyi" id="5VrLp2zpM0p" role="1TKVEl">
       <property role="IQ2nx" value="6835274084472266777" />
       <property role="TrG5h" value="expectedIsVisible" />
@@ -228,11 +231,17 @@
     <node concept="PrWs8" id="3CJ09vZN9S3" role="PzmwI">
       <ref role="PrY4T" node="69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
     </node>
+    <node concept="PrWs8" id="2_MKLxJoJXz" role="PzmwI">
+      <ref role="PrY4T" node="7H4Lpx0iNqj" resolve="ILabelCheckValue" />
+    </node>
   </node>
   <node concept="PlHQZ" id="69Ym88BeFj8">
     <property role="EcuMT" value="5213916851000129541" />
     <property role="TrG5h" value="ICheckBoxCheckValue" />
     <property role="3GE5qa" value="test.assert.checkbox" />
+    <node concept="PrWs8" id="2_MKLxJ6E$b" role="PrDN$">
+      <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="69Ym88BeFj9">
     <property role="EcuMT" value="5213916851000129542" />

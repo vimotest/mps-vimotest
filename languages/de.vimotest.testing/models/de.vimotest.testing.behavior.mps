@@ -368,28 +368,6 @@
       <node concept="3clFbS" id="3CJ09vZFA7r" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="6mWHjmRSkPQ">
-    <property role="TrG5h" value="ICheckBoxCheckValue_Behavior" />
-    <property role="3GE5qa" value="test.assert.checkbox" />
-    <ref role="13h7C2" to="53m0:69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
-    <node concept="13hLZK" id="5L3DBX$oEZz" role="13h7CW">
-      <node concept="3clFbS" id="5L3DBX$oEZ$" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="5L3DBX$oEZ_" role="13h7CS">
-      <property role="13i0iv" value="true" />
-      <property role="13i0it" value="true" />
-      <property role="TrG5h" value="applyOnCheckBox" />
-      <node concept="37vLTG" id="5L3DBX$oEZA" role="3clF46">
-        <property role="TrG5h" value="checkBoxEditorCell" />
-        <node concept="3uibUv" id="5L3DBX$oEZB" role="1tU5fm">
-          <ref role="3uigEE" to="f4zo:~EditorCell" />
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="5L3DBX$oEZC" role="1B3o_S" />
-      <node concept="3cqZAl" id="5L3DBX$oEZD" role="3clF45" />
-      <node concept="3clFbS" id="5L3DBX$oEZE" role="3clF47" />
-    </node>
-  </node>
   <node concept="13h7C7" id="4xrzs1wijuT">
     <property role="TrG5h" value="CheckBoxCheck_Behavior" />
     <property role="3GE5qa" value="test.assert.checkbox" />
@@ -625,6 +603,19 @@
       </node>
       <node concept="3cqZAl" id="3CJ09vZN9Ui" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="2_MKLxJoJY8" role="13h7CS">
+      <property role="TrG5h" value="applyOnLabel" />
+      <ref role="13i0hy" node="7H4Lpx0iNqo" resolve="applyOnLabel" />
+      <node concept="3Tm1VV" id="2_MKLxJoJYb" role="1B3o_S" />
+      <node concept="3clFbS" id="2_MKLxJoJYe" role="3clF47" />
+      <node concept="37vLTG" id="2_MKLxJoJYf" role="3clF46">
+        <property role="TrG5h" value="labelEditorCell" />
+        <node concept="3uibUv" id="2_MKLxJoJYg" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="2_MKLxJoJYh" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="3CJ09vZN9UF">
     <property role="3GE5qa" value="test.assert._checkvalues" />
@@ -644,6 +635,19 @@
         </node>
       </node>
       <node concept="3cqZAl" id="3CJ09vZN9V7" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="2_MKLxJoJZl" role="13h7CS">
+      <property role="TrG5h" value="applyOnLabel" />
+      <ref role="13i0hy" node="7H4Lpx0iNqo" resolve="applyOnLabel" />
+      <node concept="3Tm1VV" id="2_MKLxJoJZo" role="1B3o_S" />
+      <node concept="3clFbS" id="2_MKLxJoJZr" role="3clF47" />
+      <node concept="37vLTG" id="2_MKLxJoJZs" role="3clF46">
+        <property role="TrG5h" value="labelEditorCell" />
+        <node concept="3uibUv" id="2_MKLxJoJZt" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="2_MKLxJoJZu" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="7H4Lpx0iNql">
@@ -767,6 +771,28 @@
         </node>
       </node>
       <node concept="3cqZAl" id="7H4Lpx0mc8f" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6mWHjmRSkPQ">
+    <property role="TrG5h" value="ICheckBoxCheckValue_Behavior" />
+    <property role="3GE5qa" value="test.assert.checkbox" />
+    <ref role="13h7C2" to="53m0:69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
+    <node concept="13hLZK" id="5L3DBX$oEZz" role="13h7CW">
+      <node concept="3clFbS" id="5L3DBX$oEZ$" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="5L3DBX$oEZ_" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="applyOnCheckBox" />
+      <node concept="37vLTG" id="5L3DBX$oEZA" role="3clF46">
+        <property role="TrG5h" value="checkBoxEditorCell" />
+        <node concept="3uibUv" id="5L3DBX$oEZB" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5L3DBX$oEZC" role="1B3o_S" />
+      <node concept="3cqZAl" id="5L3DBX$oEZD" role="3clF45" />
+      <node concept="3clFbS" id="5L3DBX$oEZE" role="3clF47" />
     </node>
   </node>
 </model>

@@ -333,6 +333,14 @@
     <property role="TrG5h" value="WidgetFeatureCheckValue" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="5VrLp2zEYYj" role="PzmwI">
+      <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5VrLp2zs35u">
+    <property role="EcuMT" value="6835274084472861022" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <property role="TrG5h" value="IWidgetCheckValue" />
   </node>
 </model>
 

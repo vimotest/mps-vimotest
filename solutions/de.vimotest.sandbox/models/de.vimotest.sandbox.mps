@@ -36,6 +36,7 @@
         <property id="4192570430936928123" name="expectedIsChecked" index="35S$ZG" />
       </concept>
       <concept id="4192570430936882690" name="de.vimotest.testing.structure.EnabledCheckValue" flags="ng" index="35STUl" />
+      <concept id="4192570430936882688" name="de.vimotest.testing.structure.VisibilityCheckValue" flags="ng" index="35STUn" />
       <concept id="7748111721129590460" name="de.vimotest.testing.structure.IProvideWidget" flags="ngI" index="1avIKN">
         <reference id="3426401106045121502" name="widget" index="30nzpS" />
       </concept>
@@ -104,8 +105,8 @@
             <node concept="35STPD" id="2_dDDaxu_dq" role="C4Fn7">
               <property role="35S$ZG" value="true" />
             </node>
-            <node concept="35STUl" id="5VrLp2zvZ0A" role="C4Fn7" />
-            <node concept="35STUl" id="5VrLp2zvZ0I" role="C4Fn7" />
+            <node concept="35STUn" id="7H4Lpx09Qiz" role="C4Fn7" />
+            <node concept="35STUl" id="7H4Lpx09QiK" role="C4Fn7" />
           </node>
         </node>
       </node>

@@ -93,6 +93,9 @@
       </concept>
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
+      <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
+        <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
+      </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
@@ -111,7 +114,12 @@
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
-      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR">
+        <child id="1165347032372" name="elementMenuDescriptor" index="1k68KV" />
+      </concept>
+      <concept id="1166059625718" name="jetbrains.mps.lang.editor.structure.CellMenuPart_CellMenuComponent" flags="ng" index="1Y$tRT">
+        <reference id="1166059677893" name="cellMenuComponent" index="1Y$EBa" />
+      </concept>
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
@@ -4412,6 +4420,41 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="5VrLp2zscji" role="3cqZAp">
+          <node concept="37vLTI" id="5VrLp2zt276" role="3clFbG">
+            <node concept="2OqwBi" id="5VrLp2zsTIL" role="37vLTJ">
+              <node concept="2OqwBi" id="5VrLp2zsB6z" role="2Oq$k0">
+                <node concept="2OqwBi" id="5VrLp2zsdoB" role="2Oq$k0">
+                  <node concept="37vLTw" id="5VrLp2zscjg" role="2Oq$k0">
+                    <ref role="3cqZAo" node="69Ym88B7t07" resolve="concept" />
+                  </node>
+                  <node concept="3Tsc0h" id="5VrLp2zsgXH" role="2OqNvi">
+                    <ref role="3TtcxE" to="tpce:h0PrDRO" resolve="extends" />
+                  </node>
+                </node>
+                <node concept="2DeJg1" id="5VrLp2zsRyy" role="2OqNvi" />
+              </node>
+              <node concept="3TrEf2" id="5VrLp2zsV$b" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpce:h0PrY0D" resolve="intfc" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5VrLp2zsoIK" role="37vLTx">
+              <node concept="2tJFMh" id="5VrLp2zsoIL" role="2Oq$k0">
+                <node concept="ZC_QK" id="5VrLp2zsoIM" role="2tJFKM">
+                  <ref role="2aWVGs" to="53m0:5VrLp2zs35u" resolve="IWidgetCheckValue" />
+                </node>
+              </node>
+              <node concept="Vyspw" id="5VrLp2zsoIN" role="2OqNvi">
+                <node concept="2OqwBi" id="5VrLp2zsoIO" role="Vysub">
+                  <node concept="Xjq3P" id="5VrLp2zsoIP" role="2Oq$k0" />
+                  <node concept="2OwXpG" id="5VrLp2zsoIQ" role="2OqNvi">
+                    <ref role="2Oxat5" node="L9c2Y9qpZA" resolve="repository" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="69Ym88B7t0K" role="3cqZAp" />
         <node concept="3clFbF" id="69Ym88B7t0L" role="3cqZAp">
           <node concept="1rXfSq" id="69Ym88B7t0M" role="3clFbG">
@@ -5112,6 +5155,11 @@
                   <property role="P3scX" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1139848536355/1140103550593" />
                   <node concept="37vLTw" id="69Ym88Bal8i" role="2c44t1">
                     <ref role="3cqZAo" node="69Ym88Ba1Hp" resolve="checksLink" />
+                  </node>
+                </node>
+                <node concept="OXEIz" id="5VrLp2z$6wb" role="1k68KV">
+                  <node concept="1Y$tRT" id="5VrLp2z$9$4" role="OY2wv">
+                    <ref role="1Y$EBa" to="ytrb:5VrLp2zyGot" resolve="IWidgetCheckValue_MenuComponent_filterChecks" />
                   </node>
                 </node>
               </node>

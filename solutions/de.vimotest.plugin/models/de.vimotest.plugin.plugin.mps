@@ -5838,6 +5838,77 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2_MKLxJqoF0" role="3cqZAp">
+          <node concept="2OqwBi" id="2_MKLxJqoF1" role="3clFbG">
+            <node concept="2OqwBi" id="2_MKLxJqoF2" role="2Oq$k0">
+              <node concept="37vLTw" id="2_MKLxJqoF3" role="2Oq$k0">
+                <ref role="3cqZAo" node="JW9DBRQiN7" resolve="behaviorNode" />
+              </node>
+              <node concept="3Tsc0h" id="2_MKLxJqoF4" role="2OqNvi">
+                <ref role="3TtcxE" to="1i04:hP3h7G_" resolve="method" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="2_MKLxJqoF5" role="2OqNvi">
+              <node concept="2c44tf" id="2_MKLxJqoF6" role="25WWJ7">
+                <node concept="13i0hz" id="2_MKLxJqgLJ" role="2c44tc">
+                  <property role="TrG5h" value="createEditorCellForCheck" />
+                  <ref role="13i0hy" to="fwln:3CJ09vZMLMB" resolve="createEditorCellForCheck" />
+                  <node concept="3Tm1VV" id="2_MKLxJqgLK" role="1B3o_S" />
+                  <node concept="3clFbS" id="2_MKLxJqgLW" role="3clF47">
+                    <node concept="3SKdUt" id="2_MKLxJqoaQ" role="3cqZAp">
+                      <node concept="1PaTwC" id="2_MKLxJqoaR" role="1aUNEU">
+                        <node concept="3oM_SD" id="2_MKLxJqobO" role="1PaTwD">
+                          <property role="3oM_SC" value="TODO:" />
+                        </node>
+                        <node concept="3oM_SD" id="2_MKLxJqobQ" role="1PaTwD">
+                          <property role="3oM_SC" value="create" />
+                        </node>
+                        <node concept="3oM_SD" id="2_MKLxJqobU" role="1PaTwD">
+                          <property role="3oM_SC" value="custom" />
+                        </node>
+                        <node concept="3oM_SD" id="2_MKLxJqobY" role="1PaTwD">
+                          <property role="3oM_SC" value="cell" />
+                        </node>
+                        <node concept="3oM_SD" id="2_MKLxJqoc3" role="1PaTwD">
+                          <property role="3oM_SC" value="handling" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="2_MKLxJqgM7" role="3cqZAp">
+                      <node concept="2OqwBi" id="2_MKLxJqgM4" role="3clFbG">
+                        <node concept="13iAh5" id="2_MKLxJqgM5" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="2_MKLxJqgM6" role="2OqNvi">
+                          <ref role="37wK5l" to="fwln:3CJ09vZMLMB" resolve="createEditorCellForCheck" />
+                          <node concept="37vLTw" id="2_MKLxJqgM2" role="37wK5m">
+                            <ref role="3cqZAo" node="2_MKLxJqgLX" resolve="context" />
+                          </node>
+                          <node concept="37vLTw" id="2_MKLxJqgM3" role="37wK5m">
+                            <ref role="3cqZAo" node="2_MKLxJqgLZ" resolve="widgetNode" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTG" id="2_MKLxJqgLX" role="3clF46">
+                    <property role="TrG5h" value="context" />
+                    <node concept="3uibUv" id="2_MKLxJqgLY" role="1tU5fm">
+                      <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+                    </node>
+                  </node>
+                  <node concept="37vLTG" id="2_MKLxJqgLZ" role="3clF46">
+                    <property role="TrG5h" value="widgetNode" />
+                    <node concept="3Tqbb2" id="2_MKLxJqgM0" role="1tU5fm">
+                      <ref role="ehGHo" to="at53:F907haLIRF" resolve="ViewWidget" />
+                    </node>
+                  </node>
+                  <node concept="3uibUv" id="2_MKLxJqgM1" role="3clF45">
+                    <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="JW9DBRQiOF" role="3cqZAp">
           <node concept="1rXfSq" id="JW9DBRQiOG" role="3clFbG">
             <ref role="37wK5l" node="4OohpJQZXHe" resolve="usePreviousNodeIdIfPossible" />

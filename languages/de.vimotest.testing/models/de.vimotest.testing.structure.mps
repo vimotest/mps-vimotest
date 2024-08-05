@@ -381,6 +381,11 @@
     <property role="34LRSv" value="text" />
     <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="1TJgyi" id="6NwBQMyCrHw" role="1TKVEl">
+      <property role="IQ2nx" value="7845445839813196640" />
+      <property role="TrG5h" value="expectedText" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="7H4Lpx0iNr8" role="PzmwI">
       <ref role="PrY4T" node="7H4Lpx0iNqj" resolve="ILabelCheckValue" />
     </node>

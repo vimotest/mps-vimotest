@@ -242,6 +242,11 @@
     <property role="34LRSv" value="label" />
     <property role="3GE5qa" value="widgets" />
     <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
+    <node concept="1TJgyi" id="5ZrHhY9pufT" role="1TKVEl">
+      <property role="IQ2nx" value="6907313600556557305" />
+      <property role="TrG5h" value="defaultText" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="7H4Lpx0iNpC" role="1TKVEi">
       <property role="IQ2ns" value="8882441622785832552" />
       <property role="20kJfa" value="text" />

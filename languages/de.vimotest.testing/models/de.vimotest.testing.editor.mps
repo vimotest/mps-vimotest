@@ -1281,5 +1281,18 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="6NwBQMyCqZM">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1XX52x" to="53m0:7H4Lpx0iNr7" resolve="TextCheckValue" />
+    <node concept="3EZMnI" id="6NwBQMyCrfZ" role="2wV5jI">
+      <node concept="3F0ifn" id="6NwBQMyCrg0" role="3EZMnx">
+        <property role="3F0ifm" value="expect" />
+      </node>
+      <node concept="3F0A7n" id="6NwBQMyCrXz" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:6NwBQMyCrHw" resolve="expectedText" />
+      </node>
+      <node concept="2iRfu4" id="6NwBQMyCrgc" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

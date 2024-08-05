@@ -27,7 +27,9 @@
       <concept id="8882441622785832606" name="de.vimotest.testing.structure.LabelCheck" flags="ng" index="V3Zc6">
         <child id="8882441622785832607" name="checks" index="V3Zc7" />
       </concept>
-      <concept id="8882441622785832647" name="de.vimotest.testing.structure.TextCheckValue" flags="ng" index="V3Zdv" />
+      <concept id="8882441622785832647" name="de.vimotest.testing.structure.TextCheckValue" flags="ng" index="V3Zdv">
+        <property id="7845445839813196640" name="expectedText" index="3egigc" />
+      </concept>
       <concept id="3426401106045532804" name="de.vimotest.testing.structure.EmptyContext" flags="ng" index="30l7Wy" />
       <concept id="3426401106044983339" name="de.vimotest.testing.structure.ViewModelTestSuite" flags="ng" index="30n1Qd">
         <reference id="3426401106044983489" name="targetViewModel" index="30n1PB" />
@@ -39,7 +41,12 @@
       <concept id="4192570430936882686" name="de.vimotest.testing.structure.CheckedCheckValue" flags="ng" index="35STPD">
         <property id="4192570430936928123" name="expectedIsChecked" index="35S$ZG" />
       </concept>
-      <concept id="4192570430936882690" name="de.vimotest.testing.structure.EnabledCheckValue" flags="ng" index="35STUl" />
+      <concept id="4192570430936882690" name="de.vimotest.testing.structure.EnabledCheckValue" flags="ng" index="35STUl">
+        <property id="6835274084472121345" name="expectedIsEnabled" index="3XJMQh" />
+      </concept>
+      <concept id="4192570430936882688" name="de.vimotest.testing.structure.VisibilityCheckValue" flags="ng" index="35STUn">
+        <property id="6835274084472266777" name="expectedIsVisible" index="3XJem9" />
+      </concept>
       <concept id="7748111721129590460" name="de.vimotest.testing.structure.IProvideWidget" flags="ngI" index="1avIKN">
         <reference id="3426401106045121502" name="widget" index="30nzpS" />
       </concept>
@@ -67,6 +74,7 @@
       </concept>
       <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6" />
       <concept id="8882441622785832551" name="de.vimotest.viewmodel.structure.LabelWidget" flags="ng" index="V3ZfZ">
+        <property id="6907313600556557305" name="defaultText" index="3mJ_rA" />
         <child id="8882441622785832552" name="text" index="V3ZfK" />
         <child id="8882441622785832553" name="enabled" index="V3ZfL" />
         <child id="8882441622785832554" name="visibility" index="V3ZfM" />
@@ -91,6 +99,7 @@
       </node>
       <node concept="V3ZfZ" id="7H4Lpx0kZbn" role="103ZUC">
         <property role="TrG5h" value="MyLabel" />
+        <property role="3mJ_rA" value="My Expectat34343ion Text" />
         <node concept="V3Zf6" id="7H4Lpx0kZbp" role="V3ZfK" />
         <node concept="C4FCh" id="7H4Lpx0kZbr" role="V3ZfL" />
         <node concept="C4FCg" id="7H4Lpx0kZbt" role="V3ZfM" />
@@ -110,6 +119,12 @@
             <node concept="35STPD" id="3JdhG1lT90E" role="C4Fn7">
               <property role="35S$ZG" value="true" />
             </node>
+            <node concept="35STUl" id="6NwBQMyG2nQ" role="C4Fn7">
+              <property role="3XJMQh" value="true" />
+            </node>
+            <node concept="35STUn" id="6NwBQMyFBKA" role="C4Fn7">
+              <property role="3XJem9" value="true" />
+            </node>
           </node>
         </node>
       </node>
@@ -117,8 +132,15 @@
         <node concept="30nzp_" id="2_MKLxJoIKC" role="DUiSb">
           <ref role="30nzpS" node="7H4Lpx0kZbn" resolve="MyLabel" />
           <node concept="V3Zc6" id="2_MKLxJoIKF" role="30nDbQ">
-            <node concept="V3Zdv" id="2_MKLxJpw_X" role="V3Zc7" />
-            <node concept="35STUl" id="2_MKLxJpwA2" role="V3Zc7" />
+            <node concept="V3Zdv" id="2_MKLxJpw_X" role="V3Zc7">
+              <property role="3egigc" value="My Expectation Text" />
+            </node>
+            <node concept="35STUl" id="2_MKLxJpwA2" role="V3Zc7">
+              <property role="3XJMQh" value="true" />
+            </node>
+            <node concept="35STUn" id="6NwBQMyFBKI" role="V3Zc7">
+              <property role="3XJem9" value="true" />
+            </node>
           </node>
         </node>
       </node>

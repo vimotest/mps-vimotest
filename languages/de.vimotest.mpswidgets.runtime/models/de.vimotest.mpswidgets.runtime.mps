@@ -402,6 +402,43 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="58Au7n0wDTN" role="3cqZAp">
+              <node concept="2OqwBi" id="58Au7n0wFMD" role="3clFbG">
+                <node concept="37vLTw" id="58Au7n0wDTL" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7szUFELGTwP" resolve="g" />
+                </node>
+                <node concept="liA8E" id="58Au7n0wJ$0" role="2OqNvi">
+                  <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
+                  <node concept="10M0yZ" id="58Au7n0wOKm" role="37wK5m">
+                    <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="58Au7n0wRgU" role="3cqZAp">
+              <node concept="2OqwBi" id="58Au7n0wRgV" role="3clFbG">
+                <node concept="37vLTw" id="58Au7n0wRgW" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7szUFELGTwP" resolve="g" />
+                </node>
+                <node concept="liA8E" id="58Au7n0wRgX" role="2OqNvi">
+                  <ref role="37wK5l" to="z60i:~Graphics.fillRect(int,int,int,int)" resolve="fillRect" />
+                  <node concept="1rXfSq" id="58Au7n0wRgY" role="37wK5m">
+                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getX()" resolve="getX" />
+                  </node>
+                  <node concept="1rXfSq" id="58Au7n0wRgZ" role="37wK5m">
+                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getY()" resolve="getY" />
+                  </node>
+                  <node concept="1rXfSq" id="58Au7n0wWtA" role="37wK5m">
+                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getWidth()" resolve="getWidth" />
+                  </node>
+                  <node concept="1rXfSq" id="58Au7n0wZLc" role="37wK5m">
+                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getHeight()" resolve="getHeight" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="58Au7n0wTvc" role="3cqZAp" />
             <node concept="3clFbF" id="7szUFELGUbV" role="3cqZAp">
               <node concept="2OqwBi" id="7szUFELGUcr" role="3clFbG">
                 <node concept="37vLTw" id="7szUFELGUbT" role="2Oq$k0">

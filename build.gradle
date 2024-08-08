@@ -1,4 +1,4 @@
-ext.mpsVersion = "2023.3.1"
+ext.mpsVersion = "2024.1"
 ext.languageName = "vimotest"
 
 ext.mpsPlugins = [ ]

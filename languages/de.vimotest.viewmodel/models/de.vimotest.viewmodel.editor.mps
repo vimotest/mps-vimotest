@@ -715,7 +715,7 @@
                       </node>
                     </node>
                     <node concept="2AHcQZ" id="6mWHjmRKK85" role="2AJF6D">
-                      <ref role="2AI5Lk" to="wyt6:~Override" />
+                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                     </node>
                   </node>
                 </node>
@@ -825,7 +825,7 @@
       </node>
       <node concept="3F0ifn" id="5L3DBX$oEYs" role="1j7Clw">
         <property role="3F0ifm" value="C" />
-        <ref role="1k5W1q" node="43UPKEZ9RW1" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
         <node concept="Veino" id="5L3DBX$oEYt" role="3F10Kt">
           <property role="Vb096" value="hGRnIZc/lightBlue" />
         </node>
@@ -849,7 +849,7 @@
       </node>
       <node concept="3F0ifn" id="5L3DBX$oEY$" role="1j7Clw">
         <property role="3F0ifm" value="V" />
-        <ref role="1k5W1q" node="43UPKEZ9RW1" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
         <node concept="Veino" id="5L3DBX$oEY_" role="3F10Kt">
           <property role="Vb096" value="fLJRk5A/lightGray" />
         </node>
@@ -873,7 +873,7 @@
       </node>
       <node concept="3F0ifn" id="5L3DBX$oEYG" role="1j7Clw">
         <property role="3F0ifm" value="E" />
-        <ref role="1k5W1q" node="43UPKEZ9RW1" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
         <node concept="Veino" id="5L3DBX$oEYH" role="3F10Kt">
           <property role="Vb096" value="fLJRk5B/darkGray" />
         </node>
@@ -917,7 +917,7 @@
       </node>
       <node concept="3F0ifn" id="7H4Lpx0iNp$" role="1j7Clw">
         <property role="3F0ifm" value="T" />
-        <ref role="1k5W1q" node="43UPKEZ9RW1" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
         <node concept="Veino" id="7H4Lpx0iNp_" role="3F10Kt" />
         <node concept="VechU" id="7H4Lpx0iNpA" role="3F10Kt">
           <property role="Vb096" value="6cZGtrcKCoS/black" />

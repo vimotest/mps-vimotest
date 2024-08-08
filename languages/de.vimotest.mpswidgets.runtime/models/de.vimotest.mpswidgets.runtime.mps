@@ -447,7 +447,7 @@
                 <node concept="liA8E" id="7szUFELGUoX" role="2OqNvi">
                   <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
                   <node concept="37vLTw" id="6NwBQMyGwjf" role="37wK5m">
-                    <ref role="3cqZAo" node="6NwBQMyGwj8" resolve="" />
+                    <ref role="3cqZAo" node="6NwBQMyGwj8" resolve="backgroundColor" />
                   </node>
                 </node>
               </node>
@@ -557,7 +557,7 @@
                 <node concept="liA8E" id="2AMqE6fCT_E" role="2OqNvi">
                   <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
                   <node concept="37vLTw" id="6NwBQMyEGfI" role="37wK5m">
-                    <ref role="3cqZAo" node="6NwBQMyEGfG" resolve="color" />
+                    <ref role="3cqZAo" node="6NwBQMyEGfG" resolve="strokeColor" />
                   </node>
                 </node>
               </node>
@@ -593,7 +593,7 @@
                 <node concept="liA8E" id="2AMqE6fCqN6" role="2OqNvi">
                   <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
                   <node concept="37vLTw" id="6NwBQMyEGfJ" role="37wK5m">
-                    <ref role="3cqZAo" node="6NwBQMyEGfG" resolve="color" />
+                    <ref role="3cqZAo" node="6NwBQMyEGfG" resolve="strokeColor" />
                   </node>
                 </node>
               </node>

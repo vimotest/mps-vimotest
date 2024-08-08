@@ -122,7 +122,7 @@
     <property role="3GE5qa" value="test" />
     <property role="TrG5h" value="ViewModelTestCase" />
     <property role="34LRSv" value="test" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6tib4XeIJNZ" role="1TKVEi">
       <property role="IQ2ns" value="7445061853131767039" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -280,7 +280,7 @@
     <property role="3GE5qa" value="test.description" />
     <property role="TrG5h" value="TestDescriptionPart" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3JdhG1lSFbB" role="1TKVEl">
       <property role="IQ2nx" value="4309178210352018151" />
       <property role="TrG5h" value="textBefore" />
@@ -343,7 +343,7 @@
     <property role="3GE5qa" value="test.assert._checkvalues" />
     <property role="TrG5h" value="WidgetFeatureCheckValue" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5VrLp2zEYYj" role="PzmwI">
       <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
     </node>

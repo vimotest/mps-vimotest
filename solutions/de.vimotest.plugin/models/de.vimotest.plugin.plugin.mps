@@ -637,7 +637,7 @@
             <node concept="2ShNRf" id="JW9DBRQF2L" role="2Oq$k0">
               <node concept="1pGfFk" id="JW9DBRQF2M" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" node="69Ym88B3ruM" resolve="WidgetFeatureTestSupportGenerator" />
+                <ref role="37wK5l" node="69Ym88B3ruM" resolve="TestWidgetFeatureSupportGenerator" />
                 <node concept="37vLTw" id="JW9DBRQF2N" role="37wK5m">
                   <ref role="3cqZAo" node="RUuBjGf7RE" resolve="widgetModel" />
                 </node>
@@ -4103,7 +4103,7 @@
                           </node>
                           <node concept="3JPx81" id="JW9DBRQiGN" role="2OqNvi">
                             <node concept="1rXfSq" id="JW9DBRQiGO" role="25WWJ7">
-                              <ref role="37wK5l" node="69Ym88B7EiF" resolve="getCheckInterfaceName" />
+                              <ref role="37wK5l" node="69Ym88B7EiF" resolve="getCheckInterfaceConceptName" />
                               <node concept="37vLTw" id="JW9DBRQiGP" role="37wK5m">
                                 <ref role="3cqZAo" node="JW9DBRQiGQ" resolve="it" />
                               </node>
@@ -4211,7 +4211,7 @@
                           </node>
                           <node concept="3JPx81" id="6mWHjmRM62T" role="2OqNvi">
                             <node concept="1rXfSq" id="6mWHjmRM62U" role="25WWJ7">
-                              <ref role="37wK5l" node="6mWHjmRM9xf" resolve="getCheckInterfaceName" />
+                              <ref role="37wK5l" node="6mWHjmRM9xf" resolve="getCheckInterfaceBehaviorName" />
                               <node concept="37vLTw" id="6mWHjmRM62V" role="37wK5m">
                                 <ref role="3cqZAo" node="6mWHjmRM62W" resolve="it" />
                               </node>
@@ -4319,7 +4319,7 @@
                           </node>
                           <node concept="3JPx81" id="JW9DBRQiHb" role="2OqNvi">
                             <node concept="1rXfSq" id="JW9DBRQiHc" role="25WWJ7">
-                              <ref role="37wK5l" node="JW9DBRQiPl" resolve="getCheckEditorName" />
+                              <ref role="37wK5l" node="JW9DBRQiPl" resolve="getCheckInspectorEditorComponentName" />
                               <node concept="37vLTw" id="JW9DBRQiHd" role="37wK5m">
                                 <ref role="3cqZAo" node="JW9DBRQiHe" resolve="it" />
                               </node>
@@ -4443,7 +4443,7 @@
         <node concept="3clFbF" id="69Ym88B7t0c" role="3cqZAp">
           <node concept="37vLTI" id="69Ym88B7t0d" role="3clFbG">
             <node concept="1rXfSq" id="69Ym88B7t0e" role="37vLTx">
-              <ref role="37wK5l" node="69Ym88B7EiF" resolve="getCheckInterfaceName" />
+              <ref role="37wK5l" node="69Ym88B7EiF" resolve="getCheckInterfaceConceptName" />
               <node concept="37vLTw" id="69Ym88B7t0f" role="37wK5m">
                 <ref role="3cqZAo" node="69Ym88B7t02" resolve="widgetDefinition" />
               </node>
@@ -4584,7 +4584,7 @@
         <node concept="3clFbF" id="2_MKLxJfxv1" role="3cqZAp">
           <node concept="37vLTI" id="2_MKLxJfxv2" role="3clFbG">
             <node concept="1rXfSq" id="2_MKLxJfxv3" role="37vLTx">
-              <ref role="37wK5l" node="JW9DBRQiPl" resolve="getCheckEditorName" />
+              <ref role="37wK5l" node="JW9DBRQiPl" resolve="getCheckInspectorEditorComponentName" />
               <node concept="37vLTw" id="2_MKLxJfxv4" role="37wK5m">
                 <ref role="3cqZAo" node="2_MKLxJfky_" resolve="widgetDefinition" />
               </node>
@@ -4635,7 +4635,7 @@
                 <ref role="3cqZAo" node="2_MKLxJfxuW" resolve="node" />
               </node>
               <node concept="3TrEf2" id="2_MKLxJfxvn" role="2OqNvi">
-                <ref role="3Tt5mk" to="tpc2:5HVj4Ph44AO" />
+                <ref role="3Tt5mk" to="tpc2:5HVj4Ph44AO" resolve="conceptDeclaration" />
               </node>
             </node>
           </node>
@@ -4778,7 +4778,7 @@
           <node concept="37vLTI" id="6mWHjmRMqK4" role="3clFbG">
             <node concept="3EllGN" id="6mWHjmRMqK5" role="37vLTx">
               <node concept="1rXfSq" id="6mWHjmRMqK6" role="3ElVtu">
-                <ref role="37wK5l" node="69Ym88B7EiF" resolve="getCheckInterfaceName" />
+                <ref role="37wK5l" node="69Ym88B7EiF" resolve="getCheckInterfaceConceptName" />
                 <node concept="37vLTw" id="6mWHjmRMqK7" role="37wK5m">
                   <ref role="3cqZAo" node="6mWHjmRM0lJ" resolve="widgetDefinition" />
                 </node>
@@ -4792,7 +4792,7 @@
                 <ref role="3cqZAo" node="6mWHjmRMqJK" resolve="behaviorNode" />
               </node>
               <node concept="3TrEf2" id="6mWHjmRMqKb" role="2OqNvi">
-                <ref role="3Tt5mk" to="1i04:hP3h7Gv" />
+                <ref role="3Tt5mk" to="1i04:hP3h7Gv" resolve="concept" />
               </node>
             </node>
           </node>
@@ -5115,7 +5115,7 @@
             </node>
             <node concept="3EllGN" id="69Ym88B9xdz" role="37vLTx">
               <node concept="1rXfSq" id="69Ym88B9yEi" role="3ElVtu">
-                <ref role="37wK5l" node="69Ym88B7EiF" resolve="getCheckInterfaceName" />
+                <ref role="37wK5l" node="69Ym88B7EiF" resolve="getCheckInterfaceConceptName" />
                 <node concept="37vLTw" id="69Ym88B9$lS" role="37wK5m">
                   <ref role="3cqZAo" node="JW9DBRQiIc" resolve="widgetDefinition" />
                 </node>
@@ -5218,7 +5218,7 @@
         <node concept="3clFbF" id="JW9DBRQiKe" role="3cqZAp">
           <node concept="37vLTI" id="JW9DBRQiKf" role="3clFbG">
             <node concept="1rXfSq" id="JW9DBRQiKg" role="37vLTx">
-              <ref role="37wK5l" node="JW9DBRQiPl" resolve="getCheckEditorName" />
+              <ref role="37wK5l" node="JW9DBRQiPl" resolve="getCheckInspectorEditorComponentName" />
               <node concept="37vLTw" id="JW9DBRQiKh" role="37wK5m">
                 <ref role="3cqZAo" node="JW9DBRQiK4" resolve="widgetDefinition" />
               </node>
@@ -5269,7 +5269,7 @@
                 <ref role="3cqZAo" node="JW9DBRQiK9" resolve="node" />
               </node>
               <node concept="3TrEf2" id="JW9DBRQiK_" role="2OqNvi">
-                <ref role="3Tt5mk" to="tpc2:gXXX56I" />
+                <ref role="3Tt5mk" to="tpc2:gXXX56I" resolve="conceptDeclaration" />
               </node>
             </node>
           </node>
@@ -5283,13 +5283,13 @@
                     <ref role="3cqZAo" node="JW9DBRQiK9" resolve="node" />
                   </node>
                   <node concept="3TrEf2" id="6I6OCWxZ3va" role="2OqNvi">
-                    <ref role="3Tt5mk" to="tpc2:66t_lsklggO" />
+                    <ref role="3Tt5mk" to="tpc2:66t_lsklggO" resolve="overridenEditorComponent" />
                   </node>
                 </node>
                 <node concept="2DeJnY" id="6I6OCWxZ3vb" role="2OqNvi" />
               </node>
               <node concept="3TrEf2" id="6I6OCWxZ3vc" role="2OqNvi">
-                <ref role="3Tt5mk" to="tpc2:66t_lskdu99" />
+                <ref role="3Tt5mk" to="tpc2:66t_lskdu99" resolve="editorComponent" />
               </node>
             </node>
             <node concept="2OqwBi" id="6I6OCWxZ3vd" role="37vLTx">
@@ -5805,7 +5805,7 @@
                                 <node concept="2pJPED" id="3CJ09vZGrmF" role="2pJPEn">
                                   <ref role="2pJxaS" to="tp25:gzTrEba" resolve="SLinkAccess" />
                                   <node concept="2pIpSj" id="3CJ09vZGrmG" role="2pJxcM">
-                                    <ref role="2pIpSl" to="tp25:gzTt5is" />
+                                    <ref role="2pIpSl" to="tp25:gzTt5is" resolve="link" />
                                     <node concept="36biLy" id="3CJ09vZGrmH" role="28nt2d">
                                       <node concept="37vLTw" id="3CJ09vZGrmI" role="36biLW">
                                         <ref role="3cqZAo" node="69Ym88BaJ8O" resolve="checksLink" />
@@ -5971,7 +5971,7 @@
           <node concept="2ShNRf" id="JW9DBRQiOY" role="3cqZAk">
             <node concept="Tc6Ow" id="JW9DBRQiOZ" role="2ShVmc">
               <node concept="1rXfSq" id="JW9DBRQiP0" role="HW$Y0">
-                <ref role="37wK5l" node="69Ym88B7EiF" resolve="getCheckInterfaceName" />
+                <ref role="37wK5l" node="69Ym88B7EiF" resolve="getCheckInterfaceConceptName" />
                 <node concept="37vLTw" id="JW9DBRQiP1" role="37wK5m">
                   <ref role="3cqZAo" node="JW9DBRQiOU" resolve="definitionNode" />
                 </node>
@@ -5995,7 +5995,7 @@
                 </node>
               </node>
               <node concept="1rXfSq" id="JW9DBRQiP4" role="HW$Y0">
-                <ref role="37wK5l" node="JW9DBRQiPl" resolve="getCheckEditorName" />
+                <ref role="37wK5l" node="JW9DBRQiPl" resolve="getCheckInspectorEditorComponentName" />
                 <node concept="37vLTw" id="JW9DBRQiP5" role="37wK5m">
                   <ref role="3cqZAo" node="JW9DBRQiOU" resolve="definitionNode" />
                 </node>
@@ -6144,7 +6144,7 @@
               <property role="Xl_RC" value="_Behavior" />
             </node>
             <node concept="1rXfSq" id="6mWHjmRMfe1" role="3uHU7B">
-              <ref role="37wK5l" node="69Ym88B7EiF" resolve="getCheckInterfaceName" />
+              <ref role="37wK5l" node="69Ym88B7EiF" resolve="getCheckInterfaceConceptName" />
               <node concept="37vLTw" id="6mWHjmRMgqk" role="37wK5m">
                 <ref role="3cqZAo" node="6mWHjmRM9xg" resolve="definitionNode" />
               </node>
@@ -6294,7 +6294,7 @@
                           </node>
                           <node concept="3JPx81" id="5L3DBX$mqev" role="2OqNvi">
                             <node concept="1rXfSq" id="5L3DBX$mqew" role="25WWJ7">
-                              <ref role="37wK5l" node="69Ym88B3rBH" resolve="getConceptName" />
+                              <ref role="37wK5l" node="69Ym88B3rBH" resolve="getCheckValueConceptName" />
                               <node concept="37vLTw" id="5L3DBX$mqex" role="37wK5m">
                                 <ref role="3cqZAo" node="5L3DBX$mqey" resolve="it" />
                               </node>
@@ -6316,7 +6316,7 @@
                 <node concept="3clFbS" id="5L3DBX$mqeA" role="1bW5cS">
                   <node concept="3clFbF" id="5L3DBX$mqeB" role="3cqZAp">
                     <node concept="1rXfSq" id="5L3DBX$mqeC" role="3clFbG">
-                      <ref role="37wK5l" node="5L3DBX$msGf" resolve="generateWidgetFeatureConcepts" />
+                      <ref role="37wK5l" node="5L3DBX$msGf" resolve="generateCheckValueConcept" />
                       <node concept="37vLTw" id="5L3DBX$mqeD" role="37wK5m">
                         <ref role="3cqZAo" node="5L3DBX$mqeE" resolve="it" />
                       </node>
@@ -6363,7 +6363,7 @@
         <node concept="3clFbF" id="5L3DBX$msGq" role="3cqZAp">
           <node concept="37vLTI" id="5L3DBX$msGr" role="3clFbG">
             <node concept="1rXfSq" id="5L3DBX$msGs" role="37vLTx">
-              <ref role="37wK5l" node="69Ym88B3rBH" resolve="getConceptName" />
+              <ref role="37wK5l" node="69Ym88B3rBH" resolve="getCheckValueConceptName" />
               <node concept="37vLTw" id="5L3DBX$msGt" role="37wK5m">
                 <ref role="3cqZAo" node="5L3DBX$msGg" resolve="featureDefinition" />
               </node>
@@ -6426,7 +6426,7 @@
             <node concept="2OqwBi" id="5VrLp2zs1C$" role="37vLTx">
               <node concept="2tJFMh" id="5VrLp2zs1C_" role="2Oq$k0">
                 <node concept="ZC_QK" id="5VrLp2zs1CA" role="2tJFKM">
-                  <ref role="2aWVGs" to="53m0:5VrLp2zrQlb" resolve="AbstractFeatureCheckValue" />
+                  <ref role="2aWVGs" to="53m0:5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
                 </node>
               </node>
               <node concept="Vyspw" id="5VrLp2zs1CB" role="2OqNvi">
@@ -6509,9 +6509,9 @@
                       <node concept="17QB3L" id="5L3DBX$ng2c" role="1tU5fm" />
                       <node concept="2YIFZM" id="5L3DBX$nged" role="33vP2m">
                         <ref role="37wK5l" node="69Ym88B7EiF" resolve="getCheckInterfaceConceptName" />
-                        <ref role="1Pybhc" node="JW9DBRQiGb" resolve="WidgetTestSupportGenerator" />
+                        <ref role="1Pybhc" node="JW9DBRQiGb" resolve="TestWidgetSupportGenerator" />
                         <node concept="37vLTw" id="5L3DBX$ngee" role="37wK5m">
-                          <ref role="3cqZAo" node="5L3DBX$mLyO" resolve="widgetUsingThisFeature" />
+                          <ref role="3cqZAo" node="5L3DBX$mLyO" resolve="widget" />
                         </node>
                       </node>
                     </node>
@@ -6529,7 +6529,7 @@
                         </node>
                         <node concept="3EllGN" id="5L3DBX$nbWV" role="1m5AlR">
                           <node concept="37vLTw" id="5L3DBX$ngef" role="3ElVtu">
-                            <ref role="3cqZAo" node="5L3DBX$ngec" resolve="checkInterfaceConceptName" />
+                            <ref role="3cqZAo" node="5L3DBX$ngec" resolve="checkValueInterfaceName" />
                           </node>
                           <node concept="37vLTw" id="5L3DBX$nbWY" role="3ElQJh">
                             <ref role="3cqZAo" node="26yOs7SpZZ8" resolve="conceptByNameMap" />
@@ -6564,7 +6564,7 @@
                       </node>
                       <node concept="2OqwBi" id="5L3DBX$mY9i" role="37vLTJ">
                         <node concept="37vLTw" id="5L3DBX$nkZ$" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5L3DBX$nkZu" resolve="addNewInitialized" />
+                          <ref role="3cqZAo" node="5L3DBX$nkZu" resolve="interfaceRef" />
                         </node>
                         <node concept="3TrEf2" id="5L3DBX$mZqO" role="2OqNvi">
                           <ref role="3Tt5mk" to="tpce:h0PrY0D" resolve="intfc" />
@@ -6644,7 +6644,7 @@
           <node concept="2ShNRf" id="69Ym88B3rBy" role="3cqZAk">
             <node concept="Tc6Ow" id="69Ym88B3rBz" role="2ShVmc">
               <node concept="1rXfSq" id="69Ym88B3rB$" role="HW$Y0">
-                <ref role="37wK5l" node="69Ym88B3rBH" resolve="getConceptName" />
+                <ref role="37wK5l" node="69Ym88B3rBH" resolve="getCheckValueConceptName" />
                 <node concept="37vLTw" id="69Ym88B3rB_" role="37wK5m">
                   <ref role="3cqZAo" node="69Ym88B3rBu" resolve="definitionNode" />
                 </node>
@@ -6703,7 +6703,7 @@
         <node concept="3clFbF" id="69Ym88B3rBX" role="3cqZAp">
           <node concept="3cpWs3" id="69Ym88B3rBY" role="3clFbG">
             <node concept="1rXfSq" id="69Ym88B3rBZ" role="3uHU7B">
-              <ref role="37wK5l" node="69Ym88B3rBH" resolve="getConceptName" />
+              <ref role="37wK5l" node="69Ym88B3rBH" resolve="getCheckValueConceptName" />
               <node concept="37vLTw" id="69Ym88B3rC0" role="37wK5m">
                 <ref role="3cqZAo" node="69Ym88B3rBU" resolve="definitionNode" />
               </node>

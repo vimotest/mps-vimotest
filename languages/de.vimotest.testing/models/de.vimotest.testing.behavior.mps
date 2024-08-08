@@ -398,7 +398,7 @@
             <node concept="2OqwBi" id="2_dDDaxtePs" role="2Oq$k0">
               <node concept="13iPFW" id="2_dDDaxtePt" role="2Oq$k0" />
               <node concept="3Tsc0h" id="2_dDDaxtDvj" role="2OqNvi">
-                <ref role="3TtcxE" to="53m0:4xrzs1wijw7" />
+                <ref role="3TtcxE" to="53m0:4xrzs1wijw7" resolve="checks" />
               </node>
             </node>
             <node concept="WFELt" id="2_dDDaxtePv" role="2OqNvi">
@@ -501,7 +501,7 @@
           <node concept="2ShNRf" id="5L3DBX$kDuA" role="3clFbG">
             <node concept="1pGfFk" id="5L3DBX$kFvI" role="2ShVmc">
               <property role="373rjd" value="true" />
-              <ref role="37wK5l" to="5xyw:29i_hh2lLWq" resolve="EditorCell_Basic" />
+              <ref role="37wK5l" to="5xyw:29i_hh2lLWq" resolve="EditorCell_CheckBox" />
               <node concept="37vLTw" id="5L3DBX$kF_t" role="37wK5m">
                 <ref role="3cqZAo" node="3CJ09vZNb2m" resolve="context" />
               </node>
@@ -928,7 +928,7 @@
       <node concept="37vLTG" id="7H4Lpx0iNqp" role="3clF46">
         <property role="TrG5h" value="labelEditorCell" />
         <node concept="3uibUv" id="7H4Lpx0iNqq" role="1tU5fm">
-          <ref role="3uigEE" to="f4zo:~EditorCell" />
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
         </node>
       </node>
       <node concept="3Tm1VV" id="7H4Lpx0iNqr" role="1B3o_S" />
@@ -957,7 +957,7 @@
     </node>
     <node concept="13i0hz" id="7H4Lpx0iNqL" role="13h7CS">
       <property role="TrG5h" value="applyOnWidget" />
-      <ref role="13i0hy" node="2Yd1qrJP3FF" />
+      <ref role="13i0hy" node="2Yd1qrJP3FF" resolve="applyOnWidget" />
       <node concept="3Tm1VV" id="7H4Lpx0iNqM" role="1B3o_S" />
       <node concept="3clFbS" id="7H4Lpx0iNqN" role="3clF47">
         <node concept="3clFbF" id="7H4Lpx0iNqO" role="3cqZAp">
@@ -997,13 +997,13 @@
       <node concept="37vLTG" id="7H4Lpx0iNr2" role="3clF46">
         <property role="TrG5h" value="editorCell" />
         <node concept="3uibUv" id="7H4Lpx0iNr3" role="1tU5fm">
-          <ref role="3uigEE" to="f4zo:~EditorCell" />
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
         </node>
       </node>
       <node concept="37vLTG" id="7H4Lpx0iNr4" role="3clF46">
         <property role="TrG5h" value="widget" />
         <node concept="3Tqbb2" id="7H4Lpx0iNr5" role="1tU5fm">
-          <ref role="ehGHo" to="at53:F907haLIRF" />
+          <ref role="ehGHo" to="at53:F907haLIRF" resolve="ViewWidget" />
         </node>
       </node>
       <node concept="3cqZAl" id="7H4Lpx0iNr6" role="3clF45" />
@@ -1131,7 +1131,7 @@
       <node concept="37vLTG" id="5L3DBX$oEZA" role="3clF46">
         <property role="TrG5h" value="checkBoxEditorCell" />
         <node concept="3uibUv" id="5L3DBX$oEZB" role="1tU5fm">
-          <ref role="3uigEE" to="f4zo:~EditorCell" />
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
         </node>
       </node>
       <node concept="3Tm1VV" id="5L3DBX$oEZC" role="1B3o_S" />

@@ -171,7 +171,7 @@
             <node concept="3clFbH" id="48TKAW3Vg0G" role="3cqZAp">
               <node concept="raruj" id="48TKAW3Vg0H" role="lGtFl" />
               <node concept="5jKBG" id="48TKAW3Vg0I" role="lGtFl">
-                <ref role="v9R2y" node="g_$xCuf" resolve="reduce_CellModel_DropDown" />
+                <ref role="v9R2y" node="g_$xCuf" resolve="reduce_CellModel_CheckBox" />
               </node>
             </node>
             <node concept="3clFbH" id="48TKAW3Vg0J" role="3cqZAp">
@@ -223,7 +223,7 @@
                           <node concept="2OqwBi" id="5KpU9QZyFnZ" role="2Oq$k0">
                             <node concept="30H73N" id="5KpU9QZyFo0" role="2Oq$k0" />
                             <node concept="3TrEf2" id="5KpU9QZyFo1" role="2OqNvi">
-                              <ref role="3Tt5mk" to="tpc2:fBF1KQc" />
+                              <ref role="3Tt5mk" to="tpc2:fBF1KQc" resolve="propertyDeclaration" />
                             </node>
                           </node>
                           <node concept="2Xjw5R" id="5KpU9QZyFo2" role="2OqNvi">
@@ -246,7 +246,7 @@
                       <node concept="3clFbF" id="5KpU9QZyFo8" role="3cqZAp">
                         <node concept="2OqwBi" id="5KpU9QZyFo9" role="3clFbG">
                           <node concept="3TrEf2" id="5KpU9QZyFoa" role="2OqNvi">
-                            <ref role="3Tt5mk" to="tpc2:fBF1KQc" />
+                            <ref role="3Tt5mk" to="tpc2:fBF1KQc" resolve="propertyDeclaration" />
                           </node>
                           <node concept="30H73N" id="5KpU9QZyFob" role="2Oq$k0" />
                         </node>
@@ -288,7 +288,7 @@
               </node>
               <node concept="2ShNRf" id="3_TG3j97kDd" role="33vP2m">
                 <node concept="1pGfFk" id="3_TG3j97$_b" role="2ShVmc">
-                  <ref role="37wK5l" to="5xyw:29i_hh2lLWq" resolve="EditorCell_Basic" />
+                  <ref role="37wK5l" to="5xyw:29i_hh2lLWq" resolve="EditorCell_CheckBox" />
                   <node concept="37vLTw" id="3_TG3j97A1F" role="37wK5m">
                     <ref role="3cqZAo" node="g_CeiMc" resolve="editorContext" />
                   </node>

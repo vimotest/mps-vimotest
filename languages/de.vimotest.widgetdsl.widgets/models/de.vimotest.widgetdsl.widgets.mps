@@ -90,5 +90,28 @@
     <property role="2WV$r6" value="text" />
     <property role="2WVz4g" value="T" />
   </node>
+  <node concept="2WVz3F" id="5o5P3z3PZT6">
+    <property role="103t_X" value="widgets" />
+    <property role="3GE5qa" value="widgets" />
+    <property role="TrG5h" value="Image" />
+    <property role="2SiFfI" value="image" />
+    <node concept="2WVz4l" id="5o5P3z3PZTa" role="2WV$Zc">
+      <property role="3dRBvX" value="true" />
+      <ref role="2WVz4k" node="5o5P3z3PZT7" resolve="ImageSource" />
+    </node>
+    <node concept="2WVz4l" id="5o5P3z3PZT8" role="2WV$Zc">
+      <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
+    </node>
+    <node concept="2WVz4l" id="5o5P3z3PZTf" role="2WV$Zc">
+      <ref role="2WVz4k" node="1Yc3x6zoTLW" resolve="Visibility" />
+    </node>
+  </node>
+  <node concept="2WVz3E" id="5o5P3z3PZT7">
+    <property role="3GE5qa" value="features" />
+    <property role="TrG5h" value="ImageSource" />
+    <property role="2WV$r6" value="image source" />
+    <property role="2WVz4g" value="I" />
+    <property role="3yYw5D" value="fLwANPs/magenta" />
+  </node>
 </model>
 

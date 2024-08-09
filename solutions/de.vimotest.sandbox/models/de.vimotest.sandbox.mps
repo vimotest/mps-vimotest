@@ -64,6 +64,15 @@
       </concept>
     </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
+      <concept id="885291782481719619" name="de.vimotest.viewmodel.structure.ViewWidgetFeature" flags="ng" index="25b05G">
+        <property id="5555266676524595291" name="supported" index="2VM7R0" />
+      </concept>
+      <concept id="3922717397912187187" name="de.vimotest.viewmodel.structure.ImageWidget" flags="ng" index="2mJbI3">
+        <child id="3922717397912187188" name="imageSource" index="2mJbI4" />
+        <child id="3922717397912187189" name="enabled" index="2mJbI5" />
+        <child id="3922717397912187190" name="visibility" index="2mJbI6" />
+      </concept>
+      <concept id="3922717397912187178" name="de.vimotest.viewmodel.structure.ImageSourceFeature" flags="ng" index="2mJbIq" />
       <concept id="5213916851000129487" name="de.vimotest.viewmodel.structure.CheckedFeature" flags="ng" index="C4FCf" />
       <concept id="5213916851000129488" name="de.vimotest.viewmodel.structure.VisibilityFeature" flags="ng" index="C4FCg" />
       <concept id="5213916851000129489" name="de.vimotest.viewmodel.structure.EnabledFeature" flags="ng" index="C4FCh" />
@@ -103,6 +112,14 @@
         <node concept="V3Zf6" id="7H4Lpx0kZbp" role="V3ZfK" />
         <node concept="C4FCh" id="7H4Lpx0kZbr" role="V3ZfL" />
         <node concept="C4FCg" id="7H4Lpx0kZbt" role="V3ZfM" />
+      </node>
+      <node concept="2mJbI3" id="3pKiF2wQ5di" role="103ZUC">
+        <property role="TrG5h" value="MyImage" />
+        <node concept="2mJbIq" id="3pKiF2wQ5dk" role="2mJbI4">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCh" id="3pKiF2wQ5dm" role="2mJbI5" />
+        <node concept="C4FCg" id="3pKiF2wQ5do" role="2mJbI6" />
       </node>
     </node>
   </node>

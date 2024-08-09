@@ -390,5 +390,37 @@
       <ref role="PrY4T" node="7H4Lpx0iNqj" resolve="ILabelCheckValue" />
     </node>
   </node>
+  <node concept="PlHQZ" id="3pKiF2wNf5v">
+    <property role="EcuMT" value="3922717397912187231" />
+    <property role="TrG5h" value="IImageCheckValue" />
+    <property role="3GE5qa" value="test.assert.image" />
+    <node concept="PrWs8" id="3pKiF2wNf5w" role="PrDN$">
+      <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3pKiF2wNf5P">
+    <property role="EcuMT" value="3922717397912187253" />
+    <property role="TrG5h" value="ImageCheck" />
+    <property role="34LRSv" value="check image" />
+    <property role="3GE5qa" value="test.assert.image" />
+    <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
+    <node concept="1TJgyj" id="3pKiF2wNf5Q" role="1TKVEi">
+      <property role="IQ2ns" value="3922717397912187254" />
+      <property role="20kJfa" value="checks" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3pKiF2wNf5v" resolve="IImageCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3pKiF2wNf6L">
+    <property role="EcuMT" value="3922717397912187313" />
+    <property role="TrG5h" value="ImageSourceCheckValue" />
+    <property role="34LRSv" value="image source" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="PrWs8" id="3pKiF2wNf6M" role="PzmwI">
+      <ref role="PrY4T" node="3pKiF2wNf5v" resolve="IImageCheckValue" />
+    </node>
+  </node>
 </model>
 

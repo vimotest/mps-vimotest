@@ -99,7 +99,7 @@
       </node>
       <node concept="V3ZfZ" id="7H4Lpx0kZbn" role="103ZUC">
         <property role="TrG5h" value="MyLabel" />
-        <property role="3mJ_rA" value="My Expectat34343ion Text" />
+        <property role="3mJ_rA" value="My Text" />
         <node concept="V3Zf6" id="7H4Lpx0kZbp" role="V3ZfK" />
         <node concept="C4FCh" id="7H4Lpx0kZbr" role="V3ZfL" />
         <node concept="C4FCg" id="7H4Lpx0kZbt" role="V3ZfM" />

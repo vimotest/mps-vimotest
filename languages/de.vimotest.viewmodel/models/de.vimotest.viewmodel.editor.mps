@@ -1127,19 +1127,8 @@
       <node concept="3F0ifn" id="6wbjV0Q45xg" role="3EZMnx">
         <property role="3F0ifm" value="image" />
       </node>
-      <node concept="3gTLQM" id="6wbjV0Q4nh_" role="3EZMnx">
-        <node concept="3Fmcul" id="6wbjV0Q4nhB" role="3FoqZy">
-          <node concept="3clFbS" id="6wbjV0Q4nhD" role="2VODD2">
-            <node concept="3clFbF" id="6wbjV0Q4Lmk" role="3cqZAp">
-              <node concept="2OqwBi" id="6wbjV0Q4LA3" role="3clFbG">
-                <node concept="pncrf" id="6wbjV0Q4Lmj" role="2Oq$k0" />
-                <node concept="2qgKlT" id="6wbjV0Q4LKY" role="2OqNvi">
-                  <ref role="37wK5l" to="nrs2:6wbjV0Q4KDI" resolve="createSwingLabelWithImage" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="PMmxH" id="7WnLzoFE9JZ" role="3EZMnx">
+        <ref role="PMmxG" node="7WnLzoFE9JR" resolve="ImageDefinition_EC_sourceImage" />
       </node>
       <node concept="3F0A7n" id="6wbjV0Q45xO" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -1170,41 +1159,8 @@
       </node>
       <node concept="3EZMnI" id="1o_uqzzSudq" role="3EZMnx">
         <node concept="2iRfu4" id="1o_uqzzSudr" role="2iSdaV" />
-        <node concept="3gTLQM" id="1o_uqzzSu1p" role="3EZMnx">
-          <node concept="3Fmcul" id="1o_uqzzSu1r" role="3FoqZy">
-            <node concept="3clFbS" id="1o_uqzzSu1t" role="2VODD2">
-              <node concept="3cpWs8" id="1o_uqzzSvBm" role="3cqZAp">
-                <node concept="3cpWsn" id="1o_uqzzSvBn" role="3cpWs9">
-                  <property role="TrG5h" value="label" />
-                  <node concept="3uibUv" id="1o_uqzzSvz2" role="1tU5fm">
-                    <ref role="3uigEE" to="dxuu:~JLabel" resolve="JLabel" />
-                  </node>
-                  <node concept="2OqwBi" id="1o_uqzzSvBo" role="33vP2m">
-                    <node concept="pncrf" id="1o_uqzzSvBp" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="1o_uqzzSvBq" role="2OqNvi">
-                      <ref role="37wK5l" to="nrs2:6wbjV0Q4KDI" resolve="createSwingLabelWithImage" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="1o_uqzzSvGc" role="3cqZAp">
-                <node concept="2OqwBi" id="1o_uqzzSxxh" role="3clFbG">
-                  <node concept="37vLTw" id="1o_uqzzSvGa" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1o_uqzzSvBn" resolve="label" />
-                  </node>
-                  <node concept="liA8E" id="1o_uqzzSxDN" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~JComponent.setEnabled(boolean)" resolve="setEnabled" />
-                    <node concept="3clFbT" id="1o_uqzzSxEh" role="37wK5m" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="1o_uqzzSvr3" role="3cqZAp">
-                <node concept="37vLTw" id="1o_uqzzSvBr" role="3clFbG">
-                  <ref role="3cqZAo" node="1o_uqzzSvBn" resolve="label" />
-                </node>
-              </node>
-            </node>
-          </node>
+        <node concept="PMmxH" id="7WnLzoFE9KF" role="3EZMnx">
+          <ref role="PMmxG" node="7WnLzoFE9Kq" resolve="ImageDefinition_EC_disabledImage" />
         </node>
         <node concept="pkWqt" id="1o_uqzzSufi" role="pqm2j">
           <node concept="3clFbS" id="1o_uqzzSufj" role="2VODD2">
@@ -1331,6 +1287,66 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="2EHx9g" id="2YeT3IBbXKK" role="2czzBx" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="7WnLzoFE9JR">
+    <property role="TrG5h" value="ImageDefinition_EC_sourceImage" />
+    <property role="3GE5qa" value="widgets.image" />
+    <ref role="1XX52x" to="at53:6wbjV0Q45wJ" resolve="ImageDefinition" />
+    <node concept="3gTLQM" id="7WnLzoFE9JS" role="2wV5jI">
+      <node concept="3Fmcul" id="7WnLzoFE9JT" role="3FoqZy">
+        <node concept="3clFbS" id="7WnLzoFE9JU" role="2VODD2">
+          <node concept="3clFbF" id="7WnLzoFE9JV" role="3cqZAp">
+            <node concept="2OqwBi" id="7WnLzoFE9JW" role="3clFbG">
+              <node concept="pncrf" id="7WnLzoFE9JX" role="2Oq$k0" />
+              <node concept="2qgKlT" id="7WnLzoFE9JY" role="2OqNvi">
+                <ref role="37wK5l" to="nrs2:6wbjV0Q4KDI" resolve="createSwingLabelWithImage" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="7WnLzoFE9Kq">
+    <property role="TrG5h" value="ImageDefinition_EC_disabledImage" />
+    <property role="3GE5qa" value="widgets.image" />
+    <ref role="1XX52x" to="at53:6wbjV0Q45wJ" resolve="ImageDefinition" />
+    <node concept="3gTLQM" id="7WnLzoFE9Kr" role="2wV5jI">
+      <node concept="3Fmcul" id="7WnLzoFE9Ks" role="3FoqZy">
+        <node concept="3clFbS" id="7WnLzoFE9Kt" role="2VODD2">
+          <node concept="3cpWs8" id="7WnLzoFE9Ku" role="3cqZAp">
+            <node concept="3cpWsn" id="7WnLzoFE9Kv" role="3cpWs9">
+              <property role="TrG5h" value="label" />
+              <node concept="3uibUv" id="7WnLzoFE9Kw" role="1tU5fm">
+                <ref role="3uigEE" to="dxuu:~JLabel" resolve="JLabel" />
+              </node>
+              <node concept="2OqwBi" id="7WnLzoFE9Kx" role="33vP2m">
+                <node concept="pncrf" id="7WnLzoFE9Ky" role="2Oq$k0" />
+                <node concept="2qgKlT" id="7WnLzoFE9Kz" role="2OqNvi">
+                  <ref role="37wK5l" to="nrs2:6wbjV0Q4KDI" resolve="createSwingLabelWithImage" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="7WnLzoFE9K$" role="3cqZAp">
+            <node concept="2OqwBi" id="7WnLzoFE9K_" role="3clFbG">
+              <node concept="37vLTw" id="7WnLzoFE9KA" role="2Oq$k0">
+                <ref role="3cqZAo" node="7WnLzoFE9Kv" resolve="label" />
+              </node>
+              <node concept="liA8E" id="7WnLzoFE9KB" role="2OqNvi">
+                <ref role="37wK5l" to="dxuu:~JComponent.setEnabled(boolean)" resolve="setEnabled" />
+                <node concept="3clFbT" id="7WnLzoFE9KC" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="7WnLzoFE9KD" role="3cqZAp">
+            <node concept="37vLTw" id="7WnLzoFE9KE" role="3clFbG">
+              <ref role="3cqZAo" node="7WnLzoFE9Kv" resolve="label" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

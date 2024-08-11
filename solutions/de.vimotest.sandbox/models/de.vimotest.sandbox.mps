@@ -18,6 +18,12 @@
       </concept>
     </language>
     <language id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.testing">
+      <concept id="3922717397912187313" name="de.vimotest.testing.structure.ImageSourceCheckValue" flags="ng" index="2mJbG1">
+        <reference id="9158006303244083218" name="expectedImage" index="1kGio$" />
+      </concept>
+      <concept id="3922717397912187253" name="de.vimotest.testing.structure.ImageCheck" flags="ng" index="2mJbJ5">
+        <child id="3922717397912187254" name="checks" index="2mJbJ6" />
+      </concept>
       <concept id="5213916851000129542" name="de.vimotest.testing.structure.CheckBoxCheck" flags="ng" index="C4Fn6">
         <child id="5213916851000129543" name="checks" index="C4Fn7" />
       </concept>
@@ -181,6 +187,16 @@
             </node>
             <node concept="35STUn" id="6NwBQMyFBKI" role="V3Zc7">
               <property role="3XJem9" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="DUd2R" id="7WnLzoFEOso" role="DUd56">
+        <node concept="30nzp_" id="7WnLzoFEOsq" role="DUiSb">
+          <ref role="30nzpS" node="3pKiF2wQ5di" resolve="MyImage" />
+          <node concept="2mJbJ5" id="7WnLzoFF7Hf" role="30nDbQ">
+            <node concept="2mJbG1" id="7WnLzoFGxRG" role="2mJbJ6">
+              <ref role="1kGio$" node="2YeT3IBbXGz" resolve="image_active" />
             </node>
           </node>
         </node>

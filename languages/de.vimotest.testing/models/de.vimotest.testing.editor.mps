@@ -1329,5 +1329,50 @@
       <node concept="2iRkQZ" id="3pKiF2wNf5V" role="2czzBx" />
     </node>
   </node>
+  <node concept="24kQdi" id="7WnLzoFDIh0">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1XX52x" to="53m0:3pKiF2wNf6L" resolve="ImageSourceCheckValue" />
+    <node concept="3EZMnI" id="7WnLzoFDIh2" role="2wV5jI">
+      <node concept="3F0ifn" id="7WnLzoFDIh3" role="3EZMnx">
+        <property role="3F0ifm" value="expect" />
+      </node>
+      <node concept="1iCGBv" id="7WnLzoFDIIn" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:7WnLzoFDI0i" resolve="expectedImage" />
+        <node concept="1sVBvm" id="7WnLzoFDIIp" role="1sWHZn">
+          <node concept="3F0A7n" id="7WnLzoFDIIt" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7WnLzoFFbYH" role="3EZMnx">
+        <node concept="2iRfu4" id="7WnLzoFFbYI" role="2iSdaV" />
+        <node concept="1iCGBv" id="7WnLzoFEc9N" role="3EZMnx">
+          <ref role="1NtTu8" to="53m0:7WnLzoFDI0i" resolve="expectedImage" />
+          <node concept="1sVBvm" id="7WnLzoFEc9P" role="1sWHZn">
+            <node concept="PMmxH" id="7WnLzoFEc9V" role="2wV5jI">
+              <ref role="PMmxG" to="czmc:7WnLzoFE9JR" resolve="ImageDefinition_EC_sourceImage" />
+            </node>
+          </node>
+        </node>
+        <node concept="pkWqt" id="7WnLzoFFbYJ" role="pqm2j">
+          <node concept="3clFbS" id="7WnLzoFFbYK" role="2VODD2">
+            <node concept="3clFbF" id="7WnLzoFEcaf" role="3cqZAp">
+              <node concept="2OqwBi" id="7WnLzoFEdFd" role="3clFbG">
+                <node concept="2OqwBi" id="7WnLzoFEc_y" role="2Oq$k0">
+                  <node concept="pncrf" id="7WnLzoFEcae" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="7WnLzoFEd1R" role="2OqNvi">
+                    <ref role="3Tt5mk" to="53m0:7WnLzoFDI0i" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="7WnLzoFEe7Y" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="7WnLzoFDIhf" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

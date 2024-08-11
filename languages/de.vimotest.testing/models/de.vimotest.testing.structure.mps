@@ -418,6 +418,12 @@
     <property role="34LRSv" value="image source" />
     <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="1TJgyj" id="7WnLzoFDI0i" role="1TKVEi">
+      <property role="IQ2ns" value="9158006303244083218" />
+      <property role="20kJfa" value="expectedImage" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="at53:6wbjV0Q45wJ" resolve="ImageDefinition" />
+    </node>
     <node concept="PrWs8" id="3pKiF2wNf6M" role="PzmwI">
       <ref role="PrY4T" node="3pKiF2wNf5v" resolve="IImageCheckValue" />
     </node>

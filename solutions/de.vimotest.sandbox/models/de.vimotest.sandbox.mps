@@ -198,6 +198,12 @@
             <node concept="2mJbG1" id="7WnLzoFGxRG" role="2mJbJ6">
               <ref role="1kGio$" node="2YeT3IBbXGz" resolve="image_active" />
             </node>
+            <node concept="35STUl" id="7WnLzoFO5sh" role="2mJbJ6">
+              <property role="3XJMQh" value="true" />
+            </node>
+            <node concept="35STUn" id="7WnLzoFOKC0" role="2mJbJ6">
+              <property role="3XJem9" value="true" />
+            </node>
           </node>
         </node>
       </node>

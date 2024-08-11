@@ -306,12 +306,32 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4SDJcZBNVBT" resolve="VisibilityFeature" />
     </node>
+    <node concept="1TJgyj" id="2YeT3IB8_b2" role="1TKVEi">
+      <property role="IQ2ns" value="3426927311333774018" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="defaultImage" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3pKiF2wNhrx" resolve="ImageSource" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3pKiF2wNhrx">
     <property role="EcuMT" value="3922717397912196833" />
     <property role="3GE5qa" value="widgets.image" />
     <property role="TrG5h" value="ImageSource" />
+    <property role="34LRSv" value="image source" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="2YeT3IB81ge" role="1TKVEi">
+      <property role="IQ2ns" value="3426927311333626894" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2s$w3BDwT7a" resolve="ImageDefinitionRef" />
+    </node>
+    <node concept="1TJgyj" id="2YeT3IB81gw" role="1TKVEi">
+      <property role="IQ2ns" value="3426927311333626912" />
+      <property role="20kJfa" value="basedOnImageSet" />
+      <ref role="20lvS9" node="2YeT3IB81gf" resolve="ClosedImageSet" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6wbjV0Q45wJ">
     <property role="EcuMT" value="7497173622928201775" />
@@ -351,9 +371,9 @@
   <node concept="1TIwiD" id="6wbjV0Q45wI">
     <property role="EcuMT" value="7497173622928201774" />
     <property role="3GE5qa" value="widgets.image" />
-    <property role="TrG5h" value="ImagePool" />
+    <property role="TrG5h" value="ImageDefinitionRegistry" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="image pool" />
+    <property role="34LRSv" value="image registry" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6wbjV0Q45xB" role="1TKVEi">
       <property role="IQ2ns" value="7497173622928201831" />
@@ -361,6 +381,13 @@
       <property role="20kJfa" value="images" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6wbjV0Q45wJ" resolve="ImageDefinition" />
+    </node>
+    <node concept="1TJgyj" id="2YeT3IB81gr" role="1TKVEi">
+      <property role="IQ2ns" value="3426927311333626907" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="closedSets" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2YeT3IB81gf" resolve="ClosedImageSet" />
     </node>
     <node concept="1irR5M" id="2ZnRpGqW7FG" role="rwd14">
       <property role="2$rrk2" value="2" />
@@ -385,11 +412,14 @@
         </node>
       </node>
     </node>
+    <node concept="PrWs8" id="2YeT3IB9Gyg" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2s$w3BDwT7a">
     <property role="EcuMT" value="2820520252859978186" />
     <property role="3GE5qa" value="widgets.image" />
-    <property role="TrG5h" value="ImageRef" />
+    <property role="TrG5h" value="ImageDefinitionRef" />
     <property role="34LRSv" value="image ref" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2s$w3BDwT7b" role="1TKVEi">
@@ -397,6 +427,23 @@
       <property role="20kJfa" value="image" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6wbjV0Q45wJ" resolve="ImageDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2YeT3IB81gf">
+    <property role="EcuMT" value="3426927311333626895" />
+    <property role="3GE5qa" value="widgets.image" />
+    <property role="TrG5h" value="ClosedImageSet" />
+    <property role="34LRSv" value="closed set of images" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="2YeT3IB81gi" role="1TKVEi">
+      <property role="IQ2ns" value="3426927311333626898" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="imageRefs" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2s$w3BDwT7a" resolve="ImageDefinitionRef" />
+    </node>
+    <node concept="PrWs8" id="2YeT3IB81gj" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

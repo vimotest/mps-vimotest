@@ -64,7 +64,6 @@
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
-      <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
@@ -1002,6 +1001,18 @@
       <node concept="3F1sOY" id="3pKiF2wNf4W" role="3EZMnx">
         <ref role="1NtTu8" to="at53:3pKiF2wNf4O" resolve="imageSource" />
       </node>
+      <node concept="3EZMnI" id="2YeT3IB8_E_" role="3EZMnx">
+        <node concept="3F0ifn" id="2YeT3IB8_EC" role="3EZMnx">
+          <property role="3F0ifm" value="  " />
+        </node>
+        <node concept="3F0ifn" id="2YeT3IB8_Ew" role="3EZMnx">
+          <property role="3F0ifm" value="default image:" />
+        </node>
+        <node concept="2iRfu4" id="2YeT3IB8_EA" role="2iSdaV" />
+        <node concept="3F1sOY" id="2YeT3IB8_Ez" role="3EZMnx">
+          <ref role="1NtTu8" to="at53:2YeT3IB8_b2" resolve="defaultImage" />
+        </node>
+      </node>
       <node concept="3F1sOY" id="3pKiF2wNf4X" role="3EZMnx">
         <ref role="1NtTu8" to="at53:3pKiF2wNf4P" resolve="enabled" />
       </node>
@@ -1012,13 +1023,14 @@
   </node>
   <node concept="24kQdi" id="3pKiF2wNhr$">
     <property role="3GE5qa" value="widgets.image" />
-    <ref role="1XX52x" to="at53:6wbjV0Q45wI" resolve="ImagePool" />
+    <ref role="1XX52x" to="at53:6wbjV0Q45wI" resolve="ImageDefinitionRegistry" />
     <node concept="3EZMnI" id="6wbjV0Q6qId" role="2wV5jI">
       <node concept="3F0ifn" id="6wbjV0Q6qIp" role="3EZMnx">
         <property role="3F0ifm" value="images" />
-        <node concept="ljvvj" id="6wbjV0Q6qIu" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+      </node>
+      <node concept="3F0A7n" id="2YeT3IB9Gyj" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="l2Vlx" id="6wbjV0Q6qIe" role="2iSdaV" />
       <node concept="3F2HdR" id="6wbjV0Q45xD" role="3EZMnx">
@@ -1027,12 +1039,32 @@
         <node concept="lj46D" id="6wbjV0Q6qIw" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+        <node concept="pVoyu" id="2YeT3IB81gu" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2YeT3IB81gl" role="3EZMnx">
+        <property role="3F0ifm" value="closed sets (image enums)" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+        <node concept="pVoyu" id="2YeT3IB81gn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="2YeT3IB81go" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:2YeT3IB81gr" />
+        <node concept="2iRkQZ" id="2YeT3IB81gp" role="2czzBx" />
+        <node concept="lj46D" id="2YeT3IB81gq" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="2YeT3IB81gs" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
     </node>
   </node>
   <node concept="24kQdi" id="3pKiF2wNpHI">
     <property role="3GE5qa" value="widgets.image" />
-    <ref role="1XX52x" to="at53:2s$w3BDwT7a" resolve="ImageRef" />
+    <ref role="1XX52x" to="at53:2s$w3BDwT7a" resolve="ImageDefinitionRef" />
     <node concept="3EZMnI" id="2s$w3BDyhlt" role="2wV5jI">
       <node concept="3F0ifn" id="2s$w3BDyhlG" role="3EZMnx">
         <property role="3F0ifm" value="-&gt;" />
@@ -1208,6 +1240,97 @@
         <property role="1O74Pk" value="true" />
         <property role="1$x2rV" value="&lt;default&gt;" />
         <ref role="1NtTu8" to="at53:2Btob8oF1ub" resolve="height" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2YeT3IB8dCD">
+    <property role="3GE5qa" value="widgets.image" />
+    <ref role="1XX52x" to="at53:3pKiF2wNhrx" resolve="ImageSource" />
+    <node concept="3EZMnI" id="2YeT3IB8iWL" role="2wV5jI">
+      <node concept="3F0ifn" id="2YeT3IB8iWP" role="3EZMnx">
+        <property role="3F0ifm" value="image source" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+      </node>
+      <node concept="3F1sOY" id="2YeT3IB8iWS" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:2YeT3IB81ge" resolve="ref" />
+      </node>
+      <node concept="3EZMnI" id="2YeT3IB8iWZ" role="3EZMnx">
+        <node concept="2iRfu4" id="2YeT3IB8iX0" role="2iSdaV" />
+        <node concept="3F0ifn" id="2YeT3IB8iWX" role="3EZMnx">
+          <property role="3F0ifm" value="based on" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+        </node>
+        <node concept="1iCGBv" id="2YeT3IB8iX2" role="3EZMnx">
+          <ref role="1NtTu8" to="at53:2YeT3IB81gw" resolve="basedOnImageSet" />
+          <node concept="1sVBvm" id="2YeT3IB8iX4" role="1sWHZn">
+            <node concept="3F0A7n" id="2YeT3IB8iX8" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="pkWqt" id="2YeT3IB8iXa" role="pqm2j">
+          <node concept="3clFbS" id="2YeT3IB8iXb" role="2VODD2">
+            <node concept="3clFbF" id="2YeT3IB8iXf" role="3cqZAp">
+              <node concept="2OqwBi" id="2YeT3IB8kfJ" role="3clFbG">
+                <node concept="2OqwBi" id="2YeT3IB8jlG" role="2Oq$k0">
+                  <node concept="pncrf" id="2YeT3IB8iXe" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="2YeT3IB8jG_" role="2OqNvi">
+                    <ref role="3Tt5mk" to="at53:2YeT3IB81gw" resolve="basedOnImageSet" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="2YeT3IB8kG6" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pVoyu" id="2YeT3IB8kKN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="2YeT3IB8l4k" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2YeT3IB8iWO" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="2YeT3IB8lG6" role="6VMZX">
+      <node concept="3F0ifn" id="2YeT3IB8lZC" role="3EZMnx">
+        <property role="3F0ifm" value="based on" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+      </node>
+      <node concept="1iCGBv" id="2YeT3IB8lZD" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:2YeT3IB81gw" />
+        <node concept="1sVBvm" id="2YeT3IB8lZE" role="1sWHZn">
+          <node concept="3F0A7n" id="2YeT3IB8lZF" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="2YeT3IB8lG7" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2YeT3IBbXKt">
+    <property role="3GE5qa" value="widgets.image" />
+    <ref role="1XX52x" to="at53:2YeT3IB81gf" resolve="ClosedImageSet" />
+    <node concept="3EZMnI" id="2YeT3IBbXKA" role="2wV5jI">
+      <node concept="3F0ifn" id="2YeT3IBbXKD" role="3EZMnx">
+        <property role="3F0ifm" value="image set" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+      </node>
+      <node concept="3F0A7n" id="2YeT3IBbXKG" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="l2Vlx" id="2YeT3IBbXKB" role="2iSdaV" />
+      <node concept="3F2HdR" id="2YeT3IBbXK$" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:2YeT3IB81gi" resolve="imageRefs" />
+        <node concept="pVoyu" id="2YeT3IBbXKI" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="2YeT3IBbXKJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="2EHx9g" id="2YeT3IBbXKK" role="2czzBx" />
       </node>
     </node>
   </node>

@@ -67,12 +67,19 @@
       <concept id="885291782481719619" name="de.vimotest.viewmodel.structure.ViewWidgetFeature" flags="ng" index="25b05G">
         <property id="5555266676524595291" name="supported" index="2VM7R0" />
       </concept>
+      <concept id="3426927311333626895" name="de.vimotest.viewmodel.structure.ClosedImageSet" flags="ng" index="28FJ0O">
+        <child id="3426927311333626898" name="imageRefs" index="28FJ0D" />
+      </concept>
       <concept id="3922717397912187187" name="de.vimotest.viewmodel.structure.ImageWidget" flags="ng" index="2mJbI3">
+        <child id="3426927311333774018" name="defaultImage" index="28FbrT" />
         <child id="3922717397912187188" name="imageSource" index="2mJbI4" />
         <child id="3922717397912187189" name="enabled" index="2mJbI5" />
         <child id="3922717397912187190" name="visibility" index="2mJbI6" />
       </concept>
       <concept id="3922717397912187178" name="de.vimotest.viewmodel.structure.ImageSourceFeature" flags="ng" index="2mJbIq" />
+      <concept id="3922717397912196833" name="de.vimotest.viewmodel.structure.ImageSource" flags="ng" index="2mJlLh">
+        <child id="3426927311333626894" name="ref" index="28FJ0P" />
+      </concept>
       <concept id="5213916851000129487" name="de.vimotest.viewmodel.structure.CheckedFeature" flags="ng" index="C4FCf" />
       <concept id="5213916851000129488" name="de.vimotest.viewmodel.structure.VisibilityFeature" flags="ng" index="C4FCg" />
       <concept id="5213916851000129489" name="de.vimotest.viewmodel.structure.EnabledFeature" flags="ng" index="C4FCh" />
@@ -94,6 +101,18 @@
         <child id="777152910168882975" name="contents" index="103ZXF" />
       </concept>
       <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelContents" flags="ng" index="103ZXB" />
+      <concept id="2820520252859978186" name="de.vimotest.viewmodel.structure.ImageDefinitionRef" flags="ng" index="3eDL7N">
+        <reference id="2820520252859978187" name="image" index="3eDL7M" />
+      </concept>
+      <concept id="7497173622928201774" name="de.vimotest.viewmodel.structure.ImageDefinitionRegistry" flags="ng" index="1u6Luu">
+        <child id="3426927311333626907" name="closedSets" index="28FJ0w" />
+        <child id="7497173622928201831" name="images" index="1u6Lvn" />
+      </concept>
+      <concept id="7497173622928201775" name="de.vimotest.viewmodel.structure.ImageDefinition" flags="ng" index="1u6Luv">
+        <property id="3922717397912196834" name="sourcePath" index="2mJlLi" />
+        <property id="3016673643442476650" name="width" index="Lsnro" />
+        <property id="3016673643442476939" name="height" index="LsnsT" />
+      </concept>
     </language>
   </registry>
   <node concept="103ZX$" id="F907haLUeC">
@@ -120,6 +139,11 @@
         </node>
         <node concept="C4FCh" id="3pKiF2wQ5dm" role="2mJbI5" />
         <node concept="C4FCg" id="3pKiF2wQ5do" role="2mJbI6" />
+        <node concept="2mJlLh" id="2YeT3IB8PiU" role="28FbrT">
+          <node concept="3eDL7N" id="2YeT3IB8PiV" role="28FJ0P">
+            <ref role="3eDL7M" node="2YeT3IBbXGv" resolve="image_info" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -165,6 +189,90 @@
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="3JdhG1lU09I" role="DUiTU" />
       </node>
+    </node>
+  </node>
+  <node concept="1u6Luu" id="2YeT3IB8PiW">
+    <property role="TrG5h" value="Sandbox Images" />
+    <node concept="28FJ0O" id="2YeT3IBbXKs" role="28FJ0w">
+      <property role="TrG5h" value="updown" />
+      <node concept="3eDL7N" id="2YeT3IBcgjF" role="28FJ0D">
+        <ref role="3eDL7M" node="2YeT3IBbXGt" resolve="image_up" />
+      </node>
+      <node concept="3eDL7N" id="2YeT3IBcgjG" role="28FJ0D">
+        <ref role="3eDL7M" node="2YeT3IBbXGu" resolve="image_down" />
+      </node>
+    </node>
+    <node concept="1u6Luv" id="2YeT3IBbXGt" role="1u6Lvn">
+      <property role="TrG5h" value="image_up" />
+      <property role="2mJlLi" value="images/image_up.png" />
+      <property role="Lsnro" value="16" />
+      <property role="LsnsT" value="16" />
+    </node>
+    <node concept="1u6Luv" id="2YeT3IBbXGu" role="1u6Lvn">
+      <property role="TrG5h" value="image_down" />
+      <property role="2mJlLi" value="images/image_down.png" />
+      <property role="Lsnro" value="16" />
+      <property role="LsnsT" value="16" />
+    </node>
+    <node concept="1u6Luv" id="2YeT3IBbXGv" role="1u6Lvn">
+      <property role="TrG5h" value="image_info" />
+      <property role="2mJlLi" value="images/image_info.png" />
+      <property role="Lsnro" value="16" />
+      <property role="LsnsT" value="16" />
+    </node>
+    <node concept="1u6Luv" id="2YeT3IBbXGw" role="1u6Lvn">
+      <property role="TrG5h" value="image_plus" />
+      <property role="2mJlLi" value="images/image_plus.png" />
+      <property role="Lsnro" value="16" />
+      <property role="LsnsT" value="16" />
+    </node>
+    <node concept="1u6Luv" id="2YeT3IBbXGx" role="1u6Lvn">
+      <property role="TrG5h" value="image_star" />
+      <property role="2mJlLi" value="images/image_star.png" />
+      <property role="Lsnro" value="16" />
+      <property role="LsnsT" value="16" />
+    </node>
+    <node concept="1u6Luv" id="2YeT3IBbXGy" role="1u6Lvn">
+      <property role="TrG5h" value="image_warn" />
+      <property role="2mJlLi" value="images/image_warn.png" />
+      <property role="Lsnro" value="16" />
+      <property role="LsnsT" value="16" />
+    </node>
+    <node concept="1u6Luv" id="2YeT3IBbXGz" role="1u6Lvn">
+      <property role="TrG5h" value="image_active" />
+      <property role="2mJlLi" value="images/image_active.png" />
+      <property role="Lsnro" value="16" />
+      <property role="LsnsT" value="16" />
+    </node>
+    <node concept="1u6Luv" id="2YeT3IBbXG$" role="1u6Lvn">
+      <property role="TrG5h" value="image_circle" />
+      <property role="2mJlLi" value="images/image_circle.png" />
+      <property role="Lsnro" value="16" />
+      <property role="LsnsT" value="16" />
+    </node>
+    <node concept="1u6Luv" id="2YeT3IBbXG_" role="1u6Lvn">
+      <property role="TrG5h" value="image_remove" />
+      <property role="2mJlLi" value="images/image_remove.png" />
+      <property role="Lsnro" value="16" />
+      <property role="LsnsT" value="16" />
+    </node>
+    <node concept="1u6Luv" id="2YeT3IBbXGA" role="1u6Lvn">
+      <property role="TrG5h" value="image_favorite" />
+      <property role="2mJlLi" value="images/image_favorite.png" />
+      <property role="Lsnro" value="16" />
+      <property role="LsnsT" value="16" />
+    </node>
+    <node concept="1u6Luv" id="2YeT3IBbXGB" role="1u6Lvn">
+      <property role="TrG5h" value="image_inactive" />
+      <property role="2mJlLi" value="images/image_inactive.png" />
+      <property role="Lsnro" value="16" />
+      <property role="LsnsT" value="16" />
+    </node>
+    <node concept="1u6Luv" id="2YeT3IBbXGC" role="1u6Lvn">
+      <property role="TrG5h" value="image_triangle" />
+      <property role="2mJlLi" value="images/image_triangle.png" />
+      <property role="Lsnro" value="16" />
+      <property role="LsnsT" value="16" />
     </node>
   </node>
 </model>

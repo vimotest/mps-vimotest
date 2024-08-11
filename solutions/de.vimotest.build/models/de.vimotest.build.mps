@@ -678,7 +678,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="de.vimotest.widgetdsl.widgets" />
         <property role="3LESm3" value="f53d971e-2fbc-4c6a-85a7-f2a681f2712b" />
-        <property role="3vZFNd" value="3kCd1ud3JDD/compile_ext" />
+        <property role="3vZFNd" value="3kCd1ud3JDF/none" />
         <node concept="55IIr" id="220dcIkyAiR" role="3LF7KH">
           <node concept="2Ry0Ak" id="220dcIkyAiS" role="iGT6I">
             <property role="2Ry0Am" value="languages" />

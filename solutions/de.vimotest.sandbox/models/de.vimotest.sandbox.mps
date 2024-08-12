@@ -19,7 +19,7 @@
     </language>
     <language id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.testing">
       <concept id="3922717397912187313" name="de.vimotest.testing.structure.ImageSourceCheckValue" flags="ng" index="2mJbG1">
-        <reference id="9158006303244083218" name="expectedImage" index="1kGio$" />
+        <child id="173640931447457367" name="expectedImage" index="3n32fm" />
       </concept>
       <concept id="3922717397912187253" name="de.vimotest.testing.structure.ImageCheck" flags="ng" index="2mJbJ5">
         <child id="3922717397912187254" name="checks" index="2mJbJ6" />
@@ -82,7 +82,9 @@
         <child id="3922717397912187189" name="enabled" index="2mJbI5" />
         <child id="3922717397912187190" name="visibility" index="2mJbI6" />
       </concept>
-      <concept id="3922717397912187178" name="de.vimotest.viewmodel.structure.ImageSourceFeature" flags="ng" index="2mJbIq" />
+      <concept id="3922717397912187178" name="de.vimotest.viewmodel.structure.ImageSourceFeature" flags="ng" index="2mJbIq">
+        <reference id="173640931446787890" name="basedOnImageSet" index="3ncAEN" />
+      </concept>
       <concept id="3922717397912196833" name="de.vimotest.viewmodel.structure.ImageSource" flags="ng" index="2mJlLh">
         <child id="3426927311333626894" name="ref" index="28FJ0P" />
       </concept>
@@ -151,6 +153,19 @@
           </node>
         </node>
       </node>
+      <node concept="2mJbI3" id="9CTo7lpcp0" role="103ZUC">
+        <property role="TrG5h" value="MyUpDownImage" />
+        <node concept="2mJbIq" id="9CTo7lpcp2" role="2mJbI4">
+          <ref role="3ncAEN" node="2YeT3IBbXKs" resolve="updown" />
+        </node>
+        <node concept="C4FCh" id="9CTo7lpcp4" role="2mJbI5" />
+        <node concept="C4FCg" id="9CTo7lpcp6" role="2mJbI6" />
+        <node concept="2mJlLh" id="9CTo7lpcp8" role="28FbrT">
+          <node concept="3eDL7N" id="9CTo7lpcpa" role="28FJ0P">
+            <ref role="3eDL7M" node="2YeT3IBbXGt" resolve="image_up" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="30n1Qd" id="6fZwY6ifUAh">
@@ -196,13 +211,27 @@
           <ref role="30nzpS" node="3pKiF2wQ5di" resolve="MyImage" />
           <node concept="2mJbJ5" id="7WnLzoFF7Hf" role="30nDbQ">
             <node concept="2mJbG1" id="7WnLzoFGxRG" role="2mJbJ6">
-              <ref role="1kGio$" node="2YeT3IBbXGz" resolve="image_active" />
+              <node concept="3eDL7N" id="9CTo7lpJag" role="3n32fm">
+                <ref role="3eDL7M" node="2YeT3IBbXG_" resolve="image_remove" />
+              </node>
             </node>
             <node concept="35STUl" id="7WnLzoFO5sh" role="2mJbJ6">
               <property role="3XJMQh" value="true" />
             </node>
             <node concept="35STUn" id="7WnLzoFOKC0" role="2mJbJ6">
               <property role="3XJem9" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="DUd2R" id="9CTo7lpcpc" role="DUd56">
+        <node concept="30nzp_" id="9CTo7lpcpe" role="DUiSb">
+          <ref role="30nzpS" node="9CTo7lpcp0" resolve="MyUpDownImage" />
+          <node concept="2mJbJ5" id="9CTo7lpcph" role="30nDbQ">
+            <node concept="2mJbG1" id="9CTo7lpcpk" role="2mJbJ6">
+              <node concept="3eDL7N" id="9CTo7lpJaf" role="3n32fm">
+                <ref role="3eDL7M" node="2YeT3IBbXGt" resolve="image_up" />
+              </node>
             </node>
           </node>
         </node>

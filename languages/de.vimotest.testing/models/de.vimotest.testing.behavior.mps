@@ -902,12 +902,17 @@
                     </node>
                     <node concept="2OqwBi" id="7WnLzoFO$Pj" role="33vP2m">
                       <node concept="2OqwBi" id="7WnLzoFO$Pk" role="2Oq$k0">
-                        <node concept="2OqwBi" id="7WnLzoFO$Pl" role="2Oq$k0">
-                          <node concept="37vLTw" id="7WnLzoFO$Pm" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7WnLzoFOoYy" resolve="imageSourceCheckValue" />
+                        <node concept="2OqwBi" id="9CTo7lqCzL" role="2Oq$k0">
+                          <node concept="2OqwBi" id="7WnLzoFO$Pl" role="2Oq$k0">
+                            <node concept="37vLTw" id="7WnLzoFO$Pm" role="2Oq$k0">
+                              <ref role="3cqZAo" node="7WnLzoFOoYy" resolve="imageSourceCheckValue" />
+                            </node>
+                            <node concept="3TrEf2" id="7WnLzoFO$Pn" role="2OqNvi">
+                              <ref role="3Tt5mk" to="53m0:9CTo7lpcpn" resolve="expectedImage" />
+                            </node>
                           </node>
-                          <node concept="3TrEf2" id="7WnLzoFO$Pn" role="2OqNvi">
-                            <ref role="3Tt5mk" to="53m0:7WnLzoFDI0i" resolve="expectedImage" />
+                          <node concept="3TrEf2" id="9CTo7lqD1c" role="2OqNvi">
+                            <ref role="3Tt5mk" to="at53:2s$w3BDwT7b" resolve="image" />
                           </node>
                         </node>
                         <node concept="2qgKlT" id="7WnLzoFO$Po" role="2OqNvi">
@@ -947,12 +952,17 @@
                   <node concept="3x8VRR" id="7WnLzoFOq3I" role="2OqNvi" />
                 </node>
                 <node concept="2OqwBi" id="7WnLzoFOv1p" role="3uHU7w">
-                  <node concept="2OqwBi" id="7WnLzoFOuAs" role="2Oq$k0">
-                    <node concept="37vLTw" id="7WnLzoFOuAt" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7WnLzoFOoYy" resolve="imageSourceCheckValue" />
+                  <node concept="2OqwBi" id="9CTo7lqB_L" role="2Oq$k0">
+                    <node concept="2OqwBi" id="7WnLzoFOuAs" role="2Oq$k0">
+                      <node concept="37vLTw" id="7WnLzoFOuAt" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7WnLzoFOoYy" resolve="imageSourceCheckValue" />
+                      </node>
+                      <node concept="3TrEf2" id="7WnLzoFOuAu" role="2OqNvi">
+                        <ref role="3Tt5mk" to="53m0:9CTo7lpcpn" resolve="expectedImage" />
+                      </node>
                     </node>
-                    <node concept="3TrEf2" id="7WnLzoFOuAu" role="2OqNvi">
-                      <ref role="3Tt5mk" to="53m0:7WnLzoFDI0i" resolve="expectedImage" />
+                    <node concept="3TrEf2" id="9CTo7lqBXZ" role="2OqNvi">
+                      <ref role="3Tt5mk" to="at53:2s$w3BDwT7b" resolve="image" />
                     </node>
                   </node>
                   <node concept="3x8VRR" id="7WnLzoFOvfm" role="2OqNvi" />
@@ -1575,12 +1585,17 @@
           <node concept="3clFbS" id="7WnLzoFEQPv" role="3clFbx">
             <node concept="3clFbF" id="7WnLzoFETkf" role="3cqZAp">
               <node concept="37vLTI" id="7WnLzoFETwT" role="3clFbG">
-                <node concept="2OqwBi" id="7WnLzoFETM3" role="37vLTx">
-                  <node concept="37vLTw" id="7WnLzoFETzz" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7WnLzoFEQPk" resolve="imageCheckValue" />
+                <node concept="2OqwBi" id="9CTo7lqtLr" role="37vLTx">
+                  <node concept="2OqwBi" id="7WnLzoFETM3" role="2Oq$k0">
+                    <node concept="37vLTw" id="7WnLzoFETzz" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7WnLzoFEQPk" resolve="imageCheckValue" />
+                    </node>
+                    <node concept="3TrEf2" id="7WnLzoFEU3a" role="2OqNvi">
+                      <ref role="3Tt5mk" to="53m0:9CTo7lpcpn" resolve="expectedImage" />
+                    </node>
                   </node>
-                  <node concept="3TrEf2" id="7WnLzoFEU3a" role="2OqNvi">
-                    <ref role="3Tt5mk" to="53m0:7WnLzoFDI0i" resolve="expectedImage" />
+                  <node concept="3TrEf2" id="9CTo7lqufa" role="2OqNvi">
+                    <ref role="3Tt5mk" to="at53:2s$w3BDwT7b" resolve="image" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="7WnLzoFETke" role="37vLTJ">
@@ -1717,6 +1732,35 @@
         </node>
       </node>
       <node concept="3cqZAl" id="3pKiF2wNf6r" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="9CTo7loumL" role="13h7CS">
+      <property role="TrG5h" value="getClosedImageSet" />
+      <ref role="13i0hy" to="nrs2:9CTo7lomnO" resolve="getClosedImageSet" />
+      <node concept="3Tm1VV" id="9CTo7loumM" role="1B3o_S" />
+      <node concept="3clFbS" id="9CTo7loumP" role="3clF47">
+        <node concept="3clFbF" id="9CTo7lovaU" role="3cqZAp">
+          <node concept="2OqwBi" id="9CTo7lowu0" role="3clFbG">
+            <node concept="1PxgMI" id="9CTo7low9j" role="2Oq$k0">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="9CTo7lowfu" role="3oSUPX">
+                <ref role="cht4Q" to="at53:9CTo7lomnw" resolve="IDefinesImageSourceScope" />
+              </node>
+              <node concept="2OqwBi" id="9CTo7lovoo" role="1m5AlR">
+                <node concept="13iPFW" id="9CTo7lovaT" role="2Oq$k0" />
+                <node concept="2qgKlT" id="9CTo7lovz5" role="2OqNvi">
+                  <ref role="37wK5l" node="4jKdMMdJYzD" resolve="getWidgetToCheck" />
+                </node>
+              </node>
+            </node>
+            <node concept="2qgKlT" id="9CTo7lowHE" role="2OqNvi">
+              <ref role="37wK5l" to="nrs2:9CTo7lomnO" resolve="getClosedImageSet" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="9CTo7loumQ" role="3clF45">
+        <ref role="ehGHo" to="at53:2YeT3IB81gf" resolve="ClosedImageSet" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="3pKiF2wRg5J">

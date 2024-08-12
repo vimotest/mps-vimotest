@@ -916,6 +916,29 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="9CTo7lopcc" role="13h7CS">
+      <property role="TrG5h" value="getClosedImageSet" />
+      <ref role="13i0hy" node="9CTo7lomnO" resolve="getClosedImageSet" />
+      <node concept="3Tm1VV" id="9CTo7lopcd" role="1B3o_S" />
+      <node concept="3clFbS" id="9CTo7lopcg" role="3clF47">
+        <node concept="3clFbF" id="9CTo7lopFj" role="3cqZAp">
+          <node concept="2OqwBi" id="9CTo7los8i" role="3clFbG">
+            <node concept="2OqwBi" id="9CTo7lopS3" role="2Oq$k0">
+              <node concept="13iPFW" id="9CTo7lopFi" role="2Oq$k0" />
+              <node concept="3TrEf2" id="9CTo7lorJ5" role="2OqNvi">
+                <ref role="3Tt5mk" to="at53:3pKiF2wNf4O" resolve="imageSource" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="9CTo7loslJ" role="2OqNvi">
+              <ref role="3Tt5mk" to="at53:9CTo7lmCWM" resolve="basedOnImageSet" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="9CTo7lopch" role="3clF45">
+        <ref role="ehGHo" to="at53:2YeT3IB81gf" resolve="ClosedImageSet" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="3pKiF2wNJB_">
     <property role="3GE5qa" value="widgets.image" />
@@ -2109,6 +2132,23 @@
         <property role="TrG5h" value="alpha" />
         <node concept="10OMs4" id="3_3BZO9YIqa" role="1tU5fm" />
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="9CTo7lomnx">
+    <property role="3GE5qa" value="widgets.image" />
+    <ref role="13h7C2" to="at53:9CTo7lomnw" resolve="IDefinesImageSourceScope" />
+    <node concept="13i0hz" id="9CTo7lomnO" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getClosedImageSet" />
+      <node concept="3Tm1VV" id="9CTo7lomnP" role="1B3o_S" />
+      <node concept="3Tqbb2" id="9CTo7looAq" role="3clF45">
+        <ref role="ehGHo" to="at53:2YeT3IB81gf" resolve="ClosedImageSet" />
+      </node>
+      <node concept="3clFbS" id="9CTo7lomnR" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="9CTo7lomny" role="13h7CW">
+      <node concept="3clFbS" id="9CTo7lomnz" role="2VODD2" />
     </node>
   </node>
 </model>

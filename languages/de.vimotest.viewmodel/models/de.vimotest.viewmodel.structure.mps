@@ -278,6 +278,11 @@
     <property role="34LRSv" value="image source" />
     <property role="3GE5qa" value="features" />
     <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
+    <node concept="1TJgyj" id="9CTo7lmCWM" role="1TKVEi">
+      <property role="IQ2ns" value="173640931446787890" />
+      <property role="20kJfa" value="basedOnImageSet" />
+      <ref role="20lvS9" node="2YeT3IB81gf" resolve="ClosedImageSet" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3pKiF2wNf4N">
     <property role="EcuMT" value="3922717397912187187" />
@@ -313,6 +318,9 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3pKiF2wNhrx" resolve="ImageSource" />
     </node>
+    <node concept="PrWs8" id="9CTo7looDc" role="PzmwI">
+      <ref role="PrY4T" node="9CTo7lomnw" resolve="IDefinesImageSourceScope" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3pKiF2wNhrx">
     <property role="EcuMT" value="3922717397912196833" />
@@ -327,10 +335,8 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2s$w3BDwT7a" resolve="ImageDefinitionRef" />
     </node>
-    <node concept="1TJgyj" id="2YeT3IB81gw" role="1TKVEi">
-      <property role="IQ2ns" value="3426927311333626912" />
-      <property role="20kJfa" value="basedOnImageSet" />
-      <ref role="20lvS9" node="2YeT3IB81gf" resolve="ClosedImageSet" />
+    <node concept="PrWs8" id="9CTo7lomnv" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="6wbjV0Q45wJ">
@@ -445,6 +451,11 @@
     <node concept="PrWs8" id="2YeT3IB81gj" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="9CTo7lomnw">
+    <property role="EcuMT" value="173640931447236064" />
+    <property role="3GE5qa" value="widgets.image" />
+    <property role="TrG5h" value="IDefinesImageSourceScope" />
   </node>
 </model>
 

@@ -417,6 +417,9 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="3pKiF2wNf5v" resolve="IImageCheckValue" />
     </node>
+    <node concept="PrWs8" id="9CTo7lotny" role="PzmwI">
+      <ref role="PrY4T" to="at53:9CTo7lomnw" resolve="IDefinesImageSourceScope" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3pKiF2wNf6L">
     <property role="EcuMT" value="3922717397912187313" />
@@ -424,11 +427,12 @@
     <property role="34LRSv" value="image source" />
     <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
-    <node concept="1TJgyj" id="7WnLzoFDI0i" role="1TKVEi">
-      <property role="IQ2ns" value="9158006303244083218" />
+    <node concept="1TJgyj" id="9CTo7lpcpn" role="1TKVEi">
+      <property role="IQ2ns" value="173640931447457367" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="expectedImage" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="at53:6wbjV0Q45wJ" resolve="ImageDefinition" />
+      <ref role="20lvS9" to="at53:2s$w3BDwT7a" resolve="ImageDefinitionRef" />
     </node>
     <node concept="PrWs8" id="3pKiF2wNf6M" role="PzmwI">
       <ref role="PrY4T" node="3pKiF2wNf5v" resolve="IImageCheckValue" />

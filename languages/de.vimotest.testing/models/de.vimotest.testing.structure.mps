@@ -214,6 +214,9 @@
     <node concept="PrWs8" id="7WnLzoFMEDa" role="PzmwI">
       <ref role="PrY4T" node="3pKiF2wNf5v" resolve="IImageCheckValue" />
     </node>
+    <node concept="PrWs8" id="7WgsBLYoxwc" role="PzmwI">
+      <ref role="PrY4T" node="7WgsBLYmzis" resolve="IListViewCheckValue" />
+    </node>
     <node concept="1TJgyi" id="5VrLp2zpM0p" role="1TKVEl">
       <property role="IQ2nx" value="6835274084472266777" />
       <property role="TrG5h" value="expectedIsVisible" />
@@ -239,6 +242,9 @@
     </node>
     <node concept="PrWs8" id="7WnLzoFMFR0" role="PzmwI">
       <ref role="PrY4T" node="3pKiF2wNf5v" resolve="IImageCheckValue" />
+    </node>
+    <node concept="PrWs8" id="7WgsBLYoyba" role="PzmwI">
+      <ref role="PrY4T" node="7WgsBLYmzis" resolve="IListViewCheckValue" />
     </node>
   </node>
   <node concept="PlHQZ" id="69Ym88BeFj8">
@@ -436,6 +442,48 @@
     </node>
     <node concept="PrWs8" id="3pKiF2wNf6M" role="PzmwI">
       <ref role="PrY4T" node="3pKiF2wNf5v" resolve="IImageCheckValue" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7WgsBLYmzis">
+    <property role="EcuMT" value="9155943921465570460" />
+    <property role="TrG5h" value="IListViewCheckValue" />
+    <property role="3GE5qa" value="test.assert.listview" />
+    <node concept="PrWs8" id="7WgsBLYmzit" role="PrDN$">
+      <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7WgsBLYmziM">
+    <property role="EcuMT" value="9155943921465570482" />
+    <property role="TrG5h" value="ListViewCheck" />
+    <property role="34LRSv" value="check list view" />
+    <property role="3GE5qa" value="test.assert.listview" />
+    <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
+    <node concept="1TJgyj" id="7WgsBLYmziN" role="1TKVEi">
+      <property role="IQ2ns" value="9155943921465570483" />
+      <property role="20kJfa" value="checks" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="7WgsBLYmzis" resolve="IListViewCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7WgsBLYmzjC">
+    <property role="EcuMT" value="9155943921465570536" />
+    <property role="TrG5h" value="WidgetRowsCheckValue" />
+    <property role="34LRSv" value="widget rows" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="PrWs8" id="7WgsBLYp0da" role="PzmwI">
+      <ref role="PrY4T" node="7WgsBLYmzis" resolve="IListViewCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7WgsBLYmzjD">
+    <property role="EcuMT" value="9155943921465570537" />
+    <property role="TrG5h" value="SelectedRowCheckValue" />
+    <property role="34LRSv" value="selected row" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="PrWs8" id="7WgsBLYp0cq" role="PzmwI">
+      <ref role="PrY4T" node="7WgsBLYmzis" resolve="IListViewCheckValue" />
     </node>
   </node>
 </model>

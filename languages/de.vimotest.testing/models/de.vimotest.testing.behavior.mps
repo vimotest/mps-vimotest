@@ -33,6 +33,7 @@
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
+      <concept id="1225194628440" name="jetbrains.mps.lang.behavior.structure.SuperNodeExpression" flags="nn" index="13iAh5" />
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -988,6 +989,19 @@
       </node>
       <node concept="3cqZAl" id="7WnLzoFMGe1" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="7WgsBLYoyYn" role="13h7CS">
+      <property role="TrG5h" value="applyOnListView" />
+      <ref role="13i0hy" node="7WgsBLYmziG" resolve="applyOnListView" />
+      <node concept="3Tm1VV" id="7WgsBLYoyYq" role="1B3o_S" />
+      <node concept="3clFbS" id="7WgsBLYoyYt" role="3clF47" />
+      <node concept="37vLTG" id="7WgsBLYoyYu" role="3clF46">
+        <property role="TrG5h" value="listViewEditorCell" />
+        <node concept="3uibUv" id="7WgsBLYoyYv" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="7WgsBLYoyYw" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="3CJ09vZN9UF">
     <property role="3GE5qa" value="test.assert._checkvalues" />
@@ -1208,6 +1222,19 @@
         </node>
       </node>
       <node concept="3cqZAl" id="7WnLzoFMEVI" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="7WgsBLYoxQc" role="13h7CS">
+      <property role="TrG5h" value="applyOnListView" />
+      <ref role="13i0hy" node="7WgsBLYmziG" resolve="applyOnListView" />
+      <node concept="3Tm1VV" id="7WgsBLYoxQf" role="1B3o_S" />
+      <node concept="3clFbS" id="7WgsBLYoxQi" role="3clF47" />
+      <node concept="37vLTG" id="7WgsBLYoxQj" role="3clF46">
+        <property role="TrG5h" value="listViewEditorCell" />
+        <node concept="3uibUv" id="7WgsBLYoxQk" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="7WgsBLYoxQl" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="7H4Lpx0iNql">
@@ -1789,6 +1816,184 @@
         </node>
       </node>
       <node concept="3cqZAl" id="3pKiF2wRg6b" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7WgsBLYmziD">
+    <property role="TrG5h" value="IListViewCheckValue_Behavior" />
+    <property role="3GE5qa" value="test.assert.listview" />
+    <ref role="13h7C2" to="53m0:7WgsBLYmzis" resolve="IListViewCheckValue" />
+    <node concept="13hLZK" id="7WgsBLYmziE" role="13h7CW">
+      <node concept="3clFbS" id="7WgsBLYmziF" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7WgsBLYmziG" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="applyOnListView" />
+      <node concept="37vLTG" id="7WgsBLYmziH" role="3clF46">
+        <property role="TrG5h" value="listViewEditorCell" />
+        <node concept="3uibUv" id="7WgsBLYmziI" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7WgsBLYmziJ" role="1B3o_S" />
+      <node concept="3cqZAl" id="7WgsBLYmziK" role="3clF45" />
+      <node concept="3clFbS" id="7WgsBLYmziL" role="3clF47" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7WgsBLYmziT">
+    <property role="TrG5h" value="ListViewCheck_Behavior" />
+    <property role="3GE5qa" value="test.assert.listview" />
+    <ref role="13h7C2" to="53m0:7WgsBLYmziM" resolve="ListViewCheck" />
+    <node concept="13hLZK" id="7WgsBLYmziU" role="13h7CW">
+      <node concept="3clFbS" id="7WgsBLYmziV" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7WgsBLYmziX" role="13h7CS">
+      <property role="TrG5h" value="applyOnWidget" />
+      <ref role="13i0hy" node="2Yd1qrJP3FF" />
+      <node concept="3Tm1VV" id="7WgsBLYmziY" role="1B3o_S" />
+      <node concept="3clFbS" id="7WgsBLYmziZ" role="3clF47">
+        <node concept="3clFbF" id="7WgsBLYmzj0" role="3cqZAp">
+          <node concept="2OqwBi" id="7WgsBLYmzj1" role="3clFbG">
+            <node concept="2es0OD" id="7WgsBLYmzj2" role="2OqNvi">
+              <node concept="1bVj0M" id="7WgsBLYmzj3" role="23t8la">
+                <node concept="3clFbS" id="7WgsBLYmzj4" role="1bW5cS">
+                  <node concept="3clFbF" id="7WgsBLYmzj5" role="3cqZAp">
+                    <node concept="2OqwBi" id="7WgsBLYmzj6" role="3clFbG">
+                      <node concept="37vLTw" id="7WgsBLYmzj7" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7WgsBLYmzja" resolve="it" />
+                      </node>
+                      <node concept="2qgKlT" id="7WgsBLYmzj8" role="2OqNvi">
+                        <ref role="37wK5l" node="7WgsBLYmziG" resolve="applyOnListView" />
+                        <node concept="37vLTw" id="7WgsBLYmzj9" role="37wK5m">
+                          <ref role="3cqZAo" node="7WgsBLYmzje" resolve="editorCell" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="gl6BB" id="7WgsBLYmzja" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="7WgsBLYmzjb" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7WgsBLYmzjc" role="2Oq$k0">
+              <node concept="13iPFW" id="7WgsBLYmzjd" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="7WgsBLYnQVU" role="2OqNvi">
+                <ref role="3TtcxE" to="53m0:7WgsBLYmziN" resolve="checks" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7WgsBLYmzje" role="3clF46">
+        <property role="TrG5h" value="editorCell" />
+        <node concept="3uibUv" id="7WgsBLYmzjf" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7WgsBLYmzjg" role="3clF46">
+        <property role="TrG5h" value="widget" />
+        <node concept="3Tqbb2" id="7WgsBLYmzjh" role="1tU5fm">
+          <ref role="ehGHo" to="at53:F907haLIRF" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="7WgsBLYmzji" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="7WgsBLYmzjj" role="13h7CS">
+      <property role="TrG5h" value="createEditorCellForCheck" />
+      <ref role="13i0hy" node="3CJ09vZMLMB" />
+      <node concept="3Tm1VV" id="7WgsBLYmzjk" role="1B3o_S" />
+      <node concept="3clFbS" id="7WgsBLYmzjl" role="3clF47">
+        <node concept="3SKdUt" id="7WgsBLYmzjm" role="3cqZAp">
+          <node concept="1PaTwC" id="7WgsBLYmzjn" role="1aUNEU">
+            <node concept="3oM_SD" id="7WgsBLYmzjo" role="1PaTwD">
+              <property role="3oM_SC" value="TODO:" />
+            </node>
+            <node concept="3oM_SD" id="7WgsBLYmzjp" role="1PaTwD">
+              <property role="3oM_SC" value="create" />
+            </node>
+            <node concept="3oM_SD" id="7WgsBLYmzjq" role="1PaTwD">
+              <property role="3oM_SC" value="custom" />
+            </node>
+            <node concept="3oM_SD" id="7WgsBLYmzjr" role="1PaTwD">
+              <property role="3oM_SC" value="cell" />
+            </node>
+            <node concept="3oM_SD" id="7WgsBLYmzjs" role="1PaTwD">
+              <property role="3oM_SC" value="handling" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7WgsBLYmzjt" role="3cqZAp">
+          <node concept="2OqwBi" id="7WgsBLYmzju" role="3clFbG">
+            <node concept="13iAh5" id="7WgsBLYmzjv" role="2Oq$k0" />
+            <node concept="2qgKlT" id="7WgsBLYmzjw" role="2OqNvi">
+              <ref role="37wK5l" node="3CJ09vZMLMB" />
+              <node concept="37vLTw" id="7WgsBLYmzjx" role="37wK5m">
+                <ref role="3cqZAo" node="7WgsBLYmzjz" resolve="context" />
+              </node>
+              <node concept="37vLTw" id="7WgsBLYmzjy" role="37wK5m">
+                <ref role="3cqZAo" node="7WgsBLYmzj_" resolve="widgetNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7WgsBLYmzjz" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="7WgsBLYmzj$" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7WgsBLYmzj_" role="3clF46">
+        <property role="TrG5h" value="widgetNode" />
+        <node concept="3Tqbb2" id="7WgsBLYmzjA" role="1tU5fm">
+          <ref role="ehGHo" to="at53:F907haLIRF" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="7WgsBLYmzjB" role="3clF45">
+        <ref role="3uigEE" to="f4zo:~EditorCell" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="7WgsBLYp0cr">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="13h7C2" to="53m0:7WgsBLYmzjD" resolve="SelectedRowCheckValue" />
+    <node concept="13hLZK" id="7WgsBLYp0cs" role="13h7CW">
+      <node concept="3clFbS" id="7WgsBLYp0ct" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7WgsBLYp0cI" role="13h7CS">
+      <property role="TrG5h" value="applyOnListView" />
+      <ref role="13i0hy" node="7WgsBLYmziG" resolve="applyOnListView" />
+      <node concept="3Tm1VV" id="7WgsBLYp0cL" role="1B3o_S" />
+      <node concept="3clFbS" id="7WgsBLYp0cO" role="3clF47" />
+      <node concept="37vLTG" id="7WgsBLYp0cP" role="3clF46">
+        <property role="TrG5h" value="listViewEditorCell" />
+        <node concept="3uibUv" id="7WgsBLYp0cQ" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="7WgsBLYp0cR" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7WgsBLYp0db">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="13h7C2" to="53m0:7WgsBLYmzjC" resolve="WidgetRowsCheckValue" />
+    <node concept="13hLZK" id="7WgsBLYp0dc" role="13h7CW">
+      <node concept="3clFbS" id="7WgsBLYp0dd" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7WgsBLYp0du" role="13h7CS">
+      <property role="TrG5h" value="applyOnListView" />
+      <ref role="13i0hy" node="7WgsBLYmziG" resolve="applyOnListView" />
+      <node concept="3Tm1VV" id="7WgsBLYp0dx" role="1B3o_S" />
+      <node concept="3clFbS" id="7WgsBLYp0d$" role="3clF47" />
+      <node concept="37vLTG" id="7WgsBLYp0d_" role="3clF46">
+        <property role="TrG5h" value="listViewEditorCell" />
+        <node concept="3uibUv" id="7WgsBLYp0dA" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="7WgsBLYp0dB" role="3clF45" />
     </node>
   </node>
 </model>

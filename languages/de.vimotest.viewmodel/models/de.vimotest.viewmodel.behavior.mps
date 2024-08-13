@@ -42,6 +42,7 @@
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
+      <concept id="1225194628440" name="jetbrains.mps.lang.behavior.structure.SuperNodeExpression" flags="nn" index="13iAh5" />
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -216,6 +217,9 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -267,9 +271,22 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -2149,6 +2166,70 @@
     </node>
     <node concept="13hLZK" id="9CTo7lomny" role="13h7CW">
       <node concept="3clFbS" id="9CTo7lomnz" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7WgsBLYmzi4">
+    <property role="TrG5h" value="ListViewWidget_Behavior" />
+    <property role="3GE5qa" value="widgets.structures" />
+    <ref role="13h7C2" to="at53:7WgsBLYmzhU" resolve="ListViewWidget" />
+    <node concept="13hLZK" id="7WgsBLYmzi5" role="13h7CW">
+      <node concept="3clFbS" id="7WgsBLYmzi6" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7WgsBLYmzi7" role="13h7CS">
+      <property role="TrG5h" value="createEditorCell" />
+      <ref role="13i0hy" node="6mWHjmRL0Kv" />
+      <node concept="3Tm1VV" id="7WgsBLYmzi8" role="1B3o_S" />
+      <node concept="3clFbS" id="7WgsBLYmzi9" role="3clF47">
+        <node concept="3SKdUt" id="7WgsBLYmzia" role="3cqZAp">
+          <node concept="1PaTwC" id="7WgsBLYmzib" role="1aUNEU">
+            <node concept="3oM_SD" id="7WgsBLYmzic" role="1PaTwD">
+              <property role="3oM_SC" value="TODO:" />
+            </node>
+            <node concept="3oM_SD" id="7WgsBLYmzid" role="1PaTwD">
+              <property role="3oM_SC" value="return" />
+            </node>
+            <node concept="3oM_SD" id="7WgsBLYmzie" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="7WgsBLYmzif" role="1PaTwD">
+              <property role="3oM_SC" value="EditorCell" />
+            </node>
+            <node concept="3oM_SD" id="7WgsBLYmzig" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="7WgsBLYmzih" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="7WgsBLYmzii" role="1PaTwD">
+              <property role="3oM_SC" value="ListView" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7WgsBLYmzij" role="3cqZAp">
+          <node concept="15s5l7" id="7WgsBLYmzik" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_CLASS=&quot;class jetbrains.mps.errors.item.UnresolvedReferenceReportItem&quot;;FLAVOUR_MESSAGE=&quot;Unresolved reference: createEditorCell&quot;;FLAVOUR_NODE_FEATURE=&quot;baseMethodDeclaration&quot;;" />
+            <property role="huDt6" value="Unresolved reference: createEditorCell" />
+          </node>
+          <node concept="2OqwBi" id="7WgsBLYmzil" role="3clFbG">
+            <node concept="13iAh5" id="7WgsBLYmzim" role="2Oq$k0" />
+            <node concept="2qgKlT" id="7WgsBLYmzin" role="2OqNvi">
+              <ref role="37wK5l" node="6mWHjmRL0Kv" />
+              <node concept="37vLTw" id="7WgsBLYmzio" role="37wK5m">
+                <ref role="3cqZAo" node="7WgsBLYmzip" resolve="context" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7WgsBLYmzip" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="7WgsBLYmziq" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="7WgsBLYmzir" role="3clF45">
+        <ref role="3uigEE" to="f4zo:~EditorCell" />
+      </node>
     </node>
   </node>
 </model>

@@ -1342,5 +1342,40 @@
       <node concept="2iRfu4" id="7WnLzoFDIhf" role="2iSdaV" />
     </node>
   </node>
+  <node concept="22mcaB" id="7WgsBLYmziu">
+    <property role="TrG5h" value="ListViewCheck_Inspector_EC" />
+    <property role="3GE5qa" value="test.assert.listview" />
+    <ref role="aqKnT" to="53m0:7WgsBLYmzis" resolve="IListViewCheckValue" />
+    <node concept="22hDWj" id="7WgsBLYmziv" role="22hAXT" />
+    <node concept="2VfDsV" id="7WgsBLYmziw" role="3ft7WO">
+      <node concept="1GpqWn" id="7WgsBLYmzix" role="1Go12V">
+        <node concept="3clFbS" id="7WgsBLYmziy" role="2VODD2">
+          <node concept="3clFbF" id="7WgsBLYmziz" role="3cqZAp">
+            <node concept="3fqX7Q" id="7WgsBLYmzi$" role="3clFbG">
+              <node concept="2YIFZM" id="7WgsBLYmzi_" role="3fr31v">
+                <ref role="37wK5l" node="2_MKLxJcA3M" />
+                <ref role="1Pybhc" node="2_MKLxJcA2h" />
+                <node concept="1GpqW3" id="7WgsBLYmziA" role="37wK5m" />
+                <node concept="3bvxqY" id="7WgsBLYmziB" role="37wK5m" />
+                <node concept="1J7kdh" id="7WgsBLYmziC" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="7WgsBLYmziO">
+    <property role="TrG5h" value="ListViewCheck_Inspector_EC" />
+    <property role="3GE5qa" value="test.assert.listview" />
+    <ref role="1XX52x" to="53m0:7WgsBLYmziM" resolve="ListViewCheck" />
+    <node concept="1PE4EZ" id="7WgsBLYmziQ" role="1PM95z">
+      <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_EC" />
+    </node>
+    <node concept="3F2HdR" id="7WgsBLYmziR" role="2wV5jI">
+      <ref role="1NtTu8" to="53m0:7WgsBLYmziN" resolve="checks" />
+      <node concept="2iRkQZ" id="7WgsBLYmziS" role="2czzBx" />
+    </node>
+  </node>
 </model>
 

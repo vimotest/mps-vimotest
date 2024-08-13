@@ -113,5 +113,37 @@
     <property role="2WVz4g" value="I" />
     <property role="3yYw5D" value="fLwANPs/magenta" />
   </node>
+  <node concept="2WVz3F" id="7WgsBLYmiN5">
+    <property role="103t_X" value="widgets" />
+    <property role="3GE5qa" value="widgets" />
+    <property role="TrG5h" value="ListView" />
+    <property role="2SiFfI" value="list view" />
+    <node concept="2WVz4l" id="7WgsBLYmyp3" role="2WV$Zc">
+      <ref role="2WVz4k" node="1Yc3x6zoTLW" resolve="Visibility" />
+    </node>
+    <node concept="2WVz4l" id="7WgsBLYmyp4" role="2WV$Zc">
+      <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
+    </node>
+    <node concept="2WVz4l" id="7WgsBLYp0cl" role="2WV$Zc">
+      <ref role="2WVz4k" node="7WgsBLYmys4" resolve="WidgetRows" />
+    </node>
+    <node concept="2WVz4l" id="7WgsBLYp0cm" role="2WV$Zc">
+      <ref role="2WVz4k" node="7WgsBLYmzhB" resolve="SelectedRow" />
+    </node>
+  </node>
+  <node concept="2WVz3E" id="7WgsBLYmys4">
+    <property role="3GE5qa" value="features" />
+    <property role="TrG5h" value="WidgetRows" />
+    <property role="2WV$r6" value="widget rows" />
+    <property role="2WVz4g" value="r" />
+    <property role="3yYw5D" value="fLJRk5B/darkGray" />
+  </node>
+  <node concept="2WVz3E" id="7WgsBLYmzhB">
+    <property role="3GE5qa" value="features" />
+    <property role="TrG5h" value="SelectedRow" />
+    <property role="2WV$r6" value="selected row" />
+    <property role="2WVz4g" value="s" />
+    <property role="3yYw5D" value="fLwANPp/orange" />
+  </node>
 </model>
 

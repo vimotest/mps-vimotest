@@ -1398,6 +1398,19 @@
       <node concept="3F1sOY" id="7WgsBLYvZSX" role="3EZMnx">
         <ref role="1NtTu8" to="at53:7WgsBLYvZSV" resolve="widgetRows" />
       </node>
+      <node concept="3EZMnI" id="7WgsBLYxJXE" role="3EZMnx">
+        <node concept="3EZMnI" id="7WgsBLYy0Eb" role="3EZMnx">
+          <node concept="2iRfu4" id="7WgsBLYy0Ec" role="2iSdaV" />
+          <node concept="3F0ifn" id="7WgsBLYxJXN" role="3EZMnx">
+            <property role="3F0ifm" value="cell type:" />
+          </node>
+          <node concept="3F1sOY" id="7WgsBLYxJXK" role="3EZMnx">
+            <ref role="1NtTu8" to="at53:7WgsBLYxJXy" resolve="cellWidgetType" />
+          </node>
+        </node>
+        <node concept="VPM3Z" id="7WgsBLYxJXG" role="3F10Kt" />
+        <node concept="2iRfu4" id="7WgsBLYxJXJ" role="2iSdaV" />
+      </node>
       <node concept="3F1sOY" id="7WgsBLYvZT0" role="3EZMnx">
         <ref role="1NtTu8" to="at53:7WgsBLYqF$p" resolve="selectedRow" />
       </node>

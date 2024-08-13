@@ -498,6 +498,13 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7WgsBLYmzhC" resolve="WidgetRowsFeature" />
     </node>
+    <node concept="1TJgyj" id="7WgsBLYxJXy" role="1TKVEi">
+      <property role="IQ2ns" value="9155943921468505954" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="cellWidgetType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="F907haLIRF" resolve="ViewWidget" />
+    </node>
     <node concept="1TJgyj" id="7WgsBLYqF$p" role="1TKVEi">
       <property role="IQ2ns" value="9155943921466652953" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

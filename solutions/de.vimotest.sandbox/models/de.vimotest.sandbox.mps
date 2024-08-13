@@ -70,6 +70,15 @@
       </concept>
     </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
+      <concept id="9155943921465570426" name="de.vimotest.viewmodel.structure.ListViewWidget" flags="ng" index="1i$o6">
+        <child id="9155943921465570428" name="enabled" index="1i$o0" />
+        <child id="9155943921465570427" name="visibility" index="1i$o7" />
+        <child id="9155943921468046907" name="widgetRows" index="1rSL7" />
+        <child id="9155943921466652953" name="selectedRow" index="1uGH_" />
+        <child id="9155943921468505954" name="cellWidgetType" index="1_COu" />
+      </concept>
+      <concept id="9155943921465570408" name="de.vimotest.viewmodel.structure.WidgetRowsFeature" flags="ng" index="1i$ok" />
+      <concept id="9155943921465570409" name="de.vimotest.viewmodel.structure.SelectedRowFeature" flags="ng" index="1i$ol" />
       <concept id="885291782481719619" name="de.vimotest.viewmodel.structure.ViewWidgetFeature" flags="ng" index="25b05G">
         <property id="5555266676524595291" name="supported" index="2VM7R0" />
       </concept>
@@ -163,6 +172,42 @@
         <node concept="2mJlLh" id="9CTo7lpcp8" role="28FbrT">
           <node concept="3eDL7N" id="9CTo7lpcpa" role="28FJ0P">
             <ref role="3eDL7M" node="2YeT3IBbXGt" resolve="image_up" />
+          </node>
+        </node>
+      </node>
+      <node concept="1i$o6" id="7WgsBLYysIb" role="103ZUC">
+        <property role="TrG5h" value="MyListOfLabel" />
+        <node concept="V3ZfZ" id="7WgsBLYysIc" role="1_COu">
+          <property role="TrG5h" value="listCell" />
+          <property role="3mJ_rA" value="Inner Value" />
+          <node concept="V3Zf6" id="7WgsBLYysIm" role="V3ZfK">
+            <property role="2VM7R0" value="true" />
+          </node>
+          <node concept="C4FCh" id="7WgsBLYysIn" role="V3ZfL" />
+          <node concept="C4FCg" id="7WgsBLYysIo" role="V3ZfM" />
+        </node>
+        <node concept="C4FCg" id="7WgsBLYysIe" role="1i$o7" />
+        <node concept="C4FCh" id="7WgsBLYysIg" role="1i$o0" />
+        <node concept="1i$ok" id="7WgsBLYysIi" role="1rSL7" />
+        <node concept="1i$ol" id="7WgsBLYysIk" role="1uGH_" />
+      </node>
+      <node concept="1i$o6" id="7WgsBLYyPze" role="103ZUC">
+        <property role="TrG5h" value="MyListOfImages" />
+        <node concept="C4FCg" id="7WgsBLYyPzj" role="1i$o7" />
+        <node concept="C4FCh" id="7WgsBLYyPzk" role="1i$o0" />
+        <node concept="1i$ok" id="7WgsBLYyPzl" role="1rSL7" />
+        <node concept="1i$ol" id="7WgsBLYyPzm" role="1uGH_" />
+        <node concept="2mJbI3" id="7WgsBLYyPzo" role="1_COu">
+          <property role="TrG5h" value="cell" />
+          <node concept="2mJbIq" id="7WgsBLYyPzq" role="2mJbI4">
+            <property role="2VM7R0" value="true" />
+          </node>
+          <node concept="C4FCh" id="7WgsBLYyPzs" role="2mJbI5" />
+          <node concept="C4FCg" id="7WgsBLYyPzu" role="2mJbI6" />
+          <node concept="2mJlLh" id="7WgsBLYyPzw" role="28FbrT">
+            <node concept="3eDL7N" id="7WgsBLYyPzy" role="28FJ0P">
+              <ref role="3eDL7M" node="2YeT3IBbXGz" resolve="image_active" />
+            </node>
           </node>
         </node>
       </node>

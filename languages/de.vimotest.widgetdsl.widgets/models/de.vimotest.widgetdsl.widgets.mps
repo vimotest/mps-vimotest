@@ -125,6 +125,7 @@
       <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
     </node>
     <node concept="2WVz4l" id="7WgsBLYp0cl" role="2WV$Zc">
+      <property role="3dRBvX" value="true" />
       <ref role="2WVz4k" node="7WgsBLYmys4" resolve="WidgetRows" />
     </node>
     <node concept="2WVz4l" id="7WgsBLYp0cm" role="2WV$Zc">

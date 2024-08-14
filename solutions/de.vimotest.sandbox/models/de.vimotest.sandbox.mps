@@ -77,9 +77,12 @@
         <child id="9155943921466652953" name="selectedRow" index="1uGH_" />
         <child id="9155943921468505954" name="cellWidgetType" index="1_COu" />
       </concept>
-      <concept id="9155943921465570408" name="de.vimotest.viewmodel.structure.WidgetRowsFeature" flags="ng" index="1i$ok" />
+      <concept id="9155943921465570408" name="de.vimotest.viewmodel.structure.WidgetRowsFeature" flags="ng" index="1i$ok">
+        <property id="3315326490838248423" name="defaultHeader" index="3AQkK7" />
+      </concept>
       <concept id="9155943921465570409" name="de.vimotest.viewmodel.structure.SelectedRowFeature" flags="ng" index="1i$ol" />
       <concept id="885291782481719619" name="de.vimotest.viewmodel.structure.ViewWidgetFeature" flags="ng" index="25b05G">
+        <property id="5555266676524596437" name="inherentSupport" index="2VM7_e" />
         <property id="5555266676524595291" name="supported" index="2VM7R0" />
       </concept>
       <concept id="3426927311333626895" name="de.vimotest.viewmodel.structure.ClosedImageSet" flags="ng" index="28FJ0O">
@@ -188,14 +191,21 @@
         </node>
         <node concept="C4FCg" id="7WgsBLYysIe" role="1i$o7" />
         <node concept="C4FCh" id="7WgsBLYysIg" role="1i$o0" />
-        <node concept="1i$ok" id="7WgsBLYysIi" role="1rSL7" />
+        <node concept="1i$ok" id="7WgsBLYysIi" role="1rSL7">
+          <property role="2VM7R0" value="true" />
+          <property role="3AQkK7" value="My Header" />
+          <property role="2VM7_e" value="true" />
+        </node>
         <node concept="1i$ol" id="7WgsBLYysIk" role="1uGH_" />
       </node>
       <node concept="1i$o6" id="7WgsBLYyPze" role="103ZUC">
         <property role="TrG5h" value="MyListOfImages" />
         <node concept="C4FCg" id="7WgsBLYyPzj" role="1i$o7" />
         <node concept="C4FCh" id="7WgsBLYyPzk" role="1i$o0" />
-        <node concept="1i$ok" id="7WgsBLYyPzl" role="1rSL7" />
+        <node concept="1i$ok" id="7WgsBLYyPzl" role="1rSL7">
+          <property role="3AQkK7" value="My Image" />
+          <property role="2VM7_e" value="true" />
+        </node>
         <node concept="1i$ol" id="7WgsBLYyPzm" role="1uGH_" />
         <node concept="2mJbI3" id="7WgsBLYyPzo" role="1_COu">
           <property role="TrG5h" value="cell" />

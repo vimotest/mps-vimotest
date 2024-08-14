@@ -111,6 +111,7 @@
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
+      <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
       <concept id="1215007762405" name="jetbrains.mps.lang.editor.structure.FloatStyleClassItem" flags="ln" index="3$6MrZ">
         <property id="1215007802031" name="value" index="3$6WeP" />
       </concept>
@@ -780,6 +781,15 @@
     <node concept="PMmxH" id="9CTo7lmDcV" role="2wV5jI">
       <ref role="PMmxG" node="9CTo7lmDcx" resolve="ViewWidgetFeature_Supported_EC" />
     </node>
+    <node concept="3EZMnI" id="2S2pY38Sm2L" role="6VMZX">
+      <node concept="2iRfu4" id="2S2pY38Sm2M" role="2iSdaV" />
+      <node concept="3F0ifn" id="2S2pY38Sm2O" role="3EZMnx">
+        <property role="3F0ifm" value="inherent support:" />
+      </node>
+      <node concept="3F0A7n" id="2S2pY38Sm2R" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:4OohpJQO3Nl" resolve="inherentSupport" />
+      </node>
+    </node>
   </node>
   <node concept="PKFIW" id="6eqMDi1ocJH">
     <property role="TrG5h" value="CheckedFeature_Indication_EC" />
@@ -1389,30 +1399,78 @@
     </node>
     <node concept="3EZMnI" id="7WgsBLYmzi0" role="2wV5jI">
       <node concept="2EHx9g" id="7WgsBLYmzi1" role="2iSdaV" />
+      <node concept="3F1sOY" id="7WgsBLYvZSX" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:7WgsBLYvZSV" resolve="widgetRows" />
+      </node>
+      <node concept="3EZMnI" id="7WgsBLYxJXE" role="3EZMnx">
+        <node concept="VPM3Z" id="7WgsBLYxJXG" role="3F10Kt" />
+        <node concept="3vyZuw" id="2S2pY38Txeg" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="7WgsBLYxJXN" role="3EZMnx">
+          <property role="3F0ifm" value="cell type:" />
+        </node>
+        <node concept="3F1sOY" id="7WgsBLYxJXK" role="3EZMnx">
+          <ref role="1NtTu8" to="at53:7WgsBLYxJXy" resolve="cellWidgetType" />
+        </node>
+        <node concept="l2Vlx" id="2S2pY38Twhs" role="2iSdaV" />
+        <node concept="1iCGBv" id="2S2pY38Tc4Q" role="3EZMnx">
+          <ref role="1NtTu8" to="at53:7WgsBLYxJXy" resolve="cellWidgetType" />
+          <node concept="1sVBvm" id="2S2pY38Tc4S" role="1sWHZn">
+            <node concept="PMmxH" id="2S2pY38Tc4W" role="2wV5jI">
+              <ref role="PMmxG" node="L9c2Y9pjGJ" resolve="ViewWidget_Inspector_EC" />
+            </node>
+          </node>
+          <node concept="pkWqt" id="2S2pY38Tc4X" role="pqm2j">
+            <node concept="3clFbS" id="2S2pY38Tc4Y" role="2VODD2">
+              <node concept="3clFbF" id="2S2pY38Tc56" role="3cqZAp">
+                <node concept="2OqwBi" id="2S2pY38TdA9" role="3clFbG">
+                  <node concept="2OqwBi" id="2S2pY38Tcwh" role="2Oq$k0">
+                    <node concept="pncrf" id="2S2pY38Tc55" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="2S2pY38TcWh" role="2OqNvi">
+                      <ref role="3Tt5mk" to="at53:7WgsBLYxJXy" resolve="cellWidgetType" />
+                    </node>
+                  </node>
+                  <node concept="3x8VRR" id="2S2pY38Te4O" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="pVoyu" id="2S2pY38Tw_y" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="2S2pY38TwAk" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="2S2pY38Rqh6" role="3EZMnx">
+        <node concept="3EZMnI" id="2S2pY38Rqh7" role="3EZMnx">
+          <node concept="2iRfu4" id="2S2pY38Rqh8" role="2iSdaV" />
+          <node concept="3F0ifn" id="2S2pY38Rqh9" role="3EZMnx">
+            <property role="3F0ifm" value="default header" />
+          </node>
+          <node concept="1iCGBv" id="2S2pY38Rqhe" role="3EZMnx">
+            <ref role="1NtTu8" to="at53:7WgsBLYvZSV" resolve="widgetRows" />
+            <node concept="1sVBvm" id="2S2pY38Rqhg" role="1sWHZn">
+              <node concept="3F0A7n" id="2S2pY38Rqhk" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="at53:2S2pY38QMJB" resolve="defaultHeader" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="VPM3Z" id="2S2pY38Rqhb" role="3F10Kt" />
+        <node concept="2iRfu4" id="2S2pY38Rqhc" role="2iSdaV" />
+      </node>
+      <node concept="3F1sOY" id="7WgsBLYvZT0" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:7WgsBLYqF$p" resolve="selectedRow" />
+      </node>
       <node concept="3F1sOY" id="7WgsBLYmzi2" role="3EZMnx">
         <ref role="1NtTu8" to="at53:7WgsBLYmzhV" resolve="visibility" />
       </node>
       <node concept="3F1sOY" id="7WgsBLYmzi3" role="3EZMnx">
         <ref role="1NtTu8" to="at53:7WgsBLYmzhW" resolve="enabled" />
-      </node>
-      <node concept="3F1sOY" id="7WgsBLYvZSX" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:7WgsBLYvZSV" resolve="widgetRows" />
-      </node>
-      <node concept="3EZMnI" id="7WgsBLYxJXE" role="3EZMnx">
-        <node concept="3EZMnI" id="7WgsBLYy0Eb" role="3EZMnx">
-          <node concept="2iRfu4" id="7WgsBLYy0Ec" role="2iSdaV" />
-          <node concept="3F0ifn" id="7WgsBLYxJXN" role="3EZMnx">
-            <property role="3F0ifm" value="cell type:" />
-          </node>
-          <node concept="3F1sOY" id="7WgsBLYxJXK" role="3EZMnx">
-            <ref role="1NtTu8" to="at53:7WgsBLYxJXy" resolve="cellWidgetType" />
-          </node>
-        </node>
-        <node concept="VPM3Z" id="7WgsBLYxJXG" role="3F10Kt" />
-        <node concept="2iRfu4" id="7WgsBLYxJXJ" role="2iSdaV" />
-      </node>
-      <node concept="3F1sOY" id="7WgsBLYvZT0" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:7WgsBLYqF$p" resolve="selectedRow" />
       </node>
     </node>
   </node>

@@ -463,6 +463,11 @@
     <property role="34LRSv" value="widget rows" />
     <property role="3GE5qa" value="features" />
     <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
+    <node concept="1TJgyi" id="2S2pY38QMJB" role="1TKVEl">
+      <property role="IQ2nx" value="3315326490838248423" />
+      <property role="TrG5h" value="defaultHeader" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7WgsBLYmzhD">
     <property role="EcuMT" value="9155943921465570409" />

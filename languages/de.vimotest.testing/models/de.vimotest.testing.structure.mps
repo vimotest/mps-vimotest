@@ -472,6 +472,16 @@
     <property role="34LRSv" value="widget rows" />
     <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="1TJgyj" id="2S2pY397Zv4" role="1TKVEi">
+      <property role="IQ2ns" value="3315326490842757060" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="cellCheckValues" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
+    </node>
+    <node concept="PrWs8" id="2S2pY397ZW5" role="PzmwI">
+      <ref role="PrY4T" node="6I6OCWxY3UW" resolve="IProvideWidget" />
+    </node>
     <node concept="PrWs8" id="7WgsBLYp0da" role="PzmwI">
       <ref role="PrY4T" node="7WgsBLYmzis" resolve="IListViewCheckValue" />
     </node>

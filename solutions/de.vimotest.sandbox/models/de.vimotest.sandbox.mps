@@ -291,6 +291,16 @@
           </node>
         </node>
       </node>
+      <node concept="DUd2R" id="2S2pY398vYc" role="DUd56">
+        <node concept="30nzp_" id="2S2pY398vYe" role="DUiSb">
+          <ref role="30nzpS" node="6vtOLtwdT_M" resolve="MyFlag" />
+        </node>
+      </node>
+      <node concept="DUd2R" id="2S2pY398vYh" role="DUd56">
+        <node concept="30nzp_" id="2S2pY398vYj" role="DUiSb">
+          <ref role="30nzpS" node="7H4Lpx0kZbn" resolve="MyLabel" />
+        </node>
+      </node>
       <node concept="1IbZgy" id="3JdhG1lU09E" role="DUd2K">
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="3JdhG1lU09I" role="DUiTU" />

@@ -18,6 +18,12 @@
       </concept>
     </language>
     <language id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.testing">
+      <concept id="9155943921465570536" name="de.vimotest.testing.structure.WidgetRowsCheckValue" flags="ng" index="1i$qk">
+        <property id="8517562708091898534" name="expectedHeader" index="3pQJM1" />
+      </concept>
+      <concept id="9155943921465570482" name="de.vimotest.testing.structure.ListViewCheck" flags="ng" index="1i$re">
+        <child id="9155943921465570483" name="checks" index="1i$rf" />
+      </concept>
       <concept id="3922717397912187313" name="de.vimotest.testing.structure.ImageSourceCheckValue" flags="ng" index="2mJbG1">
         <child id="173640931447457367" name="expectedImage" index="3n32fm" />
       </concept>
@@ -291,14 +297,14 @@
           </node>
         </node>
       </node>
-      <node concept="DUd2R" id="2S2pY398vYc" role="DUd56">
-        <node concept="30nzp_" id="2S2pY398vYe" role="DUiSb">
-          <ref role="30nzpS" node="6vtOLtwdT_M" resolve="MyFlag" />
-        </node>
-      </node>
-      <node concept="DUd2R" id="2S2pY398vYh" role="DUd56">
-        <node concept="30nzp_" id="2S2pY398vYj" role="DUiSb">
-          <ref role="30nzpS" node="7H4Lpx0kZbn" resolve="MyLabel" />
+      <node concept="DUd2R" id="GUPzt1WPYa" role="DUd56">
+        <node concept="30nzp_" id="GUPzt1WPYc" role="DUiSb">
+          <ref role="30nzpS" node="7WgsBLYysIb" resolve="MyListOfLabel" />
+          <node concept="1i$re" id="GUPzt1WPYe" role="30nDbQ">
+            <node concept="1i$qk" id="GUPzt1WPYh" role="1i$rf">
+              <property role="3pQJM1" value="Expected Header" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="1IbZgy" id="3JdhG1lU09E" role="DUd2K">

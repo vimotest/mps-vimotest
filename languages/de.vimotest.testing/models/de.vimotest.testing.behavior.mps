@@ -71,10 +71,12 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -128,6 +130,9 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
+      </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -179,11 +184,25 @@
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
+        <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
+      </concept>
+      <concept id="1154546950173" name="jetbrains.mps.lang.smodel.structure.ConceptReference" flags="ng" index="3gn64h">
+        <reference id="1154546997487" name="concept" index="3gnhBz" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="6039268229364358244" name="jetbrains.mps.lang.smodel.structure.ExactConceptCase" flags="ng" index="1pnPoh">
+        <child id="6039268229364358388" name="body" index="1pnPq1" />
+        <child id="6039268229364358387" name="concept" index="1pnPq6" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+      <concept id="5944356402132808749" name="jetbrains.mps.lang.smodel.structure.ConceptSwitchStatement" flags="nn" index="1_3QMa">
+        <child id="5944356402132808753" name="case" index="1_3QMm" />
+        <child id="5944356402132808752" name="expression" index="1_3QMn" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
@@ -2023,6 +2042,153 @@
         </node>
       </node>
       <node concept="3cqZAl" id="7WgsBLYp0dB" role="3clF45" />
+    </node>
+  </node>
+  <node concept="312cEu" id="1XfBLRoP8q">
+    <property role="TrG5h" value="WidgetConceptMappingHelper" />
+    <property role="3GE5qa" value="util.widgets" />
+    <node concept="3Tm1VV" id="1XfBLRqpLu" role="1B3o_S" />
+    <node concept="2YIFZL" id="1XfBLRqpLN" role="jymVt">
+      <property role="TrG5h" value="getWidgetConceptForCheckConcept" />
+      <node concept="37vLTG" id="1XfBLRqpLO" role="3clF46">
+        <property role="TrG5h" value="checkConcept" />
+        <node concept="3bZ5Sz" id="1XfBLRqpLP" role="1tU5fm">
+          <ref role="3bZ5Sy" to="53m0:2Yd1qrJONfw" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1XfBLRqpLQ" role="3clF47">
+        <node concept="1_3QMa" id="1XfBLRqpLR" role="3cqZAp">
+          <node concept="37vLTw" id="1XfBLRqpLS" role="1_3QMn">
+            <ref role="3cqZAo" node="1XfBLRqpLO" resolve="checkConcept" />
+          </node>
+          <node concept="1pnPoh" id="1XfBLRqpLv" role="1_3QMm">
+            <node concept="3gn64h" id="1XfBLRqpLw" role="1pnPq6">
+              <ref role="3gnhBz" to="53m0:69Ym88BeFj9" resolve="CheckBoxCheck" />
+            </node>
+            <node concept="3clFbS" id="1XfBLRqpLx" role="1pnPq1">
+              <node concept="3cpWs6" id="1XfBLRqpLy" role="3cqZAp">
+                <node concept="35c_gC" id="1XfBLRqpLz" role="3cqZAk">
+                  <ref role="35c_gD" to="at53:F907haMeIO" resolve="CheckBoxWidget" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1pnPoh" id="1XfBLRqpL$" role="1_3QMm">
+            <node concept="3gn64h" id="1XfBLRqpL_" role="1pnPq6">
+              <ref role="3gnhBz" to="53m0:7H4Lpx0iNqu" resolve="LabelCheck" />
+            </node>
+            <node concept="3clFbS" id="1XfBLRqpLA" role="1pnPq1">
+              <node concept="3cpWs6" id="1XfBLRqpLB" role="3cqZAp">
+                <node concept="35c_gC" id="1XfBLRqpLC" role="3cqZAk">
+                  <ref role="35c_gD" to="at53:7H4Lpx0iNpB" resolve="LabelWidget" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1pnPoh" id="1XfBLRqpLD" role="1_3QMm">
+            <node concept="3gn64h" id="1XfBLRqpLE" role="1pnPq6">
+              <ref role="3gnhBz" to="53m0:3pKiF2wNf5P" resolve="ImageCheck" />
+            </node>
+            <node concept="3clFbS" id="1XfBLRqpLF" role="1pnPq1">
+              <node concept="3cpWs6" id="1XfBLRqpLG" role="3cqZAp">
+                <node concept="35c_gC" id="1XfBLRqpLH" role="3cqZAk">
+                  <ref role="35c_gD" to="at53:3pKiF2wNf4N" resolve="ImageWidget" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1pnPoh" id="1XfBLRqpLI" role="1_3QMm">
+            <node concept="3gn64h" id="1XfBLRqpLJ" role="1pnPq6">
+              <ref role="3gnhBz" to="53m0:7WgsBLYmziM" resolve="ListViewCheck" />
+            </node>
+            <node concept="3clFbS" id="1XfBLRqpLK" role="1pnPq1">
+              <node concept="3cpWs6" id="1XfBLRqpLL" role="3cqZAp">
+                <node concept="35c_gC" id="1XfBLRqpLM" role="3cqZAk">
+                  <ref role="35c_gD" to="at53:7WgsBLYmzhU" resolve="ListViewWidget" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="1XfBLRqpLT" role="3cqZAp">
+          <node concept="10Nm6u" id="1XfBLRqpLU" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3bZ5Sz" id="1XfBLRqpLV" role="3clF45">
+        <ref role="3bZ5Sy" to="at53:F907haLIRF" />
+      </node>
+      <node concept="3Tm1VV" id="1XfBLRqpLW" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="1XfBLRqpMh" role="jymVt">
+      <property role="TrG5h" value="getCheckConceptForWidgetConcept" />
+      <node concept="37vLTG" id="1XfBLRqpMi" role="3clF46">
+        <property role="TrG5h" value="widgetConcept" />
+        <node concept="3bZ5Sz" id="1XfBLRqpMj" role="1tU5fm">
+          <ref role="3bZ5Sy" to="at53:F907haLIRF" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1XfBLRqpMk" role="3clF47">
+        <node concept="1_3QMa" id="1XfBLRqpMl" role="3cqZAp">
+          <node concept="37vLTw" id="1XfBLRqpMm" role="1_3QMn">
+            <ref role="3cqZAo" node="1XfBLRqpMi" resolve="widgetConcept" />
+          </node>
+          <node concept="1pnPoh" id="1XfBLRqpLX" role="1_3QMm">
+            <node concept="3gn64h" id="1XfBLRqpLY" role="1pnPq6">
+              <ref role="3gnhBz" to="at53:F907haMeIO" resolve="CheckBoxWidget" />
+            </node>
+            <node concept="3clFbS" id="1XfBLRqpLZ" role="1pnPq1">
+              <node concept="3cpWs6" id="1XfBLRqpM0" role="3cqZAp">
+                <node concept="35c_gC" id="1XfBLRqpM1" role="3cqZAk">
+                  <ref role="35c_gD" to="53m0:69Ym88BeFj9" resolve="CheckBoxCheck" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1pnPoh" id="1XfBLRqpM2" role="1_3QMm">
+            <node concept="3gn64h" id="1XfBLRqpM3" role="1pnPq6">
+              <ref role="3gnhBz" to="at53:7H4Lpx0iNpB" resolve="LabelWidget" />
+            </node>
+            <node concept="3clFbS" id="1XfBLRqpM4" role="1pnPq1">
+              <node concept="3cpWs6" id="1XfBLRqpM5" role="3cqZAp">
+                <node concept="35c_gC" id="1XfBLRqpM6" role="3cqZAk">
+                  <ref role="35c_gD" to="53m0:7H4Lpx0iNqu" resolve="LabelCheck" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1pnPoh" id="1XfBLRqpM7" role="1_3QMm">
+            <node concept="3gn64h" id="1XfBLRqpM8" role="1pnPq6">
+              <ref role="3gnhBz" to="at53:3pKiF2wNf4N" resolve="ImageWidget" />
+            </node>
+            <node concept="3clFbS" id="1XfBLRqpM9" role="1pnPq1">
+              <node concept="3cpWs6" id="1XfBLRqpMa" role="3cqZAp">
+                <node concept="35c_gC" id="1XfBLRqpMb" role="3cqZAk">
+                  <ref role="35c_gD" to="53m0:3pKiF2wNf5P" resolve="ImageCheck" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1pnPoh" id="1XfBLRqpMc" role="1_3QMm">
+            <node concept="3gn64h" id="1XfBLRqpMd" role="1pnPq6">
+              <ref role="3gnhBz" to="at53:7WgsBLYmzhU" resolve="ListViewWidget" />
+            </node>
+            <node concept="3clFbS" id="1XfBLRqpMe" role="1pnPq1">
+              <node concept="3cpWs6" id="1XfBLRqpMf" role="3cqZAp">
+                <node concept="35c_gC" id="1XfBLRqpMg" role="3cqZAk">
+                  <ref role="35c_gD" to="53m0:7WgsBLYmziM" resolve="ListViewCheck" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="1XfBLRqpMn" role="3cqZAp">
+          <node concept="10Nm6u" id="1XfBLRqpMo" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3bZ5Sz" id="1XfBLRqpMp" role="3clF45">
+        <ref role="3bZ5Sy" to="53m0:2Yd1qrJONfw" />
+      </node>
+      <node concept="3Tm1VV" id="1XfBLRqpMq" role="1B3o_S" />
     </node>
   </node>
 </model>

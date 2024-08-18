@@ -99,6 +99,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -147,6 +148,7 @@
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -388,7 +390,7 @@
               </node>
             </node>
             <node concept="3TrEf2" id="2S2pY39852c" role="2OqNvi">
-              <ref role="3Tt5mk" to="53m0:2Yd1qrJONfu" />
+              <ref role="3Tt5mk" to="53m0:2Yd1qrJONfu" resolve="widget" />
             </node>
           </node>
         </node>
@@ -399,6 +401,40 @@
       <node concept="37vLTG" id="2S2pY39851d" role="3clF46">
         <property role="TrG5h" value="parentNode" />
         <node concept="3Tqbb2" id="2S2pY39851c" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="7a1oxbxXWUl" role="13h7CS">
+      <property role="2Ki8OM" value="true" />
+      <property role="TrG5h" value="getWidgetConceptToCheckByParentNode" />
+      <node concept="37vLTG" id="7a1oxbxXXFH" role="3clF46">
+        <property role="TrG5h" value="parentNode" />
+        <node concept="3Tqbb2" id="7a1oxbxXXFI" role="1tU5fm" />
+      </node>
+      <node concept="3Tm1VV" id="7a1oxbxXWUm" role="1B3o_S" />
+      <node concept="3bZ5Sz" id="7a1oxbxXXDV" role="3clF45">
+        <ref role="3bZ5Sy" to="at53:F907haLIRF" resolve="ViewWidget" />
+      </node>
+      <node concept="3clFbS" id="7a1oxbxXWUo" role="3clF47">
+        <node concept="3clFbF" id="7a1oxbxXXTw" role="3cqZAp">
+          <node concept="2OqwBi" id="7a1oxbxXXTx" role="3clFbG">
+            <node concept="2OqwBi" id="7a1oxbxXXTy" role="2Oq$k0">
+              <node concept="37vLTw" id="7a1oxbxXXTz" role="2Oq$k0">
+                <ref role="3cqZAo" node="7a1oxbxXXFH" resolve="parentNode" />
+              </node>
+              <node concept="2Xjw5R" id="7a1oxbxXXT$" role="2OqNvi">
+                <node concept="1xMEDy" id="7a1oxbxXXT_" role="1xVPHs">
+                  <node concept="chp4Y" id="7a1oxbxXXTA" role="ri$Ld">
+                    <ref role="cht4Q" to="53m0:6I6OCWxY3UW" resolve="IProvideWidget" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="7a1oxbxXXTB" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="7a1oxbxXYae" role="2OqNvi">
+              <ref role="37wK5l" node="7a1oxbxXUcn" resolve="getWidgetConcept" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="13i0hz" id="5VrLp2zq7iE" role="13h7CS">
@@ -2071,6 +2107,37 @@
       </node>
       <node concept="3cqZAl" id="7WgsBLYmzji" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="7a1oxby4RnT" role="13h7CS">
+      <property role="TrG5h" value="getCellWidgetConcept" />
+      <node concept="3Tm1VV" id="7a1oxby4RnU" role="1B3o_S" />
+      <node concept="3bZ5Sz" id="7a1oxby4ROX" role="3clF45">
+        <ref role="3bZ5Sy" to="at53:F907haLIRF" resolve="ViewWidget" />
+      </node>
+      <node concept="3clFbS" id="7a1oxby4RnW" role="3clF47">
+        <node concept="3clFbF" id="7a1oxby4RQK" role="3cqZAp">
+          <node concept="2OqwBi" id="7a1oxby519T" role="3clFbG">
+            <node concept="2OqwBi" id="7a1oxby4TnS" role="2Oq$k0">
+              <node concept="1PxgMI" id="7a1oxby4SZ9" role="2Oq$k0">
+                <property role="1BlNFB" value="true" />
+                <node concept="chp4Y" id="7a1oxby4T41" role="3oSUPX">
+                  <ref role="cht4Q" to="at53:7WgsBLYmzhU" resolve="ListViewWidget" />
+                </node>
+                <node concept="2OqwBi" id="7a1oxby4S2T" role="1m5AlR">
+                  <node concept="13iPFW" id="7a1oxby4RQJ" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="7a1oxby4Sl_" role="2OqNvi">
+                    <ref role="37wK5l" node="4jKdMMdJYzD" resolve="getWidgetToCheck" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3TrEf2" id="7a1oxby4TBy" role="2OqNvi">
+                <ref role="3Tt5mk" to="at53:7WgsBLYxJXy" resolve="cellWidgetType" />
+              </node>
+            </node>
+            <node concept="2yIwOk" id="7a1oxby51u$" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="7WgsBLYp0cr">
     <property role="3GE5qa" value="test.assert._checkvalues" />
@@ -2152,12 +2219,78 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="7a1oxby5iEH" role="3cqZAp" />
+            <node concept="3clFbF" id="7a1oxby5iL3" role="3cqZAp">
+              <node concept="2OqwBi" id="7a1oxby5mcH" role="3clFbG">
+                <node concept="2OqwBi" id="7a1oxby5iYs" role="2Oq$k0">
+                  <node concept="13iPFW" id="7a1oxby5iL1" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="7a1oxby5jgM" role="2OqNvi">
+                    <ref role="3TtcxE" to="53m0:2S2pY397Zv4" resolve="cellChecks" />
+                  </node>
+                </node>
+                <node concept="2es0OD" id="7a1oxby5nPC" role="2OqNvi">
+                  <node concept="1bVj0M" id="7a1oxby5nPE" role="23t8la">
+                    <node concept="3clFbS" id="7a1oxby5nPF" role="1bW5cS">
+                      <node concept="3cpWs8" id="7a1oxby69Vo" role="3cqZAp">
+                        <node concept="3cpWsn" id="7a1oxby69Vp" role="3cpWs9">
+                          <property role="TrG5h" value="cell" />
+                          <node concept="3uibUv" id="7a1oxby61lF" role="1tU5fm">
+                            <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+                          </node>
+                          <node concept="2OqwBi" id="7a1oxby69Vq" role="33vP2m">
+                            <node concept="37vLTw" id="7a1oxby69Vr" role="2Oq$k0">
+                              <ref role="3cqZAo" node="7a1oxby5nPG" resolve="it" />
+                            </node>
+                            <node concept="2qgKlT" id="7a1oxby69Vs" role="2OqNvi">
+                              <ref role="37wK5l" node="3CJ09vZMLMB" resolve="createEditorCellForCheck" />
+                              <node concept="2OqwBi" id="7a1oxby69Vt" role="37wK5m">
+                                <node concept="37vLTw" id="7a1oxby69Vu" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="7WgsBLYp0d_" resolve="listViewEditorCell" />
+                                </node>
+                                <node concept="liA8E" id="7a1oxby69Vv" role="2OqNvi">
+                                  <ref role="37wK5l" to="f4zo:~EditorCell.getContext()" resolve="getContext" />
+                                </node>
+                              </node>
+                              <node concept="2OqwBi" id="7a1oxby69Vw" role="37wK5m">
+                                <node concept="BsUDl" id="7a1oxby69Vx" role="2Oq$k0">
+                                  <ref role="37wK5l" node="7a1oxby5ulq" resolve="getListViewWidget" />
+                                </node>
+                                <node concept="3TrEf2" id="7a1oxby69Vy" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="at53:7WgsBLYxJXy" resolve="cellWidgetType" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="7a1oxby6atY" role="3cqZAp">
+                        <node concept="2OqwBi" id="7a1oxby6b9X" role="3clFbG">
+                          <node concept="37vLTw" id="7a1oxby6atW" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7oOtyuJWgv9" resolve="verticalCollection" />
+                          </node>
+                          <node concept="liA8E" id="7a1oxby6bHc" role="2OqNvi">
+                            <ref role="37wK5l" to="f4zo:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
+                            <node concept="37vLTw" id="7a1oxby6bVO" role="37wK5m">
+                              <ref role="3cqZAo" node="7a1oxby69Vp" resolve="cell" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="gl6BB" id="7a1oxby5nPG" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="7a1oxby5nPH" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="2OqwBi" id="7oOtyuJX$jx" role="3clFbw">
             <node concept="2OqwBi" id="7oOtyuJXxwo" role="2Oq$k0">
               <node concept="13iPFW" id="7oOtyuJXxjd" role="2Oq$k0" />
               <node concept="3Tsc0h" id="7oOtyuJXxJb" role="2OqNvi">
-                <ref role="3TtcxE" to="53m0:2S2pY397Zv4" resolve="cellCheckValues" />
+                <ref role="3TtcxE" to="53m0:2S2pY397Zv4" resolve="cellChecks" />
               </node>
             </node>
             <node concept="3GX2aA" id="7oOtyuJX_W9" role="2OqNvi" />
@@ -2171,6 +2304,75 @@
         </node>
       </node>
       <node concept="3cqZAl" id="7WgsBLYp0dB" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="7a1oxby4ErV" role="13h7CS">
+      <property role="TrG5h" value="getWidgetConcept" />
+      <ref role="13i0hy" node="7a1oxbxXUcn" resolve="getWidgetConcept" />
+      <node concept="3Tm1VV" id="7a1oxby4ErW" role="1B3o_S" />
+      <node concept="3clFbS" id="7a1oxby4Es5" role="3clF47">
+        <node concept="3clFbF" id="7a1oxby4FpT" role="3cqZAp">
+          <node concept="2OqwBi" id="7a1oxby4GIT" role="3clFbG">
+            <node concept="BsUDl" id="7a1oxby5r10" role="2Oq$k0">
+              <ref role="37wK5l" node="7a1oxby5r0X" resolve="getListWidget" />
+            </node>
+            <node concept="2qgKlT" id="7a1oxby5ayW" role="2OqNvi">
+              <ref role="37wK5l" node="7a1oxby4RnT" resolve="getCellWidgetConcept" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3bZ5Sz" id="7a1oxby4Es6" role="3clF45">
+        <ref role="3bZ5Sy" to="at53:F907haLIRF" resolve="ViewWidget" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="7a1oxby5r0X" role="13h7CS">
+      <property role="TrG5h" value="getListViewWidgetCheck" />
+      <node concept="3Tm6S6" id="7a1oxby5r0Y" role="1B3o_S" />
+      <node concept="3Tqbb2" id="7a1oxby5r0Z" role="3clF45">
+        <ref role="ehGHo" to="53m0:7WgsBLYmziM" resolve="ListViewCheck" />
+      </node>
+      <node concept="3clFbS" id="7a1oxby5r0P" role="3clF47">
+        <node concept="3cpWs6" id="7a1oxby5r0Q" role="3cqZAp">
+          <node concept="1PxgMI" id="7a1oxby5r0R" role="3cqZAk">
+            <property role="1BlNFB" value="true" />
+            <node concept="chp4Y" id="7a1oxby5r0S" role="3oSUPX">
+              <ref role="cht4Q" to="53m0:7WgsBLYmziM" resolve="ListViewCheck" />
+            </node>
+            <node concept="2OqwBi" id="7a1oxby5r0T" role="1m5AlR">
+              <node concept="13iPFW" id="7a1oxby5r0U" role="2Oq$k0" />
+              <node concept="1mfA1w" id="7a1oxby5r0V" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7a1oxby5ulq" role="13h7CS">
+      <property role="TrG5h" value="getListViewWidget" />
+      <node concept="3Tm6S6" id="7a1oxby5ulr" role="1B3o_S" />
+      <node concept="3Tqbb2" id="7a1oxby5uls" role="3clF45">
+        <ref role="ehGHo" to="at53:7WgsBLYmzhU" resolve="ListViewWidget" />
+      </node>
+      <node concept="3clFbS" id="7a1oxby5ult" role="3clF47">
+        <node concept="3cpWs6" id="7a1oxby5ulu" role="3cqZAp">
+          <node concept="1PxgMI" id="7a1oxby5wPR" role="3cqZAk">
+            <property role="1BlNFB" value="true" />
+            <node concept="chp4Y" id="7a1oxby5wSd" role="3oSUPX">
+              <ref role="cht4Q" to="at53:7WgsBLYmzhU" resolve="ListViewWidget" />
+            </node>
+            <node concept="2OqwBi" id="7a1oxby5vYP" role="1m5AlR">
+              <node concept="2OqwBi" id="7a1oxby5vuW" role="2Oq$k0">
+                <node concept="13iPFW" id="7a1oxby5vhV" role="2Oq$k0" />
+                <node concept="2qgKlT" id="7a1oxby5vH0" role="2OqNvi">
+                  <ref role="37wK5l" node="7a1oxby5r0X" resolve="getListViewWidgetCheck" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="7a1oxby5wel" role="2OqNvi">
+                <ref role="37wK5l" node="4jKdMMdJYzD" resolve="getWidgetToCheck" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="1XfBLRoP8q">
@@ -2318,6 +2520,34 @@
         <ref role="3bZ5Sy" to="53m0:2Yd1qrJONfw" />
       </node>
       <node concept="3Tm1VV" id="1XfBLRqpMq" role="1B3o_S" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7a1oxbxXUc4">
+    <property role="3GE5qa" value="test.assert" />
+    <ref role="13h7C2" to="53m0:6I6OCWxY3UW" resolve="IProvideWidget" />
+    <node concept="13i0hz" id="7a1oxbxXUcn" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getWidgetConcept" />
+      <node concept="3Tm1VV" id="7a1oxbxXUco" role="1B3o_S" />
+      <node concept="3bZ5Sz" id="7a1oxbxXUcF" role="3clF45">
+        <ref role="3bZ5Sy" to="at53:F907haLIRF" resolve="ViewWidget" />
+      </node>
+      <node concept="3clFbS" id="7a1oxbxXUcq" role="3clF47">
+        <node concept="3clFbF" id="7a1oxbxXUeZ" role="3cqZAp">
+          <node concept="2OqwBi" id="7a1oxbxXUS8" role="3clFbG">
+            <node concept="2OqwBi" id="7a1oxbxXUq6" role="2Oq$k0">
+              <node concept="13iPFW" id="7a1oxbxXUeY" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7a1oxbxXUxv" role="2OqNvi">
+                <ref role="3Tt5mk" to="53m0:2Yd1qrJONfu" resolve="widget" />
+              </node>
+            </node>
+            <node concept="2yIwOk" id="7a1oxbxXV6B" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="7a1oxbxXUc5" role="13h7CW">
+      <node concept="3clFbS" id="7a1oxbxXUc6" role="2VODD2" />
     </node>
   </node>
 </model>

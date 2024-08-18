@@ -475,7 +475,7 @@
     <node concept="1TJgyj" id="2S2pY397Zv4" role="1TKVEi">
       <property role="IQ2ns" value="3315326490842757060" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="cellCheckValues" />
+      <property role="20kJfa" value="cellChecks" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     </node>

@@ -1377,5 +1377,33 @@
       <node concept="2iRkQZ" id="7WgsBLYmziS" role="2czzBx" />
     </node>
   </node>
+  <node concept="24kQdi" id="7a1oxbxVMSV">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1XX52x" to="53m0:7WgsBLYmzjC" resolve="WidgetRowsCheckValue" />
+    <node concept="3EZMnI" id="7a1oxbxVMSX" role="2wV5jI">
+      <node concept="3F0ifn" id="7a1oxbxVMSY" role="3EZMnx">
+        <property role="3F0ifm" value="expect header" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+        <node concept="pVoyu" id="7a1oxbxX9jE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="7a1oxbxVNAB" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:7oOtyuJVCEA" resolve="expectedHeader" />
+      </node>
+      <node concept="3F0ifn" id="7a1oxbxVNAL" role="3EZMnx">
+        <property role="3F0ifm" value="expected cells" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+        <node concept="pVoyu" id="7a1oxbxVNAN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="7a1oxbxVNAE" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:2S2pY397Zv4" resolve="cellChecks" />
+        <node concept="2iRkQZ" id="7a1oxbxXygk" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="7a1oxbxVNAI" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

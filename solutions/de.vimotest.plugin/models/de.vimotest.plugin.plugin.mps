@@ -360,7 +360,6 @@
       <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
         <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
       </concept>
-      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC">
         <reference id="1139880128956" name="concept" index="1A9B2P" />
       </concept>
@@ -5061,17 +5060,14 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="2OqwBi" id="2S2pY398aoL" role="3uHU7B">
-                        <node concept="2OqwBi" id="2S2pY3986UR" role="2Oq$k0">
-                          <node concept="35c_gC" id="2S2pY3985zg" role="2Oq$k0">
-                            <ref role="35c_gD" to="53m0:2Yd1qrJONfw" resolve="ViewWidgetCheck" />
-                          </node>
-                          <node concept="2qgKlT" id="2S2pY3987FE" role="2OqNvi">
-                            <ref role="37wK5l" to="fwln:2S2pY3984H1" resolve="getWidgetToCheckByParentNode" />
-                            <node concept="nLn13" id="2S2pY3989QH" role="37wK5m" />
-                          </node>
+                      <node concept="2OqwBi" id="2S2pY3986UR" role="3uHU7B">
+                        <node concept="35c_gC" id="2S2pY3985zg" role="2Oq$k0">
+                          <ref role="35c_gD" to="53m0:2Yd1qrJONfw" resolve="ViewWidgetCheck" />
                         </node>
-                        <node concept="2yIwOk" id="2S2pY398aWG" role="2OqNvi" />
+                        <node concept="2qgKlT" id="2S2pY3987FE" role="2OqNvi">
+                          <ref role="37wK5l" to="fwln:7a1oxbxXWUl" resolve="getWidgetConceptToCheckByParentNode" />
+                          <node concept="nLn13" id="2S2pY3989QH" role="37wK5m" />
+                        </node>
                       </node>
                     </node>
                   </node>

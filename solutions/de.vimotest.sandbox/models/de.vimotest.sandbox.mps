@@ -20,7 +20,7 @@
     <language id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.testing">
       <concept id="9155943921465570536" name="de.vimotest.testing.structure.WidgetRowsCheckValue" flags="ng" index="1i$qk">
         <property id="8517562708091898534" name="expectedHeader" index="3pQJM1" />
-        <child id="3315326490842757060" name="cellCheckValues" index="3B7p0$" />
+        <child id="3315326490842757060" name="cellChecks" index="3B7p0$" />
       </concept>
       <concept id="9155943921465570482" name="de.vimotest.testing.structure.ListViewCheck" flags="ng" index="1i$re">
         <child id="9155943921465570483" name="checks" index="1i$rf" />
@@ -307,13 +307,17 @@
               <ref role="30nzpS" node="7WgsBLYysIb" resolve="MyListOfLabel" />
               <node concept="V3Zc6" id="7a1oxby5iE6" role="3B7p0$">
                 <node concept="V3Zdv" id="7a1oxby5iE9" role="V3Zc7">
-                  <property role="3egigc" value="A" />
+                  <property role="3egigc" value="Ab" />
+                </node>
+                <node concept="35STUn" id="7Ds$Sekkygc" role="V3Zc7">
+                  <property role="3XJem9" value="true" />
                 </node>
               </node>
               <node concept="V3Zc6" id="7a1oxby5iDW" role="3B7p0$">
                 <node concept="V3Zdv" id="7a1oxby5iE0" role="V3Zc7">
                   <property role="3egigc" value="B" />
                 </node>
+                <node concept="35STUl" id="7Ds$Sekkyg9" role="V3Zc7" />
               </node>
             </node>
           </node>

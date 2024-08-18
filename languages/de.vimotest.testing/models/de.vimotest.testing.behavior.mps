@@ -2263,14 +2263,17 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbF" id="7a1oxby6atY" role="3cqZAp">
-                        <node concept="2OqwBi" id="7a1oxby6b9X" role="3clFbG">
-                          <node concept="37vLTw" id="7a1oxby6atW" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7oOtyuJWgv9" resolve="verticalCollection" />
+                      <node concept="3clFbF" id="7Ds$Sekp08Q" role="3cqZAp">
+                        <node concept="2OqwBi" id="7Ds$Sekp19w" role="3clFbG">
+                          <node concept="35c_gC" id="7Ds$Sekp08O" role="2Oq$k0">
+                            <ref role="35c_gD" to="at53:7WgsBLYmzhU" resolve="ListViewWidget" />
                           </node>
-                          <node concept="liA8E" id="7a1oxby6bHc" role="2OqNvi">
-                            <ref role="37wK5l" to="f4zo:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
-                            <node concept="37vLTw" id="7a1oxby6bVO" role="37wK5m">
+                          <node concept="2qgKlT" id="7Ds$Sekp1HH" role="2OqNvi">
+                            <ref role="37wK5l" to="nrs2:7Ds$SekooCl" resolve="addRowCell" />
+                            <node concept="37vLTw" id="7Ds$Sekp1Wq" role="37wK5m">
+                              <ref role="3cqZAo" node="7oOtyuJWgv9" resolve="verticalCollection" />
+                            </node>
+                            <node concept="37vLTw" id="7Ds$Sekp2q2" role="37wK5m">
                               <ref role="3cqZAo" node="7a1oxby69Vp" resolve="cell" />
                             </node>
                           </node>

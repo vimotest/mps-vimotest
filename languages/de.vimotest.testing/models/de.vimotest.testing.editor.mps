@@ -1386,18 +1386,55 @@
     <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="1XX52x" to="53m0:7WgsBLYmzjC" resolve="WidgetRowsCheckValue" />
     <node concept="3EZMnI" id="7a1oxbxVMSX" role="2wV5jI">
-      <node concept="3F0ifn" id="7a1oxbxVMSY" role="3EZMnx">
-        <property role="3F0ifm" value="expect header" />
-        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
-        <node concept="pVoyu" id="7a1oxbxX9jE" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+      <node concept="3EZMnI" id="5MibNhOiMTz" role="3EZMnx">
+        <node concept="2iRfu4" id="5MibNhOiMT$" role="2iSdaV" />
+        <node concept="2yq9I_" id="5MibNhOiPwz" role="3EZMnx">
+          <ref role="225u1j" to="53m0:5MibNhOiM82" resolve="assertHeader" />
+          <node concept="1563Vb" id="5MibNhOiPw_" role="1563LE">
+            <property role="1563UK" value="[ ]" />
+            <property role="1563Ve" value="[x]" />
+          </node>
+          <node concept="3F0ifn" id="5MibNhOiQ2a" role="2fqkNU">
+            <property role="3F0ifm" value="assert header?" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="7a1oxbxVMSY" role="3EZMnx">
+          <property role="3F0ifm" value="-&gt; expect header" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+          <node concept="pVoyu" id="7a1oxbxX9jE" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="pkWqt" id="5MibNhOiNq2" role="pqm2j">
+            <node concept="3clFbS" id="5MibNhOiNq3" role="2VODD2">
+              <node concept="3clFbF" id="5MibNhOiNBC" role="3cqZAp">
+                <node concept="2OqwBi" id="5MibNhOiO3P" role="3clFbG">
+                  <node concept="pncrf" id="5MibNhOiNBB" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5MibNhOiOxS" role="2OqNvi">
+                    <ref role="3TsBF5" to="53m0:5MibNhOiM82" resolve="assertHeader" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3F0A7n" id="7a1oxbxVNAB" role="3EZMnx">
+          <ref role="1NtTu8" to="53m0:7oOtyuJVCEA" resolve="expectedHeader" />
+          <node concept="pkWqt" id="5MibNhOiOM5" role="pqm2j">
+            <node concept="3clFbS" id="5MibNhOiOM6" role="2VODD2">
+              <node concept="3clFbF" id="5MibNhOiOM7" role="3cqZAp">
+                <node concept="2OqwBi" id="5MibNhOiOM8" role="3clFbG">
+                  <node concept="pncrf" id="5MibNhOiOM9" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5MibNhOiOMa" role="2OqNvi">
+                    <ref role="3TsBF5" to="53m0:5MibNhOiM82" resolve="assertHeader" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
-      <node concept="3F0A7n" id="7a1oxbxVNAB" role="3EZMnx">
-        <ref role="1NtTu8" to="53m0:7oOtyuJVCEA" resolve="expectedHeader" />
-      </node>
       <node concept="3F0ifn" id="7a1oxbxVNAL" role="3EZMnx">
-        <property role="3F0ifm" value="expected cells" />
+        <property role="3F0ifm" value="expected rows" />
         <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
         <node concept="pVoyu" id="7a1oxbxVNAN" role="3F10Kt">
           <property role="VOm3f" value="true" />

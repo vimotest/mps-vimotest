@@ -86,7 +86,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1181949435690" name="jetbrains.mps.lang.smodel.structure.Concept_NewInstance" flags="nn" index="LFhST" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -236,14 +235,11 @@
                   <node concept="2YIFZM" id="1XfBLRqqG$" role="33vP2m">
                     <ref role="37wK5l" to="fwln:1XfBLRqpMh" resolve="getCheckConceptForWidgetConcept" />
                     <ref role="1Pybhc" to="fwln:1XfBLRoP8q" resolve="WidgetConceptMappingHelper" />
-                    <node concept="2OqwBi" id="1XfBLRqreh" role="37wK5m">
-                      <node concept="2OqwBi" id="1XfBLRqqG_" role="2Oq$k0">
-                        <node concept="3kakTB" id="1XfBLRqqGA" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="1XfBLRqqGB" role="2OqNvi">
-                          <ref role="3Tt5mk" to="53m0:2Yd1qrJONfu" resolve="widget" />
-                        </node>
+                    <node concept="2OqwBi" id="1XfBLRqqG_" role="37wK5m">
+                      <node concept="3kakTB" id="1XfBLRqqGA" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="5MibNhOgkco" role="2OqNvi">
+                        <ref role="37wK5l" to="fwln:7a1oxbxXUcn" resolve="getWidgetConcept" />
                       </node>
-                      <node concept="2yIwOk" id="1XfBLRqrvz" role="2OqNvi" />
                     </node>
                   </node>
                 </node>

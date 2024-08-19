@@ -71,6 +71,9 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -1357,7 +1360,9 @@
                 <ref role="3TtcxE" to="53m0:7H4Lpx0iNqv" resolve="checks" />
               </node>
             </node>
-            <node concept="WFELt" id="7H4Lpx0iNqJ" role="2OqNvi" />
+            <node concept="WFELt" id="7H4Lpx0iNqJ" role="2OqNvi">
+              <ref role="1A0vxQ" to="53m0:7H4Lpx0iNr7" resolve="TextCheckValue" />
+            </node>
           </node>
         </node>
       </node>
@@ -1650,7 +1655,9 @@
                 <ref role="3TtcxE" to="53m0:3pKiF2wNf5Q" resolve="checks" />
               </node>
             </node>
-            <node concept="WFELt" id="3pKiF2wNf64" role="2OqNvi" />
+            <node concept="WFELt" id="3pKiF2wNf64" role="2OqNvi">
+              <ref role="1A0vxQ" to="53m0:3pKiF2wNf6L" resolve="ImageSourceCheckValue" />
+            </node>
           </node>
         </node>
       </node>
@@ -1929,7 +1936,21 @@
     <property role="3GE5qa" value="test.assert.listview" />
     <ref role="13h7C2" to="53m0:7WgsBLYmziM" resolve="ListViewCheck" />
     <node concept="13hLZK" id="7WgsBLYmziU" role="13h7CW">
-      <node concept="3clFbS" id="7WgsBLYmziV" role="2VODD2" />
+      <node concept="3clFbS" id="7WgsBLYmziV" role="2VODD2">
+        <node concept="3clFbF" id="5MibNhOhwVM" role="3cqZAp">
+          <node concept="2OqwBi" id="5MibNhOhzTM" role="3clFbG">
+            <node concept="2OqwBi" id="5MibNhOhx5Y" role="2Oq$k0">
+              <node concept="13iPFW" id="5MibNhOhwVL" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="5MibNhOhxfa" role="2OqNvi">
+                <ref role="3TtcxE" to="53m0:7WgsBLYmziN" resolve="checks" />
+              </node>
+            </node>
+            <node concept="WFELt" id="5MibNhOh_uT" role="2OqNvi">
+              <ref role="1A0vxQ" to="53m0:7WgsBLYmzjC" resolve="WidgetRowsCheckValue" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="7WgsBLYmzjj" role="13h7CS">
       <property role="TrG5h" value="createEditorCellForCheck" />
@@ -2231,6 +2252,22 @@
                 <node concept="2es0OD" id="7a1oxby5nPC" role="2OqNvi">
                   <node concept="1bVj0M" id="7a1oxby5nPE" role="23t8la">
                     <node concept="3clFbS" id="7a1oxby5nPF" role="1bW5cS">
+                      <node concept="3cpWs8" id="5MibNhOf3Eb" role="3cqZAp">
+                        <node concept="3cpWsn" id="5MibNhOf3Ec" role="3cpWs9">
+                          <property role="TrG5h" value="cellWidget" />
+                          <node concept="3Tqbb2" id="5MibNhOf3m5" role="1tU5fm">
+                            <ref role="ehGHo" to="at53:F907haLIRF" resolve="ViewWidget" />
+                          </node>
+                          <node concept="2OqwBi" id="5MibNhOf3Ed" role="33vP2m">
+                            <node concept="BsUDl" id="5MibNhOf3Ee" role="2Oq$k0">
+                              <ref role="37wK5l" node="7a1oxby5ulq" resolve="getListViewWidget" />
+                            </node>
+                            <node concept="3TrEf2" id="5MibNhOf3Ef" role="2OqNvi">
+                              <ref role="3Tt5mk" to="at53:7WgsBLYxJXy" resolve="cellWidgetType" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                       <node concept="3cpWs8" id="7a1oxby69Vo" role="3cqZAp">
                         <node concept="3cpWsn" id="7a1oxby69Vp" role="3cpWs9">
                           <property role="TrG5h" value="cell" />
@@ -2251,14 +2288,25 @@
                                   <ref role="37wK5l" to="f4zo:~EditorCell.getContext()" resolve="getContext" />
                                 </node>
                               </node>
-                              <node concept="2OqwBi" id="7a1oxby69Vw" role="37wK5m">
-                                <node concept="BsUDl" id="7a1oxby69Vx" role="2Oq$k0">
-                                  <ref role="37wK5l" node="7a1oxby5ulq" resolve="getListViewWidget" />
-                                </node>
-                                <node concept="3TrEf2" id="7a1oxby69Vy" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="at53:7WgsBLYxJXy" resolve="cellWidgetType" />
-                                </node>
+                              <node concept="37vLTw" id="5MibNhOf3Eg" role="37wK5m">
+                                <ref role="3cqZAo" node="5MibNhOf3Ec" resolve="cellWidgetType" />
                               </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="3CJ09vZF_bd" role="3cqZAp">
+                        <node concept="2OqwBi" id="3CJ09vZF_SF" role="3clFbG">
+                          <node concept="37vLTw" id="5MibNhOf2V0" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7a1oxby5nPG" resolve="it" />
+                          </node>
+                          <node concept="2qgKlT" id="3CJ09vZFEHy" role="2OqNvi">
+                            <ref role="37wK5l" node="2Yd1qrJP3FF" resolve="applyOnWidget" />
+                            <node concept="37vLTw" id="3CJ09vZFFBU" role="37wK5m">
+                              <ref role="3cqZAo" node="7a1oxby69Vp" resolve="cell" />
+                            </node>
+                            <node concept="37vLTw" id="6I6OCWy1a75" role="37wK5m">
+                              <ref role="3cqZAo" node="5MibNhOf3Ec" resolve="cellWidget" />
                             </node>
                           </node>
                         </node>
@@ -2371,6 +2419,27 @@
               </node>
               <node concept="2qgKlT" id="7a1oxby5wel" role="2OqNvi">
                 <ref role="37wK5l" node="4jKdMMdJYzD" resolve="getWidgetToCheck" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5MibNhOgifA" role="13h7CS">
+      <property role="TrG5h" value="getCellWidgetCheckConcept" />
+      <node concept="3Tm1VV" id="5MibNhOgifB" role="1B3o_S" />
+      <node concept="3bZ5Sz" id="5MibNhOgiKO" role="3clF45">
+        <ref role="3bZ5Sy" to="53m0:2Yd1qrJONfw" resolve="ViewWidgetCheck" />
+      </node>
+      <node concept="3clFbS" id="5MibNhOgifD" role="3clF47">
+        <node concept="3clFbF" id="5MibNhOgiNT" role="3cqZAp">
+          <node concept="2YIFZM" id="5MibNhOgiNV" role="3clFbG">
+            <ref role="37wK5l" node="1XfBLRqpMh" resolve="getCheckConceptForWidgetConcept" />
+            <ref role="1Pybhc" node="1XfBLRoP8q" resolve="WidgetConceptMappingHelper" />
+            <node concept="2OqwBi" id="5MibNhOgiNX" role="37wK5m">
+              <node concept="13iPFW" id="5MibNhOgiRZ" role="2Oq$k0" />
+              <node concept="2qgKlT" id="5MibNhOgjf3" role="2OqNvi">
+                <ref role="37wK5l" node="7a1oxbxXUcn" resolve="getWidgetConcept" />
               </node>
             </node>
           </node>

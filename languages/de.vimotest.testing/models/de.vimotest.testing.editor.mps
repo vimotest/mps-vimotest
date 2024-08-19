@@ -59,8 +59,10 @@
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
+      <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <property id="1140524450557" name="separatorText" index="2czwfO" />
+        <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
         <child id="1233141163694" name="separatorStyle" index="sWeuL" />
@@ -293,6 +295,9 @@
         <property id="1340057216891283520" name="falseText" index="1563UK" />
         <property id="1340057216891283518" name="trueText" index="1563Ve" />
       </concept>
+    </language>
+    <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
+      <concept id="7776141288922801652" name="jetbrains.mps.lang.actions.structure.NF_Concept_NewInstance" flags="nn" index="q_SaT" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -1401,7 +1406,23 @@
       <node concept="3F2HdR" id="7a1oxbxVNAE" role="3EZMnx">
         <ref role="1NtTu8" to="53m0:2S2pY397Zv4" resolve="cellChecks" />
         <node concept="2iRkQZ" id="7a1oxbxXygk" role="2czzBx" />
+        <node concept="4$FPG" id="5MibNhOfSNJ" role="4_6I_">
+          <node concept="3clFbS" id="5MibNhOfSNK" role="2VODD2">
+            <node concept="3clFbF" id="5MibNhOfSQ9" role="3cqZAp">
+              <node concept="2OqwBi" id="5MibNhOgMCS" role="3clFbG">
+                <node concept="2OqwBi" id="5MibNhOfT4N" role="2Oq$k0">
+                  <node concept="pncrf" id="5MibNhOfSQ8" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="5MibNhOgLU7" role="2OqNvi">
+                    <ref role="37wK5l" to="fwln:5MibNhOgifA" resolve="getCellWidgetCheckConcept" />
+                  </node>
+                </node>
+                <node concept="q_SaT" id="5MibNhOgNkm" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
+      <node concept="3F0ifn" id="5MibNhOfhvg" role="3EZMnx" />
       <node concept="l2Vlx" id="7a1oxbxVNAI" role="2iSdaV" />
     </node>
   </node>

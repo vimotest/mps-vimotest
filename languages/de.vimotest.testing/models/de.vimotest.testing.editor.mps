@@ -480,7 +480,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="2Yd1qrJOTtQ" role="3EZMnx">
-        <ref role="1NtTu8" to="53m0:2Yd1qrJONfu" resolve="widget" />
+        <ref role="1NtTu8" to="53m0:7QMGS97KEFc" />
         <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
         <node concept="Vb9p2" id="5E6KScpuAQF" role="3F10Kt">
           <property role="Vbekb" value="g1_kEg4/ITALIC" />
@@ -510,7 +510,7 @@
                       <node concept="2OqwBi" id="4kXwATFCvTC" role="2Oq$k0">
                         <node concept="pncrf" id="4kXwATFCvTD" role="2Oq$k0" />
                         <node concept="3TrEf2" id="4kXwATFCvTE" role="2OqNvi">
-                          <ref role="3Tt5mk" to="53m0:2Yd1qrJONfu" resolve="widget" />
+                          <ref role="3Tt5mk" to="53m0:7QMGS97KEFc" />
                         </node>
                       </node>
                       <node concept="2qgKlT" id="4kXwATFCvTF" role="2OqNvi">
@@ -523,7 +523,7 @@
                   <node concept="2OqwBi" id="2wrhDsWaSZk" role="2Oq$k0">
                     <node concept="pncrf" id="2wrhDsWaSZl" role="2Oq$k0" />
                     <node concept="3TrEf2" id="2wrhDsWaSZm" role="2OqNvi">
-                      <ref role="3Tt5mk" to="53m0:2Yd1qrJONfu" resolve="widget" />
+                      <ref role="3Tt5mk" to="53m0:7QMGS97KEFc" />
                     </node>
                   </node>
                   <node concept="3w_OXm" id="2wrhDsWaTfg" role="2OqNvi" />
@@ -565,7 +565,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="2Yd1qrJOUDL" role="3EZMnx">
-        <ref role="1NtTu8" to="53m0:2Yd1qrJONfu" resolve="widget" />
+        <ref role="1NtTu8" to="53m0:7QMGS97KEFc" />
         <node concept="1sVBvm" id="2Yd1qrJOUDN" role="1sWHZn">
           <node concept="3F0A7n" id="4dTU4K8$gaN" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -574,7 +574,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="4dTU4K8$rrS" role="3EZMnx">
-        <ref role="1NtTu8" to="53m0:2Yd1qrJONfu" resolve="widget" />
+        <ref role="1NtTu8" to="53m0:7QMGS97KEFc" />
         <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
         <node concept="1sVBvm" id="4dTU4K8$rrU" role="1sWHZn">
           <node concept="PMmxH" id="4dTU4K8$rsd" role="2wV5jI">

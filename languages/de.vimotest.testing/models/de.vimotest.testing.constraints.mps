@@ -244,7 +244,7 @@
     <property role="3GE5qa" value="test.assert" />
     <ref role="1M2myG" to="53m0:2Yd1qrJONf3" resolve="ViewWidgetAssertion" />
     <node concept="1N5Pfh" id="5PGuvQw8rgO" role="1Mr941">
-      <ref role="1N5Vy1" to="53m0:2Yd1qrJONfu" />
+      <ref role="1N5Vy1" to="53m0:7QMGS97KEFc" />
       <node concept="3k9gUc" id="5PGuvQw8rij" role="3kmjI7">
         <node concept="3clFbS" id="5PGuvQw8rik" role="2VODD2">
           <node concept="3clFbF" id="5PGuvQw8rjq" role="3cqZAp">
@@ -253,7 +253,7 @@
               <node concept="2OqwBi" id="5PGuvQw8ruC" role="37vLTJ">
                 <node concept="3kakTB" id="5PGuvQw8rjp" role="2Oq$k0" />
                 <node concept="3TrEf2" id="5PGuvQw8rFm" role="2OqNvi">
-                  <ref role="3Tt5mk" to="53m0:2Yd1qrJONfu" resolve="widget" />
+                  <ref role="3Tt5mk" to="53m0:7QMGS97KEFc" />
                 </node>
               </node>
             </node>
@@ -299,7 +299,7 @@
               <node concept="2OqwBi" id="1XfBLRoPWA" role="2Oq$k0">
                 <node concept="3kakTB" id="1XfBLRoPLs" role="2Oq$k0" />
                 <node concept="3TrEf2" id="1XfBLRoQ9o" role="2OqNvi">
-                  <ref role="3Tt5mk" to="53m0:2Yd1qrJONfu" resolve="widget" />
+                  <ref role="3Tt5mk" to="53m0:7QMGS97KEFc" />
                 </node>
               </node>
               <node concept="3x8VRR" id="1XfBLRoQMx" role="2OqNvi" />

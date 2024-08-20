@@ -50,6 +50,7 @@
         <child id="3426401106044983341" name="tests" index="30n1Qb" />
       </concept>
       <concept id="3426401106045121475" name="de.vimotest.testing.structure.ViewWidgetAssertion" flags="ng" index="30nzp_">
+        <reference id="3426401106045121502" name="widget" index="30nzpS" />
         <child id="3426401106045146960" name="check" index="30nDbQ" />
       </concept>
       <concept id="4192570430936882686" name="de.vimotest.testing.structure.CheckedCheckValue" flags="ng" index="35STPD">
@@ -60,9 +61,6 @@
       </concept>
       <concept id="4192570430936882688" name="de.vimotest.testing.structure.VisibilityCheckValue" flags="ng" index="35STUn">
         <property id="6835274084472266777" name="expectedIsVisible" index="3XJem9" />
-      </concept>
-      <concept id="7748111721129590460" name="de.vimotest.testing.structure.IProvideWidget" flags="ngI" index="1avIKN">
-        <reference id="3426401106045121502" name="widget" index="30nzpS" />
       </concept>
       <concept id="4309178210352018146" name="de.vimotest.testing.structure.GivenDescriptionWithContext" flags="ng" index="1IbZgy">
         <child id="7445061853131768373" name="context" index="DUiTU" />
@@ -219,13 +217,13 @@
           <property role="TrG5h" value="cell" />
           <node concept="2mJbIq" id="7WgsBLYyPzq" role="2mJbI4">
             <property role="2VM7R0" value="true" />
-            <ref role="3ncAEN" node="2YeT3IBbXKs" resolve="updown" />
+            <ref role="3ncAEN" node="7QMGS97OI39" resolve="forms" />
           </node>
           <node concept="C4FCh" id="7WgsBLYyPzs" role="2mJbI5" />
           <node concept="C4FCg" id="7WgsBLYyPzu" role="2mJbI6" />
           <node concept="2mJlLh" id="7WgsBLYyPzw" role="28FbrT">
             <node concept="3eDL7N" id="7WgsBLYyPzy" role="28FJ0P">
-              <ref role="3eDL7M" node="2YeT3IBbXGu" resolve="image_down" />
+              <ref role="3eDL7M" node="2YeT3IBbXG$" resolve="image_circle" />
             </node>
           </node>
         </node>
@@ -294,7 +292,7 @@
           <node concept="2mJbJ5" id="9CTo7lpcph" role="30nDbQ">
             <node concept="2mJbG1" id="9CTo7lpcpk" role="2mJbJ6">
               <node concept="3eDL7N" id="9CTo7lpJaf" role="3n32fm">
-                <ref role="3eDL7M" node="2YeT3IBbXGt" resolve="image_up" />
+                <ref role="3eDL7M" node="2YeT3IBbXGu" resolve="image_down" />
               </node>
             </node>
           </node>
@@ -307,7 +305,6 @@
             <node concept="1i$qk" id="GUPzt1WPYh" role="1i$rf">
               <property role="3pQJM1" value="Expected Header" />
               <property role="CQgOQ" value="true" />
-              <ref role="30nzpS" node="7WgsBLYysIb" resolve="MyListOfLabel" />
               <node concept="V3Zc6" id="7a1oxby5iE6" role="3B7p0$">
                 <node concept="V3Zdv" id="7a1oxby5iE9" role="V3Zc7">
                   <property role="3egigc" value="A" />
@@ -340,7 +337,7 @@
               <node concept="2mJbJ5" id="5MibNhOjZ1u" role="3B7p0$">
                 <node concept="2mJbG1" id="5MibNhOjZ1v" role="2mJbJ6">
                   <node concept="3eDL7N" id="5MibNhOlDHH" role="3n32fm">
-                    <ref role="3eDL7M" node="2YeT3IBbXGz" resolve="image_active" />
+                    <ref role="3eDL7M" node="2YeT3IBbXGx" resolve="image_star" />
                   </node>
                 </node>
               </node>
@@ -370,6 +367,18 @@
       </node>
       <node concept="3eDL7N" id="2YeT3IBcgjG" role="28FJ0D">
         <ref role="3eDL7M" node="2YeT3IBbXGu" resolve="image_down" />
+      </node>
+    </node>
+    <node concept="28FJ0O" id="7QMGS97OI39" role="28FJ0w">
+      <property role="TrG5h" value="forms" />
+      <node concept="3eDL7N" id="7QMGS97OI3a" role="28FJ0D">
+        <ref role="3eDL7M" node="2YeT3IBbXG$" resolve="image_circle" />
+      </node>
+      <node concept="3eDL7N" id="7QMGS97OI3b" role="28FJ0D">
+        <ref role="3eDL7M" node="2YeT3IBbXGC" resolve="image_triangle" />
+      </node>
+      <node concept="3eDL7N" id="7QMGS97OI3c" role="28FJ0D">
+        <ref role="3eDL7M" node="2YeT3IBbXGx" resolve="image_star" />
       </node>
     </node>
     <node concept="1u6Luv" id="2YeT3IBbXGt" role="1u6Lvn">

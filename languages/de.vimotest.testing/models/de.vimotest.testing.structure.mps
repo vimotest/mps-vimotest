@@ -166,6 +166,11 @@
     <property role="TrG5h" value="ViewWidgetAssertion" />
     <property role="34LRSv" value="assert" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7QMGS97KEFc" role="1TKVEi">
+      <property role="IQ2ns" value="3426401106045121502" />
+      <property role="20kJfa" value="widget" />
+      <ref role="20lvS9" to="at53:F907haLIRF" resolve="ViewWidget" />
+    </node>
     <node concept="1TJgyj" id="2Yd1qrJOTtg" role="1TKVEi">
       <property role="IQ2ns" value="3426401106045146960" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -344,11 +349,6 @@
     <property role="EcuMT" value="7748111721129590460" />
     <property role="3GE5qa" value="test.assert" />
     <property role="TrG5h" value="IProvideWidget" />
-    <node concept="1TJgyj" id="2Yd1qrJONfu" role="1TKVEi">
-      <property role="IQ2ns" value="3426401106045121502" />
-      <property role="20kJfa" value="widget" />
-      <ref role="20lvS9" to="at53:F907haLIRF" resolve="ViewWidget" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5VrLp2zrQlb">
     <property role="EcuMT" value="6835274084472808779" />
@@ -504,6 +504,20 @@
     <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
     <node concept="PrWs8" id="7WgsBLYp0cq" role="PzmwI">
       <ref role="PrY4T" node="7WgsBLYmzis" resolve="IListViewCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5MibNhOn8HA">
+    <property role="EcuMT" value="6670445900426152806" />
+    <property role="3GE5qa" value="test.assert.listview" />
+    <property role="TrG5h" value="ListRowCheck" />
+    <property role="34LRSv" value="row check" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="5MibNhOn8Oc" role="1TKVEi">
+      <property role="IQ2ns" value="6670445900426153228" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="nestedCheck" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     </node>
   </node>
 </model>

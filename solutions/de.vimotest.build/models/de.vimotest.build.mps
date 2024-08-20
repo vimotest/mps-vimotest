@@ -549,6 +549,11 @@
               <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
             </node>
           </node>
+          <node concept="1SiIV0" id="7QMGS97YOAu" role="3bR37C">
+            <node concept="3bR9La" id="7QMGS97YOAv" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
+            </node>
+          </node>
         </node>
         <node concept="1E0d5M" id="6vtOLtwgJty" role="1E1XAP">
           <ref role="1E0d5P" node="6vtOLtwgJp4" resolve="de.vimotest.mpswidgets.runtime" />

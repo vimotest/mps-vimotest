@@ -2,6 +2,7 @@
 <model ref="r:c4e16ab8-5379-4e0f-87e3-dc735c4b6b61(de.vimotest.mpswidgets.generator.templates@generator)">
   <persistence version="9" />
   <languages>
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -159,6 +160,10 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
+      </concept>
     </language>
   </registry>
   <node concept="bUwia" id="6vtOLtwfniZ">
@@ -197,6 +202,10 @@
       </node>
       <node concept="3clFb_" id="g_CeiMb" role="jymVt">
         <property role="TrG5h" value="_cell_factory_method_" />
+        <node concept="15s5l7" id="7QMGS97YHBY" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Private method _cell_factory_method_(EditorContext,node&lt;&gt;):EditorCell is never used&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/8101436443850399677]&quot;;" />
+          <property role="huDt6" value="Warning: Private method _cell_factory_method_(EditorContext,node&lt;&gt;):EditorCell is never used" />
+        </node>
         <node concept="3uibUv" id="5Hr2i_R23Rv" role="3clF45">
           <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
         </node>

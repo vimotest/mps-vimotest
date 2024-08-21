@@ -21,7 +21,7 @@
       <concept id="9155943921465570536" name="de.vimotest.testing.structure.WidgetRowsCheckValue" flags="ng" index="1i$qk">
         <property id="6670445900425011714" name="assertHeader" index="CQgOQ" />
         <property id="8517562708091898534" name="expectedHeader" index="3pQJM1" />
-        <child id="8072781894854610736" name="cellChecks" index="3o2WtG" />
+        <child id="8072781894854610736" name="rows" index="3o2WtG" />
       </concept>
       <concept id="9155943921465570482" name="de.vimotest.testing.structure.ListViewCheck" flags="ng" index="1i$re">
         <child id="9155943921465570483" name="checks" index="1i$rf" />
@@ -35,7 +35,7 @@
       <concept id="5213916851000129542" name="de.vimotest.testing.structure.CheckBoxCheck" flags="ng" index="C4Fn6">
         <child id="5213916851000129543" name="checks" index="C4Fn7" />
       </concept>
-      <concept id="6670445900426152806" name="de.vimotest.testing.structure.ListRowCheck" flags="ng" index="CNEhi">
+      <concept id="6670445900426152806" name="de.vimotest.testing.structure.ListCheckRow" flags="ng" index="CNEhi">
         <child id="6670445900426153228" name="nestedCheck" index="CNE8S" />
       </concept>
       <concept id="7445061853131767032" name="de.vimotest.testing.structure.ThenDescriptionWithAssert" flags="ng" index="DUd2R">

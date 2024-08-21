@@ -2238,7 +2238,7 @@
                 <node concept="2OqwBi" id="7a1oxby5iYs" role="2Oq$k0">
                   <node concept="13iPFW" id="7a1oxby5iL1" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="7a1oxby5jgM" role="2OqNvi">
-                    <ref role="3TtcxE" to="53m0:2S2pY397Zv4" resolve="cellChecks" />
+                    <ref role="3TtcxE" to="53m0:708i5MC0SWK" resolve="rows" />
                   </node>
                 </node>
                 <node concept="2es0OD" id="7a1oxby5nPC" role="2OqNvi">
@@ -2267,8 +2267,13 @@
                             <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
                           </node>
                           <node concept="2OqwBi" id="7a1oxby69Vq" role="33vP2m">
-                            <node concept="37vLTw" id="7a1oxby69Vr" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7a1oxby5nPG" resolve="it" />
+                            <node concept="2OqwBi" id="708i5MC3CWz" role="2Oq$k0">
+                              <node concept="37vLTw" id="7a1oxby69Vr" role="2Oq$k0">
+                                <ref role="3cqZAo" node="7a1oxby5nPG" resolve="it" />
+                              </node>
+                              <node concept="3TrEf2" id="708i5MC3DDl" role="2OqNvi">
+                                <ref role="3Tt5mk" to="53m0:5MibNhOn8Oc" resolve="nestedCheck" />
+                              </node>
                             </node>
                             <node concept="2qgKlT" id="7a1oxby69Vs" role="2OqNvi">
                               <ref role="37wK5l" node="3CJ09vZMLMB" resolve="createEditorCellForCheck" />
@@ -2289,8 +2294,13 @@
                       </node>
                       <node concept="3clFbF" id="3CJ09vZF_bd" role="3cqZAp">
                         <node concept="2OqwBi" id="3CJ09vZF_SF" role="3clFbG">
-                          <node concept="37vLTw" id="5MibNhOf2V0" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7a1oxby5nPG" resolve="it" />
+                          <node concept="2OqwBi" id="708i5MC3Elp" role="2Oq$k0">
+                            <node concept="37vLTw" id="5MibNhOf2V0" role="2Oq$k0">
+                              <ref role="3cqZAo" node="7a1oxby5nPG" resolve="it" />
+                            </node>
+                            <node concept="3TrEf2" id="708i5MC3F4a" role="2OqNvi">
+                              <ref role="3Tt5mk" to="53m0:5MibNhOn8Oc" resolve="nestedCheck" />
+                            </node>
                           </node>
                           <node concept="2qgKlT" id="3CJ09vZFEHy" role="2OqNvi">
                             <ref role="37wK5l" node="2Yd1qrJP3FF" resolve="applyOnWidget" />
@@ -2333,7 +2343,7 @@
             <node concept="2OqwBi" id="7oOtyuJXxwo" role="2Oq$k0">
               <node concept="13iPFW" id="7oOtyuJXxjd" role="2Oq$k0" />
               <node concept="3Tsc0h" id="7oOtyuJXxJb" role="2OqNvi">
-                <ref role="3TtcxE" to="53m0:2S2pY397Zv4" resolve="cellChecks" />
+                <ref role="3TtcxE" to="53m0:708i5MC0SWK" resolve="rows" />
               </node>
             </node>
             <node concept="3GX2aA" id="7oOtyuJX_W9" role="2OqNvi" />

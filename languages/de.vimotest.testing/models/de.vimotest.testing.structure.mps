@@ -31,6 +31,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -475,9 +476,16 @@
     <node concept="1TJgyj" id="2S2pY397Zv4" role="1TKVEi">
       <property role="IQ2ns" value="3315326490842757060" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="cellChecks" />
+      <property role="20kJfa" value="cellChecks_depr" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
+    </node>
+    <node concept="1TJgyj" id="708i5MC0SWK" role="1TKVEi">
+      <property role="IQ2ns" value="8072781894854610736" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="rows" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5MibNhOn8HA" resolve="ListCheckRow" />
     </node>
     <node concept="PrWs8" id="2S2pY397ZW5" role="PzmwI">
       <ref role="PrY4T" node="6I6OCWxY3UW" resolve="IProvideWidget" />
@@ -509,8 +517,9 @@
   <node concept="1TIwiD" id="5MibNhOn8HA">
     <property role="EcuMT" value="6670445900426152806" />
     <property role="3GE5qa" value="test.assert.listview" />
-    <property role="TrG5h" value="ListRowCheck" />
+    <property role="TrG5h" value="ListCheckRow" />
     <property role="34LRSv" value="row check" />
+    <property role="R4oN_" value="A wrapper around a cell widget check" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyj" id="5MibNhOn8Oc" role="1TKVEi">
       <property role="IQ2ns" value="6670445900426153228" />

@@ -113,9 +113,11 @@
       <concept id="5213916851000129488" name="de.vimotest.viewmodel.structure.VisibilityFeature" flags="ng" index="C4FCg" />
       <concept id="5213916851000129489" name="de.vimotest.viewmodel.structure.EnabledFeature" flags="ng" index="C4FCh" />
       <concept id="5213916851000129514" name="de.vimotest.viewmodel.structure.CheckBoxWidget" flags="ng" index="C4FCE">
+        <property id="7278489671513390380" name="defaultText" index="1ITtVB" />
         <child id="5213916851000129515" name="checked" index="C4FCF" />
         <child id="5213916851000129516" name="visibility" index="C4FCG" />
         <child id="5213916851000129517" name="enabled" index="C4FCH" />
+        <child id="7278489671513126078" name="text" index="1ISttP" />
       </concept>
       <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6" />
       <concept id="8882441622785832551" name="de.vimotest.viewmodel.structure.LabelWidget" flags="ng" index="V3ZfZ">
@@ -149,10 +151,21 @@
     <node concept="103ZXx" id="F907haLUeD" role="103ZXC" />
     <node concept="103ZXB" id="F907haLUeE" role="103ZXF">
       <node concept="C4FCE" id="6vtOLtwdT_M" role="103ZUC">
-        <property role="TrG5h" value="MyFlag" />
+        <property role="TrG5h" value="MyFlagWithLabel" />
+        <property role="1ITtVB" value="With Label" />
         <node concept="C4FCf" id="6vtOLtwdT_N" role="C4FCF" />
         <node concept="C4FCg" id="6vtOLtwdT_O" role="C4FCG" />
         <node concept="C4FCh" id="6vtOLtwdT_P" role="C4FCH" />
+        <node concept="V3Zf6" id="6k2oWGbVooO" role="1ISttP">
+          <property role="2VM7R0" value="true" />
+        </node>
+      </node>
+      <node concept="C4FCE" id="6k2oWGbVooQ" role="103ZUC">
+        <property role="TrG5h" value="MyFlagNoLabel" />
+        <node concept="C4FCf" id="6k2oWGbVooS" role="C4FCF" />
+        <node concept="C4FCg" id="6k2oWGbVooU" role="C4FCG" />
+        <node concept="C4FCh" id="6k2oWGbVooW" role="C4FCH" />
+        <node concept="V3Zf6" id="6k2oWGbVooY" role="1ISttP" />
       </node>
       <node concept="V3ZfZ" id="7H4Lpx0kZbn" role="103ZUC">
         <property role="TrG5h" value="MyLabel" />
@@ -239,7 +252,7 @@
     <node concept="3LKzX3" id="3JdhG1lT89S" role="30n1Qb">
       <property role="3LKBmK" value="My Scenario" />
       <node concept="DUd2R" id="3JdhG1lT89X" role="DUd56">
-        <property role="1IbZgC" value="is not checked" />
+        <property role="1IbZgC" value="is checked" />
         <node concept="30nzp_" id="3JdhG1lT90w" role="DUiSb">
           <ref role="30nzpS" node="6vtOLtwdT_M" resolve="MyFlag" />
           <node concept="C4Fn6" id="3JdhG1lT90z" role="30nDbQ">
@@ -251,6 +264,18 @@
             </node>
             <node concept="35STUn" id="6NwBQMyFBKA" role="C4Fn7">
               <property role="3XJem9" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="DUd2R" id="6k2oWGbVoBN" role="DUd56">
+        <property role="1IbZgC" value="is not checked" />
+        <node concept="30nzp_" id="6k2oWGbVoBP" role="DUiSb">
+          <ref role="30nzpS" node="6k2oWGbVooQ" resolve="MyFlagNoLabel" />
+          <node concept="C4Fn6" id="6k2oWGbVoBR" role="30nDbQ">
+            <node concept="35STPD" id="6k2oWGbVoBS" role="C4Fn7" />
+            <node concept="V3Zdv" id="6k2oWGbY0W0" role="C4Fn7">
+              <property role="3egigc" value="My Label" />
             </node>
           </node>
         </node>

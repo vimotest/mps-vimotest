@@ -40,6 +40,9 @@
       <property role="3dRBvX" value="true" />
       <ref role="2WVz4k" node="1Yc3x6zo$jf" resolve="Checked" />
     </node>
+    <node concept="2WVz4l" id="6k2oWGbSVhY" role="2WV$Zc">
+      <ref role="2WVz4k" node="7H4Lpx0an3A" resolve="Text" />
+    </node>
     <node concept="2WVz4l" id="1Yc3x6zoTLY" role="2WV$Zc">
       <ref role="2WVz4k" node="1Yc3x6zoTLW" resolve="Visibility" />
     </node>

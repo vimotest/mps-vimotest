@@ -221,10 +221,22 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
     </node>
+    <node concept="1TJgyj" id="6k2oWGbSViY" role="1TKVEi">
+      <property role="IQ2ns" value="7278489671513126078" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7H4Lpx0iNpu" resolve="TextFeature" />
+    </node>
     <node concept="1TJgyi" id="3CJ09vZEUcl" role="1TKVEl">
       <property role="IQ2nx" value="4192570430934721301" />
       <property role="TrG5h" value="defaultIsChecked" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6k2oWGbTVOG" role="1TKVEl">
+      <property role="IQ2nx" value="7278489671513390380" />
+      <property role="TrG5h" value="defaultText" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="PlHQZ" id="2ZnRpGqKU3p">

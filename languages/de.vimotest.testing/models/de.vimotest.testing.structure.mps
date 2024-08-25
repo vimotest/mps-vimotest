@@ -402,6 +402,9 @@
     <node concept="PrWs8" id="7H4Lpx0iNr8" role="PzmwI">
       <ref role="PrY4T" node="7H4Lpx0iNqj" resolve="ILabelCheckValue" />
     </node>
+    <node concept="PrWs8" id="6k2oWGbSViZ" role="PzmwI">
+      <ref role="PrY4T" node="69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3pKiF2wNf5v">
     <property role="EcuMT" value="3922717397912187231" />

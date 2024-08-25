@@ -23,6 +23,9 @@
         <property id="8517562708091898534" name="expectedHeader" index="3pQJM1" />
         <child id="8072781894854610736" name="rows" index="3o2WtG" />
       </concept>
+      <concept id="9155943921465570537" name="de.vimotest.testing.structure.SelectedRowCheckValue" flags="ng" index="1i$ql">
+        <property id="3198847476153780042" name="selectedIndex" index="3YEp6u" />
+      </concept>
       <concept id="9155943921465570482" name="de.vimotest.testing.structure.ListViewCheck" flags="ng" index="1i$re">
         <child id="9155943921465570483" name="checks" index="1i$rf" />
       </concept>
@@ -381,6 +384,16 @@
                   </node>
                 </node>
               </node>
+              <node concept="CNEhi" id="2L$_HjiTwWG" role="3o2WtG">
+                <node concept="V3Zc6" id="2L$_HjiTwWI" role="CNE8S">
+                  <node concept="V3Zdv" id="2L$_HjiTwWJ" role="V3Zc7">
+                    <property role="3egigc" value="D" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1i$ql" id="2L$_HjiPdwe" role="1i$rf">
+              <property role="3YEp6u" value="3" />
             </node>
           </node>
         </node>
@@ -408,6 +421,9 @@
                   </node>
                 </node>
               </node>
+            </node>
+            <node concept="1i$ql" id="2L$_HjiOn1q" role="1i$rf">
+              <property role="3YEp6u" value="1" />
             </node>
           </node>
         </node>

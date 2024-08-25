@@ -516,6 +516,11 @@
     <node concept="PrWs8" id="7WgsBLYp0cq" role="PzmwI">
       <ref role="PrY4T" node="7WgsBLYmzis" resolve="IListViewCheckValue" />
     </node>
+    <node concept="1TJgyi" id="2L$_HjiNgta" role="1TKVEl">
+      <property role="IQ2nx" value="3198847476153780042" />
+      <property role="TrG5h" value="selectedIndex" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5MibNhOn8HA">
     <property role="EcuMT" value="6670445900426152806" />

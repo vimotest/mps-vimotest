@@ -981,7 +981,7 @@
   </node>
   <node concept="PKFIW" id="6I6OCWxY99K">
     <property role="3GE5qa" value="test.assert" />
-    <property role="TrG5h" value="ViewWidgetCheck_Inspector_EC" />
+    <property role="TrG5h" value="ViewWidgetCheck_Inspector_Checks_EC" />
     <ref role="1XX52x" to="53m0:2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     <node concept="3F0ifn" id="6I6OCWxY99M" role="2wV5jI" />
   </node>
@@ -1112,7 +1112,7 @@
     </node>
   </node>
   <node concept="PKFIW" id="6I6OCWxYiwe">
-    <property role="TrG5h" value="CheckBoxCheck_Inspector_EC" />
+    <property role="TrG5h" value="CheckBoxCheck_Inspector_Checks_EC" />
     <property role="3GE5qa" value="test.assert.checkbox" />
     <ref role="1XX52x" to="53m0:69Ym88BeFj9" resolve="CheckBoxCheck" />
     <node concept="3F2HdR" id="6I6OCWxYiwf" role="2wV5jI">
@@ -1200,7 +1200,7 @@
     </node>
   </node>
   <node concept="PKFIW" id="7H4Lpx0iNqw">
-    <property role="TrG5h" value="LabelCheck_Inspector_EC" />
+    <property role="TrG5h" value="LabelCheck_Inspector_Checks_EC" />
     <property role="3GE5qa" value="test.assert.label" />
     <ref role="1XX52x" to="53m0:7H4Lpx0iNqu" resolve="LabelCheck" />
     <node concept="1PE4EZ" id="7H4Lpx0iNqy" role="1PM95z">
@@ -1363,7 +1363,7 @@
     </node>
   </node>
   <node concept="PKFIW" id="3pKiF2wNf5R">
-    <property role="TrG5h" value="ImageCheck_Inspector_EC" />
+    <property role="TrG5h" value="ImageCheck_Inspector_Checks_EC" />
     <property role="3GE5qa" value="test.assert.image" />
     <ref role="1XX52x" to="53m0:3pKiF2wNf5P" resolve="ImageCheck" />
     <node concept="1PE4EZ" id="3pKiF2wNf5T" role="1PM95z">
@@ -1411,7 +1411,7 @@
     </node>
   </node>
   <node concept="PKFIW" id="7WgsBLYmziO">
-    <property role="TrG5h" value="ListViewCheck_Inspector_EC" />
+    <property role="TrG5h" value="ListViewCheck_Inspector_Checks_EC" />
     <property role="3GE5qa" value="test.assert.listview" />
     <ref role="1XX52x" to="53m0:7WgsBLYmziM" resolve="ListViewCheck" />
     <node concept="1PE4EZ" id="7WgsBLYmziQ" role="1PM95z">
@@ -1560,7 +1560,7 @@
     </node>
   </node>
   <node concept="PKFIW" id="6k2oWGc17Ka">
-    <property role="TrG5h" value="ViewWidgetCheck_Inspector_withAddButtons_EC" />
+    <property role="TrG5h" value="ViewWidgetCheck_Inspector_EC" />
     <property role="3GE5qa" value="test.assert" />
     <ref role="1XX52x" to="53m0:2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     <node concept="3EZMnI" id="6k2oWGc17Kb" role="2wV5jI">

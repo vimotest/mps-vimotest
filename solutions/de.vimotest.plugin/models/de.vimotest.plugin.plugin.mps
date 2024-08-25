@@ -3852,7 +3852,7 @@
                           </node>
                           <node concept="3JPx81" id="2_MKLxJfb5A" role="2OqNvi">
                             <node concept="1rXfSq" id="2_MKLxJfb5B" role="25WWJ7">
-                              <ref role="37wK5l" node="2_MKLxJf0im" resolve="getCheckInterfaceSubstituteMenu" />
+                              <ref role="37wK5l" node="2_MKLxJf0im" resolve="getCheckInterfaceSubstituteMenuName" />
                               <node concept="37vLTw" id="2_MKLxJfb5C" role="37wK5m">
                                 <ref role="3cqZAo" node="2_MKLxJfb5D" resolve="it" />
                               </node>
@@ -4333,7 +4333,7 @@
         <node concept="3clFbF" id="2_MKLxJfxv1" role="3cqZAp">
           <node concept="37vLTI" id="2_MKLxJfxv2" role="3clFbG">
             <node concept="1rXfSq" id="2_MKLxJfxv3" role="37vLTx">
-              <ref role="37wK5l" node="JW9DBRQiPl" resolve="getCheckInspectorEditorComponentName" />
+              <ref role="37wK5l" node="2_MKLxJf0im" resolve="getCheckInterfaceSubstituteMenuName" />
               <node concept="37vLTw" id="2_MKLxJfxv4" role="37wK5m">
                 <ref role="3cqZAo" node="2_MKLxJfky_" resolve="widgetDefinition" />
               </node>
@@ -5110,7 +5110,7 @@
       <node concept="3cqZAl" id="2S2pY399oGu" role="3clF45" />
     </node>
     <node concept="3clFb_" id="JW9DBRQiK3" role="jymVt">
-      <property role="TrG5h" value="generateWidgetCheckEditor" />
+      <property role="TrG5h" value="generateWidgetCheckInspectorChecksEditorComponent" />
       <node concept="37vLTG" id="JW9DBRQiK4" role="3clF46">
         <property role="TrG5h" value="widgetDefinition" />
         <node concept="3Tqbb2" id="JW9DBRQiK5" role="1tU5fm">
@@ -6055,7 +6055,7 @@
       <node concept="17QB3L" id="69Ym88B7EiQ" role="3clF45" />
     </node>
     <node concept="2YIFZL" id="2_MKLxJf0im" role="jymVt">
-      <property role="TrG5h" value="getCheckInterfaceSubstituteMenu" />
+      <property role="TrG5h" value="getCheckInterfaceSubstituteMenuName" />
       <node concept="37vLTG" id="2_MKLxJf0in" role="3clF46">
         <property role="TrG5h" value="definitionNode" />
         <node concept="3Tqbb2" id="2_MKLxJf0io" role="1tU5fm">
@@ -6107,7 +6107,7 @@
       <node concept="17QB3L" id="6mWHjmRM9xs" role="3clF45" />
     </node>
     <node concept="2YIFZL" id="JW9DBRQiPl" role="jymVt">
-      <property role="TrG5h" value="getCheckInspectorEditorComponentName" />
+      <property role="TrG5h" value="getCheckInspectorChecksEditorComponentName" />
       <node concept="37vLTG" id="JW9DBRQiPm" role="3clF46">
         <property role="TrG5h" value="definitionNode" />
         <node concept="3Tqbb2" id="JW9DBRQiPn" role="1tU5fm">
@@ -6118,7 +6118,7 @@
         <node concept="3clFbF" id="JW9DBRQiPp" role="3cqZAp">
           <node concept="3cpWs3" id="JW9DBRQiPq" role="3clFbG">
             <node concept="Xl_RD" id="JW9DBRQiPt" role="3uHU7w">
-              <property role="Xl_RC" value="_Inspector_EC" />
+              <property role="Xl_RC" value="_Inspector_Checks_EC" />
             </node>
             <node concept="1rXfSq" id="4xrzs1wfv7A" role="3uHU7B">
               <ref role="37wK5l" node="JW9DBRQiP9" resolve="getCheckConceptName" />

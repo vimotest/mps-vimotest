@@ -154,8 +154,12 @@
         <property role="TrG5h" value="MyFlagWithLabel" />
         <property role="1ITtVB" value="With Label" />
         <node concept="C4FCf" id="6vtOLtwdT_N" role="C4FCF" />
-        <node concept="C4FCg" id="6vtOLtwdT_O" role="C4FCG" />
-        <node concept="C4FCh" id="6vtOLtwdT_P" role="C4FCH" />
+        <node concept="C4FCg" id="6vtOLtwdT_O" role="C4FCG">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCh" id="6vtOLtwdT_P" role="C4FCH">
+          <property role="2VM7R0" value="true" />
+        </node>
         <node concept="V3Zf6" id="6k2oWGbVooO" role="1ISttP">
           <property role="2VM7R0" value="true" />
         </node>
@@ -179,8 +183,12 @@
         <node concept="2mJbIq" id="3pKiF2wQ5dk" role="2mJbI4">
           <property role="2VM7R0" value="true" />
         </node>
-        <node concept="C4FCh" id="3pKiF2wQ5dm" role="2mJbI5" />
-        <node concept="C4FCg" id="3pKiF2wQ5do" role="2mJbI6" />
+        <node concept="C4FCh" id="3pKiF2wQ5dm" role="2mJbI5">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCg" id="3pKiF2wQ5do" role="2mJbI6">
+          <property role="2VM7R0" value="true" />
+        </node>
         <node concept="2mJlLh" id="2YeT3IB8PiU" role="28FbrT">
           <node concept="3eDL7N" id="2YeT3IB8PiV" role="28FJ0P">
             <ref role="3eDL7M" node="2YeT3IBbXGv" resolve="image_info" />
@@ -208,35 +216,55 @@
           <node concept="V3Zf6" id="7WgsBLYysIm" role="V3ZfK">
             <property role="2VM7R0" value="true" />
           </node>
-          <node concept="C4FCh" id="7WgsBLYysIn" role="V3ZfL" />
-          <node concept="C4FCg" id="7WgsBLYysIo" role="V3ZfM" />
+          <node concept="C4FCh" id="7WgsBLYysIn" role="V3ZfL">
+            <property role="2VM7R0" value="true" />
+          </node>
+          <node concept="C4FCg" id="7WgsBLYysIo" role="V3ZfM">
+            <property role="2VM7R0" value="true" />
+          </node>
         </node>
-        <node concept="C4FCg" id="7WgsBLYysIe" role="1i$o7" />
-        <node concept="C4FCh" id="7WgsBLYysIg" role="1i$o0" />
+        <node concept="C4FCg" id="7WgsBLYysIe" role="1i$o7">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCh" id="7WgsBLYysIg" role="1i$o0">
+          <property role="2VM7R0" value="true" />
+        </node>
         <node concept="1i$ok" id="7WgsBLYysIi" role="1rSL7">
           <property role="2VM7R0" value="true" />
           <property role="3AQkK7" value="My Header" />
           <property role="2VM7_e" value="true" />
         </node>
-        <node concept="1i$ol" id="7WgsBLYysIk" role="1uGH_" />
+        <node concept="1i$ol" id="7WgsBLYysIk" role="1uGH_">
+          <property role="2VM7R0" value="true" />
+        </node>
       </node>
       <node concept="1i$o6" id="7WgsBLYyPze" role="103ZUC">
         <property role="TrG5h" value="MyListOfImages" />
-        <node concept="C4FCg" id="7WgsBLYyPzj" role="1i$o7" />
-        <node concept="C4FCh" id="7WgsBLYyPzk" role="1i$o0" />
+        <node concept="C4FCg" id="7WgsBLYyPzj" role="1i$o7">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCh" id="7WgsBLYyPzk" role="1i$o0">
+          <property role="2VM7R0" value="true" />
+        </node>
         <node concept="1i$ok" id="7WgsBLYyPzl" role="1rSL7">
           <property role="3AQkK7" value="My Image" />
           <property role="2VM7_e" value="true" />
         </node>
-        <node concept="1i$ol" id="7WgsBLYyPzm" role="1uGH_" />
+        <node concept="1i$ol" id="7WgsBLYyPzm" role="1uGH_">
+          <property role="2VM7R0" value="true" />
+        </node>
         <node concept="2mJbI3" id="7WgsBLYyPzo" role="1_COu">
           <property role="TrG5h" value="cell" />
           <node concept="2mJbIq" id="7WgsBLYyPzq" role="2mJbI4">
             <property role="2VM7R0" value="true" />
             <ref role="3ncAEN" node="7QMGS97OI39" resolve="forms" />
           </node>
-          <node concept="C4FCh" id="7WgsBLYyPzs" role="2mJbI5" />
-          <node concept="C4FCg" id="7WgsBLYyPzu" role="2mJbI6" />
+          <node concept="C4FCh" id="7WgsBLYyPzs" role="2mJbI5">
+            <property role="2VM7R0" value="true" />
+          </node>
+          <node concept="C4FCg" id="7WgsBLYyPzu" role="2mJbI6">
+            <property role="2VM7R0" value="true" />
+          </node>
           <node concept="2mJlLh" id="7WgsBLYyPzw" role="28FbrT">
             <node concept="3eDL7N" id="7WgsBLYyPzy" role="28FJ0P">
               <ref role="3eDL7M" node="2YeT3IBbXG$" resolve="image_circle" />
@@ -265,6 +293,9 @@
             <node concept="35STUn" id="6NwBQMyFBKA" role="C4Fn7">
               <property role="3XJem9" value="true" />
             </node>
+            <node concept="V3Zdv" id="6k2oWGc7GAE" role="C4Fn7">
+              <property role="3egigc" value="My Label" />
+            </node>
           </node>
         </node>
       </node>
@@ -274,9 +305,6 @@
           <ref role="30nzpS" node="6k2oWGbVooQ" resolve="MyFlagNoLabel" />
           <node concept="C4Fn6" id="6k2oWGbVoBR" role="30nDbQ">
             <node concept="35STPD" id="6k2oWGbVoBS" role="C4Fn7" />
-            <node concept="V3Zdv" id="6k2oWGbY0W0" role="C4Fn7">
-              <property role="3egigc" value="My Label" />
-            </node>
           </node>
         </node>
       </node>
@@ -286,12 +314,6 @@
           <node concept="V3Zc6" id="2_MKLxJoIKF" role="30nDbQ">
             <node concept="V3Zdv" id="2_MKLxJpw_X" role="V3Zc7">
               <property role="3egigc" value="My Expectation Text" />
-            </node>
-            <node concept="35STUl" id="2_MKLxJpwA2" role="V3Zc7">
-              <property role="3XJMQh" value="true" />
-            </node>
-            <node concept="35STUn" id="6NwBQMyFBKI" role="V3Zc7">
-              <property role="3XJem9" value="true" />
             </node>
           </node>
         </node>

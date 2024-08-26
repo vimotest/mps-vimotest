@@ -2062,5 +2062,40 @@
       <node concept="2iRfu4" id="2L$_HjiPgQq" role="2iSdaV" />
     </node>
   </node>
+  <node concept="22mcaB" id="K_fAvR3LDI">
+    <property role="TrG5h" value="ITreeViewCheckValue_SubstituteMenu" />
+    <property role="3GE5qa" value="test.assert.treeview" />
+    <ref role="aqKnT" to="53m0:K_fAvR3LDG" resolve="ITreeViewCheckValue" />
+    <node concept="22hDWj" id="K_fAvR3LDJ" role="22hAXT" />
+    <node concept="2VfDsV" id="K_fAvR3LDK" role="3ft7WO">
+      <node concept="1GpqWn" id="K_fAvR3LDL" role="1Go12V">
+        <node concept="3clFbS" id="K_fAvR3LDM" role="2VODD2">
+          <node concept="3clFbF" id="K_fAvR3LDN" role="3cqZAp">
+            <node concept="3fqX7Q" id="K_fAvR3LDO" role="3clFbG">
+              <node concept="2YIFZM" id="K_fAvR3LDP" role="3fr31v">
+                <ref role="37wK5l" node="2_MKLxJcA3M" />
+                <ref role="1Pybhc" node="2_MKLxJcA2h" />
+                <node concept="1GpqW3" id="K_fAvR3LDQ" role="37wK5m" />
+                <node concept="3bvxqY" id="K_fAvR3LDR" role="37wK5m" />
+                <node concept="1J7kdh" id="K_fAvR3LDS" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="K_fAvR3LEe">
+    <property role="TrG5h" value="TreeViewCheck_Inspector_Checks_EC" />
+    <property role="3GE5qa" value="test.assert.treeview" />
+    <ref role="1XX52x" to="53m0:K_fAvR3LE2" resolve="TreeViewCheck" />
+    <node concept="1PE4EZ" id="K_fAvR3LEg" role="1PM95z">
+      <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_Checks_EC" />
+    </node>
+    <node concept="3F2HdR" id="K_fAvR3LEh" role="2wV5jI">
+      <ref role="1NtTu8" to="53m0:K_fAvR3LE3" resolve="checks" />
+      <node concept="2iRkQZ" id="K_fAvR3LEi" role="2czzBx" />
+    </node>
+  </node>
 </model>
 

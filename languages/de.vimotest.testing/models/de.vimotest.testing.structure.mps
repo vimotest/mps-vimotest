@@ -537,5 +537,37 @@
       <ref role="20lvS9" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     </node>
   </node>
+  <node concept="PlHQZ" id="K_fAvR3LDG">
+    <property role="EcuMT" value="875174318840945260" />
+    <property role="TrG5h" value="ITreeViewCheckValue" />
+    <property role="3GE5qa" value="test.assert.treeview" />
+    <node concept="PrWs8" id="K_fAvR3LDH" role="PrDN$">
+      <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="K_fAvR3LE2">
+    <property role="EcuMT" value="875174318840945282" />
+    <property role="TrG5h" value="TreeViewCheck" />
+    <property role="34LRSv" value="check tree view" />
+    <property role="3GE5qa" value="test.assert.treeview" />
+    <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
+    <node concept="1TJgyj" id="K_fAvR3LE3" role="1TKVEi">
+      <property role="IQ2ns" value="875174318840945283" />
+      <property role="20kJfa" value="checks" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="K_fAvR3LDG" resolve="ITreeViewCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="K_fAvR3LF8">
+    <property role="EcuMT" value="875174318840945352" />
+    <property role="TrG5h" value="HierarchicalWidgetRowsCheckValue" />
+    <property role="34LRSv" value="hierarchic widget rows" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="PrWs8" id="K_fAvR3LF9" role="PzmwI">
+      <ref role="PrY4T" node="K_fAvR3LDG" resolve="ITreeViewCheckValue" />
+    </node>
+  </node>
 </model>
 

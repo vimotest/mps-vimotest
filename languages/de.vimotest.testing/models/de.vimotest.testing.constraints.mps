@@ -477,5 +477,30 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="K_fAvR3LE4">
+    <property role="TrG5h" value="TreeViewCheck_Constraints" />
+    <property role="3GE5qa" value="test.assert.treeview" />
+    <ref role="1M2myG" to="53m0:K_fAvR3LE2" resolve="TreeViewCheck" />
+    <node concept="9S07l" id="K_fAvR3LE5" role="9Vyp8">
+      <node concept="3clFbS" id="K_fAvR3LE6" role="2VODD2">
+        <node concept="3clFbF" id="K_fAvR3LE7" role="3cqZAp">
+          <node concept="17R0WA" id="K_fAvR3LE8" role="3clFbG">
+            <node concept="35c_gC" id="K_fAvR3LE9" role="3uHU7w">
+              <ref role="35c_gD" to="at53:K_fAvR3LCP" resolve="TreeViewWidget" />
+            </node>
+            <node concept="2OqwBi" id="K_fAvR3LEa" role="3uHU7B">
+              <node concept="35c_gC" id="K_fAvR3LEb" role="2Oq$k0">
+                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" />
+              </node>
+              <node concept="2qgKlT" id="K_fAvR3LEc" role="2OqNvi">
+                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" />
+                <node concept="nLn13" id="K_fAvR3LEd" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

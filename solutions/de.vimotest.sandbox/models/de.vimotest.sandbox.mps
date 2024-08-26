@@ -147,6 +147,14 @@
         <property id="3016673643442476650" name="width" index="Lsnro" />
         <property id="3016673643442476939" name="height" index="LsnsT" />
       </concept>
+      <concept id="875174318840945196" name="de.vimotest.viewmodel.structure.HierarchicalWidgetRowsFeature" flags="ng" index="3Vayhb" />
+      <concept id="875174318840945205" name="de.vimotest.viewmodel.structure.TreeViewWidget" flags="ng" index="3Vayhi">
+        <child id="875174318840945207" name="selectedRow" index="3Vayhg" />
+        <child id="875174318840945206" name="hierarchicalWidgetRows" index="3Vayhh" />
+        <child id="875174318840945209" name="enabled" index="3Vayhu" />
+        <child id="875174318840945208" name="visibility" index="3Vayhv" />
+        <child id="875174318840972754" name="columnWidgetTypes" index="3VaFIP" />
+      </concept>
     </language>
   </registry>
   <node concept="103ZX$" id="F907haLUeC">
@@ -274,6 +282,27 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3Vayhi" id="K_fAvR606v" role="103ZUC">
+        <property role="TrG5h" value="MyTreeView" />
+        <node concept="V3ZfZ" id="K_fAvR606w" role="3VaFIP">
+          <property role="TrG5h" value="columnCell" />
+          <property role="3mJ_rA" value="Name" />
+          <node concept="V3Zf6" id="K_fAvR606x" role="V3ZfK" />
+          <node concept="C4FCh" id="K_fAvR606y" role="V3ZfL" />
+          <node concept="C4FCg" id="K_fAvR606z" role="V3ZfM" />
+        </node>
+        <node concept="V3ZfZ" id="K_fAvR6I3r" role="3VaFIP">
+          <property role="TrG5h" value="columnCell" />
+          <property role="3mJ_rA" value="Description" />
+          <node concept="V3Zf6" id="K_fAvR6I3s" role="V3ZfK" />
+          <node concept="C4FCh" id="K_fAvR6I3t" role="V3ZfL" />
+          <node concept="C4FCg" id="K_fAvR6I3u" role="V3ZfM" />
+        </node>
+        <node concept="3Vayhb" id="K_fAvR606_" role="3Vayhh" />
+        <node concept="1i$ol" id="K_fAvR606B" role="3Vayhg" />
+        <node concept="C4FCg" id="K_fAvR606D" role="3Vayhv" />
+        <node concept="C4FCh" id="K_fAvR606F" role="3Vayhu" />
       </node>
     </node>
   </node>

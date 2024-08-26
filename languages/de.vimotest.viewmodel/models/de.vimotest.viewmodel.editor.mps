@@ -51,11 +51,17 @@
       <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+        <child id="2597348684684069742" name="contextHints" index="CpUAK" />
       </concept>
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
+      <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
+        <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
+      </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="1233141163694" name="separatorStyle" index="sWeuL" />
       </concept>
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
         <child id="1176795024817" name="cellProvider" index="3YsKMw" />
@@ -64,13 +70,22 @@
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
+      <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
+      <concept id="1233148810477" name="jetbrains.mps.lang.editor.structure.InlineStyleDeclaration" flags="ng" index="tppnM" />
+      <concept id="4242538589859161874" name="jetbrains.mps.lang.editor.structure.ExplicitHintsSpecification" flags="ng" index="2w$q5c">
+        <child id="4242538589859162459" name="hints" index="2w$qW5" />
+      </concept>
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
+        <child id="5944657839000877563" name="hints" index="2ABdcP" />
+      </concept>
+      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg" />
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW">
         <child id="7033942394258392116" name="overridenEditorComponent" index="1PM95z" />
@@ -137,8 +152,12 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ngI" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
-      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY">
+        <child id="5861024100072578575" name="addHints" index="3xwHhi" />
+      </concept>
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR">
+        <child id="7279578193766667846" name="addHints" index="78xua" />
+      </concept>
       <concept id="1176474535556" name="jetbrains.mps.lang.editor.structure.QueryFunction_JComponent" flags="in" index="3Fmcul" />
       <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
         <child id="1225898971709" name="getter" index="1Hhtcw" />
@@ -1435,37 +1454,13 @@
         </node>
         <node concept="3F1sOY" id="7WgsBLYxJXK" role="3EZMnx">
           <ref role="1NtTu8" to="at53:7WgsBLYxJXy" resolve="cellWidgetType" />
+          <node concept="2w$q5c" id="K_fAvR6r1O" role="3xwHhi">
+            <node concept="2aJ2om" id="K_fAvR6r1P" role="2w$qW5">
+              <ref role="2$4xQ3" node="K_fAvR65uJ" resolve="ViewWidget_EmbeddedInspector_Hint" />
+            </node>
+          </node>
         </node>
         <node concept="l2Vlx" id="2S2pY38Twhs" role="2iSdaV" />
-        <node concept="1iCGBv" id="2S2pY38Tc4Q" role="3EZMnx">
-          <ref role="1NtTu8" to="at53:7WgsBLYxJXy" resolve="cellWidgetType" />
-          <node concept="1sVBvm" id="2S2pY38Tc4S" role="1sWHZn">
-            <node concept="PMmxH" id="2S2pY38Tc4W" role="2wV5jI">
-              <ref role="PMmxG" node="L9c2Y9pjGJ" resolve="ViewWidget_Inspector_EC" />
-            </node>
-          </node>
-          <node concept="pkWqt" id="2S2pY38Tc4X" role="pqm2j">
-            <node concept="3clFbS" id="2S2pY38Tc4Y" role="2VODD2">
-              <node concept="3clFbF" id="2S2pY38Tc56" role="3cqZAp">
-                <node concept="2OqwBi" id="2S2pY38TdA9" role="3clFbG">
-                  <node concept="2OqwBi" id="2S2pY38Tcwh" role="2Oq$k0">
-                    <node concept="pncrf" id="2S2pY38Tc55" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="2S2pY38TcWh" role="2OqNvi">
-                      <ref role="3Tt5mk" to="at53:7WgsBLYxJXy" resolve="cellWidgetType" />
-                    </node>
-                  </node>
-                  <node concept="3x8VRR" id="2S2pY38Te4O" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="pVoyu" id="2S2pY38Tw_y" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="lj46D" id="2S2pY38TwAk" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
       </node>
       <node concept="3EZMnI" id="2S2pY38Rqh6" role="3EZMnx">
         <node concept="3EZMnI" id="2S2pY38Rqh7" role="3EZMnx">
@@ -1495,6 +1490,126 @@
       <node concept="3F1sOY" id="7WgsBLYmzi3" role="3EZMnx">
         <ref role="1NtTu8" to="at53:7WgsBLYmzhW" resolve="enabled" />
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="K_fAvR3LCH">
+    <property role="TrG5h" value="HierarchicalWidgetRowsFeature_Indication_EC" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1XX52x" to="at53:K_fAvR3LCG" resolve="HierarchicalWidgetRowsFeature" />
+    <node concept="1PE4EZ" id="K_fAvR3LCJ" role="1PM95z">
+      <ref role="1PE7su" node="L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
+    </node>
+    <node concept="1v6uyg" id="K_fAvR3LCK" role="2wV5jI">
+      <property role="2oejA6" value="true" />
+      <node concept="3F0ifn" id="K_fAvR3LCL" role="wsdo6">
+        <property role="3F0ifm" value="supports hierarchic widget rows" />
+      </node>
+      <node concept="3F0ifn" id="K_fAvR3LCM" role="1j7Clw">
+        <property role="3F0ifm" value="r" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" />
+        <node concept="Veino" id="K_fAvR3LCN" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5B/darkGray" />
+        </node>
+        <node concept="VechU" id="K_fAvR3LCO" role="3F10Kt">
+          <property role="Vb096" value="hEZAO13/white" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="K_fAvR3LCU">
+    <property role="TrG5h" value="TreeViewWidget_Features_EC" />
+    <property role="3GE5qa" value="widgets" />
+    <ref role="1XX52x" to="at53:K_fAvR3LCP" resolve="TreeViewWidget" />
+    <node concept="1PE4EZ" id="K_fAvR3LCW" role="1PM95z">
+      <ref role="1PE7su" node="4OohpJQEUlZ" resolve="ViewWidget_WidgetFeatures_EC" />
+    </node>
+    <node concept="3EZMnI" id="K_fAvR3LCX" role="2wV5jI">
+      <node concept="2EHx9g" id="K_fAvR3LCY" role="2iSdaV" />
+      <node concept="3F1sOY" id="K_fAvR3LCZ" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:K_fAvR3LCQ" resolve="hierarchicalWidgetRows" />
+      </node>
+      <node concept="3EZMnI" id="K_fAvR62Om" role="3EZMnx">
+        <node concept="VPM3Z" id="K_fAvR62On" role="3F10Kt" />
+        <node concept="3vyZuw" id="K_fAvR62Oo" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="K_fAvR62Op" role="3EZMnx">
+          <property role="3F0ifm" value="column types:" />
+        </node>
+        <node concept="3F2HdR" id="K_fAvR63EQ" role="3EZMnx">
+          <property role="2czwfO" value="-----" />
+          <ref role="1NtTu8" to="at53:K_fAvR3Sni" resolve="columnWidgetTypes" />
+          <node concept="l2Vlx" id="K_fAvR63ES" role="2czzBx" />
+          <node concept="2w$q5c" id="K_fAvR65MN" role="78xua">
+            <node concept="2aJ2om" id="K_fAvR65MO" role="2w$qW5">
+              <ref role="2$4xQ3" node="K_fAvR65uJ" resolve="ViewWidget_EmbeddedInspector_Hint" />
+            </node>
+          </node>
+          <node concept="pVoyu" id="K_fAvR65MQ" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="K_fAvR65MR" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="tppnM" id="K_fAvR727V" role="sWeuL">
+            <node concept="ljvvj" id="K_fAvR727W" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="pVoyu" id="K_fAvR7D0Y" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="l2Vlx" id="K_fAvR62Or" role="2iSdaV" />
+      </node>
+      <node concept="3F1sOY" id="K_fAvR3LD0" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:K_fAvR3LCR" resolve="selectedRow" />
+      </node>
+      <node concept="3F1sOY" id="K_fAvR3LD1" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:K_fAvR3LCS" resolve="visibility" />
+      </node>
+      <node concept="3F1sOY" id="K_fAvR3LD2" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:K_fAvR3LCT" resolve="enabled" />
+      </node>
+    </node>
+  </node>
+  <node concept="2ABfQD" id="K_fAvR64iU">
+    <property role="3GE5qa" value="widgets" />
+    <property role="TrG5h" value="ViMoTestContextHints" />
+    <node concept="2BsEeg" id="K_fAvR65uJ" role="2ABdcP">
+      <property role="TrG5h" value="ViewWidget_EmbeddedInspector_Hint" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="K_fAvR65MS">
+    <property role="3GE5qa" value="widgets" />
+    <ref role="1XX52x" to="at53:F907haLIRF" resolve="ViewWidget" />
+    <node concept="3EZMnI" id="K_fAvR65MT" role="2wV5jI">
+      <node concept="PMmxH" id="K_fAvR65MV" role="3EZMnx">
+        <ref role="PMmxG" node="L9c2Y9pcOs" resolve="ViewWidget_TypeAlias_FeatureIndication_EC" />
+      </node>
+      <node concept="3F0A7n" id="K_fAvR65MW" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="K_fAvR65MX" role="3EZMnx" />
+      <node concept="PMmxH" id="K_fAvR65MY" role="3EZMnx">
+        <ref role="PMmxG" node="L9c2Y9pvfV" resolve="ViewWidget_Rendering_EC" />
+      </node>
+      <node concept="PMmxH" id="K_fAvR66YL" role="3EZMnx">
+        <ref role="PMmxG" node="L9c2Y9pjGJ" resolve="ViewWidget_Inspector_EC" />
+        <node concept="pVoyu" id="K_fAvR66YM" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="K_fAvR66YN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="K_fAvR66YJ" role="2iSdaV" />
+    </node>
+    <node concept="PMmxH" id="K_fAvR65MZ" role="6VMZX">
+      <ref role="PMmxG" node="L9c2Y9pjGJ" resolve="ViewWidget_Inspector_EC" />
+    </node>
+    <node concept="2aJ2om" id="K_fAvR66YI" role="CpUAK">
+      <ref role="2$4xQ3" node="K_fAvR65uJ" resolve="ViewWidget_EmbeddedInspector_Hint" />
     </node>
   </node>
 </model>

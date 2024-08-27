@@ -22,6 +22,7 @@
     <import index="5ueo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.style(MPS.Editor/)" />
     <import index="3ahc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.cells(MPS.Editor/)" />
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" />
+    <import index="hdif" ref="r:358d5e99-ca53-4b21-ba6f-a58c1c8e0993(de.vimotest.mpswidgets.behavior)" />
     <import index="dgt9" ref="r:a46eceb8-d68d-4f8d-a755-6da4c2f592cc(de.vimotest.types.editor)" implicit="true" />
     <import index="czmc" ref="r:8266d71c-f637-42a4-b405-9d6e3c00f282(de.vimotest.viewmodel.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -1560,8 +1561,8 @@
                       <node concept="3clFbS" id="2L$_HjiR0SJ" role="3clF47">
                         <node concept="3clFbF" id="2L$_HjiQzz6" role="3cqZAp">
                           <node concept="2YIFZM" id="2L$_HjiQzDp" role="3clFbG">
-                            <ref role="37wK5l" to="nrs2:2L$_HjiPZp8" resolve="createButtonCellModel" />
-                            <ref role="1Pybhc" to="nrs2:2L$_HjiPXY8" resolve="ButtonCellModelCreator" />
+                            <ref role="37wK5l" to="hdif:2L$_HjiPZp8" resolve="createButtonCellModel" />
+                            <ref role="1Pybhc" to="hdif:2L$_HjiPXY8" resolve="ButtonCellModelCreator" />
                             <node concept="1Q80Hx" id="2L$_HjiQzEj" role="37wK5m" />
                             <node concept="pncrf" id="2L$_HjiQzW5" role="37wK5m" />
                             <node concept="Xl_RD" id="2L$_HjiQ$1A" role="37wK5m">
@@ -1783,8 +1784,8 @@
                           <node concept="3clFbS" id="6k2oWGc17KG" role="2LFqv$">
                             <node concept="3clFbF" id="2L$_HjiR8HV" role="3cqZAp">
                               <node concept="2YIFZM" id="2L$_HjiRdkZ" role="3clFbG">
-                                <ref role="37wK5l" to="nrs2:2L$_HjiPZp8" resolve="createButtonCellModel" />
-                                <ref role="1Pybhc" to="nrs2:2L$_HjiPXY8" resolve="ButtonCellModelCreator" />
+                                <ref role="37wK5l" to="hdif:2L$_HjiPZp8" resolve="createButtonCellModel" />
+                                <ref role="1Pybhc" to="hdif:2L$_HjiPXY8" resolve="ButtonCellModelCreator" />
                                 <node concept="37vLTw" id="2L$_HjiReFL" role="37wK5m">
                                   <ref role="3cqZAo" node="6k2oWGc17Kq" resolve="context" />
                                 </node>
@@ -1844,8 +1845,8 @@
                                   <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
                                 </node>
                                 <node concept="2YIFZM" id="2L$_HjiRoD9" role="33vP2m">
-                                  <ref role="37wK5l" to="nrs2:2L$_HjiPZp8" resolve="createButtonCellModel" />
-                                  <ref role="1Pybhc" to="nrs2:2L$_HjiPXY8" resolve="ButtonCellModelCreator" />
+                                  <ref role="37wK5l" to="hdif:2L$_HjiPZp8" resolve="createButtonCellModel" />
+                                  <ref role="1Pybhc" to="hdif:2L$_HjiPXY8" resolve="ButtonCellModelCreator" />
                                   <node concept="37vLTw" id="2L$_HjiRoDa" role="37wK5m">
                                     <ref role="3cqZAo" node="6k2oWGc17Kq" resolve="context" />
                                   </node>

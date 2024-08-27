@@ -395,6 +395,11 @@
             <ref role="3bR37D" node="6vtOLtwgJp4" resolve="de.vimotest.mpswidgets.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2zlSkwD4c8S" role="3bR37C">
+          <node concept="3bR9La" id="2zlSkwD4c8T" role="1SiIV1">
+            <ref role="3bR37D" node="6vtOLtwgJlO" resolve="de.vimotest.mpswidgets" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="220dcIkyAiQ" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -561,6 +566,16 @@
         <node concept="1SiIV0" id="6vtOLtwjI06" role="3bR37C">
           <node concept="Rbm2T" id="6vtOLtwjI07" role="1SiIV1">
             <ref role="1E1Vl2" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2zlSkwD4c9c" role="3bR37C">
+          <node concept="3bR9La" id="2zlSkwD4c9d" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2zlSkwD4c9e" role="3bR37C">
+          <node concept="3bR9La" id="2zlSkwD4c9f" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
       </node>

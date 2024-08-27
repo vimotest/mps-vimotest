@@ -541,7 +541,7 @@
     <property role="EcuMT" value="875174318840945205" />
     <property role="TrG5h" value="TreeViewWidget" />
     <property role="34LRSv" value="tree view" />
-    <property role="3GE5qa" value="widgets" />
+    <property role="3GE5qa" value="widgets.structures" />
     <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
     <node concept="1TJgyj" id="K_fAvR3LCQ" role="1TKVEi">
       <property role="IQ2ns" value="875174318840945206" />
@@ -578,6 +578,11 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="2zlSkwD9nfw">
+    <property role="EcuMT" value="2942505631600702432" />
+    <property role="3GE5qa" value="widgets.structures" />
+    <property role="TrG5h" value="ITreeRow" />
   </node>
 </model>
 

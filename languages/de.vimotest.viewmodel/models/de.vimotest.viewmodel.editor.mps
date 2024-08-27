@@ -1518,7 +1518,7 @@
   </node>
   <node concept="PKFIW" id="K_fAvR3LCU">
     <property role="TrG5h" value="TreeViewWidget_Features_EC" />
-    <property role="3GE5qa" value="widgets" />
+    <property role="3GE5qa" value="widgets.structures" />
     <ref role="1XX52x" to="at53:K_fAvR3LCP" resolve="TreeViewWidget" />
     <node concept="1PE4EZ" id="K_fAvR3LCW" role="1PM95z">
       <ref role="1PE7su" node="4OohpJQEUlZ" resolve="ViewWidget_WidgetFeatures_EC" />

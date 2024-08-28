@@ -550,12 +550,12 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="K_fAvR3LCG" resolve="HierarchicalWidgetRowsFeature" />
     </node>
-    <node concept="1TJgyj" id="K_fAvR3Sni" role="1TKVEi">
-      <property role="IQ2ns" value="875174318840972754" />
+    <node concept="1TJgyj" id="7uPLQmTQNM" role="1TKVEi">
+      <property role="IQ2ns" value="134781560953466098" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="columnWidgetTypes" />
+      <property role="20kJfa" value="columns" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="F907haLIRF" resolve="ViewWidget" />
+      <ref role="20lvS9" node="7uPLQmTOoE" resolve="ColumnDefinition" />
     </node>
     <node concept="1TJgyj" id="K_fAvR3LCR" role="1TKVEi">
       <property role="IQ2ns" value="875174318840945207" />
@@ -583,6 +583,25 @@
     <property role="EcuMT" value="2942505631600702432" />
     <property role="3GE5qa" value="widgets.structures" />
     <property role="TrG5h" value="ITreeRow" />
+  </node>
+  <node concept="1TIwiD" id="7uPLQmTOoE">
+    <property role="EcuMT" value="134781560953456170" />
+    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="TrG5h" value="ColumnDefinition" />
+    <property role="34LRSv" value="column" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="7uPLQmTQNN" role="1TKVEi">
+      <property role="IQ2ns" value="134781560953466099" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="widgetType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="F907haLIRF" resolve="ViewWidget" />
+    </node>
+    <node concept="1TJgyi" id="7uPLQmTPAc" role="1TKVEl">
+      <property role="IQ2nx" value="134781560953461132" />
+      <property role="TrG5h" value="header" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 

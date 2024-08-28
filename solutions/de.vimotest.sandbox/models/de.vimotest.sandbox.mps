@@ -112,6 +112,10 @@
       <concept id="3922717397912196833" name="de.vimotest.viewmodel.structure.ImageSource" flags="ng" index="2mJlLh">
         <child id="3426927311333626894" name="ref" index="28FJ0P" />
       </concept>
+      <concept id="134781560953456170" name="de.vimotest.viewmodel.structure.ColumnDefinition" flags="ng" index="2nep4R">
+        <property id="134781560953461132" name="header" index="2neoUh" />
+        <child id="134781560953466099" name="widgetType" index="2nerJI" />
+      </concept>
       <concept id="5213916851000129487" name="de.vimotest.viewmodel.structure.CheckedFeature" flags="ng" index="C4FCf" />
       <concept id="5213916851000129488" name="de.vimotest.viewmodel.structure.VisibilityFeature" flags="ng" index="C4FCg" />
       <concept id="5213916851000129489" name="de.vimotest.viewmodel.structure.EnabledFeature" flags="ng" index="C4FCh" />
@@ -149,11 +153,11 @@
       </concept>
       <concept id="875174318840945196" name="de.vimotest.viewmodel.structure.HierarchicalWidgetRowsFeature" flags="ng" index="3Vayhb" />
       <concept id="875174318840945205" name="de.vimotest.viewmodel.structure.TreeViewWidget" flags="ng" index="3Vayhi">
+        <child id="134781560953466098" name="columns" index="2nerJJ" />
         <child id="875174318840945207" name="selectedRow" index="3Vayhg" />
         <child id="875174318840945206" name="hierarchicalWidgetRows" index="3Vayhh" />
         <child id="875174318840945209" name="enabled" index="3Vayhu" />
         <child id="875174318840945208" name="visibility" index="3Vayhv" />
-        <child id="875174318840972754" name="columnWidgetTypes" index="3VaFIP" />
       </concept>
     </language>
   </registry>
@@ -285,19 +289,25 @@
       </node>
       <node concept="3Vayhi" id="K_fAvR606v" role="103ZUC">
         <property role="TrG5h" value="MyTreeView" />
-        <node concept="V3ZfZ" id="K_fAvR606w" role="3VaFIP">
-          <property role="TrG5h" value="columnCell" />
-          <property role="3mJ_rA" value="Name" />
-          <node concept="V3Zf6" id="K_fAvR606x" role="V3ZfK" />
-          <node concept="C4FCh" id="K_fAvR606y" role="V3ZfL" />
-          <node concept="C4FCg" id="K_fAvR606z" role="V3ZfM" />
+        <node concept="2nep4R" id="7uPLQmVU7p" role="2nerJJ">
+          <property role="2neoUh" value="Name" />
+          <node concept="V3ZfZ" id="7uPLQmVU7r" role="2nerJI">
+            <property role="TrG5h" value="columnCell" />
+            <property role="3mJ_rA" value="My Name" />
+            <node concept="V3Zf6" id="7uPLQmVU7t" role="V3ZfK" />
+            <node concept="C4FCh" id="7uPLQmVU7v" role="V3ZfL" />
+            <node concept="C4FCg" id="7uPLQmVU7x" role="V3ZfM" />
+          </node>
         </node>
-        <node concept="V3ZfZ" id="K_fAvR6I3r" role="3VaFIP">
-          <property role="TrG5h" value="columnCell" />
-          <property role="3mJ_rA" value="Description" />
-          <node concept="V3Zf6" id="K_fAvR6I3s" role="V3ZfK" />
-          <node concept="C4FCh" id="K_fAvR6I3t" role="V3ZfL" />
-          <node concept="C4FCg" id="K_fAvR6I3u" role="V3ZfM" />
+        <node concept="2nep4R" id="7uPLQmVU7z" role="2nerJJ">
+          <property role="2neoUh" value="Description" />
+          <node concept="V3ZfZ" id="7uPLQmVU7_" role="2nerJI">
+            <property role="TrG5h" value="columnCell" />
+            <property role="3mJ_rA" value="My Descr." />
+            <node concept="V3Zf6" id="7uPLQmVU7B" role="V3ZfK" />
+            <node concept="C4FCh" id="7uPLQmVU7D" role="V3ZfL" />
+            <node concept="C4FCg" id="7uPLQmVU7F" role="V3ZfM" />
+          </node>
         </node>
         <node concept="3Vayhb" id="K_fAvR606_" role="3Vayhh" />
         <node concept="1i$ol" id="K_fAvR606B" role="3Vayhg" />

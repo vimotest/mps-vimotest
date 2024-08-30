@@ -603,5 +603,17 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="XX1C5VZVaJ">
+    <property role="EcuMT" value="1116055435858653871" />
+    <property role="3GE5qa" value="util" />
+    <property role="TrG5h" value="StringValue" />
+    <property role="34LRSv" value="string value" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="XX1C5VZWmt" role="1TKVEl">
+      <property role="IQ2nx" value="1116055435858658717" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

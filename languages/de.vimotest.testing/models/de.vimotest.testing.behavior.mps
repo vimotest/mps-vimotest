@@ -2419,7 +2419,7 @@
   </node>
   <node concept="13h7C7" id="7WgsBLYmziD">
     <property role="TrG5h" value="IListViewCheckValue_Behavior" />
-    <property role="3GE5qa" value="test.assert.listview" />
+    <property role="3GE5qa" value="test.assert.structures.listview" />
     <ref role="13h7C2" to="53m0:7WgsBLYmzis" resolve="IListViewCheckValue" />
     <node concept="13hLZK" id="7WgsBLYmziE" role="13h7CW">
       <node concept="3clFbS" id="7WgsBLYmziF" role="2VODD2" />
@@ -2441,7 +2441,7 @@
   </node>
   <node concept="13h7C7" id="7WgsBLYmziT">
     <property role="TrG5h" value="ListViewCheck_Behavior" />
-    <property role="3GE5qa" value="test.assert.listview" />
+    <property role="3GE5qa" value="test.assert.structures.listview" />
     <ref role="13h7C2" to="53m0:7WgsBLYmziM" resolve="ListViewCheck" />
     <node concept="13hLZK" id="7WgsBLYmziU" role="13h7CW">
       <node concept="3clFbS" id="7WgsBLYmziV" role="2VODD2">
@@ -2917,12 +2917,17 @@
                             <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
                           </node>
                           <node concept="2OqwBi" id="7a1oxby69Vq" role="33vP2m">
-                            <node concept="2OqwBi" id="708i5MC3CWz" role="2Oq$k0">
-                              <node concept="37vLTw" id="7a1oxby69Vr" role="2Oq$k0">
-                                <ref role="3cqZAo" node="7a1oxby5nPG" resolve="it" />
+                            <node concept="2OqwBi" id="XX1C5W1HUw" role="2Oq$k0">
+                              <node concept="2OqwBi" id="708i5MC3CWz" role="2Oq$k0">
+                                <node concept="37vLTw" id="7a1oxby69Vr" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="7a1oxby5nPG" resolve="it" />
+                                </node>
+                                <node concept="3TrEf2" id="708i5MC3DDl" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="53m0:5MibNhOn8Oc" resolve="cellCheck" />
+                                </node>
                               </node>
-                              <node concept="3TrEf2" id="708i5MC3DDl" role="2OqNvi">
-                                <ref role="3Tt5mk" to="53m0:5MibNhOn8Oc" resolve="nestedCheck" />
+                              <node concept="3TrEf2" id="XX1C5W1Ivc" role="2OqNvi">
+                                <ref role="3Tt5mk" to="53m0:XX1C5W18Rz" resolve="nestedCheck" />
                               </node>
                             </node>
                             <node concept="2qgKlT" id="7a1oxby69Vs" role="2OqNvi">
@@ -2944,12 +2949,17 @@
                       </node>
                       <node concept="3clFbF" id="3CJ09vZF_bd" role="3cqZAp">
                         <node concept="2OqwBi" id="3CJ09vZF_SF" role="3clFbG">
-                          <node concept="2OqwBi" id="708i5MC3Elp" role="2Oq$k0">
-                            <node concept="37vLTw" id="5MibNhOf2V0" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7a1oxby5nPG" resolve="it" />
+                          <node concept="2OqwBi" id="XX1C5W1Jo8" role="2Oq$k0">
+                            <node concept="2OqwBi" id="708i5MC3Elp" role="2Oq$k0">
+                              <node concept="37vLTw" id="5MibNhOf2V0" role="2Oq$k0">
+                                <ref role="3cqZAo" node="7a1oxby5nPG" resolve="it" />
+                              </node>
+                              <node concept="3TrEf2" id="708i5MC3F4a" role="2OqNvi">
+                                <ref role="3Tt5mk" to="53m0:5MibNhOn8Oc" resolve="cellCheck" />
+                              </node>
                             </node>
-                            <node concept="3TrEf2" id="708i5MC3F4a" role="2OqNvi">
-                              <ref role="3Tt5mk" to="53m0:5MibNhOn8Oc" resolve="nestedCheck" />
+                            <node concept="3TrEf2" id="XX1C5W1JYC" role="2OqNvi">
+                              <ref role="3Tt5mk" to="53m0:XX1C5W18Rz" resolve="nestedCheck" />
                             </node>
                           </node>
                           <node concept="2qgKlT" id="3CJ09vZFEHy" role="2OqNvi">
@@ -3164,7 +3174,7 @@
   </node>
   <node concept="13h7C7" id="K_fAvR3LDT">
     <property role="TrG5h" value="ITreeViewCheckValue_Behavior" />
-    <property role="3GE5qa" value="test.assert.treeview" />
+    <property role="3GE5qa" value="test.assert.structures.treeview" />
     <ref role="13h7C2" to="53m0:K_fAvR3LDG" resolve="ITreeViewCheckValue" />
     <node concept="13hLZK" id="K_fAvR3LDU" role="13h7CW">
       <node concept="3clFbS" id="K_fAvR3LDV" role="2VODD2" />
@@ -3186,7 +3196,7 @@
   </node>
   <node concept="13h7C7" id="K_fAvR3LEj">
     <property role="TrG5h" value="TreeViewCheck_Behavior" />
-    <property role="3GE5qa" value="test.assert.treeview" />
+    <property role="3GE5qa" value="test.assert.structures.treeview" />
     <ref role="13h7C2" to="53m0:K_fAvR3LE2" resolve="TreeViewCheck" />
     <node concept="13hLZK" id="K_fAvR3LEk" role="13h7CW">
       <node concept="3clFbS" id="K_fAvR3LEl" role="2VODD2">
@@ -3198,7 +3208,9 @@
                 <ref role="3TtcxE" to="53m0:K_fAvR3LE3" resolve="checks" />
               </node>
             </node>
-            <node concept="WFELt" id="K_fAvR3LEr" role="2OqNvi" />
+            <node concept="WFELt" id="K_fAvR3LEr" role="2OqNvi">
+              <ref role="1A0vxQ" to="53m0:K_fAvR3LF8" resolve="HierarchicalWidgetRowsCheckValue" />
+            </node>
           </node>
         </node>
       </node>

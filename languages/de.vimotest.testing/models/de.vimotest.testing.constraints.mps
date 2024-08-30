@@ -222,7 +222,7 @@
   </node>
   <node concept="1M2fIO" id="2S2pY39f534">
     <property role="TrG5h" value="ListViewCheck_Constraints" />
-    <property role="3GE5qa" value="test.assert.listview" />
+    <property role="3GE5qa" value="test.assert.structures.listview" />
     <ref role="1M2myG" to="53m0:7WgsBLYmziM" resolve="ListViewCheck" />
     <node concept="9S07l" id="2S2pY39f535" role="9Vyp8">
       <node concept="3clFbS" id="2S2pY39f536" role="2VODD2">
@@ -479,7 +479,7 @@
   </node>
   <node concept="1M2fIO" id="K_fAvR3LE4">
     <property role="TrG5h" value="TreeViewCheck_Constraints" />
-    <property role="3GE5qa" value="test.assert.treeview" />
+    <property role="3GE5qa" value="test.assert.structures.treeview" />
     <ref role="1M2myG" to="53m0:K_fAvR3LE2" resolve="TreeViewCheck" />
     <node concept="9S07l" id="K_fAvR3LE5" role="9Vyp8">
       <node concept="3clFbS" id="K_fAvR3LE6" role="2VODD2">

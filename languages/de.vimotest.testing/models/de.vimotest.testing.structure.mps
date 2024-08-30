@@ -451,7 +451,7 @@
   <node concept="PlHQZ" id="7WgsBLYmzis">
     <property role="EcuMT" value="9155943921465570460" />
     <property role="TrG5h" value="IListViewCheckValue" />
-    <property role="3GE5qa" value="test.assert.listview" />
+    <property role="3GE5qa" value="test.assert.structures.listview" />
     <node concept="PrWs8" id="7WgsBLYmzit" role="PrDN$">
       <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
     </node>
@@ -460,7 +460,7 @@
     <property role="EcuMT" value="9155943921465570482" />
     <property role="TrG5h" value="ListViewCheck" />
     <property role="34LRSv" value="check list view" />
-    <property role="3GE5qa" value="test.assert.listview" />
+    <property role="3GE5qa" value="test.assert.structures.listview" />
     <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     <node concept="1TJgyj" id="7WgsBLYmziN" role="1TKVEi">
       <property role="IQ2ns" value="9155943921465570483" />
@@ -476,19 +476,12 @@
     <property role="34LRSv" value="widget rows" />
     <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
-    <node concept="1TJgyj" id="2S2pY397Zv4" role="1TKVEi">
-      <property role="IQ2ns" value="3315326490842757060" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="cellChecks_depr" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
-    </node>
     <node concept="1TJgyj" id="708i5MC0SWK" role="1TKVEi">
       <property role="IQ2ns" value="8072781894854610736" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="rows" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="5MibNhOn8HA" resolve="ListCheckRow" />
+      <ref role="20lvS9" node="5MibNhOn8HA" resolve="WidgetCellCheck" />
     </node>
     <node concept="PrWs8" id="2S2pY397ZW5" role="PzmwI">
       <ref role="PrY4T" node="6I6OCWxY3UW" resolve="IProvideWidget" />
@@ -524,7 +517,7 @@
   </node>
   <node concept="1TIwiD" id="5MibNhOn8HA">
     <property role="EcuMT" value="6670445900426152806" />
-    <property role="3GE5qa" value="test.assert.listview" />
+    <property role="3GE5qa" value="test.assert.structures.listview" />
     <property role="TrG5h" value="ListCheckRow" />
     <property role="34LRSv" value="row check" />
     <property role="R4oN_" value="A wrapper around a cell widget check" />
@@ -532,15 +525,15 @@
     <node concept="1TJgyj" id="5MibNhOn8Oc" role="1TKVEi">
       <property role="IQ2ns" value="6670445900426153228" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="nestedCheck" />
+      <property role="20kJfa" value="cellCheck" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
+      <ref role="20lvS9" node="XX1C5W18Ry" resolve="WidgetCellCheck" />
     </node>
   </node>
   <node concept="PlHQZ" id="K_fAvR3LDG">
     <property role="EcuMT" value="875174318840945260" />
     <property role="TrG5h" value="ITreeViewCheckValue" />
-    <property role="3GE5qa" value="test.assert.treeview" />
+    <property role="3GE5qa" value="test.assert.structures.treeview" />
     <node concept="PrWs8" id="K_fAvR3LDH" role="PrDN$">
       <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
     </node>
@@ -549,7 +542,7 @@
     <property role="EcuMT" value="875174318840945282" />
     <property role="TrG5h" value="TreeViewCheck" />
     <property role="34LRSv" value="check tree view" />
-    <property role="3GE5qa" value="test.assert.treeview" />
+    <property role="3GE5qa" value="test.assert.structures.treeview" />
     <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     <node concept="1TJgyj" id="K_fAvR3LE3" role="1TKVEi">
       <property role="IQ2ns" value="875174318840945283" />
@@ -565,8 +558,57 @@
     <property role="34LRSv" value="hierarchic widget rows" />
     <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="1TJgyj" id="XX1C5VZVaI" role="1TKVEi">
+      <property role="IQ2ns" value="1116055435858653870" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20kJfa" value="expectedHeaders" />
+      <ref role="20lvS9" to="at53:XX1C5VZVaJ" resolve="StringValue" />
+    </node>
+    <node concept="1TJgyj" id="XX1C5W1cNO" role="1TKVEi">
+      <property role="IQ2ns" value="1116055435858988276" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="rows" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="XX1C5W00nT" resolve="TreeCheckRow" />
+    </node>
     <node concept="PrWs8" id="K_fAvR3LF9" role="PzmwI">
       <ref role="PrY4T" node="K_fAvR3LDG" resolve="ITreeViewCheckValue" />
+    </node>
+    <node concept="1TJgyi" id="XX1C5VZVaG" role="1TKVEl">
+      <property role="IQ2nx" value="1116055435858653868" />
+      <property role="TrG5h" value="assertHeaders" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="XX1C5W00nT">
+    <property role="EcuMT" value="1116055435858675193" />
+    <property role="3GE5qa" value="test.assert.structures.treeview" />
+    <property role="TrG5h" value="TreeCheckRow" />
+    <property role="34LRSv" value="row check" />
+    <property role="R4oN_" value="A wrapper around cell widget checks" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="XX1C5W00nU" role="1TKVEi">
+      <property role="IQ2ns" value="1116055435858675194" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="cellChecks" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="XX1C5W18Ry" resolve="WidgetCellCheck" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="XX1C5W18Ry">
+    <property role="EcuMT" value="1116055435858972130" />
+    <property role="3GE5qa" value="test.assert.structures" />
+    <property role="TrG5h" value="WidgetCellCheck" />
+    <property role="34LRSv" value="cell check" />
+    <property role="R4oN_" value="A wrapper around a cell widget check" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="XX1C5W18Rz" role="1TKVEi">
+      <property role="IQ2ns" value="1116055435858972131" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="nestedCheck" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     </node>
   </node>
 </model>

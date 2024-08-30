@@ -1628,5 +1628,15 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="XX1C5VZWmu">
+    <property role="3GE5qa" value="util" />
+    <ref role="1XX52x" to="at53:XX1C5VZVaJ" resolve="StringValue" />
+    <node concept="3EZMnI" id="XX1C5VZXyd" role="2wV5jI">
+      <node concept="2iRfu4" id="XX1C5VZXyg" role="2iSdaV" />
+      <node concept="3F0A7n" id="XX1C5VZXyk" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:XX1C5VZWmt" resolve="value" />
+      </node>
+    </node>
+  </node>
 </model>
 

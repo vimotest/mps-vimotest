@@ -39,7 +39,7 @@
         <child id="5213916851000129543" name="checks" index="C4Fn7" />
       </concept>
       <concept id="6670445900426152806" name="de.vimotest.testing.structure.ListCheckRow" flags="ng" index="CNEhi">
-        <child id="6670445900426153228" name="nestedCheck" index="CNE8S" />
+        <child id="6670445900426153228" name="cellCheck" index="CNE8S" />
       </concept>
       <concept id="7445061853131767032" name="de.vimotest.testing.structure.ThenDescriptionWithAssert" flags="ng" index="DUd2R">
         <child id="7445061853131768388" name="assert" index="DUiSb" />
@@ -79,6 +79,13 @@
         <property id="7205622933660497489" name="scenario" index="3LKBmK" />
         <child id="7445061853131767039" name="contextWithDescription" index="DUd2K" />
         <child id="7445061853131767049" name="assertsWithDescription" index="DUd56" />
+      </concept>
+      <concept id="1116055435858972130" name="de.vimotest.testing.structure.WidgetCellCheck" flags="ng" index="1NuoHz">
+        <child id="1116055435858972131" name="nestedCheck" index="1NuoHy" />
+      </concept>
+      <concept id="875174318840945352" name="de.vimotest.testing.structure.HierarchicalWidgetRowsCheckValue" flags="ng" index="3VayiJ" />
+      <concept id="875174318840945282" name="de.vimotest.testing.structure.TreeViewCheck" flags="ng" index="3Vayj_">
+        <child id="875174318840945283" name="checks" index="3Vayj$" />
       </concept>
     </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
@@ -398,35 +405,43 @@
               <property role="3pQJM1" value="Expected Header" />
               <property role="CQgOQ" value="true" />
               <node concept="CNEhi" id="708i5MC36C0" role="3o2WtG">
-                <node concept="V3Zc6" id="7a1oxby5iE6" role="CNE8S">
-                  <node concept="V3Zdv" id="7a1oxby5iE9" role="V3Zc7">
-                    <property role="3egigc" value="A" />
-                  </node>
-                  <node concept="35STUn" id="7Ds$Sekkygc" role="V3Zc7" />
-                  <node concept="35STUl" id="5MibNhOeXNz" role="V3Zc7">
-                    <property role="3XJMQh" value="true" />
+                <node concept="1NuoHz" id="XX1C5W2AtL" role="CNE8S">
+                  <node concept="V3Zc6" id="7a1oxby5iE6" role="1NuoHy">
+                    <node concept="V3Zdv" id="7a1oxby5iE9" role="V3Zc7">
+                      <property role="3egigc" value="A" />
+                    </node>
+                    <node concept="35STUn" id="7Ds$Sekkygc" role="V3Zc7" />
+                    <node concept="35STUl" id="5MibNhOeXNz" role="V3Zc7">
+                      <property role="3XJMQh" value="true" />
+                    </node>
                   </node>
                 </node>
               </node>
               <node concept="CNEhi" id="708i5MC36C1" role="3o2WtG">
-                <node concept="V3Zc6" id="7a1oxby5iDW" role="CNE8S">
-                  <node concept="V3Zdv" id="7a1oxby5iE0" role="V3Zc7">
-                    <property role="3egigc" value="B" />
+                <node concept="1NuoHz" id="XX1C5W2AtM" role="CNE8S">
+                  <node concept="V3Zc6" id="7a1oxby5iDW" role="1NuoHy">
+                    <node concept="V3Zdv" id="7a1oxby5iE0" role="V3Zc7">
+                      <property role="3egigc" value="B" />
+                    </node>
+                    <node concept="35STUl" id="7Ds$Sekkyg9" role="V3Zc7" />
                   </node>
-                  <node concept="35STUl" id="7Ds$Sekkyg9" role="V3Zc7" />
                 </node>
               </node>
               <node concept="CNEhi" id="708i5MC36C2" role="3o2WtG">
-                <node concept="V3Zc6" id="5MibNhOhAt8" role="CNE8S">
-                  <node concept="V3Zdv" id="5MibNhOhAt9" role="V3Zc7">
-                    <property role="3egigc" value="C" />
+                <node concept="1NuoHz" id="XX1C5W2AtN" role="CNE8S">
+                  <node concept="V3Zc6" id="5MibNhOhAt8" role="1NuoHy">
+                    <node concept="V3Zdv" id="5MibNhOhAt9" role="V3Zc7">
+                      <property role="3egigc" value="C" />
+                    </node>
                   </node>
                 </node>
               </node>
               <node concept="CNEhi" id="2L$_HjiTwWG" role="3o2WtG">
-                <node concept="V3Zc6" id="2L$_HjiTwWI" role="CNE8S">
-                  <node concept="V3Zdv" id="2L$_HjiTwWJ" role="V3Zc7">
-                    <property role="3egigc" value="D" />
+                <node concept="1NuoHz" id="XX1C5W2AtO" role="CNE8S">
+                  <node concept="V3Zc6" id="2L$_HjiTwWI" role="1NuoHy">
+                    <node concept="V3Zdv" id="2L$_HjiTwWJ" role="V3Zc7">
+                      <property role="3egigc" value="D" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -443,19 +458,23 @@
           <node concept="1i$re" id="5MibNhOiLQY" role="30nDbQ">
             <node concept="1i$qk" id="5MibNhOiLQZ" role="1i$rf">
               <node concept="CNEhi" id="708i5MC36C3" role="3o2WtG">
-                <node concept="2mJbJ5" id="5MibNhOjZ1u" role="CNE8S">
-                  <node concept="2mJbG1" id="5MibNhOjZ1v" role="2mJbJ6">
-                    <node concept="3eDL7N" id="5MibNhOlDHH" role="3n32fm">
-                      <ref role="3eDL7M" node="2YeT3IBbXGx" resolve="image_star" />
+                <node concept="1NuoHz" id="XX1C5W2AtP" role="CNE8S">
+                  <node concept="2mJbJ5" id="5MibNhOjZ1u" role="1NuoHy">
+                    <node concept="2mJbG1" id="5MibNhOjZ1v" role="2mJbJ6">
+                      <node concept="3eDL7N" id="5MibNhOlDHH" role="3n32fm">
+                        <ref role="3eDL7M" node="2YeT3IBbXGx" resolve="image_star" />
+                      </node>
                     </node>
                   </node>
                 </node>
               </node>
               <node concept="CNEhi" id="708i5MC36C4" role="3o2WtG">
-                <node concept="2mJbJ5" id="5MibNhOmKl5" role="CNE8S">
-                  <node concept="2mJbG1" id="5MibNhOmKl6" role="2mJbJ6">
-                    <node concept="3eDL7N" id="5MibNhOmKm6" role="3n32fm">
-                      <ref role="3eDL7M" node="2YeT3IBbXG$" resolve="image_circle" />
+                <node concept="1NuoHz" id="XX1C5W2AtQ" role="CNE8S">
+                  <node concept="2mJbJ5" id="5MibNhOmKl5" role="1NuoHy">
+                    <node concept="2mJbG1" id="5MibNhOmKl6" role="2mJbJ6">
+                      <node concept="3eDL7N" id="5MibNhOmKm6" role="3n32fm">
+                        <ref role="3eDL7M" node="2YeT3IBbXG$" resolve="image_circle" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -464,6 +483,14 @@
             <node concept="1i$ql" id="2L$_HjiOn1q" role="1i$rf">
               <property role="3YEp6u" value="1" />
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="DUd2R" id="XX1C5VWpgW" role="DUd56">
+        <node concept="30nzp_" id="XX1C5VWpgY" role="DUiSb">
+          <ref role="30nzpS" node="K_fAvR606v" resolve="MyTreeView" />
+          <node concept="3Vayj_" id="XX1C5VZQYh" role="30nDbQ">
+            <node concept="3VayiJ" id="XX1C5VZQYi" role="3Vayj$" />
           </node>
         </node>
       </node>

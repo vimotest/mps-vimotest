@@ -2473,79 +2473,35 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="7oOtyuJVAUF" role="3cqZAp">
-          <node concept="3cpWsn" id="7oOtyuJVAUG" role="3cpWs9">
-            <property role="TrG5h" value="rowsCheckValue" />
-            <node concept="3Tqbb2" id="7oOtyuJVAUH" role="1tU5fm">
-              <ref role="ehGHo" to="53m0:7WgsBLYmzjC" resolve="WidgetRowsCheckValue" />
-            </node>
-            <node concept="2OqwBi" id="7oOtyuJVAUI" role="33vP2m">
-              <node concept="2OqwBi" id="7oOtyuJVAUJ" role="2Oq$k0">
-                <node concept="2OqwBi" id="7oOtyuJVAUK" role="2Oq$k0">
-                  <node concept="13iPFW" id="7oOtyuJVAUL" role="2Oq$k0" />
-                  <node concept="3Tsc0h" id="7oOtyuJVAUM" role="2OqNvi">
-                    <ref role="3TtcxE" to="53m0:7WgsBLYmziN" />
-                  </node>
-                </node>
-                <node concept="v3k3i" id="7oOtyuJVAUN" role="2OqNvi">
-                  <node concept="chp4Y" id="7oOtyuJVAUO" role="v3oSu">
-                    <ref role="cht4Q" to="53m0:7WgsBLYmzjC" resolve="WidgetRowsCheckValue" />
-                  </node>
-                </node>
-              </node>
-              <node concept="1uHKPH" id="7oOtyuJVAUP" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="7oOtyuJVAUQ" role="3cqZAp">
-          <node concept="3clFbS" id="7oOtyuJVAUR" role="3clFbx">
-            <node concept="3clFbF" id="7oOtyuJVAUS" role="3cqZAp">
-              <node concept="37vLTI" id="7oOtyuJVAUT" role="3clFbG">
-                <node concept="2ShNRf" id="7oOtyuJVAUU" role="37vLTx">
-                  <node concept="1pGfFk" id="7oOtyuJVAUV" role="2ShVmc">
-                    <property role="373rjd" value="true" />
-                    <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,boolean,boolean)" resolve="PropertyAccessor" />
-                    <node concept="37vLTw" id="7oOtyuJVAUW" role="37wK5m">
-                      <ref role="3cqZAo" node="7oOtyuJVAUG" resolve="checkedCheckValue" />
-                    </node>
-                    <node concept="355D3s" id="7oOtyuJVAUX" role="37wK5m">
-                      <ref role="355D3t" to="53m0:7WgsBLYmzjC" resolve="WidgetRowsCheckValue" />
-                      <ref role="355D3u" to="53m0:7oOtyuJVCEA" resolve="expectedHeader" />
-                    </node>
-                    <node concept="3clFbT" id="7oOtyuJVAUY" role="37wK5m" />
-                    <node concept="3clFbT" id="7oOtyuJVAUZ" role="37wK5m" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="7oOtyuJVAV0" role="37vLTJ">
-                  <ref role="3cqZAo" node="7oOtyuJVAUD" resolve="accessor" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="7oOtyuJVAV1" role="3clFbw">
-            <node concept="37vLTw" id="7oOtyuJVAV2" role="2Oq$k0">
-              <ref role="3cqZAo" node="7oOtyuJVAUG" resolve="checkedCheckValue" />
-            </node>
-            <node concept="3x8VRR" id="7oOtyuJVAV3" role="2OqNvi" />
-          </node>
-          <node concept="9aQIb" id="7oOtyuJVAV4" role="9aQIa">
-            <node concept="3clFbS" id="7oOtyuJVAV5" role="9aQI4">
-              <node concept="3clFbF" id="7oOtyuJVAV6" role="3cqZAp">
-                <node concept="37vLTI" id="7oOtyuJVAV7" role="3clFbG">
-                  <node concept="2ShNRf" id="7oOtyuJVAV8" role="37vLTx">
-                    <node concept="1pGfFk" id="7oOtyuJVAV9" role="2ShVmc">
-                      <property role="373rjd" value="true" />
-                      <ref role="37wK5l" to="g51k:~ConstantModelAccessor.&lt;init&gt;(java.lang.String)" resolve="ConstantModelAccessor" />
-                      <node concept="Xl_RD" id="7oOtyuJVAVa" role="37wK5m">
-                        <property role="Xl_RC" value="" />
+        <node concept="3clFbF" id="7oOtyuJVAV6" role="3cqZAp">
+          <node concept="37vLTI" id="7oOtyuJVAV7" role="3clFbG">
+            <node concept="2ShNRf" id="7oOtyuJVAV8" role="37vLTx">
+              <node concept="1pGfFk" id="7oOtyuJVAV9" role="2ShVmc">
+                <property role="373rjd" value="true" />
+                <ref role="37wK5l" to="g51k:~ConstantModelAccessor.&lt;init&gt;(java.lang.String)" resolve="ConstantModelAccessor" />
+                <node concept="2OqwBi" id="3uwMqjmN6UK" role="37wK5m">
+                  <node concept="2OqwBi" id="3uwMqjmN2Eq" role="2Oq$k0">
+                    <node concept="1PxgMI" id="3uwMqjmN29I" role="2Oq$k0">
+                      <property role="1BlNFB" value="true" />
+                      <node concept="chp4Y" id="3uwMqjmN2t5" role="3oSUPX">
+                        <ref role="cht4Q" to="at53:7WgsBLYmzhU" resolve="ListViewWidget" />
+                      </node>
+                      <node concept="37vLTw" id="3uwMqjmN1Gq" role="1m5AlR">
+                        <ref role="3cqZAo" node="7WgsBLYmzj_" resolve="widgetNode" />
                       </node>
                     </node>
+                    <node concept="3TrEf2" id="3uwMqjmN6q3" role="2OqNvi">
+                      <ref role="3Tt5mk" to="at53:7WgsBLYvZSV" resolve="widgetRows" />
+                    </node>
                   </node>
-                  <node concept="37vLTw" id="7oOtyuJVAVb" role="37vLTJ">
-                    <ref role="3cqZAo" node="7oOtyuJVAUD" resolve="accessor" />
+                  <node concept="3TrcHB" id="3uwMqjmN7aw" role="2OqNvi">
+                    <ref role="3TsBF5" to="at53:2S2pY38QMJB" resolve="defaultHeader" />
                   </node>
                 </node>
               </node>
+            </node>
+            <node concept="37vLTw" id="7oOtyuJVAVb" role="37vLTJ">
+              <ref role="3cqZAo" node="7oOtyuJVAUD" resolve="accessor" />
             </node>
           </node>
         </node>

@@ -19,8 +19,6 @@
     </language>
     <language id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.testing">
       <concept id="9155943921465570536" name="de.vimotest.testing.structure.WidgetRowsCheckValue" flags="ng" index="1i$qk">
-        <property id="6670445900425011714" name="assertHeader" index="CQgOQ" />
-        <property id="8517562708091898534" name="expectedHeader" index="3pQJM1" />
         <child id="8072781894854610736" name="rows" index="3o2WtG" />
       </concept>
       <concept id="9155943921465570537" name="de.vimotest.testing.structure.SelectedRowCheckValue" flags="ng" index="1i$ql">
@@ -402,8 +400,6 @@
           <ref role="30nzpS" node="7WgsBLYysIb" resolve="MyListOfLabel" />
           <node concept="1i$re" id="GUPzt1WPYe" role="30nDbQ">
             <node concept="1i$qk" id="GUPzt1WPYh" role="1i$rf">
-              <property role="3pQJM1" value="Expected Header" />
-              <property role="CQgOQ" value="true" />
               <node concept="CNEhi" id="708i5MC36C0" role="3o2WtG">
                 <node concept="1NuoHz" id="XX1C5W2AtL" role="CNE8S">
                   <node concept="V3Zc6" id="7a1oxby5iE6" role="1NuoHy">

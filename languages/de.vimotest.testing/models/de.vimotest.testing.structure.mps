@@ -489,16 +489,6 @@
     <node concept="PrWs8" id="7WgsBLYp0da" role="PzmwI">
       <ref role="PrY4T" node="7WgsBLYmzis" resolve="IListViewCheckValue" />
     </node>
-    <node concept="1TJgyi" id="7oOtyuJVCEA" role="1TKVEl">
-      <property role="IQ2nx" value="8517562708091898534" />
-      <property role="TrG5h" value="expectedHeader" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="5MibNhOiM82" role="1TKVEl">
-      <property role="IQ2nx" value="6670445900425011714" />
-      <property role="TrG5h" value="assertHeader" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7WgsBLYmzjD">
     <property role="EcuMT" value="9155943921465570537" />
@@ -558,13 +548,6 @@
     <property role="34LRSv" value="hierarchic widget rows" />
     <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
-    <node concept="1TJgyj" id="XX1C5VZVaI" role="1TKVEi">
-      <property role="IQ2ns" value="1116055435858653870" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <property role="20kJfa" value="expectedHeaders" />
-      <ref role="20lvS9" to="at53:XX1C5VZVaJ" resolve="StringValue" />
-    </node>
     <node concept="1TJgyj" id="XX1C5W1cNO" role="1TKVEi">
       <property role="IQ2ns" value="1116055435858988276" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -574,11 +557,6 @@
     </node>
     <node concept="PrWs8" id="K_fAvR3LF9" role="PzmwI">
       <ref role="PrY4T" node="K_fAvR3LDG" resolve="ITreeViewCheckValue" />
-    </node>
-    <node concept="1TJgyi" id="XX1C5VZVaG" role="1TKVEl">
-      <property role="IQ2nx" value="1116055435858653868" />
-      <property role="TrG5h" value="assertHeaders" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="XX1C5W00nT">

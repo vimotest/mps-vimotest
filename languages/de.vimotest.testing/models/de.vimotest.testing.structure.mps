@@ -483,9 +483,6 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="5MibNhOn8HA" resolve="WidgetCellCheck" />
     </node>
-    <node concept="PrWs8" id="2S2pY397ZW5" role="PzmwI">
-      <ref role="PrY4T" node="6I6OCWxY3UW" resolve="IProvideWidget" />
-    </node>
     <node concept="PrWs8" id="7WgsBLYp0da" role="PzmwI">
       <ref role="PrY4T" node="7WgsBLYmzis" resolve="IListViewCheckValue" />
     </node>
@@ -566,12 +563,20 @@
     <property role="34LRSv" value="row check" />
     <property role="R4oN_" value="A wrapper around cell widget checks" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="3uwMqjmRx8F" role="1TKVEl">
+      <property role="IQ2nx" value="4008425378176438827" />
+      <property role="TrG5h" value="expectedDepth" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="1TJgyj" id="XX1C5W00nU" role="1TKVEi">
       <property role="IQ2ns" value="1116055435858675194" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="cellChecks" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="XX1C5W18Ry" resolve="WidgetCellCheck" />
+    </node>
+    <node concept="PrWs8" id="3uwMqjmRu2B" role="PzmwI">
+      <ref role="PrY4T" to="at53:2zlSkwD9nfw" resolve="ITreeRow" />
     </node>
   </node>
   <node concept="1TIwiD" id="XX1C5W18Ry">
@@ -587,6 +592,9 @@
       <property role="20kJfa" value="nestedCheck" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
+    </node>
+    <node concept="PrWs8" id="3uwMqjmRGj1" role="PzmwI">
+      <ref role="PrY4T" node="6I6OCWxY3UW" resolve="IProvideWidget" />
     </node>
   </node>
 </model>

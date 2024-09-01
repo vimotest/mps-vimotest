@@ -81,7 +81,13 @@
       <concept id="1116055435858972130" name="de.vimotest.testing.structure.WidgetCellCheck" flags="ng" index="1NuoHz">
         <child id="1116055435858972131" name="nestedCheck" index="1NuoHy" />
       </concept>
-      <concept id="875174318840945352" name="de.vimotest.testing.structure.HierarchicalWidgetRowsCheckValue" flags="ng" index="3VayiJ" />
+      <concept id="1116055435858675193" name="de.vimotest.testing.structure.TreeCheckRow" flags="ng" index="1NvgdS">
+        <property id="4008425378176438827" name="expectedDepth" index="3xvHIf" />
+        <child id="1116055435858675194" name="cellChecks" index="1NvgdV" />
+      </concept>
+      <concept id="875174318840945352" name="de.vimotest.testing.structure.HierarchicalWidgetRowsCheckValue" flags="ng" index="3VayiJ">
+        <child id="1116055435858988276" name="rows" index="1NusDP" />
+      </concept>
       <concept id="875174318840945282" name="de.vimotest.testing.structure.TreeViewCheck" flags="ng" index="3Vayj_">
         <child id="875174318840945283" name="checks" index="3Vayj$" />
       </concept>
@@ -486,7 +492,42 @@
         <node concept="30nzp_" id="XX1C5VWpgY" role="DUiSb">
           <ref role="30nzpS" node="K_fAvR606v" resolve="MyTreeView" />
           <node concept="3Vayj_" id="XX1C5VZQYh" role="30nDbQ">
-            <node concept="3VayiJ" id="XX1C5VZQYi" role="3Vayj$" />
+            <node concept="3VayiJ" id="XX1C5VZQYi" role="3Vayj$">
+              <node concept="1NvgdS" id="6PlxgoPs6na" role="1NusDP">
+                <property role="3xvHIf" value="0" />
+                <node concept="1NuoHz" id="6PlxgoPs6nb" role="1NvgdV">
+                  <node concept="V3Zc6" id="6PlxgoPs6nd" role="1NuoHy">
+                    <node concept="V3Zdv" id="6PlxgoPs6ne" role="V3Zc7">
+                      <property role="3egigc" value="A" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1NuoHz" id="6PlxgoPs6nf" role="1NvgdV">
+                  <node concept="V3Zc6" id="6PlxgoPs6nh" role="1NuoHy">
+                    <node concept="V3Zdv" id="6PlxgoPs6ni" role="V3Zc7">
+                      <property role="3egigc" value="B" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1NvgdS" id="6PlxgoPsyRN" role="1NusDP">
+                <property role="3xvHIf" value="0" />
+                <node concept="1NuoHz" id="6PlxgoPsyRO" role="1NvgdV">
+                  <node concept="V3Zc6" id="6PlxgoPsyRW" role="1NuoHy">
+                    <node concept="V3Zdv" id="6PlxgoPsyRX" role="V3Zc7">
+                      <property role="3egigc" value="C" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1NuoHz" id="6PlxgoPsyRS" role="1NvgdV">
+                  <node concept="V3Zc6" id="6PlxgoPsyRU" role="1NuoHy">
+                    <node concept="V3Zdv" id="6PlxgoPsyRV" role="V3Zc7">
+                      <property role="3egigc" value="D" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

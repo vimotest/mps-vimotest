@@ -303,7 +303,7 @@
         <node concept="2nep4R" id="5mvtLdU$3rg" role="2nerJJ">
           <property role="2neoUh" value="Include" />
           <node concept="C4FCE" id="5mvtLdU$3ri" role="2nerJI">
-            <property role="TrG5h" value="columnCell" />
+            <property role="TrG5h" value="Include" />
             <node concept="C4FCf" id="5mvtLdU$3rk" role="C4FCF" />
             <node concept="C4FCg" id="5mvtLdU$3rm" role="C4FCG" />
             <node concept="C4FCh" id="5mvtLdU$3ro" role="C4FCH" />
@@ -313,7 +313,7 @@
         <node concept="2nep4R" id="7uPLQmVU7p" role="2nerJJ">
           <property role="2neoUh" value="Name" />
           <node concept="V3ZfZ" id="7uPLQmVU7r" role="2nerJI">
-            <property role="TrG5h" value="columnCell" />
+            <property role="TrG5h" value="Name" />
             <property role="3mJ_rA" value="My Name" />
             <node concept="V3Zf6" id="7uPLQmVU7t" role="V3ZfK" />
             <node concept="C4FCh" id="7uPLQmVU7v" role="V3ZfL" />
@@ -323,7 +323,7 @@
         <node concept="2nep4R" id="7uPLQmVU7z" role="2nerJJ">
           <property role="2neoUh" value="Description" />
           <node concept="V3ZfZ" id="7uPLQmVU7_" role="2nerJI">
-            <property role="TrG5h" value="columnCell" />
+            <property role="TrG5h" value="Description" />
             <property role="3mJ_rA" value="My Descr." />
             <node concept="V3Zf6" id="7uPLQmVU7B" role="V3ZfK" />
             <node concept="C4FCh" id="7uPLQmVU7D" role="V3ZfL" />
@@ -333,7 +333,7 @@
         <node concept="2nep4R" id="5mvtLdU$3rs" role="2nerJJ">
           <property role="2neoUh" value="Info" />
           <node concept="2mJbI3" id="5mvtLdU$3ru" role="2nerJI">
-            <property role="TrG5h" value="columnCell" />
+            <property role="TrG5h" value="InfoIcon" />
             <node concept="2mJbIq" id="5mvtLdU$3rw" role="2mJbI4">
               <ref role="3ncAEN" node="7QMGS97OI39" resolve="forms" />
             </node>

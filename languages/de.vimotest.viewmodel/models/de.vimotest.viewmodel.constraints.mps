@@ -15,7 +15,8 @@
   </languages>
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="at53" ref="r:9e3a5843-688b-4c6d-b3dd-9f321700c21b(de.vimotest.viewmodel.structure)" implicit="true" />
+    <import index="at53" ref="r:9e3a5843-688b-4c6d-b3dd-9f321700c21b(de.vimotest.viewmodel.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -307,6 +308,50 @@
                 <node concept="EsrRn" id="6k2oWGc7_RB" role="2Oq$k0" />
                 <node concept="3TrcHB" id="6k2oWGc7_UR" role="2OqNvi">
                   <ref role="3TsBF5" to="at53:4OohpJQO3xr" resolve="supported" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5GwHzPxlueO">
+    <property role="3GE5qa" value="widgets.structures.util" />
+    <ref role="1M2myG" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+    <node concept="EnEH3" id="5GwHzPxlvJM" role="1MhHOB">
+      <ref role="EomxK" to="at53:7uPLQmTPAc" resolve="header" />
+      <node concept="Eqf_E" id="5GwHzPxlvLr" role="EtsB7">
+        <node concept="3clFbS" id="5GwHzPxlvLs" role="2VODD2">
+          <node concept="3clFbF" id="5GwHzPxlw2D" role="3cqZAp">
+            <node concept="2OqwBi" id="5GwHzPxlxga" role="3clFbG">
+              <node concept="2OqwBi" id="5GwHzPxlwtJ" role="2Oq$k0">
+                <node concept="EsrRn" id="5GwHzPxlw2C" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5GwHzPxlwBo" role="2OqNvi">
+                  <ref role="3Tt5mk" to="at53:7uPLQmTQNN" resolve="widgetType" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="5GwHzPxlxIK" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1LLf8_" id="5GwHzPxlxLT" role="1LXaQT">
+        <node concept="3clFbS" id="5GwHzPxlxLU" role="2VODD2">
+          <node concept="3clFbF" id="5GwHzPxlxN4" role="3cqZAp">
+            <node concept="37vLTI" id="5GwHzPxlzyZ" role="3clFbG">
+              <node concept="1Wqviy" id="5GwHzPxl$g6" role="37vLTx" />
+              <node concept="2OqwBi" id="5GwHzPxlxN5" role="37vLTJ">
+                <node concept="2OqwBi" id="5GwHzPxlxN6" role="2Oq$k0">
+                  <node concept="EsrRn" id="5GwHzPxlxN7" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="5GwHzPxlxN8" role="2OqNvi">
+                    <ref role="3Tt5mk" to="at53:7uPLQmTQNN" resolve="widgetType" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="5GwHzPxlxN9" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
             </node>

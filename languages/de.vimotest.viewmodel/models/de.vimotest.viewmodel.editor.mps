@@ -1620,9 +1620,6 @@
     <ref role="1XX52x" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
     <node concept="3EZMnI" id="7uPLQmTQNJ" role="2wV5jI">
       <node concept="2iRfu4" id="7uPLQmTQNK" role="2iSdaV" />
-      <node concept="3F0A7n" id="7uPLQmTQNH" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:7uPLQmTPAc" resolve="header" />
-      </node>
       <node concept="3F1sOY" id="7uPLQmTQNP" role="3EZMnx">
         <ref role="1NtTu8" to="at53:7uPLQmTQNN" resolve="widgetType" />
       </node>

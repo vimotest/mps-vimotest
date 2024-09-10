@@ -368,5 +368,30 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="24MyZrrRA7m">
+    <property role="TrG5h" value="TableViewCheck_Constraints" />
+    <property role="3GE5qa" value="test.assert.structures.tableview" />
+    <ref role="1M2myG" to="53m0:24MyZrrRA7k" resolve="TableViewCheck" />
+    <node concept="9S07l" id="24MyZrrRA7n" role="9Vyp8">
+      <node concept="3clFbS" id="24MyZrrRA7o" role="2VODD2">
+        <node concept="3clFbF" id="24MyZrrRA7p" role="3cqZAp">
+          <node concept="17R0WA" id="24MyZrrRA7q" role="3clFbG">
+            <node concept="35c_gC" id="24MyZrrRA7r" role="3uHU7w">
+              <ref role="35c_gD" to="at53:24MyZrrRA67" resolve="TableViewWidget" />
+            </node>
+            <node concept="2OqwBi" id="24MyZrrRA7s" role="3uHU7B">
+              <node concept="35c_gC" id="24MyZrrRA7t" role="2Oq$k0">
+                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" />
+              </node>
+              <node concept="2qgKlT" id="24MyZrrRA7u" role="2OqNvi">
+                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" />
+                <node concept="nLn13" id="24MyZrrRA7v" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -18,7 +18,7 @@
       </concept>
     </language>
     <language id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.testing">
-      <concept id="9155943921465570536" name="de.vimotest.testing.structure.WidgetRowsCheckValue" flags="ng" index="1i$qk">
+      <concept id="9155943921465570536" name="de.vimotest.testing.structure.WidgetListRowsCheckValue" flags="ng" index="1i$qk">
         <child id="8072781894854610736" name="rows" index="3o2WtG" />
       </concept>
       <concept id="9155943921465570537" name="de.vimotest.testing.structure.SelectedRowCheckValue" flags="ng" index="1i$ql">
@@ -85,7 +85,7 @@
         <property id="4008425378176438827" name="expectedDepth" index="3xvHIf" />
         <child id="1116055435858675194" name="cellChecks" index="1NvgdV" />
       </concept>
-      <concept id="875174318840945352" name="de.vimotest.testing.structure.HierarchicalWidgetRowsCheckValue" flags="ng" index="3VayiJ">
+      <concept id="875174318840945352" name="de.vimotest.testing.structure.WidgetTreeRowsCheckValue" flags="ng" index="3VayiJ">
         <child id="1116055435858988276" name="rows" index="1NusDP" />
       </concept>
       <concept id="875174318840945282" name="de.vimotest.testing.structure.TreeViewCheck" flags="ng" index="3Vayj_">
@@ -94,15 +94,14 @@
     </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
       <concept id="9155943921465570426" name="de.vimotest.viewmodel.structure.ListViewWidget" flags="ng" index="1i$o6">
+        <property id="3315326490838248423" name="defaultHeader" index="3AQkK7" />
         <child id="9155943921465570428" name="enabled" index="1i$o0" />
         <child id="9155943921465570427" name="visibility" index="1i$o7" />
         <child id="9155943921468046907" name="widgetRows" index="1rSL7" />
         <child id="9155943921466652953" name="selectedRow" index="1uGH_" />
         <child id="9155943921468505954" name="cellWidgetType" index="1_COu" />
       </concept>
-      <concept id="9155943921465570408" name="de.vimotest.viewmodel.structure.WidgetRowsFeature" flags="ng" index="1i$ok">
-        <property id="3315326490838248423" name="defaultHeader" index="3AQkK7" />
-      </concept>
+      <concept id="9155943921465570408" name="de.vimotest.viewmodel.structure.WidgetRowsFeature" flags="ng" index="1i$ok" />
       <concept id="9155943921465570409" name="de.vimotest.viewmodel.structure.SelectedRowFeature" flags="ng" index="1i$ol" />
       <concept id="885291782481719619" name="de.vimotest.viewmodel.structure.ViewWidgetFeature" flags="ng" index="25b05G">
         <property id="5555266676524596437" name="inherentSupport" index="2VM7_e" />
@@ -162,11 +161,17 @@
         <property id="3016673643442476650" name="width" index="Lsnro" />
         <property id="3016673643442476939" name="height" index="LsnsT" />
       </concept>
-      <concept id="875174318840945196" name="de.vimotest.viewmodel.structure.HierarchicalWidgetRowsFeature" flags="ng" index="3Vayhb" />
+      <concept id="2392128244454154631" name="de.vimotest.viewmodel.structure.TableViewWidget" flags="ng" index="3UVeDL">
+        <child id="5447508759370023522" name="columns" index="2azj8S" />
+        <child id="2392128244454154634" name="visibility" index="3UVeDW" />
+        <child id="2392128244454154635" name="enabled" index="3UVeDX" />
+        <child id="2392128244454154632" name="widgetRows" index="3UVeDY" />
+        <child id="2392128244454154633" name="selectedRow" index="3UVeDZ" />
+      </concept>
       <concept id="875174318840945205" name="de.vimotest.viewmodel.structure.TreeViewWidget" flags="ng" index="3Vayhi">
         <child id="134781560953466098" name="columns" index="2nerJJ" />
         <child id="875174318840945207" name="selectedRow" index="3Vayhg" />
-        <child id="875174318840945206" name="hierarchicalWidgetRows" index="3Vayhh" />
+        <child id="875174318840945206" name="widgetTreeRows" index="3Vayhh" />
         <child id="875174318840945209" name="enabled" index="3Vayhu" />
         <child id="875174318840945208" name="visibility" index="3Vayhv" />
       </concept>
@@ -236,6 +241,7 @@
       </node>
       <node concept="1i$o6" id="7WgsBLYysIb" role="103ZUC">
         <property role="TrG5h" value="MyListOfLabel" />
+        <property role="3AQkK7" value="My Header" />
         <node concept="V3ZfZ" id="7WgsBLYysIc" role="1_COu">
           <property role="TrG5h" value="listCell" />
           <property role="3mJ_rA" value="Inner Value" />
@@ -257,7 +263,6 @@
         </node>
         <node concept="1i$ok" id="7WgsBLYysIi" role="1rSL7">
           <property role="2VM7R0" value="true" />
-          <property role="3AQkK7" value="My Header" />
           <property role="2VM7_e" value="true" />
         </node>
         <node concept="1i$ol" id="7WgsBLYysIk" role="1uGH_">
@@ -266,6 +271,7 @@
       </node>
       <node concept="1i$o6" id="7WgsBLYyPze" role="103ZUC">
         <property role="TrG5h" value="MyListOfImages" />
+        <property role="3AQkK7" value="My Image" />
         <node concept="C4FCg" id="7WgsBLYyPzj" role="1i$o7">
           <property role="2VM7R0" value="true" />
         </node>
@@ -273,7 +279,6 @@
           <property role="2VM7R0" value="true" />
         </node>
         <node concept="1i$ok" id="7WgsBLYyPzl" role="1rSL7">
-          <property role="3AQkK7" value="My Image" />
           <property role="2VM7_e" value="true" />
         </node>
         <node concept="1i$ol" id="7WgsBLYyPzm" role="1uGH_">
@@ -297,6 +302,21 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3UVeDL" id="4Ips5F1e3zO" role="103ZUC">
+        <property role="TrG5h" value="MyTableView" />
+        <node concept="2nep4R" id="4Ips5F1e3zP" role="2azj8S">
+          <node concept="V3ZfZ" id="4Ips5F1e3zR" role="2nerJI">
+            <property role="TrG5h" value="columnCell" />
+            <node concept="V3Zf6" id="4Ips5F1e3zT" role="V3ZfK" />
+            <node concept="C4FCh" id="4Ips5F1e3zV" role="V3ZfL" />
+            <node concept="C4FCg" id="4Ips5F1e3zX" role="V3ZfM" />
+          </node>
+        </node>
+        <node concept="1i$ok" id="4Ips5F1e3$0" role="3UVeDY" />
+        <node concept="1i$ol" id="4Ips5F1e3$2" role="3UVeDZ" />
+        <node concept="C4FCg" id="4Ips5F1e3$4" role="3UVeDW" />
+        <node concept="C4FCh" id="4Ips5F1e3$6" role="3UVeDX" />
       </node>
       <node concept="3Vayhi" id="K_fAvR606v" role="103ZUC">
         <property role="TrG5h" value="MyTreeView" />
@@ -346,10 +366,10 @@
             </node>
           </node>
         </node>
-        <node concept="3Vayhb" id="K_fAvR606_" role="3Vayhh" />
         <node concept="1i$ol" id="K_fAvR606B" role="3Vayhg" />
         <node concept="C4FCg" id="K_fAvR606D" role="3Vayhv" />
         <node concept="C4FCh" id="K_fAvR606F" role="3Vayhu" />
+        <node concept="1i$ok" id="4Ips5F1aHb9" role="3Vayhh" />
       </node>
     </node>
   </node>

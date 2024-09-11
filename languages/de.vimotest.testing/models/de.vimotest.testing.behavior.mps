@@ -2501,18 +2501,23 @@
               <node concept="1pGfFk" id="7oOtyuJVAV9" role="2ShVmc">
                 <property role="373rjd" value="true" />
                 <ref role="37wK5l" to="g51k:~ConstantModelAccessor.&lt;init&gt;(java.lang.String)" resolve="ConstantModelAccessor" />
-                <node concept="2OqwBi" id="3uwMqjmN6UK" role="37wK5m">
-                  <node concept="1PxgMI" id="3uwMqjmN29I" role="2Oq$k0">
-                    <property role="1BlNFB" value="true" />
-                    <node concept="chp4Y" id="3uwMqjmN2t5" role="3oSUPX">
-                      <ref role="cht4Q" to="at53:7WgsBLYmzhU" resolve="ListViewWidget" />
+                <node concept="2OqwBi" id="1MiWmuIn6Ao" role="37wK5m">
+                  <node concept="2OqwBi" id="3uwMqjmN6UK" role="2Oq$k0">
+                    <node concept="1PxgMI" id="3uwMqjmN29I" role="2Oq$k0">
+                      <property role="1BlNFB" value="true" />
+                      <node concept="chp4Y" id="3uwMqjmN2t5" role="3oSUPX">
+                        <ref role="cht4Q" to="at53:7WgsBLYmzhU" resolve="ListViewWidget" />
+                      </node>
+                      <node concept="37vLTw" id="3uwMqjmN1Gq" role="1m5AlR">
+                        <ref role="3cqZAo" node="7WgsBLYmzj_" resolve="widgetNode" />
+                      </node>
                     </node>
-                    <node concept="37vLTw" id="3uwMqjmN1Gq" role="1m5AlR">
-                      <ref role="3cqZAo" node="7WgsBLYmzj_" resolve="widgetNode" />
+                    <node concept="3TrEf2" id="1MiWmuIn6hN" role="2OqNvi">
+                      <ref role="3Tt5mk" to="at53:1MiWmuIlmTL" resolve="column" />
                     </node>
                   </node>
-                  <node concept="3TrcHB" id="3uwMqjmN7aw" role="2OqNvi">
-                    <ref role="3TsBF5" to="at53:4Ips5F19nXO" resolve="defaultHeader" />
+                  <node concept="3TrcHB" id="1MiWmuIn6F6" role="2OqNvi">
+                    <ref role="3TsBF5" to="at53:7uPLQmTPAc" resolve="header" />
                   </node>
                 </node>
               </node>
@@ -2617,21 +2622,26 @@
       </node>
       <node concept="3clFbS" id="7a1oxby4RnW" role="3clF47">
         <node concept="3clFbF" id="7a1oxby4RQK" role="3cqZAp">
-          <node concept="2OqwBi" id="7a1oxby4TnS" role="3clFbG">
-            <node concept="1PxgMI" id="7a1oxby4SZ9" role="2Oq$k0">
-              <property role="1BlNFB" value="true" />
-              <node concept="chp4Y" id="7a1oxby4T41" role="3oSUPX">
-                <ref role="cht4Q" to="at53:7WgsBLYmzhU" resolve="ListViewWidget" />
-              </node>
-              <node concept="2OqwBi" id="7a1oxby4S2T" role="1m5AlR">
-                <node concept="13iPFW" id="7a1oxby4RQJ" role="2Oq$k0" />
-                <node concept="2qgKlT" id="7a1oxby4Sl_" role="2OqNvi">
-                  <ref role="37wK5l" node="4jKdMMdJYzD" resolve="getWidgetToCheck" />
+          <node concept="2OqwBi" id="1MiWmuIn5SG" role="3clFbG">
+            <node concept="2OqwBi" id="7a1oxby4TnS" role="2Oq$k0">
+              <node concept="1PxgMI" id="7a1oxby4SZ9" role="2Oq$k0">
+                <property role="1BlNFB" value="true" />
+                <node concept="chp4Y" id="7a1oxby4T41" role="3oSUPX">
+                  <ref role="cht4Q" to="at53:7WgsBLYmzhU" resolve="ListViewWidget" />
+                </node>
+                <node concept="2OqwBi" id="7a1oxby4S2T" role="1m5AlR">
+                  <node concept="13iPFW" id="7a1oxby4RQJ" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="7a1oxby4Sl_" role="2OqNvi">
+                    <ref role="37wK5l" node="4jKdMMdJYzD" resolve="getWidgetToCheck" />
+                  </node>
                 </node>
               </node>
+              <node concept="3TrEf2" id="7a1oxby4TBy" role="2OqNvi">
+                <ref role="3Tt5mk" to="at53:1MiWmuIlmTL" resolve="column" />
+              </node>
             </node>
-            <node concept="3TrEf2" id="7a1oxby4TBy" role="2OqNvi">
-              <ref role="3Tt5mk" to="at53:7WgsBLYxJXy" resolve="cellWidgetType" />
+            <node concept="3TrEf2" id="1MiWmuIn68L" role="2OqNvi">
+              <ref role="3Tt5mk" to="at53:7uPLQmTQNN" resolve="widgetType" />
             </node>
           </node>
         </node>
@@ -2873,12 +2883,17 @@
                           <node concept="3Tqbb2" id="5MibNhOf3m5" role="1tU5fm">
                             <ref role="ehGHo" to="at53:F907haLIRF" resolve="ViewWidget" />
                           </node>
-                          <node concept="2OqwBi" id="5MibNhOf3Ed" role="33vP2m">
-                            <node concept="BsUDl" id="5MibNhOf3Ee" role="2Oq$k0">
-                              <ref role="37wK5l" node="7a1oxby5ulq" resolve="getListViewWidget" />
+                          <node concept="2OqwBi" id="1MiWmuInKw$" role="33vP2m">
+                            <node concept="2OqwBi" id="5MibNhOf3Ed" role="2Oq$k0">
+                              <node concept="BsUDl" id="5MibNhOf3Ee" role="2Oq$k0">
+                                <ref role="37wK5l" node="7a1oxby5ulq" resolve="getListViewWidget" />
+                              </node>
+                              <node concept="3TrEf2" id="5MibNhOf3Ef" role="2OqNvi">
+                                <ref role="3Tt5mk" to="at53:1MiWmuIlmTL" resolve="column" />
+                              </node>
                             </node>
-                            <node concept="3TrEf2" id="5MibNhOf3Ef" role="2OqNvi">
-                              <ref role="3Tt5mk" to="at53:7WgsBLYxJXy" resolve="cellWidgetType" />
+                            <node concept="3TrEf2" id="1MiWmuInKKV" role="2OqNvi">
+                              <ref role="3Tt5mk" to="at53:7uPLQmTQNN" resolve="widgetType" />
                             </node>
                           </node>
                         </node>

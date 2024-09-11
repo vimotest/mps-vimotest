@@ -1450,10 +1450,10 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="3F0ifn" id="7WgsBLYxJXN" role="3EZMnx">
-          <property role="3F0ifm" value="cell type:" />
+          <property role="3F0ifm" value="column:" />
         </node>
         <node concept="3F1sOY" id="7WgsBLYxJXK" role="3EZMnx">
-          <ref role="1NtTu8" to="at53:7WgsBLYxJXy" resolve="column" />
+          <ref role="1NtTu8" to="at53:1MiWmuIlmTL" />
           <node concept="2w$q5c" id="K_fAvR6r1O" role="3xwHhi">
             <node concept="2aJ2om" id="K_fAvR6r1P" role="2w$qW5">
               <ref role="2$4xQ3" node="K_fAvR65uJ" resolve="ViewWidget_EmbeddedInspector_Hint" />
@@ -1461,19 +1461,6 @@
           </node>
         </node>
         <node concept="l2Vlx" id="2S2pY38Twhs" role="2iSdaV" />
-      </node>
-      <node concept="3EZMnI" id="2S2pY38Rqh6" role="3EZMnx">
-        <node concept="3EZMnI" id="2S2pY38Rqh7" role="3EZMnx">
-          <node concept="2iRfu4" id="2S2pY38Rqh8" role="2iSdaV" />
-          <node concept="3F0ifn" id="2S2pY38Rqh9" role="3EZMnx">
-            <property role="3F0ifm" value="default header" />
-          </node>
-          <node concept="3F0A7n" id="4Ips5F1aaAr" role="3EZMnx">
-            <ref role="1NtTu8" to="at53:4Ips5F19nXO" resolve="defaultHeader" />
-          </node>
-        </node>
-        <node concept="VPM3Z" id="2S2pY38Rqhb" role="3F10Kt" />
-        <node concept="2iRfu4" id="2S2pY38Rqhc" role="2iSdaV" />
       </node>
       <node concept="3F1sOY" id="7WgsBLYvZT0" role="3EZMnx">
         <ref role="1NtTu8" to="at53:7WgsBLYqF$p" resolve="selectedRow" />

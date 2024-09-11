@@ -491,11 +491,6 @@
     <property role="34LRSv" value="list view" />
     <property role="3GE5qa" value="widgets.structures" />
     <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
-    <node concept="1TJgyi" id="4Ips5F19nXO" role="1TKVEl">
-      <property role="IQ2nx" value="3315326490838248423" />
-      <property role="TrG5h" value="defaultHeader" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyj" id="7WgsBLYvZSV" role="1TKVEi">
       <property role="IQ2ns" value="9155943921468046907" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -503,12 +498,12 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7WgsBLYmzhC" resolve="WidgetRowsFeature" />
     </node>
-    <node concept="1TJgyj" id="7WgsBLYxJXy" role="1TKVEi">
-      <property role="IQ2ns" value="9155943921468505954" />
+    <node concept="1TJgyj" id="1MiWmuIlmTL" role="1TKVEi">
+      <property role="IQ2ns" value="2058973407270497905" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="cellWidgetType" />
+      <property role="20kJfa" value="column" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="F907haLIRF" resolve="ViewWidget" />
+      <ref role="20lvS9" node="7uPLQmTOoE" resolve="ColumnDefinition" />
     </node>
     <node concept="1TJgyj" id="7WgsBLYqF$p" role="1TKVEi">
       <property role="IQ2ns" value="9155943921466652953" />

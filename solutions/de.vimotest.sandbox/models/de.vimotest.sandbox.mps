@@ -103,12 +103,11 @@
     </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
       <concept id="9155943921465570426" name="de.vimotest.viewmodel.structure.ListViewWidget" flags="ng" index="1i$o6">
-        <property id="3315326490838248423" name="defaultHeader" index="3AQkK7" />
         <child id="9155943921465570428" name="enabled" index="1i$o0" />
         <child id="9155943921465570427" name="visibility" index="1i$o7" />
         <child id="9155943921468046907" name="widgetRows" index="1rSL7" />
         <child id="9155943921466652953" name="selectedRow" index="1uGH_" />
-        <child id="9155943921468505954" name="cellWidgetType" index="1_COu" />
+        <child id="2058973407270497905" name="column" index="2MLTWm" />
       </concept>
       <concept id="9155943921465570408" name="de.vimotest.viewmodel.structure.WidgetRowsFeature" flags="ng" index="1i$ok" />
       <concept id="9155943921465570409" name="de.vimotest.viewmodel.structure.SelectedRowFeature" flags="ng" index="1i$ol" />
@@ -250,20 +249,6 @@
       </node>
       <node concept="1i$o6" id="7WgsBLYysIb" role="103ZUC">
         <property role="TrG5h" value="MyListOfLabel" />
-        <property role="3AQkK7" value="My Header" />
-        <node concept="V3ZfZ" id="7WgsBLYysIc" role="1_COu">
-          <property role="TrG5h" value="listCell" />
-          <property role="3mJ_rA" value="Inner Value" />
-          <node concept="V3Zf6" id="7WgsBLYysIm" role="V3ZfK">
-            <property role="2VM7R0" value="true" />
-          </node>
-          <node concept="C4FCh" id="7WgsBLYysIn" role="V3ZfL">
-            <property role="2VM7R0" value="true" />
-          </node>
-          <node concept="C4FCg" id="7WgsBLYysIo" role="V3ZfM">
-            <property role="2VM7R0" value="true" />
-          </node>
-        </node>
         <node concept="C4FCg" id="7WgsBLYysIe" role="1i$o7">
           <property role="2VM7R0" value="true" />
         </node>
@@ -277,10 +262,24 @@
         <node concept="1i$ol" id="7WgsBLYysIk" role="1uGH_">
           <property role="2VM7R0" value="true" />
         </node>
+        <node concept="2nep4R" id="1MiWmuImW6r" role="2MLTWm">
+          <node concept="V3ZfZ" id="7WgsBLYysIc" role="2nerJI">
+            <property role="TrG5h" value="My Text" />
+            <property role="3mJ_rA" value="Inner Value" />
+            <node concept="V3Zf6" id="7WgsBLYysIm" role="V3ZfK">
+              <property role="2VM7R0" value="true" />
+            </node>
+            <node concept="C4FCh" id="7WgsBLYysIn" role="V3ZfL">
+              <property role="2VM7R0" value="true" />
+            </node>
+            <node concept="C4FCg" id="7WgsBLYysIo" role="V3ZfM">
+              <property role="2VM7R0" value="true" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1i$o6" id="7WgsBLYyPze" role="103ZUC">
         <property role="TrG5h" value="MyListOfImages" />
-        <property role="3AQkK7" value="My Image" />
         <node concept="C4FCg" id="7WgsBLYyPzj" role="1i$o7">
           <property role="2VM7R0" value="true" />
         </node>
@@ -293,21 +292,23 @@
         <node concept="1i$ol" id="7WgsBLYyPzm" role="1uGH_">
           <property role="2VM7R0" value="true" />
         </node>
-        <node concept="2mJbI3" id="7WgsBLYyPzo" role="1_COu">
-          <property role="TrG5h" value="cell" />
-          <node concept="2mJbIq" id="7WgsBLYyPzq" role="2mJbI4">
-            <property role="2VM7R0" value="true" />
-            <ref role="3ncAEN" node="7QMGS97OI39" resolve="forms" />
-          </node>
-          <node concept="C4FCh" id="7WgsBLYyPzs" role="2mJbI5">
-            <property role="2VM7R0" value="true" />
-          </node>
-          <node concept="C4FCg" id="7WgsBLYyPzu" role="2mJbI6">
-            <property role="2VM7R0" value="true" />
-          </node>
-          <node concept="2mJlLh" id="7WgsBLYyPzw" role="28FbrT">
-            <node concept="3eDL7N" id="7WgsBLYyPzy" role="28FJ0P">
-              <ref role="3eDL7M" node="2YeT3IBbXG$" resolve="image_circle" />
+        <node concept="2nep4R" id="1MiWmuImW6w" role="2MLTWm">
+          <node concept="2mJbI3" id="7WgsBLYyPzo" role="2nerJI">
+            <property role="TrG5h" value="My Image" />
+            <node concept="2mJbIq" id="7WgsBLYyPzq" role="2mJbI4">
+              <property role="2VM7R0" value="true" />
+              <ref role="3ncAEN" node="7QMGS97OI39" resolve="forms" />
+            </node>
+            <node concept="C4FCh" id="7WgsBLYyPzs" role="2mJbI5">
+              <property role="2VM7R0" value="true" />
+            </node>
+            <node concept="C4FCg" id="7WgsBLYyPzu" role="2mJbI6">
+              <property role="2VM7R0" value="true" />
+            </node>
+            <node concept="2mJlLh" id="7WgsBLYyPzw" role="28FbrT">
+              <node concept="3eDL7N" id="7WgsBLYyPzy" role="28FJ0P">
+                <ref role="3eDL7M" node="2YeT3IBbXG$" resolve="image_circle" />
+              </node>
             </node>
           </node>
         </node>

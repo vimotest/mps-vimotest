@@ -415,7 +415,6 @@
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
-      <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
@@ -2272,86 +2271,14 @@
                                     <node concept="3Tqbb2" id="XX1C5VZTo_" role="1tU5fm">
                                       <ref role="ehGHo" to="53m0:XX1C5W00nT" resolve="TreeCheckRow" />
                                     </node>
-                                    <node concept="2OqwBi" id="XX1C5VZToA" role="33vP2m">
-                                      <node concept="2OqwBi" id="XX1C5VZToB" role="2Oq$k0">
-                                        <node concept="pncrf" id="XX1C5VZToC" role="2Oq$k0" />
-                                        <node concept="3Tsc0h" id="XX1C5VZToD" role="2OqNvi">
-                                          <ref role="3TtcxE" to="53m0:XX1C5W1cNO" />
-                                        </node>
-                                      </node>
-                                      <node concept="2DeJg1" id="XX1C5VZToE" role="2OqNvi" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="3clFbF" id="6PlxgoPntCN" role="3cqZAp">
-                                  <node concept="2OqwBi" id="6PlxgoPny5A" role="3clFbG">
-                                    <node concept="2OqwBi" id="6PlxgoPnv8v" role="2Oq$k0">
-                                      <node concept="2OqwBi" id="6PlxgoPnurk" role="2Oq$k0">
-                                        <node concept="pncrf" id="6PlxgoPntCM" role="2Oq$k0" />
-                                        <node concept="2qgKlT" id="6PlxgoPnuNL" role="2OqNvi">
-                                          <ref role="37wK5l" to="fwln:3uwMqjmQzQp" resolve="getTreeViewWidget" />
-                                        </node>
-                                      </node>
-                                      <node concept="3Tsc0h" id="6PlxgoPnvwg" role="2OqNvi">
-                                        <ref role="3TtcxE" to="at53:7uPLQmTQNM" resolve="columns" />
-                                      </node>
-                                    </node>
-                                    <node concept="2es0OD" id="6PlxgoPn$gX" role="2OqNvi">
-                                      <node concept="1bVj0M" id="6PlxgoPn$gZ" role="23t8la">
-                                        <node concept="3clFbS" id="6PlxgoPn$h0" role="1bW5cS">
-                                          <node concept="3cpWs8" id="6PlxgoPnS7Q" role="3cqZAp">
-                                            <node concept="3cpWsn" id="6PlxgoPnS7R" role="3cpWs9">
-                                              <property role="TrG5h" value="cellCheck" />
-                                              <node concept="3Tqbb2" id="6PlxgoPnS3n" role="1tU5fm">
-                                                <ref role="ehGHo" to="53m0:XX1C5W18Ry" resolve="WidgetCellCheck" />
-                                              </node>
-                                              <node concept="2OqwBi" id="6PlxgoPnS7S" role="33vP2m">
-                                                <node concept="2OqwBi" id="6PlxgoPnS7T" role="2Oq$k0">
-                                                  <node concept="37vLTw" id="6PlxgoPnS7U" role="2Oq$k0">
-                                                    <ref role="3cqZAo" node="XX1C5VZTo$" resolve="newRow" />
-                                                  </node>
-                                                  <node concept="3Tsc0h" id="6PlxgoPnS7V" role="2OqNvi">
-                                                    <ref role="3TtcxE" to="53m0:XX1C5W00nU" resolve="cellChecks" />
-                                                  </node>
-                                                </node>
-                                                <node concept="2DeJg1" id="6PlxgoPnS7W" role="2OqNvi" />
-                                              </node>
-                                            </node>
-                                          </node>
-                                          <node concept="3clFbF" id="6PlxgoPnJb$" role="3cqZAp">
-                                            <node concept="37vLTI" id="6PlxgoPo18t" role="3clFbG">
-                                              <node concept="2OqwBi" id="6PlxgoPnT7s" role="37vLTJ">
-                                                <node concept="37vLTw" id="6PlxgoPnS7X" role="2Oq$k0">
-                                                  <ref role="3cqZAo" node="6PlxgoPnS7R" resolve="cellCheck" />
-                                                </node>
-                                                <node concept="3TrEf2" id="6PlxgoPnUrX" role="2OqNvi">
-                                                  <ref role="3Tt5mk" to="53m0:XX1C5W18Rz" resolve="nestedCheck" />
-                                                </node>
-                                              </node>
-                                              <node concept="2OqwBi" id="6PlxgoPooqM" role="37vLTx">
-                                                <node concept="2OqwBi" id="6PlxgoPolFQ" role="2Oq$k0">
-                                                  <node concept="pncrf" id="6PlxgoPoljb" role="2Oq$k0" />
-                                                  <node concept="2qgKlT" id="6PlxgoPom77" role="2OqNvi">
-                                                    <ref role="37wK5l" to="fwln:6PlxgoPocY2" resolve="getCellWidgetCheckConcept" />
-                                                    <node concept="37vLTw" id="6PlxgoPomxg" role="37wK5m">
-                                                      <ref role="3cqZAo" node="6PlxgoPn$h1" resolve="it" />
-                                                    </node>
-                                                  </node>
-                                                </node>
-                                                <node concept="q_SaT" id="6PlxgoPoq9Q" role="2OqNvi" />
-                                              </node>
-                                            </node>
-                                          </node>
-                                        </node>
-                                        <node concept="gl6BB" id="6PlxgoPn$h1" role="1bW2Oz">
-                                          <property role="TrG5h" value="column" />
-                                          <node concept="2jxLKc" id="6PlxgoPn$h2" role="1tU5fm" />
-                                        </node>
+                                    <node concept="2OqwBi" id="XX1C5VZToB" role="33vP2m">
+                                      <node concept="pncrf" id="XX1C5VZToC" role="2Oq$k0" />
+                                      <node concept="2qgKlT" id="2DHgAdqbfB4" role="2OqNvi">
+                                        <ref role="37wK5l" to="fwln:2DHgAdqb909" resolve="makeNewInitializedCheckRow" />
                                       </node>
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="3clFbH" id="XX1C5W1L9R" role="3cqZAp" />
                                 <node concept="3clFbF" id="XX1C5VZToP" role="3cqZAp">
                                   <node concept="2OqwBi" id="XX1C5VZToQ" role="3clFbG">
                                     <node concept="2OqwBi" id="XX1C5VZToR" role="2Oq$k0">

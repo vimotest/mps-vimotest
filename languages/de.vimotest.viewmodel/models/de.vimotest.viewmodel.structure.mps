@@ -526,6 +526,9 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
     </node>
+    <node concept="PrWs8" id="30uXY1Shcgg" role="PzmwI">
+      <ref role="PrY4T" node="30uXY1Sh9ET" resolve="IStructuredWidget" />
+    </node>
   </node>
   <node concept="1TIwiD" id="K_fAvR3LCP">
     <property role="EcuMT" value="875174318840945205" />
@@ -568,10 +571,13 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
     </node>
+    <node concept="PrWs8" id="30uXY1Shcgi" role="PzmwI">
+      <ref role="PrY4T" node="30uXY1Sh9ET" resolve="IStructuredWidget" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2zlSkwD9nfw">
     <property role="EcuMT" value="2942505631600702432" />
-    <property role="3GE5qa" value="widgets.structures" />
+    <property role="3GE5qa" value="widgets.structures.util" />
     <property role="TrG5h" value="ITreeRow" />
     <node concept="PrWs8" id="24MyZrrSPcH" role="PrDN$">
       <ref role="PrY4T" node="24MyZrrSND$" resolve="ITableRow" />
@@ -649,11 +655,19 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
     </node>
+    <node concept="PrWs8" id="30uXY1Shcgh" role="PzmwI">
+      <ref role="PrY4T" node="30uXY1Sh9ET" resolve="IStructuredWidget" />
+    </node>
   </node>
   <node concept="PlHQZ" id="24MyZrrSND$">
     <property role="EcuMT" value="2392128244454472292" />
-    <property role="3GE5qa" value="widgets.structures" />
+    <property role="3GE5qa" value="widgets.structures.util" />
     <property role="TrG5h" value="ITableRow" />
+  </node>
+  <node concept="PlHQZ" id="30uXY1Sh9ET">
+    <property role="EcuMT" value="3467481306584357561" />
+    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="TrG5h" value="IStructuredWidget" />
   </node>
 </model>
 

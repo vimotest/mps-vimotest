@@ -3102,7 +3102,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2zlSkwD9osT">
-    <property role="3GE5qa" value="widgets.structures" />
+    <property role="3GE5qa" value="widgets.structures.util" />
     <ref role="13h7C2" to="at53:2zlSkwD9nfw" resolve="ITreeRow" />
     <node concept="13i0hz" id="2zlSkwD9pDm" role="13h7CS">
       <property role="13i0iv" value="true" />
@@ -3886,7 +3886,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="24MyZrrSPdu">
-    <property role="3GE5qa" value="widgets.structures" />
+    <property role="3GE5qa" value="widgets.structures.util" />
     <ref role="13h7C2" to="at53:24MyZrrSND$" resolve="ITableRow" />
     <node concept="13hLZK" id="24MyZrrSPdv" role="13h7CW">
       <node concept="3clFbS" id="24MyZrrSPdw" role="2VODD2" />

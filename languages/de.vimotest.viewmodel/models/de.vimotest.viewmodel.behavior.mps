@@ -583,19 +583,17 @@
             </node>
             <node concept="liA8E" id="6k2oWGbTF5F" role="2OqNvi">
               <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
-              <node concept="2ShNRf" id="6k2oWGbTF9m" role="37wK5m">
-                <node concept="1pGfFk" id="6k2oWGbTF9n" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="5xyw:29i_hh2lLWq" resolve="EditorCell_Basic" />
-                  <node concept="37vLTw" id="6k2oWGbTF9o" role="37wK5m">
-                    <ref role="3cqZAo" node="3pKiF2wMLu0" resolve="context" />
-                  </node>
-                  <node concept="37vLTw" id="6k2oWGbTF9p" role="37wK5m">
-                    <ref role="3cqZAo" node="3pKiF2wMLu4" resolve="node" />
-                  </node>
-                  <node concept="37vLTw" id="6k2oWGbTF9q" role="37wK5m">
-                    <ref role="3cqZAo" node="3pKiF2wMLu2" resolve="checkedPropertyAccessor" />
-                  </node>
+              <node concept="2YIFZM" id="6PUER2qaOsM" role="37wK5m">
+                <ref role="37wK5l" to="5xyw:6PUER2q9Llq" resolve="create" />
+                <ref role="1Pybhc" to="5xyw:29i_hh2lsQO" resolve="EditorCell_CheckBox" />
+                <node concept="37vLTw" id="6k2oWGbTF9o" role="37wK5m">
+                  <ref role="3cqZAo" node="3pKiF2wMLu0" resolve="context" />
+                </node>
+                <node concept="37vLTw" id="6k2oWGbTF9q" role="37wK5m">
+                  <ref role="3cqZAo" node="3pKiF2wMLu2" resolve="checkedPropertyAccessor" />
+                </node>
+                <node concept="37vLTw" id="6k2oWGbTF9p" role="37wK5m">
+                  <ref role="3cqZAo" node="3pKiF2wMLu4" resolve="node" />
                 </node>
               </node>
             </node>

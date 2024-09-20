@@ -33,6 +33,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
@@ -295,18 +298,17 @@
               <node concept="3uibUv" id="5Hr2i_R1ZQa" role="1tU5fm">
                 <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
               </node>
-              <node concept="2ShNRf" id="3_TG3j97kDd" role="33vP2m">
-                <node concept="1pGfFk" id="3_TG3j97$_b" role="2ShVmc">
-                  <ref role="37wK5l" to="5xyw:29i_hh2lLWq" resolve="EditorCell_CheckBox" />
-                  <node concept="37vLTw" id="3_TG3j97A1F" role="37wK5m">
-                    <ref role="3cqZAo" node="g_CeiMc" resolve="editorContext" />
-                  </node>
-                  <node concept="37vLTw" id="3_TG3j97Beo" role="37wK5m">
-                    <ref role="3cqZAo" node="g_CeiMe" resolve="node" />
-                  </node>
-                  <node concept="37vLTw" id="2AMqE6fGrEA" role="37wK5m">
-                    <ref role="3cqZAo" node="4g2H4r3Ws9p" resolve="propertyAccessor" />
-                  </node>
+              <node concept="2YIFZM" id="6PUER2qaOsM" role="33vP2m">
+                <ref role="37wK5l" to="5xyw:6PUER2q9Llq" resolve="create" />
+                <ref role="1Pybhc" to="5xyw:29i_hh2lsQO" resolve="EditorCell_CheckBox" />
+                <node concept="37vLTw" id="6k2oWGbTF9o" role="37wK5m">
+                  <ref role="3cqZAo" node="g_CeiMc" resolve="editorContext" />
+                </node>
+                <node concept="37vLTw" id="6k2oWGbTF9q" role="37wK5m">
+                  <ref role="3cqZAo" node="4g2H4r3Ws9p" resolve="propertyAccessor" />
+                </node>
+                <node concept="37vLTw" id="6k2oWGbTF9p" role="37wK5m">
+                  <ref role="3cqZAo" node="g_CeiMe" resolve="node" />
                 </node>
               </node>
             </node>

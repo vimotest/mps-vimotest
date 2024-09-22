@@ -82,6 +82,7 @@
         <child id="7445061853131767049" name="assertsWithDescription" index="DUd56" />
       </concept>
       <concept id="1116055435858972130" name="de.vimotest.testing.structure.WidgetCellCheck" flags="ng" index="1NuoHz">
+        <reference id="216141720049061515" name="cachedWidgetToCheck" index="3elmOO" />
         <child id="1116055435858972131" name="nestedCheck" index="1NuoHy" />
       </concept>
       <concept id="1116055435858675193" name="de.vimotest.testing.structure.TreeCheckRow" flags="ng" index="1NvgdS">
@@ -496,6 +497,7 @@
             <node concept="1i$qk" id="GUPzt1WPYh" role="1i$rf">
               <node concept="CNEhi" id="708i5MC36C0" role="3o2WtG">
                 <node concept="1NuoHz" id="XX1C5W2AtL" role="CNE8S">
+                  <ref role="3elmOO" node="7WgsBLYysIc" resolve="My Text" />
                   <node concept="V3Zc6" id="7a1oxby5iE6" role="1NuoHy">
                     <node concept="V3Zdv" id="7a1oxby5iE9" role="V3Zc7">
                       <property role="3egigc" value="A" />
@@ -509,6 +511,7 @@
               </node>
               <node concept="CNEhi" id="708i5MC36C1" role="3o2WtG">
                 <node concept="1NuoHz" id="XX1C5W2AtM" role="CNE8S">
+                  <ref role="3elmOO" node="7WgsBLYysIc" resolve="My Text" />
                   <node concept="V3Zc6" id="7a1oxby5iDW" role="1NuoHy">
                     <node concept="V3Zdv" id="7a1oxby5iE0" role="V3Zc7">
                       <property role="3egigc" value="B" />
@@ -519,6 +522,7 @@
               </node>
               <node concept="CNEhi" id="708i5MC36C2" role="3o2WtG">
                 <node concept="1NuoHz" id="XX1C5W2AtN" role="CNE8S">
+                  <ref role="3elmOO" node="7WgsBLYysIc" resolve="My Text" />
                   <node concept="V3Zc6" id="5MibNhOhAt8" role="1NuoHy">
                     <node concept="V3Zdv" id="5MibNhOhAt9" role="V3Zc7">
                       <property role="3egigc" value="C" />
@@ -528,6 +532,7 @@
               </node>
               <node concept="CNEhi" id="2L$_HjiTwWG" role="3o2WtG">
                 <node concept="1NuoHz" id="XX1C5W2AtO" role="CNE8S">
+                  <ref role="3elmOO" node="7WgsBLYysIc" resolve="My Text" />
                   <node concept="V3Zc6" id="2L$_HjiTwWI" role="1NuoHy">
                     <node concept="V3Zdv" id="2L$_HjiTwWJ" role="V3Zc7">
                       <property role="3egigc" value="D" />
@@ -549,6 +554,7 @@
             <node concept="1i$qk" id="5MibNhOiLQZ" role="1i$rf">
               <node concept="CNEhi" id="708i5MC36C3" role="3o2WtG">
                 <node concept="1NuoHz" id="XX1C5W2AtP" role="CNE8S">
+                  <ref role="3elmOO" node="7WgsBLYyPzo" resolve="My Image n" />
                   <node concept="2mJbJ5" id="5MibNhOjZ1u" role="1NuoHy">
                     <node concept="2mJbG1" id="5MibNhOjZ1v" role="2mJbJ6">
                       <node concept="3eDL7N" id="5MibNhOlDHH" role="3n32fm">
@@ -560,6 +566,7 @@
               </node>
               <node concept="CNEhi" id="708i5MC36C4" role="3o2WtG">
                 <node concept="1NuoHz" id="XX1C5W2AtQ" role="CNE8S">
+                  <ref role="3elmOO" node="7WgsBLYyPzo" resolve="My Image n" />
                   <node concept="2mJbJ5" id="5MibNhOmKl5" role="1NuoHy">
                     <node concept="2mJbG1" id="5MibNhOmKl6" role="2mJbJ6">
                       <node concept="3eDL7N" id="5MibNhOmKm6" role="3n32fm">
@@ -583,11 +590,13 @@
             <node concept="2ayrQO" id="7N9Xs9XU9Xp" role="3UVeCz">
               <node concept="3UOqEq" id="7N9Xs9XVB$8" role="2ay43_">
                 <node concept="1NuoHz" id="7N9Xs9XVB$9" role="2aBVWM">
+                  <ref role="3elmOO" node="7N9Xs9XU9WQ" resolve="Include" />
                   <node concept="C4Fn6" id="7N9Xs9XVB$b" role="1NuoHy">
                     <node concept="35STPD" id="7N9Xs9XVB$c" role="C4Fn7" />
                   </node>
                 </node>
                 <node concept="1NuoHz" id="7N9Xs9XVB$d" role="2aBVWM">
+                  <ref role="3elmOO" node="4Ips5F1jdcD" resolve="Name" />
                   <node concept="V3Zc6" id="7N9Xs9XVB$f" role="1NuoHy">
                     <node concept="V3Zdv" id="7N9Xs9XVB$g" role="V3Zc7">
                       <property role="3egigc" value="A" />
@@ -595,6 +604,7 @@
                   </node>
                 </node>
                 <node concept="1NuoHz" id="7N9Xs9XVB$h" role="2aBVWM">
+                  <ref role="3elmOO" node="7N9Xs9XU9Xg" resolve="Description" />
                   <node concept="V3Zc6" id="7N9Xs9XVB$j" role="1NuoHy">
                     <node concept="V3Zdv" id="7N9Xs9XVB$k" role="V3Zc7">
                       <property role="3egigc" value="B" />
@@ -602,6 +612,7 @@
                   </node>
                 </node>
                 <node concept="1NuoHz" id="7N9Xs9XVB$l" role="2aBVWM">
+                  <ref role="3elmOO" node="7N9Xs9XTOpi" resolve="InfoIcon" />
                   <node concept="2mJbJ5" id="7N9Xs9XVB$n" role="1NuoHy">
                     <node concept="2mJbG1" id="7N9Xs9XVB$o" role="2mJbJ6">
                       <node concept="3eDL7N" id="7N9Xs9XVB$p" role="3n32fm">
@@ -613,6 +624,7 @@
               </node>
               <node concept="3UOqEq" id="7N9Xs9XW1ZE" role="2ay43_">
                 <node concept="1NuoHz" id="7N9Xs9XW1ZF" role="2aBVWM">
+                  <ref role="3elmOO" node="7N9Xs9XU9WQ" resolve="Include" />
                   <node concept="C4Fn6" id="7N9Xs9XW1ZH" role="1NuoHy">
                     <node concept="35STPD" id="7N9Xs9XW1ZI" role="C4Fn7">
                       <property role="35S$ZG" value="true" />
@@ -620,6 +632,7 @@
                   </node>
                 </node>
                 <node concept="1NuoHz" id="7N9Xs9XW1ZJ" role="2aBVWM">
+                  <ref role="3elmOO" node="4Ips5F1jdcD" resolve="Name" />
                   <node concept="V3Zc6" id="7N9Xs9XW1ZL" role="1NuoHy">
                     <node concept="V3Zdv" id="7N9Xs9XW1ZM" role="V3Zc7">
                       <property role="3egigc" value="C" />
@@ -627,6 +640,7 @@
                   </node>
                 </node>
                 <node concept="1NuoHz" id="7N9Xs9XW1ZN" role="2aBVWM">
+                  <ref role="3elmOO" node="7N9Xs9XU9Xg" resolve="Description" />
                   <node concept="V3Zc6" id="7N9Xs9XW1ZP" role="1NuoHy">
                     <node concept="V3Zdv" id="7N9Xs9XW1ZQ" role="V3Zc7">
                       <property role="3egigc" value="D" />
@@ -634,6 +648,7 @@
                   </node>
                 </node>
                 <node concept="1NuoHz" id="7N9Xs9XW1ZR" role="2aBVWM">
+                  <ref role="3elmOO" node="7N9Xs9XTOpi" resolve="InfoIcon" />
                   <node concept="2mJbJ5" id="7N9Xs9XW1ZT" role="1NuoHy">
                     <node concept="2mJbG1" id="7N9Xs9XW1ZU" role="2mJbJ6">
                       <node concept="3eDL7N" id="7N9Xs9XW1ZV" role="3n32fm">
@@ -655,11 +670,13 @@
               <node concept="1NvgdS" id="6PlxgoPs6na" role="1NusDP">
                 <property role="3xvHIf" value="0" />
                 <node concept="1NuoHz" id="5mvtLdU$3sa" role="1NvgdV">
+                  <ref role="3elmOO" node="5mvtLdU$3ri" resolve="Include" />
                   <node concept="C4Fn6" id="5mvtLdU$3sc" role="1NuoHy">
                     <node concept="35STPD" id="5mvtLdU$3sd" role="C4Fn7" />
                   </node>
                 </node>
                 <node concept="1NuoHz" id="6PlxgoPs6nb" role="1NvgdV">
+                  <ref role="3elmOO" node="7uPLQmVU7r" resolve="Name" />
                   <node concept="V3Zc6" id="6PlxgoPs6nd" role="1NuoHy">
                     <node concept="V3Zdv" id="6PlxgoPs6ne" role="V3Zc7">
                       <property role="3egigc" value="A" />
@@ -667,6 +684,7 @@
                   </node>
                 </node>
                 <node concept="1NuoHz" id="6PlxgoPs6nf" role="1NvgdV">
+                  <ref role="3elmOO" node="7uPLQmVU7_" resolve="Description" />
                   <node concept="V3Zc6" id="6PlxgoPs6nh" role="1NuoHy">
                     <node concept="V3Zdv" id="6PlxgoPs6ni" role="V3Zc7">
                       <property role="3egigc" value="B" />
@@ -674,6 +692,7 @@
                   </node>
                 </node>
                 <node concept="1NuoHz" id="5mvtLdU$3so" role="1NvgdV">
+                  <ref role="3elmOO" node="5mvtLdU$3ru" resolve="InfoIcon" />
                   <node concept="2mJbJ5" id="5mvtLdU$3sp" role="1NuoHy">
                     <node concept="2mJbG1" id="5mvtLdU$3sq" role="2mJbJ6">
                       <node concept="3eDL7N" id="5mvtLdU$3sr" role="3n32fm">
@@ -686,6 +705,7 @@
               <node concept="1NvgdS" id="6PlxgoPsyRN" role="1NusDP">
                 <property role="3xvHIf" value="1" />
                 <node concept="1NuoHz" id="5mvtLdU$3s1" role="1NvgdV">
+                  <ref role="3elmOO" node="5mvtLdU$3ri" resolve="Include" />
                   <node concept="C4Fn6" id="5mvtLdU$3s7" role="1NuoHy">
                     <node concept="35STPD" id="5mvtLdU$3s8" role="C4Fn7">
                       <property role="35S$ZG" value="true" />
@@ -693,6 +713,7 @@
                   </node>
                 </node>
                 <node concept="1NuoHz" id="6PlxgoPsyRO" role="1NvgdV">
+                  <ref role="3elmOO" node="7uPLQmVU7r" resolve="Name" />
                   <node concept="V3Zc6" id="6PlxgoPsyRW" role="1NuoHy">
                     <node concept="V3Zdv" id="6PlxgoPsyRX" role="V3Zc7">
                       <property role="3egigc" value="C" />
@@ -700,6 +721,7 @@
                   </node>
                 </node>
                 <node concept="1NuoHz" id="6PlxgoPsyRS" role="1NvgdV">
+                  <ref role="3elmOO" node="7uPLQmVU7_" resolve="Description" />
                   <node concept="V3Zc6" id="6PlxgoPsyRU" role="1NuoHy">
                     <node concept="V3Zdv" id="6PlxgoPsyRV" role="V3Zc7">
                       <property role="3egigc" value="D" />
@@ -707,6 +729,7 @@
                   </node>
                 </node>
                 <node concept="1NuoHz" id="5mvtLdU$3si" role="1NvgdV">
+                  <ref role="3elmOO" node="5mvtLdU$3ru" resolve="InfoIcon" />
                   <node concept="2mJbJ5" id="5mvtLdU$3sk" role="1NuoHy">
                     <node concept="2mJbG1" id="5mvtLdU$3sl" role="2mJbJ6">
                       <node concept="3eDL7N" id="5mvtLdU$3sn" role="3n32fm">

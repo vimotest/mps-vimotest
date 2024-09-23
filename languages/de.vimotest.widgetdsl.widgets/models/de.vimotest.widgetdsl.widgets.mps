@@ -150,7 +150,7 @@
     <property role="2SiFfI" value="tree view" />
     <node concept="2WVz4l" id="K_fAvR3J9b" role="2WV$Zc">
       <property role="3dRBvX" value="true" />
-      <ref role="2WVz4k" node="K_fAvR3Kq_" resolve="HierarchicalWidgetRows" />
+      <ref role="2WVz4k" node="bZSVZdtcRS" resolve="WidgetTreeRows" />
     </node>
     <node concept="2WVz4l" id="K_fAvR3J9c" role="2WV$Zc">
       <ref role="2WVz4k" node="7WgsBLYmzhB" resolve="SelectedRow" />
@@ -164,7 +164,7 @@
   </node>
   <node concept="2WVz3E" id="K_fAvR3Kq_">
     <property role="3GE5qa" value="features" />
-    <property role="TrG5h" value="WidgetRows" />
+    <property role="TrG5h" value="WidgetListRows" />
     <property role="2WV$r6" value="widget rows" />
     <property role="2WVz4g" value="r" />
     <property role="3yYw5D" value="fLJRk5B/darkGray" />
@@ -176,7 +176,7 @@
     <property role="2SiFfI" value="table view" />
     <node concept="2WVz4l" id="24MyZrrRA63" role="2WV$Zc">
       <property role="3dRBvX" value="true" />
-      <ref role="2WVz4k" node="K_fAvR3Kq_" resolve="WidgetRows" />
+      <ref role="2WVz4k" node="bZSVZdtfot" resolve="WidgetTableRows" />
     </node>
     <node concept="2WVz4l" id="24MyZrrRA64" role="2WV$Zc">
       <ref role="2WVz4k" node="7WgsBLYmzhB" resolve="SelectedRow" />
@@ -187,6 +187,20 @@
     <node concept="2WVz4l" id="24MyZrrRA66" role="2WV$Zc">
       <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
     </node>
+  </node>
+  <node concept="2WVz3E" id="bZSVZdtcRS">
+    <property role="3GE5qa" value="features" />
+    <property role="TrG5h" value="WidgetTreeRows" />
+    <property role="2WV$r6" value="widget rows" />
+    <property role="2WVz4g" value="r" />
+    <property role="3yYw5D" value="fLJRk5B/darkGray" />
+  </node>
+  <node concept="2WVz3E" id="bZSVZdtfot">
+    <property role="3GE5qa" value="features" />
+    <property role="TrG5h" value="WidgetTableRows" />
+    <property role="2WV$r6" value="widget rows" />
+    <property role="2WVz4g" value="r" />
+    <property role="3yYw5D" value="fLJRk5B/darkGray" />
   </node>
 </model>
 

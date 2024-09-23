@@ -471,13 +471,6 @@
     <property role="3GE5qa" value="widgets.image" />
     <property role="TrG5h" value="IDefinesImageSourceScope" />
   </node>
-  <node concept="1TIwiD" id="7WgsBLYmzhC">
-    <property role="EcuMT" value="9155943921465570408" />
-    <property role="TrG5h" value="WidgetRowsFeature" />
-    <property role="34LRSv" value="widget rows" />
-    <property role="3GE5qa" value="features" />
-    <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
-  </node>
   <node concept="1TIwiD" id="7WgsBLYmzhD">
     <property role="EcuMT" value="9155943921465570409" />
     <property role="TrG5h" value="SelectedRowFeature" />
@@ -494,9 +487,9 @@
     <node concept="1TJgyj" id="7WgsBLYvZSV" role="1TKVEi">
       <property role="IQ2ns" value="9155943921468046907" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="widgetRowsFeature" />
+      <property role="20kJfa" value="widgetListRowsFeature" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7WgsBLYmzhC" resolve="WidgetRowsFeature" />
+      <ref role="20lvS9" node="2lm5WNlbZLf" resolve="WidgetListRowsFeature" />
     </node>
     <node concept="1TJgyj" id="1MiWmuIlmTL" role="1TKVEi">
       <property role="IQ2ns" value="2058973407270497905" />
@@ -538,10 +531,10 @@
     <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
     <node concept="1TJgyj" id="K_fAvR3LCQ" role="1TKVEi">
       <property role="IQ2ns" value="875174318840945206" />
-      <property role="20kJfa" value="widgetRowsFeature" />
+      <property role="20kJfa" value="widgetTreeRowsFeature" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7WgsBLYmzhC" resolve="WidgetRowsFeature" />
+      <ref role="20lvS9" node="2lm5WNlbZLg" resolve="WidgetTreeRowsFeature" />
     </node>
     <node concept="1TJgyj" id="7uPLQmTQNM" role="1TKVEi">
       <property role="IQ2ns" value="134781560953466098" />
@@ -622,10 +615,10 @@
     <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
     <node concept="1TJgyj" id="24MyZrrRA68" role="1TKVEi">
       <property role="IQ2ns" value="2392128244454154632" />
-      <property role="20kJfa" value="widgetRowsFeature" />
+      <property role="20kJfa" value="widgetTableRowsFeature" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7WgsBLYmzhC" resolve="WidgetRowsFeature" />
+      <ref role="20lvS9" node="2lm5WNlbZLh" resolve="WidgetTableRowsFeature" />
     </node>
     <node concept="1TJgyj" id="4Ips5F1549y" role="1TKVEi">
       <property role="IQ2ns" value="5447508759370023522" />
@@ -668,6 +661,27 @@
     <property role="EcuMT" value="3467481306584357561" />
     <property role="3GE5qa" value="widgets.structures.util" />
     <property role="TrG5h" value="IStructuredWidget" />
+  </node>
+  <node concept="1TIwiD" id="2lm5WNlbZLf">
+    <property role="EcuMT" value="2690363995917909071" />
+    <property role="TrG5h" value="WidgetListRowsFeature" />
+    <property role="34LRSv" value="widget rows" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
+  </node>
+  <node concept="1TIwiD" id="2lm5WNlbZLg">
+    <property role="EcuMT" value="2690363995917909072" />
+    <property role="TrG5h" value="WidgetTreeRowsFeature" />
+    <property role="34LRSv" value="widget rows" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
+  </node>
+  <node concept="1TIwiD" id="2lm5WNlbZLh">
+    <property role="EcuMT" value="2690363995917909073" />
+    <property role="TrG5h" value="WidgetTableRowsFeature" />
+    <property role="34LRSv" value="widget rows" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
   </node>
 </model>
 

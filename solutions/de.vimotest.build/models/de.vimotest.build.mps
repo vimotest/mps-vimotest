@@ -4,6 +4,7 @@
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="8" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="1" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -17,6 +18,15 @@
       <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG">
         <property id="1622293396948953704" name="value" index="3o6i5n" />
       </concept>
+    </language>
+    <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
+      <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildAspect_MpsTestModules" flags="nn" index="22LTRH">
+        <child id="4560297596904469360" name="modules" index="22LTRK" />
+      </concept>
+      <concept id="4560297596904469362" name="jetbrains.mps.build.mps.tests.structure.BuildMps_TestModule" flags="nn" index="22LTRM">
+        <reference id="4560297596904469363" name="module" index="22LTRN" />
+      </concept>
+      <concept id="4005526075820600484" name="jetbrains.mps.build.mps.tests.structure.BuildModuleTestsPlugin" flags="ng" index="1gjT0q" />
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
@@ -39,6 +49,7 @@
       <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
+      <concept id="7389400916848036984" name="jetbrains.mps.build.structure.BuildLayout_Folder" flags="ng" index="398223" />
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
         <child id="7389400916848144618" name="defaultPath" index="398pKh" />
       </concept>
@@ -50,6 +61,7 @@
         <property id="5204048710541015587" name="internalBaseDirectory" index="2DA0ip" />
         <child id="6647099934206700656" name="plugins" index="10PD9s" />
         <child id="7389400916848080626" name="parts" index="3989C9" />
+        <child id="3542413272732620719" name="aspects" index="1hWBAP" />
         <child id="5617550519002745381" name="dependencies" index="1l3spa" />
         <child id="5617550519002745378" name="macros" index="1l3spd" />
         <child id="5617550519002745372" name="layout" index="1l3spN" />
@@ -98,6 +110,9 @@
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
+      <concept id="1265949165890536423" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_ModuleJars" flags="ng" index="L2wRC">
+        <reference id="1265949165890536425" name="module" index="L2wRA" />
+      </concept>
       <concept id="8971171305100238972" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyTargetLanguage" flags="ng" index="Rbm2T">
         <reference id="3189788309731922643" name="language" index="1E1Vl2" />
       </concept>
@@ -123,7 +138,9 @@
       <concept id="3189788309731981027" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleSolutionRuntime" flags="ng" index="1E0d5M">
         <reference id="3189788309731981028" name="solution" index="1E0d5P" />
       </concept>
-      <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA" />
+      <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA">
+        <property id="269707337715731330" name="sourcesKind" index="aoJFB" />
+      </concept>
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
         <child id="3189788309731917348" name="runtime" index="1E1XAP" />
         <child id="9200313594498201639" name="generator" index="1TViLv" />
@@ -143,6 +160,7 @@
     <property role="2DA0ip" value="../.." />
     <node concept="10PD9b" id="220dcIkyAiv" role="10PD9s" />
     <node concept="3b7kt6" id="220dcIkyAiw" role="10PD9s" />
+    <node concept="1gjT0q" id="bZSVZdidFb" role="10PD9s" />
     <node concept="398rNT" id="5tK9548cRh7" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
       <node concept="55IIr" id="5tK9548cRh8" role="398pKh">
@@ -196,6 +214,25 @@
         <node concept="m$_wl" id="220dcIkyAjr" role="39821P">
           <ref role="m_rDy" node="220dcIkyAja" resolve="de.vimotest" />
           <node concept="pUk6x" id="220dcIkyAjs" role="pUk7w" />
+        </node>
+      </node>
+      <node concept="398223" id="bZSVZdidIw" role="39821P">
+        <node concept="L2wRC" id="bZSVZdj2tS" role="39821P">
+          <ref role="L2wRA" node="220dcIkyAiK" resolve="de.vimotest.widgetdsl" />
+        </node>
+        <node concept="L2wRC" id="bZSVZdiCjK" role="39821P">
+          <ref role="L2wRA" node="220dcIkyAiW" resolve="de.vimotest.widgetdsl.widgets" />
+        </node>
+        <node concept="L2wRC" id="bZSVZdinO9" role="39821P">
+          <ref role="L2wRA" node="220dcIkyAj8" resolve="de.vimotest.plugin" />
+        </node>
+        <node concept="L2wRC" id="bZSVZdidI_" role="39821P">
+          <ref role="L2wRA" node="bZSVZdidFi" resolve="de.vimotest.mpstest" />
+        </node>
+        <node concept="3_J27D" id="bZSVZdidIy" role="Nbhlr">
+          <node concept="3Mxwew" id="bZSVZdidI$" role="3MwsjC">
+            <property role="3MwjfP" value="tests" />
+          </node>
         </node>
       </node>
     </node>
@@ -680,34 +717,6 @@
             </node>
           </node>
         </node>
-        <node concept="1yeLz9" id="220dcIkyAjO" role="1TViLv">
-          <property role="TrG5h" value="de.vimotest.widgetdsl.generator" />
-          <property role="3LESm3" value="bcc8317e-bf73-47b9-9a5c-21e878cee61d" />
-          <node concept="1BupzO" id="220dcIkyAjU" role="3bR31x">
-            <property role="3ZfqAx" value="generator/templates" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="220dcIkyAjV" role="1HemKq">
-              <node concept="55IIr" id="220dcIkyAjP" role="3LXTmr">
-                <node concept="2Ry0Ak" id="220dcIkyAjQ" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="220dcIkyAjR" role="2Ry0An">
-                    <property role="2Ry0Am" value="de.vimotest.widgetdsl" />
-                    <node concept="2Ry0Ak" id="220dcIkyAjS" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="220dcIkyAjT" role="2Ry0An">
-                        <property role="2Ry0Am" value="templates" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="220dcIkyAjW" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="6eqMDi1oGNv" role="3bR37C">
           <node concept="3bR9La" id="6eqMDi1oGNw" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
@@ -879,6 +888,54 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="bZSVZdidFi" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="de.vimotest.mpstest" />
+        <property role="3LESm3" value="6fdc66a1-6b5a-46e2-92ac-801560a5e88a" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+        <node concept="55IIr" id="bZSVZdidFl" role="3LF7KH">
+          <node concept="2Ry0Ak" id="bZSVZdidFo" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="bZSVZdidFr" role="2Ry0An">
+              <property role="2Ry0Am" value="de.vimotest.mpstest" />
+              <node concept="2Ry0Ak" id="bZSVZdidHm" role="2Ry0An">
+                <property role="2Ry0Am" value="de.vimotest.mpstest.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="bZSVZdidIf" role="3bR37C">
+          <node concept="3bR9La" id="bZSVZdidIg" role="1SiIV1">
+            <ref role="3bR37D" node="220dcIkyAj8" resolve="de.vimotest.plugin" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="bZSVZdidIh" role="3bR37C">
+          <node concept="3bR9La" id="bZSVZdidIi" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="bZSVZdidIn" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="bZSVZdidIo" role="1HemKq">
+            <node concept="55IIr" id="bZSVZdidIj" role="3LXTmr">
+              <node concept="2Ry0Ak" id="bZSVZdidIk" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="bZSVZdidIl" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.vimotest.mpstest" />
+                  <node concept="2Ry0Ak" id="bZSVZdidIm" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="bZSVZdidIp" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2G$12M" id="220dcIkyGGa" role="3989C9">
       <property role="TrG5h" value="sandbox" />
@@ -918,6 +975,12 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="22LTRH" id="bZSVZdidFd" role="1hWBAP">
+      <property role="TrG5h" value="runModuleTests" />
+      <node concept="22LTRM" id="bZSVZdidIu" role="22LTRK">
+        <ref role="22LTRN" node="bZSVZdidFi" resolve="de.vimotest.mpstest" />
       </node>
     </node>
   </node>

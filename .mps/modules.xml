@@ -10,6 +10,7 @@
       <modulePath path="$PROJECT_DIR$/languages/de.vimotest.widgetdsl.widgets/de.vimotest.widgetdsl.widgets.msd" folder="metadsl" />
       <modulePath path="$PROJECT_DIR$/languages/de.vimotest.widgetdsl/de.vimotest.widgetdsl.mpl" folder="metadsl" />
       <modulePath path="$PROJECT_DIR$/solutions/de.vimotest.build/de.vimotest.build.msd" folder="util" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.vimotest.mpstest/de.vimotest.mpstest.msd" folder="util" />
       <modulePath path="$PROJECT_DIR$/solutions/de.vimotest.plugin/de.vimotest.plugin.msd" folder="util" />
       <modulePath path="$PROJECT_DIR$/solutions/de.vimotest.sandbox/de.vimotest.sandbox.msd" folder="models" />
     </projectModules>

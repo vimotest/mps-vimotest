@@ -227,6 +227,12 @@
     <node concept="PrWs8" id="7WgsBLYoxwc" role="PzmwI">
       <ref role="PrY4T" node="7WgsBLYmzis" resolve="IListViewCheckValue" />
     </node>
+    <node concept="PrWs8" id="bZSVZd6wKk" role="PzmwI">
+      <ref role="PrY4T" node="K_fAvR3LDG" resolve="ITreeViewCheckValue" />
+    </node>
+    <node concept="PrWs8" id="bZSVZd6xeg" role="PzmwI">
+      <ref role="PrY4T" node="24MyZrrRA6Y" resolve="ITableViewCheckValue" />
+    </node>
     <node concept="1TJgyi" id="5VrLp2zpM0p" role="1TKVEl">
       <property role="IQ2nx" value="6835274084472266777" />
       <property role="TrG5h" value="expectedIsVisible" />
@@ -255,6 +261,12 @@
     </node>
     <node concept="PrWs8" id="7WgsBLYoyba" role="PzmwI">
       <ref role="PrY4T" node="7WgsBLYmzis" resolve="IListViewCheckValue" />
+    </node>
+    <node concept="PrWs8" id="bZSVZd7iC0" role="PzmwI">
+      <ref role="PrY4T" node="24MyZrrRA6Y" resolve="ITableViewCheckValue" />
+    </node>
+    <node concept="PrWs8" id="bZSVZd7iC1" role="PzmwI">
+      <ref role="PrY4T" node="K_fAvR3LDG" resolve="ITreeViewCheckValue" />
     </node>
   </node>
   <node concept="PlHQZ" id="69Ym88BeFj8">
@@ -499,6 +511,12 @@
     <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
     <node concept="PrWs8" id="7WgsBLYp0cq" role="PzmwI">
       <ref role="PrY4T" node="7WgsBLYmzis" resolve="IListViewCheckValue" />
+    </node>
+    <node concept="PrWs8" id="bZSVZd7kyY" role="PzmwI">
+      <ref role="PrY4T" node="24MyZrrRA6Y" resolve="ITableViewCheckValue" />
+    </node>
+    <node concept="PrWs8" id="bZSVZd7kyZ" role="PzmwI">
+      <ref role="PrY4T" node="K_fAvR3LDG" resolve="ITreeViewCheckValue" />
     </node>
     <node concept="1TJgyi" id="2L$_HjiNgta" role="1TKVEl">
       <property role="IQ2nx" value="3198847476153780042" />

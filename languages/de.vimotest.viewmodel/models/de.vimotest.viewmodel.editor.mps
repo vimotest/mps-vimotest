@@ -901,16 +901,16 @@
     <node concept="3EZMnI" id="5L3DBX$oEYQ" role="2wV5jI">
       <node concept="2EHx9g" id="5L3DBX$oEYR" role="2iSdaV" />
       <node concept="3F1sOY" id="5L3DBX$oEYS" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:4xrzs1wijvF" resolve="checked" />
+        <ref role="1NtTu8" to="at53:4xrzs1wijvF" resolve="checkedFeature" />
       </node>
       <node concept="3F1sOY" id="6k2oWGbV1N5" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:6k2oWGbSViY" resolve="text" />
+        <ref role="1NtTu8" to="at53:6k2oWGbSViY" resolve="textFeature" />
       </node>
       <node concept="3F1sOY" id="5L3DBX$oEYT" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:4xrzs1wijvG" resolve="visibility" />
+        <ref role="1NtTu8" to="at53:4xrzs1wijvG" resolve="visibilityFeature" />
       </node>
       <node concept="3F1sOY" id="5L3DBX$oEYU" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:4xrzs1wijvH" resolve="enabled" />
+        <ref role="1NtTu8" to="at53:4xrzs1wijvH" resolve="enabledFeature" />
       </node>
     </node>
   </node>
@@ -946,13 +946,13 @@
     <node concept="3EZMnI" id="7H4Lpx0iNpI" role="2wV5jI">
       <node concept="2EHx9g" id="7H4Lpx0iNpJ" role="2iSdaV" />
       <node concept="3F1sOY" id="7H4Lpx0iNpK" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:7H4Lpx0iNpC" resolve="text" />
+        <ref role="1NtTu8" to="at53:7H4Lpx0iNpC" resolve="textFeature" />
       </node>
       <node concept="3F1sOY" id="7H4Lpx0iNpL" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:7H4Lpx0iNpD" resolve="enabled" />
+        <ref role="1NtTu8" to="at53:7H4Lpx0iNpD" resolve="enabledFeature" />
       </node>
       <node concept="3F1sOY" id="7H4Lpx0iNpM" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:7H4Lpx0iNpE" resolve="visibility" />
+        <ref role="1NtTu8" to="at53:7H4Lpx0iNpE" resolve="visibilityFeature" />
       </node>
     </node>
   </node>
@@ -990,7 +990,7 @@
     <node concept="3EZMnI" id="3pKiF2wNf4U" role="2wV5jI">
       <node concept="2iRkQZ" id="9CTo7lnIZu" role="2iSdaV" />
       <node concept="3F1sOY" id="3pKiF2wNf4W" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:3pKiF2wNf4O" resolve="imageSource" />
+        <ref role="1NtTu8" to="at53:3pKiF2wNf4O" resolve="imageSourceFeature" />
       </node>
       <node concept="3EZMnI" id="2YeT3IB8_E_" role="3EZMnx">
         <node concept="3F0ifn" id="2YeT3IB8_Ew" role="3EZMnx">
@@ -998,14 +998,14 @@
         </node>
         <node concept="2iRfu4" id="2YeT3IB8_EA" role="2iSdaV" />
         <node concept="3F1sOY" id="2YeT3IB8_Ez" role="3EZMnx">
-          <ref role="1NtTu8" to="at53:2YeT3IB8_b2" resolve="defaultImage" />
+          <ref role="1NtTu8" to="at53:2YeT3IB8_b2" resolve="defaultImageFeature" />
         </node>
       </node>
       <node concept="3F1sOY" id="3pKiF2wNf4X" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:3pKiF2wNf4P" resolve="enabled" />
+        <ref role="1NtTu8" to="at53:3pKiF2wNf4P" resolve="enabledFeature" />
       </node>
       <node concept="3F1sOY" id="3pKiF2wNf4Y" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:3pKiF2wNf4Q" resolve="visibility" />
+        <ref role="1NtTu8" to="at53:3pKiF2wNf4Q" resolve="visibilityFeature" />
       </node>
     </node>
   </node>
@@ -1451,7 +1451,7 @@
     <node concept="3EZMnI" id="7WgsBLYmzi0" role="2wV5jI">
       <node concept="2EHx9g" id="7WgsBLYmzi1" role="2iSdaV" />
       <node concept="3F1sOY" id="7WgsBLYvZSX" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:7WgsBLYvZSV" resolve="widgetRows" />
+        <ref role="1NtTu8" to="at53:7WgsBLYvZSV" resolve="widgetRowsFeature" />
       </node>
       <node concept="3EZMnI" id="7WgsBLYxJXE" role="3EZMnx">
         <node concept="VPM3Z" id="7WgsBLYxJXG" role="3F10Kt" />
@@ -1462,7 +1462,7 @@
           <property role="3F0ifm" value="column:" />
         </node>
         <node concept="3F1sOY" id="7WgsBLYxJXK" role="3EZMnx">
-          <ref role="1NtTu8" to="at53:1MiWmuIlmTL" />
+          <ref role="1NtTu8" to="at53:1MiWmuIlmTL" resolve="columnFeature" />
           <node concept="2w$q5c" id="K_fAvR6r1O" role="3xwHhi">
             <node concept="2aJ2om" id="K_fAvR6r1P" role="2w$qW5">
               <ref role="2$4xQ3" node="K_fAvR65uJ" resolve="ViewWidget_EmbeddedInspector_Hint" />
@@ -1472,13 +1472,13 @@
         <node concept="l2Vlx" id="2S2pY38Twhs" role="2iSdaV" />
       </node>
       <node concept="3F1sOY" id="7WgsBLYvZT0" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:7WgsBLYqF$p" resolve="selectedRow" />
+        <ref role="1NtTu8" to="at53:7WgsBLYqF$p" resolve="selectedRowFeature" />
       </node>
       <node concept="3F1sOY" id="7WgsBLYmzi2" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:7WgsBLYmzhV" resolve="visibility" />
+        <ref role="1NtTu8" to="at53:7WgsBLYmzhV" resolve="visibilityFeature" />
       </node>
       <node concept="3F1sOY" id="7WgsBLYmzi3" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:7WgsBLYmzhW" resolve="enabled" />
+        <ref role="1NtTu8" to="at53:7WgsBLYmzhW" resolve="enabledFeature" />
       </node>
     </node>
   </node>
@@ -1492,7 +1492,7 @@
     <node concept="3EZMnI" id="K_fAvR3LCX" role="2wV5jI">
       <node concept="2EHx9g" id="K_fAvR3LCY" role="2iSdaV" />
       <node concept="3F1sOY" id="K_fAvR3LCZ" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:K_fAvR3LCQ" resolve="widgetTreeRows" />
+        <ref role="1NtTu8" to="at53:K_fAvR3LCQ" resolve="widgetRowsFeature" />
       </node>
       <node concept="3EZMnI" id="K_fAvR62Om" role="3EZMnx">
         <node concept="VPM3Z" id="K_fAvR62On" role="3F10Kt" />
@@ -1504,7 +1504,7 @@
         </node>
         <node concept="3F2HdR" id="K_fAvR63EQ" role="3EZMnx">
           <property role="2czwfO" value="-----" />
-          <ref role="1NtTu8" to="at53:7uPLQmTQNM" />
+          <ref role="1NtTu8" to="at53:7uPLQmTQNM" resolve="columnsFeature" />
           <node concept="l2Vlx" id="K_fAvR63ES" role="2czzBx" />
           <node concept="2w$q5c" id="K_fAvR65MN" role="78xua">
             <node concept="2aJ2om" id="K_fAvR65MO" role="2w$qW5">
@@ -1532,13 +1532,13 @@
         <node concept="l2Vlx" id="K_fAvR62Or" role="2iSdaV" />
       </node>
       <node concept="3F1sOY" id="K_fAvR3LD0" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:K_fAvR3LCR" resolve="selectedRow" />
+        <ref role="1NtTu8" to="at53:K_fAvR3LCR" resolve="selectedRowFeature" />
       </node>
       <node concept="3F1sOY" id="K_fAvR3LD1" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:K_fAvR3LCS" resolve="visibility" />
+        <ref role="1NtTu8" to="at53:K_fAvR3LCS" resolve="visibilityFeature" />
       </node>
       <node concept="3F1sOY" id="K_fAvR3LD2" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:K_fAvR3LCT" resolve="enabled" />
+        <ref role="1NtTu8" to="at53:K_fAvR3LCT" resolve="enabledFeature" />
       </node>
     </node>
   </node>
@@ -1641,7 +1641,7 @@
     <node concept="3EZMnI" id="24MyZrrRA6f" role="2wV5jI">
       <node concept="2EHx9g" id="24MyZrrRA6g" role="2iSdaV" />
       <node concept="3F1sOY" id="24MyZrrRA6h" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:24MyZrrRA68" resolve="widgetRows" />
+        <ref role="1NtTu8" to="at53:24MyZrrRA68" resolve="widgetRowsFeature" />
       </node>
       <node concept="3EZMnI" id="4Ips5F1hH2G" role="3EZMnx">
         <node concept="VPM3Z" id="4Ips5F1hH2H" role="3F10Kt" />
@@ -1653,7 +1653,7 @@
         </node>
         <node concept="3F2HdR" id="4Ips5F1hH2K" role="3EZMnx">
           <property role="2czwfO" value="-----" />
-          <ref role="1NtTu8" to="at53:4Ips5F1549y" />
+          <ref role="1NtTu8" to="at53:4Ips5F1549y" resolve="columnsFeature" />
           <node concept="l2Vlx" id="4Ips5F1hH2L" role="2czzBx" />
           <node concept="2w$q5c" id="4Ips5F1hH2M" role="78xua">
             <node concept="2aJ2om" id="4Ips5F1hH2N" role="2w$qW5">
@@ -1681,13 +1681,13 @@
         <node concept="l2Vlx" id="4Ips5F1hH2U" role="2iSdaV" />
       </node>
       <node concept="3F1sOY" id="24MyZrrRA6i" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:24MyZrrRA69" resolve="selectedRow" />
+        <ref role="1NtTu8" to="at53:24MyZrrRA69" resolve="selectedRowFeature" />
       </node>
       <node concept="3F1sOY" id="24MyZrrRA6j" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:24MyZrrRA6a" resolve="visibility" />
+        <ref role="1NtTu8" to="at53:24MyZrrRA6a" resolve="visibilityFeature" />
       </node>
       <node concept="3F1sOY" id="24MyZrrRA6k" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:24MyZrrRA6b" resolve="enabled" />
+        <ref role="1NtTu8" to="at53:24MyZrrRA6b" resolve="enabledFeature" />
       </node>
     </node>
   </node>

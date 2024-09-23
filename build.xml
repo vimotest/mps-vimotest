@@ -849,34 +849,6 @@
       <zipfileset file="${basedir}/languages/de.vimotest.widgetdsl/de.vimotest.widgetdsl.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.widgetdsl-models" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/de.vimotest.widgetdsl.widgets.jar" />
-    <mkdir dir="${build.tmp}/default/de.vimotest.widgetdsl.widgets.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/de.vimotest.widgetdsl.widgets.jar/META-INF/module.xml">
-      <module namespace="de.vimotest.widgetdsl.widgets" type="solution" uuid="f53d971e-2fbc-4c6a-85a7-f2a681f2712b">
-        <dependencies />
-        <uses>
-          <language id="l:9a43c831-bbd9-4521-b233-9f7d6522a85c:de.vimotest.widgetdsl" />
-        </uses>
-        <sources jar="de.vimotest.widgetdsl.widgets-src.jar" descriptor="de.vimotest.widgetdsl.widgets.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.layout}/tests/de.vimotest.widgetdsl.widgets.jar" duplicate="preserve">
-      <fileset dir="${basedir}/languages/de.vimotest.widgetdsl.widgets/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/de.vimotest.widgetdsl.widgets.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.widgetdsl.widgets-models">
-      <fileset dir="${basedir}/languages/de.vimotest.widgetdsl.widgets/models" includes="**/*.mps, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.layout}/tests/de.vimotest.widgetdsl.widgets-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/languages/de.vimotest.widgetdsl.widgets/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-        <exclude name="**/checkpoints" />
-        <exclude name="**/*.mps" />
-      </fileset>
-      <zipfileset file="${basedir}/languages/de.vimotest.widgetdsl.widgets/de.vimotest.widgetdsl.widgets.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.widgetdsl.widgets-models" prefix="module/models" />
-    </jar>
     <mkdir dir="${build.tmp}/default/de.vimotest.plugin.jar" />
     <mkdir dir="${build.tmp}/default/de.vimotest.plugin.jar/META-INF" />
     <echoxml file="${build.tmp}/default/de.vimotest.plugin.jar/META-INF/module.xml">
@@ -1040,10 +1012,10 @@
         <module file="${basedir}/languages/de.vimotest.mpswidgets.runtime/de.vimotest.mpswidgets.runtime.msd" />
         <module file="${basedir}/languages/de.vimotest.types/de.vimotest.types.mpl" />
         <module file="${basedir}/languages/de.vimotest.widgetdsl/de.vimotest.widgetdsl.mpl" />
+        <module file="${basedir}/languages/de.vimotest.widgetdsl.widgets/de.vimotest.widgetdsl.widgets.msd" />
       </chunk>
       <chunk>
         <module file="${basedir}/languages/de.vimotest.viewmodel/de.vimotest.viewmodel.mpl" />
-        <module file="${basedir}/languages/de.vimotest.widgetdsl.widgets/de.vimotest.widgetdsl.widgets.msd" />
       </chunk>
       <chunk>
         <module file="${basedir}/solutions/de.vimotest.mpstest/de.vimotest.mpstest.msd" />
@@ -1966,9 +1938,9 @@
     <delete dir="${basedir}/languages/de.vimotest.types/source_gen" />
     <delete dir="${basedir}/languages/de.vimotest.types/generator/source_gen" />
     <delete dir="${basedir}/languages/de.vimotest.widgetdsl/source_gen" />
+    <delete dir="${basedir}/languages/de.vimotest.widgetdsl.widgets/source_gen" />
     <delete dir="${basedir}/languages/de.vimotest.viewmodel/source_gen" />
     <delete dir="${basedir}/languages/de.vimotest.viewmodel/generator/source_gen" />
-    <delete dir="${basedir}/languages/de.vimotest.widgetdsl.widgets/source_gen" />
     <delete dir="${basedir}/solutions/de.vimotest.mpstest/source_gen" />
     <delete dir="${basedir}/solutions/de.vimotest.plugin/source_gen" />
     <delete dir="${basedir}/languages/de.vimotest.testing/source_gen" />

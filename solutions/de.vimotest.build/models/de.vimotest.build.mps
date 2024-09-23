@@ -220,9 +220,6 @@
         <node concept="L2wRC" id="bZSVZdj2tS" role="39821P">
           <ref role="L2wRA" node="220dcIkyAiK" resolve="de.vimotest.widgetdsl" />
         </node>
-        <node concept="L2wRC" id="bZSVZdiCjK" role="39821P">
-          <ref role="L2wRA" node="220dcIkyAiW" resolve="de.vimotest.widgetdsl.widgets" />
-        </node>
         <node concept="L2wRC" id="bZSVZdinO9" role="39821P">
           <ref role="L2wRA" node="220dcIkyAj8" resolve="de.vimotest.plugin" />
         </node>

@@ -354,6 +354,11 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L5j" resolve="jetbrains.mps.lang.editor.table.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7ISwm1RtmE5" role="3bR37C">
+          <node concept="3bR9La" id="7ISwm1RtmE6" role="1SiIV1">
+            <ref role="3bR37D" node="JW9DBRQiDv" resolve="de.vimotest.testing" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="JW9DBRQiDv" role="2G$12L">
         <property role="BnDLt" value="true" />

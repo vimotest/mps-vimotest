@@ -1578,10 +1578,87 @@
       <ref role="13i0hy" node="7WgsBLYmziG" resolve="applyOnListView" />
       <node concept="3Tm1VV" id="7WgsBLYoyYq" role="1B3o_S" />
       <node concept="3clFbS" id="7WgsBLYoyYt" role="3clF47">
-        <node concept="3SKdUt" id="bZSVZd7kad" role="3cqZAp">
-          <node concept="1PaTwC" id="bZSVZd7kae" role="1aUNEU">
-            <node concept="3oM_SD" id="bZSVZd7kaf" role="1PaTwD">
-              <property role="3oM_SC" value="todo" />
+        <node concept="3clFbJ" id="6g2nPJc$uXW" role="3cqZAp">
+          <node concept="3clFbS" id="6g2nPJc$uXX" role="3clFbx">
+            <node concept="3clFbF" id="6g2nPJc$uXY" role="3cqZAp">
+              <node concept="2OqwBi" id="6g2nPJc$uXZ" role="3clFbG">
+                <node concept="2OqwBi" id="6g2nPJc$uY0" role="2Oq$k0">
+                  <node concept="37vLTw" id="6g2nPJc$uY1" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7WgsBLYoyYu" resolve="listViewEditorCell" />
+                  </node>
+                  <node concept="liA8E" id="6g2nPJc$uY2" role="2OqNvi">
+                    <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6g2nPJc$uY3" role="2OqNvi">
+                  <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
+                  <node concept="10M0yZ" id="6g2nPJc$uY4" role="37wK5m">
+                    <ref role="3cqZAo" to="5ueo:~StyleAttributes.BACKGROUND_COLOR" resolve="BACKGROUND_COLOR" />
+                    <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
+                  </node>
+                  <node concept="10M0yZ" id="6g2nPJc$uY5" role="37wK5m">
+                    <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="6g2nPJc$USf" role="3cqZAp">
+              <node concept="3cpWsn" id="6g2nPJc$USg" role="3cpWs9">
+                <property role="TrG5h" value="collectionCell" />
+                <node concept="3uibUv" id="6g2nPJc$URE" role="1tU5fm">
+                  <ref role="3uigEE" to="f4zo:~EditorCell_Collection" resolve="EditorCell_Collection" />
+                </node>
+                <node concept="0kSF2" id="6g2nPJc$USh" role="33vP2m">
+                  <node concept="3uibUv" id="6g2nPJc$USi" role="0kSFW">
+                    <ref role="3uigEE" to="f4zo:~EditorCell_Collection" resolve="EditorCell_Collection" />
+                  </node>
+                  <node concept="37vLTw" id="6g2nPJc$USj" role="0kSFX">
+                    <ref role="3cqZAo" node="7WgsBLYoyYu" resolve="listViewEditorCell" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2Gpval" id="6g2nPJc$Wc1" role="3cqZAp">
+              <node concept="2GrKxI" id="6g2nPJc$Wc3" role="2Gsz3X">
+                <property role="TrG5h" value="cell" />
+              </node>
+              <node concept="37vLTw" id="6g2nPJc$WkC" role="2GsD0m">
+                <ref role="3cqZAo" node="6g2nPJc$USg" resolve="collectionCell" />
+              </node>
+              <node concept="3clFbS" id="6g2nPJc$Wc7" role="2LFqv$">
+                <node concept="3clFbF" id="6g2nPJc$WsT" role="3cqZAp">
+                  <node concept="2OqwBi" id="6g2nPJc$WsU" role="3clFbG">
+                    <node concept="2OqwBi" id="6g2nPJc$WsV" role="2Oq$k0">
+                      <node concept="2GrUjf" id="6g2nPJc$WyF" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="6g2nPJc$Wc3" resolve="cell" />
+                      </node>
+                      <node concept="liA8E" id="6g2nPJc$WsX" role="2OqNvi">
+                        <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6g2nPJc$WsY" role="2OqNvi">
+                      <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
+                      <node concept="10M0yZ" id="6g2nPJc$WsZ" role="37wK5m">
+                        <ref role="3cqZAo" to="5ueo:~StyleAttributes.BACKGROUND_COLOR" resolve="BACKGROUND_COLOR" />
+                        <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
+                      </node>
+                      <node concept="10M0yZ" id="6g2nPJc$Wt0" role="37wK5m">
+                        <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
+                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="6g2nPJc$uYe" role="3clFbw">
+            <node concept="2OqwBi" id="6g2nPJc$uYf" role="3fr31v">
+              <node concept="13iPFW" id="6g2nPJc$uYg" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6g2nPJc$uYh" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:5VrLp2zpew1" resolve="expectedIsEnabled" />
+              </node>
             </node>
           </node>
         </node>
@@ -1599,10 +1676,38 @@
       <ref role="13i0hy" node="24MyZrrRA7e" resolve="applyOnTableView" />
       <node concept="3Tm1VV" id="bZSVZd7jqQ" role="1B3o_S" />
       <node concept="3clFbS" id="bZSVZd7jqT" role="3clF47">
-        <node concept="3SKdUt" id="bZSVZd7kaw" role="3cqZAp">
-          <node concept="1PaTwC" id="bZSVZd7kax" role="1aUNEU">
-            <node concept="3oM_SD" id="bZSVZd7kay" role="1PaTwD">
-              <property role="3oM_SC" value="todo" />
+        <node concept="3clFbJ" id="6g2nPJc$v$U" role="3cqZAp">
+          <node concept="3clFbS" id="6g2nPJc$v$V" role="3clFbx">
+            <node concept="3clFbF" id="6g2nPJc$v$W" role="3cqZAp">
+              <node concept="2OqwBi" id="6g2nPJc$v$X" role="3clFbG">
+                <node concept="2OqwBi" id="6g2nPJc$v$Y" role="2Oq$k0">
+                  <node concept="37vLTw" id="6g2nPJc$v$Z" role="2Oq$k0">
+                    <ref role="3cqZAo" node="bZSVZd7jqU" resolve="tableViewEditorCell" />
+                  </node>
+                  <node concept="liA8E" id="6g2nPJc$v_0" role="2OqNvi">
+                    <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6g2nPJc$v_1" role="2OqNvi">
+                  <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
+                  <node concept="10M0yZ" id="6g2nPJc$v_2" role="37wK5m">
+                    <ref role="3cqZAo" to="5ueo:~StyleAttributes.BACKGROUND_COLOR" resolve="BACKGROUND_COLOR" />
+                    <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
+                  </node>
+                  <node concept="10M0yZ" id="6g2nPJc$v_3" role="37wK5m">
+                    <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="6g2nPJc$v_4" role="3clFbw">
+            <node concept="2OqwBi" id="6g2nPJc$v_5" role="3fr31v">
+              <node concept="13iPFW" id="6g2nPJc$v_6" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6g2nPJc$v_7" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:5VrLp2zpew1" resolve="expectedIsEnabled" />
+              </node>
             </node>
           </node>
         </node>
@@ -1620,10 +1725,38 @@
       <ref role="13i0hy" node="K_fAvR3LDW" resolve="applyOnTreeView" />
       <node concept="3Tm1VV" id="bZSVZd7jr0" role="1B3o_S" />
       <node concept="3clFbS" id="bZSVZd7jr3" role="3clF47">
-        <node concept="3SKdUt" id="bZSVZd7kaN" role="3cqZAp">
-          <node concept="1PaTwC" id="bZSVZd7kaO" role="1aUNEU">
-            <node concept="3oM_SD" id="bZSVZd7kaP" role="1PaTwD">
-              <property role="3oM_SC" value="todo" />
+        <node concept="3clFbJ" id="6g2nPJc$vEC" role="3cqZAp">
+          <node concept="3clFbS" id="6g2nPJc$vED" role="3clFbx">
+            <node concept="3clFbF" id="6g2nPJc$vEE" role="3cqZAp">
+              <node concept="2OqwBi" id="6g2nPJc$vEF" role="3clFbG">
+                <node concept="2OqwBi" id="6g2nPJc$vEG" role="2Oq$k0">
+                  <node concept="37vLTw" id="6g2nPJc$vEH" role="2Oq$k0">
+                    <ref role="3cqZAo" node="bZSVZd7jr4" resolve="treeViewEditorCell" />
+                  </node>
+                  <node concept="liA8E" id="6g2nPJc$vEI" role="2OqNvi">
+                    <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6g2nPJc$vEJ" role="2OqNvi">
+                  <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
+                  <node concept="10M0yZ" id="6g2nPJc$vEK" role="37wK5m">
+                    <ref role="3cqZAo" to="5ueo:~StyleAttributes.BACKGROUND_COLOR" resolve="BACKGROUND_COLOR" />
+                    <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
+                  </node>
+                  <node concept="10M0yZ" id="6g2nPJc$vEL" role="37wK5m">
+                    <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="6g2nPJc$vEM" role="3clFbw">
+            <node concept="2OqwBi" id="6g2nPJc$vEN" role="3fr31v">
+              <node concept="13iPFW" id="6g2nPJc$vEO" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6g2nPJc$vEP" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:5VrLp2zpew1" resolve="expectedIsEnabled" />
+              </node>
             </node>
           </node>
         </node>

@@ -2616,14 +2616,30 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="7Ds$SekoGh0" role="3cqZAp">
+          <node concept="BsUDl" id="7Ds$SekoGgY" role="3clFbG">
+            <ref role="37wK5l" node="7Ds$SekooCl" resolve="addRowCell" />
+            <node concept="37vLTw" id="7Ds$SekoHaB" role="37wK5m">
+              <ref role="3cqZAo" node="7WgsBLYyCJN" resolve="wrapperCell" />
+            </node>
+            <node concept="37vLTw" id="7Ds$SekoIDh" role="37wK5m">
+              <ref role="3cqZAo" node="2S2pY38S5KC" resolve="headerCell" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7Ds$Sekpz2Y" role="3cqZAp">
           <node concept="2OqwBi" id="7Ds$Sekpz2Z" role="3clFbG">
             <node concept="2OqwBi" id="7Ds$Sekpz30" role="2Oq$k0">
-              <node concept="37vLTw" id="7Ds$Sekpz31" role="2Oq$k0">
-                <ref role="3cqZAo" node="2S2pY38S5KC" resolve="headerCell" />
-              </node>
               <node concept="liA8E" id="7Ds$Sekpz32" role="2OqNvi">
-                <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle()" resolve="getStyle" />
+                <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
+              </node>
+              <node concept="2OqwBi" id="6g2nPJc_sty" role="2Oq$k0">
+                <node concept="37vLTw" id="6g2nPJc_stz" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7WgsBLYyCJN" resolve="wrapperCell" />
+                </node>
+                <node concept="liA8E" id="6g2nPJc_st$" role="2OqNvi">
+                  <ref role="37wK5l" to="g51k:~EditorCell_Collection.lastCell()" resolve="lastCell" />
+                </node>
               </node>
             </node>
             <node concept="liA8E" id="7Ds$Sekpz33" role="2OqNvi">
@@ -2647,17 +2663,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7Ds$SekoGh0" role="3cqZAp">
-          <node concept="BsUDl" id="7Ds$SekoGgY" role="3clFbG">
-            <ref role="37wK5l" node="7Ds$SekooCl" resolve="addRowCell" />
-            <node concept="37vLTw" id="7Ds$SekoHaB" role="37wK5m">
-              <ref role="3cqZAo" node="7WgsBLYyCJN" resolve="wrapperCell" />
-            </node>
-            <node concept="37vLTw" id="7Ds$SekoIDh" role="37wK5m">
-              <ref role="3cqZAo" node="2S2pY38S5KC" resolve="headerCell" />
             </node>
           </node>
         </node>

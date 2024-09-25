@@ -623,43 +623,42 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="58Au7n0wDTN" role="3cqZAp">
-              <node concept="2OqwBi" id="58Au7n0wFMD" role="3clFbG">
-                <node concept="37vLTw" id="58Au7n0wDTL" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7szUFELGTwP" resolve="g" />
-                </node>
-                <node concept="liA8E" id="58Au7n0wJ$0" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
-                  <node concept="10M0yZ" id="58Au7n0wOKm" role="37wK5m">
-                    <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
-                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+            <node concept="3clFbH" id="58Au7n0wTvc" role="3cqZAp" />
+            <node concept="3cpWs8" id="44HS8_5XDq4" role="3cqZAp">
+              <node concept="3cpWsn" id="44HS8_5XDq7" role="3cpWs9">
+                <property role="TrG5h" value="checkboxIconOffsetX" />
+                <node concept="10Oyi0" id="44HS8_5XDq2" role="1tU5fm" />
+                <node concept="FJ1c_" id="44HS8_5Yirq" role="33vP2m">
+                  <node concept="3cmrfG" id="44HS8_5Yiwp" role="3uHU7w">
+                    <property role="3cmrfH" value="2" />
+                  </node>
+                  <node concept="1eOMI4" id="44HS8_5Y8D_" role="3uHU7B">
+                    <node concept="3cpWsd" id="44HS8_5Y8DA" role="1eOMHV">
+                      <node concept="37vLTw" id="44HS8_5Y8DB" role="3uHU7w">
+                        <ref role="3cqZAo" node="2AMqE6fD4KG" resolve="size" />
+                      </node>
+                      <node concept="1rXfSq" id="44HS8_5Y8DC" role="3uHU7B">
+                        <ref role="37wK5l" to="g51k:~EditorCell_Basic.getWidth()" resolve="getWidth" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="58Au7n0wRgU" role="3cqZAp">
-              <node concept="2OqwBi" id="58Au7n0wRgV" role="3clFbG">
-                <node concept="37vLTw" id="58Au7n0wRgW" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7szUFELGTwP" resolve="g" />
-                </node>
-                <node concept="liA8E" id="58Au7n0wRgX" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Graphics.fillRect(int,int,int,int)" resolve="fillRect" />
-                  <node concept="1rXfSq" id="58Au7n0wRgY" role="37wK5m">
+            <node concept="3cpWs8" id="44HS8_5YWbQ" role="3cqZAp">
+              <node concept="3cpWsn" id="44HS8_5YWbR" role="3cpWs9">
+                <property role="TrG5h" value="checkboxIconX" />
+                <node concept="10Oyi0" id="44HS8_5YQuO" role="1tU5fm" />
+                <node concept="3cpWs3" id="44HS8_5YWbS" role="33vP2m">
+                  <node concept="37vLTw" id="44HS8_5YWbT" role="3uHU7w">
+                    <ref role="3cqZAo" node="44HS8_5XDq7" resolve="offsetX" />
+                  </node>
+                  <node concept="1rXfSq" id="44HS8_5YWbU" role="3uHU7B">
                     <ref role="37wK5l" to="g51k:~EditorCell_Basic.getX()" resolve="getX" />
                   </node>
-                  <node concept="1rXfSq" id="58Au7n0wRgZ" role="37wK5m">
-                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getY()" resolve="getY" />
-                  </node>
-                  <node concept="1rXfSq" id="58Au7n0wWtA" role="37wK5m">
-                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getWidth()" resolve="getWidth" />
-                  </node>
-                  <node concept="1rXfSq" id="58Au7n0wZLc" role="37wK5m">
-                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getHeight()" resolve="getHeight" />
-                  </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="58Au7n0wTvc" role="3cqZAp" />
             <node concept="3clFbF" id="7szUFELGUbV" role="3cqZAp">
               <node concept="2OqwBi" id="7szUFELGUcr" role="3clFbG">
                 <node concept="37vLTw" id="7szUFELGUbT" role="2Oq$k0">
@@ -680,8 +679,8 @@
                 </node>
                 <node concept="liA8E" id="7szUFELGVuh" role="2OqNvi">
                   <ref role="37wK5l" to="z60i:~Graphics.fillRect(int,int,int,int)" resolve="fillRect" />
-                  <node concept="1rXfSq" id="7szUFELGVwy" role="37wK5m">
-                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getX()" resolve="getX" />
+                  <node concept="37vLTw" id="44HS8_5YWbV" role="37wK5m">
+                    <ref role="3cqZAo" node="44HS8_5YWbR" resolve="i" />
                   </node>
                   <node concept="1rXfSq" id="7szUFELGVA7" role="37wK5m">
                     <ref role="37wK5l" to="g51k:~EditorCell_Basic.getY()" resolve="getY" />
@@ -790,8 +789,8 @@
                 </node>
                 <node concept="liA8E" id="5k8jvm4Dsl_" role="2OqNvi">
                   <ref role="37wK5l" to="z60i:~Graphics.drawRect(int,int,int,int)" resolve="drawRect" />
-                  <node concept="1rXfSq" id="5k8jvm4DslA" role="37wK5m">
-                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getX()" resolve="getX" />
+                  <node concept="37vLTw" id="44HS8_5YWbW" role="37wK5m">
+                    <ref role="3cqZAo" node="44HS8_5YWbR" resolve="i" />
                   </node>
                   <node concept="1rXfSq" id="5k8jvm4DslB" role="37wK5m">
                     <ref role="37wK5l" to="g51k:~EditorCell_Basic.getY()" resolve="getY" />
@@ -857,8 +856,8 @@
                         <node concept="37vLTw" id="2AMqE6fEiwN" role="3uHU7w">
                           <ref role="3cqZAo" node="2AMqE6fDKyA" resolve="offset" />
                         </node>
-                        <node concept="1rXfSq" id="2AMqE6fDGFI" role="3uHU7B">
-                          <ref role="37wK5l" to="g51k:~EditorCell_Basic.getX()" resolve="getX" />
+                        <node concept="37vLTw" id="44HS8_5YWbX" role="3uHU7B">
+                          <ref role="3cqZAo" node="44HS8_5YWbR" resolve="i" />
                         </node>
                       </node>
                       <node concept="3cpWs3" id="2AMqE6fEjMN" role="37wK5m">
@@ -914,18 +913,18 @@
                       </node>
                       <node concept="liA8E" id="2AMqE6fBYcL" role="2OqNvi">
                         <ref role="37wK5l" to="z60i:~Graphics.drawLine(int,int,int,int)" resolve="drawLine" />
-                        <node concept="1rXfSq" id="2AMqE6fC1Mu" role="37wK5m">
-                          <ref role="37wK5l" to="g51k:~EditorCell_Basic.getX()" resolve="getX" />
+                        <node concept="37vLTw" id="44HS8_600ZV" role="37wK5m">
+                          <ref role="3cqZAo" node="44HS8_5YWbR" resolve="checkboxIconX" />
                         </node>
                         <node concept="1rXfSq" id="2AMqE6fC67R" role="37wK5m">
                           <ref role="37wK5l" to="g51k:~EditorCell_Basic.getY()" resolve="getY" />
                         </node>
                         <node concept="3cpWs3" id="2AMqE6fCarE" role="37wK5m">
-                          <node concept="1rXfSq" id="2AMqE6fC9pS" role="3uHU7B">
-                            <ref role="37wK5l" to="g51k:~EditorCell_Basic.getX()" resolve="getX" />
-                          </node>
                           <node concept="37vLTw" id="2AMqE6fDlwY" role="3uHU7w">
                             <ref role="3cqZAo" node="2AMqE6fD4KG" resolve="size" />
+                          </node>
+                          <node concept="37vLTw" id="44HS8_60iod" role="3uHU7B">
+                            <ref role="3cqZAo" node="44HS8_5YWbR" resolve="checkboxIconX" />
                           </node>
                         </node>
                         <node concept="3cpWs3" id="2AMqE6fCf8o" role="37wK5m">
@@ -947,18 +946,18 @@
                       <node concept="liA8E" id="2AMqE6fCz3u" role="2OqNvi">
                         <ref role="37wK5l" to="z60i:~Graphics.drawLine(int,int,int,int)" resolve="drawLine" />
                         <node concept="3cpWs3" id="2AMqE6fC$AE" role="37wK5m">
-                          <node concept="1rXfSq" id="2AMqE6fCz3v" role="3uHU7B">
-                            <ref role="37wK5l" to="g51k:~EditorCell_Basic.getX()" resolve="getX" />
-                          </node>
                           <node concept="37vLTw" id="2AMqE6fDng7" role="3uHU7w">
                             <ref role="3cqZAo" node="2AMqE6fD4KG" resolve="size" />
+                          </node>
+                          <node concept="37vLTw" id="44HS8_5ZEKU" role="3uHU7B">
+                            <ref role="3cqZAo" node="44HS8_5YWbR" resolve="checkboxIconX" />
                           </node>
                         </node>
                         <node concept="1rXfSq" id="2AMqE6fCz3w" role="37wK5m">
                           <ref role="37wK5l" to="g51k:~EditorCell_Basic.getY()" resolve="getY" />
                         </node>
-                        <node concept="1rXfSq" id="2AMqE6fCz3z" role="37wK5m">
-                          <ref role="37wK5l" to="g51k:~EditorCell_Basic.getX()" resolve="getX" />
+                        <node concept="37vLTw" id="44HS8_60JOL" role="37wK5m">
+                          <ref role="3cqZAo" node="44HS8_5YWbR" resolve="checkboxIconX" />
                         </node>
                         <node concept="3cpWs3" id="2AMqE6fCz3$" role="37wK5m">
                           <node concept="1rXfSq" id="2AMqE6fCz3A" role="3uHU7B">

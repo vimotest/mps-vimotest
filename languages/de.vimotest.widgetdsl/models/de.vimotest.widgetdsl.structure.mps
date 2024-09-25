@@ -5,6 +5,7 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -89,6 +90,16 @@
         </node>
       </node>
     </node>
+    <node concept="1TJgyi" id="7Axjuv1UZS9" role="1TKVEl">
+      <property role="IQ2nx" value="8764372007625948681" />
+      <property role="TrG5h" value="shortName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="F907haLd$9" role="1TKVEl">
+      <property role="IQ2nx" value="777152910168742153" />
+      <property role="TrG5h" value="package" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1Yc3x6zozVV">
     <property role="EcuMT" value="2273207380833615611" />
@@ -103,6 +114,11 @@
       <property role="IQ2nx" value="2273207380833615617" />
       <property role="TrG5h" value="tooltipMnemonic" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6eqMDi1ocJX" role="1TKVEl">
+      <property role="IQ2nx" value="7177271695342881789" />
+      <property role="TrG5h" value="tooltipMnemonicColor" />
+      <ref role="AX2Wp" to="tpc2:3Ftr4R6BF5v" resolve="_Colors_Enum" />
     </node>
     <node concept="1TJgyi" id="1Yc3x6zo$zn" role="1TKVEl">
       <property role="IQ2nx" value="2273207380833618135" />

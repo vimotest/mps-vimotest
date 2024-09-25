@@ -2,8 +2,17 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/ViMoTestLanguage.sandbox/ViMoTestLanguage.sandbox.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/ViMoTestLanguage/ViMoTestLanguage.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.vimotest.mpswidgets.runtime/de.vimotest.mpswidgets.runtime.msd" folder="util.mpswidgets" />
+      <modulePath path="$PROJECT_DIR$/languages/de.vimotest.mpswidgets/de.vimotest.mpswidgets.mpl" folder="util.mpswidgets" />
+      <modulePath path="$PROJECT_DIR$/languages/de.vimotest.testing/de.vimotest.testing.mpl" folder="testing" />
+      <modulePath path="$PROJECT_DIR$/languages/de.vimotest.types/de.vimotest.types.mpl" folder="static" />
+      <modulePath path="$PROJECT_DIR$/languages/de.vimotest.viewmodel/de.vimotest.viewmodel.mpl" folder="static" />
+      <modulePath path="$PROJECT_DIR$/languages/de.vimotest.widgetdsl.widgets/de.vimotest.widgetdsl.widgets.msd" folder="metadsl" />
+      <modulePath path="$PROJECT_DIR$/languages/de.vimotest.widgetdsl/de.vimotest.widgetdsl.mpl" folder="metadsl" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.vimotest.build/de.vimotest.build.msd" folder="util" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.vimotest.mpstest/de.vimotest.mpstest.msd" folder="util" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.vimotest.plugin/de.vimotest.plugin.msd" folder="util" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.vimotest.sandbox/de.vimotest.sandbox.msd" folder="models" />
     </projectModules>
   </component>
   <component name="ProjectModuleManager">

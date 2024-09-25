@@ -126,7 +126,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="2S2pY3981vQ">
-    <property role="3GE5qa" value="test.assert.checkbox" />
+    <property role="3GE5qa" value="test.assert.widgets.checkbox" />
     <ref role="1M2myG" to="53m0:69Ym88BeFj9" resolve="CheckBoxCheck" />
     <node concept="9S07l" id="2S2pY3981vR" role="9Vyp8">
       <node concept="3clFbS" id="2S2pY3981vS" role="2VODD2">
@@ -151,7 +151,7 @@
   </node>
   <node concept="1M2fIO" id="2S2pY39f52G">
     <property role="TrG5h" value="LabelCheck_Constraints" />
-    <property role="3GE5qa" value="test.assert.label" />
+    <property role="3GE5qa" value="test.assert.widgets.standard" />
     <ref role="1M2myG" to="53m0:7H4Lpx0iNqu" resolve="LabelCheck" />
     <node concept="9S07l" id="2S2pY39f52H" role="9Vyp8">
       <node concept="3clFbS" id="2S2pY39f52I" role="2VODD2">
@@ -176,7 +176,7 @@
   </node>
   <node concept="1M2fIO" id="2S2pY39f52S">
     <property role="TrG5h" value="ImageCheck_Constraints" />
-    <property role="3GE5qa" value="test.assert.image" />
+    <property role="3GE5qa" value="test.assert.widgets.image" />
     <ref role="1M2myG" to="53m0:3pKiF2wNf5P" resolve="ImageCheck" />
     <node concept="9S07l" id="2S2pY39f52T" role="9Vyp8">
       <node concept="3clFbS" id="2S2pY39f52U" role="2VODD2">
@@ -201,7 +201,7 @@
   </node>
   <node concept="1M2fIO" id="2S2pY39f534">
     <property role="TrG5h" value="ListViewCheck_Constraints" />
-    <property role="3GE5qa" value="test.assert.structures.listview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.listview" />
     <ref role="1M2myG" to="53m0:7WgsBLYmziM" resolve="ListViewCheck" />
     <node concept="9S07l" id="2S2pY39f535" role="9Vyp8">
       <node concept="3clFbS" id="2S2pY39f536" role="2VODD2">
@@ -345,7 +345,7 @@
   </node>
   <node concept="1M2fIO" id="K_fAvR3LE4">
     <property role="TrG5h" value="TreeViewCheck_Constraints" />
-    <property role="3GE5qa" value="test.assert.structures.treeview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.treeview" />
     <ref role="1M2myG" to="53m0:K_fAvR3LE2" resolve="TreeViewCheck" />
     <node concept="9S07l" id="K_fAvR3LE5" role="9Vyp8">
       <node concept="3clFbS" id="K_fAvR3LE6" role="2VODD2">
@@ -370,7 +370,7 @@
   </node>
   <node concept="1M2fIO" id="24MyZrrRA7m">
     <property role="TrG5h" value="TableViewCheck_Constraints" />
-    <property role="3GE5qa" value="test.assert.structures.tableview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.tableview" />
     <ref role="1M2myG" to="53m0:24MyZrrRA7k" resolve="TableViewCheck" />
     <node concept="9S07l" id="24MyZrrRA7n" role="9Vyp8">
       <node concept="3clFbS" id="24MyZrrRA7o" role="2VODD2">
@@ -386,6 +386,31 @@
               <node concept="2qgKlT" id="24MyZrrRA7u" role="2OqNvi">
                 <ref role="37wK5l" to="fwln:7a1oxbxXWUl" />
                 <node concept="nLn13" id="24MyZrrRA7v" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="44HS8_67H_i">
+    <property role="TrG5h" value="ComboBoxCheck_Constraints" />
+    <property role="3GE5qa" value="test.assert.widgets.choices" />
+    <ref role="1M2myG" to="53m0:44HS8_67H_g" resolve="ComboBoxCheck" />
+    <node concept="9S07l" id="44HS8_67H_j" role="9Vyp8">
+      <node concept="3clFbS" id="44HS8_67H_k" role="2VODD2">
+        <node concept="3clFbF" id="44HS8_67H_l" role="3cqZAp">
+          <node concept="17R0WA" id="44HS8_67H_m" role="3clFbG">
+            <node concept="35c_gC" id="44HS8_67H_n" role="3uHU7w">
+              <ref role="35c_gD" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
+            </node>
+            <node concept="2OqwBi" id="44HS8_67H_o" role="3uHU7B">
+              <node concept="35c_gC" id="44HS8_67H_p" role="2Oq$k0">
+                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" />
+              </node>
+              <node concept="2qgKlT" id="44HS8_67H_q" role="2OqNvi">
+                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" />
+                <node concept="nLn13" id="44HS8_67H_r" role="37wK5m" />
               </node>
             </node>
           </node>

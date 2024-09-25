@@ -51,6 +51,7 @@
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
+      <concept id="1225194628440" name="jetbrains.mps.lang.behavior.structure.SuperNodeExpression" flags="nn" index="13iAh5" />
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -308,9 +309,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
@@ -424,7 +430,7 @@
   </node>
   <node concept="13h7C7" id="4OohpJRekrZ">
     <property role="TrG5h" value="CheckBoxWidget_Behavior" />
-    <property role="3GE5qa" value="widgets.standard" />
+    <property role="3GE5qa" value="widgets.checkbox" />
     <ref role="13h7C2" to="at53:F907haMeIO" resolve="CheckBoxWidget" />
     <node concept="13hLZK" id="5L3DBX$oEYW" role="13h7CW">
       <node concept="3clFbS" id="5L3DBX$oEYX" role="2VODD2" />
@@ -4195,6 +4201,107 @@
       <node concept="2AHcQZ" id="1si8oglQafj" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" />
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="44HS8_67H$h">
+    <property role="TrG5h" value="ComboBoxWidget_Behavior" />
+    <property role="3GE5qa" value="widgets.choices" />
+    <ref role="13h7C2" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
+    <node concept="13hLZK" id="44HS8_67H$i" role="13h7CW">
+      <node concept="3clFbS" id="44HS8_67H$j" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="44HS8_67H$k" role="13h7CS">
+      <property role="TrG5h" value="createEditorCell" />
+      <ref role="13i0hy" node="6mWHjmRL0Kv" />
+      <node concept="3Tm1VV" id="44HS8_67H$l" role="1B3o_S" />
+      <node concept="3clFbS" id="44HS8_67H$m" role="3clF47">
+        <node concept="3SKdUt" id="44HS8_67H$n" role="3cqZAp">
+          <node concept="1PaTwC" id="44HS8_67H$o" role="1aUNEU">
+            <node concept="3oM_SD" id="44HS8_67H$p" role="1PaTwD">
+              <property role="3oM_SC" value="TODO:" />
+            </node>
+            <node concept="3oM_SD" id="44HS8_67H$q" role="1PaTwD">
+              <property role="3oM_SC" value="return" />
+            </node>
+            <node concept="3oM_SD" id="44HS8_67H$r" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="44HS8_67H$s" role="1PaTwD">
+              <property role="3oM_SC" value="EditorCell" />
+            </node>
+            <node concept="3oM_SD" id="44HS8_67H$t" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="44HS8_67H$u" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="44HS8_67H$v" role="1PaTwD">
+              <property role="3oM_SC" value="ComboBox" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="44HS8_67H$w" role="3cqZAp">
+          <node concept="15s5l7" id="44HS8_67H$x" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_CLASS=&quot;class jetbrains.mps.errors.item.UnresolvedReferenceReportItem&quot;;FLAVOUR_MESSAGE=&quot;Unresolved reference: createEditorCell&quot;;FLAVOUR_NODE_FEATURE=&quot;baseMethodDeclaration&quot;;" />
+            <property role="huDt6" value="Unresolved reference: createEditorCell" />
+          </node>
+          <node concept="2OqwBi" id="44HS8_67H$y" role="3clFbG">
+            <node concept="13iAh5" id="44HS8_67H$z" role="2Oq$k0" />
+            <node concept="2qgKlT" id="44HS8_67H$$" role="2OqNvi">
+              <ref role="37wK5l" node="6mWHjmRL0Kv" />
+              <node concept="37vLTw" id="44HS8_67H$_" role="37wK5m">
+                <ref role="3cqZAo" node="44HS8_67H$A" resolve="context" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="44HS8_67H$A" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="44HS8_67H$B" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="44HS8_67H$C" role="3clF45">
+        <ref role="3uigEE" to="f4zo:~EditorCell" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="44HS8_67H$D" role="13h7CS">
+      <property role="TrG5h" value="hasFeatureInherentSupport" />
+      <ref role="13i0hy" node="2S2pY38UZYV" />
+      <node concept="3Tm1VV" id="44HS8_67H$E" role="1B3o_S" />
+      <node concept="3clFbS" id="44HS8_67H$F" role="3clF47">
+        <node concept="3clFbJ" id="44HS8_67H$M" role="3cqZAp">
+          <node concept="3clFbS" id="44HS8_67H$N" role="3clFbx">
+            <node concept="3cpWs6" id="44HS8_67H$O" role="3cqZAp">
+              <node concept="3clFbT" id="44HS8_67H$P" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="44HS8_67H$Q" role="3clFbw">
+            <node concept="37vLTw" id="44HS8_67H$R" role="3uHU7B">
+              <ref role="3cqZAo" node="44HS8_67H$I" resolve="feature" />
+            </node>
+            <node concept="2OqwBi" id="44HS8_67H$S" role="3uHU7w">
+              <node concept="13iPFW" id="44HS8_67H$T" role="2Oq$k0" />
+              <node concept="3TrEf2" id="44HS8_67H$L" role="2OqNvi">
+                <ref role="3Tt5mk" to="at53:44HS8_67H$2" resolve="comboBoxEntriesFeature" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="44HS8_67H$G" role="3cqZAp">
+          <node concept="3clFbT" id="44HS8_67H$H" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="44HS8_67H$I" role="3clF46">
+        <property role="TrG5h" value="feature" />
+        <node concept="3Tqbb2" id="44HS8_67H$J" role="1tU5fm">
+          <ref role="ehGHo" to="at53:L9c2Y9pj53" />
+        </node>
+      </node>
+      <node concept="10P_77" id="44HS8_67H$K" role="3clF45" />
     </node>
   </node>
 </model>

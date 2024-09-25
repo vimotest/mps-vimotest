@@ -893,7 +893,7 @@
   </node>
   <node concept="PKFIW" id="4OohpJRekrR">
     <property role="TrG5h" value="CheckBoxWidget_Features_EC" />
-    <property role="3GE5qa" value="widgets.standard" />
+    <property role="3GE5qa" value="widgets.checkbox" />
     <ref role="1XX52x" to="at53:F907haMeIO" resolve="CheckBoxWidget" />
     <node concept="1PE4EZ" id="5L3DBX$oEYP" role="1PM95z">
       <ref role="1PE7su" node="4OohpJQEUlZ" resolve="ViewWidget_WidgetFeatures_EC" />
@@ -1736,6 +1736,80 @@
         <node concept="VechU" id="2lm5WNlbZLD" role="3F10Kt">
           <property role="Vb096" value="hEZAO13/white" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="44HS8_67HzL">
+    <property role="TrG5h" value="ComboBoxEntriesFeature_Indication_EC" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1XX52x" to="at53:44HS8_67HzJ" resolve="ComboBoxEntriesFeature" />
+    <node concept="1PE4EZ" id="44HS8_67HzN" role="1PM95z">
+      <ref role="1PE7su" node="L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
+    </node>
+    <node concept="1v6uyg" id="44HS8_67HzO" role="2wV5jI">
+      <property role="2oejA6" value="true" />
+      <node concept="3F0ifn" id="44HS8_67HzP" role="wsdo6">
+        <property role="3F0ifm" value="supports entries" />
+      </node>
+      <node concept="3F0ifn" id="44HS8_67HzQ" role="1j7Clw">
+        <property role="3F0ifm" value="e" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" />
+        <node concept="Veino" id="44HS8_67HzR" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5B/darkGray" />
+        </node>
+        <node concept="VechU" id="44HS8_67HzS" role="3F10Kt">
+          <property role="Vb096" value="hEZAO13/white" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="44HS8_67HzT">
+    <property role="TrG5h" value="SelectedEntryFeature_Indication_EC" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1XX52x" to="at53:44HS8_67HzK" resolve="SelectedEntryFeature" />
+    <node concept="1PE4EZ" id="44HS8_67HzV" role="1PM95z">
+      <ref role="1PE7su" node="L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
+    </node>
+    <node concept="1v6uyg" id="44HS8_67HzW" role="2wV5jI">
+      <property role="2oejA6" value="true" />
+      <node concept="3F0ifn" id="44HS8_67HzX" role="wsdo6">
+        <property role="3F0ifm" value="supports selected choice" />
+      </node>
+      <node concept="3F0ifn" id="44HS8_67HzY" role="1j7Clw">
+        <property role="3F0ifm" value="s" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" />
+        <node concept="Veino" id="44HS8_67HzZ" role="3F10Kt">
+          <property role="Vb096" value="fLwANPp/orange" />
+        </node>
+        <node concept="VechU" id="44HS8_67H$0" role="3F10Kt">
+          <property role="Vb096" value="6cZGtrcKCoS/black" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="44HS8_67H$7">
+    <property role="TrG5h" value="ComboBoxWidget_Features_EC" />
+    <property role="3GE5qa" value="widgets.choices" />
+    <ref role="1XX52x" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
+    <node concept="1PE4EZ" id="44HS8_67H$9" role="1PM95z">
+      <ref role="1PE7su" node="4OohpJQEUlZ" resolve="ViewWidget_WidgetFeatures_EC" />
+    </node>
+    <node concept="3EZMnI" id="44HS8_67H$a" role="2wV5jI">
+      <node concept="2EHx9g" id="44HS8_67H$b" role="2iSdaV" />
+      <node concept="3F1sOY" id="44HS8_67H$c" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:44HS8_67H$2" resolve="comboBoxEntriesFeature" />
+      </node>
+      <node concept="3F1sOY" id="44HS8_67H$d" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:44HS8_67H$3" resolve="selectedEntryFeature" />
+      </node>
+      <node concept="3F1sOY" id="44HS8_67H$e" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:44HS8_67H$4" resolve="textFeature" />
+      </node>
+      <node concept="3F1sOY" id="44HS8_67H$f" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:44HS8_67H$5" resolve="visibilityFeature" />
+      </node>
+      <node concept="3F1sOY" id="44HS8_67H$g" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:44HS8_67H$6" resolve="enabledFeature" />
       </node>
     </node>
   </node>

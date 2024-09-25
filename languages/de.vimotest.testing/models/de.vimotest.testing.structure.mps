@@ -233,6 +233,9 @@
     <node concept="PrWs8" id="bZSVZd6xeg" role="PzmwI">
       <ref role="PrY4T" node="24MyZrrRA6Y" resolve="ITableViewCheckValue" />
     </node>
+    <node concept="PrWs8" id="44HS8_6jW4K" role="PzmwI">
+      <ref role="PrY4T" node="44HS8_67H$U" resolve="IComboBoxCheckValue" />
+    </node>
     <node concept="1TJgyi" id="5VrLp2zpM0p" role="1TKVEl">
       <property role="IQ2nx" value="6835274084472266777" />
       <property role="TrG5h" value="expectedIsVisible" />
@@ -268,11 +271,14 @@
     <node concept="PrWs8" id="bZSVZd7iC1" role="PzmwI">
       <ref role="PrY4T" node="K_fAvR3LDG" resolve="ITreeViewCheckValue" />
     </node>
+    <node concept="PrWs8" id="44HS8_6jYIs" role="PzmwI">
+      <ref role="PrY4T" node="44HS8_67H$U" resolve="IComboBoxCheckValue" />
+    </node>
   </node>
   <node concept="PlHQZ" id="69Ym88BeFj8">
     <property role="EcuMT" value="5213916851000129541" />
     <property role="TrG5h" value="ICheckBoxCheckValue" />
-    <property role="3GE5qa" value="test.assert.checkbox" />
+    <property role="3GE5qa" value="test.assert.widgets.checkbox" />
     <node concept="PrWs8" id="2_MKLxJ6E$b" role="PrDN$">
       <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
     </node>
@@ -281,7 +287,7 @@
     <property role="EcuMT" value="5213916851000129542" />
     <property role="TrG5h" value="CheckBoxCheck" />
     <property role="34LRSv" value="check checkbox" />
-    <property role="3GE5qa" value="test.assert.checkbox" />
+    <property role="3GE5qa" value="test.assert.widgets.checkbox" />
     <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     <node concept="1TJgyj" id="4xrzs1wijw7" role="1TKVEi">
       <property role="IQ2ns" value="5213916851000129543" />
@@ -385,7 +391,7 @@
   <node concept="PlHQZ" id="7H4Lpx0iNqj">
     <property role="EcuMT" value="8882441622785832595" />
     <property role="TrG5h" value="ILabelCheckValue" />
-    <property role="3GE5qa" value="test.assert.label" />
+    <property role="3GE5qa" value="test.assert.widgets.standard" />
     <node concept="PrWs8" id="7H4Lpx0iNqk" role="PrDN$">
       <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
     </node>
@@ -394,7 +400,7 @@
     <property role="EcuMT" value="8882441622785832606" />
     <property role="TrG5h" value="LabelCheck" />
     <property role="34LRSv" value="check label" />
-    <property role="3GE5qa" value="test.assert.label" />
+    <property role="3GE5qa" value="test.assert.widgets.standard" />
     <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     <node concept="1TJgyj" id="7H4Lpx0iNqv" role="1TKVEi">
       <property role="IQ2ns" value="8882441622785832607" />
@@ -421,11 +427,14 @@
     <node concept="PrWs8" id="6k2oWGbSViZ" role="PzmwI">
       <ref role="PrY4T" node="69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
     </node>
+    <node concept="PrWs8" id="44HS8_6k25A" role="PzmwI">
+      <ref role="PrY4T" node="44HS8_67H$U" resolve="IComboBoxCheckValue" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3pKiF2wNf5v">
     <property role="EcuMT" value="3922717397912187231" />
     <property role="TrG5h" value="IImageCheckValue" />
-    <property role="3GE5qa" value="test.assert.image" />
+    <property role="3GE5qa" value="test.assert.widgets.image" />
     <node concept="PrWs8" id="3pKiF2wNf5w" role="PrDN$">
       <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
     </node>
@@ -434,7 +443,7 @@
     <property role="EcuMT" value="3922717397912187253" />
     <property role="TrG5h" value="ImageCheck" />
     <property role="34LRSv" value="check image" />
-    <property role="3GE5qa" value="test.assert.image" />
+    <property role="3GE5qa" value="test.assert.widgets.image" />
     <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     <node concept="1TJgyj" id="3pKiF2wNf5Q" role="1TKVEi">
       <property role="IQ2ns" value="3922717397912187254" />
@@ -467,7 +476,7 @@
   <node concept="PlHQZ" id="7WgsBLYmzis">
     <property role="EcuMT" value="9155943921465570460" />
     <property role="TrG5h" value="IListViewCheckValue" />
-    <property role="3GE5qa" value="test.assert.structures.listview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.listview" />
     <node concept="PrWs8" id="7WgsBLYmzit" role="PrDN$">
       <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
     </node>
@@ -476,7 +485,7 @@
     <property role="EcuMT" value="9155943921465570482" />
     <property role="TrG5h" value="ListViewCheck" />
     <property role="34LRSv" value="check list view" />
-    <property role="3GE5qa" value="test.assert.structures.listview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.listview" />
     <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     <node concept="1TJgyj" id="7WgsBLYmziN" role="1TKVEi">
       <property role="IQ2ns" value="9155943921465570483" />
@@ -526,7 +535,7 @@
   </node>
   <node concept="1TIwiD" id="5MibNhOn8HA">
     <property role="EcuMT" value="6670445900426152806" />
-    <property role="3GE5qa" value="test.assert.structures.listview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.listview" />
     <property role="TrG5h" value="ListCheckRow" />
     <property role="34LRSv" value="row check" />
     <property role="R4oN_" value="A wrapper around a cell widget check" />
@@ -542,7 +551,7 @@
   <node concept="PlHQZ" id="K_fAvR3LDG">
     <property role="EcuMT" value="875174318840945260" />
     <property role="TrG5h" value="ITreeViewCheckValue" />
-    <property role="3GE5qa" value="test.assert.structures.treeview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.treeview" />
     <node concept="PrWs8" id="K_fAvR3LDH" role="PrDN$">
       <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
     </node>
@@ -551,7 +560,7 @@
     <property role="EcuMT" value="875174318840945282" />
     <property role="TrG5h" value="TreeViewCheck" />
     <property role="34LRSv" value="check tree view" />
-    <property role="3GE5qa" value="test.assert.structures.treeview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.treeview" />
     <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     <node concept="1TJgyj" id="K_fAvR3LE3" role="1TKVEi">
       <property role="IQ2ns" value="875174318840945283" />
@@ -580,7 +589,7 @@
   </node>
   <node concept="1TIwiD" id="XX1C5W00nT">
     <property role="EcuMT" value="1116055435858675193" />
-    <property role="3GE5qa" value="test.assert.structures.treeview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.treeview" />
     <property role="TrG5h" value="TreeCheckRow" />
     <property role="34LRSv" value="row check" />
     <property role="R4oN_" value="A wrapper around cell widget checks" />
@@ -603,7 +612,7 @@
   </node>
   <node concept="1TIwiD" id="XX1C5W18Ry">
     <property role="EcuMT" value="1116055435858972130" />
-    <property role="3GE5qa" value="test.assert.structures" />
+    <property role="3GE5qa" value="test.assert.widgets.structures" />
     <property role="TrG5h" value="WidgetCellCheck" />
     <property role="34LRSv" value="cell check" />
     <property role="R4oN_" value="A wrapper around a cell widget check" />
@@ -630,7 +639,7 @@
   <node concept="PlHQZ" id="24MyZrrRA6Y">
     <property role="EcuMT" value="2392128244454154686" />
     <property role="TrG5h" value="ITableViewCheckValue" />
-    <property role="3GE5qa" value="test.assert.structures.tableview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.tableview" />
     <node concept="PrWs8" id="24MyZrrRA6Z" role="PrDN$">
       <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
     </node>
@@ -639,7 +648,7 @@
     <property role="EcuMT" value="2392128244454154708" />
     <property role="TrG5h" value="TableViewCheck" />
     <property role="34LRSv" value="check table view" />
-    <property role="3GE5qa" value="test.assert.structures.tableview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.tableview" />
     <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     <node concept="1TJgyj" id="24MyZrrRA7l" role="1TKVEi">
       <property role="IQ2ns" value="2392128244454154709" />
@@ -651,7 +660,7 @@
   </node>
   <node concept="1TIwiD" id="24MyZrrSM5G">
     <property role="EcuMT" value="2392128244454465900" />
-    <property role="3GE5qa" value="test.assert.structures.tableview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.tableview" />
     <property role="TrG5h" value="TableCheckRow" />
     <property role="34LRSv" value="row check" />
     <property role="R4oN_" value="A wrapper around cell widget checks" />
@@ -682,6 +691,48 @@
     </node>
     <node concept="PrWs8" id="4Ips5F14cRL" role="PzmwI">
       <ref role="PrY4T" node="24MyZrrRA6Y" resolve="ITableViewCheckValue" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="44HS8_67H$U">
+    <property role="EcuMT" value="4696656866608863546" />
+    <property role="TrG5h" value="IComboBoxCheckValue" />
+    <property role="3GE5qa" value="test.assert.widgets.choices" />
+    <node concept="PrWs8" id="44HS8_67H$V" role="PrDN$">
+      <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="44HS8_67H_g">
+    <property role="EcuMT" value="4696656866608863568" />
+    <property role="TrG5h" value="ComboBoxCheck" />
+    <property role="34LRSv" value="check combobox" />
+    <property role="3GE5qa" value="test.assert.widgets.choices" />
+    <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
+    <node concept="1TJgyj" id="44HS8_67H_h" role="1TKVEi">
+      <property role="IQ2ns" value="4696656866608863569" />
+      <property role="20kJfa" value="checks" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="44HS8_67H$U" resolve="IComboBoxCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="44HS8_67HAm">
+    <property role="EcuMT" value="4696656866608863638" />
+    <property role="TrG5h" value="ComboBoxEntriesCheckValue" />
+    <property role="34LRSv" value="entries" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="PrWs8" id="44HS8_67HAn" role="PzmwI">
+      <ref role="PrY4T" node="44HS8_67H$U" resolve="IComboBoxCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="44HS8_67HAo">
+    <property role="EcuMT" value="4696656866608863640" />
+    <property role="TrG5h" value="SelectedEntryCheckValue" />
+    <property role="34LRSv" value="selected choice" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="PrWs8" id="44HS8_67HAp" role="PzmwI">
+      <ref role="PrY4T" node="44HS8_67H$U" resolve="IComboBoxCheckValue" />
     </node>
   </node>
 </model>

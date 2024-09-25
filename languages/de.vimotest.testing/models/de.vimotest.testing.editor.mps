@@ -1233,7 +1233,7 @@
   </node>
   <node concept="PKFIW" id="6I6OCWxYiwe">
     <property role="TrG5h" value="CheckBoxCheck_Inspector_Checks_EC" />
-    <property role="3GE5qa" value="test.assert.checkbox" />
+    <property role="3GE5qa" value="test.assert.widgets.checkbox" />
     <ref role="1XX52x" to="53m0:69Ym88BeFj9" resolve="CheckBoxCheck" />
     <node concept="3F2HdR" id="6I6OCWxYiwf" role="2wV5jI">
       <ref role="1NtTu8" to="53m0:4xrzs1wijw7" resolve="checks" />
@@ -1321,7 +1321,7 @@
   </node>
   <node concept="PKFIW" id="7H4Lpx0iNqw">
     <property role="TrG5h" value="LabelCheck_Inspector_Checks_EC" />
-    <property role="3GE5qa" value="test.assert.label" />
+    <property role="3GE5qa" value="test.assert.widgets.standard" />
     <ref role="1XX52x" to="53m0:7H4Lpx0iNqu" resolve="LabelCheck" />
     <node concept="1PE4EZ" id="7H4Lpx0iNqy" role="1PM95z">
       <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_EC" />
@@ -1332,7 +1332,7 @@
     </node>
   </node>
   <node concept="22mcaB" id="2_MKLxJc$ki">
-    <property role="3GE5qa" value="test.assert.checkbox" />
+    <property role="3GE5qa" value="test.assert.widgets.checkbox" />
     <ref role="aqKnT" to="53m0:69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
     <node concept="22hDWj" id="2_MKLxJc$kj" role="22hAXT" />
     <node concept="2VfDsV" id="2_MKLxJc$kl" role="3ft7WO">
@@ -1425,7 +1425,7 @@
   </node>
   <node concept="22mcaB" id="2_MKLxJnKdb">
     <property role="TrG5h" value="LabelCheck_Inspector_EC" />
-    <property role="3GE5qa" value="test.assert.label" />
+    <property role="3GE5qa" value="test.assert.widgets.standard" />
     <ref role="aqKnT" to="53m0:7H4Lpx0iNqj" resolve="ILabelCheckValue" />
     <node concept="22hDWj" id="2_MKLxJnKdc" role="22hAXT" />
     <node concept="2VfDsV" id="2_MKLxJnKdd" role="3ft7WO">
@@ -1461,7 +1461,7 @@
   </node>
   <node concept="22mcaB" id="3pKiF2wNf5x">
     <property role="TrG5h" value="ImageCheck_Inspector_EC" />
-    <property role="3GE5qa" value="test.assert.image" />
+    <property role="3GE5qa" value="test.assert.widgets.image" />
     <ref role="aqKnT" to="53m0:3pKiF2wNf5v" resolve="IImageCheckValue" />
     <node concept="22hDWj" id="3pKiF2wNf5y" role="22hAXT" />
     <node concept="2VfDsV" id="3pKiF2wNf5z" role="3ft7WO">
@@ -1484,7 +1484,7 @@
   </node>
   <node concept="PKFIW" id="3pKiF2wNf5R">
     <property role="TrG5h" value="ImageCheck_Inspector_Checks_EC" />
-    <property role="3GE5qa" value="test.assert.image" />
+    <property role="3GE5qa" value="test.assert.widgets.image" />
     <ref role="1XX52x" to="53m0:3pKiF2wNf5P" resolve="ImageCheck" />
     <node concept="1PE4EZ" id="3pKiF2wNf5T" role="1PM95z">
       <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_EC" />
@@ -1509,7 +1509,7 @@
   </node>
   <node concept="22mcaB" id="7WgsBLYmziu">
     <property role="TrG5h" value="ListViewCheck_Inspector_EC" />
-    <property role="3GE5qa" value="test.assert.structures.listview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.listview" />
     <ref role="aqKnT" to="53m0:7WgsBLYmzis" resolve="IListViewCheckValue" />
     <node concept="22hDWj" id="7WgsBLYmziv" role="22hAXT" />
     <node concept="2VfDsV" id="7WgsBLYmziw" role="3ft7WO">
@@ -1532,7 +1532,7 @@
   </node>
   <node concept="PKFIW" id="7WgsBLYmziO">
     <property role="TrG5h" value="ListViewCheck_Inspector_Checks_EC" />
-    <property role="3GE5qa" value="test.assert.structures.listview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.listview" />
     <ref role="1XX52x" to="53m0:7WgsBLYmziM" resolve="ListViewCheck" />
     <node concept="1PE4EZ" id="7WgsBLYmziQ" role="1PM95z">
       <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_EC" />
@@ -1715,7 +1715,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="708i5MC1mYv">
-    <property role="3GE5qa" value="test.assert.structures.listview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.listview" />
     <ref role="1XX52x" to="53m0:5MibNhOn8HA" resolve="WidgetCellCheck" />
     <node concept="3EZMnI" id="708i5MC1od4" role="2wV5jI">
       <node concept="3vyZuw" id="7kmg1RALjQr" role="3F10Kt">
@@ -2131,7 +2131,7 @@
   </node>
   <node concept="22mcaB" id="K_fAvR3LDI">
     <property role="TrG5h" value="ITreeViewCheckValue_SubstituteMenu" />
-    <property role="3GE5qa" value="test.assert.structures.treeview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.treeview" />
     <ref role="aqKnT" to="53m0:K_fAvR3LDG" resolve="ITreeViewCheckValue" />
     <node concept="22hDWj" id="K_fAvR3LDJ" role="22hAXT" />
     <node concept="2VfDsV" id="K_fAvR3LDK" role="3ft7WO">
@@ -2154,7 +2154,7 @@
   </node>
   <node concept="PKFIW" id="K_fAvR3LEe">
     <property role="TrG5h" value="TreeViewCheck_Inspector_Checks_EC" />
-    <property role="3GE5qa" value="test.assert.structures.treeview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.treeview" />
     <ref role="1XX52x" to="53m0:K_fAvR3LE2" resolve="TreeViewCheck" />
     <node concept="1PE4EZ" id="K_fAvR3LEg" role="1PM95z">
       <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_Checks_EC" />
@@ -2284,7 +2284,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="XX1C5W01SY">
-    <property role="3GE5qa" value="test.assert.structures.treeview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.treeview" />
     <ref role="1XX52x" to="53m0:XX1C5W00nT" resolve="TreeCheckRow" />
     <node concept="3EZMnI" id="XX1C5W03pX" role="2wV5jI">
       <node concept="3vyZuw" id="XX1C5W03pY" role="3F10Kt">
@@ -2365,7 +2365,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="XX1C5W1ao$">
-    <property role="3GE5qa" value="test.assert.structures" />
+    <property role="3GE5qa" value="test.assert.widgets.structures" />
     <ref role="1XX52x" to="53m0:XX1C5W18Ry" resolve="WidgetCellCheck" />
     <node concept="3EZMnI" id="5GwHzPxkzqK" role="2wV5jI">
       <node concept="1HlG4h" id="5GwHzPxjRcE" role="3EZMnx">
@@ -2488,7 +2488,7 @@
   </node>
   <node concept="22mcaB" id="24MyZrrRA70">
     <property role="TrG5h" value="ITableViewCheckValue_SubstituteMenu" />
-    <property role="3GE5qa" value="test.assert.structures.tableview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.tableview" />
     <ref role="aqKnT" to="53m0:24MyZrrRA6Y" resolve="ITableViewCheckValue" />
     <node concept="22hDWj" id="24MyZrrRA71" role="22hAXT" />
     <node concept="2VfDsV" id="24MyZrrRA72" role="3ft7WO">
@@ -2511,7 +2511,7 @@
   </node>
   <node concept="PKFIW" id="24MyZrrRA7w">
     <property role="TrG5h" value="TableViewCheck_Inspector_Checks_EC" />
-    <property role="3GE5qa" value="test.assert.structures.tableview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.tableview" />
     <ref role="1XX52x" to="53m0:24MyZrrRA7k" resolve="TableViewCheck" />
     <node concept="1PE4EZ" id="24MyZrrRA7y" role="1PM95z">
       <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_Checks_EC" />
@@ -2522,7 +2522,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4Ips5F11X4w">
-    <property role="3GE5qa" value="test.assert.structures.tableview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.tableview" />
     <ref role="1XX52x" to="53m0:24MyZrrSM5G" resolve="TableCheckRow" />
     <node concept="3EZMnI" id="4Ips5F11Y_i" role="2wV5jI">
       <node concept="3vyZuw" id="4Ips5F11Y_j" role="3F10Kt">
@@ -2713,6 +2713,41 @@
         </node>
       </node>
       <node concept="l2Vlx" id="4Ips5F14gYn" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="22mcaB" id="44HS8_67H$W">
+    <property role="TrG5h" value="IComboBoxCheckValue_SubstituteMenu" />
+    <property role="3GE5qa" value="test.assert.widgets.choices" />
+    <ref role="aqKnT" to="53m0:44HS8_67H$U" resolve="IComboBoxCheckValue" />
+    <node concept="22hDWj" id="44HS8_67H$X" role="22hAXT" />
+    <node concept="2VfDsV" id="44HS8_67H$Y" role="3ft7WO">
+      <node concept="1GpqWn" id="44HS8_67H$Z" role="1Go12V">
+        <node concept="3clFbS" id="44HS8_67H_0" role="2VODD2">
+          <node concept="3clFbF" id="44HS8_67H_1" role="3cqZAp">
+            <node concept="3fqX7Q" id="44HS8_67H_2" role="3clFbG">
+              <node concept="2YIFZM" id="44HS8_67H_3" role="3fr31v">
+                <ref role="37wK5l" node="2_MKLxJcA3M" />
+                <ref role="1Pybhc" node="2_MKLxJcA2h" />
+                <node concept="1GpqW3" id="44HS8_67H_4" role="37wK5m" />
+                <node concept="3bvxqY" id="44HS8_67H_5" role="37wK5m" />
+                <node concept="1J7kdh" id="44HS8_67H_6" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="44HS8_67H_s">
+    <property role="TrG5h" value="ComboBoxCheck_Inspector_Checks_EC" />
+    <property role="3GE5qa" value="test.assert.widgets.choices" />
+    <ref role="1XX52x" to="53m0:44HS8_67H_g" resolve="ComboBoxCheck" />
+    <node concept="1PE4EZ" id="44HS8_67H_u" role="1PM95z">
+      <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_Checks_EC" />
+    </node>
+    <node concept="3F2HdR" id="44HS8_67H_v" role="2wV5jI">
+      <ref role="1NtTu8" to="53m0:44HS8_67H_h" resolve="checks" />
+      <node concept="2iRkQZ" id="44HS8_67H_w" role="2czzBx" />
     </node>
   </node>
 </model>

@@ -200,7 +200,7 @@
     <property role="EcuMT" value="5213916851000129514" />
     <property role="TrG5h" value="CheckBoxWidget" />
     <property role="34LRSv" value="checkbox" />
-    <property role="3GE5qa" value="widgets.standard" />
+    <property role="3GE5qa" value="widgets.checkbox" />
     <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
     <node concept="1TJgyj" id="4xrzs1wijvF" role="1TKVEi">
       <property role="IQ2ns" value="5213916851000129515" />
@@ -682,6 +682,62 @@
     <property role="34LRSv" value="widget rows" />
     <property role="3GE5qa" value="features" />
     <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
+  </node>
+  <node concept="1TIwiD" id="44HS8_67HzJ">
+    <property role="EcuMT" value="4696656866608863471" />
+    <property role="TrG5h" value="ComboBoxEntriesFeature" />
+    <property role="34LRSv" value="entries" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
+  </node>
+  <node concept="1TIwiD" id="44HS8_67HzK">
+    <property role="EcuMT" value="4696656866608863472" />
+    <property role="TrG5h" value="SelectedEntryFeature" />
+    <property role="34LRSv" value="selected choice" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
+  </node>
+  <node concept="1TIwiD" id="44HS8_67H$1">
+    <property role="EcuMT" value="4696656866608863489" />
+    <property role="TrG5h" value="ComboBoxWidget" />
+    <property role="34LRSv" value="combobox" />
+    <property role="3GE5qa" value="widgets.choices" />
+    <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
+    <node concept="1TJgyj" id="44HS8_67H$2" role="1TKVEi">
+      <property role="IQ2ns" value="4696656866608863490" />
+      <property role="20kJfa" value="comboBoxEntriesFeature" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="44HS8_67HzJ" resolve="ComboBoxEntriesFeature" />
+    </node>
+    <node concept="1TJgyj" id="44HS8_67H$3" role="1TKVEi">
+      <property role="IQ2ns" value="4696656866608863491" />
+      <property role="20kJfa" value="selectedEntryFeature" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="44HS8_67HzK" resolve="SelectedEntryFeature" />
+    </node>
+    <node concept="1TJgyj" id="44HS8_67H$4" role="1TKVEi">
+      <property role="IQ2ns" value="4696656866608863492" />
+      <property role="20kJfa" value="textFeature" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7H4Lpx0iNpu" resolve="TextFeature" />
+    </node>
+    <node concept="1TJgyj" id="44HS8_67H$5" role="1TKVEi">
+      <property role="IQ2ns" value="4696656866608863493" />
+      <property role="20kJfa" value="visibilityFeature" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4SDJcZBNVBT" resolve="VisibilityFeature" />
+    </node>
+    <node concept="1TJgyj" id="44HS8_67H$6" role="1TKVEi">
+      <property role="IQ2ns" value="4696656866608863494" />
+      <property role="20kJfa" value="enabledFeature" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
+    </node>
   </node>
 </model>
 

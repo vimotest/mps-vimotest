@@ -274,7 +274,7 @@
   </registry>
   <node concept="18kY7G" id="6DnDTlRUiFQ">
     <property role="TrG5h" value="check_TableCheckRow" />
-    <property role="3GE5qa" value="test.assert.structures.tableview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.tableview" />
     <node concept="3clFbS" id="6DnDTlRUiFR" role="18ibNy">
       <node concept="3cpWs8" id="6DnDTlRVUj3" role="3cqZAp">
         <node concept="3cpWsn" id="6DnDTlRVUj4" role="3cpWs9">
@@ -398,7 +398,7 @@
     </node>
   </node>
   <node concept="312cEu" id="6DnDTlRUlco">
-    <property role="3GE5qa" value="test.assert.structures.tableview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.tableview" />
     <property role="TrG5h" value="CellCheckConsistencyHelper" />
     <node concept="312cEu" id="6DnDTlRUPOL" role="jymVt">
       <property role="TrG5h" value="ConsistencyResult" />
@@ -1050,7 +1050,7 @@
   </node>
   <node concept="18kY7G" id="bZSVZcAiSX">
     <property role="TrG5h" value="check_TreeCheckRow" />
-    <property role="3GE5qa" value="test.assert.structures.treeview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.treeview" />
     <node concept="3clFbS" id="bZSVZcAiSY" role="18ibNy">
       <node concept="3cpWs8" id="bZSVZcAlpy" role="3cqZAp">
         <node concept="3cpWsn" id="bZSVZcAlpz" role="3cpWs9">
@@ -1175,7 +1175,7 @@
   </node>
   <node concept="Q5z_Y" id="bZSVZcAoy5">
     <property role="TrG5h" value="fix_inconsistentTableRow" />
-    <property role="3GE5qa" value="test.assert.structures" />
+    <property role="3GE5qa" value="test.assert.widgets.structures" />
     <node concept="Q6JDH" id="bZSVZcAozh" role="Q6Id_">
       <property role="TrG5h" value="columnNodes" />
       <node concept="2I9FWS" id="bZSVZcAozo" role="Q6QK4">
@@ -1208,7 +1208,7 @@
   </node>
   <node concept="18kY7G" id="bZSVZcAy3X">
     <property role="TrG5h" value="check_ListCheckRow" />
-    <property role="3GE5qa" value="test.assert.structures.listview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.listview" />
     <node concept="3clFbS" id="bZSVZcAy3Y" role="18ibNy">
       <node concept="3cpWs8" id="bZSVZcA$Uj" role="3cqZAp">
         <node concept="3cpWsn" id="bZSVZcA$Uk" role="3cpWs9">

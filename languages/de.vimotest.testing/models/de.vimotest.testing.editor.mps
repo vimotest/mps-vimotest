@@ -2760,14 +2760,8 @@
       <node concept="3F0ifn" id="7waZUcv25ap" role="3EZMnx">
         <property role="3F0ifm" value="selected entry" />
       </node>
-      <node concept="1iCGBv" id="7waZUcv25au" role="3EZMnx">
-        <ref role="1NtTu8" to="53m0:7waZUcv25as" resolve="selectedEntry" />
-        <node concept="1sVBvm" id="7waZUcv25aw" role="1sWHZn">
-          <node concept="3F0A7n" id="7waZUcv25a$" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
+      <node concept="PMmxH" id="5ZbqeTHYkhW" role="3EZMnx">
+        <ref role="PMmxG" node="7waZUcv2gFG" resolve="SelectedEntryCheckValue_selectedEntry_EC" />
       </node>
       <node concept="2iRfu4" id="7waZUcv25ar" role="2iSdaV" />
     </node>

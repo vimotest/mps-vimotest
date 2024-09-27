@@ -2309,10 +2309,82 @@
       <ref role="13i0hy" node="44HS8_67H_a" resolve="applyOnComboBox" />
       <node concept="3Tm1VV" id="44HS8_6jXri" role="1B3o_S" />
       <node concept="3clFbS" id="44HS8_6jXrl" role="3clF47">
-        <node concept="3SKdUt" id="44HS8_6jYI8" role="3cqZAp">
-          <node concept="1PaTwC" id="44HS8_6jYI9" role="1aUNEU">
-            <node concept="3oM_SD" id="44HS8_6jYIa" role="1PaTwD">
-              <property role="3oM_SC" value="todo" />
+        <node concept="3clFbJ" id="5ZbqeTHyMnQ" role="3cqZAp">
+          <node concept="3clFbS" id="5ZbqeTHyMnR" role="3clFbx">
+            <node concept="3cpWs8" id="5ZbqeTHyPIX" role="3cqZAp">
+              <node concept="3cpWsn" id="5ZbqeTHyPIY" role="3cpWs9">
+                <property role="TrG5h" value="comboBoxCell" />
+                <node concept="3uibUv" id="5ZbqeTHyPvE" role="1tU5fm">
+                  <ref role="3uigEE" to="5xyw:44HS8_62E7R" resolve="EditorCell_ComboBox" />
+                </node>
+                <node concept="0kSF2" id="5ZbqeTHyPIZ" role="33vP2m">
+                  <node concept="3uibUv" id="5ZbqeTHyPJ0" role="0kSFW">
+                    <ref role="3uigEE" to="5xyw:44HS8_62E7R" resolve="EditorCell_ComboBox" />
+                  </node>
+                  <node concept="37vLTw" id="5ZbqeTHyPJ1" role="0kSFX">
+                    <ref role="3cqZAo" node="44HS8_6jXrm" resolve="comboBoxEditorCell" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5ZbqeTHyMnS" role="3cqZAp">
+              <node concept="2OqwBi" id="5ZbqeTHyMnT" role="3clFbG">
+                <node concept="2OqwBi" id="5ZbqeTHyMnU" role="2Oq$k0">
+                  <node concept="37vLTw" id="5ZbqeTHyMnV" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ZbqeTHyPIY" resolve="comboBoxCell" />
+                  </node>
+                  <node concept="liA8E" id="5ZbqeTHyMnW" role="2OqNvi">
+                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle()" resolve="getStyle" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="5ZbqeTHyMnX" role="2OqNvi">
+                  <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
+                  <node concept="10M0yZ" id="5ZbqeTHyMnY" role="37wK5m">
+                    <ref role="3cqZAo" to="5ueo:~StyleAttributes.TEXT_COLOR" resolve="TEXT_COLOR" />
+                    <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
+                  </node>
+                  <node concept="10M0yZ" id="5ZbqeTHyMnZ" role="37wK5m">
+                    <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5ZbqeTHyQZ7" role="3cqZAp">
+              <node concept="2OqwBi" id="5ZbqeTH$IB1" role="3clFbG">
+                <node concept="2OqwBi" id="5ZbqeTH$I0Q" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5ZbqeTHySxH" role="2Oq$k0">
+                    <node concept="37vLTw" id="5ZbqeTHyQZ5" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5ZbqeTHyPIY" resolve="comboBoxCell" />
+                    </node>
+                    <node concept="liA8E" id="5ZbqeTH$HQq" role="2OqNvi">
+                      <ref role="37wK5l" to="5xyw:5ZbqeTHz7t_" resolve="getLabelCell" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="5ZbqeTH$Irm" role="2OqNvi">
+                    <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="5ZbqeTH$IUC" role="2OqNvi">
+                  <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
+                  <node concept="10M0yZ" id="5ZbqeTH$IUD" role="37wK5m">
+                    <ref role="3cqZAo" to="5ueo:~StyleAttributes.TEXT_COLOR" resolve="TEXT_COLOR" />
+                    <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
+                  </node>
+                  <node concept="10M0yZ" id="5ZbqeTH$IUE" role="37wK5m">
+                    <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="5ZbqeTHyMo0" role="3clFbw">
+            <node concept="2OqwBi" id="5ZbqeTHyMo1" role="3fr31v">
+              <node concept="13iPFW" id="5ZbqeTHyMo2" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5ZbqeTHyMo3" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:5VrLp2zpM0p" resolve="expectedIsVisible" />
+              </node>
             </node>
           </node>
         </node>

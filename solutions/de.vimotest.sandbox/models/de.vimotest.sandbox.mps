@@ -30,7 +30,9 @@
       <concept id="4696656866608863640" name="de.vimotest.testing.structure.SelectedEntryCheckValue" flags="ng" index="7cN$h">
         <reference id="8650007110383850140" name="selectedEntry" index="1B0EOZ" />
       </concept>
-      <concept id="4696656866608863638" name="de.vimotest.testing.structure.ComboBoxEntriesCheckValue" flags="ng" index="7cN$v" />
+      <concept id="4696656866608863638" name="de.vimotest.testing.structure.ComboBoxEntriesCheckValue" flags="ng" index="7cN$v">
+        <child id="6902726227135349931" name="entries" index="LTUL5" />
+      </concept>
       <concept id="4696656866608863568" name="de.vimotest.testing.structure.ComboBoxCheck" flags="ng" index="7cNBp">
         <child id="4696656866608863569" name="checks" index="7cNBo" />
       </concept>
@@ -124,9 +126,10 @@
       <concept id="4696656866608863471" name="de.vimotest.viewmodel.structure.ComboBoxEntriesFeature" flags="ng" index="7cNxA">
         <child id="5655792802101418338" name="defaultEntries" index="M2z3O" />
       </concept>
-      <concept id="4696656866608863472" name="de.vimotest.viewmodel.structure.SelectedEntryFeature" flags="ng" index="7cNxT" />
+      <concept id="4696656866608863472" name="de.vimotest.viewmodel.structure.SelectedEntryFeature" flags="ng" index="7cNxT">
+        <reference id="6902726227135566977" name="defaultSelectedEntry" index="LYRLJ" />
+      </concept>
       <concept id="4696656866608863489" name="de.vimotest.viewmodel.structure.ComboBoxWidget" flags="ng" index="7cNA8">
-        <reference id="5655792802101418339" name="defaultSelectedEntry" index="M2z3P" />
         <child id="4696656866608863491" name="selectedEntryFeature" index="7cNAa" />
         <child id="4696656866608863490" name="comboBoxEntriesFeature" index="7cNAb" />
         <child id="4696656866608863493" name="visibilityFeature" index="7cNAc" />
@@ -271,7 +274,6 @@
       </node>
       <node concept="7cNA8" id="4TXqppWx0zD" role="103ZUC">
         <property role="TrG5h" value="MyOptions" />
-        <ref role="M2z3P" node="4TXqppWx0zP" resolve="A" />
         <node concept="7cNxA" id="4TXqppWx0zF" role="7cNAb">
           <node concept="2gaR_a" id="4TXqppWx0zP" role="M2z3O">
             <property role="TrG5h" value="A" />
@@ -280,7 +282,9 @@
             <property role="TrG5h" value="B" />
           </node>
         </node>
-        <node concept="7cNxT" id="4TXqppWx0zH" role="7cNAa" />
+        <node concept="7cNxT" id="5ZbqeTIjn6M" role="7cNAa">
+          <ref role="LYRLJ" node="4TXqppWx0zP" resolve="A" />
+        </node>
         <node concept="V3Zf6" id="4TXqppWx0zJ" role="7cNAd" />
         <node concept="C4FCg" id="4TXqppWx0zL" role="7cNAc">
           <property role="2VM7R0" value="true" />
@@ -565,9 +569,19 @@
         <node concept="30nzp_" id="7waZUcve$a5" role="DUiSb">
           <ref role="30nzpS" node="4TXqppWx0zD" resolve="MyOptions" />
           <node concept="7cNBp" id="7waZUcve$a7" role="30nDbQ">
-            <node concept="7cN$v" id="7waZUcve$a8" role="7cNBo" />
+            <node concept="7cN$v" id="7waZUcve$a8" role="7cNBo">
+              <node concept="2gaR_a" id="5ZbqeTIbO4X" role="LTUL5">
+                <property role="TrG5h" value="A1" />
+              </node>
+              <node concept="2gaR_a" id="5ZbqeTIbO4Y" role="LTUL5">
+                <property role="TrG5h" value="A2" />
+              </node>
+              <node concept="2gaR_a" id="5ZbqeTIbO4Z" role="LTUL5">
+                <property role="TrG5h" value="A3" />
+              </node>
+            </node>
             <node concept="7cN$h" id="7waZUcve$a9" role="7cNBo">
-              <ref role="1B0EOZ" node="4TXqppWx0zP" resolve="A" />
+              <ref role="1B0EOZ" node="5ZbqeTIbO4X" resolve="A1" />
             </node>
             <node concept="35STUn" id="5ZbqeTHyJdm" role="7cNBo">
               <property role="3XJem9" value="true" />

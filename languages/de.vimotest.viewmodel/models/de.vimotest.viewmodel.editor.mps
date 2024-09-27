@@ -1813,8 +1813,17 @@
         <node concept="3F0ifn" id="3mckYa_E1RJ" role="3EZMnx">
           <property role="3F0ifm" value="selected:" />
         </node>
-        <node concept="PMmxH" id="7waZUcuRP7G" role="3EZMnx">
-          <ref role="PMmxG" node="3mckYa_FbSQ" resolve="ComboBoxWidget_selectedEntries_EC" />
+        <node concept="1iCGBv" id="5ZbqeTIcoCc" role="3EZMnx">
+          <ref role="1NtTu8" to="at53:44HS8_67H$3" resolve="selectedEntryFeature" />
+          <node concept="1sVBvm" id="5ZbqeTIcoCe" role="1sWHZn">
+            <node concept="3EZMnI" id="5ZbqeTImgxQ" role="2wV5jI">
+              <node concept="PMmxH" id="5ZbqeTIcoCi" role="3EZMnx">
+                <ref role="PMmxG" node="3mckYa_FbSQ" resolve="SelectedEntryFeature_selectedEntries_EC" />
+              </node>
+              <node concept="2iRfu4" id="5ZbqeTImgxR" role="2iSdaV" />
+              <node concept="VPM3Z" id="5ZbqeTImgxS" role="3F10Kt" />
+            </node>
+          </node>
         </node>
         <node concept="1iCGBv" id="4TXqppWtR8O" role="3EZMnx">
           <ref role="1NtTu8" to="at53:44HS8_67H$2" />
@@ -1859,10 +1868,10 @@
   </node>
   <node concept="PKFIW" id="3mckYa_FbSQ">
     <property role="3GE5qa" value="widgets.choices" />
-    <property role="TrG5h" value="ComboBoxWidget_selectedEntries_EC" />
-    <ref role="1XX52x" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
+    <property role="TrG5h" value="SelectedEntryFeature_selectedEntries_EC" />
+    <ref role="1XX52x" to="at53:44HS8_67HzK" resolve="SelectedEntryFeature" />
     <node concept="1iCGBv" id="4TXqppWujZk" role="2wV5jI">
-      <ref role="1NtTu8" to="at53:4TXqppWtP_z" />
+      <ref role="1NtTu8" to="at53:5ZbqeTIc1i1" />
       <node concept="1sVBvm" id="4TXqppWujZm" role="1sWHZn">
         <node concept="3F0A7n" id="4TXqppWujZq" role="2wV5jI">
           <property role="1Intyy" value="true" />

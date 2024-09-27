@@ -708,6 +708,11 @@
     <property role="34LRSv" value="selected choice" />
     <property role="3GE5qa" value="features" />
     <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
+    <node concept="1TJgyj" id="5ZbqeTIc1i1" role="1TKVEi">
+      <property role="IQ2ns" value="6902726227135566977" />
+      <property role="20kJfa" value="defaultSelectedEntry" />
+      <ref role="20lvS9" node="3mckYa_DMEC" resolve="ChoiceEntry" />
+    </node>
   </node>
   <node concept="1TIwiD" id="44HS8_67H$1">
     <property role="EcuMT" value="4696656866608863489" />
@@ -749,11 +754,6 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
-    </node>
-    <node concept="1TJgyj" id="4TXqppWtP_z" role="1TKVEi">
-      <property role="IQ2ns" value="5655792802101418339" />
-      <property role="20kJfa" value="defaultSelectedEntry" />
-      <ref role="20lvS9" node="3mckYa_DMEC" resolve="ChoiceEntry" />
     </node>
   </node>
   <node concept="1TIwiD" id="3mckYa_DMEC">

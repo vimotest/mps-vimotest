@@ -4315,9 +4315,15 @@
             <node concept="37vLTw" id="5x13l0P7jmL" role="37wK5m">
               <ref role="3cqZAo" node="5x13l0P7fM3" resolve="textPropertyAccessor" />
             </node>
-            <node concept="13iPFW" id="5x13l0P7eiW" role="37wK5m" />
+            <node concept="13iPFW" id="5ZbqeTIjMTg" role="37wK5m" />
+            <node concept="2OqwBi" id="5ZbqeTId2rp" role="37wK5m">
+              <node concept="13iPFW" id="5x13l0P7eiW" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5ZbqeTId2E$" role="2OqNvi">
+                <ref role="3Tt5mk" to="at53:44HS8_67H$3" resolve="selectedEntryFeature" />
+              </node>
+            </node>
             <node concept="Xl_RD" id="7waZUcv1Uo$" role="37wK5m">
-              <property role="Xl_RC" value="de.vimotest.viewmodel.editor.ComboBoxWidget_selectedEntries_EC" />
+              <property role="Xl_RC" value="de.vimotest.viewmodel.editor.SelectedEntryFeature_selectedEntries_EC" />
             </node>
           </node>
         </node>
@@ -4350,6 +4356,10 @@
       <node concept="37vLTG" id="5x13l0P7eIv" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="5x13l0P7eIw" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5ZbqeTIjLPv" role="3clF46">
+        <property role="TrG5h" value="selectionOwnerNode" />
+        <node concept="3Tqbb2" id="5ZbqeTIjMqm" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="7waZUcv1TZL" role="3clF46">
         <property role="TrG5h" value="labelCellComponentNamePath" />
@@ -4437,7 +4447,7 @@
                 <ref role="3cqZAo" node="5x13l0P7eMv" resolve="context" />
               </node>
               <node concept="37vLTw" id="7waZUcv2f3t" role="37wK5m">
-                <ref role="3cqZAo" node="5x13l0P7eIv" resolve="node" />
+                <ref role="3cqZAo" node="5ZbqeTIjLPv" resolve="selectionOwnerNode" />
               </node>
               <node concept="37vLTw" id="7waZUcv2fri" role="37wK5m">
                 <ref role="3cqZAo" node="7waZUcv1TZL" resolve="labelCellComponentNamePath" />

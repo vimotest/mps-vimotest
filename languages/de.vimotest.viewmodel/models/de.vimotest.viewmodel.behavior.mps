@@ -4285,6 +4285,25 @@
             </node>
           </node>
         </node>
+        <node concept="3SKdUt" id="3mckYa_GajK" role="3cqZAp">
+          <node concept="1PaTwC" id="3mckYa_GajL" role="1aUNEU">
+            <node concept="3oM_SD" id="3mckYa_GajM" role="1PaTwD">
+              <property role="3oM_SC" value="todo:" />
+            </node>
+            <node concept="3oM_SD" id="3mckYa_GaEQ" role="1PaTwD">
+              <property role="3oM_SC" value="replace" />
+            </node>
+            <node concept="3oM_SD" id="3mckYa_GaES" role="1PaTwD">
+              <property role="3oM_SC" value="string" />
+            </node>
+            <node concept="3oM_SD" id="3mckYa_GaF9" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="3mckYa_GaFa" role="1PaTwD">
+              <property role="3oM_SC" value="fqNode-path" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="5x13l0P7eiR" role="3cqZAp">
           <node concept="BsUDl" id="5x13l0P7eiS" role="3clFbG">
             <ref role="37wK5l" node="5x13l0P7cTF" resolve="makeComboBoxEditorCell" />
@@ -4295,6 +4314,9 @@
               <ref role="3cqZAo" node="5x13l0P7fM3" resolve="textPropertyAccessor" />
             </node>
             <node concept="13iPFW" id="5x13l0P7eiW" role="37wK5m" />
+            <node concept="Xl_RD" id="7waZUcv1Uo$" role="37wK5m">
+              <property role="Xl_RC" value="de.vimotest.viewmodel.editor.ComboBoxWidget_selectedEntries_EC" />
+            </node>
           </node>
         </node>
       </node>
@@ -4310,6 +4332,7 @@
     </node>
     <node concept="13i0hz" id="5x13l0P7cTF" role="13h7CS">
       <property role="TrG5h" value="makeComboBoxEditorCell" />
+      <property role="2Ki8OM" value="true" />
       <node concept="37vLTG" id="5x13l0P7eMv" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="5x13l0P7eMw" role="1tU5fm">
@@ -4325,6 +4348,10 @@
       <node concept="37vLTG" id="5x13l0P7eIv" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="5x13l0P7eIw" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7waZUcv1TZL" role="3clF46">
+        <property role="TrG5h" value="labelCellComponentNamePath" />
+        <node concept="17QB3L" id="7waZUcv1TZN" role="1tU5fm" />
       </node>
       <node concept="3Tm1VV" id="5x13l0P7cTG" role="1B3o_S" />
       <node concept="3uibUv" id="5x13l0P7cVH" role="3clF45">
@@ -4396,49 +4423,22 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="3mckYa_GajK" role="3cqZAp">
-          <node concept="1PaTwC" id="3mckYa_GajL" role="1aUNEU">
-            <node concept="3oM_SD" id="3mckYa_GajM" role="1PaTwD">
-              <property role="3oM_SC" value="todo:" />
-            </node>
-            <node concept="3oM_SD" id="3mckYa_GaEQ" role="1PaTwD">
-              <property role="3oM_SC" value="replace" />
-            </node>
-            <node concept="3oM_SD" id="3mckYa_GaES" role="1PaTwD">
-              <property role="3oM_SC" value="string" />
-            </node>
-            <node concept="3oM_SD" id="3mckYa_GaF9" role="1PaTwD">
-              <property role="3oM_SC" value="with" />
-            </node>
-            <node concept="3oM_SD" id="3mckYa_GaFa" role="1PaTwD">
-              <property role="3oM_SC" value="fqNode-path" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="3mckYa_FjbN" role="3cqZAp">
           <node concept="3cpWsn" id="3mckYa_FjbO" role="3cpWs9">
             <property role="TrG5h" value="editorCell" />
             <node concept="3uibUv" id="3mckYa_Fj5z" role="1tU5fm">
               <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
             </node>
-            <node concept="2OqwBi" id="3mckYa_GaGb" role="33vP2m">
-              <node concept="2ShNRf" id="3mckYa_GaGc" role="2Oq$k0">
-                <node concept="1pGfFk" id="3mckYa_GaGd" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="g51k:~EditorCellFactoryImpl.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext)" resolve="EditorCellFactoryImpl" />
-                  <node concept="37vLTw" id="3mckYa_GaGe" role="37wK5m">
-                    <ref role="3cqZAo" node="5x13l0P7eMv" resolve="context" />
-                  </node>
-                </node>
+            <node concept="BsUDl" id="7waZUcv2f3l" role="33vP2m">
+              <ref role="37wK5l" node="7waZUcv2eGv" resolve="makeComboBoxLabelCellFromEditorComponent" />
+              <node concept="37vLTw" id="7waZUcv2rUO" role="37wK5m">
+                <ref role="3cqZAo" node="5x13l0P7eMv" resolve="context" />
               </node>
-              <node concept="liA8E" id="3mckYa_GaGf" role="2OqNvi">
-                <ref role="37wK5l" to="g51k:~EditorCellFactoryImpl.createEditorComponentCell(org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="createEditorComponentCell" />
-                <node concept="37vLTw" id="3mckYa_GaGg" role="37wK5m">
-                  <ref role="3cqZAo" node="5x13l0P7eIv" resolve="node" />
-                </node>
-                <node concept="Xl_RD" id="3mckYa_GaGh" role="37wK5m">
-                  <property role="Xl_RC" value="de.vimotest.viewmodel.editor.ComboBoxWidget_selectedEntries_EC" />
-                </node>
+              <node concept="37vLTw" id="7waZUcv2f3t" role="37wK5m">
+                <ref role="3cqZAo" node="5x13l0P7eIv" resolve="node" />
+              </node>
+              <node concept="37vLTw" id="7waZUcv2fri" role="37wK5m">
+                <ref role="3cqZAo" node="7waZUcv1TZL" resolve="labelCellComponentNamePath" />
               </node>
             </node>
           </node>
@@ -4456,6 +4456,52 @@
               </node>
               <node concept="37vLTw" id="3mckYa_Fjpe" role="37wK5m">
                 <ref role="3cqZAo" node="3mckYa_FjbO" resolve="editorCell" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7waZUcv2eGv" role="13h7CS">
+      <property role="TrG5h" value="makeComboBoxLabelCellFromEditorComponent" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="37vLTG" id="7waZUcv2rgq" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="7waZUcv2rgr" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7waZUcv2f3g" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="7waZUcv2f3i" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7waZUcv2eG_" role="3clF46">
+        <property role="TrG5h" value="labelCellComponentNamePath" />
+        <node concept="17QB3L" id="7waZUcv2eGA" role="1tU5fm" />
+      </node>
+      <node concept="3Tm1VV" id="7waZUcv2eGw" role="1B3o_S" />
+      <node concept="3uibUv" id="7waZUcv2eGz" role="3clF45">
+        <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+      </node>
+      <node concept="3clFbS" id="7waZUcv2eGy" role="3clF47">
+        <node concept="3clFbF" id="7waZUcv2eGB" role="3cqZAp">
+          <node concept="2OqwBi" id="7waZUcv2eGD" role="3clFbG">
+            <node concept="2ShNRf" id="7waZUcv2eGE" role="2Oq$k0">
+              <node concept="1pGfFk" id="7waZUcv2eGF" role="2ShVmc">
+                <property role="373rjd" value="true" />
+                <ref role="37wK5l" to="g51k:~EditorCellFactoryImpl.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext)" resolve="EditorCellFactoryImpl" />
+                <node concept="37vLTw" id="7waZUcv2eGG" role="37wK5m">
+                  <ref role="3cqZAo" node="7waZUcv2rgq" resolve="context" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="7waZUcv2eGH" role="2OqNvi">
+              <ref role="37wK5l" to="g51k:~EditorCellFactoryImpl.createEditorComponentCell(org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="createEditorComponentCell" />
+              <node concept="37vLTw" id="7waZUcv2eGI" role="37wK5m">
+                <ref role="3cqZAo" node="7waZUcv2f3g" resolve="node" />
+              </node>
+              <node concept="37vLTw" id="7waZUcv2eGJ" role="37wK5m">
+                <ref role="3cqZAo" node="7waZUcv2eG_" resolve="labelCellComponentNamePath" />
               </node>
             </node>
           </node>

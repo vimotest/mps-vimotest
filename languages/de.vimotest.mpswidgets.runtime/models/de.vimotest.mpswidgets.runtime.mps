@@ -6854,6 +6854,69 @@
       <node concept="3cqZAl" id="39fpbS9y3eh" role="3clF45" />
       <node concept="3Tm6S6" id="39fpbS9y3ei" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="7waZUcv27CN" role="jymVt" />
+    <node concept="3clFb_" id="7waZUcv2bMr" role="jymVt">
+      <property role="TrG5h" value="updateLabelCell" />
+      <node concept="37vLTG" id="7waZUcv2bTx" role="3clF46">
+        <property role="TrG5h" value="labelCell" />
+        <node concept="3uibUv" id="7waZUcv2bTy" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="7waZUcv2bMu" role="3clF47">
+        <node concept="3clFbF" id="7waZUcveDQQ" role="3cqZAp">
+          <node concept="2OqwBi" id="7waZUcveFei" role="3clFbG">
+            <node concept="Xjq3P" id="7waZUcveDQO" role="2Oq$k0" />
+            <node concept="liA8E" id="7waZUcveGnd" role="2OqNvi">
+              <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="removeCell" />
+              <node concept="37vLTw" id="7waZUcveGvH" role="37wK5m">
+                <ref role="3cqZAo" node="44HS8_62EbG" resolve="myLabelCell" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7waZUcveGy2" role="3cqZAp">
+          <node concept="2OqwBi" id="7waZUcveGy3" role="3clFbG">
+            <node concept="Xjq3P" id="7waZUcveGy4" role="2Oq$k0" />
+            <node concept="liA8E" id="7waZUcveGy5" role="2OqNvi">
+              <ref role="37wK5l" to="g51k:~EditorCell_Collection.removeCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="removeCell" />
+              <node concept="37vLTw" id="7waZUcveGy6" role="37wK5m">
+                <ref role="3cqZAo" node="44HS8_62EbC" resolve="myButtonCell" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7waZUcv2bTv" role="3cqZAp">
+          <node concept="37vLTI" id="7waZUcv2elT" role="3clFbG">
+            <node concept="37vLTw" id="7waZUcv2evh" role="37vLTx">
+              <ref role="3cqZAo" node="7waZUcv2bTx" resolve="labelCell" />
+            </node>
+            <node concept="37vLTw" id="7waZUcv2bTu" role="37vLTJ">
+              <ref role="3cqZAo" node="44HS8_62EbG" resolve="myLabelCell" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7waZUcveJ9m" role="3cqZAp" />
+        <node concept="3clFbF" id="7waZUcveJ8V" role="3cqZAp">
+          <node concept="1rXfSq" id="7waZUcveJ8W" role="3clFbG">
+            <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
+            <node concept="37vLTw" id="7waZUcveJ8X" role="37wK5m">
+              <ref role="3cqZAo" node="7waZUcv2bTx" resolve="labelCell" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7waZUcveJmq" role="3cqZAp">
+          <node concept="1rXfSq" id="7waZUcveJms" role="3clFbG">
+            <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
+            <node concept="37vLTw" id="7waZUcveJmt" role="37wK5m">
+              <ref role="3cqZAo" node="44HS8_62EbC" resolve="myButtonCell" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="7waZUcv2bMo" role="3clF45" />
+      <node concept="3Tm1VV" id="7waZUcv2bMv" role="1B3o_S" />
+    </node>
     <node concept="2tJIrI" id="39fpbS9xVSc" role="jymVt" />
     <node concept="3clFb_" id="44HS8_62Ecf" role="jymVt">
       <property role="TrG5h" value="paintContent" />

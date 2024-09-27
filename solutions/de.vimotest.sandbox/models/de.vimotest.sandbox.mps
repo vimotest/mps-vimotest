@@ -27,6 +27,13 @@
       <concept id="9155943921465570482" name="de.vimotest.testing.structure.ListViewCheck" flags="ng" index="1i$re">
         <child id="9155943921465570483" name="checks" index="1i$rf" />
       </concept>
+      <concept id="4696656866608863640" name="de.vimotest.testing.structure.SelectedEntryCheckValue" flags="ng" index="7cN$h">
+        <reference id="8650007110383850140" name="selectedEntry" index="1B0EOZ" />
+      </concept>
+      <concept id="4696656866608863638" name="de.vimotest.testing.structure.ComboBoxEntriesCheckValue" flags="ng" index="7cN$v" />
+      <concept id="4696656866608863568" name="de.vimotest.testing.structure.ComboBoxCheck" flags="ng" index="7cNBp">
+        <child id="4696656866608863569" name="checks" index="7cNBo" />
+      </concept>
       <concept id="5447508759369797102" name="de.vimotest.testing.structure.WidgetTableRowsCheckValue" flags="ng" index="2ayrQO">
         <child id="5447508759369822399" name="rows" index="2ay43_" />
       </concept>
@@ -276,7 +283,9 @@
         <node concept="7cNxT" id="4TXqppWx0zH" role="7cNAa" />
         <node concept="V3Zf6" id="4TXqppWx0zJ" role="7cNAd" />
         <node concept="C4FCg" id="4TXqppWx0zL" role="7cNAc" />
-        <node concept="C4FCh" id="4TXqppWx0zN" role="7cNAf" />
+        <node concept="C4FCh" id="4TXqppWx0zN" role="7cNAf">
+          <property role="2VM7R0" value="true" />
+        </node>
       </node>
       <node concept="1i$o6" id="7WgsBLYysIb" role="103ZUC">
         <property role="TrG5h" value="MyListOfLabel" />
@@ -546,6 +555,17 @@
               <node concept="3eDL7N" id="9CTo7lpJaf" role="3n32fm">
                 <ref role="3eDL7M" node="2YeT3IBbXGu" resolve="image_down" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="DUd2R" id="7waZUcv1SsO" role="DUd56">
+        <node concept="30nzp_" id="7waZUcve$a5" role="DUiSb">
+          <ref role="30nzpS" node="4TXqppWx0zD" resolve="MyOptions" />
+          <node concept="7cNBp" id="7waZUcve$a7" role="30nDbQ">
+            <node concept="7cN$v" id="7waZUcve$a8" role="7cNBo" />
+            <node concept="7cN$h" id="7waZUcve$a9" role="7cNBo">
+              <ref role="1B0EOZ" node="4TXqppWx0zP" resolve="A" />
             </node>
           </node>
         </node>

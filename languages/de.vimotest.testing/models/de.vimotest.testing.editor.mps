@@ -2750,5 +2750,41 @@
       <node concept="2iRkQZ" id="44HS8_67H_w" role="2czzBx" />
     </node>
   </node>
+  <node concept="24kQdi" id="7waZUcv25al">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1XX52x" to="53m0:44HS8_67HAo" resolve="SelectedEntryCheckValue" />
+    <node concept="3EZMnI" id="7waZUcv25an" role="2wV5jI">
+      <node concept="3F0ifn" id="7waZUcv25ao" role="3EZMnx">
+        <property role="3F0ifm" value="expect" />
+      </node>
+      <node concept="3F0ifn" id="7waZUcv25ap" role="3EZMnx">
+        <property role="3F0ifm" value="selected entry" />
+      </node>
+      <node concept="1iCGBv" id="7waZUcv25au" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:7waZUcv25as" resolve="selectedEntry" />
+        <node concept="1sVBvm" id="7waZUcv25aw" role="1sWHZn">
+          <node concept="3F0A7n" id="7waZUcv25a$" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="7waZUcv25ar" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="7waZUcv2gFG">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <property role="TrG5h" value="SelectedEntryCheckValue_selectedEntry_EC" />
+    <ref role="1XX52x" to="53m0:44HS8_67HAo" resolve="SelectedEntryCheckValue" />
+    <node concept="1iCGBv" id="7waZUcv2gFI" role="2wV5jI">
+      <ref role="1NtTu8" to="53m0:7waZUcv25as" resolve="selectedEntry" />
+      <node concept="1sVBvm" id="7waZUcv2gFK" role="1sWHZn">
+        <node concept="3F0A7n" id="7waZUcv2gFO" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

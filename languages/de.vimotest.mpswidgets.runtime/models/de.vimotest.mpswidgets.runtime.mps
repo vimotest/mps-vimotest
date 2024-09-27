@@ -6981,11 +6981,11 @@
               <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
             </node>
             <node concept="10QFUN" id="44HS8_62EcT" role="33vP2m">
-              <node concept="1rXfSq" id="44HS8_62EcU" role="10QFUP">
-                <ref role="37wK5l" to="g51k:~EditorCell_Basic.getEditorComponent()" resolve="getEditorComponent" />
-              </node>
               <node concept="3uibUv" id="44HS8_62EcV" role="10QFUM">
                 <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+              </node>
+              <node concept="1rXfSq" id="44HS8_62EcU" role="10QFUP">
+                <ref role="37wK5l" to="g51k:~EditorCell_Basic.getEditorComponent()" resolve="getEditorComponent" />
               </node>
             </node>
           </node>

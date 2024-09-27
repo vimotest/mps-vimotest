@@ -401,9 +401,14 @@
               <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
               <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
               <node concept="2OqwBi" id="3mckYa_E7ij" role="37wK5m">
-                <node concept="3kakTB" id="3mckYa_E6Zk" role="2Oq$k0" />
+                <node concept="2OqwBi" id="7waZUcuRMrA" role="2Oq$k0">
+                  <node concept="3kakTB" id="3mckYa_E6Zk" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="7waZUcuRMuK" role="2OqNvi">
+                    <ref role="3Tt5mk" to="at53:44HS8_67H$2" resolve="comboBoxEntriesFeature" />
+                  </node>
+                </node>
                 <node concept="3Tsc0h" id="3mckYa_Hnbm" role="2OqNvi">
-                  <ref role="3TtcxE" to="at53:3mckYa_DRHr" resolve="defaultEntries" />
+                  <ref role="3TtcxE" to="at53:4TXqppWtP_y" />
                 </node>
               </node>
             </node>

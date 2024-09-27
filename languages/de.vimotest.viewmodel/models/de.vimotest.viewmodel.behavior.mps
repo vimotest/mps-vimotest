@@ -4233,10 +4233,15 @@
                   <node concept="1pGfFk" id="5x13l0P7faV" role="2ShVmc">
                     <property role="373rjd" value="true" />
                     <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,boolean,boolean)" resolve="PropertyAccessor" />
-                    <node concept="13iPFW" id="5x13l0P7faW" role="37wK5m" />
+                    <node concept="2OqwBi" id="7waZUcuSjNz" role="37wK5m">
+                      <node concept="13iPFW" id="5x13l0P7faW" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="7waZUcuSk2s" role="2OqNvi">
+                        <ref role="3Tt5mk" to="at53:44HS8_67H$2" resolve="comboBoxEntriesFeature" />
+                      </node>
+                    </node>
                     <node concept="355D3s" id="5x13l0P7faX" role="37wK5m">
-                      <ref role="355D3t" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
-                      <ref role="355D3u" to="at53:5x13l0P7jAs" resolve="defaultText" />
+                      <ref role="355D3t" to="at53:44HS8_67HzJ" resolve="ComboBoxEntriesFeature" />
+                      <ref role="355D3u" to="at53:4TXqppWtP_$" resolve="defaultText" />
                     </node>
                     <node concept="3clFbT" id="5x13l0P7faY" role="37wK5m" />
                     <node concept="3clFbT" id="5x13l0P7faZ" role="37wK5m" />
@@ -4478,6 +4483,26 @@
               <node concept="13iPFW" id="44HS8_67H$T" role="2Oq$k0" />
               <node concept="3TrEf2" id="44HS8_67H$L" role="2OqNvi">
                 <ref role="3Tt5mk" to="at53:44HS8_67H$2" resolve="comboBoxEntriesFeature" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4TXqppWtt35" role="3cqZAp">
+          <node concept="3clFbS" id="4TXqppWtt36" role="3clFbx">
+            <node concept="3cpWs6" id="4TXqppWtt37" role="3cqZAp">
+              <node concept="3clFbT" id="4TXqppWtt38" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="4TXqppWtt39" role="3clFbw">
+            <node concept="37vLTw" id="4TXqppWtt3a" role="3uHU7B">
+              <ref role="3cqZAo" node="44HS8_67H$I" resolve="feature" />
+            </node>
+            <node concept="2OqwBi" id="4TXqppWtt3b" role="3uHU7w">
+              <node concept="13iPFW" id="4TXqppWtt3c" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4TXqppWtt3d" role="2OqNvi">
+                <ref role="3Tt5mk" to="at53:44HS8_67H$3" />
               </node>
             </node>
           </node>

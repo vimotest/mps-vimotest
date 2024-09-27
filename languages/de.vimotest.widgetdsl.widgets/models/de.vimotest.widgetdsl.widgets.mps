@@ -212,6 +212,7 @@
       <ref role="2WVz4k" node="44HS8_67Cst" resolve="ChoiceEntries" />
     </node>
     <node concept="2WVz4l" id="44HS8_67Csq" role="2WV$Zc">
+      <property role="3dRBvX" value="true" />
       <ref role="2WVz4k" node="44HS8_67EZV" resolve="SelectedChoice" />
     </node>
     <node concept="2WVz4l" id="44HS8_67HzI" role="2WV$Zc">

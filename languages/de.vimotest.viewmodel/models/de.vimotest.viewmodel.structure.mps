@@ -710,6 +710,13 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="44HS8_67HzJ" resolve="ComboBoxEntriesFeature" />
     </node>
+    <node concept="1TJgyj" id="3mckYa_DRHr" role="1TKVEi">
+      <property role="IQ2ns" value="3858551213656603483" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="defaultEntries" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3mckYa_DMEC" resolve="ChoiceEntry" />
+    </node>
     <node concept="1TJgyj" id="44HS8_67H$3" role="1TKVEi">
       <property role="IQ2ns" value="4696656866608863491" />
       <property role="20kJfa" value="selectedEntryFeature" />
@@ -737,6 +744,26 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
+    </node>
+    <node concept="1TJgyi" id="5x13l0P7jAs" role="1TKVEl">
+      <property role="IQ2nx" value="6359378786963503516" />
+      <property role="TrG5h" value="defaultText" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="3mckYa_DRHt" role="1TKVEi">
+      <property role="IQ2ns" value="3858551213656603485" />
+      <property role="20kJfa" value="selectedEntry" />
+      <ref role="20lvS9" node="3mckYa_DMEC" resolve="ChoiceEntry" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3mckYa_DMEC">
+    <property role="EcuMT" value="3858551213656582824" />
+    <property role="3GE5qa" value="widgets.choices" />
+    <property role="TrG5h" value="ChoiceEntry" />
+    <property role="34LRSv" value="entry" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="3mckYa_DPbg" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

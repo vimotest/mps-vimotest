@@ -1799,6 +1799,41 @@
       <node concept="3F1sOY" id="44HS8_67H$c" role="3EZMnx">
         <ref role="1NtTu8" to="at53:44HS8_67H$2" resolve="comboBoxEntriesFeature" />
       </node>
+      <node concept="3EZMnI" id="3mckYa_DRHv" role="3EZMnx">
+        <node concept="VPM3Z" id="3mckYa_DRHx" role="3F10Kt" />
+        <node concept="3vyZuw" id="3mckYa_EaaG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="3mckYa_DRHA" role="3EZMnx">
+          <property role="3F0ifm" value="entries:" />
+        </node>
+        <node concept="3F0ifn" id="3mckYa_E1RJ" role="3EZMnx">
+          <property role="3F0ifm" value="selected:" />
+        </node>
+        <node concept="1iCGBv" id="3mckYa_E1RM" role="3EZMnx">
+          <ref role="1NtTu8" to="at53:3mckYa_DRHt" resolve="selectedEntry" />
+          <node concept="1sVBvm" id="3mckYa_E1RO" role="1sWHZn">
+            <node concept="3F0A7n" id="3mckYa_E1RS" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="3F2HdR" id="3mckYa_GRgY" role="3EZMnx">
+          <ref role="1NtTu8" to="at53:3mckYa_DRHr" resolve="defaultEntries" />
+          <node concept="l2Vlx" id="3mckYa_GRh2" role="2czzBx" />
+          <node concept="pVoyu" id="3mckYa_GRh3" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="3mckYa_GRh4" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="pj6Ft" id="3mckYa_GRh5" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="3mckYa_DRH$" role="2iSdaV" />
+      </node>
       <node concept="3F1sOY" id="44HS8_67H$d" role="3EZMnx">
         <ref role="1NtTu8" to="at53:44HS8_67H$3" resolve="selectedEntryFeature" />
       </node>
@@ -1810,6 +1845,33 @@
       </node>
       <node concept="3F1sOY" id="44HS8_67H$g" role="3EZMnx">
         <ref role="1NtTu8" to="at53:44HS8_67H$6" resolve="enabledFeature" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3mckYa_DPbh">
+    <property role="3GE5qa" value="widgets.choices" />
+    <ref role="1XX52x" to="at53:3mckYa_DMEC" resolve="ChoiceEntry" />
+    <node concept="3EZMnI" id="3mckYa_DRHh" role="2wV5jI">
+      <node concept="3F0ifn" id="3mckYa_DRHl" role="3EZMnx">
+        <property role="3F0ifm" value="entry" />
+      </node>
+      <node concept="3F0A7n" id="3mckYa_DRHo" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="2iRfu4" id="3mckYa_DRHk" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="3mckYa_FbSQ">
+    <property role="3GE5qa" value="widgets.choices" />
+    <property role="TrG5h" value="ComboBoxWidget_selectedEntries_EC" />
+    <ref role="1XX52x" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
+    <node concept="1iCGBv" id="3mckYa_GRh6" role="2wV5jI">
+      <ref role="1NtTu8" to="at53:3mckYa_DRHt" />
+      <node concept="1sVBvm" id="3mckYa_GRh7" role="1sWHZn">
+        <node concept="3F0A7n" id="3mckYa_GRh8" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
       </node>
     </node>
   </node>

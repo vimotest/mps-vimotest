@@ -114,9 +114,22 @@
       <concept id="885291782481719619" name="de.vimotest.viewmodel.structure.ViewWidgetFeature" flags="ng" index="25b05G">
         <property id="5555266676524595291" name="supported" index="2VM7R0" />
       </concept>
+      <concept id="4696656866608863471" name="de.vimotest.viewmodel.structure.ComboBoxEntriesFeature" flags="ng" index="7cNxA" />
+      <concept id="4696656866608863472" name="de.vimotest.viewmodel.structure.SelectedEntryFeature" flags="ng" index="7cNxT" />
+      <concept id="4696656866608863489" name="de.vimotest.viewmodel.structure.ComboBoxWidget" flags="ng" index="7cNA8">
+        <property id="6359378786963503516" name="defaultText" index="1Hn3jc" />
+        <reference id="3858551213656603485" name="selectedEntry" index="2gaMyZ" />
+        <child id="4696656866608863491" name="selectedEntryFeature" index="7cNAa" />
+        <child id="4696656866608863490" name="comboBoxEntriesFeature" index="7cNAb" />
+        <child id="4696656866608863493" name="visibilityFeature" index="7cNAc" />
+        <child id="4696656866608863492" name="textFeature" index="7cNAd" />
+        <child id="4696656866608863494" name="enabledFeature" index="7cNAf" />
+        <child id="3858551213656603483" name="defaultEntries" index="2gaMyT" />
+      </concept>
       <concept id="3426927311333626895" name="de.vimotest.viewmodel.structure.ClosedImageSet" flags="ng" index="28FJ0O">
         <child id="3426927311333626898" name="imageRefs" index="28FJ0D" />
       </concept>
+      <concept id="3858551213656582824" name="de.vimotest.viewmodel.structure.ChoiceEntry" flags="ng" index="2gaR_a" />
       <concept id="3922717397912187187" name="de.vimotest.viewmodel.structure.ImageWidget" flags="ng" index="2mJbI3">
         <child id="3426927311333774018" name="defaultImageFeature" index="28FbrT" />
         <child id="3922717397912187188" name="imageSourceFeature" index="2mJbI4" />
@@ -249,6 +262,24 @@
           </node>
         </node>
       </node>
+      <node concept="7cNA8" id="5x13l0P7YRp" role="103ZUC">
+        <property role="TrG5h" value="MySelec≥tion" />
+        <property role="1Hn3jc" value="Test" />
+        <ref role="2gaMyZ" node="3mckYa_GJk0" resolve="B" />
+        <node concept="7cNxA" id="5x13l0P7YRr" role="7cNAb" />
+        <node concept="7cNxT" id="5x13l0P7YRt" role="7cNAa" />
+        <node concept="V3Zf6" id="5x13l0P7YRv" role="7cNAd">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCg" id="5x13l0P7YRx" role="7cNAc" />
+        <node concept="C4FCh" id="5x13l0P7YRz" role="7cNAf" />
+        <node concept="2gaR_a" id="3mckYa_GJjZ" role="2gaMyT">
+          <property role="TrG5h" value="A" />
+        </node>
+        <node concept="2gaR_a" id="3mckYa_GJk0" role="2gaMyT">
+          <property role="TrG5h" value="B" />
+        </node>
+      </node>
       <node concept="1i$o6" id="7WgsBLYysIb" role="103ZUC">
         <property role="TrG5h" value="MyListOfLabel" />
         <node concept="C4FCg" id="7WgsBLYysIe" role="1i$o7">
@@ -308,6 +339,31 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="1i$o6" id="44HS8_5zidz" role="103ZUC">
+        <property role="TrG5h" value="MyCheckboxes" />
+        <node concept="2nep4R" id="44HS8_5zid$" role="2MLTWm">
+          <node concept="C4FCE" id="44HS8_5zidM" role="2nerJI">
+            <property role="TrG5h" value="Header" />
+            <property role="1ITtVB" value="test" />
+            <node concept="C4FCf" id="44HS8_5zidR" role="C4FCF" />
+            <node concept="C4FCg" id="44HS8_5zidW" role="C4FCG" />
+            <node concept="C4FCh" id="44HS8_5zie1" role="C4FCH" />
+            <node concept="V3Zf6" id="44HS8_5zie6" role="1ISttP">
+              <property role="2VM7R0" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="3KuuI3" id="44HS8_5zidE" role="1rSL7" />
+        <node concept="1i$ol" id="44HS8_5zidG" role="1uGH_">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCg" id="44HS8_5zidI" role="1i$o7">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCh" id="44HS8_5zidK" role="1i$o0">
+          <property role="2VM7R0" value="true" />
         </node>
       </node>
       <node concept="3UVeDL" id="4Ips5F1e3zO" role="103ZUC">
@@ -434,9 +490,7 @@
         <node concept="30nzp_" id="3JdhG1lT90w" role="DUiSb">
           <ref role="30nzpS" node="6vtOLtwdT_M" resolve="MyFlag" />
           <node concept="C4Fn6" id="3JdhG1lT90z" role="30nDbQ">
-            <node concept="35STPD" id="3JdhG1lT90E" role="C4Fn7">
-              <property role="35S$ZG" value="true" />
-            </node>
+            <node concept="35STPD" id="3JdhG1lT90E" role="C4Fn7" />
             <node concept="35STUl" id="6NwBQMyG2nQ" role="C4Fn7">
               <property role="3XJMQh" value="true" />
             </node>
@@ -552,6 +606,12 @@
             <node concept="1i$ql" id="2L$_HjiPdwe" role="1i$rf">
               <property role="3YEp6u" value="3" />
             </node>
+            <node concept="35STUl" id="44HS8_5y__i" role="1i$rf">
+              <property role="3XJMQh" value="true" />
+            </node>
+            <node concept="35STUn" id="44HS8_5zidx" role="1i$rf">
+              <property role="3XJem9" value="true" />
+            </node>
           </node>
         </node>
       </node>
@@ -587,6 +647,48 @@
             </node>
             <node concept="1i$ql" id="2L$_HjiOn1q" role="1i$rf">
               <property role="3YEp6u" value="1" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="DUd2R" id="44HS8_5zieb" role="DUd56">
+        <node concept="30nzp_" id="44HS8_5zied" role="DUiSb">
+          <ref role="30nzpS" node="44HS8_5zidz" resolve="MyCheckboes" />
+          <node concept="1i$re" id="44HS8_5zief" role="30nDbQ">
+            <node concept="1i$qk" id="44HS8_5zieg" role="1i$rf">
+              <node concept="CNEhi" id="44HS8_5zieh" role="3o2WtG">
+                <node concept="1NuoHz" id="44HS8_5ziei" role="CNE8S">
+                  <ref role="3elmOO" node="44HS8_5zidM" resolve="Header" />
+                  <node concept="C4Fn6" id="44HS8_5ziek" role="1NuoHy">
+                    <node concept="35STPD" id="44HS8_5ziel" role="C4Fn7" />
+                    <node concept="V3Zdv" id="44HS8_5zier" role="C4Fn7">
+                      <property role="3egigc" value="test" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="CNEhi" id="44HS8_5ziem" role="3o2WtG">
+                <node concept="1NuoHz" id="44HS8_5zien" role="CNE8S">
+                  <ref role="3elmOO" node="44HS8_5zidM" resolve="Header" />
+                  <node concept="C4Fn6" id="44HS8_5ziep" role="1NuoHy">
+                    <node concept="35STPD" id="44HS8_5zieq" role="C4Fn7" />
+                  </node>
+                </node>
+              </node>
+              <node concept="CNEhi" id="44HS8_5zies" role="3o2WtG">
+                <node concept="1NuoHz" id="44HS8_5ziet" role="CNE8S">
+                  <ref role="3elmOO" node="44HS8_5zidM" resolve="Header" />
+                  <node concept="C4Fn6" id="44HS8_5ziev" role="1NuoHy">
+                    <node concept="35STPD" id="44HS8_5ziew" role="C4Fn7" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="35STUl" id="44HS8_5ziex" role="1i$rf">
+              <property role="3XJMQh" value="true" />
+            </node>
+            <node concept="35STUn" id="44HS8_5ziez" role="1i$rf">
+              <property role="3XJem9" value="true" />
             </node>
           </node>
         </node>

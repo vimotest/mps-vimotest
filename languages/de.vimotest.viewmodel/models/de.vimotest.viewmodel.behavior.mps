@@ -4277,15 +4277,7 @@
             <node concept="3clFbS" id="5x13l0P7PRF" role="9aQI4">
               <node concept="3clFbF" id="5x13l0P7Q3b" role="3cqZAp">
                 <node concept="37vLTI" id="5x13l0P7Qvn" role="3clFbG">
-                  <node concept="2ShNRf" id="5x13l0P7QCx" role="37vLTx">
-                    <node concept="1pGfFk" id="5x13l0P7Sz2" role="2ShVmc">
-                      <property role="373rjd" value="true" />
-                      <ref role="37wK5l" to="g51k:~ConstantModelAccessor.&lt;init&gt;(java.lang.String)" resolve="ConstantModelAccessor" />
-                      <node concept="Xl_RD" id="5x13l0P7SH_" role="37wK5m">
-                        <property role="Xl_RC" value="&lt;selection&gt;" />
-                      </node>
-                    </node>
-                  </node>
+                  <node concept="10Nm6u" id="3lKMIJkwkB1" role="37vLTx" />
                   <node concept="37vLTw" id="5x13l0P7Q3a" role="37vLTJ">
                     <ref role="3cqZAo" node="5x13l0P7fM3" resolve="textPropertyAccessor" />
                   </node>

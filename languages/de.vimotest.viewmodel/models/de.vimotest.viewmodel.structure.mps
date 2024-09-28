@@ -292,6 +292,13 @@
       <property role="20kJfa" value="basedOnImageSet" />
       <ref role="20lvS9" node="2YeT3IB81gf" resolve="ClosedImageSet" />
     </node>
+    <node concept="1TJgyj" id="9CTo7lpcpn" role="1TKVEi">
+      <property role="IQ2ns" value="173640931447457367" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="defaultImage" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2s$w3BDwT7a" resolve="ImageDefinitionRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3pKiF2wNf4N">
     <property role="EcuMT" value="3922717397912187187" />
@@ -320,32 +327,8 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4SDJcZBNVBT" resolve="VisibilityFeature" />
     </node>
-    <node concept="1TJgyj" id="2YeT3IB8_b2" role="1TKVEi">
-      <property role="IQ2ns" value="3426927311333774018" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="defaultImageFeature" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="3pKiF2wNhrx" resolve="ImageSource" />
-    </node>
     <node concept="PrWs8" id="9CTo7looDc" role="PzmwI">
       <ref role="PrY4T" node="9CTo7lomnw" resolve="IDefinesImageSourceScope" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3pKiF2wNhrx">
-    <property role="EcuMT" value="3922717397912196833" />
-    <property role="3GE5qa" value="widgets.image" />
-    <property role="TrG5h" value="ImageSource" />
-    <property role="34LRSv" value="image source" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="1TJgyj" id="2YeT3IB81ge" role="1TKVEi">
-      <property role="IQ2ns" value="3426927311333626894" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="ref" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="2s$w3BDwT7a" resolve="ImageDefinitionRef" />
-    </node>
-    <node concept="PrWs8" id="9CTo7lomnv" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="6wbjV0Q45wJ">

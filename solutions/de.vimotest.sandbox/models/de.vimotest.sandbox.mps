@@ -142,16 +142,13 @@
       </concept>
       <concept id="3858551213656582824" name="de.vimotest.viewmodel.structure.ChoiceEntry" flags="ng" index="2gaR_a" />
       <concept id="3922717397912187187" name="de.vimotest.viewmodel.structure.ImageWidget" flags="ng" index="2mJbI3">
-        <child id="3426927311333774018" name="defaultImageFeature" index="28FbrT" />
         <child id="3922717397912187188" name="imageSourceFeature" index="2mJbI4" />
         <child id="3922717397912187189" name="enabledFeature" index="2mJbI5" />
         <child id="3922717397912187190" name="visibilityFeature" index="2mJbI6" />
       </concept>
       <concept id="3922717397912187178" name="de.vimotest.viewmodel.structure.ImageSourceFeature" flags="ng" index="2mJbIq">
         <reference id="173640931446787890" name="basedOnImageSet" index="3ncAEN" />
-      </concept>
-      <concept id="3922717397912196833" name="de.vimotest.viewmodel.structure.ImageSource" flags="ng" index="2mJlLh">
-        <child id="3426927311333626894" name="ref" index="28FJ0P" />
+        <child id="173640931447457367" name="defaultImage" index="3n32fn" />
       </concept>
       <concept id="134781560953456170" name="de.vimotest.viewmodel.structure.ColumnDefinition" flags="ng" index="2nep4R">
         <property id="134781560953461132" name="header" index="2neoUh" />
@@ -248,6 +245,9 @@
         <property role="TrG5h" value="MyImage" />
         <node concept="2mJbIq" id="3pKiF2wQ5dk" role="2mJbI4">
           <property role="2VM7R0" value="true" />
+          <node concept="3eDL7N" id="2YeT3IB8PiV" role="3n32fn">
+            <ref role="3eDL7M" node="2YeT3IBbXGv" resolve="image_info" />
+          </node>
         </node>
         <node concept="C4FCh" id="3pKiF2wQ5dm" role="2mJbI5">
           <property role="2VM7R0" value="true" />
@@ -255,24 +255,17 @@
         <node concept="C4FCg" id="3pKiF2wQ5do" role="2mJbI6">
           <property role="2VM7R0" value="true" />
         </node>
-        <node concept="2mJlLh" id="2YeT3IB8PiU" role="28FbrT">
-          <node concept="3eDL7N" id="2YeT3IB8PiV" role="28FJ0P">
-            <ref role="3eDL7M" node="2YeT3IBbXGv" resolve="image_info" />
-          </node>
-        </node>
       </node>
       <node concept="2mJbI3" id="9CTo7lpcp0" role="103ZUC">
         <property role="TrG5h" value="MyUpDownImage" />
         <node concept="2mJbIq" id="9CTo7lpcp2" role="2mJbI4">
           <ref role="3ncAEN" node="2YeT3IBbXKs" resolve="updown" />
-        </node>
-        <node concept="C4FCh" id="9CTo7lpcp4" role="2mJbI5" />
-        <node concept="C4FCg" id="9CTo7lpcp6" role="2mJbI6" />
-        <node concept="2mJlLh" id="9CTo7lpcp8" role="28FbrT">
-          <node concept="3eDL7N" id="9CTo7lpcpa" role="28FJ0P">
+          <node concept="3eDL7N" id="9CTo7lpcpa" role="3n32fn">
             <ref role="3eDL7M" node="2YeT3IBbXGt" resolve="image_up" />
           </node>
         </node>
+        <node concept="C4FCh" id="9CTo7lpcp4" role="2mJbI5" />
+        <node concept="C4FCg" id="9CTo7lpcp6" role="2mJbI6" />
       </node>
       <node concept="7cNA8" id="4TXqppWx0zD" role="103ZUC">
         <property role="TrG5h" value="MyOptions" />
@@ -365,17 +358,15 @@
             <node concept="2mJbIq" id="7WgsBLYyPzq" role="2mJbI4">
               <property role="2VM7R0" value="true" />
               <ref role="3ncAEN" node="7QMGS97OI39" resolve="forms" />
+              <node concept="3eDL7N" id="7WgsBLYyPzy" role="3n32fn">
+                <ref role="3eDL7M" node="2YeT3IBbXG$" resolve="image_circle" />
+              </node>
             </node>
             <node concept="C4FCh" id="7WgsBLYyPzs" role="2mJbI5">
               <property role="2VM7R0" value="true" />
             </node>
             <node concept="C4FCg" id="7WgsBLYyPzu" role="2mJbI6">
               <property role="2VM7R0" value="true" />
-            </node>
-            <node concept="2mJlLh" id="7WgsBLYyPzw" role="28FbrT">
-              <node concept="3eDL7N" id="7WgsBLYyPzy" role="28FJ0P">
-                <ref role="3eDL7M" node="2YeT3IBbXG$" resolve="image_circle" />
-              </node>
             </node>
           </node>
         </node>
@@ -439,14 +430,13 @@
         <node concept="2nep4R" id="7N9Xs9XSrsg" role="2azj8S">
           <node concept="2mJbI3" id="7N9Xs9XTOpi" role="2nerJI">
             <property role="TrG5h" value="InfoIcon" />
-            <node concept="2mJbIq" id="7N9Xs9XTOpk" role="2mJbI4" />
-            <node concept="C4FCh" id="7N9Xs9XTOpm" role="2mJbI5" />
-            <node concept="C4FCg" id="7N9Xs9XTOpo" role="2mJbI6" />
-            <node concept="2mJlLh" id="7N9Xs9XTOpq" role="28FbrT">
-              <node concept="3eDL7N" id="7N9Xs9XTOps" role="28FJ0P">
+            <node concept="2mJbIq" id="7N9Xs9XTOpk" role="2mJbI4">
+              <node concept="3eDL7N" id="7N9Xs9XTOps" role="3n32fn">
                 <ref role="3eDL7M" node="2YeT3IBbXGz" resolve="image_active" />
               </node>
             </node>
+            <node concept="C4FCh" id="7N9Xs9XTOpm" role="2mJbI5" />
+            <node concept="C4FCg" id="7N9Xs9XTOpo" role="2mJbI6" />
           </node>
         </node>
         <node concept="3KuuIt" id="2lm5WNlhxDd" role="3UVeDY" />
@@ -500,14 +490,12 @@
             <property role="TrG5h" value="InfoIcon" />
             <node concept="2mJbIq" id="5mvtLdU$3rw" role="2mJbI4">
               <ref role="3ncAEN" node="7QMGS97OI39" resolve="forms" />
-            </node>
-            <node concept="C4FCh" id="5mvtLdU$3ry" role="2mJbI5" />
-            <node concept="C4FCg" id="5mvtLdU$3r$" role="2mJbI6" />
-            <node concept="2mJlLh" id="5mvtLdU$3rA" role="28FbrT">
-              <node concept="3eDL7N" id="5mvtLdU$3rC" role="28FJ0P">
+              <node concept="3eDL7N" id="5mvtLdU$3rC" role="3n32fn">
                 <ref role="3eDL7M" node="2YeT3IBbXG$" resolve="image_circle" />
               </node>
             </node>
+            <node concept="C4FCh" id="5mvtLdU$3ry" role="2mJbI5" />
+            <node concept="C4FCg" id="5mvtLdU$3r$" role="2mJbI6" />
           </node>
         </node>
         <node concept="1i$ol" id="K_fAvR606B" role="3Vayhg">

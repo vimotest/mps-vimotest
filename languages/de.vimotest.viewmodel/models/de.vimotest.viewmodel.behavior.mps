@@ -1046,15 +1046,15 @@
               <ref role="3cqZAo" node="3pKiF2wNf5s" resolve="context" />
             </node>
             <node concept="2OqwBi" id="7WnLzoFBX1D" role="37wK5m">
-              <node concept="2OqwBi" id="7WnLzoFBX1E" role="2Oq$k0">
+              <node concept="2OqwBi" id="3lKMIJk7Op2" role="2Oq$k0">
                 <node concept="2OqwBi" id="7WnLzoFBX1F" role="2Oq$k0">
                   <node concept="13iPFW" id="7WnLzoFBX1G" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="7WnLzoFBX1H" role="2OqNvi">
-                    <ref role="3Tt5mk" to="at53:2YeT3IB8_b2" resolve="defaultImageFeature" />
+                  <node concept="3TrEf2" id="3lKMIJk7Ofn" role="2OqNvi">
+                    <ref role="3Tt5mk" to="at53:3pKiF2wNf4O" resolve="imageSourceFeature" />
                   </node>
                 </node>
-                <node concept="3TrEf2" id="7WnLzoFBX1I" role="2OqNvi">
-                  <ref role="3Tt5mk" to="at53:2YeT3IB81ge" />
+                <node concept="3TrEf2" id="3lKMIJk7O$C" role="2OqNvi">
+                  <ref role="3Tt5mk" to="at53:9CTo7lpcpn" resolve="defaultImage" />
                 </node>
               </node>
               <node concept="3TrEf2" id="7WnLzoFBX1J" role="2OqNvi">

@@ -2866,11 +2866,11 @@
                           </node>
                         </node>
                         <node concept="3TrEf2" id="7WnLzoFEXld" role="2OqNvi">
-                          <ref role="3Tt5mk" to="at53:2YeT3IB8_b2" resolve="defaultImage" />
+                          <ref role="3Tt5mk" to="at53:3pKiF2wNf4O" />
                         </node>
                       </node>
-                      <node concept="3TrEf2" id="7WnLzoFEXOd" role="2OqNvi">
-                        <ref role="3Tt5mk" to="at53:2YeT3IB81ge" resolve="ref" />
+                      <node concept="3TrEf2" id="3lKMIJke_5g" role="2OqNvi">
+                        <ref role="3Tt5mk" to="at53:9CTo7lpcpn" resolve="defaultImage" />
                       </node>
                     </node>
                     <node concept="3TrEf2" id="7WnLzoFEYH$" role="2OqNvi">

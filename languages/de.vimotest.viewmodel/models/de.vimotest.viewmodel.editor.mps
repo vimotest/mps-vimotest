@@ -996,10 +996,15 @@
         <node concept="3F0ifn" id="2YeT3IB8_Ew" role="3EZMnx">
           <property role="3F0ifm" value="default image:" />
         </node>
-        <node concept="2iRfu4" id="2YeT3IB8_EA" role="2iSdaV" />
-        <node concept="3F1sOY" id="2YeT3IB8_Ez" role="3EZMnx">
-          <ref role="1NtTu8" to="at53:2YeT3IB8_b2" resolve="defaultImageFeature" />
+        <node concept="1iCGBv" id="3lKMIJke_8x" role="3EZMnx">
+          <ref role="1NtTu8" to="at53:3pKiF2wNf4O" resolve="imageSourceFeature" />
+          <node concept="1sVBvm" id="3lKMIJke_8z" role="1sWHZn">
+            <node concept="3F1sOY" id="3lKMIJke_8B" role="2wV5jI">
+              <ref role="1NtTu8" to="at53:9CTo7lpcpn" resolve="defaultImage" />
+            </node>
+          </node>
         </node>
+        <node concept="2iRfu4" id="2YeT3IB8_EA" role="2iSdaV" />
       </node>
       <node concept="3F1sOY" id="3pKiF2wNf4X" role="3EZMnx">
         <ref role="1NtTu8" to="at53:3pKiF2wNf4P" resolve="enabledFeature" />
@@ -1185,20 +1190,6 @@
         <property role="1$x2rV" value="&lt;default&gt;" />
         <ref role="1NtTu8" to="at53:2Btob8oF1ub" resolve="height" />
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="2YeT3IB8dCD">
-    <property role="3GE5qa" value="widgets.image" />
-    <ref role="1XX52x" to="at53:3pKiF2wNhrx" resolve="ImageSource" />
-    <node concept="3EZMnI" id="2YeT3IB8iWL" role="2wV5jI">
-      <node concept="3F0ifn" id="2YeT3IB8iWP" role="3EZMnx">
-        <property role="3F0ifm" value="image source" />
-        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
-      </node>
-      <node concept="3F1sOY" id="2YeT3IB8iWS" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:2YeT3IB81ge" resolve="ref" />
-      </node>
-      <node concept="l2Vlx" id="2YeT3IB8iWO" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="2YeT3IBbXKt">

@@ -161,13 +161,14 @@
       <concept id="5213916851000129488" name="de.vimotest.viewmodel.structure.VisibilityFeature" flags="ng" index="C4FCg" />
       <concept id="5213916851000129489" name="de.vimotest.viewmodel.structure.EnabledFeature" flags="ng" index="C4FCh" />
       <concept id="5213916851000129514" name="de.vimotest.viewmodel.structure.CheckBoxWidget" flags="ng" index="C4FCE">
-        <property id="7278489671513390380" name="defaultText" index="1ITtVB" />
         <child id="5213916851000129515" name="checkedFeature" index="C4FCF" />
         <child id="5213916851000129516" name="visibilityFeature" index="C4FCG" />
         <child id="5213916851000129517" name="enabledFeature" index="C4FCH" />
         <child id="7278489671513126078" name="textFeature" index="1ISttP" />
       </concept>
-      <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6" />
+      <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6">
+        <property id="3850800795622718474" name="defaultText" index="3A$Jrx" />
+      </concept>
       <concept id="8882441622785832551" name="de.vimotest.viewmodel.structure.LabelWidget" flags="ng" index="V3ZfZ">
         <property id="6907313600556557305" name="defaultText" index="3mJ_rA" />
         <child id="8882441622785832552" name="textFeature" index="V3ZfK" />
@@ -217,7 +218,6 @@
     <node concept="103ZXB" id="F907haLUeE" role="103ZXF">
       <node concept="C4FCE" id="6vtOLtwdT_M" role="103ZUC">
         <property role="TrG5h" value="MyFlagWithLabel" />
-        <property role="1ITtVB" value="With Label" />
         <node concept="C4FCf" id="6vtOLtwdT_N" role="C4FCF" />
         <node concept="C4FCg" id="6vtOLtwdT_O" role="C4FCG">
           <property role="2VM7R0" value="true" />
@@ -227,6 +227,7 @@
         </node>
         <node concept="V3Zf6" id="6k2oWGbVooO" role="1ISttP">
           <property role="2VM7R0" value="true" />
+          <property role="3A$Jrx" value="With Label" />
         </node>
       </node>
       <node concept="C4FCE" id="6k2oWGbVooQ" role="103ZUC">
@@ -384,12 +385,12 @@
         <node concept="2nep4R" id="44HS8_5zid$" role="2MLTWm">
           <node concept="C4FCE" id="44HS8_5zidM" role="2nerJI">
             <property role="TrG5h" value="Header" />
-            <property role="1ITtVB" value="test" />
             <node concept="C4FCf" id="44HS8_5zidR" role="C4FCF" />
             <node concept="C4FCg" id="44HS8_5zidW" role="C4FCG" />
             <node concept="C4FCh" id="44HS8_5zie1" role="C4FCH" />
             <node concept="V3Zf6" id="44HS8_5zie6" role="1ISttP">
               <property role="2VM7R0" value="true" />
+              <property role="3A$Jrx" value="test" />
             </node>
           </node>
         </node>
@@ -618,7 +619,17 @@
         <node concept="30nzp_" id="3lKMIJjJS6e" role="DUiSb">
           <ref role="30nzpS" node="3lKMIJjJS64" resolve="MyOptionsWithFreeText" />
           <node concept="7cNBp" id="3lKMIJjJS6g" role="30nDbQ">
-            <node concept="7cN$v" id="3lKMIJjJS6h" role="7cNBo" />
+            <node concept="7cN$v" id="3lKMIJjJS6h" role="7cNBo">
+              <node concept="2gaR_a" id="3lKMIJjRCPL" role="LTUL5">
+                <property role="TrG5h" value="E1" />
+              </node>
+              <node concept="2gaR_a" id="3lKMIJjRCPM" role="LTUL5">
+                <property role="TrG5h" value="E2" />
+              </node>
+              <node concept="2gaR_a" id="3lKMIJjRCPN" role="LTUL5">
+                <property role="TrG5h" value="E3" />
+              </node>
+            </node>
             <node concept="7cN$h" id="3lKMIJjJS6i" role="7cNBo" />
             <node concept="V3Zdv" id="3lKMIJjJS6j" role="7cNBo">
               <property role="3egigc" value="FreeTextExpect" />

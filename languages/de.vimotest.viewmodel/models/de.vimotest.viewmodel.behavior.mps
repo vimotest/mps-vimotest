@@ -446,10 +446,15 @@
               <node concept="1pGfFk" id="5L3DBX$l7fH" role="2ShVmc">
                 <property role="373rjd" value="true" />
                 <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,boolean,boolean)" resolve="PropertyAccessor" />
-                <node concept="13iPFW" id="5L3DBX$l7fI" role="37wK5m" />
+                <node concept="2OqwBi" id="3lKMIJjS_uc" role="37wK5m">
+                  <node concept="13iPFW" id="5L3DBX$l7fI" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="3lKMIJjS_Mp" role="2OqNvi">
+                    <ref role="3Tt5mk" to="at53:4xrzs1wijvF" resolve="checkedFeature" />
+                  </node>
+                </node>
                 <node concept="355D3s" id="5L3DBX$l7fJ" role="37wK5m">
-                  <ref role="355D3t" to="at53:F907haMeIO" resolve="CheckBoxWidget" />
-                  <ref role="355D3u" to="at53:3CJ09vZEUcl" resolve="defaultIsChecked" />
+                  <ref role="355D3t" to="at53:4SDJcZBNVBS" resolve="CheckedFeature" />
+                  <ref role="355D3u" to="at53:3lKMIJjSzKb" resolve="defaultIsChecked" />
                 </node>
                 <node concept="3clFbT" id="5L3DBX$l7fK" role="37wK5m" />
                 <node concept="3clFbT" id="5L3DBX$l7fL" role="37wK5m" />
@@ -474,10 +479,15 @@
                   <node concept="1pGfFk" id="6k2oWGbTUGb" role="2ShVmc">
                     <property role="373rjd" value="true" />
                     <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,boolean,boolean)" resolve="PropertyAccessor" />
-                    <node concept="13iPFW" id="6k2oWGbTUGc" role="37wK5m" />
+                    <node concept="2OqwBi" id="3lKMIJjSAap" role="37wK5m">
+                      <node concept="13iPFW" id="6k2oWGbTUGc" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="3lKMIJjSAuD" role="2OqNvi">
+                        <ref role="3Tt5mk" to="at53:6k2oWGbSViY" resolve="textFeature" />
+                      </node>
+                    </node>
                     <node concept="355D3s" id="6k2oWGbTUGd" role="37wK5m">
-                      <ref role="355D3t" to="at53:F907haMeIO" resolve="CheckBoxWidget" />
-                      <ref role="355D3u" to="at53:6k2oWGbTVOG" resolve="defaultText" />
+                      <ref role="355D3t" to="at53:7H4Lpx0iNpu" resolve="TextFeature" />
+                      <ref role="355D3u" to="at53:3lKMIJjSzKa" resolve="defaultText" />
                     </node>
                     <node concept="3clFbT" id="6k2oWGbTUGe" role="37wK5m" />
                     <node concept="3clFbT" id="6k2oWGbTUGf" role="37wK5m" />

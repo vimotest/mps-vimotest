@@ -402,22 +402,6 @@
   <node concept="312cEu" id="29i_hh2lsQO">
     <property role="TrG5h" value="EditorCell_CheckBox" />
     <property role="3GE5qa" value="checkbox" />
-    <node concept="Wx3nA" id="7szUFELGYVP" role="jymVt">
-      <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="BORDER_COLOR" />
-      <node concept="3Tm6S6" id="7szUFELGYVM" role="1B3o_S" />
-      <node concept="3uibUv" id="7szUFELGYVN" role="1tU5fm">
-        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
-      </node>
-      <node concept="2YIFZM" id="2WI5qdsu9_" role="33vP2m">
-        <ref role="37wK5l" to="lzb2:~JBColor.namedColor(java.lang.String)" resolve="namedColor" />
-        <ref role="1Pybhc" to="lzb2:~JBColor" resolve="JBColor" />
-        <node concept="Xl_RD" id="2WI5qdswUT" role="37wK5m">
-          <property role="Xl_RC" value="Component.borderColor" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="5k8jvm4DRyC" role="jymVt" />
     <node concept="312cEg" id="4g2H4r3Vcal" role="jymVt">
       <property role="TrG5h" value="modelAccessor" />
       <node concept="3Tm6S6" id="4g2H4r3Vcam" role="1B3o_S" />
@@ -7503,9 +7487,6 @@
             <node concept="3cpWsn" id="44HS8_62E97" role="3cpWs9">
               <property role="TrG5h" value="height" />
               <node concept="10Oyi0" id="44HS8_62E99" role="1tU5fm" />
-              <node concept="3cmrfG" id="44HS8_62E9a" role="33vP2m">
-                <property role="3cmrfH" value="10" />
-              </node>
             </node>
           </node>
           <node concept="3cpWs8" id="44HS8_62E9c" role="3cqZAp">
@@ -7523,37 +7504,27 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbJ" id="44HS8_62E9g" role="3cqZAp">
-            <node concept="3y3z36" id="44HS8_62E9h" role="3clFbw">
-              <node concept="37vLTw" id="44HS8_62E9i" role="3uHU7B">
+          <node concept="3clFbF" id="44HS8_62E9m" role="3cqZAp">
+            <node concept="2OqwBi" id="44HS8_65ica" role="3clFbG">
+              <node concept="37vLTw" id="44HS8_63mBr" role="2Oq$k0">
                 <ref role="3cqZAo" node="44HS8_62E9b" resolve="label" />
               </node>
-              <node concept="10Nm6u" id="44HS8_62E9j" role="3uHU7w" />
-            </node>
-            <node concept="3clFbS" id="44HS8_62E9l" role="3clFbx">
-              <node concept="3clFbF" id="44HS8_62E9m" role="3cqZAp">
-                <node concept="2OqwBi" id="44HS8_65ica" role="3clFbG">
-                  <node concept="37vLTw" id="44HS8_63mBr" role="2Oq$k0">
-                    <ref role="3cqZAo" node="44HS8_62E9b" resolve="label" />
-                  </node>
-                  <node concept="liA8E" id="44HS8_65icb" role="2OqNvi">
-                    <ref role="37wK5l" to="f4zo:~EditorCell.relayout()" resolve="relayout" />
-                  </node>
-                </node>
+              <node concept="liA8E" id="44HS8_65icb" role="2OqNvi">
+                <ref role="37wK5l" to="f4zo:~EditorCell.relayout()" resolve="relayout" />
               </node>
-              <node concept="3clFbF" id="44HS8_62E9o" role="3cqZAp">
-                <node concept="37vLTI" id="44HS8_62E9p" role="3clFbG">
-                  <node concept="37vLTw" id="44HS8_62E9q" role="37vLTJ">
-                    <ref role="3cqZAo" node="44HS8_62E97" resolve="height" />
-                  </node>
-                  <node concept="2OqwBi" id="44HS8_65ghr" role="37vLTx">
-                    <node concept="37vLTw" id="44HS8_63mL7" role="2Oq$k0">
-                      <ref role="3cqZAo" node="44HS8_62E9b" resolve="label" />
-                    </node>
-                    <node concept="liA8E" id="44HS8_65ghs" role="2OqNvi">
-                      <ref role="37wK5l" to="f4zo:~EditorCell.getHeight()" resolve="getHeight" />
-                    </node>
-                  </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="44HS8_62E9o" role="3cqZAp">
+            <node concept="37vLTI" id="44HS8_62E9p" role="3clFbG">
+              <node concept="37vLTw" id="44HS8_62E9q" role="37vLTJ">
+                <ref role="3cqZAo" node="44HS8_62E97" resolve="height" />
+              </node>
+              <node concept="2OqwBi" id="44HS8_65ghr" role="37vLTx">
+                <node concept="37vLTw" id="44HS8_63mL7" role="2Oq$k0">
+                  <ref role="3cqZAo" node="44HS8_62E9b" resolve="label" />
+                </node>
+                <node concept="liA8E" id="44HS8_65ghs" role="2OqNvi">
+                  <ref role="37wK5l" to="f4zo:~EditorCell.getHeight()" resolve="getHeight" />
                 </node>
               </node>
             </node>

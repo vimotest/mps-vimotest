@@ -7106,6 +7106,86 @@
       <ref role="13i0hy" node="3CJ09vZMLMB" />
       <node concept="3Tm1VV" id="44HS8_67HA2" role="1B3o_S" />
       <node concept="3clFbS" id="44HS8_67HA3" role="3clF47">
+        <node concept="3cpWs8" id="3lKMIJjJUYc" role="3cqZAp">
+          <node concept="3cpWsn" id="3lKMIJjJUYd" role="3cpWs9">
+            <property role="TrG5h" value="freeTextCheckValue" />
+            <node concept="3Tqbb2" id="3lKMIJjJUWS" role="1tU5fm">
+              <ref role="ehGHo" to="53m0:7H4Lpx0iNr7" resolve="TextCheckValue" />
+            </node>
+            <node concept="2OqwBi" id="3lKMIJjJUYe" role="33vP2m">
+              <node concept="2OqwBi" id="3lKMIJjJUYf" role="2Oq$k0">
+                <node concept="2OqwBi" id="3lKMIJjJUYg" role="2Oq$k0">
+                  <node concept="13iPFW" id="3lKMIJjJUYh" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="3lKMIJjJUYi" role="2OqNvi">
+                    <ref role="3TtcxE" to="53m0:44HS8_67H_h" resolve="checks" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="3lKMIJjJUYj" role="2OqNvi">
+                  <node concept="chp4Y" id="3lKMIJjJUYk" role="v3oSu">
+                    <ref role="cht4Q" to="53m0:7H4Lpx0iNr7" resolve="TextCheckValue" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="3lKMIJjJUYl" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3lKMIJjJVN5" role="3cqZAp">
+          <node concept="3clFbS" id="3lKMIJjJVN7" role="3clFbx">
+            <node concept="3cpWs8" id="3lKMIJjK1Xs" role="3cqZAp">
+              <node concept="3cpWsn" id="3lKMIJjK1Xt" role="3cpWs9">
+                <property role="TrG5h" value="textPropertyAccessor" />
+                <node concept="3uibUv" id="3lKMIJjK1_L" role="1tU5fm">
+                  <ref role="3uigEE" to="g51k:~PropertyAccessor" resolve="PropertyAccessor" />
+                </node>
+                <node concept="2ShNRf" id="3lKMIJjK1Xu" role="33vP2m">
+                  <node concept="1pGfFk" id="3lKMIJjK1Xv" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,boolean,boolean)" resolve="PropertyAccessor" />
+                    <node concept="37vLTw" id="3lKMIJjK1Xw" role="37wK5m">
+                      <ref role="3cqZAo" node="3lKMIJjJUYd" resolve="freeTextCheckValue" />
+                    </node>
+                    <node concept="355D3s" id="3lKMIJjK1Xx" role="37wK5m">
+                      <ref role="355D3t" to="53m0:7H4Lpx0iNr7" resolve="TextCheckValue" />
+                      <ref role="355D3u" to="53m0:6NwBQMyCrHw" resolve="expectedText" />
+                    </node>
+                    <node concept="3clFbT" id="3lKMIJjK1Xy" role="37wK5m" />
+                    <node concept="3clFbT" id="3lKMIJjK1Xz" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="3lKMIJjJXAO" role="3cqZAp">
+              <node concept="2OqwBi" id="3lKMIJjJXEX" role="3cqZAk">
+                <node concept="35c_gC" id="3lKMIJjJXEY" role="2Oq$k0">
+                  <ref role="35c_gD" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
+                </node>
+                <node concept="2qgKlT" id="3lKMIJjJXEZ" role="2OqNvi">
+                  <ref role="37wK5l" to="nrs2:5x13l0P7cTF" resolve="makeComboBoxEditorCell" />
+                  <node concept="37vLTw" id="3lKMIJjJXF0" role="37wK5m">
+                    <ref role="3cqZAo" node="44HS8_67HAh" resolve="context" />
+                  </node>
+                  <node concept="37vLTw" id="3lKMIJjK2dH" role="37wK5m">
+                    <ref role="3cqZAo" node="3lKMIJjK1Xt" resolve="textPropertyAccessor" />
+                  </node>
+                  <node concept="13iPFW" id="3lKMIJjJXF2" role="37wK5m" />
+                  <node concept="37vLTw" id="3lKMIJjK00Y" role="37wK5m">
+                    <ref role="3cqZAo" node="3lKMIJjJUYd" resolve="freeTextCheckValue" />
+                  </node>
+                  <node concept="Xl_RD" id="3lKMIJjJXFb" role="37wK5m">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3lKMIJjJWl3" role="3clFbw">
+            <node concept="37vLTw" id="3lKMIJjJW3B" role="2Oq$k0">
+              <ref role="3cqZAo" node="3lKMIJjJUYd" resolve="freeTextCheckValue" />
+            </node>
+            <node concept="3x8VRR" id="3lKMIJjJX4n" role="2OqNvi" />
+          </node>
+        </node>
         <node concept="3clFbF" id="7waZUcv1SsU" role="3cqZAp">
           <node concept="2OqwBi" id="7waZUcv1SsW" role="3clFbG">
             <node concept="35c_gC" id="7waZUcv1SsX" role="2Oq$k0">
@@ -7596,61 +7676,74 @@
       <ref role="13i0hy" node="44HS8_67H_a" resolve="applyOnComboBox" />
       <node concept="3Tm1VV" id="44HS8_6tdcG" role="1B3o_S" />
       <node concept="3clFbS" id="44HS8_6tdcJ" role="3clF47">
-        <node concept="3cpWs8" id="7waZUcv25sb" role="3cqZAp">
-          <node concept="3cpWsn" id="7waZUcv25sc" role="3cpWs9">
-            <property role="TrG5h" value="comboBoxCell" />
-            <node concept="3uibUv" id="7waZUcv25sa" role="1tU5fm">
-              <ref role="3uigEE" to="5xyw:44HS8_62E7R" resolve="EditorCell_ComboBox" />
-            </node>
-            <node concept="0kSF2" id="7waZUcv25sd" role="33vP2m">
-              <node concept="3uibUv" id="7waZUcv25se" role="0kSFW">
-                <ref role="3uigEE" to="5xyw:44HS8_62E7R" resolve="EditorCell_ComboBox" />
-              </node>
-              <node concept="37vLTw" id="7waZUcv25sf" role="0kSFX">
-                <ref role="3cqZAo" node="44HS8_6tdcK" resolve="comboBoxEditorCell" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="7waZUcv2gYD" role="3cqZAp">
-          <node concept="3cpWsn" id="7waZUcv2gYE" role="3cpWs9">
-            <property role="TrG5h" value="newLabelCell" />
-            <node concept="3uibUv" id="7waZUcv2gYy" role="1tU5fm">
-              <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
-            </node>
-            <node concept="2OqwBi" id="7waZUcv2gYF" role="33vP2m">
-              <node concept="35c_gC" id="7waZUcv2gYG" role="2Oq$k0">
-                <ref role="35c_gD" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
-              </node>
-              <node concept="2qgKlT" id="7waZUcv2gYH" role="2OqNvi">
-                <ref role="37wK5l" to="nrs2:7waZUcv2eGv" resolve="makeComboBoxLabelCellFromEditorComponent" />
-                <node concept="2OqwBi" id="7waZUcv2slW" role="37wK5m">
-                  <node concept="37vLTw" id="7waZUcv2sdK" role="2Oq$k0">
+        <node concept="3clFbJ" id="3lKMIJjOqjZ" role="3cqZAp">
+          <node concept="3clFbS" id="3lKMIJjOqk1" role="3clFbx">
+            <node concept="3cpWs8" id="7waZUcv25sb" role="3cqZAp">
+              <node concept="3cpWsn" id="7waZUcv25sc" role="3cpWs9">
+                <property role="TrG5h" value="comboBoxCell" />
+                <node concept="3uibUv" id="7waZUcv25sa" role="1tU5fm">
+                  <ref role="3uigEE" to="5xyw:44HS8_62E7R" resolve="EditorCell_ComboBox" />
+                </node>
+                <node concept="0kSF2" id="7waZUcv25sd" role="33vP2m">
+                  <node concept="3uibUv" id="7waZUcv25se" role="0kSFW">
+                    <ref role="3uigEE" to="5xyw:44HS8_62E7R" resolve="EditorCell_ComboBox" />
+                  </node>
+                  <node concept="37vLTw" id="7waZUcv25sf" role="0kSFX">
                     <ref role="3cqZAo" node="44HS8_6tdcK" resolve="comboBoxEditorCell" />
                   </node>
-                  <node concept="liA8E" id="7waZUcv2ssL" role="2OqNvi">
-                    <ref role="37wK5l" to="f4zo:~EditorCell.getContext()" resolve="getContext" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="7waZUcv2gYD" role="3cqZAp">
+              <node concept="3cpWsn" id="7waZUcv2gYE" role="3cpWs9">
+                <property role="TrG5h" value="newLabelCell" />
+                <node concept="3uibUv" id="7waZUcv2gYy" role="1tU5fm">
+                  <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+                </node>
+                <node concept="2OqwBi" id="7waZUcv2gYF" role="33vP2m">
+                  <node concept="35c_gC" id="7waZUcv2gYG" role="2Oq$k0">
+                    <ref role="35c_gD" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
+                  </node>
+                  <node concept="2qgKlT" id="7waZUcv2gYH" role="2OqNvi">
+                    <ref role="37wK5l" to="nrs2:7waZUcv2eGv" resolve="makeComboBoxLabelCellFromEditorComponent" />
+                    <node concept="2OqwBi" id="7waZUcv2slW" role="37wK5m">
+                      <node concept="37vLTw" id="7waZUcv2sdK" role="2Oq$k0">
+                        <ref role="3cqZAo" node="44HS8_6tdcK" resolve="comboBoxEditorCell" />
+                      </node>
+                      <node concept="liA8E" id="7waZUcv2ssL" role="2OqNvi">
+                        <ref role="37wK5l" to="f4zo:~EditorCell.getContext()" resolve="getContext" />
+                      </node>
+                    </node>
+                    <node concept="13iPFW" id="7waZUcv2gYI" role="37wK5m" />
+                    <node concept="Xl_RD" id="7waZUcv2gYJ" role="37wK5m">
+                      <property role="Xl_RC" value="de.vimotest.testing.editor.SelectedEntryCheckValue_selectedEntry_EC" />
+                    </node>
                   </node>
                 </node>
-                <node concept="13iPFW" id="7waZUcv2gYI" role="37wK5m" />
-                <node concept="Xl_RD" id="7waZUcv2gYJ" role="37wK5m">
-                  <property role="Xl_RC" value="de.vimotest.testing.editor.SelectedEntryCheckValue_selectedEntry_EC" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="7waZUcv2gYO" role="3cqZAp">
+              <node concept="2OqwBi" id="7waZUcv2iwY" role="3clFbG">
+                <node concept="37vLTw" id="7waZUcv2gYM" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7waZUcv25sc" resolve="comboBoxCell" />
+                </node>
+                <node concept="liA8E" id="7waZUcv2jzY" role="2OqNvi">
+                  <ref role="37wK5l" to="5xyw:7waZUcv2bMr" resolve="updateLabelCell" />
+                  <node concept="37vLTw" id="7waZUcv2j$0" role="37wK5m">
+                    <ref role="3cqZAo" node="7waZUcv2gYE" resolve="newLabelCell" />
+                  </node>
                 </node>
               </node>
             </node>
           </node>
-        </node>
-        <node concept="3clFbF" id="7waZUcv2gYO" role="3cqZAp">
-          <node concept="2OqwBi" id="7waZUcv2iwY" role="3clFbG">
-            <node concept="37vLTw" id="7waZUcv2gYM" role="2Oq$k0">
-              <ref role="3cqZAo" node="7waZUcv25sc" resolve="comboBoxCell" />
-            </node>
-            <node concept="liA8E" id="7waZUcv2jzY" role="2OqNvi">
-              <ref role="37wK5l" to="5xyw:7waZUcv2bMr" resolve="updateLabelCell" />
-              <node concept="37vLTw" id="7waZUcv2j$0" role="37wK5m">
-                <ref role="3cqZAo" node="7waZUcv2gYE" resolve="newLabelCell" />
+          <node concept="2OqwBi" id="3lKMIJjOrv9" role="3clFbw">
+            <node concept="2OqwBi" id="3lKMIJjOqzk" role="2Oq$k0">
+              <node concept="13iPFW" id="3lKMIJjOqmp" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3lKMIJjOqLb" role="2OqNvi">
+                <ref role="3Tt5mk" to="53m0:7waZUcv25as" resolve="selectedEntry" />
               </node>
             </node>
+            <node concept="3x8VRR" id="3lKMIJjOrRy" role="2OqNvi" />
           </node>
         </node>
       </node>

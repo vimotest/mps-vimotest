@@ -124,6 +124,7 @@
         <property id="5555266676524595291" name="supported" index="2VM7R0" />
       </concept>
       <concept id="4696656866608863471" name="de.vimotest.viewmodel.structure.ComboBoxEntriesFeature" flags="ng" index="7cNxA">
+        <property id="5655792802101418340" name="defaultText" index="M2z3M" />
         <child id="5655792802101418338" name="defaultEntries" index="M2z3O" />
       </concept>
       <concept id="4696656866608863472" name="de.vimotest.viewmodel.structure.SelectedEntryFeature" flags="ng" index="7cNxT">
@@ -290,6 +291,30 @@
           <property role="2VM7R0" value="true" />
         </node>
         <node concept="C4FCh" id="4TXqppWx0zN" role="7cNAf">
+          <property role="2VM7R0" value="true" />
+        </node>
+      </node>
+      <node concept="7cNA8" id="3lKMIJjJS64" role="103ZUC">
+        <property role="TrG5h" value="MyOptionsWithFreeText" />
+        <node concept="7cNxA" id="3lKMIJjJS65" role="7cNAb">
+          <property role="M2z3M" value="FreeText" />
+          <node concept="2gaR_a" id="3lKMIJjJS66" role="M2z3O">
+            <property role="TrG5h" value="A" />
+          </node>
+          <node concept="2gaR_a" id="3lKMIJjJS67" role="M2z3O">
+            <property role="TrG5h" value="B" />
+          </node>
+        </node>
+        <node concept="7cNxT" id="3lKMIJjJS68" role="7cNAa">
+          <ref role="LYRLJ" node="3lKMIJjJS66" resolve="A" />
+        </node>
+        <node concept="V3Zf6" id="3lKMIJjJS69" role="7cNAd">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCg" id="3lKMIJjJS6a" role="7cNAc">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCh" id="3lKMIJjJS6b" role="7cNAf">
           <property role="2VM7R0" value="true" />
         </node>
       </node>
@@ -585,6 +610,18 @@
             </node>
             <node concept="35STUn" id="5ZbqeTHyJdm" role="7cNBo">
               <property role="3XJem9" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="DUd2R" id="3lKMIJjJS6c" role="DUd56">
+        <node concept="30nzp_" id="3lKMIJjJS6e" role="DUiSb">
+          <ref role="30nzpS" node="3lKMIJjJS64" resolve="MyOptionsWithFreeText" />
+          <node concept="7cNBp" id="3lKMIJjJS6g" role="30nDbQ">
+            <node concept="7cN$v" id="3lKMIJjJS6h" role="7cNBo" />
+            <node concept="7cN$h" id="3lKMIJjJS6i" role="7cNBo" />
+            <node concept="V3Zdv" id="3lKMIJjJS6j" role="7cNBo">
+              <property role="3egigc" value="FreeTextExpect" />
             </node>
           </node>
         </node>

@@ -170,7 +170,6 @@
         <property id="3850800795622718474" name="defaultText" index="3A$Jrx" />
       </concept>
       <concept id="8882441622785832551" name="de.vimotest.viewmodel.structure.LabelWidget" flags="ng" index="V3ZfZ">
-        <property id="6907313600556557305" name="defaultText" index="3mJ_rA" />
         <child id="8882441622785832552" name="textFeature" index="V3ZfK" />
         <child id="8882441622785832553" name="enabledFeature" index="V3ZfL" />
         <child id="8882441622785832554" name="visibilityFeature" index="V3ZfM" />
@@ -239,8 +238,9 @@
       </node>
       <node concept="V3ZfZ" id="7H4Lpx0kZbn" role="103ZUC">
         <property role="TrG5h" value="MyLabel" />
-        <property role="3mJ_rA" value="My Text" />
-        <node concept="V3Zf6" id="7H4Lpx0kZbp" role="V3ZfK" />
+        <node concept="V3Zf6" id="7H4Lpx0kZbp" role="V3ZfK">
+          <property role="3A$Jrx" value="My Text" />
+        </node>
         <node concept="C4FCh" id="7H4Lpx0kZbr" role="V3ZfL" />
         <node concept="C4FCg" id="7H4Lpx0kZbt" role="V3ZfM" />
       </node>
@@ -334,9 +334,9 @@
         <node concept="2nep4R" id="1MiWmuImW6r" role="2MLTWm">
           <node concept="V3ZfZ" id="7WgsBLYysIc" role="2nerJI">
             <property role="TrG5h" value="My Text" />
-            <property role="3mJ_rA" value="Inner Value" />
             <node concept="V3Zf6" id="7WgsBLYysIm" role="V3ZfK">
               <property role="2VM7R0" value="true" />
+              <property role="3A$Jrx" value="Inner Value" />
             </node>
             <node concept="C4FCh" id="7WgsBLYysIn" role="V3ZfL">
               <property role="2VM7R0" value="true" />
@@ -419,8 +419,9 @@
         <node concept="2nep4R" id="4Ips5F1jdcC" role="2azj8S">
           <node concept="V3ZfZ" id="4Ips5F1jdcD" role="2nerJI">
             <property role="TrG5h" value="Name" />
-            <property role="3mJ_rA" value="My Name" />
-            <node concept="V3Zf6" id="4Ips5F1jdcE" role="V3ZfK" />
+            <node concept="V3Zf6" id="4Ips5F1jdcE" role="V3ZfK">
+              <property role="3A$Jrx" value="My Name" />
+            </node>
             <node concept="C4FCh" id="4Ips5F1jdcF" role="V3ZfL" />
             <node concept="C4FCg" id="4Ips5F1jdcG" role="V3ZfM" />
           </node>
@@ -428,8 +429,9 @@
         <node concept="2nep4R" id="7N9Xs9XU9Xf" role="2azj8S">
           <node concept="V3ZfZ" id="7N9Xs9XU9Xg" role="2nerJI">
             <property role="TrG5h" value="Description" />
-            <property role="3mJ_rA" value="My Descr." />
-            <node concept="V3Zf6" id="7N9Xs9XU9Xh" role="V3ZfK" />
+            <node concept="V3Zf6" id="7N9Xs9XU9Xh" role="V3ZfK">
+              <property role="3A$Jrx" value="My Descr." />
+            </node>
             <node concept="C4FCh" id="7N9Xs9XU9Xi" role="V3ZfL" />
             <node concept="C4FCg" id="7N9Xs9XU9Xj" role="V3ZfM" />
           </node>
@@ -474,8 +476,9 @@
           <property role="2neoUh" value="Name" />
           <node concept="V3ZfZ" id="7uPLQmVU7r" role="2nerJI">
             <property role="TrG5h" value="Name" />
-            <property role="3mJ_rA" value="My Name" />
-            <node concept="V3Zf6" id="7uPLQmVU7t" role="V3ZfK" />
+            <node concept="V3Zf6" id="7uPLQmVU7t" role="V3ZfK">
+              <property role="3A$Jrx" value="My Name" />
+            </node>
             <node concept="C4FCh" id="7uPLQmVU7v" role="V3ZfL" />
             <node concept="C4FCg" id="7uPLQmVU7x" role="V3ZfM" />
           </node>
@@ -484,8 +487,9 @@
           <property role="2neoUh" value="Description" />
           <node concept="V3ZfZ" id="7uPLQmVU7_" role="2nerJI">
             <property role="TrG5h" value="Description" />
-            <property role="3mJ_rA" value="My Descr." />
-            <node concept="V3Zf6" id="7uPLQmVU7B" role="V3ZfK" />
+            <node concept="V3Zf6" id="7uPLQmVU7B" role="V3ZfK">
+              <property role="3A$Jrx" value="My Descr." />
+            </node>
             <node concept="C4FCh" id="7uPLQmVU7D" role="V3ZfL" />
             <node concept="C4FCg" id="7uPLQmVU7F" role="V3ZfM" />
           </node>

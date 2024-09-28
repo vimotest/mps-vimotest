@@ -863,10 +863,15 @@
               <node concept="1pGfFk" id="5ZrHhY9pwX6" role="2ShVmc">
                 <property role="373rjd" value="true" />
                 <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,boolean,boolean)" resolve="PropertyAccessor" />
-                <node concept="13iPFW" id="5ZrHhY9pwX7" role="37wK5m" />
+                <node concept="2OqwBi" id="3lKMIJk28ri" role="37wK5m">
+                  <node concept="13iPFW" id="5ZrHhY9pwX7" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="3lKMIJk28Fv" role="2OqNvi">
+                    <ref role="3Tt5mk" to="at53:7H4Lpx0iNpC" resolve="textFeature" />
+                  </node>
+                </node>
                 <node concept="355D3s" id="5ZrHhY9pwX8" role="37wK5m">
-                  <ref role="355D3t" to="at53:7H4Lpx0iNpB" resolve="LabelWidget" />
-                  <ref role="355D3u" to="at53:5ZrHhY9pufT" resolve="defaultText" />
+                  <ref role="355D3t" to="at53:7H4Lpx0iNpu" resolve="TextFeature" />
+                  <ref role="355D3u" to="at53:3lKMIJjSzKa" resolve="defaultText" />
                 </node>
                 <node concept="3clFbT" id="5ZrHhY9pwX9" role="37wK5m" />
                 <node concept="3clFbT" id="5ZrHhY9pwXa" role="37wK5m" />

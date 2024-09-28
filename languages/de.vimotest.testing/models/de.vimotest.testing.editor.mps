@@ -351,6 +351,7 @@
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="7776141288922801652" name="jetbrains.mps.lang.actions.structure.NF_Concept_NewInstance" flags="nn" index="q_SaT" />
+      <concept id="767145758118872833" name="jetbrains.mps.lang.actions.structure.NF_LinkList_AddNewChildOperation" flags="nn" index="2DeJg1" />
       <concept id="767145758118872830" name="jetbrains.mps.lang.actions.structure.NF_Link_SetNewChildOperation" flags="nn" index="2DeJnY" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
@@ -1233,7 +1234,7 @@
   </node>
   <node concept="PKFIW" id="6I6OCWxYiwe">
     <property role="TrG5h" value="CheckBoxCheck_Inspector_Checks_EC" />
-    <property role="3GE5qa" value="test.assert.checkbox" />
+    <property role="3GE5qa" value="test.assert.widgets.checkbox" />
     <ref role="1XX52x" to="53m0:69Ym88BeFj9" resolve="CheckBoxCheck" />
     <node concept="3F2HdR" id="6I6OCWxYiwf" role="2wV5jI">
       <ref role="1NtTu8" to="53m0:4xrzs1wijw7" resolve="checks" />
@@ -1321,7 +1322,7 @@
   </node>
   <node concept="PKFIW" id="7H4Lpx0iNqw">
     <property role="TrG5h" value="LabelCheck_Inspector_Checks_EC" />
-    <property role="3GE5qa" value="test.assert.label" />
+    <property role="3GE5qa" value="test.assert.widgets.standard" />
     <ref role="1XX52x" to="53m0:7H4Lpx0iNqu" resolve="LabelCheck" />
     <node concept="1PE4EZ" id="7H4Lpx0iNqy" role="1PM95z">
       <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_EC" />
@@ -1332,7 +1333,7 @@
     </node>
   </node>
   <node concept="22mcaB" id="2_MKLxJc$ki">
-    <property role="3GE5qa" value="test.assert.checkbox" />
+    <property role="3GE5qa" value="test.assert.widgets.checkbox" />
     <ref role="aqKnT" to="53m0:69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
     <node concept="22hDWj" id="2_MKLxJc$kj" role="22hAXT" />
     <node concept="2VfDsV" id="2_MKLxJc$kl" role="3ft7WO">
@@ -1425,7 +1426,7 @@
   </node>
   <node concept="22mcaB" id="2_MKLxJnKdb">
     <property role="TrG5h" value="LabelCheck_Inspector_EC" />
-    <property role="3GE5qa" value="test.assert.label" />
+    <property role="3GE5qa" value="test.assert.widgets.standard" />
     <ref role="aqKnT" to="53m0:7H4Lpx0iNqj" resolve="ILabelCheckValue" />
     <node concept="22hDWj" id="2_MKLxJnKdc" role="22hAXT" />
     <node concept="2VfDsV" id="2_MKLxJnKdd" role="3ft7WO">
@@ -1461,7 +1462,7 @@
   </node>
   <node concept="22mcaB" id="3pKiF2wNf5x">
     <property role="TrG5h" value="ImageCheck_Inspector_EC" />
-    <property role="3GE5qa" value="test.assert.image" />
+    <property role="3GE5qa" value="test.assert.widgets.image" />
     <ref role="aqKnT" to="53m0:3pKiF2wNf5v" resolve="IImageCheckValue" />
     <node concept="22hDWj" id="3pKiF2wNf5y" role="22hAXT" />
     <node concept="2VfDsV" id="3pKiF2wNf5z" role="3ft7WO">
@@ -1484,7 +1485,7 @@
   </node>
   <node concept="PKFIW" id="3pKiF2wNf5R">
     <property role="TrG5h" value="ImageCheck_Inspector_Checks_EC" />
-    <property role="3GE5qa" value="test.assert.image" />
+    <property role="3GE5qa" value="test.assert.widgets.image" />
     <ref role="1XX52x" to="53m0:3pKiF2wNf5P" resolve="ImageCheck" />
     <node concept="1PE4EZ" id="3pKiF2wNf5T" role="1PM95z">
       <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_EC" />
@@ -1509,7 +1510,7 @@
   </node>
   <node concept="22mcaB" id="7WgsBLYmziu">
     <property role="TrG5h" value="ListViewCheck_Inspector_EC" />
-    <property role="3GE5qa" value="test.assert.structures.listview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.listview" />
     <ref role="aqKnT" to="53m0:7WgsBLYmzis" resolve="IListViewCheckValue" />
     <node concept="22hDWj" id="7WgsBLYmziv" role="22hAXT" />
     <node concept="2VfDsV" id="7WgsBLYmziw" role="3ft7WO">
@@ -1532,7 +1533,7 @@
   </node>
   <node concept="PKFIW" id="7WgsBLYmziO">
     <property role="TrG5h" value="ListViewCheck_Inspector_Checks_EC" />
-    <property role="3GE5qa" value="test.assert.structures.listview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.listview" />
     <ref role="1XX52x" to="53m0:7WgsBLYmziM" resolve="ListViewCheck" />
     <node concept="1PE4EZ" id="7WgsBLYmziQ" role="1PM95z">
       <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_EC" />
@@ -1715,7 +1716,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="708i5MC1mYv">
-    <property role="3GE5qa" value="test.assert.structures.listview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.listview" />
     <ref role="1XX52x" to="53m0:5MibNhOn8HA" resolve="WidgetCellCheck" />
     <node concept="3EZMnI" id="708i5MC1od4" role="2wV5jI">
       <node concept="3vyZuw" id="7kmg1RALjQr" role="3F10Kt">
@@ -2131,7 +2132,7 @@
   </node>
   <node concept="22mcaB" id="K_fAvR3LDI">
     <property role="TrG5h" value="ITreeViewCheckValue_SubstituteMenu" />
-    <property role="3GE5qa" value="test.assert.structures.treeview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.treeview" />
     <ref role="aqKnT" to="53m0:K_fAvR3LDG" resolve="ITreeViewCheckValue" />
     <node concept="22hDWj" id="K_fAvR3LDJ" role="22hAXT" />
     <node concept="2VfDsV" id="K_fAvR3LDK" role="3ft7WO">
@@ -2154,7 +2155,7 @@
   </node>
   <node concept="PKFIW" id="K_fAvR3LEe">
     <property role="TrG5h" value="TreeViewCheck_Inspector_Checks_EC" />
-    <property role="3GE5qa" value="test.assert.structures.treeview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.treeview" />
     <ref role="1XX52x" to="53m0:K_fAvR3LE2" resolve="TreeViewCheck" />
     <node concept="1PE4EZ" id="K_fAvR3LEg" role="1PM95z">
       <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_Checks_EC" />
@@ -2284,7 +2285,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="XX1C5W01SY">
-    <property role="3GE5qa" value="test.assert.structures.treeview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.treeview" />
     <ref role="1XX52x" to="53m0:XX1C5W00nT" resolve="TreeCheckRow" />
     <node concept="3EZMnI" id="XX1C5W03pX" role="2wV5jI">
       <node concept="3vyZuw" id="XX1C5W03pY" role="3F10Kt">
@@ -2365,7 +2366,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="XX1C5W1ao$">
-    <property role="3GE5qa" value="test.assert.structures" />
+    <property role="3GE5qa" value="test.assert.widgets.structures" />
     <ref role="1XX52x" to="53m0:XX1C5W18Ry" resolve="WidgetCellCheck" />
     <node concept="3EZMnI" id="5GwHzPxkzqK" role="2wV5jI">
       <node concept="1HlG4h" id="5GwHzPxjRcE" role="3EZMnx">
@@ -2488,7 +2489,7 @@
   </node>
   <node concept="22mcaB" id="24MyZrrRA70">
     <property role="TrG5h" value="ITableViewCheckValue_SubstituteMenu" />
-    <property role="3GE5qa" value="test.assert.structures.tableview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.tableview" />
     <ref role="aqKnT" to="53m0:24MyZrrRA6Y" resolve="ITableViewCheckValue" />
     <node concept="22hDWj" id="24MyZrrRA71" role="22hAXT" />
     <node concept="2VfDsV" id="24MyZrrRA72" role="3ft7WO">
@@ -2511,7 +2512,7 @@
   </node>
   <node concept="PKFIW" id="24MyZrrRA7w">
     <property role="TrG5h" value="TableViewCheck_Inspector_Checks_EC" />
-    <property role="3GE5qa" value="test.assert.structures.tableview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.tableview" />
     <ref role="1XX52x" to="53m0:24MyZrrRA7k" resolve="TableViewCheck" />
     <node concept="1PE4EZ" id="24MyZrrRA7y" role="1PM95z">
       <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_Checks_EC" />
@@ -2522,7 +2523,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4Ips5F11X4w">
-    <property role="3GE5qa" value="test.assert.structures.tableview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.tableview" />
     <ref role="1XX52x" to="53m0:24MyZrrSM5G" resolve="TableCheckRow" />
     <node concept="3EZMnI" id="4Ips5F11Y_i" role="2wV5jI">
       <node concept="3vyZuw" id="4Ips5F11Y_j" role="3F10Kt">
@@ -2713,6 +2714,172 @@
         </node>
       </node>
       <node concept="l2Vlx" id="4Ips5F14gYn" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="22mcaB" id="44HS8_67H$W">
+    <property role="TrG5h" value="IComboBoxCheckValue_SubstituteMenu" />
+    <property role="3GE5qa" value="test.assert.widgets.choices" />
+    <ref role="aqKnT" to="53m0:44HS8_67H$U" resolve="IComboBoxCheckValue" />
+    <node concept="22hDWj" id="44HS8_67H$X" role="22hAXT" />
+    <node concept="2VfDsV" id="44HS8_67H$Y" role="3ft7WO">
+      <node concept="1GpqWn" id="44HS8_67H$Z" role="1Go12V">
+        <node concept="3clFbS" id="44HS8_67H_0" role="2VODD2">
+          <node concept="3clFbF" id="44HS8_67H_1" role="3cqZAp">
+            <node concept="3fqX7Q" id="44HS8_67H_2" role="3clFbG">
+              <node concept="2YIFZM" id="44HS8_67H_3" role="3fr31v">
+                <ref role="37wK5l" node="2_MKLxJcA3M" />
+                <ref role="1Pybhc" node="2_MKLxJcA2h" />
+                <node concept="1GpqW3" id="44HS8_67H_4" role="37wK5m" />
+                <node concept="3bvxqY" id="44HS8_67H_5" role="37wK5m" />
+                <node concept="1J7kdh" id="44HS8_67H_6" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="44HS8_67H_s">
+    <property role="TrG5h" value="ComboBoxCheck_Inspector_Checks_EC" />
+    <property role="3GE5qa" value="test.assert.widgets.choices" />
+    <ref role="1XX52x" to="53m0:44HS8_67H_g" resolve="ComboBoxCheck" />
+    <node concept="1PE4EZ" id="44HS8_67H_u" role="1PM95z">
+      <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_Checks_EC" />
+    </node>
+    <node concept="3F2HdR" id="44HS8_67H_v" role="2wV5jI">
+      <ref role="1NtTu8" to="53m0:44HS8_67H_h" resolve="checks" />
+      <node concept="2iRkQZ" id="44HS8_67H_w" role="2czzBx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7waZUcv25al">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1XX52x" to="53m0:44HS8_67HAo" resolve="SelectedEntryCheckValue" />
+    <node concept="3EZMnI" id="7waZUcv25an" role="2wV5jI">
+      <node concept="3F0ifn" id="7waZUcv25ao" role="3EZMnx">
+        <property role="3F0ifm" value="expect" />
+      </node>
+      <node concept="3F0ifn" id="7waZUcv25ap" role="3EZMnx">
+        <property role="3F0ifm" value="selected entry" />
+      </node>
+      <node concept="PMmxH" id="5ZbqeTHYkhW" role="3EZMnx">
+        <ref role="PMmxG" node="7waZUcv2gFG" resolve="SelectedEntryCheckValue_selectedEntry_EC" />
+      </node>
+      <node concept="2iRfu4" id="7waZUcv25ar" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="7waZUcv2gFG">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <property role="TrG5h" value="SelectedEntryCheckValue_selectedEntry_EC" />
+    <ref role="1XX52x" to="53m0:44HS8_67HAo" resolve="SelectedEntryCheckValue" />
+    <node concept="1iCGBv" id="7waZUcv2gFI" role="2wV5jI">
+      <ref role="1NtTu8" to="53m0:7waZUcv25as" resolve="selectedEntry" />
+      <node concept="1sVBvm" id="7waZUcv2gFK" role="1sWHZn">
+        <node concept="3F0A7n" id="7waZUcv2gFO" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5ZbqeTIb8a6">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1XX52x" to="53m0:44HS8_67HAm" resolve="ComboBoxEntriesCheckValue" />
+    <node concept="3EZMnI" id="5ZbqeTIbbhp" role="2wV5jI">
+      <node concept="3F0ifn" id="5ZbqeTIbbhq" role="3EZMnx">
+        <property role="3F0ifm" value="expect" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+        <node concept="pVoyu" id="5ZbqeTIbbhr" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="5ZbqeTIbbhs" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:5ZbqeTIbciF" />
+        <node concept="2iRkQZ" id="5ZbqeTIbbht" role="2czzBx" />
+        <node concept="3F0ifn" id="5ZbqeTIbbhQ" role="2czzBI">
+          <property role="3F0ifm" value="no entries" />
+          <node concept="Vb9p2" id="5ZbqeTIbbhR" role="3F10Kt">
+            <property role="Vbekb" value="g1_kEg4/ITALIC" />
+          </node>
+          <node concept="VechU" id="5ZbqeTIbbhS" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5ZbqeTIbbhT" role="3EZMnx" />
+      <node concept="3F0ifn" id="5ZbqeTIbbhU" role="3EZMnx">
+        <property role="3F0ifm" value="     " />
+        <node concept="pVoyu" id="5ZbqeTIbbhV" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5ZbqeTIbbhW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="gc7cB" id="5ZbqeTIbbhX" role="3EZMnx">
+        <node concept="3VJUX4" id="5ZbqeTIbbhY" role="3YsKMw">
+          <node concept="3clFbS" id="5ZbqeTIbbhZ" role="2VODD2">
+            <node concept="3clFbF" id="5ZbqeTIbbi0" role="3cqZAp">
+              <node concept="2ShNRf" id="5ZbqeTIbbi1" role="3clFbG">
+                <node concept="YeOm9" id="5ZbqeTIbbi2" role="2ShVmc">
+                  <node concept="1Y3b0j" id="5ZbqeTIbbi3" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="AbstractCellProvider" />
+                    <ref role="1Y3XeK" to="exr9:~AbstractCellProvider" resolve="AbstractCellProvider" />
+                    <node concept="3Tm1VV" id="5ZbqeTIbbi4" role="1B3o_S" />
+                    <node concept="pncrf" id="5ZbqeTIbbi5" role="37wK5m" />
+                    <node concept="3clFb_" id="5ZbqeTIbbi6" role="jymVt">
+                      <property role="TrG5h" value="createEditorCell" />
+                      <node concept="3Tm1VV" id="5ZbqeTIbbi7" role="1B3o_S" />
+                      <node concept="3uibUv" id="5ZbqeTIbbi8" role="3clF45">
+                        <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+                      </node>
+                      <node concept="37vLTG" id="5ZbqeTIbbi9" role="3clF46">
+                        <property role="TrG5h" value="context" />
+                        <node concept="3uibUv" id="5ZbqeTIbbia" role="1tU5fm">
+                          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="5ZbqeTIbbib" role="3clF47">
+                        <node concept="3clFbF" id="5ZbqeTIbbic" role="3cqZAp">
+                          <node concept="2YIFZM" id="5ZbqeTIbbid" role="3clFbG">
+                            <ref role="37wK5l" to="hdif:2L$_HjiPZp8" resolve="createButtonCellModel" />
+                            <ref role="1Pybhc" to="hdif:2L$_HjiPXY8" resolve="ButtonCellModelCreator" />
+                            <node concept="1Q80Hx" id="5ZbqeTIbbie" role="37wK5m" />
+                            <node concept="pncrf" id="5ZbqeTIbbif" role="37wK5m" />
+                            <node concept="Xl_RD" id="5ZbqeTIbbig" role="37wK5m">
+                              <property role="Xl_RC" value="(+) add entry" />
+                            </node>
+                            <node concept="1bVj0M" id="5ZbqeTIbbih" role="37wK5m">
+                              <node concept="3clFbS" id="5ZbqeTIbbii" role="1bW5cS">
+                                <node concept="3clFbF" id="5ZbqeTIbdQM" role="3cqZAp">
+                                  <node concept="2OqwBi" id="5ZbqeTIbh_F" role="3clFbG">
+                                    <node concept="2OqwBi" id="5ZbqeTIbe9O" role="2Oq$k0">
+                                      <node concept="pncrf" id="5ZbqeTIbdQL" role="2Oq$k0" />
+                                      <node concept="3Tsc0h" id="5ZbqeTIbetO" role="2OqNvi">
+                                        <ref role="3TtcxE" to="53m0:5ZbqeTIbciF" resolve="entries" />
+                                      </node>
+                                    </node>
+                                    <node concept="2DeJg1" id="5ZbqeTIbjUt" role="2OqNvi" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2AHcQZ" id="5ZbqeTIbbiw" role="2AJF6D">
+                        <ref role="2AI5Lk" to="wyt6:~Override" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5ZbqeTIbbix" role="2iSdaV" />
     </node>
   </node>
 </model>

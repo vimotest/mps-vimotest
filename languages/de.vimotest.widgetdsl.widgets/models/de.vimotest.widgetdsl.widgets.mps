@@ -36,7 +36,7 @@
     <property role="TrG5h" value="CheckBox" />
     <property role="3GE5qa" value="widgets" />
     <property role="2SiFfI" value="checkbox" />
-    <property role="103t_X" value="widgets.standard" />
+    <property role="103t_X" value="widgets.checkbox" />
     <node concept="2WVz4l" id="1Yc3x6zoKZ8" role="2WV$Zc">
       <property role="3dRBvX" value="true" />
       <ref role="2WVz4k" node="1Yc3x6zo$jf" resolve="Checked" />
@@ -73,7 +73,7 @@
     <property role="3yYw5D" value="fLJRk5B/darkGray" />
   </node>
   <node concept="2WVz3F" id="7H4Lpx0an3_">
-    <property role="103t_X" value="widgets" />
+    <property role="103t_X" value="widgets.standard" />
     <property role="3GE5qa" value="widgets" />
     <property role="TrG5h" value="Label" />
     <property role="2SiFfI" value="label" />
@@ -95,7 +95,7 @@
     <property role="2WVz4g" value="T" />
   </node>
   <node concept="2WVz3F" id="5o5P3z3PZT6">
-    <property role="103t_X" value="widgets" />
+    <property role="103t_X" value="widgets.image" />
     <property role="3GE5qa" value="widgets" />
     <property role="TrG5h" value="Image" />
     <property role="2SiFfI" value="image" />
@@ -118,7 +118,7 @@
     <property role="3yYw5D" value="fLwANPs/magenta" />
   </node>
   <node concept="2WVz3F" id="7WgsBLYmiN5">
-    <property role="103t_X" value="widgets" />
+    <property role="103t_X" value="widgets.structures" />
     <property role="3GE5qa" value="widgets" />
     <property role="TrG5h" value="ListView" />
     <property role="2SiFfI" value="list view" />
@@ -144,7 +144,7 @@
     <property role="3yYw5D" value="fLwANPp/orange" />
   </node>
   <node concept="2WVz3F" id="K_fAvR3HXn">
-    <property role="103t_X" value="widgets" />
+    <property role="103t_X" value="widgets.structures" />
     <property role="3GE5qa" value="widgets" />
     <property role="TrG5h" value="TreeView" />
     <property role="2SiFfI" value="tree view" />
@@ -170,7 +170,7 @@
     <property role="3yYw5D" value="fLJRk5B/darkGray" />
   </node>
   <node concept="2WVz3F" id="24MyZrrR$yU">
-    <property role="103t_X" value="widgets" />
+    <property role="103t_X" value="widgets.structures" />
     <property role="3GE5qa" value="widgets" />
     <property role="TrG5h" value="TableView" />
     <property role="2SiFfI" value="table view" />
@@ -201,6 +201,43 @@
     <property role="2WV$r6" value="widget rows" />
     <property role="2WVz4g" value="r" />
     <property role="3yYw5D" value="fLJRk5B/darkGray" />
+  </node>
+  <node concept="2WVz3F" id="44HS8_67_SJ">
+    <property role="103t_X" value="widgets.choices" />
+    <property role="3GE5qa" value="widgets" />
+    <property role="TrG5h" value="ComboBox" />
+    <property role="2SiFfI" value="combobox" />
+    <node concept="2WVz4l" id="44HS8_67Csp" role="2WV$Zc">
+      <property role="3dRBvX" value="true" />
+      <ref role="2WVz4k" node="44HS8_67Cst" resolve="ChoiceEntries" />
+    </node>
+    <node concept="2WVz4l" id="44HS8_67Csq" role="2WV$Zc">
+      <property role="3dRBvX" value="true" />
+      <ref role="2WVz4k" node="44HS8_67EZV" resolve="SelectedChoice" />
+    </node>
+    <node concept="2WVz4l" id="44HS8_67HzI" role="2WV$Zc">
+      <ref role="2WVz4k" node="7H4Lpx0an3A" resolve="Text" />
+    </node>
+    <node concept="2WVz4l" id="44HS8_67Csr" role="2WV$Zc">
+      <ref role="2WVz4k" node="1Yc3x6zoTLW" resolve="Visibility" />
+    </node>
+    <node concept="2WVz4l" id="44HS8_67Css" role="2WV$Zc">
+      <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
+    </node>
+  </node>
+  <node concept="2WVz3E" id="44HS8_67Cst">
+    <property role="3GE5qa" value="features" />
+    <property role="TrG5h" value="ComboBoxEntries" />
+    <property role="2WV$r6" value="entries" />
+    <property role="2WVz4g" value="e" />
+    <property role="3yYw5D" value="fLJRk5B/darkGray" />
+  </node>
+  <node concept="2WVz3E" id="44HS8_67EZV">
+    <property role="3GE5qa" value="features" />
+    <property role="TrG5h" value="SelectedEntry" />
+    <property role="2WV$r6" value="selected choice" />
+    <property role="2WVz4g" value="s" />
+    <property role="3yYw5D" value="fLwANPp/orange" />
   </node>
 </model>
 

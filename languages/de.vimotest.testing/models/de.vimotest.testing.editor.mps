@@ -2796,7 +2796,7 @@
         <ref role="1NtTu8" to="53m0:5ZbqeTIbciF" />
         <node concept="2iRkQZ" id="5ZbqeTIbbht" role="2czzBx" />
         <node concept="3F0ifn" id="5ZbqeTIbbhQ" role="2czzBI">
-          <property role="3F0ifm" value="no rows" />
+          <property role="3F0ifm" value="no entries" />
           <node concept="Vb9p2" id="5ZbqeTIbbhR" role="3F10Kt">
             <property role="Vbekb" value="g1_kEg4/ITALIC" />
           </node>

@@ -92,6 +92,7 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
@@ -108,6 +109,7 @@
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
+        <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
         <property id="1073389577007" name="text" index="3F0ifm" />
@@ -6807,8 +6809,15 @@
         <node concept="3clFbF" id="55YtzNan8Yt" role="3cqZAp">
           <node concept="37vLTI" id="55YtzNan8Yu" role="3clFbG">
             <node concept="2c44tf" id="55YtzNan8Yv" role="37vLTx">
-              <node concept="3F0ifn" id="55YtzNantPp" role="2c44tc">
-                <property role="3F0ifm" value="TODO" />
+              <node concept="3EZMnI" id="55YtzNarGho" role="2c44tc">
+                <node concept="3F0ifn" id="55YtzNarGhr" role="3EZMnx">
+                  <property role="3F0ifm" value="shows" />
+                  <ref role="1k5W1q" to="ytrb:55YtzNatuDs" resolve="ThenDescriptionText" />
+                </node>
+                <node concept="3F0ifn" id="55YtzNarOQO" role="3EZMnx">
+                  <property role="3F0ifm" value="TODO" />
+                </node>
+                <node concept="2iRfu4" id="55YtzNarGhp" role="2iSdaV" />
               </node>
             </node>
             <node concept="2OqwBi" id="55YtzNan8Y$" role="37vLTJ">

@@ -66,6 +66,7 @@
         <child id="3426401106044983341" name="tests" index="30n1Qb" />
       </concept>
       <concept id="3426401106045121475" name="de.vimotest.testing.structure.ViewWidgetAssertion" flags="ng" index="30nzp_">
+        <property id="6523116078126804343" name="descriptionLabel" index="13TuVO" />
         <reference id="3426401106045121502" name="widget" index="30nzpS" />
         <child id="3426401106045146960" name="check" index="30nDbQ" />
       </concept>
@@ -521,7 +522,9 @@
         <node concept="30nzp_" id="3JdhG1lT90w" role="DUiSb">
           <ref role="30nzpS" node="6vtOLtwdT_M" resolve="MyFlag" />
           <node concept="C4Fn6" id="3JdhG1lT90z" role="30nDbQ">
-            <node concept="35STPD" id="3JdhG1lT90E" role="C4Fn7" />
+            <node concept="35STPD" id="3JdhG1lT90E" role="C4Fn7">
+              <property role="35S$ZG" value="true" />
+            </node>
             <node concept="35STUl" id="6NwBQMyG2nQ" role="C4Fn7">
               <property role="3XJMQh" value="true" />
             </node>
@@ -544,6 +547,7 @@
         </node>
       </node>
       <node concept="DUd2R" id="2_MKLxJoIKw" role="DUd56">
+        <property role="1IbZgC" value="is set correctly" />
         <node concept="30nzp_" id="2_MKLxJoIKC" role="DUiSb">
           <ref role="30nzpS" node="7H4Lpx0kZbn" resolve="MyLabel" />
           <node concept="V3Zc6" id="2_MKLxJoIKF" role="30nDbQ">
@@ -554,7 +558,9 @@
         </node>
       </node>
       <node concept="DUd2R" id="7WnLzoFEOso" role="DUd56">
+        <property role="1IbZgC" value="test" />
         <node concept="30nzp_" id="7WnLzoFEOsq" role="DUiSb">
+          <property role="13TuVO" value="show error image" />
           <ref role="30nzpS" node="3pKiF2wQ5di" resolve="MyImage" />
           <node concept="2mJbJ5" id="7WnLzoFF7Hf" role="30nDbQ">
             <node concept="2mJbG1" id="7WnLzoFGxRG" role="2mJbJ6">

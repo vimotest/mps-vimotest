@@ -1463,20 +1463,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="6NwBQMyCqZM">
-    <property role="3GE5qa" value="test.assert._checkvalues" />
-    <ref role="1XX52x" to="53m0:7H4Lpx0iNr7" resolve="TextCheckValue" />
-    <node concept="3EZMnI" id="6NwBQMyCrfZ" role="2wV5jI">
-      <node concept="3F0ifn" id="6NwBQMyCrg0" role="3EZMnx">
-        <property role="3F0ifm" value="expect" />
-        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
-      </node>
-      <node concept="3F0A7n" id="6NwBQMyCrXz" role="3EZMnx">
-        <ref role="1NtTu8" to="53m0:6NwBQMyCrHw" resolve="expectedText" />
-      </node>
-      <node concept="2iRfu4" id="6NwBQMyCrgc" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="22mcaB" id="3pKiF2wNf5x">
     <property role="TrG5h" value="ImageCheck_Inspector_EC" />
     <property role="3GE5qa" value="test.assert.widgets.image" />
@@ -2897,6 +2883,37 @@
         </node>
       </node>
       <node concept="l2Vlx" id="5ZbqeTIbbix" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="55YtzNamdj1">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1XX52x" to="53m0:5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="3EZMnI" id="55YtzNami8J" role="2wV5jI">
+      <node concept="3F0ifn" id="55YtzNami8K" role="3EZMnx">
+        <property role="3F0ifm" value="expect" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+      </node>
+      <node concept="PMmxH" id="55YtzNami8P" role="3EZMnx">
+        <ref role="PMmxG" node="55YtzNami8N" resolve="WidgetFeatureCheckValue_expectationCell_EC" />
+      </node>
+      <node concept="2iRfu4" id="55YtzNami8M" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="55YtzNami8N">
+    <property role="TrG5h" value="WidgetFeatureCheckValue_expectationCell_EC" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1XX52x" to="53m0:5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="3F0ifn" id="55YtzNami8R" role="2wV5jI" />
+  </node>
+  <node concept="PKFIW" id="55YtzNamrNk">
+    <property role="TrG5h" value="TextCheckValue_expectationCell_EC" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1XX52x" to="53m0:7H4Lpx0iNr7" resolve="TextCheckValue" />
+    <node concept="3F0A7n" id="55YtzNamrNl" role="2wV5jI">
+      <ref role="1NtTu8" to="53m0:6NwBQMyCrHw" resolve="expectedText" />
+    </node>
+    <node concept="1PE4EZ" id="55YtzNamrNn" role="1PM95z">
+      <ref role="1PE7su" node="55YtzNami8N" resolve="WidgetFeatureCheckValue_expectationCell_EC" />
     </node>
   </node>
 </model>

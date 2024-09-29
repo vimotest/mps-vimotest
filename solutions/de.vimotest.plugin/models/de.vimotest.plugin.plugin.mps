@@ -6340,6 +6340,60 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="55YtzNamXNr" role="3cqZAp">
+          <node concept="2OqwBi" id="55YtzNamXNs" role="3clFbG">
+            <node concept="2OqwBi" id="55YtzNamXNt" role="2Oq$k0">
+              <node concept="37vLTw" id="55YtzNamXNu" role="2Oq$k0">
+                <ref role="3cqZAo" node="69Ym88B3Ze7" resolve="features" />
+              </node>
+              <node concept="3zZkjj" id="55YtzNamXNv" role="2OqNvi">
+                <node concept="1bVj0M" id="55YtzNamXNw" role="23t8la">
+                  <node concept="3clFbS" id="55YtzNamXNx" role="1bW5cS">
+                    <node concept="3clFbF" id="55YtzNamXNy" role="3cqZAp">
+                      <node concept="3fqX7Q" id="55YtzNamXNz" role="3clFbG">
+                        <node concept="2OqwBi" id="55YtzNamXN$" role="3fr31v">
+                          <node concept="37vLTw" id="55YtzNamXN_" role="2Oq$k0">
+                            <ref role="3cqZAo" node="26yOs7Sp4W0" resolve="alreadyDefinedNodes" />
+                          </node>
+                          <node concept="3JPx81" id="55YtzNamXNA" role="2OqNvi">
+                            <node concept="1rXfSq" id="55YtzNamXNB" role="25WWJ7">
+                              <ref role="37wK5l" node="69Ym88B3rBT" resolve="getExpectationCellEditorComponentName" />
+                              <node concept="37vLTw" id="55YtzNamXNC" role="37wK5m">
+                                <ref role="3cqZAo" node="55YtzNamXND" resolve="it" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="gl6BB" id="55YtzNamXND" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="55YtzNamXNE" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2es0OD" id="55YtzNamXNF" role="2OqNvi">
+              <node concept="1bVj0M" id="55YtzNamXNG" role="23t8la">
+                <node concept="3clFbS" id="55YtzNamXNH" role="1bW5cS">
+                  <node concept="3clFbF" id="55YtzNamXNI" role="3cqZAp">
+                    <node concept="1rXfSq" id="55YtzNamXNJ" role="3clFbG">
+                      <ref role="37wK5l" node="55YtzNamOOD" resolve="generateCheckValueExpectationCellEC" />
+                      <node concept="37vLTw" id="55YtzNamXNK" role="37wK5m">
+                        <ref role="3cqZAo" node="55YtzNamXNL" resolve="it" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="gl6BB" id="55YtzNamXNL" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="55YtzNamXNM" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3Tm1VV" id="69Ym88B3rwG" role="1B3o_S" />
       <node concept="3cqZAl" id="69Ym88B3rwH" role="3clF45" />
@@ -6634,6 +6688,164 @@
       </node>
       <node concept="3Tm6S6" id="5L3DBX$msHc" role="1B3o_S" />
     </node>
+    <node concept="3clFb_" id="55YtzNamOOD" role="jymVt">
+      <property role="TrG5h" value="generateCheckValueExpectationCellEC" />
+      <node concept="37vLTG" id="55YtzNamPDh" role="3clF46">
+        <property role="TrG5h" value="featureDefinition" />
+        <node concept="3Tqbb2" id="55YtzNamPDi" role="1tU5fm">
+          <ref role="ehGHo" to="3255:1Yc3x6zozVV" resolve="WidgetFeatureDefinition" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="55YtzNamOOG" role="3clF47">
+        <node concept="3cpWs8" id="55YtzNan8Xh" role="3cqZAp">
+          <node concept="3cpWsn" id="55YtzNan8Xi" role="3cpWs9">
+            <property role="TrG5h" value="node" />
+            <node concept="3Tqbb2" id="55YtzNan8Xj" role="1tU5fm">
+              <ref role="ehGHo" to="tpc2:fGPKFH7" resolve="EditorComponentDeclaration" />
+            </node>
+            <node concept="2ShNRf" id="55YtzNan8Xk" role="33vP2m">
+              <node concept="2fJWfE" id="55YtzNan8Xl" role="2ShVmc">
+                <node concept="3Tqbb2" id="55YtzNan8Xm" role="3zrR0E">
+                  <ref role="ehGHo" to="tpc2:fGPKFH7" resolve="EditorComponentDeclaration" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="55YtzNan8Xn" role="3cqZAp">
+          <node concept="37vLTI" id="55YtzNan8Xo" role="3clFbG">
+            <node concept="2OqwBi" id="55YtzNan8Xr" role="37vLTJ">
+              <node concept="37vLTw" id="55YtzNan8Xs" role="2Oq$k0">
+                <ref role="3cqZAo" node="55YtzNan8Xi" resolve="node" />
+              </node>
+              <node concept="3TrcHB" id="55YtzNan8Xt" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="55YtzNaneLd" role="37vLTx">
+              <ref role="37wK5l" node="69Ym88B3rBT" resolve="getExpectationCellEditorComponentName" />
+              <node concept="37vLTw" id="55YtzNanggR" role="37wK5m">
+                <ref role="3cqZAo" node="55YtzNamPDh" resolve="featureDefinition" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="55YtzNan8Xu" role="3cqZAp">
+          <node concept="37vLTI" id="55YtzNan8Xv" role="3clFbG">
+            <node concept="2OqwBi" id="55YtzNan8Xw" role="37vLTJ">
+              <node concept="37vLTw" id="55YtzNan8Xx" role="2Oq$k0">
+                <ref role="3cqZAo" node="55YtzNan8Xi" resolve="node" />
+              </node>
+              <node concept="3TrcHB" id="55YtzNan8Xy" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:hnGE5uv" resolve="virtualPackage" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="55YtzNanhYk" role="37vLTx">
+              <property role="Xl_RC" value="test.assert._checkvalues" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="55YtzNan8X_" role="3cqZAp">
+          <node concept="37vLTI" id="55YtzNan8XA" role="3clFbG">
+            <node concept="3EllGN" id="55YtzNan8XB" role="37vLTx">
+              <node concept="1rXfSq" id="55YtzNanlms" role="3ElVtu">
+                <ref role="37wK5l" node="69Ym88B3rBH" resolve="getCheckValueConceptName" />
+                <node concept="37vLTw" id="55YtzNanmPU" role="37wK5m">
+                  <ref role="3cqZAo" node="55YtzNamPDh" resolve="featureDefinition" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="55YtzNan8XE" role="3ElQJh">
+                <ref role="3cqZAo" node="26yOs7SpZZ8" resolve="conceptByNameMap" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="55YtzNan8XF" role="37vLTJ">
+              <node concept="37vLTw" id="55YtzNan8XG" role="2Oq$k0">
+                <ref role="3cqZAo" node="55YtzNan8Xi" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="55YtzNan8XH" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpc2:gXXX56I" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="55YtzNan8XI" role="3cqZAp">
+          <node concept="37vLTI" id="55YtzNan8XJ" role="3clFbG">
+            <node concept="2OqwBi" id="55YtzNan8XK" role="37vLTJ">
+              <node concept="2OqwBi" id="55YtzNan8XL" role="2Oq$k0">
+                <node concept="2OqwBi" id="55YtzNan8XM" role="2Oq$k0">
+                  <node concept="37vLTw" id="55YtzNan8XN" role="2Oq$k0">
+                    <ref role="3cqZAo" node="55YtzNan8Xi" resolve="node" />
+                  </node>
+                  <node concept="3TrEf2" id="55YtzNan8XO" role="2OqNvi">
+                    <ref role="3Tt5mk" to="tpc2:66t_lsklggO" />
+                  </node>
+                </node>
+                <node concept="2DeJnY" id="55YtzNan8XP" role="2OqNvi" />
+              </node>
+              <node concept="3TrEf2" id="55YtzNan8XQ" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpc2:66t_lskdu99" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="55YtzNan8XR" role="37vLTx">
+              <node concept="2tJFMh" id="55YtzNan8XS" role="2Oq$k0">
+                <node concept="ZC_QK" id="55YtzNan8XT" role="2tJFKM">
+                  <ref role="2aWVGs" to="ytrb:55YtzNami8N" resolve="WidgetFeatureCheckValue_expectationCell_EC" />
+                </node>
+              </node>
+              <node concept="Vyspw" id="55YtzNan8XU" role="2OqNvi">
+                <node concept="2OqwBi" id="55YtzNan8XV" role="Vysub">
+                  <node concept="Xjq3P" id="55YtzNan8XW" role="2Oq$k0" />
+                  <node concept="2OwXpG" id="55YtzNan8XX" role="2OqNvi">
+                    <ref role="2Oxat5" node="L9c2Y9qpZA" resolve="repository" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="55YtzNan8Y8" role="3cqZAp" />
+        <node concept="3clFbF" id="55YtzNan8Yt" role="3cqZAp">
+          <node concept="37vLTI" id="55YtzNan8Yu" role="3clFbG">
+            <node concept="2c44tf" id="55YtzNan8Yv" role="37vLTx">
+              <node concept="3F0ifn" id="55YtzNantPp" role="2c44tc">
+                <property role="3F0ifm" value="TODO" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="55YtzNan8Y$" role="37vLTJ">
+              <node concept="37vLTw" id="55YtzNan8Y_" role="2Oq$k0">
+                <ref role="3cqZAo" node="55YtzNan8Xi" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="55YtzNan8YA" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpc2:fIwV5gl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="55YtzNan8YB" role="3cqZAp" />
+        <node concept="3clFbF" id="55YtzNan8YC" role="3cqZAp">
+          <node concept="1rXfSq" id="55YtzNan8YD" role="3clFbG">
+            <ref role="37wK5l" node="4OohpJQZXHe" resolve="usePreviousNodeIdIfPossible" />
+            <node concept="37vLTw" id="55YtzNan8YE" role="37wK5m">
+              <ref role="3cqZAo" node="55YtzNan8Xi" resolve="node" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="55YtzNan8YF" role="3cqZAp">
+          <node concept="2OqwBi" id="55YtzNan8YG" role="3clFbG">
+            <node concept="37vLTw" id="55YtzNan8YH" role="2Oq$k0">
+              <ref role="3cqZAo" node="69Ym88B5lG$" resolve="targetTestEditorModel" />
+            </node>
+            <node concept="3BYIHo" id="55YtzNan8YI" role="2OqNvi">
+              <node concept="37vLTw" id="55YtzNan8YJ" role="3BYIHq">
+                <ref role="3cqZAo" node="55YtzNan8Xi" resolve="node" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="55YtzNamLge" role="1B3o_S" />
+      <node concept="3cqZAl" id="55YtzNamOI$" role="3clF45" />
+    </node>
     <node concept="2tJIrI" id="69Ym88B3rwI" role="jymVt" />
     <node concept="2tJIrI" id="69Ym88B3rBp" role="jymVt" />
     <node concept="3clFb_" id="69Ym88B3rBq" role="jymVt">
@@ -6701,7 +6913,7 @@
       <node concept="17QB3L" id="69Ym88B3rBS" role="3clF45" />
     </node>
     <node concept="2YIFZL" id="69Ym88B3rBT" role="jymVt">
-      <property role="TrG5h" value="getEditorRenderComponentName" />
+      <property role="TrG5h" value="getExpectationCellEditorComponentName" />
       <node concept="37vLTG" id="69Ym88B3rBU" role="3clF46">
         <property role="TrG5h" value="definitionNode" />
         <node concept="3Tqbb2" id="69Ym88B3rBV" role="1tU5fm">
@@ -6718,7 +6930,7 @@
               </node>
             </node>
             <node concept="Xl_RD" id="69Ym88B3rC1" role="3uHU7w">
-              <property role="Xl_RC" value="_Editor" />
+              <property role="Xl_RC" value="_expectationCell_EC" />
             </node>
           </node>
         </node>

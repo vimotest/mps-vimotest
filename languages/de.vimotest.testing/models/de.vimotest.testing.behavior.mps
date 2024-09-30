@@ -124,6 +124,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -201,6 +202,11 @@
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
@@ -1250,6 +1256,30 @@
       </node>
       <node concept="3cqZAl" id="3CJ09vZN9Tt" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="4w9z1ta3VRG" role="13h7CS">
+      <property role="TrG5h" value="getThenDescriptionText" />
+      <ref role="13i0hy" node="4w9z1ta3Oen" resolve="getThenDescriptionText" />
+      <node concept="3Tm1VV" id="4w9z1ta3VRH" role="1B3o_S" />
+      <node concept="3clFbS" id="4w9z1ta3VRM" role="3clF47">
+        <node concept="3clFbF" id="4w9z1ta3WwE" role="3cqZAp">
+          <node concept="3K4zz7" id="4w9z1ta41fr" role="3clFbG">
+            <node concept="Xl_RD" id="4w9z1ta41im" role="3K4E3e">
+              <property role="Xl_RC" value="is checked" />
+            </node>
+            <node concept="Xl_RD" id="4w9z1ta41ke" role="3K4GZi">
+              <property role="Xl_RC" value="is not checked" />
+            </node>
+            <node concept="2OqwBi" id="4w9z1ta3WGT" role="3K4Cdx">
+              <node concept="13iPFW" id="4w9z1ta3WwC" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4w9z1ta3YyP" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:3CJ09vZNkXV" resolve="expectedIsChecked" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4w9z1ta3VRN" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="3CJ09vZN9TQ">
     <property role="3GE5qa" value="test.assert._checkvalues" />
@@ -1841,6 +1871,30 @@
       </node>
       <node concept="3cqZAl" id="44HS8_6k0rP" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="4w9z1ta90da" role="13h7CS">
+      <property role="TrG5h" value="getThenDescriptionText" />
+      <ref role="13i0hy" node="4w9z1ta3Oen" resolve="getThenDescriptionText" />
+      <node concept="3Tm1VV" id="4w9z1ta90db" role="1B3o_S" />
+      <node concept="3clFbS" id="4w9z1ta90dg" role="3clF47">
+        <node concept="3clFbF" id="4w9z1ta91w1" role="3cqZAp">
+          <node concept="3K4zz7" id="4w9z1ta91w2" role="3clFbG">
+            <node concept="Xl_RD" id="4w9z1ta91w3" role="3K4E3e">
+              <property role="Xl_RC" value="is enabled" />
+            </node>
+            <node concept="Xl_RD" id="4w9z1ta91w4" role="3K4GZi">
+              <property role="Xl_RC" value="is not enabled" />
+            </node>
+            <node concept="2OqwBi" id="4w9z1ta91w5" role="3K4Cdx">
+              <node concept="13iPFW" id="4w9z1ta91w6" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4w9z1ta91w7" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:5VrLp2zpew1" resolve="expectedIsEnabled" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4w9z1ta90dh" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="3CJ09vZN9UF">
     <property role="3GE5qa" value="test.assert._checkvalues" />
@@ -2397,6 +2451,30 @@
       </node>
       <node concept="3cqZAl" id="44HS8_6jXro" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="4w9z1ta8OcW" role="13h7CS">
+      <property role="TrG5h" value="getThenDescriptionText" />
+      <ref role="13i0hy" node="4w9z1ta3Oen" resolve="getThenDescriptionText" />
+      <node concept="3Tm1VV" id="4w9z1ta8OcX" role="1B3o_S" />
+      <node concept="3clFbS" id="4w9z1ta8Od2" role="3clF47">
+        <node concept="3clFbF" id="4w9z1ta8QhG" role="3cqZAp">
+          <node concept="3K4zz7" id="4w9z1ta8QhH" role="3clFbG">
+            <node concept="Xl_RD" id="4w9z1ta8QhI" role="3K4E3e">
+              <property role="Xl_RC" value="is visible" />
+            </node>
+            <node concept="Xl_RD" id="4w9z1ta8QhJ" role="3K4GZi">
+              <property role="Xl_RC" value="is not visible" />
+            </node>
+            <node concept="2OqwBi" id="4w9z1ta8QhK" role="3K4Cdx">
+              <node concept="13iPFW" id="4w9z1ta8QhL" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4w9z1ta8QhM" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:5VrLp2zpM0p" resolve="expectedIsVisible" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4w9z1ta8Od3" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="7H4Lpx0iNql">
     <property role="TrG5h" value="ILabelCheckValue_Behavior" />
@@ -2716,6 +2794,32 @@
         </node>
       </node>
       <node concept="3cqZAl" id="44HS8_6k26$" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4w9z1ta8Rml" role="13h7CS">
+      <property role="TrG5h" value="getThenDescriptionText" />
+      <ref role="13i0hy" node="4w9z1ta3Oen" resolve="getThenDescriptionText" />
+      <node concept="3Tm1VV" id="4w9z1ta8Rmm" role="1B3o_S" />
+      <node concept="3clFbS" id="4w9z1ta8Rmr" role="3clF47">
+        <node concept="3clFbF" id="4w9z1ta8Rvi" role="3cqZAp">
+          <node concept="3cpWs3" id="4w9z1ta8Wb7" role="3clFbG">
+            <node concept="Xl_RD" id="4w9z1ta8Wu3" role="3uHU7w">
+              <property role="Xl_RC" value="'" />
+            </node>
+            <node concept="3cpWs3" id="4w9z1ta8SK8" role="3uHU7B">
+              <node concept="Xl_RD" id="4w9z1ta8Rvh" role="3uHU7B">
+                <property role="Xl_RC" value="shows text '" />
+              </node>
+              <node concept="2OqwBi" id="4w9z1ta8TbB" role="3uHU7w">
+                <node concept="13iPFW" id="4w9z1ta8SKy" role="2Oq$k0" />
+                <node concept="3TrcHB" id="4w9z1ta8TrL" role="2OqNvi">
+                  <ref role="3TsBF5" to="53m0:6NwBQMyCrHw" resolve="expectedText" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4w9z1ta8Rms" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="6mWHjmRSkPQ">
@@ -7782,6 +7886,26 @@
         <ref role="3bZ5Sy" to="at53:L9c2Y9pj53" />
       </node>
       <node concept="3Tm1VV" id="55YtzNav1Li" role="1B3o_S" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="4w9z1ta3Jkq">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="13h7C2" to="53m0:5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="13hLZK" id="4w9z1ta3Jkr" role="13h7CW">
+      <node concept="3clFbS" id="4w9z1ta3Jks" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4w9z1ta3Oen" role="13h7CS">
+      <property role="TrG5h" value="getThenDescriptionText" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="4w9z1ta3Oeo" role="1B3o_S" />
+      <node concept="17QB3L" id="4w9z1ta3VP5" role="3clF45" />
+      <node concept="3clFbS" id="4w9z1ta3Oeq" role="3clF47">
+        <node concept="3clFbF" id="4w9z1ta3VQo" role="3cqZAp">
+          <node concept="Xl_RD" id="4w9z1ta3VQn" role="3clFbG">
+            <property role="Xl_RC" value="" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

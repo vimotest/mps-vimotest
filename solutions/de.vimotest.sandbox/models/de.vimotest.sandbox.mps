@@ -242,7 +242,6 @@
     <node concept="3LKzX3" id="3JdhG1lT89S" role="30n1Qb">
       <property role="3LKBmK" value="My Scenario" />
       <node concept="DUd2R" id="3JdhG1lT89X" role="DUd56">
-        <property role="1IbZgC" value="is checked" />
         <node concept="30nzp_" id="3JdhG1lT90w" role="DUiSb">
           <ref role="30nzpS" node="6vtOLtwdT_M" resolve="MyFlag" />
           <node concept="C4Fn6" id="3JdhG1lT90z" role="30nDbQ">
@@ -262,7 +261,6 @@
         </node>
       </node>
       <node concept="DUd2R" id="6k2oWGbVoBN" role="DUd56">
-        <property role="1IbZgC" value="is not checked" />
         <node concept="30nzp_" id="6k2oWGbVoBP" role="DUiSb">
           <ref role="30nzpS" node="6k2oWGbVooQ" resolve="MyFlagNoLabel" />
           <node concept="C4Fn6" id="6k2oWGbVoBR" role="30nDbQ">

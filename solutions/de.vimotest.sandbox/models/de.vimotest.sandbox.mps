@@ -66,7 +66,6 @@
         <child id="3426401106044983341" name="tests" index="30n1Qb" />
       </concept>
       <concept id="3426401106045121475" name="de.vimotest.testing.structure.ViewWidgetAssertion" flags="ng" index="30nzp_">
-        <property id="6523116078126804343" name="descriptionLabel" index="13TuVO" />
         <reference id="3426401106045121502" name="widget" index="30nzpS" />
         <child id="3426401106045146960" name="check" index="30nDbQ" />
       </concept>
@@ -776,7 +775,6 @@
       <property role="3LKBmK" value="My Scenario" />
       <node concept="DUd2R" id="4w9z1ta31A4" role="DUd56">
         <node concept="30nzp_" id="4w9z1ta31A5" role="DUiSb">
-          <property role="13TuVO" value="show error image" />
           <ref role="30nzpS" node="4w9z1ta2v5X" resolve="MyImage" />
           <node concept="2mJbJ5" id="4w9z1ta3qhv" role="30nDbQ">
             <node concept="2mJbG1" id="4w9z1ta3qhw" role="2mJbJ6">

@@ -1177,7 +1177,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="2b2Up4QCmkj" role="3EZMnx">
-        <property role="3F0ifm" value=" " />
+        <property role="3F0ifm" value=" ⟶ " />
         <node concept="VPM3Z" id="2b2Up4QCmoT" role="3F10Kt" />
         <node concept="xShMh" id="2b2Up4QCmoU" role="3F10Kt">
           <property role="VOm3f" value="true" />

@@ -84,7 +84,6 @@
       </concept>
       <concept id="4309178210352018150" name="de.vimotest.testing.structure.TestDescriptionPart" flags="ng" index="1IbZgA">
         <property id="4309178210352018151" name="textBefore" index="1IbZgB" />
-        <property id="4309178210352018152" name="textAfter" index="1IbZgC" />
       </concept>
       <concept id="7205622933660482722" name="de.vimotest.testing.structure.ViewModelTestCase" flags="ng" index="3LKzX3">
         <property id="7205622933660497489" name="scenario" index="3LKBmK" />
@@ -692,7 +691,6 @@
     <node concept="3LKzX3" id="4w9z1ta2RGH" role="30n1Qb">
       <property role="3LKBmK" value="My Scenario" />
       <node concept="DUd2R" id="4w9z1ta2RGT" role="DUd56">
-        <property role="1IbZgC" value="is set correctly" />
         <node concept="30nzp_" id="4w9z1ta2RGU" role="DUiSb">
           <ref role="30nzpS" node="4w9z1ta2qal" resolve="MyLabel" />
           <node concept="V3Zc6" id="4w9z1ta2RGV" role="30nDbQ">
@@ -777,7 +775,6 @@
     <node concept="3LKzX3" id="4w9z1ta31_O" role="30n1Qb">
       <property role="3LKBmK" value="My Scenario" />
       <node concept="DUd2R" id="4w9z1ta31A4" role="DUd56">
-        <property role="1IbZgC" value="test" />
         <node concept="30nzp_" id="4w9z1ta31A5" role="DUiSb">
           <property role="13TuVO" value="show error image" />
           <ref role="30nzpS" node="4w9z1ta2v5X" resolve="MyImage" />

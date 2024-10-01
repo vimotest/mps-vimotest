@@ -13,6 +13,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -162,6 +165,7 @@
         <child id="5213916851000129517" name="enabledFeature" index="C4FCH" />
         <child id="7278489671513126078" name="textFeature" index="1ISttP" />
       </concept>
+      <concept id="4989287372960777710" name="de.vimotest.viewmodel.structure.CheckCommand" flags="ng" index="I_Gu0" />
       <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6">
         <property id="3850800795622718474" name="defaultText" index="3A$Jrx" />
       </concept>
@@ -170,15 +174,22 @@
         <child id="8882441622785832553" name="enabledFeature" index="V3ZfL" />
         <child id="8882441622785832554" name="visibilityFeature" index="V3ZfM" />
       </concept>
-      <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelEvents" flags="ng" index="103ZXx" />
+      <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommands" flags="ng" index="103ZXx">
+        <child id="777152910169039599" name="commands" index="1006ar" />
+      </concept>
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
-        <child id="777152910168882972" name="events" index="103ZXC" />
+        <child id="777152910168882972" name="commands" index="103ZXC" />
         <child id="777152910168882975" name="contents" index="103ZXF" />
       </concept>
       <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelContents" flags="ng" index="103ZXB" />
       <concept id="2820520252859978186" name="de.vimotest.viewmodel.structure.ImageDefinitionRef" flags="ng" index="3eDL7N">
         <reference id="2820520252859978187" name="image" index="3eDL7M" />
       </concept>
+      <concept id="6743755284664566090" name="de.vimotest.viewmodel.structure.LoadViewCommand" flags="ng" index="3f3I3T" />
+      <concept id="6743755284663479730" name="de.vimotest.viewmodel.structure.FillTextCommand" flags="ng" index="3f4gK1" />
+      <concept id="6743755284663291311" name="de.vimotest.viewmodel.structure.ClickCommand" flags="ng" index="3f4AKs" />
+      <concept id="6743755284663983729" name="de.vimotest.viewmodel.structure.SelectRowCommand" flags="ng" index="3f6vZ2" />
+      <concept id="3467946101314360988" name="de.vimotest.viewmodel.structure.SelectItemCommand" flags="ng" index="3taSw6" />
       <concept id="7497173622928201774" name="de.vimotest.viewmodel.structure.ImageDefinitionRegistry" flags="ng" index="1u6Luu">
         <child id="3426927311333626907" name="closedSets" index="28FJ0w" />
         <child id="7497173622928201831" name="images" index="1u6Lvn" />
@@ -209,6 +220,7 @@
   </registry>
   <node concept="103ZX$" id="F907haLUeC">
     <property role="TrG5h" value="CheckBoxes_View" />
+    <property role="3GE5qa" value="widgetassertions" />
     <node concept="103ZXx" id="F907haLUeD" role="103ZXC" />
     <node concept="103ZXB" id="F907haLUeE" role="103ZXF">
       <node concept="C4FCE" id="6vtOLtwdT_M" role="103ZUC">
@@ -236,6 +248,7 @@
   </node>
   <node concept="30n1Qd" id="6fZwY6ifUAh">
     <property role="TrG5h" value="CheckBoxes_ViewTest" />
+    <property role="3GE5qa" value="widgetassertions" />
     <ref role="30n1PB" node="F907haLUeC" resolve="MyView" />
     <node concept="3LKzX3" id="3JdhG1lT89S" role="30n1Qb">
       <property role="3LKBmK" value="My Scenario" />
@@ -274,6 +287,7 @@
   </node>
   <node concept="1u6Luu" id="2YeT3IB8PiW">
     <property role="TrG5h" value="Sandbox Images" />
+    <property role="3GE5qa" value="widgetassertions" />
     <node concept="28FJ0O" id="2YeT3IBbXKs" role="28FJ0w">
       <property role="TrG5h" value="updown" />
       <node concept="3eDL7N" id="2YeT3IBcgjF" role="28FJ0D">
@@ -370,6 +384,7 @@
   </node>
   <node concept="103ZX$" id="4w9z1ta2qa8">
     <property role="TrG5h" value="Labels_View" />
+    <property role="3GE5qa" value="widgetassertions" />
     <node concept="103ZXx" id="4w9z1ta2qa9" role="103ZXC" />
     <node concept="103ZXB" id="4w9z1ta2qaa" role="103ZXF">
       <node concept="V3ZfZ" id="4w9z1ta2qal" role="103ZUC">
@@ -388,6 +403,7 @@
   </node>
   <node concept="103ZX$" id="4w9z1ta2v5Q">
     <property role="TrG5h" value="Images_View" />
+    <property role="3GE5qa" value="widgetassertions" />
     <node concept="103ZXx" id="4w9z1ta2v5R" role="103ZXC" />
     <node concept="103ZXB" id="4w9z1ta2v5S" role="103ZXF">
       <node concept="2mJbI3" id="4w9z1ta2v5X" role="103ZUC">
@@ -420,6 +436,7 @@
   </node>
   <node concept="103ZX$" id="4w9z1ta2$0O">
     <property role="TrG5h" value="ComboBoxes_View" />
+    <property role="3GE5qa" value="widgetassertions" />
     <node concept="103ZXx" id="4w9z1ta2$0P" role="103ZXC" />
     <node concept="103ZXB" id="4w9z1ta2$0Q" role="103ZXF">
       <node concept="7cNA8" id="4w9z1ta2$11" role="103ZUC">
@@ -471,6 +488,7 @@
   </node>
   <node concept="103ZX$" id="4w9z1ta2CTZ">
     <property role="TrG5h" value="ListViews_View" />
+    <property role="3GE5qa" value="widgetassertions" />
     <node concept="103ZXx" id="4w9z1ta2CU0" role="103ZXC" />
     <node concept="103ZXB" id="4w9z1ta2CU1" role="103ZXF">
       <node concept="1i$o6" id="4w9z1ta2CUi" role="103ZUC">
@@ -561,6 +579,7 @@
   </node>
   <node concept="103ZX$" id="4w9z1ta2HPl">
     <property role="TrG5h" value="TableViews_View" />
+    <property role="3GE5qa" value="widgetassertions" />
     <node concept="103ZXx" id="4w9z1ta2HPm" role="103ZXC" />
     <node concept="103ZXB" id="4w9z1ta2HPn" role="103ZXF">
       <node concept="3UVeDL" id="4w9z1ta2HPS" role="103ZUC">
@@ -621,6 +640,7 @@
   </node>
   <node concept="103ZX$" id="4w9z1ta2MKf">
     <property role="TrG5h" value="TreeViews_View" />
+    <property role="3GE5qa" value="widgetassertions" />
     <node concept="103ZXx" id="4w9z1ta2MKg" role="103ZXC" />
     <node concept="103ZXB" id="4w9z1ta2MKh" role="103ZXF">
       <node concept="3Vayhi" id="4w9z1ta2MKH" role="103ZUC">
@@ -686,6 +706,7 @@
   </node>
   <node concept="30n1Qd" id="4w9z1ta2RGG">
     <property role="TrG5h" value="Labels_ViewTest" />
+    <property role="3GE5qa" value="widgetassertions" />
     <ref role="30n1PB" node="4w9z1ta2qa8" resolve="Labels_View" />
     <node concept="3LKzX3" id="4w9z1ta2RGH" role="30n1Qb">
       <property role="3LKBmK" value="My Scenario" />
@@ -713,6 +734,7 @@
   </node>
   <node concept="30n1Qd" id="4w9z1ta2WCW">
     <property role="TrG5h" value="ComboBoxes_ViewTest" />
+    <property role="3GE5qa" value="widgetassertions" />
     <ref role="30n1PB" node="4w9z1ta2$0O" resolve="ComboBoxes_View" />
     <node concept="3LKzX3" id="4w9z1ta2WCX" role="30n1Qb">
       <property role="3LKBmK" value="My Scenario" />
@@ -770,6 +792,7 @@
   </node>
   <node concept="30n1Qd" id="4w9z1ta31_N">
     <property role="TrG5h" value="Images_ViewTest" />
+    <property role="3GE5qa" value="widgetassertions" />
     <ref role="30n1PB" node="4w9z1ta2v5Q" resolve="Images_View" />
     <node concept="3LKzX3" id="4w9z1ta31_O" role="30n1Qb">
       <property role="3LKBmK" value="My Scenario" />
@@ -805,6 +828,7 @@
   </node>
   <node concept="30n1Qd" id="4w9z1ta36yu">
     <property role="TrG5h" value="ListViews_ViewTest" />
+    <property role="3GE5qa" value="widgetassertions" />
     <ref role="30n1PB" node="4w9z1ta2CTZ" resolve="ListViews_View" />
     <node concept="3LKzX3" id="4w9z1ta36yv" role="30n1Qb">
       <property role="3LKBmK" value="My Scenario" />
@@ -950,6 +974,7 @@
   </node>
   <node concept="30n1Qd" id="4w9z1ta3bv0">
     <property role="TrG5h" value="TableViews_ViewTest" />
+    <property role="3GE5qa" value="widgetassertions" />
     <ref role="30n1PB" node="4w9z1ta2HPl" resolve="TableViews_View" />
     <node concept="3LKzX3" id="4w9z1ta3bv1" role="30n1Qb">
       <property role="3LKBmK" value="My Scenario" />
@@ -1049,6 +1074,7 @@
   </node>
   <node concept="30n1Qd" id="4w9z1ta3gry">
     <property role="TrG5h" value="TreeViews_ViewTest" />
+    <property role="3GE5qa" value="widgetassertions" />
     <ref role="30n1PB" node="4w9z1ta2MKf" resolve="TreeViews_View" />
     <node concept="3LKzX3" id="4w9z1ta3grz" role="30n1Qb">
       <property role="3LKBmK" value="My Scenario" />
@@ -1147,6 +1173,31 @@
         <node concept="30l7Wy" id="4w9z1ta3gug" role="DUiTU" />
       </node>
     </node>
+  </node>
+  <node concept="103ZX$" id="7ZadkZWP7lz">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="Commands_View" />
+    <node concept="103ZXx" id="7ZadkZWP7l$" role="103ZXC">
+      <node concept="I_Gu0" id="7ZadkZWPc8A" role="1006ar">
+        <property role="TrG5h" value="CheckX" />
+      </node>
+      <node concept="3f4AKs" id="7ZadkZWPc8C" role="1006ar">
+        <property role="TrG5h" value="ClickX" />
+      </node>
+      <node concept="3f4gK1" id="7ZadkZWPc8H" role="1006ar">
+        <property role="TrG5h" value="FillX" />
+      </node>
+      <node concept="3f3I3T" id="7ZadkZWPc8K" role="1006ar">
+        <property role="TrG5h" value="LoadX" />
+      </node>
+      <node concept="3f6vZ2" id="7ZadkZWPc8N" role="1006ar">
+        <property role="TrG5h" value="SelectX" />
+      </node>
+      <node concept="3taSw6" id="7ZadkZWPc8Q" role="1006ar">
+        <property role="TrG5h" value="SelectX" />
+      </node>
+    </node>
+    <node concept="103ZXB" id="7ZadkZWP7l_" role="103ZXF" />
   </node>
 </model>
 

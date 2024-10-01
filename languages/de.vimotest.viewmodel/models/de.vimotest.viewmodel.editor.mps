@@ -567,7 +567,7 @@
         <ref role="1k5W1q" to="dgt9:F907haLJXS" resolve="LeftBracket" />
       </node>
       <node concept="3F1sOY" id="F907haLJYX" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:F907haLJWs" resolve="events" />
+        <ref role="1NtTu8" to="at53:F907haLJWs" resolve="commands" />
         <node concept="pVoyu" id="F907haLJZ6" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -621,7 +621,7 @@
   </node>
   <node concept="24kQdi" id="F907haMjil">
     <property role="3GE5qa" value="viewmodel" />
-    <ref role="1XX52x" to="at53:F907haLJWl" resolve="ViewModelEvents" />
+    <ref role="1XX52x" to="at53:F907haLJWl" resolve="ViewModelCommands" />
     <node concept="3EZMnI" id="F907haMm84" role="2wV5jI">
       <node concept="PMmxH" id="F907haMm85" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -632,7 +632,7 @@
         <ref role="1k5W1q" to="dgt9:F907haLJXS" resolve="LeftBracket" />
       </node>
       <node concept="3F2HdR" id="F907haLJVP" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:F907haMmbJ" resolve="events" />
+        <ref role="1NtTu8" to="at53:F907haMmbJ" resolve="commands" />
         <node concept="l2Vlx" id="F907haLJVR" role="2czzBx" />
         <node concept="pVoyu" id="F907haLJWb" role="3F10Kt">
           <property role="VOm3f" value="true" />

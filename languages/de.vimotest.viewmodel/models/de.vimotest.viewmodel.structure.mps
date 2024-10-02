@@ -749,7 +749,7 @@
     <property role="3GE5qa" value="viewmodel.commands" />
     <property role="TrG5h" value="CheckCommand" />
     <property role="34LRSv" value="check command" />
-    <ref role="1TJDcQ" node="5QmCreixcQJ" resolve="ClickCommand" />
+    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="ViewModelInteractionCommand" />
   </node>
   <node concept="1TIwiD" id="5QmCreixcQJ">
     <property role="EcuMT" value="6743755284663291311" />
@@ -792,8 +792,18 @@
     <property role="TrG5h" value="ViewModelInteractionCommand" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="evry:F907haLJu3" resolve="AbstractNamedStructType" />
+    <node concept="1TJgyj" id="RX_REsnmLy" role="1TKVEi">
+      <property role="IQ2ns" value="1008128444466031714" />
+      <property role="20kJfa" value="widget" />
+      <ref role="20lvS9" node="F907haLIRF" resolve="ViewWidget" />
+    </node>
     <node concept="PrWs8" id="7ZadkZWP0_m" role="PzmwI">
       <ref role="PrY4T" node="F907haLJXw" resolve="IViewModelCommand" />
+    </node>
+    <node concept="1TJgyi" id="RX_REsnmLz" role="1TKVEl">
+      <property role="IQ2nx" value="1008128444466031715" />
+      <property role="TrG5h" value="hasParameters" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

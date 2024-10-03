@@ -138,7 +138,7 @@
     <property role="2SiFfI" value="list view" />
     <node concept="2WVz4l" id="7WgsBLYp0cl" role="2WV$Zc">
       <property role="3dRBvX" value="true" />
-      <ref role="2WVz4k" node="K_fAvR3Kq_" resolve="WidgetRows" />
+      <ref role="2WVz4k" node="K_fAvR3Kq_" resolve="WidgetListRows" />
     </node>
     <node concept="2WVz4l" id="7WgsBLYp0cm" role="2WV$Zc">
       <ref role="2WVz4k" node="7WgsBLYmzhB" resolve="SelectedRow" />
@@ -238,11 +238,11 @@
     <property role="2SiFfI" value="combobox" />
     <node concept="2WVz4l" id="44HS8_67Csp" role="2WV$Zc">
       <property role="3dRBvX" value="true" />
-      <ref role="2WVz4k" node="44HS8_67Cst" resolve="ChoiceEntries" />
+      <ref role="2WVz4k" node="44HS8_67Cst" resolve="ComboBoxEntries" />
     </node>
     <node concept="2WVz4l" id="44HS8_67Csq" role="2WV$Zc">
       <property role="3dRBvX" value="true" />
-      <ref role="2WVz4k" node="44HS8_67EZV" resolve="SelectedChoice" />
+      <ref role="2WVz4k" node="44HS8_67EZV" resolve="SelectedEntry" />
     </node>
     <node concept="2WVz4l" id="44HS8_67HzI" role="2WV$Zc">
       <ref role="2WVz4k" node="7H4Lpx0an3A" resolve="Text" />

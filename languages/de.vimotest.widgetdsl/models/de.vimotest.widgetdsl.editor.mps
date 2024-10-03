@@ -165,7 +165,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="2exRXkpNhum" role="3EZMnx">
-        <ref role="1NtTu8" to="3255:2exRXkpNhul" />
+        <ref role="1NtTu8" to="3255:2exRXkpNhul" resolve="commands" />
         <node concept="l2Vlx" id="2exRXkpNhun" role="2czzBx" />
         <node concept="pVoyu" id="2exRXkpNhuo" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -388,7 +388,7 @@
           </node>
         </node>
         <node concept="1iCGBv" id="2exRXkpMwGo" role="3EZMnx">
-          <ref role="1NtTu8" to="3255:2exRXkpMlLf" />
+          <ref role="1NtTu8" to="3255:2exRXkpMlLf" resolve="canExecuteByFeature" />
           <node concept="Vb9p2" id="2exRXkpMwGp" role="3F10Kt">
             <property role="Vbekb" value="g1_kEg4/ITALIC" />
           </node>

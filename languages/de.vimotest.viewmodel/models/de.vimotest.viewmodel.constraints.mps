@@ -168,7 +168,7 @@
     <property role="3GE5qa" value="widgets.image" />
     <ref role="1M2myG" to="at53:2s$w3BDwT7a" resolve="ImageDefinitionRef" />
     <node concept="1N5Pfh" id="9CTo7lojBS" role="1Mr941">
-      <ref role="1N5Vy1" to="at53:2s$w3BDwT7b" />
+      <ref role="1N5Vy1" to="at53:2s$w3BDwT7b" resolve="image" />
       <node concept="3dgokm" id="9CTo7lowSl" role="1N6uqs">
         <node concept="3clFbS" id="9CTo7lowSm" role="2VODD2">
           <node concept="3cpWs8" id="9CTo7loy2Q" role="3cqZAp">
@@ -417,7 +417,7 @@
                   <node concept="1uHKPH" id="5ZbqeTIczBk" role="2OqNvi" />
                 </node>
                 <node concept="3Tsc0h" id="5ZbqeTIc$jj" role="2OqNvi">
-                  <ref role="3TtcxE" to="at53:4TXqppWtP_y" />
+                  <ref role="3TtcxE" to="at53:4TXqppWtP_y" resolve="defaultEntries" />
                 </node>
               </node>
             </node>

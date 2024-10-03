@@ -432,7 +432,7 @@
     <property role="3GE5qa" value="widgets.image" />
     <property role="TrG5h" value="ClosedImageSet" />
     <property role="34LRSv" value="closed set of images" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2YeT3IB81gi" role="1TKVEi">
       <property role="IQ2ns" value="3426927311333626898" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -559,7 +559,7 @@
     <property role="3GE5qa" value="widgets.structures.util" />
     <property role="TrG5h" value="ColumnDefinition" />
     <property role="34LRSv" value="column" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7uPLQmTQNN" role="1TKVEi">
       <property role="IQ2ns" value="134781560953466099" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -578,7 +578,7 @@
     <property role="3GE5qa" value="util" />
     <property role="TrG5h" value="StringValue" />
     <property role="34LRSv" value="string value" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="XX1C5VZWmt" role="1TKVEl">
       <property role="IQ2nx" value="1116055435858658717" />
       <property role="TrG5h" value="value" />
@@ -739,7 +739,7 @@
     <property role="3GE5qa" value="widgets.choices" />
     <property role="TrG5h" value="ChoiceEntry" />
     <property role="34LRSv" value="entry" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3mckYa_DPbg" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

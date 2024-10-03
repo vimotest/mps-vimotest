@@ -257,12 +257,12 @@
   <node concept="30n1Qd" id="6fZwY6ifUAh">
     <property role="TrG5h" value="CheckBoxes_ViewTest" />
     <property role="3GE5qa" value="widgetassertions" />
-    <ref role="30n1PB" node="F907haLUeC" resolve="MyView" />
+    <ref role="30n1PB" node="F907haLUeC" resolve="CheckBoxes_View" />
     <node concept="3LKzX3" id="3JdhG1lT89S" role="30n1Qb">
       <property role="3LKBmK" value="My Scenario" />
       <node concept="DUd2R" id="3JdhG1lT89X" role="DUd56">
         <node concept="30nzp_" id="3JdhG1lT90w" role="DUiSb">
-          <ref role="30nzpS" node="6vtOLtwdT_M" resolve="MyFlag" />
+          <ref role="30nzpS" node="6vtOLtwdT_M" resolve="MyFlagWithLabel" />
           <node concept="C4Fn6" id="3JdhG1lT90z" role="30nDbQ">
             <node concept="35STPD" id="3JdhG1lT90E" role="C4Fn7">
               <property role="35S$ZG" value="true" />
@@ -762,7 +762,7 @@
               </node>
             </node>
             <node concept="7cN$h" id="4w9z1ta3qhr" role="7cNBo">
-              <ref role="1B0EOZ" node="4w9z1ta3CZh" resolve="A" />
+              <ref role="1B0EOZ" node="4w9z1ta3CZh" resolve="A1" />
             </node>
             <node concept="35STUl" id="4w9z1ta3HWu" role="7cNBo">
               <property role="3XJMQh" value="true" />

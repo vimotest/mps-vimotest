@@ -185,7 +185,7 @@
     <ref role="1XX52x" to="evry:F907haLJu3" resolve="AbstractNamedStructType" />
     <node concept="3EZMnI" id="F907haMjlR" role="2wV5jI">
       <node concept="PMmxH" id="RX_REsnmO3" role="3EZMnx">
-        <ref role="PMmxG" node="RX_REsnmNY" resolve="AbstractNamedStructType_AliasAndName" />
+        <ref role="PMmxG" node="RX_REsnmNY" resolve="AbstractNamedStructType_AliasAndName_EC" />
       </node>
       <node concept="PMmxH" id="RX_REsnmXX" role="3EZMnx">
         <ref role="PMmxG" node="RX_REsnmVi" resolve="AbstractStructType_Contents_EC" />

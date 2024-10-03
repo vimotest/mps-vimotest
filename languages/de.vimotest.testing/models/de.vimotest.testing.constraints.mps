@@ -244,7 +244,7 @@
     <property role="3GE5qa" value="test.assert" />
     <ref role="1M2myG" to="53m0:2Yd1qrJONf3" resolve="ViewWidgetAssertion" />
     <node concept="1N5Pfh" id="5PGuvQw8rgO" role="1Mr941">
-      <ref role="1N5Vy1" to="53m0:7QMGS97KEFc" />
+      <ref role="1N5Vy1" to="53m0:7QMGS97KEFc" resolve="widget" />
       <node concept="3k9gUc" id="5PGuvQw8rij" role="3kmjI7">
         <node concept="3clFbS" id="5PGuvQw8rik" role="2VODD2">
           <node concept="3clFbF" id="5PGuvQw8rjq" role="3cqZAp">
@@ -253,7 +253,7 @@
               <node concept="2OqwBi" id="5PGuvQw8ruC" role="37vLTJ">
                 <node concept="3kakTB" id="5PGuvQw8rjp" role="2Oq$k0" />
                 <node concept="3TrEf2" id="5PGuvQw8rFm" role="2OqNvi">
-                  <ref role="3Tt5mk" to="53m0:7QMGS97KEFc" />
+                  <ref role="3Tt5mk" to="53m0:7QMGS97KEFc" resolve="widget" />
                 </node>
               </node>
             </node>
@@ -299,7 +299,7 @@
               <node concept="2OqwBi" id="1XfBLRoPWA" role="2Oq$k0">
                 <node concept="3kakTB" id="1XfBLRoPLs" role="2Oq$k0" />
                 <node concept="3TrEf2" id="1XfBLRoQ9o" role="2OqNvi">
-                  <ref role="3Tt5mk" to="53m0:7QMGS97KEFc" />
+                  <ref role="3Tt5mk" to="53m0:7QMGS97KEFc" resolve="widget" />
                 </node>
               </node>
               <node concept="3x8VRR" id="1XfBLRoQMx" role="2OqNvi" />
@@ -372,10 +372,10 @@
             </node>
             <node concept="2OqwBi" id="K_fAvR3LEa" role="3uHU7B">
               <node concept="35c_gC" id="K_fAvR3LEb" role="2Oq$k0">
-                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" />
+                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" resolve="ViewWidgetCheck" />
               </node>
               <node concept="2qgKlT" id="K_fAvR3LEc" role="2OqNvi">
-                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" />
+                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" resolve="getWidgetConceptToCheckByParentNode" />
                 <node concept="nLn13" id="K_fAvR3LEd" role="37wK5m" />
               </node>
             </node>
@@ -397,10 +397,10 @@
             </node>
             <node concept="2OqwBi" id="24MyZrrRA7s" role="3uHU7B">
               <node concept="35c_gC" id="24MyZrrRA7t" role="2Oq$k0">
-                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" />
+                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" resolve="ViewWidgetCheck" />
               </node>
               <node concept="2qgKlT" id="24MyZrrRA7u" role="2OqNvi">
-                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" />
+                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" resolve="getWidgetConceptToCheckByParentNode" />
                 <node concept="nLn13" id="24MyZrrRA7v" role="37wK5m" />
               </node>
             </node>
@@ -422,10 +422,10 @@
             </node>
             <node concept="2OqwBi" id="44HS8_67H_o" role="3uHU7B">
               <node concept="35c_gC" id="44HS8_67H_p" role="2Oq$k0">
-                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" />
+                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" resolve="ViewWidgetCheck" />
               </node>
               <node concept="2qgKlT" id="44HS8_67H_q" role="2OqNvi">
-                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" />
+                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" resolve="getWidgetConceptToCheckByParentNode" />
                 <node concept="nLn13" id="44HS8_67H_r" role="37wK5m" />
               </node>
             </node>
@@ -463,7 +463,7 @@
                   <node concept="1uHKPH" id="5ZbqeTIcydY" role="2OqNvi" />
                 </node>
                 <node concept="3Tsc0h" id="5ZbqeTIcyD8" role="2OqNvi">
-                  <ref role="3TtcxE" to="53m0:5ZbqeTIbciF" />
+                  <ref role="3TtcxE" to="53m0:5ZbqeTIbciF" resolve="entries" />
                 </node>
               </node>
             </node>
@@ -494,10 +494,10 @@
             </node>
             <node concept="2OqwBi" id="2exRXkpP3fc" role="3uHU7B">
               <node concept="35c_gC" id="2exRXkpP3fd" role="2Oq$k0">
-                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" />
+                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" resolve="ViewWidgetCheck" />
               </node>
               <node concept="2qgKlT" id="2exRXkpP3fe" role="2OqNvi">
-                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" />
+                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" resolve="getWidgetConceptToCheckByParentNode" />
                 <node concept="nLn13" id="2exRXkpP3ff" role="37wK5m" />
               </node>
             </node>

@@ -159,7 +159,7 @@
                         <ref role="3cqZAo" node="2exRXkpNa2b" resolve="it" />
                       </node>
                       <node concept="3TrEf2" id="2exRXkpNa2a" role="2OqNvi">
-                        <ref role="3Tt5mk" to="3255:1Yc3x6zozW5" />
+                        <ref role="3Tt5mk" to="3255:1Yc3x6zozW5" resolve="widgetFeature" />
                       </node>
                     </node>
                   </node>
@@ -202,7 +202,7 @@
       </node>
     </node>
     <node concept="1N5Pfh" id="2exRXkpMUIz" role="1Mr941">
-      <ref role="1N5Vy1" to="3255:2exRXkpMlLf" />
+      <ref role="1N5Vy1" to="3255:2exRXkpMlLf" resolve="canExecuteByFeature" />
       <node concept="3dgokm" id="2exRXkpMUKs" role="1N6uqs">
         <node concept="3clFbS" id="2exRXkpMUKt" role="2VODD2">
           <node concept="3clFbF" id="2exRXkpN96$" role="3cqZAp">

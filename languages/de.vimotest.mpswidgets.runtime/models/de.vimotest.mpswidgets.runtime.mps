@@ -643,7 +643,7 @@
                 <node concept="10Oyi0" id="44HS8_5YQuO" role="1tU5fm" />
                 <node concept="3cpWs3" id="44HS8_5YWbS" role="33vP2m">
                   <node concept="37vLTw" id="44HS8_5YWbT" role="3uHU7w">
-                    <ref role="3cqZAo" node="44HS8_5XDq7" resolve="offsetX" />
+                    <ref role="3cqZAo" node="44HS8_5XDq7" resolve="checkboxIconOffsetX" />
                   </node>
                   <node concept="1rXfSq" id="44HS8_5YWbU" role="3uHU7B">
                     <ref role="37wK5l" to="g51k:~EditorCell_Basic.getX()" resolve="getX" />
@@ -672,7 +672,7 @@
                 <node concept="liA8E" id="7szUFELGVuh" role="2OqNvi">
                   <ref role="37wK5l" to="z60i:~Graphics.fillRect(int,int,int,int)" resolve="fillRect" />
                   <node concept="37vLTw" id="44HS8_5YWbV" role="37wK5m">
-                    <ref role="3cqZAo" node="44HS8_5YWbR" resolve="i" />
+                    <ref role="3cqZAo" node="44HS8_5YWbR" resolve="checkboxIconX" />
                   </node>
                   <node concept="1rXfSq" id="7szUFELGVA7" role="37wK5m">
                     <ref role="37wK5l" to="g51k:~EditorCell_Basic.getY()" resolve="getY" />
@@ -782,7 +782,7 @@
                 <node concept="liA8E" id="5k8jvm4Dsl_" role="2OqNvi">
                   <ref role="37wK5l" to="z60i:~Graphics.drawRect(int,int,int,int)" resolve="drawRect" />
                   <node concept="37vLTw" id="44HS8_5YWbW" role="37wK5m">
-                    <ref role="3cqZAo" node="44HS8_5YWbR" resolve="i" />
+                    <ref role="3cqZAo" node="44HS8_5YWbR" resolve="checkboxIconX" />
                   </node>
                   <node concept="1rXfSq" id="5k8jvm4DslB" role="37wK5m">
                     <ref role="37wK5l" to="g51k:~EditorCell_Basic.getY()" resolve="getY" />
@@ -849,7 +849,7 @@
                           <ref role="3cqZAo" node="2AMqE6fDKyA" resolve="offset" />
                         </node>
                         <node concept="37vLTw" id="44HS8_5YWbX" role="3uHU7B">
-                          <ref role="3cqZAo" node="44HS8_5YWbR" resolve="i" />
+                          <ref role="3cqZAo" node="44HS8_5YWbR" resolve="checkboxIconX" />
                         </node>
                       </node>
                       <node concept="3cpWs3" id="2AMqE6fEjMN" role="37wK5m">
@@ -1442,7 +1442,7 @@
         </node>
         <node concept="3clFbJ" id="6PUER2q762J" role="3cqZAp">
           <node concept="37vLTw" id="6PUER2q762K" role="3clFbw">
-            <ref role="3cqZAo" node="6PUER2q7VoY" resolve="myCommitInProgress" />
+            <ref role="3cqZAo" node="6PUER2q7VoY" resolve="commitInProgress" />
           </node>
           <node concept="3clFbS" id="6PUER2q762M" role="3clFbx">
             <node concept="3cpWs6" id="6PUER2q762N" role="3cqZAp" />
@@ -1451,7 +1451,7 @@
         <node concept="3clFbF" id="6PUER2q762O" role="3cqZAp">
           <node concept="37vLTI" id="6PUER2q762P" role="3clFbG">
             <node concept="37vLTw" id="6PUER2q762Q" role="37vLTJ">
-              <ref role="3cqZAo" node="6PUER2q7VoY" resolve="myCommitInProgress" />
+              <ref role="3cqZAo" node="6PUER2q7VoY" resolve="commitInProgress" />
             </node>
             <node concept="3clFbT" id="6PUER2q762R" role="37vLTx">
               <property role="3clFbU" value="true" />
@@ -1464,7 +1464,7 @@
               <node concept="3clFbF" id="6PUER2q763j" role="3cqZAp">
                 <node concept="37vLTI" id="6PUER2q763k" role="3clFbG">
                   <node concept="37vLTw" id="6PUER2q763l" role="37vLTJ">
-                    <ref role="3cqZAo" node="6PUER2q7VoY" resolve="myCommitInProgress" />
+                    <ref role="3cqZAo" node="6PUER2q7VoY" resolve="commitInProgress" />
                   </node>
                   <node concept="3clFbT" id="6PUER2q763m" role="37vLTx" />
                 </node>
@@ -1475,7 +1475,7 @@
             <node concept="3clFbF" id="6PUER2q762U" role="3cqZAp">
               <node concept="2OqwBi" id="6PUER2q8Kql" role="3clFbG">
                 <node concept="37vLTw" id="6PUER2q8BPI" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4g2H4r3Vcal" resolve="myModelAccessor" />
+                  <ref role="3cqZAo" node="4g2H4r3Vcal" resolve="modelAccessor" />
                 </node>
                 <node concept="liA8E" id="6PUER2q8Kqm" role="2OqNvi">
                   <ref role="37wK5l" to="g51k:~ModelAccessor.setText(java.lang.String)" resolve="setText" />
@@ -1496,7 +1496,7 @@
             <node concept="3clFbJ" id="6PUER2q7630" role="3cqZAp">
               <node concept="2ZW3vV" id="6PUER2q7633" role="3clFbw">
                 <node concept="37vLTw" id="6PUER2q7631" role="2ZW6bz">
-                  <ref role="3cqZAo" node="4g2H4r3Vcal" resolve="myModelAccessor" />
+                  <ref role="3cqZAo" node="4g2H4r3Vcal" resolve="modelAccessor" />
                 </node>
                 <node concept="3uibUv" id="6PUER2q7632" role="2ZW6by">
                   <ref role="3uigEE" to="g51k:~TransactionalModelAccessor" resolve="TransactionalModelAccessor" />
@@ -1508,7 +1508,7 @@
                     <node concept="1eOMI4" id="6PUER2q763b" role="2Oq$k0">
                       <node concept="10QFUN" id="6PUER2q7638" role="1eOMHV">
                         <node concept="37vLTw" id="6PUER2q7639" role="10QFUP">
-                          <ref role="3cqZAo" node="4g2H4r3Vcal" resolve="myModelAccessor" />
+                          <ref role="3cqZAo" node="4g2H4r3Vcal" resolve="modelAccessor" />
                         </node>
                         <node concept="3uibUv" id="6PUER2q763a" role="10QFUM">
                           <ref role="3uigEE" to="g51k:~TransactionalModelAccessor" resolve="TransactionalModelAccessor" />
@@ -1849,7 +1849,7 @@
       <property role="TrG5h" value="myModel" />
       <node concept="3Tm6S6" id="7oCDJDn_QjZ" role="1B3o_S" />
       <node concept="3uibUv" id="7oCDJDn_Qk1" role="1tU5fm">
-        <ref role="3uigEE" node="4Ia639Wv8ay" resolve="CustomCellTableModel" />
+        <ref role="3uigEE" node="4Ia639Wv8ay" resolve="CustomCellsTableModel" />
       </node>
     </node>
     <node concept="312cEg" id="2M$ZULqJZG7" role="jymVt">
@@ -1981,7 +1981,7 @@
       <node concept="37vLTG" id="2ChO0gByySo" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="7oCDJDn_PQ9" role="1tU5fm">
-          <ref role="3uigEE" node="4Ia639Wv8ay" resolve="CustomCellTableModel" />
+          <ref role="3uigEE" node="4Ia639Wv8ay" resolve="CustomCellsTableModel" />
         </node>
       </node>
       <node concept="37vLTG" id="2M$ZULqJZG4" role="3clF46">
@@ -1994,7 +1994,7 @@
       <node concept="37vLTG" id="7L_HBKdDOaY" role="3clF46">
         <property role="TrG5h" value="model" />
         <node concept="3uibUv" id="7L_HBKdDOaZ" role="1tU5fm">
-          <ref role="3uigEE" node="4Ia639Wv8ay" resolve="CustomCellTableModel" />
+          <ref role="3uigEE" node="4Ia639Wv8ay" resolve="CustomCellsTableModel" />
         </node>
       </node>
       <node concept="3clFbS" id="7L_HBKdDrS0" role="3clF47">
@@ -2796,7 +2796,7 @@
                             </node>
                             <node concept="2ShNRf" id="7VWmpwG$A0o" role="37wK5m">
                               <node concept="1pGfFk" id="7VWmpwG$KuU" role="2ShVmc">
-                                <ref role="37wK5l" node="7VWmpwG$A3C" resolve="EditorCell_Table.SelectColumnAction" />
+                                <ref role="37wK5l" node="7VWmpwG$A3C" resolve="EditorCell_CustomCellsTable.SelectColumnAction" />
                                 <node concept="37vLTw" id="3GM_nagTrBy" role="37wK5m">
                                   <ref role="3cqZAo" node="7oCDJDn_Rce" resolve="finalColumn" />
                                 </node>
@@ -2827,7 +2827,7 @@
                             </node>
                             <node concept="2ShNRf" id="7VWmpwG$Kv7" role="37wK5m">
                               <node concept="1pGfFk" id="7VWmpwG$Kv8" role="2ShVmc">
-                                <ref role="37wK5l" node="7VWmpwG$A3C" resolve="EditorCell_Table.SelectColumnAction" />
+                                <ref role="37wK5l" node="7VWmpwG$A3C" resolve="EditorCell_CustomCellsTable.SelectColumnAction" />
                                 <node concept="37vLTw" id="3GM_nagTumj" role="37wK5m">
                                   <ref role="3cqZAo" node="7oCDJDn_Rce" resolve="finalColumn" />
                                 </node>
@@ -3194,7 +3194,7 @@
                             <ref role="3cqZAo" node="6g2nPJcoZJw" resolve="it" />
                           </node>
                           <node concept="liA8E" id="6g2nPJcpbxu" role="2OqNvi">
-                            <ref role="37wK5l" node="6g2nPJcmR$8" resolve="modify" />
+                            <ref role="37wK5l" node="6g2nPJcmR$8" resolve="modifyRow" />
                             <node concept="37vLTw" id="6g2nPJcpuBa" role="37wK5m">
                               <ref role="3cqZAo" node="7oCDJDn_Rc1" resolve="rowCell" />
                             </node>
@@ -3929,7 +3929,7 @@
                 <node concept="YS8fn" id="6XSzU5vHfDq" role="3cqZAp">
                   <node concept="2ShNRf" id="6XSzU5vHfFP" role="YScLw">
                     <node concept="1pGfFk" id="6XSzU5vHMj$" role="2ShVmc">
-                      <ref role="37wK5l" node="6XSzU5vHKI9" />
+                      <ref role="37wK5l" node="6XSzU5vHKI9" resolve="CustomCellsColumnNotFoundException" />
                       <node concept="37vLTw" id="4Ia639WBXxJ" role="37wK5m">
                         <ref role="3cqZAo" node="24Hp4kBjNE$" resolve="columnIntex" />
                       </node>
@@ -4989,7 +4989,7 @@
         <node concept="3cpWs6" id="3xeYLPvCxOV" role="3cqZAp">
           <node concept="2ShNRf" id="7oCDJDn_Re$" role="3cqZAk">
             <node concept="1pGfFk" id="7oCDJDn_Re_" role="2ShVmc">
-              <ref role="37wK5l" node="2ChO0gByyS6" resolve="EditorCell_Table" />
+              <ref role="37wK5l" node="2ChO0gByyS6" resolve="EditorCell_CustomCellsTable" />
               <node concept="37vLTw" id="2BHiRxgm6$U" role="37wK5m">
                 <ref role="3cqZAo" node="3xeYLPvCIWB" resolve="editorContext" />
               </node>
@@ -5016,7 +5016,7 @@
         <property role="TrG5h" value="model" />
         <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="3xeYLPvCIWN" role="1tU5fm">
-          <ref role="3uigEE" node="4Ia639Wv8ay" resolve="CustomCellTableModel" />
+          <ref role="3uigEE" node="4Ia639Wv8ay" resolve="CustomCellsTableModel" />
         </node>
       </node>
       <node concept="37vLTG" id="2M$ZULqJYZ6" role="3clF46">
@@ -5158,12 +5158,12 @@
               </node>
               <node concept="2ShNRf" id="7VWmpwG$A3Y" role="33vP2m">
                 <node concept="1pGfFk" id="7VWmpwG$A3Z" role="2ShVmc">
-                  <ref role="37wK5l" node="25NdfgmUnqk" />
+                  <ref role="37wK5l" node="25NdfgmUnqk" resolve="CustomCellsTableColumnSelection" />
                   <node concept="37vLTw" id="3GM_nagTAC1" role="37wK5m">
                     <ref role="3cqZAo" node="7VWmpwG$A3Q" resolve="editorComponent" />
                   </node>
                   <node concept="Xjq3P" id="7VWmpwG$A41" role="37wK5m">
-                    <ref role="1HBi2w" node="2ChO0gBxVPx" resolve="EditorCell_Table" />
+                    <ref role="1HBi2w" node="2ChO0gBxVPx" resolve="EditorCell_CustomCellsTable" />
                   </node>
                   <node concept="37vLTw" id="2BHiRxeuwJ_" role="37wK5m">
                     <ref role="3cqZAo" node="7VWmpwG$A4d" resolve="myColumnNumber" />
@@ -5489,7 +5489,7 @@
         <node concept="3clFbF" id="GliiQ0Vtym" role="3cqZAp">
           <node concept="37vLTI" id="6asZ_Ipevtv" role="3clFbG">
             <node concept="2YIFZM" id="6asZ_IpeqZk" role="37vLTx">
-              <ref role="1Pybhc" to="b8lf:~SelectionInfoImpl$Util" resolve="Util" />
+              <ref role="1Pybhc" to="b8lf:~SelectionInfoImpl$Util" resolve="SelectionInfoImpl.Util" />
               <ref role="37wK5l" to="b8lf:~SelectionInfoImpl$Util.getIntProperty(java.util.Map,java.lang.String)" resolve="getIntProperty" />
               <node concept="37vLTw" id="2BHiRxgmqi9" role="37wK5m">
                 <ref role="3cqZAo" node="24Hp4kBjUO1" resolve="properties" />
@@ -5906,11 +5906,11 @@
           <node concept="3cpWsn" id="6mKznQTje0x" role="3cpWs9">
             <property role="TrG5h" value="that" />
             <node concept="3uibUv" id="6mKznQTje0y" role="1tU5fm">
-              <ref role="3uigEE" node="25NdfgmUnqi" resolve="TableColumnSelection" />
+              <ref role="3uigEE" node="25NdfgmUnqi" resolve="CustomCellsTableColumnSelection" />
             </node>
             <node concept="10QFUN" id="6mKznQTje0$" role="33vP2m">
               <node concept="3uibUv" id="6mKznQTje0_" role="10QFUM">
-                <ref role="3uigEE" node="25NdfgmUnqi" resolve="TableColumnSelection" />
+                <ref role="3uigEE" node="25NdfgmUnqi" resolve="CustomCellsTableColumnSelection" />
               </node>
               <node concept="37vLTw" id="2BHiRxgmpLB" role="10QFUP">
                 <ref role="3cqZAo" node="5xlXjxzlztm" resolve="another" />
@@ -6559,7 +6559,7 @@
     <node concept="312cEg" id="44HS8_62EbC" role="jymVt">
       <property role="TrG5h" value="myButtonCell" />
       <node concept="3uibUv" id="44HS8_62EbE" role="1tU5fm">
-        <ref role="3uigEE" node="44HS8_62E7T" resolve="DropDownButtonCell" />
+        <ref role="3uigEE" node="44HS8_62E7T" resolve="EditorCell_ComboBox.DropDownButtonCell" />
       </node>
       <node concept="3Tm6S6" id="44HS8_62EbF" role="1B3o_S" />
     </node>
@@ -6668,7 +6668,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="39fpbS9yT_G" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="39fpbS9yClw" role="jymVt">
@@ -6688,7 +6688,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="39fpbS9yCl_" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3clFb_" id="39fpbS9xNkR" role="jymVt">
@@ -7174,7 +7174,7 @@
     <node concept="3clFb_" id="5ZbqeTHzEOC" role="jymVt">
       <property role="TrG5h" value="getButtonCell" />
       <node concept="3uibUv" id="5ZbqeTHzEOD" role="3clF45">
-        <ref role="3uigEE" node="44HS8_62E7T" resolve="DropDownButtonCell" />
+        <ref role="3uigEE" node="44HS8_62E7T" resolve="EditorCell_ComboBox.DropDownButtonCell" />
       </node>
       <node concept="3Tm1VV" id="5ZbqeTHzEOE" role="1B3o_S" />
       <node concept="3clFbS" id="5ZbqeTHzEOF" role="3clF47">

@@ -515,7 +515,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="rows" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="5MibNhOn8HA" resolve="WidgetCellCheck" />
+      <ref role="20lvS9" node="5MibNhOn8HA" resolve="ListCheckRow" />
     </node>
     <node concept="PrWs8" id="7WgsBLYp0da" role="PzmwI">
       <ref role="PrY4T" node="7WgsBLYmzis" resolve="IListViewCheckValue" />
@@ -548,7 +548,7 @@
     <property role="TrG5h" value="ListCheckRow" />
     <property role="34LRSv" value="row check" />
     <property role="R4oN_" value="A wrapper around a cell widget check" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5MibNhOn8Oc" role="1TKVEi">
       <property role="IQ2ns" value="6670445900426153228" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -602,7 +602,7 @@
     <property role="TrG5h" value="TreeCheckRow" />
     <property role="34LRSv" value="row check" />
     <property role="R4oN_" value="A wrapper around cell widget checks" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3uwMqjmRx8F" role="1TKVEl">
       <property role="IQ2nx" value="4008425378176438827" />
       <property role="TrG5h" value="expectedDepth" />
@@ -625,7 +625,7 @@
     <property role="TrG5h" value="WidgetCellCheck" />
     <property role="34LRSv" value="cell check" />
     <property role="R4oN_" value="A wrapper around a cell widget check" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="bZSVZcECUb" role="1TKVEi">
       <property role="IQ2ns" value="216141720049061515" />
       <property role="20kJfa" value="cachedWidgetToCheck" />
@@ -673,7 +673,7 @@
     <property role="TrG5h" value="TableCheckRow" />
     <property role="34LRSv" value="row check" />
     <property role="R4oN_" value="A wrapper around cell widget checks" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4Ips5F11GXC" role="1TKVEi">
       <property role="IQ2ns" value="5447508759369142120" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

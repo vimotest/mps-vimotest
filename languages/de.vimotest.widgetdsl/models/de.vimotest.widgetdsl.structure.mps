@@ -181,7 +181,7 @@
     <property role="34LRSv" value="command" />
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="commands" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2exRXkpL6DJ" role="1TKVEl">
       <property role="IQ2nx" value="2567579368931224175" />
       <property role="TrG5h" value="shortName" />
@@ -210,7 +210,7 @@
     <property role="3GE5qa" value="commands" />
     <property role="TrG5h" value="CommandDefinitionRef" />
     <property role="34LRSv" value="command ref" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2exRXkpMlLa" role="1TKVEi">
       <property role="IQ2ns" value="2567579368931548234" />
       <property role="20kJfa" value="command" />

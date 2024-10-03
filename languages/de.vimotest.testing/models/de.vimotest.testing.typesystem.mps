@@ -319,7 +319,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="6DnDTlRVUjf" role="2OqNvi">
-              <ref role="3TtcxE" to="at53:4Ips5F1549y" resolve="columns" />
+              <ref role="3TtcxE" to="at53:4Ips5F1549y" resolve="columnsFeature" />
             </node>
           </node>
         </node>
@@ -371,7 +371,7 @@
             </node>
             <node concept="3Cnw8n" id="bZSVZcAoy8" role="1urrFz">
               <property role="ARO6o" value="true" />
-              <ref role="QpYPw" node="bZSVZcAoy5" resolve="fix_" />
+              <ref role="QpYPw" node="bZSVZcAoy5" resolve="fix_inconsistentTableRow" />
               <node concept="3CnSsL" id="bZSVZcAqpS" role="3Coj4f">
                 <ref role="QkamJ" node="bZSVZcAozh" resolve="columnNodes" />
                 <node concept="37vLTw" id="bZSVZcAr4Z" role="3CoRuB">
@@ -636,7 +636,7 @@
                 </node>
                 <node concept="2OqwBi" id="6DnDTlRVpdp" role="3uHU7B">
                   <node concept="37vLTw" id="6DnDTlRVv6f" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6DnDTlRVv69" resolve="node" />
+                    <ref role="3cqZAo" node="6DnDTlRVv69" resolve="cellCheck" />
                   </node>
                   <node concept="2qgKlT" id="6DnDTlRVpdv" role="2OqNvi">
                     <ref role="37wK5l" to="fwln:7QMGS97JVnb" resolve="getWidget" />
@@ -802,7 +802,7 @@
                             <ref role="3cqZAo" node="bZSVZcC01O" resolve="it" />
                           </node>
                           <node concept="3TrEf2" id="bZSVZcC01M" role="2OqNvi">
-                            <ref role="3Tt5mk" to="at53:7uPLQmTQNN" />
+                            <ref role="3Tt5mk" to="at53:7uPLQmTQNN" resolve="widgetType" />
                           </node>
                         </node>
                         <node concept="37vLTw" id="bZSVZcC01N" role="3ElQJh">
@@ -849,7 +849,7 @@
                   <node concept="2Nt0df" id="bZSVZcBLkV" role="2OqNvi">
                     <node concept="2OqwBi" id="bZSVZcBLUP" role="38cxEo">
                       <node concept="2GrUjf" id="bZSVZcBLUQ" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="bZSVZcB9SJ" resolve="cellCHeck" />
+                        <ref role="2Gs0qQ" node="bZSVZcB9SJ" resolve="cellCheck" />
                       </node>
                       <node concept="2qgKlT" id="bZSVZcBLUR" role="2OqNvi">
                         <ref role="37wK5l" to="fwln:7QMGS97JVnb" resolve="getWidget" />
@@ -1000,7 +1000,7 @@
                       <ref role="35c_gD" to="53m0:XX1C5W18Ry" resolve="WidgetCellCheck" />
                     </node>
                     <node concept="2qgKlT" id="bZSVZcXeu7" role="2OqNvi">
-                      <ref role="37wK5l" to="fwln:bZSVZcSKN8" resolve="makeAndAddCellCheck" />
+                      <ref role="37wK5l" to="fwln:bZSVZcSKN8" resolve="makeAndInsertCellCheck" />
                       <node concept="37vLTw" id="bZSVZcXo4c" role="37wK5m">
                         <ref role="3cqZAo" node="bZSVZcXjrC" resolve="rowNode" />
                       </node>
@@ -1095,7 +1095,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="bZSVZcAlpJ" role="2OqNvi">
-              <ref role="3TtcxE" to="at53:7uPLQmTQNM" />
+              <ref role="3TtcxE" to="at53:7uPLQmTQNM" resolve="columnsFeature" />
             </node>
           </node>
         </node>
@@ -1104,7 +1104,7 @@
         <node concept="3cpWsn" id="bZSVZcAlpL" role="3cpWs9">
           <property role="TrG5h" value="result" />
           <node concept="3uibUv" id="bZSVZcAlpM" role="1tU5fm">
-            <ref role="3uigEE" node="6DnDTlRUPOL" resolve="ConsistencyResult" />
+            <ref role="3uigEE" node="6DnDTlRUPOL" resolve="CellCheckConsistencyHelper.ConsistencyResult" />
           </node>
           <node concept="2YIFZM" id="bZSVZcAlpN" role="33vP2m">
             <ref role="37wK5l" node="6DnDTlRUnIp" resolve="isConsistent" />
@@ -1120,7 +1120,7 @@
                 <ref role="1YBMHb" node="bZSVZcAiT0" resolve="treeCheckRow" />
               </node>
               <node concept="3Tsc0h" id="bZSVZcAlpS" role="2OqNvi">
-                <ref role="3TtcxE" to="53m0:XX1C5W00nU" />
+                <ref role="3TtcxE" to="53m0:XX1C5W00nU" resolve="cellChecks" />
               </node>
             </node>
           </node>
@@ -1147,7 +1147,7 @@
             </node>
             <node concept="3Cnw8n" id="bZSVZcAtiN" role="1urrFz">
               <property role="ARO6o" value="true" />
-              <ref role="QpYPw" node="bZSVZcAoy5" resolve="fix_" />
+              <ref role="QpYPw" node="bZSVZcAoy5" resolve="fix_inconsistentTableRow" />
               <node concept="3CnSsL" id="bZSVZcAtiO" role="3Coj4f">
                 <ref role="QkamJ" node="bZSVZcAozh" resolve="columnNodes" />
                 <node concept="37vLTw" id="bZSVZcAtiP" role="3CoRuB">
@@ -1158,7 +1158,7 @@
                 <ref role="QkamJ" node="bZSVZcAqfH" resolve="cellCheckNodes" />
                 <node concept="2OqwBi" id="bZSVZcAtiR" role="3CoRuB">
                   <node concept="3Tsc0h" id="bZSVZcAtiT" role="2OqNvi">
-                    <ref role="3TtcxE" to="53m0:XX1C5W00nU" />
+                    <ref role="3TtcxE" to="53m0:XX1C5W00nU" resolve="cellChecks" />
                   </node>
                   <node concept="1YBJjd" id="bZSVZcAtom" role="2Oq$k0">
                     <ref role="1YBMHb" node="bZSVZcAiT0" resolve="treeCheckRow" />
@@ -1253,7 +1253,7 @@
               </node>
             </node>
             <node concept="3TrEf2" id="bZSVZcAE2F" role="2OqNvi">
-              <ref role="3Tt5mk" to="at53:1MiWmuIlmTL" resolve="column" />
+              <ref role="3Tt5mk" to="at53:1MiWmuIlmTL" resolve="columnFeature" />
             </node>
           </node>
         </node>
@@ -1304,7 +1304,7 @@
         <node concept="3cpWsn" id="bZSVZcA$Uy" role="3cpWs9">
           <property role="TrG5h" value="result" />
           <node concept="3uibUv" id="bZSVZcA$Uz" role="1tU5fm">
-            <ref role="3uigEE" node="6DnDTlRUPOL" resolve="ConsistencyResult" />
+            <ref role="3uigEE" node="6DnDTlRUPOL" resolve="CellCheckConsistencyHelper.ConsistencyResult" />
           </node>
           <node concept="2YIFZM" id="bZSVZcA$U$" role="33vP2m">
             <ref role="37wK5l" node="6DnDTlRUnIp" resolve="isConsistent" />
@@ -1313,10 +1313,10 @@
               <ref role="1YBMHb" node="bZSVZcAy40" resolve="listCheckRow" />
             </node>
             <node concept="37vLTw" id="bZSVZcAMfP" role="37wK5m">
-              <ref role="3cqZAo" node="bZSVZcAMfL" resolve="list" />
+              <ref role="3cqZAo" node="bZSVZcAMfL" resolve="columnList" />
             </node>
             <node concept="37vLTw" id="bZSVZcAMPI" role="37wK5m">
-              <ref role="3cqZAo" node="bZSVZcAMPC" resolve="list" />
+              <ref role="3cqZAo" node="bZSVZcAMPC" resolve="cellCheckList" />
             </node>
           </node>
         </node>
@@ -1342,7 +1342,7 @@
             </node>
             <node concept="3Cnw8n" id="bZSVZcA$UN" role="1urrFz">
               <property role="ARO6o" value="true" />
-              <ref role="QpYPw" node="bZSVZcAoy5" resolve="fix_" />
+              <ref role="QpYPw" node="bZSVZcAoy5" resolve="fix_inconsistentTableRow" />
               <node concept="3CnSsL" id="bZSVZcA$UO" role="3Coj4f">
                 <ref role="QkamJ" node="bZSVZcAozh" resolve="columnNodes" />
                 <node concept="37vLTw" id="bZSVZcA$UP" role="3CoRuB">

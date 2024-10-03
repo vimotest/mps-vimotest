@@ -309,7 +309,7 @@
     <property role="UprmU" value="select entry" />
   </node>
   <node concept="2WVz3F" id="2exRXkpOcGV">
-    <property role="103t_X" value="widgets" />
+    <property role="103t_X" value="widgets.standard" />
     <property role="3GE5qa" value="widgets" />
     <property role="TrG5h" value="TextBox" />
     <property role="2SiFfI" value="textbox" />

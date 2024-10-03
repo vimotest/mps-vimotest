@@ -1957,5 +1957,25 @@
       <node concept="l2Vlx" id="F907haMjm6" role="2iSdaV" />
     </node>
   </node>
+  <node concept="PKFIW" id="2exRXkpP3dX">
+    <property role="TrG5h" value="TextBoxWidget_Features_EC" />
+    <property role="3GE5qa" value="widgets.standard" />
+    <ref role="1XX52x" to="at53:2exRXkpP3dT" resolve="TextBoxWidget" />
+    <node concept="1PE4EZ" id="2exRXkpP3dZ" role="1PM95z">
+      <ref role="1PE7su" node="4OohpJQEUlZ" resolve="ViewWidget_WidgetFeatures_EC" />
+    </node>
+    <node concept="3EZMnI" id="2exRXkpP3e0" role="2wV5jI">
+      <node concept="2EHx9g" id="2exRXkpP3e1" role="2iSdaV" />
+      <node concept="3F1sOY" id="2exRXkpP3e2" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:2exRXkpP3dU" resolve="textFeature" />
+      </node>
+      <node concept="3F1sOY" id="2exRXkpP3e3" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:2exRXkpP3dV" resolve="visibilityFeature" />
+      </node>
+      <node concept="3F1sOY" id="2exRXkpP3e4" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:2exRXkpP3dW" resolve="enabledFeature" />
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -221,6 +221,9 @@
     <node concept="PrWs8" id="2_MKLxJoJYK" role="PzmwI">
       <ref role="PrY4T" node="7H4Lpx0iNqj" resolve="ILabelCheckValue" />
     </node>
+    <node concept="PrWs8" id="2exRXkpRQp3" role="PzmwI">
+      <ref role="PrY4T" node="2exRXkpP3eI" resolve="ITextBoxCheckValue" />
+    </node>
     <node concept="PrWs8" id="7WnLzoFMEDa" role="PzmwI">
       <ref role="PrY4T" node="3pKiF2wNf5v" resolve="IImageCheckValue" />
     </node>
@@ -258,6 +261,9 @@
     </node>
     <node concept="PrWs8" id="2_MKLxJoJXz" role="PzmwI">
       <ref role="PrY4T" node="7H4Lpx0iNqj" resolve="ILabelCheckValue" />
+    </node>
+    <node concept="PrWs8" id="2exRXkpRJlq" role="PzmwI">
+      <ref role="PrY4T" node="2exRXkpP3eI" resolve="ITextBoxCheckValue" />
     </node>
     <node concept="PrWs8" id="7WnLzoFMFR0" role="PzmwI">
       <ref role="PrY4T" node="3pKiF2wNf5v" resolve="IImageCheckValue" />
@@ -423,6 +429,9 @@
     </node>
     <node concept="PrWs8" id="7H4Lpx0iNr8" role="PzmwI">
       <ref role="PrY4T" node="7H4Lpx0iNqj" resolve="ILabelCheckValue" />
+    </node>
+    <node concept="PrWs8" id="2exRXkpPD5k" role="PzmwI">
+      <ref role="PrY4T" node="2exRXkpP3eI" resolve="ITextBoxCheckValue" />
     </node>
     <node concept="PrWs8" id="6k2oWGbSViZ" role="PzmwI">
       <ref role="PrY4T" node="69Ym88BeFj8" resolve="ICheckBoxCheckValue" />
@@ -745,6 +754,28 @@
       <property role="IQ2ns" value="8650007110383850140" />
       <property role="20kJfa" value="selectedEntry" />
       <ref role="20lvS9" to="at53:3mckYa_DMEC" resolve="ChoiceEntry" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2exRXkpP3eI">
+    <property role="EcuMT" value="2567579368932258734" />
+    <property role="TrG5h" value="ITextBoxCheckValue" />
+    <property role="3GE5qa" value="test.assert.widgets.standard" />
+    <node concept="PrWs8" id="2exRXkpP3eJ" role="PrDN$">
+      <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2exRXkpP3f4">
+    <property role="EcuMT" value="2567579368932258756" />
+    <property role="TrG5h" value="TextBoxCheck" />
+    <property role="34LRSv" value="check textbox" />
+    <property role="3GE5qa" value="test.assert.widgets.standard" />
+    <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
+    <node concept="1TJgyj" id="2exRXkpP3f5" role="1TKVEi">
+      <property role="IQ2ns" value="2567579368932258757" />
+      <property role="20kJfa" value="checks" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="2exRXkpP3eI" resolve="ITextBoxCheckValue" />
     </node>
   </node>
 </model>

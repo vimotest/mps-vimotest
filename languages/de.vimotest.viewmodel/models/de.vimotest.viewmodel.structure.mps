@@ -806,5 +806,33 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2exRXkpP3dT">
+    <property role="EcuMT" value="2567579368932258681" />
+    <property role="TrG5h" value="TextBoxWidget" />
+    <property role="34LRSv" value="textbox" />
+    <property role="3GE5qa" value="widgets.standard" />
+    <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
+    <node concept="1TJgyj" id="2exRXkpP3dU" role="1TKVEi">
+      <property role="IQ2ns" value="2567579368932258682" />
+      <property role="20kJfa" value="textFeature" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7H4Lpx0iNpu" resolve="TextFeature" />
+    </node>
+    <node concept="1TJgyj" id="2exRXkpP3dV" role="1TKVEi">
+      <property role="IQ2ns" value="2567579368932258683" />
+      <property role="20kJfa" value="visibilityFeature" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4SDJcZBNVBT" resolve="VisibilityFeature" />
+    </node>
+    <node concept="1TJgyj" id="2exRXkpP3dW" role="1TKVEi">
+      <property role="IQ2ns" value="2567579368932258684" />
+      <property role="20kJfa" value="enabledFeature" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
+    </node>
+  </node>
 </model>
 

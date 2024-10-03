@@ -57,6 +57,9 @@
       <concept id="7445061853131767032" name="de.vimotest.testing.structure.ThenDescriptionWithAssert" flags="ng" index="DUd2R">
         <child id="7445061853131768388" name="assert" index="DUiSb" />
       </concept>
+      <concept id="2567579368932258756" name="de.vimotest.testing.structure.TextBoxCheck" flags="ng" index="UtuKh">
+        <child id="2567579368932258757" name="checks" index="UtuKg" />
+      </concept>
       <concept id="8882441622785832606" name="de.vimotest.testing.structure.LabelCheck" flags="ng" index="V3Zc6">
         <child id="8882441622785832607" name="checks" index="V3Zc7" />
       </concept>
@@ -166,6 +169,11 @@
         <child id="7278489671513126078" name="textFeature" index="1ISttP" />
       </concept>
       <concept id="4989287372960777710" name="de.vimotest.viewmodel.structure.CheckCommand" flags="ng" index="I_Gu0" />
+      <concept id="2567579368932258681" name="de.vimotest.viewmodel.structure.TextBoxWidget" flags="ng" index="UtuMG">
+        <child id="2567579368932258684" name="enabledFeature" index="UtuMD" />
+        <child id="2567579368932258683" name="visibilityFeature" index="UtuMI" />
+        <child id="2567579368932258682" name="textFeature" index="UtuMJ" />
+      </concept>
       <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6">
         <property id="3850800795622718474" name="defaultText" index="3A$Jrx" />
       </concept>
@@ -1198,6 +1206,53 @@
       </node>
     </node>
     <node concept="103ZXB" id="7ZadkZWP7l_" role="103ZXF" />
+  </node>
+  <node concept="103ZX$" id="2exRXkpRk2R">
+    <property role="TrG5h" value="TextBoxes_View" />
+    <property role="3GE5qa" value="widgetassertions" />
+    <node concept="103ZXx" id="2exRXkpRk2S" role="103ZXC" />
+    <node concept="103ZXB" id="2exRXkpRk2T" role="103ZXF">
+      <node concept="UtuMG" id="2exRXkpRtDe" role="103ZUC">
+        <property role="TrG5h" value="MyTextBox" />
+        <node concept="V3Zf6" id="2exRXkpRtDg" role="UtuMJ">
+          <property role="3A$Jrx" value="My Text" />
+        </node>
+        <node concept="C4FCg" id="2exRXkpRtDi" role="UtuMI">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCh" id="2exRXkpRtDk" role="UtuMD">
+          <property role="2VM7R0" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="30n1Qd" id="2exRXkpRoQe">
+    <property role="TrG5h" value="TextBoxes_ViewTest" />
+    <property role="3GE5qa" value="widgetassertions" />
+    <ref role="30n1PB" node="2exRXkpRk2R" resolve="TextBoxes_View" />
+    <node concept="3LKzX3" id="2exRXkpRoQf" role="30n1Qb">
+      <property role="3LKBmK" value="My Scenario" />
+      <node concept="DUd2R" id="2exRXkpRoQg" role="DUd56">
+        <node concept="30nzp_" id="2exRXkpRoQh" role="DUiSb">
+          <ref role="30nzpS" node="2exRXkpRtDe" resolve="MyTextBox" />
+          <node concept="UtuKh" id="2exRXkpRtDm" role="30nDbQ">
+            <node concept="V3Zdv" id="2exRXkpRtDn" role="UtuKg">
+              <property role="3egigc" value="Some entered Input" />
+            </node>
+            <node concept="35STUl" id="2exRXkpSsdE" role="UtuKg">
+              <property role="3XJMQh" value="true" />
+            </node>
+            <node concept="35STUn" id="2exRXkpSsdF" role="UtuKg">
+              <property role="3XJem9" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1IbZgy" id="2exRXkpRoQm" role="DUd2K">
+        <property role="1IbZgB" value="some" />
+        <node concept="30l7Wy" id="2exRXkpRoQn" role="DUiTU" />
+      </node>
+    </node>
   </node>
 </model>
 

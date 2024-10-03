@@ -3462,5 +3462,40 @@
       <node concept="l2Vlx" id="7a1oxbxVNAI" role="2iSdaV" />
     </node>
   </node>
+  <node concept="22mcaB" id="2exRXkpP3eK">
+    <property role="TrG5h" value="ITextBoxCheckValue_SubstituteMenu" />
+    <property role="3GE5qa" value="test.assert.widgets.standard" />
+    <ref role="aqKnT" to="53m0:2exRXkpP3eI" resolve="ITextBoxCheckValue" />
+    <node concept="22hDWj" id="2exRXkpP3eL" role="22hAXT" />
+    <node concept="2VfDsV" id="2exRXkpP3eM" role="3ft7WO">
+      <node concept="1GpqWn" id="2exRXkpP3eN" role="1Go12V">
+        <node concept="3clFbS" id="2exRXkpP3eO" role="2VODD2">
+          <node concept="3clFbF" id="2exRXkpP3eP" role="3cqZAp">
+            <node concept="3fqX7Q" id="2exRXkpP3eQ" role="3clFbG">
+              <node concept="2YIFZM" id="2exRXkpP3eR" role="3fr31v">
+                <ref role="37wK5l" node="2_MKLxJcA3M" />
+                <ref role="1Pybhc" node="2_MKLxJcA2h" />
+                <node concept="1GpqW3" id="2exRXkpP3eS" role="37wK5m" />
+                <node concept="3bvxqY" id="2exRXkpP3eT" role="37wK5m" />
+                <node concept="1J7kdh" id="2exRXkpP3eU" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="2exRXkpP3fg">
+    <property role="TrG5h" value="TextBoxCheck_Inspector_Checks_EC" />
+    <property role="3GE5qa" value="test.assert.widgets.standard" />
+    <ref role="1XX52x" to="53m0:2exRXkpP3f4" resolve="TextBoxCheck" />
+    <node concept="1PE4EZ" id="2exRXkpP3fi" role="1PM95z">
+      <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_Checks_EC" />
+    </node>
+    <node concept="3F2HdR" id="2exRXkpP3fj" role="2wV5jI">
+      <ref role="1NtTu8" to="53m0:2exRXkpP3f5" resolve="checks" />
+      <node concept="2iRkQZ" id="2exRXkpP3fk" role="2czzBx" />
+    </node>
+  </node>
 </model>
 

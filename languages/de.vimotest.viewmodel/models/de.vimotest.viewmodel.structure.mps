@@ -806,5 +806,47 @@
     <property role="34LRSv" value="generic command" />
     <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
   </node>
+  <node concept="1TIwiD" id="6kjlgUu$Xsu">
+    <property role="EcuMT" value="7283258543666616094" />
+    <property role="TrG5h" value="CheckCommandDefinitionCommand" />
+    <property role="34LRSv" value="check" />
+    <property role="3GE5qa" value="commands" />
+    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+  </node>
+  <node concept="1TIwiD" id="6kjlgUu$Xsv">
+    <property role="EcuMT" value="7283258543666616095" />
+    <property role="TrG5h" value="ClickCommandDefinitionCommand" />
+    <property role="34LRSv" value="click" />
+    <property role="3GE5qa" value="commands" />
+    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+  </node>
+  <node concept="1TIwiD" id="6kjlgUu$Xsw">
+    <property role="EcuMT" value="7283258543666616096" />
+    <property role="TrG5h" value="FillTextCommandCommand" />
+    <property role="34LRSv" value="fill text" />
+    <property role="3GE5qa" value="commands" />
+    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+  </node>
+  <node concept="1TIwiD" id="6kjlgUu$Xsx">
+    <property role="EcuMT" value="7283258543666616097" />
+    <property role="TrG5h" value="LoadViewCommandCommand" />
+    <property role="34LRSv" value="load view" />
+    <property role="3GE5qa" value="commands" />
+    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+  </node>
+  <node concept="1TIwiD" id="6kjlgUu$Xsy">
+    <property role="EcuMT" value="7283258543666616098" />
+    <property role="TrG5h" value="SelectRowCommandCommand" />
+    <property role="34LRSv" value="select row" />
+    <property role="3GE5qa" value="commands" />
+    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+  </node>
+  <node concept="1TIwiD" id="6kjlgUu$Xsz">
+    <property role="EcuMT" value="7283258543666616099" />
+    <property role="TrG5h" value="SelectEntryCommandCommand" />
+    <property role="34LRSv" value="select entry" />
+    <property role="3GE5qa" value="commands" />
+    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+  </node>
 </model>
 

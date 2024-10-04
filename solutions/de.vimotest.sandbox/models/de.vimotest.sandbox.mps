@@ -168,7 +168,6 @@
         <child id="5213916851000129517" name="enabledFeature" index="C4FCH" />
         <child id="7278489671513126078" name="textFeature" index="1ISttP" />
       </concept>
-      <concept id="4989287372960777710" name="de.vimotest.viewmodel.structure.CheckCommand" flags="ng" index="I_Gu0" />
       <concept id="2567579368932258681" name="de.vimotest.viewmodel.structure.TextBoxWidget" flags="ng" index="UtuMG">
         <child id="2567579368932258684" name="enabledFeature" index="UtuMD" />
         <child id="2567579368932258683" name="visibilityFeature" index="UtuMI" />
@@ -193,11 +192,6 @@
       <concept id="2820520252859978186" name="de.vimotest.viewmodel.structure.ImageDefinitionRef" flags="ng" index="3eDL7N">
         <reference id="2820520252859978187" name="image" index="3eDL7M" />
       </concept>
-      <concept id="6743755284664566090" name="de.vimotest.viewmodel.structure.LoadViewCommand" flags="ng" index="3f3I3T" />
-      <concept id="6743755284663479730" name="de.vimotest.viewmodel.structure.FillTextCommand" flags="ng" index="3f4gK1" />
-      <concept id="6743755284663291311" name="de.vimotest.viewmodel.structure.ClickCommand" flags="ng" index="3f4AKs" />
-      <concept id="6743755284663983729" name="de.vimotest.viewmodel.structure.SelectRowCommand" flags="ng" index="3f6vZ2" />
-      <concept id="3467946101314360988" name="de.vimotest.viewmodel.structure.SelectItemCommand" flags="ng" index="3taSw6" />
       <concept id="7497173622928201774" name="de.vimotest.viewmodel.structure.ImageDefinitionRegistry" flags="ng" index="1u6Luu">
         <child id="3426927311333626907" name="closedSets" index="28FJ0w" />
         <child id="7497173622928201831" name="images" index="1u6Lvn" />
@@ -224,6 +218,7 @@
         <child id="875174318840945209" name="enabledFeature" index="3Vayhu" />
         <child id="875174318840945208" name="visibilityFeature" index="3Vayhv" />
       </concept>
+      <concept id="7283258543666616094" name="de.vimotest.viewmodel.structure.CheckCommandDefinitionCommand" flags="ng" index="3Vw88g" />
     </language>
   </registry>
   <node concept="103ZX$" id="F907haLUeC">
@@ -1186,23 +1181,8 @@
     <property role="3GE5qa" value="commands" />
     <property role="TrG5h" value="Commands_View" />
     <node concept="103ZXx" id="7ZadkZWP7l$" role="103ZXC">
-      <node concept="I_Gu0" id="7ZadkZWPc8A" role="1006ar">
-        <property role="TrG5h" value="CheckX" />
-      </node>
-      <node concept="3f4AKs" id="7ZadkZWPc8C" role="1006ar">
-        <property role="TrG5h" value="ClickX" />
-      </node>
-      <node concept="3f4gK1" id="7ZadkZWPc8H" role="1006ar">
-        <property role="TrG5h" value="FillX" />
-      </node>
-      <node concept="3f3I3T" id="7ZadkZWPc8K" role="1006ar">
-        <property role="TrG5h" value="LoadX" />
-      </node>
-      <node concept="3f6vZ2" id="7ZadkZWPc8N" role="1006ar">
-        <property role="TrG5h" value="SelectX" />
-      </node>
-      <node concept="3taSw6" id="7ZadkZWPc8Q" role="1006ar">
-        <property role="TrG5h" value="SelectX" />
+      <node concept="3Vw88g" id="6kjlgUuCHHC" role="1006ar">
+        <property role="TrG5h" value="CheckCommand" />
       </node>
     </node>
     <node concept="103ZXB" id="7ZadkZWP7l_" role="103ZXF" />

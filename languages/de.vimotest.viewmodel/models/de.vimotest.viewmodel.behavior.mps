@@ -4744,27 +4744,6 @@
       <node concept="10P_77" id="44HS8_67H$K" role="3clF45" />
     </node>
   </node>
-  <node concept="13h7C7" id="RX_REsoLFL">
-    <property role="3GE5qa" value="viewmodel.commands" />
-    <ref role="13h7C2" to="at53:4kXwATFEOnI" resolve="CheckCommand" />
-    <node concept="13hLZK" id="RX_REsoLFM" role="13h7CW">
-      <node concept="3clFbS" id="RX_REsoLFN" role="2VODD2">
-        <node concept="3clFbF" id="4kXwATFEOHW" role="3cqZAp">
-          <node concept="37vLTI" id="4kXwATFEOHX" role="3clFbG">
-            <node concept="3clFbT" id="4kXwATFEOHY" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
-            <node concept="2OqwBi" id="4kXwATFEOHZ" role="37vLTJ">
-              <node concept="13iPFW" id="4kXwATFEOI0" role="2Oq$k0" />
-              <node concept="3TrcHB" id="4kXwATFEOI1" role="2OqNvi">
-                <ref role="3TsBF5" to="at53:RX_REsnmLz" resolve="hasParameters" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="13h7C7" id="2exRXkpP3e5">
     <property role="TrG5h" value="TextBoxWidget_Behavior" />
     <property role="3GE5qa" value="widgets.standard" />

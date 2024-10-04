@@ -744,59 +744,12 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4kXwATFEOnI">
-    <property role="EcuMT" value="4989287372960777710" />
-    <property role="3GE5qa" value="viewmodel.commands" />
-    <property role="TrG5h" value="CheckCommand" />
-    <property role="34LRSv" value="check command" />
-    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="ViewModelInteractionCommand" />
-  </node>
-  <node concept="1TIwiD" id="5QmCreixcQJ">
-    <property role="EcuMT" value="6743755284663291311" />
-    <property role="3GE5qa" value="viewmodel.commands" />
-    <property role="TrG5h" value="ClickCommand" />
-    <property role="34LRSv" value="click event" />
-    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="ViewModelInteractionCommand" />
-  </node>
-  <node concept="1TIwiD" id="5QmCreixUQM">
-    <property role="EcuMT" value="6743755284663479730" />
-    <property role="3GE5qa" value="viewmodel.commands" />
-    <property role="TrG5h" value="FillTextCommand" />
-    <property role="34LRSv" value="fill command" />
-    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="ViewModelInteractionCommand" />
-  </node>
-  <node concept="1TIwiD" id="5QmCreiA45a">
-    <property role="EcuMT" value="6743755284664566090" />
-    <property role="3GE5qa" value="viewmodel.commands" />
-    <property role="TrG5h" value="LoadViewCommand" />
-    <property role="34LRSv" value="load command" />
-    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="ViewModelInteractionCommand" />
-  </node>
-  <node concept="1TIwiD" id="30wBDFH2Lqs">
-    <property role="EcuMT" value="3467946101314360988" />
-    <property role="3GE5qa" value="viewmodel.commands" />
-    <property role="TrG5h" value="SelectItemCommand" />
-    <property role="34LRSv" value="select item command" />
-    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="ViewModelInteractionCommand" />
-  </node>
-  <node concept="1TIwiD" id="5QmCreizPTL">
-    <property role="EcuMT" value="6743755284663983729" />
-    <property role="3GE5qa" value="viewmodel.commands" />
-    <property role="TrG5h" value="SelectRowCommand" />
-    <property role="34LRSv" value="select command" />
-    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="ViewModelInteractionCommand" />
-  </node>
   <node concept="1TIwiD" id="7ZadkZWNZxB">
     <property role="EcuMT" value="9208231005772576871" />
-    <property role="3GE5qa" value="viewmodel.commands" />
-    <property role="TrG5h" value="ViewModelInteractionCommand" />
+    <property role="3GE5qa" value="commands.base" />
+    <property role="TrG5h" value="AbstractViewModelParameterizedCommand" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="evry:F907haLJu3" resolve="AbstractNamedStructType" />
-    <node concept="1TJgyj" id="RX_REsnmLy" role="1TKVEi">
-      <property role="IQ2ns" value="1008128444466031714" />
-      <property role="20kJfa" value="widget" />
-      <ref role="20lvS9" node="F907haLIRF" resolve="ViewWidget" />
-    </node>
     <node concept="PrWs8" id="7ZadkZWP0_m" role="PzmwI">
       <ref role="PrY4T" node="F907haLJXw" resolve="IViewModelCommand" />
     </node>
@@ -833,6 +786,25 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6kjlgUuu6dE">
+    <property role="EcuMT" value="7283258543664817002" />
+    <property role="3GE5qa" value="commands.base" />
+    <property role="TrG5h" value="ViewWidgetCommand" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+    <node concept="1TJgyj" id="6kjlgUuu6dF" role="1TKVEi">
+      <property role="IQ2ns" value="7283258543664817003" />
+      <property role="20kJfa" value="widget" />
+      <ref role="20lvS9" node="F907haLIRF" resolve="ViewWidget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6kjlgUuw6ea">
+    <property role="EcuMT" value="7283258543665341322" />
+    <property role="3GE5qa" value="commands.base" />
+    <property role="TrG5h" value="GenericViewModelCommand" />
+    <property role="34LRSv" value="generic command" />
+    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
   </node>
 </model>
 

@@ -8,6 +8,8 @@
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
+    <import index="mk2q" ref="r:394bda66-ac7c-48d2-8b30-5ebcc56c2d2a(alfi.build)" />
+    <import index="gwjr" ref="r:9d11b55c-368f-4d5a-8409-18718d1d42b0(CppBaseLanguage.build)" />
   </imports>
   <registry>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
@@ -175,6 +177,9 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="5tK9548cRhc" role="1l3spd">
+      <property role="TrG5h" value="project_home" />
+    </node>
     <node concept="398rNT" id="OD4q9CUuk9" role="1l3spd">
       <property role="TrG5h" value="dependencies_home" />
       <node concept="55IIr" id="249Z$ScP_Ni" role="398pKh">
@@ -189,19 +194,31 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="5tK9548cRhc" role="1l3spd">
-      <property role="TrG5h" value="project_home" />
-    </node>
-    <node concept="398rNT" id="5tK9548cRhd" role="1l3spd">
-      <property role="TrG5h" value="mps.macro.project_home" />
-      <node concept="398BVA" id="5tK9548cRhe" role="398pKh">
-        <ref role="398BVh" node="5tK9548cRhc" resolve="project_home" />
+    <node concept="398rNT" id="37zNn5LMY95" role="1l3spd">
+      <property role="TrG5h" value="platform_lib" />
+      <node concept="398BVA" id="2SGDmeInqRi" role="398pKh">
+        <ref role="398BVh" node="5tK9548cRh7" resolve="mps_home" />
+        <node concept="2Ry0Ak" id="2SGDmeInqRl" role="iGT6I">
+          <property role="2Ry0Am" value="lib" />
+        </node>
       </node>
     </node>
     <node concept="2sgV4H" id="220dcIkyAiy" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="220dcIkyAiz" role="2JcizS">
         <ref role="398BVh" node="5tK9548cRh7" resolve="mps_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="4_8VHnqUYmT" role="1l3spa">
+      <ref role="1l3spb" to="mk2q:5tK9548cmXy" resolve="alfi-build" />
+      <node concept="398BVA" id="4_8VHnqUYmV" role="2JcizS">
+        <ref role="398BVh" node="OD4q9CUuk9" resolve="dependencies_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="5pGl0ZriJ3J" role="1l3spa">
+      <ref role="1l3spb" to="gwjr:4h_5oU0U7hs" resolve="CppBaseLanguage" />
+      <node concept="398BVA" id="5pGl0ZriJ3Q" role="2JcizS">
+        <ref role="398BVh" node="OD4q9CUuk9" resolve="dependencies_home" />
       </node>
     </node>
     <node concept="1l3spV" id="220dcIkyAjn" role="1l3spN">
@@ -800,6 +817,16 @@
             <node concept="3qWCbU" id="220dcIkyGSQ" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4_8VHnqUYnG" role="3bR37C">
+          <node concept="3bR9La" id="4_8VHnqUYnH" role="1SiIV1">
+            <ref role="3bR37D" to="mk2q:5tK9548cRSQ" resolve="alfi.build" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4_8VHnqVero" role="3bR37C">
+          <node concept="3bR9La" id="4_8VHnqVerp" role="1SiIV1">
+            <ref role="3bR37D" to="gwjr:4h_5oU0U7hO" resolve="CppBaseLanguage.build" />
           </node>
         </node>
       </node>

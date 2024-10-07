@@ -6,10 +6,12 @@
   <property name="build.tmp" location="${build.dir}/tmp/mps-vimotest" />
   <property name="build.layout" location="${build.dir}/artifacts/mps-vimotest" />
   <property name="mps_home" location="${basedir}/build/mps-bundle/mps" />
-  <property name="dependencies_home" location="${basedir}/build/mps-bundle/dependencies" />
   <property name="project_home" location="" />
-  <property name="mps.macro.project_home" location="${project_home}" />
+  <property name="dependencies_home" location="${basedir}/build/mps-bundle/dependencies" />
+  <property name="platform_lib" location="${mps_home}/lib" />
   <property name="artifacts.mps" location="${mps_home}" />
+  <property name="artifacts.alfi-build" location="${dependencies_home}" />
+  <property name="artifacts.CppBaseLanguage" location="${dependencies_home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
@@ -1000,6 +1002,8 @@
     <echo message="generating" />
     <generate fork="true" logLevel="${mps.ant.log}">      
       <settings refid="m2m-defaults" />
+      <plugin path="${artifacts.CppBaseLanguage}/CppBaseLanguage" id="CppBaseLanguage" />
+      <plugin path="${artifacts.alfi-build}/alfi" id="alfi" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" id="jetbrains.mps.core" />
@@ -1033,9 +1037,9 @@
         <arg value="--add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED" />
       </jvmargs>
       <macro name="mps_home" path="${mps_home}" />
-      <macro name="dependencies_home" path="${dependencies_home}" />
       <macro name="project_home" path="${project_home}" />
-      <macro name="mps.macro.project_home" path="${mps.macro.project_home}" />
+      <macro name="dependencies_home" path="${dependencies_home}" />
+      <macro name="platform_lib" path="${platform_lib}" />
     </generate>
   </target>
   
@@ -1711,7 +1715,10 @@
       <src>
         <path location="${basedir}/solutions/de.vimotest.build/source_gen" />
       </src>
-      <classpath />
+      <classpath>
+        <fileset file="${artifacts.CppBaseLanguage}/CppBaseLanguage/languages/CppBaseLanguage/CppBaseLanguage.build.jar" />
+        <fileset file="${artifacts.alfi-build}/alfi/languages/alfi-support/alfi.build.jar" />
+      </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/de.vimotest.build">
       <fileset dir="${basedir}/solutions/de.vimotest.build/source_gen" excludes="**/*.java" />
@@ -1916,7 +1923,6 @@
       <plugin id="jetbrains.mps.testing" path="${artifacts.mps}/plugins/mps-testing" />
       <plugin id="jetbrains.mps.editor.tooltips" path="${artifacts.mps}/plugins/mps-tooltips" />
       <plugin id="de.vimotest" path="${build.tmp}/default/mps-vimotest.zip/mps-vimotest" />
-      <macro name="project_home" path="${project_home}" />
       <project path="${basedir}" />
       <testmodules>        
         <path refid="mps.tests.path" />

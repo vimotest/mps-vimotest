@@ -5,12 +5,17 @@
     <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="0" />
     <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.testing" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="gkn4" ref="r:fae4a196-11c4-4868-9ebd-1379c8e56907(alfStandardModelLibrary)" />
+  </imports>
   <registry>
     <language id="611ecc9e-0703-4ab9-a13c-fb396c607716" name="de.vimotest.types">
       <concept id="777152910168881023" name="de.vimotest.types.structure.AbstractStructType" flags="ng" index="103Zsb">
         <child id="777152910168882908" name="contents" index="103ZUC" />
       </concept>
+      <concept id="7808764115844896567" name="de.vimotest.types.structure.BoolType" flags="ng" index="1nBHEw" />
+      <concept id="7808764115844956430" name="de.vimotest.types.structure.IntType" flags="ng" index="1nBWMp" />
+      <concept id="7808764115843597086" name="de.vimotest.types.structure.FieldStructContent" flags="ng" index="1nWCU9" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -116,6 +121,11 @@
         <child id="875174318840945283" name="checks" index="3Vayj$" />
       </concept>
     </language>
+    <language id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi">
+      <concept id="2021446509811517476" name="alfi.structure.TypedElementDefinition" flags="ng" index="3xMlr7">
+        <child id="2021446509811517477" name="typeName" index="3xMlr6" />
+      </concept>
+    </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
       <concept id="9155943921465570426" name="de.vimotest.viewmodel.structure.ListViewWidget" flags="ng" index="1i$o6">
         <child id="9155943921465570428" name="enabledFeature" index="1i$o0" />
@@ -125,6 +135,9 @@
         <child id="2058973407270497905" name="columnFeature" index="2MLTWm" />
       </concept>
       <concept id="9155943921465570409" name="de.vimotest.viewmodel.structure.SelectedRowFeature" flags="ng" index="1i$ol" />
+      <concept id="9208231005772576871" name="de.vimotest.viewmodel.structure.AbstractViewModelParameterizedCommand" flags="ng" index="231sOC">
+        <property id="1008128444466031715" name="hasParameters" index="2hCfGp" />
+      </concept>
       <concept id="885291782481719619" name="de.vimotest.viewmodel.structure.ViewWidgetFeature" flags="ng" index="25b05G">
         <property id="5555266676524595291" name="supported" index="2VM7R0" />
       </concept>
@@ -1183,9 +1196,19 @@
     <node concept="103ZXx" id="7ZadkZWP7l$" role="103ZXC">
       <node concept="3Vw88g" id="6kjlgUuCHHC" role="1006ar">
         <property role="TrG5h" value="CheckCommand" />
+        <property role="2hCfGp" value="true" />
+        <node concept="1nWCU9" id="6LujpsVJLBT" role="103ZUC">
+          <property role="TrG5h" value="IsChecked" />
+          <node concept="1nBHEw" id="6LujpsVK_GY" role="3xMlr6" />
+        </node>
       </node>
     </node>
-    <node concept="103ZXB" id="7ZadkZWP7l_" role="103ZXF" />
+    <node concept="103ZXB" id="7ZadkZWP7l_" role="103ZXF">
+      <node concept="1nWCU9" id="6LujpsVJtUX" role="103ZUC">
+        <property role="TrG5h" value="MyField" />
+        <node concept="1nBWMp" id="6LujpsVK_H5" role="3xMlr6" />
+      </node>
+    </node>
   </node>
   <node concept="103ZX$" id="2exRXkpRk2R">
     <property role="TrG5h" value="TextBoxes_View" />

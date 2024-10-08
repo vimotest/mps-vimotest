@@ -1946,7 +1946,7 @@
         <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
       </node>
       <node concept="1iCGBv" id="5QmCreitFAI" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:6kjlgUuu6dF" />
+        <ref role="1NtTu8" to="at53:6kjlgUuu6dF" resolve="widget" />
         <node concept="1sVBvm" id="5QmCreitFAK" role="1sWHZn">
           <node concept="3F0A7n" id="5QmCreitFAS" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -1973,7 +1973,7 @@
           <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
         </node>
         <node concept="1iCGBv" id="RX_REsnmY8" role="3EZMnx">
-          <ref role="1NtTu8" to="at53:6kjlgUuu6dF" />
+          <ref role="1NtTu8" to="at53:6kjlgUuu6dF" resolve="widget" />
           <node concept="1sVBvm" id="RX_REsnmYa" role="1sWHZn">
             <node concept="3F0A7n" id="RX_REsnmYe" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -1989,7 +1989,7 @@
                 <node concept="2OqwBi" id="RX_REsnqM4" role="2Oq$k0">
                   <node concept="pncrf" id="RX_REsnql4" role="2Oq$k0" />
                   <node concept="3TrEf2" id="RX_REsnsUO" role="2OqNvi">
-                    <ref role="3Tt5mk" to="at53:6kjlgUuu6dF" />
+                    <ref role="3Tt5mk" to="at53:6kjlgUuu6dF" resolve="widget" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="RX_REsntRn" role="2OqNvi" />

@@ -426,5 +426,25 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="6LujpsVKDD4">
+    <property role="3GE5qa" value="commands.base" />
+    <ref role="1M2myG" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+    <node concept="9SLcT" id="6LujpsVKIs5" role="9SGkU">
+      <node concept="3clFbS" id="6LujpsVKIs6" role="2VODD2">
+        <node concept="3clFbF" id="6LujpsVKIDG" role="3cqZAp">
+          <node concept="3fqX7Q" id="6LujpsVKUqJ" role="3clFbG">
+            <node concept="2OqwBi" id="6LujpsVKUqL" role="3fr31v">
+              <node concept="2DD5aU" id="6LujpsVKUqM" role="2Oq$k0" />
+              <node concept="2Zo12i" id="6LujpsVKUqN" role="2OqNvi">
+                <node concept="chp4Y" id="6LujpsVKUqO" role="2Zo12j">
+                  <ref role="cht4Q" to="at53:F907haLIRF" resolve="ViewWidget" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

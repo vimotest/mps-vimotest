@@ -723,7 +723,7 @@
             <node concept="2ShNRf" id="6kjlgUuzfND" role="2Oq$k0">
               <node concept="1pGfFk" id="6kjlgUuzfNE" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" node="13sxcsThnh" />
+                <ref role="37wK5l" node="13sxcsThnh" resolve="CommandGenerator" />
                 <node concept="37vLTw" id="6kjlgUuzfNF" role="37wK5m">
                   <ref role="3cqZAo" node="RUuBjGf7RE" resolve="widgetModel" />
                 </node>
@@ -742,7 +742,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6kjlgUuzfNM" role="2OqNvi">
-              <ref role="37wK5l" node="13sxcsThnw" resolve="generateWidgets" />
+              <ref role="37wK5l" node="13sxcsThnw" resolve="generateCommands" />
             </node>
           </node>
         </node>
@@ -9183,7 +9183,7 @@
       <node concept="3Tm1VV" id="13sxcsThnj" role="1B3o_S" />
       <node concept="3clFbS" id="13sxcsThnk" role="3clF47">
         <node concept="XkiVB" id="13sxcsThnl" role="3cqZAp">
-          <ref role="37wK5l" node="4OohpJR4K82" />
+          <ref role="37wK5l" node="4OohpJR4K82" resolve="MetaNodeGeneratorBase" />
           <node concept="37vLTw" id="13sxcsThnm" role="37wK5m">
             <ref role="3cqZAo" node="13sxcsThnp" resolve="widgetModel" />
           </node>
@@ -9241,7 +9241,7 @@
           <node concept="2OqwBi" id="13sxcsThnG" role="3clFbG">
             <node concept="2OqwBi" id="13sxcsThnH" role="2Oq$k0">
               <node concept="37vLTw" id="13sxcsThnI" role="2Oq$k0">
-                <ref role="3cqZAo" node="13sxcsThn_" resolve="widgets" />
+                <ref role="3cqZAo" node="13sxcsThn_" resolve="commands" />
               </node>
               <node concept="3zZkjj" id="13sxcsThnJ" role="2OqNvi">
                 <node concept="1bVj0M" id="13sxcsThnK" role="23t8la">
@@ -9276,7 +9276,7 @@
                 <node concept="3clFbS" id="13sxcsThnX" role="1bW5cS">
                   <node concept="3clFbF" id="13sxcsThnY" role="3cqZAp">
                     <node concept="1rXfSq" id="13sxcsThnZ" role="3clFbG">
-                      <ref role="37wK5l" node="13sxcsThoQ" resolve="generateWidgetConcepts" />
+                      <ref role="37wK5l" node="13sxcsThoQ" resolve="generateConcepts" />
                       <node concept="37vLTw" id="13sxcsTho0" role="37wK5m">
                         <ref role="3cqZAo" node="13sxcsTho1" resolve="it" />
                       </node>
@@ -9326,7 +9326,7 @@
             <node concept="1rXfSq" id="13sxcsThp3" role="37vLTx">
               <ref role="37wK5l" node="13sxcsThvQ" resolve="getConceptName" />
               <node concept="37vLTw" id="13sxcsThp4" role="37wK5m">
-                <ref role="3cqZAo" node="13sxcsThoR" resolve="widgetDefinition" />
+                <ref role="3cqZAo" node="13sxcsThoR" resolve="commandDefinition" />
               </node>
             </node>
             <node concept="2OqwBi" id="13sxcsThp5" role="37vLTJ">
@@ -9343,7 +9343,7 @@
           <node concept="37vLTI" id="13sxcsThp9" role="3clFbG">
             <node concept="2OqwBi" id="13sxcsThpa" role="37vLTx">
               <node concept="37vLTw" id="13sxcsThpb" role="2Oq$k0">
-                <ref role="3cqZAo" node="13sxcsThoR" resolve="widgetDefinition" />
+                <ref role="3cqZAo" node="13sxcsThoR" resolve="commandDefinition" />
               </node>
               <node concept="3TrcHB" id="13sxcsThpc" role="2OqNvi">
                 <ref role="3TsBF5" to="3255:2exRXkpL6DJ" resolve="shortName" />
@@ -9381,13 +9381,13 @@
                 <ref role="3cqZAo" node="13sxcsThoW" resolve="concept" />
               </node>
               <node concept="3TrEf2" id="13sxcsThps" role="2OqNvi">
-                <ref role="3Tt5mk" to="tpce:f_TJDff" />
+                <ref role="3Tt5mk" to="tpce:f_TJDff" resolve="extends" />
               </node>
             </node>
             <node concept="2OqwBi" id="13sxcsThpt" role="37vLTx">
               <node concept="2tJFMh" id="13sxcsThpu" role="2Oq$k0">
                 <node concept="ZC_QK" id="13sxcsThpv" role="2tJFKM">
-                  <ref role="2aWVGs" to="at53:7ZadkZWNZxB" resolve="ViewModelInteractionCommand" />
+                  <ref role="2aWVGs" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
                 </node>
               </node>
               <node concept="Vyspw" id="13sxcsThpw" role="2OqNvi">
@@ -9473,7 +9473,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="13sxcsU_49" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2YIFZL" id="13sxcsThvQ" role="jymVt">

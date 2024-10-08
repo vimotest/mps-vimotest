@@ -2,9 +2,11 @@
 <model ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)">
   <persistence version="9" />
   <languages>
+    <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="0" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -12,6 +14,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
@@ -80,6 +83,50 @@
     <node concept="PrWs8" id="F907haLJLS" role="PzmwI">
       <ref role="PrY4T" node="F907haLIRL" resolve="IStructContent" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6LujpsVFccu">
+    <property role="EcuMT" value="7808764115843597086" />
+    <property role="3GE5qa" value="struct.types" />
+    <property role="TrG5h" value="FieldStructContent" />
+    <property role="34LRSv" value="field" />
+    <ref role="1TJDcQ" to="28lk:1KdBIfXLcw$" resolve="TypedElementDefinition" />
+    <node concept="PrWs8" id="6LujpsVFgZL" role="PzmwI">
+      <ref role="PrY4T" node="F907haLIRL" resolve="IStructContent" />
+    </node>
+    <node concept="PrWs8" id="6LujpsVK1gp" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6LujpsVK9sR">
+    <property role="EcuMT" value="7808764115844896567" />
+    <property role="3GE5qa" value="struct.types.builtin" />
+    <property role="TrG5h" value="BoolType" />
+    <property role="34LRSv" value="bool" />
+    <ref role="1TJDcQ" node="6LujpsVKegj" resolve="BuiltInType" />
+  </node>
+  <node concept="1TIwiD" id="6LujpsVKegj">
+    <property role="EcuMT" value="7808764115844916243" />
+    <property role="3GE5qa" value="struct.types" />
+    <property role="TrG5h" value="BuiltInType" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="28lk:2SMO68r_I0M" resolve="SyntaxElement" />
+    <node concept="PrWs8" id="6LujpsVKj3q" role="PzmwI">
+      <ref role="PrY4T" to="28lk:1KdBIfXINz6" resolve="TypeName" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6LujpsVKo4e">
+    <property role="EcuMT" value="7808764115844956430" />
+    <property role="3GE5qa" value="struct.types.builtin" />
+    <property role="TrG5h" value="IntType" />
+    <property role="34LRSv" value="int" />
+    <ref role="1TJDcQ" node="6LujpsVKegj" resolve="BuiltInType" />
+  </node>
+  <node concept="1TIwiD" id="6LujpsVKsRl">
+    <property role="EcuMT" value="7808764115844976085" />
+    <property role="3GE5qa" value="struct.types.builtin" />
+    <property role="TrG5h" value="StringType" />
+    <property role="34LRSv" value="string" />
+    <ref role="1TJDcQ" node="6LujpsVKegj" resolve="BuiltInType" />
   </node>
 </model>
 

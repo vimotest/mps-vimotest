@@ -7,9 +7,11 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="chuo" ref="r:756e7e46-274e-49f1-89af-e964a7233cb3(alfi.editor)" />
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -76,6 +78,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ngI" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1950447826681509042" name="jetbrains.mps.lang.editor.structure.ApplyStyleClass" flags="lg" index="3Xmtl4">
         <child id="1950447826683828796" name="target" index="3XvnJa" />
@@ -252,6 +255,27 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6LujpsVJtVj">
+    <property role="3GE5qa" value="struct.types" />
+    <ref role="1XX52x" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
+    <node concept="3EZMnI" id="1KdBIfXOvYZ" role="2wV5jI">
+      <node concept="3F1sOY" id="6LujpsVJLC5" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:1KdBIfXLcw_" resolve="typeName" />
+      </node>
+      <node concept="3F0A7n" id="1KdBIfXOvZc" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="2iRfu4" id="1KdBIfXOvZ2" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6LujpsVKjjA">
+    <property role="3GE5qa" value="struct.types" />
+    <ref role="1XX52x" to="evry:6LujpsVKegj" resolve="BuiltInType" />
+    <node concept="PMmxH" id="6LujpsVKo4d" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" node="F907haMqPJ" resolve="KeyWord" />
     </node>
   </node>
 </model>

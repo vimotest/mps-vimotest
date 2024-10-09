@@ -9,6 +9,7 @@
   <imports>
     <import index="at53" ref="r:9e3a5843-688b-4c6d-b3dd-9f321700c21b(de.vimotest.viewmodel.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -138,9 +139,9 @@
     <node concept="1TJgyj" id="6tib4XeIJOm" role="1TKVEi">
       <property role="IQ2ns" value="7445061853131767062" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="stimuliWithDescription" />
+      <property role="20kJfa" value="actionsWithDescription" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6tib4XeIJOl" resolve="WhenDescriptionWithStimuli" />
+      <ref role="20lvS9" node="6tib4XeIJOl" resolve="WhenDescriptionWithActions" />
     </node>
     <node concept="1TJgyj" id="6tib4XeIJO9" role="1TKVEi">
       <property role="IQ2ns" value="7445061853131767049" />
@@ -163,7 +164,7 @@
   <node concept="PlHQZ" id="6fZwY6ifv53">
     <property role="EcuMT" value="7205622933660496195" />
     <property role="3GE5qa" value="test.stimuli" />
-    <property role="TrG5h" value="ITestCaseStimuli" />
+    <property role="TrG5h" value="ITestCaseAction" />
   </node>
   <node concept="1TIwiD" id="2Yd1qrJONf3">
     <property role="EcuMT" value="3426401106045121475" />
@@ -354,14 +355,14 @@
   <node concept="1TIwiD" id="6tib4XeIJOl">
     <property role="EcuMT" value="7445061853131767061" />
     <property role="3GE5qa" value="test.description" />
-    <property role="TrG5h" value="WhenDescriptionWithStimuli" />
+    <property role="TrG5h" value="WhenDescriptionWithActions" />
     <ref role="1TJDcQ" node="3JdhG1lSFbA" resolve="TestDescriptionPart" />
     <node concept="1TJgyj" id="6tib4XeIK96" role="1TKVEi">
       <property role="IQ2ns" value="7445061853131768390" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="stimuli" />
+      <property role="20kJfa" value="action" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6fZwY6ifv53" resolve="ITestCaseStimuli" />
+      <ref role="20lvS9" node="6fZwY6ifv53" resolve="ITestCaseAction" />
     </node>
   </node>
   <node concept="1TIwiD" id="2Yd1qrJQnE4">
@@ -776,6 +777,27 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="2exRXkpP3eI" resolve="ITextBoxCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7KHRfJVnri5">
+    <property role="EcuMT" value="8948051009467167877" />
+    <property role="3GE5qa" value="test.stimuli" />
+    <property role="TrG5h" value="ViewCommandInvocationAction" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="7KHRfJVnw5F" role="PzmwI">
+      <ref role="PrY4T" node="6fZwY6ifv53" resolve="ITestCaseAction" />
+    </node>
+    <node concept="1TJgyj" id="7KHRfJVnw5G" role="1TKVEi">
+      <property role="IQ2ns" value="8948051009467187564" />
+      <property role="20kJfa" value="targetCommand" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+    </node>
+    <node concept="1TJgyj" id="7KHRfJVn$Y1" role="1TKVEi">
+      <property role="IQ2ns" value="8948051009467207553" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="parameters" />
+      <ref role="20lvS9" to="28lk:2kuSLC0oUiq" resolve="PositionalTuple" />
     </node>
   </node>
 </model>

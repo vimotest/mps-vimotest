@@ -5,9 +5,7 @@
     <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="0" />
     <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.testing" version="0" />
   </languages>
-  <imports>
-    <import index="gkn4" ref="r:fae4a196-11c4-4868-9ebd-1379c8e56907(alfStandardModelLibrary)" />
-  </imports>
+  <imports />
   <registry>
     <language id="611ecc9e-0703-4ab9-a13c-fb396c607716" name="de.vimotest.types">
       <concept id="777152910168881023" name="de.vimotest.types.structure.AbstractStructType" flags="ng" index="103Zsb">
@@ -44,6 +42,10 @@
       <concept id="4696656866608863568" name="de.vimotest.testing.structure.ComboBoxCheck" flags="ng" index="7cNBp">
         <child id="4696656866608863569" name="checks" index="7cNBo" />
       </concept>
+      <concept id="8948051009467167877" name="de.vimotest.testing.structure.ViewCommandInvocationAction" flags="ng" index="27s6xY">
+        <reference id="8948051009467187564" name="targetCommand" index="27sXQn" />
+        <child id="8948051009467207553" name="parameters" index="27sTdU" />
+      </concept>
       <concept id="5447508759369797102" name="de.vimotest.testing.structure.WidgetTableRowsCheckValue" flags="ng" index="2ayrQO">
         <child id="5447508759369822399" name="rows" index="2ay43_" />
       </concept>
@@ -61,6 +63,9 @@
       </concept>
       <concept id="7445061853131767032" name="de.vimotest.testing.structure.ThenDescriptionWithAssert" flags="ng" index="DUd2R">
         <child id="7445061853131768388" name="assert" index="DUiSb" />
+      </concept>
+      <concept id="7445061853131767061" name="de.vimotest.testing.structure.WhenDescriptionWithActions" flags="ng" index="DUd5q">
+        <child id="7445061853131768390" name="action" index="DUiS9" />
       </concept>
       <concept id="2567579368932258756" name="de.vimotest.testing.structure.TextBoxCheck" flags="ng" index="UtuKh">
         <child id="2567579368932258757" name="checks" index="UtuKg" />
@@ -99,6 +104,7 @@
         <property id="7205622933660497489" name="scenario" index="3LKBmK" />
         <child id="7445061853131767039" name="contextWithDescription" index="DUd2K" />
         <child id="7445061853131767049" name="assertsWithDescription" index="DUd56" />
+        <child id="7445061853131767062" name="actionsWithDescription" index="DUd5p" />
       </concept>
       <concept id="1116055435858972130" name="de.vimotest.testing.structure.WidgetCellCheck" flags="ng" index="1NuoHz">
         <reference id="216141720049061515" name="cachedWidgetToCheck" index="3elmOO" />
@@ -122,6 +128,13 @@
       </concept>
     </language>
     <language id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi">
+      <concept id="2674824929518763012" name="alfi.structure.BooleanLiteralExpression" flags="ng" index="_jtWu" />
+      <concept id="2674824929519838362" name="alfi.structure.PositionalTuple" flags="ng" index="_vku0">
+        <child id="2674824929519838363" name="expression" index="_vku1" />
+      </concept>
+      <concept id="7144803224892162748" name="alfi.structure.DecimalLiteralExpression" flags="ng" index="32T38h">
+        <property id="7144803224892162749" name="valueText" index="32T38g" />
+      </concept>
       <concept id="2021446509811517476" name="alfi.structure.TypedElementDefinition" flags="ng" index="3xMlr7">
         <child id="2021446509811517477" name="typeName" index="3xMlr6" />
       </concept>
@@ -1254,6 +1267,38 @@
       <node concept="1IbZgy" id="2exRXkpRoQm" role="DUd2K">
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="2exRXkpRoQn" role="DUiTU" />
+      </node>
+    </node>
+  </node>
+  <node concept="30n1Qd" id="7KHRfJVnrgJ">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="Commands_ViewTests" />
+    <ref role="30n1PB" node="7ZadkZWP7lz" resolve="Commands_View" />
+    <node concept="3LKzX3" id="7KHRfJVnrgU" role="30n1Qb">
+      <property role="3LKBmK" value="Commands Call" />
+      <node concept="DUd2R" id="7KHRfJVnrh1" role="DUd56">
+        <node concept="30nzp_" id="7KHRfJVnrh3" role="DUiSb" />
+      </node>
+      <node concept="1IbZgy" id="7KHRfJVnrgV" role="DUd2K">
+        <node concept="30l7Wy" id="7KHRfJVnrgZ" role="DUiTU" />
+      </node>
+      <node concept="DUd5q" id="7KHRfJVpFyo" role="DUd5p">
+        <node concept="27s6xY" id="7KHRfJVpFyq" role="DUiS9">
+          <ref role="27sXQn" node="6kjlgUuCHHC" resolve="CheckCommand" />
+          <node concept="_vku0" id="7KHRfJVpFys" role="27sTdU">
+            <node concept="_jtWu" id="7KHRfJVpG06" role="_vku1" />
+          </node>
+        </node>
+      </node>
+      <node concept="DUd5q" id="7KHRfJVpG08" role="DUd5p">
+        <node concept="27s6xY" id="7KHRfJVpG0b" role="DUiS9">
+          <ref role="27sXQn" node="6kjlgUuCHHC" resolve="CheckCommand" />
+          <node concept="_vku0" id="7KHRfJVpG0d" role="27sTdU">
+            <node concept="32T38h" id="7KHRfJVpG0f" role="_vku1">
+              <property role="32T38g" value="0" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

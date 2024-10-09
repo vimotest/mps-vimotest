@@ -491,7 +491,7 @@
       </node>
       <node concept="3F2HdR" id="2Yd1qrJONeC" role="3EZMnx">
         <property role="2czwfO" value=" and" />
-        <ref role="1NtTu8" to="53m0:6tib4XeIJOm" resolve="stimuliWithDescription" />
+        <ref role="1NtTu8" to="53m0:6tib4XeIJOm" resolve="actionsWithDescription" />
         <node concept="l2Vlx" id="3Y7b7HGjTYN" role="2czzBx" />
         <node concept="tppnM" id="6tib4XeIKaa" role="sWeuL">
           <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
@@ -961,7 +961,7 @@
   </node>
   <node concept="24kQdi" id="3JdhG1lSFc6">
     <property role="3GE5qa" value="test.description" />
-    <ref role="1XX52x" to="53m0:6tib4XeIJOl" resolve="WhenDescriptionWithStimuli" />
+    <ref role="1XX52x" to="53m0:6tib4XeIJOl" resolve="WhenDescriptionWithActions" />
     <node concept="3EZMnI" id="6tib4XeIKaC" role="2wV5jI">
       <node concept="3F0A7n" id="6tib4XeIKaD" role="3EZMnx">
         <property role="1O74Pk" value="true" />
@@ -970,7 +970,7 @@
         <ref role="1k5W1q" to="czmc:3JdhG1lSFbT" resolve="DescriptionText" />
       </node>
       <node concept="3F1sOY" id="6tib4XeIKaE" role="3EZMnx">
-        <ref role="1NtTu8" to="53m0:6tib4XeIK96" resolve="stimuli" />
+        <ref role="1NtTu8" to="53m0:6tib4XeIK96" resolve="action" />
       </node>
       <node concept="3F0A7n" id="6tib4XeIKaF" role="3EZMnx">
         <property role="1O74Pk" value="true" />
@@ -3495,6 +3495,44 @@
     <node concept="3F2HdR" id="2exRXkpP3fj" role="2wV5jI">
       <ref role="1NtTu8" to="53m0:2exRXkpP3f5" resolve="checks" />
       <node concept="2iRkQZ" id="2exRXkpP3fk" role="2czzBx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7KHRfJVnw5H">
+    <property role="3GE5qa" value="test.stimuli" />
+    <ref role="1XX52x" to="53m0:7KHRfJVnri5" resolve="ViewCommandInvocationAction" />
+    <node concept="3EZMnI" id="7KHRfJVn$SJ" role="2wV5jI">
+      <node concept="3F0ifn" id="7KHRfJVn$SN" role="3EZMnx">
+        <property role="3F0ifm" value="call command" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+      </node>
+      <node concept="1iCGBv" id="7KHRfJVn$SS" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:7KHRfJVnw5G" resolve="targetCommand" />
+        <node concept="1sVBvm" id="7KHRfJVn$SU" role="1sWHZn">
+          <node concept="3F0A7n" id="7KHRfJVn$SY" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7KHRfJVn$Y3" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:7KHRfJVn$Y1" resolve="parameters" />
+        <node concept="pkWqt" id="7KHRfJVn$Y5" role="pqm2j">
+          <node concept="3clFbS" id="7KHRfJVn$Y6" role="2VODD2">
+            <node concept="3clFbF" id="7KHRfJVnLoT" role="3cqZAp">
+              <node concept="2OqwBi" id="7KHRfJVnMbF" role="3clFbG">
+                <node concept="2OqwBi" id="7KHRfJVnLMg" role="2Oq$k0">
+                  <node concept="pncrf" id="7KHRfJVnLoS" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="7KHRfJVnLXN" role="2OqNvi">
+                    <ref role="3Tt5mk" to="53m0:7KHRfJVn$Y1" resolve="parameters" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="7KHRfJVnMqQ" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="7KHRfJVn$SM" role="2iSdaV" />
     </node>
   </node>
 </model>

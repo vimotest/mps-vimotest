@@ -10,7 +10,9 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <accessoryModels />
+  <accessoryModels>
+    <model modelUID="r:fae4a196-11c4-4868-9ebd-1379c8e56907(alfStandardModelLibrary)" />
+  </accessoryModels>
   <generators>
     <generator alias="main" namespace="de.vimotest.types.generator" uuid="ad92e020-9ed2-4620-9358-32e8708bc057">
       <models>

@@ -132,9 +132,6 @@
       <concept id="2674824929519838362" name="alfi.structure.PositionalTuple" flags="ng" index="_vku0">
         <child id="2674824929519838363" name="expression" index="_vku1" />
       </concept>
-      <concept id="7144803224892162748" name="alfi.structure.DecimalLiteralExpression" flags="ng" index="32T38h">
-        <property id="7144803224892162749" name="valueText" index="32T38g" />
-      </concept>
       <concept id="2021446509811517476" name="alfi.structure.TypedElementDefinition" flags="ng" index="3xMlr7">
         <child id="2021446509811517477" name="typeName" index="3xMlr6" />
       </concept>
@@ -1286,17 +1283,7 @@
         <node concept="27s6xY" id="7KHRfJVpFyq" role="DUiS9">
           <ref role="27sXQn" node="6kjlgUuCHHC" resolve="CheckCommand" />
           <node concept="_vku0" id="7KHRfJVpFys" role="27sTdU">
-            <node concept="_jtWu" id="7KHRfJVpG06" role="_vku1" />
-          </node>
-        </node>
-      </node>
-      <node concept="DUd5q" id="7KHRfJVpG08" role="DUd5p">
-        <node concept="27s6xY" id="7KHRfJVpG0b" role="DUiS9">
-          <ref role="27sXQn" node="6kjlgUuCHHC" resolve="CheckCommand" />
-          <node concept="_vku0" id="7KHRfJVpG0d" role="27sTdU">
-            <node concept="32T38h" id="7KHRfJVpG0f" role="_vku1">
-              <property role="32T38g" value="0" />
-            </node>
+            <node concept="_jtWu" id="7ynD$XoM0N2" role="_vku1" />
           </node>
         </node>
       </node>

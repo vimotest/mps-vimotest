@@ -30,7 +30,6 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
     <import index="fwln" ref="r:fb31fced-d3c6-408c-9dff-13efe5b49745(de.vimotest.testing.behavior)" implicit="true" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
@@ -936,15 +935,6 @@
         <property role="3F0ifm" value="}" />
       </node>
       <node concept="l2Vlx" id="2Yd1qrJOhwV" role="2iSdaV" />
-    </node>
-    <node concept="3EZMnI" id="7KHRfJVCDTx" role="6VMZX">
-      <node concept="l2Vlx" id="7KHRfJVCDTy" role="2iSdaV" />
-      <node concept="3F0ifn" id="7KHRfJVCE3y" role="3EZMnx">
-        <property role="3F0ifm" value="ALFI namespaceDefinition:" />
-      </node>
-      <node concept="3F1sOY" id="7KHRfJVCE3$" role="3EZMnx">
-        <ref role="1NtTu8" to="28lk:6OepWIVJVYY" resolve="namespaceDefinition" />
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3JdhG1lSFbG">

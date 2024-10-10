@@ -130,19 +130,12 @@
       </concept>
     </language>
     <language id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi">
-      <concept id="8280419611661851712" name="alfi.structure.PackageDefinition" flags="ng" index="2qCqA3" />
       <concept id="2674824929518763012" name="alfi.structure.BooleanLiteralExpression" flags="ng" index="_jtWu" />
       <concept id="2674824929519838362" name="alfi.structure.PositionalTuple" flags="ng" index="_vku0">
         <child id="2674824929519838363" name="expression" index="_vku1" />
       </concept>
-      <concept id="3328952194368015154" name="alfi.structure.NamespaceMember" flags="ng" index="PCHHg">
-        <property id="3328952194368015157" name="visibility" index="PCHHn" />
-      </concept>
       <concept id="7144803224892162748" name="alfi.structure.DecimalLiteralExpression" flags="ng" index="32T38h">
         <property id="7144803224892162749" name="valueText" index="32T38g" />
-      </concept>
-      <concept id="7858332524534022075" name="alfi.structure.Unit" flags="ng" index="3mGtxK">
-        <child id="7858332524534022078" name="namespaceDefinition" index="3mGtxP" />
       </concept>
       <concept id="2021446509811517476" name="alfi.structure.TypedElementDefinition" flags="ng" index="3xMlr7">
         <child id="2021446509811517477" name="typeName" index="3xMlr6" />
@@ -286,6 +279,7 @@
   </node>
   <node concept="30n1Qd" id="6fZwY6ifUAh">
     <property role="TrG5h" value="CheckBoxes_ViewTest" />
+    <property role="3GE5qa" value="widgetassertions" />
     <ref role="30n1PB" node="F907haLUeC" resolve="CheckBoxes_View" />
     <node concept="3LKzX3" id="3JdhG1lT89S" role="30n1Qb">
       <property role="3LKBmK" value="My Scenario" />
@@ -320,10 +314,6 @@
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="3JdhG1lU09I" role="DUiTU" />
       </node>
-    </node>
-    <node concept="2qCqA3" id="7KHRfJVHOMX" role="3mGtxP">
-      <property role="TrG5h" value="Dummy" />
-      <property role="PCHHn" value="6OepWIVA92I/package" />
     </node>
   </node>
   <node concept="1u6Luu" id="2YeT3IB8PiW">
@@ -772,13 +762,10 @@
         <node concept="30l7Wy" id="4w9z1ta2RJq" role="DUiTU" />
       </node>
     </node>
-    <node concept="2qCqA3" id="7KHRfJVHOMY" role="3mGtxP">
-      <property role="TrG5h" value="Dummy" />
-      <property role="PCHHn" value="6OepWIVA92I/package" />
-    </node>
   </node>
   <node concept="30n1Qd" id="4w9z1ta2WCW">
     <property role="TrG5h" value="ComboBoxes_ViewTest" />
+    <property role="3GE5qa" value="widgetassertions" />
     <ref role="30n1PB" node="4w9z1ta2$0O" resolve="ComboBoxes_View" />
     <node concept="3LKzX3" id="4w9z1ta2WCX" role="30n1Qb">
       <property role="3LKBmK" value="My Scenario" />
@@ -833,10 +820,6 @@
         <node concept="30l7Wy" id="4w9z1ta2WFE" role="DUiTU" />
       </node>
     </node>
-    <node concept="2qCqA3" id="7KHRfJVHOMZ" role="3mGtxP">
-      <property role="TrG5h" value="Dummy" />
-      <property role="PCHHn" value="6OepWIVA92I/package" />
-    </node>
   </node>
   <node concept="30n1Qd" id="4w9z1ta31_N">
     <property role="TrG5h" value="Images_ViewTest" />
@@ -872,10 +855,6 @@
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="4w9z1ta31Cx" role="DUiTU" />
       </node>
-    </node>
-    <node concept="2qCqA3" id="7KHRfJVHON0" role="3mGtxP">
-      <property role="TrG5h" value="Dummy" />
-      <property role="PCHHn" value="6OepWIVA92I/package" />
     </node>
   </node>
   <node concept="30n1Qd" id="4w9z1ta36yu">
@@ -1023,10 +1002,6 @@
         <node concept="30l7Wy" id="4w9z1ta36_c" role="DUiTU" />
       </node>
     </node>
-    <node concept="2qCqA3" id="7KHRfJVHON1" role="3mGtxP">
-      <property role="TrG5h" value="Dummy" />
-      <property role="PCHHn" value="6OepWIVA92I/package" />
-    </node>
   </node>
   <node concept="30n1Qd" id="4w9z1ta3bv0">
     <property role="TrG5h" value="TableViews_ViewTest" />
@@ -1126,10 +1101,6 @@
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="4w9z1ta3bxI" role="DUiTU" />
       </node>
-    </node>
-    <node concept="2qCqA3" id="7KHRfJVHON2" role="3mGtxP">
-      <property role="TrG5h" value="Dummy" />
-      <property role="PCHHn" value="6OepWIVA92I/package" />
     </node>
   </node>
   <node concept="30n1Qd" id="4w9z1ta3gry">
@@ -1233,10 +1204,6 @@
         <node concept="30l7Wy" id="4w9z1ta3gug" role="DUiTU" />
       </node>
     </node>
-    <node concept="2qCqA3" id="7KHRfJVHON3" role="3mGtxP">
-      <property role="TrG5h" value="Dummy" />
-      <property role="PCHHn" value="6OepWIVA92I/package" />
-    </node>
   </node>
   <node concept="103ZX$" id="7ZadkZWP7lz">
     <property role="3GE5qa" value="commands" />
@@ -1304,13 +1271,10 @@
         <node concept="30l7Wy" id="2exRXkpRoQn" role="DUiTU" />
       </node>
     </node>
-    <node concept="2qCqA3" id="7KHRfJVHON4" role="3mGtxP">
-      <property role="TrG5h" value="Dummy" />
-      <property role="PCHHn" value="6OepWIVA92I/package" />
-    </node>
   </node>
   <node concept="30n1Qd" id="7KHRfJVnrgJ">
     <property role="TrG5h" value="Commands_ViewTests" />
+    <property role="3GE5qa" value="commands" />
     <ref role="30n1PB" node="7ZadkZWP7lz" resolve="Commands_View" />
     <node concept="3LKzX3" id="7KHRfJVnrgU" role="30n1Qb">
       <property role="3LKBmK" value="Commands Call" />
@@ -1338,10 +1302,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="2qCqA3" id="7KHRfJVHON5" role="3mGtxP">
-      <property role="TrG5h" value="Dummy" />
-      <property role="PCHHn" value="6OepWIVA92I/package" />
     </node>
   </node>
 </model>

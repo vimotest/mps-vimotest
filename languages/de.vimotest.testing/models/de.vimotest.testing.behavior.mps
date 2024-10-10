@@ -19,10 +19,9 @@
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" />
     <import index="at53" ref="r:9e3a5843-688b-4c6d-b3dd-9f321700c21b(de.vimotest.viewmodel.structure)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
-    <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -253,9 +252,7 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
-      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC">
-        <reference id="1139880128956" name="concept" index="1A9B2P" />
-      </concept>
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -270,9 +267,6 @@
       </concept>
       <concept id="1181952871644" name="jetbrains.mps.lang.smodel.structure.Concept_GetAllSubConcepts" flags="nn" index="LSoRf">
         <child id="1182506816063" name="smodel" index="1iTxcG" />
-      </concept>
-      <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
-        <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
       </concept>
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
@@ -324,9 +318,6 @@
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
-      <concept id="5779574625830813396" name="jetbrains.mps.lang.smodel.structure.EnumerationIdRefExpression" flags="ng" index="1XH99k">
-        <reference id="5779574625830813397" name="enumDeclaration" index="1XH99l" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -409,54 +400,7 @@
     <property role="3GE5qa" value="test" />
     <ref role="13h7C2" to="53m0:2Yd1qrJOhwF" resolve="ViewModelTestSuite" />
     <node concept="13hLZK" id="6fZwY6ifrMA" role="13h7CW">
-      <node concept="3clFbS" id="6fZwY6ifrMB" role="2VODD2">
-        <node concept="3clFbF" id="7KHRfJVCE7j" role="3cqZAp">
-          <node concept="37vLTI" id="7KHRfJVCI4v" role="3clFbG">
-            <node concept="Xl_RD" id="7KHRfJVCI5B" role="37vLTx">
-              <property role="Xl_RC" value="Dummy" />
-            </node>
-            <node concept="2OqwBi" id="7KHRfJVCFkO" role="37vLTJ">
-              <node concept="2OqwBi" id="7KHRfJVCEPa" role="2Oq$k0">
-                <node concept="2OqwBi" id="7KHRfJVCElB" role="2Oq$k0">
-                  <node concept="13iPFW" id="7KHRfJVCE7i" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="7KHRfJVCEAT" role="2OqNvi">
-                    <ref role="3Tt5mk" to="28lk:6OepWIVJVYY" resolve="namespaceDefinition" />
-                  </node>
-                </node>
-                <node concept="zfrQC" id="7KHRfJVCF6u" role="2OqNvi">
-                  <ref role="1A9B2P" to="28lk:7bDXsfCi5L0" resolve="PackageDefinition" />
-                </node>
-              </node>
-              <node concept="3TrcHB" id="7KHRfJVCFxx" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7KHRfJVLwk4" role="3cqZAp">
-          <node concept="37vLTI" id="7KHRfJVLx4L" role="3clFbG">
-            <node concept="2OqwBi" id="7KHRfJVLy3Y" role="37vLTx">
-              <node concept="1XH99k" id="7KHRfJVLx9D" role="2Oq$k0">
-                <ref role="1XH99l" to="28lk:6OepWIVA92D" resolve="Visibility" />
-              </node>
-              <node concept="2ViDtV" id="7KHRfJVLyta" role="2OqNvi">
-                <ref role="2ViDtZ" to="28lk:6OepWIVA92I" resolve="package" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="7KHRfJVLwk8" role="37vLTJ">
-              <node concept="2OqwBi" id="7KHRfJVLwk9" role="2Oq$k0">
-                <node concept="13iPFW" id="7KHRfJVLwka" role="2Oq$k0" />
-                <node concept="3TrEf2" id="7KHRfJVLwkb" role="2OqNvi">
-                  <ref role="3Tt5mk" to="28lk:6OepWIVJVYY" resolve="namespaceDefinition" />
-                </node>
-              </node>
-              <node concept="3TrcHB" id="7KHRfJVLwIO" role="2OqNvi">
-                <ref role="3TsBF5" to="28lk:2SMO68r$0GP" resolve="visibility" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="6fZwY6ifrMB" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="6fZwY6ifrMS" role="13h7CS">
       <property role="TrG5h" value="getLinkedViewModel" />

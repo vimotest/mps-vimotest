@@ -9387,7 +9387,7 @@
             <node concept="2OqwBi" id="13sxcsThpt" role="37vLTx">
               <node concept="2tJFMh" id="13sxcsThpu" role="2Oq$k0">
                 <node concept="ZC_QK" id="13sxcsThpv" role="2tJFKM">
-                  <ref role="2aWVGs" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+                  <ref role="2aWVGs" to="at53:6kjlgUuu6dE" resolve="ViewWidgetCommand" />
                 </node>
               </node>
               <node concept="Vyspw" id="13sxcsThpw" role="2OqNvi">

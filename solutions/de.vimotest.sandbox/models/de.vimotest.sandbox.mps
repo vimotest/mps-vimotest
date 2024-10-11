@@ -12,7 +12,6 @@
         <child id="777152910168882908" name="contents" index="103ZUC" />
       </concept>
       <concept id="7808764115844896567" name="de.vimotest.types.structure.BoolType" flags="ng" index="1nBHEw" />
-      <concept id="7808764115844956430" name="de.vimotest.types.structure.IntType" flags="ng" index="1nBWMp" />
       <concept id="7808764115843597086" name="de.vimotest.types.structure.FieldStructContent" flags="ng" index="1nWCU9" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -66,6 +65,9 @@
       </concept>
       <concept id="7445061853131767061" name="de.vimotest.testing.structure.WhenDescriptionWithActions" flags="ng" index="DUd5q">
         <child id="7445061853131768390" name="action" index="DUiS9" />
+      </concept>
+      <concept id="1938192778485639397" name="de.vimotest.testing.structure.CheckBoxCheckedCommandAction" flags="ng" index="Tef3P">
+        <reference id="1938192778485679556" name="target" index="Te1Rk" />
       </concept>
       <concept id="2567579368932258756" name="de.vimotest.testing.structure.TextBoxCheck" flags="ng" index="UtuKh">
         <child id="2567579368932258757" name="checks" index="UtuKg" />
@@ -182,13 +184,16 @@
         <property id="134781560953461132" name="header" index="2neoUh" />
         <child id="134781560953466099" name="widgetType" index="2nerJI" />
       </concept>
-      <concept id="5213916851000129487" name="de.vimotest.viewmodel.structure.CheckedFeature" flags="ng" index="C4FCf" />
+      <concept id="5213916851000129487" name="de.vimotest.viewmodel.structure.CheckedFeature" flags="ng" index="C4FCf">
+        <property id="3850800795622718475" name="defaultIsChecked" index="3A$Jrw" />
+      </concept>
       <concept id="5213916851000129488" name="de.vimotest.viewmodel.structure.VisibilityFeature" flags="ng" index="C4FCg" />
       <concept id="5213916851000129489" name="de.vimotest.viewmodel.structure.EnabledFeature" flags="ng" index="C4FCh" />
       <concept id="5213916851000129514" name="de.vimotest.viewmodel.structure.CheckBoxWidget" flags="ng" index="C4FCE">
         <child id="5213916851000129515" name="checkedFeature" index="C4FCF" />
         <child id="5213916851000129516" name="visibilityFeature" index="C4FCG" />
         <child id="5213916851000129517" name="enabledFeature" index="C4FCH" />
+        <child id="1938192778486065161" name="checkCommand" index="T1B0p" />
         <child id="7278489671513126078" name="textFeature" index="1ISttP" />
       </concept>
       <concept id="2567579368932258681" name="de.vimotest.viewmodel.structure.TextBoxWidget" flags="ng" index="UtuMG">
@@ -242,6 +247,7 @@
         <child id="875174318840945208" name="visibilityFeature" index="3Vayhv" />
       </concept>
       <concept id="7283258543666616094" name="de.vimotest.viewmodel.structure.CheckCommandDefinitionCommand" flags="ng" index="3Vw88g" />
+      <concept id="7283258543665341322" name="de.vimotest.viewmodel.structure.GenericViewModelCommand" flags="ng" index="3V$Nq4" />
     </language>
   </registry>
   <node concept="103ZX$" id="F907haLUeC">
@@ -1202,23 +1208,18 @@
   </node>
   <node concept="103ZX$" id="7ZadkZWP7lz">
     <property role="3GE5qa" value="commands" />
-    <property role="TrG5h" value="Commands_View" />
+    <property role="TrG5h" value="GenericCommands_View" />
     <node concept="103ZXx" id="7ZadkZWP7l$" role="103ZXC">
-      <node concept="3Vw88g" id="6kjlgUuCHHC" role="1006ar">
-        <property role="TrG5h" value="CheckCommand" />
+      <node concept="3V$Nq4" id="1F_Q10zSP$v" role="1006ar">
+        <property role="TrG5h" value="MyCommand" />
         <property role="2hCfGp" value="true" />
-        <node concept="1nWCU9" id="6LujpsVJLBT" role="103ZUC">
-          <property role="TrG5h" value="IsChecked" />
-          <node concept="1nBHEw" id="6LujpsVK_GY" role="3xMlr6" />
+        <node concept="1nWCU9" id="1F_Q10zSP$w" role="103ZUC">
+          <property role="TrG5h" value="MyFlag" />
+          <node concept="1nBHEw" id="1F_Q10zSP$B" role="3xMlr6" />
         </node>
       </node>
     </node>
-    <node concept="103ZXB" id="7ZadkZWP7l_" role="103ZXF">
-      <node concept="1nWCU9" id="6LujpsVJtUX" role="103ZUC">
-        <property role="TrG5h" value="MyField" />
-        <node concept="1nBWMp" id="6LujpsVK_H5" role="3xMlr6" />
-      </node>
-    </node>
+    <node concept="103ZXB" id="7ZadkZWP7l_" role="103ZXF" />
   </node>
   <node concept="103ZX$" id="2exRXkpRk2R">
     <property role="TrG5h" value="TextBoxes_View" />
@@ -1268,11 +1269,11 @@
     </node>
   </node>
   <node concept="30n1Qd" id="7KHRfJVnrgJ">
-    <property role="TrG5h" value="Commands_ViewTests" />
+    <property role="TrG5h" value="GenericCommands_ViewTests" />
     <property role="3GE5qa" value="commands" />
     <ref role="30n1PB" node="7ZadkZWP7lz" resolve="Commands_View" />
     <node concept="3LKzX3" id="7KHRfJVnrgU" role="30n1Qb">
-      <property role="3LKBmK" value="Commands Call" />
+      <property role="3LKBmK" value="Generic Commands Call" />
       <node concept="DUd2R" id="7KHRfJVnrh1" role="DUd56">
         <node concept="30nzp_" id="7KHRfJVnrh3" role="DUiSb" />
       </node>
@@ -1280,11 +1281,60 @@
         <node concept="30l7Wy" id="7KHRfJVnrgZ" role="DUiTU" />
       </node>
       <node concept="DUd5q" id="7KHRfJVpFyo" role="DUd5p">
-        <node concept="27s6xY" id="7KHRfJVpFyq" role="DUiS9">
-          <ref role="27sXQn" node="6kjlgUuCHHC" resolve="CheckCommand" />
-          <node concept="_vku0" id="7KHRfJVpFys" role="27sTdU">
-            <node concept="_jtWu" id="7ynD$XoM0N2" role="_vku1" />
+        <node concept="27s6xY" id="1F_Q10zSP$W" role="DUiS9">
+          <ref role="27sXQn" node="1F_Q10zSP$v" resolve="MyCommand" />
+          <node concept="_vku0" id="1F_Q10zSP$Y" role="27sTdU">
+            <node concept="_jtWu" id="1F_Q10zSP_1" role="_vku1" />
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="103ZX$" id="1F_Q10zVMuh">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="CheckCommand_View" />
+    <node concept="103ZXx" id="1F_Q10zVMui" role="103ZXC" />
+    <node concept="103ZXB" id="1F_Q10zVMuj" role="103ZXF">
+      <node concept="C4FCE" id="1F_Q10zVRnG" role="103ZUC">
+        <property role="TrG5h" value="MyCheckBox1" />
+        <node concept="C4FCf" id="1F_Q10zVRnH" role="C4FCF" />
+        <node concept="C4FCg" id="1F_Q10zVRnI" role="C4FCG" />
+        <node concept="C4FCh" id="1F_Q10zVRnJ" role="C4FCH" />
+        <node concept="V3Zf6" id="1F_Q10zVRnK" role="1ISttP" />
+        <node concept="3Vw88g" id="1F_Q10zVRnL" role="T1B0p" />
+      </node>
+      <node concept="C4FCE" id="1F_Q10zVRnM" role="103ZUC">
+        <property role="TrG5h" value="MyCheckBox2" />
+        <node concept="C4FCf" id="1F_Q10zVRnN" role="C4FCF">
+          <property role="3A$Jrw" value="true" />
+        </node>
+        <node concept="C4FCg" id="1F_Q10zVRnO" role="C4FCG" />
+        <node concept="C4FCh" id="1F_Q10zVRnP" role="C4FCH" />
+        <node concept="V3Zf6" id="1F_Q10zVRnQ" role="1ISttP" />
+        <node concept="3Vw88g" id="1F_Q10zVRnR" role="T1B0p" />
+      </node>
+    </node>
+  </node>
+  <node concept="30n1Qd" id="1F_Q10zVRnS">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="CheckCommand_ViewTests" />
+    <ref role="30n1PB" node="1F_Q10zVMuh" resolve="CheckCommand_View" />
+    <node concept="3LKzX3" id="1F_Q10zVWhz" role="30n1Qb">
+      <property role="3LKBmK" value="Check CheckBox" />
+      <node concept="1IbZgy" id="1F_Q10zVWh$" role="DUd2K">
+        <node concept="30l7Wy" id="1F_Q10zVWhC" role="DUiTU" />
+      </node>
+      <node concept="DUd2R" id="1F_Q10zVWhA" role="DUd56">
+        <node concept="30nzp_" id="1F_Q10zVWhE" role="DUiSb" />
+      </node>
+      <node concept="DUd5q" id="1F_Q10zVWhG" role="DUd5p">
+        <node concept="Tef3P" id="1F_Q10zVWhI" role="DUiS9">
+          <ref role="Te1Rk" node="1F_Q10zVRnG" resolve="MyCheckBox1" />
+        </node>
+      </node>
+      <node concept="DUd5q" id="1F_Q10zVWhK" role="DUd5p">
+        <node concept="Tef3P" id="1F_Q10zVWhM" role="DUiS9">
+          <ref role="Te1Rk" node="1F_Q10zVRnM" resolve="MyCheckBox2" />
         </node>
       </node>
     </node>

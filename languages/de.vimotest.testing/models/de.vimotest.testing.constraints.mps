@@ -97,6 +97,9 @@
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
       <concept id="1212096972063" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator" flags="in" index="QB0g5" />
       <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
+      <concept id="8401916545537438642" name="jetbrains.mps.lang.constraints.structure.InheritedNodeScopeFactory" flags="ng" index="1dDu$B">
+        <reference id="8401916545537438643" name="kind" index="1dDu$A" />
+      </concept>
       <concept id="1163200368514" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSetHandler" flags="in" index="3k9gUc" />
       <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
       <concept id="1163202640154" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_newReferentNode" flags="nn" index="3khVwk" />
@@ -339,6 +342,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="1dDu$B" id="1F_Q10zWZPH" role="1N6uqs">
+        <ref role="1dDu$A" to="at53:F907haLIRF" resolve="ViewWidget" />
       </node>
     </node>
   </node>
@@ -583,7 +589,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7ynD$XoIqbQ">
-    <property role="3GE5qa" value="test.stimuli" />
+    <property role="3GE5qa" value="test.actions" />
     <ref role="1M2myG" to="53m0:7KHRfJVnri5" resolve="ViewCommandInvocationAction" />
     <node concept="9SQb8" id="7ynD$XoI_ls" role="9SGkC">
       <node concept="3clFbS" id="7ynD$XoI_lt" role="2VODD2">
@@ -613,6 +619,16 @@
             <property role="3clFbU" value="true" />
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1F_Q10zVWhQ">
+    <property role="3GE5qa" value="test.actions" />
+    <ref role="1M2myG" to="53m0:1F_Q10zRiz_" resolve="CheckBoxCheckedCommandAction" />
+    <node concept="1N5Pfh" id="1F_Q10zW1bx" role="1Mr941">
+      <ref role="1N5Vy1" to="53m0:1F_Q10zRsn4" />
+      <node concept="1dDu$B" id="1F_Q10zW1d8" role="1N6uqs">
+        <ref role="1dDu$A" to="at53:F907haMeIO" resolve="CheckBoxWidget" />
       </node>
     </node>
   </node>

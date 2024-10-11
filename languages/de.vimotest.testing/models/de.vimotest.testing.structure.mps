@@ -102,6 +102,9 @@
     <node concept="PrWs8" id="6fZwY6ifrMs" role="PzmwI">
       <ref role="PrY4T" to="at53:2ZnRpGqKU3p" resolve="ILinkedViewModelTest" />
     </node>
+    <node concept="PrWs8" id="1F_Q10zWlcg" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
     <node concept="1TJgyj" id="2Yd1qrJOhz1" role="1TKVEi">
       <property role="IQ2ns" value="3426401106044983489" />
       <property role="20kJfa" value="targetViewModel" />
@@ -163,7 +166,7 @@
   </node>
   <node concept="PlHQZ" id="6fZwY6ifv53">
     <property role="EcuMT" value="7205622933660496195" />
-    <property role="3GE5qa" value="test.stimuli" />
+    <property role="3GE5qa" value="test.actions" />
     <property role="TrG5h" value="ITestCaseAction" />
   </node>
   <node concept="1TIwiD" id="2Yd1qrJONf3">
@@ -781,7 +784,7 @@
   </node>
   <node concept="1TIwiD" id="7KHRfJVnri5">
     <property role="EcuMT" value="8948051009467167877" />
-    <property role="3GE5qa" value="test.stimuli" />
+    <property role="3GE5qa" value="test.actions" />
     <property role="TrG5h" value="ViewCommandInvocationAction" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="7KHRfJVnw5F" role="PzmwI">
@@ -798,6 +801,26 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="parameters" />
       <ref role="20lvS9" to="28lk:2kuSLC0oUiq" resolve="PositionalTuple" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1F_Q10zRiz_">
+    <property role="EcuMT" value="1938192778485639397" />
+    <property role="3GE5qa" value="test.actions" />
+    <property role="TrG5h" value="CheckBoxCheckedCommandAction" />
+    <property role="34LRSv" value="checkbox checked" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1F_Q10zRsn5" role="1TKVEl">
+      <property role="IQ2nx" value="1938192778485679557" />
+      <property role="TrG5h" value="checked" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="1F_Q10zRsn4" role="1TKVEi">
+      <property role="IQ2ns" value="1938192778485679556" />
+      <property role="20kJfa" value="target" />
+      <ref role="20lvS9" to="at53:F907haMeIO" resolve="CheckBoxWidget" />
+    </node>
+    <node concept="PrWs8" id="1F_Q10zSJac" role="PzmwI">
+      <ref role="PrY4T" node="6fZwY6ifv53" resolve="ITestCaseAction" />
     </node>
   </node>
 </model>

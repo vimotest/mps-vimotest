@@ -3498,7 +3498,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7KHRfJVnw5H">
-    <property role="3GE5qa" value="test.stimuli" />
+    <property role="3GE5qa" value="test.actions" />
     <ref role="1XX52x" to="53m0:7KHRfJVnri5" resolve="ViewCommandInvocationAction" />
     <node concept="3EZMnI" id="7KHRfJVn$SJ" role="2wV5jI">
       <node concept="3F0ifn" id="7KHRfJVn$SN" role="3EZMnx">
@@ -3533,6 +3533,46 @@
         </node>
       </node>
       <node concept="2iRfu4" id="7KHRfJVn$SM" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1F_Q10zRnts">
+    <property role="3GE5qa" value="test.actions" />
+    <ref role="1XX52x" to="53m0:1F_Q10zRiz_" resolve="CheckBoxCheckedCommandAction" />
+    <node concept="3EZMnI" id="1F_Q10zRsmZ" role="2wV5jI">
+      <node concept="PMmxH" id="1F_Q10zRsn3" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+      </node>
+      <node concept="1iCGBv" id="1F_Q10zRsnl" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:1F_Q10zRsn4" />
+        <node concept="1sVBvm" id="1F_Q10zRsnm" role="1sWHZn">
+          <node concept="3F0A7n" id="1F_Q10zRsnn" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="1iCGBv" id="1F_Q10zRsn7" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:1F_Q10zRsn4" resolve="target" />
+        <node concept="1sVBvm" id="1F_Q10zRsn9" role="1sWHZn">
+          <node concept="PMmxH" id="1F_Q10zRsnd" role="2wV5jI">
+            <ref role="PMmxG" to="czmc:L9c2Y9pvfV" resolve="ViewWidget_Rendering_EC" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="1F_Q10zRsn2" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="1F_Q10zRsne" role="6VMZX">
+      <node concept="l2Vlx" id="1F_Q10zRsnf" role="2iSdaV" />
+      <node concept="1iCGBv" id="1F_Q10zRsng" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:1F_Q10zRsn4" resolve="target" />
+        <node concept="1sVBvm" id="1F_Q10zRsnh" role="1sWHZn">
+          <node concept="3F0A7n" id="1F_Q10zRsnj" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

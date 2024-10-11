@@ -1476,7 +1476,7 @@
   </node>
   <node concept="18kY7G" id="7KHRfJVnMJ5">
     <property role="TrG5h" value="check_ViewCommandInvocationAction" />
-    <property role="3GE5qa" value="test.stimuli" />
+    <property role="3GE5qa" value="test.actions" />
     <node concept="3clFbS" id="7KHRfJVnMJ6" role="18ibNy">
       <node concept="3cpWs8" id="7KHRfJVoaHu" role="3cqZAp">
         <node concept="3cpWsn" id="7KHRfJVoaHv" role="3cpWs9">

@@ -108,6 +108,9 @@
     <node concept="PrWs8" id="F907haLJWq" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="1F_Q10zW1eJ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
     <node concept="1irR5M" id="6fZwY6igm51" role="rwd14">
       <property role="2$rrk2" value="1" />
       <node concept="1irR9n" id="2ZnRpGqLyK5" role="1irR9h">
@@ -234,6 +237,12 @@
       <property role="20kJfa" value="textFeature" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7H4Lpx0iNpu" resolve="TextFeature" />
+    </node>
+    <node concept="1TJgyj" id="1F_Q10zSUw9" role="1TKVEi">
+      <property role="IQ2ns" value="1938192778486065161" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="checkCommand" />
+      <ref role="20lvS9" node="6kjlgUu$Xsu" resolve="CheckCommandDefinitionCommand" />
     </node>
   </node>
   <node concept="PlHQZ" id="2ZnRpGqKU3p">
@@ -792,11 +801,9 @@
     <property role="3GE5qa" value="commands.base" />
     <property role="TrG5h" value="ViewWidgetCommand" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
-    <node concept="1TJgyj" id="6kjlgUuu6dF" role="1TKVEi">
-      <property role="IQ2ns" value="7283258543664817003" />
-      <property role="20kJfa" value="widget" />
-      <ref role="20lvS9" node="F907haLIRF" resolve="ViewWidget" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1F_Q10zSUwb" role="PzmwI">
+      <ref role="PrY4T" node="F907haLJXw" resolve="IViewModelCommand" />
     </node>
   </node>
   <node concept="1TIwiD" id="6kjlgUuw6ea">
@@ -811,21 +818,21 @@
     <property role="TrG5h" value="CheckCommandDefinitionCommand" />
     <property role="34LRSv" value="check" />
     <property role="3GE5qa" value="commands" />
-    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+    <ref role="1TJDcQ" node="6kjlgUuu6dE" resolve="ViewWidgetCommand" />
   </node>
   <node concept="1TIwiD" id="6kjlgUu$Xsv">
     <property role="EcuMT" value="7283258543666616095" />
     <property role="TrG5h" value="ClickCommandDefinitionCommand" />
     <property role="34LRSv" value="click" />
     <property role="3GE5qa" value="commands" />
-    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+    <ref role="1TJDcQ" node="6kjlgUuu6dE" resolve="ViewWidgetCommand" />
   </node>
   <node concept="1TIwiD" id="6kjlgUu$Xsw">
     <property role="EcuMT" value="7283258543666616096" />
     <property role="TrG5h" value="FillTextCommandCommand" />
     <property role="34LRSv" value="fill text" />
     <property role="3GE5qa" value="commands" />
-    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+    <ref role="1TJDcQ" node="6kjlgUuu6dE" resolve="ViewWidgetCommand" />
   </node>
   <node concept="1TIwiD" id="6kjlgUu$Xsx">
     <property role="EcuMT" value="7283258543666616097" />
@@ -839,14 +846,14 @@
     <property role="TrG5h" value="SelectRowCommandCommand" />
     <property role="34LRSv" value="select row" />
     <property role="3GE5qa" value="commands" />
-    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+    <ref role="1TJDcQ" node="6kjlgUuu6dE" resolve="ViewWidgetCommand" />
   </node>
   <node concept="1TIwiD" id="6kjlgUu$Xsz">
     <property role="EcuMT" value="7283258543666616099" />
     <property role="TrG5h" value="SelectEntryCommandCommand" />
     <property role="34LRSv" value="select entry" />
     <property role="3GE5qa" value="commands" />
-    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+    <ref role="1TJDcQ" node="6kjlgUuu6dE" resolve="ViewWidgetCommand" />
   </node>
 </model>
 

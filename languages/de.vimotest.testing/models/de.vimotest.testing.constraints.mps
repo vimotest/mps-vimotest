@@ -624,9 +624,9 @@
   </node>
   <node concept="1M2fIO" id="1F_Q10zVWhQ">
     <property role="3GE5qa" value="test.actions" />
-    <ref role="1M2myG" to="53m0:1F_Q10zRiz_" resolve="CheckBoxCheckedCommandAction" />
+    <ref role="1M2myG" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
     <node concept="1N5Pfh" id="1F_Q10zW1bx" role="1Mr941">
-      <ref role="1N5Vy1" to="53m0:1F_Q10zRsn4" />
+      <ref role="1N5Vy1" to="53m0:4VeFpYgZsED" />
       <node concept="1dDu$B" id="1F_Q10zW1d8" role="1N6uqs">
         <ref role="1dDu$A" to="at53:F907haMeIO" resolve="CheckBoxWidget" />
       </node>

@@ -806,21 +806,31 @@
   <node concept="1TIwiD" id="1F_Q10zRiz_">
     <property role="EcuMT" value="1938192778485639397" />
     <property role="3GE5qa" value="test.actions" />
-    <property role="TrG5h" value="CheckBoxCheckedCommandAction" />
-    <property role="34LRSv" value="checkbox checked" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="TrG5h" value="CheckCommandAction" />
+    <property role="34LRSv" value="check" />
+    <ref role="1TJDcQ" node="4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
     <node concept="1TJgyi" id="1F_Q10zRsn5" role="1TKVEl">
       <property role="IQ2nx" value="1938192778485679557" />
       <property role="TrG5h" value="checked" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyj" id="1F_Q10zRsn4" role="1TKVEi">
-      <property role="IQ2ns" value="1938192778485679556" />
-      <property role="20kJfa" value="target" />
-      <ref role="20lvS9" to="at53:F907haMeIO" resolve="CheckBoxWidget" />
+  </node>
+  <node concept="1TIwiD" id="4VeFpYgZnKM">
+    <property role="EcuMT" value="5678667081004710962" />
+    <property role="3GE5qa" value="test.actions" />
+    <property role="TrG5h" value="ViewWidgetCommandAction" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="4VeFpYgZsED" role="1TKVEi">
+      <property role="IQ2ns" value="5678667081004731049" />
+      <property role="20kJfa" value="widget" />
+      <ref role="20lvS9" to="at53:F907haLIRF" resolve="ViewWidget" />
     </node>
-    <node concept="PrWs8" id="1F_Q10zSJac" role="PzmwI">
+    <node concept="PrWs8" id="4VeFpYgZsEE" role="PzmwI">
       <ref role="PrY4T" node="6fZwY6ifv53" resolve="ITestCaseAction" />
+    </node>
+    <node concept="PrWs8" id="4VeFpYgZx_X" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
 </model>

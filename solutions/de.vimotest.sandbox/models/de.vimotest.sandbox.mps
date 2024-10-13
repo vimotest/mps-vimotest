@@ -78,12 +78,15 @@
       <concept id="8882441622785832647" name="de.vimotest.testing.structure.TextCheckValue" flags="ng" index="V3Zdv">
         <property id="7845445839813196640" name="expectedText" index="3egigc" />
       </concept>
+      <concept id="6201744883139140374" name="de.vimotest.testing.structure.ButtonCheck" flags="ng" index="2X2XOa">
+        <child id="6201744883139140375" name="checks" index="2X2XOb" />
+      </concept>
       <concept id="3426401106045532804" name="de.vimotest.testing.structure.EmptyContext" flags="ng" index="30l7Wy" />
       <concept id="3426401106044983339" name="de.vimotest.testing.structure.ViewModelTestSuite" flags="ng" index="30n1Qd">
         <reference id="3426401106044983489" name="targetViewModel" index="30n1PB" />
         <child id="3426401106044983341" name="tests" index="30n1Qb" />
       </concept>
-      <concept id="3426401106045121475" name="de.vimotest.testing.structure.ViewWidgetAssertion" flags="ng" index="30nzp_">
+      <concept id="3426401106045121475" name="de.vimotest.testing.structure.ViewWidgetAssertioo" flags="ng" index="30nzp_">
         <reference id="3426401106045121502" name="widget" index="30nzpS" />
         <child id="3426401106045146960" name="check" index="30nDbQ" />
       </concept>
@@ -212,6 +215,11 @@
         <child id="8882441622785832552" name="textFeature" index="V3ZfK" />
         <child id="8882441622785832553" name="enabledFeature" index="V3ZfL" />
         <child id="8882441622785832554" name="visibilityFeature" index="V3ZfM" />
+      </concept>
+      <concept id="6201744883139140301" name="de.vimotest.viewmodel.structure.ButtonWidget" flags="ng" index="2X2XNh">
+        <child id="6201744883139140304" name="visibilityFeature" index="2X2XNc" />
+        <child id="6201744883139140302" name="textFeature" index="2X2XNi" />
+        <child id="6201744883139140303" name="enabledFeature" index="2X2XNj" />
       </concept>
       <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommands" flags="ng" index="103ZXx">
         <child id="777152910169039599" name="commands" index="1006ar" />
@@ -1358,6 +1366,54 @@
         <node concept="C4FCg" id="5oh1xNEXBxI" role="UtuMI" />
         <node concept="C4FCh" id="5oh1xNEXBxN" role="UtuMD" />
         <node concept="3Vw88I" id="5oh1xNEXBxS" role="2WQ0r8" />
+      </node>
+    </node>
+  </node>
+  <node concept="103ZX$" id="5oh1xNFyoLI">
+    <property role="3GE5qa" value="widgetassertions" />
+    <property role="TrG5h" value="Buttons_View" />
+    <node concept="103ZXx" id="5oh1xNFyoLJ" role="103ZXC" />
+    <node concept="103ZXB" id="5oh1xNFyoLK" role="103ZXF">
+      <node concept="2X2XNh" id="5oh1xNFyt$V" role="103ZUC">
+        <property role="TrG5h" value="OkButton" />
+        <node concept="V3Zf6" id="5oh1xNFyt$W" role="2X2XNi">
+          <property role="3A$Jrx" value="OK" />
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCh" id="5oh1xNFyt$X" role="2X2XNj">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCg" id="5oh1xNFyt$Y" role="2X2XNc">
+          <property role="2VM7R0" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="30n1Qd" id="5oh1xNFzmZx">
+    <property role="3GE5qa" value="widgetassertions" />
+    <property role="TrG5h" value="Buttons_ViewTests" />
+    <ref role="30n1PB" node="5oh1xNFyoLI" resolve="Buttons_View" />
+    <node concept="3LKzX3" id="5oh1xNFzrMV" role="30n1Qb">
+      <property role="3LKBmK" value="My Scenario" />
+      <node concept="DUd2R" id="5oh1xNFzrMW" role="DUd56">
+        <node concept="30nzp_" id="5oh1xNFzrN5" role="DUiSb">
+          <ref role="30nzpS" node="5oh1xNFyt$V" resolve="OkButton" />
+          <node concept="2X2XOa" id="5oh1xNFzrN7" role="30nDbQ">
+            <node concept="35STUl" id="5oh1xNF$MWE" role="2X2XOb">
+              <property role="3XJMQh" value="true" />
+            </node>
+            <node concept="35STUn" id="5oh1xNF$MWG" role="2X2XOb">
+              <property role="3XJem9" value="true" />
+            </node>
+            <node concept="V3Zdv" id="5oh1xNFBPTL" role="2X2XOb">
+              <property role="3egigc" value="Test" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1IbZgy" id="5oh1xNFzrN2" role="DUd2K">
+        <property role="1IbZgB" value="some" />
+        <node concept="30l7Wy" id="5oh1xNFzrN3" role="DUiTU" />
       </node>
     </node>
   </node>

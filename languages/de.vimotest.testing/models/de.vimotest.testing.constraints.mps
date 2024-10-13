@@ -278,7 +278,7 @@
   </node>
   <node concept="1M2fIO" id="5PGuvQw8rgN">
     <property role="3GE5qa" value="test.assert" />
-    <ref role="1M2myG" to="53m0:2Yd1qrJONf3" resolve="ViewWidgetAssertion" />
+    <ref role="1M2myG" to="53m0:2Yd1qrJONf3" resolve="ViewWidgetAssertioo" />
     <node concept="1N5Pfh" id="5PGuvQw8rgO" role="1Mr941">
       <ref role="1N5Vy1" to="53m0:7QMGS97KEFc" resolve="widget" />
       <node concept="3k9gUc" id="5PGuvQw8rij" role="3kmjI7">

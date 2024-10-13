@@ -864,5 +864,45 @@
       <ref role="20lvS9" node="5oh1xNF6HG0" resolve="IButtonCheckValue" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7NpiMQMW_LI">
+    <property role="EcuMT" value="8996304390297115758" />
+    <property role="TrG5h" value="ClickCommandAction" />
+    <property role="34LRSv" value="click" />
+    <property role="3GE5qa" value="test.actions" />
+    <ref role="1TJDcQ" node="4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
+  </node>
+  <node concept="1TIwiD" id="7NpiMQMW_LJ">
+    <property role="EcuMT" value="8996304390297115759" />
+    <property role="TrG5h" value="FillTextCommandAction" />
+    <property role="34LRSv" value="fill text" />
+    <property role="3GE5qa" value="test.actions" />
+    <ref role="1TJDcQ" node="4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
+    <node concept="1TJgyi" id="7NpiMQN06V4" role="1TKVEl">
+      <property role="IQ2nx" value="8996304390298037956" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7NpiMQMW_LK">
+    <property role="EcuMT" value="8996304390297115760" />
+    <property role="TrG5h" value="LoadCommandAction" />
+    <property role="34LRSv" value="load view" />
+    <property role="3GE5qa" value="test.actions" />
+    <ref role="1TJDcQ" node="4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
+  </node>
+  <node concept="1TIwiD" id="7NpiMQMW_LL">
+    <property role="EcuMT" value="8996304390297115761" />
+    <property role="TrG5h" value="SelectRowCommandAction" />
+    <property role="34LRSv" value="select row" />
+    <property role="3GE5qa" value="test.actions" />
+    <ref role="1TJDcQ" node="4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
+  </node>
+  <node concept="1TIwiD" id="7NpiMQMW_LM">
+    <property role="EcuMT" value="8996304390297115762" />
+    <property role="TrG5h" value="SelectEntryCommandAction" />
+    <property role="34LRSv" value="select entry" />
+    <property role="3GE5qa" value="test.actions" />
+    <ref role="1TJDcQ" node="4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
+  </node>
 </model>
 

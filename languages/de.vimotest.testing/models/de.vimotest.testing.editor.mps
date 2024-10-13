@@ -33,6 +33,7 @@
     <import index="fwln" ref="r:fb31fced-d3c6-408c-9dff-13efe5b49745(de.vimotest.testing.behavior)" implicit="true" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
+    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -3644,6 +3645,20 @@
     <node concept="3F2HdR" id="5oh1xNF6HG_" role="2wV5jI">
       <ref role="1NtTu8" to="53m0:5oh1xNF6HGn" resolve="checks" />
       <node concept="2iRkQZ" id="5oh1xNF6HGA" role="2czzBx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7NpiMQN01qe">
+    <property role="3GE5qa" value="test.actions" />
+    <ref role="1XX52x" to="53m0:7NpiMQMW_LJ" resolve="FillTextCommandAction" />
+    <node concept="3EZMnI" id="7NpiMQN06tA" role="2wV5jI">
+      <node concept="PMmxH" id="7NpiMQN06tK" role="3EZMnx">
+        <ref role="PMmxG" node="4VeFpYh1HAb" resolve="ViewWidgetCommandAction_EC" />
+      </node>
+      <node concept="3F0A7n" id="7NpiMQN06V5" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:7NpiMQN06V4" resolve="text" />
+        <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
+      </node>
+      <node concept="2iRfu4" id="7NpiMQN06tN" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -99,6 +99,10 @@
       <concept id="4192570430936882688" name="de.vimotest.testing.structure.VisibilityCheckValue" flags="ng" index="35STUn">
         <property id="6835274084472266777" name="expectedIsVisible" index="3XJem9" />
       </concept>
+      <concept id="8996304390297115759" name="de.vimotest.testing.structure.FillTextCommandAction" flags="ng" index="3eaLt2">
+        <property id="8996304390298037956" name="text" index="3fQinD" />
+      </concept>
+      <concept id="8996304390297115758" name="de.vimotest.testing.structure.ClickCommandAction" flags="ng" index="3eaLt3" />
       <concept id="5678667081004710962" name="de.vimotest.testing.structure.ViewWidgetCommandAction" flags="ng" index="3ucX6H">
         <reference id="5678667081004731049" name="widget" index="3ucQsQ" />
       </concept>
@@ -218,6 +222,7 @@
       </concept>
       <concept id="6201744883139140301" name="de.vimotest.viewmodel.structure.ButtonWidget" flags="ng" index="2X2XNh">
         <child id="6201744883139140304" name="visibilityFeature" index="2X2XNc" />
+        <child id="6201744883139140305" name="clickCommand" index="2X2XNd" />
         <child id="6201744883139140302" name="textFeature" index="2X2XNi" />
         <child id="6201744883139140303" name="enabledFeature" index="2X2XNj" />
       </concept>
@@ -259,6 +264,7 @@
         <child id="875174318840945208" name="visibilityFeature" index="3Vayhv" />
       </concept>
       <concept id="7283258543666616094" name="de.vimotest.viewmodel.structure.CheckCommand" flags="ng" index="3Vw88g" />
+      <concept id="7283258543666616095" name="de.vimotest.viewmodel.structure.ClickCommand" flags="ng" index="3Vw88h" />
       <concept id="7283258543666616096" name="de.vimotest.viewmodel.structure.FillTextCommand" flags="ng" index="3Vw88I" />
       <concept id="7283258543665341322" name="de.vimotest.viewmodel.structure.GenericViewModelCommand" flags="ng" index="3V$Nq4" />
     </language>
@@ -1359,7 +1365,7 @@
     <node concept="103ZXx" id="5oh1xNEXyHT" role="103ZXC" />
     <node concept="103ZXB" id="5oh1xNEXyHU" role="103ZXF">
       <node concept="UtuMG" id="5oh1xNEXBx$" role="103ZUC">
-        <property role="TrG5h" value="MyLabel" />
+        <property role="TrG5h" value="MyTextBox" />
         <node concept="V3Zf6" id="5oh1xNEXBxD" role="UtuMJ">
           <property role="3A$Jrx" value="text" />
         </node>
@@ -1414,6 +1420,61 @@
       <node concept="1IbZgy" id="5oh1xNFzrN2" role="DUd2K">
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="5oh1xNFzrN3" role="DUiTU" />
+      </node>
+    </node>
+  </node>
+  <node concept="30n1Qd" id="7NpiMQMLC3U">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="FillTextCommand_ViewTests" />
+    <ref role="30n1PB" node="5oh1xNEXyHS" resolve="FillTextCommand_View" />
+    <node concept="3LKzX3" id="7NpiMQMLC3V" role="30n1Qb">
+      <property role="3LKBmK" value="Fill Text TextBox" />
+      <node concept="1IbZgy" id="7NpiMQMLC40" role="DUd2K">
+        <node concept="30l7Wy" id="7NpiMQMLC41" role="DUiTU" />
+      </node>
+      <node concept="DUd2R" id="7NpiMQMLC42" role="DUd56">
+        <node concept="30nzp_" id="7NpiMQMLC43" role="DUiSb" />
+      </node>
+      <node concept="DUd5q" id="7NpiMQMLC45" role="DUd5p">
+        <node concept="3eaLt2" id="7NpiMQMZW_V" role="DUiS9">
+          <property role="3fQinD" value="Changed" />
+          <ref role="3ucQsQ" node="5oh1xNEXBx$" resolve="MyLabel" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="103ZX$" id="7NpiMQMZW_X">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="ClickCommand_View" />
+    <node concept="103ZXx" id="7NpiMQMZW_Y" role="103ZXC" />
+    <node concept="103ZXB" id="7NpiMQMZW_Z" role="103ZXF">
+      <node concept="2X2XNh" id="7NpiMQN01pT" role="103ZUC">
+        <property role="TrG5h" value="MyButton" />
+        <node concept="V3Zf6" id="7NpiMQN01pU" role="2X2XNi">
+          <property role="3A$Jrx" value="OK" />
+        </node>
+        <node concept="C4FCh" id="7NpiMQN01pV" role="2X2XNj" />
+        <node concept="C4FCg" id="7NpiMQN01pW" role="2X2XNc" />
+        <node concept="3Vw88h" id="7NpiMQN01pX" role="2X2XNd" />
+      </node>
+    </node>
+  </node>
+  <node concept="30n1Qd" id="7NpiMQN01pY">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="ClickCommand_ViewTests" />
+    <ref role="30n1PB" node="7NpiMQMZW_X" resolve="ClickCommand_View" />
+    <node concept="3LKzX3" id="7NpiMQN01pZ" role="30n1Qb">
+      <property role="3LKBmK" value="Click Button" />
+      <node concept="1IbZgy" id="7NpiMQN01q0" role="DUd2K">
+        <node concept="30l7Wy" id="7NpiMQN01q4" role="DUiTU" />
+      </node>
+      <node concept="DUd5q" id="7NpiMQN01q6" role="DUd5p">
+        <node concept="3eaLt3" id="7NpiMQN01q8" role="DUiS9">
+          <ref role="3ucQsQ" node="7NpiMQN01pT" resolve="MyButton" />
+        </node>
+      </node>
+      <node concept="DUd2R" id="7NpiMQN01qa" role="DUd56">
+        <node concept="30nzp_" id="7NpiMQN01qc" role="DUiSb" />
       </node>
     </node>
   </node>

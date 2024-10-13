@@ -243,6 +243,9 @@
     <node concept="PrWs8" id="44HS8_6jW4K" role="PzmwI">
       <ref role="PrY4T" node="44HS8_67H$U" resolve="IComboBoxCheckValue" />
     </node>
+    <node concept="PrWs8" id="5oh1xNFsyW8" role="PzmwI">
+      <ref role="PrY4T" node="5oh1xNF6HG0" resolve="IButtonCheckValue" />
+    </node>
     <node concept="1TJgyi" id="5VrLp2zpM0p" role="1TKVEl">
       <property role="IQ2nx" value="6835274084472266777" />
       <property role="TrG5h" value="expectedIsVisible" />
@@ -283,6 +286,9 @@
     </node>
     <node concept="PrWs8" id="44HS8_6jYIs" role="PzmwI">
       <ref role="PrY4T" node="44HS8_67H$U" resolve="IComboBoxCheckValue" />
+    </node>
+    <node concept="PrWs8" id="5oh1xNFs_SQ" role="PzmwI">
+      <ref role="PrY4T" node="5oh1xNF6HG0" resolve="IButtonCheckValue" />
     </node>
   </node>
   <node concept="PlHQZ" id="69Ym88BeFj8">
@@ -442,6 +448,9 @@
     </node>
     <node concept="PrWs8" id="44HS8_6k25A" role="PzmwI">
       <ref role="PrY4T" node="44HS8_67H$U" resolve="IComboBoxCheckValue" />
+    </node>
+    <node concept="PrWs8" id="5oh1xNFsD1E" role="PzmwI">
+      <ref role="PrY4T" node="5oh1xNF6HG0" resolve="IButtonCheckValue" />
     </node>
   </node>
   <node concept="PlHQZ" id="3pKiF2wNf5v">
@@ -831,6 +840,28 @@
     </node>
     <node concept="PrWs8" id="4VeFpYgZx_X" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5oh1xNF6HG0">
+    <property role="EcuMT" value="6201744883139140352" />
+    <property role="TrG5h" value="IButtonCheckValue" />
+    <property role="3GE5qa" value="test.assert.widgets.standard" />
+    <node concept="PrWs8" id="5oh1xNF6HG1" role="PrDN$">
+      <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5oh1xNF6HGm">
+    <property role="EcuMT" value="6201744883139140374" />
+    <property role="TrG5h" value="ButtonCheck" />
+    <property role="34LRSv" value="check button" />
+    <property role="3GE5qa" value="test.assert.widgets.standard" />
+    <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
+    <node concept="1TJgyj" id="5oh1xNF6HGn" role="1TKVEi">
+      <property role="IQ2ns" value="6201744883139140375" />
+      <property role="20kJfa" value="checks" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="5oh1xNF6HG0" resolve="IButtonCheckValue" />
     </node>
   </node>
 </model>

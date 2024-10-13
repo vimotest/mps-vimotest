@@ -329,5 +329,24 @@
       <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
     </node>
   </node>
+  <node concept="2WVz3F" id="5oh1xNF6CMa">
+    <property role="103t_X" value="widgets.standard" />
+    <property role="3GE5qa" value="widgets" />
+    <property role="TrG5h" value="Button" />
+    <property role="2SiFfI" value="button" />
+    <node concept="2WVz4l" id="5oh1xNF6HA0" role="2WV$Zc">
+      <ref role="2WVz4k" node="7H4Lpx0an3A" resolve="Text" />
+    </node>
+    <node concept="2WVz4l" id="5oh1xNF6HA1" role="2WV$Zc">
+      <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
+    </node>
+    <node concept="2WVz4l" id="5oh1xNF6HA2" role="2WV$Zc">
+      <ref role="2WVz4k" node="1Yc3x6zoTLW" resolve="Visibility" />
+    </node>
+    <node concept="Uqd12" id="5oh1xNF6HA3" role="Urcx0">
+      <ref role="Uq8ev" node="2exRXkpLSVB" resolve="Click" />
+      <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
+    </node>
+  </node>
 </model>
 

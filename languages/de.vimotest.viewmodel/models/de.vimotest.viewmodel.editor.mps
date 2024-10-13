@@ -2176,5 +2176,39 @@
       </node>
     </node>
   </node>
+  <node concept="PKFIW" id="5oh1xNF6HFi">
+    <property role="TrG5h" value="ButtonWidget_Features_EC" />
+    <property role="3GE5qa" value="widgets.standard" />
+    <ref role="1XX52x" to="at53:5oh1xNF6HFd" resolve="ButtonWidget" />
+    <node concept="1PE4EZ" id="5oh1xNF6HFk" role="1PM95z">
+      <ref role="1PE7su" node="4OohpJQEUlZ" resolve="ViewWidget_WidgetFeatures_EC" />
+    </node>
+    <node concept="3EZMnI" id="5oh1xNF6HFl" role="2wV5jI">
+      <node concept="2EHx9g" id="5oh1xNF6HFm" role="2iSdaV" />
+      <node concept="3F1sOY" id="5oh1xNF6HFn" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:5oh1xNF6HFe" resolve="textFeature" />
+      </node>
+      <node concept="3F1sOY" id="5oh1xNF6HFo" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:5oh1xNF6HFf" resolve="enabledFeature" />
+      </node>
+      <node concept="3F1sOY" id="5oh1xNF6HFp" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:5oh1xNF6HFg" resolve="visibilityFeature" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="5oh1xNF6HFq">
+    <property role="TrG5h" value="ButtonWidget_Commands_EC" />
+    <property role="3GE5qa" value="widgets.standard" />
+    <ref role="1XX52x" to="at53:5oh1xNF6HFd" resolve="ButtonWidget" />
+    <node concept="1PE4EZ" id="5oh1xNF6HFs" role="1PM95z">
+      <ref role="1PE7su" node="1F_Q10zSP_8" resolve="ViewWidget_Commands_EC" />
+    </node>
+    <node concept="3EZMnI" id="5oh1xNF6HFt" role="2wV5jI">
+      <node concept="2EHx9g" id="5oh1xNF6HFu" role="2iSdaV" />
+      <node concept="3F1sOY" id="5oh1xNF6HFv" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:5oh1xNF6HFh" resolve="clickCommand" />
+      </node>
+    </node>
+  </node>
 </model>
 

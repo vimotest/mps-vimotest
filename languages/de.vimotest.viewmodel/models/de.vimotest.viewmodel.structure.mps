@@ -891,5 +891,39 @@
     <property role="3GE5qa" value="commands" />
     <ref role="1TJDcQ" node="6kjlgUuu6dE" resolve="ViewWidgetCommand" />
   </node>
+  <node concept="1TIwiD" id="5oh1xNF6HFd">
+    <property role="EcuMT" value="6201744883139140301" />
+    <property role="TrG5h" value="ButtonWidget" />
+    <property role="34LRSv" value="button" />
+    <property role="3GE5qa" value="widgets.standard" />
+    <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
+    <node concept="1TJgyj" id="5oh1xNF6HFe" role="1TKVEi">
+      <property role="IQ2ns" value="6201744883139140302" />
+      <property role="20kJfa" value="textFeature" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7H4Lpx0iNpu" resolve="TextFeature" />
+    </node>
+    <node concept="1TJgyj" id="5oh1xNF6HFf" role="1TKVEi">
+      <property role="IQ2ns" value="6201744883139140303" />
+      <property role="20kJfa" value="enabledFeature" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
+    </node>
+    <node concept="1TJgyj" id="5oh1xNF6HFg" role="1TKVEi">
+      <property role="IQ2ns" value="6201744883139140304" />
+      <property role="20kJfa" value="visibilityFeature" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4SDJcZBNVBT" resolve="VisibilityFeature" />
+    </node>
+    <node concept="1TJgyj" id="5oh1xNF6HFh" role="1TKVEi">
+      <property role="IQ2ns" value="6201744883139140305" />
+      <property role="20kJfa" value="clickCommand" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6kjlgUu$Xsv" resolve="ClickCommand" />
+    </node>
+  </node>
 </model>
 

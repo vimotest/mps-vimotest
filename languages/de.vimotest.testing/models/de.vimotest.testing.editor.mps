@@ -3611,5 +3611,40 @@
       </node>
     </node>
   </node>
+  <node concept="22mcaB" id="5oh1xNF6HG2">
+    <property role="TrG5h" value="IButtonCheckValue_SubstituteMenu" />
+    <property role="3GE5qa" value="test.assert.widgets.standard" />
+    <ref role="aqKnT" to="53m0:5oh1xNF6HG0" resolve="IButtonCheckValue" />
+    <node concept="22hDWj" id="5oh1xNF6HG3" role="22hAXT" />
+    <node concept="2VfDsV" id="5oh1xNF6HG4" role="3ft7WO">
+      <node concept="1GpqWn" id="5oh1xNF6HG5" role="1Go12V">
+        <node concept="3clFbS" id="5oh1xNF6HG6" role="2VODD2">
+          <node concept="3clFbF" id="5oh1xNF6HG7" role="3cqZAp">
+            <node concept="3fqX7Q" id="5oh1xNF6HG8" role="3clFbG">
+              <node concept="2YIFZM" id="5oh1xNF6HG9" role="3fr31v">
+                <ref role="37wK5l" node="2_MKLxJcA3M" />
+                <ref role="1Pybhc" node="2_MKLxJcA2h" />
+                <node concept="1GpqW3" id="5oh1xNF6HGa" role="37wK5m" />
+                <node concept="3bvxqY" id="5oh1xNF6HGb" role="37wK5m" />
+                <node concept="1J7kdh" id="5oh1xNF6HGc" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="5oh1xNF6HGy">
+    <property role="TrG5h" value="ButtonCheck_Inspector_Checks_EC" />
+    <property role="3GE5qa" value="test.assert.widgets.standard" />
+    <ref role="1XX52x" to="53m0:5oh1xNF6HGm" resolve="ButtonCheck" />
+    <node concept="1PE4EZ" id="5oh1xNF6HG$" role="1PM95z">
+      <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_Checks_EC" />
+    </node>
+    <node concept="3F2HdR" id="5oh1xNF6HG_" role="2wV5jI">
+      <ref role="1NtTu8" to="53m0:5oh1xNF6HGn" resolve="checks" />
+      <node concept="2iRkQZ" id="5oh1xNF6HGA" role="2czzBx" />
+    </node>
+  </node>
 </model>
 

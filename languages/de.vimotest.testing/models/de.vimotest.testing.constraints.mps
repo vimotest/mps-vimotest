@@ -632,5 +632,30 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="5oh1xNF6HGo">
+    <property role="TrG5h" value="ButtonCheck_Constraints" />
+    <property role="3GE5qa" value="test.assert.widgets.standard" />
+    <ref role="1M2myG" to="53m0:5oh1xNF6HGm" resolve="ButtonCheck" />
+    <node concept="9S07l" id="5oh1xNF6HGp" role="9Vyp8">
+      <node concept="3clFbS" id="5oh1xNF6HGq" role="2VODD2">
+        <node concept="3clFbF" id="5oh1xNF6HGr" role="3cqZAp">
+          <node concept="17R0WA" id="5oh1xNF6HGs" role="3clFbG">
+            <node concept="35c_gC" id="5oh1xNF6HGt" role="3uHU7w">
+              <ref role="35c_gD" to="at53:5oh1xNF6HFd" resolve="ButtonWidget" />
+            </node>
+            <node concept="2OqwBi" id="5oh1xNF6HGu" role="3uHU7B">
+              <node concept="35c_gC" id="5oh1xNF6HGv" role="2Oq$k0">
+                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" />
+              </node>
+              <node concept="2qgKlT" id="5oh1xNF6HGw" role="2OqNvi">
+                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" />
+                <node concept="nLn13" id="5oh1xNF6HGx" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

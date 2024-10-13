@@ -2062,14 +2062,14 @@
     </node>
   </node>
   <node concept="PKFIW" id="1F_Q10zSP_8">
-    <property role="TrG5h" value="ViewWidget_Commands" />
+    <property role="TrG5h" value="ViewWidget_Commands_EC" />
     <property role="3GE5qa" value="widgets" />
     <ref role="1XX52x" to="at53:F907haLIRF" resolve="ViewWidget" />
     <node concept="3F0ifn" id="1F_Q10zSP_9" role="2wV5jI" />
   </node>
   <node concept="PKFIW" id="1F_Q10zSP_b">
     <property role="3GE5qa" value="widgets.checkbox" />
-    <property role="TrG5h" value="CheckBoxWidget_Commands" />
+    <property role="TrG5h" value="CheckBoxWidget_Commands_EC" />
     <ref role="1XX52x" to="at53:F907haMeIO" resolve="CheckBoxWidget" />
     <node concept="3EZMnI" id="1F_Q10zSUw2" role="2wV5jI">
       <node concept="2iRkQZ" id="1F_Q10zSUw5" role="2iSdaV" />
@@ -2079,6 +2079,101 @@
     </node>
     <node concept="1PE4EZ" id="1F_Q10zSUw1" role="1PM95z">
       <ref role="1PE7su" node="1F_Q10zSP_8" resolve="ViewWidget_Commands" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="5oh1xNEWxPQ">
+    <property role="TrG5h" value="LabelWidget_Commands_EC" />
+    <property role="3GE5qa" value="widgets.standard" />
+    <ref role="1XX52x" to="at53:7H4Lpx0iNpB" resolve="LabelWidget" />
+    <node concept="1PE4EZ" id="5oh1xNEWxPS" role="1PM95z">
+      <ref role="1PE7su" node="1F_Q10zSP_8" resolve="ViewWidget_Commands_EC" />
+    </node>
+    <node concept="3EZMnI" id="5oh1xNEWxPT" role="2wV5jI">
+      <node concept="2EHx9g" id="5oh1xNEWxPU" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="5oh1xNEWxPV">
+    <property role="TrG5h" value="ImageWidget_Commands_EC" />
+    <property role="3GE5qa" value="widgets.image" />
+    <ref role="1XX52x" to="at53:3pKiF2wNf4N" resolve="ImageWidget" />
+    <node concept="1PE4EZ" id="5oh1xNEWxPX" role="1PM95z">
+      <ref role="1PE7su" node="1F_Q10zSP_8" resolve="ViewWidget_Commands_EC" />
+    </node>
+    <node concept="3EZMnI" id="5oh1xNEWxPY" role="2wV5jI">
+      <node concept="2EHx9g" id="5oh1xNEWxPZ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="5oh1xNEWxQ0">
+    <property role="TrG5h" value="ListViewWidget_Commands_EC" />
+    <property role="3GE5qa" value="widgets.structures" />
+    <ref role="1XX52x" to="at53:7WgsBLYmzhU" resolve="ListViewWidget" />
+    <node concept="1PE4EZ" id="5oh1xNEWxQ2" role="1PM95z">
+      <ref role="1PE7su" node="1F_Q10zSP_8" resolve="ViewWidget_Commands_EC" />
+    </node>
+    <node concept="3EZMnI" id="5oh1xNEWxQ3" role="2wV5jI">
+      <node concept="2EHx9g" id="5oh1xNEWxQ4" role="2iSdaV" />
+      <node concept="3F1sOY" id="5oh1xNEWxQ5" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:5oh1xNEHe5K" resolve="selectRowCommand" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="5oh1xNEWxQ6">
+    <property role="TrG5h" value="TreeViewWidget_Commands_EC" />
+    <property role="3GE5qa" value="widgets.structures" />
+    <ref role="1XX52x" to="at53:K_fAvR3LCP" resolve="TreeViewWidget" />
+    <node concept="1PE4EZ" id="5oh1xNEWxQ8" role="1PM95z">
+      <ref role="1PE7su" node="1F_Q10zSP_8" resolve="ViewWidget_Commands_EC" />
+    </node>
+    <node concept="3EZMnI" id="5oh1xNEWxQ9" role="2wV5jI">
+      <node concept="2EHx9g" id="5oh1xNEWxQa" role="2iSdaV" />
+      <node concept="3F1sOY" id="5oh1xNEWxQb" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:5oh1xNEIqYC" resolve="selectRowCommand" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="5oh1xNEWxQc">
+    <property role="TrG5h" value="TableViewWidget_Commands_EC" />
+    <property role="3GE5qa" value="widgets.structures" />
+    <ref role="1XX52x" to="at53:24MyZrrRA67" resolve="TableViewWidget" />
+    <node concept="1PE4EZ" id="5oh1xNEWxQe" role="1PM95z">
+      <ref role="1PE7su" node="1F_Q10zSP_8" resolve="ViewWidget_Commands_EC" />
+    </node>
+    <node concept="3EZMnI" id="5oh1xNEWxQf" role="2wV5jI">
+      <node concept="2EHx9g" id="5oh1xNEWxQg" role="2iSdaV" />
+      <node concept="3F1sOY" id="5oh1xNEWxQh" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:5oh1xNEMg3h" resolve="selectRowCommand" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="5oh1xNEWxQi">
+    <property role="TrG5h" value="ComboBoxWidget_Commands_EC" />
+    <property role="3GE5qa" value="widgets.choices" />
+    <ref role="1XX52x" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
+    <node concept="1PE4EZ" id="5oh1xNEWxQk" role="1PM95z">
+      <ref role="1PE7su" node="1F_Q10zSP_8" resolve="ViewWidget_Commands_EC" />
+    </node>
+    <node concept="3EZMnI" id="5oh1xNEWxQl" role="2wV5jI">
+      <node concept="2EHx9g" id="5oh1xNEWxQm" role="2iSdaV" />
+      <node concept="3F1sOY" id="5oh1xNEWxQn" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:5oh1xNEMg3i" resolve="selectEntryCommand" />
+      </node>
+      <node concept="3F1sOY" id="5oh1xNEWxQo" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:5oh1xNEMg3j" resolve="fillTextCommand" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="5oh1xNEWxQp">
+    <property role="TrG5h" value="TextBoxWidget_Commands_EC" />
+    <property role="3GE5qa" value="widgets.standard" />
+    <ref role="1XX52x" to="at53:2exRXkpP3dT" resolve="TextBoxWidget" />
+    <node concept="1PE4EZ" id="5oh1xNEWxQr" role="1PM95z">
+      <ref role="1PE7su" node="1F_Q10zSP_8" resolve="ViewWidget_Commands_EC" />
+    </node>
+    <node concept="3EZMnI" id="5oh1xNEWxQs" role="2wV5jI">
+      <node concept="2EHx9g" id="5oh1xNEWxQt" role="2iSdaV" />
+      <node concept="3F1sOY" id="5oh1xNEWxQu" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:5oh1xNEMg3k" resolve="fillTextCommand" />
+      </node>
     </node>
   </node>
 </model>

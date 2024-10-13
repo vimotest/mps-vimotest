@@ -203,6 +203,7 @@
         <child id="2567579368932258684" name="enabledFeature" index="UtuMD" />
         <child id="2567579368932258683" name="visibilityFeature" index="UtuMI" />
         <child id="2567579368932258682" name="textFeature" index="UtuMJ" />
+        <child id="6201744883133776084" name="fillTextCommand" index="2WQ0r8" />
       </concept>
       <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6">
         <property id="3850800795622718474" name="defaultText" index="3A$Jrx" />
@@ -249,7 +250,8 @@
         <child id="875174318840945209" name="enabledFeature" index="3Vayhu" />
         <child id="875174318840945208" name="visibilityFeature" index="3Vayhv" />
       </concept>
-      <concept id="7283258543666616094" name="de.vimotest.viewmodel.structure.CheckCommandDefinitionCommand" flags="ng" index="3Vw88g" />
+      <concept id="7283258543666616094" name="de.vimotest.viewmodel.structure.CheckCommand" flags="ng" index="3Vw88g" />
+      <concept id="7283258543666616096" name="de.vimotest.viewmodel.structure.FillTextCommand" flags="ng" index="3Vw88I" />
       <concept id="7283258543665341322" name="de.vimotest.viewmodel.structure.GenericViewModelCommand" flags="ng" index="3V$Nq4" />
     </language>
   </registry>
@@ -1340,6 +1342,22 @@
       </node>
       <node concept="DUd2R" id="1F_Q10zVWhA" role="DUd56">
         <node concept="30nzp_" id="1F_Q10zVWhE" role="DUiSb" />
+      </node>
+    </node>
+  </node>
+  <node concept="103ZX$" id="5oh1xNEXyHS">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="FillTextCommand_View" />
+    <node concept="103ZXx" id="5oh1xNEXyHT" role="103ZXC" />
+    <node concept="103ZXB" id="5oh1xNEXyHU" role="103ZXF">
+      <node concept="UtuMG" id="5oh1xNEXBx$" role="103ZUC">
+        <property role="TrG5h" value="MyLabel" />
+        <node concept="V3Zf6" id="5oh1xNEXBxD" role="UtuMJ">
+          <property role="3A$Jrx" value="text" />
+        </node>
+        <node concept="C4FCg" id="5oh1xNEXBxI" role="UtuMI" />
+        <node concept="C4FCh" id="5oh1xNEXBxN" role="UtuMD" />
+        <node concept="3Vw88I" id="5oh1xNEXBxS" role="2WQ0r8" />
       </node>
     </node>
   </node>

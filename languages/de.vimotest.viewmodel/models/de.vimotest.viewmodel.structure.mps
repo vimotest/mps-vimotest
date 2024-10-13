@@ -872,7 +872,7 @@
   </node>
   <node concept="1TIwiD" id="6kjlgUu$Xsx">
     <property role="EcuMT" value="7283258543666616097" />
-    <property role="TrG5h" value="LoadViewCommand" />
+    <property role="TrG5h" value="LoadCommand" />
     <property role="34LRSv" value="load view" />
     <property role="3GE5qa" value="commands" />
     <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />

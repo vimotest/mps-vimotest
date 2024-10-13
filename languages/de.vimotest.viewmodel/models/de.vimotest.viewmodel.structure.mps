@@ -242,7 +242,7 @@
       <property role="IQ2ns" value="1938192778486065161" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="checkCommand" />
-      <ref role="20lvS9" node="6kjlgUu$Xsu" resolve="CheckCommandDefinitionCommand" />
+      <ref role="20lvS9" node="6kjlgUu$Xsu" resolve="CheckCommand" />
     </node>
   </node>
   <node concept="PlHQZ" id="2ZnRpGqKU3p">
@@ -506,6 +506,12 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
     </node>
+    <node concept="1TJgyj" id="5oh1xNEHe5K" role="1TKVEi">
+      <property role="IQ2ns" value="6201744883132457328" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="selectRowCommand" />
+      <ref role="20lvS9" node="6kjlgUu$Xsy" resolve="SelectRowCommand" />
+    </node>
     <node concept="PrWs8" id="30uXY1Shcgg" role="PzmwI">
       <ref role="PrY4T" node="30uXY1Sh9ET" resolve="IStructuredWidget" />
     </node>
@@ -550,6 +556,12 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
+    </node>
+    <node concept="1TJgyj" id="5oh1xNEIqYC" role="1TKVEi">
+      <property role="IQ2ns" value="6201744883132772264" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="selectRowCommand" />
+      <ref role="20lvS9" node="6kjlgUu$Xsy" resolve="SelectRowCommand" />
     </node>
     <node concept="PrWs8" id="30uXY1Shcgi" role="PzmwI">
       <ref role="PrY4T" node="30uXY1Sh9ET" resolve="IStructuredWidget" />
@@ -634,6 +646,12 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
+    </node>
+    <node concept="1TJgyj" id="5oh1xNEMg3h" role="1TKVEi">
+      <property role="IQ2ns" value="6201744883133776081" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="selectRowCommand" />
+      <ref role="20lvS9" node="6kjlgUu$Xsy" resolve="SelectRowCommand" />
     </node>
     <node concept="PrWs8" id="30uXY1Shcgh" role="PzmwI">
       <ref role="PrY4T" node="30uXY1Sh9ET" resolve="IStructuredWidget" />
@@ -742,6 +760,18 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
     </node>
+    <node concept="1TJgyj" id="5oh1xNEMg3i" role="1TKVEi">
+      <property role="IQ2ns" value="6201744883133776082" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="selectEntryCommand" />
+      <ref role="20lvS9" node="6kjlgUu$Xsz" resolve="SelectEntryCommand" />
+    </node>
+    <node concept="1TJgyj" id="5oh1xNEMg3j" role="1TKVEi">
+      <property role="IQ2ns" value="6201744883133776083" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="fillTextCommand" />
+      <ref role="20lvS9" node="6kjlgUu$Xsw" resolve="FillTextCommand" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3mckYa_DMEC">
     <property role="EcuMT" value="3858551213656582824" />
@@ -795,6 +825,12 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
     </node>
+    <node concept="1TJgyj" id="5oh1xNEMg3k" role="1TKVEi">
+      <property role="IQ2ns" value="6201744883133776084" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="fillTextCommand" />
+      <ref role="20lvS9" node="6kjlgUu$Xsw" resolve="FillTextCommand" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6kjlgUuu6dE">
     <property role="EcuMT" value="7283258543664817002" />
@@ -815,42 +851,42 @@
   </node>
   <node concept="1TIwiD" id="6kjlgUu$Xsu">
     <property role="EcuMT" value="7283258543666616094" />
-    <property role="TrG5h" value="CheckCommandDefinitionCommand" />
+    <property role="TrG5h" value="CheckCommand" />
     <property role="34LRSv" value="check" />
     <property role="3GE5qa" value="commands" />
     <ref role="1TJDcQ" node="6kjlgUuu6dE" resolve="ViewWidgetCommand" />
   </node>
   <node concept="1TIwiD" id="6kjlgUu$Xsv">
     <property role="EcuMT" value="7283258543666616095" />
-    <property role="TrG5h" value="ClickCommandDefinitionCommand" />
+    <property role="TrG5h" value="ClickCommand" />
     <property role="34LRSv" value="click" />
     <property role="3GE5qa" value="commands" />
     <ref role="1TJDcQ" node="6kjlgUuu6dE" resolve="ViewWidgetCommand" />
   </node>
   <node concept="1TIwiD" id="6kjlgUu$Xsw">
     <property role="EcuMT" value="7283258543666616096" />
-    <property role="TrG5h" value="FillTextCommandCommand" />
+    <property role="TrG5h" value="FillTextCommand" />
     <property role="34LRSv" value="fill text" />
     <property role="3GE5qa" value="commands" />
     <ref role="1TJDcQ" node="6kjlgUuu6dE" resolve="ViewWidgetCommand" />
   </node>
   <node concept="1TIwiD" id="6kjlgUu$Xsx">
     <property role="EcuMT" value="7283258543666616097" />
-    <property role="TrG5h" value="LoadViewCommandCommand" />
+    <property role="TrG5h" value="LoadViewCommand" />
     <property role="34LRSv" value="load view" />
     <property role="3GE5qa" value="commands" />
     <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
   </node>
   <node concept="1TIwiD" id="6kjlgUu$Xsy">
     <property role="EcuMT" value="7283258543666616098" />
-    <property role="TrG5h" value="SelectRowCommandCommand" />
+    <property role="TrG5h" value="SelectRowCommand" />
     <property role="34LRSv" value="select row" />
     <property role="3GE5qa" value="commands" />
     <ref role="1TJDcQ" node="6kjlgUuu6dE" resolve="ViewWidgetCommand" />
   </node>
   <node concept="1TIwiD" id="6kjlgUu$Xsz">
     <property role="EcuMT" value="7283258543666616099" />
-    <property role="TrG5h" value="SelectEntryCommandCommand" />
+    <property role="TrG5h" value="SelectEntryCommand" />
     <property role="34LRSv" value="select entry" />
     <property role="3GE5qa" value="commands" />
     <ref role="1TJDcQ" node="6kjlgUuu6dE" resolve="ViewWidgetCommand" />

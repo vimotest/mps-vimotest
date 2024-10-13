@@ -279,33 +279,33 @@
     <property role="3yYw5D" value="fLwANPp/orange" />
   </node>
   <node concept="Ups98" id="2exRXkpLdWN">
-    <property role="TrG5h" value="CheckCommandDefinition" />
+    <property role="TrG5h" value="Check" />
     <property role="UprmU" value="check" />
     <property role="3GE5qa" value="commands" />
   </node>
   <node concept="Ups98" id="2exRXkpLSVB">
     <property role="3GE5qa" value="commands" />
-    <property role="TrG5h" value="ClickCommandDefinition" />
+    <property role="TrG5h" value="Click" />
     <property role="UprmU" value="click" />
   </node>
   <node concept="Ups98" id="2exRXkpLXJ4">
     <property role="3GE5qa" value="commands" />
-    <property role="TrG5h" value="FillTextCommand" />
+    <property role="TrG5h" value="FillText" />
     <property role="UprmU" value="fill text" />
   </node>
   <node concept="Ups98" id="2exRXkpM2$u">
     <property role="3GE5qa" value="commands" />
-    <property role="TrG5h" value="LoadViewCommand" />
+    <property role="TrG5h" value="Load" />
     <property role="UprmU" value="load view" />
   </node>
   <node concept="Ups98" id="2exRXkpM7nG">
     <property role="3GE5qa" value="commands" />
-    <property role="TrG5h" value="SelectRowCommand" />
+    <property role="TrG5h" value="SelectRow" />
     <property role="UprmU" value="select row" />
   </node>
   <node concept="Ups98" id="2exRXkpMcaR">
     <property role="3GE5qa" value="commands" />
-    <property role="TrG5h" value="SelectEntryCommand" />
+    <property role="TrG5h" value="SelectEntry" />
     <property role="UprmU" value="select entry" />
   </node>
   <node concept="2WVz3F" id="2exRXkpOcGV">

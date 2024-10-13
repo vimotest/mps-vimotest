@@ -166,7 +166,7 @@
       </node>
     </node>
     <node concept="14StLt" id="F907haMqPJ" role="V601i">
-      <property role="TrG5h" value="ViMoTestKeyWord" />
+      <property role="TrG5h" value="KeyWord" />
       <node concept="3Xmtl4" id="F907haMqPU" role="3F10Kt">
         <node concept="1wgc9g" id="F907haMqPV" role="3XvnJa">
           <ref role="1wgcnl" to="tpco:16zq0OE7Du4" />

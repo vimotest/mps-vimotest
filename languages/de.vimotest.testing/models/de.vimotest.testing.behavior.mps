@@ -4568,7 +4568,7 @@
   </node>
   <node concept="13h7C7" id="7QMGS97JY84">
     <property role="3GE5qa" value="test.assert" />
-    <ref role="13h7C2" to="53m0:2Yd1qrJONf3" resolve="ViewWidgetAssertioo" />
+    <ref role="13h7C2" to="53m0:2Yd1qrJONf3" resolve="ViewWidgetAssertion" />
     <node concept="13hLZK" id="7QMGS97JY85" role="13h7CW">
       <node concept="3clFbS" id="7QMGS97JY86" role="2VODD2" />
     </node>
@@ -9578,6 +9578,70 @@
         <ref role="3bZ5Sy" to="at53:L9c2Y9pj53" />
       </node>
       <node concept="3Tm1VV" id="7NpiMQMZpYZ" role="1B3o_S" />
+    </node>
+  </node>
+  <node concept="312cEu" id="7UthagY7j2h">
+    <property role="TrG5h" value="CommandConceptMappingHelper" />
+    <property role="3GE5qa" value="util.widgets" />
+    <node concept="3Tm1VV" id="7UthagY7j2i" role="1B3o_S" />
+    <node concept="2YIFZL" id="7UthagY7j3a" role="jymVt">
+      <property role="TrG5h" value="getCommandActionConceptForCommandConcept" />
+      <node concept="37vLTG" id="7UthagY7j3b" role="3clF46">
+        <property role="TrG5h" value="commandConcept" />
+        <node concept="3bZ5Sz" id="7UthagY7j3c" role="1tU5fm">
+          <ref role="3bZ5Sy" to="at53:6kjlgUuu6dE" resolve="ViewWidgetCommand" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="7UthagY7j3d" role="3clF47">
+        <node concept="1_3QMa" id="7UthagY7j3e" role="3cqZAp">
+          <node concept="37vLTw" id="7UthagY7j3f" role="1_3QMn">
+            <ref role="3cqZAo" node="7UthagY7j3b" resolve="widgetConcept" />
+          </node>
+          <node concept="1pnPoh" id="7UthagY7j3g" role="1_3QMm">
+            <node concept="3gn64h" id="7UthagY7j3h" role="1pnPq6">
+              <ref role="3gnhBz" to="at53:6kjlgUu$Xsv" resolve="ClickCommand" />
+            </node>
+            <node concept="3clFbS" id="7UthagY7j3i" role="1pnPq1">
+              <node concept="3cpWs6" id="7UthagY7j3j" role="3cqZAp">
+                <node concept="35c_gC" id="7UthagY7j3k" role="3cqZAk">
+                  <ref role="35c_gD" to="53m0:7NpiMQMW_LI" resolve="ClickCommandAction" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1pnPoh" id="7UthagY7j3l" role="1_3QMm">
+            <node concept="3gn64h" id="7UthagY7j3m" role="1pnPq6">
+              <ref role="3gnhBz" to="at53:6kjlgUu$Xsw" resolve="FillTextCommand" />
+            </node>
+            <node concept="3clFbS" id="7UthagY7j3n" role="1pnPq1">
+              <node concept="3cpWs6" id="7UthagY7j3o" role="3cqZAp">
+                <node concept="35c_gC" id="7UthagY7j3p" role="3cqZAk">
+                  <ref role="35c_gD" to="53m0:7NpiMQMW_LJ" resolve="FillTextCommandAction" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1pnPoh" id="7UthagY7j3q" role="1_3QMm">
+            <node concept="3gn64h" id="7UthagY7j3r" role="1pnPq6">
+              <ref role="3gnhBz" to="at53:6kjlgUu$Xsu" resolve="CheckCommand" />
+            </node>
+            <node concept="3clFbS" id="7UthagY7j3s" role="1pnPq1">
+              <node concept="3cpWs6" id="7UthagY7j3t" role="3cqZAp">
+                <node concept="35c_gC" id="7UthagY7j3u" role="3cqZAk">
+                  <ref role="35c_gD" to="53m0:1F_Q10zRiz_" resolve="CheckCommandAction" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="7UthagY7j3X" role="3cqZAp">
+          <node concept="10Nm6u" id="7UthagY7j3Y" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3bZ5Sz" id="7UthagY7j3Z" role="3clF45">
+        <ref role="3bZ5Sy" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
+      </node>
+      <node concept="3Tm1VV" id="7UthagY7j40" role="1B3o_S" />
     </node>
   </node>
 </model>

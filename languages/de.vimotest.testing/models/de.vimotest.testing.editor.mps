@@ -150,6 +150,7 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -3603,6 +3604,7 @@
     <property role="3GE5qa" value="test.actions" />
     <ref role="1XX52x" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
     <node concept="1iCGBv" id="4VeFpYh1Mw6" role="2wV5jI">
+      <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
       <ref role="1NtTu8" to="53m0:4VeFpYgZsED" resolve="widget" />
       <node concept="1sVBvm" id="4VeFpYh1Mw7" role="1sWHZn">
         <node concept="3F0A7n" id="4VeFpYh1Mw8" role="2wV5jI">
@@ -3655,6 +3657,8 @@
         <ref role="PMmxG" node="4VeFpYh1HAb" resolve="ViewWidgetCommandAction_EC" />
       </node>
       <node concept="3F0A7n" id="7NpiMQN06V5" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <property role="1$x2rV" value="&lt;empty&gt;" />
         <ref role="1NtTu8" to="53m0:7NpiMQN06V4" resolve="text" />
         <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
       </node>

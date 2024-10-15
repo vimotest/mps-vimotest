@@ -176,6 +176,7 @@
         <child id="4696656866608863493" name="visibilityFeature" index="7cNAc" />
         <child id="4696656866608863492" name="textFeature" index="7cNAd" />
         <child id="4696656866608863494" name="enabledFeature" index="7cNAf" />
+        <child id="6201744883133776083" name="fillTextCommand" index="2WQ0rf" />
       </concept>
       <concept id="3426927311333626895" name="de.vimotest.viewmodel.structure.ClosedImageSet" flags="ng" index="28FJ0O">
         <child id="3426927311333626898" name="imageRefs" index="28FJ0D" />
@@ -1373,6 +1374,19 @@
         <node concept="C4FCh" id="5oh1xNEXBxN" role="UtuMD" />
         <node concept="3Vw88I" id="5oh1xNEXBxS" role="2WQ0r8" />
       </node>
+      <node concept="7cNA8" id="7UthagY0kvW" role="103ZUC">
+        <property role="TrG5h" value="MyFreeTextComboBox" />
+        <node concept="7cNxA" id="7UthagY0kvY" role="7cNAb">
+          <property role="M2z3M" value="A" />
+        </node>
+        <node concept="7cNxT" id="7UthagY0kw0" role="7cNAa" />
+        <node concept="V3Zf6" id="7UthagY0kw2" role="7cNAd">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCg" id="7UthagY0kw4" role="7cNAc" />
+        <node concept="C4FCh" id="7UthagY0kw6" role="7cNAf" />
+        <node concept="3Vw88I" id="7UthagY0kw8" role="2WQ0rf" />
+      </node>
     </node>
   </node>
   <node concept="103ZX$" id="5oh1xNFyoLI">
@@ -1439,6 +1453,21 @@
         <node concept="3eaLt2" id="7NpiMQMZW_V" role="DUiS9">
           <property role="3fQinD" value="Changed" />
           <ref role="3ucQsQ" node="5oh1xNEXBx$" resolve="MyLabel" />
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="7UthagY0kwb" role="30n1Qb">
+      <property role="3LKBmK" value="Fill Text ComboBox" />
+      <node concept="1IbZgy" id="7UthagY0kwc" role="DUd2K">
+        <node concept="30l7Wy" id="7UthagY0kwd" role="DUiTU" />
+      </node>
+      <node concept="DUd2R" id="7UthagY0kwe" role="DUd56">
+        <node concept="30nzp_" id="7UthagY0kwf" role="DUiSb" />
+      </node>
+      <node concept="DUd5q" id="7UthagY0kwg" role="DUd5p">
+        <node concept="3eaLt2" id="7UthagY24dt" role="DUiS9">
+          <property role="3fQinD" value="Changed" />
+          <ref role="3ucQsQ" node="7UthagY0kvW" resolve="MyFreeTextComboBox" />
         </node>
       </node>
     </node>

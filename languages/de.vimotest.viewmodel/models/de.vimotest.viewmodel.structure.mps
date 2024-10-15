@@ -101,9 +101,9 @@
     <node concept="1TJgyj" id="F907haLJWv" role="1TKVEi">
       <property role="IQ2ns" value="777152910168882975" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="contents" />
+      <property role="20kJfa" value="data" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="F907haLJWj" resolve="ViewModelContents" />
+      <ref role="20lvS9" node="F907haLJWj" resolve="ViewModelData" />
     </node>
     <node concept="PrWs8" id="F907haLJWq" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -129,7 +129,7 @@
   <node concept="1TIwiD" id="F907haLJWj">
     <property role="EcuMT" value="777152910168882963" />
     <property role="3GE5qa" value="viewmodel" />
-    <property role="TrG5h" value="ViewModelContents" />
+    <property role="TrG5h" value="ViewModelData" />
     <property role="34LRSv" value="contents" />
     <ref role="1TJDcQ" to="evry:F907haLJtZ" resolve="AbstractStructType" />
   </node>

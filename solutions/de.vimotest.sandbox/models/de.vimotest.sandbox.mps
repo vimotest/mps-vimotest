@@ -231,9 +231,9 @@
       </concept>
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
         <child id="777152910168882972" name="commands" index="103ZXC" />
-        <child id="777152910168882975" name="contents" index="103ZXF" />
+        <child id="777152910168882975" name="data" index="103ZXF" />
       </concept>
-      <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelContents" flags="ng" index="103ZXB" />
+      <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelData" flags="ng" index="103ZXB" />
       <concept id="2820520252859978186" name="de.vimotest.viewmodel.structure.ImageDefinitionRef" flags="ng" index="3eDL7N">
         <reference id="2820520252859978187" name="image" index="3eDL7M" />
       </concept>

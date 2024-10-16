@@ -980,6 +980,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="7kmE6cdINsy" role="3bR37C">
+          <node concept="3bR9La" id="7kmE6cdINsz" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJ$" resolve="jetbrains.mps.ide.editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7kmE6cdINs$" role="3bR37C">
+          <node concept="3bR9La" id="7kmE6cdINs_" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="220dcIkyGGa" role="3989C9">

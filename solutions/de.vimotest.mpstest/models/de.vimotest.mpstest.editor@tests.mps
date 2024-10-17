@@ -87,17 +87,12 @@
       <concept id="7445061853131767032" name="de.vimotest.testing.structure.ThenDescriptionWithAssert" flags="ng" index="DUd2R">
         <child id="7445061853131768388" name="assert" index="DUiSb" />
       </concept>
-      <concept id="3426401106045532804" name="de.vimotest.testing.structure.EmptyContext" flags="ng" index="30l7Wy" />
       <concept id="3426401106044983339" name="de.vimotest.testing.structure.ViewModelTestSuite" flags="ng" index="30n1Qd">
         <reference id="3426401106044983489" name="targetViewModel" index="30n1PB" />
         <child id="3426401106044983341" name="tests" index="30n1Qb" />
       </concept>
-      <concept id="4309178210352018146" name="de.vimotest.testing.structure.GivenDescriptionWithContext" flags="ng" index="1IbZgy">
-        <child id="7445061853131768373" name="context" index="DUiTU" />
-      </concept>
       <concept id="7205622933660482722" name="de.vimotest.testing.structure.ViewModelTestCase" flags="ng" index="3LKzX3">
         <property id="7205622933660497489" name="scenario" index="3LKBmK" />
-        <child id="7445061853131767039" name="contextWithDescription" index="DUd2K" />
         <child id="7445061853131767049" name="assertsWithDescription" index="DUd56" />
       </concept>
       <concept id="7205622933660496194" name="de.vimotest.testing.structure.ITestCaseAssertion" flags="ngI" index="3LKBaz" />
@@ -115,8 +110,8 @@
       </concept>
       <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommands" flags="ng" index="103ZXx" />
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
-        <child id="777152910168882972" name="commands" index="103ZXC" />
-        <child id="777152910168882975" name="data" index="103ZXF" />
+        <child id="777152910168882972" name="viewModelCommands" index="103ZXC" />
+        <child id="777152910168882975" name="viewModelData" index="103ZXF" />
       </concept>
       <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelData" flags="ng" index="103ZXB" />
     </language>
@@ -129,9 +124,6 @@
         <ref role="30n1PB" node="7kmE6cdCpmj" resolve="MyViewModel" />
         <node concept="3LKzX3" id="7kmE6cdCugj" role="30n1Qb">
           <property role="3LKBmK" value="Test" />
-          <node concept="1IbZgy" id="7kmE6cdCugk" role="DUd2K">
-            <node concept="30l7Wy" id="7kmE6cdCugo" role="DUiTU" />
-          </node>
           <node concept="DUd2R" id="7kmE6cdCugm" role="DUd56">
             <node concept="3LKBaz" id="7kmE6cdCugt" role="DUiSb">
               <node concept="LIFWc" id="7kmE6cdCugv" role="lGtFl">

@@ -1302,9 +1302,6 @@
     <ref role="30n1PB" node="7ZadkZWP7lz" resolve="GenericCommands_View" />
     <node concept="3LKzX3" id="7KHRfJVnrgU" role="30n1Qb">
       <property role="3LKBmK" value="Generic Commands Call" />
-      <node concept="1IbZgy" id="7KHRfJVnrgV" role="DUd2K">
-        <node concept="30l7Wy" id="7KHRfJVnrgZ" role="DUiTU" />
-      </node>
       <node concept="DUd5q" id="7KHRfJVpFyo" role="DUd5p">
         <node concept="27s6xY" id="1F_Q10zSP$W" role="DUiS9">
           <ref role="27sXQn" node="1F_Q10zSP$v" resolve="MyCommand" />
@@ -1356,9 +1353,6 @@
         <node concept="Tef3P" id="4VeFpYh1Hgm" role="DUiS9">
           <ref role="3ucQsQ" node="1F_Q10zVRnM" resolve="MyCheckBox2" />
         </node>
-      </node>
-      <node concept="1IbZgy" id="1F_Q10zVWh$" role="DUd2K">
-        <node concept="30l7Wy" id="1F_Q10zVWhC" role="DUiTU" />
       </node>
     </node>
   </node>
@@ -1445,9 +1439,6 @@
     <ref role="30n1PB" node="5oh1xNEXyHS" resolve="FillTextCommand_View" />
     <node concept="3LKzX3" id="7NpiMQMLC3V" role="30n1Qb">
       <property role="3LKBmK" value="Fill Text TextBox" />
-      <node concept="1IbZgy" id="7NpiMQMLC40" role="DUd2K">
-        <node concept="30l7Wy" id="7NpiMQMLC41" role="DUiTU" />
-      </node>
       <node concept="DUd5q" id="7NpiMQMLC45" role="DUd5p">
         <node concept="3eaLt2" id="7NpiMQMZW_V" role="DUiS9">
           <property role="3fQinD" value="Changed" />
@@ -1457,9 +1448,6 @@
     </node>
     <node concept="3LKzX3" id="7UthagY0kwb" role="30n1Qb">
       <property role="3LKBmK" value="Fill Text ComboBox" />
-      <node concept="1IbZgy" id="7UthagY0kwc" role="DUd2K">
-        <node concept="30l7Wy" id="7UthagY0kwd" role="DUiTU" />
-      </node>
       <node concept="DUd5q" id="7UthagY0kwg" role="DUd5p">
         <node concept="3eaLt2" id="7UthagY24dt" role="DUiS9">
           <property role="3fQinD" value="Changed" />
@@ -1490,9 +1478,6 @@
     <ref role="30n1PB" node="7NpiMQMZW_X" resolve="ClickCommand_View" />
     <node concept="3LKzX3" id="7NpiMQN01pZ" role="30n1Qb">
       <property role="3LKBmK" value="Click Button" />
-      <node concept="1IbZgy" id="7NpiMQN01q0" role="DUd2K">
-        <node concept="30l7Wy" id="7NpiMQN01q4" role="DUiTU" />
-      </node>
       <node concept="DUd5q" id="7NpiMQN01q6" role="DUd5p">
         <node concept="3eaLt3" id="7NpiMQN01q8" role="DUiS9">
           <ref role="3ucQsQ" node="7NpiMQN01pT" resolve="MyButton" />
@@ -1524,9 +1509,6 @@
     <ref role="30n1PB" node="5imH8sU2ENx" resolve="LoadCommand_View" />
     <node concept="3LKzX3" id="5imH8sU7feI" role="30n1Qb">
       <property role="3LKBmK" value="Load Commands Call" />
-      <node concept="1IbZgy" id="5imH8sU7feJ" role="DUd2K">
-        <node concept="30l7Wy" id="5imH8sU7flE" role="DUiTU" />
-      </node>
       <node concept="DUd5q" id="5imH8sU7flG" role="DUd5p">
         <node concept="27s6xY" id="5imH8sU7flI" role="DUiS9">
           <ref role="27sXQn" node="5imH8sU2ENK" resolve="LoadView" />
@@ -1535,9 +1517,6 @@
     </node>
     <node concept="3LKzX3" id="5imH8sU7TZh" role="30n1Qb">
       <property role="3LKBmK" value="Load with Parameter Commands Call" />
-      <node concept="1IbZgy" id="5imH8sU7TZi" role="DUd2K">
-        <node concept="30l7Wy" id="5imH8sU7TZj" role="DUiTU" />
-      </node>
       <node concept="DUd5q" id="5imH8sU7TZk" role="DUd5p">
         <node concept="27s6xY" id="5imH8sU7TZl" role="DUiS9">
           <ref role="27sXQn" node="5imH8sU7TY_" resolve="LoadViewWithName" />
@@ -1581,9 +1560,6 @@
     <ref role="30n1PB" node="5imH8sU7TYp" resolve="SelectEntryCommand_View" />
     <node concept="3LKzX3" id="5imH8sU7U2R" role="30n1Qb">
       <property role="3LKBmK" value="Select Entry Combobox Call" />
-      <node concept="1IbZgy" id="5imH8sU7U2S" role="DUd2K">
-        <node concept="30l7Wy" id="5imH8sU7U3S" role="DUiTU" />
-      </node>
       <node concept="DUd5q" id="5imH8sU7U3U" role="DUd5p">
         <node concept="3eaLtv" id="5imH8sU7U3W" role="DUiS9">
           <ref role="3ucQsQ" node="5imH8sU7TYs" resolve="MyComboBox" />

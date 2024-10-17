@@ -812,7 +812,7 @@
                                         <node concept="liA8E" id="2ClbUKum_M" role="2OqNvi">
                                           <ref role="37wK5l" to="hox0:~StyleRegistry.getStyle(java.lang.String)" resolve="getStyle" />
                                           <node concept="Xl_RD" id="2ClbUKum_N" role="37wK5m">
-                                            <property role="Xl_RC" value="KeyWord" />
+                                            <property role="Xl_RC" value="KEYWORD" />
                                           </node>
                                         </node>
                                       </node>

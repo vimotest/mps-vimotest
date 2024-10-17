@@ -474,24 +474,36 @@
               </node>
             </node>
           </node>
-          <node concept="22lmx$" id="1F_Q10zWnCL" role="3clFbw">
-            <node concept="2OqwBi" id="1F_Q10zWomv" role="3uHU7w">
-              <node concept="37vLTw" id="1F_Q10zWnDY" role="2Oq$k0">
-                <ref role="3cqZAo" node="1F_Q10zWlfs" resolve="kind" />
+          <node concept="22lmx$" id="17xw4ZmNi_L" role="3clFbw">
+            <node concept="22lmx$" id="1F_Q10zWnCL" role="3uHU7B">
+              <node concept="2OqwBi" id="1F_Q10zWm33" role="3uHU7B">
+                <node concept="37vLTw" id="1F_Q10zWlwT" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1F_Q10zWlfs" resolve="kind" />
+                </node>
+                <node concept="2Zo12i" id="1F_Q10zWmrl" role="2OqNvi">
+                  <node concept="chp4Y" id="1F_Q10zWmAt" role="2Zo12j">
+                    <ref role="cht4Q" to="at53:F907haLIRF" resolve="ViewWidget" />
+                  </node>
+                </node>
               </node>
-              <node concept="2Zo12i" id="1F_Q10zWoJ1" role="2OqNvi">
-                <node concept="chp4Y" id="1F_Q10zWoKi" role="2Zo12j">
-                  <ref role="cht4Q" to="at53:F907haLJXw" resolve="IViewModelCommand" />
+              <node concept="2OqwBi" id="1F_Q10zWomv" role="3uHU7w">
+                <node concept="37vLTw" id="1F_Q10zWnDY" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1F_Q10zWlfs" resolve="kind" />
+                </node>
+                <node concept="2Zo12i" id="1F_Q10zWoJ1" role="2OqNvi">
+                  <node concept="chp4Y" id="1F_Q10zWoKi" role="2Zo12j">
+                    <ref role="cht4Q" to="at53:F907haLJXw" resolve="IViewModelCommand" />
+                  </node>
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="1F_Q10zWm33" role="3uHU7B">
-              <node concept="37vLTw" id="1F_Q10zWlwT" role="2Oq$k0">
+            <node concept="2OqwBi" id="17xw4ZmNiSg" role="3uHU7w">
+              <node concept="37vLTw" id="17xw4ZmNiSh" role="2Oq$k0">
                 <ref role="3cqZAo" node="1F_Q10zWlfs" resolve="kind" />
               </node>
-              <node concept="2Zo12i" id="1F_Q10zWmrl" role="2OqNvi">
-                <node concept="chp4Y" id="1F_Q10zWmAt" role="2Zo12j">
-                  <ref role="cht4Q" to="at53:F907haLIRF" resolve="ViewWidget" />
+              <node concept="2Zo12i" id="17xw4ZmNiSi" role="2OqNvi">
+                <node concept="chp4Y" id="17xw4ZmNiSj" role="2Zo12j">
+                  <ref role="cht4Q" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
                 </node>
               </node>
             </node>

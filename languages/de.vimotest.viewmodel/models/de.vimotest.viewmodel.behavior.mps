@@ -933,6 +933,44 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="17xw4ZmNYnK" role="3cqZAp">
+          <node concept="3clFbS" id="17xw4ZmNYnM" role="3clFbx">
+            <node concept="3cpWs6" id="17xw4ZmO0xa" role="3cqZAp">
+              <node concept="2YIFZM" id="17xw4ZmO0xb" role="3cqZAk">
+                <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+                <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+                <node concept="2OqwBi" id="17xw4ZmO0xc" role="37wK5m">
+                  <node concept="2OqwBi" id="17xw4ZmO0xd" role="2Oq$k0">
+                    <node concept="2OqwBi" id="17xw4ZmO0xe" role="2Oq$k0">
+                      <node concept="13iPFW" id="17xw4ZmO0xf" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="17xw4ZmO0xg" role="2OqNvi">
+                        <ref role="3Tt5mk" to="at53:F907haLJWs" />
+                      </node>
+                    </node>
+                    <node concept="3Tsc0h" id="17xw4ZmO1Xx" role="2OqNvi">
+                      <ref role="3TtcxE" to="at53:F907haMmbJ" resolve="commands" />
+                    </node>
+                  </node>
+                  <node concept="v3k3i" id="17xw4ZmO0xi" role="2OqNvi">
+                    <node concept="chp4Y" id="17xw4ZmO0xj" role="v3oSu">
+                      <ref role="cht4Q" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="17xw4ZmNZk9" role="3clFbw">
+            <node concept="37vLTw" id="17xw4ZmNYAF" role="2Oq$k0">
+              <ref role="3cqZAo" node="1F_Q10zW1wU" resolve="kind" />
+            </node>
+            <node concept="2Zo12i" id="17xw4ZmNZTu" role="2OqNvi">
+              <node concept="chp4Y" id="17xw4ZmO0co" role="2Zo12j">
+                <ref role="cht4Q" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="1F_Q10zW1x4" role="3cqZAp">
           <node concept="2OqwBi" id="1F_Q10zW1x1" role="3clFbG">
             <node concept="13iAh5" id="1F_Q10zW1x2" role="2Oq$k0">

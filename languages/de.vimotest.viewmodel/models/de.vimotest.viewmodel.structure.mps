@@ -94,14 +94,14 @@
     <node concept="1TJgyj" id="F907haLJWs" role="1TKVEi">
       <property role="IQ2ns" value="777152910168882972" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="commands" />
+      <property role="20kJfa" value="viewModelCommands" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="F907haLJWl" resolve="ViewModelCommands" />
     </node>
     <node concept="1TJgyj" id="F907haLJWv" role="1TKVEi">
       <property role="IQ2ns" value="777152910168882975" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="data" />
+      <property role="20kJfa" value="viewModelData" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="F907haLJWj" resolve="ViewModelData" />
     </node>

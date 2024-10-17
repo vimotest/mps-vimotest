@@ -616,7 +616,7 @@
         <ref role="1k5W1q" to="dgt9:F907haLJXS" resolve="LeftBracket" />
       </node>
       <node concept="3F1sOY" id="F907haLJZb" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:F907haLJWv" resolve="data" />
+        <ref role="1NtTu8" to="at53:F907haLJWv" resolve="viewModelData" />
         <node concept="pVoyu" id="F907haLJZc" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -630,7 +630,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="F907haLJYX" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:F907haLJWs" resolve="commands" />
+        <ref role="1NtTu8" to="at53:F907haLJWs" resolve="viewModelCommands" />
         <node concept="pVoyu" id="F907haLJZ6" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

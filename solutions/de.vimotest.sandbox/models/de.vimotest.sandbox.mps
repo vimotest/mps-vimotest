@@ -12,6 +12,7 @@
         <child id="777152910168882908" name="contents" index="103ZUC" />
       </concept>
       <concept id="7808764115844896567" name="de.vimotest.types.structure.BoolType" flags="ng" index="1nBHEw" />
+      <concept id="7808764115844976085" name="de.vimotest.types.structure.StringType" flags="ng" index="1nBS12" />
       <concept id="7808764115843597086" name="de.vimotest.types.structure.FieldStructContent" flags="ng" index="1nWCU9" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -103,6 +104,7 @@
         <property id="8996304390298037956" name="text" index="3fQinD" />
       </concept>
       <concept id="8996304390297115758" name="de.vimotest.testing.structure.ClickCommandAction" flags="ng" index="3eaLt3" />
+      <concept id="8996304390297115762" name="de.vimotest.testing.structure.SelectEntryCommandAction" flags="ng" index="3eaLtv" />
       <concept id="5678667081004710962" name="de.vimotest.testing.structure.ViewWidgetCommandAction" flags="ng" index="3ucX6H">
         <reference id="5678667081004731049" name="widget" index="3ucQsQ" />
       </concept>
@@ -140,6 +142,9 @@
       </concept>
     </language>
     <language id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi">
+      <concept id="2674824929519052396" name="alfi.structure.StringLiteralExpression" flags="ng" index="_iklQ">
+        <property id="2674824929519052397" name="value" index="_iklR" />
+      </concept>
       <concept id="2674824929518763012" name="alfi.structure.BooleanLiteralExpression" flags="ng" index="_jtWu" />
       <concept id="2674824929519838362" name="alfi.structure.PositionalTuple" flags="ng" index="_vku0">
         <child id="2674824929519838363" name="expression" index="_vku1" />
@@ -176,6 +181,7 @@
         <child id="4696656866608863493" name="visibilityFeature" index="7cNAc" />
         <child id="4696656866608863492" name="textFeature" index="7cNAd" />
         <child id="4696656866608863494" name="enabledFeature" index="7cNAf" />
+        <child id="6201744883133776082" name="selectEntryCommand" index="2WQ0re" />
         <child id="6201744883133776083" name="fillTextCommand" index="2WQ0rf" />
       </concept>
       <concept id="3426927311333626895" name="de.vimotest.viewmodel.structure.ClosedImageSet" flags="ng" index="28FJ0O">
@@ -231,8 +237,8 @@
         <child id="777152910169039599" name="commands" index="1006ar" />
       </concept>
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
-        <child id="777152910168882972" name="commands" index="103ZXC" />
-        <child id="777152910168882975" name="data" index="103ZXF" />
+        <child id="777152910168882972" name="viewModelCommands" index="103ZXC" />
+        <child id="777152910168882975" name="viewModelData" index="103ZXF" />
       </concept>
       <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelData" flags="ng" index="103ZXB" />
       <concept id="2820520252859978186" name="de.vimotest.viewmodel.structure.ImageDefinitionRef" flags="ng" index="3eDL7N">
@@ -266,7 +272,9 @@
       </concept>
       <concept id="7283258543666616094" name="de.vimotest.viewmodel.structure.CheckCommand" flags="ng" index="3Vw88g" />
       <concept id="7283258543666616095" name="de.vimotest.viewmodel.structure.ClickCommand" flags="ng" index="3Vw88h" />
+      <concept id="7283258543666616099" name="de.vimotest.viewmodel.structure.SelectEntryCommand" flags="ng" index="3Vw88H" />
       <concept id="7283258543666616096" name="de.vimotest.viewmodel.structure.FillTextCommand" flags="ng" index="3Vw88I" />
+      <concept id="7283258543666616097" name="de.vimotest.viewmodel.structure.LoadCommand" flags="ng" index="3Vw88J" />
       <concept id="7283258543665341322" name="de.vimotest.viewmodel.structure.GenericViewModelCommand" flags="ng" index="3V$Nq4" />
     </language>
   </registry>
@@ -1294,9 +1302,6 @@
     <ref role="30n1PB" node="7ZadkZWP7lz" resolve="GenericCommands_View" />
     <node concept="3LKzX3" id="7KHRfJVnrgU" role="30n1Qb">
       <property role="3LKBmK" value="Generic Commands Call" />
-      <node concept="DUd2R" id="7KHRfJVnrh1" role="DUd56">
-        <node concept="30nzp_" id="7KHRfJVnrh3" role="DUiSb" />
-      </node>
       <node concept="1IbZgy" id="7KHRfJVnrgV" role="DUd2K">
         <node concept="30l7Wy" id="7KHRfJVnrgZ" role="DUiTU" />
       </node>
@@ -1354,9 +1359,6 @@
       </node>
       <node concept="1IbZgy" id="1F_Q10zVWh$" role="DUd2K">
         <node concept="30l7Wy" id="1F_Q10zVWhC" role="DUiTU" />
-      </node>
-      <node concept="DUd2R" id="1F_Q10zVWhA" role="DUd56">
-        <node concept="30nzp_" id="1F_Q10zVWhE" role="DUiSb" />
       </node>
     </node>
   </node>
@@ -1446,9 +1448,6 @@
       <node concept="1IbZgy" id="7NpiMQMLC40" role="DUd2K">
         <node concept="30l7Wy" id="7NpiMQMLC41" role="DUiTU" />
       </node>
-      <node concept="DUd2R" id="7NpiMQMLC42" role="DUd56">
-        <node concept="30nzp_" id="7NpiMQMLC43" role="DUiSb" />
-      </node>
       <node concept="DUd5q" id="7NpiMQMLC45" role="DUd5p">
         <node concept="3eaLt2" id="7NpiMQMZW_V" role="DUiS9">
           <property role="3fQinD" value="Changed" />
@@ -1460,9 +1459,6 @@
       <property role="3LKBmK" value="Fill Text ComboBox" />
       <node concept="1IbZgy" id="7UthagY0kwc" role="DUd2K">
         <node concept="30l7Wy" id="7UthagY0kwd" role="DUiTU" />
-      </node>
-      <node concept="DUd2R" id="7UthagY0kwe" role="DUd56">
-        <node concept="30nzp_" id="7UthagY0kwf" role="DUiSb" />
       </node>
       <node concept="DUd5q" id="7UthagY0kwg" role="DUd5p">
         <node concept="3eaLt2" id="7UthagY24dt" role="DUiS9">
@@ -1502,8 +1498,96 @@
           <ref role="3ucQsQ" node="7NpiMQN01pT" resolve="MyButton" />
         </node>
       </node>
-      <node concept="DUd2R" id="7NpiMQN01qa" role="DUd56">
-        <node concept="30nzp_" id="7NpiMQN01qc" role="DUiSb" />
+    </node>
+  </node>
+  <node concept="103ZX$" id="5imH8sU2ENx">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="LoadCommand_View" />
+    <node concept="103ZXx" id="5imH8sU2ENy" role="103ZXC">
+      <node concept="3Vw88J" id="5imH8sU2ENK" role="1006ar">
+        <property role="TrG5h" value="LoadView" />
+      </node>
+      <node concept="3Vw88J" id="5imH8sU7TY_" role="1006ar">
+        <property role="TrG5h" value="LoadViewWithName" />
+        <property role="2hCfGp" value="true" />
+        <node concept="1nWCU9" id="5imH8sU7TYA" role="103ZUC">
+          <property role="TrG5h" value="Name" />
+          <node concept="1nBS12" id="5imH8sU7TYH" role="3xMlr6" />
+        </node>
+      </node>
+    </node>
+    <node concept="103ZXB" id="5imH8sU2ENz" role="103ZXF" />
+  </node>
+  <node concept="30n1Qd" id="5imH8sU7feH">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="LoadCommand_ViewTests" />
+    <ref role="30n1PB" node="5imH8sU2ENx" resolve="LoadCommand_View" />
+    <node concept="3LKzX3" id="5imH8sU7feI" role="30n1Qb">
+      <property role="3LKBmK" value="Load Commands Call" />
+      <node concept="1IbZgy" id="5imH8sU7feJ" role="DUd2K">
+        <node concept="30l7Wy" id="5imH8sU7flE" role="DUiTU" />
+      </node>
+      <node concept="DUd5q" id="5imH8sU7flG" role="DUd5p">
+        <node concept="27s6xY" id="5imH8sU7flI" role="DUiS9">
+          <ref role="27sXQn" node="5imH8sU2ENK" resolve="LoadView" />
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="5imH8sU7TZh" role="30n1Qb">
+      <property role="3LKBmK" value="Load with Parameter Commands Call" />
+      <node concept="1IbZgy" id="5imH8sU7TZi" role="DUd2K">
+        <node concept="30l7Wy" id="5imH8sU7TZj" role="DUiTU" />
+      </node>
+      <node concept="DUd5q" id="5imH8sU7TZk" role="DUd5p">
+        <node concept="27s6xY" id="5imH8sU7TZl" role="DUiS9">
+          <ref role="27sXQn" node="5imH8sU7TY_" resolve="LoadViewWithName" />
+          <node concept="_vku0" id="5imH8sU7TZm" role="27sTdU">
+            <node concept="_iklQ" id="5imH8sU7U0m" role="_vku1">
+              <property role="_iklR" value="Name" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="103ZX$" id="5imH8sU7TYp">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="SelectEntryCommand_View" />
+    <node concept="103ZXx" id="5imH8sU7TYq" role="103ZXC" />
+    <node concept="103ZXB" id="5imH8sU7TYr" role="103ZXF">
+      <node concept="7cNA8" id="5imH8sU7TYs" role="103ZUC">
+        <property role="TrG5h" value="MyComboBox" />
+        <node concept="7cNxA" id="5imH8sU7TYt" role="7cNAb">
+          <node concept="2gaR_a" id="5imH8sU7TYy" role="M2z3O">
+            <property role="TrG5h" value="A" />
+          </node>
+          <node concept="2gaR_a" id="5imH8sU7TYz" role="M2z3O">
+            <property role="TrG5h" value="B" />
+          </node>
+        </node>
+        <node concept="7cNxT" id="5imH8sU7TYu" role="7cNAa">
+          <ref role="LYRLJ" node="5imH8sU7TYy" resolve="A" />
+        </node>
+        <node concept="V3Zf6" id="5imH8sU7TYv" role="7cNAd" />
+        <node concept="C4FCg" id="5imH8sU7TYw" role="7cNAc" />
+        <node concept="C4FCh" id="5imH8sU7TYx" role="7cNAf" />
+        <node concept="3Vw88H" id="5imH8sU7TY$" role="2WQ0re" />
+      </node>
+    </node>
+  </node>
+  <node concept="30n1Qd" id="5imH8sU7U2Q">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="SelectEntryCommand_ViewTests" />
+    <ref role="30n1PB" node="5imH8sU7TYp" resolve="SelectEntryCommand_View" />
+    <node concept="3LKzX3" id="5imH8sU7U2R" role="30n1Qb">
+      <property role="3LKBmK" value="Select Entry Combobox Call" />
+      <node concept="1IbZgy" id="5imH8sU7U2S" role="DUd2K">
+        <node concept="30l7Wy" id="5imH8sU7U3S" role="DUiTU" />
+      </node>
+      <node concept="DUd5q" id="5imH8sU7U3U" role="DUd5p">
+        <node concept="3eaLtv" id="5imH8sU7U3W" role="DUiS9">
+          <ref role="3ucQsQ" node="5imH8sU7TYs" resolve="MyComboBox" />
+        </node>
       </node>
     </node>
   </node>

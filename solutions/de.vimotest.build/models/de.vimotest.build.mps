@@ -269,7 +269,7 @@
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
       <node concept="m$_yC" id="7KHRfJVmoqN" role="m$_yJ">
-        <ref role="m$_y1" to="mk2q:5tK9548cRhB" />
+        <ref role="m$_y1" to="mk2q:5tK9548cRhB" resolve="alfi" />
       </node>
       <node concept="3_J27D" id="220dcIkyAjh" role="m_cZH">
         <node concept="3Mxwew" id="220dcIkyAji" role="3MwsjC">

@@ -626,7 +626,7 @@
     <property role="3GE5qa" value="test.actions" />
     <ref role="1M2myG" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
     <node concept="1N5Pfh" id="1F_Q10zW1bx" role="1Mr941">
-      <ref role="1N5Vy1" to="53m0:4VeFpYgZsED" />
+      <ref role="1N5Vy1" to="53m0:4VeFpYgZsED" resolve="widget" />
       <node concept="1dDu$B" id="1F_Q10zW1d8" role="1N6uqs">
         <ref role="1dDu$A" to="at53:F907haMeIO" resolve="CheckBoxWidget" />
       </node>
@@ -645,10 +645,10 @@
             </node>
             <node concept="2OqwBi" id="5oh1xNF6HGu" role="3uHU7B">
               <node concept="35c_gC" id="5oh1xNF6HGv" role="2Oq$k0">
-                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" />
+                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" resolve="ViewWidgetCheck" />
               </node>
               <node concept="2qgKlT" id="5oh1xNF6HGw" role="2OqNvi">
-                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" />
+                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" resolve="getWidgetConceptToCheckByParentNode" />
                 <node concept="nLn13" id="5oh1xNF6HGx" role="37wK5m" />
               </node>
             </node>

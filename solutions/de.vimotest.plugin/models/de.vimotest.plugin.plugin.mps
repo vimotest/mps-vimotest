@@ -1035,7 +1035,7 @@
                           </node>
                           <node concept="3JPx81" id="5oh1xNETHbT" role="2OqNvi">
                             <node concept="1rXfSq" id="5oh1xNETHbU" role="25WWJ7">
-                              <ref role="37wK5l" node="5oh1xNETPfB" resolve="getEditorFeaturesComponentName" />
+                              <ref role="37wK5l" node="5oh1xNETPfB" resolve="getEditorCommandsComponentName" />
                               <node concept="37vLTw" id="5oh1xNETHbV" role="37wK5m">
                                 <ref role="3cqZAo" node="5oh1xNETHbW" resolve="it" />
                               </node>
@@ -1381,7 +1381,7 @@
                 <ref role="3cqZAo" node="26yOs7Sp9zK" resolve="widgetDefinition" />
               </node>
               <node concept="3Tsc0h" id="5oh1xNF4TO3" role="2OqNvi">
-                <ref role="3TtcxE" to="3255:2exRXkpNhul" />
+                <ref role="3TtcxE" to="3255:2exRXkpNhul" resolve="commands" />
               </node>
             </node>
             <node concept="2es0OD" id="5oh1xNF4TO4" role="2OqNvi">
@@ -1418,10 +1418,10 @@
                           <node concept="2OqwBi" id="5oh1xNF4TOk" role="37wK5m">
                             <node concept="2OqwBi" id="5oh1xNF4TOl" role="2Oq$k0">
                               <node concept="37vLTw" id="5oh1xNF4TOm" role="2Oq$k0">
-                                <ref role="3cqZAo" node="5oh1xNF4TOR" resolve="featureDefinitionRef" />
+                                <ref role="3cqZAo" node="5oh1xNF4TOR" resolve="commandDefinitionRef" />
                               </node>
                               <node concept="3TrEf2" id="5oh1xNF4TOn" role="2OqNvi">
-                                <ref role="3Tt5mk" to="3255:2exRXkpMlLa" />
+                                <ref role="3Tt5mk" to="3255:2exRXkpMlLa" resolve="command" />
                               </node>
                             </node>
                             <node concept="3TrcHB" id="5oh1xNF4TOo" role="2OqNvi">
@@ -1488,10 +1488,10 @@
                           <ref role="1Pybhc" node="13sxcsThne" resolve="CommandGenerator" />
                           <node concept="2OqwBi" id="5oh1xNF4TOK" role="37wK5m">
                             <node concept="37vLTw" id="5oh1xNF4TOL" role="2Oq$k0">
-                              <ref role="3cqZAo" node="5oh1xNF4TOR" resolve="featureDefinitionRef" />
+                              <ref role="3cqZAo" node="5oh1xNF4TOR" resolve="commandDefinitionRef" />
                             </node>
                             <node concept="3TrEf2" id="5oh1xNF4TOM" role="2OqNvi">
-                              <ref role="3Tt5mk" to="3255:2exRXkpMlLa" />
+                              <ref role="3Tt5mk" to="3255:2exRXkpMlLa" resolve="command" />
                             </node>
                           </node>
                         </node>
@@ -1916,7 +1916,7 @@
         <node concept="3clFbF" id="5oh1xNETsi1" role="3cqZAp">
           <node concept="37vLTI" id="5oh1xNETsi2" role="3clFbG">
             <node concept="1rXfSq" id="5oh1xNETsi3" role="37vLTx">
-              <ref role="37wK5l" node="5oh1xNETPfB" resolve="getEditorFeaturesComponentName" />
+              <ref role="37wK5l" node="5oh1xNETPfB" resolve="getEditorCommandsComponentName" />
               <node concept="37vLTw" id="5oh1xNETsi4" role="37wK5m">
                 <ref role="3cqZAo" node="5oh1xNETshR" resolve="widgetDefinition" />
               </node>
@@ -2029,7 +2029,7 @@
                 <ref role="3cqZAo" node="5oh1xNETshR" resolve="widgetDefinition" />
               </node>
               <node concept="3Tsc0h" id="5oh1xNETsiN" role="2OqNvi">
-                <ref role="3TtcxE" to="3255:2exRXkpNhul" />
+                <ref role="3TtcxE" to="3255:2exRXkpNhul" resolve="commands" />
               </node>
             </node>
             <node concept="2es0OD" id="5oh1xNETsiO" role="2OqNvi">
@@ -2047,10 +2047,10 @@
                           <ref role="1Pybhc" node="13sxcsThne" resolve="CommandGenerator" />
                           <node concept="2OqwBi" id="5oh1xNETsiW" role="37wK5m">
                             <node concept="37vLTw" id="5oh1xNETsiX" role="2Oq$k0">
-                              <ref role="3cqZAo" node="5oh1xNETsjv" resolve="featureDefinitionRef" />
+                              <ref role="3cqZAo" node="5oh1xNETsjv" resolve="commandDefinitionRef" />
                             </node>
                             <node concept="3TrEf2" id="5oh1xNETsiY" role="2OqNvi">
-                              <ref role="3Tt5mk" to="3255:2exRXkpMlLa" />
+                              <ref role="3Tt5mk" to="3255:2exRXkpMlLa" resolve="command" />
                             </node>
                           </node>
                         </node>
@@ -2086,7 +2086,7 @@
                               <node concept="3clFbF" id="5oh1xNETsjc" role="3cqZAp">
                                 <node concept="17R0WA" id="5oh1xNETsjd" role="3clFbG">
                                   <node concept="37vLTw" id="5oh1xNETsje" role="3uHU7w">
-                                    <ref role="3cqZAo" node="5oh1xNETsiS" resolve="widgetFeatureConcept" />
+                                    <ref role="3cqZAo" node="5oh1xNETsiS" resolve="commandConcept" />
                                   </node>
                                   <node concept="2OqwBi" id="5oh1xNETsjf" role="3uHU7B">
                                     <node concept="37vLTw" id="5oh1xNETsjg" role="2Oq$k0">
@@ -8473,7 +8473,7 @@
             <property role="TrG5h" value="commandUsage" />
           </node>
           <node concept="37vLTw" id="5oh1xNECod$" role="2GsD0m">
-            <ref role="3cqZAo" node="5oh1xNECodr" resolve="featureUsages" />
+            <ref role="3cqZAo" node="5oh1xNECodr" resolve="commandUsages" />
           </node>
           <node concept="3clFbS" id="5oh1xNECod_" role="2LFqv$">
             <node concept="3cpWs8" id="5oh1xNECodA" role="3cqZAp">
@@ -8489,7 +8489,7 @@
                   </node>
                   <node concept="2OqwBi" id="5oh1xNECodF" role="1m5AlR">
                     <node concept="2GrUjf" id="5oh1xNECodG" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="5oh1xNECodz" resolve="featureUsage" />
+                      <ref role="2Gs0qQ" node="5oh1xNECodz" resolve="commandUsage" />
                     </node>
                     <node concept="1mfA1w" id="5oh1xNECodH" role="2OqNvi" />
                   </node>
@@ -8571,7 +8571,7 @@
                       <ref role="3cqZAo" node="5oh1xNECodQ" resolve="widgetConcept" />
                     </node>
                     <node concept="3Tsc0h" id="5oh1xNECoef" role="2OqNvi">
-                      <ref role="3TtcxE" to="tpce:f_TKVDF" />
+                      <ref role="3TtcxE" to="tpce:f_TKVDF" resolve="linkDeclaration" />
                     </node>
                   </node>
                   <node concept="1z4cxt" id="5oh1xNED2Eu" role="2OqNvi">
@@ -8611,7 +8611,7 @@
                   <property role="2xdLsb" value="gZ5fh_4/error" />
                   <node concept="3cpWs3" id="5oh1xNECoeu" role="9lYJi">
                     <node concept="37vLTw" id="5oh1xNECoev" role="3uHU7w">
-                      <ref role="3cqZAo" node="5oh1xNECodZ" resolve="expectedFeatureName" />
+                      <ref role="3cqZAo" node="5oh1xNECodZ" resolve="expectedCommandSupportName" />
                     </node>
                     <node concept="3cpWs3" id="5oh1xNECoew" role="3uHU7B">
                       <node concept="3cpWs3" id="5oh1xNECoex" role="3uHU7B">
@@ -8668,7 +8668,7 @@
                 <node concept="10P_77" id="5oh1xNEDoIy" role="1tU5fm" />
                 <node concept="17R0WA" id="5oh1xNEDHC3" role="33vP2m">
                   <node concept="37vLTw" id="5oh1xNEEEuE" role="3uHU7w">
-                    <ref role="3cqZAo" node="5oh1xNEEEu_" resolve="conceptName" />
+                    <ref role="3cqZAo" node="5oh1xNEEEu_" resolve="expectedLinkTypeName" />
                   </node>
                   <node concept="2OqwBi" id="5oh1xNEDAN5" role="3uHU7B">
                     <node concept="2OqwBi" id="5oh1xNEDyJ5" role="2Oq$k0">
@@ -9409,7 +9409,7 @@
         <node concept="3clFbH" id="2HH7neOoyWS" role="3cqZAp" />
         <node concept="3clFbF" id="2HH7neOmsYW" role="3cqZAp">
           <node concept="1rXfSq" id="2HH7neOmsYX" role="3clFbG">
-            <ref role="37wK5l" node="2HH7neOoi5E" resolve="generateMappingHelper" />
+            <ref role="37wK5l" node="2HH7neOoi5E" resolve="generateWidgetConceptMappingHelper" />
           </node>
         </node>
         <node concept="3clFbF" id="7kmE6cdJmPD" role="3cqZAp">
@@ -9450,7 +9450,7 @@
               </node>
             </node>
             <node concept="1rXfSq" id="2HH7neOonQM" role="37vLTx">
-              <ref role="37wK5l" node="2HH7neOlAKJ" resolve="getMappingHelperName" />
+              <ref role="37wK5l" node="2HH7neOlAKJ" resolve="getWidgetMappingHelperName" />
             </node>
           </node>
         </node>
@@ -10057,7 +10057,7 @@
               <node concept="2OqwBi" id="7kmE6cdJdSX" role="2Oq$k0">
                 <node concept="2OqwBi" id="7kmE6cdJdSY" role="2Oq$k0">
                   <node concept="37vLTw" id="7kmE6cdJdSZ" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7kmE6cdJdSM" resolve="widgets" />
+                    <ref role="3cqZAo" node="7kmE6cdJdSM" resolve="commands" />
                   </node>
                   <node concept="3$u5V9" id="7kmE6cdJdT0" role="2OqNvi">
                     <node concept="1bVj0M" id="7kmE6cdJdT1" role="23t8la">
@@ -10238,7 +10238,7 @@
           <node concept="2ShNRf" id="2HH7neOlAKi" role="3cqZAk">
             <node concept="Tc6Ow" id="2HH7neOlAKj" role="2ShVmc">
               <node concept="1rXfSq" id="2HH7neOlAKq" role="HW$Y0">
-                <ref role="37wK5l" node="2HH7neOlAKJ" resolve="getMappingHelperName" />
+                <ref role="37wK5l" node="2HH7neOlAKJ" resolve="getWidgetMappingHelperName" />
               </node>
               <node concept="1rXfSq" id="7kmE6cdJzt9" role="HW$Y0">
                 <ref role="37wK5l" node="7kmE6cdJvKB" resolve="getCommandMappingHelperName" />
@@ -10481,7 +10481,7 @@
                           </node>
                           <node concept="3JPx81" id="7NpiMQMM5i_" role="2OqNvi">
                             <node concept="1rXfSq" id="7NpiMQMM5iA" role="25WWJ7">
-                              <ref role="37wK5l" node="7NpiMQMM9EJ" resolve="getCommandActionConceptName" />
+                              <ref role="37wK5l" node="7NpiMQMM9EJ" resolve="getCommandActionBehaviorName" />
                               <node concept="37vLTw" id="7NpiMQMM5iB" role="37wK5m">
                                 <ref role="3cqZAo" node="7NpiMQMM5iC" resolve="it" />
                               </node>
@@ -10897,7 +10897,7 @@
                 <ref role="3cqZAo" node="7NpiMQMMw0D" resolve="behaviorNode" />
               </node>
               <node concept="3TrEf2" id="7NpiMQMMw14" role="2OqNvi">
-                <ref role="3Tt5mk" to="1i04:hP3h7Gv" />
+                <ref role="3Tt5mk" to="1i04:hP3h7Gv" resolve="concept" />
               </node>
             </node>
           </node>
@@ -11175,7 +11175,7 @@
                 <ref role="3cqZAo" node="7NpiMQMMw0D" resolve="behaviorNode" />
               </node>
               <node concept="3Tsc0h" id="7NpiMQMMw2Q" role="2OqNvi">
-                <ref role="3TtcxE" to="1i04:hP3h7G_" />
+                <ref role="3TtcxE" to="1i04:hP3h7G_" resolve="method" />
               </node>
             </node>
             <node concept="TSZUe" id="7NpiMQMMw2R" role="2OqNvi">

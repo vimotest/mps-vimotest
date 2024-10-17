@@ -795,7 +795,7 @@
     <property role="EcuMT" value="8948051009467167877" />
     <property role="3GE5qa" value="test.actions" />
     <property role="TrG5h" value="ViewCommandInvocationAction" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7KHRfJVnw5F" role="PzmwI">
       <ref role="PrY4T" node="6fZwY6ifv53" resolve="ITestCaseAction" />
     </node>
@@ -829,7 +829,7 @@
     <property role="3GE5qa" value="test.actions" />
     <property role="TrG5h" value="ViewWidgetCommandAction" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4VeFpYgZsED" role="1TKVEi">
       <property role="IQ2ns" value="5678667081004731049" />
       <property role="20kJfa" value="widget" />

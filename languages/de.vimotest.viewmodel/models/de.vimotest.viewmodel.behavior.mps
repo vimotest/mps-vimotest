@@ -5109,7 +5109,7 @@
     </node>
     <node concept="13i0hz" id="5oh1xNF6HFz" role="13h7CS">
       <property role="TrG5h" value="createEditorCell" />
-      <ref role="13i0hy" node="6mWHjmRL0Kv" />
+      <ref role="13i0hy" node="6mWHjmRL0Kv" resolve="createEditorCell" />
       <node concept="3Tm1VV" id="5oh1xNF6HF$" role="1B3o_S" />
       <node concept="3clFbS" id="5oh1xNF6HF_" role="3clF47">
         <node concept="3cpWs8" id="5oh1xNFxEoF" role="3cqZAp">
@@ -5125,7 +5125,7 @@
                 <node concept="2OqwBi" id="5oh1xNFyFG3" role="37wK5m">
                   <node concept="13iPFW" id="5oh1xNFyFG4" role="2Oq$k0" />
                   <node concept="3TrEf2" id="5oh1xNFyFG5" role="2OqNvi">
-                    <ref role="3Tt5mk" to="at53:5oh1xNF6HFe" />
+                    <ref role="3Tt5mk" to="at53:5oh1xNF6HFe" resolve="textFeature" />
                   </node>
                 </node>
                 <node concept="355D3s" id="5oh1xNFyFG6" role="37wK5m">
@@ -5154,11 +5154,11 @@
       <node concept="37vLTG" id="5oh1xNF6HFP" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="5oh1xNF6HFQ" role="1tU5fm">
-          <ref role="3uigEE" to="cj4x:~EditorContext" />
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
         </node>
       </node>
       <node concept="3uibUv" id="5oh1xNF6HFR" role="3clF45">
-        <ref role="3uigEE" to="f4zo:~EditorCell" />
+        <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
       </node>
     </node>
     <node concept="13i0hz" id="5oh1xNFxBZ4" role="13h7CS">

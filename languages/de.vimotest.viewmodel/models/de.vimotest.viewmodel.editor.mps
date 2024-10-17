@@ -962,12 +962,12 @@
                         </node>
                         <node concept="3clFbF" id="2ClbUKnTnf" role="3cqZAp">
                           <node concept="37vLTw" id="2ClbUKnWEl" role="3clFbG">
-                            <ref role="3cqZAo" node="2ClbUKnWEh" resolve="createVertical" />
+                            <ref role="3cqZAo" node="2ClbUKnWEh" resolve="collection" />
                           </node>
                         </node>
                       </node>
                       <node concept="2AHcQZ" id="2ClbUKnREJ" role="2AJF6D">
-                        <ref role="2AI5Lk" to="wyt6:~Override" />
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                       </node>
                     </node>
                   </node>
@@ -1151,14 +1151,14 @@
                                 <node concept="liA8E" id="7UthagXSGol" role="2OqNvi">
                                   <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
                                   <node concept="37vLTw" id="7UthagXSHq2" role="37wK5m">
-                                    <ref role="3cqZAo" node="7UthagXSB2Z" resolve="cell" />
+                                    <ref role="3cqZAo" node="7UthagXSB2Z" resolve="indicatorCell" />
                                   </node>
                                 </node>
                               </node>
                             </node>
                           </node>
                           <node concept="37vLTw" id="7UthagXTfPJ" role="2GsD0m">
-                            <ref role="3cqZAo" node="7UthagXTfPu" resolve="seq" />
+                            <ref role="3cqZAo" node="7UthagXTfPu" resolve="supportedFeatures" />
                           </node>
                           <node concept="2GrKxI" id="7UthagXR5qw" role="2Gsz3X">
                             <property role="TrG5h" value="featureNode" />
@@ -1166,12 +1166,12 @@
                         </node>
                         <node concept="3clFbF" id="7UthagXQSQq" role="3cqZAp">
                           <node concept="37vLTw" id="7UthagXQV0f" role="3clFbG">
-                            <ref role="3cqZAo" node="7UthagXQV0b" resolve="createHorizontal" />
+                            <ref role="3cqZAo" node="7UthagXQV0b" resolve="collection" />
                           </node>
                         </node>
                       </node>
                       <node concept="2AHcQZ" id="7UthagXQRJs" role="2AJF6D">
-                        <ref role="2AI5Lk" to="wyt6:~Override" />
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                       </node>
                     </node>
                   </node>
@@ -1205,7 +1205,7 @@
         <ref role="PMmxG" node="4OohpJQEUlZ" resolve="ViewWidget_WidgetFeatures_EC" />
       </node>
       <node concept="PMmxH" id="1F_Q10zSP_a" role="3EZMnx">
-        <ref role="PMmxG" node="1F_Q10zSP_8" resolve="ViewWidget_Commands" />
+        <ref role="PMmxG" node="1F_Q10zSP_8" resolve="ViewWidget_Commands_EC" />
       </node>
     </node>
   </node>
@@ -2453,7 +2453,7 @@
       </node>
     </node>
     <node concept="1PE4EZ" id="1F_Q10zSUw1" role="1PM95z">
-      <ref role="1PE7su" node="1F_Q10zSP_8" resolve="ViewWidget_Commands" />
+      <ref role="1PE7su" node="1F_Q10zSP_8" resolve="ViewWidget_Commands_EC" />
     </node>
   </node>
   <node concept="PKFIW" id="5oh1xNEWxPQ">

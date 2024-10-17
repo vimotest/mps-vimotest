@@ -210,7 +210,7 @@
                 <ref role="3cqZAo" node="5QmCreilHYs" resolve="testSuite" />
               </node>
               <node concept="3TrEf2" id="5QmCreilJm7" role="2OqNvi">
-                <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" />
+                <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
               </node>
             </node>
           </node>

@@ -60,7 +60,7 @@
       <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
     </node>
     <node concept="Uqd12" id="2exRXkpN_IT" role="Urcx0">
-      <ref role="Uq8ev" node="2exRXkpLdWN" resolve="CheckCommandDefinition" />
+      <ref role="Uq8ev" node="2exRXkpLdWN" resolve="Check" />
       <ref role="Uq8er" node="1Yc3x6zo$jf" resolve="Checked" />
       <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
     </node>
@@ -150,7 +150,7 @@
       <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
     </node>
     <node concept="Uqd12" id="2exRXkpOhwq" role="Urcx0">
-      <ref role="Uq8ev" node="2exRXkpM7nG" resolve="SelectRowCommand" />
+      <ref role="Uq8ev" node="2exRXkpM7nG" resolve="SelectRow" />
       <ref role="Uq8er" node="7WgsBLYmzhB" resolve="SelectedRow" />
       <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
     </node>
@@ -168,7 +168,7 @@
     <property role="TrG5h" value="TreeView" />
     <property role="2SiFfI" value="tree view" />
     <node concept="Uqd12" id="2exRXkpOhws" role="Urcx0">
-      <ref role="Uq8ev" node="2exRXkpM7nG" resolve="SelectRowCommand" />
+      <ref role="Uq8ev" node="2exRXkpM7nG" resolve="SelectRow" />
       <ref role="Uq8er" node="7WgsBLYmzhB" resolve="SelectedRow" />
       <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
     </node>
@@ -199,7 +199,7 @@
     <property role="TrG5h" value="TableView" />
     <property role="2SiFfI" value="table view" />
     <node concept="Uqd12" id="2exRXkpOhwr" role="Urcx0">
-      <ref role="Uq8ev" node="2exRXkpM7nG" resolve="SelectRowCommand" />
+      <ref role="Uq8ev" node="2exRXkpM7nG" resolve="SelectRow" />
       <ref role="Uq8er" node="7WgsBLYmzhB" resolve="SelectedRow" />
       <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
     </node>
@@ -254,12 +254,12 @@
       <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
     </node>
     <node concept="Uqd12" id="2exRXkpOcGU" role="Urcx0">
-      <ref role="Uq8ev" node="2exRXkpMcaR" resolve="SelectEntryCommand" />
+      <ref role="Uq8ev" node="2exRXkpMcaR" resolve="SelectEntry" />
       <ref role="Uq8er" node="44HS8_67EZV" resolve="SelectedEntry" />
       <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
     </node>
     <node concept="Uqd12" id="2exRXkpOcGT" role="Urcx0">
-      <ref role="Uq8ev" node="2exRXkpLXJ4" resolve="FillTextCommand" />
+      <ref role="Uq8ev" node="2exRXkpLXJ4" resolve="FillText" />
       <ref role="Uq8er" node="7H4Lpx0an3A" resolve="Text" />
       <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
     </node>
@@ -324,7 +324,7 @@
       <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
     </node>
     <node concept="Uqd12" id="2exRXkpOhwp" role="Urcx0">
-      <ref role="Uq8ev" node="2exRXkpLXJ4" resolve="FillTextCommand" />
+      <ref role="Uq8ev" node="2exRXkpLXJ4" resolve="FillText" />
       <ref role="Uq8er" node="7H4Lpx0an3A" resolve="Text" />
       <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
     </node>

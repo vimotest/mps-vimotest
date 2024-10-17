@@ -1291,7 +1291,7 @@
   <node concept="30n1Qd" id="7KHRfJVnrgJ">
     <property role="TrG5h" value="GenericCommands_ViewTests" />
     <property role="3GE5qa" value="commands" />
-    <ref role="30n1PB" node="7ZadkZWP7lz" resolve="Commands_View" />
+    <ref role="30n1PB" node="7ZadkZWP7lz" resolve="GenericCommands_View" />
     <node concept="3LKzX3" id="7KHRfJVnrgU" role="30n1Qb">
       <property role="3LKBmK" value="Generic Commands Call" />
       <node concept="DUd2R" id="7KHRfJVnrh1" role="DUd56">
@@ -1452,7 +1452,7 @@
       <node concept="DUd5q" id="7NpiMQMLC45" role="DUd5p">
         <node concept="3eaLt2" id="7NpiMQMZW_V" role="DUiS9">
           <property role="3fQinD" value="Changed" />
-          <ref role="3ucQsQ" node="5oh1xNEXBx$" resolve="MyLabel" />
+          <ref role="3ucQsQ" node="5oh1xNEXBx$" resolve="MyTextBox" />
         </node>
       </node>
     </node>

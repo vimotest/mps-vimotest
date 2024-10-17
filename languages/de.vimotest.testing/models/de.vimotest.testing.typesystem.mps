@@ -1521,7 +1521,7 @@
             </node>
             <node concept="3Cnw8n" id="7KHRfJVodu7" role="1urrFz">
               <property role="ARO6o" value="true" />
-              <ref role="QpYPw" node="7KHRfJVodu4" resolve="fix_" />
+              <ref role="QpYPw" node="7KHRfJVodu4" resolve="fix_ViewCommandInvocationAction_ParameterCount" />
             </node>
           </node>
         </node>
@@ -1543,7 +1543,7 @@
             <node concept="34oBXx" id="7KHRfJVo306" role="2OqNvi" />
           </node>
           <node concept="37vLTw" id="7KHRfJVoaHB" role="3uHU7w">
-            <ref role="3cqZAo" node="7KHRfJVoaHv" resolve="i" />
+            <ref role="3cqZAo" node="7KHRfJVoaHv" resolve="expectedParameterCount" />
           </node>
         </node>
         <node concept="9aQIb" id="7ynD$XoIYK8" role="9aQIa">
@@ -1689,7 +1689,7 @@
                           <node concept="2MkqsV" id="7ynD$XoJiTJ" role="3cqZAp">
                             <node concept="3cpWs3" id="7ynD$XoJtHr" role="2MkJ7o">
                               <node concept="37vLTw" id="7ynD$XoM7pG" role="3uHU7w">
-                                <ref role="3cqZAo" node="7ynD$XoM7pA" resolve="name" />
+                                <ref role="3cqZAo" node="7ynD$XoM7pA" resolve="expectedTypeName" />
                               </node>
                               <node concept="3cpWs3" id="7ynD$XoJqYa" role="3uHU7B">
                                 <node concept="3cpWs3" id="7ynD$XoJkT7" role="3uHU7B">
@@ -1697,7 +1697,7 @@
                                     <property role="Xl_RC" value="Passed expression of type " />
                                   </node>
                                   <node concept="37vLTw" id="7ynD$XoM5Rr" role="3uHU7w">
-                                    <ref role="3cqZAo" node="7ynD$XoM5Rl" resolve="name" />
+                                    <ref role="3cqZAo" node="7ynD$XoM5Rl" resolve="expressionTypeName" />
                                   </node>
                                 </node>
                                 <node concept="Xl_RD" id="7ynD$XoJrCD" role="3uHU7w">
@@ -1864,7 +1864,7 @@
           </node>
           <node concept="3eOVzh" id="7KHRfJVomo2" role="1Dwp0S">
             <node concept="37vLTw" id="7KHRfJVouUm" role="3uHU7w">
-              <ref role="3cqZAo" node="7KHRfJVouUe" resolve="i" />
+              <ref role="3cqZAo" node="7KHRfJVouUe" resolve="expectedSize" />
             </node>
             <node concept="37vLTw" id="7KHRfJVok6r" role="3uHU7B">
               <ref role="3cqZAo" node="7KHRfJVoe4g" resolve="i" />

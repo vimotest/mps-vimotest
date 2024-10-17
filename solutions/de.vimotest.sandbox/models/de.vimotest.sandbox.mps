@@ -1567,5 +1567,112 @@
       </node>
     </node>
   </node>
+  <node concept="103ZX$" id="17xw4ZmRb8p">
+    <property role="TrG5h" value="LoginView" />
+    <property role="3GE5qa" value="examples.login" />
+    <node concept="103ZXx" id="17xw4ZmRb8q" role="103ZXC">
+      <node concept="3Vw88J" id="17xw4ZmUI2u" role="1006ar">
+        <property role="TrG5h" value="LoadView" />
+      </node>
+    </node>
+    <node concept="103ZXB" id="17xw4ZmRb8r" role="103ZXF">
+      <node concept="UtuMG" id="17xw4ZmRkJ0" role="103ZUC">
+        <property role="TrG5h" value="Username" />
+        <node concept="V3Zf6" id="17xw4ZmRkJ1" role="UtuMJ" />
+        <node concept="C4FCg" id="17xw4ZmRkJ2" role="UtuMI" />
+        <node concept="C4FCh" id="17xw4ZmRkJ3" role="UtuMD" />
+        <node concept="3Vw88I" id="17xw4ZmSY6j" role="2WQ0r8" />
+      </node>
+      <node concept="UtuMG" id="17xw4ZmRWXv" role="103ZUC">
+        <property role="TrG5h" value="Password" />
+        <node concept="V3Zf6" id="17xw4ZmRWXw" role="UtuMJ" />
+        <node concept="C4FCg" id="17xw4ZmRWXx" role="UtuMI" />
+        <node concept="C4FCh" id="17xw4ZmRWXy" role="UtuMD" />
+        <node concept="3Vw88I" id="17xw4ZmSY6i" role="2WQ0r8" />
+      </node>
+      <node concept="C4FCE" id="17xw4ZmSY66" role="103ZUC">
+        <property role="TrG5h" value="ShowPassword" />
+        <node concept="C4FCf" id="17xw4ZmSY68" role="C4FCF" />
+        <node concept="C4FCg" id="17xw4ZmSY6a" role="C4FCG" />
+        <node concept="C4FCh" id="17xw4ZmSY6c" role="C4FCH" />
+        <node concept="V3Zf6" id="17xw4ZmSY6e" role="1ISttP" />
+        <node concept="3Vw88g" id="17xw4ZmSY6h" role="T1B0p" />
+      </node>
+      <node concept="2X2XNh" id="17xw4ZmSY5X" role="103ZUC">
+        <property role="TrG5h" value="Login" />
+        <node concept="V3Zf6" id="17xw4ZmSY5Z" role="2X2XNi">
+          <property role="3A$Jrx" value="Login" />
+        </node>
+        <node concept="C4FCh" id="17xw4ZmSY61" role="2X2XNj">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCg" id="17xw4ZmSY63" role="2X2XNc" />
+        <node concept="3Vw88h" id="17xw4ZmSY6g" role="2X2XNd" />
+      </node>
+      <node concept="V3ZfZ" id="17xw4ZmTXrv" role="103ZUC">
+        <property role="TrG5h" value="ErrorText" />
+        <node concept="V3Zf6" id="17xw4ZmTXrx" role="V3ZfK" />
+        <node concept="C4FCh" id="17xw4ZmTXrz" role="V3ZfL" />
+        <node concept="C4FCg" id="17xw4ZmTXr_" role="V3ZfM">
+          <property role="2VM7R0" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="30n1Qd" id="17xw4ZmRfVM">
+    <property role="TrG5h" value="LoginViewTests" />
+    <property role="3GE5qa" value="examples.login" />
+    <ref role="30n1PB" node="17xw4ZmRb8p" resolve="LoginView" />
+    <node concept="3LKzX3" id="17xw4ZmUI2t" role="30n1Qb">
+      <property role="3LKBmK" value="Load View" />
+      <node concept="DUd5q" id="17xw4ZmUXTS" role="DUd5p">
+        <node concept="27s6xY" id="17xw4ZmUXTU" role="DUiS9">
+          <ref role="27sXQn" node="17xw4ZmUI2u" resolve="LoadView" />
+        </node>
+      </node>
+      <node concept="DUd5q" id="17xw4ZmUXU7" role="DUd5p">
+        <node concept="3eaLt2" id="17xw4ZmUXU9" role="DUiS9">
+          <property role="3fQinD" value="User" />
+          <ref role="3ucQsQ" node="17xw4ZmRkJ0" resolve="Username" />
+        </node>
+      </node>
+      <node concept="DUd5q" id="17xw4ZmUXUa" role="DUd5p">
+        <node concept="3eaLt2" id="17xw4ZmUXUc" role="DUiS9">
+          <property role="3fQinD" value="MyPass123" />
+          <ref role="3ucQsQ" node="17xw4ZmRWXv" resolve="Password" />
+        </node>
+      </node>
+      <node concept="DUd2R" id="17xw4ZmUXU2" role="DUd56">
+        <node concept="30nzp_" id="17xw4ZmUXU4" role="DUiSb">
+          <ref role="30nzpS" node="17xw4ZmRkJ0" resolve="Username" />
+          <node concept="UtuKh" id="17xw4ZmUXU5" role="30nDbQ">
+            <node concept="V3Zdv" id="17xw4ZmUXU6" role="UtuKg">
+              <property role="3egigc" value="User" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="DUd2R" id="17xw4ZmUXTW" role="DUd56">
+        <node concept="30nzp_" id="17xw4ZmUXTY" role="DUiSb">
+          <ref role="30nzpS" node="17xw4ZmRWXv" resolve="Password" />
+          <node concept="UtuKh" id="17xw4ZmUXTZ" role="30nDbQ">
+            <node concept="V3Zdv" id="17xw4ZmUXU0" role="UtuKg">
+              <property role="3egigc" value="MyPass123" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="DUd2R" id="17xw4ZmUXUd" role="DUd56">
+        <node concept="30nzp_" id="17xw4ZmUXUf" role="DUiSb">
+          <ref role="30nzpS" node="17xw4ZmSY5X" resolve="Login" />
+          <node concept="2X2XOa" id="17xw4ZmUXUg" role="30nDbQ">
+            <node concept="35STUl" id="17xw4ZmUXUh" role="2X2XOb">
+              <property role="3XJMQh" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

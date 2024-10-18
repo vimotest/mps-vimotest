@@ -7961,7 +7961,7 @@
                 <node concept="1uHKPH" id="5ZbqeTIjU0z" role="2OqNvi" />
               </node>
               <node concept="Xl_RD" id="7waZUcv6uT8" role="37wK5m">
-                <property role="Xl_RC" value="" />
+                <property role="Xl_RC" value="de.vimotest.testing.editor.SelectedEntryCheckValue_selectedEntry_EC" />
               </node>
             </node>
           </node>

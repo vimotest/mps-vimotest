@@ -104,7 +104,9 @@
         <property id="8996304390298037956" name="text" index="3fQinD" />
       </concept>
       <concept id="8996304390297115758" name="de.vimotest.testing.structure.ClickCommandAction" flags="ng" index="3eaLt3" />
-      <concept id="8996304390297115762" name="de.vimotest.testing.structure.SelectEntryCommandAction" flags="ng" index="3eaLtv" />
+      <concept id="8996304390297115762" name="de.vimotest.testing.structure.SelectEntryCommandAction" flags="ng" index="3eaLtv">
+        <property id="5922736771850278303" name="selectedEntryName" index="2qt_KD" />
+      </concept>
       <concept id="5678667081004710962" name="de.vimotest.testing.structure.ViewWidgetCommandAction" flags="ng" index="3ucX6H">
         <reference id="5678667081004731049" name="widget" index="3ucQsQ" />
       </concept>
@@ -1562,7 +1564,27 @@
       <property role="3LKBmK" value="Select Entry Combobox Call" />
       <node concept="DUd5q" id="5imH8sU7U3U" role="DUd5p">
         <node concept="3eaLtv" id="5imH8sU7U3W" role="DUiS9">
+          <property role="2qt_KD" value="C" />
           <ref role="3ucQsQ" node="5imH8sU7TYs" resolve="MyComboBox" />
+        </node>
+      </node>
+      <node concept="DUd2R" id="58LMrr8jMBu" role="DUd56">
+        <node concept="30nzp_" id="58LMrr8jMBw" role="DUiSb">
+          <ref role="30nzpS" node="5imH8sU7TYs" resolve="MyComboBox" />
+          <node concept="7cNBp" id="58LMrr8jMBx" role="30nDbQ">
+            <node concept="7cN$v" id="58LMrr8jMBy" role="7cNBo">
+              <node concept="2gaR_a" id="58LMrr8jMB$" role="LTUL5">
+                <property role="TrG5h" value="A" />
+              </node>
+              <node concept="2gaR_a" id="58LMrr8jMB_" role="LTUL5">
+                <property role="TrG5h" value="B" />
+              </node>
+              <node concept="2gaR_a" id="58LMrr8jMBA" role="LTUL5">
+                <property role="TrG5h" value="C" />
+              </node>
+            </node>
+            <node concept="7cN$h" id="58LMrr8jMBz" role="7cNBo" />
+          </node>
         </node>
       </node>
     </node>

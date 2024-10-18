@@ -903,6 +903,11 @@
     <property role="34LRSv" value="select entry" />
     <property role="3GE5qa" value="test.actions" />
     <ref role="1TJDcQ" node="4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
+    <node concept="1TJgyi" id="58LMrr8hTmv" role="1TKVEl">
+      <property role="IQ2nx" value="5922736771850278303" />
+      <property role="TrG5h" value="selectedEntryName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 

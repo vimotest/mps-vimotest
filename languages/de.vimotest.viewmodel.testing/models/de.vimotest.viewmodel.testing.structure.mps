@@ -896,6 +896,11 @@
     <property role="34LRSv" value="select row" />
     <property role="3GE5qa" value="test.actions" />
     <ref role="1TJDcQ" node="4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
+    <node concept="1TJgyi" id="1LLcOD9G5DQ" role="1TKVEl">
+      <property role="IQ2nx" value="2049475699587177078" />
+      <property role="TrG5h" value="selectedIndex" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7NpiMQMW_LM">
     <property role="EcuMT" value="8996304390297115762" />

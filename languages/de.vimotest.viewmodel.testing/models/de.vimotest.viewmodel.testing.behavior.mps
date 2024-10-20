@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:fb31fced-d3c6-408c-9dff-13efe5b49745(de.vimotest.testing.behavior)">
+<model ref="r:fb31fced-d3c6-408c-9dff-13efe5b49745(de.vimotest.viewmodel.testing.behavior)">
   <persistence version="9" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
@@ -10,7 +10,7 @@
   </languages>
   <imports>
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
-    <import index="53m0" ref="r:b38f4eba-3263-43b3-b5a0-ad906d4f1a11(de.vimotest.testing.structure)" />
+    <import index="53m0" ref="r:b38f4eba-3263-43b3-b5a0-ad906d4f1a11(de.vimotest.viewmodel.testing.structure)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="5xyw" ref="r:4ee800a2-af23-444f-bc40-1442404b5497(de.vimotest.mpswidgets.runtime)" />
@@ -7961,7 +7961,7 @@
                 <node concept="1uHKPH" id="5ZbqeTIjU0z" role="2OqNvi" />
               </node>
               <node concept="Xl_RD" id="7waZUcv6uT8" role="37wK5m">
-                <property role="Xl_RC" value="de.vimotest.testing.editor.SelectedEntryCheckValue_selectedEntry_EC" />
+                <property role="Xl_RC" value="de.vimotest.viewmodel.testing.editor.SelectedEntryCheckValue_selectedEntry_EC" />
               </node>
             </node>
           </node>
@@ -8088,7 +8088,7 @@
                     </node>
                     <node concept="13iPFW" id="7waZUcv2gYI" role="37wK5m" />
                     <node concept="Xl_RD" id="7waZUcv2gYJ" role="37wK5m">
-                      <property role="Xl_RC" value="de.vimotest.testing.editor.SelectedEntryCheckValue_selectedEntry_EC" />
+                      <property role="Xl_RC" value="de.vimotest.viewmodeltesting.editor.SelectedEntryCheckValue_selectedEntry_EC" />
                     </node>
                   </node>
                 </node>

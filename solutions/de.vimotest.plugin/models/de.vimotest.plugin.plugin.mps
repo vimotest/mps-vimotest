@@ -27,12 +27,12 @@
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="1i04" ref="r:3270011d-8b2d-4938-8dff-d256a759e017(jetbrains.mps.lang.behavior.structure)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="53m0" ref="r:b38f4eba-3263-43b3-b5a0-ad906d4f1a11(de.vimotest.testing.structure)" />
+    <import index="53m0" ref="r:b38f4eba-3263-43b3-b5a0-ad906d4f1a11(de.vimotest.viewmodel.testing.structure)" />
     <import index="tp1t" ref="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
-    <import index="ytrb" ref="r:cb6bce33-2081-4b8a-a90c-28810848f91f(de.vimotest.testing.editor)" />
+    <import index="ytrb" ref="r:cb6bce33-2081-4b8a-a90c-28810848f91f(de.vimotest.viewmodel.testing.editor)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
@@ -40,7 +40,7 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="fwln" ref="r:fb31fced-d3c6-408c-9dff-13efe5b49745(de.vimotest.testing.behavior)" implicit="true" />
+    <import index="fwln" ref="r:fb31fced-d3c6-408c-9dff-13efe5b49745(de.vimotest.viewmodel.testing.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -9121,10 +9121,10 @@
             </node>
             <node concept="2OqwBi" id="JW9DBRRcGO" role="37vLTx">
               <node concept="1Xw6AR" id="JW9DBRRcGP" role="2Oq$k0">
-                <node concept="1dCxOl" id="JW9DBRRfrP" role="1XwpL7">
+                <node concept="1dCxOl" id="1LLcOD9tkuA" role="1XwpL7">
                   <property role="1XweGQ" value="r:b38f4eba-3263-43b3-b5a0-ad906d4f1a11" />
-                  <node concept="1j_P7g" id="JW9DBRRfrQ" role="1j$8Uc">
-                    <property role="1j_P7h" value="de.vimotest.testing.structure" />
+                  <node concept="1j_P7g" id="1LLcOD9tkuB" role="1j$8Uc">
+                    <property role="1j_P7h" value="de.vimotest.viewmodel.testing.structure" />
                   </node>
                 </node>
               </node>
@@ -9146,10 +9146,10 @@
             </node>
             <node concept="2OqwBi" id="69Ym88B5tUG" role="37vLTx">
               <node concept="1Xw6AR" id="69Ym88B5tUH" role="2Oq$k0">
-                <node concept="1dCxOl" id="69Ym88B5xJT" role="1XwpL7">
+                <node concept="1dCxOl" id="1LLcOD9tkk8" role="1XwpL7">
                   <property role="1XweGQ" value="r:cb6bce33-2081-4b8a-a90c-28810848f91f" />
-                  <node concept="1j_P7g" id="69Ym88B5xJU" role="1j$8Uc">
-                    <property role="1j_P7h" value="de.vimotest.testing.editor" />
+                  <node concept="1j_P7g" id="1LLcOD9tkk9" role="1j$8Uc">
+                    <property role="1j_P7h" value="de.vimotest.viewmodel.testing.editor" />
                   </node>
                 </node>
               </node>
@@ -9171,10 +9171,10 @@
             </node>
             <node concept="2OqwBi" id="69Ym88B5tWm" role="37vLTx">
               <node concept="1Xw6AR" id="69Ym88B5tWn" role="2Oq$k0">
-                <node concept="1dCxOl" id="69Ym88B5y7h" role="1XwpL7">
+                <node concept="1dCxOl" id="1LLcOD9tk9E" role="1XwpL7">
                   <property role="1XweGQ" value="r:f7f27df6-69c1-4fec-87d6-3c74c923be7e" />
-                  <node concept="1j_P7g" id="69Ym88B5y7i" role="1j$8Uc">
-                    <property role="1j_P7h" value="de.vimotest.testing.constraints" />
+                  <node concept="1j_P7g" id="1LLcOD9tk9F" role="1j$8Uc">
+                    <property role="1j_P7h" value="de.vimotest.viewmodel.testing.constraints" />
                   </node>
                 </node>
               </node>
@@ -9196,10 +9196,10 @@
             </node>
             <node concept="2OqwBi" id="69Ym88B5tYb" role="37vLTx">
               <node concept="1Xw6AR" id="69Ym88B5tYc" role="2Oq$k0">
-                <node concept="1dCxOl" id="69Ym88B5yuD" role="1XwpL7">
+                <node concept="1dCxOl" id="1LLcOD9tjZc" role="1XwpL7">
                   <property role="1XweGQ" value="r:fb31fced-d3c6-408c-9dff-13efe5b49745" />
-                  <node concept="1j_P7g" id="69Ym88B5yuE" role="1j$8Uc">
-                    <property role="1j_P7h" value="de.vimotest.testing.behavior" />
+                  <node concept="1j_P7g" id="1LLcOD9tjZd" role="1j$8Uc">
+                    <property role="1j_P7h" value="de.vimotest.viewmodel.testing.behavior" />
                   </node>
                 </node>
               </node>

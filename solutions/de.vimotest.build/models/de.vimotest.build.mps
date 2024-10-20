@@ -377,15 +377,15 @@
       </node>
       <node concept="1E1JtD" id="JW9DBRQiDv" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.vimotest.testing" />
+        <property role="TrG5h" value="de.vimotest.viewmodel.testing" />
         <property role="3LESm3" value="716e8717-88c0-4280-8c16-b4d88567596f" />
         <node concept="55IIr" id="JW9DBRQiDy" role="3LF7KH">
           <node concept="2Ry0Ak" id="JW9DBRQiEk" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="JW9DBRQiEp" role="2Ry0An">
-              <property role="2Ry0Am" value="de.vimotest.testing" />
-              <node concept="2Ry0Ak" id="JW9DBRQiEu" role="2Ry0An">
-                <property role="2Ry0Am" value="de.vimotest.testing.mpl" />
+              <property role="2Ry0Am" value="de.vimotest.viewmodel.testing" />
+              <node concept="2Ry0Ak" id="1LLcOD9tkBo" role="2Ry0An">
+                <property role="2Ry0Am" value="de.vimotest.viewmodel.testing.mpl" />
               </node>
             </node>
           </node>
@@ -394,46 +394,46 @@
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="JW9DBRQiEI" role="1HemKq">
-            <node concept="55IIr" id="JW9DBRQiED" role="3LXTmr">
-              <node concept="2Ry0Ak" id="JW9DBRQiEE" role="iGT6I">
+          <node concept="3LXTmp" id="1LLcOD9tkBA" role="1HemKq">
+            <node concept="55IIr" id="1LLcOD9tkBy" role="3LXTmr">
+              <node concept="2Ry0Ak" id="1LLcOD9tkBz" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="JW9DBRQiEF" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.vimotest.testing" />
-                  <node concept="2Ry0Ak" id="JW9DBRQiEG" role="2Ry0An">
+                <node concept="2Ry0Ak" id="1LLcOD9tkB$" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.vimotest.viewmodel.testing" />
+                  <node concept="2Ry0Ak" id="1LLcOD9tkB_" role="2Ry0An">
                     <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="JW9DBRQiEJ" role="3LXTna">
+            <node concept="3qWCbU" id="1LLcOD9tkBB" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
         <node concept="1yeLz9" id="JW9DBRQiEK" role="1TViLv">
-          <property role="TrG5h" value="de.vimotest.testing.generator" />
+          <property role="TrG5h" value="de.vimotest.viewmodel.testing.generator" />
           <property role="3LESm3" value="75b45ab1-ab60-4e56-9499-3ebb61ad3411" />
           <node concept="1BupzO" id="JW9DBRQiEQ" role="3bR31x">
             <property role="3ZfqAx" value="generator/templates" />
             <property role="1Hdu6h" value="true" />
             <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="JW9DBRQiER" role="1HemKq">
-              <node concept="55IIr" id="JW9DBRQiEL" role="3LXTmr">
-                <node concept="2Ry0Ak" id="JW9DBRQiEM" role="iGT6I">
+            <node concept="3LXTmp" id="1LLcOD9tkBH" role="1HemKq">
+              <node concept="55IIr" id="1LLcOD9tkBC" role="3LXTmr">
+                <node concept="2Ry0Ak" id="1LLcOD9tkBD" role="iGT6I">
                   <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="JW9DBRQiEN" role="2Ry0An">
-                    <property role="2Ry0Am" value="de.vimotest.testing" />
-                    <node concept="2Ry0Ak" id="JW9DBRQiEO" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="1LLcOD9tkBE" role="2Ry0An">
+                    <property role="2Ry0Am" value="de.vimotest.viewmodel.testing" />
+                    <node concept="2Ry0Ak" id="1LLcOD9tkBF" role="2Ry0An">
                       <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="JW9DBRQiEP" role="2Ry0An">
+                      <node concept="2Ry0Ak" id="1LLcOD9tkBG" role="2Ry0An">
                         <property role="2Ry0Am" value="templates" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3qWCbU" id="JW9DBRQiES" role="3LXTna">
+              <node concept="3qWCbU" id="1LLcOD9tkBI" role="3LXTna">
                 <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
               </node>
             </node>

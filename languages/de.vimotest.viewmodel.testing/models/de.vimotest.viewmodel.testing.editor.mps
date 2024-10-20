@@ -3931,7 +3931,7 @@
                         </node>
                       </node>
                       <node concept="3TrEf2" id="7UthagY4INN" role="2OqNvi">
-                        <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="data" />
+                        <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="viewModelData" />
                       </node>
                     </node>
                     <node concept="3Tsc0h" id="7UthagY4INO" role="2OqNvi">
@@ -4168,7 +4168,7 @@
                   </node>
                 </node>
                 <node concept="3TrEf2" id="7UthagY6fG6" role="2OqNvi">
-                  <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="data" />
+                  <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="viewModelData" />
                 </node>
               </node>
               <node concept="2Rf3mk" id="7UthagY6kPM" role="2OqNvi">

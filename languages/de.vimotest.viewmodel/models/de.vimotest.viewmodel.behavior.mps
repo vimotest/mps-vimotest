@@ -925,7 +925,7 @@
                     <node concept="2OqwBi" id="17xw4ZmO0xe" role="2Oq$k0">
                       <node concept="13iPFW" id="17xw4ZmO0xf" role="2Oq$k0" />
                       <node concept="3TrEf2" id="17xw4ZmO0xg" role="2OqNvi">
-                        <ref role="3Tt5mk" to="at53:F907haLJWs" />
+                        <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="viewModelCommands" />
                       </node>
                     </node>
                     <node concept="3Tsc0h" id="17xw4ZmO1Xx" role="2OqNvi">

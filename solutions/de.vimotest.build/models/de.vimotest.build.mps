@@ -924,7 +924,7 @@
         </node>
         <node concept="1SiIV0" id="69Ym88Bc_0_" role="3bR37C">
           <node concept="3bR9La" id="69Ym88Bc_0A" role="1SiIV1">
-            <ref role="3bR37D" node="JW9DBRQiDv" resolve="de.vimotest.testing" />
+            <ref role="3bR37D" node="JW9DBRQiDv" resolve="de.vimotest.viewmodel.testing" />
           </node>
         </node>
         <node concept="1SiIV0" id="6mWHjmRTuuE" role="3bR37C">

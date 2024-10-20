@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.testing" version="0" />
+    <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing" version="0" />
     <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
   </languages>
@@ -83,19 +83,19 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.testing">
-      <concept id="7445061853131767032" name="de.vimotest.testing.structure.ThenDescriptionWithAssert" flags="ng" index="DUd2R">
+    <language id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing">
+      <concept id="7445061853131767032" name="de.vimotest.viewmodel.testing.structure.ThenDescriptionWithAssert" flags="ng" index="DUd2R">
         <child id="7445061853131768388" name="assert" index="DUiSb" />
       </concept>
-      <concept id="3426401106044983339" name="de.vimotest.testing.structure.ViewModelTestSuite" flags="ng" index="30n1Qd">
+      <concept id="3426401106044983339" name="de.vimotest.viewmodel.testing.structure.ViewModelTestSuite" flags="ng" index="30n1Qd">
         <reference id="3426401106044983489" name="targetViewModel" index="30n1PB" />
         <child id="3426401106044983341" name="tests" index="30n1Qb" />
       </concept>
-      <concept id="7205622933660482722" name="de.vimotest.testing.structure.ViewModelTestCase" flags="ng" index="3LKzX3">
+      <concept id="7205622933660482722" name="de.vimotest.viewmodel.testing.structure.ViewModelTestCase" flags="ng" index="3LKzX3">
         <property id="7205622933660497489" name="scenario" index="3LKBmK" />
         <child id="7445061853131767049" name="assertsWithDescription" index="DUd56" />
       </concept>
-      <concept id="7205622933660496194" name="de.vimotest.testing.structure.ITestCaseAssertion" flags="ngI" index="3LKBaz" />
+      <concept id="7205622933660496194" name="de.vimotest.viewmodel.testing.structure.ITestCaseAssertion" flags="ngI" index="3LKBaz" />
     </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
       <concept id="5213916851000129488" name="de.vimotest.viewmodel.structure.VisibilityFeature" flags="ng" index="C4FCg" />

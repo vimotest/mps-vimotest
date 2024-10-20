@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="0" />
-    <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.testing" version="0" />
+    <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing" version="0" />
   </languages>
   <imports />
   <registry>
@@ -23,123 +23,123 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.testing">
-      <concept id="9155943921465570536" name="de.vimotest.testing.structure.WidgetListRowsCheckValue" flags="ng" index="1i$qk">
+    <language id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing">
+      <concept id="9155943921465570536" name="de.vimotest.viewmodel.testing.structure.WidgetListRowsCheckValue" flags="ng" index="1i$qk">
         <child id="8072781894854610736" name="rows" index="3o2WtG" />
       </concept>
-      <concept id="9155943921465570537" name="de.vimotest.testing.structure.SelectedRowCheckValue" flags="ng" index="1i$ql">
+      <concept id="9155943921465570537" name="de.vimotest.viewmodel.testing.structure.SelectedRowCheckValue" flags="ng" index="1i$ql">
         <property id="3198847476153780042" name="selectedIndex" index="3YEp6u" />
       </concept>
-      <concept id="9155943921465570482" name="de.vimotest.testing.structure.ListViewCheck" flags="ng" index="1i$re">
+      <concept id="9155943921465570482" name="de.vimotest.viewmodel.testing.structure.ListViewCheck" flags="ng" index="1i$re">
         <child id="9155943921465570483" name="checks" index="1i$rf" />
       </concept>
-      <concept id="4696656866608863640" name="de.vimotest.testing.structure.SelectedEntryCheckValue" flags="ng" index="7cN$h">
+      <concept id="4696656866608863640" name="de.vimotest.viewmodel.testing.structure.SelectedEntryCheckValue" flags="ng" index="7cN$h">
         <reference id="8650007110383850140" name="selectedEntry" index="1B0EOZ" />
       </concept>
-      <concept id="4696656866608863638" name="de.vimotest.testing.structure.ComboBoxEntriesCheckValue" flags="ng" index="7cN$v">
+      <concept id="4696656866608863638" name="de.vimotest.viewmodel.testing.structure.ComboBoxEntriesCheckValue" flags="ng" index="7cN$v">
         <child id="6902726227135349931" name="entries" index="LTUL5" />
       </concept>
-      <concept id="4696656866608863568" name="de.vimotest.testing.structure.ComboBoxCheck" flags="ng" index="7cNBp">
+      <concept id="4696656866608863568" name="de.vimotest.viewmodel.testing.structure.ComboBoxCheck" flags="ng" index="7cNBp">
         <child id="4696656866608863569" name="checks" index="7cNBo" />
       </concept>
-      <concept id="8948051009467167877" name="de.vimotest.testing.structure.ViewCommandInvocationAction" flags="ng" index="27s6xY">
+      <concept id="8948051009467167877" name="de.vimotest.viewmodel.testing.structure.ViewCommandInvocationAction" flags="ng" index="27s6xY">
         <reference id="8948051009467187564" name="targetCommand" index="27sXQn" />
         <child id="8948051009467207553" name="parameters" index="27sTdU" />
       </concept>
-      <concept id="5447508759369797102" name="de.vimotest.testing.structure.WidgetTableRowsCheckValue" flags="ng" index="2ayrQO">
+      <concept id="5447508759369797102" name="de.vimotest.viewmodel.testing.structure.WidgetTableRowsCheckValue" flags="ng" index="2ayrQO">
         <child id="5447508759369822399" name="rows" index="2ay43_" />
       </concept>
-      <concept id="3922717397912187313" name="de.vimotest.testing.structure.ImageSourceCheckValue" flags="ng" index="2mJbG1">
+      <concept id="3922717397912187313" name="de.vimotest.viewmodel.testing.structure.ImageSourceCheckValue" flags="ng" index="2mJbG1">
         <child id="173640931447457367" name="expectedImage" index="3n32fm" />
       </concept>
-      <concept id="3922717397912187253" name="de.vimotest.testing.structure.ImageCheck" flags="ng" index="2mJbJ5">
+      <concept id="3922717397912187253" name="de.vimotest.viewmodel.testing.structure.ImageCheck" flags="ng" index="2mJbJ5">
         <child id="3922717397912187254" name="checks" index="2mJbJ6" />
       </concept>
-      <concept id="5213916851000129542" name="de.vimotest.testing.structure.CheckBoxCheck" flags="ng" index="C4Fn6">
+      <concept id="5213916851000129542" name="de.vimotest.viewmodel.testing.structure.CheckBoxCheck" flags="ng" index="C4Fn6">
         <child id="5213916851000129543" name="checks" index="C4Fn7" />
       </concept>
-      <concept id="6670445900426152806" name="de.vimotest.testing.structure.ListCheckRow" flags="ng" index="CNEhi">
+      <concept id="6670445900426152806" name="de.vimotest.viewmodel.testing.structure.ListCheckRow" flags="ng" index="CNEhi">
         <child id="6670445900426153228" name="cellCheck" index="CNE8S" />
       </concept>
-      <concept id="7445061853131767032" name="de.vimotest.testing.structure.ThenDescriptionWithAssert" flags="ng" index="DUd2R">
+      <concept id="7445061853131767032" name="de.vimotest.viewmodel.testing.structure.ThenDescriptionWithAssert" flags="ng" index="DUd2R">
         <child id="7445061853131768388" name="assert" index="DUiSb" />
       </concept>
-      <concept id="7445061853131767061" name="de.vimotest.testing.structure.WhenDescriptionWithActions" flags="ng" index="DUd5q">
+      <concept id="7445061853131767061" name="de.vimotest.viewmodel.testing.structure.WhenDescriptionWithActions" flags="ng" index="DUd5q">
         <child id="7445061853131768390" name="action" index="DUiS9" />
       </concept>
-      <concept id="1938192778485639397" name="de.vimotest.testing.structure.CheckCommandAction" flags="ng" index="Tef3P">
+      <concept id="1938192778485639397" name="de.vimotest.viewmodel.testing.structure.CheckCommandAction" flags="ng" index="Tef3P">
         <property id="1938192778485679557" name="checked" index="Te1Rl" />
       </concept>
-      <concept id="2567579368932258756" name="de.vimotest.testing.structure.TextBoxCheck" flags="ng" index="UtuKh">
+      <concept id="2567579368932258756" name="de.vimotest.viewmodel.testing.structure.TextBoxCheck" flags="ng" index="UtuKh">
         <child id="2567579368932258757" name="checks" index="UtuKg" />
       </concept>
-      <concept id="8882441622785832606" name="de.vimotest.testing.structure.LabelCheck" flags="ng" index="V3Zc6">
+      <concept id="8882441622785832606" name="de.vimotest.viewmodel.testing.structure.LabelCheck" flags="ng" index="V3Zc6">
         <child id="8882441622785832607" name="checks" index="V3Zc7" />
       </concept>
-      <concept id="8882441622785832647" name="de.vimotest.testing.structure.TextCheckValue" flags="ng" index="V3Zdv">
+      <concept id="8882441622785832647" name="de.vimotest.viewmodel.testing.structure.TextCheckValue" flags="ng" index="V3Zdv">
         <property id="7845445839813196640" name="expectedText" index="3egigc" />
       </concept>
-      <concept id="6201744883139140374" name="de.vimotest.testing.structure.ButtonCheck" flags="ng" index="2X2XOa">
+      <concept id="6201744883139140374" name="de.vimotest.viewmodel.testing.structure.ButtonCheck" flags="ng" index="2X2XOa">
         <child id="6201744883139140375" name="checks" index="2X2XOb" />
       </concept>
-      <concept id="3426401106045532804" name="de.vimotest.testing.structure.EmptyContext" flags="ng" index="30l7Wy" />
-      <concept id="3426401106044983339" name="de.vimotest.testing.structure.ViewModelTestSuite" flags="ng" index="30n1Qd">
+      <concept id="3426401106045532804" name="de.vimotest.viewmodel.testing.structure.EmptyContext" flags="ng" index="30l7Wy" />
+      <concept id="3426401106044983339" name="de.vimotest.viewmodel.testing.structure.ViewModelTestSuite" flags="ng" index="30n1Qd">
         <reference id="3426401106044983489" name="targetViewModel" index="30n1PB" />
         <child id="3426401106044983341" name="tests" index="30n1Qb" />
       </concept>
-      <concept id="3426401106045121475" name="de.vimotest.testing.structure.ViewWidgetAssertion" flags="ng" index="30nzp_">
+      <concept id="3426401106045121475" name="de.vimotest.viewmodel.testing.structure.ViewWidgetAssertion" flags="ng" index="30nzp_">
         <reference id="3426401106045121502" name="widget" index="30nzpS" />
         <child id="3426401106045146960" name="check" index="30nDbQ" />
       </concept>
-      <concept id="4192570430936882686" name="de.vimotest.testing.structure.CheckedCheckValue" flags="ng" index="35STPD">
+      <concept id="4192570430936882686" name="de.vimotest.viewmodel.testing.structure.CheckedCheckValue" flags="ng" index="35STPD">
         <property id="4192570430936928123" name="expectedIsChecked" index="35S$ZG" />
       </concept>
-      <concept id="4192570430936882690" name="de.vimotest.testing.structure.EnabledCheckValue" flags="ng" index="35STUl">
+      <concept id="4192570430936882690" name="de.vimotest.viewmodel.testing.structure.EnabledCheckValue" flags="ng" index="35STUl">
         <property id="6835274084472121345" name="expectedIsEnabled" index="3XJMQh" />
       </concept>
-      <concept id="4192570430936882688" name="de.vimotest.testing.structure.VisibilityCheckValue" flags="ng" index="35STUn">
+      <concept id="4192570430936882688" name="de.vimotest.viewmodel.testing.structure.VisibilityCheckValue" flags="ng" index="35STUn">
         <property id="6835274084472266777" name="expectedIsVisible" index="3XJem9" />
       </concept>
-      <concept id="8996304390297115759" name="de.vimotest.testing.structure.FillTextCommandAction" flags="ng" index="3eaLt2">
+      <concept id="8996304390297115759" name="de.vimotest.viewmodel.testing.structure.FillTextCommandAction" flags="ng" index="3eaLt2">
         <property id="8996304390298037956" name="text" index="3fQinD" />
       </concept>
-      <concept id="8996304390297115758" name="de.vimotest.testing.structure.ClickCommandAction" flags="ng" index="3eaLt3" />
-      <concept id="8996304390297115762" name="de.vimotest.testing.structure.SelectEntryCommandAction" flags="ng" index="3eaLtv">
+      <concept id="8996304390297115758" name="de.vimotest.viewmodel.testing.structure.ClickCommandAction" flags="ng" index="3eaLt3" />
+      <concept id="8996304390297115762" name="de.vimotest.viewmodel.testing.structure.SelectEntryCommandAction" flags="ng" index="3eaLtv">
         <property id="5922736771850278303" name="selectedEntryName" index="2qt_KD" />
       </concept>
-      <concept id="5678667081004710962" name="de.vimotest.testing.structure.ViewWidgetCommandAction" flags="ng" index="3ucX6H">
+      <concept id="5678667081004710962" name="de.vimotest.viewmodel.testing.structure.ViewWidgetCommandAction" flags="ng" index="3ucX6H">
         <reference id="5678667081004731049" name="widget" index="3ucQsQ" />
       </concept>
-      <concept id="4309178210352018146" name="de.vimotest.testing.structure.GivenDescriptionWithContext" flags="ng" index="1IbZgy">
+      <concept id="4309178210352018146" name="de.vimotest.viewmodel.testing.structure.GivenDescriptionWithContext" flags="ng" index="1IbZgy">
         <child id="7445061853131768373" name="context" index="DUiTU" />
       </concept>
-      <concept id="4309178210352018150" name="de.vimotest.testing.structure.TestDescriptionPart" flags="ng" index="1IbZgA">
+      <concept id="4309178210352018150" name="de.vimotest.viewmodel.testing.structure.TestDescriptionPart" flags="ng" index="1IbZgA">
         <property id="4309178210352018151" name="textBefore" index="1IbZgB" />
       </concept>
-      <concept id="7205622933660482722" name="de.vimotest.testing.structure.ViewModelTestCase" flags="ng" index="3LKzX3">
+      <concept id="7205622933660482722" name="de.vimotest.viewmodel.testing.structure.ViewModelTestCase" flags="ng" index="3LKzX3">
         <property id="7205622933660497489" name="scenario" index="3LKBmK" />
         <child id="7445061853131767039" name="contextWithDescription" index="DUd2K" />
         <child id="7445061853131767049" name="assertsWithDescription" index="DUd56" />
         <child id="7445061853131767062" name="actionsWithDescription" index="DUd5p" />
       </concept>
-      <concept id="1116055435858972130" name="de.vimotest.testing.structure.WidgetCellCheck" flags="ng" index="1NuoHz">
+      <concept id="1116055435858972130" name="de.vimotest.viewmodel.testing.structure.WidgetCellCheck" flags="ng" index="1NuoHz">
         <reference id="216141720049061515" name="cachedWidgetToCheck" index="3elmOO" />
         <child id="1116055435858972131" name="nestedCheck" index="1NuoHy" />
       </concept>
-      <concept id="1116055435858675193" name="de.vimotest.testing.structure.TreeCheckRow" flags="ng" index="1NvgdS">
+      <concept id="1116055435858675193" name="de.vimotest.viewmodel.testing.structure.TreeCheckRow" flags="ng" index="1NvgdS">
         <property id="4008425378176438827" name="expectedDepth" index="3xvHIf" />
         <child id="1116055435858675194" name="cellChecks" index="1NvgdV" />
       </concept>
-      <concept id="2392128244454465900" name="de.vimotest.testing.structure.TableCheckRow" flags="ng" index="3UOqEq">
+      <concept id="2392128244454465900" name="de.vimotest.viewmodel.testing.structure.TableCheckRow" flags="ng" index="3UOqEq">
         <child id="5447508759369142120" name="cellChecks" index="2aBVWM" />
       </concept>
-      <concept id="2392128244454154708" name="de.vimotest.testing.structure.TableViewCheck" flags="ng" index="3UVeCy">
+      <concept id="2392128244454154708" name="de.vimotest.viewmodel.testing.structure.TableViewCheck" flags="ng" index="3UVeCy">
         <child id="2392128244454154709" name="checks" index="3UVeCz" />
       </concept>
-      <concept id="875174318840945352" name="de.vimotest.testing.structure.WidgetTreeRowsCheckValue" flags="ng" index="3VayiJ">
+      <concept id="875174318840945352" name="de.vimotest.viewmodel.testing.structure.WidgetTreeRowsCheckValue" flags="ng" index="3VayiJ">
         <child id="1116055435858988276" name="rows" index="1NusDP" />
       </concept>
-      <concept id="875174318840945282" name="de.vimotest.testing.structure.TreeViewCheck" flags="ng" index="3Vayj_">
+      <concept id="875174318840945282" name="de.vimotest.viewmodel.testing.structure.TreeViewCheck" flags="ng" index="3Vayj_">
         <child id="875174318840945283" name="checks" index="3Vayj$" />
       </concept>
     </language>

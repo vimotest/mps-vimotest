@@ -30,6 +30,7 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -540,6 +541,9 @@
     <property role="34LRSv" value="selected row" />
     <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="PrWs8" id="1RiAxJSher9" role="PzmwI">
+      <ref role="PrY4T" to="at53:1RiAxJSewmp" resolve="IHasRowHandle" />
+    </node>
     <node concept="PrWs8" id="7WgsBLYp0cq" role="PzmwI">
       <ref role="PrY4T" node="7WgsBLYmzis" resolve="IListViewCheckValue" />
     </node>
@@ -551,8 +555,9 @@
     </node>
     <node concept="1TJgyi" id="2L$_HjiNgta" role="1TKVEl">
       <property role="IQ2nx" value="3198847476153780042" />
-      <property role="TrG5h" value="selectedIndex" />
+      <property role="TrG5h" value="oldSelectedIndex" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <node concept="asaX9" id="1RiAxJSher7" role="lGtFl" />
     </node>
   </node>
   <node concept="1TIwiD" id="5MibNhOn8HA">

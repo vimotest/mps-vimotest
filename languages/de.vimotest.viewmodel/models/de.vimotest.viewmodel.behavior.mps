@@ -275,6 +275,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="4705942098322609812" name="jetbrains.mps.lang.smodel.structure.EnumMember_IsOperation" flags="ng" index="21noJN">
+        <child id="4705942098322609813" name="member" index="21noJM" />
+      </concept>
+      <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
+        <reference id="4705942098322467736" name="decl" index="21nZrZ" />
+      </concept>
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -5454,6 +5460,103 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="1RiAxJSeDXm">
+    <property role="3GE5qa" value="features.rowhandle" />
+    <ref role="13h7C2" to="at53:1RiAxJSewmp" resolve="IHasRowHandle" />
+    <node concept="13i0hz" id="1RiAxJSeINg" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getRowHandleKindOwner" />
+      <node concept="3Tm1VV" id="1RiAxJSeINh" role="1B3o_S" />
+      <node concept="3Tqbb2" id="1RiAxJSf6O7" role="3clF45">
+        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+      </node>
+      <node concept="3clFbS" id="1RiAxJSeINj" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="1RiAxJShtRu" role="13h7CS">
+      <property role="TrG5h" value="getRowHandleKindLabel" />
+      <node concept="3Tm1VV" id="1RiAxJShtRv" role="1B3o_S" />
+      <node concept="17QB3L" id="1RiAxJShtS2" role="3clF45" />
+      <node concept="3clFbS" id="1RiAxJShtRx" role="3clF47">
+        <node concept="3clFbF" id="1RiAxJShz2Y" role="3cqZAp">
+          <node concept="3K4zz7" id="1RiAxJSh_Ya" role="3clFbG">
+            <node concept="Xl_RD" id="1RiAxJSh_Zh" role="3K4E3e">
+              <property role="Xl_RC" value="row index" />
+            </node>
+            <node concept="Xl_RD" id="1RiAxJShA6N" role="3K4GZi">
+              <property role="Xl_RC" value="row handle" />
+            </node>
+            <node concept="2OqwBi" id="1RiAxJSh$6f" role="3K4Cdx">
+              <node concept="2OqwBi" id="1RiAxJShz_j" role="2Oq$k0">
+                <node concept="2OqwBi" id="1RiAxJShze5" role="2Oq$k0">
+                  <node concept="13iPFW" id="1RiAxJShz2X" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="1RiAxJShzlu" role="2OqNvi">
+                    <ref role="37wK5l" node="1RiAxJSeINg" resolve="getRowHandleKindOwner" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="1RiAxJShzLu" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:1RiAxJSeDXj" resolve="rowHandleKind" />
+                </node>
+              </node>
+              <node concept="21noJN" id="1RiAxJSh$eo" role="2OqNvi">
+                <node concept="21nZrQ" id="1RiAxJSh$eq" role="21noJM">
+                  <ref role="21nZrZ" to="at53:1RiAxJSerz6" resolve="IndexRowHandle" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1RiAxJShG_f" role="13h7CS">
+      <property role="TrG5h" value="getRowHandleValue" />
+      <node concept="3Tm1VV" id="1RiAxJShG_g" role="1B3o_S" />
+      <node concept="17QB3L" id="1RiAxJShG_h" role="3clF45" />
+      <node concept="3clFbS" id="1RiAxJShG_i" role="3clF47">
+        <node concept="3clFbF" id="1RiAxJShG_j" role="3cqZAp">
+          <node concept="3K4zz7" id="1RiAxJShG_k" role="3clFbG">
+            <node concept="2OqwBi" id="1RiAxJShUrw" role="3K4GZi">
+              <node concept="13iPFW" id="1RiAxJShRXf" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1RiAxJShUDl" role="2OqNvi">
+                <ref role="3TsBF5" to="at53:1RiAxJSfhh$" resolve="stringRowHandle" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1RiAxJShG_n" role="3K4Cdx">
+              <node concept="2OqwBi" id="1RiAxJShG_o" role="2Oq$k0">
+                <node concept="2OqwBi" id="1RiAxJShG_p" role="2Oq$k0">
+                  <node concept="13iPFW" id="1RiAxJShG_q" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="1RiAxJShG_r" role="2OqNvi">
+                    <ref role="37wK5l" node="1RiAxJSeINg" resolve="getRowHandleKindOwner" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="1RiAxJShG_s" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:1RiAxJSeDXj" resolve="rowHandleKind" />
+                </node>
+              </node>
+              <node concept="21noJN" id="1RiAxJShG_t" role="2OqNvi">
+                <node concept="21nZrQ" id="1RiAxJShG_u" role="21noJM">
+                  <ref role="21nZrZ" to="at53:1RiAxJSerz6" resolve="IndexRowHandle" />
+                </node>
+              </node>
+            </node>
+            <node concept="2YIFZM" id="1RiAxJSi4fE" role="3K4E3e">
+              <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
+              <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+              <node concept="2OqwBi" id="1RiAxJShI8V" role="37wK5m">
+                <node concept="13iPFW" id="1RiAxJShGIb" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1RiAxJShImC" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:1RiAxJSfhhz" resolve="indexRowHandle" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="1RiAxJSeDXn" role="13h7CW">
+      <node concept="3clFbS" id="1RiAxJSeDXo" role="2VODD2" />
     </node>
   </node>
 </model>

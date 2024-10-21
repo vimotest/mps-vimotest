@@ -31,6 +31,17 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
@@ -673,6 +684,9 @@
     <property role="34LRSv" value="widget rows" />
     <property role="3GE5qa" value="features" />
     <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
+    <node concept="PrWs8" id="1RiAxJSgEdx" role="PzmwI">
+      <ref role="PrY4T" node="1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2lm5WNlbZLg">
     <property role="EcuMT" value="2690363995917909072" />
@@ -680,6 +694,9 @@
     <property role="34LRSv" value="widget rows" />
     <property role="3GE5qa" value="features" />
     <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
+    <node concept="PrWs8" id="1RiAxJSg_pQ" role="PzmwI">
+      <ref role="PrY4T" node="1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2lm5WNlbZLh">
     <property role="EcuMT" value="2690363995917909073" />
@@ -687,6 +704,9 @@
     <property role="34LRSv" value="widget rows" />
     <property role="3GE5qa" value="features" />
     <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
+    <node concept="PrWs8" id="1RiAxJSfAbO" role="PzmwI">
+      <ref role="PrY4T" node="1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="44HS8_67HzJ">
     <property role="EcuMT" value="4696656866608863471" />
@@ -923,6 +943,47 @@
       <property role="20kJfa" value="clickCommand" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="6kjlgUu$Xsv" resolve="ClickCommand" />
+    </node>
+  </node>
+  <node concept="25R3W" id="1RiAxJSerz5">
+    <property role="3F6X1D" value="2148949417128474821" />
+    <property role="3GE5qa" value="features.rowhandle" />
+    <property role="TrG5h" value="RowHandleKind" />
+    <ref role="1H5jkz" node="1RiAxJSerz6" resolve="IndexRowHandle" />
+    <node concept="25R33" id="1RiAxJSerz6" role="25R1y">
+      <property role="3tVfz5" value="2148949417128474822" />
+      <property role="TrG5h" value="IndexRowHandle" />
+      <property role="1L1pqM" value="index row handle" />
+    </node>
+    <node concept="25R33" id="1RiAxJSewmn" role="25R1y">
+      <property role="3tVfz5" value="2148949417128494487" />
+      <property role="TrG5h" value="StringRowHandle" />
+      <property role="1L1pqM" value="string row handle" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1RiAxJSewmp">
+    <property role="EcuMT" value="2148949417128494489" />
+    <property role="3GE5qa" value="features.rowhandle" />
+    <property role="TrG5h" value="IHasRowHandle" />
+    <node concept="1TJgyi" id="1RiAxJSfhhz" role="1TKVEl">
+      <property role="IQ2nx" value="2148949417128694883" />
+      <property role="TrG5h" value="indexRowHandle" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="1RiAxJSfhh$" role="1TKVEl">
+      <property role="IQ2nx" value="2148949417128694884" />
+      <property role="TrG5h" value="stringRowHandle" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1RiAxJSe_9Q">
+    <property role="EcuMT" value="2148949417128514166" />
+    <property role="3GE5qa" value="features.rowhandle" />
+    <property role="TrG5h" value="IRowHandleKindOwner" />
+    <node concept="1TJgyi" id="1RiAxJSeDXj" role="1TKVEl">
+      <property role="IQ2nx" value="2148949417128533843" />
+      <property role="TrG5h" value="rowHandleKind" />
+      <ref role="AX2Wp" node="1RiAxJSerz5" resolve="RowHandleKind" />
     </node>
   </node>
 </model>

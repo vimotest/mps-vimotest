@@ -3013,12 +3013,25 @@
         <property role="3F0ifm" value="shows" />
         <ref role="1k5W1q" node="55YtzNatuDs" resolve="ThenDescriptionText" />
       </node>
-      <node concept="3F0ifn" id="55YtzNavhYA" role="3EZMnx">
-        <property role="3F0ifm" value="selected index" />
+      <node concept="1HlG4h" id="1RiAxJShAa0" role="3EZMnx">
         <ref role="1k5W1q" node="55YtzNatuDs" resolve="ThenDescriptionText" />
+        <node concept="1HfYo3" id="1RiAxJShAa2" role="1HlULh">
+          <node concept="3TQlhw" id="1RiAxJShAa4" role="1Hhtcw">
+            <node concept="3clFbS" id="1RiAxJShAa6" role="2VODD2">
+              <node concept="3clFbF" id="1RiAxJShAra" role="3cqZAp">
+                <node concept="2OqwBi" id="1RiAxJShAW4" role="3clFbG">
+                  <node concept="pncrf" id="1RiAxJShAr9" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="1RiAxJShBKx" role="2OqNvi">
+                    <ref role="37wK5l" to="nrs2:1RiAxJShtRu" resolve="getRowHandleKindLabel" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0A7n" id="55YtzNavhYB" role="3EZMnx">
-        <ref role="1NtTu8" to="53m0:2L$_HjiNgta" resolve="selectedIndex" />
+        <ref role="1NtTu8" to="53m0:2L$_HjiNgta" resolve="oldSelectedIndex" />
       </node>
       <node concept="2iRfu4" id="55YtzNav1Ii" role="2iSdaV" />
     </node>

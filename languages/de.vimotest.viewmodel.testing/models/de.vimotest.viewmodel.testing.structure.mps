@@ -143,16 +143,25 @@
     <node concept="1TJgyj" id="6tib4XeIJOm" role="1TKVEi">
       <property role="IQ2ns" value="7445061853131767062" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="actionsWithDescription" />
+      <property role="20kJfa" value="old_actionsWithDescription" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6tib4XeIJOl" resolve="WhenDescriptionWithActions" />
+      <node concept="asaX9" id="6fEYrkZup09" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="6tib4XeIJO9" role="1TKVEi">
       <property role="IQ2ns" value="7445061853131767049" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="assertsWithDescription" />
+      <property role="20kJfa" value="old_assertsWithDescription" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6tib4XeIJNS" resolve="ThenDescriptionWithAssert" />
+      <node concept="asaX9" id="6fEYrkZup0a" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="6fEYrkZup0b" role="1TKVEi">
+      <property role="IQ2ns" value="7199841511154487307" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="whenThenDescriptions" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="6fEYrkZukdp" resolve="WhenThenDescriptions" />
     </node>
     <node concept="1TJgyi" id="6fZwY6ifvph" role="1TKVEl">
       <property role="IQ2nx" value="7205622933660497489" />
@@ -930,6 +939,26 @@
       <property role="IQ2nx" value="5922736771850278303" />
       <property role="TrG5h" value="selectedEntryName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6fEYrkZukdp">
+    <property role="EcuMT" value="7199841511154467673" />
+    <property role="3GE5qa" value="test.description" />
+    <property role="TrG5h" value="WhenThenDescriptions" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="6fEYrkZup07" role="1TKVEi">
+      <property role="IQ2ns" value="7199841511154487303" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="actionsWithDescription" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6tib4XeIJOl" resolve="WhenDescriptionWithActions" />
+    </node>
+    <node concept="1TJgyj" id="6fEYrkZup08" role="1TKVEi">
+      <property role="IQ2ns" value="7199841511154487304" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="assertsWithDescription" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6tib4XeIJNS" resolve="ThenDescriptionWithAssert" />
     </node>
   </node>
 </model>

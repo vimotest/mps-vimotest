@@ -91,9 +91,12 @@
         <reference id="3426401106044983489" name="targetViewModel" index="30n1PB" />
         <child id="3426401106044983341" name="tests" index="30n1Qb" />
       </concept>
+      <concept id="7199841511154467673" name="de.vimotest.viewmodel.testing.structure.WhenThenDescriptions" flags="ng" index="1s$VFG">
+        <child id="7199841511154487304" name="assertsWithDescription" index="1s$QAX" />
+      </concept>
       <concept id="7205622933660482722" name="de.vimotest.viewmodel.testing.structure.ViewModelTestCase" flags="ng" index="3LKzX3">
         <property id="7205622933660497489" name="scenario" index="3LKBmK" />
-        <child id="7445061853131767049" name="assertsWithDescription" index="DUd56" />
+        <child id="7199841511154487307" name="whenThenDescriptions" index="1s$QAY" />
       </concept>
       <concept id="7205622933660496194" name="de.vimotest.viewmodel.testing.structure.ITestCaseAssertion" flags="ngI" index="3LKBaz" />
     </language>
@@ -124,19 +127,21 @@
         <ref role="30n1PB" node="7kmE6cdCpmj" resolve="MyViewModel" />
         <node concept="3LKzX3" id="7kmE6cdCugj" role="30n1Qb">
           <property role="3LKBmK" value="Test" />
-          <node concept="DUd2R" id="7kmE6cdCugm" role="DUd56">
-            <node concept="3LKBaz" id="7kmE6cdCugt" role="DUiSb">
-              <node concept="LIFWc" id="7kmE6cdCugv" role="lGtFl">
-                <property role="ZRATv" value="true" />
-                <property role="OXtK3" value="true" />
-                <property role="p6zMq" value="0" />
-                <property role="p6zMs" value="0" />
-                <property role="LIFWd" value="Error" />
+          <node concept="1s$VFG" id="6fEYrkZxlQU" role="1s$QAY">
+            <node concept="DUd2R" id="7kmE6cdCugm" role="1s$QAX">
+              <node concept="3LKBaz" id="7kmE6cdCugt" role="DUiSb">
+                <node concept="LIFWc" id="7kmE6cdCugv" role="lGtFl">
+                  <property role="ZRATv" value="true" />
+                  <property role="OXtK3" value="true" />
+                  <property role="p6zMq" value="0" />
+                  <property role="p6zMs" value="0" />
+                  <property role="LIFWd" value="Error" />
+                </node>
               </node>
             </node>
-          </node>
-          <node concept="DUd2R" id="7kmE6cdE0gG" role="DUd56">
-            <node concept="3LKBaz" id="7kmE6cdE0gH" role="DUiSb" />
+            <node concept="DUd2R" id="7kmE6cdE0gG" role="1s$QAX">
+              <node concept="3LKBaz" id="7kmE6cdE0gH" role="DUiSb" />
+            </node>
           </node>
         </node>
       </node>

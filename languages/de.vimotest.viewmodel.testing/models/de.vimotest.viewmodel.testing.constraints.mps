@@ -681,5 +681,39 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="6fEYrkZaBjY">
+    <property role="3GE5qa" value="test.assert.widgets.structures.tableview" />
+    <ref role="1M2myG" to="53m0:24MyZrrSM5G" resolve="TableCheckRow" />
+    <node concept="EnEH3" id="6fEYrkZaG_d" role="1MhHOB">
+      <ref role="EomxK" to="at53:1RiAxJSfhhz" resolve="indexRowHandle" />
+      <node concept="Eqf_E" id="6fEYrkZaG_e" role="EtsB7">
+        <node concept="3clFbS" id="6fEYrkZaG_f" role="2VODD2">
+          <node concept="3clFbF" id="6fEYrkZaG_g" role="3cqZAp">
+            <node concept="2OqwBi" id="6fEYrkZaG_h" role="3clFbG">
+              <node concept="EsrRn" id="6fEYrkZaG_i" role="2Oq$k0" />
+              <node concept="2bSWHS" id="6fEYrkZaG_j" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6fEYrkZaGZ9">
+    <property role="3GE5qa" value="test.assert.widgets.structures.treeview" />
+    <ref role="1M2myG" to="53m0:XX1C5W00nT" resolve="TreeCheckRow" />
+    <node concept="EnEH3" id="6fEYrkZaLLS" role="1MhHOB">
+      <ref role="EomxK" to="at53:1RiAxJSfhhz" resolve="indexRowHandle" />
+      <node concept="Eqf_E" id="6fEYrkZaLLT" role="EtsB7">
+        <node concept="3clFbS" id="6fEYrkZaLLU" role="2VODD2">
+          <node concept="3clFbF" id="6fEYrkZaLLV" role="3cqZAp">
+            <node concept="2OqwBi" id="6fEYrkZaLLW" role="3clFbG">
+              <node concept="EsrRn" id="6fEYrkZaLLX" role="2Oq$k0" />
+              <node concept="2bSWHS" id="6fEYrkZaLLY" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

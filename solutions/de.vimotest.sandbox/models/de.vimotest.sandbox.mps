@@ -261,6 +261,10 @@
       </concept>
       <concept id="2148949417128494489" name="de.vimotest.viewmodel.structure.IHasRowHandle" flags="ngI" index="3_U9Y2">
         <property id="2148949417128694883" name="indexRowHandle" index="3_VSTS" />
+        <property id="2148949417128694884" name="stringRowHandle" index="3_VSTZ" />
+      </concept>
+      <concept id="2148949417128514166" name="de.vimotest.viewmodel.structure.IRowHandleKindOwner" flags="ngI" index="3_UcxH">
+        <property id="2148949417128533843" name="rowHandleKind" index="3_U0l8" />
       </concept>
       <concept id="2690363995917909071" name="de.vimotest.viewmodel.structure.WidgetListRowsFeature" flags="ng" index="3KuuI3" />
       <concept id="2690363995917909072" name="de.vimotest.viewmodel.structure.WidgetTreeRowsFeature" flags="ng" index="3KuuIs" />
@@ -647,6 +651,25 @@
           <property role="2VM7R0" value="true" />
         </node>
       </node>
+      <node concept="1i$o6" id="6fEYrkZ6m5q" role="103ZUC">
+        <property role="TrG5h" value="MyStringRowHandles" />
+        <node concept="2nep4R" id="6fEYrkZ6m5r" role="2MLTWm">
+          <node concept="V3ZfZ" id="6fEYrkZ6m5s" role="2nerJI">
+            <property role="TrG5h" value="Values" />
+            <node concept="V3Zf6" id="6fEYrkZ6m5t" role="V3ZfK" />
+            <node concept="C4FCh" id="6fEYrkZ6m5u" role="V3ZfL" />
+            <node concept="C4FCg" id="6fEYrkZ6m5v" role="V3ZfM" />
+          </node>
+        </node>
+        <node concept="3KuuI3" id="6fEYrkZ6m5x" role="1rSL7">
+          <property role="3_U0l8" value="1RiAxJSewmn/StringRowHandle" />
+        </node>
+        <node concept="1i$ol" id="6fEYrkZ6m5z" role="1uGH_">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCg" id="6fEYrkZ6m5_" role="1i$o7" />
+        <node concept="C4FCh" id="6fEYrkZ6m5B" role="1i$o0" />
+      </node>
     </node>
   </node>
   <node concept="103ZX$" id="4w9z1ta2HPl">
@@ -707,6 +730,25 @@
         <node concept="C4FCh" id="4w9z1ta2HQi" role="3UVeDX">
           <property role="2VM7R0" value="true" />
         </node>
+      </node>
+      <node concept="3UVeDL" id="6fEYrkZdc3L" role="103ZUC">
+        <property role="TrG5h" value="MyStringRowHandles" />
+        <node concept="2nep4R" id="6fEYrkZdc3M" role="2azj8S">
+          <node concept="V3ZfZ" id="6fEYrkZdc3R" role="2nerJI">
+            <property role="TrG5h" value="Values" />
+            <node concept="V3Zf6" id="6fEYrkZdc3W" role="V3ZfK" />
+            <node concept="C4FCh" id="6fEYrkZdc41" role="V3ZfL" />
+            <node concept="C4FCg" id="6fEYrkZdc46" role="V3ZfM" />
+          </node>
+        </node>
+        <node concept="3KuuIt" id="6fEYrkZdc4c" role="3UVeDY">
+          <property role="3_U0l8" value="1RiAxJSewmn/StringRowHandle" />
+        </node>
+        <node concept="1i$ol" id="6fEYrkZdc4e" role="3UVeDZ">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCg" id="6fEYrkZdc4g" role="3UVeDW" />
+        <node concept="C4FCh" id="6fEYrkZdc4i" role="3UVeDX" />
       </node>
     </node>
   </node>
@@ -773,6 +815,25 @@
           <property role="2VM7R0" value="true" />
         </node>
         <node concept="3KuuIs" id="4w9z1ta2ML7" role="3Vayhh" />
+      </node>
+      <node concept="3Vayhi" id="6fEYrkZdc4_" role="103ZUC">
+        <property role="TrG5h" value="MyStringRowHandles" />
+        <node concept="2nep4R" id="6fEYrkZdc4A" role="2nerJJ">
+          <node concept="V3ZfZ" id="6fEYrkZdc4F" role="2nerJI">
+            <property role="TrG5h" value="Values" />
+            <node concept="V3Zf6" id="6fEYrkZdc4K" role="V3ZfK" />
+            <node concept="C4FCh" id="6fEYrkZdc4P" role="V3ZfL" />
+            <node concept="C4FCg" id="6fEYrkZdc4U" role="V3ZfM" />
+          </node>
+        </node>
+        <node concept="3KuuIs" id="6fEYrkZdc50" role="3Vayhh">
+          <property role="3_U0l8" value="1RiAxJSewmn/StringRowHandle" />
+        </node>
+        <node concept="1i$ol" id="6fEYrkZdc52" role="3Vayhg">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCg" id="6fEYrkZdc54" role="3Vayhv" />
+        <node concept="C4FCh" id="6fEYrkZdc56" role="3Vayhu" />
       </node>
     </node>
   </node>
@@ -1039,6 +1100,40 @@
           </node>
         </node>
       </node>
+      <node concept="DUd2R" id="6fEYrkZ6m5X" role="DUd56">
+        <node concept="30nzp_" id="6fEYrkZ6m5Z" role="DUiSb">
+          <ref role="30nzpS" node="6fEYrkZ6m5q" resolve="MyStringRowHandles" />
+          <node concept="1i$re" id="6fEYrkZ6m60" role="30nDbQ">
+            <node concept="1i$qk" id="6fEYrkZ6m61" role="1i$rf">
+              <node concept="CNEhi" id="6fEYrkZ6m62" role="3o2WtG">
+                <property role="3_VSTZ" value="ROW0" />
+                <node concept="1NuoHz" id="6fEYrkZ6m63" role="CNE8S">
+                  <ref role="3elmOO" node="6fEYrkZ6m5s" resolve="Values" />
+                  <node concept="V3Zc6" id="6fEYrkZ6m65" role="1NuoHy">
+                    <node concept="V3Zdv" id="6fEYrkZ6m66" role="V3Zc7">
+                      <property role="3egigc" value="A" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="CNEhi" id="6fEYrkZ6m67" role="3o2WtG">
+                <property role="3_VSTZ" value="ROW1" />
+                <node concept="1NuoHz" id="6fEYrkZ6m68" role="CNE8S">
+                  <ref role="3elmOO" node="6fEYrkZ6m5s" resolve="Values" />
+                  <node concept="V3Zc6" id="6fEYrkZ6m6a" role="1NuoHy">
+                    <node concept="V3Zdv" id="6fEYrkZ6m6b" role="V3Zc7">
+                      <property role="3egigc" value="B" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1i$ql" id="6fEYrkZ6m6c" role="1i$rf">
+              <property role="3_VSTZ" value="ROW1" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1IbZgy" id="4w9z1ta36_b" role="DUd2K">
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="4w9z1ta36_c" role="DUiTU" />
@@ -1136,6 +1231,40 @@
             </node>
             <node concept="35STUl" id="4w9z1ta3HWl" role="3UVeCz">
               <property role="3XJMQh" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="DUd2R" id="6fEYrkZdc4k" role="DUd56">
+        <node concept="30nzp_" id="6fEYrkZdc4m" role="DUiSb">
+          <ref role="30nzpS" node="6fEYrkZdc3L" resolve="MyStringRowHandles" />
+          <node concept="3UVeCy" id="6fEYrkZdc4n" role="30nDbQ">
+            <node concept="2ayrQO" id="6fEYrkZdc4o" role="3UVeCz">
+              <node concept="3UOqEq" id="6fEYrkZdc4p" role="2ay43_">
+                <property role="3_VSTZ" value="ROW0" />
+                <node concept="1NuoHz" id="6fEYrkZdc4s" role="2aBVWM">
+                  <ref role="3elmOO" node="6fEYrkZdc3R" resolve="Values" />
+                  <node concept="V3Zc6" id="6fEYrkZdc4q" role="1NuoHy">
+                    <node concept="V3Zdv" id="6fEYrkZdc4r" role="V3Zc7">
+                      <property role="3egigc" value="A" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3UOqEq" id="6fEYrkZdc4u" role="2ay43_">
+                <property role="3_VSTZ" value="ROW1" />
+                <node concept="1NuoHz" id="6fEYrkZdc4x" role="2aBVWM">
+                  <ref role="3elmOO" node="6fEYrkZdc3R" resolve="Values" />
+                  <node concept="V3Zc6" id="6fEYrkZdc4v" role="1NuoHy">
+                    <node concept="V3Zdv" id="6fEYrkZdc4w" role="V3Zc7">
+                      <property role="3egigc" value="B" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1i$ql" id="6fEYrkZdc4z" role="3UVeCz">
+              <property role="3_VSTZ" value="ROW1" />
             </node>
           </node>
         </node>
@@ -1239,6 +1368,42 @@
             </node>
             <node concept="35STUn" id="4w9z1ta3HWp" role="3Vayj$">
               <property role="3XJem9" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="DUd2R" id="6fEYrkZdc58" role="DUd56">
+        <node concept="30nzp_" id="6fEYrkZdc5a" role="DUiSb">
+          <ref role="30nzpS" node="6fEYrkZdc4_" resolve="MyStringRowHandles" />
+          <node concept="3Vayj_" id="6fEYrkZdc5b" role="30nDbQ">
+            <node concept="3VayiJ" id="6fEYrkZdc5c" role="3Vayj$">
+              <node concept="1NvgdS" id="6fEYrkZdc5d" role="1NusDP">
+                <property role="3xvHIf" value="0" />
+                <property role="3_VSTZ" value="ROW0" />
+                <node concept="1NuoHz" id="6fEYrkZdc5g" role="1NvgdV">
+                  <ref role="3elmOO" node="6fEYrkZdc4F" resolve="Values" />
+                  <node concept="V3Zc6" id="6fEYrkZdc5e" role="1NuoHy">
+                    <node concept="V3Zdv" id="6fEYrkZdc5f" role="V3Zc7">
+                      <property role="3egigc" value="A" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1NvgdS" id="6fEYrkZdc5i" role="1NusDP">
+                <property role="3xvHIf" value="0" />
+                <property role="3_VSTZ" value="ROW1" />
+                <node concept="1NuoHz" id="6fEYrkZdc5l" role="1NvgdV">
+                  <ref role="3elmOO" node="6fEYrkZdc4F" resolve="Values" />
+                  <node concept="V3Zc6" id="6fEYrkZdc5j" role="1NuoHy">
+                    <node concept="V3Zdv" id="6fEYrkZdc5k" role="V3Zc7">
+                      <property role="3egigc" value="B" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1i$ql" id="6fEYrkZdc5n" role="3Vayj$">
+              <property role="3_VSTZ" value="ROW1" />
             </node>
           </node>
         </node>

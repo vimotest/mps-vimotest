@@ -639,6 +639,9 @@
     <node concept="PrWs8" id="3uwMqjmRu2B" role="PzmwI">
       <ref role="PrY4T" to="at53:2zlSkwD9nfw" resolve="ITreeRow" />
     </node>
+    <node concept="PrWs8" id="6fEYrkZaMbN" role="PzmwI">
+      <ref role="PrY4T" to="at53:1RiAxJSewmp" resolve="IHasRowHandle" />
+    </node>
   </node>
   <node concept="1TIwiD" id="XX1C5W18Ry">
     <property role="EcuMT" value="1116055435858972130" />
@@ -704,6 +707,9 @@
     </node>
     <node concept="PrWs8" id="4Ips5F11GXB" role="PzmwI">
       <ref role="PrY4T" to="at53:24MyZrrSND$" resolve="ITableRow" />
+    </node>
+    <node concept="PrWs8" id="6fEYrkZawsk" role="PzmwI">
+      <ref role="PrY4T" to="at53:1RiAxJSewmp" resolve="IHasRowHandle" />
     </node>
   </node>
   <node concept="1TIwiD" id="4Ips5F14cRI">

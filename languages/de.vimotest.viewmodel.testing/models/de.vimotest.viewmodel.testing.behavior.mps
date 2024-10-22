@@ -5255,6 +5255,38 @@
         <ref role="2I9WkF" to="at53:F907haLIRF" resolve="ViewWidget" />
       </node>
     </node>
+    <node concept="13i0hz" id="6fEYrkZaMPN" role="13h7CS">
+      <property role="TrG5h" value="getRowHandleKindOwner" />
+      <ref role="13i0hy" to="nrs2:1RiAxJSeINg" resolve="getRowHandleKindOwner" />
+      <node concept="3Tm1VV" id="6fEYrkZaMPO" role="1B3o_S" />
+      <node concept="3clFbS" id="6fEYrkZaMPR" role="3clF47">
+        <node concept="3clFbF" id="6fEYrkZaMUV" role="3cqZAp">
+          <node concept="2OqwBi" id="6fEYrkZaMUW" role="3clFbG">
+            <node concept="2OqwBi" id="6fEYrkZaMUX" role="2Oq$k0">
+              <node concept="1PxgMI" id="6fEYrkZaMUY" role="2Oq$k0">
+                <property role="1BlNFB" value="true" />
+                <node concept="chp4Y" id="6fEYrkZaMUZ" role="3oSUPX">
+                  <ref role="cht4Q" to="53m0:K_fAvR3LF8" resolve="WidgetTreeRowsCheckValue" />
+                </node>
+                <node concept="2OqwBi" id="6fEYrkZaMV0" role="1m5AlR">
+                  <node concept="13iPFW" id="6fEYrkZaMV1" role="2Oq$k0" />
+                  <node concept="1mfA1w" id="6fEYrkZaMV2" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="6fEYrkZaMV3" role="2OqNvi">
+                <ref role="37wK5l" node="3uwMqjmQzQp" resolve="getTreeViewWidget" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="6fEYrkZaMV4" role="2OqNvi">
+              <ref role="3Tt5mk" to="at53:K_fAvR3LCQ" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6fEYrkZaMPS" role="3clF45">
+        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="3uwMqjmRGj2">
     <property role="3GE5qa" value="test.assert.widgets.structures" />
@@ -5830,6 +5862,38 @@
       </node>
       <node concept="2I9FWS" id="4Ips5F11U8T" role="3clF45">
         <ref role="2I9WkF" to="at53:F907haLIRF" resolve="ViewWidget" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="6fEYrkZawFx" role="13h7CS">
+      <property role="TrG5h" value="getRowHandleKindOwner" />
+      <ref role="13i0hy" to="nrs2:1RiAxJSeINg" resolve="getRowHandleKindOwner" />
+      <node concept="3Tm1VV" id="6fEYrkZawFy" role="1B3o_S" />
+      <node concept="3clFbS" id="6fEYrkZawF_" role="3clF47">
+        <node concept="3clFbF" id="6fEYrkZawWT" role="3cqZAp">
+          <node concept="2OqwBi" id="6fEYrkZawWU" role="3clFbG">
+            <node concept="2OqwBi" id="6fEYrkZawWV" role="2Oq$k0">
+              <node concept="1PxgMI" id="6fEYrkZawWW" role="2Oq$k0">
+                <property role="1BlNFB" value="true" />
+                <node concept="chp4Y" id="6fEYrkZawWX" role="3oSUPX">
+                  <ref role="cht4Q" to="53m0:4Ips5F14cRI" resolve="WidgetTableRowsCheckValue" />
+                </node>
+                <node concept="2OqwBi" id="6fEYrkZawWY" role="1m5AlR">
+                  <node concept="13iPFW" id="6fEYrkZawWZ" role="2Oq$k0" />
+                  <node concept="1mfA1w" id="6fEYrkZawX0" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="6fEYrkZawX1" role="2OqNvi">
+                <ref role="37wK5l" node="4Ips5F147fx" resolve="getTableViewWidget" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="6fEYrkZawX2" role="2OqNvi">
+              <ref role="3Tt5mk" to="at53:24MyZrrRA68" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6fEYrkZawFA" role="3clF45">
+        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
       </node>
     </node>
   </node>

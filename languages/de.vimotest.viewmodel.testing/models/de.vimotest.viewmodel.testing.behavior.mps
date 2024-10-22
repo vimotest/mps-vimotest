@@ -4524,7 +4524,7 @@
     </node>
     <node concept="13i0hz" id="7a1oxby5ulq" role="13h7CS">
       <property role="TrG5h" value="getListViewWidget" />
-      <node concept="3Tm6S6" id="7a1oxby5ulr" role="1B3o_S" />
+      <node concept="3Tm1VV" id="6fEYrkZ4U7Z" role="1B3o_S" />
       <node concept="3Tqbb2" id="7a1oxby5uls" role="3clF45">
         <ref role="ehGHo" to="at53:7WgsBLYmzhU" resolve="ListViewWidget" />
       </node>
@@ -10339,6 +10339,45 @@
         <ref role="3bZ5Sy" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
       </node>
       <node concept="3Tm1VV" id="7kmE6cdOVC1" role="1B3o_S" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6fEYrkZ4N2S">
+    <property role="3GE5qa" value="test.assert.widgets.structures.listview" />
+    <ref role="13h7C2" to="53m0:5MibNhOn8HA" resolve="ListCheckRow" />
+    <node concept="13i0hz" id="6fEYrkZ4FKG" role="13h7CS">
+      <property role="TrG5h" value="getRowHandleKindOwner" />
+      <ref role="13i0hy" to="nrs2:1RiAxJSeINg" resolve="getRowHandleKindOwner" />
+      <node concept="3Tm1VV" id="6fEYrkZ4FKH" role="1B3o_S" />
+      <node concept="3clFbS" id="6fEYrkZ4FKK" role="3clF47">
+        <node concept="3clFbF" id="6fEYrkZ4RUt" role="3cqZAp">
+          <node concept="2OqwBi" id="6fEYrkZ4UJD" role="3clFbG">
+            <node concept="2OqwBi" id="6fEYrkZ4TPq" role="2Oq$k0">
+              <node concept="1PxgMI" id="6fEYrkZ4Szr" role="2Oq$k0">
+                <property role="1BlNFB" value="true" />
+                <node concept="chp4Y" id="6fEYrkZ4S$O" role="3oSUPX">
+                  <ref role="cht4Q" to="53m0:7WgsBLYmzjC" resolve="WidgetListRowsCheckValue" />
+                </node>
+                <node concept="2OqwBi" id="6fEYrkZ4S7S" role="1m5AlR">
+                  <node concept="13iPFW" id="6fEYrkZ4RUr" role="2Oq$k0" />
+                  <node concept="1mfA1w" id="6fEYrkZ4ShI" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="6fEYrkZ4UqB" role="2OqNvi">
+                <ref role="37wK5l" node="7a1oxby5ulq" resolve="getListViewWidget" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="6fEYrkZ4V1I" role="2OqNvi">
+              <ref role="3Tt5mk" to="at53:7WgsBLYvZSV" resolve="widgetListRowsFeature" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6fEYrkZ4FKL" role="3clF45">
+        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="6fEYrkZ4N2T" role="13h7CW">
+      <node concept="3clFbS" id="6fEYrkZ4N2U" role="2VODD2" />
     </node>
   </node>
 </model>

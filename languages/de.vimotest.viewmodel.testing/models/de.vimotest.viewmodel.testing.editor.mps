@@ -1803,8 +1803,17 @@
       <node concept="3F0ifn" id="708i5MC1oeN" role="3EZMnx">
         <property role="3F0ifm" value="row:" />
       </node>
+      <node concept="PMmxH" id="6fEYrkZ4Vpn" role="3EZMnx">
+        <ref role="PMmxG" to="czmc:1RiAxJSf6QT" resolve="IHasRowHandle_EC" />
+      </node>
       <node concept="3F1sOY" id="XX1C5W1bTL" role="3EZMnx">
         <ref role="1NtTu8" to="53m0:5MibNhOn8Oc" resolve="cellCheck" />
+        <node concept="pVoyu" id="6fEYrkZ4Vpk" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6fEYrkZ4Vpl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="l2Vlx" id="708i5MC1od7" role="2iSdaV" />
     </node>

@@ -574,6 +574,9 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="XX1C5W18Ry" resolve="WidgetCellCheck" />
     </node>
+    <node concept="PrWs8" id="6fEYrkZ4Lzp" role="PzmwI">
+      <ref role="PrY4T" to="at53:1RiAxJSewmp" resolve="IHasRowHandle" />
+    </node>
   </node>
   <node concept="PlHQZ" id="K_fAvR3LDG">
     <property role="EcuMT" value="875174318840945260" />

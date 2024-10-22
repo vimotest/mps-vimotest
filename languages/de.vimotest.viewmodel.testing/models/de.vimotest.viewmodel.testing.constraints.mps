@@ -119,6 +119,7 @@
       <concept id="1153138554286" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_propertyValue" flags="nn" index="1Wqviy" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -657,6 +658,23 @@
                 <ref role="37wK5l" to="fwln:7a1oxbxXWUl" resolve="getWidgetConceptToCheckByParentNode" />
                 <node concept="nLn13" id="5oh1xNF6HGx" role="37wK5m" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6fEYrkZ4VHj">
+    <property role="3GE5qa" value="test.assert.widgets.structures.listview" />
+    <ref role="1M2myG" to="53m0:5MibNhOn8HA" resolve="ListCheckRow" />
+    <node concept="EnEH3" id="6fEYrkZ50ww" role="1MhHOB">
+      <ref role="EomxK" to="at53:1RiAxJSfhhz" resolve="indexRowHandle" />
+      <node concept="Eqf_E" id="6fEYrkZ50xk" role="EtsB7">
+        <node concept="3clFbS" id="6fEYrkZ50xl" role="2VODD2">
+          <node concept="3clFbF" id="6fEYrkZ50W2" role="3cqZAp">
+            <node concept="2OqwBi" id="6fEYrkZ51wy" role="3clFbG">
+              <node concept="EsrRn" id="6fEYrkZ50W1" role="2Oq$k0" />
+              <node concept="2bSWHS" id="6fEYrkZ51JH" role="2OqNvi" />
             </node>
           </node>
         </node>

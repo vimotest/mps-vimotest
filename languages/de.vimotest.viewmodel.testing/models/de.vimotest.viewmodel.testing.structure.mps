@@ -912,8 +912,12 @@
     <ref role="1TJDcQ" node="4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
     <node concept="1TJgyi" id="1LLcOD9G5DQ" role="1TKVEl">
       <property role="IQ2nx" value="2049475699587177078" />
-      <property role="TrG5h" value="selectedIndex" />
+      <property role="TrG5h" value="oldSelectedIndex" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <node concept="asaX9" id="6fEYrkZkNBq" role="lGtFl" />
+    </node>
+    <node concept="PrWs8" id="6fEYrkZkNBr" role="PzmwI">
+      <ref role="PrY4T" to="at53:1RiAxJSewmp" resolve="IHasRowHandle" />
     </node>
   </node>
   <node concept="1TIwiD" id="7NpiMQMW_LM">

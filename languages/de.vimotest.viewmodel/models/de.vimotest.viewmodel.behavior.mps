@@ -364,6 +364,9 @@
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
+      <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
+        <child id="1151689745422" name="elementType" index="A3Ik2" />
+      </concept>
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435808" name="initValue" index="HW$Y0" />
       </concept>
@@ -5578,6 +5581,36 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="6fEYrkZmumF" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getValidRowIndices" />
+      <node concept="3Tm1VV" id="6fEYrkZmumG" role="1B3o_S" />
+      <node concept="A3Dl8" id="6fEYrkZmANg" role="3clF45">
+        <node concept="10Oyi0" id="6fEYrkZmAU6" role="A3Ik2" />
+      </node>
+      <node concept="3clFbS" id="6fEYrkZmumI" role="3clF47">
+        <node concept="3clFbF" id="6fEYrkZmFO0" role="3cqZAp">
+          <node concept="2ShNRf" id="6fEYrkZmFNY" role="3clFbG">
+            <node concept="Tc6Ow" id="6fEYrkZmGm2" role="2ShVmc" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="6fEYrkZmGvj" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getValidStringRowHandles" />
+      <node concept="3Tm1VV" id="6fEYrkZmGvk" role="1B3o_S" />
+      <node concept="A3Dl8" id="6fEYrkZmGvl" role="3clF45">
+        <node concept="17QB3L" id="6fEYrkZn0BE" role="A3Ik2" />
+      </node>
+      <node concept="3clFbS" id="6fEYrkZmGvn" role="3clF47">
+        <node concept="3clFbF" id="6fEYrkZmGvo" role="3cqZAp">
+          <node concept="2ShNRf" id="6fEYrkZmGvp" role="3clFbG">
+            <node concept="Tc6Ow" id="6fEYrkZmGvq" role="2ShVmc" />
           </node>
         </node>
       </node>

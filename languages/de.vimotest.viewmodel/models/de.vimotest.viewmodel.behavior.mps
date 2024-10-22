@@ -4298,6 +4298,33 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="3clFb_" id="6fEYrkYXXUt" role="jymVt">
+      <property role="TrG5h" value="getRowCellNodeOwner" />
+      <node concept="3Tm1VV" id="6fEYrkYXXUu" role="1B3o_S" />
+      <node concept="3Tqbb2" id="6fEYrkYXXUv" role="3clF45" />
+      <node concept="37vLTG" id="6fEYrkYXXUw" role="3clF46">
+        <property role="TrG5h" value="rowNumber" />
+        <node concept="10Oyi0" id="6fEYrkYXXUx" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="6fEYrkYXXUy" role="3clF47">
+        <node concept="3clFbF" id="6fEYrkZ0iZ3" role="3cqZAp">
+          <node concept="2OqwBi" id="6fEYrkZ0oYU" role="3clFbG">
+            <node concept="1y4W85" id="6fEYrkZ0nLT" role="2Oq$k0">
+              <node concept="3cmrfG" id="6fEYrkZ0osK" role="1y58nS">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="37vLTw" id="6fEYrkZ0iZ1" role="1y566C">
+                <ref role="3cqZAo" node="4Ia639WslvM" resolve="columns" />
+              </node>
+            </node>
+            <node concept="1mfA1w" id="6fEYrkZ0pXF" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="6fEYrkYXXUL" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
     <node concept="3clFb_" id="1si8oglQaeO" role="jymVt">
       <property role="TrG5h" value="insertRow" />
       <node concept="37vLTG" id="1si8oglQaeP" role="3clF46">

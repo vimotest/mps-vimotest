@@ -3996,8 +3996,16 @@
               <node concept="1rXfSq" id="4hiugqyz9CI" role="37wK5m">
                 <ref role="37wK5l" to="g51k:~EditorCell_Basic.getContext()" resolve="getContext" />
               </node>
-              <node concept="1rXfSq" id="4hiugqyzjX9" role="37wK5m">
-                <ref role="37wK5l" to="g51k:~EditorCell_Basic.getSNode()" resolve="getSNode" />
+              <node concept="2OqwBi" id="6fEYrkYYr4a" role="37wK5m">
+                <node concept="37vLTw" id="6fEYrkYYoxr" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7oCDJDn_QjY" resolve="myModel" />
+                </node>
+                <node concept="liA8E" id="6fEYrkYYuO0" role="2OqNvi">
+                  <ref role="37wK5l" node="6fEYrkYX$z4" resolve="getRowCellNodeOwner" />
+                  <node concept="37vLTw" id="6fEYrkYYCVG" role="37wK5m">
+                    <ref role="3cqZAo" node="20ECN$uP5Sc" resolve="row" />
+                  </node>
+                </node>
               </node>
               <node concept="2ShNRf" id="20ECN$uP5Sq" role="37wK5m">
                 <node concept="1pGfFk" id="20ECN$uP5Sr" role="2ShVmc">
@@ -5284,6 +5292,16 @@
       </node>
     </node>
     <node concept="2tJIrI" id="4Ia639WvcvX" role="jymVt" />
+    <node concept="3clFb_" id="6fEYrkYX$z4" role="jymVt">
+      <property role="TrG5h" value="getRowCellNodeOwner" />
+      <node concept="3clFbS" id="6fEYrkYX$z7" role="3clF47" />
+      <node concept="3Tm1VV" id="6fEYrkYX$z8" role="1B3o_S" />
+      <node concept="3Tqbb2" id="6fEYrkYX$wd" role="3clF45" />
+      <node concept="37vLTG" id="6fEYrkYX$T9" role="3clF46">
+        <property role="TrG5h" value="rowNumber" />
+        <node concept="10Oyi0" id="6fEYrkYX$T8" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="3clFb_" id="1ECxnmDmUGQ" role="jymVt">
       <property role="TrG5h" value="insertRow" />
       <node concept="37vLTG" id="1ECxnmDmZGZ" role="3clF46">

@@ -3030,8 +3030,8 @@
           </node>
         </node>
       </node>
-      <node concept="3F0A7n" id="55YtzNavhYB" role="3EZMnx">
-        <ref role="1NtTu8" to="53m0:2L$_HjiNgta" resolve="oldSelectedIndex" />
+      <node concept="PMmxH" id="6fEYrkYPBFm" role="3EZMnx">
+        <ref role="PMmxG" to="czmc:1RiAxJSf6QT" resolve="IHasRowHandle_EC" />
       </node>
       <node concept="2iRfu4" id="55YtzNav1Ii" role="2iSdaV" />
     </node>

@@ -28,7 +28,7 @@
         <child id="8072781894854610736" name="rows" index="3o2WtG" />
       </concept>
       <concept id="9155943921465570537" name="de.vimotest.viewmodel.testing.structure.SelectedRowCheckValue" flags="ng" index="1i$ql">
-        <property id="3198847476153780042" name="selectedIndex" index="3YEp6u" />
+        <property id="3198847476153780042" name="oldSelectedIndex" index="3YEp6u" />
       </concept>
       <concept id="9155943921465570482" name="de.vimotest.viewmodel.testing.structure.ListViewCheck" flags="ng" index="1i$re">
         <child id="9155943921465570483" name="checks" index="1i$rf" />
@@ -258,6 +258,9 @@
         <property id="3922717397912196834" name="sourcePath" index="2mJlLi" />
         <property id="3016673643442476650" name="width" index="Lsnro" />
         <property id="3016673643442476939" name="height" index="LsnsT" />
+      </concept>
+      <concept id="2148949417128494489" name="de.vimotest.viewmodel.structure.IHasRowHandle" flags="ngI" index="3_U9Y2">
+        <property id="2148949417128694883" name="indexRowHandle" index="3_VSTS" />
       </concept>
       <concept id="2690363995917909071" name="de.vimotest.viewmodel.structure.WidgetListRowsFeature" flags="ng" index="3KuuI3" />
       <concept id="2690363995917909072" name="de.vimotest.viewmodel.structure.WidgetTreeRowsFeature" flags="ng" index="3KuuIs" />
@@ -960,6 +963,7 @@
             </node>
             <node concept="1i$ql" id="4w9z1ta3HWq" role="1i$rf">
               <property role="3YEp6u" value="3" />
+              <property role="3_VSTS" value="3" />
             </node>
           </node>
         </node>
@@ -1125,6 +1129,7 @@
             </node>
             <node concept="1i$ql" id="4w9z1ta3HWj" role="3UVeCz">
               <property role="3YEp6u" value="1" />
+              <property role="3_VSTS" value="1" />
             </node>
             <node concept="35STUn" id="4w9z1ta3HWk" role="3UVeCz">
               <property role="3XJem9" value="true" />
@@ -1227,6 +1232,7 @@
             </node>
             <node concept="1i$ql" id="4w9z1ta3HWn" role="3Vayj$">
               <property role="3YEp6u" value="1" />
+              <property role="3_VSTS" value="1" />
             </node>
             <node concept="35STUl" id="4w9z1ta3HWo" role="3Vayj$">
               <property role="3XJMQh" value="true" />

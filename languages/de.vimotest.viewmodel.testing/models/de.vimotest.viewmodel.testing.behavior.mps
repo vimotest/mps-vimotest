@@ -8529,7 +8529,7 @@
                     </node>
                     <node concept="13iPFW" id="7waZUcv2gYI" role="37wK5m" />
                     <node concept="Xl_RD" id="7waZUcv2gYJ" role="37wK5m">
-                      <property role="Xl_RC" value="de.vimotest.viewmodeltesting.editor.SelectedEntryCheckValue_selectedEntry_EC" />
+                      <property role="Xl_RC" value="de.vimotest.viewmodel.testing.editor.SelectedEntryCheckValue_selectedEntry_EC" />
                     </node>
                   </node>
                 </node>

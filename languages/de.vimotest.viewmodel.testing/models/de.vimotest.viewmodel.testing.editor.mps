@@ -3668,7 +3668,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1F_Q10zRnts">
-    <property role="3GE5qa" value="test.actions" />
+    <property role="3GE5qa" value="test.actions.base" />
     <ref role="1XX52x" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
     <node concept="PMmxH" id="4VeFpYh1HAi" role="2wV5jI">
       <ref role="PMmxG" node="4VeFpYh1HAb" resolve="ViewWidgetCommandAction_EC" />
@@ -3676,7 +3676,7 @@
   </node>
   <node concept="PKFIW" id="4VeFpYh1HAb">
     <property role="TrG5h" value="ViewWidgetCommandAction_EC" />
-    <property role="3GE5qa" value="test.actions" />
+    <property role="3GE5qa" value="test.actions.base" />
     <ref role="1XX52x" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
     <node concept="3EZMnI" id="4VeFpYh1HAc" role="2wV5jI">
       <node concept="PMmxH" id="4VeFpYh1HAd" role="3EZMnx">
@@ -3731,7 +3731,7 @@
   </node>
   <node concept="PKFIW" id="4VeFpYh1Mw5">
     <property role="TrG5h" value="ViewWidgetCommandAction_widgetReference_EC" />
-    <property role="3GE5qa" value="test.actions" />
+    <property role="3GE5qa" value="test.actions.base" />
     <ref role="1XX52x" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
     <node concept="1iCGBv" id="4VeFpYh1Mw6" role="2wV5jI">
       <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
@@ -4048,7 +4048,7 @@
     </node>
   </node>
   <node concept="22mcaB" id="7UthagY64L2">
-    <property role="3GE5qa" value="test.actions" />
+    <property role="3GE5qa" value="test.actions.base" />
     <ref role="aqKnT" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
     <node concept="22hDWj" id="7UthagY69$v" role="22hAXT" />
     <node concept="2F$Pav" id="7UthagY69$Q" role="3ft7WO">
@@ -4580,6 +4580,23 @@
         </node>
       </node>
       <node concept="l2Vlx" id="6fEYrkZutNX" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5_Cxj2pStAf">
+    <property role="3GE5qa" value="test.actions.base" />
+    <ref role="1XX52x" to="53m0:5_Cxj2pStA3" resolve="CellViewWidgetCommandAction" />
+    <node concept="3EZMnI" id="5_Cxj2pStAh" role="2wV5jI">
+      <node concept="3F0ifn" id="5_Cxj2pStAq" role="3EZMnx">
+        <property role="3F0ifm" value="at" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+      </node>
+      <node concept="PMmxH" id="5_Cxj2pStAl" role="3EZMnx">
+        <ref role="PMmxG" to="czmc:1RiAxJSf6QT" resolve="IHasRowHandle_EC" />
+      </node>
+      <node concept="3F1sOY" id="5_Cxj2pStAn" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:5_Cxj2pStAe" resolve="nestedAction" />
+      </node>
+      <node concept="2iRfu4" id="5_Cxj2pStAk" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -8985,7 +8985,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="4VeFpYgZx_Y">
-    <property role="3GE5qa" value="test.actions" />
+    <property role="3GE5qa" value="test.actions.base" />
     <ref role="13h7C2" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
     <node concept="13hLZK" id="4VeFpYgZx_Z" role="13h7CW">
       <node concept="3clFbS" id="4VeFpYgZxA0" role="2VODD2" />
@@ -10934,6 +10934,26 @@
     </node>
     <node concept="13hLZK" id="6fEYrkZ4N2T" role="13h7CW">
       <node concept="3clFbS" id="6fEYrkZ4N2U" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="5_Cxj2pYoWz">
+    <property role="3GE5qa" value="test.actions.base" />
+    <ref role="13h7C2" to="53m0:5_Cxj2pStA3" resolve="CellViewWidgetCommandAction" />
+    <node concept="13hLZK" id="5_Cxj2pYoW$" role="13h7CW">
+      <node concept="3clFbS" id="5_Cxj2pYoW_" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="5_Cxj2pYoWQ" role="13h7CS">
+      <property role="TrG5h" value="getRowHandleKindOwner" />
+      <ref role="13i0hy" to="nrs2:1RiAxJSeINg" resolve="getRowHandleKindOwner" />
+      <node concept="3Tm1VV" id="5_Cxj2pYoWR" role="1B3o_S" />
+      <node concept="3clFbS" id="5_Cxj2pYoWU" role="3clF47">
+        <node concept="3clFbF" id="5_Cxj2pYoXd" role="3cqZAp">
+          <node concept="10Nm6u" id="5_Cxj2pYoXc" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="5_Cxj2pYoWV" role="3clF45">
+        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+      </node>
     </node>
   </node>
 </model>

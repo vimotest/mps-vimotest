@@ -630,7 +630,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="1F_Q10zVWhQ">
-    <property role="3GE5qa" value="test.actions" />
+    <property role="3GE5qa" value="test.actions.base" />
     <ref role="1M2myG" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
     <node concept="1N5Pfh" id="1F_Q10zW1bx" role="1Mr941">
       <ref role="1N5Vy1" to="53m0:4VeFpYgZsED" resolve="widget" />

@@ -849,7 +849,7 @@
   </node>
   <node concept="1TIwiD" id="4VeFpYgZnKM">
     <property role="EcuMT" value="5678667081004710962" />
-    <property role="3GE5qa" value="test.actions" />
+    <property role="3GE5qa" value="test.actions.base" />
     <property role="TrG5h" value="ViewWidgetCommandAction" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -959,6 +959,26 @@
       <property role="20kJfa" value="assertsWithDescription" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6tib4XeIJNS" resolve="ThenDescriptionWithAssert" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5_Cxj2pStA3">
+    <property role="EcuMT" value="6442545710740134275" />
+    <property role="3GE5qa" value="test.actions.base" />
+    <property role="TrG5h" value="CellViewWidgetCommandAction" />
+    <property role="34LRSv" value="cell action" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5_Cxj2pStAd" role="PzmwI">
+      <ref role="PrY4T" node="6fZwY6ifv53" resolve="ITestCaseAction" />
+    </node>
+    <node concept="PrWs8" id="5_Cxj2pStAb" role="PzmwI">
+      <ref role="PrY4T" to="at53:1RiAxJSewmp" resolve="IHasRowHandle" />
+    </node>
+    <node concept="1TJgyj" id="5_Cxj2pStAe" role="1TKVEi">
+      <property role="IQ2ns" value="6442545710740134286" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="nestedAction" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
     </node>
   </node>
 </model>

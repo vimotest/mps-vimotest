@@ -964,8 +964,8 @@
   <node concept="1TIwiD" id="5_Cxj2pStA3">
     <property role="EcuMT" value="6442545710740134275" />
     <property role="3GE5qa" value="test.actions.base" />
-    <property role="TrG5h" value="CellViewWidgetCommandAction" />
-    <property role="34LRSv" value="cell action" />
+    <property role="TrG5h" value="RowBasedViewWidgetCommandAction" />
+    <property role="34LRSv" value="row action" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5_Cxj2pStAd" role="PzmwI">
       <ref role="PrY4T" node="6fZwY6ifv53" resolve="ITestCaseAction" />
@@ -973,12 +973,20 @@
     <node concept="PrWs8" id="5_Cxj2pStAb" role="PzmwI">
       <ref role="PrY4T" to="at53:1RiAxJSewmp" resolve="IHasRowHandle" />
     </node>
+    <node concept="PrWs8" id="2w4bAIFS7Vh" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
     <node concept="1TJgyj" id="5_Cxj2pStAe" role="1TKVEi">
       <property role="IQ2ns" value="6442545710740134286" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="nestedAction" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
+    </node>
+    <node concept="1TJgyj" id="2w4bAIFM1ZR" role="1TKVEi">
+      <property role="IQ2ns" value="2883480701402357751" />
+      <property role="20kJfa" value="tabularWidget" />
+      <ref role="20lvS9" to="at53:30uXY1Sh9ET" resolve="IRowBasedWidget" />
     </node>
   </node>
 </model>

@@ -379,7 +379,7 @@
               <node concept="2DD5aU" id="30uXY1Shp0B" role="2Oq$k0" />
               <node concept="2Zo12i" id="30uXY1Shp0C" role="2OqNvi">
                 <node concept="chp4Y" id="30uXY1Shp0D" role="2Zo12j">
-                  <ref role="cht4Q" to="at53:30uXY1Sh9ET" resolve="IStructuredWidget" />
+                  <ref role="cht4Q" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
                 </node>
               </node>
             </node>

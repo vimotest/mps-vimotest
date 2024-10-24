@@ -313,6 +313,7 @@
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
       </concept>
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
       </concept>
@@ -322,6 +323,7 @@
       </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -2854,6 +2856,24 @@
       </node>
       <node concept="10P_77" id="2S2pY391nzX" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="2w4bAIFMn1i" role="13h7CS">
+      <property role="TrG5h" value="getRowHandleKindOwner" />
+      <ref role="13i0hy" node="2w4bAIFM8vc" resolve="getRowHandleKindOwner" />
+      <node concept="3Tm1VV" id="2w4bAIFMn1j" role="1B3o_S" />
+      <node concept="3clFbS" id="2w4bAIFMn1m" role="3clF47">
+        <node concept="3clFbF" id="2w4bAIFMn4_" role="3cqZAp">
+          <node concept="2OqwBi" id="2w4bAIFMnj$" role="3clFbG">
+            <node concept="13iPFW" id="2w4bAIFMn4$" role="2Oq$k0" />
+            <node concept="3TrEf2" id="2w4bAIFMnxz" role="2OqNvi">
+              <ref role="3Tt5mk" to="at53:7WgsBLYvZSV" resolve="widgetListRowsFeature" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="2w4bAIFMn1n" role="3clF45">
+        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="K_fAvR3LD3">
     <property role="TrG5h" value="TreeViewWidget_Behavior" />
@@ -3058,6 +3078,24 @@
         </node>
       </node>
       <node concept="10P_77" id="K_fAvR3LDy" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="2w4bAIFMovb" role="13h7CS">
+      <property role="TrG5h" value="getRowHandleKindOwner" />
+      <ref role="13i0hy" node="2w4bAIFM8vc" resolve="getRowHandleKindOwner" />
+      <node concept="3Tm1VV" id="2w4bAIFMovc" role="1B3o_S" />
+      <node concept="3clFbS" id="2w4bAIFMovf" role="3clF47">
+        <node concept="3clFbF" id="2w4bAIFMph2" role="3cqZAp">
+          <node concept="2OqwBi" id="2w4bAIFMpw1" role="3clFbG">
+            <node concept="13iPFW" id="2w4bAIFMph1" role="2Oq$k0" />
+            <node concept="3TrEf2" id="2w4bAIFMpI0" role="2OqNvi">
+              <ref role="3Tt5mk" to="at53:K_fAvR3LCQ" resolve="widgetTreeRowsFeature" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="2w4bAIFMovg" role="3clF45">
+        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="2zlSkwD9osT">
@@ -3907,6 +3945,24 @@
         </node>
       </node>
       <node concept="10P_77" id="24MyZrrRA6O" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="2w4bAIFMkNz" role="13h7CS">
+      <property role="TrG5h" value="getRowHandleKindOwner" />
+      <ref role="13i0hy" node="2w4bAIFM8vc" resolve="getRowHandleKindOwner" />
+      <node concept="3Tm1VV" id="2w4bAIFMkN$" role="1B3o_S" />
+      <node concept="3clFbS" id="2w4bAIFMkNB" role="3clF47">
+        <node concept="3clFbF" id="2w4bAIFMl_q" role="3cqZAp">
+          <node concept="2OqwBi" id="2w4bAIFMlOp" role="3clFbG">
+            <node concept="13iPFW" id="2w4bAIFMl_p" role="2Oq$k0" />
+            <node concept="3TrEf2" id="2w4bAIFMm2o" role="2OqNvi">
+              <ref role="3Tt5mk" to="at53:24MyZrrRA68" resolve="widgetTableRowsFeature" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="2w4bAIFMkNC" role="3clF45">
+        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="24MyZrrSPdu">
@@ -5151,6 +5207,28 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="2w4bAIFLfrc" role="13h7CS">
+      <property role="TrG5h" value="isRowBased" />
+      <node concept="3Tm1VV" id="2w4bAIFLfrd" role="1B3o_S" />
+      <node concept="10P_77" id="2w4bAIFLiNt" role="3clF45" />
+      <node concept="3clFbS" id="2w4bAIFLfrf" role="3clF47">
+        <node concept="3clFbF" id="2w4bAIFLiOK" role="3cqZAp">
+          <node concept="2OqwBi" id="2w4bAIFLjr1" role="3clFbG">
+            <node concept="2OqwBi" id="2w4bAIFLj2L" role="2Oq$k0">
+              <node concept="13iPFW" id="2w4bAIFLiOJ" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="2w4bAIFLjbY" role="2OqNvi">
+                <node concept="1xMEDy" id="2w4bAIFLjc0" role="1xVPHs">
+                  <node concept="chp4Y" id="2w4bAIFLjeu" role="ri$Ld">
+                    <ref role="cht4Q" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="2w4bAIFLjzG" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="1F_Q10zSUKM" role="13h7CW">
       <node concept="3clFbS" id="1F_Q10zSUKN" role="2VODD2" />
     </node>
@@ -5633,6 +5711,23 @@
     </node>
     <node concept="13hLZK" id="1RiAxJSeDXn" role="13h7CW">
       <node concept="3clFbS" id="1RiAxJSeDXo" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="2w4bAIFM3CN">
+    <property role="3GE5qa" value="widgets.structures.util" />
+    <ref role="13h7C2" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
+    <node concept="13i0hz" id="2w4bAIFM8vc" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getRowHandleKindOwner" />
+      <node concept="3Tm1VV" id="2w4bAIFM8vd" role="1B3o_S" />
+      <node concept="3Tqbb2" id="2w4bAIFM8KH" role="3clF45">
+        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+      </node>
+      <node concept="3clFbS" id="2w4bAIFM8vf" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="2w4bAIFM3CO" role="13h7CW">
+      <node concept="3clFbS" id="2w4bAIFM3CP" role="2VODD2" />
     </node>
   </node>
 </model>

@@ -91,6 +91,10 @@
         <reference id="3426401106045121502" name="widget" index="30nzpS" />
         <child id="3426401106045146960" name="check" index="30nDbQ" />
       </concept>
+      <concept id="6442545710740134275" name="de.vimotest.viewmodel.testing.structure.RowBasedViewWidgetCommandAction" flags="ng" index="30ylMN">
+        <reference id="2883480701402357751" name="tabularWidget" index="23N36s" />
+        <child id="6442545710740134286" name="nestedAction" index="30ylMY" />
+      </concept>
       <concept id="4192570430936882686" name="de.vimotest.viewmodel.testing.structure.CheckedCheckValue" flags="ng" index="35STPD">
         <property id="4192570430936928123" name="expectedIsChecked" index="35S$ZG" />
       </concept>
@@ -2327,6 +2331,345 @@
                         <property role="3egigc" value="B" />
                       </node>
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="103ZX$" id="2w4bAIFO7n2">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="RowBasedCommand_View" />
+    <node concept="103ZXx" id="2w4bAIFO7n3" role="103ZXC">
+      <node concept="3Vw88J" id="2w4bAIFO7n4" role="1006ar">
+        <property role="TrG5h" value="LoadView" />
+      </node>
+    </node>
+    <node concept="103ZXB" id="2w4bAIFO7n5" role="103ZXF">
+      <node concept="1i$o6" id="2w4bAIFOccT" role="103ZUC">
+        <property role="TrG5h" value="MyListView" />
+        <node concept="2nep4R" id="2w4bAIFOccU" role="2MLTWm">
+          <node concept="C4FCE" id="2w4bAIFOcdQ" role="2nerJI">
+            <property role="TrG5h" value="Checkboxes" />
+            <node concept="C4FCf" id="2w4bAIFOcdV" role="C4FCF" />
+            <node concept="C4FCg" id="2w4bAIFOce0" role="C4FCG" />
+            <node concept="C4FCh" id="2w4bAIFOce5" role="C4FCH" />
+            <node concept="V3Zf6" id="2w4bAIFOcea" role="1ISttP" />
+            <node concept="3Vw88g" id="2w4bAIFOcef" role="T1B0p" />
+          </node>
+        </node>
+        <node concept="3KuuI3" id="2w4bAIFOcd0" role="1rSL7" />
+        <node concept="1i$ol" id="2w4bAIFOcd2" role="1uGH_" />
+        <node concept="C4FCg" id="2w4bAIFOcd4" role="1i$o7" />
+        <node concept="C4FCh" id="2w4bAIFOcd6" role="1i$o0" />
+      </node>
+      <node concept="3UVeDL" id="2w4bAIFOccq" role="103ZUC">
+        <property role="TrG5h" value="MyTableView" />
+        <node concept="3KuuIt" id="2w4bAIFOccO" role="3UVeDY" />
+        <node concept="1i$ol" id="2w4bAIFOccP" role="3UVeDZ" />
+        <node concept="C4FCg" id="2w4bAIFOccQ" role="3UVeDW" />
+        <node concept="C4FCh" id="2w4bAIFOccR" role="3UVeDX" />
+        <node concept="2nep4R" id="2w4bAIFOcdG" role="2azj8S">
+          <node concept="7cNA8" id="2w4bAIFOceD" role="2nerJI">
+            <property role="TrG5h" value="FreeTextComboBoxes" />
+            <node concept="7cNxA" id="2w4bAIFOceI" role="7cNAb">
+              <property role="M2z3M" value="Value" />
+            </node>
+            <node concept="7cNxT" id="2w4bAIFOceN" role="7cNAa" />
+            <node concept="V3Zf6" id="2w4bAIFOceS" role="7cNAd">
+              <property role="2VM7R0" value="true" />
+            </node>
+            <node concept="C4FCg" id="2w4bAIFOceX" role="7cNAc" />
+            <node concept="C4FCh" id="2w4bAIFOcf2" role="7cNAf" />
+            <node concept="3Vw88H" id="2w4bAIFOcf7" role="2WQ0re" />
+          </node>
+        </node>
+        <node concept="2nep4R" id="2w4bAIFOcf9" role="2azj8S">
+          <node concept="7cNA8" id="2w4bAIFOcfa" role="2nerJI">
+            <property role="TrG5h" value="EntryComboBoxes" />
+            <node concept="7cNxA" id="2w4bAIFOcfb" role="7cNAb">
+              <property role="M2z3M" value="Value" />
+              <node concept="2gaR_a" id="2w4bAIFOcfh" role="M2z3O">
+                <property role="TrG5h" value="A" />
+              </node>
+              <node concept="2gaR_a" id="2w4bAIFOcfi" role="M2z3O">
+                <property role="TrG5h" value="B" />
+              </node>
+            </node>
+            <node concept="7cNxT" id="2w4bAIFOcfc" role="7cNAa">
+              <ref role="LYRLJ" node="2w4bAIFOcfh" resolve="A" />
+            </node>
+            <node concept="V3Zf6" id="2w4bAIFOcfd" role="7cNAd" />
+            <node concept="C4FCg" id="2w4bAIFOcfe" role="7cNAc" />
+            <node concept="C4FCh" id="2w4bAIFOcff" role="7cNAf" />
+            <node concept="3Vw88H" id="2w4bAIFOcfg" role="2WQ0re" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Vayhi" id="2w4bAIFOcd9" role="103ZUC">
+        <property role="TrG5h" value="MyTreeView" />
+        <node concept="2nep4R" id="2w4bAIFOcda" role="2nerJJ">
+          <node concept="UtuMG" id="2w4bAIFOcfj" role="2nerJI">
+            <property role="TrG5h" value="TextBoxes" />
+            <node concept="V3Zf6" id="2w4bAIFOcfo" role="UtuMJ" />
+            <node concept="C4FCg" id="2w4bAIFOcft" role="UtuMI" />
+            <node concept="C4FCh" id="2w4bAIFOcfy" role="UtuMD" />
+            <node concept="3Vw88I" id="2w4bAIFOcfV" role="2WQ0r8" />
+          </node>
+        </node>
+        <node concept="3KuuIs" id="2w4bAIFOcd$" role="3Vayhh" />
+        <node concept="1i$ol" id="2w4bAIFOcdA" role="3Vayhg" />
+        <node concept="C4FCg" id="2w4bAIFOcdC" role="3Vayhv" />
+        <node concept="C4FCh" id="2w4bAIFOcdE" role="3Vayhu" />
+        <node concept="2nep4R" id="2w4bAIFOcdL" role="2nerJJ">
+          <node concept="2X2XNh" id="2w4bAIFOcfB" role="2nerJI">
+            <property role="TrG5h" value="Buttons" />
+            <node concept="V3Zf6" id="2w4bAIFOcfG" role="2X2XNi">
+              <property role="3A$Jrx" value="OK" />
+            </node>
+            <node concept="C4FCh" id="2w4bAIFOcfL" role="2X2XNj" />
+            <node concept="C4FCg" id="2w4bAIFOcfQ" role="2X2XNc" />
+            <node concept="3Vw88h" id="2w4bAIFOcfW" role="2X2XNd" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="30n1Qd" id="2w4bAIFS2WM">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="RowBasedCommand_ViewTests" />
+    <ref role="30n1PB" node="2w4bAIFO7n2" resolve="RowBasedCommand_View" />
+    <node concept="3LKzX3" id="2w4bAIFS2WN" role="30n1Qb">
+      <property role="3LKBmK" value="ListView RowBased Commands" />
+      <node concept="1s$VFG" id="2w4bAIFS2WO" role="1s$QAY">
+        <node concept="DUd5q" id="2w4bAIFS7K9" role="1s$QAM">
+          <node concept="30ylMN" id="2w4bAIFTIqZ" role="DUiS9">
+            <property role="3_VSTS" value="0" />
+            <ref role="23N36s" node="2w4bAIFOccT" resolve="MyListView" />
+            <node concept="Tef3P" id="2w4bAIFTIr1" role="30ylMY">
+              <property role="Te1Rl" value="true" />
+              <ref role="3ucQsQ" node="2w4bAIFOcdQ" resolve="Checkboxes" />
+            </node>
+          </node>
+        </node>
+        <node concept="DUd5q" id="2w4bAIG1wGk" role="1s$QAM">
+          <node concept="30ylMN" id="2w4bAIG1wGl" role="DUiS9">
+            <property role="3_VSTS" value="1" />
+            <ref role="23N36s" node="2w4bAIFOccT" resolve="MyListView" />
+            <node concept="Tef3P" id="2w4bAIG1wGm" role="30ylMY">
+              <ref role="3ucQsQ" node="2w4bAIFOcdQ" resolve="Checkboxes" />
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="2w4bAIFYfzV" role="1s$QAX">
+          <node concept="30nzp_" id="2w4bAIFYfzX" role="DUiSb">
+            <ref role="30nzpS" node="2w4bAIFOccT" resolve="MyListView" />
+            <node concept="1i$re" id="2w4bAIFYfzY" role="30nDbQ">
+              <node concept="1i$qk" id="2w4bAIFYfzZ" role="1i$rf">
+                <node concept="CNEhi" id="2w4bAIFYf$0" role="3o2WtG">
+                  <node concept="1NuoHz" id="2w4bAIFYf$1" role="CNE8S">
+                    <ref role="3elmOO" node="2w4bAIFOcdQ" resolve="Checkboxes" />
+                    <node concept="C4Fn6" id="2w4bAIFYf$3" role="1NuoHy">
+                      <node concept="35STPD" id="2w4bAIFYf$4" role="C4Fn7" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="CNEhi" id="2w4bAIFYf$5" role="3o2WtG">
+                  <node concept="1NuoHz" id="2w4bAIFYf$6" role="CNE8S">
+                    <ref role="3elmOO" node="2w4bAIFOcdQ" resolve="Checkboxes" />
+                    <node concept="C4Fn6" id="2w4bAIFYf$8" role="1NuoHy">
+                      <node concept="35STPD" id="2w4bAIFYf$9" role="C4Fn7">
+                        <property role="35S$ZG" value="true" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="2w4bAIG1wFy" role="30n1Qb">
+      <property role="3LKBmK" value="TableView RowBased Commands" />
+      <node concept="1s$VFG" id="2w4bAIG1wFz" role="1s$QAY">
+        <node concept="DUd5q" id="2w4bAIG1wF$" role="1s$QAM">
+          <node concept="30ylMN" id="2w4bAIG1wGe" role="DUiS9">
+            <property role="3_VSTS" value="0" />
+            <ref role="23N36s" node="2w4bAIFOccq" resolve="MyTableView" />
+            <node concept="3eaLtv" id="2w4bAIG1wGg" role="30ylMY">
+              <property role="2qt_KD" value="MyText1" />
+              <ref role="3ucQsQ" node="2w4bAIFOceD" resolve="FreeTextComboBoxes" />
+            </node>
+          </node>
+        </node>
+        <node concept="DUd5q" id="2w4bAIG1wGh" role="1s$QAM">
+          <node concept="30ylMN" id="2w4bAIG1wGi" role="DUiS9">
+            <property role="3_VSTS" value="1" />
+            <ref role="23N36s" node="2w4bAIFOccq" resolve="MyTableView" />
+            <node concept="3eaLtv" id="2w4bAIG1wGj" role="30ylMY">
+              <property role="2qt_KD" value="MyText2" />
+              <ref role="3ucQsQ" node="2w4bAIFOceD" resolve="FreeTextComboBoxes" />
+            </node>
+          </node>
+        </node>
+        <node concept="DUd5q" id="2w4bAIG1wGp" role="1s$QAM">
+          <node concept="30ylMN" id="2w4bAIG1wGr" role="DUiS9">
+            <property role="3_VSTS" value="0" />
+            <ref role="23N36s" node="2w4bAIFOccq" resolve="MyTableView" />
+            <node concept="3eaLtv" id="2w4bAIG1wGt" role="30ylMY">
+              <property role="2qt_KD" value="B" />
+              <ref role="3ucQsQ" node="2w4bAIFOcfa" resolve="EntryComboBoxes" />
+            </node>
+          </node>
+        </node>
+        <node concept="DUd5q" id="2w4bAIG1wG$" role="1s$QAM">
+          <node concept="30ylMN" id="2w4bAIG1wG_" role="DUiS9">
+            <property role="3_VSTS" value="1" />
+            <ref role="23N36s" node="2w4bAIFOccq" resolve="MyTableView" />
+            <node concept="3eaLtv" id="2w4bAIG1wGA" role="30ylMY">
+              <property role="2qt_KD" value="B" />
+              <ref role="3ucQsQ" node="2w4bAIFOcfa" resolve="EntryComboBoxes" />
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="2w4bAIG1wFB" role="1s$QAX">
+          <node concept="30nzp_" id="2w4bAIG1wFO" role="DUiSb">
+            <ref role="30nzpS" node="2w4bAIFOccq" resolve="MyTableView" />
+            <node concept="3UVeCy" id="2w4bAIG1wFP" role="30nDbQ">
+              <node concept="2ayrQO" id="2w4bAIG1wFQ" role="3UVeCz">
+                <node concept="3UOqEq" id="2w4bAIG1wFR" role="2ay43_">
+                  <node concept="1NuoHz" id="2w4bAIG1wFV" role="2aBVWM">
+                    <ref role="3elmOO" node="2w4bAIFOceD" resolve="FreeTextComboBoxes" />
+                    <node concept="7cNBp" id="2w4bAIG1wFS" role="1NuoHy">
+                      <node concept="7cN$v" id="2w4bAIG1wFT" role="7cNBo" />
+                      <node concept="7cN$h" id="2w4bAIG1wFU" role="7cNBo" />
+                      <node concept="V3Zdv" id="2w4bAIG1wGn" role="7cNBo">
+                        <property role="3egigc" value="MyText1" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1NuoHz" id="2w4bAIG1wG0" role="2aBVWM">
+                    <ref role="3elmOO" node="2w4bAIFOcfa" resolve="EntryComboBoxes" />
+                    <node concept="7cNBp" id="2w4bAIG1wFX" role="1NuoHy">
+                      <node concept="7cN$v" id="2w4bAIG1wFY" role="7cNBo">
+                        <node concept="2gaR_a" id="2w4bAIG1wGu" role="LTUL5">
+                          <property role="TrG5h" value="A" />
+                        </node>
+                        <node concept="2gaR_a" id="2w4bAIG1wGv" role="LTUL5">
+                          <property role="TrG5h" value="B" />
+                        </node>
+                        <node concept="2gaR_a" id="2w4bAIG1wGw" role="LTUL5">
+                          <property role="TrG5h" value="C" />
+                        </node>
+                      </node>
+                      <node concept="7cN$h" id="2w4bAIG1wFZ" role="7cNBo" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3UOqEq" id="2w4bAIG1wG2" role="2ay43_">
+                  <node concept="1NuoHz" id="2w4bAIG1wG6" role="2aBVWM">
+                    <ref role="3elmOO" node="2w4bAIFOceD" resolve="FreeTextComboBoxes" />
+                    <node concept="7cNBp" id="2w4bAIG1wG3" role="1NuoHy">
+                      <node concept="7cN$v" id="2w4bAIG1wG4" role="7cNBo" />
+                      <node concept="7cN$h" id="2w4bAIG1wG5" role="7cNBo" />
+                      <node concept="V3Zdv" id="2w4bAIG1wGo" role="7cNBo">
+                        <property role="3egigc" value="MyText2" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1NuoHz" id="2w4bAIG1wGb" role="2aBVWM">
+                    <ref role="3elmOO" node="2w4bAIFOcfa" resolve="EntryComboBoxes" />
+                    <node concept="7cNBp" id="2w4bAIG1wG8" role="1NuoHy">
+                      <node concept="7cN$v" id="2w4bAIG1wG9" role="7cNBo">
+                        <node concept="2gaR_a" id="2w4bAIG1wGx" role="LTUL5">
+                          <property role="TrG5h" value="D" />
+                        </node>
+                        <node concept="2gaR_a" id="2w4bAIG1wGy" role="LTUL5">
+                          <property role="TrG5h" value="E" />
+                        </node>
+                        <node concept="2gaR_a" id="2w4bAIG1wGz" role="LTUL5">
+                          <property role="TrG5h" value="F" />
+                        </node>
+                      </node>
+                      <node concept="7cN$h" id="2w4bAIG1wGa" role="7cNBo" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="2w4bAIG1wGB" role="30n1Qb">
+      <property role="3LKBmK" value="TreeView RowBased Commands" />
+      <node concept="1s$VFG" id="2w4bAIG1wGC" role="1s$QAY">
+        <node concept="DUd5q" id="2w4bAIG1wHB" role="1s$QAM">
+          <node concept="30ylMN" id="2w4bAIG1wHD" role="DUiS9">
+            <property role="3_VSTS" value="0" />
+            <ref role="23N36s" node="2w4bAIFOcd9" resolve="MyTreeView" />
+            <node concept="3eaLt2" id="2w4bAIG1wHF" role="30ylMY">
+              <property role="3fQinD" value="A" />
+              <ref role="3ucQsQ" node="2w4bAIFOcfj" resolve="TextBoxes" />
+            </node>
+          </node>
+        </node>
+        <node concept="DUd5q" id="2w4bAIG1wHG" role="1s$QAM">
+          <node concept="30ylMN" id="2w4bAIG1wHH" role="DUiS9">
+            <property role="3_VSTS" value="1" />
+            <ref role="23N36s" node="2w4bAIFOcd9" resolve="MyTreeView" />
+            <node concept="3eaLt2" id="2w4bAIG1wHI" role="30ylMY">
+              <property role="3fQinD" value="B" />
+              <ref role="3ucQsQ" node="2w4bAIFOcfj" resolve="TextBoxes" />
+            </node>
+          </node>
+        </node>
+        <node concept="DUd5q" id="2w4bAIG1wHJ" role="1s$QAM">
+          <node concept="30ylMN" id="2w4bAIG1wHL" role="DUiS9">
+            <property role="3_VSTS" value="0" />
+            <ref role="23N36s" node="2w4bAIFOcd9" resolve="MyTreeView" />
+            <node concept="3eaLt3" id="2w4bAIG1wHN" role="30ylMY">
+              <ref role="3ucQsQ" node="2w4bAIFOcfB" resolve="Buttons" />
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="2w4bAIG1wGP" role="1s$QAX">
+          <node concept="30nzp_" id="2w4bAIG1wHk" role="DUiSb">
+            <ref role="30nzpS" node="2w4bAIFOcd9" resolve="MyTreeView" />
+            <node concept="3Vayj_" id="2w4bAIG1wHl" role="30nDbQ">
+              <node concept="3VayiJ" id="2w4bAIG1wHm" role="3Vayj$">
+                <node concept="1NvgdS" id="2w4bAIG1wHn" role="1NusDP">
+                  <property role="3xvHIf" value="0" />
+                  <node concept="1NuoHz" id="2w4bAIG1wHq" role="1NvgdV">
+                    <ref role="3elmOO" node="2w4bAIFOcfj" resolve="TextBoxes" />
+                    <node concept="UtuKh" id="2w4bAIG1wHo" role="1NuoHy">
+                      <node concept="V3Zdv" id="2w4bAIG1wHp" role="UtuKg">
+                        <property role="3egigc" value="A" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1NuoHz" id="2w4bAIG1wHt" role="1NvgdV">
+                    <ref role="3elmOO" node="2w4bAIFOcfB" resolve="Buttons" />
+                    <node concept="2X2XOa" id="2w4bAIG1wHs" role="1NuoHy" />
+                  </node>
+                </node>
+                <node concept="1NvgdS" id="2w4bAIG1wHv" role="1NusDP">
+                  <property role="3xvHIf" value="0" />
+                  <node concept="1NuoHz" id="2w4bAIG1wHy" role="1NvgdV">
+                    <ref role="3elmOO" node="2w4bAIFOcfj" resolve="TextBoxes" />
+                    <node concept="UtuKh" id="2w4bAIG1wHw" role="1NuoHy">
+                      <node concept="V3Zdv" id="2w4bAIG1wHx" role="UtuKg">
+                        <property role="3egigc" value="B" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1NuoHz" id="2w4bAIG1wH_" role="1NvgdV">
+                    <ref role="3elmOO" node="2w4bAIFOcfB" resolve="Buttons" />
+                    <node concept="2X2XOa" id="2w4bAIG1wH$" role="1NuoHy" />
                   </node>
                 </node>
               </node>

@@ -524,7 +524,7 @@
       <ref role="20lvS9" node="6kjlgUu$Xsy" resolve="SelectRowCommand" />
     </node>
     <node concept="PrWs8" id="30uXY1Shcgg" role="PzmwI">
-      <ref role="PrY4T" node="30uXY1Sh9ET" resolve="IStructuredWidget" />
+      <ref role="PrY4T" node="30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
     </node>
   </node>
   <node concept="1TIwiD" id="K_fAvR3LCP">
@@ -575,7 +575,7 @@
       <ref role="20lvS9" node="6kjlgUu$Xsy" resolve="SelectRowCommand" />
     </node>
     <node concept="PrWs8" id="30uXY1Shcgi" role="PzmwI">
-      <ref role="PrY4T" node="30uXY1Sh9ET" resolve="IStructuredWidget" />
+      <ref role="PrY4T" node="30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
     </node>
   </node>
   <node concept="PlHQZ" id="2zlSkwD9nfw">
@@ -665,7 +665,7 @@
       <ref role="20lvS9" node="6kjlgUu$Xsy" resolve="SelectRowCommand" />
     </node>
     <node concept="PrWs8" id="30uXY1Shcgh" role="PzmwI">
-      <ref role="PrY4T" node="30uXY1Sh9ET" resolve="IStructuredWidget" />
+      <ref role="PrY4T" node="30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
     </node>
   </node>
   <node concept="PlHQZ" id="24MyZrrSND$">
@@ -676,7 +676,10 @@
   <node concept="PlHQZ" id="30uXY1Sh9ET">
     <property role="EcuMT" value="3467481306584357561" />
     <property role="3GE5qa" value="widgets.structures.util" />
-    <property role="TrG5h" value="IStructuredWidget" />
+    <property role="TrG5h" value="IRowBasedViewWidget" />
+    <node concept="PrWs8" id="2w4bAIFM3CM" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2lm5WNlbZLf">
     <property role="EcuMT" value="2690363995917909071" />

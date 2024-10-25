@@ -30,7 +30,6 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -146,12 +145,6 @@
       <property role="20kJfa" value="whenThenDescriptions" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="6fEYrkZukdp" resolve="WhenThenDescriptions" />
-    </node>
-    <node concept="1TJgyi" id="6fZwY6ifvph" role="1TKVEl">
-      <property role="IQ2nx" value="7205622933660497489" />
-      <property role="TrG5h" value="old_scenario" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="5_TItGIKXWX" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="5_TItGIKXWW" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -550,12 +543,6 @@
     <node concept="PrWs8" id="bZSVZd7kyZ" role="PzmwI">
       <ref role="PrY4T" node="K_fAvR3LDG" resolve="ITreeViewCheckValue" />
     </node>
-    <node concept="1TJgyi" id="2L$_HjiNgta" role="1TKVEl">
-      <property role="IQ2nx" value="3198847476153780042" />
-      <property role="TrG5h" value="oldSelectedIndex" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-      <node concept="asaX9" id="1RiAxJSher7" role="lGtFl" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5MibNhOn8HA">
     <property role="EcuMT" value="6670445900426152806" />
@@ -907,12 +894,6 @@
     <property role="34LRSv" value="select row" />
     <property role="3GE5qa" value="test.actions" />
     <ref role="1TJDcQ" node="4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
-    <node concept="1TJgyi" id="1LLcOD9G5DQ" role="1TKVEl">
-      <property role="IQ2nx" value="2049475699587177078" />
-      <property role="TrG5h" value="oldSelectedIndex" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-      <node concept="asaX9" id="6fEYrkZkNBq" role="lGtFl" />
-    </node>
     <node concept="PrWs8" id="6fEYrkZkNBr" role="PzmwI">
       <ref role="PrY4T" to="at53:1RiAxJSewmp" resolve="IHasRowHandle" />
     </node>

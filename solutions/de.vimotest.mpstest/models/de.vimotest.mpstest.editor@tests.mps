@@ -97,7 +97,7 @@
       <concept id="7205622933660482722" name="de.vimotest.viewmodel.testing.structure.ViewModelTestScenario" flags="ng" index="3LKzX3">
         <child id="7199841511154487307" name="whenThenDescriptions" index="1s$QAY" />
       </concept>
-      <concept id="7205622933660496194" name="de.vimotest.viewmodel.testing.structure.ITestCaseAssertion" flags="ngI" index="3LKBaz" />
+      <concept id="7205622933660496194" name="de.vimotest.viewmodel.testing.structure.ITestScenarioAssertion" flags="ngI" index="3LKBaz" />
     </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
       <concept id="5213916851000129488" name="de.vimotest.viewmodel.structure.VisibilityFeature" flags="ng" index="C4FCg" />
@@ -123,7 +123,7 @@
     <node concept="1qefOq" id="7kmE6cdCugi" role="25YQCW">
       <node concept="30n1Qd" id="7kmE6cdCugh" role="1qenE9">
         <property role="TrG5h" value="Test" />
-        <ref role="30n1PB" node="7kmE6cdCpmj" resolve="MyViewModel" />
+        <ref role="30n1PB" node="7kmE6cdCpmj" resolve="MyViewModel_View" />
         <node concept="3LKzX3" id="7kmE6cdCugj" role="30n1Qb">
           <property role="TrG5h" value="Test" />
           <node concept="1s$VFG" id="6fEYrkZxlQU" role="1s$QAY">

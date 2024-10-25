@@ -844,7 +844,7 @@
                                             <property role="Xl_RC" value="rowbased " />
                                           </node>
                                           <node concept="37vLTw" id="2w4bAIFOvrL" role="37vLTJ">
-                                            <ref role="3cqZAo" node="2w4bAIFOhLL" resolve="prefix" />
+                                            <ref role="3cqZAo" node="2w4bAIFOhLL" resolve="aliasPrefix" />
                                           </node>
                                         </node>
                                       </node>
@@ -871,7 +871,7 @@
                                           </node>
                                           <node concept="3cpWs3" id="2w4bAIFOBDz" role="37wK5m">
                                             <node concept="37vLTw" id="2w4bAIFODhE" role="3uHU7B">
-                                              <ref role="3cqZAo" node="2w4bAIFOhLL" resolve="prefix" />
+                                              <ref role="3cqZAo" node="2w4bAIFOhLL" resolve="aliasPrefix" />
                                             </node>
                                             <node concept="2OqwBi" id="2ClbUKrryq" role="3uHU7w">
                                               <node concept="2OqwBi" id="2ClbUKrryr" role="2Oq$k0">
@@ -1063,7 +1063,7 @@
                                               </node>
                                               <node concept="2OqwBi" id="2w4bAIFP6Dt" role="37wK5m">
                                                 <node concept="37vLTw" id="2w4bAIFPnn1" role="2Oq$k0">
-                                                  <ref role="3cqZAo" node="2w4bAIFPnmV" resolve="ancestor" />
+                                                  <ref role="3cqZAo" node="2w4bAIFPnmV" resolve="rowBasedWidget" />
                                                 </node>
                                                 <node concept="3TrcHB" id="2w4bAIFP6Dz" role="2OqNvi">
                                                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -1150,7 +1150,7 @@
                                         <node concept="2OqwBi" id="2w4bAIFOPTy" role="3clFbG">
                                           <node concept="2OqwBi" id="2w4bAIFOPTz" role="2Oq$k0">
                                             <node concept="37vLTw" id="2w4bAIFOPT$" role="2Oq$k0">
-                                              <ref role="3cqZAo" node="2w4bAIFOPTm" resolve="tabularWidgetNameCell" />
+                                              <ref role="3cqZAo" node="2w4bAIFOPTm" resolve="separatorCell" />
                                             </node>
                                             <node concept="liA8E" id="2w4bAIFOPT_" role="2OqNvi">
                                               <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle()" resolve="getStyle" />

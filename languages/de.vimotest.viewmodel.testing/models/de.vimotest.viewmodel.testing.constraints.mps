@@ -728,14 +728,14 @@
     <property role="3GE5qa" value="test.actions.base" />
     <ref role="1M2myG" to="53m0:5_Cxj2pStA3" resolve="RowBasedViewWidgetCommandAction" />
     <node concept="1N5Pfh" id="2w4bAIFMgd8" role="1Mr941">
-      <ref role="1N5Vy1" to="53m0:2w4bAIFM1ZR" />
+      <ref role="1N5Vy1" to="53m0:2w4bAIFM1ZR" resolve="tabularWidget" />
       <node concept="3dgokm" id="2w4bAIFMgdX" role="1N6uqs">
         <node concept="3clFbS" id="2w4bAIFMgdZ" role="2VODD2">
           <node concept="3cpWs8" id="2w4bAIFMiWG" role="3cqZAp">
             <node concept="3cpWsn" id="2w4bAIFMiWH" role="3cpWs9">
               <property role="TrG5h" value="rowBasedWidgets" />
               <node concept="2I9FWS" id="2w4bAIFMiWc" role="1tU5fm">
-                <ref role="2I9WkF" to="at53:30uXY1Sh9ET" resolve="IRowBasedWidget" />
+                <ref role="2I9WkF" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
               </node>
               <node concept="2OqwBi" id="2w4bAIFMiWI" role="33vP2m">
                 <node concept="2OqwBi" id="2w4bAIFMiWJ" role="2Oq$k0">
@@ -756,7 +756,7 @@
                 <node concept="2Rf3mk" id="2w4bAIFMiWQ" role="2OqNvi">
                   <node concept="1xMEDy" id="2w4bAIFMiWR" role="1xVPHs">
                     <node concept="chp4Y" id="2w4bAIFMiWS" role="ri$Ld">
-                      <ref role="cht4Q" to="at53:30uXY1Sh9ET" resolve="IRowBasedWidget" />
+                      <ref role="cht4Q" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
                     </node>
                   </node>
                 </node>

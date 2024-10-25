@@ -919,7 +919,7 @@
     <property role="EcuMT" value="7199841511154467673" />
     <property role="3GE5qa" value="test.description" />
     <property role="TrG5h" value="WhenThenDescriptions" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6fEYrkZup07" role="1TKVEi">
       <property role="IQ2ns" value="7199841511154487303" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -960,7 +960,7 @@
     <node concept="1TJgyj" id="2w4bAIFM1ZR" role="1TKVEi">
       <property role="IQ2ns" value="2883480701402357751" />
       <property role="20kJfa" value="tabularWidget" />
-      <ref role="20lvS9" to="at53:30uXY1Sh9ET" resolve="IRowBasedWidget" />
+      <ref role="20lvS9" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
     </node>
   </node>
 </model>

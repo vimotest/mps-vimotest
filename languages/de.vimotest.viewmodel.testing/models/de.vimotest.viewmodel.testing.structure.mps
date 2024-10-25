@@ -85,9 +85,9 @@
   </node>
   <node concept="1TIwiD" id="2Yd1qrJOhwF">
     <property role="EcuMT" value="3426401106044983339" />
-    <property role="TrG5h" value="ViewModelTestSuite" />
+    <property role="TrG5h" value="ViewModelFeatureTestSuite" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="test suite" />
+    <property role="34LRSv" value="feature test suite" />
     <property role="3GE5qa" value="test" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2Yd1qrJOhwH" role="1TKVEi">
@@ -95,7 +95,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="tests" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6fZwY6ifrMy" resolve="ViewModelTestCase" />
+      <ref role="20lvS9" node="6fZwY6ifrMy" resolve="ViewModelTestScenario" />
     </node>
     <node concept="PrWs8" id="2Yd1qrJOhxd" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -130,8 +130,8 @@
   <node concept="1TIwiD" id="6fZwY6ifrMy">
     <property role="EcuMT" value="7205622933660482722" />
     <property role="3GE5qa" value="test" />
-    <property role="TrG5h" value="ViewModelTestCase" />
-    <property role="34LRSv" value="test" />
+    <property role="TrG5h" value="ViewModelTestScenario" />
+    <property role="34LRSv" value="test scenario" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6tib4XeIJNZ" role="1TKVEi">
       <property role="IQ2ns" value="7445061853131767039" />
@@ -139,22 +139,6 @@
       <property role="20kJfa" value="contextWithDescription" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="3JdhG1lSFby" resolve="GivenDescriptionWithContext" />
-    </node>
-    <node concept="1TJgyj" id="6tib4XeIJOm" role="1TKVEi">
-      <property role="IQ2ns" value="7445061853131767062" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="old_actionsWithDescription" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6tib4XeIJOl" resolve="WhenDescriptionWithActions" />
-      <node concept="asaX9" id="6fEYrkZup09" role="lGtFl" />
-    </node>
-    <node concept="1TJgyj" id="6tib4XeIJO9" role="1TKVEi">
-      <property role="IQ2ns" value="7445061853131767049" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="old_assertsWithDescription" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6tib4XeIJNS" resolve="ThenDescriptionWithAssert" />
-      <node concept="asaX9" id="6fEYrkZup0a" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="6fEYrkZup0b" role="1TKVEi">
       <property role="IQ2ns" value="7199841511154487307" />
@@ -165,8 +149,12 @@
     </node>
     <node concept="1TJgyi" id="6fZwY6ifvph" role="1TKVEl">
       <property role="IQ2nx" value="7205622933660497489" />
-      <property role="TrG5h" value="scenario" />
+      <property role="TrG5h" value="old_scenario" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="5_TItGIKXWX" role="lGtFl" />
+    </node>
+    <node concept="PrWs8" id="5_TItGIKXWW" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="PlHQZ" id="6fZwY6ifv52">

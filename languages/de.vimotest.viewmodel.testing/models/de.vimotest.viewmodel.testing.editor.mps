@@ -24,9 +24,9 @@
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" />
     <import index="hdif" ref="r:358d5e99-ca53-4b21-ba6f-a58c1c8e0993(de.vimotest.mpswidgets.behavior)" />
     <import index="fwln" ref="r:fb31fced-d3c6-408c-9dff-13efe5b49745(de.vimotest.viewmodel.testing.behavior)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="dgt9" ref="r:a46eceb8-d68d-4f8d-a755-6da4c2f592cc(de.vimotest.types.editor)" implicit="true" />
     <import index="czmc" ref="r:8266d71c-f637-42a4-b405-9d6e3c00f282(de.vimotest.viewmodel.editor)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
@@ -544,7 +544,7 @@
   </registry>
   <node concept="24kQdi" id="6fZwY6ifv58">
     <property role="3GE5qa" value="test" />
-    <ref role="1XX52x" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestCase" />
+    <ref role="1XX52x" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestScenario" />
     <node concept="3EZMnI" id="2Yd1qrJONdk" role="2wV5jI">
       <property role="S$Qs1" value="true" />
       <node concept="3F0ifn" id="6tib4XeWUAj" role="3EZMnx">
@@ -554,7 +554,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="6tib4XeWUAl" role="3EZMnx">
-        <ref role="1NtTu8" to="53m0:6fZwY6ifvph" resolve="scenario" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         <node concept="ljvvj" id="6tib4XeWUAm" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -616,7 +616,7 @@
           </node>
         </node>
         <node concept="3F0A7n" id="5S90xakqYOS" role="3EZMnx">
-          <ref role="1NtTu8" to="53m0:6fZwY6ifvph" resolve="scenario" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           <node concept="VechU" id="5S90xakqYSo" role="3F10Kt">
             <property role="Vb096" value="fLJRk5_/gray" />
           </node>
@@ -788,7 +788,7 @@
   </node>
   <node concept="24kQdi" id="6fZwY6ifWIQ">
     <property role="3GE5qa" value="test" />
-    <ref role="1XX52x" to="53m0:2Yd1qrJOhwF" resolve="ViewModelTestSuite" />
+    <ref role="1XX52x" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
     <node concept="3EZMnI" id="2Yd1qrJOhwS" role="2wV5jI">
       <node concept="PMmxH" id="6fZwY6ifZcA" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -805,6 +805,7 @@
       </node>
       <node concept="3F0ifn" id="2Yd1qrJOhyN" role="3EZMnx">
         <property role="3F0ifm" value="viewmodel" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
       </node>
       <node concept="1iCGBv" id="2Yd1qrJOhzi" role="3EZMnx">
         <ref role="1NtTu8" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
@@ -3939,7 +3940,7 @@
                         <node concept="2Xjw5R" id="7UthagY4INm" role="2OqNvi">
                           <node concept="1xMEDy" id="7UthagY4INn" role="1xVPHs">
                             <node concept="chp4Y" id="7UthagY4INo" role="ri$Ld">
-                              <ref role="cht4Q" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestCase" />
+                              <ref role="cht4Q" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestScenario" />
                             </node>
                           </node>
                           <node concept="1xIGOp" id="7UthagY4INp" role="1xVPHs" />
@@ -3990,7 +3991,7 @@
                           <node concept="2Xjw5R" id="7UthagY4INJ" role="2OqNvi">
                             <node concept="1xMEDy" id="7UthagY4INK" role="1xVPHs">
                               <node concept="chp4Y" id="7UthagY4INL" role="ri$Ld">
-                                <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelTestSuite" />
+                                <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
                               </node>
                             </node>
                           </node>
@@ -4228,7 +4229,7 @@
                       <node concept="2Xjw5R" id="7UthagY69RU" role="2OqNvi">
                         <node concept="1xMEDy" id="7UthagY69RV" role="1xVPHs">
                           <node concept="chp4Y" id="7UthagY69RW" role="ri$Ld">
-                            <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelTestSuite" />
+                            <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
                           </node>
                         </node>
                       </node>
@@ -4342,7 +4343,7 @@
                             <node concept="2Xjw5R" id="5_Cxj2q8chM" role="2OqNvi">
                               <node concept="1xMEDy" id="5_Cxj2q8chN" role="1xVPHs">
                                 <node concept="chp4Y" id="5_Cxj2q8chO" role="ri$Ld">
-                                  <ref role="cht4Q" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestCase" />
+                                  <ref role="cht4Q" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestScenario" />
                                 </node>
                               </node>
                             </node>
@@ -4990,7 +4991,7 @@
                       <node concept="2Xjw5R" id="2w4bAIFLvp6" role="2OqNvi">
                         <node concept="1xMEDy" id="2w4bAIFLvp7" role="1xVPHs">
                           <node concept="chp4Y" id="2w4bAIFLvp8" role="ri$Ld">
-                            <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelTestSuite" />
+                            <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
                           </node>
                         </node>
                       </node>

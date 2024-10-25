@@ -444,7 +444,7 @@
   </registry>
   <node concept="13h7C7" id="6fZwY6ifrM_">
     <property role="3GE5qa" value="test" />
-    <ref role="13h7C2" to="53m0:2Yd1qrJOhwF" resolve="ViewModelTestSuite" />
+    <ref role="13h7C2" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
     <node concept="13hLZK" id="6fZwY6ifrMA" role="13h7CW">
       <node concept="3clFbS" id="6fZwY6ifrMB" role="2VODD2" />
     </node>
@@ -9474,7 +9474,7 @@
               <node concept="2Xjw5R" id="2w4bAIG0OIg" role="2OqNvi">
                 <node concept="1xMEDy" id="2w4bAIG0OIh" role="1xVPHs">
                   <node concept="chp4Y" id="2w4bAIG0OIi" role="ri$Ld">
-                    <ref role="cht4Q" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestCase" />
+                    <ref role="cht4Q" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestScenario" />
                   </node>
                 </node>
               </node>
@@ -9506,7 +9506,7 @@
               <node concept="2Xjw5R" id="2w4bAIG0OIx" role="2OqNvi">
                 <node concept="1xMEDy" id="2w4bAIG0OIy" role="1xVPHs">
                   <node concept="chp4Y" id="2w4bAIG0OIz" role="ri$Ld">
-                    <ref role="cht4Q" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestCase" />
+                    <ref role="cht4Q" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestScenario" />
                   </node>
                 </node>
               </node>
@@ -10381,7 +10381,7 @@
               <node concept="2Xjw5R" id="2w4bAIFZ2$Q" role="2OqNvi">
                 <node concept="1xMEDy" id="2w4bAIFZ2$S" role="1xVPHs">
                   <node concept="chp4Y" id="2w4bAIFZ2Ca" role="ri$Ld">
-                    <ref role="cht4Q" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestCase" />
+                    <ref role="cht4Q" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestScenario" />
                   </node>
                 </node>
               </node>
@@ -10419,7 +10419,7 @@
               <node concept="2Xjw5R" id="2w4bAIFZ4tg" role="2OqNvi">
                 <node concept="1xMEDy" id="2w4bAIFZ4th" role="1xVPHs">
                   <node concept="chp4Y" id="2w4bAIFZ4ti" role="ri$Ld">
-                    <ref role="cht4Q" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestCase" />
+                    <ref role="cht4Q" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestScenario" />
                   </node>
                 </node>
               </node>
@@ -10769,7 +10769,7 @@
       <node concept="37vLTG" id="2w4bAIFY_5n" role="3clF46">
         <property role="TrG5h" value="testCase" />
         <node concept="3Tqbb2" id="2w4bAIFY_5m" role="1tU5fm">
-          <ref role="ehGHo" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestCase" />
+          <ref role="ehGHo" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestScenario" />
         </node>
       </node>
       <node concept="37vLTG" id="2w4bAIFYByz" role="3clF46">
@@ -10862,7 +10862,7 @@
       <node concept="37vLTG" id="2w4bAIFYTZy" role="3clF46">
         <property role="TrG5h" value="testCase" />
         <node concept="3Tqbb2" id="2w4bAIFYTZz" role="1tU5fm">
-          <ref role="ehGHo" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestCase" />
+          <ref role="ehGHo" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestScenario" />
         </node>
       </node>
       <node concept="37vLTG" id="2w4bAIFYTZ$" role="3clF46">

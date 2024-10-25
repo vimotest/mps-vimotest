@@ -95,7 +95,6 @@
         <child id="7199841511154487304" name="assertsWithDescription" index="1s$QAX" />
       </concept>
       <concept id="7205622933660482722" name="de.vimotest.viewmodel.testing.structure.ViewModelTestCase" flags="ng" index="3LKzX3">
-        <property id="7205622933660497489" name="scenario" index="3LKBmK" />
         <child id="7199841511154487307" name="whenThenDescriptions" index="1s$QAY" />
       </concept>
       <concept id="7205622933660496194" name="de.vimotest.viewmodel.testing.structure.ITestCaseAssertion" flags="ngI" index="3LKBaz" />
@@ -126,7 +125,7 @@
         <property role="TrG5h" value="Test" />
         <ref role="30n1PB" node="7kmE6cdCpmj" resolve="MyViewModel" />
         <node concept="3LKzX3" id="7kmE6cdCugj" role="30n1Qb">
-          <property role="3LKBmK" value="Test" />
+          <property role="TrG5h" value="Test" />
           <node concept="1s$VFG" id="6fEYrkZxlQU" role="1s$QAY">
             <node concept="DUd2R" id="7kmE6cdCugm" role="1s$QAX">
               <node concept="3LKBaz" id="7kmE6cdCugt" role="DUiSb">

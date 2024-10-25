@@ -557,7 +557,7 @@
   </node>
   <node concept="1M2fIO" id="7KHRfJVCIul">
     <property role="3GE5qa" value="test" />
-    <ref role="1M2myG" to="53m0:2Yd1qrJOhwF" resolve="ViewModelTestSuite" />
+    <ref role="1M2myG" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
     <node concept="EnEH3" id="7KHRfJVCNhX" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
       <node concept="QB0g5" id="7KHRfJVCNiL" role="QCWH9">
@@ -744,7 +744,7 @@
                     <node concept="2Xjw5R" id="2w4bAIFMiWM" role="2OqNvi">
                       <node concept="1xMEDy" id="2w4bAIFMiWN" role="1xVPHs">
                         <node concept="chp4Y" id="2w4bAIFMiWO" role="ri$Ld">
-                          <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelTestSuite" />
+                          <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
                         </node>
                       </node>
                     </node>

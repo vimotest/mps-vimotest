@@ -128,7 +128,6 @@
         <property id="4309178210352018151" name="textBefore" index="1IbZgB" />
       </concept>
       <concept id="7205622933660482722" name="de.vimotest.viewmodel.testing.structure.ViewModelTestCase" flags="ng" index="3LKzX3">
-        <property id="7205622933660497489" name="scenario" index="3LKBmK" />
         <child id="7445061853131767039" name="contextWithDescription" index="DUd2K" />
         <child id="7199841511154487307" name="whenThenDescriptions" index="1s$QAY" />
       </concept>
@@ -334,7 +333,7 @@
     <property role="3GE5qa" value="widgetassertions" />
     <ref role="30n1PB" node="F907haLUeC" resolve="CheckBoxes_View" />
     <node concept="3LKzX3" id="3JdhG1lT89S" role="30n1Qb">
-      <property role="3LKBmK" value="My Scenario" />
+      <property role="TrG5h" value="My Scenario" />
       <node concept="1IbZgy" id="3JdhG1lU09E" role="DUd2K">
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="3JdhG1lU09I" role="DUiTU" />
@@ -851,7 +850,7 @@
     <property role="3GE5qa" value="widgetassertions" />
     <ref role="30n1PB" node="4w9z1ta2qa8" resolve="Labels_View" />
     <node concept="3LKzX3" id="4w9z1ta2RGH" role="30n1Qb">
-      <property role="3LKBmK" value="My Scenario" />
+      <property role="TrG5h" value="My Scenario" />
       <node concept="1IbZgy" id="4w9z1ta2RJp" role="DUd2K">
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="4w9z1ta2RJq" role="DUiTU" />
@@ -881,7 +880,7 @@
     <property role="3GE5qa" value="widgetassertions" />
     <ref role="30n1PB" node="4w9z1ta2$0O" resolve="ComboBoxes_View" />
     <node concept="3LKzX3" id="4w9z1ta2WCX" role="30n1Qb">
-      <property role="3LKBmK" value="My Scenario" />
+      <property role="TrG5h" value="My Scenario" />
       <node concept="1IbZgy" id="4w9z1ta2WFD" role="DUd2K">
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="4w9z1ta2WFE" role="DUiTU" />
@@ -941,7 +940,7 @@
     <property role="3GE5qa" value="widgetassertions" />
     <ref role="30n1PB" node="4w9z1ta2v5Q" resolve="Images_View" />
     <node concept="3LKzX3" id="4w9z1ta31_O" role="30n1Qb">
-      <property role="3LKBmK" value="My Scenario" />
+      <property role="TrG5h" value="My Scenario" />
       <node concept="1IbZgy" id="4w9z1ta31Cw" role="DUd2K">
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="4w9z1ta31Cx" role="DUiTU" />
@@ -979,7 +978,7 @@
     <property role="3GE5qa" value="widgetassertions" />
     <ref role="30n1PB" node="4w9z1ta2CTZ" resolve="ListViews_View" />
     <node concept="3LKzX3" id="4w9z1ta36yv" role="30n1Qb">
-      <property role="3LKBmK" value="My Scenario" />
+      <property role="TrG5h" value="My Scenario" />
       <node concept="1IbZgy" id="4w9z1ta36_b" role="DUd2K">
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="4w9z1ta36_c" role="DUiTU" />
@@ -1162,7 +1161,7 @@
     <property role="3GE5qa" value="widgetassertions" />
     <ref role="30n1PB" node="4w9z1ta2HPl" resolve="TableViews_View" />
     <node concept="3LKzX3" id="4w9z1ta3bv1" role="30n1Qb">
-      <property role="3LKBmK" value="My Scenario" />
+      <property role="TrG5h" value="My Scenario" />
       <node concept="1IbZgy" id="4w9z1ta3bxH" role="DUd2K">
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="4w9z1ta3bxI" role="DUiTU" />
@@ -1299,7 +1298,7 @@
     <property role="3GE5qa" value="widgetassertions" />
     <ref role="30n1PB" node="4w9z1ta2MKf" resolve="TreeViews_View" />
     <node concept="3LKzX3" id="4w9z1ta3grz" role="30n1Qb">
-      <property role="3LKBmK" value="My Scenario" />
+      <property role="TrG5h" value="My Scenario" />
       <node concept="1IbZgy" id="4w9z1ta3guf" role="DUd2K">
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="4w9z1ta3gug" role="DUiTU" />
@@ -1474,7 +1473,7 @@
     <property role="3GE5qa" value="widgetassertions" />
     <ref role="30n1PB" node="2exRXkpRk2R" resolve="TextBoxes_View" />
     <node concept="3LKzX3" id="2exRXkpRoQf" role="30n1Qb">
-      <property role="3LKBmK" value="My Scenario" />
+      <property role="TrG5h" value="My Scenario" />
       <node concept="1IbZgy" id="2exRXkpRoQm" role="DUd2K">
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="2exRXkpRoQn" role="DUiTU" />
@@ -1504,7 +1503,7 @@
     <property role="3GE5qa" value="commands" />
     <ref role="30n1PB" node="7ZadkZWP7lz" resolve="GenericCommands_View" />
     <node concept="3LKzX3" id="7KHRfJVnrgU" role="30n1Qb">
-      <property role="3LKBmK" value="Generic Commands Call" />
+      <property role="TrG5h" value="Generic Commands Call" />
       <node concept="1s$VFG" id="6fEYrkZxlQE" role="1s$QAY">
         <node concept="DUd5q" id="7KHRfJVpFyo" role="1s$QAM">
           <node concept="27s6xY" id="1F_Q10zSP$W" role="DUiS9">
@@ -1547,7 +1546,7 @@
     <property role="TrG5h" value="CheckCommand_ViewTests" />
     <ref role="30n1PB" node="1F_Q10zVMuh" resolve="CheckCommand_View" />
     <node concept="3LKzX3" id="1F_Q10zVWhz" role="30n1Qb">
-      <property role="3LKBmK" value="Check CheckBox" />
+      <property role="TrG5h" value="Check CheckBox" />
       <node concept="1s$VFG" id="6fEYrkZxlQF" role="1s$QAY">
         <node concept="DUd5q" id="4VeFpYh1Hg7" role="1s$QAM">
           <node concept="Tef3P" id="4VeFpYh1Hg9" role="DUiS9">
@@ -1617,7 +1616,7 @@
     <property role="TrG5h" value="Buttons_ViewTests" />
     <ref role="30n1PB" node="5oh1xNFyoLI" resolve="Buttons_View" />
     <node concept="3LKzX3" id="5oh1xNFzrMV" role="30n1Qb">
-      <property role="3LKBmK" value="My Scenario" />
+      <property role="TrG5h" value="My Scenario" />
       <node concept="1IbZgy" id="5oh1xNFzrN2" role="DUd2K">
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="5oh1xNFzrN3" role="DUiTU" />
@@ -1647,7 +1646,7 @@
     <property role="TrG5h" value="FillTextCommand_ViewTests" />
     <ref role="30n1PB" node="5oh1xNEXyHS" resolve="FillTextCommand_View" />
     <node concept="3LKzX3" id="7NpiMQMLC3V" role="30n1Qb">
-      <property role="3LKBmK" value="Fill Text TextBox" />
+      <property role="TrG5h" value="Fill Text TextBox" />
       <node concept="1s$VFG" id="6fEYrkZxlQH" role="1s$QAY">
         <node concept="DUd5q" id="7NpiMQMLC45" role="1s$QAM">
           <node concept="3eaLt2" id="7NpiMQMZW_V" role="DUiS9">
@@ -1658,7 +1657,7 @@
       </node>
     </node>
     <node concept="3LKzX3" id="7UthagY0kwb" role="30n1Qb">
-      <property role="3LKBmK" value="Fill Text ComboBox" />
+      <property role="TrG5h" value="Fill Text ComboBox" />
       <node concept="1s$VFG" id="6fEYrkZxlQI" role="1s$QAY">
         <node concept="DUd5q" id="7UthagY0kwg" role="1s$QAM">
           <node concept="3eaLt2" id="7UthagY24dt" role="DUiS9">
@@ -1690,7 +1689,7 @@
     <property role="TrG5h" value="ClickCommand_ViewTests" />
     <ref role="30n1PB" node="7NpiMQMZW_X" resolve="ClickCommand_View" />
     <node concept="3LKzX3" id="7NpiMQN01pZ" role="30n1Qb">
-      <property role="3LKBmK" value="Click Button" />
+      <property role="TrG5h" value="Click Button" />
       <node concept="1s$VFG" id="6fEYrkZxlQJ" role="1s$QAY">
         <node concept="DUd5q" id="7NpiMQN01q6" role="1s$QAM">
           <node concept="3eaLt3" id="7NpiMQN01q8" role="DUiS9">
@@ -1723,7 +1722,7 @@
     <property role="TrG5h" value="LoadCommand_ViewTests" />
     <ref role="30n1PB" node="5imH8sU2ENx" resolve="LoadCommand_View" />
     <node concept="3LKzX3" id="5imH8sU7feI" role="30n1Qb">
-      <property role="3LKBmK" value="Load Commands Call" />
+      <property role="TrG5h" value="Load Commands Call" />
       <node concept="1s$VFG" id="6fEYrkZxlQK" role="1s$QAY">
         <node concept="DUd5q" id="5imH8sU7flG" role="1s$QAM">
           <node concept="27s6xY" id="5imH8sU7flI" role="DUiS9">
@@ -1733,7 +1732,7 @@
       </node>
     </node>
     <node concept="3LKzX3" id="5imH8sU7TZh" role="30n1Qb">
-      <property role="3LKBmK" value="Load with Parameter Commands Call" />
+      <property role="TrG5h" value="Load with Parameter Commands Call" />
       <node concept="1s$VFG" id="6fEYrkZxlQL" role="1s$QAY">
         <node concept="DUd5q" id="5imH8sU7TZk" role="1s$QAM">
           <node concept="27s6xY" id="5imH8sU7TZl" role="DUiS9">
@@ -1778,7 +1777,7 @@
     <property role="TrG5h" value="SelectEntryCommand_ViewTests" />
     <ref role="30n1PB" node="5imH8sU7TYp" resolve="SelectEntryCommand_View" />
     <node concept="3LKzX3" id="5imH8sU7U2R" role="30n1Qb">
-      <property role="3LKBmK" value="Select Entry Combobox Call" />
+      <property role="TrG5h" value="Select Entry Combobox Call" />
       <node concept="1s$VFG" id="6fEYrkZxlQM" role="1s$QAY">
         <node concept="DUd5q" id="5imH8sU7U3U" role="1s$QAM">
           <node concept="3eaLtv" id="5imH8sU7U3W" role="DUiS9">
@@ -1865,7 +1864,7 @@
     <property role="3GE5qa" value="examples.login" />
     <ref role="30n1PB" node="17xw4ZmRb8p" resolve="LoginView" />
     <node concept="3LKzX3" id="17xw4ZmUI2t" role="30n1Qb">
-      <property role="3LKBmK" value="Load View" />
+      <property role="TrG5h" value="Load View" />
       <node concept="1s$VFG" id="6fEYrkZxlQN" role="1s$QAY">
         <node concept="DUd5q" id="17xw4ZmUXTS" role="1s$QAM">
           <node concept="27s6xY" id="17xw4ZmUXTU" role="DUiS9">
@@ -2087,7 +2086,7 @@
     <property role="TrG5h" value="SelectRowCommand_ViewTests" />
     <ref role="30n1PB" node="1LLcOD9FTdW" resolve="SelectRowCommand_View" />
     <node concept="3LKzX3" id="1LLcOD9FY2v" role="30n1Qb">
-      <property role="3LKBmK" value="Select Row ListView Call" />
+      <property role="TrG5h" value="Select Row ListView Call" />
       <node concept="1s$VFG" id="6fEYrkZxlQO" role="1s$QAY">
         <node concept="DUd5q" id="1LLcOD9FY2w" role="1s$QAM">
           <node concept="3eaLts" id="1LLcOD9FY2y" role="DUiS9">
@@ -2128,7 +2127,7 @@
       </node>
     </node>
     <node concept="3LKzX3" id="6fEYrkZpD7Z" role="30n1Qb">
-      <property role="3LKBmK" value="Select Row ListView Call (string row handle)" />
+      <property role="TrG5h" value="Select Row ListView Call (string row handle)" />
       <node concept="1s$VFG" id="6fEYrkZxlQP" role="1s$QAY">
         <node concept="DUd5q" id="6fEYrkZpD80" role="1s$QAM">
           <node concept="3eaLts" id="6fEYrkZpD8T" role="DUiS9">
@@ -2170,7 +2169,7 @@
       </node>
     </node>
     <node concept="3LKzX3" id="115Lfa94894" role="30n1Qb">
-      <property role="3LKBmK" value="Select Row TableView Call" />
+      <property role="TrG5h" value="Select Row TableView Call" />
       <node concept="1s$VFG" id="6fEYrkZxlQQ" role="1s$QAY">
         <node concept="DUd5q" id="115Lfa94895" role="1s$QAM">
           <node concept="3eaLts" id="115Lfa94896" role="DUiS9">
@@ -2211,7 +2210,7 @@
       </node>
     </node>
     <node concept="3LKzX3" id="6fEYrkZpD8e" role="30n1Qb">
-      <property role="3LKBmK" value="Select Row TableView Call (string row handle)" />
+      <property role="TrG5h" value="Select Row TableView Call (string row handle)" />
       <node concept="1s$VFG" id="6fEYrkZxlQR" role="1s$QAY">
         <node concept="DUd5q" id="6fEYrkZpD8f" role="1s$QAM">
           <node concept="3eaLts" id="6fEYrkZpD9j" role="DUiS9">
@@ -2253,7 +2252,7 @@
       </node>
     </node>
     <node concept="3LKzX3" id="115Lfa96$09" role="30n1Qb">
-      <property role="3LKBmK" value="Select Row TreeView Call" />
+      <property role="TrG5h" value="Select Row TreeView Call" />
       <node concept="1s$VFG" id="6fEYrkZxlQS" role="1s$QAY">
         <node concept="DUd5q" id="115Lfa96$0a" role="1s$QAM">
           <node concept="3eaLts" id="115Lfa96$0b" role="DUiS9">
@@ -2296,7 +2295,7 @@
       </node>
     </node>
     <node concept="3LKzX3" id="6fEYrkZpD8t" role="30n1Qb">
-      <property role="3LKBmK" value="Select Row TreeView Call (string row handle)" />
+      <property role="TrG5h" value="Select Row TreeView Call (string row handle)" />
       <node concept="1s$VFG" id="6fEYrkZxlQT" role="1s$QAY">
         <node concept="DUd5q" id="6fEYrkZpD8u" role="1s$QAM">
           <node concept="3eaLts" id="6fEYrkZpD9x" role="DUiS9">
@@ -2443,7 +2442,7 @@
     <property role="TrG5h" value="RowBasedCommand_ViewTests" />
     <ref role="30n1PB" node="2w4bAIFO7n2" resolve="RowBasedCommand_View" />
     <node concept="3LKzX3" id="2w4bAIFS2WN" role="30n1Qb">
-      <property role="3LKBmK" value="ListView RowBased Commands" />
+      <property role="TrG5h" value="ListView RowBased Commands" />
       <node concept="1s$VFG" id="2w4bAIFS2WO" role="1s$QAY">
         <node concept="DUd5q" id="2w4bAIFS7K9" role="1s$QAM">
           <node concept="30ylMN" id="2w4bAIFTIqZ" role="DUiS9">
@@ -2494,7 +2493,7 @@
       </node>
     </node>
     <node concept="3LKzX3" id="2w4bAIG1wFy" role="30n1Qb">
-      <property role="3LKBmK" value="TableView RowBased Commands" />
+      <property role="TrG5h" value="TableView RowBased Commands" />
       <node concept="1s$VFG" id="2w4bAIG1wFz" role="1s$QAY">
         <node concept="DUd5q" id="2w4bAIG1wF$" role="1s$QAM">
           <node concept="30ylMN" id="2w4bAIG1wGe" role="DUiS9">
@@ -2606,7 +2605,7 @@
       </node>
     </node>
     <node concept="3LKzX3" id="2w4bAIG1wGB" role="30n1Qb">
-      <property role="3LKBmK" value="TreeView RowBased Commands" />
+      <property role="TrG5h" value="TreeView RowBased Commands" />
       <node concept="1s$VFG" id="2w4bAIG1wGC" role="1s$QAY">
         <node concept="DUd5q" id="2w4bAIG1wHB" role="1s$QAM">
           <node concept="30ylMN" id="2w4bAIG1wHD" role="DUiS9">

@@ -160,12 +160,12 @@
           <node concept="3cpWsn" id="5QmCreilHYs" role="3cpWs9">
             <property role="TrG5h" value="testSuite" />
             <node concept="3Tqbb2" id="5QmCreilHYc" role="1tU5fm">
-              <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelTestSuite" />
+              <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
             </node>
             <node concept="2ShNRf" id="5QmCreilHYt" role="33vP2m">
               <node concept="3zrR0B" id="5QmCreilHYu" role="2ShVmc">
                 <node concept="3Tqbb2" id="5QmCreilHYv" role="3zrR0E">
-                  <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelTestSuite" />
+                  <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
                 </node>
               </node>
             </node>
@@ -290,7 +290,7 @@
                 </node>
                 <node concept="2SmgA7" id="5QmCreileCm" role="2OqNvi">
                   <node concept="chp4Y" id="5QmCreilBJO" role="1dBWTz">
-                    <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelTestSuite" />
+                    <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
                   </node>
                 </node>
               </node>

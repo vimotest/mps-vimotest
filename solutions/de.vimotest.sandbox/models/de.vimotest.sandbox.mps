@@ -27,9 +27,7 @@
       <concept id="9155943921465570536" name="de.vimotest.viewmodel.testing.structure.WidgetListRowsCheckValue" flags="ng" index="1i$qk">
         <child id="8072781894854610736" name="rows" index="3o2WtG" />
       </concept>
-      <concept id="9155943921465570537" name="de.vimotest.viewmodel.testing.structure.SelectedRowCheckValue" flags="ng" index="1i$ql">
-        <property id="3198847476153780042" name="oldSelectedIndex" index="3YEp6u" />
-      </concept>
+      <concept id="9155943921465570537" name="de.vimotest.viewmodel.testing.structure.SelectedRowCheckValue" flags="ng" index="1i$ql" />
       <concept id="9155943921465570482" name="de.vimotest.viewmodel.testing.structure.ListViewCheck" flags="ng" index="1i$re">
         <child id="9155943921465570483" name="checks" index="1i$rf" />
       </concept>
@@ -108,9 +106,7 @@
         <property id="8996304390298037956" name="text" index="3fQinD" />
       </concept>
       <concept id="8996304390297115758" name="de.vimotest.viewmodel.testing.structure.ClickCommandAction" flags="ng" index="3eaLt3" />
-      <concept id="8996304390297115761" name="de.vimotest.viewmodel.testing.structure.SelectRowCommandAction" flags="ng" index="3eaLts">
-        <property id="2049475699587177078" name="oldSelectedIndex" index="1lKm$W" />
-      </concept>
+      <concept id="8996304390297115761" name="de.vimotest.viewmodel.testing.structure.SelectRowCommandAction" flags="ng" index="3eaLts" />
       <concept id="8996304390297115762" name="de.vimotest.viewmodel.testing.structure.SelectEntryCommandAction" flags="ng" index="3eaLtv">
         <property id="5922736771850278303" name="selectedEntryName" index="2qt_KD" />
       </concept>
@@ -1042,7 +1038,6 @@
                 </node>
               </node>
               <node concept="1i$ql" id="4w9z1ta3HWq" role="1i$rf">
-                <property role="3YEp6u" value="3" />
                 <property role="3_VSTS" value="3" />
               </node>
             </node>
@@ -1244,7 +1239,6 @@
                 </node>
               </node>
               <node concept="1i$ql" id="4w9z1ta3HWj" role="3UVeCz">
-                <property role="3YEp6u" value="1" />
                 <property role="3_VSTS" value="1" />
               </node>
               <node concept="35STUn" id="4w9z1ta3HWk" role="3UVeCz">
@@ -1383,7 +1377,6 @@
                 </node>
               </node>
               <node concept="1i$ql" id="4w9z1ta3HWn" role="3Vayj$">
-                <property role="3YEp6u" value="1" />
                 <property role="3_VSTS" value="1" />
               </node>
               <node concept="35STUl" id="4w9z1ta3HWo" role="3Vayj$">
@@ -2090,7 +2083,6 @@
       <node concept="1s$VFG" id="6fEYrkZxlQO" role="1s$QAY">
         <node concept="DUd5q" id="1LLcOD9FY2w" role="1s$QAM">
           <node concept="3eaLts" id="1LLcOD9FY2y" role="DUiS9">
-            <property role="1lKm$W" value="1" />
             <property role="3_VSTS" value="1" />
             <ref role="3ucQsQ" node="1LLcOD9FY1D" resolve="MyListView" />
           </node>
@@ -2173,7 +2165,6 @@
       <node concept="1s$VFG" id="6fEYrkZxlQQ" role="1s$QAY">
         <node concept="DUd5q" id="115Lfa94895" role="1s$QAM">
           <node concept="3eaLts" id="115Lfa94896" role="DUiS9">
-            <property role="1lKm$W" value="1" />
             <property role="3_VSTS" value="1" />
             <ref role="3ucQsQ" node="1LLcOD9FY15" resolve="MyTableView" />
           </node>
@@ -2256,7 +2247,6 @@
       <node concept="1s$VFG" id="6fEYrkZxlQS" role="1s$QAY">
         <node concept="DUd5q" id="115Lfa96$0a" role="1s$QAM">
           <node concept="3eaLts" id="115Lfa96$0b" role="DUiS9">
-            <property role="1lKm$W" value="1" />
             <property role="3_VSTS" value="1" />
             <ref role="3ucQsQ" node="1LLcOD9FY1T" resolve="MyTreeView" />
           </node>

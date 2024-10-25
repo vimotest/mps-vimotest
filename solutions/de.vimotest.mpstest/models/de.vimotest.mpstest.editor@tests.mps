@@ -87,14 +87,14 @@
       <concept id="7445061853131767032" name="de.vimotest.viewmodel.testing.structure.ThenDescriptionWithAssert" flags="ng" index="DUd2R">
         <child id="7445061853131768388" name="assert" index="DUiSb" />
       </concept>
-      <concept id="3426401106044983339" name="de.vimotest.viewmodel.testing.structure.ViewModelTestSuite" flags="ng" index="30n1Qd">
+      <concept id="3426401106044983339" name="de.vimotest.viewmodel.testing.structure.ViewModelFeatureTestSuite" flags="ng" index="30n1Qd">
         <reference id="3426401106044983489" name="targetViewModel" index="30n1PB" />
         <child id="3426401106044983341" name="tests" index="30n1Qb" />
       </concept>
       <concept id="7199841511154467673" name="de.vimotest.viewmodel.testing.structure.WhenThenDescriptions" flags="ng" index="1s$VFG">
         <child id="7199841511154487304" name="assertsWithDescription" index="1s$QAX" />
       </concept>
-      <concept id="7205622933660482722" name="de.vimotest.viewmodel.testing.structure.ViewModelTestCase" flags="ng" index="3LKzX3">
+      <concept id="7205622933660482722" name="de.vimotest.viewmodel.testing.structure.ViewModelTestScenario" flags="ng" index="3LKzX3">
         <child id="7199841511154487307" name="whenThenDescriptions" index="1s$QAY" />
       </concept>
       <concept id="7205622933660496194" name="de.vimotest.viewmodel.testing.structure.ITestCaseAssertion" flags="ngI" index="3LKBaz" />
@@ -206,7 +206,7 @@
     </node>
   </node>
   <node concept="103ZX$" id="7kmE6cdCpmj">
-    <property role="TrG5h" value="MyViewModel" />
+    <property role="TrG5h" value="MyViewModel_View" />
     <node concept="103ZXx" id="7kmE6cdCpmk" role="103ZXC" />
     <node concept="103ZXB" id="7kmE6cdCpml" role="103ZXF">
       <node concept="V3ZfZ" id="7kmE6cdCugd" role="103ZUC">

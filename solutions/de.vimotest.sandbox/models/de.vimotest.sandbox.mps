@@ -2531,7 +2531,7 @@
             <property role="3_VSTS" value="1" />
             <ref role="23N36s" node="2w4bAIFOccq" resolve="MyTableView" />
             <node concept="3eaLtv" id="2w4bAIG1wGA" role="30ylMY">
-              <property role="2qt_KD" value="B" />
+              <property role="2qt_KD" value="D" />
               <ref role="3ucQsQ" node="2w4bAIFOcfa" resolve="EntryComboBoxes" />
             </node>
           </node>

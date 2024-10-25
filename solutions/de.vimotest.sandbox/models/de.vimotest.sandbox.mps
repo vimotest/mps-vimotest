@@ -83,7 +83,7 @@
         <child id="6201744883139140375" name="checks" index="2X2XOb" />
       </concept>
       <concept id="3426401106045532804" name="de.vimotest.viewmodel.testing.structure.EmptyContext" flags="ng" index="30l7Wy" />
-      <concept id="3426401106044983339" name="de.vimotest.viewmodel.testing.structure.ViewModelTestSuite" flags="ng" index="30n1Qd">
+      <concept id="3426401106044983339" name="de.vimotest.viewmodel.testing.structure.ViewModelFeatureTestSuite" flags="ng" index="30n1Qd">
         <reference id="3426401106044983489" name="targetViewModel" index="30n1PB" />
         <child id="3426401106044983341" name="tests" index="30n1Qb" />
       </concept>
@@ -127,7 +127,7 @@
       <concept id="4309178210352018150" name="de.vimotest.viewmodel.testing.structure.TestDescriptionPart" flags="ng" index="1IbZgA">
         <property id="4309178210352018151" name="textBefore" index="1IbZgB" />
       </concept>
-      <concept id="7205622933660482722" name="de.vimotest.viewmodel.testing.structure.ViewModelTestCase" flags="ng" index="3LKzX3">
+      <concept id="7205622933660482722" name="de.vimotest.viewmodel.testing.structure.ViewModelTestScenario" flags="ng" index="3LKzX3">
         <child id="7445061853131767039" name="contextWithDescription" index="DUd2K" />
         <child id="7199841511154487307" name="whenThenDescriptions" index="1s$QAY" />
       </concept>

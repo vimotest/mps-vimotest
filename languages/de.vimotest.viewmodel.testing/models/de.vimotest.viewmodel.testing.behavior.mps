@@ -10874,5 +10874,54 @@
     </node>
     <node concept="3Tm1VV" id="2w4bAIFYpT1" role="1B3o_S" />
   </node>
+  <node concept="13h7C7" id="5_TItGJ6mOw">
+    <property role="3GE5qa" value="test" />
+    <ref role="13h7C2" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestScenario" />
+    <node concept="13hLZK" id="5_TItGJ6mOx" role="13h7CW">
+      <node concept="3clFbS" id="5_TItGJ6mOy" role="2VODD2">
+        <node concept="3clFbF" id="5_TItGJ6twL" role="3cqZAp">
+          <node concept="2OqwBi" id="5_TItGJ6wBi" role="3clFbG">
+            <node concept="2OqwBi" id="5_TItGJ6tEX" role="2Oq$k0">
+              <node concept="13iPFW" id="5_TItGJ6twK" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="5_TItGJ6tOb" role="2OqNvi">
+                <ref role="3TtcxE" to="53m0:6tib4XeIJNZ" resolve="contextWithDescription" />
+              </node>
+            </node>
+            <node concept="2DeJg1" id="5_TItGJ6yo9" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="5_TItGJ6yR2">
+    <property role="3GE5qa" value="test.description" />
+    <ref role="13h7C2" to="53m0:6fEYrkZukdp" resolve="WhenThenDescriptions" />
+    <node concept="13hLZK" id="5_TItGJ6yR3" role="13h7CW">
+      <node concept="3clFbS" id="5_TItGJ6yR4" role="2VODD2">
+        <node concept="3clFbF" id="5_TItGJ6DzO" role="3cqZAp">
+          <node concept="2OqwBi" id="5_TItGJ6GBS" role="3clFbG">
+            <node concept="2OqwBi" id="5_TItGJ6DHe" role="2Oq$k0">
+              <node concept="13iPFW" id="5_TItGJ6DzN" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="5_TItGJ6DOU" role="2OqNvi">
+                <ref role="3TtcxE" to="53m0:6fEYrkZup07" resolve="actionsWithDescription" />
+              </node>
+            </node>
+            <node concept="2DeJg1" id="5_TItGJ6IoJ" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5_TItGJ6IPE" role="3cqZAp">
+          <node concept="2OqwBi" id="5_TItGJ6IPF" role="3clFbG">
+            <node concept="2OqwBi" id="5_TItGJ6IPG" role="2Oq$k0">
+              <node concept="13iPFW" id="5_TItGJ6IPH" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="5_TItGJ6IPI" role="2OqNvi">
+                <ref role="3TtcxE" to="53m0:6fEYrkZup08" />
+              </node>
+            </node>
+            <node concept="2DeJg1" id="5_TItGJ6IPJ" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

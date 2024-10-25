@@ -328,6 +328,11 @@
     <property role="TrG5h" value="TestDescriptionPart" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5_TItGJ6Q1L" role="1TKVEl">
+      <property role="IQ2nx" value="6447388692596875377" />
+      <property role="TrG5h" value="hasCustomSurroundingText" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyi" id="3JdhG1lSFbB" role="1TKVEl">
       <property role="IQ2nx" value="4309178210352018151" />
       <property role="TrG5h" value="textBefore" />

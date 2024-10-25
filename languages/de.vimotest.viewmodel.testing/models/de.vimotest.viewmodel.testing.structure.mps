@@ -153,12 +153,12 @@
   <node concept="PlHQZ" id="6fZwY6ifv52">
     <property role="EcuMT" value="7205622933660496194" />
     <property role="3GE5qa" value="test.assert" />
-    <property role="TrG5h" value="ITestCaseAssertion" />
+    <property role="TrG5h" value="ITestScenarioAssertion" />
   </node>
   <node concept="PlHQZ" id="6fZwY6ifv53">
     <property role="EcuMT" value="7205622933660496195" />
     <property role="3GE5qa" value="test.actions" />
-    <property role="TrG5h" value="ITestCaseAction" />
+    <property role="TrG5h" value="ITestScenarioAction" />
   </node>
   <node concept="1TIwiD" id="2Yd1qrJONf3">
     <property role="EcuMT" value="3426401106045121475" />
@@ -178,7 +178,7 @@
       <ref role="20lvS9" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     </node>
     <node concept="PrWs8" id="65sofNQ5xLK" role="PzmwI">
-      <ref role="PrY4T" node="6fZwY6ifv52" resolve="ITestCaseAssertion" />
+      <ref role="PrY4T" node="6fZwY6ifv52" resolve="ITestScenarioAssertion" />
     </node>
     <node concept="PrWs8" id="6I6OCWxY3V6" role="PzmwI">
       <ref role="PrY4T" node="6I6OCWxY3UW" resolve="IProvideWidget" />
@@ -306,7 +306,7 @@
   </node>
   <node concept="PlHQZ" id="2Yd1qrJOMZM">
     <property role="EcuMT" value="3426401106045120498" />
-    <property role="TrG5h" value="ITestCaseContext" />
+    <property role="TrG5h" value="ITestScenarioContext" />
     <property role="3GE5qa" value="test.context" />
   </node>
   <node concept="1TIwiD" id="3JdhG1lSFby">
@@ -319,7 +319,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="context" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="2Yd1qrJOMZM" resolve="ITestCaseContext" />
+      <ref role="20lvS9" node="2Yd1qrJOMZM" resolve="ITestScenarioContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="3JdhG1lSFbA">
@@ -354,7 +354,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="assert" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6fZwY6ifv52" resolve="ITestCaseAssertion" />
+      <ref role="20lvS9" node="6fZwY6ifv52" resolve="ITestScenarioAssertion" />
     </node>
   </node>
   <node concept="1TIwiD" id="6tib4XeIJOl">
@@ -367,7 +367,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="action" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6fZwY6ifv53" resolve="ITestCaseAction" />
+      <ref role="20lvS9" node="6fZwY6ifv53" resolve="ITestScenarioAction" />
     </node>
   </node>
   <node concept="1TIwiD" id="2Yd1qrJQnE4">
@@ -377,7 +377,7 @@
     <property role="34LRSv" value="empty context" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2Yd1qrJQnE5" role="PzmwI">
-      <ref role="PrY4T" node="2Yd1qrJOMZM" resolve="ITestCaseContext" />
+      <ref role="PrY4T" node="2Yd1qrJOMZM" resolve="ITestScenarioContext" />
     </node>
   </node>
   <node concept="PlHQZ" id="6I6OCWxY3UW">
@@ -800,7 +800,7 @@
     <property role="TrG5h" value="ViewCommandInvocationAction" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7KHRfJVnw5F" role="PzmwI">
-      <ref role="PrY4T" node="6fZwY6ifv53" resolve="ITestCaseAction" />
+      <ref role="PrY4T" node="6fZwY6ifv53" resolve="ITestScenarioAction" />
     </node>
     <node concept="1TJgyj" id="7KHRfJVnw5G" role="1TKVEi">
       <property role="IQ2ns" value="8948051009467187564" />
@@ -839,7 +839,7 @@
       <ref role="20lvS9" to="at53:F907haLIRF" resolve="ViewWidget" />
     </node>
     <node concept="PrWs8" id="4VeFpYgZsEE" role="PzmwI">
-      <ref role="PrY4T" node="6fZwY6ifv53" resolve="ITestCaseAction" />
+      <ref role="PrY4T" node="6fZwY6ifv53" resolve="ITestScenarioAction" />
     </node>
     <node concept="PrWs8" id="4VeFpYgZx_X" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -942,7 +942,7 @@
     <property role="34LRSv" value="row action" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5_Cxj2pStAd" role="PzmwI">
-      <ref role="PrY4T" node="6fZwY6ifv53" resolve="ITestCaseAction" />
+      <ref role="PrY4T" node="6fZwY6ifv53" resolve="ITestScenarioAction" />
     </node>
     <node concept="PrWs8" id="5_Cxj2pStAb" role="PzmwI">
       <ref role="PrY4T" to="at53:1RiAxJSewmp" resolve="IHasRowHandle" />

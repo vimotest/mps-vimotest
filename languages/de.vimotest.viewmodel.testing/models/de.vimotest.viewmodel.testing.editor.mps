@@ -5211,7 +5211,7 @@
         </node>
       </node>
       <node concept="2kknPJ" id="5_TItGJ7pLp" role="2klrvf">
-        <ref role="2ZyFGn" to="53m0:2Yd1qrJOMZM" resolve="ITestCaseContext" />
+        <ref role="2ZyFGn" to="53m0:2Yd1qrJOMZM" resolve="ITestScenarioContext" />
       </node>
     </node>
     <node concept="22hDWj" id="5_TItGJanno" role="22hAXT" />
@@ -5258,7 +5258,7 @@
         </node>
       </node>
       <node concept="2kknPJ" id="5_TItGJcG3J" role="2klrvf">
-        <ref role="2ZyFGn" to="53m0:6fZwY6ifv53" resolve="ITestCaseAction" />
+        <ref role="2ZyFGn" to="53m0:6fZwY6ifv53" resolve="ITestScenarioAction" />
       </node>
     </node>
     <node concept="22hDWj" id="5_TItGJcFYy" role="22hAXT" />
@@ -5305,7 +5305,7 @@
         </node>
       </node>
       <node concept="2kknPJ" id="5_TItGJcNQv" role="2klrvf">
-        <ref role="2ZyFGn" to="53m0:6fZwY6ifv52" resolve="ITestCaseAssertion" />
+        <ref role="2ZyFGn" to="53m0:6fZwY6ifv52" resolve="ITestScenarioAssertion" />
       </node>
     </node>
     <node concept="22hDWj" id="5_TItGJcNQd" role="22hAXT" />

@@ -240,6 +240,9 @@
         <node concept="L2wRC" id="bZSVZdinO9" role="39821P">
           <ref role="L2wRA" node="220dcIkyAj8" resolve="de.vimotest.plugin" />
         </node>
+        <node concept="L2wRC" id="63ktVPu1262" role="39821P">
+          <ref role="L2wRA" node="220dcIkyAj2" resolve="de.vimotest.sandbox" />
+        </node>
         <node concept="L2wRC" id="bZSVZdidI_" role="39821P">
           <ref role="L2wRA" node="bZSVZdidFi" resolve="de.vimotest.mpstest" />
         </node>
@@ -993,6 +996,11 @@
         <node concept="1SiIV0" id="63ktVPtZ9Ac" role="3bR37C">
           <node concept="3bR9La" id="63ktVPtZ9Ad" role="1SiIV1">
             <ref role="3bR37D" node="JW9DBRQiDv" resolve="de.vimotest.viewmodel.testing" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="63ktVPu0U1l" role="3bR37C">
+          <node concept="3bR9La" id="63ktVPu0U1m" role="1SiIV1">
+            <ref role="3bR37D" node="220dcIkyAj2" resolve="de.vimotest.sandbox" />
           </node>
         </node>
       </node>

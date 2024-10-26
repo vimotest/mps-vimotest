@@ -930,6 +930,41 @@
       <zipfileset file="${basedir}/solutions/de.vimotest.plugin/de.vimotest.plugin.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.plugin-models" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.sandbox.jar" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.sandbox.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.sandbox.jar/META-INF/module.xml">
+      <module namespace="de.vimotest.sandbox" type="solution" uuid="2980a7d4-8976-4973-92f1-1d4ee8626c70">
+        <dependencies>
+          <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="rt" />
+        </dependencies>
+        <uses>
+          <language id="l:ce7915b5-36b4-4478-a67c-f5a8a72ed4a0:de.vimotest.viewmodel" />
+          <language id="l:716e8717-88c0-4280-8c16-b4d88567596f:de.vimotest.viewmodel.testing" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.vimotest.sandbox-src.jar" descriptor="de.vimotest.sandbox.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/tests/de.vimotest.sandbox.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.vimotest.sandbox" />
+      <fileset dir="${basedir}/solutions/de.vimotest.sandbox/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.vimotest.sandbox.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.sandbox-models">
+      <fileset dir="${basedir}/solutions/de.vimotest.sandbox/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/tests/de.vimotest.sandbox-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/solutions/de.vimotest.sandbox/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/solutions/de.vimotest.sandbox/de.vimotest.sandbox.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.sandbox-models" prefix="module/models" />
+    </jar>
     <mkdir dir="${build.tmp}/default/de.vimotest.mpstest.jar" />
     <mkdir dir="${build.tmp}/default/de.vimotest.mpstest.jar/META-INF" />
     <echoxml file="${build.tmp}/default/de.vimotest.mpstest.jar/META-INF/module.xml">
@@ -954,16 +989,19 @@
           <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="cl" />
           <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="cl" />
           <module ref="6841aa79-8ab0-4e78-bc26-200a9af1f8ed(de.vimotest.plugin)" kind="cl" />
+          <module ref="2980a7d4-8976-4973-92f1-1d4ee8626c70(de.vimotest.sandbox)" kind="cl" />
           <module ref="716e8717-88c0-4280-8c16-b4d88567596f(de.vimotest.viewmodel.testing)" kind="cl" />
           <module ref="5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:ce7915b5-36b4-4478-a67c-f5a8a72ed4a0:de.vimotest.viewmodel" />
           <language id="l:716e8717-88c0-4280-8c16-b4d88567596f:de.vimotest.viewmodel.testing" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
           <language id="l:f61473f9-130f-42f6-b98d-6c438812c2f6:jetbrains.mps.baseLanguage.unitTest" />
           <language id="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" />
           <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
           <language id="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
         </uses>
         <classpath>
           <entry path="." />
@@ -1835,7 +1873,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.de.vimotest.mpstest" depends="java.compile.de.vimotest.plugin, java.compile.de.vimotest.types, java.compile.de.vimotest.viewmodel, java.compile.de.vimotest.viewmodel.testing, fetchDependencies">
+  <target name="java.compile.de.vimotest.mpstest" depends="java.compile.de.vimotest.plugin, java.compile.de.vimotest.sandbox, java.compile.de.vimotest.types, java.compile.de.vimotest.viewmodel, java.compile.de.vimotest.viewmodel.testing, fetchDependencies">
     <mkdir dir="${basedir}/solutions/de.vimotest.mpstest/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.vimotest.mpstest" />
     <javac destdir="${build.tmp}/java/out/de.vimotest.mpstest" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1866,6 +1904,7 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <pathelement path="${build.tmp}/java/out/de.vimotest.plugin" />
+        <pathelement path="${build.tmp}/java/out/de.vimotest.sandbox" />
         <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
         <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
@@ -1960,6 +1999,7 @@
       <library file="${artifacts.mps}/languages/workbench-stub.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
       <library file="${build.layout}/tests/de.vimotest.plugin.jar" />
+      <library file="${build.layout}/tests/de.vimotest.sandbox.jar" />
       <library file="${build.layout}/tests/de.vimotest.widgetdsl.jar" />
       
       <plugin id="CppBaseLanguage" path="${artifacts.CppBaseLanguage}/CppBaseLanguage" />

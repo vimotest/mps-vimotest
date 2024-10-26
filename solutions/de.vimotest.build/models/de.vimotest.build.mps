@@ -990,6 +990,11 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
+        <node concept="1SiIV0" id="63ktVPtZ9Ac" role="3bR37C">
+          <node concept="3bR9La" id="63ktVPtZ9Ad" role="1SiIV1">
+            <ref role="3bR37D" node="JW9DBRQiDv" resolve="de.vimotest.viewmodel.testing" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="220dcIkyGGa" role="3989C9">

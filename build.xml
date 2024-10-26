@@ -954,6 +954,7 @@
           <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="cl" />
           <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="cl" />
           <module ref="6841aa79-8ab0-4e78-bc26-200a9af1f8ed(de.vimotest.plugin)" kind="cl" />
+          <module ref="716e8717-88c0-4280-8c16-b4d88567596f(de.vimotest.viewmodel.testing)" kind="cl" />
           <module ref="5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)" kind="cl" />
         </dependencies>
         <uses>
@@ -1834,7 +1835,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.de.vimotest.mpstest" depends="java.compile.de.vimotest.plugin, fetchDependencies">
+  <target name="java.compile.de.vimotest.mpstest" depends="java.compile.de.vimotest.plugin, java.compile.de.vimotest.types, java.compile.de.vimotest.viewmodel, java.compile.de.vimotest.viewmodel.testing, fetchDependencies">
     <mkdir dir="${basedir}/solutions/de.vimotest.mpstest/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.vimotest.mpstest" />
     <javac destdir="${build.tmp}/java/out/de.vimotest.mpstest" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1865,6 +1866,13 @@
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <pathelement path="${build.tmp}/java/out/de.vimotest.plugin" />
+        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
+        <pathelement path="${build.tmp}/java/out/de.vimotest.types" />
+        <pathelement path="${build.tmp}/java/out/de.vimotest.viewmodel" />
+        <pathelement path="${build.tmp}/java/out/de.vimotest.viewmodel.testing" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
         <fileset file="${artifacts.mps}/lib/junit4.jar" />
@@ -1884,12 +1892,14 @@
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mps}/lib/trove.jar" />
+        <fileset file="${artifacts.alfi-build}/alfi/languages/alfi-modules/alfi.jar" />
         <fileset file="${artifacts.alfi-build}/alfi/languages/alfi-modules/alfi.StandardModelLibrary.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />

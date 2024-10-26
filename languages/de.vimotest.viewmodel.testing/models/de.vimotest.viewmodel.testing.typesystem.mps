@@ -162,6 +162,7 @@
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
+      <concept id="7992060018732187438" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatementAnnotation" flags="ng" index="AMVWg" />
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -1589,6 +1590,9 @@
                       </node>
                     </node>
                     <node concept="1yVyf7" id="1hQX3909ezD" role="2OqNvi" />
+                  </node>
+                  <node concept="AMVWg" id="63ktVPtYWnR" role="lGtFl">
+                    <property role="TrG5h" value="tooManyParameters" />
                   </node>
                 </node>
               </node>

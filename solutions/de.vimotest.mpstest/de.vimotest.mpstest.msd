@@ -15,6 +15,7 @@
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
+    <dependency reexport="false">716e8717-88c0-4280-8c16-b4d88567596f(de.vimotest.viewmodel.testing)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" version="0" />
@@ -42,9 +43,15 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
+    <module reference="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" version="0" />
     <module reference="6fdc66a1-6b5a-46e2-92ac-801560a5e88a(de.vimotest.mpstest)" version="0" />
     <module reference="6841aa79-8ab0-4e78-bc26-200a9af1f8ed(de.vimotest.plugin)" version="0" />
+    <module reference="611ecc9e-0703-4ab9-a13c-fb396c607716(de.vimotest.types)" version="0" />
+    <module reference="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0(de.vimotest.viewmodel)" version="0" />
+    <module reference="716e8717-88c0-4280-8c16-b4d88567596f(de.vimotest.viewmodel.testing)" version="0" />
+    <module reference="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" version="0" />
     <module reference="5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)" version="0" />
+    <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
   </dependencyVersions>
 </solution>
 

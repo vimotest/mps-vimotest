@@ -8,6 +8,8 @@
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
+    <import index="mk2q" ref="r:394bda66-ac7c-48d2-8b30-5ebcc56c2d2a(alfi.build)" />
+    <import index="gwjr" ref="r:9d11b55c-368f-4d5a-8409-18718d1d42b0(CppBaseLanguage.build)" />
   </imports>
   <registry>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
@@ -175,6 +177,9 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="5tK9548cRhc" role="1l3spd">
+      <property role="TrG5h" value="project_home" />
+    </node>
     <node concept="398rNT" id="OD4q9CUuk9" role="1l3spd">
       <property role="TrG5h" value="dependencies_home" />
       <node concept="55IIr" id="249Z$ScP_Ni" role="398pKh">
@@ -189,19 +194,31 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="5tK9548cRhc" role="1l3spd">
-      <property role="TrG5h" value="project_home" />
-    </node>
-    <node concept="398rNT" id="5tK9548cRhd" role="1l3spd">
-      <property role="TrG5h" value="mps.macro.project_home" />
-      <node concept="398BVA" id="5tK9548cRhe" role="398pKh">
-        <ref role="398BVh" node="5tK9548cRhc" resolve="project_home" />
+    <node concept="398rNT" id="37zNn5LMY95" role="1l3spd">
+      <property role="TrG5h" value="platform_lib" />
+      <node concept="398BVA" id="2SGDmeInqRi" role="398pKh">
+        <ref role="398BVh" node="5tK9548cRh7" resolve="mps_home" />
+        <node concept="2Ry0Ak" id="2SGDmeInqRl" role="iGT6I">
+          <property role="2Ry0Am" value="lib" />
+        </node>
       </node>
     </node>
     <node concept="2sgV4H" id="220dcIkyAiy" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="220dcIkyAiz" role="2JcizS">
         <ref role="398BVh" node="5tK9548cRh7" resolve="mps_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="4_8VHnqUYmT" role="1l3spa">
+      <ref role="1l3spb" to="mk2q:5tK9548cmXy" resolve="alfi-build" />
+      <node concept="398BVA" id="4_8VHnqUYmV" role="2JcizS">
+        <ref role="398BVh" node="OD4q9CUuk9" resolve="dependencies_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="5pGl0ZriJ3J" role="1l3spa">
+      <ref role="1l3spb" to="gwjr:4h_5oU0U7hs" resolve="CppBaseLanguage" />
+      <node concept="398BVA" id="5pGl0ZriJ3Q" role="2JcizS">
+        <ref role="398BVh" node="OD4q9CUuk9" resolve="dependencies_home" />
       </node>
     </node>
     <node concept="1l3spV" id="220dcIkyAjn" role="1l3spN">
@@ -222,6 +239,9 @@
         </node>
         <node concept="L2wRC" id="bZSVZdinO9" role="39821P">
           <ref role="L2wRA" node="220dcIkyAj8" resolve="de.vimotest.plugin" />
+        </node>
+        <node concept="L2wRC" id="63ktVPu1262" role="39821P">
+          <ref role="L2wRA" node="220dcIkyAj2" resolve="de.vimotest.sandbox" />
         </node>
         <node concept="L2wRC" id="bZSVZdidI_" role="39821P">
           <ref role="L2wRA" node="bZSVZdidFi" resolve="de.vimotest.mpstest" />
@@ -250,6 +270,9 @@
       </node>
       <node concept="m$_yC" id="220dcIkyAjg" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="7KHRfJVmoqN" role="m$_yJ">
+        <ref role="m$_y1" to="mk2q:5tK9548cRhB" resolve="alfi" />
       </node>
       <node concept="3_J27D" id="220dcIkyAjh" role="m_cZH">
         <node concept="3Mxwew" id="220dcIkyAji" role="3MwsjC">
@@ -357,15 +380,15 @@
       </node>
       <node concept="1E1JtD" id="JW9DBRQiDv" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.vimotest.testing" />
+        <property role="TrG5h" value="de.vimotest.viewmodel.testing" />
         <property role="3LESm3" value="716e8717-88c0-4280-8c16-b4d88567596f" />
         <node concept="55IIr" id="JW9DBRQiDy" role="3LF7KH">
           <node concept="2Ry0Ak" id="JW9DBRQiEk" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="JW9DBRQiEp" role="2Ry0An">
-              <property role="2Ry0Am" value="de.vimotest.testing" />
-              <node concept="2Ry0Ak" id="JW9DBRQiEu" role="2Ry0An">
-                <property role="2Ry0Am" value="de.vimotest.testing.mpl" />
+              <property role="2Ry0Am" value="de.vimotest.viewmodel.testing" />
+              <node concept="2Ry0Ak" id="1LLcOD9tkBo" role="2Ry0An">
+                <property role="2Ry0Am" value="de.vimotest.viewmodel.testing.mpl" />
               </node>
             </node>
           </node>
@@ -374,46 +397,46 @@
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="JW9DBRQiEI" role="1HemKq">
-            <node concept="55IIr" id="JW9DBRQiED" role="3LXTmr">
-              <node concept="2Ry0Ak" id="JW9DBRQiEE" role="iGT6I">
+          <node concept="3LXTmp" id="1LLcOD9tkBA" role="1HemKq">
+            <node concept="55IIr" id="1LLcOD9tkBy" role="3LXTmr">
+              <node concept="2Ry0Ak" id="1LLcOD9tkBz" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="JW9DBRQiEF" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.vimotest.testing" />
-                  <node concept="2Ry0Ak" id="JW9DBRQiEG" role="2Ry0An">
+                <node concept="2Ry0Ak" id="1LLcOD9tkB$" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.vimotest.viewmodel.testing" />
+                  <node concept="2Ry0Ak" id="1LLcOD9tkB_" role="2Ry0An">
                     <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="JW9DBRQiEJ" role="3LXTna">
+            <node concept="3qWCbU" id="1LLcOD9tkBB" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
         <node concept="1yeLz9" id="JW9DBRQiEK" role="1TViLv">
-          <property role="TrG5h" value="de.vimotest.testing.generator" />
+          <property role="TrG5h" value="de.vimotest.viewmodel.testing.generator" />
           <property role="3LESm3" value="75b45ab1-ab60-4e56-9499-3ebb61ad3411" />
           <node concept="1BupzO" id="JW9DBRQiEQ" role="3bR31x">
             <property role="3ZfqAx" value="generator/templates" />
             <property role="1Hdu6h" value="true" />
             <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="JW9DBRQiER" role="1HemKq">
-              <node concept="55IIr" id="JW9DBRQiEL" role="3LXTmr">
-                <node concept="2Ry0Ak" id="JW9DBRQiEM" role="iGT6I">
+            <node concept="3LXTmp" id="1LLcOD9tkBH" role="1HemKq">
+              <node concept="55IIr" id="1LLcOD9tkBC" role="3LXTmr">
+                <node concept="2Ry0Ak" id="1LLcOD9tkBD" role="iGT6I">
                   <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="JW9DBRQiEN" role="2Ry0An">
-                    <property role="2Ry0Am" value="de.vimotest.testing" />
-                    <node concept="2Ry0Ak" id="JW9DBRQiEO" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="1LLcOD9tkBE" role="2Ry0An">
+                    <property role="2Ry0Am" value="de.vimotest.viewmodel.testing" />
+                    <node concept="2Ry0Ak" id="1LLcOD9tkBF" role="2Ry0An">
                       <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="JW9DBRQiEP" role="2Ry0An">
+                      <node concept="2Ry0Ak" id="1LLcOD9tkBG" role="2Ry0An">
                         <property role="2Ry0Am" value="templates" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3qWCbU" id="JW9DBRQiES" role="3LXTna">
+              <node concept="3qWCbU" id="1LLcOD9tkBI" role="3LXTna">
                 <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
               </node>
             </node>
@@ -502,6 +525,24 @@
                 <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7KHRfJVm81s" role="3bR37C">
+          <node concept="3bR9La" id="7KHRfJVm81t" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7KHRfJVm81u" role="3bR37C">
+          <node concept="3bR9La" id="7KHRfJVm81v" role="1SiIV1">
+            <ref role="3bR37D" to="mk2q:5tK9548cRi8" resolve="alfi" />
+          </node>
+        </node>
+        <node concept="1E0d5M" id="7KHRfJVm81$" role="1E1XAP">
+          <ref role="1E0d5P" to="mk2q:5tK9548cRt6" resolve="alfi.StandardModelLibrary" />
+        </node>
+        <node concept="1SiIV0" id="7KHRfJVm81_" role="3bR37C">
+          <node concept="1Busua" id="7KHRfJVm81A" role="1SiIV1">
+            <ref role="1Busuk" to="mk2q:5tK9548cRi8" resolve="alfi" />
           </node>
         </node>
       </node>
@@ -802,6 +843,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="4_8VHnqUYnG" role="3bR37C">
+          <node concept="3bR9La" id="4_8VHnqUYnH" role="1SiIV1">
+            <ref role="3bR37D" to="mk2q:5tK9548cRSQ" resolve="alfi.build" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4_8VHnqVero" role="3bR37C">
+          <node concept="3bR9La" id="4_8VHnqVerp" role="1SiIV1">
+            <ref role="3bR37D" to="gwjr:4h_5oU0U7hO" resolve="CppBaseLanguage.build" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="220dcIkyAj8" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -876,7 +927,7 @@
         </node>
         <node concept="1SiIV0" id="69Ym88Bc_0_" role="3bR37C">
           <node concept="3bR9La" id="69Ym88Bc_0A" role="1SiIV1">
-            <ref role="3bR37D" node="JW9DBRQiDv" resolve="de.vimotest.testing" />
+            <ref role="3bR37D" node="JW9DBRQiDv" resolve="de.vimotest.viewmodel.testing" />
           </node>
         </node>
         <node concept="1SiIV0" id="6mWHjmRTuuE" role="3bR37C">
@@ -930,6 +981,26 @@
             <node concept="3qWCbU" id="bZSVZdidIp" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7kmE6cdINsy" role="3bR37C">
+          <node concept="3bR9La" id="7kmE6cdINsz" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJ$" resolve="jetbrains.mps.ide.editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7kmE6cdINs$" role="3bR37C">
+          <node concept="3bR9La" id="7kmE6cdINs_" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="63ktVPtZ9Ac" role="3bR37C">
+          <node concept="3bR9La" id="63ktVPtZ9Ad" role="1SiIV1">
+            <ref role="3bR37D" node="JW9DBRQiDv" resolve="de.vimotest.viewmodel.testing" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="63ktVPu0U1l" role="3bR37C">
+          <node concept="3bR9La" id="63ktVPu0U1m" role="1SiIV1">
+            <ref role="3bR37D" node="220dcIkyAj2" resolve="de.vimotest.sandbox" />
           </node>
         </node>
       </node>

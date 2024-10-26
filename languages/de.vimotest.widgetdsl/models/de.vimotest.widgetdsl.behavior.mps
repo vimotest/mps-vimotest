@@ -46,8 +46,14 @@
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="13h7C7" id="F907haLd$d">
+    <property role="3GE5qa" value="widgets" />
     <ref role="13h7C2" to="3255:1Yc3x6zozVU" resolve="WidgetDefinition" />
     <node concept="13hLZK" id="F907haLd$e" role="13h7CW">
       <node concept="3clFbS" id="F907haLd$f" role="2VODD2">

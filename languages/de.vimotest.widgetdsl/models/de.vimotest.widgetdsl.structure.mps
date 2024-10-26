@@ -55,6 +55,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -65,13 +68,21 @@
     <property role="TrG5h" value="WidgetDefinition" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="widget" />
+    <property role="3GE5qa" value="widgets" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1Yc3x6zo$7t" role="1TKVEi">
       <property role="IQ2ns" value="2273207380833616349" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="features" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1Yc3x6zozW4" resolve="WidgetFeatureRef" />
+      <ref role="20lvS9" node="1Yc3x6zozW4" resolve="WidgetFeatureDefinitionRef" />
+    </node>
+    <node concept="1TJgyj" id="2exRXkpNhul" role="1TKVEi">
+      <property role="IQ2ns" value="2567579368931792789" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="commands" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2exRXkpMgYn" resolve="CommandDefinitionRef" />
     </node>
     <node concept="PrWs8" id="1Yc3x6zozVZ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -106,6 +117,7 @@
     <property role="TrG5h" value="WidgetFeatureDefinition" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="feature" />
+    <property role="3GE5qa" value="features" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1Yc3x6zozVX" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -147,8 +159,9 @@
   </node>
   <node concept="1TIwiD" id="1Yc3x6zozW4">
     <property role="EcuMT" value="2273207380833615620" />
-    <property role="TrG5h" value="WidgetFeatureRef" />
+    <property role="TrG5h" value="WidgetFeatureDefinitionRef" />
     <property role="34LRSv" value="feature ref" />
+    <property role="3GE5qa" value="features" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4DeESu7$dLU" role="1TKVEl">
       <property role="IQ2nx" value="5354405605573450874" />
@@ -159,6 +172,59 @@
       <property role="IQ2ns" value="2273207380833615621" />
       <property role="20kJfa" value="widgetFeature" />
       <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1Yc3x6zozVV" resolve="WidgetFeatureDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2exRXkpL1Qt">
+    <property role="EcuMT" value="2567579368931204509" />
+    <property role="TrG5h" value="CommandDefinition" />
+    <property role="34LRSv" value="command" />
+    <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="commands" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2exRXkpL6DJ" role="1TKVEl">
+      <property role="IQ2nx" value="2567579368931224175" />
+      <property role="TrG5h" value="shortName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="2exRXkpL6DI" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1irR5M" id="2exRXkpL6DM" role="rwd14">
+      <property role="2$rrk2" value="3" />
+      <node concept="1irR9n" id="2exRXkpL6DP" role="1irR9h">
+        <node concept="3PKj8D" id="2exRXkpL6DQ" role="3PKjn_">
+          <property role="3PKj8l" value="cc6600" />
+        </node>
+      </node>
+      <node concept="1irPie" id="2exRXkpL6DR" role="1irR9h">
+        <property role="1irPi9" value="c" />
+        <node concept="3PKj8D" id="2exRXkpL6DS" role="3PKjny">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2exRXkpMgYn">
+    <property role="EcuMT" value="2567579368931528599" />
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="CommandDefinitionRef" />
+    <property role="34LRSv" value="command ref" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2exRXkpMlLa" role="1TKVEi">
+      <property role="IQ2ns" value="2567579368931548234" />
+      <property role="20kJfa" value="command" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2exRXkpL1Qt" resolve="CommandDefinition" />
+    </node>
+    <node concept="1TJgyj" id="2exRXkpMlLe" role="1TKVEi">
+      <property role="IQ2ns" value="2567579368931548238" />
+      <property role="20kJfa" value="operatesOnFeature" />
+      <ref role="20lvS9" node="1Yc3x6zozVV" resolve="WidgetFeatureDefinition" />
+    </node>
+    <node concept="1TJgyj" id="2exRXkpMlLf" role="1TKVEi">
+      <property role="IQ2ns" value="2567579368931548239" />
+      <property role="20kJfa" value="canExecuteByFeature" />
       <ref role="20lvS9" node="1Yc3x6zozVV" resolve="WidgetFeatureDefinition" />
     </node>
   </node>

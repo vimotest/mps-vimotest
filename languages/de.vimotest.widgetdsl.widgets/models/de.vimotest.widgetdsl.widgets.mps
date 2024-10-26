@@ -16,6 +16,14 @@
       </concept>
     </language>
     <language id="9a43c831-bbd9-4521-b233-9f7d6522a85c" name="de.vimotest.widgetdsl">
+      <concept id="2567579368931204509" name="de.vimotest.widgetdsl.structure.CommandDefinition" flags="ng" index="Ups98">
+        <property id="2567579368931224175" name="shortName" index="UprmU" />
+      </concept>
+      <concept id="2567579368931528599" name="de.vimotest.widgetdsl.structure.CommandDefinitionRef" flags="ng" index="Uqd12">
+        <reference id="2567579368931548239" name="canExecuteByFeature" index="Uq8eq" />
+        <reference id="2567579368931548238" name="operatesOnFeature" index="Uq8er" />
+        <reference id="2567579368931548234" name="command" index="Uq8ev" />
+      </concept>
       <concept id="2273207380833615611" name="de.vimotest.widgetdsl.structure.WidgetFeatureDefinition" flags="ng" index="2WVz3E">
         <property id="2273207380833615617" name="tooltipMnemonic" index="2WVz4g" />
         <property id="2273207380833618135" name="shortName" index="2WV$r6" />
@@ -24,9 +32,10 @@
       <concept id="2273207380833615610" name="de.vimotest.widgetdsl.structure.WidgetDefinition" flags="ng" index="2WVz3F">
         <property id="8764372007625948681" name="shortName" index="2SiFfI" />
         <property id="777152910168742153" name="package" index="103t_X" />
+        <child id="2567579368931792789" name="commands" index="Urcx0" />
         <child id="2273207380833616349" name="features" index="2WV$Zc" />
       </concept>
-      <concept id="2273207380833615620" name="de.vimotest.widgetdsl.structure.WidgetFeatureRef" flags="ng" index="2WVz4l">
+      <concept id="2273207380833615620" name="de.vimotest.widgetdsl.structure.WidgetFeatureDefinitionRef" flags="ng" index="2WVz4l">
         <property id="5354405605573450874" name="inherentFeature" index="3dRBvX" />
         <reference id="2273207380833615621" name="widgetFeature" index="2WVz4k" />
       </concept>
@@ -49,6 +58,11 @@
     </node>
     <node concept="2WVz4l" id="1Yc3x6zoTM3" role="2WV$Zc">
       <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
+    </node>
+    <node concept="Uqd12" id="2exRXkpN_IT" role="Urcx0">
+      <ref role="Uq8ev" node="2exRXkpLdWN" resolve="Check" />
+      <ref role="Uq8er" node="1Yc3x6zo$jf" resolve="Checked" />
+      <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
     </node>
   </node>
   <node concept="2WVz3E" id="1Yc3x6zo$jf">
@@ -124,7 +138,7 @@
     <property role="2SiFfI" value="list view" />
     <node concept="2WVz4l" id="7WgsBLYp0cl" role="2WV$Zc">
       <property role="3dRBvX" value="true" />
-      <ref role="2WVz4k" node="K_fAvR3Kq_" resolve="WidgetRows" />
+      <ref role="2WVz4k" node="K_fAvR3Kq_" resolve="WidgetListRows" />
     </node>
     <node concept="2WVz4l" id="7WgsBLYp0cm" role="2WV$Zc">
       <ref role="2WVz4k" node="7WgsBLYmzhB" resolve="SelectedRow" />
@@ -134,6 +148,11 @@
     </node>
     <node concept="2WVz4l" id="7WgsBLYmyp4" role="2WV$Zc">
       <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
+    </node>
+    <node concept="Uqd12" id="2exRXkpOhwq" role="Urcx0">
+      <ref role="Uq8ev" node="2exRXkpM7nG" resolve="SelectRow" />
+      <ref role="Uq8er" node="7WgsBLYmzhB" resolve="SelectedRow" />
+      <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
     </node>
   </node>
   <node concept="2WVz3E" id="7WgsBLYmzhB">
@@ -148,6 +167,11 @@
     <property role="3GE5qa" value="widgets" />
     <property role="TrG5h" value="TreeView" />
     <property role="2SiFfI" value="tree view" />
+    <node concept="Uqd12" id="2exRXkpOhws" role="Urcx0">
+      <ref role="Uq8ev" node="2exRXkpM7nG" resolve="SelectRow" />
+      <ref role="Uq8er" node="7WgsBLYmzhB" resolve="SelectedRow" />
+      <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
+    </node>
     <node concept="2WVz4l" id="K_fAvR3J9b" role="2WV$Zc">
       <property role="3dRBvX" value="true" />
       <ref role="2WVz4k" node="bZSVZdtcRS" resolve="WidgetTreeRows" />
@@ -174,6 +198,11 @@
     <property role="3GE5qa" value="widgets" />
     <property role="TrG5h" value="TableView" />
     <property role="2SiFfI" value="table view" />
+    <node concept="Uqd12" id="2exRXkpOhwr" role="Urcx0">
+      <ref role="Uq8ev" node="2exRXkpM7nG" resolve="SelectRow" />
+      <ref role="Uq8er" node="7WgsBLYmzhB" resolve="SelectedRow" />
+      <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
+    </node>
     <node concept="2WVz4l" id="24MyZrrRA63" role="2WV$Zc">
       <property role="3dRBvX" value="true" />
       <ref role="2WVz4k" node="bZSVZdtfot" resolve="WidgetTableRows" />
@@ -209,11 +238,11 @@
     <property role="2SiFfI" value="combobox" />
     <node concept="2WVz4l" id="44HS8_67Csp" role="2WV$Zc">
       <property role="3dRBvX" value="true" />
-      <ref role="2WVz4k" node="44HS8_67Cst" resolve="ChoiceEntries" />
+      <ref role="2WVz4k" node="44HS8_67Cst" resolve="ComboBoxEntries" />
     </node>
     <node concept="2WVz4l" id="44HS8_67Csq" role="2WV$Zc">
       <property role="3dRBvX" value="true" />
-      <ref role="2WVz4k" node="44HS8_67EZV" resolve="SelectedChoice" />
+      <ref role="2WVz4k" node="44HS8_67EZV" resolve="SelectedEntry" />
     </node>
     <node concept="2WVz4l" id="44HS8_67HzI" role="2WV$Zc">
       <ref role="2WVz4k" node="7H4Lpx0an3A" resolve="Text" />
@@ -223,6 +252,16 @@
     </node>
     <node concept="2WVz4l" id="44HS8_67Css" role="2WV$Zc">
       <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
+    </node>
+    <node concept="Uqd12" id="2exRXkpOcGU" role="Urcx0">
+      <ref role="Uq8ev" node="2exRXkpMcaR" resolve="SelectEntry" />
+      <ref role="Uq8er" node="44HS8_67EZV" resolve="SelectedEntry" />
+      <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
+    </node>
+    <node concept="Uqd12" id="2exRXkpOcGT" role="Urcx0">
+      <ref role="Uq8ev" node="2exRXkpLXJ4" resolve="FillText" />
+      <ref role="Uq8er" node="7H4Lpx0an3A" resolve="Text" />
+      <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
     </node>
   </node>
   <node concept="2WVz3E" id="44HS8_67Cst">
@@ -238,6 +277,76 @@
     <property role="2WV$r6" value="selected choice" />
     <property role="2WVz4g" value="s" />
     <property role="3yYw5D" value="fLwANPp/orange" />
+  </node>
+  <node concept="Ups98" id="2exRXkpLdWN">
+    <property role="TrG5h" value="Check" />
+    <property role="UprmU" value="check" />
+    <property role="3GE5qa" value="commands" />
+  </node>
+  <node concept="Ups98" id="2exRXkpLSVB">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="Click" />
+    <property role="UprmU" value="click" />
+  </node>
+  <node concept="Ups98" id="2exRXkpLXJ4">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="FillText" />
+    <property role="UprmU" value="fill text" />
+  </node>
+  <node concept="Ups98" id="2exRXkpM2$u">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="Load" />
+    <property role="UprmU" value="load view" />
+  </node>
+  <node concept="Ups98" id="2exRXkpM7nG">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="SelectRow" />
+    <property role="UprmU" value="select row" />
+  </node>
+  <node concept="Ups98" id="2exRXkpMcaR">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="SelectEntry" />
+    <property role="UprmU" value="select entry" />
+  </node>
+  <node concept="2WVz3F" id="2exRXkpOcGV">
+    <property role="103t_X" value="widgets.standard" />
+    <property role="3GE5qa" value="widgets" />
+    <property role="TrG5h" value="TextBox" />
+    <property role="2SiFfI" value="textbox" />
+    <node concept="2WVz4l" id="2exRXkpOhwl" role="2WV$Zc">
+      <property role="3dRBvX" value="true" />
+      <ref role="2WVz4k" node="7H4Lpx0an3A" resolve="Text" />
+    </node>
+    <node concept="2WVz4l" id="2exRXkpOhwn" role="2WV$Zc">
+      <ref role="2WVz4k" node="1Yc3x6zoTLW" resolve="Visibility" />
+    </node>
+    <node concept="2WVz4l" id="2exRXkpOhwo" role="2WV$Zc">
+      <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
+    </node>
+    <node concept="Uqd12" id="2exRXkpOhwp" role="Urcx0">
+      <ref role="Uq8ev" node="2exRXkpLXJ4" resolve="FillText" />
+      <ref role="Uq8er" node="7H4Lpx0an3A" resolve="Text" />
+      <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
+    </node>
+  </node>
+  <node concept="2WVz3F" id="5oh1xNF6CMa">
+    <property role="103t_X" value="widgets.standard" />
+    <property role="3GE5qa" value="widgets" />
+    <property role="TrG5h" value="Button" />
+    <property role="2SiFfI" value="button" />
+    <node concept="2WVz4l" id="5oh1xNF6HA0" role="2WV$Zc">
+      <ref role="2WVz4k" node="7H4Lpx0an3A" resolve="Text" />
+    </node>
+    <node concept="2WVz4l" id="5oh1xNF6HA1" role="2WV$Zc">
+      <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
+    </node>
+    <node concept="2WVz4l" id="5oh1xNF6HA2" role="2WV$Zc">
+      <ref role="2WVz4k" node="1Yc3x6zoTLW" resolve="Visibility" />
+    </node>
+    <node concept="Uqd12" id="5oh1xNF6HA3" role="Urcx0">
+      <ref role="Uq8ev" node="2exRXkpLSVB" resolve="Click" />
+      <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
+    </node>
   </node>
 </model>
 

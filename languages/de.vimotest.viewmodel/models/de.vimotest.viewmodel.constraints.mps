@@ -168,7 +168,7 @@
     <property role="3GE5qa" value="widgets.image" />
     <ref role="1M2myG" to="at53:2s$w3BDwT7a" resolve="ImageDefinitionRef" />
     <node concept="1N5Pfh" id="9CTo7lojBS" role="1Mr941">
-      <ref role="1N5Vy1" to="at53:2s$w3BDwT7b" />
+      <ref role="1N5Vy1" to="at53:2s$w3BDwT7b" resolve="image" />
       <node concept="3dgokm" id="9CTo7lowSl" role="1N6uqs">
         <node concept="3clFbS" id="9CTo7lowSm" role="2VODD2">
           <node concept="3cpWs8" id="9CTo7loy2Q" role="3cqZAp">
@@ -379,7 +379,7 @@
               <node concept="2DD5aU" id="30uXY1Shp0B" role="2Oq$k0" />
               <node concept="2Zo12i" id="30uXY1Shp0C" role="2OqNvi">
                 <node concept="chp4Y" id="30uXY1Shp0D" role="2Zo12j">
-                  <ref role="cht4Q" to="at53:30uXY1Sh9ET" resolve="IStructuredWidget" />
+                  <ref role="cht4Q" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
                 </node>
               </node>
             </node>
@@ -417,7 +417,27 @@
                   <node concept="1uHKPH" id="5ZbqeTIczBk" role="2OqNvi" />
                 </node>
                 <node concept="3Tsc0h" id="5ZbqeTIc$jj" role="2OqNvi">
-                  <ref role="3TtcxE" to="at53:4TXqppWtP_y" />
+                  <ref role="3TtcxE" to="at53:4TXqppWtP_y" resolve="defaultEntries" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6LujpsVKDD4">
+    <property role="3GE5qa" value="commands.base" />
+    <ref role="1M2myG" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+    <node concept="9SLcT" id="6LujpsVKIs5" role="9SGkU">
+      <node concept="3clFbS" id="6LujpsVKIs6" role="2VODD2">
+        <node concept="3clFbF" id="6LujpsVKIDG" role="3cqZAp">
+          <node concept="3fqX7Q" id="6LujpsVKUqJ" role="3clFbG">
+            <node concept="2OqwBi" id="6LujpsVKUqL" role="3fr31v">
+              <node concept="2DD5aU" id="6LujpsVKUqM" role="2Oq$k0" />
+              <node concept="2Zo12i" id="6LujpsVKUqN" role="2OqNvi">
+                <node concept="chp4Y" id="6LujpsVKUqO" role="2Zo12j">
+                  <ref role="cht4Q" to="at53:F907haLIRF" resolve="ViewWidget" />
                 </node>
               </node>
             </node>

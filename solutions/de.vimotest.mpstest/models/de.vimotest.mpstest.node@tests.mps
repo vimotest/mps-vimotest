@@ -9,6 +9,7 @@
   </languages>
   <imports>
     <import index="ey2d" ref="r:4b76872e-a479-42fe-b934-573dd0213318(de.vimotest.viewmodel.testing.typesystem)" />
+    <import index="qxop" ref="r:3c7fc163-98a8-48c7-aca8-c4e3c515be4e(de.vimotest.viewmodel.typesystem)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -80,6 +81,19 @@
       <concept id="9208231005772576871" name="de.vimotest.viewmodel.structure.AbstractViewModelParameterizedCommand" flags="ng" index="231sOC">
         <property id="1008128444466031715" name="hasParameters" index="2hCfGp" />
       </concept>
+      <concept id="4696656866608863471" name="de.vimotest.viewmodel.structure.ComboBoxEntriesFeature" flags="ng" index="7cNxA" />
+      <concept id="4696656866608863472" name="de.vimotest.viewmodel.structure.SelectedEntryFeature" flags="ng" index="7cNxT" />
+      <concept id="4696656866608863489" name="de.vimotest.viewmodel.structure.ComboBoxWidget" flags="ng" index="7cNA8">
+        <child id="4696656866608863491" name="selectedEntryFeature" index="7cNAa" />
+        <child id="4696656866608863490" name="comboBoxEntriesFeature" index="7cNAb" />
+        <child id="4696656866608863493" name="visibilityFeature" index="7cNAc" />
+        <child id="4696656866608863492" name="textFeature" index="7cNAd" />
+        <child id="4696656866608863494" name="enabledFeature" index="7cNAf" />
+        <child id="6201744883133776083" name="fillTextCommand" index="2WQ0rf" />
+      </concept>
+      <concept id="5213916851000129488" name="de.vimotest.viewmodel.structure.VisibilityFeature" flags="ng" index="C4FCg" />
+      <concept id="5213916851000129489" name="de.vimotest.viewmodel.structure.EnabledFeature" flags="ng" index="C4FCh" />
+      <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6" />
       <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommands" flags="ng" index="103ZXx">
         <child id="777152910169039599" name="commands" index="1006ar" />
       </concept>
@@ -88,6 +102,7 @@
         <child id="777152910168882975" name="viewModelData" index="103ZXF" />
       </concept>
       <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelData" flags="ng" index="103ZXB" />
+      <concept id="7283258543666616096" name="de.vimotest.viewmodel.structure.FillTextCommand" flags="ng" index="3Vw88I" />
       <concept id="7283258543666616097" name="de.vimotest.viewmodel.structure.LoadCommand" flags="ng" index="3Vw88J" />
     </language>
   </registry>
@@ -149,6 +164,35 @@
                   </node>
                 </node>
                 <node concept="7CXmI" id="63ktVPtYQH3" role="lGtFl" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="63ktVPu4rvs">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="Typesystem_ViewWidgetCommandTests" />
+    <node concept="1qefOq" id="63ktVPu4rvt" role="1SKRRt">
+      <node concept="103ZX$" id="63ktVPu4rvu" role="1qenE9">
+        <property role="TrG5h" value="MyViewModel_View" />
+        <node concept="103ZXx" id="63ktVPu4rvv" role="103ZXC" />
+        <node concept="103ZXB" id="63ktVPu4rvz" role="103ZXF">
+          <node concept="7cNA8" id="63ktVPu4znc" role="103ZUC">
+            <property role="TrG5h" value="MyComboBox" />
+            <node concept="7cNxA" id="63ktVPu4znd" role="7cNAb" />
+            <node concept="7cNxT" id="63ktVPu4zne" role="7cNAa" />
+            <node concept="V3Zf6" id="63ktVPu4znf" role="7cNAd" />
+            <node concept="C4FCg" id="63ktVPu4zng" role="7cNAc" />
+            <node concept="C4FCh" id="63ktVPu4znh" role="7cNAf" />
+            <node concept="3Vw88I" id="63ktVPu4zni" role="2WQ0rf">
+              <node concept="7CXmI" id="63ktVPu4znj" role="lGtFl">
+                <node concept="1TM$A" id="63ktVPu4znk" role="7EUXB">
+                  <node concept="2PYRI3" id="63ktVPu4zSE" role="3lydEf">
+                    <ref role="39XzEq" to="qxop:63ktVPu45Re" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

@@ -4,6 +4,7 @@
   <languages>
     <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="0" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -45,8 +46,12 @@
       </concept>
       <concept id="1202776937179" name="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" flags="lg" index="b5Tf3" />
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
+        <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
+      </concept>
+      <concept id="1177093525992" name="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" flags="lg" index="gft3U">
+        <child id="1177093586806" name="templateNode" index="gfFT$" />
       </concept>
       <concept id="1168559333462" name="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" flags="ln" index="j$656" />
       <concept id="1112730859144" name="jetbrains.mps.lang.generator.structure.TemplateSwitch" flags="ig" index="jVnub">
@@ -56,9 +61,14 @@
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
       </concept>
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
+      <concept id="1200911316486" name="jetbrains.mps.lang.generator.structure.MappingLabelDeclaration" flags="lg" index="2rT7sh">
+        <reference id="1200911342686" name="sourceConcept" index="2rTdP9" />
+        <reference id="1200913004646" name="targetConcept" index="2rZz_L" />
+      </concept>
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ngI" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
       </concept>
+      <concept id="5133195082121471908" name="jetbrains.mps.lang.generator.structure.LabelMacro" flags="ln" index="2ZBi8u" />
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
@@ -72,6 +82,9 @@
       </concept>
       <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="ln" index="17Uvod">
         <child id="1167756362303" name="propertyValueFunction" index="3zH0cK" />
+      </concept>
+      <concept id="1087833466690" name="jetbrains.mps.lang.generator.structure.NodeMacro" flags="lg" index="17VmuZ">
+        <reference id="1200912223215" name="mappingLabel" index="2rW$FS" />
       </concept>
       <concept id="1167327847730" name="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" flags="lg" index="3aamgX">
         <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
@@ -90,6 +103,13 @@
         <child id="1167770376702" name="referentFunction" index="3$ytzL" />
       </concept>
     </language>
+    <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
+      <concept id="1216860049627" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOutputByLabelAndInput" flags="nn" index="1iwH70">
+        <reference id="1216860049628" name="label" index="1iwH77" />
+        <child id="1216860049632" name="inputNode" index="1iwH7V" />
+      </concept>
+      <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
+    </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
       <concept id="4733039728785194814" name="jetbrains.mps.lang.modelapi.structure.NamedNodeReference" flags="ng" index="ZC_QK">
         <reference id="7256306938026143658" name="target" index="2aWVGs" />
@@ -106,9 +126,17 @@
       <concept id="7400021826774799413" name="jetbrains.mps.lang.smodel.structure.NodePointerExpression" flags="ng" index="2tJFMh">
         <child id="7400021826774799510" name="ref" index="2tJFKM" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
+      </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -182,6 +210,11 @@
   </registry>
   <node concept="bUwia" id="RUuBjGfq2J">
     <property role="TrG5h" value="main" />
+    <node concept="2rT7sh" id="247DgsTs_Mj" role="2rTMjI">
+      <property role="TrG5h" value="IRowBasedViewWidget_ClassDefinition" />
+      <ref role="2rTdP9" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
+      <ref role="2rZz_L" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
+    </node>
     <node concept="3aamgX" id="2evlxT94aDr" role="3acgRq">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUuu6dE" resolve="ViewWidgetCommand" />
@@ -233,6 +266,11 @@
         </node>
       </node>
       <node concept="b5Tf3" id="2evlxT95dWa" role="1lVwrX" />
+    </node>
+    <node concept="3lhOvk" id="247DgsTsc0Z" role="3lj3bC">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
+      <ref role="3lhOvi" node="247DgsTsciR" resolve="root_mapping_WidgetRow" />
     </node>
     <node concept="3lhOvk" id="YSmflIzKT0" role="3lj3bC">
       <ref role="30HIoZ" to="at53:F907haLJWg" resolve="ViewModel" />
@@ -599,6 +637,110 @@
           <node concept="raruj" id="2evlxT95PwZ" role="lGtFl" />
         </node>
       </node>
+    </node>
+    <node concept="3aamgX" id="247DgsTsBpn" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:2lm5WNlbZLf" resolve="WidgetListRowsFeature" />
+      <node concept="gft3U" id="247DgsTsBpr" role="1lVwrX">
+        <node concept="3xHE8C" id="247DgsTsBpv" role="gfFT$">
+          <node concept="2RqM1Q" id="247DgsTsBpw" role="_vnH8">
+            <node concept="1ZhdrF" id="247DgsTsBpz" role="lGtFl">
+              <property role="2qtEX8" value="target" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <node concept="3$xsQk" id="247DgsTsBp$" role="3$ytzL">
+                <node concept="3clFbS" id="247DgsTsBp_" role="2VODD2">
+                  <node concept="3clFbF" id="247DgsTsBqg" role="3cqZAp">
+                    <node concept="2OqwBi" id="247DgsTsBDZ" role="3clFbG">
+                      <node concept="1iwH7S" id="247DgsTsBqf" role="2Oq$k0" />
+                      <node concept="1iwH70" id="247DgsTsBJM" role="2OqNvi">
+                        <ref role="1iwH77" node="247DgsTs_Mj" resolve="IRowBasedViewWidget_ClassDefinition" />
+                        <node concept="1PxgMI" id="247DgsTsDzJ" role="1iwH7V">
+                          <property role="1BlNFB" value="true" />
+                          <node concept="chp4Y" id="247DgsTsD_t" role="3oSUPX">
+                            <ref role="cht4Q" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
+                          </node>
+                          <node concept="2OqwBi" id="247DgsTsCgs" role="1m5AlR">
+                            <node concept="30H73N" id="247DgsTsBWa" role="2Oq$k0" />
+                            <node concept="1mfA1w" id="247DgsTsCxI" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3mGtxK" id="247DgsTsciR">
+    <property role="TrG5h" value="map_IRowBasedViewWidget" />
+    <node concept="2qCqA3" id="247DgsTsczk" role="3mGtxP">
+      <property role="PCHHn" value="6OepWIVA92I/package" />
+      <property role="TrG5h" value="root_mapping_WidgetRow" />
+      <node concept="17Uvod" id="247DgsTsemk" role="lGtFl">
+        <property role="2qtEX9" value="name" />
+        <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+        <node concept="3zFVjK" id="247DgsTsemn" role="3zH0cK">
+          <node concept="3clFbS" id="247DgsTsemo" role="2VODD2">
+            <node concept="3clFbF" id="247DgsTsemu" role="3cqZAp">
+              <node concept="2OqwBi" id="247DgsTsemp" role="3clFbG">
+                <node concept="3TrcHB" id="247DgsTsems" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:hnGE5uv" resolve="virtualPackage" />
+                </node>
+                <node concept="30H73N" id="247DgsTsemt" role="2Oq$k0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="6nSm2" id="247DgsTseCX" role="PCHHv">
+        <property role="TrG5h" value="WidgetRow" />
+        <node concept="17Uvod" id="247DgsTseWa" role="lGtFl">
+          <property role="2qtEX9" value="name" />
+          <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+          <node concept="3zFVjK" id="247DgsTseWd" role="3zH0cK">
+            <node concept="3clFbS" id="247DgsTseWe" role="2VODD2">
+              <node concept="3clFbF" id="247DgsTsr3G" role="3cqZAp">
+                <node concept="2YIFZM" id="247DgsTsr$r" role="3clFbG">
+                  <ref role="37wK5l" to="jrwo:247DgsTsl9F" resolve="getRowClassName" />
+                  <ref role="1Pybhc" to="jrwo:2evlxT94KqS" resolve="GeneratorNameHelper" />
+                  <node concept="30H73N" id="247DgsTsrP2" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="6lMYc" id="247DgsTss5T" role="PCHHv">
+          <node concept="3xHEo_" id="247DgsTss5U" role="3xMlr6" />
+          <node concept="2b32R4" id="247DgsTssn0" role="lGtFl">
+            <node concept="3JmXsc" id="247DgsTssn1" role="2P8S$">
+              <node concept="3clFbS" id="247DgsTssn2" role="2VODD2">
+                <node concept="3clFbF" id="247DgsTssuV" role="3cqZAp">
+                  <node concept="2OqwBi" id="247DgsTssMI" role="3clFbG">
+                    <node concept="30H73N" id="247DgsTssuU" role="2Oq$k0" />
+                    <node concept="2Rf3mk" id="247DgsTssX8" role="2OqNvi">
+                      <node concept="1xMEDy" id="247DgsTssXa" role="1xVPHs">
+                        <node concept="chp4Y" id="247DgsTstoN" role="ri$Ld">
+                          <ref role="cht4Q" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2ZBi8u" id="247DgsTsB1N" role="lGtFl">
+          <ref role="2rW$FS" node="247DgsTs_Mj" resolve="IRowBasedViewWidget_ClassDefinition" />
+        </node>
+      </node>
+    </node>
+    <node concept="n94m4" id="247DgsTsciT" role="lGtFl">
+      <ref role="n9lRv" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
     </node>
   </node>
 </model>

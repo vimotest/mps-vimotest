@@ -99,6 +99,9 @@
     <node concept="PrWs8" id="2Yd1qrJOhxd" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="3JF9X1LtOg9" role="PzmwI">
+      <ref role="PrY4T" to="at53:3JF9X1LrZr1" resolve="IHasNamespace" />
+    </node>
     <node concept="PrWs8" id="6fZwY6ifrMs" role="PzmwI">
       <ref role="PrY4T" to="at53:2ZnRpGqKU3p" resolve="ILinkedViewModelTest" />
     </node>

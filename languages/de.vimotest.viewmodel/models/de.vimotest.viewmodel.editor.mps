@@ -266,6 +266,7 @@
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -362,6 +363,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -696,6 +698,12 @@
         </node>
       </node>
       <node concept="l2Vlx" id="F907haLJV$" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="3JF9X1LrZfI" role="6VMZX">
+      <node concept="l2Vlx" id="3JF9X1LrZfJ" role="2iSdaV" />
+      <node concept="PMmxH" id="3JF9X1LtDkJ" role="3EZMnx">
+        <ref role="PMmxG" node="3JF9X1LtxCE" resolve="IHasNamespace_EC" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="F907haLQW8">
@@ -3240,6 +3248,35 @@
         </node>
       </node>
       <node concept="l2Vlx" id="1RiAxJSgJ3p" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="3JF9X1LtxCE">
+    <property role="TrG5h" value="IHasNamespace_EC" />
+    <property role="3GE5qa" value="util" />
+    <ref role="1XX52x" to="at53:3JF9X1LrZr1" resolve="IHasNamespace" />
+    <node concept="3EZMnI" id="3JF9X1LtxCF" role="2wV5jI">
+      <node concept="3F0ifn" id="3JF9X1LtxCG" role="3EZMnx">
+        <property role="3F0ifm" value="namespace:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0A7n" id="3JF9X1LtxCH" role="3EZMnx">
+        <property role="1$x2rV" value="&lt;virtualPackage&gt;" />
+        <ref role="1NtTu8" to="at53:3JF9X1Ls77z" resolve="namespace" />
+      </node>
+      <node concept="l2Vlx" id="3JF9X1LtxCI" role="2iSdaV" />
+      <node concept="pkWqt" id="3JF9X1LtxCJ" role="pqm2j">
+        <node concept="3clFbS" id="3JF9X1LtxCK" role="2VODD2">
+          <node concept="3clFbF" id="3JF9X1LtxCL" role="3cqZAp">
+            <node concept="3clFbC" id="3JF9X1LtxCM" role="3clFbG">
+              <node concept="pncrf" id="3JF9X1LtxCN" role="3uHU7w" />
+              <node concept="2OqwBi" id="3JF9X1LtxCO" role="3uHU7B">
+                <node concept="pncrf" id="3JF9X1LtxCP" role="2Oq$k0" />
+                <node concept="2Rxl7S" id="3JF9X1LtxCQ" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

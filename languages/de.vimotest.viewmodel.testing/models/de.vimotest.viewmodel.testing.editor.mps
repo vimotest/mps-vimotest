@@ -1037,6 +1037,12 @@
       </node>
       <node concept="l2Vlx" id="2Yd1qrJOhwV" role="2iSdaV" />
     </node>
+    <node concept="3EZMnI" id="3JF9X1LtP4n" role="6VMZX">
+      <node concept="l2Vlx" id="3JF9X1LtP4o" role="2iSdaV" />
+      <node concept="PMmxH" id="3JF9X1LtPes" role="3EZMnx">
+        <ref role="PMmxG" to="czmc:3JF9X1LtxCE" resolve="IHasNamespace_EC" />
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="3JdhG1lSFbG">
     <property role="3GE5qa" value="test.description" />

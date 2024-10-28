@@ -119,6 +119,9 @@
     <node concept="PrWs8" id="F907haLJWq" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="3JF9X1Ltwwn" role="PzmwI">
+      <ref role="PrY4T" node="3JF9X1LrZr1" resolve="IHasNamespace" />
+    </node>
     <node concept="PrWs8" id="1F_Q10zW1eJ" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
@@ -987,6 +990,16 @@
       <property role="IQ2nx" value="2148949417128533843" />
       <property role="TrG5h" value="rowHandleKind" />
       <ref role="AX2Wp" node="1RiAxJSerz5" resolve="RowHandleKind" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3JF9X1LrZr1">
+    <property role="EcuMT" value="4317588443974596289" />
+    <property role="3GE5qa" value="util" />
+    <property role="TrG5h" value="IHasNamespace" />
+    <node concept="1TJgyi" id="3JF9X1Ls77z" role="1TKVEl">
+      <property role="IQ2nx" value="4317588443974627811" />
+      <property role="TrG5h" value="namespace" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

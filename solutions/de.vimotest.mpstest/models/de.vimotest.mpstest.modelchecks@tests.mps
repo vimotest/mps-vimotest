@@ -174,8 +174,15 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
@@ -329,6 +336,10 @@
               </node>
             </node>
           </node>
+          <node concept="15s5l7" id="3JF9X1LVdiU" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;" />
+            <property role="huDt6" value="all typesystem messages" />
+          </node>
         </node>
         <node concept="3cpWs8" id="1qpEqOW5$_e" role="3cqZAp">
           <node concept="3cpWsn" id="1qpEqOW5$_f" role="3cpWs9">
@@ -422,6 +433,10 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="15s5l7" id="3JF9X1LV7mI" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;" />
+            <property role="huDt6" value="all typesystem messages" />
           </node>
         </node>
         <node concept="3clFbH" id="1qpEqOW5IhF" role="3cqZAp" />
@@ -529,6 +544,10 @@
                   </node>
                 </node>
               </node>
+              <node concept="15s5l7" id="3JF9X1LV9gR" role="lGtFl">
+                <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;" />
+                <property role="huDt6" value="all typesystem messages" />
+              </node>
             </node>
             <node concept="3clFbJ" id="2SV$eY7CX9y" role="3cqZAp">
               <node concept="3clFbS" id="2SV$eY7CX9$" role="3clFbx">
@@ -619,6 +638,10 @@
                         </node>
                       </node>
                     </node>
+                  </node>
+                  <node concept="15s5l7" id="3JF9X1LVbB5" role="lGtFl">
+                    <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;" />
+                    <property role="huDt6" value="all typesystem messages" />
                   </node>
                 </node>
               </node>

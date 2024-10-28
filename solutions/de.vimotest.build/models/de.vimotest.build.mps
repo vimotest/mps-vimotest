@@ -351,11 +351,6 @@
               </node>
             </node>
           </node>
-          <node concept="1SiIV0" id="3JF9X1LrEQH" role="3bR37C">
-            <node concept="3bR9La" id="3JF9X1LrEQI" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:3qkjbZn7ZwK" resolve="jetbrains.mps.lang.constraints.rules#01" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="3JF9X1LrEQJ" role="3bR37C">
             <node concept="3bR9La" id="3JF9X1LrEQK" role="1SiIV1">
               <ref role="3bR37D" to="mk2q:5tK9548cRt6" resolve="alfi.StandardModelLibrary" />
@@ -516,34 +511,6 @@
             </node>
             <node concept="3qWCbU" id="220dcIkyAk3" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
-        </node>
-        <node concept="1yeLz9" id="220dcIkyAk4" role="1TViLv">
-          <property role="TrG5h" value="de.vimotest.types.generator" />
-          <property role="3LESm3" value="ad92e020-9ed2-4620-9358-32e8708bc057" />
-          <node concept="1BupzO" id="220dcIkyAka" role="3bR31x">
-            <property role="3ZfqAx" value="generator/templates" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="220dcIkyAkb" role="1HemKq">
-              <node concept="55IIr" id="220dcIkyAk5" role="3LXTmr">
-                <node concept="2Ry0Ak" id="220dcIkyAk6" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="220dcIkyAk7" role="2Ry0An">
-                    <property role="2Ry0Am" value="de.vimotest.types" />
-                    <node concept="2Ry0Ak" id="220dcIkyAk8" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="220dcIkyAk9" role="2Ry0An">
-                        <property role="2Ry0Am" value="templates" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="220dcIkyAkc" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
             </node>
           </node>
         </node>

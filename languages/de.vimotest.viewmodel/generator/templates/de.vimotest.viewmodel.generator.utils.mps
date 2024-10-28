@@ -9,6 +9,7 @@
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="at53" ref="r:9e3a5843-688b-4c6d-b3dd-9f321700c21b(de.vimotest.viewmodel.structure)" implicit="true" />
   </imports>
   <registry>
@@ -120,15 +121,26 @@
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
-              <node concept="2OqwBi" id="247DgsTsIgB" role="3uHU7w">
-                <node concept="2OqwBi" id="247DgsTsIgC" role="2Oq$k0">
-                  <node concept="37vLTw" id="247DgsTsIgD" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2evlxT94RVJ" resolve="command" />
+              <node concept="2OqwBi" id="3JF9X1M6gMj" role="3uHU7w">
+                <node concept="2OqwBi" id="247DgsTsIgB" role="2Oq$k0">
+                  <node concept="2OqwBi" id="247DgsTsIgC" role="2Oq$k0">
+                    <node concept="37vLTw" id="247DgsTsIgD" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2evlxT94RVJ" resolve="command" />
+                    </node>
+                    <node concept="2yIwOk" id="247DgsTsIgE" role="2OqNvi" />
                   </node>
-                  <node concept="2yIwOk" id="247DgsTsIgE" role="2OqNvi" />
+                  <node concept="liA8E" id="247DgsTsIgF" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+                  </node>
                 </node>
-                <node concept="liA8E" id="247DgsTsIgF" role="2OqNvi">
-                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+                <node concept="liA8E" id="3JF9X1M6hDH" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
+                  <node concept="Xl_RD" id="3JF9X1M6i5h" role="37wK5m">
+                    <property role="Xl_RC" value="Command" />
+                  </node>
+                  <node concept="Xl_RD" id="3JF9X1M6iJ9" role="37wK5m">
+                    <property role="Xl_RC" value="" />
+                  </node>
                 </node>
               </node>
             </node>

@@ -6035,6 +6035,34 @@
         <ref role="ehGHo" to="at53:L9c2Y9pj53" />
       </node>
     </node>
+    <node concept="13i0hz" id="3JF9X1M5_eR" role="13h7CS">
+      <property role="TrG5h" value="getRowKindOwner" />
+      <node concept="3Tm1VV" id="3JF9X1M5_eS" role="1B3o_S" />
+      <node concept="3Tqbb2" id="3JF9X1M5_sW" role="3clF45">
+        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+      </node>
+      <node concept="3clFbS" id="3JF9X1M5_eU" role="3clF47">
+        <node concept="3cpWs6" id="3JF9X1M5_uu" role="3cqZAp">
+          <node concept="2OqwBi" id="3JF9X1M5AZZ" role="3cqZAk">
+            <node concept="1PxgMI" id="3JF9X1M5AFq" role="2Oq$k0">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="3JF9X1M5AKQ" role="3oSUPX">
+                <ref role="cht4Q" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
+              </node>
+              <node concept="2OqwBi" id="3JF9X1M5_E5" role="1m5AlR">
+                <node concept="13iPFW" id="3JF9X1M5_v2" role="2Oq$k0" />
+                <node concept="2qgKlT" id="3JF9X1M5_OP" role="2OqNvi">
+                  <ref role="37wK5l" node="1F_Q10zSZF3" resolve="getWidget" />
+                </node>
+              </node>
+            </node>
+            <node concept="2qgKlT" id="3JF9X1M5Bc0" role="2OqNvi">
+              <ref role="37wK5l" node="2w4bAIFM8vc" resolve="getRowHandleKindOwner" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="63ktVPudUAz">
     <property role="TrG5h" value="SelectEntryCommand_Behavior" />

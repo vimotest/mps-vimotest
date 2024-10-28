@@ -351,6 +351,21 @@
               </node>
             </node>
           </node>
+          <node concept="1SiIV0" id="3JF9X1LrEQH" role="3bR37C">
+            <node concept="3bR9La" id="3JF9X1LrEQI" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:3qkjbZn7ZwK" resolve="jetbrains.mps.lang.constraints.rules#01" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="3JF9X1LrEQJ" role="3bR37C">
+            <node concept="3bR9La" id="3JF9X1LrEQK" role="1SiIV1">
+              <ref role="3bR37D" to="mk2q:5tK9548cRt6" resolve="alfi.StandardModelLibrary" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="3JF9X1LrEQL" role="3bR37C">
+            <node concept="3bR9La" id="3JF9X1LrEQM" role="1SiIV1">
+              <ref role="3bR37D" to="mk2q:5tK9548cRi8" resolve="alfi" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="220dcIkyGqa" role="3bR37C">
           <node concept="1Busua" id="220dcIkyGqb" role="1SiIV1">
@@ -375,6 +390,11 @@
         <node concept="1SiIV0" id="1MiWmuItS3V" role="3bR37C">
           <node concept="3bR9La" id="1MiWmuItS3W" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L5j" resolve="jetbrains.mps.lang.editor.table.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3JF9X1LrEQF" role="3bR37C">
+          <node concept="Rbm2T" id="3JF9X1LrEQG" role="1SiIV1">
+            <ref role="1E1Vl2" to="mk2q:5tK9548cRi8" resolve="alfi" />
           </node>
         </node>
       </node>

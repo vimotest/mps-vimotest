@@ -244,6 +244,11 @@
   </registry>
   <node concept="bUwia" id="RUuBjGfq2J">
     <property role="TrG5h" value="main" />
+    <node concept="2rT7sh" id="2KQA9MxTmGp" role="2rTMjI">
+      <property role="TrG5h" value="ViewModel_ClassDefinition" />
+      <ref role="2rTdP9" to="at53:F907haLJWg" resolve="ViewModel" />
+      <ref role="2rZz_L" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
+    </node>
     <node concept="2rT7sh" id="247DgsTs_Mj" role="2rTMjI">
       <property role="TrG5h" value="IRowBasedViewWidget_ClassDefinition" />
       <ref role="2rTdP9" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
@@ -438,6 +443,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="2ZBi8u" id="2KQA9MxTpEu" role="lGtFl">
+        <ref role="2rW$FS" node="2KQA9MxTmGp" resolve="ViewModel_ClassDefinition" />
       </node>
     </node>
   </node>

@@ -26,6 +26,7 @@
       <external-templates />
       <dependencies>
         <dependency reexport="false">e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)</dependency>
+        <dependency reexport="false" scope="design">31ed4199-712b-4e4a-b792-2c1662ed3b0d(de.vimotest.viewmodel.generator)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" version="0" />
@@ -56,12 +57,28 @@
         <module reference="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" version="0" />
         <module reference="611ecc9e-0703-4ab9-a13c-fb396c607716(de.vimotest.types)" version="0" />
         <module reference="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0(de.vimotest.viewmodel)" version="0" />
+        <module reference="31ed4199-712b-4e4a-b792-2c1662ed3b0d(de.vimotest.viewmodel.generator)" version="0" />
         <module reference="716e8717-88c0-4280-8c16-b4d88567596f(de.vimotest.viewmodel.testing)" version="0" />
         <module reference="75b45ab1-ab60-4e56-9499-3ebb61ad3411(de.vimotest.viewmodel.testing.generator)" version="0" />
         <module reference="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
       </dependencyVersions>
-      <mapping-priorities />
+      <mapping-priorities>
+        <mapping-priority-rule kind="strictly_together">
+          <greater-priority-mapping>
+            <generator generatorUID="75b45ab1-ab60-4e56-9499-3ebb61ad3411(de.vimotest.viewmodel.testing.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:6a61e065-5649-42c6-b0ca-3da4fcbb83a1(de.vimotest.viewmodel.testing.generator.templates@generator)" nodeID="477382408145435546" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="31ed4199-712b-4e4a-b792-2c1662ed3b0d(de.vimotest.viewmodel.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:82509cd6-30ba-42e3-82e0-e58184c3d7f7(de.vimotest.viewmodel.generator.templates@generator)" nodeID="1007252109268983983" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+      </mapping-priorities>
     </generator>
   </generators>
   <dependencies>

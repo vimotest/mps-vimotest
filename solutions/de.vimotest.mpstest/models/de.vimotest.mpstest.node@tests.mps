@@ -128,7 +128,7 @@
     <node concept="1qefOq" id="63ktVPtYQz5" role="1SKRRt">
       <node concept="30n1Qd" id="63ktVPtYQzt" role="1qenE9">
         <property role="TrG5h" value="TestSuite" />
-        <ref role="30n1PB" node="63ktVPtYQys" resolve="MyViewModel" />
+        <ref role="30n1PB" node="63ktVPtYQys" resolve="MyViewModel_View" />
         <node concept="3LKzX3" id="63ktVPtYQzu" role="30n1Qb">
           <property role="TrG5h" value="Scenario" />
           <node concept="1s$VFG" id="63ktVPtYQzx" role="1s$QAY">

@@ -347,7 +347,7 @@
             <node concept="3uibUv" id="1qpEqOW5$xE" role="1tU5fm">
               <ref role="3uigEE" to="k2t0:~IAbstractChecker" resolve="IAbstractChecker" />
               <node concept="3uibUv" id="1qpEqOW5$xJ" role="11_B2D">
-                <ref role="3uigEE" to="k2t0:~ModelCheckerBuilder$ItemsToCheck" resolve="ItemsToCheck" />
+                <ref role="3uigEE" to="k2t0:~ModelCheckerBuilder$ItemsToCheck" resolve="ModelCheckerBuilder.ItemsToCheck" />
               </node>
               <node concept="3uibUv" id="1qpEqOW5$xK" role="11_B2D">
                 <ref role="3uigEE" to="d6hs:~IssueKindReportItem" resolve="IssueKindReportItem" />
@@ -466,11 +466,11 @@
           <node concept="3cpWsn" id="1qpEqOW5_W3" role="3cpWs9">
             <property role="TrG5h" value="itemsToCheck" />
             <node concept="3uibUv" id="1qpEqOW5_Se" role="1tU5fm">
-              <ref role="3uigEE" to="k2t0:~ModelCheckerBuilder$ItemsToCheck" resolve="ItemsToCheck" />
+              <ref role="3uigEE" to="k2t0:~ModelCheckerBuilder$ItemsToCheck" resolve="ModelCheckerBuilder.ItemsToCheck" />
             </node>
             <node concept="2YIFZM" id="37zNn5M269n" role="33vP2m">
               <ref role="37wK5l" to="k2t0:~ModelCheckerBuilder$ItemsToCheck.forSingleModel(org.jetbrains.mps.openapi.model.SModel)" resolve="forSingleModel" />
-              <ref role="1Pybhc" to="k2t0:~ModelCheckerBuilder$ItemsToCheck" resolve="ItemsToCheck" />
+              <ref role="1Pybhc" to="k2t0:~ModelCheckerBuilder$ItemsToCheck" resolve="ModelCheckerBuilder.ItemsToCheck" />
               <node concept="37vLTw" id="37zNn5M27yV" role="37wK5m">
                 <ref role="3cqZAo" node="1qpEqOW5Hlp" resolve="model" />
               </node>

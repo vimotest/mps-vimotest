@@ -10611,7 +10611,7 @@
         <node concept="3clFbF" id="13sxcsThp1" role="3cqZAp">
           <node concept="37vLTI" id="13sxcsThp2" role="3clFbG">
             <node concept="1rXfSq" id="13sxcsThp3" role="37vLTx">
-              <ref role="37wK5l" node="63ktVPu52Ij" resolve="getConceptName" />
+              <ref role="37wK5l" node="63ktVPu52Ij" resolve="getBehaviorName" />
               <node concept="37vLTw" id="13sxcsThp4" role="37wK5m">
                 <ref role="3cqZAo" node="13sxcsThoR" resolve="commandDefinition" />
               </node>
@@ -10808,7 +10808,7 @@
                 <ref role="3cqZAo" node="63ktVPu5ALT" resolve="behaviorNode" />
               </node>
               <node concept="3TrEf2" id="63ktVPu5AMj" role="2OqNvi">
-                <ref role="3Tt5mk" to="1i04:hP3h7Gv" />
+                <ref role="3Tt5mk" to="1i04:hP3h7Gv" resolve="concept" />
               </node>
             </node>
           </node>
@@ -10895,7 +10895,7 @@
             <node concept="2OqwBi" id="63ktVPu5N7h" role="33vP2m">
               <node concept="2OqwBi" id="63ktVPu5N7i" role="2Oq$k0">
                 <node concept="37vLTw" id="63ktVPu5N7j" role="2Oq$k0">
-                  <ref role="3cqZAo" node="63ktVPu5N6V" resolve="commandUsages" />
+                  <ref role="3cqZAo" node="63ktVPu5N6V" resolve="commandOperatesOnNodes" />
                 </node>
                 <node concept="3$u5V9" id="63ktVPu5N7k" role="2OqNvi">
                   <node concept="1bVj0M" id="63ktVPu5N7l" role="23t8la">
@@ -11033,7 +11033,7 @@
                 <ref role="3cqZAo" node="63ktVPu5ALT" resolve="behaviorNode" />
               </node>
               <node concept="3Tsc0h" id="63ktVPu5N8E" role="2OqNvi">
-                <ref role="3TtcxE" to="1i04:hP3h7G_" />
+                <ref role="3TtcxE" to="1i04:hP3h7G_" resolve="method" />
               </node>
             </node>
             <node concept="TSZUe" id="63ktVPu5N8F" role="2OqNvi">

@@ -106,7 +106,7 @@
             <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
             <node concept="2OqwBi" id="1srqdXUG5JQ" role="37wK5m">
               <node concept="37vLTw" id="1srqdXUG5JR" role="2Oq$k0">
-                <ref role="3cqZAo" node="1srqdXUG5JV" resolve="testScenario" />
+                <ref role="3cqZAo" node="1srqdXUG5JV" resolve="testSuite" />
               </node>
               <node concept="3TrcHB" id="1srqdXUG5JS" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />

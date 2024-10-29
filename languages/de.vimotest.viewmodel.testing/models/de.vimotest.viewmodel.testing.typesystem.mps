@@ -1781,11 +1781,11 @@
                 <ref role="1YBMHb" node="5_TItGJV8qK" resolve="node" />
               </node>
               <node concept="3TrEf2" id="5_TItGJVgoZ" role="2OqNvi">
-                <ref role="3Tt5mk" to="53m0:7KHRfJVn$Y1" />
+                <ref role="3Tt5mk" to="53m0:7KHRfJVn$Y1" resolve="parameters" />
               </node>
             </node>
             <node concept="3Tsc0h" id="5_TItGJVgp0" role="2OqNvi">
-              <ref role="3TtcxE" to="28lk:2kuSLC0oUir" />
+              <ref role="3TtcxE" to="28lk:2kuSLC0oUir" resolve="expression" />
             </node>
           </node>
           <node concept="2es0OD" id="5_TItGJVgp1" role="2OqNvi">

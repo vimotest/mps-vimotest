@@ -334,7 +334,7 @@
     </node>
     <node concept="3lhOvk" id="YSmflIzKT0" role="3lj3bC">
       <ref role="30HIoZ" to="at53:F907haLJWg" resolve="ViewModel" />
-      <ref role="3lhOvi" node="YSmflIzKTk" />
+      <ref role="3lhOvi" node="YSmflIzKTk" resolve="root_mapping_MyViewModel" />
     </node>
   </node>
   <node concept="3mGtxK" id="YSmflIzKTk">
@@ -601,7 +601,7 @@
                   <node concept="3clFbF" id="2evlxT95PFu" role="3cqZAp">
                     <node concept="2tJFMh" id="2evlxT95PFv" role="3clFbG">
                       <node concept="ZC_QK" id="2evlxT95PFw" role="2tJFKM">
-                        <ref role="2aWVGs" to="gkn4:1KdBIfXrfVb" />
+                        <ref role="2aWVGs" to="gkn4:1KdBIfXrfVb" resolve="PrimitiveTypes" />
                         <node concept="ZC_QK" id="2evlxT95PFx" role="2aWVGa">
                           <ref role="2aWVGs" to="gkn4:1KdBIfXrfV9" resolve="PrimitiveTypes" />
                           <node concept="ZC_QK" id="2evlxT95PFy" role="2aWVGa">
@@ -634,7 +634,7 @@
                   <node concept="3clFbF" id="2evlxT95Pgq" role="3cqZAp">
                     <node concept="2tJFMh" id="2evlxT95Pgr" role="3clFbG">
                       <node concept="ZC_QK" id="2evlxT95Pgs" role="2tJFKM">
-                        <ref role="2aWVGs" to="gkn4:1KdBIfXrfVb" />
+                        <ref role="2aWVGs" to="gkn4:1KdBIfXrfVb" resolve="PrimitiveTypes" />
                         <node concept="ZC_QK" id="2evlxT95Pgt" role="2aWVGa">
                           <ref role="2aWVGs" to="gkn4:1KdBIfXrfV9" resolve="PrimitiveTypes" />
                           <node concept="ZC_QK" id="2evlxT95Pgu" role="2aWVGa">
@@ -667,7 +667,7 @@
                   <node concept="3clFbF" id="2evlxT95Pm3" role="3cqZAp">
                     <node concept="2tJFMh" id="2evlxT95Pm4" role="3clFbG">
                       <node concept="ZC_QK" id="2evlxT95Pm5" role="2tJFKM">
-                        <ref role="2aWVGs" to="gkn4:1KdBIfXrfVb" />
+                        <ref role="2aWVGs" to="gkn4:1KdBIfXrfVb" resolve="PrimitiveTypes" />
                         <node concept="ZC_QK" id="2evlxT95Pm6" role="2aWVGa">
                           <ref role="2aWVGs" to="gkn4:1KdBIfXrfV9" resolve="PrimitiveTypes" />
                           <node concept="ZC_QK" id="2evlxT95Pm7" role="2aWVGa">
@@ -700,7 +700,7 @@
                   <node concept="3clFbF" id="2evlxT95PwU" role="3cqZAp">
                     <node concept="2tJFMh" id="2evlxT95PwV" role="3clFbG">
                       <node concept="ZC_QK" id="2evlxT95PwW" role="2tJFKM">
-                        <ref role="2aWVGs" to="gkn4:1KdBIfXrfVb" />
+                        <ref role="2aWVGs" to="gkn4:1KdBIfXrfVb" resolve="PrimitiveTypes" />
                         <node concept="ZC_QK" id="2evlxT95PwX" role="2aWVGa">
                           <ref role="2aWVGs" to="gkn4:1KdBIfXrfV9" resolve="PrimitiveTypes" />
                           <node concept="ZC_QK" id="2evlxT95PwY" role="2aWVGa">

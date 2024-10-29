@@ -134,7 +134,7 @@
     <node concept="3EZMnI" id="F907haLJVx" role="2wV5jI">
       <node concept="PMmxH" id="F907haLJVC" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" node="F907haMqPJ" resolve="KeyWord" />
+        <ref role="1k5W1q" node="F907haMqPJ" resolve="ViMoTestKeyWord" />
       </node>
       <node concept="PMmxH" id="RX_REsnmVz" role="3EZMnx">
         <ref role="PMmxG" node="RX_REsnmVi" resolve="AbstractStructType_Contents_EC" />
@@ -204,7 +204,7 @@
       <node concept="2iRfu4" id="RX_REsnmO0" role="2iSdaV" />
       <node concept="PMmxH" id="RX_REsnmO1" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" node="F907haMqPJ" resolve="KeyWord" />
+        <ref role="1k5W1q" node="F907haMqPJ" resolve="ViMoTestKeyWord" />
       </node>
       <node concept="3F0A7n" id="RX_REsnmO2" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -275,7 +275,7 @@
     <ref role="1XX52x" to="evry:6LujpsVKegj" resolve="BuiltInType" />
     <node concept="PMmxH" id="6LujpsVKo4d" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <ref role="1k5W1q" node="F907haMqPJ" resolve="KeyWord" />
+      <ref role="1k5W1q" node="F907haMqPJ" resolve="ViMoTestKeyWord" />
     </node>
   </node>
 </model>

@@ -137,7 +137,7 @@
     </node>
     <node concept="3lhOvk" id="1srqdXUFWsT" role="3lj3bC">
       <ref role="30HIoZ" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
-      <ref role="3lhOvi" node="1srqdXUFWsU" resolve="map_ViewModelFeatureTestSuite" />
+      <ref role="3lhOvi" node="1srqdXUFWsU" resolve="root_mapping_ViewModelFeatureTestSuite" />
     </node>
   </node>
   <node concept="3mGtxK" id="1srqdXUFWsU">
@@ -174,7 +174,7 @@
           <node concept="3clFbS" id="1srqdXUG5dS" role="2VODD2">
             <node concept="3clFbF" id="1srqdXUG6j8" role="3cqZAp">
               <node concept="2YIFZM" id="1srqdXUG6$9" role="3clFbG">
-                <ref role="37wK5l" to="zcip:1srqdXUG5JM" resolve="getTestSuiteOperationName" />
+                <ref role="37wK5l" to="zcip:1srqdXUG5JM" resolve="getTestSuiteClassName" />
                 <ref role="1Pybhc" to="zcip:2evlxT94KqS" resolve="TestScenarioGeneratorNameHelper" />
                 <node concept="30H73N" id="1srqdXUG6OC" role="37wK5m" />
               </node>

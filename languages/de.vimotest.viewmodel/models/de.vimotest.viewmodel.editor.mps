@@ -453,7 +453,7 @@
     <node concept="3EZMnI" id="F907haLJVx" role="2wV5jI">
       <node concept="PMmxH" id="F907haLJVC" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
         <node concept="xShMh" id="6fEYrkZhuPs" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -732,7 +732,7 @@
     <node concept="3EZMnI" id="F907haMm84" role="2wV5jI">
       <node concept="PMmxH" id="F907haMm85" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
         <node concept="xShMh" id="6fEYrkZhYYP" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1332,7 +1332,7 @@
       <node concept="2iRkQZ" id="2wrhDsWi67X" role="2iSdaV" />
       <node concept="PMmxH" id="L9c2Y9pf$f" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
         <node concept="A1WHr" id="esdQ51LbNo" role="3vIgyS">
           <ref role="2ZyFGn" to="at53:F907haLIRF" resolve="ViewWidget" />
         </node>
@@ -1845,7 +1845,7 @@
     <node concept="3EZMnI" id="6wbjV0Q6qId" role="2wV5jI">
       <node concept="3F0ifn" id="6wbjV0Q6qIp" role="3EZMnx">
         <property role="3F0ifm" value="images" />
-        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
       </node>
       <node concept="3F0A7n" id="2YeT3IB9Gyj" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -1863,7 +1863,7 @@
       </node>
       <node concept="3F0ifn" id="2YeT3IB81gl" role="3EZMnx">
         <property role="3F0ifm" value="closed sets (image enums)" />
-        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
         <node concept="pVoyu" id="2YeT3IB81gn" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -2023,7 +2023,7 @@
     <node concept="3EZMnI" id="2YeT3IBbXKA" role="2wV5jI">
       <node concept="3F0ifn" id="2YeT3IBbXKD" role="3EZMnx">
         <property role="3F0ifm" value="image set" />
-        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
       </node>
       <node concept="3F0A7n" id="2YeT3IBbXKG" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -2139,7 +2139,7 @@
               <property role="1QpmdY" value="true" />
               <node concept="3F0ifn" id="6k2oWGbZUyH" role="1QoS34">
                 <property role="3F0ifm" value="supported" />
-                <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+                <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
                 <node concept="VPM3Z" id="6k2oWGbZU_t" role="3F10Kt" />
               </node>
               <node concept="pkWqt" id="6k2oWGbZTXH" role="3e4ffs">
@@ -2156,7 +2156,7 @@
               </node>
               <node concept="3F0ifn" id="9CTo7lmDcM" role="1QoVPY">
                 <property role="3F0ifm" value="not supported" />
-                <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+                <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
                 <node concept="VPM3Z" id="9CTo7lmDcN" role="3F10Kt" />
               </node>
             </node>
@@ -2188,7 +2188,7 @@
       </node>
       <node concept="3F0ifn" id="9CTo7lmDdc" role="3EZMnx">
         <property role="3F0ifm" value="closed set" />
-        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
         <node concept="pVoyu" id="9CTo7lmDde" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -2768,7 +2768,7 @@
     <node concept="3EZMnI" id="6kjlgUuuhi7" role="2wV5jI">
       <node concept="PMmxH" id="RX_REsnmO1" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
       </node>
       <node concept="l2Vlx" id="6kjlgUuuhig" role="2iSdaV" />
     </node>
@@ -2978,11 +2978,11 @@
         </node>
         <node concept="PMmxH" id="7UthagXVf8e" role="1QoVPY">
           <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
         </node>
         <node concept="3F0ifn" id="7UthagXVrQi" role="1QoS34">
           <property role="3F0ifm" value="widgets" />
-          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
         </node>
       </node>
       <node concept="PMmxH" id="RX_REsnmVz" role="3EZMnx">
@@ -3185,7 +3185,7 @@
     <node concept="3EZMnI" id="1RiAxJSfs_v" role="2wV5jI">
       <node concept="3F0ifn" id="1RiAxJSfs_z" role="3EZMnx">
         <property role="3F0ifm" value="rowhandle kind:" />
-        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="KeyWord" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
       </node>
       <node concept="3F0A7n" id="1RiAxJSfs_A" role="3EZMnx">
         <ref role="1NtTu8" to="at53:1RiAxJSeDXj" resolve="rowHandleKind" />

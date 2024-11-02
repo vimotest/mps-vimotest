@@ -1068,7 +1068,7 @@
   </node>
   <node concept="24kQdi" id="3JdhG1lSFc6">
     <property role="3GE5qa" value="test.description" />
-    <ref role="1XX52x" to="53m0:6tib4XeIJOl" resolve="WhenDescriptionWithActions" />
+    <ref role="1XX52x" to="53m0:6tib4XeIJOl" resolve="WhenDescriptionWithAction" />
     <node concept="3EZMnI" id="6tib4XeIKaC" role="2wV5jI">
       <node concept="PMmxH" id="5_TItGJ75Kk" role="3EZMnx">
         <ref role="PMmxG" node="5_TItGJ6Jmt" resolve="TestDescriptionPart_testBefore_EC" />
@@ -4584,7 +4584,7 @@
   </node>
   <node concept="24kQdi" id="6fEYrkZup0h">
     <property role="3GE5qa" value="test.description" />
-    <ref role="1XX52x" to="53m0:6fEYrkZukdp" resolve="WhenThenDescriptions" />
+    <ref role="1XX52x" to="53m0:6fEYrkZukdp" resolve="ComposedWhenThenParts" />
     <node concept="3EZMnI" id="6fEYrkZutNU" role="2wV5jI">
       <node concept="3F0ifn" id="6tib4XeIJLF" role="3EZMnx">
         <property role="3F0ifm" value=" when" />
@@ -5224,7 +5224,7 @@
   </node>
   <node concept="22mcaB" id="5_TItGJc_j2">
     <property role="3GE5qa" value="test.description" />
-    <ref role="aqKnT" to="53m0:6tib4XeIJOl" resolve="WhenDescriptionWithActions" />
+    <ref role="aqKnT" to="53m0:6tib4XeIJOl" resolve="WhenDescriptionWithAction" />
     <node concept="3N5dw7" id="5_TItGJcG3u" role="3ft7WO">
       <node concept="3N5aqt" id="5_TItGJcG3v" role="3Na0zg">
         <node concept="3clFbS" id="5_TItGJcG3w" role="2VODD2">
@@ -5232,12 +5232,12 @@
             <node concept="3cpWsn" id="5_TItGJcG3y" role="3cpWs9">
               <property role="TrG5h" value="node" />
               <node concept="3Tqbb2" id="5_TItGJcG3z" role="1tU5fm">
-                <ref role="ehGHo" to="53m0:6tib4XeIJOl" resolve="WhenDescriptionWithActions" />
+                <ref role="ehGHo" to="53m0:6tib4XeIJOl" resolve="WhenDescriptionWithAction" />
               </node>
               <node concept="2ShNRf" id="5_TItGJcG3$" role="33vP2m">
                 <node concept="2fJWfE" id="5_TItGJcG3_" role="2ShVmc">
                   <node concept="3Tqbb2" id="5_TItGJcG3A" role="3zrR0E">
-                    <ref role="ehGHo" to="53m0:6tib4XeIJOl" resolve="WhenDescriptionWithActions" />
+                    <ref role="ehGHo" to="53m0:6tib4XeIJOl" resolve="WhenDescriptionWithAction" />
                   </node>
                 </node>
               </node>

@@ -147,7 +147,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="whenThenDescriptions" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="6fEYrkZukdp" resolve="WhenThenDescriptions" />
+      <ref role="20lvS9" node="6fEYrkZukdp" resolve="ComposedWhenThenParts" />
     </node>
     <node concept="PrWs8" id="5_TItGIKXWW" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -363,7 +363,7 @@
   <node concept="1TIwiD" id="6tib4XeIJOl">
     <property role="EcuMT" value="7445061853131767061" />
     <property role="3GE5qa" value="test.description" />
-    <property role="TrG5h" value="WhenDescriptionWithActions" />
+    <property role="TrG5h" value="WhenDescriptionWithAction" />
     <ref role="1TJDcQ" node="3JdhG1lSFbA" resolve="TestDescriptionPart" />
     <node concept="1TJgyj" id="6tib4XeIK96" role="1TKVEi">
       <property role="IQ2ns" value="7445061853131768390" />
@@ -921,14 +921,14 @@
   <node concept="1TIwiD" id="6fEYrkZukdp">
     <property role="EcuMT" value="7199841511154467673" />
     <property role="3GE5qa" value="test.description" />
-    <property role="TrG5h" value="WhenThenDescriptions" />
+    <property role="TrG5h" value="ComposedWhenThenParts" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6fEYrkZup07" role="1TKVEi">
       <property role="IQ2ns" value="7199841511154487303" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="actionsWithDescription" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6tib4XeIJOl" resolve="WhenDescriptionWithActions" />
+      <ref role="20lvS9" node="6tib4XeIJOl" resolve="WhenDescriptionWithAction" />
     </node>
     <node concept="1TJgyj" id="6fEYrkZup08" role="1TKVEi">
       <property role="IQ2ns" value="7199841511154487304" />

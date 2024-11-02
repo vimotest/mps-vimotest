@@ -11286,7 +11286,7 @@
   </node>
   <node concept="13h7C7" id="5_TItGJ6yR2">
     <property role="3GE5qa" value="test.description" />
-    <ref role="13h7C2" to="53m0:6fEYrkZukdp" resolve="WhenThenDescriptions" />
+    <ref role="13h7C2" to="53m0:6fEYrkZukdp" resolve="ComposedWhenThenParts" />
     <node concept="13hLZK" id="5_TItGJ6yR3" role="13h7CW">
       <node concept="3clFbS" id="5_TItGJ6yR4" role="2VODD2">
         <node concept="3clFbF" id="5_TItGJ6DzO" role="3cqZAp">
@@ -11507,7 +11507,7 @@
   </node>
   <node concept="13h7C7" id="1srqdXUMsuI">
     <property role="3GE5qa" value="test.description" />
-    <ref role="13h7C2" to="53m0:6tib4XeIJOl" resolve="WhenDescriptionWithActions" />
+    <ref role="13h7C2" to="53m0:6tib4XeIJOl" resolve="WhenDescriptionWithAction" />
     <node concept="13hLZK" id="1srqdXUMsuJ" role="13h7CW">
       <node concept="3clFbS" id="1srqdXUMsuK" role="2VODD2" />
     </node>

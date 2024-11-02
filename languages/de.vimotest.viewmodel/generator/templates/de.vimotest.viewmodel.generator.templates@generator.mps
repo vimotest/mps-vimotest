@@ -62,7 +62,9 @@
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
       </concept>
-      <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
+      <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj">
+        <reference id="1200916687663" name="labelDeclaration" index="2sdACS" />
+      </concept>
       <concept id="1200911316486" name="jetbrains.mps.lang.generator.structure.MappingLabelDeclaration" flags="lg" index="2rT7sh">
         <reference id="1200911342686" name="sourceConcept" index="2rTdP9" />
         <reference id="1200913004646" name="targetConcept" index="2rZz_L" />
@@ -248,6 +250,11 @@
       <property role="TrG5h" value="ViewModel_ClassDefinition" />
       <ref role="2rTdP9" to="at53:F907haLJWg" resolve="ViewModel" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
+    </node>
+    <node concept="2rT7sh" id="7T8HsuTSUCz" role="2rTMjI">
+      <property role="TrG5h" value="ViewWidgetCommand_OperationDefinition" />
+      <ref role="2rTdP9" to="at53:6kjlgUuu6dE" resolve="ViewWidgetCommand" />
+      <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
     </node>
     <node concept="2rT7sh" id="247DgsTs_Mj" role="2rTMjI">
       <property role="TrG5h" value="IRowBasedViewWidget_ClassDefinition" />
@@ -472,7 +479,9 @@
             </node>
           </node>
           <node concept="PCHzy" id="2evlxT94aEd" role="GbAUv" />
-          <node concept="raruj" id="2evlxT94aEt" role="lGtFl" />
+          <node concept="raruj" id="2evlxT94aEt" role="lGtFl">
+            <ref role="2sdACS" node="7T8HsuTSUCz" resolve="ViewWidgetCommand_OperationDefinition" />
+          </node>
           <node concept="17Uvod" id="2evlxT94aEu" role="lGtFl">
             <property role="2qtEX9" value="name" />
             <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -881,7 +890,9 @@
         <node concept="6nSm6" id="3JF9X1M5gXd" role="PCHHv">
           <property role="TrG5h" value="doCommand" />
           <node concept="PCHzy" id="3JF9X1M5gXe" role="GbAUv" />
-          <node concept="raruj" id="3JF9X1M5gXf" role="lGtFl" />
+          <node concept="raruj" id="3JF9X1M5gXf" role="lGtFl">
+            <ref role="2sdACS" node="7T8HsuTSUCz" resolve="ViewWidgetCommand_OperationDefinition" />
+          </node>
           <node concept="17Uvod" id="3JF9X1M5gXg" role="lGtFl">
             <property role="2qtEX9" value="name" />
             <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />

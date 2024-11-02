@@ -62,7 +62,7 @@
       <concept id="7445061853131767032" name="de.vimotest.viewmodel.testing.structure.ThenDescriptionWithAssert" flags="ng" index="DUd2R">
         <child id="7445061853131768388" name="assert" index="DUiSb" />
       </concept>
-      <concept id="7445061853131767061" name="de.vimotest.viewmodel.testing.structure.WhenDescriptionWithActions" flags="ng" index="DUd5q">
+      <concept id="7445061853131767061" name="de.vimotest.viewmodel.testing.structure.WhenDescriptionWithAction" flags="ng" index="DUd5q">
         <child id="7445061853131768390" name="action" index="DUiS9" />
       </concept>
       <concept id="1938192778485639397" name="de.vimotest.viewmodel.testing.structure.CheckCommandAction" flags="ng" index="Tef3P">
@@ -110,7 +110,7 @@
       <concept id="8996304390297115762" name="de.vimotest.viewmodel.testing.structure.SelectEntryCommandAction" flags="ng" index="3eaLtv">
         <property id="5922736771850278303" name="selectedEntryName" index="2qt_KD" />
       </concept>
-      <concept id="7199841511154467673" name="de.vimotest.viewmodel.testing.structure.WhenThenDescriptions" flags="ng" index="1s$VFG">
+      <concept id="7199841511154467673" name="de.vimotest.viewmodel.testing.structure.ComposedWhenThenParts" flags="ng" index="1s$VFG">
         <child id="7199841511154487303" name="actionsWithDescription" index="1s$QAM" />
         <child id="7199841511154487304" name="assertsWithDescription" index="1s$QAX" />
       </concept>
@@ -1874,6 +1874,12 @@
           <node concept="3eaLt2" id="17xw4ZmUXUc" role="DUiS9">
             <property role="3fQinD" value="MyPass123" />
             <ref role="3ucQsQ" node="17xw4ZmRWXv" resolve="Password" />
+          </node>
+        </node>
+        <node concept="DUd5q" id="7T8HsuTUwhI" role="1s$QAM">
+          <node concept="Tef3P" id="7T8HsuTUwhK" role="DUiS9">
+            <property role="Te1Rl" value="true" />
+            <ref role="3ucQsQ" node="17xw4ZmSY66" resolve="ShowPassword" />
           </node>
         </node>
         <node concept="DUd2R" id="17xw4ZmUXU2" role="1s$QAX">

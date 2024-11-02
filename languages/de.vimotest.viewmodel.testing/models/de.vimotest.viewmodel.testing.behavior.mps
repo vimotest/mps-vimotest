@@ -9120,6 +9120,54 @@
   <node concept="13h7C7" id="4VeFpYgZx_Y">
     <property role="3GE5qa" value="test.actions.base" />
     <ref role="13h7C2" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
+    <node concept="13i0hz" id="7T8HsuTTjmT" role="13h7CS">
+      <property role="TrG5h" value="getCommand" />
+      <node concept="3Tm1VV" id="7T8HsuTTjmU" role="1B3o_S" />
+      <node concept="3Tqbb2" id="7T8HsuTTjrk" role="3clF45">
+        <ref role="ehGHo" to="at53:6kjlgUuu6dE" resolve="ViewWidgetCommand" />
+      </node>
+      <node concept="3clFbS" id="7T8HsuTTjmW" role="3clF47">
+        <node concept="3cpWs8" id="7T8HsuTTmFO" role="3cqZAp">
+          <node concept="3cpWsn" id="7T8HsuTTmFP" role="3cpWs9">
+            <property role="TrG5h" value="commandConcept" />
+            <node concept="3bZ5Sz" id="7T8HsuTTmFi" role="1tU5fm">
+              <ref role="3bZ5Sy" to="at53:6kjlgUuu6dE" resolve="ViewWidgetCommand" />
+            </node>
+            <node concept="2YIFZM" id="7T8HsuTTmFQ" role="33vP2m">
+              <ref role="37wK5l" node="7T8HsuTTl29" resolve="getCommandConceptForCommandActionConcept" />
+              <ref role="1Pybhc" node="7UthagY7j2h" resolve="CommandConceptMappingHelper" />
+              <node concept="2OqwBi" id="7T8HsuTTmFR" role="37wK5m">
+                <node concept="13iPFW" id="7T8HsuTTmFS" role="2Oq$k0" />
+                <node concept="2yIwOk" id="7T8HsuTTmFT" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7T8HsuTTjsH" role="3cqZAp">
+          <node concept="2OqwBi" id="7T8HsuTTqTy" role="3clFbG">
+            <node concept="2OqwBi" id="7T8HsuTToPX" role="2Oq$k0">
+              <node concept="2OqwBi" id="7T8HsuTTk4L" role="2Oq$k0">
+                <node concept="2OqwBi" id="7T8HsuTTjDK" role="2Oq$k0">
+                  <node concept="13iPFW" id="7T8HsuTTjsG" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="7T8HsuTTjOu" role="2OqNvi">
+                    <ref role="3Tt5mk" to="53m0:4VeFpYgZsED" resolve="widget" />
+                  </node>
+                </node>
+                <node concept="32TBzR" id="7T8HsuTTn2Q" role="2OqNvi" />
+              </node>
+              <node concept="v3k3i" id="7T8HsuTTpXT" role="2OqNvi">
+                <node concept="25Kdxt" id="7T8HsuTTq0h" role="v3oSu">
+                  <node concept="37vLTw" id="7T8HsuTTq9E" role="25KhWn">
+                    <ref role="3cqZAo" node="7T8HsuTTmFP" resolve="commandConcept" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1uHKPH" id="7T8HsuTTrwO" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="4VeFpYgZx_Z" role="13h7CW">
       <node concept="3clFbS" id="4VeFpYgZxA0" role="2VODD2" />
     </node>
@@ -10594,6 +10642,41 @@
         <ref role="3bZ5Sy" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
       </node>
       <node concept="3Tm1VV" id="7kmE6cdOVC1" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="7T8HsuTTl29" role="jymVt">
+      <property role="TrG5h" value="getCommandConceptForCommandActionConcept" />
+      <node concept="3clFbS" id="7T8HsuTTl2c" role="3clF47">
+        <node concept="1_3QMa" id="7T8HsuTTl8$" role="3cqZAp">
+          <node concept="37vLTw" id="7T8HsuTTl8_" role="1_3QMn">
+            <ref role="3cqZAo" node="7T8HsuTTl50" resolve="commandActionConcept" />
+          </node>
+          <node concept="1pnPoh" id="7T8HsuTTl8A" role="1_3QMm">
+            <node concept="3gn64h" id="7T8HsuTTl8B" role="1pnPq6">
+              <ref role="3gnhBz" to="53m0:1F_Q10zRiz_" resolve="CheckCommandAction" />
+            </node>
+            <node concept="3clFbS" id="7T8HsuTTl8C" role="1pnPq1">
+              <node concept="3cpWs6" id="7T8HsuTTl8D" role="3cqZAp">
+                <node concept="35c_gC" id="7T8HsuTTl8E" role="3cqZAk">
+                  <ref role="35c_gD" to="at53:6kjlgUu$Xsu" resolve="CheckCommand" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="7T8HsuTTl94" role="3cqZAp">
+          <node concept="10Nm6u" id="7T8HsuTTl95" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7T8HsuTTkEm" role="1B3o_S" />
+      <node concept="3bZ5Sz" id="7T8HsuTTl1u" role="3clF45">
+        <ref role="3bZ5Sy" to="at53:6kjlgUuu6dE" resolve="ViewWidgetCommand" />
+      </node>
+      <node concept="37vLTG" id="7T8HsuTTl50" role="3clF46">
+        <property role="TrG5h" value="commandActionConcept" />
+        <node concept="3bZ5Sz" id="7T8HsuTTl4Z" role="1tU5fm">
+          <ref role="3bZ5Sy" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="6fEYrkZ4N2S">

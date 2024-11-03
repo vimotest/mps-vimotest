@@ -256,6 +256,11 @@
       <ref role="2rTdP9" to="at53:6kjlgUuu6dE" resolve="ViewWidgetCommand" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
     </node>
+    <node concept="2rT7sh" id="7ceEXPSz6YX" role="2rTMjI">
+      <property role="TrG5h" value="ViewWidgetFeature_Getter_OperationDefinition" />
+      <ref role="2rTdP9" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
+      <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
+    </node>
     <node concept="2rT7sh" id="247DgsTs_Mj" role="2rTMjI">
       <property role="TrG5h" value="IRowBasedViewWidget_ClassDefinition" />
       <ref role="2rTdP9" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
@@ -550,7 +555,9 @@
             </node>
           </node>
         </node>
-        <node concept="raruj" id="2evlxT95akq" role="lGtFl" />
+        <node concept="raruj" id="2evlxT95akq" role="lGtFl">
+          <ref role="2sdACS" node="7ceEXPSz6YX" resolve="ViewWidgetFeature_Getter_OperationDefinition" />
+        </node>
         <node concept="17Uvod" id="2evlxT95akr" role="lGtFl">
           <property role="2qtEX9" value="name" />
           <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />

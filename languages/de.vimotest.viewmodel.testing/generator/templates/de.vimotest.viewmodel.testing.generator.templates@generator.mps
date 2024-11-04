@@ -17,6 +17,7 @@
     <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
     <import index="fwln" ref="r:fb31fced-d3c6-408c-9dff-13efe5b49745(de.vimotest.viewmodel.testing.behavior)" implicit="true" />
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -140,8 +141,16 @@
       <concept id="982871510068000147" name="jetbrains.mps.lang.generator.structure.TemplateSwitchMacro" flags="lg" index="1sPUBX" />
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167770111131" name="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" flags="in" index="3$xsQk" />
+      <concept id="1167945743726" name="jetbrains.mps.lang.generator.structure.IfMacro_Condition" flags="in" index="3IZrLx" />
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
+      <concept id="8900764248744213868" name="jetbrains.mps.lang.generator.structure.InlineTemplateWithContext_RuleConsequence" flags="lg" index="1Koe21">
+        <child id="8900764248744213871" name="contentNode" index="1Koe22" />
+      </concept>
       <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
+      <concept id="1118773211870" name="jetbrains.mps.lang.generator.structure.IfMacro" flags="ln" index="1W57fq">
+        <child id="1194989344771" name="alternativeConsequence" index="UU_$l" />
+        <child id="1167945861827" name="conditionFunction" index="3IZSJc" />
+      </concept>
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
       </concept>
@@ -170,6 +179,7 @@
       <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
         <reference id="4705942098322467736" name="decl" index="21nZrZ" />
       </concept>
+      <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -182,6 +192,7 @@
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -214,6 +225,10 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
+      </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
@@ -232,7 +247,10 @@
       <concept id="3492897886877920834" name="alfi.structure.EmptyLineNamespaceMember" flags="ng" index="8qQDt">
         <child id="3331415707833704702" name="comment" index="2AFz0h" />
       </concept>
-      <concept id="2674824929519052396" name="alfi.structure.StringLiteralExpression" flags="ng" index="_iklQ" />
+      <concept id="8152398782397110011" name="alfi.structure.NullExpression" flags="ng" index="2_e7m4" />
+      <concept id="2674824929519052396" name="alfi.structure.StringLiteralExpression" flags="ng" index="_iklQ">
+        <property id="2674824929519052397" name="value" index="_iklR" />
+      </concept>
       <concept id="2674824929518918217" name="alfi.structure.ThisExpression" flags="ng" index="_iR_j" />
       <concept id="2674824929518763027" name="alfi.structure.ExpressionStatement" flags="ng" index="_jtW9">
         <child id="2674824929518763028" name="expression" index="_jtWe" />
@@ -240,6 +258,9 @@
       <concept id="2674824929518763012" name="alfi.structure.BooleanLiteralExpression" flags="ng" index="_jtWu" />
       <concept id="2674824929519882505" name="alfi.structure.BehaviorInvocationExpression" flags="ng" index="_uF8j">
         <child id="2674824929519882506" name="target" index="_uF8g" />
+      </concept>
+      <concept id="2674824929519927758" name="alfi.structure.NameExpression" flags="ng" index="_uYbk">
+        <child id="2674824929519927759" name="name" index="_uYbl" />
       </concept>
       <concept id="2674824929519838362" name="alfi.structure.PositionalTuple" flags="ng" index="_vku0">
         <child id="2674824929519838363" name="expression" index="_vku1" />
@@ -277,6 +298,11 @@
       <concept id="3594942814681426355" name="alfi.structure.PredefinedStereotypeName" flags="ng" index="113yj2">
         <reference id="3594942814681438582" name="ref" index="113tg7" />
       </concept>
+      <concept id="7144803224883052070" name="alfi.structure.LocalNameDeclarationStatement" flags="ng" index="327OUb">
+        <property id="7144803224883131098" name="hasMultiplicity" index="327w9R" />
+        <child id="7144803224883131093" name="typeName" index="327w9S" />
+        <child id="7144803224883131091" name="expression" index="327w9Y" />
+      </concept>
       <concept id="7144803224895060397" name="alfi.structure.PropertyAccessExpression" flags="ng" index="32M0$0">
         <child id="7144803224895280402" name="featureReference" index="32PqmZ" />
       </concept>
@@ -305,11 +331,16 @@
       <concept id="2021446509811517476" name="alfi.structure.TypedElementDefinition" flags="ng" index="3xMlr7">
         <child id="2021446509811517477" name="typeName" index="3xMlr6" />
       </concept>
+      <concept id="7439839726096719140" name="alfi.structure.SequenceOperationExpression" flags="ng" index="1WUwfO">
+        <child id="7439839726096719276" name="primary" index="1WUwdW" />
+        <child id="7439839726096719142" name="operation" index="1WUwfQ" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
+      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
     </language>
   </registry>
@@ -1506,34 +1537,568 @@
               </node>
             </node>
             <node concept="_vku0" id="7ceEXPSy$DM" role="_uFfl">
-              <node concept="32Pqhq" id="7ceEXPSK_mN" role="_vku1">
-                <node concept="_vku0" id="7ceEXPSK_mO" role="_uFfl" />
-                <node concept="32Pqhl" id="7ceEXPSK_mP" role="32OngV">
-                  <node concept="32M0$0" id="7ceEXPSK_mQ" role="32Men7">
-                    <node concept="32Pqhl" id="7ceEXPSK_mR" role="32PqmZ">
-                      <node concept="_iR_j" id="7ceEXPSK_mS" role="32Men7" />
-                      <node concept="_vnHe" id="7ceEXPSK_mT" role="32Men1">
-                        <ref role="3acloq" node="7ceEXPSK_c4" resolve="sut" />
-                        <node concept="1ZhdrF" id="7ceEXPSK_ps" role="lGtFl">
-                          <property role="2qtEX8" value="nameRef" />
-                          <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
-                          <node concept="3$xsQk" id="7ceEXPSK_pt" role="3$ytzL">
-                            <node concept="3clFbS" id="7ceEXPSK_pu" role="2VODD2">
-                              <node concept="3clFbF" id="7ceEXPSKA8P" role="3cqZAp">
-                                <node concept="2OqwBi" id="7ceEXPSKA8Q" role="3clFbG">
-                                  <node concept="1iwH7S" id="7ceEXPSKA8R" role="2Oq$k0" />
-                                  <node concept="1iwH70" id="7ceEXPSKA8S" role="2OqNvi">
-                                    <ref role="1iwH77" node="7T8HsuTT9xd" resolve="ViewModelFeatureTestSuite_AttributeDefinition" />
-                                    <node concept="2OqwBi" id="7ceEXPSKA8T" role="1iwH7V">
-                                      <node concept="30H73N" id="7ceEXPSKA8U" role="2Oq$k0" />
-                                      <node concept="2Xjw5R" id="7ceEXPSKA8V" role="2OqNvi">
-                                        <node concept="1xMEDy" id="7ceEXPSKA8W" role="1xVPHs">
-                                          <node concept="chp4Y" id="7ceEXPSKA8X" role="ri$Ld">
-                                            <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                    </node>
+              <node concept="32T38h" id="3_BGOS43zSh" role="_vku1">
+                <property role="32T38g" value="0" />
+                <node concept="5jKBG" id="3_BGOS43zSP" role="lGtFl">
+                  <ref role="v9R2y" node="3_BGOS43ozC" resolve="reduce_CheckValue_PropertyGetter" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="3_BGOS42$f5" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="53m0:3CJ09vZN9S0" resolve="VisibilityCheckValue" />
+      <node concept="gft3U" id="3_BGOS42$f6" role="1lVwrX">
+        <node concept="_jtW9" id="3_BGOS42$f7" role="gfFT$">
+          <node concept="_uF8j" id="3_BGOS42$f8" role="_jtWe">
+            <node concept="_vnHb" id="3_BGOS42$f9" role="_uF8g">
+              <node concept="2RqM1Q" id="3_BGOS42$fa" role="_vnH8">
+                <ref role="2RqM1R" to="hsxa:37zNn5KVoSC" resolve="AssertTrue" />
+                <node concept="1ZhdrF" id="3_BGOS42$fb" role="lGtFl">
+                  <property role="2qtEX8" value="target" />
+                  <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+                  <node concept="3$xsQk" id="3_BGOS42$fc" role="3$ytzL">
+                    <node concept="3clFbS" id="3_BGOS42$fd" role="2VODD2">
+                      <node concept="3clFbF" id="3_BGOS42$fe" role="3cqZAp">
+                        <node concept="2YIFZM" id="3_BGOS42$ff" role="3clFbG">
+                          <ref role="37wK5l" to="zcip:7ceEXPSyU88" resolve="getBooleanAssertOperation" />
+                          <ref role="1Pybhc" to="zcip:7ceEXPSyDOa" resolve="TestScenarioNodeResolveHelper" />
+                          <node concept="2OqwBi" id="3_BGOS42$fg" role="37wK5m">
+                            <node concept="30H73N" id="3_BGOS42$fh" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="3_BGOS42$fi" role="2OqNvi">
+                              <ref role="3TsBF5" to="53m0:5VrLp2zpM0p" resolve="expectedIsVisible" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="_vku0" id="3_BGOS42$fj" role="_uFfl">
+              <node concept="32T38h" id="3_BGOS43zWR" role="_vku1">
+                <property role="32T38g" value="0" />
+                <node concept="5jKBG" id="3_BGOS43zWS" role="lGtFl">
+                  <ref role="v9R2y" node="3_BGOS43ozC" resolve="reduce_CheckValue_PropertyGetter" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="3_BGOS42AZV" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="53m0:3CJ09vZN9RY" resolve="CheckedCheckValue" />
+      <node concept="gft3U" id="3_BGOS42AZW" role="1lVwrX">
+        <node concept="_jtW9" id="3_BGOS42AZX" role="gfFT$">
+          <node concept="_uF8j" id="3_BGOS42AZY" role="_jtWe">
+            <node concept="_vnHb" id="3_BGOS42AZZ" role="_uF8g">
+              <node concept="2RqM1Q" id="3_BGOS42B00" role="_vnH8">
+                <ref role="2RqM1R" to="hsxa:37zNn5KVoSC" resolve="AssertTrue" />
+                <node concept="1ZhdrF" id="3_BGOS42B01" role="lGtFl">
+                  <property role="2qtEX8" value="target" />
+                  <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+                  <node concept="3$xsQk" id="3_BGOS42B02" role="3$ytzL">
+                    <node concept="3clFbS" id="3_BGOS42B03" role="2VODD2">
+                      <node concept="3clFbF" id="3_BGOS42B04" role="3cqZAp">
+                        <node concept="2YIFZM" id="3_BGOS42B05" role="3clFbG">
+                          <ref role="37wK5l" to="zcip:7ceEXPSyU88" resolve="getBooleanAssertOperation" />
+                          <ref role="1Pybhc" to="zcip:7ceEXPSyDOa" resolve="TestScenarioNodeResolveHelper" />
+                          <node concept="2OqwBi" id="3_BGOS42B06" role="37wK5m">
+                            <node concept="30H73N" id="3_BGOS42B07" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="3_BGOS42B08" role="2OqNvi">
+                              <ref role="3TsBF5" to="53m0:3CJ09vZNkXV" resolve="expectedIsChecked" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="_vku0" id="3_BGOS42B09" role="_uFfl">
+              <node concept="32T38h" id="3_BGOS43$08" role="_vku1">
+                <property role="32T38g" value="0" />
+                <node concept="5jKBG" id="3_BGOS43$09" role="lGtFl">
+                  <ref role="v9R2y" node="3_BGOS43ozC" resolve="reduce_CheckValue_PropertyGetter" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="3_BGOS42SA9" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="53m0:7H4Lpx0iNr7" resolve="TextCheckValue" />
+      <node concept="gft3U" id="3_BGOS42SAa" role="1lVwrX">
+        <node concept="15s5l7" id="3_BGOS42VR1" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  AssertEqual (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
+          <property role="huDt6" value="The reference  AssertEqual (target) is out of search scope" />
+        </node>
+        <node concept="_jtW9" id="3_BGOS42SAb" role="gfFT$">
+          <node concept="_uF8j" id="3_BGOS42Uyx" role="_jtWe">
+            <node concept="_vnHb" id="3_BGOS42Uyy" role="_uF8g">
+              <node concept="2RqM1Q" id="3_BGOS42Uyz" role="_vnH8">
+                <ref role="2RqM1R" to="hsxa:37zNn5KVoOI" resolve="AssertEqual" />
+              </node>
+            </node>
+            <node concept="_vku0" id="3_BGOS42Uy$" role="_uFfl">
+              <node concept="_iklQ" id="3_BGOS437Nz" role="_vku1">
+                <property role="_iklR" value="Expected" />
+                <node concept="17Uvod" id="3_BGOS437Ra" role="lGtFl">
+                  <property role="2qtEX9" value="value" />
+                  <property role="P4ACc" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519052396/2674824929519052397" />
+                  <node concept="3zFVjK" id="3_BGOS437Rd" role="3zH0cK">
+                    <node concept="3clFbS" id="3_BGOS437Re" role="2VODD2">
+                      <node concept="3clFbF" id="3_BGOS437Rk" role="3cqZAp">
+                        <node concept="2OqwBi" id="3_BGOS437Rf" role="3clFbG">
+                          <node concept="3TrcHB" id="3_BGOS437Ri" role="2OqNvi">
+                            <ref role="3TsBF5" to="53m0:6NwBQMyCrHw" resolve="expectedText" />
+                          </node>
+                          <node concept="30H73N" id="3_BGOS437Rj" role="2Oq$k0" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="32T38h" id="3_BGOS43$0u" role="_vku1">
+                <property role="32T38g" value="0" />
+                <node concept="5jKBG" id="3_BGOS43$0v" role="lGtFl">
+                  <ref role="v9R2y" node="3_BGOS43ozC" resolve="reduce_CheckValue_PropertyGetter" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="3_BGOS43GxF" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="53m0:3pKiF2wNf6L" resolve="ImageSourceCheckValue" />
+      <node concept="gft3U" id="3_BGOS43Hfy" role="1lVwrX">
+        <node concept="15s5l7" id="3_BGOS43Hfz" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  AssertEqual (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
+          <property role="huDt6" value="The reference  AssertEqual (target) is out of search scope" />
+        </node>
+        <node concept="_jtW9" id="3_BGOS43Hf$" role="gfFT$">
+          <node concept="_uF8j" id="3_BGOS43Hf_" role="_jtWe">
+            <node concept="_vnHb" id="3_BGOS43HfA" role="_uF8g">
+              <node concept="2RqM1Q" id="3_BGOS43HfB" role="_vnH8">
+                <ref role="2RqM1R" to="hsxa:37zNn5KVoOI" resolve="AssertEqual" />
+              </node>
+            </node>
+            <node concept="_vku0" id="3_BGOS43HfC" role="_uFfl">
+              <node concept="_iklQ" id="3_BGOS43HfD" role="_vku1">
+                <property role="_iklR" value="Expected" />
+                <node concept="17Uvod" id="3_BGOS43HfE" role="lGtFl">
+                  <property role="2qtEX9" value="value" />
+                  <property role="P4ACc" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519052396/2674824929519052397" />
+                  <node concept="3zFVjK" id="3_BGOS43HfF" role="3zH0cK">
+                    <node concept="3clFbS" id="3_BGOS43HfG" role="2VODD2">
+                      <node concept="3clFbF" id="3_BGOS43HfH" role="3cqZAp">
+                        <node concept="2OqwBi" id="3_BGOS43Lmd" role="3clFbG">
+                          <node concept="2OqwBi" id="3_BGOS43KtE" role="2Oq$k0">
+                            <node concept="2OqwBi" id="3_BGOS43HfI" role="2Oq$k0">
+                              <node concept="30H73N" id="3_BGOS43HfK" role="2Oq$k0" />
+                              <node concept="3TrEf2" id="3_BGOS43IgO" role="2OqNvi">
+                                <ref role="3Tt5mk" to="53m0:9CTo7lpcpn" resolve="expectedImage" />
+                              </node>
+                            </node>
+                            <node concept="3TrEf2" id="3_BGOS43L94" role="2OqNvi">
+                              <ref role="3Tt5mk" to="at53:2s$w3BDwT7b" resolve="image" />
+                            </node>
+                          </node>
+                          <node concept="2qgKlT" id="3_BGOS449aH" role="2OqNvi">
+                            <ref role="37wK5l" to="nrs2:6JIVlcOdkPL" resolve="getNameToGenerate" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1W57fq" id="3_BGOS43Iki" role="lGtFl">
+                  <node concept="3IZrLx" id="3_BGOS43Ikj" role="3IZSJc">
+                    <node concept="3clFbS" id="3_BGOS43Ikk" role="2VODD2">
+                      <node concept="3clFbF" id="3_BGOS43IyG" role="3cqZAp">
+                        <node concept="2OqwBi" id="3_BGOS43JzN" role="3clFbG">
+                          <node concept="2OqwBi" id="3_BGOS43IXZ" role="2Oq$k0">
+                            <node concept="30H73N" id="3_BGOS43IyF" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="3_BGOS43JnJ" role="2OqNvi">
+                              <ref role="3Tt5mk" to="53m0:9CTo7lpcpn" resolve="expectedImage" />
+                            </node>
+                          </node>
+                          <node concept="3x8VRR" id="3_BGOS43JHc" role="2OqNvi" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="gft3U" id="3_BGOS43JNR" role="UU_$l">
+                    <node concept="2_e7m4" id="3_BGOS43K6Y" role="gfFT$" />
+                  </node>
+                </node>
+              </node>
+              <node concept="32T38h" id="3_BGOS43HfL" role="_vku1">
+                <property role="32T38g" value="0" />
+                <node concept="5jKBG" id="3_BGOS43HfM" role="lGtFl">
+                  <ref role="v9R2y" node="3_BGOS43ozC" resolve="reduce_CheckValue_PropertyGetter" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="3_BGOS436xh" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="53m0:44HS8_67HAo" resolve="SelectedEntryCheckValue" />
+      <node concept="gft3U" id="3_BGOS436xi" role="1lVwrX">
+        <node concept="15s5l7" id="3_BGOS436xj" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  AssertEqual (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
+          <property role="huDt6" value="The reference  AssertEqual (target) is out of search scope" />
+        </node>
+        <node concept="_jtW9" id="3_BGOS436xk" role="gfFT$">
+          <node concept="_uF8j" id="3_BGOS436xl" role="_jtWe">
+            <node concept="_vnHb" id="3_BGOS436xm" role="_uF8g">
+              <node concept="2RqM1Q" id="3_BGOS436xn" role="_vnH8">
+                <ref role="2RqM1R" to="hsxa:37zNn5KVoOI" resolve="AssertEqual" />
+              </node>
+            </node>
+            <node concept="_vku0" id="3_BGOS436xo" role="_uFfl">
+              <node concept="_iklQ" id="3_BGOS43ako" role="_vku1">
+                <property role="_iklR" value="Expected" />
+                <node concept="17Uvod" id="3_BGOS43akp" role="lGtFl">
+                  <property role="2qtEX9" value="value" />
+                  <property role="P4ACc" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519052396/2674824929519052397" />
+                  <node concept="3zFVjK" id="3_BGOS43akq" role="3zH0cK">
+                    <node concept="3clFbS" id="3_BGOS43akr" role="2VODD2">
+                      <node concept="3clFbF" id="3_BGOS43aks" role="3cqZAp">
+                        <node concept="2OqwBi" id="3_BGOS43dqv" role="3clFbG">
+                          <node concept="2OqwBi" id="3_BGOS43akt" role="2Oq$k0">
+                            <node concept="30H73N" id="3_BGOS43akv" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="3_BGOS43db0" role="2OqNvi">
+                              <ref role="3Tt5mk" to="53m0:7waZUcv25as" resolve="selectedEntry" />
+                            </node>
+                          </node>
+                          <node concept="3TrcHB" id="3_BGOS43dPx" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1W57fq" id="3_BGOS43edh" role="lGtFl">
+                  <node concept="3IZrLx" id="3_BGOS43edi" role="3IZSJc">
+                    <node concept="3clFbS" id="3_BGOS43edj" role="2VODD2">
+                      <node concept="3clFbF" id="3_BGOS43eJE" role="3cqZAp">
+                        <node concept="2OqwBi" id="3_BGOS43f_c" role="3clFbG">
+                          <node concept="2OqwBi" id="3_BGOS43faX" role="2Oq$k0">
+                            <node concept="30H73N" id="3_BGOS43eJD" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="3_BGOS43foe" role="2OqNvi">
+                              <ref role="3Tt5mk" to="53m0:7waZUcv25as" resolve="selectedEntry" />
+                            </node>
+                          </node>
+                          <node concept="3x8VRR" id="3_BGOS43fKx" role="2OqNvi" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="gft3U" id="3_BGOS43glW" role="UU_$l">
+                    <node concept="2_e7m4" id="3_BGOS43gnM" role="gfFT$" />
+                  </node>
+                </node>
+              </node>
+              <node concept="32T38h" id="3_BGOS43$WC" role="_vku1">
+                <property role="32T38g" value="0" />
+                <node concept="5jKBG" id="3_BGOS43$WD" role="lGtFl">
+                  <ref role="v9R2y" node="3_BGOS43ozC" resolve="reduce_CheckValue_PropertyGetter" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="3_BGOS43gnN" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="53m0:7WgsBLYmzjD" resolve="SelectedRowCheckValue" />
+      <node concept="gft3U" id="3_BGOS43gnO" role="1lVwrX">
+        <node concept="15s5l7" id="3_BGOS43gnP" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  AssertEqual (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
+          <property role="huDt6" value="The reference  AssertEqual (target) is out of search scope" />
+        </node>
+        <node concept="_jtW9" id="3_BGOS43gnQ" role="gfFT$">
+          <node concept="_uF8j" id="3_BGOS43gnR" role="_jtWe">
+            <node concept="_vnHb" id="3_BGOS43gnS" role="_uF8g">
+              <node concept="2RqM1Q" id="3_BGOS43gnT" role="_vnH8">
+                <ref role="2RqM1R" to="hsxa:37zNn5KVoOI" resolve="AssertEqual" />
+              </node>
+            </node>
+            <node concept="_vku0" id="3_BGOS43gnU" role="_uFfl">
+              <node concept="32T38h" id="3_BGOS43_t2" role="_vku1">
+                <property role="32T38g" value="0" />
+                <node concept="17Uvod" id="3_BGOS43_tl" role="lGtFl">
+                  <property role="2qtEX9" value="valueText" />
+                  <property role="P4ACc" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/7144803224892162748/7144803224892162749" />
+                  <node concept="3zFVjK" id="3_BGOS43_tm" role="3zH0cK">
+                    <node concept="3clFbS" id="3_BGOS43_tn" role="2VODD2">
+                      <node concept="3clFbF" id="3_BGOS43_HM" role="3cqZAp">
+                        <node concept="3cpWs3" id="3_BGOS43Fvm" role="3clFbG">
+                          <node concept="Xl_RD" id="3_BGOS43Fvq" role="3uHU7w">
+                            <property role="Xl_RC" value="" />
+                          </node>
+                          <node concept="2OqwBi" id="3_BGOS43AeG" role="3uHU7B">
+                            <node concept="30H73N" id="3_BGOS43_HL" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="3_BGOS43Ax4" role="2OqNvi">
+                              <ref role="3TsBF5" to="at53:1RiAxJSfhhz" resolve="indexRowHandle" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="32T38h" id="3_BGOS43$Yx" role="_vku1">
+                <property role="32T38g" value="0" />
+                <node concept="5jKBG" id="3_BGOS43$Yy" role="lGtFl">
+                  <ref role="v9R2y" node="3_BGOS43ozC" resolve="reduce_CheckValue_PropertyGetter" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="3_BGOS43i9b" role="30HLyM">
+        <node concept="3clFbS" id="3_BGOS43i9c" role="2VODD2">
+          <node concept="3clFbF" id="3_BGOS43idW" role="3cqZAp">
+            <node concept="2OqwBi" id="3_BGOS43jOG" role="3clFbG">
+              <node concept="2OqwBi" id="3_BGOS43juc" role="2Oq$k0">
+                <node concept="2OqwBi" id="3_BGOS43iGd" role="2Oq$k0">
+                  <node concept="30H73N" id="3_BGOS43idV" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="3_BGOS43jb4" role="2OqNvi">
+                    <ref role="37wK5l" to="nrs2:1RiAxJSeINg" resolve="getRowHandleKindOwner" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="3_BGOS43jAp" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:1RiAxJSeDXj" resolve="rowHandleKind" />
+                </node>
+              </node>
+              <node concept="21noJN" id="3_BGOS43kjr" role="2OqNvi">
+                <node concept="21nZrQ" id="3_BGOS43kjt" role="21noJM">
+                  <ref role="21nZrZ" to="at53:1RiAxJSerz6" resolve="IndexRowHandle" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="3_BGOS43klp" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="53m0:7WgsBLYmzjD" resolve="SelectedRowCheckValue" />
+      <node concept="gft3U" id="3_BGOS43klq" role="1lVwrX">
+        <node concept="15s5l7" id="3_BGOS43klr" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  AssertEqual (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
+          <property role="huDt6" value="The reference  AssertEqual (target) is out of search scope" />
+        </node>
+        <node concept="_jtW9" id="3_BGOS43kls" role="gfFT$">
+          <node concept="_uF8j" id="3_BGOS43klt" role="_jtWe">
+            <node concept="_vnHb" id="3_BGOS43klu" role="_uF8g">
+              <node concept="2RqM1Q" id="3_BGOS43klv" role="_vnH8">
+                <ref role="2RqM1R" to="hsxa:37zNn5KVoOI" resolve="AssertEqual" />
+              </node>
+            </node>
+            <node concept="_vku0" id="3_BGOS43klw" role="_uFfl">
+              <node concept="_iklQ" id="3_BGOS43klx" role="_vku1">
+                <property role="_iklR" value="Expected" />
+                <node concept="17Uvod" id="3_BGOS43kly" role="lGtFl">
+                  <property role="2qtEX9" value="value" />
+                  <property role="P4ACc" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519052396/2674824929519052397" />
+                  <node concept="3zFVjK" id="3_BGOS43klz" role="3zH0cK">
+                    <node concept="3clFbS" id="3_BGOS43kl$" role="2VODD2">
+                      <node concept="3clFbF" id="3_BGOS43kl_" role="3cqZAp">
+                        <node concept="2OqwBi" id="3_BGOS43klB" role="3clFbG">
+                          <node concept="30H73N" id="3_BGOS43klC" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="3_BGOS43oyR" role="2OqNvi">
+                            <ref role="3TsBF5" to="at53:1RiAxJSfhh$" resolve="stringRowHandle" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="32T38h" id="3_BGOS43_4t" role="_vku1">
+                <property role="32T38g" value="0" />
+                <node concept="5jKBG" id="3_BGOS43_4u" role="lGtFl">
+                  <ref role="v9R2y" node="3_BGOS43ozC" resolve="reduce_CheckValue_PropertyGetter" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="3_BGOS43kmh" role="30HLyM">
+        <node concept="3clFbS" id="3_BGOS43kmi" role="2VODD2">
+          <node concept="3clFbF" id="3_BGOS43kmj" role="3cqZAp">
+            <node concept="2OqwBi" id="3_BGOS43kmk" role="3clFbG">
+              <node concept="2OqwBi" id="3_BGOS43kml" role="2Oq$k0">
+                <node concept="2OqwBi" id="3_BGOS43kmm" role="2Oq$k0">
+                  <node concept="30H73N" id="3_BGOS43kmn" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="3_BGOS43kmo" role="2OqNvi">
+                    <ref role="37wK5l" to="nrs2:1RiAxJSeINg" resolve="getRowHandleKindOwner" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="3_BGOS43kmp" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:1RiAxJSeDXj" resolve="rowHandleKind" />
+                </node>
+              </node>
+              <node concept="21noJN" id="3_BGOS43kmq" role="2OqNvi">
+                <node concept="21nZrQ" id="3_BGOS43kmr" role="21noJM">
+                  <ref role="21nZrZ" to="at53:1RiAxJSewmn" resolve="StringRowHandle" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="3_BGOS43bzd" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="53m0:44HS8_67HAm" resolve="ComboBoxEntriesCheckValue" />
+      <node concept="1Koe21" id="3_BGOS44aR1" role="1lVwrX">
+        <node concept="6nSm6" id="3_BGOS44aR5" role="1Koe22">
+          <property role="TrG5h" value="AssertComboBoxEntriesCheckValue" />
+          <property role="PCHHn" value="6OepWIVA92M/private" />
+          <node concept="PCHzy" id="3_BGOS44aR6" role="GbAUv">
+            <node concept="327OUb" id="3_BGOS44qZZ" role="PCHzz">
+              <property role="TrG5h" value="actualEntries" />
+              <property role="327w9R" value="true" />
+              <node concept="3xHE8C" id="3_BGOS44r25" role="327w9S">
+                <node concept="2RqM1Q" id="3_BGOS44r23" role="_vnH8">
+                  <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+                </node>
+              </node>
+              <node concept="32T38h" id="3_BGOS44r3e" role="327w9Y">
+                <property role="32T38g" value="0" />
+                <node concept="5jKBG" id="3_BGOS44r3f" role="lGtFl">
+                  <ref role="v9R2y" node="3_BGOS43ozC" resolve="reduce_CheckValue_PropertyGetter" />
+                </node>
+              </node>
+              <node concept="raruj" id="3_BGOS454hG" role="lGtFl" />
+            </node>
+            <node concept="_jtW9" id="3_BGOS44aRc" role="PCHzz">
+              <node concept="_uF8j" id="3_BGOS44aRd" role="_jtWe">
+                <node concept="_vnHb" id="3_BGOS44aRe" role="_uF8g">
+                  <node concept="2RqM1Q" id="3_BGOS44aRf" role="_vnH8">
+                    <ref role="2RqM1R" to="hsxa:37zNn5KVoOI" resolve="AssertEqual" />
+                  </node>
+                </node>
+                <node concept="_vku0" id="3_BGOS44aRg" role="_uFfl">
+                  <node concept="32T38h" id="3_BGOS44br$" role="_vku1">
+                    <property role="32T38g" value="0" />
+                    <node concept="17Uvod" id="3_BGOS44brR" role="lGtFl">
+                      <property role="2qtEX9" value="valueText" />
+                      <property role="P4ACc" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/7144803224892162748/7144803224892162749" />
+                      <node concept="3zFVjK" id="3_BGOS44brS" role="3zH0cK">
+                        <node concept="3clFbS" id="3_BGOS44brT" role="2VODD2">
+                          <node concept="3clFbF" id="3_BGOS44bGk" role="3cqZAp">
+                            <node concept="3cpWs3" id="3_BGOS44pxP" role="3clFbG">
+                              <node concept="Xl_RD" id="3_BGOS44pzt" role="3uHU7w">
+                                <property role="Xl_RC" value="" />
+                              </node>
+                              <node concept="2OqwBi" id="3_BGOS44g4q" role="3uHU7B">
+                                <node concept="2OqwBi" id="3_BGOS44cag" role="2Oq$k0">
+                                  <node concept="30H73N" id="3_BGOS44bGj" role="2Oq$k0" />
+                                  <node concept="3Tsc0h" id="3_BGOS44cBe" role="2OqNvi">
+                                    <ref role="3TtcxE" to="53m0:5ZbqeTIbciF" resolve="entries" />
+                                  </node>
+                                </node>
+                                <node concept="34oBXx" id="3_BGOS44hTJ" role="2OqNvi" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1WUwfO" id="3_BGOS44scC" role="_vku1">
+                    <node concept="_vnHb" id="3_BGOS44scH" role="1WUwfQ">
+                      <node concept="2RqM1Q" id="3_BGOS44scL" role="_vnH8">
+                        <ref role="2RqM1R" to="gkn4:2SV$eY8tAF4" resolve="size" />
+                      </node>
+                    </node>
+                    <node concept="_vku0" id="3_BGOS44scP" role="_uFfl" />
+                    <node concept="_uYbk" id="3_BGOS44s9U" role="1WUwdW">
+                      <node concept="_vnHb" id="3_BGOS44s9W" role="_uYbl">
+                        <node concept="2RqM1Q" id="3_BGOS44s9Y" role="_vnH8">
+                          <ref role="2RqM1R" node="3_BGOS44qZZ" resolve="actualEntries" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="raruj" id="3_BGOS44bqP" role="lGtFl" />
+            </node>
+            <node concept="_jtW9" id="3_BGOS44u$X" role="PCHzz">
+              <node concept="_uF8j" id="3_BGOS44u$Y" role="_jtWe">
+                <node concept="_vnHb" id="3_BGOS44u$Z" role="_uF8g">
+                  <node concept="2RqM1Q" id="3_BGOS44u_0" role="_vnH8">
+                    <ref role="2RqM1R" to="hsxa:37zNn5KVoOI" resolve="AssertEqual" />
+                  </node>
+                </node>
+                <node concept="_vku0" id="3_BGOS44u_1" role="_uFfl">
+                  <node concept="_iklQ" id="3_BGOS44_2h" role="_vku1">
+                    <property role="_iklR" value="Expected" />
+                    <node concept="17Uvod" id="3_BGOS44_cb" role="lGtFl">
+                      <property role="2qtEX9" value="value" />
+                      <property role="P4ACc" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519052396/2674824929519052397" />
+                      <node concept="3zFVjK" id="3_BGOS44_cc" role="3zH0cK">
+                        <node concept="3clFbS" id="3_BGOS44_cd" role="2VODD2">
+                          <node concept="3clFbF" id="3_BGOS44_sC" role="3cqZAp">
+                            <node concept="2OqwBi" id="3_BGOS44_XB" role="3clFbG">
+                              <node concept="30H73N" id="3_BGOS44_sB" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="3_BGOS44BRH" role="2OqNvi">
+                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1WUwfO" id="3_BGOS44$Ej" role="_vku1">
+                    <node concept="_vnHb" id="3_BGOS44$Ek" role="1WUwfQ">
+                      <node concept="2RqM1Q" id="3_BGOS44$El" role="_vnH8">
+                        <ref role="2RqM1R" to="gkn4:2SV$eY8zGv4" resolve="at" />
+                      </node>
+                    </node>
+                    <node concept="_vku0" id="3_BGOS44$Em" role="_uFfl">
+                      <node concept="32T38h" id="3_BGOS44$En" role="_vku1">
+                        <property role="32T38g" value="0" />
+                        <node concept="17Uvod" id="3_BGOS44Chr" role="lGtFl">
+                          <property role="2qtEX9" value="valueText" />
+                          <property role="P4ACc" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/7144803224892162748/7144803224892162749" />
+                          <node concept="3zFVjK" id="3_BGOS44Chs" role="3zH0cK">
+                            <node concept="3clFbS" id="3_BGOS44Cht" role="2VODD2">
+                              <node concept="3clFbF" id="3_BGOS44CES" role="3cqZAp">
+                                <node concept="3cpWs3" id="3_BGOS44O6T" role="3clFbG">
+                                  <node concept="Xl_RD" id="3_BGOS44Osq" role="3uHU7w">
+                                    <property role="Xl_RC" value="" />
+                                  </node>
+                                  <node concept="2OqwBi" id="3_BGOS44DbR" role="3uHU7B">
+                                    <node concept="30H73N" id="3_BGOS44CER" role="2Oq$k0" />
+                                    <node concept="2bSWHS" id="3_BGOS44Ebk" role="2OqNvi" />
                                   </node>
                                 </node>
                               </node>
@@ -1542,22 +2107,25 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="_uYbk" id="3_BGOS44$Eo" role="1WUwdW">
+                      <node concept="_vnHb" id="3_BGOS44$Ep" role="_uYbl">
+                        <node concept="2RqM1Q" id="3_BGOS44$Eq" role="_vnH8">
+                          <ref role="2RqM1R" node="3_BGOS44qZZ" resolve="actualEntries" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
-                  <node concept="_vnHe" id="7ceEXPSK_mU" role="32Men1">
-                    <ref role="3acloq" node="7ceEXPSK_eH" resolve="getValue" />
-                    <node concept="1ZhdrF" id="7ceEXPSK_s4" role="lGtFl">
-                      <property role="2qtEX8" value="nameRef" />
-                      <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
-                      <node concept="3$xsQk" id="7ceEXPSK_s5" role="3$ytzL">
-                        <node concept="3clFbS" id="7ceEXPSK_s6" role="2VODD2">
-                          <node concept="3clFbF" id="7ceEXPSK_y4" role="3cqZAp">
-                            <node concept="2YIFZM" id="7ceEXPSK_y5" role="3clFbG">
-                              <ref role="37wK5l" to="zcip:7ceEXPSz7WJ" resolve="getGetterForActualCheckValue" />
-                              <ref role="1Pybhc" to="zcip:7ceEXPSyDOa" resolve="TestScenarioNodeResolveHelper" />
-                              <node concept="30H73N" id="7ceEXPSK_y6" role="37wK5m" />
-                              <node concept="1iwH7S" id="7ceEXPSK_y7" role="37wK5m" />
-                            </node>
-                          </node>
+                </node>
+              </node>
+              <node concept="raruj" id="3_BGOS44u_l" role="lGtFl" />
+              <node concept="1WS0z7" id="3_BGOS44wL8" role="lGtFl">
+                <node concept="3JmXsc" id="3_BGOS44wL9" role="3Jn$fo">
+                  <node concept="3clFbS" id="3_BGOS44wLa" role="2VODD2">
+                    <node concept="3clFbF" id="3_BGOS44wWX" role="3cqZAp">
+                      <node concept="2OqwBi" id="3_BGOS44xga" role="3clFbG">
+                        <node concept="30H73N" id="3_BGOS44wWW" role="2Oq$k0" />
+                        <node concept="3Tsc0h" id="3_BGOS44xwj" role="2OqNvi">
+                          <ref role="3TtcxE" to="53m0:5ZbqeTIbciF" resolve="entries" />
                         </node>
                       </node>
                     </node>
@@ -1600,6 +2168,101 @@
           </node>
           <node concept="1sPUBX" id="7ceEXPSBsLQ" role="lGtFl">
             <ref role="v9R2y" node="7ceEXPSxJ9p" resolve="switch_ViewWidgetCheck" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="3_BGOS43ozC">
+    <property role="3GE5qa" value="then" />
+    <property role="TrG5h" value="reduce_CheckValue_PropertyGetter" />
+    <ref role="3gUMe" to="53m0:5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="3mGtxK" id="3_BGOS43wgh" role="13RCb5">
+      <node concept="6nSm2" id="3_BGOS43wgj" role="3mGtxP">
+        <property role="PCHHn" value="6OepWIVA92I/package" />
+        <property role="TrG5h" value="reduce_CheckValue_PropertyGetter" />
+        <node concept="6lMYc" id="3_BGOS43wgK" role="PCHHv">
+          <property role="TrG5h" value="sut" />
+          <node concept="3xHE8C" id="3_BGOS43wSx" role="3xMlr6">
+            <node concept="2RqM1Q" id="3_BGOS43wSv" role="_vnH8">
+              <ref role="2RqM1R" node="3_BGOS43wgj" resolve="reduce_CheckValue_PropertyGetter" />
+            </node>
+          </node>
+        </node>
+        <node concept="6nSm6" id="3_BGOS43whI" role="PCHHv">
+          <property role="TrG5h" value="Helper" />
+          <property role="PCHHn" value="6OepWIVA92M/private" />
+          <node concept="PCHzy" id="3_BGOS43whJ" role="GbAUv">
+            <node concept="_jtW9" id="3_BGOS43yC$" role="PCHzz">
+              <node concept="_uF8j" id="3_BGOS43yCs" role="_jtWe">
+                <node concept="_vnHb" id="3_BGOS43yCu" role="_uF8g">
+                  <node concept="2RqM1Q" id="3_BGOS43yCw" role="_vnH8">
+                    <ref role="2RqM1R" node="3_BGOS43whI" resolve="Helper" />
+                  </node>
+                </node>
+                <node concept="_vku0" id="3_BGOS43yCy" role="_uFfl">
+                  <node concept="32Pqhq" id="3_BGOS43yDS" role="_vku1">
+                    <node concept="_vku0" id="3_BGOS43yDT" role="_uFfl" />
+                    <node concept="32Pqhl" id="3_BGOS43yDU" role="32OngV">
+                      <node concept="32M0$0" id="3_BGOS43yDV" role="32Men7">
+                        <node concept="32Pqhl" id="3_BGOS43yDW" role="32PqmZ">
+                          <node concept="_iR_j" id="3_BGOS43yDX" role="32Men7" />
+                          <node concept="_vnHe" id="3_BGOS43yDY" role="32Men1">
+                            <ref role="3acloq" node="3_BGOS43wgK" resolve="sut" />
+                            <node concept="1ZhdrF" id="3_BGOS43yDZ" role="lGtFl">
+                              <property role="2qtEX8" value="nameRef" />
+                              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
+                              <node concept="3$xsQk" id="3_BGOS43yE0" role="3$ytzL">
+                                <node concept="3clFbS" id="3_BGOS43yE1" role="2VODD2">
+                                  <node concept="3clFbF" id="3_BGOS43yE2" role="3cqZAp">
+                                    <node concept="2OqwBi" id="3_BGOS43yE3" role="3clFbG">
+                                      <node concept="1iwH7S" id="3_BGOS43yE4" role="2Oq$k0" />
+                                      <node concept="1iwH70" id="3_BGOS43yE5" role="2OqNvi">
+                                        <ref role="1iwH77" node="7T8HsuTT9xd" resolve="ViewModelFeatureTestSuite_AttributeDefinition" />
+                                        <node concept="2OqwBi" id="3_BGOS43yE6" role="1iwH7V">
+                                          <node concept="30H73N" id="3_BGOS43yE7" role="2Oq$k0" />
+                                          <node concept="2Xjw5R" id="3_BGOS43yE8" role="2OqNvi">
+                                            <node concept="1xMEDy" id="3_BGOS43yE9" role="1xVPHs">
+                                              <node concept="chp4Y" id="3_BGOS43yEa" role="ri$Ld">
+                                                <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="_vnHe" id="3_BGOS43yEb" role="32Men1">
+                        <ref role="3acloq" node="3_BGOS43whI" resolve="Helper" />
+                        <node concept="1ZhdrF" id="3_BGOS43zn0" role="lGtFl">
+                          <property role="2qtEX8" value="nameRef" />
+                          <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
+                          <node concept="3$xsQk" id="3_BGOS43zn1" role="3$ytzL">
+                            <node concept="3clFbS" id="3_BGOS43zn2" role="2VODD2">
+                              <node concept="3clFbF" id="3_BGOS43yEf" role="3cqZAp">
+                                <node concept="2YIFZM" id="3_BGOS43yEg" role="3clFbG">
+                                  <ref role="37wK5l" to="zcip:7ceEXPSz7WJ" resolve="getGetterForActualCheckValue" />
+                                  <ref role="1Pybhc" to="zcip:7ceEXPSyDOa" resolve="TestScenarioNodeResolveHelper" />
+                                  <node concept="30H73N" id="3_BGOS43yEh" role="37wK5m" />
+                                  <node concept="1iwH7S" id="3_BGOS43yEi" role="37wK5m" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="raruj" id="3_BGOS43yRb" role="lGtFl" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

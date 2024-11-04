@@ -43,6 +43,9 @@
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
+      <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
+        <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
+      </concept>
       <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="ln" index="2b32R4">
         <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
       </concept>
@@ -104,9 +107,13 @@
       <concept id="8900764248744213868" name="jetbrains.mps.lang.generator.structure.InlineTemplateWithContext_RuleConsequence" flags="lg" index="1Koe21">
         <child id="8900764248744213871" name="contentNode" index="1Koe22" />
       </concept>
+      <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
       <concept id="1118773211870" name="jetbrains.mps.lang.generator.structure.IfMacro" flags="ln" index="1W57fq">
         <child id="1194989344771" name="alternativeConsequence" index="UU_$l" />
         <child id="1167945861827" name="conditionFunction" index="3IZSJc" />
+      </concept>
+      <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
+        <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
       </concept>
       <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="ln" index="1ZhdrF">
         <child id="1167770376702" name="referentFunction" index="3$ytzL" />
@@ -254,6 +261,11 @@
     <node concept="2rT7sh" id="7T8HsuTSUCz" role="2rTMjI">
       <property role="TrG5h" value="ViewWidgetCommand_OperationDefinition" />
       <ref role="2rTdP9" to="at53:6kjlgUuu6dE" resolve="ViewWidgetCommand" />
+      <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
+    </node>
+    <node concept="2rT7sh" id="3_BGOS45E9t" role="2rTMjI">
+      <property role="TrG5h" value="AbstractViewModelParameterizedCommand_OperationDefinition" />
+      <ref role="2rTdP9" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
     </node>
     <node concept="2rT7sh" id="7ceEXPSz6YX" role="2rTMjI">
@@ -586,8 +598,70 @@
         <property role="TrG5h" value="reduce_AbstractViewModelParameterizedCommand" />
         <node concept="6nSm6" id="2evlxT95lQf" role="PCHHv">
           <property role="TrG5h" value="doCommand" />
+          <node concept="3xR696" id="3_BGOS45GPe" role="PCHHv">
+            <property role="3xR695" value="1KdBIfXPktw/in" />
+            <property role="TrG5h" value="args" />
+            <node concept="3xHE8C" id="3_BGOS45GPf" role="3xMlr6">
+              <node concept="2RqM1Q" id="3_BGOS45GPg" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+              </node>
+              <node concept="29HgVG" id="3_BGOS45VEj" role="lGtFl">
+                <node concept="3NFfHV" id="3_BGOS45VEk" role="3NFExx">
+                  <node concept="3clFbS" id="3_BGOS45VEl" role="2VODD2">
+                    <node concept="3clFbF" id="3_BGOS45VEr" role="3cqZAp">
+                      <node concept="2OqwBi" id="3_BGOS45VEm" role="3clFbG">
+                        <node concept="3TrEf2" id="3_BGOS45VEp" role="2OqNvi">
+                          <ref role="3Tt5mk" to="28lk:1KdBIfXLcw_" resolve="typeName" />
+                        </node>
+                        <node concept="30H73N" id="3_BGOS45VEq" role="2Oq$k0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1WS0z7" id="3_BGOS45Hue" role="lGtFl">
+              <node concept="3JmXsc" id="3_BGOS45Huf" role="3Jn$fo">
+                <node concept="3clFbS" id="3_BGOS45Hug" role="2VODD2">
+                  <node concept="3clFbF" id="3_BGOS45HAt" role="3cqZAp">
+                    <node concept="2OqwBi" id="3_BGOS45P8w" role="3clFbG">
+                      <node concept="2OqwBi" id="3_BGOS45HY5" role="2Oq$k0">
+                        <node concept="30H73N" id="3_BGOS45HAs" role="2Oq$k0" />
+                        <node concept="3Tsc0h" id="3_BGOS45IeR" role="2OqNvi">
+                          <ref role="3TtcxE" to="evry:F907haLJVs" resolve="contents" />
+                        </node>
+                      </node>
+                      <node concept="v3k3i" id="3_BGOS45Rki" role="2OqNvi">
+                        <node concept="chp4Y" id="3_BGOS45Rsx" role="v3oSu">
+                          <ref role="cht4Q" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="17Uvod" id="3_BGOS45J0x" role="lGtFl">
+              <property role="2qtEX9" value="name" />
+              <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+              <node concept="3zFVjK" id="3_BGOS45J0y" role="3zH0cK">
+                <node concept="3clFbS" id="3_BGOS45J0z" role="2VODD2">
+                  <node concept="3clFbF" id="3_BGOS45Jty" role="3cqZAp">
+                    <node concept="2OqwBi" id="3_BGOS45K8J" role="3clFbG">
+                      <node concept="30H73N" id="3_BGOS45Jtx" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="3_BGOS45StD" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="PCHzy" id="2evlxT95lQg" role="GbAUv" />
-          <node concept="raruj" id="2evlxT95lQh" role="lGtFl" />
+          <node concept="raruj" id="2evlxT95lQh" role="lGtFl">
+            <ref role="2sdACS" node="3_BGOS45E9t" resolve="AbstractViewModelParameterizedCommand_OperationDefinition" />
+          </node>
           <node concept="17Uvod" id="2evlxT95lQi" role="lGtFl">
             <property role="2qtEX9" value="name" />
             <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />

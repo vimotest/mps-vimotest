@@ -6172,5 +6172,83 @@
       <node concept="3clFbS" id="3JF9X1LtDGD" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="7nrre2bAr$w">
+    <property role="3GE5qa" value="widgets" />
+    <ref role="13h7C2" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
+    <node concept="13i0hz" id="7nrre2bAr$N" role="13h7CS">
+      <property role="TrG5h" value="isBooleanFeature" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="7nrre2bAr$O" role="1B3o_S" />
+      <node concept="10P_77" id="7nrre2bAr_7" role="3clF45" />
+      <node concept="3clFbS" id="7nrre2bAr$Q" role="3clF47">
+        <node concept="3clFbF" id="7nrre2bArAq" role="3cqZAp">
+          <node concept="3clFbT" id="7nrre2bArAp" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="7nrre2bAr$x" role="13h7CW">
+      <node concept="3clFbS" id="7nrre2bAr$y" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7nrre2bArXh">
+    <property role="3GE5qa" value="features" />
+    <ref role="13h7C2" to="at53:4SDJcZBNVBU" resolve="EnabledFeature" />
+    <node concept="13hLZK" id="7nrre2bArXi" role="13h7CW">
+      <node concept="3clFbS" id="7nrre2bArXj" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7nrre2bArX$" role="13h7CS">
+      <property role="TrG5h" value="isBooleanFeature" />
+      <ref role="13i0hy" node="7nrre2bAr$N" resolve="isBooleanFeature" />
+      <node concept="3Tm1VV" id="7nrre2bArX_" role="1B3o_S" />
+      <node concept="3clFbS" id="7nrre2bArXE" role="3clF47">
+        <node concept="3clFbF" id="7nrre2bAs2y" role="3cqZAp">
+          <node concept="3clFbT" id="7nrre2bAs2x" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="7nrre2bArXF" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7nrre2bAs2W">
+    <property role="3GE5qa" value="features" />
+    <ref role="13h7C2" to="at53:4SDJcZBNVBT" resolve="VisibilityFeature" />
+    <node concept="13i0hz" id="7nrre2bAs3f" role="13h7CS">
+      <property role="TrG5h" value="isBooleanFeature" />
+      <ref role="13i0hy" node="7nrre2bAr$N" resolve="isBooleanFeature" />
+      <node concept="3Tm1VV" id="7nrre2bAs3g" role="1B3o_S" />
+      <node concept="3clFbS" id="7nrre2bAs3h" role="3clF47">
+        <node concept="3clFbF" id="7nrre2bAs3i" role="3cqZAp">
+          <node concept="3clFbT" id="7nrre2bAs3j" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="7nrre2bAs3k" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="7nrre2bAs2X" role="13h7CW">
+      <node concept="3clFbS" id="7nrre2bAs2Y" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7nrre2bAs3I">
+    <property role="3GE5qa" value="features" />
+    <ref role="13h7C2" to="at53:4SDJcZBNVBS" resolve="CheckedFeature" />
+    <node concept="13i0hz" id="7nrre2bAs41" role="13h7CS">
+      <property role="TrG5h" value="isBooleanFeature" />
+      <ref role="13i0hy" node="7nrre2bAr$N" resolve="isBooleanFeature" />
+      <node concept="3Tm1VV" id="7nrre2bAs42" role="1B3o_S" />
+      <node concept="3clFbS" id="7nrre2bAs43" role="3clF47">
+        <node concept="3clFbF" id="7nrre2bAs44" role="3cqZAp">
+          <node concept="3clFbT" id="7nrre2bAs45" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="7nrre2bAs46" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="7nrre2bAs3J" role="13h7CW">
+      <node concept="3clFbS" id="7nrre2bAs3K" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

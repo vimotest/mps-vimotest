@@ -3181,7 +3181,7 @@
   <node concept="PKFIW" id="1RiAxJSfnLY">
     <property role="3GE5qa" value="features.rowhandle" />
     <property role="TrG5h" value="IRowHandleKindOwner_EC" />
-    <ref role="1XX52x" to="at53:1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+    <ref role="1XX52x" to="at53:1RiAxJSe_9Q" resolve="IRowBasedFeature" />
     <node concept="3EZMnI" id="1RiAxJSfs_v" role="2wV5jI">
       <node concept="3F0ifn" id="1RiAxJSfs_z" role="3EZMnx">
         <property role="3F0ifm" value="rowhandle kind:" />

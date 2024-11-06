@@ -174,6 +174,9 @@
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -224,6 +227,9 @@
       <concept id="2674824929519835220" name="alfi.structure.NameBinding" flags="ng" index="_vnHe">
         <reference id="3855977438835276054" name="nameRef" index="3acloq" />
       </concept>
+      <concept id="8164141882417537798" name="alfi.structure.IHasReturnParameter" flags="ngI" index="Gbzzf">
+        <child id="4507289605805843609" name="returnParameter" index="NkNyt" />
+      </concept>
       <concept id="3328952194368014464" name="alfi.structure.Block" flags="ng" index="PCHzy">
         <child id="3328952194368014465" name="statements" index="PCHzz" />
       </concept>
@@ -239,6 +245,7 @@
       <concept id="7144803224889269844" name="alfi.structure.ReturnStatement" flags="ng" index="32G6VT">
         <child id="8875975376183143672" name="expression" index="2vFQ1F" />
       </concept>
+      <concept id="7144803224894301410" name="alfi.structure.UnboundedValueLiteralExpression" flags="ng" index="32L9hf" />
       <concept id="7144803224895060397" name="alfi.structure.PropertyAccessExpression" flags="ng" index="32M0$0">
         <child id="7144803224895280402" name="featureReference" index="32PqmZ" />
       </concept>
@@ -252,7 +259,11 @@
       <concept id="2021446509810891979" name="alfi.structure.QualifiedTypeName" flags="ng" index="3xHE8C" />
       <concept id="2021446509810890950" name="alfi.structure.TypeName" flags="ngI" index="3xHEo_" />
       <concept id="2021446509811517476" name="alfi.structure.TypedElementDefinition" flags="ng" index="3xMlr7">
+        <child id="2021446509811779615" name="_multiplicityRange" index="3xLlrW" />
         <child id="2021446509811517477" name="typeName" index="3xMlr6" />
+      </concept>
+      <concept id="2021446509811531205" name="alfi.structure.OnesidedMultiplicityRange" flags="ng" index="3xMmcA">
+        <child id="2021446509811532623" name="upperBound" index="3xM9QG" />
       </concept>
       <concept id="2021446509812382885" name="alfi.structure.FormalParameter" flags="ng" index="3xR696">
         <property id="2021446509812382886" name="direction" index="3xR695" />
@@ -570,6 +581,26 @@
             </node>
           </node>
         </node>
+        <node concept="3xMmcA" id="7FAtRx$VO1l" role="3xLlrW">
+          <node concept="32L9hf" id="7FAtRx$VOmO" role="3xM9QG" />
+          <node concept="1W57fq" id="7FAtRx$VOM3" role="lGtFl">
+            <node concept="3IZrLx" id="7FAtRx$VOM4" role="3IZSJc">
+              <node concept="3clFbS" id="7FAtRx$VOM5" role="2VODD2">
+                <node concept="3clFbF" id="7FAtRx$VP68" role="3cqZAp">
+                  <node concept="2OqwBi" id="7FAtRx$VPP0" role="3clFbG">
+                    <node concept="30H73N" id="7FAtRx$VP67" role="2Oq$k0" />
+                    <node concept="1mIQ4w" id="7FAtRx$VZNE" role="2OqNvi">
+                      <node concept="chp4Y" id="7FAtRx$VZYu" role="cj9EA">
+                        <ref role="cht4Q" to="at53:7FAtRx$VQ6k" resolve="IHasMultipleValues" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="15s5l7" id="7FAtRx_8Iwj" role="lGtFl" />
+        </node>
       </node>
       <node concept="6nSm6" id="2evlxT959XX" role="PCHHv">
         <property role="TrG5h" value="getWidgetFeature" />
@@ -603,6 +634,38 @@
         </node>
         <node concept="2ZBi8u" id="7nrre2bDdmB" role="lGtFl">
           <ref role="2rW$FS" node="7ceEXPSz6YX" resolve="ViewWidgetFeature_Getter_OperationDefinition" />
+        </node>
+        <node concept="3xR696" id="7FAtRx$VH5s" role="NkNyt">
+          <property role="3xR695" value="3Ud70gdvRyt/return" />
+          <property role="TrG5h" value="__return__" />
+          <node concept="3xHE8C" id="7FAtRx$VHaT" role="3xMlr6">
+            <node concept="2RqM1Q" id="7FAtRx$VHaU" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+            </node>
+            <node concept="1sPUBX" id="7FAtRx$VHaV" role="lGtFl">
+              <ref role="v9R2y" node="2evlxT95xQL" resolve="switch_WidgetFeatureType" />
+            </node>
+          </node>
+          <node concept="3xMmcA" id="7FAtRx_8Mr2" role="3xLlrW">
+            <node concept="32L9hf" id="7FAtRx_8MAO" role="3xM9QG" />
+            <node concept="1W57fq" id="7FAtRx_8MYx" role="lGtFl">
+              <node concept="3IZrLx" id="7FAtRx_8MYy" role="3IZSJc">
+                <node concept="3clFbS" id="7FAtRx_8MYz" role="2VODD2">
+                  <node concept="3clFbF" id="7FAtRx_8Noy" role="3cqZAp">
+                    <node concept="2OqwBi" id="7FAtRx_8Noz" role="3clFbG">
+                      <node concept="30H73N" id="7FAtRx_8No$" role="2Oq$k0" />
+                      <node concept="1mIQ4w" id="7FAtRx_8No_" role="2OqNvi">
+                        <node concept="chp4Y" id="7FAtRx_8NoA" role="cj9EA">
+                          <ref role="cht4Q" to="at53:7FAtRx$VQ6k" resolve="IHasMultipleValues" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="15s5l7" id="7FAtRx_8OrB" role="lGtFl" />
+          </node>
         </node>
       </node>
     </node>

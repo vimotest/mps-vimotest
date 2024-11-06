@@ -691,7 +691,10 @@
     <property role="3GE5qa" value="features" />
     <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
     <node concept="PrWs8" id="1RiAxJSgEdx" role="PzmwI">
-      <ref role="PrY4T" node="1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+      <ref role="PrY4T" node="1RiAxJSe_9Q" resolve="IRowBasedFeature" />
+    </node>
+    <node concept="PrWs8" id="7FAtRx$VXNQ" role="PzmwI">
+      <ref role="PrY4T" node="7FAtRx$VQ6k" resolve="IHasMultipleValues" />
     </node>
   </node>
   <node concept="1TIwiD" id="2lm5WNlbZLg">
@@ -701,7 +704,10 @@
     <property role="3GE5qa" value="features" />
     <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
     <node concept="PrWs8" id="1RiAxJSg_pQ" role="PzmwI">
-      <ref role="PrY4T" node="1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+      <ref role="PrY4T" node="1RiAxJSe_9Q" resolve="IRowBasedFeature" />
+    </node>
+    <node concept="PrWs8" id="7FAtRx$VXNS" role="PzmwI">
+      <ref role="PrY4T" node="7FAtRx$VQ6k" resolve="IHasMultipleValues" />
     </node>
   </node>
   <node concept="1TIwiD" id="2lm5WNlbZLh">
@@ -711,7 +717,10 @@
     <property role="3GE5qa" value="features" />
     <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
     <node concept="PrWs8" id="1RiAxJSfAbO" role="PzmwI">
-      <ref role="PrY4T" node="1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+      <ref role="PrY4T" node="1RiAxJSe_9Q" resolve="IRowBasedFeature" />
+    </node>
+    <node concept="PrWs8" id="7FAtRx$VXNR" role="PzmwI">
+      <ref role="PrY4T" node="7FAtRx$VQ6k" resolve="IHasMultipleValues" />
     </node>
   </node>
   <node concept="1TIwiD" id="44HS8_67HzJ">
@@ -731,6 +740,9 @@
       <property role="IQ2nx" value="5655792802101418340" />
       <property role="TrG5h" value="defaultText" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="7FAtRx$VXNP" role="PzmwI">
+      <ref role="PrY4T" node="7FAtRx$VQ6k" resolve="IHasMultipleValues" />
     </node>
   </node>
   <node concept="1TIwiD" id="44HS8_67HzK">
@@ -985,7 +997,7 @@
   <node concept="PlHQZ" id="1RiAxJSe_9Q">
     <property role="EcuMT" value="2148949417128514166" />
     <property role="3GE5qa" value="features.rowhandle" />
-    <property role="TrG5h" value="IRowHandleKindOwner" />
+    <property role="TrG5h" value="IRowBasedFeature" />
     <node concept="1TJgyi" id="1RiAxJSeDXj" role="1TKVEl">
       <property role="IQ2nx" value="2148949417128533843" />
       <property role="TrG5h" value="rowHandleKind" />
@@ -1001,6 +1013,11 @@
       <property role="TrG5h" value="namespace" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="7FAtRx$VQ6k">
+    <property role="EcuMT" value="8855897076243849620" />
+    <property role="3GE5qa" value="util" />
+    <property role="TrG5h" value="IHasMultipleValues" />
   </node>
 </model>
 

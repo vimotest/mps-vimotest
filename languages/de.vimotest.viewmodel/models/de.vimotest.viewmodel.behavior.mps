@@ -2885,7 +2885,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="2w4bAIFMn1n" role="3clF45">
-        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowBasedFeature" />
       </node>
     </node>
   </node>
@@ -3108,7 +3108,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="2w4bAIFMovg" role="3clF45">
-        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowBasedFeature" />
       </node>
     </node>
   </node>
@@ -3975,7 +3975,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="2w4bAIFMkNC" role="3clF45">
-        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowBasedFeature" />
       </node>
     </node>
   </node>
@@ -5619,10 +5619,10 @@
     <node concept="13i0hz" id="1RiAxJSeINg" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="getRowHandleKindOwner" />
+      <property role="TrG5h" value="getRowBasedFeature" />
       <node concept="3Tm1VV" id="1RiAxJSeINh" role="1B3o_S" />
       <node concept="3Tqbb2" id="1RiAxJSf6O7" role="3clF45">
-        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowBasedFeature" />
       </node>
       <node concept="3clFbS" id="1RiAxJSeINj" role="3clF47" />
     </node>
@@ -5746,10 +5746,10 @@
     <node concept="13i0hz" id="2w4bAIFM8vc" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="getRowHandleKindOwner" />
+      <property role="TrG5h" value="getRowBasedFeature" />
       <node concept="3Tm1VV" id="2w4bAIFM8vd" role="1B3o_S" />
       <node concept="3Tqbb2" id="2w4bAIFM8KH" role="3clF45">
-        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowBasedFeature" />
       </node>
       <node concept="3clFbS" id="2w4bAIFM8vf" role="3clF47" />
     </node>
@@ -6039,7 +6039,7 @@
       <property role="TrG5h" value="getRowKindOwner" />
       <node concept="3Tm1VV" id="3JF9X1M5_eS" role="1B3o_S" />
       <node concept="3Tqbb2" id="3JF9X1M5_sW" role="3clF45">
-        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+        <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowBasedFeature" />
       </node>
       <node concept="3clFbS" id="3JF9X1M5_eU" role="3clF47">
         <node concept="3cpWs6" id="3JF9X1M5_uu" role="3cqZAp">

@@ -18,6 +18,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -261,11 +262,14 @@
         <property id="3016673643442476650" name="width" index="Lsnro" />
         <property id="3016673643442476939" name="height" index="LsnsT" />
       </concept>
+      <concept id="4233755548139812761" name="de.vimotest.viewmodel.structure.CustomFeatureNameBinding" flags="ng" index="1ytMm$">
+        <property id="4233755548139843443" name="customName" index="1ytVPe" />
+      </concept>
       <concept id="2148949417128494489" name="de.vimotest.viewmodel.structure.IHasRowHandle" flags="ngI" index="3_U9Y2">
         <property id="2148949417128694883" name="indexRowHandle" index="3_VSTS" />
         <property id="2148949417128694884" name="stringRowHandle" index="3_VSTZ" />
       </concept>
-      <concept id="2148949417128514166" name="de.vimotest.viewmodel.structure.IRowHandleKindOwner" flags="ngI" index="3_UcxH">
+      <concept id="2148949417128514166" name="de.vimotest.viewmodel.structure.IRowBasedFeature" flags="ngI" index="3_UcxH">
         <property id="2148949417128533843" name="rowHandleKind" index="3_U0l8" />
       </concept>
       <concept id="2690363995917909071" name="de.vimotest.viewmodel.structure.WidgetListRowsFeature" flags="ng" index="3KuuI3" />
@@ -2673,6 +2677,34 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="103ZX$" id="3F1kzPoIN6z">
+    <property role="TrG5h" value="NameBinding_View" />
+    <node concept="103ZXx" id="3F1kzPoIN6$" role="103ZXC">
+      <node concept="3Vw88J" id="3F1kzPoIN6_" role="1006ar">
+        <property role="TrG5h" value="LoadView" />
+      </node>
+    </node>
+    <node concept="103ZXB" id="3F1kzPoIN6A" role="103ZXF">
+      <node concept="V3ZfZ" id="3F1kzPoJZ98" role="103ZUC">
+        <property role="TrG5h" value="MyLabel" />
+        <node concept="V3Zf6" id="3F1kzPoJZ9a" role="V3ZfK">
+          <node concept="1ytMm$" id="3F1kzPoMKoc" role="lGtFl">
+            <property role="1ytVPe" value="mText" />
+          </node>
+        </node>
+        <node concept="C4FCh" id="3F1kzPoJZ9c" role="V3ZfL">
+          <property role="2VM7R0" value="true" />
+          <node concept="1ytMm$" id="3F1kzPoMKod" role="lGtFl">
+            <property role="1ytVPe" value="mEnabled" />
+          </node>
+        </node>
+        <node concept="C4FCg" id="3F1kzPoJZ9e" role="V3ZfM" />
+        <node concept="1ytMm$" id="3F1kzPoN0UL" role="lGtFl">
+          <property role="1ytVPe" value="mLabel" />
         </node>
       </node>
     </node>

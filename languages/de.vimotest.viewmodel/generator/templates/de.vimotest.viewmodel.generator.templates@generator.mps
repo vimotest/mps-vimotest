@@ -26,9 +26,13 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -38,8 +42,12 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -67,6 +75,7 @@
       </concept>
       <concept id="1168559333462" name="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" flags="ln" index="j$656" />
       <concept id="1112730859144" name="jetbrains.mps.lang.generator.structure.TemplateSwitch" flags="ig" index="jVnub">
+        <child id="1168558750579" name="defaultConsequence" index="jxRDz" />
         <child id="1167340453568" name="reductionMappingRule" index="3aUrZf" />
       </concept>
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
@@ -79,10 +88,16 @@
         <reference id="1200911342686" name="sourceConcept" index="2rTdP9" />
         <reference id="1200913004646" name="targetConcept" index="2rZz_L" />
       </concept>
+      <concept id="5005282049925926521" name="jetbrains.mps.lang.generator.structure.TemplateArgumentParameterExpression" flags="nn" index="v3LJS">
+        <reference id="5005282049925926522" name="parameter" index="v3LJV" />
+      </concept>
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ngI" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
+        <child id="1722980698497626405" name="actualArgument" index="v9R3O" />
       </concept>
-      <concept id="5133195082121471908" name="jetbrains.mps.lang.generator.structure.LabelMacro" flags="ln" index="2ZBi8u" />
+      <concept id="5133195082121471908" name="jetbrains.mps.lang.generator.structure.LabelMacro" flags="ln" index="2ZBi8u">
+        <child id="3541437991299113739" name="input1" index="38klgt" />
+      </concept>
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
@@ -100,19 +115,27 @@
       <concept id="1087833466690" name="jetbrains.mps.lang.generator.structure.NodeMacro" flags="lg" index="17VmuZ">
         <reference id="1200912223215" name="mappingLabel" index="2rW$FS" />
       </concept>
+      <concept id="3541437991299094512" name="jetbrains.mps.lang.generator.structure.LabelMacroInputQuery" flags="ig" index="38ki3A" />
       <concept id="1167327847730" name="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" flags="lg" index="3aamgX">
         <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
       </concept>
       <concept id="1167514355419" name="jetbrains.mps.lang.generator.structure.Root_MappingRule" flags="lg" index="3lhOvk">
         <reference id="1167514355421" name="template" index="3lhOvi" />
       </concept>
+      <concept id="982871510064032177" name="jetbrains.mps.lang.generator.structure.IParameterizedTemplate" flags="ngI" index="1s_3nv">
+        <child id="982871510064032342" name="parameter" index="1s_3oS" />
+      </concept>
       <concept id="982871510068000147" name="jetbrains.mps.lang.generator.structure.TemplateSwitchMacro" flags="lg" index="1sPUBX" />
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
+      <concept id="1167756221419" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_templatePropertyValue" flags="nn" index="3zGtF$" />
       <concept id="1167770111131" name="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" flags="in" index="3$xsQk" />
       <concept id="1167945743726" name="jetbrains.mps.lang.generator.structure.IfMacro_Condition" flags="in" index="3IZrLx" />
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
       <concept id="8900764248744213868" name="jetbrains.mps.lang.generator.structure.InlineTemplateWithContext_RuleConsequence" flags="lg" index="1Koe21">
         <child id="8900764248744213871" name="contentNode" index="1Koe22" />
+      </concept>
+      <concept id="1805153994415891174" name="jetbrains.mps.lang.generator.structure.TemplateParameterDeclaration" flags="ng" index="1N15co">
+        <child id="1805153994415893199" name="type" index="1N15GL" />
       </concept>
       <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
       <concept id="1118773211870" name="jetbrains.mps.lang.generator.structure.IfMacro" flags="ln" index="1W57fq">
@@ -302,6 +325,16 @@
       <ref role="2rTdP9" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
     </node>
+    <node concept="2rT7sh" id="3MA_Belg$uC" role="2rTMjI">
+      <property role="TrG5h" value="IRowBasedViewWidget_UpdatingFlag_OperationDefinition" />
+      <ref role="2rTdP9" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
+      <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
+    </node>
+    <node concept="2rT7sh" id="3MA_Belg_n1" role="2rTMjI">
+      <property role="TrG5h" value="WidgetTreeRowsFeature_RowLevel_OperationDefinition" />
+      <ref role="2rTdP9" to="at53:2lm5WNlbZLg" resolve="WidgetTreeRowsFeature" />
+      <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
+    </node>
     <node concept="2rT7sh" id="247DgsTs_Mj" role="2rTMjI">
       <property role="TrG5h" value="IRowBasedViewWidget_ClassDefinition" />
       <ref role="2rTdP9" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
@@ -435,6 +468,7 @@
         </node>
       </node>
       <node concept="6lMYc" id="3hBQrFq92ZV" role="PCHHv">
+        <property role="TrG5h" value="feature" />
         <node concept="3xHEo_" id="3hBQrFq92ZW" role="3xMlr6" />
         <node concept="2b32R4" id="3hBQrFq93iJ" role="lGtFl">
           <node concept="3JmXsc" id="3hBQrFq93iM" role="2P8S$">
@@ -456,7 +490,16 @@
           </node>
         </node>
       </node>
+      <node concept="6lMYc" id="3MA_BelgB$S" role="PCHHv">
+        <property role="TrG5h" value="property" />
+        <node concept="3xHEo_" id="3MA_BelgB$T" role="3xMlr6" />
+        <node concept="1sPUBX" id="3MA_BelgB$U" role="lGtFl">
+          <ref role="v9R2y" node="3MA_BelgAPj" resolve="switch_AdditionalProperties" />
+          <node concept="3clFbT" id="3MA_Belwg7K" role="v9R3O" />
+        </node>
+      </node>
       <node concept="6nSm6" id="3hBQrFq96Xj" role="PCHHv">
+        <property role="TrG5h" value="command" />
         <node concept="PCHzy" id="3hBQrFq96Xk" role="GbAUv" />
         <node concept="2b32R4" id="3hBQrFq97sl" role="lGtFl">
           <node concept="3JmXsc" id="3hBQrFq97so" role="2P8S$">
@@ -666,6 +709,15 @@
             </node>
             <node concept="15s5l7" id="7FAtRx_8OrB" role="lGtFl" />
           </node>
+        </node>
+      </node>
+      <node concept="6lMYc" id="3MA_BelmfC8" role="PCHHv">
+        <property role="TrG5h" value="property" />
+        <node concept="3xHEo_" id="3MA_BelmfC9" role="3xMlr6" />
+        <node concept="raruj" id="3MA_BelmhyF" role="lGtFl" />
+        <node concept="1sPUBX" id="3MA_BelmfCj" role="lGtFl">
+          <ref role="v9R2y" node="3MA_BelgAPj" resolve="switch_AdditionalProperties" />
+          <node concept="3clFbT" id="3MA_BelwgRU" role="v9R3O" />
         </node>
       </node>
     </node>
@@ -1034,6 +1086,7 @@
         </node>
       </node>
       <node concept="6lMYc" id="247DgsTss5T" role="PCHHv">
+        <property role="TrG5h" value="feature" />
         <node concept="3xHEo_" id="247DgsTss5U" role="3xMlr6" />
         <node concept="2b32R4" id="247DgsTssn0" role="lGtFl">
           <node concept="3JmXsc" id="247DgsTssn1" role="2P8S$">
@@ -1078,6 +1131,16 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="6lMYc" id="3MA_Belw4WE" role="PCHHv">
+        <property role="TrG5h" value="property" />
+        <node concept="3xHEo_" id="3MA_Belw4WF" role="3xMlr6" />
+        <node concept="1sPUBX" id="3MA_Belw4WG" role="lGtFl">
+          <ref role="v9R2y" node="3MA_BelgAPj" resolve="switch_AdditionalProperties" />
+          <node concept="3clFbT" id="3MA_Belwg64" role="v9R3O">
+            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>
@@ -1139,6 +1202,15 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="6lMYc" id="3MA_Belmpky" role="PCHHv">
+        <property role="TrG5h" value="property" />
+        <node concept="3xHEo_" id="3MA_Belmpkz" role="3xMlr6" />
+        <node concept="raruj" id="3MA_Belmpk$" role="lGtFl" />
+        <node concept="1sPUBX" id="3MA_Belmpk_" role="lGtFl">
+          <ref role="v9R2y" node="3MA_BelgAPj" resolve="switch_AdditionalProperties" />
+          <node concept="3clFbT" id="3MA_BelwlX_" role="v9R3O" />
         </node>
       </node>
     </node>
@@ -1362,6 +1434,216 @@
                   <ref role="21nZrZ" to="at53:1RiAxJSerz6" resolve="IndexRowHandle" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="jVnub" id="3MA_BelgAPj">
+    <property role="3GE5qa" value="widgets" />
+    <property role="TrG5h" value="switch_AdditionalProperties" />
+    <node concept="1N15co" id="3MA_Belw7av" role="1s_3oS">
+      <property role="TrG5h" value="insideRowClass" />
+      <node concept="10P_77" id="3MA_Belw8OP" role="1N15GL" />
+    </node>
+    <node concept="b5Tf3" id="3MA_BelgDmt" role="jxRDz" />
+    <node concept="3aamgX" id="3MA_BelgDmu" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
+      <node concept="1Koe21" id="3MA_BelgE5L" role="1lVwrX">
+        <node concept="6nSm2" id="3MA_BelgE65" role="1Koe22">
+          <property role="PCHHn" value="6OepWIVA92I/package" />
+          <property role="TrG5h" value="reduce_ViewWidgetFeature" />
+          <node concept="6lMYc" id="3MA_BelgE66" role="PCHHv">
+            <property role="PCHHn" value="6OepWIVA92M/private" />
+            <property role="TrG5h" value="updatingRows" />
+            <node concept="3xHE8C" id="3MA_BelgE67" role="3xMlr6">
+              <node concept="2RqM1Q" id="3MA_BelgE68" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+              </node>
+            </node>
+            <node concept="raruj" id="3MA_BelgE6a" role="lGtFl" />
+            <node concept="17Uvod" id="3MA_BelmVXf" role="lGtFl">
+              <property role="2qtEX9" value="name" />
+              <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+              <node concept="3zFVjK" id="3MA_BelmVXg" role="3zH0cK">
+                <node concept="3clFbS" id="3MA_BelmVXh" role="2VODD2">
+                  <node concept="3clFbF" id="3MA_BelmWh_" role="3cqZAp">
+                    <node concept="2YIFZM" id="3MA_BelmWhA" role="3clFbG">
+                      <ref role="37wK5l" to="jrwo:3MA_Belmy$2" resolve="getAttributeName" />
+                      <ref role="1Pybhc" to="jrwo:2evlxT94KqS" resolve="GeneratorNameHelper" />
+                      <node concept="2OqwBi" id="3MA_BelmXHg" role="37wK5m">
+                        <node concept="30H73N" id="3MA_BelmX0b" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="3MA_BelmYeR" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
+                      <node concept="3zGtF$" id="3MA_BelmYDf" role="37wK5m" />
+                      <node concept="3clFbT" id="3MA_BelmZ4t" role="37wK5m">
+                        <property role="3clFbU" value="true" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="6nSm6" id="3MA_BelgE6s" role="PCHHv">
+            <property role="TrG5h" value="isUpdatingRows" />
+            <node concept="PCHzy" id="3MA_BelgE6t" role="GbAUv">
+              <node concept="32G6VT" id="3MA_BelgE6u" role="PCHzz">
+                <node concept="32M0$0" id="3MA_BelgE6v" role="2vFQ1F">
+                  <node concept="32Pqhl" id="3MA_BelgE6w" role="32PqmZ">
+                    <node concept="_iR_j" id="3MA_BelgE6x" role="32Men7" />
+                    <node concept="_vnHe" id="3MA_BelgE6y" role="32Men1">
+                      <ref role="3acloq" node="3MA_BelgE66" resolve="widgetFeature" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="raruj" id="3MA_BelgE6z" role="lGtFl" />
+            <node concept="2ZBi8u" id="3MA_BelgE6E" role="lGtFl">
+              <ref role="2rW$FS" node="3MA_Belg$uC" resolve="IRowBasedViewWidget_UpdatingFlag_OperationDefinition" />
+              <node concept="38ki3A" id="3MA_Belk10a" role="38klgt">
+                <node concept="3clFbS" id="3MA_Belk10b" role="2VODD2">
+                  <node concept="3clFbF" id="3MA_Belk13F" role="3cqZAp">
+                    <node concept="30H73N" id="3MA_Belk13E" role="3clFbG" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3xR696" id="3MA_BelgE6F" role="NkNyt">
+              <property role="3xR695" value="3Ud70gdvRyt/return" />
+              <property role="TrG5h" value="__return__" />
+              <node concept="3xHE8C" id="3MA_BelgE6G" role="3xMlr6">
+                <node concept="2RqM1Q" id="3MA_BelgE6H" role="_vnH8">
+                  <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+                </node>
+              </node>
+            </node>
+            <node concept="17Uvod" id="3MA_BelmZZe" role="lGtFl">
+              <property role="2qtEX9" value="name" />
+              <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+              <node concept="3zFVjK" id="3MA_BelmZZf" role="3zH0cK">
+                <node concept="3clFbS" id="3MA_BelmZZg" role="2VODD2">
+                  <node concept="3clFbF" id="3MA_Beln0r5" role="3cqZAp">
+                    <node concept="2YIFZM" id="3MA_Belo3sZ" role="3clFbG">
+                      <ref role="37wK5l" to="jrwo:3MA_Belo5wc" resolve="getGetterOperationName" />
+                      <ref role="1Pybhc" to="jrwo:2evlxT94KqS" resolve="GeneratorNameHelper" />
+                      <node concept="2OqwBi" id="3MA_Belo3t0" role="37wK5m">
+                        <node concept="30H73N" id="3MA_Belo3t1" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="3MA_Belo3t2" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
+                      <node concept="3zGtF$" id="3MA_Belo3t3" role="37wK5m" />
+                      <node concept="3clFbT" id="3MA_Belo3t4" role="37wK5m">
+                        <property role="3clFbU" value="true" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="3MA_BelgLog" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:K_fAvR3LCP" resolve="TreeViewWidget" />
+      <node concept="1Koe21" id="3MA_BelgLoh" role="1lVwrX">
+        <node concept="6nSm2" id="3MA_BelgLoi" role="1Koe22">
+          <property role="PCHHn" value="6OepWIVA92I/package" />
+          <property role="TrG5h" value="reduce_ViewWidgetFeature" />
+          <node concept="6lMYc" id="3MA_BelgLoj" role="PCHHv">
+            <property role="PCHHn" value="6OepWIVA92M/private" />
+            <property role="TrG5h" value="treeRowLevel" />
+            <node concept="3xHE8C" id="3MA_BelgLok" role="3xMlr6">
+              <node concept="2RqM1Q" id="3MA_BelgLol" role="_vnH8">
+                <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+              </node>
+            </node>
+            <node concept="raruj" id="3MA_BelgLom" role="lGtFl" />
+            <node concept="17Uvod" id="3MA_Beln1cY" role="lGtFl">
+              <property role="2qtEX9" value="name" />
+              <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+              <node concept="3zFVjK" id="3MA_Beln1cZ" role="3zH0cK">
+                <node concept="3clFbS" id="3MA_Beln1d0" role="2VODD2">
+                  <node concept="3clFbF" id="3MA_Beln1uX" role="3cqZAp">
+                    <node concept="2YIFZM" id="3MA_Beln1uY" role="3clFbG">
+                      <ref role="37wK5l" to="jrwo:3MA_Belmy$2" resolve="getAttributeName" />
+                      <ref role="1Pybhc" to="jrwo:2evlxT94KqS" resolve="GeneratorNameHelper" />
+                      <node concept="Xl_RD" id="3MA_Belo_OH" role="37wK5m">
+                        <property role="Xl_RC" value="" />
+                      </node>
+                      <node concept="3zGtF$" id="3MA_Beln1v2" role="37wK5m" />
+                      <node concept="3clFbT" id="3MA_Beln1v3" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="6nSm6" id="3MA_BelgLon" role="PCHHv">
+            <property role="TrG5h" value="getTreeRowLevel" />
+            <node concept="PCHzy" id="3MA_BelgLoo" role="GbAUv">
+              <node concept="32G6VT" id="3MA_BelgLop" role="PCHzz">
+                <node concept="32M0$0" id="3MA_BelgLoq" role="2vFQ1F">
+                  <node concept="32Pqhl" id="3MA_BelgLor" role="32PqmZ">
+                    <node concept="_iR_j" id="3MA_BelgLos" role="32Men7" />
+                    <node concept="_vnHe" id="3MA_BelgLot" role="32Men1">
+                      <ref role="3acloq" node="3MA_BelgLoj" resolve="updatingRows" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="raruj" id="3MA_BelgLou" role="lGtFl" />
+            <node concept="2ZBi8u" id="3MA_BelgLov" role="lGtFl">
+              <ref role="2rW$FS" node="3MA_Belg_n1" resolve="WidgetTreeRowsFeature_RowLevel_OperationDefinition" />
+            </node>
+            <node concept="3xR696" id="3MA_BelgLow" role="NkNyt">
+              <property role="3xR695" value="3Ud70gdvRyt/return" />
+              <property role="TrG5h" value="__return__" />
+              <node concept="3xHE8C" id="3MA_BelgLox" role="3xMlr6">
+                <node concept="2RqM1Q" id="3MA_BelgLoy" role="_vnH8">
+                  <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+                </node>
+              </node>
+            </node>
+            <node concept="17Uvod" id="3MA_Beln5RN" role="lGtFl">
+              <property role="2qtEX9" value="name" />
+              <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+              <node concept="3zFVjK" id="3MA_Beln5RO" role="3zH0cK">
+                <node concept="3clFbS" id="3MA_Beln5RP" role="2VODD2">
+                  <node concept="3clFbF" id="3MA_Beln71x" role="3cqZAp">
+                    <node concept="2YIFZM" id="3MA_Belo1_i" role="3clFbG">
+                      <ref role="37wK5l" to="jrwo:3MA_Belo5wc" resolve="getGetterOperationName" />
+                      <ref role="1Pybhc" to="jrwo:2evlxT94KqS" resolve="GeneratorNameHelper" />
+                      <node concept="Xl_RD" id="3MA_BeloDty" role="37wK5m">
+                        <property role="Xl_RC" value="" />
+                      </node>
+                      <node concept="Xl_RD" id="3MA_Belw$Tr" role="37wK5m">
+                        <property role="Xl_RC" value="treeRowLevel" />
+                      </node>
+                      <node concept="3clFbT" id="3MA_Belo1_r" role="37wK5m" />
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="3MA_BelnYm4" role="3cqZAp" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="3MA_Belpv12" role="30HLyM">
+        <node concept="3clFbS" id="3MA_Belpv13" role="2VODD2">
+          <node concept="3clFbF" id="3MA_Belwcu$" role="3cqZAp">
+            <node concept="v3LJS" id="3MA_Belwcuz" role="3clFbG">
+              <ref role="v3LJV" node="3MA_Belw7av" resolve="insideRowClass" />
             </node>
           </node>
         </node>

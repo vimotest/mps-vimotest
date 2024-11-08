@@ -6250,5 +6250,43 @@
       <node concept="3clFbS" id="7nrre2bAs3K" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="5veytyjPKh0">
+    <property role="3GE5qa" value="widgets.util" />
+    <ref role="13h7C2" to="at53:3ZV2RzmQBQf" resolve="CustomFeature" />
+    <node concept="13i0hz" id="5veytyjPRZR" role="13h7CS">
+      <property role="TrG5h" value="isBooleanFeature" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="5veytyjPRZS" role="1B3o_S" />
+      <node concept="10P_77" id="5veytyjPRZT" role="3clF45" />
+      <node concept="3clFbS" id="5veytyjPRZU" role="3clF47">
+        <node concept="3clFbF" id="5veytyjPRZV" role="3cqZAp">
+          <node concept="3clFbT" id="5veytyjPRZW" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="5veytyjPKh1" role="13h7CW">
+      <node concept="3clFbS" id="5veytyjPKh2" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="5veytyjPTdd">
+    <property role="3GE5qa" value="widgets.structures.util" />
+    <ref role="13h7C2" to="at53:3ZV2RzmQoPc" resolve="UpdatingRowsFlagCustomFeature" />
+    <node concept="13hLZK" id="5veytyjPTde" role="13h7CW">
+      <node concept="3clFbS" id="5veytyjPTdf" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="5veytyjQ0VO" role="13h7CS">
+      <property role="TrG5h" value="isBooleanFeature" />
+      <ref role="13i0hy" node="5veytyjPRZR" resolve="isBooleanFeature" />
+      <node concept="3Tm1VV" id="5veytyjQ0VP" role="1B3o_S" />
+      <node concept="3clFbS" id="5veytyjQ0VU" role="3clF47">
+        <node concept="3clFbF" id="5veytyjQ11m" role="3cqZAp">
+          <node concept="3clFbT" id="5veytyjQ11l" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="5veytyjQ0VV" role="3clF45" />
+    </node>
+  </node>
 </model>
 

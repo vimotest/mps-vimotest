@@ -7,10 +7,10 @@
   <imports>
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="at53" ref="r:9e3a5843-688b-4c6d-b3dd-9f321700c21b(de.vimotest.viewmodel.structure)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -336,6 +336,134 @@
         </node>
       </node>
     </node>
+    <node concept="2YIFZL" id="5veytyjPqIW" role="jymVt">
+      <property role="TrG5h" value="getAttributeNameForCustomFeature" />
+      <node concept="3clFbS" id="5veytyjPqIX" role="3clF47">
+        <node concept="3clFbJ" id="5veytyjPqIY" role="3cqZAp">
+          <node concept="3clFbS" id="5veytyjPqIZ" role="3clFbx">
+            <node concept="3cpWs6" id="5veytyjPqJ0" role="3cqZAp">
+              <node concept="2OqwBi" id="5veytyjPqJ1" role="3cqZAk">
+                <node concept="2OqwBi" id="5veytyjPqJ2" role="2Oq$k0">
+                  <node concept="37vLTw" id="5veytyjPqJ3" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5veytyjPqJD" resolve="feature" />
+                  </node>
+                  <node concept="3CFZ6_" id="5veytyjPqJ4" role="2OqNvi">
+                    <node concept="3CFYIy" id="5veytyjPqJ5" role="3CFYIz">
+                      <ref role="3CFYIx" to="at53:3F1kzPoHBup" resolve="CustomPropertyNameBinding" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="5veytyjPqJ6" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:3F1kzPoHIXN" resolve="customFieldName" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="5veytyjPqJ7" role="3clFbw">
+            <node concept="2OqwBi" id="5veytyjPqJ8" role="3uHU7B">
+              <node concept="2OqwBi" id="5veytyjPqJ9" role="2Oq$k0">
+                <node concept="37vLTw" id="5veytyjPqJa" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5veytyjPqJD" resolve="feature" />
+                </node>
+                <node concept="3CFZ6_" id="5veytyjPqJb" role="2OqNvi">
+                  <node concept="3CFYIy" id="5veytyjPqJc" role="3CFYIz">
+                    <ref role="3CFYIx" to="at53:3F1kzPoHBup" resolve="CustomPropertyNameBinding" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3x8VRR" id="5veytyjPqJd" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="5veytyjPqJe" role="3uHU7w">
+              <node concept="2OqwBi" id="5veytyjPqJf" role="2Oq$k0">
+                <node concept="2OqwBi" id="5veytyjPqJg" role="2Oq$k0">
+                  <node concept="37vLTw" id="5veytyjPqJh" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5veytyjPqJD" resolve="feature" />
+                  </node>
+                  <node concept="3CFZ6_" id="5veytyjPqJi" role="2OqNvi">
+                    <node concept="3CFYIy" id="5veytyjPqJj" role="3CFYIz">
+                      <ref role="3CFYIx" to="at53:3F1kzPoHBup" resolve="CustomPropertyNameBinding" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="5veytyjPqJk" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:3F1kzPoHIXN" resolve="customFieldName" />
+                </node>
+              </node>
+              <node concept="17RvpY" id="5veytyjPqJl" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5veytyjRgtR" role="3cqZAp">
+          <node concept="3cpWsn" id="5veytyjRgtS" role="3cpWs9">
+            <property role="TrG5h" value="conceptName" />
+            <node concept="17QB3L" id="5veytyjRhpQ" role="1tU5fm" />
+            <node concept="2OqwBi" id="5veytyjRiqm" role="33vP2m">
+              <node concept="2OqwBi" id="5veytyjRgtT" role="2Oq$k0">
+                <node concept="2OqwBi" id="5veytyjRgtU" role="2Oq$k0">
+                  <node concept="37vLTw" id="5veytyjRgtV" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5veytyjPqJD" resolve="feature" />
+                  </node>
+                  <node concept="2yIwOk" id="5veytyjRgtW" role="2OqNvi" />
+                </node>
+                <node concept="liA8E" id="5veytyjRgtX" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5veytyjRjwh" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
+                <node concept="Xl_RD" id="5veytyjRjVy" role="37wK5m">
+                  <property role="Xl_RC" value="CustomFeature" />
+                </node>
+                <node concept="Xl_RD" id="5veytyjRlmD" role="37wK5m">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5veytyjPqJm" role="3cqZAp">
+          <node concept="1rXfSq" id="5veytyjPqJn" role="3clFbG">
+            <ref role="37wK5l" node="3MA_Belmy$2" resolve="getAttributeName" />
+            <node concept="2OqwBi" id="5veytyjPqJo" role="37wK5m">
+              <node concept="2OqwBi" id="5veytyjPqJr" role="2Oq$k0">
+                <node concept="37vLTw" id="5veytyjPqJs" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5veytyjPqJD" resolve="feature" />
+                </node>
+                <node concept="2Xjw5R" id="5veytyjR0Ay" role="2OqNvi">
+                  <node concept="1xMEDy" id="5veytyjR0A$" role="1xVPHs">
+                    <node concept="chp4Y" id="5veytyjR0Zo" role="ri$Ld">
+                      <ref role="cht4Q" to="at53:F907haLIRF" resolve="ViewWidget" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3TrcHB" id="5veytyjPqJu" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="5veytyjRgtY" role="37wK5m">
+              <ref role="3cqZAo" node="5veytyjRgtS" resolve="name" />
+            </node>
+            <node concept="2OqwBi" id="5veytyjPqJ$" role="37wK5m">
+              <node concept="37vLTw" id="5veytyjPqJ_" role="2Oq$k0">
+                <ref role="3cqZAo" node="5veytyjPqJD" resolve="feature" />
+              </node>
+              <node concept="2qgKlT" id="5veytyjPqJA" role="2OqNvi">
+                <ref role="37wK5l" to="nrs2:5veytyjPRZR" resolve="isBooleanFeature" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5veytyjPqJB" role="1B3o_S" />
+      <node concept="17QB3L" id="5veytyjPqJC" role="3clF45" />
+      <node concept="37vLTG" id="5veytyjPqJD" role="3clF46">
+        <property role="TrG5h" value="feature" />
+        <node concept="3Tqbb2" id="5veytyjPqJE" role="1tU5fm">
+          <ref role="ehGHo" to="at53:3ZV2RzmQBQf" resolve="CustomFeature" />
+        </node>
+      </node>
+    </node>
     <node concept="2YIFZL" id="3MA_Belmy$2" role="jymVt">
       <property role="TrG5h" value="getAttributeName" />
       <node concept="3clFbS" id="3MA_Belmy$3" role="3clF47">
@@ -604,6 +732,139 @@
         <property role="TrG5h" value="feature" />
         <node concept="3Tqbb2" id="2evlxT954Nq" role="1tU5fm">
           <ref role="ehGHo" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
+        </node>
+      </node>
+    </node>
+    <node concept="2YIFZL" id="5veytyjQl4F" role="jymVt">
+      <property role="TrG5h" value="getGetterOperationNameForCustomFeature" />
+      <node concept="3clFbS" id="5veytyjQl4G" role="3clF47">
+        <node concept="3clFbJ" id="5veytyjQl4H" role="3cqZAp">
+          <node concept="3clFbS" id="5veytyjQl4I" role="3clFbx">
+            <node concept="3clFbJ" id="5veytyjQl4J" role="3cqZAp">
+              <node concept="3clFbS" id="5veytyjQl4K" role="3clFbx">
+                <node concept="3cpWs6" id="5veytyjQl4L" role="3cqZAp">
+                  <node concept="2OqwBi" id="5veytyjQl4M" role="3cqZAk">
+                    <node concept="2OqwBi" id="5veytyjQl4N" role="2Oq$k0">
+                      <node concept="37vLTw" id="5veytyjQl4O" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5veytyjQl5y" resolve="feature" />
+                      </node>
+                      <node concept="3CFZ6_" id="5veytyjQl4P" role="2OqNvi">
+                        <node concept="3CFYIy" id="5veytyjQl4Q" role="3CFYIz">
+                          <ref role="3CFYIx" to="at53:3F1kzPoHBup" resolve="CustomPropertyNameBinding" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrcHB" id="5veytyjQl4R" role="2OqNvi">
+                      <ref role="3TsBF5" to="at53:3MA_BelCF41" resolve="customGetterName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="5veytyjQl4S" role="3clFbw">
+                <node concept="2OqwBi" id="5veytyjQl4T" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5veytyjQl4U" role="2Oq$k0">
+                    <node concept="37vLTw" id="5veytyjQl4V" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5veytyjQl5y" resolve="feature" />
+                    </node>
+                    <node concept="3CFZ6_" id="5veytyjQl4W" role="2OqNvi">
+                      <node concept="3CFYIy" id="5veytyjQl4X" role="3CFYIz">
+                        <ref role="3CFYIx" to="at53:3F1kzPoHBup" resolve="CustomPropertyNameBinding" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="5veytyjQl4Y" role="2OqNvi">
+                    <ref role="3TsBF5" to="at53:3MA_BelCF41" resolve="customGetterName" />
+                  </node>
+                </node>
+                <node concept="17RvpY" id="5veytyjQl4Z" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3clFbJ" id="5veytyjQl50" role="3cqZAp">
+              <node concept="3clFbS" id="5veytyjQl51" role="3clFbx">
+                <node concept="3cpWs8" id="5veytyjQl52" role="3cqZAp">
+                  <node concept="3cpWsn" id="5veytyjQl53" role="3cpWs9">
+                    <property role="TrG5h" value="customFieldName" />
+                    <node concept="17QB3L" id="5veytyjQl54" role="1tU5fm" />
+                    <node concept="2OqwBi" id="5veytyjQl55" role="33vP2m">
+                      <node concept="2OqwBi" id="5veytyjQl56" role="2Oq$k0">
+                        <node concept="37vLTw" id="5veytyjQl57" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5veytyjQl5y" resolve="feature" />
+                        </node>
+                        <node concept="3CFZ6_" id="5veytyjQl58" role="2OqNvi">
+                          <node concept="3CFYIy" id="5veytyjQl59" role="3CFYIz">
+                            <ref role="3CFYIx" to="at53:3F1kzPoHBup" resolve="CustomPropertyNameBinding" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3TrcHB" id="5veytyjQl5a" role="2OqNvi">
+                        <ref role="3TsBF5" to="at53:3F1kzPoHIXN" resolve="customFieldName" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs6" id="5veytyjQl5b" role="3cqZAp">
+                  <node concept="2YIFZM" id="5veytyjQl5c" role="3cqZAk">
+                    <ref role="37wK5l" to="18ew:~NameUtil.getGetterName(java.lang.String)" resolve="getGetterName" />
+                    <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                    <node concept="37vLTw" id="5veytyjQl5d" role="37wK5m">
+                      <ref role="3cqZAo" node="5veytyjQl53" resolve="customFieldName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="5veytyjQl5e" role="3clFbw">
+                <node concept="2OqwBi" id="5veytyjQl5f" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5veytyjQl5g" role="2Oq$k0">
+                    <node concept="37vLTw" id="5veytyjQl5h" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5veytyjQl5y" resolve="feature" />
+                    </node>
+                    <node concept="3CFZ6_" id="5veytyjQl5i" role="2OqNvi">
+                      <node concept="3CFYIy" id="5veytyjQl5j" role="3CFYIz">
+                        <ref role="3CFYIx" to="at53:3F1kzPoHBup" resolve="CustomPropertyNameBinding" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="5veytyjQl5k" role="2OqNvi">
+                    <ref role="3TsBF5" to="at53:3F1kzPoHIXN" resolve="customFieldName" />
+                  </node>
+                </node>
+                <node concept="17RvpY" id="5veytyjQl5l" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5veytyjQl5m" role="3clFbw">
+            <node concept="2OqwBi" id="5veytyjQl5n" role="2Oq$k0">
+              <node concept="37vLTw" id="5veytyjQl5o" role="2Oq$k0">
+                <ref role="3cqZAo" node="5veytyjQl5y" resolve="feature" />
+              </node>
+              <node concept="3CFZ6_" id="5veytyjQl5p" role="2OqNvi">
+                <node concept="3CFYIy" id="5veytyjQl5q" role="3CFYIz">
+                  <ref role="3CFYIx" to="at53:3F1kzPoHBup" resolve="CustomPropertyNameBinding" />
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="5veytyjQl5r" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5veytyjQl5s" role="3cqZAp">
+          <node concept="2YIFZM" id="5veytyjQl5t" role="3clFbG">
+            <ref role="37wK5l" to="18ew:~NameUtil.getGetterName(java.lang.String)" resolve="getGetterName" />
+            <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+            <node concept="1rXfSq" id="5veytyjQl5u" role="37wK5m">
+              <ref role="37wK5l" node="5veytyjPqIW" resolve="getAttributeNameForCustomFeature" />
+              <node concept="37vLTw" id="5veytyjQl5v" role="37wK5m">
+                <ref role="3cqZAo" node="5veytyjQl5y" resolve="feature" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5veytyjQl5w" role="1B3o_S" />
+      <node concept="17QB3L" id="5veytyjQl5x" role="3clF45" />
+      <node concept="37vLTG" id="5veytyjQl5y" role="3clF46">
+        <property role="TrG5h" value="feature" />
+        <node concept="3Tqbb2" id="5veytyjQl5z" role="1tU5fm">
+          <ref role="ehGHo" to="at53:3ZV2RzmQBQf" resolve="CustomFeature" />
         </node>
       </node>
     </node>

@@ -3186,17 +3186,22 @@
   </node>
   <node concept="PKFIW" id="1RiAxJSfnLY">
     <property role="3GE5qa" value="features.rowhandle" />
-    <property role="TrG5h" value="IRowHandleKindOwner_EC" />
+    <property role="TrG5h" value="IRowBasedFeature_EC" />
     <ref role="1XX52x" to="at53:1RiAxJSe_9Q" resolve="IRowBasedFeature" />
     <node concept="3EZMnI" id="1RiAxJSfs_v" role="2wV5jI">
-      <node concept="3F0ifn" id="1RiAxJSfs_z" role="3EZMnx">
-        <property role="3F0ifm" value="rowhandle kind:" />
-        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      <node concept="3F1sOY" id="5veytyjouao" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:3ZV2RzmQQQK" resolve="rowHandleFeature" />
+        <node concept="pVoyu" id="5veytyjouaq" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
-      <node concept="3F0A7n" id="1RiAxJSfs_A" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:1RiAxJSeDXj" resolve="rowHandleKind" />
+      <node concept="3F1sOY" id="5veytyjouas" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:3ZV2RzmQQQL" resolve="updatingRowsFlagFeature" />
+        <node concept="pVoyu" id="5veytyjouau" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
-      <node concept="2iRfu4" id="1RiAxJSfs_y" role="2iSdaV" />
+      <node concept="l2Vlx" id="5veytyjouam" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="1RiAxJSfAbP">
@@ -3231,6 +3236,15 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="lj46D" id="1RiAxJSgEdv" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5veytyjouaw" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:3ZV2RzmQQQJ" resolve="treeRowLevelFeature" />
+        <node concept="pVoyu" id="5veytyjouay" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5veytyjouaz" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -3382,6 +3396,31 @@
       </node>
       <node concept="2SsqMj" id="3MA_BelBU07" role="3EZMnx" />
       <node concept="2iRkQZ" id="3MA_BelBU08" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3ZV2RzmQJmp">
+    <property role="3GE5qa" value="widgets.util" />
+    <ref role="1XX52x" to="at53:3ZV2RzmQBQf" resolve="CustomFeature" />
+    <node concept="3EZMnI" id="3ZV2RzmQQQD" role="2wV5jI">
+      <node concept="PMmxH" id="3ZV2RzmQQQH" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="2iRfu4" id="3ZV2RzmQQQG" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5veytyjwr5V">
+    <property role="3GE5qa" value="widgets.structures.util" />
+    <ref role="1XX52x" to="at53:3ZV2RzmQhkT" resolve="RowHandleCustomFeature" />
+    <node concept="3EZMnI" id="5veytyjwyJI" role="2wV5jI">
+      <node concept="3F0ifn" id="5veytyjwyJM" role="3EZMnx">
+        <property role="3F0ifm" value="rowhandle kind:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0A7n" id="5veytyjwyJN" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:5veytyjwr5T" resolve="rowHandleKind" />
+      </node>
+      <node concept="2iRfu4" id="5veytyjwyJL" role="2iSdaV" />
     </node>
   </node>
 </model>

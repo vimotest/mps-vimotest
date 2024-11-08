@@ -3418,7 +3418,7 @@
         <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
       </node>
       <node concept="3F0A7n" id="5veytyjwyJN" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:5veytyjwr5T" resolve="rowHandleKind" />
+        <ref role="1NtTu8" to="at53:5veytyjwr5T" resolve="kind" />
       </node>
       <node concept="2iRfu4" id="5veytyjwyJL" role="2iSdaV" />
     </node>

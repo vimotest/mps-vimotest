@@ -1041,6 +1041,9 @@
       <property role="IQ2nx" value="2148949417128533843" />
       <property role="TrG5h" value="rowHandleKind" />
       <ref role="AX2Wp" node="1RiAxJSerz5" resolve="RowHandleKind" />
+      <node concept="t5JxF" id="5veytyjA6iE" role="lGtFl">
+        <property role="t5JxN" value="delegates to rowHandleFeature.kind" />
+      </node>
     </node>
   </node>
   <node concept="PlHQZ" id="3JF9X1LrZr1">
@@ -1115,7 +1118,7 @@
     <ref role="1TJDcQ" node="3ZV2RzmQBQf" resolve="CustomFeature" />
     <node concept="1TJgyi" id="5veytyjwr5T" role="1TKVEl">
       <property role="IQ2nx" value="6327146089782817145" />
-      <property role="TrG5h" value="rowHandleKind" />
+      <property role="TrG5h" value="kind" />
       <ref role="AX2Wp" node="1RiAxJSerz5" resolve="RowHandleKind" />
     </node>
   </node>

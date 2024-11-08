@@ -446,5 +446,49 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="5veytyj_Q_t">
+    <property role="3GE5qa" value="features.rowhandle" />
+    <ref role="1M2myG" to="at53:1RiAxJSe_9Q" resolve="IRowBasedFeature" />
+    <node concept="EnEH3" id="5veytyjA3rS" role="1MhHOB">
+      <ref role="EomxK" to="at53:1RiAxJSeDXj" resolve="rowHandleKind" />
+      <node concept="Eqf_E" id="5veytyjA3sM" role="EtsB7">
+        <node concept="3clFbS" id="5veytyjA3sN" role="2VODD2">
+          <node concept="3clFbF" id="5veytyjA3w4" role="3cqZAp">
+            <node concept="2OqwBi" id="5veytyjA4gg" role="3clFbG">
+              <node concept="2OqwBi" id="5veytyjA3GM" role="2Oq$k0">
+                <node concept="EsrRn" id="5veytyjA3w3" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5veytyjA3Q7" role="2OqNvi">
+                  <ref role="3Tt5mk" to="at53:3ZV2RzmQQQK" resolve="rowHandleFeature" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="5veytyjA4w$" role="2OqNvi">
+                <ref role="3TsBF5" to="at53:5veytyjwr5T" resolve="kind" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1LLf8_" id="5veytyjA4AX" role="1LXaQT">
+        <node concept="3clFbS" id="5veytyjA4AY" role="2VODD2">
+          <node concept="3clFbF" id="5veytyjA4Dw" role="3cqZAp">
+            <node concept="37vLTI" id="5veytyjA67F" role="3clFbG">
+              <node concept="1Wqviy" id="5veytyjA6br" role="37vLTx" />
+              <node concept="2OqwBi" id="5veytyjA5j8" role="37vLTJ">
+                <node concept="2OqwBi" id="5veytyjA4MP" role="2Oq$k0">
+                  <node concept="EsrRn" id="5veytyjA4Dv" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="5veytyjA4WD" role="2OqNvi">
+                    <ref role="3Tt5mk" to="at53:3ZV2RzmQQQK" resolve="rowHandleFeature" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="5veytyjA5xT" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:5veytyjwr5T" resolve="kind" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -2780,9 +2780,6 @@
           </node>
         </node>
         <node concept="C4FCg" id="3F1kzPoJZ9e" role="V3ZfM" />
-        <node concept="2DeX7K" id="3MA_BelCF40" role="lGtFl">
-          <property role="2DeX7P" value="CustomLabel" />
-        </node>
       </node>
       <node concept="3Vayhi" id="3ZV2RzmQhki" role="103ZUC">
         <property role="TrG5h" value="MyTree" />
@@ -2801,21 +2798,30 @@
         </node>
         <node concept="3KuuIs" id="3ZV2RzmQhkH" role="3Vayhh">
           <node concept="3D8xT1" id="5veytyjpKvD" role="3D86r8">
-            <node concept="1ytMm$" id="5veytyjpMDH" role="lGtFl" />
+            <node concept="1ytMm$" id="5veytyjpMDH" role="lGtFl">
+              <property role="1ytVPe" value="handle" />
+            </node>
           </node>
           <node concept="3D8CoO" id="5veytyjpKvE" role="3D86r9">
-            <node concept="1ytMm$" id="5veytyjpMDI" role="lGtFl" />
+            <node concept="1ytMm$" id="5veytyjpMDI" role="lGtFl">
+              <property role="1ytVPe" value="updatingFlag" />
+            </node>
           </node>
           <node concept="3D8gT_" id="5veytyjpMDG" role="3D86rn">
-            <node concept="1ytMm$" id="5veytyjpMDJ" role="lGtFl" />
+            <node concept="1ytMm$" id="5veytyjpMDJ" role="lGtFl">
+              <property role="1ytVPe" value="level" />
+            </node>
+          </node>
+          <node concept="2DeX7K" id="5veytyjJQ4W" role="lGtFl">
+            <property role="2DeX7P" value="MyCustomRow" />
+          </node>
+          <node concept="1ytMm$" id="5veytyjK4Mo" role="lGtFl">
+            <property role="1ytVPe" value="rows" />
           </node>
         </node>
         <node concept="1i$ol" id="3ZV2RzmQhkJ" role="3Vayhg" />
         <node concept="C4FCg" id="3ZV2RzmQhkL" role="3Vayhv" />
         <node concept="C4FCh" id="3ZV2RzmQhkN" role="3Vayhu" />
-        <node concept="2DeX7K" id="3ZV2RzmQhkP" role="lGtFl">
-          <property role="2DeX7P" value="MyTreeView" />
-        </node>
       </node>
     </node>
   </node>

@@ -28,6 +28,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -251,6 +252,52 @@
     <node concept="1YaCAy" id="63ktVPu3S_K" role="1YuTPh">
       <property role="TrG5h" value="viewWidgetCommand" />
       <ref role="1YaFvo" to="at53:6kjlgUuu6dE" resolve="ViewWidgetCommand" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5veytyjJ$tg">
+    <property role="TrG5h" value="check_CustomPropertyNameBinding" />
+    <property role="3GE5qa" value="bindings" />
+    <node concept="3clFbS" id="5veytyjJ$th" role="18ibNy">
+      <node concept="3clFbJ" id="5veytyjJGcc" role="3cqZAp">
+        <node concept="1Wc70l" id="5veytyjJL4L" role="3clFbw">
+          <node concept="2OqwBi" id="5veytyjJNeF" role="3uHU7w">
+            <node concept="2OqwBi" id="5veytyjJLyf" role="2Oq$k0">
+              <node concept="1YBJjd" id="5veytyjJLkF" role="2Oq$k0">
+                <ref role="1YBMHb" node="5veytyjJ$tj" resolve="binding" />
+              </node>
+              <node concept="3TrcHB" id="5veytyjJLJe" role="2OqNvi">
+                <ref role="3TsBF5" to="at53:3MA_BelCF41" resolve="customGetterName" />
+              </node>
+            </node>
+            <node concept="17RlXB" id="5veytyjJO8H" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="5veytyjJI0B" role="3uHU7B">
+            <node concept="2OqwBi" id="5veytyjJGni" role="2Oq$k0">
+              <node concept="1YBJjd" id="5veytyjJGco" role="2Oq$k0">
+                <ref role="1YBMHb" node="5veytyjJ$tj" resolve="binding" />
+              </node>
+              <node concept="3TrcHB" id="5veytyjJGzS" role="2OqNvi">
+                <ref role="3TsBF5" to="at53:3F1kzPoHIXN" resolve="customFieldName" />
+              </node>
+            </node>
+            <node concept="17RlXB" id="5veytyjJIWt" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="5veytyjJGce" role="3clFbx">
+          <node concept="2MkqsV" id="5veytyjJObJ" role="3cqZAp">
+            <node concept="Xl_RD" id="5veytyjJOc2" role="2MkJ7o">
+              <property role="Xl_RC" value="customPropertyBinding must have custom field or getter name" />
+            </node>
+            <node concept="1YBJjd" id="5veytyjJPG_" role="1urrMF">
+              <ref role="1YBMHb" node="5veytyjJ$tj" resolve="binding" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5veytyjJ$tj" role="1YuTPh">
+      <property role="TrG5h" value="binding" />
+      <ref role="1YaFvo" to="at53:3F1kzPoHBup" resolve="CustomPropertyNameBinding" />
     </node>
   </node>
 </model>

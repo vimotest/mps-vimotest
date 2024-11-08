@@ -3308,7 +3308,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F0ifn" id="6OtXG9K2KVq" role="3EZMnx">
-          <property role="3F0ifm" value="@customName" />
+          <property role="3F0ifm" value="@customPropertyName" />
           <ref role="1k5W1q" to="tpch:hOawUFH" resolve="AnnotationNode" />
         </node>
         <node concept="3F0ifn" id="3F1kzPoJZ9h" role="3EZMnx">
@@ -3369,7 +3369,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F0ifn" id="3MA_BelBTZY" role="3EZMnx">
-          <property role="3F0ifm" value="@customName" />
+          <property role="3F0ifm" value="@customTypeName" />
           <ref role="1k5W1q" to="tpch:hOawUFH" resolve="AnnotationNode" />
         </node>
         <node concept="3F0ifn" id="3MA_BelBTZZ" role="3EZMnx">

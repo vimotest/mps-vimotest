@@ -1045,6 +1045,9 @@
         <property role="t5JxN" value="delegates to rowHandleFeature.kind" />
       </node>
     </node>
+    <node concept="PrWs8" id="5veytyjIXh8" role="PrDN$">
+      <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3JF9X1LrZr1">
     <property role="EcuMT" value="4317588443974596289" />

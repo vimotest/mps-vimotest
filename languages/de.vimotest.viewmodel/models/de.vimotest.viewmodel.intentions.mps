@@ -801,7 +801,7 @@
               </node>
             </node>
             <node concept="Xl_RD" id="3F1kzPoI9ar" role="3uHU7w">
-              <property role="Xl_RC" value=" Custom Name" />
+              <property role="Xl_RC" value=" Custom Property Name" />
             </node>
           </node>
         </node>

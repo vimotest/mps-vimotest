@@ -772,9 +772,9 @@
   </node>
   <node concept="2S6QgY" id="3F1kzPoHYYN">
     <property role="3GE5qa" value="bindings" />
-    <property role="TrG5h" value="ToggleCustomFeatureNameBinding" />
+    <property role="TrG5h" value="ToggleCustomPropertyNameBinding" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="at53:3F1kzPoMMcm" resolve="ICanHaveCustomName" />
+    <ref role="2ZfgGC" to="at53:3F1kzPoMMcm" resolve="ICanHaveCustomPropertyName" />
     <node concept="2S6ZIM" id="3F1kzPoHYYO" role="2ZfVej">
       <node concept="3clFbS" id="3F1kzPoHYYP" role="2VODD2">
         <node concept="3clFbF" id="3F1kzPoI9as" role="3cqZAp">
@@ -786,7 +786,7 @@
                     <node concept="2Sf5sV" id="3F1kzPoL5ZD" role="2Oq$k0" />
                     <node concept="3CFZ6_" id="3F1kzPoL6M_" role="2OqNvi">
                       <node concept="3CFYIy" id="3F1kzPoL6QX" role="3CFYIz">
-                        <ref role="3CFYIx" to="at53:3F1kzPoHBup" resolve="CustomNameBinding" />
+                        <ref role="3CFYIx" to="at53:3F1kzPoHBup" resolve="CustomPropertyNameBinding" />
                       </node>
                     </node>
                   </node>
@@ -817,7 +817,7 @@
                   <node concept="2Sf5sV" id="3F1kzPoIc8T" role="2Oq$k0" />
                   <node concept="3CFZ6_" id="3F1kzPoIcrT" role="2OqNvi">
                     <node concept="3CFYIy" id="3F1kzPoIcsv" role="3CFYIz">
-                      <ref role="3CFYIx" to="at53:3F1kzPoHBup" resolve="CustomNameBinding" />
+                      <ref role="3CFYIx" to="at53:3F1kzPoHBup" resolve="CustomPropertyNameBinding" />
                     </node>
                   </node>
                 </node>
@@ -830,7 +830,7 @@
               <node concept="2Sf5sV" id="3F1kzPoL88S" role="2Oq$k0" />
               <node concept="3CFZ6_" id="3F1kzPoL88T" role="2OqNvi">
                 <node concept="3CFYIy" id="3F1kzPoL88U" role="3CFYIz">
-                  <ref role="3CFYIx" to="at53:3F1kzPoHBup" resolve="CustomNameBinding" />
+                  <ref role="3CFYIx" to="at53:3F1kzPoHBup" resolve="CustomPropertyNameBinding" />
                 </node>
               </node>
             </node>
@@ -844,11 +844,97 @@
                     <node concept="2Sf5sV" id="3F1kzPoL8jh" role="2Oq$k0" />
                     <node concept="3CFZ6_" id="3F1kzPoL8ji" role="2OqNvi">
                       <node concept="3CFYIy" id="3F1kzPoL8jj" role="3CFYIz">
-                        <ref role="3CFYIx" to="at53:3F1kzPoHBup" resolve="CustomNameBinding" />
+                        <ref role="3CFYIx" to="at53:3F1kzPoHBup" resolve="CustomPropertyNameBinding" />
                       </node>
                     </node>
                   </node>
                   <node concept="3YRAZt" id="3F1kzPoL8BK" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="3MA_BelCsHE">
+    <property role="3GE5qa" value="bindings" />
+    <property role="TrG5h" value="ToggleCustomTypeNameBinding" />
+    <ref role="2ZfgGC" to="at53:3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+    <node concept="2S6ZIM" id="3MA_BelCsHF" role="2ZfVej">
+      <node concept="3clFbS" id="3MA_BelCsHG" role="2VODD2">
+        <node concept="3clFbF" id="3MA_BelCu9H" role="3cqZAp">
+          <node concept="3cpWs3" id="3MA_BelCu9I" role="3clFbG">
+            <node concept="1eOMI4" id="3MA_BelCu9J" role="3uHU7B">
+              <node concept="3K4zz7" id="3MA_BelCu9K" role="1eOMHV">
+                <node concept="2OqwBi" id="3MA_BelCu9L" role="3K4Cdx">
+                  <node concept="2OqwBi" id="3MA_BelCu9M" role="2Oq$k0">
+                    <node concept="2Sf5sV" id="3MA_BelCu9N" role="2Oq$k0" />
+                    <node concept="3CFZ6_" id="3MA_BelCu9O" role="2OqNvi">
+                      <node concept="3CFYIy" id="3MA_BelCu9P" role="3CFYIz">
+                        <ref role="3CFYIx" to="at53:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3w_OXm" id="3MA_BelCu9Q" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="3MA_BelCu9R" role="3K4E3e">
+                  <property role="Xl_RC" value="Add" />
+                </node>
+                <node concept="Xl_RD" id="3MA_BelCu9S" role="3K4GZi">
+                  <property role="Xl_RC" value="Remove" />
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="3MA_BelCu9T" role="3uHU7w">
+              <property role="Xl_RC" value=" Custom Type Name" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="3MA_BelCsHH" role="2ZfgGD">
+      <node concept="3clFbS" id="3MA_BelCsHI" role="2VODD2">
+        <node concept="3clFbJ" id="3MA_BelCvAi" role="3cqZAp">
+          <node concept="3clFbS" id="3MA_BelCvAj" role="3clFbx">
+            <node concept="3clFbF" id="3MA_BelCvAk" role="3cqZAp">
+              <node concept="2OqwBi" id="3MA_BelCvAl" role="3clFbG">
+                <node concept="2OqwBi" id="3MA_BelCvAm" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="3MA_BelCvAn" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="3MA_BelCvAo" role="2OqNvi">
+                    <node concept="3CFYIy" id="3MA_BelCvAp" role="3CFYIz">
+                      <ref role="3CFYIx" to="at53:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2DeJnY" id="3MA_BelCvAq" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3MA_BelCvAr" role="3clFbw">
+            <node concept="2OqwBi" id="3MA_BelCvAs" role="2Oq$k0">
+              <node concept="2Sf5sV" id="3MA_BelCvAt" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="3MA_BelCvAu" role="2OqNvi">
+                <node concept="3CFYIy" id="3MA_BelCvAv" role="3CFYIz">
+                  <ref role="3CFYIx" to="at53:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                </node>
+              </node>
+            </node>
+            <node concept="3w_OXm" id="3MA_BelCvAw" role="2OqNvi" />
+          </node>
+          <node concept="9aQIb" id="3MA_BelCvAx" role="9aQIa">
+            <node concept="3clFbS" id="3MA_BelCvAy" role="9aQI4">
+              <node concept="3clFbF" id="3MA_BelCvAz" role="3cqZAp">
+                <node concept="2OqwBi" id="3MA_BelCvA$" role="3clFbG">
+                  <node concept="2OqwBi" id="3MA_BelCvA_" role="2Oq$k0">
+                    <node concept="2Sf5sV" id="3MA_BelCvAA" role="2Oq$k0" />
+                    <node concept="3CFZ6_" id="3MA_BelCvAB" role="2OqNvi">
+                      <node concept="3CFYIy" id="3MA_BelCvAC" role="3CFYIz">
+                        <ref role="3CFYIx" to="at53:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3YRAZt" id="3MA_BelCvAD" role="2OqNvi" />
                 </node>
               </node>
             </node>

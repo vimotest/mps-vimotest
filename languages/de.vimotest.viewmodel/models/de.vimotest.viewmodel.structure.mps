@@ -101,7 +101,7 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="3F1kzPoMTK4" role="PzmwI">
-      <ref role="PrY4T" node="3F1kzPoMMcm" resolve="ICanHaveCustomName" />
+      <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
     </node>
     <node concept="PrWs8" id="F907haLJ3t" role="PzmwI">
       <ref role="PrY4T" to="evry:F907haLIRL" resolve="IStructContent" />
@@ -204,7 +204,7 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="PrWs8" id="3F1kzPoMTK5" role="PzmwI">
-      <ref role="PrY4T" node="3F1kzPoMMcm" resolve="ICanHaveCustomName" />
+      <ref role="PrY4T" node="3F1kzPoMMcm" resolve="ICanHaveCustomPropertyName" />
     </node>
   </node>
   <node concept="1TIwiD" id="4SDJcZBNVBS">
@@ -1038,24 +1038,51 @@
   <node concept="1TIwiD" id="3F1kzPoHBup">
     <property role="EcuMT" value="4233755548139812761" />
     <property role="3GE5qa" value="bindings" />
-    <property role="TrG5h" value="CustomNameBinding" />
+    <property role="TrG5h" value="CustomPropertyNameBinding" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="3F1kzPoHIXL" role="lGtFl">
-      <property role="Hh88m" value="customName" />
+      <property role="Hh88m" value="customPropertyName" />
       <node concept="trNpa" id="3F1kzPoHIXM" role="EQaZv">
-        <ref role="trN6q" node="3F1kzPoMMcm" resolve="ICanHaveCustomName" />
+        <ref role="trN6q" node="3F1kzPoMMcm" resolve="ICanHaveCustomPropertyName" />
       </node>
     </node>
     <node concept="1TJgyi" id="3F1kzPoHIXN" role="1TKVEl">
       <property role="IQ2nx" value="4233755548139843443" />
-      <property role="TrG5h" value="customName" />
+      <property role="TrG5h" value="customFieldName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3MA_BelCF41" role="1TKVEl">
+      <property role="IQ2nx" value="4370345911585517825" />
+      <property role="TrG5h" value="customGetterName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="PlHQZ" id="3F1kzPoMMcm">
     <property role="EcuMT" value="4233755548141167382" />
     <property role="3GE5qa" value="bindings" />
-    <property role="TrG5h" value="ICanHaveCustomName" />
+    <property role="TrG5h" value="ICanHaveCustomPropertyName" />
+  </node>
+  <node concept="1TIwiD" id="3MA_BelBku3">
+    <property role="EcuMT" value="4370345911585163139" />
+    <property role="3GE5qa" value="bindings" />
+    <property role="TrG5h" value="CustomTypeNameBinding" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="3MA_BelBku4" role="lGtFl">
+      <property role="Hh88m" value="customTypeName" />
+      <node concept="trNpa" id="3MA_BelBku5" role="EQaZv">
+        <ref role="trN6q" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+      </node>
+    </node>
+    <node concept="1TJgyi" id="3MA_BelBku6" role="1TKVEl">
+      <property role="IQ2nx" value="4370345911585163142" />
+      <property role="TrG5h" value="customName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3MA_BelBku7">
+    <property role="EcuMT" value="4370345911585163143" />
+    <property role="3GE5qa" value="bindings" />
+    <property role="TrG5h" value="ICanHaveCustomTypeName" />
   </node>
 </model>
 

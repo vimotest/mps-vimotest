@@ -222,6 +222,9 @@
         <child id="1938192778486065161" name="checkCommand" index="T1B0p" />
         <child id="7278489671513126078" name="textFeature" index="1ISttP" />
       </concept>
+      <concept id="4370345911585163139" name="de.vimotest.viewmodel.structure.CustomTypeNameBinding" flags="ng" index="2DeX7K">
+        <property id="4370345911585163142" name="customName" index="2DeX7P" />
+      </concept>
       <concept id="2567579368932258681" name="de.vimotest.viewmodel.structure.TextBoxWidget" flags="ng" index="UtuMG">
         <child id="2567579368932258684" name="enabledFeature" index="UtuMD" />
         <child id="2567579368932258683" name="visibilityFeature" index="UtuMI" />
@@ -262,8 +265,9 @@
         <property id="3016673643442476650" name="width" index="Lsnro" />
         <property id="3016673643442476939" name="height" index="LsnsT" />
       </concept>
-      <concept id="4233755548139812761" name="de.vimotest.viewmodel.structure.CustomFeatureNameBinding" flags="ng" index="1ytMm$">
-        <property id="4233755548139843443" name="customName" index="1ytVPe" />
+      <concept id="4233755548139812761" name="de.vimotest.viewmodel.structure.CustomPropertyNameBinding" flags="ng" index="1ytMm$">
+        <property id="4370345911585517825" name="customGetterName" index="2D12tM" />
+        <property id="4233755548139843443" name="customFieldName" index="1ytVPe" />
       </concept>
       <concept id="2148949417128494489" name="de.vimotest.viewmodel.structure.IHasRowHandle" flags="ngI" index="3_U9Y2">
         <property id="2148949417128694883" name="indexRowHandle" index="3_VSTS" />
@@ -2694,17 +2698,19 @@
         <node concept="V3Zf6" id="3F1kzPoJZ9a" role="V3ZfK">
           <node concept="1ytMm$" id="3F1kzPoMKoc" role="lGtFl">
             <property role="1ytVPe" value="mText" />
+            <property role="2D12tM" value="getCustomText" />
           </node>
         </node>
         <node concept="C4FCh" id="3F1kzPoJZ9c" role="V3ZfL">
           <property role="2VM7R0" value="true" />
           <node concept="1ytMm$" id="3F1kzPoMKod" role="lGtFl">
             <property role="1ytVPe" value="mEnabled" />
+            <property role="2D12tM" value="getCustomEnabled" />
           </node>
         </node>
         <node concept="C4FCg" id="3F1kzPoJZ9e" role="V3ZfM" />
-        <node concept="1ytMm$" id="3F1kzPoN0UL" role="lGtFl">
-          <property role="1ytVPe" value="mLabel" />
+        <node concept="2DeX7K" id="3MA_BelCF40" role="lGtFl">
+          <property role="2DeX7P" value="CustomLabel" />
         </node>
       </node>
     </node>

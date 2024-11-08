@@ -3287,7 +3287,7 @@
   </node>
   <node concept="24kQdi" id="3F1kzPoHIXO">
     <property role="3GE5qa" value="bindings" />
-    <ref role="1XX52x" to="at53:3F1kzPoHBup" resolve="CustomNameBinding" />
+    <ref role="1XX52x" to="at53:3F1kzPoHBup" resolve="CustomPropertyNameBinding" />
     <node concept="3EZMnI" id="3F1kzPoHQtp" role="2wV5jI">
       <node concept="3EZMnI" id="3F1kzPoHQty" role="3EZMnx">
         <node concept="VPM3Z" id="6OtXG9K2KVp" role="3F10Kt">
@@ -3298,7 +3298,7 @@
           <ref role="1k5W1q" to="tpch:hOawUFH" resolve="AnnotationNode" />
         </node>
         <node concept="3F0ifn" id="3F1kzPoJZ9h" role="3EZMnx">
-          <property role="3F0ifm" value="'" />
+          <property role="3F0ifm" value="fieldName='" />
           <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
           <node concept="11LMrY" id="3F1kzPoJZ9j" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -3307,7 +3307,8 @@
         </node>
         <node concept="2iRfu4" id="3F1kzPoHQtz" role="2iSdaV" />
         <node concept="3F0A7n" id="3F1kzPoHQt_" role="3EZMnx">
-          <ref role="1NtTu8" to="at53:3F1kzPoHIXN" resolve="customName" />
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="at53:3F1kzPoHIXN" resolve="customFieldName" />
           <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
         </node>
         <node concept="3F0ifn" id="3F1kzPoJZ9l" role="3EZMnx">
@@ -3318,9 +3319,69 @@
           </node>
           <node concept="VPM3Z" id="3F1kzPoKxdv" role="3F10Kt" />
         </node>
+        <node concept="3F0ifn" id="3MA_BelCF48" role="3EZMnx">
+          <property role="3F0ifm" value=", getterName='" />
+          <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
+          <node concept="11LMrY" id="3MA_BelCF49" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="VPM3Z" id="3MA_BelCF4a" role="3F10Kt" />
+        </node>
+        <node concept="3F0A7n" id="3MA_BelCF47" role="3EZMnx">
+          <property role="1$x2rV" value="get&lt;FieldName&gt;" />
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="at53:3MA_BelCF41" resolve="customGetterName" />
+          <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
+        </node>
+        <node concept="3F0ifn" id="3MA_BelCF44" role="3EZMnx">
+          <property role="3F0ifm" value="'" />
+          <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
+          <node concept="11L4FC" id="3MA_BelCF45" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="VPM3Z" id="3MA_BelCF46" role="3F10Kt" />
+        </node>
       </node>
       <node concept="2SsqMj" id="3F1kzPoHQtw" role="3EZMnx" />
       <node concept="2iRkQZ" id="3F1kzPoHQts" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3MA_BelBTZT">
+    <property role="3GE5qa" value="bindings" />
+    <ref role="1XX52x" to="at53:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+    <node concept="3EZMnI" id="3MA_BelBTZV" role="2wV5jI">
+      <node concept="3EZMnI" id="3MA_BelBTZW" role="3EZMnx">
+        <node concept="VPM3Z" id="3MA_BelBTZX" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="3MA_BelBTZY" role="3EZMnx">
+          <property role="3F0ifm" value="@customName" />
+          <ref role="1k5W1q" to="tpch:hOawUFH" resolve="AnnotationNode" />
+        </node>
+        <node concept="3F0ifn" id="3MA_BelBTZZ" role="3EZMnx">
+          <property role="3F0ifm" value="'" />
+          <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
+          <node concept="11LMrY" id="3MA_BelBU00" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="VPM3Z" id="3MA_BelBU01" role="3F10Kt" />
+        </node>
+        <node concept="2iRfu4" id="3MA_BelBU02" role="2iSdaV" />
+        <node concept="3F0A7n" id="3MA_BelBU03" role="3EZMnx">
+          <ref role="1NtTu8" to="at53:3MA_BelBku6" resolve="customName" />
+          <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
+        </node>
+        <node concept="3F0ifn" id="3MA_BelBU04" role="3EZMnx">
+          <property role="3F0ifm" value="'" />
+          <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
+          <node concept="11L4FC" id="3MA_BelBU05" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="VPM3Z" id="3MA_BelBU06" role="3F10Kt" />
+        </node>
+      </node>
+      <node concept="2SsqMj" id="3MA_BelBU07" role="3EZMnx" />
+      <node concept="2iRkQZ" id="3MA_BelBU08" role="2iSdaV" />
     </node>
   </node>
 </model>

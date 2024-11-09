@@ -2998,7 +2998,7 @@
     </node>
   </node>
   <node concept="PKFIW" id="1RiAxJSf6QT">
-    <property role="3GE5qa" value="features.rowhandle" />
+    <property role="3GE5qa" value="features.rowbased" />
     <property role="TrG5h" value="IHasRowHandle_EC" />
     <ref role="1XX52x" to="at53:1RiAxJSewmp" resolve="IHasRowHandle" />
     <node concept="1QoScp" id="1RiAxJSfbE9" role="2wV5jI">
@@ -3185,7 +3185,7 @@
     </node>
   </node>
   <node concept="PKFIW" id="1RiAxJSfnLY">
-    <property role="3GE5qa" value="features.rowhandle" />
+    <property role="3GE5qa" value="features.rowbased" />
     <property role="TrG5h" value="IRowBasedFeature_EC" />
     <ref role="1XX52x" to="at53:1RiAxJSe_9Q" resolve="IRowBasedFeature" />
     <node concept="3EZMnI" id="1RiAxJSfs_v" role="2wV5jI">
@@ -3410,7 +3410,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5veytyjwr5V">
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="features.custom" />
     <ref role="1XX52x" to="at53:3ZV2RzmQhkT" resolve="RowHandleCustomFeature" />
     <node concept="3EZMnI" id="5veytyjwyJI" role="2wV5jI">
       <node concept="3F0ifn" id="5veytyjwyJM" role="3EZMnx">
@@ -3421,6 +3421,27 @@
         <ref role="1NtTu8" to="at53:5veytyjwr5T" resolve="kind" />
       </node>
       <node concept="2iRfu4" id="5veytyjwyJL" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="26p1ZniAzYh">
+    <property role="3GE5qa" value="features.custom" />
+    <ref role="1XX52x" to="at53:3ZV2RzmQwkt" resolve="TreeRowLevelCustomFeature" />
+    <node concept="3EZMnI" id="26p1ZniAFCa" role="2wV5jI">
+      <node concept="PMmxH" id="26p1ZniAFCf" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0ifn" id="26p1ZniAFCh" role="3EZMnx">
+        <property role="3F0ifm" value="kind:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        <node concept="xShMh" id="26p1ZniAWar" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="26p1ZniAFCc" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:26p1ZniAsfx" resolve="kind" />
+      </node>
+      <node concept="2iRfu4" id="26p1ZniAFCd" role="2iSdaV" />
     </node>
   </node>
 </model>

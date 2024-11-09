@@ -393,56 +393,24 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="5veytyjRgtR" role="3cqZAp">
-          <node concept="3cpWsn" id="5veytyjRgtS" role="3cpWs9">
-            <property role="TrG5h" value="conceptName" />
-            <node concept="17QB3L" id="5veytyjRhpQ" role="1tU5fm" />
-            <node concept="2OqwBi" id="5veytyjRiqm" role="33vP2m">
-              <node concept="2OqwBi" id="5veytyjRgtT" role="2Oq$k0">
-                <node concept="2OqwBi" id="5veytyjRgtU" role="2Oq$k0">
-                  <node concept="37vLTw" id="5veytyjRgtV" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5veytyjPqJD" resolve="feature" />
-                  </node>
-                  <node concept="2yIwOk" id="5veytyjRgtW" role="2OqNvi" />
-                </node>
-                <node concept="liA8E" id="5veytyjRgtX" role="2OqNvi">
-                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
-                </node>
-              </node>
-              <node concept="liA8E" id="5veytyjRjwh" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
-                <node concept="Xl_RD" id="5veytyjRjVy" role="37wK5m">
-                  <property role="Xl_RC" value="CustomFeature" />
-                </node>
-                <node concept="Xl_RD" id="5veytyjRlmD" role="37wK5m">
-                  <property role="Xl_RC" value="" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="5veytyjPqJm" role="3cqZAp">
           <node concept="1rXfSq" id="5veytyjPqJn" role="3clFbG">
             <ref role="37wK5l" node="3MA_Belmy$2" resolve="getAttributeName" />
-            <node concept="2OqwBi" id="5veytyjPqJo" role="37wK5m">
-              <node concept="2OqwBi" id="5veytyjPqJr" role="2Oq$k0">
-                <node concept="37vLTw" id="5veytyjPqJs" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5veytyjPqJD" resolve="feature" />
-                </node>
-                <node concept="2Xjw5R" id="5veytyjR0Ay" role="2OqNvi">
-                  <node concept="1xMEDy" id="5veytyjR0A$" role="1xVPHs">
-                    <node concept="chp4Y" id="5veytyjR0Zo" role="ri$Ld">
-                      <ref role="cht4Q" to="at53:F907haLIRF" resolve="ViewWidget" />
-                    </node>
-                  </node>
-                </node>
+            <node concept="2OqwBi" id="26p1ZniIAaO" role="37wK5m">
+              <node concept="37vLTw" id="26p1ZniI_Xk" role="2Oq$k0">
+                <ref role="3cqZAo" node="5veytyjPqJD" resolve="feature" />
               </node>
-              <node concept="3TrcHB" id="5veytyjPqJu" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              <node concept="2qgKlT" id="26p1ZniIAyv" role="2OqNvi">
+                <ref role="37wK5l" to="nrs2:26p1ZniI$M3" resolve="getWidgetPrefix" />
               </node>
             </node>
-            <node concept="37vLTw" id="5veytyjRgtY" role="37wK5m">
-              <ref role="3cqZAo" node="5veytyjRgtS" resolve="name" />
+            <node concept="2OqwBi" id="26p1ZniI3Fp" role="37wK5m">
+              <node concept="37vLTw" id="5veytyjRgtY" role="2Oq$k0">
+                <ref role="3cqZAo" node="5veytyjPqJD" resolve="feature" />
+              </node>
+              <node concept="2qgKlT" id="26p1ZniI4bg" role="2OqNvi">
+                <ref role="37wK5l" to="nrs2:26p1ZniHXI3" resolve="getPropertyBaseName" />
+              </node>
             </node>
             <node concept="2OqwBi" id="5veytyjPqJ$" role="37wK5m">
               <node concept="37vLTw" id="5veytyjPqJ_" role="2Oq$k0">

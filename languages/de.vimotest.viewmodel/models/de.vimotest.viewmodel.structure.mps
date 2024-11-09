@@ -990,7 +990,7 @@
   </node>
   <node concept="25R3W" id="1RiAxJSerz5">
     <property role="3F6X1D" value="2148949417128474821" />
-    <property role="3GE5qa" value="features.rowhandle" />
+    <property role="3GE5qa" value="features.rowbased" />
     <property role="TrG5h" value="RowHandleKind" />
     <ref role="1H5jkz" node="1RiAxJSerz6" resolve="IndexRowHandle" />
     <node concept="25R33" id="1RiAxJSerz6" role="25R1y">
@@ -1006,7 +1006,7 @@
   </node>
   <node concept="PlHQZ" id="1RiAxJSewmp">
     <property role="EcuMT" value="2148949417128494489" />
-    <property role="3GE5qa" value="features.rowhandle" />
+    <property role="3GE5qa" value="features.rowbased" />
     <property role="TrG5h" value="IHasRowHandle" />
     <node concept="1TJgyi" id="1RiAxJSfhhz" role="1TKVEl">
       <property role="IQ2nx" value="2148949417128694883" />
@@ -1021,7 +1021,7 @@
   </node>
   <node concept="PlHQZ" id="1RiAxJSe_9Q">
     <property role="EcuMT" value="2148949417128514166" />
-    <property role="3GE5qa" value="features.rowhandle" />
+    <property role="3GE5qa" value="features.rowbased" />
     <property role="TrG5h" value="IRowBasedFeature" />
     <node concept="1TJgyj" id="3ZV2RzmQQQK" role="1TKVEi">
       <property role="IQ2ns" value="4610291257172520368" />
@@ -1115,7 +1115,7 @@
   </node>
   <node concept="1TIwiD" id="3ZV2RzmQhkT">
     <property role="EcuMT" value="4610291257172366649" />
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="features.custom" />
     <property role="TrG5h" value="RowHandleCustomFeature" />
     <property role="34LRSv" value="row handle" />
     <ref role="1TJDcQ" node="3ZV2RzmQBQf" resolve="CustomFeature" />
@@ -1127,17 +1127,22 @@
   </node>
   <node concept="1TIwiD" id="3ZV2RzmQoPc">
     <property role="EcuMT" value="4610291257172397388" />
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="features.custom" />
     <property role="TrG5h" value="UpdatingRowsFlagCustomFeature" />
     <property role="34LRSv" value="updating rows flag" />
     <ref role="1TJDcQ" node="3ZV2RzmQBQf" resolve="CustomFeature" />
   </node>
   <node concept="1TIwiD" id="3ZV2RzmQwkt">
     <property role="EcuMT" value="4610291257172428061" />
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="features.custom" />
     <property role="TrG5h" value="TreeRowLevelCustomFeature" />
     <property role="34LRSv" value="tree row level" />
     <ref role="1TJDcQ" node="3ZV2RzmQBQf" resolve="CustomFeature" />
+    <node concept="1TJgyi" id="26p1ZniAsfx" role="1TKVEl">
+      <property role="IQ2nx" value="2420975027070026721" />
+      <property role="TrG5h" value="kind" />
+      <ref role="AX2Wp" node="26p1ZniAsfA" resolve="TreeLevelKind" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3ZV2RzmQBQf">
     <property role="EcuMT" value="4610291257172458895" />
@@ -1150,6 +1155,22 @@
     </node>
     <node concept="t5JxF" id="3ZV2RzmQQQI" role="lGtFl">
       <property role="t5JxN" value="This is mainly a helper concept to attach ICanHaveCustomPropertyName to special/custom features, as row handles" />
+    </node>
+  </node>
+  <node concept="25R3W" id="26p1ZniAsfA">
+    <property role="3F6X1D" value="2420975027070026726" />
+    <property role="3GE5qa" value="features.rowbased" />
+    <property role="TrG5h" value="TreeRowLevelKind" />
+    <ref role="1H5jkz" node="26p1ZniAsfB" resolve="ByDepth" />
+    <node concept="25R33" id="26p1ZniAsfB" role="25R1y">
+      <property role="3tVfz5" value="2420975027070026727" />
+      <property role="TrG5h" value="ByDepth" />
+      <property role="1L1pqM" value="numeric depth" />
+    </node>
+    <node concept="25R33" id="26p1ZniAzYf" role="25R1y">
+      <property role="3tVfz5" value="2420975027070058383" />
+      <property role="TrG5h" value="ByParentRowHandle" />
+      <property role="1L1pqM" value="parent row handle" />
     </node>
   </node>
 </model>

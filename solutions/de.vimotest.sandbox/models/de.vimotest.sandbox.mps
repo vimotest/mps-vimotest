@@ -278,7 +278,9 @@
         <child id="4610291257172520368" name="rowHandleFeature" index="3D86r8" />
         <child id="4610291257172520369" name="updatingRowsFlagFeature" index="3D86r9" />
       </concept>
-      <concept id="4610291257172428061" name="de.vimotest.viewmodel.structure.TreeRowLevelCustomFeature" flags="ng" index="3D8gT_" />
+      <concept id="4610291257172428061" name="de.vimotest.viewmodel.structure.TreeRowLevelCustomFeature" flags="ng" index="3D8gT_">
+        <property id="2420975027070026721" name="kind" index="3N0cgk" />
+      </concept>
       <concept id="4610291257172366649" name="de.vimotest.viewmodel.structure.RowHandleCustomFeature" flags="ng" index="3D8xT1">
         <property id="6327146089782817145" name="kind" index="34jNyx" />
       </concept>
@@ -884,6 +886,50 @@
         </node>
         <node concept="C4FCg" id="6fEYrkZdc54" role="3Vayhv" />
         <node concept="C4FCh" id="6fEYrkZdc56" role="3Vayhu" />
+      </node>
+      <node concept="3Vayhi" id="26p1ZniC5ev" role="103ZUC">
+        <property role="TrG5h" value="MyParentIndexRowHandles" />
+        <node concept="2nep4R" id="26p1ZniC5ew" role="2nerJJ">
+          <node concept="V3ZfZ" id="26p1ZniC5e_" role="2nerJI">
+            <property role="TrG5h" value="Values" />
+            <node concept="V3Zf6" id="26p1ZniC5eE" role="V3ZfK" />
+            <node concept="C4FCh" id="26p1ZniC5eJ" role="V3ZfL" />
+            <node concept="C4FCg" id="26p1ZniC5eO" role="V3ZfM" />
+          </node>
+        </node>
+        <node concept="3KuuIs" id="26p1ZniC5eU" role="3Vayhh">
+          <node concept="3D8gT_" id="26p1ZniC5eW" role="3D86rn">
+            <property role="3N0cgk" value="26p1ZniAzYf/ByParentRowHandle" />
+          </node>
+          <node concept="3D8xT1" id="26p1ZniC5eY" role="3D86r8" />
+          <node concept="3D8CoO" id="26p1ZniC5f0" role="3D86r9" />
+        </node>
+        <node concept="1i$ol" id="26p1ZniC5f2" role="3Vayhg" />
+        <node concept="C4FCg" id="26p1ZniC5f4" role="3Vayhv" />
+        <node concept="C4FCh" id="26p1ZniC5f6" role="3Vayhu" />
+      </node>
+      <node concept="3Vayhi" id="26p1ZniC5f8" role="103ZUC">
+        <property role="TrG5h" value="MyParentStringRowHandles" />
+        <node concept="2nep4R" id="26p1ZniC5f9" role="2nerJJ">
+          <node concept="V3ZfZ" id="26p1ZniC5fa" role="2nerJI">
+            <property role="TrG5h" value="Values" />
+            <node concept="V3Zf6" id="26p1ZniC5fb" role="V3ZfK" />
+            <node concept="C4FCh" id="26p1ZniC5fc" role="V3ZfL" />
+            <node concept="C4FCg" id="26p1ZniC5fd" role="V3ZfM" />
+          </node>
+        </node>
+        <node concept="3KuuIs" id="26p1ZniC5fe" role="3Vayhh">
+          <node concept="3D8gT_" id="26p1ZniC5ff" role="3D86rn">
+            <property role="3N0cgk" value="26p1ZniAzYf/ByParentRowHandle" />
+          </node>
+          <node concept="3D8xT1" id="26p1ZniC5fg" role="3D86r8">
+            <property role="34jNyx" value="1RiAxJSewmn/StringRowHandle" />
+          </node>
+          <node concept="3D8CoO" id="26p1ZniC5fh" role="3D86r9" />
+        </node>
+        <node concept="1i$ol" id="26p1ZniC5fi" role="3Vayhg" />
+        <node concept="C4FCg" id="26p1ZniC5fj" role="3Vayhv" />
+        <node concept="C4FCh" id="26p1ZniC5fk" role="3Vayhu" />
       </node>
     </node>
   </node>
@@ -2758,6 +2804,7 @@
   </node>
   <node concept="103ZX$" id="3F1kzPoIN6z">
     <property role="TrG5h" value="NameBinding_View" />
+    <property role="3GE5qa" value="bindings" />
     <node concept="103ZXx" id="3F1kzPoIN6$" role="103ZXC">
       <node concept="3Vw88J" id="3F1kzPoIN6_" role="1006ar">
         <property role="TrG5h" value="LoadView" />

@@ -447,7 +447,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="5veytyj_Q_t">
-    <property role="3GE5qa" value="features.rowhandle" />
+    <property role="3GE5qa" value="features.rowbased" />
     <ref role="1M2myG" to="at53:1RiAxJSe_9Q" resolve="IRowBasedFeature" />
     <node concept="EnEH3" id="5veytyjA3rS" role="1MhHOB">
       <ref role="EomxK" to="at53:1RiAxJSeDXj" resolve="rowHandleKind" />

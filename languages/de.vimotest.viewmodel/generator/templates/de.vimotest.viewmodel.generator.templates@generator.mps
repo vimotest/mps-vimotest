@@ -52,6 +52,11 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
       <concept id="1510949579266781519" name="jetbrains.mps.lang.generator.structure.TemplateCallMacro" flags="ln" index="5jKBG">
@@ -1518,8 +1523,221 @@
       <node concept="30G5F_" id="3MA_Belpv12" role="30HLyM">
         <node concept="3clFbS" id="3MA_Belpv13" role="2VODD2">
           <node concept="3clFbF" id="3MA_Belwcu$" role="3cqZAp">
-            <node concept="v3LJS" id="3MA_Belwcuz" role="3clFbG">
-              <ref role="v3LJV" node="3MA_Belw7av" resolve="insideRowClass" />
+            <node concept="1Wc70l" id="26p1ZniHFG0" role="3clFbG">
+              <node concept="2OqwBi" id="26p1ZniHO7e" role="3uHU7w">
+                <node concept="2OqwBi" id="26p1ZniHMVW" role="2Oq$k0">
+                  <node concept="2OqwBi" id="26p1ZniHJ$b" role="2Oq$k0">
+                    <node concept="2OqwBi" id="26p1ZniHGxQ" role="2Oq$k0">
+                      <node concept="30H73N" id="26p1ZniHFTX" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="26p1ZniHICh" role="2OqNvi">
+                        <ref role="3Tt5mk" to="at53:K_fAvR3LCQ" resolve="widgetTreeRowsFeature" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="26p1ZniHMej" role="2OqNvi">
+                      <ref role="3Tt5mk" to="at53:3ZV2RzmQQQJ" resolve="treeRowLevelFeature" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="26p1ZniHNmk" role="2OqNvi">
+                    <ref role="3TsBF5" to="at53:26p1ZniAsfx" resolve="kind" />
+                  </node>
+                </node>
+                <node concept="21noJN" id="26p1ZniHO$C" role="2OqNvi">
+                  <node concept="21nZrQ" id="26p1ZniHO$E" role="21noJM">
+                    <ref role="21nZrZ" to="at53:26p1ZniAsfB" resolve="ByDepth" />
+                  </node>
+                </node>
+              </node>
+              <node concept="v3LJS" id="3MA_Belwcuz" role="3uHU7B">
+                <ref role="v3LJV" node="3MA_Belw7av" resolve="insideRowClass" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="26p1ZniHPpP" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:K_fAvR3LCP" resolve="TreeViewWidget" />
+      <node concept="1Koe21" id="26p1ZniHPpQ" role="1lVwrX">
+        <node concept="2VYdi" id="26p1ZniHPpR" role="1Koe22">
+          <node concept="raruj" id="26p1ZniHPpS" role="lGtFl" />
+          <node concept="5jKBG" id="26p1ZniHPpT" role="lGtFl">
+            <ref role="v9R2y" node="5veytyjPf60" resolve="reduce_CustomFeature" />
+            <node concept="2tJFMh" id="26p1ZniHPpU" role="v9R3O">
+              <node concept="ZC_QK" id="26p1ZniHPpV" role="2tJFKM">
+                <ref role="2aWVGs" to="gkn4:1KdBIfXrfVb" resolve="PrimitiveTypes" />
+                <node concept="ZC_QK" id="26p1ZniHPpW" role="2aWVGa">
+                  <ref role="2aWVGs" to="gkn4:1KdBIfXrfV9" resolve="PrimitiveTypes" />
+                  <node concept="ZC_QK" id="26p1ZniHPpX" role="2aWVGa">
+                    <ref role="2aWVGs" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3NFfHV" id="26p1ZniHPpY" role="5jGum">
+              <node concept="3clFbS" id="26p1ZniHPpZ" role="2VODD2">
+                <node concept="3clFbF" id="26p1ZniHPq0" role="3cqZAp">
+                  <node concept="2OqwBi" id="26p1ZniHPq1" role="3clFbG">
+                    <node concept="2OqwBi" id="26p1ZniHPq2" role="2Oq$k0">
+                      <node concept="30H73N" id="26p1ZniHPq3" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="26p1ZniHPq4" role="2OqNvi">
+                        <ref role="3Tt5mk" to="at53:K_fAvR3LCQ" resolve="widgetTreeRowsFeature" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="26p1ZniHPq5" role="2OqNvi">
+                      <ref role="3Tt5mk" to="at53:3ZV2RzmQQQJ" resolve="treeRowLevelFeature" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="26p1ZniHPq6" role="30HLyM">
+        <node concept="3clFbS" id="26p1ZniHPq7" role="2VODD2">
+          <node concept="3clFbF" id="26p1ZniHPq8" role="3cqZAp">
+            <node concept="1Wc70l" id="26p1ZniHRrR" role="3clFbG">
+              <node concept="2OqwBi" id="26p1ZniHV_o" role="3uHU7w">
+                <node concept="2OqwBi" id="26p1ZniHTX7" role="2Oq$k0">
+                  <node concept="2OqwBi" id="26p1ZniHS$U" role="2Oq$k0">
+                    <node concept="30H73N" id="26p1ZniHRNi" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="26p1ZniHT3t" role="2OqNvi">
+                      <ref role="3Tt5mk" to="at53:K_fAvR3LCQ" resolve="widgetTreeRowsFeature" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="26p1ZniHU_m" role="2OqNvi">
+                    <ref role="3TsBF5" to="at53:1RiAxJSeDXj" resolve="rowHandleKind" />
+                  </node>
+                </node>
+                <node concept="21noJN" id="26p1ZniHVWi" role="2OqNvi">
+                  <node concept="21nZrQ" id="26p1ZniHVWk" role="21noJM">
+                    <ref role="21nZrZ" to="at53:1RiAxJSerz6" resolve="IndexRowHandle" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1Wc70l" id="26p1ZniHPq9" role="3uHU7B">
+                <node concept="v3LJS" id="26p1ZniHPqk" role="3uHU7B">
+                  <ref role="v3LJV" node="3MA_Belw7av" resolve="insideRowClass" />
+                </node>
+                <node concept="2OqwBi" id="26p1ZniHPqa" role="3uHU7w">
+                  <node concept="2OqwBi" id="26p1ZniHPqb" role="2Oq$k0">
+                    <node concept="2OqwBi" id="26p1ZniHPqc" role="2Oq$k0">
+                      <node concept="2OqwBi" id="26p1ZniHPqd" role="2Oq$k0">
+                        <node concept="30H73N" id="26p1ZniHPqe" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="26p1ZniHPqf" role="2OqNvi">
+                          <ref role="3Tt5mk" to="at53:K_fAvR3LCQ" resolve="widgetTreeRowsFeature" />
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="26p1ZniHPqg" role="2OqNvi">
+                        <ref role="3Tt5mk" to="at53:3ZV2RzmQQQJ" resolve="treeRowLevelFeature" />
+                      </node>
+                    </node>
+                    <node concept="3TrcHB" id="26p1ZniHPqh" role="2OqNvi">
+                      <ref role="3TsBF5" to="at53:26p1ZniAsfx" resolve="kind" />
+                    </node>
+                  </node>
+                  <node concept="21noJN" id="26p1ZniHPqi" role="2OqNvi">
+                    <node concept="21nZrQ" id="26p1ZniHPqj" role="21noJM">
+                      <ref role="21nZrZ" to="at53:26p1ZniAzYf" resolve="ByParentRowHandle" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="26p1ZniHWFe" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:K_fAvR3LCP" resolve="TreeViewWidget" />
+      <node concept="1Koe21" id="26p1ZniHWFf" role="1lVwrX">
+        <node concept="2VYdi" id="26p1ZniHWFg" role="1Koe22">
+          <node concept="raruj" id="26p1ZniHWFh" role="lGtFl" />
+          <node concept="5jKBG" id="26p1ZniHWFi" role="lGtFl">
+            <ref role="v9R2y" node="5veytyjPf60" resolve="reduce_CustomFeature" />
+            <node concept="2tJFMh" id="26p1ZniHWFj" role="v9R3O">
+              <node concept="ZC_QK" id="26p1ZniHWFk" role="2tJFKM">
+                <ref role="2aWVGs" to="gkn4:1KdBIfXrfVb" resolve="PrimitiveTypes" />
+                <node concept="ZC_QK" id="26p1ZniHWFl" role="2aWVGa">
+                  <ref role="2aWVGs" to="gkn4:1KdBIfXrfV9" resolve="PrimitiveTypes" />
+                  <node concept="ZC_QK" id="26p1ZniHWFm" role="2aWVGa">
+                    <ref role="2aWVGs" to="gkn4:1KdBIfXrfVO" resolve="String" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3NFfHV" id="26p1ZniHWFn" role="5jGum">
+              <node concept="3clFbS" id="26p1ZniHWFo" role="2VODD2">
+                <node concept="3clFbF" id="26p1ZniHWFp" role="3cqZAp">
+                  <node concept="2OqwBi" id="26p1ZniHWFq" role="3clFbG">
+                    <node concept="2OqwBi" id="26p1ZniHWFr" role="2Oq$k0">
+                      <node concept="30H73N" id="26p1ZniHWFs" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="26p1ZniHWFt" role="2OqNvi">
+                        <ref role="3Tt5mk" to="at53:K_fAvR3LCQ" resolve="widgetTreeRowsFeature" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="26p1ZniHWFu" role="2OqNvi">
+                      <ref role="3Tt5mk" to="at53:3ZV2RzmQQQJ" resolve="treeRowLevelFeature" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="26p1ZniHWFv" role="30HLyM">
+        <node concept="3clFbS" id="26p1ZniHWFw" role="2VODD2">
+          <node concept="3clFbF" id="26p1ZniHWFx" role="3cqZAp">
+            <node concept="1Wc70l" id="26p1ZniHWFy" role="3clFbG">
+              <node concept="2OqwBi" id="26p1ZniHWFz" role="3uHU7w">
+                <node concept="2OqwBi" id="26p1ZniHWF$" role="2Oq$k0">
+                  <node concept="2OqwBi" id="26p1ZniHWF_" role="2Oq$k0">
+                    <node concept="30H73N" id="26p1ZniHWFA" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="26p1ZniHWFB" role="2OqNvi">
+                      <ref role="3Tt5mk" to="at53:K_fAvR3LCQ" resolve="widgetTreeRowsFeature" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="26p1ZniHWFC" role="2OqNvi">
+                    <ref role="3TsBF5" to="at53:1RiAxJSeDXj" resolve="rowHandleKind" />
+                  </node>
+                </node>
+                <node concept="21noJN" id="26p1ZniHWFD" role="2OqNvi">
+                  <node concept="21nZrQ" id="26p1ZniHWFE" role="21noJM">
+                    <ref role="21nZrZ" to="at53:1RiAxJSewmn" resolve="StringRowHandle" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1Wc70l" id="26p1ZniHWFF" role="3uHU7B">
+                <node concept="v3LJS" id="26p1ZniHWFG" role="3uHU7B">
+                  <ref role="v3LJV" node="3MA_Belw7av" resolve="insideRowClass" />
+                </node>
+                <node concept="2OqwBi" id="26p1ZniHWFH" role="3uHU7w">
+                  <node concept="2OqwBi" id="26p1ZniHWFI" role="2Oq$k0">
+                    <node concept="2OqwBi" id="26p1ZniHWFJ" role="2Oq$k0">
+                      <node concept="2OqwBi" id="26p1ZniHWFK" role="2Oq$k0">
+                        <node concept="30H73N" id="26p1ZniHWFL" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="26p1ZniHWFM" role="2OqNvi">
+                          <ref role="3Tt5mk" to="at53:K_fAvR3LCQ" resolve="widgetTreeRowsFeature" />
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="26p1ZniHWFN" role="2OqNvi">
+                        <ref role="3Tt5mk" to="at53:3ZV2RzmQQQJ" resolve="treeRowLevelFeature" />
+                      </node>
+                    </node>
+                    <node concept="3TrcHB" id="26p1ZniHWFO" role="2OqNvi">
+                      <ref role="3TsBF5" to="at53:26p1ZniAsfx" resolve="kind" />
+                    </node>
+                  </node>
+                  <node concept="21noJN" id="26p1ZniHWFP" role="2OqNvi">
+                    <node concept="21nZrQ" id="26p1ZniHWFQ" role="21noJM">
+                      <ref role="21nZrZ" to="at53:26p1ZniAzYf" resolve="ByParentRowHandle" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

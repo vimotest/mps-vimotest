@@ -240,6 +240,9 @@
         <node concept="L2wRC" id="bZSVZdinO9" role="39821P">
           <ref role="L2wRA" node="220dcIkyAj8" resolve="de.vimotest.plugin" />
         </node>
+        <node concept="L2wRC" id="26p1ZnjrotV" role="39821P">
+          <ref role="L2wRA" node="26p1ZnjrosE" resolve="de.vimotest.genplan" />
+        </node>
         <node concept="L2wRC" id="63ktVPu1262" role="39821P">
           <ref role="L2wRA" node="220dcIkyAj2" resolve="de.vimotest.sandbox" />
         </node>
@@ -846,6 +849,48 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="26p1ZnjrosE" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="de.vimotest.genplan" />
+        <property role="3LESm3" value="b28932ae-6b0e-4f97-ad77-84f278001d91" />
+        <node concept="55IIr" id="26p1ZnjrosH" role="3LF7KH">
+          <node concept="2Ry0Ak" id="26p1ZnjrosK" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="26p1ZnjrosN" role="2Ry0An">
+              <property role="2Ry0Am" value="de.vimotest.genplan" />
+              <node concept="2Ry0Ak" id="26p1ZnjrosQ" role="2Ry0An">
+                <property role="2Ry0Am" value="de.vimotest.genplan.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="26p1ZnjrotA" role="3bR37C">
+          <node concept="3bR9La" id="26p1ZnjrotB" role="1SiIV1">
+            <ref role="3bR37D" to="mk2q:5tK9548cRTP" resolve="GenPlan" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="26p1ZnjrotG" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="26p1ZnjrotH" role="1HemKq">
+            <node concept="55IIr" id="26p1ZnjrotC" role="3LXTmr">
+              <node concept="2Ry0Ak" id="26p1ZnjrotD" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="26p1ZnjrotE" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.vimotest.genplan" />
+                  <node concept="2Ry0Ak" id="26p1ZnjrotF" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="26p1ZnjrotI" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="220dcIkyAj8" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="de.vimotest.plugin" />
@@ -1033,6 +1078,11 @@
             <node concept="3qWCbU" id="220dcIkyAkq" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="26p1ZnjrouR" role="3bR37C">
+          <node concept="3bR9La" id="26p1ZnjrouS" role="1SiIV1">
+            <ref role="3bR37D" node="26p1ZnjrosE" resolve="de.vimotest.genplan" />
           </node>
         </node>
       </node>

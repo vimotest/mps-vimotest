@@ -9,7 +9,11 @@
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
+    <facet type="generator" planModel="r:1824e859-c1f6-46d5-8ab9-c61fd55c97bb(de.vimotest.genplan.main@genplan)" />
   </facets>
+  <dependencies>
+    <dependency reexport="false">b28932ae-6b0e-4f97-ad77-84f278001d91(de.vimotest.genplan)</dependency>
+  </dependencies>
   <languageVersions>
     <language slang="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" version="0" />
     <language slang="l:611ecc9e-0703-4ab9-a13c-fb396c607716:de.vimotest.types" version="0" />
@@ -19,6 +23,7 @@
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="b28932ae-6b0e-4f97-ad77-84f278001d91(de.vimotest.genplan)" version="0" />
     <module reference="2980a7d4-8976-4973-92f1-1d4ee8626c70(de.vimotest.sandbox)" version="0" />
   </dependencyVersions>
 </solution>

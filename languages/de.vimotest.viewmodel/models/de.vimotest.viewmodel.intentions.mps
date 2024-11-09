@@ -943,5 +943,91 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="26p1ZnjatuO">
+    <property role="3GE5qa" value="bindings" />
+    <property role="TrG5h" value="ToggleCustomOperationNameBinding" />
+    <ref role="2ZfgGC" to="at53:26p1Znjaeba" resolve="ICanHaveCustomOperationName" />
+    <node concept="2S6ZIM" id="26p1ZnjatuP" role="2ZfVej">
+      <node concept="3clFbS" id="26p1ZnjatuQ" role="2VODD2">
+        <node concept="3clFbF" id="26p1Znja_Y7" role="3cqZAp">
+          <node concept="3cpWs3" id="26p1Znja_Y8" role="3clFbG">
+            <node concept="1eOMI4" id="26p1Znja_Y9" role="3uHU7B">
+              <node concept="3K4zz7" id="26p1Znja_Ya" role="1eOMHV">
+                <node concept="2OqwBi" id="26p1Znja_Yb" role="3K4Cdx">
+                  <node concept="2OqwBi" id="26p1Znja_Yc" role="2Oq$k0">
+                    <node concept="2Sf5sV" id="26p1Znja_Yd" role="2Oq$k0" />
+                    <node concept="3CFZ6_" id="26p1Znja_Ye" role="2OqNvi">
+                      <node concept="3CFYIy" id="26p1Znja_Yf" role="3CFYIz">
+                        <ref role="3CFYIx" to="at53:26p1Znja6xb" resolve="CustomOperationNameBinding" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3w_OXm" id="26p1Znja_Yg" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="26p1Znja_Yh" role="3K4E3e">
+                  <property role="Xl_RC" value="Add" />
+                </node>
+                <node concept="Xl_RD" id="26p1Znja_Yi" role="3K4GZi">
+                  <property role="Xl_RC" value="Remove" />
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="26p1Znja_Yj" role="3uHU7w">
+              <property role="Xl_RC" value=" Custom Operation Name" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="26p1ZnjatuR" role="2ZfgGD">
+      <node concept="3clFbS" id="26p1ZnjatuS" role="2VODD2">
+        <node concept="3clFbJ" id="26p1ZnjaC_s" role="3cqZAp">
+          <node concept="3clFbS" id="26p1ZnjaC_t" role="3clFbx">
+            <node concept="3clFbF" id="26p1ZnjaC_u" role="3cqZAp">
+              <node concept="2OqwBi" id="26p1ZnjaC_v" role="3clFbG">
+                <node concept="2OqwBi" id="26p1ZnjaC_w" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="26p1ZnjaC_x" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="26p1ZnjaC_y" role="2OqNvi">
+                    <node concept="3CFYIy" id="26p1ZnjaC_z" role="3CFYIz">
+                      <ref role="3CFYIx" to="at53:26p1Znja6xb" resolve="CustomOperationNameBinding" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2DeJnY" id="26p1ZnjaC_$" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="26p1ZnjaC__" role="3clFbw">
+            <node concept="2OqwBi" id="26p1ZnjaC_A" role="2Oq$k0">
+              <node concept="2Sf5sV" id="26p1ZnjaC_B" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="26p1ZnjaC_C" role="2OqNvi">
+                <node concept="3CFYIy" id="26p1ZnjaC_D" role="3CFYIz">
+                  <ref role="3CFYIx" to="at53:26p1Znja6xb" resolve="CustomOperationNameBinding" />
+                </node>
+              </node>
+            </node>
+            <node concept="3w_OXm" id="26p1ZnjaC_E" role="2OqNvi" />
+          </node>
+          <node concept="9aQIb" id="26p1ZnjaC_F" role="9aQIa">
+            <node concept="3clFbS" id="26p1ZnjaC_G" role="9aQI4">
+              <node concept="3clFbF" id="26p1ZnjaC_H" role="3cqZAp">
+                <node concept="2OqwBi" id="26p1ZnjaC_I" role="3clFbG">
+                  <node concept="2OqwBi" id="26p1ZnjaC_J" role="2Oq$k0">
+                    <node concept="2Sf5sV" id="26p1ZnjaC_K" role="2Oq$k0" />
+                    <node concept="3CFZ6_" id="26p1ZnjaC_L" role="2OqNvi">
+                      <node concept="3CFYIy" id="26p1ZnjaC_M" role="3CFYIz">
+                        <ref role="3CFYIx" to="at53:26p1Znja6xb" resolve="CustomOperationNameBinding" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3YRAZt" id="26p1ZnjaC_N" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

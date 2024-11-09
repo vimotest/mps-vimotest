@@ -3444,5 +3444,43 @@
       <node concept="2iRfu4" id="26p1ZniAFCd" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="26p1ZnjalP2">
+    <property role="3GE5qa" value="bindings" />
+    <ref role="1XX52x" to="at53:26p1Znja6xb" resolve="CustomOperationNameBinding" />
+    <node concept="3EZMnI" id="26p1ZnjatuA" role="2wV5jI">
+      <node concept="3EZMnI" id="26p1ZnjatuB" role="3EZMnx">
+        <node concept="VPM3Z" id="26p1ZnjatuC" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="26p1ZnjatuD" role="3EZMnx">
+          <property role="3F0ifm" value="@customOperationName" />
+          <ref role="1k5W1q" to="tpch:hOawUFH" resolve="AnnotationNode" />
+        </node>
+        <node concept="3F0ifn" id="26p1ZnjatuE" role="3EZMnx">
+          <property role="3F0ifm" value="'" />
+          <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
+          <node concept="11LMrY" id="26p1ZnjatuF" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="VPM3Z" id="26p1ZnjatuG" role="3F10Kt" />
+        </node>
+        <node concept="2iRfu4" id="26p1ZnjatuH" role="2iSdaV" />
+        <node concept="3F0A7n" id="26p1ZnjatuI" role="3EZMnx">
+          <ref role="1NtTu8" to="at53:26p1Znja6xe" resolve="customName" />
+          <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
+        </node>
+        <node concept="3F0ifn" id="26p1ZnjatuJ" role="3EZMnx">
+          <property role="3F0ifm" value="'" />
+          <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
+          <node concept="11L4FC" id="26p1ZnjatuK" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="VPM3Z" id="26p1ZnjatuL" role="3F10Kt" />
+        </node>
+      </node>
+      <node concept="2SsqMj" id="26p1ZnjatuM" role="3EZMnx" />
+      <node concept="2iRkQZ" id="26p1ZnjatuN" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

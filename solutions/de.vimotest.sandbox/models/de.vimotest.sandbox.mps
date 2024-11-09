@@ -290,6 +290,9 @@
         <child id="4610291257172520367" name="treeRowLevelFeature" index="3D86rn" />
       </concept>
       <concept id="2690363995917909073" name="de.vimotest.viewmodel.structure.WidgetTableRowsFeature" flags="ng" index="3KuuIt" />
+      <concept id="2420975027079374923" name="de.vimotest.viewmodel.structure.CustomOperationNameBinding" flags="ng" index="3MGmYY">
+        <property id="2420975027079374926" name="customName" index="3MGmYV" />
+      </concept>
       <concept id="2392128244454154631" name="de.vimotest.viewmodel.structure.TableViewWidget" flags="ng" index="3UVeDL">
         <child id="5447508759370023522" name="columnsFeature" index="2azj8S" />
         <child id="6201744883133776081" name="selectRowCommand" index="2WQ0rd" />
@@ -2979,6 +2982,19 @@
         <node concept="1i$ol" id="3ZV2RzmQhkJ" role="3Vayhg" />
         <node concept="C4FCg" id="3ZV2RzmQhkL" role="3Vayhv" />
         <node concept="C4FCh" id="3ZV2RzmQhkN" role="3Vayhu" />
+      </node>
+      <node concept="2X2XNh" id="26p1ZnjbxCy" role="103ZUC">
+        <property role="TrG5h" value="MyButton" />
+        <node concept="V3Zf6" id="26p1ZnjbxC$" role="2X2XNi">
+          <property role="3A$Jrx" value="OK" />
+        </node>
+        <node concept="C4FCh" id="26p1ZnjbxCA" role="2X2XNj" />
+        <node concept="C4FCg" id="26p1ZnjbxCC" role="2X2XNc" />
+        <node concept="3Vw88h" id="26p1ZnjbxCE" role="2X2XNd">
+          <node concept="3MGmYY" id="26p1ZnjbxCF" role="lGtFl">
+            <property role="3MGmYV" value="OkClicked" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

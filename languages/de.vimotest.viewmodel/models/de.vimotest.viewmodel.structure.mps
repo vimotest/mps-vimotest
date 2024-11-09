@@ -904,6 +904,9 @@
     <node concept="PrWs8" id="1F_Q10zSUwb" role="PzmwI">
       <ref role="PrY4T" node="F907haLJXw" resolve="IViewModelCommand" />
     </node>
+    <node concept="PrWs8" id="26p1ZnjbkLQ" role="PzmwI">
+      <ref role="PrY4T" node="26p1Znjaeba" resolve="ICanHaveCustomOperationName" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6kjlgUuw6ea">
     <property role="EcuMT" value="7283258543665341322" />
@@ -1172,6 +1175,28 @@
       <property role="TrG5h" value="ByParentRowHandle" />
       <property role="1L1pqM" value="parent row handle" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="26p1Znja6xb">
+    <property role="EcuMT" value="2420975027079374923" />
+    <property role="3GE5qa" value="bindings" />
+    <property role="TrG5h" value="CustomOperationNameBinding" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="26p1Znja6xc" role="lGtFl">
+      <property role="Hh88m" value="customOperationName" />
+      <node concept="trNpa" id="26p1Znja6xd" role="EQaZv">
+        <ref role="trN6q" node="26p1Znjaeba" resolve="ICanHaveCustomOperationName" />
+      </node>
+    </node>
+    <node concept="1TJgyi" id="26p1Znja6xe" role="1TKVEl">
+      <property role="IQ2nx" value="2420975027079374926" />
+      <property role="TrG5h" value="customName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="26p1Znjaeba">
+    <property role="EcuMT" value="2420975027079406282" />
+    <property role="3GE5qa" value="bindings" />
+    <property role="TrG5h" value="ICanHaveCustomOperationName" />
   </node>
 </model>
 

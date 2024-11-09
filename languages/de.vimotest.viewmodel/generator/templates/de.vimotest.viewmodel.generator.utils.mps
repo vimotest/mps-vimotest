@@ -139,6 +139,40 @@
     <node concept="2YIFZL" id="2evlxT94RVh" role="jymVt">
       <property role="TrG5h" value="getOperationName" />
       <node concept="3clFbS" id="2evlxT94RVk" role="3clF47">
+        <node concept="3clFbJ" id="26p1Znjbpvr" role="3cqZAp">
+          <node concept="3clFbS" id="26p1Znjbpvs" role="3clFbx">
+            <node concept="3cpWs6" id="26p1Znjbpvv" role="3cqZAp">
+              <node concept="2OqwBi" id="26p1Znjbpvw" role="3cqZAk">
+                <node concept="3TrcHB" id="26p1Znjbpv_" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:26p1Znja6xe" resolve="customName" />
+                </node>
+                <node concept="2OqwBi" id="26p1Znjbr71" role="2Oq$k0">
+                  <node concept="37vLTw" id="26p1Znjbr72" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2evlxT94RVJ" resolve="command" />
+                  </node>
+                  <node concept="3CFZ6_" id="26p1Znjbr73" role="2OqNvi">
+                    <node concept="3CFYIy" id="26p1Znjbr74" role="3CFYIz">
+                      <ref role="3CFYIx" to="at53:26p1Znja6xb" resolve="CustomOperationNameBinding" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="26p1Znjbpw4" role="3clFbw">
+            <node concept="2OqwBi" id="26p1Znjbpw5" role="2Oq$k0">
+              <node concept="37vLTw" id="26p1Znjbpw6" role="2Oq$k0">
+                <ref role="3cqZAo" node="2evlxT94RVJ" resolve="command" />
+              </node>
+              <node concept="3CFZ6_" id="26p1Znjbpw7" role="2OqNvi">
+                <node concept="3CFYIy" id="26p1Znjbpw8" role="3CFYIz">
+                  <ref role="3CFYIx" to="at53:26p1Znja6xb" resolve="CustomOperationNameBinding" />
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="26p1Znjbpw9" role="2OqNvi" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="247DgsTsIgv" role="3cqZAp">
           <node concept="3cpWsn" id="247DgsTsIgw" role="3cpWs9">
             <property role="TrG5h" value="name" />

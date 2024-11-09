@@ -310,6 +310,7 @@
         <child id="1182506816063" name="smodel" index="1iTxcG" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1145572800087" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingsOperation" flags="nn" index="2Ttrtt" />
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
       </concept>
@@ -432,6 +433,7 @@
         <child id="4611582986551314344" name="requestedType" index="UnYnz" />
       </concept>
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="1175845471038" name="jetbrains.mps.baseLanguage.collections.structure.ReverseOperation" flags="nn" index="35Qw8J" />
       <concept id="1225621920911" name="jetbrains.mps.baseLanguage.collections.structure.InsertElementOperation" flags="nn" index="1sK_Qi">
         <child id="1225621943565" name="element" index="1sKFgg" />
         <child id="1225621960341" name="index" index="1sKJu8" />
@@ -5403,6 +5405,66 @@
       </node>
       <node concept="3Tqbb2" id="6fEYrkZaMPS" role="3clF45">
         <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowHandleKindOwner" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="26p1ZniW6K9" role="13h7CS">
+      <property role="TrG5h" value="getParentRow" />
+      <node concept="3Tm1VV" id="26p1ZniW6Ka" role="1B3o_S" />
+      <node concept="3Tqbb2" id="26p1ZniW7r0" role="3clF45">
+        <ref role="ehGHo" to="53m0:XX1C5W00nT" resolve="TreeCheckRow" />
+      </node>
+      <node concept="3clFbS" id="26p1ZniW6Kc" role="3clF47">
+        <node concept="3clFbF" id="26p1ZniW7rN" role="3cqZAp">
+          <node concept="2OqwBi" id="26p1ZniW9Xt" role="3clFbG">
+            <node concept="2OqwBi" id="26p1ZniWu6r" role="2Oq$k0">
+              <node concept="2OqwBi" id="26p1Znj5lOi" role="2Oq$k0">
+                <node concept="2OqwBi" id="26p1ZniW7BC" role="2Oq$k0">
+                  <node concept="13iPFW" id="26p1ZniW7rM" role="2Oq$k0" />
+                  <node concept="2Ttrtt" id="26p1ZniW7NQ" role="2OqNvi" />
+                </node>
+                <node concept="35Qw8J" id="26p1Znj5n9$" role="2OqNvi" />
+              </node>
+              <node concept="v3k3i" id="26p1ZniWvic" role="2OqNvi">
+                <node concept="chp4Y" id="26p1ZniWvlE" role="v3oSu">
+                  <ref role="cht4Q" to="53m0:XX1C5W00nT" resolve="TreeCheckRow" />
+                </node>
+              </node>
+            </node>
+            <node concept="1z4cxt" id="26p1ZniWjYQ" role="2OqNvi">
+              <node concept="1bVj0M" id="26p1ZniWjYS" role="23t8la">
+                <node concept="3clFbS" id="26p1ZniWjYT" role="1bW5cS">
+                  <node concept="3clFbF" id="26p1ZniWk6t" role="3cqZAp">
+                    <node concept="3clFbC" id="26p1ZniW$U7" role="3clFbG">
+                      <node concept="3cpWsd" id="26p1ZniWDyo" role="3uHU7w">
+                        <node concept="3cmrfG" id="26p1ZniWDyr" role="3uHU7w">
+                          <property role="3cmrfH" value="1" />
+                        </node>
+                        <node concept="2OqwBi" id="26p1ZniWBwd" role="3uHU7B">
+                          <node concept="13iPFW" id="26p1ZniWAF5" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="26p1ZniWBKv" role="2OqNvi">
+                            <ref role="3TsBF5" to="53m0:3uwMqjmRx8F" resolve="expectedDepth" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="26p1ZniWkjM" role="3uHU7B">
+                        <node concept="37vLTw" id="26p1ZniWk6s" role="2Oq$k0">
+                          <ref role="3cqZAo" node="26p1ZniWjYU" resolve="it" />
+                        </node>
+                        <node concept="3TrcHB" id="26p1ZniWvKd" role="2OqNvi">
+                          <ref role="3TsBF5" to="53m0:3uwMqjmRx8F" resolve="expectedDepth" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="gl6BB" id="26p1ZniWjYU" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="26p1ZniWjYV" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

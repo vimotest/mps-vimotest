@@ -1516,6 +1516,116 @@
             </node>
           </node>
         </node>
+        <node concept="DUd2R" id="26p1Znj5eDd" role="1s$QAX">
+          <node concept="30nzp_" id="26p1Znj5eDe" role="DUiSb">
+            <ref role="30nzpS" node="26p1ZniC5ev" resolve="MyParentIndexRowHandles" />
+            <node concept="3Vayj_" id="26p1Znj5eDq" role="30nDbQ">
+              <node concept="3VayiJ" id="26p1Znj5eDr" role="3Vayj$">
+                <node concept="1NvgdS" id="26p1Znj5eDs" role="1NusDP">
+                  <property role="3xvHIf" value="0" />
+                  <node concept="1NuoHz" id="26p1Znj5eDv" role="1NvgdV">
+                    <ref role="3elmOO" node="26p1ZniC5e_" resolve="Values" />
+                    <node concept="V3Zc6" id="26p1Znj5eDt" role="1NuoHy">
+                      <node concept="V3Zdv" id="26p1Znj5eDu" role="V3Zc7">
+                        <property role="3egigc" value="A" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1NvgdS" id="26p1Znj5eDx" role="1NusDP">
+                  <property role="3xvHIf" value="1" />
+                  <node concept="1NuoHz" id="26p1Znj5eD$" role="1NvgdV">
+                    <ref role="3elmOO" node="26p1ZniC5e_" resolve="Values" />
+                    <node concept="V3Zc6" id="26p1Znj5eDy" role="1NuoHy">
+                      <node concept="V3Zdv" id="26p1Znj5eDz" role="V3Zc7">
+                        <property role="3egigc" value="A.B" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1NvgdS" id="26p1Znj5eDP" role="1NusDP">
+                  <property role="3xvHIf" value="0" />
+                  <node concept="1NuoHz" id="26p1Znj5eDS" role="1NvgdV">
+                    <ref role="3elmOO" node="26p1ZniC5e_" resolve="Values" />
+                    <node concept="V3Zc6" id="26p1Znj5eDQ" role="1NuoHy">
+                      <node concept="V3Zdv" id="26p1Znj5eDR" role="V3Zc7">
+                        <property role="3egigc" value="C" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1NvgdS" id="26p1Znj5eDU" role="1NusDP">
+                  <property role="3xvHIf" value="1" />
+                  <node concept="1NuoHz" id="26p1Znj5eDX" role="1NvgdV">
+                    <ref role="3elmOO" node="26p1ZniC5e_" resolve="Values" />
+                    <node concept="V3Zc6" id="26p1Znj5eDV" role="1NuoHy">
+                      <node concept="V3Zdv" id="26p1Znj5eDW" role="V3Zc7">
+                        <property role="3egigc" value="C.D" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="26p1Znj5eDA" role="1s$QAX">
+          <node concept="30nzp_" id="26p1Znj5eDC" role="DUiSb">
+            <ref role="30nzpS" node="26p1ZniC5f8" resolve="MyParentStringRowHandles" />
+            <node concept="3Vayj_" id="26p1Znj5eDD" role="30nDbQ">
+              <node concept="3VayiJ" id="26p1Znj5eDE" role="3Vayj$">
+                <node concept="1NvgdS" id="26p1Znj5eDF" role="1NusDP">
+                  <property role="3xvHIf" value="0" />
+                  <property role="3_VSTZ" value="HANDLE_A" />
+                  <node concept="1NuoHz" id="26p1Znj5eDI" role="1NvgdV">
+                    <ref role="3elmOO" node="26p1ZniC5fa" resolve="Values" />
+                    <node concept="V3Zc6" id="26p1Znj5eDG" role="1NuoHy">
+                      <node concept="V3Zdv" id="26p1Znj5eDH" role="V3Zc7">
+                        <property role="3egigc" value="A" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1NvgdS" id="26p1Znj5eDK" role="1NusDP">
+                  <property role="3xvHIf" value="1" />
+                  <property role="3_VSTZ" value="HANDLE_B" />
+                  <node concept="1NuoHz" id="26p1Znj5eDN" role="1NvgdV">
+                    <ref role="3elmOO" node="26p1ZniC5fa" resolve="Values" />
+                    <node concept="V3Zc6" id="26p1Znj5eDL" role="1NuoHy">
+                      <node concept="V3Zdv" id="26p1Znj5eDM" role="V3Zc7">
+                        <property role="3egigc" value="A.B" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1NvgdS" id="26p1Znj5eDZ" role="1NusDP">
+                  <property role="3xvHIf" value="0" />
+                  <property role="3_VSTZ" value="HANDLE_C" />
+                  <node concept="1NuoHz" id="26p1Znj5eE2" role="1NvgdV">
+                    <ref role="3elmOO" node="26p1ZniC5fa" resolve="Values" />
+                    <node concept="V3Zc6" id="26p1Znj5eE0" role="1NuoHy">
+                      <node concept="V3Zdv" id="26p1Znj5eE1" role="V3Zc7">
+                        <property role="3egigc" value="C" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1NvgdS" id="26p1Znj5eE4" role="1NusDP">
+                  <property role="3xvHIf" value="1" />
+                  <property role="3_VSTZ" value="HANDLE_D" />
+                  <node concept="1NuoHz" id="26p1Znj5eE7" role="1NvgdV">
+                    <ref role="3elmOO" node="26p1ZniC5fa" resolve="Values" />
+                    <node concept="V3Zc6" id="26p1Znj5eE5" role="1NuoHy">
+                      <node concept="V3Zdv" id="26p1Znj5eE6" role="V3Zc7">
+                        <property role="3egigc" value="C.D" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

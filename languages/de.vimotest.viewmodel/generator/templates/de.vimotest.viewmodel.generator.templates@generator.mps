@@ -71,6 +71,7 @@
       <concept id="1202776937179" name="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" flags="lg" index="b5Tf3" />
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
+        <child id="7473026166162327259" name="dropAttrubuteRule" index="CYSdJ" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
       </concept>
@@ -98,6 +99,9 @@
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ngI" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
         <child id="1722980698497626405" name="actualArgument" index="v9R3O" />
+      </concept>
+      <concept id="7473026166162297915" name="jetbrains.mps.lang.generator.structure.DropAttributeRule" flags="lg" index="CY16f">
+        <reference id="7473026166162297918" name="applicableConcept" index="CY16a" />
       </concept>
       <concept id="5133195082121471908" name="jetbrains.mps.lang.generator.structure.LabelMacro" flags="ln" index="2ZBi8u" />
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
@@ -424,6 +428,12 @@
     <node concept="3lhOvk" id="YSmflIzKT0" role="3lj3bC">
       <ref role="30HIoZ" to="at53:F907haLJWg" resolve="ViewModel" />
       <ref role="3lhOvi" node="YSmflIzKTk" resolve="root_mapping_MyViewModel" />
+    </node>
+    <node concept="CY16f" id="26p1ZniRnDu" role="CYSdJ">
+      <ref role="CY16a" to="at53:3F1kzPoHBup" resolve="CustomPropertyNameBinding" />
+    </node>
+    <node concept="CY16f" id="26p1ZniRnFH" role="CYSdJ">
+      <ref role="CY16a" to="at53:3MA_BelBku3" resolve="CustomTypeNameBinding" />
     </node>
   </node>
   <node concept="3mGtxK" id="YSmflIzKTk">

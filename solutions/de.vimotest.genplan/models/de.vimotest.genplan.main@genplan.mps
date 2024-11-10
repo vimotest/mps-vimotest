@@ -40,6 +40,12 @@
   <node concept="2VgMpV" id="5hkZeVaMzHS">
     <property role="TrG5h" value="ViMoTestGenPlanMain" />
     <node concept="2VgMA2" id="26p1Znjpwdg" role="2VgMA7">
+      <node concept="2Qf6Nf" id="2mzDF_u6nQV" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="2mzDF_u6nQX" role="2Qf6Ng">
+          <property role="2V$B1T" value="611ecc9e-0703-4ab9-a13c-fb396c607716" />
+          <property role="2V$B1Q" value="de.vimotest.types" />
+        </node>
+      </node>
       <node concept="2Qf6Nf" id="26p1Znjpwdi" role="2Qf7GQ">
         <node concept="2V$Bhx" id="26p1Znjpwdk" role="2Qf6Ng">
           <property role="2V$B1T" value="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" />

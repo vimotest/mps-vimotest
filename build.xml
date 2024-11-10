@@ -897,7 +897,7 @@
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
-          <module ref="76f7ae4d-6343-4b77-b3be-95673e578bcf(GenPlan)" kind="cl" />
+          <module ref="76f7ae4d-6343-4b77-b3be-95673e578bcf(alfi.genplan)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:7ab1a6fa-0a11-4b95-9e48-75f363d6cb00:jetbrains.mps.lang.generator.plan" />
@@ -1760,7 +1760,7 @@
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/trove.jar" />
-        <fileset file="${artifacts.alfi-build}/alfi/languages/alfi-transformations/GenPlan.jar" />
+        <fileset file="${artifacts.alfi-build}/alfi/languages/alfi-transformations/alfi.genplan.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/de.vimotest.genplan">

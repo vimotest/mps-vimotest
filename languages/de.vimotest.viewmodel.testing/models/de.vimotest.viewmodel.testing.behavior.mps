@@ -566,6 +566,52 @@
         <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
       </node>
     </node>
+    <node concept="13i0hz" id="4Pj3bOmvh0Z" role="13h7CS">
+      <property role="TrG5h" value="getEffectiveContextProviderName" />
+      <node concept="3Tm1VV" id="4Pj3bOmvh10" role="1B3o_S" />
+      <node concept="17QB3L" id="4Pj3bOmvj0T" role="3clF45" />
+      <node concept="3clFbS" id="4Pj3bOmvh12" role="3clF47">
+        <node concept="3clFbJ" id="4Pj3bOmvj2b" role="3cqZAp">
+          <node concept="2OqwBi" id="4Pj3bOmvnxW" role="3clFbw">
+            <node concept="2OqwBi" id="4Pj3bOmvjf3" role="2Oq$k0">
+              <node concept="13iPFW" id="4Pj3bOmvj2$" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4Pj3bOmvl6c" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:4Pj3bOmuYX9" resolve="contextProviderClassName" />
+              </node>
+            </node>
+            <node concept="17RlXB" id="4Pj3bOmvo9S" role="2OqNvi" />
+          </node>
+          <node concept="3clFbS" id="4Pj3bOmvj2d" role="3clFbx">
+            <node concept="3cpWs6" id="4Pj3bOmvoFx" role="3cqZAp">
+              <node concept="3cpWs3" id="4Pj3bOmvrer" role="3cqZAk">
+                <node concept="Xl_RD" id="4Pj3bOmvrfH" role="3uHU7w">
+                  <property role="Xl_RC" value="ContextProvider" />
+                </node>
+                <node concept="2OqwBi" id="4Pj3bOmvoWm" role="3uHU7B">
+                  <node concept="2OqwBi" id="4Pj3bOmvoHn" role="2Oq$k0">
+                    <node concept="13iPFW" id="4Pj3bOmvoGy" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="4Pj3bOmvoJ3" role="2OqNvi">
+                      <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="4Pj3bOmvpbe" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4Pj3bOmvob5" role="3cqZAp">
+          <node concept="2OqwBi" id="4Pj3bOmvoqe" role="3clFbG">
+            <node concept="13iPFW" id="4Pj3bOmvob3" role="2Oq$k0" />
+            <node concept="3TrcHB" id="4Pj3bOmvoEF" role="2OqNvi">
+              <ref role="3TsBF5" to="53m0:4Pj3bOmuYX9" resolve="contextProviderClassName" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="3CJ09vZFA7p">
     <property role="3GE5qa" value="test.assert" />

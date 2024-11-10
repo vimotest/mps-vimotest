@@ -1042,6 +1042,17 @@
       <node concept="PMmxH" id="3JF9X1LtPes" role="3EZMnx">
         <ref role="PMmxG" to="czmc:3JF9X1LtxCE" resolve="IHasNamespace_EC" />
       </node>
+      <node concept="3F0ifn" id="4Pj3bOmvgzL" role="3EZMnx">
+        <property role="3F0ifm" value="context provider class name:" />
+        <node concept="pVoyu" id="4Pj3bOmvgzN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4Pj3bOmvgzP" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <property role="1$x2rV" value="&lt;ViewModelClassName&gt;ContextProvider" />
+        <ref role="1NtTu8" to="53m0:4Pj3bOmuYX9" resolve="contextProviderClassName" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3JdhG1lSFbG">

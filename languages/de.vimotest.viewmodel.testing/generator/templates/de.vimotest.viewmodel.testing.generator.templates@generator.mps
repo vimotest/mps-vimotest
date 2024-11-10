@@ -139,6 +139,7 @@
         <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
       </concept>
       <concept id="1167514355419" name="jetbrains.mps.lang.generator.structure.Root_MappingRule" flags="lg" index="3lhOvk">
+        <property id="1177959072138" name="keepSourceRoot" index="13Pg2o" />
         <reference id="1167514355421" name="template" index="3lhOvi" />
       </concept>
       <concept id="1048903277989260815" name="jetbrains.mps.lang.generator.structure.TemplateArgumentVarRefExpression2" flags="ng" index="1mL9RQ">
@@ -305,6 +306,9 @@
       <concept id="2674824929519835220" name="alfi.structure.NameBinding" flags="ng" index="_vnHe">
         <reference id="3855977438835276054" name="nameRef" index="3acloq" />
       </concept>
+      <concept id="8164141882417537798" name="alfi.structure.IHasReturnParameter" flags="ngI" index="Gbzzf">
+        <child id="4507289605805843609" name="returnParameter" index="NkNyt" />
+      </concept>
       <concept id="3328952194368014464" name="alfi.structure.Block" flags="ng" index="PCHzy">
         <child id="3328952194368014465" name="statements" index="PCHzz" />
       </concept>
@@ -314,6 +318,9 @@
       </concept>
       <concept id="3328952194368015153" name="alfi.structure.ActivityDefinition" flags="ng" index="PCHHj">
         <child id="3328952194368015208" name="body" index="PCHGa" />
+      </concept>
+      <concept id="3328952194368015167" name="alfi.structure.ClassifierDefinition" flags="ng" index="PCHHt">
+        <child id="2021446509800184021" name="specializations" index="3x6$oQ" />
       </concept>
       <concept id="3328952194368015164" name="alfi.structure.NamespaceDefinition" flags="ng" index="PCHHu">
         <child id="3328952194368015165" name="ownedMember" index="PCHHv" />
@@ -326,8 +333,18 @@
       <concept id="8550147057602730244" name="alfi.structure.NameReference" flags="ng" index="2RqM1Q">
         <reference id="8550147057602730245" name="target" index="2RqM1R" />
       </concept>
+      <concept id="7144803224899245198" name="alfi.structure.AssignmentExpression" flags="ng" index="3122gz">
+        <child id="7144803224899369512" name="rightHandSide" index="315$E5" />
+        <child id="7144803224899369510" name="leftHandSide" index="315$Eb" />
+      </concept>
+      <concept id="7144803224899245663" name="alfi.structure.Assignment_FeatureLeftHandSide" flags="ng" index="3122rM">
+        <child id="7144803224899245664" name="feature" index="3122rd" />
+      </concept>
       <concept id="3594942814681426355" name="alfi.structure.PredefinedStereotypeName" flags="ng" index="113yj2">
         <reference id="3594942814681438582" name="ref" index="113tg7" />
+      </concept>
+      <concept id="7144803224897346670" name="alfi.structure.InstanceCreationExpression" flags="ng" index="31diN3">
+        <child id="7144803224897346671" name="constructor" index="31diN2" />
       </concept>
       <concept id="7144803224883052070" name="alfi.structure.LocalNameDeclarationStatement" flags="ng" index="327OUb">
         <property id="7144803224883131098" name="hasMultiplicity" index="327w9R" />
@@ -364,6 +381,9 @@
       <concept id="2021446509810891979" name="alfi.structure.QualifiedTypeName" flags="ng" index="3xHE8C" />
       <concept id="2021446509811517476" name="alfi.structure.TypedElementDefinition" flags="ng" index="3xMlr7">
         <child id="2021446509811517477" name="typeName" index="3xMlr6" />
+      </concept>
+      <concept id="2021446509812382885" name="alfi.structure.FormalParameter" flags="ng" index="3xR696">
+        <property id="2021446509812382886" name="direction" index="3xR695" />
       </concept>
       <concept id="7439839726096719140" name="alfi.structure.SequenceOperationExpression" flags="ng" index="1WUwfO">
         <child id="7439839726096719276" name="primary" index="1WUwdW" />
@@ -438,11 +458,26 @@
       </node>
     </node>
     <node concept="3lhOvk" id="1srqdXUFWsT" role="3lj3bC">
+      <property role="13Pg2o" value="h94ayQF/true_" />
       <ref role="30HIoZ" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
       <ref role="3lhOvi" node="1srqdXUFWsU" resolve="root_mapping_ViewModelFeatureTestSuite" />
     </node>
+    <node concept="3lhOvk" id="4Pj3bOmxylW" role="3lj3bC">
+      <ref role="30HIoZ" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+      <ref role="3lhOvi" node="4Pj3bOmxnkc" />
+    </node>
     <node concept="2rT7sh" id="7T8HsuTT9xd" role="2rTMjI">
       <property role="TrG5h" value="ViewModelFeatureTestSuite_AttributeDefinition" />
+      <ref role="2rTdP9" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+      <ref role="2rZz_L" to="28lk:2HeY20H6tuG" resolve="AttributeDefinition" />
+    </node>
+    <node concept="2rT7sh" id="4Pj3bOmxylV" role="2rTMjI">
+      <property role="TrG5h" value="ViewModelFeatureTestSuite_ContextProvider_ClassDefinition" />
+      <ref role="2rTdP9" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+      <ref role="2rZz_L" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
+    </node>
+    <node concept="2rT7sh" id="4Pj3bOmxAow" role="2rTMjI">
+      <property role="TrG5h" value="ViewModelFeatureTestSuite_ContextProvider_AttributeDefinition" />
       <ref role="2rTdP9" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
       <ref role="2rZz_L" to="28lk:2HeY20H6tuG" resolve="AttributeDefinition" />
     </node>
@@ -514,12 +549,110 @@
           <ref role="2rW$FS" node="7T8HsuTT9xd" resolve="New" />
         </node>
       </node>
+      <node concept="6lMYc" id="4Pj3bOmxAoW" role="PCHHv">
+        <property role="TrG5h" value="contextProvider" />
+        <property role="PCHHn" value="6OepWIVA92M/private" />
+        <node concept="3xHE8C" id="4Pj3bOmxAoX" role="3xMlr6">
+          <node concept="2RqM1Q" id="4Pj3bOmxAoY" role="_vnH8">
+            <ref role="2RqM1R" node="4Pj3bOmxwrC" resolve="root_mapping_ContextProvider" />
+            <node concept="1ZhdrF" id="4Pj3bOmxAoZ" role="lGtFl">
+              <property role="2qtEX8" value="target" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <node concept="3$xsQk" id="4Pj3bOmxAp0" role="3$ytzL">
+                <node concept="3clFbS" id="4Pj3bOmxAp1" role="2VODD2">
+                  <node concept="3clFbF" id="4Pj3bOmxAp2" role="3cqZAp">
+                    <node concept="2OqwBi" id="4Pj3bOmxAp3" role="3clFbG">
+                      <node concept="1iwH7S" id="4Pj3bOmxAp4" role="2Oq$k0" />
+                      <node concept="1iwH70" id="4Pj3bOmxAp5" role="2OqNvi">
+                        <ref role="1iwH77" node="4Pj3bOmxylV" resolve="ViewModelFeatureTestSuite_ContextProvider_ClassDefinition" />
+                        <node concept="30H73N" id="4Pj3bOmxAp7" role="1iwH7V" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2ZBi8u" id="4Pj3bOmxAp9" role="lGtFl">
+          <ref role="2rW$FS" node="4Pj3bOmxAow" resolve="ViewModelFeatureTestSuite_ContextProvider_AttributeDefinition" />
+        </node>
+      </node>
+      <node concept="8qQDt" id="4Pj3bOmEuHC" role="PCHHv" />
+      <node concept="6nSm6" id="4Pj3bOmxDCw" role="PCHHv">
+        <property role="TrG5h" value="BeforeTest" />
+        <property role="PCHHn" value="6OepWIVA92F/protected" />
+        <node concept="PCHzy" id="4Pj3bOmxDCx" role="GbAUv">
+          <node concept="_jtW9" id="4Pj3bOmxEUo" role="PCHzz">
+            <node concept="3122gz" id="4Pj3bOmxHr3" role="_jtWe">
+              <node concept="3122rM" id="4Pj3bOmxHrs" role="315$Eb">
+                <node concept="32Pqhl" id="4Pj3bOmxEU_" role="3122rd">
+                  <node concept="_iR_j" id="4Pj3bOmxEUm" role="32Men7" />
+                  <node concept="_vnHe" id="4Pj3bOmxG5I" role="32Men1">
+                    <ref role="3acloq" node="4Pj3bOmxAoW" resolve="contextProvider" />
+                  </node>
+                </node>
+              </node>
+              <node concept="31diN3" id="4Pj3bOmxHYz" role="315$E5">
+                <node concept="_vnHb" id="4Pj3bOmxHY$" role="31diN2">
+                  <node concept="2RqM1Q" id="4Pj3bOmxKiy" role="_vnH8">
+                    <ref role="2RqM1R" node="4Pj3bOmxwrC" resolve="root_mapping_ContextProvider" />
+                    <node concept="1ZhdrF" id="4Pj3bOmxKiz" role="lGtFl">
+                      <property role="2qtEX8" value="target" />
+                      <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+                      <node concept="3$xsQk" id="4Pj3bOmxKi$" role="3$ytzL">
+                        <node concept="3clFbS" id="4Pj3bOmxKi_" role="2VODD2">
+                          <node concept="3clFbF" id="4Pj3bOmxKiA" role="3cqZAp">
+                            <node concept="2OqwBi" id="4Pj3bOmxKiB" role="3clFbG">
+                              <node concept="1iwH7S" id="4Pj3bOmxKiC" role="2Oq$k0" />
+                              <node concept="1iwH70" id="4Pj3bOmxKiD" role="2OqNvi">
+                                <ref role="1iwH77" node="4Pj3bOmxylV" resolve="ViewModelFeatureTestSuite_ContextProvider_ClassDefinition" />
+                                <node concept="30H73N" id="4Pj3bOmxKiE" role="1iwH7V" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="_vku0" id="4Pj3bOmxHYA" role="_uFfl" />
+              </node>
+            </node>
+          </node>
+          <node concept="_jtW9" id="4Pj3bOmxPJN" role="PCHzz">
+            <node concept="32Pqhq" id="4Pj3bOmxPJE" role="_jtWe">
+              <node concept="32Pqhl" id="4Pj3bOmxPJG" role="32OngV">
+                <node concept="_vnHe" id="4Pj3bOmxPJJ" role="32Men1">
+                  <ref role="3acloq" node="4Pj3bOmxylY" resolve="Init" />
+                </node>
+                <node concept="32M0$0" id="4Pj3bOmxXct" role="32Men7">
+                  <node concept="32Pqhl" id="4Pj3bOmxXcu" role="32PqmZ">
+                    <node concept="_iR_j" id="4Pj3bOmxXcv" role="32Men7" />
+                    <node concept="_vnHe" id="4Pj3bOmxXcw" role="32Men1">
+                      <ref role="3acloq" node="4Pj3bOmxAoW" resolve="contextProvider" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="_vku0" id="4Pj3bOmxPJL" role="_uFfl" />
+            </node>
+          </node>
+        </node>
+        <node concept="3wUxaT" id="4Pj3bOmxEUg" role="3wUx9_">
+          <node concept="113yj2" id="4Pj3bOmxEUj" role="2hPqOu">
+            <ref role="113tg7" to="hsxa:37zNn5KZZ1o" resolve="BeforeTest" />
+          </node>
+        </node>
+      </node>
+      <node concept="8qQDt" id="4Pj3bOmxD90" role="PCHHv" />
       <node concept="3wUxaT" id="1srqdXUFWu1" role="3wUx9_">
         <node concept="113yj2" id="1srqdXUFWJG" role="2hPqOu">
           <ref role="113tg7" to="hsxa:37zNn5KYY1p" resolve="TestSuite" />
         </node>
       </node>
       <node concept="6nSm6" id="1srqdXUFWJI" role="PCHHv">
+        <property role="TrG5h" value="testCase" />
         <node concept="PCHzy" id="1srqdXUFWJJ" role="GbAUv" />
         <node concept="2b32R4" id="1srqdXUFWJZ" role="lGtFl">
           <node concept="3JmXsc" id="1srqdXUFWK2" role="2P8S$">
@@ -531,6 +664,41 @@
                   </node>
                   <node concept="30H73N" id="1srqdXUFWK8" role="2Oq$k0" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="8qQDt" id="4Pj3bOmy3Ew" role="PCHHv" />
+      <node concept="6nSm6" id="4Pj3bOmy51e" role="PCHHv">
+        <property role="TrG5h" value="BuildSut" />
+        <property role="PCHHn" value="6OepWIVA92F/protected" />
+        <node concept="PCHzy" id="4Pj3bOmy51f" role="GbAUv">
+          <node concept="_jtW9" id="4Pj3bOmyjLk" role="PCHzz">
+            <node concept="3122gz" id="4Pj3bOmynD5" role="_jtWe">
+              <node concept="3122rM" id="4Pj3bOmynDu" role="315$Eb">
+                <node concept="32Pqhl" id="4Pj3bOmykHx" role="3122rd">
+                  <node concept="_iR_j" id="4Pj3bOmyjLi" role="32Men7" />
+                  <node concept="_vnHe" id="4Pj3bOmymmf" role="32Men1">
+                    <ref role="3acloq" node="2KQA9MxTirr" resolve="sut" />
+                  </node>
+                </node>
+              </node>
+              <node concept="32Pqhq" id="4Pj3bOmysWP" role="315$E5">
+                <node concept="32Pqhl" id="4Pj3bOmysWQ" role="32OngV">
+                  <node concept="_vnHe" id="4Pj3bOmysWR" role="32Men1">
+                    <ref role="3acloq" node="4Pj3bOmxz2b" resolve="BuildSut" />
+                  </node>
+                  <node concept="32M0$0" id="4Pj3bOmysWS" role="32Men7">
+                    <node concept="32Pqhl" id="4Pj3bOmysWT" role="32PqmZ">
+                      <node concept="_iR_j" id="4Pj3bOmysWU" role="32Men7" />
+                      <node concept="_vnHe" id="4Pj3bOmysWV" role="32Men1">
+                        <ref role="3acloq" node="4Pj3bOmxAoW" resolve="contextProvider" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="_vku0" id="4Pj3bOmysWW" role="_uFfl" />
               </node>
             </node>
           </node>
@@ -798,6 +966,17 @@
               <ref role="v9R2y" node="2DSbB2zN2Xb" resolve="reduce_Statement_GivenDescriptionWithContext" />
             </node>
           </node>
+          <node concept="_jtW9" id="4Pj3bOmz9wr" role="PCHzz">
+            <node concept="32Pqhq" id="4Pj3bOmz9wi" role="_jtWe">
+              <node concept="32Pqhl" id="4Pj3bOmz9wk" role="32OngV">
+                <node concept="_iR_j" id="4Pj3bOmzbfw" role="32Men7" />
+                <node concept="_vnHe" id="4Pj3bOmz9wn" role="32Men1">
+                  <ref role="3acloq" node="4Pj3bOmy51e" resolve="BuildSut" />
+                </node>
+              </node>
+              <node concept="_vku0" id="4Pj3bOmz9wp" role="_uFfl" />
+            </node>
+          </node>
           <node concept="PDbRn" id="2DSbB2zPsqW" role="PCHzz">
             <node concept="1WS0z7" id="2DSbB2zPsqX" role="lGtFl">
               <node concept="3JmXsc" id="2DSbB2zPsqY" role="3Jn$fo">
@@ -886,6 +1065,11 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="_vnHb" id="4Pj3bOmz0aY" role="3x6$oQ">
+        <node concept="2RqM1Q" id="4Pj3bOmz0aZ" role="_vnH8">
+          <ref role="2RqM1R" node="1srqdXUFWsX" resolve="root_mapping_ViewModelFeatureTestSuite" />
         </node>
       </node>
     </node>
@@ -3387,6 +3571,73 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="3mGtxK" id="4Pj3bOmxnkc">
+    <node concept="6nSm2" id="4Pj3bOmxwrC" role="3mGtxP">
+      <property role="PCHHn" value="6OepWIVA92I/package" />
+      <property role="TrG5h" value="root_mapping_ContextProvider" />
+      <node concept="17Uvod" id="4Pj3bOmxwti" role="lGtFl">
+        <property role="2qtEX9" value="name" />
+        <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+        <node concept="3zFVjK" id="4Pj3bOmxwtl" role="3zH0cK">
+          <node concept="3clFbS" id="4Pj3bOmxwtm" role="2VODD2">
+            <node concept="3clFbF" id="4Pj3bOmxwts" role="3cqZAp">
+              <node concept="2OqwBi" id="4Pj3bOmxwtn" role="3clFbG">
+                <node concept="30H73N" id="4Pj3bOmxwtr" role="2Oq$k0" />
+                <node concept="2qgKlT" id="4Pj3bOmxxf$" role="2OqNvi">
+                  <ref role="37wK5l" to="fwln:4Pj3bOmvh0Z" resolve="getContextProviderName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="6nSm6" id="4Pj3bOmxylY" role="PCHHv">
+        <property role="TrG5h" value="Init" />
+        <node concept="PCHzy" id="4Pj3bOmxylZ" role="GbAUv" />
+      </node>
+      <node concept="6nSm6" id="4Pj3bOmxz2b" role="PCHHv">
+        <property role="TrG5h" value="BuildSut" />
+        <node concept="PCHzy" id="4Pj3bOmxz2c" role="GbAUv" />
+        <node concept="3xR696" id="4Pj3bOmxz3f" role="NkNyt">
+          <property role="3xR695" value="3Ud70gdvRyt/return" />
+          <property role="TrG5h" value="__return__" />
+          <node concept="3xHE8C" id="4Pj3bOmx$yq" role="3xMlr6">
+            <node concept="2RqM1Q" id="4Pj3bOmx$zv" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+              <node concept="1ZhdrF" id="4Pj3bOmx$zw" role="lGtFl">
+                <property role="2qtEX8" value="target" />
+                <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+                <node concept="3$xsQk" id="4Pj3bOmx$zx" role="3$ytzL">
+                  <node concept="3clFbS" id="4Pj3bOmx$zy" role="2VODD2">
+                    <node concept="3clFbF" id="4Pj3bOmx$zz" role="3cqZAp">
+                      <node concept="2OqwBi" id="4Pj3bOmx$z$" role="3clFbG">
+                        <node concept="1iwH7S" id="4Pj3bOmx$z_" role="2Oq$k0" />
+                        <node concept="1iwH70" id="4Pj3bOmx$zA" role="2OqNvi">
+                          <ref role="1iwH77" to="qhqb:2KQA9MxTmGp" resolve="ViewModel_ClassDefinition" />
+                          <node concept="2OqwBi" id="4Pj3bOmx$zB" role="1iwH7V">
+                            <node concept="30H73N" id="4Pj3bOmx$zC" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="4Pj3bOmx$zD" role="2OqNvi">
+                              <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2ZBi8u" id="4Pj3bOmBeNk" role="lGtFl">
+        <ref role="2rW$FS" node="4Pj3bOmxylV" resolve="ViewModelFeatureTestSuite_ContextProvider_ClassDefinition" />
+      </node>
+    </node>
+    <node concept="n94m4" id="4Pj3bOmxnke" role="lGtFl">
+      <ref role="n9lRv" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
     </node>
   </node>
 </model>

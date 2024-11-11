@@ -51,6 +51,7 @@
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+        <module reference="49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" version="0" />
@@ -60,8 +61,11 @@
         <module reference="31ed4199-712b-4e4a-b792-2c1662ed3b0d(de.vimotest.viewmodel.generator)" version="0" />
         <module reference="716e8717-88c0-4280-8c16-b4d88567596f(de.vimotest.viewmodel.testing)" version="0" />
         <module reference="75b45ab1-ab60-4e56-9499-3ebb61ad3411(de.vimotest.viewmodel.testing.generator)" version="0" />
+        <module reference="fdaaf35f-8ee3-4c37-b09d-9efaeaaa7a41(jetbrains.mps.core.tool.environment)" version="0" />
         <module reference="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+        <module reference="c234a56a-502f-4751-aded-6f9846fff7ce(jetbrains.mps.lang.test.junit5)" version="0" />
+        <module reference="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" version="0" />
       </dependencyVersions>
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_together">
@@ -158,6 +162,10 @@
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
   </dependencyVersions>
+  <runtime>
+    <dependency reexport="false">49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)</dependency>
+    <dependency reexport="false">c234a56a-502f-4751-aded-6f9846fff7ce(jetbrains.mps.lang.test.junit5)</dependency>
+  </runtime>
   <extendedLanguages>
     <extendedLanguage>ce7915b5-36b4-4478-a67c-f5a8a72ed4a0(de.vimotest.viewmodel)</extendedLanguage>
   </extendedLanguages>

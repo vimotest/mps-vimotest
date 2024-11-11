@@ -109,6 +109,9 @@
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
       <concept id="3570488090019868065" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_AutoPluginLayoutType" flags="ng" index="pUk6x" />
+      <concept id="7939233666839079194" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleRef" flags="ng" index="2EVzJI">
+        <reference id="7939233666839079195" name="module" index="2EVzJJ" />
+      </concept>
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
@@ -144,6 +147,7 @@
         <property id="269707337715731330" name="sourcesKind" index="aoJFB" />
       </concept>
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
+        <child id="7939233666839079197" name="accessory" index="2EVzJD" />
         <child id="3189788309731917348" name="runtime" index="1E1XAP" />
         <child id="9200313594498201639" name="generator" index="1TViLv" />
       </concept>
@@ -484,6 +488,15 @@
           <node concept="3bR9La" id="2zlSkwD4c8T" role="1SiIV1">
             <ref role="3bR37D" node="6vtOLtwgJlO" resolve="de.vimotest.mpswidgets" />
           </node>
+        </node>
+        <node concept="2EVzJI" id="4ZEfmoiflJ6" role="2EVzJD">
+          <ref role="2EVzJJ" to="ffeo:1xb0AuwN7WS" resolve="JUnit" />
+        </node>
+        <node concept="1E0d5M" id="4ZEfmoiqXY1" role="1E1XAP">
+          <ref role="1E0d5P" to="ffeo:1xb0AuwN7WS" resolve="JUnit" />
+        </node>
+        <node concept="1E0d5M" id="4ZEfmoiqXY2" role="1E1XAP">
+          <ref role="1E0d5P" to="ffeo:4MVYzzgl7sL" resolve="jetbrains.mps.lang.test.junit5" />
         </node>
       </node>
       <node concept="1E1JtD" id="220dcIkyAiQ" role="2G$12L">

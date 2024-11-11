@@ -56,6 +56,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -64,6 +67,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
         <child id="1160998896846" name="condition" index="1gVkn0" />
       </concept>
@@ -3039,9 +3045,16 @@
                               <node concept="Xl_RD" id="7FAtRx$RK$r" role="3uHU7w">
                                 <property role="Xl_RC" value="" />
                               </node>
-                              <node concept="2OqwBi" id="7FAtRx$RK$s" role="3uHU7B">
-                                <node concept="30H73N" id="7FAtRx$RK$t" role="2Oq$k0" />
-                                <node concept="2bSWHS" id="7FAtRx$RK$u" role="2OqNvi" />
+                              <node concept="1eOMI4" id="4ZEfmoiAarU" role="3uHU7B">
+                                <node concept="3cpWs3" id="4ZEfmoiAdJd" role="1eOMHV">
+                                  <node concept="3cmrfG" id="4ZEfmoiAdJh" role="3uHU7w">
+                                    <property role="3cmrfH" value="1" />
+                                  </node>
+                                  <node concept="2OqwBi" id="4ZEfmoiAarV" role="3uHU7B">
+                                    <node concept="30H73N" id="4ZEfmoiAarW" role="2Oq$k0" />
+                                    <node concept="2bSWHS" id="4ZEfmoiAarX" role="2OqNvi" />
+                                  </node>
+                                </node>
                               </node>
                             </node>
                           </node>

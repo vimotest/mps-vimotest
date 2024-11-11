@@ -158,6 +158,7 @@
         <child id="982871510068000158" name="sourceNodeQuery" index="1sPUBK" />
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
+      <concept id="1167756221419" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_templatePropertyValue" flags="nn" index="3zGtF$" />
       <concept id="1167770111131" name="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" flags="in" index="3$xsQk" />
       <concept id="1167945743726" name="jetbrains.mps.lang.generator.structure.IfMacro_Condition" flags="in" index="3IZrLx" />
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
@@ -3083,6 +3084,23 @@
               </node>
               <node concept="2ZBi8u" id="7FAtRx$RK$G" role="lGtFl">
                 <ref role="2rW$FS" node="62U8hQkG8OM" resolve="IHasRowHandle_LocalNameDeclarationStatement" />
+              </node>
+              <node concept="17Uvod" id="4ZEfmoivk5P" role="lGtFl">
+                <property role="2qtEX9" value="name" />
+                <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+                <node concept="3zFVjK" id="4ZEfmoivk5Q" role="3zH0cK">
+                  <node concept="3clFbS" id="4ZEfmoivk5R" role="2VODD2">
+                    <node concept="3clFbF" id="4ZEfmoivm4m" role="3cqZAp">
+                      <node concept="3cpWs3" id="4ZEfmoivoM_" role="3clFbG">
+                        <node concept="3zGtF$" id="4ZEfmoivm4l" role="3uHU7B" />
+                        <node concept="2OqwBi" id="4ZEfmoivrI3" role="3uHU7w">
+                          <node concept="30H73N" id="4ZEfmoivqMK" role="2Oq$k0" />
+                          <node concept="2bSWHS" id="4ZEfmoivuKU" role="2OqNvi" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="_jtW9" id="26p1ZniT6QC" role="PCHzz">

@@ -15,6 +15,7 @@
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
+      <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -23,6 +24,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -40,6 +42,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
@@ -92,8 +97,15 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -110,6 +122,9 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
     </language>
   </registry>
   <node concept="18kY7G" id="F907haMxb0">
@@ -322,6 +337,58 @@
     <node concept="1YaCAy" id="5veytyjJ$tj" role="1YuTPh">
       <property role="TrG5h" value="binding" />
       <ref role="1YaFvo" to="at53:3F1kzPoHBup" resolve="CustomPropertyNameBinding" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5jkMFwuLz8I">
+    <property role="TrG5h" value="check_NameBindingConfig" />
+    <property role="3GE5qa" value="util" />
+    <node concept="3clFbS" id="5jkMFwuLz8J" role="18ibNy">
+      <node concept="3cpWs8" id="5jkMFwuLCf4" role="3cqZAp">
+        <node concept="3cpWsn" id="5jkMFwuLCf5" role="3cpWs9">
+          <property role="TrG5h" value="configCount" />
+          <node concept="10Oyi0" id="5jkMFwuLCe$" role="1tU5fm" />
+          <node concept="2OqwBi" id="5jkMFwuLCf6" role="33vP2m">
+            <node concept="2OqwBi" id="5jkMFwuLCf7" role="2Oq$k0">
+              <node concept="2OqwBi" id="5jkMFwuLCf8" role="2Oq$k0">
+                <node concept="1YBJjd" id="5jkMFwuLCf9" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5jkMFwuLz8L" resolve="nameBindingConfig" />
+                </node>
+                <node concept="I4A8Y" id="5jkMFwuLCfa" role="2OqNvi" />
+              </node>
+              <node concept="2SmgA7" id="5jkMFwuLCfb" role="2OqNvi">
+                <node concept="chp4Y" id="5jkMFwuLCfc" role="1dBWTz">
+                  <ref role="cht4Q" to="at53:5jkMFwuLz8m" resolve="NameBindingConfig" />
+                </node>
+              </node>
+            </node>
+            <node concept="34oBXx" id="5jkMFwuLCfd" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="5jkMFwuLCiZ" role="3cqZAp">
+        <node concept="3clFbS" id="5jkMFwuLCj1" role="3clFbx">
+          <node concept="2MkqsV" id="5jkMFwuLIvR" role="3cqZAp">
+            <node concept="Xl_RD" id="5jkMFwuLIw3" role="2MkJ7o">
+              <property role="Xl_RC" value="Only one NameBindingConfig is supported per model" />
+            </node>
+            <node concept="1YBJjd" id="5jkMFwuLIx6" role="1urrMF">
+              <ref role="1YBMHb" node="5jkMFwuLz8L" resolve="nameBindingConfig" />
+            </node>
+          </node>
+        </node>
+        <node concept="2d3UOw" id="5jkMFwuLIm8" role="3clFbw">
+          <node concept="3cmrfG" id="5jkMFwuLIml" role="3uHU7w">
+            <property role="3cmrfH" value="2" />
+          </node>
+          <node concept="37vLTw" id="5jkMFwuLCja" role="3uHU7B">
+            <ref role="3cqZAo" node="5jkMFwuLCf5" resolve="configCount" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5jkMFwuLz8L" role="1YuTPh">
+      <property role="TrG5h" value="nameBindingConfig" />
+      <ref role="1YaFvo" to="at53:5jkMFwuLz8m" resolve="NameBindingConfig" />
     </node>
   </node>
 </model>

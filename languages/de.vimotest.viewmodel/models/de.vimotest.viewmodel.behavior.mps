@@ -5272,6 +5272,41 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5jkMFwuFk23" role="13h7CS">
+      <property role="TrG5h" value="getCommandOperationName" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="5jkMFwuFk24" role="1B3o_S" />
+      <node concept="17QB3L" id="5jkMFwuFk7_" role="3clF45" />
+      <node concept="3clFbS" id="5jkMFwuFk26" role="3clF47">
+        <node concept="3clFbF" id="5jkMFwuFkh$" role="3cqZAp">
+          <node concept="3cpWs3" id="5jkMFwuFnK4" role="3clFbG">
+            <node concept="Xl_RD" id="5jkMFwuFnPd" role="3uHU7w">
+              <property role="Xl_RC" value="ed" />
+            </node>
+            <node concept="2OqwBi" id="3JF9X1M6gMj" role="3uHU7B">
+              <node concept="2OqwBi" id="247DgsTsIgB" role="2Oq$k0">
+                <node concept="2OqwBi" id="247DgsTsIgC" role="2Oq$k0">
+                  <node concept="13iPFW" id="5jkMFwuFkzX" role="2Oq$k0" />
+                  <node concept="2yIwOk" id="247DgsTsIgE" role="2OqNvi" />
+                </node>
+                <node concept="liA8E" id="247DgsTsIgF" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3JF9X1M6hDH" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
+                <node concept="Xl_RD" id="3JF9X1M6i5h" role="37wK5m">
+                  <property role="Xl_RC" value="Command" />
+                </node>
+                <node concept="Xl_RD" id="3JF9X1M6iJ9" role="37wK5m">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="1F_Q10zSUKM" role="13h7CW">
       <node concept="3clFbS" id="1F_Q10zSUKN" role="2VODD2" />
     </node>
@@ -5930,6 +5965,19 @@
         <ref role="ehGHo" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
       </node>
     </node>
+    <node concept="13i0hz" id="5jkMFwuFoxJ" role="13h7CS">
+      <property role="TrG5h" value="getCommandOperationName" />
+      <ref role="13i0hy" node="5jkMFwuFk23" resolve="getCommandOperationName" />
+      <node concept="3Tm1VV" id="5jkMFwuFoxK" role="1B3o_S" />
+      <node concept="3clFbS" id="5jkMFwuFoxZ" role="3clF47">
+        <node concept="3clFbF" id="5jkMFwuFoZS" role="3cqZAp">
+          <node concept="Xl_RD" id="5jkMFwuFoZR" role="3clFbG">
+            <property role="Xl_RC" value="TextFilled" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5jkMFwuFoy0" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="63ktVPudU_C">
     <property role="TrG5h" value="SelectRowCommand_Behavior" />
@@ -6079,6 +6127,19 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5jkMFwuFpHW" role="13h7CS">
+      <property role="TrG5h" value="getCommandOperationName" />
+      <ref role="13i0hy" node="5jkMFwuFk23" resolve="getCommandOperationName" />
+      <node concept="3Tm1VV" id="5jkMFwuFpHX" role="1B3o_S" />
+      <node concept="3clFbS" id="5jkMFwuFpIc" role="3clF47">
+        <node concept="3clFbF" id="5jkMFwuFpP2" role="3cqZAp">
+          <node concept="Xl_RD" id="5jkMFwuFpP1" role="3clFbG">
+            <property role="Xl_RC" value="RowSelected" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5jkMFwuFpId" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="63ktVPudUAz">
     <property role="TrG5h" value="SelectEntryCommand_Behavior" />
@@ -6143,6 +6204,19 @@
       <node concept="3Tqbb2" id="63ktVPudUB1" role="3clF45">
         <ref role="ehGHo" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
       </node>
+    </node>
+    <node concept="13i0hz" id="5jkMFwuFpgj" role="13h7CS">
+      <property role="TrG5h" value="getCommandOperationName" />
+      <ref role="13i0hy" node="5jkMFwuFk23" resolve="getCommandOperationName" />
+      <node concept="3Tm1VV" id="5jkMFwuFpgk" role="1B3o_S" />
+      <node concept="3clFbS" id="5jkMFwuFpgz" role="3clF47">
+        <node concept="3clFbF" id="5jkMFwuFpjS" role="3cqZAp">
+          <node concept="Xl_RD" id="5jkMFwuFpjR" role="3clFbG">
+            <property role="Xl_RC" value="EntrySelected" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5jkMFwuFpg$" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="3JF9X1LtDGB">

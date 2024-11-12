@@ -3481,5 +3481,34 @@
       <node concept="2iRkQZ" id="26p1ZnjatuN" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5jkMFwuLz8o">
+    <property role="3GE5qa" value="util" />
+    <ref role="1XX52x" to="at53:5jkMFwuLz8m" resolve="NameBindingConfig" />
+    <node concept="3EZMnI" id="5jkMFwuLz8q" role="2wV5jI">
+      <node concept="3F0ifn" id="5jkMFwuLz8u" role="3EZMnx">
+        <property role="3F0ifm" value="name generation config:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        <node concept="VPxyj" id="5jkMFwuLz8H" role="3F10Kt" />
+      </node>
+      <node concept="2yq9I_" id="5jkMFwuLz8B" role="3EZMnx">
+        <ref role="225u1j" to="at53:5jkMFwuLz8n" resolve="getterCapitalized" />
+        <node concept="1563Vb" id="5jkMFwuLz8D" role="1563LE">
+          <property role="1563UK" value="[ ]" />
+          <property role="1563Ve" value="[x]" />
+        </node>
+        <node concept="pVoyu" id="5jkMFwuLz8E" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5jkMFwuLz8F" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="5jkMFwuLz8G" role="2fqkNU">
+          <property role="3F0ifm" value="getter/setter capitalized" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5jkMFwuLz8t" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

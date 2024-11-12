@@ -3281,6 +3281,7 @@
       </node>
       <node concept="3F0A7n" id="3JF9X1LtxCH" role="3EZMnx">
         <property role="1$x2rV" value="&lt;virtualPackage&gt;" />
+        <property role="1O74Pk" value="true" />
         <ref role="1NtTu8" to="at53:3JF9X1Ls77z" resolve="namespace" />
       </node>
       <node concept="l2Vlx" id="3JF9X1LtxCI" role="2iSdaV" />

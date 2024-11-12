@@ -67,6 +67,9 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -261,6 +264,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -269,6 +273,12 @@
       </concept>
       <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
+      </concept>
+      <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
+        <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
+      </concept>
+      <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
+        <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
@@ -569,6 +579,36 @@
         <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
         <node concept="3zFVjK" id="YSmflIzSu8" role="3zH0cK">
           <node concept="3clFbS" id="YSmflIzSu9" role="2VODD2">
+            <node concept="3clFbJ" id="5jkMFwtoKYu" role="3cqZAp">
+              <node concept="3clFbS" id="5jkMFwtoKYw" role="3clFbx">
+                <node concept="3cpWs6" id="5jkMFwtoOPi" role="3cqZAp">
+                  <node concept="2OqwBi" id="5jkMFwtoPaJ" role="3cqZAk">
+                    <node concept="2OqwBi" id="5jkMFwtoPaK" role="2Oq$k0">
+                      <node concept="30H73N" id="5jkMFwtoPaL" role="2Oq$k0" />
+                      <node concept="3CFZ6_" id="5jkMFwtoPaM" role="2OqNvi">
+                        <node concept="3CFYIy" id="5jkMFwtoPaN" role="3CFYIz">
+                          <ref role="3CFYIx" to="at53:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrcHB" id="5jkMFwtoPaO" role="2OqNvi">
+                      <ref role="3TsBF5" to="at53:3MA_BelBku6" resolve="customName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="5jkMFwtoO9w" role="3clFbw">
+                <node concept="2OqwBi" id="5jkMFwtoLHV" role="2Oq$k0">
+                  <node concept="30H73N" id="5jkMFwtoLhr" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="5jkMFwtoLWb" role="2OqNvi">
+                    <node concept="3CFYIy" id="5jkMFwtoLYL" role="3CFYIz">
+                      <ref role="3CFYIx" to="at53:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="5jkMFwtoPHm" role="2OqNvi" />
+              </node>
+            </node>
             <node concept="3clFbF" id="YSmflIzSuf" role="3cqZAp">
               <node concept="2OqwBi" id="YSmflIzSua" role="3clFbG">
                 <node concept="3TrcHB" id="YSmflIzSud" role="2OqNvi">

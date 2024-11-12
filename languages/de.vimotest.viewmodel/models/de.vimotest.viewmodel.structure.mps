@@ -133,6 +133,9 @@
     <node concept="PrWs8" id="F907haLJWq" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="5jkMFwtjblm" role="PzmwI">
+      <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+    </node>
     <node concept="PrWs8" id="3JF9X1Ltwwn" role="PzmwI">
       <ref role="PrY4T" node="3JF9X1LrZr1" resolve="IHasNamespace" />
     </node>

@@ -1063,6 +1063,105 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="5jkMFwsGaS$" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:44HS8_67HzK" resolve="SelectedEntryFeature" />
+      <node concept="1Koe21" id="5jkMFwsGaSD" role="1lVwrX">
+        <node concept="3xHE8C" id="5jkMFwsGaSE" role="1Koe22">
+          <node concept="2RqM1Q" id="5jkMFwsGaSF" role="_vnH8">
+            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+            <node concept="1ZhdrF" id="5jkMFwsGaSG" role="lGtFl">
+              <property role="2qtEX8" value="target" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <node concept="3$xsQk" id="5jkMFwsGaSH" role="3$ytzL">
+                <node concept="3clFbS" id="5jkMFwsGaSI" role="2VODD2">
+                  <node concept="3clFbF" id="5jkMFwsGaSJ" role="3cqZAp">
+                    <node concept="2tJFMh" id="5jkMFwsGaSK" role="3clFbG">
+                      <node concept="ZC_QK" id="5jkMFwsGaSL" role="2tJFKM">
+                        <ref role="2aWVGs" to="gkn4:1KdBIfXrfVb" />
+                        <node concept="ZC_QK" id="5jkMFwsGaSM" role="2aWVGa">
+                          <ref role="2aWVGs" to="gkn4:1KdBIfXrfV9" resolve="PrimitiveTypes" />
+                          <node concept="ZC_QK" id="5jkMFwsGaSN" role="2aWVGa">
+                            <ref role="2aWVGs" to="gkn4:1KdBIfXrfVO" resolve="String" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="raruj" id="5jkMFwsGaSO" role="lGtFl" />
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5jkMFwsGbf9" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:44HS8_67HzJ" resolve="ComboBoxEntriesFeature" />
+      <node concept="1Koe21" id="5jkMFwsGbfa" role="1lVwrX">
+        <node concept="3xHE8C" id="5jkMFwsGbfb" role="1Koe22">
+          <node concept="2RqM1Q" id="5jkMFwsGbfc" role="_vnH8">
+            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+            <node concept="1ZhdrF" id="5jkMFwsGbfd" role="lGtFl">
+              <property role="2qtEX8" value="target" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <node concept="3$xsQk" id="5jkMFwsGbfe" role="3$ytzL">
+                <node concept="3clFbS" id="5jkMFwsGbff" role="2VODD2">
+                  <node concept="3clFbF" id="5jkMFwsGbfg" role="3cqZAp">
+                    <node concept="2tJFMh" id="5jkMFwsGbfh" role="3clFbG">
+                      <node concept="ZC_QK" id="5jkMFwsGbfi" role="2tJFKM">
+                        <ref role="2aWVGs" to="gkn4:1KdBIfXrfVb" resolve="PrimitiveTypes" />
+                        <node concept="ZC_QK" id="5jkMFwsGbfj" role="2aWVGa">
+                          <ref role="2aWVGs" to="gkn4:1KdBIfXrfV9" resolve="PrimitiveTypes" />
+                          <node concept="ZC_QK" id="5jkMFwsGbfk" role="2aWVGa">
+                            <ref role="2aWVGs" to="gkn4:1KdBIfXrfVO" resolve="String" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="raruj" id="5jkMFwsGbfl" role="lGtFl" />
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5jkMFwsGc8K" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:7WgsBLYmzhD" resolve="SelectedRowFeature" />
+      <node concept="1Koe21" id="5jkMFwsGc8M" role="1lVwrX">
+        <node concept="3xHE8C" id="5jkMFwsGc8N" role="1Koe22">
+          <node concept="2RqM1Q" id="5jkMFwsGc8O" role="_vnH8">
+            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+            <node concept="1ZhdrF" id="5jkMFwsGc8P" role="lGtFl">
+              <property role="2qtEX8" value="target" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <node concept="3$xsQk" id="5jkMFwsGc8Q" role="3$ytzL">
+                <node concept="3clFbS" id="5jkMFwsGc8R" role="2VODD2">
+                  <node concept="3clFbF" id="5jkMFwsGc8S" role="3cqZAp">
+                    <node concept="2tJFMh" id="5jkMFwsGc8T" role="3clFbG">
+                      <node concept="ZC_QK" id="5jkMFwsGc8U" role="2tJFKM">
+                        <ref role="2aWVGs" to="gkn4:1KdBIfXrfVb" />
+                        <node concept="ZC_QK" id="5jkMFwsGc8V" role="2aWVGa">
+                          <ref role="2aWVGs" to="gkn4:1KdBIfXrfV9" resolve="PrimitiveTypes" />
+                          <node concept="ZC_QK" id="5jkMFwsGc8W" role="2aWVGa">
+                            <ref role="2aWVGs" to="gkn4:1KdBIfXrfVO" resolve="String" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="raruj" id="5jkMFwsGc8X" role="lGtFl" />
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="247DgsTsBpn" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:2lm5WNlbZLf" resolve="WidgetListRowsFeature" />
@@ -1482,6 +1581,25 @@
           <property role="3xR695" value="1KdBIfXPktw/in" />
           <node concept="3xHE8C" id="3JF9X1M5zH_" role="3xMlr6">
             <node concept="2RqM1Q" id="3JF9X1M5zHA" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="5jkMFwsKJkV" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:6kjlgUu$Xsz" resolve="SelectEntryCommand" />
+      <node concept="gft3U" id="5jkMFwsKKlz" role="1lVwrX">
+        <node concept="15s5l7" id="5jkMFwsKKl$" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
+          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
+        </node>
+        <node concept="3xR696" id="5jkMFwsKKl_" role="gfFT$">
+          <property role="TrG5h" value="entryName" />
+          <property role="3xR695" value="1KdBIfXPktw/in" />
+          <node concept="3xHE8C" id="5jkMFwsKKlA" role="3xMlr6">
+            <node concept="2RqM1Q" id="5jkMFwsKKlB" role="_vnH8">
               <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
             </node>
           </node>

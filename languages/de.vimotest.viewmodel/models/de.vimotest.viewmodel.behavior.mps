@@ -6149,7 +6149,7 @@
     <property role="3GE5qa" value="util" />
     <ref role="13h7C2" to="at53:3JF9X1LrZr1" resolve="IHasNamespace" />
     <node concept="13i0hz" id="3JF9X1LtLmd" role="13h7CS">
-      <property role="TrG5h" value="getEffeciveNamespace" />
+      <property role="TrG5h" value="getEffectiveNamespace" />
       <node concept="3Tm1VV" id="3JF9X1LtLme" role="1B3o_S" />
       <node concept="17QB3L" id="3JF9X1LtLnh" role="3clF45" />
       <node concept="3clFbS" id="3JF9X1LtLmg" role="3clF47">

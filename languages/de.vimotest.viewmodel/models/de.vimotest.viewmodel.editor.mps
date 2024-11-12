@@ -460,9 +460,7 @@
       <node concept="PMmxH" id="F907haLJVC" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
-        <node concept="xShMh" id="6fEYrkZhuPs" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+        <node concept="VPxyj" id="5jkMFwt_Eu2" role="3F10Kt" />
       </node>
       <node concept="3F0A7n" id="F907haMtKB" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

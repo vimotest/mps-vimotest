@@ -1204,14 +1204,22 @@
   <node concept="1TIwiD" id="5jkMFwuLz8m">
     <property role="EcuMT" value="6112733486387704342" />
     <property role="3GE5qa" value="util" />
-    <property role="TrG5h" value="NameBindingConfig" />
-    <property role="34LRSv" value="name binding config" />
+    <property role="TrG5h" value="GenerationConfig" />
+    <property role="34LRSv" value="generation config" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyi" id="5jkMFwuLz8n" role="1TKVEl">
       <property role="IQ2nx" value="6112733486387704343" />
-      <property role="TrG5h" value="getterCapitalized" />
+      <property role="TrG5h" value="capitalizeGetterSetters" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="Of5vVZsNoR" role="1TKVEl">
+      <property role="IQ2nx" value="940995032095340087" />
+      <property role="TrG5h" value="useParameterObjects" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="Of5vVZsNoV" role="lGtFl">
+        <property role="t5JxN" value="Controls if command parameters are composed into parameter objects" />
+      </node>
     </node>
   </node>
 </model>

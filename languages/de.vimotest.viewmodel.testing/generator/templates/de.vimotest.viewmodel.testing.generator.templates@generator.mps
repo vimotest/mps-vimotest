@@ -1824,7 +1824,7 @@
                             <node concept="2OqwBi" id="3_BGOS45C61" role="3clFbG">
                               <node concept="1iwH7S" id="3_BGOS45C62" role="2Oq$k0" />
                               <node concept="1iwH70" id="3_BGOS45C63" role="2OqNvi">
-                                <ref role="1iwH77" to="qhqb:3_BGOS45E9t" resolve="AbstractViewModelParameterizedCommand_OperationDefinition" />
+                                <ref role="1iwH77" to="qhqb:7T8HsuTSUCz" resolve="IViewModelCommand_OperationDefinition" />
                                 <node concept="2OqwBi" id="3_BGOS45Dyq" role="1iwH7V">
                                   <node concept="30H73N" id="3_BGOS45DeN" role="2Oq$k0" />
                                   <node concept="3TrEf2" id="3_BGOS45DGy" role="2OqNvi">

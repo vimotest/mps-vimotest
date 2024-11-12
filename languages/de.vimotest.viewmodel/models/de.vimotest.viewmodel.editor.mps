@@ -3481,7 +3481,7 @@
   </node>
   <node concept="24kQdi" id="5jkMFwuLz8o">
     <property role="3GE5qa" value="util" />
-    <ref role="1XX52x" to="at53:5jkMFwuLz8m" resolve="NameBindingConfig" />
+    <ref role="1XX52x" to="at53:5jkMFwuLz8m" resolve="GenerationConfig" />
     <node concept="3EZMnI" id="5jkMFwuLz8q" role="2wV5jI">
       <node concept="3F0ifn" id="5jkMFwuLz8u" role="3EZMnx">
         <property role="3F0ifm" value="name generation config:" />
@@ -3489,7 +3489,7 @@
         <node concept="VPxyj" id="5jkMFwuLz8H" role="3F10Kt" />
       </node>
       <node concept="2yq9I_" id="5jkMFwuLz8B" role="3EZMnx">
-        <ref role="225u1j" to="at53:5jkMFwuLz8n" resolve="getterCapitalized" />
+        <ref role="225u1j" to="at53:5jkMFwuLz8n" resolve="capitalizeGetterSetters" />
         <node concept="1563Vb" id="5jkMFwuLz8D" role="1563LE">
           <property role="1563UK" value="[ ]" />
           <property role="1563Ve" value="[x]" />
@@ -3501,7 +3501,24 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="3F0ifn" id="5jkMFwuLz8G" role="2fqkNU">
-          <property role="3F0ifm" value="getter/setter capitalized" />
+          <property role="3F0ifm" value="capitalize getter/setter" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        </node>
+      </node>
+      <node concept="2yq9I_" id="Of5vVZsNoW" role="3EZMnx">
+        <ref role="225u1j" to="at53:Of5vVZsNoR" resolve="useParameterObjects" />
+        <node concept="1563Vb" id="Of5vVZsNoX" role="1563LE">
+          <property role="1563UK" value="[ ]" />
+          <property role="1563Ve" value="[x]" />
+        </node>
+        <node concept="pVoyu" id="Of5vVZsNoY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="Of5vVZsNoZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="Of5vVZsNp0" role="2fqkNU">
+          <property role="3F0ifm" value="use parameter objects for command parameters" />
           <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
         </node>
       </node>

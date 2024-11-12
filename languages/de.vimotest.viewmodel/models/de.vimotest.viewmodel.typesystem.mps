@@ -357,7 +357,7 @@
               </node>
               <node concept="2SmgA7" id="5jkMFwuLCfb" role="2OqNvi">
                 <node concept="chp4Y" id="5jkMFwuLCfc" role="1dBWTz">
-                  <ref role="cht4Q" to="at53:5jkMFwuLz8m" resolve="NameBindingConfig" />
+                  <ref role="cht4Q" to="at53:5jkMFwuLz8m" resolve="GenerationConfig" />
                 </node>
               </node>
             </node>
@@ -388,7 +388,7 @@
     </node>
     <node concept="1YaCAy" id="5jkMFwuLz8L" role="1YuTPh">
       <property role="TrG5h" value="nameBindingConfig" />
-      <ref role="1YaFvo" to="at53:5jkMFwuLz8m" resolve="NameBindingConfig" />
+      <ref role="1YaFvo" to="at53:5jkMFwuLz8m" resolve="GenerationConfig" />
     </node>
   </node>
 </model>

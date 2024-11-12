@@ -8,9 +8,13 @@
   <imports>
     <import index="tprf" ref="r:a5eeda19-54af-4c12-a5b4-4113a08de4b3(alfi.genplan.alfi.toJavaBaseLanguage@genplan)" />
     <import index="4snh" ref="r:0374a2a3-2e83-460e-8228-7bd146963871(alfi.genplan.alfi.toCppBaseLanguage)" />
+    <import index="p78k" ref="r:037d404d-f9a9-43ed-8048-9f09b287fd4d(de.vimotest.genplan.vimotestToAlfi@genplan)" />
   </imports>
   <registry>
     <language id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan">
+      <concept id="3705377275350227759" name="jetbrains.mps.lang.generator.plan.structure.IncludePlan" flags="ng" index="NozSJ">
+        <reference id="3705377275350227762" name="plan" index="NozSM" />
+      </concept>
       <concept id="1152961914448136207" name="jetbrains.mps.lang.generator.plan.structure.LanguageEntry" flags="ng" index="2Qf6Nf">
         <child id="1152961914448136208" name="language" index="2Qf6Ng" />
       </concept>
@@ -39,25 +43,8 @@
   </registry>
   <node concept="2VgMpV" id="5hkZeVaMzHS">
     <property role="TrG5h" value="ViMoTestGenPlanMain" />
-    <node concept="2VgMA2" id="26p1Znjpwdg" role="2VgMA7">
-      <node concept="2Qf6Nf" id="2mzDF_u6nQV" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="2mzDF_u6nQX" role="2Qf6Ng">
-          <property role="2V$B1T" value="611ecc9e-0703-4ab9-a13c-fb396c607716" />
-          <property role="2V$B1Q" value="de.vimotest.types" />
-        </node>
-      </node>
-      <node concept="2Qf6Nf" id="26p1Znjpwdi" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="26p1Znjpwdk" role="2Qf6Ng">
-          <property role="2V$B1T" value="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" />
-          <property role="2V$B1Q" value="de.vimotest.viewmodel" />
-        </node>
-      </node>
-      <node concept="2Qf6Nf" id="26p1Znjpwdl" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="26p1Znjpwdn" role="2Qf6Ng">
-          <property role="2V$B1T" value="716e8717-88c0-4280-8c16-b4d88567596f" />
-          <property role="2V$B1Q" value="de.vimotest.viewmodel.testing" />
-        </node>
-      </node>
+    <node concept="NozSJ" id="5jkMFwtj766" role="2VgMA7">
+      <ref role="NozSM" to="p78k:5jkMFwtj763" resolve="ViMoTestToAlfiGenPlan" />
     </node>
     <node concept="10T23i" id="38C0GeDj4rI" role="2VgMA7">
       <ref role="10T23l" to="tprf:3OZQpz3aSq" resolve="AlfiToJavaBaselanguage" />

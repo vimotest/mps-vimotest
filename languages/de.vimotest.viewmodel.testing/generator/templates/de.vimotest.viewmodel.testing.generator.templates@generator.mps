@@ -16,8 +16,8 @@
     <import index="at53" ref="r:9e3a5843-688b-4c6d-b3dd-9f321700c21b(de.vimotest.viewmodel.structure)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
-    <import index="fwln" ref="r:fb31fced-d3c6-408c-9dff-13efe5b49745(de.vimotest.viewmodel.testing.behavior)" implicit="true" />
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" implicit="true" />
+    <import index="fwln" ref="r:fb31fced-d3c6-408c-9dff-13efe5b49745(de.vimotest.viewmodel.testing.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -950,6 +950,22 @@
     </node>
     <node concept="n94m4" id="1srqdXUFWsW" role="lGtFl">
       <ref role="n9lRv" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+    </node>
+    <node concept="17Uvod" id="5jkMFww3YJK" role="lGtFl">
+      <property role="2qtEX9" value="virtualPackage" />
+      <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447" />
+      <node concept="3zFVjK" id="5jkMFww3YJL" role="3zH0cK">
+        <node concept="3clFbS" id="5jkMFww3YJM" role="2VODD2">
+          <node concept="3clFbF" id="5jkMFww40jP" role="3cqZAp">
+            <node concept="2OqwBi" id="5jkMFww40jQ" role="3clFbG">
+              <node concept="30H73N" id="5jkMFww40jR" role="2Oq$k0" />
+              <node concept="2qgKlT" id="5jkMFww40jS" role="2OqNvi">
+                <ref role="37wK5l" to="nrs2:3JF9X1LtLmd" resolve="getEffeciveNamespace" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13MO4I" id="1srqdXUFWY0">
@@ -3806,6 +3822,22 @@
     </node>
     <node concept="n94m4" id="4Pj3bOmxnke" role="lGtFl">
       <ref role="n9lRv" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+    </node>
+    <node concept="17Uvod" id="5jkMFww3VhA" role="lGtFl">
+      <property role="2qtEX9" value="virtualPackage" />
+      <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447" />
+      <node concept="3zFVjK" id="5jkMFww3VhB" role="3zH0cK">
+        <node concept="3clFbS" id="5jkMFww3VhC" role="2VODD2">
+          <node concept="3clFbF" id="3JF9X1LvFLM" role="3cqZAp">
+            <node concept="2OqwBi" id="3JF9X1LvFLN" role="3clFbG">
+              <node concept="30H73N" id="3JF9X1LvFLP" role="2Oq$k0" />
+              <node concept="2qgKlT" id="3JF9X1LvFLT" role="2OqNvi">
+                <ref role="37wK5l" to="nrs2:3JF9X1LtLmd" resolve="getEffeciveNamespace" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

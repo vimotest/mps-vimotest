@@ -150,6 +150,13 @@
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
         <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
       </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
+        <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
+      </concept>
+      <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
+        <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -508,6 +515,40 @@
     <node concept="2YIFZL" id="1srqdXUG5JM" role="jymVt">
       <property role="TrG5h" value="getTestSuiteClassName" />
       <node concept="3clFbS" id="1srqdXUG5JN" role="3clF47">
+        <node concept="3clFbJ" id="5jkMFwvfcWI" role="3cqZAp">
+          <node concept="2OqwBi" id="5jkMFwvfdZC" role="3clFbw">
+            <node concept="2OqwBi" id="5jkMFwvfdk5" role="2Oq$k0">
+              <node concept="37vLTw" id="5jkMFwvfd1Q" role="2Oq$k0">
+                <ref role="3cqZAo" node="1srqdXUG5JV" resolve="testSuite" />
+              </node>
+              <node concept="3CFZ6_" id="5jkMFwvfdBv" role="2OqNvi">
+                <node concept="3CFYIy" id="5jkMFwvfdKg" role="3CFYIz">
+                  <ref role="3CFYIx" to="at53:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="5jkMFwvfeiZ" role="2OqNvi" />
+          </node>
+          <node concept="3clFbS" id="5jkMFwvfcWK" role="3clFbx">
+            <node concept="3cpWs6" id="5jkMFwvfey7" role="3cqZAp">
+              <node concept="2OqwBi" id="5jkMFwvffv3" role="3cqZAk">
+                <node concept="2OqwBi" id="5jkMFwvfeUg" role="2Oq$k0">
+                  <node concept="37vLTw" id="5jkMFwvfeGh" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1srqdXUG5JV" resolve="testSuite" />
+                  </node>
+                  <node concept="3CFZ6_" id="5jkMFwvffdE" role="2OqNvi">
+                    <node concept="3CFYIy" id="5jkMFwvffjY" role="3CFYIz">
+                      <ref role="3CFYIx" to="at53:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="5jkMFwvffJS" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:3MA_BelBku6" resolve="customName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="1srqdXUG5JO" role="3cqZAp">
           <node concept="2YIFZM" id="1srqdXUG5JP" role="3clFbG">
             <ref role="37wK5l" to="18ew:~NameUtil.toValidIdentifier(java.lang.String)" resolve="toValidIdentifier" />

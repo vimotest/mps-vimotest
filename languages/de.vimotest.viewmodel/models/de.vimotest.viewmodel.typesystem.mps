@@ -14,6 +14,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -45,6 +46,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -126,19 +130,39 @@
             <node concept="17RvpY" id="F907haM$9V" role="2OqNvi" />
           </node>
           <node concept="3fqX7Q" id="F907haMzHo" role="3uHU7w">
-            <node concept="2OqwBi" id="F907haMzHq" role="3fr31v">
-              <node concept="2OqwBi" id="F907haMzHr" role="2Oq$k0">
-                <node concept="1YBJjd" id="F907haMzHs" role="2Oq$k0">
-                  <ref role="1YBMHb" node="F907haMxb3" resolve="viewModel" />
+            <node concept="1eOMI4" id="5jkMFwtj7iA" role="3fr31v">
+              <node concept="22lmx$" id="5jkMFwtj8li" role="1eOMHV">
+                <node concept="2OqwBi" id="5jkMFwtj7iB" role="3uHU7B">
+                  <node concept="2OqwBi" id="5jkMFwtj7iC" role="2Oq$k0">
+                    <node concept="1YBJjd" id="5jkMFwtj7iD" role="2Oq$k0">
+                      <ref role="1YBMHb" node="F907haMxb3" resolve="viewModel" />
+                    </node>
+                    <node concept="3TrcHB" id="5jkMFwtj7iE" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="5jkMFwtj7iF" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />
+                    <node concept="Xl_RD" id="5jkMFwtj7iG" role="37wK5m">
+                      <property role="Xl_RC" value="View" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="3TrcHB" id="F907haMzHt" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                </node>
-              </node>
-              <node concept="liA8E" id="F907haMzHu" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />
-                <node concept="Xl_RD" id="F907haMzHv" role="37wK5m">
-                  <property role="Xl_RC" value="View" />
+                <node concept="2OqwBi" id="F907haMzHq" role="3uHU7w">
+                  <node concept="2OqwBi" id="F907haMzHr" role="2Oq$k0">
+                    <node concept="1YBJjd" id="F907haMzHs" role="2Oq$k0">
+                      <ref role="1YBMHb" node="F907haMxb3" resolve="viewModel" />
+                    </node>
+                    <node concept="3TrcHB" id="F907haMzHt" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="F907haMzHu" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />
+                    <node concept="Xl_RD" id="F907haMzHv" role="37wK5m">
+                      <property role="Xl_RC" value="ViewModel" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>

@@ -1064,6 +1064,39 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="Of5vVZofMT" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:3pKiF2wNf4E" resolve="ImageSourceFeature" />
+      <node concept="1Koe21" id="Of5vVZofMY" role="1lVwrX">
+        <node concept="3xHE8C" id="Of5vVZofMZ" role="1Koe22">
+          <node concept="2RqM1Q" id="Of5vVZofN0" role="_vnH8">
+            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+            <node concept="1ZhdrF" id="Of5vVZofN1" role="lGtFl">
+              <property role="2qtEX8" value="target" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <node concept="3$xsQk" id="Of5vVZofN2" role="3$ytzL">
+                <node concept="3clFbS" id="Of5vVZofN3" role="2VODD2">
+                  <node concept="3clFbF" id="Of5vVZofN4" role="3cqZAp">
+                    <node concept="2tJFMh" id="Of5vVZofN5" role="3clFbG">
+                      <node concept="ZC_QK" id="Of5vVZofN6" role="2tJFKM">
+                        <ref role="2aWVGs" to="gkn4:1KdBIfXrfVb" />
+                        <node concept="ZC_QK" id="Of5vVZofN7" role="2aWVGa">
+                          <ref role="2aWVGs" to="gkn4:1KdBIfXrfV9" resolve="PrimitiveTypes" />
+                          <node concept="ZC_QK" id="Of5vVZofN8" role="2aWVGa">
+                            <ref role="2aWVGs" to="gkn4:1KdBIfXrfVO" resolve="String" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="raruj" id="Of5vVZofN9" role="lGtFl" />
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="5jkMFwsGaS$" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:44HS8_67HzK" resolve="SelectedEntryFeature" />
@@ -1274,6 +1307,7 @@
         </node>
       </node>
     </node>
+    <node concept="b5Tf3" id="4ZEfmoiELC9" role="jxRDz" />
   </node>
   <node concept="3mGtxK" id="247DgsTsciR">
     <property role="TrG5h" value="map_IRowBasedViewWidget" />

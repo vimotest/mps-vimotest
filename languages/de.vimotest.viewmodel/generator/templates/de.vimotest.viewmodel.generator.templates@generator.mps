@@ -15,9 +15,9 @@
     <import index="jrwo" ref="r:8e4c87d1-684a-41a2-a8cd-a37856e5c003(de.vimotest.viewmodel.generator.utils)" />
     <import index="gkn4" ref="r:fae4a196-11c4-4868-9ebd-1379c8e56907(alfStandardModelLibrary)" />
     <import index="davt" ref="r:9d2fb39f-5375-4c80-8980-936f0533f829(generationAnnotations)" />
+    <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" />
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -323,6 +323,7 @@
         <child id="1820071129312107538" name="stereotypeName" index="2hPqOu" />
         <child id="6112733486415095167" name="taggedValues" index="1OJeZ7" />
       </concept>
+      <concept id="2021446509800146203" name="alfi.structure.DataTypeDefinition" flags="ng" index="3x6HJS" />
       <concept id="2021446509810891979" name="alfi.structure.QualifiedTypeName" flags="ng" index="3xHE8C" />
       <concept id="2021446509810890950" name="alfi.structure.TypeName" flags="ngI" index="3xHEo_" />
       <concept id="2021446509811517476" name="alfi.structure.TypedElementDefinition" flags="ng" index="3xMlr7">
@@ -364,6 +365,11 @@
       <property role="TrG5h" value="IViewModelCommand_OperationDefinition" />
       <ref role="2rTdP9" to="at53:F907haLJXw" resolve="IViewModelCommand" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
+    </node>
+    <node concept="2rT7sh" id="4a2vw53deQl" role="2rTMjI">
+      <property role="TrG5h" value="IViewModelCommand_ParameterObject_DataTypeDefinition" />
+      <ref role="2rZz_L" to="28lk:1KdBIfX5Okr" resolve="DataTypeDefinition" />
+      <ref role="2rTdP9" to="at53:F907haLJXw" resolve="IViewModelCommand" />
     </node>
     <node concept="2rT7sh" id="7ceEXPSz6YX" role="2rTMjI">
       <property role="TrG5h" value="ViewWidgetFeature_Getter_OperationDefinition" />
@@ -2448,33 +2454,28 @@
             </node>
           </node>
         </node>
-        <node concept="6nSm2" id="Of5vVZKsAE" role="PCHHv">
+        <node concept="3x6HJS" id="5Z7ORBx9Ynn" role="PCHHv">
           <property role="TrG5h" value="CommandParameterObject" />
-          <node concept="raruj" id="Of5vVZKsAF" role="lGtFl" />
-          <node concept="1W57fq" id="Of5vVZKsAG" role="lGtFl">
-            <node concept="3IZrLx" id="Of5vVZKsAH" role="3IZSJc">
-              <node concept="3clFbS" id="Of5vVZKsAI" role="2VODD2">
-                <node concept="3clFbF" id="Of5vVZKsAJ" role="3cqZAp">
-                  <node concept="2YIFZM" id="Of5vVZKsAK" role="3clFbG">
-                    <ref role="37wK5l" to="jrwo:Of5vVZzSQw" resolve="generateParameterObjects" />
-                    <ref role="1Pybhc" to="jrwo:Of5vVZzSPq" resolve="GenerationConfigHelper" />
-                    <node concept="30H73N" id="Of5vVZKsAL" role="37wK5m" />
-                  </node>
-                </node>
-              </node>
+          <node concept="6lMYc" id="Of5vVZKsAS" role="PCHHv">
+            <node concept="3xHEo_" id="Of5vVZKsAT" role="3xMlr6" />
+            <node concept="1sPUBX" id="Of5vVZKsAU" role="lGtFl">
+              <ref role="v9R2y" node="Of5vVZ$e2b" resolve="switch_ViewWidgetCommand_ParameterObjectFields" />
             </node>
           </node>
-          <node concept="17Uvod" id="Of5vVZKsAM" role="lGtFl">
+          <node concept="raruj" id="5Z7ORBx9Ywt" role="lGtFl">
+            <ref role="2sdACS" node="4a2vw53deQl" resolve="IViewModelCommand_ParameterObject_DataTypeDefinition" />
+          </node>
+          <node concept="17Uvod" id="5Z7ORBx9YBh" role="lGtFl">
             <property role="2qtEX9" value="name" />
             <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
-            <node concept="3zFVjK" id="Of5vVZKsAN" role="3zH0cK">
-              <node concept="3clFbS" id="Of5vVZKsAO" role="2VODD2">
-                <node concept="3clFbF" id="Of5vVZKsAP" role="3cqZAp">
-                  <node concept="2YIFZM" id="Of5vVZKsAQ" role="3clFbG">
+            <node concept="3zFVjK" id="5Z7ORBx9YBi" role="3zH0cK">
+              <node concept="3clFbS" id="5Z7ORBx9YBj" role="2VODD2">
+                <node concept="3clFbF" id="5Z7ORBx9YTo" role="3cqZAp">
+                  <node concept="2YIFZM" id="5Z7ORBx9YTp" role="3clFbG">
                     <ref role="37wK5l" to="jrwo:Of5vVZ$3h_" resolve="getParameterObjectClassName" />
                     <ref role="1Pybhc" to="jrwo:2evlxT94KqS" resolve="ViewModelGeneratorNameHelper" />
-                    <node concept="30H73N" id="Of5vVZKsAR" role="37wK5m" />
-                    <node concept="v3LJS" id="Of5vVZKwAh" role="37wK5m">
+                    <node concept="30H73N" id="5Z7ORBx9YTq" role="37wK5m" />
+                    <node concept="v3LJS" id="5Z7ORBx9YTr" role="37wK5m">
                       <ref role="v3LJV" node="Of5vVZKtt0" resolve="operatorName" />
                     </node>
                   </node>
@@ -2482,10 +2483,17 @@
               </node>
             </node>
           </node>
-          <node concept="6lMYc" id="Of5vVZKsAS" role="PCHHv">
-            <node concept="3xHEo_" id="Of5vVZKsAT" role="3xMlr6" />
-            <node concept="1sPUBX" id="Of5vVZKsAU" role="lGtFl">
-              <ref role="v9R2y" node="Of5vVZ$e2b" resolve="switch_ViewWidgetCommand_ParameterObjectFields" />
+          <node concept="1W57fq" id="5Z7ORBx9Zex" role="lGtFl">
+            <node concept="3IZrLx" id="5Z7ORBx9Zey" role="3IZSJc">
+              <node concept="3clFbS" id="5Z7ORBx9Zez" role="2VODD2">
+                <node concept="3clFbF" id="5Z7ORBx9Zvi" role="3cqZAp">
+                  <node concept="2YIFZM" id="5Z7ORBx9Zvj" role="3clFbG">
+                    <ref role="37wK5l" to="nrs2:Of5vVZzSQw" resolve="generateParameterObjects" />
+                    <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                    <node concept="30H73N" id="5Z7ORBx9Zvk" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -2505,8 +2513,8 @@
                   <node concept="3clFbF" id="Of5vVZKy3n" role="3cqZAp">
                     <node concept="3fqX7Q" id="Of5vVZKy3o" role="3clFbG">
                       <node concept="2YIFZM" id="Of5vVZKy3p" role="3fr31v">
-                        <ref role="37wK5l" to="jrwo:Of5vVZzSQw" resolve="generateParameterObjects" />
-                        <ref role="1Pybhc" to="jrwo:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                        <ref role="37wK5l" to="nrs2:Of5vVZzSQw" resolve="generateParameterObjects" />
+                        <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
                         <node concept="30H73N" id="Of5vVZKy3q" role="37wK5m" />
                       </node>
                     </node>
@@ -2532,8 +2540,8 @@
                   <node concept="3clFbF" id="Of5vVZKsB2" role="3cqZAp">
                     <node concept="3fqX7Q" id="Of5vVZKsB3" role="3clFbG">
                       <node concept="2YIFZM" id="Of5vVZKsB4" role="3fr31v">
-                        <ref role="37wK5l" to="jrwo:Of5vVZzSQw" resolve="generateParameterObjects" />
-                        <ref role="1Pybhc" to="jrwo:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                        <ref role="37wK5l" to="nrs2:Of5vVZzSQw" resolve="generateParameterObjects" />
+                        <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
                         <node concept="30H73N" id="Of5vVZKsB5" role="37wK5m" />
                       </node>
                     </node>
@@ -2546,7 +2554,7 @@
                   <property role="TrG5h" value="parameters" />
                   <node concept="3xHE8C" id="Of5vVZKsB8" role="3xMlr6">
                     <node concept="2RqM1Q" id="Of5vVZKsB9" role="_vnH8">
-                      <ref role="2RqM1R" node="Of5vVZKsAE" resolve="CommandParameterObject" />
+                      <ref role="2RqM1R" node="5Z7ORBx9Ynn" resolve="CommandParameterObject" />
                     </node>
                   </node>
                 </node>

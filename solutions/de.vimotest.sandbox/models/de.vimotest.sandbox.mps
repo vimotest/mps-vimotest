@@ -5,7 +5,9 @@
     <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="0" />
     <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="gkn4" ref="r:fae4a196-11c4-4868-9ebd-1379c8e56907(alfStandardModelLibrary)" implicit="true" />
+  </imports>
   <registry>
     <language id="611ecc9e-0703-4ab9-a13c-fb396c607716" name="de.vimotest.types">
       <concept id="777152910168881023" name="de.vimotest.types.structure.AbstractStructType" flags="ng" index="103Zsb">
@@ -14,6 +16,9 @@
       <concept id="7808764115844896567" name="de.vimotest.types.structure.BoolType" flags="ng" index="1nBHEw" />
       <concept id="7808764115844976085" name="de.vimotest.types.structure.StringType" flags="ng" index="1nBS12" />
       <concept id="7808764115843597086" name="de.vimotest.types.structure.FieldStructContent" flags="ng" index="1nWCU9" />
+      <concept id="6112733486551600458" name="de.vimotest.types.structure.ListType" flags="ng" index="1WnWvM">
+        <child id="6112733486551600459" name="nestedType" index="1WnWvN" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -157,8 +162,24 @@
       <concept id="2674824929519838362" name="alfi.structure.PositionalTuple" flags="ng" index="_vku0">
         <child id="2674824929519838363" name="expression" index="_vku1" />
       </concept>
+      <concept id="2674824929519835217" name="alfi.structure.QualifiedName" flags="ng" index="_vnHb">
+        <child id="2674824929519835218" name="names" index="_vnH8" />
+      </concept>
+      <concept id="8550147057602730244" name="alfi.structure.NameReference" flags="ng" index="2RqM1Q">
+        <reference id="8550147057602730245" name="target" index="2RqM1R" />
+      </concept>
       <concept id="2021446509811517476" name="alfi.structure.TypedElementDefinition" flags="ng" index="3xMlr7">
         <child id="2021446509811517477" name="typeName" index="3xMlr6" />
+      </concept>
+      <concept id="6112733486551708929" name="alfi.structure.SequenceExpressionList" flags="ng" index="1Wm7YT">
+        <child id="6112733486551708931" name="expression" index="1Wm7YV" />
+      </concept>
+      <concept id="6112733486551689593" name="alfi.structure.SequenceConstructionExpression" flags="ng" index="1Wmaf1">
+        <child id="6112733486551708955" name="elements" index="1Wm7Yz" />
+        <child id="6112733486551689599" name="typeName" index="1Wmaf7" />
+      </concept>
+      <concept id="6112733486551694701" name="alfi.structure.IHasMultiplicity" flags="ngI" index="1Wmbvl">
+        <property id="7144803224883131098" name="hasMultiplicity" index="327w9R" />
       </concept>
     </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
@@ -1643,6 +1664,12 @@
           <property role="TrG5h" value="MyFlag" />
           <node concept="1nBHEw" id="1F_Q10zSP$B" role="3xMlr6" />
         </node>
+        <node concept="1nWCU9" id="5jkMFwCz1HF" role="103ZUC">
+          <property role="TrG5h" value="Names" />
+          <node concept="1WnWvM" id="5jkMFwCz1HN" role="3xMlr6">
+            <node concept="1nBS12" id="5jkMFwCz1Ix" role="1WnWvN" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="103ZXB" id="7ZadkZWP7l_" role="103ZXF" />
@@ -1708,6 +1735,22 @@
             <ref role="27sXQn" node="1F_Q10zSP$v" resolve="MyCommand" />
             <node concept="_vku0" id="1F_Q10zSP$Y" role="27sTdU">
               <node concept="_jtWu" id="1F_Q10zSP_1" role="_vku1" />
+              <node concept="1Wmaf1" id="5jkMFwF8Kfh" role="_vku1">
+                <property role="327w9R" value="true" />
+                <node concept="_vnHb" id="5jkMFwF8Kgb" role="1Wmaf7">
+                  <node concept="2RqM1Q" id="5jkMFwF8Kgc" role="_vnH8">
+                    <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+                  </node>
+                </node>
+                <node concept="1Wm7YT" id="5jkMFwF8Ki0" role="1Wm7Yz">
+                  <node concept="_iklQ" id="5jkMFwF8KiU" role="1Wm7YV">
+                    <property role="_iklR" value="A" />
+                  </node>
+                  <node concept="_iklQ" id="5jkMFwFiP$q" role="1Wm7YV">
+                    <property role="_iklR" value="B" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

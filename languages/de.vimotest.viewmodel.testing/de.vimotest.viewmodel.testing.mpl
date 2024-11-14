@@ -89,6 +89,7 @@
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">79d38a3b-c7d9-48fe-86ef-ab311632763c(de.vimotest.mpswidgets.runtime)</dependency>
     <dependency reexport="false">779e9fc4-5168-49e7-b541-bfe5ba91a814(de.vimotest.mpswidgets)</dependency>
+    <dependency reexport="false">e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" version="0" />
@@ -140,6 +141,7 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" version="0" />
+    <module reference="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" version="0" />
     <module reference="779e9fc4-5168-49e7-b541-bfe5ba91a814(de.vimotest.mpswidgets)" version="0" />
     <module reference="79d38a3b-c7d9-48fe-86ef-ab311632763c(de.vimotest.mpswidgets.runtime)" version="0" />
     <module reference="611ecc9e-0703-4ab9-a13c-fb396c607716(de.vimotest.types)" version="0" />

@@ -128,5 +128,19 @@
     <property role="34LRSv" value="string" />
     <ref role="1TJDcQ" node="6LujpsVKegj" resolve="BuiltInType" />
   </node>
+  <node concept="1TIwiD" id="5jkMFwCyKPa">
+    <property role="EcuMT" value="6112733486551600458" />
+    <property role="3GE5qa" value="struct.types.builtin" />
+    <property role="TrG5h" value="ListType" />
+    <property role="34LRSv" value="list&lt;&gt;" />
+    <ref role="1TJDcQ" node="6LujpsVKegj" resolve="BuiltInType" />
+    <node concept="1TJgyj" id="5jkMFwCyKPb" role="1TKVEi">
+      <property role="IQ2ns" value="6112733486551600459" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="nestedType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6LujpsVKegj" resolve="BuiltInType" />
+    </node>
+  </node>
 </model>
 

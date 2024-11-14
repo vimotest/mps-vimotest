@@ -498,6 +498,11 @@
         <node concept="1E0d5M" id="4ZEfmoiqXY2" role="1E1XAP">
           <ref role="1E0d5P" to="ffeo:4MVYzzgl7sL" resolve="jetbrains.mps.lang.test.junit5" />
         </node>
+        <node concept="1SiIV0" id="5jkMFwGsFRs" role="3bR37C">
+          <node concept="3bR9La" id="5jkMFwGsFRt" role="1SiIV1">
+            <ref role="3bR37D" to="mk2q:5tK9548cRt6" resolve="alfi.StandardModelLibrary" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="220dcIkyAiQ" role="2G$12L">
         <property role="BnDLt" value="true" />

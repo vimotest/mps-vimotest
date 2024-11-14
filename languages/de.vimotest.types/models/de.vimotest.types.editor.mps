@@ -51,6 +51,8 @@
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
         <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
+      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
         <property id="1225456424731" name="value" index="1iTho6" />
@@ -276,6 +278,41 @@
     <node concept="PMmxH" id="6LujpsVKo4d" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <ref role="1k5W1q" node="F907haMqPJ" resolve="ViMoTestKeyWord" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5jkMFwCyKPc">
+    <property role="3GE5qa" value="struct.types.builtin" />
+    <ref role="1XX52x" to="evry:5jkMFwCyKPa" resolve="ListType" />
+    <node concept="3EZMnI" id="5jkMFwCyKPe" role="2wV5jI">
+      <node concept="3F0ifn" id="5jkMFwCz1Iv" role="3EZMnx">
+        <property role="3F0ifm" value="list" />
+        <ref role="1k5W1q" node="F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0ifn" id="5jkMFwCyKPk" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+        <node concept="11L4FC" id="5jkMFwCyKP_" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="5jkMFwCyKP$" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="5jkMFwCyKPu" role="3F10Kt">
+          <property role="1413C4" value="bracet" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5jkMFwCyKPq" role="3EZMnx">
+        <ref role="1NtTu8" to="evry:5jkMFwCyKPb" resolve="nestedType" />
+      </node>
+      <node concept="3F0ifn" id="5jkMFwCyKPn" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <node concept="11L4FC" id="5jkMFwCyKPy" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="5jkMFwCyKPw" role="3F10Kt">
+          <property role="1413C4" value="bracet" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="5jkMFwCyKPh" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -813,6 +813,9 @@
     <node concept="PrWs8" id="7KHRfJVnw5F" role="PzmwI">
       <ref role="PrY4T" node="6fZwY6ifv53" resolve="ITestScenarioAction" />
     </node>
+    <node concept="PrWs8" id="5jkMFwF8TDS" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
     <node concept="1TJgyj" id="7KHRfJVnw5G" role="1TKVEi">
       <property role="IQ2ns" value="8948051009467187564" />
       <property role="20kJfa" value="targetCommand" />

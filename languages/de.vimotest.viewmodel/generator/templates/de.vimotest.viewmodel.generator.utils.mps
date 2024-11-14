@@ -296,6 +296,81 @@
         </node>
       </node>
     </node>
+    <node concept="2YIFZL" id="5jkMFw_P2_w" role="jymVt">
+      <property role="TrG5h" value="getViewControllerClassName" />
+      <node concept="37vLTG" id="5jkMFw_P2O8" role="3clF46">
+        <property role="TrG5h" value="viewModelCommands" />
+        <node concept="3Tqbb2" id="5jkMFw_P2O9" role="1tU5fm">
+          <ref role="ehGHo" to="at53:F907haLJWl" resolve="ViewModelCommands" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5jkMFw_P2_z" role="3clF47">
+        <node concept="3clFbJ" id="5jkMFw_P3ww" role="3cqZAp">
+          <node concept="3clFbS" id="5jkMFw_P3wx" role="3clFbx">
+            <node concept="3cpWs6" id="5jkMFw_P3wy" role="3cqZAp">
+              <node concept="2OqwBi" id="5jkMFw_P3wz" role="3cqZAk">
+                <node concept="2OqwBi" id="5jkMFw_P3w$" role="2Oq$k0">
+                  <node concept="37vLTw" id="5jkMFw_P3w_" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5jkMFw_P2O8" resolve="viewModelCommands" />
+                  </node>
+                  <node concept="3CFZ6_" id="5jkMFw_P3wA" role="2OqNvi">
+                    <node concept="3CFYIy" id="5jkMFw_P3wB" role="3CFYIz">
+                      <ref role="3CFYIx" to="at53:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="5jkMFw_P3wC" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:3MA_BelBku6" resolve="customName" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5jkMFw_P3wD" role="3clFbw">
+            <node concept="2OqwBi" id="5jkMFw_P3wE" role="2Oq$k0">
+              <node concept="37vLTw" id="5jkMFw_P3wF" role="2Oq$k0">
+                <ref role="3cqZAo" node="5jkMFw_P2O8" resolve="viewModelCommands" />
+              </node>
+              <node concept="3CFZ6_" id="5jkMFw_P3wG" role="2OqNvi">
+                <node concept="3CFYIy" id="5jkMFw_P3wH" role="3CFYIz">
+                  <ref role="3CFYIx" to="at53:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="5jkMFw_P3wI" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5jkMFw_P3wJ" role="3cqZAp">
+          <node concept="2YIFZM" id="5jkMFw_P3wK" role="3clFbG">
+            <ref role="37wK5l" to="18ew:~NameUtil.toValidIdentifier(java.lang.String)" resolve="toValidIdentifier" />
+            <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+            <node concept="3cpWs3" id="5jkMFw_P8VV" role="37wK5m">
+              <node concept="Xl_RD" id="5jkMFw_P9ng" role="3uHU7w">
+                <property role="Xl_RC" value="Controller" />
+              </node>
+              <node concept="2OqwBi" id="5jkMFw_P5Xi" role="3uHU7B">
+                <node concept="1PxgMI" id="5jkMFw_P5m0" role="2Oq$k0">
+                  <property role="1BlNFB" value="true" />
+                  <node concept="chp4Y" id="5jkMFw_P5AB" role="3oSUPX">
+                    <ref role="cht4Q" to="at53:F907haLJWg" resolve="ViewModel" />
+                  </node>
+                  <node concept="2OqwBi" id="5jkMFw_P4x9" role="1m5AlR">
+                    <node concept="37vLTw" id="5jkMFw_P3wN" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5jkMFw_P2O8" resolve="viewModelCommands" />
+                    </node>
+                    <node concept="1mfA1w" id="5jkMFw_P4Wp" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="5jkMFw_P6mx" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5jkMFw_P2eY" role="1B3o_S" />
+      <node concept="17QB3L" id="5jkMFw_P2or" role="3clF45" />
+    </node>
     <node concept="2YIFZL" id="2evlxT94RVh" role="jymVt">
       <property role="TrG5h" value="getOperationName" />
       <node concept="3clFbS" id="2evlxT94RVk" role="3clF47">

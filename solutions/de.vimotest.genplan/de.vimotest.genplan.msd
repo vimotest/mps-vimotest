@@ -11,7 +11,7 @@
     </facet>
   </facets>
   <dependencies>
-    <dependency reexport="false">76f7ae4d-6343-4b77-b3be-95673e578bcf(GenPlan)</dependency>
+    <dependency reexport="false">76f7ae4d-6343-4b77-b3be-95673e578bcf(alfi.genplan)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -24,7 +24,7 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="76f7ae4d-6343-4b77-b3be-95673e578bcf(GenPlan)" version="0" />
+    <module reference="76f7ae4d-6343-4b77-b3be-95673e578bcf(alfi.genplan)" version="0" />
     <module reference="b28932ae-6b0e-4f97-ad77-84f278001d91(de.vimotest.genplan)" version="0" />
   </dependencyVersions>
 </solution>

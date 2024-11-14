@@ -177,6 +177,9 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="F907haLJXw" resolve="IViewModelCommand" />
     </node>
+    <node concept="PrWs8" id="5jkMFw_OY7u" role="PzmwI">
+      <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+    </node>
   </node>
   <node concept="PlHQZ" id="F907haLJXw">
     <property role="EcuMT" value="777152910168883040" />
@@ -1220,6 +1223,12 @@
       <node concept="t5JxF" id="Of5vVZsNoV" role="lGtFl">
         <property role="t5JxN" value="Controls if command parameters are composed into parameter objects" />
       </node>
+    </node>
+    <node concept="1TJgyi" id="5jkMFw_BMkC" role="1TKVEl">
+      <property role="IQ2nx" value="6112733486502585640" />
+      <property role="TrG5h" value="separateControllerViewModel" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="5jkMFw_BNsv" role="lGtFl" />
     </node>
   </node>
 </model>

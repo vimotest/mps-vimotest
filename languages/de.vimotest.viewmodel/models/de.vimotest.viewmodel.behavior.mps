@@ -5366,6 +5366,21 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5jkMFw_OY$k" role="13h7CS">
+      <property role="TrG5h" value="isCustomTypeNameSupported" />
+      <ref role="13i0hy" node="5jkMFw_KLIp" resolve="isCustomTypeNameSupported" />
+      <node concept="3Tm1VV" id="5jkMFw_OY$l" role="1B3o_S" />
+      <node concept="3clFbS" id="5jkMFw_OY$q" role="3clF47">
+        <node concept="3clFbF" id="5jkMFw_OYSa" role="3cqZAp">
+          <node concept="2YIFZM" id="5jkMFw_OYSY" role="3clFbG">
+            <ref role="37wK5l" node="5jkMFw_KBaY" resolve="separateControllerViewModel" />
+            <ref role="1Pybhc" node="Of5vVZzSPq" resolve="GenerationConfigHelper" />
+            <node concept="13iPFW" id="5jkMFw_OYT_" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="5jkMFw_OY$r" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="5oh1xNF6HFw">
     <property role="TrG5h" value="ButtonWidget_Behavior" />
@@ -6704,6 +6719,30 @@
         <node concept="3Tqbb2" id="Of5vVZ$0kn" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2YIFZL" id="5jkMFw_KBaY" role="jymVt">
+      <property role="TrG5h" value="separateControllerViewModel" />
+      <node concept="37vLTG" id="5jkMFw_KBv1" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="5jkMFw_KBv2" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="5jkMFw_KBb1" role="3clF47">
+        <node concept="3clFbF" id="5jkMFw_KBwa" role="3cqZAp">
+          <node concept="2OqwBi" id="5jkMFw_KBwb" role="3clFbG">
+            <node concept="1rXfSq" id="5jkMFw_KBwc" role="2Oq$k0">
+              <ref role="37wK5l" node="Of5vVZ$0xU" resolve="getGenerationConfig" />
+              <node concept="37vLTw" id="5jkMFw_KBwd" role="37wK5m">
+                <ref role="3cqZAo" node="5jkMFw_KBv1" resolve="node" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="5jkMFw_KBwe" role="2OqNvi">
+              <ref role="3TsBF5" to="at53:5jkMFw_BMkC" resolve="separateControllerViewModel" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5jkMFw_KALY" role="1B3o_S" />
+      <node concept="10P_77" id="5jkMFw_KBak" role="3clF45" />
+    </node>
     <node concept="2YIFZL" id="Of5vVZ$0xU" role="jymVt">
       <property role="TrG5h" value="getGenerationConfig" />
       <node concept="37vLTG" id="Of5vVZ$0yx" role="3clF46">
@@ -6736,6 +6775,26 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="Of5vVZzSPr" role="1B3o_S" />
+  </node>
+  <node concept="13h7C7" id="5jkMFw_KLI6">
+    <property role="3GE5qa" value="bindings" />
+    <ref role="13h7C2" to="at53:3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+    <node concept="13i0hz" id="5jkMFw_KLIp" role="13h7CS">
+      <property role="TrG5h" value="isCustomTypeNameSupported" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="5jkMFw_KLIq" role="1B3o_S" />
+      <node concept="10P_77" id="5jkMFw_KLIH" role="3clF45" />
+      <node concept="3clFbS" id="5jkMFw_KLIs" role="3clF47">
+        <node concept="3clFbF" id="5jkMFw_KLKK" role="3cqZAp">
+          <node concept="3clFbT" id="5jkMFw_KLKJ" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="5jkMFw_KLI7" role="13h7CW">
+      <node concept="3clFbS" id="5jkMFw_KLI8" role="2VODD2" />
+    </node>
   </node>
 </model>
 

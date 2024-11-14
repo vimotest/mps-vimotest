@@ -17,6 +17,9 @@
       <concept id="7808764115843597086" name="de.vimotest.types.structure.FieldStructContent" flags="ng" index="1nWCU9" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -80,6 +83,9 @@
         <child id="1938192778486065161" name="checkCommand" index="T1B0p" />
         <child id="7278489671513126078" name="textFeature" index="1ISttP" />
       </concept>
+      <concept id="4370345911585163139" name="de.vimotest.viewmodel.structure.CustomTypeNameBinding" flags="ng" index="2DeX7K">
+        <property id="4370345911585163142" name="customName" index="2DeX7P" />
+      </concept>
       <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6" />
       <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommands" flags="ng" index="103ZXx">
         <child id="777152910169039599" name="commands" index="1006ar" />
@@ -117,6 +123,9 @@
           <property role="TrG5h" value="Value3" />
           <node concept="1nBWMp" id="Of5vVZtNKq" role="3xMlr6" />
         </node>
+        <node concept="2DeX7K" id="5jkMFwBh5B1" role="lGtFl">
+          <property role="2DeX7P" value="LoadViewParams" />
+        </node>
       </node>
     </node>
     <node concept="103ZXB" id="Of5vVZtG4Y" role="103ZXF">
@@ -126,7 +135,11 @@
         <node concept="C4FCg" id="Of5vVZtNIY" role="C4FCG" />
         <node concept="C4FCh" id="Of5vVZtNIZ" role="C4FCH" />
         <node concept="V3Zf6" id="Of5vVZtNJ0" role="1ISttP" />
-        <node concept="3Vw88g" id="Of5vVZtNJ1" role="T1B0p" />
+        <node concept="3Vw88g" id="Of5vVZtNJ1" role="T1B0p">
+          <node concept="2DeX7K" id="5jkMFwBh5B2" role="lGtFl">
+            <property role="2DeX7P" value="CheckParams" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

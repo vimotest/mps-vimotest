@@ -185,6 +185,9 @@
     <property role="EcuMT" value="777152910168883040" />
     <property role="3GE5qa" value="viewmodel" />
     <property role="TrG5h" value="IViewModelCommand" />
+    <node concept="PrWs8" id="5jkMFwAVGTY" role="PrDN$">
+      <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+    </node>
   </node>
   <node concept="1TIwiD" id="F907haLJXy">
     <property role="EcuMT" value="777152910168883042" />

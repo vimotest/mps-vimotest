@@ -23,6 +23,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -42,6 +43,7 @@
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -1560,10 +1562,18 @@
                 <node concept="3IZrLx" id="4a2vw53h691" role="3IZSJc">
                   <node concept="3clFbS" id="4a2vw53h692" role="2VODD2">
                     <node concept="3clFbF" id="4a2vw53h693" role="3cqZAp">
-                      <node concept="2YIFZM" id="4a2vw53h694" role="3clFbG">
-                        <ref role="37wK5l" to="nrs2:Of5vVZzSQw" resolve="generateParameterObjects" />
-                        <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
-                        <node concept="30H73N" id="4a2vw53h695" role="37wK5m" />
+                      <node concept="1Wc70l" id="5jkMFw_ztNL" role="3clFbG">
+                        <node concept="2OqwBi" id="5jkMFw_zur7" role="3uHU7w">
+                          <node concept="30H73N" id="5jkMFw_zu2u" role="2Oq$k0" />
+                          <node concept="2qgKlT" id="5jkMFw_zAPY" role="2OqNvi">
+                            <ref role="37wK5l" to="fwln:5jkMFw_zwQr" resolve="hasParameters" />
+                          </node>
+                        </node>
+                        <node concept="2YIFZM" id="4a2vw53h694" role="3uHU7B">
+                          <ref role="37wK5l" to="nrs2:Of5vVZzSQw" resolve="generateParameterObjects" />
+                          <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                          <node concept="30H73N" id="4a2vw53h695" role="37wK5m" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -1702,12 +1712,29 @@
                     <node concept="1W57fq" id="4a2vw53dbie" role="lGtFl">
                       <node concept="3IZrLx" id="4a2vw53dbif" role="3IZSJc">
                         <node concept="3clFbS" id="4a2vw53dbig" role="2VODD2">
+                          <node concept="3cpWs8" id="5jkMFw_zCWP" role="3cqZAp">
+                            <node concept="3cpWsn" id="5jkMFw_zCWQ" role="3cpWs9">
+                              <property role="TrG5h" value="useParameterObject" />
+                              <node concept="10P_77" id="5jkMFw_zCRT" role="1tU5fm" />
+                              <node concept="22lmx$" id="5jkMFw_zCWR" role="33vP2m">
+                                <node concept="2YIFZM" id="5jkMFw_zCWS" role="3uHU7B">
+                                  <ref role="37wK5l" to="nrs2:Of5vVZzSQw" resolve="generateParameterObjects" />
+                                  <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                                  <node concept="30H73N" id="5jkMFw_zCWT" role="37wK5m" />
+                                </node>
+                                <node concept="2OqwBi" id="5jkMFw_zCWU" role="3uHU7w">
+                                  <node concept="30H73N" id="5jkMFw_zCWV" role="2Oq$k0" />
+                                  <node concept="2qgKlT" id="5jkMFw_zCWW" role="2OqNvi">
+                                    <ref role="37wK5l" to="fwln:5jkMFw_zwQr" resolve="hasParameters" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                           <node concept="3clFbF" id="5Z7ORBx9Zvi" role="3cqZAp">
                             <node concept="3fqX7Q" id="4a2vw53dewr" role="3clFbG">
-                              <node concept="2YIFZM" id="4a2vw53dewt" role="3fr31v">
-                                <ref role="37wK5l" to="nrs2:Of5vVZzSQw" resolve="generateParameterObjects" />
-                                <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
-                                <node concept="30H73N" id="4a2vw53dewu" role="37wK5m" />
+                              <node concept="37vLTw" id="5jkMFw_zCWX" role="3fr31v">
+                                <ref role="3cqZAo" node="5jkMFw_zCWQ" resolve="b" />
                               </node>
                             </node>
                           </node>
@@ -2085,10 +2112,21 @@
                 <node concept="3IZrLx" id="4a2vw53gNCX" role="3IZSJc">
                   <node concept="3clFbS" id="4a2vw53gNCY" role="2VODD2">
                     <node concept="3clFbF" id="4a2vw53gNDt" role="3cqZAp">
-                      <node concept="2YIFZM" id="4a2vw53gNDv" role="3clFbG">
-                        <ref role="37wK5l" to="nrs2:Of5vVZzSQw" resolve="generateParameterObjects" />
-                        <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
-                        <node concept="30H73N" id="4a2vw53gNDw" role="37wK5m" />
+                      <node concept="1Wc70l" id="5jkMFw_zGzO" role="3clFbG">
+                        <node concept="2OqwBi" id="5jkMFw_zH$9" role="3uHU7w">
+                          <node concept="2OqwBi" id="5jkMFw_zHam" role="2Oq$k0">
+                            <node concept="30H73N" id="5jkMFw_zGMw" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="5jkMFw_zHlx" role="2OqNvi">
+                              <ref role="3Tt5mk" to="53m0:7KHRfJVn$Y1" resolve="parameters" />
+                            </node>
+                          </node>
+                          <node concept="3x8VRR" id="5jkMFw_zI0V" role="2OqNvi" />
+                        </node>
+                        <node concept="2YIFZM" id="4a2vw53gNDv" role="3uHU7B">
+                          <ref role="37wK5l" to="nrs2:Of5vVZzSQw" resolve="generateParameterObjects" />
+                          <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                          <node concept="30H73N" id="4a2vw53gNDw" role="37wK5m" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -2209,12 +2247,32 @@
                     <node concept="1W57fq" id="4a2vw53dDc8" role="lGtFl">
                       <node concept="3IZrLx" id="4a2vw53dDc9" role="3IZSJc">
                         <node concept="3clFbS" id="4a2vw53dDca" role="2VODD2">
+                          <node concept="3cpWs8" id="5jkMFw_zJRq" role="3cqZAp">
+                            <node concept="3cpWsn" id="5jkMFw_zJRr" role="3cpWs9">
+                              <property role="TrG5h" value="useParameterObject" />
+                              <node concept="10P_77" id="5jkMFw_zJ$x" role="1tU5fm" />
+                              <node concept="1Wc70l" id="5jkMFw_zL9g" role="33vP2m">
+                                <node concept="2YIFZM" id="5jkMFw_zJRs" role="3uHU7B">
+                                  <ref role="37wK5l" to="nrs2:Of5vVZzSQw" resolve="generateParameterObjects" />
+                                  <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                                  <node concept="30H73N" id="5jkMFw_zJRt" role="37wK5m" />
+                                </node>
+                                <node concept="2OqwBi" id="5jkMFw_zLaS" role="3uHU7w">
+                                  <node concept="2OqwBi" id="5jkMFw_zLaT" role="2Oq$k0">
+                                    <node concept="30H73N" id="5jkMFw_zLaU" role="2Oq$k0" />
+                                    <node concept="3TrEf2" id="5jkMFw_zLaV" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="53m0:7KHRfJVn$Y1" />
+                                    </node>
+                                  </node>
+                                  <node concept="3x8VRR" id="5jkMFw_zLaW" role="2OqNvi" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                           <node concept="3clFbF" id="4a2vw53dDKj" role="3cqZAp">
                             <node concept="3fqX7Q" id="4a2vw53dDKl" role="3clFbG">
-                              <node concept="2YIFZM" id="4a2vw53dDKm" role="3fr31v">
-                                <ref role="37wK5l" to="nrs2:Of5vVZzSQw" resolve="generateParameterObjects" />
-                                <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
-                                <node concept="30H73N" id="4a2vw53dDKn" role="37wK5m" />
+                              <node concept="37vLTw" id="5jkMFw_zJRu" role="3fr31v">
+                                <ref role="3cqZAo" node="5jkMFw_zJRr" resolve="generateParameterObjects" />
                               </node>
                             </node>
                           </node>

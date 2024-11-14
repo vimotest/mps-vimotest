@@ -5392,6 +5392,21 @@
       </node>
       <node concept="10P_77" id="5jkMFw_OY$r" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="2N4oO4qvpvq" role="13h7CS">
+      <property role="TrG5h" value="isCustomFileNameSupported" />
+      <ref role="13i0hy" node="2N4oO4qvn9C" resolve="isCustomFileNameSupported" />
+      <node concept="3Tm1VV" id="2N4oO4qvpvr" role="1B3o_S" />
+      <node concept="3clFbS" id="2N4oO4qvpvw" role="3clF47">
+        <node concept="3clFbF" id="2N4oO4qvpNE" role="3cqZAp">
+          <node concept="2YIFZM" id="2N4oO4qvpNF" role="3clFbG">
+            <ref role="37wK5l" node="5jkMFw_KBaY" resolve="separateControllerViewModel" />
+            <ref role="1Pybhc" node="Of5vVZzSPq" resolve="GenerationConfigHelper" />
+            <node concept="13iPFW" id="2N4oO4qvpNG" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="2N4oO4qvpvx" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="5oh1xNF6HFw">
     <property role="TrG5h" value="ButtonWidget_Behavior" />
@@ -6957,6 +6972,26 @@
         </node>
       </node>
       <node concept="10P_77" id="5jkMFwBr4oI" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="2N4oO4qvn7l">
+    <property role="3GE5qa" value="bindings" />
+    <ref role="13h7C2" to="at53:2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+    <node concept="13i0hz" id="2N4oO4qvn9C" role="13h7CS">
+      <property role="TrG5h" value="isCustomFileNameSupported" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="2N4oO4qvn9D" role="1B3o_S" />
+      <node concept="10P_77" id="2N4oO4qvn9E" role="3clF45" />
+      <node concept="3clFbS" id="2N4oO4qvn9F" role="3clF47">
+        <node concept="3clFbF" id="2N4oO4qvn9G" role="3cqZAp">
+          <node concept="3clFbT" id="2N4oO4qvn9H" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="2N4oO4qvn7m" role="13h7CW">
+      <node concept="3clFbS" id="2N4oO4qvn7n" role="2VODD2" />
     </node>
   </node>
 </model>

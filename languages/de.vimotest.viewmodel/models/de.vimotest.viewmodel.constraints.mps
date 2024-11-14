@@ -515,5 +515,27 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="2N4oO4qvnEM">
+    <property role="3GE5qa" value="bindings" />
+    <ref role="1M2myG" to="at53:2N4oO4qvcUb" resolve="CustomFileNameBinding" />
+    <node concept="9S07l" id="2N4oO4qvnEN" role="9Vyp8">
+      <node concept="3clFbS" id="2N4oO4qvnEO" role="2VODD2">
+        <node concept="3clFbF" id="2N4oO4qvnSk" role="3cqZAp">
+          <node concept="2OqwBi" id="2N4oO4qvnSl" role="3clFbG">
+            <node concept="1PxgMI" id="2N4oO4qvnSm" role="2Oq$k0">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="2N4oO4qvnSn" role="3oSUPX">
+                <ref role="cht4Q" to="at53:2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+              </node>
+              <node concept="nLn13" id="2N4oO4qvnSo" role="1m5AlR" />
+            </node>
+            <node concept="2qgKlT" id="2N4oO4qvnSp" role="2OqNvi">
+              <ref role="37wK5l" to="nrs2:2N4oO4qvn9C" resolve="isCustomFileNameSupported" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

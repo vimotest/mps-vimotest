@@ -246,6 +246,9 @@
       <concept id="4370345911585163139" name="de.vimotest.viewmodel.structure.CustomTypeNameBinding" flags="ng" index="2DeX7K">
         <property id="4370345911585163142" name="customName" index="2DeX7P" />
       </concept>
+      <concept id="3225812364372528779" name="de.vimotest.viewmodel.structure.CustomFileNameBinding" flags="ng" index="QIaRa">
+        <property id="3225812364372528782" name="customBaseFileName" index="QIaRf" />
+      </concept>
       <concept id="2567579368932258681" name="de.vimotest.viewmodel.structure.TextBoxWidget" flags="ng" index="UtuMG">
         <child id="2567579368932258684" name="enabledFeature" index="UtuMD" />
         <child id="2567579368932258683" name="visibilityFeature" index="UtuMI" />
@@ -3039,6 +3042,41 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="103ZX$" id="2N4oO4q_l_n">
+    <property role="3GE5qa" value="bindings" />
+    <property role="TrG5h" value="FileNameBinding_View" />
+    <node concept="103ZXx" id="2N4oO4q_l_o" role="103ZXC">
+      <node concept="3Vw88J" id="2N4oO4q_l_p" role="1006ar">
+        <property role="TrG5h" value="LoadView" />
+      </node>
+    </node>
+    <node concept="103ZXB" id="2N4oO4q_l_q" role="103ZXF">
+      <node concept="3UVeDL" id="2N4oO4q_l_r" role="103ZUC">
+        <property role="TrG5h" value="MyTableView" />
+        <node concept="2nep4R" id="2N4oO4q_l_s" role="2azj8S">
+          <node concept="V3ZfZ" id="2N4oO4q_l_x" role="2nerJI">
+            <property role="TrG5h" value="columnCell" />
+            <node concept="V3Zf6" id="2N4oO4q_l_A" role="V3ZfK" />
+            <node concept="C4FCh" id="2N4oO4q_l_F" role="V3ZfL" />
+            <node concept="C4FCg" id="2N4oO4q_l_K" role="V3ZfM" />
+          </node>
+        </node>
+        <node concept="3KuuIt" id="2N4oO4q_l_P" role="3UVeDY">
+          <node concept="3D8xT1" id="2N4oO4q_l_Q" role="3D86r8" />
+          <node concept="3D8CoO" id="2N4oO4q_l_R" role="3D86r9" />
+        </node>
+        <node concept="1i$ol" id="2N4oO4q_l_S" role="3UVeDZ" />
+        <node concept="C4FCg" id="2N4oO4q_l_T" role="3UVeDW" />
+        <node concept="C4FCh" id="2N4oO4q_l_U" role="3UVeDX" />
+      </node>
+    </node>
+    <node concept="QIaRa" id="2N4oO4q_pwh" role="lGtFl">
+      <property role="QIaRf" value="CustomFileNameBinding" />
+    </node>
+    <node concept="2DeX7K" id="2N4oO4q_pwi" role="lGtFl">
+      <property role="2DeX7P" value="ViMoTestFileNameBinding" />
     </node>
   </node>
 </model>

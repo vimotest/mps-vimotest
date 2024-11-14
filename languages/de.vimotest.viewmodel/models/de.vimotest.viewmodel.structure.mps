@@ -102,9 +102,6 @@
     <node concept="PrWs8" id="F907haLIRH" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="PrWs8" id="3F1kzPoMTK4" role="PzmwI">
-      <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
-    </node>
     <node concept="PrWs8" id="F907haLJ3t" role="PzmwI">
       <ref role="PrY4T" to="evry:F907haLIRL" resolve="IStructContent" />
     </node>
@@ -135,6 +132,9 @@
     </node>
     <node concept="PrWs8" id="5jkMFwtjblm" role="PzmwI">
       <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+    </node>
+    <node concept="PrWs8" id="2N4oO4qvn7i" role="PzmwI">
+      <ref role="PrY4T" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
     </node>
     <node concept="PrWs8" id="3JF9X1Ltwwn" role="PzmwI">
       <ref role="PrY4T" node="3JF9X1LrZr1" resolve="IHasNamespace" />
@@ -179,6 +179,9 @@
     </node>
     <node concept="PrWs8" id="5jkMFw_OY7u" role="PzmwI">
       <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+    </node>
+    <node concept="PrWs8" id="2N4oO4qvn7j" role="PzmwI">
+      <ref role="PrY4T" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
     </node>
   </node>
   <node concept="PlHQZ" id="F907haLJXw">
@@ -1060,6 +1063,9 @@
     <node concept="PrWs8" id="5veytyjIXh8" role="PrDN$">
       <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
     </node>
+    <node concept="PrWs8" id="2N4oO4qwWpY" role="PrDN$">
+      <ref role="PrY4T" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3JF9X1LrZr1">
     <property role="EcuMT" value="4317588443974596289" />
@@ -1117,6 +1123,11 @@
     <node concept="1TJgyi" id="3MA_BelBku6" role="1TKVEl">
       <property role="IQ2nx" value="4370345911585163142" />
       <property role="TrG5h" value="customName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2N4oO4qv7J4" role="1TKVEl">
+      <property role="IQ2nx" value="3225812364372507588" />
+      <property role="TrG5h" value="customFileName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
@@ -1233,6 +1244,31 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
       <node concept="t5JxF" id="5jkMFw_BNsv" role="lGtFl" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="2N4oO4qvcUb">
+    <property role="EcuMT" value="3225812364372528779" />
+    <property role="3GE5qa" value="bindings" />
+    <property role="TrG5h" value="CustomFileNameBinding" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="2N4oO4qvcUc" role="lGtFl">
+      <property role="Hh88m" value="customFileName" />
+      <node concept="trNpa" id="2N4oO4qvcUd" role="EQaZv">
+        <ref role="trN6q" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+      </node>
+    </node>
+    <node concept="1TJgyi" id="2N4oO4qvcUe" role="1TKVEl">
+      <property role="IQ2nx" value="3225812364372528782" />
+      <property role="TrG5h" value="customBaseFileName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="t5JxF" id="2N4oO4qvl90" role="lGtFl">
+        <property role="t5JxN" value="Defines a custom file base-name (without extension) for target languages where file names can be different to type names (e.g., C++)" />
+      </node>
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2N4oO4qvcUg">
+    <property role="EcuMT" value="3225812364372528784" />
+    <property role="3GE5qa" value="bindings" />
+    <property role="TrG5h" value="ICanHaveCustomFileName" />
   </node>
 </model>
 

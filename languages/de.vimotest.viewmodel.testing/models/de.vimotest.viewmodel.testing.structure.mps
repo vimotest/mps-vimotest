@@ -102,6 +102,9 @@
     <node concept="PrWs8" id="5jkMFwva9B3" role="PzmwI">
       <ref role="PrY4T" to="at53:3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
     </node>
+    <node concept="PrWs8" id="2N4oO4qvn7k" role="PzmwI">
+      <ref role="PrY4T" to="at53:2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+    </node>
     <node concept="PrWs8" id="3JF9X1LtOg9" role="PzmwI">
       <ref role="PrY4T" to="at53:3JF9X1LrZr1" resolve="IHasNamespace" />
     </node>

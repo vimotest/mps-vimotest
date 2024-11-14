@@ -1070,5 +1070,103 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="2N4oO4qvg3E">
+    <property role="3GE5qa" value="bindings" />
+    <property role="TrG5h" value="ToggleCustomFileNameBinding" />
+    <ref role="2ZfgGC" to="at53:2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+    <node concept="2S6ZIM" id="2N4oO4qvg3F" role="2ZfVej">
+      <node concept="3clFbS" id="2N4oO4qvg3G" role="2VODD2">
+        <node concept="3clFbF" id="2N4oO4qvhuN" role="3cqZAp">
+          <node concept="3cpWs3" id="2N4oO4qvhuQ" role="3clFbG">
+            <node concept="1eOMI4" id="2N4oO4qvhuR" role="3uHU7B">
+              <node concept="3K4zz7" id="2N4oO4qvhuS" role="1eOMHV">
+                <node concept="2OqwBi" id="2N4oO4qvhuT" role="3K4Cdx">
+                  <node concept="2OqwBi" id="2N4oO4qvhuU" role="2Oq$k0">
+                    <node concept="2Sf5sV" id="2N4oO4qvhuV" role="2Oq$k0" />
+                    <node concept="3CFZ6_" id="2N4oO4qvhuW" role="2OqNvi">
+                      <node concept="3CFYIy" id="2N4oO4qvhuX" role="3CFYIz">
+                        <ref role="3CFYIx" to="at53:2N4oO4qvcUb" resolve="CustomFileNameBinding" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3w_OXm" id="2N4oO4qvhuY" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="2N4oO4qvhuZ" role="3K4E3e">
+                  <property role="Xl_RC" value="Add" />
+                </node>
+                <node concept="Xl_RD" id="2N4oO4qvhv0" role="3K4GZi">
+                  <property role="Xl_RC" value="Remove" />
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="2N4oO4qvhvc" role="3uHU7w">
+              <property role="Xl_RC" value=" Custom File Name" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2N4oO4qvg3H" role="2ZfgGD">
+      <node concept="3clFbS" id="2N4oO4qvg3I" role="2VODD2">
+        <node concept="3clFbJ" id="2N4oO4qvkfe" role="3cqZAp">
+          <node concept="3clFbS" id="2N4oO4qvkff" role="3clFbx">
+            <node concept="3clFbF" id="2N4oO4qvkfg" role="3cqZAp">
+              <node concept="2OqwBi" id="2N4oO4qvkfh" role="3clFbG">
+                <node concept="2OqwBi" id="2N4oO4qvkfi" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="2N4oO4qvkfj" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="2N4oO4qvkfk" role="2OqNvi">
+                    <node concept="3CFYIy" id="2N4oO4qvkfl" role="3CFYIz">
+                      <ref role="3CFYIx" to="at53:2N4oO4qvcUb" resolve="CustomFileNameBinding" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2DeJnY" id="2N4oO4qvkfm" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2N4oO4qvkfn" role="3clFbw">
+            <node concept="2OqwBi" id="2N4oO4qvkfo" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2N4oO4qvkfp" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="2N4oO4qvkfq" role="2OqNvi">
+                <node concept="3CFYIy" id="2N4oO4qvkfr" role="3CFYIz">
+                  <ref role="3CFYIx" to="at53:2N4oO4qvcUb" resolve="CustomFileNameBinding" />
+                </node>
+              </node>
+            </node>
+            <node concept="3w_OXm" id="2N4oO4qvkfs" role="2OqNvi" />
+          </node>
+          <node concept="9aQIb" id="2N4oO4qvkft" role="9aQIa">
+            <node concept="3clFbS" id="2N4oO4qvkfu" role="9aQI4">
+              <node concept="3clFbF" id="2N4oO4qvkfv" role="3cqZAp">
+                <node concept="2OqwBi" id="2N4oO4qvkfw" role="3clFbG">
+                  <node concept="2OqwBi" id="2N4oO4qvkfx" role="2Oq$k0">
+                    <node concept="2Sf5sV" id="2N4oO4qvkfy" role="2Oq$k0" />
+                    <node concept="3CFZ6_" id="2N4oO4qvkfz" role="2OqNvi">
+                      <node concept="3CFYIy" id="2N4oO4qvkf$" role="3CFYIz">
+                        <ref role="3CFYIx" to="at53:2N4oO4qvcUb" resolve="CustomFileNameBinding" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3YRAZt" id="2N4oO4qvkf_" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="2N4oO4q_mer" role="2ZfVeh">
+      <node concept="3clFbS" id="2N4oO4q_mes" role="2VODD2">
+        <node concept="3clFbF" id="2N4oO4q_oDT" role="3cqZAp">
+          <node concept="2OqwBi" id="2N4oO4q_p2e" role="3clFbG">
+            <node concept="2Sf5sV" id="2N4oO4q_oDS" role="2Oq$k0" />
+            <node concept="2qgKlT" id="2N4oO4q_pbz" role="2OqNvi">
+              <ref role="37wK5l" to="nrs2:2N4oO4qvn9C" resolve="isCustomFileNameSupported" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

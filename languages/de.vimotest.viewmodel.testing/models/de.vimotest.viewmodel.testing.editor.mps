@@ -5380,6 +5380,17 @@
       <node concept="3F0A7n" id="5ZcB1GgVwqu" role="3EZMnx">
         <ref role="1NtTu8" to="53m0:5ZcB1GgVwqn" resolve="generateAsFile" />
       </node>
+      <node concept="3F0ifn" id="5ZcB1GhJ1UO" role="3EZMnx">
+        <property role="3F0ifm" value="virtual package:" />
+        <node concept="pVoyu" id="5ZcB1GhJ1UR" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="5ZcB1GhJ1UT" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <property role="1$x2rV" value="&lt;same as test suite&gt;" />
+        <ref role="1NtTu8" to="53m0:5ZcB1GhJ1UL" resolve="virtualPackageOfFile" />
+      </node>
     </node>
   </node>
 </model>

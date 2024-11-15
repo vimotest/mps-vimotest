@@ -1021,6 +1021,11 @@
       <property role="TrG5h" value="generateAsFile" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="5ZcB1GhJ1UL" role="1TKVEl">
+      <property role="IQ2nx" value="6903063968927719089" />
+      <property role="TrG5h" value="virtualPackageOfFile" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 

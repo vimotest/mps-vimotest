@@ -5617,6 +5617,52 @@
         </node>
       </node>
     </node>
+    <node concept="17Uvod" id="5ZcB1GhOECN" role="lGtFl">
+      <property role="2qtEX9" value="virtualPackage" />
+      <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447" />
+      <node concept="3zFVjK" id="5ZcB1GhOECQ" role="3zH0cK">
+        <node concept="3clFbS" id="5ZcB1GhOECR" role="2VODD2">
+          <node concept="3clFbJ" id="5ZcB1GhOF22" role="3cqZAp">
+            <node concept="3clFbS" id="5ZcB1GhOF24" role="3clFbx">
+              <node concept="3cpWs6" id="5ZcB1GhOI95" role="3cqZAp">
+                <node concept="2OqwBi" id="5ZcB1GhONwj" role="3cqZAk">
+                  <node concept="2OqwBi" id="5ZcB1GhOKrs" role="2Oq$k0">
+                    <node concept="30H73N" id="5ZcB1GhOItn" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="5ZcB1GhOKB0" role="2OqNvi">
+                      <node concept="1xMEDy" id="5ZcB1GhOKB2" role="1xVPHs">
+                        <node concept="chp4Y" id="5ZcB1GhOLuP" role="ri$Ld">
+                          <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="5ZcB1GhOOlb" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:hnGE5uv" resolve="virtualPackage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5ZcB1GhOHg3" role="3clFbw">
+              <node concept="2OqwBi" id="5ZcB1GhOFkP" role="2Oq$k0">
+                <node concept="3TrcHB" id="5ZcB1GhOFkQ" role="2OqNvi">
+                  <ref role="3TsBF5" to="53m0:5ZcB1GhJ1UL" resolve="virtualPackageOfFile" />
+                </node>
+                <node concept="30H73N" id="5ZcB1GhOFkR" role="2Oq$k0" />
+              </node>
+              <node concept="17RlXB" id="5ZcB1GhOI83" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="5ZcB1GhOECX" role="3cqZAp">
+            <node concept="2OqwBi" id="5ZcB1GhOECS" role="3clFbG">
+              <node concept="3TrcHB" id="5ZcB1GhOECV" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:5ZcB1GhJ1UL" resolve="virtualPackageOfFile" />
+              </node>
+              <node concept="30H73N" id="5ZcB1GhOECW" role="2Oq$k0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

@@ -4,10 +4,12 @@
   <languages>
     <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="0" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="at53" ref="r:9e3a5843-688b-4c6d-b3dd-9f321700c21b(de.vimotest.viewmodel.structure)" />
+    <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
   </imports>
@@ -996,6 +998,28 @@
       <property role="IQ2nx" value="6903063968894535730" />
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5ZcB1GgRjk8">
+    <property role="EcuMT" value="6903063968913110280" />
+    <property role="3GE5qa" value="test.context" />
+    <property role="TrG5h" value="XmlFileContext" />
+    <property role="34LRSv" value="xml file context" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="5ZcB1GgRjkn" role="1TKVEi">
+      <property role="IQ2ns" value="6903063968913110295" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="xmlFile" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="iuxj:5M4a$b5j9j0" resolve="XmlFile" />
+    </node>
+    <node concept="PrWs8" id="5ZcB1GgRu6F" role="PzmwI">
+      <ref role="PrY4T" node="2Yd1qrJOMZM" resolve="ITestScenarioContext" />
+    </node>
+    <node concept="1TJgyi" id="5ZcB1GgVwqn" role="1TKVEl">
+      <property role="IQ2nx" value="6903063968914212503" />
+      <property role="TrG5h" value="generateAsFile" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

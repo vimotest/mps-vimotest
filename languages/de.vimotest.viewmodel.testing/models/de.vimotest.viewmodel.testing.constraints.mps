@@ -787,5 +787,32 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="5ZcB1GgRu5J">
+    <property role="3GE5qa" value="test.context" />
+    <ref role="1M2myG" to="53m0:5ZcB1GgRjk8" resolve="XmlFileContext" />
+    <node concept="EnEH3" id="5ZcB1GgRu5K" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="Eqf_E" id="5ZcB1GgRu9q" role="EtsB7">
+        <node concept="3clFbS" id="5ZcB1GgRu9r" role="2VODD2">
+          <node concept="3clFbF" id="5ZcB1GgRus3" role="3cqZAp">
+            <node concept="2OqwBi" id="5ZcB1GgRvMI" role="3clFbG">
+              <node concept="2OqwBi" id="5ZcB1GgRuSX" role="2Oq$k0">
+                <node concept="EsrRn" id="5ZcB1GgRus2" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5ZcB1GgRv5R" role="2OqNvi">
+                  <ref role="3Tt5mk" to="53m0:5ZcB1GgRjkn" resolve="xmlFile" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="5ZcB1GgRw1B" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1LLf8_" id="5ZcB1GgRw5E" role="1LXaQT">
+        <node concept="3clFbS" id="5ZcB1GgRw5F" role="2VODD2" />
+      </node>
+    </node>
+  </node>
 </model>
 

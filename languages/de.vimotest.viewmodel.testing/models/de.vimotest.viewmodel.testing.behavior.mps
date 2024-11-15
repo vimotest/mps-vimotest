@@ -12119,5 +12119,45 @@
       <node concept="3clFbS" id="5ZcB1GfVPbo" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="5ZcB1Gh9FKB">
+    <property role="3GE5qa" value="test.context" />
+    <ref role="13h7C2" to="53m0:5ZcB1GgRjk8" resolve="XmlFileContext" />
+    <node concept="13hLZK" id="5ZcB1Gh9FKC" role="13h7CW">
+      <node concept="3clFbS" id="5ZcB1Gh9FKD" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="5ZcB1Gh9FKU" role="13h7CS">
+      <property role="TrG5h" value="getTestContextType" />
+      <ref role="13i0hy" node="5ZcB1GfVPbD" resolve="getTestContextType" />
+      <node concept="3Tm1VV" id="5ZcB1Gh9FKV" role="1B3o_S" />
+      <node concept="3clFbS" id="5ZcB1Gh9FL4" role="3clF47">
+        <node concept="3clFbJ" id="5ZcB1Gh9G6C" role="3cqZAp">
+          <node concept="3clFbS" id="5ZcB1Gh9G6E" role="3clFbx">
+            <node concept="3cpWs6" id="5ZcB1Gh9H9W" role="3cqZAp">
+              <node concept="Xl_RD" id="5ZcB1Gh9HgU" role="3cqZAk">
+                <property role="Xl_RC" value="XmlExternalFileContext" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5ZcB1Gh9GWe" role="3clFbw">
+            <node concept="13iPFW" id="5ZcB1Gh9GKK" role="2Oq$k0" />
+            <node concept="3TrcHB" id="5ZcB1Gh9H7i" role="2OqNvi">
+              <ref role="3TsBF5" to="53m0:5ZcB1GgVwqn" resolve="generateAsFile" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ZcB1Gh9FL9" role="3cqZAp">
+          <node concept="2OqwBi" id="5ZcB1Gh9FL6" role="3clFbG">
+            <node concept="13iAh5" id="5ZcB1Gh9FL7" role="2Oq$k0">
+              <ref role="3eA5LN" to="53m0:2Yd1qrJOMZM" resolve="ITestScenarioContext" />
+            </node>
+            <node concept="2qgKlT" id="5ZcB1Gh9FL8" role="2OqNvi">
+              <ref role="37wK5l" node="5ZcB1GfVPbD" resolve="getTestContextType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5ZcB1Gh9FL5" role="3clF45" />
+    </node>
+  </node>
 </model>
 

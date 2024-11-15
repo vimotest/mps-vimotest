@@ -9,6 +9,19 @@
     <import index="gkn4" ref="r:fae4a196-11c4-4868-9ebd-1379c8e56907(alfStandardModelLibrary)" implicit="true" />
   </imports>
   <registry>
+    <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
+      <concept id="6666499814681515200" name="jetbrains.mps.core.xml.structure.XmlFile" flags="ng" index="2pMbU2">
+        <child id="6666499814681515201" name="document" index="2pMbU3" />
+      </concept>
+      <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
+        <property id="6666499814681415862" name="tagName" index="2pNNFO" />
+        <child id="1622293396948928802" name="content" index="3o6s8t" />
+      </concept>
+      <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG" />
+      <concept id="6786756355279841993" name="jetbrains.mps.core.xml.structure.XmlDocument" flags="ng" index="3rIKKV">
+        <child id="6666499814681299055" name="rootElement" index="2pNm8H" />
+      </concept>
+    </language>
     <language id="611ecc9e-0703-4ab9-a13c-fb396c607716" name="de.vimotest.types">
       <concept id="777152910168881023" name="de.vimotest.types.structure.AbstractStructType" flags="ng" index="103Zsb">
         <child id="777152910168882908" name="contents" index="103ZUC" />
@@ -115,6 +128,10 @@
       <concept id="8996304390297115761" name="de.vimotest.viewmodel.testing.structure.SelectRowCommandAction" flags="ng" index="3eaLts" />
       <concept id="8996304390297115762" name="de.vimotest.viewmodel.testing.structure.SelectEntryCommandAction" flags="ng" index="3eaLtv">
         <property id="5922736771850278303" name="selectedEntryName" index="2qt_KD" />
+      </concept>
+      <concept id="6903063968913110280" name="de.vimotest.viewmodel.testing.structure.XmlFileContext" flags="ng" index="1f4q$j">
+        <property id="6903063968914212503" name="generateAsFile" index="1f8DEc" />
+        <child id="6903063968913110295" name="xmlFile" index="1f4q$c" />
       </concept>
       <concept id="6903063968894535728" name="de.vimotest.viewmodel.testing.structure.SimpleStringContext" flags="ng" index="1g3lgF">
         <property id="6903063968894535730" name="value" index="1g3lgD" />
@@ -3101,6 +3118,58 @@
         </node>
       </node>
       <node concept="1s$VFG" id="5ZcB1GfQ8hV" role="1s$QAY" />
+    </node>
+  </node>
+  <node concept="103ZX$" id="5ZcB1Gh1dUV">
+    <property role="3GE5qa" value="context" />
+    <property role="TrG5h" value="XmlFileContext_View" />
+    <node concept="103ZXx" id="5ZcB1Gh1dUW" role="103ZXC" />
+    <node concept="103ZXB" id="5ZcB1Gh1dUY" role="103ZXF" />
+  </node>
+  <node concept="30n1Qd" id="5ZcB1Gh1dUZ">
+    <property role="3GE5qa" value="context" />
+    <property role="TrG5h" value="XmlFileContext_ViewTests" />
+    <ref role="30n1PB" node="5ZcB1Gh1dUV" resolve="XmlFileContext_View" />
+    <node concept="3LKzX3" id="5ZcB1Gh1dV0" role="30n1Qb">
+      <property role="TrG5h" value="XmlFile_NoExternalFile" />
+      <node concept="1IbZgy" id="5ZcB1Gh1dV1" role="DUd2K">
+        <node concept="1f4q$j" id="5ZcB1Gh1dV8" role="DUiTU">
+          <node concept="2pMbU2" id="5ZcB1Gh1dVa" role="1f4q$c">
+            <property role="TrG5h" value="XmlFile_NoExternalFile" />
+            <node concept="3rIKKV" id="5ZcB1Gh1dVc" role="2pMbU3">
+              <node concept="2pNNFK" id="5ZcB1Gh1dVg" role="2pNm8H">
+                <property role="2pNNFO" value="MyXML" />
+                <node concept="3o6iSG" id="5ZcB1Gh1dVi" role="3o6s8t" />
+                <node concept="2pNNFK" id="5ZcB1Gh1dVk" role="3o6s8t">
+                  <property role="2pNNFO" value="Inner" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1s$VFG" id="5ZcB1Gh1dV3" role="1s$QAY" />
+    </node>
+    <node concept="3LKzX3" id="5ZcB1Gh1dVl" role="30n1Qb">
+      <property role="TrG5h" value="XmlFile_ExternalFile" />
+      <node concept="1IbZgy" id="5ZcB1Gh1dVm" role="DUd2K">
+        <node concept="1f4q$j" id="5ZcB1Gh1dVn" role="DUiTU">
+          <property role="1f8DEc" value="true" />
+          <node concept="2pMbU2" id="5ZcB1Gh1dVo" role="1f4q$c">
+            <property role="TrG5h" value="XmlFile_ExternalFile" />
+            <node concept="3rIKKV" id="5ZcB1Gh1dVp" role="2pMbU3">
+              <node concept="2pNNFK" id="5ZcB1Gh1dVq" role="2pNm8H">
+                <property role="2pNNFO" value="MyExternalXML" />
+                <node concept="3o6iSG" id="5ZcB1Gh1dVr" role="3o6s8t" />
+                <node concept="2pNNFK" id="5ZcB1Gh1dVs" role="3o6s8t">
+                  <property role="2pNNFO" value="Inner" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1s$VFG" id="5ZcB1Gh1dVt" role="1s$QAY" />
     </node>
   </node>
 </model>

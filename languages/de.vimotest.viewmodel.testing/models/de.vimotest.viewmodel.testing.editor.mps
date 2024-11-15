@@ -5359,5 +5359,28 @@
       <node concept="2iRfu4" id="5ZcB1GfKswV" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5ZcB1GgRu5y">
+    <property role="3GE5qa" value="test.context" />
+    <ref role="1XX52x" to="53m0:5ZcB1GgRjk8" resolve="XmlFileContext" />
+    <node concept="3EZMnI" id="5ZcB1GgRu5D" role="2wV5jI">
+      <node concept="PMmxH" id="5ZcB1GgVwqy" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F1sOY" id="5ZcB1GgRu5H" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:5ZcB1GgRjkn" resolve="xmlFile" />
+      </node>
+      <node concept="2iRkQZ" id="5ZcB1GgVwqw" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="5ZcB1GgVwqo" role="6VMZX">
+      <node concept="l2Vlx" id="5ZcB1GgVwqp" role="2iSdaV" />
+      <node concept="3F0ifn" id="5ZcB1GgVwqr" role="3EZMnx">
+        <property role="3F0ifm" value="generate as file:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0A7n" id="5ZcB1GgVwqu" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:5ZcB1GgVwqn" resolve="generateAsFile" />
+      </node>
+    </node>
+  </node>
 </model>
 

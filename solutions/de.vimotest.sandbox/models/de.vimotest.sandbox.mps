@@ -116,6 +116,9 @@
       <concept id="8996304390297115762" name="de.vimotest.viewmodel.testing.structure.SelectEntryCommandAction" flags="ng" index="3eaLtv">
         <property id="5922736771850278303" name="selectedEntryName" index="2qt_KD" />
       </concept>
+      <concept id="6903063968894535728" name="de.vimotest.viewmodel.testing.structure.SimpleStringContext" flags="ng" index="1g3lgF">
+        <property id="6903063968894535730" name="value" index="1g3lgD" />
+      </concept>
       <concept id="7199841511154467673" name="de.vimotest.viewmodel.testing.structure.ComposedWhenThenParts" flags="ng" index="1s$VFG">
         <child id="7199841511154487303" name="actionsWithDescription" index="1s$QAM" />
         <child id="7199841511154487304" name="assertsWithDescription" index="1s$QAX" />
@@ -3077,6 +3080,27 @@
     </node>
     <node concept="2DeX7K" id="2N4oO4q_pwi" role="lGtFl">
       <property role="2DeX7P" value="ViMoTestFileNameBinding" />
+    </node>
+  </node>
+  <node concept="103ZX$" id="5ZcB1GfQ8hN">
+    <property role="3GE5qa" value="context" />
+    <property role="TrG5h" value="StringContext_View" />
+    <node concept="103ZXx" id="5ZcB1GfQ8hO" role="103ZXC" />
+    <node concept="103ZXB" id="5ZcB1GfQ8hQ" role="103ZXF" />
+  </node>
+  <node concept="30n1Qd" id="5ZcB1GfQ8hR">
+    <property role="3GE5qa" value="context" />
+    <property role="TrG5h" value="StringContext_ViewTests" />
+    <ref role="30n1PB" node="5ZcB1GfQ8hN" resolve="StringContext_View" />
+    <node concept="3LKzX3" id="5ZcB1GfQ8hS" role="30n1Qb">
+      <property role="TrG5h" value="SimpleStringContext" />
+      <node concept="1IbZgy" id="5ZcB1GfQ8hT" role="DUd2K">
+        <node concept="1g3lgF" id="5ZcB1GfQ8i0" role="DUiTU">
+          <property role="1g3lgD" value="Alice, Bob, Charlie" />
+          <property role="TrG5h" value="alice_bob_charlie" />
+        </node>
+      </node>
+      <node concept="1s$VFG" id="5ZcB1GfQ8hV" role="1s$QAY" />
     </node>
   </node>
 </model>

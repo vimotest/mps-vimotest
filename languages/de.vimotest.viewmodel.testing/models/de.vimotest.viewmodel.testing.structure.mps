@@ -322,6 +322,9 @@
     <property role="EcuMT" value="3426401106045120498" />
     <property role="TrG5h" value="ITestScenarioContext" />
     <property role="3GE5qa" value="test.context" />
+    <node concept="PrWs8" id="5ZcB1GfZTxb" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3JdhG1lSFby">
     <property role="EcuMT" value="4309178210352018146" />
@@ -978,6 +981,21 @@
       <property role="IQ2ns" value="2883480701402357751" />
       <property role="20kJfa" value="tabularWidget" />
       <ref role="20lvS9" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5ZcB1GfKswK">
+    <property role="EcuMT" value="6903063968894535728" />
+    <property role="3GE5qa" value="test.context" />
+    <property role="TrG5h" value="SimpleStringContext" />
+    <property role="34LRSv" value="simple string context" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="5ZcB1GfKswL" role="PzmwI">
+      <ref role="PrY4T" node="2Yd1qrJOMZM" resolve="ITestScenarioContext" />
+    </node>
+    <node concept="1TJgyi" id="5ZcB1GfKswM" role="1TKVEl">
+      <property role="IQ2nx" value="6903063968894535730" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

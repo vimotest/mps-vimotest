@@ -11162,9 +11162,17 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1srqdXUMFC9" role="3cqZAp">
-          <node concept="Xl_RD" id="1srqdXUMFC8" role="3clFbG">
-            <property role="Xl_RC" value="&lt;nothing&gt;" />
+        <node concept="3cpWs6" id="5ZcB1GgDDCq" role="3cqZAp">
+          <node concept="2OqwBi" id="5ZcB1GgDErZ" role="3cqZAk">
+            <node concept="2OqwBi" id="5ZcB1GgDDSI" role="2Oq$k0">
+              <node concept="13iPFW" id="5ZcB1GgDDH8" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5ZcB1GgDE2z" role="2OqNvi">
+                <ref role="3Tt5mk" to="53m0:6tib4XeIK8P" resolve="context" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="5ZcB1GgDEBt" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
           </node>
         </node>
       </node>
@@ -12083,6 +12091,32 @@
         <ref role="3bZ5Sy" to="at53:6kjlgUuu6dE" />
       </node>
       <node concept="3Tm1VV" id="7T8HsuTZ4Lt" role="1B3o_S" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="5ZcB1GfVPbm">
+    <property role="3GE5qa" value="test.context" />
+    <ref role="13h7C2" to="53m0:2Yd1qrJOMZM" resolve="ITestScenarioContext" />
+    <node concept="13i0hz" id="5ZcB1GfVPbD" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getTestContextType" />
+      <node concept="3Tm1VV" id="5ZcB1GfVPbE" role="1B3o_S" />
+      <node concept="17QB3L" id="5ZcB1GfVPcd" role="3clF45" />
+      <node concept="3clFbS" id="5ZcB1GfVPbG" role="3clF47">
+        <node concept="3clFbF" id="5ZcB1GfVPf0" role="3cqZAp">
+          <node concept="2OqwBi" id="5ZcB1GfVQjS" role="3clFbG">
+            <node concept="2OqwBi" id="5ZcB1GfVPq7" role="2Oq$k0">
+              <node concept="13iPFW" id="5ZcB1GfVPeZ" role="2Oq$k0" />
+              <node concept="2yIwOk" id="5ZcB1GfVPE5" role="2OqNvi" />
+            </node>
+            <node concept="liA8E" id="5ZcB1GfVQH5" role="2OqNvi">
+              <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="5ZcB1GfVPbn" role="13h7CW">
+      <node concept="3clFbS" id="5ZcB1GfVPbo" role="2VODD2" />
     </node>
   </node>
 </model>

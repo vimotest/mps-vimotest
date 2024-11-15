@@ -468,6 +468,11 @@
               <ref role="3bR37D" to="mk2q:5tK9548cRt6" resolve="alfi.StandardModelLibrary" />
             </node>
           </node>
+          <node concept="1SiIV0" id="7ODXl9b3NoK" role="3bR37C">
+            <node concept="3bR9La" id="7ODXl9b3NoL" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:568PkTlOK5Q" resolve="jetbrains.mps.core.xml" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="6mWHjmRTutS" role="3bR37C">
           <node concept="3bR9La" id="6mWHjmRTutT" role="1SiIV1">
@@ -501,6 +506,11 @@
         <node concept="1SiIV0" id="5jkMFwGsFRs" role="3bR37C">
           <node concept="3bR9La" id="5jkMFwGsFRt" role="1SiIV1">
             <ref role="3bR37D" to="mk2q:5tK9548cRt6" resolve="alfi.StandardModelLibrary" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7ODXl9b3NoE" role="3bR37C">
+          <node concept="3bR9La" id="7ODXl9b3NoF" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:568PkTlOK5Q" resolve="jetbrains.mps.core.xml" />
           </node>
         </node>
       </node>

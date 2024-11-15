@@ -695,6 +695,31 @@
         <node concept="2ZBi8u" id="7T8HsuTT9xe" role="lGtFl">
           <ref role="2rW$FS" node="7T8HsuTT9xd" resolve="New" />
         </node>
+        <node concept="17Uvod" id="5ZcB1Gi6YIu" role="lGtFl">
+          <property role="2qtEX9" value="name" />
+          <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+          <node concept="3zFVjK" id="5ZcB1Gi6YIv" role="3zH0cK">
+            <node concept="3clFbS" id="5ZcB1Gi6YIw" role="2VODD2">
+              <node concept="3clFbJ" id="5ZcB1Gi71nA" role="3cqZAp">
+                <node concept="3clFbS" id="5ZcB1Gi71nC" role="3clFbx">
+                  <node concept="3cpWs6" id="5ZcB1Gi78So" role="3cqZAp">
+                    <node concept="Xl_RD" id="5ZcB1Gi7awN" role="3cqZAk">
+                      <property role="Xl_RC" value="sutViewModel" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2YIFZM" id="5ZcB1Gi72W$" role="3clFbw">
+                  <ref role="37wK5l" to="nrs2:5jkMFw_KBaY" resolve="separateControllerViewModel" />
+                  <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                  <node concept="30H73N" id="5ZcB1Gi72W_" role="37wK5m" />
+                </node>
+              </node>
+              <node concept="3clFbF" id="5ZcB1Gi77hn" role="3cqZAp">
+                <node concept="3zGtF$" id="5ZcB1Gi77hm" role="3clFbG" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="6lMYc" id="5jkMFwAfl0i" role="PCHHv">
         <property role="TrG5h" value="sutViewController" />
@@ -975,34 +1000,6 @@
         <property role="TrG5h" value="BuildSut" />
         <property role="PCHHn" value="6OepWIVA92F/protected" />
         <node concept="PCHzy" id="4Pj3bOmy51f" role="GbAUv">
-          <node concept="_jtW9" id="4Pj3bOmyjLk" role="PCHzz">
-            <node concept="3122gz" id="4Pj3bOmynD5" role="_jtWe">
-              <node concept="3122rM" id="4Pj3bOmynDu" role="315$Eb">
-                <node concept="32Pqhl" id="4Pj3bOmykHx" role="3122rd">
-                  <node concept="_iR_j" id="4Pj3bOmyjLi" role="32Men7" />
-                  <node concept="_vnHe" id="4Pj3bOmymmf" role="32Men1">
-                    <ref role="3acloq" node="2KQA9MxTirr" resolve="sut" />
-                  </node>
-                </node>
-              </node>
-              <node concept="32Pqhq" id="4Pj3bOmysWP" role="315$E5">
-                <node concept="32Pqhl" id="4Pj3bOmysWQ" role="32OngV">
-                  <node concept="_vnHe" id="4Pj3bOmysWR" role="32Men1">
-                    <ref role="3acloq" node="4Pj3bOmxz2b" resolve="BuildSut" />
-                  </node>
-                  <node concept="32M0$0" id="4Pj3bOmysWS" role="32Men7">
-                    <node concept="32Pqhl" id="4Pj3bOmysWT" role="32PqmZ">
-                      <node concept="_iR_j" id="4Pj3bOmysWU" role="32Men7" />
-                      <node concept="_vnHe" id="4Pj3bOmysWV" role="32Men1">
-                        <ref role="3acloq" node="4Pj3bOmxAoW" resolve="contextProvider" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="_vku0" id="4Pj3bOmysWW" role="_uFfl" />
-              </node>
-            </node>
-          </node>
           <node concept="_jtW9" id="5jkMFwAfoMr" role="PCHzz">
             <node concept="3122gz" id="5jkMFwAfoMs" role="_jtWe">
               <node concept="3122rM" id="5jkMFwAfoMt" role="315$Eb">
@@ -1016,7 +1013,7 @@
               <node concept="32Pqhq" id="5jkMFwAfoMx" role="315$E5">
                 <node concept="32Pqhl" id="5jkMFwAfoMy" role="32OngV">
                   <node concept="_vnHe" id="5jkMFwAfoMz" role="32Men1">
-                    <ref role="3acloq" node="5jkMFwAfrZ2" resolve="BuildSutViewController" />
+                    <ref role="3acloq" node="4Pj3bOmxz2b" resolve="BuildSut" />
                   </node>
                   <node concept="32M0$0" id="5jkMFwAfoM$" role="32Men7">
                     <node concept="32Pqhl" id="5jkMFwAfoM_" role="32PqmZ">
@@ -1040,6 +1037,84 @@
                       <node concept="30H73N" id="5jkMFwAfBmn" role="37wK5m" />
                     </node>
                   </node>
+                </node>
+              </node>
+              <node concept="gft3U" id="5ZcB1Gi7gyq" role="UU_$l">
+                <node concept="_jtW9" id="4Pj3bOmyjLk" role="gfFT$">
+                  <node concept="3122gz" id="4Pj3bOmynD5" role="_jtWe">
+                    <node concept="3122rM" id="4Pj3bOmynDu" role="315$Eb">
+                      <node concept="32Pqhl" id="4Pj3bOmykHx" role="3122rd">
+                        <node concept="_iR_j" id="4Pj3bOmyjLi" role="32Men7" />
+                        <node concept="_vnHe" id="4Pj3bOmymmf" role="32Men1">
+                          <ref role="3acloq" node="2KQA9MxTirr" resolve="sut" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="32Pqhq" id="4Pj3bOmysWP" role="315$E5">
+                      <node concept="32Pqhl" id="4Pj3bOmysWQ" role="32OngV">
+                        <node concept="_vnHe" id="4Pj3bOmysWR" role="32Men1">
+                          <ref role="3acloq" node="4Pj3bOmxz2b" resolve="BuildSut" />
+                        </node>
+                        <node concept="32M0$0" id="4Pj3bOmysWS" role="32Men7">
+                          <node concept="32Pqhl" id="4Pj3bOmysWT" role="32PqmZ">
+                            <node concept="_iR_j" id="4Pj3bOmysWU" role="32Men7" />
+                            <node concept="_vnHe" id="4Pj3bOmysWV" role="32Men1">
+                              <ref role="3acloq" node="4Pj3bOmxAoW" resolve="contextProvider" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="_vku0" id="4Pj3bOmysWW" role="_uFfl" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="8qQDt" id="5ZcB1Gi7EqZ" role="PCHHv" />
+      <node concept="6nSm6" id="5ZcB1Gi7AWN" role="PCHHv">
+        <property role="TrG5h" value="RetrieveViewModel" />
+        <property role="PCHHn" value="6OepWIVA92F/protected" />
+        <node concept="PCHzy" id="5ZcB1Gi7AWO" role="GbAUv">
+          <node concept="_jtW9" id="5ZcB1Gi7Sci" role="PCHzz">
+            <node concept="3122gz" id="5ZcB1Gi7Scj" role="_jtWe">
+              <node concept="3122rM" id="5ZcB1Gi7Sck" role="315$Eb">
+                <node concept="32Pqhl" id="5ZcB1Gi7Scl" role="3122rd">
+                  <node concept="_iR_j" id="5ZcB1Gi7Scm" role="32Men7" />
+                  <node concept="_vnHe" id="5ZcB1Gi7Scn" role="32Men1">
+                    <ref role="3acloq" node="2KQA9MxTirr" resolve="sut" />
+                  </node>
+                </node>
+              </node>
+              <node concept="32Pqhq" id="5ZcB1Gi7Sco" role="315$E5">
+                <node concept="32Pqhl" id="5ZcB1Gi7Scp" role="32OngV">
+                  <node concept="_vnHe" id="5ZcB1Gi7Scq" role="32Men1">
+                    <ref role="3acloq" node="5jkMFwAfrZ2" resolve="GetViewModel" />
+                  </node>
+                  <node concept="32M0$0" id="5ZcB1Gi7Scr" role="32Men7">
+                    <node concept="32Pqhl" id="5ZcB1Gi7Scs" role="32PqmZ">
+                      <node concept="_iR_j" id="5ZcB1Gi7Sct" role="32Men7" />
+                      <node concept="_vnHe" id="5ZcB1Gi7Scu" role="32Men1">
+                        <ref role="3acloq" node="4Pj3bOmxAoW" resolve="contextProvider" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="_vku0" id="5ZcB1Gi7Scv" role="_uFfl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1W57fq" id="5ZcB1Gi88JS" role="lGtFl">
+          <node concept="3IZrLx" id="5ZcB1Gi88JT" role="3IZSJc">
+            <node concept="3clFbS" id="5ZcB1Gi88JU" role="2VODD2">
+              <node concept="3clFbF" id="5ZcB1Gi8aUT" role="3cqZAp">
+                <node concept="2YIFZM" id="5ZcB1Gi8aUU" role="3clFbG">
+                  <ref role="37wK5l" to="nrs2:5jkMFw_KBaY" resolve="separateControllerViewModel" />
+                  <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                  <node concept="30H73N" id="5ZcB1Gi8aUV" role="37wK5m" />
                 </node>
               </node>
             </node>
@@ -1352,6 +1427,30 @@
             </node>
             <node concept="5jKBG" id="2DSbB2zPsr4" role="lGtFl">
               <ref role="v9R2y" node="2DSbB2zNEzK" resolve="reduce_Statement_WhenDescriptionWithContext" />
+            </node>
+          </node>
+          <node concept="_jtW9" id="5ZcB1Gi8fxA" role="PCHzz">
+            <node concept="32Pqhq" id="5ZcB1Gi8fxB" role="_jtWe">
+              <node concept="32Pqhl" id="5ZcB1Gi8fxC" role="32OngV">
+                <node concept="_iR_j" id="5ZcB1Gi8fxD" role="32Men7" />
+                <node concept="_vnHe" id="5ZcB1Gi8fxE" role="32Men1">
+                  <ref role="3acloq" node="5ZcB1Gi7AWN" resolve="RetrieveViewModel" />
+                </node>
+              </node>
+              <node concept="_vku0" id="5ZcB1Gi8fxF" role="_uFfl" />
+            </node>
+            <node concept="1W57fq" id="5ZcB1Gi8$X8" role="lGtFl">
+              <node concept="3IZrLx" id="5ZcB1Gi8$X9" role="3IZSJc">
+                <node concept="3clFbS" id="5ZcB1Gi8$Xa" role="2VODD2">
+                  <node concept="3clFbF" id="5ZcB1Gi8DwX" role="3cqZAp">
+                    <node concept="2YIFZM" id="5ZcB1Gi8DwY" role="3clFbG">
+                      <ref role="37wK5l" to="nrs2:5jkMFw_KBaY" resolve="separateControllerViewModel" />
+                      <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                      <node concept="30H73N" id="5ZcB1Gi8DwZ" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
           <node concept="PDbRn" id="2DSbB2zPz8I" role="PCHzz">
@@ -5020,6 +5119,29 @@
                 <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
                 <node concept="3$xsQk" id="4Pj3bOmx$zx" role="3$ytzL">
                   <node concept="3clFbS" id="4Pj3bOmx$zy" role="2VODD2">
+                    <node concept="3clFbJ" id="5ZcB1Gi7vyO" role="3cqZAp">
+                      <node concept="3clFbS" id="5ZcB1Gi7vyQ" role="3clFbx">
+                        <node concept="3cpWs6" id="5ZcB1Gi7vR7" role="3cqZAp">
+                          <node concept="2OqwBi" id="5ZcB1Gi7wpX" role="3cqZAk">
+                            <node concept="1iwH7S" id="5ZcB1Gi7wpY" role="2Oq$k0" />
+                            <node concept="1iwH70" id="5ZcB1Gi7wpZ" role="2OqNvi">
+                              <ref role="1iwH77" to="qhqb:5jkMFw_K_1h" resolve="ViewModel_ViewController_ClassDefinition" />
+                              <node concept="2OqwBi" id="5ZcB1Gi7wq0" role="1iwH7V">
+                                <node concept="30H73N" id="5ZcB1Gi7wq1" role="2Oq$k0" />
+                                <node concept="3TrEf2" id="5ZcB1Gi7wq2" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2YIFZM" id="5ZcB1Gi7vGh" role="3clFbw">
+                        <ref role="37wK5l" to="nrs2:5jkMFw_KBaY" resolve="separateControllerViewModel" />
+                        <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                        <node concept="30H73N" id="5ZcB1Gi7vGi" role="37wK5m" />
+                      </node>
+                    </node>
                     <node concept="3clFbF" id="4Pj3bOmx$zz" role="3cqZAp">
                       <node concept="2OqwBi" id="4Pj3bOmx$z$" role="3clFbG">
                         <node concept="1iwH7S" id="4Pj3bOmx$z_" role="2Oq$k0" />
@@ -5040,9 +5162,34 @@
             </node>
           </node>
         </node>
+        <node concept="17Uvod" id="5ZcB1Gi7tv1" role="lGtFl">
+          <property role="2qtEX9" value="name" />
+          <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+          <node concept="3zFVjK" id="5ZcB1Gi7tv2" role="3zH0cK">
+            <node concept="3clFbS" id="5ZcB1Gi7tv3" role="2VODD2">
+              <node concept="3clFbJ" id="5ZcB1Gi7tWM" role="3cqZAp">
+                <node concept="3clFbS" id="5ZcB1Gi7tWO" role="3clFbx">
+                  <node concept="3cpWs6" id="5ZcB1Gi7uZO" role="3cqZAp">
+                    <node concept="Xl_RD" id="5ZcB1Gi7v0Y" role="3cqZAk">
+                      <property role="Xl_RC" value="BuildSutViewController" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2YIFZM" id="5ZcB1Gi7uav" role="3clFbw">
+                  <ref role="37wK5l" to="nrs2:5jkMFw_KBaY" resolve="separateControllerViewModel" />
+                  <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                  <node concept="30H73N" id="5ZcB1Gi7uaw" role="37wK5m" />
+                </node>
+              </node>
+              <node concept="3clFbF" id="5ZcB1Gi7uuo" role="3cqZAp">
+                <node concept="3zGtF$" id="5ZcB1Gi7uun" role="3clFbG" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="6nSm6" id="5jkMFwAfrZ2" role="PCHHv">
-        <property role="TrG5h" value="BuildSutViewController" />
+        <property role="TrG5h" value="GetViewModel" />
         <node concept="PCHzy" id="5jkMFwAfrZ3" role="GbAUv">
           <node concept="32G6VT" id="5jkMFwAfrZ4" role="PCHzz">
             <node concept="2_e7m4" id="5jkMFwAfrZ5" role="2vFQ1F" />
@@ -5063,7 +5210,7 @@
                       <node concept="2OqwBi" id="5jkMFwAfrZd" role="3clFbG">
                         <node concept="1iwH7S" id="5jkMFwAfrZe" role="2Oq$k0" />
                         <node concept="1iwH70" id="5jkMFwAfrZf" role="2OqNvi">
-                          <ref role="1iwH77" to="qhqb:5jkMFw_K_1h" resolve="ViewModel_ViewController_ClassDefinition" />
+                          <ref role="1iwH77" to="qhqb:2KQA9MxTmGp" resolve="ViewModel_ClassDefinition" />
                           <node concept="2OqwBi" id="5jkMFwAfrZg" role="1iwH7V">
                             <node concept="30H73N" id="5jkMFwAfrZh" role="2Oq$k0" />
                             <node concept="3TrEf2" id="5jkMFwAfrZi" role="2OqNvi">

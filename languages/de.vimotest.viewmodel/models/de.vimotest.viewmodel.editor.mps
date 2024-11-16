@@ -60,6 +60,11 @@
         <child id="2597348684684069742" name="contextHints" index="CpUAK" />
       </concept>
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
+      <concept id="1226339751946" name="jetbrains.mps.lang.editor.structure.PaddingTopStyleClassItem" flags="ln" index="27yT$n" />
+      <concept id="1226339813308" name="jetbrains.mps.lang.editor.structure.PaddingBottomStyleClassItem" flags="ln" index="27z8qx" />
+      <concept id="1226339938453" name="jetbrains.mps.lang.editor.structure.AbstractPaddingStyleClassItem" flags="ln" index="27zB68">
+        <property id="1226504838901" name="measure" index="2hoDZC" />
+      </concept>
       <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
         <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
       </concept>
@@ -129,6 +134,7 @@
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <property id="1221209241505" name="value" index="1lJzqX" />
+        <child id="1221064706952" name="query" index="1d8cEk" />
       </concept>
       <concept id="1630016958697718209" name="jetbrains.mps.lang.editor.structure.IMenuReference_Default" flags="ngI" index="2Z_bC8">
         <reference id="1630016958698373342" name="concept" index="2ZyFGn" />
@@ -140,6 +146,7 @@
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
+      <concept id="1221057094638" name="jetbrains.mps.lang.editor.structure.QueryFunction_Integer" flags="in" index="1cFabM" />
       <concept id="1103016434866" name="jetbrains.mps.lang.editor.structure.CellModel_JComponent" flags="sg" stub="8104358048506731196" index="3gTLQM">
         <child id="1176475119347" name="componentProvider" index="3FoqZy" />
       </concept>
@@ -219,6 +226,7 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
+      <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -281,6 +289,9 @@
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
@@ -718,6 +729,14 @@
       <node concept="3F0ifn" id="5L3DBX$ljfm" role="3EZMnx" />
       <node concept="PMmxH" id="L9c2Y9pvfX" role="3EZMnx">
         <ref role="PMmxG" node="L9c2Y9pvfV" resolve="ViewWidget_Rendering_EC" />
+      </node>
+      <node concept="27yT$n" id="1EVo$WZSOqc" role="3F10Kt">
+        <property role="2hoDZC" value="hQhnRQp/PIXELS" />
+        <property role="3$6WeP" value="5" />
+      </node>
+      <node concept="27z8qx" id="1EVo$WZSOqe" role="3F10Kt">
+        <property role="3$6WeP" value="5" />
+        <property role="2hoDZC" value="hQhnRQp/PIXELS" />
       </node>
     </node>
     <node concept="PMmxH" id="L9c2Y9pjGP" role="6VMZX">
@@ -1181,7 +1200,45 @@
     <node concept="14StLt" id="43UPKEZ9RW1" role="V601i">
       <property role="TrG5h" value="FeatureIndication" />
       <node concept="VSNWy" id="43UPKEZ9RW3" role="3F10Kt">
-        <property role="1lJzqX" value="6" />
+        <property role="1lJzqX" value="8" />
+        <node concept="1cFabM" id="1EVo$WZTqyd" role="1d8cEk">
+          <node concept="3clFbS" id="1EVo$WZTqye" role="2VODD2">
+            <node concept="3cpWs8" id="1EVo$WZTIPH" role="3cqZAp">
+              <node concept="3cpWsn" id="1EVo$WZTIPI" role="3cpWs9">
+                <property role="TrG5h" value="editorSettings" />
+                <node concept="3uibUv" id="1EVo$WZTIs$" role="1tU5fm">
+                  <ref role="3uigEE" to="cj4x:~EditorComponentSettings" resolve="EditorComponentSettings" />
+                </node>
+                <node concept="2OqwBi" id="1EVo$WZTIPJ" role="33vP2m">
+                  <node concept="2OqwBi" id="1EVo$WZTIPK" role="2Oq$k0">
+                    <node concept="1Q80Hx" id="1EVo$WZTJ7R" role="2Oq$k0" />
+                    <node concept="liA8E" id="1EVo$WZTIPM" role="2OqNvi">
+                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1EVo$WZTIPN" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorComponent.getEditorComponentSettings()" resolve="getEditorComponentSettings" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1EVo$WZTqUT" role="3cqZAp">
+              <node concept="FJ1c_" id="1EVo$WZYZsq" role="3clFbG">
+                <node concept="3cmrfG" id="1EVo$WZYZsu" role="3uHU7w">
+                  <property role="3cmrfH" value="2" />
+                </node>
+                <node concept="2OqwBi" id="1EVo$WZTJxh" role="3uHU7B">
+                  <node concept="37vLTw" id="1EVo$WZTIPO" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1EVo$WZTIPI" resolve="editorSettings" />
+                  </node>
+                  <node concept="liA8E" id="1EVo$WZTN2V" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorComponentSettings.getFontSize()" resolve="getFontSize" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3$7fVu" id="43UPKEZanzx" role="3F10Kt">
         <property role="3$6WeP" value="1" />

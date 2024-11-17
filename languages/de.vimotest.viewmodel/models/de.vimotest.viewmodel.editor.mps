@@ -20,10 +20,10 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
     <import index="at53" ref="r:9e3a5843-688b-4c6d-b3dd-9f321700c21b(de.vimotest.viewmodel.structure)" />
+    <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="dgt9" ref="r:a46eceb8-d68d-4f8d-a755-6da4c2f592cc(de.vimotest.types.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
@@ -3339,16 +3339,39 @@
         <node concept="3F0ifn" id="3MA_BelCF48" role="3EZMnx">
           <property role="3F0ifm" value=", getterName='" />
           <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
-          <node concept="11LMrY" id="3MA_BelCF49" role="3F10Kt">
+          <node concept="11L4FC" id="3em85dStvU7" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="11LMrY" id="3em85dStvU6" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
           <node concept="VPM3Z" id="3MA_BelCF4a" role="3F10Kt" />
         </node>
-        <node concept="3F0A7n" id="3MA_BelCF47" role="3EZMnx">
-          <property role="1$x2rV" value="get&lt;FieldName&gt;" />
-          <property role="1O74Pk" value="true" />
-          <ref role="1NtTu8" to="at53:3MA_BelCF41" resolve="customGetterName" />
-          <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
+        <node concept="1QoScp" id="3em85dStvUa" role="3EZMnx">
+          <property role="1QpmdY" value="true" />
+          <node concept="pkWqt" id="3em85dStvUd" role="3e4ffs">
+            <node concept="3clFbS" id="3em85dStvUf" role="2VODD2">
+              <node concept="3clFbF" id="3em85dStw9A" role="3cqZAp">
+                <node concept="2YIFZM" id="3em85dStw$L" role="3clFbG">
+                  <ref role="37wK5l" to="nrs2:Of5vVZ$0jQ" resolve="capitalizeGettersSetters" />
+                  <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                  <node concept="pncrf" id="3em85dStw_B" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3F0A7n" id="3em85dStw7L" role="1QoS34">
+            <property role="1$x2rV" value="Get&lt;FieldName&gt;" />
+            <property role="1O74Pk" value="true" />
+            <ref role="1NtTu8" to="at53:3MA_BelCF41" resolve="customGetterName" />
+            <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
+          </node>
+          <node concept="3F0A7n" id="3MA_BelCF47" role="1QoVPY">
+            <property role="1$x2rV" value="get&lt;FieldName&gt;" />
+            <property role="1O74Pk" value="true" />
+            <ref role="1NtTu8" to="at53:3MA_BelCF41" resolve="customGetterName" />
+            <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
+          </node>
         </node>
         <node concept="3F0ifn" id="3MA_BelCF44" role="3EZMnx">
           <property role="3F0ifm" value="'" />

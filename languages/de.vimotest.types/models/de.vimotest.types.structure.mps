@@ -11,6 +11,16 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
@@ -140,6 +150,21 @@
       <property role="20kJfa" value="nestedType" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6LujpsVKegj" resolve="BuiltInType" />
+    </node>
+  </node>
+  <node concept="25R3W" id="1EVo$X00Gbs">
+    <property role="3F6X1D" value="1926241358146880220" />
+    <property role="3GE5qa" value="util" />
+    <property role="TrG5h" value="NullableBoolean" />
+    <node concept="25R33" id="1EVo$X00Gbt" role="25R1y">
+      <property role="3tVfz5" value="1926241358146880221" />
+      <property role="TrG5h" value="TRUE" />
+      <property role="1L1pqM" value="true" />
+    </node>
+    <node concept="25R33" id="1EVo$X00Gbu" role="25R1y">
+      <property role="3tVfz5" value="1926241358146880222" />
+      <property role="TrG5h" value="FALSE" />
+      <property role="1L1pqM" value="false" />
     </node>
   </node>
 </model>

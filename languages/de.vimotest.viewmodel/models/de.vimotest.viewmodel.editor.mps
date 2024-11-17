@@ -1266,14 +1266,8 @@
     <node concept="PMmxH" id="9CTo7lmDcV" role="2wV5jI">
       <ref role="PMmxG" node="9CTo7lmDcx" resolve="ViewWidgetFeature_Supported_EC" />
     </node>
-    <node concept="3EZMnI" id="2S2pY38Sm2L" role="6VMZX">
-      <node concept="2iRfu4" id="2S2pY38Sm2M" role="2iSdaV" />
-      <node concept="3F0ifn" id="2S2pY38Sm2O" role="3EZMnx">
-        <property role="3F0ifm" value="inherent support:" />
-      </node>
-      <node concept="3F0A7n" id="2S2pY38Sm2R" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:4OohpJQO3Nl" resolve="inherentSupport" />
-      </node>
+    <node concept="PMmxH" id="1EVo$X00WZC" role="6VMZX">
+      <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector" />
     </node>
   </node>
   <node concept="PKFIW" id="6eqMDi1ocJH">
@@ -3655,6 +3649,42 @@
       </node>
       <node concept="2SsqMj" id="2N4oO4qvdIa" role="3EZMnx" />
       <node concept="2iRkQZ" id="2N4oO4qvdIb" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="1EVo$X00WZz">
+    <property role="TrG5h" value="ViewWidgetFeature_Inspector" />
+    <property role="3GE5qa" value="widgets" />
+    <ref role="1XX52x" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
+    <node concept="3EZMnI" id="1EVo$X00WZ$" role="2wV5jI">
+      <node concept="2iRfu4" id="1EVo$X00WZ_" role="2iSdaV" />
+      <node concept="3F0ifn" id="1EVo$X00WZA" role="3EZMnx">
+        <property role="3F0ifm" value="inherent support:" />
+      </node>
+      <node concept="3F0A7n" id="1EVo$X00WZB" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:4OohpJQO3Nl" resolve="inherentSupport" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1EVo$X070qw">
+    <property role="3GE5qa" value="features" />
+    <ref role="1XX52x" to="at53:4SDJcZBNVBS" resolve="CheckedFeature" />
+    <node concept="PMmxH" id="1EVo$X070qy" role="2wV5jI">
+      <ref role="PMmxG" node="9CTo7lmDcx" resolve="ViewWidgetFeature_Supported_EC" />
+    </node>
+    <node concept="3EZMnI" id="1EVo$X070qz" role="6VMZX">
+      <node concept="PMmxH" id="1EVo$X070q$" role="3EZMnx">
+        <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector" />
+      </node>
+      <node concept="3F0ifn" id="1EVo$X070q_" role="3EZMnx">
+        <property role="3F0ifm" value="tri-state" />
+        <node concept="pVoyu" id="1EVo$X070qA" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="1EVo$X070qB" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:1EVo$X00MI7" resolve="supportsTriState" />
+      </node>
+      <node concept="l2Vlx" id="1EVo$X070qC" role="2iSdaV" />
     </node>
   </node>
 </model>

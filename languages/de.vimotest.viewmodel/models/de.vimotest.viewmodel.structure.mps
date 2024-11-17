@@ -230,8 +230,12 @@
     <node concept="1TJgyi" id="3lKMIJjSzKb" role="1TKVEl">
       <property role="IQ2nx" value="3850800795622718475" />
       <property role="TrG5h" value="defaultIsChecked" />
+      <ref role="AX2Wp" to="evry:1EVo$X00Gbs" resolve="TriStateBoolean" />
+    </node>
+    <node concept="1TJgyi" id="1EVo$X00MI7" role="1TKVEl">
+      <property role="IQ2nx" value="1926241358146907015" />
+      <property role="TrG5h" value="supportsTriState" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="t5JxF" id="3F1kzPoIUEr" role="lGtFl" />
     </node>
   </node>
   <node concept="1TIwiD" id="4SDJcZBNVBT">

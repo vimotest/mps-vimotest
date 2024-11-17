@@ -11,6 +11,7 @@
     <import index="at53" ref="r:9e3a5843-688b-4c6d-b3dd-9f321700c21b(de.vimotest.viewmodel.structure)" />
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
     <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
   </imports>
   <registry>
@@ -217,7 +218,7 @@
     <node concept="1TJgyi" id="3CJ09vZNkXV" role="1TKVEl">
       <property role="IQ2nx" value="4192570430936928123" />
       <property role="TrG5h" value="expectedIsChecked" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <ref role="AX2Wp" to="evry:1EVo$X00Gbs" resolve="NullableBoolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="3CJ09vZN9S0">

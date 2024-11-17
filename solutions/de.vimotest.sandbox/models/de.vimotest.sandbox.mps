@@ -252,6 +252,7 @@
         <child id="134781560953466099" name="widgetType" index="2nerJI" />
       </concept>
       <concept id="5213916851000129487" name="de.vimotest.viewmodel.structure.CheckedFeature" flags="ng" index="C4FCf">
+        <property id="1926241358146907015" name="supportsTriState" index="1qI4B8" />
         <property id="3850800795622718475" name="defaultIsChecked" index="3A$Jrw" />
       </concept>
       <concept id="5213916851000129488" name="de.vimotest.viewmodel.structure.VisibilityFeature" flags="ng" index="C4FCg" />
@@ -369,7 +370,9 @@
     <node concept="103ZXB" id="F907haLUeE" role="103ZXF">
       <node concept="C4FCE" id="6vtOLtwdT_M" role="103ZUC">
         <property role="TrG5h" value="MyFlagWithLabel" />
-        <node concept="C4FCf" id="6vtOLtwdT_N" role="C4FCF" />
+        <node concept="C4FCf" id="6vtOLtwdT_N" role="C4FCF">
+          <property role="3A$Jrw" value="1EVo$X00Gbt/TRUE" />
+        </node>
         <node concept="C4FCg" id="6vtOLtwdT_O" role="C4FCG">
           <property role="2VM7R0" value="true" />
         </node>
@@ -383,10 +386,21 @@
       </node>
       <node concept="C4FCE" id="6k2oWGbVooQ" role="103ZUC">
         <property role="TrG5h" value="MyFlagNoLabel" />
-        <node concept="C4FCf" id="6k2oWGbVooS" role="C4FCF" />
+        <node concept="C4FCf" id="6k2oWGbVooS" role="C4FCF">
+          <property role="3A$Jrw" value="1EVo$X00Gbu/FALSE" />
+        </node>
         <node concept="C4FCg" id="6k2oWGbVooU" role="C4FCG" />
         <node concept="C4FCh" id="6k2oWGbVooW" role="C4FCH" />
         <node concept="V3Zf6" id="6k2oWGbVooY" role="1ISttP" />
+      </node>
+      <node concept="C4FCE" id="1xbm1_$bGX" role="103ZUC">
+        <property role="TrG5h" value="MyFlagTriState" />
+        <node concept="C4FCf" id="1xbm1_$bGZ" role="C4FCF">
+          <property role="1qI4B8" value="true" />
+        </node>
+        <node concept="C4FCg" id="1xbm1_$bH1" role="C4FCG" />
+        <node concept="C4FCh" id="1xbm1_$bH3" role="C4FCH" />
+        <node concept="V3Zf6" id="1xbm1_$bH5" role="1ISttP" />
       </node>
     </node>
   </node>
@@ -406,7 +420,7 @@
             <ref role="30nzpS" node="6vtOLtwdT_M" resolve="MyFlagWithLabel" />
             <node concept="C4Fn6" id="3JdhG1lT90z" role="30nDbQ">
               <node concept="35STPD" id="3JdhG1lT90E" role="C4Fn7">
-                <property role="35S$ZG" value="true" />
+                <property role="35S$ZG" value="1EVo$X00Gbt/TRUE" />
               </node>
               <node concept="35STUl" id="6NwBQMyG2nQ" role="C4Fn7">
                 <property role="3XJMQh" value="true" />
@@ -424,7 +438,17 @@
           <node concept="30nzp_" id="6k2oWGbVoBP" role="DUiSb">
             <ref role="30nzpS" node="6k2oWGbVooQ" resolve="MyFlagNoLabel" />
             <node concept="C4Fn6" id="6k2oWGbVoBR" role="30nDbQ">
-              <node concept="35STPD" id="6k2oWGbVoBS" role="C4Fn7" />
+              <node concept="35STPD" id="6k2oWGbVoBS" role="C4Fn7">
+                <property role="35S$ZG" value="1EVo$X00Gbu/FALSE" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="1xbm1_$bH7" role="1s$QAX">
+          <node concept="30nzp_" id="1xbm1_$bH8" role="DUiSb">
+            <ref role="30nzpS" node="1xbm1_$bGX" resolve="TriStateFlag" />
+            <node concept="C4Fn6" id="1xbm1_$bHb" role="30nDbQ">
+              <node concept="35STPD" id="1xbm1_$bHc" role="C4Fn7" />
             </node>
           </node>
         </node>
@@ -1225,7 +1249,7 @@
                     <ref role="3elmOO" node="4w9z1ta2CUD" resolve="Header" />
                     <node concept="C4Fn6" id="4w9z1ta3CZR" role="1NuoHy">
                       <node concept="35STPD" id="4w9z1ta3CZS" role="C4Fn7">
-                        <property role="35S$ZG" value="true" />
+                        <property role="35S$ZG" value="1EVo$X00Gbt/TRUE" />
                       </node>
                     </node>
                   </node>
@@ -1234,7 +1258,9 @@
                   <node concept="1NuoHz" id="4w9z1ta3CZU" role="CNE8S">
                     <ref role="3elmOO" node="4w9z1ta2CUD" resolve="Header" />
                     <node concept="C4Fn6" id="4w9z1ta3CZW" role="1NuoHy">
-                      <node concept="35STPD" id="4w9z1ta3CZX" role="C4Fn7" />
+                      <node concept="35STPD" id="4w9z1ta3CZX" role="C4Fn7">
+                        <property role="35S$ZG" value="1EVo$X00Gbu/FALSE" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -1242,7 +1268,9 @@
                   <node concept="1NuoHz" id="4w9z1ta3CZZ" role="CNE8S">
                     <ref role="3elmOO" node="4w9z1ta2CUD" resolve="Header" />
                     <node concept="C4Fn6" id="4w9z1ta3D01" role="1NuoHy">
-                      <node concept="35STPD" id="4w9z1ta3D02" role="C4Fn7" />
+                      <node concept="35STPD" id="4w9z1ta3D02" role="C4Fn7">
+                        <property role="35S$ZG" value="1EVo$X00Gbt/TRUE" />
+                      </node>
                       <node concept="V3Zdv" id="4w9z1ta3D03" role="C4Fn7">
                         <property role="3egigc" value="My Label" />
                       </node>
@@ -1310,7 +1338,9 @@
                   <node concept="1NuoHz" id="4w9z1ta3HVM" role="2aBVWM">
                     <ref role="3elmOO" node="4w9z1ta2HPU" resolve="Include" />
                     <node concept="C4Fn6" id="4w9z1ta3HVK" role="1NuoHy">
-                      <node concept="35STPD" id="4w9z1ta3HVL" role="C4Fn7" />
+                      <node concept="35STPD" id="4w9z1ta3HVL" role="C4Fn7">
+                        <property role="35S$ZG" value="1EVo$X00Gbt/TRUE" />
+                      </node>
                     </node>
                   </node>
                   <node concept="1NuoHz" id="4w9z1ta3HVQ" role="2aBVWM">
@@ -1345,7 +1375,7 @@
                     <ref role="3elmOO" node="4w9z1ta2HPU" resolve="Include" />
                     <node concept="C4Fn6" id="4w9z1ta3HW2" role="1NuoHy">
                       <node concept="35STPD" id="4w9z1ta3HW3" role="C4Fn7">
-                        <property role="35S$ZG" value="true" />
+                        <property role="35S$ZG" value="1EVo$X00Gbu/FALSE" />
                       </node>
                     </node>
                   </node>
@@ -1447,7 +1477,9 @@
                   <node concept="1NuoHz" id="4w9z1ta3HUG" role="1NvgdV">
                     <ref role="3elmOO" node="4w9z1ta2MKJ" resolve="Include" />
                     <node concept="C4Fn6" id="4w9z1ta3HUE" role="1NuoHy">
-                      <node concept="35STPD" id="4w9z1ta3HUF" role="C4Fn7" />
+                      <node concept="35STPD" id="4w9z1ta3HUF" role="C4Fn7">
+                        <property role="35S$ZG" value="1EVo$X00Gbt/TRUE" />
+                      </node>
                     </node>
                   </node>
                   <node concept="1NuoHz" id="4w9z1ta3HUK" role="1NvgdV">
@@ -1483,7 +1515,7 @@
                     <ref role="3elmOO" node="4w9z1ta2MKJ" resolve="Include" />
                     <node concept="C4Fn6" id="4w9z1ta3HUW" role="1NuoHy">
                       <node concept="35STPD" id="4w9z1ta3HUX" role="C4Fn7">
-                        <property role="35S$ZG" value="true" />
+                        <property role="35S$ZG" value="1EVo$X00Gbu/FALSE" />
                       </node>
                     </node>
                   </node>
@@ -1787,7 +1819,9 @@
     <node concept="103ZXB" id="1F_Q10zVMuj" role="103ZXF">
       <node concept="C4FCE" id="1F_Q10zVRnG" role="103ZUC">
         <property role="TrG5h" value="MyCheckBox1" />
-        <node concept="C4FCf" id="1F_Q10zVRnH" role="C4FCF" />
+        <node concept="C4FCf" id="1F_Q10zVRnH" role="C4FCF">
+          <property role="3A$Jrw" value="1EVo$X00Gbt/TRUE" />
+        </node>
         <node concept="C4FCg" id="1F_Q10zVRnI" role="C4FCG" />
         <node concept="C4FCh" id="1F_Q10zVRnJ" role="C4FCH" />
         <node concept="V3Zf6" id="1F_Q10zVRnK" role="1ISttP" />
@@ -1796,7 +1830,7 @@
       <node concept="C4FCE" id="1F_Q10zVRnM" role="103ZUC">
         <property role="TrG5h" value="MyCheckBox2" />
         <node concept="C4FCf" id="1F_Q10zVRnN" role="C4FCF">
-          <property role="3A$Jrw" value="true" />
+          <property role="3A$Jrw" value="1EVo$X00Gbu/FALSE" />
         </node>
         <node concept="C4FCg" id="1F_Q10zVRnO" role="C4FCG" />
         <node concept="C4FCh" id="1F_Q10zVRnP" role="C4FCH" />
@@ -2775,7 +2809,9 @@
                   <node concept="1NuoHz" id="2w4bAIFYf$1" role="CNE8S">
                     <ref role="3elmOO" node="2w4bAIFOcdQ" resolve="Checkboxes" />
                     <node concept="C4Fn6" id="2w4bAIFYf$3" role="1NuoHy">
-                      <node concept="35STPD" id="2w4bAIFYf$4" role="C4Fn7" />
+                      <node concept="35STPD" id="2w4bAIFYf$4" role="C4Fn7">
+                        <property role="35S$ZG" value="1EVo$X00Gbt/TRUE" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -2784,7 +2820,7 @@
                     <ref role="3elmOO" node="2w4bAIFOcdQ" resolve="Checkboxes" />
                     <node concept="C4Fn6" id="2w4bAIFYf$8" role="1NuoHy">
                       <node concept="35STPD" id="2w4bAIFYf$9" role="C4Fn7">
-                        <property role="35S$ZG" value="true" />
+                        <property role="35S$ZG" value="1EVo$X00Gbu/FALSE" />
                       </node>
                     </node>
                   </node>

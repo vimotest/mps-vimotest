@@ -33,8 +33,8 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
-    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
+    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -61,6 +61,7 @@
       </concept>
     </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="2000375450116454183" name="jetbrains.mps.lang.editor.structure.ISubstituteMenu" flags="ngI" index="22mbnS">
         <child id="414384289274416996" name="parts" index="3ft7WO" />
@@ -176,6 +177,15 @@
       <concept id="1103016434866" name="jetbrains.mps.lang.editor.structure.CellModel_JComponent" flags="sg" stub="8104358048506731196" index="3gTLQM">
         <child id="1176475119347" name="componentProvider" index="3FoqZy" />
       </concept>
+      <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
+        <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
+        <child id="1139535219969" name="item" index="1h_SK8" />
+      </concept>
+      <concept id="1139535280617" name="jetbrains.mps.lang.editor.structure.CellActionMapItem" flags="lg" index="1hA7zw">
+        <property id="1139535298778" name="actionId" index="1hAc7j" />
+        <child id="1139535280620" name="executeFunction" index="1hA7z_" />
+      </concept>
+      <concept id="1139535439104" name="jetbrains.mps.lang.editor.structure.CellActionMap_ExecuteFunction" flags="in" index="1hAIg9" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -194,6 +204,7 @@
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
+        <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
@@ -2954,31 +2965,106 @@
       <ref role="1PE7su" node="55YtzNami8N" resolve="WidgetFeatureCheckValue_expectationCell_EC" />
     </node>
     <node concept="3EZMnI" id="55YtzNav1HN" role="2wV5jI">
-      <node concept="2yq9I_" id="55YtzNav21x" role="3EZMnx">
-        <ref role="225u1j" to="53m0:3CJ09vZNkXV" resolve="expectedIsChecked" />
-        <node concept="1563Vb" id="55YtzNav21y" role="1563LE">
-          <property role="1563UK" value="[ ]" />
-          <property role="1563Ve" value="[x]" />
+      <node concept="1QoScp" id="1xbm1_qnwC" role="3EZMnx">
+        <property role="1QpmdY" value="true" />
+        <ref role="1ERwB7" node="1xbm1_qq31" resolve="CheckedCheckValue_ToggleOnClick" />
+        <node concept="3F0ifn" id="1xbm1_qp58" role="1QoS34">
+          <property role="3F0ifm" value="[◼]" />
+          <node concept="Vb9p2" id="1xbm1_$c1t" role="3F10Kt" />
         </node>
-        <node concept="1QoScp" id="55YtzNav21z" role="2fqkNU">
-          <property role="1QpmdY" value="true" />
-          <node concept="pkWqt" id="55YtzNav21$" role="3e4ffs">
-            <node concept="3clFbS" id="55YtzNav21_" role="2VODD2">
-              <node concept="3clFbF" id="55YtzNav21A" role="3cqZAp">
-                <node concept="2OqwBi" id="55YtzNav21B" role="3clFbG">
-                  <node concept="pncrf" id="55YtzNav21C" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="55YtzNav21D" role="2OqNvi">
+        <node concept="pkWqt" id="1xbm1_qnwE" role="3e4ffs">
+          <node concept="3clFbS" id="1xbm1_qnwF" role="2VODD2">
+            <node concept="3clFbF" id="1xbm1_qo2J" role="3cqZAp">
+              <node concept="2OqwBi" id="1xbm1_qoTg" role="3clFbG">
+                <node concept="2OqwBi" id="1xbm1_qou2" role="2Oq$k0">
+                  <node concept="pncrf" id="1xbm1_qo2I" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="1xbm1_qoHj" role="2OqNvi">
                     <ref role="3TsBF5" to="53m0:3CJ09vZNkXV" resolve="expectedIsChecked" />
+                  </node>
+                </node>
+                <node concept="3w_OXm" id="1xbm1_qp2F" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1QoScp" id="1xbm1_qnwG" role="1QoVPY">
+          <property role="1QpmdY" value="true" />
+          <node concept="pkWqt" id="1xbm1_qnwH" role="3e4ffs">
+            <node concept="3clFbS" id="1xbm1_qnwI" role="2VODD2">
+              <node concept="3clFbF" id="1xbm1_qnwJ" role="3cqZAp">
+                <node concept="2OqwBi" id="1xbm1_qnwK" role="3clFbG">
+                  <node concept="2OqwBi" id="1xbm1_qnwL" role="2Oq$k0">
+                    <node concept="pncrf" id="1xbm1_qnwM" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="1xbm1_qnwN" role="2OqNvi">
+                      <ref role="3TsBF5" to="53m0:3CJ09vZNkXV" resolve="expectedIsChecked" />
+                    </node>
+                  </node>
+                  <node concept="21noJN" id="1xbm1_qnwO" role="2OqNvi">
+                    <node concept="21nZrQ" id="1xbm1_qnwP" role="21noJM">
+                      <ref role="21nZrZ" to="evry:1EVo$X00Gbt" resolve="TRUE" />
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3F0ifn" id="55YtzNav21E" role="1QoS34">
+          <node concept="3F0ifn" id="1xbm1_qnwQ" role="1QoS34">
+            <property role="3F0ifm" value="[☑]" />
+            <node concept="Vb9p2" id="1xbm1_$c1u" role="3F10Kt" />
+          </node>
+          <node concept="3F0ifn" id="1xbm1_qnwR" role="1QoVPY">
+            <property role="3F0ifm" value="[☐]" />
+            <node concept="Vb9p2" id="1xbm1_$c1v" role="3F10Kt" />
+          </node>
+        </node>
+      </node>
+      <node concept="1QoScp" id="1xbm1_qp8b" role="3EZMnx">
+        <property role="1QpmdY" value="true" />
+        <node concept="3F0ifn" id="1xbm1_qp8c" role="1QoS34">
+          <property role="3F0ifm" value="is mixed" />
+          <ref role="1k5W1q" node="55YtzNatuDs" resolve="ThenDescriptionText" />
+        </node>
+        <node concept="pkWqt" id="1xbm1_qp8d" role="3e4ffs">
+          <node concept="3clFbS" id="1xbm1_qp8e" role="2VODD2">
+            <node concept="3clFbF" id="1xbm1_qp8f" role="3cqZAp">
+              <node concept="2OqwBi" id="1xbm1_qp8g" role="3clFbG">
+                <node concept="2OqwBi" id="1xbm1_qp8h" role="2Oq$k0">
+                  <node concept="pncrf" id="1xbm1_qp8i" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="1xbm1_qp8j" role="2OqNvi">
+                    <ref role="3TsBF5" to="53m0:3CJ09vZNkXV" resolve="expectedIsChecked" />
+                  </node>
+                </node>
+                <node concept="3w_OXm" id="1xbm1_qp8k" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1QoScp" id="1xbm1_qp8l" role="1QoVPY">
+          <property role="1QpmdY" value="true" />
+          <node concept="pkWqt" id="1xbm1_qp8m" role="3e4ffs">
+            <node concept="3clFbS" id="1xbm1_qp8n" role="2VODD2">
+              <node concept="3clFbF" id="1xbm1_qp8o" role="3cqZAp">
+                <node concept="2OqwBi" id="1xbm1_qp8p" role="3clFbG">
+                  <node concept="2OqwBi" id="1xbm1_qp8q" role="2Oq$k0">
+                    <node concept="pncrf" id="1xbm1_qp8r" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="1xbm1_qp8s" role="2OqNvi">
+                      <ref role="3TsBF5" to="53m0:3CJ09vZNkXV" resolve="expectedIsChecked" />
+                    </node>
+                  </node>
+                  <node concept="21noJN" id="1xbm1_qp8t" role="2OqNvi">
+                    <node concept="21nZrQ" id="1xbm1_qp8u" role="21noJM">
+                      <ref role="21nZrZ" to="evry:1EVo$X00Gbt" resolve="TRUE" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3F0ifn" id="1xbm1_qp8v" role="1QoS34">
             <property role="3F0ifm" value="is checked" />
             <ref role="1k5W1q" node="55YtzNatuDs" resolve="ThenDescriptionText" />
           </node>
-          <node concept="3F0ifn" id="55YtzNav21F" role="1QoVPY">
+          <node concept="3F0ifn" id="1xbm1_qp8w" role="1QoVPY">
             <property role="3F0ifm" value="is not checked" />
             <ref role="1k5W1q" node="55YtzNatuDs" resolve="ThenDescriptionText" />
           </node>
@@ -5390,6 +5476,41 @@
         <property role="1O74Pk" value="true" />
         <property role="1$x2rV" value="&lt;same as test suite&gt;" />
         <ref role="1NtTu8" to="53m0:5ZcB1GhJ1UL" resolve="virtualPackageOfFile" />
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="1xbm1_qq31">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <property role="TrG5h" value="CheckedCheckValue_ToggleOnClick" />
+    <ref role="1h_SK9" to="53m0:3CJ09vZN9RY" resolve="CheckedCheckValue" />
+    <node concept="1hA7zw" id="1xbm1_qsxO" role="1h_SK8">
+      <property role="1hAc7j" value="1FSxSwWqMNJ/click_action_id" />
+      <node concept="1hAIg9" id="1xbm1_qsxP" role="1hA7z_">
+        <node concept="3clFbS" id="1xbm1_qsxQ" role="2VODD2">
+          <node concept="3clFbF" id="1xbm1_qsEX" role="3cqZAp">
+            <node concept="2OqwBi" id="1xbm1_qsQO" role="3clFbG">
+              <node concept="0IXxy" id="1xbm1_qsEW" role="2Oq$k0" />
+              <node concept="2qgKlT" id="1xbm1_qt5S" role="2OqNvi">
+                <ref role="37wK5l" to="fwln:1xbm1_qsBr" resolve="toggleToNextValue" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="1xbm1_qsy7" role="1h_SK8">
+      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
+      <node concept="1hAIg9" id="1xbm1_qsy8" role="1hA7z_">
+        <node concept="3clFbS" id="1xbm1_qsy9" role="2VODD2">
+          <node concept="3clFbF" id="1xbm1_qtc4" role="3cqZAp">
+            <node concept="2OqwBi" id="1xbm1_qtc5" role="3clFbG">
+              <node concept="0IXxy" id="1xbm1_qtc6" role="2Oq$k0" />
+              <node concept="2qgKlT" id="1xbm1_qtc7" role="2OqNvi">
+                <ref role="37wK5l" to="fwln:1xbm1_qsBr" resolve="toggleToNextValue" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

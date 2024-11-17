@@ -1,0 +1,20 @@
+def sandboxCppProjectDir = "$project.sandboxCodeGenDir/sandbox/cpp"
+
+def cmakePath = System.getenv('CMAKE_PATH') ?: 'cmake'
+
+task configureCppSandboxProject(type: Exec) {
+    group 'vimotest-sandbox'
+    description 'Configure C++ Sandbox Programs'
+
+    commandLine cmakePath, '-S', sandboxCppProjectDir, '-B', "$sandboxCppProjectDir/build"
+    workingDir sandboxCppProjectDir
+}
+
+task buildCppSandboxProject(type: Exec) {
+    group 'vimotest-sandbox'
+    description 'Build C++ Sandbox Programs'
+    dependsOn configureCppSandboxProject
+
+    commandLine cmakePath, "--build", "$sandboxCppProjectDir/build"
+    workingDir sandboxCppProjectDir
+}

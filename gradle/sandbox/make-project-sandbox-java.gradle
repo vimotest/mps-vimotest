@@ -1,0 +1,12 @@
+import org.apache.tools.ant.taskdefs.condition.Os
+
+def sandboxJavaProjectDir = "$project.sandboxCodeGenDir/sandbox/java"
+def gradleCommand = Os.isFamily(Os.FAMILY_WINDOWS) ? 'gradlew.bat' : './gradlew'
+
+task buildJavaSandboxProject(type: Exec) {
+    group 'vimotest-sandbox'
+    description 'Build Java Sandbox Program'
+
+    commandLine gradleCommand, '-p', sandboxJavaProjectDir, 'assemble'
+    workingDir projectDir
+}

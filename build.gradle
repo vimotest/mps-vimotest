@@ -9,6 +9,8 @@ ext.customMpsPlugins = [
 ]
 
 apply from: 'gradle/init-gradle-scripts.gradle'
+apply from: 'gradle/sandbox/make-project-sandbox.gradle'
+apply from: 'gradle/sandbox/package-generated-code.gradle'
 
 task prepareMps {
     group 'mps'

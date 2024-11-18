@@ -101,6 +101,9 @@
     <node concept="2WVz4l" id="7H4Lpx0an3G" role="2WV$Zc">
       <ref role="2WVz4k" node="1Yc3x6zoTLW" resolve="Visibility" />
     </node>
+    <node concept="2WVz4l" id="ipeJ6mNnH4" role="2WV$Zc">
+      <ref role="2WVz4k" node="ipeJ6mNnGD" resolve="ToolTip" />
+    </node>
   </node>
   <node concept="2WVz3E" id="7H4Lpx0an3A">
     <property role="3GE5qa" value="features" />
@@ -347,6 +350,13 @@
       <ref role="Uq8ev" node="2exRXkpLSVB" resolve="Click" />
       <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
     </node>
+  </node>
+  <node concept="2WVz3E" id="ipeJ6mNnGD">
+    <property role="3GE5qa" value="features" />
+    <property role="TrG5h" value="ToolTip" />
+    <property role="2WV$r6" value="tooltip" />
+    <property role="2WVz4g" value="t" />
+    <property role="3yYw5D" value="fLJRk5_/gray" />
   </node>
 </model>
 

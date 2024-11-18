@@ -535,6 +535,9 @@
     <node concept="CY16f" id="26p1ZnjbA5C" role="CYSdJ">
       <ref role="CY16a" to="at53:26p1Znja6xb" resolve="CustomOperationNameBinding" />
     </node>
+    <node concept="CY16f" id="2oCE3bTtYGG" role="CYSdJ">
+      <ref role="CY16a" to="at53:2N4oO4qvcUb" resolve="CustomFileNameBinding" />
+    </node>
     <node concept="1puMqW" id="GirOujt7j0" role="1pvy6N">
       <ref role="1puQsG" node="GirOujt6Wb" resolve="AddAlfiNamespaces" />
     </node>

@@ -108,6 +108,7 @@
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
           <module ref="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" kind="cl" />
           <module ref="258bd2f6-0d02-411d-86b2-5a5ea083e6d2(jetbrains.mps.lang.editor.table.runtime)" kind="cl" />
+          <module ref="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:611ecc9e-0703-4ab9-a13c-fb396c607716:de.vimotest.types" />
@@ -278,6 +279,7 @@
           <module ref="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0(de.vimotest.viewmodel)" kind="cl" />
           <module ref="479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)" kind="cl" />
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
+          <module ref="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:ce7915b5-36b4-4478-a67c-f5a8a72ed4a0:de.vimotest.viewmodel" />
@@ -358,6 +360,7 @@
           <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
           <module ref="716e8717-88c0-4280-8c16-b4d88567596f(de.vimotest.viewmodel.testing)" kind="cl" />
           <module ref="479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)" kind="cl" />
+          <module ref="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
@@ -1186,6 +1189,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
@@ -1329,6 +1333,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
@@ -1394,6 +1399,7 @@
         <fileset file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>

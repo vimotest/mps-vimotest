@@ -54,6 +54,7 @@
       <concept id="2674824929519838362" name="alfi.structure.PositionalTuple" flags="ng" index="_vku0" />
     </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
+      <concept id="5219625661134590255" name="de.vimotest.viewmodel.structure.SingleOrMultiLineString" flags="ng" index="o7Kjd" />
       <concept id="5213916851000129487" name="de.vimotest.viewmodel.structure.CheckedFeature" flags="ng" index="C4FCf" />
       <concept id="5213916851000129488" name="de.vimotest.viewmodel.structure.VisibilityFeature" flags="ng" index="C4FCg" />
       <concept id="5213916851000129489" name="de.vimotest.viewmodel.structure.EnabledFeature" flags="ng" index="C4FCh" />
@@ -67,7 +68,9 @@
       <concept id="4370345911585163139" name="de.vimotest.viewmodel.structure.CustomTypeNameBinding" flags="ng" index="2DeX7K">
         <property id="4370345911585163142" name="customName" index="2DeX7P" />
       </concept>
-      <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6" />
+      <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6">
+        <child id="5219625661134947434" name="defaultText" index="o6p68" />
+      </concept>
       <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommands" flags="ng" index="103ZXx">
         <child id="777152910169039599" name="commands" index="1006ar" />
       </concept>
@@ -102,7 +105,9 @@
         <node concept="C4FCf" id="Of5vVZtNIX" role="C4FCF" />
         <node concept="C4FCg" id="Of5vVZtNIY" role="C4FCG" />
         <node concept="C4FCh" id="Of5vVZtNIZ" role="C4FCH" />
-        <node concept="V3Zf6" id="Of5vVZtNJ0" role="1ISttP" />
+        <node concept="V3Zf6" id="Of5vVZtNJ0" role="1ISttP">
+          <node concept="o7Kjd" id="4xJPu9h0B0E" role="o6p68" />
+        </node>
         <node concept="3Vw88g" id="Of5vVZtNJ1" role="T1B0p" />
       </node>
     </node>

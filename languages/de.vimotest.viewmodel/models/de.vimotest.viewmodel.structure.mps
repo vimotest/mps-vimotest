@@ -3,10 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="611ecc9e-0703-4ab9-a13c-fb396c607716" name="de.vimotest.types" version="0" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" />
+    <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -39,6 +41,7 @@
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -306,8 +309,16 @@
     <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
     <node concept="1TJgyi" id="3lKMIJjSzKa" role="1TKVEl">
       <property role="IQ2nx" value="3850800795622718474" />
-      <property role="TrG5h" value="defaultText" />
+      <property role="TrG5h" value="old_defaultText" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="4xJPu9gt$hD" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="4xJPu9gt$hE" role="1TKVEi">
+      <property role="IQ2ns" value="5219625661134947434" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="defaultText" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4xJPu9gsd4J" resolve="SingleOrMultiLineString" />
     </node>
   </node>
   <node concept="1TIwiD" id="7H4Lpx0iNpB">
@@ -639,18 +650,6 @@
     <node concept="1TJgyi" id="7uPLQmTPAc" role="1TKVEl">
       <property role="IQ2nx" value="134781560953461132" />
       <property role="TrG5h" value="header" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="XX1C5VZVaJ">
-    <property role="EcuMT" value="1116055435858653871" />
-    <property role="3GE5qa" value="util" />
-    <property role="TrG5h" value="StringValue" />
-    <property role="34LRSv" value="string value" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="XX1C5VZWmt" role="1TKVEl">
-      <property role="IQ2nx" value="1116055435858658717" />
-      <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
@@ -1273,6 +1272,29 @@
     <property role="EcuMT" value="3225812364372528784" />
     <property role="3GE5qa" value="bindings" />
     <property role="TrG5h" value="ICanHaveCustomFileName" />
+  </node>
+  <node concept="1TIwiD" id="4xJPu9gsd4J">
+    <property role="EcuMT" value="5219625661134590255" />
+    <property role="3GE5qa" value="util" />
+    <property role="TrG5h" value="SingleOrMultiLineString" />
+    <property role="34LRSv" value="single/multiline string" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="4xJPu9gsdgU" role="1TKVEi">
+      <property role="IQ2ns" value="5219625661134591034" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="multiLineText" />
+      <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
+    </node>
+    <node concept="1TJgyi" id="4xJPu9gsdgT" role="1TKVEl">
+      <property role="IQ2nx" value="5219625661134591033" />
+      <property role="TrG5h" value="singleLineValue" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4xJPu9gsdgV" role="1TKVEl">
+      <property role="IQ2nx" value="5219625661134591035" />
+      <property role="TrG5h" value="isMultiLine" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
 </model>
 

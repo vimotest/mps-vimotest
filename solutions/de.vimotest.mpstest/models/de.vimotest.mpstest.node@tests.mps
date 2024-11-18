@@ -51,14 +51,14 @@
         <reference id="8948051009467187564" name="targetCommand" index="27sXQn" />
         <child id="8948051009467207553" name="parameters" index="27sTdU" />
       </concept>
-      <concept id="7445061853131767061" name="de.vimotest.viewmodel.testing.structure.WhenDescriptionWithActions" flags="ng" index="DUd5q">
+      <concept id="7445061853131767061" name="de.vimotest.viewmodel.testing.structure.WhenDescriptionWithAction" flags="ng" index="DUd5q">
         <child id="7445061853131768390" name="action" index="DUiS9" />
       </concept>
       <concept id="3426401106044983339" name="de.vimotest.viewmodel.testing.structure.ViewModelFeatureTestSuite" flags="ng" index="30n1Qd">
         <reference id="3426401106044983489" name="targetViewModel" index="30n1PB" />
         <child id="3426401106044983341" name="tests" index="30n1Qb" />
       </concept>
-      <concept id="7199841511154467673" name="de.vimotest.viewmodel.testing.structure.WhenThenDescriptions" flags="ng" index="1s$VFG">
+      <concept id="7199841511154467673" name="de.vimotest.viewmodel.testing.structure.ComposedWhenThenParts" flags="ng" index="1s$VFG">
         <child id="7199841511154487303" name="actionsWithDescription" index="1s$QAM" />
       </concept>
       <concept id="7205622933660482722" name="de.vimotest.viewmodel.testing.structure.ViewModelTestScenario" flags="ng" index="3LKzX3">
@@ -91,9 +91,12 @@
         <child id="4696656866608863494" name="enabledFeature" index="7cNAf" />
         <child id="6201744883133776083" name="fillTextCommand" index="2WQ0rf" />
       </concept>
+      <concept id="5219625661134590255" name="de.vimotest.viewmodel.structure.SingleOrMultiLineString" flags="ng" index="o7Kjd" />
       <concept id="5213916851000129488" name="de.vimotest.viewmodel.structure.VisibilityFeature" flags="ng" index="C4FCg" />
       <concept id="5213916851000129489" name="de.vimotest.viewmodel.structure.EnabledFeature" flags="ng" index="C4FCh" />
-      <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6" />
+      <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6">
+        <child id="5219625661134947434" name="defaultText" index="o6p68" />
+      </concept>
       <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommands" flags="ng" index="103ZXx">
         <child id="777152910169039599" name="commands" index="1006ar" />
       </concept>
@@ -183,7 +186,9 @@
             <property role="TrG5h" value="MyComboBox" />
             <node concept="7cNxA" id="63ktVPu4znd" role="7cNAb" />
             <node concept="7cNxT" id="63ktVPu4zne" role="7cNAa" />
-            <node concept="V3Zf6" id="63ktVPu4znf" role="7cNAd" />
+            <node concept="V3Zf6" id="63ktVPu4znf" role="7cNAd">
+              <node concept="o7Kjd" id="4xJPu9h0B0F" role="o6p68" />
+            </node>
             <node concept="C4FCg" id="63ktVPu4zng" role="7cNAc" />
             <node concept="C4FCh" id="63ktVPu4znh" role="7cNAf" />
             <node concept="3Vw88I" id="63ktVPu4zni" role="2WQ0rf">

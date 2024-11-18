@@ -34,6 +34,7 @@
       <concept id="134781560953456170" name="de.vimotest.viewmodel.structure.ColumnDefinition" flags="ng" index="2nep4R">
         <child id="134781560953466099" name="widgetType" index="2nerJI" />
       </concept>
+      <concept id="5219625661134590255" name="de.vimotest.viewmodel.structure.SingleOrMultiLineString" flags="ng" index="o7Kjd" />
       <concept id="5213916851000129487" name="de.vimotest.viewmodel.structure.CheckedFeature" flags="ng" index="C4FCf">
         <property id="3850800795622718475" name="defaultIsChecked" index="3A$Jrw" />
       </concept>
@@ -46,7 +47,8 @@
         <child id="7278489671513126078" name="textFeature" index="1ISttP" />
       </concept>
       <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6">
-        <property id="3850800795622718474" name="defaultText" index="3A$Jrx" />
+        <property id="3850800795622718474" name="old_defaultText" index="3A$Jrx" />
+        <child id="5219625661134947434" name="defaultText" index="o6p68" />
       </concept>
       <concept id="8882441622785832551" name="de.vimotest.viewmodel.structure.LabelWidget" flags="ng" index="V3ZfZ">
         <child id="8882441622785832552" name="textFeature" index="V3ZfK" />
@@ -98,6 +100,7 @@
         <node concept="V3Zf6" id="Of5vVZtG4U" role="1ISttP">
           <property role="2VM7R0" value="true" />
           <property role="3A$Jrx" value="Value" />
+          <node concept="o7Kjd" id="4xJPu9h0B0H" role="o6p68" />
         </node>
       </node>
       <node concept="1i$o6" id="3em85dStvTK" role="103ZUC">
@@ -105,7 +108,9 @@
         <node concept="2nep4R" id="3em85dStvTL" role="2MLTWm">
           <node concept="V3ZfZ" id="3em85dStvTM" role="2nerJI">
             <property role="TrG5h" value="Header" />
-            <node concept="V3Zf6" id="3em85dStvTN" role="V3ZfK" />
+            <node concept="V3Zf6" id="3em85dStvTN" role="V3ZfK">
+              <node concept="o7Kjd" id="4xJPu9h0B0I" role="o6p68" />
+            </node>
             <node concept="C4FCh" id="3em85dStvTO" role="V3ZfL" />
             <node concept="C4FCg" id="3em85dStvTP" role="V3ZfM" />
           </node>

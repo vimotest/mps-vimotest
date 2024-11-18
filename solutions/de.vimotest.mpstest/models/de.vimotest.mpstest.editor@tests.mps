@@ -91,7 +91,7 @@
         <reference id="3426401106044983489" name="targetViewModel" index="30n1PB" />
         <child id="3426401106044983341" name="tests" index="30n1Qb" />
       </concept>
-      <concept id="7199841511154467673" name="de.vimotest.viewmodel.testing.structure.WhenThenDescriptions" flags="ng" index="1s$VFG">
+      <concept id="7199841511154467673" name="de.vimotest.viewmodel.testing.structure.ComposedWhenThenParts" flags="ng" index="1s$VFG">
         <child id="7199841511154487304" name="assertsWithDescription" index="1s$QAX" />
       </concept>
       <concept id="7205622933660482722" name="de.vimotest.viewmodel.testing.structure.ViewModelTestScenario" flags="ng" index="3LKzX3">
@@ -100,10 +100,12 @@
       <concept id="7205622933660496194" name="de.vimotest.viewmodel.testing.structure.ITestScenarioAssertion" flags="ngI" index="3LKBaz" />
     </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
+      <concept id="5219625661134590255" name="de.vimotest.viewmodel.structure.SingleOrMultiLineString" flags="ng" index="o7Kjd" />
       <concept id="5213916851000129488" name="de.vimotest.viewmodel.structure.VisibilityFeature" flags="ng" index="C4FCg" />
       <concept id="5213916851000129489" name="de.vimotest.viewmodel.structure.EnabledFeature" flags="ng" index="C4FCh" />
       <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6">
-        <property id="3850800795622718474" name="defaultText" index="3A$Jrx" />
+        <property id="3850800795622718474" name="old_defaultText" index="3A$Jrx" />
+        <child id="5219625661134947434" name="defaultText" index="o6p68" />
       </concept>
       <concept id="8882441622785832551" name="de.vimotest.viewmodel.structure.LabelWidget" flags="ng" index="V3ZfZ">
         <child id="8882441622785832552" name="textFeature" index="V3ZfK" />
@@ -213,6 +215,7 @@
         <property role="TrG5h" value="MyLabel" />
         <node concept="V3Zf6" id="7kmE6cdCuge" role="V3ZfK">
           <property role="3A$Jrx" value="Text" />
+          <node concept="o7Kjd" id="4xJPu9h0B0J" role="o6p68" />
         </node>
         <node concept="C4FCh" id="7kmE6cdCugf" role="V3ZfL" />
         <node concept="C4FCg" id="7kmE6cdCugg" role="V3ZfM" />

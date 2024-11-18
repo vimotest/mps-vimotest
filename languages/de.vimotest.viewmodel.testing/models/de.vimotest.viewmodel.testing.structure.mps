@@ -33,6 +33,7 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -450,8 +451,9 @@
     <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
     <node concept="1TJgyi" id="6NwBQMyCrHw" role="1TKVEl">
       <property role="IQ2nx" value="7845445839813196640" />
-      <property role="TrG5h" value="expectedText" />
+      <property role="TrG5h" value="old_expectedText" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="4xJPu9gzQBf" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="7H4Lpx0iNr8" role="PzmwI">
       <ref role="PrY4T" node="7H4Lpx0iNqj" resolve="ILabelCheckValue" />
@@ -467,6 +469,13 @@
     </node>
     <node concept="PrWs8" id="5oh1xNFsD1E" role="PzmwI">
       <ref role="PrY4T" node="5oh1xNF6HG0" resolve="IButtonCheckValue" />
+    </node>
+    <node concept="1TJgyj" id="4xJPu9gzQBg" role="1TKVEi">
+      <property role="IQ2ns" value="5219625661136595408" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expectedText" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="at53:4xJPu9gsd4J" resolve="SingleOrMultiLineString" />
     </node>
   </node>
   <node concept="PlHQZ" id="3pKiF2wNf5v">

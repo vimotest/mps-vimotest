@@ -100,7 +100,9 @@
       <concept id="7205622933660496194" name="de.vimotest.viewmodel.testing.structure.ITestScenarioAssertion" flags="ngI" index="3LKBaz" />
     </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
-      <concept id="5219625661134590255" name="de.vimotest.viewmodel.structure.SingleOrMultiLineString" flags="ng" index="o7Kjd" />
+      <concept id="5219625661134590255" name="de.vimotest.viewmodel.structure.SingleOrMultiLineString" flags="ng" index="o7Kjd">
+        <property id="5219625661134591033" name="singleLineValue" index="o7K7r" />
+      </concept>
       <concept id="5213916851000129488" name="de.vimotest.viewmodel.structure.VisibilityFeature" flags="ng" index="C4FCg" />
       <concept id="5213916851000129489" name="de.vimotest.viewmodel.structure.EnabledFeature" flags="ng" index="C4FCh" />
       <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6">
@@ -215,7 +217,9 @@
         <property role="TrG5h" value="MyLabel" />
         <node concept="V3Zf6" id="7kmE6cdCuge" role="V3ZfK">
           <property role="3A$Jrx" value="Text" />
-          <node concept="o7Kjd" id="4xJPu9h0B0J" role="o6p68" />
+          <node concept="o7Kjd" id="4xJPu9h0B0J" role="o6p68">
+            <property role="o7K7r" value="Text" />
+          </node>
         </node>
         <node concept="C4FCh" id="7kmE6cdCugf" role="V3ZfL" />
         <node concept="C4FCg" id="7kmE6cdCugg" role="V3ZfM" />

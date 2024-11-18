@@ -34,7 +34,9 @@
       <concept id="134781560953456170" name="de.vimotest.viewmodel.structure.ColumnDefinition" flags="ng" index="2nep4R">
         <child id="134781560953466099" name="widgetType" index="2nerJI" />
       </concept>
-      <concept id="5219625661134590255" name="de.vimotest.viewmodel.structure.SingleOrMultiLineString" flags="ng" index="o7Kjd" />
+      <concept id="5219625661134590255" name="de.vimotest.viewmodel.structure.SingleOrMultiLineString" flags="ng" index="o7Kjd">
+        <property id="5219625661134591033" name="singleLineValue" index="o7K7r" />
+      </concept>
       <concept id="5213916851000129487" name="de.vimotest.viewmodel.structure.CheckedFeature" flags="ng" index="C4FCf">
         <property id="3850800795622718475" name="defaultIsChecked" index="3A$Jrw" />
       </concept>
@@ -100,7 +102,9 @@
         <node concept="V3Zf6" id="Of5vVZtG4U" role="1ISttP">
           <property role="2VM7R0" value="true" />
           <property role="3A$Jrx" value="Value" />
-          <node concept="o7Kjd" id="4xJPu9h0B0H" role="o6p68" />
+          <node concept="o7Kjd" id="4xJPu9h0B0H" role="o6p68">
+            <property role="o7K7r" value="Value" />
+          </node>
         </node>
       </node>
       <node concept="1i$o6" id="3em85dStvTK" role="103ZUC">

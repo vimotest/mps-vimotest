@@ -78,6 +78,9 @@
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
+      <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
+        <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
+      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
@@ -106,12 +109,16 @@
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -389,6 +396,80 @@
     <node concept="1YaCAy" id="5jkMFwuLz8L" role="1YuTPh">
       <property role="TrG5h" value="nameBindingConfig" />
       <ref role="1YaFvo" to="at53:5jkMFwuLz8m" resolve="GenerationConfig" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="3c$pnH1i_a1">
+    <property role="TrG5h" value="check_SingleOrMultiLineString" />
+    <property role="3GE5qa" value="util.values" />
+    <node concept="3clFbS" id="3c$pnH1i_a2" role="18ibNy">
+      <node concept="3clFbJ" id="3c$pnH1i_aO" role="3cqZAp">
+        <node concept="2OqwBi" id="3c$pnH1i_kd" role="3clFbw">
+          <node concept="1YBJjd" id="3c$pnH1i_aR" role="2Oq$k0">
+            <ref role="1YBMHb" node="3c$pnH1i_a4" resolve="string" />
+          </node>
+          <node concept="3TrcHB" id="3c$pnH1i_yI" role="2OqNvi">
+            <ref role="3TsBF5" to="at53:4xJPu9gsdgV" resolve="isMultiLine" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="3c$pnH1i_aQ" role="3clFbx">
+          <node concept="3clFbJ" id="3c$pnH1i__8" role="3cqZAp">
+            <node concept="2OqwBi" id="3c$pnH1iA4L" role="3clFbw">
+              <node concept="2OqwBi" id="3c$pnH1i_IB" role="2Oq$k0">
+                <node concept="1YBJjd" id="3c$pnH1i__h" role="2Oq$k0">
+                  <ref role="1YBMHb" node="3c$pnH1i_a4" resolve="string" />
+                </node>
+                <node concept="3TrEf2" id="3c$pnH1i_S7" role="2OqNvi">
+                  <ref role="3Tt5mk" to="at53:4xJPu9gsdgU" resolve="multiLineText" />
+                </node>
+              </node>
+              <node concept="3w_OXm" id="3c$pnH1iAl9" role="2OqNvi" />
+            </node>
+            <node concept="3clFbS" id="3c$pnH1i__a" role="3clFbx">
+              <node concept="2MkqsV" id="3c$pnH1iAqo" role="3cqZAp">
+                <node concept="Xl_RD" id="3c$pnH1iAqx" role="2MkJ7o">
+                  <property role="Xl_RC" value="string should define multiLineText" />
+                </node>
+                <node concept="1YBJjd" id="3c$pnH1iAro" role="1urrMF">
+                  <ref role="1YBMHb" node="3c$pnH1i_a4" resolve="string" />
+                </node>
+                <node concept="2OE7Q9" id="3c$pnH1iArO" role="1urrC5">
+                  <ref role="2OEe5H" to="at53:4xJPu9gsdgU" resolve="multiLineText" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="3c$pnH1iAzf" role="3cqZAp">
+            <node concept="3clFbS" id="3c$pnH1iAzh" role="3clFbx">
+              <node concept="2MkqsV" id="3c$pnH1iEbb" role="3cqZAp">
+                <node concept="Xl_RD" id="3c$pnH1iEbc" role="2MkJ7o">
+                  <property role="Xl_RC" value="string should not define singleLineValue" />
+                </node>
+                <node concept="1YBJjd" id="3c$pnH1iEbd" role="1urrMF">
+                  <ref role="1YBMHb" node="3c$pnH1i_a4" resolve="string" />
+                </node>
+                <node concept="2ODE4t" id="3c$pnH1iE_n" role="1urrC5">
+                  <ref role="2ODJFN" to="at53:4xJPu9gsdgT" resolve="singleLineValue" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3c$pnH1iCec" role="3clFbw">
+              <node concept="2OqwBi" id="3c$pnH1iAGK" role="2Oq$k0">
+                <node concept="1YBJjd" id="3c$pnH1iAzq" role="2Oq$k0">
+                  <ref role="1YBMHb" node="3c$pnH1i_a4" resolve="string" />
+                </node>
+                <node concept="3TrcHB" id="3c$pnH1iAXr" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:4xJPu9gsdgT" resolve="singleLineValue" />
+                </node>
+              </node>
+              <node concept="17RvpY" id="3c$pnH1iE3u" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3c$pnH1i_a4" role="1YuTPh">
+      <property role="TrG5h" value="string" />
+      <ref role="1YaFvo" to="at53:4xJPu9gsd4J" resolve="SingleOrMultiLineString" />
     </node>
   </node>
 </model>

@@ -231,7 +231,7 @@
         <property id="5555266676524595291" name="supported" index="2VM7R0" />
       </concept>
       <concept id="4696656866608863471" name="de.vimotest.viewmodel.structure.ComboBoxEntriesFeature" flags="ng" index="7cNxA">
-        <property id="5655792802101418340" name="defaultText" index="M2z3M" />
+        <property id="5655792802101418340" name="old_defaultText" index="M2z3M" />
         <child id="5655792802101418338" name="defaultEntries" index="M2z3O" />
       </concept>
       <concept id="4696656866608863472" name="de.vimotest.viewmodel.structure.SelectedEntryFeature" flags="ng" index="7cNxT">
@@ -611,7 +611,7 @@
               </node>
               <node concept="1PaTwC" id="6RKU0s0$tZt" role="1PaQFQ">
                 <node concept="3oM_SD" id="6RKU0s0$tZu" role="1PaTwD">
-                  <property role="3oM_SC" value="&#10;Line2" />
+                  <property role="3oM_SC" value="Line2" />
                 </node>
               </node>
             </node>
@@ -1953,6 +1953,28 @@
           <property role="2VM7R0" value="true" />
         </node>
       </node>
+      <node concept="UtuMG" id="3c$pnH1f30P" role="103ZUC">
+        <property role="TrG5h" value="MultiLineTextBox" />
+        <node concept="V3Zf6" id="3c$pnH1f30R" role="UtuMJ">
+          <node concept="o7Kjd" id="3c$pnH1f30T" role="o6p68">
+            <property role="o7K7p" value="true" />
+            <node concept="1Pa9Pv" id="3c$pnH1f30Z" role="o7K7o">
+              <node concept="1PaTwC" id="3c$pnH1f310" role="1PaQFQ">
+                <node concept="3oM_SD" id="3c$pnH1kfc9" role="1PaTwD">
+                  <property role="3oM_SC" value="Line1" />
+                </node>
+              </node>
+              <node concept="1PaTwC" id="3c$pnH1kfcb" role="1PaQFQ">
+                <node concept="3oM_SD" id="3c$pnH1kfca" role="1PaTwD">
+                  <property role="3oM_SC" value="Line2" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="C4FCg" id="3c$pnH1f30V" role="UtuMI" />
+        <node concept="C4FCh" id="3c$pnH1f30X" role="UtuMD" />
+      </node>
     </node>
   </node>
   <node concept="30n1Qd" id="2exRXkpRoQe">
@@ -1960,7 +1982,7 @@
     <property role="3GE5qa" value="widgetassertions" />
     <ref role="30n1PB" node="2exRXkpRk2R" resolve="TextBoxes_View" />
     <node concept="3LKzX3" id="2exRXkpRoQf" role="30n1Qb">
-      <property role="TrG5h" value="My Scenario" />
+      <property role="TrG5h" value="My SingleLine Scenario" />
       <node concept="1IbZgy" id="2exRXkpRoQm" role="DUd2K">
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="2exRXkpRoQn" role="DUiTU" />
@@ -1981,6 +2003,39 @@
               </node>
               <node concept="35STUn" id="2exRXkpSsdF" role="UtuKg">
                 <property role="3XJem9" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="3c$pnH1kzuG" role="30n1Qb">
+      <property role="TrG5h" value="My MultiLine Scenario" />
+      <node concept="1IbZgy" id="3c$pnH1kzuH" role="DUd2K">
+        <property role="1IbZgB" value="some" />
+        <node concept="30l7Wy" id="3c$pnH1kzuI" role="DUiTU" />
+      </node>
+      <node concept="1s$VFG" id="3c$pnH1kzuJ" role="1s$QAY">
+        <node concept="DUd2R" id="3c$pnH1kzuK" role="1s$QAX">
+          <node concept="30nzp_" id="3c$pnH1kzuS" role="DUiSb">
+            <ref role="30nzpS" node="3c$pnH1f30P" resolve="MultiLineTextBox" />
+            <node concept="UtuKh" id="3c$pnH1kzuT" role="30nDbQ">
+              <node concept="V3Zdv" id="3c$pnH1kzuU" role="UtuKg">
+                <node concept="o7Kjd" id="3c$pnH1kzuW" role="oSbKM">
+                  <property role="o7K7p" value="true" />
+                  <node concept="1Pa9Pv" id="3c$pnH1kzuY" role="o7K7o">
+                    <node concept="1PaTwC" id="3c$pnH1kzuZ" role="1PaQFQ">
+                      <node concept="3oM_SD" id="3c$pnH1kzv0" role="1PaTwD">
+                        <property role="3oM_SC" value="Expected1" />
+                      </node>
+                    </node>
+                    <node concept="1PaTwC" id="3c$pnH1kzv2" role="1PaQFQ">
+                      <node concept="3oM_SD" id="3c$pnH1kzv1" role="1PaTwD">
+                        <property role="3oM_SC" value="Expected2" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>

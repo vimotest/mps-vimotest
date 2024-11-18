@@ -470,6 +470,9 @@
     <node concept="PrWs8" id="5oh1xNFsD1E" role="PzmwI">
       <ref role="PrY4T" node="5oh1xNF6HG0" resolve="IButtonCheckValue" />
     </node>
+    <node concept="PrWs8" id="3c$pnH1f0uZ" role="PzmwI">
+      <ref role="PrY4T" to="at53:3c$pnH1eja4" resolve="ISingleOrMultiLineStringSupport" />
+    </node>
     <node concept="1TJgyj" id="4xJPu9gzQBg" role="1TKVEi">
       <property role="IQ2ns" value="5219625661136595408" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

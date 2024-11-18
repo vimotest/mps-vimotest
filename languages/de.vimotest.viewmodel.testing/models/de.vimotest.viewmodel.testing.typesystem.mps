@@ -13,6 +13,7 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -116,6 +117,9 @@
         <child id="1206060619838" name="condition" index="3eO9$A" />
         <child id="1206060644605" name="statementList" index="3eOfB_" />
       </concept>
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
@@ -148,6 +152,11 @@
       <concept id="1144231330558" name="jetbrains.mps.baseLanguage.structure.ForStatement" flags="nn" index="1Dw8fO">
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
+      </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -1431,25 +1440,30 @@
           <property role="TrG5h" value="hasExpectedFreeText" />
           <node concept="10P_77" id="3lKMIJjOgnN" role="1tU5fm" />
           <node concept="2OqwBi" id="3lKMIJjOgnR" role="33vP2m">
-            <node concept="2OqwBi" id="3lKMIJjOgnS" role="2Oq$k0">
-              <node concept="2OqwBi" id="3lKMIJjOgnT" role="2Oq$k0">
-                <node concept="2OqwBi" id="3lKMIJjOgnU" role="2Oq$k0">
-                  <node concept="2OqwBi" id="3lKMIJjOgnV" role="2Oq$k0">
-                    <node concept="1YBJjd" id="3lKMIJjOgnW" role="2Oq$k0">
-                      <ref role="1YBMHb" node="3lKMIJjO5bN" resolve="selectedEntryCheckValue" />
+            <node concept="2OqwBi" id="3c$pnH1hpxv" role="2Oq$k0">
+              <node concept="2OqwBi" id="3lKMIJjOgnS" role="2Oq$k0">
+                <node concept="2OqwBi" id="3lKMIJjOgnT" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3lKMIJjOgnU" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3lKMIJjOgnV" role="2Oq$k0">
+                      <node concept="1YBJjd" id="3lKMIJjOgnW" role="2Oq$k0">
+                        <ref role="1YBMHb" node="3lKMIJjO5bN" resolve="selectedEntryCheckValue" />
+                      </node>
+                      <node concept="2TvwIu" id="3lKMIJjOgnX" role="2OqNvi" />
                     </node>
-                    <node concept="2TvwIu" id="3lKMIJjOgnX" role="2OqNvi" />
-                  </node>
-                  <node concept="v3k3i" id="3lKMIJjOgnY" role="2OqNvi">
-                    <node concept="chp4Y" id="3lKMIJjOgnZ" role="v3oSu">
-                      <ref role="cht4Q" to="53m0:7H4Lpx0iNr7" resolve="TextCheckValue" />
+                    <node concept="v3k3i" id="3lKMIJjOgnY" role="2OqNvi">
+                      <node concept="chp4Y" id="3lKMIJjOgnZ" role="v3oSu">
+                        <ref role="cht4Q" to="53m0:7H4Lpx0iNr7" resolve="TextCheckValue" />
+                      </node>
                     </node>
                   </node>
+                  <node concept="1uHKPH" id="3lKMIJjOgo0" role="2OqNvi" />
                 </node>
-                <node concept="1uHKPH" id="3lKMIJjOgo0" role="2OqNvi" />
+                <node concept="3TrEf2" id="3c$pnH1hpa3" role="2OqNvi">
+                  <ref role="3Tt5mk" to="53m0:4xJPu9gzQBg" resolve="expectedText" />
+                </node>
               </node>
-              <node concept="3TrcHB" id="3lKMIJjOgo1" role="2OqNvi">
-                <ref role="3TsBF5" to="53m0:6NwBQMyCrHw" resolve="old_expectedText" />
+              <node concept="3TrcHB" id="3c$pnH1hpNh" role="2OqNvi">
+                <ref role="3TsBF5" to="at53:4xJPu9gsdgT" resolve="singleLineValue" />
               </node>
             </node>
             <node concept="17RvpY" id="3lKMIJjOgo2" role="2OqNvi" />
@@ -2040,6 +2054,85 @@
     <node concept="1YaCAy" id="5ZcB1GgmYr6" role="1YuTPh">
       <property role="TrG5h" value="testContext" />
       <ref role="1YaFvo" to="53m0:2Yd1qrJOMZM" resolve="ITestScenarioContext" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="3c$pnH1iFne">
+    <property role="TrG5h" value="check_TextCheckValue" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <node concept="3clFbS" id="3c$pnH1iFnf" role="18ibNy">
+      <node concept="3cpWs8" id="3c$pnH1iLeU" role="3cqZAp">
+        <node concept="3cpWsn" id="3c$pnH1iLeV" role="3cpWs9">
+          <property role="TrG5h" value="featureIsMultiLine" />
+          <node concept="10P_77" id="3c$pnH1iKq7" role="1tU5fm" />
+          <node concept="2OqwBi" id="3c$pnH1iLeX" role="33vP2m">
+            <node concept="2OqwBi" id="3c$pnH1iLeY" role="2Oq$k0">
+              <node concept="1YBJjd" id="3c$pnH1iLeZ" role="2Oq$k0">
+                <ref role="1YBMHb" node="3c$pnH1iFnh" resolve="textCheckValue" />
+              </node>
+              <node concept="2qgKlT" id="3c$pnH1iLf0" role="2OqNvi">
+                <ref role="37wK5l" to="fwln:3c$pnH1eLNs" resolve="getTextFeature" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="3c$pnH1r5$B" role="2OqNvi">
+              <ref role="37wK5l" to="nrs2:3c$pnH1qVi_" resolve="isMultiLine" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="3c$pnH1iFod" role="3cqZAp">
+        <node concept="3y3z36" id="3c$pnH1iIoQ" role="3clFbw">
+          <node concept="2OqwBi" id="3c$pnH1iGe7" role="3uHU7w">
+            <node concept="2OqwBi" id="3c$pnH1iFCv" role="2Oq$k0">
+              <node concept="1YBJjd" id="3c$pnH1iFom" role="2Oq$k0">
+                <ref role="1YBMHb" node="3c$pnH1iFnh" resolve="textCheckValue" />
+              </node>
+              <node concept="3TrEf2" id="3c$pnH1iG0q" role="2OqNvi">
+                <ref role="3Tt5mk" to="53m0:4xJPu9gzQBg" resolve="expectedText" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="3c$pnH1iGph" role="2OqNvi">
+              <ref role="3TsBF5" to="at53:4xJPu9gsdgV" resolve="isMultiLine" />
+            </node>
+          </node>
+          <node concept="37vLTw" id="3c$pnH1iLf3" role="3uHU7B">
+            <ref role="3cqZAo" node="3c$pnH1iLeV" resolve="isMultiLine" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="3c$pnH1iFof" role="3clFbx">
+          <node concept="2MkqsV" id="3c$pnH1iJkD" role="3cqZAp">
+            <node concept="3cpWs3" id="3c$pnH1iKkS" role="2MkJ7o">
+              <node concept="Xl_RD" id="3c$pnH1iJkM" role="3uHU7B">
+                <property role="Xl_RC" value="Should check " />
+              </node>
+              <node concept="1eOMI4" id="3c$pnH1iNA$" role="3uHU7w">
+                <node concept="3K4zz7" id="3c$pnH1iKl6" role="1eOMHV">
+                  <node concept="Xl_RD" id="3c$pnH1iN2i" role="3K4E3e">
+                    <property role="Xl_RC" value="multiline text" />
+                  </node>
+                  <node concept="Xl_RD" id="3c$pnH1iN3A" role="3K4GZi">
+                    <property role="Xl_RC" value="singleline text" />
+                  </node>
+                  <node concept="37vLTw" id="3c$pnH1iN1Y" role="3K4Cdx">
+                    <ref role="3cqZAo" node="3c$pnH1iLeV" resolve="featureIsMultiLine" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3c$pnH1iO65" role="1urrMF">
+              <node concept="1YBJjd" id="3c$pnH1iNBq" role="2Oq$k0">
+                <ref role="1YBMHb" node="3c$pnH1iFnh" resolve="textCheckValue" />
+              </node>
+              <node concept="3TrEf2" id="3c$pnH1iPgN" role="2OqNvi">
+                <ref role="3Tt5mk" to="53m0:4xJPu9gzQBg" resolve="expectedText" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3c$pnH1iFnh" role="1YuTPh">
+      <property role="TrG5h" value="textCheckValue" />
+      <ref role="1YaFvo" to="53m0:7H4Lpx0iNr7" resolve="TextCheckValue" />
     </node>
   </node>
 </model>

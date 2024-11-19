@@ -15,6 +15,7 @@
     <import index="qhqb" ref="r:82509cd6-30ba-42e3-82e0-e58184c3d7f7(de.vimotest.viewmodel.generator.templates@generator)" />
     <import index="fwln" ref="r:fb31fced-d3c6-408c-9dff-13efe5b49745(de.vimotest.viewmodel.testing.behavior)" />
     <import index="53m0" ref="r:b38f4eba-3263-43b3-b5a0-ad906d4f1a11(de.vimotest.viewmodel.testing.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -24,6 +25,7 @@
       </concept>
       <concept id="1215695189714" name="jetbrains.mps.baseLanguage.structure.PlusAssignmentExpression" flags="nn" index="d57v9" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -101,6 +103,7 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
@@ -392,9 +395,8 @@
           </node>
         </node>
         <node concept="3clFbF" id="247DgsTsIcu" role="3cqZAp">
-          <node concept="2YIFZM" id="247DgsTsIcw" role="3clFbG">
-            <ref role="37wK5l" to="18ew:~NameUtil.toValidIdentifier(java.lang.String)" resolve="toValidIdentifier" />
-            <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+          <node concept="1rXfSq" id="6RKU0s3pFvz" role="3clFbG">
+            <ref role="37wK5l" node="6RKU0s3ptv0" resolve="toValidIdentifier" />
             <node concept="37vLTw" id="1srqdXULNjM" role="37wK5m">
               <ref role="3cqZAo" node="1srqdXULNjI" resolve="name" />
             </node>
@@ -420,19 +422,18 @@
       <property role="TrG5h" value="getGivenOperationName" />
       <node concept="3clFbS" id="7T8HsuTFQdz" role="3clF47">
         <node concept="3clFbF" id="7T8HsuTG317" role="3cqZAp">
-          <node concept="2YIFZM" id="7T8HsuTG318" role="3clFbG">
-            <ref role="37wK5l" to="18ew:~NameUtil.toValidIdentifier(java.lang.String)" resolve="toValidIdentifier" />
-            <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
-            <node concept="3cpWs3" id="7T8HsuTG37n" role="37wK5m">
-              <node concept="2OqwBi" id="7T8HsuTG37o" role="3uHU7w">
-                <node concept="37vLTw" id="7T8HsuTG37p" role="2Oq$k0">
+          <node concept="1rXfSq" id="6RKU0s3pDE9" role="3clFbG">
+            <ref role="37wK5l" node="6RKU0s3ptv0" resolve="toValidIdentifier" />
+            <node concept="3cpWs3" id="6RKU0s3pCrb" role="37wK5m">
+              <node concept="2OqwBi" id="6RKU0s3pCrc" role="3uHU7w">
+                <node concept="37vLTw" id="6RKU0s3pCrd" role="2Oq$k0">
                   <ref role="3cqZAo" node="7T8HsuTFQ_A" resolve="node" />
                 </node>
-                <node concept="2qgKlT" id="7T8HsuTG37q" role="2OqNvi">
+                <node concept="2qgKlT" id="6RKU0s3pCre" role="2OqNvi">
                   <ref role="37wK5l" to="fwln:1srqdXUM70Z" resolve="toText" />
                 </node>
               </node>
-              <node concept="Xl_RD" id="7T8HsuTG37r" role="3uHU7B">
+              <node concept="Xl_RD" id="6RKU0s3pCrf" role="3uHU7B">
                 <property role="Xl_RC" value="given " />
               </node>
             </node>
@@ -452,9 +453,8 @@
       <property role="TrG5h" value="getWhenOperationName" />
       <node concept="3clFbS" id="7T8HsuTFQDY" role="3clF47">
         <node concept="3clFbF" id="7T8HsuTG3oO" role="3cqZAp">
-          <node concept="2YIFZM" id="7T8HsuTG3oP" role="3clFbG">
-            <ref role="37wK5l" to="18ew:~NameUtil.toValidIdentifier(java.lang.String)" resolve="toValidIdentifier" />
-            <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+          <node concept="1rXfSq" id="6RKU0s3pB0$" role="3clFbG">
+            <ref role="37wK5l" node="6RKU0s3ptv0" resolve="toValidIdentifier" />
             <node concept="3cpWs3" id="7T8HsuTG3oQ" role="37wK5m">
               <node concept="2OqwBi" id="7T8HsuTG3oR" role="3uHU7w">
                 <node concept="37vLTw" id="7T8HsuTG3oS" role="2Oq$k0">
@@ -484,19 +484,18 @@
       <property role="TrG5h" value="getThenOperationName" />
       <node concept="3clFbS" id="7T8HsuTFRIW" role="3clF47">
         <node concept="3clFbF" id="7T8HsuTG3$0" role="3cqZAp">
-          <node concept="2YIFZM" id="7T8HsuTG3$1" role="3clFbG">
-            <ref role="37wK5l" to="18ew:~NameUtil.toValidIdentifier(java.lang.String)" resolve="toValidIdentifier" />
-            <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
-            <node concept="3cpWs3" id="7T8HsuTG3$2" role="37wK5m">
-              <node concept="2OqwBi" id="7T8HsuTG3$3" role="3uHU7w">
-                <node concept="37vLTw" id="7T8HsuTG3$4" role="2Oq$k0">
+          <node concept="1rXfSq" id="6RKU0s3pAdy" role="3clFbG">
+            <ref role="37wK5l" node="6RKU0s3ptv0" resolve="toValidIdentifier" />
+            <node concept="3cpWs3" id="6RKU0s3p_g6" role="37wK5m">
+              <node concept="2OqwBi" id="6RKU0s3p_g7" role="3uHU7w">
+                <node concept="37vLTw" id="6RKU0s3p_g8" role="2Oq$k0">
                   <ref role="3cqZAo" node="7T8HsuTFRIZ" resolve="node" />
                 </node>
-                <node concept="2qgKlT" id="7T8HsuTG3$5" role="2OqNvi">
+                <node concept="2qgKlT" id="6RKU0s3p_g9" role="2OqNvi">
                   <ref role="37wK5l" to="fwln:1srqdXUM70Z" resolve="toText" />
                 </node>
               </node>
-              <node concept="Xl_RD" id="7T8HsuTG3$6" role="3uHU7B">
+              <node concept="Xl_RD" id="6RKU0s3p_ga" role="3uHU7B">
                 <property role="Xl_RC" value="then " />
               </node>
             </node>
@@ -550,9 +549,8 @@
           </node>
         </node>
         <node concept="3clFbF" id="1srqdXUG5JO" role="3cqZAp">
-          <node concept="2YIFZM" id="1srqdXUG5JP" role="3clFbG">
-            <ref role="37wK5l" to="18ew:~NameUtil.toValidIdentifier(java.lang.String)" resolve="toValidIdentifier" />
-            <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+          <node concept="1rXfSq" id="6RKU0s3pyzW" role="3clFbG">
+            <ref role="37wK5l" node="6RKU0s3ptv0" resolve="toValidIdentifier" />
             <node concept="2OqwBi" id="1srqdXUG5JQ" role="37wK5m">
               <node concept="37vLTw" id="1srqdXUG5JR" role="2Oq$k0">
                 <ref role="3cqZAo" node="1srqdXUG5JV" resolve="testSuite" />
@@ -639,6 +637,37 @@
       <node concept="37vLTG" id="7T8HsuTFVQj" role="3clF46">
         <property role="TrG5h" value="genContext" />
         <node concept="1iwH7U" id="7T8HsuTFVTq" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2YIFZL" id="6RKU0s3ptv0" role="jymVt">
+      <property role="TrG5h" value="toValidIdentifier" />
+      <node concept="3clFbS" id="6RKU0s3ptv3" role="3clF47">
+        <node concept="3clFbF" id="6RKU0s3puAS" role="3cqZAp">
+          <node concept="2OqwBi" id="6RKU0s3pw3w" role="3clFbG">
+            <node concept="2YIFZM" id="6RKU0s3puAU" role="2Oq$k0">
+              <ref role="37wK5l" to="18ew:~NameUtil.toValidIdentifier(java.lang.String)" resolve="toValidIdentifier" />
+              <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+              <node concept="37vLTw" id="6RKU0s3puSZ" role="37wK5m">
+                <ref role="3cqZAo" node="6RKU0s3puut" resolve="name" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6RKU0s3pwP1" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
+              <node concept="Xl_RD" id="6RKU0s3px0X" role="37wK5m">
+                <property role="Xl_RC" value="__" />
+              </node>
+              <node concept="Xl_RD" id="6RKU0s3px_X" role="37wK5m">
+                <property role="Xl_RC" value="_" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6RKU0s3pt9o" role="1B3o_S" />
+      <node concept="17QB3L" id="6RKU0s3ptrw" role="3clF45" />
+      <node concept="37vLTG" id="6RKU0s3puut" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="6RKU0s3puus" role="1tU5fm" />
       </node>
     </node>
     <node concept="3Tm1VV" id="2evlxT94KqT" role="1B3o_S" />

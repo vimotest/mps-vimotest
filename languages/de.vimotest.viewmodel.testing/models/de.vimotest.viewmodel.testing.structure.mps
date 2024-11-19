@@ -1040,5 +1040,22 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6RKU0s0VjoB">
+    <property role="EcuMT" value="7922086861322663463" />
+    <property role="3GE5qa" value="test.context" />
+    <property role="TrG5h" value="XmlElementContext" />
+    <property role="34LRSv" value="xml element context" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="6RKU0s0VjoC" role="1TKVEi">
+      <property role="IQ2ns" value="7922086861322663464" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="xmlElement" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="iuxj:5M4a$b5iL2M" resolve="XmlElement" />
+    </node>
+    <node concept="PrWs8" id="6RKU0s0VjoD" role="PzmwI">
+      <ref role="PrY4T" node="2Yd1qrJOMZM" resolve="ITestScenarioContext" />
+    </node>
+  </node>
 </model>
 

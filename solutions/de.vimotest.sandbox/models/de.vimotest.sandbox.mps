@@ -17,7 +17,9 @@
         <property id="6666499814681415862" name="tagName" index="2pNNFO" />
         <child id="1622293396948928802" name="content" index="3o6s8t" />
       </concept>
-      <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG" />
+      <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG">
+        <property id="1622293396948953704" name="value" index="3o6i5n" />
+      </concept>
       <concept id="6786756355279841993" name="jetbrains.mps.core.xml.structure.XmlDocument" flags="ng" index="3rIKKV">
         <child id="6666499814681299055" name="rootElement" index="2pNm8H" />
       </concept>
@@ -154,6 +156,9 @@
       </concept>
       <concept id="5678667081004710962" name="de.vimotest.viewmodel.testing.structure.ViewWidgetCommandAction" flags="ng" index="3ucX6H">
         <reference id="5678667081004731049" name="widget" index="3ucQsQ" />
+      </concept>
+      <concept id="7922086861322663463" name="de.vimotest.viewmodel.testing.structure.XmlElementContext" flags="ng" index="1H7tSw">
+        <child id="7922086861322663464" name="xmlElement" index="1H7tSJ" />
       </concept>
       <concept id="4309178210352018146" name="de.vimotest.viewmodel.testing.structure.GivenDescriptionWithContext" flags="ng" index="1IbZgy">
         <child id="7445061853131768373" name="context" index="DUiTU" />
@@ -2477,7 +2482,7 @@
     <property role="3GE5qa" value="examples.login" />
     <ref role="30n1PB" node="17xw4ZmRb8p" resolve="LoginView" />
     <node concept="3LKzX3" id="17xw4ZmUI2t" role="30n1Qb">
-      <property role="TrG5h" value="Load View" />
+      <property role="TrG5h" value="Load View on empty context" />
       <node concept="1s$VFG" id="6fEYrkZxlQN" role="1s$QAY">
         <node concept="DUd5q" id="17xw4ZmUXTS" role="1s$QAM">
           <node concept="27s6xY" id="17xw4ZmUXTU" role="DUiS9">
@@ -2590,6 +2595,162 @@
       </node>
       <node concept="1IbZgy" id="2DSbB2zNDsy" role="DUd2K">
         <node concept="30l7Wy" id="2DSbB2zNDsx" role="DUiTU" />
+      </node>
+    </node>
+    <node concept="3LKzX3" id="6RKU0s0VjnJ" role="30n1Qb">
+      <property role="TrG5h" value="Load View on Pre-filled User-Preferences" />
+      <node concept="1s$VFG" id="6RKU0s0VjnK" role="1s$QAY">
+        <node concept="DUd5q" id="6RKU0s0VjnL" role="1s$QAM">
+          <node concept="27s6xY" id="6RKU0s0VjnM" role="DUiS9">
+            <ref role="27sXQn" node="17xw4ZmUI2u" resolve="LoadView" />
+          </node>
+        </node>
+        <node concept="DUd2R" id="6RKU0s0VjnT" role="1s$QAX">
+          <node concept="30nzp_" id="6RKU0s0VjnU" role="DUiSb">
+            <ref role="30nzpS" node="17xw4ZmRkJ0" resolve="Username" />
+            <node concept="UtuKh" id="6RKU0s0VjnV" role="30nDbQ">
+              <node concept="V3Zdv" id="6RKU0s0VjnW" role="UtuKg">
+                <property role="3egigc" value="User" />
+                <node concept="o7Kjd" id="6RKU0s0VjnX" role="oSbKM">
+                  <property role="o7K7r" value="Ada" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="6RKU0s0VjnY" role="1s$QAX">
+          <node concept="30nzp_" id="6RKU0s0VjnZ" role="DUiSb">
+            <ref role="30nzpS" node="17xw4ZmRWXv" resolve="Password" />
+            <node concept="UtuKh" id="6RKU0s0Vjo0" role="30nDbQ">
+              <node concept="V3Zdv" id="6RKU0s0Vjo1" role="UtuKg">
+                <property role="3egigc" value="MyPass123" />
+                <node concept="o7Kjd" id="6RKU0s0Vjo2" role="oSbKM">
+                  <property role="o7K7r" value="******" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="6RKU0s0Vjo3" role="1s$QAX">
+          <node concept="30nzp_" id="6RKU0s0Vjo4" role="DUiSb">
+            <ref role="30nzpS" node="17xw4ZmSY5X" resolve="Login" />
+            <node concept="2X2XOa" id="6RKU0s0Vjo5" role="30nDbQ">
+              <node concept="35STUl" id="6RKU0s0Vjo6" role="2X2XOb">
+                <property role="3XJMQh" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1s$VFG" id="6RKU0s1bfV_" role="1s$QAY">
+        <node concept="DUd5q" id="6RKU0s1bfVA" role="1s$QAM">
+          <node concept="27s6xY" id="6RKU0s1bfVB" role="DUiS9">
+            <ref role="27sXQn" node="17xw4ZmUI2u" resolve="LoadView" />
+          </node>
+        </node>
+        <node concept="DUd5q" id="6RKU0s1bfVQ" role="1s$QAM">
+          <node concept="Tef3P" id="6RKU0s1bfVS" role="DUiS9">
+            <property role="Te1Rl" value="true" />
+            <ref role="3ucQsQ" node="17xw4ZmSY66" resolve="ShowPassword" />
+          </node>
+        </node>
+        <node concept="DUd2R" id="6RKU0s1bfVC" role="1s$QAX">
+          <node concept="30nzp_" id="6RKU0s1bfVD" role="DUiSb">
+            <ref role="30nzpS" node="17xw4ZmRkJ0" resolve="Username" />
+            <node concept="UtuKh" id="6RKU0s1bfVE" role="30nDbQ">
+              <node concept="V3Zdv" id="6RKU0s1bfVF" role="UtuKg">
+                <property role="3egigc" value="User" />
+                <node concept="o7Kjd" id="6RKU0s1bfVG" role="oSbKM">
+                  <property role="o7K7r" value="Ada" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="6RKU0s1bfVH" role="1s$QAX">
+          <node concept="30nzp_" id="6RKU0s1bfVI" role="DUiSb">
+            <ref role="30nzpS" node="17xw4ZmRWXv" resolve="Password" />
+            <node concept="UtuKh" id="6RKU0s1bfVJ" role="30nDbQ">
+              <node concept="V3Zdv" id="6RKU0s1bfVK" role="UtuKg">
+                <property role="3egigc" value="MyPass123" />
+                <node concept="o7Kjd" id="6RKU0s1bfVL" role="oSbKM">
+                  <property role="o7K7r" value="Lovelace1" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="6RKU0s1bfVT" role="1s$QAX">
+          <node concept="30nzp_" id="6RKU0s1bfVV" role="DUiSb">
+            <ref role="30nzpS" node="17xw4ZmSY66" resolve="ShowPassword" />
+            <node concept="C4Fn6" id="6RKU0s1bfVW" role="30nDbQ">
+              <node concept="35STPD" id="6RKU0s1bfVX" role="C4Fn7">
+                <property role="35S$ZG" value="1EVo$X00Gbt/TRUE" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="6RKU0s1bfVM" role="1s$QAX">
+          <node concept="30nzp_" id="6RKU0s1bfVN" role="DUiSb">
+            <ref role="30nzpS" node="17xw4ZmSY5X" resolve="Login" />
+            <node concept="2X2XOa" id="6RKU0s1bfVO" role="30nDbQ">
+              <node concept="35STUl" id="6RKU0s1bfVP" role="2X2XOb">
+                <property role="3XJMQh" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1s$VFG" id="6RKU0s1bfVY" role="1s$QAY">
+        <node concept="DUd5q" id="6RKU0s1bfVZ" role="1s$QAM">
+          <node concept="27s6xY" id="6RKU0s1bfW0" role="DUiS9">
+            <ref role="27sXQn" node="17xw4ZmUI2u" resolve="LoadView" />
+          </node>
+        </node>
+        <node concept="DUd5q" id="6RKU0s1bfW1" role="1s$QAM">
+          <node concept="3eaLt2" id="6RKU0s1bfWm" role="DUiS9">
+            <property role="3fQinD" value="lovelace" />
+            <ref role="3ucQsQ" node="17xw4ZmRWXv" resolve="Password" />
+          </node>
+        </node>
+        <node concept="DUd5q" id="6RKU0s1bfWn" role="1s$QAM">
+          <node concept="3eaLt3" id="6RKU0s1bfWp" role="DUiS9">
+            <ref role="3ucQsQ" node="17xw4ZmSY5X" resolve="Login" />
+          </node>
+        </node>
+        <node concept="DUd2R" id="6RKU0s1bfWu" role="1s$QAX">
+          <node concept="30nzp_" id="6RKU0s1bfWq" role="DUiSb">
+            <ref role="30nzpS" node="17xw4ZmTXrv" resolve="ErrorText" />
+            <node concept="V3Zc6" id="6RKU0s1bfWr" role="30nDbQ">
+              <node concept="V3Zdv" id="6RKU0s1bfWs" role="V3Zc7">
+                <node concept="o7Kjd" id="6RKU0s1bfWt" role="oSbKM">
+                  <property role="o7K7r" value="Needs uppercase letters" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1IbZgy" id="6RKU0s0Vjos" role="DUd2K">
+        <node concept="1H7tSw" id="6RKU0s1bfVr" role="DUiTU">
+          <property role="TrG5h" value="prefilledValues" />
+          <node concept="2pNNFK" id="6RKU0s1bfVt" role="1H7tSJ">
+            <property role="2pNNFO" value="Prefs" />
+            <node concept="3o6iSG" id="6RKU0s1bfVv" role="3o6s8t" />
+            <node concept="2pNNFK" id="6RKU0s1bfVx" role="3o6s8t">
+              <property role="2pNNFO" value="User" />
+              <node concept="3o6iSG" id="6RKU0s1bfVy" role="3o6s8t">
+                <property role="3o6i5n" value="Ada" />
+              </node>
+            </node>
+            <node concept="2pNNFK" id="6RKU0s1bfVz" role="3o6s8t">
+              <property role="2pNNFO" value="Pw" />
+              <node concept="3o6iSG" id="6RKU0s1bfV$" role="3o6s8t">
+                <property role="3o6i5n" value="Lovelace1" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

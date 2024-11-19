@@ -6,6 +6,7 @@
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
+    <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing" version="0" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -19,8 +20,8 @@
     <import index="davt" ref="r:9d2fb39f-5375-4c80-8980-936f0533f829(generationAnnotations)" />
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
     <import index="fwln" ref="r:fb31fced-d3c6-408c-9dff-13efe5b49745(de.vimotest.viewmodel.testing.behavior)" implicit="true" />
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" implicit="true" />
@@ -129,6 +130,7 @@
       <concept id="6666499814681515200" name="jetbrains.mps.core.xml.structure.XmlFile" flags="ng" index="2pMbU2">
         <child id="6666499814681515201" name="document" index="2pMbU3" />
       </concept>
+      <concept id="6666499814681299053" name="jetbrains.mps.core.xml.structure.XmlBaseElement" flags="ng" index="2pNm8J" />
       <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
         <property id="6666499814681415862" name="tagName" index="2pNNFO" />
       </concept>
@@ -351,6 +353,12 @@
       </concept>
       <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
+    <language id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing">
+      <concept id="6903063968913110280" name="de.vimotest.viewmodel.testing.structure.XmlFileContext" flags="ng" index="1f4q$j">
+        <property id="6903063968914212503" name="generateAsFile" index="1f8DEc" />
+        <child id="6903063968913110295" name="xmlFile" index="1f4q$c" />
       </concept>
     </language>
     <language id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi">
@@ -586,6 +594,37 @@
       <ref role="30HIoZ" to="53m0:2Yd1qrJONfw" resolve="ViewWidgetCheck" />
       <node concept="j$656" id="7ceEXPSBsBz" role="1lVwrX">
         <ref role="v9R2y" node="7ceEXPSBrY4" resolve="reduce_ViewWidgetCheck" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="6RKU0s1eUoC" role="3acgRq">
+      <ref role="30HIoZ" to="53m0:6RKU0s0VjoB" resolve="XmlElementContext" />
+      <node concept="gft3U" id="6RKU0s1eUDj" role="1lVwrX">
+        <node concept="1f4q$j" id="6RKU0s1eUTo" role="gfFT$">
+          <property role="1f8DEc" value="true" />
+          <node concept="2pMbU2" id="6RKU0s1eUTp" role="1f4q$c">
+            <node concept="3rIKKV" id="6RKU0s1eUTq" role="2pMbU3">
+              <node concept="2pNm8J" id="6RKU0s1eUTr" role="2pNm8H">
+                <node concept="29HgVG" id="6RKU0s1eVck" role="lGtFl" />
+              </node>
+            </node>
+            <node concept="17Uvod" id="6RKU0s1eUTs" role="lGtFl">
+              <property role="2qtEX9" value="name" />
+              <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+              <node concept="3zFVjK" id="6RKU0s1eUTv" role="3zH0cK">
+                <node concept="3clFbS" id="6RKU0s1eUTw" role="2VODD2">
+                  <node concept="3clFbF" id="6RKU0s1eUTA" role="3cqZAp">
+                    <node concept="2OqwBi" id="6RKU0s1eUTx" role="3clFbG">
+                      <node concept="3TrcHB" id="6RKU0s1eUT$" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                      <node concept="30H73N" id="6RKU0s1eUT_" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3lhOvk" id="1srqdXUFWsT" role="3lj3bC">

@@ -3761,6 +3761,17 @@
       <node concept="PMmxH" id="4xJPu9gmTEt" role="3EZMnx">
         <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector" />
       </node>
+      <node concept="1iCGBv" id="6RKU0s3vwYA" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:4xJPu9gt$hE" resolve="defaultText" />
+        <node concept="1sVBvm" id="6RKU0s3vwYC" role="1sWHZn">
+          <node concept="PMmxH" id="6RKU0s3w_IG" role="2wV5jI">
+            <ref role="PMmxG" node="6RKU0s0yutQ" resolve="SingleOrMultiLineString_Inspector_EC" />
+          </node>
+        </node>
+        <node concept="pVoyu" id="6RKU0s3vxeO" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3EZMnI" id="4xJPu9gtA$2" role="3EZMnx">
         <node concept="3F0ifn" id="4xJPu9gtA$f" role="3EZMnx">
           <property role="3F0ifm" value="old_defaultText=" />

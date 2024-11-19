@@ -59,7 +59,9 @@
       <concept id="9155943921465570536" name="de.vimotest.viewmodel.testing.structure.WidgetListRowsCheckValue" flags="ng" index="1i$qk">
         <child id="8072781894854610736" name="rows" index="3o2WtG" />
       </concept>
-      <concept id="9155943921465570537" name="de.vimotest.viewmodel.testing.structure.SelectedRowCheckValue" flags="ng" index="1i$ql" />
+      <concept id="9155943921465570537" name="de.vimotest.viewmodel.testing.structure.SelectedRowCheckValue" flags="ng" index="1i$ql">
+        <child id="5345766027621731255" name="multipleRowHandles" index="12$n9m" />
+      </concept>
       <concept id="9155943921465570482" name="de.vimotest.viewmodel.testing.structure.ListViewCheck" flags="ng" index="1i$re">
         <child id="9155943921465570483" name="checks" index="1i$rf" />
       </concept>
@@ -139,7 +141,9 @@
         <property id="8996304390298037956" name="text" index="3fQinD" />
       </concept>
       <concept id="8996304390297115758" name="de.vimotest.viewmodel.testing.structure.ClickCommandAction" flags="ng" index="3eaLt3" />
-      <concept id="8996304390297115761" name="de.vimotest.viewmodel.testing.structure.SelectRowCommandAction" flags="ng" index="3eaLts" />
+      <concept id="8996304390297115761" name="de.vimotest.viewmodel.testing.structure.SelectRowCommandAction" flags="ng" index="3eaLts">
+        <child id="7922086861375317407" name="multipleRowHandles" index="1DS4Qo" />
+      </concept>
       <concept id="8996304390297115762" name="de.vimotest.viewmodel.testing.structure.SelectEntryCommandAction" flags="ng" index="3eaLtv">
         <property id="5922736771850278303" name="selectedEntryName" index="2qt_KD" />
       </concept>
@@ -359,6 +363,7 @@
         <property id="6327146089782817145" name="kind" index="34jNyx" />
       </concept>
       <concept id="4610291257172397388" name="de.vimotest.viewmodel.structure.UpdatingRowsFlagCustomFeature" flags="ng" index="3D8CoO" />
+      <concept id="7922086861375400165" name="de.vimotest.viewmodel.structure.RowHandleValue" flags="ng" index="1DSg3y" />
       <concept id="7922086861330453131" name="de.vimotest.viewmodel.structure.ToolTipFeature" flags="ng" index="1G_fEc">
         <property id="7922086861330458267" name="defaultToolTipText" index="1G_cUs" />
       </concept>
@@ -874,6 +879,30 @@
         </node>
         <node concept="C4FCg" id="6fEYrkZ6m5_" role="1i$o7" />
         <node concept="C4FCh" id="6fEYrkZ6m5B" role="1i$o0" />
+      </node>
+      <node concept="1i$o6" id="4CJYu48x152" role="103ZUC">
+        <property role="TrG5h" value="MyMultiRowSelectionList" />
+        <node concept="2nep4R" id="4CJYu48x153" role="2MLTWm">
+          <node concept="V3ZfZ" id="4CJYu48x154" role="2nerJI">
+            <property role="TrG5h" value="Header" />
+            <node concept="V3Zf6" id="4CJYu48x155" role="V3ZfK">
+              <node concept="o7Kjd" id="4CJYu48x156" role="o6p68" />
+            </node>
+            <node concept="C4FCh" id="4CJYu48x157" role="V3ZfL" />
+            <node concept="C4FCg" id="4CJYu48x158" role="V3ZfM" />
+            <node concept="1G_fEc" id="4CJYu48x159" role="1G_fIJ" />
+          </node>
+        </node>
+        <node concept="3KuuI3" id="4CJYu48x15b" role="1rSL7">
+          <node concept="3D8xT1" id="4CJYu48x15d" role="3D86r8" />
+          <node concept="3D8CoO" id="4CJYu48x15f" role="3D86r9" />
+        </node>
+        <node concept="1i$ol" id="4CJYu48x15h" role="1uGH_">
+          <property role="2VM7R0" value="true" />
+          <property role="1Imn4D" value="true" />
+        </node>
+        <node concept="C4FCg" id="4CJYu48x15j" role="1i$o7" />
+        <node concept="C4FCh" id="4CJYu48x15l" role="1i$o0" />
       </node>
     </node>
   </node>
@@ -1536,6 +1565,59 @@
               </node>
               <node concept="1i$ql" id="6fEYrkZ6m6c" role="1i$rf">
                 <property role="3_VSTZ" value="ROW1" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="4CJYu48xSdW" role="1s$QAX">
+          <node concept="30nzp_" id="4CJYu48xSdY" role="DUiSb">
+            <ref role="30nzpS" node="4CJYu48x152" resolve="MyMultiRowSelectionList" />
+            <node concept="1i$re" id="4CJYu48xSdZ" role="30nDbQ">
+              <node concept="1i$qk" id="4CJYu48xSe0" role="1i$rf">
+                <node concept="CNEhi" id="4CJYu48xSe1" role="3o2WtG">
+                  <node concept="1NuoHz" id="4CJYu48xSe2" role="CNE8S">
+                    <ref role="3elmOO" node="4CJYu48x154" resolve="Header" />
+                    <node concept="V3Zc6" id="4CJYu48xSe4" role="1NuoHy">
+                      <node concept="V3Zdv" id="4CJYu48xSe5" role="V3Zc7">
+                        <node concept="o7Kjd" id="4CJYu48xSe6" role="oSbKM">
+                          <property role="o7K7r" value="A" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="CNEhi" id="4CJYu48xSe7" role="3o2WtG">
+                  <node concept="1NuoHz" id="4CJYu48xSe8" role="CNE8S">
+                    <ref role="3elmOO" node="4CJYu48x154" resolve="Header" />
+                    <node concept="V3Zc6" id="4CJYu48xSea" role="1NuoHy">
+                      <node concept="V3Zdv" id="4CJYu48xSeb" role="V3Zc7">
+                        <node concept="o7Kjd" id="4CJYu48xSec" role="oSbKM">
+                          <property role="o7K7r" value="B" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="CNEhi" id="4CJYu48xSed" role="3o2WtG">
+                  <node concept="1NuoHz" id="4CJYu48xSee" role="CNE8S">
+                    <ref role="3elmOO" node="4CJYu48x154" resolve="Header" />
+                    <node concept="V3Zc6" id="4CJYu48xSeg" role="1NuoHy">
+                      <node concept="V3Zdv" id="4CJYu48xSeh" role="V3Zc7">
+                        <node concept="o7Kjd" id="4CJYu48xSei" role="oSbKM">
+                          <property role="o7K7r" value="C" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1i$ql" id="4CJYu48NTXn" role="1i$rf">
+                <node concept="1DSg3y" id="4CJYu48PLt4" role="12$n9m">
+                  <property role="3_VSTS" value="0" />
+                </node>
+                <node concept="1DSg3y" id="4CJYu48PLt6" role="12$n9m">
+                  <property role="3_VSTS" value="2" />
+                </node>
               </node>
             </node>
           </node>
@@ -2973,8 +3055,33 @@
         <node concept="C4FCh" id="6fEYrkZpD7U" role="3Vayhu" />
         <node concept="3Vw88G" id="6fEYrkZpD7W" role="2WEaAO" />
       </node>
+      <node concept="1i$o6" id="4CJYu48_Vxb" role="103ZUC">
+        <property role="TrG5h" value="MyIndexBasedMultiSelectRowListView" />
+        <node concept="2nep4R" id="4CJYu48_Vxc" role="2MLTWm">
+          <node concept="V3ZfZ" id="4CJYu48_Vxd" role="2nerJI">
+            <property role="TrG5h" value="Header" />
+            <node concept="V3Zf6" id="4CJYu48_Vxe" role="V3ZfK">
+              <node concept="o7Kjd" id="4CJYu48_Vxf" role="o6p68" />
+            </node>
+            <node concept="C4FCh" id="4CJYu48_Vxg" role="V3ZfL" />
+            <node concept="C4FCg" id="4CJYu48_Vxh" role="V3ZfM" />
+            <node concept="1G_fEc" id="4CJYu48_Vxi" role="1G_fIJ" />
+          </node>
+        </node>
+        <node concept="3KuuI3" id="4CJYu48_Vxj" role="1rSL7">
+          <node concept="3D8xT1" id="4CJYu48_Vxk" role="3D86r8" />
+          <node concept="3D8CoO" id="4CJYu48_Vxl" role="3D86r9" />
+        </node>
+        <node concept="1i$ol" id="4CJYu48_Vxm" role="1uGH_">
+          <property role="2VM7R0" value="true" />
+          <property role="1Imn4D" value="true" />
+        </node>
+        <node concept="C4FCg" id="4CJYu48_Vxn" role="1i$o7" />
+        <node concept="C4FCh" id="4CJYu48_Vxo" role="1i$o0" />
+        <node concept="3Vw88G" id="4CJYu48_Vxp" role="2WDutG" />
+      </node>
       <node concept="1i$o6" id="6RKU0s3Ep$o" role="103ZUC">
-        <property role="TrG5h" value="MyMultiSelectRowListView" />
+        <property role="TrG5h" value="MyStringHandleMultiSelectRowListView" />
         <node concept="2nep4R" id="6RKU0s3Ep$p" role="2MLTWm">
           <node concept="V3ZfZ" id="6RKU0s3Ep$q" role="2nerJI">
             <property role="TrG5h" value="Header" />
@@ -2987,7 +3094,9 @@
           </node>
         </node>
         <node concept="3KuuI3" id="6RKU0s3Ep$x" role="1rSL7">
-          <node concept="3D8xT1" id="6RKU0s3Ep$z" role="3D86r8" />
+          <node concept="3D8xT1" id="6RKU0s3Ep$z" role="3D86r8">
+            <property role="34jNyx" value="1RiAxJSewmn/StringRowHandle" />
+          </node>
           <node concept="3D8CoO" id="6RKU0s3Ep$_" role="3D86r9" />
         </node>
         <node concept="1i$ol" id="6RKU0s3Ep$B" role="1uGH_">
@@ -3279,6 +3388,70 @@
                         <property role="3egigc" value="B" />
                         <node concept="o7Kjd" id="6RKU0s0MwuE" role="oSbKM">
                           <property role="o7K7r" value="B" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="4CJYu48_VwT" role="30n1Qb">
+      <property role="TrG5h" value="Select Multiple Rows" />
+      <node concept="1s$VFG" id="4CJYu48_VwU" role="1s$QAY">
+        <node concept="DUd5q" id="4CJYu48_VwV" role="1s$QAM">
+          <node concept="3eaLts" id="4CJYu48AUvD" role="DUiS9">
+            <ref role="3ucQsQ" node="6RKU0s3Ep$o" resolve="MyStringHandleMultiSelectRowListView" />
+            <node concept="1DSg3y" id="4CJYu48FDhj" role="1DS4Qo">
+              <property role="3_VSTZ" value="ROW_A" />
+            </node>
+            <node concept="1DSg3y" id="4CJYu48GJTO" role="1DS4Qo">
+              <property role="3_VSTZ" value="ROW_C" />
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="4CJYu48_VwX" role="1s$QAX">
+          <node concept="30nzp_" id="4CJYu48_VwY" role="DUiSb">
+            <ref role="30nzpS" node="6RKU0s3Ep$o" resolve="MyStringHandleMultiSelectRowListView" />
+            <node concept="1i$re" id="4CJYu48GJTl" role="30nDbQ">
+              <node concept="1i$qk" id="4CJYu48GJTm" role="1i$rf">
+                <node concept="CNEhi" id="4CJYu48GJTz" role="3o2WtG">
+                  <property role="3_VSTZ" value="ROW_A" />
+                  <node concept="1NuoHz" id="4CJYu48GJT$" role="CNE8S">
+                    <ref role="3elmOO" node="6RKU0s3Ep$q" resolve="Header" />
+                    <node concept="V3Zc6" id="4CJYu48GJTA" role="1NuoHy">
+                      <node concept="V3Zdv" id="4CJYu48GJTB" role="V3Zc7">
+                        <node concept="o7Kjd" id="4CJYu48GJTC" role="oSbKM">
+                          <property role="o7K7r" value="A" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="CNEhi" id="4CJYu48GJTD" role="3o2WtG">
+                  <property role="3_VSTZ" value="ROW_B" />
+                  <node concept="1NuoHz" id="4CJYu48GJTE" role="CNE8S">
+                    <ref role="3elmOO" node="6RKU0s3Ep$q" resolve="Header" />
+                    <node concept="V3Zc6" id="4CJYu48GJTG" role="1NuoHy">
+                      <node concept="V3Zdv" id="4CJYu48GJTH" role="V3Zc7">
+                        <node concept="o7Kjd" id="4CJYu48GJTI" role="oSbKM">
+                          <property role="o7K7r" value="B" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="CNEhi" id="4CJYu48GJTJ" role="3o2WtG">
+                  <property role="3_VSTZ" value="ROW_C" />
+                  <node concept="1NuoHz" id="4CJYu48GJTK" role="CNE8S">
+                    <ref role="3elmOO" node="6RKU0s3Ep$q" resolve="Header" />
+                    <node concept="V3Zc6" id="4CJYu48GJTL" role="1NuoHy">
+                      <node concept="V3Zdv" id="4CJYu48GJTM" role="V3Zc7">
+                        <node concept="o7Kjd" id="4CJYu48GJTN" role="oSbKM">
+                          <property role="o7K7r" value="C" />
                         </node>
                       </node>
                     </node>

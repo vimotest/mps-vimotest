@@ -568,6 +568,13 @@
     <property role="34LRSv" value="selected row" />
     <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="1TJgyj" id="4CJYu48JCIR" role="1TKVEi">
+      <property role="IQ2ns" value="5345766027621731255" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="multipleRowHandles" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="at53:6RKU0s44uz_" resolve="RowHandleValue" />
+    </node>
     <node concept="PrWs8" id="1RiAxJSher9" role="PzmwI">
       <ref role="PrY4T" to="at53:1RiAxJSewmp" resolve="IHasRowHandle" />
     </node>

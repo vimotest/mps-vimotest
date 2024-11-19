@@ -861,5 +861,37 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="4CJYu48JRll">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1M2myG" to="53m0:7WgsBLYmzjD" resolve="SelectedRowCheckValue" />
+    <node concept="9SLcT" id="4CJYu48JRHV" role="9SGkU">
+      <node concept="3clFbS" id="4CJYu48JRHW" role="2VODD2">
+        <node concept="3clFbJ" id="4CJYu48JRVs" role="3cqZAp">
+          <node concept="17R0WA" id="4CJYu48JRVt" role="3clFbw">
+            <node concept="359W_D" id="4CJYu48JRVu" role="3uHU7w">
+              <ref role="359W_E" to="53m0:7WgsBLYmzjD" resolve="SelectedRowCheckValue" />
+              <ref role="359W_F" to="53m0:4CJYu48JCIR" />
+            </node>
+            <node concept="2DA6wF" id="4CJYu48JRVv" role="3uHU7B" />
+          </node>
+          <node concept="3clFbS" id="4CJYu48JRVw" role="3clFbx">
+            <node concept="3cpWs6" id="4CJYu48JRVx" role="3cqZAp">
+              <node concept="2OqwBi" id="4CJYu48JRVy" role="3cqZAk">
+                <node concept="EsrRn" id="4CJYu48JRVz" role="2Oq$k0" />
+                <node concept="2qgKlT" id="4CJYu48JRV$" role="2OqNvi">
+                  <ref role="37wK5l" to="fwln:4CJYu48JJ7v" resolve="isSelectMultipleRows" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4CJYu48JRV_" role="3cqZAp">
+          <node concept="3clFbT" id="4CJYu48JRVA" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

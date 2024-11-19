@@ -1286,14 +1286,53 @@
       <node concept="3F0ifn" id="5L3DBX$oEYr" role="wsdo6">
         <property role="3F0ifm" value="supports is checked" />
       </node>
-      <node concept="3F0ifn" id="5L3DBX$oEYs" role="1j7Clw">
-        <property role="3F0ifm" value="C" />
-        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
-        <node concept="Veino" id="5L3DBX$oEYt" role="3F10Kt">
-          <property role="Vb096" value="hGRnIZc/lightBlue" />
+      <node concept="3EZMnI" id="4CJYu48x3TQ" role="1j7Clw">
+        <node concept="2iRfu4" id="4CJYu48x3TR" role="2iSdaV" />
+        <node concept="3F0ifn" id="5L3DBX$oEYs" role="3EZMnx">
+          <property role="3F0ifm" value="C" />
+          <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
+          <node concept="Veino" id="5L3DBX$oEYt" role="3F10Kt">
+            <property role="Vb096" value="hGRnIZc/lightBlue" />
+          </node>
+          <node concept="VechU" id="5L3DBX$oEYu" role="3F10Kt">
+            <property role="Vb096" value="6cZGtrcKCoS/black" />
+          </node>
+          <node concept="pkWqt" id="4CJYu48x3TV" role="pqm2j">
+            <node concept="3clFbS" id="4CJYu48x3TW" role="2VODD2">
+              <node concept="3clFbF" id="4CJYu48x47y" role="3cqZAp">
+                <node concept="3fqX7Q" id="4CJYu48x5cz" role="3clFbG">
+                  <node concept="2OqwBi" id="4CJYu48x5c_" role="3fr31v">
+                    <node concept="pncrf" id="4CJYu48x5cA" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="4CJYu48x5cB" role="2OqNvi">
+                      <ref role="3TsBF5" to="at53:1EVo$X00MI7" resolve="supportsTriState" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
-        <node concept="VechU" id="5L3DBX$oEYu" role="3F10Kt">
-          <property role="Vb096" value="6cZGtrcKCoS/black" />
+        <node concept="3F0ifn" id="4CJYu48x3TS" role="3EZMnx">
+          <property role="3F0ifm" value="C?" />
+          <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
+          <node concept="Veino" id="4CJYu48x3TT" role="3F10Kt">
+            <property role="Vb096" value="hGRnIZc/lightBlue" />
+          </node>
+          <node concept="VechU" id="4CJYu48x3TU" role="3F10Kt">
+            <property role="Vb096" value="6cZGtrcKCoS/black" />
+          </node>
+          <node concept="pkWqt" id="4CJYu48x5sB" role="pqm2j">
+            <node concept="3clFbS" id="4CJYu48x5sC" role="2VODD2">
+              <node concept="3clFbF" id="4CJYu48x5sE" role="3cqZAp">
+                <node concept="2OqwBi" id="4CJYu48x6zJ" role="3clFbG">
+                  <node concept="pncrf" id="4CJYu48x67v" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="4CJYu48x7b6" role="2OqNvi">
+                    <ref role="3TsBF5" to="at53:1EVo$X00MI7" resolve="supportsTriState" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -1925,14 +1964,53 @@
       <node concept="3F0ifn" id="7WgsBLYmzhQ" role="wsdo6">
         <property role="3F0ifm" value="supports selected row" />
       </node>
-      <node concept="3F0ifn" id="7WgsBLYmzhR" role="1j7Clw">
-        <property role="3F0ifm" value="s" />
-        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
-        <node concept="Veino" id="7WgsBLYmzhS" role="3F10Kt">
-          <property role="Vb096" value="fLwANPp/orange" />
+      <node concept="3EZMnI" id="4CJYu48x1pH" role="1j7Clw">
+        <node concept="2iRfu4" id="4CJYu48x1pI" role="2iSdaV" />
+        <node concept="3F0ifn" id="7WgsBLYmzhR" role="3EZMnx">
+          <property role="3F0ifm" value="s" />
+          <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
+          <node concept="Veino" id="7WgsBLYmzhS" role="3F10Kt">
+            <property role="Vb096" value="fLwANPp/orange" />
+          </node>
+          <node concept="VechU" id="7WgsBLYmzhT" role="3F10Kt">
+            <property role="Vb096" value="6cZGtrcKCoS/black" />
+          </node>
+          <node concept="pkWqt" id="4CJYu48x1pM" role="pqm2j">
+            <node concept="3clFbS" id="4CJYu48x1pN" role="2VODD2">
+              <node concept="3clFbF" id="4CJYu48x1pV" role="3cqZAp">
+                <node concept="3fqX7Q" id="4CJYu48x2xc" role="3clFbG">
+                  <node concept="2OqwBi" id="4CJYu48x2xe" role="3fr31v">
+                    <node concept="pncrf" id="4CJYu48x2xf" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="4CJYu48x2xg" role="2OqNvi">
+                      <ref role="3TsBF5" to="at53:6RKU0s3Ep$I" resolve="supportMultipleSelectedRows" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
-        <node concept="VechU" id="7WgsBLYmzhT" role="3F10Kt">
-          <property role="Vb096" value="6cZGtrcKCoS/black" />
+        <node concept="3F0ifn" id="4CJYu48x1pJ" role="3EZMnx">
+          <property role="3F0ifm" value="s*" />
+          <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
+          <node concept="Veino" id="4CJYu48x1pK" role="3F10Kt">
+            <property role="Vb096" value="fLwANPp/orange" />
+          </node>
+          <node concept="VechU" id="4CJYu48x1pL" role="3F10Kt">
+            <property role="Vb096" value="6cZGtrcKCoS/black" />
+          </node>
+          <node concept="pkWqt" id="4CJYu48x2y7" role="pqm2j">
+            <node concept="3clFbS" id="4CJYu48x2y8" role="2VODD2">
+              <node concept="3clFbF" id="4CJYu48x2JI" role="3cqZAp">
+                <node concept="2OqwBi" id="4CJYu48x3aT" role="3clFbG">
+                  <node concept="pncrf" id="4CJYu48x2JH" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="4CJYu48x3pQ" role="2OqNvi">
+                    <ref role="3TsBF5" to="at53:6RKU0s3Ep$I" resolve="supportMultipleSelectedRows" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

@@ -1057,5 +1057,20 @@
       <ref role="PrY4T" node="2Yd1qrJOMZM" resolve="ITestScenarioContext" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6RKU0s1p1ak">
+    <property role="EcuMT" value="7922086861330453140" />
+    <property role="TrG5h" value="ToolTipCheckValue" />
+    <property role="34LRSv" value="tooltip" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="1TJgyi" id="6RKU0s2F2d$" role="1TKVEl">
+      <property role="IQ2nx" value="7922086861351953252" />
+      <property role="TrG5h" value="expectedToolTipText" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="6RKU0s1p1al" role="PzmwI">
+      <ref role="PrY4T" node="7H4Lpx0iNqj" resolve="ILabelCheckValue" />
+    </node>
+  </node>
 </model>
 

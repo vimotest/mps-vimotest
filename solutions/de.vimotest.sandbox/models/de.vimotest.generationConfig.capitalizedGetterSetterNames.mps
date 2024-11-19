@@ -56,6 +56,7 @@
         <child id="8882441622785832552" name="textFeature" index="V3ZfK" />
         <child id="8882441622785832553" name="enabledFeature" index="V3ZfL" />
         <child id="8882441622785832554" name="visibilityFeature" index="V3ZfM" />
+        <child id="7922086861330453416" name="toolTipFeature" index="1G_fIJ" />
       </concept>
       <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommands" flags="ng" index="103ZXx" />
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
@@ -75,6 +76,7 @@
       </concept>
       <concept id="4610291257172366649" name="de.vimotest.viewmodel.structure.RowHandleCustomFeature" flags="ng" index="3D8xT1" />
       <concept id="4610291257172397388" name="de.vimotest.viewmodel.structure.UpdatingRowsFlagCustomFeature" flags="ng" index="3D8CoO" />
+      <concept id="7922086861330453131" name="de.vimotest.viewmodel.structure.ToolTipFeature" flags="ng" index="1G_fEc" />
       <concept id="2690363995917909071" name="de.vimotest.viewmodel.structure.WidgetListRowsFeature" flags="ng" index="3KuuI3" />
     </language>
   </registry>
@@ -117,6 +119,7 @@
             </node>
             <node concept="C4FCh" id="3em85dStvTO" role="V3ZfL" />
             <node concept="C4FCg" id="3em85dStvTP" role="V3ZfM" />
+            <node concept="1G_fEc" id="6RKU0s20RmZ" role="1G_fIJ" />
           </node>
         </node>
         <node concept="3KuuI3" id="3em85dStvTR" role="1rSL7">

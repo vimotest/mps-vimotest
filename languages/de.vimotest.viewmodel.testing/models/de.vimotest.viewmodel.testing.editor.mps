@@ -24,9 +24,9 @@
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" />
     <import index="hdif" ref="r:358d5e99-ca53-4b21-ba6f-a58c1c8e0993(de.vimotest.mpswidgets.behavior)" />
     <import index="fwln" ref="r:fb31fced-d3c6-408c-9dff-13efe5b49745(de.vimotest.viewmodel.testing.behavior)" />
+    <import index="czmc" ref="r:8266d71c-f637-42a4-b405-9d6e3c00f282(de.vimotest.viewmodel.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="dgt9" ref="r:a46eceb8-d68d-4f8d-a755-6da4c2f592cc(de.vimotest.types.editor)" implicit="true" />
-    <import index="czmc" ref="r:8266d71c-f637-42a4-b405-9d6e3c00f282(de.vimotest.viewmodel.editor)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
@@ -69,8 +69,12 @@
       <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+        <child id="2597348684684069742" name="contextHints" index="CpUAK" />
       </concept>
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
+      <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
+        <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
+      </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
@@ -5552,6 +5556,34 @@
         <ref role="1NtTu8" to="53m0:6RKU0s0VjoC" />
       </node>
       <node concept="2iRfu4" id="6RKU0s0VjL4" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="6RKU0s1p1am">
+    <property role="TrG5h" value="ToolTipCheckValue_expectationCell_EC" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1XX52x" to="53m0:6RKU0s1p1ak" resolve="ToolTipCheckValue" />
+    <node concept="1PE4EZ" id="6RKU0s1p1ao" role="1PM95z">
+      <ref role="1PE7su" node="55YtzNami8N" resolve="WidgetFeatureCheckValue_expectationCell_EC" />
+    </node>
+    <node concept="3EZMnI" id="6RKU0s1p1ap" role="2wV5jI">
+      <node concept="3F0ifn" id="6RKU0s1p1aq" role="3EZMnx">
+        <property role="3F0ifm" value="shows tooltip" />
+        <ref role="1k5W1q" node="55YtzNatuDs" />
+      </node>
+      <node concept="3F0A7n" id="6RKU0s2F2d_" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:6RKU0s2F2d$" resolve="expectedToolTipText" />
+      </node>
+      <node concept="2iRfu4" id="6RKU0s1p1as" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6RKU0s2MLFS">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1XX52x" to="53m0:6RKU0s1p1ak" resolve="ToolTipCheckValue" />
+    <node concept="3F0A7n" id="6RKU0s2MLS4" role="2wV5jI">
+      <ref role="1NtTu8" to="53m0:6RKU0s2F2d$" resolve="expectedToolTipText" />
+    </node>
+    <node concept="2aJ2om" id="6RKU0s2MLS3" role="CpUAK">
+      <ref role="2$4xQ3" to="czmc:6RKU0s27aXE" resolve="ToolTipFeature_ShowToolTip" />
     </node>
   </node>
 </model>

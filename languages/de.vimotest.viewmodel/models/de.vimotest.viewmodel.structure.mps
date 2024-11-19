@@ -354,6 +354,13 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4SDJcZBNVBT" resolve="VisibilityFeature" />
     </node>
+    <node concept="1TJgyj" id="6RKU0s1p1eC" role="1TKVEi">
+      <property role="IQ2ns" value="7922086861330453416" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="toolTipFeature" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6RKU0s1p1ab" resolve="ToolTipFeature" />
+    </node>
     <node concept="PrWs8" id="3c$pnH1eH9b" role="PzmwI">
       <ref role="PrY4T" node="3c$pnH1eja4" resolve="ISingleOrMultiLineStringSupport" />
     </node>
@@ -1319,6 +1326,18 @@
     <property role="EcuMT" value="3685181975145558660" />
     <property role="3GE5qa" value="util.values" />
     <property role="TrG5h" value="ISingleOrMultiLineStringSupport" />
+  </node>
+  <node concept="1TIwiD" id="6RKU0s1p1ab">
+    <property role="EcuMT" value="7922086861330453131" />
+    <property role="TrG5h" value="ToolTipFeature" />
+    <property role="34LRSv" value="tooltip" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
+    <node concept="1TJgyi" id="6RKU0s1p2qr" role="1TKVEl">
+      <property role="IQ2nx" value="7922086861330458267" />
+      <property role="TrG5h" value="defaultToolTipText" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 

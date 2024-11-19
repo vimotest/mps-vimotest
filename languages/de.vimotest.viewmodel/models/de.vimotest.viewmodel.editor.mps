@@ -1452,6 +1452,9 @@
       <node concept="3F1sOY" id="7H4Lpx0iNpM" role="3EZMnx">
         <ref role="1NtTu8" to="at53:7H4Lpx0iNpE" resolve="visibilityFeature" />
       </node>
+      <node concept="3F1sOY" id="6RKU0s1p1eD" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:6RKU0s1p1eC" />
+      </node>
     </node>
   </node>
   <node concept="PKFIW" id="3pKiF2wNf4F">
@@ -2012,6 +2015,9 @@
     <property role="TrG5h" value="ViMoTestContextHints" />
     <node concept="2BsEeg" id="K_fAvR65uJ" role="2ABdcP">
       <property role="TrG5h" value="ViewWidget_EmbeddedInspector_Hint" />
+    </node>
+    <node concept="2BsEeg" id="6RKU0s27aXE" role="2ABdcP">
+      <property role="TrG5h" value="ToolTipFeature_ShowToolTip" />
     </node>
   </node>
   <node concept="24kQdi" id="K_fAvR65MS">
@@ -3755,17 +3761,6 @@
       <node concept="PMmxH" id="4xJPu9gmTEt" role="3EZMnx">
         <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector" />
       </node>
-      <node concept="1iCGBv" id="6RKU0s0yuH_" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:4xJPu9gt$hE" resolve="defaultText" />
-        <node concept="1sVBvm" id="6RKU0s0yuHC" role="1sWHZn">
-          <node concept="PMmxH" id="6RKU0s0yuXP" role="2wV5jI">
-            <ref role="PMmxG" node="6RKU0s0yutQ" resolve="SingleOrMultiLineString_Inspector_EC" />
-          </node>
-        </node>
-        <node concept="pVoyu" id="6RKU0s0yuXQ" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="3EZMnI" id="4xJPu9gtA$2" role="3EZMnx">
         <node concept="3F0ifn" id="4xJPu9gtA$f" role="3EZMnx">
           <property role="3F0ifm" value="old_defaultText=" />
@@ -3864,6 +3859,106 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="6RKU0s1p1ac">
+    <property role="TrG5h" value="ToolTipFeature_Indication_EC" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1XX52x" to="at53:6RKU0s1p1ab" resolve="ToolTipFeature" />
+    <node concept="1PE4EZ" id="6RKU0s1p1ae" role="1PM95z">
+      <ref role="1PE7su" node="L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
+    </node>
+    <node concept="1v6uyg" id="6RKU0s1p1af" role="2wV5jI">
+      <property role="2oejA6" value="true" />
+      <node concept="3F0ifn" id="6RKU0s1p1ag" role="wsdo6">
+        <property role="3F0ifm" value="supports tooltip" />
+      </node>
+      <node concept="3F0ifn" id="6RKU0s1p1ah" role="1j7Clw">
+        <property role="3F0ifm" value="t" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" />
+        <node concept="Veino" id="6RKU0s1p1ai" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+        <node concept="VechU" id="6RKU0s1p1aj" role="3F10Kt">
+          <property role="Vb096" value="6cZGtrcKCoS/black" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6RKU0s1p3jB">
+    <property role="3GE5qa" value="features" />
+    <ref role="1XX52x" to="at53:6RKU0s1p1ab" resolve="ToolTipFeature" />
+    <node concept="3EZMnI" id="6RKU0s1p3vM" role="2wV5jI">
+      <node concept="PMmxH" id="6RKU0s1p3vR" role="3EZMnx">
+        <ref role="PMmxG" node="9CTo7lmDcx" resolve="ViewWidgetFeature_Supported_EC" />
+      </node>
+      <node concept="3EZMnI" id="6RKU0s20Rne" role="3EZMnx">
+        <node concept="pVoyu" id="6RKU0s1p3vY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="2iRfu4" id="6RKU0s20Rnf" role="2iSdaV" />
+        <node concept="3F0ifn" id="6RKU0s1p3vT" role="3EZMnx">
+          <property role="3F0ifm" value="tooltip default:" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        </node>
+        <node concept="3F0A7n" id="6RKU0s1p3vW" role="3EZMnx">
+          <ref role="1NtTu8" to="at53:6RKU0s1p2qr" resolve="defaultToolTipText" />
+        </node>
+        <node concept="pkWqt" id="6RKU0s20Rng" role="pqm2j">
+          <node concept="3clFbS" id="6RKU0s20Rnh" role="2VODD2">
+            <node concept="3clFbF" id="6RKU0s20Rnp" role="3cqZAp">
+              <node concept="2OqwBi" id="6RKU0s20RLE" role="3clFbG">
+                <node concept="pncrf" id="6RKU0s20Rno" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6RKU0s20SbX" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:4OohpJQO3xr" resolve="supported" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6RKU0s1p3vP" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="6RKU0s2Dbr5" role="6VMZX">
+      <node concept="l2Vlx" id="6RKU0s2Dbr6" role="2iSdaV" />
+      <node concept="PMmxH" id="6RKU0s1p3vQ" role="3EZMnx">
+        <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector" />
+      </node>
+      <node concept="3EZMnI" id="6RKU0s2DbEX" role="3EZMnx">
+        <node concept="pVoyu" id="6RKU0s2DbEY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="2iRfu4" id="6RKU0s2DbEZ" role="2iSdaV" />
+        <node concept="3F0ifn" id="6RKU0s2DbF0" role="3EZMnx">
+          <property role="3F0ifm" value="tooltip default:" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        </node>
+        <node concept="3F0A7n" id="6RKU0s2DbF1" role="3EZMnx">
+          <ref role="1NtTu8" to="at53:6RKU0s1p2qr" resolve="defaultToolTipText" />
+        </node>
+        <node concept="pkWqt" id="6RKU0s2DbF2" role="pqm2j">
+          <node concept="3clFbS" id="6RKU0s2DbF3" role="2VODD2">
+            <node concept="3clFbF" id="6RKU0s2DbF4" role="3cqZAp">
+              <node concept="2OqwBi" id="6RKU0s2DbF5" role="3clFbG">
+                <node concept="pncrf" id="6RKU0s2DbF6" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6RKU0s2DbF7" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:4OohpJQO3xr" resolve="supported" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6RKU0s1DgOQ">
+    <property role="3GE5qa" value="features" />
+    <ref role="1XX52x" to="at53:6RKU0s1p1ab" resolve="ToolTipFeature" />
+    <node concept="3F0A7n" id="6RKU0s1Dh12" role="2wV5jI">
+      <ref role="1NtTu8" to="at53:6RKU0s1p2qr" resolve="defaultToolTipText" />
+    </node>
+    <node concept="2aJ2om" id="6RKU0s1Dh11" role="CpUAK">
+      <ref role="2$4xQ3" node="6RKU0s27aXE" resolve="ToolTipFeature_ShowToolTip" />
     </node>
   </node>
 </model>

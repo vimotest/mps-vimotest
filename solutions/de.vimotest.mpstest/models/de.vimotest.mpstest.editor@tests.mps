@@ -113,6 +113,7 @@
         <child id="8882441622785832552" name="textFeature" index="V3ZfK" />
         <child id="8882441622785832553" name="enabledFeature" index="V3ZfL" />
         <child id="8882441622785832554" name="visibilityFeature" index="V3ZfM" />
+        <child id="7922086861330453416" name="toolTipFeature" index="1G_fIJ" />
       </concept>
       <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommands" flags="ng" index="103ZXx" />
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
@@ -120,6 +121,7 @@
         <child id="777152910168882975" name="viewModelData" index="103ZXF" />
       </concept>
       <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelData" flags="ng" index="103ZXB" />
+      <concept id="7922086861330453131" name="de.vimotest.viewmodel.structure.ToolTipFeature" flags="ng" index="1G_fEc" />
     </language>
   </registry>
   <node concept="LiM7Y" id="7kmE6cdCkq7">
@@ -223,6 +225,7 @@
         </node>
         <node concept="C4FCh" id="7kmE6cdCugf" role="V3ZfL" />
         <node concept="C4FCg" id="7kmE6cdCugg" role="V3ZfM" />
+        <node concept="1G_fEc" id="6RKU0s20Rn0" role="1G_fIJ" />
       </node>
     </node>
   </node>

@@ -10502,6 +10502,32 @@
       </node>
       <node concept="17QB3L" id="7T8HsuTzbig" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="6RKU0s44kov" role="13h7CS">
+      <property role="TrG5h" value="isSelectMultipleRows" />
+      <node concept="3Tm1VV" id="6RKU0s44kow" role="1B3o_S" />
+      <node concept="10P_77" id="6RKU0s44kw8" role="3clF45" />
+      <node concept="3clFbS" id="6RKU0s44koy" role="3clF47">
+        <node concept="3clFbF" id="6RKU0s44kwF" role="3cqZAp">
+          <node concept="2OqwBi" id="6RKU0s44m2o" role="3clFbG">
+            <node concept="1PxgMI" id="6RKU0s44lBf" role="2Oq$k0">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="6RKU0s44lGX" role="3oSUPX">
+                <ref role="cht4Q" to="at53:6kjlgUu$Xsy" resolve="SelectRowCommand" />
+              </node>
+              <node concept="2OqwBi" id="6RKU0s44kJy" role="1m5AlR">
+                <node concept="13iPFW" id="6RKU0s44kwE" role="2Oq$k0" />
+                <node concept="2qgKlT" id="6RKU0s44kXf" role="2OqNvi">
+                  <ref role="37wK5l" node="7T8HsuTTjmT" resolve="getCommand" />
+                </node>
+              </node>
+            </node>
+            <node concept="2qgKlT" id="6RKU0s44mky" role="2OqNvi">
+              <ref role="37wK5l" to="nrs2:6RKU0s3Evku" resolve="isSelectMultipleRows" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="7NpiMQMZpVT">
     <property role="TrG5h" value="SelectEntryCommandAction_Behavior" />

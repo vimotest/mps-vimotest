@@ -84,6 +84,7 @@
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
+      <concept id="6702802731807420587" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAParent" flags="ig" index="9SLcT" />
       <concept id="6702802731807424858" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAnAncestor" flags="in" index="9SQb8" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
@@ -109,6 +110,7 @@
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="6702802731807532730" name="canBeAncestor" index="9SGkC" />
+        <child id="6702802731807532712" name="canBeParent" index="9SGkU" />
         <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213098023997" name="property" index="1MhHOB" />
         <child id="1213100494875" name="referent" index="1Mr941" />
@@ -824,6 +826,38 @@
       </node>
       <node concept="1LLf8_" id="5ZcB1GgRw5E" role="1LXaQT">
         <node concept="3clFbS" id="5ZcB1GgRw5F" role="2VODD2" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6RKU0s44amw">
+    <property role="3GE5qa" value="test.actions" />
+    <ref role="1M2myG" to="53m0:7NpiMQMW_LL" resolve="SelectRowCommandAction" />
+    <node concept="9SLcT" id="6RKU0s44ayE" role="9SGkU">
+      <node concept="3clFbS" id="6RKU0s44ayF" role="2VODD2">
+        <node concept="3clFbJ" id="6RKU0s44aLa" role="3cqZAp">
+          <node concept="17R0WA" id="6RKU0s44eSz" role="3clFbw">
+            <node concept="359W_D" id="6RKU0s44fHI" role="3uHU7w">
+              <ref role="359W_E" to="53m0:7NpiMQMW_LL" resolve="SelectRowCommandAction" />
+              <ref role="359W_F" to="53m0:6RKU0s44amv" />
+            </node>
+            <node concept="2DA6wF" id="6RKU0s44aLI" role="3uHU7B" />
+          </node>
+          <node concept="3clFbS" id="6RKU0s44aLc" role="3clFbx">
+            <node concept="3cpWs6" id="6RKU0s44h8n" role="3cqZAp">
+              <node concept="2OqwBi" id="6RKU0s44jbl" role="3cqZAk">
+                <node concept="EsrRn" id="6RKU0s44hmp" role="2Oq$k0" />
+                <node concept="2qgKlT" id="6RKU0s44n67" role="2OqNvi">
+                  <ref role="37wK5l" to="fwln:6RKU0s44kov" resolve="isSelectMultipleRows" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6RKU0s44gSF" role="3cqZAp">
+          <node concept="3clFbT" id="6RKU0s44gSE" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

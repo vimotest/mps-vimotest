@@ -1807,9 +1807,23 @@
           </node>
           <node concept="3EZMnI" id="9CTo7lmDcI" role="2fqkNU">
             <node concept="2iRfu4" id="9CTo7lmDcJ" role="2iSdaV" />
-            <node concept="PMmxH" id="9CTo7lmDcK" role="3EZMnx">
-              <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-              <node concept="VPM3Z" id="9CTo7lmDcL" role="3F10Kt" />
+            <node concept="1HlG4h" id="6RKU0s3M1Uk" role="3EZMnx">
+              <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+              <node concept="VPM3Z" id="6RKU0s3M5rJ" role="3F10Kt" />
+              <node concept="1HfYo3" id="6RKU0s3M1Um" role="1HlULh">
+                <node concept="3TQlhw" id="6RKU0s3M1Uo" role="1Hhtcw">
+                  <node concept="3clFbS" id="6RKU0s3M1Uq" role="2VODD2">
+                    <node concept="3clFbF" id="6RKU0s3M4fE" role="3cqZAp">
+                      <node concept="2OqwBi" id="6RKU0s3M4FE" role="3clFbG">
+                        <node concept="pncrf" id="6RKU0s3M4fD" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="6RKU0s3M56$" role="2OqNvi">
+                          <ref role="37wK5l" to="nrs2:6RKU0s3M2ca" resolve="getWidgetDisplayName" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="1QoScp" id="6k2oWGbZTXE" role="3EZMnx">
               <property role="1QpmdY" value="true" />
@@ -1840,9 +1854,23 @@
         </node>
         <node concept="3EZMnI" id="9CTo7lmDcO" role="1QoVPY">
           <node concept="2iRfu4" id="9CTo7lmDcP" role="2iSdaV" />
-          <node concept="PMmxH" id="9CTo7lmDcQ" role="3EZMnx">
-            <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-            <node concept="VPxyj" id="3F1kzPoMf9i" role="3F10Kt" />
+          <node concept="1HlG4h" id="6RKU0s3UQok" role="3EZMnx">
+            <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+            <node concept="VPM3Z" id="6RKU0s3UQol" role="3F10Kt" />
+            <node concept="1HfYo3" id="6RKU0s3UQom" role="1HlULh">
+              <node concept="3TQlhw" id="6RKU0s3UQon" role="1Hhtcw">
+                <node concept="3clFbS" id="6RKU0s3UQoo" role="2VODD2">
+                  <node concept="3clFbF" id="6RKU0s3UQop" role="3cqZAp">
+                    <node concept="2OqwBi" id="6RKU0s3UQoq" role="3clFbG">
+                      <node concept="pncrf" id="6RKU0s3UQor" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="6RKU0s3UQos" role="2OqNvi">
+                        <ref role="37wK5l" to="nrs2:6RKU0s3M2ca" resolve="getWidgetDisplayName" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="3F0ifn" id="9CTo7lmDcS" role="3EZMnx">
             <property role="3F0ifm" value="always supported" />
@@ -2451,9 +2479,22 @@
           </node>
         </node>
       </node>
-      <node concept="PMmxH" id="RX_REsnmO1" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="1HlG4h" id="6RKU0s3EDlW" role="3EZMnx">
         <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        <node concept="1HfYo3" id="6RKU0s3EDlY" role="1HlULh">
+          <node concept="3TQlhw" id="6RKU0s3EDm0" role="1Hhtcw">
+            <node concept="3clFbS" id="6RKU0s3EDm2" role="2VODD2">
+              <node concept="3clFbF" id="6RKU0s3EFbF" role="3cqZAp">
+                <node concept="2OqwBi" id="6RKU0s3EFDv" role="3clFbG">
+                  <node concept="pncrf" id="6RKU0s3EFbE" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="6RKU0s3EG8a" role="2OqNvi">
+                    <ref role="37wK5l" to="nrs2:6RKU0s3E$QM" resolve="getCommandDisplayName" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="gc7cB" id="5jkMFwCaC7g" role="3EZMnx">
         <node concept="3VJUX4" id="5jkMFwCaC7i" role="3YsKMw">
@@ -3970,6 +4011,40 @@
     </node>
     <node concept="2aJ2om" id="6RKU0s1Dh11" role="CpUAK">
       <ref role="2$4xQ3" node="6RKU0s27aXE" resolve="ToolTipFeature_ShowToolTip" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6RKU0s3Ep$J">
+    <property role="3GE5qa" value="features" />
+    <ref role="1XX52x" to="at53:7WgsBLYmzhD" resolve="SelectedRowFeature" />
+    <node concept="PMmxH" id="6RKU0s3EpKU" role="2wV5jI">
+      <ref role="PMmxG" node="9CTo7lmDcx" resolve="ViewWidgetFeature_Supported_EC" />
+    </node>
+    <node concept="3EZMnI" id="6RKU0s3EpKW" role="6VMZX">
+      <node concept="l2Vlx" id="6RKU0s3EpKX" role="2iSdaV" />
+      <node concept="PMmxH" id="6RKU0s3EpKV" role="3EZMnx">
+        <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector" />
+      </node>
+      <node concept="2yq9I_" id="6RKU0s3EpKZ" role="3EZMnx">
+        <ref role="225u1j" to="at53:6RKU0s3Ep$I" resolve="supportMultipleSelectedRows" />
+        <node concept="1563Vb" id="6RKU0s3EpL0" role="1563LE">
+          <property role="1563UK" value="[ ]" />
+          <property role="1563Ve" value="[x]" />
+        </node>
+        <node concept="3F0ifn" id="6RKU0s3EpL1" role="2fqkNU">
+          <property role="3F0ifm" value="support multiple selected rows" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        </node>
+        <node concept="pVoyu" id="6RKU0s3EpL2" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6RKU0s44w6e">
+    <property role="3GE5qa" value="features.rowbased" />
+    <ref role="1XX52x" to="at53:6RKU0s44uz_" resolve="RowHandleValue" />
+    <node concept="PMmxH" id="6RKU0s44wip" role="2wV5jI">
+      <ref role="PMmxG" node="1RiAxJSf6QT" resolve="IHasRowHandle_EC" />
     </node>
   </node>
 </model>

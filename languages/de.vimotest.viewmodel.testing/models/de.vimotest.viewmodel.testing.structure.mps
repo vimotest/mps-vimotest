@@ -934,6 +934,13 @@
     <property role="34LRSv" value="select row" />
     <property role="3GE5qa" value="test.actions" />
     <ref role="1TJDcQ" node="4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
+    <node concept="1TJgyj" id="6RKU0s44amv" role="1TKVEi">
+      <property role="IQ2ns" value="7922086861375317407" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="multipleRowHandles" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="at53:6RKU0s44uz_" resolve="RowHandleValue" />
+    </node>
     <node concept="PrWs8" id="6fEYrkZkNBr" role="PzmwI">
       <ref role="PrY4T" to="at53:1RiAxJSewmp" resolve="IHasRowHandle" />
     </node>

@@ -11,7 +11,6 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
     <import index="bqjt" ref="r:ec1f09af-a5e9-4755-932d-7ccae7bdd219(alfi.behavior)" implicit="true" />
   </imports>
@@ -137,7 +136,6 @@
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
       </concept>
-      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -625,15 +623,12 @@
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
-            <node concept="2OqwBi" id="3MA_BelmUJ9" role="37wK5m">
-              <node concept="2OqwBi" id="3MA_BelmUJa" role="2Oq$k0">
-                <node concept="37vLTw" id="3MA_BelmUJb" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2evlxT94TDh" resolve="feature" />
-                </node>
-                <node concept="2yIwOk" id="3MA_BelmUJc" role="2OqNvi" />
+            <node concept="2OqwBi" id="3MA_BelmUJa" role="37wK5m">
+              <node concept="37vLTw" id="3MA_BelmUJb" role="2Oq$k0">
+                <ref role="3cqZAo" node="2evlxT94TDh" resolve="feature" />
               </node>
-              <node concept="liA8E" id="3MA_BelmUJd" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+              <node concept="2qgKlT" id="6RKU0s3XupS" role="2OqNvi">
+                <ref role="37wK5l" to="nrs2:6RKU0s3M2ca" resolve="getWidgetDisplayName" />
               </node>
             </node>
             <node concept="2OqwBi" id="3MA_BelmGJm" role="37wK5m">

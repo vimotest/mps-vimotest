@@ -539,6 +539,14 @@
     <property role="34LRSv" value="selected row" />
     <property role="3GE5qa" value="features" />
     <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
+    <node concept="1TJgyi" id="6RKU0s3Ep$I" role="1TKVEl">
+      <property role="IQ2nx" value="7922086861368564014" />
+      <property role="TrG5h" value="supportMultipleSelectedRows" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="6RKU0s3Xwsb" role="PzmwI">
+      <ref role="PrY4T" node="7FAtRx$VQ6k" resolve="ICanHaveMultipleValues" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7WgsBLYmzhU">
     <property role="EcuMT" value="9155943921465570426" />
@@ -1337,6 +1345,16 @@
       <property role="IQ2nx" value="7922086861330458267" />
       <property role="TrG5h" value="defaultToolTipText" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6RKU0s44uz_">
+    <property role="EcuMT" value="7922086861375400165" />
+    <property role="3GE5qa" value="features.rowbased" />
+    <property role="TrG5h" value="RowHandleValue" />
+    <property role="34LRSv" value="rowhandle" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="6RKU0s44uJJ" role="PzmwI">
+      <ref role="PrY4T" node="1RiAxJSewmp" resolve="IHasRowHandle" />
     </node>
   </node>
 </model>

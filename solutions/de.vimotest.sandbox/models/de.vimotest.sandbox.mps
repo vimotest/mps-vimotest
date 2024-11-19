@@ -231,7 +231,9 @@
         <child id="2058973407270497905" name="columnFeature" index="2MLTWm" />
         <child id="6201744883132457328" name="selectRowCommand" index="2WDutG" />
       </concept>
-      <concept id="9155943921465570409" name="de.vimotest.viewmodel.structure.SelectedRowFeature" flags="ng" index="1i$ol" />
+      <concept id="9155943921465570409" name="de.vimotest.viewmodel.structure.SelectedRowFeature" flags="ng" index="1i$ol">
+        <property id="7922086861368564014" name="supportMultipleSelectedRows" index="1Imn4D" />
+      </concept>
       <concept id="9208231005772576871" name="de.vimotest.viewmodel.structure.AbstractViewModelParameterizedCommand" flags="ng" index="231sOC">
         <property id="1008128444466031715" name="hasParameters" index="2hCfGp" />
       </concept>
@@ -2970,6 +2972,31 @@
         <node concept="C4FCg" id="6fEYrkZpD7S" role="3Vayhv" />
         <node concept="C4FCh" id="6fEYrkZpD7U" role="3Vayhu" />
         <node concept="3Vw88G" id="6fEYrkZpD7W" role="2WEaAO" />
+      </node>
+      <node concept="1i$o6" id="6RKU0s3Ep$o" role="103ZUC">
+        <property role="TrG5h" value="MyMultiSelectRowListView" />
+        <node concept="2nep4R" id="6RKU0s3Ep$p" role="2MLTWm">
+          <node concept="V3ZfZ" id="6RKU0s3Ep$q" role="2nerJI">
+            <property role="TrG5h" value="Header" />
+            <node concept="V3Zf6" id="6RKU0s3Ep$r" role="V3ZfK">
+              <node concept="o7Kjd" id="6RKU0s3Ep$s" role="o6p68" />
+            </node>
+            <node concept="C4FCh" id="6RKU0s3Ep$t" role="V3ZfL" />
+            <node concept="C4FCg" id="6RKU0s3Ep$u" role="V3ZfM" />
+            <node concept="1G_fEc" id="6RKU0s3Ep$v" role="1G_fIJ" />
+          </node>
+        </node>
+        <node concept="3KuuI3" id="6RKU0s3Ep$x" role="1rSL7">
+          <node concept="3D8xT1" id="6RKU0s3Ep$z" role="3D86r8" />
+          <node concept="3D8CoO" id="6RKU0s3Ep$_" role="3D86r9" />
+        </node>
+        <node concept="1i$ol" id="6RKU0s3Ep$B" role="1uGH_">
+          <property role="2VM7R0" value="true" />
+          <property role="1Imn4D" value="true" />
+        </node>
+        <node concept="C4FCg" id="6RKU0s3Ep$D" role="1i$o7" />
+        <node concept="C4FCh" id="6RKU0s3Ep$F" role="1i$o0" />
+        <node concept="3Vw88G" id="6RKU0s3Ep$H" role="2WDutG" />
       </node>
     </node>
   </node>

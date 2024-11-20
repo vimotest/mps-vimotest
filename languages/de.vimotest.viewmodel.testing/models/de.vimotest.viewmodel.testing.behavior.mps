@@ -656,7 +656,7 @@
     <property role="3GE5qa" value="test.assert" />
     <ref role="13h7C2" to="53m0:2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     <node concept="13i0hz" id="ipeJ6mton0" role="13h7CS">
-      <property role="TrG5h" value="initializedBySubstitution" />
+      <property role="TrG5h" value="initializedByEditor" />
       <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="ipeJ6mton1" role="1B3o_S" />
       <node concept="3cqZAl" id="ipeJ6mtpK4" role="3clF45" />
@@ -5263,6 +5263,26 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="6RKU0s57hf5" role="3cqZAp">
+          <node concept="2OqwBi" id="6RKU0s57hf6" role="3clFbG">
+            <node concept="2qgKlT" id="6RKU0s57hf8" role="2OqNvi">
+              <ref role="37wK5l" node="ipeJ6mton0" resolve="initializedByEditor" />
+            </node>
+            <node concept="2OqwBi" id="6RKU0s57nHY" role="2Oq$k0">
+              <node concept="3TrEf2" id="6RKU0s57nHZ" role="2OqNvi">
+                <ref role="3Tt5mk" to="53m0:XX1C5W18Rz" />
+              </node>
+              <node concept="2OqwBi" id="6RKU0s57nI0" role="2Oq$k0">
+                <node concept="37vLTw" id="6RKU0s57nI1" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2L$_HjiT3C8" resolve="newRow" />
+                </node>
+                <node concept="3TrEf2" id="6RKU0s57nI2" role="2OqNvi">
+                  <ref role="3Tt5mk" to="53m0:5MibNhOn8Oc" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="44HS8_5sD0I" role="3cqZAp">
           <node concept="37vLTw" id="44HS8_5sD13" role="3cqZAk">
             <ref role="3cqZAo" node="2L$_HjiT3C8" resolve="newRow" />
@@ -5812,6 +5832,16 @@
                         <node concept="37vLTw" id="bZSVZcVBRz" role="37wK5m">
                           <ref role="3cqZAo" node="bZSVZcVBRj" resolve="nestedCheckNode" />
                         </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="6RKU0s57fxA" role="3cqZAp">
+                    <node concept="2OqwBi" id="6RKU0s57fxB" role="3clFbG">
+                      <node concept="37vLTw" id="6RKU0s57fxC" role="2Oq$k0">
+                        <ref role="3cqZAo" node="bZSVZcVBRj" resolve="nestedCheckNode" />
+                      </node>
+                      <node concept="2qgKlT" id="6RKU0s57fxD" role="2OqNvi">
+                        <ref role="37wK5l" node="ipeJ6mton0" resolve="initializedByEditor" />
                       </node>
                     </node>
                   </node>
@@ -6869,6 +6899,16 @@
                         <node concept="37vLTw" id="bZSVZcTmu3" role="37wK5m">
                           <ref role="3cqZAo" node="bZSVZcTm9Z" resolve="nestedCheckNode" />
                         </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="6RKU0s4NIyO" role="3cqZAp">
+                    <node concept="2OqwBi" id="6RKU0s4NIMf" role="3clFbG">
+                      <node concept="37vLTw" id="6RKU0s4NIyM" role="2Oq$k0">
+                        <ref role="3cqZAo" node="bZSVZcTm9Z" resolve="nestedCheckNode" />
+                      </node>
+                      <node concept="2qgKlT" id="6RKU0s4NJrJ" role="2OqNvi">
+                        <ref role="37wK5l" node="ipeJ6mton0" resolve="initializedByEditor" />
                       </node>
                     </node>
                   </node>

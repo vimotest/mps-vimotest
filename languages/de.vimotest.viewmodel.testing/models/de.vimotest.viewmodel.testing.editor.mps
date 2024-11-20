@@ -174,6 +174,9 @@
       <concept id="8998492695583129971" name="jetbrains.mps.lang.editor.structure.SubstituteFeature_DescriptionText" flags="ng" index="16NL0t">
         <child id="8998492695583129972" name="query" index="16NL0q" />
       </concept>
+      <concept id="1235999440492" name="jetbrains.mps.lang.editor.structure.HorizontalAlign" flags="ln" index="37jFXN">
+        <property id="1235999920262" name="align" index="37lx6p" />
+      </concept>
       <concept id="1154465273778" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_SubstituteMenu_ParentNode" flags="nn" index="3bvxqY" />
       <concept id="7342352913006985483" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Action" flags="ng" index="3eGOop">
         <child id="8612453216082699922" name="substituteHandler" index="3aKz83" />
@@ -5745,6 +5748,9 @@
       <property role="1QpmdY" value="true" />
       <node concept="3F0ifn" id="6RKU0s7_F_d" role="1QoS34">
         <property role="3F0ifm" value="." />
+        <node concept="37jFXN" id="2$TY9D5D2sP" role="3F10Kt">
+          <property role="37lx6p" value="hZ7kOz9/RIGHT" />
+        </node>
       </node>
       <node concept="pkWqt" id="6RKU0s7_E$r" role="3e4ffs">
         <node concept="3clFbS" id="6RKU0s7_E$t" role="2VODD2">
@@ -5768,6 +5774,20 @@
           </node>
         </node>
         <node concept="VPxyj" id="6RKU0s7_Glu" role="3F10Kt" />
+      </node>
+    </node>
+    <node concept="3EZMnI" id="2$TY9D5_MwY" role="6VMZX">
+      <node concept="l2Vlx" id="2$TY9D5_MwZ" role="2iSdaV" />
+      <node concept="2yq9I_" id="2$TY9D5_MxL" role="3EZMnx">
+        <ref role="225u1j" to="53m0:6RKU0s7_yzi" resolve="ignore" />
+        <node concept="1563Vb" id="2$TY9D5_MxN" role="1563LE">
+          <property role="1563UK" value="[ ]" />
+          <property role="1563Ve" value="[x]" />
+        </node>
+        <node concept="3F0ifn" id="2$TY9D5_MxO" role="2fqkNU">
+          <property role="3F0ifm" value="ignore column" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        </node>
       </node>
     </node>
   </node>

@@ -5738,5 +5738,38 @@
       <node concept="l2Vlx" id="6RKU0s6u_Ju" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="6RKU0s7_Eod">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1XX52x" to="53m0:6RKU0s7_yn6" resolve="ColumnCheckInfo" />
+    <node concept="1QoScp" id="6RKU0s7_E$o" role="2wV5jI">
+      <property role="1QpmdY" value="true" />
+      <node concept="3F0ifn" id="6RKU0s7_F_d" role="1QoS34">
+        <property role="3F0ifm" value="." />
+      </node>
+      <node concept="pkWqt" id="6RKU0s7_E$r" role="3e4ffs">
+        <node concept="3clFbS" id="6RKU0s7_E$t" role="2VODD2">
+          <node concept="3clFbF" id="6RKU0s7_ENh" role="3cqZAp">
+            <node concept="2OqwBi" id="6RKU0s7_FbI" role="3clFbG">
+              <node concept="pncrf" id="6RKU0s7_ENg" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6RKU0s7_FyB" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:6RKU0s7_yzi" resolve="ignore" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1iCGBv" id="6RKU0s7_Gky" role="1QoVPY">
+        <ref role="1NtTu8" to="53m0:6RKU0s7_yzh" resolve="columnDefinition" />
+        <node concept="1sVBvm" id="6RKU0s7_GkB" role="1sWHZn">
+          <node concept="3F0A7n" id="6RKU0s7_Gls" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="at53:7uPLQmTPAc" resolve="header" />
+            <node concept="VPxyj" id="6RKU0s7_Glv" role="3F10Kt" />
+          </node>
+        </node>
+        <node concept="VPxyj" id="6RKU0s7_Glu" role="3F10Kt" />
+      </node>
+    </node>
+  </node>
 </model>
 

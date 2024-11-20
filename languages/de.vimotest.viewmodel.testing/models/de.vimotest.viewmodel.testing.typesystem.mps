@@ -820,6 +820,7 @@
       <node concept="3Tm1VV" id="6DnDTlRVLNB" role="1B3o_S" />
       <node concept="3cqZAl" id="6DnDTlRVMxK" role="3clF45" />
     </node>
+    <node concept="3Tm1VV" id="6DnDTlRUlcp" role="1B3o_S" />
     <node concept="2YIFZL" id="bZSVZcB2qz" role="jymVt">
       <property role="TrG5h" value="removeCellWithMissingColumn" />
       <node concept="3clFbS" id="bZSVZcB2qD" role="3clF47">
@@ -1114,7 +1115,6 @@
       </node>
       <node concept="3Tm6S6" id="bZSVZcB3dY" role="1B3o_S" />
     </node>
-    <node concept="3Tm1VV" id="6DnDTlRUlcp" role="1B3o_S" />
   </node>
   <node concept="18kY7G" id="bZSVZcAiSX">
     <property role="TrG5h" value="check_TreeCheckRow" />
@@ -2133,6 +2133,305 @@
     <node concept="1YaCAy" id="3c$pnH1iFnh" role="1YuTPh">
       <property role="TrG5h" value="textCheckValue" />
       <ref role="1YaFvo" to="53m0:7H4Lpx0iNr7" resolve="TextCheckValue" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6RKU0s7_JeE">
+    <property role="TrG5h" value="check_WidgetTableRowsCheckValue" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <node concept="3clFbS" id="6RKU0s7_JeF" role="18ibNy">
+      <node concept="3cpWs8" id="6RKU0s7_JqU" role="3cqZAp">
+        <node concept="3cpWsn" id="6RKU0s7_JqV" role="3cpWs9">
+          <property role="TrG5h" value="columns" />
+          <node concept="2I9FWS" id="6RKU0s7_JqW" role="1tU5fm">
+            <ref role="2I9WkF" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+          </node>
+          <node concept="2OqwBi" id="6RKU0s7_JqX" role="33vP2m">
+            <node concept="1PxgMI" id="6RKU0s7_JqY" role="2Oq$k0">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="6RKU0s7_JqZ" role="3oSUPX">
+                <ref role="cht4Q" to="at53:24MyZrrRA67" resolve="TableViewWidget" />
+              </node>
+              <node concept="2OqwBi" id="6RKU0s7_Jr0" role="1m5AlR">
+                <node concept="2OqwBi" id="6RKU0s7_Jr1" role="2Oq$k0">
+                  <node concept="1YBJjd" id="6RKU0s7_Jr2" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6RKU0s7_JeH" resolve="rowsCheckValue" />
+                  </node>
+                  <node concept="2Xjw5R" id="6RKU0s7_Jr3" role="2OqNvi">
+                    <node concept="1xMEDy" id="6RKU0s7_Jr4" role="1xVPHs">
+                      <node concept="chp4Y" id="6RKU0s7_Jr5" role="ri$Ld">
+                        <ref role="cht4Q" to="53m0:24MyZrrRA7k" resolve="TableViewCheck" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="6RKU0s7_Jr6" role="2OqNvi">
+                  <ref role="37wK5l" to="fwln:4jKdMMdJYzD" resolve="getWidgetToCheck" />
+                </node>
+              </node>
+            </node>
+            <node concept="3Tsc0h" id="6RKU0s7_Jr7" role="2OqNvi">
+              <ref role="3TtcxE" to="at53:4Ips5F1549y" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="6RKU0s7_Jr8" role="3cqZAp">
+        <node concept="3cpWsn" id="6RKU0s7_Jr9" role="3cpWs9">
+          <property role="TrG5h" value="result" />
+          <node concept="3uibUv" id="6RKU0s7_Jra" role="1tU5fm">
+            <ref role="3uigEE" node="6RKU0s7_VUR" resolve="ConsistencyResult" />
+          </node>
+          <node concept="2YIFZM" id="6RKU0s7A81D" role="33vP2m">
+            <ref role="37wK5l" node="6RKU0s7_VVv" resolve="isConsistent" />
+            <ref role="1Pybhc" node="6RKU0s7_VUQ" resolve="ColumnCheckInfoConsistencyHelper" />
+            <node concept="1YBJjd" id="6RKU0s7A81E" role="37wK5m">
+              <ref role="1YBMHb" node="6RKU0s7_JeH" resolve="rowsCheckValue" />
+            </node>
+            <node concept="37vLTw" id="6RKU0s7A81F" role="37wK5m">
+              <ref role="3cqZAo" node="6RKU0s7_JqV" resolve="columns" />
+            </node>
+            <node concept="2OqwBi" id="6RKU0s7A81G" role="37wK5m">
+              <node concept="1YBJjd" id="6RKU0s7A81H" role="2Oq$k0">
+                <ref role="1YBMHb" node="6RKU0s7_JeH" resolve="rowsCheckValue" />
+              </node>
+              <node concept="3Tsc0h" id="6RKU0s7Aabd" role="2OqNvi">
+                <ref role="3TtcxE" to="53m0:6RKU0s7_yzk" resolve="columnCheckInfos" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="6RKU0s7_Jrh" role="3cqZAp">
+        <node concept="3clFbS" id="6RKU0s7_Jri" role="3clFbx">
+          <node concept="2MkqsV" id="6RKU0s7_Jrj" role="3cqZAp">
+            <node concept="2OqwBi" id="6RKU0s7_Jrk" role="1urrMF">
+              <node concept="37vLTw" id="6RKU0s7_Jrl" role="2Oq$k0">
+                <ref role="3cqZAo" node="6RKU0s7_Jr9" resolve="result" />
+              </node>
+              <node concept="2OwXpG" id="6RKU0s7_Jrm" role="2OqNvi">
+                <ref role="2Oxat5" node="6RKU0s7_VUY" resolve="errorNode" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6RKU0s7_Jrn" role="2MkJ7o">
+              <node concept="37vLTw" id="6RKU0s7_Jro" role="2Oq$k0">
+                <ref role="3cqZAo" node="6RKU0s7_Jr9" resolve="result" />
+              </node>
+              <node concept="2OwXpG" id="6RKU0s7_Jrp" role="2OqNvi">
+                <ref role="2Oxat5" node="6RKU0s7_VUV" resolve="message" />
+              </node>
+            </node>
+            <node concept="3Cnw8n" id="6RKU0s7_Jrq" role="1urrFz">
+              <property role="ARO6o" value="true" />
+              <ref role="QpYPw" node="6RKU0s7AaZL" resolve="fix_inconsistentColumnCheckInfos" />
+              <node concept="3CnSsL" id="6RKU0s7_Jrr" role="3Coj4f">
+                <ref role="QkamJ" node="6RKU0s7AaZM" resolve="columnNodes" />
+                <node concept="37vLTw" id="6RKU0s7_Jrs" role="3CoRuB">
+                  <ref role="3cqZAo" node="6RKU0s7_JqV" resolve="columns" />
+                </node>
+              </node>
+              <node concept="3CnSsL" id="6RKU0s7_Jrt" role="3Coj4f">
+                <ref role="QkamJ" node="6RKU0s7AaZO" resolve="cellCheckNodes" />
+                <node concept="2OqwBi" id="6RKU0s7AbO0" role="3CoRuB">
+                  <node concept="1YBJjd" id="6RKU0s7AbO1" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6RKU0s7_JeH" resolve="rowsCheckValue" />
+                  </node>
+                  <node concept="3Tsc0h" id="6RKU0s7AbO2" role="2OqNvi">
+                    <ref role="3TtcxE" to="53m0:6RKU0s7_yzk" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="6RKU0s7_Jrx" role="3clFbw">
+          <node concept="2OqwBi" id="6RKU0s7_Jry" role="3fr31v">
+            <node concept="37vLTw" id="6RKU0s7_Jrz" role="2Oq$k0">
+              <ref role="3cqZAo" node="6RKU0s7_Jr9" resolve="result" />
+            </node>
+            <node concept="2OwXpG" id="6RKU0s7_Jr$" role="2OqNvi">
+              <ref role="2Oxat5" node="6RKU0s7_VUS" resolve="isConsistent" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6RKU0s7_JeH" role="1YuTPh">
+      <property role="TrG5h" value="rowsCheckValue" />
+      <ref role="1YaFvo" to="53m0:4Ips5F14cRI" resolve="WidgetTableRowsCheckValue" />
+    </node>
+  </node>
+  <node concept="312cEu" id="6RKU0s7_VUQ">
+    <property role="3GE5qa" value="test.assert.widgets.structures.tableview" />
+    <property role="TrG5h" value="ColumnCheckInfoConsistencyHelper" />
+    <node concept="312cEu" id="6RKU0s7_VUR" role="jymVt">
+      <property role="TrG5h" value="ConsistencyResult" />
+      <node concept="312cEg" id="6RKU0s7_VUS" role="jymVt">
+        <property role="TrG5h" value="isConsistent" />
+        <node concept="10P_77" id="6RKU0s7_VUT" role="1tU5fm" />
+        <node concept="3Tm1VV" id="6RKU0s7_VUU" role="1B3o_S" />
+      </node>
+      <node concept="312cEg" id="6RKU0s7_VUV" role="jymVt">
+        <property role="TrG5h" value="message" />
+        <node concept="17QB3L" id="6RKU0s7_VUW" role="1tU5fm" />
+        <node concept="3Tm1VV" id="6RKU0s7_VUX" role="1B3o_S" />
+      </node>
+      <node concept="312cEg" id="6RKU0s7_VUY" role="jymVt">
+        <property role="TrG5h" value="errorNode" />
+        <node concept="3Tm1VV" id="6RKU0s7_VUZ" role="1B3o_S" />
+        <node concept="3Tqbb2" id="6RKU0s7_VV0" role="1tU5fm" />
+      </node>
+      <node concept="2tJIrI" id="6RKU0s7_VV1" role="jymVt" />
+      <node concept="3Tm1VV" id="6RKU0s7_VV2" role="1B3o_S" />
+      <node concept="3clFbW" id="6RKU0s7_VV3" role="jymVt">
+        <node concept="3cqZAl" id="6RKU0s7_VV4" role="3clF45" />
+        <node concept="3Tm1VV" id="6RKU0s7_VV5" role="1B3o_S" />
+        <node concept="3clFbS" id="6RKU0s7_VV6" role="3clF47">
+          <node concept="3clFbF" id="6RKU0s7_VV7" role="3cqZAp">
+            <node concept="37vLTI" id="6RKU0s7_VV8" role="3clFbG">
+              <node concept="2OqwBi" id="6RKU0s7_VV9" role="37vLTJ">
+                <node concept="Xjq3P" id="6RKU0s7_VVa" role="2Oq$k0" />
+                <node concept="2OwXpG" id="6RKU0s7_VVb" role="2OqNvi">
+                  <ref role="2Oxat5" node="6RKU0s7_VUS" resolve="isConsistent" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="6RKU0s7_VVc" role="37vLTx">
+                <ref role="3cqZAo" node="6RKU0s7_VVp" resolve="isConsistent" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="6RKU0s7_VVd" role="3cqZAp">
+            <node concept="37vLTI" id="6RKU0s7_VVe" role="3clFbG">
+              <node concept="2OqwBi" id="6RKU0s7_VVf" role="37vLTJ">
+                <node concept="Xjq3P" id="6RKU0s7_VVg" role="2Oq$k0" />
+                <node concept="2OwXpG" id="6RKU0s7_VVh" role="2OqNvi">
+                  <ref role="2Oxat5" node="6RKU0s7_VUV" resolve="message" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="6RKU0s7_VVi" role="37vLTx">
+                <ref role="3cqZAo" node="6RKU0s7_VVr" resolve="message" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="6RKU0s7_VVj" role="3cqZAp">
+            <node concept="37vLTI" id="6RKU0s7_VVk" role="3clFbG">
+              <node concept="37vLTw" id="6RKU0s7_VVl" role="37vLTx">
+                <ref role="3cqZAo" node="6RKU0s7_VVt" resolve="errorNode" />
+              </node>
+              <node concept="2OqwBi" id="6RKU0s7_VVm" role="37vLTJ">
+                <node concept="Xjq3P" id="6RKU0s7_VVn" role="2Oq$k0" />
+                <node concept="2OwXpG" id="6RKU0s7_VVo" role="2OqNvi">
+                  <ref role="2Oxat5" node="6RKU0s7_VUY" resolve="errorNode" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="37vLTG" id="6RKU0s7_VVp" role="3clF46">
+          <property role="TrG5h" value="isConsistent" />
+          <node concept="10P_77" id="6RKU0s7_VVq" role="1tU5fm" />
+        </node>
+        <node concept="37vLTG" id="6RKU0s7_VVr" role="3clF46">
+          <property role="TrG5h" value="message" />
+          <node concept="17QB3L" id="6RKU0s7_VVs" role="1tU5fm" />
+        </node>
+        <node concept="37vLTG" id="6RKU0s7_VVt" role="3clF46">
+          <property role="TrG5h" value="errorNode" />
+          <node concept="3Tqbb2" id="6RKU0s7_VVu" role="1tU5fm" />
+        </node>
+      </node>
+    </node>
+    <node concept="2YIFZL" id="6RKU0s7_VVv" role="jymVt">
+      <property role="TrG5h" value="isConsistent" />
+      <node concept="3clFbS" id="6RKU0s7_VVw" role="3clF47">
+        <node concept="3cpWs6" id="6RKU0s7_VW$" role="3cqZAp">
+          <node concept="2ShNRf" id="6RKU0s7_VW_" role="3cqZAk">
+            <node concept="1pGfFk" id="6RKU0s7_VWA" role="2ShVmc">
+              <ref role="37wK5l" node="6RKU0s7_VV3" resolve="CellCheckConsistencyHelper.ConsistencyResult" />
+              <node concept="3clFbT" id="6RKU0s7_VWB" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+              <node concept="10Nm6u" id="6RKU0s7_VWC" role="37wK5m" />
+              <node concept="10Nm6u" id="6RKU0s7_VWD" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6RKU0s7_VWE" role="1B3o_S" />
+      <node concept="3uibUv" id="6RKU0s7_VWF" role="3clF45">
+        <ref role="3uigEE" node="6RKU0s7_VUR" resolve="CellCheckConsistencyHelper.ConsistencyResult" />
+      </node>
+      <node concept="37vLTG" id="6RKU0s7_VWG" role="3clF46">
+        <property role="TrG5h" value="rowNode" />
+        <node concept="3Tqbb2" id="6RKU0s7_VWH" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6RKU0s7_VWI" role="3clF46">
+        <property role="TrG5h" value="columnDefinitions" />
+        <node concept="2I9FWS" id="6RKU0s7_VWJ" role="1tU5fm">
+          <ref role="2I9WkF" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6RKU0s7_VWK" role="3clF46">
+        <property role="TrG5h" value="columnCheckInfos" />
+        <node concept="2I9FWS" id="6RKU0s7_VWL" role="1tU5fm">
+          <ref role="2I9WkF" to="53m0:6RKU0s7_yn6" resolve="ColumnCheckInfo" />
+        </node>
+      </node>
+    </node>
+    <node concept="2YIFZL" id="6RKU0s7_VWM" role="jymVt">
+      <property role="TrG5h" value="autoFixInconsistentCellChecks" />
+      <node concept="37vLTG" id="6RKU0s7_VWN" role="3clF46">
+        <property role="TrG5h" value="rowNode" />
+        <node concept="3Tqbb2" id="6RKU0s7_VWO" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6RKU0s7_VWP" role="3clF46">
+        <property role="TrG5h" value="columnDefinitions" />
+        <node concept="2I9FWS" id="6RKU0s7_VWQ" role="1tU5fm">
+          <ref role="2I9WkF" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6RKU0s7AziU" role="3clF46">
+        <property role="TrG5h" value="columnCheckInfos" />
+        <node concept="2I9FWS" id="6RKU0s7AziV" role="1tU5fm">
+          <ref role="2I9WkF" to="53m0:6RKU0s7_yn6" resolve="ColumnCheckInfo" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6RKU0s7_VWT" role="3clF47" />
+      <node concept="3Tm1VV" id="6RKU0s7_VXl" role="1B3o_S" />
+      <node concept="3cqZAl" id="6RKU0s7_VXm" role="3clF45" />
+    </node>
+    <node concept="3Tm1VV" id="6RKU0s7_VZr" role="1B3o_S" />
+  </node>
+  <node concept="Q5z_Y" id="6RKU0s7AaZL">
+    <property role="TrG5h" value="fix_inconsistentColumnCheckInfos" />
+    <property role="3GE5qa" value="test.assert.widgets.structures" />
+    <node concept="Q6JDH" id="6RKU0s7AaZM" role="Q6Id_">
+      <property role="TrG5h" value="columnNodes" />
+      <node concept="2I9FWS" id="6RKU0s7AaZN" role="Q6QK4">
+        <ref role="2I9WkF" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+      </node>
+    </node>
+    <node concept="Q6JDH" id="6RKU0s7AaZO" role="Q6Id_">
+      <property role="TrG5h" value="columnCheckInfoNodes" />
+      <node concept="2I9FWS" id="6RKU0s7AaZP" role="Q6QK4">
+        <ref role="2I9WkF" to="53m0:6RKU0s7_yn6" resolve="ColumnCheckInfo" />
+      </node>
+    </node>
+    <node concept="Q5ZZ6" id="6RKU0s7AaZQ" role="Q6x$H">
+      <node concept="3clFbS" id="6RKU0s7AaZR" role="2VODD2">
+        <node concept="3clFbF" id="6RKU0s7AaZS" role="3cqZAp">
+          <node concept="2YIFZM" id="6RKU0s7AvjF" role="3clFbG">
+            <ref role="37wK5l" node="6RKU0s7_VWM" resolve="autoFixInconsistentCellChecks" />
+            <ref role="1Pybhc" node="6RKU0s7_VUQ" resolve="ColumnCheckInfoConsistencyHelper" />
+            <node concept="Q6c8r" id="6RKU0s7AvjG" role="37wK5m" />
+            <node concept="QwW4i" id="6RKU0s7AvjH" role="37wK5m">
+              <ref role="QwW4h" node="6RKU0s7AaZM" resolve="columnNodes" />
+            </node>
+            <node concept="QwW4i" id="6RKU0s7AvjI" role="37wK5m">
+              <ref role="QwW4h" node="6RKU0s7AaZO" resolve="columnCheckInfoNodes" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

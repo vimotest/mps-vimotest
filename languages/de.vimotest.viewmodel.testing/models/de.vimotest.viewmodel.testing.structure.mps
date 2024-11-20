@@ -551,6 +551,13 @@
     <property role="34LRSv" value="widget rows" />
     <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="1TJgyj" id="6RKU0s7_Dek" role="1TKVEi">
+      <property role="IQ2ns" value="7922086861434426260" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="columnCheckInfo" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6RKU0s7_yn6" resolve="ColumnCheckInfo" />
+    </node>
     <node concept="1TJgyj" id="708i5MC0SWK" role="1TKVEi">
       <property role="IQ2ns" value="8072781894854610736" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -634,6 +641,13 @@
     <property role="34LRSv" value="hierarchic widget rows" />
     <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="1TJgyj" id="6RKU0s7_Del" role="1TKVEi">
+      <property role="IQ2ns" value="7922086861434426261" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="columnCheckInfos" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6RKU0s7_yn6" resolve="ColumnCheckInfo" />
+    </node>
     <node concept="1TJgyj" id="XX1C5W1cNO" role="1TKVEi">
       <property role="IQ2ns" value="1116055435858988276" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -696,6 +710,11 @@
     <node concept="PrWs8" id="3uwMqjmRGj1" role="PzmwI">
       <ref role="PrY4T" node="6I6OCWxY3UW" resolve="IProvideWidget" />
     </node>
+    <node concept="1TJgyi" id="6RKU0s7_xwJ" role="1TKVEl">
+      <property role="IQ2nx" value="7922086861434394671" />
+      <property role="TrG5h" value="ignore" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="PlHQZ" id="24MyZrrRA6Y">
     <property role="EcuMT" value="2392128244454154686" />
@@ -746,6 +765,13 @@
     <property role="34LRSv" value="widget rows" />
     <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="1TJgyj" id="6RKU0s7_yzk" role="1TKVEi">
+      <property role="IQ2ns" value="7922086861434398932" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="columnCheckInfos" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6RKU0s7_yn6" resolve="ColumnCheckInfo" />
+    </node>
     <node concept="1TJgyj" id="4Ips5F14j2Z" role="1TKVEi">
       <property role="IQ2ns" value="5447508759369822399" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1084,6 +1110,23 @@
     </node>
     <node concept="PrWs8" id="6RKU0s1p1al" role="PzmwI">
       <ref role="PrY4T" node="7H4Lpx0iNqj" resolve="ILabelCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6RKU0s7_yn6">
+    <property role="EcuMT" value="7922086861434398150" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <property role="TrG5h" value="ColumnCheckInfo" />
+    <property role="34LRSv" value="column check info" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="6RKU0s7_yzh" role="1TKVEi">
+      <property role="IQ2ns" value="7922086861434398929" />
+      <property role="20kJfa" value="columnDefinition" />
+      <ref role="20lvS9" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+    </node>
+    <node concept="1TJgyi" id="6RKU0s7_yzi" role="1TKVEl">
+      <property role="IQ2nx" value="7922086861434398930" />
+      <property role="TrG5h" value="ignore" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

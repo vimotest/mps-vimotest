@@ -6452,6 +6452,78 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="6RKU0s7PYtT" role="13h7CS">
+      <property role="TrG5h" value="isCellCheckIgnored" />
+      <node concept="3Tm1VV" id="6RKU0s7PYtU" role="1B3o_S" />
+      <node concept="10P_77" id="6RKU0s7PYyX" role="3clF45" />
+      <node concept="3clFbS" id="6RKU0s7PYtW" role="3clF47">
+        <node concept="3clFbJ" id="6RKU0s7Q4zJ" role="3cqZAp">
+          <node concept="3clFbS" id="6RKU0s7Q4zL" role="3clFbx">
+            <node concept="3cpWs6" id="6RKU0s7Q5gH" role="3cqZAp">
+              <node concept="3clFbT" id="6RKU0s7Q5gO" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6RKU0s7Q4Tx" role="3clFbw">
+            <node concept="13iPFW" id="6RKU0s7Q4_H" role="2Oq$k0" />
+            <node concept="3TrcHB" id="6RKU0s7Q54l" role="2OqNvi">
+              <ref role="3TsBF5" to="53m0:6RKU0s7_xwJ" resolve="ignoreCellCheck" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6RKU0s7Q5iY" role="3cqZAp" />
+        <node concept="3cpWs8" id="6RKU0s7Q88m" role="3cqZAp">
+          <node concept="3cpWsn" id="6RKU0s7Q88n" role="3cpWs9">
+            <property role="TrG5h" value="columnCheckInfos" />
+            <node concept="_YKpA" id="6RKU0s7Q87D" role="1tU5fm">
+              <node concept="3Tqbb2" id="6RKU0s7Q87G" role="_ZDj9">
+                <ref role="ehGHo" to="53m0:6RKU0s7_yn6" resolve="ColumnCheckInfo" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6RKU0s7Q88o" role="33vP2m">
+              <node concept="2OqwBi" id="6RKU0s7Q88p" role="2Oq$k0">
+                <node concept="2OqwBi" id="6RKU0s7Q88q" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6RKU0s7Q88r" role="2Oq$k0">
+                    <node concept="13iPFW" id="6RKU0s7Q88s" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="6RKU0s7Q88t" role="2OqNvi">
+                      <node concept="1xMEDy" id="6RKU0s7Q88u" role="1xVPHs">
+                        <node concept="chp4Y" id="6RKU0s7Q88v" role="ri$Ld">
+                          <ref role="cht4Q" to="53m0:5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="32TBzR" id="6RKU0s7Q88w" role="2OqNvi" />
+                </node>
+                <node concept="v3k3i" id="6RKU0s7Q88x" role="2OqNvi">
+                  <node concept="chp4Y" id="6RKU0s7Q88y" role="v3oSu">
+                    <ref role="cht4Q" to="53m0:6RKU0s7_yn6" resolve="ColumnCheckInfo" />
+                  </node>
+                </node>
+              </node>
+              <node concept="ANE8D" id="6RKU0s7Q88z" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6RKU0s7Q8Em" role="3cqZAp">
+          <node concept="2OqwBi" id="6RKU0s7QbTM" role="3clFbG">
+            <node concept="1y4W85" id="6RKU0s7Qb8H" role="2Oq$k0">
+              <node concept="2OqwBi" id="6RKU0s7QbsK" role="1y58nS">
+                <node concept="13iPFW" id="6RKU0s7Qbdi" role="2Oq$k0" />
+                <node concept="2bSWHS" id="6RKU0s7QbF0" role="2OqNvi" />
+              </node>
+              <node concept="37vLTw" id="6RKU0s7Q8Ek" role="1y566C">
+                <ref role="3cqZAo" node="6RKU0s7Q88n" resolve="columnCheckInfos" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="6RKU0s7QcaN" role="2OqNvi">
+              <ref role="3TsBF5" to="53m0:6RKU0s7_yzi" resolve="ignoreChecksOnColumn" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="24MyZrrRA7b">
     <property role="TrG5h" value="ITableViewCheckValue_Behavior" />
@@ -7282,6 +7354,27 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="7L_HBKdG42U" role="3cqZAp">
+          <node concept="3cpWsn" id="7L_HBKdG42V" role="3cpWs9">
+            <property role="TrG5h" value="cellCheck" />
+            <node concept="3Tqbb2" id="7L_HBKdG3rJ" role="1tU5fm">
+              <ref role="ehGHo" to="53m0:XX1C5W18Ry" resolve="WidgetCellCheck" />
+            </node>
+            <node concept="1y4W85" id="7L_HBKdG42W" role="33vP2m">
+              <node concept="37vLTw" id="7L_HBKdG42X" role="1y58nS">
+                <ref role="3cqZAo" node="1si8oglQae$" resolve="column" />
+              </node>
+              <node concept="2OqwBi" id="7L_HBKdG42Y" role="1y566C">
+                <node concept="37vLTw" id="6RKU0s6760M" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6RKU0s6760E" resolve="checkRow" />
+                </node>
+                <node concept="3Tsc0h" id="7L_HBKdG436" role="2OqNvi">
+                  <ref role="3TtcxE" to="53m0:4Ips5F11GXC" resolve="cellChecks" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="2$TY9D5BYsO" role="3cqZAp" />
         <node concept="3cpWs8" id="7L_HBKdFxm$" role="3cqZAp">
           <node concept="3cpWsn" id="7L_HBKdFxm_" role="3cpWs9">
@@ -7303,7 +7396,7 @@
                       <ref role="3cqZAo" node="1si8oglQsyy" resolve="context" />
                     </node>
                     <node concept="37vLTw" id="2$TY9D5C9__" role="37wK5m">
-                      <ref role="3cqZAo" node="2$TY9D5_W4L" resolve="columnCheckInfo" />
+                      <ref role="3cqZAo" node="7L_HBKdG42V" resolve="cellCheck" />
                     </node>
                     <node concept="Xl_RD" id="2$TY9D5CaAM" role="37wK5m">
                       <property role="Xl_RC" value="." />
@@ -7316,37 +7409,26 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="2$TY9D5BVy0" role="3clFbw">
-            <node concept="37vLTw" id="2$TY9D5BUvF" role="2Oq$k0">
-              <ref role="3cqZAo" node="2$TY9D5_W4L" resolve="columnCheckInfo" />
+          <node concept="22lmx$" id="6RKU0s8jLY5" role="3clFbw">
+            <node concept="2OqwBi" id="2$TY9D5BVy0" role="3uHU7B">
+              <node concept="37vLTw" id="2$TY9D5BUvF" role="2Oq$k0">
+                <ref role="3cqZAo" node="2$TY9D5_W4L" resolve="columnCheckInfo" />
+              </node>
+              <node concept="3TrcHB" id="2$TY9D5BWce" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:6RKU0s7_yzi" resolve="ignoreChecksOnColumn" />
+              </node>
             </node>
-            <node concept="3TrcHB" id="2$TY9D5BWce" role="2OqNvi">
-              <ref role="3TsBF5" to="53m0:6RKU0s7_yzi" resolve="ignore" />
+            <node concept="2OqwBi" id="6RKU0s8jNzN" role="3uHU7w">
+              <node concept="37vLTw" id="6RKU0s8jNzO" role="2Oq$k0">
+                <ref role="3cqZAo" node="7L_HBKdG42V" resolve="cellCheck" />
+              </node>
+              <node concept="3TrcHB" id="6RKU0s8jNzP" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:6RKU0s7_xwJ" resolve="ignoreCellCheck" />
+              </node>
             </node>
           </node>
           <node concept="9aQIb" id="2$TY9D5BYSy" role="9aQIa">
             <node concept="3clFbS" id="2$TY9D5BYSz" role="9aQI4">
-              <node concept="3cpWs8" id="7L_HBKdG42U" role="3cqZAp">
-                <node concept="3cpWsn" id="7L_HBKdG42V" role="3cpWs9">
-                  <property role="TrG5h" value="cellCheck" />
-                  <node concept="3Tqbb2" id="7L_HBKdG3rJ" role="1tU5fm">
-                    <ref role="ehGHo" to="53m0:XX1C5W18Ry" resolve="WidgetCellCheck" />
-                  </node>
-                  <node concept="1y4W85" id="7L_HBKdG42W" role="33vP2m">
-                    <node concept="37vLTw" id="7L_HBKdG42X" role="1y58nS">
-                      <ref role="3cqZAo" node="1si8oglQae$" resolve="column" />
-                    </node>
-                    <node concept="2OqwBi" id="7L_HBKdG42Y" role="1y566C">
-                      <node concept="37vLTw" id="6RKU0s6760M" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6RKU0s6760E" resolve="checkRow" />
-                      </node>
-                      <node concept="3Tsc0h" id="7L_HBKdG436" role="2OqNvi">
-                        <ref role="3TtcxE" to="53m0:4Ips5F11GXC" resolve="cellChecks" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbF" id="2$TY9D5BX9l" role="3cqZAp">
                 <node concept="37vLTI" id="2$TY9D5BX9n" role="3clFbG">
                   <node concept="2OqwBi" id="7L_HBKdFxmB" role="37vLTx">
@@ -8014,6 +8096,27 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="2DHgAdqaPLq" role="3cqZAp">
+          <node concept="3cpWsn" id="2DHgAdqaPLr" role="3cpWs9">
+            <property role="TrG5h" value="cellCheck" />
+            <node concept="3Tqbb2" id="2DHgAdqaPLs" role="1tU5fm">
+              <ref role="ehGHo" to="53m0:XX1C5W18Ry" resolve="WidgetCellCheck" />
+            </node>
+            <node concept="1y4W85" id="2DHgAdqaPLt" role="33vP2m">
+              <node concept="37vLTw" id="2DHgAdqaPLu" role="1y58nS">
+                <ref role="3cqZAo" node="2DHgAdqaPKO" resolve="column" />
+              </node>
+              <node concept="2OqwBi" id="2DHgAdqaPLv" role="1y566C">
+                <node concept="37vLTw" id="2DHgAdqbyng" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2DHgAdqbyn8" resolve="checkRow" />
+                </node>
+                <node concept="3Tsc0h" id="2DHgAdqaPLB" role="2OqNvi">
+                  <ref role="3TtcxE" to="53m0:XX1C5W00nU" resolve="cellChecks" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="2$TY9D5HwkN" role="3cqZAp" />
         <node concept="3cpWs8" id="2DHgAdqaPLC" role="3cqZAp">
           <node concept="3cpWsn" id="2DHgAdqaPLD" role="3cpWs9">
@@ -8035,7 +8138,7 @@
                       <ref role="3cqZAo" node="2DHgAdqaPKQ" resolve="context" />
                     </node>
                     <node concept="37vLTw" id="2$TY9D5Hr0W" role="37wK5m">
-                      <ref role="3cqZAo" node="2$TY9D5HgcD" resolve="columnCheckInfo" />
+                      <ref role="3cqZAo" node="2DHgAdqaPLr" resolve="cellCheck" />
                     </node>
                     <node concept="Xl_RD" id="2$TY9D5Hr0X" role="37wK5m">
                       <property role="Xl_RC" value="." />
@@ -8048,37 +8151,26 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="2$TY9D5Hp8Y" role="3clFbw">
-            <node concept="37vLTw" id="2$TY9D5Hoqm" role="2Oq$k0">
-              <ref role="3cqZAo" node="2$TY9D5HgcD" resolve="columnCheckInfo" />
+          <node concept="22lmx$" id="6RKU0s8jB4P" role="3clFbw">
+            <node concept="2OqwBi" id="6RKU0s8jFc6" role="3uHU7w">
+              <node concept="37vLTw" id="6RKU0s8jDZL" role="2Oq$k0">
+                <ref role="3cqZAo" node="2DHgAdqaPLr" resolve="cellCheck" />
+              </node>
+              <node concept="3TrcHB" id="6RKU0s8jGUt" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:6RKU0s7_xwJ" resolve="ignoreCellCheck" />
+              </node>
             </node>
-            <node concept="3TrcHB" id="2$TY9D5Hqzq" role="2OqNvi">
-              <ref role="3TsBF5" to="53m0:6RKU0s7_yzi" resolve="ignore" />
+            <node concept="2OqwBi" id="2$TY9D5Hp8Y" role="3uHU7B">
+              <node concept="37vLTw" id="2$TY9D5Hoqm" role="2Oq$k0">
+                <ref role="3cqZAo" node="2$TY9D5HgcD" resolve="columnCheckInfo" />
+              </node>
+              <node concept="3TrcHB" id="2$TY9D5Hqzq" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:6RKU0s7_yzi" resolve="ignoreChecksOnColumn" />
+              </node>
             </node>
           </node>
           <node concept="9aQIb" id="2$TY9D5HsMB" role="9aQIa">
             <node concept="3clFbS" id="2$TY9D5HsMC" role="9aQI4">
-              <node concept="3cpWs8" id="2DHgAdqaPLq" role="3cqZAp">
-                <node concept="3cpWsn" id="2DHgAdqaPLr" role="3cpWs9">
-                  <property role="TrG5h" value="cellCheck" />
-                  <node concept="3Tqbb2" id="2DHgAdqaPLs" role="1tU5fm">
-                    <ref role="ehGHo" to="53m0:XX1C5W18Ry" resolve="WidgetCellCheck" />
-                  </node>
-                  <node concept="1y4W85" id="2DHgAdqaPLt" role="33vP2m">
-                    <node concept="37vLTw" id="2DHgAdqaPLu" role="1y58nS">
-                      <ref role="3cqZAo" node="2DHgAdqaPKO" resolve="column" />
-                    </node>
-                    <node concept="2OqwBi" id="2DHgAdqaPLv" role="1y566C">
-                      <node concept="37vLTw" id="2DHgAdqbyng" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2DHgAdqbyn8" resolve="checkRow" />
-                      </node>
-                      <node concept="3Tsc0h" id="2DHgAdqaPLB" role="2OqNvi">
-                        <ref role="3TtcxE" to="53m0:XX1C5W00nU" resolve="cellChecks" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbF" id="2$TY9D5HkXt" role="3cqZAp">
                 <node concept="37vLTI" id="2$TY9D5HkXv" role="3clFbG">
                   <node concept="2OqwBi" id="2DHgAdqaPLF" role="37vLTx">
@@ -8724,6 +8816,22 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="44HS8_5s7Eo" role="3cqZAp">
+          <node concept="3cpWsn" id="44HS8_5s7Ep" role="3cpWs9">
+            <property role="TrG5h" value="cellCheck" />
+            <node concept="3Tqbb2" id="44HS8_5s7Eq" role="1tU5fm">
+              <ref role="ehGHo" to="53m0:XX1C5W18Ry" resolve="WidgetCellCheck" />
+            </node>
+            <node concept="2OqwBi" id="44HS8_5s7Et" role="33vP2m">
+              <node concept="37vLTw" id="6RKU0s6rkF0" role="2Oq$k0">
+                <ref role="3cqZAo" node="6RKU0s6rkES" resolve="checkRow" />
+              </node>
+              <node concept="3TrEf2" id="44HS8_5sLaR" role="2OqNvi">
+                <ref role="3Tt5mk" to="53m0:5MibNhOn8Oc" resolve="cellCheck" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="2$TY9D5HMvh" role="3cqZAp" />
         <node concept="3cpWs8" id="44HS8_5s7EA" role="3cqZAp">
           <node concept="3cpWsn" id="44HS8_5s7EB" role="3cpWs9">
@@ -8745,7 +8853,7 @@
                       <ref role="3cqZAo" node="44HS8_5s7DI" resolve="context" />
                     </node>
                     <node concept="37vLTw" id="2$TY9D5HKRh" role="37wK5m">
-                      <ref role="3cqZAo" node="2$TY9D5HF1i" resolve="columnCheckInfo" />
+                      <ref role="3cqZAo" node="44HS8_5s7Ep" resolve="cellCheck" />
                     </node>
                     <node concept="Xl_RD" id="2$TY9D5HKRi" role="37wK5m">
                       <property role="Xl_RC" value="." />
@@ -8758,32 +8866,26 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="2$TY9D5HH47" role="3clFbw">
-            <node concept="37vLTw" id="2$TY9D5HG0b" role="2Oq$k0">
-              <ref role="3cqZAo" node="2$TY9D5HF1i" resolve="columnCheckInfo" />
+          <node concept="22lmx$" id="6RKU0s8jSZr" role="3clFbw">
+            <node concept="2OqwBi" id="2$TY9D5HH47" role="3uHU7B">
+              <node concept="37vLTw" id="2$TY9D5HG0b" role="2Oq$k0">
+                <ref role="3cqZAo" node="2$TY9D5HF1i" resolve="columnCheckInfo" />
+              </node>
+              <node concept="3TrcHB" id="2$TY9D5HHF6" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:6RKU0s7_yzi" resolve="ignoreChecksOnColumn" />
+              </node>
             </node>
-            <node concept="3TrcHB" id="2$TY9D5HHF6" role="2OqNvi">
-              <ref role="3TsBF5" to="53m0:6RKU0s7_yzi" resolve="ignore" />
+            <node concept="2OqwBi" id="6RKU0s8jTp9" role="3uHU7w">
+              <node concept="37vLTw" id="6RKU0s8jTpa" role="2Oq$k0">
+                <ref role="3cqZAo" node="44HS8_5s7Ep" resolve="cellCheck" />
+              </node>
+              <node concept="3TrcHB" id="6RKU0s8jTpb" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:6RKU0s7_xwJ" resolve="ignoreCellCheck" />
+              </node>
             </node>
           </node>
           <node concept="9aQIb" id="2$TY9D5HI5j" role="9aQIa">
             <node concept="3clFbS" id="2$TY9D5HI5k" role="9aQI4">
-              <node concept="3cpWs8" id="44HS8_5s7Eo" role="3cqZAp">
-                <node concept="3cpWsn" id="44HS8_5s7Ep" role="3cpWs9">
-                  <property role="TrG5h" value="cellCheck" />
-                  <node concept="3Tqbb2" id="44HS8_5s7Eq" role="1tU5fm">
-                    <ref role="ehGHo" to="53m0:XX1C5W18Ry" resolve="WidgetCellCheck" />
-                  </node>
-                  <node concept="2OqwBi" id="44HS8_5s7Et" role="33vP2m">
-                    <node concept="37vLTw" id="6RKU0s6rkF0" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6RKU0s6rkES" resolve="checkRow" />
-                    </node>
-                    <node concept="3TrEf2" id="44HS8_5sLaR" role="2OqNvi">
-                      <ref role="3Tt5mk" to="53m0:5MibNhOn8Oc" resolve="cellCheck" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbF" id="2$TY9D5H_45" role="3cqZAp">
                 <node concept="37vLTI" id="2$TY9D5H_47" role="3clFbG">
                   <node concept="2OqwBi" id="44HS8_5s7ED" role="37vLTx">

@@ -712,7 +712,7 @@
     </node>
     <node concept="1TJgyi" id="6RKU0s7_xwJ" role="1TKVEl">
       <property role="IQ2nx" value="7922086861434394671" />
-      <property role="TrG5h" value="ignore" />
+      <property role="TrG5h" value="ignoreCellCheck" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
@@ -1125,7 +1125,7 @@
     </node>
     <node concept="1TJgyi" id="6RKU0s7_yzi" role="1TKVEl">
       <property role="IQ2nx" value="7922086861434398930" />
-      <property role="TrG5h" value="ignore" />
+      <property role="TrG5h" value="ignoreChecksOnColumn" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>

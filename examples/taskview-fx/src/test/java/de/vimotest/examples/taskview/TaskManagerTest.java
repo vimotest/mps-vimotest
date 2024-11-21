@@ -1,5 +1,7 @@
 package de.vimotest.examples.taskview;
 
+import de.vimotest.examples.taskview.logic.TaskManager;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class TaskManagerTest {

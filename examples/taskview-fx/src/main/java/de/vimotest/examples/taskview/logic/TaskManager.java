@@ -1,4 +1,4 @@
-package de.vimotest.examples.taskview;
+package de.vimotest.examples.taskview.logic;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package de.vimotest.examples.taskview;
+package de.vimotest.examples.taskview.logic;
 
 public class Task {
     private String name;

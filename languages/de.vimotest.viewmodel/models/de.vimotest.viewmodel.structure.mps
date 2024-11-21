@@ -1279,7 +1279,25 @@
       <property role="IQ2nx" value="6112733486502585640" />
       <property role="TrG5h" value="separateControllerViewModel" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="t5JxF" id="5jkMFw_BNsv" role="lGtFl" />
+      <node concept="t5JxF" id="5jkMFw_BNsv" role="lGtFl">
+        <property role="t5JxN" value="Controls if a separate controller class for commands is generated" />
+      </node>
+    </node>
+    <node concept="1TJgyi" id="7Ymnhjiw4kA" role="1TKVEl">
+      <property role="IQ2nx" value="9193638033335797030" />
+      <property role="TrG5h" value="generateAbstractViewModel" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="7Ymnhjiw4kB" role="lGtFl">
+        <property role="t5JxN" value="Controls if an abstract ViewModel class shall be generated, where only getters are declared" />
+      </node>
+    </node>
+    <node concept="1TJgyi" id="7Ymnhjiw4zS" role="1TKVEl">
+      <property role="IQ2nx" value="9193638033335798008" />
+      <property role="TrG5h" value="generateTableUpdatingProperties" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="7Ymnhjiw4zT" role="lGtFl">
+        <property role="t5JxN" value="TODO: implement;  Controls if table updating flags are generated" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="2N4oO4qvcUb">

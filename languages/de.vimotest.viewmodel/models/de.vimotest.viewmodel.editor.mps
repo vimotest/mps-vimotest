@@ -3810,6 +3810,23 @@
           <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
         </node>
       </node>
+      <node concept="2yq9I_" id="7Ymnhjiw4kC" role="3EZMnx">
+        <ref role="225u1j" to="at53:7Ymnhjiw4kA" resolve="generateAbstractViewModel" />
+        <node concept="1563Vb" id="7Ymnhjiw4kD" role="1563LE">
+          <property role="1563UK" value="[ ]" />
+          <property role="1563Ve" value="[x]" />
+        </node>
+        <node concept="pVoyu" id="7Ymnhjiw4kE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="7Ymnhjiw4kF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="7Ymnhjiw4kG" role="2fqkNU">
+          <property role="3F0ifm" value="generate abstract ViewModel" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        </node>
+      </node>
       <node concept="l2Vlx" id="5jkMFwuLz8t" role="2iSdaV" />
     </node>
   </node>

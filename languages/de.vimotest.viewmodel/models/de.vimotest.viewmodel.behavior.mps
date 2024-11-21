@@ -7222,6 +7222,30 @@
       <node concept="3Tm1VV" id="5jkMFw_KALY" role="1B3o_S" />
       <node concept="10P_77" id="5jkMFw_KBak" role="3clF45" />
     </node>
+    <node concept="2YIFZL" id="7YmnhjiwcRB" role="jymVt">
+      <property role="TrG5h" value="generateAbstractViewModel" />
+      <node concept="3clFbS" id="7YmnhjiwcRE" role="3clF47">
+        <node concept="3clFbF" id="7YmnhjiwgLV" role="3cqZAp">
+          <node concept="2OqwBi" id="7YmnhjiwgLW" role="3clFbG">
+            <node concept="1rXfSq" id="7YmnhjiwgLX" role="2Oq$k0">
+              <ref role="37wK5l" node="Of5vVZ$0xU" resolve="getGenerationConfig" />
+              <node concept="37vLTw" id="7YmnhjiwgLY" role="37wK5m">
+                <ref role="3cqZAo" node="7Ymnhjiwd34" resolve="node" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="7YmnhjiwgLZ" role="2OqNvi">
+              <ref role="3TsBF5" to="at53:7Ymnhjiw4kA" resolve="generateAbstractViewModel" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7Ymnhjiwcw6" role="1B3o_S" />
+      <node concept="10P_77" id="7YmnhjiwcQD" role="3clF45" />
+      <node concept="37vLTG" id="7Ymnhjiwd34" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="7Ymnhjiwd33" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="2YIFZL" id="Of5vVZ$0xU" role="jymVt">
       <property role="TrG5h" value="getGenerationConfig" />
       <node concept="37vLTG" id="Of5vVZ$0yx" role="3clF46">

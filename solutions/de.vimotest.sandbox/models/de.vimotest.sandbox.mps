@@ -164,7 +164,7 @@
         <reference id="5678667081004731049" name="widget" index="3ucQsQ" />
       </concept>
       <concept id="7922086861434398150" name="de.vimotest.viewmodel.testing.structure.ColumnCheckInfo" flags="ng" index="1EpGR1">
-        <property id="7922086861434398930" name="ignore" index="1EpG3l" />
+        <property id="7922086861434398930" name="ignoreChecksOnColumn" index="1EpG3l" />
         <reference id="7922086861434398929" name="columnDefinition" index="1EpG3m" />
       </concept>
       <concept id="7922086861330453140" name="de.vimotest.viewmodel.testing.structure.ToolTipCheckValue" flags="ng" index="1G_fEj">
@@ -4544,6 +4544,43 @@
         </node>
       </node>
       <node concept="1s$VFG" id="5ZcB1Gh1dVt" role="1s$QAY" />
+    </node>
+  </node>
+  <node concept="103ZX$" id="7Ymnhjip$__">
+    <property role="3GE5qa" value="examples.tasks" />
+    <property role="TrG5h" value="TaskListViewModel" />
+    <node concept="103ZXx" id="7Ymnhjip$_A" role="103ZXC">
+      <node concept="3Vw88J" id="7Ymnhjip$_B" role="1006ar">
+        <property role="TrG5h" value="LoadView" />
+      </node>
+    </node>
+    <node concept="103ZXB" id="7Ymnhjip$_C" role="103ZXF">
+      <node concept="3UVeDL" id="7Ymnhjip$_D" role="103ZUC">
+        <property role="TrG5h" value="Tasks" />
+        <node concept="2nep4R" id="7Ymnhjip$_E" role="2azj8S">
+          <node concept="V3ZfZ" id="7Ymnhjip$_L" role="2nerJI">
+            <property role="TrG5h" value="Name" />
+            <node concept="V3Zf6" id="7Ymnhjip$_S" role="V3ZfK">
+              <node concept="o7Kjd" id="7Ymnhjip$_Z" role="o6p68" />
+            </node>
+            <node concept="C4FCh" id="7Ymnhjip$A6" role="V3ZfL" />
+            <node concept="C4FCg" id="7Ymnhjip$Ad" role="V3ZfM" />
+            <node concept="1G_fEc" id="7Ymnhjip$Ak" role="1G_fIJ" />
+          </node>
+        </node>
+        <node concept="3KuuIt" id="7Ymnhjip$Ar" role="3UVeDY">
+          <node concept="3D8xT1" id="7Ymnhjip$As" role="3D86r8">
+            <property role="34jNyx" value="1RiAxJSewmn/StringRowHandle" />
+          </node>
+          <node concept="3D8CoO" id="7Ymnhjip$At" role="3D86r9" />
+        </node>
+        <node concept="1i$ol" id="7Ymnhjip$Au" role="3UVeDZ">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCg" id="7Ymnhjip$Av" role="3UVeDW" />
+        <node concept="C4FCh" id="7Ymnhjip$Aw" role="3UVeDX" />
+        <node concept="3Vw88G" id="7Ymnhjip$Ax" role="2WQ0rd" />
+      </node>
     </node>
   </node>
 </model>

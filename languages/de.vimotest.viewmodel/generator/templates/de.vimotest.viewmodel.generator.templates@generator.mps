@@ -835,6 +835,21 @@
           </node>
           <node concept="15s5l7" id="7FAtRx_8Iwj" role="lGtFl" />
         </node>
+        <node concept="1W57fq" id="7YmnhjiwigN" role="lGtFl">
+          <node concept="3IZrLx" id="7YmnhjiwigQ" role="3IZSJc">
+            <node concept="3clFbS" id="7YmnhjiwigR" role="2VODD2">
+              <node concept="3clFbF" id="7YmnhjiwiTV" role="3cqZAp">
+                <node concept="3fqX7Q" id="7YmnhjiwiTW" role="3clFbG">
+                  <node concept="2YIFZM" id="7YmnhjiwiTX" role="3fr31v">
+                    <ref role="37wK5l" to="nrs2:7YmnhjiwcRB" resolve="generateAbstractViewModel" />
+                    <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                    <node concept="30H73N" id="7YmnhjiwiTY" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="6nSm6" id="2evlxT959XX" role="PCHHv">
         <property role="TrG5h" value="getWidgetFeature" />
@@ -845,6 +860,21 @@
                 <node concept="_iR_j" id="2evlxT95a09" role="32Men7" />
                 <node concept="_vnHe" id="2evlxT95a0y" role="32Men1">
                   <ref role="3acloq" node="2evlxT94Bv3" resolve="widgetFeature" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1W57fq" id="7YmnhjiwjT3" role="lGtFl">
+            <node concept="3IZrLx" id="7YmnhjiwjT4" role="3IZSJc">
+              <node concept="3clFbS" id="7YmnhjiwjT5" role="2VODD2">
+                <node concept="3clFbF" id="7Ymnhjiwk3O" role="3cqZAp">
+                  <node concept="3fqX7Q" id="7Ymnhjiwk3P" role="3clFbG">
+                    <node concept="2YIFZM" id="7Ymnhjiwk3Q" role="3fr31v">
+                      <ref role="37wK5l" to="nrs2:7YmnhjiwcRB" resolve="generateAbstractViewModel" />
+                      <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                      <node concept="30H73N" id="7Ymnhjiwk3R" role="37wK5m" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -2459,6 +2489,21 @@
             </node>
           </node>
         </node>
+        <node concept="1W57fq" id="7Ymnhjiw7Q4" role="lGtFl">
+          <node concept="3IZrLx" id="7Ymnhjiw7Q5" role="3IZSJc">
+            <node concept="3clFbS" id="7Ymnhjiw7Q6" role="2VODD2">
+              <node concept="3clFbF" id="7Ymnhjiw8cr" role="3cqZAp">
+                <node concept="3fqX7Q" id="7YmnhjiwgLr" role="3clFbG">
+                  <node concept="2YIFZM" id="7YmnhjiwgLt" role="3fr31v">
+                    <ref role="37wK5l" to="nrs2:7YmnhjiwcRB" resolve="generateAbstractViewModel" />
+                    <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                    <node concept="30H73N" id="7YmnhjiwgLu" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="6nSm6" id="5veytyjPf6o" role="PCHHv">
         <property role="TrG5h" value="getWidgetFeature" />
@@ -2469,6 +2514,21 @@
                 <node concept="_iR_j" id="5veytyjPf6t" role="32Men7" />
                 <node concept="_vnHe" id="5veytyjPf6u" role="32Men1">
                   <ref role="3acloq" node="5veytyjPf62" resolve="widgetFeature" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1W57fq" id="7YmnhjiwkWr" role="lGtFl">
+            <node concept="3IZrLx" id="7YmnhjiwkWs" role="3IZSJc">
+              <node concept="3clFbS" id="7YmnhjiwkWt" role="2VODD2">
+                <node concept="3clFbF" id="7Ymnhjiwl8G" role="3cqZAp">
+                  <node concept="3fqX7Q" id="7Ymnhjiwl8H" role="3clFbG">
+                    <node concept="2YIFZM" id="7Ymnhjiwl8I" role="3fr31v">
+                      <ref role="37wK5l" to="nrs2:7YmnhjiwcRB" resolve="generateAbstractViewModel" />
+                      <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                      <node concept="30H73N" id="7Ymnhjiwl8J" role="37wK5m" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>

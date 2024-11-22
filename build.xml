@@ -959,6 +959,7 @@
           <language id="l:611ecc9e-0703-4ab9-a13c-fb396c607716:de.vimotest.types" />
           <language id="l:ce7915b5-36b4-4478-a67c-f5a8a72ed4a0:de.vimotest.viewmodel" />
           <language id="l:716e8717-88c0-4280-8c16-b4d88567596f:de.vimotest.viewmodel.testing" />
+          <language id="l:479c7a8c-02f9-43b5-9139-d910cb22f298:jetbrains.mps.core.xml" />
         </uses>
         <classpath>
           <entry path="." />

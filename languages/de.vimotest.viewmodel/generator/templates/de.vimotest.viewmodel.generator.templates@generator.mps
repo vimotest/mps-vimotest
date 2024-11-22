@@ -315,6 +315,9 @@
       <concept id="2674824929519835220" name="alfi.structure.NameBinding" flags="ng" index="_vnHe">
         <reference id="3855977438835276054" name="nameRef" index="3acloq" />
       </concept>
+      <concept id="8164141882416860677" name="alfi.structure.ICanBeAbstract" flags="ngI" index="G55nc">
+        <property id="3328952194368015168" name="isAbstract" index="PCHGy" />
+      </concept>
       <concept id="8164141882417537798" name="alfi.structure.IHasReturnParameter" flags="ngI" index="Gbzzf">
         <child id="4507289605805843609" name="returnParameter" index="NkNyt" />
       </concept>
@@ -792,6 +795,21 @@
           </node>
         </node>
       </node>
+      <node concept="17Uvod" id="6RKU0saNtjo" role="lGtFl">
+        <property role="2qtEX9" value="isAbstract" />
+        <property role="P4ACc" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8164141882416860677/3328952194368015168" />
+        <node concept="3zFVjK" id="6RKU0saNtjp" role="3zH0cK">
+          <node concept="3clFbS" id="6RKU0saNtjq" role="2VODD2">
+            <node concept="3clFbF" id="6RKU0saNtzB" role="3cqZAp">
+              <node concept="2YIFZM" id="6RKU0saNtZ5" role="3clFbG">
+                <ref role="37wK5l" to="nrs2:7YmnhjiwcRB" resolve="generateAbstractViewModel" />
+                <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                <node concept="30H73N" id="6RKU0saNu04" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13MO4I" id="2evlxT94_Eb">
@@ -916,6 +934,21 @@
               <ref role="v9R2y" node="1xbm1_J1_1" resolve="switch_ViewWidgetFeature_multiplicity" />
             </node>
             <node concept="15s5l7" id="7FAtRx_8OrB" role="lGtFl" />
+          </node>
+        </node>
+        <node concept="17Uvod" id="6RKU0saNwLq" role="lGtFl">
+          <property role="2qtEX9" value="isAbstract" />
+          <property role="P4ACc" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8164141882416860677/3328952194368015168" />
+          <node concept="3zFVjK" id="6RKU0saNwLr" role="3zH0cK">
+            <node concept="3clFbS" id="6RKU0saNwLs" role="2VODD2">
+              <node concept="3clFbF" id="6RKU0saNxrn" role="3cqZAp">
+                <node concept="2YIFZM" id="6RKU0saNxrp" role="3clFbG">
+                  <ref role="37wK5l" to="nrs2:7YmnhjiwcRB" resolve="generateAbstractViewModel" />
+                  <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                  <node concept="30H73N" id="6RKU0saNxrq" role="37wK5m" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -1642,6 +1675,21 @@
                   </node>
                   <node concept="17RvpY" id="5jkMFwxgdQC" role="2OqNvi" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17Uvod" id="6RKU0sb4$WJ" role="lGtFl">
+        <property role="2qtEX9" value="isAbstract" />
+        <property role="P4ACc" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8164141882416860677/3328952194368015168" />
+        <node concept="3zFVjK" id="6RKU0sb4$WK" role="3zH0cK">
+          <node concept="3clFbS" id="6RKU0sb4$WL" role="2VODD2">
+            <node concept="3clFbF" id="6RKU0sb4ANW" role="3cqZAp">
+              <node concept="2YIFZM" id="6RKU0sb4B2f" role="3clFbG">
+                <ref role="37wK5l" to="nrs2:7YmnhjiwcRB" resolve="generateAbstractViewModel" />
+                <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                <node concept="30H73N" id="6RKU0sb4B37" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -2575,6 +2623,21 @@
             </node>
           </node>
         </node>
+        <node concept="17Uvod" id="6RKU0saNyde" role="lGtFl">
+          <property role="2qtEX9" value="isAbstract" />
+          <property role="P4ACc" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8164141882416860677/3328952194368015168" />
+          <node concept="3zFVjK" id="6RKU0saNydf" role="3zH0cK">
+            <node concept="3clFbS" id="6RKU0saNydg" role="2VODD2">
+              <node concept="3clFbF" id="6RKU0saNysQ" role="3cqZAp">
+                <node concept="2YIFZM" id="6RKU0saNysS" role="3clFbG">
+                  <ref role="37wK5l" to="nrs2:7YmnhjiwcRB" resolve="generateAbstractViewModel" />
+                  <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                  <node concept="30H73N" id="6RKU0saNysT" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -3235,6 +3298,7 @@
     <node concept="6nSm2" id="5jkMFw_KwbO" role="3mGtxP">
       <property role="TrG5h" value="root_mapping_ViewController" />
       <property role="PCHHn" value="6OepWIVA92I/package" />
+      <property role="PCHGy" value="true" />
       <node concept="17Uvod" id="5jkMFw_KwbP" role="lGtFl">
         <property role="2qtEX9" value="name" />
         <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />

@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="0" />
+    <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing" version="0" />
   </languages>
   <imports />
   <registry>
@@ -12,11 +13,13 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing">
+      <concept id="3426401106044983339" name="de.vimotest.viewmodel.testing.structure.ViewModelFeatureTestSuite" flags="ng" index="30n1Qd">
+        <reference id="3426401106044983489" name="targetViewModel" index="30n1PB" />
       </concept>
     </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
@@ -75,7 +78,6 @@
     </language>
   </registry>
   <node concept="103ZX$" id="7Ymnhjip$__">
-    <property role="3GE5qa" value="de.vimotest.examples.taskview" />
     <property role="TrG5h" value="TaskListViewModel" />
     <node concept="103ZXx" id="7Ymnhjip$_A" role="103ZXC">
       <node concept="3Vw88J" id="7Ymnhjip$_B" role="1006ar">
@@ -115,6 +117,10 @@
   </node>
   <node concept="1a4JyI" id="6RKU0sb4zem">
     <property role="2H5xwM" value="true" />
+  </node>
+  <node concept="30n1Qd" id="4BsP8DhTlOz">
+    <property role="TrG5h" value="TaskListViewModelTests" />
+    <ref role="30n1PB" node="7Ymnhjip$__" resolve="TaskListViewModel" />
   </node>
 </model>
 

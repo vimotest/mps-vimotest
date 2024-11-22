@@ -1,0 +1,32 @@
+
+
+private import Testing ;
+
+class TaskListViewModelTests {
+  
+  private sut : TaskListViewModel  ;
+  
+  private contextProvider : TaskListViewModelContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new TaskListViewModelContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+}

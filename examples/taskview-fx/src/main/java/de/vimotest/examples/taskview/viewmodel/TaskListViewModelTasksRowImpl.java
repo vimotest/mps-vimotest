@@ -1,16 +1,17 @@
 package de.vimotest.examples.taskview.viewmodel;
 
+import de.vimotest.examples.taskview.TaskListViewModelTasksRow;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-public class TaskViewModel {
+public class TaskListViewModelTasksRowImpl extends TaskListViewModelTasksRow {
     private StringProperty id;
     private StringProperty name;
     private StringProperty dueDate;
     private StringProperty priority;
     private StringProperty status;
 
-    public TaskViewModel(String id, String name, String dueDate, String priority, String status) {
+    public TaskListViewModelTasksRowImpl(String id, String name, String dueDate, String priority, String status) {
         this.id = new SimpleStringProperty(id);
         this.name = new SimpleStringProperty(name);
         this.dueDate = new SimpleStringProperty(dueDate);
@@ -78,4 +79,13 @@ public class TaskViewModel {
         this.status.set(status);
     }
 
+    @Override
+    public String getNameText() {
+        return "";
+    }
+
+    @Override
+    public String getRowHandle() {
+        return "";
+    }
 }

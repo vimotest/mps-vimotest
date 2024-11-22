@@ -12,6 +12,44 @@ java {
     targetCompatibility = JavaVersion.VERSION_17
 }
 
+def vimotestProjectDir = "$projectDir/../.."
+def generatedDir = "$vimotestProjectDir/solutions/de.vimotest.sandbox/source_gen"
+
+sourceSets {
+    main {
+        java {
+            srcDirs 'src/generated/java'
+        }
+    }
+    test {
+        java {
+            srcDirs 'src/generated/test'
+        }
+    }
+}
+
+task copyGeneratedSources(type: Copy) {
+    from generatedDir
+    into 'src/generated/java' // Choose a directory within your project
+    include 'de/vimotest/examples/taskview/**/*.java'
+    exclude '**/*Test.java'
+}
+
+task copyGeneratedTests(type: Copy) {
+    from generatedDir
+    into 'src/generated/test' // Choose a directory within your project
+    include 'de/vimotest/examples/taskview/**/*Test.java'
+}
+
+compileJava.dependsOn copyGeneratedSources
+// Ensure the test task also depends on the copy task
+test.dependsOn copyGeneratedSources
+
+// Optionally, clean the generated directory to avoid stale files
+clean.doLast {
+    delete 'src/generated'
+}
+
 javafx {
     version = '17.0.9'
     modules = ['javafx.controls', 'javafx.fxml', 'javafx.web', 'javafx.media']

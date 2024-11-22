@@ -40,7 +40,6 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/commands/ClickCommand_View.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/LoadCommand_View.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_View.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/examples/login/LoginView.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_View.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_View.cpp
   ${CMAKE_CURRENT_LIST_DIR}/bindings/NameBinding_View.cpp
@@ -62,7 +61,6 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/commands/ClickCommand_ViewContextProvider.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/LoadCommand_ViewContextProvider.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/examples/login/LoginViewContextProvider.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewContextProvider.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewContextProvider.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/StringContext_ViewContextProvider.cpp
@@ -109,7 +107,6 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/commands/ClickCommand_View.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/LoadCommand_View.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_View.h
-  ${CMAKE_CURRENT_LIST_DIR}/examples/login/LoginView.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_View.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_View.h
   ${CMAKE_CURRENT_LIST_DIR}/bindings/NameBinding_View.h
@@ -131,7 +128,6 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/commands/ClickCommand_ViewContextProvider.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/LoadCommand_ViewContextProvider.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/examples/login/LoginViewContextProvider.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewContextProvider.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewContextProvider.h
   ${CMAKE_CURRENT_LIST_DIR}/context/StringContext_ViewContextProvider.h

@@ -3,7 +3,7 @@
 
 #include <string>
 
-namespace examples::login
+namespace de::vimotest::examples::loginview
 {
   class LoginView
   {

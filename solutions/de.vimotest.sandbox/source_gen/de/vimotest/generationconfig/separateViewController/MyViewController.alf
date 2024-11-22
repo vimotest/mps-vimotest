@@ -2,7 +2,7 @@
 
 
 
-class MyViewController {
+abstract class MyViewController {
   
   public LoadView (  ) {     }
   

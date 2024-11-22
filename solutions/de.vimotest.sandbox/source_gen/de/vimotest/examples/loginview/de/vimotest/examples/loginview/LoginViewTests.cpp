@@ -5,7 +5,7 @@
 #include "LoginView.h"
 #include <string>
 
-namespace examples::login
+namespace de::vimotest::examples::loginview
 {
   class LoginViewTests : public testing::Test
   {

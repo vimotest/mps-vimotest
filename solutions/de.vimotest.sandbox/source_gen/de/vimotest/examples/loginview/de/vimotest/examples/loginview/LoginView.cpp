@@ -3,7 +3,7 @@
 #include "LoginView.h"
 #include <string>
 
-namespace examples::login
+namespace de::vimotest::examples::loginview
 {
   std::string LoginView::getUsernameText( ) 
   {

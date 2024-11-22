@@ -1,4 +1,4 @@
-namespace examples:: login ;
+namespace de:: vimotest:: examples:: loginview ;
 
 private import Testing ;
 

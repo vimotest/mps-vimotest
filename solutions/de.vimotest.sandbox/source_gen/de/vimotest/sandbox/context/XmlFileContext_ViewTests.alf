@@ -34,7 +34,9 @@ class XmlFileContext_ViewTests {
   // Given Helper Definitions
 
   
-  private XmlFile_NoExternalFile : String = "<XML file as string literal is not supported yet>";
+  private XmlFile_NoExternalFile : String = "<MyXML>  "
+"  <Inner></Inner>"
+"</MyXML>";
   
   public given_XmlFile_NoExternalFile (  ) {
   this.contextProvider.SetXmlFileContext ( this.XmlFile_NoExternalFile );

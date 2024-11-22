@@ -13,7 +13,9 @@ namespace context
     std::shared_ptr<XmlFileContext_View> sut;
     std::shared_ptr<XmlFileContext_ViewContextProvider> contextProvider;
     virtual void BuildSut() ;
-    std::string XmlFile_NoExternalFile = std::string("<XML file as string literal is not supported yet>");
+    std::string XmlFile_NoExternalFile = std::string("<MyXML>  "
+"  <Inner></Inner>"
+"</MyXML>");
     virtual void given_XmlFile_NoExternalFile() ;
     virtual void given_XmlFile_ExternalFile() ;
     protected:

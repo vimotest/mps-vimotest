@@ -4,7 +4,7 @@
 #include <memory>
 #include "LoginView.h"
 
-namespace examples::login
+namespace de::vimotest::examples::loginview
 {
   void LoginViewContextProvider::Init( ) 
   {

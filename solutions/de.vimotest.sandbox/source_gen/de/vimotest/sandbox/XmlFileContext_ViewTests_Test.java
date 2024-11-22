@@ -10,7 +10,7 @@ import org.junit.jupiter.api.BeforeEach;
 public class XmlFileContext_ViewTests_Test {
   private XmlFileContext_View sut;
   private XmlFileContext_ViewContextProvider contextProvider;
-  private String XmlFile_NoExternalFile = "<XML file as string literal is not supported yet>";
+  private String XmlFile_NoExternalFile = "<MyXML>  \"\n\"  <Inner></Inner>\"\n\"</MyXML>";
   @Test
   public void test_XmlFile_NoExternalFile_given_XmlFile_NoExternalFile_when_then_() throws Exception {
     this.given_XmlFile_NoExternalFile();

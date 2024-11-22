@@ -18,8 +18,38 @@
       </concept>
     </language>
     <language id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing">
+      <concept id="8948051009467167877" name="de.vimotest.viewmodel.testing.structure.ViewCommandInvocationAction" flags="ng" index="27s6xY">
+        <reference id="8948051009467187564" name="targetCommand" index="27sXQn" />
+      </concept>
+      <concept id="5447508759369797102" name="de.vimotest.viewmodel.testing.structure.WidgetTableRowsCheckValue" flags="ng" index="2ayrQO">
+        <child id="7922086861434398932" name="columnCheckInfos" index="1EpG3j" />
+      </concept>
+      <concept id="7445061853131767032" name="de.vimotest.viewmodel.testing.structure.ThenDescriptionWithAssert" flags="ng" index="DUd2R">
+        <child id="7445061853131768388" name="assert" index="DUiSb" />
+      </concept>
+      <concept id="7445061853131767061" name="de.vimotest.viewmodel.testing.structure.WhenDescriptionWithAction" flags="ng" index="DUd5q">
+        <child id="7445061853131768390" name="action" index="DUiS9" />
+      </concept>
       <concept id="3426401106044983339" name="de.vimotest.viewmodel.testing.structure.ViewModelFeatureTestSuite" flags="ng" index="30n1Qd">
         <reference id="3426401106044983489" name="targetViewModel" index="30n1PB" />
+        <child id="3426401106044983341" name="tests" index="30n1Qb" />
+      </concept>
+      <concept id="3426401106045121475" name="de.vimotest.viewmodel.testing.structure.ViewWidgetAssertion" flags="ng" index="30nzp_">
+        <reference id="3426401106045121502" name="widget" index="30nzpS" />
+        <child id="3426401106045146960" name="check" index="30nDbQ" />
+      </concept>
+      <concept id="7199841511154467673" name="de.vimotest.viewmodel.testing.structure.ComposedWhenThenParts" flags="ng" index="1s$VFG">
+        <child id="7199841511154487303" name="actionsWithDescription" index="1s$QAM" />
+        <child id="7199841511154487304" name="assertsWithDescription" index="1s$QAX" />
+      </concept>
+      <concept id="7922086861434398150" name="de.vimotest.viewmodel.testing.structure.ColumnCheckInfo" flags="ng" index="1EpGR1">
+        <reference id="7922086861434398929" name="columnDefinition" index="1EpG3m" />
+      </concept>
+      <concept id="7205622933660482722" name="de.vimotest.viewmodel.testing.structure.ViewModelTestScenario" flags="ng" index="3LKzX3">
+        <child id="7199841511154487307" name="whenThenDescriptions" index="1s$QAY" />
+      </concept>
+      <concept id="2392128244454154708" name="de.vimotest.viewmodel.testing.structure.TableViewCheck" flags="ng" index="3UVeCy">
+        <child id="2392128244454154709" name="checks" index="3UVeCz" />
       </concept>
     </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
@@ -121,6 +151,28 @@
   <node concept="30n1Qd" id="4BsP8DhTlOz">
     <property role="TrG5h" value="TaskListViewModelTests" />
     <ref role="30n1PB" node="7Ymnhjip$__" resolve="TaskListViewModel" />
+    <node concept="3LKzX3" id="A24d4VoRo1" role="30n1Qb">
+      <property role="TrG5h" value="Load Empty Tasks" />
+      <node concept="1s$VFG" id="A24d4VoRo4" role="1s$QAY">
+        <node concept="DUd5q" id="A24d4VoRo5" role="1s$QAM">
+          <node concept="27s6xY" id="A24d4VoRo9" role="DUiS9">
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
+          </node>
+        </node>
+        <node concept="DUd2R" id="A24d4VoRo7" role="1s$QAX">
+          <node concept="30nzp_" id="A24d4VoRob" role="DUiSb">
+            <ref role="30nzpS" node="7Ymnhjip$_D" resolve="Tasks" />
+            <node concept="3UVeCy" id="A24d4VoRoc" role="30nDbQ">
+              <node concept="2ayrQO" id="A24d4VoRod" role="3UVeCz">
+                <node concept="1EpGR1" id="A24d4VoRoe" role="1EpG3j">
+                  <ref role="1EpG3m" node="7Ymnhjip$_E" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

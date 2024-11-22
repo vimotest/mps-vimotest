@@ -15,6 +15,12 @@ class TaskListViewModelTests {
  }
   
   
+  public Load_Empty_Tasks_given_when_LoadView_then_Tasks_has_0_rows (  ) {
+  this.BuildSut (  );
+   this.when_LoadView (  );
+   this.then_Tasks_has_0_rows (  );
+ }
+  
   
   protected BuildSut (  ) {
   this.sut = this.contextProvider.BuildSut (  );
@@ -27,6 +33,15 @@ class TaskListViewModelTests {
   // When Helper Definitions
 
   
+  public when_LoadView (  ) {
+  this.sut.LoadView (  );
+ }
+  
   // Then Helper Definitions
 
+  
+  public then_Tasks_has_0_rows (  ) {
+  let actualRows: TaskListViewModelTasksRow [] = this.sut.getTasksWidgetTableRows (  );
+   AssertEqual ( 0, actualRows->size (  ) );
+ }
 }

@@ -32,7 +32,7 @@ task copyGeneratedSources(type: Copy) {
     from generatedDir
     into 'src/generated/java' // Choose a directory within your project
     include 'de/vimotest/examples/taskview/**/*.java'
-    exclude '**/*Test.java'
+    exclude '**/*Test.java', '**/TaskListViewModelContextProvider.java'
 }
 
 task copyGeneratedTests(type: Copy) {
@@ -41,9 +41,8 @@ task copyGeneratedTests(type: Copy) {
     include 'de/vimotest/examples/taskview/**/*Test.java'
 }
 
-compileJava.dependsOn copyGeneratedSources
-// Ensure the test task also depends on the copy task
-test.dependsOn copyGeneratedSources
+compileJava.dependsOn copyGeneratedSources, copyGeneratedTests
+check.dependsOn copyGeneratedSources, copyGeneratedTests
 
 // Optionally, clean the generated directory to avoid stale files
 clean.doLast {
@@ -56,6 +55,7 @@ javafx {
 }
 
 dependencies {
+    testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
 }

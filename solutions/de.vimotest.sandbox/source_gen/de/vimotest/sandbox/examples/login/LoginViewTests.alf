@@ -1,0 +1,198 @@
+namespace examples:: login ;
+
+private import Testing ;
+
+class LoginViewTests {
+  
+  private sut : LoginView  ;
+  
+  private contextProvider : LoginViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new LoginViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public Load_View_on_empty_context_given_empty_context_when_LoadView_and_fill_User_in_Username_and_fill_MyPass123_in_Password_and_check_ShowPassword_then_Username_shows_text_User_and_Password_shows_text_MyPass123_and_Login_is_enabled (  ) {
+  this.given_empty_context (  );
+   this.BuildSut (  );
+   this.when_LoadView (  );
+   this.when_fill_User_in_Username (  );
+   this.when_fill_MyPass123_in_Password (  );
+   this.when_check_ShowPassword (  );
+   this.then_Username_shows_text_User_ (  );
+   this.then_Password_shows_text_MyPass123_ (  );
+   this.then_Login_is_enabled (  );
+ }
+  
+  public Load_View_on_empty_context_given_empty_context_when_LoadView_and_fill_User_in_Username_and_clear_text_in_Password_then_Username_shows_text_User_and_Password_shows_empty_text_and_Login_is_not_enabled (  ) {
+  this.given_empty_context (  );
+   this.BuildSut (  );
+   this.when_LoadView1 (  );
+   this.when_fill_User_in_Username1 (  );
+   this.when_clear_text_in_Password (  );
+   this.then_Username_shows_text_User_1 (  );
+   this.then_Password_shows_empty_text (  );
+   this.then_Login_is_not_enabled (  );
+ }
+  
+  public Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadView_then_Username_shows_text_Ada_and_Password_shows_text_____and_Login_is_enabled (  ) {
+  this.given_prefilledValues (  );
+   this.BuildSut (  );
+   this.when_LoadView2 (  );
+   this.then_Username_shows_text_Ada_ (  );
+   this.then_Password_shows_text_____ (  );
+   this.then_Login_is_enabled1 (  );
+ }
+  
+  public Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadView_and_check_ShowPassword_then_Username_shows_text_Ada_and_Password_shows_text_Lovelace1_and_ShowPassword_is_checked_and_Login_is_enabled (  ) {
+  this.given_prefilledValues (  );
+   this.BuildSut (  );
+   this.when_LoadView3 (  );
+   this.when_check_ShowPassword1 (  );
+   this.then_Username_shows_text_Ada_1 (  );
+   this.then_Password_shows_text_Lovelace1_ (  );
+   this.then_ShowPassword_is_checked (  );
+   this.then_Login_is_enabled2 (  );
+ }
+  
+  public Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadView_and_fill_lovelace_in_Password_and_click_Login_then_ErrorText_shows_text_Needs_uppercase_letters_ (  ) {
+  this.given_prefilledValues (  );
+   this.BuildSut (  );
+   this.when_LoadView4 (  );
+   this.when_fill_lovelace_in_Password (  );
+   this.when_click_Login (  );
+   this.then_ErrorText_shows_text_Needs_uppercase_letters_ (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  public given_empty_context (  ) {     }
+  
+  public given_prefilledValues (  ) {
+  this.contextProvider.SetXmlElementContext (  );
+ }
+  
+  // When Helper Definitions
+
+  
+  public when_LoadView (  ) {
+  this.sut.LoadView (  );
+ }
+  
+  public when_fill_User_in_Username (  ) {
+  this.sut.UsernameTextFilled ( "User" );
+ }
+  
+  public when_fill_MyPass123_in_Password (  ) {
+  this.sut.PasswordTextFilled ( "MyPass123" );
+ }
+  
+  public when_check_ShowPassword (  ) {
+  this.sut.ShowPasswordChecked ( true );
+ }
+  
+  public when_LoadView1 (  ) {
+  this.sut.LoadView (  );
+ }
+  
+  public when_fill_User_in_Username1 (  ) {
+  this.sut.UsernameTextFilled ( "User" );
+ }
+  
+  public when_clear_text_in_Password (  ) {
+  this.sut.PasswordTextFilled ( "" );
+ }
+  
+  public when_LoadView2 (  ) {
+  this.sut.LoadView (  );
+ }
+  
+  public when_LoadView3 (  ) {
+  this.sut.LoadView (  );
+ }
+  
+  public when_check_ShowPassword1 (  ) {
+  this.sut.ShowPasswordChecked ( true );
+ }
+  
+  public when_LoadView4 (  ) {
+  this.sut.LoadView (  );
+ }
+  
+  public when_fill_lovelace_in_Password (  ) {
+  this.sut.PasswordTextFilled ( "lovelace" );
+ }
+  
+  public when_click_Login (  ) {
+  this.sut.LoginClicked (  );
+ }
+  
+  // Then Helper Definitions
+
+  
+  public then_Username_shows_text_User_ (  ) {
+  AssertEqual ( "User", this.sut.getUsernameText (  ) );
+ }
+  
+  public then_Password_shows_text_MyPass123_ (  ) {
+  AssertEqual ( "MyPass123", this.sut.getPasswordText (  ) );
+ }
+  
+  public then_Login_is_enabled (  ) {
+  AssertTrue ( this.sut.getIsLoginEnabled (  ) );
+ }
+  
+  public then_Username_shows_text_User_1 (  ) {
+  AssertEqual ( "User", this.sut.getUsernameText (  ) );
+ }
+  
+  public then_Password_shows_empty_text (  ) {
+  AssertEqual ( "", this.sut.getPasswordText (  ) );
+ }
+  
+  public then_Login_is_not_enabled (  ) {
+  AssertFalse ( this.sut.getIsLoginEnabled (  ) );
+ }
+  
+  public then_Username_shows_text_Ada_ (  ) {
+  AssertEqual ( "Ada", this.sut.getUsernameText (  ) );
+ }
+  
+  public then_Password_shows_text_____ (  ) {
+  AssertEqual ( "******", this.sut.getPasswordText (  ) );
+ }
+  
+  public then_Login_is_enabled1 (  ) {
+  AssertTrue ( this.sut.getIsLoginEnabled (  ) );
+ }
+  
+  public then_Username_shows_text_Ada_1 (  ) {
+  AssertEqual ( "Ada", this.sut.getUsernameText (  ) );
+ }
+  
+  public then_Password_shows_text_Lovelace1_ (  ) {
+  AssertEqual ( "Lovelace1", this.sut.getPasswordText (  ) );
+ }
+  
+  public then_ShowPassword_is_checked (  ) {
+  AssertTrue ( this.sut.getIsShowPasswordChecked (  ) );
+ }
+  
+  public then_Login_is_enabled2 (  ) {
+  AssertTrue ( this.sut.getIsLoginEnabled (  ) );
+ }
+  
+  public then_ErrorText_shows_text_Needs_uppercase_letters_ (  ) {
+  AssertEqual ( "Needs uppercase letters", this.sut.getErrorTextText (  ) );
+ }
+}

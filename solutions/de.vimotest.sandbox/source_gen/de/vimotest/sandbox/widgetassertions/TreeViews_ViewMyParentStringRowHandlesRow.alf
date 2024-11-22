@@ -1,0 +1,24 @@
+namespace widgetassertions ;
+
+
+
+class TreeViews_ViewMyParentStringRowHandlesRow {
+  
+  private ValuesText : String  ;
+  
+  public getValuesText (  ) : String  {
+  return this.ValuesText;
+ }
+  
+  private RowHandle : String  ;
+  
+  public getRowHandle (  ) : String  {
+  return this.RowHandle;
+ }
+  
+  private ParentRowHandle : String  ;
+  
+  public getParentRowHandle (  ) : String  {
+  return this.ParentRowHandle;
+ }
+}

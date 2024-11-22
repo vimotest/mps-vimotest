@@ -1,0 +1,20 @@
+namespace bindings ;
+
+
+
+class ViMoTestFileNameBinding {
+  
+  private MyTableViewWidgetTableRows : ViMoTestFileNameBindingMyTableViewRow [ * ]  ;
+  
+  public getMyTableViewWidgetTableRows (  ) : ViMoTestFileNameBindingMyTableViewRow [ * ]  {
+  return this.MyTableViewWidgetTableRows;
+ }
+  
+  private isMyTableViewUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyTableViewUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyTableViewUpdatingRowsFlag;
+ }
+  
+  public LoadView (  ) {     }
+}

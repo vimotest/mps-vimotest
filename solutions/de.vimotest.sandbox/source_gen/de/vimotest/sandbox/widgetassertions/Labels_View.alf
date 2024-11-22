@@ -1,0 +1,42 @@
+namespace widgetassertions ;
+
+
+
+class Labels_View {
+  
+  private MyLabelText : String  ;
+  
+  public getMyLabelText (  ) : String  {
+  return this.MyLabelText;
+ }
+  
+  private isMyLabelEnabled : Boolean  ;
+  
+  public getIsMyLabelEnabled (  ) : Boolean  {
+  return this.isMyLabelEnabled;
+ }
+  
+  private isMyLabelVisibility : Boolean  ;
+  
+  public getIsMyLabelVisibility (  ) : Boolean  {
+  return this.isMyLabelVisibility;
+ }
+  
+  private MyMultiLineLabelText : String [ * ]  ;
+  
+  public getMyMultiLineLabelText (  ) : String [ * ]  {
+  return this.MyMultiLineLabelText;
+ }
+  
+  private MyLabelWithToolTipText : String  ;
+  
+  public getMyLabelWithToolTipText (  ) : String  {
+  return this.MyLabelWithToolTipText;
+ }
+  
+  private MyLabelWithToolTipToolTip : String  ;
+  
+  public getMyLabelWithToolTipToolTip (  ) : String  {
+  return this.MyLabelWithToolTipToolTip;
+ }
+}

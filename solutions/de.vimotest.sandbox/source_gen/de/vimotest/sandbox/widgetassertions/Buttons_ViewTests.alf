@@ -1,0 +1,46 @@
+namespace widgetassertions ;
+
+private import Testing ;
+
+class Buttons_ViewTests {
+  
+  private sut : Buttons_View  ;
+  
+  private contextProvider : Buttons_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new Buttons_ViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public My_Scenario_given_empty_context_when_then_OkButton_is_enabled_and_is_visible_and_shows_text_Test_ (  ) {
+  this.given_empty_context (  );
+   this.BuildSut (  );
+   this.then_OkButton_is_enabled_and_is_visible_and_shows_text_Test_ (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  public given_empty_context (  ) {     }
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+  
+  public then_OkButton_is_enabled_and_is_visible_and_shows_text_Test_ (  ) {
+  AssertTrue ( this.sut.getIsOkButtonEnabled (  ) );
+   AssertTrue ( this.sut.getIsOkButtonVisibility (  ) );
+   AssertEqual ( "Test", this.sut.getOkButtonText (  ) );
+ }
+}

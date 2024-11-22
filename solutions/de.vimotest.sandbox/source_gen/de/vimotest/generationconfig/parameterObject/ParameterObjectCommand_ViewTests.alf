@@ -1,0 +1,51 @@
+
+
+private import Testing ;
+
+class ParameterObjectCommand_ViewTests {
+  
+  private sut : ParameterObjectCommand_View  ;
+  
+  private contextProvider : ParameterObjectCommand_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new ParameterObjectCommand_ViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public MyTest_given_empty_context_when_LoadView_and_uncheck_MyCheckBox_then_ (  ) {
+  this.given_empty_context (  );
+   this.BuildSut (  );
+   this.when_LoadView (  );
+   this.when_uncheck_MyCheckBox (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  public given_empty_context (  ) {     }
+  
+  // When Helper Definitions
+
+  
+  public when_LoadView (  ) {
+  let loadViewParameters: LoadViewParams = new ParameterObjectCommand_View:: LoadViewParams ( "A", true, 42 );
+   this.sut.LoadView ( loadViewParameters );
+ }
+  
+  public when_uncheck_MyCheckBox (  ) {
+  let checkedParameters: CheckParams = new ParameterObjectCommand_View:: CheckParams ( false );
+   this.sut.MyCheckBoxChecked ( checkedParameters );
+ }
+  
+  // Then Helper Definitions
+
+}

@@ -1,0 +1,20 @@
+namespace commands ;
+
+
+
+class SelectEntryCommand_View {
+  
+  private MyComboBoxComboBoxEntries : String [ * ]  ;
+  
+  public getMyComboBoxComboBoxEntries (  ) : String [ * ]  {
+  return this.MyComboBoxComboBoxEntries;
+ }
+  
+  private MyComboBoxSelectedEntry : String  ;
+  
+  public getMyComboBoxSelectedEntry (  ) : String  {
+  return this.MyComboBoxSelectedEntry;
+ }
+  
+  public MyComboBoxEntrySelected (   in entryName : String  ) {     }
+}

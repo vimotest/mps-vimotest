@@ -1,0 +1,50 @@
+namespace commands ;
+
+private import Testing ;
+
+class LoadCommand_ViewTests {
+  
+  private sut : LoadCommand_View  ;
+  
+  private contextProvider : LoadCommand_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new LoadCommand_ViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public Load_Commands_Call_given_when_LoadView_then_ (  ) {
+  this.BuildSut (  );
+   this.when_LoadView (  );
+ }
+  
+  public Load_with_Parameter_Commands_Call_given_when_LoadViewWithName_then_ (  ) {
+  this.BuildSut (  );
+   this.when_LoadViewWithName (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  // When Helper Definitions
+
+  
+  public when_LoadView (  ) {
+  this.sut.LoadView (  );
+ }
+  
+  public when_LoadViewWithName (  ) {
+  this.sut.LoadViewWithName ( "Name" );
+ }
+  
+  // Then Helper Definitions
+
+}

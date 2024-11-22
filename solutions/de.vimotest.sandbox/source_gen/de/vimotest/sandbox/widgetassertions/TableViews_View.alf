@@ -1,0 +1,54 @@
+namespace widgetassertions ;
+
+
+
+class TableViews_View {
+  
+  private MyTableViewWidgetTableRows : TableViews_ViewMyTableViewRow [ * ]  ;
+  
+  public getMyTableViewWidgetTableRows (  ) : TableViews_ViewMyTableViewRow [ * ]  {
+  return this.MyTableViewWidgetTableRows;
+ }
+  
+  private MyTableViewSelectedRow : Integer  ;
+  
+  public getMyTableViewSelectedRow (  ) : Integer  {
+  return this.MyTableViewSelectedRow;
+ }
+  
+  private isMyTableViewVisibility : Boolean  ;
+  
+  public getIsMyTableViewVisibility (  ) : Boolean  {
+  return this.isMyTableViewVisibility;
+ }
+  
+  private isMyTableViewEnabled : Boolean  ;
+  
+  public getIsMyTableViewEnabled (  ) : Boolean  {
+  return this.isMyTableViewEnabled;
+ }
+  
+  private isMyTableViewUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyTableViewUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyTableViewUpdatingRowsFlag;
+ }
+  
+  private MyStringRowHandlesWidgetTableRows : TableViews_ViewMyStringRowHandlesRow [ * ]  ;
+  
+  public getMyStringRowHandlesWidgetTableRows (  ) : TableViews_ViewMyStringRowHandlesRow [ * ]  {
+  return this.MyStringRowHandlesWidgetTableRows;
+ }
+  
+  private MyStringRowHandlesSelectedRow : String  ;
+  
+  public getMyStringRowHandlesSelectedRow (  ) : String  {
+  return this.MyStringRowHandlesSelectedRow;
+ }
+  
+  private isMyStringRowHandlesUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyStringRowHandlesUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyStringRowHandlesUpdatingRowsFlag;
+ }
+}

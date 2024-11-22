@@ -1,0 +1,30 @@
+
+
+
+
+class ParameterObjectCommand_View {
+  
+  private isMyCheckBoxChecked : Boolean  ;
+  
+  public getIsMyCheckBoxChecked (  ) : Boolean  {
+  return this.isMyCheckBoxChecked;
+ }
+  
+  public datatype LoadViewParams {
+    
+    public Value1 : String  ;
+    
+    public Value2 : Boolean  ;
+    
+    public Value3 : Integer  ;
+  }
+  
+  public LoadView (   in parameters : LoadViewParams  ) {     }
+  
+  public datatype CheckParams {
+    
+    public isChecked : Boolean  ;
+  }
+  
+  public MyCheckBoxChecked (   in parameters : CheckParams  ) {     }
+}

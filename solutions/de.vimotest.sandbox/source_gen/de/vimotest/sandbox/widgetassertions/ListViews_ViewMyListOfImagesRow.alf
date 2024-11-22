@@ -1,0 +1,30 @@
+namespace widgetassertions ;
+
+
+
+class ListViews_ViewMyListOfImagesRow {
+  
+  private My_ImageImageSource : String  ;
+  
+  public getMy_ImageImageSource (  ) : String  {
+  return this.My_ImageImageSource;
+ }
+  
+  private isMy_ImageEnabled : Boolean  ;
+  
+  public getIsMy_ImageEnabled (  ) : Boolean  {
+  return this.isMy_ImageEnabled;
+ }
+  
+  private isMy_ImageVisibility : Boolean  ;
+  
+  public getIsMy_ImageVisibility (  ) : Boolean  {
+  return this.isMy_ImageVisibility;
+ }
+  
+  private RowIndex : Integer  ;
+  
+  public getRowIndex (  ) : Integer  {
+  return this.RowIndex;
+ }
+}

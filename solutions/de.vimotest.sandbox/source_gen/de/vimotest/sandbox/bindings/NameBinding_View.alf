@@ -1,0 +1,34 @@
+namespace bindings ;
+
+
+
+class NameBinding_View {
+  
+  private mText : String  ;
+  
+  public getCustomText (  ) : String  {
+  return this.mText;
+ }
+  
+  private mEnabled : Boolean  ;
+  
+  public getCustomEnabled (  ) : Boolean  {
+  return this.mEnabled;
+ }
+  
+  private rows : MyCustomRow [ * ]  ;
+  
+  public getRows (  ) : MyCustomRow [ * ]  {
+  return this.rows;
+ }
+  
+  private updatingFlag : Boolean  ;
+  
+  public getUpdatingFlag (  ) : Boolean  {
+  return this.updatingFlag;
+ }
+  
+  public LoadView (  ) {     }
+  
+  public OkClicked (  ) {     }
+}

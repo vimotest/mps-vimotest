@@ -1,0 +1,8 @@
+namespace commands ;
+
+
+
+class ClickCommand_View {
+  
+  public MyButtonClicked (  ) {     }
+}

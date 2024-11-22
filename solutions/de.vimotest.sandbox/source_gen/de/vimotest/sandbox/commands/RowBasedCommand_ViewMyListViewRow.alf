@@ -1,0 +1,18 @@
+namespace commands ;
+
+
+
+class RowBasedCommand_ViewMyListViewRow {
+  
+  private isCheckboxesChecked : Boolean  ;
+  
+  public getIsCheckboxesChecked (  ) : Boolean  {
+  return this.isCheckboxesChecked;
+ }
+  
+  private RowIndex : Integer  ;
+  
+  public getRowIndex (  ) : Integer  {
+  return this.RowIndex;
+ }
+}

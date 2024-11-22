@@ -1,0 +1,42 @@
+namespace widgetassertions ;
+
+
+
+class TreeViews_ViewMyTreeViewRow {
+  
+  private isIncludeChecked : Boolean  ;
+  
+  public getIsIncludeChecked (  ) : Boolean  {
+  return this.isIncludeChecked;
+ }
+  
+  private NameText : String  ;
+  
+  public getNameText (  ) : String  {
+  return this.NameText;
+ }
+  
+  private DescriptionText : String  ;
+  
+  public getDescriptionText (  ) : String  {
+  return this.DescriptionText;
+ }
+  
+  private InfoIconImageSource : String  ;
+  
+  public getInfoIconImageSource (  ) : String  {
+  return this.InfoIconImageSource;
+ }
+  
+  private RowIndex : Integer  ;
+  
+  public getRowIndex (  ) : Integer  {
+  return this.RowIndex;
+ }
+  
+  private RowDepth : Integer  ;
+  
+  public getRowDepth (  ) : Integer  {
+  return this.RowDepth;
+ }
+}

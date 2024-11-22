@@ -1,0 +1,50 @@
+namespace commands ;
+
+private import Testing ;
+
+class FillTextCommand_ViewTests {
+  
+  private sut : FillTextCommand_View  ;
+  
+  private contextProvider : FillTextCommand_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new FillTextCommand_ViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public Fill_Text_TextBox_given_when_fill_Changed_in_MyTextBox_then_ (  ) {
+  this.BuildSut (  );
+   this.when_fill_Changed_in_MyTextBox (  );
+ }
+  
+  public Fill_Text_ComboBox_given_when_fill_Changed_in_MyFreeTextComboBox_then_ (  ) {
+  this.BuildSut (  );
+   this.when_fill_Changed_in_MyFreeTextComboBox (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  // When Helper Definitions
+
+  
+  public when_fill_Changed_in_MyTextBox (  ) {
+  this.sut.MyTextBoxTextFilled ( "Changed" );
+ }
+  
+  public when_fill_Changed_in_MyFreeTextComboBox (  ) {
+  this.sut.MyFreeTextComboBoxTextFilled ( "Changed" );
+ }
+  
+  // Then Helper Definitions
+
+}

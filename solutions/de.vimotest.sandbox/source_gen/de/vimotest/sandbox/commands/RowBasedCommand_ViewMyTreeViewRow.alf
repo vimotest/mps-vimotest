@@ -1,0 +1,24 @@
+namespace commands ;
+
+
+
+class RowBasedCommand_ViewMyTreeViewRow {
+  
+  private TextBoxesText : String  ;
+  
+  public getTextBoxesText (  ) : String  {
+  return this.TextBoxesText;
+ }
+  
+  private RowIndex : Integer  ;
+  
+  public getRowIndex (  ) : Integer  {
+  return this.RowIndex;
+ }
+  
+  private RowDepth : Integer  ;
+  
+  public getRowDepth (  ) : Integer  {
+  return this.RowDepth;
+ }
+}

@@ -1,0 +1,78 @@
+namespace widgetassertions ;
+
+
+
+class TreeViews_View {
+  
+  private MyTreeViewSelectedRow : Integer  ;
+  
+  public getMyTreeViewSelectedRow (  ) : Integer  {
+  return this.MyTreeViewSelectedRow;
+ }
+  
+  private isMyTreeViewVisibility : Boolean  ;
+  
+  public getIsMyTreeViewVisibility (  ) : Boolean  {
+  return this.isMyTreeViewVisibility;
+ }
+  
+  private isMyTreeViewEnabled : Boolean  ;
+  
+  public getIsMyTreeViewEnabled (  ) : Boolean  {
+  return this.isMyTreeViewEnabled;
+ }
+  
+  private MyTreeViewWidgetTreeRows : TreeViews_ViewMyTreeViewRow [ * ]  ;
+  
+  public getMyTreeViewWidgetTreeRows (  ) : TreeViews_ViewMyTreeViewRow [ * ]  {
+  return this.MyTreeViewWidgetTreeRows;
+ }
+  
+  private isMyTreeViewUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyTreeViewUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyTreeViewUpdatingRowsFlag;
+ }
+  
+  private MyStringRowHandlesWidgetTreeRows : TreeViews_ViewMyStringRowHandlesRow [ * ]  ;
+  
+  public getMyStringRowHandlesWidgetTreeRows (  ) : TreeViews_ViewMyStringRowHandlesRow [ * ]  {
+  return this.MyStringRowHandlesWidgetTreeRows;
+ }
+  
+  private MyStringRowHandlesSelectedRow : String  ;
+  
+  public getMyStringRowHandlesSelectedRow (  ) : String  {
+  return this.MyStringRowHandlesSelectedRow;
+ }
+  
+  private isMyStringRowHandlesUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyStringRowHandlesUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyStringRowHandlesUpdatingRowsFlag;
+ }
+  
+  private MyParentIndexRowHandlesWidgetTreeRows : TreeViews_ViewMyParentIndexRowHandlesRow [ * ]  ;
+  
+  public getMyParentIndexRowHandlesWidgetTreeRows (  ) : TreeViews_ViewMyParentIndexRowHandlesRow [ * ]  {
+  return this.MyParentIndexRowHandlesWidgetTreeRows;
+ }
+  
+  private isMyParentIndexRowHandlesUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyParentIndexRowHandlesUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyParentIndexRowHandlesUpdatingRowsFlag;
+ }
+  
+  private MyParentStringRowHandlesWidgetTreeRows : TreeViews_ViewMyParentStringRowHandlesRow [ * ]  ;
+  
+  public getMyParentStringRowHandlesWidgetTreeRows (  ) : TreeViews_ViewMyParentStringRowHandlesRow [ * ]  {
+  return this.MyParentStringRowHandlesWidgetTreeRows;
+ }
+  
+  private isMyParentStringRowHandlesUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyParentStringRowHandlesUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyParentStringRowHandlesUpdatingRowsFlag;
+ }
+}

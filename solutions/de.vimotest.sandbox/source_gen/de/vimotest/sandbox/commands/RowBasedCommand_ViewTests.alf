@@ -1,0 +1,157 @@
+namespace commands ;
+
+private import Testing ;
+
+class RowBasedCommand_ViewTests {
+  
+  private sut : RowBasedCommand_View  ;
+  
+  private contextProvider : RowBasedCommand_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new RowBasedCommand_ViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public ListView_RowBased_Commands_given_when_check_Checkboxes_at_0_and_uncheck_Checkboxes_at_1_then_MyListView_has_2_rows (  ) {
+  this.BuildSut (  );
+   this.when_check_Checkboxes_at_0 (  );
+   this.when_uncheck_Checkboxes_at_1 (  );
+   this.then_MyListView_has_2_rows (  );
+ }
+  
+  public TableView_RowBased_Commands_given_when_select_entry_MyText1_in_FreeTextComboBoxes_at_0_and_select_entry_MyText2_in_FreeTextComboBoxes_at_1_and_select_entry_B_in_EntryComboBoxes_at_0_and_select_entry_D_in_EntryComboBoxes_at_1_then_MyTableView_has_2_rows (  ) {
+  this.BuildSut (  );
+   this.when_select_entry_MyText1_in_FreeTextComboBoxes_at_0 (  );
+   this.when_select_entry_MyText2_in_FreeTextComboBoxes_at_1 (  );
+   this.when_select_entry_B_in_EntryComboBoxes_at_0 (  );
+   this.when_select_entry_D_in_EntryComboBoxes_at_1 (  );
+   this.then_MyTableView_has_2_rows (  );
+ }
+  
+  public TreeView_RowBased_Commands_given_when_fill_A_in_TextBoxes_at_0_and_fill_B_in_TextBoxes_at_1_and_click_Buttons_at_0_then_MyTreeView_has_2_rows (  ) {
+  this.BuildSut (  );
+   this.when_fill_A_in_TextBoxes_at_0 (  );
+   this.when_fill_B_in_TextBoxes_at_1 (  );
+   this.when_click_Buttons_at_0 (  );
+   this.then_MyTreeView_has_2_rows (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  // When Helper Definitions
+
+  
+  public when_check_Checkboxes_at_0 (  ) {
+  this.sut.CheckboxesChecked ( 0, true );
+ }
+  
+  public when_uncheck_Checkboxes_at_1 (  ) {
+  this.sut.CheckboxesChecked ( 1, false );
+ }
+  
+  public when_select_entry_MyText1_in_FreeTextComboBoxes_at_0 (  ) {
+  this.sut.FreeTextComboBoxesEntrySelected ( 0, "MyText1" );
+ }
+  
+  public when_select_entry_MyText2_in_FreeTextComboBoxes_at_1 (  ) {
+  this.sut.FreeTextComboBoxesEntrySelected ( 1, "MyText2" );
+ }
+  
+  public when_select_entry_B_in_EntryComboBoxes_at_0 (  ) {
+  this.sut.EntryComboBoxesEntrySelected ( 0, "B" );
+ }
+  
+  public when_select_entry_D_in_EntryComboBoxes_at_1 (  ) {
+  this.sut.EntryComboBoxesEntrySelected ( 1, "D" );
+ }
+  
+  public when_fill_A_in_TextBoxes_at_0 (  ) {
+  this.sut.TextBoxesTextFilled ( 0, "A" );
+ }
+  
+  public when_fill_B_in_TextBoxes_at_1 (  ) {
+  this.sut.TextBoxesTextFilled ( 1, "B" );
+ }
+  
+  public when_click_Buttons_at_0 (  ) {
+  this.sut.ButtonsClicked ( 0 );
+ }
+  
+  // Then Helper Definitions
+
+  
+  public then_MyListView_has_2_rows (  ) {
+  let actualRows: RowBasedCommand_ViewMyListViewRow [] = this.sut.getMyListViewWidgetListRows (  );
+   AssertEqual ( 2, actualRows->size (  ) );
+   {
+  let row0: RowBasedCommand_ViewMyListViewRow = actualRows[ 1 ];
+   AssertEqual ( 0, row0.getRowIndex (  ) );
+   AssertTrue ( row0.getIsCheckboxesChecked (  ) );
+ }
+   {
+  let row1: RowBasedCommand_ViewMyListViewRow = actualRows[ 2 ];
+   AssertEqual ( 1, row1.getRowIndex (  ) );
+   AssertFalse ( row1.getIsCheckboxesChecked (  ) );
+ }
+ }
+  
+  public then_MyTableView_has_2_rows (  ) {
+  let actualRows: RowBasedCommand_ViewMyTableViewRow [] = this.sut.getMyTableViewWidgetTableRows (  );
+   AssertEqual ( 2, actualRows->size (  ) );
+   {
+  let row0: RowBasedCommand_ViewMyTableViewRow = actualRows[ 1 ];
+   AssertEqual ( 0, row0.getRowIndex (  ) );
+   let actualRow0FreeTextComboBoxesEntries: String [] = row0.getFreeTextComboBoxesComboBoxEntries (  );
+   AssertEqual ( 0, actualRow0FreeTextComboBoxesEntries->size (  ) );
+   AssertEqual ( null, row0.getFreeTextComboBoxesSelectedEntry (  ) );
+   AssertEqual ( "MyText1", row0.getFreeTextComboBoxesText (  ) );
+   let actualRow0EntryComboBoxesEntries: String [] = row0.getEntryComboBoxesComboBoxEntries (  );
+   AssertEqual ( 3, actualRow0EntryComboBoxesEntries->size (  ) );
+   AssertEqual ( "A", actualRow0EntryComboBoxesEntries[ 1 ] ?? "" );
+   AssertEqual ( "B", actualRow0EntryComboBoxesEntries[ 2 ] ?? "" );
+   AssertEqual ( "C", actualRow0EntryComboBoxesEntries[ 3 ] ?? "" );
+   AssertEqual ( null, row0.getEntryComboBoxesSelectedEntry (  ) );
+ }
+   {
+  let row1: RowBasedCommand_ViewMyTableViewRow = actualRows[ 2 ];
+   AssertEqual ( 1, row1.getRowIndex (  ) );
+   let actualRow1FreeTextComboBoxesEntries: String [] = row1.getFreeTextComboBoxesComboBoxEntries (  );
+   AssertEqual ( 0, actualRow1FreeTextComboBoxesEntries->size (  ) );
+   AssertEqual ( null, row1.getFreeTextComboBoxesSelectedEntry (  ) );
+   AssertEqual ( "MyText2", row1.getFreeTextComboBoxesText (  ) );
+   let actualRow1EntryComboBoxesEntries: String [] = row1.getEntryComboBoxesComboBoxEntries (  );
+   AssertEqual ( 3, actualRow1EntryComboBoxesEntries->size (  ) );
+   AssertEqual ( "D", actualRow1EntryComboBoxesEntries[ 1 ] ?? "" );
+   AssertEqual ( "E", actualRow1EntryComboBoxesEntries[ 2 ] ?? "" );
+   AssertEqual ( "F", actualRow1EntryComboBoxesEntries[ 3 ] ?? "" );
+   AssertEqual ( null, row1.getEntryComboBoxesSelectedEntry (  ) );
+ }
+ }
+  
+  public then_MyTreeView_has_2_rows (  ) {
+  let actualRows: RowBasedCommand_ViewMyTreeViewRow [] = this.sut.getMyTreeViewWidgetTreeRows (  );
+   AssertEqual ( 2, actualRows->size (  ) );
+   {
+  let row0: RowBasedCommand_ViewMyTreeViewRow = actualRows[ 1 ];
+   AssertEqual ( 0, row0.getRowIndex (  ) );
+   AssertEqual ( 0, row0.getRowDepth (  ) );
+   AssertEqual ( "A", row0.getTextBoxesText (  ) );
+ }
+   {
+  let row1: RowBasedCommand_ViewMyTreeViewRow = actualRows[ 2 ];
+   AssertEqual ( 1, row1.getRowIndex (  ) );
+   AssertEqual ( 0, row1.getRowDepth (  ) );
+   AssertEqual ( "B", row1.getTextBoxesText (  ) );
+ }
+ }
+}

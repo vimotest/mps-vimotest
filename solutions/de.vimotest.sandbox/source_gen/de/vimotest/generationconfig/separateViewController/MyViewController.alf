@@ -1,0 +1,10 @@
+
+
+
+
+class MyViewController {
+  
+  public LoadView (  ) {     }
+  
+  public MyCheckBoxChecked (   in isChecked : Boolean  ) {     }
+}

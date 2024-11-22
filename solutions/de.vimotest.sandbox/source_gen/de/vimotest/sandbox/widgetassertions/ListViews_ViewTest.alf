@@ -1,0 +1,213 @@
+namespace widgetassertions ;
+
+private import Testing ;
+
+class ListViews_ViewTest {
+  
+  private sut : ListViews_View  ;
+  
+  private contextProvider : ListViews_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new ListViews_ViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public My_Scenario_given_empty_context_when_then_MyListOfLabel_has_4_rows_and_selected_row_index_3_and_MyListOfImages_has_2_rows_and_MyCheckboxes_has_3_rows_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1_and_MyMultiRowSelectionList_has_3_rows_and_selected_row_indices_0_2_ (  ) {
+  this.given_empty_context (  );
+   this.BuildSut (  );
+   this.then_MyListOfLabel_has_4_rows_and_selected_row_index_3 (  );
+   this.then_MyListOfImages_has_2_rows (  );
+   this.then_MyCheckboxes_has_3_rows (  );
+   this.then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  );
+   this.then_MyMultiRowSelectionList_has_3_rows_and_selected_row_indices_0_2_ (  );
+ }
+  
+  public List_Ignore_Column_given_empty_context_when_then_MyListOfLabel_has_4_rows (  ) {
+  this.given_empty_context1 (  );
+   this.BuildSut (  );
+   this.then_MyListOfLabel_has_4_rows (  );
+ }
+  
+  public List_Ignore_Cell_given_empty_context_when_then_MyListOfLabel_has_4_rows (  ) {
+  this.given_empty_context2 (  );
+   this.BuildSut (  );
+   this.then_MyListOfLabel_has_4_rows1 (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  public given_empty_context (  ) {     }
+  
+  public given_empty_context1 (  ) {     }
+  
+  public given_empty_context2 (  ) {     }
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+  
+  public then_MyListOfLabel_has_4_rows_and_selected_row_index_3 (  ) {
+  let actualRows: ListViews_ViewMyListOfLabelRow [] = this.sut.getMyListOfLabelWidgetListRows (  );
+   AssertEqual ( 4, actualRows->size (  ) );
+   {
+  let row0: ListViews_ViewMyListOfLabelRow = actualRows[ 1 ];
+   AssertEqual ( 0, row0.getRowIndex (  ) );
+   AssertEqual ( "A", row0.getMy_TextText (  ) );
+   AssertFalse ( row0.getIsMy_TextVisibility (  ) );
+   AssertTrue ( row0.getIsMy_TextEnabled (  ) );
+ }
+   {
+  let row1: ListViews_ViewMyListOfLabelRow = actualRows[ 2 ];
+   AssertEqual ( 1, row1.getRowIndex (  ) );
+   AssertEqual ( "B", row1.getMy_TextText (  ) );
+   AssertFalse ( row1.getIsMy_TextEnabled (  ) );
+ }
+   {
+  let row2: ListViews_ViewMyListOfLabelRow = actualRows[ 3 ];
+   AssertEqual ( 2, row2.getRowIndex (  ) );
+   AssertEqual ( "C", row2.getMy_TextText (  ) );
+   AssertTrue ( row2.getIsMy_TextEnabled (  ) );
+ }
+   {
+  let row3: ListViews_ViewMyListOfLabelRow = actualRows[ 4 ];
+   AssertEqual ( 3, row3.getRowIndex (  ) );
+   AssertEqual ( "D", row3.getMy_TextText (  ) );
+   AssertTrue ( row3.getIsMy_TextVisibility (  ) );
+ }
+   AssertEqual ( 3, this.sut.getMyListOfLabelSelectedRow (  ) );
+ }
+  
+  public then_MyListOfImages_has_2_rows (  ) {
+  let actualRows: ListViews_ViewMyListOfImagesRow [] = this.sut.getMyListOfImagesWidgetListRows (  );
+   AssertEqual ( 2, actualRows->size (  ) );
+   {
+  let row0: ListViews_ViewMyListOfImagesRow = actualRows[ 1 ];
+   AssertEqual ( 0, row0.getRowIndex (  ) );
+   AssertEqual ( "image_star", row0.getMy_ImageImageSource (  ) );
+ }
+   {
+  let row1: ListViews_ViewMyListOfImagesRow = actualRows[ 2 ];
+   AssertEqual ( 1, row1.getRowIndex (  ) );
+   AssertEqual ( "image_circle", row1.getMy_ImageImageSource (  ) );
+ }
+ }
+  
+  public then_MyCheckboxes_has_3_rows (  ) {
+  let actualRows: ListViews_ViewMyCheckboxesRow [] = this.sut.getMyCheckboxesWidgetListRows (  );
+   AssertEqual ( 3, actualRows->size (  ) );
+   {
+  let row0: ListViews_ViewMyCheckboxesRow = actualRows[ 1 ];
+   AssertEqual ( 0, row0.getRowIndex (  ) );
+   AssertTrue ( row0.getIsHeaderChecked (  ) );
+ }
+   {
+  let row1: ListViews_ViewMyCheckboxesRow = actualRows[ 2 ];
+   AssertEqual ( 1, row1.getRowIndex (  ) );
+   AssertFalse ( row1.getIsHeaderChecked (  ) );
+ }
+   {
+  let row2: ListViews_ViewMyCheckboxesRow = actualRows[ 3 ];
+   AssertEqual ( 2, row2.getRowIndex (  ) );
+   AssertTrue ( row2.getIsHeaderChecked (  ) );
+   AssertEqual ( "My Label", row2.getHeaderText (  ) );
+ }
+ }
+  
+  public then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  ) {
+  let actualRows: ListViews_ViewMyStringRowHandlesRow [] = this.sut.getMyStringRowHandlesWidgetListRows (  );
+   AssertEqual ( 2, actualRows->size (  ) );
+   {
+  let row0: ListViews_ViewMyStringRowHandlesRow = actualRows[ 1 ];
+   AssertEqual ( "ROW0", row0.getRowHandle (  ) );
+   AssertEqual ( "A", row0.getValuesText (  ) );
+ }
+   {
+  let row1: ListViews_ViewMyStringRowHandlesRow = actualRows[ 2 ];
+   AssertEqual ( "ROW1", row1.getRowHandle (  ) );
+   AssertEqual ( "B", row1.getValuesText (  ) );
+ }
+   AssertEqual ( "ROW1", this.sut.getMyStringRowHandlesSelectedRow (  ) );
+ }
+  
+  public then_MyMultiRowSelectionList_has_3_rows_and_selected_row_indices_0_2_ (  ) {
+  let actualRows: ListViews_ViewMyMultiRowSelectionListRow [] = this.sut.getMyMultiRowSelectionListWidgetListRows (  );
+   AssertEqual ( 3, actualRows->size (  ) );
+   {
+  let row0: ListViews_ViewMyMultiRowSelectionListRow = actualRows[ 1 ];
+   AssertEqual ( 0, row0.getRowIndex (  ) );
+   AssertEqual ( "A", row0.getHeaderText (  ) );
+ }
+   {
+  let row1: ListViews_ViewMyMultiRowSelectionListRow = actualRows[ 2 ];
+   AssertEqual ( 1, row1.getRowIndex (  ) );
+   AssertEqual ( "B", row1.getHeaderText (  ) );
+ }
+   {
+  let row2: ListViews_ViewMyMultiRowSelectionListRow = actualRows[ 3 ];
+   AssertEqual ( 2, row2.getRowIndex (  ) );
+   AssertEqual ( "C", row2.getHeaderText (  ) );
+ }
+   let actualMyMultiRowSelectionListSelectedRowHandles: Integer [] = this.sut.getMyMultiRowSelectionListSelectedRows (  );
+   AssertEqual ( 2, actualMyMultiRowSelectionListSelectedRowHandles->size (  ) );
+   AssertEqual ( 0, actualMyMultiRowSelectionListSelectedRowHandles[ 1 ] ?? 0 );
+   AssertEqual ( 2, actualMyMultiRowSelectionListSelectedRowHandles[ 2 ] ?? 0 );
+ }
+  
+  public then_MyListOfLabel_has_4_rows (  ) {
+  let actualRows: ListViews_ViewMyListOfLabelRow [] = this.sut.getMyListOfLabelWidgetListRows (  );
+   AssertEqual ( 4, actualRows->size (  ) );
+   {
+  let row0: ListViews_ViewMyListOfLabelRow = actualRows[ 1 ];
+   AssertEqual ( 0, row0.getRowIndex (  ) );
+ }
+   {
+  let row1: ListViews_ViewMyListOfLabelRow = actualRows[ 2 ];
+   AssertEqual ( 1, row1.getRowIndex (  ) );
+ }
+   {
+  let row2: ListViews_ViewMyListOfLabelRow = actualRows[ 3 ];
+   AssertEqual ( 2, row2.getRowIndex (  ) );
+ }
+   {
+  let row3: ListViews_ViewMyListOfLabelRow = actualRows[ 4 ];
+   AssertEqual ( 3, row3.getRowIndex (  ) );
+ }
+ }
+  
+  public then_MyListOfLabel_has_4_rows1 (  ) {
+  let actualRows: ListViews_ViewMyListOfLabelRow [] = this.sut.getMyListOfLabelWidgetListRows (  );
+   AssertEqual ( 4, actualRows->size (  ) );
+   {
+  let row0: ListViews_ViewMyListOfLabelRow = actualRows[ 1 ];
+   AssertEqual ( 0, row0.getRowIndex (  ) );
+ }
+   {
+  let row1: ListViews_ViewMyListOfLabelRow = actualRows[ 2 ];
+   AssertEqual ( 1, row1.getRowIndex (  ) );
+   AssertEqual ( "B", row1.getMy_TextText (  ) );
+   AssertFalse ( row1.getIsMy_TextEnabled (  ) );
+ }
+   {
+  let row2: ListViews_ViewMyListOfLabelRow = actualRows[ 3 ];
+   AssertEqual ( 2, row2.getRowIndex (  ) );
+ }
+   {
+  let row3: ListViews_ViewMyListOfLabelRow = actualRows[ 4 ];
+   AssertEqual ( 3, row3.getRowIndex (  ) );
+   AssertEqual ( "D", row3.getMy_TextText (  ) );
+   AssertTrue ( row3.getIsMy_TextVisibility (  ) );
+ }
+ }
+}

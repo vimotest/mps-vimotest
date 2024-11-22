@@ -1,0 +1,61 @@
+namespace widgetassertions ;
+
+private import Testing ;
+
+class ComboBoxes_ViewTest {
+  
+  private sut : ComboBoxes_View  ;
+  
+  private contextProvider : ComboBoxes_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new ComboBoxes_ViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public My_Scenario_given_empty_context_when_then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible_and_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_ (  ) {
+  this.given_empty_context (  );
+   this.BuildSut (  );
+   this.then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible (  );
+   this.then_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_ (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  public given_empty_context (  ) {     }
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+  
+  public then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible (  ) {
+  let actualMyOptionsEntries: String [] = this.sut.getMyOptionsComboBoxEntries (  );
+   AssertEqual ( 3, actualMyOptionsEntries->size (  ) );
+   AssertEqual ( "A1", actualMyOptionsEntries[ 1 ] ?? "" );
+   AssertEqual ( "A2", actualMyOptionsEntries[ 2 ] ?? "" );
+   AssertEqual ( "A3", actualMyOptionsEntries[ 3 ] ?? "" );
+   AssertEqual ( "A1", this.sut.getMyOptionsSelectedEntry (  ) );
+   AssertTrue ( this.sut.getIsMyOptionsEnabled (  ) );
+   AssertTrue ( this.sut.getIsMyOptionsVisibility (  ) );
+ }
+  
+  public then_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_ (  ) {
+  let actualMyOptionsWithFreeTextEntries: String [] = this.sut.getMyOptionsWithFreeTextComboBoxEntries (  );
+   AssertEqual ( 2, actualMyOptionsWithFreeTextEntries->size (  ) );
+   AssertEqual ( "E1", actualMyOptionsWithFreeTextEntries[ 1 ] ?? "" );
+   AssertEqual ( "E2", actualMyOptionsWithFreeTextEntries[ 2 ] ?? "" );
+   AssertEqual ( null, this.sut.getMyOptionsWithFreeTextSelectedEntry (  ) );
+   AssertEqual ( "My Free Text", this.sut.getMyOptionsWithFreeTextText (  ) );
+ }
+}

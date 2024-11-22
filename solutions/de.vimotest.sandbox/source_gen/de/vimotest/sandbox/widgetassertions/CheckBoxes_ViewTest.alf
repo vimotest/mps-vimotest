@@ -1,0 +1,57 @@
+namespace widgetassertions ;
+
+private import Testing ;
+
+class CheckBoxes_ViewTest {
+  
+  private sut : CheckBoxes_View  ;
+  
+  private contextProvider : CheckBoxes_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new CheckBoxes_ViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public My_Scenario_given_empty_context_when_then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_and_MyFlagNoLabel_is_not_checked_and_MyFlagTriState_is_not_checked (  ) {
+  this.given_empty_context (  );
+   this.BuildSut (  );
+   this.then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_ (  );
+   this.then_MyFlagNoLabel_is_not_checked (  );
+   this.then_MyFlagTriState_is_not_checked (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  public given_empty_context (  ) {     }
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+  
+  public then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_ (  ) {
+  AssertTrue ( this.sut.getIsMyFlagWithLabelChecked (  ) );
+   AssertTrue ( this.sut.getIsMyFlagWithLabelEnabled (  ) );
+   AssertTrue ( this.sut.getIsMyFlagWithLabelVisibility (  ) );
+   AssertEqual ( "My Label", this.sut.getMyFlagWithLabelText (  ) );
+ }
+  
+  public then_MyFlagNoLabel_is_not_checked (  ) {
+  AssertFalse ( this.sut.getIsMyFlagNoLabelChecked (  ) );
+ }
+  
+  public then_MyFlagTriState_is_not_checked (  ) {
+  AssertFalse ( this.sut.getIsMyFlagTriStateChecked (  ) );
+ }
+}

@@ -1,0 +1,34 @@
+namespace commands ;
+
+
+
+class FillTextCommand_View {
+  
+  private MyTextBoxText : String  ;
+  
+  public getMyTextBoxText (  ) : String  {
+  return this.MyTextBoxText;
+ }
+  
+  private MyFreeTextComboBoxComboBoxEntries : String [ * ]  ;
+  
+  public getMyFreeTextComboBoxComboBoxEntries (  ) : String [ * ]  {
+  return this.MyFreeTextComboBoxComboBoxEntries;
+ }
+  
+  private MyFreeTextComboBoxSelectedEntry : String  ;
+  
+  public getMyFreeTextComboBoxSelectedEntry (  ) : String  {
+  return this.MyFreeTextComboBoxSelectedEntry;
+ }
+  
+  private MyFreeTextComboBoxText : String  ;
+  
+  public getMyFreeTextComboBoxText (  ) : String  {
+  return this.MyFreeTextComboBoxText;
+ }
+  
+  public MyTextBoxTextFilled (   in text : String  ) {     }
+  
+  public MyFreeTextComboBoxTextFilled (   in text : String  ) {     }
+}

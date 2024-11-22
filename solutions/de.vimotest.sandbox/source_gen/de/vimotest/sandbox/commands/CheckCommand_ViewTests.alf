@@ -1,0 +1,46 @@
+namespace commands ;
+
+private import Testing ;
+
+class CheckCommand_ViewTests {
+  
+  private sut : CheckCommand_View  ;
+  
+  private contextProvider : CheckCommand_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new CheckCommand_ViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public Check_CheckBox_given_when_check_MyCheckBox1_and_uncheck_MyCheckBox2_then_ (  ) {
+  this.BuildSut (  );
+   this.when_check_MyCheckBox1 (  );
+   this.when_uncheck_MyCheckBox2 (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  // When Helper Definitions
+
+  
+  public when_check_MyCheckBox1 (  ) {
+  this.sut.MyCheckBox1Checked ( true );
+ }
+  
+  public when_uncheck_MyCheckBox2 (  ) {
+  this.sut.MyCheckBox2Checked ( false );
+ }
+  
+  // Then Helper Definitions
+
+}

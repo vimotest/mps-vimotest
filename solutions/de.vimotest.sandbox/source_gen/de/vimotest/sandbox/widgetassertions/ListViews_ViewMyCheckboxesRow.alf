@@ -1,0 +1,24 @@
+namespace widgetassertions ;
+
+
+
+class ListViews_ViewMyCheckboxesRow {
+  
+  private isHeaderChecked : Boolean  ;
+  
+  public getIsHeaderChecked (  ) : Boolean  {
+  return this.isHeaderChecked;
+ }
+  
+  private HeaderText : String  ;
+  
+  public getHeaderText (  ) : String  {
+  return this.HeaderText;
+ }
+  
+  private RowIndex : Integer  ;
+  
+  public getRowIndex (  ) : Integer  {
+  return this.RowIndex;
+ }
+}

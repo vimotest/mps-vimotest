@@ -1,0 +1,3 @@
+# checking generated sources to control diffs on commit
+!source_gen
+trace.info

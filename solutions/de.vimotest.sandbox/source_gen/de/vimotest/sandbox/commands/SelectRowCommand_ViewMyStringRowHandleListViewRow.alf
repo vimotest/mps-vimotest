@@ -1,0 +1,18 @@
+namespace commands ;
+
+
+
+class SelectRowCommand_ViewMyStringRowHandleListViewRow {
+  
+  private HeaderText : String  ;
+  
+  public getHeaderText (  ) : String  {
+  return this.HeaderText;
+ }
+  
+  private RowHandle : String  ;
+  
+  public getRowHandle (  ) : String  {
+  return this.RowHandle;
+ }
+}

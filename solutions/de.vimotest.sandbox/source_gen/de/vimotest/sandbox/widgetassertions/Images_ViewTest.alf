@@ -1,0 +1,49 @@
+namespace widgetassertions ;
+
+private import Testing ;
+
+class Images_ViewTest {
+  
+  private sut : Images_View  ;
+  
+  private contextProvider : Images_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new Images_ViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public My_Scenario_given_empty_context_when_then_MyImage_shows_image_image_active_and_MyUpDownImage_shows_image_image_down_ (  ) {
+  this.given_empty_context (  );
+   this.BuildSut (  );
+   this.then_MyImage_shows_image_image_active_ (  );
+   this.then_MyUpDownImage_shows_image_image_down_ (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  public given_empty_context (  ) {     }
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+  
+  public then_MyImage_shows_image_image_active_ (  ) {
+  AssertEqual ( "image_active", this.sut.getMyImageImageSource (  ) );
+ }
+  
+  public then_MyUpDownImage_shows_image_image_down_ (  ) {
+  AssertEqual ( "image_down", this.sut.getMyUpDownImageImageSource (  ) );
+ }
+}

@@ -1,0 +1,41 @@
+namespace commands ;
+
+private import Testing ;
+
+class GenericCommands_ViewTests {
+  
+  private sut : GenericCommands_View  ;
+  
+  private contextProvider : GenericCommands_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new GenericCommands_ViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public Generic_Commands_Call_given_when_MyCommand_then_ (  ) {
+  this.BuildSut (  );
+   this.when_MyCommand (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  // When Helper Definitions
+
+  
+  public when_MyCommand (  ) {
+  this.sut.MyCommand ( false, new String [] { "A",  "B" } );
+ }
+  
+  // Then Helper Definitions
+
+}

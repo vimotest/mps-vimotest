@@ -1,0 +1,132 @@
+namespace widgetassertions ;
+
+
+
+class ListViews_View {
+  
+  private isMyListOfLabelVisibility : Boolean  ;
+  
+  public getIsMyListOfLabelVisibility (  ) : Boolean  {
+  return this.isMyListOfLabelVisibility;
+ }
+  
+  private isMyListOfLabelEnabled : Boolean  ;
+  
+  public getIsMyListOfLabelEnabled (  ) : Boolean  {
+  return this.isMyListOfLabelEnabled;
+ }
+  
+  private MyListOfLabelWidgetListRows : ListViews_ViewMyListOfLabelRow [ * ]  ;
+  
+  public getMyListOfLabelWidgetListRows (  ) : ListViews_ViewMyListOfLabelRow [ * ]  {
+  return this.MyListOfLabelWidgetListRows;
+ }
+  
+  private MyListOfLabelSelectedRow : Integer  ;
+  
+  public getMyListOfLabelSelectedRow (  ) : Integer  {
+  return this.MyListOfLabelSelectedRow;
+ }
+  
+  private isMyListOfLabelUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyListOfLabelUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyListOfLabelUpdatingRowsFlag;
+ }
+  
+  private isMyListOfImagesVisibility : Boolean  ;
+  
+  public getIsMyListOfImagesVisibility (  ) : Boolean  {
+  return this.isMyListOfImagesVisibility;
+ }
+  
+  private isMyListOfImagesEnabled : Boolean  ;
+  
+  public getIsMyListOfImagesEnabled (  ) : Boolean  {
+  return this.isMyListOfImagesEnabled;
+ }
+  
+  private MyListOfImagesWidgetListRows : ListViews_ViewMyListOfImagesRow [ * ]  ;
+  
+  public getMyListOfImagesWidgetListRows (  ) : ListViews_ViewMyListOfImagesRow [ * ]  {
+  return this.MyListOfImagesWidgetListRows;
+ }
+  
+  private MyListOfImagesSelectedRow : Integer  ;
+  
+  public getMyListOfImagesSelectedRow (  ) : Integer  {
+  return this.MyListOfImagesSelectedRow;
+ }
+  
+  private isMyListOfImagesUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyListOfImagesUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyListOfImagesUpdatingRowsFlag;
+ }
+  
+  private MyCheckboxesWidgetListRows : ListViews_ViewMyCheckboxesRow [ * ]  ;
+  
+  public getMyCheckboxesWidgetListRows (  ) : ListViews_ViewMyCheckboxesRow [ * ]  {
+  return this.MyCheckboxesWidgetListRows;
+ }
+  
+  private MyCheckboxesSelectedRow : Integer  ;
+  
+  public getMyCheckboxesSelectedRow (  ) : Integer  {
+  return this.MyCheckboxesSelectedRow;
+ }
+  
+  private isMyCheckboxesVisibility : Boolean  ;
+  
+  public getIsMyCheckboxesVisibility (  ) : Boolean  {
+  return this.isMyCheckboxesVisibility;
+ }
+  
+  private isMyCheckboxesEnabled : Boolean  ;
+  
+  public getIsMyCheckboxesEnabled (  ) : Boolean  {
+  return this.isMyCheckboxesEnabled;
+ }
+  
+  private isMyCheckboxesUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyCheckboxesUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyCheckboxesUpdatingRowsFlag;
+ }
+  
+  private MyStringRowHandlesWidgetListRows : ListViews_ViewMyStringRowHandlesRow [ * ]  ;
+  
+  public getMyStringRowHandlesWidgetListRows (  ) : ListViews_ViewMyStringRowHandlesRow [ * ]  {
+  return this.MyStringRowHandlesWidgetListRows;
+ }
+  
+  private MyStringRowHandlesSelectedRow : String  ;
+  
+  public getMyStringRowHandlesSelectedRow (  ) : String  {
+  return this.MyStringRowHandlesSelectedRow;
+ }
+  
+  private isMyStringRowHandlesUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyStringRowHandlesUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyStringRowHandlesUpdatingRowsFlag;
+ }
+  
+  private MyMultiRowSelectionListWidgetListRows : ListViews_ViewMyMultiRowSelectionListRow [ * ]  ;
+  
+  public getMyMultiRowSelectionListWidgetListRows (  ) : ListViews_ViewMyMultiRowSelectionListRow [ * ]  {
+  return this.MyMultiRowSelectionListWidgetListRows;
+ }
+  
+  private MyMultiRowSelectionListSelectedRows : Integer [ * ]  ;
+  
+  public getMyMultiRowSelectionListSelectedRows (  ) : Integer [ * ]  {
+  return this.MyMultiRowSelectionListSelectedRows;
+ }
+  
+  private isMyMultiRowSelectionListUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyMultiRowSelectionListUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyMultiRowSelectionListUpdatingRowsFlag;
+ }
+}

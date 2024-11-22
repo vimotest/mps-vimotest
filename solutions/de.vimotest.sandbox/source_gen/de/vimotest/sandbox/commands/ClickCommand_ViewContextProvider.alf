@@ -1,0 +1,12 @@
+namespace commands ;
+
+
+
+class ClickCommand_ViewContextProvider {
+  
+  public Init (  ) {     }
+  
+  public BuildSut (  ) : ClickCommand_View  {
+  return null;
+ }
+}

@@ -1,0 +1,166 @@
+namespace commands ;
+
+
+
+class SelectRowCommand_View {
+  
+  private MyListViewWidgetListRows : SelectRowCommand_ViewMyListViewRow [ * ]  ;
+  
+  public getMyListViewWidgetListRows (  ) : SelectRowCommand_ViewMyListViewRow [ * ]  {
+  return this.MyListViewWidgetListRows;
+ }
+  
+  private MyListViewSelectedRow : Integer  ;
+  
+  public getMyListViewSelectedRow (  ) : Integer  {
+  return this.MyListViewSelectedRow;
+ }
+  
+  private isMyListViewUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyListViewUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyListViewUpdatingRowsFlag;
+ }
+  
+  private MyStringRowHandleListViewWidgetListRows : SelectRowCommand_ViewMyStringRowHandleListViewRow [ * ]  ;
+  
+  public getMyStringRowHandleListViewWidgetListRows (  ) : SelectRowCommand_ViewMyStringRowHandleListViewRow [ * ]  {
+  return this.MyStringRowHandleListViewWidgetListRows;
+ }
+  
+  private MyStringRowHandleListViewSelectedRow : String  ;
+  
+  public getMyStringRowHandleListViewSelectedRow (  ) : String  {
+  return this.MyStringRowHandleListViewSelectedRow;
+ }
+  
+  private isMyStringRowHandleListViewUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyStringRowHandleListViewUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyStringRowHandleListViewUpdatingRowsFlag;
+ }
+  
+  private MyTableViewWidgetTableRows : SelectRowCommand_ViewMyTableViewRow [ * ]  ;
+  
+  public getMyTableViewWidgetTableRows (  ) : SelectRowCommand_ViewMyTableViewRow [ * ]  {
+  return this.MyTableViewWidgetTableRows;
+ }
+  
+  private MyTableViewSelectedRow : Integer  ;
+  
+  public getMyTableViewSelectedRow (  ) : Integer  {
+  return this.MyTableViewSelectedRow;
+ }
+  
+  private isMyTableViewUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyTableViewUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyTableViewUpdatingRowsFlag;
+ }
+  
+  private MyStringRowHandleTableViewWidgetTableRows : SelectRowCommand_ViewMyStringRowHandleTableViewRow [ * ]  ;
+  
+  public getMyStringRowHandleTableViewWidgetTableRows (  ) : SelectRowCommand_ViewMyStringRowHandleTableViewRow [ * ]  {
+  return this.MyStringRowHandleTableViewWidgetTableRows;
+ }
+  
+  private MyStringRowHandleTableViewSelectedRow : String  ;
+  
+  public getMyStringRowHandleTableViewSelectedRow (  ) : String  {
+  return this.MyStringRowHandleTableViewSelectedRow;
+ }
+  
+  private isMyStringRowHandleTableViewUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyStringRowHandleTableViewUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyStringRowHandleTableViewUpdatingRowsFlag;
+ }
+  
+  private MyTreeViewWidgetTreeRows : SelectRowCommand_ViewMyTreeViewRow [ * ]  ;
+  
+  public getMyTreeViewWidgetTreeRows (  ) : SelectRowCommand_ViewMyTreeViewRow [ * ]  {
+  return this.MyTreeViewWidgetTreeRows;
+ }
+  
+  private MyTreeViewSelectedRow : Integer  ;
+  
+  public getMyTreeViewSelectedRow (  ) : Integer  {
+  return this.MyTreeViewSelectedRow;
+ }
+  
+  private isMyTreeViewUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyTreeViewUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyTreeViewUpdatingRowsFlag;
+ }
+  
+  private MyStringRowHandleTreeViewWidgetTreeRows : SelectRowCommand_ViewMyStringRowHandleTreeViewRow [ * ]  ;
+  
+  public getMyStringRowHandleTreeViewWidgetTreeRows (  ) : SelectRowCommand_ViewMyStringRowHandleTreeViewRow [ * ]  {
+  return this.MyStringRowHandleTreeViewWidgetTreeRows;
+ }
+  
+  private MyStringRowHandleTreeViewSelectedRow : String  ;
+  
+  public getMyStringRowHandleTreeViewSelectedRow (  ) : String  {
+  return this.MyStringRowHandleTreeViewSelectedRow;
+ }
+  
+  private isMyStringRowHandleTreeViewUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyStringRowHandleTreeViewUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyStringRowHandleTreeViewUpdatingRowsFlag;
+ }
+  
+  private MyIndexBasedMultiSelectRowListViewWidgetListRows : SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewRow [ * ]  ;
+  
+  public getMyIndexBasedMultiSelectRowListViewWidgetListRows (  ) : SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewRow [ * ]  {
+  return this.MyIndexBasedMultiSelectRowListViewWidgetListRows;
+ }
+  
+  private MyIndexBasedMultiSelectRowListViewSelectedRows : Integer [ * ]  ;
+  
+  public getMyIndexBasedMultiSelectRowListViewSelectedRows (  ) : Integer [ * ]  {
+  return this.MyIndexBasedMultiSelectRowListViewSelectedRows;
+ }
+  
+  private isMyIndexBasedMultiSelectRowListViewUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyIndexBasedMultiSelectRowListViewUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyIndexBasedMultiSelectRowListViewUpdatingRowsFlag;
+ }
+  
+  private MyStringHandleMultiSelectRowListViewWidgetListRows : SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow [ * ]  ;
+  
+  public getMyStringHandleMultiSelectRowListViewWidgetListRows (  ) : SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow [ * ]  {
+  return this.MyStringHandleMultiSelectRowListViewWidgetListRows;
+ }
+  
+  private MyStringHandleMultiSelectRowListViewSelectedRows : String [ * ]  ;
+  
+  public getMyStringHandleMultiSelectRowListViewSelectedRows (  ) : String [ * ]  {
+  return this.MyStringHandleMultiSelectRowListViewSelectedRows;
+ }
+  
+  private isMyStringHandleMultiSelectRowListViewUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyStringHandleMultiSelectRowListViewUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyStringHandleMultiSelectRowListViewUpdatingRowsFlag;
+ }
+  
+  public MyListViewRowSelected (   in rowIndex : Integer  ) {     }
+  
+  public MyStringRowHandleListViewRowSelected (   in rowHandle : String  ) {     }
+  
+  public MyTableViewRowSelected (   in rowIndex : Integer  ) {     }
+  
+  public MyStringRowHandleTableViewRowSelected (   in rowHandle : String  ) {     }
+  
+  public MyTreeViewRowSelected (   in rowIndex : Integer  ) {     }
+  
+  public MyStringRowHandleTreeViewRowSelected (   in rowHandle : String  ) {     }
+  
+  public MyIndexBasedMultiSelectRowListViewRowSelected (   in rowIndices : Integer [ * ]  ) {     }
+  
+  public MyStringHandleMultiSelectRowListViewRowSelected (   in rowHandles : String [ * ]  ) {     }
+}

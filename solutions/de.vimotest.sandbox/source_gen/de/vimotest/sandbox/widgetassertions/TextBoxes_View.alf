@@ -1,0 +1,30 @@
+namespace widgetassertions ;
+
+
+
+class TextBoxes_View {
+  
+  private MyTextBoxText : String  ;
+  
+  public getMyTextBoxText (  ) : String  {
+  return this.MyTextBoxText;
+ }
+  
+  private isMyTextBoxVisibility : Boolean  ;
+  
+  public getIsMyTextBoxVisibility (  ) : Boolean  {
+  return this.isMyTextBoxVisibility;
+ }
+  
+  private isMyTextBoxEnabled : Boolean  ;
+  
+  public getIsMyTextBoxEnabled (  ) : Boolean  {
+  return this.isMyTextBoxEnabled;
+ }
+  
+  private MultiLineTextBoxText : String [ * ]  ;
+  
+  public getMultiLineTextBoxText (  ) : String [ * ]  {
+  return this.MultiLineTextBoxText;
+ }
+}

@@ -1,0 +1,42 @@
+namespace widgetassertions ;
+
+
+
+class CheckBoxes_View {
+  
+  private isMyFlagWithLabelChecked : Boolean  ;
+  
+  public getIsMyFlagWithLabelChecked (  ) : Boolean  {
+  return this.isMyFlagWithLabelChecked;
+ }
+  
+  private isMyFlagWithLabelVisibility : Boolean  ;
+  
+  public getIsMyFlagWithLabelVisibility (  ) : Boolean  {
+  return this.isMyFlagWithLabelVisibility;
+ }
+  
+  private isMyFlagWithLabelEnabled : Boolean  ;
+  
+  public getIsMyFlagWithLabelEnabled (  ) : Boolean  {
+  return this.isMyFlagWithLabelEnabled;
+ }
+  
+  private MyFlagWithLabelText : String  ;
+  
+  public getMyFlagWithLabelText (  ) : String  {
+  return this.MyFlagWithLabelText;
+ }
+  
+  private isMyFlagNoLabelChecked : Boolean  ;
+  
+  public getIsMyFlagNoLabelChecked (  ) : Boolean  {
+  return this.isMyFlagNoLabelChecked;
+ }
+  
+  private isMyFlagTriStateChecked : Boolean [ 0 .. 1 ]  ;
+  
+  public getIsMyFlagTriStateChecked (  ) : Boolean [ 0 .. 1 ]  {
+  return this.isMyFlagTriStateChecked;
+ }
+}

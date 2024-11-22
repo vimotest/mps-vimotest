@@ -1,0 +1,42 @@
+namespace commands ;
+
+
+
+class RowBasedCommand_ViewMyTableViewRow {
+  
+  private FreeTextComboBoxesComboBoxEntries : String [ * ]  ;
+  
+  public getFreeTextComboBoxesComboBoxEntries (  ) : String [ * ]  {
+  return this.FreeTextComboBoxesComboBoxEntries;
+ }
+  
+  private FreeTextComboBoxesSelectedEntry : String  ;
+  
+  public getFreeTextComboBoxesSelectedEntry (  ) : String  {
+  return this.FreeTextComboBoxesSelectedEntry;
+ }
+  
+  private FreeTextComboBoxesText : String  ;
+  
+  public getFreeTextComboBoxesText (  ) : String  {
+  return this.FreeTextComboBoxesText;
+ }
+  
+  private EntryComboBoxesComboBoxEntries : String [ * ]  ;
+  
+  public getEntryComboBoxesComboBoxEntries (  ) : String [ * ]  {
+  return this.EntryComboBoxesComboBoxEntries;
+ }
+  
+  private EntryComboBoxesSelectedEntry : String  ;
+  
+  public getEntryComboBoxesSelectedEntry (  ) : String  {
+  return this.EntryComboBoxesSelectedEntry;
+ }
+  
+  private RowIndex : Integer  ;
+  
+  public getRowIndex (  ) : Integer  {
+  return this.RowIndex;
+ }
+}

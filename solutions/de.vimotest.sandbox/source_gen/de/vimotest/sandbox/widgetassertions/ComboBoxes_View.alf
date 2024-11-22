@@ -1,0 +1,60 @@
+namespace widgetassertions ;
+
+
+
+class ComboBoxes_View {
+  
+  private MyOptionsComboBoxEntries : String [ * ]  ;
+  
+  public getMyOptionsComboBoxEntries (  ) : String [ * ]  {
+  return this.MyOptionsComboBoxEntries;
+ }
+  
+  private MyOptionsSelectedEntry : String  ;
+  
+  public getMyOptionsSelectedEntry (  ) : String  {
+  return this.MyOptionsSelectedEntry;
+ }
+  
+  private isMyOptionsVisibility : Boolean  ;
+  
+  public getIsMyOptionsVisibility (  ) : Boolean  {
+  return this.isMyOptionsVisibility;
+ }
+  
+  private isMyOptionsEnabled : Boolean  ;
+  
+  public getIsMyOptionsEnabled (  ) : Boolean  {
+  return this.isMyOptionsEnabled;
+ }
+  
+  private MyOptionsWithFreeTextComboBoxEntries : String [ * ]  ;
+  
+  public getMyOptionsWithFreeTextComboBoxEntries (  ) : String [ * ]  {
+  return this.MyOptionsWithFreeTextComboBoxEntries;
+ }
+  
+  private MyOptionsWithFreeTextSelectedEntry : String  ;
+  
+  public getMyOptionsWithFreeTextSelectedEntry (  ) : String  {
+  return this.MyOptionsWithFreeTextSelectedEntry;
+ }
+  
+  private MyOptionsWithFreeTextText : String  ;
+  
+  public getMyOptionsWithFreeTextText (  ) : String  {
+  return this.MyOptionsWithFreeTextText;
+ }
+  
+  private isMyOptionsWithFreeTextVisibility : Boolean  ;
+  
+  public getIsMyOptionsWithFreeTextVisibility (  ) : Boolean  {
+  return this.isMyOptionsWithFreeTextVisibility;
+ }
+  
+  private isMyOptionsWithFreeTextEnabled : Boolean  ;
+  
+  public getIsMyOptionsWithFreeTextEnabled (  ) : Boolean  {
+  return this.isMyOptionsWithFreeTextEnabled;
+ }
+}

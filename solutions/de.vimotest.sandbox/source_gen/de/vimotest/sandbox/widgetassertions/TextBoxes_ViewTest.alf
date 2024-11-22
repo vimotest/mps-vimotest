@@ -1,0 +1,61 @@
+namespace widgetassertions ;
+
+private import Testing ;
+
+class TextBoxes_ViewTest {
+  
+  private sut : TextBoxes_View  ;
+  
+  private contextProvider : TextBoxes_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new TextBoxes_ViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public My_SingleLine_Scenario_given_empty_context_when_then_MyTextBox_shows_text_Some_entered_Input_and_is_enabled_and_is_visible (  ) {
+  this.given_empty_context (  );
+   this.BuildSut (  );
+   this.then_MyTextBox_shows_text_Some_entered_Input_and_is_enabled_and_is_visible (  );
+ }
+  
+  public My_MultiLine_Scenario_given_empty_context_when_then_MultiLineTextBox_shows_text_Expected1_Expected2_ (  ) {
+  this.given_empty_context1 (  );
+   this.BuildSut (  );
+   this.then_MultiLineTextBox_shows_text_Expected1_Expected2_ (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  public given_empty_context (  ) {     }
+  
+  public given_empty_context1 (  ) {     }
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+  
+  public then_MyTextBox_shows_text_Some_entered_Input_and_is_enabled_and_is_visible (  ) {
+  AssertEqual ( "Some entered Input", this.sut.getMyTextBoxText (  ) );
+   AssertTrue ( this.sut.getIsMyTextBoxEnabled (  ) );
+   AssertTrue ( this.sut.getIsMyTextBoxVisibility (  ) );
+ }
+  
+  public then_MultiLineTextBox_shows_text_Expected1_Expected2_ (  ) {
+  let actualMultiLineTextBoxLines: String [] = this.sut.getMultiLineTextBoxText (  );
+   AssertEqual ( 2, actualMultiLineTextBoxLines->size (  ) );
+   AssertEqual ( "Expected1", actualMultiLineTextBoxLines[ 1 ] ?? "" );
+   AssertEqual ( "Expected2", actualMultiLineTextBoxLines[ 2 ] ?? "" );
+ }
+}

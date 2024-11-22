@@ -1,0 +1,41 @@
+namespace commands ;
+
+private import Testing ;
+
+class ClickCommand_ViewTests {
+  
+  private sut : ClickCommand_View  ;
+  
+  private contextProvider : ClickCommand_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new ClickCommand_ViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public Click_Button_given_when_click_MyButton_then_ (  ) {
+  this.BuildSut (  );
+   this.when_click_MyButton (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  // When Helper Definitions
+
+  
+  public when_click_MyButton (  ) {
+  this.sut.MyButtonClicked (  );
+ }
+  
+  // Then Helper Definitions
+
+}

@@ -1,0 +1,51 @@
+namespace commands ;
+
+private import Testing ;
+
+class SelectEntryCommand_ViewTests {
+  
+  private sut : SelectEntryCommand_View  ;
+  
+  private contextProvider : SelectEntryCommand_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new SelectEntryCommand_ViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public Select_Entry_Combobox_Call_given_when_select_entry_C_in_MyComboBox_then_MyComboBox_has_3_entries_and (  ) {
+  this.BuildSut (  );
+   this.when_select_entry_C_in_MyComboBox (  );
+   this.then_MyComboBox_has_3_entries_and (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  // When Helper Definitions
+
+  
+  public when_select_entry_C_in_MyComboBox (  ) {
+  this.sut.MyComboBoxEntrySelected ( "C" );
+ }
+  
+  // Then Helper Definitions
+
+  
+  public then_MyComboBox_has_3_entries_and (  ) {
+  let actualMyComboBoxEntries: String [] = this.sut.getMyComboBoxComboBoxEntries (  );
+   AssertEqual ( 3, actualMyComboBoxEntries->size (  ) );
+   AssertEqual ( "A", actualMyComboBoxEntries[ 1 ] ?? "" );
+   AssertEqual ( "B", actualMyComboBoxEntries[ 2 ] ?? "" );
+   AssertEqual ( "C", actualMyComboBoxEntries[ 3 ] ?? "" );
+   AssertEqual ( null, this.sut.getMyComboBoxSelectedEntry (  ) );
+ }
+}

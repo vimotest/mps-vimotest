@@ -1,0 +1,30 @@
+namespace widgetassertions ;
+
+
+
+class ListViews_ViewMyListOfLabelRow {
+  
+  private My_TextText : String  ;
+  
+  public getMy_TextText (  ) : String  {
+  return this.My_TextText;
+ }
+  
+  private isMy_TextEnabled : Boolean  ;
+  
+  public getIsMy_TextEnabled (  ) : Boolean  {
+  return this.isMy_TextEnabled;
+ }
+  
+  private isMy_TextVisibility : Boolean  ;
+  
+  public getIsMy_TextVisibility (  ) : Boolean  {
+  return this.isMy_TextVisibility;
+ }
+  
+  private RowIndex : Integer  ;
+  
+  public getRowIndex (  ) : Integer  {
+  return this.RowIndex;
+ }
+}

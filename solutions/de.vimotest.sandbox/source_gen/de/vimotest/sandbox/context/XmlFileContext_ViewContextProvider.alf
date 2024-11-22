@@ -1,0 +1,16 @@
+namespace context ;
+
+
+
+class XmlFileContext_ViewContextProvider {
+  
+  public Init (  ) {     }
+  
+  public SetXmlFileContext (   in xmlFileContent : String  ) {     }
+  
+  public SetXmlExternalFileContext (   in xmlFileName : String  ) {     }
+  
+  public BuildSut (  ) : XmlFileContext_View  {
+  return null;
+ }
+}

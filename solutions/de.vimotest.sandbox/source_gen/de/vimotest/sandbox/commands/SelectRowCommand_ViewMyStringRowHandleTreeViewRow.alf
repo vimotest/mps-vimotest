@@ -1,0 +1,24 @@
+namespace commands ;
+
+
+
+class SelectRowCommand_ViewMyStringRowHandleTreeViewRow {
+  
+  private columnCellText : String  ;
+  
+  public getColumnCellText (  ) : String  {
+  return this.columnCellText;
+ }
+  
+  private RowHandle : String  ;
+  
+  public getRowHandle (  ) : String  {
+  return this.RowHandle;
+ }
+  
+  private RowDepth : Integer  ;
+  
+  public getRowDepth (  ) : Integer  {
+  return this.RowDepth;
+ }
+}

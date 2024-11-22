@@ -1,0 +1,8 @@
+namespace commands ;
+
+
+
+class GenericCommands_View {
+  
+  public MyCommand (   in MyFlag : Boolean ,   in Names : String [ * ]  ) {     }
+}

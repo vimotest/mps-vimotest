@@ -1,0 +1,52 @@
+namespace context ;
+
+private import Testing ;
+
+class XmlFileContext_ViewTests {
+  
+  private sut : XmlFileContext_View  ;
+  
+  private contextProvider : XmlFileContext_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new XmlFileContext_ViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public XmlFile_NoExternalFile_given_XmlFile_NoExternalFile_when_then_ (  ) {
+  this.given_XmlFile_NoExternalFile (  );
+   this.BuildSut (  );
+ }
+  
+  public XmlFile_ExternalFile_given_XmlFile_ExternalFile_when_then_ (  ) {
+  this.given_XmlFile_ExternalFile (  );
+   this.BuildSut (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  private XmlFile_NoExternalFile : String = "<XML file as string literal is not supported yet>";
+  
+  public given_XmlFile_NoExternalFile (  ) {
+  this.contextProvider.SetXmlFileContext ( this.XmlFile_NoExternalFile );
+ }
+  
+  public given_XmlFile_ExternalFile (  ) {
+  this.contextProvider.SetXmlExternalFileContext ( "XmlFile_ExternalFile.xml" );
+ }
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+}

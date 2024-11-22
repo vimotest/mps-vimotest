@@ -1,0 +1,43 @@
+namespace context ;
+
+private import Testing ;
+
+class StringContext_ViewTests {
+  
+  private sut : StringContext_View  ;
+  
+  private contextProvider : StringContext_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new StringContext_ViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public SimpleStringContext_given_alice_bob_charlie_when_then_ (  ) {
+  this.given_alice_bob_charlie (  );
+   this.BuildSut (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  private alice_bob_charlie : String = "Alice, Bob, Charlie";
+  
+  public given_alice_bob_charlie (  ) {
+  this.contextProvider.SetSimpleStringContext ( this.alice_bob_charlie );
+ }
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+}

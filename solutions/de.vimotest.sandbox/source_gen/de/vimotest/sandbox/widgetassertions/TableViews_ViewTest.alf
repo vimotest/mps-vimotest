@@ -1,0 +1,104 @@
+namespace widgetassertions ;
+
+private import Testing ;
+
+class TableViews_ViewTest {
+  
+  private sut : TableViews_View  ;
+  
+  private contextProvider : TableViews_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new TableViews_ViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public My_Scenario_given_empty_context_when_then_MyTableView_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  ) {
+  this.given_empty_context (  );
+   this.BuildSut (  );
+   this.then_MyTableView_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled (  );
+   this.then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  );
+ }
+  
+  public Table_Ignore_Columns_given_empty_context_when_then_MyTableView_has_2_rows (  ) {
+  this.given_empty_context1 (  );
+   this.BuildSut (  );
+   this.then_MyTableView_has_2_rows (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  public given_empty_context (  ) {     }
+  
+  public given_empty_context1 (  ) {     }
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+  
+  public then_MyTableView_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled (  ) {
+  let actualRows: TableViews_ViewMyTableViewRow [] = this.sut.getMyTableViewWidgetTableRows (  );
+   AssertEqual ( 2, actualRows->size (  ) );
+   {
+  let row0: TableViews_ViewMyTableViewRow = actualRows[ 1 ];
+   AssertEqual ( 0, row0.getRowIndex (  ) );
+   AssertTrue ( row0.getIsIncludeChecked (  ) );
+   AssertEqual ( "A", row0.getNameText (  ) );
+   AssertEqual ( "B", row0.getDescriptionText (  ) );
+   AssertEqual ( "image_info", row0.getInfoIconImageSource (  ) );
+ }
+   {
+  let row1: TableViews_ViewMyTableViewRow = actualRows[ 2 ];
+   AssertEqual ( 1, row1.getRowIndex (  ) );
+   AssertFalse ( row1.getIsIncludeChecked (  ) );
+   AssertEqual ( "C", row1.getNameText (  ) );
+   AssertEqual ( "D", row1.getDescriptionText (  ) );
+   AssertEqual ( "image_star", row1.getInfoIconImageSource (  ) );
+ }
+   AssertEqual ( 1, this.sut.getMyTableViewSelectedRow (  ) );
+   AssertTrue ( this.sut.getIsMyTableViewVisibility (  ) );
+   AssertTrue ( this.sut.getIsMyTableViewEnabled (  ) );
+ }
+  
+  public then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  ) {
+  let actualRows: TableViews_ViewMyStringRowHandlesRow [] = this.sut.getMyStringRowHandlesWidgetTableRows (  );
+   AssertEqual ( 2, actualRows->size (  ) );
+   {
+  let row0: TableViews_ViewMyStringRowHandlesRow = actualRows[ 1 ];
+   AssertEqual ( "ROW0", row0.getRowHandle (  ) );
+   AssertEqual ( "A", row0.getValuesText (  ) );
+ }
+   {
+  let row1: TableViews_ViewMyStringRowHandlesRow = actualRows[ 2 ];
+   AssertEqual ( "ROW1", row1.getRowHandle (  ) );
+   AssertEqual ( "B", row1.getValuesText (  ) );
+ }
+   AssertEqual ( "ROW1", this.sut.getMyStringRowHandlesSelectedRow (  ) );
+ }
+  
+  public then_MyTableView_has_2_rows (  ) {
+  let actualRows: TableViews_ViewMyTableViewRow [] = this.sut.getMyTableViewWidgetTableRows (  );
+   AssertEqual ( 2, actualRows->size (  ) );
+   {
+  let row0: TableViews_ViewMyTableViewRow = actualRows[ 1 ];
+   AssertEqual ( 0, row0.getRowIndex (  ) );
+   AssertEqual ( "A", row0.getNameText (  ) );
+ }
+   {
+  let row1: TableViews_ViewMyTableViewRow = actualRows[ 2 ];
+   AssertEqual ( 1, row1.getRowIndex (  ) );
+   AssertEqual ( "image_star", row1.getInfoIconImageSource (  ) );
+ }
+ }
+}

@@ -1,0 +1,54 @@
+namespace commands ;
+
+
+
+class RowBasedCommand_View {
+  
+  private MyListViewWidgetListRows : RowBasedCommand_ViewMyListViewRow [ * ]  ;
+  
+  public getMyListViewWidgetListRows (  ) : RowBasedCommand_ViewMyListViewRow [ * ]  {
+  return this.MyListViewWidgetListRows;
+ }
+  
+  private isMyListViewUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyListViewUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyListViewUpdatingRowsFlag;
+ }
+  
+  private MyTableViewWidgetTableRows : RowBasedCommand_ViewMyTableViewRow [ * ]  ;
+  
+  public getMyTableViewWidgetTableRows (  ) : RowBasedCommand_ViewMyTableViewRow [ * ]  {
+  return this.MyTableViewWidgetTableRows;
+ }
+  
+  private isMyTableViewUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyTableViewUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyTableViewUpdatingRowsFlag;
+ }
+  
+  private MyTreeViewWidgetTreeRows : RowBasedCommand_ViewMyTreeViewRow [ * ]  ;
+  
+  public getMyTreeViewWidgetTreeRows (  ) : RowBasedCommand_ViewMyTreeViewRow [ * ]  {
+  return this.MyTreeViewWidgetTreeRows;
+ }
+  
+  private isMyTreeViewUpdatingRowsFlag : Boolean  ;
+  
+  public getIsMyTreeViewUpdatingRowsFlag (  ) : Boolean  {
+  return this.isMyTreeViewUpdatingRowsFlag;
+ }
+  
+  public LoadView (  ) {     }
+  
+  public CheckboxesChecked (   in rowIndex : Integer ,   in isChecked : Boolean  ) {     }
+  
+  public FreeTextComboBoxesEntrySelected (   in rowIndex : Integer ,   in entryName : String  ) {     }
+  
+  public EntryComboBoxesEntrySelected (   in rowIndex : Integer ,   in entryName : String  ) {     }
+  
+  public TextBoxesTextFilled (   in rowIndex : Integer ,   in text : String  ) {     }
+  
+  public ButtonsClicked (   in rowIndex : Integer  ) {     }
+}

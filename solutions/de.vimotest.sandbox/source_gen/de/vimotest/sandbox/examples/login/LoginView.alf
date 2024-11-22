@@ -1,0 +1,52 @@
+namespace examples:: login ;
+
+
+
+class LoginView {
+  
+  private UsernameText : String  ;
+  
+  public getUsernameText (  ) : String  {
+  return this.UsernameText;
+ }
+  
+  private PasswordText : String  ;
+  
+  public getPasswordText (  ) : String  {
+  return this.PasswordText;
+ }
+  
+  private isShowPasswordChecked : Boolean  ;
+  
+  public getIsShowPasswordChecked (  ) : Boolean  {
+  return this.isShowPasswordChecked;
+ }
+  
+  private isLoginEnabled : Boolean  ;
+  
+  public getIsLoginEnabled (  ) : Boolean  {
+  return this.isLoginEnabled;
+ }
+  
+  private ErrorTextText : String  ;
+  
+  public getErrorTextText (  ) : String  {
+  return this.ErrorTextText;
+ }
+  
+  private isErrorTextVisibility : Boolean  ;
+  
+  public getIsErrorTextVisibility (  ) : Boolean  {
+  return this.isErrorTextVisibility;
+ }
+  
+  public LoadView (  ) {     }
+  
+  public UsernameTextFilled (   in text : String  ) {     }
+  
+  public PasswordTextFilled (   in text : String  ) {     }
+  
+  public ShowPasswordChecked (   in isChecked : Boolean  ) {     }
+  
+  public LoginClicked (  ) {     }
+}

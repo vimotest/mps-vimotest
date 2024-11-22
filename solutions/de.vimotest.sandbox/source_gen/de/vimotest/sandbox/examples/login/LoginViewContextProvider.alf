@@ -1,0 +1,16 @@
+namespace examples:: login ;
+
+
+
+class LoginViewContextProvider {
+  
+  public Init (  ) {     }
+  
+  public SetEmptyContext (  ) {     }
+  
+  public SetXmlElementContext (  ) {     }
+  
+  public BuildSut (  ) : LoginView  {
+  return null;
+ }
+}

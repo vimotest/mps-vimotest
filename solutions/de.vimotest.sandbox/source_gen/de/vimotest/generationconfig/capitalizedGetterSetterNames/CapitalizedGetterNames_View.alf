@@ -1,0 +1,42 @@
+
+
+
+
+class CapitalizedGetterNames_View {
+  
+  private isMyCheckBoxChecked : Boolean  ;
+  
+  public GetIsMyCheckBoxChecked (  ) : Boolean  {
+  return this.isMyCheckBoxChecked;
+ }
+  
+  private myVisibility : Boolean  ;
+  
+  public GetMyVisibility (  ) : Boolean  {
+  return this.myVisibility;
+ }
+  
+  private isMyCheckBoxEnabled : Boolean  ;
+  
+  public GetIsMyCheckBoxEnabled (  ) : Boolean  {
+  return this.isMyCheckBoxEnabled;
+ }
+  
+  private MyCheckBoxText : String  ;
+  
+  public GetMyCheckBoxText (  ) : String  {
+  return this.MyCheckBoxText;
+ }
+  
+  private myRows : CapitalizedGetterNames_ViewListViewRow [ * ]  ;
+  
+  public GetMyRows (  ) : CapitalizedGetterNames_ViewListViewRow [ * ]  {
+  return this.myRows;
+ }
+  
+  private isListViewUpdatingRowsFlag : Boolean  ;
+  
+  public GetIsListViewUpdatingRowsFlag (  ) : Boolean  {
+  return this.isListViewUpdatingRowsFlag;
+ }
+}

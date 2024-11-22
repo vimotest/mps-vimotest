@@ -4072,6 +4072,7 @@
           <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
         </node>
         <node concept="3F0A7n" id="6RKU0s1p3vW" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="at53:6RKU0s1p2qr" resolve="defaultToolTipText" />
         </node>
         <node concept="pkWqt" id="6RKU0s20Rng" role="pqm2j">
@@ -4104,6 +4105,7 @@
           <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
         </node>
         <node concept="3F0A7n" id="6RKU0s2DbF1" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="at53:6RKU0s1p2qr" resolve="defaultToolTipText" />
         </node>
         <node concept="pkWqt" id="6RKU0s2DbF2" role="pqm2j">

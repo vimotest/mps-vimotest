@@ -39,4 +39,16 @@ class Labels_View {
   public getMyLabelWithToolTipToolTip (  ) : String  {
   return this.MyLabelWithToolTipToolTip;
  }
+  
+  private MyLabelWithMultiLineToolTipText : String  ;
+  
+  public getMyLabelWithMultiLineToolTipText (  ) : String  {
+  return this.MyLabelWithMultiLineToolTipText;
+ }
+  
+  private MyLabelWithMultiLineToolTipToolTip : String [ * ]  ;
+  
+  public getMyLabelWithMultiLineToolTipToolTip (  ) : String [ * ]  {
+  return this.MyLabelWithMultiLineToolTipToolTip;
+ }
 }

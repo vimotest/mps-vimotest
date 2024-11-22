@@ -30,5 +30,13 @@ namespace widgetassertions
   {
     return this->MyLabelWithToolTipToolTip;
   }
+  std::string Labels_View::getMyLabelWithMultiLineToolTipText( ) 
+  {
+    return this->MyLabelWithMultiLineToolTipText;
+  }
+  std::vector<std::string> Labels_View::getMyLabelWithMultiLineToolTipToolTip( ) 
+  {
+    return this->MyLabelWithMultiLineToolTipToolTip;
+  }
 }
 

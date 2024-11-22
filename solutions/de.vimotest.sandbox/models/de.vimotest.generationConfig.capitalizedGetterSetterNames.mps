@@ -76,7 +76,9 @@
       </concept>
       <concept id="4610291257172366649" name="de.vimotest.viewmodel.structure.RowHandleCustomFeature" flags="ng" index="3D8xT1" />
       <concept id="4610291257172397388" name="de.vimotest.viewmodel.structure.UpdatingRowsFlagCustomFeature" flags="ng" index="3D8CoO" />
-      <concept id="7922086861330453131" name="de.vimotest.viewmodel.structure.ToolTipFeature" flags="ng" index="1G_fEc" />
+      <concept id="7922086861330453131" name="de.vimotest.viewmodel.structure.ToolTipFeature" flags="ng" index="1G_fEc">
+        <child id="7922086861494473183" name="defaultToolTipText" index="1AQzBo" />
+      </concept>
       <concept id="2690363995917909071" name="de.vimotest.viewmodel.structure.WidgetListRowsFeature" flags="ng" index="3KuuI3" />
     </language>
   </registry>
@@ -119,7 +121,9 @@
             </node>
             <node concept="C4FCh" id="3em85dStvTO" role="V3ZfL" />
             <node concept="C4FCg" id="3em85dStvTP" role="V3ZfM" />
-            <node concept="1G_fEc" id="6RKU0s20RmZ" role="1G_fIJ" />
+            <node concept="1G_fEc" id="6RKU0s20RmZ" role="1G_fIJ">
+              <node concept="o7Kjd" id="6RKU0sbzZxO" role="1AQzBo" />
+            </node>
           </node>
         </node>
         <node concept="3KuuI3" id="3em85dStvTR" role="1rSL7">

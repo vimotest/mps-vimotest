@@ -143,7 +143,9 @@
         <child id="777152910168882975" name="viewModelData" index="103ZXF" />
       </concept>
       <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelData" flags="ng" index="103ZXB" />
-      <concept id="7922086861330453131" name="de.vimotest.viewmodel.structure.ToolTipFeature" flags="ng" index="1G_fEc" />
+      <concept id="7922086861330453131" name="de.vimotest.viewmodel.structure.ToolTipFeature" flags="ng" index="1G_fEc">
+        <child id="7922086861494473183" name="defaultToolTipText" index="1AQzBo" />
+      </concept>
       <concept id="7283258543666616094" name="de.vimotest.viewmodel.structure.CheckCommand" flags="ng" index="3Vw88g" />
       <concept id="7283258543666616095" name="de.vimotest.viewmodel.structure.ClickCommand" flags="ng" index="3Vw88h" />
       <concept id="7283258543666616096" name="de.vimotest.viewmodel.structure.FillTextCommand" flags="ng" index="3Vw88I" />
@@ -210,7 +212,9 @@
         <node concept="C4FCg" id="17xw4ZmTXr_" role="V3ZfM">
           <property role="2VM7R0" value="true" />
         </node>
-        <node concept="1G_fEc" id="6RKU0s20RmP" role="1G_fIJ" />
+        <node concept="1G_fEc" id="6RKU0s20RmP" role="1G_fIJ">
+          <node concept="o7Kjd" id="6RKU0sbzZxN" role="1AQzBo" />
+        </node>
       </node>
     </node>
   </node>

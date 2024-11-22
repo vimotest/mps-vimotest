@@ -33,6 +33,12 @@ class Labels_ViewTest {
    this.then_MyLabelWithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_ (  );
  }
   
+  public MultiLine_ToolTip_Label_given_empty_context_when_then_MyLabelWithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_ (  ) {
+  this.given_empty_context3 (  );
+   this.BuildSut (  );
+   this.then_MyLabelWithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_ (  );
+ }
+  
   
   protected BuildSut (  ) {
   this.sut = this.contextProvider.BuildSut (  );
@@ -47,6 +53,8 @@ class Labels_ViewTest {
   public given_empty_context1 (  ) {     }
   
   public given_empty_context2 (  ) {     }
+  
+  public given_empty_context3 (  ) {     }
   
   // When Helper Definitions
 
@@ -70,5 +78,13 @@ class Labels_ViewTest {
   public then_MyLabelWithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_ (  ) {
   AssertEqual ( "Info", this.sut.getMyLabelWithToolTipText (  ) );
    AssertEqual ( "My Expected Tooltip", this.sut.getMyLabelWithToolTipToolTip (  ) );
+ }
+  
+  public then_MyLabelWithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_ (  ) {
+  AssertEqual ( "Info", this.sut.getMyLabelWithMultiLineToolTipText (  ) );
+   let actualMyLabelWithMultiLineToolTipLines: String [] = this.sut.getMyLabelWithMultiLineToolTipToolTip (  );
+   AssertEqual ( 2, actualMyLabelWithMultiLineToolTipLines->size (  ) );
+   AssertEqual ( "Line1", actualMyLabelWithMultiLineToolTipLines[ 1 ] ?? "" );
+   AssertEqual ( "Line2", actualMyLabelWithMultiLineToolTipLines[ 2 ] ?? "" );
  }
 }

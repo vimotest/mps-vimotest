@@ -30,4 +30,12 @@ public class Labels_View {
   public String getMyLabelWithToolTipToolTip() {
     return this.MyLabelWithToolTipToolTip;
   }
+  private String MyLabelWithMultiLineToolTipText;
+  public String getMyLabelWithMultiLineToolTipText() {
+    return this.MyLabelWithMultiLineToolTipText;
+  }
+  private List<String> MyLabelWithMultiLineToolTipToolTip = new LinkedList<>();
+  public List<String> getMyLabelWithMultiLineToolTipToolTip() {
+    return this.MyLabelWithMultiLineToolTipToolTip;
+  }
 }

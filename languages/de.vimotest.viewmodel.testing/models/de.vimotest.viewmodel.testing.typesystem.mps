@@ -3209,5 +3209,84 @@
       <ref role="1YaFvo" to="53m0:7WgsBLYmzjC" resolve="WidgetListRowsCheckValue" />
     </node>
   </node>
+  <node concept="18kY7G" id="6RKU0sbGiDr">
+    <property role="TrG5h" value="check_ToolTipCheckValue" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <node concept="3clFbS" id="6RKU0sbGiDs" role="18ibNy">
+      <node concept="3cpWs8" id="6RKU0sbGiPF" role="3cqZAp">
+        <node concept="3cpWsn" id="6RKU0sbGiPG" role="3cpWs9">
+          <property role="TrG5h" value="featureIsMultiLine" />
+          <node concept="10P_77" id="6RKU0sbGiPH" role="1tU5fm" />
+          <node concept="2OqwBi" id="6RKU0sbGiPI" role="33vP2m">
+            <node concept="2OqwBi" id="6RKU0sbGiPJ" role="2Oq$k0">
+              <node concept="1YBJjd" id="6RKU0sbGiPK" role="2Oq$k0">
+                <ref role="1YBMHb" node="6RKU0sbGiDu" resolve="toolTipCheckValue" />
+              </node>
+              <node concept="2qgKlT" id="6RKU0sbGiPL" role="2OqNvi">
+                <ref role="37wK5l" to="fwln:6RKU0sbjRRB" resolve="getToolTipFeature" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="6RKU0sbGiPM" role="2OqNvi">
+              <ref role="37wK5l" to="nrs2:6RKU0sbaJ$F" resolve="isMultiLine" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="6RKU0sbGiPN" role="3cqZAp">
+        <node concept="3y3z36" id="6RKU0sbGiPO" role="3clFbw">
+          <node concept="2OqwBi" id="6RKU0sbGiPP" role="3uHU7w">
+            <node concept="2OqwBi" id="6RKU0sbGiPQ" role="2Oq$k0">
+              <node concept="1YBJjd" id="6RKU0sbGiPR" role="2Oq$k0">
+                <ref role="1YBMHb" node="6RKU0sbGiDu" resolve="toolTipCheckValue" />
+              </node>
+              <node concept="3TrEf2" id="6RKU0sbGiPS" role="2OqNvi">
+                <ref role="3Tt5mk" to="53m0:6RKU0sbk2jt" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="6RKU0sbGiPT" role="2OqNvi">
+              <ref role="3TsBF5" to="at53:4xJPu9gsdgV" resolve="isMultiLine" />
+            </node>
+          </node>
+          <node concept="37vLTw" id="6RKU0sbGiPU" role="3uHU7B">
+            <ref role="3cqZAo" node="6RKU0sbGiPG" resolve="featureIsMultiLine" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="6RKU0sbGiPV" role="3clFbx">
+          <node concept="2MkqsV" id="6RKU0sbGiPW" role="3cqZAp">
+            <node concept="3cpWs3" id="6RKU0sbGiPX" role="2MkJ7o">
+              <node concept="Xl_RD" id="6RKU0sbGiPY" role="3uHU7B">
+                <property role="Xl_RC" value="Should check " />
+              </node>
+              <node concept="1eOMI4" id="6RKU0sbGiPZ" role="3uHU7w">
+                <node concept="3K4zz7" id="6RKU0sbGiQ0" role="1eOMHV">
+                  <node concept="Xl_RD" id="6RKU0sbGiQ1" role="3K4E3e">
+                    <property role="Xl_RC" value="multiline tooltip" />
+                  </node>
+                  <node concept="Xl_RD" id="6RKU0sbGiQ2" role="3K4GZi">
+                    <property role="Xl_RC" value="singleline tooltip" />
+                  </node>
+                  <node concept="37vLTw" id="6RKU0sbGiQ3" role="3K4Cdx">
+                    <ref role="3cqZAo" node="6RKU0sbGiPG" resolve="featureIsMultiLine" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6RKU0sbGiQ4" role="1urrMF">
+              <node concept="1YBJjd" id="6RKU0sbGiQ5" role="2Oq$k0">
+                <ref role="1YBMHb" node="6RKU0sbGiDu" resolve="toolTipCheckValue" />
+              </node>
+              <node concept="3TrEf2" id="6RKU0sbGiQ6" role="2OqNvi">
+                <ref role="3Tt5mk" to="53m0:6RKU0sbk2jt" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6RKU0sbGiDu" role="1YuTPh">
+      <property role="TrG5h" value="toolTipCheckValue" />
+      <ref role="1YaFvo" to="53m0:6RKU0s1p1ak" resolve="ToolTipCheckValue" />
+    </node>
+  </node>
 </model>
 

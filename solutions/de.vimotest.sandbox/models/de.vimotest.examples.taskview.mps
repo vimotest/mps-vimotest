@@ -58,7 +58,9 @@
         <property id="6327146089782817145" name="kind" index="34jNyx" />
       </concept>
       <concept id="4610291257172397388" name="de.vimotest.viewmodel.structure.UpdatingRowsFlagCustomFeature" flags="ng" index="3D8CoO" />
-      <concept id="7922086861330453131" name="de.vimotest.viewmodel.structure.ToolTipFeature" flags="ng" index="1G_fEc" />
+      <concept id="7922086861330453131" name="de.vimotest.viewmodel.structure.ToolTipFeature" flags="ng" index="1G_fEc">
+        <child id="7922086861494473183" name="defaultToolTipText" index="1AQzBo" />
+      </concept>
       <concept id="2690363995917909073" name="de.vimotest.viewmodel.structure.WidgetTableRowsFeature" flags="ng" index="3KuuIt" />
       <concept id="2392128244454154631" name="de.vimotest.viewmodel.structure.TableViewWidget" flags="ng" index="3UVeDL">
         <child id="5447508759370023522" name="columnsFeature" index="2azj8S" />
@@ -91,7 +93,9 @@
             </node>
             <node concept="C4FCh" id="7Ymnhjip$A6" role="V3ZfL" />
             <node concept="C4FCg" id="7Ymnhjip$Ad" role="V3ZfM" />
-            <node concept="1G_fEc" id="7Ymnhjip$Ak" role="1G_fIJ" />
+            <node concept="1G_fEc" id="7Ymnhjip$Ak" role="1G_fIJ">
+              <node concept="o7Kjd" id="6RKU0sbzZxQ" role="1AQzBo" />
+            </node>
           </node>
         </node>
         <node concept="3KuuIt" id="7Ymnhjip$Ar" role="3UVeDY">

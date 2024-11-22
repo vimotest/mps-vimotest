@@ -30,6 +30,12 @@ public class Labels_ViewTest_Test {
     this.BuildSut();
     this.then_MyLabelWithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_();
   }
+  @Test
+  public void test_MultiLine_ToolTip_Label_given_empty_context_when_then_MyLabelWithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_() throws Exception {
+    this.given_empty_context3();
+    this.BuildSut();
+    this.then_MyLabelWithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_();
+  }
   @BeforeEach
   public void setUp() {
     this.contextProvider = new Labels_ViewContextProvider();
@@ -50,6 +56,8 @@ public class Labels_ViewTest_Test {
   }
   public void given_empty_context2() {
   }
+  public void given_empty_context3() {
+  }
 
 
 
@@ -68,5 +76,12 @@ public class Labels_ViewTest_Test {
   public void then_MyLabelWithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_() {
     Assert.assertEquals("Info", this.sut.getMyLabelWithToolTipText());
     Assert.assertEquals("My Expected Tooltip", this.sut.getMyLabelWithToolTipToolTip());
+  }
+  public void then_MyLabelWithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_() {
+    Assert.assertEquals("Info", this.sut.getMyLabelWithMultiLineToolTipText());
+    List<String> actualMyLabelWithMultiLineToolTipLines = this.sut.getMyLabelWithMultiLineToolTipToolTip();
+    Assert.assertEquals(2, actualMyLabelWithMultiLineToolTipLines.size());
+    Assert.assertEquals("Line1", actualMyLabelWithMultiLineToolTipLines.get(1 - 1));
+    Assert.assertEquals("Line2", actualMyLabelWithMultiLineToolTipLines.get(2 - 1));
   }
 }

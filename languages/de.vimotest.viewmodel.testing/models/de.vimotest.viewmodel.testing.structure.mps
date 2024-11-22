@@ -1103,13 +1103,24 @@
     <property role="34LRSv" value="tooltip" />
     <property role="3GE5qa" value="test.assert._checkvalues" />
     <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="1TJgyj" id="6RKU0sbk2jt" role="1TKVEi">
+      <property role="IQ2ns" value="7922086861496919261" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expectedToolTipText" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="at53:4xJPu9gsd4J" resolve="SingleOrMultiLineString" />
+    </node>
     <node concept="1TJgyi" id="6RKU0s2F2d$" role="1TKVEl">
       <property role="IQ2nx" value="7922086861351953252" />
-      <property role="TrG5h" value="expectedToolTipText" />
+      <property role="TrG5h" value="old_expectedToolTipText" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="6RKU0sbk2js" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="6RKU0s1p1al" role="PzmwI">
       <ref role="PrY4T" node="7H4Lpx0iNqj" resolve="ILabelCheckValue" />
+    </node>
+    <node concept="PrWs8" id="6RKU0sbkA3h" role="PzmwI">
+      <ref role="PrY4T" to="at53:3c$pnH1eja4" resolve="ISingleOrMultiLineStringSupport" />
     </node>
   </node>
   <node concept="1TIwiD" id="6RKU0s7_yn6">

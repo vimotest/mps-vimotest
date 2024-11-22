@@ -29,6 +29,10 @@ jobs:
       - name: Download and Prepare MPS
         run: sh ./gradlew prepareMps
 
+      # Clean Project (source_gen of VCS)
+      - name: Clean Project
+        run: sh ./gradlew mpClean
+
       # Build Project
       - name: Build Project
         run: sh ./gradlew mpsBuild

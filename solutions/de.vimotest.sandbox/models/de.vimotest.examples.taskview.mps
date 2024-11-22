@@ -47,6 +47,9 @@
         <child id="777152910168882975" name="viewModelData" index="103ZXF" />
       </concept>
       <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelData" flags="ng" index="103ZXB" />
+      <concept id="6112733486387704342" name="de.vimotest.viewmodel.structure.GenerationConfig" flags="ng" index="1a4JyI">
+        <property id="9193638033335797030" name="generateAbstractViewModel" index="2H5xwM" />
+      </concept>
       <concept id="2148949417128514166" name="de.vimotest.viewmodel.structure.IRowBasedFeature" flags="ngI" index="3_UcxH">
         <child id="4610291257172520368" name="rowHandleFeature" index="3D86r8" />
         <child id="4610291257172520369" name="updatingRowsFlagFeature" index="3D86r9" />
@@ -105,6 +108,9 @@
         <node concept="3Vw88G" id="7Ymnhjip$Ax" role="2WQ0rd" />
       </node>
     </node>
+  </node>
+  <node concept="1a4JyI" id="6RKU0sb4zem">
+    <property role="2H5xwM" value="true" />
   </node>
 </model>
 

@@ -11,15 +11,11 @@ namespace de::vimotest::examples::taskview
   class TaskListViewModel
   {
     public:
-    virtual std::vector<std::shared_ptr<TaskListViewModelTasksRow>> getTasksWidgetTableRows() ;
-    virtual std::string getTasksSelectedRow() ;
-    virtual bool getIsTasksUpdatingRowsFlag() ;
+    virtual std::vector<std::shared_ptr<TaskListViewModelTasksRow>> getTasksWidgetTableRows() = 0;
+    virtual std::string getTasksSelectedRow() = 0;
+    virtual bool getIsTasksUpdatingRowsFlag() = 0;
     virtual void LoadView() ;
     virtual void TasksRowSelected(std::string rowHandle) ;
-    private:
-    std::vector<std::shared_ptr<TaskListViewModelTasksRow>> TasksWidgetTableRows;
-    std::string TasksSelectedRow;
-    bool isTasksUpdatingRowsFlag;
   };
 }
 

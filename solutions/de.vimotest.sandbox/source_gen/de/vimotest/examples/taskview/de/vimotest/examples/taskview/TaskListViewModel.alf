@@ -2,25 +2,13 @@ namespace de:: vimotest:: examples:: taskview ;
 
 
 
-class TaskListViewModel {
+abstract class TaskListViewModel {
   
-  private TasksWidgetTableRows : TaskListViewModelTasksRow [ * ]  ;
+  public abstract getTasksWidgetTableRows (  ) : TaskListViewModelTasksRow [ * ]  ;
   
-  public getTasksWidgetTableRows (  ) : TaskListViewModelTasksRow [ * ]  {
-  return this.TasksWidgetTableRows;
- }
+  public abstract getTasksSelectedRow (  ) : String  ;
   
-  private TasksSelectedRow : String  ;
-  
-  public getTasksSelectedRow (  ) : String  {
-  return this.TasksSelectedRow;
- }
-  
-  private isTasksUpdatingRowsFlag : Boolean  ;
-  
-  public getIsTasksUpdatingRowsFlag (  ) : Boolean  {
-  return this.isTasksUpdatingRowsFlag;
- }
+  public abstract getIsTasksUpdatingRowsFlag (  ) : Boolean  ;
   
   public LoadView (  ) {     }
   

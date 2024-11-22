@@ -2,17 +2,9 @@ namespace de:: vimotest:: examples:: taskview ;
 
 
 
-class TaskListViewModelTasksRow {
+abstract class TaskListViewModelTasksRow {
   
-  private NameText : String  ;
+  public abstract getNameText (  ) : String  ;
   
-  public getNameText (  ) : String  {
-  return this.NameText;
- }
-  
-  private RowHandle : String  ;
-  
-  public getRowHandle (  ) : String  {
-  return this.RowHandle;
- }
+  public abstract getRowHandle (  ) : String  ;
 }

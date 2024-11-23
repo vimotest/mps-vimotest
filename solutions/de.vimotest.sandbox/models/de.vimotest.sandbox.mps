@@ -152,7 +152,7 @@
         <child id="6903063968913110295" name="xmlFile" index="1f4q$c" />
       </concept>
       <concept id="6903063968894535728" name="de.vimotest.viewmodel.testing.structure.SimpleStringContext" flags="ng" index="1g3lgF">
-        <property id="6903063968894535730" name="value" index="1g3lgD" />
+        <child id="5775867078588257643" name="value" index="3125nE" />
       </concept>
       <concept id="7199841511154467673" name="de.vimotest.viewmodel.testing.structure.ComposedWhenThenParts" flags="ng" index="1s$VFG">
         <child id="7199841511154487303" name="actionsWithDescription" index="1s$QAM" />
@@ -4263,8 +4263,10 @@
       <property role="TrG5h" value="SimpleStringContext" />
       <node concept="1IbZgy" id="5ZcB1GfQ8hT" role="DUd2K">
         <node concept="1g3lgF" id="5ZcB1GfQ8i0" role="DUiTU">
-          <property role="1g3lgD" value="Alice, Bob, Charlie" />
           <property role="TrG5h" value="alice_bob_charlie" />
+          <node concept="o7Kjd" id="50C086heDvo" role="3125nE">
+            <property role="o7K7r" value="Alice, Bob, Charlie" />
+          </node>
         </node>
       </node>
       <node concept="1s$VFG" id="5ZcB1GfQ8hV" role="1s$QAY" />

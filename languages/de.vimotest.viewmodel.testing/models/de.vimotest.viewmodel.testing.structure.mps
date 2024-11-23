@@ -1049,8 +1049,16 @@
     </node>
     <node concept="1TJgyi" id="5ZcB1GfKswM" role="1TKVEl">
       <property role="IQ2nx" value="6903063968894535730" />
-      <property role="TrG5h" value="value" />
+      <property role="TrG5h" value="old_value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="50C086h85lE" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="50C086h85lF" role="1TKVEi">
+      <property role="IQ2ns" value="5775867078588257643" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="at53:4xJPu9gsd4J" resolve="SingleOrMultiLineString" />
     </node>
   </node>
   <node concept="1TIwiD" id="5ZcB1GgRjk8">

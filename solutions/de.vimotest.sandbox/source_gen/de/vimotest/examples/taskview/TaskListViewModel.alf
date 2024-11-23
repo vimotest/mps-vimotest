@@ -14,11 +14,11 @@ abstract class TaskListViewModel {
   
   public abstract getIsDeleteTaskEnabled (  ) : Boolean  ;
   
-  public LoadView (  ) {     }
+  public abstract LoadView (  ) ;
   
-  public TasksRowSelected (   in rowHandle : String  ) {     }
+  public abstract TasksRowSelected (   in rowHandle : String  ) ;
   
-  public AddNewTaskClicked (  ) {     }
+  public abstract AddNewTaskClicked (  ) ;
   
-  public DeleteTaskClicked (  ) {     }
+  public abstract DeleteTaskClicked (  ) ;
 }

@@ -6,6 +6,8 @@ class TaskListViewModelContextProvider {
   
   public Init (  ) {     }
   
+  public SetSimpleStringContext (   in string : String  ) {     }
+  
   public BuildSut (  ) : TaskListViewModel  {
   return null;
  }

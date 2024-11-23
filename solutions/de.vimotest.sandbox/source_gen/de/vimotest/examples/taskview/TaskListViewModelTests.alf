@@ -21,6 +21,72 @@ class TaskListViewModelTests {
    this.then_Tasks_has_0_rows (  );
  }
   
+  public Load_one_Task_with_all_values_given_oneTask_when_LoadView_then_Tasks_has_1_rows (  ) {
+  this.given_oneTask (  );
+   this.BuildSut (  );
+   this.when_LoadView1 (  );
+   this.then_Tasks_has_1_rows (  );
+ }
+  
+  public Initial_selection_given_twoTasks_when_LoadView_then_Tasks_has_2_rows_and_selected_row_handle_0 (  ) {
+  this.given_twoTasks (  );
+   this.BuildSut (  );
+   this.when_LoadView2 (  );
+   this.then_Tasks_has_2_rows_and_selected_row_handle_0 (  );
+ }
+  
+  public Add_New_Task_given_oneTaskA_when_LoadView_and_click_AddNewTask_then_Tasks_has_2_rows_and_selected_row_handle_1 (  ) {
+  this.given_oneTaskA (  );
+   this.BuildSut (  );
+   this.when_LoadView3 (  );
+   this.when_click_AddNewTask (  );
+   this.then_Tasks_has_2_rows_and_selected_row_handle_1 (  );
+ }
+  
+  public Delete_Task_given_threeTasks_when_LoadView_and_select_row_0_in_Tasks_and_click_DeleteTask_then_Tasks_has_2_rows_and_selected_row_handle_1 (  ) {
+  this.given_threeTasks (  );
+   this.BuildSut (  );
+   this.when_LoadView4 (  );
+   this.when_select_row_0_in_Tasks (  );
+   this.when_click_DeleteTask (  );
+   this.then_Tasks_has_2_rows_and_selected_row_handle_11 (  );
+ }
+  
+  public Delete_Task_given_threeTasks_when_LoadView_and_select_row_1_in_Tasks_and_click_DeleteTask_then_Tasks_has_2_rows_and_selected_row_handle_2 (  ) {
+  this.given_threeTasks (  );
+   this.BuildSut (  );
+   this.when_LoadView5 (  );
+   this.when_select_row_1_in_Tasks (  );
+   this.when_click_DeleteTask1 (  );
+   this.then_Tasks_has_2_rows_and_selected_row_handle_2 (  );
+ }
+  
+  public Delete_Task_given_threeTasks_when_LoadView_and_select_row_2_in_Tasks_and_click_DeleteTask_then_Tasks_has_2_rows_and_selected_row_handle_1 (  ) {
+  this.given_threeTasks (  );
+   this.BuildSut (  );
+   this.when_LoadView6 (  );
+   this.when_select_row_2_in_Tasks (  );
+   this.when_click_DeleteTask2 (  );
+   this.then_Tasks_has_2_rows_and_selected_row_handle_12 (  );
+ }
+  
+  public Delete_Task_given_threeTasks_when_LoadView_and_click_DeleteTask_and_click_DeleteTask_and_click_DeleteTask_then_Tasks_has_0_rows (  ) {
+  this.given_threeTasks (  );
+   this.BuildSut (  );
+   this.when_LoadView7 (  );
+   this.when_click_DeleteTask3 (  );
+   this.when_click_DeleteTask4 (  );
+   this.when_click_DeleteTask5 (  );
+   this.then_Tasks_has_0_rows1 (  );
+ }
+  
+  public Load_Tasks_with_all_three_priority_levels_given_priorityCombinations_when_LoadView_then_Tasks_has_3_rows (  ) {
+  this.given_priorityCombinations (  );
+   this.BuildSut (  );
+   this.when_LoadView8 (  );
+   this.then_Tasks_has_3_rows (  );
+ }
+  
   
   protected BuildSut (  ) {
   this.sut = this.contextProvider.BuildSut (  );
@@ -30,10 +96,112 @@ class TaskListViewModelTests {
   // Given Helper Definitions
 
   
+  private oneTask : String = "[ {id:\"0\", name:\"A\", priority:low, dueDate:\"2024/12/01\"} ]";
+  
+  public given_oneTask (  ) {
+  this.contextProvider.SetSimpleStringContext ( this.oneTask );
+ }
+  
+  private twoTasks : String = "[ {id:\"0\", name:\"A\" }, {id:\"1\", name:\"B\" } ]";
+  
+  public given_twoTasks (  ) {
+  this.contextProvider.SetSimpleStringContext ( this.twoTasks );
+ }
+  
+  private oneTaskA : String = "[ {id:\"0\", name:\"A\" } ]";
+  
+  public given_oneTaskA (  ) {
+  this.contextProvider.SetSimpleStringContext ( this.oneTaskA );
+ }
+  
+  private threeTasks : String = "[ {id:\"0\", name:\"A\"}, {id:\"1\", name:\"B\"}, {id:\"2\", name:\"C\"} ]";
+  
+  public given_threeTasks (  ) {
+  this.contextProvider.SetSimpleStringContext ( this.threeTasks );
+ }
+  
+  private priorityCombinations : String = "[ {id:\"0\", priority:low}, {id:\"1\", priority:medium}, {id:\"2\", priority:high} ]";
+  
+  public given_priorityCombinations (  ) {
+  this.contextProvider.SetSimpleStringContext ( this.priorityCombinations );
+ }
+  
   // When Helper Definitions
 
   
   public when_LoadView (  ) {
+  this.sut.LoadView (  );
+ }
+  
+  public when_LoadView1 (  ) {
+  this.sut.LoadView (  );
+ }
+  
+  public when_LoadView2 (  ) {
+  this.sut.LoadView (  );
+ }
+  
+  public when_LoadView3 (  ) {
+  this.sut.LoadView (  );
+ }
+  
+  public when_click_AddNewTask (  ) {
+  this.sut.AddNewTaskClicked (  );
+ }
+  
+  public when_LoadView4 (  ) {
+  this.sut.LoadView (  );
+ }
+  
+  public when_select_row_0_in_Tasks (  ) {
+  this.sut.TasksRowSelected ( "0" );
+ }
+  
+  public when_click_DeleteTask (  ) {
+  this.sut.DeleteTaskClicked (  );
+ }
+  
+  public when_LoadView5 (  ) {
+  this.sut.LoadView (  );
+ }
+  
+  public when_select_row_1_in_Tasks (  ) {
+  this.sut.TasksRowSelected ( "1" );
+ }
+  
+  public when_click_DeleteTask1 (  ) {
+  this.sut.DeleteTaskClicked (  );
+ }
+  
+  public when_LoadView6 (  ) {
+  this.sut.LoadView (  );
+ }
+  
+  public when_select_row_2_in_Tasks (  ) {
+  this.sut.TasksRowSelected ( "2" );
+ }
+  
+  public when_click_DeleteTask2 (  ) {
+  this.sut.DeleteTaskClicked (  );
+ }
+  
+  public when_LoadView7 (  ) {
+  this.sut.LoadView (  );
+ }
+  
+  public when_click_DeleteTask3 (  ) {
+  this.sut.DeleteTaskClicked (  );
+ }
+  
+  public when_click_DeleteTask4 (  ) {
+  this.sut.DeleteTaskClicked (  );
+ }
+  
+  public when_click_DeleteTask5 (  ) {
+  this.sut.DeleteTaskClicked (  );
+ }
+  
+  public when_LoadView8 (  ) {
   this.sut.LoadView (  );
  }
   
@@ -43,5 +211,124 @@ class TaskListViewModelTests {
   public then_Tasks_has_0_rows (  ) {
   let actualRows: TaskListViewModelTasksRow [] = this.sut.getTasksWidgetTableRows (  );
    AssertEqual ( 0, actualRows->size (  ) );
+ }
+  
+  public then_Tasks_has_1_rows (  ) {
+  let actualRows: TaskListViewModelTasksRow [] = this.sut.getTasksWidgetTableRows (  );
+   AssertEqual ( 1, actualRows->size (  ) );
+   {
+  let row0: TaskListViewModelTasksRow = actualRows[ 1 ];
+   AssertEqual ( "0", row0.getRowHandle (  ) );
+   AssertEqual ( "PrioLow", row0.getPriorityImageSource (  ) );
+   AssertEqual ( "A", row0.getTask_NameText (  ) );
+   AssertEqual ( "2024/12/01", row0.getDue_DateText (  ) );
+ }
+ }
+  
+  public then_Tasks_has_2_rows_and_selected_row_handle_0 (  ) {
+  let actualRows: TaskListViewModelTasksRow [] = this.sut.getTasksWidgetTableRows (  );
+   AssertEqual ( 2, actualRows->size (  ) );
+   {
+  let row0: TaskListViewModelTasksRow = actualRows[ 1 ];
+   AssertEqual ( "0", row0.getRowHandle (  ) );
+   AssertEqual ( "A", row0.getTask_NameText (  ) );
+ }
+   {
+  let row1: TaskListViewModelTasksRow = actualRows[ 2 ];
+   AssertEqual ( "1", row1.getRowHandle (  ) );
+   AssertEqual ( "B", row1.getTask_NameText (  ) );
+ }
+   AssertEqual ( "0", this.sut.getTasksSelectedRow (  ) );
+ }
+  
+  public then_Tasks_has_2_rows_and_selected_row_handle_1 (  ) {
+  let actualRows: TaskListViewModelTasksRow [] = this.sut.getTasksWidgetTableRows (  );
+   AssertEqual ( 2, actualRows->size (  ) );
+   {
+  let row0: TaskListViewModelTasksRow = actualRows[ 1 ];
+   AssertEqual ( "0", row0.getRowHandle (  ) );
+   AssertEqual ( "A", row0.getTask_NameText (  ) );
+ }
+   {
+  let row1: TaskListViewModelTasksRow = actualRows[ 2 ];
+   AssertEqual ( "1", row1.getRowHandle (  ) );
+   AssertEqual ( "PrioMedium", row1.getPriorityImageSource (  ) );
+   AssertEqual ( "<New Task>", row1.getTask_NameText (  ) );
+   AssertEqual ( "", row1.getDue_DateText (  ) );
+ }
+   AssertEqual ( "1", this.sut.getTasksSelectedRow (  ) );
+ }
+  
+  public then_Tasks_has_2_rows_and_selected_row_handle_11 (  ) {
+  let actualRows: TaskListViewModelTasksRow [] = this.sut.getTasksWidgetTableRows (  );
+   AssertEqual ( 2, actualRows->size (  ) );
+   {
+  let row0: TaskListViewModelTasksRow = actualRows[ 1 ];
+   AssertEqual ( "1", row0.getRowHandle (  ) );
+   AssertEqual ( "B", row0.getTask_NameText (  ) );
+ }
+   {
+  let row1: TaskListViewModelTasksRow = actualRows[ 2 ];
+   AssertEqual ( "2", row1.getRowHandle (  ) );
+   AssertEqual ( "C", row1.getTask_NameText (  ) );
+ }
+   AssertEqual ( "1", this.sut.getTasksSelectedRow (  ) );
+ }
+  
+  public then_Tasks_has_2_rows_and_selected_row_handle_2 (  ) {
+  let actualRows: TaskListViewModelTasksRow [] = this.sut.getTasksWidgetTableRows (  );
+   AssertEqual ( 2, actualRows->size (  ) );
+   {
+  let row0: TaskListViewModelTasksRow = actualRows[ 1 ];
+   AssertEqual ( "0", row0.getRowHandle (  ) );
+   AssertEqual ( "A", row0.getTask_NameText (  ) );
+ }
+   {
+  let row1: TaskListViewModelTasksRow = actualRows[ 2 ];
+   AssertEqual ( "2", row1.getRowHandle (  ) );
+   AssertEqual ( "C", row1.getTask_NameText (  ) );
+ }
+   AssertEqual ( "2", this.sut.getTasksSelectedRow (  ) );
+ }
+  
+  public then_Tasks_has_2_rows_and_selected_row_handle_12 (  ) {
+  let actualRows: TaskListViewModelTasksRow [] = this.sut.getTasksWidgetTableRows (  );
+   AssertEqual ( 2, actualRows->size (  ) );
+   {
+  let row0: TaskListViewModelTasksRow = actualRows[ 1 ];
+   AssertEqual ( "0", row0.getRowHandle (  ) );
+   AssertEqual ( "A", row0.getTask_NameText (  ) );
+ }
+   {
+  let row1: TaskListViewModelTasksRow = actualRows[ 2 ];
+   AssertEqual ( "1", row1.getRowHandle (  ) );
+   AssertEqual ( "B", row1.getTask_NameText (  ) );
+ }
+   AssertEqual ( "1", this.sut.getTasksSelectedRow (  ) );
+ }
+  
+  public then_Tasks_has_0_rows1 (  ) {
+  let actualRows: TaskListViewModelTasksRow [] = this.sut.getTasksWidgetTableRows (  );
+   AssertEqual ( 0, actualRows->size (  ) );
+ }
+  
+  public then_Tasks_has_3_rows (  ) {
+  let actualRows: TaskListViewModelTasksRow [] = this.sut.getTasksWidgetTableRows (  );
+   AssertEqual ( 3, actualRows->size (  ) );
+   {
+  let row0: TaskListViewModelTasksRow = actualRows[ 1 ];
+   AssertEqual ( "0", row0.getRowHandle (  ) );
+   AssertEqual ( "PrioLow", row0.getPriorityImageSource (  ) );
+ }
+   {
+  let row1: TaskListViewModelTasksRow = actualRows[ 2 ];
+   AssertEqual ( "1", row1.getRowHandle (  ) );
+   AssertEqual ( "PrioMedium", row1.getPriorityImageSource (  ) );
+ }
+   {
+  let row2: TaskListViewModelTasksRow = actualRows[ 3 ];
+   AssertEqual ( "2", row2.getRowHandle (  ) );
+   AssertEqual ( "PrioHigh", row2.getPriorityImageSource (  ) );
+ }
  }
 }

@@ -3,8 +3,14 @@
 #include "TaskListViewModelContextProvider.h"
 #include <memory>
 #include "TaskListViewModel.h"
+#include <string>
 
 void TaskListViewModelContextProvider::Init( ) 
+{
+  
+}
+
+void TaskListViewModelContextProvider::SetSimpleStringContext(std::string string ) 
 {
   
 }

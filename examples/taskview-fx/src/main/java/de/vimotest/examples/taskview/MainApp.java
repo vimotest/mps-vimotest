@@ -3,11 +3,16 @@ package de.vimotest.examples.taskview;
 import de.vimotest.examples.taskview.viewmodel.TaskListViewModelImpl;
 import de.vimotest.examples.taskview.viewmodel.TaskListViewModelTasksRowImpl;
 import javafx.scene.Scene;
+import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.application.Application;
+
+import java.io.InputStream;
 
 public class MainApp extends Application {
 
@@ -15,8 +20,8 @@ public class MainApp extends Application {
     public void start(Stage primaryStage) {
         TaskListViewModelImpl taskListViewModel = new TaskListViewModelImpl();
 
-        taskListViewModel.addTask(new TaskListViewModelTasksRowImpl("1", "Task 1", "2020-01-01", "High", "Open"));
-        taskListViewModel.addTask(new TaskListViewModelTasksRowImpl("2", "Task 2", "2020-01-02", "Medium", "Open"));
+        taskListViewModel.addTask(new TaskListViewModelTasksRowImpl("1", "Task 1", "2020-01-01", "low", "Open"));
+        taskListViewModel.addTask(new TaskListViewModelTasksRowImpl("2", "Task 2", "2020-01-02", "high", "Open"));
 
         // Create TableView
         TableView<TaskListViewModelTasksRowImpl> taskTable = new TableView<>(taskListViewModel.getTasks());
@@ -33,6 +38,25 @@ public class MainApp extends Application {
 
         TableColumn<TaskListViewModelTasksRowImpl, String> priorityColumn = new TableColumn<>("Priority");
         priorityColumn.setCellValueFactory(cellData -> cellData.getValue().priorityProperty());
+        priorityColumn.setCellFactory(column -> new TableCell<TaskListViewModelTasksRowImpl, String>() {
+            private final ImageView imageView = new ImageView();
+
+            @Override
+            protected void updateItem(String item, boolean empty) {
+                super.updateItem(item, empty);
+                if (empty || item == null || item.isEmpty()) {
+                    setGraphic(null);
+                } else {
+                    final InputStream resourceAsStream = getClass().getClassLoader().getResourceAsStream(item + ".png");
+                    if (resourceAsStream == null) {
+                        setGraphic(null);
+                    } else {
+                        imageView.setImage(new Image(resourceAsStream, 16, 16, true, true));
+                        setGraphic(imageView);
+                    }
+                }
+            }
+        });
 
         TableColumn<TaskListViewModelTasksRowImpl, String> statusColumn = new TableColumn<>("Status");
         statusColumn.setCellValueFactory(cellData -> cellData.getValue().statusProperty());

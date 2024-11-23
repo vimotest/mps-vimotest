@@ -15,8 +15,21 @@ public class TaskListViewModelTasksRowImpl extends TaskListViewModelTasksRow {
         this.id = new SimpleStringProperty(id);
         this.name = new SimpleStringProperty(name);
         this.dueDate = new SimpleStringProperty(dueDate);
-        this.priority = new SimpleStringProperty(priority);
+        this.priority = new SimpleStringProperty(toPriorityImageName(priority));
         this.status = new SimpleStringProperty(status);
+    }
+
+    private static String toPriorityImageName(String priority) {
+        switch (priority) {
+            case "low":
+                return "PrioLow";
+            case "medium":
+                return "PrioMedium";
+            case "high":
+                return "PrioHigh";
+        }
+        assert false : "Unknown priority: " + priority;
+        return "";
     }
 
     public StringProperty idProperty() {
@@ -82,21 +95,21 @@ public class TaskListViewModelTasksRowImpl extends TaskListViewModelTasksRow {
 
     @Override
     public String getRowHandle() {
-        return "";
+        return id.get();
     }
 
     @Override
     public String getPriorityImageSource() {
-        return "";
+        return priority.get();
     }
 
     @Override
     public String getTask_NameText() {
-        return "";
+        return name.get();
     }
 
     @Override
     public String getDue_DateText() {
-        return "";
+        return dueDate.get();
     }
 }

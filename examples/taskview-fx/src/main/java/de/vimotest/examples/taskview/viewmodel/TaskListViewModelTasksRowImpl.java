@@ -79,13 +79,24 @@ public class TaskListViewModelTasksRowImpl extends TaskListViewModelTasksRow {
         this.status.set(status);
     }
 
+
     @Override
-    public String getNameText() {
+    public String getRowHandle() {
         return "";
     }
 
     @Override
-    public String getRowHandle() {
+    public String getPriorityImageSource() {
+        return "";
+    }
+
+    @Override
+    public String getTask_NameText() {
+        return "";
+    }
+
+    @Override
+    public String getDue_DateText() {
         return "";
     }
 }

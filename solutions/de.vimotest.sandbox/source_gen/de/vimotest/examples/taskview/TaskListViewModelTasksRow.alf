@@ -4,7 +4,11 @@
 
 abstract class TaskListViewModelTasksRow {
   
-  public abstract getNameText (  ) : String  ;
+  public abstract getPriorityImageSource (  ) : String  ;
+  
+  public abstract getTask_NameText (  ) : String  ;
+  
+  public abstract getDue_DateText (  ) : String  ;
   
   public abstract getRowHandle (  ) : String  ;
 }

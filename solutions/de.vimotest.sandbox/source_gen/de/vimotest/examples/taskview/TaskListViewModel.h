@@ -12,6 +12,10 @@ class TaskListViewModel
   virtual std::vector<std::shared_ptr<TaskListViewModelTasksRow>> getTasksWidgetTableRows() = 0;
   virtual std::string getTasksSelectedRow() = 0;
   virtual bool getIsTasksUpdatingRowsFlag() = 0;
+  virtual bool getIsAddNewTaskEnabled() = 0;
+  virtual bool getIsDeleteTaskEnabled() = 0;
   virtual void LoadView() ;
   virtual void TasksRowSelected(std::string rowHandle) ;
+  virtual void AddNewTaskClicked() ;
+  virtual void DeleteTaskClicked() ;
 };

@@ -4,6 +4,8 @@ package de.vimotest.examples.taskview;
 
 
 public abstract class TaskListViewModelTasksRow {
-  public abstract String getNameText();
+  public abstract String getPriorityImageSource();
+  public abstract String getTask_NameText();
+  public abstract String getDue_DateText();
   public abstract String getRowHandle();
 }

@@ -12,3 +12,13 @@ void TaskListViewModel::TasksRowSelected(std::string rowHandle )
 {
   
 }
+
+void TaskListViewModel::AddNewTaskClicked( ) 
+{
+  
+}
+
+void TaskListViewModel::DeleteTaskClicked( ) 
+{
+  
+}

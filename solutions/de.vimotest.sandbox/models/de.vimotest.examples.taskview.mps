@@ -57,10 +57,24 @@
       <concept id="885291782481719619" name="de.vimotest.viewmodel.structure.ViewWidgetFeature" flags="ng" index="25b05G">
         <property id="5555266676524595291" name="supported" index="2VM7R0" />
       </concept>
+      <concept id="3426927311333626895" name="de.vimotest.viewmodel.structure.ClosedImageSet" flags="ng" index="28FJ0O">
+        <child id="3426927311333626898" name="imageRefs" index="28FJ0D" />
+      </concept>
+      <concept id="3922717397912187187" name="de.vimotest.viewmodel.structure.ImageWidget" flags="ng" index="2mJbI3">
+        <child id="3922717397912187188" name="imageSourceFeature" index="2mJbI4" />
+        <child id="3922717397912187189" name="enabledFeature" index="2mJbI5" />
+        <child id="3922717397912187190" name="visibilityFeature" index="2mJbI6" />
+      </concept>
+      <concept id="3922717397912187178" name="de.vimotest.viewmodel.structure.ImageSourceFeature" flags="ng" index="2mJbIq">
+        <reference id="173640931446787890" name="basedOnImageSet" index="3ncAEN" />
+        <child id="173640931447457367" name="defaultImage" index="3n32fm" />
+      </concept>
       <concept id="134781560953456170" name="de.vimotest.viewmodel.structure.ColumnDefinition" flags="ng" index="2nep4R">
         <child id="134781560953466099" name="widgetType" index="2nerJI" />
       </concept>
-      <concept id="5219625661134590255" name="de.vimotest.viewmodel.structure.SingleOrMultiLineString" flags="ng" index="o7Kjd" />
+      <concept id="5219625661134590255" name="de.vimotest.viewmodel.structure.SingleOrMultiLineString" flags="ng" index="o7Kjd">
+        <property id="5219625661134591033" name="singleLineValue" index="o7K7r" />
+      </concept>
       <concept id="5213916851000129488" name="de.vimotest.viewmodel.structure.VisibilityFeature" flags="ng" index="C4FCg" />
       <concept id="5213916851000129489" name="de.vimotest.viewmodel.structure.EnabledFeature" flags="ng" index="C4FCh" />
       <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6">
@@ -72,6 +86,12 @@
         <child id="8882441622785832554" name="visibilityFeature" index="V3ZfM" />
         <child id="7922086861330453416" name="toolTipFeature" index="1G_fIJ" />
       </concept>
+      <concept id="6201744883139140301" name="de.vimotest.viewmodel.structure.ButtonWidget" flags="ng" index="2X2XNh">
+        <child id="6201744883139140304" name="visibilityFeature" index="2X2XNc" />
+        <child id="6201744883139140305" name="clickCommand" index="2X2XNd" />
+        <child id="6201744883139140302" name="textFeature" index="2X2XNi" />
+        <child id="6201744883139140303" name="enabledFeature" index="2X2XNj" />
+      </concept>
       <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommands" flags="ng" index="103ZXx">
         <child id="777152910169039599" name="commands" index="1006ar" />
       </concept>
@@ -82,6 +102,18 @@
       <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelData" flags="ng" index="103ZXB" />
       <concept id="6112733486387704342" name="de.vimotest.viewmodel.structure.GenerationConfig" flags="ng" index="1a4JyI">
         <property id="9193638033335797030" name="generateAbstractViewModel" index="2H5xwM" />
+      </concept>
+      <concept id="2820520252859978186" name="de.vimotest.viewmodel.structure.ImageDefinitionRef" flags="ng" index="3eDL7N">
+        <reference id="2820520252859978187" name="image" index="3eDL7M" />
+      </concept>
+      <concept id="7497173622928201774" name="de.vimotest.viewmodel.structure.ImageDefinitionRegistry" flags="ng" index="1u6Luu">
+        <child id="3426927311333626907" name="closedSets" index="28FJ0w" />
+        <child id="7497173622928201831" name="images" index="1u6Lvn" />
+      </concept>
+      <concept id="7497173622928201775" name="de.vimotest.viewmodel.structure.ImageDefinition" flags="ng" index="1u6Luv">
+        <property id="3922717397912196834" name="sourcePath" index="2mJlLi" />
+        <property id="3016673643442476650" name="width" index="Lsnro" />
+        <property id="3016673643442476939" name="height" index="LsnsT" />
       </concept>
       <concept id="2148949417128514166" name="de.vimotest.viewmodel.structure.IRowBasedFeature" flags="ngI" index="3_UcxH">
         <child id="4610291257172520368" name="rowHandleFeature" index="3D86r8" />
@@ -103,6 +135,7 @@
         <child id="2392128244454154632" name="widgetTableRowsFeature" index="3UVeDY" />
         <child id="2392128244454154633" name="selectedRowFeature" index="3UVeDZ" />
       </concept>
+      <concept id="7283258543666616095" name="de.vimotest.viewmodel.structure.ClickCommand" flags="ng" index="3Vw88h" />
       <concept id="7283258543666616098" name="de.vimotest.viewmodel.structure.SelectRowCommand" flags="ng" index="3Vw88G" />
       <concept id="7283258543666616097" name="de.vimotest.viewmodel.structure.LoadCommand" flags="ng" index="3Vw88J" />
     </language>
@@ -117,11 +150,26 @@
     <node concept="103ZXB" id="7Ymnhjip$_C" role="103ZXF">
       <node concept="3UVeDL" id="7Ymnhjip$_D" role="103ZUC">
         <property role="TrG5h" value="Tasks" />
+        <node concept="2nep4R" id="4w1hye2Eyhv" role="2azj8S">
+          <node concept="2mJbI3" id="4w1hye2EyhB" role="2nerJI">
+            <property role="TrG5h" value="Priority" />
+            <node concept="2mJbIq" id="4w1hye2EyhJ" role="2mJbI4">
+              <ref role="3ncAEN" node="4w1hye2Eyig" resolve="PriorityImages" />
+              <node concept="3eDL7N" id="4w1hye2EyhR" role="3n32fm">
+                <ref role="3eDL7M" node="4w1hye2Eyii" resolve="PrioMedium" />
+              </node>
+            </node>
+            <node concept="C4FCh" id="4w1hye2EyhZ" role="2mJbI5" />
+            <node concept="C4FCg" id="4w1hye2Eyi7" role="2mJbI6" />
+          </node>
+        </node>
         <node concept="2nep4R" id="7Ymnhjip$_E" role="2azj8S">
           <node concept="V3ZfZ" id="7Ymnhjip$_L" role="2nerJI">
-            <property role="TrG5h" value="Name" />
+            <property role="TrG5h" value="Task Name" />
             <node concept="V3Zf6" id="7Ymnhjip$_S" role="V3ZfK">
-              <node concept="o7Kjd" id="7Ymnhjip$_Z" role="o6p68" />
+              <node concept="o7Kjd" id="7Ymnhjip$_Z" role="o6p68">
+                <property role="o7K7r" value="My Task" />
+              </node>
             </node>
             <node concept="C4FCh" id="7Ymnhjip$A6" role="V3ZfL" />
             <node concept="C4FCg" id="7Ymnhjip$Ad" role="V3ZfM" />
@@ -142,6 +190,47 @@
         <node concept="C4FCg" id="7Ymnhjip$Av" role="3UVeDW" />
         <node concept="C4FCh" id="7Ymnhjip$Aw" role="3UVeDX" />
         <node concept="3Vw88G" id="7Ymnhjip$Ax" role="2WQ0rd" />
+        <node concept="2nep4R" id="4w1hye2Eyin" role="2azj8S">
+          <node concept="V3ZfZ" id="4w1hye2Eyio" role="2nerJI">
+            <property role="TrG5h" value="Due Date" />
+            <node concept="V3Zf6" id="4w1hye2Eyip" role="V3ZfK">
+              <node concept="o7Kjd" id="4w1hye2Eyiq" role="o6p68">
+                <property role="o7K7r" value="2024/12/04" />
+              </node>
+            </node>
+            <node concept="C4FCh" id="4w1hye2Eyir" role="V3ZfL" />
+            <node concept="C4FCg" id="4w1hye2Eyis" role="V3ZfM" />
+            <node concept="1G_fEc" id="4w1hye2Eyit" role="1G_fIJ">
+              <node concept="o7Kjd" id="4w1hye2Eyiu" role="1AQzBo" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2X2XNh" id="4w1hye2EyiC" role="103ZUC">
+        <property role="TrG5h" value="AddNewTask" />
+        <node concept="V3Zf6" id="4w1hye2EyiE" role="2X2XNi">
+          <node concept="o7Kjd" id="4w1hye2EyiG" role="o6p68">
+            <property role="o7K7r" value="Add New" />
+          </node>
+        </node>
+        <node concept="C4FCh" id="4w1hye2EyiI" role="2X2XNj">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCg" id="4w1hye2EyiK" role="2X2XNc" />
+        <node concept="3Vw88h" id="4w1hye2EyiM" role="2X2XNd" />
+      </node>
+      <node concept="2X2XNh" id="4w1hye2EyiN" role="103ZUC">
+        <property role="TrG5h" value="DeleteTask" />
+        <node concept="V3Zf6" id="4w1hye2EyiO" role="2X2XNi">
+          <node concept="o7Kjd" id="4w1hye2EyiP" role="o6p68">
+            <property role="o7K7r" value="Delete" />
+          </node>
+        </node>
+        <node concept="C4FCh" id="4w1hye2EyiQ" role="2X2XNj">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCg" id="4w1hye2EyiR" role="2X2XNc" />
+        <node concept="3Vw88h" id="4w1hye2EyiS" role="2X2XNd" />
       </node>
     </node>
   </node>
@@ -164,13 +253,52 @@
             <ref role="30nzpS" node="7Ymnhjip$_D" resolve="Tasks" />
             <node concept="3UVeCy" id="A24d4VoRoc" role="30nDbQ">
               <node concept="2ayrQO" id="A24d4VoRod" role="3UVeCz">
+                <node concept="1EpGR1" id="4w1hye2HnVt" role="1EpG3j">
+                  <ref role="1EpG3m" node="4w1hye2Eyhv" />
+                </node>
                 <node concept="1EpGR1" id="A24d4VoRoe" role="1EpG3j">
                   <ref role="1EpG3m" node="7Ymnhjip$_E" />
+                </node>
+                <node concept="1EpGR1" id="4w1hye2HnVu" role="1EpG3j">
+                  <ref role="1EpG3m" node="4w1hye2Eyin" />
                 </node>
               </node>
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1u6Luu" id="4w1hye2Eyif">
+    <property role="TrG5h" value="TaskImages" />
+    <node concept="1u6Luv" id="4w1hye2Eyih" role="1u6Lvn">
+      <property role="TrG5h" value="PrioHigh" />
+      <property role="2mJlLi" value="images/image_prio_high.png" />
+      <property role="Lsnro" value="16" />
+      <property role="LsnsT" value="16" />
+    </node>
+    <node concept="1u6Luv" id="4w1hye2Eyii" role="1u6Lvn">
+      <property role="TrG5h" value="PrioMedium" />
+      <property role="2mJlLi" value="images/image_prio_medium.png" />
+      <property role="Lsnro" value="16" />
+      <property role="LsnsT" value="16" />
+    </node>
+    <node concept="1u6Luv" id="4w1hye2Eyij" role="1u6Lvn">
+      <property role="TrG5h" value="PrioLow" />
+      <property role="2mJlLi" value="images/image_prio_low.png" />
+      <property role="Lsnro" value="16" />
+      <property role="LsnsT" value="16" />
+    </node>
+    <node concept="28FJ0O" id="4w1hye2Eyig" role="28FJ0w">
+      <property role="TrG5h" value="PriorityImages" />
+      <node concept="3eDL7N" id="4w1hye2Eyik" role="28FJ0D">
+        <ref role="3eDL7M" node="4w1hye2Eyij" resolve="PrioLow" />
+      </node>
+      <node concept="3eDL7N" id="4w1hye2Eyil" role="28FJ0D">
+        <ref role="3eDL7M" node="4w1hye2Eyii" resolve="PrioMedium" />
+      </node>
+      <node concept="3eDL7N" id="4w1hye2Eyim" role="28FJ0D">
+        <ref role="3eDL7M" node="4w1hye2Eyih" resolve="PrioHigh" />
       </node>
     </node>
   </node>

@@ -8,8 +8,14 @@ public abstract class TaskListViewModel {
   public abstract List<TaskListViewModelTasksRow> getTasksWidgetTableRows();
   public abstract String getTasksSelectedRow();
   public abstract Boolean getIsTasksUpdatingRowsFlag();
+  public abstract Boolean getIsAddNewTaskEnabled();
+  public abstract Boolean getIsDeleteTaskEnabled();
   public void LoadView() {
   }
   public void TasksRowSelected(String rowHandle) {
+  }
+  public void AddNewTaskClicked() {
+  }
+  public void DeleteTaskClicked() {
   }
 }

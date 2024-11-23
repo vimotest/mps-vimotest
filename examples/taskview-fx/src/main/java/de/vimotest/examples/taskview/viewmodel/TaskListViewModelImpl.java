@@ -56,4 +56,14 @@ public class TaskListViewModelImpl extends TaskListViewModel {
     public Boolean getIsTasksUpdatingRowsFlag() {
         return null;
     }
+
+    @Override
+    public Boolean getIsAddNewTaskEnabled() {
+        return null;
+    }
+
+    @Override
+    public Boolean getIsDeleteTaskEnabled() {
+        return null;
+    }
 }

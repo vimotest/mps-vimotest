@@ -4081,15 +4081,34 @@
       <node concept="PMmxH" id="6RKU0sbaOu7" role="3EZMnx">
         <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector" />
       </node>
-      <node concept="1iCGBv" id="6RKU0sbaOu8" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:6RKU0sbaH7v" resolve="defaultToolTipText" />
-        <node concept="1sVBvm" id="6RKU0sbaOu9" role="1sWHZn">
-          <node concept="PMmxH" id="6RKU0sbaOua" role="2wV5jI">
-            <ref role="PMmxG" node="6RKU0s0yutQ" resolve="SingleOrMultiLineString_Inspector_EC" />
+      <node concept="3EZMnI" id="50C086hopDm" role="3EZMnx">
+        <node concept="3F0ifn" id="50C086hoq9A" role="3EZMnx">
+          <property role="3F0ifm" value="tooltip" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        </node>
+        <node concept="2iRfu4" id="50C086hopDn" role="2iSdaV" />
+        <node concept="1iCGBv" id="6RKU0sbaOu8" role="3EZMnx">
+          <ref role="1NtTu8" to="at53:6RKU0sbaH7v" resolve="defaultToolTipText" />
+          <node concept="1sVBvm" id="6RKU0sbaOu9" role="1sWHZn">
+            <node concept="PMmxH" id="6RKU0sbaOua" role="2wV5jI">
+              <ref role="PMmxG" node="6RKU0s0yutQ" resolve="SingleOrMultiLineString_Inspector_EC" />
+            </node>
           </node>
         </node>
-        <node concept="pVoyu" id="6RKU0sbaOub" role="3F10Kt">
+        <node concept="pVoyu" id="50C086hoq9$" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pkWqt" id="50C086hoq9C" role="pqm2j">
+          <node concept="3clFbS" id="50C086hoq9D" role="2VODD2">
+            <node concept="3clFbF" id="50C086hoqaz" role="3cqZAp">
+              <node concept="2OqwBi" id="50C086hoq_I" role="3clFbG">
+                <node concept="pncrf" id="50C086hoqay" role="2Oq$k0" />
+                <node concept="3TrcHB" id="50C086hor1J" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:4OohpJQO3xr" resolve="supported" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3EZMnI" id="6RKU0sbaOuc" role="3EZMnx">
@@ -4129,15 +4148,34 @@
       <node concept="PMmxH" id="6RKU0sbaOHx" role="3EZMnx">
         <ref role="PMmxG" node="9CTo7lmDcx" resolve="ViewWidgetFeature_Supported_EC" />
       </node>
-      <node concept="1iCGBv" id="6RKU0sbaOHy" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:6RKU0sbaH7v" resolve="defaultToolTipText" />
-        <node concept="1sVBvm" id="6RKU0sbaOHz" role="1sWHZn">
-          <node concept="PMmxH" id="6RKU0sbaOH$" role="2wV5jI">
-            <ref role="PMmxG" node="6RKU0s0yutQ" resolve="SingleOrMultiLineString_Inspector_EC" />
+      <node concept="3EZMnI" id="50C086hpdIY" role="3EZMnx">
+        <node concept="3F0ifn" id="50C086hpdIZ" role="3EZMnx">
+          <property role="3F0ifm" value="tooltip" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        </node>
+        <node concept="2iRfu4" id="50C086hpdJ0" role="2iSdaV" />
+        <node concept="1iCGBv" id="50C086hpdJ1" role="3EZMnx">
+          <ref role="1NtTu8" to="at53:6RKU0sbaH7v" />
+          <node concept="1sVBvm" id="50C086hpdJ2" role="1sWHZn">
+            <node concept="PMmxH" id="50C086hpdJ3" role="2wV5jI">
+              <ref role="PMmxG" node="6RKU0s0yutQ" resolve="SingleOrMultiLineString_Inspector_EC" />
+            </node>
           </node>
         </node>
-        <node concept="pVoyu" id="6RKU0sbaOH_" role="3F10Kt">
+        <node concept="pVoyu" id="50C086hpdJ4" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pkWqt" id="50C086hpdJ5" role="pqm2j">
+          <node concept="3clFbS" id="50C086hpdJ6" role="2VODD2">
+            <node concept="3clFbF" id="50C086hpdJ7" role="3cqZAp">
+              <node concept="2OqwBi" id="50C086hpdJ8" role="3clFbG">
+                <node concept="pncrf" id="50C086hpdJ9" role="2Oq$k0" />
+                <node concept="3TrcHB" id="50C086hpdJa" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:4OohpJQO3xr" resolve="supported" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="l2Vlx" id="6RKU0sbaOHP" role="2iSdaV" />

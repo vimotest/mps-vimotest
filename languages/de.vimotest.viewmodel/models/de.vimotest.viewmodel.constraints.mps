@@ -889,7 +889,7 @@
               <node concept="2OqwBi" id="3c$pnH1ewaL" role="3fr31v">
                 <node concept="EsrRn" id="3c$pnH1ewaM" role="2Oq$k0" />
                 <node concept="2qgKlT" id="3c$pnH1ewaN" role="2OqNvi">
-                  <ref role="37wK5l" to="nrs2:3c$pnH1esSA" resolve="supportsMultiLine" />
+                  <ref role="37wK5l" to="nrs2:3c$pnH1esSA" resolve="canSupportMultiLine" />
                 </node>
               </node>
             </node>
@@ -918,7 +918,7 @@
           <node concept="17R0WA" id="3c$pnH1gbej" role="3clFbw">
             <node concept="359W_D" id="3c$pnH1gbtR" role="3uHU7w">
               <ref role="359W_E" to="at53:4xJPu9gsd4J" resolve="SingleOrMultiLineString" />
-              <ref role="359W_F" to="at53:4xJPu9gsdgU" />
+              <ref role="359W_F" to="at53:4xJPu9gsdgU" resolve="multiLineText" />
             </node>
             <node concept="2DA6wF" id="3c$pnH1g7dR" role="3uHU7B" />
           </node>
@@ -948,7 +948,7 @@
           <node concept="17R0WA" id="6RKU0s73D$0" role="3clFbw">
             <node concept="359W_D" id="6RKU0s73D$1" role="3uHU7w">
               <ref role="359W_E" to="zqge:2cLqkTm6J5A" resolve="Line" />
-              <ref role="359W_F" to="zqge:2cLqkTm6J5B" />
+              <ref role="359W_F" to="zqge:2cLqkTm6J5B" resolve="elements" />
             </node>
             <node concept="2DA6wF" id="6RKU0s73D$2" role="3uHU7B" />
           </node>

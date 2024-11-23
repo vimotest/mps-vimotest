@@ -117,7 +117,7 @@
   </node>
   <node concept="30n1Qd" id="Of5vVZtOs6">
     <property role="TrG5h" value="SeparateViewController_ViewTests" />
-    <ref role="30n1PB" node="Of5vVZtG4V" resolve="ParameterObjectCommand_View" />
+    <ref role="30n1PB" node="Of5vVZtG4V" resolve="SeparateViewController_View" />
     <node concept="3LKzX3" id="Of5vVZwrBA" role="30n1Qb">
       <property role="TrG5h" value="MyTest" />
       <node concept="1IbZgy" id="Of5vVZwrBB" role="DUd2K">

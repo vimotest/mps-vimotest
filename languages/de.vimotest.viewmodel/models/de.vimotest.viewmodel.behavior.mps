@@ -1086,7 +1086,7 @@
       <node concept="3clFbS" id="7H4Lpx0iNq0" role="3clF47">
         <node concept="3clFbF" id="3pKiF2wMKNt" role="3cqZAp">
           <node concept="BsUDl" id="3pKiF2wMKNr" role="3clFbG">
-            <ref role="37wK5l" node="3pKiF2wMJaM" resolve="makeLabelBoxEditorCell" />
+            <ref role="37wK5l" node="3pKiF2wMJaM" resolve="makeLabelEditorCell" />
             <node concept="37vLTw" id="3pKiF2wMKVr" role="37wK5m">
               <ref role="3cqZAo" node="7H4Lpx0iNqg" resolve="context" />
             </node>
@@ -1265,7 +1265,7 @@
                 <node concept="liA8E" id="6RKU0s1Dxeg" role="2OqNvi">
                   <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
                   <node concept="37vLTw" id="6RKU0s1Dxjl" role="37wK5m">
-                    <ref role="3cqZAo" node="6RKU0s1DtA5" resolve="tooltipCell" />
+                    <ref role="3cqZAo" node="6RKU0s1DtA5" resolve="toolTipCell" />
                   </node>
                 </node>
               </node>
@@ -2978,7 +2978,7 @@
     </node>
     <node concept="13i0hz" id="2w4bAIFMn1i" role="13h7CS">
       <property role="TrG5h" value="getRowHandleKindOwner" />
-      <ref role="13i0hy" node="2w4bAIFM8vc" resolve="getRowHandleKindOwner" />
+      <ref role="13i0hy" node="2w4bAIFM8vc" resolve="getRowBasedFeature" />
       <node concept="3Tm1VV" id="2w4bAIFMn1j" role="1B3o_S" />
       <node concept="3clFbS" id="2w4bAIFMn1m" role="3clF47">
         <node concept="3clFbF" id="2w4bAIFMn4_" role="3cqZAp">
@@ -3201,7 +3201,7 @@
     </node>
     <node concept="13i0hz" id="2w4bAIFMovb" role="13h7CS">
       <property role="TrG5h" value="getRowHandleKindOwner" />
-      <ref role="13i0hy" node="2w4bAIFM8vc" resolve="getRowHandleKindOwner" />
+      <ref role="13i0hy" node="2w4bAIFM8vc" resolve="getRowBasedFeature" />
       <node concept="3Tm1VV" id="2w4bAIFMovc" role="1B3o_S" />
       <node concept="3clFbS" id="2w4bAIFMovf" role="3clF47">
         <node concept="3clFbF" id="2w4bAIFMph2" role="3cqZAp">
@@ -4157,7 +4157,7 @@
     </node>
     <node concept="13i0hz" id="2w4bAIFMkNz" role="13h7CS">
       <property role="TrG5h" value="getRowHandleKindOwner" />
-      <ref role="13i0hy" node="2w4bAIFM8vc" resolve="getRowHandleKindOwner" />
+      <ref role="13i0hy" node="2w4bAIFM8vc" resolve="getRowBasedFeature" />
       <node concept="3Tm1VV" id="2w4bAIFMkN$" role="1B3o_S" />
       <node concept="3clFbS" id="2w4bAIFMkNB" role="3clF47">
         <node concept="3clFbF" id="2w4bAIFMl_q" role="3cqZAp">
@@ -5993,7 +5993,7 @@
                 <node concept="2OqwBi" id="1RiAxJShze5" role="2Oq$k0">
                   <node concept="13iPFW" id="1RiAxJShz2X" role="2Oq$k0" />
                   <node concept="2qgKlT" id="1RiAxJShzlu" role="2OqNvi">
-                    <ref role="37wK5l" node="1RiAxJSeINg" resolve="getRowHandleKindOwner" />
+                    <ref role="37wK5l" node="1RiAxJSeINg" resolve="getRowBasedFeature" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="1RiAxJShzLu" role="2OqNvi">
@@ -6028,7 +6028,7 @@
                 <node concept="2OqwBi" id="1RiAxJShG_p" role="2Oq$k0">
                   <node concept="13iPFW" id="1RiAxJShG_q" role="2Oq$k0" />
                   <node concept="2qgKlT" id="1RiAxJShG_r" role="2OqNvi">
-                    <ref role="37wK5l" node="1RiAxJSeINg" resolve="getRowHandleKindOwner" />
+                    <ref role="37wK5l" node="1RiAxJSeINg" resolve="getRowBasedFeature" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="1RiAxJShG_s" role="2OqNvi">
@@ -6492,7 +6492,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="3JF9X1M5Bc0" role="2OqNvi">
-              <ref role="37wK5l" node="2w4bAIFM8vc" resolve="getRowHandleKindOwner" />
+              <ref role="37wK5l" node="2w4bAIFM8vc" resolve="getRowBasedFeature" />
             </node>
           </node>
         </node>
@@ -7156,7 +7156,7 @@
         <node concept="3clFbF" id="Of5vVZzSSJ" role="3cqZAp">
           <node concept="2OqwBi" id="Of5vVZzZs4" role="3clFbG">
             <node concept="3TrcHB" id="Of5vVZzZGt" role="2OqNvi">
-              <ref role="3TsBF5" to="at53:Of5vVZsNoR" resolve="parameterObjects" />
+              <ref role="3TsBF5" to="at53:Of5vVZsNoR" resolve="useParameterObjects" />
             </node>
             <node concept="1rXfSq" id="Of5vVZ$0JC" role="2Oq$k0">
               <ref role="37wK5l" node="Of5vVZ$0xU" resolve="getGenerationConfig" />
@@ -7186,7 +7186,7 @@
               </node>
             </node>
             <node concept="3TrcHB" id="Of5vVZ$0lC" role="2OqNvi">
-              <ref role="3TsBF5" to="at53:5jkMFwuLz8n" resolve="getterCapitalized" />
+              <ref role="3TsBF5" to="at53:5jkMFwuLz8n" resolve="capitalizeGetterSetters" />
             </node>
           </node>
         </node>
@@ -7733,7 +7733,7 @@
                 <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
               </node>
               <node concept="37vLTw" id="6RKU0s2lM_y" role="37wK5m">
-                <ref role="3cqZAo" node="6RKU0s2lM_o" resolve="i" />
+                <ref role="3cqZAo" node="6RKU0s2lM_o" resolve="visibleCellFontSize" />
               </node>
             </node>
           </node>
@@ -7811,7 +7811,7 @@
             <node concept="2OqwBi" id="6RKU0sbaJ$L" role="2Oq$k0">
               <node concept="13iPFW" id="6RKU0sbaJ$M" role="2Oq$k0" />
               <node concept="3TrEf2" id="6RKU0sbaJ$N" role="2OqNvi">
-                <ref role="3Tt5mk" to="at53:6RKU0sbaH7v" />
+                <ref role="3Tt5mk" to="at53:6RKU0sbaH7v" resolve="defaultToolTipText" />
               </node>
             </node>
             <node concept="3TrcHB" id="6RKU0sbaJ$O" role="2OqNvi">

@@ -352,7 +352,7 @@
                     </node>
                   </node>
                   <node concept="2qgKlT" id="ipeJ6mttkn" role="2OqNvi">
-                    <ref role="37wK5l" to="fwln:ipeJ6mton0" resolve="initializedBySubstitution" />
+                    <ref role="37wK5l" to="fwln:ipeJ6mton0" resolve="initializedByEditor" />
                   </node>
                 </node>
               </node>
@@ -838,7 +838,7 @@
           <node concept="17R0WA" id="6RKU0s44eSz" role="3clFbw">
             <node concept="359W_D" id="6RKU0s44fHI" role="3uHU7w">
               <ref role="359W_E" to="53m0:7NpiMQMW_LL" resolve="SelectRowCommandAction" />
-              <ref role="359W_F" to="53m0:6RKU0s44amv" />
+              <ref role="359W_F" to="53m0:6RKU0s44amv" resolve="multipleRowHandles" />
             </node>
             <node concept="2DA6wF" id="6RKU0s44aLI" role="3uHU7B" />
           </node>
@@ -870,7 +870,7 @@
           <node concept="17R0WA" id="4CJYu48JRVt" role="3clFbw">
             <node concept="359W_D" id="4CJYu48JRVu" role="3uHU7w">
               <ref role="359W_E" to="53m0:7WgsBLYmzjD" resolve="SelectedRowCheckValue" />
-              <ref role="359W_F" to="53m0:4CJYu48JCIR" />
+              <ref role="359W_F" to="53m0:4CJYu48JCIR" resolve="multipleRowHandles" />
             </node>
             <node concept="2DA6wF" id="4CJYu48JRVv" role="3uHU7B" />
           </node>

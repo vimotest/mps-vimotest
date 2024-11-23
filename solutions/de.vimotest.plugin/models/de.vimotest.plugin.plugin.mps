@@ -10326,7 +10326,7 @@
                   <node concept="3clFbS" id="7T8HsuTXck2" role="3clF47">
                     <node concept="1_3QMa" id="7T8HsuTXck3" role="3cqZAp">
                       <node concept="37vLTw" id="7T8HsuTXck4" role="1_3QMn">
-                        <ref role="3cqZAo" node="7T8HsuTXck0" resolve="commandConcept" />
+                        <ref role="3cqZAo" node="7T8HsuTXck0" resolve="commandActionConcept" />
                       </node>
                       <node concept="1pnPoh" id="7T8HsuTXck5" role="1_3QMm">
                         <node concept="3gn64h" id="7T8HsuTXck6" role="1pnPq6" />

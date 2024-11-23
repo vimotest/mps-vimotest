@@ -1043,7 +1043,7 @@
     <property role="3GE5qa" value="test.context" />
     <property role="TrG5h" value="SimpleStringContext" />
     <property role="34LRSv" value="simple string context" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5ZcB1GfKswL" role="PzmwI">
       <ref role="PrY4T" node="2Yd1qrJOMZM" resolve="ITestScenarioContext" />
     </node>
@@ -1058,7 +1058,7 @@
     <property role="3GE5qa" value="test.context" />
     <property role="TrG5h" value="XmlFileContext" />
     <property role="34LRSv" value="xml file context" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5ZcB1GgRjkn" role="1TKVEi">
       <property role="IQ2ns" value="6903063968913110295" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1085,7 +1085,7 @@
     <property role="3GE5qa" value="test.context" />
     <property role="TrG5h" value="XmlElementContext" />
     <property role="34LRSv" value="xml element context" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6RKU0s0VjoC" role="1TKVEi">
       <property role="IQ2ns" value="7922086861322663464" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1128,7 +1128,7 @@
     <property role="3GE5qa" value="test.assert._checkvalues" />
     <property role="TrG5h" value="ColumnCheckInfo" />
     <property role="34LRSv" value="column check info" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6RKU0s7_yzh" role="1TKVEi">
       <property role="IQ2ns" value="7922086861434398929" />
       <property role="20kJfa" value="columnDefinition" />

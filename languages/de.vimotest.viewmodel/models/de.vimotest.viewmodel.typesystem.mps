@@ -597,7 +597,7 @@
                       </node>
                       <node concept="3Cnw8n" id="6RKU0s7jWzP" role="1urrFz">
                         <property role="ARO6o" value="true" />
-                        <ref role="QpYPw" node="6RKU0s7jWzM" resolve="fix_" />
+                        <ref role="QpYPw" node="6RKU0s7jWzM" resolve="fix_SimpleWord" />
                       </node>
                     </node>
                   </node>

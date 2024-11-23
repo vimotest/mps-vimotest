@@ -496,7 +496,7 @@
         </node>
         <node concept="DUd2R" id="1xbm1_$bH7" role="1s$QAX">
           <node concept="30nzp_" id="1xbm1_$bH8" role="DUiSb">
-            <ref role="30nzpS" node="1xbm1_$bGX" resolve="TriStateFlag" />
+            <ref role="30nzpS" node="1xbm1_$bGX" resolve="MyFlagTriState" />
             <node concept="C4Fn6" id="1xbm1_$bHb" role="30nDbQ">
               <node concept="35STPD" id="1xbm1_$bHc" role="C4Fn7" />
             </node>

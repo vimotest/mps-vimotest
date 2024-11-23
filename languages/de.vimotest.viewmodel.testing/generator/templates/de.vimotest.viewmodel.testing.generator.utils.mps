@@ -425,7 +425,7 @@
       <node concept="37vLTG" id="1srqdXULTO1" role="3clF46">
         <property role="TrG5h" value="whenThenParts" />
         <node concept="3Tqbb2" id="1srqdXULU8b" role="1tU5fm">
-          <ref role="ehGHo" to="53m0:6fEYrkZukdp" resolve="WhenThenDescriptions" />
+          <ref role="ehGHo" to="53m0:6fEYrkZukdp" resolve="ComposedWhenThenParts" />
         </node>
       </node>
     </node>
@@ -487,7 +487,7 @@
       <node concept="37vLTG" id="7T8HsuTFQE1" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="7T8HsuTFQE2" role="1tU5fm">
-          <ref role="ehGHo" to="53m0:6tib4XeIJOl" resolve="WhenDescriptionWithActions" />
+          <ref role="ehGHo" to="53m0:6tib4XeIJOl" resolve="WhenDescriptionWithAction" />
         </node>
       </node>
     </node>
@@ -625,13 +625,13 @@
               </node>
             </node>
             <node concept="37vLTw" id="7T8HsuTG5lQ" role="3uHU7B">
-              <ref role="3cqZAo" node="7T8HsuTG51a" resolve="name" />
+              <ref role="3cqZAo" node="7T8HsuTG51a" resolve="uniqueName" />
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="7T8HsuTG3T7" role="3cqZAp">
           <node concept="37vLTw" id="7T8HsuTG51i" role="3clFbG">
-            <ref role="3cqZAo" node="7T8HsuTG51a" resolve="string" />
+            <ref role="3cqZAo" node="7T8HsuTG51a" resolve="uniqueName" />
           </node>
         </node>
       </node>
@@ -769,7 +769,7 @@
         </node>
         <node concept="3clFbF" id="3c$pnH1h_FK" role="3cqZAp">
           <node concept="2YIFZM" id="3c$pnH1h_FL" role="3clFbG">
-            <ref role="37wK5l" node="7T8HsuTFVkU" resolve="toUniqueOperationName" />
+            <ref role="37wK5l" node="7T8HsuTFVkU" resolve="toNameWithSequenceNumber" />
             <ref role="1Pybhc" node="2evlxT94KqS" resolve="TestScenarioGeneratorNameHelper" />
             <node concept="37vLTw" id="3c$pnH1h_FM" role="37wK5m">
               <ref role="3cqZAo" node="3c$pnH1h_Fw" resolve="name" />

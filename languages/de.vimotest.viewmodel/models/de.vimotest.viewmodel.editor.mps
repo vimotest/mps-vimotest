@@ -1507,7 +1507,7 @@
         <ref role="1NtTu8" to="at53:7H4Lpx0iNpE" resolve="visibilityFeature" />
       </node>
       <node concept="3F1sOY" id="6RKU0s1p1eD" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:6RKU0s1p1eC" />
+        <ref role="1NtTu8" to="at53:6RKU0s1p1eC" resolve="toolTipFeature" />
       </node>
     </node>
   </node>
@@ -3211,7 +3211,7 @@
                       <node concept="2OqwBi" id="6fEYrkZmRYI" role="2Oq$k0">
                         <node concept="3GMtW1" id="6fEYrkZmRYJ" role="2Oq$k0" />
                         <node concept="2qgKlT" id="6fEYrkZmRYK" role="2OqNvi">
-                          <ref role="37wK5l" to="nrs2:1RiAxJSeINg" resolve="getRowHandleKindOwner" />
+                          <ref role="37wK5l" to="nrs2:1RiAxJSeINg" resolve="getRowBasedFeature" />
                         </node>
                       </node>
                       <node concept="3TrcHB" id="6fEYrkZmRYL" role="2OqNvi">
@@ -3270,7 +3270,7 @@
                 <node concept="2OqwBi" id="1RiAxJSfiXB" role="2Oq$k0">
                   <node concept="pncrf" id="1RiAxJSfi9$" role="2Oq$k0" />
                   <node concept="2qgKlT" id="1RiAxJSfl6o" role="2OqNvi">
-                    <ref role="37wK5l" to="nrs2:1RiAxJSeINg" resolve="getRowHandleKindOwner" />
+                    <ref role="37wK5l" to="nrs2:1RiAxJSeINg" resolve="getRowBasedFeature" />
                   </node>
                 </node>
                 <node concept="3TrcHB" id="1RiAxJSflHg" role="2OqNvi">
@@ -3315,7 +3315,7 @@
                       <node concept="2OqwBi" id="6fEYrkZmT7u" role="2Oq$k0">
                         <node concept="3GMtW1" id="6fEYrkZmT7v" role="2Oq$k0" />
                         <node concept="2qgKlT" id="6fEYrkZmT7w" role="2OqNvi">
-                          <ref role="37wK5l" to="nrs2:1RiAxJSeINg" resolve="getRowHandleKindOwner" />
+                          <ref role="37wK5l" to="nrs2:1RiAxJSeINg" resolve="getRowBasedFeature" />
                         </node>
                       </node>
                       <node concept="3TrcHB" id="6fEYrkZmT7x" role="2OqNvi">
@@ -3391,7 +3391,7 @@
         <ref role="PMmxG" node="9CTo7lmDcx" resolve="ViewWidgetFeature_Supported_EC" />
       </node>
       <node concept="PMmxH" id="1RiAxJSfEZw" role="3EZMnx">
-        <ref role="PMmxG" node="1RiAxJSfnLY" resolve="IRowHandleKindOwner_EC" />
+        <ref role="PMmxG" node="1RiAxJSfnLY" resolve="IRowBasedFeature_EC" />
         <node concept="pVoyu" id="1RiAxJSfEZx" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -3410,7 +3410,7 @@
         <ref role="PMmxG" node="9CTo7lmDcx" resolve="ViewWidgetFeature_Supported_EC" />
       </node>
       <node concept="PMmxH" id="1RiAxJSgEdt" role="3EZMnx">
-        <ref role="PMmxG" node="1RiAxJSfnLY" resolve="IRowHandleKindOwner_EC" />
+        <ref role="PMmxG" node="1RiAxJSfnLY" resolve="IRowBasedFeature_EC" />
         <node concept="pVoyu" id="1RiAxJSgEdu" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -3438,7 +3438,7 @@
         <ref role="PMmxG" node="9CTo7lmDcx" resolve="ViewWidgetFeature_Supported_EC" />
       </node>
       <node concept="PMmxH" id="1RiAxJSgJ3m" role="3EZMnx">
-        <ref role="PMmxG" node="1RiAxJSfnLY" resolve="IRowHandleKindOwner_EC" />
+        <ref role="PMmxG" node="1RiAxJSfnLY" resolve="IRowBasedFeature_EC" />
         <node concept="pVoyu" id="1RiAxJSgJ3n" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -4082,7 +4082,7 @@
         <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector" />
       </node>
       <node concept="1iCGBv" id="6RKU0sbaOu8" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:6RKU0sbaH7v" />
+        <ref role="1NtTu8" to="at53:6RKU0sbaH7v" resolve="defaultToolTipText" />
         <node concept="1sVBvm" id="6RKU0sbaOu9" role="1sWHZn">
           <node concept="PMmxH" id="6RKU0sbaOua" role="2wV5jI">
             <ref role="PMmxG" node="6RKU0s0yutQ" resolve="SingleOrMultiLineString_Inspector_EC" />
@@ -4130,7 +4130,7 @@
         <ref role="PMmxG" node="9CTo7lmDcx" resolve="ViewWidgetFeature_Supported_EC" />
       </node>
       <node concept="1iCGBv" id="6RKU0sbaOHy" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:6RKU0sbaH7v" />
+        <ref role="1NtTu8" to="at53:6RKU0sbaH7v" resolve="defaultToolTipText" />
         <node concept="1sVBvm" id="6RKU0sbaOHz" role="1sWHZn">
           <node concept="PMmxH" id="6RKU0sbaOH$" role="2wV5jI">
             <ref role="PMmxG" node="6RKU0s0yutQ" resolve="SingleOrMultiLineString_Inspector_EC" />
@@ -4191,7 +4191,7 @@
     <property role="3GE5qa" value="util.values" />
     <ref role="1XX52x" to="zqge:2cLqkTm6vgh" resolve="Text" />
     <node concept="2aJ2om" id="6RKU0s73sbs" role="CpUAK">
-      <ref role="2$4xQ3" node="6RKU0s73sbt" resolve="Text_Word_Simple" />
+      <ref role="2$4xQ3" node="6RKU0s73sbt" resolve="Simple_Text_Word" />
     </node>
     <node concept="3EZMnI" id="5wR$28Jlh12" role="2wV5jI">
       <ref role="1ERwB7" to="2u9v:3xhyJYa61aV" resolve="Text_InsertPlaceholder_ActionMap" />
@@ -4203,7 +4203,7 @@
         <ref role="1ERwB7" to="2u9v:5vhYBWEXT8I" resolve="Text_Delete_ActionMap" />
         <node concept="2iRkQZ" id="3xhyJYa5ZBN" role="2iSdaV" />
         <node concept="3F2HdR" id="3xhyJYa45ZM" role="3EZMnx">
-          <ref role="1NtTu8" to="zqge:2cLqkTm6weS" />
+          <ref role="1NtTu8" to="zqge:2cLqkTm6weS" resolve="lines" />
           <node concept="2iRkQZ" id="2cLqkTm6J61" role="2czzBx" />
           <node concept="3F0ifn" id="2cLqkTmeZqb" role="2czzBI">
             <property role="3F0ifm" value="" />
@@ -4216,7 +4216,7 @@
                 <node concept="2OqwBi" id="6n6K0Pj6sM8" role="2Oq$k0">
                   <node concept="pncrf" id="6n6K0Pj6szV" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="6n6K0Pj6t4u" role="2OqNvi">
-                    <ref role="3TtcxE" to="zqge:7Vz6ZmoXHtS" />
+                    <ref role="3TtcxE" to="zqge:7Vz6ZmoXHtS" resolve="paragraphs" />
                   </node>
                 </node>
                 <node concept="1v1jN8" id="6n6K0Pj6wWQ" role="2OqNvi" />
@@ -4234,7 +4234,7 @@
     <property role="3GE5qa" value="util.values" />
     <ref role="1XX52x" to="zqge:8D0iRqSPW4" resolve="Word" />
     <node concept="2aJ2om" id="6RKU0s73snD" role="CpUAK">
-      <ref role="2$4xQ3" node="6RKU0s73sbt" resolve="Text_Word_Simple" />
+      <ref role="2$4xQ3" node="6RKU0s73sbt" resolve="Simple_Text_Word" />
     </node>
     <node concept="3EZMnI" id="2cLqkTmdkDW" role="2wV5jI">
       <ref role="1ERwB7" to="2u9v:2cLqkTm9Qic" resolve="Word_ActionMap" />

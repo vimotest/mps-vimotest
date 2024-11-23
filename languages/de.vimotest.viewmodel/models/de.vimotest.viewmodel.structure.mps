@@ -233,7 +233,7 @@
     <node concept="1TJgyi" id="3lKMIJjSzKb" role="1TKVEl">
       <property role="IQ2nx" value="3850800795622718475" />
       <property role="TrG5h" value="defaultIsChecked" />
-      <ref role="AX2Wp" to="evry:1EVo$X00Gbs" resolve="TriStateBoolean" />
+      <ref role="AX2Wp" to="evry:1EVo$X00Gbs" resolve="NullableBoolean" />
     </node>
     <node concept="1TJgyi" id="1EVo$X00MI7" role="1TKVEl">
       <property role="IQ2nx" value="1926241358146907015" />
@@ -1201,7 +1201,7 @@
     <node concept="1TJgyi" id="26p1ZniAsfx" role="1TKVEl">
       <property role="IQ2nx" value="2420975027070026721" />
       <property role="TrG5h" value="kind" />
-      <ref role="AX2Wp" node="26p1ZniAsfA" resolve="TreeLevelKind" />
+      <ref role="AX2Wp" node="26p1ZniAsfA" resolve="TreeRowLevelKind" />
     </node>
   </node>
   <node concept="1TIwiD" id="3ZV2RzmQBQf">
@@ -1209,7 +1209,7 @@
     <property role="3GE5qa" value="widgets.util" />
     <property role="TrG5h" value="CustomFeature" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3ZV2RzmQJmo" role="PzmwI">
       <ref role="PrY4T" node="3F1kzPoMMcm" resolve="ICanHaveCustomPropertyName" />
     </node>
@@ -1261,7 +1261,7 @@
     <property role="TrG5h" value="GenerationConfig" />
     <property role="34LRSv" value="generation config" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5jkMFwuLz8n" role="1TKVEl">
       <property role="IQ2nx" value="6112733486387704343" />
       <property role="TrG5h" value="capitalizeGetterSetters" />
@@ -1330,7 +1330,7 @@
     <property role="3GE5qa" value="util.values" />
     <property role="TrG5h" value="SingleOrMultiLineString" />
     <property role="34LRSv" value="single/multiline string" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4xJPu9gsdgU" role="1TKVEi">
       <property role="IQ2ns" value="5219625661134591034" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1381,7 +1381,7 @@
     <property role="3GE5qa" value="features.rowbased" />
     <property role="TrG5h" value="RowHandleValue" />
     <property role="34LRSv" value="rowhandle" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6RKU0s44uJJ" role="PzmwI">
       <ref role="PrY4T" node="1RiAxJSewmp" resolve="IHasRowHandle" />
     </node>

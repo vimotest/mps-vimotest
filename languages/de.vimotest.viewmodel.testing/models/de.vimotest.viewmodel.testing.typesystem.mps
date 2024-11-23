@@ -2115,7 +2115,7 @@
             </node>
           </node>
           <node concept="37vLTw" id="3c$pnH1iLf3" role="3uHU7B">
-            <ref role="3cqZAo" node="3c$pnH1iLeV" resolve="isMultiLine" />
+            <ref role="3cqZAo" node="3c$pnH1iLeV" resolve="featureIsMultiLine" />
           </node>
         </node>
         <node concept="3clFbS" id="3c$pnH1iFof" role="3clFbx">
@@ -2190,7 +2190,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="6RKU0s7_Jr7" role="2OqNvi">
-              <ref role="3TtcxE" to="at53:4Ips5F1549y" />
+              <ref role="3TtcxE" to="at53:4Ips5F1549y" resolve="columnsFeature" />
             </node>
           </node>
         </node>
@@ -2199,7 +2199,7 @@
         <node concept="3cpWsn" id="6RKU0s7_Jr9" role="3cpWs9">
           <property role="TrG5h" value="result" />
           <node concept="3uibUv" id="6RKU0s7_Jra" role="1tU5fm">
-            <ref role="3uigEE" node="6RKU0s7_VUR" resolve="ConsistencyResult" />
+            <ref role="3uigEE" node="6RKU0s7_VUR" resolve="ColumnCheckInfoConsistencyHelper.ConsistencyResult" />
           </node>
           <node concept="2YIFZM" id="6RKU0s7A81D" role="33vP2m">
             <ref role="37wK5l" node="6RKU0s7_VVv" resolve="isConsistent" />
@@ -2250,13 +2250,13 @@
                 </node>
               </node>
               <node concept="3CnSsL" id="6RKU0s7_Jrt" role="3Coj4f">
-                <ref role="QkamJ" node="6RKU0s7AaZO" resolve="cellCheckNodes" />
+                <ref role="QkamJ" node="6RKU0s7AaZO" resolve="columnCheckInfoNodes" />
                 <node concept="2OqwBi" id="6RKU0s7AbO0" role="3CoRuB">
                   <node concept="1YBJjd" id="6RKU0s7AbO1" role="2Oq$k0">
                     <ref role="1YBMHb" node="6RKU0s7_JeH" resolve="rowsCheckValue" />
                   </node>
                   <node concept="3Tsc0h" id="6RKU0s7AbO2" role="2OqNvi">
-                    <ref role="3TtcxE" to="53m0:6RKU0s7_yzk" />
+                    <ref role="3TtcxE" to="53m0:6RKU0s7_yzk" resolve="columnCheckInfos" />
                   </node>
                 </node>
               </node>
@@ -2383,7 +2383,7 @@
               <node concept="2ShNRf" id="2$TY9D5wB26" role="3cqZAk">
                 <node concept="1pGfFk" id="2$TY9D5wB27" role="2ShVmc">
                   <property role="373rjd" value="true" />
-                  <ref role="37wK5l" node="6RKU0s7_VV3" />
+                  <ref role="37wK5l" node="6RKU0s7_VV3" resolve="ColumnCheckInfoConsistencyHelper.ConsistencyResult" />
                   <node concept="3clFbT" id="2$TY9D5wB28" role="37wK5m" />
                   <node concept="3cpWs3" id="2$TY9D5wB29" role="37wK5m">
                     <node concept="2OqwBi" id="2$TY9D5wB2a" role="3uHU7w">
@@ -2451,7 +2451,7 @@
                   <node concept="2ShNRf" id="2$TY9D5wB2_" role="3cqZAk">
                     <node concept="1pGfFk" id="2$TY9D5wB2A" role="2ShVmc">
                       <property role="373rjd" value="true" />
-                      <ref role="37wK5l" node="6RKU0s7_VV3" />
+                      <ref role="37wK5l" node="6RKU0s7_VV3" resolve="ColumnCheckInfoConsistencyHelper.ConsistencyResult" />
                       <node concept="3clFbT" id="2$TY9D5wB2B" role="37wK5m" />
                       <node concept="3cpWs3" id="2$TY9D5wB2H" role="37wK5m">
                         <node concept="Xl_RD" id="2$TY9D5wB2I" role="3uHU7B">
@@ -2467,7 +2467,7 @@
                         </node>
                       </node>
                       <node concept="37vLTw" id="2$TY9D5wB2R" role="37wK5m">
-                        <ref role="3cqZAo" node="2$TY9D5wB2r" resolve="cellCheck" />
+                        <ref role="3cqZAo" node="2$TY9D5wB2r" resolve="columnCheckInfo" />
                       </node>
                     </node>
                   </node>
@@ -2479,7 +2479,7 @@
                 </node>
                 <node concept="2OqwBi" id="2$TY9D5wB2W" role="3uHU7B">
                   <node concept="37vLTw" id="2$TY9D5wB2X" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2$TY9D5wB2r" resolve="cellCheck" />
+                    <ref role="3cqZAo" node="2$TY9D5wB2r" resolve="columnCheckInfo" />
                   </node>
                   <node concept="3TrEf2" id="2$TY9D5wZxB" role="2OqNvi">
                     <ref role="3Tt5mk" to="53m0:6RKU0s7_yzh" resolve="columnDefinition" />
@@ -2492,7 +2492,7 @@
         <node concept="3cpWs6" id="6RKU0s7_VW$" role="3cqZAp">
           <node concept="2ShNRf" id="6RKU0s7_VW_" role="3cqZAk">
             <node concept="1pGfFk" id="6RKU0s7_VWA" role="2ShVmc">
-              <ref role="37wK5l" node="6RKU0s7_VV3" resolve="CellCheckConsistencyHelper.ConsistencyResult" />
+              <ref role="37wK5l" node="6RKU0s7_VV3" resolve="ColumnCheckInfoConsistencyHelper.ConsistencyResult" />
               <node concept="3clFbT" id="6RKU0s7_VWB" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
@@ -2504,7 +2504,7 @@
       </node>
       <node concept="3Tm1VV" id="6RKU0s7_VWE" role="1B3o_S" />
       <node concept="3uibUv" id="6RKU0s7_VWF" role="3clF45">
-        <ref role="3uigEE" node="6RKU0s7_VUR" resolve="CellCheckConsistencyHelper.ConsistencyResult" />
+        <ref role="3uigEE" node="6RKU0s7_VUR" resolve="ColumnCheckInfoConsistencyHelper.ConsistencyResult" />
       </node>
       <node concept="37vLTG" id="6RKU0s7_VWG" role="3clF46">
         <property role="TrG5h" value="rowNode" />
@@ -2688,7 +2688,7 @@
                       <node concept="3fqX7Q" id="2$TY9D5xZ8J" role="3clFbG">
                         <node concept="2OqwBi" id="2$TY9D5y2$X" role="3fr31v">
                           <node concept="37vLTw" id="2$TY9D5y02R" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2$TY9D5xBqN" resolve="lookup" />
+                            <ref role="3cqZAo" node="2$TY9D5xBqN" resolve="validColumns" />
                           </node>
                           <node concept="3JPx81" id="2$TY9D5y4ra" role="2OqNvi">
                             <node concept="2OqwBi" id="2$TY9D5y6Ez" role="25WWJ7">
@@ -2963,7 +2963,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="2$TY9D5HOu9" role="2OqNvi">
-              <ref role="3TtcxE" to="at53:7uPLQmTQNM" />
+              <ref role="3TtcxE" to="at53:7uPLQmTQNM" resolve="columnsFeature" />
             </node>
           </node>
         </node>
@@ -2972,7 +2972,7 @@
         <node concept="3cpWsn" id="2$TY9D5HOub" role="3cpWs9">
           <property role="TrG5h" value="result" />
           <node concept="3uibUv" id="2$TY9D5HOuc" role="1tU5fm">
-            <ref role="3uigEE" node="6RKU0s7_VUR" resolve="ConsistencyResult" />
+            <ref role="3uigEE" node="6RKU0s7_VUR" resolve="ColumnCheckInfoConsistencyHelper.ConsistencyResult" />
           </node>
           <node concept="2YIFZM" id="2$TY9D5HOud" role="33vP2m">
             <ref role="37wK5l" node="6RKU0s7_VVv" resolve="isConsistent" />
@@ -2988,7 +2988,7 @@
                 <ref role="1YBMHb" node="2$TY9D5HOqN" resolve="rowsCheckValue" />
               </node>
               <node concept="3Tsc0h" id="2$TY9D5HOui" role="2OqNvi">
-                <ref role="3TtcxE" to="53m0:6RKU0s7_Del" />
+                <ref role="3TtcxE" to="53m0:6RKU0s7_Del" resolve="columnCheckInfos" />
               </node>
             </node>
           </node>
@@ -3023,13 +3023,13 @@
                 </node>
               </node>
               <node concept="3CnSsL" id="2$TY9D5HOuv" role="3Coj4f">
-                <ref role="QkamJ" node="6RKU0s7AaZO" resolve="cellCheckNodes" />
+                <ref role="QkamJ" node="6RKU0s7AaZO" resolve="columnCheckInfoNodes" />
                 <node concept="2OqwBi" id="2$TY9D5HOuw" role="3CoRuB">
                   <node concept="1YBJjd" id="2$TY9D5HOux" role="2Oq$k0">
                     <ref role="1YBMHb" node="2$TY9D5HOqN" resolve="rowsCheckValue" />
                   </node>
                   <node concept="3Tsc0h" id="2$TY9D5HOuy" role="2OqNvi">
-                    <ref role="3TtcxE" to="53m0:6RKU0s7_Del" />
+                    <ref role="3TtcxE" to="53m0:6RKU0s7_Del" resolve="columnCheckInfos" />
                   </node>
                 </node>
               </node>
@@ -3138,7 +3138,7 @@
         <node concept="3cpWsn" id="2$TY9D5HQ2S" role="3cpWs9">
           <property role="TrG5h" value="result" />
           <node concept="3uibUv" id="2$TY9D5HQ2T" role="1tU5fm">
-            <ref role="3uigEE" node="6RKU0s7_VUR" resolve="ConsistencyResult" />
+            <ref role="3uigEE" node="6RKU0s7_VUR" resolve="ColumnCheckInfoConsistencyHelper.ConsistencyResult" />
           </node>
           <node concept="2YIFZM" id="2$TY9D5HQ2U" role="33vP2m">
             <ref role="37wK5l" node="6RKU0s7_VVv" resolve="isConsistent" />
@@ -3184,7 +3184,7 @@
                 </node>
               </node>
               <node concept="3CnSsL" id="2$TY9D5HQ3c" role="3Coj4f">
-                <ref role="QkamJ" node="6RKU0s7AaZO" resolve="cellCheckNodes" />
+                <ref role="QkamJ" node="6RKU0s7AaZO" resolve="columnCheckInfoNodes" />
                 <node concept="37vLTw" id="2$TY9D5HWA7" role="3CoRuB">
                   <ref role="3cqZAo" node="2$TY9D5HTNi" resolve="columnCheckInfoList" />
                 </node>
@@ -3240,7 +3240,7 @@
                 <ref role="1YBMHb" node="6RKU0sbGiDu" resolve="toolTipCheckValue" />
               </node>
               <node concept="3TrEf2" id="6RKU0sbGiPS" role="2OqNvi">
-                <ref role="3Tt5mk" to="53m0:6RKU0sbk2jt" />
+                <ref role="3Tt5mk" to="53m0:6RKU0sbk2jt" resolve="expectedToolTipText" />
               </node>
             </node>
             <node concept="3TrcHB" id="6RKU0sbGiPT" role="2OqNvi">
@@ -3276,7 +3276,7 @@
                 <ref role="1YBMHb" node="6RKU0sbGiDu" resolve="toolTipCheckValue" />
               </node>
               <node concept="3TrEf2" id="6RKU0sbGiQ6" role="2OqNvi">
-                <ref role="3Tt5mk" to="53m0:6RKU0sbk2jt" />
+                <ref role="3Tt5mk" to="53m0:6RKU0sbk2jt" resolve="expectedToolTipText" />
               </node>
             </node>
           </node>

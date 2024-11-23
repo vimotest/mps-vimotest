@@ -17,6 +17,8 @@ namespace widgetassertions
     virtual std::string getMyLabelWithToolTipToolTip() ;
     virtual std::string getMyLabelWithMultiLineToolTipText() ;
     virtual std::vector<std::string> getMyLabelWithMultiLineToolTipToolTip() ;
+    virtual std::string getMyLabelWithTextColorText() ;
+    virtual std::string getMyLabelWithTextColorTextColor() ;
     private:
     std::string MyLabelText;
     bool isMyLabelEnabled;
@@ -26,6 +28,8 @@ namespace widgetassertions
     std::string MyLabelWithToolTipToolTip;
     std::string MyLabelWithMultiLineToolTipText;
     std::vector<std::string> MyLabelWithMultiLineToolTipToolTip;
+    std::string MyLabelWithTextColorText;
+    std::string MyLabelWithTextColorTextColor;
   };
 }
 

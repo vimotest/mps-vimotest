@@ -36,6 +36,11 @@ public class Labels_ViewTest_Test {
     this.BuildSut();
     this.then_MyLabelWithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_();
   }
+  @Test
+  public void test_TextColor_Label_given_when_then_MyLabelWithTextColor_shows_text_Info_and_has_text_color_blue_() throws Exception {
+    this.BuildSut();
+    this.then_MyLabelWithTextColor_shows_text_Info_and_has_text_color_blue_();
+  }
   @BeforeEach
   public void setUp() {
     this.contextProvider = new Labels_ViewContextProvider();
@@ -83,5 +88,9 @@ public class Labels_ViewTest_Test {
     Assert.assertEquals(2, actualMyLabelWithMultiLineToolTipLines.size());
     Assert.assertEquals("Line1", actualMyLabelWithMultiLineToolTipLines.get(1 - 1));
     Assert.assertEquals("Line2", actualMyLabelWithMultiLineToolTipLines.get(2 - 1));
+  }
+  public void then_MyLabelWithTextColor_shows_text_Info_and_has_text_color_blue_() {
+    Assert.assertEquals("Info", this.sut.getMyLabelWithTextColorText());
+    Assert.assertEquals("blue", this.sut.getMyLabelWithTextColorTextColor());
   }
 }

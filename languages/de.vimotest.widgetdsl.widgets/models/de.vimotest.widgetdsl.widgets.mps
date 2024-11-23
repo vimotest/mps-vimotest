@@ -104,6 +104,9 @@
     <node concept="2WVz4l" id="ipeJ6mNnH4" role="2WV$Zc">
       <ref role="2WVz4k" node="ipeJ6mNnGD" resolve="ToolTip" />
     </node>
+    <node concept="2WVz4l" id="50C086hrZsh" role="2WV$Zc">
+      <ref role="2WVz4k" node="50C086hrZsf" resolve="ForegroundColor" />
+    </node>
   </node>
   <node concept="2WVz3E" id="7H4Lpx0an3A">
     <property role="3GE5qa" value="features" />
@@ -357,6 +360,13 @@
     <property role="2WV$r6" value="tooltip" />
     <property role="2WVz4g" value="t" />
     <property role="3yYw5D" value="fLJRk5_/gray" />
+  </node>
+  <node concept="2WVz3E" id="50C086hrZsf">
+    <property role="3GE5qa" value="features" />
+    <property role="TrG5h" value="TextColor" />
+    <property role="2WV$r6" value="text color" />
+    <property role="2WVz4g" value="tc" />
+    <property role="3yYw5D" value="fLwANPs/magenta" />
   </node>
 </model>
 

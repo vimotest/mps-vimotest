@@ -38,4 +38,12 @@ public class Labels_View {
   public List<String> getMyLabelWithMultiLineToolTipToolTip() {
     return this.MyLabelWithMultiLineToolTipToolTip;
   }
+  private String MyLabelWithTextColorText;
+  public String getMyLabelWithTextColorText() {
+    return this.MyLabelWithTextColorText;
+  }
+  private String MyLabelWithTextColorTextColor;
+  public String getMyLabelWithTextColorTextColor() {
+    return this.MyLabelWithTextColorTextColor;
+  }
 }

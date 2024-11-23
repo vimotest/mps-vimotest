@@ -38,5 +38,13 @@ namespace widgetassertions
   {
     return this->MyLabelWithMultiLineToolTipToolTip;
   }
+  std::string Labels_View::getMyLabelWithTextColorText( ) 
+  {
+    return this->MyLabelWithTextColorText;
+  }
+  std::string Labels_View::getMyLabelWithTextColorTextColor( ) 
+  {
+    return this->MyLabelWithTextColorTextColor;
+  }
 }
 

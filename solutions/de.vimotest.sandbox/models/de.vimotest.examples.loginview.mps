@@ -127,6 +127,7 @@
         <child id="8882441622785832552" name="textFeature" index="V3ZfK" />
         <child id="8882441622785832553" name="enabledFeature" index="V3ZfL" />
         <child id="8882441622785832554" name="visibilityFeature" index="V3ZfM" />
+        <child id="5775867078593479453" name="textColorFeature" index="31m0es" />
         <child id="7922086861330453416" name="toolTipFeature" index="1G_fIJ" />
       </concept>
       <concept id="6201744883139140301" name="de.vimotest.viewmodel.structure.ButtonWidget" flags="ng" index="2X2XNh">
@@ -143,6 +144,7 @@
         <child id="777152910168882975" name="viewModelData" index="103ZXF" />
       </concept>
       <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelData" flags="ng" index="103ZXB" />
+      <concept id="5775867078593476371" name="de.vimotest.viewmodel.structure.TextColorFeature" flags="ng" index="31hZui" />
       <concept id="7922086861330453131" name="de.vimotest.viewmodel.structure.ToolTipFeature" flags="ng" index="1G_fEc">
         <child id="7922086861494473183" name="defaultToolTipText" index="1AQzBo" />
       </concept>
@@ -215,6 +217,7 @@
         <node concept="1G_fEc" id="6RKU0s20RmP" role="1G_fIJ">
           <node concept="o7Kjd" id="6RKU0sbzZxN" role="1AQzBo" />
         </node>
+        <node concept="31hZui" id="3mOHzzzGn1F" role="31m0es" />
       </node>
     </node>
   </node>

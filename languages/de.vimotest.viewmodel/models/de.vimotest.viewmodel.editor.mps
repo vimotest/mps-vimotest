@@ -1509,6 +1509,9 @@
       <node concept="3F1sOY" id="6RKU0s1p1eD" role="3EZMnx">
         <ref role="1NtTu8" to="at53:6RKU0s1p1eC" resolve="toolTipFeature" />
       </node>
+      <node concept="3F1sOY" id="50C086hs0cu" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:50C086hs0ct" resolve="textColorFeature" />
+      </node>
     </node>
   </node>
   <node concept="PKFIW" id="3pKiF2wNf4F">
@@ -4467,6 +4470,117 @@
           <property role="1iTho6" value="F8F8F8" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="50C086hrZsl">
+    <property role="TrG5h" value="TextColorFeature_Indication_EC" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1XX52x" to="at53:50C086hrZsj" resolve="TextColorFeature" />
+    <node concept="1PE4EZ" id="50C086hrZsn" role="1PM95z">
+      <ref role="1PE7su" node="L9c2Y9pj54" resolve="ViewWidgetFeature_Indication_EC" />
+    </node>
+    <node concept="1v6uyg" id="50C086hrZso" role="2wV5jI">
+      <property role="2oejA6" value="true" />
+      <node concept="3F0ifn" id="50C086hrZsp" role="wsdo6">
+        <property role="3F0ifm" value="supports text color" />
+      </node>
+      <node concept="3F0ifn" id="50C086hrZsq" role="1j7Clw">
+        <property role="3F0ifm" value="tc" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" />
+        <node concept="Veino" id="50C086hrZsr" role="3F10Kt">
+          <property role="Vb096" value="fLwANPs/magenta" />
+        </node>
+        <node concept="VechU" id="50C086hrZss" role="3F10Kt">
+          <property role="Vb096" value="6cZGtrcKCoS/black" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3mOHzzzGq94">
+    <property role="3GE5qa" value="features" />
+    <ref role="1XX52x" to="at53:50C086hrZsj" resolve="TextColorFeature" />
+    <node concept="3EZMnI" id="3mOHzzzGq96" role="2wV5jI">
+      <node concept="PMmxH" id="3mOHzzzGq9a" role="3EZMnx">
+        <ref role="PMmxG" node="9CTo7lmDcx" resolve="ViewWidgetFeature_Supported_EC" />
+      </node>
+      <node concept="3EZMnI" id="3mOHzzzJc$T" role="3EZMnx">
+        <node concept="pVoyu" id="3mOHzzzGq9h" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="2iRfu4" id="3mOHzzzJc$U" role="2iSdaV" />
+        <node concept="3F0ifn" id="3mOHzzzGq9c" role="3EZMnx">
+          <property role="3F0ifm" value="default color code:" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        </node>
+        <node concept="3F0A7n" id="3mOHzzzGq9f" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="at53:50C086hrZxk" resolve="defaultColorCode" />
+          <node concept="OXEIz" id="3mOHzzzGq9o" role="P5bDN">
+            <node concept="PvTIS" id="3mOHzzzGq9p" role="OY2wv">
+              <node concept="MLZmj" id="3mOHzzzGq9q" role="PvTIR">
+                <node concept="3clFbS" id="3mOHzzzGq9r" role="2VODD2">
+                  <node concept="3clFbF" id="3mOHzzzGqoe" role="3cqZAp">
+                    <node concept="2YIFZM" id="3mOHzzzGuL3" role="3clFbG">
+                      <ref role="37wK5l" to="nrs2:3mOHzzzGqZf" resolve="getBuiltInColorsIncluding" />
+                      <ref role="1Pybhc" to="nrs2:3mOHzzz$KOb" resolve="ColorValueHelper" />
+                      <node concept="Xl_RD" id="3mOHzzzGv0C" role="37wK5m">
+                        <property role="Xl_RC" value="#" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pkWqt" id="3mOHzzzJcPy" role="pqm2j">
+          <node concept="3clFbS" id="3mOHzzzJcPz" role="2VODD2">
+            <node concept="3clFbF" id="3mOHzzzJcQt" role="3cqZAp">
+              <node concept="2OqwBi" id="3mOHzzzJdgI" role="3clFbG">
+                <node concept="pncrf" id="3mOHzzzJcQs" role="2Oq$k0" />
+                <node concept="3TrcHB" id="3mOHzzzJdF5" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:4OohpJQO3xr" resolve="supported" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="3mOHzzzGq99" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="3mOHzzzGq9i" role="6VMZX">
+      <node concept="PMmxH" id="3mOHzzzGq9j" role="3EZMnx">
+        <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector" />
+      </node>
+      <node concept="3F0ifn" id="3mOHzzzGq9k" role="3EZMnx">
+        <property role="3F0ifm" value="default color code:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        <node concept="pVoyu" id="3mOHzzzGq9l" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="3mOHzzzGq9m" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <ref role="1NtTu8" to="at53:50C086hrZxk" resolve="defaultColorCode" />
+        <node concept="OXEIz" id="3mOHzzzGviG" role="P5bDN">
+          <node concept="PvTIS" id="3mOHzzzGviH" role="OY2wv">
+            <node concept="MLZmj" id="3mOHzzzGviI" role="PvTIR">
+              <node concept="3clFbS" id="3mOHzzzGviJ" role="2VODD2">
+                <node concept="3clFbF" id="3mOHzzzGviK" role="3cqZAp">
+                  <node concept="2YIFZM" id="3mOHzzzGviL" role="3clFbG">
+                    <ref role="37wK5l" to="nrs2:3mOHzzzGqZf" resolve="getBuiltInColorsIncluding" />
+                    <ref role="1Pybhc" to="nrs2:3mOHzzz$KOb" resolve="ColorValueHelper" />
+                    <node concept="Xl_RD" id="3mOHzzzGviM" role="37wK5m">
+                      <property role="Xl_RC" value="#" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="3mOHzzzGq9n" role="2iSdaV" />
     </node>
   </node>
 </model>

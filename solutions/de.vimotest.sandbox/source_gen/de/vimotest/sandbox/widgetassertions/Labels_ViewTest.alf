@@ -39,6 +39,11 @@ class Labels_ViewTest {
    this.then_MyLabelWithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_ (  );
  }
   
+  public TextColor_Label_given_when_then_MyLabelWithTextColor_shows_text_Info_and_has_text_color_blue_ (  ) {
+  this.BuildSut (  );
+   this.then_MyLabelWithTextColor_shows_text_Info_and_has_text_color_blue_ (  );
+ }
+  
   
   protected BuildSut (  ) {
   this.sut = this.contextProvider.BuildSut (  );
@@ -86,5 +91,10 @@ class Labels_ViewTest {
    AssertEqual ( 2, actualMyLabelWithMultiLineToolTipLines->size (  ) );
    AssertEqual ( "Line1", actualMyLabelWithMultiLineToolTipLines[ 1 ] ?? "" );
    AssertEqual ( "Line2", actualMyLabelWithMultiLineToolTipLines[ 2 ] ?? "" );
+ }
+  
+  public then_MyLabelWithTextColor_shows_text_Info_and_has_text_color_blue_ (  ) {
+  AssertEqual ( "Info", this.sut.getMyLabelWithTextColorText (  ) );
+   AssertEqual ( "blue", this.sut.getMyLabelWithTextColorTextColor (  ) );
  }
 }

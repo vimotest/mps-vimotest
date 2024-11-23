@@ -361,6 +361,13 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6RKU0s1p1ab" resolve="ToolTipFeature" />
     </node>
+    <node concept="1TJgyj" id="50C086hs0ct" role="1TKVEi">
+      <property role="IQ2ns" value="5775867078593479453" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="textColorFeature" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="50C086hrZsj" resolve="TextColorFeature" />
+    </node>
     <node concept="PrWs8" id="3c$pnH1eH9b" role="PzmwI">
       <ref role="PrY4T" node="3c$pnH1eja4" resolve="ISingleOrMultiLineStringSupport" />
     </node>
@@ -1384,6 +1391,18 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6RKU0s44uJJ" role="PzmwI">
       <ref role="PrY4T" node="1RiAxJSewmp" resolve="IHasRowHandle" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="50C086hrZsj">
+    <property role="EcuMT" value="5775867078593476371" />
+    <property role="TrG5h" value="TextColorFeature" />
+    <property role="34LRSv" value="text color" />
+    <property role="3GE5qa" value="features" />
+    <ref role="1TJDcQ" node="L9c2Y9pj53" resolve="ViewWidgetFeature" />
+    <node concept="1TJgyi" id="50C086hrZxk" role="1TKVEl">
+      <property role="IQ2nx" value="5775867078593476692" />
+      <property role="TrG5h" value="defaultColorCode" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

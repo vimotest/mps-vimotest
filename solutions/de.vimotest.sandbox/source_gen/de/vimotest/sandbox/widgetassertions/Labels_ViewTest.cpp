@@ -22,6 +22,7 @@ namespace widgetassertions
     virtual void then_MyMultiLineLabel_shows_text_Expected_Line_1_Expected_Line_2_() ;
     virtual void then_MyLabelWithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_() ;
     virtual void then_MyLabelWithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_() ;
+    virtual void then_MyLabelWithTextColor_shows_text_Info_and_has_text_color_blue_() ;
     protected:
     void SetUp() override ;
   };
@@ -53,6 +54,11 @@ namespace widgetassertions
     this->given_empty_context3();
     this->BuildSut();
     this->then_MyLabelWithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_();
+  }
+  TEST_F(Labels_ViewTest,  TextColor_Label_given_when_then_MyLabelWithTextColor_shows_text_Info_and_has_text_color_blue_) 
+  {
+    this->BuildSut();
+    this->then_MyLabelWithTextColor_shows_text_Info_and_has_text_color_blue_();
   }
   void Labels_ViewTest::BuildSut( ) 
   {
@@ -99,6 +105,11 @@ namespace widgetassertions
     EXPECT_EQ(2, actualMyLabelWithMultiLineToolTipLines.size());
     EXPECT_EQ(std::string("Line1"), actualMyLabelWithMultiLineToolTipLines.at(0));
     EXPECT_EQ(std::string("Line2"), actualMyLabelWithMultiLineToolTipLines.at(1));
+  }
+  void Labels_ViewTest::then_MyLabelWithTextColor_shows_text_Info_and_has_text_color_blue_( ) 
+  {
+    EXPECT_EQ(std::string("Info"), this->sut->getMyLabelWithTextColorText());
+    EXPECT_EQ(std::string("blue"), this->sut->getMyLabelWithTextColorTextColor());
   }
 }
 

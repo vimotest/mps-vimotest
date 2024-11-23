@@ -1148,5 +1148,20 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
+  <node concept="1TIwiD" id="50C086hrZs_">
+    <property role="EcuMT" value="5775867078593476389" />
+    <property role="TrG5h" value="TextColorCheckValue" />
+    <property role="34LRSv" value="text color" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="PrWs8" id="50C086hrZsA" role="PzmwI">
+      <ref role="PrY4T" node="7H4Lpx0iNqj" resolve="ILabelCheckValue" />
+    </node>
+    <node concept="1TJgyi" id="3mOHzzzAlYq" role="1TKVEl">
+      <property role="IQ2nx" value="3869918335271002010" />
+      <property role="TrG5h" value="expectedColorCode" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

@@ -1098,6 +1098,39 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="3mOHzzzMkGK" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:50C086hrZsj" resolve="TextColorFeature" />
+      <node concept="1Koe21" id="3mOHzzzMkGL" role="1lVwrX">
+        <node concept="3xHE8C" id="3mOHzzzMkGM" role="1Koe22">
+          <node concept="2RqM1Q" id="3mOHzzzMkGN" role="_vnH8">
+            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+            <node concept="1ZhdrF" id="3mOHzzzMkGO" role="lGtFl">
+              <property role="2qtEX8" value="target" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <node concept="3$xsQk" id="3mOHzzzMkGP" role="3$ytzL">
+                <node concept="3clFbS" id="3mOHzzzMkGQ" role="2VODD2">
+                  <node concept="3clFbF" id="3mOHzzzMkGR" role="3cqZAp">
+                    <node concept="2tJFMh" id="3mOHzzzMkGS" role="3clFbG">
+                      <node concept="ZC_QK" id="3mOHzzzMkGT" role="2tJFKM">
+                        <ref role="2aWVGs" to="gkn4:1KdBIfXrfVb" resolve="PrimitiveTypes" />
+                        <node concept="ZC_QK" id="3mOHzzzMkGU" role="2aWVGa">
+                          <ref role="2aWVGs" to="gkn4:1KdBIfXrfV9" resolve="PrimitiveTypes" />
+                          <node concept="ZC_QK" id="3mOHzzzMkGV" role="2aWVGa">
+                            <ref role="2aWVGs" to="gkn4:1KdBIfXrfVO" resolve="String" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="raruj" id="3mOHzzzMkGW" role="lGtFl" />
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="2evlxT95G3G" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:4SDJcZBNVBS" resolve="CheckedFeature" />

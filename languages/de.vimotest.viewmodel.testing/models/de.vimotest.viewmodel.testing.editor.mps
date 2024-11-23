@@ -5905,5 +5905,40 @@
       <node concept="2iRkQZ" id="6RKU0s8qEMb" role="2iSdaV" />
     </node>
   </node>
+  <node concept="PKFIW" id="50C086hrZsD">
+    <property role="TrG5h" value="TextColorCheckValue_expectationCell_EC" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1XX52x" to="53m0:50C086hrZs_" resolve="TextColorCheckValue" />
+    <node concept="1PE4EZ" id="50C086hrZsF" role="1PM95z">
+      <ref role="1PE7su" node="55YtzNami8N" resolve="WidgetFeatureCheckValue_expectationCell_EC" />
+    </node>
+    <node concept="3EZMnI" id="50C086hrZsG" role="2wV5jI">
+      <node concept="3F0ifn" id="50C086hrZsH" role="3EZMnx">
+        <property role="3F0ifm" value="has text color" />
+        <ref role="1k5W1q" node="55YtzNatuDs" />
+      </node>
+      <node concept="3F0A7n" id="3mOHzzzAmfm" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:3mOHzzzAlYq" resolve="expectedColorCode" />
+        <node concept="OXEIz" id="3mOHzzzArh2" role="P5bDN">
+          <node concept="PvTIS" id="3mOHzzzGq9p" role="OY2wv">
+            <node concept="MLZmj" id="3mOHzzzGq9q" role="PvTIR">
+              <node concept="3clFbS" id="3mOHzzzGq9r" role="2VODD2">
+                <node concept="3clFbF" id="3mOHzzzGqoe" role="3cqZAp">
+                  <node concept="2YIFZM" id="3mOHzzzGuL3" role="3clFbG">
+                    <ref role="37wK5l" to="nrs2:3mOHzzzGqZf" resolve="getBuiltInColorsIncluding" />
+                    <ref role="1Pybhc" to="nrs2:3mOHzzz$KOb" resolve="ColorValueHelper" />
+                    <node concept="Xl_RD" id="3mOHzzzGv0C" role="37wK5m">
+                      <property role="Xl_RC" value="#" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="50C086hrZsJ" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

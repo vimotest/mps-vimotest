@@ -51,4 +51,16 @@ class Labels_View {
   public getMyLabelWithMultiLineToolTipToolTip (  ) : String [ * ]  {
   return this.MyLabelWithMultiLineToolTipToolTip;
  }
+  
+  private MyLabelWithTextColorText : String  ;
+  
+  public getMyLabelWithTextColorText (  ) : String  {
+  return this.MyLabelWithTextColorText;
+ }
+  
+  private MyLabelWithTextColorTextColor : String  ;
+  
+  public getMyLabelWithTextColorTextColor (  ) : String  {
+  return this.MyLabelWithTextColorTextColor;
+ }
 }

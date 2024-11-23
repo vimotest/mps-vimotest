@@ -56,6 +56,7 @@
         <child id="8882441622785832552" name="textFeature" index="V3ZfK" />
         <child id="8882441622785832553" name="enabledFeature" index="V3ZfL" />
         <child id="8882441622785832554" name="visibilityFeature" index="V3ZfM" />
+        <child id="5775867078593479453" name="textColorFeature" index="31m0es" />
         <child id="7922086861330453416" name="toolTipFeature" index="1G_fIJ" />
       </concept>
       <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommands" flags="ng" index="103ZXx" />
@@ -64,6 +65,7 @@
         <child id="777152910168882975" name="viewModelData" index="103ZXF" />
       </concept>
       <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelData" flags="ng" index="103ZXB" />
+      <concept id="5775867078593476371" name="de.vimotest.viewmodel.structure.TextColorFeature" flags="ng" index="31hZui" />
       <concept id="6112733486387704342" name="de.vimotest.viewmodel.structure.GenerationConfig" flags="ng" index="1a4JyI">
         <property id="6112733486387704343" name="capitalizeGetterSetters" index="1a4JyJ" />
       </concept>
@@ -124,6 +126,7 @@
             <node concept="1G_fEc" id="6RKU0s20RmZ" role="1G_fIJ">
               <node concept="o7Kjd" id="6RKU0sbzZxO" role="1AQzBo" />
             </node>
+            <node concept="31hZui" id="3mOHzzzGn1e" role="31m0es" />
           </node>
         </node>
         <node concept="3KuuI3" id="3em85dStvTR" role="1rSL7">

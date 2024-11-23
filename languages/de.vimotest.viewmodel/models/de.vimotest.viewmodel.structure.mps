@@ -514,7 +514,6 @@
     <node concept="1TJgyj" id="2s$w3BDwT7b" role="1TKVEi">
       <property role="IQ2ns" value="2820520252859978187" />
       <property role="20kJfa" value="image" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6wbjV0Q45wJ" resolve="ImageDefinition" />
     </node>
   </node>

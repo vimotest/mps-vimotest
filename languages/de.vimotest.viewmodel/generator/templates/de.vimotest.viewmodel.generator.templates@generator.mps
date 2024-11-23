@@ -3153,6 +3153,21 @@
               </node>
             </node>
           </node>
+          <node concept="17Uvod" id="19EEtwRtWTl" role="lGtFl">
+            <property role="2qtEX9" value="isAbstract" />
+            <property role="P4ACc" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8164141882416860677/3328952194368015168" />
+            <node concept="3zFVjK" id="19EEtwRtWTm" role="3zH0cK">
+              <node concept="3clFbS" id="19EEtwRtWTn" role="2VODD2">
+                <node concept="3clFbF" id="19EEtwRu4wq" role="3cqZAp">
+                  <node concept="2YIFZM" id="19EEtwRu4J2" role="3clFbG">
+                    <ref role="37wK5l" to="nrs2:7YmnhjiwcRB" resolve="generateAbstractViewModel" />
+                    <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                    <node concept="30H73N" id="19EEtwRu4Xj" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

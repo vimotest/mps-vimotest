@@ -13,9 +13,7 @@ namespace context
     std::shared_ptr<XmlFileContext_View> sut;
     std::shared_ptr<XmlFileContext_ViewContextProvider> contextProvider;
     virtual void BuildSut() ;
-    std::string XmlFile_NoExternalFile = std::string("<MyXML>  "
-"  <Inner></Inner>"
-"</MyXML>");
+    std::string XmlFile_NoExternalFile = std::string("<MyXML>  \n  <Inner></Inner>\n</MyXML>");
     virtual void given_XmlFile_NoExternalFile() ;
     virtual void given_XmlFile_ExternalFile() ;
     protected:

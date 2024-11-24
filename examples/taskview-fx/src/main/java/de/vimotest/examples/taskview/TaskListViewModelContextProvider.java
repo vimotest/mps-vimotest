@@ -29,4 +29,7 @@ public class TaskListViewModelContextProvider {
   public void SetSimpleStringContext(String json) {
     this.tasksJson = json;
   }
+  public void SetDataTableJson(String json) {
+    this.tasksJson = json;
+  }
 }

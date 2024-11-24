@@ -9,6 +9,7 @@ class TaskListViewModelContextProvider
 {
   public:
   virtual void Init() ;
+  virtual void SetDataTableJson(std::string json) ;
   virtual void SetSimpleStringContext(std::string string) ;
   virtual std::shared_ptr<TaskListViewModel> BuildSut() ;
 };

@@ -10,11 +10,11 @@ import org.junit.Assert;
 public class TaskListViewModelTests_Test {
   private TaskListViewModel sut;
   private TaskListViewModelContextProvider contextProvider;
-  private String oneTask = "[ {id:\"0\", name:\"A\", priority:low, dueDate:\"2024/12/01\"} ]";
-  private String twoTasks = "[ {id:\"0\", name:\"A\" }, {id:\"1\", name:\"B\" } ]";
+  private String oneTask = "[ { id:\"0\", name:\"A\", priority:\"low\", dueDate:\"2024/12/01\" } ]";
+  private String twoTasks = "[ { id:\"0\", name:\"A\" },\n  { id:\"1\", name:\"B\" } ]";
   private String oneTaskA = "[ {id:\"0\", name:\"A\" } ]";
-  private String threeTasks = "[ {id:\"0\", name:\"A\"}, {id:\"1\", name:\"B\"}, {id:\"2\", name:\"C\"} ]";
-  private String priorityCombinations = "[ {id:\"0\", priority:low}, {id:\"1\", priority:medium}, {id:\"2\", priority:high} ]";
+  private String threeTasks = "[ { id:\"0\", name:\"A\" },\n  { id:\"1\", name:\"B\" },\n  { id:\"2\", name:\"C\" } ]";
+  private String priorityCombinations = "[ { id:\"0\", priority:\"low\" },\n  { id:\"1\", priority:\"medium\" },\n  { id:\"2\", priority:\"high\" } ]";
   @Test
   public void test_Load_Empty_Tasks_given_when_LoadView_then_Tasks_has_0_rows() throws Exception {
     this.BuildSut();
@@ -102,19 +102,19 @@ public class TaskListViewModelTests_Test {
 
 
   public void given_oneTask() {
-    this.contextProvider.SetSimpleStringContext(this.oneTask);
+    this.contextProvider.SetDataTableJson(this.oneTask);
   }
   public void given_twoTasks() {
-    this.contextProvider.SetSimpleStringContext(this.twoTasks);
+    this.contextProvider.SetDataTableJson(this.twoTasks);
   }
   public void given_oneTaskA() {
     this.contextProvider.SetSimpleStringContext(this.oneTaskA);
   }
   public void given_threeTasks() {
-    this.contextProvider.SetSimpleStringContext(this.threeTasks);
+    this.contextProvider.SetDataTableJson(this.threeTasks);
   }
   public void given_priorityCombinations() {
-    this.contextProvider.SetSimpleStringContext(this.priorityCombinations);
+    this.contextProvider.SetDataTableJson(this.priorityCombinations);
   }
 
 

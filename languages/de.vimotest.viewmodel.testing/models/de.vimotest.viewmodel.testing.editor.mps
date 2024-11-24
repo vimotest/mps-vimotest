@@ -6,6 +6,7 @@
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="602c36ad-cc55-47ff-8c40-73d7f12f035c" name="jetbrains.mps.lang.editor.forms" version="0" />
+    <use id="0272d3b4-4cc8-481e-9e2f-07793fbfcb41" name="jetbrains.mps.lang.editor.table" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -540,6 +541,12 @@
       </concept>
       <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
+    <language id="0272d3b4-4cc8-481e-9e2f-07793fbfcb41" name="jetbrains.mps.lang.editor.table">
+      <concept id="4490468428501056077" name="jetbrains.mps.lang.editor.table.structure.QueryFunction_TableModel" flags="in" index="2XI2dN" />
+      <concept id="4677325677876400523" name="jetbrains.mps.lang.editor.table.structure.CellModel_Table" flags="ng" index="1CiYdB">
+        <child id="4490468428501048483" name="tableModel" index="2XI0mt" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1144,7 +1151,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3JdhG1lTJ8y">
-    <property role="3GE5qa" value="test.context" />
+    <property role="3GE5qa" value="test.context.other" />
     <ref role="1XX52x" to="53m0:2Yd1qrJQnE4" resolve="EmptyContext" />
     <node concept="PMmxH" id="3JdhG1lTJ8$" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -5206,7 +5213,7 @@
     <node concept="22hDWj" id="5_TItGJcNQd" role="22hAXT" />
   </node>
   <node concept="24kQdi" id="5ZcB1GfKswQ">
-    <property role="3GE5qa" value="test.context" />
+    <property role="3GE5qa" value="test.context.other" />
     <ref role="1XX52x" to="53m0:5ZcB1GfKswK" resolve="SimpleStringContext" />
     <node concept="3EZMnI" id="5ZcB1GfKswS" role="2wV5jI">
       <node concept="3F0A7n" id="5ZcB1GgmYqY" role="3EZMnx">
@@ -5233,7 +5240,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5ZcB1GgRu5y">
-    <property role="3GE5qa" value="test.context" />
+    <property role="3GE5qa" value="test.context.xml" />
     <ref role="1XX52x" to="53m0:5ZcB1GgRjk8" resolve="XmlFileContext" />
     <node concept="3EZMnI" id="5ZcB1GgRu5D" role="2wV5jI">
       <node concept="PMmxH" id="5ZcB1GgVwqy" role="3EZMnx">
@@ -5302,7 +5309,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6RKU0s0Vj$P">
-    <property role="3GE5qa" value="test.context" />
+    <property role="3GE5qa" value="test.context.xml" />
     <ref role="1XX52x" to="53m0:6RKU0s0VjoB" resolve="XmlElementContext" />
     <node concept="3EZMnI" id="6RKU0s0VjL0" role="2wV5jI">
       <node concept="3F0A7n" id="6RKU0s18UkD" role="3EZMnx">
@@ -5938,6 +5945,44 @@
         </node>
       </node>
       <node concept="2iRfu4" id="50C086hrZsJ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6RKU0sdzppx">
+    <property role="3GE5qa" value="test.context.datatable" />
+    <ref role="1XX52x" to="53m0:6RKU0sd8pLq" resolve="DataTableContext" />
+    <node concept="3EZMnI" id="6RKU0sdzp_I" role="2wV5jI">
+      <node concept="3F0A7n" id="6RKU0sdzp_M" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="6RKU0sdzp_P" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="1CiYdB" id="6RKU0sdztyu" role="3EZMnx">
+        <node concept="2XI2dN" id="6RKU0sdztyw" role="2XI0mt">
+          <node concept="3clFbS" id="6RKU0sdztyy" role="2VODD2">
+            <node concept="3clFbF" id="6RKU0sdzt_b" role="3cqZAp">
+              <node concept="2ShNRf" id="6RKU0sdzt_9" role="3clFbG">
+                <node concept="1pGfFk" id="6RKU0sdzu2I" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="fwln:6RKU0sd8_GH" resolve="DataTableContextTableModel" />
+                  <node concept="pncrf" id="6RKU0sdzu4P" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="6RKU0sdzp_L" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="6RKU0sdzqq_" role="6VMZX">
+      <node concept="l2Vlx" id="6RKU0sdzqqA" role="2iSdaV" />
+      <node concept="3F0ifn" id="6RKU0sdzqqB" role="3EZMnx">
+        <property role="3F0ifm" value="generation to:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0A7n" id="6RKU0sdzqqD" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:6RKU0sdiKfw" resolve="generationMode" />
+      </node>
     </node>
   </node>
 </model>

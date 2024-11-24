@@ -96,16 +96,16 @@ class TaskListViewModelTests {
   // Given Helper Definitions
 
   
-  private oneTask : String = "[ {id:\"0\", name:\"A\", priority:low, dueDate:\"2024/12/01\"} ]";
+  private oneTask : String = "[ { id:\"0\", name:\"A\", priority:\"low\", dueDate:\"2024/12/01\" } ]";
   
   public given_oneTask (  ) {
-  this.contextProvider.SetSimpleStringContext ( this.oneTask );
+  this.contextProvider.SetDataTableJson ( this.oneTask );
  }
   
-  private twoTasks : String = "[ {id:\"0\", name:\"A\" }, {id:\"1\", name:\"B\" } ]";
+  private twoTasks : String = "[ { id:\"0\", name:\"A\" },\n  { id:\"1\", name:\"B\" } ]";
   
   public given_twoTasks (  ) {
-  this.contextProvider.SetSimpleStringContext ( this.twoTasks );
+  this.contextProvider.SetDataTableJson ( this.twoTasks );
  }
   
   private oneTaskA : String = "[ {id:\"0\", name:\"A\" } ]";
@@ -114,16 +114,16 @@ class TaskListViewModelTests {
   this.contextProvider.SetSimpleStringContext ( this.oneTaskA );
  }
   
-  private threeTasks : String = "[ {id:\"0\", name:\"A\"}, {id:\"1\", name:\"B\"}, {id:\"2\", name:\"C\"} ]";
+  private threeTasks : String = "[ { id:\"0\", name:\"A\" },\n  { id:\"1\", name:\"B\" },\n  { id:\"2\", name:\"C\" } ]";
   
   public given_threeTasks (  ) {
-  this.contextProvider.SetSimpleStringContext ( this.threeTasks );
+  this.contextProvider.SetDataTableJson ( this.threeTasks );
  }
   
-  private priorityCombinations : String = "[ {id:\"0\", priority:low}, {id:\"1\", priority:medium}, {id:\"2\", priority:high} ]";
+  private priorityCombinations : String = "[ { id:\"0\", priority:\"low\" },\n  { id:\"1\", priority:\"medium\" },\n  { id:\"2\", priority:\"high\" } ]";
   
   public given_priorityCombinations (  ) {
-  this.contextProvider.SetSimpleStringContext ( this.priorityCombinations );
+  this.contextProvider.SetDataTableJson ( this.priorityCombinations );
  }
   
   // When Helper Definitions

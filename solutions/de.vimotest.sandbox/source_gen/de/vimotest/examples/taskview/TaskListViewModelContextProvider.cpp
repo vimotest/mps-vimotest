@@ -10,6 +10,11 @@ void TaskListViewModelContextProvider::Init( )
   
 }
 
+void TaskListViewModelContextProvider::SetDataTableJson(std::string json ) 
+{
+  
+}
+
 void TaskListViewModelContextProvider::SetSimpleStringContext(std::string string ) 
 {
   

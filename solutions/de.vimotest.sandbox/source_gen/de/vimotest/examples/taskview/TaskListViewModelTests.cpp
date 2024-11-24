@@ -13,15 +13,15 @@ class TaskListViewModelTests : public testing::Test
   std::shared_ptr<TaskListViewModel> sut;
   std::shared_ptr<TaskListViewModelContextProvider> contextProvider;
   virtual void BuildSut() ;
-  std::string oneTask = std::string("[ {id:\"0\", name:\"A\", priority:low, dueDate:\"2024/12/01\"} ]");
+  std::string oneTask = std::string("[ { id:\"0\", name:\"A\", priority:\"low\", dueDate:\"2024/12/01\" } ]");
   virtual void given_oneTask() ;
-  std::string twoTasks = std::string("[ {id:\"0\", name:\"A\" }, {id:\"1\", name:\"B\" } ]");
+  std::string twoTasks = std::string("[ { id:\"0\", name:\"A\" },\n  { id:\"1\", name:\"B\" } ]");
   virtual void given_twoTasks() ;
   std::string oneTaskA = std::string("[ {id:\"0\", name:\"A\" } ]");
   virtual void given_oneTaskA() ;
-  std::string threeTasks = std::string("[ {id:\"0\", name:\"A\"}, {id:\"1\", name:\"B\"}, {id:\"2\", name:\"C\"} ]");
+  std::string threeTasks = std::string("[ { id:\"0\", name:\"A\" },\n  { id:\"1\", name:\"B\" },\n  { id:\"2\", name:\"C\" } ]");
   virtual void given_threeTasks() ;
-  std::string priorityCombinations = std::string("[ {id:\"0\", priority:low}, {id:\"1\", priority:medium}, {id:\"2\", priority:high} ]");
+  std::string priorityCombinations = std::string("[ { id:\"0\", priority:\"low\" },\n  { id:\"1\", priority:\"medium\" },\n  { id:\"2\", priority:\"high\" } ]");
   virtual void given_priorityCombinations() ;
   virtual void when_LoadView() ;
   virtual void when_LoadView1() ;
@@ -149,12 +149,12 @@ void TaskListViewModelTests::BuildSut( )
 
 void TaskListViewModelTests::given_oneTask( ) 
 {
-  this->contextProvider->SetSimpleStringContext(this->oneTask);
+  this->contextProvider->SetDataTableJson(this->oneTask);
 }
 
 void TaskListViewModelTests::given_twoTasks( ) 
 {
-  this->contextProvider->SetSimpleStringContext(this->twoTasks);
+  this->contextProvider->SetDataTableJson(this->twoTasks);
 }
 
 void TaskListViewModelTests::given_oneTaskA( ) 
@@ -164,12 +164,12 @@ void TaskListViewModelTests::given_oneTaskA( )
 
 void TaskListViewModelTests::given_threeTasks( ) 
 {
-  this->contextProvider->SetSimpleStringContext(this->threeTasks);
+  this->contextProvider->SetDataTableJson(this->threeTasks);
 }
 
 void TaskListViewModelTests::given_priorityCombinations( ) 
 {
-  this->contextProvider->SetSimpleStringContext(this->priorityCombinations);
+  this->contextProvider->SetDataTableJson(this->priorityCombinations);
 }
 
 void TaskListViewModelTests::when_LoadView( ) 

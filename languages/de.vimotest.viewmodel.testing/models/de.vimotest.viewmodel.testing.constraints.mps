@@ -803,7 +803,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="5ZcB1GgRu5J">
-    <property role="3GE5qa" value="test.context" />
+    <property role="3GE5qa" value="test.context.xml" />
     <ref role="1M2myG" to="53m0:5ZcB1GgRjk8" resolve="XmlFileContext" />
     <node concept="EnEH3" id="5ZcB1GgRu5K" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />

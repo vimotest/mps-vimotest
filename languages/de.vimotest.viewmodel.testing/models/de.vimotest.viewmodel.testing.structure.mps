@@ -33,9 +33,20 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -393,7 +404,7 @@
   </node>
   <node concept="1TIwiD" id="2Yd1qrJQnE4">
     <property role="EcuMT" value="3426401106045532804" />
-    <property role="3GE5qa" value="test.context" />
+    <property role="3GE5qa" value="test.context.other" />
     <property role="TrG5h" value="EmptyContext" />
     <property role="34LRSv" value="empty context" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -1040,7 +1051,7 @@
   </node>
   <node concept="1TIwiD" id="5ZcB1GfKswK">
     <property role="EcuMT" value="6903063968894535728" />
-    <property role="3GE5qa" value="test.context" />
+    <property role="3GE5qa" value="test.context.other" />
     <property role="TrG5h" value="SimpleStringContext" />
     <property role="34LRSv" value="simple string context" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -1063,7 +1074,7 @@
   </node>
   <node concept="1TIwiD" id="5ZcB1GgRjk8">
     <property role="EcuMT" value="6903063968913110280" />
-    <property role="3GE5qa" value="test.context" />
+    <property role="3GE5qa" value="test.context.xml" />
     <property role="TrG5h" value="XmlFileContext" />
     <property role="34LRSv" value="xml file context" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -1090,7 +1101,7 @@
   </node>
   <node concept="1TIwiD" id="6RKU0s0VjoB">
     <property role="EcuMT" value="7922086861322663463" />
-    <property role="3GE5qa" value="test.context" />
+    <property role="3GE5qa" value="test.context.xml" />
     <property role="TrG5h" value="XmlElementContext" />
     <property role="34LRSv" value="xml element context" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -1161,6 +1172,70 @@
       <property role="IQ2nx" value="3869918335271002010" />
       <property role="TrG5h" value="expectedColorCode" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6RKU0sd8pLq">
+    <property role="EcuMT" value="7922086861527424090" />
+    <property role="3GE5qa" value="test.context.datatable" />
+    <property role="TrG5h" value="DataTableContext" />
+    <property role="34LRSv" value="data table context" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="6RKU0sdiKfw" role="1TKVEl">
+      <property role="IQ2nx" value="7922086861530137568" />
+      <property role="TrG5h" value="generationMode" />
+      <ref role="AX2Wp" node="6RKU0sdiK3j" resolve="DataTableGenerationMode" />
+    </node>
+    <node concept="1TJgyj" id="6RKU0sd8q9K" role="1TKVEi">
+      <property role="IQ2ns" value="7922086861527425648" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="headersRow" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6RKU0sd8pX$" resolve="DataTableRow" />
+    </node>
+    <node concept="1TJgyj" id="6RKU0sd8q9M" role="1TKVEi">
+      <property role="IQ2ns" value="7922086861527425650" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="rows" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="6RKU0sd8pX$" resolve="DataTableRow" />
+    </node>
+    <node concept="PrWs8" id="6RKU0sdiKrX" role="PzmwI">
+      <ref role="PrY4T" node="2Yd1qrJOMZM" resolve="ITestScenarioContext" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6RKU0sd8pX$">
+    <property role="EcuMT" value="7922086861527424868" />
+    <property role="3GE5qa" value="test.context.datatable" />
+    <property role="TrG5h" value="DataTableRow" />
+    <property role="34LRSv" value="data table row" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="6RKU0sd8q9I" role="1TKVEi">
+      <property role="IQ2ns" value="7922086861527425646" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="values" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" to="evry:6RKU0sd8q9N" resolve="StringValue" />
+    </node>
+  </node>
+  <node concept="25R3W" id="6RKU0sdiK3j">
+    <property role="3F6X1D" value="7922086861530136787" />
+    <property role="3GE5qa" value="test.context.datatable" />
+    <property role="TrG5h" value="DataTableGenerationMode" />
+    <ref role="1H5jkz" node="6RKU0sdiK3k" resolve="MultiLineString" />
+    <node concept="25R33" id="6RKU0sdiK3k" role="25R1y">
+      <property role="3tVfz5" value="7922086861530136788" />
+      <property role="TrG5h" value="MultiLineString" />
+      <property role="1L1pqM" value="string" />
+    </node>
+    <node concept="25R33" id="6RKU0sdiKfu" role="25R1y">
+      <property role="3tVfz5" value="7922086861530137566" />
+      <property role="TrG5h" value="XML" />
+      <property role="1L1pqM" value="xml" />
+    </node>
+    <node concept="25R33" id="6RKU0sdiKfv" role="25R1y">
+      <property role="3tVfz5" value="7922086861530137567" />
+      <property role="TrG5h" value="JSON" />
+      <property role="1L1pqM" value="json" />
     </node>
   </node>
 </model>

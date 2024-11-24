@@ -6,6 +6,8 @@ package de.vimotest.examples.taskview;
 public class TaskListViewModelContextProvider {
   public void Init() {
   }
+  public void SetDataTableJson(String json) {
+  }
   public void SetSimpleStringContext(String string) {
   }
   public TaskListViewModel BuildSut() {

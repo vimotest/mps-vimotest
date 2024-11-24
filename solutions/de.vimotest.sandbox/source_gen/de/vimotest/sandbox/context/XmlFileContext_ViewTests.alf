@@ -34,9 +34,7 @@ class XmlFileContext_ViewTests {
   // Given Helper Definitions
 
   
-  private XmlFile_NoExternalFile : String = "<MyXML>  "
-"  <Inner></Inner>"
-"</MyXML>";
+  private XmlFile_NoExternalFile : String = "<MyXML>  \n  <Inner></Inner>\n</MyXML>";
   
   public given_XmlFile_NoExternalFile (  ) {
   this.contextProvider.SetXmlFileContext ( this.XmlFile_NoExternalFile );

@@ -1,5 +1,7 @@
 # Task Manager Example
 
+![Task Manager Example](screenshots/task_manager_gui.png)
+
 This small JavaFX project is used to demonstrate ViMoTest with a simple GUI consisting of a list of tasks, a create task button and a delete button.
 
 It is intentionally no complete task manager application.

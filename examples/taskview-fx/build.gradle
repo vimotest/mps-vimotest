@@ -29,15 +29,23 @@ sourceSets {
 }
 
 task copyGeneratedSources(type: Copy) {
+    group: 'copy-vimotest-generated-sources'
+    doFirst {
+        delete 'src/generated/java'
+    }
     from generatedDir
-    into 'src/generated/java' // Choose a directory within your project
+    into 'src/generated/java'
     include 'de/vimotest/examples/taskview/**/*.java'
     exclude '**/*Test.java', '**/TaskListViewModelContextProvider.java'
 }
 
 task copyGeneratedTests(type: Copy) {
+    group: 'copy-vimotest-generated-sources'
+    doFirst {
+        delete 'src/generated/test'
+    }
     from generatedDir
-    into 'src/generated/test' // Choose a directory within your project
+    into 'src/generated/test'
     include 'de/vimotest/examples/taskview/**/*Test.java'
 }
 

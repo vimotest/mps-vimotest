@@ -10,7 +10,6 @@ out/
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
-src/generated
 
 # Java
 *.class

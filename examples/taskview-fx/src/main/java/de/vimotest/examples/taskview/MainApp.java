@@ -3,16 +3,19 @@ package de.vimotest.examples.taskview;
 import de.vimotest.examples.taskview.viewmodel.TaskListViewModelImpl;
 import de.vimotest.examples.taskview.viewmodel.TaskListViewModelTasksRowImpl;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.application.Application;
 
 import java.io.InputStream;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class MainApp extends Application {
 
@@ -64,9 +67,50 @@ public class MainApp extends Application {
         // Add columns to TableView
         taskTable.getColumns().addAll(idColumn, nameColumn, dueDateColumn, priorityColumn, statusColumn);
 
+        // Add "Create Task" button
+        Button createTaskButton = new Button("Create Task");
+        createTaskButton.setOnAction(event -> {
+            taskListViewModel.AddNewTaskClicked();
+        });
+        createTaskButton.disableProperty().bind(taskListViewModel.addTaskButtonEnabledProperty().not());
+
+        // Add "Delete Task" button
+        Button deleteTaskButton = new Button("Delete Task");
+        deleteTaskButton.setOnAction(event -> {
+            taskListViewModel.DeleteTaskClicked();
+        });
+        deleteTaskButton.disableProperty().bind(taskListViewModel.deleteTaskButtonEnabledProperty().not());
+
+        AtomicBoolean updatingSelection = new AtomicBoolean(false);
+        // Bind selected row
+        taskTable.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            if (updatingSelection.get()) {
+                return;
+            }
+            updatingSelection.set(true);
+            taskListViewModel.TasksRowSelected(newValue != null ? newValue.getRowHandle() : "");
+            updatingSelection.set(false);
+        });
+        // and back
+        taskListViewModel.selectedRowProperty().addListener((observable, oldValue, newValue) -> {
+            if (updatingSelection.get()) {
+                return;
+            }
+            updatingSelection.set(true);
+            taskTable.getSelectionModel().select(taskListViewModel.getTasks().stream()
+                .filter(task -> task.getRowHandle().equals(newValue))
+                .findFirst()
+                .map(taskListViewModel.getTasks()::indexOf)
+                .orElse(-1));
+            updatingSelection.set(false);
+        });
+
         // Layout
-        VBox layout = new VBox(taskTable);
+        HBox buttonLayout = new HBox(createTaskButton, deleteTaskButton);
+        VBox layout = new VBox(taskTable, buttonLayout);
         Scene scene = new Scene(layout, 600, 400);
+
+        taskListViewModel.LoadView();
 
         primaryStage.setTitle("Task Manager");
         primaryStage.setScene(scene);

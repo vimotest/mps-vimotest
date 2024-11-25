@@ -29,7 +29,7 @@ sourceSets {
 }
 
 task copyGeneratedSources(type: Copy) {
-    group: 'copy-vimotest-generated-sources'
+    group 'copy-vimotest-generated-sources'
     doFirst {
         delete 'src/generated/java'
     }
@@ -40,7 +40,7 @@ task copyGeneratedSources(type: Copy) {
 }
 
 task copyGeneratedTests(type: Copy) {
-    group: 'copy-vimotest-generated-sources'
+    group 'copy-vimotest-generated-sources'
     doFirst {
         delete 'src/generated/test'
     }

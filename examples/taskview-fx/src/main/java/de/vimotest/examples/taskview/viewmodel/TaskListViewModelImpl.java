@@ -3,6 +3,8 @@ package de.vimotest.examples.taskview.viewmodel;
 import de.vimotest.examples.taskview.TaskListViewModel;
 import de.vimotest.examples.taskview.TaskListViewModelTasksRow;
 import de.vimotest.examples.taskview.logic.Task;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
@@ -14,6 +16,9 @@ import java.util.List;
 public class TaskListViewModelImpl extends TaskListViewModel {
     private ObservableList<TaskListViewModelTasksRowImpl> tasks;
     private StringProperty selectedRow = new SimpleStringProperty("");
+
+    private BooleanProperty addTaskButtonEnabled = new SimpleBooleanProperty(false);
+    private BooleanProperty deleteTaskButtonEnabled = new SimpleBooleanProperty(false);
 
     public TaskListViewModelImpl() {
         this.tasks = FXCollections.observableArrayList();
@@ -29,6 +34,18 @@ public class TaskListViewModelImpl extends TaskListViewModel {
         if (!tasks.isEmpty()) {
             selectedRow.set(tasks.iterator().next().getId());
         }
+    }
+
+    public BooleanProperty addTaskButtonEnabledProperty() {
+        return addTaskButtonEnabled;
+    }
+
+    public BooleanProperty deleteTaskButtonEnabledProperty() {
+        return deleteTaskButtonEnabled;
+    }
+
+    public StringProperty selectedRowProperty() {
+        return selectedRow;
     }
 
     public ObservableList<TaskListViewModelTasksRowImpl> getTasks() {
@@ -64,17 +81,17 @@ public class TaskListViewModelImpl extends TaskListViewModel {
 
     @Override
     public Boolean getIsAddNewTaskEnabled() {
-        return null;
+        return addTaskButtonEnabled.get();
     }
 
     @Override
     public Boolean getIsDeleteTaskEnabled() {
-        return null;
+        return deleteTaskButtonEnabled.get();
     }
 
     @Override
     public void LoadView() {
-
+        selectionUpdated();
     }
 
     @Override
@@ -86,6 +103,7 @@ public class TaskListViewModelImpl extends TaskListViewModel {
     public void AddNewTaskClicked() {
         this.tasks.add(new TaskListViewModelTasksRowImpl(this.tasks.size() + "", "<New Task>", "", "medium", "Open"));
         this.selectedRow.set(this.tasks.size() - 1 + "");
+        selectionUpdated();
     }
 
     @Override
@@ -104,6 +122,12 @@ public class TaskListViewModelImpl extends TaskListViewModel {
             } else {
                 selectedRow.set(tasks.get(index).getRowHandle());
             }
+            selectionUpdated();
         }
+    }
+
+    private void selectionUpdated() {
+        addTaskButtonEnabled.set(true);
+        deleteTaskButtonEnabled.set(true);
     }
 }

@@ -10,8 +10,8 @@ public abstract class TaskListViewModel {
   public abstract Boolean getIsTasksUpdatingRowsFlag();
   public abstract Boolean getIsAddNewTaskEnabled();
   public abstract Boolean getIsDeleteTaskEnabled();
-  public abstract void LoadView();
-  public abstract void TasksRowSelected(String rowHandle);
-  public abstract void AddNewTaskClicked();
-  public abstract void DeleteTaskClicked();
+  public abstract void loadView();
+  public abstract void tasksRowSelected(String rowHandle);
+  public abstract void addNewTaskClicked();
+  public abstract void deleteTaskClicked();
 }

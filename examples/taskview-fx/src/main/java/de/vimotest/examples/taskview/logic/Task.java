@@ -44,4 +44,8 @@ public class Task {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    public boolean isDueDateAlreadyPassed() {
+        return dueDate.startsWith("2023");
+    }
 }

@@ -23,6 +23,12 @@ class TaskListViewModelTests : public testing::Test
   virtual void given_threeTasks() ;
   std::string priorityCombinations = std::string("[ { id:\"0\", priority:\"low\" },\n  { id:\"1\", priority:\"medium\" },\n  { id:\"2\", priority:\"high\" } ]");
   virtual void given_priorityCombinations() ;
+  std::string dueDate2023 = std::string("[ { id:\"0\", name:\"Task A\", dueDate:\"2023/01/01\" } ]");
+  virtual void given_dueDate2023() ;
+  std::string dueDate2024 = std::string("[ { id:\"0\", name:\"Task A\", dueDate:\"2024/10/11\" } ]");
+  virtual void given_dueDate2024() ;
+  std::string emptyTasks = std::string("[ { id:\"0\", name:\"Task A\", dueDate:\"2023/01/01\" } ]");
+  virtual void given_emptyTasks() ;
   virtual void when_LoadView() ;
   virtual void when_LoadView1() ;
   virtual void when_LoadView2() ;
@@ -42,6 +48,11 @@ class TaskListViewModelTests : public testing::Test
   virtual void when_click_DeleteTask4() ;
   virtual void when_click_DeleteTask5() ;
   virtual void when_LoadView8() ;
+  virtual void when_LoadView9() ;
+  virtual void when_LoadView10() ;
+  virtual void when_LoadView11() ;
+  virtual void when_select_row_0_in_Tasks1() ;
+  virtual void when_click_DeleteTask6() ;
   virtual void then_Tasks_has_0_rows() ;
   virtual void then_Tasks_has_1_rows() ;
   virtual void then_Tasks_has_2_rows_and_selected_row_handle_0() ;
@@ -51,6 +62,10 @@ class TaskListViewModelTests : public testing::Test
   virtual void then_Tasks_has_2_rows_and_selected_row_handle_12() ;
   virtual void then_Tasks_has_0_rows1() ;
   virtual void then_Tasks_has_3_rows() ;
+  virtual void then_Tasks_has_1_rows1() ;
+  virtual void then_Tasks_has_1_rows2() ;
+  virtual void then_AddNewTask_is_enabled() ;
+  virtual void then_DeleteTask_is_not_enabled() ;
   protected:
   void SetUp() override ;
 };
@@ -142,6 +157,33 @@ TEST_F(TaskListViewModelTests,  Load_Tasks_with_all_three_priority_levels_given_
   this->then_Tasks_has_3_rows();
 }
 
+TEST_F(TaskListViewModelTests,  Due_Date_from_2023_given_dueDate2023_when_LoadView_then_Tasks_has_1_rows) 
+{
+  this->given_dueDate2023();
+  this->BuildSut();
+  this->when_LoadView9();
+  this->then_Tasks_has_1_rows1();
+}
+
+TEST_F(TaskListViewModelTests,  Due_Date_Tooltip_given_dueDate2024_when_LoadView_then_Tasks_has_1_rows) 
+{
+  this->given_dueDate2024();
+  this->BuildSut();
+  this->when_LoadView10();
+  this->then_Tasks_has_1_rows2();
+}
+
+TEST_F(TaskListViewModelTests,  Delete_disabled_if_nothing_selected_given_emptyTasks_when_LoadView_and_select_row_0_in_Tasks_and_click_DeleteTask_then_AddNewTask_is_enabled_and_DeleteTask_is_not_enabled) 
+{
+  this->given_emptyTasks();
+  this->BuildSut();
+  this->when_LoadView11();
+  this->when_select_row_0_in_Tasks1();
+  this->when_click_DeleteTask6();
+  this->then_AddNewTask_is_enabled();
+  this->then_DeleteTask_is_not_enabled();
+}
+
 void TaskListViewModelTests::BuildSut( ) 
 {
   this->sut = this->contextProvider->BuildSut();
@@ -172,99 +214,139 @@ void TaskListViewModelTests::given_priorityCombinations( )
   this->contextProvider->SetDataTableJson(this->priorityCombinations);
 }
 
+void TaskListViewModelTests::given_dueDate2023( ) 
+{
+  this->contextProvider->SetDataTableJson(this->dueDate2023);
+}
+
+void TaskListViewModelTests::given_dueDate2024( ) 
+{
+  this->contextProvider->SetDataTableJson(this->dueDate2024);
+}
+
+void TaskListViewModelTests::given_emptyTasks( ) 
+{
+  this->contextProvider->SetDataTableJson(this->emptyTasks);
+}
+
 void TaskListViewModelTests::when_LoadView( ) 
 {
-  this->sut->LoadView();
+  this->sut->loadView();
 }
 
 void TaskListViewModelTests::when_LoadView1( ) 
 {
-  this->sut->LoadView();
+  this->sut->loadView();
 }
 
 void TaskListViewModelTests::when_LoadView2( ) 
 {
-  this->sut->LoadView();
+  this->sut->loadView();
 }
 
 void TaskListViewModelTests::when_LoadView3( ) 
 {
-  this->sut->LoadView();
+  this->sut->loadView();
 }
 
 void TaskListViewModelTests::when_click_AddNewTask( ) 
 {
-  this->sut->AddNewTaskClicked();
+  this->sut->addNewTaskClicked();
 }
 
 void TaskListViewModelTests::when_LoadView4( ) 
 {
-  this->sut->LoadView();
+  this->sut->loadView();
 }
 
 void TaskListViewModelTests::when_select_row_0_in_Tasks( ) 
 {
-  this->sut->TasksRowSelected(std::string("0"));
+  this->sut->tasksRowSelected(std::string("0"));
 }
 
 void TaskListViewModelTests::when_click_DeleteTask( ) 
 {
-  this->sut->DeleteTaskClicked();
+  this->sut->deleteTaskClicked();
 }
 
 void TaskListViewModelTests::when_LoadView5( ) 
 {
-  this->sut->LoadView();
+  this->sut->loadView();
 }
 
 void TaskListViewModelTests::when_select_row_1_in_Tasks( ) 
 {
-  this->sut->TasksRowSelected(std::string("1"));
+  this->sut->tasksRowSelected(std::string("1"));
 }
 
 void TaskListViewModelTests::when_click_DeleteTask1( ) 
 {
-  this->sut->DeleteTaskClicked();
+  this->sut->deleteTaskClicked();
 }
 
 void TaskListViewModelTests::when_LoadView6( ) 
 {
-  this->sut->LoadView();
+  this->sut->loadView();
 }
 
 void TaskListViewModelTests::when_select_row_2_in_Tasks( ) 
 {
-  this->sut->TasksRowSelected(std::string("2"));
+  this->sut->tasksRowSelected(std::string("2"));
 }
 
 void TaskListViewModelTests::when_click_DeleteTask2( ) 
 {
-  this->sut->DeleteTaskClicked();
+  this->sut->deleteTaskClicked();
 }
 
 void TaskListViewModelTests::when_LoadView7( ) 
 {
-  this->sut->LoadView();
+  this->sut->loadView();
 }
 
 void TaskListViewModelTests::when_click_DeleteTask3( ) 
 {
-  this->sut->DeleteTaskClicked();
+  this->sut->deleteTaskClicked();
 }
 
 void TaskListViewModelTests::when_click_DeleteTask4( ) 
 {
-  this->sut->DeleteTaskClicked();
+  this->sut->deleteTaskClicked();
 }
 
 void TaskListViewModelTests::when_click_DeleteTask5( ) 
 {
-  this->sut->DeleteTaskClicked();
+  this->sut->deleteTaskClicked();
 }
 
 void TaskListViewModelTests::when_LoadView8( ) 
 {
-  this->sut->LoadView();
+  this->sut->loadView();
+}
+
+void TaskListViewModelTests::when_LoadView9( ) 
+{
+  this->sut->loadView();
+}
+
+void TaskListViewModelTests::when_LoadView10( ) 
+{
+  this->sut->loadView();
+}
+
+void TaskListViewModelTests::when_LoadView11( ) 
+{
+  this->sut->loadView();
+}
+
+void TaskListViewModelTests::when_select_row_0_in_Tasks1( ) 
+{
+  this->sut->tasksRowSelected(std::string("0"));
+}
+
+void TaskListViewModelTests::when_click_DeleteTask6( ) 
+{
+  this->sut->deleteTaskClicked();
 }
 
 void TaskListViewModelTests::then_Tasks_has_0_rows( ) 
@@ -398,4 +480,40 @@ void TaskListViewModelTests::then_Tasks_has_3_rows( )
   EXPECT_EQ(std::string("2"), row2->getRowHandle());
   EXPECT_EQ(std::string("PrioHigh"), row2->getPriorityImageSource());
   // }
+}
+
+void TaskListViewModelTests::then_Tasks_has_1_rows1( ) 
+{
+  auto& actualRows = this->sut->getTasksWidgetTableRows();
+  EXPECT_EQ(1, actualRows.size());
+  // {
+  auto& row0 = actualRows.at(0);
+  EXPECT_EQ(std::string("0"), row0->getRowHandle());
+  EXPECT_EQ(std::string("Task A"), row0->getTask_NameText());
+  EXPECT_EQ(std::string("red"), row0->getTask_NameTextColor());
+  EXPECT_EQ(std::string("2023/01/01"), row0->getDue_DateText());
+  EXPECT_EQ(std::string("red"), row0->getDue_DateTextColor());
+  // }
+}
+
+void TaskListViewModelTests::then_Tasks_has_1_rows2( ) 
+{
+  auto& actualRows = this->sut->getTasksWidgetTableRows();
+  EXPECT_EQ(1, actualRows.size());
+  // {
+  auto& row0 = actualRows.at(0);
+  EXPECT_EQ(std::string("0"), row0->getRowHandle());
+  EXPECT_EQ(std::string("2024/10/11"), row0->getDue_DateText());
+  EXPECT_EQ(std::string("11th October 2024"), row0->getDue_DateToolTip());
+  // }
+}
+
+void TaskListViewModelTests::then_AddNewTask_is_enabled( ) 
+{
+  EXPECT_TRUE(this->sut->getIsAddNewTaskEnabled());
+}
+
+void TaskListViewModelTests::then_DeleteTask_is_not_enabled( ) 
+{
+  EXPECT_FALSE(this->sut->getIsDeleteTaskEnabled());
 }

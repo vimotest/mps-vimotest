@@ -14,8 +14,8 @@ class TaskListViewModel
   virtual bool getIsTasksUpdatingRowsFlag() = 0;
   virtual bool getIsAddNewTaskEnabled() = 0;
   virtual bool getIsDeleteTaskEnabled() = 0;
-  virtual void LoadView() = 0;
-  virtual void TasksRowSelected(std::string rowHandle) = 0;
-  virtual void AddNewTaskClicked() = 0;
-  virtual void DeleteTaskClicked() = 0;
+  virtual void loadView() = 0;
+  virtual void tasksRowSelected(std::string rowHandle) = 0;
+  virtual void addNewTaskClicked() = 0;
+  virtual void deleteTaskClicked() = 0;
 };

@@ -3,6 +3,7 @@
 #include <string>
 #include <memory>
 #include "StringContext_ViewContextProvider.h"
+#include "ContextReference_ViewContextProvider.h"
 #include "StringContext_View.h"
 
 namespace context

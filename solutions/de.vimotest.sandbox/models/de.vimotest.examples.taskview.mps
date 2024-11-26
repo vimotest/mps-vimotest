@@ -25,6 +25,9 @@
       <concept id="8948051009467167877" name="de.vimotest.viewmodel.testing.structure.ViewCommandInvocationAction" flags="ng" index="27s6xY">
         <reference id="8948051009467187564" name="targetCommand" index="27sXQn" />
       </concept>
+      <concept id="9006611305737327152" name="de.vimotest.viewmodel.testing.structure.ContextReference" flags="ng" index="8w7HN">
+        <reference id="9006611305737327954" name="ref" index="8w7Kh" />
+      </concept>
       <concept id="5447508759369797102" name="de.vimotest.viewmodel.testing.structure.WidgetTableRowsCheckValue" flags="ng" index="2ayrQO">
         <child id="5447508759369822399" name="rows" index="2ay43_" />
         <child id="7922086861434398932" name="columnCheckInfos" index="1EpG3j" />
@@ -880,25 +883,8 @@
         </node>
       </node>
       <node concept="1IbZgy" id="7lPnU2OOXHK" role="DUd2K">
-        <node concept="1wOnht" id="7NXUkdMQFN7" role="DUiTU">
-          <property role="TrG5h" value="oneTaskA" />
-          <property role="1wIYJB" value="6RKU0sdiKfv/JSON" />
-          <node concept="1wOntz" id="7NXUkdMQFN9" role="1wOkDR">
-            <node concept="1wOkDO" id="7NXUkdMQFNb" role="1wOkDD">
-              <property role="1wOkPU" value="id" />
-            </node>
-            <node concept="1wOkDO" id="7NXUkdMQFNh" role="1wOkDD">
-              <property role="1wOkPU" value="name" />
-            </node>
-          </node>
-          <node concept="1wOntz" id="7NXUkdMQFNd" role="1wOkDP">
-            <node concept="1wOkDO" id="7NXUkdMQFNf" role="1wOkDD">
-              <property role="1wOkPU" value="0" />
-            </node>
-            <node concept="1wOkDO" id="7NXUkdMQFNi" role="1wOkDD">
-              <property role="1wOkPU" value="A" />
-            </node>
-          </node>
+        <node concept="8w7HN" id="7NXUkdOQAEh" role="DUiTU">
+          <ref role="8w7Kh" node="6RKU0sdELnM" resolve="oneTask" />
         </node>
       </node>
     </node>

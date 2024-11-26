@@ -1238,5 +1238,22 @@
       <property role="1L1pqM" value="json" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7NXUkdOvp8K">
+    <property role="EcuMT" value="9006611305737327152" />
+    <property role="3GE5qa" value="test.context.other" />
+    <property role="TrG5h" value="ContextReference" />
+    <property role="34LRSv" value="context ref" />
+    <property role="R4oN_" value="reference a context to reuse" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="7NXUkdOvpli" role="1TKVEi">
+      <property role="IQ2ns" value="9006611305737327954" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2Yd1qrJOMZM" resolve="ITestScenarioContext" />
+    </node>
+    <node concept="PrWs8" id="7NXUkdOLCbl" role="PzmwI">
+      <ref role="PrY4T" node="2Yd1qrJOMZM" resolve="ITestScenarioContext" />
+    </node>
+  </node>
 </model>
 

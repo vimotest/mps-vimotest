@@ -77,6 +77,9 @@
         <reference id="8948051009467187564" name="targetCommand" index="27sXQn" />
         <child id="8948051009467207553" name="parameters" index="27sTdU" />
       </concept>
+      <concept id="9006611305737327152" name="de.vimotest.viewmodel.testing.structure.ContextReference" flags="ng" index="8w7HN">
+        <reference id="9006611305737327954" name="ref" index="8w7Kh" />
+      </concept>
       <concept id="5447508759369797102" name="de.vimotest.viewmodel.testing.structure.WidgetTableRowsCheckValue" flags="ng" index="2ayrQO">
         <child id="5447508759369822399" name="rows" index="2ay43_" />
         <child id="7922086861434398932" name="columnCheckInfos" index="1EpG3j" />
@@ -4392,6 +4395,38 @@
         </node>
       </node>
       <node concept="1s$VFG" id="5ZcB1Gh1dVt" role="1s$QAY" />
+    </node>
+  </node>
+  <node concept="103ZX$" id="7NXUkdPqj5$">
+    <property role="3GE5qa" value="context" />
+    <property role="TrG5h" value="ContextReference_View" />
+    <node concept="103ZXx" id="7NXUkdPqj5_" role="103ZXC" />
+    <node concept="103ZXB" id="7NXUkdPqj5B" role="103ZXF" />
+  </node>
+  <node concept="30n1Qd" id="7NXUkdPqji9">
+    <property role="3GE5qa" value="context" />
+    <property role="TrG5h" value="ContextReference_ViewTests" />
+    <ref role="30n1PB" node="7NXUkdPqj5$" resolve="ContextReference_View" />
+    <node concept="3LKzX3" id="7NXUkdPqjuF" role="30n1Qb">
+      <property role="TrG5h" value="String Context" />
+      <node concept="1IbZgy" id="7NXUkdPqjuG" role="DUd2K">
+        <node concept="1g3lgF" id="7NXUkdPqjuN" role="DUiTU">
+          <property role="TrG5h" value="base" />
+          <node concept="o7Kjd" id="7NXUkdPqjuP" role="3125nE">
+            <property role="o7K7r" value="My Context" />
+          </node>
+        </node>
+      </node>
+      <node concept="1s$VFG" id="7NXUkdPqjuI" role="1s$QAY" />
+    </node>
+    <node concept="3LKzX3" id="7NXUkdPqjuR" role="30n1Qb">
+      <property role="TrG5h" value="Context Reference" />
+      <node concept="1IbZgy" id="7NXUkdPqjuS" role="DUd2K">
+        <node concept="8w7HN" id="7NXUkdPsXFv" role="DUiTU">
+          <ref role="8w7Kh" node="7NXUkdPqjuN" resolve="base" />
+        </node>
+      </node>
+      <node concept="1s$VFG" id="7NXUkdPqjuU" role="1s$QAY" />
     </node>
   </node>
 </model>

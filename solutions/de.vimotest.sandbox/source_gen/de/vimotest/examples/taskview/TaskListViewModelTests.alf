@@ -45,8 +45,8 @@ class TaskListViewModelTests {
    this.then_Tasks_has_2_rows_and_selected_row_handle_0 (  );
  }
   
-  public Add_New_Task_given_oneTaskA_when_LoadView_and_click_AddNewTask_then_Tasks_has_2_rows_and_selected_row_handle_1 (  ) {
-  this.given_oneTaskA (  );
+  public Add_New_Task_given_oneTask_when_LoadView_and_click_AddNewTask_then_Tasks_has_2_rows_and_selected_row_handle_1 (  ) {
+  this.given_oneTask1 (  );
    this.BuildSut (  );
    this.when_LoadView4 (  );
    this.when_click_AddNewTask1 (  );
@@ -148,10 +148,8 @@ class TaskListViewModelTests {
   this.contextProvider.SetDataTableJson ( this.twoTasks );
  }
   
-  private oneTaskA : String = "[ { id:\"0\", name:\"A\" } ]";
-  
-  public given_oneTaskA (  ) {
-  this.contextProvider.SetDataTableJson ( this.oneTaskA );
+  public given_oneTask1 (  ) {
+  this.contextProvider.SetDataTableJson ( this.oneTask );
  }
   
   private threeTasks : String = "[ { id:\"0\", name:\"A\" },\n  { id:\"1\", name:\"B\" },\n  { id:\"2\", name:\"C\" } ]";

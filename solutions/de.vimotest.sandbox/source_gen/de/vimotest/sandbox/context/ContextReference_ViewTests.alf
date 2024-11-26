@@ -1,0 +1,52 @@
+namespace context ;
+
+private import Testing ;
+
+class ContextReference_ViewTests {
+  
+  private sut : ContextReference_View  ;
+  
+  private contextProvider : ContextReference_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new ContextReference_ViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public String_Context_given_base_when_then_ (  ) {
+  this.given_base (  );
+   this.BuildSut (  );
+ }
+  
+  public Context_Reference_given_base_when_then_ (  ) {
+  this.given_base1 (  );
+   this.BuildSut (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  private base : String = "My Context";
+  
+  public given_base (  ) {
+  this.contextProvider.SetSimpleStringContext ( this.base );
+ }
+  
+  public given_base1 (  ) {
+  this.contextProvider.SetSimpleStringContext ( this.base );
+ }
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+}

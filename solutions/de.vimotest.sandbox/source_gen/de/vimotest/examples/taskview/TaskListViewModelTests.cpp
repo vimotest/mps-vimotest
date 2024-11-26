@@ -19,8 +19,7 @@ class TaskListViewModelTests : public testing::Test
   virtual void given_oneTask() ;
   std::string twoTasks = std::string("[ { id:\"0\", name:\"A\" },\n  { id:\"1\", name:\"B\" } ]");
   virtual void given_twoTasks() ;
-  std::string oneTaskA = std::string("[ { id:\"0\", name:\"A\" } ]");
-  virtual void given_oneTaskA() ;
+  virtual void given_oneTask1() ;
   std::string threeTasks = std::string("[ { id:\"0\", name:\"A\" },\n  { id:\"1\", name:\"B\" },\n  { id:\"2\", name:\"C\" } ]");
   virtual void given_threeTasks() ;
   std::string priorityCombinations = std::string("[ { id:\"0\", priority:\"low\" },\n  { id:\"1\", priority:\"medium\" },\n  { id:\"2\", priority:\"high\" } ]");
@@ -117,9 +116,9 @@ TEST_F(TaskListViewModelTests,  Initial_selection_given_twoTasks_when_LoadView_t
   this->then_Tasks_has_2_rows_and_selected_row_handle_0();
 }
 
-TEST_F(TaskListViewModelTests,  Add_New_Task_given_oneTaskA_when_LoadView_and_click_AddNewTask_then_Tasks_has_2_rows_and_selected_row_handle_1) 
+TEST_F(TaskListViewModelTests,  Add_New_Task_given_oneTask_when_LoadView_and_click_AddNewTask_then_Tasks_has_2_rows_and_selected_row_handle_1) 
 {
-  this->given_oneTaskA();
+  this->given_oneTask1();
   this->BuildSut();
   this->when_LoadView4();
   this->when_click_AddNewTask1();
@@ -222,9 +221,9 @@ void TaskListViewModelTests::given_twoTasks( )
   this->contextProvider->SetDataTableJson(this->twoTasks);
 }
 
-void TaskListViewModelTests::given_oneTaskA( ) 
+void TaskListViewModelTests::given_oneTask1( ) 
 {
-  this->contextProvider->SetDataTableJson(this->oneTaskA);
+  this->contextProvider->SetDataTableJson(this->oneTask);
 }
 
 void TaskListViewModelTests::given_threeTasks( ) 

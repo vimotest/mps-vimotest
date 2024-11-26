@@ -14378,5 +14378,33 @@
       <node concept="17QB3L" id="6RKU0sdiKsp" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="7NXUkdPcfQc">
+    <property role="3GE5qa" value="test.context.other" />
+    <ref role="13h7C2" to="53m0:7NXUkdOvp8K" resolve="ContextReference" />
+    <node concept="13hLZK" id="7NXUkdPcfQd" role="13h7CW">
+      <node concept="3clFbS" id="7NXUkdPcfQe" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7NXUkdPcg30" role="13h7CS">
+      <property role="TrG5h" value="getTestContextType" />
+      <ref role="13i0hy" node="5ZcB1GfVPbD" resolve="getTestContextType" />
+      <node concept="3Tm1VV" id="7NXUkdPcg31" role="1B3o_S" />
+      <node concept="3clFbS" id="7NXUkdPcg3a" role="3clF47">
+        <node concept="3clFbF" id="7NXUkdPcg8w" role="3cqZAp">
+          <node concept="2OqwBi" id="7NXUkdPcgGW" role="3clFbG">
+            <node concept="2OqwBi" id="7NXUkdPcglz" role="2Oq$k0">
+              <node concept="13iPFW" id="7NXUkdPcg8r" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7NXUkdPcgwg" role="2OqNvi">
+                <ref role="3Tt5mk" to="53m0:7NXUkdOvpli" resolve="ref" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="7NXUkdPcgTC" role="2OqNvi">
+              <ref role="37wK5l" node="5ZcB1GfVPbD" resolve="getTestContextType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="7NXUkdPcg3b" role="3clF45" />
+    </node>
+  </node>
 </model>
 

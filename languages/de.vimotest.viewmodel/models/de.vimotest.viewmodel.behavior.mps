@@ -3627,7 +3627,7 @@
                     <ref role="3cqZAo" node="6RKU0s62HcI" resolve="rowNode" />
                   </node>
                   <node concept="Xl_RD" id="6RKU0s62Syq" role="37wK5m">
-                    <property role="Xl_RC" value="»" />
+                    <property role="Xl_RC" value="» " />
                   </node>
                 </node>
               </node>
@@ -3644,6 +3644,26 @@
               <node concept="37vLTw" id="6RKU0s62Ktr" role="37wK5m">
                 <ref role="3cqZAo" node="6RKU0s62HcG" resolve="editorCell" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7NXUkdNFM7l" role="3cqZAp">
+          <node concept="2OqwBi" id="7NXUkdNFM7m" role="3clFbG">
+            <node concept="2OqwBi" id="7NXUkdNFM7n" role="2Oq$k0">
+              <node concept="37vLTw" id="7NXUkdNFM7o" role="2Oq$k0">
+                <ref role="3cqZAo" node="6RKU0s62HcG" resolve="editorCell" />
+              </node>
+              <node concept="liA8E" id="7NXUkdNFM7p" role="2OqNvi">
+                <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7NXUkdNFM7q" role="2OqNvi">
+              <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
+              <node concept="10M0yZ" id="7NXUkdNFM7r" role="37wK5m">
+                <ref role="3cqZAo" to="5ueo:~StyleAttributes.DRAW_BORDER" resolve="DRAW_BORDER" />
+                <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
+              </node>
+              <node concept="3clFbT" id="7NXUkdNFM7s" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -3767,7 +3787,7 @@
                   <ref role="3cqZAo" node="2DHgAdq8ORl" resolve="rowNode" />
                 </node>
                 <node concept="Xl_RD" id="2DHgAdq8HFp" role="37wK5m">
-                  <property role="Xl_RC" value="▶" />
+                  <property role="Xl_RC" value="▶ " />
                 </node>
                 <node concept="3clFbT" id="2DHgAdq8HFq" role="37wK5m" />
               </node>
@@ -3945,8 +3965,8 @@
                         </node>
                         <node concept="liA8E" id="2DHgAdq8JMZ" role="2OqNvi">
                           <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
-                          <node concept="10M0yZ" id="2DHgAdq8JN0" role="37wK5m">
-                            <ref role="3cqZAo" to="lzb2:~JBColor.lightGray" resolve="lightGray" />
+                          <node concept="10M0yZ" id="7NXUkdNKE0D" role="37wK5m">
+                            <ref role="3cqZAo" to="lzb2:~JBColor.gray" resolve="gray" />
                             <ref role="1PxDUh" to="exr9:~MPSColors" resolve="MPSColors" />
                           </node>
                         </node>

@@ -368,5 +368,35 @@
     <property role="2WVz4g" value="tc" />
     <property role="3yYw5D" value="fLwANPs/magenta" />
   </node>
+  <node concept="2WVz3F" id="7NXUkdPNASe">
+    <property role="103t_X" value="widgets.standard" />
+    <property role="3GE5qa" value="widgets" />
+    <property role="TrG5h" value="RadioButton" />
+    <property role="2SiFfI" value="radio button" />
+    <node concept="2WVz4l" id="7NXUkdPNB4K" role="2WV$Zc">
+      <ref role="2WVz4k" node="7NXUkdPNB4M" resolve="RadioButtonChoices" />
+    </node>
+    <node concept="2WVz4l" id="7NXUkdPNB4L" role="2WV$Zc">
+      <ref role="2WVz4k" node="44HS8_67EZV" resolve="SelectedEntry" />
+    </node>
+    <node concept="2WVz4l" id="7NXUkdPNBhl" role="2WV$Zc">
+      <ref role="2WVz4k" node="1Yc3x6zoTLW" resolve="Visibility" />
+    </node>
+    <node concept="2WVz4l" id="7NXUkdPNBhm" role="2WV$Zc">
+      <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
+    </node>
+    <node concept="Uqd12" id="7NXUkdPNBhk" role="Urcx0">
+      <ref role="Uq8ev" node="2exRXkpMcaR" resolve="SelectEntry" />
+      <ref role="Uq8er" node="44HS8_67EZV" resolve="SelectedEntry" />
+      <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
+    </node>
+  </node>
+  <node concept="2WVz3E" id="7NXUkdPNB4M">
+    <property role="3GE5qa" value="features" />
+    <property role="TrG5h" value="RadioButtonChoices" />
+    <property role="2WV$r6" value="choices" />
+    <property role="2WVz4g" value="r" />
+    <property role="3yYw5D" value="g1_eI4o/darkBlue" />
+  </node>
 </model>
 

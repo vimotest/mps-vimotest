@@ -2,6 +2,7 @@ package de.vimotest.examples.taskview;
 
 import com.google.gson.Gson;
 import de.vimotest.examples.taskview.logic.Task;
+import de.vimotest.examples.taskview.logic.TaskManager;
 import de.vimotest.examples.taskview.viewmodel.TaskListViewModelImpl;
 
 import java.util.Arrays;
@@ -13,10 +14,11 @@ public class TaskListViewModelContextProvider {
   public void Init() {
   }
   public TaskListViewModel BuildSut() {
-    if (tasksJson.isEmpty()) {
-      return new TaskListViewModelImpl();
+    final TaskManager taskManager = new TaskManager();
+    if (!tasksJson.isEmpty()) {
+      taskManager.addTasks(parseTasksFromJson());
     }
-    return new TaskListViewModelImpl(parseTasksFromJson());
+    return new TaskListViewModelImpl(taskManager);
   }
 
   private Collection<Task> parseTasksFromJson() {
@@ -26,9 +28,6 @@ public class TaskListViewModelContextProvider {
   }
 
   // example: "tasks: [ {id:\"0\", name:\"A\", prio:low, dueDate:\"2024/12/01\"} ]"
-  public void SetSimpleStringContext(String json) {
-    this.tasksJson = json;
-  }
   public void SetDataTableJson(String json) {
     this.tasksJson = json;
   }

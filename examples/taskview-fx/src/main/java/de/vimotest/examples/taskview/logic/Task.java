@@ -1,7 +1,7 @@
 package de.vimotest.examples.taskview.logic;
 
 public class Task {
-    private String id;
+    private int id;
     private String name;
     private String dueDate;
     private String priority;
@@ -14,14 +14,15 @@ public class Task {
         this.status = "Open";
     }
 
-    public Task(String name, String dueDate, String priority) {
+    public Task(int id, String name, String dueDate, String priority) {
+        this.id = id;
         this.name = name;
         this.dueDate = dueDate;
         this.priority = priority;
         this.status = "Open";
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 

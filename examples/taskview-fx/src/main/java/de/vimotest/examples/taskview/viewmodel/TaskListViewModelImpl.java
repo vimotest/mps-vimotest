@@ -3,6 +3,7 @@ package de.vimotest.examples.taskview.viewmodel;
 import de.vimotest.examples.taskview.TaskListViewModel;
 import de.vimotest.examples.taskview.TaskListViewModelTasksRow;
 import de.vimotest.examples.taskview.logic.Task;
+import de.vimotest.examples.taskview.logic.TaskManager;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -10,7 +11,6 @@ import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-import java.util.Collection;
 import java.util.List;
 
 public class TaskListViewModelImpl extends TaskListViewModel {
@@ -20,15 +20,14 @@ public class TaskListViewModelImpl extends TaskListViewModel {
     private BooleanProperty addTaskButtonEnabled = new SimpleBooleanProperty(false);
     private BooleanProperty deleteTaskButtonEnabled = new SimpleBooleanProperty(false);
 
-    public TaskListViewModelImpl() {
-        this.tasks = FXCollections.observableArrayList();
-    }
+    private TaskManager taskManager;
 
-    public TaskListViewModelImpl(Collection<Task> tasks) {
+    public TaskListViewModelImpl(TaskManager taskManager) {
+        this.taskManager = taskManager;
+
         this.tasks = FXCollections.observableArrayList();
-        for (Task task : tasks) {
-            final TaskListViewModelTasksRowImpl row = new TaskListViewModelTasksRowImpl(
-                    task.getId(), task.getName(), task.getDueDate(), task.getPriority(), task.getStatus());
+        for (Task task : taskManager.getTasks()) {
+            final TaskListViewModelTasksRowImpl row = new TaskListViewModelTasksRowImpl(task);
             addTask(row);
         }
         if (!tasks.isEmpty()) {
@@ -96,7 +95,8 @@ public class TaskListViewModelImpl extends TaskListViewModel {
 
     @Override
     public void addNewTaskClicked() {
-        this.tasks.add(new TaskListViewModelTasksRowImpl(this.tasks.size() + "", "<New Task>", "", "medium", "Open"));
+        Task task = taskManager.addTask("<New Task>", "", "medium");
+        this.tasks.add(new TaskListViewModelTasksRowImpl(task));
         this.selectedRow.set(this.tasks.size() - 1 + "");
         selectionUpdated();
     }

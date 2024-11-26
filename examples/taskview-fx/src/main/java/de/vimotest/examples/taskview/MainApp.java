@@ -1,5 +1,6 @@
 package de.vimotest.examples.taskview;
 
+import de.vimotest.examples.taskview.logic.TaskManager;
 import de.vimotest.examples.taskview.viewmodel.TaskListViewModelImpl;
 import de.vimotest.examples.taskview.viewmodel.TaskListViewModelTasksRowImpl;
 import javafx.scene.Scene;
@@ -21,10 +22,11 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        TaskListViewModelImpl taskListViewModel = new TaskListViewModelImpl();
+        final TaskManager taskManager = new TaskManager();
+        taskManager.addTask("Task 1", "2020-01-01", "low");
+        taskManager.addTask("Task 2", "2020-01-02", "high");
 
-        taskListViewModel.addTask(new TaskListViewModelTasksRowImpl("1", "Task 1", "2020-01-01", "low", "Open"));
-        taskListViewModel.addTask(new TaskListViewModelTasksRowImpl("2", "Task 2", "2020-01-02", "high", "Open"));
+        TaskListViewModelImpl taskListViewModel = new TaskListViewModelImpl(taskManager);
 
         // Create TableView
         TableView<TaskListViewModelTasksRowImpl> taskTable = new TableView<>(taskListViewModel.getTasks());

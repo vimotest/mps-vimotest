@@ -13,7 +13,6 @@ public class TaskListViewModelTests_Test {
   private String sampleTasks = "[ { id:\"0\", name:\"Exercise\", priority:\"low\", dueDate:\"2024/01/04\" },\n  { id:\"1\", name:\"Taxes\", priority:\"high\", dueDate:\"2023/12/31\" } ]";
   private String oneTask = "[ { id:\"0\", name:\"A\", priority:\"low\", dueDate:\"2024/12/01\" } ]";
   private String twoTasks = "[ { id:\"0\", name:\"A\" },\n  { id:\"1\", name:\"B\" } ]";
-  private String oneTaskA = "[ { id:\"0\", name:\"A\" } ]";
   private String threeTasks = "[ { id:\"0\", name:\"A\" },\n  { id:\"1\", name:\"B\" },\n  { id:\"2\", name:\"C\" } ]";
   private String priorityCombinations = "[ { id:\"0\", priority:\"low\" },\n  { id:\"1\", priority:\"medium\" },\n  { id:\"2\", priority:\"high\" } ]";
   private String dueDate2023 = "[ { id:\"0\", name:\"Task A\", dueDate:\"2023/01/01\" } ]";
@@ -50,8 +49,8 @@ public class TaskListViewModelTests_Test {
     this.then_Tasks_has_2_rows_and_selected_row_handle_0();
   }
   @Test
-  public void test_Add_New_Task_given_oneTaskA_when_LoadView_and_click_AddNewTask_then_Tasks_has_2_rows_and_selected_row_handle_1() throws Exception {
-    this.given_oneTaskA();
+  public void test_Add_New_Task_given_oneTask_when_LoadView_and_click_AddNewTask_then_Tasks_has_2_rows_and_selected_row_handle_1() throws Exception {
+    this.given_oneTask1();
     this.BuildSut();
     this.when_LoadView4();
     this.when_click_AddNewTask1();
@@ -148,8 +147,8 @@ public class TaskListViewModelTests_Test {
   public void given_twoTasks() {
     this.contextProvider.SetDataTableJson(this.twoTasks);
   }
-  public void given_oneTaskA() {
-    this.contextProvider.SetDataTableJson(this.oneTaskA);
+  public void given_oneTask1() {
+    this.contextProvider.SetDataTableJson(this.oneTask);
   }
   public void given_threeTasks() {
     this.contextProvider.SetDataTableJson(this.threeTasks);

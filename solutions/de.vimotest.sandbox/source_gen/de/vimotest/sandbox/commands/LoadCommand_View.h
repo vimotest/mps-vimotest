@@ -8,8 +8,8 @@ namespace commands
   class LoadCommand_View
   {
     public:
-    virtual void LoadView() ;
-    virtual void LoadViewWithName(std::string Name) ;
+    virtual void loadView() ;
+    virtual void loadViewWithName(std::string Name) ;
   };
 }
 

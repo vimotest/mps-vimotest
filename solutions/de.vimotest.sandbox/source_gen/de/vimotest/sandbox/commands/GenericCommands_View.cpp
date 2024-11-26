@@ -6,7 +6,7 @@
 
 namespace commands
 {
-  void GenericCommands_View::MyCommand(bool MyFlag, std::vector<std::string> Names ) 
+  void GenericCommands_View::myCommand(bool MyFlag, std::vector<std::string> Names ) 
   {
     
   }

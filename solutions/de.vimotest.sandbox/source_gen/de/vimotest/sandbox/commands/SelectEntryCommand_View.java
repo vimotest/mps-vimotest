@@ -14,6 +14,6 @@ public class SelectEntryCommand_View {
   public String getMyComboBoxSelectedEntry() {
     return this.MyComboBoxSelectedEntry;
   }
-  public void MyComboBoxEntrySelected(String entryName) {
+  public void myComboBoxEntrySelected(String entryName) {
   }
 }

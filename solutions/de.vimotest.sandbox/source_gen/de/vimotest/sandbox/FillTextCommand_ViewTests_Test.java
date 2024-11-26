@@ -37,10 +37,10 @@ public class FillTextCommand_ViewTests_Test {
 
 
   public void when_fill_Changed_in_MyTextBox() {
-    this.sut.MyTextBoxTextFilled("Changed");
+    this.sut.myTextBoxTextFilled("Changed");
   }
   public void when_fill_Changed_in_MyFreeTextComboBox() {
-    this.sut.MyFreeTextComboBoxTextFilled("Changed");
+    this.sut.myFreeTextComboBoxTextFilled("Changed");
   }
 
 

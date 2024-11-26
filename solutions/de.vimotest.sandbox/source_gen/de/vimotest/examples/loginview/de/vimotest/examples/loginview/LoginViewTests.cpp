@@ -116,55 +116,55 @@ namespace de::vimotest::examples::loginview
   }
   void LoginViewTests::when_LoadView( ) 
   {
-    this->sut->LoadView();
+    this->sut->loadView();
   }
   void LoginViewTests::when_fill_User_in_Username( ) 
   {
-    this->sut->UsernameTextFilled(std::string("User"));
+    this->sut->usernameTextFilled(std::string("User"));
   }
   void LoginViewTests::when_fill_MyPass123_in_Password( ) 
   {
-    this->sut->PasswordTextFilled(std::string("MyPass123"));
+    this->sut->passwordTextFilled(std::string("MyPass123"));
   }
   void LoginViewTests::when_check_ShowPassword( ) 
   {
-    this->sut->ShowPasswordChecked(true);
+    this->sut->showPasswordChecked(true);
   }
   void LoginViewTests::when_LoadView1( ) 
   {
-    this->sut->LoadView();
+    this->sut->loadView();
   }
   void LoginViewTests::when_fill_User_in_Username1( ) 
   {
-    this->sut->UsernameTextFilled(std::string("User"));
+    this->sut->usernameTextFilled(std::string("User"));
   }
   void LoginViewTests::when_clear_text_in_Password( ) 
   {
-    this->sut->PasswordTextFilled(std::string(""));
+    this->sut->passwordTextFilled(std::string(""));
   }
   void LoginViewTests::when_LoadView2( ) 
   {
-    this->sut->LoadView();
+    this->sut->loadView();
   }
   void LoginViewTests::when_LoadView3( ) 
   {
-    this->sut->LoadView();
+    this->sut->loadView();
   }
   void LoginViewTests::when_check_ShowPassword1( ) 
   {
-    this->sut->ShowPasswordChecked(true);
+    this->sut->showPasswordChecked(true);
   }
   void LoginViewTests::when_LoadView4( ) 
   {
-    this->sut->LoadView();
+    this->sut->loadView();
   }
   void LoginViewTests::when_fill_lovelace_in_Password( ) 
   {
-    this->sut->PasswordTextFilled(std::string("lovelace"));
+    this->sut->passwordTextFilled(std::string("lovelace"));
   }
   void LoginViewTests::when_click_Login( ) 
   {
-    this->sut->LoginClicked();
+    this->sut->loginClicked();
   }
   void LoginViewTests::then_Username_shows_text_User_( ) 
   {

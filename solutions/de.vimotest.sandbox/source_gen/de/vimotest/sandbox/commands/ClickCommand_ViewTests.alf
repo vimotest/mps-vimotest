@@ -33,7 +33,7 @@ class ClickCommand_ViewTests {
 
   
   public when_click_MyButton (  ) {
-  this.sut.MyButtonClicked (  );
+  this.sut.myButtonClicked (  );
  }
   
   // Then Helper Definitions

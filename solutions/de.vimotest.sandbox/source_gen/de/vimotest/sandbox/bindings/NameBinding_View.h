@@ -15,7 +15,7 @@ namespace bindings
     virtual bool getCustomEnabled() ;
     virtual std::vector<std::shared_ptr<MyCustomRow>> getRows() ;
     virtual bool getUpdatingFlag() ;
-    virtual void LoadView() ;
+    virtual void loadView() ;
     virtual void OkClicked() ;
     private:
     std::string mText;

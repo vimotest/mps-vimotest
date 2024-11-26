@@ -34,27 +34,27 @@ namespace commands
   {
     return this->isMyTreeViewUpdatingRowsFlag;
   }
-  void RowBasedCommand_View::LoadView( ) 
+  void RowBasedCommand_View::loadView( ) 
   {
     
   }
-  void RowBasedCommand_View::CheckboxesChecked(int rowIndex, bool isChecked ) 
+  void RowBasedCommand_View::checkboxesChecked(int rowIndex, bool isChecked ) 
   {
     
   }
-  void RowBasedCommand_View::FreeTextComboBoxesEntrySelected(int rowIndex, std::string entryName ) 
+  void RowBasedCommand_View::freeTextComboBoxesEntrySelected(int rowIndex, std::string entryName ) 
   {
     
   }
-  void RowBasedCommand_View::EntryComboBoxesEntrySelected(int rowIndex, std::string entryName ) 
+  void RowBasedCommand_View::entryComboBoxesEntrySelected(int rowIndex, std::string entryName ) 
   {
     
   }
-  void RowBasedCommand_View::TextBoxesTextFilled(int rowIndex, std::string text ) 
+  void RowBasedCommand_View::textBoxesTextFilled(int rowIndex, std::string text ) 
   {
     
   }
-  void RowBasedCommand_View::ButtonsClicked(int rowIndex ) 
+  void RowBasedCommand_View::buttonsClicked(int rowIndex ) 
   {
     
   }

@@ -79,25 +79,25 @@ public class SelectRowCommand_ViewTests_Test {
 
 
   public void when_select_row_1_in_MyListView() {
-    this.sut.MyListViewRowSelected(1);
+    this.sut.myListViewRowSelected(1);
   }
   public void when_select_row_ROW_B_in_MyStringRowHandleListView() {
-    this.sut.MyStringRowHandleListViewRowSelected("ROW_B");
+    this.sut.myStringRowHandleListViewRowSelected("ROW_B");
   }
   public void when_select_row_1_in_MyTableView() {
-    this.sut.MyTableViewRowSelected(1);
+    this.sut.myTableViewRowSelected(1);
   }
   public void when_select_row_ROW_B_in_MyStringRowHandleTableView() {
-    this.sut.MyStringRowHandleTableViewRowSelected("ROW_B");
+    this.sut.myStringRowHandleTableViewRowSelected("ROW_B");
   }
   public void when_select_row_1_in_MyTreeView() {
-    this.sut.MyTreeViewRowSelected(1);
+    this.sut.myTreeViewRowSelected(1);
   }
   public void when_select_row_ROW_B_in_MyStringRowHandleTreeView() {
-    this.sut.MyStringRowHandleTreeViewRowSelected("ROW_B");
+    this.sut.myStringRowHandleTreeViewRowSelected("ROW_B");
   }
   public void when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListView() {
-    this.sut.MyStringHandleMultiSelectRowListViewRowSelected(Arrays.asList("ROW_A", "ROW_C"));
+    this.sut.myStringHandleMultiSelectRowListViewRowSelected(Arrays.asList("ROW_A", "ROW_C"));
   }
 
 

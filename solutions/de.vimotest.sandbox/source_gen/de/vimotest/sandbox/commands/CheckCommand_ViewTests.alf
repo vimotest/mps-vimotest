@@ -34,11 +34,11 @@ class CheckCommand_ViewTests {
 
   
   public when_check_MyCheckBox1 (  ) {
-  this.sut.MyCheckBox1Checked ( true );
+  this.sut.myCheckBox1Checked ( true );
  }
   
   public when_uncheck_MyCheckBox2 (  ) {
-  this.sut.MyCheckBox2Checked ( false );
+  this.sut.myCheckBox2Checked ( false );
  }
   
   // Then Helper Definitions

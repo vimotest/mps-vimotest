@@ -30,16 +30,16 @@ public class RowBasedCommand_View {
   public Boolean getIsMyTreeViewUpdatingRowsFlag() {
     return this.isMyTreeViewUpdatingRowsFlag;
   }
-  public void LoadView() {
+  public void loadView() {
   }
-  public void CheckboxesChecked(Integer rowIndex, Boolean isChecked) {
+  public void checkboxesChecked(Integer rowIndex, Boolean isChecked) {
   }
-  public void FreeTextComboBoxesEntrySelected(Integer rowIndex, String entryName) {
+  public void freeTextComboBoxesEntrySelected(Integer rowIndex, String entryName) {
   }
-  public void EntryComboBoxesEntrySelected(Integer rowIndex, String entryName) {
+  public void entryComboBoxesEntrySelected(Integer rowIndex, String entryName) {
   }
-  public void TextBoxesTextFilled(Integer rowIndex, String text) {
+  public void textBoxesTextFilled(Integer rowIndex, String text) {
   }
-  public void ButtonsClicked(Integer rowIndex) {
+  public void buttonsClicked(Integer rowIndex) {
   }
 }

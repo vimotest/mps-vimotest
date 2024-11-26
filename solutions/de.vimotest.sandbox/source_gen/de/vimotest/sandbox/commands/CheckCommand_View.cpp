@@ -12,11 +12,11 @@ namespace commands
   {
     return this->isMyCheckBox2Checked;
   }
-  void CheckCommand_View::MyCheckBox1Checked(bool isChecked ) 
+  void CheckCommand_View::myCheckBox1Checked(bool isChecked ) 
   {
     
   }
-  void CheckCommand_View::MyCheckBox2Checked(bool isChecked ) 
+  void CheckCommand_View::myCheckBox2Checked(bool isChecked ) 
   {
     
   }

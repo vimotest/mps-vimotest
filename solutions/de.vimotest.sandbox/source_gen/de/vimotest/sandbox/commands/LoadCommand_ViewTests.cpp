@@ -39,11 +39,11 @@ namespace commands
   }
   void LoadCommand_ViewTests::when_LoadView( ) 
   {
-    this->sut->LoadView();
+    this->sut->loadView();
   }
   void LoadCommand_ViewTests::when_LoadViewWithName( ) 
   {
-    this->sut->LoadViewWithName(std::string("Name"));
+    this->sut->loadViewWithName(std::string("Name"));
   }
 }
 

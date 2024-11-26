@@ -38,12 +38,12 @@ class ParameterObjectCommand_ViewTests {
   
   public when_LoadView (  ) {
   let loadViewParameters: LoadViewParams = new ParameterObjectCommand_View:: LoadViewParams ( "A", true, 42 );
-   this.sut.LoadView ( loadViewParameters );
+   this.sut.loadView ( loadViewParameters );
  }
   
   public when_uncheck_MyCheckBox (  ) {
   let checkedParameters: CheckParams = new ParameterObjectCommand_View:: CheckParams ( false );
-   this.sut.MyCheckBoxChecked ( checkedParameters );
+   this.sut.myCheckBoxChecked ( checkedParameters );
  }
   
   // Then Helper Definitions

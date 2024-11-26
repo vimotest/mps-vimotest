@@ -28,14 +28,14 @@ public class LoginView {
   public Boolean getIsErrorTextVisibility() {
     return this.isErrorTextVisibility;
   }
-  public void LoadView() {
+  public void loadView() {
   }
-  public void UsernameTextFilled(String text) {
+  public void usernameTextFilled(String text) {
   }
-  public void PasswordTextFilled(String text) {
+  public void passwordTextFilled(String text) {
   }
-  public void ShowPasswordChecked(Boolean isChecked) {
+  public void showPasswordChecked(Boolean isChecked) {
   }
-  public void LoginClicked() {
+  public void loginClicked() {
   }
 }

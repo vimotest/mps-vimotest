@@ -70,14 +70,14 @@ public class MainApp extends Application {
         // Add "Create Task" button
         Button createTaskButton = new Button("Create Task");
         createTaskButton.setOnAction(event -> {
-            taskListViewModel.AddNewTaskClicked();
+            taskListViewModel.addNewTaskClicked();
         });
         createTaskButton.disableProperty().bind(taskListViewModel.addTaskButtonEnabledProperty().not());
 
         // Add "Delete Task" button
         Button deleteTaskButton = new Button("Delete Task");
         deleteTaskButton.setOnAction(event -> {
-            taskListViewModel.DeleteTaskClicked();
+            taskListViewModel.deleteTaskClicked();
         });
         deleteTaskButton.disableProperty().bind(taskListViewModel.deleteTaskButtonEnabledProperty().not());
 
@@ -88,7 +88,7 @@ public class MainApp extends Application {
                 return;
             }
             updatingSelection.set(true);
-            taskListViewModel.TasksRowSelected(newValue != null ? newValue.getRowHandle() : "");
+            taskListViewModel.tasksRowSelected(newValue != null ? newValue.getRowHandle() : "");
             updatingSelection.set(false);
         });
         // and back
@@ -110,7 +110,7 @@ public class MainApp extends Application {
         VBox layout = new VBox(taskTable, buttonLayout);
         Scene scene = new Scene(layout, 600, 400);
 
-        taskListViewModel.LoadView();
+        taskListViewModel.loadView();
 
         primaryStage.setTitle("Task Manager");
         primaryStage.setScene(scene);

@@ -4,7 +4,7 @@
 
 abstract class MyViewController {
   
-  public LoadView (  ) {     }
+  public loadView (  ) {     }
   
-  public MyCheckBoxChecked (   in isChecked : Boolean  ) {     }
+  public myCheckBoxChecked (   in isChecked : Boolean  ) {     }
 }

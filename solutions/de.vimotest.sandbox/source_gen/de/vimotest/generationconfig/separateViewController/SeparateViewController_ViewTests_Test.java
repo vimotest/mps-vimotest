@@ -39,10 +39,10 @@ public class SeparateViewController_ViewTests_Test {
 
 
   public void when_LoadView() {
-    this.sutViewController.LoadView();
+    this.sutViewController.loadView();
   }
   public void when_uncheck_MyCheckBox() {
-    this.sutViewController.MyCheckBoxChecked(false);
+    this.sutViewController.myCheckBoxChecked(false);
   }
 
 

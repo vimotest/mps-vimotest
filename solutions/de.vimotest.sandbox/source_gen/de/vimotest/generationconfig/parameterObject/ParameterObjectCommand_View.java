@@ -20,7 +20,7 @@ public class ParameterObjectCommand_View {
       this.Value3 = Value3;
     }
   }
-  public void LoadView(LoadViewParams parameters) {
+  public void loadView(LoadViewParams parameters) {
   }
   public static class CheckParams {
     public Boolean isChecked;
@@ -30,6 +30,6 @@ public class ParameterObjectCommand_View {
       this.isChecked = isChecked;
     }
   }
-  public void MyCheckBoxChecked(CheckParams parameters) {
+  public void myCheckBoxChecked(CheckParams parameters) {
   }
 }

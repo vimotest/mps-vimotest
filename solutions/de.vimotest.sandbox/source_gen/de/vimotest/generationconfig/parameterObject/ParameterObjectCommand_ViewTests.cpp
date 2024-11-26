@@ -45,11 +45,11 @@ void ParameterObjectCommand_ViewTests::given_empty_context( )
 void ParameterObjectCommand_ViewTests::when_LoadView( ) 
 {
   ParameterObjectCommand_View::LoadViewParams loadViewParameters = { std::string("A"), true, 42 };
-  this->sut->LoadView(loadViewParameters);
+  this->sut->loadView(loadViewParameters);
 }
 
 void ParameterObjectCommand_ViewTests::when_uncheck_MyCheckBox( ) 
 {
   ParameterObjectCommand_View::CheckParams checkedParameters = { false };
-  this->sut->MyCheckBoxChecked(checkedParameters);
+  this->sut->myCheckBoxChecked(checkedParameters);
 }

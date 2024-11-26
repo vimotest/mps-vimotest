@@ -3763,7 +3763,7 @@
         <node concept="VPxyj" id="5jkMFwuLz8H" role="3F10Kt" />
       </node>
       <node concept="2yq9I_" id="5jkMFwuLz8B" role="3EZMnx">
-        <ref role="225u1j" to="at53:5jkMFwuLz8n" resolve="capitalizeGetterSetters" />
+        <ref role="225u1j" to="at53:5jkMFwuLz8n" resolve="capitalizeOperationNames" />
         <node concept="1563Vb" id="5jkMFwuLz8D" role="1563LE">
           <property role="1563UK" value="[ ]" />
           <property role="1563Ve" value="[x]" />
@@ -3775,7 +3775,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="3F0ifn" id="5jkMFwuLz8G" role="2fqkNU">
-          <property role="3F0ifm" value="capitalize getter/setter" />
+          <property role="3F0ifm" value="capitalize operations (command, getter methods)" />
           <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
         </node>
       </node>
@@ -3872,7 +3872,7 @@
     </node>
   </node>
   <node concept="PKFIW" id="1EVo$X00WZz">
-    <property role="TrG5h" value="ViewWidgetFeature_Inspector" />
+    <property role="TrG5h" value="ViewWidgetFeature_Inspector_EC" />
     <property role="3GE5qa" value="widgets" />
     <ref role="1XX52x" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
     <node concept="3EZMnI" id="1EVo$X00WZ$" role="2wV5jI">

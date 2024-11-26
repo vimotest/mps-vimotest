@@ -7256,7 +7256,7 @@
               </node>
             </node>
             <node concept="3TrcHB" id="Of5vVZ$0lC" role="2OqNvi">
-              <ref role="3TsBF5" to="at53:5jkMFwuLz8n" resolve="capitalizeGetterSetters" />
+              <ref role="3TsBF5" to="at53:5jkMFwuLz8n" resolve="capitalizeOperationNames" />
             </node>
           </node>
         </node>

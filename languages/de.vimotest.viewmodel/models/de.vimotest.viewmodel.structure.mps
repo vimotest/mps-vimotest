@@ -1270,8 +1270,11 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5jkMFwuLz8n" role="1TKVEl">
       <property role="IQ2nx" value="6112733486387704343" />
-      <property role="TrG5h" value="capitalizeGetterSetters" />
+      <property role="TrG5h" value="capitalizeOperationNames" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="2gGjxPLTvki" role="lGtFl">
+        <property role="t5JxN" value="Controls if generated operation names are capitalized or decapitalized. This includes command and getter operations." />
+      </node>
     </node>
     <node concept="1TJgyi" id="Of5vVZsNoR" role="1TKVEl">
       <property role="IQ2nx" value="940995032095340087" />

@@ -44,11 +44,11 @@ class SeparateViewController_ViewTests {
 
   
   public when_LoadView (  ) {
-  this.sutViewController.LoadView (  );
+  this.sutViewController.loadView (  );
  }
   
   public when_uncheck_MyCheckBox (  ) {
-  this.sutViewController.MyCheckBoxChecked ( false );
+  this.sutViewController.myCheckBoxChecked ( false );
  }
   
   // Then Helper Definitions

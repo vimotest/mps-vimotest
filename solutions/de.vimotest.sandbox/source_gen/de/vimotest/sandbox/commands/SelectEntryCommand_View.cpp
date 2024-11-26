@@ -14,7 +14,7 @@ namespace commands
   {
     return this->MyComboBoxSelectedEntry;
   }
-  void SelectEntryCommand_View::MyComboBoxEntrySelected(std::string entryName ) 
+  void SelectEntryCommand_View::myComboBoxEntrySelected(std::string entryName ) 
   {
     
   }

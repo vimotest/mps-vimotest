@@ -35,7 +35,7 @@ public class SelectEntryCommand_ViewTests_Test {
 
 
   public void when_select_entry_C_in_MyComboBox() {
-    this.sut.MyComboBoxEntrySelected("C");
+    this.sut.myComboBoxEntrySelected("C");
   }
 
 

@@ -32,7 +32,7 @@ public class ClickCommand_ViewTests_Test {
 
 
   public void when_click_MyButton() {
-    this.sut.MyButtonClicked();
+    this.sut.myButtonClicked();
   }
 
 

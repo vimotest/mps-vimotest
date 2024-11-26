@@ -85,43 +85,43 @@ public class LoginViewTests_Test {
 
 
   public void when_LoadView() {
-    this.sut.LoadView();
+    this.sut.loadView();
   }
   public void when_fill_User_in_Username() {
-    this.sut.UsernameTextFilled("User");
+    this.sut.usernameTextFilled("User");
   }
   public void when_fill_MyPass123_in_Password() {
-    this.sut.PasswordTextFilled("MyPass123");
+    this.sut.passwordTextFilled("MyPass123");
   }
   public void when_check_ShowPassword() {
-    this.sut.ShowPasswordChecked(true);
+    this.sut.showPasswordChecked(true);
   }
   public void when_LoadView1() {
-    this.sut.LoadView();
+    this.sut.loadView();
   }
   public void when_fill_User_in_Username1() {
-    this.sut.UsernameTextFilled("User");
+    this.sut.usernameTextFilled("User");
   }
   public void when_clear_text_in_Password() {
-    this.sut.PasswordTextFilled("");
+    this.sut.passwordTextFilled("");
   }
   public void when_LoadView2() {
-    this.sut.LoadView();
+    this.sut.loadView();
   }
   public void when_LoadView3() {
-    this.sut.LoadView();
+    this.sut.loadView();
   }
   public void when_check_ShowPassword1() {
-    this.sut.ShowPasswordChecked(true);
+    this.sut.showPasswordChecked(true);
   }
   public void when_LoadView4() {
-    this.sut.LoadView();
+    this.sut.loadView();
   }
   public void when_fill_lovelace_in_Password() {
-    this.sut.PasswordTextFilled("lovelace");
+    this.sut.passwordTextFilled("lovelace");
   }
   public void when_click_Login() {
-    this.sut.LoginClicked();
+    this.sut.loginClicked();
   }
 
 

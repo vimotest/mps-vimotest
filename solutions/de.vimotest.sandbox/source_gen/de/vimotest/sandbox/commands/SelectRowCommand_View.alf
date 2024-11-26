@@ -148,19 +148,19 @@ class SelectRowCommand_View {
   return this.isMyStringHandleMultiSelectRowListViewUpdatingRowsFlag;
  }
   
-  public MyListViewRowSelected (   in rowIndex : Integer  ) {     }
+  public myListViewRowSelected (   in rowIndex : Integer  ) {     }
   
-  public MyStringRowHandleListViewRowSelected (   in rowHandle : String  ) {     }
+  public myStringRowHandleListViewRowSelected (   in rowHandle : String  ) {     }
   
-  public MyTableViewRowSelected (   in rowIndex : Integer  ) {     }
+  public myTableViewRowSelected (   in rowIndex : Integer  ) {     }
   
-  public MyStringRowHandleTableViewRowSelected (   in rowHandle : String  ) {     }
+  public myStringRowHandleTableViewRowSelected (   in rowHandle : String  ) {     }
   
-  public MyTreeViewRowSelected (   in rowIndex : Integer  ) {     }
+  public myTreeViewRowSelected (   in rowIndex : Integer  ) {     }
   
-  public MyStringRowHandleTreeViewRowSelected (   in rowHandle : String  ) {     }
+  public myStringRowHandleTreeViewRowSelected (   in rowHandle : String  ) {     }
   
-  public MyIndexBasedMultiSelectRowListViewRowSelected (   in rowIndices : Integer [ * ]  ) {     }
+  public myIndexBasedMultiSelectRowListViewRowSelected (   in rowIndices : Integer [ * ]  ) {     }
   
-  public MyStringHandleMultiSelectRowListViewRowSelected (   in rowHandles : String [ * ]  ) {     }
+  public myStringHandleMultiSelectRowListViewRowSelected (   in rowHandles : String [ * ]  ) {     }
 }

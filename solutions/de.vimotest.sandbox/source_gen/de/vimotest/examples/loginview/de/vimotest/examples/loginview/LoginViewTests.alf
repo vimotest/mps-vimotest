@@ -86,55 +86,55 @@ class LoginViewTests {
 
   
   public when_LoadView (  ) {
-  this.sut.LoadView (  );
+  this.sut.loadView (  );
  }
   
   public when_fill_User_in_Username (  ) {
-  this.sut.UsernameTextFilled ( "User" );
+  this.sut.usernameTextFilled ( "User" );
  }
   
   public when_fill_MyPass123_in_Password (  ) {
-  this.sut.PasswordTextFilled ( "MyPass123" );
+  this.sut.passwordTextFilled ( "MyPass123" );
  }
   
   public when_check_ShowPassword (  ) {
-  this.sut.ShowPasswordChecked ( true );
+  this.sut.showPasswordChecked ( true );
  }
   
   public when_LoadView1 (  ) {
-  this.sut.LoadView (  );
+  this.sut.loadView (  );
  }
   
   public when_fill_User_in_Username1 (  ) {
-  this.sut.UsernameTextFilled ( "User" );
+  this.sut.usernameTextFilled ( "User" );
  }
   
   public when_clear_text_in_Password (  ) {
-  this.sut.PasswordTextFilled ( "" );
+  this.sut.passwordTextFilled ( "" );
  }
   
   public when_LoadView2 (  ) {
-  this.sut.LoadView (  );
+  this.sut.loadView (  );
  }
   
   public when_LoadView3 (  ) {
-  this.sut.LoadView (  );
+  this.sut.loadView (  );
  }
   
   public when_check_ShowPassword1 (  ) {
-  this.sut.ShowPasswordChecked ( true );
+  this.sut.showPasswordChecked ( true );
  }
   
   public when_LoadView4 (  ) {
-  this.sut.LoadView (  );
+  this.sut.loadView (  );
  }
   
   public when_fill_lovelace_in_Password (  ) {
-  this.sut.PasswordTextFilled ( "lovelace" );
+  this.sut.passwordTextFilled ( "lovelace" );
  }
   
   public when_click_Login (  ) {
-  this.sut.LoginClicked (  );
+  this.sut.loginClicked (  );
  }
   
   // Then Helper Definitions

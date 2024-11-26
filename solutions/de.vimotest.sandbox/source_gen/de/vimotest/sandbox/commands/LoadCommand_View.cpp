@@ -5,11 +5,11 @@
 
 namespace commands
 {
-  void LoadCommand_View::LoadView( ) 
+  void LoadCommand_View::loadView( ) 
   {
     
   }
-  void LoadCommand_View::LoadViewWithName(std::string Name ) 
+  void LoadCommand_View::loadViewWithName(std::string Name ) 
   {
     
   }

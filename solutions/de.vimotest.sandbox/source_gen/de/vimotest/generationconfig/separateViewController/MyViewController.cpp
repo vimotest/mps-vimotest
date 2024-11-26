@@ -2,12 +2,12 @@
 #include "MyViewController.h"
 #include "MyViewController.h"
 
-void MyViewController::LoadView( ) 
+void MyViewController::loadView( ) 
 {
   
 }
 
-void MyViewController::MyCheckBoxChecked(bool isChecked ) 
+void MyViewController::myCheckBoxChecked(bool isChecked ) 
 {
   
 }

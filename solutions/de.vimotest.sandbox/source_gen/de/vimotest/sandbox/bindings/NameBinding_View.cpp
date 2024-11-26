@@ -24,7 +24,7 @@ namespace bindings
   {
     return this->updatingFlag;
   }
-  void NameBinding_View::LoadView( ) 
+  void NameBinding_View::loadView( ) 
   {
     
   }

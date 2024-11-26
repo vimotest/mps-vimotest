@@ -14,6 +14,6 @@ public class ViMoTestFileNameBinding {
   public Boolean getIsMyTableViewUpdatingRowsFlag() {
     return this.isMyTableViewUpdatingRowsFlag;
   }
-  public void LoadView() {
+  public void loadView() {
   }
 }

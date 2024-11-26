@@ -40,13 +40,13 @@ class LoginView {
   return this.isErrorTextVisibility;
  }
   
-  public LoadView (  ) {     }
+  public loadView (  ) {     }
   
-  public UsernameTextFilled (   in text : String  ) {     }
+  public usernameTextFilled (   in text : String  ) {     }
   
-  public PasswordTextFilled (   in text : String  ) {     }
+  public passwordTextFilled (   in text : String  ) {     }
   
-  public ShowPasswordChecked (   in isChecked : Boolean  ) {     }
+  public showPasswordChecked (   in isChecked : Boolean  ) {     }
   
-  public LoginClicked (  ) {     }
+  public loginClicked (  ) {     }
 }

@@ -22,11 +22,11 @@ namespace commands
   {
     return this->MyFreeTextComboBoxText;
   }
-  void FillTextCommand_View::MyTextBoxTextFilled(std::string text ) 
+  void FillTextCommand_View::myTextBoxTextFilled(std::string text ) 
   {
     
   }
-  void FillTextCommand_View::MyFreeTextComboBoxTextFilled(std::string text ) 
+  void FillTextCommand_View::myFreeTextComboBoxTextFilled(std::string text ) 
   {
     
   }

@@ -4,8 +4,8 @@ package de.vimotest.sandbox.commands;
 
 
 public class LoadCommand_View {
-  public void LoadView() {
+  public void loadView() {
   }
-  public void LoadViewWithName(String Name) {
+  public void loadViewWithName(String Name) {
   }
 }

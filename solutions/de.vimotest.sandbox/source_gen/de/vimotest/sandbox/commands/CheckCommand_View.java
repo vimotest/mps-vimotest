@@ -12,8 +12,8 @@ public class CheckCommand_View {
   public Boolean getIsMyCheckBox2Checked() {
     return this.isMyCheckBox2Checked;
   }
-  public void MyCheckBox1Checked(Boolean isChecked) {
+  public void myCheckBox1Checked(Boolean isChecked) {
   }
-  public void MyCheckBox2Checked(Boolean isChecked) {
+  public void myCheckBox2Checked(Boolean isChecked) {
   }
 }

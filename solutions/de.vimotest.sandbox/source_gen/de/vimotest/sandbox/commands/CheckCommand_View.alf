@@ -16,7 +16,7 @@ class CheckCommand_View {
   return this.isMyCheckBox2Checked;
  }
   
-  public MyCheckBox1Checked (   in isChecked : Boolean  ) {     }
+  public myCheckBox1Checked (   in isChecked : Boolean  ) {     }
   
-  public MyCheckBox2Checked (   in isChecked : Boolean  ) {     }
+  public myCheckBox2Checked (   in isChecked : Boolean  ) {     }
 }

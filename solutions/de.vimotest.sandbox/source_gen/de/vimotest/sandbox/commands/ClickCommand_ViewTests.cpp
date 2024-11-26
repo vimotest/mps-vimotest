@@ -32,7 +32,7 @@ namespace commands
   }
   void ClickCommand_ViewTests::when_click_MyButton( ) 
   {
-    this->sut->MyButtonClicked();
+    this->sut->myButtonClicked();
   }
 }
 

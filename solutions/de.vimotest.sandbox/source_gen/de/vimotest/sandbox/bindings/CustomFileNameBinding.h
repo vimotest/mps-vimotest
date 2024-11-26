@@ -12,7 +12,7 @@ namespace bindings
     public:
     virtual std::vector<std::shared_ptr<ViMoTestFileNameBindingMyTableViewRow>> getMyTableViewWidgetTableRows() ;
     virtual bool getIsMyTableViewUpdatingRowsFlag() ;
-    virtual void LoadView() ;
+    virtual void loadView() ;
     private:
     std::vector<std::shared_ptr<ViMoTestFileNameBindingMyTableViewRow>> MyTableViewWidgetTableRows;
     bool isMyTableViewUpdatingRowsFlag;

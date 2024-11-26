@@ -4,7 +4,7 @@
 
 namespace commands
 {
-  void ClickCommand_View::MyButtonClicked( ) 
+  void ClickCommand_View::myButtonClicked( ) 
   {
     
   }

@@ -42,14 +42,14 @@ namespace commands
     virtual std::vector<std::shared_ptr<SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow>> getMyStringHandleMultiSelectRowListViewWidgetListRows() ;
     virtual std::vector<std::string> getMyStringHandleMultiSelectRowListViewSelectedRows() ;
     virtual bool getIsMyStringHandleMultiSelectRowListViewUpdatingRowsFlag() ;
-    virtual void MyListViewRowSelected(int rowIndex) ;
-    virtual void MyStringRowHandleListViewRowSelected(std::string rowHandle) ;
-    virtual void MyTableViewRowSelected(int rowIndex) ;
-    virtual void MyStringRowHandleTableViewRowSelected(std::string rowHandle) ;
-    virtual void MyTreeViewRowSelected(int rowIndex) ;
-    virtual void MyStringRowHandleTreeViewRowSelected(std::string rowHandle) ;
-    virtual void MyIndexBasedMultiSelectRowListViewRowSelected(std::vector<int> rowIndices) ;
-    virtual void MyStringHandleMultiSelectRowListViewRowSelected(std::vector<std::string> rowHandles) ;
+    virtual void myListViewRowSelected(int rowIndex) ;
+    virtual void myStringRowHandleListViewRowSelected(std::string rowHandle) ;
+    virtual void myTableViewRowSelected(int rowIndex) ;
+    virtual void myStringRowHandleTableViewRowSelected(std::string rowHandle) ;
+    virtual void myTreeViewRowSelected(int rowIndex) ;
+    virtual void myStringRowHandleTreeViewRowSelected(std::string rowHandle) ;
+    virtual void myIndexBasedMultiSelectRowListViewRowSelected(std::vector<int> rowIndices) ;
+    virtual void myStringHandleMultiSelectRowListViewRowSelected(std::vector<std::string> rowHandles) ;
     private:
     std::vector<std::shared_ptr<SelectRowCommand_ViewMyListViewRow>> MyListViewWidgetListRows;
     int MyListViewSelectedRow;

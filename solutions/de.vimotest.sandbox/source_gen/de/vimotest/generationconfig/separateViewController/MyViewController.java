@@ -4,8 +4,8 @@ package de.vimotest.generationConfig.separateViewController;
 
 
 public abstract class MyViewController {
-  public void LoadView() {
+  public void loadView() {
   }
-  public void MyCheckBoxChecked(Boolean isChecked) {
+  public void myCheckBoxChecked(Boolean isChecked) {
   }
 }

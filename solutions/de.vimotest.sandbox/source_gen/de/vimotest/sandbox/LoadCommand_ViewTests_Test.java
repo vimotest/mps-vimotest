@@ -37,10 +37,10 @@ public class LoadCommand_ViewTests_Test {
 
 
   public void when_LoadView() {
-    this.sut.LoadView();
+    this.sut.loadView();
   }
   public void when_LoadViewWithName() {
-    this.sut.LoadViewWithName("Name");
+    this.sut.loadViewWithName("Name");
   }
 
 

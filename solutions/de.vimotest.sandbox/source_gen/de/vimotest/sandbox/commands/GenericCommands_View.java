@@ -5,6 +5,6 @@ package de.vimotest.sandbox.commands;
 import java.util.List;
 
 public class GenericCommands_View {
-  public void MyCommand(Boolean MyFlag, List<String> Names) {
+  public void myCommand(Boolean MyFlag, List<String> Names) {
   }
 }

@@ -52,10 +52,10 @@ void SeparateViewController_ViewTests::given_empty_context( )
 
 void SeparateViewController_ViewTests::when_LoadView( ) 
 {
-  this->sutViewController->LoadView();
+  this->sutViewController->loadView();
 }
 
 void SeparateViewController_ViewTests::when_uncheck_MyCheckBox( ) 
 {
-  this->sutViewController->MyCheckBoxChecked(false);
+  this->sutViewController->myCheckBoxChecked(false);
 }

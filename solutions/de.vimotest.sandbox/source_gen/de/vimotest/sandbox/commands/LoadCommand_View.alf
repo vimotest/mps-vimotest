@@ -4,7 +4,7 @@ namespace commands ;
 
 class LoadCommand_View {
   
-  public LoadView (  ) {     }
+  public loadView (  ) {     }
   
-  public LoadViewWithName (   in Name : String  ) {     }
+  public loadViewWithName (   in Name : String  ) {     }
 }

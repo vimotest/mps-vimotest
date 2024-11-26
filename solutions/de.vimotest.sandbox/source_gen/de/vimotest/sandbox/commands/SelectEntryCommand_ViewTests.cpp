@@ -37,7 +37,7 @@ namespace commands
   }
   void SelectEntryCommand_ViewTests::when_select_entry_C_in_MyComboBox( ) 
   {
-    this->sut->MyComboBoxEntrySelected(std::string("C"));
+    this->sut->myComboBoxEntrySelected(std::string("C"));
   }
   void SelectEntryCommand_ViewTests::then_MyComboBox_has_3_entries_and( ) 
   {

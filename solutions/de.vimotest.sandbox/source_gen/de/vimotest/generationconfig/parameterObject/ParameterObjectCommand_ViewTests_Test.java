@@ -35,11 +35,11 @@ public class ParameterObjectCommand_ViewTests_Test {
 
   public void when_LoadView() {
     ParameterObjectCommand_View.LoadViewParams loadViewParameters = new ParameterObjectCommand_View.LoadViewParams("A", true, 42);
-    this.sut.LoadView(loadViewParameters);
+    this.sut.loadView(loadViewParameters);
   }
   public void when_uncheck_MyCheckBox() {
     ParameterObjectCommand_View.CheckParams checkedParameters = new ParameterObjectCommand_View.CheckParams(false);
-    this.sut.MyCheckBoxChecked(checkedParameters);
+    this.sut.myCheckBoxChecked(checkedParameters);
   }
 
 

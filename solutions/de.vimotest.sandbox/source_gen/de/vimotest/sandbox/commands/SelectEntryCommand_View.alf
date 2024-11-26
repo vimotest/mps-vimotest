@@ -16,5 +16,5 @@ class SelectEntryCommand_View {
   return this.MyComboBoxSelectedEntry;
  }
   
-  public MyComboBoxEntrySelected (   in entryName : String  ) {     }
+  public myComboBoxEntrySelected (   in entryName : String  ) {     }
 }

@@ -111,35 +111,35 @@ namespace commands
   {
     return this->isMyStringHandleMultiSelectRowListViewUpdatingRowsFlag;
   }
-  void SelectRowCommand_View::MyListViewRowSelected(int rowIndex ) 
+  void SelectRowCommand_View::myListViewRowSelected(int rowIndex ) 
   {
     
   }
-  void SelectRowCommand_View::MyStringRowHandleListViewRowSelected(std::string rowHandle ) 
+  void SelectRowCommand_View::myStringRowHandleListViewRowSelected(std::string rowHandle ) 
   {
     
   }
-  void SelectRowCommand_View::MyTableViewRowSelected(int rowIndex ) 
+  void SelectRowCommand_View::myTableViewRowSelected(int rowIndex ) 
   {
     
   }
-  void SelectRowCommand_View::MyStringRowHandleTableViewRowSelected(std::string rowHandle ) 
+  void SelectRowCommand_View::myStringRowHandleTableViewRowSelected(std::string rowHandle ) 
   {
     
   }
-  void SelectRowCommand_View::MyTreeViewRowSelected(int rowIndex ) 
+  void SelectRowCommand_View::myTreeViewRowSelected(int rowIndex ) 
   {
     
   }
-  void SelectRowCommand_View::MyStringRowHandleTreeViewRowSelected(std::string rowHandle ) 
+  void SelectRowCommand_View::myStringRowHandleTreeViewRowSelected(std::string rowHandle ) 
   {
     
   }
-  void SelectRowCommand_View::MyIndexBasedMultiSelectRowListViewRowSelected(std::vector<int> rowIndices ) 
+  void SelectRowCommand_View::myIndexBasedMultiSelectRowListViewRowSelected(std::vector<int> rowIndices ) 
   {
     
   }
-  void SelectRowCommand_View::MyStringHandleMultiSelectRowListViewRowSelected(std::vector<std::string> rowHandles ) 
+  void SelectRowCommand_View::myStringHandleMultiSelectRowListViewRowSelected(std::vector<std::string> rowHandles ) 
   {
     
   }

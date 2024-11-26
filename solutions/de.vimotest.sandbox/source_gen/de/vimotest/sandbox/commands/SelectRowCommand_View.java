@@ -102,20 +102,20 @@ public class SelectRowCommand_View {
   public Boolean getIsMyStringHandleMultiSelectRowListViewUpdatingRowsFlag() {
     return this.isMyStringHandleMultiSelectRowListViewUpdatingRowsFlag;
   }
-  public void MyListViewRowSelected(Integer rowIndex) {
+  public void myListViewRowSelected(Integer rowIndex) {
   }
-  public void MyStringRowHandleListViewRowSelected(String rowHandle) {
+  public void myStringRowHandleListViewRowSelected(String rowHandle) {
   }
-  public void MyTableViewRowSelected(Integer rowIndex) {
+  public void myTableViewRowSelected(Integer rowIndex) {
   }
-  public void MyStringRowHandleTableViewRowSelected(String rowHandle) {
+  public void myStringRowHandleTableViewRowSelected(String rowHandle) {
   }
-  public void MyTreeViewRowSelected(Integer rowIndex) {
+  public void myTreeViewRowSelected(Integer rowIndex) {
   }
-  public void MyStringRowHandleTreeViewRowSelected(String rowHandle) {
+  public void myStringRowHandleTreeViewRowSelected(String rowHandle) {
   }
-  public void MyIndexBasedMultiSelectRowListViewRowSelected(List<Integer> rowIndices) {
+  public void myIndexBasedMultiSelectRowListViewRowSelected(List<Integer> rowIndices) {
   }
-  public void MyStringHandleMultiSelectRowListViewRowSelected(List<String> rowHandles) {
+  public void myStringHandleMultiSelectRowListViewRowSelected(List<String> rowHandles) {
   }
 }

@@ -28,7 +28,7 @@ class NameBinding_View {
   return this.updatingFlag;
  }
   
-  public LoadView (  ) {     }
+  public loadView (  ) {     }
   
   public OkClicked (  ) {     }
 }

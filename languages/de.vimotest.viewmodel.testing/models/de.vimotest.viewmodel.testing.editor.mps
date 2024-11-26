@@ -2576,6 +2576,9 @@
       </node>
       <node concept="2iRfu4" id="55YtzNami8M" role="2iSdaV" />
     </node>
+    <node concept="PMmxH" id="2gGjxPLEAeO" role="6VMZX">
+      <ref role="PMmxG" node="2gGjxPLEAeM" resolve="WidgetFeatureCheckValue_Inspector" />
+    </node>
   </node>
   <node concept="PKFIW" id="55YtzNami8N">
     <property role="TrG5h" value="WidgetFeatureCheckValue_expectationCell_EC" />
@@ -5983,6 +5986,23 @@
       <node concept="3F0A7n" id="6RKU0sdzqqD" role="3EZMnx">
         <ref role="1NtTu8" to="53m0:6RKU0sdiKfw" resolve="generationMode" />
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="2gGjxPLEAeM">
+    <property role="TrG5h" value="WidgetFeatureCheckValue_Inspector_EC" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1XX52x" to="53m0:5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="3F0ifn" id="2gGjxPLEAeN" role="2wV5jI" />
+  </node>
+  <node concept="PKFIW" id="2gGjxPLEAeP">
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <property role="TrG5h" value="ToolTipCheckValue_Inspector_EC" />
+    <ref role="1XX52x" to="53m0:6RKU0s1p1ak" resolve="ToolTipCheckValue" />
+    <node concept="PMmxH" id="2gGjxPLEN24" role="2wV5jI">
+      <ref role="PMmxG" node="55YtzNami8N" resolve="WidgetFeatureCheckValue_expectationCell_EC" />
+    </node>
+    <node concept="1PE4EZ" id="2gGjxPLEMLK" role="1PM95z">
+      <ref role="1PE7su" node="2gGjxPLEAeM" resolve="WidgetFeatureCheckValue_Inspector" />
     </node>
   </node>
 </model>

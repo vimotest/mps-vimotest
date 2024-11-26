@@ -40,15 +40,15 @@ class RowBasedCommand_View {
   return this.isMyTreeViewUpdatingRowsFlag;
  }
   
-  public LoadView (  ) {     }
+  public loadView (  ) {     }
   
-  public CheckboxesChecked (   in rowIndex : Integer ,   in isChecked : Boolean  ) {     }
+  public checkboxesChecked (   in rowIndex : Integer ,   in isChecked : Boolean  ) {     }
   
-  public FreeTextComboBoxesEntrySelected (   in rowIndex : Integer ,   in entryName : String  ) {     }
+  public freeTextComboBoxesEntrySelected (   in rowIndex : Integer ,   in entryName : String  ) {     }
   
-  public EntryComboBoxesEntrySelected (   in rowIndex : Integer ,   in entryName : String  ) {     }
+  public entryComboBoxesEntrySelected (   in rowIndex : Integer ,   in entryName : String  ) {     }
   
-  public TextBoxesTextFilled (   in rowIndex : Integer ,   in text : String  ) {     }
+  public textBoxesTextFilled (   in rowIndex : Integer ,   in text : String  ) {     }
   
-  public ButtonsClicked (   in rowIndex : Integer  ) {     }
+  public buttonsClicked (   in rowIndex : Integer  ) {     }
 }

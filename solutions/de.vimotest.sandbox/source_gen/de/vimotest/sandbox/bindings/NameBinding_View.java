@@ -22,7 +22,7 @@ public class NameBinding_View {
   public Boolean getUpdatingFlag() {
     return this.updatingFlag;
   }
-  public void LoadView() {
+  public void loadView() {
   }
   public void OkClicked() {
   }

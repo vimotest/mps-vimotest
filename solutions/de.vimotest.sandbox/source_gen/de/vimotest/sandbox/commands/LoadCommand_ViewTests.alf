@@ -38,11 +38,11 @@ class LoadCommand_ViewTests {
 
   
   public when_LoadView (  ) {
-  this.sut.LoadView (  );
+  this.sut.loadView (  );
  }
   
   public when_LoadViewWithName (  ) {
-  this.sut.LoadViewWithName ( "Name" );
+  this.sut.loadViewWithName ( "Name" );
  }
   
   // Then Helper Definitions

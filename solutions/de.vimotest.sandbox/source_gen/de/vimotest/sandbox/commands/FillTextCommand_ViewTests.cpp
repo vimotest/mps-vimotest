@@ -39,11 +39,11 @@ namespace commands
   }
   void FillTextCommand_ViewTests::when_fill_Changed_in_MyTextBox( ) 
   {
-    this->sut->MyTextBoxTextFilled(std::string("Changed"));
+    this->sut->myTextBoxTextFilled(std::string("Changed"));
   }
   void FillTextCommand_ViewTests::when_fill_Changed_in_MyFreeTextComboBox( ) 
   {
-    this->sut->MyFreeTextComboBoxTextFilled(std::string("Changed"));
+    this->sut->myFreeTextComboBoxTextFilled(std::string("Changed"));
   }
 }
 

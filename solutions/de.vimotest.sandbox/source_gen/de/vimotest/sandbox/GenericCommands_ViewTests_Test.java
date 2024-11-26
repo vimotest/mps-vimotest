@@ -33,7 +33,7 @@ public class GenericCommands_ViewTests_Test {
 
 
   public void when_MyCommand() {
-    this.sut.MyCommand(false, Arrays.asList("A", "B"));
+    this.sut.myCommand(false, Arrays.asList("A", "B"));
   }
 
 

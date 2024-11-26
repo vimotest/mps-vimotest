@@ -6,6 +6,6 @@
 class MyViewController
 {
   public:
-  virtual void LoadView() ;
-  virtual void MyCheckBoxChecked(bool isChecked) ;
+  virtual void loadView() ;
+  virtual void myCheckBoxChecked(bool isChecked) ;
 };

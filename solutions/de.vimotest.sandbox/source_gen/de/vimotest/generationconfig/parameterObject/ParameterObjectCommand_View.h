@@ -13,12 +13,12 @@ class ParameterObjectCommand_View
     bool Value2;
     int Value3;
   };
-  virtual void LoadView(LoadViewParams parameters) ;
+  virtual void loadView(LoadViewParams parameters) ;
   struct CheckParams
   {
     bool isChecked;
   };
-  virtual void MyCheckBoxChecked(CheckParams parameters) ;
+  virtual void myCheckBoxChecked(CheckParams parameters) ;
   private:
   bool isMyCheckBoxChecked;
 };

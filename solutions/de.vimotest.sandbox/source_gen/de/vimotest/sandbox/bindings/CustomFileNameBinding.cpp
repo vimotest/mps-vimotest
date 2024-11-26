@@ -15,7 +15,7 @@ namespace bindings
   {
     return this->isMyTableViewUpdatingRowsFlag;
   }
-  void ViMoTestFileNameBinding::LoadView( ) 
+  void ViMoTestFileNameBinding::loadView( ) 
   {
     
   }

@@ -80,6 +80,9 @@
       <concept id="9006611305737327152" name="de.vimotest.viewmodel.testing.structure.ContextReference" flags="ng" index="8w7HN">
         <reference id="9006611305737327954" name="ref" index="8w7Kh" />
       </concept>
+      <concept id="9006611305760146617" name="de.vimotest.viewmodel.testing.structure.RadioButtonCheck" flags="ng" index="992RU">
+        <child id="9006611305760146618" name="checks" index="992RT" />
+      </concept>
       <concept id="5447508759369797102" name="de.vimotest.viewmodel.testing.structure.WidgetTableRowsCheckValue" flags="ng" index="2ayrQO">
         <child id="5447508759369822399" name="rows" index="2ay43_" />
         <child id="7922086861434398932" name="columnCheckInfos" index="1EpG3j" />
@@ -271,6 +274,17 @@
       </concept>
       <concept id="3426927311333626895" name="de.vimotest.viewmodel.structure.ClosedImageSet" flags="ng" index="28FJ0O">
         <child id="3426927311333626898" name="imageRefs" index="28FJ0D" />
+      </concept>
+      <concept id="9006611305760146533" name="de.vimotest.viewmodel.structure.RadioButtonChoicesFeature" flags="ng" index="992OA">
+        <property id="9006611305760197211" name="defaultSelectedChoice" index="99Qco" />
+        <child id="9006611305760197210" name="defaultEntries" index="99Qcp" />
+      </concept>
+      <concept id="9006611305760146542" name="de.vimotest.viewmodel.structure.RadioButtonWidget" flags="ng" index="992OH">
+        <child id="9006611305760146543" name="radioButtonChoicesFeature" index="992OG" />
+        <child id="9006611305760146547" name="selectEntryCommand" index="992OK" />
+        <child id="9006611305760146546" name="enabledFeature" index="992OL" />
+        <child id="9006611305760146545" name="visibilityFeature" index="992OM" />
+        <child id="9006611305760146544" name="selectedEntryFeature" index="992ON" />
       </concept>
       <concept id="3858551213656582824" name="de.vimotest.viewmodel.structure.ChoiceEntry" flags="ng" index="2gaR_a" />
       <concept id="3922717397912187187" name="de.vimotest.viewmodel.structure.ImageWidget" flags="ng" index="2mJbI3">
@@ -3142,6 +3156,22 @@
         <node concept="C4FCh" id="5imH8sU7TYx" role="7cNAf" />
         <node concept="3Vw88H" id="5imH8sU7TY$" role="2WQ0re" />
       </node>
+      <node concept="992OH" id="7NXUkdSh__V" role="103ZUC">
+        <property role="TrG5h" value="MyRadioButton" />
+        <node concept="992OA" id="7NXUkdSh__X" role="992OG">
+          <property role="99Qco" value="A" />
+          <node concept="2gaR_a" id="7NXUkdSh__Z" role="99Qcp">
+            <property role="TrG5h" value="A" />
+          </node>
+          <node concept="2gaR_a" id="7NXUkdSh_A7" role="99Qcp">
+            <property role="TrG5h" value="B" />
+          </node>
+        </node>
+        <node concept="7cNxT" id="7NXUkdSh_A1" role="992ON" />
+        <node concept="C4FCg" id="7NXUkdSh_A3" role="992OM" />
+        <node concept="C4FCh" id="7NXUkdSh_A5" role="992OL" />
+        <node concept="3Vw88H" id="7NXUkdSh_A8" role="992OK" />
+      </node>
     </node>
   </node>
   <node concept="30n1Qd" id="5imH8sU7U2Q">
@@ -3174,6 +3204,17 @@
               </node>
               <node concept="7cN$h" id="58LMrr8jMBz" role="7cNBo" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="7NXUkdSh_A9" role="30n1Qb">
+      <property role="TrG5h" value="Select Entry RadioButton Call" />
+      <node concept="1s$VFG" id="7NXUkdSh_Aa" role="1s$QAY">
+        <node concept="DUd5q" id="7NXUkdSh_Ab" role="1s$QAM">
+          <node concept="3eaLtv" id="7NXUkdSh_Am" role="DUiS9">
+            <property role="2qt_KD" value="B" />
+            <ref role="3ucQsQ" node="7NXUkdSh__V" resolve="MyRadioButton" />
           </node>
         </node>
       </node>
@@ -4427,6 +4468,55 @@
         </node>
       </node>
       <node concept="1s$VFG" id="7NXUkdPqjuU" role="1s$QAY" />
+    </node>
+  </node>
+  <node concept="103ZX$" id="7NXUkdQpV_b">
+    <property role="3GE5qa" value="widgetassertions" />
+    <property role="TrG5h" value="RadioButton_View" />
+    <node concept="103ZXx" id="7NXUkdQpV_c" role="103ZXC" />
+    <node concept="103ZXB" id="7NXUkdQpV_e" role="103ZXF">
+      <node concept="992OH" id="7NXUkdQpVLK" role="103ZUC">
+        <property role="TrG5h" value="MyChoices" />
+        <node concept="992OA" id="7NXUkdQpVLL" role="992OG">
+          <property role="99Qco" value="OptionB" />
+          <node concept="2gaR_a" id="7NXUkdSh__n" role="99Qcp">
+            <property role="TrG5h" value="OptionA" />
+          </node>
+          <node concept="2gaR_a" id="7NXUkdSh__o" role="99Qcp">
+            <property role="TrG5h" value="OptionB" />
+          </node>
+          <node concept="2gaR_a" id="7NXUkdSh__p" role="99Qcp">
+            <property role="TrG5h" value="OptionC" />
+          </node>
+        </node>
+        <node concept="7cNxT" id="7NXUkdQpVLN" role="992ON" />
+        <node concept="C4FCg" id="7NXUkdQpVLO" role="992OM">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCh" id="7NXUkdQpVLP" role="992OL">
+          <property role="2VM7R0" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="30n1Qd" id="7NXUkdQR37$">
+    <property role="3GE5qa" value="widgetassertions" />
+    <property role="TrG5h" value="RadioButton_ViewTests" />
+    <ref role="30n1PB" node="7NXUkdQpV_b" resolve="RadioButton_View" />
+    <node concept="3LKzX3" id="7NXUkdQR3k6" role="30n1Qb">
+      <property role="TrG5h" value="Select Option" />
+      <node concept="1s$VFG" id="7NXUkdQR3k9" role="1s$QAY">
+        <node concept="DUd2R" id="7NXUkdQR3kc" role="1s$QAX">
+          <node concept="30nzp_" id="7NXUkdR4k5N" role="DUiSb">
+            <ref role="30nzpS" node="7NXUkdQpVLK" resolve="MyChoices" />
+            <node concept="992RU" id="7NXUkdR4k5O" role="30nDbQ">
+              <node concept="7cN$h" id="7NXUkdR4k5P" role="992RT">
+                <ref role="1B0EOZ" node="7NXUkdSh__p" resolve="OptionC" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

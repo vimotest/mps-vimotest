@@ -1,0 +1,41 @@
+namespace widgetassertions ;
+
+private import Testing ;
+
+class RadioButton_ViewTests {
+  
+  private sut : RadioButton_View  ;
+  
+  private contextProvider : RadioButton_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new RadioButton_ViewContextProvider (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public Select_Option_given_when_then_MyChoices_selected_OptionC_ (  ) {
+  this.BuildSut (  );
+   this.then_MyChoices_selected_OptionC_ (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+  
+  public then_MyChoices_selected_OptionC_ (  ) {
+  AssertEqual ( "OptionC", this.sut.getMyChoicesSelectedEntry (  ) );
+ }
+}

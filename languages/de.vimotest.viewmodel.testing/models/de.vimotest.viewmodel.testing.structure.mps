@@ -260,6 +260,9 @@
     <node concept="PrWs8" id="bZSVZd6xeg" role="PzmwI">
       <ref role="PrY4T" node="24MyZrrRA6Y" resolve="ITableViewCheckValue" />
     </node>
+    <node concept="PrWs8" id="7NXUkdQ8Z$l" role="PzmwI">
+      <ref role="PrY4T" node="7NXUkdPQsiz" resolve="IRadioButtonCheckValue" />
+    </node>
     <node concept="PrWs8" id="44HS8_6jW4K" role="PzmwI">
       <ref role="PrY4T" node="44HS8_67H$U" resolve="IComboBoxCheckValue" />
     </node>
@@ -303,6 +306,9 @@
     </node>
     <node concept="PrWs8" id="bZSVZd7iC1" role="PzmwI">
       <ref role="PrY4T" node="K_fAvR3LDG" resolve="ITreeViewCheckValue" />
+    </node>
+    <node concept="PrWs8" id="7NXUkdPQsH3" role="PzmwI">
+      <ref role="PrY4T" node="7NXUkdPQsiz" resolve="IRadioButtonCheckValue" />
     </node>
     <node concept="PrWs8" id="44HS8_6jYIs" role="PzmwI">
       <ref role="PrY4T" node="44HS8_67H$U" resolve="IComboBoxCheckValue" />
@@ -825,6 +831,9 @@
     <node concept="PrWs8" id="44HS8_67HAn" role="PzmwI">
       <ref role="PrY4T" node="44HS8_67H$U" resolve="IComboBoxCheckValue" />
     </node>
+    <node concept="PrWs8" id="7NXUkdRsp_B" role="PzmwI">
+      <ref role="PrY4T" to="at53:7NXUkdRspaV" resolve="IProvideChoiceEntries" />
+    </node>
     <node concept="1TJgyj" id="5ZbqeTIbciF" role="1TKVEi">
       <property role="IQ2ns" value="6902726227135349931" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -842,10 +851,21 @@
     <node concept="PrWs8" id="44HS8_67HAp" role="PzmwI">
       <ref role="PrY4T" node="44HS8_67H$U" resolve="IComboBoxCheckValue" />
     </node>
+    <node concept="PrWs8" id="7NXUkdPQsH2" role="PzmwI">
+      <ref role="PrY4T" node="7NXUkdPQsiz" resolve="IRadioButtonCheckValue" />
+    </node>
     <node concept="1TJgyj" id="7waZUcv25as" role="1TKVEi">
       <property role="IQ2ns" value="8650007110383850140" />
       <property role="20kJfa" value="selectedEntry" />
       <ref role="20lvS9" to="at53:3mckYa_DMEC" resolve="ChoiceEntry" />
+    </node>
+    <node concept="1TJgyi" id="7NXUkdRsktI" role="1TKVEl">
+      <property role="IQ2nx" value="9006611305786853230" />
+      <property role="TrG5h" value="selectedEntryName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="t5JxF" id="7NXUkdRsktJ" role="lGtFl">
+        <property role="t5JxN" value="This is a virtual property which is linked to selectedEntry.name" />
+      </node>
     </node>
   </node>
   <node concept="PlHQZ" id="2exRXkpP3eI">
@@ -1253,6 +1273,38 @@
     </node>
     <node concept="PrWs8" id="7NXUkdOLCbl" role="PzmwI">
       <ref role="PrY4T" node="2Yd1qrJOMZM" resolve="ITestScenarioContext" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7NXUkdPQsiz">
+    <property role="EcuMT" value="9006611305760146595" />
+    <property role="TrG5h" value="IRadioButtonCheckValue" />
+    <property role="3GE5qa" value="test.assert.widgets.choices" />
+    <node concept="PrWs8" id="7NXUkdPQsi$" role="PrDN$">
+      <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7NXUkdPQsiT">
+    <property role="EcuMT" value="9006611305760146617" />
+    <property role="TrG5h" value="RadioButtonCheck" />
+    <property role="34LRSv" value="check radio button" />
+    <property role="3GE5qa" value="test.assert.widgets.choices" />
+    <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
+    <node concept="1TJgyj" id="7NXUkdPQsiU" role="1TKVEi">
+      <property role="IQ2ns" value="9006611305760146618" />
+      <property role="20kJfa" value="checks" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="7NXUkdPQsiz" resolve="IRadioButtonCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7NXUkdPQsjT">
+    <property role="EcuMT" value="9006611305760146681" />
+    <property role="TrG5h" value="RadioButtonChoicesCheckValue" />
+    <property role="34LRSv" value="choices" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    <node concept="PrWs8" id="7NXUkdPQsjU" role="PzmwI">
+      <ref role="PrY4T" node="7NXUkdPQsiz" resolve="IRadioButtonCheckValue" />
     </node>
   </node>
 </model>

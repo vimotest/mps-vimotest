@@ -14,7 +14,19 @@ namespace commands
   {
     return this->MyComboBoxSelectedEntry;
   }
+  std::vector<std::string> SelectEntryCommand_View::getMyRadioButtonRadioButtonChoices( ) 
+  {
+    return this->MyRadioButtonRadioButtonChoices;
+  }
+  std::string SelectEntryCommand_View::getMyRadioButtonSelectedEntry( ) 
+  {
+    return this->MyRadioButtonSelectedEntry;
+  }
   void SelectEntryCommand_View::myComboBoxEntrySelected(std::string entryName ) 
+  {
+    
+  }
+  void SelectEntryCommand_View::myRadioButtonEntrySelected(std::string entryName ) 
   {
     
   }

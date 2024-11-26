@@ -6085,5 +6085,58 @@
       </node>
     </node>
   </node>
+  <node concept="22mcaB" id="7NXUkdPQsi_">
+    <property role="TrG5h" value="IRadioButtonCheckValue_SubstituteMenu" />
+    <property role="3GE5qa" value="test.assert.widgets.choices" />
+    <ref role="aqKnT" to="53m0:7NXUkdPQsiz" resolve="IRadioButtonCheckValue" />
+    <node concept="22hDWj" id="7NXUkdPQsiA" role="22hAXT" />
+    <node concept="2VfDsV" id="7NXUkdPQsiB" role="3ft7WO">
+      <node concept="1GpqWn" id="7NXUkdPQsiC" role="1Go12V">
+        <node concept="3clFbS" id="7NXUkdPQsiD" role="2VODD2">
+          <node concept="3clFbF" id="7NXUkdPQsiE" role="3cqZAp">
+            <node concept="3fqX7Q" id="7NXUkdPQsiF" role="3clFbG">
+              <node concept="2YIFZM" id="7NXUkdPQsiG" role="3fr31v">
+                <ref role="37wK5l" node="2_MKLxJcA3M" />
+                <ref role="1Pybhc" node="2_MKLxJcA2h" />
+                <node concept="1GpqW3" id="7NXUkdPQsiH" role="37wK5m" />
+                <node concept="3bvxqY" id="7NXUkdPQsiI" role="37wK5m" />
+                <node concept="1J7kdh" id="7NXUkdPQsiJ" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="7NXUkdPQsj5">
+    <property role="TrG5h" value="RadioButtonCheck_Inspector_Checks_EC" />
+    <property role="3GE5qa" value="test.assert.widgets.choices" />
+    <ref role="1XX52x" to="53m0:7NXUkdPQsiT" resolve="RadioButtonCheck" />
+    <node concept="1PE4EZ" id="7NXUkdPQsj7" role="1PM95z">
+      <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_Checks_EC" />
+    </node>
+    <node concept="3F2HdR" id="7NXUkdPQsj8" role="2wV5jI">
+      <ref role="1NtTu8" to="53m0:7NXUkdPQsiU" resolve="checks" />
+      <node concept="2iRkQZ" id="7NXUkdPQsj9" role="2czzBx" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="7NXUkdPQsjV">
+    <property role="TrG5h" value="RadioButtonChoicesCheckValue_expectationCell_EC" />
+    <property role="3GE5qa" value="test.assert._checkvalues" />
+    <ref role="1XX52x" to="53m0:7NXUkdPQsjT" resolve="RadioButtonChoicesCheckValue" />
+    <node concept="1PE4EZ" id="7NXUkdPQsjX" role="1PM95z">
+      <ref role="1PE7su" node="55YtzNami8N" resolve="WidgetFeatureCheckValue_expectationCell_EC" />
+    </node>
+    <node concept="3EZMnI" id="7NXUkdPQsjY" role="2wV5jI">
+      <node concept="3F0ifn" id="7NXUkdPQsjZ" role="3EZMnx">
+        <property role="3F0ifm" value="dynamically asserting radio button choices is not supported yet" />
+        <ref role="1k5W1q" node="55YtzNatuDs" />
+        <node concept="VechU" id="7NXUkdRrOkl" role="3F10Kt">
+          <property role="Vb096" value="fLwANPn/red" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="7NXUkdPQsk1" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

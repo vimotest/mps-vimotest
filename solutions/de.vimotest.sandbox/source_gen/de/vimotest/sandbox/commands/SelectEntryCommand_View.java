@@ -14,6 +14,16 @@ public class SelectEntryCommand_View {
   public String getMyComboBoxSelectedEntry() {
     return this.MyComboBoxSelectedEntry;
   }
+  private List<String> MyRadioButtonRadioButtonChoices = new LinkedList<>();
+  public List<String> getMyRadioButtonRadioButtonChoices() {
+    return this.MyRadioButtonRadioButtonChoices;
+  }
+  private String MyRadioButtonSelectedEntry;
+  public String getMyRadioButtonSelectedEntry() {
+    return this.MyRadioButtonSelectedEntry;
+  }
   public void myComboBoxEntrySelected(String entryName) {
+  }
+  public void myRadioButtonEntrySelected(String entryName) {
   }
 }

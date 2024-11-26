@@ -369,14 +369,16 @@
     <property role="3yYw5D" value="fLwANPs/magenta" />
   </node>
   <node concept="2WVz3F" id="7NXUkdPNASe">
-    <property role="103t_X" value="widgets.standard" />
+    <property role="103t_X" value="widgets.choices" />
     <property role="3GE5qa" value="widgets" />
     <property role="TrG5h" value="RadioButton" />
     <property role="2SiFfI" value="radio button" />
     <node concept="2WVz4l" id="7NXUkdPNB4K" role="2WV$Zc">
+      <property role="3dRBvX" value="true" />
       <ref role="2WVz4k" node="7NXUkdPNB4M" resolve="RadioButtonChoices" />
     </node>
     <node concept="2WVz4l" id="7NXUkdPNB4L" role="2WV$Zc">
+      <property role="3dRBvX" value="true" />
       <ref role="2WVz4k" node="44HS8_67EZV" resolve="SelectedEntry" />
     </node>
     <node concept="2WVz4l" id="7NXUkdPNBhl" role="2WV$Zc">

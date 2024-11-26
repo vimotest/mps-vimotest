@@ -18,6 +18,11 @@ public class SelectEntryCommand_ViewTests_Test {
     this.when_select_entry_C_in_MyComboBox();
     this.then_MyComboBox_has_3_entries_and();
   }
+  @Test
+  public void test_Select_Entry_RadioButton_Call_given_when_select_entry_B_in_MyRadioButton_then_() throws Exception {
+    this.BuildSut();
+    this.when_select_entry_B_in_MyRadioButton();
+  }
   @BeforeEach
   public void setUp() {
     this.contextProvider = new SelectEntryCommand_ViewContextProvider();
@@ -36,6 +41,9 @@ public class SelectEntryCommand_ViewTests_Test {
 
   public void when_select_entry_C_in_MyComboBox() {
     this.sut.myComboBoxEntrySelected("C");
+  }
+  public void when_select_entry_B_in_MyRadioButton() {
+    this.sut.myRadioButtonEntrySelected("B");
   }
 
 

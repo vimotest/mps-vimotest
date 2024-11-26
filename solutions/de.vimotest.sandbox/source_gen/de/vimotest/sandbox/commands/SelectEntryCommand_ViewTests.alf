@@ -21,6 +21,11 @@ class SelectEntryCommand_ViewTests {
    this.then_MyComboBox_has_3_entries_and (  );
  }
   
+  public Select_Entry_RadioButton_Call_given_when_select_entry_B_in_MyRadioButton_then_ (  ) {
+  this.BuildSut (  );
+   this.when_select_entry_B_in_MyRadioButton (  );
+ }
+  
   
   protected BuildSut (  ) {
   this.sut = this.contextProvider.BuildSut (  );
@@ -35,6 +40,10 @@ class SelectEntryCommand_ViewTests {
   
   public when_select_entry_C_in_MyComboBox (  ) {
   this.sut.myComboBoxEntrySelected ( "C" );
+ }
+  
+  public when_select_entry_B_in_MyRadioButton (  ) {
+  this.sut.myRadioButtonEntrySelected ( "B" );
  }
   
   // Then Helper Definitions

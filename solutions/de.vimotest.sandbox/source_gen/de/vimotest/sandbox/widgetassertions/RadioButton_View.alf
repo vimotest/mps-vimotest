@@ -1,0 +1,30 @@
+namespace widgetassertions ;
+
+
+
+class RadioButton_View {
+  
+  private MyChoicesRadioButtonChoices : String [ * ]  ;
+  
+  public getMyChoicesRadioButtonChoices (  ) : String [ * ]  {
+  return this.MyChoicesRadioButtonChoices;
+ }
+  
+  private MyChoicesSelectedEntry : String  ;
+  
+  public getMyChoicesSelectedEntry (  ) : String  {
+  return this.MyChoicesSelectedEntry;
+ }
+  
+  private isMyChoicesVisibility : Boolean  ;
+  
+  public getIsMyChoicesVisibility (  ) : Boolean  {
+  return this.isMyChoicesVisibility;
+ }
+  
+  private isMyChoicesEnabled : Boolean  ;
+  
+  public getIsMyChoicesEnabled (  ) : Boolean  {
+  return this.isMyChoicesEnabled;
+ }
+}

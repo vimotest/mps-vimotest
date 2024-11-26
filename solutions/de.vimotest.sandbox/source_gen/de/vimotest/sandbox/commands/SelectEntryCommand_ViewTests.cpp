@@ -16,6 +16,7 @@ namespace commands
     std::shared_ptr<SelectEntryCommand_ViewContextProvider> contextProvider;
     virtual void BuildSut() ;
     virtual void when_select_entry_C_in_MyComboBox() ;
+    virtual void when_select_entry_B_in_MyRadioButton() ;
     virtual void then_MyComboBox_has_3_entries_and() ;
     protected:
     void SetUp() override ;
@@ -31,6 +32,11 @@ namespace commands
     this->when_select_entry_C_in_MyComboBox();
     this->then_MyComboBox_has_3_entries_and();
   }
+  TEST_F(SelectEntryCommand_ViewTests,  Select_Entry_RadioButton_Call_given_when_select_entry_B_in_MyRadioButton_then_) 
+  {
+    this->BuildSut();
+    this->when_select_entry_B_in_MyRadioButton();
+  }
   void SelectEntryCommand_ViewTests::BuildSut( ) 
   {
     this->sut = this->contextProvider->BuildSut();
@@ -38,6 +44,10 @@ namespace commands
   void SelectEntryCommand_ViewTests::when_select_entry_C_in_MyComboBox( ) 
   {
     this->sut->myComboBoxEntrySelected(std::string("C"));
+  }
+  void SelectEntryCommand_ViewTests::when_select_entry_B_in_MyRadioButton( ) 
+  {
+    this->sut->myRadioButtonEntrySelected(std::string("B"));
   }
   void SelectEntryCommand_ViewTests::then_MyComboBox_has_3_entries_and( ) 
   {

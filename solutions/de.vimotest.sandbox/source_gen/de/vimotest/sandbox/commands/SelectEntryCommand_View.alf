@@ -16,5 +16,19 @@ class SelectEntryCommand_View {
   return this.MyComboBoxSelectedEntry;
  }
   
+  private MyRadioButtonRadioButtonChoices : String [ * ]  ;
+  
+  public getMyRadioButtonRadioButtonChoices (  ) : String [ * ]  {
+  return this.MyRadioButtonRadioButtonChoices;
+ }
+  
+  private MyRadioButtonSelectedEntry : String  ;
+  
+  public getMyRadioButtonSelectedEntry (  ) : String  {
+  return this.MyRadioButtonSelectedEntry;
+ }
+  
   public myComboBoxEntrySelected (   in entryName : String  ) {     }
+  
+  public myRadioButtonEntrySelected (   in entryName : String  ) {     }
 }

@@ -14,25 +14,13 @@ namespace commands
   {
     return this->MyListViewWidgetListRows;
   }
-  bool RowBasedCommand_View::getIsMyListViewUpdatingRowsFlag( ) 
-  {
-    return this->isMyListViewUpdatingRowsFlag;
-  }
   std::vector<std::shared_ptr<RowBasedCommand_ViewMyTableViewRow>> RowBasedCommand_View::getMyTableViewWidgetTableRows( ) 
   {
     return this->MyTableViewWidgetTableRows;
   }
-  bool RowBasedCommand_View::getIsMyTableViewUpdatingRowsFlag( ) 
-  {
-    return this->isMyTableViewUpdatingRowsFlag;
-  }
   std::vector<std::shared_ptr<RowBasedCommand_ViewMyTreeViewRow>> RowBasedCommand_View::getMyTreeViewWidgetTreeRows( ) 
   {
     return this->MyTreeViewWidgetTreeRows;
-  }
-  bool RowBasedCommand_View::getIsMyTreeViewUpdatingRowsFlag( ) 
-  {
-    return this->isMyTreeViewUpdatingRowsFlag;
   }
   void RowBasedCommand_View::loadView( ) 
   {

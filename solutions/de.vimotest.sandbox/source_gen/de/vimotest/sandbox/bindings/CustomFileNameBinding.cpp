@@ -11,10 +11,6 @@ namespace bindings
   {
     return this->MyTableViewWidgetTableRows;
   }
-  bool ViMoTestFileNameBinding::getIsMyTableViewUpdatingRowsFlag( ) 
-  {
-    return this->isMyTableViewUpdatingRowsFlag;
-  }
   void ViMoTestFileNameBinding::loadView( ) 
   {
     

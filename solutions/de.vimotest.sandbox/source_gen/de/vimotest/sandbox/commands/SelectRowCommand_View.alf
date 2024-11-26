@@ -16,12 +16,6 @@ class SelectRowCommand_View {
   return this.MyListViewSelectedRow;
  }
   
-  private isMyListViewUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyListViewUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyListViewUpdatingRowsFlag;
- }
-  
   private MyStringRowHandleListViewWidgetListRows : SelectRowCommand_ViewMyStringRowHandleListViewRow [ * ]  ;
   
   public getMyStringRowHandleListViewWidgetListRows (  ) : SelectRowCommand_ViewMyStringRowHandleListViewRow [ * ]  {
@@ -32,12 +26,6 @@ class SelectRowCommand_View {
   
   public getMyStringRowHandleListViewSelectedRow (  ) : String  {
   return this.MyStringRowHandleListViewSelectedRow;
- }
-  
-  private isMyStringRowHandleListViewUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyStringRowHandleListViewUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyStringRowHandleListViewUpdatingRowsFlag;
  }
   
   private MyTableViewWidgetTableRows : SelectRowCommand_ViewMyTableViewRow [ * ]  ;
@@ -52,12 +40,6 @@ class SelectRowCommand_View {
   return this.MyTableViewSelectedRow;
  }
   
-  private isMyTableViewUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyTableViewUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyTableViewUpdatingRowsFlag;
- }
-  
   private MyStringRowHandleTableViewWidgetTableRows : SelectRowCommand_ViewMyStringRowHandleTableViewRow [ * ]  ;
   
   public getMyStringRowHandleTableViewWidgetTableRows (  ) : SelectRowCommand_ViewMyStringRowHandleTableViewRow [ * ]  {
@@ -68,12 +50,6 @@ class SelectRowCommand_View {
   
   public getMyStringRowHandleTableViewSelectedRow (  ) : String  {
   return this.MyStringRowHandleTableViewSelectedRow;
- }
-  
-  private isMyStringRowHandleTableViewUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyStringRowHandleTableViewUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyStringRowHandleTableViewUpdatingRowsFlag;
  }
   
   private MyTreeViewWidgetTreeRows : SelectRowCommand_ViewMyTreeViewRow [ * ]  ;
@@ -88,12 +64,6 @@ class SelectRowCommand_View {
   return this.MyTreeViewSelectedRow;
  }
   
-  private isMyTreeViewUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyTreeViewUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyTreeViewUpdatingRowsFlag;
- }
-  
   private MyStringRowHandleTreeViewWidgetTreeRows : SelectRowCommand_ViewMyStringRowHandleTreeViewRow [ * ]  ;
   
   public getMyStringRowHandleTreeViewWidgetTreeRows (  ) : SelectRowCommand_ViewMyStringRowHandleTreeViewRow [ * ]  {
@@ -104,12 +74,6 @@ class SelectRowCommand_View {
   
   public getMyStringRowHandleTreeViewSelectedRow (  ) : String  {
   return this.MyStringRowHandleTreeViewSelectedRow;
- }
-  
-  private isMyStringRowHandleTreeViewUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyStringRowHandleTreeViewUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyStringRowHandleTreeViewUpdatingRowsFlag;
  }
   
   private MyIndexBasedMultiSelectRowListViewWidgetListRows : SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewRow [ * ]  ;
@@ -124,12 +88,6 @@ class SelectRowCommand_View {
   return this.MyIndexBasedMultiSelectRowListViewSelectedRows;
  }
   
-  private isMyIndexBasedMultiSelectRowListViewUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyIndexBasedMultiSelectRowListViewUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyIndexBasedMultiSelectRowListViewUpdatingRowsFlag;
- }
-  
   private MyStringHandleMultiSelectRowListViewWidgetListRows : SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow [ * ]  ;
   
   public getMyStringHandleMultiSelectRowListViewWidgetListRows (  ) : SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow [ * ]  {
@@ -140,12 +98,6 @@ class SelectRowCommand_View {
   
   public getMyStringHandleMultiSelectRowListViewSelectedRows (  ) : String [ * ]  {
   return this.MyStringHandleMultiSelectRowListViewSelectedRows;
- }
-  
-  private isMyStringHandleMultiSelectRowListViewUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyStringHandleMultiSelectRowListViewUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyStringHandleMultiSelectRowListViewUpdatingRowsFlag;
  }
   
   public myListViewRowSelected (   in rowIndex : Integer  ) {     }

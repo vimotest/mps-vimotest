@@ -30,8 +30,3 @@ std::vector<std::shared_ptr<CapitalizedGetterNames_ViewListViewRow>> Capitalized
 {
   return this->myRows;
 }
-
-bool CapitalizedGetterNames_View::GetIsListViewUpdatingRowsFlag( ) 
-{
-  return this->isListViewUpdatingRowsFlag;
-}

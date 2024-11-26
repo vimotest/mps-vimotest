@@ -10,34 +10,16 @@ class RowBasedCommand_View {
   return this.MyListViewWidgetListRows;
  }
   
-  private isMyListViewUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyListViewUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyListViewUpdatingRowsFlag;
- }
-  
   private MyTableViewWidgetTableRows : RowBasedCommand_ViewMyTableViewRow [ * ]  ;
   
   public getMyTableViewWidgetTableRows (  ) : RowBasedCommand_ViewMyTableViewRow [ * ]  {
   return this.MyTableViewWidgetTableRows;
  }
   
-  private isMyTableViewUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyTableViewUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyTableViewUpdatingRowsFlag;
- }
-  
   private MyTreeViewWidgetTreeRows : RowBasedCommand_ViewMyTreeViewRow [ * ]  ;
   
   public getMyTreeViewWidgetTreeRows (  ) : RowBasedCommand_ViewMyTreeViewRow [ * ]  {
   return this.MyTreeViewWidgetTreeRows;
- }
-  
-  private isMyTreeViewUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyTreeViewUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyTreeViewUpdatingRowsFlag;
  }
   
   public loadView (  ) {     }

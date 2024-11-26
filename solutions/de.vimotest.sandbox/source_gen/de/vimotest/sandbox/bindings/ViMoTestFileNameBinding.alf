@@ -10,11 +10,5 @@ class ViMoTestFileNameBinding {
   return this.MyTableViewWidgetTableRows;
  }
   
-  private isMyTableViewUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyTableViewUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyTableViewUpdatingRowsFlag;
- }
-  
   public loadView (  ) {     }
 }

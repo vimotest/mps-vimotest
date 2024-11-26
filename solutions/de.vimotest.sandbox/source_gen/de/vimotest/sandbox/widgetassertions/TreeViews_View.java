@@ -22,10 +22,6 @@ public class TreeViews_View {
   public List<TreeViews_ViewMyTreeViewRow> getMyTreeViewWidgetTreeRows() {
     return this.MyTreeViewWidgetTreeRows;
   }
-  private Boolean isMyTreeViewUpdatingRowsFlag;
-  public Boolean getIsMyTreeViewUpdatingRowsFlag() {
-    return this.isMyTreeViewUpdatingRowsFlag;
-  }
   private List<TreeViews_ViewMyStringRowHandlesRow> MyStringRowHandlesWidgetTreeRows = new LinkedList<>();
   public List<TreeViews_ViewMyStringRowHandlesRow> getMyStringRowHandlesWidgetTreeRows() {
     return this.MyStringRowHandlesWidgetTreeRows;
@@ -34,24 +30,12 @@ public class TreeViews_View {
   public String getMyStringRowHandlesSelectedRow() {
     return this.MyStringRowHandlesSelectedRow;
   }
-  private Boolean isMyStringRowHandlesUpdatingRowsFlag;
-  public Boolean getIsMyStringRowHandlesUpdatingRowsFlag() {
-    return this.isMyStringRowHandlesUpdatingRowsFlag;
-  }
   private List<TreeViews_ViewMyParentIndexRowHandlesRow> MyParentIndexRowHandlesWidgetTreeRows = new LinkedList<>();
   public List<TreeViews_ViewMyParentIndexRowHandlesRow> getMyParentIndexRowHandlesWidgetTreeRows() {
     return this.MyParentIndexRowHandlesWidgetTreeRows;
   }
-  private Boolean isMyParentIndexRowHandlesUpdatingRowsFlag;
-  public Boolean getIsMyParentIndexRowHandlesUpdatingRowsFlag() {
-    return this.isMyParentIndexRowHandlesUpdatingRowsFlag;
-  }
   private List<TreeViews_ViewMyParentStringRowHandlesRow> MyParentStringRowHandlesWidgetTreeRows = new LinkedList<>();
   public List<TreeViews_ViewMyParentStringRowHandlesRow> getMyParentStringRowHandlesWidgetTreeRows() {
     return this.MyParentStringRowHandlesWidgetTreeRows;
-  }
-  private Boolean isMyParentStringRowHandlesUpdatingRowsFlag;
-  public Boolean getIsMyParentStringRowHandlesUpdatingRowsFlag() {
-    return this.isMyParentStringRowHandlesUpdatingRowsFlag;
   }
 }

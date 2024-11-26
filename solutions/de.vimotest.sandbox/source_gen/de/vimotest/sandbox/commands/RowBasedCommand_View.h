@@ -14,11 +14,8 @@ namespace commands
   {
     public:
     virtual std::vector<std::shared_ptr<RowBasedCommand_ViewMyListViewRow>> getMyListViewWidgetListRows() ;
-    virtual bool getIsMyListViewUpdatingRowsFlag() ;
     virtual std::vector<std::shared_ptr<RowBasedCommand_ViewMyTableViewRow>> getMyTableViewWidgetTableRows() ;
-    virtual bool getIsMyTableViewUpdatingRowsFlag() ;
     virtual std::vector<std::shared_ptr<RowBasedCommand_ViewMyTreeViewRow>> getMyTreeViewWidgetTreeRows() ;
-    virtual bool getIsMyTreeViewUpdatingRowsFlag() ;
     virtual void loadView() ;
     virtual void checkboxesChecked(int rowIndex, bool isChecked) ;
     virtual void freeTextComboBoxesEntrySelected(int rowIndex, std::string entryName) ;
@@ -27,11 +24,8 @@ namespace commands
     virtual void buttonsClicked(int rowIndex) ;
     private:
     std::vector<std::shared_ptr<RowBasedCommand_ViewMyListViewRow>> MyListViewWidgetListRows;
-    bool isMyListViewUpdatingRowsFlag;
     std::vector<std::shared_ptr<RowBasedCommand_ViewMyTableViewRow>> MyTableViewWidgetTableRows;
-    bool isMyTableViewUpdatingRowsFlag;
     std::vector<std::shared_ptr<RowBasedCommand_ViewMyTreeViewRow>> MyTreeViewWidgetTreeRows;
-    bool isMyTreeViewUpdatingRowsFlag;
   };
 }
 

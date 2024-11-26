@@ -28,10 +28,6 @@ namespace widgetassertions
   {
     return this->MyListOfLabelSelectedRow;
   }
-  bool ListViews_View::getIsMyListOfLabelUpdatingRowsFlag( ) 
-  {
-    return this->isMyListOfLabelUpdatingRowsFlag;
-  }
   bool ListViews_View::getIsMyListOfImagesVisibility( ) 
   {
     return this->isMyListOfImagesVisibility;
@@ -47,10 +43,6 @@ namespace widgetassertions
   int ListViews_View::getMyListOfImagesSelectedRow( ) 
   {
     return this->MyListOfImagesSelectedRow;
-  }
-  bool ListViews_View::getIsMyListOfImagesUpdatingRowsFlag( ) 
-  {
-    return this->isMyListOfImagesUpdatingRowsFlag;
   }
   std::vector<std::shared_ptr<ListViews_ViewMyCheckboxesRow>> ListViews_View::getMyCheckboxesWidgetListRows( ) 
   {
@@ -68,10 +60,6 @@ namespace widgetassertions
   {
     return this->isMyCheckboxesEnabled;
   }
-  bool ListViews_View::getIsMyCheckboxesUpdatingRowsFlag( ) 
-  {
-    return this->isMyCheckboxesUpdatingRowsFlag;
-  }
   std::vector<std::shared_ptr<ListViews_ViewMyStringRowHandlesRow>> ListViews_View::getMyStringRowHandlesWidgetListRows( ) 
   {
     return this->MyStringRowHandlesWidgetListRows;
@@ -80,10 +68,6 @@ namespace widgetassertions
   {
     return this->MyStringRowHandlesSelectedRow;
   }
-  bool ListViews_View::getIsMyStringRowHandlesUpdatingRowsFlag( ) 
-  {
-    return this->isMyStringRowHandlesUpdatingRowsFlag;
-  }
   std::vector<std::shared_ptr<ListViews_ViewMyMultiRowSelectionListRow>> ListViews_View::getMyMultiRowSelectionListWidgetListRows( ) 
   {
     return this->MyMultiRowSelectionListWidgetListRows;
@@ -91,10 +75,6 @@ namespace widgetassertions
   std::vector<int> ListViews_View::getMyMultiRowSelectionListSelectedRows( ) 
   {
     return this->MyMultiRowSelectionListSelectedRows;
-  }
-  bool ListViews_View::getIsMyMultiRowSelectionListUpdatingRowsFlag( ) 
-  {
-    return this->isMyMultiRowSelectionListUpdatingRowsFlag;
   }
 }
 

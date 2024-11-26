@@ -14,10 +14,6 @@ public class SelectRowCommand_View {
   public Integer getMyListViewSelectedRow() {
     return this.MyListViewSelectedRow;
   }
-  private Boolean isMyListViewUpdatingRowsFlag;
-  public Boolean getIsMyListViewUpdatingRowsFlag() {
-    return this.isMyListViewUpdatingRowsFlag;
-  }
   private List<SelectRowCommand_ViewMyStringRowHandleListViewRow> MyStringRowHandleListViewWidgetListRows = new LinkedList<>();
   public List<SelectRowCommand_ViewMyStringRowHandleListViewRow> getMyStringRowHandleListViewWidgetListRows() {
     return this.MyStringRowHandleListViewWidgetListRows;
@@ -25,10 +21,6 @@ public class SelectRowCommand_View {
   private String MyStringRowHandleListViewSelectedRow;
   public String getMyStringRowHandleListViewSelectedRow() {
     return this.MyStringRowHandleListViewSelectedRow;
-  }
-  private Boolean isMyStringRowHandleListViewUpdatingRowsFlag;
-  public Boolean getIsMyStringRowHandleListViewUpdatingRowsFlag() {
-    return this.isMyStringRowHandleListViewUpdatingRowsFlag;
   }
   private List<SelectRowCommand_ViewMyTableViewRow> MyTableViewWidgetTableRows = new LinkedList<>();
   public List<SelectRowCommand_ViewMyTableViewRow> getMyTableViewWidgetTableRows() {
@@ -38,10 +30,6 @@ public class SelectRowCommand_View {
   public Integer getMyTableViewSelectedRow() {
     return this.MyTableViewSelectedRow;
   }
-  private Boolean isMyTableViewUpdatingRowsFlag;
-  public Boolean getIsMyTableViewUpdatingRowsFlag() {
-    return this.isMyTableViewUpdatingRowsFlag;
-  }
   private List<SelectRowCommand_ViewMyStringRowHandleTableViewRow> MyStringRowHandleTableViewWidgetTableRows = new LinkedList<>();
   public List<SelectRowCommand_ViewMyStringRowHandleTableViewRow> getMyStringRowHandleTableViewWidgetTableRows() {
     return this.MyStringRowHandleTableViewWidgetTableRows;
@@ -49,10 +37,6 @@ public class SelectRowCommand_View {
   private String MyStringRowHandleTableViewSelectedRow;
   public String getMyStringRowHandleTableViewSelectedRow() {
     return this.MyStringRowHandleTableViewSelectedRow;
-  }
-  private Boolean isMyStringRowHandleTableViewUpdatingRowsFlag;
-  public Boolean getIsMyStringRowHandleTableViewUpdatingRowsFlag() {
-    return this.isMyStringRowHandleTableViewUpdatingRowsFlag;
   }
   private List<SelectRowCommand_ViewMyTreeViewRow> MyTreeViewWidgetTreeRows = new LinkedList<>();
   public List<SelectRowCommand_ViewMyTreeViewRow> getMyTreeViewWidgetTreeRows() {
@@ -62,10 +46,6 @@ public class SelectRowCommand_View {
   public Integer getMyTreeViewSelectedRow() {
     return this.MyTreeViewSelectedRow;
   }
-  private Boolean isMyTreeViewUpdatingRowsFlag;
-  public Boolean getIsMyTreeViewUpdatingRowsFlag() {
-    return this.isMyTreeViewUpdatingRowsFlag;
-  }
   private List<SelectRowCommand_ViewMyStringRowHandleTreeViewRow> MyStringRowHandleTreeViewWidgetTreeRows = new LinkedList<>();
   public List<SelectRowCommand_ViewMyStringRowHandleTreeViewRow> getMyStringRowHandleTreeViewWidgetTreeRows() {
     return this.MyStringRowHandleTreeViewWidgetTreeRows;
@@ -73,10 +53,6 @@ public class SelectRowCommand_View {
   private String MyStringRowHandleTreeViewSelectedRow;
   public String getMyStringRowHandleTreeViewSelectedRow() {
     return this.MyStringRowHandleTreeViewSelectedRow;
-  }
-  private Boolean isMyStringRowHandleTreeViewUpdatingRowsFlag;
-  public Boolean getIsMyStringRowHandleTreeViewUpdatingRowsFlag() {
-    return this.isMyStringRowHandleTreeViewUpdatingRowsFlag;
   }
   private List<SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewRow> MyIndexBasedMultiSelectRowListViewWidgetListRows = new LinkedList<>();
   public List<SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewRow> getMyIndexBasedMultiSelectRowListViewWidgetListRows() {
@@ -86,10 +62,6 @@ public class SelectRowCommand_View {
   public List<Integer> getMyIndexBasedMultiSelectRowListViewSelectedRows() {
     return this.MyIndexBasedMultiSelectRowListViewSelectedRows;
   }
-  private Boolean isMyIndexBasedMultiSelectRowListViewUpdatingRowsFlag;
-  public Boolean getIsMyIndexBasedMultiSelectRowListViewUpdatingRowsFlag() {
-    return this.isMyIndexBasedMultiSelectRowListViewUpdatingRowsFlag;
-  }
   private List<SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow> MyStringHandleMultiSelectRowListViewWidgetListRows = new LinkedList<>();
   public List<SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow> getMyStringHandleMultiSelectRowListViewWidgetListRows() {
     return this.MyStringHandleMultiSelectRowListViewWidgetListRows;
@@ -97,10 +69,6 @@ public class SelectRowCommand_View {
   private List<String> MyStringHandleMultiSelectRowListViewSelectedRows = new LinkedList<>();
   public List<String> getMyStringHandleMultiSelectRowListViewSelectedRows() {
     return this.MyStringHandleMultiSelectRowListViewSelectedRows;
-  }
-  private Boolean isMyStringHandleMultiSelectRowListViewUpdatingRowsFlag;
-  public Boolean getIsMyStringHandleMultiSelectRowListViewUpdatingRowsFlag() {
-    return this.isMyStringHandleMultiSelectRowListViewUpdatingRowsFlag;
   }
   public void myListViewRowSelected(Integer rowIndex) {
   }

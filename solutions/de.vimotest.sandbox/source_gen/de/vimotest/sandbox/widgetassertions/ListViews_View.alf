@@ -28,12 +28,6 @@ class ListViews_View {
   return this.MyListOfLabelSelectedRow;
  }
   
-  private isMyListOfLabelUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyListOfLabelUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyListOfLabelUpdatingRowsFlag;
- }
-  
   private isMyListOfImagesVisibility : Boolean  ;
   
   public getIsMyListOfImagesVisibility (  ) : Boolean  {
@@ -56,12 +50,6 @@ class ListViews_View {
   
   public getMyListOfImagesSelectedRow (  ) : Integer  {
   return this.MyListOfImagesSelectedRow;
- }
-  
-  private isMyListOfImagesUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyListOfImagesUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyListOfImagesUpdatingRowsFlag;
  }
   
   private MyCheckboxesWidgetListRows : ListViews_ViewMyCheckboxesRow [ * ]  ;
@@ -88,12 +76,6 @@ class ListViews_View {
   return this.isMyCheckboxesEnabled;
  }
   
-  private isMyCheckboxesUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyCheckboxesUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyCheckboxesUpdatingRowsFlag;
- }
-  
   private MyStringRowHandlesWidgetListRows : ListViews_ViewMyStringRowHandlesRow [ * ]  ;
   
   public getMyStringRowHandlesWidgetListRows (  ) : ListViews_ViewMyStringRowHandlesRow [ * ]  {
@@ -106,12 +88,6 @@ class ListViews_View {
   return this.MyStringRowHandlesSelectedRow;
  }
   
-  private isMyStringRowHandlesUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyStringRowHandlesUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyStringRowHandlesUpdatingRowsFlag;
- }
-  
   private MyMultiRowSelectionListWidgetListRows : ListViews_ViewMyMultiRowSelectionListRow [ * ]  ;
   
   public getMyMultiRowSelectionListWidgetListRows (  ) : ListViews_ViewMyMultiRowSelectionListRow [ * ]  {
@@ -122,11 +98,5 @@ class ListViews_View {
   
   public getMyMultiRowSelectionListSelectedRows (  ) : Integer [ * ]  {
   return this.MyMultiRowSelectionListSelectedRows;
- }
-  
-  private isMyMultiRowSelectionListUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyMultiRowSelectionListUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyMultiRowSelectionListUpdatingRowsFlag;
  }
 }

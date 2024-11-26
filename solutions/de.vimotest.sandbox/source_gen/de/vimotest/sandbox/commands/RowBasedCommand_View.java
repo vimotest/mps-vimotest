@@ -10,25 +10,13 @@ public class RowBasedCommand_View {
   public List<RowBasedCommand_ViewMyListViewRow> getMyListViewWidgetListRows() {
     return this.MyListViewWidgetListRows;
   }
-  private Boolean isMyListViewUpdatingRowsFlag;
-  public Boolean getIsMyListViewUpdatingRowsFlag() {
-    return this.isMyListViewUpdatingRowsFlag;
-  }
   private List<RowBasedCommand_ViewMyTableViewRow> MyTableViewWidgetTableRows = new LinkedList<>();
   public List<RowBasedCommand_ViewMyTableViewRow> getMyTableViewWidgetTableRows() {
     return this.MyTableViewWidgetTableRows;
   }
-  private Boolean isMyTableViewUpdatingRowsFlag;
-  public Boolean getIsMyTableViewUpdatingRowsFlag() {
-    return this.isMyTableViewUpdatingRowsFlag;
-  }
   private List<RowBasedCommand_ViewMyTreeViewRow> MyTreeViewWidgetTreeRows = new LinkedList<>();
   public List<RowBasedCommand_ViewMyTreeViewRow> getMyTreeViewWidgetTreeRows() {
     return this.MyTreeViewWidgetTreeRows;
-  }
-  private Boolean isMyTreeViewUpdatingRowsFlag;
-  public Boolean getIsMyTreeViewUpdatingRowsFlag() {
-    return this.isMyTreeViewUpdatingRowsFlag;
   }
   public void loadView() {
   }

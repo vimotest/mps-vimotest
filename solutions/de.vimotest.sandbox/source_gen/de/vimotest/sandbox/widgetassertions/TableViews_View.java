@@ -22,10 +22,6 @@ public class TableViews_View {
   public Boolean getIsMyTableViewEnabled() {
     return this.isMyTableViewEnabled;
   }
-  private Boolean isMyTableViewUpdatingRowsFlag;
-  public Boolean getIsMyTableViewUpdatingRowsFlag() {
-    return this.isMyTableViewUpdatingRowsFlag;
-  }
   private List<TableViews_ViewMyStringRowHandlesRow> MyStringRowHandlesWidgetTableRows = new LinkedList<>();
   public List<TableViews_ViewMyStringRowHandlesRow> getMyStringRowHandlesWidgetTableRows() {
     return this.MyStringRowHandlesWidgetTableRows;
@@ -33,9 +29,5 @@ public class TableViews_View {
   private String MyStringRowHandlesSelectedRow;
   public String getMyStringRowHandlesSelectedRow() {
     return this.MyStringRowHandlesSelectedRow;
-  }
-  private Boolean isMyStringRowHandlesUpdatingRowsFlag;
-  public Boolean getIsMyStringRowHandlesUpdatingRowsFlag() {
-    return this.isMyStringRowHandlesUpdatingRowsFlag;
   }
 }

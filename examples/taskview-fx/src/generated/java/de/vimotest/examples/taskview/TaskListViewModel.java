@@ -7,7 +7,6 @@ import java.util.List;
 public abstract class TaskListViewModel {
   public abstract List<TaskListViewModelTasksRow> getTasksWidgetTableRows();
   public abstract String getTasksSelectedRow();
-  public abstract Boolean getIsTasksUpdatingRowsFlag();
   public abstract Boolean getIsAddNewTaskEnabled();
   public abstract Boolean getIsDeleteTaskEnabled();
   public abstract void loadView();

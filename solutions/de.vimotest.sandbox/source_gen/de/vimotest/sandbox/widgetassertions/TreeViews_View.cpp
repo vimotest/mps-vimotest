@@ -27,10 +27,6 @@ namespace widgetassertions
   {
     return this->MyTreeViewWidgetTreeRows;
   }
-  bool TreeViews_View::getIsMyTreeViewUpdatingRowsFlag( ) 
-  {
-    return this->isMyTreeViewUpdatingRowsFlag;
-  }
   std::vector<std::shared_ptr<TreeViews_ViewMyStringRowHandlesRow>> TreeViews_View::getMyStringRowHandlesWidgetTreeRows( ) 
   {
     return this->MyStringRowHandlesWidgetTreeRows;
@@ -39,25 +35,13 @@ namespace widgetassertions
   {
     return this->MyStringRowHandlesSelectedRow;
   }
-  bool TreeViews_View::getIsMyStringRowHandlesUpdatingRowsFlag( ) 
-  {
-    return this->isMyStringRowHandlesUpdatingRowsFlag;
-  }
   std::vector<std::shared_ptr<TreeViews_ViewMyParentIndexRowHandlesRow>> TreeViews_View::getMyParentIndexRowHandlesWidgetTreeRows( ) 
   {
     return this->MyParentIndexRowHandlesWidgetTreeRows;
   }
-  bool TreeViews_View::getIsMyParentIndexRowHandlesUpdatingRowsFlag( ) 
-  {
-    return this->isMyParentIndexRowHandlesUpdatingRowsFlag;
-  }
   std::vector<std::shared_ptr<TreeViews_ViewMyParentStringRowHandlesRow>> TreeViews_View::getMyParentStringRowHandlesWidgetTreeRows( ) 
   {
     return this->MyParentStringRowHandlesWidgetTreeRows;
-  }
-  bool TreeViews_View::getIsMyParentStringRowHandlesUpdatingRowsFlag( ) 
-  {
-    return this->isMyParentStringRowHandlesUpdatingRowsFlag;
   }
 }
 

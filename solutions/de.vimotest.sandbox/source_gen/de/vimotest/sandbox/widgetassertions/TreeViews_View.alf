@@ -28,12 +28,6 @@ class TreeViews_View {
   return this.MyTreeViewWidgetTreeRows;
  }
   
-  private isMyTreeViewUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyTreeViewUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyTreeViewUpdatingRowsFlag;
- }
-  
   private MyStringRowHandlesWidgetTreeRows : TreeViews_ViewMyStringRowHandlesRow [ * ]  ;
   
   public getMyStringRowHandlesWidgetTreeRows (  ) : TreeViews_ViewMyStringRowHandlesRow [ * ]  {
@@ -46,33 +40,15 @@ class TreeViews_View {
   return this.MyStringRowHandlesSelectedRow;
  }
   
-  private isMyStringRowHandlesUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyStringRowHandlesUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyStringRowHandlesUpdatingRowsFlag;
- }
-  
   private MyParentIndexRowHandlesWidgetTreeRows : TreeViews_ViewMyParentIndexRowHandlesRow [ * ]  ;
   
   public getMyParentIndexRowHandlesWidgetTreeRows (  ) : TreeViews_ViewMyParentIndexRowHandlesRow [ * ]  {
   return this.MyParentIndexRowHandlesWidgetTreeRows;
  }
   
-  private isMyParentIndexRowHandlesUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyParentIndexRowHandlesUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyParentIndexRowHandlesUpdatingRowsFlag;
- }
-  
   private MyParentStringRowHandlesWidgetTreeRows : TreeViews_ViewMyParentStringRowHandlesRow [ * ]  ;
   
   public getMyParentStringRowHandlesWidgetTreeRows (  ) : TreeViews_ViewMyParentStringRowHandlesRow [ * ]  {
   return this.MyParentStringRowHandlesWidgetTreeRows;
- }
-  
-  private isMyParentStringRowHandlesUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyParentStringRowHandlesUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyParentStringRowHandlesUpdatingRowsFlag;
  }
 }

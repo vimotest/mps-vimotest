@@ -18,10 +18,6 @@ public class NameBinding_View {
   public List<MyCustomRow> getRows() {
     return this.rows;
   }
-  private Boolean updatingFlag;
-  public Boolean getUpdatingFlag() {
-    return this.updatingFlag;
-  }
   public void loadView() {
   }
   public void OkClicked() {

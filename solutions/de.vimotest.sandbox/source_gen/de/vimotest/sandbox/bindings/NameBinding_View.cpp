@@ -20,10 +20,6 @@ namespace bindings
   {
     return this->rows;
   }
-  bool NameBinding_View::getUpdatingFlag( ) 
-  {
-    return this->updatingFlag;
-  }
   void NameBinding_View::loadView( ) 
   {
     

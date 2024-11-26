@@ -25,10 +25,6 @@ namespace widgetassertions
   {
     return this->isMyTableViewEnabled;
   }
-  bool TableViews_View::getIsMyTableViewUpdatingRowsFlag( ) 
-  {
-    return this->isMyTableViewUpdatingRowsFlag;
-  }
   std::vector<std::shared_ptr<TableViews_ViewMyStringRowHandlesRow>> TableViews_View::getMyStringRowHandlesWidgetTableRows( ) 
   {
     return this->MyStringRowHandlesWidgetTableRows;
@@ -36,10 +32,6 @@ namespace widgetassertions
   std::string TableViews_View::getMyStringRowHandlesSelectedRow( ) 
   {
     return this->MyStringRowHandlesSelectedRow;
-  }
-  bool TableViews_View::getIsMyStringRowHandlesUpdatingRowsFlag( ) 
-  {
-    return this->isMyStringRowHandlesUpdatingRowsFlag;
   }
 }
 

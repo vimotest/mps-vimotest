@@ -22,12 +22,6 @@ class NameBinding_View {
   return this.rows;
  }
   
-  private updatingFlag : Boolean  ;
-  
-  public getUpdatingFlag (  ) : Boolean  {
-  return this.updatingFlag;
- }
-  
   public loadView (  ) {     }
   
   public OkClicked (  ) {     }

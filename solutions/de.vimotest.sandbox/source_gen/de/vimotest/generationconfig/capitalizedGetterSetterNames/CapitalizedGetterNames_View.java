@@ -26,8 +26,4 @@ public class CapitalizedGetterNames_View {
   public List<CapitalizedGetterNames_ViewListViewRow> GetMyRows() {
     return this.myRows;
   }
-  private Boolean isListViewUpdatingRowsFlag;
-  public Boolean GetIsListViewUpdatingRowsFlag() {
-    return this.isListViewUpdatingRowsFlag;
-  }
 }

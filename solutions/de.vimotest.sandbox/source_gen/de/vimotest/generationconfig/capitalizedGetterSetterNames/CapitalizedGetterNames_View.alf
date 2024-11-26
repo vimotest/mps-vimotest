@@ -33,10 +33,4 @@ class CapitalizedGetterNames_View {
   public GetMyRows (  ) : CapitalizedGetterNames_ViewListViewRow [ * ]  {
   return this.myRows;
  }
-  
-  private isListViewUpdatingRowsFlag : Boolean  ;
-  
-  public GetIsListViewUpdatingRowsFlag (  ) : Boolean  {
-  return this.isListViewUpdatingRowsFlag;
- }
 }

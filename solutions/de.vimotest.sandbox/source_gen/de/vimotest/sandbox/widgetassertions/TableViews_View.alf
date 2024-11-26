@@ -28,12 +28,6 @@ class TableViews_View {
   return this.isMyTableViewEnabled;
  }
   
-  private isMyTableViewUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyTableViewUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyTableViewUpdatingRowsFlag;
- }
-  
   private MyStringRowHandlesWidgetTableRows : TableViews_ViewMyStringRowHandlesRow [ * ]  ;
   
   public getMyStringRowHandlesWidgetTableRows (  ) : TableViews_ViewMyStringRowHandlesRow [ * ]  {
@@ -44,11 +38,5 @@ class TableViews_View {
   
   public getMyStringRowHandlesSelectedRow (  ) : String  {
   return this.MyStringRowHandlesSelectedRow;
- }
-  
-  private isMyStringRowHandlesUpdatingRowsFlag : Boolean  ;
-  
-  public getIsMyStringRowHandlesUpdatingRowsFlag (  ) : Boolean  {
-  return this.isMyStringRowHandlesUpdatingRowsFlag;
  }
 }

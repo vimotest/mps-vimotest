@@ -1305,7 +1305,7 @@
       <property role="TrG5h" value="generateTableUpdatingProperties" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
       <node concept="t5JxF" id="7Ymnhjiw4zT" role="lGtFl">
-        <property role="t5JxN" value="TODO: implement;  Controls if table updating flags are generated" />
+        <property role="t5JxN" value="Controls if table updating flags are generated" />
       </node>
     </node>
   </node>

@@ -22,10 +22,6 @@ public class ListViews_View {
   public Integer getMyListOfLabelSelectedRow() {
     return this.MyListOfLabelSelectedRow;
   }
-  private Boolean isMyListOfLabelUpdatingRowsFlag;
-  public Boolean getIsMyListOfLabelUpdatingRowsFlag() {
-    return this.isMyListOfLabelUpdatingRowsFlag;
-  }
   private Boolean isMyListOfImagesVisibility;
   public Boolean getIsMyListOfImagesVisibility() {
     return this.isMyListOfImagesVisibility;
@@ -41,10 +37,6 @@ public class ListViews_View {
   private Integer MyListOfImagesSelectedRow;
   public Integer getMyListOfImagesSelectedRow() {
     return this.MyListOfImagesSelectedRow;
-  }
-  private Boolean isMyListOfImagesUpdatingRowsFlag;
-  public Boolean getIsMyListOfImagesUpdatingRowsFlag() {
-    return this.isMyListOfImagesUpdatingRowsFlag;
   }
   private List<ListViews_ViewMyCheckboxesRow> MyCheckboxesWidgetListRows = new LinkedList<>();
   public List<ListViews_ViewMyCheckboxesRow> getMyCheckboxesWidgetListRows() {
@@ -62,10 +54,6 @@ public class ListViews_View {
   public Boolean getIsMyCheckboxesEnabled() {
     return this.isMyCheckboxesEnabled;
   }
-  private Boolean isMyCheckboxesUpdatingRowsFlag;
-  public Boolean getIsMyCheckboxesUpdatingRowsFlag() {
-    return this.isMyCheckboxesUpdatingRowsFlag;
-  }
   private List<ListViews_ViewMyStringRowHandlesRow> MyStringRowHandlesWidgetListRows = new LinkedList<>();
   public List<ListViews_ViewMyStringRowHandlesRow> getMyStringRowHandlesWidgetListRows() {
     return this.MyStringRowHandlesWidgetListRows;
@@ -74,10 +62,6 @@ public class ListViews_View {
   public String getMyStringRowHandlesSelectedRow() {
     return this.MyStringRowHandlesSelectedRow;
   }
-  private Boolean isMyStringRowHandlesUpdatingRowsFlag;
-  public Boolean getIsMyStringRowHandlesUpdatingRowsFlag() {
-    return this.isMyStringRowHandlesUpdatingRowsFlag;
-  }
   private List<ListViews_ViewMyMultiRowSelectionListRow> MyMultiRowSelectionListWidgetListRows = new LinkedList<>();
   public List<ListViews_ViewMyMultiRowSelectionListRow> getMyMultiRowSelectionListWidgetListRows() {
     return this.MyMultiRowSelectionListWidgetListRows;
@@ -85,9 +69,5 @@ public class ListViews_View {
   private List<Integer> MyMultiRowSelectionListSelectedRows = new LinkedList<>();
   public List<Integer> getMyMultiRowSelectionListSelectedRows() {
     return this.MyMultiRowSelectionListSelectedRows;
-  }
-  private Boolean isMyMultiRowSelectionListUpdatingRowsFlag;
-  public Boolean getIsMyMultiRowSelectionListUpdatingRowsFlag() {
-    return this.isMyMultiRowSelectionListUpdatingRowsFlag;
   }
 }

@@ -8,8 +8,6 @@ abstract class TaskListViewModel {
   
   public abstract getTasksSelectedRow (  ) : String  ;
   
-  public abstract getIsTasksUpdatingRowsFlag (  ) : Boolean  ;
-  
   public abstract getIsAddNewTaskEnabled (  ) : Boolean  ;
   
   public abstract getIsDeleteTaskEnabled (  ) : Boolean  ;

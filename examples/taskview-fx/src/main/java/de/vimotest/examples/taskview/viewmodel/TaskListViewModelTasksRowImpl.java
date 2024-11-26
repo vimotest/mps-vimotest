@@ -126,7 +126,8 @@ public class TaskListViewModelTasksRowImpl extends TaskListViewModelTasksRow {
     @Override
     public String getDue_DateToolTip() {
         // format 2024/10/11 e.g. to "11th October 2024"
-        return dueDate.get().substring(8) + getDaySuffix(dueDate.get().substring(8)) + " " +
+        String day = dueDate.get().substring(8);
+        return Integer.parseInt(day) + getDaySuffix(day) + " " +
                 getMonthName(dueDate.get().substring(5, 7)) + " " +
                 dueDate.get().substring(0, 4);
     }

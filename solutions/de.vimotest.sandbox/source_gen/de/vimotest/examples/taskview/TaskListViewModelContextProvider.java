@@ -8,8 +8,6 @@ public class TaskListViewModelContextProvider {
   }
   public void SetDataTableJson(String json) {
   }
-  public void SetSimpleStringContext(String string) {
-  }
   public TaskListViewModel BuildSut() {
     return null;
   }

@@ -33,12 +33,6 @@ public class MainApp extends Application {
         TableColumn<TaskListViewModelTasksRowImpl, String> idColumn = new TableColumn<>("ID");
         idColumn.setCellValueFactory(cellData -> cellData.getValue().idProperty());
 
-        TableColumn<TaskListViewModelTasksRowImpl, String> nameColumn = new TableColumn<>("Name");
-        nameColumn.setCellValueFactory(cellData -> cellData.getValue().nameProperty());
-
-        TableColumn<TaskListViewModelTasksRowImpl, String> dueDateColumn = new TableColumn<>("Due Date");
-        dueDateColumn.setCellValueFactory(cellData -> cellData.getValue().dueDateProperty());
-
         TableColumn<TaskListViewModelTasksRowImpl, String> priorityColumn = new TableColumn<>("Priority");
         priorityColumn.setCellValueFactory(cellData -> cellData.getValue().priorityProperty());
         priorityColumn.setCellFactory(column -> new TableCell<TaskListViewModelTasksRowImpl, String>() {
@@ -61,11 +55,17 @@ public class MainApp extends Application {
             }
         });
 
+        TableColumn<TaskListViewModelTasksRowImpl, String> nameColumn = new TableColumn<>("Name");
+        nameColumn.setCellValueFactory(cellData -> cellData.getValue().nameProperty());
+
+        TableColumn<TaskListViewModelTasksRowImpl, String> dueDateColumn = new TableColumn<>("Due Date");
+        dueDateColumn.setCellValueFactory(cellData -> cellData.getValue().dueDateProperty());
+
         TableColumn<TaskListViewModelTasksRowImpl, String> statusColumn = new TableColumn<>("Status");
         statusColumn.setCellValueFactory(cellData -> cellData.getValue().statusProperty());
 
         // Add columns to TableView
-        taskTable.getColumns().addAll(idColumn, nameColumn, dueDateColumn, priorityColumn, statusColumn);
+        taskTable.getColumns().addAll(idColumn, priorityColumn, nameColumn, dueDateColumn, statusColumn);
 
         // Add "Create Task" button
         Button createTaskButton = new Button("Create Task");

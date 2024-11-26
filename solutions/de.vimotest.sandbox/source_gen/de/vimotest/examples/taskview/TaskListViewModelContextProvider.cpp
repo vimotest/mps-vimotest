@@ -15,11 +15,6 @@ void TaskListViewModelContextProvider::SetDataTableJson(std::string json )
   
 }
 
-void TaskListViewModelContextProvider::SetSimpleStringContext(std::string string ) 
-{
-  
-}
-
 std::shared_ptr<TaskListViewModel> TaskListViewModelContextProvider::BuildSut( ) 
 {
   return nullptr;

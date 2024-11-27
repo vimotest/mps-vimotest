@@ -49,6 +49,10 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -62,6 +66,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR" />
@@ -95,9 +100,14 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
         <child id="1160998896846" name="condition" index="1gVkn0" />
+        <child id="1160998916832" name="message" index="1gVpfI" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -124,6 +134,9 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
@@ -135,6 +148,10 @@
       </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
+      <concept id="1217889960776" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_UserObjectAccessBase" flags="nn" index="2fTw9j">
+        <child id="1217890689512" name="userKey" index="2fWi3N" />
+      </concept>
+      <concept id="1217894011536" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_StepObjectAccess" flags="nn" index="2g8Xeb" />
       <concept id="1187483539462121947" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_CreateIndexedName" flags="nn" index="32eq0B">
         <child id="1187483539462121948" name="baseName" index="32eq0w" />
         <child id="1187483539462121949" name="contextNode" index="32eq0x" />
@@ -230,6 +247,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -2238,6 +2263,230 @@
       <node concept="17QB3L" id="6RKU0sdiVXk" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="6RKU0sdiTy0" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="7NXUkdT9lK0">
+    <property role="TrG5h" value="ContextProviderGenerationHelper" />
+    <node concept="2YIFZL" id="7NXUkdT9sLN" role="jymVt">
+      <property role="TrG5h" value="isContextProviderGeneratedForTestSuite" />
+      <node concept="3clFbS" id="7NXUkdT9sLP" role="3clF47">
+        <node concept="3clFbF" id="7NXUkdT9sLY" role="3cqZAp">
+          <node concept="17QLQc" id="7NXUkdT9sLZ" role="3clFbG">
+            <node concept="2OqwBi" id="7NXUkdT9sM0" role="3uHU7B">
+              <node concept="37vLTw" id="7NXUkdT9sM1" role="2Oq$k0">
+                <ref role="3cqZAo" node="7NXUkdT9sM7" resolve="genContext" />
+              </node>
+              <node concept="2g8Xeb" id="7NXUkdT9sM2" role="2OqNvi">
+                <node concept="1rXfSq" id="7NXUkdT9wBj" role="2fWi3N">
+                  <ref role="37wK5l" node="7NXUkdT9n6O" resolve="getKey" />
+                  <node concept="37vLTw" id="7NXUkdT9wFV" role="37wK5m">
+                    <ref role="3cqZAo" node="7NXUkdT9sM9" resolve="node" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="10Nm6u" id="7NXUkdT9sM4" role="3uHU7w" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="7NXUkdT9sM6" role="3clF45" />
+      <node concept="37vLTG" id="7NXUkdT9sM7" role="3clF46">
+        <property role="TrG5h" value="genContext" />
+        <node concept="1iwH7U" id="7NXUkdT9sM8" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7NXUkdT9sM9" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="7NXUkdT9sMa" role="1tU5fm">
+          <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7NXUkdT9sM5" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="7NXUkdT9G9t" role="jymVt">
+      <property role="TrG5h" value="getPrimaryTestSuiteInputForContextProvider" />
+      <node concept="3clFbS" id="7NXUkdT9G9u" role="3clF47">
+        <node concept="3SKdUt" id="7NXUkdT2d8j" role="3cqZAp">
+          <node concept="1PaTwC" id="7NXUkdT2d8k" role="1aUNEU">
+            <node concept="3oM_SD" id="7NXUkdT2d8l" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="7NXUkdT2gWe" role="1PaTwD">
+              <property role="3oM_SC" value="only" />
+            </node>
+            <node concept="3oM_SD" id="7NXUkdT2kOd" role="1PaTwD">
+              <property role="3oM_SC" value="map" />
+            </node>
+            <node concept="3oM_SD" id="7NXUkdT2qdg" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="7NXUkdT2qdx" role="1PaTwD">
+              <property role="3oM_SC" value="first" />
+            </node>
+            <node concept="3oM_SD" id="7NXUkdT9K2R" role="1PaTwD">
+              <property role="3oM_SC" value="(=primary)" />
+            </node>
+            <node concept="3oM_SD" id="7NXUkdT2qdU" role="1PaTwD">
+              <property role="3oM_SC" value="TestSuite" />
+            </node>
+            <node concept="3oM_SD" id="7NXUkdT2zw$" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="7NXUkdT2Cbl" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="7NXUkdT2CbA" role="1PaTwD">
+              <property role="3oM_SC" value="context" />
+            </node>
+            <node concept="3oM_SD" id="7NXUkdT2GvD" role="1PaTwD">
+              <property role="3oM_SC" value="provider" />
+            </node>
+            <node concept="3oM_SD" id="7NXUkdT2Gwe" role="1PaTwD">
+              <property role="3oM_SC" value="class," />
+            </node>
+            <node concept="3oM_SD" id="7NXUkdT2GwF" role="1PaTwD">
+              <property role="3oM_SC" value="so" />
+            </node>
+            <node concept="3oM_SD" id="7NXUkdT2GwS" role="1PaTwD">
+              <property role="3oM_SC" value="retrieve" />
+            </node>
+            <node concept="3oM_SD" id="7NXUkdT2QT0" role="1PaTwD">
+              <property role="3oM_SC" value="it" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7NXUkdT1N9c" role="3cqZAp">
+          <node concept="3cpWsn" id="7NXUkdT1N9d" role="3cpWs9">
+            <property role="TrG5h" value="primaryTestSuiteNode" />
+            <node concept="3Tqbb2" id="7NXUkdT1Ldl" role="1tU5fm">
+              <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+            </node>
+            <node concept="1eOMI4" id="7NXUkdT1N9e" role="33vP2m">
+              <node concept="10QFUN" id="7NXUkdT1N9f" role="1eOMHV">
+                <node concept="3Tqbb2" id="7NXUkdT1N9g" role="10QFUM">
+                  <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+                </node>
+                <node concept="2OqwBi" id="7NXUkdT1N9h" role="10QFUP">
+                  <node concept="37vLTw" id="7NXUkdT9JLP" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7NXUkdT9G9C" resolve="genContext" />
+                  </node>
+                  <node concept="2g8Xeb" id="7NXUkdT1N9j" role="2OqNvi">
+                    <node concept="1rXfSq" id="7NXUkdT9J__" role="2fWi3N">
+                      <ref role="37wK5l" node="7NXUkdT9n6O" resolve="getKey" />
+                      <node concept="37vLTw" id="7NXUkdT9JHg" role="37wK5m">
+                        <ref role="3cqZAo" node="7NXUkdT9G9E" resolve="node" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="7NXUkdT3c8Z" role="3cqZAp">
+          <node concept="3y3z36" id="7NXUkdT3okD" role="1gVkn0">
+            <node concept="10Nm6u" id="7NXUkdT3okK" role="3uHU7w" />
+            <node concept="37vLTw" id="7NXUkdT3ifH" role="3uHU7B">
+              <ref role="3cqZAo" node="7NXUkdT1N9d" resolve="testSuiteMappedToContextProvider" />
+            </node>
+          </node>
+          <node concept="3cpWs3" id="7NXUkdT9Lta" role="1gVpfI">
+            <node concept="1rXfSq" id="7NXUkdT9LT1" role="3uHU7w">
+              <ref role="37wK5l" node="7NXUkdT9n6O" resolve="getKey" />
+              <node concept="37vLTw" id="7NXUkdT9MgP" role="37wK5m">
+                <ref role="3cqZAo" node="7NXUkdT9G9E" resolve="node" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="7NXUkdT3t4p" role="3uHU7B">
+              <property role="Xl_RC" value="Context Provider not mapped correctly to a primary context provider with key: " />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7NXUkdT9Jpr" role="3cqZAp">
+          <node concept="37vLTw" id="7NXUkdT9Jpp" role="3clFbG">
+            <ref role="3cqZAo" node="7NXUkdT1N9d" resolve="testSuiteMappedToContextProvider" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7NXUkdT9G9C" role="3clF46">
+        <property role="TrG5h" value="genContext" />
+        <node concept="1iwH7U" id="7NXUkdT9G9D" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7NXUkdT9G9E" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="7NXUkdT9G9F" role="1tU5fm">
+          <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7NXUkdT9G9G" role="1B3o_S" />
+      <node concept="3Tqbb2" id="7NXUkdT9GWK" role="3clF45">
+        <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+      </node>
+    </node>
+    <node concept="2YIFZL" id="7NXUkdT9u0l" role="jymVt">
+      <property role="TrG5h" value="setTestSuiteAsInputForContextProvider" />
+      <node concept="3clFbS" id="7NXUkdT9u0m" role="3clF47">
+        <node concept="3clFbF" id="7NXUkdSVc5q" role="3cqZAp">
+          <node concept="37vLTI" id="7NXUkdSVkdy" role="3clFbG">
+            <node concept="37vLTw" id="7NXUkdT9xYP" role="37vLTx">
+              <ref role="3cqZAo" node="7NXUkdT9u0D" resolve="node" />
+            </node>
+            <node concept="2OqwBi" id="7NXUkdSVcsW" role="37vLTJ">
+              <node concept="37vLTw" id="7NXUkdT9x_9" role="2Oq$k0">
+                <ref role="3cqZAo" node="7NXUkdT9u0B" resolve="genContext" />
+              </node>
+              <node concept="2g8Xeb" id="7NXUkdSVcJz" role="2OqNvi">
+                <node concept="1rXfSq" id="7NXUkdT9xx4" role="2fWi3N">
+                  <ref role="37wK5l" node="7NXUkdT9n6O" resolve="getKey" />
+                  <node concept="37vLTw" id="7NXUkdT9xx5" role="37wK5m">
+                    <ref role="3cqZAo" node="7NXUkdT9u0D" resolve="node" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="7NXUkdT9upg" role="3clF45" />
+      <node concept="37vLTG" id="7NXUkdT9u0B" role="3clF46">
+        <property role="TrG5h" value="genContext" />
+        <node concept="1iwH7U" id="7NXUkdT9u0C" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7NXUkdT9u0D" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="7NXUkdT9u0E" role="1tU5fm">
+          <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7NXUkdT9u0F" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="7NXUkdT9n6O" role="jymVt">
+      <property role="TrG5h" value="getKey" />
+      <node concept="37vLTG" id="7NXUkdT9nLq" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="7NXUkdT9nLr" role="1tU5fm">
+          <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="7NXUkdT9n6R" role="3clF47">
+        <node concept="3clFbF" id="7NXUkdT9oum" role="3cqZAp">
+          <node concept="3cpWs3" id="7NXUkdT9ouo" role="3clFbG">
+            <node concept="2OqwBi" id="7NXUkdT9oup" role="3uHU7w">
+              <node concept="37vLTw" id="7NXUkdT9ouq" role="2Oq$k0">
+                <ref role="3cqZAo" node="7NXUkdT9nLq" resolve="node" />
+              </node>
+              <node concept="2qgKlT" id="7NXUkdT9our" role="2OqNvi">
+                <ref role="37wK5l" to="fwln:4Pj3bOmvh0Z" resolve="getEffectiveContextProviderName" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="7NXUkdT9ous" role="3uHU7B">
+              <property role="Xl_RC" value="contextprovider-generated-" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="7NXUkdT9n65" role="1B3o_S" />
+      <node concept="17QB3L" id="7NXUkdT9n6E" role="3clF45" />
+    </node>
+    <node concept="3Tm1VV" id="7NXUkdT9lK1" role="1B3o_S" />
   </node>
 </model>
 

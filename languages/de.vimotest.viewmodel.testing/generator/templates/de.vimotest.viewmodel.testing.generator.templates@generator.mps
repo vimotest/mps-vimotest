@@ -88,6 +88,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -203,7 +206,6 @@
         <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
       </concept>
       <concept id="1167514355419" name="jetbrains.mps.lang.generator.structure.Root_MappingRule" flags="lg" index="3lhOvk">
-        <property id="1177959072138" name="keepSourceRoot" index="13Pg2o" />
         <reference id="1167514355421" name="template" index="3lhOvi" />
       </concept>
       <concept id="1048903277989260815" name="jetbrains.mps.lang.generator.structure.TemplateArgumentVarRefExpression2" flags="ng" index="1mL9RQ">
@@ -658,14 +660,44 @@
         </node>
       </node>
     </node>
-    <node concept="3lhOvk" id="1srqdXUFWsT" role="3lj3bC">
-      <property role="13Pg2o" value="h94ayQF/true_" />
-      <ref role="30HIoZ" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
-      <ref role="3lhOvi" node="1srqdXUFWsU" resolve="root_mapping_ViewModelFeatureTestSuite" />
-    </node>
     <node concept="3lhOvk" id="4Pj3bOmxylW" role="3lj3bC">
       <ref role="30HIoZ" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
       <ref role="3lhOvi" node="4Pj3bOmxnkc" resolve="root_mapping_ContextProvider" />
+      <node concept="30G5F_" id="7NXUkdSVaVw" role="30HLyM">
+        <node concept="3clFbS" id="7NXUkdSVaVx" role="2VODD2">
+          <node concept="3clFbJ" id="7NXUkdSVhXa" role="3cqZAp">
+            <node concept="3clFbS" id="7NXUkdSVhXc" role="3clFbx">
+              <node concept="3cpWs6" id="7NXUkdSVjjO" role="3cqZAp">
+                <node concept="3clFbT" id="7NXUkdSVjk3" role="3cqZAk" />
+              </node>
+            </node>
+            <node concept="2YIFZM" id="7NXUkdT9t9W" role="3clFbw">
+              <ref role="37wK5l" to="zcip:7NXUkdT9sLN" resolve="isContextProviderGeneratedForTestSuite" />
+              <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="ContextProviderGenerationHelper" />
+              <node concept="1iwH7S" id="7NXUkdT9tqd" role="37wK5m" />
+              <node concept="30H73N" id="7NXUkdT9tGo" role="37wK5m" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="7NXUkdT9yMg" role="3cqZAp" />
+          <node concept="3clFbF" id="7NXUkdT9y5T" role="3cqZAp">
+            <node concept="2YIFZM" id="7NXUkdT9y6D" role="3clFbG">
+              <ref role="37wK5l" to="zcip:7NXUkdT9u0l" resolve="setTestSuiteAsInputForContextProvider" />
+              <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="ContextProviderGenerationHelper" />
+              <node concept="1iwH7S" id="7NXUkdT9yu1" role="37wK5m" />
+              <node concept="30H73N" id="7NXUkdT9ynx" role="37wK5m" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="7NXUkdSVjo$" role="3cqZAp">
+            <node concept="3clFbT" id="7NXUkdSVjoz" role="3clFbG">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3lhOvk" id="1srqdXUFWsT" role="3lj3bC">
+      <ref role="30HIoZ" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+      <ref role="3lhOvi" node="1srqdXUFWsU" resolve="root_mapping_ViewModelFeatureTestSuite" />
     </node>
     <node concept="3lhOvk" id="5ZcB1Gh4qXA" role="3lj3bC">
       <ref role="30HIoZ" to="53m0:5ZcB1GgRjk8" resolve="XmlFileContext" />
@@ -864,12 +896,28 @@
               <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
               <node concept="3$xsQk" id="4Pj3bOmxAp0" role="3$ytzL">
                 <node concept="3clFbS" id="4Pj3bOmxAp1" role="2VODD2">
+                  <node concept="3cpWs8" id="7NXUkdT1N9c" role="3cqZAp">
+                    <node concept="3cpWsn" id="7NXUkdT1N9d" role="3cpWs9">
+                      <property role="TrG5h" value="primaryTestSuite" />
+                      <node concept="3Tqbb2" id="7NXUkdT1Ldl" role="1tU5fm">
+                        <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+                      </node>
+                      <node concept="2YIFZM" id="7NXUkdTaom6" role="33vP2m">
+                        <ref role="37wK5l" to="zcip:7NXUkdT9G9t" resolve="getPrimaryTestSuiteInputForContextProvider" />
+                        <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="ContextProviderGenerationHelper" />
+                        <node concept="1iwH7S" id="7NXUkdTasFh" role="37wK5m" />
+                        <node concept="30H73N" id="7NXUkdTasEU" role="37wK5m" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3clFbF" id="4Pj3bOmxAp2" role="3cqZAp">
                     <node concept="2OqwBi" id="4Pj3bOmxAp3" role="3clFbG">
                       <node concept="1iwH7S" id="4Pj3bOmxAp4" role="2Oq$k0" />
                       <node concept="1iwH70" id="4Pj3bOmxAp5" role="2OqNvi">
                         <ref role="1iwH77" node="4Pj3bOmxylV" resolve="ViewModelFeatureTestSuite_ContextProvider_ClassDefinition" />
-                        <node concept="30H73N" id="4Pj3bOmxAp7" role="1iwH7V" />
+                        <node concept="37vLTw" id="7NXUkdT37C0" role="1iwH7V">
+                          <ref role="3cqZAo" node="7NXUkdT1N9d" resolve="testSuiteMappedToContextProvider" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -906,12 +954,28 @@
                       <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
                       <node concept="3$xsQk" id="4Pj3bOmxKi$" role="3$ytzL">
                         <node concept="3clFbS" id="4Pj3bOmxKi_" role="2VODD2">
+                          <node concept="3cpWs8" id="7NXUkdTaEsT" role="3cqZAp">
+                            <node concept="3cpWsn" id="7NXUkdTaEsU" role="3cpWs9">
+                              <property role="TrG5h" value="primaryTestSuite" />
+                              <node concept="3Tqbb2" id="7NXUkdTaEsV" role="1tU5fm">
+                                <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+                              </node>
+                              <node concept="2YIFZM" id="7NXUkdTaEsW" role="33vP2m">
+                                <ref role="37wK5l" to="zcip:7NXUkdT9G9t" resolve="getPrimaryTestSuiteInputForContextProvider" />
+                                <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="ContextProviderGenerationHelper" />
+                                <node concept="1iwH7S" id="7NXUkdTaEsX" role="37wK5m" />
+                                <node concept="30H73N" id="7NXUkdTaEsY" role="37wK5m" />
+                              </node>
+                            </node>
+                          </node>
                           <node concept="3clFbF" id="4Pj3bOmxKiA" role="3cqZAp">
                             <node concept="2OqwBi" id="4Pj3bOmxKiB" role="3clFbG">
                               <node concept="1iwH7S" id="4Pj3bOmxKiC" role="2Oq$k0" />
                               <node concept="1iwH70" id="4Pj3bOmxKiD" role="2OqNvi">
                                 <ref role="1iwH77" node="4Pj3bOmxylV" resolve="ViewModelFeatureTestSuite_ContextProvider_ClassDefinition" />
-                                <node concept="30H73N" id="4Pj3bOmxKiE" role="1iwH7V" />
+                                <node concept="37vLTw" id="7NXUkdTaE_e" role="1iwH7V">
+                                  <ref role="3cqZAo" node="7NXUkdTaEsU" resolve="primaryTestSuite" />
+                                </node>
                               </node>
                             </node>
                           </node>

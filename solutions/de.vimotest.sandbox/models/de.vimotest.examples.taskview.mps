@@ -25,9 +25,6 @@
       <concept id="8948051009467167877" name="de.vimotest.viewmodel.testing.structure.ViewCommandInvocationAction" flags="ng" index="27s6xY">
         <reference id="8948051009467187564" name="targetCommand" index="27sXQn" />
       </concept>
-      <concept id="9006611305737327152" name="de.vimotest.viewmodel.testing.structure.ContextReference" flags="ng" index="8w7HN">
-        <reference id="9006611305737327954" name="ref" index="8w7Kh" />
-      </concept>
       <concept id="5447508759369797102" name="de.vimotest.viewmodel.testing.structure.WidgetTableRowsCheckValue" flags="ng" index="2ayrQO">
         <child id="5447508759369822399" name="rows" index="2ay43_" />
         <child id="7922086861434398932" name="columnCheckInfos" index="1EpG3j" />
@@ -781,6 +778,388 @@
         </node>
       </node>
     </node>
+    <node concept="3LKzX3" id="7lPnU2OOunm" role="30n1Qb">
+      <property role="TrG5h" value="Load Tasks with all three priority levels" />
+      <node concept="1s$VFG" id="7lPnU2OOunn" role="1s$QAY">
+        <node concept="DUd5q" id="7lPnU2OOuno" role="1s$QAM">
+          <node concept="27s6xY" id="7lPnU2OOunp" role="DUiS9">
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
+          </node>
+        </node>
+        <node concept="DUd2R" id="7lPnU2OOunq" role="1s$QAX">
+          <node concept="30nzp_" id="7lPnU2OOunr" role="DUiSb">
+            <ref role="30nzpS" node="7Ymnhjip$_D" resolve="Tasks" />
+            <node concept="3UVeCy" id="7lPnU2OOuns" role="30nDbQ">
+              <node concept="2ayrQO" id="7lPnU2OOunt" role="3UVeCz">
+                <node concept="1EpGR1" id="7lPnU2OOunu" role="1EpG3j">
+                  <ref role="1EpG3m" node="4w1hye2Eyhv" />
+                </node>
+                <node concept="1EpGR1" id="7lPnU2OOunv" role="1EpG3j">
+                  <property role="1EpG3l" value="true" />
+                  <ref role="1EpG3m" node="7Ymnhjip$_E" />
+                </node>
+                <node concept="1EpGR1" id="7lPnU2OOunw" role="1EpG3j">
+                  <property role="1EpG3l" value="true" />
+                  <ref role="1EpG3m" node="4w1hye2Eyin" />
+                </node>
+                <node concept="3UOqEq" id="7lPnU2OOunx" role="2ay43_">
+                  <property role="3_VSTZ" value="0" />
+                  <node concept="1NuoHz" id="7lPnU2OOuny" role="2aBVWM">
+                    <ref role="3elmOO" node="4w1hye2EyhB" resolve="Priority" />
+                    <node concept="2mJbJ5" id="7lPnU2OOunz" role="1NuoHy">
+                      <node concept="2mJbG1" id="7lPnU2OOun$" role="2mJbJ6">
+                        <node concept="3eDL7N" id="7lPnU2OOun_" role="3n32fm">
+                          <ref role="3eDL7M" node="4w1hye2Eyij" resolve="PrioLow" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1NuoHz" id="7lPnU2OOunA" role="2aBVWM">
+                    <ref role="3elmOO" node="7Ymnhjip$_L" resolve="Task Name" />
+                    <node concept="V3Zc6" id="7lPnU2OOunB" role="1NuoHy">
+                      <node concept="V3Zdv" id="7lPnU2OOunC" role="V3Zc7">
+                        <node concept="o7Kjd" id="7lPnU2OOunD" role="oSbKM">
+                          <property role="o7K7r" value="A" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1NuoHz" id="7lPnU2OOunE" role="2aBVWM">
+                    <ref role="3elmOO" node="4w1hye2Eyio" resolve="Due Date" />
+                    <node concept="V3Zc6" id="7lPnU2OOunF" role="1NuoHy">
+                      <node concept="V3Zdv" id="7lPnU2OOunG" role="V3Zc7">
+                        <node concept="o7Kjd" id="7lPnU2OOunH" role="oSbKM">
+                          <property role="o7K7r" value="2024/12/01" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3UOqEq" id="7lPnU2OOuo9" role="2ay43_">
+                  <property role="3_VSTZ" value="1" />
+                  <node concept="1NuoHz" id="7lPnU2OOuod" role="2aBVWM">
+                    <ref role="3elmOO" node="4w1hye2EyhB" resolve="Priority" />
+                    <node concept="2mJbJ5" id="7lPnU2OOuoa" role="1NuoHy">
+                      <node concept="2mJbG1" id="7lPnU2OOuob" role="2mJbJ6">
+                        <node concept="3eDL7N" id="7lPnU2OOuoc" role="3n32fm">
+                          <ref role="3eDL7M" node="4w1hye2Eyii" resolve="PrioMedium" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1NuoHz" id="7lPnU2OOuoi" role="2aBVWM">
+                    <ref role="3elmOO" node="7Ymnhjip$_L" resolve="Task Name" />
+                    <node concept="V3Zc6" id="7lPnU2OOuof" role="1NuoHy">
+                      <node concept="V3Zdv" id="7lPnU2OOuog" role="V3Zc7">
+                        <node concept="o7Kjd" id="7lPnU2OOuoh" role="oSbKM" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1NuoHz" id="7lPnU2OOuon" role="2aBVWM">
+                    <ref role="3elmOO" node="4w1hye2Eyio" resolve="Due Date" />
+                    <node concept="V3Zc6" id="7lPnU2OOuok" role="1NuoHy">
+                      <node concept="V3Zdv" id="7lPnU2OOuol" role="V3Zc7">
+                        <node concept="o7Kjd" id="7lPnU2OOuom" role="oSbKM" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3UOqEq" id="7lPnU2OOuop" role="2ay43_">
+                  <property role="3_VSTZ" value="2" />
+                  <node concept="1NuoHz" id="7lPnU2OOuot" role="2aBVWM">
+                    <ref role="3elmOO" node="4w1hye2EyhB" resolve="Priority" />
+                    <node concept="2mJbJ5" id="7lPnU2OOuoq" role="1NuoHy">
+                      <node concept="2mJbG1" id="7lPnU2OOuor" role="2mJbJ6">
+                        <node concept="3eDL7N" id="7lPnU2OOuos" role="3n32fm">
+                          <ref role="3eDL7M" node="4w1hye2Eyih" resolve="PrioHigh" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1NuoHz" id="7lPnU2OOuoy" role="2aBVWM">
+                    <ref role="3elmOO" node="7Ymnhjip$_L" resolve="Task Name" />
+                    <node concept="V3Zc6" id="7lPnU2OOuov" role="1NuoHy">
+                      <node concept="V3Zdv" id="7lPnU2OOuow" role="V3Zc7">
+                        <node concept="o7Kjd" id="7lPnU2OOuox" role="oSbKM" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1NuoHz" id="7lPnU2OOuoB" role="2aBVWM">
+                    <ref role="3elmOO" node="4w1hye2Eyio" resolve="Due Date" />
+                    <node concept="V3Zc6" id="7lPnU2OOuo$" role="1NuoHy">
+                      <node concept="V3Zdv" id="7lPnU2OOuo_" role="V3Zc7">
+                        <node concept="o7Kjd" id="7lPnU2OOuoA" role="oSbKM" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1IbZgy" id="6RKU0sdR0ns" role="DUd2K">
+        <node concept="1wOnht" id="6RKU0sdR0nu" role="DUiTU">
+          <property role="TrG5h" value="priorityCombinations" />
+          <property role="1wIYJB" value="6RKU0sdiKfv/JSON" />
+          <node concept="1wOntz" id="6RKU0sdR0nz" role="1wOkDR">
+            <node concept="1wOkDO" id="6RKU0sdR0n$" role="1wOkDD">
+              <property role="1wOkPU" value="id" />
+            </node>
+            <node concept="1wOkDO" id="6RKU0sdR0n_" role="1wOkDD">
+              <property role="1wOkPU" value="priority" />
+            </node>
+          </node>
+          <node concept="1wOntz" id="6RKU0sdR0nA" role="1wOkDP">
+            <node concept="1wOkDO" id="6RKU0sdR0nB" role="1wOkDD">
+              <property role="1wOkPU" value="0" />
+            </node>
+            <node concept="1wOkDO" id="6RKU0sdR0nC" role="1wOkDD">
+              <property role="1wOkPU" value="low" />
+            </node>
+          </node>
+          <node concept="1wOntz" id="6RKU0sdR0nE" role="1wOkDP">
+            <node concept="1wOkDO" id="6RKU0sdR0nF" role="1wOkDD">
+              <property role="1wOkPU" value="1" />
+            </node>
+            <node concept="1wOkDO" id="6RKU0sdR0nG" role="1wOkDD">
+              <property role="1wOkPU" value="medium" />
+            </node>
+          </node>
+          <node concept="1wOntz" id="6RKU0sdR0nI" role="1wOkDP">
+            <node concept="1wOkDO" id="6RKU0sdR0nJ" role="1wOkDD">
+              <property role="1wOkPU" value="2" />
+            </node>
+            <node concept="1wOkDO" id="6RKU0sdR0nK" role="1wOkDD">
+              <property role="1wOkPU" value="high" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="6RKU0seOJAv" role="30n1Qb">
+      <property role="TrG5h" value="Due Date from 2023" />
+      <node concept="1IbZgy" id="6RKU0seOJAw" role="DUd2K">
+        <node concept="1wOnht" id="6RKU0seOJAB" role="DUiTU">
+          <property role="TrG5h" value="dueDate2023" />
+          <property role="1wIYJB" value="6RKU0sdiKfv/JSON" />
+          <node concept="1wOntz" id="6RKU0seOJAD" role="1wOkDR">
+            <node concept="1wOkDO" id="6RKU0seOJAF" role="1wOkDD">
+              <property role="1wOkPU" value="id" />
+            </node>
+            <node concept="1wOkDO" id="6RKU0seOJAL" role="1wOkDD">
+              <property role="1wOkPU" value="name" />
+            </node>
+            <node concept="1wOkDO" id="6RKU0seOJAN" role="1wOkDD">
+              <property role="1wOkPU" value="dueDate" />
+            </node>
+          </node>
+          <node concept="1wOntz" id="6RKU0seOJAH" role="1wOkDP">
+            <node concept="1wOkDO" id="6RKU0seOJAJ" role="1wOkDD">
+              <property role="1wOkPU" value="0" />
+            </node>
+            <node concept="1wOkDO" id="6RKU0seOJAM" role="1wOkDD">
+              <property role="1wOkPU" value="Task A" />
+            </node>
+            <node concept="1wOkDO" id="6RKU0seOJAO" role="1wOkDD">
+              <property role="1wOkPU" value="2023/01/01" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1s$VFG" id="6RKU0seOJAy" role="1s$QAY">
+        <node concept="DUd5q" id="6RKU0seOJAz" role="1s$QAM">
+          <node concept="27s6xY" id="6RKU0seOJAP" role="DUiS9">
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
+          </node>
+        </node>
+        <node concept="DUd2R" id="6RKU0seOJA_" role="1s$QAX">
+          <node concept="30nzp_" id="6RKU0seOJAR" role="DUiSb">
+            <ref role="30nzpS" node="7Ymnhjip$_D" resolve="Tasks" />
+            <node concept="3UVeCy" id="6RKU0seOJAS" role="30nDbQ">
+              <node concept="2ayrQO" id="6RKU0seOJAT" role="3UVeCz">
+                <node concept="1EpGR1" id="6RKU0seOJAU" role="1EpG3j">
+                  <property role="1EpG3l" value="true" />
+                  <ref role="1EpG3m" node="4w1hye2Eyhv" />
+                </node>
+                <node concept="1EpGR1" id="6RKU0seOJAV" role="1EpG3j">
+                  <ref role="1EpG3m" node="7Ymnhjip$_E" />
+                </node>
+                <node concept="1EpGR1" id="6RKU0seOJAW" role="1EpG3j">
+                  <ref role="1EpG3m" node="4w1hye2Eyin" />
+                </node>
+                <node concept="3UOqEq" id="6RKU0seOJAX" role="2ay43_">
+                  <property role="3_VSTZ" value="0" />
+                  <node concept="1NuoHz" id="6RKU0seOJB1" role="2aBVWM">
+                    <ref role="3elmOO" node="4w1hye2EyhB" resolve="Priority" />
+                    <node concept="2mJbJ5" id="6RKU0seOJAY" role="1NuoHy">
+                      <node concept="2mJbG1" id="6RKU0seOJAZ" role="2mJbJ6">
+                        <node concept="3eDL7N" id="6RKU0seOJB0" role="3n32fm" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1NuoHz" id="6RKU0seOJB6" role="2aBVWM">
+                    <ref role="3elmOO" node="7Ymnhjip$_L" resolve="Task Name" />
+                    <node concept="V3Zc6" id="6RKU0seOJB3" role="1NuoHy">
+                      <node concept="V3Zdv" id="6RKU0seOJB4" role="V3Zc7">
+                        <node concept="o7Kjd" id="6RKU0seOJB5" role="oSbKM">
+                          <property role="o7K7r" value="Task A" />
+                        </node>
+                      </node>
+                      <node concept="31hZu$" id="6RKU0seOJBd" role="V3Zc7">
+                        <property role="3mbuAy" value="red" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1NuoHz" id="6RKU0seOJBb" role="2aBVWM">
+                    <ref role="3elmOO" node="4w1hye2Eyio" resolve="Due Date" />
+                    <node concept="V3Zc6" id="6RKU0seOJB8" role="1NuoHy">
+                      <node concept="V3Zdv" id="6RKU0seOJB9" role="V3Zc7">
+                        <node concept="o7Kjd" id="6RKU0seOJBa" role="oSbKM">
+                          <property role="o7K7r" value="2023/01/01" />
+                        </node>
+                      </node>
+                      <node concept="31hZu$" id="6RKU0seOJBe" role="V3Zc7">
+                        <property role="3mbuAy" value="red" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="2gGjxPLE_Xr" role="30n1Qb">
+      <property role="TrG5h" value="Due Date Tooltip" />
+      <node concept="1IbZgy" id="2gGjxPLE_Xs" role="DUd2K">
+        <node concept="1wOnht" id="2gGjxPLE_Xt" role="DUiTU">
+          <property role="TrG5h" value="dueDate2024" />
+          <property role="1wIYJB" value="6RKU0sdiKfv/JSON" />
+          <node concept="1wOntz" id="2gGjxPLE_Xu" role="1wOkDR">
+            <node concept="1wOkDO" id="2gGjxPLE_Xv" role="1wOkDD">
+              <property role="1wOkPU" value="id" />
+            </node>
+            <node concept="1wOkDO" id="2gGjxPLE_Xw" role="1wOkDD">
+              <property role="1wOkPU" value="name" />
+            </node>
+            <node concept="1wOkDO" id="2gGjxPLE_Xx" role="1wOkDD">
+              <property role="1wOkPU" value="dueDate" />
+            </node>
+          </node>
+          <node concept="1wOntz" id="2gGjxPLE_Xy" role="1wOkDP">
+            <node concept="1wOkDO" id="2gGjxPLE_Xz" role="1wOkDD">
+              <property role="1wOkPU" value="0" />
+            </node>
+            <node concept="1wOkDO" id="2gGjxPLE_X$" role="1wOkDD">
+              <property role="1wOkPU" value="Task A" />
+            </node>
+            <node concept="1wOkDO" id="2gGjxPLE_X_" role="1wOkDD">
+              <property role="1wOkPU" value="2024/10/11" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1s$VFG" id="2gGjxPLE_XA" role="1s$QAY">
+        <node concept="DUd5q" id="2gGjxPLE_XB" role="1s$QAM">
+          <node concept="27s6xY" id="2gGjxPLE_XC" role="DUiS9">
+            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
+          </node>
+        </node>
+        <node concept="DUd2R" id="2gGjxPLE_XD" role="1s$QAX">
+          <node concept="30nzp_" id="2gGjxPLE_Y0" role="DUiSb">
+            <ref role="30nzpS" node="7Ymnhjip$_D" resolve="Tasks" />
+            <node concept="3UVeCy" id="2gGjxPLE_Y1" role="30nDbQ">
+              <node concept="2ayrQO" id="2gGjxPLE_Y2" role="3UVeCz">
+                <node concept="1EpGR1" id="2gGjxPLE_Y3" role="1EpG3j">
+                  <property role="1EpG3l" value="true" />
+                  <ref role="1EpG3m" node="4w1hye2Eyhv" />
+                </node>
+                <node concept="1EpGR1" id="2gGjxPLE_Y4" role="1EpG3j">
+                  <property role="1EpG3l" value="true" />
+                  <ref role="1EpG3m" node="7Ymnhjip$_E" />
+                </node>
+                <node concept="1EpGR1" id="2gGjxPLE_Y5" role="1EpG3j">
+                  <ref role="1EpG3m" node="4w1hye2Eyin" />
+                </node>
+                <node concept="3UOqEq" id="2gGjxPLE_Y6" role="2ay43_">
+                  <property role="3_VSTZ" value="0" />
+                  <node concept="1NuoHz" id="2gGjxPLE_Ya" role="2aBVWM">
+                    <ref role="3elmOO" node="4w1hye2EyhB" resolve="Priority" />
+                    <node concept="2mJbJ5" id="2gGjxPLE_Y7" role="1NuoHy">
+                      <node concept="2mJbG1" id="2gGjxPLE_Y8" role="2mJbJ6">
+                        <node concept="3eDL7N" id="2gGjxPLE_Y9" role="3n32fm" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1NuoHz" id="2gGjxPLE_Yf" role="2aBVWM">
+                    <ref role="3elmOO" node="7Ymnhjip$_L" resolve="Task Name" />
+                    <node concept="V3Zc6" id="2gGjxPLE_Yc" role="1NuoHy">
+                      <node concept="V3Zdv" id="2gGjxPLE_Yd" role="V3Zc7">
+                        <node concept="o7Kjd" id="2gGjxPLE_Ye" role="oSbKM" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1NuoHz" id="2gGjxPLE_Yk" role="2aBVWM">
+                    <ref role="3elmOO" node="4w1hye2Eyio" resolve="Due Date" />
+                    <node concept="V3Zc6" id="2gGjxPLE_Yh" role="1NuoHy">
+                      <node concept="V3Zdv" id="2gGjxPLE_Yi" role="V3Zc7">
+                        <node concept="o7Kjd" id="2gGjxPLE_Yj" role="oSbKM">
+                          <property role="o7K7r" value="2024/10/11" />
+                        </node>
+                      </node>
+                      <node concept="1G_fEj" id="2gGjxPLE_Ym" role="V3Zc7">
+                        <node concept="o7Kjd" id="2gGjxPLE_Yn" role="1ACcNq">
+                          <property role="o7K7r" value="11th October 2024" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1u6Luu" id="4w1hye2Eyif">
+    <property role="TrG5h" value="TaskImages" />
+    <node concept="1u6Luv" id="4w1hye2Eyih" role="1u6Lvn">
+      <property role="TrG5h" value="PrioHigh" />
+      <property role="2mJlLi" value="images/image_prio_high.png" />
+      <property role="Lsnro" value="16" />
+      <property role="LsnsT" value="16" />
+    </node>
+    <node concept="1u6Luv" id="4w1hye2Eyii" role="1u6Lvn">
+      <property role="TrG5h" value="PrioMedium" />
+      <property role="2mJlLi" value="images/image_prio_medium.png" />
+      <property role="Lsnro" value="16" />
+      <property role="LsnsT" value="16" />
+    </node>
+    <node concept="1u6Luv" id="4w1hye2Eyij" role="1u6Lvn">
+      <property role="TrG5h" value="PrioLow" />
+      <property role="2mJlLi" value="images/image_prio_low.png" />
+      <property role="Lsnro" value="16" />
+      <property role="LsnsT" value="16" />
+    </node>
+    <node concept="28FJ0O" id="4w1hye2Eyig" role="28FJ0w">
+      <property role="TrG5h" value="PriorityImages" />
+      <node concept="3eDL7N" id="4w1hye2Eyik" role="28FJ0D">
+        <ref role="3eDL7M" node="4w1hye2Eyij" resolve="PrioLow" />
+      </node>
+      <node concept="3eDL7N" id="4w1hye2Eyil" role="28FJ0D">
+        <ref role="3eDL7M" node="4w1hye2Eyii" resolve="PrioMedium" />
+      </node>
+      <node concept="3eDL7N" id="4w1hye2Eyim" role="28FJ0D">
+        <ref role="3eDL7M" node="4w1hye2Eyih" resolve="PrioHigh" />
+      </node>
+    </node>
+  </node>
+  <node concept="30n1Qd" id="7NXUkdSUtqp">
+    <property role="TrG5h" value="TaskListAddDeleteTests" />
+    <ref role="30n1PB" node="7Ymnhjip$__" resolve="TaskListViewModel" />
     <node concept="3LKzX3" id="7lPnU2OOXHa" role="30n1Qb">
       <property role="TrG5h" value="Add New Task" />
       <node concept="1s$VFG" id="7lPnU2OOXHb" role="1s$QAY">
@@ -883,8 +1262,37 @@
         </node>
       </node>
       <node concept="1IbZgy" id="7lPnU2OOXHK" role="DUd2K">
-        <node concept="8w7HN" id="7NXUkdOQAEh" role="DUiTU">
-          <ref role="8w7Kh" node="6RKU0sdELnM" resolve="oneTask" />
+        <node concept="1wOnht" id="7NXUkdSUtAY" role="DUiTU">
+          <property role="TrG5h" value="oneTask" />
+          <property role="1wIYJB" value="6RKU0sdiKfv/JSON" />
+          <node concept="1wOntz" id="7NXUkdSUtAZ" role="1wOkDR">
+            <node concept="1wOkDO" id="7NXUkdSUtB0" role="1wOkDD">
+              <property role="1wOkPU" value="id" />
+            </node>
+            <node concept="1wOkDO" id="7NXUkdSUtB1" role="1wOkDD">
+              <property role="1wOkPU" value="name" />
+            </node>
+            <node concept="1wOkDO" id="7NXUkdSUtB2" role="1wOkDD">
+              <property role="1wOkPU" value="priority" />
+            </node>
+            <node concept="1wOkDO" id="7NXUkdSUtB3" role="1wOkDD">
+              <property role="1wOkPU" value="dueDate" />
+            </node>
+          </node>
+          <node concept="1wOntz" id="7NXUkdSUtB4" role="1wOkDP">
+            <node concept="1wOkDO" id="7NXUkdSUtB5" role="1wOkDD">
+              <property role="1wOkPU" value="0" />
+            </node>
+            <node concept="1wOkDO" id="7NXUkdSUtB6" role="1wOkDD">
+              <property role="1wOkPU" value="A" />
+            </node>
+            <node concept="1wOkDO" id="7NXUkdSUtB7" role="1wOkDD">
+              <property role="1wOkPU" value="low" />
+            </node>
+            <node concept="1wOkDO" id="7NXUkdSUtB8" role="1wOkDD">
+              <property role="1wOkPU" value="2024/12/01" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -1268,351 +1676,6 @@
         </node>
       </node>
     </node>
-    <node concept="3LKzX3" id="7lPnU2OOunm" role="30n1Qb">
-      <property role="TrG5h" value="Load Tasks with all three priority levels" />
-      <node concept="1s$VFG" id="7lPnU2OOunn" role="1s$QAY">
-        <node concept="DUd5q" id="7lPnU2OOuno" role="1s$QAM">
-          <node concept="27s6xY" id="7lPnU2OOunp" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
-          </node>
-        </node>
-        <node concept="DUd2R" id="7lPnU2OOunq" role="1s$QAX">
-          <node concept="30nzp_" id="7lPnU2OOunr" role="DUiSb">
-            <ref role="30nzpS" node="7Ymnhjip$_D" resolve="Tasks" />
-            <node concept="3UVeCy" id="7lPnU2OOuns" role="30nDbQ">
-              <node concept="2ayrQO" id="7lPnU2OOunt" role="3UVeCz">
-                <node concept="1EpGR1" id="7lPnU2OOunu" role="1EpG3j">
-                  <ref role="1EpG3m" node="4w1hye2Eyhv" />
-                </node>
-                <node concept="1EpGR1" id="7lPnU2OOunv" role="1EpG3j">
-                  <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="7Ymnhjip$_E" />
-                </node>
-                <node concept="1EpGR1" id="7lPnU2OOunw" role="1EpG3j">
-                  <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="4w1hye2Eyin" />
-                </node>
-                <node concept="3UOqEq" id="7lPnU2OOunx" role="2ay43_">
-                  <property role="3_VSTZ" value="0" />
-                  <node concept="1NuoHz" id="7lPnU2OOuny" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2EyhB" resolve="Priority" />
-                    <node concept="2mJbJ5" id="7lPnU2OOunz" role="1NuoHy">
-                      <node concept="2mJbG1" id="7lPnU2OOun$" role="2mJbJ6">
-                        <node concept="3eDL7N" id="7lPnU2OOun_" role="3n32fm">
-                          <ref role="3eDL7M" node="4w1hye2Eyij" resolve="PrioLow" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="1NuoHz" id="7lPnU2OOunA" role="2aBVWM">
-                    <ref role="3elmOO" node="7Ymnhjip$_L" resolve="Task Name" />
-                    <node concept="V3Zc6" id="7lPnU2OOunB" role="1NuoHy">
-                      <node concept="V3Zdv" id="7lPnU2OOunC" role="V3Zc7">
-                        <node concept="o7Kjd" id="7lPnU2OOunD" role="oSbKM">
-                          <property role="o7K7r" value="A" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="1NuoHz" id="7lPnU2OOunE" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2Eyio" resolve="Due Date" />
-                    <node concept="V3Zc6" id="7lPnU2OOunF" role="1NuoHy">
-                      <node concept="V3Zdv" id="7lPnU2OOunG" role="V3Zc7">
-                        <node concept="o7Kjd" id="7lPnU2OOunH" role="oSbKM">
-                          <property role="o7K7r" value="2024/12/01" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3UOqEq" id="7lPnU2OOuo9" role="2ay43_">
-                  <property role="3_VSTZ" value="1" />
-                  <node concept="1NuoHz" id="7lPnU2OOuod" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2EyhB" resolve="Priority" />
-                    <node concept="2mJbJ5" id="7lPnU2OOuoa" role="1NuoHy">
-                      <node concept="2mJbG1" id="7lPnU2OOuob" role="2mJbJ6">
-                        <node concept="3eDL7N" id="7lPnU2OOuoc" role="3n32fm">
-                          <ref role="3eDL7M" node="4w1hye2Eyii" resolve="PrioMedium" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="1NuoHz" id="7lPnU2OOuoi" role="2aBVWM">
-                    <ref role="3elmOO" node="7Ymnhjip$_L" resolve="Task Name" />
-                    <node concept="V3Zc6" id="7lPnU2OOuof" role="1NuoHy">
-                      <node concept="V3Zdv" id="7lPnU2OOuog" role="V3Zc7">
-                        <node concept="o7Kjd" id="7lPnU2OOuoh" role="oSbKM" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="1NuoHz" id="7lPnU2OOuon" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2Eyio" resolve="Due Date" />
-                    <node concept="V3Zc6" id="7lPnU2OOuok" role="1NuoHy">
-                      <node concept="V3Zdv" id="7lPnU2OOuol" role="V3Zc7">
-                        <node concept="o7Kjd" id="7lPnU2OOuom" role="oSbKM" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3UOqEq" id="7lPnU2OOuop" role="2ay43_">
-                  <property role="3_VSTZ" value="2" />
-                  <node concept="1NuoHz" id="7lPnU2OOuot" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2EyhB" resolve="Priority" />
-                    <node concept="2mJbJ5" id="7lPnU2OOuoq" role="1NuoHy">
-                      <node concept="2mJbG1" id="7lPnU2OOuor" role="2mJbJ6">
-                        <node concept="3eDL7N" id="7lPnU2OOuos" role="3n32fm">
-                          <ref role="3eDL7M" node="4w1hye2Eyih" resolve="PrioHigh" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="1NuoHz" id="7lPnU2OOuoy" role="2aBVWM">
-                    <ref role="3elmOO" node="7Ymnhjip$_L" resolve="Task Name" />
-                    <node concept="V3Zc6" id="7lPnU2OOuov" role="1NuoHy">
-                      <node concept="V3Zdv" id="7lPnU2OOuow" role="V3Zc7">
-                        <node concept="o7Kjd" id="7lPnU2OOuox" role="oSbKM" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="1NuoHz" id="7lPnU2OOuoB" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2Eyio" resolve="Due Date" />
-                    <node concept="V3Zc6" id="7lPnU2OOuo$" role="1NuoHy">
-                      <node concept="V3Zdv" id="7lPnU2OOuo_" role="V3Zc7">
-                        <node concept="o7Kjd" id="7lPnU2OOuoA" role="oSbKM" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1IbZgy" id="6RKU0sdR0ns" role="DUd2K">
-        <node concept="1wOnht" id="6RKU0sdR0nu" role="DUiTU">
-          <property role="TrG5h" value="priorityCombinations" />
-          <property role="1wIYJB" value="6RKU0sdiKfv/JSON" />
-          <node concept="1wOntz" id="6RKU0sdR0nz" role="1wOkDR">
-            <node concept="1wOkDO" id="6RKU0sdR0n$" role="1wOkDD">
-              <property role="1wOkPU" value="id" />
-            </node>
-            <node concept="1wOkDO" id="6RKU0sdR0n_" role="1wOkDD">
-              <property role="1wOkPU" value="priority" />
-            </node>
-          </node>
-          <node concept="1wOntz" id="6RKU0sdR0nA" role="1wOkDP">
-            <node concept="1wOkDO" id="6RKU0sdR0nB" role="1wOkDD">
-              <property role="1wOkPU" value="0" />
-            </node>
-            <node concept="1wOkDO" id="6RKU0sdR0nC" role="1wOkDD">
-              <property role="1wOkPU" value="low" />
-            </node>
-          </node>
-          <node concept="1wOntz" id="6RKU0sdR0nE" role="1wOkDP">
-            <node concept="1wOkDO" id="6RKU0sdR0nF" role="1wOkDD">
-              <property role="1wOkPU" value="1" />
-            </node>
-            <node concept="1wOkDO" id="6RKU0sdR0nG" role="1wOkDD">
-              <property role="1wOkPU" value="medium" />
-            </node>
-          </node>
-          <node concept="1wOntz" id="6RKU0sdR0nI" role="1wOkDP">
-            <node concept="1wOkDO" id="6RKU0sdR0nJ" role="1wOkDD">
-              <property role="1wOkPU" value="2" />
-            </node>
-            <node concept="1wOkDO" id="6RKU0sdR0nK" role="1wOkDD">
-              <property role="1wOkPU" value="high" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3LKzX3" id="6RKU0seOJAv" role="30n1Qb">
-      <property role="TrG5h" value="Due Date from 2023" />
-      <node concept="1IbZgy" id="6RKU0seOJAw" role="DUd2K">
-        <node concept="1wOnht" id="6RKU0seOJAB" role="DUiTU">
-          <property role="TrG5h" value="dueDate2023" />
-          <property role="1wIYJB" value="6RKU0sdiKfv/JSON" />
-          <node concept="1wOntz" id="6RKU0seOJAD" role="1wOkDR">
-            <node concept="1wOkDO" id="6RKU0seOJAF" role="1wOkDD">
-              <property role="1wOkPU" value="id" />
-            </node>
-            <node concept="1wOkDO" id="6RKU0seOJAL" role="1wOkDD">
-              <property role="1wOkPU" value="name" />
-            </node>
-            <node concept="1wOkDO" id="6RKU0seOJAN" role="1wOkDD">
-              <property role="1wOkPU" value="dueDate" />
-            </node>
-          </node>
-          <node concept="1wOntz" id="6RKU0seOJAH" role="1wOkDP">
-            <node concept="1wOkDO" id="6RKU0seOJAJ" role="1wOkDD">
-              <property role="1wOkPU" value="0" />
-            </node>
-            <node concept="1wOkDO" id="6RKU0seOJAM" role="1wOkDD">
-              <property role="1wOkPU" value="Task A" />
-            </node>
-            <node concept="1wOkDO" id="6RKU0seOJAO" role="1wOkDD">
-              <property role="1wOkPU" value="2023/01/01" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1s$VFG" id="6RKU0seOJAy" role="1s$QAY">
-        <node concept="DUd5q" id="6RKU0seOJAz" role="1s$QAM">
-          <node concept="27s6xY" id="6RKU0seOJAP" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
-          </node>
-        </node>
-        <node concept="DUd2R" id="6RKU0seOJA_" role="1s$QAX">
-          <node concept="30nzp_" id="6RKU0seOJAR" role="DUiSb">
-            <ref role="30nzpS" node="7Ymnhjip$_D" resolve="Tasks" />
-            <node concept="3UVeCy" id="6RKU0seOJAS" role="30nDbQ">
-              <node concept="2ayrQO" id="6RKU0seOJAT" role="3UVeCz">
-                <node concept="1EpGR1" id="6RKU0seOJAU" role="1EpG3j">
-                  <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="4w1hye2Eyhv" />
-                </node>
-                <node concept="1EpGR1" id="6RKU0seOJAV" role="1EpG3j">
-                  <ref role="1EpG3m" node="7Ymnhjip$_E" />
-                </node>
-                <node concept="1EpGR1" id="6RKU0seOJAW" role="1EpG3j">
-                  <ref role="1EpG3m" node="4w1hye2Eyin" />
-                </node>
-                <node concept="3UOqEq" id="6RKU0seOJAX" role="2ay43_">
-                  <property role="3_VSTZ" value="0" />
-                  <node concept="1NuoHz" id="6RKU0seOJB1" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2EyhB" resolve="Priority" />
-                    <node concept="2mJbJ5" id="6RKU0seOJAY" role="1NuoHy">
-                      <node concept="2mJbG1" id="6RKU0seOJAZ" role="2mJbJ6">
-                        <node concept="3eDL7N" id="6RKU0seOJB0" role="3n32fm" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="1NuoHz" id="6RKU0seOJB6" role="2aBVWM">
-                    <ref role="3elmOO" node="7Ymnhjip$_L" resolve="Task Name" />
-                    <node concept="V3Zc6" id="6RKU0seOJB3" role="1NuoHy">
-                      <node concept="V3Zdv" id="6RKU0seOJB4" role="V3Zc7">
-                        <node concept="o7Kjd" id="6RKU0seOJB5" role="oSbKM">
-                          <property role="o7K7r" value="Task A" />
-                        </node>
-                      </node>
-                      <node concept="31hZu$" id="6RKU0seOJBd" role="V3Zc7">
-                        <property role="3mbuAy" value="red" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="1NuoHz" id="6RKU0seOJBb" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2Eyio" resolve="Due Date" />
-                    <node concept="V3Zc6" id="6RKU0seOJB8" role="1NuoHy">
-                      <node concept="V3Zdv" id="6RKU0seOJB9" role="V3Zc7">
-                        <node concept="o7Kjd" id="6RKU0seOJBa" role="oSbKM">
-                          <property role="o7K7r" value="2023/01/01" />
-                        </node>
-                      </node>
-                      <node concept="31hZu$" id="6RKU0seOJBe" role="V3Zc7">
-                        <property role="3mbuAy" value="red" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3LKzX3" id="2gGjxPLE_Xr" role="30n1Qb">
-      <property role="TrG5h" value="Due Date Tooltip" />
-      <node concept="1IbZgy" id="2gGjxPLE_Xs" role="DUd2K">
-        <node concept="1wOnht" id="2gGjxPLE_Xt" role="DUiTU">
-          <property role="TrG5h" value="dueDate2024" />
-          <property role="1wIYJB" value="6RKU0sdiKfv/JSON" />
-          <node concept="1wOntz" id="2gGjxPLE_Xu" role="1wOkDR">
-            <node concept="1wOkDO" id="2gGjxPLE_Xv" role="1wOkDD">
-              <property role="1wOkPU" value="id" />
-            </node>
-            <node concept="1wOkDO" id="2gGjxPLE_Xw" role="1wOkDD">
-              <property role="1wOkPU" value="name" />
-            </node>
-            <node concept="1wOkDO" id="2gGjxPLE_Xx" role="1wOkDD">
-              <property role="1wOkPU" value="dueDate" />
-            </node>
-          </node>
-          <node concept="1wOntz" id="2gGjxPLE_Xy" role="1wOkDP">
-            <node concept="1wOkDO" id="2gGjxPLE_Xz" role="1wOkDD">
-              <property role="1wOkPU" value="0" />
-            </node>
-            <node concept="1wOkDO" id="2gGjxPLE_X$" role="1wOkDD">
-              <property role="1wOkPU" value="Task A" />
-            </node>
-            <node concept="1wOkDO" id="2gGjxPLE_X_" role="1wOkDD">
-              <property role="1wOkPU" value="2024/10/11" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1s$VFG" id="2gGjxPLE_XA" role="1s$QAY">
-        <node concept="DUd5q" id="2gGjxPLE_XB" role="1s$QAM">
-          <node concept="27s6xY" id="2gGjxPLE_XC" role="DUiS9">
-            <ref role="27sXQn" node="7Ymnhjip$_B" resolve="LoadView" />
-          </node>
-        </node>
-        <node concept="DUd2R" id="2gGjxPLE_XD" role="1s$QAX">
-          <node concept="30nzp_" id="2gGjxPLE_Y0" role="DUiSb">
-            <ref role="30nzpS" node="7Ymnhjip$_D" resolve="Tasks" />
-            <node concept="3UVeCy" id="2gGjxPLE_Y1" role="30nDbQ">
-              <node concept="2ayrQO" id="2gGjxPLE_Y2" role="3UVeCz">
-                <node concept="1EpGR1" id="2gGjxPLE_Y3" role="1EpG3j">
-                  <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="4w1hye2Eyhv" />
-                </node>
-                <node concept="1EpGR1" id="2gGjxPLE_Y4" role="1EpG3j">
-                  <property role="1EpG3l" value="true" />
-                  <ref role="1EpG3m" node="7Ymnhjip$_E" />
-                </node>
-                <node concept="1EpGR1" id="2gGjxPLE_Y5" role="1EpG3j">
-                  <ref role="1EpG3m" node="4w1hye2Eyin" />
-                </node>
-                <node concept="3UOqEq" id="2gGjxPLE_Y6" role="2ay43_">
-                  <property role="3_VSTZ" value="0" />
-                  <node concept="1NuoHz" id="2gGjxPLE_Ya" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2EyhB" resolve="Priority" />
-                    <node concept="2mJbJ5" id="2gGjxPLE_Y7" role="1NuoHy">
-                      <node concept="2mJbG1" id="2gGjxPLE_Y8" role="2mJbJ6">
-                        <node concept="3eDL7N" id="2gGjxPLE_Y9" role="3n32fm" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="1NuoHz" id="2gGjxPLE_Yf" role="2aBVWM">
-                    <ref role="3elmOO" node="7Ymnhjip$_L" resolve="Task Name" />
-                    <node concept="V3Zc6" id="2gGjxPLE_Yc" role="1NuoHy">
-                      <node concept="V3Zdv" id="2gGjxPLE_Yd" role="V3Zc7">
-                        <node concept="o7Kjd" id="2gGjxPLE_Ye" role="oSbKM" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="1NuoHz" id="2gGjxPLE_Yk" role="2aBVWM">
-                    <ref role="3elmOO" node="4w1hye2Eyio" resolve="Due Date" />
-                    <node concept="V3Zc6" id="2gGjxPLE_Yh" role="1NuoHy">
-                      <node concept="V3Zdv" id="2gGjxPLE_Yi" role="V3Zc7">
-                        <node concept="o7Kjd" id="2gGjxPLE_Yj" role="oSbKM">
-                          <property role="o7K7r" value="2024/10/11" />
-                        </node>
-                      </node>
-                      <node concept="1G_fEj" id="2gGjxPLE_Ym" role="V3Zc7">
-                        <node concept="o7Kjd" id="2gGjxPLE_Yn" role="1ACcNq">
-                          <property role="o7K7r" value="11th October 2024" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="3LKzX3" id="2gGjxPLE5Df" role="30n1Qb">
       <property role="TrG5h" value="Delete disabled if nothing selected" />
       <node concept="1IbZgy" id="2gGjxPLE5Dg" role="DUd2K">
@@ -1678,39 +1741,6 @@
             </node>
           </node>
         </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1u6Luu" id="4w1hye2Eyif">
-    <property role="TrG5h" value="TaskImages" />
-    <node concept="1u6Luv" id="4w1hye2Eyih" role="1u6Lvn">
-      <property role="TrG5h" value="PrioHigh" />
-      <property role="2mJlLi" value="images/image_prio_high.png" />
-      <property role="Lsnro" value="16" />
-      <property role="LsnsT" value="16" />
-    </node>
-    <node concept="1u6Luv" id="4w1hye2Eyii" role="1u6Lvn">
-      <property role="TrG5h" value="PrioMedium" />
-      <property role="2mJlLi" value="images/image_prio_medium.png" />
-      <property role="Lsnro" value="16" />
-      <property role="LsnsT" value="16" />
-    </node>
-    <node concept="1u6Luv" id="4w1hye2Eyij" role="1u6Lvn">
-      <property role="TrG5h" value="PrioLow" />
-      <property role="2mJlLi" value="images/image_prio_low.png" />
-      <property role="Lsnro" value="16" />
-      <property role="LsnsT" value="16" />
-    </node>
-    <node concept="28FJ0O" id="4w1hye2Eyig" role="28FJ0w">
-      <property role="TrG5h" value="PriorityImages" />
-      <node concept="3eDL7N" id="4w1hye2Eyik" role="28FJ0D">
-        <ref role="3eDL7M" node="4w1hye2Eyij" resolve="PrioLow" />
-      </node>
-      <node concept="3eDL7N" id="4w1hye2Eyil" role="28FJ0D">
-        <ref role="3eDL7M" node="4w1hye2Eyii" resolve="PrioMedium" />
-      </node>
-      <node concept="3eDL7N" id="4w1hye2Eyim" role="28FJ0D">
-        <ref role="3eDL7M" node="4w1hye2Eyih" resolve="PrioHigh" />
       </node>
     </node>
   </node>

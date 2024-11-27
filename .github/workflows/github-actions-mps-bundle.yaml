@@ -1,0 +1,55 @@
+### This file is downloaded from https://github.com/vimotest/mps-gradle-scripts/raw/main/.github/workflows/github-actions-release.yaml
+
+name: Bundle ViMoTest MPS
+
+on:
+  workflow_dispatch:
+
+env:
+  PROJECT_NAME: "mps-vimotest"
+  ARTIFACT_NAME: "mps-vimotest"
+
+jobs:
+  call-build-workflow:
+    uses: ./.github/workflows/workflow-build.yaml
+  bundle-windows:
+    runs-on: ubuntu-latest
+    needs: call-build-workflow
+    steps:
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - uses: actions/checkout@v4
+
+      # Download Build Artifacts
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifacts
+          path: build/artifacts/${{ env.PROJECT_NAME }}
+
+      - name: Make Gradlew Executable from Gradle task
+        run: chmod +x ./gradlew
+
+      # Modify download-mps.gradle to force Windows download
+      - name: Modify Download Script for Windows
+        run: sed -i 's/getOsFamily() == Os.FAMILY_WINDOWS/true/' ./gradle/download-mps.gradle
+
+      # Prepare MPS
+      - name: Download and Prepare MPS
+        run: sh ./gradlew prepareMps
+
+      # Extract build/artifacts/${{ env.PROJECT_NAME }}/${{ env.ARTIFACT_NAME }}.zip to build/mps-bundle/dependencies
+      - name: Extract Build Artifacts
+        run: unzip build/artifacts/${{ env.PROJECT_NAME }}/${{ env.ARTIFACT_NAME }}.zip -d build/mps-bundle/dependencies
+
+      # Archive MPS Bundle
+      - name: Archive MPS Bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: vimotest-mps-bundle-win
+          path: |
+            build/mps-bundle

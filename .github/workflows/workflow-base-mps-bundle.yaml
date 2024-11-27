@@ -1,0 +1,77 @@
+name: Reusable Bundle ViMoTest MPS
+
+on:
+  workflow_call:
+    inputs:
+      os:
+        required: true
+        type: string
+
+env:
+  PROJECT_NAME: "mps-vimotest"
+  ARTIFACT_NAME: "mps-vimotest"
+
+jobs:
+  bundle-mps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - uses: actions/checkout@v4
+
+      # Download Build Artifacts
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifacts
+          path: build/artifacts/${{ env.PROJECT_NAME }}
+
+      - name: Make Gradlew Executable from Gradle task
+        run: chmod +x ./gradlew
+
+      # Modify download-mps.gradle to force OS-specific download
+      - name: Modify Download Script for OS
+        run: |
+          if [ "${{ inputs.os }}" == "windows-x64" ]; then
+            sed -i 's/getOsFamily() == Os.FAMILY_WINDOWS/true/' ./gradle/download-mps.gradle
+          elif [ "${{ inputs.os }}" == "osx-x64" ]; then
+            sed -i 's/getOsFamily() == Os.FAMILY_MAC/true/' ./gradle/download-mps.gradle
+            sed -i 's/Os.isArch("aarch64")/false/' ./gradle/download-mps.gradle
+          elif [ "${{ inputs.os }}" == "osx-aarch64" ]; then
+            sed -i 's/getOsFamily() == Os.FAMILY_MAC/true/' ./gradle/download-mps.gradle
+            sed -i 's/Os.isArch("aarch64")/true/' ./gradle/download-mps.gradle
+          else
+            echo "Linux: no changes needed for download-mps.gradle"
+          fi
+
+      # Prepare MPS
+      - name: Download and Prepare MPS
+        run: sh ./gradlew prepareMps
+
+      # Extract mps-vimotest.zip to mps-bundle
+      - name: Extract Build Artifacts
+        run: unzip build/artifacts/${{ env.PROJECT_NAME }}/${{ env.ARTIFACT_NAME }}.zip -d build/mps-bundle/dependencies
+
+      - name: Determine MPS Folder Name
+        run: |
+          mps_folder="mps"
+          if [ "${{ inputs.os }}" == "osx-aarch64" ] || [ "${{ inputs.os }}" == "osx-x64" ]; then
+            mps_folder="Contents"
+          fi
+          echo "mps_folder=${mps_folder}" >> $GITHUB_ENV
+
+      # Move build/mps-bundle/dependencies contents to build/mps-bundle/mps/plugins
+      - name: Move MPS Plugins
+        run: mv build/mps-bundle/dependencies/* build/mps-bundle/${{ env.mps_folder }}/plugins
+
+      # Archive MPS Bundle
+      - name: Archive MPS Bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: vimotest-mps-bundle-${{ inputs.os }}
+          path: |
+            build/mps-bundle/${{ env.mps_folder }}

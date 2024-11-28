@@ -68,6 +68,14 @@ jobs:
       - name: Move MPS Plugins
         run: mv build/mps-bundle/dependencies/* build/mps-bundle/${{ env.mps_folder }}/plugins
 
+      # Remove -Didea.plugins.path lines in all build/mps-bundle/${mps_folder}/bin/*.vmoptions
+      - name: Remove -Didea.plugins.path from VM Options
+        run: |
+          for file in build/mps-bundle/${{ env.mps_folder }}/bin/*.vmoptions; do
+              sed -i '/-Didea.plugins.path/d' $file
+          done
+
+
       # Archive MPS Bundle
       - name: Archive MPS Bundle
         uses: actions/upload-artifact@v4

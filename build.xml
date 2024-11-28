@@ -733,7 +733,7 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.mpswidgets.runtime-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages" />
-    <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/build-and-plugin" />
+    <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-build" />
     <mkdir dir="${build.tmp}/default/de.vimotest.build.jar" />
     <mkdir dir="${build.tmp}/default/de.vimotest.build.jar/META-INF" />
     <echoxml file="${build.tmp}/default/de.vimotest.build.jar/META-INF/module.xml">
@@ -753,7 +753,7 @@
         <sources jar="de.vimotest.build-src.jar" descriptor="de.vimotest.build.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/build-and-plugin/de.vimotest.build.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-build/de.vimotest.build.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.vimotest.build" />
       <fileset dir="${basedir}/solutions/de.vimotest.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/de.vimotest.build.jar" />
@@ -761,7 +761,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.build-models">
       <fileset dir="${basedir}/solutions/de.vimotest.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/build-and-plugin/de.vimotest.build-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-build/de.vimotest.build-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/solutions/de.vimotest.build/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -797,7 +797,7 @@
         <sources jar="de.vimotest.genplan-src.jar" descriptor="de.vimotest.genplan.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/build-and-plugin/de.vimotest.genplan.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-build/de.vimotest.genplan.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.vimotest.genplan" />
       <fileset dir="${basedir}/solutions/de.vimotest.genplan/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/de.vimotest.genplan.jar" />
@@ -805,7 +805,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.genplan-models">
       <fileset dir="${basedir}/solutions/de.vimotest.genplan/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/build-and-plugin/de.vimotest.genplan-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-build/de.vimotest.genplan-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/solutions/de.vimotest.genplan/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -824,7 +824,7 @@
         <sources jar="." descriptor="de.vimotest.devkit.devkit" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/build-and-plugin/de.vimotest.devkit.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-build/de.vimotest.devkit.jar" duplicate="preserve">
       <zipfileset file="${basedir}/devkits/de.vimotest.devkit/de.vimotest.devkit.devkit" prefix="module" />
       <fileset dir="${build.tmp}/default/de.vimotest.devkit.jar" />
     </jar>

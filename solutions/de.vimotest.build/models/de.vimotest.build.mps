@@ -943,7 +943,7 @@
       </node>
     </node>
     <node concept="2G$12M" id="220dcIkyGML" role="3989C9">
-      <property role="TrG5h" value="build-and-plugin" />
+      <property role="TrG5h" value="mps-build" />
       <node concept="1E1JtA" id="220dcIkyGRA" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="de.vimotest.build" />

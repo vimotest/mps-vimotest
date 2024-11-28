@@ -275,7 +275,7 @@
       </node>
       <node concept="3_J27D" id="220dcIkyAjd" role="m$_w8">
         <node concept="3Mxwew" id="220dcIkyAje" role="3MwsjC">
-          <property role="3MwjfP" value="1.0" />
+          <property role="3MwjfP" value="1.0.0" />
         </node>
       </node>
       <node concept="m$f5U" id="220dcIkyAjf" role="m$_yh">
@@ -1067,9 +1067,6 @@
         </node>
         <node concept="3LEDTM" id="5PCYS1MDhdi" role="3LEDUa">
           <ref role="3LEDTN" node="26p1ZnjrosE" resolve="de.vimotest.genplan" />
-        </node>
-        <node concept="3LEDTM" id="5PCYS1MDhdj" role="3LEDUa">
-          <ref role="3LEDTN" to="mk2q:5tK9548cRt6" resolve="alfi.StandardModelLibrary" />
         </node>
         <node concept="3LEDTy" id="5PCYS1MDhdk" role="3LEDUa">
           <ref role="3LEDTV" to="ffeo:ymnOULAU0j" resolve="jetbrains.mps.baseLanguage.unitTest" />

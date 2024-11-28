@@ -15,10 +15,6 @@ apply from: 'gradle/sandbox/package-generated-code.gradle'
 task prepareMps {
     group 'mps'
     dependsOn 'buildOsSpecificBundle'
-    doLast {
-        // since we have no plugin dependencies, create the folder manually
-        file("$buildDir/mps-bundle/dependencies").mkdirs()
-    }
 }
 
 task mpsBuild {

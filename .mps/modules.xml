@@ -2,6 +2,9 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/devkits/de.vimotest.devkit.cpp/de.vimotest.devkit.cpp.devkit" folder="3_util.devkit" />
+      <modulePath path="$PROJECT_DIR$/devkits/de.vimotest.devkit.java/de.vimotest.devkit.java.devkit" folder="3_util.devkit" />
+      <modulePath path="$PROJECT_DIR$/devkits/de.vimotest.devkit/de.vimotest.devkit.devkit" folder="3_util.devkit" />
       <modulePath path="$PROJECT_DIR$/languages/de.vimotest.mpswidgets.runtime/de.vimotest.mpswidgets.runtime.msd" folder="3_util.mpswidgets" />
       <modulePath path="$PROJECT_DIR$/languages/de.vimotest.mpswidgets/de.vimotest.mpswidgets.mpl" folder="3_util.mpswidgets" />
       <modulePath path="$PROJECT_DIR$/languages/de.vimotest.types/de.vimotest.types.mpl" folder="1_vimotestdsl.types" />

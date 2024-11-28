@@ -732,6 +732,128 @@
       <zipfileset file="${basedir}/languages/de.vimotest.mpswidgets.runtime/de.vimotest.mpswidgets.runtime.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.mpswidgets.runtime-models" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages" />
+    <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/build-and-plugin" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.build.jar" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.build.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.build.jar/META-INF/module.xml">
+      <module namespace="de.vimotest.build" type="solution" uuid="694fa9f8-dbdd-46fd-a9d9-f8f8c27d011b">
+        <dependencies>
+          <module ref="4b6b1874-7e10-42bc-88e2-7525942dcfc8(CppBaseLanguage.build)" kind="cl" />
+          <module ref="b1005ef7-77b9-4100-a8d1-d289b725faf9(alfi.build)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
+          <language id="l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps" />
+          <language id="l:3600cb0a-44dd-4a5b-9968-22924406419e:jetbrains.mps.build.mps.tests" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.vimotest.build-src.jar" descriptor="de.vimotest.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/build-and-plugin/de.vimotest.build.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.vimotest.build" />
+      <fileset dir="${basedir}/solutions/de.vimotest.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.vimotest.build.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.build-models">
+      <fileset dir="${basedir}/solutions/de.vimotest.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/build-and-plugin/de.vimotest.build-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/solutions/de.vimotest.build/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/solutions/de.vimotest.build/de.vimotest.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.build-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.genplan.jar" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.genplan.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.genplan.jar/META-INF/module.xml">
+      <module namespace="de.vimotest.genplan" type="solution" uuid="b28932ae-6b0e-4f97-ad77-84f278001d91">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="76f7ae4d-6343-4b77-b3be-95673e578bcf(alfi.genplan)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:7ab1a6fa-0a11-4b95-9e48-75f363d6cb00:jetbrains.mps.lang.generator.plan" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.vimotest.genplan-src.jar" descriptor="de.vimotest.genplan.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/build-and-plugin/de.vimotest.genplan.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.vimotest.genplan" />
+      <fileset dir="${basedir}/solutions/de.vimotest.genplan/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.vimotest.genplan.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.genplan-models">
+      <fileset dir="${basedir}/solutions/de.vimotest.genplan/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/build-and-plugin/de.vimotest.genplan-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/solutions/de.vimotest.genplan/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/solutions/de.vimotest.genplan/de.vimotest.genplan.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.genplan-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.devkit.jar" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.devkit.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.devkit.jar/META-INF/module.xml">
+      <module namespace="de.vimotest.devkit" type="devkit" uuid="d1a914ef-09af-4c66-a6d1-618e1f9114ea">
+        <dependencies />
+        <uses />
+        <sources jar="." descriptor="de.vimotest.devkit.devkit" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/build-and-plugin/de.vimotest.devkit.jar" duplicate="preserve">
+      <zipfileset file="${basedir}/devkits/de.vimotest.devkit/de.vimotest.devkit.devkit" prefix="module" />
+      <fileset dir="${build.tmp}/default/de.vimotest.devkit.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.devkit.java.jar" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.devkit.java.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.devkit.java.jar/META-INF/module.xml">
+      <module namespace="de.vimotest.devkit.java" type="devkit" uuid="e94af119-3595-4522-b43e-d513dad29a47">
+        <dependencies />
+        <uses />
+        <sources jar="." descriptor="de.vimotest.devkit.java.devkit" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/build-and-plugin/de.vimotest.devkit.java.jar" duplicate="preserve">
+      <zipfileset file="${basedir}/devkits/de.vimotest.devkit.java/de.vimotest.devkit.java.devkit" prefix="module" />
+      <fileset dir="${build.tmp}/default/de.vimotest.devkit.java.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.devkit.cpp.jar" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.devkit.cpp.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.devkit.cpp.jar/META-INF/module.xml">
+      <module namespace="de.vimotest.devkit.cpp" type="devkit" uuid="46a8af36-23a4-42a2-a602-f54da5c1bbf7">
+        <dependencies />
+        <uses />
+        <sources jar="." descriptor="de.vimotest.devkit.cpp.devkit" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/build-and-plugin/de.vimotest.devkit.cpp.jar" duplicate="preserve">
+      <zipfileset file="${basedir}/devkits/de.vimotest.devkit.cpp/de.vimotest.devkit.cpp.devkit" prefix="module" />
+      <fileset dir="${build.tmp}/default/de.vimotest.devkit.cpp.jar" />
+    </jar>
     <zip destfile="${build.layout}/mps-vimotest.zip">
       <fileset dir="${build.tmp}/default/mps-vimotest.zip" />
     </zip>
@@ -903,50 +1025,6 @@
       <zipfileset file="${basedir}/solutions/de.vimotest.plugin/de.vimotest.plugin.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.plugin-models" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/de.vimotest.genplan.jar" />
-    <mkdir dir="${build.tmp}/default/de.vimotest.genplan.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/de.vimotest.genplan.jar/META-INF/module.xml">
-      <module namespace="de.vimotest.genplan" type="solution" uuid="b28932ae-6b0e-4f97-ad77-84f278001d91">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
-          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
-          <module ref="76f7ae4d-6343-4b77-b3be-95673e578bcf(alfi.genplan)" kind="cl" />
-        </dependencies>
-        <uses>
-          <language id="l:7ab1a6fa-0a11-4b95-9e48-75f363d6cb00:jetbrains.mps.lang.generator.plan" />
-          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
-        </uses>
-        <classpath>
-          <entry path="." />
-        </classpath>
-        <sources jar="de.vimotest.genplan-src.jar" descriptor="de.vimotest.genplan.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.layout}/tests/de.vimotest.genplan.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/de.vimotest.genplan" />
-      <fileset dir="${basedir}/solutions/de.vimotest.genplan/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/de.vimotest.genplan.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.genplan-models">
-      <fileset dir="${basedir}/solutions/de.vimotest.genplan/models" includes="**/*.mps, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.layout}/tests/de.vimotest.genplan-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/solutions/de.vimotest.genplan/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-        <exclude name="**/checkpoints" />
-        <exclude name="**/*.mps" />
-      </fileset>
-      <zipfileset file="${basedir}/solutions/de.vimotest.genplan/de.vimotest.genplan.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.genplan-models" prefix="module/models" />
-    </jar>
     <mkdir dir="${build.tmp}/default/de.vimotest.sandbox.jar" />
     <mkdir dir="${build.tmp}/default/de.vimotest.sandbox.jar/META-INF" />
     <echoxml file="${build.tmp}/default/de.vimotest.sandbox.jar/META-INF/module.xml">
@@ -1067,7 +1145,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.de.vimotest.viewmodel, java.compile.de.vimotest.viewmodel.generator, java.compile.de.vimotest.viewmodel.testing, java.compile.de.vimotest.viewmodel.testing.generator, java.compile.de.vimotest.types, java.compile.de.vimotest.mpswidgets, java.compile.de.vimotest.mpswidgets.generator, java.compile.de.vimotest.mpswidgets.runtime, java.compile.de.vimotest.widgetdsl, java.compile.de.vimotest.build, java.compile.de.vimotest.genplan, java.compile.de.vimotest.plugin, java.compile.de.vimotest.mpstest, java.compile.de.vimotest.sandbox" />
+  <target name="compileJava" depends="java.compile.de.vimotest.viewmodel, java.compile.de.vimotest.viewmodel.generator, java.compile.de.vimotest.viewmodel.testing, java.compile.de.vimotest.viewmodel.testing.generator, java.compile.de.vimotest.types, java.compile.de.vimotest.mpswidgets, java.compile.de.vimotest.mpswidgets.generator, java.compile.de.vimotest.mpswidgets.runtime, java.compile.de.vimotest.widgetdsl, java.compile.de.vimotest.plugin, java.compile.de.vimotest.build, java.compile.de.vimotest.genplan, java.compile.de.vimotest.sandbox, java.compile.de.vimotest.mpstest" />
   
   <target name="processResources" />
   
@@ -1104,6 +1182,9 @@
         <module file="${basedir}/languages/de.vimotest.viewmodel/de.vimotest.viewmodel.mpl" />
       </chunk>
       <chunk>
+        <module file="${basedir}/devkits/de.vimotest.devkit/de.vimotest.devkit.devkit" />
+        <module file="${basedir}/devkits/de.vimotest.devkit.cpp/de.vimotest.devkit.cpp.devkit" />
+        <module file="${basedir}/devkits/de.vimotest.devkit.java/de.vimotest.devkit.java.devkit" />
         <module file="${basedir}/solutions/de.vimotest.plugin/de.vimotest.plugin.msd" />
         <module file="${basedir}/languages/de.vimotest.viewmodel.testing/de.vimotest.viewmodel.testing.mpl" />
       </chunk>
@@ -1765,57 +1846,6 @@
     </copy>
   </target>
   
-  <target name="java.compile.de.vimotest.build">
-    <mkdir dir="${basedir}/solutions/de.vimotest.build/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/de.vimotest.build" />
-    <javac destdir="${build.tmp}/java/out/de.vimotest.build" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${basedir}/solutions/de.vimotest.build/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.CppBaseLanguage}/CppBaseLanguage/languages/CppBaseLanguage/CppBaseLanguage.build.jar" />
-        <fileset file="${artifacts.alfi-build}/alfi/languages/alfi-support/alfi.build.jar" />
-      </classpath>
-    </javac>
-    <copy todir="${build.tmp}/java/out/de.vimotest.build">
-      <fileset dir="${basedir}/solutions/de.vimotest.build/source_gen" excludes="**/*.java" />
-    </copy>
-  </target>
-  
-  <target name="java.compile.de.vimotest.genplan" depends="fetchDependencies">
-    <mkdir dir="${basedir}/solutions/de.vimotest.genplan/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/de.vimotest.genplan" />
-    <javac destdir="${build.tmp}/java/out/de.vimotest.genplan" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${basedir}/solutions/de.vimotest.genplan/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/util-8.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
-        <fileset file="${artifacts.alfi-build}/alfi/languages/alfi-transformations/alfi.genplan.jar" />
-      </classpath>
-    </javac>
-    <copy todir="${build.tmp}/java/out/de.vimotest.genplan">
-      <fileset dir="${basedir}/solutions/de.vimotest.genplan/source_gen" excludes="**/*.java" />
-    </copy>
-  </target>
-  
   <target name="java.compile.de.vimotest.plugin" depends="java.compile.de.vimotest.types, java.compile.de.vimotest.viewmodel, java.compile.de.vimotest.viewmodel.testing, java.compile.de.vimotest.widgetdsl, fetchDependencies">
     <mkdir dir="${basedir}/solutions/de.vimotest.plugin/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.vimotest.plugin" />
@@ -1893,6 +1923,105 @@
     </javac>
     <copy todir="${build.tmp}/java/out/de.vimotest.plugin">
       <fileset dir="${basedir}/solutions/de.vimotest.plugin/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.de.vimotest.build">
+    <mkdir dir="${basedir}/solutions/de.vimotest.build/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.vimotest.build" />
+    <javac destdir="${build.tmp}/java/out/de.vimotest.build" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/solutions/de.vimotest.build/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.CppBaseLanguage}/CppBaseLanguage/languages/CppBaseLanguage/CppBaseLanguage.build.jar" />
+        <fileset file="${artifacts.alfi-build}/alfi/languages/alfi-support/alfi.build.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/de.vimotest.build">
+      <fileset dir="${basedir}/solutions/de.vimotest.build/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.de.vimotest.genplan" depends="fetchDependencies">
+    <mkdir dir="${basedir}/solutions/de.vimotest.genplan/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.vimotest.genplan" />
+    <javac destdir="${build.tmp}/java/out/de.vimotest.genplan" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/solutions/de.vimotest.genplan/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/util-8.jar" />
+        <fileset file="${artifacts.mps}/lib/trove.jar" />
+        <fileset file="${artifacts.alfi-build}/alfi/languages/alfi-transformations/alfi.genplan.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/de.vimotest.genplan">
+      <fileset dir="${basedir}/solutions/de.vimotest.genplan/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.de.vimotest.sandbox" depends="java.compile.de.vimotest.genplan, fetchDependencies">
+    <mkdir dir="${basedir}/solutions/de.vimotest.sandbox/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.vimotest.sandbox" />
+    <javac destdir="${build.tmp}/java/out/de.vimotest.sandbox" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/solutions/de.vimotest.sandbox/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <pathelement path="${build.tmp}/java/out/de.vimotest.genplan" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/util-8.jar" />
+        <fileset file="${artifacts.mps}/lib/trove.jar" />
+        <fileset file="${artifacts.alfi-build}/alfi/languages/alfi-modules/alfi.StandardModelLibrary.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.junit5.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.9.3.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-engine-5.9.3.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-migrationsupport-5.9.3.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-params-5.9.3.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-commons-1.9.3.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-engine-1.9.3.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-launcher-1.9.3.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-vintage-engine-5.9.3.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="opentest4j-1.2.0.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-reporting-1.9.3.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/de.vimotest.sandbox">
+      <fileset dir="${basedir}/solutions/de.vimotest.sandbox/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
@@ -1987,54 +2116,6 @@
     </copy>
   </target>
   
-  <target name="java.compile.de.vimotest.sandbox" depends="java.compile.de.vimotest.genplan, fetchDependencies">
-    <mkdir dir="${basedir}/solutions/de.vimotest.sandbox/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/de.vimotest.sandbox" />
-    <javac destdir="${build.tmp}/java/out/de.vimotest.sandbox" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${basedir}/solutions/de.vimotest.sandbox/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <pathelement path="${build.tmp}/java/out/de.vimotest.genplan" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/util-8.jar" />
-        <fileset file="${artifacts.mps}/lib/trove.jar" />
-        <fileset file="${artifacts.alfi-build}/alfi/languages/alfi-modules/alfi.StandardModelLibrary.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.junit5.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-engine-5.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-migrationsupport-5.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-params-5.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-commons-1.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-engine-1.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-launcher-1.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-vintage-engine-5.9.3.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="opentest4j-1.2.0.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-reporting-1.9.3.jar" />
-      </classpath>
-    </javac>
-    <copy todir="${build.tmp}/java/out/de.vimotest.sandbox">
-      <fileset dir="${basedir}/solutions/de.vimotest.sandbox/source_gen" excludes="**/*.java" />
-    </copy>
-  </target>
-  
   <target name="test.runModuleTests" depends="assemble">
     <path location="${build.layout}/tests/de.vimotest.mpstest.jar" id="mps.tests.path" />
     <pathconvert property="mps.tests.path.string" refid="mps.tests.path" />
@@ -2054,7 +2135,6 @@
       
       <library file="${artifacts.mps}/languages/workbench-stub.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
-      <library file="${build.layout}/tests/de.vimotest.genplan.jar" />
       <library file="${build.layout}/tests/de.vimotest.plugin.jar" />
       <library file="${build.layout}/tests/de.vimotest.sandbox.jar" />
       <library file="${build.layout}/tests/de.vimotest.widgetdsl.jar" />

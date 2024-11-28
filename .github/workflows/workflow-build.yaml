@@ -64,6 +64,15 @@ jobs:
           name: vimotest-sandbox-code
           path: build/code-gen
 
+      # Archive Plugins
+      - name: Extract ViMoTest Plugin Artifact
+        run: unzip build/artifacts/${{ env.PROJECT_NAME }}/${{ env.ARTIFACT_NAME }}.zip -d build/mps-bundle/dependencies
+      - name: Archive ViMoTest All Plugins
+        uses: actions/upload-artifact@v4
+        with:
+          name: vimotest-plugins-all
+          path: build/mps-bundle/dependencies
+
   buildAndTestSandboxJavaCode:
     runs-on: ubuntu-latest
     needs: build

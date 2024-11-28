@@ -828,32 +828,6 @@
       <zipfileset file="${basedir}/devkits/de.vimotest.devkit/de.vimotest.devkit.devkit" prefix="module" />
       <fileset dir="${build.tmp}/default/de.vimotest.devkit.jar" />
     </jar>
-    <mkdir dir="${build.tmp}/default/de.vimotest.devkit.java.jar" />
-    <mkdir dir="${build.tmp}/default/de.vimotest.devkit.java.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/de.vimotest.devkit.java.jar/META-INF/module.xml">
-      <module namespace="de.vimotest.devkit.java" type="devkit" uuid="e94af119-3595-4522-b43e-d513dad29a47">
-        <dependencies />
-        <uses />
-        <sources jar="." descriptor="de.vimotest.devkit.java.devkit" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/build-and-plugin/de.vimotest.devkit.java.jar" duplicate="preserve">
-      <zipfileset file="${basedir}/devkits/de.vimotest.devkit.java/de.vimotest.devkit.java.devkit" prefix="module" />
-      <fileset dir="${build.tmp}/default/de.vimotest.devkit.java.jar" />
-    </jar>
-    <mkdir dir="${build.tmp}/default/de.vimotest.devkit.cpp.jar" />
-    <mkdir dir="${build.tmp}/default/de.vimotest.devkit.cpp.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/de.vimotest.devkit.cpp.jar/META-INF/module.xml">
-      <module namespace="de.vimotest.devkit.cpp" type="devkit" uuid="46a8af36-23a4-42a2-a602-f54da5c1bbf7">
-        <dependencies />
-        <uses />
-        <sources jar="." descriptor="de.vimotest.devkit.cpp.devkit" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/build-and-plugin/de.vimotest.devkit.cpp.jar" duplicate="preserve">
-      <zipfileset file="${basedir}/devkits/de.vimotest.devkit.cpp/de.vimotest.devkit.cpp.devkit" prefix="module" />
-      <fileset dir="${build.tmp}/default/de.vimotest.devkit.cpp.jar" />
-    </jar>
     <zip destfile="${build.layout}/mps-vimotest.zip">
       <fileset dir="${build.tmp}/default/mps-vimotest.zip" />
     </zip>
@@ -1183,8 +1157,6 @@
       </chunk>
       <chunk>
         <module file="${basedir}/devkits/de.vimotest.devkit/de.vimotest.devkit.devkit" />
-        <module file="${basedir}/devkits/de.vimotest.devkit.cpp/de.vimotest.devkit.cpp.devkit" />
-        <module file="${basedir}/devkits/de.vimotest.devkit.java/de.vimotest.devkit.java.devkit" />
         <module file="${basedir}/solutions/de.vimotest.plugin/de.vimotest.plugin.msd" />
         <module file="${basedir}/languages/de.vimotest.viewmodel.testing/de.vimotest.viewmodel.testing.mpl" />
       </chunk>

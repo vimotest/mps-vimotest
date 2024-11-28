@@ -35,6 +35,11 @@ By using ViewModels, a large portion of the View-Logic (presenter, controller co
     * perform menu `Build`/`Make Project`
     * if there are initial build errors, ignore them for now (they shall be resolved after one complete build)
 
+### ViMoTest Samples
+
+This repository contains the language definitions for ViMoTest language.
+You can find demonstration examples here: https://github.com/vimotest/mps-vimotest-samples
+
 ### GitHub Actions
 
 On every commit the ViMoTest language with its SandBox samples are generated into executable code using GitHub actions:

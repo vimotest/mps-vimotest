@@ -558,6 +558,9 @@
     <node concept="aNPBN" id="5jkMFwuRROT" role="aQYdv">
       <ref role="aOQi4" to="at53:5jkMFwuLz8m" resolve="GenerationConfig" />
     </node>
+    <node concept="aNPBN" id="5PCYS1MEudI" role="aQYdv">
+      <ref role="aOQi4" to="at53:6wbjV0Q45wI" resolve="ImageDefinitionRegistry" />
+    </node>
   </node>
   <node concept="3mGtxK" id="YSmflIzKTk">
     <node concept="n94m4" id="YSmflIzKTm" role="lGtFl">

@@ -66,7 +66,7 @@ jobs:
 
       # Move build/mps-bundle/dependencies contents to build/mps-bundle/mps/plugins
       - name: Move MPS Plugins
-        run: mv build/mps-bundle/dependencies/* build/mps-bundle/${{ env.mps_folder }}/plugins
+        run: mv build/mps-bundle/dependencies/* build/mps-bundle/${{ env.mps_folder }}/plugins && rm -rf build/mps-bundle/dependencies
 
       # Remove -Didea.plugins.path lines in all build/mps-bundle/${mps_folder}/bin/*.vmoptions
       - name: Remove -Didea.plugins.path from VM Options
@@ -82,4 +82,4 @@ jobs:
         with:
           name: vimotest-mps-bundle-${{ inputs.os }}
           path: |
-            build/mps-bundle/${{ env.mps_folder }}
+            build/mps-bundle

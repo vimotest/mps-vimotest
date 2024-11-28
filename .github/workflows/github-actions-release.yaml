@@ -48,8 +48,8 @@ jobs:
           draft: true
           prerelease: true
 
-      - name: Upload Release Asset
-        id: upload-release-asset
+      - name: Upload vimotest.zip Asset
+        id: upload-vimotest-zip-asset
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -57,4 +57,24 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
           asset_path: build/artifacts/${{ env.PROJECT_NAME }}/${{ env.ARTIFACT_NAME }}.zip
           asset_name: ${{ env.ARTIFACT_NAME }}.zip
+          asset_content_type: application/zip
+
+      - name: Download vimotest-plugins-all artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: vimotest-plugins-all
+          path: build/vimotest-plugins-all
+      - name: Zip vimotest-plugins-all directory
+        run: zip -r build/vimotest-plugins-all.zip build/vimotest-plugins-all
+
+
+      - name: Upload vimotest-plugins-all.zip Asset
+        id: upload-vimotest-plugins-all-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: build/vimotest-plugins-all.zip
+          asset_name: vimotest-plugins-all.zip
           asset_content_type: application/zip

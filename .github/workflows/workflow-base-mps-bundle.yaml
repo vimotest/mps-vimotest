@@ -83,3 +83,36 @@ jobs:
           name: vimotest-mps-bundle-${{ inputs.os }}
           path: |
             build/mps-bundle
+      - name: Zip mps-bundle
+        run: zip -r build/mps-bundle.zip build/mps-bundle
+
+
+      - name: Find latest draft release
+        id: find_draft_release
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { data: releases } = await github.rest.repos.listReleases({
+              owner: context.repo.owner,
+              repo: context.repo.repo
+            });
+            const draftRelease = releases.find(release => release.draft);
+            if (!draftRelease) {
+              return null;
+            }
+            console.log(`Found draft release: ${draftRelease.name} with upload URL: ${draftRelease.upload_url}`);
+            return draftRelease;
+
+      # Add to draft release
+      - name: Upload Bundle Asset
+        id: upload-bundle-asset
+        if: steps.find_draft_release.outputs.result != null
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ fromJson(steps.find_draft_release.outputs.result).upload_url }}
+          asset_path: build/mps-bundle.zip
+          asset_name: vimotest-mps-bundle-${{ inputs.os }}.zip
+          asset_content_type: application/zip
+

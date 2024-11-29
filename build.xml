@@ -43,17 +43,15 @@
   <generator-settings id="m2m-defaults" strictMode="true" parallelThreads="8" inplaceTransform="false" warnWrongChild="true" createStaticRefs="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}" />
   
   <target name="assemble" depends="classes, declare-mps-tasks">
-    <mkdir dir="${build.layout}" />
-    <mkdir dir="${build.tmp}/default/mps-vimotest.zip" />
-    <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest" />
-    <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/lib" />
+    <mkdir dir="${build.layout}/mps-vimotest" />
+    <mkdir dir="${build.layout}/mps-vimotest/lib" />
     <mkdir dir="${build.tmp}/default/mps-vimotest.jar" />
     <mkdir dir="${build.tmp}/default/mps-vimotest.jar/META-INF" />
     <echoxml file="${build.tmp}/default/mps-vimotest.jar/META-INF/plugin.xml">
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.vimotest</id>
         <name>mps-vimotest</name>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
         <depends>com.intellij.modules.platform</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.editor.tooltips</depends>
@@ -65,11 +63,11 @@
         </extensions>
       </idea-plugin>
     </echoxml>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/lib/mps-vimotest.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/mps-vimotest/lib/mps-vimotest.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/default/mps-vimotest.jar" />
     </jar>
-    <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages" />
-    <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest" />
+    <mkdir dir="${build.layout}/mps-vimotest/languages" />
+    <mkdir dir="${build.layout}/mps-vimotest/languages/mps-vimotest" />
     <mkdir dir="${build.tmp}/default/de.vimotest.viewmodel.jar" />
     <mkdir dir="${build.tmp}/default/de.vimotest.viewmodel.jar/META-INF" />
     <echoxml file="${build.tmp}/default/de.vimotest.viewmodel.jar/META-INF/module.xml">
@@ -166,7 +164,7 @@
         <sources jar="de.vimotest.viewmodel-src.jar" descriptor="de.vimotest.viewmodel.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.viewmodel.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-vimotest/de.vimotest.viewmodel.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.vimotest.viewmodel" />
       <fileset dir="${basedir}/languages/de.vimotest.viewmodel/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/de.vimotest.viewmodel.jar" />
@@ -216,7 +214,7 @@
         <sources jar="de.vimotest.viewmodel-src.jar" descriptor="de.vimotest.viewmodel.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.viewmodel-generator.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-vimotest/de.vimotest.viewmodel-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.vimotest.viewmodel.generator" />
       <fileset dir="${basedir}/languages/de.vimotest.viewmodel/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/de.vimotest.viewmodel-generator.jar" />
@@ -227,7 +225,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.viewmodel-generator-templates">
       <fileset dir="${basedir}/languages/de.vimotest.viewmodel/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.viewmodel-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-vimotest/de.vimotest.viewmodel-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/de.vimotest.viewmodel/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -341,7 +339,7 @@
         <sources jar="de.vimotest.viewmodel.testing-src.jar" descriptor="de.vimotest.viewmodel.testing.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.viewmodel.testing.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-vimotest/de.vimotest.viewmodel.testing.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.vimotest.viewmodel.testing" />
       <fileset dir="${basedir}/languages/de.vimotest.viewmodel.testing/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/de.vimotest.viewmodel.testing.jar" />
@@ -396,7 +394,7 @@
         <sources jar="de.vimotest.viewmodel.testing-src.jar" descriptor="de.vimotest.viewmodel.testing.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.viewmodel.testing-generator.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-vimotest/de.vimotest.viewmodel.testing-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.vimotest.viewmodel.testing.generator" />
       <fileset dir="${basedir}/languages/de.vimotest.viewmodel.testing/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/de.vimotest.viewmodel.testing-generator.jar" />
@@ -407,7 +405,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.viewmodel.testing-generator-templates">
       <fileset dir="${basedir}/languages/de.vimotest.viewmodel.testing/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.viewmodel.testing-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-vimotest/de.vimotest.viewmodel.testing-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/de.vimotest.viewmodel.testing/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -506,7 +504,7 @@
         <sources jar="de.vimotest.types-src.jar" descriptor="de.vimotest.types.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.types.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-vimotest/de.vimotest.types.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.vimotest.types" />
       <fileset dir="${basedir}/languages/de.vimotest.types/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/de.vimotest.types.jar" />
@@ -514,7 +512,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.types-models">
       <fileset dir="${basedir}/languages/de.vimotest.types/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.types-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-vimotest/de.vimotest.types-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/de.vimotest.types/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -601,7 +599,7 @@
         <sources jar="de.vimotest.mpswidgets-src.jar" descriptor="de.vimotest.mpswidgets.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.mpswidgets.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-vimotest/de.vimotest.mpswidgets.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.vimotest.mpswidgets" />
       <fileset dir="${basedir}/languages/de.vimotest.mpswidgets/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/de.vimotest.mpswidgets.jar" />
@@ -649,7 +647,7 @@
         <sources jar="de.vimotest.mpswidgets-src.jar" descriptor="de.vimotest.mpswidgets.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.mpswidgets-generator.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-vimotest/de.vimotest.mpswidgets-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.vimotest.mpswidgets.generator" />
       <fileset dir="${basedir}/languages/de.vimotest.mpswidgets/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/de.vimotest.mpswidgets-generator.jar" />
@@ -660,7 +658,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.mpswidgets-generator-templates">
       <fileset dir="${basedir}/languages/de.vimotest.mpswidgets/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.mpswidgets-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-vimotest/de.vimotest.mpswidgets-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/de.vimotest.mpswidgets/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -714,7 +712,7 @@
         <sources jar="de.vimotest.mpswidgets.runtime-src.jar" descriptor="de.vimotest.mpswidgets.runtime.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.mpswidgets.runtime.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-vimotest/de.vimotest.mpswidgets.runtime.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.vimotest.mpswidgets.runtime" />
       <fileset dir="${basedir}/languages/de.vimotest.mpswidgets.runtime/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/de.vimotest.mpswidgets.runtime.jar" />
@@ -722,7 +720,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.mpswidgets.runtime-models">
       <fileset dir="${basedir}/languages/de.vimotest.mpswidgets.runtime/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.mpswidgets.runtime-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-vimotest/de.vimotest.mpswidgets.runtime-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/de.vimotest.mpswidgets.runtime/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -732,8 +730,8 @@
       <zipfileset file="${basedir}/languages/de.vimotest.mpswidgets.runtime/de.vimotest.mpswidgets.runtime.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.mpswidgets.runtime-models" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages" />
-    <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-build" />
+    <mkdir dir="${build.layout}/mps-vimotest/languages" />
+    <mkdir dir="${build.layout}/mps-vimotest/languages/mps-build" />
     <mkdir dir="${build.tmp}/default/de.vimotest.build.jar" />
     <mkdir dir="${build.tmp}/default/de.vimotest.build.jar/META-INF" />
     <echoxml file="${build.tmp}/default/de.vimotest.build.jar/META-INF/module.xml">
@@ -753,7 +751,7 @@
         <sources jar="de.vimotest.build-src.jar" descriptor="de.vimotest.build.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-build/de.vimotest.build.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-build/de.vimotest.build.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.vimotest.build" />
       <fileset dir="${basedir}/solutions/de.vimotest.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/de.vimotest.build.jar" />
@@ -761,7 +759,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.build-models">
       <fileset dir="${basedir}/solutions/de.vimotest.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-build/de.vimotest.build-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-build/de.vimotest.build-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/solutions/de.vimotest.build/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -797,7 +795,7 @@
         <sources jar="de.vimotest.genplan-src.jar" descriptor="de.vimotest.genplan.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-build/de.vimotest.genplan.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-build/de.vimotest.genplan.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.vimotest.genplan" />
       <fileset dir="${basedir}/solutions/de.vimotest.genplan/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/de.vimotest.genplan.jar" />
@@ -805,7 +803,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.genplan-models">
       <fileset dir="${basedir}/solutions/de.vimotest.genplan/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-build/de.vimotest.genplan-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-build/de.vimotest.genplan-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/solutions/de.vimotest.genplan/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -824,9 +822,793 @@
         <sources jar="." descriptor="de.vimotest.devkit.devkit" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-build/de.vimotest.devkit.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-build/de.vimotest.devkit.jar" duplicate="preserve">
       <zipfileset file="${basedir}/devkits/de.vimotest.devkit/de.vimotest.devkit.devkit" prefix="module" />
       <fileset dir="${build.tmp}/default/de.vimotest.devkit.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/mps-vimotest.zip" />
+    <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest" />
+    <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/lib" />
+    <mkdir dir="${build.tmp}/default/mps-vimotest.jar1" />
+    <mkdir dir="${build.tmp}/default/mps-vimotest.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/mps-vimotest.jar1/META-INF/plugin.xml">
+      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+        <id>de.vimotest</id>
+        <name>mps-vimotest</name>
+        <version>1.0.1</version>
+        <depends>com.intellij.modules.platform</depends>
+        <depends>jetbrains.mps.core</depends>
+        <depends>jetbrains.mps.editor.tooltips</depends>
+        <depends>alfi</depends>
+        <depends>com.intellij.modules.platform</depends>
+        
+        <extensions defaultExtensionNs="com.intellij">
+          <mps.LanguageLibrary dir="/languages" />
+        </extensions>
+      </idea-plugin>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/lib/mps-vimotest.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/default/mps-vimotest.jar1" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages" />
+    <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.viewmodel.jar1" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.viewmodel.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.viewmodel.jar1/META-INF/module.xml">
+      <module namespace="de.vimotest.viewmodel" type="language" uuid="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" kind="rt" />
+          <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="af19274f-5f89-42dd-8f3c-c9932448f7f2(jetbrains.mps.analyzers.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" kind="rt" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" kind="rt" />
+          <module ref="90966cb5-4f67-429a-b7ba-d0fded4ede71(jetbrains.mps.lang.editor.forms.runtime)" kind="rt" />
+          <module ref="af52e9df-2136-4ef8-81b2-bec0babe5e4c(jetbrains.mps.lang.editor.tooltips.runtime)" kind="rt" />
+          <module ref="9e9ef4e2-decf-4e97-bf80-9109e8b759bb(jetbrains.mps.lang.feedback.api)" kind="rt" />
+          <module ref="3f98f4e2-decf-4e97-bf80-9109e8b759ab(jetbrains.mps.lang.feedback.problem.rt)" kind="rt" />
+          <module ref="0a98f3e2-decf-4e97-bf80-9109eccc59bb(jetbrains.mps.lang.feedback.problem.rules)" kind="rt" />
+          <module ref="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
+          <module ref="31f56055-9d30-42b3-a2b1-fb3f554d7075(jetbrains.mps.lang.smodel.query.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="cl" />
+          <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
+          <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
+          <module ref="79d38a3b-c7d9-48fe-86ef-ab311632763c(de.vimotest.mpswidgets.runtime)" kind="cl" />
+          <module ref="611ecc9e-0703-4ab9-a13c-fb396c607716(de.vimotest.types)" kind="cl" />
+          <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
+          <module ref="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" kind="cl" />
+          <module ref="258bd2f6-0d02-411d-86b2-5a5ea083e6d2(jetbrains.mps.lang.editor.table.runtime)" kind="cl" />
+          <module ref="af52e9df-2136-4ef8-81b2-bec0babe5e4c(jetbrains.mps.lang.editor.tooltips.runtime)" kind="cl" />
+          <module ref="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:611ecc9e-0703-4ab9-a13c-fb396c607716:de.vimotest.types" />
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:774bf8a0-62e5-41e1-af63-f4812e60e48b:jetbrains.mps.baseLanguage.checkedDots" />
+          <language id="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:96ee7a94-411d-4cf8-9b94-96cad7e52411:jetbrains.mps.baseLanguage.jdk7" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:515552c7-fcc0-4ab4-9789-2f3c49344e85:jetbrains.mps.baseLanguage.varVariable" />
+          <language id="l:df345b11-b8c7-4213-ac66-48d2a9b75d88:jetbrains.mps.baseLanguageInternal" />
+          <language id="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" />
+          <language id="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" />
+          <language id="l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints" />
+          <language id="l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification" />
+          <language id="l:47257bf3-78d3-470b-89d9-8c3261a61d15:jetbrains.mps.lang.constraints.rules" />
+          <language id="l:5dae8159-ab99-46bb-a40d-0cee30ee7018:jetbrains.mps.lang.constraints.rules.kinds" />
+          <language id="l:134c38d4-e3af-4d9e-b069-1c7df0a4005d:jetbrains.mps.lang.constraints.rules.skeleton" />
+          <language id="l:3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7:jetbrains.mps.lang.context" />
+          <language id="l:ea3159bf-f48e-4720-bde2-86dba75f0d34:jetbrains.mps.lang.context.defs" />
+          <language id="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" />
+          <language id="l:7fa12e9c-b949-4976-b4fa-19accbc320b4:jetbrains.mps.lang.dataFlow" />
+          <language id="l:97a52717-898f-4598-8150-573d9fd03868:jetbrains.mps.lang.dataFlow.analyzers" />
+          <language id="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" />
+          <language id="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" />
+          <language id="l:602c36ad-cc55-47ff-8c40-73d7f12f035c:jetbrains.mps.lang.editor.forms" />
+          <language id="l:b1ab8c10-c118-4755-bf2a-cebab35cf533:jetbrains.mps.lang.editor.tooltips" />
+          <language id="l:cd17a113-ca4e-472f-a8de-c49008f9eea8:jetbrains.mps.lang.feedback" />
+          <language id="l:16e76fe3-9534-4def-afb7-925a169a7c0b:jetbrains.mps.lang.feedback.messages" />
+          <language id="l:033598a4-76a9-47e1-ac89-a300c0fceab8:jetbrains.mps.lang.feedback.problem" />
+          <language id="l:db2a46c2-ebec-4b6c-b6c2-f9b55b9b6f8a:jetbrains.mps.lang.feedback.problem.failingRule" />
+          <language id="l:517077fd-e44f-4338-a475-1d29781dfdb8:jetbrains.mps.lang.feedback.skeleton" />
+          <language id="l:d7a92d38-f7db-40d0-8431-763b0c3c9f20:jetbrains.mps.lang.intentions" />
+          <language id="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" />
+          <language id="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
+          <language id="l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages" />
+          <language id="l:d8f591ec-4d86-4af2-9f92-a9e93c803ffa:jetbrains.mps.lang.scopes" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:69b8a993-9b87-4d96-bf0c-3559f4bb0c63:jetbrains.mps.lang.slanguage" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+          <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.vimotest.viewmodel-src.jar" descriptor="de.vimotest.viewmodel.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.viewmodel.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.vimotest.viewmodel" />
+      <fileset dir="${basedir}/languages/de.vimotest.viewmodel/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.vimotest.viewmodel.jar1" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.viewmodel-generator.jar1" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.viewmodel-generator.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.viewmodel-generator.jar1/META-INF/module.xml">
+      <module namespace="de.vimotest.viewmodel.generator" type="generator" uuid="31ed4199-712b-4e4a-b792-2c1662ed3b0d">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="rt" />
+          <module ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd(MPS.Generator)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
+          <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
+          <module ref="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0(de.vimotest.viewmodel)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" />
+          <language id="l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator" />
+          <language id="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" />
+          <language id="l:289fcc83-6543-41e8-a5ca-768235715ce4:jetbrains.mps.lang.generator.generationParameters" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.vimotest.viewmodel-src.jar" descriptor="de.vimotest.viewmodel.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.viewmodel-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.vimotest.viewmodel.generator" />
+      <fileset dir="${basedir}/languages/de.vimotest.viewmodel/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.vimotest.viewmodel-generator.jar1" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.viewmodel-models1">
+      <fileset dir="${basedir}/languages/de.vimotest.viewmodel/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.viewmodel-generator-templates1">
+      <fileset dir="${basedir}/languages/de.vimotest.viewmodel/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.viewmodel-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/de.vimotest.viewmodel/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/de.vimotest.viewmodel/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/de.vimotest.viewmodel/de.vimotest.viewmodel.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.viewmodel-models1" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.viewmodel-generator-templates1" prefix="module/generator/templates" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.viewmodel.testing.jar1" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.viewmodel.testing.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.viewmodel.testing.jar1/META-INF/module.xml">
+      <module namespace="de.vimotest.viewmodel.testing" type="language" uuid="716e8717-88c0-4280-8c16-b4d88567596f">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" kind="rt" />
+          <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="af19274f-5f89-42dd-8f3c-c9932448f7f2(jetbrains.mps.analyzers.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" kind="rt" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" kind="rt" />
+          <module ref="90966cb5-4f67-429a-b7ba-d0fded4ede71(jetbrains.mps.lang.editor.forms.runtime)" kind="rt" />
+          <module ref="258bd2f6-0d02-411d-86b2-5a5ea083e6d2(jetbrains.mps.lang.editor.table.runtime)" kind="rt" />
+          <module ref="9e9ef4e2-decf-4e97-bf80-9109e8b759bb(jetbrains.mps.lang.feedback.api)" kind="rt" />
+          <module ref="3f98f4e2-decf-4e97-bf80-9109e8b759ab(jetbrains.mps.lang.feedback.problem.rt)" kind="rt" />
+          <module ref="0a98f3e2-decf-4e97-bf80-9109eccc59bb(jetbrains.mps.lang.feedback.problem.rules)" kind="rt" />
+          <module ref="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
+          <module ref="31f56055-9d30-42b3-a2b1-fb3f554d7075(jetbrains.mps.lang.smodel.query.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="cl" />
+          <module ref="7124e466-fc92-4803-a656-d7a6b7eb3910(MPS.TextGen)" kind="cl" />
+          <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
+          <module ref="779e9fc4-5168-49e7-b541-bfe5ba91a814(de.vimotest.mpswidgets)" kind="cl" />
+          <module ref="79d38a3b-c7d9-48fe-86ef-ab311632763c(de.vimotest.mpswidgets.runtime)" kind="cl" />
+          <module ref="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0(de.vimotest.viewmodel)" kind="cl" />
+          <module ref="479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)" kind="cl" />
+          <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
+          <module ref="258bd2f6-0d02-411d-86b2-5a5ea083e6d2(jetbrains.mps.lang.editor.table.runtime)" kind="cl" />
+          <module ref="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:ce7915b5-36b4-4478-a67c-f5a8a72ed4a0:de.vimotest.viewmodel" />
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:774bf8a0-62e5-41e1-af63-f4812e60e48b:jetbrains.mps.baseLanguage.checkedDots" />
+          <language id="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:96ee7a94-411d-4cf8-9b94-96cad7e52411:jetbrains.mps.baseLanguage.jdk7" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:515552c7-fcc0-4ab4-9789-2f3c49344e85:jetbrains.mps.baseLanguage.varVariable" />
+          <language id="l:df345b11-b8c7-4213-ac66-48d2a9b75d88:jetbrains.mps.baseLanguageInternal" />
+          <language id="l:479c7a8c-02f9-43b5-9139-d910cb22f298:jetbrains.mps.core.xml" />
+          <language id="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" />
+          <language id="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" />
+          <language id="l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints" />
+          <language id="l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification" />
+          <language id="l:47257bf3-78d3-470b-89d9-8c3261a61d15:jetbrains.mps.lang.constraints.rules" />
+          <language id="l:5dae8159-ab99-46bb-a40d-0cee30ee7018:jetbrains.mps.lang.constraints.rules.kinds" />
+          <language id="l:134c38d4-e3af-4d9e-b069-1c7df0a4005d:jetbrains.mps.lang.constraints.rules.skeleton" />
+          <language id="l:3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7:jetbrains.mps.lang.context" />
+          <language id="l:ea3159bf-f48e-4720-bde2-86dba75f0d34:jetbrains.mps.lang.context.defs" />
+          <language id="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" />
+          <language id="l:7fa12e9c-b949-4976-b4fa-19accbc320b4:jetbrains.mps.lang.dataFlow" />
+          <language id="l:97a52717-898f-4598-8150-573d9fd03868:jetbrains.mps.lang.dataFlow.analyzers" />
+          <language id="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" />
+          <language id="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" />
+          <language id="l:602c36ad-cc55-47ff-8c40-73d7f12f035c:jetbrains.mps.lang.editor.forms" />
+          <language id="l:0272d3b4-4cc8-481e-9e2f-07793fbfcb41:jetbrains.mps.lang.editor.table" />
+          <language id="l:cd17a113-ca4e-472f-a8de-c49008f9eea8:jetbrains.mps.lang.feedback" />
+          <language id="l:16e76fe3-9534-4def-afb7-925a169a7c0b:jetbrains.mps.lang.feedback.messages" />
+          <language id="l:033598a4-76a9-47e1-ac89-a300c0fceab8:jetbrains.mps.lang.feedback.problem" />
+          <language id="l:db2a46c2-ebec-4b6c-b6c2-f9b55b9b6f8a:jetbrains.mps.lang.feedback.problem.failingRule" />
+          <language id="l:517077fd-e44f-4338-a475-1d29781dfdb8:jetbrains.mps.lang.feedback.skeleton" />
+          <language id="l:d7a92d38-f7db-40d0-8431-763b0c3c9f20:jetbrains.mps.lang.intentions" />
+          <language id="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" />
+          <language id="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
+          <language id="l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages" />
+          <language id="l:d8f591ec-4d86-4af2-9f92-a9e93c803ffa:jetbrains.mps.lang.scopes" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:69b8a993-9b87-4d96-bf0c-3559f4bb0c63:jetbrains.mps.lang.slanguage" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+          <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.vimotest.viewmodel.testing-src.jar" descriptor="de.vimotest.viewmodel.testing.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.viewmodel.testing.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.vimotest.viewmodel.testing" />
+      <fileset dir="${basedir}/languages/de.vimotest.viewmodel.testing/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.vimotest.viewmodel.testing.jar1" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.viewmodel.testing-generator.jar1" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.viewmodel.testing-generator.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.viewmodel.testing-generator.jar1/META-INF/module.xml">
+      <module namespace="de.vimotest.viewmodel.testing.generator" type="generator" uuid="75b45ab1-ab60-4e56-9499-3ebb61ad3411">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd(MPS.Generator)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="c234a56a-502f-4751-aded-6f9846fff7ce(jetbrains.mps.lang.test.junit5)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="7124e466-fc92-4803-a656-d7a6b7eb3910(MPS.TextGen)" kind="cl" />
+          <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
+          <module ref="716e8717-88c0-4280-8c16-b4d88567596f(de.vimotest.viewmodel.testing)" kind="cl" />
+          <module ref="479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)" kind="cl" />
+          <module ref="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
+          <language id="l:716e8717-88c0-4280-8c16-b4d88567596f:de.vimotest.viewmodel.testing" />
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:479c7a8c-02f9-43b5-9139-d910cb22f298:jetbrains.mps.core.xml" />
+          <language id="l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator" />
+          <language id="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" />
+          <language id="l:289fcc83-6543-41e8-a5ca-768235715ce4:jetbrains.mps.lang.generator.generationParameters" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.vimotest.viewmodel.testing-src.jar" descriptor="de.vimotest.viewmodel.testing.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.viewmodel.testing-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.vimotest.viewmodel.testing.generator" />
+      <fileset dir="${basedir}/languages/de.vimotest.viewmodel.testing/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.vimotest.viewmodel.testing-generator.jar1" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.viewmodel.testing-models1">
+      <fileset dir="${basedir}/languages/de.vimotest.viewmodel.testing/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.viewmodel.testing-generator-templates1">
+      <fileset dir="${basedir}/languages/de.vimotest.viewmodel.testing/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.viewmodel.testing-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/de.vimotest.viewmodel.testing/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/de.vimotest.viewmodel.testing/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/de.vimotest.viewmodel.testing/de.vimotest.viewmodel.testing.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.viewmodel.testing-models1" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.viewmodel.testing-generator-templates1" prefix="module/generator/templates" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.types.jar1" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.types.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.types.jar1/META-INF/module.xml">
+      <module namespace="de.vimotest.types" type="language" uuid="611ecc9e-0703-4ab9-a13c-fb396c607716">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="af19274f-5f89-42dd-8f3c-c9932448f7f2(jetbrains.mps.analyzers.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" kind="rt" />
+          <module ref="9e9ef4e2-decf-4e97-bf80-9109e8b759bb(jetbrains.mps.lang.feedback.api)" kind="rt" />
+          <module ref="3f98f4e2-decf-4e97-bf80-9109e8b759ab(jetbrains.mps.lang.feedback.problem.rt)" kind="rt" />
+          <module ref="0a98f3e2-decf-4e97-bf80-9109eccc59bb(jetbrains.mps.lang.feedback.problem.rules)" kind="rt" />
+          <module ref="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
+          <module ref="31f56055-9d30-42b3-a2b1-fb3f554d7075(jetbrains.mps.lang.smodel.query.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="cl" />
+          <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:774bf8a0-62e5-41e1-af63-f4812e60e48b:jetbrains.mps.baseLanguage.checkedDots" />
+          <language id="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:96ee7a94-411d-4cf8-9b94-96cad7e52411:jetbrains.mps.baseLanguage.jdk7" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:515552c7-fcc0-4ab4-9789-2f3c49344e85:jetbrains.mps.baseLanguage.varVariable" />
+          <language id="l:df345b11-b8c7-4213-ac66-48d2a9b75d88:jetbrains.mps.baseLanguageInternal" />
+          <language id="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" />
+          <language id="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" />
+          <language id="l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints" />
+          <language id="l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification" />
+          <language id="l:47257bf3-78d3-470b-89d9-8c3261a61d15:jetbrains.mps.lang.constraints.rules" />
+          <language id="l:5dae8159-ab99-46bb-a40d-0cee30ee7018:jetbrains.mps.lang.constraints.rules.kinds" />
+          <language id="l:134c38d4-e3af-4d9e-b069-1c7df0a4005d:jetbrains.mps.lang.constraints.rules.skeleton" />
+          <language id="l:3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7:jetbrains.mps.lang.context" />
+          <language id="l:ea3159bf-f48e-4720-bde2-86dba75f0d34:jetbrains.mps.lang.context.defs" />
+          <language id="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" />
+          <language id="l:7fa12e9c-b949-4976-b4fa-19accbc320b4:jetbrains.mps.lang.dataFlow" />
+          <language id="l:97a52717-898f-4598-8150-573d9fd03868:jetbrains.mps.lang.dataFlow.analyzers" />
+          <language id="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" />
+          <language id="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" />
+          <language id="l:cd17a113-ca4e-472f-a8de-c49008f9eea8:jetbrains.mps.lang.feedback" />
+          <language id="l:16e76fe3-9534-4def-afb7-925a169a7c0b:jetbrains.mps.lang.feedback.messages" />
+          <language id="l:033598a4-76a9-47e1-ac89-a300c0fceab8:jetbrains.mps.lang.feedback.problem" />
+          <language id="l:db2a46c2-ebec-4b6c-b6c2-f9b55b9b6f8a:jetbrains.mps.lang.feedback.problem.failingRule" />
+          <language id="l:517077fd-e44f-4338-a475-1d29781dfdb8:jetbrains.mps.lang.feedback.skeleton" />
+          <language id="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" />
+          <language id="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
+          <language id="l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages" />
+          <language id="l:d8f591ec-4d86-4af2-9f92-a9e93c803ffa:jetbrains.mps.lang.scopes" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:69b8a993-9b87-4d96-bf0c-3559f4bb0c63:jetbrains.mps.lang.slanguage" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+          <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.vimotest.types-src.jar" descriptor="de.vimotest.types.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.types.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.vimotest.types" />
+      <fileset dir="${basedir}/languages/de.vimotest.types/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.vimotest.types.jar1" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.types-models1">
+      <fileset dir="${basedir}/languages/de.vimotest.types/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.types-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/de.vimotest.types/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/de.vimotest.types/de.vimotest.types.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.types-models1" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.mpswidgets.jar1" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.mpswidgets.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.mpswidgets.jar1/META-INF/module.xml">
+      <module namespace="de.vimotest.mpswidgets" type="language" uuid="779e9fc4-5168-49e7-b541-bfe5ba91a814">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" kind="rt" />
+          <module ref="9e9ef4e2-decf-4e97-bf80-9109e8b759bb(jetbrains.mps.lang.feedback.api)" kind="rt" />
+          <module ref="3f98f4e2-decf-4e97-bf80-9109e8b759ab(jetbrains.mps.lang.feedback.problem.rt)" kind="rt" />
+          <module ref="0a98f3e2-decf-4e97-bf80-9109eccc59bb(jetbrains.mps.lang.feedback.problem.rules)" kind="rt" />
+          <module ref="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
+          <module ref="31f56055-9d30-42b3-a2b1-fb3f554d7075(jetbrains.mps.lang.smodel.query.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="cl" />
+          <module ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" kind="cl" />
+          <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
+          <module ref="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:774bf8a0-62e5-41e1-af63-f4812e60e48b:jetbrains.mps.baseLanguage.checkedDots" />
+          <language id="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:96ee7a94-411d-4cf8-9b94-96cad7e52411:jetbrains.mps.baseLanguage.jdk7" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:515552c7-fcc0-4ab4-9789-2f3c49344e85:jetbrains.mps.baseLanguage.varVariable" />
+          <language id="l:df345b11-b8c7-4213-ac66-48d2a9b75d88:jetbrains.mps.baseLanguageInternal" />
+          <language id="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" />
+          <language id="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" />
+          <language id="l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints" />
+          <language id="l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification" />
+          <language id="l:47257bf3-78d3-470b-89d9-8c3261a61d15:jetbrains.mps.lang.constraints.rules" />
+          <language id="l:5dae8159-ab99-46bb-a40d-0cee30ee7018:jetbrains.mps.lang.constraints.rules.kinds" />
+          <language id="l:134c38d4-e3af-4d9e-b069-1c7df0a4005d:jetbrains.mps.lang.constraints.rules.skeleton" />
+          <language id="l:3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7:jetbrains.mps.lang.context" />
+          <language id="l:ea3159bf-f48e-4720-bde2-86dba75f0d34:jetbrains.mps.lang.context.defs" />
+          <language id="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" />
+          <language id="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" />
+          <language id="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" />
+          <language id="l:cd17a113-ca4e-472f-a8de-c49008f9eea8:jetbrains.mps.lang.feedback" />
+          <language id="l:16e76fe3-9534-4def-afb7-925a169a7c0b:jetbrains.mps.lang.feedback.messages" />
+          <language id="l:033598a4-76a9-47e1-ac89-a300c0fceab8:jetbrains.mps.lang.feedback.problem" />
+          <language id="l:db2a46c2-ebec-4b6c-b6c2-f9b55b9b6f8a:jetbrains.mps.lang.feedback.problem.failingRule" />
+          <language id="l:517077fd-e44f-4338-a475-1d29781dfdb8:jetbrains.mps.lang.feedback.skeleton" />
+          <language id="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" />
+          <language id="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
+          <language id="l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages" />
+          <language id="l:d8f591ec-4d86-4af2-9f92-a9e93c803ffa:jetbrains.mps.lang.scopes" />
+          <language id="l:69b8a993-9b87-4d96-bf0c-3559f4bb0c63:jetbrains.mps.lang.slanguage" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+          <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.vimotest.mpswidgets-src.jar" descriptor="de.vimotest.mpswidgets.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.mpswidgets.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.vimotest.mpswidgets" />
+      <fileset dir="${basedir}/languages/de.vimotest.mpswidgets/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.vimotest.mpswidgets.jar1" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.mpswidgets-generator.jar1" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.mpswidgets-generator.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.mpswidgets-generator.jar1/META-INF/module.xml">
+      <module namespace="de.vimotest.mpswidgets.generator" type="generator" uuid="5cfc48c7-febe-4f73-b573-eac0c43c861d">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd(MPS.Generator)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="cl" />
+          <module ref="779e9fc4-5168-49e7-b541-bfe5ba91a814(de.vimotest.mpswidgets)" kind="cl" />
+          <module ref="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" kind="cl" />
+          <module ref="0647eca7-da98-422a-8a8b-6ebc0bd014ea(jetbrains.mps.lang.editor#1129914002149)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator" />
+          <language id="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" />
+          <language id="l:289fcc83-6543-41e8-a5ca-768235715ce4:jetbrains.mps.lang.generator.generationParameters" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.vimotest.mpswidgets-src.jar" descriptor="de.vimotest.mpswidgets.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.mpswidgets-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.vimotest.mpswidgets.generator" />
+      <fileset dir="${basedir}/languages/de.vimotest.mpswidgets/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.vimotest.mpswidgets-generator.jar1" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.mpswidgets-models1">
+      <fileset dir="${basedir}/languages/de.vimotest.mpswidgets/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.mpswidgets-generator-templates1">
+      <fileset dir="${basedir}/languages/de.vimotest.mpswidgets/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.mpswidgets-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/de.vimotest.mpswidgets/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/de.vimotest.mpswidgets/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/de.vimotest.mpswidgets/de.vimotest.mpswidgets.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.mpswidgets-models1" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.mpswidgets-generator-templates1" prefix="module/generator/templates" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.mpswidgets.runtime.jar1" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.mpswidgets.runtime.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.mpswidgets.runtime.jar1/META-INF/module.xml">
+      <module namespace="de.vimotest.mpswidgets.runtime" type="solution" uuid="79d38a3b-c7d9-48fe-86ef-ab311632763c">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="cl" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" kind="cl" />
+          <module ref="8d29d73f-ed99-4652-ae0a-083cdfe53c34(jetbrains.mps.ide.platform)" kind="cl" />
+          <module ref="258bd2f6-0d02-411d-86b2-5a5ea083e6d2(jetbrains.mps.lang.editor.table.runtime)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" />
+          <language id="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.vimotest.mpswidgets.runtime-src.jar" descriptor="de.vimotest.mpswidgets.runtime.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.mpswidgets.runtime.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.vimotest.mpswidgets.runtime" />
+      <fileset dir="${basedir}/languages/de.vimotest.mpswidgets.runtime/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.vimotest.mpswidgets.runtime.jar1" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.mpswidgets.runtime-models1">
+      <fileset dir="${basedir}/languages/de.vimotest.mpswidgets.runtime/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-vimotest/de.vimotest.mpswidgets.runtime-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/de.vimotest.mpswidgets.runtime/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/de.vimotest.mpswidgets.runtime/de.vimotest.mpswidgets.runtime.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.vimotest.mpswidgets.runtime-models1" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages" />
+    <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-build" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.build.jar1" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.build.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.build.jar1/META-INF/module.xml">
+      <module namespace="de.vimotest.build" type="solution" uuid="694fa9f8-dbdd-46fd-a9d9-f8f8c27d011b">
+        <dependencies>
+          <module ref="4b6b1874-7e10-42bc-88e2-7525942dcfc8(CppBaseLanguage.build)" kind="cl" />
+          <module ref="b1005ef7-77b9-4100-a8d1-d289b725faf9(alfi.build)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
+          <language id="l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps" />
+          <language id="l:3600cb0a-44dd-4a5b-9968-22924406419e:jetbrains.mps.build.mps.tests" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.vimotest.build-src.jar" descriptor="de.vimotest.build.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-build/de.vimotest.build.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.vimotest.build" />
+      <fileset dir="${basedir}/solutions/de.vimotest.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.vimotest.build.jar1" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.build-models1">
+      <fileset dir="${basedir}/solutions/de.vimotest.build/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-build/de.vimotest.build-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/solutions/de.vimotest.build/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/solutions/de.vimotest.build/de.vimotest.build.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.build-models1" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.genplan.jar1" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.genplan.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.genplan.jar1/META-INF/module.xml">
+      <module namespace="de.vimotest.genplan" type="solution" uuid="b28932ae-6b0e-4f97-ad77-84f278001d91">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="76f7ae4d-6343-4b77-b3be-95673e578bcf(alfi.genplan)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:7ab1a6fa-0a11-4b95-9e48-75f363d6cb00:jetbrains.mps.lang.generator.plan" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.vimotest.genplan-src.jar" descriptor="de.vimotest.genplan.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-build/de.vimotest.genplan.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.vimotest.genplan" />
+      <fileset dir="${basedir}/solutions/de.vimotest.genplan/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.vimotest.genplan.jar1" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.genplan-models1">
+      <fileset dir="${basedir}/solutions/de.vimotest.genplan/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-build/de.vimotest.genplan-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/solutions/de.vimotest.genplan/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/solutions/de.vimotest.genplan/de.vimotest.genplan.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.genplan-models1" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.devkit.jar1" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.devkit.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.devkit.jar1/META-INF/module.xml">
+      <module namespace="de.vimotest.devkit" type="devkit" uuid="d1a914ef-09af-4c66-a6d1-618e1f9114ea">
+        <dependencies />
+        <uses />
+        <sources jar="." descriptor="de.vimotest.devkit.devkit" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-build/de.vimotest.devkit.jar" duplicate="preserve">
+      <zipfileset file="${basedir}/devkits/de.vimotest.devkit/de.vimotest.devkit.devkit" prefix="module" />
+      <fileset dir="${build.tmp}/default/de.vimotest.devkit.jar1" />
     </jar>
     <zip destfile="${build.layout}/mps-vimotest.zip">
       <fileset dir="${build.tmp}/default/mps-vimotest.zip" />
@@ -2119,7 +2901,7 @@
       <plugin id="jetbrains.mps.junit5" path="${artifacts.mps}/plugins/mps-junit5" />
       <plugin id="jetbrains.mps.testing" path="${artifacts.mps}/plugins/mps-testing" />
       <plugin id="jetbrains.mps.editor.tooltips" path="${artifacts.mps}/plugins/mps-tooltips" />
-      <plugin id="de.vimotest" path="${build.tmp}/default/mps-vimotest.zip/mps-vimotest" />
+      <plugin id="de.vimotest" path="${build.layout}/mps-vimotest" />
       <project path="${basedir}" />
       <testmodules>        
         <path refid="mps.tests.path" />

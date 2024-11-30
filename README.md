@@ -53,6 +53,10 @@ The generated executable code is then built using built tools:
 
 This ensures that ViMoTest transforms ViewModel descriptions and Test Scenarios into compilable code.
 
+## Requirements
+
+See https://vimotest.github.io/requirements
+
 ## Preliminary Prototype
 
 This repository contains the productive implementation of the ViMoTest approach.

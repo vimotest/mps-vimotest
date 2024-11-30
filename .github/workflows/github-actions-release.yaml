@@ -67,8 +67,10 @@ jobs:
           name: vimotest-plugins-all
           path: build/vimotest-plugins-all
       - name: Zip vimotest-plugins-all directory
-        run: zip -r build/vimotest-plugins-all.zip build/vimotest-plugins-all
-
+        run: |
+          cd build
+          zip -r vimotest-plugins-all.zip vimotest-plugins-all
+          cd -
 
       - name: Upload vimotest-plugins-all.zip Asset
         id: upload-vimotest-plugins-all-asset

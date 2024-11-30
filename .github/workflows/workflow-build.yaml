@@ -66,7 +66,13 @@ jobs:
 
       # Archive Plugins
       - name: Extract ViMoTest Plugin Artifact
-        run: unzip build/artifacts/${{ env.PROJECT_NAME }}/${{ env.ARTIFACT_NAME }}.zip -d build/mps-bundle/dependencies
+        run: |
+          unzip build/artifacts/${{ env.PROJECT_NAME }}/${{ env.ARTIFACT_NAME }}.zip -d build/mps-bundle/dependencies
+          cd build/mps-bundle/dependencies
+          for dir in *; do
+              zip -r $dir.zip $dir
+          done
+          cd -
       - name: Archive ViMoTest All Plugins
         uses: actions/upload-artifact@v4
         with:

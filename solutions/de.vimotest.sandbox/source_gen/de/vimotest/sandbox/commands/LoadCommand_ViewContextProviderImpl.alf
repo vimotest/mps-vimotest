@@ -1,0 +1,12 @@
+namespace commands ;
+
+
+
+class LoadCommand_ViewContextProviderImpl specializes LoadCommand_ViewContextProvider {
+  
+  public Init (  ) {     }
+  
+  public BuildSut (  ) : LoadCommand_View  {
+  return null;
+ }
+}

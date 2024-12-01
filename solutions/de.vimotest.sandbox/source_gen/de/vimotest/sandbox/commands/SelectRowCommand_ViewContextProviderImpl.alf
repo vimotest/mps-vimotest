@@ -1,0 +1,12 @@
+namespace commands ;
+
+
+
+class SelectRowCommand_ViewContextProviderImpl specializes SelectRowCommand_ViewContextProvider {
+  
+  public Init (  ) {     }
+  
+  public BuildSut (  ) : SelectRowCommand_View  {
+  return null;
+ }
+}

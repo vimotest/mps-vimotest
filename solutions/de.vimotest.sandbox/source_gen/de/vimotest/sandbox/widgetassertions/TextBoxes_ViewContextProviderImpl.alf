@@ -1,0 +1,14 @@
+namespace widgetassertions ;
+
+
+
+class TextBoxes_ViewContextProviderImpl specializes TextBoxes_ViewContextProvider {
+  
+  public Init (  ) {     }
+  
+  public SetEmptyContext (  ) {     }
+  
+  public BuildSut (  ) : TextBoxes_View  {
+  return null;
+ }
+}

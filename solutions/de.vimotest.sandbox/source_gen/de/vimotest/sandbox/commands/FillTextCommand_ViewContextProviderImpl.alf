@@ -1,0 +1,12 @@
+namespace commands ;
+
+
+
+class FillTextCommand_ViewContextProviderImpl specializes FillTextCommand_ViewContextProvider {
+  
+  public Init (  ) {     }
+  
+  public BuildSut (  ) : FillTextCommand_View  {
+  return null;
+ }
+}

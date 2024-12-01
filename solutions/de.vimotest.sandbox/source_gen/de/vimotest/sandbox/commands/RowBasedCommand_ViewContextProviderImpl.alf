@@ -1,0 +1,12 @@
+namespace commands ;
+
+
+
+class RowBasedCommand_ViewContextProviderImpl specializes RowBasedCommand_ViewContextProvider {
+  
+  public Init (  ) {     }
+  
+  public BuildSut (  ) : RowBasedCommand_View  {
+  return null;
+ }
+}

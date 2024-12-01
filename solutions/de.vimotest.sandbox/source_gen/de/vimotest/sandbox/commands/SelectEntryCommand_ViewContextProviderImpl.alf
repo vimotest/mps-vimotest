@@ -1,0 +1,12 @@
+namespace commands ;
+
+
+
+class SelectEntryCommand_ViewContextProviderImpl specializes SelectEntryCommand_ViewContextProvider {
+  
+  public Init (  ) {     }
+  
+  public BuildSut (  ) : SelectEntryCommand_View  {
+  return null;
+ }
+}

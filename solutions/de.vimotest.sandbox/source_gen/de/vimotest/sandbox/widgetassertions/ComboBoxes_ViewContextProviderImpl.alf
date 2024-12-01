@@ -1,0 +1,14 @@
+namespace widgetassertions ;
+
+
+
+class ComboBoxes_ViewContextProviderImpl specializes ComboBoxes_ViewContextProvider {
+  
+  public Init (  ) {     }
+  
+  public SetEmptyContext (  ) {     }
+  
+  public BuildSut (  ) : ComboBoxes_View  {
+  return null;
+ }
+}

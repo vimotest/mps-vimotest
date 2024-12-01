@@ -1,0 +1,14 @@
+
+
+
+
+class TaskListViewModelContextProviderImpl specializes TaskListViewModelContextProvider {
+  
+  public Init (  ) {     }
+  
+  public SetDataTableJson (   in json : String  ) {     }
+  
+  public BuildSut (  ) : TaskListViewModel  {
+  return null;
+ }
+}

@@ -1,0 +1,16 @@
+namespace de:: vimotest:: examples:: loginview ;
+
+
+
+class LoginViewContextProviderImpl specializes LoginViewContextProvider {
+  
+  public Init (  ) {     }
+  
+  public SetEmptyContext (  ) {     }
+  
+  public SetXmlElementContext (  ) {     }
+  
+  public BuildSut (  ) : LoginView  {
+  return null;
+ }
+}

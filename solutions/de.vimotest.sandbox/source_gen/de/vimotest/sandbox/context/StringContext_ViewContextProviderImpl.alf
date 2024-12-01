@@ -1,0 +1,14 @@
+namespace context ;
+
+
+
+class StringContext_ViewContextProviderImpl specializes StringContext_ViewContextProvider {
+  
+  public Init (  ) {     }
+  
+  public SetSimpleStringContext (   in string : String  ) {     }
+  
+  public BuildSut (  ) : StringContext_View  {
+  return null;
+ }
+}

@@ -1,0 +1,12 @@
+namespace commands ;
+
+
+
+class CheckCommand_ViewContextProviderImpl specializes CheckCommand_ViewContextProvider {
+  
+  public Init (  ) {     }
+  
+  public BuildSut (  ) : CheckCommand_View  {
+  return null;
+ }
+}

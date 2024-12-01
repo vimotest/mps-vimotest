@@ -1,0 +1,14 @@
+namespace widgetassertions ;
+
+
+
+class TreeViews_ViewContextProviderImpl specializes TreeViews_ViewContextProvider {
+  
+  public Init (  ) {     }
+  
+  public SetEmptyContext (  ) {     }
+  
+  public BuildSut (  ) : TreeViews_View  {
+  return null;
+ }
+}

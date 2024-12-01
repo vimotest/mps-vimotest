@@ -1,0 +1,14 @@
+namespace widgetassertions ;
+
+
+
+class ListViews_ViewContextProviderImpl specializes ListViews_ViewContextProvider {
+  
+  public Init (  ) {     }
+  
+  public SetEmptyContext (  ) {     }
+  
+  public BuildSut (  ) : ListViews_View  {
+  return null;
+ }
+}

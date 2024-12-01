@@ -1,0 +1,14 @@
+namespace widgetassertions ;
+
+
+
+class TableViews_ViewContextProviderImpl specializes TableViews_ViewContextProvider {
+  
+  public Init (  ) {     }
+  
+  public SetEmptyContext (  ) {     }
+  
+  public BuildSut (  ) : TableViews_View  {
+  return null;
+ }
+}

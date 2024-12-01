@@ -1,0 +1,14 @@
+namespace widgetassertions ;
+
+
+
+class CheckBoxes_ViewContextProviderImpl specializes CheckBoxes_ViewContextProvider {
+  
+  public Init (  ) {     }
+  
+  public SetEmptyContext (  ) {     }
+  
+  public BuildSut (  ) : CheckBoxes_View  {
+  return null;
+ }
+}

@@ -36,7 +36,7 @@ task copyGeneratedSources(type: Copy) {
     from generatedDir
     into 'src/generated/java'
     include 'de/vimotest/examples/taskview/**/*.java'
-    exclude '**/*Test.java', '**/TaskListViewModelContextProvider.java'
+    exclude '**/*Test.java', '**/TaskListViewModelContextProviderImpl.java'
 }
 
 task copyGeneratedTests(type: Copy) {

@@ -31,7 +31,7 @@ jobs:
 
       # Clean Project (source_gen of VCS)
       - name: Clean Project
-        run: sh ./gradlew mpClean
+        run: sh ./gradlew mpsClean
 
       # Build Project
       - name: Build Project

@@ -10,7 +10,7 @@ class ListViews_ViewTest {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new ListViews_ViewContextProvider (  );
+  this.contextProvider = new ListViews_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

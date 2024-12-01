@@ -6,6 +6,7 @@ import de.vimotest.sandbox.context.StringContext_View;
 import de.vimotest.sandbox.context.StringContext_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.context.StringContext_ViewContextProviderImpl;
 
 public class StringContext_ViewTests_Test {
   private StringContext_View sut;
@@ -18,7 +19,7 @@ public class StringContext_ViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new StringContext_ViewContextProvider();
+    this.contextProvider = new StringContext_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

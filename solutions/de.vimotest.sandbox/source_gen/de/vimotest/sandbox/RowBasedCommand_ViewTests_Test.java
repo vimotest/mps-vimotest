@@ -6,6 +6,7 @@ import de.vimotest.sandbox.commands.RowBasedCommand_View;
 import de.vimotest.sandbox.commands.RowBasedCommand_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.commands.RowBasedCommand_ViewContextProviderImpl;
 import java.util.List;
 import de.vimotest.sandbox.commands.RowBasedCommand_ViewMyListViewRow;
 import org.junit.Assert;
@@ -41,7 +42,7 @@ public class RowBasedCommand_ViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new RowBasedCommand_ViewContextProvider();
+    this.contextProvider = new RowBasedCommand_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

@@ -7,6 +7,7 @@
 #include "TableViews_ViewMyTableViewRow.h"
 #include <string>
 #include "TableViews_ViewMyStringRowHandlesRow.h"
+#include "TableViews_ViewContextProviderImpl.h"
 
 namespace widgetassertions
 {
@@ -26,7 +27,7 @@ namespace widgetassertions
   };
   void TableViews_ViewTest::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<TableViews_ViewContextProvider>();
+    this->contextProvider = std::make_shared<TableViews_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(TableViews_ViewTest,  My_Scenario_given_empty_context_when_then_MyTableView_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1) 

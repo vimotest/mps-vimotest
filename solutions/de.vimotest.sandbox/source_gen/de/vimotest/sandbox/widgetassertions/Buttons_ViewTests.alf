@@ -10,7 +10,7 @@ class Buttons_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new Buttons_ViewContextProvider (  );
+  this.contextProvider = new Buttons_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

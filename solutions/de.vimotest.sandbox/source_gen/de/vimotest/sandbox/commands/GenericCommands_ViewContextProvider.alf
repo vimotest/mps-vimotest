@@ -2,11 +2,9 @@ namespace commands ;
 
 
 
-class GenericCommands_ViewContextProvider {
+abstract class GenericCommands_ViewContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public BuildSut (  ) : GenericCommands_View  {
-  return null;
- }
+  public abstract BuildSut (  ) : GenericCommands_View  ;
 }

@@ -4,6 +4,7 @@
 #include "Images_ViewContextProvider.h"
 #include <string>
 #include "Images_View.h"
+#include "Images_ViewContextProviderImpl.h"
 
 namespace widgetassertions
 {
@@ -21,7 +22,7 @@ namespace widgetassertions
   };
   void Images_ViewTest::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<Images_ViewContextProvider>();
+    this->contextProvider = std::make_shared<Images_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(Images_ViewTest,  My_Scenario_given_empty_context_when_then_MyImage_shows_image_image_active_and_MyUpDownImage_shows_image_image_down_) 

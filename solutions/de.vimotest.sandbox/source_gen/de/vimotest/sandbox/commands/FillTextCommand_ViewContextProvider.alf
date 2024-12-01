@@ -2,11 +2,9 @@ namespace commands ;
 
 
 
-class FillTextCommand_ViewContextProvider {
+abstract class FillTextCommand_ViewContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public BuildSut (  ) : FillTextCommand_View  {
-  return null;
- }
+  public abstract BuildSut (  ) : FillTextCommand_View  ;
 }

@@ -12,7 +12,7 @@ class SeparateViewController_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new SeparateViewController_ViewContextProvider (  );
+  this.contextProvider = new SeparateViewController_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

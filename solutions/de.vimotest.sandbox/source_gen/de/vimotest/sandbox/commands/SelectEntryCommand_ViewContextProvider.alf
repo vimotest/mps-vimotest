@@ -2,11 +2,9 @@ namespace commands ;
 
 
 
-class SelectEntryCommand_ViewContextProvider {
+abstract class SelectEntryCommand_ViewContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public BuildSut (  ) : SelectEntryCommand_View  {
-  return null;
- }
+  public abstract BuildSut (  ) : SelectEntryCommand_View  ;
 }

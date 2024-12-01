@@ -6,6 +6,7 @@ import de.vimotest.sandbox.context.XmlFileContext_View;
 import de.vimotest.sandbox.context.XmlFileContext_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.context.XmlFileContext_ViewContextProviderImpl;
 
 public class XmlFileContext_ViewTests_Test {
   private XmlFileContext_View sut;
@@ -23,7 +24,7 @@ public class XmlFileContext_ViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new XmlFileContext_ViewContextProvider();
+    this.contextProvider = new XmlFileContext_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

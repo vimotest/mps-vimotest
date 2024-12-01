@@ -5,6 +5,7 @@
 #include <string>
 #include "Labels_View.h"
 #include <vector>
+#include "Labels_ViewContextProviderImpl.h"
 
 namespace widgetassertions
 {
@@ -28,7 +29,7 @@ namespace widgetassertions
   };
   void Labels_ViewTest::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<Labels_ViewContextProvider>();
+    this->contextProvider = std::make_shared<Labels_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(Labels_ViewTest,  Single_Line_Label_given_empty_context_when_then_MyLabel_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible) 

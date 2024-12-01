@@ -10,6 +10,7 @@
 #include "ListViews_ViewMyCheckboxesRow.h"
 #include "ListViews_ViewMyStringRowHandlesRow.h"
 #include "ListViews_ViewMyMultiRowSelectionListRow.h"
+#include "ListViews_ViewContextProviderImpl.h"
 
 namespace widgetassertions
 {
@@ -34,7 +35,7 @@ namespace widgetassertions
   };
   void ListViews_ViewTest::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<ListViews_ViewContextProvider>();
+    this->contextProvider = std::make_shared<ListViews_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(ListViews_ViewTest,  My_Scenario_given_empty_context_when_then_MyListOfLabel_has_4_rows_and_selected_row_index_3_and_MyListOfImages_has_2_rows_and_MyCheckboxes_has_3_rows_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1_and_MyMultiRowSelectionList_has_3_rows_and_selected_row_indices_0_2_) 

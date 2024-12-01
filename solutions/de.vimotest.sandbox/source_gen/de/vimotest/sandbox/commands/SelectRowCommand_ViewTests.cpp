@@ -12,6 +12,7 @@
 #include "SelectRowCommand_ViewMyTreeViewRow.h"
 #include "SelectRowCommand_ViewMyStringRowHandleTreeViewRow.h"
 #include "SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow.h"
+#include "SelectRowCommand_ViewContextProviderImpl.h"
 
 namespace commands
 {
@@ -40,7 +41,7 @@ namespace commands
   };
   void SelectRowCommand_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<SelectRowCommand_ViewContextProvider>();
+    this->contextProvider = std::make_shared<SelectRowCommand_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(SelectRowCommand_ViewTests,  Select_Row_ListView_Call_given_when_select_row_1_in_MyListView_then_MyListView_has_2_rows) 

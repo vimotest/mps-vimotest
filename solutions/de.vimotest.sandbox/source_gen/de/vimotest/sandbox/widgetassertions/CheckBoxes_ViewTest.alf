@@ -10,7 +10,7 @@ class CheckBoxes_ViewTest {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new CheckBoxes_ViewContextProvider (  );
+  this.contextProvider = new CheckBoxes_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

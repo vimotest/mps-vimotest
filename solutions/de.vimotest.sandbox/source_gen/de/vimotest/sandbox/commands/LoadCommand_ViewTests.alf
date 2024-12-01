@@ -10,7 +10,7 @@ class LoadCommand_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new LoadCommand_ViewContextProvider (  );
+  this.contextProvider = new LoadCommand_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

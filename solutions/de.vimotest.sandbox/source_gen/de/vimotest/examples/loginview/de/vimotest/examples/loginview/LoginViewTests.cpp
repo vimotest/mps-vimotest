@@ -4,6 +4,7 @@
 #include "LoginViewContextProvider.h"
 #include "LoginView.h"
 #include <string>
+#include "LoginViewContextProviderImpl.h"
 
 namespace de::vimotest::examples::loginview
 {
@@ -47,7 +48,7 @@ namespace de::vimotest::examples::loginview
   };
   void LoginViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<LoginViewContextProvider>();
+    this->contextProvider = std::make_shared<LoginViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(LoginViewTests,  Load_View_on_empty_context_given_empty_context_when_LoadView_and_fill_User_in_Username_and_fill_MyPass123_in_Password_and_check_ShowPassword_then_Username_shows_text_User_and_Password_shows_text_MyPass123_and_Login_is_enabled) 

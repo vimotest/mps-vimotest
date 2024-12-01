@@ -9,6 +9,7 @@
 #include "RowBasedCommand_ViewMyTableViewRow.h"
 #include <optional>
 #include "RowBasedCommand_ViewMyTreeViewRow.h"
+#include "RowBasedCommand_ViewContextProviderImpl.h"
 
 namespace commands
 {
@@ -35,7 +36,7 @@ namespace commands
   };
   void RowBasedCommand_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<RowBasedCommand_ViewContextProvider>();
+    this->contextProvider = std::make_shared<RowBasedCommand_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(RowBasedCommand_ViewTests,  ListView_RowBased_Commands_given_when_check_Checkboxes_at_0_and_uncheck_Checkboxes_at_1_then_MyListView_has_2_rows) 

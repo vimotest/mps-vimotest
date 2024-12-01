@@ -6,6 +6,7 @@ import de.vimotest.sandbox.widgetassertions.RadioButton_View;
 import de.vimotest.sandbox.widgetassertions.RadioButton_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.widgetassertions.RadioButton_ViewContextProviderImpl;
 import org.junit.Assert;
 
 public class RadioButton_ViewTests_Test {
@@ -18,7 +19,7 @@ public class RadioButton_ViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new RadioButton_ViewContextProvider();
+    this.contextProvider = new RadioButton_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

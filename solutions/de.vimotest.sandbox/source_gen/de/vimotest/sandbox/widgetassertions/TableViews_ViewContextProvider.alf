@@ -2,13 +2,11 @@ namespace widgetassertions ;
 
 
 
-class TableViews_ViewContextProvider {
+abstract class TableViews_ViewContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public SetEmptyContext (  ) {     }
+  public abstract SetEmptyContext (  ) ;
   
-  public BuildSut (  ) : TableViews_View  {
-  return null;
- }
+  public abstract BuildSut (  ) : TableViews_View  ;
 }

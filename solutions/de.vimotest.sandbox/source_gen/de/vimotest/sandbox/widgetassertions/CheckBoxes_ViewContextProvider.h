@@ -9,9 +9,9 @@ namespace widgetassertions
   class CheckBoxes_ViewContextProvider
   {
     public:
-    virtual void Init() ;
-    virtual void SetEmptyContext() ;
-    virtual std::shared_ptr<CheckBoxes_View> BuildSut() ;
+    virtual void Init() = 0;
+    virtual void SetEmptyContext() = 0;
+    virtual std::shared_ptr<CheckBoxes_View> BuildSut() = 0;
   };
 }
 

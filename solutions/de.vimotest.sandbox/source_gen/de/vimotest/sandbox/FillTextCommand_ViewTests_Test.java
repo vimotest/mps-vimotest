@@ -6,6 +6,7 @@ import de.vimotest.sandbox.commands.FillTextCommand_View;
 import de.vimotest.sandbox.commands.FillTextCommand_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.commands.FillTextCommand_ViewContextProviderImpl;
 
 public class FillTextCommand_ViewTests_Test {
   private FillTextCommand_View sut;
@@ -22,7 +23,7 @@ public class FillTextCommand_ViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new FillTextCommand_ViewContextProvider();
+    this.contextProvider = new FillTextCommand_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

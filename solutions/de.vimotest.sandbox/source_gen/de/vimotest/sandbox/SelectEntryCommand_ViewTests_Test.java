@@ -6,6 +6,7 @@ import de.vimotest.sandbox.commands.SelectEntryCommand_View;
 import de.vimotest.sandbox.commands.SelectEntryCommand_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.commands.SelectEntryCommand_ViewContextProviderImpl;
 import java.util.List;
 import org.junit.Assert;
 
@@ -25,7 +26,7 @@ public class SelectEntryCommand_ViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new SelectEntryCommand_ViewContextProvider();
+    this.contextProvider = new SelectEntryCommand_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

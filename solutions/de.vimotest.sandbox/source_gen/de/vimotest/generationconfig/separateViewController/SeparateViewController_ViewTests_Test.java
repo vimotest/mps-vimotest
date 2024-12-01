@@ -19,7 +19,7 @@ public class SeparateViewController_ViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new SeparateViewController_ViewContextProvider();
+    this.contextProvider = new SeparateViewController_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

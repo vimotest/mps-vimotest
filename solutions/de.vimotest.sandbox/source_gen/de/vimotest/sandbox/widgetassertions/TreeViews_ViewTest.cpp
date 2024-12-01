@@ -9,6 +9,7 @@
 #include "TreeViews_ViewMyStringRowHandlesRow.h"
 #include "TreeViews_ViewMyParentIndexRowHandlesRow.h"
 #include "TreeViews_ViewMyParentStringRowHandlesRow.h"
+#include "TreeViews_ViewContextProviderImpl.h"
 
 namespace widgetassertions
 {
@@ -30,7 +31,7 @@ namespace widgetassertions
   };
   void TreeViews_ViewTest::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<TreeViews_ViewContextProvider>();
+    this->contextProvider = std::make_shared<TreeViews_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(TreeViews_ViewTest,  My_Scenario_given_empty_context_when_then_MyTreeView_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1_and_MyParentIndexRowHandles_has_4_rows_and_MyParentStringRowHandles_has_4_rows) 

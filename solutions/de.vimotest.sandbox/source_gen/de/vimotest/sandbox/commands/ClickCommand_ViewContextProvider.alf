@@ -2,11 +2,9 @@ namespace commands ;
 
 
 
-class ClickCommand_ViewContextProvider {
+abstract class ClickCommand_ViewContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public BuildSut (  ) : ClickCommand_View  {
-  return null;
- }
+  public abstract BuildSut (  ) : ClickCommand_View  ;
 }

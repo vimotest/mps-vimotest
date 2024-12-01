@@ -10,10 +10,10 @@ namespace context
   class XmlFileContext_ViewContextProvider
   {
     public:
-    virtual void Init() ;
-    virtual void SetXmlFileContext(std::string xmlFileContent) ;
-    virtual void SetXmlExternalFileContext(std::string xmlFileName) ;
-    virtual std::shared_ptr<XmlFileContext_View> BuildSut() ;
+    virtual void Init() = 0;
+    virtual void SetXmlFileContext(std::string xmlFileContent) = 0;
+    virtual void SetXmlExternalFileContext(std::string xmlFileName) = 0;
+    virtual std::shared_ptr<XmlFileContext_View> BuildSut() = 0;
   };
 }
 

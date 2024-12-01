@@ -2,11 +2,9 @@ namespace commands ;
 
 
 
-class RowBasedCommand_ViewContextProvider {
+abstract class RowBasedCommand_ViewContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public BuildSut (  ) : RowBasedCommand_View  {
-  return null;
- }
+  public abstract BuildSut (  ) : RowBasedCommand_View  ;
 }

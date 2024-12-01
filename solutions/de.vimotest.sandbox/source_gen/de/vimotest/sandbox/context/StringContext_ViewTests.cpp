@@ -5,6 +5,7 @@
 #include "StringContext_ViewContextProvider.h"
 #include "ContextReference_ViewContextProvider.h"
 #include "StringContext_View.h"
+#include "StringContext_ViewContextProviderImpl.h"
 
 namespace context
 {
@@ -21,7 +22,7 @@ namespace context
   };
   void StringContext_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<StringContext_ViewContextProvider>();
+    this->contextProvider = std::make_shared<StringContext_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(StringContext_ViewTests,  SimpleStringContext_given_alice_bob_charlie_when_then_) 

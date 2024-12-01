@@ -2,13 +2,11 @@ namespace widgetassertions ;
 
 
 
-class Labels_ViewContextProvider {
+abstract class Labels_ViewContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public SetEmptyContext (  ) {     }
+  public abstract SetEmptyContext (  ) ;
   
-  public BuildSut (  ) : Labels_View  {
-  return null;
- }
+  public abstract BuildSut (  ) : Labels_View  ;
 }

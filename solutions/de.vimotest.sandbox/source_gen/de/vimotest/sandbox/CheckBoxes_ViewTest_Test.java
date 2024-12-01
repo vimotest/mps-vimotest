@@ -6,6 +6,7 @@ import de.vimotest.sandbox.widgetassertions.CheckBoxes_View;
 import de.vimotest.sandbox.widgetassertions.CheckBoxes_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.widgetassertions.CheckBoxes_ViewContextProviderImpl;
 import org.junit.Assert;
 
 public class CheckBoxes_ViewTest_Test {
@@ -21,7 +22,7 @@ public class CheckBoxes_ViewTest_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new CheckBoxes_ViewContextProvider();
+    this.contextProvider = new CheckBoxes_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

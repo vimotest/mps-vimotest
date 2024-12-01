@@ -10,7 +10,7 @@ class ClickCommand_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new ClickCommand_ViewContextProvider (  );
+  this.contextProvider = new ClickCommand_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

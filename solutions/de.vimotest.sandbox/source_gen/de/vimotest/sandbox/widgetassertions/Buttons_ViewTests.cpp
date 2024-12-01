@@ -4,6 +4,7 @@
 #include "Buttons_ViewContextProvider.h"
 #include "Buttons_View.h"
 #include <string>
+#include "Buttons_ViewContextProviderImpl.h"
 
 namespace widgetassertions
 {
@@ -20,7 +21,7 @@ namespace widgetassertions
   };
   void Buttons_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<Buttons_ViewContextProvider>();
+    this->contextProvider = std::make_shared<Buttons_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(Buttons_ViewTests,  My_Scenario_given_empty_context_when_then_OkButton_is_enabled_and_is_visible_and_shows_text_Test_) 

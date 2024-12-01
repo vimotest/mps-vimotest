@@ -2,13 +2,11 @@ namespace widgetassertions ;
 
 
 
-class TextBoxes_ViewContextProvider {
+abstract class TextBoxes_ViewContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public SetEmptyContext (  ) {     }
+  public abstract SetEmptyContext (  ) ;
   
-  public BuildSut (  ) : TextBoxes_View  {
-  return null;
- }
+  public abstract BuildSut (  ) : TextBoxes_View  ;
 }

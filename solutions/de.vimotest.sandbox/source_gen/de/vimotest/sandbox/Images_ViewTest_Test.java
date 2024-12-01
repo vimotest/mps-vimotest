@@ -6,6 +6,7 @@ import de.vimotest.sandbox.widgetassertions.Images_View;
 import de.vimotest.sandbox.widgetassertions.Images_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.widgetassertions.Images_ViewContextProviderImpl;
 import org.junit.Assert;
 
 public class Images_ViewTest_Test {
@@ -20,7 +21,7 @@ public class Images_ViewTest_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new Images_ViewContextProvider();
+    this.contextProvider = new Images_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

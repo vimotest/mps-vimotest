@@ -3,6 +3,7 @@
 #include <memory>
 #include "CheckCommand_ViewContextProvider.h"
 #include "CheckCommand_View.h"
+#include "CheckCommand_ViewContextProviderImpl.h"
 
 namespace commands
 {
@@ -19,7 +20,7 @@ namespace commands
   };
   void CheckCommand_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<CheckCommand_ViewContextProvider>();
+    this->contextProvider = std::make_shared<CheckCommand_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(CheckCommand_ViewTests,  Check_CheckBox_given_when_check_MyCheckBox1_and_uncheck_MyCheckBox2_then_) 

@@ -8,8 +8,8 @@
 class SeparateViewController_ViewContextProvider
 {
   public:
-  virtual void Init() ;
-  virtual void SetEmptyContext() ;
-  virtual std::shared_ptr<MyViewController> BuildSutViewController() ;
-  virtual std::shared_ptr<MyViewModel> GetViewModel() ;
+  virtual void Init() = 0;
+  virtual void SetEmptyContext() = 0;
+  virtual std::shared_ptr<MyViewController> BuildSutViewController() = 0;
+  virtual std::shared_ptr<MyViewModel> GetViewModel() = 0;
 };

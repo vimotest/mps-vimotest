@@ -17,7 +17,7 @@ public class ParameterObjectCommand_ViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new ParameterObjectCommand_ViewContextProvider();
+    this.contextProvider = new ParameterObjectCommand_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

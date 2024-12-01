@@ -2,17 +2,13 @@
 
 
 
-class SeparateViewController_ViewContextProvider {
+abstract class SeparateViewController_ViewContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public SetEmptyContext (  ) {     }
+  public abstract SetEmptyContext (  ) ;
   
-  public BuildSutViewController (  ) : MyViewController  {
-  return null;
- }
+  public abstract BuildSutViewController (  ) : MyViewController  ;
   
-  public GetViewModel (  ) : MyViewModel  {
-  return null;
- }
+  public abstract GetViewModel (  ) : MyViewModel  ;
 }

@@ -10,7 +10,7 @@ class SelectRowCommand_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new SelectRowCommand_ViewContextProvider (  );
+  this.contextProvider = new SelectRowCommand_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

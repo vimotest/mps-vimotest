@@ -6,6 +6,7 @@ import de.vimotest.sandbox.widgetassertions.TextBoxes_View;
 import de.vimotest.sandbox.widgetassertions.TextBoxes_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.widgetassertions.TextBoxes_ViewContextProviderImpl;
 import org.junit.Assert;
 import java.util.List;
 
@@ -26,7 +27,7 @@ public class TextBoxes_ViewTest_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new TextBoxes_ViewContextProvider();
+    this.contextProvider = new TextBoxes_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

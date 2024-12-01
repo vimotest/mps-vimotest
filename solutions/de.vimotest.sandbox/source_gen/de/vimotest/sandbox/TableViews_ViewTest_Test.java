@@ -6,6 +6,7 @@ import de.vimotest.sandbox.widgetassertions.TableViews_View;
 import de.vimotest.sandbox.widgetassertions.TableViews_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.widgetassertions.TableViews_ViewContextProviderImpl;
 import java.util.List;
 import de.vimotest.sandbox.widgetassertions.TableViews_ViewMyTableViewRow;
 import org.junit.Assert;
@@ -29,7 +30,7 @@ public class TableViews_ViewTest_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new TableViews_ViewContextProvider();
+    this.contextProvider = new TableViews_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

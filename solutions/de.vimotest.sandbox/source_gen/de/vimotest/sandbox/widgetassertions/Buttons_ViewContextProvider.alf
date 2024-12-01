@@ -2,13 +2,11 @@ namespace widgetassertions ;
 
 
 
-class Buttons_ViewContextProvider {
+abstract class Buttons_ViewContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public SetEmptyContext (  ) {     }
+  public abstract SetEmptyContext (  ) ;
   
-  public BuildSut (  ) : Buttons_View  {
-  return null;
- }
+  public abstract BuildSut (  ) : Buttons_View  ;
 }

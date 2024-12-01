@@ -4,6 +4,7 @@
 #include "ParameterObjectCommand_ViewContextProvider.h"
 #include <string>
 #include "ParameterObjectCommand_View.h"
+#include "ParameterObjectCommand_ViewContextProviderImpl.h"
 
 class ParameterObjectCommand_ViewTests : public testing::Test
 {
@@ -20,7 +21,7 @@ class ParameterObjectCommand_ViewTests : public testing::Test
 
 void ParameterObjectCommand_ViewTests::SetUp( ) 
 {
-  this->contextProvider = std::make_shared<ParameterObjectCommand_ViewContextProvider>();
+  this->contextProvider = std::make_shared<ParameterObjectCommand_ViewContextProviderImpl>();
   this->contextProvider->Init();
 }
 

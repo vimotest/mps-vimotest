@@ -6,6 +6,7 @@ import de.vimotest.sandbox.context.ContextReference_View;
 import de.vimotest.sandbox.context.ContextReference_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.context.ContextReference_ViewContextProviderImpl;
 
 public class ContextReference_ViewTests_Test {
   private ContextReference_View sut;
@@ -23,7 +24,7 @@ public class ContextReference_ViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new ContextReference_ViewContextProvider();
+    this.contextProvider = new ContextReference_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

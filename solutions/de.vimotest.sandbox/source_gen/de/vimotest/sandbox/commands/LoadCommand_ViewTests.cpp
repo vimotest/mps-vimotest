@@ -4,6 +4,7 @@
 #include "LoadCommand_ViewContextProvider.h"
 #include "LoadCommand_View.h"
 #include <string>
+#include "LoadCommand_ViewContextProviderImpl.h"
 
 namespace commands
 {
@@ -20,7 +21,7 @@ namespace commands
   };
   void LoadCommand_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<LoadCommand_ViewContextProvider>();
+    this->contextProvider = std::make_shared<LoadCommand_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(LoadCommand_ViewTests,  Load_Commands_Call_given_when_LoadView_then_) 

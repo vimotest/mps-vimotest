@@ -10,7 +10,7 @@ class Labels_ViewTest {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new Labels_ViewContextProvider (  );
+  this.contextProvider = new Labels_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

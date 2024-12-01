@@ -10,7 +10,7 @@ class Images_ViewTest {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new Images_ViewContextProvider (  );
+  this.contextProvider = new Images_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

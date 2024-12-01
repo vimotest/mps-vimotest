@@ -10,7 +10,7 @@ class TreeViews_ViewTest {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new TreeViews_ViewContextProvider (  );
+  this.contextProvider = new TreeViews_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

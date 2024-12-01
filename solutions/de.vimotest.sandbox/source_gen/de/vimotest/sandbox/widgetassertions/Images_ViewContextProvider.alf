@@ -2,13 +2,11 @@ namespace widgetassertions ;
 
 
 
-class Images_ViewContextProvider {
+abstract class Images_ViewContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public SetEmptyContext (  ) {     }
+  public abstract SetEmptyContext (  ) ;
   
-  public BuildSut (  ) : Images_View  {
-  return null;
- }
+  public abstract BuildSut (  ) : Images_View  ;
 }

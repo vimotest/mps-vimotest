@@ -2,13 +2,11 @@ namespace widgetassertions ;
 
 
 
-class ComboBoxes_ViewContextProvider {
+abstract class ComboBoxes_ViewContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public SetEmptyContext (  ) {     }
+  public abstract SetEmptyContext (  ) ;
   
-  public BuildSut (  ) : ComboBoxes_View  {
-  return null;
- }
+  public abstract BuildSut (  ) : ComboBoxes_View  ;
 }

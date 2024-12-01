@@ -10,7 +10,7 @@ class LoginViewTests {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new LoginViewContextProvider (  );
+  this.contextProvider = new LoginViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

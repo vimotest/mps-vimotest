@@ -10,7 +10,7 @@ class XmlFileContext_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new XmlFileContext_ViewContextProvider (  );
+  this.contextProvider = new XmlFileContext_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

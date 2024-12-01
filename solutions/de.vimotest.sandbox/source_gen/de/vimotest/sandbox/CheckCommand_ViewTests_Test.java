@@ -6,6 +6,7 @@ import de.vimotest.sandbox.commands.CheckCommand_View;
 import de.vimotest.sandbox.commands.CheckCommand_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.commands.CheckCommand_ViewContextProviderImpl;
 
 public class CheckCommand_ViewTests_Test {
   private CheckCommand_View sut;
@@ -18,7 +19,7 @@ public class CheckCommand_ViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new CheckCommand_ViewContextProvider();
+    this.contextProvider = new CheckCommand_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

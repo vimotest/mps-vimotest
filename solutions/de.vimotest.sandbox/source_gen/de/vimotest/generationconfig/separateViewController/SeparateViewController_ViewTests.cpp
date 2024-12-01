@@ -4,6 +4,7 @@
 #include "SeparateViewController_ViewContextProvider.h"
 #include "MyViewController.h"
 #include "MyViewModel.h"
+#include "SeparateViewController_ViewContextProviderImpl.h"
 
 class SeparateViewController_ViewTests : public testing::Test
 {
@@ -22,7 +23,7 @@ class SeparateViewController_ViewTests : public testing::Test
 
 void SeparateViewController_ViewTests::SetUp( ) 
 {
-  this->contextProvider = std::make_shared<SeparateViewController_ViewContextProvider>();
+  this->contextProvider = std::make_shared<SeparateViewController_ViewContextProviderImpl>();
   this->contextProvider->Init();
 }
 

@@ -6,6 +6,7 @@ import de.vimotest.sandbox.widgetassertions.ComboBoxes_View;
 import de.vimotest.sandbox.widgetassertions.ComboBoxes_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.widgetassertions.ComboBoxes_ViewContextProviderImpl;
 import java.util.List;
 import org.junit.Assert;
 
@@ -21,7 +22,7 @@ public class ComboBoxes_ViewTest_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new ComboBoxes_ViewContextProvider();
+    this.contextProvider = new ComboBoxes_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

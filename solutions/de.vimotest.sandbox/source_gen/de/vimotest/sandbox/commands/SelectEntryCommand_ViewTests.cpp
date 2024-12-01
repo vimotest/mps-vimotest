@@ -6,6 +6,7 @@
 #include "SelectEntryCommand_View.h"
 #include <vector>
 #include <optional>
+#include "SelectEntryCommand_ViewContextProviderImpl.h"
 
 namespace commands
 {
@@ -23,7 +24,7 @@ namespace commands
   };
   void SelectEntryCommand_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<SelectEntryCommand_ViewContextProvider>();
+    this->contextProvider = std::make_shared<SelectEntryCommand_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(SelectEntryCommand_ViewTests,  Select_Entry_Combobox_Call_given_when_select_entry_C_in_MyComboBox_then_MyComboBox_has_3_entries_and) 

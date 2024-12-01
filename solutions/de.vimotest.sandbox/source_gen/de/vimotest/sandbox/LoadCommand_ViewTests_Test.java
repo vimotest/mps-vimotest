@@ -6,6 +6,7 @@ import de.vimotest.sandbox.commands.LoadCommand_View;
 import de.vimotest.sandbox.commands.LoadCommand_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.commands.LoadCommand_ViewContextProviderImpl;
 
 public class LoadCommand_ViewTests_Test {
   private LoadCommand_View sut;
@@ -22,7 +23,7 @@ public class LoadCommand_ViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new LoadCommand_ViewContextProvider();
+    this.contextProvider = new LoadCommand_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

@@ -10,7 +10,7 @@ class ContextReference_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new ContextReference_ViewContextProvider (  );
+  this.contextProvider = new ContextReference_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

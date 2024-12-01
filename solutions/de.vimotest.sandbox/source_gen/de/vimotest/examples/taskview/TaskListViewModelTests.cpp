@@ -6,6 +6,7 @@
 #include "TaskListViewModel.h"
 #include <vector>
 #include "TaskListViewModelTasksRow.h"
+#include "TaskListViewModelContextProviderImpl.h"
 
 class TaskListViewModelTests : public testing::Test
 {
@@ -48,7 +49,7 @@ class TaskListViewModelTests : public testing::Test
 
 void TaskListViewModelTests::SetUp( ) 
 {
-  this->contextProvider = std::make_shared<TaskListViewModelContextProvider>();
+  this->contextProvider = std::make_shared<TaskListViewModelContextProviderImpl>();
   this->contextProvider->Init();
 }
 

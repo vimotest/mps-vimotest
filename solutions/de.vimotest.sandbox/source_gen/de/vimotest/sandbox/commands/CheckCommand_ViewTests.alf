@@ -10,7 +10,7 @@ class CheckCommand_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new CheckCommand_ViewContextProvider (  );
+  this.contextProvider = new CheckCommand_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

@@ -4,6 +4,7 @@
 #include "RadioButton_ViewContextProvider.h"
 #include <string>
 #include "RadioButton_View.h"
+#include "RadioButton_ViewContextProviderImpl.h"
 
 namespace widgetassertions
 {
@@ -19,7 +20,7 @@ namespace widgetassertions
   };
   void RadioButton_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<RadioButton_ViewContextProvider>();
+    this->contextProvider = std::make_shared<RadioButton_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(RadioButton_ViewTests,  Select_Option_given_when_then_MyChoices_selected_OptionC_) 

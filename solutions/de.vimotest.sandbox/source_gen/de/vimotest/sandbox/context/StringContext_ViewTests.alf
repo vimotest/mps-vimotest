@@ -10,7 +10,7 @@ class StringContext_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new StringContext_ViewContextProvider (  );
+  this.contextProvider = new StringContext_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

@@ -4,6 +4,7 @@
 #include <memory>
 #include "XmlFileContext_ViewContextProvider.h"
 #include "XmlFileContext_View.h"
+#include "XmlFileContext_ViewContextProviderImpl.h"
 
 namespace context
 {
@@ -21,7 +22,7 @@ namespace context
   };
   void XmlFileContext_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<XmlFileContext_ViewContextProvider>();
+    this->contextProvider = std::make_shared<XmlFileContext_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(XmlFileContext_ViewTests,  XmlFile_NoExternalFile_given_XmlFile_NoExternalFile_when_then_) 

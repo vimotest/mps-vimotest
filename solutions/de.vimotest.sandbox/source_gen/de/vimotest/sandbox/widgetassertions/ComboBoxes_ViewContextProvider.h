@@ -9,9 +9,9 @@ namespace widgetassertions
   class ComboBoxes_ViewContextProvider
   {
     public:
-    virtual void Init() ;
-    virtual void SetEmptyContext() ;
-    virtual std::shared_ptr<ComboBoxes_View> BuildSut() ;
+    virtual void Init() = 0;
+    virtual void SetEmptyContext() = 0;
+    virtual std::shared_ptr<ComboBoxes_View> BuildSut() = 0;
   };
 }
 

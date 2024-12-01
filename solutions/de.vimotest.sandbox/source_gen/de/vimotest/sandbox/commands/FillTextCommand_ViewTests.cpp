@@ -4,6 +4,7 @@
 #include "FillTextCommand_ViewContextProvider.h"
 #include <string>
 #include "FillTextCommand_View.h"
+#include "FillTextCommand_ViewContextProviderImpl.h"
 
 namespace commands
 {
@@ -20,7 +21,7 @@ namespace commands
   };
   void FillTextCommand_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<FillTextCommand_ViewContextProvider>();
+    this->contextProvider = std::make_shared<FillTextCommand_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(FillTextCommand_ViewTests,  Fill_Text_TextBox_given_when_fill_Changed_in_MyTextBox_then_) 

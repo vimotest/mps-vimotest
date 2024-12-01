@@ -2,11 +2,9 @@ namespace commands ;
 
 
 
-class LoadCommand_ViewContextProvider {
+abstract class LoadCommand_ViewContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public BuildSut (  ) : LoadCommand_View  {
-  return null;
- }
+  public abstract BuildSut (  ) : LoadCommand_View  ;
 }

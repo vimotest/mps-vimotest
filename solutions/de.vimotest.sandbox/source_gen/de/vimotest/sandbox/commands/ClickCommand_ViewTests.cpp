@@ -3,6 +3,7 @@
 #include <memory>
 #include "ClickCommand_ViewContextProvider.h"
 #include "ClickCommand_View.h"
+#include "ClickCommand_ViewContextProviderImpl.h"
 
 namespace commands
 {
@@ -18,7 +19,7 @@ namespace commands
   };
   void ClickCommand_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<ClickCommand_ViewContextProvider>();
+    this->contextProvider = std::make_shared<ClickCommand_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(ClickCommand_ViewTests,  Click_Button_given_when_click_MyButton_then_) 

@@ -10,7 +10,7 @@ class RowBasedCommand_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new RowBasedCommand_ViewContextProvider (  );
+  this.contextProvider = new RowBasedCommand_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

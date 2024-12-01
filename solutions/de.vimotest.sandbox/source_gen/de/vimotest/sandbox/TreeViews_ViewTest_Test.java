@@ -6,6 +6,7 @@ import de.vimotest.sandbox.widgetassertions.TreeViews_View;
 import de.vimotest.sandbox.widgetassertions.TreeViews_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.widgetassertions.TreeViews_ViewContextProviderImpl;
 import java.util.List;
 import de.vimotest.sandbox.widgetassertions.TreeViews_ViewMyTreeViewRow;
 import org.junit.Assert;
@@ -33,7 +34,7 @@ public class TreeViews_ViewTest_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new TreeViews_ViewContextProvider();
+    this.contextProvider = new TreeViews_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

@@ -6,6 +6,7 @@
 #include <vector>
 #include <string>
 #include <optional>
+#include "ComboBoxes_ViewContextProviderImpl.h"
 
 namespace widgetassertions
 {
@@ -23,7 +24,7 @@ namespace widgetassertions
   };
   void ComboBoxes_ViewTest::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<ComboBoxes_ViewContextProvider>();
+    this->contextProvider = std::make_shared<ComboBoxes_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(ComboBoxes_ViewTest,  My_Scenario_given_empty_context_when_then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible_and_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_) 

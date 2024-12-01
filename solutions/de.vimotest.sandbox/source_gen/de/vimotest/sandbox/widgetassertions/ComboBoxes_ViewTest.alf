@@ -10,7 +10,7 @@ class ComboBoxes_ViewTest {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new ComboBoxes_ViewContextProvider (  );
+  this.contextProvider = new ComboBoxes_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

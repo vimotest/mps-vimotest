@@ -4,6 +4,7 @@
 #include <memory>
 #include "ContextReference_ViewContextProvider.h"
 #include "ContextReference_View.h"
+#include "ContextReference_ViewContextProviderImpl.h"
 
 namespace context
 {
@@ -21,7 +22,7 @@ namespace context
   };
   void ContextReference_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<ContextReference_ViewContextProvider>();
+    this->contextProvider = std::make_shared<ContextReference_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(ContextReference_ViewTests,  String_Context_given_base_when_then_) 

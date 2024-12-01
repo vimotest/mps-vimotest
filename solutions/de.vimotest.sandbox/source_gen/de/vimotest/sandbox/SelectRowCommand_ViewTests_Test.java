@@ -6,6 +6,7 @@ import de.vimotest.sandbox.commands.SelectRowCommand_View;
 import de.vimotest.sandbox.commands.SelectRowCommand_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.commands.SelectRowCommand_ViewContextProviderImpl;
 import java.util.Arrays;
 import java.util.List;
 import de.vimotest.sandbox.commands.SelectRowCommand_ViewMyListViewRow;
@@ -64,7 +65,7 @@ public class SelectRowCommand_ViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new SelectRowCommand_ViewContextProvider();
+    this.contextProvider = new SelectRowCommand_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

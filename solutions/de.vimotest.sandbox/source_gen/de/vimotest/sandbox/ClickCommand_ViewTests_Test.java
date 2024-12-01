@@ -6,6 +6,7 @@ import de.vimotest.sandbox.commands.ClickCommand_View;
 import de.vimotest.sandbox.commands.ClickCommand_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.commands.ClickCommand_ViewContextProviderImpl;
 
 public class ClickCommand_ViewTests_Test {
   private ClickCommand_View sut;
@@ -17,7 +18,7 @@ public class ClickCommand_ViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new ClickCommand_ViewContextProvider();
+    this.contextProvider = new ClickCommand_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

@@ -9,8 +9,8 @@ namespace commands
   class FillTextCommand_ViewContextProvider
   {
     public:
-    virtual void Init() ;
-    virtual std::shared_ptr<FillTextCommand_View> BuildSut() ;
+    virtual void Init() = 0;
+    virtual std::shared_ptr<FillTextCommand_View> BuildSut() = 0;
   };
 }
 

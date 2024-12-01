@@ -10,7 +10,7 @@ class TextBoxes_ViewTest {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new TextBoxes_ViewContextProvider (  );
+  this.contextProvider = new TextBoxes_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

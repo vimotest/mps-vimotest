@@ -2,11 +2,9 @@ namespace commands ;
 
 
 
-class CheckCommand_ViewContextProvider {
+abstract class CheckCommand_ViewContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public BuildSut (  ) : CheckCommand_View  {
-  return null;
- }
+  public abstract BuildSut (  ) : CheckCommand_View  ;
 }

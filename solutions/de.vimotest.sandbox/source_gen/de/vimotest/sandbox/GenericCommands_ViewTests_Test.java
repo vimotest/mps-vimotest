@@ -6,6 +6,7 @@ import de.vimotest.sandbox.commands.GenericCommands_View;
 import de.vimotest.sandbox.commands.GenericCommands_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.commands.GenericCommands_ViewContextProviderImpl;
 import java.util.Arrays;
 
 public class GenericCommands_ViewTests_Test {
@@ -18,7 +19,7 @@ public class GenericCommands_ViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new GenericCommands_ViewContextProvider();
+    this.contextProvider = new GenericCommands_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

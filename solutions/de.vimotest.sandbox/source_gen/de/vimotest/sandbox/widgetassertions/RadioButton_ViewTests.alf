@@ -10,7 +10,7 @@ class RadioButton_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new RadioButton_ViewContextProvider (  );
+  this.contextProvider = new RadioButton_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

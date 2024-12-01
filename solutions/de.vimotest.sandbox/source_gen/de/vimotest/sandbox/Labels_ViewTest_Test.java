@@ -6,6 +6,7 @@ import de.vimotest.sandbox.widgetassertions.Labels_View;
 import de.vimotest.sandbox.widgetassertions.Labels_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.widgetassertions.Labels_ViewContextProviderImpl;
 import org.junit.Assert;
 import java.util.List;
 
@@ -43,7 +44,7 @@ public class Labels_ViewTest_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new Labels_ViewContextProvider();
+    this.contextProvider = new Labels_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

@@ -10,7 +10,7 @@ class FillTextCommand_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new FillTextCommand_ViewContextProvider (  );
+  this.contextProvider = new FillTextCommand_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

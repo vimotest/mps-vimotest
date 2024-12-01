@@ -2,13 +2,11 @@
 
 
 
-class ParameterObjectCommand_ViewContextProvider {
+abstract class ParameterObjectCommand_ViewContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public SetEmptyContext (  ) {     }
+  public abstract SetEmptyContext (  ) ;
   
-  public BuildSut (  ) : ParameterObjectCommand_View  {
-  return null;
- }
+  public abstract BuildSut (  ) : ParameterObjectCommand_View  ;
 }

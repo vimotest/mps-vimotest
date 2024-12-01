@@ -2,13 +2,11 @@
 
 
 
-class TaskListViewModelContextProvider {
+abstract class TaskListViewModelContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public SetDataTableJson (   in json : String  ) {     }
+  public abstract SetDataTableJson (   in json : String  ) ;
   
-  public BuildSut (  ) : TaskListViewModel  {
-  return null;
- }
+  public abstract BuildSut (  ) : TaskListViewModel  ;
 }

@@ -2,13 +2,11 @@ namespace context ;
 
 
 
-class ContextReference_ViewContextProvider {
+abstract class ContextReference_ViewContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public SetSimpleStringContext (   in string : String  ) {     }
+  public abstract SetSimpleStringContext (   in string : String  ) ;
   
-  public BuildSut (  ) : ContextReference_View  {
-  return null;
- }
+  public abstract BuildSut (  ) : ContextReference_View  ;
 }

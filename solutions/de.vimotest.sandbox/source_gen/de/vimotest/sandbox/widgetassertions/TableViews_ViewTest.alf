@@ -10,7 +10,7 @@ class TableViews_ViewTest {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new TableViews_ViewContextProvider (  );
+  this.contextProvider = new TableViews_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

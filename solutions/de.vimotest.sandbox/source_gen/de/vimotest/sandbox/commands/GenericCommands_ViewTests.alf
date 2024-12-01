@@ -10,7 +10,7 @@ class GenericCommands_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new GenericCommands_ViewContextProvider (  );
+  this.contextProvider = new GenericCommands_ViewContextProviderImpl (  );
    this.contextProvider.Init (  );
  }
   

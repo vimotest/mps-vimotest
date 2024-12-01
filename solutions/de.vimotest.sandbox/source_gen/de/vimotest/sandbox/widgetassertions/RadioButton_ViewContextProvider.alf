@@ -2,11 +2,9 @@ namespace widgetassertions ;
 
 
 
-class RadioButton_ViewContextProvider {
+abstract class RadioButton_ViewContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public BuildSut (  ) : RadioButton_View  {
-  return null;
- }
+  public abstract BuildSut (  ) : RadioButton_View  ;
 }

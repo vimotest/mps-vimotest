@@ -2,13 +2,11 @@ namespace widgetassertions ;
 
 
 
-class CheckBoxes_ViewContextProvider {
+abstract class CheckBoxes_ViewContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public SetEmptyContext (  ) {     }
+  public abstract SetEmptyContext (  ) ;
   
-  public BuildSut (  ) : CheckBoxes_View  {
-  return null;
- }
+  public abstract BuildSut (  ) : CheckBoxes_View  ;
 }

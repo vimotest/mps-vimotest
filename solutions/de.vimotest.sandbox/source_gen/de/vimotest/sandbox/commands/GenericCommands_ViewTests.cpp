@@ -4,6 +4,7 @@
 #include "GenericCommands_ViewContextProvider.h"
 #include <string>
 #include "GenericCommands_View.h"
+#include "GenericCommands_ViewContextProviderImpl.h"
 
 namespace commands
 {
@@ -19,7 +20,7 @@ namespace commands
   };
   void GenericCommands_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<GenericCommands_ViewContextProvider>();
+    this->contextProvider = std::make_shared<GenericCommands_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(GenericCommands_ViewTests,  Generic_Commands_Call_given_when_MyCommand_then_) 

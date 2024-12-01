@@ -5,6 +5,7 @@
 #include <string>
 #include "TextBoxes_View.h"
 #include <vector>
+#include "TextBoxes_ViewContextProviderImpl.h"
 
 namespace widgetassertions
 {
@@ -23,7 +24,7 @@ namespace widgetassertions
   };
   void TextBoxes_ViewTest::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<TextBoxes_ViewContextProvider>();
+    this->contextProvider = std::make_shared<TextBoxes_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(TextBoxes_ViewTest,  My_SingleLine_Scenario_given_empty_context_when_then_MyTextBox_shows_text_Some_entered_Input_and_is_enabled_and_is_visible) 

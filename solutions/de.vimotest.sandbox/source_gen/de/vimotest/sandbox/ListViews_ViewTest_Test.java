@@ -6,6 +6,7 @@ import de.vimotest.sandbox.widgetassertions.ListViews_View;
 import de.vimotest.sandbox.widgetassertions.ListViews_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.widgetassertions.ListViews_ViewContextProviderImpl;
 import java.util.List;
 import de.vimotest.sandbox.widgetassertions.ListViews_ViewMyListOfLabelRow;
 import org.junit.Assert;
@@ -41,7 +42,7 @@ public class ListViews_ViewTest_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new ListViews_ViewContextProvider();
+    this.contextProvider = new ListViews_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

@@ -2,15 +2,13 @@ namespace context ;
 
 
 
-class XmlFileContext_ViewContextProvider {
+abstract class XmlFileContext_ViewContextProvider {
   
-  public Init (  ) {     }
+  public abstract Init (  ) ;
   
-  public SetXmlFileContext (   in xmlFileContent : String  ) {     }
+  public abstract SetXmlFileContext (   in xmlFileContent : String  ) ;
   
-  public SetXmlExternalFileContext (   in xmlFileName : String  ) {     }
+  public abstract SetXmlExternalFileContext (   in xmlFileName : String  ) ;
   
-  public BuildSut (  ) : XmlFileContext_View  {
-  return null;
- }
+  public abstract BuildSut (  ) : XmlFileContext_View  ;
 }

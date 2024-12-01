@@ -4,6 +4,7 @@
 #include "CheckBoxes_ViewContextProvider.h"
 #include "CheckBoxes_View.h"
 #include <string>
+#include "CheckBoxes_ViewContextProviderImpl.h"
 
 namespace widgetassertions
 {
@@ -22,7 +23,7 @@ namespace widgetassertions
   };
   void CheckBoxes_ViewTest::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<CheckBoxes_ViewContextProvider>();
+    this->contextProvider = std::make_shared<CheckBoxes_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
   TEST_F(CheckBoxes_ViewTest,  My_Scenario_given_empty_context_when_then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_and_MyFlagNoLabel_is_not_checked_and_MyFlagTriState_is_not_checked) 

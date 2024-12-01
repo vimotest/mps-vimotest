@@ -6,6 +6,7 @@ import de.vimotest.sandbox.widgetassertions.Buttons_View;
 import de.vimotest.sandbox.widgetassertions.Buttons_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.sandbox.widgetassertions.Buttons_ViewContextProviderImpl;
 import org.junit.Assert;
 
 public class Buttons_ViewTests_Test {
@@ -19,7 +20,7 @@ public class Buttons_ViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new Buttons_ViewContextProvider();
+    this.contextProvider = new Buttons_ViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

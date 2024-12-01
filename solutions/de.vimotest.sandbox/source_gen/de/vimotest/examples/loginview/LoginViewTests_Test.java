@@ -6,6 +6,7 @@ import de.vimotest.examples.loginview.de.vimotest.examples.loginview.LoginView;
 import de.vimotest.examples.loginview.de.vimotest.examples.loginview.LoginViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import de.vimotest.examples.loginview.de.vimotest.examples.loginview.LoginViewContextProviderImpl;
 import org.junit.Assert;
 
 public class LoginViewTests_Test {
@@ -65,7 +66,7 @@ public class LoginViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.contextProvider = new LoginViewContextProvider();
+    this.contextProvider = new LoginViewContextProviderImpl();
     this.contextProvider.Init();
   }
 

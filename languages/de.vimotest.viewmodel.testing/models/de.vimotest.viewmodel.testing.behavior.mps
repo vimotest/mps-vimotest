@@ -663,6 +663,26 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="3nKDvO$wPos" role="13h7CS">
+      <property role="TrG5h" value="getEffectiveContextProviderImplName" />
+      <node concept="3Tm1VV" id="3nKDvO$wPot" role="1B3o_S" />
+      <node concept="17QB3L" id="3nKDvO$wPou" role="3clF45" />
+      <node concept="3clFbS" id="3nKDvO$wPov" role="3clF47">
+        <node concept="3clFbF" id="3nKDvO$wQYW" role="3cqZAp">
+          <node concept="3cpWs3" id="3nKDvO$wSU5" role="3clFbG">
+            <node concept="Xl_RD" id="3nKDvO$wT2v" role="3uHU7w">
+              <property role="Xl_RC" value="Impl" />
+            </node>
+            <node concept="2OqwBi" id="3nKDvO$wRfB" role="3uHU7B">
+              <node concept="13iPFW" id="3nKDvO$wQYV" role="2Oq$k0" />
+              <node concept="2qgKlT" id="3nKDvO$wRyn" role="2OqNvi">
+                <ref role="37wK5l" node="4Pj3bOmvh0Z" resolve="getEffectiveContextProviderName" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="3CJ09vZFA7p">
     <property role="3GE5qa" value="test.assert" />

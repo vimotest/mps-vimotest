@@ -51,7 +51,7 @@
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.vimotest</id>
         <name>mps-vimotest</name>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
         <depends>com.intellij.modules.platform</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.editor.tooltips</depends>
@@ -835,7 +835,7 @@
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.vimotest</id>
         <name>mps-vimotest</name>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
         <depends>com.intellij.modules.platform</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.editor.tooltips</depends>

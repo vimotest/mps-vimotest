@@ -279,7 +279,7 @@
       </node>
       <node concept="3_J27D" id="220dcIkyAjd" role="m$_w8">
         <node concept="3Mxwew" id="220dcIkyAje" role="3MwsjC">
-          <property role="3MwjfP" value="1.0.1" />
+          <property role="3MwjfP" value="1.0.2" />
         </node>
       </node>
       <node concept="m$f5U" id="220dcIkyAjf" role="m$_yh">
@@ -1017,7 +1017,7 @@
         </node>
         <node concept="1SiIV0" id="26p1ZnjrotA" role="3bR37C">
           <node concept="3bR9La" id="26p1ZnjrotB" role="1SiIV1">
-            <ref role="3bR37D" to="mk2q:5tK9548cRTP" resolve="GenPlan" />
+            <ref role="3bR37D" to="mk2q:5tK9548cRTP" resolve="alfi.genplan" />
           </node>
         </node>
         <node concept="1BupzO" id="26p1ZnjrotG" role="3bR31x">

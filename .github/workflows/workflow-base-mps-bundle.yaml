@@ -84,8 +84,10 @@ jobs:
           path: |
             build/mps-bundle
       - name: Zip mps-bundle
-        run: zip -r build/mps-bundle.zip build/mps-bundle
-
+        run: |
+          cd build/mps-bundle
+          zip -r mps-bundle.zip ${{ env.mps_folder }}
+          cd -
 
       - name: Find latest draft release
         id: find_draft_release
@@ -112,7 +114,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ fromJson(steps.find_draft_release.outputs.result).upload_url }}
-          asset_path: build/mps-bundle.zip
+          asset_path: build/mps-bundle/mps-bundle.zip
           asset_name: vimotest-mps-bundle-${{ inputs.os }}.zip
           asset_content_type: application/zip
 

@@ -1,0 +1,4 @@
+[submodule "submodules/mps-vimotest-samples"]
+	path = submodules/mps-vimotest-samples
+	url = ../mps-vimotest-samples.git
+	branch = main

@@ -2,7 +2,7 @@
 
 private import Testing ;
 
-class TaskListAddDeleteTests {
+class TaskListViewModel_AddDeleteTasks_Tests {
   
   private sut : TaskListViewModel  ;
   

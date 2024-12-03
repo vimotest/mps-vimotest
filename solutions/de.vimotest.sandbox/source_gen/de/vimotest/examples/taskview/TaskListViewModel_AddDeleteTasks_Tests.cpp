@@ -8,7 +8,7 @@
 #include "TaskListViewModelTasksRow.h"
 #include "TaskListViewModelContextProviderImpl.h"
 
-class TaskListAddDeleteTests : public testing::Test
+class TaskListViewModel_AddDeleteTasks_Tests : public testing::Test
 {
   public:
   std::shared_ptr<TaskListViewModel> sut;
@@ -49,13 +49,13 @@ class TaskListAddDeleteTests : public testing::Test
   void SetUp() override ;
 };
 
-void TaskListAddDeleteTests::SetUp( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::SetUp( ) 
 {
   this->contextProvider = std::make_shared<TaskListViewModelContextProviderImpl>();
   this->contextProvider->Init();
 }
 
-TEST_F(TaskListAddDeleteTests,  Add_New_Task_given_oneTask_when_LoadView_and_click_AddNewTask_then_Tasks_has_2_rows_and_selected_row_handle_1) 
+TEST_F(TaskListViewModel_AddDeleteTasks_Tests,  Add_New_Task_given_oneTask_when_LoadView_and_click_AddNewTask_then_Tasks_has_2_rows_and_selected_row_handle_1) 
 {
   this->given_oneTask();
   this->BuildSut();
@@ -64,7 +64,7 @@ TEST_F(TaskListAddDeleteTests,  Add_New_Task_given_oneTask_when_LoadView_and_cli
   this->then_Tasks_has_2_rows_and_selected_row_handle_1();
 }
 
-TEST_F(TaskListAddDeleteTests,  Delete_Task_given_threeTasks_when_LoadView_and_select_row_0_in_Tasks_and_click_DeleteTask_then_Tasks_has_2_rows_and_selected_row_handle_1) 
+TEST_F(TaskListViewModel_AddDeleteTasks_Tests,  Delete_Task_given_threeTasks_when_LoadView_and_select_row_0_in_Tasks_and_click_DeleteTask_then_Tasks_has_2_rows_and_selected_row_handle_1) 
 {
   this->given_threeTasks();
   this->BuildSut();
@@ -74,7 +74,7 @@ TEST_F(TaskListAddDeleteTests,  Delete_Task_given_threeTasks_when_LoadView_and_s
   this->then_Tasks_has_2_rows_and_selected_row_handle_1_1();
 }
 
-TEST_F(TaskListAddDeleteTests,  Delete_Task_given_threeTasks_when_LoadView_and_select_row_1_in_Tasks_and_click_DeleteTask_then_Tasks_has_2_rows_and_selected_row_handle_2) 
+TEST_F(TaskListViewModel_AddDeleteTasks_Tests,  Delete_Task_given_threeTasks_when_LoadView_and_select_row_1_in_Tasks_and_click_DeleteTask_then_Tasks_has_2_rows_and_selected_row_handle_2) 
 {
   this->given_threeTasks();
   this->BuildSut();
@@ -84,7 +84,7 @@ TEST_F(TaskListAddDeleteTests,  Delete_Task_given_threeTasks_when_LoadView_and_s
   this->then_Tasks_has_2_rows_and_selected_row_handle_2();
 }
 
-TEST_F(TaskListAddDeleteTests,  Delete_Task_given_threeTasks_when_LoadView_and_select_row_2_in_Tasks_and_click_DeleteTask_then_Tasks_has_2_rows_and_selected_row_handle_1) 
+TEST_F(TaskListViewModel_AddDeleteTasks_Tests,  Delete_Task_given_threeTasks_when_LoadView_and_select_row_2_in_Tasks_and_click_DeleteTask_then_Tasks_has_2_rows_and_selected_row_handle_1) 
 {
   this->given_threeTasks();
   this->BuildSut();
@@ -94,7 +94,7 @@ TEST_F(TaskListAddDeleteTests,  Delete_Task_given_threeTasks_when_LoadView_and_s
   this->then_Tasks_has_2_rows_and_selected_row_handle_1_2();
 }
 
-TEST_F(TaskListAddDeleteTests,  Delete_Task_given_threeTasks_when_LoadView_and_click_DeleteTask_and_click_DeleteTask_and_click_DeleteTask_then_Tasks_has_0_rows) 
+TEST_F(TaskListViewModel_AddDeleteTasks_Tests,  Delete_Task_given_threeTasks_when_LoadView_and_click_DeleteTask_and_click_DeleteTask_and_click_DeleteTask_then_Tasks_has_0_rows) 
 {
   this->given_threeTasks();
   this->BuildSut();
@@ -105,7 +105,7 @@ TEST_F(TaskListAddDeleteTests,  Delete_Task_given_threeTasks_when_LoadView_and_c
   this->then_Tasks_has_0_rows();
 }
 
-TEST_F(TaskListAddDeleteTests,  Delete_disabled_if_nothing_selected_given_emptyTasks_when_LoadView_and_select_row_0_in_Tasks_and_click_DeleteTask_then_AddNewTask_is_enabled_and_DeleteTask_is_not_enabled) 
+TEST_F(TaskListViewModel_AddDeleteTasks_Tests,  Delete_disabled_if_nothing_selected_given_emptyTasks_when_LoadView_and_select_row_0_in_Tasks_and_click_DeleteTask_then_AddNewTask_is_enabled_and_DeleteTask_is_not_enabled) 
 {
   this->given_emptyTasks();
   this->BuildSut();
@@ -116,117 +116,117 @@ TEST_F(TaskListAddDeleteTests,  Delete_disabled_if_nothing_selected_given_emptyT
   this->then_DeleteTask_is_not_enabled();
 }
 
-void TaskListAddDeleteTests::BuildSut( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::BuildSut( ) 
 {
   this->sut = this->contextProvider->BuildSut();
 }
 
-void TaskListAddDeleteTests::given_oneTask( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::given_oneTask( ) 
 {
   this->contextProvider->SetDataTableJson(this->oneTask);
 }
 
-void TaskListAddDeleteTests::given_threeTasks( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::given_threeTasks( ) 
 {
   this->contextProvider->SetDataTableJson(this->threeTasks);
 }
 
-void TaskListAddDeleteTests::given_emptyTasks( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::given_emptyTasks( ) 
 {
   this->contextProvider->SetDataTableJson(this->emptyTasks);
 }
 
-void TaskListAddDeleteTests::when_LoadView( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::when_LoadView( ) 
 {
   this->sut->loadView();
 }
 
-void TaskListAddDeleteTests::when_click_AddNewTask( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::when_click_AddNewTask( ) 
 {
   this->sut->addNewTaskClicked();
 }
 
-void TaskListAddDeleteTests::when_LoadView_1( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::when_LoadView_1( ) 
 {
   this->sut->loadView();
 }
 
-void TaskListAddDeleteTests::when_select_row_0_in_Tasks( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::when_select_row_0_in_Tasks( ) 
 {
   this->sut->tasksRowSelected(std::string("0"));
 }
 
-void TaskListAddDeleteTests::when_click_DeleteTask( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::when_click_DeleteTask( ) 
 {
   this->sut->deleteTaskClicked();
 }
 
-void TaskListAddDeleteTests::when_LoadView_2( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::when_LoadView_2( ) 
 {
   this->sut->loadView();
 }
 
-void TaskListAddDeleteTests::when_select_row_1_in_Tasks( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::when_select_row_1_in_Tasks( ) 
 {
   this->sut->tasksRowSelected(std::string("1"));
 }
 
-void TaskListAddDeleteTests::when_click_DeleteTask_1( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::when_click_DeleteTask_1( ) 
 {
   this->sut->deleteTaskClicked();
 }
 
-void TaskListAddDeleteTests::when_LoadView_3( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::when_LoadView_3( ) 
 {
   this->sut->loadView();
 }
 
-void TaskListAddDeleteTests::when_select_row_2_in_Tasks( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::when_select_row_2_in_Tasks( ) 
 {
   this->sut->tasksRowSelected(std::string("2"));
 }
 
-void TaskListAddDeleteTests::when_click_DeleteTask_2( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::when_click_DeleteTask_2( ) 
 {
   this->sut->deleteTaskClicked();
 }
 
-void TaskListAddDeleteTests::when_LoadView_4( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::when_LoadView_4( ) 
 {
   this->sut->loadView();
 }
 
-void TaskListAddDeleteTests::when_click_DeleteTask_3( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::when_click_DeleteTask_3( ) 
 {
   this->sut->deleteTaskClicked();
 }
 
-void TaskListAddDeleteTests::when_click_DeleteTask_4( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::when_click_DeleteTask_4( ) 
 {
   this->sut->deleteTaskClicked();
 }
 
-void TaskListAddDeleteTests::when_click_DeleteTask_5( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::when_click_DeleteTask_5( ) 
 {
   this->sut->deleteTaskClicked();
 }
 
-void TaskListAddDeleteTests::when_LoadView_5( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::when_LoadView_5( ) 
 {
   this->sut->loadView();
 }
 
-void TaskListAddDeleteTests::when_select_row_0_in_Tasks_1( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::when_select_row_0_in_Tasks_1( ) 
 {
   this->sut->tasksRowSelected(std::string("0"));
 }
 
-void TaskListAddDeleteTests::when_click_DeleteTask_6( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::when_click_DeleteTask_6( ) 
 {
   this->sut->deleteTaskClicked();
 }
 
-void TaskListAddDeleteTests::then_Tasks_has_2_rows_and_selected_row_handle_1( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::then_Tasks_has_2_rows_and_selected_row_handle_1( ) 
 {
   auto& actualRows = this->sut->getTasksWidgetTableRows();
   EXPECT_EQ(2, actualRows.size());
@@ -245,7 +245,7 @@ void TaskListAddDeleteTests::then_Tasks_has_2_rows_and_selected_row_handle_1( )
   EXPECT_EQ(std::string("1"), this->sut->getTasksSelectedRow());
 }
 
-void TaskListAddDeleteTests::then_Tasks_has_2_rows_and_selected_row_handle_1_1( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::then_Tasks_has_2_rows_and_selected_row_handle_1_1( ) 
 {
   auto& actualRows = this->sut->getTasksWidgetTableRows();
   EXPECT_EQ(2, actualRows.size());
@@ -262,7 +262,7 @@ void TaskListAddDeleteTests::then_Tasks_has_2_rows_and_selected_row_handle_1_1( 
   EXPECT_EQ(std::string("1"), this->sut->getTasksSelectedRow());
 }
 
-void TaskListAddDeleteTests::then_Tasks_has_2_rows_and_selected_row_handle_2( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::then_Tasks_has_2_rows_and_selected_row_handle_2( ) 
 {
   auto& actualRows = this->sut->getTasksWidgetTableRows();
   EXPECT_EQ(2, actualRows.size());
@@ -279,7 +279,7 @@ void TaskListAddDeleteTests::then_Tasks_has_2_rows_and_selected_row_handle_2( )
   EXPECT_EQ(std::string("2"), this->sut->getTasksSelectedRow());
 }
 
-void TaskListAddDeleteTests::then_Tasks_has_2_rows_and_selected_row_handle_1_2( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::then_Tasks_has_2_rows_and_selected_row_handle_1_2( ) 
 {
   auto& actualRows = this->sut->getTasksWidgetTableRows();
   EXPECT_EQ(2, actualRows.size());
@@ -296,18 +296,18 @@ void TaskListAddDeleteTests::then_Tasks_has_2_rows_and_selected_row_handle_1_2( 
   EXPECT_EQ(std::string("1"), this->sut->getTasksSelectedRow());
 }
 
-void TaskListAddDeleteTests::then_Tasks_has_0_rows( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::then_Tasks_has_0_rows( ) 
 {
   auto& actualRows = this->sut->getTasksWidgetTableRows();
   EXPECT_EQ(0, actualRows.size());
 }
 
-void TaskListAddDeleteTests::then_AddNewTask_is_enabled( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::then_AddNewTask_is_enabled( ) 
 {
   EXPECT_TRUE(this->sut->getIsAddNewTaskEnabled());
 }
 
-void TaskListAddDeleteTests::then_DeleteTask_is_not_enabled( ) 
+void TaskListViewModel_AddDeleteTasks_Tests::then_DeleteTask_is_not_enabled( ) 
 {
   EXPECT_FALSE(this->sut->getIsDeleteTaskEnabled());
 }

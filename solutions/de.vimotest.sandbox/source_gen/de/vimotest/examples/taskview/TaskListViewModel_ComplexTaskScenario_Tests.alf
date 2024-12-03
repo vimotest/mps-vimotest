@@ -1,0 +1,95 @@
+
+
+private import Testing ;
+
+class TaskListViewModel_ComplexTaskScenario_Tests {
+  
+  private sut : TaskListViewModel  ;
+  
+  private contextProvider : TaskListViewModelContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new TaskListViewModelContextProviderImpl (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public Load_Tasks_and_Add_New_given_sampleTasks_when_LoadView_and_click_AddNewTask_then_Tasks_has_3_rows_and_selected_row_handle_2_and_AddNewTask_is_enabled_and_DeleteTask_is_enabled (  ) {
+  this.given_sampleTasks (  );
+   this.BuildSut (  );
+   this.when_LoadView (  );
+   this.when_click_AddNewTask (  );
+   this.then_Tasks_has_3_rows_and_selected_row_handle_2 (  );
+   this.then_AddNewTask_is_enabled (  );
+   this.then_DeleteTask_is_enabled (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  private sampleTasks : String = "[ { id:\"0\", name:\"Exercise\", priority:\"low\", dueDate:\"2024/01/04\" },\n  { id:\"1\", name:\"Taxes\", priority:\"high\", dueDate:\"2023/12/31\" } ]";
+  
+  public given_sampleTasks (  ) {
+  this.contextProvider.SetDataTableJson ( this.sampleTasks );
+ }
+  
+  // When Helper Definitions
+
+  
+  public when_LoadView (  ) {
+  this.sut.loadView (  );
+ }
+  
+  public when_click_AddNewTask (  ) {
+  this.sut.addNewTaskClicked (  );
+ }
+  
+  // Then Helper Definitions
+
+  
+  public then_Tasks_has_3_rows_and_selected_row_handle_2 (  ) {
+  let actualRows: TaskListViewModelTasksRow [] = this.sut.getTasksWidgetTableRows (  );
+   AssertEqual ( 3, actualRows->size (  ) );
+   {
+  let row0: TaskListViewModelTasksRow = actualRows[ 1 ];
+   AssertEqual ( "0", row0.getRowHandle (  ) );
+   AssertEqual ( "PrioLow", row0.getPriorityImageSource (  ) );
+   AssertEqual ( "Exercise", row0.getTask_NameText (  ) );
+   AssertEqual ( "2024/01/04", row0.getDue_DateText (  ) );
+   AssertEqual ( "4th January 2024", row0.getDue_DateToolTip (  ) );
+ }
+   {
+  let row1: TaskListViewModelTasksRow = actualRows[ 2 ];
+   AssertEqual ( "1", row1.getRowHandle (  ) );
+   AssertEqual ( "PrioHigh", row1.getPriorityImageSource (  ) );
+   AssertEqual ( "Taxes", row1.getTask_NameText (  ) );
+   AssertEqual ( "red", row1.getTask_NameTextColor (  ) );
+   AssertEqual ( "2023/12/31", row1.getDue_DateText (  ) );
+   AssertEqual ( "red", row1.getDue_DateTextColor (  ) );
+   AssertEqual ( "31st December 2023", row1.getDue_DateToolTip (  ) );
+ }
+   {
+  let row2: TaskListViewModelTasksRow = actualRows[ 3 ];
+   AssertEqual ( "2", row2.getRowHandle (  ) );
+   AssertEqual ( "PrioMedium", row2.getPriorityImageSource (  ) );
+   AssertEqual ( "<New Task>", row2.getTask_NameText (  ) );
+   AssertEqual ( "", row2.getDue_DateText (  ) );
+ }
+   AssertEqual ( "2", this.sut.getTasksSelectedRow (  ) );
+ }
+  
+  public then_AddNewTask_is_enabled (  ) {
+  AssertTrue ( this.sut.getIsAddNewTaskEnabled (  ) );
+ }
+  
+  public then_DeleteTask_is_enabled (  ) {
+  AssertTrue ( this.sut.getIsDeleteTaskEnabled (  ) );
+ }
+}

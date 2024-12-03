@@ -50,6 +50,12 @@ jobs:
       - name: Tear down xvfb
         run: killall Xvfb
 
+      # Build and Test taskview example
+      # Note: while we test Sandbox separately, we test TaskView Example here to avoid archiving and use freshly generated files
+      - name: Build TaskView Example
+        run: sh ./gradlew build
+        working-directory: submodules/mps-vimotest-samples/taskmanager
+
       # Archive Artifacts
       - name: Archive artifacts
         uses: actions/upload-artifact@v4
@@ -106,11 +112,6 @@ jobs:
       # Build Java Programs
       - name: Build Java Sandbox
         run: sh ./gradlew buildJavaSandboxProject
-
-      # Build and Test taskview example
-      - name: Build TaskView Example
-        run: sh ./gradlew build
-        working-directory: submodules/mps-vimotest-samples/taskmanager
 
   buildCpp:
     runs-on: ubuntu-latest

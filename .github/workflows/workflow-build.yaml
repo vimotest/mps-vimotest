@@ -15,6 +15,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: true
+
       - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
@@ -91,15 +94,14 @@ jobs:
           distribution: 'temurin'
 
       - uses: actions/checkout@v4
+        with:
+          submodules: true
 
       - name: Download Sandbox Code
         uses: actions/download-artifact@v4
         with:
           name: vimotest-sandbox-code
           path: build/code-gen
-
-      - name: Make Gradlew Executable from Gradle task
-        run: chmod +x ./gradlew
 
       # Build Java Programs
       - name: Build Java Sandbox
@@ -108,7 +110,7 @@ jobs:
       # Build and Test taskview example
       - name: Build TaskView Example
         run: sh ./gradlew build
-        working-directory: examples/taskview-fx
+        working-directory: submodules/mps-vimotest-samples/taskmanager
 
   buildCpp:
     runs-on: ubuntu-latest

@@ -18,7 +18,7 @@ namespace widgetassertions
     std::shared_ptr<TableViews_ViewContextProvider> contextProvider;
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
-    virtual void given_empty_context1() ;
+    virtual void given_empty_context_1() ;
     virtual void then_MyTableView_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled() ;
     virtual void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() ;
     virtual void then_MyTableView_has_2_rows() ;
@@ -39,7 +39,7 @@ namespace widgetassertions
   }
   TEST_F(TableViews_ViewTest,  Table_Ignore_Columns_given_empty_context_when_then_MyTableView_has_2_rows) 
   {
-    this->given_empty_context1();
+    this->given_empty_context_1();
     this->BuildSut();
     this->then_MyTableView_has_2_rows();
   }
@@ -51,7 +51,7 @@ namespace widgetassertions
   {
     
   }
-  void TableViews_ViewTest::given_empty_context1( ) 
+  void TableViews_ViewTest::given_empty_context_1( ) 
   {
     
   }

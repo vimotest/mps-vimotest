@@ -8,6 +8,7 @@
 class SeparateViewController_ViewContextProvider
 {
   public:
+  virtual ~SeparateViewController_ViewContextProvider() = default;
   virtual void Init() = 0;
   virtual void SetEmptyContext() = 0;
   virtual std::shared_ptr<MyViewController> BuildSutViewController() = 0;

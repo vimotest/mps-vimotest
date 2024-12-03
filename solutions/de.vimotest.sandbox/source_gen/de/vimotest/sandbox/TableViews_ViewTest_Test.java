@@ -24,7 +24,7 @@ public class TableViews_ViewTest_Test {
   }
   @Test
   public void test_Table_Ignore_Columns_given_empty_context_when_then_MyTableView_has_2_rows() throws Exception {
-    this.given_empty_context1();
+    this.given_empty_context_1();
     this.BuildSut();
     this.then_MyTableView_has_2_rows();
   }
@@ -44,7 +44,7 @@ public class TableViews_ViewTest_Test {
 
   public void given_empty_context() {
   }
-  public void given_empty_context1() {
+  public void given_empty_context_1() {
   }
 
 

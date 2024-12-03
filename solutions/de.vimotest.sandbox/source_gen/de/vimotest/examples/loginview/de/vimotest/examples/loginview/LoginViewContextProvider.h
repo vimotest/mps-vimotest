@@ -9,6 +9,7 @@ namespace de::vimotest::examples::loginview
   class LoginViewContextProvider
   {
     public:
+    virtual ~LoginViewContextProvider() = default;
     virtual void Init() = 0;
     virtual void SetEmptyContext() = 0;
     virtual void SetXmlElementContext() = 0;

@@ -9,6 +9,7 @@ namespace widgetassertions
   class TableViews_ViewContextProvider
   {
     public:
+    virtual ~TableViews_ViewContextProvider() = default;
     virtual void Init() = 0;
     virtual void SetEmptyContext() = 0;
     virtual std::shared_ptr<TableViews_View> BuildSut() = 0;

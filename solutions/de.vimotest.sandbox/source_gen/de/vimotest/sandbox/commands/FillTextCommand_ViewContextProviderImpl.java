@@ -4,8 +4,10 @@ package de.vimotest.sandbox.commands;
 
 
 public class FillTextCommand_ViewContextProviderImpl extends FillTextCommand_ViewContextProvider {
+  @Override
   public void Init() {
   }
+  @Override
   public FillTextCommand_View BuildSut() {
     return null;
   }

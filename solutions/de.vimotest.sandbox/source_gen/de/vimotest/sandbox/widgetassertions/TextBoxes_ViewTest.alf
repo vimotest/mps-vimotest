@@ -22,7 +22,7 @@ class TextBoxes_ViewTest {
  }
   
   public My_MultiLine_Scenario_given_empty_context_when_then_MultiLineTextBox_shows_text_Expected1_Expected2_ (  ) {
-  this.given_empty_context1 (  );
+  this.given_empty_context_1 (  );
    this.BuildSut (  );
    this.then_MultiLineTextBox_shows_text_Expected1_Expected2_ (  );
  }
@@ -38,7 +38,7 @@ class TextBoxes_ViewTest {
   
   public given_empty_context (  ) {     }
   
-  public given_empty_context1 (  ) {     }
+  public given_empty_context_1 (  ) {     }
   
   // When Helper Definitions
 

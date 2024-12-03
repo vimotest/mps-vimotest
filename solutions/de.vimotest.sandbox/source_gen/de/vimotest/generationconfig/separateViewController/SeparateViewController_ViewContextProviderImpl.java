@@ -4,13 +4,17 @@ package de.vimotest.generationConfig.separateViewController;
 
 
 public class SeparateViewController_ViewContextProviderImpl extends SeparateViewController_ViewContextProvider {
+  @Override
   public void Init() {
   }
+  @Override
   public void SetEmptyContext() {
   }
+  @Override
   public MyViewController BuildSutViewController() {
     return null;
   }
+  @Override
   public MyViewModel GetViewModel() {
     return null;
   }

@@ -4,12 +4,16 @@ package de.vimotest.examples.loginview.de.vimotest.examples.loginview;
 
 
 public class LoginViewContextProviderImpl extends LoginViewContextProvider {
+  @Override
   public void Init() {
   }
+  @Override
   public void SetEmptyContext() {
   }
+  @Override
   public void SetXmlElementContext() {
   }
+  @Override
   public LoginView BuildSut() {
     return null;
   }

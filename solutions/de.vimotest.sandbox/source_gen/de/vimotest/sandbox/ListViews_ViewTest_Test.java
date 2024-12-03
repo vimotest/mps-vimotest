@@ -30,15 +30,15 @@ public class ListViews_ViewTest_Test {
   }
   @Test
   public void test_List_Ignore_Column_given_empty_context_when_then_MyListOfLabel_has_4_rows() throws Exception {
-    this.given_empty_context1();
+    this.given_empty_context_1();
     this.BuildSut();
     this.then_MyListOfLabel_has_4_rows();
   }
   @Test
   public void test_List_Ignore_Cell_given_empty_context_when_then_MyListOfLabel_has_4_rows() throws Exception {
-    this.given_empty_context2();
+    this.given_empty_context_2();
     this.BuildSut();
-    this.then_MyListOfLabel_has_4_rows1();
+    this.then_MyListOfLabel_has_4_rows_1();
   }
   @BeforeEach
   public void setUp() {
@@ -56,9 +56,9 @@ public class ListViews_ViewTest_Test {
 
   public void given_empty_context() {
   }
-  public void given_empty_context1() {
+  public void given_empty_context_1() {
   }
-  public void given_empty_context2() {
+  public void given_empty_context_2() {
   }
 
 
@@ -186,7 +186,7 @@ public class ListViews_ViewTest_Test {
     Assert.assertEquals(Integer.valueOf(row3.getRowIndex()), row3.getRowIndex());
     // }
   }
-  public void then_MyListOfLabel_has_4_rows1() {
+  public void then_MyListOfLabel_has_4_rows_1() {
     List<ListViews_ViewMyListOfLabelRow> actualRows = this.sut.getMyListOfLabelWidgetListRows();
     Assert.assertEquals(4, actualRows.size());
     // {

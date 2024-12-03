@@ -28,7 +28,7 @@ public class TreeViews_ViewTest_Test {
   }
   @Test
   public void test_TreeView_Ignore_Column_given_empty_context_when_then_MyTreeView_has_2_rows() throws Exception {
-    this.given_empty_context1();
+    this.given_empty_context_1();
     this.BuildSut();
     this.then_MyTreeView_has_2_rows();
   }
@@ -48,7 +48,7 @@ public class TreeViews_ViewTest_Test {
 
   public void given_empty_context() {
   }
-  public void given_empty_context1() {
+  public void given_empty_context_1() {
   }
 
 

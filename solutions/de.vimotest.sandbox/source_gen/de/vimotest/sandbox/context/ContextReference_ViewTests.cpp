@@ -16,7 +16,7 @@ namespace context
     virtual void BuildSut() ;
     std::string base = std::string("My Context");
     virtual void given_base() ;
-    virtual void given_base1() ;
+    virtual void given_base_1() ;
     protected:
     void SetUp() override ;
   };
@@ -32,7 +32,7 @@ namespace context
   }
   TEST_F(ContextReference_ViewTests,  Context_Reference_given_base_when_then_) 
   {
-    this->given_base1();
+    this->given_base_1();
     this->BuildSut();
   }
   void ContextReference_ViewTests::BuildSut( ) 
@@ -43,7 +43,7 @@ namespace context
   {
     this->contextProvider->SetSimpleStringContext(this->base);
   }
-  void ContextReference_ViewTests::given_base1( ) 
+  void ContextReference_ViewTests::given_base_1( ) 
   {
     this->contextProvider->SetSimpleStringContext(this->base);
   }

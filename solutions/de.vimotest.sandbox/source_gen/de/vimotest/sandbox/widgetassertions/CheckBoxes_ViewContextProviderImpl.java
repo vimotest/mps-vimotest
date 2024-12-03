@@ -4,10 +4,13 @@ package de.vimotest.sandbox.widgetassertions;
 
 
 public class CheckBoxes_ViewContextProviderImpl extends CheckBoxes_ViewContextProvider {
+  @Override
   public void Init() {
   }
+  @Override
   public void SetEmptyContext() {
   }
+  @Override
   public CheckBoxes_View BuildSut() {
     return null;
   }

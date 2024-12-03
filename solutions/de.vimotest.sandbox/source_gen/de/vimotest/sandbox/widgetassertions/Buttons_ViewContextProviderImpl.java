@@ -4,10 +4,13 @@ package de.vimotest.sandbox.widgetassertions;
 
 
 public class Buttons_ViewContextProviderImpl extends Buttons_ViewContextProvider {
+  @Override
   public void Init() {
   }
+  @Override
   public void SetEmptyContext() {
   }
+  @Override
   public Buttons_View BuildSut() {
     return null;
   }

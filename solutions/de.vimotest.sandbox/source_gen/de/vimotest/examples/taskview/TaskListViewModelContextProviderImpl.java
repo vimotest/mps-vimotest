@@ -4,10 +4,13 @@ package de.vimotest.examples.taskview;
 
 
 public class TaskListViewModelContextProviderImpl extends TaskListViewModelContextProvider {
+  @Override
   public void Init() {
   }
+  @Override
   public void SetDataTableJson(String json) {
   }
+  @Override
   public TaskListViewModel BuildSut() {
     return null;
   }

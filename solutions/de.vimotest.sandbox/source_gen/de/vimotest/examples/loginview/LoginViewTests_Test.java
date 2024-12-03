@@ -28,10 +28,10 @@ public class LoginViewTests_Test {
   public void test_Load_View_on_empty_context_given_empty_context_when_LoadView_and_fill_User_in_Username_and_clear_text_in_Password_then_Username_shows_text_User_and_Password_shows_empty_text_and_Login_is_not_enabled() throws Exception {
     this.given_empty_context();
     this.BuildSut();
-    this.when_LoadView1();
-    this.when_fill_User_in_Username1();
+    this.when_LoadView_1();
+    this.when_fill_User_in_Username_1();
     this.when_clear_text_in_Password();
-    this.then_Username_shows_text_User_1();
+    this.then_Username_shows_text_User__1();
     this.then_Password_shows_empty_text();
     this.then_Login_is_not_enabled();
   }
@@ -39,27 +39,27 @@ public class LoginViewTests_Test {
   public void test_Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadView_then_Username_shows_text_Ada_and_Password_shows_text_____and_Login_is_enabled() throws Exception {
     this.given_prefilledValues();
     this.BuildSut();
-    this.when_LoadView2();
+    this.when_LoadView_2();
     this.then_Username_shows_text_Ada_();
     this.then_Password_shows_text_____();
-    this.then_Login_is_enabled1();
+    this.then_Login_is_enabled_1();
   }
   @Test
   public void test_Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadView_and_check_ShowPassword_then_Username_shows_text_Ada_and_Password_shows_text_Lovelace1_and_ShowPassword_is_checked_and_Login_is_enabled() throws Exception {
     this.given_prefilledValues();
     this.BuildSut();
-    this.when_LoadView3();
-    this.when_check_ShowPassword1();
-    this.then_Username_shows_text_Ada_1();
+    this.when_LoadView_3();
+    this.when_check_ShowPassword_1();
+    this.then_Username_shows_text_Ada__1();
     this.then_Password_shows_text_Lovelace1_();
     this.then_ShowPassword_is_checked();
-    this.then_Login_is_enabled2();
+    this.then_Login_is_enabled_2();
   }
   @Test
   public void test_Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadView_and_fill_lovelace_in_Password_and_click_Login_then_ErrorText_shows_text_Needs_uppercase_letters_() throws Exception {
     this.given_prefilledValues();
     this.BuildSut();
-    this.when_LoadView4();
+    this.when_LoadView_4();
     this.when_fill_lovelace_in_Password();
     this.when_click_Login();
     this.then_ErrorText_shows_text_Needs_uppercase_letters_();
@@ -97,25 +97,25 @@ public class LoginViewTests_Test {
   public void when_check_ShowPassword() {
     this.sut.showPasswordChecked(true);
   }
-  public void when_LoadView1() {
+  public void when_LoadView_1() {
     this.sut.loadView();
   }
-  public void when_fill_User_in_Username1() {
+  public void when_fill_User_in_Username_1() {
     this.sut.usernameTextFilled("User");
   }
   public void when_clear_text_in_Password() {
     this.sut.passwordTextFilled("");
   }
-  public void when_LoadView2() {
+  public void when_LoadView_2() {
     this.sut.loadView();
   }
-  public void when_LoadView3() {
+  public void when_LoadView_3() {
     this.sut.loadView();
   }
-  public void when_check_ShowPassword1() {
+  public void when_check_ShowPassword_1() {
     this.sut.showPasswordChecked(true);
   }
-  public void when_LoadView4() {
+  public void when_LoadView_4() {
     this.sut.loadView();
   }
   public void when_fill_lovelace_in_Password() {
@@ -135,7 +135,7 @@ public class LoginViewTests_Test {
   public void then_Login_is_enabled() {
     Assert.assertTrue(this.sut.getIsLoginEnabled());
   }
-  public void then_Username_shows_text_User_1() {
+  public void then_Username_shows_text_User__1() {
     Assert.assertEquals("User", this.sut.getUsernameText());
   }
   public void then_Password_shows_empty_text() {
@@ -150,10 +150,10 @@ public class LoginViewTests_Test {
   public void then_Password_shows_text_____() {
     Assert.assertEquals("******", this.sut.getPasswordText());
   }
-  public void then_Login_is_enabled1() {
+  public void then_Login_is_enabled_1() {
     Assert.assertTrue(this.sut.getIsLoginEnabled());
   }
-  public void then_Username_shows_text_Ada_1() {
+  public void then_Username_shows_text_Ada__1() {
     Assert.assertEquals("Ada", this.sut.getUsernameText());
   }
   public void then_Password_shows_text_Lovelace1_() {
@@ -162,7 +162,7 @@ public class LoginViewTests_Test {
   public void then_ShowPassword_is_checked() {
     Assert.assertTrue(this.sut.getIsShowPasswordChecked());
   }
-  public void then_Login_is_enabled2() {
+  public void then_Login_is_enabled_2() {
     Assert.assertTrue(this.sut.getIsLoginEnabled());
   }
   public void then_ErrorText_shows_text_Needs_uppercase_letters_() {

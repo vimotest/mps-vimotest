@@ -4,8 +4,10 @@ package de.vimotest.sandbox.commands;
 
 
 public class CheckCommand_ViewContextProviderImpl extends CheckCommand_ViewContextProvider {
+  @Override
   public void Init() {
   }
+  @Override
   public CheckCommand_View BuildSut() {
     return null;
   }

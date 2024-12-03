@@ -26,15 +26,15 @@ class ListViews_ViewTest {
  }
   
   public List_Ignore_Column_given_empty_context_when_then_MyListOfLabel_has_4_rows (  ) {
-  this.given_empty_context1 (  );
+  this.given_empty_context_1 (  );
    this.BuildSut (  );
    this.then_MyListOfLabel_has_4_rows (  );
  }
   
   public List_Ignore_Cell_given_empty_context_when_then_MyListOfLabel_has_4_rows (  ) {
-  this.given_empty_context2 (  );
+  this.given_empty_context_2 (  );
    this.BuildSut (  );
-   this.then_MyListOfLabel_has_4_rows1 (  );
+   this.then_MyListOfLabel_has_4_rows_1 (  );
  }
   
   
@@ -48,9 +48,9 @@ class ListViews_ViewTest {
   
   public given_empty_context (  ) {     }
   
-  public given_empty_context1 (  ) {     }
+  public given_empty_context_1 (  ) {     }
   
-  public given_empty_context2 (  ) {     }
+  public given_empty_context_2 (  ) {     }
   
   // When Helper Definitions
 
@@ -186,7 +186,7 @@ class ListViews_ViewTest {
  }
  }
   
-  public then_MyListOfLabel_has_4_rows1 (  ) {
+  public then_MyListOfLabel_has_4_rows_1 (  ) {
   let actualRows: ListViews_ViewMyListOfLabelRow [] = this.sut.getMyListOfLabelWidgetListRows (  );
    AssertEqual ( 4, actualRows->size (  ) );
    {

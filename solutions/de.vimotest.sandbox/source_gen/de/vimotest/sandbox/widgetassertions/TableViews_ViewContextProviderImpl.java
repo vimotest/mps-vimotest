@@ -4,10 +4,13 @@ package de.vimotest.sandbox.widgetassertions;
 
 
 public class TableViews_ViewContextProviderImpl extends TableViews_ViewContextProvider {
+  @Override
   public void Init() {
   }
+  @Override
   public void SetEmptyContext() {
   }
+  @Override
   public TableViews_View BuildSut() {
     return null;
   }

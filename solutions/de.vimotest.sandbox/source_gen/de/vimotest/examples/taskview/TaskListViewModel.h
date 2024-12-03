@@ -9,6 +9,7 @@
 class TaskListViewModel
 {
   public:
+  virtual ~TaskListViewModel() = default;
   virtual std::vector<std::shared_ptr<TaskListViewModelTasksRow>> getTasksWidgetTableRows() = 0;
   virtual std::string getTasksSelectedRow() = 0;
   virtual bool getIsAddNewTaskEnabled() = 0;

@@ -21,7 +21,7 @@ public class TextBoxes_ViewTest_Test {
   }
   @Test
   public void test_My_MultiLine_Scenario_given_empty_context_when_then_MultiLineTextBox_shows_text_Expected1_Expected2_() throws Exception {
-    this.given_empty_context1();
+    this.given_empty_context_1();
     this.BuildSut();
     this.then_MultiLineTextBox_shows_text_Expected1_Expected2_();
   }
@@ -41,7 +41,7 @@ public class TextBoxes_ViewTest_Test {
 
   public void given_empty_context() {
   }
-  public void given_empty_context1() {
+  public void given_empty_context_1() {
   }
 
 

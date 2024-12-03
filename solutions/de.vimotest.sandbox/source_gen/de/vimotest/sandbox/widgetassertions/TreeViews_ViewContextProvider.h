@@ -9,6 +9,7 @@ namespace widgetassertions
   class TreeViews_ViewContextProvider
   {
     public:
+    virtual ~TreeViews_ViewContextProvider() = default;
     virtual void Init() = 0;
     virtual void SetEmptyContext() = 0;
     virtual std::shared_ptr<TreeViews_View> BuildSut() = 0;

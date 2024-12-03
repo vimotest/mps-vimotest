@@ -22,19 +22,19 @@ class Labels_ViewTest {
  }
   
   public Multi_Line_Label_given_empty_context_when_then_MyMultiLineLabel_shows_text_Expected_Line_1_Expected_Line_2_ (  ) {
-  this.given_empty_context1 (  );
+  this.given_empty_context_1 (  );
    this.BuildSut (  );
    this.then_MyMultiLineLabel_shows_text_Expected_Line_1_Expected_Line_2_ (  );
  }
   
   public ToolTip_Label_given_empty_context_when_then_MyLabelWithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_ (  ) {
-  this.given_empty_context2 (  );
+  this.given_empty_context_2 (  );
    this.BuildSut (  );
    this.then_MyLabelWithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_ (  );
  }
   
   public MultiLine_ToolTip_Label_given_empty_context_when_then_MyLabelWithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_ (  ) {
-  this.given_empty_context3 (  );
+  this.given_empty_context_3 (  );
    this.BuildSut (  );
    this.then_MyLabelWithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_ (  );
  }
@@ -55,11 +55,11 @@ class Labels_ViewTest {
   
   public given_empty_context (  ) {     }
   
-  public given_empty_context1 (  ) {     }
+  public given_empty_context_1 (  ) {     }
   
-  public given_empty_context2 (  ) {     }
+  public given_empty_context_2 (  ) {     }
   
-  public given_empty_context3 (  ) {     }
+  public given_empty_context_3 (  ) {     }
   
   // When Helper Definitions
 

@@ -4,8 +4,10 @@ package de.vimotest.sandbox.widgetassertions;
 
 
 public class RadioButton_ViewContextProviderImpl extends RadioButton_ViewContextProvider {
+  @Override
   public void Init() {
   }
+  @Override
   public RadioButton_View BuildSut() {
     return null;
   }

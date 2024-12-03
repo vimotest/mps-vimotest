@@ -28,12 +28,12 @@ class TaskListViewModelTests : public testing::Test
   virtual void given_dueDate2024() ;
   virtual void when_LoadView() ;
   virtual void when_click_AddNewTask() ;
-  virtual void when_LoadView1() ;
-  virtual void when_LoadView2() ;
-  virtual void when_LoadView3() ;
-  virtual void when_LoadView4() ;
-  virtual void when_LoadView5() ;
-  virtual void when_LoadView6() ;
+  virtual void when_LoadView_1() ;
+  virtual void when_LoadView_2() ;
+  virtual void when_LoadView_3() ;
+  virtual void when_LoadView_4() ;
+  virtual void when_LoadView_5() ;
+  virtual void when_LoadView_6() ;
   virtual void then_Tasks_has_3_rows_and_selected_row_handle_2() ;
   virtual void then_AddNewTask_is_enabled() ;
   virtual void then_DeleteTask_is_enabled() ;
@@ -41,8 +41,8 @@ class TaskListViewModelTests : public testing::Test
   virtual void then_Tasks_has_1_rows() ;
   virtual void then_Tasks_has_2_rows_and_selected_row_handle_0() ;
   virtual void then_Tasks_has_3_rows() ;
-  virtual void then_Tasks_has_1_rows1() ;
-  virtual void then_Tasks_has_1_rows2() ;
+  virtual void then_Tasks_has_1_rows_1() ;
+  virtual void then_Tasks_has_1_rows_2() ;
   protected:
   void SetUp() override ;
 };
@@ -67,7 +67,7 @@ TEST_F(TaskListViewModelTests,  Load_Tasks_and_Add_New_given_sampleTasks_when_Lo
 TEST_F(TaskListViewModelTests,  Load_Empty_Tasks_given_when_LoadView_then_Tasks_has_0_rows) 
 {
   this->BuildSut();
-  this->when_LoadView1();
+  this->when_LoadView_1();
   this->then_Tasks_has_0_rows();
 }
 
@@ -75,7 +75,7 @@ TEST_F(TaskListViewModelTests,  Load_one_Task_with_all_values_given_oneTask_when
 {
   this->given_oneTask();
   this->BuildSut();
-  this->when_LoadView2();
+  this->when_LoadView_2();
   this->then_Tasks_has_1_rows();
 }
 
@@ -83,7 +83,7 @@ TEST_F(TaskListViewModelTests,  Initial_selection_given_twoTasks_when_LoadView_t
 {
   this->given_twoTasks();
   this->BuildSut();
-  this->when_LoadView3();
+  this->when_LoadView_3();
   this->then_Tasks_has_2_rows_and_selected_row_handle_0();
 }
 
@@ -91,7 +91,7 @@ TEST_F(TaskListViewModelTests,  Load_Tasks_with_all_three_priority_levels_given_
 {
   this->given_priorityCombinations();
   this->BuildSut();
-  this->when_LoadView4();
+  this->when_LoadView_4();
   this->then_Tasks_has_3_rows();
 }
 
@@ -99,16 +99,16 @@ TEST_F(TaskListViewModelTests,  Due_Date_from_2023_given_dueDate2023_when_LoadVi
 {
   this->given_dueDate2023();
   this->BuildSut();
-  this->when_LoadView5();
-  this->then_Tasks_has_1_rows1();
+  this->when_LoadView_5();
+  this->then_Tasks_has_1_rows_1();
 }
 
 TEST_F(TaskListViewModelTests,  Due_Date_Tooltip_given_dueDate2024_when_LoadView_then_Tasks_has_1_rows) 
 {
   this->given_dueDate2024();
   this->BuildSut();
-  this->when_LoadView6();
-  this->then_Tasks_has_1_rows2();
+  this->when_LoadView_6();
+  this->then_Tasks_has_1_rows_2();
 }
 
 void TaskListViewModelTests::BuildSut( ) 
@@ -156,32 +156,32 @@ void TaskListViewModelTests::when_click_AddNewTask( )
   this->sut->addNewTaskClicked();
 }
 
-void TaskListViewModelTests::when_LoadView1( ) 
+void TaskListViewModelTests::when_LoadView_1( ) 
 {
   this->sut->loadView();
 }
 
-void TaskListViewModelTests::when_LoadView2( ) 
+void TaskListViewModelTests::when_LoadView_2( ) 
 {
   this->sut->loadView();
 }
 
-void TaskListViewModelTests::when_LoadView3( ) 
+void TaskListViewModelTests::when_LoadView_3( ) 
 {
   this->sut->loadView();
 }
 
-void TaskListViewModelTests::when_LoadView4( ) 
+void TaskListViewModelTests::when_LoadView_4( ) 
 {
   this->sut->loadView();
 }
 
-void TaskListViewModelTests::when_LoadView5( ) 
+void TaskListViewModelTests::when_LoadView_5( ) 
 {
   this->sut->loadView();
 }
 
-void TaskListViewModelTests::when_LoadView6( ) 
+void TaskListViewModelTests::when_LoadView_6( ) 
 {
   this->sut->loadView();
 }
@@ -285,7 +285,7 @@ void TaskListViewModelTests::then_Tasks_has_3_rows( )
   // }
 }
 
-void TaskListViewModelTests::then_Tasks_has_1_rows1( ) 
+void TaskListViewModelTests::then_Tasks_has_1_rows_1( ) 
 {
   auto& actualRows = this->sut->getTasksWidgetTableRows();
   EXPECT_EQ(1, actualRows.size());
@@ -299,7 +299,7 @@ void TaskListViewModelTests::then_Tasks_has_1_rows1( )
   // }
 }
 
-void TaskListViewModelTests::then_Tasks_has_1_rows2( ) 
+void TaskListViewModelTests::then_Tasks_has_1_rows_2( ) 
 {
   auto& actualRows = this->sut->getTasksWidgetTableRows();
   EXPECT_EQ(1, actualRows.size());

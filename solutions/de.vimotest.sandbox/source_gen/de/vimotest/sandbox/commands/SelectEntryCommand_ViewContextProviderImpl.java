@@ -4,8 +4,10 @@ package de.vimotest.sandbox.commands;
 
 
 public class SelectEntryCommand_ViewContextProviderImpl extends SelectEntryCommand_ViewContextProvider {
+  @Override
   public void Init() {
   }
+  @Override
   public SelectEntryCommand_View BuildSut() {
     return null;
   }

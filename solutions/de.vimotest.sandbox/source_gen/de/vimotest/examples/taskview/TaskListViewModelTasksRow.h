@@ -6,6 +6,7 @@
 class TaskListViewModelTasksRow
 {
   public:
+  virtual ~TaskListViewModelTasksRow() = default;
   virtual std::string getPriorityImageSource() = 0;
   virtual std::string getTask_NameText() = 0;
   virtual std::string getTask_NameTextColor() = 0;

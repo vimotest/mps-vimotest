@@ -4,8 +4,10 @@ package de.vimotest.sandbox.commands;
 
 
 public class LoadCommand_ViewContextProviderImpl extends LoadCommand_ViewContextProvider {
+  @Override
   public void Init() {
   }
+  @Override
   public LoadCommand_View BuildSut() {
     return null;
   }

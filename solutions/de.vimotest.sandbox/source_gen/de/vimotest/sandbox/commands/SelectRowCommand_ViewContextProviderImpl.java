@@ -4,8 +4,10 @@ package de.vimotest.sandbox.commands;
 
 
 public class SelectRowCommand_ViewContextProviderImpl extends SelectRowCommand_ViewContextProvider {
+  @Override
   public void Init() {
   }
+  @Override
   public SelectRowCommand_View BuildSut() {
     return null;
   }

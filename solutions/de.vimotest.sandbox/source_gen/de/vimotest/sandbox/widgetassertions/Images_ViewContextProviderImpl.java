@@ -4,10 +4,13 @@ package de.vimotest.sandbox.widgetassertions;
 
 
 public class Images_ViewContextProviderImpl extends Images_ViewContextProvider {
+  @Override
   public void Init() {
   }
+  @Override
   public void SetEmptyContext() {
   }
+  @Override
   public Images_View BuildSut() {
     return null;
   }

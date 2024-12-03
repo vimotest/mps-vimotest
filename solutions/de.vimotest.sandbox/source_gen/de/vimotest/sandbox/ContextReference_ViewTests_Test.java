@@ -19,7 +19,7 @@ public class ContextReference_ViewTests_Test {
   }
   @Test
   public void test_Context_Reference_given_base_when_then_() throws Exception {
-    this.given_base1();
+    this.given_base_1();
     this.BuildSut();
   }
   @BeforeEach
@@ -39,7 +39,7 @@ public class ContextReference_ViewTests_Test {
   public void given_base() {
     this.contextProvider.SetSimpleStringContext(this.base);
   }
-  public void given_base1() {
+  public void given_base_1() {
     this.contextProvider.SetSimpleStringContext(this.base);
   }
 

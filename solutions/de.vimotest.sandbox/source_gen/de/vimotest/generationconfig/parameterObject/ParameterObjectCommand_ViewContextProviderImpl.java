@@ -4,10 +4,13 @@ package de.vimotest.generationConfig.parameterObject;
 
 
 public class ParameterObjectCommand_ViewContextProviderImpl extends ParameterObjectCommand_ViewContextProvider {
+  @Override
   public void Init() {
   }
+  @Override
   public void SetEmptyContext() {
   }
+  @Override
   public ParameterObjectCommand_View BuildSut() {
     return null;
   }

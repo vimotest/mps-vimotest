@@ -4,8 +4,10 @@ package de.vimotest.sandbox.commands;
 
 
 public class ClickCommand_ViewContextProviderImpl extends ClickCommand_ViewContextProvider {
+  @Override
   public void Init() {
   }
+  @Override
   public ClickCommand_View BuildSut() {
     return null;
   }

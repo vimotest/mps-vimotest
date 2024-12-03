@@ -23,7 +23,7 @@ class TableViews_ViewTest {
  }
   
   public Table_Ignore_Columns_given_empty_context_when_then_MyTableView_has_2_rows (  ) {
-  this.given_empty_context1 (  );
+  this.given_empty_context_1 (  );
    this.BuildSut (  );
    this.then_MyTableView_has_2_rows (  );
  }
@@ -39,7 +39,7 @@ class TableViews_ViewTest {
   
   public given_empty_context (  ) {     }
   
-  public given_empty_context1 (  ) {     }
+  public given_empty_context_1 (  ) {     }
   
   // When Helper Definitions
 

@@ -21,19 +21,19 @@ public class Labels_ViewTest_Test {
   }
   @Test
   public void test_Multi_Line_Label_given_empty_context_when_then_MyMultiLineLabel_shows_text_Expected_Line_1_Expected_Line_2_() throws Exception {
-    this.given_empty_context1();
+    this.given_empty_context_1();
     this.BuildSut();
     this.then_MyMultiLineLabel_shows_text_Expected_Line_1_Expected_Line_2_();
   }
   @Test
   public void test_ToolTip_Label_given_empty_context_when_then_MyLabelWithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_() throws Exception {
-    this.given_empty_context2();
+    this.given_empty_context_2();
     this.BuildSut();
     this.then_MyLabelWithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_();
   }
   @Test
   public void test_MultiLine_ToolTip_Label_given_empty_context_when_then_MyLabelWithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_() throws Exception {
-    this.given_empty_context3();
+    this.given_empty_context_3();
     this.BuildSut();
     this.then_MyLabelWithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_();
   }
@@ -58,11 +58,11 @@ public class Labels_ViewTest_Test {
 
   public void given_empty_context() {
   }
-  public void given_empty_context1() {
+  public void given_empty_context_1() {
   }
-  public void given_empty_context2() {
+  public void given_empty_context_2() {
   }
-  public void given_empty_context3() {
+  public void given_empty_context_3() {
   }
 
 

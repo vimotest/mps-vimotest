@@ -21,7 +21,7 @@ class ContextReference_ViewTests {
  }
   
   public Context_Reference_given_base_when_then_ (  ) {
-  this.given_base1 (  );
+  this.given_base_1 (  );
    this.BuildSut (  );
  }
   
@@ -40,7 +40,7 @@ class ContextReference_ViewTests {
   this.contextProvider.SetSimpleStringContext ( this.base );
  }
   
-  public given_base1 (  ) {
+  public given_base_1 (  ) {
   this.contextProvider.SetSimpleStringContext ( this.base );
  }
   

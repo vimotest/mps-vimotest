@@ -7,7 +7,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 include(${CMAKE_SOURCE_DIR}/de/vimotest/sandbox/de.vimotest.sandbox.cmake)
 include(${CMAKE_SOURCE_DIR}/de/vimotest/examples/loginview/de.vimotest.examples.loginview.cmake)
-include(${CMAKE_SOURCE_DIR}/de/vimotest/examples/taskview/de.vimotest.examples.taskview.cmake)
 include(${CMAKE_SOURCE_DIR}/de/vimotest/generationConfig/capitalizedGetterSetterNames/de.vimotest.generationConfig.capitalizedGetterSetterNames.cmake)
 include(${CMAKE_SOURCE_DIR}/de/vimotest/generationConfig/parameterObject/de.vimotest.generationConfig.parameterObject.cmake)
 include(${CMAKE_SOURCE_DIR}/de/vimotest/generationConfig/separateViewController/de.vimotest.generationConfig.separateViewController.cmake)

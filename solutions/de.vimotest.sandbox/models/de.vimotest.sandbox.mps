@@ -4647,5 +4647,22 @@
       <node concept="1s$VFG" id="1MbPAgjKbKY" role="1s$QAY" />
     </node>
   </node>
+  <node concept="30n1Qd" id="aV2Sa0vgFk">
+    <property role="3GE5qa" value="context" />
+    <property role="TrG5h" value="StringContext2_ViewTests" />
+    <ref role="30n1PB" node="5ZcB1GfQ8hN" resolve="StringContext_View" />
+    <node concept="3LKzX3" id="aV2Sa0vgFl" role="30n1Qb">
+      <property role="TrG5h" value="SimpleStringContext2" />
+      <node concept="1IbZgy" id="aV2Sa0vgFm" role="DUd2K">
+        <node concept="1g3lgF" id="aV2Sa0vgFn" role="DUiTU">
+          <property role="TrG5h" value="alice_bob_charlie" />
+          <node concept="o7Kjd" id="aV2Sa0vgFo" role="3125nE">
+            <property role="o7K7r" value="Alice, Bob, Charlie" />
+          </node>
+        </node>
+      </node>
+      <node concept="1s$VFG" id="aV2Sa0vgFp" role="1s$QAY" />
+    </node>
+  </node>
 </model>
 

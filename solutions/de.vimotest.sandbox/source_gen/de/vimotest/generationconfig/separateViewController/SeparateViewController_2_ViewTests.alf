@@ -1,0 +1,56 @@
+
+
+private import Testing ;
+
+class SeparateViewController_2_ViewTests {
+  
+  private sutViewModel : MyViewModel  ;
+  
+  private sutViewController : MyViewController  ;
+  
+  private contextProvider : SeparateViewController_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new SeparateViewController_ViewContextProviderImpl (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public MyTest2_given_empty_context_when_LoadView_and_uncheck_MyCheckBox_then_ (  ) {
+  this.given_empty_context (  );
+   this.BuildSut (  );
+   this.when_LoadView (  );
+   this.when_uncheck_MyCheckBox (  );
+   this.RetrieveViewModel (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sutViewController = this.contextProvider.BuildSutViewController (  );
+ }
+  
+  
+  protected RetrieveViewModel (  ) {
+  this.sutViewModel = this.contextProvider.GetViewModel (  );
+ }
+  
+  // Given Helper Definitions
+
+  
+  public given_empty_context (  ) {     }
+  
+  // When Helper Definitions
+
+  
+  public when_LoadView (  ) {
+  this.sutViewController.loadView (  );
+ }
+  
+  public when_uncheck_MyCheckBox (  ) {
+  this.sutViewController.myCheckBoxChecked ( false );
+ }
+  
+  // Then Helper Definitions
+
+}

@@ -138,5 +138,28 @@
       </node>
     </node>
   </node>
+  <node concept="30n1Qd" id="aV2Sa0uGCw">
+    <property role="TrG5h" value="SeparateViewController_2_ViewTests" />
+    <ref role="30n1PB" node="Of5vVZtG4V" resolve="SeparateViewController_View" />
+    <node concept="3LKzX3" id="aV2Sa0uGCx" role="30n1Qb">
+      <property role="TrG5h" value="MyTest2" />
+      <node concept="1IbZgy" id="aV2Sa0uGCy" role="DUd2K">
+        <node concept="30l7Wy" id="aV2Sa0uGCz" role="DUiTU" />
+      </node>
+      <node concept="1s$VFG" id="aV2Sa0uGC$" role="1s$QAY">
+        <node concept="DUd5q" id="aV2Sa0uGC_" role="1s$QAM">
+          <node concept="27s6xY" id="aV2Sa0uGCA" role="DUiS9">
+            <ref role="27sXQn" node="Of5vVZtG4X" resolve="LoadView" />
+            <node concept="_vku0" id="aV2Sa0uGCB" role="27sTdU" />
+          </node>
+        </node>
+        <node concept="DUd5q" id="aV2Sa0uGCC" role="1s$QAM">
+          <node concept="Tef3P" id="aV2Sa0uGCD" role="DUiS9">
+            <ref role="3ucQsQ" node="Of5vVZtNIW" resolve="MyCheckBox" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

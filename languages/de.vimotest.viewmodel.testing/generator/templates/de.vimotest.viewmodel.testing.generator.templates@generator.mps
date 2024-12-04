@@ -753,6 +753,11 @@
       <ref role="2rTdP9" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
     </node>
+    <node concept="2rT7sh" id="aV2Sa0uTZ8" role="2rTMjI">
+      <property role="TrG5h" value="ViewModelFeatureTestSuite_ContextProvider_BuildSut_OperationDefinition" />
+      <ref role="2rTdP9" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+      <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
+    </node>
     <node concept="2rT7sh" id="3nKDvO$x7IY" role="2rTMjI">
       <property role="TrG5h" value="ViewModelFeatureTestSuite_ContextProviderImpl_ClassDefinition" />
       <ref role="2rTdP9" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
@@ -1191,6 +1196,39 @@
                 <node concept="32Pqhl" id="5jkMFwAfoMy" role="32OngV">
                   <node concept="_vnHe" id="5jkMFwAfoMz" role="32Men1">
                     <ref role="3acloq" node="4Pj3bOmxz2b" resolve="BuildSut" />
+                    <node concept="1ZhdrF" id="aV2Sa0v0C9" role="lGtFl">
+                      <property role="2qtEX8" value="nameRef" />
+                      <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
+                      <node concept="3$xsQk" id="aV2Sa0v0Ca" role="3$ytzL">
+                        <node concept="3clFbS" id="aV2Sa0v0Cb" role="2VODD2">
+                          <node concept="3cpWs8" id="aV2Sa0vciC" role="3cqZAp">
+                            <node concept="3cpWsn" id="aV2Sa0vciD" role="3cpWs9">
+                              <property role="TrG5h" value="primaryTestSuite" />
+                              <node concept="3Tqbb2" id="aV2Sa0vciE" role="1tU5fm">
+                                <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+                              </node>
+                              <node concept="2YIFZM" id="aV2Sa0vciF" role="33vP2m">
+                                <ref role="37wK5l" to="zcip:7NXUkdT9G9t" resolve="getPrimaryTestSuiteInputForContextProvider" />
+                                <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="ContextProviderGenerationHelper" />
+                                <node concept="1iwH7S" id="aV2Sa0vciG" role="37wK5m" />
+                                <node concept="30H73N" id="aV2Sa0vciH" role="37wK5m" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbF" id="aV2Sa0vciI" role="3cqZAp">
+                            <node concept="2OqwBi" id="aV2Sa0vciJ" role="3clFbG">
+                              <node concept="1iwH7S" id="aV2Sa0vciK" role="2Oq$k0" />
+                              <node concept="1iwH70" id="aV2Sa0vciL" role="2OqNvi">
+                                <ref role="1iwH77" node="aV2Sa0uTZ8" resolve="ViewModelFeatureTestSuite_ContextProvider_BuildSut_OperationDefinition" />
+                                <node concept="37vLTw" id="aV2Sa0vciM" role="1iwH7V">
+                                  <ref role="3cqZAo" node="aV2Sa0vciD" resolve="primaryTestSuite" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                   </node>
                   <node concept="32M0$0" id="5jkMFwAfoM$" role="32Men7">
                     <node concept="32Pqhl" id="5jkMFwAfoM_" role="32PqmZ">
@@ -1231,6 +1269,39 @@
                       <node concept="32Pqhl" id="4Pj3bOmysWQ" role="32OngV">
                         <node concept="_vnHe" id="4Pj3bOmysWR" role="32Men1">
                           <ref role="3acloq" node="4Pj3bOmxz2b" resolve="BuildSut" />
+                          <node concept="1ZhdrF" id="aV2Sa0vc_s" role="lGtFl">
+                            <property role="2qtEX8" value="nameRef" />
+                            <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
+                            <node concept="3$xsQk" id="aV2Sa0vc_t" role="3$ytzL">
+                              <node concept="3clFbS" id="aV2Sa0vc_u" role="2VODD2">
+                                <node concept="3cpWs8" id="aV2Sa0vgBg" role="3cqZAp">
+                                  <node concept="3cpWsn" id="aV2Sa0vgBh" role="3cpWs9">
+                                    <property role="TrG5h" value="primaryTestSuite" />
+                                    <node concept="3Tqbb2" id="aV2Sa0vgBi" role="1tU5fm">
+                                      <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+                                    </node>
+                                    <node concept="2YIFZM" id="aV2Sa0vgBj" role="33vP2m">
+                                      <ref role="37wK5l" to="zcip:7NXUkdT9G9t" resolve="getPrimaryTestSuiteInputForContextProvider" />
+                                      <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="ContextProviderGenerationHelper" />
+                                      <node concept="1iwH7S" id="aV2Sa0vgBk" role="37wK5m" />
+                                      <node concept="30H73N" id="aV2Sa0vgBl" role="37wK5m" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3clFbF" id="aV2Sa0vgBm" role="3cqZAp">
+                                  <node concept="2OqwBi" id="aV2Sa0vgBn" role="3clFbG">
+                                    <node concept="1iwH7S" id="aV2Sa0vgBo" role="2Oq$k0" />
+                                    <node concept="1iwH70" id="aV2Sa0vgBp" role="2OqNvi">
+                                      <ref role="1iwH77" node="aV2Sa0uTZ8" resolve="ViewModelFeatureTestSuite_ContextProvider_BuildSut_OperationDefinition" />
+                                      <node concept="37vLTw" id="aV2Sa0vgBq" role="1iwH7V">
+                                        <ref role="3cqZAo" node="aV2Sa0vgBh" resolve="primaryTestSuite" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                         </node>
                         <node concept="32M0$0" id="4Pj3bOmysWS" role="32Men7">
                           <node concept="32Pqhl" id="4Pj3bOmysWT" role="32PqmZ">
@@ -5723,6 +5794,9 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="2ZBi8u" id="aV2Sa0uSHY" role="lGtFl">
+          <ref role="2rW$FS" node="aV2Sa0uTZ8" resolve="ViewModelFeatureTestSuite_ContextProvider_BuildSut_OperationDefinition" />
         </node>
       </node>
       <node concept="6nSm6" id="5jkMFwAfrZ2" role="PCHHv">

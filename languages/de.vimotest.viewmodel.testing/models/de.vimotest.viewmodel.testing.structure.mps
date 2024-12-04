@@ -346,6 +346,14 @@
     <node concept="PrWs8" id="5ZcB1GfZTxb" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyi" id="1MbPAgiZPYp" role="1TKVEl">
+      <property role="IQ2nx" value="2056973380128563097" />
+      <property role="TrG5h" value="customTestContextTypeName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="t5JxF" id="1MbPAgiZPYq" role="lGtFl">
+        <property role="t5JxN" value="Used to override the default TestContextType in generation" />
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="3JdhG1lSFby">
     <property role="EcuMT" value="4309178210352018146" />

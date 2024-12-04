@@ -29,6 +29,9 @@
       <concept id="7808764115844896567" name="de.vimotest.types.structure.BoolType" flags="ng" index="1nBHEw" />
       <concept id="7808764115844976085" name="de.vimotest.types.structure.StringType" flags="ng" index="1nBS12" />
       <concept id="7808764115843597086" name="de.vimotest.types.structure.FieldStructContent" flags="ng" index="1nWCU9" />
+      <concept id="7922086861527425651" name="de.vimotest.types.structure.StringValue" flags="ng" index="1wOkDO">
+        <property id="7922086861527426429" name="value" index="1wOkPU" />
+      </concept>
       <concept id="6112733486551600458" name="de.vimotest.types.structure.ListType" flags="ng" index="1WnWvM">
         <child id="6112733486551600459" name="nestedType" index="1WnWvN" />
       </concept>
@@ -126,6 +129,9 @@
         <reference id="3426401106044983489" name="targetViewModel" index="30n1PB" />
         <child id="3426401106044983341" name="tests" index="30n1Qb" />
       </concept>
+      <concept id="3426401106045120498" name="de.vimotest.viewmodel.testing.structure.ITestScenarioContext" flags="ngI" index="30nyDk">
+        <property id="2056973380128563097" name="customTestContextTypeName" index="et8BX" />
+      </concept>
       <concept id="3426401106045121475" name="de.vimotest.viewmodel.testing.structure.ViewWidgetAssertion" flags="ng" index="30nzp_">
         <reference id="3426401106045121502" name="widget" index="30nzpS" />
         <child id="3426401106045146960" name="check" index="30nDbQ" />
@@ -169,6 +175,14 @@
       </concept>
       <concept id="5678667081004710962" name="de.vimotest.viewmodel.testing.structure.ViewWidgetCommandAction" flags="ng" index="3ucX6H">
         <reference id="5678667081004731049" name="widget" index="3ucQsQ" />
+      </concept>
+      <concept id="7922086861527424090" name="de.vimotest.viewmodel.testing.structure.DataTableContext" flags="ng" index="1wOnht">
+        <property id="7922086861530137568" name="generationMode" index="1wIYJB" />
+        <child id="7922086861527425650" name="rows" index="1wOkDP" />
+        <child id="7922086861527425648" name="headersRow" index="1wOkDR" />
+      </concept>
+      <concept id="7922086861527424868" name="de.vimotest.viewmodel.testing.structure.DataTableRow" flags="ng" index="1wOntz">
+        <child id="7922086861527425646" name="values" index="1wOkDD" />
       </concept>
       <concept id="7922086861434398150" name="de.vimotest.viewmodel.testing.structure.ColumnCheckInfo" flags="ng" index="1EpGR1">
         <property id="7922086861434398930" name="ignoreChecksOnColumn" index="1EpG3l" />
@@ -4517,6 +4531,120 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="103ZX$" id="1MbPAgjlD43">
+    <property role="3GE5qa" value="context" />
+    <property role="TrG5h" value="DataTableContext_View" />
+    <node concept="103ZXx" id="1MbPAgjlD44" role="103ZXC" />
+    <node concept="103ZXB" id="1MbPAgjlD46" role="103ZXF" />
+  </node>
+  <node concept="30n1Qd" id="1MbPAgjlDgg">
+    <property role="3GE5qa" value="context" />
+    <property role="TrG5h" value="DataTableContext_ViewTests" />
+    <ref role="30n1PB" node="1MbPAgjlD43" resolve="DataTableContext_View" />
+    <node concept="3LKzX3" id="1MbPAgjlDsq" role="30n1Qb">
+      <property role="TrG5h" value="DataTable Context Custom Setter" />
+      <node concept="1IbZgy" id="1MbPAgjlDsr" role="DUd2K">
+        <node concept="1wOnht" id="1MbPAgjlDsy" role="DUiTU">
+          <property role="TrG5h" value="dataTableCustomSetter" />
+          <property role="et8BX" value="IdAndName" />
+          <node concept="1wOntz" id="1MbPAgjlDs$" role="1wOkDR">
+            <node concept="1wOkDO" id="1MbPAgjlDsA" role="1wOkDD">
+              <property role="1wOkPU" value="id" />
+            </node>
+            <node concept="1wOkDO" id="1MbPAgjlDsG" role="1wOkDD">
+              <property role="1wOkPU" value="name" />
+            </node>
+          </node>
+          <node concept="1wOntz" id="1MbPAgjlDsC" role="1wOkDP">
+            <node concept="1wOkDO" id="1MbPAgjlDsE" role="1wOkDD">
+              <property role="1wOkPU" value="0" />
+            </node>
+            <node concept="1wOkDO" id="1MbPAgjlDsH" role="1wOkDD">
+              <property role="1wOkPU" value="A" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1s$VFG" id="1MbPAgjlDst" role="1s$QAY" />
+    </node>
+    <node concept="3LKzX3" id="1MbPAgjKbKx" role="30n1Qb">
+      <property role="TrG5h" value="DataTable Context to String" />
+      <node concept="1IbZgy" id="1MbPAgjKbKy" role="DUd2K">
+        <node concept="1wOnht" id="1MbPAgjKbKz" role="DUiTU">
+          <property role="TrG5h" value="dataTableToString" />
+          <node concept="1wOntz" id="1MbPAgjKbK$" role="1wOkDR">
+            <node concept="1wOkDO" id="1MbPAgjKbK_" role="1wOkDD">
+              <property role="1wOkPU" value="id" />
+            </node>
+            <node concept="1wOkDO" id="1MbPAgjKbKA" role="1wOkDD">
+              <property role="1wOkPU" value="name" />
+            </node>
+          </node>
+          <node concept="1wOntz" id="1MbPAgjKbKB" role="1wOkDP">
+            <node concept="1wOkDO" id="1MbPAgjKbKC" role="1wOkDD">
+              <property role="1wOkPU" value="0" />
+            </node>
+            <node concept="1wOkDO" id="1MbPAgjKbKD" role="1wOkDD">
+              <property role="1wOkPU" value="A" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1s$VFG" id="1MbPAgjKbKE" role="1s$QAY" />
+    </node>
+    <node concept="3LKzX3" id="1MbPAgjKbKF" role="30n1Qb">
+      <property role="TrG5h" value="DataTable Context to JSON" />
+      <node concept="1IbZgy" id="1MbPAgjKbKG" role="DUd2K">
+        <node concept="1wOnht" id="1MbPAgjKbKH" role="DUiTU">
+          <property role="TrG5h" value="dataTableToJson" />
+          <property role="1wIYJB" value="6RKU0sdiKfv/JSON" />
+          <node concept="1wOntz" id="1MbPAgjKbKI" role="1wOkDR">
+            <node concept="1wOkDO" id="1MbPAgjKbKJ" role="1wOkDD">
+              <property role="1wOkPU" value="id" />
+            </node>
+            <node concept="1wOkDO" id="1MbPAgjKbKK" role="1wOkDD">
+              <property role="1wOkPU" value="name" />
+            </node>
+          </node>
+          <node concept="1wOntz" id="1MbPAgjKbKL" role="1wOkDP">
+            <node concept="1wOkDO" id="1MbPAgjKbKM" role="1wOkDD">
+              <property role="1wOkPU" value="0" />
+            </node>
+            <node concept="1wOkDO" id="1MbPAgjKbKN" role="1wOkDD">
+              <property role="1wOkPU" value="A" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1s$VFG" id="1MbPAgjKbKO" role="1s$QAY" />
+    </node>
+    <node concept="3LKzX3" id="1MbPAgjKbKP" role="30n1Qb">
+      <property role="TrG5h" value="DataTable Context to XML" />
+      <node concept="1IbZgy" id="1MbPAgjKbKQ" role="DUd2K">
+        <node concept="1wOnht" id="1MbPAgjKbKR" role="DUiTU">
+          <property role="TrG5h" value="dataTableToXml" />
+          <property role="1wIYJB" value="6RKU0sdiKfu/XML" />
+          <node concept="1wOntz" id="1MbPAgjKbKS" role="1wOkDR">
+            <node concept="1wOkDO" id="1MbPAgjKbKT" role="1wOkDD">
+              <property role="1wOkPU" value="id" />
+            </node>
+            <node concept="1wOkDO" id="1MbPAgjKbKU" role="1wOkDD">
+              <property role="1wOkPU" value="name" />
+            </node>
+          </node>
+          <node concept="1wOntz" id="1MbPAgjKbKV" role="1wOkDP">
+            <node concept="1wOkDO" id="1MbPAgjKbKW" role="1wOkDD">
+              <property role="1wOkPU" value="0" />
+            </node>
+            <node concept="1wOkDO" id="1MbPAgjKbKX" role="1wOkDD">
+              <property role="1wOkPU" value="A" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1s$VFG" id="1MbPAgjKbKY" role="1s$QAY" />
     </node>
   </node>
 </model>

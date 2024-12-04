@@ -5241,6 +5241,12 @@
           </node>
         </node>
       </node>
+      <node concept="PMmxH" id="1MbPAgiZWdO" role="3EZMnx">
+        <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_EC" />
+        <node concept="pVoyu" id="1MbPAgiZWdP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="5ZcB1GgRu5y">
@@ -5274,6 +5280,12 @@
         <property role="1O74Pk" value="true" />
         <property role="1$x2rV" value="&lt;same as test suite&gt;" />
         <ref role="1NtTu8" to="53m0:5ZcB1GhJ1UL" resolve="virtualPackageOfFile" />
+      </node>
+      <node concept="PMmxH" id="1MbPAgiZWdU" role="3EZMnx">
+        <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_EC" />
+        <node concept="pVoyu" id="1MbPAgiZWdV" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
     </node>
   </node>
@@ -5323,6 +5335,15 @@
         <ref role="1NtTu8" to="53m0:6RKU0s0VjoC" resolve="xmlElement" />
       </node>
       <node concept="2iRfu4" id="6RKU0s0VjL4" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="1MbPAgiZWdQ" role="6VMZX">
+      <node concept="PMmxH" id="1MbPAgiZWdS" role="3EZMnx">
+        <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_EC" />
+        <node concept="pVoyu" id="1MbPAgiZWdT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1MbPAgiZWdR" role="2iSdaV" />
     </node>
   </node>
   <node concept="PKFIW" id="6RKU0s1p1am">
@@ -5987,6 +6008,12 @@
       <node concept="3F0A7n" id="6RKU0sdzqqD" role="3EZMnx">
         <ref role="1NtTu8" to="53m0:6RKU0sdiKfw" resolve="generationMode" />
       </node>
+      <node concept="PMmxH" id="1MbPAgiZWdM" role="3EZMnx">
+        <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_EC" />
+        <node concept="pVoyu" id="1MbPAgiZWdN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="PKFIW" id="2gGjxPLEAeM">
@@ -6083,6 +6110,12 @@
           </node>
         </node>
       </node>
+      <node concept="PMmxH" id="1MbPAgiZWad" role="3EZMnx">
+        <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_EC" />
+        <node concept="pVoyu" id="1MbPAgiZWae" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="22mcaB" id="7NXUkdPQsi_">
@@ -6136,6 +6169,22 @@
         </node>
       </node>
       <node concept="2iRfu4" id="7NXUkdPQsk1" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="1MbPAgiZVDs">
+    <property role="3GE5qa" value="test.context" />
+    <property role="TrG5h" value="ITestScenarioContext_customTestContextTypeName_EC" />
+    <ref role="1XX52x" to="53m0:2Yd1qrJOMZM" resolve="ITestScenarioContext" />
+    <node concept="3EZMnI" id="1MbPAgiZVPB" role="2wV5jI">
+      <node concept="3F0ifn" id="1MbPAgiZVPF" role="3EZMnx">
+        <property role="3F0ifm" value="custom test context name:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0A7n" id="1MbPAgiZVPI" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <ref role="1NtTu8" to="53m0:1MbPAgiZPYp" resolve="customTestContextTypeName" />
+      </node>
+      <node concept="2iRfu4" id="1MbPAgiZVPE" role="2iSdaV" />
     </node>
   </node>
 </model>

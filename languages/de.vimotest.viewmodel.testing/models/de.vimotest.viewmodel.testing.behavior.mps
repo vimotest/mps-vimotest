@@ -148,6 +148,7 @@
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="1225271546410" name="jetbrains.mps.baseLanguage.structure.TrimOperation" flags="nn" index="17S1cR" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -13456,6 +13457,42 @@
             </node>
             <node concept="liA8E" id="5ZcB1GfVQH5" role="2OqNvi">
               <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1MbPAgiZQ5T" role="13h7CS">
+      <property role="TrG5h" value="getEffectiveTestContextTypeName" />
+      <node concept="3Tm1VV" id="1MbPAgiZQ5U" role="1B3o_S" />
+      <node concept="17QB3L" id="1MbPAgiZQ7O" role="3clF45" />
+      <node concept="3clFbS" id="1MbPAgiZQ5W" role="3clF47">
+        <node concept="3clFbJ" id="1MbPAgiZQ9m" role="3cqZAp">
+          <node concept="2OqwBi" id="1MbPAgiZTKP" role="3clFbw">
+            <node concept="2OqwBi" id="1MbPAgiZQjL" role="2Oq$k0">
+              <node concept="13iPFW" id="1MbPAgiZQ9J" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1MbPAgiZS6k" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:1MbPAgiZPYp" resolve="customTestContextTypeName" />
+              </node>
+            </node>
+            <node concept="17RvpY" id="1MbPAgiZUMb" role="2OqNvi" />
+          </node>
+          <node concept="3clFbS" id="1MbPAgiZQ9o" role="3clFbx">
+            <node concept="3cpWs6" id="1MbPAgiZUOK" role="3cqZAp">
+              <node concept="2OqwBi" id="1MbPAgiZV01" role="3cqZAk">
+                <node concept="13iPFW" id="1MbPAgiZUP$" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1MbPAgiZV9m" role="2OqNvi">
+                  <ref role="3TsBF5" to="53m0:1MbPAgiZPYp" resolve="customTestContextTypeName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1MbPAgiZVdb" role="3cqZAp">
+          <node concept="2OqwBi" id="1MbPAgiZVpM" role="3clFbG">
+            <node concept="13iPFW" id="1MbPAgiZVd9" role="2Oq$k0" />
+            <node concept="2qgKlT" id="1MbPAgiZVzm" role="2OqNvi">
+              <ref role="37wK5l" node="5ZcB1GfVPbD" resolve="getTestContextType" />
             </node>
           </node>
         </node>

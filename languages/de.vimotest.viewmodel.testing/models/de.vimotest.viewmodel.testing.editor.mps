@@ -6110,12 +6110,6 @@
           </node>
         </node>
       </node>
-      <node concept="PMmxH" id="1MbPAgiZWad" role="3EZMnx">
-        <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_EC" />
-        <node concept="pVoyu" id="1MbPAgiZWae" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="22mcaB" id="7NXUkdPQsi_">

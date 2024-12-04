@@ -57,6 +57,7 @@ task mpsTest {
     dependsOn 'mpsAntCheck', 'parseTestReportAfterAntCheck'
 }
 
+tasks['mpsOpenProjectInMpsForCurrentOs'].mustRunAfter(setupSubmodules)
 task openProjectInMps {
     group 'mps'
     dependsOn setupSubmodules, 'mpsOpenProjectInMpsForCurrentOs'

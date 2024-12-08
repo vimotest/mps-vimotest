@@ -11,7 +11,6 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
     <import index="bqjt" ref="r:ec1f09af-a5e9-4755-932d-7ccae7bdd219(alfi.behavior)" implicit="true" />
   </imports>
@@ -141,7 +140,6 @@
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
       </concept>
-      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -732,15 +730,12 @@
               <node concept="37vLTw" id="1mmsj6y508Y" role="37wK5m">
                 <ref role="3cqZAo" node="1mmsj6y4VK_" resolve="widgetPrefix" />
               </node>
-              <node concept="2OqwBi" id="4CJYu49mO6_" role="37wK5m">
-                <node concept="2OqwBi" id="4CJYu49mO6A" role="2Oq$k0">
-                  <node concept="37vLTw" id="4CJYu49mO6B" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2evlxT94TDh" resolve="feature" />
-                  </node>
-                  <node concept="2yIwOk" id="4CJYu49mO6C" role="2OqNvi" />
+              <node concept="2OqwBi" id="4CJYu49mO6A" role="37wK5m">
+                <node concept="37vLTw" id="4CJYu49mO6B" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2evlxT94TDh" resolve="feature" />
                 </node>
-                <node concept="liA8E" id="4CJYu49mO6D" role="2OqNvi">
-                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+                <node concept="2qgKlT" id="1mmsj6yLIKm" role="2OqNvi">
+                  <ref role="37wK5l" to="nrs2:1mmsj6yLGOp" resolve="getFeatureBaseName" />
                 </node>
               </node>
               <node concept="2OqwBi" id="4CJYu49mO6E" role="37wK5m">
@@ -944,57 +939,6 @@
                 <node concept="37vLTw" id="3MA_BelmOHB" role="37wK5m">
                   <ref role="3cqZAo" node="3MA_BelmJDP" resolve="propertyName" />
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="3MA_Belmy$k" role="3cqZAp">
-          <node concept="3clFbS" id="3MA_Belmy$l" role="3clFbx">
-            <node concept="3clFbF" id="3MA_Belmy$m" role="3cqZAp">
-              <node concept="37vLTI" id="3MA_Belmy$n" role="3clFbG">
-                <node concept="2OqwBi" id="3MA_Belmy$o" role="37vLTx">
-                  <node concept="37vLTw" id="3MA_Belmy$p" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3MA_BelmL3X" resolve="name" />
-                  </node>
-                  <node concept="liA8E" id="3MA_Belmy$q" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
-                    <node concept="3cmrfG" id="3MA_Belmy$r" role="37wK5m">
-                      <property role="3cmrfH" value="0" />
-                    </node>
-                    <node concept="3cpWsd" id="3MA_Belmy$s" role="37wK5m">
-                      <node concept="2OqwBi" id="3MA_Belmy$t" role="3uHU7B">
-                        <node concept="37vLTw" id="3MA_Belmy$u" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3MA_BelmL3X" resolve="name" />
-                        </node>
-                        <node concept="liA8E" id="3MA_Belmy$v" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
-                        </node>
-                      </node>
-                      <node concept="2OqwBi" id="3MA_Belmy$w" role="3uHU7w">
-                        <node concept="Xl_RD" id="3MA_Belmy$x" role="2Oq$k0">
-                          <property role="Xl_RC" value="Feature" />
-                        </node>
-                        <node concept="liA8E" id="3MA_Belmy$y" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="37vLTw" id="3MA_Belmy$z" role="37vLTJ">
-                  <ref role="3cqZAo" node="3MA_BelmL3X" resolve="name" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="3MA_Belmy$$" role="3clFbw">
-            <node concept="37vLTw" id="3MA_Belmy$_" role="2Oq$k0">
-              <ref role="3cqZAo" node="3MA_BelmL3X" resolve="name" />
-            </node>
-            <node concept="liA8E" id="3MA_Belmy$A" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />
-              <node concept="Xl_RD" id="3MA_Belmy$B" role="37wK5m">
-                <property role="Xl_RC" value="Feature" />
               </node>
             </node>
           </node>

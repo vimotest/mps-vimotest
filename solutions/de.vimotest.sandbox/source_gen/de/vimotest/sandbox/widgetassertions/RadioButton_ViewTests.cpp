@@ -34,7 +34,7 @@ namespace widgetassertions
   }
   void RadioButton_ViewTests::then_MyChoices_selected_OptionC_( ) 
   {
-    EXPECT_EQ(std::string("OptionC"), this->sut->getMyChoicesSelectedEntry());
+    EXPECT_EQ(std::string("OptionC"), this->sut->getMyChoicesRadioButtonSelectedEntry());
   }
 }
 

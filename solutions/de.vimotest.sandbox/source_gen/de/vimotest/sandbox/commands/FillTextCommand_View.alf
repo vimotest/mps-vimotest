@@ -4,31 +4,31 @@ namespace commands ;
 
 class FillTextCommand_View {
   
-  private MyTextBoxText : String  ;
+  private MyValueTextBoxText : String  ;
   
-  public getMyTextBoxText (  ) : String  {
-  return this.MyTextBoxText;
+  public getMyValueTextBoxText (  ) : String  {
+  return this.MyValueTextBoxText;
  }
   
-  private MyFreeTextComboBoxComboBoxEntries : String [ * ]  ;
+  private MyFreeValueComboBoxComboBoxEntries : String [ * ]  ;
   
-  public getMyFreeTextComboBoxComboBoxEntries (  ) : String [ * ]  {
-  return this.MyFreeTextComboBoxComboBoxEntries;
+  public getMyFreeValueComboBoxComboBoxEntries (  ) : String [ * ]  {
+  return this.MyFreeValueComboBoxComboBoxEntries;
  }
   
-  private MyFreeTextComboBoxSelectedEntry : String  ;
+  private MyFreeValueComboBoxSelectedEntry : String  ;
   
-  public getMyFreeTextComboBoxSelectedEntry (  ) : String  {
-  return this.MyFreeTextComboBoxSelectedEntry;
+  public getMyFreeValueComboBoxSelectedEntry (  ) : String  {
+  return this.MyFreeValueComboBoxSelectedEntry;
  }
   
-  private MyFreeTextComboBoxText : String  ;
+  private MyFreeValueComboBoxText : String  ;
   
-  public getMyFreeTextComboBoxText (  ) : String  {
-  return this.MyFreeTextComboBoxText;
+  public getMyFreeValueComboBoxText (  ) : String  {
+  return this.MyFreeValueComboBoxText;
  }
   
-  public myTextBoxTextFilled (   in text : String  ) {     }
+  public myValueTextFilled (   in text : String  ) {     }
   
-  public myFreeTextComboBoxTextFilled (   in text : String  ) {     }
+  public myFreeValueTextFilled (   in text : String  ) {     }
 }

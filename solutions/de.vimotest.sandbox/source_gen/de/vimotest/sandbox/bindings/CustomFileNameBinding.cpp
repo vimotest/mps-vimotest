@@ -3,13 +3,13 @@
 #include "CustomFileNameBinding.h"
 #include <vector>
 #include <memory>
-#include "ViMoTestFileNameBindingMyTableViewRow.h"
+#include "ViMoTestFileNameBindingMyElementsRow.h"
 
 namespace bindings
 {
-  std::vector<std::shared_ptr<ViMoTestFileNameBindingMyTableViewRow>> ViMoTestFileNameBinding::getMyTableViewWidgetTableRows( ) 
+  std::vector<std::shared_ptr<ViMoTestFileNameBindingMyElementsRow>> ViMoTestFileNameBinding::getMyElementsTableWidgetTableRows( ) 
   {
-    return this->MyTableViewWidgetTableRows;
+    return this->MyElementsTableWidgetTableRows;
   }
   void ViMoTestFileNameBinding::loadView( ) 
   {

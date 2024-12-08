@@ -4,9 +4,9 @@ package de.vimotest.sandbox.widgetassertions;
 
 
 public class ListViews_ViewMyStringRowHandlesRow {
-  private String ValuesText;
-  public String getValuesText() {
-    return this.ValuesText;
+  private String ValuesLabelText;
+  public String getValuesLabelText() {
+    return this.ValuesLabelText;
   }
   private String RowHandle;
   public String getRowHandle() {

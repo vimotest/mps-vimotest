@@ -4,16 +4,16 @@ namespace commands ;
 
 class CheckCommand_View {
   
-  private isMyCheckBox1Checked : Boolean  ;
+  private isMyCheckBox1CheckBoxChecked : Boolean  ;
   
-  public getIsMyCheckBox1Checked (  ) : Boolean  {
-  return this.isMyCheckBox1Checked;
+  public getIsMyCheckBox1CheckBoxChecked (  ) : Boolean  {
+  return this.isMyCheckBox1CheckBoxChecked;
  }
   
-  private isMyCheckBox2Checked : Boolean  ;
+  private isMyCheckBox2CheckBoxChecked : Boolean  ;
   
-  public getIsMyCheckBox2Checked (  ) : Boolean  {
-  return this.isMyCheckBox2Checked;
+  public getIsMyCheckBox2CheckBoxChecked (  ) : Boolean  {
+  return this.isMyCheckBox2CheckBoxChecked;
  }
   
   public myCheckBox1Checked (   in isChecked : Boolean  ) {     }

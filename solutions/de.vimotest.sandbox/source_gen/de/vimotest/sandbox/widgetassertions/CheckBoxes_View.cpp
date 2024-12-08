@@ -6,29 +6,29 @@
 
 namespace widgetassertions
 {
-  bool CheckBoxes_View::getIsMyFlagWithLabelChecked( ) 
+  bool CheckBoxes_View::getIsMyFlagWithLabelCheckBoxChecked( ) 
   {
-    return this->isMyFlagWithLabelChecked;
+    return this->isMyFlagWithLabelCheckBoxChecked;
   }
-  bool CheckBoxes_View::getIsMyFlagWithLabelVisibility( ) 
+  bool CheckBoxes_View::getIsMyFlagWithLabelCheckBoxVisibility( ) 
   {
-    return this->isMyFlagWithLabelVisibility;
+    return this->isMyFlagWithLabelCheckBoxVisibility;
   }
-  bool CheckBoxes_View::getIsMyFlagWithLabelEnabled( ) 
+  bool CheckBoxes_View::getIsMyFlagWithLabelCheckBoxEnabled( ) 
   {
-    return this->isMyFlagWithLabelEnabled;
+    return this->isMyFlagWithLabelCheckBoxEnabled;
   }
-  std::string CheckBoxes_View::getMyFlagWithLabelText( ) 
+  std::string CheckBoxes_View::getMyFlagWithLabelCheckBoxText( ) 
   {
-    return this->MyFlagWithLabelText;
+    return this->MyFlagWithLabelCheckBoxText;
   }
-  bool CheckBoxes_View::getIsMyFlagNoLabelChecked( ) 
+  bool CheckBoxes_View::getIsMyFlagNoLabelCheckBoxChecked( ) 
   {
-    return this->isMyFlagNoLabelChecked;
+    return this->isMyFlagNoLabelCheckBoxChecked;
   }
-  std::optional<bool> CheckBoxes_View::getIsMyFlagTriStateChecked( ) 
+  std::optional<bool> CheckBoxes_View::getIsMyFlagTriStateCheckBoxChecked( ) 
   {
-    return this->isMyFlagTriStateChecked == true;
+    return this->isMyFlagTriStateCheckBoxChecked == true;
   }
 }
 

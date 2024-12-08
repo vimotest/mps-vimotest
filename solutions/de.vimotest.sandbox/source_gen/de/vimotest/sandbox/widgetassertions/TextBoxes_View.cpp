@@ -6,21 +6,21 @@
 
 namespace widgetassertions
 {
-  std::string TextBoxes_View::getMyTextBoxText( ) 
+  std::string TextBoxes_View::getMyValueTextBoxText( ) 
   {
-    return this->MyTextBoxText;
+    return this->MyValueTextBoxText;
   }
-  bool TextBoxes_View::getIsMyTextBoxVisibility( ) 
+  bool TextBoxes_View::getIsMyValueTextBoxVisibility( ) 
   {
-    return this->isMyTextBoxVisibility;
+    return this->isMyValueTextBoxVisibility;
   }
-  bool TextBoxes_View::getIsMyTextBoxEnabled( ) 
+  bool TextBoxes_View::getIsMyValueTextBoxEnabled( ) 
   {
-    return this->isMyTextBoxEnabled;
+    return this->isMyValueTextBoxEnabled;
   }
-  std::vector<std::string> TextBoxes_View::getMultiLineTextBoxText( ) 
+  std::vector<std::string> TextBoxes_View::getMultiLineTextBoxValueTextBoxText( ) 
   {
-    return this->MultiLineTextBoxText;
+    return this->MultiLineTextBoxValueTextBoxText;
   }
 }
 

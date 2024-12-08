@@ -5,9 +5,9 @@
 
 namespace widgetassertions
 {
-  std::string ListViews_ViewMyStringRowHandlesRow::getValuesText( ) 
+  std::string ListViews_ViewMyStringRowHandlesRow::getValuesLabelText( ) 
   {
-    return this->ValuesText;
+    return this->ValuesLabelText;
   }
   std::string ListViews_ViewMyStringRowHandlesRow::getRowHandle( ) 
   {

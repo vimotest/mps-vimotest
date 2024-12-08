@@ -6,24 +6,24 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class SelectEntryCommand_View {
-  private List<String> MyComboBoxComboBoxEntries = new LinkedList<>();
-  public List<String> getMyComboBoxComboBoxEntries() {
-    return this.MyComboBoxComboBoxEntries;
+  private List<String> MyElementsComboBoxComboBoxEntries = new LinkedList<>();
+  public List<String> getMyElementsComboBoxComboBoxEntries() {
+    return this.MyElementsComboBoxComboBoxEntries;
   }
-  private String MyComboBoxSelectedEntry;
-  public String getMyComboBoxSelectedEntry() {
-    return this.MyComboBoxSelectedEntry;
+  private String MyElementsComboBoxSelectedEntry;
+  public String getMyElementsComboBoxSelectedEntry() {
+    return this.MyElementsComboBoxSelectedEntry;
   }
-  private List<String> MyRadioButtonRadioButtonChoices = new LinkedList<>();
-  public List<String> getMyRadioButtonRadioButtonChoices() {
-    return this.MyRadioButtonRadioButtonChoices;
+  private List<String> MyOptionsRadioButtonRadioButtonChoices = new LinkedList<>();
+  public List<String> getMyOptionsRadioButtonRadioButtonChoices() {
+    return this.MyOptionsRadioButtonRadioButtonChoices;
   }
-  private String MyRadioButtonSelectedEntry;
-  public String getMyRadioButtonSelectedEntry() {
-    return this.MyRadioButtonSelectedEntry;
+  private String MyOptionsRadioButtonSelectedEntry;
+  public String getMyOptionsRadioButtonSelectedEntry() {
+    return this.MyOptionsRadioButtonSelectedEntry;
   }
-  public void myComboBoxEntrySelected(String entryName) {
+  public void myElementsEntrySelected(String entryName) {
   }
-  public void myRadioButtonEntrySelected(String entryName) {
+  public void myOptionsEntrySelected(String entryName) {
   }
 }

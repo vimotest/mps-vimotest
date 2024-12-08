@@ -4,29 +4,29 @@ package de.vimotest.examples.loginview.de.vimotest.examples.loginview;
 
 
 public class LoginView {
-  private String UsernameText;
-  public String getUsernameText() {
-    return this.UsernameText;
+  private String UsernameTextBoxText;
+  public String getUsernameTextBoxText() {
+    return this.UsernameTextBoxText;
   }
-  private String PasswordText;
-  public String getPasswordText() {
-    return this.PasswordText;
+  private String PasswordTextBoxText;
+  public String getPasswordTextBoxText() {
+    return this.PasswordTextBoxText;
   }
-  private Boolean isShowPasswordChecked;
-  public Boolean getIsShowPasswordChecked() {
-    return this.isShowPasswordChecked;
+  private Boolean isShowPasswordCheckBoxChecked;
+  public Boolean getIsShowPasswordCheckBoxChecked() {
+    return this.isShowPasswordCheckBoxChecked;
   }
-  private Boolean isLoginEnabled;
-  public Boolean getIsLoginEnabled() {
-    return this.isLoginEnabled;
+  private Boolean isLoginButtonEnabled;
+  public Boolean getIsLoginButtonEnabled() {
+    return this.isLoginButtonEnabled;
   }
-  private String ErrorTextText;
-  public String getErrorTextText() {
-    return this.ErrorTextText;
+  private String ErrorLabelText;
+  public String getErrorLabelText() {
+    return this.ErrorLabelText;
   }
-  private Boolean isErrorTextVisibility;
-  public Boolean getIsErrorTextVisibility() {
-    return this.isErrorTextVisibility;
+  private Boolean isErrorLabelVisibility;
+  public Boolean getIsErrorLabelVisibility() {
+    return this.isErrorLabelVisibility;
   }
   public void loadView() {
   }

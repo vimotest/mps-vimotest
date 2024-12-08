@@ -1,0 +1,24 @@
+namespace commands ;
+
+
+
+class SelectRowCommand_ViewMyTreeViewElementsRow {
+  
+  private columnCellLabelText : String  ;
+  
+  public getColumnCellLabelText (  ) : String  {
+  return this.columnCellLabelText;
+ }
+  
+  private RowIndex : Integer  ;
+  
+  public getRowIndex (  ) : Integer  {
+  return this.RowIndex;
+ }
+  
+  private RowDepth : Integer  ;
+  
+  public getRowDepth (  ) : Integer  {
+  return this.RowDepth;
+ }
+}

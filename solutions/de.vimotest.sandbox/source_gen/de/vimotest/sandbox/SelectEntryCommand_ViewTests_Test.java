@@ -14,15 +14,15 @@ public class SelectEntryCommand_ViewTests_Test {
   private SelectEntryCommand_View sut;
   private SelectEntryCommand_ViewContextProvider contextProvider;
   @Test
-  public void test_Select_Entry_Combobox_Call_given_when_select_entry_C_in_MyComboBox_then_MyComboBox_has_3_entries_and() throws Exception {
+  public void test_Select_Entry_Combobox_Call_given_when_select_entry_C_in_MyElements_then_MyElements_has_3_entries_and() throws Exception {
     this.BuildSut();
-    this.when_select_entry_C_in_MyComboBox();
-    this.then_MyComboBox_has_3_entries_and();
+    this.when_select_entry_C_in_MyElements();
+    this.then_MyElements_has_3_entries_and();
   }
   @Test
-  public void test_Select_Entry_RadioButton_Call_given_when_select_entry_B_in_MyRadioButton_then_() throws Exception {
+  public void test_Select_Entry_RadioButton_Call_given_when_select_entry_B_in_MyOptions_then_() throws Exception {
     this.BuildSut();
-    this.when_select_entry_B_in_MyRadioButton();
+    this.when_select_entry_B_in_MyOptions();
   }
   @BeforeEach
   public void setUp() {
@@ -40,20 +40,20 @@ public class SelectEntryCommand_ViewTests_Test {
 
 
 
-  public void when_select_entry_C_in_MyComboBox() {
-    this.sut.myComboBoxEntrySelected("C");
+  public void when_select_entry_C_in_MyElements() {
+    this.sut.myElementsEntrySelected("C");
   }
-  public void when_select_entry_B_in_MyRadioButton() {
-    this.sut.myRadioButtonEntrySelected("B");
+  public void when_select_entry_B_in_MyOptions() {
+    this.sut.myOptionsEntrySelected("B");
   }
 
 
-  public void then_MyComboBox_has_3_entries_and() {
-    List<String> actualMyComboBoxEntries = this.sut.getMyComboBoxComboBoxEntries();
-    Assert.assertEquals(3, actualMyComboBoxEntries.size());
-    Assert.assertEquals("A", actualMyComboBoxEntries.get(1 - 1));
-    Assert.assertEquals("B", actualMyComboBoxEntries.get(2 - 1));
-    Assert.assertEquals("C", actualMyComboBoxEntries.get(3 - 1));
-    Assert.assertEquals(null, this.sut.getMyComboBoxSelectedEntry());
+  public void then_MyElements_has_3_entries_and() {
+    List<String> actualMyElementsEntries = this.sut.getMyElementsComboBoxComboBoxEntries();
+    Assert.assertEquals(3, actualMyElementsEntries.size());
+    Assert.assertEquals("A", actualMyElementsEntries.get(1 - 1));
+    Assert.assertEquals("B", actualMyElementsEntries.get(2 - 1));
+    Assert.assertEquals("C", actualMyElementsEntries.get(3 - 1));
+    Assert.assertEquals(null, this.sut.getMyElementsComboBoxSelectedEntry());
   }
 }

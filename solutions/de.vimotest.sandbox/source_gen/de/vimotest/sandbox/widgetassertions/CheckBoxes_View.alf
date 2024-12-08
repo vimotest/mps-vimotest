@@ -4,39 +4,39 @@ namespace widgetassertions ;
 
 class CheckBoxes_View {
   
-  private isMyFlagWithLabelChecked : Boolean  ;
+  private isMyFlagWithLabelCheckBoxChecked : Boolean  ;
   
-  public getIsMyFlagWithLabelChecked (  ) : Boolean  {
-  return this.isMyFlagWithLabelChecked;
+  public getIsMyFlagWithLabelCheckBoxChecked (  ) : Boolean  {
+  return this.isMyFlagWithLabelCheckBoxChecked;
  }
   
-  private isMyFlagWithLabelVisibility : Boolean  ;
+  private isMyFlagWithLabelCheckBoxVisibility : Boolean  ;
   
-  public getIsMyFlagWithLabelVisibility (  ) : Boolean  {
-  return this.isMyFlagWithLabelVisibility;
+  public getIsMyFlagWithLabelCheckBoxVisibility (  ) : Boolean  {
+  return this.isMyFlagWithLabelCheckBoxVisibility;
  }
   
-  private isMyFlagWithLabelEnabled : Boolean  ;
+  private isMyFlagWithLabelCheckBoxEnabled : Boolean  ;
   
-  public getIsMyFlagWithLabelEnabled (  ) : Boolean  {
-  return this.isMyFlagWithLabelEnabled;
+  public getIsMyFlagWithLabelCheckBoxEnabled (  ) : Boolean  {
+  return this.isMyFlagWithLabelCheckBoxEnabled;
  }
   
-  private MyFlagWithLabelText : String  ;
+  private MyFlagWithLabelCheckBoxText : String  ;
   
-  public getMyFlagWithLabelText (  ) : String  {
-  return this.MyFlagWithLabelText;
+  public getMyFlagWithLabelCheckBoxText (  ) : String  {
+  return this.MyFlagWithLabelCheckBoxText;
  }
   
-  private isMyFlagNoLabelChecked : Boolean  ;
+  private isMyFlagNoLabelCheckBoxChecked : Boolean  ;
   
-  public getIsMyFlagNoLabelChecked (  ) : Boolean  {
-  return this.isMyFlagNoLabelChecked;
+  public getIsMyFlagNoLabelCheckBoxChecked (  ) : Boolean  {
+  return this.isMyFlagNoLabelCheckBoxChecked;
  }
   
-  private isMyFlagTriStateChecked : Boolean [ 0 .. 1 ]  ;
+  private isMyFlagTriStateCheckBoxChecked : Boolean [ 0 .. 1 ]  ;
   
-  public getIsMyFlagTriStateChecked (  ) : Boolean [ 0 .. 1 ]  {
-  return this.isMyFlagTriStateChecked;
+  public getIsMyFlagTriStateCheckBoxChecked (  ) : Boolean [ 0 .. 1 ]  {
+  return this.isMyFlagTriStateCheckBoxChecked;
  }
 }

@@ -1,0 +1,18 @@
+namespace commands ;
+
+
+
+class SelectRowCommand_ViewMyTableViewElementsRow {
+  
+  private columnCellLabelText : String  ;
+  
+  public getColumnCellLabelText (  ) : String  {
+  return this.columnCellLabelText;
+ }
+  
+  private RowIndex : Integer  ;
+  
+  public getRowIndex (  ) : Integer  {
+  return this.RowIndex;
+ }
+}

@@ -5,17 +5,17 @@
 
 namespace widgetassertions
 {
-  std::string ListViews_ViewMyListOfImagesRow::getMy_ImageImageSource( ) 
+  std::string ListViews_ViewMyListOfImagesRow::getMyInfoImageImageSource( ) 
   {
-    return this->My_ImageImageSource;
+    return this->MyInfoImageImageSource;
   }
-  bool ListViews_ViewMyListOfImagesRow::getIsMy_ImageEnabled( ) 
+  bool ListViews_ViewMyListOfImagesRow::getIsMyInfoImageEnabled( ) 
   {
-    return this->isMy_ImageEnabled;
+    return this->isMyInfoImageEnabled;
   }
-  bool ListViews_ViewMyListOfImagesRow::getIsMy_ImageVisibility( ) 
+  bool ListViews_ViewMyListOfImagesRow::getIsMyInfoImageVisibility( ) 
   {
-    return this->isMy_ImageVisibility;
+    return this->isMyInfoImageVisibility;
   }
   int ListViews_ViewMyListOfImagesRow::getRowIndex( ) 
   {

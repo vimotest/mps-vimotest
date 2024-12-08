@@ -5,13 +5,13 @@
 #include "SelectRowCommand_View.h"
 #include <string>
 #include <vector>
-#include "SelectRowCommand_ViewMyListViewRow.h"
-#include "SelectRowCommand_ViewMyStringRowHandleListViewRow.h"
-#include "SelectRowCommand_ViewMyTableViewRow.h"
-#include "SelectRowCommand_ViewMyStringRowHandleTableViewRow.h"
-#include "SelectRowCommand_ViewMyTreeViewRow.h"
-#include "SelectRowCommand_ViewMyStringRowHandleTreeViewRow.h"
-#include "SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow.h"
+#include "SelectRowCommand_ViewMyListViewElementsRow.h"
+#include "SelectRowCommand_ViewMyStringRowHandleListViewElementsRow.h"
+#include "SelectRowCommand_ViewMyTableViewElementsRow.h"
+#include "SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow.h"
+#include "SelectRowCommand_ViewMyTreeViewElementsRow.h"
+#include "SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow.h"
+#include "SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow.h"
 #include "SelectRowCommand_ViewContextProviderImpl.h"
 
 namespace commands
@@ -22,20 +22,20 @@ namespace commands
     std::shared_ptr<SelectRowCommand_View> sut;
     std::shared_ptr<SelectRowCommand_ViewContextProvider> contextProvider;
     virtual void BuildSut() ;
-    virtual void when_select_row_1_in_MyListView() ;
-    virtual void when_select_row_ROW_B_in_MyStringRowHandleListView() ;
-    virtual void when_select_row_1_in_MyTableView() ;
-    virtual void when_select_row_ROW_B_in_MyStringRowHandleTableView() ;
-    virtual void when_select_row_1_in_MyTreeView() ;
-    virtual void when_select_row_ROW_B_in_MyStringRowHandleTreeView() ;
-    virtual void when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListView() ;
-    virtual void then_MyListView_has_2_rows() ;
-    virtual void then_MyStringRowHandleListView_has_2_rows() ;
-    virtual void then_MyTableView_has_2_rows() ;
-    virtual void then_MyStringRowHandleTableView_has_2_rows() ;
-    virtual void then_MyTreeView_has_2_rows() ;
-    virtual void then_MyStringRowHandleTreeView_has_2_rows() ;
-    virtual void then_MyStringHandleMultiSelectRowListView_has_3_rows() ;
+    virtual void when_select_row_1_in_MyListViewElements() ;
+    virtual void when_select_row_ROW_B_in_MyStringRowHandleListViewElements() ;
+    virtual void when_select_row_1_in_MyTableViewElements() ;
+    virtual void when_select_row_ROW_B_in_MyStringRowHandleTableViewElements() ;
+    virtual void when_select_row_1_in_MyTreeViewElements() ;
+    virtual void when_select_row_ROW_B_in_MyStringRowHandleTreeViewElements() ;
+    virtual void when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListViewElements() ;
+    virtual void then_MyListViewElements_has_2_rows() ;
+    virtual void then_MyStringRowHandleListViewElements_has_2_rows() ;
+    virtual void then_MyTableViewElements_has_2_rows() ;
+    virtual void then_MyStringRowHandleTableViewElements_has_2_rows() ;
+    virtual void then_MyTreeViewElements_has_2_rows() ;
+    virtual void then_MyStringRowHandleTreeViewElements_has_2_rows() ;
+    virtual void then_MyStringHandleMultiSelectRowListViewElements_has_3_rows() ;
     protected:
     void SetUp() override ;
   };
@@ -44,192 +44,192 @@ namespace commands
     this->contextProvider = std::make_shared<SelectRowCommand_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
-  TEST_F(SelectRowCommand_ViewTests,  Select_Row_ListView_Call_given_when_select_row_1_in_MyListView_then_MyListView_has_2_rows) 
+  TEST_F(SelectRowCommand_ViewTests,  Select_Row_ListView_Call_given_when_select_row_1_in_MyListViewElements_then_MyListViewElements_has_2_rows) 
   {
     this->BuildSut();
-    this->when_select_row_1_in_MyListView();
-    this->then_MyListView_has_2_rows();
+    this->when_select_row_1_in_MyListViewElements();
+    this->then_MyListViewElements_has_2_rows();
   }
-  TEST_F(SelectRowCommand_ViewTests,  Select_Row_ListView_Call_string_row_handle_given_when_select_row_ROW_B_in_MyStringRowHandleListView_then_MyStringRowHandleListView_has_2_rows) 
+  TEST_F(SelectRowCommand_ViewTests,  Select_Row_ListView_Call_string_row_handle_given_when_select_row_ROW_B_in_MyStringRowHandleListViewElements_then_MyStringRowHandleListViewElements_has_2_rows) 
   {
     this->BuildSut();
-    this->when_select_row_ROW_B_in_MyStringRowHandleListView();
-    this->then_MyStringRowHandleListView_has_2_rows();
+    this->when_select_row_ROW_B_in_MyStringRowHandleListViewElements();
+    this->then_MyStringRowHandleListViewElements_has_2_rows();
   }
-  TEST_F(SelectRowCommand_ViewTests,  Select_Row_TableView_Call_given_when_select_row_1_in_MyTableView_then_MyTableView_has_2_rows) 
+  TEST_F(SelectRowCommand_ViewTests,  Select_Row_TableView_Call_given_when_select_row_1_in_MyTableViewElements_then_MyTableViewElements_has_2_rows) 
   {
     this->BuildSut();
-    this->when_select_row_1_in_MyTableView();
-    this->then_MyTableView_has_2_rows();
+    this->when_select_row_1_in_MyTableViewElements();
+    this->then_MyTableViewElements_has_2_rows();
   }
-  TEST_F(SelectRowCommand_ViewTests,  Select_Row_TableView_Call_string_row_handle_given_when_select_row_ROW_B_in_MyStringRowHandleTableView_then_MyStringRowHandleTableView_has_2_rows) 
+  TEST_F(SelectRowCommand_ViewTests,  Select_Row_TableView_Call_string_row_handle_given_when_select_row_ROW_B_in_MyStringRowHandleTableViewElements_then_MyStringRowHandleTableViewElements_has_2_rows) 
   {
     this->BuildSut();
-    this->when_select_row_ROW_B_in_MyStringRowHandleTableView();
-    this->then_MyStringRowHandleTableView_has_2_rows();
+    this->when_select_row_ROW_B_in_MyStringRowHandleTableViewElements();
+    this->then_MyStringRowHandleTableViewElements_has_2_rows();
   }
-  TEST_F(SelectRowCommand_ViewTests,  Select_Row_TreeView_Call_given_when_select_row_1_in_MyTreeView_then_MyTreeView_has_2_rows) 
+  TEST_F(SelectRowCommand_ViewTests,  Select_Row_TreeView_Call_given_when_select_row_1_in_MyTreeViewElements_then_MyTreeViewElements_has_2_rows) 
   {
     this->BuildSut();
-    this->when_select_row_1_in_MyTreeView();
-    this->then_MyTreeView_has_2_rows();
+    this->when_select_row_1_in_MyTreeViewElements();
+    this->then_MyTreeViewElements_has_2_rows();
   }
-  TEST_F(SelectRowCommand_ViewTests,  Select_Row_TreeView_Call_string_row_handle_given_when_select_row_ROW_B_in_MyStringRowHandleTreeView_then_MyStringRowHandleTreeView_has_2_rows) 
+  TEST_F(SelectRowCommand_ViewTests,  Select_Row_TreeView_Call_string_row_handle_given_when_select_row_ROW_B_in_MyStringRowHandleTreeViewElements_then_MyStringRowHandleTreeViewElements_has_2_rows) 
   {
     this->BuildSut();
-    this->when_select_row_ROW_B_in_MyStringRowHandleTreeView();
-    this->then_MyStringRowHandleTreeView_has_2_rows();
+    this->when_select_row_ROW_B_in_MyStringRowHandleTreeViewElements();
+    this->then_MyStringRowHandleTreeViewElements_has_2_rows();
   }
-  TEST_F(SelectRowCommand_ViewTests,  Select_Multiple_Rows_given_when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListView_then_MyStringHandleMultiSelectRowListView_has_3_rows) 
+  TEST_F(SelectRowCommand_ViewTests,  Select_Multiple_Rows_given_when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListViewElements_then_MyStringHandleMultiSelectRowListViewElements_has_3_rows) 
   {
     this->BuildSut();
-    this->when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListView();
-    this->then_MyStringHandleMultiSelectRowListView_has_3_rows();
+    this->when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListViewElements();
+    this->then_MyStringHandleMultiSelectRowListViewElements_has_3_rows();
   }
   void SelectRowCommand_ViewTests::BuildSut( ) 
   {
     this->sut = this->contextProvider->BuildSut();
   }
-  void SelectRowCommand_ViewTests::when_select_row_1_in_MyListView( ) 
+  void SelectRowCommand_ViewTests::when_select_row_1_in_MyListViewElements( ) 
   {
-    this->sut->myListViewRowSelected(1);
+    this->sut->myListViewElementsRowSelected(1);
   }
-  void SelectRowCommand_ViewTests::when_select_row_ROW_B_in_MyStringRowHandleListView( ) 
+  void SelectRowCommand_ViewTests::when_select_row_ROW_B_in_MyStringRowHandleListViewElements( ) 
   {
-    this->sut->myStringRowHandleListViewRowSelected(std::string("ROW_B"));
+    this->sut->myStringRowHandleListViewElementsRowSelected(std::string("ROW_B"));
   }
-  void SelectRowCommand_ViewTests::when_select_row_1_in_MyTableView( ) 
+  void SelectRowCommand_ViewTests::when_select_row_1_in_MyTableViewElements( ) 
   {
-    this->sut->myTableViewRowSelected(1);
+    this->sut->myTableViewElementsRowSelected(1);
   }
-  void SelectRowCommand_ViewTests::when_select_row_ROW_B_in_MyStringRowHandleTableView( ) 
+  void SelectRowCommand_ViewTests::when_select_row_ROW_B_in_MyStringRowHandleTableViewElements( ) 
   {
-    this->sut->myStringRowHandleTableViewRowSelected(std::string("ROW_B"));
+    this->sut->myStringRowHandleTableViewElementsRowSelected(std::string("ROW_B"));
   }
-  void SelectRowCommand_ViewTests::when_select_row_1_in_MyTreeView( ) 
+  void SelectRowCommand_ViewTests::when_select_row_1_in_MyTreeViewElements( ) 
   {
-    this->sut->myTreeViewRowSelected(1);
+    this->sut->myTreeViewElementsRowSelected(1);
   }
-  void SelectRowCommand_ViewTests::when_select_row_ROW_B_in_MyStringRowHandleTreeView( ) 
+  void SelectRowCommand_ViewTests::when_select_row_ROW_B_in_MyStringRowHandleTreeViewElements( ) 
   {
-    this->sut->myStringRowHandleTreeViewRowSelected(std::string("ROW_B"));
+    this->sut->myStringRowHandleTreeViewElementsRowSelected(std::string("ROW_B"));
   }
-  void SelectRowCommand_ViewTests::when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListView( ) 
+  void SelectRowCommand_ViewTests::when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListViewElements( ) 
   {
-    this->sut->myStringHandleMultiSelectRowListViewRowSelected({ std::string("ROW_A"), std::string("ROW_C") });
+    this->sut->myStringHandleMultiSelectRowListViewElementsRowSelected({ std::string("ROW_A"), std::string("ROW_C") });
   }
-  void SelectRowCommand_ViewTests::then_MyListView_has_2_rows( ) 
+  void SelectRowCommand_ViewTests::then_MyListViewElements_has_2_rows( ) 
   {
-    auto& actualRows = this->sut->getMyListViewWidgetListRows();
+    auto& actualRows = this->sut->getMyListViewElementsListWidgetListRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
     EXPECT_EQ(0, row0->getRowIndex());
-    EXPECT_EQ(std::string("A"), row0->getHeaderText());
+    EXPECT_EQ(std::string("A"), row0->getHeaderLabelText());
     // }
     // {
     auto& row1 = actualRows.at(1);
     EXPECT_EQ(1, row1->getRowIndex());
-    EXPECT_EQ(std::string("B"), row1->getHeaderText());
+    EXPECT_EQ(std::string("B"), row1->getHeaderLabelText());
     // }
   }
-  void SelectRowCommand_ViewTests::then_MyStringRowHandleListView_has_2_rows( ) 
+  void SelectRowCommand_ViewTests::then_MyStringRowHandleListViewElements_has_2_rows( ) 
   {
-    auto& actualRows = this->sut->getMyStringRowHandleListViewWidgetListRows();
+    auto& actualRows = this->sut->getMyStringRowHandleListViewElementsListWidgetListRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
     EXPECT_EQ(std::string("ROW_A"), row0->getRowHandle());
-    EXPECT_EQ(std::string("A"), row0->getHeaderText());
+    EXPECT_EQ(std::string("A"), row0->getHeaderLabelText());
     // }
     // {
     auto& row1 = actualRows.at(1);
     EXPECT_EQ(std::string("ROW_B"), row1->getRowHandle());
-    EXPECT_EQ(std::string("B"), row1->getHeaderText());
+    EXPECT_EQ(std::string("B"), row1->getHeaderLabelText());
     // }
   }
-  void SelectRowCommand_ViewTests::then_MyTableView_has_2_rows( ) 
+  void SelectRowCommand_ViewTests::then_MyTableViewElements_has_2_rows( ) 
   {
-    auto& actualRows = this->sut->getMyTableViewWidgetTableRows();
+    auto& actualRows = this->sut->getMyTableViewElementsTableWidgetTableRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
     EXPECT_EQ(0, row0->getRowIndex());
-    EXPECT_EQ(std::string("A"), row0->getColumnCellText());
+    EXPECT_EQ(std::string("A"), row0->getColumnCellLabelText());
     // }
     // {
     auto& row1 = actualRows.at(1);
     EXPECT_EQ(1, row1->getRowIndex());
-    EXPECT_EQ(std::string("B"), row1->getColumnCellText());
+    EXPECT_EQ(std::string("B"), row1->getColumnCellLabelText());
     // }
   }
-  void SelectRowCommand_ViewTests::then_MyStringRowHandleTableView_has_2_rows( ) 
+  void SelectRowCommand_ViewTests::then_MyStringRowHandleTableViewElements_has_2_rows( ) 
   {
-    auto& actualRows = this->sut->getMyStringRowHandleTableViewWidgetTableRows();
+    auto& actualRows = this->sut->getMyStringRowHandleTableViewElementsTableWidgetTableRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
     EXPECT_EQ(std::string("ROW_A"), row0->getRowHandle());
-    EXPECT_EQ(std::string("A"), row0->getColumnCellText());
+    EXPECT_EQ(std::string("A"), row0->getColumnCellLabelText());
     // }
     // {
     auto& row1 = actualRows.at(1);
     EXPECT_EQ(std::string("ROW_B"), row1->getRowHandle());
-    EXPECT_EQ(std::string("B"), row1->getColumnCellText());
+    EXPECT_EQ(std::string("B"), row1->getColumnCellLabelText());
     // }
   }
-  void SelectRowCommand_ViewTests::then_MyTreeView_has_2_rows( ) 
+  void SelectRowCommand_ViewTests::then_MyTreeViewElements_has_2_rows( ) 
   {
-    auto& actualRows = this->sut->getMyTreeViewWidgetTreeRows();
+    auto& actualRows = this->sut->getMyTreeViewElementsTreeWidgetTreeRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
     EXPECT_EQ(0, row0->getRowIndex());
     EXPECT_EQ(0, row0->getRowDepth());
-    EXPECT_EQ(std::string("A"), row0->getColumnCellText());
+    EXPECT_EQ(std::string("A"), row0->getColumnCellLabelText());
     // }
     // {
     auto& row1 = actualRows.at(1);
     EXPECT_EQ(1, row1->getRowIndex());
     EXPECT_EQ(0, row1->getRowDepth());
-    EXPECT_EQ(std::string("B"), row1->getColumnCellText());
+    EXPECT_EQ(std::string("B"), row1->getColumnCellLabelText());
     // }
   }
-  void SelectRowCommand_ViewTests::then_MyStringRowHandleTreeView_has_2_rows( ) 
+  void SelectRowCommand_ViewTests::then_MyStringRowHandleTreeViewElements_has_2_rows( ) 
   {
-    auto& actualRows = this->sut->getMyStringRowHandleTreeViewWidgetTreeRows();
+    auto& actualRows = this->sut->getMyStringRowHandleTreeViewElementsTreeWidgetTreeRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
     EXPECT_EQ(std::string("ROW_A"), row0->getRowHandle());
     EXPECT_EQ(0, row0->getRowDepth());
-    EXPECT_EQ(std::string("A"), row0->getColumnCellText());
+    EXPECT_EQ(std::string("A"), row0->getColumnCellLabelText());
     // }
     // {
     auto& row1 = actualRows.at(1);
     EXPECT_EQ(std::string("ROW_B"), row1->getRowHandle());
     EXPECT_EQ(0, row1->getRowDepth());
-    EXPECT_EQ(std::string("B"), row1->getColumnCellText());
+    EXPECT_EQ(std::string("B"), row1->getColumnCellLabelText());
     // }
   }
-  void SelectRowCommand_ViewTests::then_MyStringHandleMultiSelectRowListView_has_3_rows( ) 
+  void SelectRowCommand_ViewTests::then_MyStringHandleMultiSelectRowListViewElements_has_3_rows( ) 
   {
-    auto& actualRows = this->sut->getMyStringHandleMultiSelectRowListViewWidgetListRows();
+    auto& actualRows = this->sut->getMyStringHandleMultiSelectRowListViewElementsListWidgetListRows();
     EXPECT_EQ(3, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
     EXPECT_EQ(std::string("ROW_A"), row0->getRowHandle());
-    EXPECT_EQ(std::string("A"), row0->getHeaderText());
+    EXPECT_EQ(std::string("A"), row0->getHeaderLabelText());
     // }
     // {
     auto& row1 = actualRows.at(1);
     EXPECT_EQ(std::string("ROW_B"), row1->getRowHandle());
-    EXPECT_EQ(std::string("B"), row1->getHeaderText());
+    EXPECT_EQ(std::string("B"), row1->getHeaderLabelText());
     // }
     // {
     auto& row2 = actualRows.at(2);
     EXPECT_EQ(std::string("ROW_C"), row2->getRowHandle());
-    EXPECT_EQ(std::string("C"), row2->getHeaderText());
+    EXPECT_EQ(std::string("C"), row2->getHeaderLabelText());
     // }
   }
 }

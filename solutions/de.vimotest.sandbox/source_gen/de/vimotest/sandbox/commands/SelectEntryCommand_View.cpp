@@ -6,27 +6,27 @@
 
 namespace commands
 {
-  std::vector<std::string> SelectEntryCommand_View::getMyComboBoxComboBoxEntries( ) 
+  std::vector<std::string> SelectEntryCommand_View::getMyElementsComboBoxComboBoxEntries( ) 
   {
-    return this->MyComboBoxComboBoxEntries;
+    return this->MyElementsComboBoxComboBoxEntries;
   }
-  std::string SelectEntryCommand_View::getMyComboBoxSelectedEntry( ) 
+  std::string SelectEntryCommand_View::getMyElementsComboBoxSelectedEntry( ) 
   {
-    return this->MyComboBoxSelectedEntry;
+    return this->MyElementsComboBoxSelectedEntry;
   }
-  std::vector<std::string> SelectEntryCommand_View::getMyRadioButtonRadioButtonChoices( ) 
+  std::vector<std::string> SelectEntryCommand_View::getMyOptionsRadioButtonRadioButtonChoices( ) 
   {
-    return this->MyRadioButtonRadioButtonChoices;
+    return this->MyOptionsRadioButtonRadioButtonChoices;
   }
-  std::string SelectEntryCommand_View::getMyRadioButtonSelectedEntry( ) 
+  std::string SelectEntryCommand_View::getMyOptionsRadioButtonSelectedEntry( ) 
   {
-    return this->MyRadioButtonSelectedEntry;
+    return this->MyOptionsRadioButtonSelectedEntry;
   }
-  void SelectEntryCommand_View::myComboBoxEntrySelected(std::string entryName ) 
+  void SelectEntryCommand_View::myElementsEntrySelected(std::string entryName ) 
   {
     
   }
-  void SelectEntryCommand_View::myRadioButtonEntrySelected(std::string entryName ) 
+  void SelectEntryCommand_View::myOptionsEntrySelected(std::string entryName ) 
   {
     
   }

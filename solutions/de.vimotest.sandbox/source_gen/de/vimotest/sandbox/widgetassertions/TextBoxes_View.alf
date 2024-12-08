@@ -4,27 +4,27 @@ namespace widgetassertions ;
 
 class TextBoxes_View {
   
-  private MyTextBoxText : String  ;
+  private MyValueTextBoxText : String  ;
   
-  public getMyTextBoxText (  ) : String  {
-  return this.MyTextBoxText;
+  public getMyValueTextBoxText (  ) : String  {
+  return this.MyValueTextBoxText;
  }
   
-  private isMyTextBoxVisibility : Boolean  ;
+  private isMyValueTextBoxVisibility : Boolean  ;
   
-  public getIsMyTextBoxVisibility (  ) : Boolean  {
-  return this.isMyTextBoxVisibility;
+  public getIsMyValueTextBoxVisibility (  ) : Boolean  {
+  return this.isMyValueTextBoxVisibility;
  }
   
-  private isMyTextBoxEnabled : Boolean  ;
+  private isMyValueTextBoxEnabled : Boolean  ;
   
-  public getIsMyTextBoxEnabled (  ) : Boolean  {
-  return this.isMyTextBoxEnabled;
+  public getIsMyValueTextBoxEnabled (  ) : Boolean  {
+  return this.isMyValueTextBoxEnabled;
  }
   
-  private MultiLineTextBoxText : String [ * ]  ;
+  private MultiLineTextBoxValueTextBoxText : String [ * ]  ;
   
-  public getMultiLineTextBoxText (  ) : String [ * ]  {
-  return this.MultiLineTextBoxText;
+  public getMultiLineTextBoxValueTextBoxText (  ) : String [ * ]  {
+  return this.MultiLineTextBoxValueTextBoxText;
  }
 }

@@ -3,12 +3,12 @@
 #include "CapitalizedGetterNames_View.h"
 #include <vector>
 #include <memory>
-#include "CapitalizedGetterNames_ViewListViewRow.h"
+#include "CapitalizedGetterNames_ViewMyElementsRow.h"
 #include <string>
 
-bool CapitalizedGetterNames_View::GetIsMyCheckBoxChecked( ) 
+bool CapitalizedGetterNames_View::GetIsMyFlagCheckBoxChecked( ) 
 {
-  return this->isMyCheckBoxChecked;
+  return this->isMyFlagCheckBoxChecked;
 }
 
 bool CapitalizedGetterNames_View::GetMyVisibility( ) 
@@ -16,17 +16,17 @@ bool CapitalizedGetterNames_View::GetMyVisibility( )
   return this->myVisibility;
 }
 
-bool CapitalizedGetterNames_View::GetIsMyCheckBoxEnabled( ) 
+bool CapitalizedGetterNames_View::GetIsMyFlagCheckBoxEnabled( ) 
 {
-  return this->isMyCheckBoxEnabled;
+  return this->isMyFlagCheckBoxEnabled;
 }
 
-std::string CapitalizedGetterNames_View::GetMyCheckBoxText( ) 
+std::string CapitalizedGetterNames_View::GetMyFlagCheckBoxText( ) 
 {
-  return this->MyCheckBoxText;
+  return this->MyFlagCheckBoxText;
 }
 
-std::vector<std::shared_ptr<CapitalizedGetterNames_ViewListViewRow>> CapitalizedGetterNames_View::GetMyRows( ) 
+std::vector<std::shared_ptr<CapitalizedGetterNames_ViewMyElementsRow>> CapitalizedGetterNames_View::GetMyRows( ) 
 {
   return this->myRows;
 }

@@ -9,19 +9,19 @@ namespace widgetassertions
   class CheckBoxes_View
   {
     public:
-    virtual bool getIsMyFlagWithLabelChecked() ;
-    virtual bool getIsMyFlagWithLabelVisibility() ;
-    virtual bool getIsMyFlagWithLabelEnabled() ;
-    virtual std::string getMyFlagWithLabelText() ;
-    virtual bool getIsMyFlagNoLabelChecked() ;
-    virtual std::optional<bool> getIsMyFlagTriStateChecked() ;
+    virtual bool getIsMyFlagWithLabelCheckBoxChecked() ;
+    virtual bool getIsMyFlagWithLabelCheckBoxVisibility() ;
+    virtual bool getIsMyFlagWithLabelCheckBoxEnabled() ;
+    virtual std::string getMyFlagWithLabelCheckBoxText() ;
+    virtual bool getIsMyFlagNoLabelCheckBoxChecked() ;
+    virtual std::optional<bool> getIsMyFlagTriStateCheckBoxChecked() ;
     private:
-    bool isMyFlagWithLabelChecked;
-    bool isMyFlagWithLabelVisibility;
-    bool isMyFlagWithLabelEnabled;
-    std::string MyFlagWithLabelText;
-    bool isMyFlagNoLabelChecked;
-    std::optional<bool> isMyFlagTriStateChecked;
+    bool isMyFlagWithLabelCheckBoxChecked;
+    bool isMyFlagWithLabelCheckBoxVisibility;
+    bool isMyFlagWithLabelCheckBoxEnabled;
+    std::string MyFlagWithLabelCheckBoxText;
+    bool isMyFlagNoLabelCheckBoxChecked;
+    std::optional<bool> isMyFlagTriStateCheckBoxChecked;
   };
 }
 

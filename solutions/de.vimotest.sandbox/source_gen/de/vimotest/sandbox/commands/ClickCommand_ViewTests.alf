@@ -15,9 +15,9 @@ class ClickCommand_ViewTests {
  }
   
   
-  public Click_Button_given_when_click_MyButton_then_ (  ) {
+  public Click_Button_given_when_click_Ok_then_ (  ) {
   this.BuildSut (  );
-   this.when_click_MyButton (  );
+   this.when_click_Ok (  );
  }
   
   
@@ -32,8 +32,8 @@ class ClickCommand_ViewTests {
   // When Helper Definitions
 
   
-  public when_click_MyButton (  ) {
-  this.sut.myButtonClicked (  );
+  public when_click_Ok (  ) {
+  this.sut.okClicked (  );
  }
   
   // Then Helper Definitions

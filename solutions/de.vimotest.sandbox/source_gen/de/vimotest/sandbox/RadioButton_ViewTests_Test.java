@@ -36,6 +36,6 @@ public class RadioButton_ViewTests_Test {
 
 
   public void then_MyChoices_selected_OptionC_() {
-    Assert.assertEquals("OptionC", this.sut.getMyChoicesSelectedEntry());
+    Assert.assertEquals("OptionC", this.sut.getMyChoicesRadioButtonSelectedEntry());
   }
 }

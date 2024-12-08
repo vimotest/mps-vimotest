@@ -6,27 +6,27 @@
 
 namespace commands
 {
-  std::string FillTextCommand_View::getMyTextBoxText( ) 
+  std::string FillTextCommand_View::getMyValueTextBoxText( ) 
   {
-    return this->MyTextBoxText;
+    return this->MyValueTextBoxText;
   }
-  std::vector<std::string> FillTextCommand_View::getMyFreeTextComboBoxComboBoxEntries( ) 
+  std::vector<std::string> FillTextCommand_View::getMyFreeValueComboBoxComboBoxEntries( ) 
   {
-    return this->MyFreeTextComboBoxComboBoxEntries;
+    return this->MyFreeValueComboBoxComboBoxEntries;
   }
-  std::string FillTextCommand_View::getMyFreeTextComboBoxSelectedEntry( ) 
+  std::string FillTextCommand_View::getMyFreeValueComboBoxSelectedEntry( ) 
   {
-    return this->MyFreeTextComboBoxSelectedEntry;
+    return this->MyFreeValueComboBoxSelectedEntry;
   }
-  std::string FillTextCommand_View::getMyFreeTextComboBoxText( ) 
+  std::string FillTextCommand_View::getMyFreeValueComboBoxText( ) 
   {
-    return this->MyFreeTextComboBoxText;
+    return this->MyFreeValueComboBoxText;
   }
-  void FillTextCommand_View::myTextBoxTextFilled(std::string text ) 
+  void FillTextCommand_View::myValueTextFilled(std::string text ) 
   {
     
   }
-  void FillTextCommand_View::myFreeTextComboBoxTextFilled(std::string text ) 
+  void FillTextCommand_View::myFreeValueTextFilled(std::string text ) 
   {
     
   }

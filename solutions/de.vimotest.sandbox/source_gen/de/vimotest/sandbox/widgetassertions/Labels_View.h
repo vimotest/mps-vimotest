@@ -9,27 +9,27 @@ namespace widgetassertions
   class Labels_View
   {
     public:
-    virtual std::string getMyLabelText() ;
-    virtual bool getIsMyLabelEnabled() ;
-    virtual bool getIsMyLabelVisibility() ;
-    virtual std::vector<std::string> getMyMultiLineLabelText() ;
-    virtual std::string getMyLabelWithToolTipText() ;
-    virtual std::string getMyLabelWithToolTipToolTip() ;
-    virtual std::string getMyLabelWithMultiLineToolTipText() ;
-    virtual std::vector<std::string> getMyLabelWithMultiLineToolTipToolTip() ;
-    virtual std::string getMyLabelWithTextColorText() ;
-    virtual std::string getMyLabelWithTextColorTextColor() ;
+    virtual std::string getTestLabelText() ;
+    virtual bool getIsTestLabelEnabled() ;
+    virtual bool getIsTestLabelVisibility() ;
+    virtual std::vector<std::string> getMultiLineLabelText() ;
+    virtual std::string getWithToolTipLabelText() ;
+    virtual std::string getWithToolTipLabelToolTip() ;
+    virtual std::string getWithMultiLineToolTipLabelText() ;
+    virtual std::vector<std::string> getWithMultiLineToolTipLabelToolTip() ;
+    virtual std::string getWithTextColorLabelText() ;
+    virtual std::string getWithTextColorLabelTextColor() ;
     private:
-    std::string MyLabelText;
-    bool isMyLabelEnabled;
-    bool isMyLabelVisibility;
-    std::vector<std::string> MyMultiLineLabelText;
-    std::string MyLabelWithToolTipText;
-    std::string MyLabelWithToolTipToolTip;
-    std::string MyLabelWithMultiLineToolTipText;
-    std::vector<std::string> MyLabelWithMultiLineToolTipToolTip;
-    std::string MyLabelWithTextColorText;
-    std::string MyLabelWithTextColorTextColor;
+    std::string TestLabelText;
+    bool isTestLabelEnabled;
+    bool isTestLabelVisibility;
+    std::vector<std::string> MultiLineLabelText;
+    std::string WithToolTipLabelText;
+    std::string WithToolTipLabelToolTip;
+    std::string WithMultiLineToolTipLabelText;
+    std::vector<std::string> WithMultiLineToolTipLabelToolTip;
+    std::string WithTextColorLabelText;
+    std::string WithTextColorLabelTextColor;
   };
 }
 

@@ -4,13 +4,13 @@ package de.vimotest.sandbox.commands;
 
 
 public class CheckCommand_View {
-  private Boolean isMyCheckBox1Checked;
-  public Boolean getIsMyCheckBox1Checked() {
-    return this.isMyCheckBox1Checked;
+  private Boolean isMyCheckBox1CheckBoxChecked;
+  public Boolean getIsMyCheckBox1CheckBoxChecked() {
+    return this.isMyCheckBox1CheckBoxChecked;
   }
-  private Boolean isMyCheckBox2Checked;
-  public Boolean getIsMyCheckBox2Checked() {
-    return this.isMyCheckBox2Checked;
+  private Boolean isMyCheckBox2CheckBoxChecked;
+  public Boolean getIsMyCheckBox2CheckBoxChecked() {
+    return this.isMyCheckBox2CheckBoxChecked;
   }
   public void myCheckBox1Checked(Boolean isChecked) {
   }

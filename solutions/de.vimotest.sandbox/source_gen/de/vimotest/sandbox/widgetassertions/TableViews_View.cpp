@@ -3,35 +3,35 @@
 #include "TableViews_View.h"
 #include <vector>
 #include <memory>
-#include "TableViews_ViewMyTableViewRow.h"
+#include "TableViews_ViewMyElementsRow.h"
 #include "TableViews_ViewMyStringRowHandlesRow.h"
 #include <string>
 
 namespace widgetassertions
 {
-  std::vector<std::shared_ptr<TableViews_ViewMyTableViewRow>> TableViews_View::getMyTableViewWidgetTableRows( ) 
+  std::vector<std::shared_ptr<TableViews_ViewMyElementsRow>> TableViews_View::getMyElementsTableWidgetTableRows( ) 
   {
-    return this->MyTableViewWidgetTableRows;
+    return this->MyElementsTableWidgetTableRows;
   }
-  int TableViews_View::getMyTableViewSelectedRow( ) 
+  int TableViews_View::getMyElementsTableSelectedRow( ) 
   {
-    return this->MyTableViewSelectedRow;
+    return this->MyElementsTableSelectedRow;
   }
-  bool TableViews_View::getIsMyTableViewVisibility( ) 
+  bool TableViews_View::getIsMyElementsTableVisibility( ) 
   {
-    return this->isMyTableViewVisibility;
+    return this->isMyElementsTableVisibility;
   }
-  bool TableViews_View::getIsMyTableViewEnabled( ) 
+  bool TableViews_View::getIsMyElementsTableEnabled( ) 
   {
-    return this->isMyTableViewEnabled;
+    return this->isMyElementsTableEnabled;
   }
-  std::vector<std::shared_ptr<TableViews_ViewMyStringRowHandlesRow>> TableViews_View::getMyStringRowHandlesWidgetTableRows( ) 
+  std::vector<std::shared_ptr<TableViews_ViewMyStringRowHandlesRow>> TableViews_View::getMyStringRowHandlesTableWidgetTableRows( ) 
   {
-    return this->MyStringRowHandlesWidgetTableRows;
+    return this->MyStringRowHandlesTableWidgetTableRows;
   }
-  std::string TableViews_View::getMyStringRowHandlesSelectedRow( ) 
+  std::string TableViews_View::getMyStringRowHandlesTableSelectedRow( ) 
   {
-    return this->MyStringRowHandlesSelectedRow;
+    return this->MyStringRowHandlesTableSelectedRow;
   }
 }
 

@@ -17,11 +17,11 @@ class SeparateViewController_2_ViewTests {
  }
   
   
-  public MyTest2_given_empty_context_when_LoadView_and_uncheck_MyCheckBox_then_ (  ) {
+  public MyTest2_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_ (  ) {
   this.given_empty_context (  );
    this.BuildSut (  );
    this.when_LoadView (  );
-   this.when_uncheck_MyCheckBox (  );
+   this.when_uncheck_MyFlag (  );
    this.RetrieveViewModel (  );
  }
   
@@ -47,8 +47,8 @@ class SeparateViewController_2_ViewTests {
   this.sutViewController.loadView (  );
  }
   
-  public when_uncheck_MyCheckBox (  ) {
-  this.sutViewController.myCheckBoxChecked ( false );
+  public when_uncheck_MyFlag (  ) {
+  this.sutViewController.myFlagChecked ( false );
  }
   
   // Then Helper Definitions

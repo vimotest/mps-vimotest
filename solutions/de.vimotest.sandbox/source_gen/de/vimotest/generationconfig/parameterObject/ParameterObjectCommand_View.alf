@@ -4,10 +4,10 @@
 
 class ParameterObjectCommand_View {
   
-  private isMyCheckBoxChecked : Boolean  ;
+  private isMyFlagCheckBoxChecked : Boolean  ;
   
-  public getIsMyCheckBoxChecked (  ) : Boolean  {
-  return this.isMyCheckBoxChecked;
+  public getIsMyFlagCheckBoxChecked (  ) : Boolean  {
+  return this.isMyFlagCheckBoxChecked;
  }
   
   public datatype LoadViewParams {
@@ -26,5 +26,5 @@ class ParameterObjectCommand_View {
     public isChecked : Boolean  ;
   }
   
-  public myCheckBoxChecked (   in parameters : CheckParams  ) {     }
+  public myFlagChecked (   in parameters : CheckParams  ) {     }
 }

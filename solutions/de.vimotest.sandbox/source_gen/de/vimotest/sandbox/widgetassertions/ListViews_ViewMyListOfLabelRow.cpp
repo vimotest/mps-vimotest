@@ -5,17 +5,17 @@
 
 namespace widgetassertions
 {
-  std::string ListViews_ViewMyListOfLabelRow::getMy_TextText( ) 
+  std::string ListViews_ViewMyListOfLabelRow::getMyValueLabelText( ) 
   {
-    return this->My_TextText;
+    return this->MyValueLabelText;
   }
-  bool ListViews_ViewMyListOfLabelRow::getIsMy_TextEnabled( ) 
+  bool ListViews_ViewMyListOfLabelRow::getIsMyValueLabelEnabled( ) 
   {
-    return this->isMy_TextEnabled;
+    return this->isMyValueLabelEnabled;
   }
-  bool ListViews_ViewMyListOfLabelRow::getIsMy_TextVisibility( ) 
+  bool ListViews_ViewMyListOfLabelRow::getIsMyValueLabelVisibility( ) 
   {
-    return this->isMy_TextVisibility;
+    return this->isMyValueLabelVisibility;
   }
   int ListViews_ViewMyListOfLabelRow::getRowIndex( ) 
   {

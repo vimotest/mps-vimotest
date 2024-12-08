@@ -4,27 +4,27 @@ namespace widgetassertions ;
 
 class Images_View {
   
-  private MyImageImageSource : String  ;
+  private StatusImageImageSource : String  ;
   
-  public getMyImageImageSource (  ) : String  {
-  return this.MyImageImageSource;
+  public getStatusImageImageSource (  ) : String  {
+  return this.StatusImageImageSource;
  }
   
-  private isMyImageEnabled : Boolean  ;
+  private isStatusImageEnabled : Boolean  ;
   
-  public getIsMyImageEnabled (  ) : Boolean  {
-  return this.isMyImageEnabled;
+  public getIsStatusImageEnabled (  ) : Boolean  {
+  return this.isStatusImageEnabled;
  }
   
-  private isMyImageVisibility : Boolean  ;
+  private isStatusImageVisibility : Boolean  ;
   
-  public getIsMyImageVisibility (  ) : Boolean  {
-  return this.isMyImageVisibility;
+  public getIsStatusImageVisibility (  ) : Boolean  {
+  return this.isStatusImageVisibility;
  }
   
-  private MyUpDownImageImageSource : String  ;
+  private UpOrDownImageImageSource : String  ;
   
-  public getMyUpDownImageImageSource (  ) : String  {
-  return this.MyUpDownImageImageSource;
+  public getUpOrDownImageImageSource (  ) : String  {
+  return this.UpOrDownImageImageSource;
  }
 }

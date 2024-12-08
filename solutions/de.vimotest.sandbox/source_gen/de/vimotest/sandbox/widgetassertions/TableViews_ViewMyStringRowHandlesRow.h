@@ -8,10 +8,10 @@ namespace widgetassertions
   class TableViews_ViewMyStringRowHandlesRow
   {
     public:
-    virtual std::string getValuesText() ;
+    virtual std::string getValuesLabelText() ;
     virtual std::string getRowHandle() ;
     private:
-    std::string ValuesText;
+    std::string ValuesLabelText;
     std::string RowHandle;
   };
 }

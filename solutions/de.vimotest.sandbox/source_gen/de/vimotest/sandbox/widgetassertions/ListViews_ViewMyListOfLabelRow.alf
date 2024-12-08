@@ -4,22 +4,22 @@ namespace widgetassertions ;
 
 class ListViews_ViewMyListOfLabelRow {
   
-  private My_TextText : String  ;
+  private MyValueLabelText : String  ;
   
-  public getMy_TextText (  ) : String  {
-  return this.My_TextText;
+  public getMyValueLabelText (  ) : String  {
+  return this.MyValueLabelText;
  }
   
-  private isMy_TextEnabled : Boolean  ;
+  private isMyValueLabelEnabled : Boolean  ;
   
-  public getIsMy_TextEnabled (  ) : Boolean  {
-  return this.isMy_TextEnabled;
+  public getIsMyValueLabelEnabled (  ) : Boolean  {
+  return this.isMyValueLabelEnabled;
  }
   
-  private isMy_TextVisibility : Boolean  ;
+  private isMyValueLabelVisibility : Boolean  ;
   
-  public getIsMy_TextVisibility (  ) : Boolean  {
-  return this.isMy_TextVisibility;
+  public getIsMyValueLabelVisibility (  ) : Boolean  {
+  return this.isMyValueLabelVisibility;
  }
   
   private RowIndex : Integer  ;

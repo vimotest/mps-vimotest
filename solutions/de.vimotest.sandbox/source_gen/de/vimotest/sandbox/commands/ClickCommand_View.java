@@ -4,6 +4,6 @@ package de.vimotest.sandbox.commands;
 
 
 public class ClickCommand_View {
-  public void myButtonClicked() {
+  public void okClicked() {
   }
 }

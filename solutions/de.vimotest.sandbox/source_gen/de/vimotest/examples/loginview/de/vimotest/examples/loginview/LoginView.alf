@@ -4,40 +4,40 @@ namespace de:: vimotest:: examples:: loginview ;
 
 class LoginView {
   
-  private UsernameText : String  ;
+  private UsernameTextBoxText : String  ;
   
-  public getUsernameText (  ) : String  {
-  return this.UsernameText;
+  public getUsernameTextBoxText (  ) : String  {
+  return this.UsernameTextBoxText;
  }
   
-  private PasswordText : String  ;
+  private PasswordTextBoxText : String  ;
   
-  public getPasswordText (  ) : String  {
-  return this.PasswordText;
+  public getPasswordTextBoxText (  ) : String  {
+  return this.PasswordTextBoxText;
  }
   
-  private isShowPasswordChecked : Boolean  ;
+  private isShowPasswordCheckBoxChecked : Boolean  ;
   
-  public getIsShowPasswordChecked (  ) : Boolean  {
-  return this.isShowPasswordChecked;
+  public getIsShowPasswordCheckBoxChecked (  ) : Boolean  {
+  return this.isShowPasswordCheckBoxChecked;
  }
   
-  private isLoginEnabled : Boolean  ;
+  private isLoginButtonEnabled : Boolean  ;
   
-  public getIsLoginEnabled (  ) : Boolean  {
-  return this.isLoginEnabled;
+  public getIsLoginButtonEnabled (  ) : Boolean  {
+  return this.isLoginButtonEnabled;
  }
   
-  private ErrorTextText : String  ;
+  private ErrorLabelText : String  ;
   
-  public getErrorTextText (  ) : String  {
-  return this.ErrorTextText;
+  public getErrorLabelText (  ) : String  {
+  return this.ErrorLabelText;
  }
   
-  private isErrorTextVisibility : Boolean  ;
+  private isErrorLabelVisibility : Boolean  ;
   
-  public getIsErrorTextVisibility (  ) : Boolean  {
-  return this.isErrorTextVisibility;
+  public getIsErrorLabelVisibility (  ) : Boolean  {
+  return this.isErrorLabelVisibility;
  }
   
   public loadView (  ) {     }

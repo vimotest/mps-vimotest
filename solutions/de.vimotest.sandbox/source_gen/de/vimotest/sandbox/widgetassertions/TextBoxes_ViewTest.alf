@@ -15,16 +15,16 @@ class TextBoxes_ViewTest {
  }
   
   
-  public My_SingleLine_Scenario_given_empty_context_when_then_MyTextBox_shows_text_Some_entered_Input_and_is_enabled_and_is_visible (  ) {
+  public My_SingleLine_Scenario_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible (  ) {
   this.given_empty_context (  );
    this.BuildSut (  );
-   this.then_MyTextBox_shows_text_Some_entered_Input_and_is_enabled_and_is_visible (  );
+   this.then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible (  );
  }
   
-  public My_MultiLine_Scenario_given_empty_context_when_then_MultiLineTextBox_shows_text_Expected1_Expected2_ (  ) {
+  public My_MultiLine_Scenario_given_empty_context_when_then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_ (  ) {
   this.given_empty_context_1 (  );
    this.BuildSut (  );
-   this.then_MultiLineTextBox_shows_text_Expected1_Expected2_ (  );
+   this.then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_ (  );
  }
   
   
@@ -46,16 +46,16 @@ class TextBoxes_ViewTest {
   // Then Helper Definitions
 
   
-  public then_MyTextBox_shows_text_Some_entered_Input_and_is_enabled_and_is_visible (  ) {
-  AssertEqual ( "Some entered Input", this.sut.getMyTextBoxText (  ) );
-   AssertTrue ( this.sut.getIsMyTextBoxEnabled (  ) );
-   AssertTrue ( this.sut.getIsMyTextBoxVisibility (  ) );
+  public then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible (  ) {
+  AssertEqual ( "Some entered Input", this.sut.getMyValueTextBoxText (  ) );
+   AssertTrue ( this.sut.getIsMyValueTextBoxEnabled (  ) );
+   AssertTrue ( this.sut.getIsMyValueTextBoxVisibility (  ) );
  }
   
-  public then_MultiLineTextBox_shows_text_Expected1_Expected2_ (  ) {
-  let actualMultiLineTextBoxLines: String [] = this.sut.getMultiLineTextBoxText (  );
-   AssertEqual ( 2, actualMultiLineTextBoxLines->size (  ) );
-   AssertEqual ( "Expected1", actualMultiLineTextBoxLines[ 1 ] ?? "" );
-   AssertEqual ( "Expected2", actualMultiLineTextBoxLines[ 2 ] ?? "" );
+  public then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_ (  ) {
+  let actualMultiLineTextBoxValueLines: String [] = this.sut.getMultiLineTextBoxValueTextBoxText (  );
+   AssertEqual ( 2, actualMultiLineTextBoxValueLines->size (  ) );
+   AssertEqual ( "Expected1", actualMultiLineTextBoxValueLines[ 1 ] ?? "" );
+   AssertEqual ( "Expected2", actualMultiLineTextBoxValueLines[ 2 ] ?? "" );
  }
 }

@@ -4,20 +4,20 @@ package de.vimotest.sandbox.widgetassertions;
 
 
 public class Images_View {
-  private String MyImageImageSource;
-  public String getMyImageImageSource() {
-    return this.MyImageImageSource;
+  private String StatusImageImageSource;
+  public String getStatusImageImageSource() {
+    return this.StatusImageImageSource;
   }
-  private Boolean isMyImageEnabled;
-  public Boolean getIsMyImageEnabled() {
-    return this.isMyImageEnabled;
+  private Boolean isStatusImageEnabled;
+  public Boolean getIsStatusImageEnabled() {
+    return this.isStatusImageEnabled;
   }
-  private Boolean isMyImageVisibility;
-  public Boolean getIsMyImageVisibility() {
-    return this.isMyImageVisibility;
+  private Boolean isStatusImageVisibility;
+  public Boolean getIsStatusImageVisibility() {
+    return this.isStatusImageVisibility;
   }
-  private String MyUpDownImageImageSource;
-  public String getMyUpDownImageImageSource() {
-    return this.MyUpDownImageImageSource;
+  private String UpOrDownImageImageSource;
+  public String getUpOrDownImageImageSource() {
+    return this.UpOrDownImageImageSource;
   }
 }

@@ -15,7 +15,7 @@ namespace widgetassertions
     std::shared_ptr<Buttons_ViewContextProvider> contextProvider;
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
-    virtual void then_OkButton_is_enabled_and_is_visible_and_shows_text_Test_() ;
+    virtual void then_Ok_is_enabled_and_is_visible_and_shows_text_Test_() ;
     protected:
     void SetUp() override ;
   };
@@ -24,11 +24,11 @@ namespace widgetassertions
     this->contextProvider = std::make_shared<Buttons_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
-  TEST_F(Buttons_ViewTests,  My_Scenario_given_empty_context_when_then_OkButton_is_enabled_and_is_visible_and_shows_text_Test_) 
+  TEST_F(Buttons_ViewTests,  My_Scenario_given_empty_context_when_then_Ok_is_enabled_and_is_visible_and_shows_text_Test_) 
   {
     this->given_empty_context();
     this->BuildSut();
-    this->then_OkButton_is_enabled_and_is_visible_and_shows_text_Test_();
+    this->then_Ok_is_enabled_and_is_visible_and_shows_text_Test_();
   }
   void Buttons_ViewTests::BuildSut( ) 
   {
@@ -38,7 +38,7 @@ namespace widgetassertions
   {
     
   }
-  void Buttons_ViewTests::then_OkButton_is_enabled_and_is_visible_and_shows_text_Test_( ) 
+  void Buttons_ViewTests::then_Ok_is_enabled_and_is_visible_and_shows_text_Test_( ) 
   {
     EXPECT_TRUE(this->sut->getIsOkButtonEnabled());
     EXPECT_TRUE(this->sut->getIsOkButtonVisibility());

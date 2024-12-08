@@ -4,9 +4,9 @@
 
 class MyViewModel {
   
-  private isMyCheckBoxChecked : Boolean  ;
+  private isMyFlagCheckBoxChecked : Boolean  ;
   
-  public getIsMyCheckBoxChecked (  ) : Boolean  {
-  return this.isMyCheckBoxChecked;
+  public getIsMyFlagCheckBoxChecked (  ) : Boolean  {
+  return this.isMyFlagCheckBoxChecked;
  }
 }

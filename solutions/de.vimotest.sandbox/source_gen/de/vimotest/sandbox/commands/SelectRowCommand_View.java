@@ -6,84 +6,84 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class SelectRowCommand_View {
-  private List<SelectRowCommand_ViewMyListViewRow> MyListViewWidgetListRows = new LinkedList<>();
-  public List<SelectRowCommand_ViewMyListViewRow> getMyListViewWidgetListRows() {
-    return this.MyListViewWidgetListRows;
+  private List<SelectRowCommand_ViewMyListViewElementsRow> MyListViewElementsListWidgetListRows = new LinkedList<>();
+  public List<SelectRowCommand_ViewMyListViewElementsRow> getMyListViewElementsListWidgetListRows() {
+    return this.MyListViewElementsListWidgetListRows;
   }
-  private Integer MyListViewSelectedRow;
-  public Integer getMyListViewSelectedRow() {
-    return this.MyListViewSelectedRow;
+  private Integer MyListViewElementsListSelectedRow;
+  public Integer getMyListViewElementsListSelectedRow() {
+    return this.MyListViewElementsListSelectedRow;
   }
-  private List<SelectRowCommand_ViewMyStringRowHandleListViewRow> MyStringRowHandleListViewWidgetListRows = new LinkedList<>();
-  public List<SelectRowCommand_ViewMyStringRowHandleListViewRow> getMyStringRowHandleListViewWidgetListRows() {
-    return this.MyStringRowHandleListViewWidgetListRows;
+  private List<SelectRowCommand_ViewMyStringRowHandleListViewElementsRow> MyStringRowHandleListViewElementsListWidgetListRows = new LinkedList<>();
+  public List<SelectRowCommand_ViewMyStringRowHandleListViewElementsRow> getMyStringRowHandleListViewElementsListWidgetListRows() {
+    return this.MyStringRowHandleListViewElementsListWidgetListRows;
   }
-  private String MyStringRowHandleListViewSelectedRow;
-  public String getMyStringRowHandleListViewSelectedRow() {
-    return this.MyStringRowHandleListViewSelectedRow;
+  private String MyStringRowHandleListViewElementsListSelectedRow;
+  public String getMyStringRowHandleListViewElementsListSelectedRow() {
+    return this.MyStringRowHandleListViewElementsListSelectedRow;
   }
-  private List<SelectRowCommand_ViewMyTableViewRow> MyTableViewWidgetTableRows = new LinkedList<>();
-  public List<SelectRowCommand_ViewMyTableViewRow> getMyTableViewWidgetTableRows() {
-    return this.MyTableViewWidgetTableRows;
+  private List<SelectRowCommand_ViewMyTableViewElementsRow> MyTableViewElementsTableWidgetTableRows = new LinkedList<>();
+  public List<SelectRowCommand_ViewMyTableViewElementsRow> getMyTableViewElementsTableWidgetTableRows() {
+    return this.MyTableViewElementsTableWidgetTableRows;
   }
-  private Integer MyTableViewSelectedRow;
-  public Integer getMyTableViewSelectedRow() {
-    return this.MyTableViewSelectedRow;
+  private Integer MyTableViewElementsTableSelectedRow;
+  public Integer getMyTableViewElementsTableSelectedRow() {
+    return this.MyTableViewElementsTableSelectedRow;
   }
-  private List<SelectRowCommand_ViewMyStringRowHandleTableViewRow> MyStringRowHandleTableViewWidgetTableRows = new LinkedList<>();
-  public List<SelectRowCommand_ViewMyStringRowHandleTableViewRow> getMyStringRowHandleTableViewWidgetTableRows() {
-    return this.MyStringRowHandleTableViewWidgetTableRows;
+  private List<SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow> MyStringRowHandleTableViewElementsTableWidgetTableRows = new LinkedList<>();
+  public List<SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow> getMyStringRowHandleTableViewElementsTableWidgetTableRows() {
+    return this.MyStringRowHandleTableViewElementsTableWidgetTableRows;
   }
-  private String MyStringRowHandleTableViewSelectedRow;
-  public String getMyStringRowHandleTableViewSelectedRow() {
-    return this.MyStringRowHandleTableViewSelectedRow;
+  private String MyStringRowHandleTableViewElementsTableSelectedRow;
+  public String getMyStringRowHandleTableViewElementsTableSelectedRow() {
+    return this.MyStringRowHandleTableViewElementsTableSelectedRow;
   }
-  private List<SelectRowCommand_ViewMyTreeViewRow> MyTreeViewWidgetTreeRows = new LinkedList<>();
-  public List<SelectRowCommand_ViewMyTreeViewRow> getMyTreeViewWidgetTreeRows() {
-    return this.MyTreeViewWidgetTreeRows;
+  private List<SelectRowCommand_ViewMyTreeViewElementsRow> MyTreeViewElementsTreeWidgetTreeRows = new LinkedList<>();
+  public List<SelectRowCommand_ViewMyTreeViewElementsRow> getMyTreeViewElementsTreeWidgetTreeRows() {
+    return this.MyTreeViewElementsTreeWidgetTreeRows;
   }
-  private Integer MyTreeViewSelectedRow;
-  public Integer getMyTreeViewSelectedRow() {
-    return this.MyTreeViewSelectedRow;
+  private Integer MyTreeViewElementsTreeSelectedRow;
+  public Integer getMyTreeViewElementsTreeSelectedRow() {
+    return this.MyTreeViewElementsTreeSelectedRow;
   }
-  private List<SelectRowCommand_ViewMyStringRowHandleTreeViewRow> MyStringRowHandleTreeViewWidgetTreeRows = new LinkedList<>();
-  public List<SelectRowCommand_ViewMyStringRowHandleTreeViewRow> getMyStringRowHandleTreeViewWidgetTreeRows() {
-    return this.MyStringRowHandleTreeViewWidgetTreeRows;
+  private List<SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow> MyStringRowHandleTreeViewElementsTreeWidgetTreeRows = new LinkedList<>();
+  public List<SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow> getMyStringRowHandleTreeViewElementsTreeWidgetTreeRows() {
+    return this.MyStringRowHandleTreeViewElementsTreeWidgetTreeRows;
   }
-  private String MyStringRowHandleTreeViewSelectedRow;
-  public String getMyStringRowHandleTreeViewSelectedRow() {
-    return this.MyStringRowHandleTreeViewSelectedRow;
+  private String MyStringRowHandleTreeViewElementsTreeSelectedRow;
+  public String getMyStringRowHandleTreeViewElementsTreeSelectedRow() {
+    return this.MyStringRowHandleTreeViewElementsTreeSelectedRow;
   }
-  private List<SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewRow> MyIndexBasedMultiSelectRowListViewWidgetListRows = new LinkedList<>();
-  public List<SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewRow> getMyIndexBasedMultiSelectRowListViewWidgetListRows() {
-    return this.MyIndexBasedMultiSelectRowListViewWidgetListRows;
+  private List<SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewElementsRow> MyIndexBasedMultiSelectRowListViewElementsListWidgetListRows = new LinkedList<>();
+  public List<SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewElementsRow> getMyIndexBasedMultiSelectRowListViewElementsListWidgetListRows() {
+    return this.MyIndexBasedMultiSelectRowListViewElementsListWidgetListRows;
   }
-  private List<Integer> MyIndexBasedMultiSelectRowListViewSelectedRows = new LinkedList<>();
-  public List<Integer> getMyIndexBasedMultiSelectRowListViewSelectedRows() {
-    return this.MyIndexBasedMultiSelectRowListViewSelectedRows;
+  private List<Integer> MyIndexBasedMultiSelectRowListViewElementsListSelectedRows = new LinkedList<>();
+  public List<Integer> getMyIndexBasedMultiSelectRowListViewElementsListSelectedRows() {
+    return this.MyIndexBasedMultiSelectRowListViewElementsListSelectedRows;
   }
-  private List<SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow> MyStringHandleMultiSelectRowListViewWidgetListRows = new LinkedList<>();
-  public List<SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow> getMyStringHandleMultiSelectRowListViewWidgetListRows() {
-    return this.MyStringHandleMultiSelectRowListViewWidgetListRows;
+  private List<SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow> MyStringHandleMultiSelectRowListViewElementsListWidgetListRows = new LinkedList<>();
+  public List<SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow> getMyStringHandleMultiSelectRowListViewElementsListWidgetListRows() {
+    return this.MyStringHandleMultiSelectRowListViewElementsListWidgetListRows;
   }
-  private List<String> MyStringHandleMultiSelectRowListViewSelectedRows = new LinkedList<>();
-  public List<String> getMyStringHandleMultiSelectRowListViewSelectedRows() {
-    return this.MyStringHandleMultiSelectRowListViewSelectedRows;
+  private List<String> MyStringHandleMultiSelectRowListViewElementsListSelectedRows = new LinkedList<>();
+  public List<String> getMyStringHandleMultiSelectRowListViewElementsListSelectedRows() {
+    return this.MyStringHandleMultiSelectRowListViewElementsListSelectedRows;
   }
-  public void myListViewRowSelected(Integer rowIndex) {
+  public void myListViewElementsRowSelected(Integer rowIndex) {
   }
-  public void myStringRowHandleListViewRowSelected(String rowHandle) {
+  public void myStringRowHandleListViewElementsRowSelected(String rowHandle) {
   }
-  public void myTableViewRowSelected(Integer rowIndex) {
+  public void myTableViewElementsRowSelected(Integer rowIndex) {
   }
-  public void myStringRowHandleTableViewRowSelected(String rowHandle) {
+  public void myStringRowHandleTableViewElementsRowSelected(String rowHandle) {
   }
-  public void myTreeViewRowSelected(Integer rowIndex) {
+  public void myTreeViewElementsRowSelected(Integer rowIndex) {
   }
-  public void myStringRowHandleTreeViewRowSelected(String rowHandle) {
+  public void myStringRowHandleTreeViewElementsRowSelected(String rowHandle) {
   }
-  public void myIndexBasedMultiSelectRowListViewRowSelected(List<Integer> rowIndices) {
+  public void myIndexBasedMultiSelectRowListViewElementsRowSelected(List<Integer> rowIndices) {
   }
-  public void myStringHandleMultiSelectRowListViewRowSelected(List<String> rowHandles) {
+  public void myStringHandleMultiSelectRowListViewElementsRowSelected(List<String> rowHandles) {
   }
 }

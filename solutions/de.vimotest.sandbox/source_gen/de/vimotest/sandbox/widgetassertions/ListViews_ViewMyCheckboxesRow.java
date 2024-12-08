@@ -4,13 +4,13 @@ package de.vimotest.sandbox.widgetassertions;
 
 
 public class ListViews_ViewMyCheckboxesRow {
-  private Boolean isHeaderChecked;
-  public Boolean getIsHeaderChecked() {
-    return this.isHeaderChecked;
+  private Boolean isHeaderCheckBoxChecked;
+  public Boolean getIsHeaderCheckBoxChecked() {
+    return this.isHeaderCheckBoxChecked;
   }
-  private String HeaderText;
-  public String getHeaderText() {
-    return this.HeaderText;
+  private String HeaderCheckBoxText;
+  public String getHeaderCheckBoxText() {
+    return this.HeaderCheckBoxText;
   }
   private Integer RowIndex;
   public Integer getRowIndex() {

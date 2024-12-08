@@ -14,33 +14,33 @@ public class Labels_ViewTest_Test {
   private Labels_View sut;
   private Labels_ViewContextProvider contextProvider;
   @Test
-  public void test_Single_Line_Label_given_empty_context_when_then_MyLabel_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible() throws Exception {
+  public void test_Single_Line_Label_given_empty_context_when_then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible() throws Exception {
     this.given_empty_context();
     this.BuildSut();
-    this.then_MyLabel_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible();
+    this.then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible();
   }
   @Test
-  public void test_Multi_Line_Label_given_empty_context_when_then_MyMultiLineLabel_shows_text_Expected_Line_1_Expected_Line_2_() throws Exception {
+  public void test_Multi_Line_Label_given_empty_context_when_then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_() throws Exception {
     this.given_empty_context_1();
     this.BuildSut();
-    this.then_MyMultiLineLabel_shows_text_Expected_Line_1_Expected_Line_2_();
+    this.then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_();
   }
   @Test
-  public void test_ToolTip_Label_given_empty_context_when_then_MyLabelWithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_() throws Exception {
+  public void test_ToolTip_Label_given_empty_context_when_then_WithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_() throws Exception {
     this.given_empty_context_2();
     this.BuildSut();
-    this.then_MyLabelWithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_();
+    this.then_WithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_();
   }
   @Test
-  public void test_MultiLine_ToolTip_Label_given_empty_context_when_then_MyLabelWithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_() throws Exception {
+  public void test_MultiLine_ToolTip_Label_given_empty_context_when_then_WithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_() throws Exception {
     this.given_empty_context_3();
     this.BuildSut();
-    this.then_MyLabelWithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_();
+    this.then_WithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_();
   }
   @Test
-  public void test_TextColor_Label_given_when_then_MyLabelWithTextColor_shows_text_Info_and_has_text_color_blue_() throws Exception {
+  public void test_TextColor_Label_given_when_then_WithTextColor_shows_text_Info_and_has_text_color_blue_() throws Exception {
     this.BuildSut();
-    this.then_MyLabelWithTextColor_shows_text_Info_and_has_text_color_blue_();
+    this.then_WithTextColor_shows_text_Info_and_has_text_color_blue_();
   }
   @BeforeEach
   public void setUp() {
@@ -68,30 +68,30 @@ public class Labels_ViewTest_Test {
 
 
 
-  public void then_MyLabel_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible() {
-    Assert.assertEquals("My Expectation Text", this.sut.getMyLabelText());
-    Assert.assertTrue(this.sut.getIsMyLabelEnabled());
-    Assert.assertTrue(this.sut.getIsMyLabelVisibility());
+  public void then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible() {
+    Assert.assertEquals("My Expectation Text", this.sut.getTestLabelText());
+    Assert.assertTrue(this.sut.getIsTestLabelEnabled());
+    Assert.assertTrue(this.sut.getIsTestLabelVisibility());
   }
-  public void then_MyMultiLineLabel_shows_text_Expected_Line_1_Expected_Line_2_() {
-    List<String> actualMyMultiLineLabelLines = this.sut.getMyMultiLineLabelText();
-    Assert.assertEquals(2, actualMyMultiLineLabelLines.size());
-    Assert.assertEquals("Expected Line 1", actualMyMultiLineLabelLines.get(1 - 1));
-    Assert.assertEquals("Expected Line 2", actualMyMultiLineLabelLines.get(2 - 1));
+  public void then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_() {
+    List<String> actualMultiLineLines = this.sut.getMultiLineLabelText();
+    Assert.assertEquals(2, actualMultiLineLines.size());
+    Assert.assertEquals("Expected Line 1", actualMultiLineLines.get(1 - 1));
+    Assert.assertEquals("Expected Line 2", actualMultiLineLines.get(2 - 1));
   }
-  public void then_MyLabelWithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_() {
-    Assert.assertEquals("Info", this.sut.getMyLabelWithToolTipText());
-    Assert.assertEquals("My Expected Tooltip", this.sut.getMyLabelWithToolTipToolTip());
+  public void then_WithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_() {
+    Assert.assertEquals("Info", this.sut.getWithToolTipLabelText());
+    Assert.assertEquals("My Expected Tooltip", this.sut.getWithToolTipLabelToolTip());
   }
-  public void then_MyLabelWithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_() {
-    Assert.assertEquals("Info", this.sut.getMyLabelWithMultiLineToolTipText());
-    List<String> actualMyLabelWithMultiLineToolTipLines = this.sut.getMyLabelWithMultiLineToolTipToolTip();
-    Assert.assertEquals(2, actualMyLabelWithMultiLineToolTipLines.size());
-    Assert.assertEquals("Line1", actualMyLabelWithMultiLineToolTipLines.get(1 - 1));
-    Assert.assertEquals("Line2", actualMyLabelWithMultiLineToolTipLines.get(2 - 1));
+  public void then_WithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_() {
+    Assert.assertEquals("Info", this.sut.getWithMultiLineToolTipLabelText());
+    List<String> actualWithMultiLineToolTipLines = this.sut.getWithMultiLineToolTipLabelToolTip();
+    Assert.assertEquals(2, actualWithMultiLineToolTipLines.size());
+    Assert.assertEquals("Line1", actualWithMultiLineToolTipLines.get(1 - 1));
+    Assert.assertEquals("Line2", actualWithMultiLineToolTipLines.get(2 - 1));
   }
-  public void then_MyLabelWithTextColor_shows_text_Info_and_has_text_color_blue_() {
-    Assert.assertEquals("Info", this.sut.getMyLabelWithTextColorText());
-    Assert.assertEquals("blue", this.sut.getMyLabelWithTextColorTextColor());
+  public void then_WithTextColor_shows_text_Info_and_has_text_color_blue_() {
+    Assert.assertEquals("Info", this.sut.getWithTextColorLabelText());
+    Assert.assertEquals("blue", this.sut.getWithTextColorLabelTextColor());
   }
 }

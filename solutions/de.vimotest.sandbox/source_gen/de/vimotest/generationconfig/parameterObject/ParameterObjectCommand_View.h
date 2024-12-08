@@ -6,7 +6,7 @@
 class ParameterObjectCommand_View
 {
   public:
-  virtual bool getIsMyCheckBoxChecked() ;
+  virtual bool getIsMyFlagCheckBoxChecked() ;
   struct LoadViewParams
   {
     std::string Value1;
@@ -18,7 +18,7 @@ class ParameterObjectCommand_View
   {
     bool isChecked;
   };
-  virtual void myCheckBoxChecked(CheckParams parameters) ;
+  virtual void myFlagChecked(CheckParams parameters) ;
   private:
-  bool isMyCheckBoxChecked;
+  bool isMyFlagCheckBoxChecked;
 };

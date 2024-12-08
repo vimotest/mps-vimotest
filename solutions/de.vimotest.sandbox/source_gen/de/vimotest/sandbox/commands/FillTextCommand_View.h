@@ -9,17 +9,17 @@ namespace commands
   class FillTextCommand_View
   {
     public:
-    virtual std::string getMyTextBoxText() ;
-    virtual std::vector<std::string> getMyFreeTextComboBoxComboBoxEntries() ;
-    virtual std::string getMyFreeTextComboBoxSelectedEntry() ;
-    virtual std::string getMyFreeTextComboBoxText() ;
-    virtual void myTextBoxTextFilled(std::string text) ;
-    virtual void myFreeTextComboBoxTextFilled(std::string text) ;
+    virtual std::string getMyValueTextBoxText() ;
+    virtual std::vector<std::string> getMyFreeValueComboBoxComboBoxEntries() ;
+    virtual std::string getMyFreeValueComboBoxSelectedEntry() ;
+    virtual std::string getMyFreeValueComboBoxText() ;
+    virtual void myValueTextFilled(std::string text) ;
+    virtual void myFreeValueTextFilled(std::string text) ;
     private:
-    std::string MyTextBoxText;
-    std::vector<std::string> MyFreeTextComboBoxComboBoxEntries;
-    std::string MyFreeTextComboBoxSelectedEntry;
-    std::string MyFreeTextComboBoxText;
+    std::string MyValueTextBoxText;
+    std::vector<std::string> MyFreeValueComboBoxComboBoxEntries;
+    std::string MyFreeValueComboBoxSelectedEntry;
+    std::string MyFreeValueComboBoxText;
   };
 }
 

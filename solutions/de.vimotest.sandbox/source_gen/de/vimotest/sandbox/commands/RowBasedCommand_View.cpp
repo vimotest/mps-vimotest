@@ -3,24 +3,24 @@
 #include "RowBasedCommand_View.h"
 #include <vector>
 #include <memory>
-#include "RowBasedCommand_ViewMyListViewRow.h"
-#include "RowBasedCommand_ViewMyTableViewRow.h"
-#include "RowBasedCommand_ViewMyTreeViewRow.h"
+#include "RowBasedCommand_ViewMyFlagsRow.h"
+#include "RowBasedCommand_ViewMyComboBoxesRow.h"
+#include "RowBasedCommand_ViewMyStandardControlsRow.h"
 #include <string>
 
 namespace commands
 {
-  std::vector<std::shared_ptr<RowBasedCommand_ViewMyListViewRow>> RowBasedCommand_View::getMyListViewWidgetListRows( ) 
+  std::vector<std::shared_ptr<RowBasedCommand_ViewMyFlagsRow>> RowBasedCommand_View::getMyFlagsListWidgetListRows( ) 
   {
-    return this->MyListViewWidgetListRows;
+    return this->MyFlagsListWidgetListRows;
   }
-  std::vector<std::shared_ptr<RowBasedCommand_ViewMyTableViewRow>> RowBasedCommand_View::getMyTableViewWidgetTableRows( ) 
+  std::vector<std::shared_ptr<RowBasedCommand_ViewMyComboBoxesRow>> RowBasedCommand_View::getMyComboBoxesTableWidgetTableRows( ) 
   {
-    return this->MyTableViewWidgetTableRows;
+    return this->MyComboBoxesTableWidgetTableRows;
   }
-  std::vector<std::shared_ptr<RowBasedCommand_ViewMyTreeViewRow>> RowBasedCommand_View::getMyTreeViewWidgetTreeRows( ) 
+  std::vector<std::shared_ptr<RowBasedCommand_ViewMyStandardControlsRow>> RowBasedCommand_View::getMyStandardControlsTreeWidgetTreeRows( ) 
   {
-    return this->MyTreeViewWidgetTreeRows;
+    return this->MyStandardControlsTreeWidgetTreeRows;
   }
   void RowBasedCommand_View::loadView( ) 
   {

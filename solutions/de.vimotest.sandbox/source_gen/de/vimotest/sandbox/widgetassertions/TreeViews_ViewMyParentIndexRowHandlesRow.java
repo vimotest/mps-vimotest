@@ -4,9 +4,9 @@ package de.vimotest.sandbox.widgetassertions;
 
 
 public class TreeViews_ViewMyParentIndexRowHandlesRow {
-  private String ValuesText;
-  public String getValuesText() {
-    return this.ValuesText;
+  private String ValuesLabelText;
+  public String getValuesLabelText() {
+    return this.ValuesLabelText;
   }
   private Integer RowIndex;
   public Integer getRowIndex() {

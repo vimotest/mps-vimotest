@@ -5,29 +5,29 @@
 
 namespace de::vimotest::examples::loginview
 {
-  std::string LoginView::getUsernameText( ) 
+  std::string LoginView::getUsernameTextBoxText( ) 
   {
-    return this->UsernameText;
+    return this->UsernameTextBoxText;
   }
-  std::string LoginView::getPasswordText( ) 
+  std::string LoginView::getPasswordTextBoxText( ) 
   {
-    return this->PasswordText;
+    return this->PasswordTextBoxText;
   }
-  bool LoginView::getIsShowPasswordChecked( ) 
+  bool LoginView::getIsShowPasswordCheckBoxChecked( ) 
   {
-    return this->isShowPasswordChecked;
+    return this->isShowPasswordCheckBoxChecked;
   }
-  bool LoginView::getIsLoginEnabled( ) 
+  bool LoginView::getIsLoginButtonEnabled( ) 
   {
-    return this->isLoginEnabled;
+    return this->isLoginButtonEnabled;
   }
-  std::string LoginView::getErrorTextText( ) 
+  std::string LoginView::getErrorLabelText( ) 
   {
-    return this->ErrorTextText;
+    return this->ErrorLabelText;
   }
-  bool LoginView::getIsErrorTextVisibility( ) 
+  bool LoginView::getIsErrorLabelVisibility( ) 
   {
-    return this->isErrorTextVisibility;
+    return this->isErrorLabelVisibility;
   }
   void LoginView::loadView( ) 
   {

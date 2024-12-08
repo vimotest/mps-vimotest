@@ -4,57 +4,57 @@ namespace widgetassertions ;
 
 class ComboBoxes_View {
   
-  private MyOptionsComboBoxEntries : String [ * ]  ;
+  private MyOptionsComboBoxComboBoxEntries : String [ * ]  ;
   
-  public getMyOptionsComboBoxEntries (  ) : String [ * ]  {
-  return this.MyOptionsComboBoxEntries;
+  public getMyOptionsComboBoxComboBoxEntries (  ) : String [ * ]  {
+  return this.MyOptionsComboBoxComboBoxEntries;
  }
   
-  private MyOptionsSelectedEntry : String  ;
+  private MyOptionsComboBoxSelectedEntry : String  ;
   
-  public getMyOptionsSelectedEntry (  ) : String  {
-  return this.MyOptionsSelectedEntry;
+  public getMyOptionsComboBoxSelectedEntry (  ) : String  {
+  return this.MyOptionsComboBoxSelectedEntry;
  }
   
-  private isMyOptionsVisibility : Boolean  ;
+  private isMyOptionsComboBoxVisibility : Boolean  ;
   
-  public getIsMyOptionsVisibility (  ) : Boolean  {
-  return this.isMyOptionsVisibility;
+  public getIsMyOptionsComboBoxVisibility (  ) : Boolean  {
+  return this.isMyOptionsComboBoxVisibility;
  }
   
-  private isMyOptionsEnabled : Boolean  ;
+  private isMyOptionsComboBoxEnabled : Boolean  ;
   
-  public getIsMyOptionsEnabled (  ) : Boolean  {
-  return this.isMyOptionsEnabled;
+  public getIsMyOptionsComboBoxEnabled (  ) : Boolean  {
+  return this.isMyOptionsComboBoxEnabled;
  }
   
-  private MyOptionsWithFreeTextComboBoxEntries : String [ * ]  ;
+  private MyOptionsWithFreeTextComboBoxComboBoxEntries : String [ * ]  ;
   
-  public getMyOptionsWithFreeTextComboBoxEntries (  ) : String [ * ]  {
-  return this.MyOptionsWithFreeTextComboBoxEntries;
+  public getMyOptionsWithFreeTextComboBoxComboBoxEntries (  ) : String [ * ]  {
+  return this.MyOptionsWithFreeTextComboBoxComboBoxEntries;
  }
   
-  private MyOptionsWithFreeTextSelectedEntry : String  ;
+  private MyOptionsWithFreeTextComboBoxSelectedEntry : String  ;
   
-  public getMyOptionsWithFreeTextSelectedEntry (  ) : String  {
-  return this.MyOptionsWithFreeTextSelectedEntry;
+  public getMyOptionsWithFreeTextComboBoxSelectedEntry (  ) : String  {
+  return this.MyOptionsWithFreeTextComboBoxSelectedEntry;
  }
   
-  private MyOptionsWithFreeTextText : String  ;
+  private MyOptionsWithFreeTextComboBoxText : String  ;
   
-  public getMyOptionsWithFreeTextText (  ) : String  {
-  return this.MyOptionsWithFreeTextText;
+  public getMyOptionsWithFreeTextComboBoxText (  ) : String  {
+  return this.MyOptionsWithFreeTextComboBoxText;
  }
   
-  private isMyOptionsWithFreeTextVisibility : Boolean  ;
+  private isMyOptionsWithFreeTextComboBoxVisibility : Boolean  ;
   
-  public getIsMyOptionsWithFreeTextVisibility (  ) : Boolean  {
-  return this.isMyOptionsWithFreeTextVisibility;
+  public getIsMyOptionsWithFreeTextComboBoxVisibility (  ) : Boolean  {
+  return this.isMyOptionsWithFreeTextComboBoxVisibility;
  }
   
-  private isMyOptionsWithFreeTextEnabled : Boolean  ;
+  private isMyOptionsWithFreeTextComboBoxEnabled : Boolean  ;
   
-  public getIsMyOptionsWithFreeTextEnabled (  ) : Boolean  {
-  return this.isMyOptionsWithFreeTextEnabled;
+  public getIsMyOptionsWithFreeTextComboBoxEnabled (  ) : Boolean  {
+  return this.isMyOptionsWithFreeTextComboBoxEnabled;
  }
 }

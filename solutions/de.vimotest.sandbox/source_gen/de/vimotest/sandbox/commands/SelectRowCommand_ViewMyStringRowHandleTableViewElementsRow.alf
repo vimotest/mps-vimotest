@@ -1,0 +1,18 @@
+namespace commands ;
+
+
+
+class SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow {
+  
+  private columnCellLabelText : String  ;
+  
+  public getColumnCellLabelText (  ) : String  {
+  return this.columnCellLabelText;
+ }
+  
+  private RowHandle : String  ;
+  
+  public getRowHandle (  ) : String  {
+  return this.RowHandle;
+ }
+}

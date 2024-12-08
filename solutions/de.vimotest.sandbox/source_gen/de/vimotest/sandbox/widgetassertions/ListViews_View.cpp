@@ -7,74 +7,74 @@
 #include "ListViews_ViewMyListOfImagesRow.h"
 #include "ListViews_ViewMyCheckboxesRow.h"
 #include "ListViews_ViewMyStringRowHandlesRow.h"
-#include "ListViews_ViewMyMultiRowSelectionListRow.h"
+#include "ListViews_ViewMyListWithMultiRowSelectionRow.h"
 #include <string>
 
 namespace widgetassertions
 {
-  bool ListViews_View::getIsMyListOfLabelVisibility( ) 
+  bool ListViews_View::getIsMyListOfLabelListVisibility( ) 
   {
-    return this->isMyListOfLabelVisibility;
+    return this->isMyListOfLabelListVisibility;
   }
-  bool ListViews_View::getIsMyListOfLabelEnabled( ) 
+  bool ListViews_View::getIsMyListOfLabelListEnabled( ) 
   {
-    return this->isMyListOfLabelEnabled;
+    return this->isMyListOfLabelListEnabled;
   }
-  std::vector<std::shared_ptr<ListViews_ViewMyListOfLabelRow>> ListViews_View::getMyListOfLabelWidgetListRows( ) 
+  std::vector<std::shared_ptr<ListViews_ViewMyListOfLabelRow>> ListViews_View::getMyListOfLabelListWidgetListRows( ) 
   {
-    return this->MyListOfLabelWidgetListRows;
+    return this->MyListOfLabelListWidgetListRows;
   }
-  int ListViews_View::getMyListOfLabelSelectedRow( ) 
+  int ListViews_View::getMyListOfLabelListSelectedRow( ) 
   {
-    return this->MyListOfLabelSelectedRow;
+    return this->MyListOfLabelListSelectedRow;
   }
-  bool ListViews_View::getIsMyListOfImagesVisibility( ) 
+  bool ListViews_View::getIsMyListOfImagesListVisibility( ) 
   {
-    return this->isMyListOfImagesVisibility;
+    return this->isMyListOfImagesListVisibility;
   }
-  bool ListViews_View::getIsMyListOfImagesEnabled( ) 
+  bool ListViews_View::getIsMyListOfImagesListEnabled( ) 
   {
-    return this->isMyListOfImagesEnabled;
+    return this->isMyListOfImagesListEnabled;
   }
-  std::vector<std::shared_ptr<ListViews_ViewMyListOfImagesRow>> ListViews_View::getMyListOfImagesWidgetListRows( ) 
+  std::vector<std::shared_ptr<ListViews_ViewMyListOfImagesRow>> ListViews_View::getMyListOfImagesListWidgetListRows( ) 
   {
-    return this->MyListOfImagesWidgetListRows;
+    return this->MyListOfImagesListWidgetListRows;
   }
-  int ListViews_View::getMyListOfImagesSelectedRow( ) 
+  int ListViews_View::getMyListOfImagesListSelectedRow( ) 
   {
-    return this->MyListOfImagesSelectedRow;
+    return this->MyListOfImagesListSelectedRow;
   }
-  std::vector<std::shared_ptr<ListViews_ViewMyCheckboxesRow>> ListViews_View::getMyCheckboxesWidgetListRows( ) 
+  std::vector<std::shared_ptr<ListViews_ViewMyCheckboxesRow>> ListViews_View::getMyCheckboxesListWidgetListRows( ) 
   {
-    return this->MyCheckboxesWidgetListRows;
+    return this->MyCheckboxesListWidgetListRows;
   }
-  int ListViews_View::getMyCheckboxesSelectedRow( ) 
+  int ListViews_View::getMyCheckboxesListSelectedRow( ) 
   {
-    return this->MyCheckboxesSelectedRow;
+    return this->MyCheckboxesListSelectedRow;
   }
-  bool ListViews_View::getIsMyCheckboxesVisibility( ) 
+  bool ListViews_View::getIsMyCheckboxesListVisibility( ) 
   {
-    return this->isMyCheckboxesVisibility;
+    return this->isMyCheckboxesListVisibility;
   }
-  bool ListViews_View::getIsMyCheckboxesEnabled( ) 
+  bool ListViews_View::getIsMyCheckboxesListEnabled( ) 
   {
-    return this->isMyCheckboxesEnabled;
+    return this->isMyCheckboxesListEnabled;
   }
-  std::vector<std::shared_ptr<ListViews_ViewMyStringRowHandlesRow>> ListViews_View::getMyStringRowHandlesWidgetListRows( ) 
+  std::vector<std::shared_ptr<ListViews_ViewMyStringRowHandlesRow>> ListViews_View::getMyStringRowHandlesListWidgetListRows( ) 
   {
-    return this->MyStringRowHandlesWidgetListRows;
+    return this->MyStringRowHandlesListWidgetListRows;
   }
-  std::string ListViews_View::getMyStringRowHandlesSelectedRow( ) 
+  std::string ListViews_View::getMyStringRowHandlesListSelectedRow( ) 
   {
-    return this->MyStringRowHandlesSelectedRow;
+    return this->MyStringRowHandlesListSelectedRow;
   }
-  std::vector<std::shared_ptr<ListViews_ViewMyMultiRowSelectionListRow>> ListViews_View::getMyMultiRowSelectionListWidgetListRows( ) 
+  std::vector<std::shared_ptr<ListViews_ViewMyListWithMultiRowSelectionRow>> ListViews_View::getMyListWithMultiRowSelectionListWidgetListRows( ) 
   {
-    return this->MyMultiRowSelectionListWidgetListRows;
+    return this->MyListWithMultiRowSelectionListWidgetListRows;
   }
-  std::vector<int> ListViews_View::getMyMultiRowSelectionListSelectedRows( ) 
+  std::vector<int> ListViews_View::getMyListWithMultiRowSelectionListSelectedRows( ) 
   {
-    return this->MyMultiRowSelectionListSelectedRows;
+    return this->MyListWithMultiRowSelectionListSelectedRows;
   }
 }
 

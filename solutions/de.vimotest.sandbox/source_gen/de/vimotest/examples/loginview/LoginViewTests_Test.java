@@ -56,13 +56,13 @@ public class LoginViewTests_Test {
     this.then_Login_is_enabled_2();
   }
   @Test
-  public void test_Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadView_and_fill_lovelace_in_Password_and_click_Login_then_ErrorText_shows_text_Needs_uppercase_letters_() throws Exception {
+  public void test_Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadView_and_fill_lovelace_in_Password_and_click_Login_then_Error_shows_text_Needs_uppercase_letters_() throws Exception {
     this.given_prefilledValues();
     this.BuildSut();
     this.when_LoadView_4();
     this.when_fill_lovelace_in_Password();
     this.when_click_Login();
-    this.then_ErrorText_shows_text_Needs_uppercase_letters_();
+    this.then_Error_shows_text_Needs_uppercase_letters_();
   }
   @BeforeEach
   public void setUp() {
@@ -127,45 +127,45 @@ public class LoginViewTests_Test {
 
 
   public void then_Username_shows_text_User_() {
-    Assert.assertEquals("User", this.sut.getUsernameText());
+    Assert.assertEquals("User", this.sut.getUsernameTextBoxText());
   }
   public void then_Password_shows_text_MyPass123_() {
-    Assert.assertEquals("MyPass123", this.sut.getPasswordText());
+    Assert.assertEquals("MyPass123", this.sut.getPasswordTextBoxText());
   }
   public void then_Login_is_enabled() {
-    Assert.assertTrue(this.sut.getIsLoginEnabled());
+    Assert.assertTrue(this.sut.getIsLoginButtonEnabled());
   }
   public void then_Username_shows_text_User__1() {
-    Assert.assertEquals("User", this.sut.getUsernameText());
+    Assert.assertEquals("User", this.sut.getUsernameTextBoxText());
   }
   public void then_Password_shows_empty_text() {
-    Assert.assertEquals("", this.sut.getPasswordText());
+    Assert.assertEquals("", this.sut.getPasswordTextBoxText());
   }
   public void then_Login_is_not_enabled() {
-    Assert.assertFalse(this.sut.getIsLoginEnabled());
+    Assert.assertFalse(this.sut.getIsLoginButtonEnabled());
   }
   public void then_Username_shows_text_Ada_() {
-    Assert.assertEquals("Ada", this.sut.getUsernameText());
+    Assert.assertEquals("Ada", this.sut.getUsernameTextBoxText());
   }
   public void then_Password_shows_text_____() {
-    Assert.assertEquals("******", this.sut.getPasswordText());
+    Assert.assertEquals("******", this.sut.getPasswordTextBoxText());
   }
   public void then_Login_is_enabled_1() {
-    Assert.assertTrue(this.sut.getIsLoginEnabled());
+    Assert.assertTrue(this.sut.getIsLoginButtonEnabled());
   }
   public void then_Username_shows_text_Ada__1() {
-    Assert.assertEquals("Ada", this.sut.getUsernameText());
+    Assert.assertEquals("Ada", this.sut.getUsernameTextBoxText());
   }
   public void then_Password_shows_text_Lovelace1_() {
-    Assert.assertEquals("Lovelace1", this.sut.getPasswordText());
+    Assert.assertEquals("Lovelace1", this.sut.getPasswordTextBoxText());
   }
   public void then_ShowPassword_is_checked() {
-    Assert.assertTrue(this.sut.getIsShowPasswordChecked());
+    Assert.assertTrue(this.sut.getIsShowPasswordCheckBoxChecked());
   }
   public void then_Login_is_enabled_2() {
-    Assert.assertTrue(this.sut.getIsLoginEnabled());
+    Assert.assertTrue(this.sut.getIsLoginButtonEnabled());
   }
-  public void then_ErrorText_shows_text_Needs_uppercase_letters_() {
-    Assert.assertEquals("Needs uppercase letters", this.sut.getErrorTextText());
+  public void then_Error_shows_text_Needs_uppercase_letters_() {
+    Assert.assertEquals("Needs uppercase letters", this.sut.getErrorLabelText());
   }
 }

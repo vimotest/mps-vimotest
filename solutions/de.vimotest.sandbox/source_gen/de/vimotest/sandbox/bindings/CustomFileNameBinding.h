@@ -3,17 +3,17 @@
 
 #include <vector>
 #include <memory>
-#include "ViMoTestFileNameBindingMyTableViewRow.h"
+#include "ViMoTestFileNameBindingMyElementsRow.h"
 
 namespace bindings
 {
   class ViMoTestFileNameBinding
   {
     public:
-    virtual std::vector<std::shared_ptr<ViMoTestFileNameBindingMyTableViewRow>> getMyTableViewWidgetTableRows() ;
+    virtual std::vector<std::shared_ptr<ViMoTestFileNameBindingMyElementsRow>> getMyElementsTableWidgetTableRows() ;
     virtual void loadView() ;
     private:
-    std::vector<std::shared_ptr<ViMoTestFileNameBindingMyTableViewRow>> MyTableViewWidgetTableRows;
+    std::vector<std::shared_ptr<ViMoTestFileNameBindingMyElementsRow>> MyElementsTableWidgetTableRows;
   };
 }
 

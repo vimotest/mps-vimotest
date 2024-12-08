@@ -5,13 +5,13 @@
 
 namespace widgetassertions
 {
-  bool ListViews_ViewMyCheckboxesRow::getIsHeaderChecked( ) 
+  bool ListViews_ViewMyCheckboxesRow::getIsHeaderCheckBoxChecked( ) 
   {
-    return this->isHeaderChecked;
+    return this->isHeaderCheckBoxChecked;
   }
-  std::string ListViews_ViewMyCheckboxesRow::getHeaderText( ) 
+  std::string ListViews_ViewMyCheckboxesRow::getHeaderCheckBoxText( ) 
   {
-    return this->HeaderText;
+    return this->HeaderCheckBoxText;
   }
   int ListViews_ViewMyCheckboxesRow::getRowIndex( ) 
   {

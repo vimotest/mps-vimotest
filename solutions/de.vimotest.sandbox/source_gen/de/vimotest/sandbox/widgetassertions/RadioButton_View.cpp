@@ -6,21 +6,21 @@
 
 namespace widgetassertions
 {
-  std::vector<std::string> RadioButton_View::getMyChoicesRadioButtonChoices( ) 
+  std::vector<std::string> RadioButton_View::getMyChoicesRadioButtonRadioButtonChoices( ) 
   {
-    return this->MyChoicesRadioButtonChoices;
+    return this->MyChoicesRadioButtonRadioButtonChoices;
   }
-  std::string RadioButton_View::getMyChoicesSelectedEntry( ) 
+  std::string RadioButton_View::getMyChoicesRadioButtonSelectedEntry( ) 
   {
-    return this->MyChoicesSelectedEntry;
+    return this->MyChoicesRadioButtonSelectedEntry;
   }
-  bool RadioButton_View::getIsMyChoicesVisibility( ) 
+  bool RadioButton_View::getIsMyChoicesRadioButtonVisibility( ) 
   {
-    return this->isMyChoicesVisibility;
+    return this->isMyChoicesRadioButtonVisibility;
   }
-  bool RadioButton_View::getIsMyChoicesEnabled( ) 
+  bool RadioButton_View::getIsMyChoicesRadioButtonEnabled( ) 
   {
-    return this->isMyChoicesEnabled;
+    return this->isMyChoicesRadioButtonEnabled;
   }
 }
 

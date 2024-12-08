@@ -14,16 +14,16 @@ public class TextBoxes_ViewTest_Test {
   private TextBoxes_View sut;
   private TextBoxes_ViewContextProvider contextProvider;
   @Test
-  public void test_My_SingleLine_Scenario_given_empty_context_when_then_MyTextBox_shows_text_Some_entered_Input_and_is_enabled_and_is_visible() throws Exception {
+  public void test_My_SingleLine_Scenario_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible() throws Exception {
     this.given_empty_context();
     this.BuildSut();
-    this.then_MyTextBox_shows_text_Some_entered_Input_and_is_enabled_and_is_visible();
+    this.then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible();
   }
   @Test
-  public void test_My_MultiLine_Scenario_given_empty_context_when_then_MultiLineTextBox_shows_text_Expected1_Expected2_() throws Exception {
+  public void test_My_MultiLine_Scenario_given_empty_context_when_then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_() throws Exception {
     this.given_empty_context_1();
     this.BuildSut();
-    this.then_MultiLineTextBox_shows_text_Expected1_Expected2_();
+    this.then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_();
   }
   @BeforeEach
   public void setUp() {
@@ -47,15 +47,15 @@ public class TextBoxes_ViewTest_Test {
 
 
 
-  public void then_MyTextBox_shows_text_Some_entered_Input_and_is_enabled_and_is_visible() {
-    Assert.assertEquals("Some entered Input", this.sut.getMyTextBoxText());
-    Assert.assertTrue(this.sut.getIsMyTextBoxEnabled());
-    Assert.assertTrue(this.sut.getIsMyTextBoxVisibility());
+  public void then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible() {
+    Assert.assertEquals("Some entered Input", this.sut.getMyValueTextBoxText());
+    Assert.assertTrue(this.sut.getIsMyValueTextBoxEnabled());
+    Assert.assertTrue(this.sut.getIsMyValueTextBoxVisibility());
   }
-  public void then_MultiLineTextBox_shows_text_Expected1_Expected2_() {
-    List<String> actualMultiLineTextBoxLines = this.sut.getMultiLineTextBoxText();
-    Assert.assertEquals(2, actualMultiLineTextBoxLines.size());
-    Assert.assertEquals("Expected1", actualMultiLineTextBoxLines.get(1 - 1));
-    Assert.assertEquals("Expected2", actualMultiLineTextBoxLines.get(2 - 1));
+  public void then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_() {
+    List<String> actualMultiLineTextBoxValueLines = this.sut.getMultiLineTextBoxValueTextBoxText();
+    Assert.assertEquals(2, actualMultiLineTextBoxValueLines.size());
+    Assert.assertEquals("Expected1", actualMultiLineTextBoxValueLines.get(1 - 1));
+    Assert.assertEquals("Expected2", actualMultiLineTextBoxValueLines.get(2 - 1));
   }
 }

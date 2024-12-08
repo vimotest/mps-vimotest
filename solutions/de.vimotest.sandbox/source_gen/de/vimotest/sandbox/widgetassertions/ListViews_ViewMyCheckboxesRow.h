@@ -8,12 +8,12 @@ namespace widgetassertions
   class ListViews_ViewMyCheckboxesRow
   {
     public:
-    virtual bool getIsHeaderChecked() ;
-    virtual std::string getHeaderText() ;
+    virtual bool getIsHeaderCheckBoxChecked() ;
+    virtual std::string getHeaderCheckBoxText() ;
     virtual int getRowIndex() ;
     private:
-    bool isHeaderChecked;
-    std::string HeaderText;
+    bool isHeaderCheckBoxChecked;
+    std::string HeaderCheckBoxText;
     int RowIndex;
   };
 }

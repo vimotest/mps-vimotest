@@ -4,17 +4,17 @@ package de.vimotest.sandbox.widgetassertions;
 
 
 public class ListViews_ViewMyListOfLabelRow {
-  private String My_TextText;
-  public String getMy_TextText() {
-    return this.My_TextText;
+  private String MyValueLabelText;
+  public String getMyValueLabelText() {
+    return this.MyValueLabelText;
   }
-  private Boolean isMy_TextEnabled;
-  public Boolean getIsMy_TextEnabled() {
-    return this.isMy_TextEnabled;
+  private Boolean isMyValueLabelEnabled;
+  public Boolean getIsMyValueLabelEnabled() {
+    return this.isMyValueLabelEnabled;
   }
-  private Boolean isMy_TextVisibility;
-  public Boolean getIsMy_TextVisibility() {
-    return this.isMy_TextVisibility;
+  private Boolean isMyValueLabelVisibility;
+  public Boolean getIsMyValueLabelVisibility() {
+    return this.isMyValueLabelVisibility;
   }
   private Integer RowIndex;
   public Integer getRowIndex() {

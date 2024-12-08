@@ -4,63 +4,63 @@ namespace widgetassertions ;
 
 class Labels_View {
   
-  private MyLabelText : String  ;
+  private TestLabelText : String  ;
   
-  public getMyLabelText (  ) : String  {
-  return this.MyLabelText;
+  public getTestLabelText (  ) : String  {
+  return this.TestLabelText;
  }
   
-  private isMyLabelEnabled : Boolean  ;
+  private isTestLabelEnabled : Boolean  ;
   
-  public getIsMyLabelEnabled (  ) : Boolean  {
-  return this.isMyLabelEnabled;
+  public getIsTestLabelEnabled (  ) : Boolean  {
+  return this.isTestLabelEnabled;
  }
   
-  private isMyLabelVisibility : Boolean  ;
+  private isTestLabelVisibility : Boolean  ;
   
-  public getIsMyLabelVisibility (  ) : Boolean  {
-  return this.isMyLabelVisibility;
+  public getIsTestLabelVisibility (  ) : Boolean  {
+  return this.isTestLabelVisibility;
  }
   
-  private MyMultiLineLabelText : String [ * ]  ;
+  private MultiLineLabelText : String [ * ]  ;
   
-  public getMyMultiLineLabelText (  ) : String [ * ]  {
-  return this.MyMultiLineLabelText;
+  public getMultiLineLabelText (  ) : String [ * ]  {
+  return this.MultiLineLabelText;
  }
   
-  private MyLabelWithToolTipText : String  ;
+  private WithToolTipLabelText : String  ;
   
-  public getMyLabelWithToolTipText (  ) : String  {
-  return this.MyLabelWithToolTipText;
+  public getWithToolTipLabelText (  ) : String  {
+  return this.WithToolTipLabelText;
  }
   
-  private MyLabelWithToolTipToolTip : String  ;
+  private WithToolTipLabelToolTip : String  ;
   
-  public getMyLabelWithToolTipToolTip (  ) : String  {
-  return this.MyLabelWithToolTipToolTip;
+  public getWithToolTipLabelToolTip (  ) : String  {
+  return this.WithToolTipLabelToolTip;
  }
   
-  private MyLabelWithMultiLineToolTipText : String  ;
+  private WithMultiLineToolTipLabelText : String  ;
   
-  public getMyLabelWithMultiLineToolTipText (  ) : String  {
-  return this.MyLabelWithMultiLineToolTipText;
+  public getWithMultiLineToolTipLabelText (  ) : String  {
+  return this.WithMultiLineToolTipLabelText;
  }
   
-  private MyLabelWithMultiLineToolTipToolTip : String [ * ]  ;
+  private WithMultiLineToolTipLabelToolTip : String [ * ]  ;
   
-  public getMyLabelWithMultiLineToolTipToolTip (  ) : String [ * ]  {
-  return this.MyLabelWithMultiLineToolTipToolTip;
+  public getWithMultiLineToolTipLabelToolTip (  ) : String [ * ]  {
+  return this.WithMultiLineToolTipLabelToolTip;
  }
   
-  private MyLabelWithTextColorText : String  ;
+  private WithTextColorLabelText : String  ;
   
-  public getMyLabelWithTextColorText (  ) : String  {
-  return this.MyLabelWithTextColorText;
+  public getWithTextColorLabelText (  ) : String  {
+  return this.WithTextColorLabelText;
  }
   
-  private MyLabelWithTextColorTextColor : String  ;
+  private WithTextColorLabelTextColor : String  ;
   
-  public getMyLabelWithTextColorTextColor (  ) : String  {
-  return this.MyLabelWithTextColorTextColor;
+  public getWithTextColorLabelTextColor (  ) : String  {
+  return this.WithTextColorLabelTextColor;
  }
 }

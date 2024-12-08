@@ -6,7 +6,7 @@
 class MyViewModel
 {
   public:
-  virtual bool getIsMyCheckBoxChecked() ;
+  virtual bool getIsMyFlagCheckBoxChecked() ;
   private:
-  bool isMyCheckBoxChecked;
+  bool isMyFlagCheckBoxChecked;
 };

@@ -9,17 +9,17 @@ namespace commands
   class SelectEntryCommand_View
   {
     public:
-    virtual std::vector<std::string> getMyComboBoxComboBoxEntries() ;
-    virtual std::string getMyComboBoxSelectedEntry() ;
-    virtual std::vector<std::string> getMyRadioButtonRadioButtonChoices() ;
-    virtual std::string getMyRadioButtonSelectedEntry() ;
-    virtual void myComboBoxEntrySelected(std::string entryName) ;
-    virtual void myRadioButtonEntrySelected(std::string entryName) ;
+    virtual std::vector<std::string> getMyElementsComboBoxComboBoxEntries() ;
+    virtual std::string getMyElementsComboBoxSelectedEntry() ;
+    virtual std::vector<std::string> getMyOptionsRadioButtonRadioButtonChoices() ;
+    virtual std::string getMyOptionsRadioButtonSelectedEntry() ;
+    virtual void myElementsEntrySelected(std::string entryName) ;
+    virtual void myOptionsEntrySelected(std::string entryName) ;
     private:
-    std::vector<std::string> MyComboBoxComboBoxEntries;
-    std::string MyComboBoxSelectedEntry;
-    std::vector<std::string> MyRadioButtonRadioButtonChoices;
-    std::string MyRadioButtonSelectedEntry;
+    std::vector<std::string> MyElementsComboBoxComboBoxEntries;
+    std::string MyElementsComboBoxSelectedEntry;
+    std::vector<std::string> MyOptionsRadioButtonRadioButtonChoices;
+    std::string MyOptionsRadioButtonSelectedEntry;
   };
 }
 

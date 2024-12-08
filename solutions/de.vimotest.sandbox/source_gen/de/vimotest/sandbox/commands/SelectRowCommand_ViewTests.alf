@@ -15,46 +15,46 @@ class SelectRowCommand_ViewTests {
  }
   
   
-  public Select_Row_ListView_Call_given_when_select_row_1_in_MyListView_then_MyListView_has_2_rows (  ) {
+  public Select_Row_ListView_Call_given_when_select_row_1_in_MyListViewElements_then_MyListViewElements_has_2_rows (  ) {
   this.BuildSut (  );
-   this.when_select_row_1_in_MyListView (  );
-   this.then_MyListView_has_2_rows (  );
+   this.when_select_row_1_in_MyListViewElements (  );
+   this.then_MyListViewElements_has_2_rows (  );
  }
   
-  public Select_Row_ListView_Call_string_row_handle_given_when_select_row_ROW_B_in_MyStringRowHandleListView_then_MyStringRowHandleListView_has_2_rows (  ) {
+  public Select_Row_ListView_Call_string_row_handle_given_when_select_row_ROW_B_in_MyStringRowHandleListViewElements_then_MyStringRowHandleListViewElements_has_2_rows (  ) {
   this.BuildSut (  );
-   this.when_select_row_ROW_B_in_MyStringRowHandleListView (  );
-   this.then_MyStringRowHandleListView_has_2_rows (  );
+   this.when_select_row_ROW_B_in_MyStringRowHandleListViewElements (  );
+   this.then_MyStringRowHandleListViewElements_has_2_rows (  );
  }
   
-  public Select_Row_TableView_Call_given_when_select_row_1_in_MyTableView_then_MyTableView_has_2_rows (  ) {
+  public Select_Row_TableView_Call_given_when_select_row_1_in_MyTableViewElements_then_MyTableViewElements_has_2_rows (  ) {
   this.BuildSut (  );
-   this.when_select_row_1_in_MyTableView (  );
-   this.then_MyTableView_has_2_rows (  );
+   this.when_select_row_1_in_MyTableViewElements (  );
+   this.then_MyTableViewElements_has_2_rows (  );
  }
   
-  public Select_Row_TableView_Call_string_row_handle_given_when_select_row_ROW_B_in_MyStringRowHandleTableView_then_MyStringRowHandleTableView_has_2_rows (  ) {
+  public Select_Row_TableView_Call_string_row_handle_given_when_select_row_ROW_B_in_MyStringRowHandleTableViewElements_then_MyStringRowHandleTableViewElements_has_2_rows (  ) {
   this.BuildSut (  );
-   this.when_select_row_ROW_B_in_MyStringRowHandleTableView (  );
-   this.then_MyStringRowHandleTableView_has_2_rows (  );
+   this.when_select_row_ROW_B_in_MyStringRowHandleTableViewElements (  );
+   this.then_MyStringRowHandleTableViewElements_has_2_rows (  );
  }
   
-  public Select_Row_TreeView_Call_given_when_select_row_1_in_MyTreeView_then_MyTreeView_has_2_rows (  ) {
+  public Select_Row_TreeView_Call_given_when_select_row_1_in_MyTreeViewElements_then_MyTreeViewElements_has_2_rows (  ) {
   this.BuildSut (  );
-   this.when_select_row_1_in_MyTreeView (  );
-   this.then_MyTreeView_has_2_rows (  );
+   this.when_select_row_1_in_MyTreeViewElements (  );
+   this.then_MyTreeViewElements_has_2_rows (  );
  }
   
-  public Select_Row_TreeView_Call_string_row_handle_given_when_select_row_ROW_B_in_MyStringRowHandleTreeView_then_MyStringRowHandleTreeView_has_2_rows (  ) {
+  public Select_Row_TreeView_Call_string_row_handle_given_when_select_row_ROW_B_in_MyStringRowHandleTreeViewElements_then_MyStringRowHandleTreeViewElements_has_2_rows (  ) {
   this.BuildSut (  );
-   this.when_select_row_ROW_B_in_MyStringRowHandleTreeView (  );
-   this.then_MyStringRowHandleTreeView_has_2_rows (  );
+   this.when_select_row_ROW_B_in_MyStringRowHandleTreeViewElements (  );
+   this.then_MyStringRowHandleTreeViewElements_has_2_rows (  );
  }
   
-  public Select_Multiple_Rows_given_when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListView_then_MyStringHandleMultiSelectRowListView_has_3_rows (  ) {
+  public Select_Multiple_Rows_given_when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListViewElements_then_MyStringHandleMultiSelectRowListViewElements_has_3_rows (  ) {
   this.BuildSut (  );
-   this.when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListView (  );
-   this.then_MyStringHandleMultiSelectRowListView_has_3_rows (  );
+   this.when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListViewElements (  );
+   this.then_MyStringHandleMultiSelectRowListViewElements_has_3_rows (  );
  }
   
   
@@ -69,148 +69,148 @@ class SelectRowCommand_ViewTests {
   // When Helper Definitions
 
   
-  public when_select_row_1_in_MyListView (  ) {
-  this.sut.myListViewRowSelected ( 1 );
+  public when_select_row_1_in_MyListViewElements (  ) {
+  this.sut.myListViewElementsRowSelected ( 1 );
  }
   
-  public when_select_row_ROW_B_in_MyStringRowHandleListView (  ) {
-  this.sut.myStringRowHandleListViewRowSelected ( "ROW_B" );
+  public when_select_row_ROW_B_in_MyStringRowHandleListViewElements (  ) {
+  this.sut.myStringRowHandleListViewElementsRowSelected ( "ROW_B" );
  }
   
-  public when_select_row_1_in_MyTableView (  ) {
-  this.sut.myTableViewRowSelected ( 1 );
+  public when_select_row_1_in_MyTableViewElements (  ) {
+  this.sut.myTableViewElementsRowSelected ( 1 );
  }
   
-  public when_select_row_ROW_B_in_MyStringRowHandleTableView (  ) {
-  this.sut.myStringRowHandleTableViewRowSelected ( "ROW_B" );
+  public when_select_row_ROW_B_in_MyStringRowHandleTableViewElements (  ) {
+  this.sut.myStringRowHandleTableViewElementsRowSelected ( "ROW_B" );
  }
   
-  public when_select_row_1_in_MyTreeView (  ) {
-  this.sut.myTreeViewRowSelected ( 1 );
+  public when_select_row_1_in_MyTreeViewElements (  ) {
+  this.sut.myTreeViewElementsRowSelected ( 1 );
  }
   
-  public when_select_row_ROW_B_in_MyStringRowHandleTreeView (  ) {
-  this.sut.myStringRowHandleTreeViewRowSelected ( "ROW_B" );
+  public when_select_row_ROW_B_in_MyStringRowHandleTreeViewElements (  ) {
+  this.sut.myStringRowHandleTreeViewElementsRowSelected ( "ROW_B" );
  }
   
-  public when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListView (  ) {
-  this.sut.myStringHandleMultiSelectRowListViewRowSelected ( new String [] { "ROW_A",  "ROW_C" } );
+  public when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListViewElements (  ) {
+  this.sut.myStringHandleMultiSelectRowListViewElementsRowSelected ( new String [] { "ROW_A",  "ROW_C" } );
  }
   
   // Then Helper Definitions
 
   
-  public then_MyListView_has_2_rows (  ) {
-  let actualRows: SelectRowCommand_ViewMyListViewRow [] = this.sut.getMyListViewWidgetListRows (  );
+  public then_MyListViewElements_has_2_rows (  ) {
+  let actualRows: SelectRowCommand_ViewMyListViewElementsRow [] = this.sut.getMyListViewElementsListWidgetListRows (  );
    AssertEqual ( 2, actualRows->size (  ) );
    {
-  let row0: SelectRowCommand_ViewMyListViewRow = actualRows[ 1 ];
+  let row0: SelectRowCommand_ViewMyListViewElementsRow = actualRows[ 1 ];
    AssertEqual ( 0, row0.getRowIndex (  ) );
-   AssertEqual ( "A", row0.getHeaderText (  ) );
+   AssertEqual ( "A", row0.getHeaderLabelText (  ) );
  }
    {
-  let row1: SelectRowCommand_ViewMyListViewRow = actualRows[ 2 ];
+  let row1: SelectRowCommand_ViewMyListViewElementsRow = actualRows[ 2 ];
    AssertEqual ( 1, row1.getRowIndex (  ) );
-   AssertEqual ( "B", row1.getHeaderText (  ) );
+   AssertEqual ( "B", row1.getHeaderLabelText (  ) );
  }
  }
   
-  public then_MyStringRowHandleListView_has_2_rows (  ) {
-  let actualRows: SelectRowCommand_ViewMyStringRowHandleListViewRow [] = this.sut.getMyStringRowHandleListViewWidgetListRows (  );
+  public then_MyStringRowHandleListViewElements_has_2_rows (  ) {
+  let actualRows: SelectRowCommand_ViewMyStringRowHandleListViewElementsRow [] = this.sut.getMyStringRowHandleListViewElementsListWidgetListRows (  );
    AssertEqual ( 2, actualRows->size (  ) );
    {
-  let row0: SelectRowCommand_ViewMyStringRowHandleListViewRow = actualRows[ 1 ];
+  let row0: SelectRowCommand_ViewMyStringRowHandleListViewElementsRow = actualRows[ 1 ];
    AssertEqual ( "ROW_A", row0.getRowHandle (  ) );
-   AssertEqual ( "A", row0.getHeaderText (  ) );
+   AssertEqual ( "A", row0.getHeaderLabelText (  ) );
  }
    {
-  let row1: SelectRowCommand_ViewMyStringRowHandleListViewRow = actualRows[ 2 ];
+  let row1: SelectRowCommand_ViewMyStringRowHandleListViewElementsRow = actualRows[ 2 ];
    AssertEqual ( "ROW_B", row1.getRowHandle (  ) );
-   AssertEqual ( "B", row1.getHeaderText (  ) );
+   AssertEqual ( "B", row1.getHeaderLabelText (  ) );
  }
  }
   
-  public then_MyTableView_has_2_rows (  ) {
-  let actualRows: SelectRowCommand_ViewMyTableViewRow [] = this.sut.getMyTableViewWidgetTableRows (  );
+  public then_MyTableViewElements_has_2_rows (  ) {
+  let actualRows: SelectRowCommand_ViewMyTableViewElementsRow [] = this.sut.getMyTableViewElementsTableWidgetTableRows (  );
    AssertEqual ( 2, actualRows->size (  ) );
    {
-  let row0: SelectRowCommand_ViewMyTableViewRow = actualRows[ 1 ];
+  let row0: SelectRowCommand_ViewMyTableViewElementsRow = actualRows[ 1 ];
    AssertEqual ( 0, row0.getRowIndex (  ) );
-   AssertEqual ( "A", row0.getColumnCellText (  ) );
+   AssertEqual ( "A", row0.getColumnCellLabelText (  ) );
  }
    {
-  let row1: SelectRowCommand_ViewMyTableViewRow = actualRows[ 2 ];
+  let row1: SelectRowCommand_ViewMyTableViewElementsRow = actualRows[ 2 ];
    AssertEqual ( 1, row1.getRowIndex (  ) );
-   AssertEqual ( "B", row1.getColumnCellText (  ) );
+   AssertEqual ( "B", row1.getColumnCellLabelText (  ) );
  }
  }
   
-  public then_MyStringRowHandleTableView_has_2_rows (  ) {
-  let actualRows: SelectRowCommand_ViewMyStringRowHandleTableViewRow [] = this.sut.getMyStringRowHandleTableViewWidgetTableRows (  );
+  public then_MyStringRowHandleTableViewElements_has_2_rows (  ) {
+  let actualRows: SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow [] = this.sut.getMyStringRowHandleTableViewElementsTableWidgetTableRows (  );
    AssertEqual ( 2, actualRows->size (  ) );
    {
-  let row0: SelectRowCommand_ViewMyStringRowHandleTableViewRow = actualRows[ 1 ];
+  let row0: SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow = actualRows[ 1 ];
    AssertEqual ( "ROW_A", row0.getRowHandle (  ) );
-   AssertEqual ( "A", row0.getColumnCellText (  ) );
+   AssertEqual ( "A", row0.getColumnCellLabelText (  ) );
  }
    {
-  let row1: SelectRowCommand_ViewMyStringRowHandleTableViewRow = actualRows[ 2 ];
+  let row1: SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow = actualRows[ 2 ];
    AssertEqual ( "ROW_B", row1.getRowHandle (  ) );
-   AssertEqual ( "B", row1.getColumnCellText (  ) );
+   AssertEqual ( "B", row1.getColumnCellLabelText (  ) );
  }
  }
   
-  public then_MyTreeView_has_2_rows (  ) {
-  let actualRows: SelectRowCommand_ViewMyTreeViewRow [] = this.sut.getMyTreeViewWidgetTreeRows (  );
+  public then_MyTreeViewElements_has_2_rows (  ) {
+  let actualRows: SelectRowCommand_ViewMyTreeViewElementsRow [] = this.sut.getMyTreeViewElementsTreeWidgetTreeRows (  );
    AssertEqual ( 2, actualRows->size (  ) );
    {
-  let row0: SelectRowCommand_ViewMyTreeViewRow = actualRows[ 1 ];
+  let row0: SelectRowCommand_ViewMyTreeViewElementsRow = actualRows[ 1 ];
    AssertEqual ( 0, row0.getRowIndex (  ) );
    AssertEqual ( 0, row0.getRowDepth (  ) );
-   AssertEqual ( "A", row0.getColumnCellText (  ) );
+   AssertEqual ( "A", row0.getColumnCellLabelText (  ) );
  }
    {
-  let row1: SelectRowCommand_ViewMyTreeViewRow = actualRows[ 2 ];
+  let row1: SelectRowCommand_ViewMyTreeViewElementsRow = actualRows[ 2 ];
    AssertEqual ( 1, row1.getRowIndex (  ) );
    AssertEqual ( 0, row1.getRowDepth (  ) );
-   AssertEqual ( "B", row1.getColumnCellText (  ) );
+   AssertEqual ( "B", row1.getColumnCellLabelText (  ) );
  }
  }
   
-  public then_MyStringRowHandleTreeView_has_2_rows (  ) {
-  let actualRows: SelectRowCommand_ViewMyStringRowHandleTreeViewRow [] = this.sut.getMyStringRowHandleTreeViewWidgetTreeRows (  );
+  public then_MyStringRowHandleTreeViewElements_has_2_rows (  ) {
+  let actualRows: SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow [] = this.sut.getMyStringRowHandleTreeViewElementsTreeWidgetTreeRows (  );
    AssertEqual ( 2, actualRows->size (  ) );
    {
-  let row0: SelectRowCommand_ViewMyStringRowHandleTreeViewRow = actualRows[ 1 ];
+  let row0: SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow = actualRows[ 1 ];
    AssertEqual ( "ROW_A", row0.getRowHandle (  ) );
    AssertEqual ( 0, row0.getRowDepth (  ) );
-   AssertEqual ( "A", row0.getColumnCellText (  ) );
+   AssertEqual ( "A", row0.getColumnCellLabelText (  ) );
  }
    {
-  let row1: SelectRowCommand_ViewMyStringRowHandleTreeViewRow = actualRows[ 2 ];
+  let row1: SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow = actualRows[ 2 ];
    AssertEqual ( "ROW_B", row1.getRowHandle (  ) );
    AssertEqual ( 0, row1.getRowDepth (  ) );
-   AssertEqual ( "B", row1.getColumnCellText (  ) );
+   AssertEqual ( "B", row1.getColumnCellLabelText (  ) );
  }
  }
   
-  public then_MyStringHandleMultiSelectRowListView_has_3_rows (  ) {
-  let actualRows: SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow [] = this.sut.getMyStringHandleMultiSelectRowListViewWidgetListRows (  );
+  public then_MyStringHandleMultiSelectRowListViewElements_has_3_rows (  ) {
+  let actualRows: SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow [] = this.sut.getMyStringHandleMultiSelectRowListViewElementsListWidgetListRows (  );
    AssertEqual ( 3, actualRows->size (  ) );
    {
-  let row0: SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow = actualRows[ 1 ];
+  let row0: SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow = actualRows[ 1 ];
    AssertEqual ( "ROW_A", row0.getRowHandle (  ) );
-   AssertEqual ( "A", row0.getHeaderText (  ) );
+   AssertEqual ( "A", row0.getHeaderLabelText (  ) );
  }
    {
-  let row1: SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow = actualRows[ 2 ];
+  let row1: SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow = actualRows[ 2 ];
    AssertEqual ( "ROW_B", row1.getRowHandle (  ) );
-   AssertEqual ( "B", row1.getHeaderText (  ) );
+   AssertEqual ( "B", row1.getHeaderLabelText (  ) );
  }
    {
-  let row2: SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow = actualRows[ 3 ];
+  let row2: SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow = actualRows[ 3 ];
    AssertEqual ( "ROW_C", row2.getRowHandle (  ) );
-   AssertEqual ( "C", row2.getHeaderText (  ) );
+   AssertEqual ( "C", row2.getHeaderLabelText (  ) );
  }
  }
 }

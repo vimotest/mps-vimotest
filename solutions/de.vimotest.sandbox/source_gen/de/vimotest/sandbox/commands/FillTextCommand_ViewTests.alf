@@ -15,14 +15,14 @@ class FillTextCommand_ViewTests {
  }
   
   
-  public Fill_Text_TextBox_given_when_fill_Changed_in_MyTextBox_then_ (  ) {
+  public Fill_Text_TextBox_given_when_fill_Changed_in_MyValue_then_ (  ) {
   this.BuildSut (  );
-   this.when_fill_Changed_in_MyTextBox (  );
+   this.when_fill_Changed_in_MyValue (  );
  }
   
-  public Fill_Text_ComboBox_given_when_fill_Changed_in_MyFreeTextComboBox_then_ (  ) {
+  public Fill_Text_ComboBox_given_when_fill_Changed_in_MyFreeValue_then_ (  ) {
   this.BuildSut (  );
-   this.when_fill_Changed_in_MyFreeTextComboBox (  );
+   this.when_fill_Changed_in_MyFreeValue (  );
  }
   
   
@@ -37,12 +37,12 @@ class FillTextCommand_ViewTests {
   // When Helper Definitions
 
   
-  public when_fill_Changed_in_MyTextBox (  ) {
-  this.sut.myTextBoxTextFilled ( "Changed" );
+  public when_fill_Changed_in_MyValue (  ) {
+  this.sut.myValueTextFilled ( "Changed" );
  }
   
-  public when_fill_Changed_in_MyFreeTextComboBox (  ) {
-  this.sut.myFreeTextComboBoxTextFilled ( "Changed" );
+  public when_fill_Changed_in_MyFreeValue (  ) {
+  this.sut.myFreeValueTextFilled ( "Changed" );
  }
   
   // Then Helper Definitions

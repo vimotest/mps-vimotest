@@ -3,21 +3,21 @@
 
 #include <vector>
 #include <memory>
-#include "CapitalizedGetterNames_ViewListViewRow.h"
+#include "CapitalizedGetterNames_ViewMyElementsRow.h"
 #include <string>
 
 class CapitalizedGetterNames_View
 {
   public:
-  virtual bool GetIsMyCheckBoxChecked() ;
+  virtual bool GetIsMyFlagCheckBoxChecked() ;
   virtual bool GetMyVisibility() ;
-  virtual bool GetIsMyCheckBoxEnabled() ;
-  virtual std::string GetMyCheckBoxText() ;
-  virtual std::vector<std::shared_ptr<CapitalizedGetterNames_ViewListViewRow>> GetMyRows() ;
+  virtual bool GetIsMyFlagCheckBoxEnabled() ;
+  virtual std::string GetMyFlagCheckBoxText() ;
+  virtual std::vector<std::shared_ptr<CapitalizedGetterNames_ViewMyElementsRow>> GetMyRows() ;
   private:
-  bool isMyCheckBoxChecked;
+  bool isMyFlagCheckBoxChecked;
   bool myVisibility;
-  bool isMyCheckBoxEnabled;
-  std::string MyCheckBoxText;
-  std::vector<std::shared_ptr<CapitalizedGetterNames_ViewListViewRow>> myRows;
+  bool isMyFlagCheckBoxEnabled;
+  std::string MyFlagCheckBoxText;
+  std::vector<std::shared_ptr<CapitalizedGetterNames_ViewMyElementsRow>> myRows;
 };

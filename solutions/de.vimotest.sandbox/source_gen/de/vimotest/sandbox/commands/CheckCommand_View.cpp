@@ -4,13 +4,13 @@
 
 namespace commands
 {
-  bool CheckCommand_View::getIsMyCheckBox1Checked( ) 
+  bool CheckCommand_View::getIsMyCheckBox1CheckBoxChecked( ) 
   {
-    return this->isMyCheckBox1Checked;
+    return this->isMyCheckBox1CheckBoxChecked;
   }
-  bool CheckCommand_View::getIsMyCheckBox2Checked( ) 
+  bool CheckCommand_View::getIsMyCheckBox2CheckBoxChecked( ) 
   {
-    return this->isMyCheckBox2Checked;
+    return this->isMyCheckBox2CheckBoxChecked;
   }
   void CheckCommand_View::myCheckBox1Checked(bool isChecked ) 
   {

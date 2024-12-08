@@ -4,31 +4,31 @@ namespace commands ;
 
 class SelectEntryCommand_View {
   
-  private MyComboBoxComboBoxEntries : String [ * ]  ;
+  private MyElementsComboBoxComboBoxEntries : String [ * ]  ;
   
-  public getMyComboBoxComboBoxEntries (  ) : String [ * ]  {
-  return this.MyComboBoxComboBoxEntries;
+  public getMyElementsComboBoxComboBoxEntries (  ) : String [ * ]  {
+  return this.MyElementsComboBoxComboBoxEntries;
  }
   
-  private MyComboBoxSelectedEntry : String  ;
+  private MyElementsComboBoxSelectedEntry : String  ;
   
-  public getMyComboBoxSelectedEntry (  ) : String  {
-  return this.MyComboBoxSelectedEntry;
+  public getMyElementsComboBoxSelectedEntry (  ) : String  {
+  return this.MyElementsComboBoxSelectedEntry;
  }
   
-  private MyRadioButtonRadioButtonChoices : String [ * ]  ;
+  private MyOptionsRadioButtonRadioButtonChoices : String [ * ]  ;
   
-  public getMyRadioButtonRadioButtonChoices (  ) : String [ * ]  {
-  return this.MyRadioButtonRadioButtonChoices;
+  public getMyOptionsRadioButtonRadioButtonChoices (  ) : String [ * ]  {
+  return this.MyOptionsRadioButtonRadioButtonChoices;
  }
   
-  private MyRadioButtonSelectedEntry : String  ;
+  private MyOptionsRadioButtonSelectedEntry : String  ;
   
-  public getMyRadioButtonSelectedEntry (  ) : String  {
-  return this.MyRadioButtonSelectedEntry;
+  public getMyOptionsRadioButtonSelectedEntry (  ) : String  {
+  return this.MyOptionsRadioButtonSelectedEntry;
  }
   
-  public myComboBoxEntrySelected (   in entryName : String  ) {     }
+  public myElementsEntrySelected (   in entryName : String  ) {     }
   
-  public myRadioButtonEntrySelected (   in entryName : String  ) {     }
+  public myOptionsEntrySelected (   in entryName : String  ) {     }
 }

@@ -4,16 +4,16 @@ namespace widgetassertions ;
 
 class ListViews_ViewMyCheckboxesRow {
   
-  private isHeaderChecked : Boolean  ;
+  private isHeaderCheckBoxChecked : Boolean  ;
   
-  public getIsHeaderChecked (  ) : Boolean  {
-  return this.isHeaderChecked;
+  public getIsHeaderCheckBoxChecked (  ) : Boolean  {
+  return this.isHeaderCheckBoxChecked;
  }
   
-  private HeaderText : String  ;
+  private HeaderCheckBoxText : String  ;
   
-  public getHeaderText (  ) : String  {
-  return this.HeaderText;
+  public getHeaderCheckBoxText (  ) : String  {
+  return this.HeaderCheckBoxText;
  }
   
   private RowIndex : Integer  ;

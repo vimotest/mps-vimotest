@@ -12,9 +12,9 @@ public class ClickCommand_ViewTests_Test {
   private ClickCommand_View sut;
   private ClickCommand_ViewContextProvider contextProvider;
   @Test
-  public void test_Click_Button_given_when_click_MyButton_then_() throws Exception {
+  public void test_Click_Button_given_when_click_Ok_then_() throws Exception {
     this.BuildSut();
-    this.when_click_MyButton();
+    this.when_click_Ok();
   }
   @BeforeEach
   public void setUp() {
@@ -32,8 +32,8 @@ public class ClickCommand_ViewTests_Test {
 
 
 
-  public void when_click_MyButton() {
-    this.sut.myButtonClicked();
+  public void when_click_Ok() {
+    this.sut.okClicked();
   }
 
 

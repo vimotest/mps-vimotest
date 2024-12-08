@@ -6,68 +6,68 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class ListViews_View {
-  private Boolean isMyListOfLabelVisibility;
-  public Boolean getIsMyListOfLabelVisibility() {
-    return this.isMyListOfLabelVisibility;
+  private Boolean isMyListOfLabelListVisibility;
+  public Boolean getIsMyListOfLabelListVisibility() {
+    return this.isMyListOfLabelListVisibility;
   }
-  private Boolean isMyListOfLabelEnabled;
-  public Boolean getIsMyListOfLabelEnabled() {
-    return this.isMyListOfLabelEnabled;
+  private Boolean isMyListOfLabelListEnabled;
+  public Boolean getIsMyListOfLabelListEnabled() {
+    return this.isMyListOfLabelListEnabled;
   }
-  private List<ListViews_ViewMyListOfLabelRow> MyListOfLabelWidgetListRows = new LinkedList<>();
-  public List<ListViews_ViewMyListOfLabelRow> getMyListOfLabelWidgetListRows() {
-    return this.MyListOfLabelWidgetListRows;
+  private List<ListViews_ViewMyListOfLabelRow> MyListOfLabelListWidgetListRows = new LinkedList<>();
+  public List<ListViews_ViewMyListOfLabelRow> getMyListOfLabelListWidgetListRows() {
+    return this.MyListOfLabelListWidgetListRows;
   }
-  private Integer MyListOfLabelSelectedRow;
-  public Integer getMyListOfLabelSelectedRow() {
-    return this.MyListOfLabelSelectedRow;
+  private Integer MyListOfLabelListSelectedRow;
+  public Integer getMyListOfLabelListSelectedRow() {
+    return this.MyListOfLabelListSelectedRow;
   }
-  private Boolean isMyListOfImagesVisibility;
-  public Boolean getIsMyListOfImagesVisibility() {
-    return this.isMyListOfImagesVisibility;
+  private Boolean isMyListOfImagesListVisibility;
+  public Boolean getIsMyListOfImagesListVisibility() {
+    return this.isMyListOfImagesListVisibility;
   }
-  private Boolean isMyListOfImagesEnabled;
-  public Boolean getIsMyListOfImagesEnabled() {
-    return this.isMyListOfImagesEnabled;
+  private Boolean isMyListOfImagesListEnabled;
+  public Boolean getIsMyListOfImagesListEnabled() {
+    return this.isMyListOfImagesListEnabled;
   }
-  private List<ListViews_ViewMyListOfImagesRow> MyListOfImagesWidgetListRows = new LinkedList<>();
-  public List<ListViews_ViewMyListOfImagesRow> getMyListOfImagesWidgetListRows() {
-    return this.MyListOfImagesWidgetListRows;
+  private List<ListViews_ViewMyListOfImagesRow> MyListOfImagesListWidgetListRows = new LinkedList<>();
+  public List<ListViews_ViewMyListOfImagesRow> getMyListOfImagesListWidgetListRows() {
+    return this.MyListOfImagesListWidgetListRows;
   }
-  private Integer MyListOfImagesSelectedRow;
-  public Integer getMyListOfImagesSelectedRow() {
-    return this.MyListOfImagesSelectedRow;
+  private Integer MyListOfImagesListSelectedRow;
+  public Integer getMyListOfImagesListSelectedRow() {
+    return this.MyListOfImagesListSelectedRow;
   }
-  private List<ListViews_ViewMyCheckboxesRow> MyCheckboxesWidgetListRows = new LinkedList<>();
-  public List<ListViews_ViewMyCheckboxesRow> getMyCheckboxesWidgetListRows() {
-    return this.MyCheckboxesWidgetListRows;
+  private List<ListViews_ViewMyCheckboxesRow> MyCheckboxesListWidgetListRows = new LinkedList<>();
+  public List<ListViews_ViewMyCheckboxesRow> getMyCheckboxesListWidgetListRows() {
+    return this.MyCheckboxesListWidgetListRows;
   }
-  private Integer MyCheckboxesSelectedRow;
-  public Integer getMyCheckboxesSelectedRow() {
-    return this.MyCheckboxesSelectedRow;
+  private Integer MyCheckboxesListSelectedRow;
+  public Integer getMyCheckboxesListSelectedRow() {
+    return this.MyCheckboxesListSelectedRow;
   }
-  private Boolean isMyCheckboxesVisibility;
-  public Boolean getIsMyCheckboxesVisibility() {
-    return this.isMyCheckboxesVisibility;
+  private Boolean isMyCheckboxesListVisibility;
+  public Boolean getIsMyCheckboxesListVisibility() {
+    return this.isMyCheckboxesListVisibility;
   }
-  private Boolean isMyCheckboxesEnabled;
-  public Boolean getIsMyCheckboxesEnabled() {
-    return this.isMyCheckboxesEnabled;
+  private Boolean isMyCheckboxesListEnabled;
+  public Boolean getIsMyCheckboxesListEnabled() {
+    return this.isMyCheckboxesListEnabled;
   }
-  private List<ListViews_ViewMyStringRowHandlesRow> MyStringRowHandlesWidgetListRows = new LinkedList<>();
-  public List<ListViews_ViewMyStringRowHandlesRow> getMyStringRowHandlesWidgetListRows() {
-    return this.MyStringRowHandlesWidgetListRows;
+  private List<ListViews_ViewMyStringRowHandlesRow> MyStringRowHandlesListWidgetListRows = new LinkedList<>();
+  public List<ListViews_ViewMyStringRowHandlesRow> getMyStringRowHandlesListWidgetListRows() {
+    return this.MyStringRowHandlesListWidgetListRows;
   }
-  private String MyStringRowHandlesSelectedRow;
-  public String getMyStringRowHandlesSelectedRow() {
-    return this.MyStringRowHandlesSelectedRow;
+  private String MyStringRowHandlesListSelectedRow;
+  public String getMyStringRowHandlesListSelectedRow() {
+    return this.MyStringRowHandlesListSelectedRow;
   }
-  private List<ListViews_ViewMyMultiRowSelectionListRow> MyMultiRowSelectionListWidgetListRows = new LinkedList<>();
-  public List<ListViews_ViewMyMultiRowSelectionListRow> getMyMultiRowSelectionListWidgetListRows() {
-    return this.MyMultiRowSelectionListWidgetListRows;
+  private List<ListViews_ViewMyListWithMultiRowSelectionRow> MyListWithMultiRowSelectionListWidgetListRows = new LinkedList<>();
+  public List<ListViews_ViewMyListWithMultiRowSelectionRow> getMyListWithMultiRowSelectionListWidgetListRows() {
+    return this.MyListWithMultiRowSelectionListWidgetListRows;
   }
-  private List<Integer> MyMultiRowSelectionListSelectedRows = new LinkedList<>();
-  public List<Integer> getMyMultiRowSelectionListSelectedRows() {
-    return this.MyMultiRowSelectionListSelectedRows;
+  private List<Integer> MyListWithMultiRowSelectionListSelectedRows = new LinkedList<>();
+  public List<Integer> getMyListWithMultiRowSelectionListSelectedRows() {
+    return this.MyListWithMultiRowSelectionListSelectedRows;
   }
 }

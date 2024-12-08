@@ -4,22 +4,22 @@ namespace commands ;
 
 class RowBasedCommand_View {
   
-  private MyListViewWidgetListRows : RowBasedCommand_ViewMyListViewRow [ * ]  ;
+  private MyFlagsListWidgetListRows : RowBasedCommand_ViewMyFlagsRow [ * ]  ;
   
-  public getMyListViewWidgetListRows (  ) : RowBasedCommand_ViewMyListViewRow [ * ]  {
-  return this.MyListViewWidgetListRows;
+  public getMyFlagsListWidgetListRows (  ) : RowBasedCommand_ViewMyFlagsRow [ * ]  {
+  return this.MyFlagsListWidgetListRows;
  }
   
-  private MyTableViewWidgetTableRows : RowBasedCommand_ViewMyTableViewRow [ * ]  ;
+  private MyComboBoxesTableWidgetTableRows : RowBasedCommand_ViewMyComboBoxesRow [ * ]  ;
   
-  public getMyTableViewWidgetTableRows (  ) : RowBasedCommand_ViewMyTableViewRow [ * ]  {
-  return this.MyTableViewWidgetTableRows;
+  public getMyComboBoxesTableWidgetTableRows (  ) : RowBasedCommand_ViewMyComboBoxesRow [ * ]  {
+  return this.MyComboBoxesTableWidgetTableRows;
  }
   
-  private MyTreeViewWidgetTreeRows : RowBasedCommand_ViewMyTreeViewRow [ * ]  ;
+  private MyStandardControlsTreeWidgetTreeRows : RowBasedCommand_ViewMyStandardControlsRow [ * ]  ;
   
-  public getMyTreeViewWidgetTreeRows (  ) : RowBasedCommand_ViewMyTreeViewRow [ * ]  {
-  return this.MyTreeViewWidgetTreeRows;
+  public getMyStandardControlsTreeWidgetTreeRows (  ) : RowBasedCommand_ViewMyStandardControlsRow [ * ]  {
+  return this.MyStandardControlsTreeWidgetTreeRows;
  }
   
   public loadView (  ) {     }

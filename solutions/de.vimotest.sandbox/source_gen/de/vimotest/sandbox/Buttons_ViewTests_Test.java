@@ -13,10 +13,10 @@ public class Buttons_ViewTests_Test {
   private Buttons_View sut;
   private Buttons_ViewContextProvider contextProvider;
   @Test
-  public void test_My_Scenario_given_empty_context_when_then_OkButton_is_enabled_and_is_visible_and_shows_text_Test_() throws Exception {
+  public void test_My_Scenario_given_empty_context_when_then_Ok_is_enabled_and_is_visible_and_shows_text_Test_() throws Exception {
     this.given_empty_context();
     this.BuildSut();
-    this.then_OkButton_is_enabled_and_is_visible_and_shows_text_Test_();
+    this.then_Ok_is_enabled_and_is_visible_and_shows_text_Test_();
   }
   @BeforeEach
   public void setUp() {
@@ -38,7 +38,7 @@ public class Buttons_ViewTests_Test {
 
 
 
-  public void then_OkButton_is_enabled_and_is_visible_and_shows_text_Test_() {
+  public void then_Ok_is_enabled_and_is_visible_and_shows_text_Test_() {
     Assert.assertTrue(this.sut.getIsOkButtonEnabled());
     Assert.assertTrue(this.sut.getIsOkButtonVisibility());
     Assert.assertEquals("Test", this.sut.getOkButtonText());

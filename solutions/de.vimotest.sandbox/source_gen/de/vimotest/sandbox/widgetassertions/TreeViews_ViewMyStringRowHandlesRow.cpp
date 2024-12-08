@@ -5,9 +5,9 @@
 
 namespace widgetassertions
 {
-  std::string TreeViews_ViewMyStringRowHandlesRow::getValuesText( ) 
+  std::string TreeViews_ViewMyStringRowHandlesRow::getValuesLabelText( ) 
   {
-    return this->ValuesText;
+    return this->ValuesLabelText;
   }
   std::string TreeViews_ViewMyStringRowHandlesRow::getRowHandle( ) 
   {

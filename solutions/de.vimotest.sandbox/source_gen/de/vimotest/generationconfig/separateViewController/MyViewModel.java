@@ -4,8 +4,8 @@ package de.vimotest.generationConfig.separateViewController;
 
 
 public class MyViewModel {
-  private Boolean isMyCheckBoxChecked;
-  public Boolean getIsMyCheckBoxChecked() {
-    return this.isMyCheckBoxChecked;
+  private Boolean isMyFlagCheckBoxChecked;
+  public Boolean getIsMyFlagCheckBoxChecked() {
+    return this.isMyFlagCheckBoxChecked;
   }
 }

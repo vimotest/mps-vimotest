@@ -4,10 +4,10 @@
 
 class CapitalizedGetterNames_View {
   
-  private isMyCheckBoxChecked : Boolean  ;
+  private isMyFlagCheckBoxChecked : Boolean  ;
   
-  public GetIsMyCheckBoxChecked (  ) : Boolean  {
-  return this.isMyCheckBoxChecked;
+  public GetIsMyFlagCheckBoxChecked (  ) : Boolean  {
+  return this.isMyFlagCheckBoxChecked;
  }
   
   private myVisibility : Boolean  ;
@@ -16,21 +16,21 @@ class CapitalizedGetterNames_View {
   return this.myVisibility;
  }
   
-  private isMyCheckBoxEnabled : Boolean  ;
+  private isMyFlagCheckBoxEnabled : Boolean  ;
   
-  public GetIsMyCheckBoxEnabled (  ) : Boolean  {
-  return this.isMyCheckBoxEnabled;
+  public GetIsMyFlagCheckBoxEnabled (  ) : Boolean  {
+  return this.isMyFlagCheckBoxEnabled;
  }
   
-  private MyCheckBoxText : String  ;
+  private MyFlagCheckBoxText : String  ;
   
-  public GetMyCheckBoxText (  ) : String  {
-  return this.MyCheckBoxText;
+  public GetMyFlagCheckBoxText (  ) : String  {
+  return this.MyFlagCheckBoxText;
  }
   
-  private myRows : CapitalizedGetterNames_ViewListViewRow [ * ]  ;
+  private myRows : CapitalizedGetterNames_ViewMyElementsRow [ * ]  ;
   
-  public GetMyRows (  ) : CapitalizedGetterNames_ViewListViewRow [ * ]  {
+  public GetMyRows (  ) : CapitalizedGetterNames_ViewMyElementsRow [ * ]  {
   return this.myRows;
  }
 }

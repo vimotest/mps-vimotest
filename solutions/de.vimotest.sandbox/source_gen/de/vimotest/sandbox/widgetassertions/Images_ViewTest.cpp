@@ -15,8 +15,8 @@ namespace widgetassertions
     std::shared_ptr<Images_ViewContextProvider> contextProvider;
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
-    virtual void then_MyImage_shows_image_image_active_() ;
-    virtual void then_MyUpDownImage_shows_image_image_down_() ;
+    virtual void then_Status_shows_image_image_active_() ;
+    virtual void then_UpOrDown_shows_image_image_down_() ;
     protected:
     void SetUp() override ;
   };
@@ -25,12 +25,12 @@ namespace widgetassertions
     this->contextProvider = std::make_shared<Images_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
-  TEST_F(Images_ViewTest,  My_Scenario_given_empty_context_when_then_MyImage_shows_image_image_active_and_MyUpDownImage_shows_image_image_down_) 
+  TEST_F(Images_ViewTest,  My_Scenario_given_empty_context_when_then_Status_shows_image_image_active_and_UpOrDown_shows_image_image_down_) 
   {
     this->given_empty_context();
     this->BuildSut();
-    this->then_MyImage_shows_image_image_active_();
-    this->then_MyUpDownImage_shows_image_image_down_();
+    this->then_Status_shows_image_image_active_();
+    this->then_UpOrDown_shows_image_image_down_();
   }
   void Images_ViewTest::BuildSut( ) 
   {
@@ -40,13 +40,13 @@ namespace widgetassertions
   {
     
   }
-  void Images_ViewTest::then_MyImage_shows_image_image_active_( ) 
+  void Images_ViewTest::then_Status_shows_image_image_active_( ) 
   {
-    EXPECT_EQ(std::string("image_active"), this->sut->getMyImageImageSource());
+    EXPECT_EQ(std::string("image_active"), this->sut->getStatusImageImageSource());
   }
-  void Images_ViewTest::then_MyUpDownImage_shows_image_image_down_( ) 
+  void Images_ViewTest::then_UpOrDown_shows_image_image_down_( ) 
   {
-    EXPECT_EQ(std::string("image_down"), this->sut->getMyUpDownImageImageSource());
+    EXPECT_EQ(std::string("image_down"), this->sut->getUpOrDownImageImageSource());
   }
 }
 

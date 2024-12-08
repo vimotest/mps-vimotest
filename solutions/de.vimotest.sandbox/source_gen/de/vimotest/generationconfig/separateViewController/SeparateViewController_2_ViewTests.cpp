@@ -16,7 +16,7 @@ class SeparateViewController_2_ViewTests : public testing::Test
   virtual void RetrieveViewModel() ;
   virtual void given_empty_context() ;
   virtual void when_LoadView() ;
-  virtual void when_uncheck_MyCheckBox() ;
+  virtual void when_uncheck_MyFlag() ;
   protected:
   void SetUp() override ;
 };
@@ -27,12 +27,12 @@ void SeparateViewController_2_ViewTests::SetUp( )
   this->contextProvider->Init();
 }
 
-TEST_F(SeparateViewController_2_ViewTests,  MyTest2_given_empty_context_when_LoadView_and_uncheck_MyCheckBox_then_) 
+TEST_F(SeparateViewController_2_ViewTests,  MyTest2_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_) 
 {
   this->given_empty_context();
   this->BuildSut();
   this->when_LoadView();
-  this->when_uncheck_MyCheckBox();
+  this->when_uncheck_MyFlag();
   this->RetrieveViewModel();
 }
 
@@ -56,7 +56,7 @@ void SeparateViewController_2_ViewTests::when_LoadView( )
   this->sutViewController->loadView();
 }
 
-void SeparateViewController_2_ViewTests::when_uncheck_MyCheckBox( ) 
+void SeparateViewController_2_ViewTests::when_uncheck_MyFlag( ) 
 {
-  this->sutViewController->myCheckBoxChecked(false);
+  this->sutViewController->myFlagChecked(false);
 }

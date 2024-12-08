@@ -6,44 +6,44 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class Labels_View {
-  private String MyLabelText;
-  public String getMyLabelText() {
-    return this.MyLabelText;
+  private String TestLabelText;
+  public String getTestLabelText() {
+    return this.TestLabelText;
   }
-  private Boolean isMyLabelEnabled;
-  public Boolean getIsMyLabelEnabled() {
-    return this.isMyLabelEnabled;
+  private Boolean isTestLabelEnabled;
+  public Boolean getIsTestLabelEnabled() {
+    return this.isTestLabelEnabled;
   }
-  private Boolean isMyLabelVisibility;
-  public Boolean getIsMyLabelVisibility() {
-    return this.isMyLabelVisibility;
+  private Boolean isTestLabelVisibility;
+  public Boolean getIsTestLabelVisibility() {
+    return this.isTestLabelVisibility;
   }
-  private List<String> MyMultiLineLabelText = new LinkedList<>();
-  public List<String> getMyMultiLineLabelText() {
-    return this.MyMultiLineLabelText;
+  private List<String> MultiLineLabelText = new LinkedList<>();
+  public List<String> getMultiLineLabelText() {
+    return this.MultiLineLabelText;
   }
-  private String MyLabelWithToolTipText;
-  public String getMyLabelWithToolTipText() {
-    return this.MyLabelWithToolTipText;
+  private String WithToolTipLabelText;
+  public String getWithToolTipLabelText() {
+    return this.WithToolTipLabelText;
   }
-  private String MyLabelWithToolTipToolTip;
-  public String getMyLabelWithToolTipToolTip() {
-    return this.MyLabelWithToolTipToolTip;
+  private String WithToolTipLabelToolTip;
+  public String getWithToolTipLabelToolTip() {
+    return this.WithToolTipLabelToolTip;
   }
-  private String MyLabelWithMultiLineToolTipText;
-  public String getMyLabelWithMultiLineToolTipText() {
-    return this.MyLabelWithMultiLineToolTipText;
+  private String WithMultiLineToolTipLabelText;
+  public String getWithMultiLineToolTipLabelText() {
+    return this.WithMultiLineToolTipLabelText;
   }
-  private List<String> MyLabelWithMultiLineToolTipToolTip = new LinkedList<>();
-  public List<String> getMyLabelWithMultiLineToolTipToolTip() {
-    return this.MyLabelWithMultiLineToolTipToolTip;
+  private List<String> WithMultiLineToolTipLabelToolTip = new LinkedList<>();
+  public List<String> getWithMultiLineToolTipLabelToolTip() {
+    return this.WithMultiLineToolTipLabelToolTip;
   }
-  private String MyLabelWithTextColorText;
-  public String getMyLabelWithTextColorText() {
-    return this.MyLabelWithTextColorText;
+  private String WithTextColorLabelText;
+  public String getWithTextColorLabelText() {
+    return this.WithTextColorLabelText;
   }
-  private String MyLabelWithTextColorTextColor;
-  public String getMyLabelWithTextColorTextColor() {
-    return this.MyLabelWithTextColorTextColor;
+  private String WithTextColorLabelTextColor;
+  public String getWithTextColorLabelTextColor() {
+    return this.WithTextColorLabelTextColor;
   }
 }

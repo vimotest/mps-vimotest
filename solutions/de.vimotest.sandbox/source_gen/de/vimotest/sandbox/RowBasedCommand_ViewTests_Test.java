@@ -8,37 +8,37 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.commands.RowBasedCommand_ViewContextProviderImpl;
 import java.util.List;
-import de.vimotest.sandbox.commands.RowBasedCommand_ViewMyListViewRow;
+import de.vimotest.sandbox.commands.RowBasedCommand_ViewMyFlagsRow;
 import org.junit.Assert;
-import de.vimotest.sandbox.commands.RowBasedCommand_ViewMyTableViewRow;
-import de.vimotest.sandbox.commands.RowBasedCommand_ViewMyTreeViewRow;
+import de.vimotest.sandbox.commands.RowBasedCommand_ViewMyComboBoxesRow;
+import de.vimotest.sandbox.commands.RowBasedCommand_ViewMyStandardControlsRow;
 
 public class RowBasedCommand_ViewTests_Test {
   private RowBasedCommand_View sut;
   private RowBasedCommand_ViewContextProvider contextProvider;
   @Test
-  public void test_ListView_RowBased_Commands_given_when_check_Checkboxes_at_0_and_uncheck_Checkboxes_at_1_then_MyListView_has_2_rows() throws Exception {
+  public void test_ListView_RowBased_Commands_given_when_check_Checkboxes_at_0_and_uncheck_Checkboxes_at_1_then_MyFlags_has_2_rows() throws Exception {
     this.BuildSut();
     this.when_check_Checkboxes_at_0();
     this.when_uncheck_Checkboxes_at_1();
-    this.then_MyListView_has_2_rows();
+    this.then_MyFlags_has_2_rows();
   }
   @Test
-  public void test_TableView_RowBased_Commands_given_when_select_entry_MyText1_in_FreeTextComboBoxes_at_0_and_select_entry_MyText2_in_FreeTextComboBoxes_at_1_and_select_entry_B_in_EntryComboBoxes_at_0_and_select_entry_D_in_EntryComboBoxes_at_1_then_MyTableView_has_2_rows() throws Exception {
+  public void test_TableView_RowBased_Commands_given_when_select_entry_MyText1_in_FreeTextComboBoxes_at_0_and_select_entry_MyText2_in_FreeTextComboBoxes_at_1_and_select_entry_B_in_EntryComboBoxes_at_0_and_select_entry_D_in_EntryComboBoxes_at_1_then_MyComboBoxes_has_2_rows() throws Exception {
     this.BuildSut();
     this.when_select_entry_MyText1_in_FreeTextComboBoxes_at_0();
     this.when_select_entry_MyText2_in_FreeTextComboBoxes_at_1();
     this.when_select_entry_B_in_EntryComboBoxes_at_0();
     this.when_select_entry_D_in_EntryComboBoxes_at_1();
-    this.then_MyTableView_has_2_rows();
+    this.then_MyComboBoxes_has_2_rows();
   }
   @Test
-  public void test_TreeView_RowBased_Commands_given_when_fill_A_in_TextBoxes_at_0_and_fill_B_in_TextBoxes_at_1_and_click_Buttons_at_0_then_MyTreeView_has_2_rows() throws Exception {
+  public void test_TreeView_RowBased_Commands_given_when_fill_A_in_TextBoxes_at_0_and_fill_B_in_TextBoxes_at_1_and_click_Buttons_at_0_then_MyStandardControls_has_2_rows() throws Exception {
     this.BuildSut();
     this.when_fill_A_in_TextBoxes_at_0();
     this.when_fill_B_in_TextBoxes_at_1();
     this.when_click_Buttons_at_0();
-    this.then_MyTreeView_has_2_rows();
+    this.then_MyStandardControls_has_2_rows();
   }
   @BeforeEach
   public void setUp() {
@@ -85,66 +85,66 @@ public class RowBasedCommand_ViewTests_Test {
   }
 
 
-  public void then_MyListView_has_2_rows() {
-    List<RowBasedCommand_ViewMyListViewRow> actualRows = this.sut.getMyListViewWidgetListRows();
+  public void then_MyFlags_has_2_rows() {
+    List<RowBasedCommand_ViewMyFlagsRow> actualRows = this.sut.getMyFlagsListWidgetListRows();
     Assert.assertEquals(2, actualRows.size());
     // {
-    RowBasedCommand_ViewMyListViewRow row0 = actualRows.get(1 - 1);
+    RowBasedCommand_ViewMyFlagsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
-    Assert.assertTrue(row0.getIsCheckboxesChecked());
+    Assert.assertTrue(row0.getIsCheckboxesCheckBoxChecked());
     // }
     // {
-    RowBasedCommand_ViewMyListViewRow row1 = actualRows.get(2 - 1);
+    RowBasedCommand_ViewMyFlagsRow row1 = actualRows.get(2 - 1);
     Assert.assertEquals(Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
-    Assert.assertFalse(row1.getIsCheckboxesChecked());
+    Assert.assertFalse(row1.getIsCheckboxesCheckBoxChecked());
     // }
   }
-  public void then_MyTableView_has_2_rows() {
-    List<RowBasedCommand_ViewMyTableViewRow> actualRows = this.sut.getMyTableViewWidgetTableRows();
+  public void then_MyComboBoxes_has_2_rows() {
+    List<RowBasedCommand_ViewMyComboBoxesRow> actualRows = this.sut.getMyComboBoxesTableWidgetTableRows();
     Assert.assertEquals(2, actualRows.size());
     // {
-    RowBasedCommand_ViewMyTableViewRow row0 = actualRows.get(1 - 1);
+    RowBasedCommand_ViewMyComboBoxesRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
-    List<String> actualRow0FreeTextComboBoxesEntries = row0.getFreeTextComboBoxesComboBoxEntries();
+    List<String> actualRow0FreeTextComboBoxesEntries = row0.getFreeTextComboBoxesComboBoxComboBoxEntries();
     Assert.assertEquals(0, actualRow0FreeTextComboBoxesEntries.size());
-    Assert.assertEquals(null, row0.getFreeTextComboBoxesSelectedEntry());
-    Assert.assertEquals("MyText1", row0.getFreeTextComboBoxesText());
-    List<String> actualRow0EntryComboBoxesEntries = row0.getEntryComboBoxesComboBoxEntries();
+    Assert.assertEquals(null, row0.getFreeTextComboBoxesComboBoxSelectedEntry());
+    Assert.assertEquals("MyText1", row0.getFreeTextComboBoxesComboBoxText());
+    List<String> actualRow0EntryComboBoxesEntries = row0.getEntryComboBoxesComboBoxComboBoxEntries();
     Assert.assertEquals(3, actualRow0EntryComboBoxesEntries.size());
     Assert.assertEquals("A", actualRow0EntryComboBoxesEntries.get(1 - 1));
     Assert.assertEquals("B", actualRow0EntryComboBoxesEntries.get(2 - 1));
     Assert.assertEquals("C", actualRow0EntryComboBoxesEntries.get(3 - 1));
-    Assert.assertEquals(null, row0.getEntryComboBoxesSelectedEntry());
+    Assert.assertEquals(null, row0.getEntryComboBoxesComboBoxSelectedEntry());
     // }
     // {
-    RowBasedCommand_ViewMyTableViewRow row1 = actualRows.get(2 - 1);
+    RowBasedCommand_ViewMyComboBoxesRow row1 = actualRows.get(2 - 1);
     Assert.assertEquals(Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
-    List<String> actualRow1FreeTextComboBoxesEntries = row1.getFreeTextComboBoxesComboBoxEntries();
+    List<String> actualRow1FreeTextComboBoxesEntries = row1.getFreeTextComboBoxesComboBoxComboBoxEntries();
     Assert.assertEquals(0, actualRow1FreeTextComboBoxesEntries.size());
-    Assert.assertEquals(null, row1.getFreeTextComboBoxesSelectedEntry());
-    Assert.assertEquals("MyText2", row1.getFreeTextComboBoxesText());
-    List<String> actualRow1EntryComboBoxesEntries = row1.getEntryComboBoxesComboBoxEntries();
+    Assert.assertEquals(null, row1.getFreeTextComboBoxesComboBoxSelectedEntry());
+    Assert.assertEquals("MyText2", row1.getFreeTextComboBoxesComboBoxText());
+    List<String> actualRow1EntryComboBoxesEntries = row1.getEntryComboBoxesComboBoxComboBoxEntries();
     Assert.assertEquals(3, actualRow1EntryComboBoxesEntries.size());
     Assert.assertEquals("D", actualRow1EntryComboBoxesEntries.get(1 - 1));
     Assert.assertEquals("E", actualRow1EntryComboBoxesEntries.get(2 - 1));
     Assert.assertEquals("F", actualRow1EntryComboBoxesEntries.get(3 - 1));
-    Assert.assertEquals(null, row1.getEntryComboBoxesSelectedEntry());
+    Assert.assertEquals(null, row1.getEntryComboBoxesComboBoxSelectedEntry());
     // }
   }
-  public void then_MyTreeView_has_2_rows() {
-    List<RowBasedCommand_ViewMyTreeViewRow> actualRows = this.sut.getMyTreeViewWidgetTreeRows();
+  public void then_MyStandardControls_has_2_rows() {
+    List<RowBasedCommand_ViewMyStandardControlsRow> actualRows = this.sut.getMyStandardControlsTreeWidgetTreeRows();
     Assert.assertEquals(2, actualRows.size());
     // {
-    RowBasedCommand_ViewMyTreeViewRow row0 = actualRows.get(1 - 1);
+    RowBasedCommand_ViewMyStandardControlsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
     Assert.assertEquals(Integer.valueOf(row0.getRowDepth()), row0.getRowDepth());
-    Assert.assertEquals("A", row0.getTextBoxesText());
+    Assert.assertEquals("A", row0.getTextBoxesTextBoxText());
     // }
     // {
-    RowBasedCommand_ViewMyTreeViewRow row1 = actualRows.get(2 - 1);
+    RowBasedCommand_ViewMyStandardControlsRow row1 = actualRows.get(2 - 1);
     Assert.assertEquals(Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
     Assert.assertEquals(Integer.valueOf(row1.getRowDepth()), row1.getRowDepth());
-    Assert.assertEquals("B", row1.getTextBoxesText());
+    Assert.assertEquals("B", row1.getTextBoxesTextBoxText());
     // }
   }
 }

@@ -12,14 +12,14 @@ public class FillTextCommand_ViewTests_Test {
   private FillTextCommand_View sut;
   private FillTextCommand_ViewContextProvider contextProvider;
   @Test
-  public void test_Fill_Text_TextBox_given_when_fill_Changed_in_MyTextBox_then_() throws Exception {
+  public void test_Fill_Text_TextBox_given_when_fill_Changed_in_MyValue_then_() throws Exception {
     this.BuildSut();
-    this.when_fill_Changed_in_MyTextBox();
+    this.when_fill_Changed_in_MyValue();
   }
   @Test
-  public void test_Fill_Text_ComboBox_given_when_fill_Changed_in_MyFreeTextComboBox_then_() throws Exception {
+  public void test_Fill_Text_ComboBox_given_when_fill_Changed_in_MyFreeValue_then_() throws Exception {
     this.BuildSut();
-    this.when_fill_Changed_in_MyFreeTextComboBox();
+    this.when_fill_Changed_in_MyFreeValue();
   }
   @BeforeEach
   public void setUp() {
@@ -37,11 +37,11 @@ public class FillTextCommand_ViewTests_Test {
 
 
 
-  public void when_fill_Changed_in_MyTextBox() {
-    this.sut.myTextBoxTextFilled("Changed");
+  public void when_fill_Changed_in_MyValue() {
+    this.sut.myValueTextFilled("Changed");
   }
-  public void when_fill_Changed_in_MyFreeTextComboBox() {
-    this.sut.myFreeTextComboBoxTextFilled("Changed");
+  public void when_fill_Changed_in_MyFreeValue() {
+    this.sut.myFreeValueTextFilled("Changed");
   }
 
 

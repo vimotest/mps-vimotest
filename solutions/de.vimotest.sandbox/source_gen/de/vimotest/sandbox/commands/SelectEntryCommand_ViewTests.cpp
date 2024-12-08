@@ -16,9 +16,9 @@ namespace commands
     std::shared_ptr<SelectEntryCommand_View> sut;
     std::shared_ptr<SelectEntryCommand_ViewContextProvider> contextProvider;
     virtual void BuildSut() ;
-    virtual void when_select_entry_C_in_MyComboBox() ;
-    virtual void when_select_entry_B_in_MyRadioButton() ;
-    virtual void then_MyComboBox_has_3_entries_and() ;
+    virtual void when_select_entry_C_in_MyElements() ;
+    virtual void when_select_entry_B_in_MyOptions() ;
+    virtual void then_MyElements_has_3_entries_and() ;
     protected:
     void SetUp() override ;
   };
@@ -27,37 +27,37 @@ namespace commands
     this->contextProvider = std::make_shared<SelectEntryCommand_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
-  TEST_F(SelectEntryCommand_ViewTests,  Select_Entry_Combobox_Call_given_when_select_entry_C_in_MyComboBox_then_MyComboBox_has_3_entries_and) 
+  TEST_F(SelectEntryCommand_ViewTests,  Select_Entry_Combobox_Call_given_when_select_entry_C_in_MyElements_then_MyElements_has_3_entries_and) 
   {
     this->BuildSut();
-    this->when_select_entry_C_in_MyComboBox();
-    this->then_MyComboBox_has_3_entries_and();
+    this->when_select_entry_C_in_MyElements();
+    this->then_MyElements_has_3_entries_and();
   }
-  TEST_F(SelectEntryCommand_ViewTests,  Select_Entry_RadioButton_Call_given_when_select_entry_B_in_MyRadioButton_then_) 
+  TEST_F(SelectEntryCommand_ViewTests,  Select_Entry_RadioButton_Call_given_when_select_entry_B_in_MyOptions_then_) 
   {
     this->BuildSut();
-    this->when_select_entry_B_in_MyRadioButton();
+    this->when_select_entry_B_in_MyOptions();
   }
   void SelectEntryCommand_ViewTests::BuildSut( ) 
   {
     this->sut = this->contextProvider->BuildSut();
   }
-  void SelectEntryCommand_ViewTests::when_select_entry_C_in_MyComboBox( ) 
+  void SelectEntryCommand_ViewTests::when_select_entry_C_in_MyElements( ) 
   {
-    this->sut->myComboBoxEntrySelected(std::string("C"));
+    this->sut->myElementsEntrySelected(std::string("C"));
   }
-  void SelectEntryCommand_ViewTests::when_select_entry_B_in_MyRadioButton( ) 
+  void SelectEntryCommand_ViewTests::when_select_entry_B_in_MyOptions( ) 
   {
-    this->sut->myRadioButtonEntrySelected(std::string("B"));
+    this->sut->myOptionsEntrySelected(std::string("B"));
   }
-  void SelectEntryCommand_ViewTests::then_MyComboBox_has_3_entries_and( ) 
+  void SelectEntryCommand_ViewTests::then_MyElements_has_3_entries_and( ) 
   {
-    auto& actualMyComboBoxEntries = this->sut->getMyComboBoxComboBoxEntries();
-    EXPECT_EQ(3, actualMyComboBoxEntries.size());
-    EXPECT_EQ(std::string("A"), actualMyComboBoxEntries.at(0));
-    EXPECT_EQ(std::string("B"), actualMyComboBoxEntries.at(1));
-    EXPECT_EQ(std::string("C"), actualMyComboBoxEntries.at(2));
-    EXPECT_EQ(std:: nullopt, this->sut->getMyComboBoxSelectedEntry());
+    auto& actualMyElementsEntries = this->sut->getMyElementsComboBoxComboBoxEntries();
+    EXPECT_EQ(3, actualMyElementsEntries.size());
+    EXPECT_EQ(std::string("A"), actualMyElementsEntries.at(0));
+    EXPECT_EQ(std::string("B"), actualMyElementsEntries.at(1));
+    EXPECT_EQ(std::string("C"), actualMyElementsEntries.at(2));
+    EXPECT_EQ(std:: nullopt, this->sut->getMyElementsComboBoxSelectedEntry());
   }
 }
 

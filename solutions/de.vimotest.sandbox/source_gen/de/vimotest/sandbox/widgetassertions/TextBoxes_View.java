@@ -6,20 +6,20 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class TextBoxes_View {
-  private String MyTextBoxText;
-  public String getMyTextBoxText() {
-    return this.MyTextBoxText;
+  private String MyValueTextBoxText;
+  public String getMyValueTextBoxText() {
+    return this.MyValueTextBoxText;
   }
-  private Boolean isMyTextBoxVisibility;
-  public Boolean getIsMyTextBoxVisibility() {
-    return this.isMyTextBoxVisibility;
+  private Boolean isMyValueTextBoxVisibility;
+  public Boolean getIsMyValueTextBoxVisibility() {
+    return this.isMyValueTextBoxVisibility;
   }
-  private Boolean isMyTextBoxEnabled;
-  public Boolean getIsMyTextBoxEnabled() {
-    return this.isMyTextBoxEnabled;
+  private Boolean isMyValueTextBoxEnabled;
+  public Boolean getIsMyValueTextBoxEnabled() {
+    return this.isMyValueTextBoxEnabled;
   }
-  private List<String> MultiLineTextBoxText = new LinkedList<>();
-  public List<String> getMultiLineTextBoxText() {
-    return this.MultiLineTextBoxText;
+  private List<String> MultiLineTextBoxValueTextBoxText = new LinkedList<>();
+  public List<String> getMultiLineTextBoxValueTextBoxText() {
+    return this.MultiLineTextBoxValueTextBoxText;
   }
 }

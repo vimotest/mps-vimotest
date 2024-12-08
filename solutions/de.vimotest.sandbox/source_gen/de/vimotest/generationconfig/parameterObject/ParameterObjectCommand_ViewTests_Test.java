@@ -9,11 +9,11 @@ public class ParameterObjectCommand_ViewTests_Test {
   private ParameterObjectCommand_View sut;
   private ParameterObjectCommand_ViewContextProvider contextProvider;
   @Test
-  public void test_MyTest_given_empty_context_when_LoadView_and_uncheck_MyCheckBox_then_() throws Exception {
+  public void test_MyTest_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_() throws Exception {
     this.given_empty_context();
     this.BuildSut();
     this.when_LoadView();
-    this.when_uncheck_MyCheckBox();
+    this.when_uncheck_MyFlag();
   }
   @BeforeEach
   public void setUp() {
@@ -37,9 +37,9 @@ public class ParameterObjectCommand_ViewTests_Test {
     ParameterObjectCommand_View.LoadViewParams loadViewParameters = new ParameterObjectCommand_View.LoadViewParams("A", true, 42);
     this.sut.loadView(loadViewParameters);
   }
-  public void when_uncheck_MyCheckBox() {
+  public void when_uncheck_MyFlag() {
     ParameterObjectCommand_View.CheckParams checkedParameters = new ParameterObjectCommand_View.CheckParams(false);
-    this.sut.myCheckBoxChecked(checkedParameters);
+    this.sut.myFlagChecked(checkedParameters);
   }
 
 

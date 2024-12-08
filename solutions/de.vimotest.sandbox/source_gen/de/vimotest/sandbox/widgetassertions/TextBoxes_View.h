@@ -9,15 +9,15 @@ namespace widgetassertions
   class TextBoxes_View
   {
     public:
-    virtual std::string getMyTextBoxText() ;
-    virtual bool getIsMyTextBoxVisibility() ;
-    virtual bool getIsMyTextBoxEnabled() ;
-    virtual std::vector<std::string> getMultiLineTextBoxText() ;
+    virtual std::string getMyValueTextBoxText() ;
+    virtual bool getIsMyValueTextBoxVisibility() ;
+    virtual bool getIsMyValueTextBoxEnabled() ;
+    virtual std::vector<std::string> getMultiLineTextBoxValueTextBoxText() ;
     private:
-    std::string MyTextBoxText;
-    bool isMyTextBoxVisibility;
-    bool isMyTextBoxEnabled;
-    std::vector<std::string> MultiLineTextBoxText;
+    std::string MyValueTextBoxText;
+    bool isMyValueTextBoxVisibility;
+    bool isMyValueTextBoxEnabled;
+    std::vector<std::string> MultiLineTextBoxValueTextBoxText;
   };
 }
 

@@ -8,11 +8,11 @@ namespace widgetassertions
   class TreeViews_ViewMyParentIndexRowHandlesRow
   {
     public:
-    virtual std::string getValuesText() ;
+    virtual std::string getValuesLabelText() ;
     virtual int getRowIndex() ;
     virtual int getParentRowIndex() ;
     private:
-    std::string ValuesText;
+    std::string ValuesLabelText;
     int RowIndex;
     int ParentRowIndex;
   };

@@ -10,11 +10,11 @@ public class SeparateViewController_ViewTests_Test {
   private MyViewController sutViewController;
   private SeparateViewController_ViewContextProvider contextProvider;
   @Test
-  public void test_MyTest_given_empty_context_when_LoadView_and_uncheck_MyCheckBox_then_() throws Exception {
+  public void test_MyTest_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_() throws Exception {
     this.given_empty_context();
     this.BuildSut();
     this.when_LoadView();
-    this.when_uncheck_MyCheckBox();
+    this.when_uncheck_MyFlag();
     this.RetrieveViewModel();
   }
   @BeforeEach
@@ -41,8 +41,8 @@ public class SeparateViewController_ViewTests_Test {
   public void when_LoadView() {
     this.sutViewController.loadView();
   }
-  public void when_uncheck_MyCheckBox() {
-    this.sutViewController.myCheckBoxChecked(false);
+  public void when_uncheck_MyFlag() {
+    this.sutViewController.myFlagChecked(false);
   }
 
 

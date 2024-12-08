@@ -5,28 +5,28 @@ package de.vimotest.sandbox.widgetassertions;
 import java.util.Objects;
 
 public class CheckBoxes_View {
-  private Boolean isMyFlagWithLabelChecked;
-  public Boolean getIsMyFlagWithLabelChecked() {
-    return this.isMyFlagWithLabelChecked;
+  private Boolean isMyFlagWithLabelCheckBoxChecked;
+  public Boolean getIsMyFlagWithLabelCheckBoxChecked() {
+    return this.isMyFlagWithLabelCheckBoxChecked;
   }
-  private Boolean isMyFlagWithLabelVisibility;
-  public Boolean getIsMyFlagWithLabelVisibility() {
-    return this.isMyFlagWithLabelVisibility;
+  private Boolean isMyFlagWithLabelCheckBoxVisibility;
+  public Boolean getIsMyFlagWithLabelCheckBoxVisibility() {
+    return this.isMyFlagWithLabelCheckBoxVisibility;
   }
-  private Boolean isMyFlagWithLabelEnabled;
-  public Boolean getIsMyFlagWithLabelEnabled() {
-    return this.isMyFlagWithLabelEnabled;
+  private Boolean isMyFlagWithLabelCheckBoxEnabled;
+  public Boolean getIsMyFlagWithLabelCheckBoxEnabled() {
+    return this.isMyFlagWithLabelCheckBoxEnabled;
   }
-  private String MyFlagWithLabelText;
-  public String getMyFlagWithLabelText() {
-    return this.MyFlagWithLabelText;
+  private String MyFlagWithLabelCheckBoxText;
+  public String getMyFlagWithLabelCheckBoxText() {
+    return this.MyFlagWithLabelCheckBoxText;
   }
-  private Boolean isMyFlagNoLabelChecked;
-  public Boolean getIsMyFlagNoLabelChecked() {
-    return this.isMyFlagNoLabelChecked;
+  private Boolean isMyFlagNoLabelCheckBoxChecked;
+  public Boolean getIsMyFlagNoLabelCheckBoxChecked() {
+    return this.isMyFlagNoLabelCheckBoxChecked;
   }
-  private Boolean isMyFlagTriStateChecked;
-  public Boolean getIsMyFlagTriStateChecked() {
-    return Objects.equals(this.isMyFlagTriStateChecked, true);
+  private Boolean isMyFlagTriStateCheckBoxChecked;
+  public Boolean getIsMyFlagTriStateCheckBoxChecked() {
+    return Objects.equals(this.isMyFlagTriStateCheckBoxChecked, true);
   }
 }

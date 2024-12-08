@@ -4,22 +4,22 @@ namespace widgetassertions ;
 
 class ListViews_ViewMyListOfImagesRow {
   
-  private My_ImageImageSource : String  ;
+  private MyInfoImageImageSource : String  ;
   
-  public getMy_ImageImageSource (  ) : String  {
-  return this.My_ImageImageSource;
+  public getMyInfoImageImageSource (  ) : String  {
+  return this.MyInfoImageImageSource;
  }
   
-  private isMy_ImageEnabled : Boolean  ;
+  private isMyInfoImageEnabled : Boolean  ;
   
-  public getIsMy_ImageEnabled (  ) : Boolean  {
-  return this.isMy_ImageEnabled;
+  public getIsMyInfoImageEnabled (  ) : Boolean  {
+  return this.isMyInfoImageEnabled;
  }
   
-  private isMy_ImageVisibility : Boolean  ;
+  private isMyInfoImageVisibility : Boolean  ;
   
-  public getIsMy_ImageVisibility (  ) : Boolean  {
-  return this.isMy_ImageVisibility;
+  public getIsMyInfoImageVisibility (  ) : Boolean  {
+  return this.isMyInfoImageVisibility;
  }
   
   private RowIndex : Integer  ;

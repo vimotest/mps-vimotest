@@ -7,7 +7,7 @@ void MyViewController::loadView( )
   
 }
 
-void MyViewController::myCheckBoxChecked(bool isChecked ) 
+void MyViewController::myFlagChecked(bool isChecked ) 
 {
   
 }

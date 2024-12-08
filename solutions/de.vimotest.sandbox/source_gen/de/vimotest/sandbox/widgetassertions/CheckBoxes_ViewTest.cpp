@@ -44,18 +44,18 @@ namespace widgetassertions
   }
   void CheckBoxes_ViewTest::then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_( ) 
   {
-    EXPECT_TRUE(this->sut->getIsMyFlagWithLabelChecked());
-    EXPECT_TRUE(this->sut->getIsMyFlagWithLabelEnabled());
-    EXPECT_TRUE(this->sut->getIsMyFlagWithLabelVisibility());
-    EXPECT_EQ(std::string("My Label"), this->sut->getMyFlagWithLabelText());
+    EXPECT_TRUE(this->sut->getIsMyFlagWithLabelCheckBoxChecked());
+    EXPECT_TRUE(this->sut->getIsMyFlagWithLabelCheckBoxEnabled());
+    EXPECT_TRUE(this->sut->getIsMyFlagWithLabelCheckBoxVisibility());
+    EXPECT_EQ(std::string("My Label"), this->sut->getMyFlagWithLabelCheckBoxText());
   }
   void CheckBoxes_ViewTest::then_MyFlagNoLabel_is_not_checked( ) 
   {
-    EXPECT_FALSE(this->sut->getIsMyFlagNoLabelChecked());
+    EXPECT_FALSE(this->sut->getIsMyFlagNoLabelCheckBoxChecked());
   }
   void CheckBoxes_ViewTest::then_MyFlagTriState_is_not_checked( ) 
   {
-    EXPECT_FALSE(this->sut->getIsMyFlagTriStateChecked());
+    EXPECT_FALSE(this->sut->getIsMyFlagTriStateCheckBoxChecked());
   }
 }
 

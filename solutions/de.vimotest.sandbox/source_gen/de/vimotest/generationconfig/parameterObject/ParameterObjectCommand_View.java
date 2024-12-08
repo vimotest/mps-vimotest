@@ -4,9 +4,9 @@ package de.vimotest.generationConfig.parameterObject;
 
 
 public class ParameterObjectCommand_View {
-  private Boolean isMyCheckBoxChecked;
-  public Boolean getIsMyCheckBoxChecked() {
-    return this.isMyCheckBoxChecked;
+  private Boolean isMyFlagCheckBoxChecked;
+  public Boolean getIsMyFlagCheckBoxChecked() {
+    return this.isMyFlagCheckBoxChecked;
   }
   public static class LoadViewParams {
     public String Value1;
@@ -30,6 +30,6 @@ public class ParameterObjectCommand_View {
       this.isChecked = isChecked;
     }
   }
-  public void myCheckBoxChecked(CheckParams parameters) {
+  public void myFlagChecked(CheckParams parameters) {
   }
 }

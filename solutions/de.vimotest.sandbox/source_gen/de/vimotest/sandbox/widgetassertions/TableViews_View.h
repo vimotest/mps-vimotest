@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <memory>
-#include "TableViews_ViewMyTableViewRow.h"
+#include "TableViews_ViewMyElementsRow.h"
 #include "TableViews_ViewMyStringRowHandlesRow.h"
 #include <string>
 
@@ -12,19 +12,19 @@ namespace widgetassertions
   class TableViews_View
   {
     public:
-    virtual std::vector<std::shared_ptr<TableViews_ViewMyTableViewRow>> getMyTableViewWidgetTableRows() ;
-    virtual int getMyTableViewSelectedRow() ;
-    virtual bool getIsMyTableViewVisibility() ;
-    virtual bool getIsMyTableViewEnabled() ;
-    virtual std::vector<std::shared_ptr<TableViews_ViewMyStringRowHandlesRow>> getMyStringRowHandlesWidgetTableRows() ;
-    virtual std::string getMyStringRowHandlesSelectedRow() ;
+    virtual std::vector<std::shared_ptr<TableViews_ViewMyElementsRow>> getMyElementsTableWidgetTableRows() ;
+    virtual int getMyElementsTableSelectedRow() ;
+    virtual bool getIsMyElementsTableVisibility() ;
+    virtual bool getIsMyElementsTableEnabled() ;
+    virtual std::vector<std::shared_ptr<TableViews_ViewMyStringRowHandlesRow>> getMyStringRowHandlesTableWidgetTableRows() ;
+    virtual std::string getMyStringRowHandlesTableSelectedRow() ;
     private:
-    std::vector<std::shared_ptr<TableViews_ViewMyTableViewRow>> MyTableViewWidgetTableRows;
-    int MyTableViewSelectedRow;
-    bool isMyTableViewVisibility;
-    bool isMyTableViewEnabled;
-    std::vector<std::shared_ptr<TableViews_ViewMyStringRowHandlesRow>> MyStringRowHandlesWidgetTableRows;
-    std::string MyStringRowHandlesSelectedRow;
+    std::vector<std::shared_ptr<TableViews_ViewMyElementsRow>> MyElementsTableWidgetTableRows;
+    int MyElementsTableSelectedRow;
+    bool isMyElementsTableVisibility;
+    bool isMyElementsTableEnabled;
+    std::vector<std::shared_ptr<TableViews_ViewMyStringRowHandlesRow>> MyStringRowHandlesTableWidgetTableRows;
+    std::string MyStringRowHandlesTableSelectedRow;
   };
 }
 

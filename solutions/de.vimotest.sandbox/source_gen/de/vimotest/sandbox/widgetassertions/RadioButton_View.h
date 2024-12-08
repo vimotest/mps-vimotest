@@ -9,15 +9,15 @@ namespace widgetassertions
   class RadioButton_View
   {
     public:
-    virtual std::vector<std::string> getMyChoicesRadioButtonChoices() ;
-    virtual std::string getMyChoicesSelectedEntry() ;
-    virtual bool getIsMyChoicesVisibility() ;
-    virtual bool getIsMyChoicesEnabled() ;
+    virtual std::vector<std::string> getMyChoicesRadioButtonRadioButtonChoices() ;
+    virtual std::string getMyChoicesRadioButtonSelectedEntry() ;
+    virtual bool getIsMyChoicesRadioButtonVisibility() ;
+    virtual bool getIsMyChoicesRadioButtonEnabled() ;
     private:
-    std::vector<std::string> MyChoicesRadioButtonChoices;
-    std::string MyChoicesSelectedEntry;
-    bool isMyChoicesVisibility;
-    bool isMyChoicesEnabled;
+    std::vector<std::string> MyChoicesRadioButtonRadioButtonChoices;
+    std::string MyChoicesRadioButtonSelectedEntry;
+    bool isMyChoicesRadioButtonVisibility;
+    bool isMyChoicesRadioButtonEnabled;
   };
 }
 

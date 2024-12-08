@@ -5,25 +5,25 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewMyListOfImagesRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewMyCheckboxesRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewMyStringRowHandlesRow.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewMyMultiRowSelectionListRow.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyListViewRow.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringRowHandleListViewRow.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewRow.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewMyListViewRow.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewMyTableViewRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewMyListWithMultiRowSelectionRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyListViewElementsRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringRowHandleListViewElementsRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewElementsRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewMyFlagsRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewMyElementsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewMyStringRowHandlesRow.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyTableViewRow.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringRowHandleTableViewRow.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewMyTableViewRow.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/bindings/ViMoTestFileNameBindingMyTableViewRow.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewMyTreeViewRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyTableViewElementsRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewMyComboBoxesRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/bindings/ViMoTestFileNameBindingMyElementsRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewMyTreeViewElementsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewMyStringRowHandlesRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewMyParentIndexRowHandlesRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewMyParentStringRowHandlesRow.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyTreeViewRow.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringRowHandleTreeViewRow.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewMyTreeViewRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyTreeViewElementsRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewMyStandardControlsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/bindings/MyCustomRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_View.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_View.cpp
@@ -50,48 +50,48 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_View.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_View.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Images_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Images_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TextBoxes_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TextBoxes_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/GenericCommands_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/GenericCommands_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/CheckCommand_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/CheckCommand_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Buttons_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Buttons_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/FillTextCommand_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/FillTextCommand_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/ClickCommand_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/ClickCommand_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/LoadCommand_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/LoadCommand_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/StringContext_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/StringContext_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/XmlFileContext_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/XmlFileContext_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewContextProvider.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_ViewContextProvider.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Images_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TextBoxes_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/GenericCommands_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/CheckCommand_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Buttons_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/FillTextCommand_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/ClickCommand_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/LoadCommand_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/context/StringContext_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/context/XmlFileContext_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_ViewContextProviderImpl.cpp
 )
 
@@ -100,25 +100,25 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewMyListOfImagesRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewMyCheckboxesRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewMyStringRowHandlesRow.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewMyMultiRowSelectionListRow.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyListViewRow.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringRowHandleListViewRow.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewRow.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewMyListViewRow.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewMyTableViewRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewMyListWithMultiRowSelectionRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyListViewElementsRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringRowHandleListViewElementsRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewElementsRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewMyFlagsRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewMyElementsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewMyStringRowHandlesRow.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyTableViewRow.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringRowHandleTableViewRow.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewMyTableViewRow.h
-  ${CMAKE_CURRENT_LIST_DIR}/bindings/ViMoTestFileNameBindingMyTableViewRow.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewMyTreeViewRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyTableViewElementsRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewMyComboBoxesRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/bindings/ViMoTestFileNameBindingMyElementsRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewMyTreeViewElementsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewMyStringRowHandlesRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewMyParentIndexRowHandlesRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewMyParentStringRowHandlesRow.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyTreeViewRow.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringRowHandleTreeViewRow.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewMyTreeViewRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyTreeViewElementsRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewMyStandardControlsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/bindings/MyCustomRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_View.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_View.h
@@ -145,48 +145,48 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_View.h
   ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_View.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Images_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Images_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TextBoxes_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TextBoxes_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/GenericCommands_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/GenericCommands_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/CheckCommand_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/CheckCommand_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Buttons_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Buttons_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/FillTextCommand_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/FillTextCommand_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/ClickCommand_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/ClickCommand_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/LoadCommand_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/LoadCommand_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/context/StringContext_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/context/StringContext_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/context/XmlFileContext_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/context/XmlFileContext_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewContextProvider.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_ViewContextProvider.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Images_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TextBoxes_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/GenericCommands_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/CheckCommand_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Buttons_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/FillTextCommand_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/ClickCommand_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/LoadCommand_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/context/StringContext_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/context/XmlFileContext_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_ViewContextProviderImpl.h
 )
 

@@ -6,36 +6,36 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class TreeViews_View {
-  private Integer MyTreeViewSelectedRow;
-  public Integer getMyTreeViewSelectedRow() {
-    return this.MyTreeViewSelectedRow;
+  private Integer MyTreeViewElementsTreeSelectedRow;
+  public Integer getMyTreeViewElementsTreeSelectedRow() {
+    return this.MyTreeViewElementsTreeSelectedRow;
   }
-  private Boolean isMyTreeViewVisibility;
-  public Boolean getIsMyTreeViewVisibility() {
-    return this.isMyTreeViewVisibility;
+  private Boolean isMyTreeViewElementsTreeVisibility;
+  public Boolean getIsMyTreeViewElementsTreeVisibility() {
+    return this.isMyTreeViewElementsTreeVisibility;
   }
-  private Boolean isMyTreeViewEnabled;
-  public Boolean getIsMyTreeViewEnabled() {
-    return this.isMyTreeViewEnabled;
+  private Boolean isMyTreeViewElementsTreeEnabled;
+  public Boolean getIsMyTreeViewElementsTreeEnabled() {
+    return this.isMyTreeViewElementsTreeEnabled;
   }
-  private List<TreeViews_ViewMyTreeViewRow> MyTreeViewWidgetTreeRows = new LinkedList<>();
-  public List<TreeViews_ViewMyTreeViewRow> getMyTreeViewWidgetTreeRows() {
-    return this.MyTreeViewWidgetTreeRows;
+  private List<TreeViews_ViewMyTreeViewElementsRow> MyTreeViewElementsTreeWidgetTreeRows = new LinkedList<>();
+  public List<TreeViews_ViewMyTreeViewElementsRow> getMyTreeViewElementsTreeWidgetTreeRows() {
+    return this.MyTreeViewElementsTreeWidgetTreeRows;
   }
-  private List<TreeViews_ViewMyStringRowHandlesRow> MyStringRowHandlesWidgetTreeRows = new LinkedList<>();
-  public List<TreeViews_ViewMyStringRowHandlesRow> getMyStringRowHandlesWidgetTreeRows() {
-    return this.MyStringRowHandlesWidgetTreeRows;
+  private List<TreeViews_ViewMyStringRowHandlesRow> MyStringRowHandlesTreeWidgetTreeRows = new LinkedList<>();
+  public List<TreeViews_ViewMyStringRowHandlesRow> getMyStringRowHandlesTreeWidgetTreeRows() {
+    return this.MyStringRowHandlesTreeWidgetTreeRows;
   }
-  private String MyStringRowHandlesSelectedRow;
-  public String getMyStringRowHandlesSelectedRow() {
-    return this.MyStringRowHandlesSelectedRow;
+  private String MyStringRowHandlesTreeSelectedRow;
+  public String getMyStringRowHandlesTreeSelectedRow() {
+    return this.MyStringRowHandlesTreeSelectedRow;
   }
-  private List<TreeViews_ViewMyParentIndexRowHandlesRow> MyParentIndexRowHandlesWidgetTreeRows = new LinkedList<>();
-  public List<TreeViews_ViewMyParentIndexRowHandlesRow> getMyParentIndexRowHandlesWidgetTreeRows() {
-    return this.MyParentIndexRowHandlesWidgetTreeRows;
+  private List<TreeViews_ViewMyParentIndexRowHandlesRow> MyParentIndexRowHandlesTreeWidgetTreeRows = new LinkedList<>();
+  public List<TreeViews_ViewMyParentIndexRowHandlesRow> getMyParentIndexRowHandlesTreeWidgetTreeRows() {
+    return this.MyParentIndexRowHandlesTreeWidgetTreeRows;
   }
-  private List<TreeViews_ViewMyParentStringRowHandlesRow> MyParentStringRowHandlesWidgetTreeRows = new LinkedList<>();
-  public List<TreeViews_ViewMyParentStringRowHandlesRow> getMyParentStringRowHandlesWidgetTreeRows() {
-    return this.MyParentStringRowHandlesWidgetTreeRows;
+  private List<TreeViews_ViewMyParentStringRowHandlesRow> MyParentStringRowHandlesTreeWidgetTreeRows = new LinkedList<>();
+  public List<TreeViews_ViewMyParentStringRowHandlesRow> getMyParentStringRowHandlesTreeWidgetTreeRows() {
+    return this.MyParentStringRowHandlesTreeWidgetTreeRows;
   }
 }

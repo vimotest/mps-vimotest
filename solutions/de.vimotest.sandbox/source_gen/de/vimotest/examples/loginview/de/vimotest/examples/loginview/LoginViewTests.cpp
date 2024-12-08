@@ -42,7 +42,7 @@ namespace de::vimotest::examples::loginview
     virtual void then_Password_shows_text_Lovelace1_() ;
     virtual void then_ShowPassword_is_checked() ;
     virtual void then_Login_is_enabled_2() ;
-    virtual void then_ErrorText_shows_text_Needs_uppercase_letters_() ;
+    virtual void then_Error_shows_text_Needs_uppercase_letters_() ;
     protected:
     void SetUp() override ;
   };
@@ -94,14 +94,14 @@ namespace de::vimotest::examples::loginview
     this->then_ShowPassword_is_checked();
     this->then_Login_is_enabled_2();
   }
-  TEST_F(LoginViewTests,  Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadView_and_fill_lovelace_in_Password_and_click_Login_then_ErrorText_shows_text_Needs_uppercase_letters_) 
+  TEST_F(LoginViewTests,  Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadView_and_fill_lovelace_in_Password_and_click_Login_then_Error_shows_text_Needs_uppercase_letters_) 
   {
     this->given_prefilledValues();
     this->BuildSut();
     this->when_LoadView_4();
     this->when_fill_lovelace_in_Password();
     this->when_click_Login();
-    this->then_ErrorText_shows_text_Needs_uppercase_letters_();
+    this->then_Error_shows_text_Needs_uppercase_letters_();
   }
   void LoginViewTests::BuildSut( ) 
   {
@@ -169,59 +169,59 @@ namespace de::vimotest::examples::loginview
   }
   void LoginViewTests::then_Username_shows_text_User_( ) 
   {
-    EXPECT_EQ(std::string("User"), this->sut->getUsernameText());
+    EXPECT_EQ(std::string("User"), this->sut->getUsernameTextBoxText());
   }
   void LoginViewTests::then_Password_shows_text_MyPass123_( ) 
   {
-    EXPECT_EQ(std::string("MyPass123"), this->sut->getPasswordText());
+    EXPECT_EQ(std::string("MyPass123"), this->sut->getPasswordTextBoxText());
   }
   void LoginViewTests::then_Login_is_enabled( ) 
   {
-    EXPECT_TRUE(this->sut->getIsLoginEnabled());
+    EXPECT_TRUE(this->sut->getIsLoginButtonEnabled());
   }
   void LoginViewTests::then_Username_shows_text_User__1( ) 
   {
-    EXPECT_EQ(std::string("User"), this->sut->getUsernameText());
+    EXPECT_EQ(std::string("User"), this->sut->getUsernameTextBoxText());
   }
   void LoginViewTests::then_Password_shows_empty_text( ) 
   {
-    EXPECT_EQ(std::string(""), this->sut->getPasswordText());
+    EXPECT_EQ(std::string(""), this->sut->getPasswordTextBoxText());
   }
   void LoginViewTests::then_Login_is_not_enabled( ) 
   {
-    EXPECT_FALSE(this->sut->getIsLoginEnabled());
+    EXPECT_FALSE(this->sut->getIsLoginButtonEnabled());
   }
   void LoginViewTests::then_Username_shows_text_Ada_( ) 
   {
-    EXPECT_EQ(std::string("Ada"), this->sut->getUsernameText());
+    EXPECT_EQ(std::string("Ada"), this->sut->getUsernameTextBoxText());
   }
   void LoginViewTests::then_Password_shows_text_____( ) 
   {
-    EXPECT_EQ(std::string("******"), this->sut->getPasswordText());
+    EXPECT_EQ(std::string("******"), this->sut->getPasswordTextBoxText());
   }
   void LoginViewTests::then_Login_is_enabled_1( ) 
   {
-    EXPECT_TRUE(this->sut->getIsLoginEnabled());
+    EXPECT_TRUE(this->sut->getIsLoginButtonEnabled());
   }
   void LoginViewTests::then_Username_shows_text_Ada__1( ) 
   {
-    EXPECT_EQ(std::string("Ada"), this->sut->getUsernameText());
+    EXPECT_EQ(std::string("Ada"), this->sut->getUsernameTextBoxText());
   }
   void LoginViewTests::then_Password_shows_text_Lovelace1_( ) 
   {
-    EXPECT_EQ(std::string("Lovelace1"), this->sut->getPasswordText());
+    EXPECT_EQ(std::string("Lovelace1"), this->sut->getPasswordTextBoxText());
   }
   void LoginViewTests::then_ShowPassword_is_checked( ) 
   {
-    EXPECT_TRUE(this->sut->getIsShowPasswordChecked());
+    EXPECT_TRUE(this->sut->getIsShowPasswordCheckBoxChecked());
   }
   void LoginViewTests::then_Login_is_enabled_2( ) 
   {
-    EXPECT_TRUE(this->sut->getIsLoginEnabled());
+    EXPECT_TRUE(this->sut->getIsLoginButtonEnabled());
   }
-  void LoginViewTests::then_ErrorText_shows_text_Needs_uppercase_letters_( ) 
+  void LoginViewTests::then_Error_shows_text_Needs_uppercase_letters_( ) 
   {
-    EXPECT_EQ(std::string("Needs uppercase letters"), this->sut->getErrorTextText());
+    EXPECT_EQ(std::string("Needs uppercase letters"), this->sut->getErrorLabelText());
   }
 }
 

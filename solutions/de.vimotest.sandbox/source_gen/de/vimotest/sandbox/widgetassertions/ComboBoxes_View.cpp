@@ -6,41 +6,41 @@
 
 namespace widgetassertions
 {
-  std::vector<std::string> ComboBoxes_View::getMyOptionsComboBoxEntries( ) 
+  std::vector<std::string> ComboBoxes_View::getMyOptionsComboBoxComboBoxEntries( ) 
   {
-    return this->MyOptionsComboBoxEntries;
+    return this->MyOptionsComboBoxComboBoxEntries;
   }
-  std::string ComboBoxes_View::getMyOptionsSelectedEntry( ) 
+  std::string ComboBoxes_View::getMyOptionsComboBoxSelectedEntry( ) 
   {
-    return this->MyOptionsSelectedEntry;
+    return this->MyOptionsComboBoxSelectedEntry;
   }
-  bool ComboBoxes_View::getIsMyOptionsVisibility( ) 
+  bool ComboBoxes_View::getIsMyOptionsComboBoxVisibility( ) 
   {
-    return this->isMyOptionsVisibility;
+    return this->isMyOptionsComboBoxVisibility;
   }
-  bool ComboBoxes_View::getIsMyOptionsEnabled( ) 
+  bool ComboBoxes_View::getIsMyOptionsComboBoxEnabled( ) 
   {
-    return this->isMyOptionsEnabled;
+    return this->isMyOptionsComboBoxEnabled;
   }
-  std::vector<std::string> ComboBoxes_View::getMyOptionsWithFreeTextComboBoxEntries( ) 
+  std::vector<std::string> ComboBoxes_View::getMyOptionsWithFreeTextComboBoxComboBoxEntries( ) 
   {
-    return this->MyOptionsWithFreeTextComboBoxEntries;
+    return this->MyOptionsWithFreeTextComboBoxComboBoxEntries;
   }
-  std::string ComboBoxes_View::getMyOptionsWithFreeTextSelectedEntry( ) 
+  std::string ComboBoxes_View::getMyOptionsWithFreeTextComboBoxSelectedEntry( ) 
   {
-    return this->MyOptionsWithFreeTextSelectedEntry;
+    return this->MyOptionsWithFreeTextComboBoxSelectedEntry;
   }
-  std::string ComboBoxes_View::getMyOptionsWithFreeTextText( ) 
+  std::string ComboBoxes_View::getMyOptionsWithFreeTextComboBoxText( ) 
   {
-    return this->MyOptionsWithFreeTextText;
+    return this->MyOptionsWithFreeTextComboBoxText;
   }
-  bool ComboBoxes_View::getIsMyOptionsWithFreeTextVisibility( ) 
+  bool ComboBoxes_View::getIsMyOptionsWithFreeTextComboBoxVisibility( ) 
   {
-    return this->isMyOptionsWithFreeTextVisibility;
+    return this->isMyOptionsWithFreeTextComboBoxVisibility;
   }
-  bool ComboBoxes_View::getIsMyOptionsWithFreeTextEnabled( ) 
+  bool ComboBoxes_View::getIsMyOptionsWithFreeTextComboBoxEnabled( ) 
   {
-    return this->isMyOptionsWithFreeTextEnabled;
+    return this->isMyOptionsWithFreeTextComboBoxEnabled;
   }
 }
 

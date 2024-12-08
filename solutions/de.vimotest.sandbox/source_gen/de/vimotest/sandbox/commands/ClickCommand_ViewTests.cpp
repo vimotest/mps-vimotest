@@ -13,7 +13,7 @@ namespace commands
     std::shared_ptr<ClickCommand_View> sut;
     std::shared_ptr<ClickCommand_ViewContextProvider> contextProvider;
     virtual void BuildSut() ;
-    virtual void when_click_MyButton() ;
+    virtual void when_click_Ok() ;
     protected:
     void SetUp() override ;
   };
@@ -22,18 +22,18 @@ namespace commands
     this->contextProvider = std::make_shared<ClickCommand_ViewContextProviderImpl>();
     this->contextProvider->Init();
   }
-  TEST_F(ClickCommand_ViewTests,  Click_Button_given_when_click_MyButton_then_) 
+  TEST_F(ClickCommand_ViewTests,  Click_Button_given_when_click_Ok_then_) 
   {
     this->BuildSut();
-    this->when_click_MyButton();
+    this->when_click_Ok();
   }
   void ClickCommand_ViewTests::BuildSut( ) 
   {
     this->sut = this->contextProvider->BuildSut();
   }
-  void ClickCommand_ViewTests::when_click_MyButton( ) 
+  void ClickCommand_ViewTests::when_click_Ok( ) 
   {
-    this->sut->myButtonClicked();
+    this->sut->okClicked();
   }
 }
 

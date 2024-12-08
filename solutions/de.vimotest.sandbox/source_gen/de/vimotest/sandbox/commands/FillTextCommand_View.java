@@ -6,24 +6,24 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class FillTextCommand_View {
-  private String MyTextBoxText;
-  public String getMyTextBoxText() {
-    return this.MyTextBoxText;
+  private String MyValueTextBoxText;
+  public String getMyValueTextBoxText() {
+    return this.MyValueTextBoxText;
   }
-  private List<String> MyFreeTextComboBoxComboBoxEntries = new LinkedList<>();
-  public List<String> getMyFreeTextComboBoxComboBoxEntries() {
-    return this.MyFreeTextComboBoxComboBoxEntries;
+  private List<String> MyFreeValueComboBoxComboBoxEntries = new LinkedList<>();
+  public List<String> getMyFreeValueComboBoxComboBoxEntries() {
+    return this.MyFreeValueComboBoxComboBoxEntries;
   }
-  private String MyFreeTextComboBoxSelectedEntry;
-  public String getMyFreeTextComboBoxSelectedEntry() {
-    return this.MyFreeTextComboBoxSelectedEntry;
+  private String MyFreeValueComboBoxSelectedEntry;
+  public String getMyFreeValueComboBoxSelectedEntry() {
+    return this.MyFreeValueComboBoxSelectedEntry;
   }
-  private String MyFreeTextComboBoxText;
-  public String getMyFreeTextComboBoxText() {
-    return this.MyFreeTextComboBoxText;
+  private String MyFreeValueComboBoxText;
+  public String getMyFreeValueComboBoxText() {
+    return this.MyFreeValueComboBoxText;
   }
-  public void myTextBoxTextFilled(String text) {
+  public void myValueTextFilled(String text) {
   }
-  public void myFreeTextComboBoxTextFilled(String text) {
+  public void myFreeValueTextFilled(String text) {
   }
 }

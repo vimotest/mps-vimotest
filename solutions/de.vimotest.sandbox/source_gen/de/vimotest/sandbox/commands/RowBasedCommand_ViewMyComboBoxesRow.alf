@@ -1,0 +1,42 @@
+namespace commands ;
+
+
+
+class RowBasedCommand_ViewMyComboBoxesRow {
+  
+  private FreeTextComboBoxesComboBoxComboBoxEntries : String [ * ]  ;
+  
+  public getFreeTextComboBoxesComboBoxComboBoxEntries (  ) : String [ * ]  {
+  return this.FreeTextComboBoxesComboBoxComboBoxEntries;
+ }
+  
+  private FreeTextComboBoxesComboBoxSelectedEntry : String  ;
+  
+  public getFreeTextComboBoxesComboBoxSelectedEntry (  ) : String  {
+  return this.FreeTextComboBoxesComboBoxSelectedEntry;
+ }
+  
+  private FreeTextComboBoxesComboBoxText : String  ;
+  
+  public getFreeTextComboBoxesComboBoxText (  ) : String  {
+  return this.FreeTextComboBoxesComboBoxText;
+ }
+  
+  private EntryComboBoxesComboBoxComboBoxEntries : String [ * ]  ;
+  
+  public getEntryComboBoxesComboBoxComboBoxEntries (  ) : String [ * ]  {
+  return this.EntryComboBoxesComboBoxComboBoxEntries;
+ }
+  
+  private EntryComboBoxesComboBoxSelectedEntry : String  ;
+  
+  public getEntryComboBoxesComboBoxSelectedEntry (  ) : String  {
+  return this.EntryComboBoxesComboBoxSelectedEntry;
+ }
+  
+  private RowIndex : Integer  ;
+  
+  public getRowIndex (  ) : Integer  {
+  return this.RowIndex;
+ }
+}

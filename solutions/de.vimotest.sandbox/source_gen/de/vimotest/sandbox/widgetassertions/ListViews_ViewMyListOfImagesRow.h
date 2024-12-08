@@ -8,14 +8,14 @@ namespace widgetassertions
   class ListViews_ViewMyListOfImagesRow
   {
     public:
-    virtual std::string getMy_ImageImageSource() ;
-    virtual bool getIsMy_ImageEnabled() ;
-    virtual bool getIsMy_ImageVisibility() ;
+    virtual std::string getMyInfoImageImageSource() ;
+    virtual bool getIsMyInfoImageEnabled() ;
+    virtual bool getIsMyInfoImageVisibility() ;
     virtual int getRowIndex() ;
     private:
-    std::string My_ImageImageSource;
-    bool isMy_ImageEnabled;
-    bool isMy_ImageVisibility;
+    std::string MyInfoImageImageSource;
+    bool isMyInfoImageEnabled;
+    bool isMyInfoImageVisibility;
     int RowIndex;
   };
 }

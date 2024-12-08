@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <memory>
-#include "TreeViews_ViewMyTreeViewRow.h"
+#include "TreeViews_ViewMyTreeViewElementsRow.h"
 #include "TreeViews_ViewMyStringRowHandlesRow.h"
 #include "TreeViews_ViewMyParentIndexRowHandlesRow.h"
 #include "TreeViews_ViewMyParentStringRowHandlesRow.h"
@@ -14,23 +14,23 @@ namespace widgetassertions
   class TreeViews_View
   {
     public:
-    virtual int getMyTreeViewSelectedRow() ;
-    virtual bool getIsMyTreeViewVisibility() ;
-    virtual bool getIsMyTreeViewEnabled() ;
-    virtual std::vector<std::shared_ptr<TreeViews_ViewMyTreeViewRow>> getMyTreeViewWidgetTreeRows() ;
-    virtual std::vector<std::shared_ptr<TreeViews_ViewMyStringRowHandlesRow>> getMyStringRowHandlesWidgetTreeRows() ;
-    virtual std::string getMyStringRowHandlesSelectedRow() ;
-    virtual std::vector<std::shared_ptr<TreeViews_ViewMyParentIndexRowHandlesRow>> getMyParentIndexRowHandlesWidgetTreeRows() ;
-    virtual std::vector<std::shared_ptr<TreeViews_ViewMyParentStringRowHandlesRow>> getMyParentStringRowHandlesWidgetTreeRows() ;
+    virtual int getMyTreeViewElementsTreeSelectedRow() ;
+    virtual bool getIsMyTreeViewElementsTreeVisibility() ;
+    virtual bool getIsMyTreeViewElementsTreeEnabled() ;
+    virtual std::vector<std::shared_ptr<TreeViews_ViewMyTreeViewElementsRow>> getMyTreeViewElementsTreeWidgetTreeRows() ;
+    virtual std::vector<std::shared_ptr<TreeViews_ViewMyStringRowHandlesRow>> getMyStringRowHandlesTreeWidgetTreeRows() ;
+    virtual std::string getMyStringRowHandlesTreeSelectedRow() ;
+    virtual std::vector<std::shared_ptr<TreeViews_ViewMyParentIndexRowHandlesRow>> getMyParentIndexRowHandlesTreeWidgetTreeRows() ;
+    virtual std::vector<std::shared_ptr<TreeViews_ViewMyParentStringRowHandlesRow>> getMyParentStringRowHandlesTreeWidgetTreeRows() ;
     private:
-    int MyTreeViewSelectedRow;
-    bool isMyTreeViewVisibility;
-    bool isMyTreeViewEnabled;
-    std::vector<std::shared_ptr<TreeViews_ViewMyTreeViewRow>> MyTreeViewWidgetTreeRows;
-    std::vector<std::shared_ptr<TreeViews_ViewMyStringRowHandlesRow>> MyStringRowHandlesWidgetTreeRows;
-    std::string MyStringRowHandlesSelectedRow;
-    std::vector<std::shared_ptr<TreeViews_ViewMyParentIndexRowHandlesRow>> MyParentIndexRowHandlesWidgetTreeRows;
-    std::vector<std::shared_ptr<TreeViews_ViewMyParentStringRowHandlesRow>> MyParentStringRowHandlesWidgetTreeRows;
+    int MyTreeViewElementsTreeSelectedRow;
+    bool isMyTreeViewElementsTreeVisibility;
+    bool isMyTreeViewElementsTreeEnabled;
+    std::vector<std::shared_ptr<TreeViews_ViewMyTreeViewElementsRow>> MyTreeViewElementsTreeWidgetTreeRows;
+    std::vector<std::shared_ptr<TreeViews_ViewMyStringRowHandlesRow>> MyStringRowHandlesTreeWidgetTreeRows;
+    std::string MyStringRowHandlesTreeSelectedRow;
+    std::vector<std::shared_ptr<TreeViews_ViewMyParentIndexRowHandlesRow>> MyParentIndexRowHandlesTreeWidgetTreeRows;
+    std::vector<std::shared_ptr<TreeViews_ViewMyParentStringRowHandlesRow>> MyParentStringRowHandlesTreeWidgetTreeRows;
   };
 }
 

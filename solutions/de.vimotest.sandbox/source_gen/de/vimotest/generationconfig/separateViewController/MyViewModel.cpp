@@ -2,7 +2,7 @@
 #include "MyViewModel.h"
 #include "MyViewModel.h"
 
-bool MyViewModel::getIsMyCheckBoxChecked( ) 
+bool MyViewModel::getIsMyFlagCheckBoxChecked( ) 
 {
-  return this->isMyCheckBoxChecked;
+  return this->isMyFlagCheckBoxChecked;
 }

@@ -6,24 +6,24 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class CapitalizedGetterNames_View {
-  private Boolean isMyCheckBoxChecked;
-  public Boolean GetIsMyCheckBoxChecked() {
-    return this.isMyCheckBoxChecked;
+  private Boolean isMyFlagCheckBoxChecked;
+  public Boolean GetIsMyFlagCheckBoxChecked() {
+    return this.isMyFlagCheckBoxChecked;
   }
   private Boolean myVisibility;
   public Boolean GetMyVisibility() {
     return this.myVisibility;
   }
-  private Boolean isMyCheckBoxEnabled;
-  public Boolean GetIsMyCheckBoxEnabled() {
-    return this.isMyCheckBoxEnabled;
+  private Boolean isMyFlagCheckBoxEnabled;
+  public Boolean GetIsMyFlagCheckBoxEnabled() {
+    return this.isMyFlagCheckBoxEnabled;
   }
-  private String MyCheckBoxText;
-  public String GetMyCheckBoxText() {
-    return this.MyCheckBoxText;
+  private String MyFlagCheckBoxText;
+  public String GetMyFlagCheckBoxText() {
+    return this.MyFlagCheckBoxText;
   }
-  private List<CapitalizedGetterNames_ViewListViewRow> myRows = new LinkedList<>();
-  public List<CapitalizedGetterNames_ViewListViewRow> GetMyRows() {
+  private List<CapitalizedGetterNames_ViewMyElementsRow> myRows = new LinkedList<>();
+  public List<CapitalizedGetterNames_ViewMyElementsRow> GetMyRows() {
     return this.myRows;
   }
 }

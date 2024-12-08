@@ -4,39 +4,39 @@ namespace widgetassertions ;
 
 class TableViews_View {
   
-  private MyTableViewWidgetTableRows : TableViews_ViewMyTableViewRow [ * ]  ;
+  private MyElementsTableWidgetTableRows : TableViews_ViewMyElementsRow [ * ]  ;
   
-  public getMyTableViewWidgetTableRows (  ) : TableViews_ViewMyTableViewRow [ * ]  {
-  return this.MyTableViewWidgetTableRows;
+  public getMyElementsTableWidgetTableRows (  ) : TableViews_ViewMyElementsRow [ * ]  {
+  return this.MyElementsTableWidgetTableRows;
  }
   
-  private MyTableViewSelectedRow : Integer  ;
+  private MyElementsTableSelectedRow : Integer  ;
   
-  public getMyTableViewSelectedRow (  ) : Integer  {
-  return this.MyTableViewSelectedRow;
+  public getMyElementsTableSelectedRow (  ) : Integer  {
+  return this.MyElementsTableSelectedRow;
  }
   
-  private isMyTableViewVisibility : Boolean  ;
+  private isMyElementsTableVisibility : Boolean  ;
   
-  public getIsMyTableViewVisibility (  ) : Boolean  {
-  return this.isMyTableViewVisibility;
+  public getIsMyElementsTableVisibility (  ) : Boolean  {
+  return this.isMyElementsTableVisibility;
  }
   
-  private isMyTableViewEnabled : Boolean  ;
+  private isMyElementsTableEnabled : Boolean  ;
   
-  public getIsMyTableViewEnabled (  ) : Boolean  {
-  return this.isMyTableViewEnabled;
+  public getIsMyElementsTableEnabled (  ) : Boolean  {
+  return this.isMyElementsTableEnabled;
  }
   
-  private MyStringRowHandlesWidgetTableRows : TableViews_ViewMyStringRowHandlesRow [ * ]  ;
+  private MyStringRowHandlesTableWidgetTableRows : TableViews_ViewMyStringRowHandlesRow [ * ]  ;
   
-  public getMyStringRowHandlesWidgetTableRows (  ) : TableViews_ViewMyStringRowHandlesRow [ * ]  {
-  return this.MyStringRowHandlesWidgetTableRows;
+  public getMyStringRowHandlesTableWidgetTableRows (  ) : TableViews_ViewMyStringRowHandlesRow [ * ]  {
+  return this.MyStringRowHandlesTableWidgetTableRows;
  }
   
-  private MyStringRowHandlesSelectedRow : String  ;
+  private MyStringRowHandlesTableSelectedRow : String  ;
   
-  public getMyStringRowHandlesSelectedRow (  ) : String  {
-  return this.MyStringRowHandlesSelectedRow;
+  public getMyStringRowHandlesTableSelectedRow (  ) : String  {
+  return this.MyStringRowHandlesTableSelectedRow;
  }
 }

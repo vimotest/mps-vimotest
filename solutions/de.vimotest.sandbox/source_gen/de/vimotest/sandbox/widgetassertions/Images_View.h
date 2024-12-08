@@ -8,15 +8,15 @@ namespace widgetassertions
   class Images_View
   {
     public:
-    virtual std::string getMyImageImageSource() ;
-    virtual bool getIsMyImageEnabled() ;
-    virtual bool getIsMyImageVisibility() ;
-    virtual std::string getMyUpDownImageImageSource() ;
+    virtual std::string getStatusImageImageSource() ;
+    virtual bool getIsStatusImageEnabled() ;
+    virtual bool getIsStatusImageVisibility() ;
+    virtual std::string getUpOrDownImageImageSource() ;
     private:
-    std::string MyImageImageSource;
-    bool isMyImageEnabled;
-    bool isMyImageVisibility;
-    std::string MyUpDownImageImageSource;
+    std::string StatusImageImageSource;
+    bool isStatusImageEnabled;
+    bool isStatusImageVisibility;
+    std::string UpOrDownImageImageSource;
   };
 }
 

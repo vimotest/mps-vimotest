@@ -3,14 +3,14 @@
 
 #include <vector>
 #include <memory>
-#include "SelectRowCommand_ViewMyListViewRow.h"
-#include "SelectRowCommand_ViewMyStringRowHandleListViewRow.h"
-#include "SelectRowCommand_ViewMyTableViewRow.h"
-#include "SelectRowCommand_ViewMyStringRowHandleTableViewRow.h"
-#include "SelectRowCommand_ViewMyTreeViewRow.h"
-#include "SelectRowCommand_ViewMyStringRowHandleTreeViewRow.h"
-#include "SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewRow.h"
-#include "SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow.h"
+#include "SelectRowCommand_ViewMyListViewElementsRow.h"
+#include "SelectRowCommand_ViewMyStringRowHandleListViewElementsRow.h"
+#include "SelectRowCommand_ViewMyTableViewElementsRow.h"
+#include "SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow.h"
+#include "SelectRowCommand_ViewMyTreeViewElementsRow.h"
+#include "SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow.h"
+#include "SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewElementsRow.h"
+#include "SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow.h"
 #include <string>
 
 namespace commands
@@ -18,47 +18,47 @@ namespace commands
   class SelectRowCommand_View
   {
     public:
-    virtual std::vector<std::shared_ptr<SelectRowCommand_ViewMyListViewRow>> getMyListViewWidgetListRows() ;
-    virtual int getMyListViewSelectedRow() ;
-    virtual std::vector<std::shared_ptr<SelectRowCommand_ViewMyStringRowHandleListViewRow>> getMyStringRowHandleListViewWidgetListRows() ;
-    virtual std::string getMyStringRowHandleListViewSelectedRow() ;
-    virtual std::vector<std::shared_ptr<SelectRowCommand_ViewMyTableViewRow>> getMyTableViewWidgetTableRows() ;
-    virtual int getMyTableViewSelectedRow() ;
-    virtual std::vector<std::shared_ptr<SelectRowCommand_ViewMyStringRowHandleTableViewRow>> getMyStringRowHandleTableViewWidgetTableRows() ;
-    virtual std::string getMyStringRowHandleTableViewSelectedRow() ;
-    virtual std::vector<std::shared_ptr<SelectRowCommand_ViewMyTreeViewRow>> getMyTreeViewWidgetTreeRows() ;
-    virtual int getMyTreeViewSelectedRow() ;
-    virtual std::vector<std::shared_ptr<SelectRowCommand_ViewMyStringRowHandleTreeViewRow>> getMyStringRowHandleTreeViewWidgetTreeRows() ;
-    virtual std::string getMyStringRowHandleTreeViewSelectedRow() ;
-    virtual std::vector<std::shared_ptr<SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewRow>> getMyIndexBasedMultiSelectRowListViewWidgetListRows() ;
-    virtual std::vector<int> getMyIndexBasedMultiSelectRowListViewSelectedRows() ;
-    virtual std::vector<std::shared_ptr<SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow>> getMyStringHandleMultiSelectRowListViewWidgetListRows() ;
-    virtual std::vector<std::string> getMyStringHandleMultiSelectRowListViewSelectedRows() ;
-    virtual void myListViewRowSelected(int rowIndex) ;
-    virtual void myStringRowHandleListViewRowSelected(std::string rowHandle) ;
-    virtual void myTableViewRowSelected(int rowIndex) ;
-    virtual void myStringRowHandleTableViewRowSelected(std::string rowHandle) ;
-    virtual void myTreeViewRowSelected(int rowIndex) ;
-    virtual void myStringRowHandleTreeViewRowSelected(std::string rowHandle) ;
-    virtual void myIndexBasedMultiSelectRowListViewRowSelected(std::vector<int> rowIndices) ;
-    virtual void myStringHandleMultiSelectRowListViewRowSelected(std::vector<std::string> rowHandles) ;
+    virtual std::vector<std::shared_ptr<SelectRowCommand_ViewMyListViewElementsRow>> getMyListViewElementsListWidgetListRows() ;
+    virtual int getMyListViewElementsListSelectedRow() ;
+    virtual std::vector<std::shared_ptr<SelectRowCommand_ViewMyStringRowHandleListViewElementsRow>> getMyStringRowHandleListViewElementsListWidgetListRows() ;
+    virtual std::string getMyStringRowHandleListViewElementsListSelectedRow() ;
+    virtual std::vector<std::shared_ptr<SelectRowCommand_ViewMyTableViewElementsRow>> getMyTableViewElementsTableWidgetTableRows() ;
+    virtual int getMyTableViewElementsTableSelectedRow() ;
+    virtual std::vector<std::shared_ptr<SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow>> getMyStringRowHandleTableViewElementsTableWidgetTableRows() ;
+    virtual std::string getMyStringRowHandleTableViewElementsTableSelectedRow() ;
+    virtual std::vector<std::shared_ptr<SelectRowCommand_ViewMyTreeViewElementsRow>> getMyTreeViewElementsTreeWidgetTreeRows() ;
+    virtual int getMyTreeViewElementsTreeSelectedRow() ;
+    virtual std::vector<std::shared_ptr<SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow>> getMyStringRowHandleTreeViewElementsTreeWidgetTreeRows() ;
+    virtual std::string getMyStringRowHandleTreeViewElementsTreeSelectedRow() ;
+    virtual std::vector<std::shared_ptr<SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewElementsRow>> getMyIndexBasedMultiSelectRowListViewElementsListWidgetListRows() ;
+    virtual std::vector<int> getMyIndexBasedMultiSelectRowListViewElementsListSelectedRows() ;
+    virtual std::vector<std::shared_ptr<SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow>> getMyStringHandleMultiSelectRowListViewElementsListWidgetListRows() ;
+    virtual std::vector<std::string> getMyStringHandleMultiSelectRowListViewElementsListSelectedRows() ;
+    virtual void myListViewElementsRowSelected(int rowIndex) ;
+    virtual void myStringRowHandleListViewElementsRowSelected(std::string rowHandle) ;
+    virtual void myTableViewElementsRowSelected(int rowIndex) ;
+    virtual void myStringRowHandleTableViewElementsRowSelected(std::string rowHandle) ;
+    virtual void myTreeViewElementsRowSelected(int rowIndex) ;
+    virtual void myStringRowHandleTreeViewElementsRowSelected(std::string rowHandle) ;
+    virtual void myIndexBasedMultiSelectRowListViewElementsRowSelected(std::vector<int> rowIndices) ;
+    virtual void myStringHandleMultiSelectRowListViewElementsRowSelected(std::vector<std::string> rowHandles) ;
     private:
-    std::vector<std::shared_ptr<SelectRowCommand_ViewMyListViewRow>> MyListViewWidgetListRows;
-    int MyListViewSelectedRow;
-    std::vector<std::shared_ptr<SelectRowCommand_ViewMyStringRowHandleListViewRow>> MyStringRowHandleListViewWidgetListRows;
-    std::string MyStringRowHandleListViewSelectedRow;
-    std::vector<std::shared_ptr<SelectRowCommand_ViewMyTableViewRow>> MyTableViewWidgetTableRows;
-    int MyTableViewSelectedRow;
-    std::vector<std::shared_ptr<SelectRowCommand_ViewMyStringRowHandleTableViewRow>> MyStringRowHandleTableViewWidgetTableRows;
-    std::string MyStringRowHandleTableViewSelectedRow;
-    std::vector<std::shared_ptr<SelectRowCommand_ViewMyTreeViewRow>> MyTreeViewWidgetTreeRows;
-    int MyTreeViewSelectedRow;
-    std::vector<std::shared_ptr<SelectRowCommand_ViewMyStringRowHandleTreeViewRow>> MyStringRowHandleTreeViewWidgetTreeRows;
-    std::string MyStringRowHandleTreeViewSelectedRow;
-    std::vector<std::shared_ptr<SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewRow>> MyIndexBasedMultiSelectRowListViewWidgetListRows;
-    std::vector<int> MyIndexBasedMultiSelectRowListViewSelectedRows;
-    std::vector<std::shared_ptr<SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewRow>> MyStringHandleMultiSelectRowListViewWidgetListRows;
-    std::vector<std::string> MyStringHandleMultiSelectRowListViewSelectedRows;
+    std::vector<std::shared_ptr<SelectRowCommand_ViewMyListViewElementsRow>> MyListViewElementsListWidgetListRows;
+    int MyListViewElementsListSelectedRow;
+    std::vector<std::shared_ptr<SelectRowCommand_ViewMyStringRowHandleListViewElementsRow>> MyStringRowHandleListViewElementsListWidgetListRows;
+    std::string MyStringRowHandleListViewElementsListSelectedRow;
+    std::vector<std::shared_ptr<SelectRowCommand_ViewMyTableViewElementsRow>> MyTableViewElementsTableWidgetTableRows;
+    int MyTableViewElementsTableSelectedRow;
+    std::vector<std::shared_ptr<SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow>> MyStringRowHandleTableViewElementsTableWidgetTableRows;
+    std::string MyStringRowHandleTableViewElementsTableSelectedRow;
+    std::vector<std::shared_ptr<SelectRowCommand_ViewMyTreeViewElementsRow>> MyTreeViewElementsTreeWidgetTreeRows;
+    int MyTreeViewElementsTreeSelectedRow;
+    std::vector<std::shared_ptr<SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow>> MyStringRowHandleTreeViewElementsTreeWidgetTreeRows;
+    std::string MyStringRowHandleTreeViewElementsTreeSelectedRow;
+    std::vector<std::shared_ptr<SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewElementsRow>> MyIndexBasedMultiSelectRowListViewElementsListWidgetListRows;
+    std::vector<int> MyIndexBasedMultiSelectRowListViewElementsListSelectedRows;
+    std::vector<std::shared_ptr<SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow>> MyStringHandleMultiSelectRowListViewElementsListWidgetListRows;
+    std::vector<std::string> MyStringHandleMultiSelectRowListViewElementsListSelectedRows;
   };
 }
 

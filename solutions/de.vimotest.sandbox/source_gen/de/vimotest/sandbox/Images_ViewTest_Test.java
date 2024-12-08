@@ -13,11 +13,11 @@ public class Images_ViewTest_Test {
   private Images_View sut;
   private Images_ViewContextProvider contextProvider;
   @Test
-  public void test_My_Scenario_given_empty_context_when_then_MyImage_shows_image_image_active_and_MyUpDownImage_shows_image_image_down_() throws Exception {
+  public void test_My_Scenario_given_empty_context_when_then_Status_shows_image_image_active_and_UpOrDown_shows_image_image_down_() throws Exception {
     this.given_empty_context();
     this.BuildSut();
-    this.then_MyImage_shows_image_image_active_();
-    this.then_MyUpDownImage_shows_image_image_down_();
+    this.then_Status_shows_image_image_active_();
+    this.then_UpOrDown_shows_image_image_down_();
   }
   @BeforeEach
   public void setUp() {
@@ -39,10 +39,10 @@ public class Images_ViewTest_Test {
 
 
 
-  public void then_MyImage_shows_image_image_active_() {
-    Assert.assertEquals("image_active", this.sut.getMyImageImageSource());
+  public void then_Status_shows_image_image_active_() {
+    Assert.assertEquals("image_active", this.sut.getStatusImageImageSource());
   }
-  public void then_MyUpDownImage_shows_image_image_down_() {
-    Assert.assertEquals("image_down", this.sut.getMyUpDownImageImageSource());
+  public void then_UpOrDown_shows_image_image_down_() {
+    Assert.assertEquals("image_down", this.sut.getUpOrDownImageImageSource());
   }
 }

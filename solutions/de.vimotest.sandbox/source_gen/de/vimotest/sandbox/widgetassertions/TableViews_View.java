@@ -6,28 +6,28 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class TableViews_View {
-  private List<TableViews_ViewMyTableViewRow> MyTableViewWidgetTableRows = new LinkedList<>();
-  public List<TableViews_ViewMyTableViewRow> getMyTableViewWidgetTableRows() {
-    return this.MyTableViewWidgetTableRows;
+  private List<TableViews_ViewMyElementsRow> MyElementsTableWidgetTableRows = new LinkedList<>();
+  public List<TableViews_ViewMyElementsRow> getMyElementsTableWidgetTableRows() {
+    return this.MyElementsTableWidgetTableRows;
   }
-  private Integer MyTableViewSelectedRow;
-  public Integer getMyTableViewSelectedRow() {
-    return this.MyTableViewSelectedRow;
+  private Integer MyElementsTableSelectedRow;
+  public Integer getMyElementsTableSelectedRow() {
+    return this.MyElementsTableSelectedRow;
   }
-  private Boolean isMyTableViewVisibility;
-  public Boolean getIsMyTableViewVisibility() {
-    return this.isMyTableViewVisibility;
+  private Boolean isMyElementsTableVisibility;
+  public Boolean getIsMyElementsTableVisibility() {
+    return this.isMyElementsTableVisibility;
   }
-  private Boolean isMyTableViewEnabled;
-  public Boolean getIsMyTableViewEnabled() {
-    return this.isMyTableViewEnabled;
+  private Boolean isMyElementsTableEnabled;
+  public Boolean getIsMyElementsTableEnabled() {
+    return this.isMyElementsTableEnabled;
   }
-  private List<TableViews_ViewMyStringRowHandlesRow> MyStringRowHandlesWidgetTableRows = new LinkedList<>();
-  public List<TableViews_ViewMyStringRowHandlesRow> getMyStringRowHandlesWidgetTableRows() {
-    return this.MyStringRowHandlesWidgetTableRows;
+  private List<TableViews_ViewMyStringRowHandlesRow> MyStringRowHandlesTableWidgetTableRows = new LinkedList<>();
+  public List<TableViews_ViewMyStringRowHandlesRow> getMyStringRowHandlesTableWidgetTableRows() {
+    return this.MyStringRowHandlesTableWidgetTableRows;
   }
-  private String MyStringRowHandlesSelectedRow;
-  public String getMyStringRowHandlesSelectedRow() {
-    return this.MyStringRowHandlesSelectedRow;
+  private String MyStringRowHandlesTableSelectedRow;
+  public String getMyStringRowHandlesTableSelectedRow() {
+    return this.MyStringRowHandlesTableSelectedRow;
   }
 }

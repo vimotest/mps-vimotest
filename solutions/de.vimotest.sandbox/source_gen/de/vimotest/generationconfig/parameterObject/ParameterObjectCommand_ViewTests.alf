@@ -15,11 +15,11 @@ class ParameterObjectCommand_ViewTests {
  }
   
   
-  public MyTest_given_empty_context_when_LoadView_and_uncheck_MyCheckBox_then_ (  ) {
+  public MyTest_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_ (  ) {
   this.given_empty_context (  );
    this.BuildSut (  );
    this.when_LoadView (  );
-   this.when_uncheck_MyCheckBox (  );
+   this.when_uncheck_MyFlag (  );
  }
   
   
@@ -41,9 +41,9 @@ class ParameterObjectCommand_ViewTests {
    this.sut.loadView ( loadViewParameters );
  }
   
-  public when_uncheck_MyCheckBox (  ) {
+  public when_uncheck_MyFlag (  ) {
   let checkedParameters: CheckParams = new ParameterObjectCommand_View:: CheckParams ( false );
-   this.sut.myCheckBoxChecked ( checkedParameters );
+   this.sut.myFlagChecked ( checkedParameters );
  }
   
   // Then Helper Definitions

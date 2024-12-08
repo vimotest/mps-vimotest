@@ -4,10 +4,10 @@ namespace widgetassertions ;
 
 class TreeViews_ViewMyParentStringRowHandlesRow {
   
-  private ValuesText : String  ;
+  private ValuesLabelText : String  ;
   
-  public getValuesText (  ) : String  {
-  return this.ValuesText;
+  public getValuesLabelText (  ) : String  {
+  return this.ValuesLabelText;
  }
   
   private RowHandle : String  ;

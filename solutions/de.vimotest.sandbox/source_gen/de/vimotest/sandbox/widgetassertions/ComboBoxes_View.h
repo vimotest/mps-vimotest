@@ -9,25 +9,25 @@ namespace widgetassertions
   class ComboBoxes_View
   {
     public:
-    virtual std::vector<std::string> getMyOptionsComboBoxEntries() ;
-    virtual std::string getMyOptionsSelectedEntry() ;
-    virtual bool getIsMyOptionsVisibility() ;
-    virtual bool getIsMyOptionsEnabled() ;
-    virtual std::vector<std::string> getMyOptionsWithFreeTextComboBoxEntries() ;
-    virtual std::string getMyOptionsWithFreeTextSelectedEntry() ;
-    virtual std::string getMyOptionsWithFreeTextText() ;
-    virtual bool getIsMyOptionsWithFreeTextVisibility() ;
-    virtual bool getIsMyOptionsWithFreeTextEnabled() ;
+    virtual std::vector<std::string> getMyOptionsComboBoxComboBoxEntries() ;
+    virtual std::string getMyOptionsComboBoxSelectedEntry() ;
+    virtual bool getIsMyOptionsComboBoxVisibility() ;
+    virtual bool getIsMyOptionsComboBoxEnabled() ;
+    virtual std::vector<std::string> getMyOptionsWithFreeTextComboBoxComboBoxEntries() ;
+    virtual std::string getMyOptionsWithFreeTextComboBoxSelectedEntry() ;
+    virtual std::string getMyOptionsWithFreeTextComboBoxText() ;
+    virtual bool getIsMyOptionsWithFreeTextComboBoxVisibility() ;
+    virtual bool getIsMyOptionsWithFreeTextComboBoxEnabled() ;
     private:
-    std::vector<std::string> MyOptionsComboBoxEntries;
-    std::string MyOptionsSelectedEntry;
-    bool isMyOptionsVisibility;
-    bool isMyOptionsEnabled;
-    std::vector<std::string> MyOptionsWithFreeTextComboBoxEntries;
-    std::string MyOptionsWithFreeTextSelectedEntry;
-    std::string MyOptionsWithFreeTextText;
-    bool isMyOptionsWithFreeTextVisibility;
-    bool isMyOptionsWithFreeTextEnabled;
+    std::vector<std::string> MyOptionsComboBoxComboBoxEntries;
+    std::string MyOptionsComboBoxSelectedEntry;
+    bool isMyOptionsComboBoxVisibility;
+    bool isMyOptionsComboBoxEnabled;
+    std::vector<std::string> MyOptionsWithFreeTextComboBoxComboBoxEntries;
+    std::string MyOptionsWithFreeTextComboBoxSelectedEntry;
+    std::string MyOptionsWithFreeTextComboBoxText;
+    bool isMyOptionsWithFreeTextComboBoxVisibility;
+    bool isMyOptionsWithFreeTextComboBoxEnabled;
   };
 }
 

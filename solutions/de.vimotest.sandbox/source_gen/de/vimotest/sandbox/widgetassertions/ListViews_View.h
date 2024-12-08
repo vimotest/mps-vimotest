@@ -7,7 +7,7 @@
 #include "ListViews_ViewMyListOfImagesRow.h"
 #include "ListViews_ViewMyCheckboxesRow.h"
 #include "ListViews_ViewMyStringRowHandlesRow.h"
-#include "ListViews_ViewMyMultiRowSelectionListRow.h"
+#include "ListViews_ViewMyListWithMultiRowSelectionRow.h"
 #include <string>
 
 namespace widgetassertions
@@ -15,39 +15,39 @@ namespace widgetassertions
   class ListViews_View
   {
     public:
-    virtual bool getIsMyListOfLabelVisibility() ;
-    virtual bool getIsMyListOfLabelEnabled() ;
-    virtual std::vector<std::shared_ptr<ListViews_ViewMyListOfLabelRow>> getMyListOfLabelWidgetListRows() ;
-    virtual int getMyListOfLabelSelectedRow() ;
-    virtual bool getIsMyListOfImagesVisibility() ;
-    virtual bool getIsMyListOfImagesEnabled() ;
-    virtual std::vector<std::shared_ptr<ListViews_ViewMyListOfImagesRow>> getMyListOfImagesWidgetListRows() ;
-    virtual int getMyListOfImagesSelectedRow() ;
-    virtual std::vector<std::shared_ptr<ListViews_ViewMyCheckboxesRow>> getMyCheckboxesWidgetListRows() ;
-    virtual int getMyCheckboxesSelectedRow() ;
-    virtual bool getIsMyCheckboxesVisibility() ;
-    virtual bool getIsMyCheckboxesEnabled() ;
-    virtual std::vector<std::shared_ptr<ListViews_ViewMyStringRowHandlesRow>> getMyStringRowHandlesWidgetListRows() ;
-    virtual std::string getMyStringRowHandlesSelectedRow() ;
-    virtual std::vector<std::shared_ptr<ListViews_ViewMyMultiRowSelectionListRow>> getMyMultiRowSelectionListWidgetListRows() ;
-    virtual std::vector<int> getMyMultiRowSelectionListSelectedRows() ;
+    virtual bool getIsMyListOfLabelListVisibility() ;
+    virtual bool getIsMyListOfLabelListEnabled() ;
+    virtual std::vector<std::shared_ptr<ListViews_ViewMyListOfLabelRow>> getMyListOfLabelListWidgetListRows() ;
+    virtual int getMyListOfLabelListSelectedRow() ;
+    virtual bool getIsMyListOfImagesListVisibility() ;
+    virtual bool getIsMyListOfImagesListEnabled() ;
+    virtual std::vector<std::shared_ptr<ListViews_ViewMyListOfImagesRow>> getMyListOfImagesListWidgetListRows() ;
+    virtual int getMyListOfImagesListSelectedRow() ;
+    virtual std::vector<std::shared_ptr<ListViews_ViewMyCheckboxesRow>> getMyCheckboxesListWidgetListRows() ;
+    virtual int getMyCheckboxesListSelectedRow() ;
+    virtual bool getIsMyCheckboxesListVisibility() ;
+    virtual bool getIsMyCheckboxesListEnabled() ;
+    virtual std::vector<std::shared_ptr<ListViews_ViewMyStringRowHandlesRow>> getMyStringRowHandlesListWidgetListRows() ;
+    virtual std::string getMyStringRowHandlesListSelectedRow() ;
+    virtual std::vector<std::shared_ptr<ListViews_ViewMyListWithMultiRowSelectionRow>> getMyListWithMultiRowSelectionListWidgetListRows() ;
+    virtual std::vector<int> getMyListWithMultiRowSelectionListSelectedRows() ;
     private:
-    bool isMyListOfLabelVisibility;
-    bool isMyListOfLabelEnabled;
-    std::vector<std::shared_ptr<ListViews_ViewMyListOfLabelRow>> MyListOfLabelWidgetListRows;
-    int MyListOfLabelSelectedRow;
-    bool isMyListOfImagesVisibility;
-    bool isMyListOfImagesEnabled;
-    std::vector<std::shared_ptr<ListViews_ViewMyListOfImagesRow>> MyListOfImagesWidgetListRows;
-    int MyListOfImagesSelectedRow;
-    std::vector<std::shared_ptr<ListViews_ViewMyCheckboxesRow>> MyCheckboxesWidgetListRows;
-    int MyCheckboxesSelectedRow;
-    bool isMyCheckboxesVisibility;
-    bool isMyCheckboxesEnabled;
-    std::vector<std::shared_ptr<ListViews_ViewMyStringRowHandlesRow>> MyStringRowHandlesWidgetListRows;
-    std::string MyStringRowHandlesSelectedRow;
-    std::vector<std::shared_ptr<ListViews_ViewMyMultiRowSelectionListRow>> MyMultiRowSelectionListWidgetListRows;
-    std::vector<int> MyMultiRowSelectionListSelectedRows;
+    bool isMyListOfLabelListVisibility;
+    bool isMyListOfLabelListEnabled;
+    std::vector<std::shared_ptr<ListViews_ViewMyListOfLabelRow>> MyListOfLabelListWidgetListRows;
+    int MyListOfLabelListSelectedRow;
+    bool isMyListOfImagesListVisibility;
+    bool isMyListOfImagesListEnabled;
+    std::vector<std::shared_ptr<ListViews_ViewMyListOfImagesRow>> MyListOfImagesListWidgetListRows;
+    int MyListOfImagesListSelectedRow;
+    std::vector<std::shared_ptr<ListViews_ViewMyCheckboxesRow>> MyCheckboxesListWidgetListRows;
+    int MyCheckboxesListSelectedRow;
+    bool isMyCheckboxesListVisibility;
+    bool isMyCheckboxesListEnabled;
+    std::vector<std::shared_ptr<ListViews_ViewMyStringRowHandlesRow>> MyStringRowHandlesListWidgetListRows;
+    std::string MyStringRowHandlesListSelectedRow;
+    std::vector<std::shared_ptr<ListViews_ViewMyListWithMultiRowSelectionRow>> MyListWithMultiRowSelectionListWidgetListRows;
+    std::vector<int> MyListWithMultiRowSelectionListSelectedRows;
   };
 }
 

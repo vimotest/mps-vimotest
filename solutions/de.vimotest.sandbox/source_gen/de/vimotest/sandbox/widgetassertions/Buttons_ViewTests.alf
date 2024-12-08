@@ -15,10 +15,10 @@ class Buttons_ViewTests {
  }
   
   
-  public My_Scenario_given_empty_context_when_then_OkButton_is_enabled_and_is_visible_and_shows_text_Test_ (  ) {
+  public My_Scenario_given_empty_context_when_then_Ok_is_enabled_and_is_visible_and_shows_text_Test_ (  ) {
   this.given_empty_context (  );
    this.BuildSut (  );
-   this.then_OkButton_is_enabled_and_is_visible_and_shows_text_Test_ (  );
+   this.then_Ok_is_enabled_and_is_visible_and_shows_text_Test_ (  );
  }
   
   
@@ -38,7 +38,7 @@ class Buttons_ViewTests {
   // Then Helper Definitions
 
   
-  public then_OkButton_is_enabled_and_is_visible_and_shows_text_Test_ (  ) {
+  public then_Ok_is_enabled_and_is_visible_and_shows_text_Test_ (  ) {
   AssertTrue ( this.sut.getIsOkButtonEnabled (  ) );
    AssertTrue ( this.sut.getIsOkButtonVisibility (  ) );
    AssertEqual ( "Test", this.sut.getOkButtonText (  ) );

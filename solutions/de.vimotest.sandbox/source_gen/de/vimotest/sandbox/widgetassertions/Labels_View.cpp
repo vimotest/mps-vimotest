@@ -6,45 +6,45 @@
 
 namespace widgetassertions
 {
-  std::string Labels_View::getMyLabelText( ) 
+  std::string Labels_View::getTestLabelText( ) 
   {
-    return this->MyLabelText;
+    return this->TestLabelText;
   }
-  bool Labels_View::getIsMyLabelEnabled( ) 
+  bool Labels_View::getIsTestLabelEnabled( ) 
   {
-    return this->isMyLabelEnabled;
+    return this->isTestLabelEnabled;
   }
-  bool Labels_View::getIsMyLabelVisibility( ) 
+  bool Labels_View::getIsTestLabelVisibility( ) 
   {
-    return this->isMyLabelVisibility;
+    return this->isTestLabelVisibility;
   }
-  std::vector<std::string> Labels_View::getMyMultiLineLabelText( ) 
+  std::vector<std::string> Labels_View::getMultiLineLabelText( ) 
   {
-    return this->MyMultiLineLabelText;
+    return this->MultiLineLabelText;
   }
-  std::string Labels_View::getMyLabelWithToolTipText( ) 
+  std::string Labels_View::getWithToolTipLabelText( ) 
   {
-    return this->MyLabelWithToolTipText;
+    return this->WithToolTipLabelText;
   }
-  std::string Labels_View::getMyLabelWithToolTipToolTip( ) 
+  std::string Labels_View::getWithToolTipLabelToolTip( ) 
   {
-    return this->MyLabelWithToolTipToolTip;
+    return this->WithToolTipLabelToolTip;
   }
-  std::string Labels_View::getMyLabelWithMultiLineToolTipText( ) 
+  std::string Labels_View::getWithMultiLineToolTipLabelText( ) 
   {
-    return this->MyLabelWithMultiLineToolTipText;
+    return this->WithMultiLineToolTipLabelText;
   }
-  std::vector<std::string> Labels_View::getMyLabelWithMultiLineToolTipToolTip( ) 
+  std::vector<std::string> Labels_View::getWithMultiLineToolTipLabelToolTip( ) 
   {
-    return this->MyLabelWithMultiLineToolTipToolTip;
+    return this->WithMultiLineToolTipLabelToolTip;
   }
-  std::string Labels_View::getMyLabelWithTextColorText( ) 
+  std::string Labels_View::getWithTextColorLabelText( ) 
   {
-    return this->MyLabelWithTextColorText;
+    return this->WithTextColorLabelText;
   }
-  std::string Labels_View::getMyLabelWithTextColorTextColor( ) 
+  std::string Labels_View::getWithTextColorLabelTextColor( ) 
   {
-    return this->MyLabelWithTextColorTextColor;
+    return this->WithTextColorLabelTextColor;
   }
 }
 

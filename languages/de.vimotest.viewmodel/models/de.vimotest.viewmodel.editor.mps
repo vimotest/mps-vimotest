@@ -2572,8 +2572,17 @@
       </node>
     </node>
     <node concept="3EZMnI" id="F907haMjlR" role="2wV5jI">
-      <node concept="PMmxH" id="RX_REsnmO3" role="3EZMnx">
-        <ref role="PMmxG" to="dgt9:RX_REsnmNY" resolve="AbstractNamedStructType_AliasAndName_EC" />
+      <node concept="PMmxH" id="RX_REsnmO1" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0ifn" id="1mmsj6xVYKx" role="3EZMnx">
+        <property role="3F0ifm" value="command" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0A7n" id="RX_REsnmO2" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" to="dgt9:F907haMqVA" resolve="Name" />
       </node>
       <node concept="PMmxH" id="RX_REsnmXX" role="3EZMnx">
         <ref role="PMmxG" to="dgt9:RX_REsnmVi" resolve="AbstractStructType_Contents_EC" />
@@ -2664,6 +2673,10 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3F0ifn" id="1mmsj6xRiIO" role="3EZMnx">
+        <property role="3F0ifm" value="command" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
       </node>
       <node concept="gc7cB" id="5jkMFwCaC7g" role="3EZMnx">
         <node concept="3VJUX4" id="5jkMFwCaC7i" role="3YsKMw">

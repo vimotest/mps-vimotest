@@ -17,9 +17,9 @@ namespace widgetassertions
   {
     return this->DescriptionLabelText;
   }
-  std::string TableViews_ViewMyElementsRow::getInfoIconImageImageSource( ) 
+  std::string TableViews_ViewMyElementsRow::getInfoIconImageName( ) 
   {
-    return this->InfoIconImageImageSource;
+    return this->InfoIconImageName;
   }
   int TableViews_ViewMyElementsRow::getRowIndex( ) 
   {

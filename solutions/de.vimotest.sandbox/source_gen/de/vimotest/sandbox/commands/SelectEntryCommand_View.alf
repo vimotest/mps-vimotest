@@ -4,10 +4,10 @@ namespace commands ;
 
 class SelectEntryCommand_View {
   
-  private MyElementsComboBoxComboBoxEntries : String [ * ]  ;
+  private MyElementsComboBoxEntries : String [ * ]  ;
   
-  public getMyElementsComboBoxComboBoxEntries (  ) : String [ * ]  {
-  return this.MyElementsComboBoxComboBoxEntries;
+  public getMyElementsComboBoxEntries (  ) : String [ * ]  {
+  return this.MyElementsComboBoxEntries;
  }
   
   private MyElementsComboBoxSelectedEntry : String  ;
@@ -16,10 +16,10 @@ class SelectEntryCommand_View {
   return this.MyElementsComboBoxSelectedEntry;
  }
   
-  private MyOptionsRadioButtonRadioButtonChoices : String [ * ]  ;
+  private MyOptionsRadioButtonName : String [ * ]  ;
   
-  public getMyOptionsRadioButtonRadioButtonChoices (  ) : String [ * ]  {
-  return this.MyOptionsRadioButtonRadioButtonChoices;
+  public getMyOptionsRadioButtonName (  ) : String [ * ]  {
+  return this.MyOptionsRadioButtonName;
  }
   
   private MyOptionsRadioButtonSelectedEntry : String  ;

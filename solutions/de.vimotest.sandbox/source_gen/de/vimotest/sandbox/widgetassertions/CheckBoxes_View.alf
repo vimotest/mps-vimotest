@@ -10,10 +10,10 @@ class CheckBoxes_View {
   return this.isMyFlagWithLabelCheckBoxChecked;
  }
   
-  private isMyFlagWithLabelCheckBoxVisibility : Boolean  ;
+  private isMyFlagWithLabelCheckBoxVisible : Boolean  ;
   
-  public getIsMyFlagWithLabelCheckBoxVisibility (  ) : Boolean  {
-  return this.isMyFlagWithLabelCheckBoxVisibility;
+  public getIsMyFlagWithLabelCheckBoxVisible (  ) : Boolean  {
+  return this.isMyFlagWithLabelCheckBoxVisible;
  }
   
   private isMyFlagWithLabelCheckBoxEnabled : Boolean  ;

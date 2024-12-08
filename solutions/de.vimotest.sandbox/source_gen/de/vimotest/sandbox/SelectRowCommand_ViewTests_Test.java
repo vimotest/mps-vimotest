@@ -103,7 +103,7 @@ public class SelectRowCommand_ViewTests_Test {
 
 
   public void then_MyListViewElements_has_2_rows() {
-    List<SelectRowCommand_ViewMyListViewElementsRow> actualRows = this.sut.getMyListViewElementsListWidgetListRows();
+    List<SelectRowCommand_ViewMyListViewElementsRow> actualRows = this.sut.getMyListViewElementsListRows();
     Assert.assertEquals(2, actualRows.size());
     // {
     SelectRowCommand_ViewMyListViewElementsRow row0 = actualRows.get(1 - 1);
@@ -117,7 +117,7 @@ public class SelectRowCommand_ViewTests_Test {
     // }
   }
   public void then_MyStringRowHandleListViewElements_has_2_rows() {
-    List<SelectRowCommand_ViewMyStringRowHandleListViewElementsRow> actualRows = this.sut.getMyStringRowHandleListViewElementsListWidgetListRows();
+    List<SelectRowCommand_ViewMyStringRowHandleListViewElementsRow> actualRows = this.sut.getMyStringRowHandleListViewElementsListRows();
     Assert.assertEquals(2, actualRows.size());
     // {
     SelectRowCommand_ViewMyStringRowHandleListViewElementsRow row0 = actualRows.get(1 - 1);
@@ -131,7 +131,7 @@ public class SelectRowCommand_ViewTests_Test {
     // }
   }
   public void then_MyTableViewElements_has_2_rows() {
-    List<SelectRowCommand_ViewMyTableViewElementsRow> actualRows = this.sut.getMyTableViewElementsTableWidgetTableRows();
+    List<SelectRowCommand_ViewMyTableViewElementsRow> actualRows = this.sut.getMyTableViewElementsTableRows();
     Assert.assertEquals(2, actualRows.size());
     // {
     SelectRowCommand_ViewMyTableViewElementsRow row0 = actualRows.get(1 - 1);
@@ -145,7 +145,7 @@ public class SelectRowCommand_ViewTests_Test {
     // }
   }
   public void then_MyStringRowHandleTableViewElements_has_2_rows() {
-    List<SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow> actualRows = this.sut.getMyStringRowHandleTableViewElementsTableWidgetTableRows();
+    List<SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow> actualRows = this.sut.getMyStringRowHandleTableViewElementsTableRows();
     Assert.assertEquals(2, actualRows.size());
     // {
     SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow row0 = actualRows.get(1 - 1);
@@ -159,7 +159,7 @@ public class SelectRowCommand_ViewTests_Test {
     // }
   }
   public void then_MyTreeViewElements_has_2_rows() {
-    List<SelectRowCommand_ViewMyTreeViewElementsRow> actualRows = this.sut.getMyTreeViewElementsTreeWidgetTreeRows();
+    List<SelectRowCommand_ViewMyTreeViewElementsRow> actualRows = this.sut.getMyTreeViewElementsTreeRows();
     Assert.assertEquals(2, actualRows.size());
     // {
     SelectRowCommand_ViewMyTreeViewElementsRow row0 = actualRows.get(1 - 1);
@@ -175,7 +175,7 @@ public class SelectRowCommand_ViewTests_Test {
     // }
   }
   public void then_MyStringRowHandleTreeViewElements_has_2_rows() {
-    List<SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow> actualRows = this.sut.getMyStringRowHandleTreeViewElementsTreeWidgetTreeRows();
+    List<SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow> actualRows = this.sut.getMyStringRowHandleTreeViewElementsTreeRows();
     Assert.assertEquals(2, actualRows.size());
     // {
     SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow row0 = actualRows.get(1 - 1);
@@ -191,7 +191,7 @@ public class SelectRowCommand_ViewTests_Test {
     // }
   }
   public void then_MyStringHandleMultiSelectRowListViewElements_has_3_rows() {
-    List<SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow> actualRows = this.sut.getMyStringHandleMultiSelectRowListViewElementsListWidgetListRows();
+    List<SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow> actualRows = this.sut.getMyStringHandleMultiSelectRowListViewElementsListRows();
     Assert.assertEquals(3, actualRows.size());
     // {
     SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow row0 = actualRows.get(1 - 1);

@@ -120,7 +120,7 @@ namespace commands
   }
   void SelectRowCommand_ViewTests::then_MyListViewElements_has_2_rows( ) 
   {
-    auto& actualRows = this->sut->getMyListViewElementsListWidgetListRows();
+    auto& actualRows = this->sut->getMyListViewElementsListRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
@@ -135,7 +135,7 @@ namespace commands
   }
   void SelectRowCommand_ViewTests::then_MyStringRowHandleListViewElements_has_2_rows( ) 
   {
-    auto& actualRows = this->sut->getMyStringRowHandleListViewElementsListWidgetListRows();
+    auto& actualRows = this->sut->getMyStringRowHandleListViewElementsListRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
@@ -150,7 +150,7 @@ namespace commands
   }
   void SelectRowCommand_ViewTests::then_MyTableViewElements_has_2_rows( ) 
   {
-    auto& actualRows = this->sut->getMyTableViewElementsTableWidgetTableRows();
+    auto& actualRows = this->sut->getMyTableViewElementsTableRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
@@ -165,7 +165,7 @@ namespace commands
   }
   void SelectRowCommand_ViewTests::then_MyStringRowHandleTableViewElements_has_2_rows( ) 
   {
-    auto& actualRows = this->sut->getMyStringRowHandleTableViewElementsTableWidgetTableRows();
+    auto& actualRows = this->sut->getMyStringRowHandleTableViewElementsTableRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
@@ -180,7 +180,7 @@ namespace commands
   }
   void SelectRowCommand_ViewTests::then_MyTreeViewElements_has_2_rows( ) 
   {
-    auto& actualRows = this->sut->getMyTreeViewElementsTreeWidgetTreeRows();
+    auto& actualRows = this->sut->getMyTreeViewElementsTreeRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
@@ -197,7 +197,7 @@ namespace commands
   }
   void SelectRowCommand_ViewTests::then_MyStringRowHandleTreeViewElements_has_2_rows( ) 
   {
-    auto& actualRows = this->sut->getMyStringRowHandleTreeViewElementsTreeWidgetTreeRows();
+    auto& actualRows = this->sut->getMyStringRowHandleTreeViewElementsTreeRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
@@ -214,7 +214,7 @@ namespace commands
   }
   void SelectRowCommand_ViewTests::then_MyStringHandleMultiSelectRowListViewElements_has_3_rows( ) 
   {
-    auto& actualRows = this->sut->getMyStringHandleMultiSelectRowListViewElementsListWidgetListRows();
+    auto& actualRows = this->sut->getMyStringHandleMultiSelectRowListViewElementsListRows();
     EXPECT_EQ(3, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);

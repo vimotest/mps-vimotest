@@ -10,17 +10,17 @@
 
 namespace commands
 {
-  std::vector<std::shared_ptr<RowBasedCommand_ViewMyFlagsRow>> RowBasedCommand_View::getMyFlagsListWidgetListRows( ) 
+  std::vector<std::shared_ptr<RowBasedCommand_ViewMyFlagsRow>> RowBasedCommand_View::getMyFlagsListRows( ) 
   {
-    return this->MyFlagsListWidgetListRows;
+    return this->MyFlagsListRows;
   }
-  std::vector<std::shared_ptr<RowBasedCommand_ViewMyComboBoxesRow>> RowBasedCommand_View::getMyComboBoxesTableWidgetTableRows( ) 
+  std::vector<std::shared_ptr<RowBasedCommand_ViewMyComboBoxesRow>> RowBasedCommand_View::getMyComboBoxesTableRows( ) 
   {
-    return this->MyComboBoxesTableWidgetTableRows;
+    return this->MyComboBoxesTableRows;
   }
-  std::vector<std::shared_ptr<RowBasedCommand_ViewMyStandardControlsRow>> RowBasedCommand_View::getMyStandardControlsTreeWidgetTreeRows( ) 
+  std::vector<std::shared_ptr<RowBasedCommand_ViewMyStandardControlsRow>> RowBasedCommand_View::getMyStandardControlsTreeRows( ) 
   {
-    return this->MyStandardControlsTreeWidgetTreeRows;
+    return this->MyStandardControlsTreeRows;
   }
   void RowBasedCommand_View::loadView( ) 
   {

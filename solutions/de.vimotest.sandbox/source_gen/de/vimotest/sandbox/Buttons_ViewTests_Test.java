@@ -40,7 +40,7 @@ public class Buttons_ViewTests_Test {
 
   public void then_Ok_is_enabled_and_is_visible_and_shows_text_Test_() {
     Assert.assertTrue(this.sut.getIsOkButtonEnabled());
-    Assert.assertTrue(this.sut.getIsOkButtonVisibility());
+    Assert.assertTrue(this.sut.getIsOkButtonVisible());
     Assert.assertEquals("Test", this.sut.getOkButtonText());
   }
 }

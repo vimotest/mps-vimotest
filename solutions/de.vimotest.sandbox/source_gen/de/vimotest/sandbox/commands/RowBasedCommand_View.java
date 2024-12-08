@@ -6,17 +6,17 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class RowBasedCommand_View {
-  private List<RowBasedCommand_ViewMyFlagsRow> MyFlagsListWidgetListRows = new LinkedList<>();
-  public List<RowBasedCommand_ViewMyFlagsRow> getMyFlagsListWidgetListRows() {
-    return this.MyFlagsListWidgetListRows;
+  private List<RowBasedCommand_ViewMyFlagsRow> MyFlagsListRows = new LinkedList<>();
+  public List<RowBasedCommand_ViewMyFlagsRow> getMyFlagsListRows() {
+    return this.MyFlagsListRows;
   }
-  private List<RowBasedCommand_ViewMyComboBoxesRow> MyComboBoxesTableWidgetTableRows = new LinkedList<>();
-  public List<RowBasedCommand_ViewMyComboBoxesRow> getMyComboBoxesTableWidgetTableRows() {
-    return this.MyComboBoxesTableWidgetTableRows;
+  private List<RowBasedCommand_ViewMyComboBoxesRow> MyComboBoxesTableRows = new LinkedList<>();
+  public List<RowBasedCommand_ViewMyComboBoxesRow> getMyComboBoxesTableRows() {
+    return this.MyComboBoxesTableRows;
   }
-  private List<RowBasedCommand_ViewMyStandardControlsRow> MyStandardControlsTreeWidgetTreeRows = new LinkedList<>();
-  public List<RowBasedCommand_ViewMyStandardControlsRow> getMyStandardControlsTreeWidgetTreeRows() {
-    return this.MyStandardControlsTreeWidgetTreeRows;
+  private List<RowBasedCommand_ViewMyStandardControlsRow> MyStandardControlsTreeRows = new LinkedList<>();
+  public List<RowBasedCommand_ViewMyStandardControlsRow> getMyStandardControlsTreeRows() {
+    return this.MyStandardControlsTreeRows;
   }
   public void loadView() {
   }

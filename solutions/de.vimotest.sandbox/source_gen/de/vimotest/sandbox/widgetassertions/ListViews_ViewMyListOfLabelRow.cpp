@@ -13,9 +13,9 @@ namespace widgetassertions
   {
     return this->isMyValueLabelEnabled;
   }
-  bool ListViews_ViewMyListOfLabelRow::getIsMyValueLabelVisibility( ) 
+  bool ListViews_ViewMyListOfLabelRow::getIsMyValueLabelVisible( ) 
   {
-    return this->isMyValueLabelVisibility;
+    return this->isMyValueLabelVisible;
   }
   int ListViews_ViewMyListOfLabelRow::getRowIndex( ) 
   {

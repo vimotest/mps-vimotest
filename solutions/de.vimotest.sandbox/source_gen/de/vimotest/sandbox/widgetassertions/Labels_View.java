@@ -14,9 +14,9 @@ public class Labels_View {
   public Boolean getIsTestLabelEnabled() {
     return this.isTestLabelEnabled;
   }
-  private Boolean isTestLabelVisibility;
-  public Boolean getIsTestLabelVisibility() {
-    return this.isTestLabelVisibility;
+  private Boolean isTestLabelVisible;
+  public Boolean getIsTestLabelVisible() {
+    return this.isTestLabelVisible;
   }
   private List<String> MultiLineLabelText = new LinkedList<>();
   public List<String> getMultiLineLabelText() {

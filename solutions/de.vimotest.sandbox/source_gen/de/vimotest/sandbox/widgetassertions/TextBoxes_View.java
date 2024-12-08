@@ -10,9 +10,9 @@ public class TextBoxes_View {
   public String getMyValueTextBoxText() {
     return this.MyValueTextBoxText;
   }
-  private Boolean isMyValueTextBoxVisibility;
-  public Boolean getIsMyValueTextBoxVisibility() {
-    return this.isMyValueTextBoxVisibility;
+  private Boolean isMyValueTextBoxVisible;
+  public Boolean getIsMyValueTextBoxVisible() {
+    return this.isMyValueTextBoxVisible;
   }
   private Boolean isMyValueTextBoxEnabled;
   public Boolean getIsMyValueTextBoxEnabled() {

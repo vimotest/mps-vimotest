@@ -22,10 +22,10 @@ class TableViews_ViewMyElementsRow {
   return this.DescriptionLabelText;
  }
   
-  private InfoIconImageImageSource : String  ;
+  private InfoIconImageName : String  ;
   
-  public getInfoIconImageImageSource (  ) : String  {
-  return this.InfoIconImageImageSource;
+  public getInfoIconImageName (  ) : String  {
+  return this.InfoIconImageName;
  }
   
   private RowIndex : Integer  ;

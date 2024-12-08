@@ -63,7 +63,7 @@ namespace widgetassertions
   }
   void TreeViews_ViewTest::then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible( ) 
   {
-    auto& actualRows = this->sut->getMyTreeViewElementsTreeWidgetTreeRows();
+    auto& actualRows = this->sut->getMyTreeViewElementsTreeRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
@@ -72,7 +72,7 @@ namespace widgetassertions
     EXPECT_TRUE(row0->getIsIncludeCheckBoxChecked());
     EXPECT_EQ(std::string("A"), row0->getNameLabelText());
     EXPECT_EQ(std::string("B"), row0->getDescriptionLabelText());
-    EXPECT_EQ(std::string("image_triangle"), row0->getInfoIconImageImageSource());
+    EXPECT_EQ(std::string("image_triangle"), row0->getInfoIconImageName());
     // }
     // {
     auto& row1 = actualRows.at(1);
@@ -81,15 +81,15 @@ namespace widgetassertions
     EXPECT_FALSE(row1->getIsIncludeCheckBoxChecked());
     EXPECT_EQ(std::string("C"), row1->getNameLabelText());
     EXPECT_EQ(std::string("D"), row1->getDescriptionLabelText());
-    EXPECT_EQ(std::string("image_circle"), row1->getInfoIconImageImageSource());
+    EXPECT_EQ(std::string("image_circle"), row1->getInfoIconImageName());
     // }
     EXPECT_EQ(1, this->sut->getMyTreeViewElementsTreeSelectedRow());
     EXPECT_TRUE(this->sut->getIsMyTreeViewElementsTreeEnabled());
-    EXPECT_TRUE(this->sut->getIsMyTreeViewElementsTreeVisibility());
+    EXPECT_TRUE(this->sut->getIsMyTreeViewElementsTreeVisible());
   }
   void TreeViews_ViewTest::then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1( ) 
   {
-    auto& actualRows = this->sut->getMyStringRowHandlesTreeWidgetTreeRows();
+    auto& actualRows = this->sut->getMyStringRowHandlesTreeRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
@@ -107,7 +107,7 @@ namespace widgetassertions
   }
   void TreeViews_ViewTest::then_MyParentIndexRowHandles_has_4_rows( ) 
   {
-    auto& actualRows = this->sut->getMyParentIndexRowHandlesTreeWidgetTreeRows();
+    auto& actualRows = this->sut->getMyParentIndexRowHandlesTreeRows();
     EXPECT_EQ(4, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
@@ -136,7 +136,7 @@ namespace widgetassertions
   }
   void TreeViews_ViewTest::then_MyParentStringRowHandles_has_4_rows( ) 
   {
-    auto& actualRows = this->sut->getMyParentStringRowHandlesTreeWidgetTreeRows();
+    auto& actualRows = this->sut->getMyParentStringRowHandlesTreeRows();
     EXPECT_EQ(4, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
@@ -165,7 +165,7 @@ namespace widgetassertions
   }
   void TreeViews_ViewTest::then_MyTreeViewElements_has_2_rows( ) 
   {
-    auto& actualRows = this->sut->getMyTreeViewElementsTreeWidgetTreeRows();
+    auto& actualRows = this->sut->getMyTreeViewElementsTreeRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);

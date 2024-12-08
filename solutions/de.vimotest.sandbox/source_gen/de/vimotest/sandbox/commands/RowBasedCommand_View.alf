@@ -4,22 +4,22 @@ namespace commands ;
 
 class RowBasedCommand_View {
   
-  private MyFlagsListWidgetListRows : RowBasedCommand_ViewMyFlagsRow [ * ]  ;
+  private MyFlagsListRows : RowBasedCommand_ViewMyFlagsRow [ * ]  ;
   
-  public getMyFlagsListWidgetListRows (  ) : RowBasedCommand_ViewMyFlagsRow [ * ]  {
-  return this.MyFlagsListWidgetListRows;
+  public getMyFlagsListRows (  ) : RowBasedCommand_ViewMyFlagsRow [ * ]  {
+  return this.MyFlagsListRows;
  }
   
-  private MyComboBoxesTableWidgetTableRows : RowBasedCommand_ViewMyComboBoxesRow [ * ]  ;
+  private MyComboBoxesTableRows : RowBasedCommand_ViewMyComboBoxesRow [ * ]  ;
   
-  public getMyComboBoxesTableWidgetTableRows (  ) : RowBasedCommand_ViewMyComboBoxesRow [ * ]  {
-  return this.MyComboBoxesTableWidgetTableRows;
+  public getMyComboBoxesTableRows (  ) : RowBasedCommand_ViewMyComboBoxesRow [ * ]  {
+  return this.MyComboBoxesTableRows;
  }
   
-  private MyStandardControlsTreeWidgetTreeRows : RowBasedCommand_ViewMyStandardControlsRow [ * ]  ;
+  private MyStandardControlsTreeRows : RowBasedCommand_ViewMyStandardControlsRow [ * ]  ;
   
-  public getMyStandardControlsTreeWidgetTreeRows (  ) : RowBasedCommand_ViewMyStandardControlsRow [ * ]  {
-  return this.MyStandardControlsTreeWidgetTreeRows;
+  public getMyStandardControlsTreeRows (  ) : RowBasedCommand_ViewMyStandardControlsRow [ * ]  {
+  return this.MyStandardControlsTreeRows;
  }
   
   public loadView (  ) {     }

@@ -52,7 +52,7 @@ namespace commands
   }
   void SelectEntryCommand_ViewTests::then_MyElements_has_3_entries_and( ) 
   {
-    auto& actualMyElementsEntries = this->sut->getMyElementsComboBoxComboBoxEntries();
+    auto& actualMyElementsEntries = this->sut->getMyElementsComboBoxEntries();
     EXPECT_EQ(3, actualMyElementsEntries.size());
     EXPECT_EQ(std::string("A"), actualMyElementsEntries.at(0));
     EXPECT_EQ(std::string("B"), actualMyElementsEntries.at(1));

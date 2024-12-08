@@ -55,7 +55,7 @@ public class TreeViews_ViewTest_Test {
 
 
   public void then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible() {
-    List<TreeViews_ViewMyTreeViewElementsRow> actualRows = this.sut.getMyTreeViewElementsTreeWidgetTreeRows();
+    List<TreeViews_ViewMyTreeViewElementsRow> actualRows = this.sut.getMyTreeViewElementsTreeRows();
     Assert.assertEquals(2, actualRows.size());
     // {
     TreeViews_ViewMyTreeViewElementsRow row0 = actualRows.get(1 - 1);
@@ -64,7 +64,7 @@ public class TreeViews_ViewTest_Test {
     Assert.assertTrue(row0.getIsIncludeCheckBoxChecked());
     Assert.assertEquals("A", row0.getNameLabelText());
     Assert.assertEquals("B", row0.getDescriptionLabelText());
-    Assert.assertEquals("image_triangle", row0.getInfoIconImageImageSource());
+    Assert.assertEquals("image_triangle", row0.getInfoIconImageName());
     // }
     // {
     TreeViews_ViewMyTreeViewElementsRow row1 = actualRows.get(2 - 1);
@@ -73,14 +73,14 @@ public class TreeViews_ViewTest_Test {
     Assert.assertFalse(row1.getIsIncludeCheckBoxChecked());
     Assert.assertEquals("C", row1.getNameLabelText());
     Assert.assertEquals("D", row1.getDescriptionLabelText());
-    Assert.assertEquals("image_circle", row1.getInfoIconImageImageSource());
+    Assert.assertEquals("image_circle", row1.getInfoIconImageName());
     // }
     Assert.assertEquals(Integer.valueOf(this.sut.getMyTreeViewElementsTreeSelectedRow()), this.sut.getMyTreeViewElementsTreeSelectedRow());
     Assert.assertTrue(this.sut.getIsMyTreeViewElementsTreeEnabled());
-    Assert.assertTrue(this.sut.getIsMyTreeViewElementsTreeVisibility());
+    Assert.assertTrue(this.sut.getIsMyTreeViewElementsTreeVisible());
   }
   public void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() {
-    List<TreeViews_ViewMyStringRowHandlesRow> actualRows = this.sut.getMyStringRowHandlesTreeWidgetTreeRows();
+    List<TreeViews_ViewMyStringRowHandlesRow> actualRows = this.sut.getMyStringRowHandlesTreeRows();
     Assert.assertEquals(2, actualRows.size());
     // {
     TreeViews_ViewMyStringRowHandlesRow row0 = actualRows.get(1 - 1);
@@ -97,7 +97,7 @@ public class TreeViews_ViewTest_Test {
     Assert.assertEquals("ROW1", this.sut.getMyStringRowHandlesTreeSelectedRow());
   }
   public void then_MyParentIndexRowHandles_has_4_rows() {
-    List<TreeViews_ViewMyParentIndexRowHandlesRow> actualRows = this.sut.getMyParentIndexRowHandlesTreeWidgetTreeRows();
+    List<TreeViews_ViewMyParentIndexRowHandlesRow> actualRows = this.sut.getMyParentIndexRowHandlesTreeRows();
     Assert.assertEquals(4, actualRows.size());
     // {
     TreeViews_ViewMyParentIndexRowHandlesRow row0 = actualRows.get(1 - 1);
@@ -125,7 +125,7 @@ public class TreeViews_ViewTest_Test {
     // }
   }
   public void then_MyParentStringRowHandles_has_4_rows() {
-    List<TreeViews_ViewMyParentStringRowHandlesRow> actualRows = this.sut.getMyParentStringRowHandlesTreeWidgetTreeRows();
+    List<TreeViews_ViewMyParentStringRowHandlesRow> actualRows = this.sut.getMyParentStringRowHandlesTreeRows();
     Assert.assertEquals(4, actualRows.size());
     // {
     TreeViews_ViewMyParentStringRowHandlesRow row0 = actualRows.get(1 - 1);
@@ -153,7 +153,7 @@ public class TreeViews_ViewTest_Test {
     // }
   }
   public void then_MyTreeViewElements_has_2_rows() {
-    List<TreeViews_ViewMyTreeViewElementsRow> actualRows = this.sut.getMyTreeViewElementsTreeWidgetTreeRows();
+    List<TreeViews_ViewMyTreeViewElementsRow> actualRows = this.sut.getMyTreeViewElementsTreeRows();
     Assert.assertEquals(2, actualRows.size());
     // {
     TreeViews_ViewMyTreeViewElementsRow row0 = actualRows.get(1 - 1);

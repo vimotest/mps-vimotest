@@ -91,7 +91,7 @@ class RowBasedCommand_ViewTests {
 
   
   public then_MyFlags_has_2_rows (  ) {
-  let actualRows: RowBasedCommand_ViewMyFlagsRow [] = this.sut.getMyFlagsListWidgetListRows (  );
+  let actualRows: RowBasedCommand_ViewMyFlagsRow [] = this.sut.getMyFlagsListRows (  );
    AssertEqual ( 2, actualRows->size (  ) );
    {
   let row0: RowBasedCommand_ViewMyFlagsRow = actualRows[ 1 ];
@@ -106,16 +106,16 @@ class RowBasedCommand_ViewTests {
  }
   
   public then_MyComboBoxes_has_2_rows (  ) {
-  let actualRows: RowBasedCommand_ViewMyComboBoxesRow [] = this.sut.getMyComboBoxesTableWidgetTableRows (  );
+  let actualRows: RowBasedCommand_ViewMyComboBoxesRow [] = this.sut.getMyComboBoxesTableRows (  );
    AssertEqual ( 2, actualRows->size (  ) );
    {
   let row0: RowBasedCommand_ViewMyComboBoxesRow = actualRows[ 1 ];
    AssertEqual ( 0, row0.getRowIndex (  ) );
-   let actualRow0FreeTextComboBoxesEntries: String [] = row0.getFreeTextComboBoxesComboBoxComboBoxEntries (  );
+   let actualRow0FreeTextComboBoxesEntries: String [] = row0.getFreeTextComboBoxesComboBoxEntries (  );
    AssertEqual ( 0, actualRow0FreeTextComboBoxesEntries->size (  ) );
    AssertEqual ( null, row0.getFreeTextComboBoxesComboBoxSelectedEntry (  ) );
    AssertEqual ( "MyText1", row0.getFreeTextComboBoxesComboBoxText (  ) );
-   let actualRow0EntryComboBoxesEntries: String [] = row0.getEntryComboBoxesComboBoxComboBoxEntries (  );
+   let actualRow0EntryComboBoxesEntries: String [] = row0.getEntryComboBoxesComboBoxEntries (  );
    AssertEqual ( 3, actualRow0EntryComboBoxesEntries->size (  ) );
    AssertEqual ( "A", actualRow0EntryComboBoxesEntries[ 1 ] ?? "" );
    AssertEqual ( "B", actualRow0EntryComboBoxesEntries[ 2 ] ?? "" );
@@ -125,11 +125,11 @@ class RowBasedCommand_ViewTests {
    {
   let row1: RowBasedCommand_ViewMyComboBoxesRow = actualRows[ 2 ];
    AssertEqual ( 1, row1.getRowIndex (  ) );
-   let actualRow1FreeTextComboBoxesEntries: String [] = row1.getFreeTextComboBoxesComboBoxComboBoxEntries (  );
+   let actualRow1FreeTextComboBoxesEntries: String [] = row1.getFreeTextComboBoxesComboBoxEntries (  );
    AssertEqual ( 0, actualRow1FreeTextComboBoxesEntries->size (  ) );
    AssertEqual ( null, row1.getFreeTextComboBoxesComboBoxSelectedEntry (  ) );
    AssertEqual ( "MyText2", row1.getFreeTextComboBoxesComboBoxText (  ) );
-   let actualRow1EntryComboBoxesEntries: String [] = row1.getEntryComboBoxesComboBoxComboBoxEntries (  );
+   let actualRow1EntryComboBoxesEntries: String [] = row1.getEntryComboBoxesComboBoxEntries (  );
    AssertEqual ( 3, actualRow1EntryComboBoxesEntries->size (  ) );
    AssertEqual ( "D", actualRow1EntryComboBoxesEntries[ 1 ] ?? "" );
    AssertEqual ( "E", actualRow1EntryComboBoxesEntries[ 2 ] ?? "" );
@@ -139,7 +139,7 @@ class RowBasedCommand_ViewTests {
  }
   
   public then_MyStandardControls_has_2_rows (  ) {
-  let actualRows: RowBasedCommand_ViewMyStandardControlsRow [] = this.sut.getMyStandardControlsTreeWidgetTreeRows (  );
+  let actualRows: RowBasedCommand_ViewMyStandardControlsRow [] = this.sut.getMyStandardControlsTreeRows (  );
    AssertEqual ( 2, actualRows->size (  ) );
    {
   let row0: RowBasedCommand_ViewMyStandardControlsRow = actualRows[ 1 ];

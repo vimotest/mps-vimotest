@@ -55,7 +55,7 @@ namespace widgetassertions
   {
     EXPECT_EQ(std::string("Some entered Input"), this->sut->getMyValueTextBoxText());
     EXPECT_TRUE(this->sut->getIsMyValueTextBoxEnabled());
-    EXPECT_TRUE(this->sut->getIsMyValueTextBoxVisibility());
+    EXPECT_TRUE(this->sut->getIsMyValueTextBoxVisible());
   }
   void TextBoxes_ViewTest::then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_( ) 
   {

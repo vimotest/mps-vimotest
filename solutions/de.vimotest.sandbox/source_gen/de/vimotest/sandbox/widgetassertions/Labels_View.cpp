@@ -14,9 +14,9 @@ namespace widgetassertions
   {
     return this->isTestLabelEnabled;
   }
-  bool Labels_View::getIsTestLabelVisibility( ) 
+  bool Labels_View::getIsTestLabelVisible( ) 
   {
-    return this->isTestLabelVisibility;
+    return this->isTestLabelVisible;
   }
   std::vector<std::string> Labels_View::getMultiLineLabelText( ) 
   {

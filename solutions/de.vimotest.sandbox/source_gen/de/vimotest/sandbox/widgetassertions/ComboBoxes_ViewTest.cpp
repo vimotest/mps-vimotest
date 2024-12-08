@@ -44,18 +44,18 @@ namespace widgetassertions
   }
   void ComboBoxes_ViewTest::then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible( ) 
   {
-    auto& actualMyOptionsEntries = this->sut->getMyOptionsComboBoxComboBoxEntries();
+    auto& actualMyOptionsEntries = this->sut->getMyOptionsComboBoxEntries();
     EXPECT_EQ(3, actualMyOptionsEntries.size());
     EXPECT_EQ(std::string("A1"), actualMyOptionsEntries.at(0));
     EXPECT_EQ(std::string("A2"), actualMyOptionsEntries.at(1));
     EXPECT_EQ(std::string("A3"), actualMyOptionsEntries.at(2));
     EXPECT_EQ(std::string("A1"), this->sut->getMyOptionsComboBoxSelectedEntry());
     EXPECT_TRUE(this->sut->getIsMyOptionsComboBoxEnabled());
-    EXPECT_TRUE(this->sut->getIsMyOptionsComboBoxVisibility());
+    EXPECT_TRUE(this->sut->getIsMyOptionsComboBoxVisible());
   }
   void ComboBoxes_ViewTest::then_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_( ) 
   {
-    auto& actualMyOptionsWithFreeTextEntries = this->sut->getMyOptionsWithFreeTextComboBoxComboBoxEntries();
+    auto& actualMyOptionsWithFreeTextEntries = this->sut->getMyOptionsWithFreeTextComboBoxEntries();
     EXPECT_EQ(2, actualMyOptionsWithFreeTextEntries.size());
     EXPECT_EQ(std::string("E1"), actualMyOptionsWithFreeTextEntries.at(0));
     EXPECT_EQ(std::string("E2"), actualMyOptionsWithFreeTextEntries.at(1));

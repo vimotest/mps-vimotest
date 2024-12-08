@@ -6,17 +6,17 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class RadioButton_View {
-  private List<String> MyChoicesRadioButtonRadioButtonChoices = new LinkedList<>();
-  public List<String> getMyChoicesRadioButtonRadioButtonChoices() {
-    return this.MyChoicesRadioButtonRadioButtonChoices;
+  private List<String> MyChoicesRadioButtonName = new LinkedList<>();
+  public List<String> getMyChoicesRadioButtonName() {
+    return this.MyChoicesRadioButtonName;
   }
   private String MyChoicesRadioButtonSelectedEntry;
   public String getMyChoicesRadioButtonSelectedEntry() {
     return this.MyChoicesRadioButtonSelectedEntry;
   }
-  private Boolean isMyChoicesRadioButtonVisibility;
-  public Boolean getIsMyChoicesRadioButtonVisibility() {
-    return this.isMyChoicesRadioButtonVisibility;
+  private Boolean isMyChoicesRadioButtonVisible;
+  public Boolean getIsMyChoicesRadioButtonVisible() {
+    return this.isMyChoicesRadioButtonVisible;
   }
   private Boolean isMyChoicesRadioButtonEnabled;
   public Boolean getIsMyChoicesRadioButtonEnabled() {

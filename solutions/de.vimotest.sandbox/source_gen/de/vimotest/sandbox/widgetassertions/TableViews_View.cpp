@@ -9,25 +9,25 @@
 
 namespace widgetassertions
 {
-  std::vector<std::shared_ptr<TableViews_ViewMyElementsRow>> TableViews_View::getMyElementsTableWidgetTableRows( ) 
+  std::vector<std::shared_ptr<TableViews_ViewMyElementsRow>> TableViews_View::getMyElementsTableRows( ) 
   {
-    return this->MyElementsTableWidgetTableRows;
+    return this->MyElementsTableRows;
   }
   int TableViews_View::getMyElementsTableSelectedRow( ) 
   {
     return this->MyElementsTableSelectedRow;
   }
-  bool TableViews_View::getIsMyElementsTableVisibility( ) 
+  bool TableViews_View::getIsMyElementsTableVisible( ) 
   {
-    return this->isMyElementsTableVisibility;
+    return this->isMyElementsTableVisible;
   }
   bool TableViews_View::getIsMyElementsTableEnabled( ) 
   {
     return this->isMyElementsTableEnabled;
   }
-  std::vector<std::shared_ptr<TableViews_ViewMyStringRowHandlesRow>> TableViews_View::getMyStringRowHandlesTableWidgetTableRows( ) 
+  std::vector<std::shared_ptr<TableViews_ViewMyStringRowHandlesRow>> TableViews_View::getMyStringRowHandlesTableRows( ) 
   {
-    return this->MyStringRowHandlesTableWidgetTableRows;
+    return this->MyStringRowHandlesTableRows;
   }
   std::string TableViews_View::getMyStringRowHandlesTableSelectedRow( ) 
   {

@@ -13,7 +13,7 @@ namespace de::vimotest::examples::loginview
     virtual bool getIsShowPasswordCheckBoxChecked() ;
     virtual bool getIsLoginButtonEnabled() ;
     virtual std::string getErrorLabelText() ;
-    virtual bool getIsErrorLabelVisibility() ;
+    virtual bool getIsErrorLabelVisible() ;
     virtual void loadView() ;
     virtual void usernameTextFilled(std::string text) ;
     virtual void passwordTextFilled(std::string text) ;
@@ -25,7 +25,7 @@ namespace de::vimotest::examples::loginview
     bool isShowPasswordCheckBoxChecked;
     bool isLoginButtonEnabled;
     std::string ErrorLabelText;
-    bool isErrorLabelVisibility;
+    bool isErrorLabelVisible;
   };
 }
 

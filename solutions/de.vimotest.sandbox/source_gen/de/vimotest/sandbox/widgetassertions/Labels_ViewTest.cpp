@@ -85,7 +85,7 @@ namespace widgetassertions
   {
     EXPECT_EQ(std::string("My Expectation Text"), this->sut->getTestLabelText());
     EXPECT_TRUE(this->sut->getIsTestLabelEnabled());
-    EXPECT_TRUE(this->sut->getIsTestLabelVisibility());
+    EXPECT_TRUE(this->sut->getIsTestLabelVisible());
   }
   void Labels_ViewTest::then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_( ) 
   {

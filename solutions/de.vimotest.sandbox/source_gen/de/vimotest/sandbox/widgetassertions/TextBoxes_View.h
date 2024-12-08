@@ -10,12 +10,12 @@ namespace widgetassertions
   {
     public:
     virtual std::string getMyValueTextBoxText() ;
-    virtual bool getIsMyValueTextBoxVisibility() ;
+    virtual bool getIsMyValueTextBoxVisible() ;
     virtual bool getIsMyValueTextBoxEnabled() ;
     virtual std::vector<std::string> getMultiLineTextBoxValueTextBoxText() ;
     private:
     std::string MyValueTextBoxText;
-    bool isMyValueTextBoxVisibility;
+    bool isMyValueTextBoxVisible;
     bool isMyValueTextBoxEnabled;
     std::vector<std::string> MultiLineTextBoxValueTextBoxText;
   };

@@ -10,10 +10,10 @@ namespace bindings
   class ViMoTestFileNameBinding
   {
     public:
-    virtual std::vector<std::shared_ptr<ViMoTestFileNameBindingMyElementsRow>> getMyElementsTableWidgetTableRows() ;
+    virtual std::vector<std::shared_ptr<ViMoTestFileNameBindingMyElementsRow>> getMyElementsTableRows() ;
     virtual void loadView() ;
     private:
-    std::vector<std::shared_ptr<ViMoTestFileNameBindingMyElementsRow>> MyElementsTableWidgetTableRows;
+    std::vector<std::shared_ptr<ViMoTestFileNameBindingMyElementsRow>> MyElementsTableRows;
   };
 }
 

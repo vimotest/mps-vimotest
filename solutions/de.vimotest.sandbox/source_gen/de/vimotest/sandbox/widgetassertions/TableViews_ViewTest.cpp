@@ -57,7 +57,7 @@ namespace widgetassertions
   }
   void TableViews_ViewTest::then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled( ) 
   {
-    auto& actualRows = this->sut->getMyElementsTableWidgetTableRows();
+    auto& actualRows = this->sut->getMyElementsTableRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
@@ -65,7 +65,7 @@ namespace widgetassertions
     EXPECT_TRUE(row0->getIsIncludeCheckBoxChecked());
     EXPECT_EQ(std::string("A"), row0->getNameLabelText());
     EXPECT_EQ(std::string("B"), row0->getDescriptionLabelText());
-    EXPECT_EQ(std::string("image_info"), row0->getInfoIconImageImageSource());
+    EXPECT_EQ(std::string("image_info"), row0->getInfoIconImageName());
     // }
     // {
     auto& row1 = actualRows.at(1);
@@ -73,15 +73,15 @@ namespace widgetassertions
     EXPECT_FALSE(row1->getIsIncludeCheckBoxChecked());
     EXPECT_EQ(std::string("C"), row1->getNameLabelText());
     EXPECT_EQ(std::string("D"), row1->getDescriptionLabelText());
-    EXPECT_EQ(std::string("image_star"), row1->getInfoIconImageImageSource());
+    EXPECT_EQ(std::string("image_star"), row1->getInfoIconImageName());
     // }
     EXPECT_EQ(1, this->sut->getMyElementsTableSelectedRow());
-    EXPECT_TRUE(this->sut->getIsMyElementsTableVisibility());
+    EXPECT_TRUE(this->sut->getIsMyElementsTableVisible());
     EXPECT_TRUE(this->sut->getIsMyElementsTableEnabled());
   }
   void TableViews_ViewTest::then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1( ) 
   {
-    auto& actualRows = this->sut->getMyStringRowHandlesTableWidgetTableRows();
+    auto& actualRows = this->sut->getMyStringRowHandlesTableRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
@@ -97,7 +97,7 @@ namespace widgetassertions
   }
   void TableViews_ViewTest::then_MyElements_has_2_rows( ) 
   {
-    auto& actualRows = this->sut->getMyElementsTableWidgetTableRows();
+    auto& actualRows = this->sut->getMyElementsTableRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
@@ -107,7 +107,7 @@ namespace widgetassertions
     // {
     auto& row1 = actualRows.at(1);
     EXPECT_EQ(1, row1->getRowIndex());
-    EXPECT_EQ(std::string("image_star"), row1->getInfoIconImageImageSource());
+    EXPECT_EQ(std::string("image_star"), row1->getInfoIconImageName());
     // }
   }
 }

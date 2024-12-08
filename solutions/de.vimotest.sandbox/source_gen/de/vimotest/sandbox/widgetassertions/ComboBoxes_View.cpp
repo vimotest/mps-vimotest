@@ -6,25 +6,25 @@
 
 namespace widgetassertions
 {
-  std::vector<std::string> ComboBoxes_View::getMyOptionsComboBoxComboBoxEntries( ) 
+  std::vector<std::string> ComboBoxes_View::getMyOptionsComboBoxEntries( ) 
   {
-    return this->MyOptionsComboBoxComboBoxEntries;
+    return this->MyOptionsComboBoxEntries;
   }
   std::string ComboBoxes_View::getMyOptionsComboBoxSelectedEntry( ) 
   {
     return this->MyOptionsComboBoxSelectedEntry;
   }
-  bool ComboBoxes_View::getIsMyOptionsComboBoxVisibility( ) 
+  bool ComboBoxes_View::getIsMyOptionsComboBoxVisible( ) 
   {
-    return this->isMyOptionsComboBoxVisibility;
+    return this->isMyOptionsComboBoxVisible;
   }
   bool ComboBoxes_View::getIsMyOptionsComboBoxEnabled( ) 
   {
     return this->isMyOptionsComboBoxEnabled;
   }
-  std::vector<std::string> ComboBoxes_View::getMyOptionsWithFreeTextComboBoxComboBoxEntries( ) 
+  std::vector<std::string> ComboBoxes_View::getMyOptionsWithFreeTextComboBoxEntries( ) 
   {
-    return this->MyOptionsWithFreeTextComboBoxComboBoxEntries;
+    return this->MyOptionsWithFreeTextComboBoxEntries;
   }
   std::string ComboBoxes_View::getMyOptionsWithFreeTextComboBoxSelectedEntry( ) 
   {
@@ -34,9 +34,9 @@ namespace widgetassertions
   {
     return this->MyOptionsWithFreeTextComboBoxText;
   }
-  bool ComboBoxes_View::getIsMyOptionsWithFreeTextComboBoxVisibility( ) 
+  bool ComboBoxes_View::getIsMyOptionsWithFreeTextComboBoxVisible( ) 
   {
-    return this->isMyOptionsWithFreeTextComboBoxVisibility;
+    return this->isMyOptionsWithFreeTextComboBoxVisible;
   }
   bool ComboBoxes_View::getIsMyOptionsWithFreeTextComboBoxEnabled( ) 
   {

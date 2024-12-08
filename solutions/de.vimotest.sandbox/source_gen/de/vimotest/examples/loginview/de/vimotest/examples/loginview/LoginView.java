@@ -24,9 +24,9 @@ public class LoginView {
   public String getErrorLabelText() {
     return this.ErrorLabelText;
   }
-  private Boolean isErrorLabelVisibility;
-  public Boolean getIsErrorLabelVisibility() {
-    return this.isErrorLabelVisibility;
+  private Boolean isErrorLabelVisible;
+  public Boolean getIsErrorLabelVisible() {
+    return this.isErrorLabelVisible;
   }
   public void loadView() {
   }

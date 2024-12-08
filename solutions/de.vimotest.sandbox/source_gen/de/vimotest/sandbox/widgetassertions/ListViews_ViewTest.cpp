@@ -78,13 +78,13 @@ namespace widgetassertions
   }
   void ListViews_ViewTest::then_MyListOfLabel_has_4_rows_and_selected_row_index_3( ) 
   {
-    auto& actualRows = this->sut->getMyListOfLabelListWidgetListRows();
+    auto& actualRows = this->sut->getMyListOfLabelListRows();
     EXPECT_EQ(4, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
     EXPECT_EQ(0, row0->getRowIndex());
     EXPECT_EQ(std::string("A"), row0->getMyValueLabelText());
-    EXPECT_FALSE(row0->getIsMyValueLabelVisibility());
+    EXPECT_FALSE(row0->getIsMyValueLabelVisible());
     EXPECT_TRUE(row0->getIsMyValueLabelEnabled());
     // }
     // {
@@ -103,28 +103,28 @@ namespace widgetassertions
     auto& row3 = actualRows.at(3);
     EXPECT_EQ(3, row3->getRowIndex());
     EXPECT_EQ(std::string("D"), row3->getMyValueLabelText());
-    EXPECT_TRUE(row3->getIsMyValueLabelVisibility());
+    EXPECT_TRUE(row3->getIsMyValueLabelVisible());
     // }
     EXPECT_EQ(3, this->sut->getMyListOfLabelListSelectedRow());
   }
   void ListViews_ViewTest::then_MyListOfImages_has_2_rows( ) 
   {
-    auto& actualRows = this->sut->getMyListOfImagesListWidgetListRows();
+    auto& actualRows = this->sut->getMyListOfImagesListRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
     EXPECT_EQ(0, row0->getRowIndex());
-    EXPECT_EQ(std::string("image_star"), row0->getMyInfoImageImageSource());
+    EXPECT_EQ(std::string("image_star"), row0->getMyInfoImageName());
     // }
     // {
     auto& row1 = actualRows.at(1);
     EXPECT_EQ(1, row1->getRowIndex());
-    EXPECT_EQ(std::string("image_circle"), row1->getMyInfoImageImageSource());
+    EXPECT_EQ(std::string("image_circle"), row1->getMyInfoImageName());
     // }
   }
   void ListViews_ViewTest::then_MyCheckboxes_has_3_rows( ) 
   {
-    auto& actualRows = this->sut->getMyCheckboxesListWidgetListRows();
+    auto& actualRows = this->sut->getMyCheckboxesListRows();
     EXPECT_EQ(3, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
@@ -145,7 +145,7 @@ namespace widgetassertions
   }
   void ListViews_ViewTest::then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1( ) 
   {
-    auto& actualRows = this->sut->getMyStringRowHandlesListWidgetListRows();
+    auto& actualRows = this->sut->getMyStringRowHandlesListRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
@@ -161,7 +161,7 @@ namespace widgetassertions
   }
   void ListViews_ViewTest::then_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_( ) 
   {
-    auto& actualRows = this->sut->getMyListWithMultiRowSelectionListWidgetListRows();
+    auto& actualRows = this->sut->getMyListWithMultiRowSelectionListRows();
     EXPECT_EQ(3, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
@@ -185,7 +185,7 @@ namespace widgetassertions
   }
   void ListViews_ViewTest::then_MyListOfLabel_has_4_rows( ) 
   {
-    auto& actualRows = this->sut->getMyListOfLabelListWidgetListRows();
+    auto& actualRows = this->sut->getMyListOfLabelListRows();
     EXPECT_EQ(4, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
@@ -206,7 +206,7 @@ namespace widgetassertions
   }
   void ListViews_ViewTest::then_MyListOfLabel_has_4_rows_1( ) 
   {
-    auto& actualRows = this->sut->getMyListOfLabelListWidgetListRows();
+    auto& actualRows = this->sut->getMyListOfLabelListRows();
     EXPECT_EQ(4, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
@@ -226,7 +226,7 @@ namespace widgetassertions
     auto& row3 = actualRows.at(3);
     EXPECT_EQ(3, row3->getRowIndex());
     EXPECT_EQ(std::string("D"), row3->getMyValueLabelText());
-    EXPECT_TRUE(row3->getIsMyValueLabelVisibility());
+    EXPECT_TRUE(row3->getIsMyValueLabelVisible());
     // }
   }
 }

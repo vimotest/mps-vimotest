@@ -12,18 +12,18 @@ namespace widgetassertions
   class TableViews_View
   {
     public:
-    virtual std::vector<std::shared_ptr<TableViews_ViewMyElementsRow>> getMyElementsTableWidgetTableRows() ;
+    virtual std::vector<std::shared_ptr<TableViews_ViewMyElementsRow>> getMyElementsTableRows() ;
     virtual int getMyElementsTableSelectedRow() ;
-    virtual bool getIsMyElementsTableVisibility() ;
+    virtual bool getIsMyElementsTableVisible() ;
     virtual bool getIsMyElementsTableEnabled() ;
-    virtual std::vector<std::shared_ptr<TableViews_ViewMyStringRowHandlesRow>> getMyStringRowHandlesTableWidgetTableRows() ;
+    virtual std::vector<std::shared_ptr<TableViews_ViewMyStringRowHandlesRow>> getMyStringRowHandlesTableRows() ;
     virtual std::string getMyStringRowHandlesTableSelectedRow() ;
     private:
-    std::vector<std::shared_ptr<TableViews_ViewMyElementsRow>> MyElementsTableWidgetTableRows;
+    std::vector<std::shared_ptr<TableViews_ViewMyElementsRow>> MyElementsTableRows;
     int MyElementsTableSelectedRow;
-    bool isMyElementsTableVisibility;
+    bool isMyElementsTableVisible;
     bool isMyElementsTableEnabled;
-    std::vector<std::shared_ptr<TableViews_ViewMyStringRowHandlesRow>> MyStringRowHandlesTableWidgetTableRows;
+    std::vector<std::shared_ptr<TableViews_ViewMyStringRowHandlesRow>> MyStringRowHandlesTableRows;
     std::string MyStringRowHandlesTableSelectedRow;
   };
 }

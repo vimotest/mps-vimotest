@@ -46,7 +46,7 @@ namespace widgetassertions
   {
     EXPECT_TRUE(this->sut->getIsMyFlagWithLabelCheckBoxChecked());
     EXPECT_TRUE(this->sut->getIsMyFlagWithLabelCheckBoxEnabled());
-    EXPECT_TRUE(this->sut->getIsMyFlagWithLabelCheckBoxVisibility());
+    EXPECT_TRUE(this->sut->getIsMyFlagWithLabelCheckBoxVisible());
     EXPECT_EQ(std::string("My Label"), this->sut->getMyFlagWithLabelCheckBoxText());
   }
   void CheckBoxes_ViewTest::then_MyFlagNoLabel_is_not_checked( ) 

@@ -9,24 +9,24 @@ namespace widgetassertions
   class ComboBoxes_View
   {
     public:
-    virtual std::vector<std::string> getMyOptionsComboBoxComboBoxEntries() ;
+    virtual std::vector<std::string> getMyOptionsComboBoxEntries() ;
     virtual std::string getMyOptionsComboBoxSelectedEntry() ;
-    virtual bool getIsMyOptionsComboBoxVisibility() ;
+    virtual bool getIsMyOptionsComboBoxVisible() ;
     virtual bool getIsMyOptionsComboBoxEnabled() ;
-    virtual std::vector<std::string> getMyOptionsWithFreeTextComboBoxComboBoxEntries() ;
+    virtual std::vector<std::string> getMyOptionsWithFreeTextComboBoxEntries() ;
     virtual std::string getMyOptionsWithFreeTextComboBoxSelectedEntry() ;
     virtual std::string getMyOptionsWithFreeTextComboBoxText() ;
-    virtual bool getIsMyOptionsWithFreeTextComboBoxVisibility() ;
+    virtual bool getIsMyOptionsWithFreeTextComboBoxVisible() ;
     virtual bool getIsMyOptionsWithFreeTextComboBoxEnabled() ;
     private:
-    std::vector<std::string> MyOptionsComboBoxComboBoxEntries;
+    std::vector<std::string> MyOptionsComboBoxEntries;
     std::string MyOptionsComboBoxSelectedEntry;
-    bool isMyOptionsComboBoxVisibility;
+    bool isMyOptionsComboBoxVisible;
     bool isMyOptionsComboBoxEnabled;
-    std::vector<std::string> MyOptionsWithFreeTextComboBoxComboBoxEntries;
+    std::vector<std::string> MyOptionsWithFreeTextComboBoxEntries;
     std::string MyOptionsWithFreeTextComboBoxSelectedEntry;
     std::string MyOptionsWithFreeTextComboBoxText;
-    bool isMyOptionsWithFreeTextComboBoxVisibility;
+    bool isMyOptionsWithFreeTextComboBoxVisible;
     bool isMyOptionsWithFreeTextComboBoxEnabled;
   };
 }

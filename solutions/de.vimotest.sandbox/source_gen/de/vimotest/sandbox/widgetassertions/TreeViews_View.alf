@@ -10,10 +10,10 @@ class TreeViews_View {
   return this.MyTreeViewElementsTreeSelectedRow;
  }
   
-  private isMyTreeViewElementsTreeVisibility : Boolean  ;
+  private isMyTreeViewElementsTreeVisible : Boolean  ;
   
-  public getIsMyTreeViewElementsTreeVisibility (  ) : Boolean  {
-  return this.isMyTreeViewElementsTreeVisibility;
+  public getIsMyTreeViewElementsTreeVisible (  ) : Boolean  {
+  return this.isMyTreeViewElementsTreeVisible;
  }
   
   private isMyTreeViewElementsTreeEnabled : Boolean  ;
@@ -22,16 +22,16 @@ class TreeViews_View {
   return this.isMyTreeViewElementsTreeEnabled;
  }
   
-  private MyTreeViewElementsTreeWidgetTreeRows : TreeViews_ViewMyTreeViewElementsRow [ * ]  ;
+  private MyTreeViewElementsTreeRows : TreeViews_ViewMyTreeViewElementsRow [ * ]  ;
   
-  public getMyTreeViewElementsTreeWidgetTreeRows (  ) : TreeViews_ViewMyTreeViewElementsRow [ * ]  {
-  return this.MyTreeViewElementsTreeWidgetTreeRows;
+  public getMyTreeViewElementsTreeRows (  ) : TreeViews_ViewMyTreeViewElementsRow [ * ]  {
+  return this.MyTreeViewElementsTreeRows;
  }
   
-  private MyStringRowHandlesTreeWidgetTreeRows : TreeViews_ViewMyStringRowHandlesRow [ * ]  ;
+  private MyStringRowHandlesTreeRows : TreeViews_ViewMyStringRowHandlesRow [ * ]  ;
   
-  public getMyStringRowHandlesTreeWidgetTreeRows (  ) : TreeViews_ViewMyStringRowHandlesRow [ * ]  {
-  return this.MyStringRowHandlesTreeWidgetTreeRows;
+  public getMyStringRowHandlesTreeRows (  ) : TreeViews_ViewMyStringRowHandlesRow [ * ]  {
+  return this.MyStringRowHandlesTreeRows;
  }
   
   private MyStringRowHandlesTreeSelectedRow : String  ;
@@ -40,15 +40,15 @@ class TreeViews_View {
   return this.MyStringRowHandlesTreeSelectedRow;
  }
   
-  private MyParentIndexRowHandlesTreeWidgetTreeRows : TreeViews_ViewMyParentIndexRowHandlesRow [ * ]  ;
+  private MyParentIndexRowHandlesTreeRows : TreeViews_ViewMyParentIndexRowHandlesRow [ * ]  ;
   
-  public getMyParentIndexRowHandlesTreeWidgetTreeRows (  ) : TreeViews_ViewMyParentIndexRowHandlesRow [ * ]  {
-  return this.MyParentIndexRowHandlesTreeWidgetTreeRows;
+  public getMyParentIndexRowHandlesTreeRows (  ) : TreeViews_ViewMyParentIndexRowHandlesRow [ * ]  {
+  return this.MyParentIndexRowHandlesTreeRows;
  }
   
-  private MyParentStringRowHandlesTreeWidgetTreeRows : TreeViews_ViewMyParentStringRowHandlesRow [ * ]  ;
+  private MyParentStringRowHandlesTreeRows : TreeViews_ViewMyParentStringRowHandlesRow [ * ]  ;
   
-  public getMyParentStringRowHandlesTreeWidgetTreeRows (  ) : TreeViews_ViewMyParentStringRowHandlesRow [ * ]  {
-  return this.MyParentStringRowHandlesTreeWidgetTreeRows;
+  public getMyParentStringRowHandlesTreeRows (  ) : TreeViews_ViewMyParentStringRowHandlesRow [ * ]  {
+  return this.MyParentStringRowHandlesTreeRows;
  }
 }

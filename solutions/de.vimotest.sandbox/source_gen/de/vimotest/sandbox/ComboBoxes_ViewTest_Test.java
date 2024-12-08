@@ -41,17 +41,17 @@ public class ComboBoxes_ViewTest_Test {
 
 
   public void then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible() {
-    List<String> actualMyOptionsEntries = this.sut.getMyOptionsComboBoxComboBoxEntries();
+    List<String> actualMyOptionsEntries = this.sut.getMyOptionsComboBoxEntries();
     Assert.assertEquals(3, actualMyOptionsEntries.size());
     Assert.assertEquals("A1", actualMyOptionsEntries.get(1 - 1));
     Assert.assertEquals("A2", actualMyOptionsEntries.get(2 - 1));
     Assert.assertEquals("A3", actualMyOptionsEntries.get(3 - 1));
     Assert.assertEquals("A1", this.sut.getMyOptionsComboBoxSelectedEntry());
     Assert.assertTrue(this.sut.getIsMyOptionsComboBoxEnabled());
-    Assert.assertTrue(this.sut.getIsMyOptionsComboBoxVisibility());
+    Assert.assertTrue(this.sut.getIsMyOptionsComboBoxVisible());
   }
   public void then_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_() {
-    List<String> actualMyOptionsWithFreeTextEntries = this.sut.getMyOptionsWithFreeTextComboBoxComboBoxEntries();
+    List<String> actualMyOptionsWithFreeTextEntries = this.sut.getMyOptionsWithFreeTextComboBoxEntries();
     Assert.assertEquals(2, actualMyOptionsWithFreeTextEntries.size());
     Assert.assertEquals("E1", actualMyOptionsWithFreeTextEntries.get(1 - 1));
     Assert.assertEquals("E2", actualMyOptionsWithFreeTextEntries.get(2 - 1));

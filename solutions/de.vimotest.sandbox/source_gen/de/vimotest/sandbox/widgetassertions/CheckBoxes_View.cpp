@@ -10,9 +10,9 @@ namespace widgetassertions
   {
     return this->isMyFlagWithLabelCheckBoxChecked;
   }
-  bool CheckBoxes_View::getIsMyFlagWithLabelCheckBoxVisibility( ) 
+  bool CheckBoxes_View::getIsMyFlagWithLabelCheckBoxVisible( ) 
   {
-    return this->isMyFlagWithLabelCheckBoxVisibility;
+    return this->isMyFlagWithLabelCheckBoxVisible;
   }
   bool CheckBoxes_View::getIsMyFlagWithLabelCheckBoxEnabled( ) 
   {

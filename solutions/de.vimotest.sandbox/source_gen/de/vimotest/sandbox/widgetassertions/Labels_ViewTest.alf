@@ -70,7 +70,7 @@ class Labels_ViewTest {
   public then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible (  ) {
   AssertEqual ( "My Expectation Text", this.sut.getTestLabelText (  ) );
    AssertTrue ( this.sut.getIsTestLabelEnabled (  ) );
-   AssertTrue ( this.sut.getIsTestLabelVisibility (  ) );
+   AssertTrue ( this.sut.getIsTestLabelVisible (  ) );
  }
   
   public then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_ (  ) {

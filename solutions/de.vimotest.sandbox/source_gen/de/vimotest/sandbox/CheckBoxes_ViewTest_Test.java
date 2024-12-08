@@ -43,7 +43,7 @@ public class CheckBoxes_ViewTest_Test {
   public void then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_() {
     Assert.assertTrue(this.sut.getIsMyFlagWithLabelCheckBoxChecked());
     Assert.assertTrue(this.sut.getIsMyFlagWithLabelCheckBoxEnabled());
-    Assert.assertTrue(this.sut.getIsMyFlagWithLabelCheckBoxVisibility());
+    Assert.assertTrue(this.sut.getIsMyFlagWithLabelCheckBoxVisible());
     Assert.assertEquals("My Label", this.sut.getMyFlagWithLabelCheckBoxText());
   }
   public void then_MyFlagNoLabel_is_not_checked() {

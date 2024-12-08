@@ -12,65 +12,65 @@
 
 namespace widgetassertions
 {
-  bool ListViews_View::getIsMyListOfLabelListVisibility( ) 
+  bool ListViews_View::getIsMyListOfLabelListVisible( ) 
   {
-    return this->isMyListOfLabelListVisibility;
+    return this->isMyListOfLabelListVisible;
   }
   bool ListViews_View::getIsMyListOfLabelListEnabled( ) 
   {
     return this->isMyListOfLabelListEnabled;
   }
-  std::vector<std::shared_ptr<ListViews_ViewMyListOfLabelRow>> ListViews_View::getMyListOfLabelListWidgetListRows( ) 
+  std::vector<std::shared_ptr<ListViews_ViewMyListOfLabelRow>> ListViews_View::getMyListOfLabelListRows( ) 
   {
-    return this->MyListOfLabelListWidgetListRows;
+    return this->MyListOfLabelListRows;
   }
   int ListViews_View::getMyListOfLabelListSelectedRow( ) 
   {
     return this->MyListOfLabelListSelectedRow;
   }
-  bool ListViews_View::getIsMyListOfImagesListVisibility( ) 
+  bool ListViews_View::getIsMyListOfImagesListVisible( ) 
   {
-    return this->isMyListOfImagesListVisibility;
+    return this->isMyListOfImagesListVisible;
   }
   bool ListViews_View::getIsMyListOfImagesListEnabled( ) 
   {
     return this->isMyListOfImagesListEnabled;
   }
-  std::vector<std::shared_ptr<ListViews_ViewMyListOfImagesRow>> ListViews_View::getMyListOfImagesListWidgetListRows( ) 
+  std::vector<std::shared_ptr<ListViews_ViewMyListOfImagesRow>> ListViews_View::getMyListOfImagesListRows( ) 
   {
-    return this->MyListOfImagesListWidgetListRows;
+    return this->MyListOfImagesListRows;
   }
   int ListViews_View::getMyListOfImagesListSelectedRow( ) 
   {
     return this->MyListOfImagesListSelectedRow;
   }
-  std::vector<std::shared_ptr<ListViews_ViewMyCheckboxesRow>> ListViews_View::getMyCheckboxesListWidgetListRows( ) 
+  std::vector<std::shared_ptr<ListViews_ViewMyCheckboxesRow>> ListViews_View::getMyCheckboxesListRows( ) 
   {
-    return this->MyCheckboxesListWidgetListRows;
+    return this->MyCheckboxesListRows;
   }
   int ListViews_View::getMyCheckboxesListSelectedRow( ) 
   {
     return this->MyCheckboxesListSelectedRow;
   }
-  bool ListViews_View::getIsMyCheckboxesListVisibility( ) 
+  bool ListViews_View::getIsMyCheckboxesListVisible( ) 
   {
-    return this->isMyCheckboxesListVisibility;
+    return this->isMyCheckboxesListVisible;
   }
   bool ListViews_View::getIsMyCheckboxesListEnabled( ) 
   {
     return this->isMyCheckboxesListEnabled;
   }
-  std::vector<std::shared_ptr<ListViews_ViewMyStringRowHandlesRow>> ListViews_View::getMyStringRowHandlesListWidgetListRows( ) 
+  std::vector<std::shared_ptr<ListViews_ViewMyStringRowHandlesRow>> ListViews_View::getMyStringRowHandlesListRows( ) 
   {
-    return this->MyStringRowHandlesListWidgetListRows;
+    return this->MyStringRowHandlesListRows;
   }
   std::string ListViews_View::getMyStringRowHandlesListSelectedRow( ) 
   {
     return this->MyStringRowHandlesListSelectedRow;
   }
-  std::vector<std::shared_ptr<ListViews_ViewMyListWithMultiRowSelectionRow>> ListViews_View::getMyListWithMultiRowSelectionListWidgetListRows( ) 
+  std::vector<std::shared_ptr<ListViews_ViewMyListWithMultiRowSelectionRow>> ListViews_View::getMyListWithMultiRowSelectionListRows( ) 
   {
-    return this->MyListWithMultiRowSelectionListWidgetListRows;
+    return this->MyListWithMultiRowSelectionListRows;
   }
   std::vector<int> ListViews_View::getMyListWithMultiRowSelectionListSelectedRows( ) 
   {

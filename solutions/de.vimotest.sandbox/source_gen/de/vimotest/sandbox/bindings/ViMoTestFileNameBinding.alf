@@ -4,10 +4,10 @@ namespace bindings ;
 
 class ViMoTestFileNameBinding {
   
-  private MyElementsTableWidgetTableRows : ViMoTestFileNameBindingMyElementsRow [ * ]  ;
+  private MyElementsTableRows : ViMoTestFileNameBindingMyElementsRow [ * ]  ;
   
-  public getMyElementsTableWidgetTableRows (  ) : ViMoTestFileNameBindingMyElementsRow [ * ]  {
-  return this.MyElementsTableWidgetTableRows;
+  public getMyElementsTableRows (  ) : ViMoTestFileNameBindingMyElementsRow [ * ]  {
+  return this.MyElementsTableRows;
  }
   
   public loadView (  ) {     }

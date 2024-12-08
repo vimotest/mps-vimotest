@@ -71,7 +71,7 @@ public class Labels_ViewTest_Test {
   public void then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible() {
     Assert.assertEquals("My Expectation Text", this.sut.getTestLabelText());
     Assert.assertTrue(this.sut.getIsTestLabelEnabled());
-    Assert.assertTrue(this.sut.getIsTestLabelVisibility());
+    Assert.assertTrue(this.sut.getIsTestLabelVisible());
   }
   public void then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_() {
     List<String> actualMultiLineLines = this.sut.getMultiLineLabelText();

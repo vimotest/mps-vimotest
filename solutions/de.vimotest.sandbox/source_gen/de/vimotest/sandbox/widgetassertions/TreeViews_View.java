@@ -10,32 +10,32 @@ public class TreeViews_View {
   public Integer getMyTreeViewElementsTreeSelectedRow() {
     return this.MyTreeViewElementsTreeSelectedRow;
   }
-  private Boolean isMyTreeViewElementsTreeVisibility;
-  public Boolean getIsMyTreeViewElementsTreeVisibility() {
-    return this.isMyTreeViewElementsTreeVisibility;
+  private Boolean isMyTreeViewElementsTreeVisible;
+  public Boolean getIsMyTreeViewElementsTreeVisible() {
+    return this.isMyTreeViewElementsTreeVisible;
   }
   private Boolean isMyTreeViewElementsTreeEnabled;
   public Boolean getIsMyTreeViewElementsTreeEnabled() {
     return this.isMyTreeViewElementsTreeEnabled;
   }
-  private List<TreeViews_ViewMyTreeViewElementsRow> MyTreeViewElementsTreeWidgetTreeRows = new LinkedList<>();
-  public List<TreeViews_ViewMyTreeViewElementsRow> getMyTreeViewElementsTreeWidgetTreeRows() {
-    return this.MyTreeViewElementsTreeWidgetTreeRows;
+  private List<TreeViews_ViewMyTreeViewElementsRow> MyTreeViewElementsTreeRows = new LinkedList<>();
+  public List<TreeViews_ViewMyTreeViewElementsRow> getMyTreeViewElementsTreeRows() {
+    return this.MyTreeViewElementsTreeRows;
   }
-  private List<TreeViews_ViewMyStringRowHandlesRow> MyStringRowHandlesTreeWidgetTreeRows = new LinkedList<>();
-  public List<TreeViews_ViewMyStringRowHandlesRow> getMyStringRowHandlesTreeWidgetTreeRows() {
-    return this.MyStringRowHandlesTreeWidgetTreeRows;
+  private List<TreeViews_ViewMyStringRowHandlesRow> MyStringRowHandlesTreeRows = new LinkedList<>();
+  public List<TreeViews_ViewMyStringRowHandlesRow> getMyStringRowHandlesTreeRows() {
+    return this.MyStringRowHandlesTreeRows;
   }
   private String MyStringRowHandlesTreeSelectedRow;
   public String getMyStringRowHandlesTreeSelectedRow() {
     return this.MyStringRowHandlesTreeSelectedRow;
   }
-  private List<TreeViews_ViewMyParentIndexRowHandlesRow> MyParentIndexRowHandlesTreeWidgetTreeRows = new LinkedList<>();
-  public List<TreeViews_ViewMyParentIndexRowHandlesRow> getMyParentIndexRowHandlesTreeWidgetTreeRows() {
-    return this.MyParentIndexRowHandlesTreeWidgetTreeRows;
+  private List<TreeViews_ViewMyParentIndexRowHandlesRow> MyParentIndexRowHandlesTreeRows = new LinkedList<>();
+  public List<TreeViews_ViewMyParentIndexRowHandlesRow> getMyParentIndexRowHandlesTreeRows() {
+    return this.MyParentIndexRowHandlesTreeRows;
   }
-  private List<TreeViews_ViewMyParentStringRowHandlesRow> MyParentStringRowHandlesTreeWidgetTreeRows = new LinkedList<>();
-  public List<TreeViews_ViewMyParentStringRowHandlesRow> getMyParentStringRowHandlesTreeWidgetTreeRows() {
-    return this.MyParentStringRowHandlesTreeWidgetTreeRows;
+  private List<TreeViews_ViewMyParentStringRowHandlesRow> MyParentStringRowHandlesTreeRows = new LinkedList<>();
+  public List<TreeViews_ViewMyParentStringRowHandlesRow> getMyParentStringRowHandlesTreeRows() {
+    return this.MyParentStringRowHandlesTreeRows;
   }
 }

@@ -10,11 +10,11 @@ namespace widgetassertions
     public:
     virtual std::string getOkButtonText() ;
     virtual bool getIsOkButtonEnabled() ;
-    virtual bool getIsOkButtonVisibility() ;
+    virtual bool getIsOkButtonVisible() ;
     private:
     std::string OkButtonText;
     bool isOkButtonEnabled;
-    bool isOkButtonVisibility;
+    bool isOkButtonVisible;
   };
 }
 

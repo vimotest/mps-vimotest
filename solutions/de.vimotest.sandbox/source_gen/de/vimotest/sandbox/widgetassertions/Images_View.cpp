@@ -5,21 +5,21 @@
 
 namespace widgetassertions
 {
-  std::string Images_View::getStatusImageImageSource( ) 
+  std::string Images_View::getStatusImageName( ) 
   {
-    return this->StatusImageImageSource;
+    return this->StatusImageName;
   }
   bool Images_View::getIsStatusImageEnabled( ) 
   {
     return this->isStatusImageEnabled;
   }
-  bool Images_View::getIsStatusImageVisibility( ) 
+  bool Images_View::getIsStatusImageVisible( ) 
   {
-    return this->isStatusImageVisibility;
+    return this->isStatusImageVisible;
   }
-  std::string Images_View::getUpOrDownImageImageSource( ) 
+  std::string Images_View::getUpOrDownImageName( ) 
   {
-    return this->UpOrDownImageImageSource;
+    return this->UpOrDownImageName;
   }
 }
 

@@ -105,7 +105,7 @@ namespace commands
   }
   void RowBasedCommand_ViewTests::then_MyFlags_has_2_rows( ) 
   {
-    auto& actualRows = this->sut->getMyFlagsListWidgetListRows();
+    auto& actualRows = this->sut->getMyFlagsListRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
@@ -120,16 +120,16 @@ namespace commands
   }
   void RowBasedCommand_ViewTests::then_MyComboBoxes_has_2_rows( ) 
   {
-    auto& actualRows = this->sut->getMyComboBoxesTableWidgetTableRows();
+    auto& actualRows = this->sut->getMyComboBoxesTableRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
     EXPECT_EQ(0, row0->getRowIndex());
-    auto& actualRow0FreeTextComboBoxesEntries = row0->getFreeTextComboBoxesComboBoxComboBoxEntries();
+    auto& actualRow0FreeTextComboBoxesEntries = row0->getFreeTextComboBoxesComboBoxEntries();
     EXPECT_EQ(0, actualRow0FreeTextComboBoxesEntries.size());
     EXPECT_EQ(std:: nullopt, row0->getFreeTextComboBoxesComboBoxSelectedEntry());
     EXPECT_EQ(std::string("MyText1"), row0->getFreeTextComboBoxesComboBoxText());
-    auto& actualRow0EntryComboBoxesEntries = row0->getEntryComboBoxesComboBoxComboBoxEntries();
+    auto& actualRow0EntryComboBoxesEntries = row0->getEntryComboBoxesComboBoxEntries();
     EXPECT_EQ(3, actualRow0EntryComboBoxesEntries.size());
     EXPECT_EQ(std::string("A"), actualRow0EntryComboBoxesEntries.at(0));
     EXPECT_EQ(std::string("B"), actualRow0EntryComboBoxesEntries.at(1));
@@ -139,11 +139,11 @@ namespace commands
     // {
     auto& row1 = actualRows.at(1);
     EXPECT_EQ(1, row1->getRowIndex());
-    auto& actualRow1FreeTextComboBoxesEntries = row1->getFreeTextComboBoxesComboBoxComboBoxEntries();
+    auto& actualRow1FreeTextComboBoxesEntries = row1->getFreeTextComboBoxesComboBoxEntries();
     EXPECT_EQ(0, actualRow1FreeTextComboBoxesEntries.size());
     EXPECT_EQ(std:: nullopt, row1->getFreeTextComboBoxesComboBoxSelectedEntry());
     EXPECT_EQ(std::string("MyText2"), row1->getFreeTextComboBoxesComboBoxText());
-    auto& actualRow1EntryComboBoxesEntries = row1->getEntryComboBoxesComboBoxComboBoxEntries();
+    auto& actualRow1EntryComboBoxesEntries = row1->getEntryComboBoxesComboBoxEntries();
     EXPECT_EQ(3, actualRow1EntryComboBoxesEntries.size());
     EXPECT_EQ(std::string("D"), actualRow1EntryComboBoxesEntries.at(0));
     EXPECT_EQ(std::string("E"), actualRow1EntryComboBoxesEntries.at(1));
@@ -153,7 +153,7 @@ namespace commands
   }
   void RowBasedCommand_ViewTests::then_MyStandardControls_has_2_rows( ) 
   {
-    auto& actualRows = this->sut->getMyStandardControlsTreeWidgetTreeRows();
+    auto& actualRows = this->sut->getMyStandardControlsTreeRows();
     EXPECT_EQ(2, actualRows.size());
     // {
     auto& row0 = actualRows.at(0);

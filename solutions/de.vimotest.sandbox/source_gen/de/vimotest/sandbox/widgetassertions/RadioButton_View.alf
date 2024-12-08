@@ -4,10 +4,10 @@ namespace widgetassertions ;
 
 class RadioButton_View {
   
-  private MyChoicesRadioButtonRadioButtonChoices : String [ * ]  ;
+  private MyChoicesRadioButtonName : String [ * ]  ;
   
-  public getMyChoicesRadioButtonRadioButtonChoices (  ) : String [ * ]  {
-  return this.MyChoicesRadioButtonRadioButtonChoices;
+  public getMyChoicesRadioButtonName (  ) : String [ * ]  {
+  return this.MyChoicesRadioButtonName;
  }
   
   private MyChoicesRadioButtonSelectedEntry : String  ;
@@ -16,10 +16,10 @@ class RadioButton_View {
   return this.MyChoicesRadioButtonSelectedEntry;
  }
   
-  private isMyChoicesRadioButtonVisibility : Boolean  ;
+  private isMyChoicesRadioButtonVisible : Boolean  ;
   
-  public getIsMyChoicesRadioButtonVisibility (  ) : Boolean  {
-  return this.isMyChoicesRadioButtonVisibility;
+  public getIsMyChoicesRadioButtonVisible (  ) : Boolean  {
+  return this.isMyChoicesRadioButtonVisible;
  }
   
   private isMyChoicesRadioButtonEnabled : Boolean  ;

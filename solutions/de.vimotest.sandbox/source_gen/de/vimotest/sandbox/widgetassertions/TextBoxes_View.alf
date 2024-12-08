@@ -10,10 +10,10 @@ class TextBoxes_View {
   return this.MyValueTextBoxText;
  }
   
-  private isMyValueTextBoxVisibility : Boolean  ;
+  private isMyValueTextBoxVisible : Boolean  ;
   
-  public getIsMyValueTextBoxVisibility (  ) : Boolean  {
-  return this.isMyValueTextBoxVisibility;
+  public getIsMyValueTextBoxVisible (  ) : Boolean  {
+  return this.isMyValueTextBoxVisible;
  }
   
   private isMyValueTextBoxEnabled : Boolean  ;

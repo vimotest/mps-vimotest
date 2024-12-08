@@ -12,8 +12,8 @@ public class Buttons_View {
   public Boolean getIsOkButtonEnabled() {
     return this.isOkButtonEnabled;
   }
-  private Boolean isOkButtonVisibility;
-  public Boolean getIsOkButtonVisibility() {
-    return this.isOkButtonVisibility;
+  private Boolean isOkButtonVisible;
+  public Boolean getIsOkButtonVisible() {
+    return this.isOkButtonVisible;
   }
 }

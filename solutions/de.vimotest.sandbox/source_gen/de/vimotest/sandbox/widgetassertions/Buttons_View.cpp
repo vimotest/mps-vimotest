@@ -13,9 +13,9 @@ namespace widgetassertions
   {
     return this->isOkButtonEnabled;
   }
-  bool Buttons_View::getIsOkButtonVisibility( ) 
+  bool Buttons_View::getIsOkButtonVisible( ) 
   {
-    return this->isOkButtonVisibility;
+    return this->isOkButtonVisible;
   }
 }
 

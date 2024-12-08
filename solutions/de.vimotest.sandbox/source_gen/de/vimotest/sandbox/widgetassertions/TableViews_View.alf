@@ -4,10 +4,10 @@ namespace widgetassertions ;
 
 class TableViews_View {
   
-  private MyElementsTableWidgetTableRows : TableViews_ViewMyElementsRow [ * ]  ;
+  private MyElementsTableRows : TableViews_ViewMyElementsRow [ * ]  ;
   
-  public getMyElementsTableWidgetTableRows (  ) : TableViews_ViewMyElementsRow [ * ]  {
-  return this.MyElementsTableWidgetTableRows;
+  public getMyElementsTableRows (  ) : TableViews_ViewMyElementsRow [ * ]  {
+  return this.MyElementsTableRows;
  }
   
   private MyElementsTableSelectedRow : Integer  ;
@@ -16,10 +16,10 @@ class TableViews_View {
   return this.MyElementsTableSelectedRow;
  }
   
-  private isMyElementsTableVisibility : Boolean  ;
+  private isMyElementsTableVisible : Boolean  ;
   
-  public getIsMyElementsTableVisibility (  ) : Boolean  {
-  return this.isMyElementsTableVisibility;
+  public getIsMyElementsTableVisible (  ) : Boolean  {
+  return this.isMyElementsTableVisible;
  }
   
   private isMyElementsTableEnabled : Boolean  ;
@@ -28,10 +28,10 @@ class TableViews_View {
   return this.isMyElementsTableEnabled;
  }
   
-  private MyStringRowHandlesTableWidgetTableRows : TableViews_ViewMyStringRowHandlesRow [ * ]  ;
+  private MyStringRowHandlesTableRows : TableViews_ViewMyStringRowHandlesRow [ * ]  ;
   
-  public getMyStringRowHandlesTableWidgetTableRows (  ) : TableViews_ViewMyStringRowHandlesRow [ * ]  {
-  return this.MyStringRowHandlesTableWidgetTableRows;
+  public getMyStringRowHandlesTableRows (  ) : TableViews_ViewMyStringRowHandlesRow [ * ]  {
+  return this.MyStringRowHandlesTableRows;
  }
   
   private MyStringRowHandlesTableSelectedRow : String  ;

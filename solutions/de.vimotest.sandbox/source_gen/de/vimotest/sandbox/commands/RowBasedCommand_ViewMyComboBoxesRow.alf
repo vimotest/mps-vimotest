@@ -4,10 +4,10 @@ namespace commands ;
 
 class RowBasedCommand_ViewMyComboBoxesRow {
   
-  private FreeTextComboBoxesComboBoxComboBoxEntries : String [ * ]  ;
+  private FreeTextComboBoxesComboBoxEntries : String [ * ]  ;
   
-  public getFreeTextComboBoxesComboBoxComboBoxEntries (  ) : String [ * ]  {
-  return this.FreeTextComboBoxesComboBoxComboBoxEntries;
+  public getFreeTextComboBoxesComboBoxEntries (  ) : String [ * ]  {
+  return this.FreeTextComboBoxesComboBoxEntries;
  }
   
   private FreeTextComboBoxesComboBoxSelectedEntry : String  ;
@@ -22,10 +22,10 @@ class RowBasedCommand_ViewMyComboBoxesRow {
   return this.FreeTextComboBoxesComboBoxText;
  }
   
-  private EntryComboBoxesComboBoxComboBoxEntries : String [ * ]  ;
+  private EntryComboBoxesComboBoxEntries : String [ * ]  ;
   
-  public getEntryComboBoxesComboBoxComboBoxEntries (  ) : String [ * ]  {
-  return this.EntryComboBoxesComboBoxComboBoxEntries;
+  public getEntryComboBoxesComboBoxEntries (  ) : String [ * ]  {
+  return this.EntryComboBoxesComboBoxEntries;
  }
   
   private EntryComboBoxesComboBoxSelectedEntry : String  ;

@@ -4,10 +4,10 @@ namespace widgetassertions ;
 
 class Images_View {
   
-  private StatusImageImageSource : String  ;
+  private StatusImageName : String  ;
   
-  public getStatusImageImageSource (  ) : String  {
-  return this.StatusImageImageSource;
+  public getStatusImageName (  ) : String  {
+  return this.StatusImageName;
  }
   
   private isStatusImageEnabled : Boolean  ;
@@ -16,15 +16,15 @@ class Images_View {
   return this.isStatusImageEnabled;
  }
   
-  private isStatusImageVisibility : Boolean  ;
+  private isStatusImageVisible : Boolean  ;
   
-  public getIsStatusImageVisibility (  ) : Boolean  {
-  return this.isStatusImageVisibility;
+  public getIsStatusImageVisible (  ) : Boolean  {
+  return this.isStatusImageVisible;
  }
   
-  private UpOrDownImageImageSource : String  ;
+  private UpOrDownImageName : String  ;
   
-  public getUpOrDownImageImageSource (  ) : String  {
-  return this.UpOrDownImageImageSource;
+  public getUpOrDownImageName (  ) : String  {
+  return this.UpOrDownImageName;
  }
 }

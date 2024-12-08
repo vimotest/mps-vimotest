@@ -49,7 +49,7 @@ public class SelectEntryCommand_ViewTests_Test {
 
 
   public void then_MyElements_has_3_entries_and() {
-    List<String> actualMyElementsEntries = this.sut.getMyElementsComboBoxComboBoxEntries();
+    List<String> actualMyElementsEntries = this.sut.getMyElementsComboBoxEntries();
     Assert.assertEquals(3, actualMyElementsEntries.size());
     Assert.assertEquals("A", actualMyElementsEntries.get(1 - 1));
     Assert.assertEquals("B", actualMyElementsEntries.get(2 - 1));

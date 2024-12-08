@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class ViMoTestFileNameBinding {
-  private List<ViMoTestFileNameBindingMyElementsRow> MyElementsTableWidgetTableRows = new LinkedList<>();
-  public List<ViMoTestFileNameBindingMyElementsRow> getMyElementsTableWidgetTableRows() {
-    return this.MyElementsTableWidgetTableRows;
+  private List<ViMoTestFileNameBindingMyElementsRow> MyElementsTableRows = new LinkedList<>();
+  public List<ViMoTestFileNameBindingMyElementsRow> getMyElementsTableRows() {
+    return this.MyElementsTableRows;
   }
   public void loadView() {
   }

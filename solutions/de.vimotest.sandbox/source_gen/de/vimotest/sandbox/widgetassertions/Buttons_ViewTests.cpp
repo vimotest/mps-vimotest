@@ -41,7 +41,7 @@ namespace widgetassertions
   void Buttons_ViewTests::then_Ok_is_enabled_and_is_visible_and_shows_text_Test_( ) 
   {
     EXPECT_TRUE(this->sut->getIsOkButtonEnabled());
-    EXPECT_TRUE(this->sut->getIsOkButtonVisibility());
+    EXPECT_TRUE(this->sut->getIsOkButtonVisible());
     EXPECT_EQ(std::string("Test"), this->sut->getOkButtonText());
   }
 }

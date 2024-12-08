@@ -25,9 +25,9 @@ namespace de::vimotest::examples::loginview
   {
     return this->ErrorLabelText;
   }
-  bool LoginView::getIsErrorLabelVisibility( ) 
+  bool LoginView::getIsErrorLabelVisible( ) 
   {
-    return this->isErrorLabelVisibility;
+    return this->isErrorLabelVisible;
   }
   void LoginView::loadView( ) 
   {

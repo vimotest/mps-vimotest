@@ -50,7 +50,7 @@ class SelectEntryCommand_ViewTests {
 
   
   public then_MyElements_has_3_entries_and (  ) {
-  let actualMyElementsEntries: String [] = this.sut.getMyElementsComboBoxComboBoxEntries (  );
+  let actualMyElementsEntries: String [] = this.sut.getMyElementsComboBoxEntries (  );
    AssertEqual ( 3, actualMyElementsEntries->size (  ) );
    AssertEqual ( "A", actualMyElementsEntries[ 1 ] ?? "" );
    AssertEqual ( "B", actualMyElementsEntries[ 2 ] ?? "" );

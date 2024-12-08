@@ -4,10 +4,10 @@ namespace commands ;
 
 class SelectRowCommand_View {
   
-  private MyListViewElementsListWidgetListRows : SelectRowCommand_ViewMyListViewElementsRow [ * ]  ;
+  private MyListViewElementsListRows : SelectRowCommand_ViewMyListViewElementsRow [ * ]  ;
   
-  public getMyListViewElementsListWidgetListRows (  ) : SelectRowCommand_ViewMyListViewElementsRow [ * ]  {
-  return this.MyListViewElementsListWidgetListRows;
+  public getMyListViewElementsListRows (  ) : SelectRowCommand_ViewMyListViewElementsRow [ * ]  {
+  return this.MyListViewElementsListRows;
  }
   
   private MyListViewElementsListSelectedRow : Integer  ;
@@ -16,10 +16,10 @@ class SelectRowCommand_View {
   return this.MyListViewElementsListSelectedRow;
  }
   
-  private MyStringRowHandleListViewElementsListWidgetListRows : SelectRowCommand_ViewMyStringRowHandleListViewElementsRow [ * ]  ;
+  private MyStringRowHandleListViewElementsListRows : SelectRowCommand_ViewMyStringRowHandleListViewElementsRow [ * ]  ;
   
-  public getMyStringRowHandleListViewElementsListWidgetListRows (  ) : SelectRowCommand_ViewMyStringRowHandleListViewElementsRow [ * ]  {
-  return this.MyStringRowHandleListViewElementsListWidgetListRows;
+  public getMyStringRowHandleListViewElementsListRows (  ) : SelectRowCommand_ViewMyStringRowHandleListViewElementsRow [ * ]  {
+  return this.MyStringRowHandleListViewElementsListRows;
  }
   
   private MyStringRowHandleListViewElementsListSelectedRow : String  ;
@@ -28,10 +28,10 @@ class SelectRowCommand_View {
   return this.MyStringRowHandleListViewElementsListSelectedRow;
  }
   
-  private MyTableViewElementsTableWidgetTableRows : SelectRowCommand_ViewMyTableViewElementsRow [ * ]  ;
+  private MyTableViewElementsTableRows : SelectRowCommand_ViewMyTableViewElementsRow [ * ]  ;
   
-  public getMyTableViewElementsTableWidgetTableRows (  ) : SelectRowCommand_ViewMyTableViewElementsRow [ * ]  {
-  return this.MyTableViewElementsTableWidgetTableRows;
+  public getMyTableViewElementsTableRows (  ) : SelectRowCommand_ViewMyTableViewElementsRow [ * ]  {
+  return this.MyTableViewElementsTableRows;
  }
   
   private MyTableViewElementsTableSelectedRow : Integer  ;
@@ -40,10 +40,10 @@ class SelectRowCommand_View {
   return this.MyTableViewElementsTableSelectedRow;
  }
   
-  private MyStringRowHandleTableViewElementsTableWidgetTableRows : SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow [ * ]  ;
+  private MyStringRowHandleTableViewElementsTableRows : SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow [ * ]  ;
   
-  public getMyStringRowHandleTableViewElementsTableWidgetTableRows (  ) : SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow [ * ]  {
-  return this.MyStringRowHandleTableViewElementsTableWidgetTableRows;
+  public getMyStringRowHandleTableViewElementsTableRows (  ) : SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow [ * ]  {
+  return this.MyStringRowHandleTableViewElementsTableRows;
  }
   
   private MyStringRowHandleTableViewElementsTableSelectedRow : String  ;
@@ -52,10 +52,10 @@ class SelectRowCommand_View {
   return this.MyStringRowHandleTableViewElementsTableSelectedRow;
  }
   
-  private MyTreeViewElementsTreeWidgetTreeRows : SelectRowCommand_ViewMyTreeViewElementsRow [ * ]  ;
+  private MyTreeViewElementsTreeRows : SelectRowCommand_ViewMyTreeViewElementsRow [ * ]  ;
   
-  public getMyTreeViewElementsTreeWidgetTreeRows (  ) : SelectRowCommand_ViewMyTreeViewElementsRow [ * ]  {
-  return this.MyTreeViewElementsTreeWidgetTreeRows;
+  public getMyTreeViewElementsTreeRows (  ) : SelectRowCommand_ViewMyTreeViewElementsRow [ * ]  {
+  return this.MyTreeViewElementsTreeRows;
  }
   
   private MyTreeViewElementsTreeSelectedRow : Integer  ;
@@ -64,10 +64,10 @@ class SelectRowCommand_View {
   return this.MyTreeViewElementsTreeSelectedRow;
  }
   
-  private MyStringRowHandleTreeViewElementsTreeWidgetTreeRows : SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow [ * ]  ;
+  private MyStringRowHandleTreeViewElementsTreeRows : SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow [ * ]  ;
   
-  public getMyStringRowHandleTreeViewElementsTreeWidgetTreeRows (  ) : SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow [ * ]  {
-  return this.MyStringRowHandleTreeViewElementsTreeWidgetTreeRows;
+  public getMyStringRowHandleTreeViewElementsTreeRows (  ) : SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow [ * ]  {
+  return this.MyStringRowHandleTreeViewElementsTreeRows;
  }
   
   private MyStringRowHandleTreeViewElementsTreeSelectedRow : String  ;
@@ -76,10 +76,10 @@ class SelectRowCommand_View {
   return this.MyStringRowHandleTreeViewElementsTreeSelectedRow;
  }
   
-  private MyIndexBasedMultiSelectRowListViewElementsListWidgetListRows : SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewElementsRow [ * ]  ;
+  private MyIndexBasedMultiSelectRowListViewElementsListRows : SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewElementsRow [ * ]  ;
   
-  public getMyIndexBasedMultiSelectRowListViewElementsListWidgetListRows (  ) : SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewElementsRow [ * ]  {
-  return this.MyIndexBasedMultiSelectRowListViewElementsListWidgetListRows;
+  public getMyIndexBasedMultiSelectRowListViewElementsListRows (  ) : SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewElementsRow [ * ]  {
+  return this.MyIndexBasedMultiSelectRowListViewElementsListRows;
  }
   
   private MyIndexBasedMultiSelectRowListViewElementsListSelectedRows : Integer [ * ]  ;
@@ -88,10 +88,10 @@ class SelectRowCommand_View {
   return this.MyIndexBasedMultiSelectRowListViewElementsListSelectedRows;
  }
   
-  private MyStringHandleMultiSelectRowListViewElementsListWidgetListRows : SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow [ * ]  ;
+  private MyStringHandleMultiSelectRowListViewElementsListRows : SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow [ * ]  ;
   
-  public getMyStringHandleMultiSelectRowListViewElementsListWidgetListRows (  ) : SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow [ * ]  {
-  return this.MyStringHandleMultiSelectRowListViewElementsListWidgetListRows;
+  public getMyStringHandleMultiSelectRowListViewElementsListRows (  ) : SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow [ * ]  {
+  return this.MyStringHandleMultiSelectRowListViewElementsListRows;
  }
   
   private MyStringHandleMultiSelectRowListViewElementsListSelectedRows : String [ * ]  ;

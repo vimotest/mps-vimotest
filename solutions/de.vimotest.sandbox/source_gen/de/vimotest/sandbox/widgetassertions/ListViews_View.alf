@@ -4,10 +4,10 @@ namespace widgetassertions ;
 
 class ListViews_View {
   
-  private isMyListOfLabelListVisibility : Boolean  ;
+  private isMyListOfLabelListVisible : Boolean  ;
   
-  public getIsMyListOfLabelListVisibility (  ) : Boolean  {
-  return this.isMyListOfLabelListVisibility;
+  public getIsMyListOfLabelListVisible (  ) : Boolean  {
+  return this.isMyListOfLabelListVisible;
  }
   
   private isMyListOfLabelListEnabled : Boolean  ;
@@ -16,10 +16,10 @@ class ListViews_View {
   return this.isMyListOfLabelListEnabled;
  }
   
-  private MyListOfLabelListWidgetListRows : ListViews_ViewMyListOfLabelRow [ * ]  ;
+  private MyListOfLabelListRows : ListViews_ViewMyListOfLabelRow [ * ]  ;
   
-  public getMyListOfLabelListWidgetListRows (  ) : ListViews_ViewMyListOfLabelRow [ * ]  {
-  return this.MyListOfLabelListWidgetListRows;
+  public getMyListOfLabelListRows (  ) : ListViews_ViewMyListOfLabelRow [ * ]  {
+  return this.MyListOfLabelListRows;
  }
   
   private MyListOfLabelListSelectedRow : Integer  ;
@@ -28,10 +28,10 @@ class ListViews_View {
   return this.MyListOfLabelListSelectedRow;
  }
   
-  private isMyListOfImagesListVisibility : Boolean  ;
+  private isMyListOfImagesListVisible : Boolean  ;
   
-  public getIsMyListOfImagesListVisibility (  ) : Boolean  {
-  return this.isMyListOfImagesListVisibility;
+  public getIsMyListOfImagesListVisible (  ) : Boolean  {
+  return this.isMyListOfImagesListVisible;
  }
   
   private isMyListOfImagesListEnabled : Boolean  ;
@@ -40,10 +40,10 @@ class ListViews_View {
   return this.isMyListOfImagesListEnabled;
  }
   
-  private MyListOfImagesListWidgetListRows : ListViews_ViewMyListOfImagesRow [ * ]  ;
+  private MyListOfImagesListRows : ListViews_ViewMyListOfImagesRow [ * ]  ;
   
-  public getMyListOfImagesListWidgetListRows (  ) : ListViews_ViewMyListOfImagesRow [ * ]  {
-  return this.MyListOfImagesListWidgetListRows;
+  public getMyListOfImagesListRows (  ) : ListViews_ViewMyListOfImagesRow [ * ]  {
+  return this.MyListOfImagesListRows;
  }
   
   private MyListOfImagesListSelectedRow : Integer  ;
@@ -52,10 +52,10 @@ class ListViews_View {
   return this.MyListOfImagesListSelectedRow;
  }
   
-  private MyCheckboxesListWidgetListRows : ListViews_ViewMyCheckboxesRow [ * ]  ;
+  private MyCheckboxesListRows : ListViews_ViewMyCheckboxesRow [ * ]  ;
   
-  public getMyCheckboxesListWidgetListRows (  ) : ListViews_ViewMyCheckboxesRow [ * ]  {
-  return this.MyCheckboxesListWidgetListRows;
+  public getMyCheckboxesListRows (  ) : ListViews_ViewMyCheckboxesRow [ * ]  {
+  return this.MyCheckboxesListRows;
  }
   
   private MyCheckboxesListSelectedRow : Integer  ;
@@ -64,10 +64,10 @@ class ListViews_View {
   return this.MyCheckboxesListSelectedRow;
  }
   
-  private isMyCheckboxesListVisibility : Boolean  ;
+  private isMyCheckboxesListVisible : Boolean  ;
   
-  public getIsMyCheckboxesListVisibility (  ) : Boolean  {
-  return this.isMyCheckboxesListVisibility;
+  public getIsMyCheckboxesListVisible (  ) : Boolean  {
+  return this.isMyCheckboxesListVisible;
  }
   
   private isMyCheckboxesListEnabled : Boolean  ;
@@ -76,10 +76,10 @@ class ListViews_View {
   return this.isMyCheckboxesListEnabled;
  }
   
-  private MyStringRowHandlesListWidgetListRows : ListViews_ViewMyStringRowHandlesRow [ * ]  ;
+  private MyStringRowHandlesListRows : ListViews_ViewMyStringRowHandlesRow [ * ]  ;
   
-  public getMyStringRowHandlesListWidgetListRows (  ) : ListViews_ViewMyStringRowHandlesRow [ * ]  {
-  return this.MyStringRowHandlesListWidgetListRows;
+  public getMyStringRowHandlesListRows (  ) : ListViews_ViewMyStringRowHandlesRow [ * ]  {
+  return this.MyStringRowHandlesListRows;
  }
   
   private MyStringRowHandlesListSelectedRow : String  ;
@@ -88,10 +88,10 @@ class ListViews_View {
   return this.MyStringRowHandlesListSelectedRow;
  }
   
-  private MyListWithMultiRowSelectionListWidgetListRows : ListViews_ViewMyListWithMultiRowSelectionRow [ * ]  ;
+  private MyListWithMultiRowSelectionListRows : ListViews_ViewMyListWithMultiRowSelectionRow [ * ]  ;
   
-  public getMyListWithMultiRowSelectionListWidgetListRows (  ) : ListViews_ViewMyListWithMultiRowSelectionRow [ * ]  {
-  return this.MyListWithMultiRowSelectionListWidgetListRows;
+  public getMyListWithMultiRowSelectionListRows (  ) : ListViews_ViewMyListWithMultiRowSelectionRow [ * ]  {
+  return this.MyListWithMultiRowSelectionListRows;
  }
   
   private MyListWithMultiRowSelectionListSelectedRows : Integer [ * ]  ;

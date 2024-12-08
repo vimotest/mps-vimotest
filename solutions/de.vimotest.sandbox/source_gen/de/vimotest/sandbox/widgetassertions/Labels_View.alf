@@ -16,10 +16,10 @@ class Labels_View {
   return this.isTestLabelEnabled;
  }
   
-  private isTestLabelVisibility : Boolean  ;
+  private isTestLabelVisible : Boolean  ;
   
-  public getIsTestLabelVisibility (  ) : Boolean  {
-  return this.isTestLabelVisibility;
+  public getIsTestLabelVisible (  ) : Boolean  {
+  return this.isTestLabelVisible;
  }
   
   private MultiLineLabelText : String [ * ]  ;

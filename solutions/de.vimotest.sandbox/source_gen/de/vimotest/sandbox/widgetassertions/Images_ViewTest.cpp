@@ -42,11 +42,11 @@ namespace widgetassertions
   }
   void Images_ViewTest::then_Status_shows_image_image_active_( ) 
   {
-    EXPECT_EQ(std::string("image_active"), this->sut->getStatusImageImageSource());
+    EXPECT_EQ(std::string("image_active"), this->sut->getStatusImageName());
   }
   void Images_ViewTest::then_UpOrDown_shows_image_image_down_( ) 
   {
-    EXPECT_EQ(std::string("image_down"), this->sut->getUpOrDownImageImageSource());
+    EXPECT_EQ(std::string("image_down"), this->sut->getUpOrDownImageName());
   }
 }
 

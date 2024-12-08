@@ -10,9 +10,9 @@ namespace commands
   {
     return this->MyValueTextBoxText;
   }
-  std::vector<std::string> FillTextCommand_View::getMyFreeValueComboBoxComboBoxEntries( ) 
+  std::vector<std::string> FillTextCommand_View::getMyFreeValueComboBoxEntries( ) 
   {
-    return this->MyFreeValueComboBoxComboBoxEntries;
+    return this->MyFreeValueComboBoxEntries;
   }
   std::string FillTextCommand_View::getMyFreeValueComboBoxSelectedEntry( ) 
   {

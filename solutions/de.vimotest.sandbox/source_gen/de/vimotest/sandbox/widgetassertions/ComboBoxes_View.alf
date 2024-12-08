@@ -4,10 +4,10 @@ namespace widgetassertions ;
 
 class ComboBoxes_View {
   
-  private MyOptionsComboBoxComboBoxEntries : String [ * ]  ;
+  private MyOptionsComboBoxEntries : String [ * ]  ;
   
-  public getMyOptionsComboBoxComboBoxEntries (  ) : String [ * ]  {
-  return this.MyOptionsComboBoxComboBoxEntries;
+  public getMyOptionsComboBoxEntries (  ) : String [ * ]  {
+  return this.MyOptionsComboBoxEntries;
  }
   
   private MyOptionsComboBoxSelectedEntry : String  ;
@@ -16,10 +16,10 @@ class ComboBoxes_View {
   return this.MyOptionsComboBoxSelectedEntry;
  }
   
-  private isMyOptionsComboBoxVisibility : Boolean  ;
+  private isMyOptionsComboBoxVisible : Boolean  ;
   
-  public getIsMyOptionsComboBoxVisibility (  ) : Boolean  {
-  return this.isMyOptionsComboBoxVisibility;
+  public getIsMyOptionsComboBoxVisible (  ) : Boolean  {
+  return this.isMyOptionsComboBoxVisible;
  }
   
   private isMyOptionsComboBoxEnabled : Boolean  ;
@@ -28,10 +28,10 @@ class ComboBoxes_View {
   return this.isMyOptionsComboBoxEnabled;
  }
   
-  private MyOptionsWithFreeTextComboBoxComboBoxEntries : String [ * ]  ;
+  private MyOptionsWithFreeTextComboBoxEntries : String [ * ]  ;
   
-  public getMyOptionsWithFreeTextComboBoxComboBoxEntries (  ) : String [ * ]  {
-  return this.MyOptionsWithFreeTextComboBoxComboBoxEntries;
+  public getMyOptionsWithFreeTextComboBoxEntries (  ) : String [ * ]  {
+  return this.MyOptionsWithFreeTextComboBoxEntries;
  }
   
   private MyOptionsWithFreeTextComboBoxSelectedEntry : String  ;
@@ -46,10 +46,10 @@ class ComboBoxes_View {
   return this.MyOptionsWithFreeTextComboBoxText;
  }
   
-  private isMyOptionsWithFreeTextComboBoxVisibility : Boolean  ;
+  private isMyOptionsWithFreeTextComboBoxVisible : Boolean  ;
   
-  public getIsMyOptionsWithFreeTextComboBoxVisibility (  ) : Boolean  {
-  return this.isMyOptionsWithFreeTextComboBoxVisibility;
+  public getIsMyOptionsWithFreeTextComboBoxVisible (  ) : Boolean  {
+  return this.isMyOptionsWithFreeTextComboBoxVisible;
  }
   
   private isMyOptionsWithFreeTextComboBoxEnabled : Boolean  ;

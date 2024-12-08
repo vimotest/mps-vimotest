@@ -7,9 +7,9 @@
 
 namespace bindings
 {
-  std::vector<std::shared_ptr<ViMoTestFileNameBindingMyElementsRow>> ViMoTestFileNameBinding::getMyElementsTableWidgetTableRows( ) 
+  std::vector<std::shared_ptr<ViMoTestFileNameBindingMyElementsRow>> ViMoTestFileNameBinding::getMyElementsTableRows( ) 
   {
-    return this->MyElementsTableWidgetTableRows;
+    return this->MyElementsTableRows;
   }
   void ViMoTestFileNameBinding::loadView( ) 
   {

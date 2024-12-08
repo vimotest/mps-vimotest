@@ -10,9 +10,9 @@ public class FillTextCommand_View {
   public String getMyValueTextBoxText() {
     return this.MyValueTextBoxText;
   }
-  private List<String> MyFreeValueComboBoxComboBoxEntries = new LinkedList<>();
-  public List<String> getMyFreeValueComboBoxComboBoxEntries() {
-    return this.MyFreeValueComboBoxComboBoxEntries;
+  private List<String> MyFreeValueComboBoxEntries = new LinkedList<>();
+  public List<String> getMyFreeValueComboBoxEntries() {
+    return this.MyFreeValueComboBoxEntries;
   }
   private String MyFreeValueComboBoxSelectedEntry;
   public String getMyFreeValueComboBoxSelectedEntry() {

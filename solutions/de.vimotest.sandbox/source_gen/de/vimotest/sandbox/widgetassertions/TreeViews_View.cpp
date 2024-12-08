@@ -15,33 +15,33 @@ namespace widgetassertions
   {
     return this->MyTreeViewElementsTreeSelectedRow;
   }
-  bool TreeViews_View::getIsMyTreeViewElementsTreeVisibility( ) 
+  bool TreeViews_View::getIsMyTreeViewElementsTreeVisible( ) 
   {
-    return this->isMyTreeViewElementsTreeVisibility;
+    return this->isMyTreeViewElementsTreeVisible;
   }
   bool TreeViews_View::getIsMyTreeViewElementsTreeEnabled( ) 
   {
     return this->isMyTreeViewElementsTreeEnabled;
   }
-  std::vector<std::shared_ptr<TreeViews_ViewMyTreeViewElementsRow>> TreeViews_View::getMyTreeViewElementsTreeWidgetTreeRows( ) 
+  std::vector<std::shared_ptr<TreeViews_ViewMyTreeViewElementsRow>> TreeViews_View::getMyTreeViewElementsTreeRows( ) 
   {
-    return this->MyTreeViewElementsTreeWidgetTreeRows;
+    return this->MyTreeViewElementsTreeRows;
   }
-  std::vector<std::shared_ptr<TreeViews_ViewMyStringRowHandlesRow>> TreeViews_View::getMyStringRowHandlesTreeWidgetTreeRows( ) 
+  std::vector<std::shared_ptr<TreeViews_ViewMyStringRowHandlesRow>> TreeViews_View::getMyStringRowHandlesTreeRows( ) 
   {
-    return this->MyStringRowHandlesTreeWidgetTreeRows;
+    return this->MyStringRowHandlesTreeRows;
   }
   std::string TreeViews_View::getMyStringRowHandlesTreeSelectedRow( ) 
   {
     return this->MyStringRowHandlesTreeSelectedRow;
   }
-  std::vector<std::shared_ptr<TreeViews_ViewMyParentIndexRowHandlesRow>> TreeViews_View::getMyParentIndexRowHandlesTreeWidgetTreeRows( ) 
+  std::vector<std::shared_ptr<TreeViews_ViewMyParentIndexRowHandlesRow>> TreeViews_View::getMyParentIndexRowHandlesTreeRows( ) 
   {
-    return this->MyParentIndexRowHandlesTreeWidgetTreeRows;
+    return this->MyParentIndexRowHandlesTreeRows;
   }
-  std::vector<std::shared_ptr<TreeViews_ViewMyParentStringRowHandlesRow>> TreeViews_View::getMyParentStringRowHandlesTreeWidgetTreeRows( ) 
+  std::vector<std::shared_ptr<TreeViews_ViewMyParentStringRowHandlesRow>> TreeViews_View::getMyParentStringRowHandlesTreeRows( ) 
   {
-    return this->MyParentStringRowHandlesTreeWidgetTreeRows;
+    return this->MyParentStringRowHandlesTreeRows;
   }
 }
 

@@ -40,10 +40,10 @@ class Images_ViewTest {
 
   
   public then_Status_shows_image_image_active_ (  ) {
-  AssertEqual ( "image_active", this.sut.getStatusImageImageSource (  ) );
+  AssertEqual ( "image_active", this.sut.getStatusImageName (  ) );
  }
   
   public then_UpOrDown_shows_image_image_down_ (  ) {
-  AssertEqual ( "image_down", this.sut.getUpOrDownImageImageSource (  ) );
+  AssertEqual ( "image_down", this.sut.getUpOrDownImageName (  ) );
  }
 }

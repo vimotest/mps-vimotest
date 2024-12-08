@@ -59,13 +59,13 @@ class ListViews_ViewTest {
 
   
   public then_MyListOfLabel_has_4_rows_and_selected_row_index_3 (  ) {
-  let actualRows: ListViews_ViewMyListOfLabelRow [] = this.sut.getMyListOfLabelListWidgetListRows (  );
+  let actualRows: ListViews_ViewMyListOfLabelRow [] = this.sut.getMyListOfLabelListRows (  );
    AssertEqual ( 4, actualRows->size (  ) );
    {
   let row0: ListViews_ViewMyListOfLabelRow = actualRows[ 1 ];
    AssertEqual ( 0, row0.getRowIndex (  ) );
    AssertEqual ( "A", row0.getMyValueLabelText (  ) );
-   AssertFalse ( row0.getIsMyValueLabelVisibility (  ) );
+   AssertFalse ( row0.getIsMyValueLabelVisible (  ) );
    AssertTrue ( row0.getIsMyValueLabelEnabled (  ) );
  }
    {
@@ -84,28 +84,28 @@ class ListViews_ViewTest {
   let row3: ListViews_ViewMyListOfLabelRow = actualRows[ 4 ];
    AssertEqual ( 3, row3.getRowIndex (  ) );
    AssertEqual ( "D", row3.getMyValueLabelText (  ) );
-   AssertTrue ( row3.getIsMyValueLabelVisibility (  ) );
+   AssertTrue ( row3.getIsMyValueLabelVisible (  ) );
  }
    AssertEqual ( 3, this.sut.getMyListOfLabelListSelectedRow (  ) );
  }
   
   public then_MyListOfImages_has_2_rows (  ) {
-  let actualRows: ListViews_ViewMyListOfImagesRow [] = this.sut.getMyListOfImagesListWidgetListRows (  );
+  let actualRows: ListViews_ViewMyListOfImagesRow [] = this.sut.getMyListOfImagesListRows (  );
    AssertEqual ( 2, actualRows->size (  ) );
    {
   let row0: ListViews_ViewMyListOfImagesRow = actualRows[ 1 ];
    AssertEqual ( 0, row0.getRowIndex (  ) );
-   AssertEqual ( "image_star", row0.getMyInfoImageImageSource (  ) );
+   AssertEqual ( "image_star", row0.getMyInfoImageName (  ) );
  }
    {
   let row1: ListViews_ViewMyListOfImagesRow = actualRows[ 2 ];
    AssertEqual ( 1, row1.getRowIndex (  ) );
-   AssertEqual ( "image_circle", row1.getMyInfoImageImageSource (  ) );
+   AssertEqual ( "image_circle", row1.getMyInfoImageName (  ) );
  }
  }
   
   public then_MyCheckboxes_has_3_rows (  ) {
-  let actualRows: ListViews_ViewMyCheckboxesRow [] = this.sut.getMyCheckboxesListWidgetListRows (  );
+  let actualRows: ListViews_ViewMyCheckboxesRow [] = this.sut.getMyCheckboxesListRows (  );
    AssertEqual ( 3, actualRows->size (  ) );
    {
   let row0: ListViews_ViewMyCheckboxesRow = actualRows[ 1 ];
@@ -126,7 +126,7 @@ class ListViews_ViewTest {
  }
   
   public then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  ) {
-  let actualRows: ListViews_ViewMyStringRowHandlesRow [] = this.sut.getMyStringRowHandlesListWidgetListRows (  );
+  let actualRows: ListViews_ViewMyStringRowHandlesRow [] = this.sut.getMyStringRowHandlesListRows (  );
    AssertEqual ( 2, actualRows->size (  ) );
    {
   let row0: ListViews_ViewMyStringRowHandlesRow = actualRows[ 1 ];
@@ -142,7 +142,7 @@ class ListViews_ViewTest {
  }
   
   public then_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_ (  ) {
-  let actualRows: ListViews_ViewMyListWithMultiRowSelectionRow [] = this.sut.getMyListWithMultiRowSelectionListWidgetListRows (  );
+  let actualRows: ListViews_ViewMyListWithMultiRowSelectionRow [] = this.sut.getMyListWithMultiRowSelectionListRows (  );
    AssertEqual ( 3, actualRows->size (  ) );
    {
   let row0: ListViews_ViewMyListWithMultiRowSelectionRow = actualRows[ 1 ];
@@ -166,7 +166,7 @@ class ListViews_ViewTest {
  }
   
   public then_MyListOfLabel_has_4_rows (  ) {
-  let actualRows: ListViews_ViewMyListOfLabelRow [] = this.sut.getMyListOfLabelListWidgetListRows (  );
+  let actualRows: ListViews_ViewMyListOfLabelRow [] = this.sut.getMyListOfLabelListRows (  );
    AssertEqual ( 4, actualRows->size (  ) );
    {
   let row0: ListViews_ViewMyListOfLabelRow = actualRows[ 1 ];
@@ -187,7 +187,7 @@ class ListViews_ViewTest {
  }
   
   public then_MyListOfLabel_has_4_rows_1 (  ) {
-  let actualRows: ListViews_ViewMyListOfLabelRow [] = this.sut.getMyListOfLabelListWidgetListRows (  );
+  let actualRows: ListViews_ViewMyListOfLabelRow [] = this.sut.getMyListOfLabelListRows (  );
    AssertEqual ( 4, actualRows->size (  ) );
    {
   let row0: ListViews_ViewMyListOfLabelRow = actualRows[ 1 ];
@@ -207,7 +207,7 @@ class ListViews_ViewTest {
   let row3: ListViews_ViewMyListOfLabelRow = actualRows[ 4 ];
    AssertEqual ( 3, row3.getRowIndex (  ) );
    AssertEqual ( "D", row3.getMyValueLabelText (  ) );
-   AssertTrue ( row3.getIsMyValueLabelVisibility (  ) );
+   AssertTrue ( row3.getIsMyValueLabelVisible (  ) );
  }
  }
 }

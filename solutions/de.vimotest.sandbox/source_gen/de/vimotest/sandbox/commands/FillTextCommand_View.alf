@@ -10,10 +10,10 @@ class FillTextCommand_View {
   return this.MyValueTextBoxText;
  }
   
-  private MyFreeValueComboBoxComboBoxEntries : String [ * ]  ;
+  private MyFreeValueComboBoxEntries : String [ * ]  ;
   
-  public getMyFreeValueComboBoxComboBoxEntries (  ) : String [ * ]  {
-  return this.MyFreeValueComboBoxComboBoxEntries;
+  public getMyFreeValueComboBoxEntries (  ) : String [ * ]  {
+  return this.MyFreeValueComboBoxEntries;
  }
   
   private MyFreeValueComboBoxSelectedEntry : String  ;

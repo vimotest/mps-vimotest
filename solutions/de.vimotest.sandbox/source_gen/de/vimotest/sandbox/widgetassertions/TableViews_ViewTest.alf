@@ -48,7 +48,7 @@ class TableViews_ViewTest {
 
   
   public then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled (  ) {
-  let actualRows: TableViews_ViewMyElementsRow [] = this.sut.getMyElementsTableWidgetTableRows (  );
+  let actualRows: TableViews_ViewMyElementsRow [] = this.sut.getMyElementsTableRows (  );
    AssertEqual ( 2, actualRows->size (  ) );
    {
   let row0: TableViews_ViewMyElementsRow = actualRows[ 1 ];
@@ -56,7 +56,7 @@ class TableViews_ViewTest {
    AssertTrue ( row0.getIsIncludeCheckBoxChecked (  ) );
    AssertEqual ( "A", row0.getNameLabelText (  ) );
    AssertEqual ( "B", row0.getDescriptionLabelText (  ) );
-   AssertEqual ( "image_info", row0.getInfoIconImageImageSource (  ) );
+   AssertEqual ( "image_info", row0.getInfoIconImageName (  ) );
  }
    {
   let row1: TableViews_ViewMyElementsRow = actualRows[ 2 ];
@@ -64,15 +64,15 @@ class TableViews_ViewTest {
    AssertFalse ( row1.getIsIncludeCheckBoxChecked (  ) );
    AssertEqual ( "C", row1.getNameLabelText (  ) );
    AssertEqual ( "D", row1.getDescriptionLabelText (  ) );
-   AssertEqual ( "image_star", row1.getInfoIconImageImageSource (  ) );
+   AssertEqual ( "image_star", row1.getInfoIconImageName (  ) );
  }
    AssertEqual ( 1, this.sut.getMyElementsTableSelectedRow (  ) );
-   AssertTrue ( this.sut.getIsMyElementsTableVisibility (  ) );
+   AssertTrue ( this.sut.getIsMyElementsTableVisible (  ) );
    AssertTrue ( this.sut.getIsMyElementsTableEnabled (  ) );
  }
   
   public then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  ) {
-  let actualRows: TableViews_ViewMyStringRowHandlesRow [] = this.sut.getMyStringRowHandlesTableWidgetTableRows (  );
+  let actualRows: TableViews_ViewMyStringRowHandlesRow [] = this.sut.getMyStringRowHandlesTableRows (  );
    AssertEqual ( 2, actualRows->size (  ) );
    {
   let row0: TableViews_ViewMyStringRowHandlesRow = actualRows[ 1 ];
@@ -88,7 +88,7 @@ class TableViews_ViewTest {
  }
   
   public then_MyElements_has_2_rows (  ) {
-  let actualRows: TableViews_ViewMyElementsRow [] = this.sut.getMyElementsTableWidgetTableRows (  );
+  let actualRows: TableViews_ViewMyElementsRow [] = this.sut.getMyElementsTableRows (  );
    AssertEqual ( 2, actualRows->size (  ) );
    {
   let row0: TableViews_ViewMyElementsRow = actualRows[ 1 ];
@@ -98,7 +98,7 @@ class TableViews_ViewTest {
    {
   let row1: TableViews_ViewMyElementsRow = actualRows[ 2 ];
    AssertEqual ( 1, row1.getRowIndex (  ) );
-   AssertEqual ( "image_star", row1.getInfoIconImageImageSource (  ) );
+   AssertEqual ( "image_star", row1.getInfoIconImageName (  ) );
  }
  }
 }

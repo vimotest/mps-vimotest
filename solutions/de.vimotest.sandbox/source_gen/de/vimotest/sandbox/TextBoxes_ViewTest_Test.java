@@ -50,7 +50,7 @@ public class TextBoxes_ViewTest_Test {
   public void then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible() {
     Assert.assertEquals("Some entered Input", this.sut.getMyValueTextBoxText());
     Assert.assertTrue(this.sut.getIsMyValueTextBoxEnabled());
-    Assert.assertTrue(this.sut.getIsMyValueTextBoxVisibility());
+    Assert.assertTrue(this.sut.getIsMyValueTextBoxVisible());
   }
   public void then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_() {
     List<String> actualMultiLineTextBoxValueLines = this.sut.getMultiLineTextBoxValueTextBoxText();

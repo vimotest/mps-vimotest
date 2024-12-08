@@ -10,9 +10,9 @@ namespace widgetassertions
   {
     return this->MyValueTextBoxText;
   }
-  bool TextBoxes_View::getIsMyValueTextBoxVisibility( ) 
+  bool TextBoxes_View::getIsMyValueTextBoxVisible( ) 
   {
-    return this->isMyValueTextBoxVisibility;
+    return this->isMyValueTextBoxVisible;
   }
   bool TextBoxes_View::getIsMyValueTextBoxEnabled( ) 
   {

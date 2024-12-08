@@ -34,10 +34,10 @@ class LoginView {
   return this.ErrorLabelText;
  }
   
-  private isErrorLabelVisibility : Boolean  ;
+  private isErrorLabelVisible : Boolean  ;
   
-  public getIsErrorLabelVisibility (  ) : Boolean  {
-  return this.isErrorLabelVisibility;
+  public getIsErrorLabelVisible (  ) : Boolean  {
+  return this.isErrorLabelVisible;
  }
   
   public loadView (  ) {     }

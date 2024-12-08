@@ -12,9 +12,9 @@ public class ListViews_ViewMyListOfLabelRow {
   public Boolean getIsMyValueLabelEnabled() {
     return this.isMyValueLabelEnabled;
   }
-  private Boolean isMyValueLabelVisibility;
-  public Boolean getIsMyValueLabelVisibility() {
-    return this.isMyValueLabelVisibility;
+  private Boolean isMyValueLabelVisible;
+  public Boolean getIsMyValueLabelVisible() {
+    return this.isMyValueLabelVisible;
   }
   private Integer RowIndex;
   public Integer getRowIndex() {

@@ -6,25 +6,25 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class ComboBoxes_View {
-  private List<String> MyOptionsComboBoxComboBoxEntries = new LinkedList<>();
-  public List<String> getMyOptionsComboBoxComboBoxEntries() {
-    return this.MyOptionsComboBoxComboBoxEntries;
+  private List<String> MyOptionsComboBoxEntries = new LinkedList<>();
+  public List<String> getMyOptionsComboBoxEntries() {
+    return this.MyOptionsComboBoxEntries;
   }
   private String MyOptionsComboBoxSelectedEntry;
   public String getMyOptionsComboBoxSelectedEntry() {
     return this.MyOptionsComboBoxSelectedEntry;
   }
-  private Boolean isMyOptionsComboBoxVisibility;
-  public Boolean getIsMyOptionsComboBoxVisibility() {
-    return this.isMyOptionsComboBoxVisibility;
+  private Boolean isMyOptionsComboBoxVisible;
+  public Boolean getIsMyOptionsComboBoxVisible() {
+    return this.isMyOptionsComboBoxVisible;
   }
   private Boolean isMyOptionsComboBoxEnabled;
   public Boolean getIsMyOptionsComboBoxEnabled() {
     return this.isMyOptionsComboBoxEnabled;
   }
-  private List<String> MyOptionsWithFreeTextComboBoxComboBoxEntries = new LinkedList<>();
-  public List<String> getMyOptionsWithFreeTextComboBoxComboBoxEntries() {
-    return this.MyOptionsWithFreeTextComboBoxComboBoxEntries;
+  private List<String> MyOptionsWithFreeTextComboBoxEntries = new LinkedList<>();
+  public List<String> getMyOptionsWithFreeTextComboBoxEntries() {
+    return this.MyOptionsWithFreeTextComboBoxEntries;
   }
   private String MyOptionsWithFreeTextComboBoxSelectedEntry;
   public String getMyOptionsWithFreeTextComboBoxSelectedEntry() {
@@ -34,9 +34,9 @@ public class ComboBoxes_View {
   public String getMyOptionsWithFreeTextComboBoxText() {
     return this.MyOptionsWithFreeTextComboBoxText;
   }
-  private Boolean isMyOptionsWithFreeTextComboBoxVisibility;
-  public Boolean getIsMyOptionsWithFreeTextComboBoxVisibility() {
-    return this.isMyOptionsWithFreeTextComboBoxVisibility;
+  private Boolean isMyOptionsWithFreeTextComboBoxVisible;
+  public Boolean getIsMyOptionsWithFreeTextComboBoxVisible() {
+    return this.isMyOptionsWithFreeTextComboBoxVisible;
   }
   private Boolean isMyOptionsWithFreeTextComboBoxEnabled;
   public Boolean getIsMyOptionsWithFreeTextComboBoxEnabled() {

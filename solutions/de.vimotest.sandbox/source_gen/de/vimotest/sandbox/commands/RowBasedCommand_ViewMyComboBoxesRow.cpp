@@ -6,9 +6,9 @@
 
 namespace commands
 {
-  std::vector<std::string> RowBasedCommand_ViewMyComboBoxesRow::getFreeTextComboBoxesComboBoxComboBoxEntries( ) 
+  std::vector<std::string> RowBasedCommand_ViewMyComboBoxesRow::getFreeTextComboBoxesComboBoxEntries( ) 
   {
-    return this->FreeTextComboBoxesComboBoxComboBoxEntries;
+    return this->FreeTextComboBoxesComboBoxEntries;
   }
   std::string RowBasedCommand_ViewMyComboBoxesRow::getFreeTextComboBoxesComboBoxSelectedEntry( ) 
   {
@@ -18,9 +18,9 @@ namespace commands
   {
     return this->FreeTextComboBoxesComboBoxText;
   }
-  std::vector<std::string> RowBasedCommand_ViewMyComboBoxesRow::getEntryComboBoxesComboBoxComboBoxEntries( ) 
+  std::vector<std::string> RowBasedCommand_ViewMyComboBoxesRow::getEntryComboBoxesComboBoxEntries( ) 
   {
-    return this->EntryComboBoxesComboBoxComboBoxEntries;
+    return this->EntryComboBoxesComboBoxEntries;
   }
   std::string RowBasedCommand_ViewMyComboBoxesRow::getEntryComboBoxesComboBoxSelectedEntry( ) 
   {

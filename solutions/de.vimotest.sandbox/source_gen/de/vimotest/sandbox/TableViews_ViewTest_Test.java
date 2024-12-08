@@ -51,7 +51,7 @@ public class TableViews_ViewTest_Test {
 
 
   public void then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled() {
-    List<TableViews_ViewMyElementsRow> actualRows = this.sut.getMyElementsTableWidgetTableRows();
+    List<TableViews_ViewMyElementsRow> actualRows = this.sut.getMyElementsTableRows();
     Assert.assertEquals(2, actualRows.size());
     // {
     TableViews_ViewMyElementsRow row0 = actualRows.get(1 - 1);
@@ -59,7 +59,7 @@ public class TableViews_ViewTest_Test {
     Assert.assertTrue(row0.getIsIncludeCheckBoxChecked());
     Assert.assertEquals("A", row0.getNameLabelText());
     Assert.assertEquals("B", row0.getDescriptionLabelText());
-    Assert.assertEquals("image_info", row0.getInfoIconImageImageSource());
+    Assert.assertEquals("image_info", row0.getInfoIconImageName());
     // }
     // {
     TableViews_ViewMyElementsRow row1 = actualRows.get(2 - 1);
@@ -67,14 +67,14 @@ public class TableViews_ViewTest_Test {
     Assert.assertFalse(row1.getIsIncludeCheckBoxChecked());
     Assert.assertEquals("C", row1.getNameLabelText());
     Assert.assertEquals("D", row1.getDescriptionLabelText());
-    Assert.assertEquals("image_star", row1.getInfoIconImageImageSource());
+    Assert.assertEquals("image_star", row1.getInfoIconImageName());
     // }
     Assert.assertEquals(Integer.valueOf(this.sut.getMyElementsTableSelectedRow()), this.sut.getMyElementsTableSelectedRow());
-    Assert.assertTrue(this.sut.getIsMyElementsTableVisibility());
+    Assert.assertTrue(this.sut.getIsMyElementsTableVisible());
     Assert.assertTrue(this.sut.getIsMyElementsTableEnabled());
   }
   public void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() {
-    List<TableViews_ViewMyStringRowHandlesRow> actualRows = this.sut.getMyStringRowHandlesTableWidgetTableRows();
+    List<TableViews_ViewMyStringRowHandlesRow> actualRows = this.sut.getMyStringRowHandlesTableRows();
     Assert.assertEquals(2, actualRows.size());
     // {
     TableViews_ViewMyStringRowHandlesRow row0 = actualRows.get(1 - 1);
@@ -89,7 +89,7 @@ public class TableViews_ViewTest_Test {
     Assert.assertEquals("ROW1", this.sut.getMyStringRowHandlesTableSelectedRow());
   }
   public void then_MyElements_has_2_rows() {
-    List<TableViews_ViewMyElementsRow> actualRows = this.sut.getMyElementsTableWidgetTableRows();
+    List<TableViews_ViewMyElementsRow> actualRows = this.sut.getMyElementsTableRows();
     Assert.assertEquals(2, actualRows.size());
     // {
     TableViews_ViewMyElementsRow row0 = actualRows.get(1 - 1);
@@ -99,7 +99,7 @@ public class TableViews_ViewTest_Test {
     // {
     TableViews_ViewMyElementsRow row1 = actualRows.get(2 - 1);
     Assert.assertEquals(Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
-    Assert.assertEquals("image_star", row1.getInfoIconImageImageSource());
+    Assert.assertEquals("image_star", row1.getInfoIconImageName());
     // }
   }
 }

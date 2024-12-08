@@ -4,17 +4,17 @@ package de.vimotest.sandbox.widgetassertions;
 
 
 public class ListViews_ViewMyListOfImagesRow {
-  private String MyInfoImageImageSource;
-  public String getMyInfoImageImageSource() {
-    return this.MyInfoImageImageSource;
+  private String MyInfoImageName;
+  public String getMyInfoImageName() {
+    return this.MyInfoImageName;
   }
   private Boolean isMyInfoImageEnabled;
   public Boolean getIsMyInfoImageEnabled() {
     return this.isMyInfoImageEnabled;
   }
-  private Boolean isMyInfoImageVisibility;
-  public Boolean getIsMyInfoImageVisibility() {
-    return this.isMyInfoImageVisibility;
+  private Boolean isMyInfoImageVisible;
+  public Boolean getIsMyInfoImageVisible() {
+    return this.isMyInfoImageVisible;
   }
   private Integer RowIndex;
   public Integer getRowIndex() {

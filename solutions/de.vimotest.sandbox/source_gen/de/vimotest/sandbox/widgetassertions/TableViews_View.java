@@ -6,25 +6,25 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class TableViews_View {
-  private List<TableViews_ViewMyElementsRow> MyElementsTableWidgetTableRows = new LinkedList<>();
-  public List<TableViews_ViewMyElementsRow> getMyElementsTableWidgetTableRows() {
-    return this.MyElementsTableWidgetTableRows;
+  private List<TableViews_ViewMyElementsRow> MyElementsTableRows = new LinkedList<>();
+  public List<TableViews_ViewMyElementsRow> getMyElementsTableRows() {
+    return this.MyElementsTableRows;
   }
   private Integer MyElementsTableSelectedRow;
   public Integer getMyElementsTableSelectedRow() {
     return this.MyElementsTableSelectedRow;
   }
-  private Boolean isMyElementsTableVisibility;
-  public Boolean getIsMyElementsTableVisibility() {
-    return this.isMyElementsTableVisibility;
+  private Boolean isMyElementsTableVisible;
+  public Boolean getIsMyElementsTableVisible() {
+    return this.isMyElementsTableVisible;
   }
   private Boolean isMyElementsTableEnabled;
   public Boolean getIsMyElementsTableEnabled() {
     return this.isMyElementsTableEnabled;
   }
-  private List<TableViews_ViewMyStringRowHandlesRow> MyStringRowHandlesTableWidgetTableRows = new LinkedList<>();
-  public List<TableViews_ViewMyStringRowHandlesRow> getMyStringRowHandlesTableWidgetTableRows() {
-    return this.MyStringRowHandlesTableWidgetTableRows;
+  private List<TableViews_ViewMyStringRowHandlesRow> MyStringRowHandlesTableRows = new LinkedList<>();
+  public List<TableViews_ViewMyStringRowHandlesRow> getMyStringRowHandlesTableRows() {
+    return this.MyStringRowHandlesTableRows;
   }
   private String MyStringRowHandlesTableSelectedRow;
   public String getMyStringRowHandlesTableSelectedRow() {

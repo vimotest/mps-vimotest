@@ -40,9 +40,9 @@ public class Images_ViewTest_Test {
 
 
   public void then_Status_shows_image_image_active_() {
-    Assert.assertEquals("image_active", this.sut.getStatusImageImageSource());
+    Assert.assertEquals("image_active", this.sut.getStatusImageName());
   }
   public void then_UpOrDown_shows_image_image_down_() {
-    Assert.assertEquals("image_down", this.sut.getUpOrDownImageImageSource());
+    Assert.assertEquals("image_down", this.sut.getUpOrDownImageName());
   }
 }

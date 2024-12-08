@@ -15,22 +15,22 @@ namespace widgetassertions
   {
     public:
     virtual int getMyTreeViewElementsTreeSelectedRow() ;
-    virtual bool getIsMyTreeViewElementsTreeVisibility() ;
+    virtual bool getIsMyTreeViewElementsTreeVisible() ;
     virtual bool getIsMyTreeViewElementsTreeEnabled() ;
-    virtual std::vector<std::shared_ptr<TreeViews_ViewMyTreeViewElementsRow>> getMyTreeViewElementsTreeWidgetTreeRows() ;
-    virtual std::vector<std::shared_ptr<TreeViews_ViewMyStringRowHandlesRow>> getMyStringRowHandlesTreeWidgetTreeRows() ;
+    virtual std::vector<std::shared_ptr<TreeViews_ViewMyTreeViewElementsRow>> getMyTreeViewElementsTreeRows() ;
+    virtual std::vector<std::shared_ptr<TreeViews_ViewMyStringRowHandlesRow>> getMyStringRowHandlesTreeRows() ;
     virtual std::string getMyStringRowHandlesTreeSelectedRow() ;
-    virtual std::vector<std::shared_ptr<TreeViews_ViewMyParentIndexRowHandlesRow>> getMyParentIndexRowHandlesTreeWidgetTreeRows() ;
-    virtual std::vector<std::shared_ptr<TreeViews_ViewMyParentStringRowHandlesRow>> getMyParentStringRowHandlesTreeWidgetTreeRows() ;
+    virtual std::vector<std::shared_ptr<TreeViews_ViewMyParentIndexRowHandlesRow>> getMyParentIndexRowHandlesTreeRows() ;
+    virtual std::vector<std::shared_ptr<TreeViews_ViewMyParentStringRowHandlesRow>> getMyParentStringRowHandlesTreeRows() ;
     private:
     int MyTreeViewElementsTreeSelectedRow;
-    bool isMyTreeViewElementsTreeVisibility;
+    bool isMyTreeViewElementsTreeVisible;
     bool isMyTreeViewElementsTreeEnabled;
-    std::vector<std::shared_ptr<TreeViews_ViewMyTreeViewElementsRow>> MyTreeViewElementsTreeWidgetTreeRows;
-    std::vector<std::shared_ptr<TreeViews_ViewMyStringRowHandlesRow>> MyStringRowHandlesTreeWidgetTreeRows;
+    std::vector<std::shared_ptr<TreeViews_ViewMyTreeViewElementsRow>> MyTreeViewElementsTreeRows;
+    std::vector<std::shared_ptr<TreeViews_ViewMyStringRowHandlesRow>> MyStringRowHandlesTreeRows;
     std::string MyStringRowHandlesTreeSelectedRow;
-    std::vector<std::shared_ptr<TreeViews_ViewMyParentIndexRowHandlesRow>> MyParentIndexRowHandlesTreeWidgetTreeRows;
-    std::vector<std::shared_ptr<TreeViews_ViewMyParentStringRowHandlesRow>> MyParentStringRowHandlesTreeWidgetTreeRows;
+    std::vector<std::shared_ptr<TreeViews_ViewMyParentIndexRowHandlesRow>> MyParentIndexRowHandlesTreeRows;
+    std::vector<std::shared_ptr<TreeViews_ViewMyParentStringRowHandlesRow>> MyParentStringRowHandlesTreeRows;
   };
 }
 

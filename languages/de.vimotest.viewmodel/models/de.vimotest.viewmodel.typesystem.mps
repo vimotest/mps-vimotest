@@ -23,6 +23,9 @@
       <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -182,6 +185,14 @@
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
+      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
+        <child id="1153944400369" name="variable" index="2Gsz3X" />
+        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
+      </concept>
+      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
+      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
+        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
+      </concept>
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
     </language>
@@ -690,6 +701,72 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="1mmsj6xZiCb">
+    <property role="TrG5h" value="check_ViewWidget" />
+    <property role="3GE5qa" value="widgets" />
+    <node concept="3clFbS" id="1mmsj6xZiCc" role="18ibNy">
+      <node concept="2Gpval" id="1mmsj6xZlgj" role="3cqZAp">
+        <node concept="2GrKxI" id="1mmsj6xZlgl" role="2Gsz3X">
+          <property role="TrG5h" value="suffix" />
+        </node>
+        <node concept="3clFbS" id="1mmsj6xZlgp" role="2LFqv$">
+          <node concept="3clFbJ" id="1mmsj6xZiCB" role="3cqZAp">
+            <node concept="2OqwBi" id="1mmsj6xZn4o" role="3clFbw">
+              <node concept="2OqwBi" id="1mmsj6xZiNE" role="2Oq$k0">
+                <node concept="1YBJjd" id="1mmsj6xZiCK" role="2Oq$k0">
+                  <ref role="1YBMHb" node="1mmsj6xZiCe" resolve="viewWidget" />
+                </node>
+                <node concept="3TrcHB" id="1mmsj6xZj0i" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="liA8E" id="1mmsj6xZp8_" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />
+                <node concept="2GrUjf" id="1mmsj6xZp92" role="37wK5m">
+                  <ref role="2Gs0qQ" node="1mmsj6xZlgl" resolve="suffix" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="1mmsj6xZiCD" role="3clFbx">
+              <node concept="a7r0C" id="1mmsj6xZp9K" role="3cqZAp">
+                <node concept="3cpWs3" id="1mmsj6xZpJa" role="a7wSD">
+                  <node concept="Xl_RD" id="1mmsj6xZpL1" role="3uHU7w">
+                    <property role="Xl_RC" value="' inherently defined by the widget type" />
+                  </node>
+                  <node concept="3cpWs3" id="1mmsj6xZpaj" role="3uHU7B">
+                    <node concept="Xl_RD" id="1mmsj6xZp9T" role="3uHU7B">
+                      <property role="Xl_RC" value="Name should not end with '" />
+                    </node>
+                    <node concept="2GrUjf" id="1mmsj6xZpax" role="3uHU7w">
+                      <ref role="2Gs0qQ" node="1mmsj6xZlgl" resolve="suffix" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1YBJjd" id="1mmsj6xZpqt" role="1urrMF">
+                  <ref role="1YBMHb" node="1mmsj6xZiCe" resolve="viewWidget" />
+                </node>
+                <node concept="2ODE4t" id="1mmsj6xZpsk" role="1urrC5">
+                  <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="1mmsj6xZlvC" role="2GsD0m">
+          <node concept="1YBJjd" id="1mmsj6xZlvD" role="2Oq$k0">
+            <ref role="1YBMHb" node="1mmsj6xZiCe" resolve="viewWidget" />
+          </node>
+          <node concept="2qgKlT" id="1mmsj6xZlvE" role="2OqNvi">
+            <ref role="37wK5l" to="nrs2:1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1mmsj6xZiCe" role="1YuTPh">
+      <property role="TrG5h" value="viewWidget" />
+      <ref role="1YaFvo" to="at53:F907haLIRF" resolve="ViewWidget" />
     </node>
   </node>
 </model>

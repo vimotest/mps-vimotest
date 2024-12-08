@@ -646,7 +646,7 @@
     <node concept="103ZXx" id="4w9z1ta2qa9" role="103ZXC" />
     <node concept="103ZXB" id="4w9z1ta2qaa" role="103ZXF">
       <node concept="V3ZfZ" id="4w9z1ta2qal" role="103ZUC">
-        <property role="TrG5h" value="MyLabel" />
+        <property role="TrG5h" value="Test" />
         <node concept="V3Zf6" id="4w9z1ta2qam" role="V3ZfK">
           <property role="3A$Jrx" value="My Text" />
           <node concept="o7Kjd" id="4xJPu9h0B0N" role="o6p68">
@@ -665,7 +665,7 @@
         <node concept="31hZui" id="3mOHzzzGn1h" role="31m0es" />
       </node>
       <node concept="V3ZfZ" id="6RKU0s0uSHj" role="103ZUC">
-        <property role="TrG5h" value="MyMultiLineLabel" />
+        <property role="TrG5h" value="MultiLine" />
         <node concept="V3Zf6" id="6RKU0s0uSHl" role="V3ZfK">
           <node concept="o7Kjd" id="6RKU0s0uSHn" role="o6p68">
             <property role="o7K7p" value="true" />
@@ -691,7 +691,7 @@
         <node concept="31hZui" id="3mOHzzzGn1i" role="31m0es" />
       </node>
       <node concept="V3ZfZ" id="6RKU0s20Rn2" role="103ZUC">
-        <property role="TrG5h" value="MyLabelWithToolTip" />
+        <property role="TrG5h" value="WithToolTip" />
         <node concept="V3Zf6" id="6RKU0s20Rn4" role="V3ZfK">
           <node concept="o7Kjd" id="6RKU0s20Rn6" role="o6p68">
             <property role="o7K7r" value="Info" />
@@ -708,7 +708,7 @@
         <node concept="31hZui" id="3mOHzzzGn1j" role="31m0es" />
       </node>
       <node concept="V3ZfZ" id="6RKU0sbAOb2" role="103ZUC">
-        <property role="TrG5h" value="MyLabelWithMultiLineToolTip" />
+        <property role="TrG5h" value="WithMultiLineToolTip" />
         <node concept="V3Zf6" id="6RKU0sbAOb3" role="V3ZfK">
           <node concept="o7Kjd" id="6RKU0sbAOb4" role="o6p68">
             <property role="o7K7r" value="MultiLineInfo" />
@@ -742,7 +742,7 @@
         <node concept="31hZui" id="3mOHzzzGn1k" role="31m0es" />
       </node>
       <node concept="V3ZfZ" id="3mOHzzzGq8O" role="103ZUC">
-        <property role="TrG5h" value="MyLabelWithTextColor" />
+        <property role="TrG5h" value="WithTextColor" />
         <node concept="V3Zf6" id="3mOHzzzGq8Q" role="V3ZfK">
           <node concept="o7Kjd" id="3mOHzzzGq8S" role="o6p68">
             <property role="o7K7r" value="Info" />
@@ -766,7 +766,7 @@
     <node concept="103ZXx" id="4w9z1ta2v5R" role="103ZXC" />
     <node concept="103ZXB" id="4w9z1ta2v5S" role="103ZXF">
       <node concept="2mJbI3" id="4w9z1ta2v5X" role="103ZUC">
-        <property role="TrG5h" value="MyImage" />
+        <property role="TrG5h" value="Status" />
         <node concept="2mJbIq" id="4w9z1ta2v5Y" role="2mJbI4">
           <property role="2VM7R0" value="true" />
           <node concept="3eDL7N" id="4w9z1ta2v5Z" role="3n32fn">
@@ -781,7 +781,7 @@
         </node>
       </node>
       <node concept="2mJbI3" id="4w9z1ta2v62" role="103ZUC">
-        <property role="TrG5h" value="MyUpDownImage" />
+        <property role="TrG5h" value="UpOrDown" />
         <node concept="2mJbIq" id="4w9z1ta2v63" role="2mJbI4">
           <ref role="3ncAEN" node="2YeT3IBbXKs" resolve="updown" />
           <node concept="3eDL7N" id="4w9z1ta2v64" role="3n32fn">
@@ -872,7 +872,7 @@
         </node>
         <node concept="2nep4R" id="4w9z1ta2CUn" role="2MLTWm">
           <node concept="V3ZfZ" id="4w9z1ta2CUo" role="2nerJI">
-            <property role="TrG5h" value="My Text" />
+            <property role="TrG5h" value="My Value" />
             <node concept="V3Zf6" id="4w9z1ta2CUp" role="V3ZfK">
               <property role="2VM7R0" value="true" />
               <property role="3A$Jrx" value="Inner Value" />
@@ -910,7 +910,7 @@
         </node>
         <node concept="2nep4R" id="4w9z1ta2CUx" role="2MLTWm">
           <node concept="2mJbI3" id="4w9z1ta2CUy" role="2nerJI">
-            <property role="TrG5h" value="My Image" />
+            <property role="TrG5h" value="My Info" />
             <node concept="2mJbIq" id="4w9z1ta2CUz" role="2mJbI4">
               <property role="2VM7R0" value="true" />
               <ref role="3ncAEN" node="7QMGS97OI39" resolve="forms" />
@@ -988,7 +988,7 @@
         <node concept="C4FCh" id="6fEYrkZ6m5B" role="1i$o0" />
       </node>
       <node concept="1i$o6" id="4CJYu48x152" role="103ZUC">
-        <property role="TrG5h" value="MyMultiRowSelectionList" />
+        <property role="TrG5h" value="MyListWithMultiRowSelection" />
         <node concept="2nep4R" id="4CJYu48x153" role="2MLTWm">
           <node concept="V3ZfZ" id="4CJYu48x154" role="2nerJI">
             <property role="TrG5h" value="Header" />
@@ -1022,7 +1022,7 @@
     <node concept="103ZXx" id="4w9z1ta2HPm" role="103ZXC" />
     <node concept="103ZXB" id="4w9z1ta2HPn" role="103ZXF">
       <node concept="3UVeDL" id="4w9z1ta2HPS" role="103ZUC">
-        <property role="TrG5h" value="MyTableView" />
+        <property role="TrG5h" value="MyElements" />
         <node concept="2nep4R" id="4w9z1ta2HPT" role="2azj8S">
           <node concept="C4FCE" id="4w9z1ta2HPU" role="2nerJI">
             <property role="TrG5h" value="Include" />
@@ -1131,7 +1131,7 @@
     <node concept="103ZXx" id="4w9z1ta2MKg" role="103ZXC" />
     <node concept="103ZXB" id="4w9z1ta2MKh" role="103ZXF">
       <node concept="3Vayhi" id="4w9z1ta2MKH" role="103ZUC">
-        <property role="TrG5h" value="MyTreeView" />
+        <property role="TrG5h" value="MyTreeViewElements" />
         <node concept="2nep4R" id="4w9z1ta2MKI" role="2nerJJ">
           <property role="2neoUh" value="Include" />
           <node concept="C4FCE" id="4w9z1ta2MKJ" role="2nerJI">
@@ -2755,7 +2755,7 @@
     <node concept="103ZXx" id="2exRXkpRk2S" role="103ZXC" />
     <node concept="103ZXB" id="2exRXkpRk2T" role="103ZXF">
       <node concept="UtuMG" id="2exRXkpRtDe" role="103ZUC">
-        <property role="TrG5h" value="MyTextBox" />
+        <property role="TrG5h" value="MyValue" />
         <node concept="V3Zf6" id="2exRXkpRtDg" role="UtuMJ">
           <property role="3A$Jrx" value="My Text" />
           <node concept="o7Kjd" id="4xJPu9h0B13" role="o6p68">
@@ -2770,7 +2770,7 @@
         </node>
       </node>
       <node concept="UtuMG" id="3c$pnH1f30P" role="103ZUC">
-        <property role="TrG5h" value="MultiLineTextBox" />
+        <property role="TrG5h" value="MultiLineTextBoxValue" />
         <node concept="V3Zf6" id="3c$pnH1f30R" role="UtuMJ">
           <node concept="o7Kjd" id="3c$pnH1f30T" role="o6p68">
             <property role="o7K7p" value="true" />
@@ -2951,7 +2951,7 @@
     <node concept="103ZXx" id="5oh1xNEXyHT" role="103ZXC" />
     <node concept="103ZXB" id="5oh1xNEXyHU" role="103ZXF">
       <node concept="UtuMG" id="5oh1xNEXBx$" role="103ZUC">
-        <property role="TrG5h" value="MyTextBox" />
+        <property role="TrG5h" value="MyValue" />
         <node concept="V3Zf6" id="5oh1xNEXBxD" role="UtuMJ">
           <property role="3A$Jrx" value="text" />
           <node concept="o7Kjd" id="4xJPu9h0B16" role="o6p68">
@@ -2963,7 +2963,7 @@
         <node concept="3Vw88I" id="5oh1xNEXBxS" role="2WQ0r8" />
       </node>
       <node concept="7cNA8" id="7UthagY0kvW" role="103ZUC">
-        <property role="TrG5h" value="MyFreeTextComboBox" />
+        <property role="TrG5h" value="MyFreeValue" />
         <node concept="7cNxA" id="7UthagY0kvY" role="7cNAb">
           <property role="M2z3M" value="A" />
         </node>
@@ -2986,7 +2986,7 @@
     <node concept="103ZXx" id="5oh1xNFyoLJ" role="103ZXC" />
     <node concept="103ZXB" id="5oh1xNFyoLK" role="103ZXF">
       <node concept="2X2XNh" id="5oh1xNFyt$V" role="103ZUC">
-        <property role="TrG5h" value="OkButton" />
+        <property role="TrG5h" value="Ok" />
         <node concept="V3Zf6" id="5oh1xNFyt$W" role="2X2XNi">
           <property role="3A$Jrx" value="OK" />
           <property role="2VM7R0" value="true" />
@@ -3069,7 +3069,7 @@
     <node concept="103ZXx" id="7NpiMQMZW_Y" role="103ZXC" />
     <node concept="103ZXB" id="7NpiMQMZW_Z" role="103ZXF">
       <node concept="2X2XNh" id="7NpiMQN01pT" role="103ZUC">
-        <property role="TrG5h" value="MyButton" />
+        <property role="TrG5h" value="Ok" />
         <node concept="V3Zf6" id="7NpiMQN01pU" role="2X2XNi">
           <property role="3A$Jrx" value="OK" />
           <node concept="o7Kjd" id="4xJPu9h0B19" role="o6p68">
@@ -3151,7 +3151,7 @@
     <node concept="103ZXx" id="5imH8sU7TYq" role="103ZXC" />
     <node concept="103ZXB" id="5imH8sU7TYr" role="103ZXF">
       <node concept="7cNA8" id="5imH8sU7TYs" role="103ZUC">
-        <property role="TrG5h" value="MyComboBox" />
+        <property role="TrG5h" value="MyElements" />
         <node concept="7cNxA" id="5imH8sU7TYt" role="7cNAb">
           <node concept="2gaR_a" id="5imH8sU7TYy" role="M2z3O">
             <property role="TrG5h" value="A" />
@@ -3171,7 +3171,7 @@
         <node concept="3Vw88H" id="5imH8sU7TY$" role="2WQ0re" />
       </node>
       <node concept="992OH" id="7NXUkdSh__V" role="103ZUC">
-        <property role="TrG5h" value="MyRadioButton" />
+        <property role="TrG5h" value="MyOptions" />
         <node concept="992OA" id="7NXUkdSh__X" role="992OG">
           <property role="99Qco" value="A" />
           <node concept="2gaR_a" id="7NXUkdSh__Z" role="99Qcp">
@@ -3240,7 +3240,7 @@
     <node concept="103ZXx" id="1LLcOD9FTdX" role="103ZXC" />
     <node concept="103ZXB" id="1LLcOD9FTdZ" role="103ZXF">
       <node concept="1i$o6" id="1LLcOD9FY1D" role="103ZUC">
-        <property role="TrG5h" value="MyListView" />
+        <property role="TrG5h" value="MyListViewElements" />
         <node concept="2nep4R" id="1LLcOD9FY1E" role="2MLTWm">
           <node concept="V3ZfZ" id="1LLcOD9FY1F" role="2nerJI">
             <property role="TrG5h" value="Header" />
@@ -3267,7 +3267,7 @@
         <node concept="3Vw88G" id="1LLcOD9FY2s" role="2WDutG" />
       </node>
       <node concept="1i$o6" id="6fEYrkZpD6_" role="103ZUC">
-        <property role="TrG5h" value="MyStringRowHandleListView" />
+        <property role="TrG5h" value="MyStringRowHandleListViewElements" />
         <node concept="2nep4R" id="6fEYrkZpD6A" role="2MLTWm">
           <node concept="V3ZfZ" id="6fEYrkZpD6B" role="2nerJI">
             <property role="TrG5h" value="Header" />
@@ -3297,7 +3297,7 @@
         <node concept="3Vw88G" id="6fEYrkZpD7Y" role="2WDutG" />
       </node>
       <node concept="3UVeDL" id="1LLcOD9FY15" role="103ZUC">
-        <property role="TrG5h" value="MyTableView" />
+        <property role="TrG5h" value="MyTableViewElements" />
         <node concept="2nep4R" id="1LLcOD9FY16" role="2azj8S">
           <node concept="V3ZfZ" id="1LLcOD9FY1b" role="2nerJI">
             <property role="TrG5h" value="columnCell" />
@@ -3324,7 +3324,7 @@
         <node concept="3Vw88G" id="1LLcOD9FY2t" role="2WQ0rd" />
       </node>
       <node concept="3UVeDL" id="6fEYrkZpD6P" role="103ZUC">
-        <property role="TrG5h" value="MyStringRowHandleTableView" />
+        <property role="TrG5h" value="MyStringRowHandleTableViewElements" />
         <node concept="2nep4R" id="6fEYrkZpD6Q" role="2azj8S">
           <node concept="V3ZfZ" id="6fEYrkZpD6V" role="2nerJI">
             <property role="TrG5h" value="columnCell" />
@@ -3354,7 +3354,7 @@
         <node concept="3Vw88G" id="6fEYrkZpD7X" role="2WQ0rd" />
       </node>
       <node concept="3Vayhi" id="1LLcOD9FY1T" role="103ZUC">
-        <property role="TrG5h" value="MyTreeView" />
+        <property role="TrG5h" value="MyTreeViewElements" />
         <node concept="2nep4R" id="1LLcOD9FY1U" role="2nerJJ">
           <node concept="V3ZfZ" id="1LLcOD9FY1Z" role="2nerJI">
             <property role="TrG5h" value="columnCell" />
@@ -3382,7 +3382,7 @@
         <node concept="3Vw88G" id="1LLcOD9FY2u" role="2WEaAO" />
       </node>
       <node concept="3Vayhi" id="6fEYrkZpD7p" role="103ZUC">
-        <property role="TrG5h" value="MyStringRowHandleTreeView" />
+        <property role="TrG5h" value="MyStringRowHandleTreeViewElements" />
         <node concept="2nep4R" id="6fEYrkZpD7q" role="2nerJJ">
           <node concept="V3ZfZ" id="6fEYrkZpD7v" role="2nerJI">
             <property role="TrG5h" value="columnCell" />
@@ -3413,7 +3413,7 @@
         <node concept="3Vw88G" id="6fEYrkZpD7W" role="2WEaAO" />
       </node>
       <node concept="1i$o6" id="4CJYu48_Vxb" role="103ZUC">
-        <property role="TrG5h" value="MyIndexBasedMultiSelectRowListView" />
+        <property role="TrG5h" value="MyIndexBasedMultiSelectRowListViewElements" />
         <node concept="2nep4R" id="4CJYu48_Vxc" role="2MLTWm">
           <node concept="V3ZfZ" id="4CJYu48_Vxd" role="2nerJI">
             <property role="TrG5h" value="Header" />
@@ -3441,7 +3441,7 @@
         <node concept="3Vw88G" id="4CJYu48_Vxp" role="2WDutG" />
       </node>
       <node concept="1i$o6" id="6RKU0s3Ep$o" role="103ZUC">
-        <property role="TrG5h" value="MyStringHandleMultiSelectRowListView" />
+        <property role="TrG5h" value="MyStringHandleMultiSelectRowListViewElements" />
         <node concept="2nep4R" id="6RKU0s3Ep$p" role="2MLTWm">
           <node concept="V3ZfZ" id="6RKU0s3Ep$q" role="2nerJI">
             <property role="TrG5h" value="Header" />
@@ -3858,7 +3858,7 @@
     </node>
     <node concept="103ZXB" id="2w4bAIFO7n5" role="103ZXF">
       <node concept="1i$o6" id="2w4bAIFOccT" role="103ZUC">
-        <property role="TrG5h" value="MyListView" />
+        <property role="TrG5h" value="MyFlags" />
         <node concept="2nep4R" id="2w4bAIFOccU" role="2MLTWm">
           <node concept="C4FCE" id="2w4bAIFOcdQ" role="2nerJI">
             <property role="TrG5h" value="Checkboxes" />
@@ -3880,7 +3880,7 @@
         <node concept="C4FCh" id="2w4bAIFOcd6" role="1i$o0" />
       </node>
       <node concept="3UVeDL" id="2w4bAIFOccq" role="103ZUC">
-        <property role="TrG5h" value="MyTableView" />
+        <property role="TrG5h" value="MyComboBoxes" />
         <node concept="3KuuIt" id="2w4bAIFOccO" role="3UVeDY">
           <node concept="3D8xT1" id="5veytyjpKvt" role="3D86r8" />
           <node concept="3D8CoO" id="5veytyjpKvu" role="3D86r9" />
@@ -3933,7 +3933,7 @@
         </node>
       </node>
       <node concept="3Vayhi" id="2w4bAIFOcd9" role="103ZUC">
-        <property role="TrG5h" value="MyTreeView" />
+        <property role="TrG5h" value="MyStandardControls" />
         <node concept="2nep4R" id="2w4bAIFOcda" role="2nerJJ">
           <node concept="UtuMG" id="2w4bAIFOcfj" role="2nerJI">
             <property role="TrG5h" value="TextBoxes" />
@@ -4250,7 +4250,7 @@
     </node>
     <node concept="103ZXB" id="3F1kzPoIN6A" role="103ZXF">
       <node concept="V3ZfZ" id="3F1kzPoJZ98" role="103ZUC">
-        <property role="TrG5h" value="MyLabel" />
+        <property role="TrG5h" value="Empty" />
         <node concept="V3Zf6" id="3F1kzPoJZ9a" role="V3ZfK">
           <node concept="1ytMm$" id="3F1kzPoMKoc" role="lGtFl">
             <property role="1ytVPe" value="mText" />
@@ -4272,10 +4272,10 @@
         <node concept="31hZui" id="3mOHzzzGn1C" role="31m0es" />
       </node>
       <node concept="3Vayhi" id="3ZV2RzmQhki" role="103ZUC">
-        <property role="TrG5h" value="MyTree" />
+        <property role="TrG5h" value="MyElements" />
         <node concept="2nep4R" id="3ZV2RzmQhkj" role="2nerJJ">
           <node concept="V3ZfZ" id="3ZV2RzmQhko" role="2nerJI">
-            <property role="TrG5h" value="text" />
+            <property role="TrG5h" value="Value" />
             <node concept="V3Zf6" id="3ZV2RzmQhkt" role="V3ZfK">
               <node concept="1ytMm$" id="3ZV2RzmQhkR" role="lGtFl">
                 <property role="1ytVPe" value="RowText" />
@@ -4319,7 +4319,7 @@
         <node concept="C4FCh" id="3ZV2RzmQhkN" role="3Vayhu" />
       </node>
       <node concept="2X2XNh" id="26p1ZnjbxCy" role="103ZUC">
-        <property role="TrG5h" value="MyButton" />
+        <property role="TrG5h" value="Ok" />
         <node concept="V3Zf6" id="26p1ZnjbxC$" role="2X2XNi">
           <property role="3A$Jrx" value="OK" />
           <node concept="o7Kjd" id="4xJPu9h0B1t" role="o6p68">
@@ -4346,7 +4346,7 @@
     </node>
     <node concept="103ZXB" id="2N4oO4q_l_q" role="103ZXF">
       <node concept="3UVeDL" id="2N4oO4q_l_r" role="103ZUC">
-        <property role="TrG5h" value="MyTableView" />
+        <property role="TrG5h" value="MyElements" />
         <node concept="2nep4R" id="2N4oO4q_l_s" role="2azj8S">
           <node concept="V3ZfZ" id="2N4oO4q_l_x" role="2nerJI">
             <property role="TrG5h" value="columnCell" />

@@ -133,7 +133,7 @@
     </node>
     <node concept="103ZXB" id="Of5vVZtG4Y" role="103ZXF">
       <node concept="C4FCE" id="Of5vVZtNIW" role="103ZUC">
-        <property role="TrG5h" value="MyCheckBox" />
+        <property role="TrG5h" value="MyFlag" />
         <node concept="C4FCf" id="Of5vVZtNIX" role="C4FCF" />
         <node concept="C4FCg" id="Of5vVZtNIY" role="C4FCG" />
         <node concept="C4FCh" id="Of5vVZtNIZ" role="C4FCH" />

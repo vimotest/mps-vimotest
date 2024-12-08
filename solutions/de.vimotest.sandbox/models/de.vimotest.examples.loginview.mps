@@ -206,7 +206,7 @@
         <node concept="3Vw88h" id="17xw4ZmSY6g" role="2X2XNd" />
       </node>
       <node concept="V3ZfZ" id="17xw4ZmTXrv" role="103ZUC">
-        <property role="TrG5h" value="ErrorText" />
+        <property role="TrG5h" value="Error" />
         <node concept="V3Zf6" id="17xw4ZmTXrx" role="V3ZfK">
           <node concept="o7Kjd" id="4xJPu9h0B1f" role="o6p68" />
         </node>

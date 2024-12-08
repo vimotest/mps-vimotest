@@ -32,6 +32,8 @@
     <import index="uddc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.transformation(MPS.Editor/)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="v7e1" ref="r:3458bb8b-fecd-4f7c-841e-325717a43789(jetbrains.mps.lang.editor.tooltips.runtime)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
@@ -41,7 +43,6 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" implicit="true" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" implicit="true" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" implicit="true" />
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" implicit="true" />
   </imports>
@@ -436,6 +437,9 @@
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
+      <concept id="1235573135402" name="jetbrains.mps.baseLanguage.collections.structure.SingletonSequenceCreator" flags="nn" index="2HTt$P">
+        <child id="1235573187520" name="singletonValue" index="2HTEbv" />
+      </concept>
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435808" name="initValue" index="HW$Y0" />
       </concept>
@@ -537,6 +541,51 @@
         <node concept="3clFbF" id="2S2pY38V08y" role="3cqZAp">
           <node concept="3clFbT" id="2S2pY38V08x" role="3clFbG" />
         </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1mmsj6xYUQM" role="13h7CS">
+      <property role="TrG5h" value="getWidgetNameSuffix" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="1mmsj6xYUQN" role="1B3o_S" />
+      <node concept="17QB3L" id="1mmsj6xYWAn" role="3clF45" />
+      <node concept="3clFbS" id="1mmsj6xYUQP" role="3clF47">
+        <node concept="3clFbF" id="1mmsj6xYWBq" role="3cqZAp">
+          <node concept="2YIFZM" id="1mmsj6xYWCa" role="3clFbG">
+            <ref role="37wK5l" to="18ew:~NameUtil.toValidCamelIdentifier(java.lang.String)" resolve="toValidCamelIdentifier" />
+            <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+            <node concept="2OqwBi" id="1mmsj6xYXBg" role="37wK5m">
+              <node concept="2OqwBi" id="1mmsj6xYWPu" role="2Oq$k0">
+                <node concept="13iPFW" id="1mmsj6xYWDu" role="2Oq$k0" />
+                <node concept="2yIwOk" id="1mmsj6xYX0P" role="2OqNvi" />
+              </node>
+              <node concept="liA8E" id="1mmsj6xYY5r" role="2OqNvi">
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.getConceptAlias()" resolve="getConceptAlias" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1mmsj6xYY9u" role="13h7CS">
+      <property role="TrG5h" value="getWidgetTypeIndicators" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="1mmsj6xZke0" role="1B3o_S" />
+      <node concept="3clFbS" id="1mmsj6xYY9x" role="3clF47">
+        <node concept="3clFbF" id="1mmsj6xZ5mX" role="3cqZAp">
+          <node concept="2ShNRf" id="1mmsj6xZ5mV" role="3clFbG">
+            <node concept="2HTt$P" id="1mmsj6xZi8k" role="2ShVmc">
+              <node concept="2OqwBi" id="1mmsj6xZilE" role="2HTEbv">
+                <node concept="13iPFW" id="1mmsj6xZi9B" role="2Oq$k0" />
+                <node concept="2qgKlT" id="1mmsj6xZixh" role="2OqNvi">
+                  <ref role="37wK5l" node="1mmsj6xYUQM" resolve="getWidgetSuffix" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="1mmsj6xZ5jQ" role="3clF45">
+        <node concept="17QB3L" id="1mmsj6xZ5k9" role="A3Ik2" />
       </node>
     </node>
   </node>
@@ -910,6 +959,44 @@
         </node>
       </node>
       <node concept="10P_77" id="3c$pnH1eFl3" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1mmsj6yx1lR" role="13h7CS">
+      <property role="TrG5h" value="getWidgetNameSuffix" />
+      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetNameSuffix" />
+      <node concept="3Tm1VV" id="1mmsj6yx1lS" role="1B3o_S" />
+      <node concept="3clFbS" id="1mmsj6yx1m2" role="3clF47">
+        <node concept="3clFbF" id="1mmsj6yx2bE" role="3cqZAp">
+          <node concept="Xl_RD" id="1mmsj6yx2bD" role="3clFbG">
+            <property role="Xl_RC" value="CheckBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1mmsj6yx1m3" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1mmsj6xZRyx" role="13h7CS">
+      <property role="TrG5h" value="getWidgetTypeIndicators" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <node concept="3Tm1VV" id="1mmsj6xZRyy" role="1B3o_S" />
+      <node concept="3clFbS" id="1mmsj6xZRyz" role="3clF47">
+        <node concept="3clFbF" id="1mmsj6xZRy$" role="3cqZAp">
+          <node concept="2ShNRf" id="1mmsj6xZRy_" role="3clFbG">
+            <node concept="Tc6Ow" id="1mmsj6xZRyA" role="2ShVmc">
+              <node concept="Xl_RD" id="1mmsj6xZRyB" role="HW$Y0">
+                <property role="Xl_RC" value="CheckBox" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6xZRyC" role="HW$Y0">
+                <property role="Xl_RC" value="Chk" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6yfmmb" role="HW$Y0">
+                <property role="Xl_RC" value="Check" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="1mmsj6xZRyD" role="3clF45">
+        <node concept="17QB3L" id="1mmsj6xZRyE" role="A3Ik2" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="6fZwY6ieXGL">
@@ -1410,6 +1497,34 @@
       </node>
       <node concept="10P_77" id="3c$pnH1eHRy" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="1mmsj6xZUSO" role="13h7CS">
+      <property role="TrG5h" value="getWidgetTypeIndicators" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <node concept="3Tm1VV" id="1mmsj6xZUSP" role="1B3o_S" />
+      <node concept="3clFbS" id="1mmsj6xZUSQ" role="3clF47">
+        <node concept="3clFbF" id="1mmsj6xZUSR" role="3cqZAp">
+          <node concept="2ShNRf" id="1mmsj6xZUSS" role="3clFbG">
+            <node concept="Tc6Ow" id="1mmsj6xZUST" role="2ShVmc">
+              <node concept="Xl_RD" id="1mmsj6xZUSU" role="HW$Y0">
+                <property role="Xl_RC" value="Label" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6xZUSV" role="HW$Y0">
+                <property role="Xl_RC" value="Lbl" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6yff8H" role="HW$Y0">
+                <property role="Xl_RC" value="Text" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6yfg9$" role="HW$Y0">
+                <property role="Xl_RC" value="Txt" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="1mmsj6xZUSW" role="3clF45">
+        <node concept="17QB3L" id="1mmsj6xZUSX" role="A3Ik2" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="3pKiF2wNf4Z">
     <property role="TrG5h" value="ImageWidget_Behavior" />
@@ -1674,6 +1789,28 @@
         </node>
       </node>
       <node concept="10P_77" id="2S2pY391qP2" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1mmsj6y03$o" role="13h7CS">
+      <property role="TrG5h" value="getWidgetTypeIndicators" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <node concept="3Tm1VV" id="1mmsj6y03$p" role="1B3o_S" />
+      <node concept="3clFbS" id="1mmsj6y03$q" role="3clF47">
+        <node concept="3clFbF" id="1mmsj6y03$r" role="3cqZAp">
+          <node concept="2ShNRf" id="1mmsj6y03$s" role="3clFbG">
+            <node concept="Tc6Ow" id="1mmsj6y03$t" role="2ShVmc">
+              <node concept="Xl_RD" id="1mmsj6y03$u" role="HW$Y0">
+                <property role="Xl_RC" value="Image" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6y03$v" role="HW$Y0">
+                <property role="Xl_RC" value="Img" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="1mmsj6y03$w" role="3clF45">
+        <node concept="17QB3L" id="1mmsj6y03$x" role="A3Ik2" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="3pKiF2wNJB_">
@@ -3069,6 +3206,47 @@
         <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowBasedFeature" />
       </node>
     </node>
+    <node concept="13i0hz" id="1mmsj6yDowC" role="13h7CS">
+      <property role="TrG5h" value="getWidgetNameSuffix" />
+      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetNameSuffix" />
+      <node concept="3Tm1VV" id="1mmsj6yDowD" role="1B3o_S" />
+      <node concept="3clFbS" id="1mmsj6yDowN" role="3clF47">
+        <node concept="3clFbF" id="1mmsj6yDoTM" role="3cqZAp">
+          <node concept="Xl_RD" id="1mmsj6yDoTL" role="3clFbG">
+            <property role="Xl_RC" value="List" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1mmsj6yDowO" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1mmsj6y00lr" role="13h7CS">
+      <property role="TrG5h" value="getWidgetTypeIndicators" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <node concept="3Tm1VV" id="1mmsj6y00ls" role="1B3o_S" />
+      <node concept="3clFbS" id="1mmsj6y00lt" role="3clF47">
+        <node concept="3clFbF" id="1mmsj6y00lu" role="3cqZAp">
+          <node concept="2ShNRf" id="1mmsj6y00lv" role="3clFbG">
+            <node concept="Tc6Ow" id="1mmsj6y00lw" role="2ShVmc">
+              <node concept="Xl_RD" id="1mmsj6y00lx" role="HW$Y0">
+                <property role="Xl_RC" value="List" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6y00ly" role="HW$Y0">
+                <property role="Xl_RC" value="ListView" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6y00$p" role="HW$Y0">
+                <property role="Xl_RC" value="Lst" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6y00Gl" role="HW$Y0">
+                <property role="Xl_RC" value="Lv" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="1mmsj6y00lz" role="3clF45">
+        <node concept="17QB3L" id="1mmsj6y00l$" role="A3Ik2" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="K_fAvR3LD3">
     <property role="TrG5h" value="TreeViewWidget_Behavior" />
@@ -3290,6 +3468,44 @@
       </node>
       <node concept="3Tqbb2" id="2w4bAIFMovg" role="3clF45">
         <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowBasedFeature" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="1mmsj6yDnNh" role="13h7CS">
+      <property role="TrG5h" value="getWidgetNameSuffix" />
+      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetNameSuffix" />
+      <node concept="3Tm1VV" id="1mmsj6yDnNi" role="1B3o_S" />
+      <node concept="3clFbS" id="1mmsj6yDnNs" role="3clF47">
+        <node concept="3clFbF" id="1mmsj6yDnXL" role="3cqZAp">
+          <node concept="Xl_RD" id="1mmsj6yDnXK" role="3clFbG">
+            <property role="Xl_RC" value="Tree" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1mmsj6yDnNt" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1mmsj6y01R7" role="13h7CS">
+      <property role="TrG5h" value="getWidgetTypeIndicators" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <node concept="3Tm1VV" id="1mmsj6y01R8" role="1B3o_S" />
+      <node concept="3clFbS" id="1mmsj6y01R9" role="3clF47">
+        <node concept="3clFbF" id="1mmsj6y01Ra" role="3cqZAp">
+          <node concept="2ShNRf" id="1mmsj6y01Rb" role="3clFbG">
+            <node concept="Tc6Ow" id="1mmsj6y01Rc" role="2ShVmc">
+              <node concept="Xl_RD" id="1mmsj6y01Rd" role="HW$Y0">
+                <property role="Xl_RC" value="Tree" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6y01Re" role="HW$Y0">
+                <property role="Xl_RC" value="TreeView" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6y02Hz" role="HW$Y0">
+                <property role="Xl_RC" value="Trv" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="1mmsj6y01Rf" role="3clF45">
+        <node concept="17QB3L" id="1mmsj6y01Rg" role="A3Ik2" />
       </node>
     </node>
   </node>
@@ -4266,6 +4482,50 @@
       </node>
       <node concept="3Tqbb2" id="2w4bAIFMkNC" role="3clF45">
         <ref role="ehGHo" to="at53:1RiAxJSe_9Q" resolve="IRowBasedFeature" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="1mmsj6yDmDp" role="13h7CS">
+      <property role="TrG5h" value="getWidgetNameSuffix" />
+      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetNameSuffix" />
+      <node concept="3Tm1VV" id="1mmsj6yDmDq" role="1B3o_S" />
+      <node concept="3clFbS" id="1mmsj6yDmD$" role="3clF47">
+        <node concept="3clFbF" id="1mmsj6yDmO8" role="3cqZAp">
+          <node concept="Xl_RD" id="1mmsj6yDmO7" role="3clFbG">
+            <property role="Xl_RC" value="Table" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1mmsj6yDmD_" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1mmsj6xZG8z" role="13h7CS">
+      <property role="TrG5h" value="getWidgetTypeIndicators" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <node concept="3Tm1VV" id="1mmsj6xZG8$" role="1B3o_S" />
+      <node concept="3clFbS" id="1mmsj6xZG8I" role="3clF47">
+        <node concept="3clFbF" id="1mmsj6xZGjL" role="3cqZAp">
+          <node concept="2ShNRf" id="1mmsj6xZGjB" role="3clFbG">
+            <node concept="Tc6Ow" id="1mmsj6xZGUh" role="2ShVmc">
+              <node concept="Xl_RD" id="1mmsj6xZJmc" role="HW$Y0">
+                <property role="Xl_RC" value="Table" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6xZJuD" role="HW$Y0">
+                <property role="Xl_RC" value="TableView" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6y9K4M" role="HW$Y0">
+                <property role="Xl_RC" value="Rows" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6xZJzy" role="HW$Y0">
+                <property role="Xl_RC" value="Tv" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6xZZB$" role="HW$Y0">
+                <property role="Xl_RC" value="Tbl" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="1mmsj6xZG8J" role="3clF45">
+        <node concept="17QB3L" id="1mmsj6xZG8K" role="A3Ik2" />
       </node>
     </node>
   </node>
@@ -5314,6 +5574,47 @@
       </node>
       <node concept="10P_77" id="3c$pnH1eGdU" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="1mmsj6yx3d8" role="13h7CS">
+      <property role="TrG5h" value="getWidgetNameSuffix" />
+      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetNameSuffix" />
+      <node concept="3Tm1VV" id="1mmsj6yx3d9" role="1B3o_S" />
+      <node concept="3clFbS" id="1mmsj6yx3dj" role="3clF47">
+        <node concept="3clFbF" id="1mmsj6yx3D8" role="3cqZAp">
+          <node concept="Xl_RD" id="1mmsj6yx3D7" role="3clFbG">
+            <property role="Xl_RC" value="ComboBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1mmsj6yx3dk" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1mmsj6xZXxE" role="13h7CS">
+      <property role="TrG5h" value="getWidgetTypeIndicators" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <node concept="3Tm1VV" id="1mmsj6xZXxF" role="1B3o_S" />
+      <node concept="3clFbS" id="1mmsj6xZXxG" role="3clF47">
+        <node concept="3clFbF" id="1mmsj6xZXxH" role="3cqZAp">
+          <node concept="2ShNRf" id="1mmsj6xZXxI" role="3clFbG">
+            <node concept="Tc6Ow" id="1mmsj6xZXxJ" role="2ShVmc">
+              <node concept="Xl_RD" id="1mmsj6xZXxK" role="HW$Y0">
+                <property role="Xl_RC" value="ComboBox" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6yatt3" role="HW$Y0">
+                <property role="Xl_RC" value="Combo" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6xZXxL" role="HW$Y0">
+                <property role="Xl_RC" value="Cbo" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6xZYkm" role="HW$Y0">
+                <property role="Xl_RC" value="Cmb" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="1mmsj6xZXxM" role="3clF45">
+        <node concept="17QB3L" id="1mmsj6xZXxN" role="A3Ik2" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="2exRXkpP3e5">
     <property role="TrG5h" value="TextBoxWidget_Behavior" />
@@ -5530,6 +5831,47 @@
         </node>
       </node>
       <node concept="10P_77" id="3c$pnH1eISX" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1mmsj6yx4wx" role="13h7CS">
+      <property role="TrG5h" value="getWidgetNameSuffix" />
+      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetNameSuffix" />
+      <node concept="3Tm1VV" id="1mmsj6yx4wy" role="1B3o_S" />
+      <node concept="3clFbS" id="1mmsj6yx4wG" role="3clF47">
+        <node concept="3clFbF" id="1mmsj6yx4Gj" role="3cqZAp">
+          <node concept="Xl_RD" id="1mmsj6yx4Gi" role="3clFbG">
+            <property role="Xl_RC" value="TextBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1mmsj6yx4wH" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1mmsj6ya4a3" role="13h7CS">
+      <property role="TrG5h" value="getWidgetTypeIndicators" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <node concept="3Tm1VV" id="1mmsj6ya4a4" role="1B3o_S" />
+      <node concept="3clFbS" id="1mmsj6ya4a5" role="3clF47">
+        <node concept="3clFbF" id="1mmsj6ya4a6" role="3cqZAp">
+          <node concept="2ShNRf" id="1mmsj6ya4a7" role="3clFbG">
+            <node concept="Tc6Ow" id="1mmsj6ya4a8" role="2ShVmc">
+              <node concept="Xl_RD" id="1mmsj6ya4a9" role="HW$Y0">
+                <property role="Xl_RC" value="TextBox" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6ya4aa" role="HW$Y0">
+                <property role="Xl_RC" value="Text" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6ya4Me" role="HW$Y0">
+                <property role="Xl_RC" value="Txt" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6ya4Tq" role="HW$Y0">
+                <property role="Xl_RC" value="Tbx" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="1mmsj6ya4ab" role="3clF45">
+        <node concept="17QB3L" id="1mmsj6ya4ac" role="A3Ik2" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="1F_Q10zSUKL">
@@ -6034,6 +6376,28 @@
         </node>
       </node>
       <node concept="10P_77" id="3c$pnH1eDAF" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1mmsj6xZMLu" role="13h7CS">
+      <property role="TrG5h" value="getWidgetTypeIndicators" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <node concept="3Tm1VV" id="1mmsj6xZMLv" role="1B3o_S" />
+      <node concept="3clFbS" id="1mmsj6xZMLD" role="3clF47">
+        <node concept="3clFbF" id="1mmsj6xZN0$" role="3cqZAp">
+          <node concept="2ShNRf" id="1mmsj6xZN0q" role="3clFbG">
+            <node concept="Tc6Ow" id="1mmsj6xZOtU" role="2ShVmc">
+              <node concept="Xl_RD" id="1mmsj6xZQ30" role="HW$Y0">
+                <property role="Xl_RC" value="Button" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6xZQ7B" role="HW$Y0">
+                <property role="Xl_RC" value="Btn" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="1mmsj6xZMLE" role="3clF45">
+        <node concept="17QB3L" id="1mmsj6xZMLF" role="A3Ik2" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="17xw4ZmUKHy">
@@ -6958,46 +7322,31 @@
       </node>
     </node>
     <node concept="13i0hz" id="26p1ZniI$M3" role="13h7CS">
-      <property role="TrG5h" value="getWidgetPrefix" />
+      <property role="TrG5h" value="getWidget" />
       <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="26p1ZniI$M4" role="1B3o_S" />
-      <node concept="17QB3L" id="26p1ZniI$M5" role="3clF45" />
       <node concept="3clFbS" id="26p1ZniI$M6" role="3clF47">
-        <node concept="3clFbJ" id="26p1ZniIBoh" role="3cqZAp">
-          <node concept="3clFbS" id="26p1ZniIBoj" role="3clFbx">
-            <node concept="3cpWs6" id="26p1ZniID4_" role="3cqZAp">
-              <node concept="2OqwBi" id="5veytyjPqJo" role="3cqZAk">
-                <node concept="2OqwBi" id="5veytyjPqJr" role="2Oq$k0">
-                  <node concept="13iPFW" id="26p1ZniI_iF" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="5veytyjR0Ay" role="2OqNvi">
-                    <node concept="1xMEDy" id="5veytyjR0A$" role="1xVPHs">
-                      <node concept="chp4Y" id="5veytyjR0Zo" role="ri$Ld">
-                        <ref role="cht4Q" to="at53:F907haLIRF" resolve="ViewWidget" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3TrcHB" id="5veytyjPqJu" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+        <node concept="3clFbF" id="1mmsj6y52ug" role="3cqZAp">
+          <node concept="2OqwBi" id="1mmsj6y52ui" role="3clFbG">
+            <node concept="13iPFW" id="1mmsj6y52uj" role="2Oq$k0" />
+            <node concept="2Xjw5R" id="1mmsj6y52uk" role="2OqNvi">
+              <node concept="1xMEDy" id="1mmsj6y52ul" role="1xVPHs">
+                <node concept="chp4Y" id="1mmsj6y52um" role="ri$Ld">
+                  <ref role="cht4Q" to="at53:F907haLIRF" resolve="ViewWidget" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="BsUDl" id="26p1ZniIBp0" role="3clFbw">
-            <ref role="37wK5l" node="26p1ZniIAOm" resolve="needsWidgetPrefix" />
-          </node>
         </node>
-        <node concept="3clFbF" id="26p1ZniIB_8" role="3cqZAp">
-          <node concept="Xl_RD" id="26p1ZniID15" role="3clFbG">
-            <property role="Xl_RC" value="" />
-          </node>
-        </node>
+      </node>
+      <node concept="3Tqbb2" id="1mmsj6y5273" role="3clF45">
+        <ref role="ehGHo" to="at53:F907haLIRF" resolve="ViewWidget" />
       </node>
     </node>
     <node concept="13i0hz" id="26p1ZniIAOm" role="13h7CS">
       <property role="TrG5h" value="needsWidgetPrefix" />
       <property role="13i0it" value="true" />
-      <node concept="3Tmbuc" id="26p1ZniIBgR" role="1B3o_S" />
+      <node concept="3Tm1VV" id="1mmsj6y522s" role="1B3o_S" />
       <node concept="10P_77" id="26p1ZniIB1G" role="3clF45" />
       <node concept="3clFbS" id="26p1ZniIAOp" role="3clF47">
         <node concept="3clFbF" id="26p1ZniIB2Z" role="3cqZAp">
@@ -8712,6 +9061,37 @@
         </node>
       </node>
       <node concept="10P_77" id="7NXUkdPQsiy" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1mmsj6y05NU" role="13h7CS">
+      <property role="TrG5h" value="getWidgetTypeIndicators" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <node concept="3Tm1VV" id="1mmsj6y05NV" role="1B3o_S" />
+      <node concept="3clFbS" id="1mmsj6y05NW" role="3clF47">
+        <node concept="3clFbF" id="1mmsj6y05NX" role="3cqZAp">
+          <node concept="2ShNRf" id="1mmsj6y05NY" role="3clFbG">
+            <node concept="Tc6Ow" id="1mmsj6y05NZ" role="2ShVmc">
+              <node concept="Xl_RD" id="1mmsj6y05O0" role="HW$Y0">
+                <property role="Xl_RC" value="RadioButton" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6y05O1" role="HW$Y0">
+                <property role="Xl_RC" value="Radio" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6y06aR" role="HW$Y0">
+                <property role="Xl_RC" value="Button" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6y06g2" role="HW$Y0">
+                <property role="Xl_RC" value="Rdo" />
+              </node>
+              <node concept="Xl_RD" id="1mmsj6y06n$" role="HW$Y0">
+                <property role="Xl_RC" value="Rad" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="1mmsj6y05O2" role="3clF45">
+        <node concept="17QB3L" id="1mmsj6y05O3" role="A3Ik2" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="7NXUkdPQD1S">

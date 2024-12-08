@@ -67,7 +67,7 @@
       <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelData" flags="ng" index="103ZXB" />
       <concept id="5775867078593476371" name="de.vimotest.viewmodel.structure.TextColorFeature" flags="ng" index="31hZui" />
       <concept id="6112733486387704342" name="de.vimotest.viewmodel.structure.GenerationConfig" flags="ng" index="1a4JyI">
-        <property id="6112733486387704343" name="capitalizeGetterSetters" index="1a4JyJ" />
+        <property id="6112733486387704343" name="capitalizeOperationNames" index="1a4JyJ" />
       </concept>
       <concept id="4233755548139812761" name="de.vimotest.viewmodel.structure.CustomPropertyNameBinding" flags="ng" index="1ytMm$">
         <property id="4233755548139843443" name="customFieldName" index="1ytVPe" />
@@ -92,7 +92,7 @@
     <node concept="103ZXx" id="Of5vVZt$vj" role="103ZXC" />
     <node concept="103ZXB" id="Of5vVZt$vl" role="103ZXF">
       <node concept="C4FCE" id="Of5vVZtG4Q" role="103ZUC">
-        <property role="TrG5h" value="MyCheckBox" />
+        <property role="TrG5h" value="MyFlag" />
         <node concept="C4FCf" id="Of5vVZtG4R" role="C4FCF">
           <property role="3A$Jrw" value="1EVo$X00Gbt/TRUE" />
         </node>
@@ -114,7 +114,7 @@
         </node>
       </node>
       <node concept="1i$o6" id="3em85dStvTK" role="103ZUC">
-        <property role="TrG5h" value="ListView" />
+        <property role="TrG5h" value="MyElements" />
         <node concept="2nep4R" id="3em85dStvTL" role="2MLTWm">
           <node concept="V3ZfZ" id="3em85dStvTM" role="2nerJI">
             <property role="TrG5h" value="Header" />

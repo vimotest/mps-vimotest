@@ -307,6 +307,7 @@
       <concept id="3120704408893095334" name="alfi.structure.OperationDefinition" flags="ng" index="6nSm6">
         <child id="8164141882417526102" name="body" index="GbAUv" />
       </concept>
+      <concept id="3492897886877920834" name="alfi.structure.EmptyLineNamespaceMember" flags="ng" index="8qQDt" />
       <concept id="2674824929519052396" name="alfi.structure.StringLiteralExpression" flags="ng" index="_iklQ" />
       <concept id="2674824929518918217" name="alfi.structure.ThisExpression" flags="ng" index="_iR_j" />
       <concept id="2674824929519835217" name="alfi.structure.QualifiedName" flags="ng" index="_vnHb">
@@ -429,6 +430,16 @@
       <property role="TrG5h" value="IRowBasedViewWidget_ClassDefinition" />
       <ref role="2rTdP9" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
+    </node>
+    <node concept="3aamgX" id="ZCu$dYEoOF" role="3acgRq">
+      <ref role="30HIoZ" to="evry:F907haLJLR" resolve="EmptyStructContent" />
+      <node concept="gft3U" id="ZCu$dYEqLf" role="1lVwrX">
+        <node concept="15s5l7" id="ZCu$dYErGA" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be child)&quot;;FLAVOUR_MESSAGE=&quot;Node '(instance of EmptyLineNamespaceMember)' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3492897886878835755]&quot;;" />
+          <property role="huDt6" value="Node '(instance of EmptyLineNamespaceMember)' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'" />
+        </node>
+        <node concept="8qQDt" id="ZCu$dYEqLj" role="gfFT$" />
+      </node>
     </node>
     <node concept="3aamgX" id="3JF9X1M4Pww" role="3acgRq">
       <property role="36QftV" value="true" />

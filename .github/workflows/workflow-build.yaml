@@ -52,9 +52,7 @@ jobs:
 
       # Build and Test taskview example
       # Note: while we test Sandbox separately, we test TaskView Example here to avoid archiving and use freshly generated files
-      # TODO: disabled due to breaking generation changes
       - name: Build TaskView Example
-        if: false
         run: sh ./gradlew build
         working-directory: submodules/mps-vimotest-samples/taskmanager
 

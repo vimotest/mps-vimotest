@@ -594,7 +594,19 @@
     <property role="3GE5qa" value="widgets.checkbox" />
     <ref role="13h7C2" to="at53:F907haMeIO" resolve="CheckBoxWidget" />
     <node concept="13hLZK" id="5L3DBX$oEYW" role="13h7CW">
-      <node concept="3clFbS" id="5L3DBX$oEYX" role="2VODD2" />
+      <node concept="3clFbS" id="5L3DBX$oEYX" role="2VODD2">
+        <node concept="3clFbF" id="ZCu$dYvLCV" role="3cqZAp">
+          <node concept="2OqwBi" id="ZCu$dYvLCW" role="3clFbG">
+            <node concept="2OqwBi" id="ZCu$dYvLCX" role="2Oq$k0">
+              <node concept="13iPFW" id="ZCu$dYvLCY" role="2Oq$k0" />
+              <node concept="3TrEf2" id="ZCu$dYvLCZ" role="2OqNvi">
+                <ref role="3Tt5mk" to="at53:1F_Q10zSUw9" />
+              </node>
+            </node>
+            <node concept="2DeJnY" id="ZCu$dYvLD0" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="5L3DBX$oEZ6" role="13h7CS">
       <property role="TrG5h" value="createEditorCell" />
@@ -5053,7 +5065,19 @@
     <property role="3GE5qa" value="widgets.choices" />
     <ref role="13h7C2" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
     <node concept="13hLZK" id="44HS8_67H$i" role="13h7CW">
-      <node concept="3clFbS" id="44HS8_67H$j" role="2VODD2" />
+      <node concept="3clFbS" id="44HS8_67H$j" role="2VODD2">
+        <node concept="3clFbF" id="ZCu$dYvN1G" role="3cqZAp">
+          <node concept="2OqwBi" id="ZCu$dYvN1H" role="3clFbG">
+            <node concept="2OqwBi" id="ZCu$dYvN1I" role="2Oq$k0">
+              <node concept="13iPFW" id="ZCu$dYvN1J" role="2Oq$k0" />
+              <node concept="3TrEf2" id="ZCu$dYvN1K" role="2OqNvi">
+                <ref role="3Tt5mk" to="at53:5oh1xNEMg3i" />
+              </node>
+            </node>
+            <node concept="2DeJnY" id="ZCu$dYvN1L" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="44HS8_67H$k" role="13h7CS">
       <property role="TrG5h" value="createEditorCell" />
@@ -5621,7 +5645,19 @@
     <property role="3GE5qa" value="widgets.standard" />
     <ref role="13h7C2" to="at53:2exRXkpP3dT" resolve="TextBoxWidget" />
     <node concept="13hLZK" id="2exRXkpP3e6" role="13h7CW">
-      <node concept="3clFbS" id="2exRXkpP3e7" role="2VODD2" />
+      <node concept="3clFbS" id="2exRXkpP3e7" role="2VODD2">
+        <node concept="3clFbF" id="ZCu$dYvRuc" role="3cqZAp">
+          <node concept="2OqwBi" id="ZCu$dYvRud" role="3clFbG">
+            <node concept="2OqwBi" id="ZCu$dYvRue" role="2Oq$k0">
+              <node concept="13iPFW" id="ZCu$dYvRuf" role="2Oq$k0" />
+              <node concept="3TrEf2" id="ZCu$dYvRug" role="2OqNvi">
+                <ref role="3Tt5mk" to="at53:5oh1xNEMg3k" />
+              </node>
+            </node>
+            <node concept="2DeJnY" id="ZCu$dYvRuh" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="2exRXkpP3e8" role="13h7CS">
       <property role="TrG5h" value="createEditorCell" />
@@ -6091,7 +6127,19 @@
     <property role="3GE5qa" value="widgets.standard" />
     <ref role="13h7C2" to="at53:5oh1xNF6HFd" resolve="ButtonWidget" />
     <node concept="13hLZK" id="5oh1xNF6HFx" role="13h7CW">
-      <node concept="3clFbS" id="5oh1xNF6HFy" role="2VODD2" />
+      <node concept="3clFbS" id="5oh1xNF6HFy" role="2VODD2">
+        <node concept="3clFbF" id="ZCu$dYvHoW" role="3cqZAp">
+          <node concept="2OqwBi" id="ZCu$dYvJUu" role="3clFbG">
+            <node concept="2OqwBi" id="ZCu$dYvH_u" role="2Oq$k0">
+              <node concept="13iPFW" id="ZCu$dYvHoV" role="2Oq$k0" />
+              <node concept="3TrEf2" id="ZCu$dYvJsw" role="2OqNvi">
+                <ref role="3Tt5mk" to="at53:5oh1xNF6HFh" resolve="clickCommand" />
+              </node>
+            </node>
+            <node concept="2DeJnY" id="ZCu$dYvKc$" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="5oh1xNF6HFz" role="13h7CS">
       <property role="TrG5h" value="createEditorCell" />
@@ -8838,7 +8886,19 @@
     <property role="3GE5qa" value="widgets.choices" />
     <ref role="13h7C2" to="at53:7NXUkdPQshI" resolve="RadioButtonWidget" />
     <node concept="13hLZK" id="7NXUkdPQsi4" role="13h7CW">
-      <node concept="3clFbS" id="7NXUkdPQsi5" role="2VODD2" />
+      <node concept="3clFbS" id="7NXUkdPQsi5" role="2VODD2">
+        <node concept="3clFbF" id="ZCu$dYvOC$" role="3cqZAp">
+          <node concept="2OqwBi" id="ZCu$dYvOC_" role="3clFbG">
+            <node concept="2OqwBi" id="ZCu$dYvOCA" role="2Oq$k0">
+              <node concept="13iPFW" id="ZCu$dYvOCB" role="2Oq$k0" />
+              <node concept="3TrEf2" id="ZCu$dYvOCC" role="2OqNvi">
+                <ref role="3Tt5mk" to="at53:7NXUkdPQshN" />
+              </node>
+            </node>
+            <node concept="2DeJnY" id="ZCu$dYvOCD" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="7NXUkdPQsi6" role="13h7CS">
       <property role="TrG5h" value="createEditorCell" />

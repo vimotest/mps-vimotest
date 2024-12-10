@@ -16,6 +16,9 @@ ViewModels are an architectural pattern, mainly known from the Microsoft's MVVM 
 This approach tries to tackle the problem of fragility in GUI-based tests.
 By using ViewModels, a large portion of the View-Logic (presenter, controller code) can be written isolated from concrete GUI frameworks, and enables a good testability.
 
+## Documentation
+
+See wiki: https://github.com/vimotest/mps-vimotest/wiki
 
 ## Getting Started
 

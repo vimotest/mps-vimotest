@@ -1,0 +1,14 @@
+namespace widgetassertions ;
+
+
+
+class LowLevelFields_View {
+  
+  public MyBool : Boolean  ;
+  
+  public MyInt : Integer  ;
+  
+  public MyString : String  ;
+  
+  public MyStrings : String [ * ]  ;
+}

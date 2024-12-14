@@ -28,6 +28,7 @@
       </concept>
       <concept id="7808764115844896567" name="de.vimotest.types.structure.BoolType" flags="ng" index="1nBHEw" />
       <concept id="7808764115844976085" name="de.vimotest.types.structure.StringType" flags="ng" index="1nBS12" />
+      <concept id="7808764115844956430" name="de.vimotest.types.structure.IntType" flags="ng" index="1nBWMp" />
       <concept id="7808764115843597086" name="de.vimotest.types.structure.FieldStructContent" flags="ng" index="1nWCU9" />
       <concept id="7922086861527425651" name="de.vimotest.types.structure.StringValue" flags="ng" index="1wOkDO">
         <property id="7922086861527426429" name="value" index="1wOkPU" />
@@ -223,12 +224,18 @@
       <concept id="875174318840945282" name="de.vimotest.viewmodel.testing.structure.TreeViewCheck" flags="ng" index="3Vayj_">
         <child id="875174318840945283" name="checks" index="3Vayj$" />
       </concept>
+      <concept id="3102035812374611519" name="de.vimotest.viewmodel.testing.structure.ViewModelFieldAssertion" flags="ng" index="3Ybqct">
+        <reference id="3102035812374612579" name="field" index="3YbqX1" />
+        <child id="3102035812374612580" name="expectedValue" index="3YbqX6" />
+      </concept>
     </language>
     <language id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi">
       <concept id="2674824929519052396" name="alfi.structure.StringLiteralExpression" flags="ng" index="_iklQ">
         <property id="2674824929519052397" name="value" index="_iklR" />
       </concept>
-      <concept id="2674824929518763012" name="alfi.structure.BooleanLiteralExpression" flags="ng" index="_jtWu" />
+      <concept id="2674824929518763012" name="alfi.structure.BooleanLiteralExpression" flags="ng" index="_jtWu">
+        <property id="2674824929518763013" name="value" index="_jtWv" />
+      </concept>
       <concept id="2674824929519838362" name="alfi.structure.PositionalTuple" flags="ng" index="_vku0">
         <child id="2674824929519838363" name="expression" index="_vku1" />
       </concept>
@@ -237,6 +244,9 @@
       </concept>
       <concept id="8550147057602730244" name="alfi.structure.NameReference" flags="ng" index="2RqM1Q">
         <reference id="8550147057602730245" name="target" index="2RqM1R" />
+      </concept>
+      <concept id="7144803224892162748" name="alfi.structure.DecimalLiteralExpression" flags="ng" index="32T38h">
+        <property id="7144803224892162749" name="valueText" index="32T38g" />
       </concept>
       <concept id="2021446509811517476" name="alfi.structure.TypedElementDefinition" flags="ng" index="3xMlr7">
         <child id="2021446509811517477" name="typeName" index="3xMlr6" />
@@ -4662,6 +4672,65 @@
         </node>
       </node>
       <node concept="1s$VFG" id="aV2Sa0vgFp" role="1s$QAY" />
+    </node>
+  </node>
+  <node concept="103ZX$" id="2GcDibl8gkX">
+    <property role="3GE5qa" value="widgetassertions" />
+    <property role="TrG5h" value="LowLevelFields_View" />
+    <node concept="103ZXx" id="2GcDibl8gkY" role="103ZXC" />
+    <node concept="103ZXB" id="2GcDibl8gl0" role="103ZXF">
+      <node concept="1nWCU9" id="2GcDibl8gl1" role="103ZUC">
+        <property role="TrG5h" value="MyBool" />
+        <node concept="1nBHEw" id="2GcDibl8gl8" role="3xMlr6" />
+      </node>
+      <node concept="1nWCU9" id="2GcDibl8gmh" role="103ZUC">
+        <property role="TrG5h" value="MyInt" />
+        <node concept="1nBWMp" id="2GcDibl8gmL" role="3xMlr6" />
+      </node>
+      <node concept="1nWCU9" id="2GcDibl8glF" role="103ZUC">
+        <property role="TrG5h" value="MyString" />
+        <node concept="1nBS12" id="2GcDibl8glN" role="3xMlr6" />
+      </node>
+      <node concept="1nWCU9" id="2GcDibl8gn_" role="103ZUC">
+        <property role="TrG5h" value="MyStrings" />
+        <node concept="1WnWvM" id="2GcDibl8gnH" role="3xMlr6">
+          <node concept="1nBS12" id="2GcDibl8gnV" role="1WnWvN" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="30n1Qd" id="2GcDibl8goQ">
+    <property role="3GE5qa" value="widgetassertions" />
+    <property role="TrG5h" value="LowLevelFields_ViewTests" />
+    <ref role="30n1PB" node="2GcDibl8gkX" resolve="LowLevelFields_View" />
+    <node concept="3LKzX3" id="2GcDibl8goR" role="30n1Qb">
+      <property role="TrG5h" value="Primitive Field Asserts" />
+      <node concept="1s$VFG" id="2GcDibl8goU" role="1s$QAY">
+        <node concept="DUd2R" id="2GcDibl8goX" role="1s$QAX">
+          <node concept="3Ybqct" id="4mnk8hC0wTR" role="DUiSb">
+            <ref role="3YbqX1" node="2GcDibl8gl1" resolve="MyBool" />
+            <node concept="_jtWu" id="4mnk8hC0wTT" role="3YbqX6">
+              <property role="_jtWv" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="4mnk8hC0wUc" role="1s$QAX">
+          <node concept="3Ybqct" id="4mnk8hC41Hr" role="DUiSb">
+            <ref role="3YbqX1" node="2GcDibl8gmh" resolve="MyInt" />
+            <node concept="32T38h" id="4mnk8hC41Ht" role="3YbqX6">
+              <property role="32T38g" value="42" />
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="4mnk8hC0wV6" role="1s$QAX">
+          <node concept="3Ybqct" id="4mnk8hC41GI" role="DUiSb">
+            <ref role="3YbqX1" node="2GcDibl8glF" resolve="MyString" />
+            <node concept="_iklQ" id="4mnk8hC41GK" role="3YbqX6">
+              <property role="_iklR" value="text" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

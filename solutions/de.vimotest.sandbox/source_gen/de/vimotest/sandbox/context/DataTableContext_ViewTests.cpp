@@ -1,10 +1,10 @@
 
 #include <gtest/gtest.h>
-#include <string>
 #include <memory>
 #include "DataTableContext_ViewContextProvider.h"
 #include "DataTableContext_View.h"
 #include "DataTableContext_ViewContextProviderImpl.h"
+#include <string>
 
 namespace context
 {
@@ -14,13 +14,21 @@ namespace context
     std::shared_ptr<DataTableContext_View> sut;
     std::shared_ptr<DataTableContext_ViewContextProvider> contextProvider;
     virtual void BuildSut() ;
-    std::string dataTableCustomSetter = std::string("| id | name |\n| 0 | A |");
+    std::string dataTableCustomSetter = R"(| id | name |
+| 0 | A |)";
     virtual void given_dataTableCustomSetter() ;
-    std::string dataTableToString = std::string("| id | name |\n| 0 | A |");
+    std::string dataTableToString = R"(| id | name |
+| 0 | A |)";
     virtual void given_dataTableToString() ;
-    std::string dataTableToJson = std::string("[ { id:\"0\", name:\"A\" } ]");
+    std::string dataTableToJson = R"([ { id:\"0\", name:\"A\" } ])";
     virtual void given_dataTableToJson() ;
-    std::string dataTableToXml = std::string("<Data>\n  <DataRow>\n    <id>0    </id>\n    <name>A    </name>\n| 0 | A |\n  </DataRow>\n</Data>");
+    std::string dataTableToXml = R"(<Data>
+  <DataRow>
+    <id>0    </id>
+    <name>A    </name>
+| 0 | A |
+  </DataRow>
+</Data>)";
     virtual void given_dataTableToXml() ;
     protected:
     void SetUp() override ;

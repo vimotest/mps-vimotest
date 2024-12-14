@@ -1,0 +1,48 @@
+namespace widgetassertions ;
+
+private import Testing ;
+
+class LowLevelFields_ViewTests {
+  
+  private sut : LowLevelFields_View  ;
+  
+  private contextProvider : LowLevelFields_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new LowLevelFields_ViewContextProviderImpl (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public Primitive_Field_Asserts_given_when_then_MyBool_is_true_and_MyInt_is_42_and_MyString_is_text_ (  ) {
+  this.BuildSut (  );
+   this.then_MyBool_is_true (  );
+   this.then_MyInt_is_42 (  );
+   this.then_MyString_is_text_ (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+  
+  public then_MyBool_is_true (  ) {
+<!TextGen not found for 'de.vimotest.viewmodel.testing.structure.ViewModelFieldAssertion'!> }
+  
+  public then_MyInt_is_42 (  ) {
+<!TextGen not found for 'de.vimotest.viewmodel.testing.structure.ViewModelFieldAssertion'!> }
+  
+  public then_MyString_is_text_ (  ) {
+<!TextGen not found for 'de.vimotest.viewmodel.testing.structure.ViewModelFieldAssertion'!> }
+}

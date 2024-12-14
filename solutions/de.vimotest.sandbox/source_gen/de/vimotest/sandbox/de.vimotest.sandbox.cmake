@@ -49,6 +49,7 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_View.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_View.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_View.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_View.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewContextProvider.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewContextProvider.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewContextProvider.cpp
@@ -71,6 +72,7 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_ViewContextProvider.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewContextProvider.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_ViewContextProvider.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewContextProvider.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewContextProviderImpl.cpp
@@ -93,6 +95,7 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewContextProviderImpl.cpp
 )
 
 set(GENERATED_HEADERS
@@ -144,6 +147,7 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_View.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_View.h
   ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_View.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_View.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewContextProvider.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewContextProvider.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewContextProvider.h
@@ -166,6 +170,7 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_ViewContextProvider.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewContextProvider.h
   ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_ViewContextProvider.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewContextProvider.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewContextProviderImpl.h
@@ -188,5 +193,6 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewContextProviderImpl.h
 )
 

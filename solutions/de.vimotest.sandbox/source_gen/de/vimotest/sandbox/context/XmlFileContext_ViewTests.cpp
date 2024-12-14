@@ -1,8 +1,8 @@
 
 #include <gtest/gtest.h>
-#include <string>
 #include <memory>
 #include "XmlFileContext_ViewContextProvider.h"
+#include <string>
 #include "XmlFileContext_View.h"
 #include "XmlFileContext_ViewContextProviderImpl.h"
 
@@ -14,7 +14,9 @@ namespace context
     std::shared_ptr<XmlFileContext_View> sut;
     std::shared_ptr<XmlFileContext_ViewContextProvider> contextProvider;
     virtual void BuildSut() ;
-    std::string XmlFile_NoExternalFile = std::string("<MyXML>  \n  <Inner></Inner>\n</MyXML>");
+    std::string XmlFile_NoExternalFile = R"(<MyXML>  
+  <Inner></Inner>
+</MyXML>)";
     virtual void given_XmlFile_NoExternalFile() ;
     virtual void given_XmlFile_ExternalFile() ;
     protected:

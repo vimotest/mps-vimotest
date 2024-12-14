@@ -1315,5 +1315,28 @@
       <ref role="PrY4T" node="7NXUkdPQsiz" resolve="IRadioButtonCheckValue" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2GcDibl8goZ">
+    <property role="EcuMT" value="3102035812374611519" />
+    <property role="3GE5qa" value="test.assert" />
+    <property role="TrG5h" value="ViewModelFieldAssertion" />
+    <property role="34LRSv" value="field assertion" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="2GcDibl8gDz" role="1TKVEi">
+      <property role="IQ2ns" value="3102035812374612579" />
+      <property role="20kJfa" value="field" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
+    </node>
+    <node concept="PrWs8" id="2GcDibl8gp0" role="PzmwI">
+      <ref role="PrY4T" node="6fZwY6ifv52" resolve="ITestScenarioAssertion" />
+    </node>
+    <node concept="1TJgyj" id="2GcDibl8gD$" role="1TKVEi">
+      <property role="IQ2ns" value="3102035812374612580" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expectedValue" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="28lk:2kuSLC0kNK2" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

@@ -2,8 +2,8 @@
 #include <gtest/gtest.h>
 #include <memory>
 #include "LowLevelFields_ViewContextProvider.h"
-#include <string>
 #include "LowLevelFields_View.h"
+#include <string>
 #include "LowLevelFields_ViewContextProviderImpl.h"
 
 namespace widgetassertions
@@ -38,15 +38,15 @@ namespace widgetassertions
   }
   void LowLevelFields_ViewTests::then_MyBool_is_true( ) 
   {
-    <!TextGen not found for 'de.vimotest.viewmodel.testing.structure.ViewModelFieldAssertion'!>
+    EXPECT_TRUE(this->sut->getIsMyBool());
   }
   void LowLevelFields_ViewTests::then_MyInt_is_42( ) 
   {
-    <!TextGen not found for 'de.vimotest.viewmodel.testing.structure.ViewModelFieldAssertion'!>
+    EXPECT_EQ(42, this->sut->getMyInt());
   }
   void LowLevelFields_ViewTests::then_MyString_is_text_( ) 
   {
-    <!TextGen not found for 'de.vimotest.viewmodel.testing.structure.ViewModelFieldAssertion'!>
+    EXPECT_EQ(std::string("text"), this->sut->getMyString());
   }
 }
 

@@ -3348,7 +3348,7 @@
   </node>
   <node concept="13MO4I" id="ioQSx0BivR">
     <property role="TrG5h" value="reduce_ViewWidgetAssertion" />
-    <property role="3GE5qa" value="then" />
+    <property role="3GE5qa" value="then.widget" />
     <ref role="3gUMe" to="53m0:2Yd1qrJONf3" resolve="ViewWidgetAssertion" />
     <node concept="2VYdi" id="ioQSx0BivS" role="13RCb5">
       <node concept="raruj" id="ioQSx0BivW" role="lGtFl" />
@@ -3369,7 +3369,7 @@
     </node>
   </node>
   <node concept="jVnub" id="7ceEXPSxJ9p">
-    <property role="3GE5qa" value="then" />
+    <property role="3GE5qa" value="then.widget" />
     <property role="TrG5h" value="switch_ViewWidgetCheckValue" />
     <node concept="3aamgX" id="7ceEXPSye$5" role="3aUrZf">
       <property role="36QftV" value="true" />
@@ -4739,7 +4739,7 @@
   </node>
   <node concept="13MO4I" id="7ceEXPSBrY4">
     <property role="TrG5h" value="reduce_ViewWidgetCheck" />
-    <property role="3GE5qa" value="then" />
+    <property role="3GE5qa" value="then.widget" />
     <ref role="3gUMe" to="53m0:2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     <node concept="PCHHj" id="7ceEXPSBrY9" role="13RCb5">
       <property role="TrG5h" value="reduce_ViewWidgetCheck" />
@@ -4773,7 +4773,7 @@
     </node>
   </node>
   <node concept="13MO4I" id="3_BGOS43ozC">
-    <property role="3GE5qa" value="then" />
+    <property role="3GE5qa" value="then.widget" />
     <property role="TrG5h" value="reduce_CheckValue_PropertyGetter" />
     <ref role="3gUMe" to="53m0:5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
     <node concept="3mGtxK" id="3_BGOS43wgh" role="13RCb5">
@@ -7603,7 +7603,7 @@
     </node>
   </node>
   <node concept="jVnub" id="4mnk8hC741u">
-    <property role="3GE5qa" value="then" />
+    <property role="3GE5qa" value="then.field" />
     <property role="TrG5h" value="switch_ViewModelFieldAssertion" />
     <node concept="3aamgX" id="4mnk8hC741v" role="3aUrZf">
       <property role="36QftV" value="true" />
@@ -7611,25 +7611,16 @@
       <node concept="30G5F_" id="4mnk8hC741x" role="30HLyM">
         <node concept="3clFbS" id="4mnk8hC741y" role="2VODD2">
           <node concept="3clFbF" id="4mnk8hC74f3" role="3cqZAp">
-            <node concept="3clFbC" id="4mnk8hC7aCd" role="3clFbG">
-              <node concept="3clFbT" id="4mnk8hC7btw" role="3uHU7w">
-                <property role="3clFbU" value="true" />
-              </node>
-              <node concept="2OqwBi" id="4mnk8hC76k5" role="3uHU7B">
-                <node concept="1PxgMI" id="4mnk8hC75MZ" role="2Oq$k0">
-                  <property role="1BlNFB" value="true" />
-                  <node concept="chp4Y" id="4mnk8hC763a" role="3oSUPX">
-                    <ref role="cht4Q" to="28lk:2kuSLC0kNK4" resolve="BooleanLiteralExpression" />
-                  </node>
-                  <node concept="2OqwBi" id="4mnk8hC74Cq" role="1m5AlR">
-                    <node concept="30H73N" id="4mnk8hC74f2" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="4mnk8hC74LO" role="2OqNvi">
-                      <ref role="3Tt5mk" to="53m0:2GcDibl8gD$" resolve="expectedValue" />
-                    </node>
-                  </node>
+            <node concept="2OqwBi" id="4ncpC4iJAOO" role="3clFbG">
+              <node concept="2OqwBi" id="4mnk8hC74Cq" role="2Oq$k0">
+                <node concept="30H73N" id="4mnk8hC74f2" role="2Oq$k0" />
+                <node concept="3TrEf2" id="4mnk8hC74LO" role="2OqNvi">
+                  <ref role="3Tt5mk" to="53m0:2GcDibl8gD$" />
                 </node>
-                <node concept="3TrcHB" id="4mnk8hC76_I" role="2OqNvi">
-                  <ref role="3TsBF5" to="28lk:2kuSLC0kNK5" resolve="value" />
+              </node>
+              <node concept="1mIQ4w" id="4ncpC4iJBS1" role="2OqNvi">
+                <node concept="chp4Y" id="4ncpC4iJDNs" role="cj9EA">
+                  <ref role="cht4Q" to="28lk:2kuSLC0kNK4" resolve="BooleanLiteralExpression" />
                 </node>
               </node>
             </node>
@@ -7651,10 +7642,21 @@
                         <node concept="2YIFZM" id="4mnk8hC7bVP" role="3clFbG">
                           <ref role="37wK5l" to="zcip:7ceEXPSyU88" resolve="getBooleanAssertOperation" />
                           <ref role="1Pybhc" to="zcip:7ceEXPSyDOa" resolve="TestScenarioNodeResolveHelper" />
-                          <node concept="2OqwBi" id="4mnk8hC7bVQ" role="37wK5m">
-                            <node concept="30H73N" id="4mnk8hC7bVR" role="2Oq$k0" />
-                            <node concept="3TrcHB" id="4mnk8hC7bVS" role="2OqNvi">
-                              <ref role="3TsBF5" to="53m0:5VrLp2zpew1" resolve="expectedIsEnabled" />
+                          <node concept="2OqwBi" id="4ncpC4iJHIC" role="37wK5m">
+                            <node concept="1PxgMI" id="4ncpC4iJHlB" role="2Oq$k0">
+                              <property role="1BlNFB" value="true" />
+                              <node concept="chp4Y" id="4ncpC4iJHpj" role="3oSUPX">
+                                <ref role="cht4Q" to="28lk:2kuSLC0kNK4" resolve="BooleanLiteralExpression" />
+                              </node>
+                              <node concept="2OqwBi" id="4ncpC4iJGOm" role="1m5AlR">
+                                <node concept="30H73N" id="4ncpC4iJGOn" role="2Oq$k0" />
+                                <node concept="3TrEf2" id="4ncpC4iJGOo" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="53m0:2GcDibl8gD$" resolve="expectedValue" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3TrcHB" id="4ncpC4iJI4Z" role="2OqNvi">
+                              <ref role="3TsBF5" to="28lk:2kuSLC0kNK5" resolve="value" />
                             </node>
                           </node>
                         </node>
@@ -7668,7 +7670,51 @@
               <node concept="32T38h" id="4mnk8hC7bVU" role="_vku1">
                 <property role="32T38g" value="0" />
                 <node concept="5jKBG" id="4mnk8hC7bVV" role="lGtFl">
-                  <ref role="v9R2y" node="3_BGOS43ozC" resolve="reduce_CheckValue_PropertyGetter" />
+                  <ref role="v9R2y" node="4mnk8hC7ddO" resolve="reduce_Field_PropertyGetter" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="4ncpC4iJXhA" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="53m0:2GcDibl8goZ" resolve="ViewModelFieldAssertion" />
+      <node concept="gft3U" id="4ncpC4iK1Xt" role="1lVwrX">
+        <node concept="15s5l7" id="4ncpC4iK1Xu" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  AssertEqual (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
+          <property role="huDt6" value="The reference  AssertEqual (target) is out of search scope" />
+        </node>
+        <node concept="_jtW9" id="4ncpC4iK1Xv" role="gfFT$">
+          <node concept="_uF8j" id="4ncpC4iK1Xw" role="_jtWe">
+            <node concept="_vnHb" id="4ncpC4iK1Xx" role="_uF8g">
+              <node concept="2RqM1Q" id="4ncpC4iK1Xy" role="_vnH8">
+                <ref role="2RqM1R" to="hsxa:37zNn5KVoOI" resolve="AssertEqual" />
+              </node>
+            </node>
+            <node concept="_vku0" id="4ncpC4iK1Xz" role="_uFfl">
+              <node concept="_iklQ" id="4ncpC4iK1X$" role="_vku1">
+                <property role="_iklR" value="Expected" />
+                <node concept="29HgVG" id="4ncpC4iK3Yy" role="lGtFl">
+                  <node concept="3NFfHV" id="4ncpC4iK3Yz" role="3NFExx">
+                    <node concept="3clFbS" id="4ncpC4iK3Y$" role="2VODD2">
+                      <node concept="3clFbF" id="4ncpC4iK3YE" role="3cqZAp">
+                        <node concept="2OqwBi" id="4ncpC4iK3Y_" role="3clFbG">
+                          <node concept="3TrEf2" id="4ncpC4iK3YC" role="2OqNvi">
+                            <ref role="3Tt5mk" to="53m0:2GcDibl8gD$" resolve="expectedValue" />
+                          </node>
+                          <node concept="30H73N" id="4ncpC4iK3YD" role="2Oq$k0" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="32T38h" id="4ncpC4iK43r" role="_vku1">
+                <property role="32T38g" value="0" />
+                <node concept="5jKBG" id="4ncpC4iK43s" role="lGtFl">
+                  <ref role="v9R2y" node="4mnk8hC7ddO" resolve="reduce_Field_PropertyGetter" />
                 </node>
               </node>
             </node>
@@ -7678,13 +7724,13 @@
     </node>
   </node>
   <node concept="13MO4I" id="4mnk8hC7ddO">
-    <property role="3GE5qa" value="then" />
-    <property role="TrG5h" value="reduce_Field_PropertyGetter" />
-    <ref role="3gUMe" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
+    <property role="3GE5qa" value="then.field" />
+    <property role="TrG5h" value="reduce_ViewModelFieldAssertion_PropertyGetter" />
+    <ref role="3gUMe" to="53m0:2GcDibl8goZ" resolve="ViewModelFieldAssertion" />
     <node concept="3mGtxK" id="4mnk8hC7ddP" role="13RCb5">
       <node concept="6nSm2" id="4mnk8hC7ddQ" role="3mGtxP">
         <property role="PCHHn" value="6OepWIVA92I/package" />
-        <property role="TrG5h" value="reduce_CheckValue_PropertyGetter" />
+        <property role="TrG5h" value="reduce_Field_PropertyGetter" />
         <node concept="6lMYc" id="4mnk8hC7ddR" role="PCHHv">
           <property role="TrG5h" value="sut" />
           <node concept="3xHE8C" id="4mnk8hC7ddS" role="3xMlr6">
@@ -7758,12 +7804,18 @@
                           <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
                           <node concept="3$xsQk" id="4mnk8hC7deq" role="3$ytzL">
                             <node concept="3clFbS" id="4mnk8hC7der" role="2VODD2">
-                              <node concept="3clFbF" id="4mnk8hC7des" role="3cqZAp">
-                                <node concept="2YIFZM" id="4mnk8hC7det" role="3clFbG">
-                                  <ref role="37wK5l" to="zcip:7ceEXPSz7WJ" resolve="getGetterForActualCheckValue" />
-                                  <ref role="1Pybhc" to="zcip:7ceEXPSyDOa" resolve="TestScenarioNodeResolveHelper" />
-                                  <node concept="30H73N" id="4mnk8hC7deu" role="37wK5m" />
-                                  <node concept="1iwH7S" id="4mnk8hC7dev" role="37wK5m" />
+                              <node concept="3clFbF" id="4ncpC4iJVNJ" role="3cqZAp">
+                                <node concept="2OqwBi" id="7ceEXPSz6v4" role="3clFbG">
+                                  <node concept="1iwH7S" id="4ncpC4iJVYG" role="2Oq$k0" />
+                                  <node concept="1iwH70" id="7ceEXPSz6_3" role="2OqNvi">
+                                    <ref role="1iwH77" to="qhqb:4ncpC4iHZ7Q" resolve="FieldStructContent_Getter_OperationDefinition" />
+                                    <node concept="2OqwBi" id="4ncpC4iPUeS" role="1iwH7V">
+                                      <node concept="30H73N" id="4ncpC4iJWl6" role="2Oq$k0" />
+                                      <node concept="3TrEf2" id="4ncpC4iPUA6" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="53m0:2GcDibl8gDz" resolve="field" />
+                                      </node>
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
                             </node>
@@ -7817,12 +7869,18 @@
                                 <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
                                 <node concept="3$xsQk" id="4mnk8hC7deS" role="3$ytzL">
                                   <node concept="3clFbS" id="4mnk8hC7deT" role="2VODD2">
-                                    <node concept="3clFbF" id="4mnk8hC7deU" role="3cqZAp">
-                                      <node concept="2YIFZM" id="4mnk8hC7deV" role="3clFbG">
-                                        <ref role="37wK5l" to="zcip:7ceEXPSz7WJ" resolve="getGetterForActualCheckValue" />
-                                        <ref role="1Pybhc" to="zcip:7ceEXPSyDOa" resolve="TestScenarioNodeResolveHelper" />
-                                        <node concept="30H73N" id="4mnk8hC7deW" role="37wK5m" />
-                                        <node concept="1iwH7S" id="4mnk8hC7deX" role="37wK5m" />
+                                    <node concept="3clFbF" id="4ncpC4iJWsR" role="3cqZAp">
+                                      <node concept="2OqwBi" id="4ncpC4iJWsT" role="3clFbG">
+                                        <node concept="1iwH7S" id="4ncpC4iJWsU" role="2Oq$k0" />
+                                        <node concept="1iwH70" id="4ncpC4iJWsV" role="2OqNvi">
+                                          <ref role="1iwH77" to="qhqb:4ncpC4iHZ7Q" resolve="FieldStructContent_Getter_OperationDefinition" />
+                                          <node concept="2OqwBi" id="4ncpC4iPUE1" role="1iwH7V">
+                                            <node concept="30H73N" id="4ncpC4iJWsW" role="2Oq$k0" />
+                                            <node concept="3TrEf2" id="4ncpC4iPUWt" role="2OqNvi">
+                                              <ref role="3Tt5mk" to="53m0:2GcDibl8gDz" resolve="field" />
+                                            </node>
+                                          </node>
+                                        </node>
                                       </node>
                                     </node>
                                   </node>

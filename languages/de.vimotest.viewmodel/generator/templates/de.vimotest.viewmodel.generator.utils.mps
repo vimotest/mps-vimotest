@@ -11,6 +11,8 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
+    <import index="45v0" ref="r:ba746408-9865-4b76-b4e7-cbd40a893006(de.vimotest.types.behavior)" implicit="true" />
     <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
     <import index="bqjt" ref="r:ec1f09af-a5e9-4755-932d-7ccae7bdd219(alfi.behavior)" implicit="true" />
   </imports>
@@ -922,6 +924,43 @@
         </node>
       </node>
     </node>
+    <node concept="2YIFZL" id="4ncpC4iImUN" role="jymVt">
+      <property role="TrG5h" value="getAttributeNameForField" />
+      <node concept="37vLTG" id="4ncpC4iInnS" role="3clF46">
+        <property role="TrG5h" value="field" />
+        <node concept="3Tqbb2" id="4ncpC4iInnT" role="1tU5fm">
+          <ref role="ehGHo" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="4ncpC4iImUQ" role="3clF47">
+        <node concept="3clFbF" id="4ncpC4iIoia" role="3cqZAp">
+          <node concept="1rXfSq" id="4ncpC4iIoib" role="3clFbG">
+            <ref role="37wK5l" node="3MA_Belmy$2" resolve="getAttributeName" />
+            <node concept="Xl_RD" id="4ncpC4iIpQN" role="37wK5m">
+              <property role="Xl_RC" value="" />
+            </node>
+            <node concept="2OqwBi" id="4ncpC4iIqDo" role="37wK5m">
+              <node concept="37vLTw" id="4ncpC4iIqo2" role="2Oq$k0">
+                <ref role="3cqZAo" node="4ncpC4iInnS" resolve="field" />
+              </node>
+              <node concept="3TrcHB" id="4ncpC4iIt3u" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="4ncpC4iIoig" role="37wK5m">
+              <node concept="37vLTw" id="4ncpC4iIoih" role="2Oq$k0">
+                <ref role="3cqZAo" node="4ncpC4iInnS" resolve="field" />
+              </node>
+              <node concept="2qgKlT" id="4ncpC4iIoii" role="2OqNvi">
+                <ref role="37wK5l" to="45v0:4ncpC4iITQ3" resolve="isBooleanField" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4ncpC4iImcF" role="1B3o_S" />
+      <node concept="17QB3L" id="4ncpC4iIm$h" role="3clF45" />
+    </node>
     <node concept="2YIFZL" id="3MA_Belmy$2" role="jymVt">
       <property role="TrG5h" value="getAttributeName" />
       <node concept="3clFbS" id="3MA_Belmy$3" role="3clF47">
@@ -1280,6 +1319,33 @@
         <property role="TrG5h" value="feature" />
         <node concept="3Tqbb2" id="5veytyjQl5z" role="1tU5fm">
           <ref role="ehGHo" to="at53:3ZV2RzmQBQf" resolve="CustomFeature" />
+        </node>
+      </node>
+    </node>
+    <node concept="2YIFZL" id="4ncpC4iIblU" role="jymVt">
+      <property role="TrG5h" value="getGetterOperationNameForField" />
+      <node concept="3clFbS" id="4ncpC4iIblX" role="3clF47">
+        <node concept="3clFbF" id="4ncpC4iIkC7" role="3cqZAp">
+          <node concept="1rXfSq" id="4ncpC4iIkC8" role="3clFbG">
+            <ref role="37wK5l" node="3em85dSoFhX" resolve="getGetterName" />
+            <node concept="37vLTw" id="4ncpC4iIkC9" role="37wK5m">
+              <ref role="3cqZAo" node="4ncpC4iIjf3" resolve="field" />
+            </node>
+            <node concept="1rXfSq" id="4ncpC4iIkCa" role="37wK5m">
+              <ref role="37wK5l" node="4ncpC4iImUN" resolve="getAttributeNameForField" />
+              <node concept="37vLTw" id="4ncpC4iIkCb" role="37wK5m">
+                <ref role="3cqZAo" node="4ncpC4iIjf3" resolve="field" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4ncpC4iI9Nu" role="1B3o_S" />
+      <node concept="17QB3L" id="4ncpC4iIb6z" role="3clF45" />
+      <node concept="37vLTG" id="4ncpC4iIjf3" role="3clF46">
+        <property role="TrG5h" value="field" />
+        <node concept="3Tqbb2" id="4ncpC4iIjf2" role="1tU5fm">
+          <ref role="ehGHo" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
         </node>
       </node>
     </node>

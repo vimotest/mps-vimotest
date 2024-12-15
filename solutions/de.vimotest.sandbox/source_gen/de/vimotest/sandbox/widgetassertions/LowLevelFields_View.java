@@ -6,8 +6,20 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class LowLevelFields_View {
-  public Boolean MyBool;
+  public Boolean isMyBool;
+  public Boolean getIsMyBool() {
+    return this.isMyBool;
+  }
   public Integer MyInt;
+  public Integer getMyInt() {
+    return this.MyInt;
+  }
   public String MyString;
+  public String getMyString() {
+    return this.MyString;
+  }
   public List<String> MyStrings = new LinkedList<>();
+  public List<String> getMyStrings() {
+    return this.MyStrings;
+  }
 }

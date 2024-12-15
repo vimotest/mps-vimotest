@@ -10,13 +10,22 @@ public class ParameterObjectCommand_View {
   }
   public static class LoadViewParams {
     public String Value1;
-    public Boolean Value2;
+    public String getValue1() {
+      return this.Value1;
+    }
+    public Boolean isValue2;
+    public Boolean getIsValue2() {
+      return this.isValue2;
+    }
     public Integer Value3;
+    public Integer getValue3() {
+      return this.Value3;
+    }
     public LoadViewParams() {
     }
-    public LoadViewParams(String Value1, Boolean Value2, Integer Value3) {
+    public LoadViewParams(String Value1, Boolean isValue2, Integer Value3) {
       this.Value1 = Value1;
-      this.Value2 = Value2;
+      this.isValue2 = isValue2;
       this.Value3 = Value3;
     }
   }

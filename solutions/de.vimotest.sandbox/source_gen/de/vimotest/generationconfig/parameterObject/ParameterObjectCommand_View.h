@@ -10,8 +10,11 @@ class ParameterObjectCommand_View
   struct LoadViewParams
   {
     std::string Value1;
-    bool Value2;
+    virtual std::string getValue1() ;
+    bool isValue2;
+    virtual bool getIsValue2() ;
     int Value3;
+    virtual int getValue3() ;
   };
   virtual void loadView(LoadViewParams parameters) ;
   struct CheckParams

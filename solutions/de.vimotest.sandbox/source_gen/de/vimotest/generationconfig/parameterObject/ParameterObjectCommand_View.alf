@@ -14,9 +14,21 @@ class ParameterObjectCommand_View {
     
     public Value1 : String  ;
     
-    public Value2 : Boolean  ;
+    public getValue1 (  ) : String  {
+    return this.Value1;
+ }
+    
+    public isValue2 : Boolean  ;
+    
+    public getIsValue2 (  ) : Boolean  {
+    return this.isValue2;
+ }
     
     public Value3 : Integer  ;
+    
+    public getValue3 (  ) : Integer  {
+    return this.Value3;
+ }
   }
   
   public loadView (   in parameters : LoadViewParams  ) {     }

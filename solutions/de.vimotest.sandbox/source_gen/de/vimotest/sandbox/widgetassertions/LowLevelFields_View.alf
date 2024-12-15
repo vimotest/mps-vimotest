@@ -4,11 +4,27 @@ namespace widgetassertions ;
 
 class LowLevelFields_View {
   
-  public MyBool : Boolean  ;
+  public isMyBool : Boolean  ;
+  
+  public getIsMyBool (  ) : Boolean  {
+  return this.isMyBool;
+ }
   
   public MyInt : Integer  ;
   
+  public getMyInt (  ) : Integer  {
+  return this.MyInt;
+ }
+  
   public MyString : String  ;
   
+  public getMyString (  ) : String  {
+  return this.MyString;
+ }
+  
   public MyStrings : String [ * ]  ;
+  
+  public getMyStrings (  ) : String [ * ]  {
+  return this.MyStrings;
+ }
 }

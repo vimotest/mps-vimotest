@@ -7,6 +7,7 @@ import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewContextProvider;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewContextProviderImpl;
+import org.junit.Assert;
 
 public class LowLevelFields_ViewTests_Test {
   private LowLevelFields_View sut;
@@ -36,10 +37,13 @@ public class LowLevelFields_ViewTests_Test {
 
 
 
-  public void then_MyBool_is_true() {<!TextGen not found for 'de.vimotest.viewmodel.testing.structure.ViewModelFieldAssertion'!>
+  public void then_MyBool_is_true() {
+    Assert.assertTrue(this.sut.getIsMyBool());
   }
-  public void then_MyInt_is_42() {<!TextGen not found for 'de.vimotest.viewmodel.testing.structure.ViewModelFieldAssertion'!>
+  public void then_MyInt_is_42() {
+    Assert.assertEquals(Integer.valueOf(this.sut.getMyInt()), this.sut.getMyInt());
   }
-  public void then_MyString_is_text_() {<!TextGen not found for 'de.vimotest.viewmodel.testing.structure.ViewModelFieldAssertion'!>
+  public void then_MyString_is_text_() {
+    Assert.assertEquals("text", this.sut.getMyString());
   }
 }

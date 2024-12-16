@@ -43,7 +43,7 @@ class LowLevelFields_ViewTests {
 
   
   public then_MyBool_is_true (  ) {
-  AssertTrue ( this.sut.getIsMyBool (  ) );
+  AssertTrue ( this.sut.getMyBool (  ) );
  }
   
   public then_MyInt_is_42 (  ) {

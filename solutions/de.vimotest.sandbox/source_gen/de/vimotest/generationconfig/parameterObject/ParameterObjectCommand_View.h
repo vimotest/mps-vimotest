@@ -11,8 +11,8 @@ class ParameterObjectCommand_View
   {
     std::string Value1;
     virtual std::string getValue1() ;
-    bool isValue2;
-    virtual bool getIsValue2() ;
+    bool Value2;
+    virtual bool getValue2() ;
     int Value3;
     virtual int getValue3() ;
   };

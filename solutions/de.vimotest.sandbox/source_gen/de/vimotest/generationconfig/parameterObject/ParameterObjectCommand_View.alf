@@ -18,10 +18,10 @@ class ParameterObjectCommand_View {
     return this.Value1;
  }
     
-    public isValue2 : Boolean  ;
+    public Value2 : Boolean  ;
     
-    public getIsValue2 (  ) : Boolean  {
-    return this.isValue2;
+    public getValue2 (  ) : Boolean  {
+    return this.Value2;
  }
     
     public Value3 : Integer  ;

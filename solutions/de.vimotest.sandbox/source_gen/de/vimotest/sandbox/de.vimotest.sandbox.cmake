@@ -11,12 +11,14 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewElementsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewMyFlagsRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewCustomListRowFieldRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewMyElementsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewMyStringRowHandlesRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyTableViewElementsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewMyComboBoxesRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/bindings/ViMoTestFileNameBindingMyElementsRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewCustomTableRowFieldRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewMyTreeViewElementsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewMyStringRowHandlesRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewMyParentIndexRowHandlesRow.cpp
@@ -25,6 +27,7 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewMyStandardControlsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/bindings/MyCustomRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewCustomTreeRowFieldRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_View.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_View.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Images_View.cpp
@@ -109,12 +112,14 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewElementsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewMyFlagsRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewCustomListRowFieldRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewMyElementsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewMyStringRowHandlesRow.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyTableViewElementsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewMyComboBoxesRow.h
   ${CMAKE_CURRENT_LIST_DIR}/bindings/ViMoTestFileNameBindingMyElementsRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewCustomTableRowFieldRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewMyTreeViewElementsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewMyStringRowHandlesRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewMyParentIndexRowHandlesRow.h
@@ -123,6 +128,7 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewMyStandardControlsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/bindings/MyCustomRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewCustomTreeRowFieldRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_View.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_View.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Images_View.h

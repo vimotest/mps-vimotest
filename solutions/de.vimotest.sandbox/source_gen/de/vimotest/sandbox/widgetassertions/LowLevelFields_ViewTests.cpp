@@ -46,7 +46,7 @@ namespace widgetassertions
   }
   void LowLevelFields_ViewTests::then_MyBool_is_true( ) 
   {
-    EXPECT_TRUE(this->sut->getIsMyBool());
+    EXPECT_TRUE(this->sut->getMyBool());
   }
   void LowLevelFields_ViewTests::then_MyInt_is_42( ) 
   {

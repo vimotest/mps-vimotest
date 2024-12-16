@@ -743,6 +743,16 @@
     <property role="EcuMT" value="3467481306584357561" />
     <property role="3GE5qa" value="widgets.structures.util" />
     <property role="TrG5h" value="IRowBasedViewWidget" />
+    <node concept="1TJgyj" id="5C8UTa3RDG2" role="1TKVEi">
+      <property role="IQ2ns" value="6487694277737356034" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="additionalFields" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
+      <node concept="t5JxF" id="5C8UTa3RDG3" role="lGtFl">
+        <property role="t5JxN" value="Additional low-level fields for a row" />
+      </node>
+    </node>
     <node concept="PrWs8" id="2w4bAIFM3CM" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

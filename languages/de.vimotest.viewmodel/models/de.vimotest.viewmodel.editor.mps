@@ -22,6 +22,7 @@
     <import index="at53" ref="r:9e3a5843-688b-4c6d-b3dd-9f321700c21b(de.vimotest.viewmodel.structure)" />
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" />
     <import index="2u9v" ref="r:ad87c166-8161-4e40-b79b-3d7ba4070d9e(jetbrains.mps.lang.text.editor)" />
+    <import index="hdif" ref="r:358d5e99-ca53-4b21-ba6f-a58c1c8e0993(de.vimotest.mpswidgets.behavior)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="dgt9" ref="r:a46eceb8-d68d-4f8d-a755-6da4c2f592cc(de.vimotest.types.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -369,6 +370,9 @@
         <property id="1340057216891283520" name="falseText" index="1563UK" />
         <property id="1340057216891283518" name="trueText" index="1563Ve" />
       </concept>
+    </language>
+    <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
+      <concept id="767145758118872833" name="jetbrains.mps.lang.actions.structure.NF_LinkList_AddNewChildOperation" flags="nn" index="2DeJg1" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="4705942098322609812" name="jetbrains.mps.lang.smodel.structure.EnumMember_IsOperation" flags="ng" index="21noJN">
@@ -2130,6 +2134,12 @@
             </node>
           </node>
         </node>
+        <node concept="PMmxH" id="5C8UTa3U4W7" role="3EZMnx">
+          <ref role="PMmxG" node="5C8UTa3RE9K" resolve="IRowBasedViewWidget_additionalFields_EC" />
+          <node concept="pVoyu" id="5C8UTa3U4W9" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
         <node concept="l2Vlx" id="2S2pY38Twhs" role="2iSdaV" />
       </node>
       <node concept="3F1sOY" id="7WgsBLYvZT0" role="3EZMnx">
@@ -2187,6 +2197,12 @@
             </node>
           </node>
           <node concept="pj6Ft" id="7uPLQmTQNS" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="PMmxH" id="5C8UTa3U4Wb" role="3EZMnx">
+          <ref role="PMmxG" node="5C8UTa3RE9K" resolve="IRowBasedViewWidget_additionalFields_EC" />
+          <node concept="lj46D" id="5C8UTa3U4Wc" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
@@ -2336,6 +2352,12 @@
           </node>
         </node>
         <node concept="l2Vlx" id="4Ips5F1hH2U" role="2iSdaV" />
+        <node concept="PMmxH" id="5C8UTa3SjaW" role="3EZMnx">
+          <ref role="PMmxG" node="5C8UTa3RE9K" resolve="IRowBasedViewWidget_additionalFields_EC" />
+          <node concept="lj46D" id="5C8UTa3U4UQ" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
       </node>
       <node concept="3F1sOY" id="24MyZrrRA6i" role="3EZMnx">
         <ref role="1NtTu8" to="at53:24MyZrrRA69" resolve="selectedRowFeature" />
@@ -4836,6 +4858,126 @@
       <node concept="2iRkQZ" id="7NXUkdQtzhW" role="2iSdaV" />
       <node concept="PMmxH" id="7NXUkdQtzhR" role="3EZMnx">
         <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector_EC" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="5C8UTa3RE9K">
+    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="TrG5h" value="IRowBasedViewWidget_additionalFields_EC" />
+    <ref role="1XX52x" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
+    <node concept="1QoScp" id="5C8UTa3REa4" role="2wV5jI">
+      <property role="1QpmdY" value="true" />
+      <node concept="pkWqt" id="5C8UTa3REa5" role="3e4ffs">
+        <node concept="3clFbS" id="5C8UTa3REa6" role="2VODD2">
+          <node concept="3clFbF" id="5C8UTa3REoG" role="3cqZAp">
+            <node concept="2OqwBi" id="5C8UTa3RKBo" role="3clFbG">
+              <node concept="2OqwBi" id="5C8UTa3RENM" role="2Oq$k0">
+                <node concept="pncrf" id="5C8UTa3REoF" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="5C8UTa3RFp8" role="2OqNvi">
+                  <ref role="3TtcxE" to="at53:5C8UTa3RDG2" resolve="additionalFields" />
+                </node>
+              </node>
+              <node concept="3GX2aA" id="5C8UTa3ROTV" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="5C8UTa3RE9M" role="1QoS34">
+        <node concept="3F0ifn" id="5C8UTa3U4VO" role="3EZMnx">
+          <property role="3F0ifm" value="-----" />
+        </node>
+        <node concept="3F0ifn" id="5C8UTa3RE9Y" role="3EZMnx">
+          <property role="3F0ifm" value="additional primitive fields:" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+          <node concept="pVoyu" id="5C8UTa3U4VQ" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F2HdR" id="5C8UTa3RE9Q" role="3EZMnx">
+          <ref role="1NtTu8" to="at53:5C8UTa3RDG2" />
+          <node concept="pj6Ft" id="5C8UTa3RE9U" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="l2Vlx" id="5C8UTa3RE9V" role="2czzBx" />
+          <node concept="pVoyu" id="5C8UTa3REa2" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="5C8UTa3REa3" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="5C8UTa3RE9W" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="5C8UTa3REnD" role="1QoVPY">
+        <node concept="3F0ifn" id="5C8UTa3Sk2$" role="3EZMnx" />
+        <node concept="gc7cB" id="2L$_HjiPWdh" role="3EZMnx">
+          <node concept="3VJUX4" id="2L$_HjiPWdj" role="3YsKMw">
+            <node concept="3clFbS" id="2L$_HjiPWdl" role="2VODD2">
+              <node concept="3clFbF" id="2L$_HjiQHIT" role="3cqZAp">
+                <node concept="2ShNRf" id="2L$_HjiQHIP" role="3clFbG">
+                  <node concept="YeOm9" id="2L$_HjiR0MF" role="2ShVmc">
+                    <node concept="1Y3b0j" id="2L$_HjiR0MI" role="YeSDq">
+                      <property role="2bfB8j" value="true" />
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="AbstractCellProvider" />
+                      <ref role="1Y3XeK" to="exr9:~AbstractCellProvider" resolve="AbstractCellProvider" />
+                      <node concept="3Tm1VV" id="2L$_HjiR0MJ" role="1B3o_S" />
+                      <node concept="pncrf" id="2L$_HjiQZPY" role="37wK5m" />
+                      <node concept="3clFb_" id="2L$_HjiR0SC" role="jymVt">
+                        <property role="TrG5h" value="createEditorCell" />
+                        <node concept="3Tm1VV" id="2L$_HjiR0SD" role="1B3o_S" />
+                        <node concept="3uibUv" id="2L$_HjiR0SF" role="3clF45">
+                          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+                        </node>
+                        <node concept="37vLTG" id="2L$_HjiR0SG" role="3clF46">
+                          <property role="TrG5h" value="context" />
+                          <node concept="3uibUv" id="2L$_HjiR0SH" role="1tU5fm">
+                            <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+                          </node>
+                        </node>
+                        <node concept="3clFbS" id="2L$_HjiR0SJ" role="3clF47">
+                          <node concept="3clFbF" id="2L$_HjiQzz6" role="3cqZAp">
+                            <node concept="2YIFZM" id="2L$_HjiQzDp" role="3clFbG">
+                              <ref role="37wK5l" to="hdif:2L$_HjiPZp8" resolve="createButtonCellModel" />
+                              <ref role="1Pybhc" to="hdif:2L$_HjiPXY8" resolve="ButtonCellModelCreator" />
+                              <node concept="1Q80Hx" id="2L$_HjiQzEj" role="37wK5m" />
+                              <node concept="pncrf" id="2L$_HjiQzW5" role="37wK5m" />
+                              <node concept="Xl_RD" id="2L$_HjiQ$1A" role="37wK5m">
+                                <property role="Xl_RC" value="(+) add primitive field" />
+                              </node>
+                              <node concept="1bVj0M" id="2L$_HjiQ$dd" role="37wK5m">
+                                <node concept="3clFbS" id="2L$_HjiQ$di" role="1bW5cS">
+                                  <node concept="3clFbF" id="2L$_HjiQ$iw" role="3cqZAp">
+                                    <node concept="2OqwBi" id="5C8UTa3SetW" role="3clFbG">
+                                      <node concept="2OqwBi" id="2L$_HjiQ$Aj" role="2Oq$k0">
+                                        <node concept="pncrf" id="2L$_HjiQ$iv" role="2Oq$k0" />
+                                        <node concept="3Tsc0h" id="5C8UTa3S9Vy" role="2OqNvi">
+                                          <ref role="3TtcxE" to="at53:5C8UTa3RDG2" resolve="additionalFields" />
+                                        </node>
+                                      </node>
+                                      <node concept="2DeJg1" id="5C8UTa3Sidj" role="2OqNvi" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="2AHcQZ" id="2L$_HjiR0SK" role="2AJF6D">
+                          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="pVoyu" id="5C8UTa3Sk72" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="5C8UTa3REnK" role="2iSdaV" />
       </node>
     </node>
   </node>

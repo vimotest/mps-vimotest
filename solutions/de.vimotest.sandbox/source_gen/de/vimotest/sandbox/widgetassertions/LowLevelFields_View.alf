@@ -4,10 +4,10 @@ namespace widgetassertions ;
 
 class LowLevelFields_View {
   
-  public isMyBool : Boolean  ;
+  public MyBool : Boolean  ;
   
-  public getIsMyBool (  ) : Boolean  {
-  return this.isMyBool;
+  public getMyBool (  ) : Boolean  {
+  return this.MyBool;
  }
   
   public MyInt : Integer  ;
@@ -26,5 +26,23 @@ class LowLevelFields_View {
   
   public getMyStrings (  ) : String [ * ]  {
   return this.MyStrings;
+ }
+  
+  private CustomTableRowFieldTableRows : LowLevelFields_ViewCustomTableRowFieldRow [ * ]  ;
+  
+  public getCustomTableRowFieldTableRows (  ) : LowLevelFields_ViewCustomTableRowFieldRow [ * ]  {
+  return this.CustomTableRowFieldTableRows;
+ }
+  
+  private CustomListRowFieldListRows : LowLevelFields_ViewCustomListRowFieldRow [ * ]  ;
+  
+  public getCustomListRowFieldListRows (  ) : LowLevelFields_ViewCustomListRowFieldRow [ * ]  {
+  return this.CustomListRowFieldListRows;
+ }
+  
+  private CustomTreeRowFieldTreeRows : LowLevelFields_ViewCustomTreeRowFieldRow [ * ]  ;
+  
+  public getCustomTreeRowFieldTreeRows (  ) : LowLevelFields_ViewCustomTreeRowFieldRow [ * ]  {
+  return this.CustomTreeRowFieldTreeRows;
  }
 }

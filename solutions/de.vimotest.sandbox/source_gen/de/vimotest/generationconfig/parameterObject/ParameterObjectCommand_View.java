@@ -13,9 +13,9 @@ public class ParameterObjectCommand_View {
     public String getValue1() {
       return this.Value1;
     }
-    public Boolean isValue2;
-    public Boolean getIsValue2() {
-      return this.isValue2;
+    public Boolean Value2;
+    public Boolean getValue2() {
+      return this.Value2;
     }
     public Integer Value3;
     public Integer getValue3() {
@@ -23,9 +23,9 @@ public class ParameterObjectCommand_View {
     }
     public LoadViewParams() {
     }
-    public LoadViewParams(String Value1, Boolean isValue2, Integer Value3) {
+    public LoadViewParams(String Value1, Boolean Value2, Integer Value3) {
       this.Value1 = Value1;
-      this.isValue2 = isValue2;
+      this.Value2 = Value2;
       this.Value3 = Value3;
     }
   }

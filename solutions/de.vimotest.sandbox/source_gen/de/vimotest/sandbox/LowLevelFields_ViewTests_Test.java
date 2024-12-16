@@ -44,7 +44,7 @@ public class LowLevelFields_ViewTests_Test {
 
 
   public void then_MyBool_is_true() {
-    Assert.assertTrue(this.sut.getIsMyBool());
+    Assert.assertTrue(this.sut.getMyBool());
   }
   public void then_MyInt_is_42() {
     Assert.assertEquals(Integer.valueOf(this.sut.getMyInt()), this.sut.getMyInt());

@@ -382,6 +382,9 @@
       <concept id="5775867078593476371" name="de.vimotest.viewmodel.structure.TextColorFeature" flags="ng" index="31hZui">
         <property id="5775867078593476692" name="defaultColorCode" index="31hZzl" />
       </concept>
+      <concept id="3467481306584357561" name="de.vimotest.viewmodel.structure.IRowBasedViewWidget" flags="ngI" index="18mAPp">
+        <child id="6487694277737356034" name="additionalFields" index="3pPB2g" />
+      </concept>
       <concept id="2820520252859978186" name="de.vimotest.viewmodel.structure.ImageDefinitionRef" flags="ng" index="3eDL7N">
         <reference id="2820520252859978187" name="image" index="3eDL7M" />
       </concept>
@@ -4695,6 +4698,99 @@
         <property role="TrG5h" value="MyStrings" />
         <node concept="1WnWvM" id="2GcDibl8gnH" role="3xMlr6">
           <node concept="1nBS12" id="2GcDibl8gnV" role="1WnWvN" />
+        </node>
+      </node>
+      <node concept="3UVeDL" id="5C8UTa3RDEz" role="103ZUC">
+        <property role="TrG5h" value="CustomTableRowField" />
+        <node concept="2nep4R" id="5C8UTa3RDE$" role="2azj8S">
+          <node concept="V3ZfZ" id="5C8UTa3RDEH" role="2nerJI">
+            <property role="TrG5h" value="Header" />
+            <node concept="V3Zf6" id="5C8UTa3RDEQ" role="V3ZfK">
+              <node concept="o7Kjd" id="5C8UTa3RDEZ" role="o6p68" />
+            </node>
+            <node concept="C4FCh" id="5C8UTa3RDF8" role="V3ZfL" />
+            <node concept="C4FCg" id="5C8UTa3RDFh" role="V3ZfM" />
+            <node concept="1G_fEc" id="5C8UTa3RDFq" role="1G_fIJ">
+              <node concept="o7Kjd" id="5C8UTa3RDFz" role="1AQzBo" />
+            </node>
+            <node concept="31hZui" id="5C8UTa3RDFG" role="31m0es" />
+          </node>
+        </node>
+        <node concept="3KuuIt" id="5C8UTa3RDFQ" role="3UVeDY">
+          <node concept="3D8xT1" id="5C8UTa3RDFS" role="3D86r8">
+            <property role="34jNyx" value="1RiAxJSewmn/StringRowHandle" />
+          </node>
+          <node concept="3D8CoO" id="5C8UTa3RDFU" role="3D86r9" />
+        </node>
+        <node concept="1i$ol" id="5C8UTa3RDFW" role="3UVeDZ" />
+        <node concept="C4FCg" id="5C8UTa3RDFY" role="3UVeDW" />
+        <node concept="C4FCh" id="5C8UTa3RDG0" role="3UVeDX" />
+        <node concept="1nWCU9" id="5C8UTa3U3Gj" role="3pPB2g">
+          <property role="TrG5h" value="AdditionalBool" />
+          <node concept="1nBHEw" id="5C8UTa3U3Gq" role="3xMlr6" />
+        </node>
+      </node>
+      <node concept="1i$o6" id="5C8UTa3UTIK" role="103ZUC">
+        <property role="TrG5h" value="CustomListRowField" />
+        <node concept="2nep4R" id="5C8UTa3UTIL" role="2MLTWm">
+          <node concept="V3ZfZ" id="5C8UTa3UTIM" role="2nerJI">
+            <property role="TrG5h" value="Header" />
+            <node concept="V3Zf6" id="5C8UTa3UTIN" role="V3ZfK">
+              <node concept="o7Kjd" id="5C8UTa3UTIO" role="o6p68" />
+            </node>
+            <node concept="C4FCh" id="5C8UTa3UTIP" role="V3ZfL" />
+            <node concept="C4FCg" id="5C8UTa3UTIQ" role="V3ZfM" />
+            <node concept="1G_fEc" id="5C8UTa3UTIR" role="1G_fIJ">
+              <node concept="o7Kjd" id="5C8UTa3UTIS" role="1AQzBo" />
+            </node>
+            <node concept="31hZui" id="5C8UTa3UTIT" role="31m0es" />
+          </node>
+        </node>
+        <node concept="3KuuI3" id="5C8UTa3UTIV" role="1rSL7">
+          <node concept="3D8xT1" id="5C8UTa3UTIX" role="3D86r8">
+            <property role="34jNyx" value="1RiAxJSewmn/StringRowHandle" />
+          </node>
+          <node concept="3D8CoO" id="5C8UTa3UTIZ" role="3D86r9" />
+        </node>
+        <node concept="1i$ol" id="5C8UTa3UTJ1" role="1uGH_" />
+        <node concept="C4FCg" id="5C8UTa3UTJ3" role="1i$o7" />
+        <node concept="C4FCh" id="5C8UTa3UTJ5" role="1i$o0" />
+        <node concept="1nWCU9" id="5C8UTa3UTJ7" role="3pPB2g">
+          <property role="TrG5h" value="AdditionalStrings" />
+          <node concept="1WnWvM" id="5C8UTa3UTJe" role="3xMlr6">
+            <node concept="1nBS12" id="5C8UTa3UTJs" role="1WnWvN" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Vayhi" id="5C8UTa3UTLf" role="103ZUC">
+        <property role="TrG5h" value="CustomTreeRowField" />
+        <node concept="2nep4R" id="5C8UTa3UTLg" role="2nerJJ">
+          <node concept="V3ZfZ" id="5C8UTa3UTLp" role="2nerJI">
+            <property role="TrG5h" value="Header" />
+            <node concept="V3Zf6" id="5C8UTa3UTLy" role="V3ZfK">
+              <node concept="o7Kjd" id="5C8UTa3UTLF" role="o6p68" />
+            </node>
+            <node concept="C4FCh" id="5C8UTa3UTLO" role="V3ZfL" />
+            <node concept="C4FCg" id="5C8UTa3UTLX" role="V3ZfM" />
+            <node concept="1G_fEc" id="5C8UTa3UTM6" role="1G_fIJ">
+              <node concept="o7Kjd" id="5C8UTa3UTMf" role="1AQzBo" />
+            </node>
+            <node concept="31hZui" id="5C8UTa3UTMo" role="31m0es" />
+          </node>
+        </node>
+        <node concept="3KuuIs" id="5C8UTa3UTMO" role="3Vayhh">
+          <node concept="3D8gT_" id="5C8UTa3UTN8" role="3D86rn" />
+          <node concept="3D8xT1" id="5C8UTa3UTNs" role="3D86r8">
+            <property role="34jNyx" value="1RiAxJSewmn/StringRowHandle" />
+          </node>
+          <node concept="3D8CoO" id="5C8UTa3UTNK" role="3D86r9" />
+        </node>
+        <node concept="1i$ol" id="5C8UTa3UTO4" role="3Vayhg" />
+        <node concept="C4FCg" id="5C8UTa3UTOo" role="3Vayhv" />
+        <node concept="C4FCh" id="5C8UTa3UTOG" role="3Vayhu" />
+        <node concept="1nWCU9" id="5C8UTa3UTP0" role="3pPB2g">
+          <property role="TrG5h" value="AdditionalInt" />
+          <node concept="1nBWMp" id="5C8UTa3UTP7" role="3xMlr6" />
         </node>
       </node>
     </node>

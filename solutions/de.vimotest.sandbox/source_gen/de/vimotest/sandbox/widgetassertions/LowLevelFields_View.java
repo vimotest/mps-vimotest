@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class LowLevelFields_View {
-  public Boolean isMyBool;
-  public Boolean getIsMyBool() {
-    return this.isMyBool;
+  public Boolean MyBool;
+  public Boolean getMyBool() {
+    return this.MyBool;
   }
   public Integer MyInt;
   public Integer getMyInt() {
@@ -21,5 +21,17 @@ public class LowLevelFields_View {
   public List<String> MyStrings = new LinkedList<>();
   public List<String> getMyStrings() {
     return this.MyStrings;
+  }
+  private List<LowLevelFields_ViewCustomTableRowFieldRow> CustomTableRowFieldTableRows = new LinkedList<>();
+  public List<LowLevelFields_ViewCustomTableRowFieldRow> getCustomTableRowFieldTableRows() {
+    return this.CustomTableRowFieldTableRows;
+  }
+  private List<LowLevelFields_ViewCustomListRowFieldRow> CustomListRowFieldListRows = new LinkedList<>();
+  public List<LowLevelFields_ViewCustomListRowFieldRow> getCustomListRowFieldListRows() {
+    return this.CustomListRowFieldListRows;
+  }
+  private List<LowLevelFields_ViewCustomTreeRowFieldRow> CustomTreeRowFieldTreeRows = new LinkedList<>();
+  public List<LowLevelFields_ViewCustomTreeRowFieldRow> getCustomTreeRowFieldTreeRows() {
+    return this.CustomTreeRowFieldTreeRows;
   }
 }

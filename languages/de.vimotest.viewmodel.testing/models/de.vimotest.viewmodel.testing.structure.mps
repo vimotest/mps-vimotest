@@ -1330,6 +1330,9 @@
     <node concept="PrWs8" id="2GcDibl8gp0" role="PzmwI">
       <ref role="PrY4T" node="6fZwY6ifv52" resolve="ITestScenarioAssertion" />
     </node>
+    <node concept="PrWs8" id="5C8UTa3zhAS" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
     <node concept="1TJgyj" id="2GcDibl8gD$" role="1TKVEi">
       <property role="IQ2ns" value="3102035812374612580" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

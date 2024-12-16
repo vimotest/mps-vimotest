@@ -22,6 +22,11 @@ class LowLevelFields_ViewTests {
    this.then_MyString_is_text_ (  );
  }
   
+  public Primitive_List_Field_Asserts_given_when_then_MyStrings_is_new_String____A___B__ (  ) {
+  this.BuildSut (  );
+   this.then_MyStrings_is_new_String____A___B__ (  );
+ }
+  
   
   protected BuildSut (  ) {
   this.sut = this.contextProvider.BuildSut (  );
@@ -47,5 +52,11 @@ class LowLevelFields_ViewTests {
   
   public then_MyString_is_text_ (  ) {
   AssertEqual ( "text", this.sut.getMyString (  ) );
+ }
+  
+  public then_MyStrings_is_new_String____A___B__ (  ) {
+  let actualMyStrings: String [] = this.sut.getMyStrings (  );
+   AssertEqual ( "A", actualMyStrings[ 1 ] );
+   AssertEqual ( "B", actualMyStrings[ 2 ] );
  }
 }

@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewContextProviderImpl;
 import org.junit.Assert;
+import java.util.List;
 
 public class LowLevelFields_ViewTests_Test {
   private LowLevelFields_View sut;
@@ -18,6 +19,11 @@ public class LowLevelFields_ViewTests_Test {
     this.then_MyBool_is_true();
     this.then_MyInt_is_42();
     this.then_MyString_is_text_();
+  }
+  @Test
+  public void test_Primitive_List_Field_Asserts_given_when_then_MyStrings_is_new_String____A___B__() throws Exception {
+    this.BuildSut();
+    this.then_MyStrings_is_new_String____A___B__();
   }
   @BeforeEach
   public void setUp() {
@@ -45,5 +51,12 @@ public class LowLevelFields_ViewTests_Test {
   }
   public void then_MyString_is_text_() {
     Assert.assertEquals("text", this.sut.getMyString());
+  }
+  public void then_MyStrings_is_new_String____A___B__() {
+    List<String> actualMyStrings = this.sut.getMyStrings();
+    String helperVar_x6uphv_b0t0 = actualMyStrings.get(1 - 1);
+    Assert.assertEquals("A", helperVar_x6uphv_b0t0);
+    String helperVar_x6uphv_c0t0 = actualMyStrings.get(2 - 1);
+    Assert.assertEquals("B", helperVar_x6uphv_c0t0);
   }
 }

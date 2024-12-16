@@ -4,7 +4,9 @@
 #include "LowLevelFields_ViewContextProvider.h"
 #include "LowLevelFields_View.h"
 #include <string>
+#include <alf/library/collectionfunctions/CollectionFunctions.hpp>
 #include "LowLevelFields_ViewContextProviderImpl.h"
+#include <optional>
 
 namespace widgetassertions
 {
@@ -17,6 +19,7 @@ namespace widgetassertions
     virtual void then_MyBool_is_true() ;
     virtual void then_MyInt_is_42() ;
     virtual void then_MyString_is_text_() ;
+    virtual void then_MyStrings_is_new_String____A___B__() ;
     protected:
     void SetUp() override ;
   };
@@ -31,6 +34,11 @@ namespace widgetassertions
     this->then_MyBool_is_true();
     this->then_MyInt_is_42();
     this->then_MyString_is_text_();
+  }
+  TEST_F(LowLevelFields_ViewTests,  Primitive_List_Field_Asserts_given_when_then_MyStrings_is_new_String____A___B__) 
+  {
+    this->BuildSut();
+    this->then_MyStrings_is_new_String____A___B__();
   }
   void LowLevelFields_ViewTests::BuildSut( ) 
   {
@@ -47,6 +55,14 @@ namespace widgetassertions
   void LowLevelFields_ViewTests::then_MyString_is_text_( ) 
   {
     EXPECT_EQ(std::string("text"), this->sut->getMyString());
+  }
+  void LowLevelFields_ViewTests::then_MyStrings_is_new_String____A___B__( ) 
+  {
+    auto& actualMyStrings = this->sut->getMyStrings();
+    std::optional<std::string> helperVar_x6uphv_b0t0 = alf::library::primitivebehaviors::CollectionFunctions::at(actualMyStrings, 0);
+    EXPECT_EQ(std::string("A"), helperVar_x6uphv_b0t0);
+    std::optional<std::string> helperVar_x6uphv_c0t0 = alf::library::primitivebehaviors::CollectionFunctions::at(actualMyStrings, 1);
+    EXPECT_EQ(std::string("B"), helperVar_x6uphv_c0t0);
   }
 }
 

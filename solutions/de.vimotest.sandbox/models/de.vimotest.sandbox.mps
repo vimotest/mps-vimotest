@@ -4732,6 +4732,32 @@
         </node>
       </node>
     </node>
+    <node concept="3LKzX3" id="5C8UTa3z2y0" role="30n1Qb">
+      <property role="TrG5h" value="Primitive List Field Asserts" />
+      <node concept="1s$VFG" id="5C8UTa3z2y1" role="1s$QAY">
+        <node concept="DUd2R" id="5C8UTa3z2zP" role="1s$QAX">
+          <node concept="3Ybqct" id="5C8UTa3z2zL" role="DUiSb">
+            <ref role="3YbqX1" node="2GcDibl8gn_" resolve="MyStrings" />
+            <node concept="1Wmaf1" id="5C8UTa3z2zN" role="3YbqX6">
+              <property role="327w9R" value="true" />
+              <node concept="_vnHb" id="5C8UTa3z2$4" role="1Wmaf7">
+                <node concept="2RqM1Q" id="5C8UTa3z2_y" role="_vnH8">
+                  <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+                </node>
+              </node>
+              <node concept="1Wm7YT" id="5C8UTa3z2_1" role="1Wm7Yz">
+                <node concept="_iklQ" id="5C8UTa3z2_g" role="1Wm7YV">
+                  <property role="_iklR" value="A" />
+                </node>
+                <node concept="_iklQ" id="5C8UTa3z2A4" role="1Wm7YV">
+                  <property role="_iklR" value="B" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

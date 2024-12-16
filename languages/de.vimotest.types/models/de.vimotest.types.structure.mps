@@ -104,13 +104,10 @@
     <property role="EcuMT" value="7808764115843597086" />
     <property role="3GE5qa" value="struct.types" />
     <property role="TrG5h" value="FieldStructContent" />
-    <property role="34LRSv" value="field" />
+    <property role="34LRSv" value="primitive field" />
     <ref role="1TJDcQ" to="28lk:1KdBIfXLcw$" resolve="TypedElementDefinition" />
     <node concept="PrWs8" id="6LujpsVFgZL" role="PzmwI">
       <ref role="PrY4T" node="F907haLIRL" resolve="IStructContent" />
-    </node>
-    <node concept="PrWs8" id="6LujpsVK1gp" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="6LujpsVK9sR">

@@ -626,16 +626,13 @@
     <property role="TrG5h" value="ListCheckRow" />
     <property role="34LRSv" value="row check" />
     <property role="R4oN_" value="A wrapper around a cell widget check" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4cF8FMAV2U6" resolve="CheckRowBase" />
     <node concept="1TJgyj" id="5MibNhOn8Oc" role="1TKVEi">
       <property role="IQ2ns" value="6670445900426153228" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="cellCheck" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="XX1C5W18Ry" resolve="WidgetCellCheck" />
-    </node>
-    <node concept="PrWs8" id="6fEYrkZ4Lzp" role="PzmwI">
-      <ref role="PrY4T" to="at53:1RiAxJSewmp" resolve="IHasRowHandle" />
     </node>
   </node>
   <node concept="PlHQZ" id="K_fAvR3LDG">
@@ -690,7 +687,7 @@
     <property role="TrG5h" value="TreeCheckRow" />
     <property role="34LRSv" value="row check" />
     <property role="R4oN_" value="A wrapper around cell widget checks" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4cF8FMAV2U6" resolve="CheckRowBase" />
     <node concept="1TJgyi" id="3uwMqjmRx8F" role="1TKVEl">
       <property role="IQ2nx" value="4008425378176438827" />
       <property role="TrG5h" value="expectedDepth" />
@@ -705,9 +702,6 @@
     </node>
     <node concept="PrWs8" id="3uwMqjmRu2B" role="PzmwI">
       <ref role="PrY4T" to="at53:2zlSkwD9nfw" resolve="ITreeRow" />
-    </node>
-    <node concept="PrWs8" id="6fEYrkZaMbN" role="PzmwI">
-      <ref role="PrY4T" to="at53:1RiAxJSewmp" resolve="IHasRowHandle" />
     </node>
   </node>
   <node concept="1TIwiD" id="XX1C5W18Ry">
@@ -769,7 +763,7 @@
     <property role="TrG5h" value="TableCheckRow" />
     <property role="34LRSv" value="row check" />
     <property role="R4oN_" value="A wrapper around cell widget checks" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4cF8FMAV2U6" resolve="CheckRowBase" />
     <node concept="1TJgyj" id="4Ips5F11GXC" role="1TKVEi">
       <property role="IQ2ns" value="5447508759369142120" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -779,9 +773,6 @@
     </node>
     <node concept="PrWs8" id="4Ips5F11GXB" role="PzmwI">
       <ref role="PrY4T" to="at53:24MyZrrSND$" resolve="ITableRow" />
-    </node>
-    <node concept="PrWs8" id="6fEYrkZawsk" role="PzmwI">
-      <ref role="PrY4T" to="at53:1RiAxJSewmp" resolve="IHasRowHandle" />
     </node>
   </node>
   <node concept="1TIwiD" id="4Ips5F14cRI">
@@ -1339,6 +1330,23 @@
       <property role="20kJfa" value="expectedValue" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="28lk:2kuSLC0kNK2" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4cF8FMAV2U6">
+    <property role="EcuMT" value="4840000418189422214" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.base" />
+    <property role="TrG5h" value="CheckRowBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="4cF8FMAV354" role="1TKVEi">
+      <property role="IQ2ns" value="4840000418189422916" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20kJfa" value="additionalFieldAssertions" />
+      <ref role="20lvS9" node="2GcDibl8goZ" resolve="ViewModelFieldAssertion" />
+    </node>
+    <node concept="PrWs8" id="4cF8FMAV2U7" role="PzmwI">
+      <ref role="PrY4T" to="at53:1RiAxJSewmp" resolve="IHasRowHandle" />
     </node>
   </node>
 </model>

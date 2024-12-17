@@ -4,9 +4,11 @@
 #include "LowLevelFields_ViewContextProvider.h"
 #include "LowLevelFields_View.h"
 #include <string>
-#include <alf/library/collectionfunctions/CollectionFunctions.hpp>
+#include <vector>
+#include "LowLevelFields_ViewCustomListRowFieldRow.h"
+#include "LowLevelFields_ViewCustomTableRowFieldRow.h"
+#include "LowLevelFields_ViewCustomTreeRowFieldRow.h"
 #include "LowLevelFields_ViewContextProviderImpl.h"
-#include <optional>
 
 namespace widgetassertions
 {
@@ -20,6 +22,9 @@ namespace widgetassertions
     virtual void then_MyInt_is_42() ;
     virtual void then_MyString_is_text_() ;
     virtual void then_MyStrings_is_new_String____A___B__() ;
+    virtual void then_CustomListRowField_has_1_rows() ;
+    virtual void then_CustomTableRowField_has_1_rows() ;
+    virtual void then_CustomTreeRowField_has_1_rows() ;
     protected:
     void SetUp() override ;
   };
@@ -40,6 +45,13 @@ namespace widgetassertions
     this->BuildSut();
     this->then_MyStrings_is_new_String____A___B__();
   }
+  TEST_F(LowLevelFields_ViewTests,  Rowbased_Primitive_Fields_given_when_then_CustomListRowField_has_1_rows_and_CustomTableRowField_has_1_rows_and_CustomTreeRowField_has_1_rows) 
+  {
+    this->BuildSut();
+    this->then_CustomListRowField_has_1_rows();
+    this->then_CustomTableRowField_has_1_rows();
+    this->then_CustomTreeRowField_has_1_rows();
+  }
   void LowLevelFields_ViewTests::BuildSut( ) 
   {
     this->sut = this->contextProvider->BuildSut();
@@ -59,10 +71,43 @@ namespace widgetassertions
   void LowLevelFields_ViewTests::then_MyStrings_is_new_String____A___B__( ) 
   {
     auto& actualMyStrings = this->sut->getMyStrings();
-    std::optional<std::string> helperVar_x6uphv_b0t0 = alf::library::primitivebehaviors::CollectionFunctions::at(actualMyStrings, 0);
-    EXPECT_EQ(std::string("A"), helperVar_x6uphv_b0t0);
-    std::optional<std::string> helperVar_x6uphv_c0t0 = alf::library::primitivebehaviors::CollectionFunctions::at(actualMyStrings, 1);
-    EXPECT_EQ(std::string("B"), helperVar_x6uphv_c0t0);
+    EXPECT_EQ(std::string("A"), actualMyStrings.at(0));
+    EXPECT_EQ(std::string("B"), actualMyStrings.at(1));
+  }
+  void LowLevelFields_ViewTests::then_CustomListRowField_has_1_rows( ) 
+  {
+    auto& actualRows = this->sut->getCustomListRowFieldListRows();
+    EXPECT_EQ(1, actualRows.size());
+    // {
+    auto& row0 = actualRows.at(0);
+    EXPECT_EQ(std::string("0"), row0->getRowHandle());
+    EXPECT_EQ(std::string(""), row0->getHeaderLabelText());
+    auto& actualAdditionalStrings = row0->getAdditionalStrings();
+    EXPECT_EQ(std::string("A"), actualAdditionalStrings.at(0));
+    // }
+  }
+  void LowLevelFields_ViewTests::then_CustomTableRowField_has_1_rows( ) 
+  {
+    auto& actualRows = this->sut->getCustomTableRowFieldTableRows();
+    EXPECT_EQ(1, actualRows.size());
+    // {
+    auto& row0 = actualRows.at(0);
+    EXPECT_EQ(std::string("0"), row0->getRowHandle());
+    EXPECT_EQ(std::string(""), row0->getHeaderLabelText());
+    EXPECT_FALSE(row0->getAdditionalBool());
+    // }
+  }
+  void LowLevelFields_ViewTests::then_CustomTreeRowField_has_1_rows( ) 
+  {
+    auto& actualRows = this->sut->getCustomTreeRowFieldTreeRows();
+    EXPECT_EQ(1, actualRows.size());
+    // {
+    auto& row0 = actualRows.at(0);
+    EXPECT_EQ(std::string("9"), row0->getRowHandle());
+    EXPECT_EQ(0, row0->getRowDepth());
+    EXPECT_EQ(std::string(""), row0->getHeaderLabelText());
+    EXPECT_EQ(42, row0->getAdditionalInt());
+    // }
   }
 }
 

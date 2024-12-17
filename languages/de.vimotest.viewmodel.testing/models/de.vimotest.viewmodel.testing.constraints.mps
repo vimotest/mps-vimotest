@@ -143,9 +143,6 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
-        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
-      </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -188,9 +185,6 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
-      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
-        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -1167,25 +1161,18 @@
       <ref role="1N5Vy1" to="53m0:2GcDibl8gDz" />
       <node concept="3dgokm" id="2GcDibl8gJF" role="1N6uqs">
         <node concept="3clFbS" id="2GcDibl8gJG" role="2VODD2">
-          <node concept="3cpWs8" id="2GcDibl8o8m" role="3cqZAp">
-            <node concept="3cpWsn" id="2GcDibl8o8n" role="3cpWs9">
-              <property role="TrG5h" value="targetViewModel" />
-              <node concept="3Tqbb2" id="2GcDibl8o5O" role="1tU5fm">
-                <ref role="ehGHo" to="at53:F907haLJWg" resolve="ViewModel" />
-              </node>
-              <node concept="2OqwBi" id="2GcDibl8o8o" role="33vP2m">
-                <node concept="2OqwBi" id="2GcDibl8o8p" role="2Oq$k0">
-                  <node concept="2rP1CM" id="2GcDibl8o8q" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="2GcDibl8o8r" role="2OqNvi">
-                    <node concept="1xMEDy" id="2GcDibl8o8s" role="1xVPHs">
-                      <node concept="chp4Y" id="2GcDibl8o8t" role="ri$Ld">
-                        <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
-                      </node>
-                    </node>
-                  </node>
+          <node concept="3cpWs8" id="4cF8FMAYZsz" role="3cqZAp">
+            <node concept="3cpWsn" id="4cF8FMAYZs$" role="3cpWs9">
+              <property role="TrG5h" value="fieldsScope" />
+              <node concept="A3Dl8" id="4cF8FMAYZeD" role="1tU5fm">
+                <node concept="3Tqbb2" id="4cF8FMAYZeG" role="A3Ik2">
+                  <ref role="ehGHo" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
                 </node>
-                <node concept="3TrEf2" id="2GcDibl8o8u" role="2OqNvi">
-                  <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
+              </node>
+              <node concept="2OqwBi" id="4cF8FMB5pAK" role="33vP2m">
+                <node concept="3kakTB" id="4cF8FMB5ppZ" role="2Oq$k0" />
+                <node concept="2qgKlT" id="4cF8FMB5pS0" role="2OqNvi">
+                  <ref role="37wK5l" to="fwln:4cF8FMAYvYW" resolve="getFieldsScope" />
                 </node>
               </node>
             </node>
@@ -1194,25 +1181,8 @@
             <node concept="2YIFZM" id="2GcDibl8h5f" role="3clFbG">
               <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
               <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-              <node concept="2OqwBi" id="2GcDibl8kSc" role="37wK5m">
-                <node concept="2OqwBi" id="2GcDibl8j6Y" role="2Oq$k0">
-                  <node concept="2OqwBi" id="4mnk8hBWEhP" role="2Oq$k0">
-                    <node concept="37vLTw" id="2GcDibl8o8v" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2GcDibl8o8n" resolve="targetViewModel" />
-                    </node>
-                    <node concept="3TrEf2" id="4mnk8hBWEFH" role="2OqNvi">
-                      <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="viewModelData" />
-                    </node>
-                  </node>
-                  <node concept="3Tsc0h" id="4mnk8hBWRxd" role="2OqNvi">
-                    <ref role="3TtcxE" to="evry:F907haLJVs" resolve="contents" />
-                  </node>
-                </node>
-                <node concept="v3k3i" id="2GcDibl8o09" role="2OqNvi">
-                  <node concept="chp4Y" id="2GcDibl8o2L" role="v3oSu">
-                    <ref role="cht4Q" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
-                  </node>
-                </node>
+              <node concept="37vLTw" id="4cF8FMAYZMp" role="37wK5m">
+                <ref role="3cqZAo" node="4cF8FMAYZs$" resolve="fieldsScope" />
               </node>
             </node>
           </node>

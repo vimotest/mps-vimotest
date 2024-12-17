@@ -27,6 +27,13 @@ class LowLevelFields_ViewTests {
    this.then_MyStrings_is_new_String____A___B__ (  );
  }
   
+  public Rowbased_Primitive_Fields_given_when_then_CustomListRowField_has_1_rows_and_CustomTableRowField_has_1_rows_and_CustomTreeRowField_has_1_rows (  ) {
+  this.BuildSut (  );
+   this.then_CustomListRowField_has_1_rows (  );
+   this.then_CustomTableRowField_has_1_rows (  );
+   this.then_CustomTreeRowField_has_1_rows (  );
+ }
+  
   
   protected BuildSut (  ) {
   this.sut = this.contextProvider.BuildSut (  );
@@ -56,7 +63,42 @@ class LowLevelFields_ViewTests {
   
   public then_MyStrings_is_new_String____A___B__ (  ) {
   let actualMyStrings: String [] = this.sut.getMyStrings (  );
-   AssertEqual ( "A", actualMyStrings[ 1 ] );
-   AssertEqual ( "B", actualMyStrings[ 2 ] );
+   AssertEqual ( "A", actualMyStrings[ 1 ] ?? "" );
+   AssertEqual ( "B", actualMyStrings[ 2 ] ?? "" );
+ }
+  
+  public then_CustomListRowField_has_1_rows (  ) {
+  let actualRows: LowLevelFields_ViewCustomListRowFieldRow [] = this.sut.getCustomListRowFieldListRows (  );
+   AssertEqual ( 1, actualRows->size (  ) );
+   {
+  let row0: LowLevelFields_ViewCustomListRowFieldRow = actualRows[ 1 ];
+   AssertEqual ( "0", row0.getRowHandle (  ) );
+   AssertEqual ( "", row0.getHeaderLabelText (  ) );
+   let actualAdditionalStrings: String [] = row0.getAdditionalStrings (  );
+   AssertEqual ( "A", actualAdditionalStrings[ 1 ] ?? "" );
+ }
+ }
+  
+  public then_CustomTableRowField_has_1_rows (  ) {
+  let actualRows: LowLevelFields_ViewCustomTableRowFieldRow [] = this.sut.getCustomTableRowFieldTableRows (  );
+   AssertEqual ( 1, actualRows->size (  ) );
+   {
+  let row0: LowLevelFields_ViewCustomTableRowFieldRow = actualRows[ 1 ];
+   AssertEqual ( "0", row0.getRowHandle (  ) );
+   AssertEqual ( "", row0.getHeaderLabelText (  ) );
+   AssertFalse ( row0.getAdditionalBool (  ) );
+ }
+ }
+  
+  public then_CustomTreeRowField_has_1_rows (  ) {
+  let actualRows: LowLevelFields_ViewCustomTreeRowFieldRow [] = this.sut.getCustomTreeRowFieldTreeRows (  );
+   AssertEqual ( 1, actualRows->size (  ) );
+   {
+  let row0: LowLevelFields_ViewCustomTreeRowFieldRow = actualRows[ 1 ];
+   AssertEqual ( "9", row0.getRowHandle (  ) );
+   AssertEqual ( 0, row0.getRowDepth (  ) );
+   AssertEqual ( "", row0.getHeaderLabelText (  ) );
+   AssertEqual ( 42, row0.getAdditionalInt (  ) );
+ }
  }
 }

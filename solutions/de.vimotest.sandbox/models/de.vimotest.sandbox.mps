@@ -185,6 +185,9 @@
       <concept id="7922086861527424868" name="de.vimotest.viewmodel.testing.structure.DataTableRow" flags="ng" index="1wOntz">
         <child id="7922086861527425646" name="values" index="1wOkDD" />
       </concept>
+      <concept id="4840000418189422214" name="de.vimotest.viewmodel.testing.structure.CheckRowBase" flags="ng" index="3_LKKU">
+        <child id="4840000418189422916" name="additionalFieldAssertions" index="3_LLfS" />
+      </concept>
       <concept id="7922086861434398150" name="de.vimotest.viewmodel.testing.structure.ColumnCheckInfo" flags="ng" index="1EpGR1">
         <property id="7922086861434398930" name="ignoreChecksOnColumn" index="1EpG3l" />
         <reference id="7922086861434398929" name="columnDefinition" index="1EpG3m" />
@@ -248,6 +251,7 @@
       <concept id="7144803224892162748" name="alfi.structure.DecimalLiteralExpression" flags="ng" index="32T38h">
         <property id="7144803224892162749" name="valueText" index="32T38g" />
       </concept>
+      <concept id="2021446509810891979" name="alfi.structure.QualifiedTypeName" flags="ng" index="3xHE8C" />
       <concept id="2021446509811517476" name="alfi.structure.TypedElementDefinition" flags="ng" index="3xMlr7">
         <child id="2021446509811517477" name="typeName" index="3xMlr6" />
       </concept>
@@ -4847,6 +4851,107 @@
                 </node>
                 <node concept="_iklQ" id="5C8UTa3z2A4" role="1Wm7YV">
                   <property role="_iklR" value="B" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="4cF8FMAOUhG" role="30n1Qb">
+      <property role="TrG5h" value="Rowbased Primitive Fields" />
+      <node concept="1s$VFG" id="4cF8FMAOUhJ" role="1s$QAY">
+        <node concept="DUd2R" id="4cF8FMAOUhM" role="1s$QAX">
+          <node concept="30nzp_" id="4cF8FMAV2bv" role="DUiSb">
+            <ref role="30nzpS" node="5C8UTa3UTIK" resolve="CustomListRowField" />
+            <node concept="1i$re" id="4cF8FMAV2bw" role="30nDbQ">
+              <node concept="1i$qk" id="4cF8FMAV2bx" role="1i$rf">
+                <node concept="1EpGR1" id="4cF8FMAV2by" role="1EpBIj">
+                  <ref role="1EpG3m" node="5C8UTa3UTIL" />
+                </node>
+                <node concept="CNEhi" id="4cF8FMAV2bz" role="3o2WtG">
+                  <property role="3_VSTZ" value="0" />
+                  <node concept="1NuoHz" id="4cF8FMAV2b$" role="CNE8S">
+                    <ref role="3elmOO" node="5C8UTa3UTIM" resolve="Header" />
+                    <node concept="V3Zc6" id="4cF8FMAV2bA" role="1NuoHy">
+                      <node concept="V3Zdv" id="4cF8FMAV2bB" role="V3Zc7">
+                        <node concept="o7Kjd" id="4cF8FMAV2bC" role="oSbKM" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3Ybqct" id="4cF8FMB5mW9" role="3_LLfS">
+                    <ref role="3YbqX1" node="5C8UTa3UTJ7" resolve="AdditionalStrings" />
+                    <node concept="1Wmaf1" id="4cF8FMB5mWb" role="3YbqX6">
+                      <property role="327w9R" value="true" />
+                      <node concept="3xHE8C" id="4cF8FMB5mWr" role="1Wmaf7">
+                        <node concept="2RqM1Q" id="4cF8FMB5mWq" role="_vnH8">
+                          <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+                        </node>
+                      </node>
+                      <node concept="1Wm7YT" id="4cF8FMB5mXg" role="1Wm7Yz">
+                        <node concept="_iklQ" id="4cF8FMB5n0r" role="1Wm7YV">
+                          <property role="_iklR" value="A" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="4cF8FMB5n0Y" role="1s$QAX">
+          <node concept="30nzp_" id="4cF8FMB5n10" role="DUiSb">
+            <ref role="30nzpS" node="5C8UTa3RDEz" resolve="CustomTableRowField" />
+            <node concept="3UVeCy" id="4cF8FMB5n11" role="30nDbQ">
+              <node concept="2ayrQO" id="4cF8FMB5n12" role="3UVeCz">
+                <node concept="1EpGR1" id="4cF8FMB5n13" role="1EpG3j">
+                  <ref role="1EpG3m" node="5C8UTa3RDE$" />
+                </node>
+                <node concept="3UOqEq" id="4cF8FMB5n14" role="2ay43_">
+                  <property role="3_VSTZ" value="0" />
+                  <node concept="1NuoHz" id="4cF8FMB5n18" role="2aBVWM">
+                    <ref role="3elmOO" node="5C8UTa3RDEH" resolve="Header" />
+                    <node concept="V3Zc6" id="4cF8FMB5n15" role="1NuoHy">
+                      <node concept="V3Zdv" id="4cF8FMB5n16" role="V3Zc7">
+                        <node concept="o7Kjd" id="4cF8FMB5n17" role="oSbKM" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3Ybqct" id="4cF8FMB5n1a" role="3_LLfS">
+                    <ref role="3YbqX1" node="5C8UTa3U3Gj" resolve="AdditionalBool" />
+                    <node concept="_jtWu" id="4cF8FMB5n1c" role="3YbqX6" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="4cF8FMB5n1v" role="1s$QAX">
+          <node concept="30nzp_" id="4cF8FMB5n1x" role="DUiSb">
+            <ref role="30nzpS" node="5C8UTa3UTLf" resolve="CustomTreeRowField" />
+            <node concept="3Vayj_" id="4cF8FMB5n1y" role="30nDbQ">
+              <node concept="3VayiJ" id="4cF8FMB5n1z" role="3Vayj$">
+                <node concept="1EpGR1" id="4cF8FMB5n1$" role="1EpBIi">
+                  <ref role="1EpG3m" node="5C8UTa3UTLg" />
+                </node>
+                <node concept="1NvgdS" id="4cF8FMB5n1_" role="1NusDP">
+                  <property role="3xvHIf" value="0" />
+                  <property role="3_VSTZ" value="9" />
+                  <node concept="1NuoHz" id="4cF8FMB5n1D" role="1NvgdV">
+                    <ref role="3elmOO" node="5C8UTa3UTLp" resolve="Header" />
+                    <node concept="V3Zc6" id="4cF8FMB5n1A" role="1NuoHy">
+                      <node concept="V3Zdv" id="4cF8FMB5n1B" role="V3Zc7">
+                        <node concept="o7Kjd" id="4cF8FMB5n1C" role="oSbKM" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3Ybqct" id="4cF8FMB5n1F" role="3_LLfS">
+                    <ref role="3YbqX1" node="5C8UTa3UTP0" resolve="AdditionalInt" />
+                    <node concept="32T38h" id="4cF8FMB5n1H" role="3YbqX6">
+                      <property role="32T38g" value="42" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>

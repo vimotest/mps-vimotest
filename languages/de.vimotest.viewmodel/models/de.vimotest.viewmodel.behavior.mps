@@ -6482,6 +6482,32 @@
       </node>
       <node concept="3clFbS" id="1RiAxJSeINj" role="3clF47" />
     </node>
+    <node concept="13i0hz" id="4cF8FMB2q_S" role="13h7CS">
+      <property role="TrG5h" value="getRowBasedWidget" />
+      <node concept="3Tm1VV" id="4cF8FMB2q_T" role="1B3o_S" />
+      <node concept="3Tqbb2" id="4cF8FMB2u3U" role="3clF45">
+        <ref role="ehGHo" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
+      </node>
+      <node concept="3clFbS" id="4cF8FMB2q_V" role="3clF47">
+        <node concept="3clFbF" id="4cF8FMB2u4X" role="3cqZAp">
+          <node concept="1PxgMI" id="4cF8FMB2vd1" role="3clFbG">
+            <property role="1BlNFB" value="true" />
+            <node concept="chp4Y" id="4cF8FMB2vio" role="3oSUPX">
+              <ref role="cht4Q" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
+            </node>
+            <node concept="2OqwBi" id="4cF8FMB2uD5" role="1m5AlR">
+              <node concept="2OqwBi" id="4cF8FMB2ug4" role="2Oq$k0">
+                <node concept="13iPFW" id="4cF8FMB2u4W" role="2Oq$k0" />
+                <node concept="2qgKlT" id="4cF8FMB2unt" role="2OqNvi">
+                  <ref role="37wK5l" node="1RiAxJSeINg" resolve="getRowBasedFeature" />
+                </node>
+              </node>
+              <node concept="1mfA1w" id="4cF8FMB2uNO" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="1RiAxJShtRu" role="13h7CS">
       <property role="TrG5h" value="getRowHandleKindLabel" />
       <node concept="3Tm1VV" id="1RiAxJShtRv" role="1B3o_S" />

@@ -9,6 +9,9 @@ import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewContextProviderImpl;
 import org.junit.Assert;
 import java.util.List;
+import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewCustomListRowFieldRow;
+import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewCustomTableRowFieldRow;
+import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewCustomTreeRowFieldRow;
 
 public class LowLevelFields_ViewTests_Test {
   private LowLevelFields_View sut;
@@ -24,6 +27,13 @@ public class LowLevelFields_ViewTests_Test {
   public void test_Primitive_List_Field_Asserts_given_when_then_MyStrings_is_new_String____A___B__() throws Exception {
     this.BuildSut();
     this.then_MyStrings_is_new_String____A___B__();
+  }
+  @Test
+  public void test_Rowbased_Primitive_Fields_given_when_then_CustomListRowField_has_1_rows_and_CustomTableRowField_has_1_rows_and_CustomTreeRowField_has_1_rows() throws Exception {
+    this.BuildSut();
+    this.then_CustomListRowField_has_1_rows();
+    this.then_CustomTableRowField_has_1_rows();
+    this.then_CustomTreeRowField_has_1_rows();
   }
   @BeforeEach
   public void setUp() {
@@ -54,9 +64,39 @@ public class LowLevelFields_ViewTests_Test {
   }
   public void then_MyStrings_is_new_String____A___B__() {
     List<String> actualMyStrings = this.sut.getMyStrings();
-    String helperVar_x6uphv_b0t0 = actualMyStrings.get(1 - 1);
-    Assert.assertEquals("A", helperVar_x6uphv_b0t0);
-    String helperVar_x6uphv_c0t0 = actualMyStrings.get(2 - 1);
-    Assert.assertEquals("B", helperVar_x6uphv_c0t0);
+    Assert.assertEquals("A", actualMyStrings.get(1 - 1));
+    Assert.assertEquals("B", actualMyStrings.get(2 - 1));
+  }
+  public void then_CustomListRowField_has_1_rows() {
+    List<LowLevelFields_ViewCustomListRowFieldRow> actualRows = this.sut.getCustomListRowFieldListRows();
+    Assert.assertEquals(1, actualRows.size());
+    // {
+    LowLevelFields_ViewCustomListRowFieldRow row0 = actualRows.get(1 - 1);
+    Assert.assertEquals("0", row0.getRowHandle());
+    Assert.assertEquals("", row0.getHeaderLabelText());
+    List<String> actualAdditionalStrings = row0.getAdditionalStrings();
+    Assert.assertEquals("A", actualAdditionalStrings.get(1 - 1));
+    // }
+  }
+  public void then_CustomTableRowField_has_1_rows() {
+    List<LowLevelFields_ViewCustomTableRowFieldRow> actualRows = this.sut.getCustomTableRowFieldTableRows();
+    Assert.assertEquals(1, actualRows.size());
+    // {
+    LowLevelFields_ViewCustomTableRowFieldRow row0 = actualRows.get(1 - 1);
+    Assert.assertEquals("0", row0.getRowHandle());
+    Assert.assertEquals("", row0.getHeaderLabelText());
+    Assert.assertFalse(row0.getAdditionalBool());
+    // }
+  }
+  public void then_CustomTreeRowField_has_1_rows() {
+    List<LowLevelFields_ViewCustomTreeRowFieldRow> actualRows = this.sut.getCustomTreeRowFieldTreeRows();
+    Assert.assertEquals(1, actualRows.size());
+    // {
+    LowLevelFields_ViewCustomTreeRowFieldRow row0 = actualRows.get(1 - 1);
+    Assert.assertEquals("9", row0.getRowHandle());
+    Assert.assertEquals(Integer.valueOf(row0.getRowDepth()), row0.getRowDepth());
+    Assert.assertEquals("", row0.getHeaderLabelText());
+    Assert.assertEquals(Integer.valueOf(row0.getAdditionalInt()), row0.getAdditionalInt());
+    // }
   }
 }

@@ -2638,5 +2638,50 @@
     </node>
     <node concept="3Tm1VV" id="7NXUkdT9lK1" role="1B3o_S" />
   </node>
+  <node concept="312cEu" id="4pcNtzUbV2t">
+    <property role="TrG5h" value="NodeEqualityOptimizer" />
+    <node concept="2YIFZL" id="4pcNtzUbV47" role="jymVt">
+      <property role="TrG5h" value="findPreviousEqualNode" />
+      <node concept="3clFbS" id="4pcNtzUbV4a" role="3clF47">
+        <node concept="3SKdUt" id="4pcNtzUc2oA" role="3cqZAp">
+          <node concept="1PaTwC" id="4pcNtzUc2oB" role="1aUNEU">
+            <node concept="3oM_SD" id="4pcNtzUc2oC" role="1PaTwD">
+              <property role="3oM_SC" value="calculate" />
+            </node>
+            <node concept="3oM_SD" id="4pcNtzUc2p7" role="1PaTwD">
+              <property role="3oM_SC" value="hash" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4pcNtzUc2r$" role="3cqZAp">
+          <node concept="1PaTwC" id="4pcNtzUc2r_" role="1aUNEU">
+            <node concept="3oM_SD" id="4pcNtzUc2rA" role="1PaTwD">
+              <property role="3oM_SC" value="check" />
+            </node>
+            <node concept="3oM_SD" id="4pcNtzUc2se" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="4pcNtzUc2sg" role="1PaTwD">
+              <property role="3oM_SC" value="genContext" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4pcNtzUc2q0" role="3cqZAp">
+          <node concept="10Nm6u" id="4pcNtzUc2pY" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4pcNtzUbV3C" role="1B3o_S" />
+      <node concept="3Tqbb2" id="4pcNtzUbV3X" role="3clF45" />
+      <node concept="37vLTG" id="4pcNtzUc2sx" role="3clF46">
+        <property role="TrG5h" value="genContext" />
+        <node concept="1iwH7U" id="4pcNtzUc2td" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4pcNtzUc2nn" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="4pcNtzUc2nm" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="4pcNtzUbV2u" role="1B3o_S" />
+  </node>
 </model>
 

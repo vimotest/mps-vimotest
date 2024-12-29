@@ -31,7 +31,7 @@ public class LoginViewTests_Test {
     this.when_LoadView_1();
     this.when_fill_User_in_Username_1();
     this.when_clear_text_in_Password();
-    this.then_Username_shows_text_User__1();
+    this.then_Username_shows_text_User_();
     this.then_Password_shows_empty_text();
     this.then_Login_is_not_enabled();
   }
@@ -42,7 +42,7 @@ public class LoginViewTests_Test {
     this.when_LoadView_2();
     this.then_Username_shows_text_Ada_();
     this.then_Password_shows_text_____();
-    this.then_Login_is_enabled_1();
+    this.then_Login_is_enabled();
   }
   @Test
   public void test_Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadView_and_check_ShowPassword_then_Username_shows_text_Ada_and_Password_shows_text_Lovelace1_and_ShowPassword_is_checked_and_Login_is_enabled() throws Exception {
@@ -50,10 +50,10 @@ public class LoginViewTests_Test {
     this.BuildSut();
     this.when_LoadView_3();
     this.when_check_ShowPassword_1();
-    this.then_Username_shows_text_Ada__1();
+    this.then_Username_shows_text_Ada_();
     this.then_Password_shows_text_Lovelace1_();
     this.then_ShowPassword_is_checked();
-    this.then_Login_is_enabled_2();
+    this.then_Login_is_enabled();
   }
   @Test
   public void test_Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadView_and_fill_lovelace_in_Password_and_click_Login_then_Error_shows_text_Needs_uppercase_letters_() throws Exception {
@@ -135,9 +135,6 @@ public class LoginViewTests_Test {
   public void then_Login_is_enabled() {
     Assert.assertTrue(this.sut.getIsLoginButtonEnabled());
   }
-  public void then_Username_shows_text_User__1() {
-    Assert.assertEquals("User", this.sut.getUsernameTextBoxText());
-  }
   public void then_Password_shows_empty_text() {
     Assert.assertEquals("", this.sut.getPasswordTextBoxText());
   }
@@ -150,20 +147,11 @@ public class LoginViewTests_Test {
   public void then_Password_shows_text_____() {
     Assert.assertEquals("******", this.sut.getPasswordTextBoxText());
   }
-  public void then_Login_is_enabled_1() {
-    Assert.assertTrue(this.sut.getIsLoginButtonEnabled());
-  }
-  public void then_Username_shows_text_Ada__1() {
-    Assert.assertEquals("Ada", this.sut.getUsernameTextBoxText());
-  }
   public void then_Password_shows_text_Lovelace1_() {
     Assert.assertEquals("Lovelace1", this.sut.getPasswordTextBoxText());
   }
   public void then_ShowPassword_is_checked() {
     Assert.assertTrue(this.sut.getIsShowPasswordCheckBoxChecked());
-  }
-  public void then_Login_is_enabled_2() {
-    Assert.assertTrue(this.sut.getIsLoginButtonEnabled());
   }
   public void then_Error_shows_text_Needs_uppercase_letters_() {
     Assert.assertEquals("Needs uppercase letters", this.sut.getErrorLabelText());

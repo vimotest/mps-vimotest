@@ -26,13 +26,13 @@ class ListViews_ViewTest {
  }
   
   public List_Ignore_Column_given_empty_context_when_then_MyListOfLabel_has_4_rows (  ) {
-  this.given_empty_context_1 (  );
+  this.given_empty_context (  );
    this.BuildSut (  );
    this.then_MyListOfLabel_has_4_rows (  );
  }
   
   public List_Ignore_Cell_given_empty_context_when_then_MyListOfLabel_has_4_rows (  ) {
-  this.given_empty_context_2 (  );
+  this.given_empty_context (  );
    this.BuildSut (  );
    this.then_MyListOfLabel_has_4_rows_1 (  );
  }
@@ -47,10 +47,6 @@ class ListViews_ViewTest {
 
   
   public given_empty_context (  ) {     }
-  
-  public given_empty_context_1 (  ) {     }
-  
-  public given_empty_context_2 (  ) {     }
   
   // When Helper Definitions
 

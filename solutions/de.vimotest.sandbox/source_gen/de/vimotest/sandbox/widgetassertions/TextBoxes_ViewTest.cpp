@@ -16,7 +16,6 @@ namespace widgetassertions
     std::shared_ptr<TextBoxes_ViewContextProvider> contextProvider;
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
-    virtual void given_empty_context_1() ;
     virtual void then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible() ;
     virtual void then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_() ;
     protected:
@@ -35,7 +34,7 @@ namespace widgetassertions
   }
   TEST_F(TextBoxes_ViewTest,  My_MultiLine_Scenario_given_empty_context_when_then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_) 
   {
-    this->given_empty_context_1();
+    this->given_empty_context();
     this->BuildSut();
     this->then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_();
   }
@@ -44,10 +43,6 @@ namespace widgetassertions
     this->sut = this->contextProvider->BuildSut();
   }
   void TextBoxes_ViewTest::given_empty_context( ) 
-  {
-    
-  }
-  void TextBoxes_ViewTest::given_empty_context_1( ) 
   {
     
   }

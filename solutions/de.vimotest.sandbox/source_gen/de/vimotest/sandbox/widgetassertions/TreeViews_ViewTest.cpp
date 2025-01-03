@@ -20,7 +20,6 @@ namespace widgetassertions
     std::shared_ptr<TreeViews_ViewContextProvider> contextProvider;
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
-    virtual void given_empty_context_1() ;
     virtual void then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible() ;
     virtual void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() ;
     virtual void then_MyParentIndexRowHandles_has_4_rows() ;
@@ -45,7 +44,7 @@ namespace widgetassertions
   }
   TEST_F(TreeViews_ViewTest,  TreeView_Ignore_Column_given_empty_context_when_then_MyTreeViewElements_has_2_rows) 
   {
-    this->given_empty_context_1();
+    this->given_empty_context();
     this->BuildSut();
     this->then_MyTreeViewElements_has_2_rows();
   }
@@ -54,10 +53,6 @@ namespace widgetassertions
     this->sut = this->contextProvider->BuildSut();
   }
   void TreeViews_ViewTest::given_empty_context( ) 
-  {
-    
-  }
-  void TreeViews_ViewTest::given_empty_context_1( ) 
   {
     
   }

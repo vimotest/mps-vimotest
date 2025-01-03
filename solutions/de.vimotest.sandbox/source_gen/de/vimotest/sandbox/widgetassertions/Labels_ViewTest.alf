@@ -22,19 +22,19 @@ class Labels_ViewTest {
  }
   
   public Multi_Line_Label_given_empty_context_when_then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_ (  ) {
-  this.given_empty_context_1 (  );
+  this.given_empty_context (  );
    this.BuildSut (  );
    this.then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_ (  );
  }
   
   public ToolTip_Label_given_empty_context_when_then_WithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_ (  ) {
-  this.given_empty_context_2 (  );
+  this.given_empty_context_1 (  );
    this.BuildSut (  );
    this.then_WithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_ (  );
  }
   
   public MultiLine_ToolTip_Label_given_empty_context_when_then_WithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_ (  ) {
-  this.given_empty_context_3 (  );
+  this.given_empty_context_1 (  );
    this.BuildSut (  );
    this.then_WithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_ (  );
  }
@@ -56,10 +56,6 @@ class Labels_ViewTest {
   public given_empty_context (  ) {     }
   
   public given_empty_context_1 (  ) {     }
-  
-  public given_empty_context_2 (  ) {     }
-  
-  public given_empty_context_3 (  ) {     }
   
   // When Helper Definitions
 

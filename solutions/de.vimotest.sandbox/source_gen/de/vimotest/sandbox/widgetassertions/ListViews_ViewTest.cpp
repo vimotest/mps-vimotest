@@ -21,8 +21,6 @@ namespace widgetassertions
     std::shared_ptr<ListViews_ViewContextProvider> contextProvider;
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
-    virtual void given_empty_context_1() ;
-    virtual void given_empty_context_2() ;
     virtual void then_MyListOfLabel_has_4_rows_and_selected_row_index_3() ;
     virtual void then_MyListOfImages_has_2_rows() ;
     virtual void then_MyCheckboxes_has_3_rows() ;
@@ -50,13 +48,13 @@ namespace widgetassertions
   }
   TEST_F(ListViews_ViewTest,  List_Ignore_Column_given_empty_context_when_then_MyListOfLabel_has_4_rows) 
   {
-    this->given_empty_context_1();
+    this->given_empty_context();
     this->BuildSut();
     this->then_MyListOfLabel_has_4_rows();
   }
   TEST_F(ListViews_ViewTest,  List_Ignore_Cell_given_empty_context_when_then_MyListOfLabel_has_4_rows) 
   {
-    this->given_empty_context_2();
+    this->given_empty_context();
     this->BuildSut();
     this->then_MyListOfLabel_has_4_rows_1();
   }
@@ -65,14 +63,6 @@ namespace widgetassertions
     this->sut = this->contextProvider->BuildSut();
   }
   void ListViews_ViewTest::given_empty_context( ) 
-  {
-    
-  }
-  void ListViews_ViewTest::given_empty_context_1( ) 
-  {
-    
-  }
-  void ListViews_ViewTest::given_empty_context_2( ) 
   {
     
   }

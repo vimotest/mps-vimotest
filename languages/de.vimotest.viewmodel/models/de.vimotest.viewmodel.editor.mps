@@ -3963,6 +3963,23 @@
           <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
         </node>
       </node>
+      <node concept="2yq9I_" id="6j402mjmBMY" role="3EZMnx">
+        <ref role="225u1j" to="at53:6j402mjmBMW" resolve="generateCommandActionHooks" />
+        <node concept="1563Vb" id="6j402mjmBMZ" role="1563LE">
+          <property role="1563UK" value="[ ]" />
+          <property role="1563Ve" value="[x]" />
+        </node>
+        <node concept="pVoyu" id="6j402mjmBN0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6j402mjmBN1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="6j402mjmBN2" role="2fqkNU">
+          <property role="3F0ifm" value="generate pre/post processing command action hooks in CommandProvider" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        </node>
+      </node>
       <node concept="l2Vlx" id="5jkMFwuLz8t" role="2iSdaV" />
     </node>
   </node>

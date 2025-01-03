@@ -111,6 +111,9 @@
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
+      <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
+        <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
+      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
@@ -148,6 +151,14 @@
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
+        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
+        <child id="1883223317721008709" name="body" index="Jncv$" />
+        <child id="1883223317721008711" name="variable" index="JncvA" />
+        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
+      </concept>
+      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
+      <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
@@ -382,6 +393,113 @@
       </node>
       <node concept="3Tm1VV" id="5jkMFw_P2eY" role="1B3o_S" />
       <node concept="17QB3L" id="5jkMFw_P2or" role="3clF45" />
+    </node>
+    <node concept="2YIFZL" id="6j402mjwvJp" role="jymVt">
+      <property role="TrG5h" value="getOperationNameForViewModelCommandHook" />
+      <node concept="37vLTG" id="6j402mjXaVG" role="3clF46">
+        <property role="TrG5h" value="hookName" />
+        <node concept="17QB3L" id="6j402mjXbjH" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6j402mjwx3N" role="3clF46">
+        <property role="TrG5h" value="command" />
+        <node concept="3Tqbb2" id="6j402mjwx3O" role="1tU5fm">
+          <ref role="ehGHo" to="at53:F907haLJXw" resolve="IViewModelCommand" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6j402mjwvJs" role="3clF47">
+        <node concept="3cpWs8" id="6j402mjX92k" role="3cqZAp">
+          <node concept="3cpWsn" id="6j402mjX92l" role="3cpWs9">
+            <property role="TrG5h" value="baseName" />
+            <node concept="17QB3L" id="6j402mjX8Fm" role="1tU5fm" />
+            <node concept="1rXfSq" id="6j402mjX92m" role="33vP2m">
+              <ref role="37wK5l" node="6j402mjX6vP" resolve="getBaseOperationNameForViewModelCommandHook" />
+              <node concept="37vLTw" id="6j402mjX92n" role="37wK5m">
+                <ref role="3cqZAo" node="6j402mjwx3N" resolve="command" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6j402mjXcu5" role="3cqZAp">
+          <node concept="3cpWs3" id="6j402mjXgS_" role="3clFbG">
+            <node concept="37vLTw" id="6j402mjXhiz" role="3uHU7w">
+              <ref role="3cqZAo" node="6j402mjX92l" resolve="baseName" />
+            </node>
+            <node concept="3cpWs3" id="6j402mjXfmC" role="3uHU7B">
+              <node concept="37vLTw" id="6j402mjXcu3" role="3uHU7B">
+                <ref role="3cqZAo" node="6j402mjXaVG" resolve="hookName" />
+              </node>
+              <node concept="Xl_RD" id="6j402mjXfnV" role="3uHU7w">
+                <property role="Xl_RC" value="_" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6j402mjwuIC" role="1B3o_S" />
+      <node concept="17QB3L" id="6j402mjwvsJ" role="3clF45" />
+    </node>
+    <node concept="2YIFZL" id="6j402mjX6vP" role="jymVt">
+      <property role="TrG5h" value="getBaseOperationNameForViewModelCommandHook" />
+      <node concept="37vLTG" id="6j402mjX6vQ" role="3clF46">
+        <property role="TrG5h" value="command" />
+        <node concept="3Tqbb2" id="6j402mjX6vR" role="1tU5fm">
+          <ref role="ehGHo" to="at53:F907haLJXw" resolve="IViewModelCommand" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6j402mjX6vS" role="3clF47">
+        <node concept="Jncv_" id="6j402mjX6vT" role="3cqZAp">
+          <ref role="JncvD" to="at53:6kjlgUuu6dE" resolve="ViewWidgetCommand" />
+          <node concept="37vLTw" id="6j402mjX6vU" role="JncvB">
+            <ref role="3cqZAo" node="6j402mjX6vQ" resolve="command" />
+          </node>
+          <node concept="3clFbS" id="6j402mjX6vV" role="Jncv$">
+            <node concept="3cpWs6" id="6j402mjX6vW" role="3cqZAp">
+              <node concept="1rXfSq" id="6j402mjX6vX" role="3cqZAk">
+                <ref role="37wK5l" node="2evlxT94RVh" resolve="getOperationName" />
+                <node concept="Jnkvi" id="6j402mjX6vY" role="37wK5m">
+                  <ref role="1M0zk5" node="6j402mjX6vZ" resolve="viewWidgetCommand" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="6j402mjX6vZ" role="JncvA">
+            <property role="TrG5h" value="viewWidgetCommand" />
+            <node concept="2jxLKc" id="6j402mjX6w0" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="Jncv_" id="6j402mjX6w1" role="3cqZAp">
+          <ref role="JncvD" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+          <node concept="37vLTw" id="6j402mjX6w2" role="JncvB">
+            <ref role="3cqZAo" node="6j402mjX6vQ" resolve="command" />
+          </node>
+          <node concept="3clFbS" id="6j402mjX6w3" role="Jncv$">
+            <node concept="3cpWs6" id="6j402mjX6w4" role="3cqZAp">
+              <node concept="1rXfSq" id="6j402mjX6w5" role="3cqZAk">
+                <ref role="37wK5l" node="2evlxT95uzf" resolve="getOperationNameForParameterizedCommand" />
+                <node concept="Jnkvi" id="6j402mjX6w6" role="37wK5m">
+                  <ref role="1M0zk5" node="6j402mjX6w7" resolve="parametrizedCommand" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="6j402mjX6w7" role="JncvA">
+            <property role="TrG5h" value="parametrizedCommand" />
+            <node concept="2jxLKc" id="6j402mjX6w8" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6j402mjX6w9" role="3cqZAp">
+          <node concept="2OqwBi" id="6j402mjX6wa" role="3cqZAk">
+            <node concept="37vLTw" id="6j402mjX6wb" role="2Oq$k0">
+              <ref role="3cqZAo" node="6j402mjX6vQ" resolve="command" />
+            </node>
+            <node concept="2qgKlT" id="6j402mjX6wc" role="2OqNvi">
+              <ref role="37wK5l" to="nrs2:5jkMFwAVHsA" resolve="getCustomTypeNameDisplayName" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6j402mjX74h" role="1B3o_S" />
+      <node concept="17QB3L" id="6j402mjX6we" role="3clF45" />
     </node>
     <node concept="2YIFZL" id="2evlxT94RVh" role="jymVt">
       <property role="TrG5h" value="getOperationName" />

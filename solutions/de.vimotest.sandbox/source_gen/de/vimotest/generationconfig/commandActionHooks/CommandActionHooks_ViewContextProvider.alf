@@ -1,0 +1,14 @@
+
+
+
+
+abstract class CommandActionHooks_ViewContextProvider {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : CommandActionHooks_View  ;
+  
+  public pre_loadView (   in Value1 : String ,   in Value2 : Boolean ,   in Value3 : Integer  ) {     }
+  
+  public pre_myFlagChecked (   in isChecked : Boolean  ) {     }
+}

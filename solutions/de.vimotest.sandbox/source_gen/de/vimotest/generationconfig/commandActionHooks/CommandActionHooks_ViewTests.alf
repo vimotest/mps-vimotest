@@ -1,0 +1,47 @@
+
+
+private import Testing ;
+
+class CommandActionHooks_ViewTests {
+  
+  private sut : CommandActionHooks_View  ;
+  
+  private contextProvider : CommandActionHooks_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new CommandActionHooks_ViewContextProviderImpl (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public MyTest_given_when_LoadView_and_uncheck_MyFlag_then_ (  ) {
+  this.BuildSut (  );
+   this.when_LoadView (  );
+   this.when_uncheck_MyFlag (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  // When Helper Definitions
+
+  
+  public when_LoadView (  ) {
+  this.contextProvider.pre_loadView ( "A", true, 42 );
+   this.sut.loadView ( "A", true, 42 );
+ }
+  
+  public when_uncheck_MyFlag (  ) {
+  this.sut.myFlagChecked ( false );
+ }
+  
+  // Then Helper Definitions
+
+}

@@ -426,6 +426,10 @@
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
+      <concept id="1176903168877" name="jetbrains.mps.baseLanguage.collections.structure.UnionOperation" flags="nn" index="4Tj9Z" />
+      <concept id="1176906603202" name="jetbrains.mps.baseLanguage.collections.structure.BinaryOperation" flags="nn" index="56pJg">
+        <child id="1176906787974" name="rightExpression" index="576Qk" />
+      </concept>
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
@@ -1192,6 +1196,49 @@
       </node>
       <node concept="3uibUv" id="1F_Q10zW1wY" role="3clF45">
         <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="6j402mjwbH_" role="13h7CS">
+      <property role="TrG5h" value="getAllCommands" />
+      <node concept="3Tm1VV" id="6j402mjwbHA" role="1B3o_S" />
+      <node concept="A3Dl8" id="6j402mjwjfD" role="3clF45">
+        <node concept="3Tqbb2" id="6j402mjwjfW" role="A3Ik2">
+          <ref role="ehGHo" to="at53:F907haLJXw" resolve="IViewModelCommand" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6j402mjwbHC" role="3clF47">
+        <node concept="3clFbF" id="5jkMFw_Kwcf" role="3cqZAp">
+          <node concept="2OqwBi" id="5jkMFw_Kwcg" role="3clFbG">
+            <node concept="2OqwBi" id="5jkMFw_Kwch" role="2Oq$k0">
+              <node concept="2OqwBi" id="5jkMFw_Kwci" role="2Oq$k0">
+                <node concept="3TrEf2" id="5jkMFw_Kwcj" role="2OqNvi">
+                  <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="viewModelCommands" />
+                </node>
+                <node concept="13iPFW" id="6j402mjwjqN" role="2Oq$k0" />
+              </node>
+              <node concept="3Tsc0h" id="5jkMFw_Kwcl" role="2OqNvi">
+                <ref role="3TtcxE" to="at53:F907haMmbJ" />
+              </node>
+            </node>
+            <node concept="4Tj9Z" id="5jkMFw_Kwcm" role="2OqNvi">
+              <node concept="2OqwBi" id="5jkMFw_Kwcn" role="576Qk">
+                <node concept="2OqwBi" id="5jkMFw_Kwco" role="2Oq$k0">
+                  <node concept="13iPFW" id="6j402mjwjLl" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="5jkMFw_Kwcq" role="2OqNvi">
+                    <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="viewModelData" />
+                  </node>
+                </node>
+                <node concept="2Rf3mk" id="5jkMFw_Kwcr" role="2OqNvi">
+                  <node concept="1xMEDy" id="5jkMFw_Kwcs" role="1xVPHs">
+                    <node concept="chp4Y" id="5jkMFw_Kwct" role="ri$Ld">
+                      <ref role="cht4Q" to="at53:6kjlgUuu6dE" resolve="ViewWidgetCommand" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -7878,6 +7925,30 @@
       <node concept="37vLTG" id="7NXUkdO426d" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="7NXUkdO426e" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2YIFZL" id="6j402mjw4N4" role="jymVt">
+      <property role="TrG5h" value="generateCommandActionHooks" />
+      <node concept="3clFbS" id="6j402mjw4N5" role="3clF47">
+        <node concept="3clFbF" id="6j402mjw4N6" role="3cqZAp">
+          <node concept="2OqwBi" id="6j402mjw4N7" role="3clFbG">
+            <node concept="1rXfSq" id="6j402mjw4N8" role="2Oq$k0">
+              <ref role="37wK5l" node="Of5vVZ$0xU" resolve="getGenerationConfig" />
+              <node concept="37vLTw" id="6j402mjw4N9" role="37wK5m">
+                <ref role="3cqZAo" node="6j402mjw4Nd" resolve="node" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="6j402mjw6Qb" role="2OqNvi">
+              <ref role="3TsBF5" to="at53:6j402mjmBMW" resolve="generateCommandActionHooks" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6j402mjw4Nb" role="1B3o_S" />
+      <node concept="10P_77" id="6j402mjw4Nc" role="3clF45" />
+      <node concept="37vLTG" id="6j402mjw4Nd" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="6j402mjw4Ne" role="1tU5fm" />
       </node>
     </node>
     <node concept="2YIFZL" id="Of5vVZ$0xU" role="jymVt">

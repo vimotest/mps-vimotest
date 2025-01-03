@@ -1,0 +1,16 @@
+
+
+
+
+class CommandActionHooks_View {
+  
+  private isMyFlagCheckBoxChecked : Boolean  ;
+  
+  public getIsMyFlagCheckBoxChecked (  ) : Boolean  {
+  return this.isMyFlagCheckBoxChecked;
+ }
+  
+  public loadView (   in Value1 : String ,   in Value2 : Boolean ,   in Value3 : Integer  ) {     }
+  
+  public myFlagChecked (   in isChecked : Boolean  ) {     }
+}

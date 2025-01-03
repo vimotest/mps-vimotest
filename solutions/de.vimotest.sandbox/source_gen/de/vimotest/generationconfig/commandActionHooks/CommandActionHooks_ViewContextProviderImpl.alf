@@ -1,0 +1,12 @@
+
+
+
+
+class CommandActionHooks_ViewContextProviderImpl specializes CommandActionHooks_ViewContextProvider {
+  
+  public Init (  ) {     }
+  
+  public BuildSut (  ) : CommandActionHooks_View  {
+  return null;
+ }
+}

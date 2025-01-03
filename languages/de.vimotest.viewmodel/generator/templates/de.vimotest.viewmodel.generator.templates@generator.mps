@@ -3548,35 +3548,11 @@
         <node concept="2b32R4" id="5jkMFw_Kwcc" role="lGtFl">
           <node concept="3JmXsc" id="5jkMFw_Kwcd" role="2P8S$">
             <node concept="3clFbS" id="5jkMFw_Kwce" role="2VODD2">
-              <node concept="3clFbF" id="5jkMFw_Kwcf" role="3cqZAp">
-                <node concept="2OqwBi" id="5jkMFw_Kwcg" role="3clFbG">
-                  <node concept="2OqwBi" id="5jkMFw_Kwch" role="2Oq$k0">
-                    <node concept="2OqwBi" id="5jkMFw_Kwci" role="2Oq$k0">
-                      <node concept="3TrEf2" id="5jkMFw_Kwcj" role="2OqNvi">
-                        <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="viewModelCommands" />
-                      </node>
-                      <node concept="30H73N" id="5jkMFw_Kwck" role="2Oq$k0" />
-                    </node>
-                    <node concept="3Tsc0h" id="5jkMFw_Kwcl" role="2OqNvi">
-                      <ref role="3TtcxE" to="at53:F907haMmbJ" resolve="commands" />
-                    </node>
-                  </node>
-                  <node concept="4Tj9Z" id="5jkMFw_Kwcm" role="2OqNvi">
-                    <node concept="2OqwBi" id="5jkMFw_Kwcn" role="576Qk">
-                      <node concept="2OqwBi" id="5jkMFw_Kwco" role="2Oq$k0">
-                        <node concept="30H73N" id="5jkMFw_Kwcp" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="5jkMFw_Kwcq" role="2OqNvi">
-                          <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="viewModelData" />
-                        </node>
-                      </node>
-                      <node concept="2Rf3mk" id="5jkMFw_Kwcr" role="2OqNvi">
-                        <node concept="1xMEDy" id="5jkMFw_Kwcs" role="1xVPHs">
-                          <node concept="chp4Y" id="5jkMFw_Kwct" role="ri$Ld">
-                            <ref role="cht4Q" to="at53:6kjlgUuu6dE" resolve="ViewWidgetCommand" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
+              <node concept="3clFbF" id="6j402mjwl5w" role="3cqZAp">
+                <node concept="2OqwBi" id="6j402mjwlsr" role="3clFbG">
+                  <node concept="30H73N" id="6j402mjwl5v" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="6j402mjwlFz" role="2OqNvi">
+                    <ref role="37wK5l" to="nrs2:6j402mjwbH_" resolve="getAllCommands" />
                   </node>
                 </node>
               </node>

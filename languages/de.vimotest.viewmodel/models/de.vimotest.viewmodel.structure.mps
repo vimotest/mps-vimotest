@@ -1321,6 +1321,14 @@
         <property role="t5JxN" value="Controls if table updating flags are generated" />
       </node>
     </node>
+    <node concept="1TJgyi" id="6j402mjmBMW" role="1TKVEl">
+      <property role="IQ2nx" value="7260928660614053052" />
+      <property role="TrG5h" value="generateCommandActionHooks" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="6j402mjmBMX" role="lGtFl">
+        <property role="t5JxN" value="Controls if pre/post processing methods for command actions in ContextProvider are generated" />
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="2N4oO4qvcUb">
     <property role="EcuMT" value="3225812364372528779" />

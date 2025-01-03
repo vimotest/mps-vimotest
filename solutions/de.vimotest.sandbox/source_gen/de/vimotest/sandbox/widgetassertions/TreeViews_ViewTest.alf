@@ -25,7 +25,7 @@ class TreeViews_ViewTest {
  }
   
   public TreeView_Ignore_Column_given_empty_context_when_then_MyTreeViewElements_has_2_rows (  ) {
-  this.given_empty_context_1 (  );
+  this.given_empty_context (  );
    this.BuildSut (  );
    this.then_MyTreeViewElements_has_2_rows (  );
  }
@@ -40,8 +40,6 @@ class TreeViews_ViewTest {
 
   
   public given_empty_context (  ) {     }
-  
-  public given_empty_context_1 (  ) {     }
   
   // When Helper Definitions
 

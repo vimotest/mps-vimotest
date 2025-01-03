@@ -20,13 +20,7 @@ namespace de::vimotest::examples::loginview
     virtual void when_fill_User_in_Username() ;
     virtual void when_fill_MyPass123_in_Password() ;
     virtual void when_check_ShowPassword() ;
-    virtual void when_LoadView_1() ;
-    virtual void when_fill_User_in_Username_1() ;
     virtual void when_clear_text_in_Password() ;
-    virtual void when_LoadView_2() ;
-    virtual void when_LoadView_3() ;
-    virtual void when_check_ShowPassword_1() ;
-    virtual void when_LoadView_4() ;
     virtual void when_fill_lovelace_in_Password() ;
     virtual void when_click_Login() ;
     virtual void then_Username_shows_text_User_() ;
@@ -63,8 +57,8 @@ namespace de::vimotest::examples::loginview
   {
     this->given_empty_context();
     this->BuildSut();
-    this->when_LoadView_1();
-    this->when_fill_User_in_Username_1();
+    this->when_LoadView();
+    this->when_fill_User_in_Username();
     this->when_clear_text_in_Password();
     this->then_Username_shows_text_User_();
     this->then_Password_shows_empty_text();
@@ -74,7 +68,7 @@ namespace de::vimotest::examples::loginview
   {
     this->given_prefilledValues();
     this->BuildSut();
-    this->when_LoadView_2();
+    this->when_LoadView();
     this->then_Username_shows_text_Ada_();
     this->then_Password_shows_text_____();
     this->then_Login_is_enabled();
@@ -83,8 +77,8 @@ namespace de::vimotest::examples::loginview
   {
     this->given_prefilledValues();
     this->BuildSut();
-    this->when_LoadView_3();
-    this->when_check_ShowPassword_1();
+    this->when_LoadView();
+    this->when_check_ShowPassword();
     this->then_Username_shows_text_Ada_();
     this->then_Password_shows_text_Lovelace1_();
     this->then_ShowPassword_is_checked();
@@ -94,7 +88,7 @@ namespace de::vimotest::examples::loginview
   {
     this->given_prefilledValues();
     this->BuildSut();
-    this->when_LoadView_4();
+    this->when_LoadView();
     this->when_fill_lovelace_in_Password();
     this->when_click_Login();
     this->then_Error_shows_text_Needs_uppercase_letters_();
@@ -127,33 +121,9 @@ namespace de::vimotest::examples::loginview
   {
     this->sut->showPasswordChecked(true);
   }
-  void LoginViewTests::when_LoadView_1( ) 
-  {
-    this->sut->loadView();
-  }
-  void LoginViewTests::when_fill_User_in_Username_1( ) 
-  {
-    this->sut->usernameTextFilled(std::string("User"));
-  }
   void LoginViewTests::when_clear_text_in_Password( ) 
   {
     this->sut->passwordTextFilled(std::string(""));
-  }
-  void LoginViewTests::when_LoadView_2( ) 
-  {
-    this->sut->loadView();
-  }
-  void LoginViewTests::when_LoadView_3( ) 
-  {
-    this->sut->loadView();
-  }
-  void LoginViewTests::when_check_ShowPassword_1( ) 
-  {
-    this->sut->showPasswordChecked(true);
-  }
-  void LoginViewTests::when_LoadView_4( ) 
-  {
-    this->sut->loadView();
   }
   void LoginViewTests::when_fill_lovelace_in_Password( ) 
   {

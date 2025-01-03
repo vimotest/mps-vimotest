@@ -586,22 +586,15 @@
         <ref role="v9R2y" node="1srqdXUFWY0" resolve="reduce_ViewModelTestScenario" />
       </node>
     </node>
-    <node concept="3aamgX" id="1srqdXUGcgX" role="3acgRq">
-      <ref role="30HIoZ" to="53m0:3JdhG1lSFby" resolve="GivenDescriptionWithContext" />
-      <node concept="j$656" id="1srqdXUGch1" role="1lVwrX">
-        <ref role="v9R2y" node="1srqdXUGcgZ" resolve="reduce_Operation_GivenDescriptionWithContext" />
-      </node>
-    </node>
-    <node concept="3aamgX" id="1srqdXUGch8" role="3acgRq">
-      <ref role="30HIoZ" to="53m0:6tib4XeIJOl" resolve="WhenDescriptionWithAction" />
-      <node concept="j$656" id="1srqdXUGchc" role="1lVwrX">
-        <ref role="v9R2y" node="2DSbB2zNEzt" resolve="reduce_Operation_WhenDescriptionWithContext" />
-      </node>
-    </node>
-    <node concept="3aamgX" id="2DSbB2zOb1w" role="3acgRq">
-      <ref role="30HIoZ" to="53m0:6tib4XeIJNS" resolve="ThenDescriptionWithAssert" />
-      <node concept="j$656" id="2DSbB2zOixm" role="1lVwrX">
-        <ref role="v9R2y" node="2DSbB2zNVgk" resolve="reduce_Operation_ThenDescriptionWithContext" />
+    <node concept="3aamgX" id="3$6KP6ykIQB" role="3acgRq">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="53m0:3JdhG1lSFbA" resolve="TestDescriptionPart" />
+      <node concept="gft3U" id="3$6KP6ykJhv" role="1lVwrX">
+        <node concept="2VYdi" id="3$6KP6ykJhx" role="gfFT$">
+          <node concept="1sPUBX" id="3$6KP6ykJh$" role="lGtFl">
+            <ref role="v9R2y" node="3$6KP6ykIOs" resolve="switch_TestDescriptionPart_Operation" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3aamgX" id="7T8HsuTSYdG" role="3acgRq">
@@ -2011,12 +2004,34 @@
               <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="2DSbB2zNjF4" role="3$ytzL">
                 <node concept="3clFbS" id="2DSbB2zNjF5" role="2VODD2">
+                  <node concept="3cpWs8" id="4GyGv4gRUH1" role="3cqZAp">
+                    <node concept="3cpWsn" id="4GyGv4gRUH2" role="3cpWs9">
+                      <property role="TrG5h" value="node" />
+                      <node concept="3Tqbb2" id="4GyGv4gRUH3" role="1tU5fm">
+                        <ref role="ehGHo" to="53m0:3JdhG1lSFby" resolve="GivenDescriptionWithContext" />
+                      </node>
+                      <node concept="1PxgMI" id="4GyGv4gRUH4" role="33vP2m">
+                        <property role="1BlNFB" value="true" />
+                        <node concept="chp4Y" id="4GyGv4gRUH5" role="3oSUPX">
+                          <ref role="cht4Q" to="53m0:3JdhG1lSFby" resolve="GivenDescriptionWithContext" />
+                        </node>
+                        <node concept="2YIFZM" id="4GyGv4gRUH6" role="1m5AlR">
+                          <ref role="37wK5l" to="zcip:4pcNtzUbV47" resolve="findPreviousEqualNode" />
+                          <ref role="1Pybhc" to="zcip:4pcNtzUbV2t" resolve="NodeEqualityOptimizer" />
+                          <node concept="1iwH7S" id="4GyGv4gRUH7" role="37wK5m" />
+                          <node concept="30H73N" id="4GyGv4gRUH8" role="37wK5m" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3clFbF" id="2DSbB2zNjFL" role="3cqZAp">
                     <node concept="2OqwBi" id="2DSbB2zNjU0" role="3clFbG">
                       <node concept="1iwH7S" id="2DSbB2zNjFK" role="2Oq$k0" />
                       <node concept="1iwH70" id="2DSbB2zNjZN" role="2OqNvi">
                         <ref role="1iwH77" node="2DSbB2zNjpC" resolve="GivenDescriptionWithContext_OperationDefinition" />
-                        <node concept="30H73N" id="2DSbB2zNkcB" role="1iwH7V" />
+                        <node concept="37vLTw" id="4GyGv4gRV5F" role="1iwH7V">
+                          <ref role="3cqZAo" node="4GyGv4gRUH2" resolve="node" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -2105,12 +2120,34 @@
               <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="2DSbB2zNEzR" role="3$ytzL">
                 <node concept="3clFbS" id="2DSbB2zNEzS" role="2VODD2">
+                  <node concept="3cpWs8" id="4GyGv4gRMVW" role="3cqZAp">
+                    <node concept="3cpWsn" id="4GyGv4gRMVX" role="3cpWs9">
+                      <property role="TrG5h" value="node" />
+                      <node concept="3Tqbb2" id="4GyGv4gRMVY" role="1tU5fm">
+                        <ref role="ehGHo" to="53m0:6tib4XeIJOl" resolve="WhenDescriptionWithAction" />
+                      </node>
+                      <node concept="1PxgMI" id="4GyGv4gRMVZ" role="33vP2m">
+                        <property role="1BlNFB" value="true" />
+                        <node concept="chp4Y" id="4GyGv4gRMW0" role="3oSUPX">
+                          <ref role="cht4Q" to="53m0:6tib4XeIJOl" resolve="WhenDescriptionWithAction" />
+                        </node>
+                        <node concept="2YIFZM" id="4GyGv4gRMW1" role="1m5AlR">
+                          <ref role="37wK5l" to="zcip:4pcNtzUbV47" resolve="findPreviousEqualNode" />
+                          <ref role="1Pybhc" to="zcip:4pcNtzUbV2t" resolve="NodeEqualityOptimizer" />
+                          <node concept="1iwH7S" id="4GyGv4gRMW2" role="37wK5m" />
+                          <node concept="30H73N" id="4GyGv4gRMW3" role="37wK5m" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3clFbF" id="2DSbB2zNEzT" role="3cqZAp">
                     <node concept="2OqwBi" id="2DSbB2zNEzU" role="3clFbG">
                       <node concept="1iwH7S" id="2DSbB2zNEzV" role="2Oq$k0" />
                       <node concept="1iwH70" id="2DSbB2zNEzW" role="2OqNvi">
                         <ref role="1iwH77" node="2DSbB2zNjpD" resolve="WhenDescriptionWithActions_OperationDefinition" />
-                        <node concept="30H73N" id="2DSbB2zNEzX" role="1iwH7V" />
+                        <node concept="37vLTw" id="4GyGv4gRUuK" role="1iwH7V">
+                          <ref role="3cqZAo" node="4GyGv4gRMVX" resolve="node" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -2232,46 +2269,6 @@
                 </node>
                 <node concept="30H73N" id="7T8HsuTGdGY" role="37wK5m" />
                 <node concept="1iwH7S" id="7T8HsuTGdGZ" role="37wK5m" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1W57fq" id="6YoWENEwhl8" role="lGtFl">
-        <node concept="3IZrLx" id="6YoWENEwhl9" role="3IZSJc">
-          <node concept="3clFbS" id="6YoWENEwhla" role="2VODD2">
-            <node concept="3cpWs8" id="6YoWENE$p7j" role="3cqZAp">
-              <node concept="3cpWsn" id="6YoWENE$p7k" role="3cpWs9">
-                <property role="TrG5h" value="generate" />
-                <node concept="10P_77" id="6YoWENE$oPo" role="1tU5fm" />
-                <node concept="3fqX7Q" id="6YoWENE$p7l" role="33vP2m">
-                  <node concept="2YIFZM" id="6YoWENE$p7m" role="3fr31v">
-                    <ref role="37wK5l" to="zcip:3p_t3Zq3YW2" resolve="hasPreviousEqualNode" />
-                    <ref role="1Pybhc" to="zcip:4pcNtzUbV2t" resolve="NodeEqualityOptimizer" />
-                    <node concept="1iwH7S" id="6YoWENE$p7n" role="37wK5m" />
-                    <node concept="30H73N" id="6YoWENE$p7o" role="37wK5m" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="6YoWENE$pnM" role="3cqZAp">
-              <node concept="3clFbS" id="6YoWENE$pnO" role="3clFbx">
-                <node concept="3clFbF" id="3p_t3Zq4cHo" role="3cqZAp">
-                  <node concept="2YIFZM" id="3p_t3Zq4cKi" role="3clFbG">
-                    <ref role="37wK5l" to="zcip:3p_t3Zq43fb" resolve="putAsPreviousEqualNode" />
-                    <ref role="1Pybhc" to="zcip:4pcNtzUbV2t" resolve="NodeEqualityOptimizer" />
-                    <node concept="1iwH7S" id="3p_t3Zq4cMv" role="37wK5m" />
-                    <node concept="30H73N" id="3p_t3Zq4cQZ" role="37wK5m" />
-                  </node>
-                </node>
-              </node>
-              <node concept="37vLTw" id="6YoWENE$wKa" role="3clFbw">
-                <ref role="3cqZAo" node="6YoWENE$p7k" resolve="generate" />
-              </node>
-            </node>
-            <node concept="3clFbF" id="3p_t3Zq0m0n" role="3cqZAp">
-              <node concept="37vLTw" id="6YoWENE$p7p" role="3clFbG">
-                <ref role="3cqZAo" node="6YoWENE$p7k" resolve="b" />
               </node>
             </node>
           </node>
@@ -8226,6 +8223,142 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="jVnub" id="3$6KP6ykIOs">
+    <property role="TrG5h" value="switch_TestDescriptionPart_Operation" />
+    <node concept="3aamgX" id="1srqdXUGcgX" role="3aUrZf">
+      <ref role="30HIoZ" to="53m0:3JdhG1lSFby" resolve="GivenDescriptionWithContext" />
+      <node concept="j$656" id="1srqdXUGch1" role="1lVwrX">
+        <ref role="v9R2y" node="1srqdXUGcgZ" resolve="reduce_Operation_GivenDescriptionWithContext" />
+      </node>
+      <node concept="30G5F_" id="3$6KP6ykLCS" role="30HLyM">
+        <node concept="3clFbS" id="3$6KP6ykLCT" role="2VODD2">
+          <node concept="3cpWs8" id="4GyGv4gRXPN" role="3cqZAp">
+            <node concept="3cpWsn" id="4GyGv4gRXPO" role="3cpWs9">
+              <property role="TrG5h" value="generate" />
+              <node concept="10P_77" id="4GyGv4gRXPP" role="1tU5fm" />
+              <node concept="3fqX7Q" id="4GyGv4gRXPQ" role="33vP2m">
+                <node concept="2YIFZM" id="4GyGv4gRXPR" role="3fr31v">
+                  <ref role="37wK5l" to="zcip:3p_t3Zq3YW2" resolve="hasPreviousEqualNode" />
+                  <ref role="1Pybhc" to="zcip:4pcNtzUbV2t" resolve="NodeEqualityOptimizer" />
+                  <node concept="1iwH7S" id="4GyGv4gRXPS" role="37wK5m" />
+                  <node concept="30H73N" id="4GyGv4gRXPT" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="4GyGv4gRXPU" role="3cqZAp">
+            <node concept="3clFbS" id="4GyGv4gRXPV" role="3clFbx">
+              <node concept="3clFbF" id="4GyGv4gRXPW" role="3cqZAp">
+                <node concept="2YIFZM" id="4GyGv4gRXPX" role="3clFbG">
+                  <ref role="37wK5l" to="zcip:3p_t3Zq43fb" resolve="putAsPreviousEqualNode" />
+                  <ref role="1Pybhc" to="zcip:4pcNtzUbV2t" resolve="NodeEqualityOptimizer" />
+                  <node concept="1iwH7S" id="4GyGv4gRXPY" role="37wK5m" />
+                  <node concept="30H73N" id="4GyGv4gRXPZ" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="4GyGv4gRXQ0" role="3clFbw">
+              <ref role="3cqZAo" node="4GyGv4gRXPO" resolve="generate" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="4GyGv4gRXQ1" role="3cqZAp">
+            <node concept="37vLTw" id="4GyGv4gRXQ2" role="3clFbG">
+              <ref role="3cqZAo" node="4GyGv4gRXPO" resolve="generate" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="1srqdXUGch8" role="3aUrZf">
+      <ref role="30HIoZ" to="53m0:6tib4XeIJOl" resolve="WhenDescriptionWithAction" />
+      <node concept="j$656" id="1srqdXUGchc" role="1lVwrX">
+        <ref role="v9R2y" node="2DSbB2zNEzt" resolve="reduce_Operation_WhenDescriptionWithContext" />
+      </node>
+      <node concept="30G5F_" id="3$6KP6ykM7y" role="30HLyM">
+        <node concept="3clFbS" id="3$6KP6ykM7z" role="2VODD2">
+          <node concept="3cpWs8" id="3$6KP6ykM7Z" role="3cqZAp">
+            <node concept="3cpWsn" id="3$6KP6ykM80" role="3cpWs9">
+              <property role="TrG5h" value="generate" />
+              <node concept="10P_77" id="3$6KP6ykM81" role="1tU5fm" />
+              <node concept="3fqX7Q" id="3$6KP6ykM82" role="33vP2m">
+                <node concept="2YIFZM" id="3$6KP6ykM83" role="3fr31v">
+                  <ref role="37wK5l" to="zcip:3p_t3Zq3YW2" resolve="hasPreviousEqualNode" />
+                  <ref role="1Pybhc" to="zcip:4pcNtzUbV2t" resolve="NodeEqualityOptimizer" />
+                  <node concept="1iwH7S" id="3$6KP6ykM84" role="37wK5m" />
+                  <node concept="30H73N" id="3$6KP6ykM85" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="3$6KP6ykM86" role="3cqZAp">
+            <node concept="3clFbS" id="3$6KP6ykM87" role="3clFbx">
+              <node concept="3clFbF" id="3$6KP6ykM88" role="3cqZAp">
+                <node concept="2YIFZM" id="3$6KP6ykM89" role="3clFbG">
+                  <ref role="37wK5l" to="zcip:3p_t3Zq43fb" resolve="putAsPreviousEqualNode" />
+                  <ref role="1Pybhc" to="zcip:4pcNtzUbV2t" resolve="NodeEqualityOptimizer" />
+                  <node concept="1iwH7S" id="3$6KP6ykM8a" role="37wK5m" />
+                  <node concept="30H73N" id="3$6KP6ykM8b" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="3$6KP6ykM8c" role="3clFbw">
+              <ref role="3cqZAo" node="3$6KP6ykM80" resolve="generate" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="3$6KP6ykM8d" role="3cqZAp">
+            <node concept="37vLTw" id="3$6KP6ykM8e" role="3clFbG">
+              <ref role="3cqZAo" node="3$6KP6ykM80" resolve="generate" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="2DSbB2zOb1w" role="3aUrZf">
+      <ref role="30HIoZ" to="53m0:6tib4XeIJNS" resolve="ThenDescriptionWithAssert" />
+      <node concept="j$656" id="2DSbB2zOixm" role="1lVwrX">
+        <ref role="v9R2y" node="2DSbB2zNVgk" resolve="reduce_Operation_ThenDescriptionWithContext" />
+      </node>
+      <node concept="30G5F_" id="3$6KP6ykMe9" role="30HLyM">
+        <node concept="3clFbS" id="3$6KP6ykMea" role="2VODD2">
+          <node concept="3cpWs8" id="3$6KP6ykMec" role="3cqZAp">
+            <node concept="3cpWsn" id="3$6KP6ykMed" role="3cpWs9">
+              <property role="TrG5h" value="generate" />
+              <node concept="10P_77" id="3$6KP6ykMee" role="1tU5fm" />
+              <node concept="3fqX7Q" id="3$6KP6ykMef" role="33vP2m">
+                <node concept="2YIFZM" id="3$6KP6ykMeg" role="3fr31v">
+                  <ref role="37wK5l" to="zcip:3p_t3Zq3YW2" resolve="hasPreviousEqualNode" />
+                  <ref role="1Pybhc" to="zcip:4pcNtzUbV2t" resolve="NodeEqualityOptimizer" />
+                  <node concept="1iwH7S" id="3$6KP6ykMeh" role="37wK5m" />
+                  <node concept="30H73N" id="3$6KP6ykMei" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="3$6KP6ykMej" role="3cqZAp">
+            <node concept="3clFbS" id="3$6KP6ykMek" role="3clFbx">
+              <node concept="3clFbF" id="3$6KP6ykMel" role="3cqZAp">
+                <node concept="2YIFZM" id="3$6KP6ykMem" role="3clFbG">
+                  <ref role="37wK5l" to="zcip:3p_t3Zq43fb" resolve="putAsPreviousEqualNode" />
+                  <ref role="1Pybhc" to="zcip:4pcNtzUbV2t" resolve="NodeEqualityOptimizer" />
+                  <node concept="1iwH7S" id="3$6KP6ykMen" role="37wK5m" />
+                  <node concept="30H73N" id="3$6KP6ykMeo" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="3$6KP6ykMep" role="3clFbw">
+              <ref role="3cqZAo" node="3$6KP6ykMed" resolve="generate" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="3$6KP6ykMeq" role="3cqZAp">
+            <node concept="37vLTw" id="3$6KP6ykMer" role="3clFbG">
+              <ref role="3cqZAo" node="3$6KP6ykMed" resolve="generate" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="b5Tf3" id="3$6KP6ykJlC" role="jxRDz" />
   </node>
 </model>
 

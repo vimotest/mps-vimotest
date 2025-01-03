@@ -30,13 +30,13 @@ public class ListViews_ViewTest_Test {
   }
   @Test
   public void test_List_Ignore_Column_given_empty_context_when_then_MyListOfLabel_has_4_rows() throws Exception {
-    this.given_empty_context_1();
+    this.given_empty_context();
     this.BuildSut();
     this.then_MyListOfLabel_has_4_rows();
   }
   @Test
   public void test_List_Ignore_Cell_given_empty_context_when_then_MyListOfLabel_has_4_rows() throws Exception {
-    this.given_empty_context_2();
+    this.given_empty_context();
     this.BuildSut();
     this.then_MyListOfLabel_has_4_rows_1();
   }
@@ -55,10 +55,6 @@ public class ListViews_ViewTest_Test {
 
 
   public void given_empty_context() {
-  }
-  public void given_empty_context_1() {
-  }
-  public void given_empty_context_2() {
   }
 
 

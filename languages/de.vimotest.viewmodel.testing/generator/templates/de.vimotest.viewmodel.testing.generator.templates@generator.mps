@@ -811,7 +811,12 @@
       <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
     </node>
     <node concept="2rT7sh" id="6j402mjvXvb" role="2rTMjI">
-      <property role="TrG5h" value="IViewModelCommand_ContextProvider_OperationDefinition" />
+      <property role="TrG5h" value="IViewModelCommand_PreProcess_ContextProvider_OperationDefinition" />
+      <ref role="2rTdP9" to="at53:F907haLJXw" resolve="IViewModelCommand" />
+      <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
+    </node>
+    <node concept="2rT7sh" id="5u6qsNuYW0n" role="2rTMjI">
+      <property role="TrG5h" value="IViewModelCommand_PostProcess_ContextProvider_OperationDefinition" />
       <ref role="2rTdP9" to="at53:F907haLJXw" resolve="IViewModelCommand" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
     </node>
@@ -3382,6 +3387,162 @@
                 </node>
               </node>
               <node concept="raruj" id="3_BGOS45C68" role="lGtFl" />
+            </node>
+            <node concept="_jtW9" id="5u6qsNuYRek" role="PCHzz">
+              <node concept="32Pqhq" id="5u6qsNuYRel" role="_jtWe">
+                <node concept="32Pqhl" id="5u6qsNuYRem" role="32OngV">
+                  <node concept="32M0$0" id="5u6qsNuYRen" role="32Men7">
+                    <node concept="32Pqhl" id="5u6qsNuYReo" role="32PqmZ">
+                      <node concept="_iR_j" id="5u6qsNuYRep" role="32Men7" />
+                      <node concept="_vnHe" id="5u6qsNuYReq" role="32Men1">
+                        <ref role="3acloq" node="6j402mjx3oG" resolve="contextProvider" />
+                        <node concept="1ZhdrF" id="5u6qsNuYRer" role="lGtFl">
+                          <property role="2qtEX8" value="nameRef" />
+                          <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
+                          <node concept="3$xsQk" id="5u6qsNuYRes" role="3$ytzL">
+                            <node concept="3clFbS" id="5u6qsNuYRet" role="2VODD2">
+                              <node concept="3clFbF" id="5u6qsNuYReu" role="3cqZAp">
+                                <node concept="2OqwBi" id="5u6qsNuYRev" role="3clFbG">
+                                  <node concept="1iwH7S" id="5u6qsNuYRew" role="2Oq$k0" />
+                                  <node concept="1iwH70" id="5u6qsNuYRex" role="2OqNvi">
+                                    <ref role="1iwH77" node="4Pj3bOmxAow" resolve="ViewModelFeatureTestSuite_ContextProvider_AttributeDefinition" />
+                                    <node concept="2OqwBi" id="5u6qsNuYRey" role="1iwH7V">
+                                      <node concept="30H73N" id="5u6qsNuYRez" role="2Oq$k0" />
+                                      <node concept="2Xjw5R" id="5u6qsNuYRe$" role="2OqNvi">
+                                        <node concept="1xMEDy" id="5u6qsNuYRe_" role="1xVPHs">
+                                          <node concept="chp4Y" id="5u6qsNuYReA" role="ri$Ld">
+                                            <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="_vnHe" id="5u6qsNuYReB" role="32Men1">
+                    <ref role="3acloq" node="7T8HsuTUlmq" resolve="foo" />
+                    <node concept="1ZhdrF" id="5u6qsNuYReC" role="lGtFl">
+                      <property role="2qtEX8" value="nameRef" />
+                      <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
+                      <node concept="3$xsQk" id="5u6qsNuYReD" role="3$ytzL">
+                        <node concept="3clFbS" id="5u6qsNuYReE" role="2VODD2">
+                          <node concept="3clFbF" id="5u6qsNuYReF" role="3cqZAp">
+                            <node concept="2OqwBi" id="5u6qsNuYReG" role="3clFbG">
+                              <node concept="1iwH7S" id="5u6qsNuYReH" role="2Oq$k0" />
+                              <node concept="1iwH70" id="5u6qsNuYReI" role="2OqNvi">
+                                <ref role="1iwH77" node="5u6qsNuYW0n" resolve="IViewModelCommand_PostProcess_ContextProvider_OperationDefinition" />
+                                <node concept="2OqwBi" id="5u6qsNuYReJ" role="1iwH7V">
+                                  <node concept="30H73N" id="5u6qsNuYReK" role="2Oq$k0" />
+                                  <node concept="3TrEf2" id="5u6qsNuYReL" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="53m0:7KHRfJVnw5G" resolve="targetCommand" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="_vku0" id="5u6qsNuYReM" role="_uFfl">
+                  <node concept="32T38h" id="5u6qsNuYReN" role="_vku1">
+                    <property role="32T38g" value="0" />
+                    <node concept="1W57fq" id="5u6qsNuYReO" role="lGtFl">
+                      <node concept="3IZrLx" id="5u6qsNuYReP" role="3IZSJc">
+                        <node concept="3clFbS" id="5u6qsNuYReQ" role="2VODD2">
+                          <node concept="3cpWs8" id="5u6qsNuYReR" role="3cqZAp">
+                            <node concept="3cpWsn" id="5u6qsNuYReS" role="3cpWs9">
+                              <property role="TrG5h" value="useParameterObject" />
+                              <node concept="10P_77" id="5u6qsNuYReT" role="1tU5fm" />
+                              <node concept="1Wc70l" id="5u6qsNuYReU" role="33vP2m">
+                                <node concept="2YIFZM" id="5u6qsNuYReV" role="3uHU7B">
+                                  <ref role="37wK5l" to="nrs2:Of5vVZzSQw" resolve="generateParameterObjects" />
+                                  <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                                  <node concept="30H73N" id="5u6qsNuYReW" role="37wK5m" />
+                                </node>
+                                <node concept="2OqwBi" id="5u6qsNuYReX" role="3uHU7w">
+                                  <node concept="2OqwBi" id="5u6qsNuYReY" role="2Oq$k0">
+                                    <node concept="2OqwBi" id="5u6qsNuYReZ" role="2Oq$k0">
+                                      <node concept="30H73N" id="5u6qsNuYRf0" role="2Oq$k0" />
+                                      <node concept="3TrEf2" id="5u6qsNuYRf1" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="53m0:7KHRfJVn$Y1" resolve="parameters" />
+                                      </node>
+                                    </node>
+                                    <node concept="3Tsc0h" id="5u6qsNuYRf2" role="2OqNvi">
+                                      <ref role="3TtcxE" to="28lk:2kuSLC0oUir" resolve="expression" />
+                                    </node>
+                                  </node>
+                                  <node concept="3GX2aA" id="5u6qsNuYRf3" role="2OqNvi" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbF" id="5u6qsNuYRf4" role="3cqZAp">
+                            <node concept="3fqX7Q" id="5u6qsNuYRf5" role="3clFbG">
+                              <node concept="37vLTw" id="5u6qsNuYRf6" role="3fr31v">
+                                <ref role="3cqZAo" node="5u6qsNuYReS" resolve="useParameterObject" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="gft3U" id="5u6qsNuYRf7" role="UU_$l">
+                        <node concept="15s5l7" id="5u6qsNuYRf8" role="lGtFl">
+                          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  parameter (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
+                          <property role="huDt6" value="The reference  parameter (target) is out of search scope" />
+                        </node>
+                        <node concept="_uYbk" id="5u6qsNuYRf9" role="gfFT$">
+                          <node concept="_vnHb" id="5u6qsNuYRfa" role="_uYbl">
+                            <node concept="2RqM1Q" id="5u6qsNuYRfb" role="_vnH8">
+                              <ref role="2RqM1R" node="4a2vw53gMN9" resolve="parameter" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2b32R4" id="5u6qsNuYRfc" role="lGtFl">
+                      <node concept="3JmXsc" id="5u6qsNuYRfd" role="2P8S$">
+                        <node concept="3clFbS" id="5u6qsNuYRfe" role="2VODD2">
+                          <node concept="3clFbF" id="5u6qsNuYRff" role="3cqZAp">
+                            <node concept="2OqwBi" id="5u6qsNuYRfg" role="3clFbG">
+                              <node concept="2OqwBi" id="5u6qsNuYRfh" role="2Oq$k0">
+                                <node concept="30H73N" id="5u6qsNuYRfi" role="2Oq$k0" />
+                                <node concept="3TrEf2" id="5u6qsNuYRfj" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="53m0:7KHRfJVn$Y1" resolve="parameters" />
+                                </node>
+                              </node>
+                              <node concept="3Tsc0h" id="5u6qsNuYRfk" role="2OqNvi">
+                                <ref role="3TtcxE" to="28lk:2kuSLC0oUir" resolve="expression" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="raruj" id="5u6qsNuYRfl" role="lGtFl" />
+              <node concept="1W57fq" id="5u6qsNuYRfm" role="lGtFl">
+                <node concept="3IZrLx" id="5u6qsNuYRfn" role="3IZSJc">
+                  <node concept="3clFbS" id="5u6qsNuYRfo" role="2VODD2">
+                    <node concept="3clFbF" id="5u6qsNuYRfp" role="3cqZAp">
+                      <node concept="2YIFZM" id="5u6qsNuYRfq" role="3clFbG">
+                        <ref role="37wK5l" to="nrs2:6j402mjw4N4" resolve="generateCommandActionHooks" />
+                        <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                        <node concept="30H73N" id="5u6qsNuYRfr" role="37wK5m" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -6172,6 +6333,73 @@
                     <property role="Xl_RC" value="pre" />
                   </node>
                   <node concept="30H73N" id="6j402mjXiC5" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="6nSm6" id="5u6qsNuYZOQ" role="PCHHv">
+        <property role="TrG5h" value="postCommandActionHook" />
+        <node concept="3xR696" id="5u6qsNuYZOR" role="PCHHv">
+          <property role="3xR695" value="1KdBIfXPktw/in" />
+          <property role="TrG5h" value="args" />
+          <node concept="3xHE8C" id="5u6qsNuYZOS" role="3xMlr6">
+            <node concept="2RqM1Q" id="5u6qsNuYZOT" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+            </node>
+          </node>
+          <node concept="5jKBG" id="5u6qsNuYZOU" role="lGtFl">
+            <ref role="v9R2y" to="qhqb:6DHtzAG$kKc" resolve="reduce_Base_ViewModelCommand_Parameters" />
+          </node>
+        </node>
+        <node concept="PCHzy" id="5u6qsNuYZOV" role="GbAUv" />
+        <node concept="1W57fq" id="5u6qsNuYZOW" role="lGtFl">
+          <node concept="3IZrLx" id="5u6qsNuYZOX" role="3IZSJc">
+            <node concept="3clFbS" id="5u6qsNuYZOY" role="2VODD2">
+              <node concept="3clFbF" id="5u6qsNuYZOZ" role="3cqZAp">
+                <node concept="2YIFZM" id="5u6qsNuYZP0" role="3clFbG">
+                  <ref role="37wK5l" to="nrs2:6j402mjw4N4" resolve="generateCommandActionHooks" />
+                  <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                  <node concept="30H73N" id="5u6qsNuYZP1" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1WS0z7" id="5u6qsNuYZP2" role="lGtFl">
+          <ref role="2rW$FS" node="5u6qsNuYW0n" resolve="IViewModelCommand_PostProcess_ContextProvider_OperationDefinition" />
+          <node concept="3JmXsc" id="5u6qsNuYZP3" role="3Jn$fo">
+            <node concept="3clFbS" id="5u6qsNuYZP4" role="2VODD2">
+              <node concept="3clFbF" id="5u6qsNuYZP5" role="3cqZAp">
+                <node concept="2OqwBi" id="5u6qsNuYZP6" role="3clFbG">
+                  <node concept="2OqwBi" id="5u6qsNuYZP7" role="2Oq$k0">
+                    <node concept="30H73N" id="5u6qsNuYZP8" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="5u6qsNuYZP9" role="2OqNvi">
+                      <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="5u6qsNuYZPa" role="2OqNvi">
+                    <ref role="37wK5l" to="nrs2:6j402mjwbH_" resolve="getAllCommands" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="17Uvod" id="5u6qsNuYZPb" role="lGtFl">
+          <property role="2qtEX9" value="name" />
+          <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+          <node concept="3zFVjK" id="5u6qsNuYZPc" role="3zH0cK">
+            <node concept="3clFbS" id="5u6qsNuYZPd" role="2VODD2">
+              <node concept="3clFbF" id="5u6qsNuYZPe" role="3cqZAp">
+                <node concept="2YIFZM" id="5u6qsNuYZPf" role="3clFbG">
+                  <ref role="37wK5l" to="jrwo:6j402mjwvJp" resolve="getOperationNameForViewModelCommandHook" />
+                  <ref role="1Pybhc" to="jrwo:2evlxT94KqS" resolve="ViewModelGeneratorNameHelper" />
+                  <node concept="Xl_RD" id="5u6qsNuYZPg" role="37wK5m">
+                    <property role="Xl_RC" value="post" />
+                  </node>
+                  <node concept="30H73N" id="5u6qsNuYZPh" role="37wK5m" />
                 </node>
               </node>
             </node>

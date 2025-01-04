@@ -13,4 +13,6 @@ class CommandActionHooks_ViewContextProvider
   virtual std::shared_ptr<CommandActionHooks_View> BuildSut() = 0;
   virtual void pre_loadView(std::string Value1, bool Value2, int Value3) ;
   virtual void pre_myFlagChecked(bool isChecked) ;
+  virtual void post_loadView(std::string Value1, bool Value2, int Value3) ;
+  virtual void post_myFlagChecked(bool isChecked) ;
 };

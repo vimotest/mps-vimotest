@@ -40,6 +40,7 @@ void CommandActionHooks_ViewTests::when_LoadView( )
 {
   this->contextProvider->pre_loadView(std::string("A"), true, 42);
   this->sut->loadView(std::string("A"), true, 42);
+  this->contextProvider->post_loadView(std::string("A"), true, 42);
 }
 
 void CommandActionHooks_ViewTests::when_uncheck_MyFlag( ) 

@@ -33,6 +33,7 @@ public class CommandActionHooks_ViewTests_Test {
   public void when_LoadView() {
     this.contextProvider.pre_loadView("A", true, 42);
     this.sut.loadView("A", true, 42);
+    this.contextProvider.post_loadView("A", true, 42);
   }
   public void when_uncheck_MyFlag() {
     this.sut.myFlagChecked(false);

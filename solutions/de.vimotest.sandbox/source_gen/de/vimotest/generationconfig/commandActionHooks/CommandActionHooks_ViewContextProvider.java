@@ -10,4 +10,8 @@ public abstract class CommandActionHooks_ViewContextProvider {
   }
   public void pre_myFlagChecked(Boolean isChecked) {
   }
+  public void post_loadView(String Value1, Boolean Value2, Integer Value3) {
+  }
+  public void post_myFlagChecked(Boolean isChecked) {
+  }
 }

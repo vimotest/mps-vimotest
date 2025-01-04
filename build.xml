@@ -367,6 +367,7 @@
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="7124e466-fc92-4803-a656-d7a6b7eb3910(MPS.TextGen)" kind="cl" />
           <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
+          <module ref="31ed4199-712b-4e4a-b792-2c1662ed3b0d(de.vimotest.viewmodel.generator)" kind="cl" />
           <module ref="716e8717-88c0-4280-8c16-b4d88567596f(de.vimotest.viewmodel.testing)" kind="cl" />
           <module ref="479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)" kind="cl" />
           <module ref="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" kind="cl" />
@@ -1152,6 +1153,7 @@
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="7124e466-fc92-4803-a656-d7a6b7eb3910(MPS.TextGen)" kind="cl" />
           <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
+          <module ref="31ed4199-712b-4e4a-b792-2c1662ed3b0d(de.vimotest.viewmodel.generator)" kind="cl" />
           <module ref="716e8717-88c0-4280-8c16-b4d88567596f(de.vimotest.viewmodel.testing)" kind="cl" />
           <module ref="479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)" kind="cl" />
           <module ref="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" kind="cl" />
@@ -2243,7 +2245,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.de.vimotest.viewmodel.testing.generator" depends="java.compile.de.vimotest.types, java.compile.de.vimotest.viewmodel, java.compile.de.vimotest.viewmodel.testing, fetchDependencies">
+  <target name="java.compile.de.vimotest.viewmodel.testing.generator" depends="java.compile.de.vimotest.types, java.compile.de.vimotest.viewmodel, java.compile.de.vimotest.viewmodel.generator, java.compile.de.vimotest.viewmodel.testing, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.vimotest.viewmodel.testing/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.vimotest.viewmodel.testing.generator" />
     <javac destdir="${build.tmp}/java/out/de.vimotest.viewmodel.testing.generator" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -2277,6 +2279,7 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <pathelement path="${build.tmp}/java/out/de.vimotest.types" />
         <pathelement path="${build.tmp}/java/out/de.vimotest.viewmodel" />
+        <pathelement path="${build.tmp}/java/out/de.vimotest.viewmodel.generator" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <pathelement path="${build.tmp}/java/out/de.vimotest.viewmodel.testing" />
         <fileset file="${artifacts.mps}/lib/junit4.jar" />

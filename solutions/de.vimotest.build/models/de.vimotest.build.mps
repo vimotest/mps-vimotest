@@ -517,6 +517,11 @@
               <ref role="3bR37D" to="ffeo:rD7wKO5Iy" resolve="MPS.TextGen" />
             </node>
           </node>
+          <node concept="1SiIV0" id="3FdAgNdkMQA" role="3bR37C">
+            <node concept="3bR9La" id="3FdAgNdkMQB" role="1SiIV1">
+              <ref role="3bR37D" node="220dcIkyAj$" resolve="de.vimotest.viewmodel.generator" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="6mWHjmRTutS" role="3bR37C">
           <node concept="3bR9La" id="6mWHjmRTutT" role="1SiIV1">

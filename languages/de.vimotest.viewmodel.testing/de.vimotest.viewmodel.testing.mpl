@@ -26,7 +26,7 @@
       <external-templates />
       <dependencies>
         <dependency reexport="false">e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)</dependency>
-        <dependency reexport="false" scope="design">31ed4199-712b-4e4a-b792-2c1662ed3b0d(de.vimotest.viewmodel.generator)</dependency>
+        <dependency reexport="false">31ed4199-712b-4e4a-b792-2c1662ed3b0d(de.vimotest.viewmodel.generator)</dependency>
         <dependency reexport="false">479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</dependency>
         <dependency reexport="false">c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)</dependency>
         <dependency reexport="false">7124e466-fc92-4803-a656-d7a6b7eb3910(MPS.TextGen)</dependency>

@@ -6245,6 +6245,31 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="178awX4Z$hU" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="53m0:178awX4ZkwR" resolve="DataContextPath" />
+      <node concept="gft3U" id="178awX4Z$hV" role="1lVwrX">
+        <node concept="_iklQ" id="178awX4Z$hW" role="gfFT$">
+          <property role="_iklR" value="path/to/resource" />
+          <node concept="17Uvod" id="178awX4Z$hX" role="lGtFl">
+            <property role="2qtEX9" value="value" />
+            <property role="P4ACc" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519052396/2674824929519052397" />
+            <node concept="3zFVjK" id="178awX4Z$hY" role="3zH0cK">
+              <node concept="3clFbS" id="178awX4Z$hZ" role="2VODD2">
+                <node concept="3clFbF" id="178awX4ZBHb" role="3cqZAp">
+                  <node concept="2OqwBi" id="178awX4ZCa5" role="3clFbG">
+                    <node concept="30H73N" id="178awX4ZBHa" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="178awX4ZEfp" role="2OqNvi">
+                      <ref role="3TsBF5" to="53m0:178awX4ZkwT" resolve="value" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="b5Tf3" id="5ZcB1GfUHlM" role="jxRDz" />
   </node>
   <node concept="jVnub" id="5ZcB1GfUHlK">
@@ -6776,6 +6801,25 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="178awX4ZEZ5" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="53m0:178awX4ZkwR" resolve="DataContextPath" />
+      <node concept="gft3U" id="178awX4ZEZ6" role="1lVwrX">
+        <node concept="15s5l7" id="178awX4ZEZ7" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
+          <property role="huDt6" value="The reference  String (target) is out of search scope" />
+        </node>
+        <node concept="3xR696" id="178awX4ZEZ8" role="gfFT$">
+          <property role="3xR695" value="1KdBIfXPktw/in" />
+          <property role="TrG5h" value="contextPath" />
+          <node concept="3xHE8C" id="178awX4ZEZ9" role="3xMlr6">
+            <node concept="2RqM1Q" id="178awX4ZEZa" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
             </node>
           </node>
         </node>

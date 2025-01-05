@@ -1,0 +1,41 @@
+namespace context ;
+
+private import Testing ;
+
+class DataPathContext_ViewTests {
+  
+  private sut : DataPathContext_View  ;
+  
+  private contextProvider : DataPathContext_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new DataPathContext_ViewContextProviderImpl (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public Data_Path_Context_given_my_element_when_then_ (  ) {
+  this.given_my_element (  );
+   this.BuildSut (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  public given_my_element (  ) {
+  this.contextProvider.SetDataPathContext ( "resource:/elements/myelement" );
+ }
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+}

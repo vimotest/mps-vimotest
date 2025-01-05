@@ -1,0 +1,14 @@
+namespace context ;
+
+
+
+class DataPathContext_ViewContextProviderImpl specializes DataPathContext_ViewContextProvider {
+  
+  public Init (  ) {     }
+  
+  public SetDataPathContext (   in contextPath : String  ) {     }
+  
+  public BuildSut (  ) : DataPathContext_View  {
+  return null;
+ }
+}

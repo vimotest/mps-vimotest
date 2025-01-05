@@ -1349,5 +1349,20 @@
       <ref role="PrY4T" to="at53:1RiAxJSewmp" resolve="IHasRowHandle" />
     </node>
   </node>
+  <node concept="1TIwiD" id="178awX4ZkwR">
+    <property role="EcuMT" value="1281320339057231927" />
+    <property role="3GE5qa" value="test.context.other" />
+    <property role="TrG5h" value="DataPathContext" />
+    <property role="34LRSv" value="data context path" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="178awX4ZkwT" role="1TKVEl">
+      <property role="IQ2nx" value="1281320339057231929" />
+      <property role="TrG5h" value="path" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="178awX4Zkx5" role="PzmwI">
+      <ref role="PrY4T" node="2Yd1qrJOMZM" resolve="ITestScenarioContext" />
+    </node>
+  </node>
 </model>
 

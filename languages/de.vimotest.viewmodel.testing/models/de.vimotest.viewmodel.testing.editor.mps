@@ -6734,5 +6734,26 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="178awX4ZkwU">
+    <property role="3GE5qa" value="test.context.other" />
+    <ref role="1XX52x" to="53m0:178awX4ZkwR" resolve="DataPathContext" />
+    <node concept="3EZMnI" id="178awX4ZkwW" role="2wV5jI">
+      <node concept="3F0ifn" id="7Odyzd$afhJ" role="3EZMnx">
+        <property role="3F0ifm" value="name:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0A7n" id="7Odyzd$afhM" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="178awX4Zkx0" role="3EZMnx">
+        <property role="3F0ifm" value="path:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0A7n" id="178awX4Zkx3" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:178awX4ZkwT" resolve="path" />
+      </node>
+      <node concept="2iRfu4" id="178awX4ZkwZ" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

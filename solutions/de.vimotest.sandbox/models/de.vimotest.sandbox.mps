@@ -170,6 +170,9 @@
       <concept id="6903063968894535728" name="de.vimotest.viewmodel.testing.structure.SimpleStringContext" flags="ng" index="1g3lgF">
         <child id="5775867078588257643" name="value" index="3125nE" />
       </concept>
+      <concept id="1281320339057231927" name="de.vimotest.viewmodel.testing.structure.DataPathContext" flags="ng" index="1ldm8S">
+        <property id="1281320339057231929" name="path" index="1ldm8Q" />
+      </concept>
       <concept id="7199841511154467673" name="de.vimotest.viewmodel.testing.structure.ComposedWhenThenParts" flags="ng" index="1s$VFG">
         <child id="7199841511154487303" name="actionsWithDescription" index="1s$QAM" />
         <child id="7199841511154487304" name="assertsWithDescription" index="1s$QAX" />
@@ -4958,6 +4961,27 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="103ZX$" id="_w8fxLMj9y">
+    <property role="3GE5qa" value="context" />
+    <property role="TrG5h" value="DataPathContext_View" />
+    <node concept="103ZXx" id="_w8fxLMj9z" role="103ZXC" />
+    <node concept="103ZXB" id="_w8fxLMj9_" role="103ZXF" />
+  </node>
+  <node concept="30n1Qd" id="_w8fxLMj9A">
+    <property role="3GE5qa" value="context" />
+    <property role="TrG5h" value="DataPathContext_ViewTests" />
+    <ref role="30n1PB" node="_w8fxLMj9y" resolve="DataContextPath_View" />
+    <node concept="3LKzX3" id="_w8fxLMj9B" role="30n1Qb">
+      <property role="TrG5h" value="Data Path Context" />
+      <node concept="1IbZgy" id="_w8fxLMj9C" role="DUd2K">
+        <node concept="1ldm8S" id="_w8fxLQ54Z" role="DUiTU">
+          <property role="TrG5h" value="my element" />
+          <property role="1ldm8Q" value="resource:/elements/myelement" />
+        </node>
+      </node>
+      <node concept="1s$VFG" id="_w8fxLMj9F" role="1s$QAY" />
     </node>
   </node>
 </model>

@@ -1,0 +1,12 @@
+namespace context ;
+
+
+
+abstract class XmlElementContext_ViewContextProvider {
+  
+  public abstract Init (  ) ;
+  
+  public abstract SetXmlElementContext (  ) ;
+  
+  public abstract BuildSut (  ) : XmlElementContext_View  ;
+}

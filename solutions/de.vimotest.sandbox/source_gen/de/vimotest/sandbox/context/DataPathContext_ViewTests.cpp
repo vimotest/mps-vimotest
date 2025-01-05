@@ -15,6 +15,7 @@ namespace context
     std::shared_ptr<DataPathContext_ViewContextProvider> contextProvider;
     virtual void BuildSut() ;
     virtual void given_my_element() ;
+    virtual void given_() ;
     protected:
     void SetUp() override ;
   };
@@ -28,11 +29,20 @@ namespace context
     this->given_my_element();
     this->BuildSut();
   }
+  TEST_F(DataPathContext_ViewTests,  Data_Path_Context_implicit_name_given_when_then_) 
+  {
+    this->given_();
+    this->BuildSut();
+  }
   void DataPathContext_ViewTests::BuildSut( ) 
   {
     this->sut = this->contextProvider->BuildSut();
   }
   void DataPathContext_ViewTests::given_my_element( ) 
+  {
+    this->contextProvider->SetDataPathContext(std::string("resource:/elements/myelement"));
+  }
+  void DataPathContext_ViewTests::given_( ) 
   {
     this->contextProvider->SetDataPathContext(std::string("resource:/elements/myelement"));
   }

@@ -5242,11 +5242,8 @@
     <property role="3GE5qa" value="test.context.other" />
     <ref role="1XX52x" to="53m0:5ZcB1GfKswK" resolve="SimpleStringContext" />
     <node concept="3EZMnI" id="5ZcB1GfKswS" role="2wV5jI">
-      <node concept="3F0A7n" id="5ZcB1GgmYqY" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="3F0ifn" id="5ZcB1GgmYr1" role="3EZMnx">
-        <property role="3F0ifm" value="=" />
+      <node concept="PMmxH" id="5hwqM0OF4Lg" role="3EZMnx">
+        <ref role="PMmxG" node="5hwqM0OETgQ" resolve="ITestScenarioContext_name_EC" />
       </node>
       <node concept="3F1sOY" id="50C086h85lG" role="3EZMnx">
         <ref role="1NtTu8" to="53m0:50C086h85lF" resolve="value" />
@@ -5266,6 +5263,12 @@
       <node concept="PMmxH" id="1MbPAgiZWdO" role="3EZMnx">
         <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_EC" />
         <node concept="pVoyu" id="1MbPAgiZWdP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="PMmxH" id="5hwqM0OF4Li" role="3EZMnx">
+        <ref role="PMmxG" node="5hwqM0OETI_" resolve="ITestScenarioContext_name_Inspector_EC" />
+        <node concept="pVoyu" id="5hwqM0OF4Lj" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -5350,8 +5353,8 @@
     <property role="3GE5qa" value="test.context.xml" />
     <ref role="1XX52x" to="53m0:6RKU0s0VjoB" resolve="XmlElementContext" />
     <node concept="3EZMnI" id="6RKU0s0VjL0" role="2wV5jI">
-      <node concept="3F0A7n" id="6RKU0s18UkD" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="PMmxH" id="5hwqM0OF4Lk" role="3EZMnx">
+        <ref role="PMmxG" node="5hwqM0OETgQ" resolve="ITestScenarioContext_name_EC" />
       </node>
       <node concept="3F1sOY" id="6RKU0s0VjL2" role="3EZMnx">
         <ref role="1NtTu8" to="53m0:6RKU0s0VjoC" resolve="xmlElement" />
@@ -5362,6 +5365,12 @@
       <node concept="PMmxH" id="1MbPAgiZWdS" role="3EZMnx">
         <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_EC" />
         <node concept="pVoyu" id="1MbPAgiZWdT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="PMmxH" id="5hwqM0OF4Lm" role="3EZMnx">
+        <ref role="PMmxG" node="5hwqM0OETI_" resolve="ITestScenarioContext_name_Inspector_EC" />
+        <node concept="pVoyu" id="5hwqM0OF4Ln" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -6019,11 +6028,8 @@
     <property role="3GE5qa" value="test.context.datatable" />
     <ref role="1XX52x" to="53m0:6RKU0sd8pLq" resolve="DataTableContext" />
     <node concept="3EZMnI" id="6RKU0sdzp_I" role="2wV5jI">
-      <node concept="3F0A7n" id="6RKU0sdzp_M" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="3F0ifn" id="6RKU0sdzp_P" role="3EZMnx">
-        <property role="3F0ifm" value="=" />
+      <node concept="PMmxH" id="5hwqM0OEUxl" role="3EZMnx">
+        <ref role="PMmxG" node="5hwqM0OETgQ" resolve="ITestScenarioContext_name_EC" />
       </node>
       <node concept="1CiYdB" id="6RKU0sdztyu" role="3EZMnx">
         <node concept="2XI2dN" id="6RKU0sdztyw" role="2XI0mt">
@@ -6054,6 +6060,12 @@
       <node concept="PMmxH" id="1MbPAgiZWdM" role="3EZMnx">
         <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_EC" />
         <node concept="pVoyu" id="1MbPAgiZWdN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="PMmxH" id="5hwqM0OEU$V" role="3EZMnx">
+        <ref role="PMmxG" node="5hwqM0OETI_" resolve="ITestScenarioContext_name_Inspector_EC" />
+        <node concept="pVoyu" id="5hwqM0OEU$W" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -6210,7 +6222,7 @@
   </node>
   <node concept="PKFIW" id="1MbPAgiZVDs">
     <property role="3GE5qa" value="test.context" />
-    <property role="TrG5h" value="ITestScenarioContext_customTestContextTypeName_EC" />
+    <property role="TrG5h" value="ITestScenarioContext_customTestContextTypeName_Inspector_EC" />
     <ref role="1XX52x" to="53m0:2Yd1qrJOMZM" resolve="ITestScenarioContext" />
     <node concept="3EZMnI" id="1MbPAgiZVPB" role="2wV5jI">
       <node concept="3F0ifn" id="1MbPAgiZVPF" role="3EZMnx">
@@ -6738,12 +6750,8 @@
     <property role="3GE5qa" value="test.context.other" />
     <ref role="1XX52x" to="53m0:178awX4ZkwR" resolve="DataPathContext" />
     <node concept="3EZMnI" id="178awX4ZkwW" role="2wV5jI">
-      <node concept="3F0ifn" id="7Odyzd$afhJ" role="3EZMnx">
-        <property role="3F0ifm" value="name:" />
-        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
-      </node>
-      <node concept="3F0A7n" id="7Odyzd$afhM" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="PMmxH" id="5hwqM0OF4L3" role="3EZMnx">
+        <ref role="PMmxG" node="5hwqM0OETgQ" resolve="ITestScenarioContext_name_EC" />
       </node>
       <node concept="3F0ifn" id="178awX4Zkx0" role="3EZMnx">
         <property role="3F0ifm" value="path:" />
@@ -6753,6 +6761,65 @@
         <ref role="1NtTu8" to="53m0:178awX4ZkwT" resolve="path" />
       </node>
       <node concept="2iRfu4" id="178awX4ZkwZ" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="5hwqM0OF4L4" role="6VMZX">
+      <node concept="PMmxH" id="5hwqM0OF4L9" role="3EZMnx">
+        <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_EC" />
+      </node>
+      <node concept="l2Vlx" id="5hwqM0OF4L5" role="2iSdaV" />
+      <node concept="PMmxH" id="5hwqM0OF4L7" role="3EZMnx">
+        <ref role="PMmxG" node="5hwqM0OETI_" resolve="ITestScenarioContext_name_Inspector_EC" />
+        <node concept="pVoyu" id="5hwqM0OF4La" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="5hwqM0OETgQ">
+    <property role="3GE5qa" value="test.context" />
+    <property role="TrG5h" value="ITestScenarioContext_name_EC" />
+    <ref role="1XX52x" to="53m0:2Yd1qrJOMZM" resolve="ITestScenarioContext" />
+    <node concept="3EZMnI" id="5hwqM0OETgX" role="2wV5jI">
+      <node concept="2iRfu4" id="5hwqM0OETgY" role="2iSdaV" />
+      <node concept="3F0A7n" id="5hwqM0OETgZ" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="5hwqM0OETh0" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="pkWqt" id="5hwqM0OETh1" role="pqm2j">
+        <node concept="3clFbS" id="5hwqM0OETh2" role="2VODD2">
+          <node concept="3clFbF" id="5hwqM0OETh3" role="3cqZAp">
+            <node concept="2OqwBi" id="5hwqM0OETh4" role="3clFbG">
+              <node concept="2OqwBi" id="5hwqM0OETh5" role="2Oq$k0">
+                <node concept="pncrf" id="5hwqM0OETh6" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5hwqM0OETh7" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="17RvpY" id="5hwqM0OETh8" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="5hwqM0OETI_">
+    <property role="3GE5qa" value="test.context" />
+    <property role="TrG5h" value="ITestScenarioContext_name_Inspector_EC" />
+    <ref role="1XX52x" to="53m0:2Yd1qrJOMZM" resolve="ITestScenarioContext" />
+    <node concept="3EZMnI" id="5hwqM0OETIB" role="2wV5jI">
+      <node concept="3F0ifn" id="5hwqM0OETIF" role="3EZMnx">
+        <property role="3F0ifm" value="context name:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0A7n" id="5hwqM0OETII" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <property role="1$x2rV" value="automatically generated by content" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="2iRfu4" id="5hwqM0OETIE" role="2iSdaV" />
     </node>
   </node>
 </model>

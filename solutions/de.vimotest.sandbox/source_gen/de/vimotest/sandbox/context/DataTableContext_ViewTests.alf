@@ -35,6 +35,11 @@ class DataTableContext_ViewTests {
    this.BuildSut (  );
  }
   
+  public DataTable_Context_implicit_name_given_when_then_ (  ) {
+  this.given_ (  );
+   this.BuildSut (  );
+ }
+  
   
   protected BuildSut (  ) {
   this.sut = this.contextProvider.BuildSut (  );
@@ -66,6 +71,12 @@ class DataTableContext_ViewTests {
   
   public given_dataTableToXml (  ) {
   this.contextProvider.SetDataTableXml ( this.dataTableToXml );
+ }
+  
+  private  : String = "| id | name |\n| 0 | A |";
+  
+  public given_ (  ) {
+  this.contextProvider.SetDataTableString ( this. );
  }
   
   // When Helper Definitions

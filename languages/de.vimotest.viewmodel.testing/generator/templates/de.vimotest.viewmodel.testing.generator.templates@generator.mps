@@ -6289,7 +6289,7 @@
           <property role="huDt6" value="Node 'stringDefinition' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'" />
         </node>
         <node concept="6lMYc" id="50C086h8ckS" role="gfFT$">
-          <property role="TrG5h" value="stringDefinition" />
+          <property role="TrG5h" value="definition" />
           <property role="PCHHn" value="6OepWIVA92M/private" />
           <node concept="3xHE8C" id="50C086h8ckT" role="3xMlr6">
             <node concept="2RqM1Q" id="50C086h8ckU" role="_vnH8">
@@ -6307,8 +6307,8 @@
                     <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
                     <node concept="2OqwBi" id="50C086h8cl8" role="37wK5m">
                       <node concept="30H73N" id="50C086h8cl9" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="50C086h8cla" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      <node concept="2qgKlT" id="5hwqM0OU60d" role="2OqNvi">
+                        <ref role="37wK5l" to="fwln:5hwqM0ODTEY" resolve="getDisplayName" />
                       </node>
                     </node>
                   </node>
@@ -6419,7 +6419,7 @@
           <property role="huDt6" value="Node 'stringDefinition' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'" />
         </node>
         <node concept="6lMYc" id="6RKU0sdiOPa" role="gfFT$">
-          <property role="TrG5h" value="stringDefinition" />
+          <property role="TrG5h" value="definition" />
           <property role="PCHHn" value="6OepWIVA92M/private" />
           <node concept="3xHE8C" id="6RKU0sdiOPb" role="3xMlr6">
             <node concept="2RqM1Q" id="6RKU0sdiOPc" role="_vnH8">
@@ -6437,8 +6437,8 @@
                     <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
                     <node concept="2OqwBi" id="6RKU0sdiOPi" role="37wK5m">
                       <node concept="30H73N" id="6RKU0sdiOPj" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="6RKU0sdiOPk" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      <node concept="2qgKlT" id="5hwqM0OU7Fr" role="2OqNvi">
+                        <ref role="37wK5l" to="fwln:5hwqM0ODTEY" resolve="getEffectiveContextName" />
                       </node>
                     </node>
                   </node>
@@ -6492,7 +6492,7 @@
           <property role="huDt6" value="Node 'stringDefinition' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'" />
         </node>
         <node concept="6lMYc" id="5ZcB1GfZQRq" role="gfFT$">
-          <property role="TrG5h" value="stringDefinition" />
+          <property role="TrG5h" value="definition" />
           <property role="PCHHn" value="6OepWIVA92M/private" />
           <node concept="3xHE8C" id="5ZcB1GfZRsM" role="3xMlr6">
             <node concept="2RqM1Q" id="5ZcB1GfZRsK" role="_vnH8">
@@ -6534,8 +6534,8 @@
                     <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
                     <node concept="2OqwBi" id="6RKU0sa6eJH" role="37wK5m">
                       <node concept="30H73N" id="6RKU0sa6eJI" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="6RKU0sa6eJJ" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      <node concept="2qgKlT" id="5hwqM0OU82t" role="2OqNvi">
+                        <ref role="37wK5l" to="fwln:5hwqM0ODTEY" resolve="getEffectiveContextName" />
                       </node>
                     </node>
                   </node>
@@ -6593,7 +6593,7 @@
           <property role="huDt6" value="Node 'stringDefinition' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'" />
         </node>
         <node concept="6lMYc" id="5ZcB1Gh4RZ2" role="gfFT$">
-          <property role="TrG5h" value="stringDefinition" />
+          <property role="TrG5h" value="definition" />
           <property role="PCHHn" value="6OepWIVA92M/private" />
           <node concept="3xHE8C" id="5ZcB1Gh4RZ3" role="3xMlr6">
             <node concept="2RqM1Q" id="5ZcB1Gh4RZ4" role="_vnH8">
@@ -6611,8 +6611,8 @@
                     <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
                     <node concept="2OqwBi" id="6RKU0sa6bMh" role="37wK5m">
                       <node concept="30H73N" id="6RKU0sa6bMi" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="6RKU0sa6bMj" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      <node concept="2qgKlT" id="5hwqM0OUawG" role="2OqNvi">
+                        <ref role="37wK5l" to="fwln:5hwqM0ODTEY" resolve="getEffectiveContextName" />
                       </node>
                     </node>
                   </node>

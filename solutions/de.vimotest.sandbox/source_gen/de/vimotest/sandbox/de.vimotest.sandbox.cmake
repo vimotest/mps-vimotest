@@ -54,6 +54,7 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_View.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_View.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/DataPathContext_View.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_View.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewContextProvider.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewContextProvider.cpp
@@ -102,6 +103,8 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewContextProviderImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/DataPathContext_ViewContextProvider.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/DataPathContext_ViewContextProviderImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_ViewContextProvider.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_ViewContextProviderImpl.cpp
 )
 
 set(GENERATED_HEADERS
@@ -158,6 +161,7 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_View.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_View.h
   ${CMAKE_CURRENT_LIST_DIR}/context/DataPathContext_View.h
+  ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_View.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewContextProvider.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewContextProvider.h
@@ -206,5 +210,7 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewContextProviderImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/context/DataPathContext_ViewContextProvider.h
   ${CMAKE_CURRENT_LIST_DIR}/context/DataPathContext_ViewContextProviderImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_ViewContextProvider.h
+  ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_ViewContextProviderImpl.h
 )
 

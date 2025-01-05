@@ -30,6 +30,9 @@ namespace context
   </DataRow>
 </Data>)";
     virtual void given_dataTableToXml() ;
+    std::string  = R"(| id | name |
+| 0 | A |)";
+    virtual void given_() ;
     protected:
     void SetUp() override ;
   };
@@ -58,6 +61,11 @@ namespace context
     this->given_dataTableToXml();
     this->BuildSut();
   }
+  TEST_F(DataTableContext_ViewTests,  DataTable_Context_implicit_name_given_when_then_) 
+  {
+    this->given_();
+    this->BuildSut();
+  }
   void DataTableContext_ViewTests::BuildSut( ) 
   {
     this->sut = this->contextProvider->BuildSut();
@@ -77,6 +85,10 @@ namespace context
   void DataTableContext_ViewTests::given_dataTableToXml( ) 
   {
     this->contextProvider->SetDataTableXml(this->dataTableToXml);
+  }
+  void DataTableContext_ViewTests::given_( ) 
+  {
+    this->contextProvider->SetDataTableString(this->);
   }
 }
 

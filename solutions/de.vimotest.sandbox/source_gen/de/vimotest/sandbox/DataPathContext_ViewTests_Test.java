@@ -16,6 +16,11 @@ public class DataPathContext_ViewTests_Test {
     this.given_my_element();
     this.BuildSut();
   }
+  @Test
+  public void test_Data_Path_Context_implicit_name_given_when_then_() throws Exception {
+    this.given_();
+    this.BuildSut();
+  }
   @BeforeEach
   public void setUp() {
     this.contextProvider = new DataPathContext_ViewContextProviderImpl();
@@ -31,6 +36,9 @@ public class DataPathContext_ViewTests_Test {
 
 
   public void given_my_element() {
+    this.contextProvider.SetDataPathContext("resource:/elements/myelement");
+  }
+  public void given_() {
     this.contextProvider.SetDataPathContext("resource:/elements/myelement");
   }
 

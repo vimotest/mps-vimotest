@@ -20,6 +20,11 @@ class DataPathContext_ViewTests {
    this.BuildSut (  );
  }
   
+  public Data_Path_Context_implicit_name_given_when_then_ (  ) {
+  this.given_ (  );
+   this.BuildSut (  );
+ }
+  
   
   protected BuildSut (  ) {
   this.sut = this.contextProvider.BuildSut (  );
@@ -30,6 +35,10 @@ class DataPathContext_ViewTests {
 
   
   public given_my_element (  ) {
+  this.contextProvider.SetDataPathContext ( "resource:/elements/myelement" );
+ }
+  
+  public given_ (  ) {
   this.contextProvider.SetDataPathContext ( "resource:/elements/myelement" );
  }
   

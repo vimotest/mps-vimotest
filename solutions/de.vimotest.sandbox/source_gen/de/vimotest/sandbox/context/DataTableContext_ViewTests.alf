@@ -36,7 +36,7 @@ class DataTableContext_ViewTests {
  }
   
   public DataTable_Context_implicit_name_given_id_0_name_A_when_then_ (  ) {
-  this.given_id_0_name_A_ (  );
+  this.given_id_0_name_A (  );
    this.BuildSut (  );
  }
   
@@ -73,10 +73,10 @@ class DataTableContext_ViewTests {
   this.contextProvider.SetDataTableXml ( this.dataTableToXml );
  }
   
-  private id_0_name_A_ : String = "| id | name |\n| 0 | A |";
+  private id_0_name_A : String = "| id | name |\n| 0 | A |";
   
-  public given_id_0_name_A_ (  ) {
-  this.contextProvider.SetDataTableString ( this.id_0_name_A_ );
+  public given_id_0_name_A (  ) {
+  this.contextProvider.SetDataTableString ( this.id_0_name_A );
  }
   
   // When Helper Definitions

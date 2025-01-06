@@ -4,6 +4,7 @@
 #include "XmlElementContext_ViewContextProvider.h"
 #include <memory>
 #include "XmlElementContext_View.h"
+#include <string>
 
 namespace context
 {
@@ -11,7 +12,7 @@ namespace context
   {
     public:
     void Init() override ;
-    void SetXmlElementContext() override ;
+    void SetXmlElementContext(std::string xml) override ;
     std::shared_ptr<XmlElementContext_View> BuildSut() override ;
   };
 }

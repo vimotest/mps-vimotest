@@ -6222,6 +6222,42 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="21gCjngs$px" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="53m0:6RKU0s0VjoB" resolve="XmlElementContext" />
+      <node concept="gft3U" id="21gCjngs$Ir" role="1lVwrX">
+        <node concept="32M0$0" id="21gCjngs$Is" role="gfFT$">
+          <node concept="32Pqhl" id="21gCjngs$It" role="32PqmZ">
+            <node concept="_iR_j" id="21gCjngs$Iu" role="32Men7" />
+            <node concept="_vnHe" id="21gCjngs$Iv" role="32Men1">
+              <node concept="1ZhdrF" id="21gCjngs$Iw" role="lGtFl">
+                <property role="2qtEX8" value="nameRef" />
+                <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
+                <node concept="3$xsQk" id="21gCjngs$Ix" role="3$ytzL">
+                  <node concept="3clFbS" id="21gCjngs$Iy" role="2VODD2">
+                    <node concept="3clFbF" id="21gCjngs$Iz" role="3cqZAp">
+                      <node concept="1PxgMI" id="21gCjngs$I$" role="3clFbG">
+                        <property role="1BlNFB" value="true" />
+                        <node concept="chp4Y" id="21gCjngs$I_" role="3oSUPX">
+                          <ref role="cht4Q" to="28lk:2HeY20H6tuG" resolve="AttributeDefinition" />
+                        </node>
+                        <node concept="2OqwBi" id="21gCjngs$IA" role="1m5AlR">
+                          <node concept="1iwH7S" id="21gCjngs$IB" role="2Oq$k0" />
+                          <node concept="1iwH70" id="21gCjngs$IC" role="2OqNvi">
+                            <ref role="1iwH77" node="5ZcB1GfZVeY" resolve="ITestScenarioContext_NamespaceDefinition" />
+                            <node concept="30H73N" id="21gCjngs$ID" role="1iwH7V" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="7NXUkdP71Mh" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="53m0:7NXUkdOvp8K" resolve="ContextReference" />
@@ -6657,6 +6693,84 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="21gCjngsAf1" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="53m0:6RKU0s0VjoB" resolve="XmlElementContext" />
+      <ref role="2sgKRv" node="5ZcB1GfZVeY" resolve="ITestScenarioContext_NamespaceDefinition" />
+      <node concept="gft3U" id="21gCjngsAW_" role="1lVwrX">
+        <node concept="15s5l7" id="21gCjngsAWA" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
+          <property role="huDt6" value="The reference  String (target) is out of search scope" />
+        </node>
+        <node concept="15s5l7" id="21gCjngsAWB" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be child)&quot;;FLAVOUR_MESSAGE=&quot;Node 'stringDefinition' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3120704408893424229]&quot;;" />
+          <property role="huDt6" value="Node 'stringDefinition' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'" />
+        </node>
+        <node concept="6lMYc" id="21gCjngsAWC" role="gfFT$">
+          <property role="TrG5h" value="definition" />
+          <property role="PCHHn" value="6OepWIVA92M/private" />
+          <node concept="3xHE8C" id="21gCjngsAWD" role="3xMlr6">
+            <node concept="2RqM1Q" id="21gCjngsAWE" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+            </node>
+          </node>
+          <node concept="17Uvod" id="21gCjngsAWF" role="lGtFl">
+            <property role="2qtEX9" value="name" />
+            <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+            <node concept="3zFVjK" id="21gCjngsAWG" role="3zH0cK">
+              <node concept="3clFbS" id="21gCjngsAWH" role="2VODD2">
+                <node concept="3clFbF" id="21gCjngsAWI" role="3cqZAp">
+                  <node concept="2YIFZM" id="21gCjngsAWJ" role="3clFbG">
+                    <ref role="37wK5l" to="18ew:~NameUtil.toValidIdentifier(java.lang.String)" resolve="toValidIdentifier" />
+                    <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                    <node concept="2OqwBi" id="21gCjngsAWK" role="37wK5m">
+                      <node concept="30H73N" id="21gCjngsAWL" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="21gCjngsAWM" role="2OqNvi">
+                        <ref role="37wK5l" to="fwln:5hwqM0ODTEY" resolve="getEffectiveContextName" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1_aNVd" id="21gCjngsAWN" role="6k5i9">
+            <property role="1_3b9j" value="&#10;" />
+            <node concept="3_AbJx" id="21gCjngsAWO" role="lGtFl">
+              <node concept="3_AbJw" id="21gCjngsAWP" role="3_A0Ny">
+                <node concept="3clFbS" id="21gCjngsAWQ" role="2VODD2">
+                  <node concept="3cpWs8" id="21gCjngsAWR" role="3cqZAp">
+                    <node concept="3cpWsn" id="21gCjngsAWS" role="3cpWs9">
+                      <property role="TrG5h" value="content" />
+                      <node concept="17QB3L" id="21gCjngsAWT" role="1tU5fm" />
+                      <node concept="2YIFZM" id="21gCjngsAWU" role="33vP2m">
+                        <ref role="37wK5l" to="ao3:~TextGeneratorEngine.generateText(org.jetbrains.mps.openapi.model.SNode)" resolve="generateText" />
+                        <ref role="1Pybhc" to="ao3:~TextGeneratorEngine" resolve="TextGeneratorEngine" />
+                        <node concept="2OqwBi" id="21gCjngB3Zj" role="37wK5m">
+                          <node concept="30H73N" id="21gCjngsAWW" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="21gCjngB4yq" role="2OqNvi">
+                            <ref role="3Tt5mk" to="53m0:6RKU0s0VjoC" resolve="xmlElement" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="21gCjngsAWY" role="3cqZAp">
+                    <node concept="2YIFZM" id="21gCjngsAWZ" role="3clFbG">
+                      <ref role="37wK5l" to="zcip:50C086h94iT" resolve="transformMultiLine" />
+                      <ref role="1Pybhc" to="zcip:50C086h8Rr7" resolve="MultiLineTransformationHelper" />
+                      <node concept="37vLTw" id="21gCjngsAX0" role="37wK5m">
+                        <ref role="3cqZAo" node="21gCjngsAWS" resolve="content" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="b5Tf3" id="5ZcB1GfUHlL" role="jxRDz" />
   </node>
   <node concept="jVnub" id="5ZcB1GfUJJa">
@@ -6778,6 +6892,25 @@
                   <ref role="3TsBF5" to="53m0:5ZcB1GgVwqn" resolve="generateAsFile" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="21gCjngxS0c" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="53m0:6RKU0s0VjoB" resolve="XmlElementContext" />
+      <node concept="gft3U" id="21gCjngxS0d" role="1lVwrX">
+        <node concept="15s5l7" id="21gCjngxS0e" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
+          <property role="huDt6" value="The reference  String (target) is out of search scope" />
+        </node>
+        <node concept="3xR696" id="21gCjngxS0f" role="gfFT$">
+          <property role="3xR695" value="1KdBIfXPktw/in" />
+          <property role="TrG5h" value="xml" />
+          <node concept="3xHE8C" id="21gCjngxS0g" role="3xMlr6">
+            <node concept="2RqM1Q" id="21gCjngxS0h" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
             </node>
           </node>
         </node>

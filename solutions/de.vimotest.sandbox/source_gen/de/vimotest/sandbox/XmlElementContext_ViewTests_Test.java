@@ -11,14 +11,16 @@ import de.vimotest.sandbox.context.XmlElementContext_ViewContextProviderImpl;
 public class XmlElementContext_ViewTests_Test {
   private XmlElementContext_View sut;
   private XmlElementContext_ViewContextProvider contextProvider;
+  private String myxml = "<MyXML>  \n  <Inner></Inner>\n</MyXML>";
+  private String MyXML_Inner = "<MyXML>  \n  <Inner></Inner>\n</MyXML>";
   @Test
   public void test_Xml_Context_given_myxml_when_then_() throws Exception {
     this.given_myxml();
     this.BuildSut();
   }
   @Test
-  public void test_Xml_Context_explicit_name_given_XmlElementContext_when_then_() throws Exception {
-    this.given_XmlElementContext();
+  public void test_Xml_Context_explicit_name_given_MyXML_Inner_when_then_() throws Exception {
+    this.given_MyXML_Inner();
     this.BuildSut();
   }
   @BeforeEach
@@ -36,10 +38,10 @@ public class XmlElementContext_ViewTests_Test {
 
 
   public void given_myxml() {
-    this.contextProvider.SetXmlElementContext();
+    this.contextProvider.SetXmlElementContext(this.myxml);
   }
-  public void given_XmlElementContext() {
-    this.contextProvider.SetXmlElementContext();
+  public void given_MyXML_Inner() {
+    this.contextProvider.SetXmlElementContext(this.MyXML_Inner);
   }
 
 

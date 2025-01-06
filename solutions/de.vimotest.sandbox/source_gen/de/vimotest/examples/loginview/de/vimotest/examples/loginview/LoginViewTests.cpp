@@ -15,6 +15,10 @@ namespace de::vimotest::examples::loginview
     std::shared_ptr<LoginViewContextProvider> contextProvider;
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
+    std::string prefilledValues = R"(<Prefs>  
+  <User>Ada</User>
+  <Pw>Lovelace1</Pw>
+</Prefs>)";
     virtual void given_prefilledValues() ;
     virtual void when_LoadView() ;
     virtual void when_fill_User_in_Username() ;
@@ -103,7 +107,7 @@ namespace de::vimotest::examples::loginview
   }
   void LoginViewTests::given_prefilledValues( ) 
   {
-    this->contextProvider->SetXmlElementContext();
+    this->contextProvider->SetXmlElementContext(this->prefilledValues);
   }
   void LoginViewTests::when_LoadView( ) 
   {

@@ -4,6 +4,7 @@
 #include "LoginViewContextProvider.h"
 #include <memory>
 #include "LoginView.h"
+#include <string>
 
 namespace de::vimotest::examples::loginview
 {
@@ -12,7 +13,7 @@ namespace de::vimotest::examples::loginview
     public:
     void Init() override ;
     void SetEmptyContext() override ;
-    void SetXmlElementContext() override ;
+    void SetXmlElementContext(std::string xml) override ;
     std::shared_ptr<LoginView> BuildSut() override ;
   };
 }

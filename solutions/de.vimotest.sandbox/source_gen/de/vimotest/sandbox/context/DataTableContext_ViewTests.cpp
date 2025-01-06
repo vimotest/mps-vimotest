@@ -30,9 +30,9 @@ namespace context
   </DataRow>
 </Data>)";
     virtual void given_dataTableToXml() ;
-    std::string id_0_name_A_ = R"(| id | name |
+    std::string id_0_name_A = R"(| id | name |
 | 0 | A |)";
-    virtual void given_id_0_name_A_() ;
+    virtual void given_id_0_name_A() ;
     protected:
     void SetUp() override ;
   };
@@ -63,7 +63,7 @@ namespace context
   }
   TEST_F(DataTableContext_ViewTests,  DataTable_Context_implicit_name_given_id_0_name_A_when_then_) 
   {
-    this->given_id_0_name_A_();
+    this->given_id_0_name_A();
     this->BuildSut();
   }
   void DataTableContext_ViewTests::BuildSut( ) 
@@ -86,9 +86,9 @@ namespace context
   {
     this->contextProvider->SetDataTableXml(this->dataTableToXml);
   }
-  void DataTableContext_ViewTests::given_id_0_name_A_( ) 
+  void DataTableContext_ViewTests::given_id_0_name_A( ) 
   {
-    this->contextProvider->SetDataTableString(this->id_0_name_A_);
+    this->contextProvider->SetDataTableString(this->id_0_name_A);
   }
 }
 

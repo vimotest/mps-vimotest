@@ -8,7 +8,7 @@ abstract class LoginViewContextProvider {
   
   public abstract SetEmptyContext (  ) ;
   
-  public abstract SetXmlElementContext (  ) ;
+  public abstract SetXmlElementContext (   in xml : String  ) ;
   
   public abstract BuildSut (  ) : LoginView  ;
 }

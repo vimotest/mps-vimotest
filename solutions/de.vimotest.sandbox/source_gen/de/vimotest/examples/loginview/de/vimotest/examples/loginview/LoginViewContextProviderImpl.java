@@ -11,7 +11,7 @@ public class LoginViewContextProviderImpl extends LoginViewContextProvider {
   public void SetEmptyContext() {
   }
   @Override
-  public void SetXmlElementContext() {
+  public void SetXmlElementContext(String xml) {
   }
   @Override
   public LoginView BuildSut() {

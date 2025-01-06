@@ -5,6 +5,6 @@ package de.vimotest.sandbox.context;
 
 public abstract class XmlElementContext_ViewContextProvider {
   public abstract void Init();
-  public abstract void SetXmlElementContext();
+  public abstract void SetXmlElementContext(String xml);
   public abstract XmlElementContext_View BuildSut();
 }

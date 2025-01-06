@@ -6,7 +6,7 @@ class XmlElementContext_ViewContextProviderImpl specializes XmlElementContext_Vi
   
   public Init (  ) {     }
   
-  public SetXmlElementContext (  ) {     }
+  public SetXmlElementContext (   in xml : String  ) {     }
   
   public BuildSut (  ) : XmlElementContext_View  {
   return null;

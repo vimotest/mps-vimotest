@@ -20,8 +20,8 @@ class XmlElementContext_ViewTests {
    this.BuildSut (  );
  }
   
-  public Xml_Context_explicit_name_given_XmlElementContext_when_then_ (  ) {
-  this.given_XmlElementContext (  );
+  public Xml_Context_explicit_name_given_MyXML_Inner_when_then_ (  ) {
+  this.given_MyXML_Inner (  );
    this.BuildSut (  );
  }
   
@@ -34,12 +34,16 @@ class XmlElementContext_ViewTests {
   // Given Helper Definitions
 
   
+  private myxml : String = "<MyXML>  \n  <Inner></Inner>\n</MyXML>";
+  
   public given_myxml (  ) {
-  this.contextProvider.SetXmlElementContext (  );
+  this.contextProvider.SetXmlElementContext ( this.myxml );
  }
   
-  public given_XmlElementContext (  ) {
-  this.contextProvider.SetXmlElementContext (  );
+  private MyXML_Inner : String = "<MyXML>  \n  <Inner></Inner>\n</MyXML>";
+  
+  public given_MyXML_Inner (  ) {
+  this.contextProvider.SetXmlElementContext ( this.MyXML_Inner );
  }
   
   // When Helper Definitions

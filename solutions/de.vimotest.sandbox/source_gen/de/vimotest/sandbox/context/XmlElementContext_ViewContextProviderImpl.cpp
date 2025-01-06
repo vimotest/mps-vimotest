@@ -3,6 +3,7 @@
 #include "XmlElementContext_ViewContextProviderImpl.h"
 #include <memory>
 #include "XmlElementContext_View.h"
+#include <string>
 
 namespace context
 {
@@ -10,7 +11,7 @@ namespace context
   {
     
   }
-  void XmlElementContext_ViewContextProviderImpl::SetXmlElementContext( ) 
+  void XmlElementContext_ViewContextProviderImpl::SetXmlElementContext(std::string xml ) 
   {
     
   }

@@ -12,6 +12,7 @@ import org.junit.Assert;
 public class LoginViewTests_Test {
   private LoginView sut;
   private LoginViewContextProvider contextProvider;
+  private String prefilledValues = "<Prefs>  \n  <User>Ada</User>\n  <Pw>Lovelace1</Pw>\n</Prefs>";
   @Test
   public void test_Load_View_on_empty_context_given_empty_context_when_LoadView_and_fill_User_in_Username_and_fill_MyPass123_in_Password_and_check_ShowPassword_then_Username_shows_text_User_and_Password_shows_text_MyPass123_and_Login_is_enabled() throws Exception {
     this.given_empty_context();
@@ -81,7 +82,7 @@ public class LoginViewTests_Test {
   public void given_empty_context() {
   }
   public void given_prefilledValues() {
-    this.contextProvider.SetXmlElementContext();
+    this.contextProvider.SetXmlElementContext(this.prefilledValues);
   }
 
 

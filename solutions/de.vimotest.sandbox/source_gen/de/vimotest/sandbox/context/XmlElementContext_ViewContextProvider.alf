@@ -6,7 +6,7 @@ abstract class XmlElementContext_ViewContextProvider {
   
   public abstract Init (  ) ;
   
-  public abstract SetXmlElementContext (  ) ;
+  public abstract SetXmlElementContext (   in xml : String  ) ;
   
   public abstract BuildSut (  ) : XmlElementContext_View  ;
 }

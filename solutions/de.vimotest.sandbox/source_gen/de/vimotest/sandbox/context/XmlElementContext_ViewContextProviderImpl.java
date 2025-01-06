@@ -8,7 +8,7 @@ public class XmlElementContext_ViewContextProviderImpl extends XmlElementContext
   public void Init() {
   }
   @Override
-  public void SetXmlElementContext() {
+  public void SetXmlElementContext(String xml) {
   }
   @Override
   public XmlElementContext_View BuildSut() {

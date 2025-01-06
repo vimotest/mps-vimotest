@@ -1,0 +1,7 @@
+namespace context ;
+
+
+
+class XmlElementContext_View {
+
+}

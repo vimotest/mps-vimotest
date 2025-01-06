@@ -6,6 +6,6 @@ package de.vimotest.examples.loginview.de.vimotest.examples.loginview;
 public abstract class LoginViewContextProvider {
   public abstract void Init();
   public abstract void SetEmptyContext();
-  public abstract void SetXmlElementContext();
+  public abstract void SetXmlElementContext(String xml);
   public abstract LoginView BuildSut();
 }

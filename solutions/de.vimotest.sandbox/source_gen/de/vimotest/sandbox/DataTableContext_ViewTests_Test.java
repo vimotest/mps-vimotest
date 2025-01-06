@@ -15,6 +15,7 @@ public class DataTableContext_ViewTests_Test {
   private String dataTableToString = "| id | name |\n| 0 | A |";
   private String dataTableToJson = "[ { id:\"0\", name:\"A\" } ]";
   private String dataTableToXml = "<Data>\n  <DataRow>\n    <id>0    </id>\n    <name>A    </name>\n| 0 | A |\n  </DataRow>\n</Data>";
+  private String id_0_name_A = "| id | name |\n| 0 | A |";
   @Test
   public void test_DataTable_Context_Custom_Setter_given_dataTableCustomSetter_when_then_() throws Exception {
     this.given_dataTableCustomSetter();
@@ -33,6 +34,11 @@ public class DataTableContext_ViewTests_Test {
   @Test
   public void test_DataTable_Context_to_XML_given_dataTableToXml_when_then_() throws Exception {
     this.given_dataTableToXml();
+    this.BuildSut();
+  }
+  @Test
+  public void test_DataTable_Context_implicit_name_given_id_0_name_A_when_then_() throws Exception {
+    this.given_id_0_name_A();
     this.BuildSut();
   }
   @BeforeEach
@@ -60,6 +66,9 @@ public class DataTableContext_ViewTests_Test {
   }
   public void given_dataTableToXml() {
     this.contextProvider.SetDataTableXml(this.dataTableToXml);
+  }
+  public void given_id_0_name_A() {
+    this.contextProvider.SetDataTableString(this.id_0_name_A);
   }
 
 

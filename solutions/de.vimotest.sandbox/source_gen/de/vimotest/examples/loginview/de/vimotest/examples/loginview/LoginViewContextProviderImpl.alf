@@ -8,7 +8,7 @@ class LoginViewContextProviderImpl specializes LoginViewContextProvider {
   
   public SetEmptyContext (  ) {     }
   
-  public SetXmlElementContext (  ) {     }
+  public SetXmlElementContext (   in xml : String  ) {     }
   
   public BuildSut (  ) : LoginView  {
   return null;

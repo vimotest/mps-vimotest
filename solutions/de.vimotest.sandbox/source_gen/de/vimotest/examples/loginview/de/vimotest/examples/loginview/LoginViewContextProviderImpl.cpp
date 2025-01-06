@@ -3,6 +3,7 @@
 #include "LoginViewContextProviderImpl.h"
 #include <memory>
 #include "LoginView.h"
+#include <string>
 
 namespace de::vimotest::examples::loginview
 {
@@ -14,7 +15,7 @@ namespace de::vimotest::examples::loginview
   {
     
   }
-  void LoginViewContextProviderImpl::SetXmlElementContext( ) 
+  void LoginViewContextProviderImpl::SetXmlElementContext(std::string xml ) 
   {
     
   }

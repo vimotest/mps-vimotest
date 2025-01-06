@@ -1,0 +1,54 @@
+namespace context ;
+
+private import Testing ;
+
+class XmlElementContext_ViewTests {
+  
+  private sut : XmlElementContext_View  ;
+  
+  private contextProvider : XmlElementContext_ViewContextProvider  ;
+  
+  
+  protected BeforeTest (  ) {
+  this.contextProvider = new XmlElementContext_ViewContextProviderImpl (  );
+   this.contextProvider.Init (  );
+ }
+  
+  
+  public Xml_Context_given_myxml_when_then_ (  ) {
+  this.given_myxml (  );
+   this.BuildSut (  );
+ }
+  
+  public Xml_Context_explicit_name_given_MyXML_Inner_when_then_ (  ) {
+  this.given_MyXML_Inner (  );
+   this.BuildSut (  );
+ }
+  
+  
+  protected BuildSut (  ) {
+  this.sut = this.contextProvider.BuildSut (  );
+ }
+  
+  
+  // Given Helper Definitions
+
+  
+  private myxml : String = "<MyXML>  \n  <Inner></Inner>\n</MyXML>";
+  
+  public given_myxml (  ) {
+  this.contextProvider.SetXmlElementContext ( this.myxml );
+ }
+  
+  private MyXML_Inner : String = "<MyXML>  \n  <Inner></Inner>\n</MyXML>";
+  
+  public given_MyXML_Inner (  ) {
+  this.contextProvider.SetXmlElementContext ( this.MyXML_Inner );
+ }
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+}

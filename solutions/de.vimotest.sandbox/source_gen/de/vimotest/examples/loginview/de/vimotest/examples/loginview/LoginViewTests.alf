@@ -78,8 +78,10 @@ class LoginViewTests {
   
   public given_empty_context (  ) {     }
   
+  private prefilledValues : String = "<Prefs>  \n  <User>Ada</User>\n  <Pw>Lovelace1</Pw>\n</Prefs>";
+  
   public given_prefilledValues (  ) {
-  this.contextProvider.SetXmlElementContext (  );
+  this.contextProvider.SetXmlElementContext ( this.prefilledValues );
  }
   
   // When Helper Definitions

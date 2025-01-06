@@ -198,6 +198,9 @@
       <concept id="7922086861330453140" name="de.vimotest.viewmodel.testing.structure.ToolTipCheckValue" flags="ng" index="1G_fEj">
         <child id="7922086861496919261" name="expectedToolTipText" index="1ACcNq" />
       </concept>
+      <concept id="7922086861322663463" name="de.vimotest.viewmodel.testing.structure.XmlElementContext" flags="ng" index="1H7tSw">
+        <child id="7922086861322663464" name="xmlElement" index="1H7tSJ" />
+      </concept>
       <concept id="4309178210352018146" name="de.vimotest.viewmodel.testing.structure.GivenDescriptionWithContext" flags="ng" index="1IbZgy">
         <child id="7445061853131768373" name="context" index="DUiTU" />
       </concept>
@@ -4419,6 +4422,17 @@
       </node>
       <node concept="1s$VFG" id="5ZcB1GfQ8hV" role="1s$QAY" />
     </node>
+    <node concept="3LKzX3" id="5hwqM0OOxtD" role="30n1Qb">
+      <property role="TrG5h" value="SimpleStringContext (implicit name)" />
+      <node concept="1IbZgy" id="5hwqM0OOxtE" role="DUd2K">
+        <node concept="1g3lgF" id="5hwqM0OOxtF" role="DUiTU">
+          <node concept="o7Kjd" id="5hwqM0OOxtG" role="3125nE">
+            <property role="o7K7r" value="Alice, Bob, Charlie" />
+          </node>
+        </node>
+      </node>
+      <node concept="1s$VFG" id="5hwqM0OOxtH" role="1s$QAY" />
+    </node>
   </node>
   <node concept="103ZX$" id="5ZcB1Gh1dUV">
     <property role="3GE5qa" value="context" />
@@ -4665,6 +4679,30 @@
         </node>
       </node>
       <node concept="1s$VFG" id="1MbPAgjKbKY" role="1s$QAY" />
+    </node>
+    <node concept="3LKzX3" id="5hwqM0OOxtv" role="30n1Qb">
+      <property role="TrG5h" value="DataTable Context (implicit name)" />
+      <node concept="1IbZgy" id="5hwqM0OOxtw" role="DUd2K">
+        <node concept="1wOnht" id="5hwqM0OOxtx" role="DUiTU">
+          <node concept="1wOntz" id="5hwqM0OOxty" role="1wOkDR">
+            <node concept="1wOkDO" id="5hwqM0OOxtz" role="1wOkDD">
+              <property role="1wOkPU" value="id" />
+            </node>
+            <node concept="1wOkDO" id="5hwqM0OOxt$" role="1wOkDD">
+              <property role="1wOkPU" value="name" />
+            </node>
+          </node>
+          <node concept="1wOntz" id="5hwqM0OOxt_" role="1wOkDP">
+            <node concept="1wOkDO" id="5hwqM0OOxtA" role="1wOkDD">
+              <property role="1wOkPU" value="0" />
+            </node>
+            <node concept="1wOkDO" id="5hwqM0OOxtB" role="1wOkDD">
+              <property role="1wOkPU" value="A" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1s$VFG" id="5hwqM0OOxtC" role="1s$QAY" />
     </node>
   </node>
   <node concept="30n1Qd" id="aV2Sa0vgFk">
@@ -4982,6 +5020,57 @@
         </node>
       </node>
       <node concept="1s$VFG" id="_w8fxLMj9F" role="1s$QAY" />
+    </node>
+    <node concept="3LKzX3" id="5hwqM0OOxtr" role="30n1Qb">
+      <property role="TrG5h" value="Data Path Context (implicit name)" />
+      <node concept="1IbZgy" id="5hwqM0OOxts" role="DUd2K">
+        <node concept="1ldm8S" id="5hwqM0OOxtt" role="DUiTU">
+          <property role="1ldm8Q" value="resource:/elements/myelement" />
+        </node>
+      </node>
+      <node concept="1s$VFG" id="5hwqM0OOxtu" role="1s$QAY" />
+    </node>
+  </node>
+  <node concept="103ZX$" id="5hwqM0OOxtR">
+    <property role="3GE5qa" value="context" />
+    <property role="TrG5h" value="XmlElementContext_View" />
+    <node concept="103ZXx" id="5hwqM0OOxtS" role="103ZXC" />
+    <node concept="103ZXB" id="5hwqM0OOxtU" role="103ZXF" />
+  </node>
+  <node concept="30n1Qd" id="5hwqM0OOxtV">
+    <property role="3GE5qa" value="context" />
+    <property role="TrG5h" value="XmlElementContext_ViewTests" />
+    <ref role="30n1PB" node="5hwqM0OOxtR" resolve="XmlElementContext_View" />
+    <node concept="3LKzX3" id="5hwqM0OOxtW" role="30n1Qb">
+      <property role="TrG5h" value="Xml Context" />
+      <node concept="1IbZgy" id="5hwqM0OOxtX" role="DUd2K">
+        <node concept="1H7tSw" id="5hwqM0OOxu6" role="DUiTU">
+          <property role="TrG5h" value="myxml" />
+          <node concept="2pNNFK" id="5hwqM0OOxu1" role="1H7tSJ">
+            <property role="2pNNFO" value="MyXML" />
+            <node concept="3o6iSG" id="5hwqM0OOxu2" role="3o6s8t" />
+            <node concept="2pNNFK" id="5hwqM0OOxu3" role="3o6s8t">
+              <property role="2pNNFO" value="Inner" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1s$VFG" id="5hwqM0OOxu4" role="1s$QAY" />
+    </node>
+    <node concept="3LKzX3" id="5hwqM0OOxua" role="30n1Qb">
+      <property role="TrG5h" value="Xml Context (explicit name)" />
+      <node concept="1IbZgy" id="5hwqM0OOxub" role="DUd2K">
+        <node concept="1H7tSw" id="5hwqM0OOxuc" role="DUiTU">
+          <node concept="2pNNFK" id="5hwqM0OOxud" role="1H7tSJ">
+            <property role="2pNNFO" value="MyXML" />
+            <node concept="3o6iSG" id="5hwqM0OOxue" role="3o6s8t" />
+            <node concept="2pNNFK" id="5hwqM0OOxuf" role="3o6s8t">
+              <property role="2pNNFO" value="Inner" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1s$VFG" id="5hwqM0OOxug" role="1s$QAY" />
     </node>
   </node>
 </model>

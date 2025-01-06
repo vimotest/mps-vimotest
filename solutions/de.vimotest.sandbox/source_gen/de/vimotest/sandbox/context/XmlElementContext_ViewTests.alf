@@ -20,8 +20,8 @@ class XmlElementContext_ViewTests {
    this.BuildSut (  );
  }
   
-  public Xml_Context_explicit_name_given_when_then_ (  ) {
-  this.given_ (  );
+  public Xml_Context_explicit_name_given_XmlElementContext_when_then_ (  ) {
+  this.given_XmlElementContext (  );
    this.BuildSut (  );
  }
   
@@ -38,7 +38,7 @@ class XmlElementContext_ViewTests {
   this.contextProvider.SetXmlElementContext (  );
  }
   
-  public given_ (  ) {
+  public given_XmlElementContext (  ) {
   this.contextProvider.SetXmlElementContext (  );
  }
   

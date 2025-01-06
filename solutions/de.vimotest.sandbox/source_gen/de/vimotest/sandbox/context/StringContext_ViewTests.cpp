@@ -17,8 +17,8 @@ namespace context
     virtual void BuildSut() ;
     std::string alice_bob_charlie = std::string("Alice, Bob, Charlie");
     virtual void given_alice_bob_charlie() ;
-    std::string  = std::string("Alice, Bob, Charlie");
-    virtual void given_() ;
+    std::string Alice_Bob_Charlie = std::string("Alice, Bob, Charlie");
+    virtual void given_Alice_Bob_Charlie() ;
     protected:
     void SetUp() override ;
   };
@@ -32,9 +32,9 @@ namespace context
     this->given_alice_bob_charlie();
     this->BuildSut();
   }
-  TEST_F(StringContext_ViewTests,  SimpleStringContext_implicit_name_given_when_then_) 
+  TEST_F(StringContext_ViewTests,  SimpleStringContext_implicit_name_given_Alice_Bob_Charlie_when_then_) 
   {
-    this->given_();
+    this->given_Alice_Bob_Charlie();
     this->BuildSut();
   }
   void StringContext_ViewTests::BuildSut( ) 
@@ -45,9 +45,9 @@ namespace context
   {
     this->contextProvider->SetSimpleStringContext(this->alice_bob_charlie);
   }
-  void StringContext_ViewTests::given_( ) 
+  void StringContext_ViewTests::given_Alice_Bob_Charlie( ) 
   {
-    this->contextProvider->SetSimpleStringContext(this->);
+    this->contextProvider->SetSimpleStringContext(this->Alice_Bob_Charlie);
   }
 }
 

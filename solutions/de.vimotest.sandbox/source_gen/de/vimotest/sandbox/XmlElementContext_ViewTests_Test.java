@@ -17,8 +17,8 @@ public class XmlElementContext_ViewTests_Test {
     this.BuildSut();
   }
   @Test
-  public void test_Xml_Context_explicit_name_given_when_then_() throws Exception {
-    this.given_();
+  public void test_Xml_Context_explicit_name_given_XmlElementContext_when_then_() throws Exception {
+    this.given_XmlElementContext();
     this.BuildSut();
   }
   @BeforeEach
@@ -38,7 +38,7 @@ public class XmlElementContext_ViewTests_Test {
   public void given_myxml() {
     this.contextProvider.SetXmlElementContext();
   }
-  public void given_() {
+  public void given_XmlElementContext() {
     this.contextProvider.SetXmlElementContext();
   }
 

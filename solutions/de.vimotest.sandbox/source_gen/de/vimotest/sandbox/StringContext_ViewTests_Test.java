@@ -12,15 +12,15 @@ public class StringContext_ViewTests_Test {
   private StringContext_View sut;
   private StringContext_ViewContextProvider contextProvider;
   private String alice_bob_charlie = "Alice, Bob, Charlie";
-  private String  = "Alice, Bob, Charlie";
+  private String Alice_Bob_Charlie = "Alice, Bob, Charlie";
   @Test
   public void test_SimpleStringContext_given_alice_bob_charlie_when_then_() throws Exception {
     this.given_alice_bob_charlie();
     this.BuildSut();
   }
   @Test
-  public void test_SimpleStringContext_implicit_name_given_when_then_() throws Exception {
-    this.given_();
+  public void test_SimpleStringContext_implicit_name_given_Alice_Bob_Charlie_when_then_() throws Exception {
+    this.given_Alice_Bob_Charlie();
     this.BuildSut();
   }
   @BeforeEach
@@ -40,8 +40,8 @@ public class StringContext_ViewTests_Test {
   public void given_alice_bob_charlie() {
     this.contextProvider.SetSimpleStringContext(this.alice_bob_charlie);
   }
-  public void given_() {
-    this.contextProvider.SetSimpleStringContext(this.);
+  public void given_Alice_Bob_Charlie() {
+    this.contextProvider.SetSimpleStringContext(this.Alice_Bob_Charlie);
   }
 
 

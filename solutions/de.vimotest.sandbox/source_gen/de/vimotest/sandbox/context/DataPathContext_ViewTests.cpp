@@ -15,7 +15,7 @@ namespace context
     std::shared_ptr<DataPathContext_ViewContextProvider> contextProvider;
     virtual void BuildSut() ;
     virtual void given_my_element() ;
-    virtual void given_() ;
+    virtual void given_path_resource_elements_myelement() ;
     protected:
     void SetUp() override ;
   };
@@ -29,9 +29,9 @@ namespace context
     this->given_my_element();
     this->BuildSut();
   }
-  TEST_F(DataPathContext_ViewTests,  Data_Path_Context_implicit_name_given_when_then_) 
+  TEST_F(DataPathContext_ViewTests,  Data_Path_Context_implicit_name_given_path_resource_elements_myelement_when_then_) 
   {
-    this->given_();
+    this->given_path_resource_elements_myelement();
     this->BuildSut();
   }
   void DataPathContext_ViewTests::BuildSut( ) 
@@ -42,7 +42,7 @@ namespace context
   {
     this->contextProvider->SetDataPathContext(std::string("resource:/elements/myelement"));
   }
-  void DataPathContext_ViewTests::given_( ) 
+  void DataPathContext_ViewTests::given_path_resource_elements_myelement( ) 
   {
     this->contextProvider->SetDataPathContext(std::string("resource:/elements/myelement"));
   }

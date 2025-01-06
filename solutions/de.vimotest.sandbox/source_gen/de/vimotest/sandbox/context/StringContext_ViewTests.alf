@@ -20,8 +20,8 @@ class StringContext_ViewTests {
    this.BuildSut (  );
  }
   
-  public SimpleStringContext_implicit_name_given_when_then_ (  ) {
-  this.given_ (  );
+  public SimpleStringContext_implicit_name_given_Alice_Bob_Charlie_when_then_ (  ) {
+  this.given_Alice_Bob_Charlie (  );
    this.BuildSut (  );
  }
   
@@ -40,10 +40,10 @@ class StringContext_ViewTests {
   this.contextProvider.SetSimpleStringContext ( this.alice_bob_charlie );
  }
   
-  private  : String = "Alice, Bob, Charlie";
+  private Alice_Bob_Charlie : String = "Alice, Bob, Charlie";
   
-  public given_ (  ) {
-  this.contextProvider.SetSimpleStringContext ( this. );
+  public given_Alice_Bob_Charlie (  ) {
+  this.contextProvider.SetSimpleStringContext ( this.Alice_Bob_Charlie );
  }
   
   // When Helper Definitions

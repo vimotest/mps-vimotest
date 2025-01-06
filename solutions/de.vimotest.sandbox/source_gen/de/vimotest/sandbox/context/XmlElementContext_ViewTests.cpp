@@ -14,7 +14,7 @@ namespace context
     std::shared_ptr<XmlElementContext_ViewContextProvider> contextProvider;
     virtual void BuildSut() ;
     virtual void given_myxml() ;
-    virtual void given_() ;
+    virtual void given_XmlElementContext() ;
     protected:
     void SetUp() override ;
   };
@@ -28,9 +28,9 @@ namespace context
     this->given_myxml();
     this->BuildSut();
   }
-  TEST_F(XmlElementContext_ViewTests,  Xml_Context_explicit_name_given_when_then_) 
+  TEST_F(XmlElementContext_ViewTests,  Xml_Context_explicit_name_given_XmlElementContext_when_then_) 
   {
-    this->given_();
+    this->given_XmlElementContext();
     this->BuildSut();
   }
   void XmlElementContext_ViewTests::BuildSut( ) 
@@ -41,7 +41,7 @@ namespace context
   {
     this->contextProvider->SetXmlElementContext();
   }
-  void XmlElementContext_ViewTests::given_( ) 
+  void XmlElementContext_ViewTests::given_XmlElementContext( ) 
   {
     this->contextProvider->SetXmlElementContext();
   }

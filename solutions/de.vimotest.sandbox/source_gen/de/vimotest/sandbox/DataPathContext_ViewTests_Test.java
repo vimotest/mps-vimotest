@@ -17,8 +17,8 @@ public class DataPathContext_ViewTests_Test {
     this.BuildSut();
   }
   @Test
-  public void test_Data_Path_Context_implicit_name_given_when_then_() throws Exception {
-    this.given_();
+  public void test_Data_Path_Context_implicit_name_given_path_resource_elements_myelement_when_then_() throws Exception {
+    this.given_path_resource_elements_myelement();
     this.BuildSut();
   }
   @BeforeEach
@@ -38,7 +38,7 @@ public class DataPathContext_ViewTests_Test {
   public void given_my_element() {
     this.contextProvider.SetDataPathContext("resource:/elements/myelement");
   }
-  public void given_() {
+  public void given_path_resource_elements_myelement() {
     this.contextProvider.SetDataPathContext("resource:/elements/myelement");
   }
 

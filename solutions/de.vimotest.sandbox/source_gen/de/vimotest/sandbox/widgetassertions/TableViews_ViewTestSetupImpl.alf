@@ -1,0 +1,14 @@
+namespace widgetassertions ;
+
+
+
+class TableViews_ViewTestSetupImpl specializes TableViews_ViewTestSetup {
+  
+  public Init (  ) {     }
+  
+  public SetEmptyContext (  ) {     }
+  
+  public BuildSut (  ) : TableViews_View  {
+  return null;
+ }
+}

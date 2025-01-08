@@ -6,12 +6,12 @@ class XmlElementContext_ViewTests {
   
   private sut : XmlElementContext_View  ;
   
-  private contextProvider : XmlElementContext_ViewContextProvider  ;
+  private testSetup : XmlElementContext_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new XmlElementContext_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new XmlElementContext_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -27,7 +27,7 @@ class XmlElementContext_ViewTests {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   
@@ -37,13 +37,13 @@ class XmlElementContext_ViewTests {
   private myxml : String = "<MyXML>  \n  <Inner></Inner>\n</MyXML>";
   
   public given_myxml (  ) {
-  this.contextProvider.SetXmlElementContext ( this.myxml );
+  this.testSetup.SetXmlElementContext ( this.myxml );
  }
   
   private MyXML_Inner : String = "<MyXML>  \n  <Inner></Inner>\n</MyXML>";
   
   public given_MyXML_Inner (  ) {
-  this.contextProvider.SetXmlElementContext ( this.MyXML_Inner );
+  this.testSetup.SetXmlElementContext ( this.MyXML_Inner );
  }
   
   // When Helper Definitions

@@ -1,10 +1,10 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "GenericCommands_ViewContextProvider.h"
+#include "GenericCommands_ViewTestSetup.h"
 #include <string>
 #include "GenericCommands_View.h"
-#include "GenericCommands_ViewContextProviderImpl.h"
+#include "GenericCommands_ViewTestSetupImpl.h"
 
 namespace commands
 {
@@ -12,7 +12,7 @@ namespace commands
   {
     public:
     std::shared_ptr<GenericCommands_View> sut;
-    std::shared_ptr<GenericCommands_ViewContextProvider> contextProvider;
+    std::shared_ptr<GenericCommands_ViewTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void when_MyCommand() ;
     protected:
@@ -20,8 +20,8 @@ namespace commands
   };
   void GenericCommands_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<GenericCommands_ViewContextProviderImpl>();
-    this->contextProvider->Init();
+    this->testSetup = std::make_shared<GenericCommands_ViewTestSetupImpl>();
+    this->testSetup->Init();
   }
   TEST_F(GenericCommands_ViewTests,  Generic_Commands_Call_given_when_MyCommand_then_) 
   {
@@ -30,7 +30,7 @@ namespace commands
   }
   void GenericCommands_ViewTests::BuildSut( ) 
   {
-    this->sut = this->contextProvider->BuildSut();
+    this->sut = this->testSetup->BuildSut();
   }
   void GenericCommands_ViewTests::when_MyCommand( ) 
   {

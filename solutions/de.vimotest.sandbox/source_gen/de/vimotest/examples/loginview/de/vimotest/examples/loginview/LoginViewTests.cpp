@@ -1,10 +1,10 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "LoginViewContextProvider.h"
+#include "LoginViewTestSetup.h"
 #include "LoginView.h"
 #include <string>
-#include "LoginViewContextProviderImpl.h"
+#include "LoginViewTestSetupImpl.h"
 
 namespace de::vimotest::examples::loginview
 {
@@ -12,7 +12,7 @@ namespace de::vimotest::examples::loginview
   {
     public:
     std::shared_ptr<LoginView> sut;
-    std::shared_ptr<LoginViewContextProvider> contextProvider;
+    std::shared_ptr<LoginViewTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
     std::string prefilledValues = R"(<Prefs>  
@@ -42,8 +42,8 @@ namespace de::vimotest::examples::loginview
   };
   void LoginViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<LoginViewContextProviderImpl>();
-    this->contextProvider->Init();
+    this->testSetup = std::make_shared<LoginViewTestSetupImpl>();
+    this->testSetup->Init();
   }
   TEST_F(LoginViewTests,  Load_View_on_empty_context_given_empty_context_when_LoadView_and_fill_User_in_Username_and_fill_MyPass123_in_Password_and_check_ShowPassword_then_Username_shows_text_User_and_Password_shows_text_MyPass123_and_Login_is_enabled) 
   {
@@ -99,7 +99,7 @@ namespace de::vimotest::examples::loginview
   }
   void LoginViewTests::BuildSut( ) 
   {
-    this->sut = this->contextProvider->BuildSut();
+    this->sut = this->testSetup->BuildSut();
   }
   void LoginViewTests::given_empty_context( ) 
   {
@@ -107,7 +107,7 @@ namespace de::vimotest::examples::loginview
   }
   void LoginViewTests::given_prefilledValues( ) 
   {
-    this->contextProvider->SetXmlElementContext(this->prefilledValues);
+    this->testSetup->SetXmlElementContext(this->prefilledValues);
   }
   void LoginViewTests::when_LoadView( ) 
   {

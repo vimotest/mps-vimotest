@@ -1,0 +1,10 @@
+namespace commands ;
+
+
+
+abstract class SelectRowCommand_ViewTestSetup {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : SelectRowCommand_View  ;
+}

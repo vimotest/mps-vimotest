@@ -1,11 +1,11 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "Labels_ViewContextProvider.h"
+#include "Labels_ViewTestSetup.h"
 #include <string>
 #include "Labels_View.h"
 #include <vector>
-#include "Labels_ViewContextProviderImpl.h"
+#include "Labels_ViewTestSetupImpl.h"
 
 namespace widgetassertions
 {
@@ -13,7 +13,7 @@ namespace widgetassertions
   {
     public:
     std::shared_ptr<Labels_View> sut;
-    std::shared_ptr<Labels_ViewContextProvider> contextProvider;
+    std::shared_ptr<Labels_ViewTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
     virtual void given_empty_context_1() ;
@@ -27,8 +27,8 @@ namespace widgetassertions
   };
   void Labels_ViewTest::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<Labels_ViewContextProviderImpl>();
-    this->contextProvider->Init();
+    this->testSetup = std::make_shared<Labels_ViewTestSetupImpl>();
+    this->testSetup->Init();
   }
   TEST_F(Labels_ViewTest,  Single_Line_Label_given_empty_context_when_then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible) 
   {
@@ -61,7 +61,7 @@ namespace widgetassertions
   }
   void Labels_ViewTest::BuildSut( ) 
   {
-    this->sut = this->contextProvider->BuildSut();
+    this->sut = this->testSetup->BuildSut();
   }
   void Labels_ViewTest::given_empty_context( ) 
   {

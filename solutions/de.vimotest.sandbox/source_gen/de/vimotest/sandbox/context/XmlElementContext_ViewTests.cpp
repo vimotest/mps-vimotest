@@ -1,9 +1,9 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "XmlElementContext_ViewContextProvider.h"
+#include "XmlElementContext_ViewTestSetup.h"
 #include "XmlElementContext_View.h"
-#include "XmlElementContext_ViewContextProviderImpl.h"
+#include "XmlElementContext_ViewTestSetupImpl.h"
 #include <string>
 
 namespace context
@@ -12,7 +12,7 @@ namespace context
   {
     public:
     std::shared_ptr<XmlElementContext_View> sut;
-    std::shared_ptr<XmlElementContext_ViewContextProvider> contextProvider;
+    std::shared_ptr<XmlElementContext_ViewTestSetup> testSetup;
     virtual void BuildSut() ;
     std::string myxml = R"(<MyXML>  
   <Inner></Inner>
@@ -27,8 +27,8 @@ namespace context
   };
   void XmlElementContext_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<XmlElementContext_ViewContextProviderImpl>();
-    this->contextProvider->Init();
+    this->testSetup = std::make_shared<XmlElementContext_ViewTestSetupImpl>();
+    this->testSetup->Init();
   }
   TEST_F(XmlElementContext_ViewTests,  Xml_Context_given_myxml_when_then_) 
   {
@@ -42,15 +42,15 @@ namespace context
   }
   void XmlElementContext_ViewTests::BuildSut( ) 
   {
-    this->sut = this->contextProvider->BuildSut();
+    this->sut = this->testSetup->BuildSut();
   }
   void XmlElementContext_ViewTests::given_myxml( ) 
   {
-    this->contextProvider->SetXmlElementContext(this->myxml);
+    this->testSetup->SetXmlElementContext(this->myxml);
   }
   void XmlElementContext_ViewTests::given_MyXML_Inner( ) 
   {
-    this->contextProvider->SetXmlElementContext(this->MyXML_Inner);
+    this->testSetup->SetXmlElementContext(this->MyXML_Inner);
   }
 }
 

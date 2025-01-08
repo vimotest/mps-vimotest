@@ -1,0 +1,10 @@
+namespace commands ;
+
+
+
+abstract class FillTextCommand_ViewTestSetup {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : FillTextCommand_View  ;
+}

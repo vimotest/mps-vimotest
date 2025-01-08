@@ -6,12 +6,12 @@ class Labels_ViewTest {
   
   private sut : Labels_View  ;
   
-  private contextProvider : Labels_ViewContextProvider  ;
+  private testSetup : Labels_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new Labels_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new Labels_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -46,7 +46,7 @@ class Labels_ViewTest {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   

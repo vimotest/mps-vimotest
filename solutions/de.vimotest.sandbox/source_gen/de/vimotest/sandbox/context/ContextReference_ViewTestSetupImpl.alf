@@ -1,0 +1,14 @@
+namespace context ;
+
+
+
+class ContextReference_ViewTestSetupImpl specializes ContextReference_ViewTestSetup {
+  
+  public Init (  ) {     }
+  
+  public SetSimpleStringContext (   in string : String  ) {     }
+  
+  public BuildSut (  ) : ContextReference_View  {
+  return null;
+ }
+}

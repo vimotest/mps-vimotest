@@ -6,12 +6,12 @@ class StringContext2_ViewTests {
   
   private sut : StringContext_View  ;
   
-  private contextProvider : StringContext_ViewContextProvider  ;
+  private testSetup : StringContext_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new StringContext_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new StringContext_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -22,7 +22,7 @@ class StringContext2_ViewTests {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   
@@ -32,7 +32,7 @@ class StringContext2_ViewTests {
   private alice_bob_charlie : String = "Alice, Bob, Charlie";
   
   public given_alice_bob_charlie (  ) {
-  this.contextProvider.SetSimpleStringContext ( this.alice_bob_charlie );
+  this.testSetup.SetSimpleStringContext ( this.alice_bob_charlie );
  }
   
   // When Helper Definitions

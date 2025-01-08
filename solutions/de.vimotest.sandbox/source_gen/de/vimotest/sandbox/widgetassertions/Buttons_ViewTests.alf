@@ -6,12 +6,12 @@ class Buttons_ViewTests {
   
   private sut : Buttons_View  ;
   
-  private contextProvider : Buttons_ViewContextProvider  ;
+  private testSetup : Buttons_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new Buttons_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new Buttons_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -23,7 +23,7 @@ class Buttons_ViewTests {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   

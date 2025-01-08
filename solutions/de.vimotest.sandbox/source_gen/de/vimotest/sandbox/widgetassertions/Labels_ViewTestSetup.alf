@@ -1,0 +1,12 @@
+namespace widgetassertions ;
+
+
+
+abstract class Labels_ViewTestSetup {
+  
+  public abstract Init (  ) ;
+  
+  public abstract SetEmptyContext (  ) ;
+  
+  public abstract BuildSut (  ) : Labels_View  ;
+}

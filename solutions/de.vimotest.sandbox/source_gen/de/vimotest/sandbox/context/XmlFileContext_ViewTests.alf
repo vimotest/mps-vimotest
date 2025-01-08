@@ -6,12 +6,12 @@ class XmlFileContext_ViewTests {
   
   private sut : XmlFileContext_View  ;
   
-  private contextProvider : XmlFileContext_ViewContextProvider  ;
+  private testSetup : XmlFileContext_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new XmlFileContext_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new XmlFileContext_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -27,7 +27,7 @@ class XmlFileContext_ViewTests {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   
@@ -37,11 +37,11 @@ class XmlFileContext_ViewTests {
   private XmlFile_NoExternalFile : String = "<MyXML>  \n  <Inner></Inner>\n</MyXML>";
   
   public given_XmlFile_NoExternalFile (  ) {
-  this.contextProvider.SetXmlFileContext ( this.XmlFile_NoExternalFile );
+  this.testSetup.SetXmlFileContext ( this.XmlFile_NoExternalFile );
  }
   
   public given_XmlFile_ExternalFile (  ) {
-  this.contextProvider.SetXmlExternalFileContext ( "XmlFile_ExternalFile.xml" );
+  this.testSetup.SetXmlExternalFileContext ( "XmlFile_ExternalFile.xml" );
  }
   
   // When Helper Definitions

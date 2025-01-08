@@ -1,0 +1,14 @@
+namespace context ;
+
+
+
+class StringContext_ViewTestSetupImpl specializes StringContext_ViewTestSetup {
+  
+  public Init (  ) {     }
+  
+  public SetSimpleStringContext (   in string : String  ) {     }
+  
+  public BuildSut (  ) : StringContext_View  {
+  return null;
+ }
+}

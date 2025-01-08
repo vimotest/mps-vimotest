@@ -755,22 +755,22 @@
       <ref role="2rZz_L" to="28lk:2HeY20H6tuG" resolve="AttributeDefinition" />
     </node>
     <node concept="2rT7sh" id="4Pj3bOmxylV" role="2rTMjI">
-      <property role="TrG5h" value="ViewModelFeatureTestSuite_ContextProvider_ClassDefinition" />
+      <property role="TrG5h" value="ViewModelFeatureTestSuite_TestSetup_ClassDefinition" />
       <ref role="2rTdP9" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
     </node>
     <node concept="2rT7sh" id="aV2Sa0uTZ8" role="2rTMjI">
-      <property role="TrG5h" value="ViewModelFeatureTestSuite_ContextProvider_BuildSut_OperationDefinition" />
+      <property role="TrG5h" value="ViewModelFeatureTestSuite_TestSetup_BuildSut_OperationDefinition" />
       <ref role="2rTdP9" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
     </node>
     <node concept="2rT7sh" id="3nKDvO$x7IY" role="2rTMjI">
-      <property role="TrG5h" value="ViewModelFeatureTestSuite_ContextProviderImpl_ClassDefinition" />
+      <property role="TrG5h" value="ViewModelFeatureTestSuite_TestSetupImpl_ClassDefinition" />
       <ref role="2rTdP9" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
     </node>
     <node concept="2rT7sh" id="4Pj3bOmxAow" role="2rTMjI">
-      <property role="TrG5h" value="ViewModelFeatureTestSuite_ContextProvider_AttributeDefinition" />
+      <property role="TrG5h" value="ViewModelFeatureTestSuite_TestSetup_AttributeDefinition" />
       <ref role="2rTdP9" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
       <ref role="2rZz_L" to="28lk:2HeY20H6tuG" resolve="AttributeDefinition" />
     </node>
@@ -930,7 +930,7 @@
         </node>
       </node>
       <node concept="6lMYc" id="4Pj3bOmxAoW" role="PCHHv">
-        <property role="TrG5h" value="contextProvider" />
+        <property role="TrG5h" value="testSetup" />
         <property role="PCHHn" value="6OepWIVA92M/private" />
         <node concept="3xHE8C" id="4Pj3bOmxAoX" role="3xMlr6">
           <node concept="2RqM1Q" id="4Pj3bOmxAoY" role="_vnH8">
@@ -5549,7 +5549,7 @@
   <node concept="3mGtxK" id="4Pj3bOmxnkc">
     <node concept="6nSm2" id="4Pj3bOmxwrC" role="3mGtxP">
       <property role="PCHHn" value="6OepWIVA92I/package" />
-      <property role="TrG5h" value="root_mapping_ContextProvider" />
+      <property role="TrG5h" value="root_mapping_TestSetup" />
       <property role="PCHGy" value="true" />
       <node concept="17Uvod" id="4Pj3bOmxwti" role="lGtFl">
         <property role="2qtEX9" value="name" />
@@ -6789,7 +6789,7 @@
   </node>
   <node concept="jVnub" id="5ZcB1GfUJJa">
     <property role="3GE5qa" value="given" />
-    <property role="TrG5h" value="switch_ITestScenarioContext_ContextProvider_Parameters" />
+    <property role="TrG5h" value="switch_ITestScenarioContext_TestSetup_Parameters" />
     <node concept="3aamgX" id="5ZcB1GfUJJb" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="53m0:5ZcB1GfKswK" resolve="SimpleStringContext" />
@@ -7380,7 +7380,7 @@
   <node concept="3mGtxK" id="3nKDvO$wD$V">
     <node concept="6nSm2" id="3nKDvO$wD$W" role="3mGtxP">
       <property role="PCHHn" value="6OepWIVA92I/package" />
-      <property role="TrG5h" value="root_mapping_ContextProviderImpl" />
+      <property role="TrG5h" value="root_mapping_TestSetupImpl" />
       <node concept="17Uvod" id="3nKDvO$wD$X" role="lGtFl">
         <property role="2qtEX9" value="name" />
         <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />

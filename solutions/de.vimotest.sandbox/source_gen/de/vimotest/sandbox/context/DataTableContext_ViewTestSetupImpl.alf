@@ -1,0 +1,20 @@
+namespace context ;
+
+
+
+class DataTableContext_ViewTestSetupImpl specializes DataTableContext_ViewTestSetup {
+  
+  public Init (  ) {     }
+  
+  public SetIdAndName (   in string : String  ) {     }
+  
+  public SetDataTableString (   in string : String  ) {     }
+  
+  public SetDataTableJson (   in json : String  ) {     }
+  
+  public SetDataTableXml (   in xml : String  ) {     }
+  
+  public BuildSut (  ) : DataTableContext_View  {
+  return null;
+ }
+}

@@ -1,7 +1,7 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "RowBasedCommand_ViewContextProvider.h"
+#include "RowBasedCommand_ViewTestSetup.h"
 #include "RowBasedCommand_View.h"
 #include <string>
 #include <vector>
@@ -9,7 +9,7 @@
 #include "RowBasedCommand_ViewMyComboBoxesRow.h"
 #include <optional>
 #include "RowBasedCommand_ViewMyStandardControlsRow.h"
-#include "RowBasedCommand_ViewContextProviderImpl.h"
+#include "RowBasedCommand_ViewTestSetupImpl.h"
 
 namespace commands
 {
@@ -17,7 +17,7 @@ namespace commands
   {
     public:
     std::shared_ptr<RowBasedCommand_View> sut;
-    std::shared_ptr<RowBasedCommand_ViewContextProvider> contextProvider;
+    std::shared_ptr<RowBasedCommand_ViewTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void when_check_Checkboxes_at_0() ;
     virtual void when_uncheck_Checkboxes_at_1() ;
@@ -36,8 +36,8 @@ namespace commands
   };
   void RowBasedCommand_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<RowBasedCommand_ViewContextProviderImpl>();
-    this->contextProvider->Init();
+    this->testSetup = std::make_shared<RowBasedCommand_ViewTestSetupImpl>();
+    this->testSetup->Init();
   }
   TEST_F(RowBasedCommand_ViewTests,  ListView_RowBased_Commands_given_when_check_Checkboxes_at_0_and_uncheck_Checkboxes_at_1_then_MyFlags_has_2_rows) 
   {
@@ -65,7 +65,7 @@ namespace commands
   }
   void RowBasedCommand_ViewTests::BuildSut( ) 
   {
-    this->sut = this->contextProvider->BuildSut();
+    this->sut = this->testSetup->BuildSut();
   }
   void RowBasedCommand_ViewTests::when_check_Checkboxes_at_0( ) 
   {

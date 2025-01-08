@@ -624,7 +624,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="4Pj3bOmvh0Z" role="13h7CS">
-      <property role="TrG5h" value="getEffectiveContextProviderName" />
+      <property role="TrG5h" value="getEffectiveTestSetupName" />
       <node concept="3Tm1VV" id="4Pj3bOmvh10" role="1B3o_S" />
       <node concept="17QB3L" id="4Pj3bOmvj0T" role="3clF45" />
       <node concept="3clFbS" id="4Pj3bOmvh12" role="3clF47">
@@ -633,7 +633,7 @@
             <node concept="2OqwBi" id="4Pj3bOmvjf3" role="2Oq$k0">
               <node concept="13iPFW" id="4Pj3bOmvj2$" role="2Oq$k0" />
               <node concept="3TrcHB" id="4Pj3bOmvl6c" role="2OqNvi">
-                <ref role="3TsBF5" to="53m0:4Pj3bOmuYX9" resolve="contextProviderClassName" />
+                <ref role="3TsBF5" to="53m0:4Pj3bOmuYX9" resolve="testSetupClassName" />
               </node>
             </node>
             <node concept="17RlXB" id="4Pj3bOmvo9S" role="2OqNvi" />
@@ -642,7 +642,7 @@
             <node concept="3cpWs6" id="4Pj3bOmvoFx" role="3cqZAp">
               <node concept="3cpWs3" id="4Pj3bOmvrer" role="3cqZAk">
                 <node concept="Xl_RD" id="4Pj3bOmvrfH" role="3uHU7w">
-                  <property role="Xl_RC" value="ContextProvider" />
+                  <property role="Xl_RC" value="TestSetup" />
                 </node>
                 <node concept="2OqwBi" id="4Pj3bOmvoWm" role="3uHU7B">
                   <node concept="2OqwBi" id="4Pj3bOmvoHn" role="2Oq$k0">
@@ -663,14 +663,14 @@
           <node concept="2OqwBi" id="4Pj3bOmvoqe" role="3clFbG">
             <node concept="13iPFW" id="4Pj3bOmvob3" role="2Oq$k0" />
             <node concept="3TrcHB" id="4Pj3bOmvoEF" role="2OqNvi">
-              <ref role="3TsBF5" to="53m0:4Pj3bOmuYX9" resolve="contextProviderClassName" />
+              <ref role="3TsBF5" to="53m0:4Pj3bOmuYX9" resolve="testSetupClassName" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="13i0hz" id="3nKDvO$wPos" role="13h7CS">
-      <property role="TrG5h" value="getEffectiveContextProviderImplName" />
+      <property role="TrG5h" value="getEffectiveTestSetupImplName" />
       <node concept="3Tm1VV" id="3nKDvO$wPot" role="1B3o_S" />
       <node concept="17QB3L" id="3nKDvO$wPou" role="3clF45" />
       <node concept="3clFbS" id="3nKDvO$wPov" role="3clF47">

@@ -2438,9 +2438,9 @@
     <node concept="3Tm1VV" id="6RKU0sdiTy0" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="7NXUkdT9lK0">
-    <property role="TrG5h" value="ContextProviderGenerationHelper" />
+    <property role="TrG5h" value="TestSetupGenerationHelper" />
     <node concept="2YIFZL" id="7NXUkdT9sLN" role="jymVt">
-      <property role="TrG5h" value="isContextProviderGeneratedForTestSuite" />
+      <property role="TrG5h" value="isTestSetupGeneratedForTestSuite" />
       <node concept="3clFbS" id="7NXUkdT9sLP" role="3clF47">
         <node concept="3clFbF" id="7NXUkdT9sLY" role="3cqZAp">
           <node concept="17QLQc" id="7NXUkdT9sLZ" role="3clFbG">
@@ -2475,7 +2475,7 @@
       <node concept="3Tm1VV" id="7NXUkdT9sM5" role="1B3o_S" />
     </node>
     <node concept="2YIFZL" id="7NXUkdT9G9t" role="jymVt">
-      <property role="TrG5h" value="getPrimaryTestSuiteInputForContextProvider" />
+      <property role="TrG5h" value="getPrimaryTestSuiteInputForTestSetup" />
       <node concept="3clFbS" id="7NXUkdT9G9u" role="3clF47">
         <node concept="3SKdUt" id="7NXUkdT2d8j" role="3cqZAp">
           <node concept="1PaTwC" id="7NXUkdT2d8k" role="1aUNEU">
@@ -2506,11 +2506,11 @@
             <node concept="3oM_SD" id="7NXUkdT2Cbl" role="1PaTwD">
               <property role="3oM_SC" value="the" />
             </node>
-            <node concept="3oM_SD" id="7NXUkdT2CbA" role="1PaTwD">
-              <property role="3oM_SC" value="context" />
+            <node concept="3oM_SD" id="3MgLhTgf2zY" role="1PaTwD">
+              <property role="3oM_SC" value="test" />
             </node>
-            <node concept="3oM_SD" id="7NXUkdT2GvD" role="1PaTwD">
-              <property role="3oM_SC" value="provider" />
+            <node concept="3oM_SD" id="3MgLhTgf2zZ" role="1PaTwD">
+              <property role="3oM_SC" value="setup" />
             </node>
             <node concept="3oM_SD" id="7NXUkdT2Gwe" role="1PaTwD">
               <property role="3oM_SC" value="class," />
@@ -2569,7 +2569,7 @@
               </node>
             </node>
             <node concept="Xl_RD" id="7NXUkdT3t4p" role="3uHU7B">
-              <property role="Xl_RC" value="Context Provider not mapped correctly to a primary context provider with key: " />
+              <property role="Xl_RC" value="Test Setup not mapped correctly to a primary Test Setup with key: " />
             </node>
           </node>
         </node>
@@ -2595,7 +2595,7 @@
       </node>
     </node>
     <node concept="2YIFZL" id="7NXUkdT9u0l" role="jymVt">
-      <property role="TrG5h" value="setTestSuiteAsInputForContextProvider" />
+      <property role="TrG5h" value="setTestSuiteAsInputForTestSetup" />
       <node concept="3clFbS" id="7NXUkdT9u0m" role="3clF47">
         <node concept="3clFbF" id="7NXUkdSVc5q" role="3cqZAp">
           <node concept="37vLTI" id="7NXUkdSVkdy" role="3clFbG">
@@ -2651,7 +2651,7 @@
               </node>
             </node>
             <node concept="Xl_RD" id="7NXUkdT9ous" role="3uHU7B">
-              <property role="Xl_RC" value="contextprovider-generated-" />
+              <property role="Xl_RC" value="testsetup-generated-" />
             </node>
           </node>
         </node>

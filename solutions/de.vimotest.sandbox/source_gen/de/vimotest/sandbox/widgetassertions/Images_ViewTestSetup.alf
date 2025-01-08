@@ -1,0 +1,12 @@
+namespace widgetassertions ;
+
+
+
+abstract class Images_ViewTestSetup {
+  
+  public abstract Init (  ) ;
+  
+  public abstract SetEmptyContext (  ) ;
+  
+  public abstract BuildSut (  ) : Images_View  ;
+}

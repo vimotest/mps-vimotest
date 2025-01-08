@@ -1,10 +1,10 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "FillTextCommand_ViewContextProvider.h"
+#include "FillTextCommand_ViewTestSetup.h"
 #include <string>
 #include "FillTextCommand_View.h"
-#include "FillTextCommand_ViewContextProviderImpl.h"
+#include "FillTextCommand_ViewTestSetupImpl.h"
 
 namespace commands
 {
@@ -12,7 +12,7 @@ namespace commands
   {
     public:
     std::shared_ptr<FillTextCommand_View> sut;
-    std::shared_ptr<FillTextCommand_ViewContextProvider> contextProvider;
+    std::shared_ptr<FillTextCommand_ViewTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void when_fill_Changed_in_MyValue() ;
     virtual void when_fill_Changed_in_MyFreeValue() ;
@@ -21,8 +21,8 @@ namespace commands
   };
   void FillTextCommand_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<FillTextCommand_ViewContextProviderImpl>();
-    this->contextProvider->Init();
+    this->testSetup = std::make_shared<FillTextCommand_ViewTestSetupImpl>();
+    this->testSetup->Init();
   }
   TEST_F(FillTextCommand_ViewTests,  Fill_Text_TextBox_given_when_fill_Changed_in_MyValue_then_) 
   {
@@ -36,7 +36,7 @@ namespace commands
   }
   void FillTextCommand_ViewTests::BuildSut( ) 
   {
-    this->sut = this->contextProvider->BuildSut();
+    this->sut = this->testSetup->BuildSut();
   }
   void FillTextCommand_ViewTests::when_fill_Changed_in_MyValue( ) 
   {

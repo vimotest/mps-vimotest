@@ -6,12 +6,12 @@ class ClickCommand_ViewTests {
   
   private sut : ClickCommand_View  ;
   
-  private contextProvider : ClickCommand_ViewContextProvider  ;
+  private testSetup : ClickCommand_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new ClickCommand_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new ClickCommand_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -22,7 +22,7 @@ class ClickCommand_ViewTests {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   

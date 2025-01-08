@@ -6,12 +6,12 @@ class GenericCommands_ViewTests {
   
   private sut : GenericCommands_View  ;
   
-  private contextProvider : GenericCommands_ViewContextProvider  ;
+  private testSetup : GenericCommands_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new GenericCommands_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new GenericCommands_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -22,7 +22,7 @@ class GenericCommands_ViewTests {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   

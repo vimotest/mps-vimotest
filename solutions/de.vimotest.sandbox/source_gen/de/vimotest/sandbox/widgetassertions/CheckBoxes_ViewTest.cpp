@@ -1,10 +1,10 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "CheckBoxes_ViewContextProvider.h"
+#include "CheckBoxes_ViewTestSetup.h"
 #include "CheckBoxes_View.h"
 #include <string>
-#include "CheckBoxes_ViewContextProviderImpl.h"
+#include "CheckBoxes_ViewTestSetupImpl.h"
 
 namespace widgetassertions
 {
@@ -12,7 +12,7 @@ namespace widgetassertions
   {
     public:
     std::shared_ptr<CheckBoxes_View> sut;
-    std::shared_ptr<CheckBoxes_ViewContextProvider> contextProvider;
+    std::shared_ptr<CheckBoxes_ViewTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
     virtual void then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_() ;
@@ -23,8 +23,8 @@ namespace widgetassertions
   };
   void CheckBoxes_ViewTest::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<CheckBoxes_ViewContextProviderImpl>();
-    this->contextProvider->Init();
+    this->testSetup = std::make_shared<CheckBoxes_ViewTestSetupImpl>();
+    this->testSetup->Init();
   }
   TEST_F(CheckBoxes_ViewTest,  My_Scenario_given_empty_context_when_then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_and_MyFlagNoLabel_is_not_checked_and_MyFlagTriState_is_not_checked) 
   {
@@ -36,7 +36,7 @@ namespace widgetassertions
   }
   void CheckBoxes_ViewTest::BuildSut( ) 
   {
-    this->sut = this->contextProvider->BuildSut();
+    this->sut = this->testSetup->BuildSut();
   }
   void CheckBoxes_ViewTest::given_empty_context( ) 
   {

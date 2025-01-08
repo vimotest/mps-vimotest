@@ -6,12 +6,12 @@ class CheckCommand_ViewTests {
   
   private sut : CheckCommand_View  ;
   
-  private contextProvider : CheckCommand_ViewContextProvider  ;
+  private testSetup : CheckCommand_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new CheckCommand_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new CheckCommand_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -23,7 +23,7 @@ class CheckCommand_ViewTests {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   

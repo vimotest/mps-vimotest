@@ -6,12 +6,12 @@ class TreeViews_ViewTest {
   
   private sut : TreeViews_View  ;
   
-  private contextProvider : TreeViews_ViewContextProvider  ;
+  private testSetup : TreeViews_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new TreeViews_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new TreeViews_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -32,7 +32,7 @@ class TreeViews_ViewTest {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   

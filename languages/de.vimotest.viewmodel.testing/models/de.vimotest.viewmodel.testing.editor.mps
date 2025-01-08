@@ -4464,7 +4464,7 @@
   </node>
   <node concept="PKFIW" id="6fEYrkZcoJh">
     <property role="TrG5h" value="IHasRowHandle_optionalStringRowHandle_EC" />
-    <property role="3GE5qa" value="test.assert.widgets.structures.treeview" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.base" />
     <ref role="1XX52x" to="at53:1RiAxJSewmp" resolve="IHasRowHandle" />
     <node concept="3EZMnI" id="6fEYrkZcoJi" role="2wV5jI">
       <node concept="3F0ifn" id="6fEYrkZcoJj" role="3EZMnx">
@@ -4476,6 +4476,8 @@
       </node>
       <node concept="2iRfu4" id="6fEYrkZcoJl" role="2iSdaV" />
       <node concept="3F0A7n" id="6fEYrkZcoJm" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <property role="1$x2rV" value="&lt;ignore&gt;" />
         <ref role="1NtTu8" to="at53:1RiAxJSfhh$" resolve="stringRowHandle" />
       </node>
       <node concept="pkWqt" id="6fEYrkZcoJn" role="pqm2j">

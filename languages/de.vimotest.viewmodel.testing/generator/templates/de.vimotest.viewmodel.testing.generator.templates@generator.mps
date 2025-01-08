@@ -5239,6 +5239,20 @@
                   </node>
                 </node>
               </node>
+              <node concept="1W57fq" id="6lcd$muJ7X9" role="lGtFl">
+                <node concept="3IZrLx" id="6lcd$muJ7Xa" role="3IZSJc">
+                  <node concept="3clFbS" id="6lcd$muJ7Xb" role="2VODD2">
+                    <node concept="3clFbF" id="6lcd$muJ8cV" role="3cqZAp">
+                      <node concept="2OqwBi" id="6lcd$muJ8Fh" role="3clFbG">
+                        <node concept="30H73N" id="6lcd$muJ8cU" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="6lcd$muJQhi" role="2OqNvi">
+                          <ref role="37wK5l" to="nrs2:6lcd$muJbQm" resolve="hasRowHandleSet" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="_jtW9" id="26p1ZniVpg2" role="PCHzz">
               <node concept="_uF8j" id="26p1ZniVpg3" role="_jtWe">
@@ -5414,17 +5428,17 @@
                   <node concept="3clFbS" id="26p1ZniVpZO" role="2VODD2">
                     <node concept="3clFbF" id="26p1ZniVDCQ" role="3cqZAp">
                       <node concept="1Wc70l" id="26p1ZniVTSH" role="3clFbG">
-                        <node concept="2OqwBi" id="26p1ZniVX2o" role="3uHU7w">
-                          <node concept="1mL9RQ" id="26p1ZniVVtv" role="2Oq$k0">
-                            <ref role="1mL9RD" node="26p1ZniVNUf" resolve="treeRowsFeature" />
-                          </node>
-                          <node concept="3x8VRR" id="26p1ZniVZ2j" role="2OqNvi" />
-                        </node>
                         <node concept="2OqwBi" id="26p1ZniVE40" role="3uHU7B">
                           <node concept="1mL9RQ" id="26p1ZniVDCP" role="2Oq$k0">
                             <ref role="1mL9RD" node="26p1ZniV$WV" resolve="treeCheckRow" />
                           </node>
                           <node concept="3x8VRR" id="26p1ZniVEPQ" role="2OqNvi" />
+                        </node>
+                        <node concept="2OqwBi" id="26p1ZniVX2o" role="3uHU7w">
+                          <node concept="1mL9RQ" id="26p1ZniVVtv" role="2Oq$k0">
+                            <ref role="1mL9RD" node="26p1ZniVNUf" resolve="treeRowsFeature" />
+                          </node>
+                          <node concept="3x8VRR" id="26p1ZniVZ2j" role="2OqNvi" />
                         </node>
                       </node>
                     </node>

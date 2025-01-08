@@ -78,6 +78,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
@@ -6614,6 +6615,55 @@
         <node concept="3clFbF" id="6fEYrkZmGvo" role="3cqZAp">
           <node concept="2ShNRf" id="6fEYrkZmGvp" role="3clFbG">
             <node concept="Tc6Ow" id="6fEYrkZmGvq" role="2ShVmc" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="6lcd$muJbQm" role="13h7CS">
+      <property role="TrG5h" value="hasRowHandleSet" />
+      <node concept="3Tm1VV" id="6lcd$muJbQn" role="1B3o_S" />
+      <node concept="10P_77" id="6lcd$muJLiX" role="3clF45" />
+      <node concept="3clFbS" id="6lcd$muJbQp" role="3clF47">
+        <node concept="3clFbF" id="6lcd$muJdR2" role="3cqZAp">
+          <node concept="3K4zz7" id="6lcd$muJgsE" role="3clFbG">
+            <node concept="2OqwBi" id="6lcd$muJIyP" role="3K4E3e">
+              <node concept="2OqwBi" id="6lcd$muJIyQ" role="2Oq$k0">
+                <node concept="13iPFW" id="6lcd$muJIyR" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6lcd$muJIyS" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:1RiAxJSfhh$" resolve="stringRowHandle" />
+                </node>
+              </node>
+              <node concept="17RvpY" id="6lcd$muJIyT" role="2OqNvi" />
+            </node>
+            <node concept="2d3UOw" id="6lcd$muJHXC" role="3K4GZi">
+              <node concept="3cmrfG" id="6lcd$muJHXD" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="2OqwBi" id="6lcd$muJHXE" role="3uHU7B">
+                <node concept="13iPFW" id="6lcd$muJHXF" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6lcd$muJHXG" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:1RiAxJSfhhz" resolve="indexRowHandle" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6lcd$muJenJ" role="3K4Cdx">
+              <node concept="2OqwBi" id="6lcd$muJdR4" role="2Oq$k0">
+                <node concept="2OqwBi" id="6lcd$muJdR5" role="2Oq$k0">
+                  <node concept="13iPFW" id="6lcd$muJdR6" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="6lcd$muJdR7" role="2OqNvi">
+                    <ref role="37wK5l" node="1RiAxJSeINg" resolve="getRowBasedFeature" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="6lcd$muJdR8" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:1RiAxJSeDXj" resolve="rowHandleKind" />
+                </node>
+              </node>
+              <node concept="21noJN" id="6lcd$muJeAv" role="2OqNvi">
+                <node concept="21nZrQ" id="6lcd$muJeAx" role="21noJM">
+                  <ref role="21nZrZ" to="at53:1RiAxJSewmn" resolve="StringRowHandle" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

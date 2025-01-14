@@ -1865,9 +1865,9 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsu" resolve="CheckCommand" />
       <node concept="gft3U" id="3JF9X1M5zmh" role="1lVwrX">
-        <node concept="15s5l7" id="3JF9X1M5zE6" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
+        <node concept="15s5l7" id="3jDKmRYVyaY" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  Boolean (nameRef) is out of search scope" />
         </node>
         <node concept="3xR696" id="3JF9X1M5zCU" role="gfFT$">
           <property role="3xR695" value="1KdBIfXPktw/in" />
@@ -1884,9 +1884,9 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsw" resolve="FillTextCommand" />
       <node concept="gft3U" id="3JF9X1M5zE8" role="1lVwrX">
-        <node concept="15s5l7" id="3JF9X1M5zE9" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
+        <node concept="15s5l7" id="3jDKmRYVyaZ" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  String (nameRef) is out of search scope" />
         </node>
         <node concept="3xR696" id="3JF9X1M5zH$" role="gfFT$">
           <property role="TrG5h" value="text" />
@@ -1903,9 +1903,9 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsz" resolve="SelectEntryCommand" />
       <node concept="gft3U" id="5jkMFwsKKlz" role="1lVwrX">
-        <node concept="15s5l7" id="5jkMFwsKKl$" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
+        <node concept="15s5l7" id="3jDKmRYVyb0" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  String (nameRef) is out of search scope" />
         </node>
         <node concept="3xR696" id="5jkMFwsKKl_" role="gfFT$">
           <property role="TrG5h" value="entryName" />
@@ -1922,9 +1922,9 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsy" resolve="SelectRowCommand" />
       <node concept="gft3U" id="3JF9X1M5zIL" role="1lVwrX">
-        <node concept="15s5l7" id="3JF9X1M5zIM" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
+        <node concept="15s5l7" id="3jDKmRYVyb1" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  String (nameRef) is out of search scope" />
         </node>
         <node concept="3xR696" id="3JF9X1M5zIN" role="gfFT$">
           <property role="TrG5h" value="rowHandle" />
@@ -2008,9 +2008,9 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsy" resolve="SelectRowCommand" />
       <node concept="gft3U" id="3JF9X1M5DTV" role="1lVwrX">
-        <node concept="15s5l7" id="3JF9X1M5DTW" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
+        <node concept="15s5l7" id="3jDKmRYVyMW" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Integer (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  Integer (nameRef) is out of search scope" />
         </node>
         <node concept="3xR696" id="3JF9X1M5EBj" role="gfFT$">
           <property role="3xR695" value="1KdBIfXPktw/in" />
@@ -2896,13 +2896,13 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsu" resolve="CheckCommand" />
       <node concept="gft3U" id="Of5vVZ$e2d" role="1lVwrX">
+        <node concept="15s5l7" id="3jDKmRYVvz1" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  Boolean (nameRef) is out of search scope" />
+        </node>
         <node concept="15s5l7" id="Of5vVZ$hf1" role="lGtFl">
           <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be child)&quot;;FLAVOUR_MESSAGE=&quot;Node 'isChecked' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3120704408893424229]&quot;;" />
           <property role="huDt6" value="Node 'isChecked' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'" />
-        </node>
-        <node concept="15s5l7" id="Of5vVZ$e2e" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
         </node>
         <node concept="6lMYc" id="Of5vVZ$hdx" role="gfFT$">
           <property role="TrG5h" value="isChecked" />
@@ -2918,13 +2918,13 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsw" resolve="FillTextCommand" />
       <node concept="gft3U" id="Of5vVZ$e2j" role="1lVwrX">
+        <node concept="15s5l7" id="3jDKmRYVvz2" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  String (nameRef) is out of search scope" />
+        </node>
         <node concept="15s5l7" id="Of5vVZ$hju" role="lGtFl">
           <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be child)&quot;;FLAVOUR_MESSAGE=&quot;Node 'text' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3120704408893424229]&quot;;" />
           <property role="huDt6" value="Node 'text' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'" />
-        </node>
-        <node concept="15s5l7" id="Of5vVZ$e2k" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
         </node>
         <node concept="6lMYc" id="Of5vVZ$hiX" role="gfFT$">
           <property role="TrG5h" value="text" />
@@ -2940,13 +2940,13 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsz" resolve="SelectEntryCommand" />
       <node concept="gft3U" id="Of5vVZ$e2p" role="1lVwrX">
+        <node concept="15s5l7" id="3jDKmRYVvz3" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  String (nameRef) is out of search scope" />
+        </node>
         <node concept="15s5l7" id="Of5vVZ$hm_" role="lGtFl">
           <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be child)&quot;;FLAVOUR_MESSAGE=&quot;Node 'entryName' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3120704408893424229]&quot;;" />
           <property role="huDt6" value="Node 'entryName' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'" />
-        </node>
-        <node concept="15s5l7" id="Of5vVZ$e2q" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
         </node>
         <node concept="6lMYc" id="Of5vVZ$hkV" role="gfFT$">
           <property role="TrG5h" value="entryName" />
@@ -2962,13 +2962,13 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsy" resolve="SelectRowCommand" />
       <node concept="gft3U" id="Of5vVZ$e2v" role="1lVwrX">
+        <node concept="15s5l7" id="3jDKmRYVvz4" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  String (nameRef) is out of search scope" />
+        </node>
         <node concept="15s5l7" id="Of5vVZ$hpV" role="lGtFl">
           <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be child)&quot;;FLAVOUR_MESSAGE=&quot;Node 'rowHandle' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3120704408893424229]&quot;;" />
           <property role="huDt6" value="Node 'rowHandle' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'" />
-        </node>
-        <node concept="15s5l7" id="Of5vVZ$e2w" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
         </node>
         <node concept="6lMYc" id="Of5vVZ$hoh" role="gfFT$">
           <property role="TrG5h" value="rowHandle" />
@@ -3008,13 +3008,13 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsy" resolve="SelectRowCommand" />
       <node concept="gft3U" id="Of5vVZ$e2K" role="1lVwrX">
+        <node concept="15s5l7" id="3jDKmRYVvz5" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Integer (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  Integer (nameRef) is out of search scope" />
+        </node>
         <node concept="15s5l7" id="Of5vVZ$hvR" role="lGtFl">
           <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be child)&quot;;FLAVOUR_MESSAGE=&quot;Node 'rowIndex' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3120704408893424229]&quot;;" />
           <property role="huDt6" value="Node 'rowIndex' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'" />
-        </node>
-        <node concept="15s5l7" id="Of5vVZ$e2L" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
         </node>
         <node concept="6lMYc" id="Of5vVZ$hv9" role="gfFT$">
           <property role="TrG5h" value="rowIndex" />
@@ -3254,9 +3254,9 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUuu6dE" resolve="ViewWidgetCommand" />
       <node concept="gft3U" id="Of5vVZK_9m" role="1lVwrX">
-        <node concept="15s5l7" id="Of5vVZK_Hu" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  String (target) is out of search scope" />
+        <node concept="15s5l7" id="3jDKmRYVv8S" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  String (nameRef) is out of search scope" />
         </node>
         <node concept="3xR696" id="Of5vVZK_ab" role="gfFT$">
           <property role="3xR695" value="1KdBIfXPktw/in" />

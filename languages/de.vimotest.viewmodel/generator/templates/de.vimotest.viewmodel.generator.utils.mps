@@ -585,7 +585,7 @@
                   <ref role="3cqZAo" node="1mmsj6y4Lwi" resolve="viewWidget" />
                 </node>
                 <node concept="2qgKlT" id="1mmsj6y4UcE" role="2OqNvi">
-                  <ref role="37wK5l" to="nrs2:1mmsj6xYUQM" resolve="getWidgetSuffix" />
+                  <ref role="37wK5l" to="nrs2:1mmsj6xYUQM" resolve="getWidgetNameSuffix" />
                 </node>
               </node>
               <node concept="3cpWs3" id="1mmsj6y4UcF" role="3uHU7B">

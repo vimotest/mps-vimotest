@@ -236,7 +236,7 @@
     </node>
     <node concept="1l3spV" id="220dcIkyAjn" role="1l3spN">
       <node concept="m$_wl" id="5a8akp1RYYw" role="39821P">
-        <ref role="m_rDy" node="220dcIkyAja" />
+        <ref role="m_rDy" node="220dcIkyAja" resolve="de.vimotest" />
         <node concept="pUk6x" id="5a8akp1RYYx" role="pUk7w" />
       </node>
       <node concept="3981dG" id="220dcIkyAjo" role="39821P">
@@ -289,7 +289,7 @@
         <ref role="m$f5T" node="220dcIkyAj9" resolve="mps-vimotest" />
       </node>
       <node concept="m$f5U" id="5PCYS1MDhg1" role="m$_yh">
-        <ref role="m$f5T" node="220dcIkyGML" resolve="build-and-plugin" />
+        <ref role="m$f5T" node="220dcIkyGML" resolve="mps-build" />
       </node>
       <node concept="m$_yC" id="220dcIkyAjg" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />

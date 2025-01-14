@@ -578,7 +578,7 @@
               <node concept="2OqwBi" id="1mmsj6xZilE" role="2HTEbv">
                 <node concept="13iPFW" id="1mmsj6xZi9B" role="2Oq$k0" />
                 <node concept="2qgKlT" id="1mmsj6xZixh" role="2OqNvi">
-                  <ref role="37wK5l" node="1mmsj6xYUQM" resolve="getWidgetSuffix" />
+                  <ref role="37wK5l" node="1mmsj6xYUQM" resolve="getWidgetNameSuffix" />
                 </node>
               </node>
             </node>
@@ -601,7 +601,7 @@
             <node concept="2OqwBi" id="ZCu$dYvLCX" role="2Oq$k0">
               <node concept="13iPFW" id="ZCu$dYvLCY" role="2Oq$k0" />
               <node concept="3TrEf2" id="ZCu$dYvLCZ" role="2OqNvi">
-                <ref role="3Tt5mk" to="at53:1F_Q10zSUw9" />
+                <ref role="3Tt5mk" to="at53:1F_Q10zSUw9" resolve="checkCommand" />
               </node>
             </node>
             <node concept="2DeJnY" id="ZCu$dYvLD0" role="2OqNvi" />
@@ -988,7 +988,7 @@
     </node>
     <node concept="13i0hz" id="1mmsj6xZRyx" role="13h7CS">
       <property role="TrG5h" value="getWidgetTypeIndicators" />
-      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetTypeIndicators" />
       <node concept="3Tm1VV" id="1mmsj6xZRyy" role="1B3o_S" />
       <node concept="3clFbS" id="1mmsj6xZRyz" role="3clF47">
         <node concept="3clFbF" id="1mmsj6xZRy$" role="3cqZAp">
@@ -1382,7 +1382,7 @@
               </node>
               <node concept="2OqwBi" id="50C086hsdO0" role="3clFbw">
                 <node concept="37vLTw" id="50C086hscqf" role="2Oq$k0">
-                  <ref role="3cqZAo" node="50C086hs14t" resolve="foregroundColorCode" />
+                  <ref role="3cqZAo" node="50C086hs14t" resolve="textColorCode" />
                 </node>
                 <node concept="17RvpY" id="50C086hseWB" role="2OqNvi" />
               </node>
@@ -1512,7 +1512,7 @@
     </node>
     <node concept="13i0hz" id="1mmsj6xZUSO" role="13h7CS">
       <property role="TrG5h" value="getWidgetTypeIndicators" />
-      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetTypeIndicators" />
       <node concept="3Tm1VV" id="1mmsj6xZUSP" role="1B3o_S" />
       <node concept="3clFbS" id="1mmsj6xZUSQ" role="3clF47">
         <node concept="3clFbF" id="1mmsj6xZUSR" role="3cqZAp">
@@ -1805,7 +1805,7 @@
     </node>
     <node concept="13i0hz" id="1mmsj6y03$o" role="13h7CS">
       <property role="TrG5h" value="getWidgetTypeIndicators" />
-      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetTypeIndicators" />
       <node concept="3Tm1VV" id="1mmsj6y03$p" role="1B3o_S" />
       <node concept="3clFbS" id="1mmsj6y03$q" role="3clF47">
         <node concept="3clFbF" id="1mmsj6y03$r" role="3cqZAp">
@@ -3234,7 +3234,7 @@
     </node>
     <node concept="13i0hz" id="1mmsj6y00lr" role="13h7CS">
       <property role="TrG5h" value="getWidgetTypeIndicators" />
-      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetTypeIndicators" />
       <node concept="3Tm1VV" id="1mmsj6y00ls" role="1B3o_S" />
       <node concept="3clFbS" id="1mmsj6y00lt" role="3clF47">
         <node concept="3clFbF" id="1mmsj6y00lu" role="3cqZAp">
@@ -3498,7 +3498,7 @@
     </node>
     <node concept="13i0hz" id="1mmsj6y01R7" role="13h7CS">
       <property role="TrG5h" value="getWidgetTypeIndicators" />
-      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetTypeIndicators" />
       <node concept="3Tm1VV" id="1mmsj6y01R8" role="1B3o_S" />
       <node concept="3clFbS" id="1mmsj6y01R9" role="3clF47">
         <node concept="3clFbF" id="1mmsj6y01Ra" role="3cqZAp">
@@ -4512,7 +4512,7 @@
     </node>
     <node concept="13i0hz" id="1mmsj6xZG8z" role="13h7CS">
       <property role="TrG5h" value="getWidgetTypeIndicators" />
-      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetTypeIndicators" />
       <node concept="3Tm1VV" id="1mmsj6xZG8$" role="1B3o_S" />
       <node concept="3clFbS" id="1mmsj6xZG8I" role="3clF47">
         <node concept="3clFbF" id="1mmsj6xZGjL" role="3cqZAp">
@@ -5072,7 +5072,7 @@
             <node concept="2OqwBi" id="ZCu$dYvN1I" role="2Oq$k0">
               <node concept="13iPFW" id="ZCu$dYvN1J" role="2Oq$k0" />
               <node concept="3TrEf2" id="ZCu$dYvN1K" role="2OqNvi">
-                <ref role="3Tt5mk" to="at53:5oh1xNEMg3i" />
+                <ref role="3Tt5mk" to="at53:5oh1xNEMg3i" resolve="selectEntryCommand" />
               </node>
             </node>
             <node concept="2DeJnY" id="ZCu$dYvN1L" role="2OqNvi" />
@@ -5614,7 +5614,7 @@
     </node>
     <node concept="13i0hz" id="1mmsj6xZXxE" role="13h7CS">
       <property role="TrG5h" value="getWidgetTypeIndicators" />
-      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetTypeIndicators" />
       <node concept="3Tm1VV" id="1mmsj6xZXxF" role="1B3o_S" />
       <node concept="3clFbS" id="1mmsj6xZXxG" role="3clF47">
         <node concept="3clFbF" id="1mmsj6xZXxH" role="3cqZAp">
@@ -5652,7 +5652,7 @@
             <node concept="2OqwBi" id="ZCu$dYvRue" role="2Oq$k0">
               <node concept="13iPFW" id="ZCu$dYvRuf" role="2Oq$k0" />
               <node concept="3TrEf2" id="ZCu$dYvRug" role="2OqNvi">
-                <ref role="3Tt5mk" to="at53:5oh1xNEMg3k" />
+                <ref role="3Tt5mk" to="at53:5oh1xNEMg3k" resolve="fillTextCommand" />
               </node>
             </node>
             <node concept="2DeJnY" id="ZCu$dYvRuh" role="2OqNvi" />
@@ -5884,7 +5884,7 @@
     </node>
     <node concept="13i0hz" id="1mmsj6ya4a3" role="13h7CS">
       <property role="TrG5h" value="getWidgetTypeIndicators" />
-      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetTypeIndicators" />
       <node concept="3Tm1VV" id="1mmsj6ya4a4" role="1B3o_S" />
       <node concept="3clFbS" id="1mmsj6ya4a5" role="3clF47">
         <node concept="3clFbF" id="1mmsj6ya4a6" role="3cqZAp">
@@ -6428,7 +6428,7 @@
     </node>
     <node concept="13i0hz" id="1mmsj6xZMLu" role="13h7CS">
       <property role="TrG5h" value="getWidgetTypeIndicators" />
-      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetTypeIndicators" />
       <node concept="3Tm1VV" id="1mmsj6xZMLv" role="1B3o_S" />
       <node concept="3clFbS" id="1mmsj6xZMLD" role="3clF47">
         <node concept="3clFbF" id="1mmsj6xZN0$" role="3cqZAp">
@@ -8782,7 +8782,7 @@
         </node>
         <node concept="3clFbF" id="3mOHzzzGrjU" role="3cqZAp">
           <node concept="37vLTw" id="3mOHzzzGrlA" role="3clFbG">
-            <ref role="3cqZAo" node="3mOHzzzGrl$" resolve="builtInColors" />
+            <ref role="3cqZAo" node="3mOHzzzGrl$" resolve="result" />
           </node>
         </node>
       </node>
@@ -8968,7 +8968,7 @@
             <node concept="2OqwBi" id="ZCu$dYvOCA" role="2Oq$k0">
               <node concept="13iPFW" id="ZCu$dYvOCB" role="2Oq$k0" />
               <node concept="3TrEf2" id="ZCu$dYvOCC" role="2OqNvi">
-                <ref role="3Tt5mk" to="at53:7NXUkdPQshN" />
+                <ref role="3Tt5mk" to="at53:7NXUkdPQshN" resolve="selectEntryCommand" />
               </node>
             </node>
             <node concept="2DeJnY" id="ZCu$dYvOCD" role="2OqNvi" />
@@ -8978,7 +8978,7 @@
     </node>
     <node concept="13i0hz" id="7NXUkdPQsi6" role="13h7CS">
       <property role="TrG5h" value="createEditorCell" />
-      <ref role="13i0hy" node="6mWHjmRL0Kv" />
+      <ref role="13i0hy" node="6mWHjmRL0Kv" resolve="createEditorCell" />
       <node concept="3Tm1VV" id="7NXUkdPQsi7" role="1B3o_S" />
       <node concept="3clFbS" id="7NXUkdPQsi8" role="3clF47">
         <node concept="3cpWs8" id="7NXUkdPRXMP" role="3cqZAp">
@@ -9034,11 +9034,11 @@
       <node concept="37vLTG" id="7NXUkdPQsio" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="7NXUkdPQsip" role="1tU5fm">
-          <ref role="3uigEE" to="cj4x:~EditorContext" />
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
         </node>
       </node>
       <node concept="3uibUv" id="7NXUkdPQsiq" role="3clF45">
-        <ref role="3uigEE" to="f4zo:~EditorCell" />
+        <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
       </node>
     </node>
     <node concept="13i0hz" id="7NXUkdPQ_j0" role="13h7CS">
@@ -9235,7 +9235,7 @@
     </node>
     <node concept="13i0hz" id="7NXUkdPQsir" role="13h7CS">
       <property role="TrG5h" value="hasFeatureInherentSupport" />
-      <ref role="13i0hy" node="2S2pY38UZYV" />
+      <ref role="13i0hy" node="2S2pY38UZYV" resolve="hasFeatureInherentSupport" />
       <node concept="3Tm1VV" id="7NXUkdPQsis" role="1B3o_S" />
       <node concept="3clFbS" id="7NXUkdPQsit" role="3clF47">
         <node concept="3clFbJ" id="7NXUkdPS0Jk" role="3cqZAp">
@@ -9270,7 +9270,7 @@
             <node concept="2OqwBi" id="7NXUkdPS1ng" role="3uHU7w">
               <node concept="13iPFW" id="7NXUkdPS1nh" role="2Oq$k0" />
               <node concept="3TrEf2" id="7NXUkdPS1ni" role="2OqNvi">
-                <ref role="3Tt5mk" to="at53:7NXUkdPQshK" />
+                <ref role="3Tt5mk" to="at53:7NXUkdPQshK" resolve="selectedEntryFeature" />
               </node>
             </node>
             <node concept="37vLTw" id="7NXUkdPS1nj" role="3uHU7B">
@@ -9285,14 +9285,14 @@
       <node concept="37vLTG" id="7NXUkdPQsiw" role="3clF46">
         <property role="TrG5h" value="feature" />
         <node concept="3Tqbb2" id="7NXUkdPQsix" role="1tU5fm">
-          <ref role="ehGHo" to="at53:L9c2Y9pj53" />
+          <ref role="ehGHo" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
         </node>
       </node>
       <node concept="10P_77" id="7NXUkdPQsiy" role="3clF45" />
     </node>
     <node concept="13i0hz" id="1mmsj6y05NU" role="13h7CS">
       <property role="TrG5h" value="getWidgetTypeIndicators" />
-      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetTypeIndicators" />
       <node concept="3Tm1VV" id="1mmsj6y05NV" role="1B3o_S" />
       <node concept="3clFbS" id="1mmsj6y05NW" role="3clF47">
         <node concept="3clFbF" id="1mmsj6y05NX" role="3cqZAp">

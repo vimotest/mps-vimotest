@@ -755,7 +755,7 @@
                 <node concept="2OqwBi" id="2ZnRpGqLPcG" role="2Oq$k0">
                   <node concept="pncrf" id="2ZnRpGqLOVp" role="2Oq$k0" />
                   <node concept="2qgKlT" id="2ZnRpGqLPrL" role="2OqNvi">
-                    <ref role="37wK5l" to="nrs2:3CJ09vZDbLB" resolve="getLinkedTest" />
+                    <ref role="37wK5l" to="nrs2:3CJ09vZDbLB" resolve="getLinkedTests" />
                   </node>
                 </node>
                 <node concept="3GX2aA" id="3wuujyrc_JR" role="2OqNvi" />
@@ -1359,7 +1359,7 @@
       <ref role="PMmxG" node="9CTo7lmDcx" resolve="ViewWidgetFeature_Supported_EC" />
     </node>
     <node concept="PMmxH" id="1EVo$X00WZC" role="6VMZX">
-      <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector" />
+      <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector_EC" />
     </node>
   </node>
   <node concept="PKFIW" id="6eqMDi1ocJH">
@@ -4026,7 +4026,7 @@
     </node>
     <node concept="3EZMnI" id="1EVo$X070qz" role="6VMZX">
       <node concept="PMmxH" id="1EVo$X070q$" role="3EZMnx">
-        <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector" />
+        <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector_EC" />
       </node>
       <node concept="3F0ifn" id="1EVo$X070q_" role="3EZMnx">
         <property role="3F0ifm" value="tri-state" />
@@ -4049,7 +4049,7 @@
     </node>
     <node concept="3EZMnI" id="4xJPu9gmTEs" role="6VMZX">
       <node concept="PMmxH" id="4xJPu9gmTEt" role="3EZMnx">
-        <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector" />
+        <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector_EC" />
       </node>
       <node concept="1iCGBv" id="6RKU0s3vwYA" role="3EZMnx">
         <ref role="1NtTu8" to="at53:4xJPu9gt$hE" resolve="defaultText" />
@@ -4215,7 +4215,7 @@
     <ref role="1XX52x" to="at53:6RKU0s1p1ab" resolve="ToolTipFeature" />
     <node concept="3EZMnI" id="6RKU0sbaOu6" role="6VMZX">
       <node concept="PMmxH" id="6RKU0sbaOu7" role="3EZMnx">
-        <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector" />
+        <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector_EC" />
       </node>
       <node concept="3EZMnI" id="50C086hopDm" role="3EZMnx">
         <node concept="3F0ifn" id="50C086hoq9A" role="3EZMnx">
@@ -4291,7 +4291,7 @@
         </node>
         <node concept="2iRfu4" id="50C086hpdJ0" role="2iSdaV" />
         <node concept="1iCGBv" id="50C086hpdJ1" role="3EZMnx">
-          <ref role="1NtTu8" to="at53:6RKU0sbaH7v" />
+          <ref role="1NtTu8" to="at53:6RKU0sbaH7v" resolve="defaultToolTipText" />
           <node concept="1sVBvm" id="50C086hpdJ2" role="1sWHZn">
             <node concept="PMmxH" id="50C086hpdJ3" role="2wV5jI">
               <ref role="PMmxG" node="6RKU0s0yutQ" resolve="SingleOrMultiLineString_Inspector_EC" />
@@ -4336,7 +4336,7 @@
     <node concept="3EZMnI" id="6RKU0s3EpKW" role="6VMZX">
       <node concept="l2Vlx" id="6RKU0s3EpKX" role="2iSdaV" />
       <node concept="PMmxH" id="6RKU0s3EpKV" role="3EZMnx">
-        <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector" />
+        <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector_EC" />
       </node>
       <node concept="2yq9I_" id="6RKU0s3EpKZ" role="3EZMnx">
         <ref role="225u1j" to="at53:6RKU0s3Ep$I" resolve="supportMultipleSelectedRows" />
@@ -4619,7 +4619,7 @@
       </node>
       <node concept="3F0ifn" id="50C086hrZsq" role="1j7Clw">
         <property role="3F0ifm" value="tc" />
-        <ref role="1k5W1q" node="43UPKEZ9RW1" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
         <node concept="Veino" id="50C086hrZsr" role="3F10Kt">
           <property role="Vb096" value="fLwANPs/magenta" />
         </node>
@@ -4683,7 +4683,7 @@
     </node>
     <node concept="3EZMnI" id="3mOHzzzGq9i" role="6VMZX">
       <node concept="PMmxH" id="3mOHzzzGq9j" role="3EZMnx">
-        <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector" />
+        <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector_EC" />
       </node>
       <node concept="3F0ifn" id="3mOHzzzGq9k" role="3EZMnx">
         <property role="3F0ifm" value="default color code:" />
@@ -4730,7 +4730,7 @@
       </node>
       <node concept="3F0ifn" id="7NXUkdPQshF" role="1j7Clw">
         <property role="3F0ifm" value="r" />
-        <ref role="1k5W1q" node="43UPKEZ9RW1" />
+        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
         <node concept="Veino" id="7NXUkdPQshG" role="3F10Kt">
           <property role="Vb096" value="g1_eI4o/darkBlue" />
         </node>
@@ -4894,7 +4894,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="5C8UTa3RE9Q" role="3EZMnx">
-          <ref role="1NtTu8" to="at53:5C8UTa3RDG2" />
+          <ref role="1NtTu8" to="at53:5C8UTa3RDG2" resolve="additionalFields" />
           <node concept="pj6Ft" id="5C8UTa3RE9U" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>

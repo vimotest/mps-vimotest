@@ -116,7 +116,7 @@
           <node concept="17R0WA" id="5C8UTa3PMzI" role="3clFbw">
             <node concept="359W_D" id="5C8UTa3PM$G" role="3uHU7w">
               <ref role="359W_E" to="evry:5jkMFwCyKPa" resolve="ListType" />
-              <ref role="359W_F" to="evry:5jkMFwCyKPb" />
+              <ref role="359W_F" to="evry:5jkMFwCyKPb" resolve="nestedType" />
             </node>
             <node concept="2DA6wF" id="5C8UTa3PK_c" role="3uHU7B" />
           </node>

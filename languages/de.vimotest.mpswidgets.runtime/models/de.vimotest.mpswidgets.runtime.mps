@@ -8945,7 +8945,7 @@
             </node>
             <node concept="3clFbF" id="7NXUkdPF7Tq" role="3cqZAp">
               <node concept="1rXfSq" id="7NXUkdPF7Tr" role="3clFbG">
-                <ref role="37wK5l" node="7NXUkdPF7Tw" resolve="toggledValue" />
+                <ref role="37wK5l" node="7NXUkdPF7Tw" resolve="changedValue" />
               </node>
             </node>
           </node>
@@ -9254,11 +9254,11 @@
           <node concept="3cpWsn" id="7NXUkdPF7Vx" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="3uibUv" id="7NXUkdPF7Vy" role="1tU5fm">
-              <ref role="3uigEE" node="7NXUkdPF7MH" resolve="EditorCell_CheckBox" />
+              <ref role="3uigEE" node="7NXUkdPF7MH" resolve="EditorCell_RadioButton" />
             </node>
             <node concept="2ShNRf" id="7NXUkdPF7Vz" role="33vP2m">
               <node concept="1pGfFk" id="7NXUkdPF7V$" role="2ShVmc">
-                <ref role="37wK5l" node="7NXUkdPF7Nf" resolve="EditorCell_CheckBox" />
+                <ref role="37wK5l" node="7NXUkdPF7Nf" resolve="EditorCell_RadioButton" />
                 <node concept="37vLTw" id="7NXUkdPF7V_" role="37wK5m">
                   <ref role="3cqZAo" node="7NXUkdPF7V7" resolve="editorContext" />
                 </node>
@@ -9304,7 +9304,7 @@
       </node>
       <node concept="3Tm1VV" id="7NXUkdPF7VN" role="1B3o_S" />
       <node concept="3uibUv" id="7NXUkdPF7VO" role="3clF45">
-        <ref role="3uigEE" node="7NXUkdPF7MH" resolve="EditorCell_CheckBox" />
+        <ref role="3uigEE" node="7NXUkdPF7MH" resolve="EditorCell_RadioButton" />
       </node>
     </node>
     <node concept="2YIFZL" id="7NXUkdPF7VP" role="jymVt">
@@ -9318,7 +9318,7 @@
       <node concept="37vLTG" id="7NXUkdPF7VS" role="3clF46">
         <property role="TrG5h" value="result" />
         <node concept="3uibUv" id="7NXUkdPF7VT" role="1tU5fm">
-          <ref role="3uigEE" node="7NXUkdPF7MH" resolve="EditorCell_CheckBox" />
+          <ref role="3uigEE" node="7NXUkdPF7MH" resolve="EditorCell_RadioButton" />
         </node>
       </node>
       <node concept="3clFbS" id="7NXUkdPF7VU" role="3clF47">

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="611ecc9e-0703-4ab9-a13c-fb396c607716" name="de.vimotest.types" version="0" />
-    <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="0" />
+    <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="1" />
     <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="0" />
     <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing" version="0" />
   </languages>
@@ -132,7 +132,7 @@
         </node>
         <node concept="DUd5q" id="Of5vVZwrN$" role="1s$QAM">
           <node concept="Tef3P" id="Of5vVZwrNA" role="DUiS9">
-            <ref role="3ucQsQ" node="Of5vVZtNIW" resolve="MyCheckBox" />
+            <ref role="3ucQsQ" node="Of5vVZtNIW" resolve="MyFlag" />
           </node>
         </node>
       </node>
@@ -155,7 +155,7 @@
         </node>
         <node concept="DUd5q" id="aV2Sa0uGCC" role="1s$QAM">
           <node concept="Tef3P" id="aV2Sa0uGCD" role="DUiS9">
-            <ref role="3ucQsQ" node="Of5vVZtNIW" resolve="MyCheckBox" />
+            <ref role="3ucQsQ" node="Of5vVZtNIW" resolve="MyFlag" />
           </node>
         </node>
       </node>

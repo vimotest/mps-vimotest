@@ -17,6 +17,7 @@
     <import index="davt" ref="r:9d2fb39f-5375-4c80-8980-936f0533f829(generationAnnotations)" />
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" />
     <import index="bqjt" ref="r:ec1f09af-a5e9-4755-932d-7ccae7bdd219(alfi.behavior)" />
+    <import index="stu" ref="r:3d4c677e-9995-49a6-a26d-5a02e8d59528(alfi.commonGeneratorHelper)" />
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="45v0" ref="r:ba746408-9865-4b76-b4e7-cbd40a893006(de.vimotest.types.behavior)" implicit="true" />
@@ -2881,8 +2882,8 @@
       <node concept="3clFbS" id="GirOujt6Wd" role="2VODD2">
         <node concept="3clFbF" id="5jkMFwvD5HM" role="3cqZAp">
           <node concept="2YIFZM" id="5jkMFwvD5Iv" role="3clFbG">
-            <ref role="37wK5l" to="jrwo:5jkMFwvD2ZM" resolve="generateMissingAlfNamespaces" />
-            <ref role="1Pybhc" to="jrwo:5jkMFwvD2YP" resolve="AlfNamespaceGenerator" />
+            <ref role="37wK5l" to="stu:5jkMFwvD2ZM" resolve="generateMissingAlfNamespaces" />
+            <ref role="1Pybhc" to="stu:5jkMFwvD2YP" resolve="AlfNamespaceGenerator" />
             <node concept="1Q6Npb" id="5jkMFwvD5IX" role="37wK5m" />
           </node>
         </node>

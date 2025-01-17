@@ -1,13 +1,13 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "TableViews_ViewContextProvider.h"
+#include "TableViews_ViewTestSetup.h"
 #include "TableViews_View.h"
 #include <vector>
 #include "TableViews_ViewMyElementsRow.h"
 #include <string>
 #include "TableViews_ViewMyStringRowHandlesRow.h"
-#include "TableViews_ViewContextProviderImpl.h"
+#include "TableViews_ViewTestSetupImpl.h"
 
 namespace widgetassertions
 {
@@ -15,7 +15,7 @@ namespace widgetassertions
   {
     public:
     std::shared_ptr<TableViews_View> sut;
-    std::shared_ptr<TableViews_ViewContextProvider> contextProvider;
+    std::shared_ptr<TableViews_ViewTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
     virtual void then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled() ;
@@ -26,8 +26,8 @@ namespace widgetassertions
   };
   void TableViews_ViewTest::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<TableViews_ViewContextProviderImpl>();
-    this->contextProvider->Init();
+    this->testSetup = std::make_shared<TableViews_ViewTestSetupImpl>();
+    this->testSetup->Init();
   }
   TEST_F(TableViews_ViewTest,  My_Scenario_given_empty_context_when_then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1) 
   {
@@ -44,7 +44,7 @@ namespace widgetassertions
   }
   void TableViews_ViewTest::BuildSut( ) 
   {
-    this->sut = this->contextProvider->BuildSut();
+    this->sut = this->testSetup->BuildSut();
   }
   void TableViews_ViewTest::given_empty_context( ) 
   {

@@ -1,0 +1,10 @@
+namespace commands ;
+
+
+
+abstract class RowBasedCommand_ViewTestSetup {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : RowBasedCommand_View  ;
+}

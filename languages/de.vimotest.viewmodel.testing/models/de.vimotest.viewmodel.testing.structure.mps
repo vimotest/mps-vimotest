@@ -151,7 +151,7 @@
     </node>
     <node concept="1TJgyi" id="4Pj3bOmuYX9" role="1TKVEl">
       <property role="IQ2nx" value="5571811170253008713" />
-      <property role="TrG5h" value="contextProviderClassName" />
+      <property role="TrG5h" value="testSetupClassName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
@@ -1198,7 +1198,7 @@
     <property role="3GE5qa" value="test.context.datatable" />
     <property role="TrG5h" value="DataTableContext" />
     <property role="34LRSv" value="data table context" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6RKU0sdiKfw" role="1TKVEl">
       <property role="IQ2nx" value="7922086861530137568" />
       <property role="TrG5h" value="generationMode" />
@@ -1227,7 +1227,7 @@
     <property role="3GE5qa" value="test.context.datatable" />
     <property role="TrG5h" value="DataTableRow" />
     <property role="34LRSv" value="data table row" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6RKU0sd8q9I" role="1TKVEi">
       <property role="IQ2ns" value="7922086861527425646" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1263,7 +1263,7 @@
     <property role="TrG5h" value="ContextReference" />
     <property role="34LRSv" value="context ref" />
     <property role="R4oN_" value="reference a context to reuse" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7NXUkdOvpli" role="1TKVEi">
       <property role="IQ2ns" value="9006611305737327954" />
       <property role="20kJfa" value="ref" />
@@ -1311,7 +1311,7 @@
     <property role="3GE5qa" value="test.assert" />
     <property role="TrG5h" value="ViewModelFieldAssertion" />
     <property role="34LRSv" value="field assertion" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2GcDibl8gDz" role="1TKVEi">
       <property role="IQ2ns" value="3102035812374612579" />
       <property role="20kJfa" value="field" />
@@ -1337,7 +1337,7 @@
     <property role="3GE5qa" value="test.assert.widgets.structures.base" />
     <property role="TrG5h" value="CheckRowBase" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4cF8FMAV354" role="1TKVEi">
       <property role="IQ2ns" value="4840000418189422916" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1354,7 +1354,7 @@
     <property role="3GE5qa" value="test.context.other" />
     <property role="TrG5h" value="DataPathContext" />
     <property role="34LRSv" value="data context path" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="178awX4ZkwT" role="1TKVEl">
       <property role="IQ2nx" value="1281320339057231929" />
       <property role="TrG5h" value="path" />

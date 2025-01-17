@@ -6,12 +6,12 @@ class LoadCommand_ViewTests {
   
   private sut : LoadCommand_View  ;
   
-  private contextProvider : LoadCommand_ViewContextProvider  ;
+  private testSetup : LoadCommand_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new LoadCommand_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new LoadCommand_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -27,7 +27,7 @@ class LoadCommand_ViewTests {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   

@@ -1,0 +1,10 @@
+namespace widgetassertions ;
+
+
+
+abstract class LowLevelFields_ViewTestSetup {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : LowLevelFields_View  ;
+}

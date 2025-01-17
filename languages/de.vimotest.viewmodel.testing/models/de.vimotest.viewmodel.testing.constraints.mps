@@ -581,7 +581,7 @@
           <node concept="3clFbF" id="7NXUkdRsEvt" role="3cqZAp">
             <node concept="37vLTI" id="7NXUkdRsFqy" role="3clFbG">
               <node concept="37vLTw" id="7NXUkdRsFvN" role="37vLTx">
-                <ref role="3cqZAo" node="7NXUkdRsDl9" resolve="relatedEntry" />
+                <ref role="3cqZAo" node="7NXUkdRsDl9" resolve="matchingEntry" />
               </node>
               <node concept="2OqwBi" id="7NXUkdRsEMa" role="37vLTJ">
                 <node concept="EsrRn" id="7NXUkdRsEvs" role="2Oq$k0" />
@@ -1023,7 +1023,7 @@
       </node>
     </node>
     <node concept="1N5Pfh" id="7NXUkdOvpIB" role="1Mr941">
-      <ref role="1N5Vy1" to="53m0:7NXUkdOvpli" />
+      <ref role="1N5Vy1" to="53m0:7NXUkdOvpli" resolve="ref" />
       <node concept="3dgokm" id="7NXUkdOvpJA" role="1N6uqs">
         <node concept="3clFbS" id="7NXUkdOvpJC" role="2VODD2">
           <node concept="3cpWs8" id="7NXUkdOv$4K" role="3cqZAp">
@@ -1110,10 +1110,10 @@
             </node>
             <node concept="2OqwBi" id="7NXUkdPQsj1" role="3uHU7B">
               <node concept="35c_gC" id="7NXUkdPQsj2" role="2Oq$k0">
-                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" />
+                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" resolve="ViewWidgetCheck" />
               </node>
               <node concept="2qgKlT" id="7NXUkdPQsj3" role="2OqNvi">
-                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" />
+                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" resolve="getWidgetConceptToCheckByParentNode" />
                 <node concept="nLn13" id="7NXUkdPQsj4" role="37wK5m" />
               </node>
             </node>
@@ -1141,7 +1141,7 @@
           <node concept="17R0WA" id="7NXUkdR4mrz" role="3clFbw">
             <node concept="359W_D" id="7NXUkdR4mEk" role="3uHU7w">
               <ref role="359W_E" to="53m0:7NXUkdPQsiT" resolve="RadioButtonCheck" />
-              <ref role="359W_F" to="53m0:7NXUkdPQsiU" />
+              <ref role="359W_F" to="53m0:7NXUkdPQsiU" resolve="checks" />
             </node>
             <node concept="2DA6wF" id="7NXUkdR4l5v" role="3uHU7B" />
           </node>
@@ -1158,7 +1158,7 @@
     <property role="3GE5qa" value="test.assert" />
     <ref role="1M2myG" to="53m0:2GcDibl8goZ" resolve="ViewModelFieldAssertion" />
     <node concept="1N5Pfh" id="2GcDibl8gDW" role="1Mr941">
-      <ref role="1N5Vy1" to="53m0:2GcDibl8gDz" />
+      <ref role="1N5Vy1" to="53m0:2GcDibl8gDz" resolve="field" />
       <node concept="3dgokm" id="2GcDibl8gJF" role="1N6uqs">
         <node concept="3clFbS" id="2GcDibl8gJG" role="2VODD2">
           <node concept="3cpWs8" id="4cF8FMAYZsz" role="3cqZAp">

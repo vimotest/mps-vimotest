@@ -1,0 +1,14 @@
+namespace widgetassertions ;
+
+
+
+class CheckBoxes_ViewTestSetupImpl specializes CheckBoxes_ViewTestSetup {
+  
+  public Init (  ) {     }
+  
+  public SetEmptyContext (  ) {     }
+  
+  public BuildSut (  ) : CheckBoxes_View  {
+  return null;
+ }
+}

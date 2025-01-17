@@ -497,7 +497,7 @@
             </node>
             <node concept="3BYIHo" id="3wuujyrZNVP" role="2OqNvi">
               <node concept="37vLTw" id="3wuujyrZNVQ" role="3BYIHq">
-                <ref role="3cqZAo" node="3wuujyrZNVF" resolve="testSuite" />
+                <ref role="3cqZAo" node="3wuujyrZNVF" resolve="newTestSuite" />
               </node>
             </node>
           </node>
@@ -506,7 +506,7 @@
           <node concept="37vLTI" id="3wuujyrZNVS" role="3clFbG">
             <node concept="2OqwBi" id="3wuujyrZNVW" role="37vLTJ">
               <node concept="37vLTw" id="3wuujyrZNVX" role="2Oq$k0">
-                <ref role="3cqZAo" node="3wuujyrZNVF" resolve="testSuite" />
+                <ref role="3cqZAo" node="3wuujyrZNVF" resolve="newTestSuite" />
               </node>
               <node concept="3TrcHB" id="3wuujyrZNVY" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:hnGE5uv" resolve="virtualPackage" />
@@ -546,7 +546,7 @@
           <node concept="37vLTI" id="3wuujyrZNW0" role="3clFbG">
             <node concept="2OqwBi" id="3wuujyrZPS3" role="37vLTx">
               <node concept="37vLTw" id="3wuujyrZR4R" role="2Oq$k0">
-                <ref role="3cqZAo" node="3wuujyrZR4L" resolve="ancestor" />
+                <ref role="3cqZAo" node="3wuujyrZR4L" resolve="previousTestSuite" />
               </node>
               <node concept="3TrEf2" id="3wuujyrZQgw" role="2OqNvi">
                 <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
@@ -554,10 +554,10 @@
             </node>
             <node concept="2OqwBi" id="3wuujyrZNW2" role="37vLTJ">
               <node concept="37vLTw" id="3wuujyrZNW3" role="2Oq$k0">
-                <ref role="3cqZAo" node="3wuujyrZNVF" resolve="testSuite" />
+                <ref role="3cqZAo" node="3wuujyrZNVF" resolve="newTestSuite" />
               </node>
               <node concept="3TrEf2" id="3wuujyrZNW4" role="2OqNvi">
-                <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" />
+                <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
               </node>
             </node>
           </node>
@@ -572,7 +572,7 @@
             </node>
             <node concept="2OqwBi" id="3wuujyrZNWc" role="37vLTJ">
               <node concept="37vLTw" id="3wuujyrZNWd" role="2Oq$k0">
-                <ref role="3cqZAo" node="3wuujyrZNVF" resolve="testSuite" />
+                <ref role="3cqZAo" node="3wuujyrZNVF" resolve="newTestSuite" />
               </node>
               <node concept="3TrcHB" id="3wuujyrZNWe" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -623,7 +623,7 @@
                 <node concept="liA8E" id="3wuujyrZNWr" role="2OqNvi">
                   <ref role="37wK5l" to="cj4x:~EditorPanelManager.openEditor(org.jetbrains.mps.openapi.model.SNode)" resolve="openEditor" />
                   <node concept="37vLTw" id="3wuujyrZNWs" role="37wK5m">
-                    <ref role="3cqZAo" node="3wuujyrZNVF" resolve="testSuite" />
+                    <ref role="3cqZAo" node="3wuujyrZNVF" resolve="newTestSuite" />
                   </node>
                 </node>
               </node>
@@ -770,7 +770,7 @@
             <node concept="2OqwBi" id="6lcd$mvsLf6" role="37vLTx">
               <node concept="2Sf5sV" id="6lcd$mvsOuA" role="2Oq$k0" />
               <node concept="3TrEf2" id="6lcd$mvsLf8" role="2OqNvi">
-                <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" />
+                <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
               </node>
             </node>
             <node concept="2OqwBi" id="6lcd$mvsLf9" role="37vLTJ">
@@ -778,7 +778,7 @@
                 <ref role="3cqZAo" node="6lcd$mvsLeC" resolve="newTestSuite" />
               </node>
               <node concept="3TrEf2" id="6lcd$mvsLfb" role="2OqNvi">
-                <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" />
+                <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
               </node>
             </node>
           </node>

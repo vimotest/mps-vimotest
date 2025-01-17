@@ -236,7 +236,7 @@
     </node>
     <node concept="1l3spV" id="220dcIkyAjn" role="1l3spN">
       <node concept="m$_wl" id="5a8akp1RYYw" role="39821P">
-        <ref role="m_rDy" node="220dcIkyAja" />
+        <ref role="m_rDy" node="220dcIkyAja" resolve="de.vimotest" />
         <node concept="pUk6x" id="5a8akp1RYYx" role="pUk7w" />
       </node>
       <node concept="3981dG" id="220dcIkyAjo" role="39821P">
@@ -289,7 +289,7 @@
         <ref role="m$f5T" node="220dcIkyAj9" resolve="mps-vimotest" />
       </node>
       <node concept="m$f5U" id="5PCYS1MDhg1" role="m$_yh">
-        <ref role="m$f5T" node="220dcIkyGML" resolve="build-and-plugin" />
+        <ref role="m$f5T" node="220dcIkyGML" resolve="mps-build" />
       </node>
       <node concept="m$_yC" id="220dcIkyAjg" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
@@ -385,6 +385,11 @@
           <node concept="1SiIV0" id="3JF9X1LrEQL" role="3bR37C">
             <node concept="3bR9La" id="3JF9X1LrEQM" role="1SiIV1">
               <ref role="3bR37D" to="mk2q:5tK9548cRi8" resolve="alfi" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="5TrbpGL5bEa" role="3bR37C">
+            <node concept="3bR9La" id="5TrbpGL5bEb" role="1SiIV1">
+              <ref role="3bR37D" to="mk2q:2SeqMAc5VSa" resolve="alfi.GeneratorUtils" />
             </node>
           </node>
         </node>

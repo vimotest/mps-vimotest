@@ -6,12 +6,12 @@ class LowLevelFields_ViewTests {
   
   private sut : LowLevelFields_View  ;
   
-  private contextProvider : LowLevelFields_ViewContextProvider  ;
+  private testSetup : LowLevelFields_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new LowLevelFields_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new LowLevelFields_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -36,7 +36,7 @@ class LowLevelFields_ViewTests {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   

@@ -1,0 +1,10 @@
+namespace commands ;
+
+
+
+abstract class SelectEntryCommand_ViewTestSetup {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : SelectEntryCommand_View  ;
+}

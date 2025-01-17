@@ -1095,7 +1095,7 @@
         <ref role="PMmxG" to="czmc:3JF9X1LtxCE" resolve="IHasNamespace_EC" />
       </node>
       <node concept="3F0ifn" id="4Pj3bOmvgzL" role="3EZMnx">
-        <property role="3F0ifm" value="context provider class name:" />
+        <property role="3F0ifm" value="test setup class name:" />
         <node concept="pVoyu" id="4Pj3bOmvgzN" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1103,7 +1103,7 @@
       <node concept="3F0A7n" id="4Pj3bOmvgzP" role="3EZMnx">
         <property role="1O74Pk" value="true" />
         <property role="1$x2rV" value="&lt;ViewModelClassName&gt;ContextProvider" />
-        <ref role="1NtTu8" to="53m0:4Pj3bOmuYX9" resolve="contextProviderClassName" />
+        <ref role="1NtTu8" to="53m0:4Pj3bOmuYX9" resolve="testSetupClassName" />
       </node>
     </node>
   </node>
@@ -2600,7 +2600,7 @@
       <node concept="2iRfu4" id="55YtzNami8M" role="2iSdaV" />
     </node>
     <node concept="PMmxH" id="2gGjxPLEAeO" role="6VMZX">
-      <ref role="PMmxG" node="2gGjxPLEAeM" resolve="WidgetFeatureCheckValue_Inspector" />
+      <ref role="PMmxG" node="2gGjxPLEAeM" resolve="WidgetFeatureCheckValue_Inspector_EC" />
     </node>
   </node>
   <node concept="PKFIW" id="55YtzNami8N">
@@ -5263,7 +5263,7 @@
         </node>
       </node>
       <node concept="PMmxH" id="1MbPAgiZWdO" role="3EZMnx">
-        <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_EC" />
+        <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_Inspector_EC" />
         <node concept="pVoyu" id="1MbPAgiZWdP" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -5309,7 +5309,7 @@
         <ref role="1NtTu8" to="53m0:5ZcB1GhJ1UL" resolve="virtualPackageOfFile" />
       </node>
       <node concept="PMmxH" id="1MbPAgiZWdU" role="3EZMnx">
-        <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_EC" />
+        <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_Inspector_EC" />
         <node concept="pVoyu" id="1MbPAgiZWdV" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -5365,7 +5365,7 @@
     </node>
     <node concept="3EZMnI" id="1MbPAgiZWdQ" role="6VMZX">
       <node concept="PMmxH" id="1MbPAgiZWdS" role="3EZMnx">
-        <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_EC" />
+        <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_Inspector_EC" />
         <node concept="pVoyu" id="1MbPAgiZWdT" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -5602,7 +5602,7 @@
         </node>
       </node>
       <node concept="PMmxH" id="4cF8FMB2Rua" role="3EZMnx">
-        <ref role="PMmxG" node="4cF8FMB2lia" resolve="CheckRowBase_EC" />
+        <ref role="PMmxG" node="4cF8FMB2lia" resolve="CheckRowBase_additionalFieldAssertions_EC" />
         <node concept="pVoyu" id="4cF8FMB2Scx" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -6001,7 +6001,7 @@
     <node concept="3EZMnI" id="50C086hrZsG" role="2wV5jI">
       <node concept="3F0ifn" id="50C086hrZsH" role="3EZMnx">
         <property role="3F0ifm" value="has text color" />
-        <ref role="1k5W1q" node="55YtzNatuDs" />
+        <ref role="1k5W1q" node="55YtzNatuDs" resolve="ThenDescriptionText" />
       </node>
       <node concept="3F0A7n" id="3mOHzzzAmfm" role="3EZMnx">
         <ref role="1NtTu8" to="53m0:3mOHzzzAlYq" resolve="expectedColorCode" />
@@ -6060,7 +6060,7 @@
         <ref role="1NtTu8" to="53m0:6RKU0sdiKfw" resolve="generationMode" />
       </node>
       <node concept="PMmxH" id="1MbPAgiZWdM" role="3EZMnx">
-        <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_EC" />
+        <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_Inspector_EC" />
         <node concept="pVoyu" id="1MbPAgiZWdN" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -6087,7 +6087,7 @@
       <ref role="PMmxG" node="55YtzNami8N" resolve="WidgetFeatureCheckValue_expectationCell_EC" />
     </node>
     <node concept="1PE4EZ" id="2gGjxPLEMLK" role="1PM95z">
-      <ref role="1PE7su" node="2gGjxPLEAeM" resolve="WidgetFeatureCheckValue_Inspector" />
+      <ref role="1PE7su" node="2gGjxPLEAeM" resolve="WidgetFeatureCheckValue_Inspector_EC" />
     </node>
   </node>
   <node concept="24kQdi" id="7NXUkdOvplj">
@@ -6180,8 +6180,8 @@
           <node concept="3clFbF" id="7NXUkdPQsiE" role="3cqZAp">
             <node concept="3fqX7Q" id="7NXUkdPQsiF" role="3clFbG">
               <node concept="2YIFZM" id="7NXUkdPQsiG" role="3fr31v">
-                <ref role="37wK5l" node="2_MKLxJcA3M" />
-                <ref role="1Pybhc" node="2_MKLxJcA2h" />
+                <ref role="37wK5l" node="2_MKLxJcA3M" resolve="isCheckValueAlreadyUsed" />
+                <ref role="1Pybhc" node="2_MKLxJcA2h" resolve="CheckValueHelper" />
                 <node concept="1GpqW3" id="7NXUkdPQsiH" role="37wK5m" />
                 <node concept="3bvxqY" id="7NXUkdPQsiI" role="37wK5m" />
                 <node concept="1J7kdh" id="7NXUkdPQsiJ" role="37wK5m" />
@@ -6214,7 +6214,7 @@
     <node concept="3EZMnI" id="7NXUkdPQsjY" role="2wV5jI">
       <node concept="3F0ifn" id="7NXUkdPQsjZ" role="3EZMnx">
         <property role="3F0ifm" value="dynamically asserting radio button choices is not supported yet" />
-        <ref role="1k5W1q" node="55YtzNatuDs" />
+        <ref role="1k5W1q" node="55YtzNatuDs" resolve="ThenDescriptionText" />
         <node concept="VechU" id="7NXUkdRrOkl" role="3F10Kt">
           <property role="Vb096" value="fLwANPn/red" />
         </node>
@@ -6291,7 +6291,7 @@
                     <ref role="3cqZAo" node="4mnk8hBWKmL" resolve="node" />
                   </node>
                   <node concept="3TrEf2" id="4mnk8hBWKmV" role="2OqNvi">
-                    <ref role="3Tt5mk" to="53m0:2GcDibl8gDz" />
+                    <ref role="3Tt5mk" to="53m0:2GcDibl8gDz" resolve="field" />
                   </node>
                 </node>
               </node>
@@ -6494,7 +6494,7 @@
                               <ref role="3cqZAo" node="4mnk8hBWKnO" resolve="it" />
                             </node>
                             <node concept="3TrEf2" id="4mnk8hBWPYC" role="2OqNvi">
-                              <ref role="3Tt5mk" to="53m0:2GcDibl8gDz" />
+                              <ref role="3Tt5mk" to="53m0:2GcDibl8gDz" resolve="field" />
                             </node>
                           </node>
                         </node>
@@ -6559,7 +6559,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="4cF8FMAYLuK" role="2Oq$k0">
-              <ref role="3cqZAo" node="4cF8FMAYLuF" resolve="fieldsScopeForParent" />
+              <ref role="3cqZAo" node="4cF8FMAYLuF" resolve="fieldsScope" />
             </node>
           </node>
         </node>
@@ -6766,7 +6766,7 @@
     </node>
     <node concept="3EZMnI" id="5hwqM0OF4L4" role="6VMZX">
       <node concept="PMmxH" id="5hwqM0OF4L9" role="3EZMnx">
-        <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_EC" />
+        <ref role="PMmxG" node="1MbPAgiZVDs" resolve="ITestScenarioContext_customTestContextTypeName_Inspector_EC" />
       </node>
       <node concept="l2Vlx" id="5hwqM0OF4L5" role="2iSdaV" />
       <node concept="PMmxH" id="5hwqM0OF4L7" role="3EZMnx">

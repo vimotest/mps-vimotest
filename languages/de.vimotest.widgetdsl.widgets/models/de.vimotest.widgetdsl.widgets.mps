@@ -105,7 +105,7 @@
       <ref role="2WVz4k" node="ipeJ6mNnGD" resolve="ToolTip" />
     </node>
     <node concept="2WVz4l" id="50C086hrZsh" role="2WV$Zc">
-      <ref role="2WVz4k" node="50C086hrZsf" resolve="ForegroundColor" />
+      <ref role="2WVz4k" node="50C086hrZsf" resolve="TextColor" />
     </node>
   </node>
   <node concept="2WVz3E" id="7H4Lpx0an3A">

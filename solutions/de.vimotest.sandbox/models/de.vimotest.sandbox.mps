@@ -249,10 +249,10 @@
         <child id="2674824929519838363" name="expression" index="_vku1" />
       </concept>
       <concept id="2674824929519835217" name="alfi.structure.QualifiedName" flags="ng" index="_vnHb">
-        <child id="2674824929519835218" name="names" index="_vnH8" />
+        <child id="5213821159894486360" name="nameBinding" index="35HzJw" />
       </concept>
-      <concept id="8550147057602730244" name="alfi.structure.NameReference" flags="ng" index="2RqM1Q">
-        <reference id="8550147057602730245" name="target" index="2RqM1R" />
+      <concept id="2674824929519835220" name="alfi.structure.NameBinding" flags="ng" index="_vnHe">
+        <reference id="3855977438835276054" name="nameRef" index="3acloq" />
       </concept>
       <concept id="7144803224892162748" name="alfi.structure.DecimalLiteralExpression" flags="ng" index="32T38h">
         <property id="7144803224892162749" name="valueText" index="32T38g" />
@@ -1333,7 +1333,7 @@
       <node concept="1s$VFG" id="6fEYrkZxlQz" role="1s$QAY">
         <node concept="DUd2R" id="4w9z1ta2RGT" role="1s$QAX">
           <node concept="30nzp_" id="4w9z1ta2RGU" role="DUiSb">
-            <ref role="30nzpS" node="4w9z1ta2qal" resolve="MyLabel" />
+            <ref role="30nzpS" node="4w9z1ta2qal" resolve="Test" />
             <node concept="V3Zc6" id="4w9z1ta2RGV" role="30nDbQ">
               <node concept="V3Zdv" id="4w9z1ta2RGW" role="V3Zc7">
                 <property role="3egigc" value="My Expectation Text" />
@@ -1361,7 +1361,7 @@
       <node concept="1s$VFG" id="6RKU0s0$Ixy" role="1s$QAY">
         <node concept="DUd2R" id="6RKU0s0$Ixz" role="1s$QAX">
           <node concept="30nzp_" id="6RKU0s0$Ix$" role="DUiSb">
-            <ref role="30nzpS" node="6RKU0s0uSHj" resolve="MyMultiLineLabel" />
+            <ref role="30nzpS" node="6RKU0s0uSHj" resolve="MultiLine" />
             <node concept="V3Zc6" id="6RKU0s0$IxE" role="30nDbQ">
               <node concept="V3Zdv" id="6RKU0s0$IxF" role="V3Zc7">
                 <node concept="o7Kjd" id="6RKU0s0MwuJ" role="oSbKM">
@@ -1402,7 +1402,7 @@
       <node concept="1s$VFG" id="6RKU0s2F1fc" role="1s$QAY">
         <node concept="DUd2R" id="6RKU0s2F1ff" role="1s$QAX">
           <node concept="30nzp_" id="6RKU0s2F1fk" role="DUiSb">
-            <ref role="30nzpS" node="6RKU0s20Rn2" resolve="MyLabelWithToolTip" />
+            <ref role="30nzpS" node="6RKU0s20Rn2" resolve="WithToolTip" />
             <node concept="V3Zc6" id="6RKU0s2F1fl" role="30nDbQ">
               <node concept="V3Zdv" id="6RKU0s2F1fm" role="V3Zc7">
                 <node concept="o7Kjd" id="6RKU0s2F1fn" role="oSbKM">
@@ -1427,7 +1427,7 @@
       <node concept="1s$VFG" id="6RKU0sbGcmu" role="1s$QAY">
         <node concept="DUd2R" id="6RKU0sbGcmv" role="1s$QAX">
           <node concept="30nzp_" id="6RKU0sbGcmw" role="DUiSb">
-            <ref role="30nzpS" node="6RKU0sbAOb2" resolve="MyLabelWithMultiLineToolTip" />
+            <ref role="30nzpS" node="6RKU0sbAOb2" resolve="WithMultiLineToolTip" />
             <node concept="V3Zc6" id="6RKU0sbGcmC" role="30nDbQ">
               <node concept="V3Zdv" id="6RKU0sbGcmD" role="V3Zc7">
                 <node concept="o7Kjd" id="6RKU0sbGcmE" role="oSbKM">
@@ -1464,7 +1464,7 @@
       <node concept="1s$VFG" id="3mOHzzzKuuy" role="1s$QAY">
         <node concept="DUd2R" id="3mOHzzzKuu_" role="1s$QAX">
           <node concept="30nzp_" id="3mOHzzzKuuB" role="DUiSb">
-            <ref role="30nzpS" node="3mOHzzzGq8O" resolve="MyLabelWithTextColor" />
+            <ref role="30nzpS" node="3mOHzzzGq8O" resolve="WithTextColor" />
             <node concept="V3Zc6" id="3mOHzzzKuuC" role="30nDbQ">
               <node concept="V3Zdv" id="3mOHzzzKuuD" role="V3Zc7">
                 <node concept="o7Kjd" id="3mOHzzzKuuE" role="oSbKM">
@@ -1556,7 +1556,7 @@
       <node concept="1s$VFG" id="6fEYrkZxlQ_" role="1s$QAY">
         <node concept="DUd2R" id="4w9z1ta31A4" role="1s$QAX">
           <node concept="30nzp_" id="4w9z1ta31A5" role="DUiSb">
-            <ref role="30nzpS" node="4w9z1ta2v5X" resolve="MyImage" />
+            <ref role="30nzpS" node="4w9z1ta2v5X" resolve="Status" />
             <node concept="2mJbJ5" id="4w9z1ta3qhv" role="30nDbQ">
               <node concept="2mJbG1" id="4w9z1ta3qhw" role="2mJbJ6">
                 <node concept="3eDL7N" id="4w9z1ta3qhx" role="3n32fm">
@@ -1568,7 +1568,7 @@
         </node>
         <node concept="DUd2R" id="4w9z1ta31Ab" role="1s$QAX">
           <node concept="30nzp_" id="4w9z1ta31Ac" role="DUiSb">
-            <ref role="30nzpS" node="4w9z1ta2v62" resolve="MyUpDownImage" />
+            <ref role="30nzpS" node="4w9z1ta2v62" resolve="UpOrDown" />
             <node concept="2mJbJ5" id="4w9z1ta3qhy" role="30nDbQ">
               <node concept="2mJbG1" id="4w9z1ta3qhz" role="2mJbJ6">
                 <node concept="3eDL7N" id="4w9z1ta3qh$" role="3n32fm">
@@ -1599,7 +1599,7 @@
               <node concept="1i$qk" id="GUPzt1WPYh" role="1i$rf">
                 <node concept="CNEhi" id="708i5MC36C0" role="3o2WtG">
                   <node concept="1NuoHz" id="XX1C5W2AtL" role="CNE8S">
-                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Text" />
+                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Value" />
                     <node concept="V3Zc6" id="7a1oxby5iE6" role="1NuoHy">
                       <node concept="V3Zdv" id="7a1oxby5iE9" role="V3Zc7">
                         <property role="3egigc" value="A" />
@@ -1616,7 +1616,7 @@
                 </node>
                 <node concept="CNEhi" id="708i5MC36C1" role="3o2WtG">
                   <node concept="1NuoHz" id="XX1C5W2AtM" role="CNE8S">
-                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Text" />
+                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Value" />
                     <node concept="V3Zc6" id="7a1oxby5iDW" role="1NuoHy">
                       <node concept="V3Zdv" id="7a1oxby5iE0" role="V3Zc7">
                         <property role="3egigc" value="B" />
@@ -1630,7 +1630,7 @@
                 </node>
                 <node concept="CNEhi" id="708i5MC36C2" role="3o2WtG">
                   <node concept="1NuoHz" id="XX1C5W2AtN" role="CNE8S">
-                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Text" />
+                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Value" />
                     <node concept="V3Zc6" id="5MibNhOhAt8" role="1NuoHy">
                       <node concept="V3Zdv" id="5MibNhOhAt9" role="V3Zc7">
                         <property role="3egigc" value="C" />
@@ -1646,7 +1646,7 @@
                 </node>
                 <node concept="CNEhi" id="2L$_HjiTwWG" role="3o2WtG">
                   <node concept="1NuoHz" id="XX1C5W2AtO" role="CNE8S">
-                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Text" />
+                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Value" />
                     <node concept="V3Zc6" id="2L$_HjiTwWI" role="1NuoHy">
                       <node concept="V3Zdv" id="2L$_HjiTwWJ" role="V3Zc7">
                         <property role="3egigc" value="D" />
@@ -1677,7 +1677,7 @@
               <node concept="1i$qk" id="5MibNhOiLQZ" role="1i$rf">
                 <node concept="CNEhi" id="4w9z1ta3CZC" role="3o2WtG">
                   <node concept="1NuoHz" id="4w9z1ta3CZD" role="CNE8S">
-                    <ref role="3elmOO" node="4w9z1ta2CUy" resolve="My Image" />
+                    <ref role="3elmOO" node="4w9z1ta2CUy" resolve="My Info" />
                     <node concept="2mJbJ5" id="4w9z1ta3CZF" role="1NuoHy">
                       <node concept="2mJbG1" id="4w9z1ta3CZG" role="2mJbJ6">
                         <node concept="3eDL7N" id="4w9z1ta3CZH" role="3n32fm">
@@ -1689,7 +1689,7 @@
                 </node>
                 <node concept="CNEhi" id="4w9z1ta3CZI" role="3o2WtG">
                   <node concept="1NuoHz" id="4w9z1ta3CZJ" role="CNE8S">
-                    <ref role="3elmOO" node="4w9z1ta2CUy" resolve="My Image" />
+                    <ref role="3elmOO" node="4w9z1ta2CUy" resolve="My Info" />
                     <node concept="2mJbJ5" id="4w9z1ta3CZL" role="1NuoHy">
                       <node concept="2mJbG1" id="4w9z1ta3CZM" role="2mJbJ6">
                         <node concept="3eDL7N" id="4w9z1ta3CZN" role="3n32fm">
@@ -1799,7 +1799,7 @@
         </node>
         <node concept="DUd2R" id="4CJYu48xSdW" role="1s$QAX">
           <node concept="30nzp_" id="4CJYu48xSdY" role="DUiSb">
-            <ref role="30nzpS" node="4CJYu48x152" resolve="MyMultiRowSelectionList" />
+            <ref role="30nzpS" node="4CJYu48x152" resolve="MyListWithMultiRowSelection" />
             <node concept="1i$re" id="4CJYu48xSdZ" role="30nDbQ">
               <node concept="1i$qk" id="4CJYu48xSe0" role="1i$rf">
                 <node concept="CNEhi" id="4CJYu48xSe1" role="3o2WtG">
@@ -1869,7 +1869,7 @@
               <node concept="1i$qk" id="2$TY9D5Lmcr" role="1i$rf">
                 <node concept="CNEhi" id="2$TY9D5Lmcs" role="3o2WtG">
                   <node concept="1NuoHz" id="2$TY9D5Lmct" role="CNE8S">
-                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Text" />
+                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Value" />
                     <node concept="V3Zc6" id="2$TY9D5Lmcu" role="1NuoHy">
                       <node concept="V3Zdv" id="2$TY9D5Lmcv" role="V3Zc7">
                         <property role="3egigc" value="A" />
@@ -1886,7 +1886,7 @@
                 </node>
                 <node concept="CNEhi" id="2$TY9D5Lmcz" role="3o2WtG">
                   <node concept="1NuoHz" id="2$TY9D5Lmc$" role="CNE8S">
-                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Text" />
+                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Value" />
                     <node concept="V3Zc6" id="2$TY9D5Lmc_" role="1NuoHy">
                       <node concept="V3Zdv" id="2$TY9D5LmcA" role="V3Zc7">
                         <property role="3egigc" value="B" />
@@ -1900,7 +1900,7 @@
                 </node>
                 <node concept="CNEhi" id="2$TY9D5LmcD" role="3o2WtG">
                   <node concept="1NuoHz" id="2$TY9D5LmcE" role="CNE8S">
-                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Text" />
+                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Value" />
                     <node concept="V3Zc6" id="2$TY9D5LmcF" role="1NuoHy">
                       <node concept="V3Zdv" id="2$TY9D5LmcG" role="V3Zc7">
                         <property role="3egigc" value="C" />
@@ -1916,7 +1916,7 @@
                 </node>
                 <node concept="CNEhi" id="2$TY9D5LmcJ" role="3o2WtG">
                   <node concept="1NuoHz" id="2$TY9D5LmcK" role="CNE8S">
-                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Text" />
+                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Value" />
                     <node concept="V3Zc6" id="2$TY9D5LmcL" role="1NuoHy">
                       <node concept="V3Zdv" id="2$TY9D5LmcM" role="V3Zc7">
                         <property role="3egigc" value="D" />
@@ -1955,7 +1955,7 @@
                 <node concept="CNEhi" id="6RKU0s8t67a" role="3o2WtG">
                   <node concept="1NuoHz" id="6RKU0s8t67b" role="CNE8S">
                     <property role="1EpJ0C" value="true" />
-                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Text" />
+                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Value" />
                     <node concept="V3Zc6" id="6RKU0s8t67c" role="1NuoHy">
                       <node concept="V3Zdv" id="6RKU0s8t67d" role="V3Zc7">
                         <property role="3egigc" value="A" />
@@ -1972,7 +1972,7 @@
                 </node>
                 <node concept="CNEhi" id="6RKU0s8t67h" role="3o2WtG">
                   <node concept="1NuoHz" id="6RKU0s8t67i" role="CNE8S">
-                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Text" />
+                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Value" />
                     <node concept="V3Zc6" id="6RKU0s8t67j" role="1NuoHy">
                       <node concept="V3Zdv" id="6RKU0s8t67k" role="V3Zc7">
                         <property role="3egigc" value="B" />
@@ -1987,7 +1987,7 @@
                 <node concept="CNEhi" id="6RKU0s8t67n" role="3o2WtG">
                   <node concept="1NuoHz" id="6RKU0s8t67o" role="CNE8S">
                     <property role="1EpJ0C" value="true" />
-                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Text" />
+                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Value" />
                     <node concept="V3Zc6" id="6RKU0s8t67p" role="1NuoHy">
                       <node concept="V3Zdv" id="6RKU0s8t67q" role="V3Zc7">
                         <property role="3egigc" value="C" />
@@ -2003,7 +2003,7 @@
                 </node>
                 <node concept="CNEhi" id="6RKU0s8t67t" role="3o2WtG">
                   <node concept="1NuoHz" id="6RKU0s8t67u" role="CNE8S">
-                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Text" />
+                    <ref role="3elmOO" node="4w9z1ta2CUo" resolve="My Value" />
                     <node concept="V3Zc6" id="6RKU0s8t67v" role="1NuoHy">
                       <node concept="V3Zdv" id="6RKU0s8t67w" role="V3Zc7">
                         <property role="3egigc" value="D" />
@@ -2040,7 +2040,7 @@
       <node concept="1s$VFG" id="6fEYrkZxlQB" role="1s$QAY">
         <node concept="DUd2R" id="4w9z1ta3bwF" role="1s$QAX">
           <node concept="30nzp_" id="4w9z1ta3bwG" role="DUiSb">
-            <ref role="30nzpS" node="4w9z1ta2HPS" resolve="MyTableView" />
+            <ref role="30nzpS" node="4w9z1ta2HPS" resolve="MyElements" />
             <node concept="3UVeCy" id="4w9z1ta3vbK" role="30nDbQ">
               <node concept="2ayrQO" id="4w9z1ta3HVI" role="3UVeCz">
                 <node concept="1EpGR1" id="2$TY9D5zv5U" role="1EpG3j">
@@ -2206,7 +2206,7 @@
       <node concept="1s$VFG" id="2$TY9D5Li6c" role="1s$QAY">
         <node concept="DUd2R" id="2$TY9D5Li6d" role="1s$QAX">
           <node concept="30nzp_" id="2$TY9D5Li6e" role="DUiSb">
-            <ref role="30nzpS" node="4w9z1ta2HPS" resolve="MyTableView" />
+            <ref role="30nzpS" node="4w9z1ta2HPS" resolve="MyElements" />
             <node concept="3UVeCy" id="2$TY9D5Li6f" role="30nDbQ">
               <node concept="2ayrQO" id="2$TY9D5Li6g" role="3UVeCz">
                 <node concept="1EpGR1" id="2$TY9D5Li6h" role="1EpG3j">
@@ -2329,7 +2329,7 @@
       <node concept="1s$VFG" id="6fEYrkZxlQC" role="1s$QAY">
         <node concept="DUd2R" id="4w9z1ta3HU9" role="1s$QAX">
           <node concept="30nzp_" id="4w9z1ta3HUa" role="DUiSb">
-            <ref role="30nzpS" node="4w9z1ta2MKH" resolve="MyTreeView" />
+            <ref role="30nzpS" node="4w9z1ta2MKH" resolve="MyTreeViewElements" />
             <node concept="3Vayj_" id="4w9z1ta3HUb" role="30nDbQ">
               <node concept="3VayiJ" id="4w9z1ta3HUc" role="3Vayj$">
                 <node concept="1EpGR1" id="2$TY9D5NRsC" role="1EpBIi">
@@ -2639,7 +2639,7 @@
       <node concept="1s$VFG" id="2$TY9D5NRsM" role="1s$QAY">
         <node concept="DUd2R" id="2$TY9D5NRsN" role="1s$QAX">
           <node concept="30nzp_" id="2$TY9D5NRsO" role="DUiSb">
-            <ref role="30nzpS" node="4w9z1ta2MKH" resolve="MyTreeView" />
+            <ref role="30nzpS" node="4w9z1ta2MKH" resolve="MyTreeViewElements" />
             <node concept="3Vayj_" id="2$TY9D5NRsP" role="30nDbQ">
               <node concept="3VayiJ" id="2$TY9D5NRsQ" role="3Vayj$">
                 <node concept="1EpGR1" id="2$TY9D5NRsR" role="1EpBIi">
@@ -2829,7 +2829,7 @@
       <node concept="1s$VFG" id="6fEYrkZxlQD" role="1s$QAY">
         <node concept="DUd2R" id="2exRXkpRoQg" role="1s$QAX">
           <node concept="30nzp_" id="2exRXkpRoQh" role="DUiSb">
-            <ref role="30nzpS" node="2exRXkpRtDe" resolve="MyTextBox" />
+            <ref role="30nzpS" node="2exRXkpRtDe" resolve="MyValue" />
             <node concept="UtuKh" id="2exRXkpRtDm" role="30nDbQ">
               <node concept="V3Zdv" id="2exRXkpRtDn" role="UtuKg">
                 <property role="3egigc" value="Some entered Input" />
@@ -2857,7 +2857,7 @@
       <node concept="1s$VFG" id="3c$pnH1kzuJ" role="1s$QAY">
         <node concept="DUd2R" id="3c$pnH1kzuK" role="1s$QAX">
           <node concept="30nzp_" id="3c$pnH1kzuS" role="DUiSb">
-            <ref role="30nzpS" node="3c$pnH1f30P" resolve="MultiLineTextBox" />
+            <ref role="30nzpS" node="3c$pnH1f30P" resolve="MultiLineTextBoxValue" />
             <node concept="UtuKh" id="3c$pnH1kzuT" role="30nDbQ">
               <node concept="V3Zdv" id="3c$pnH1kzuU" role="UtuKg">
                 <node concept="o7Kjd" id="3c$pnH1kzuW" role="oSbKM">
@@ -2897,8 +2897,8 @@
               <node concept="1Wmaf1" id="5jkMFwF8Kfh" role="_vku1">
                 <property role="327w9R" value="true" />
                 <node concept="_vnHb" id="5jkMFwF8Kgb" role="1Wmaf7">
-                  <node concept="2RqM1Q" id="5jkMFwF8Kgc" role="_vnH8">
-                    <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+                  <node concept="_vnHe" id="5jkMFwF8Kgc" role="35HzJw">
+                    <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
                   </node>
                 </node>
                 <node concept="1Wm7YT" id="5jkMFwF8Ki0" role="1Wm7Yz">
@@ -3039,7 +3039,7 @@
       <node concept="1s$VFG" id="6fEYrkZxlQG" role="1s$QAY">
         <node concept="DUd2R" id="5oh1xNFzrMW" role="1s$QAX">
           <node concept="30nzp_" id="5oh1xNFzrN5" role="DUiSb">
-            <ref role="30nzpS" node="5oh1xNFyt$V" resolve="OkButton" />
+            <ref role="30nzpS" node="5oh1xNFyt$V" resolve="Ok" />
             <node concept="2X2XOa" id="5oh1xNFzrN7" role="30nDbQ">
               <node concept="35STUl" id="5oh1xNF$MWE" role="2X2XOb">
                 <property role="3XJMQh" value="true" />
@@ -3069,7 +3069,7 @@
         <node concept="DUd5q" id="7NpiMQMLC45" role="1s$QAM">
           <node concept="3eaLt2" id="7NpiMQMZW_V" role="DUiS9">
             <property role="3fQinD" value="Changed" />
-            <ref role="3ucQsQ" node="5oh1xNEXBx$" resolve="MyTextBox" />
+            <ref role="3ucQsQ" node="5oh1xNEXBx$" resolve="MyValue" />
           </node>
         </node>
       </node>
@@ -3080,7 +3080,7 @@
         <node concept="DUd5q" id="7UthagY0kwg" role="1s$QAM">
           <node concept="3eaLt2" id="7UthagY24dt" role="DUiS9">
             <property role="3fQinD" value="Changed" />
-            <ref role="3ucQsQ" node="7UthagY0kvW" resolve="MyFreeTextComboBox" />
+            <ref role="3ucQsQ" node="7UthagY0kvW" resolve="MyFreeValue" />
           </node>
         </node>
       </node>
@@ -3114,7 +3114,7 @@
       <node concept="1s$VFG" id="6fEYrkZxlQJ" role="1s$QAY">
         <node concept="DUd5q" id="7NpiMQN01q6" role="1s$QAM">
           <node concept="3eaLt3" id="7NpiMQN01q8" role="DUiS9">
-            <ref role="3ucQsQ" node="7NpiMQN01pT" resolve="MyButton" />
+            <ref role="3ucQsQ" node="7NpiMQN01pT" resolve="Ok" />
           </node>
         </node>
       </node>
@@ -3221,12 +3221,12 @@
         <node concept="DUd5q" id="5imH8sU7U3U" role="1s$QAM">
           <node concept="3eaLtv" id="5imH8sU7U3W" role="DUiS9">
             <property role="2qt_KD" value="C" />
-            <ref role="3ucQsQ" node="5imH8sU7TYs" resolve="MyComboBox" />
+            <ref role="3ucQsQ" node="5imH8sU7TYs" resolve="MyElements" />
           </node>
         </node>
         <node concept="DUd2R" id="58LMrr8jMBu" role="1s$QAX">
           <node concept="30nzp_" id="58LMrr8jMBw" role="DUiSb">
-            <ref role="30nzpS" node="5imH8sU7TYs" resolve="MyComboBox" />
+            <ref role="30nzpS" node="5imH8sU7TYs" resolve="MyElements" />
             <node concept="7cNBp" id="58LMrr8jMBx" role="30nDbQ">
               <node concept="7cN$v" id="58LMrr8jMBy" role="7cNBo">
                 <node concept="2gaR_a" id="58LMrr8jMB$" role="LTUL5">
@@ -3251,7 +3251,7 @@
         <node concept="DUd5q" id="7NXUkdSh_Ab" role="1s$QAM">
           <node concept="3eaLtv" id="7NXUkdSh_Am" role="DUiS9">
             <property role="2qt_KD" value="B" />
-            <ref role="3ucQsQ" node="7NXUkdSh__V" resolve="MyRadioButton" />
+            <ref role="3ucQsQ" node="7NXUkdSh__V" resolve="MyOptions" />
           </node>
         </node>
       </node>
@@ -3505,12 +3505,12 @@
         <node concept="DUd5q" id="1LLcOD9FY2w" role="1s$QAM">
           <node concept="3eaLts" id="1LLcOD9FY2y" role="DUiS9">
             <property role="3_VSTS" value="1" />
-            <ref role="3ucQsQ" node="1LLcOD9FY1D" resolve="MyListView" />
+            <ref role="3ucQsQ" node="1LLcOD9FY1D" resolve="MyListViewElements" />
           </node>
         </node>
         <node concept="DUd2R" id="1LLcOD9HXTf" role="1s$QAX">
           <node concept="30nzp_" id="1LLcOD9HXTh" role="DUiSb">
-            <ref role="30nzpS" node="1LLcOD9FY1D" resolve="MyListView" />
+            <ref role="30nzpS" node="1LLcOD9FY1D" resolve="MyListViewElements" />
             <node concept="1i$re" id="1LLcOD9HXTi" role="30nDbQ">
               <node concept="1i$qk" id="1LLcOD9HXTj" role="1i$rf">
                 <node concept="CNEhi" id="1LLcOD9HXTk" role="3o2WtG">
@@ -3554,12 +3554,12 @@
         <node concept="DUd5q" id="6fEYrkZpD80" role="1s$QAM">
           <node concept="3eaLts" id="6fEYrkZpD8T" role="DUiS9">
             <property role="3_VSTZ" value="ROW_B" />
-            <ref role="3ucQsQ" node="6fEYrkZpD6_" resolve="MyStringRowHandleListView" />
+            <ref role="3ucQsQ" node="6fEYrkZpD6_" resolve="MyStringRowHandleListViewElements" />
           </node>
         </node>
         <node concept="DUd2R" id="6fEYrkZpD82" role="1s$QAX">
           <node concept="30nzp_" id="6fEYrkZpD83" role="DUiSb">
-            <ref role="30nzpS" node="6fEYrkZpD6_" resolve="MyStringRowHandleListView" />
+            <ref role="30nzpS" node="6fEYrkZpD6_" resolve="MyStringRowHandleListViewElements" />
             <node concept="1i$re" id="6fEYrkZpD8G" role="30nDbQ">
               <node concept="1i$qk" id="6fEYrkZpD8H" role="1i$rf">
                 <node concept="CNEhi" id="6fEYrkZpD8I" role="3o2WtG">
@@ -3605,12 +3605,12 @@
         <node concept="DUd5q" id="115Lfa94895" role="1s$QAM">
           <node concept="3eaLts" id="115Lfa94896" role="DUiS9">
             <property role="3_VSTS" value="1" />
-            <ref role="3ucQsQ" node="1LLcOD9FY15" resolve="MyTableView" />
+            <ref role="3ucQsQ" node="1LLcOD9FY15" resolve="MyTableViewElements" />
           </node>
         </node>
         <node concept="DUd2R" id="115Lfa94897" role="1s$QAX">
           <node concept="30nzp_" id="115Lfa9489k" role="DUiSb">
-            <ref role="30nzpS" node="1LLcOD9FY15" resolve="MyTableView" />
+            <ref role="30nzpS" node="1LLcOD9FY15" resolve="MyTableViewElements" />
             <node concept="3UVeCy" id="115Lfa9489l" role="30nDbQ">
               <node concept="2ayrQO" id="115Lfa9489m" role="3UVeCz">
                 <node concept="1EpGR1" id="2$TY9D5W8NZ" role="1EpG3j">
@@ -3654,12 +3654,12 @@
         <node concept="DUd5q" id="6fEYrkZpD8f" role="1s$QAM">
           <node concept="3eaLts" id="6fEYrkZpD9j" role="DUiS9">
             <property role="3_VSTZ" value="ROW_B" />
-            <ref role="3ucQsQ" node="6fEYrkZpD6P" resolve="MyStringRowHandleTableView" />
+            <ref role="3ucQsQ" node="6fEYrkZpD6P" resolve="MyStringRowHandleTableViewElements" />
           </node>
         </node>
         <node concept="DUd2R" id="6fEYrkZpD8h" role="1s$QAX">
           <node concept="30nzp_" id="6fEYrkZpD98" role="DUiSb">
-            <ref role="30nzpS" node="6fEYrkZpD6P" resolve="MyStringRowHandleTableView" />
+            <ref role="30nzpS" node="6fEYrkZpD6P" resolve="MyStringRowHandleTableViewElements" />
             <node concept="3UVeCy" id="6fEYrkZpD99" role="30nDbQ">
               <node concept="2ayrQO" id="6fEYrkZpD9a" role="3UVeCz">
                 <node concept="1EpGR1" id="2$TY9D5W8NX" role="1EpG3j">
@@ -3705,12 +3705,12 @@
         <node concept="DUd5q" id="115Lfa96$0a" role="1s$QAM">
           <node concept="3eaLts" id="115Lfa96$0b" role="DUiS9">
             <property role="3_VSTS" value="1" />
-            <ref role="3ucQsQ" node="1LLcOD9FY1T" resolve="MyTreeView" />
+            <ref role="3ucQsQ" node="1LLcOD9FY1T" resolve="MyTreeViewElements" />
           </node>
         </node>
         <node concept="DUd2R" id="115Lfa96$0c" role="1s$QAX">
           <node concept="30nzp_" id="115Lfa96$0p" role="DUiSb">
-            <ref role="30nzpS" node="1LLcOD9FY1T" resolve="MyTreeView" />
+            <ref role="30nzpS" node="1LLcOD9FY1T" resolve="MyTreeViewElements" />
             <node concept="3Vayj_" id="115Lfa96$0q" role="30nDbQ">
               <node concept="3VayiJ" id="115Lfa96$0r" role="3Vayj$">
                 <node concept="1EpGR1" id="2$TY9D5W8NY" role="1EpBIi">
@@ -3756,12 +3756,12 @@
         <node concept="DUd5q" id="6fEYrkZpD8u" role="1s$QAM">
           <node concept="3eaLts" id="6fEYrkZpD9x" role="DUiS9">
             <property role="3_VSTZ" value="ROW_B" />
-            <ref role="3ucQsQ" node="6fEYrkZpD7p" resolve="MyStringRowHandleTreeView" />
+            <ref role="3ucQsQ" node="6fEYrkZpD7p" resolve="MyStringRowHandleTreeViewElements" />
           </node>
         </node>
         <node concept="DUd2R" id="6fEYrkZpD8w" role="1s$QAX">
           <node concept="30nzp_" id="6fEYrkZpD8x" role="DUiSb">
-            <ref role="30nzpS" node="6fEYrkZpD7p" resolve="MyStringRowHandleTreeView" />
+            <ref role="30nzpS" node="6fEYrkZpD7p" resolve="MyStringRowHandleTreeViewElements" />
             <node concept="3Vayj_" id="6fEYrkZpD9k" role="30nDbQ">
               <node concept="3VayiJ" id="6fEYrkZpD9l" role="3Vayj$">
                 <node concept="1EpGR1" id="2$TY9D5W8NW" role="1EpBIi">
@@ -3808,7 +3808,7 @@
       <node concept="1s$VFG" id="4CJYu48_VwU" role="1s$QAY">
         <node concept="DUd5q" id="4CJYu48_VwV" role="1s$QAM">
           <node concept="3eaLts" id="4CJYu48AUvD" role="DUiS9">
-            <ref role="3ucQsQ" node="6RKU0s3Ep$o" resolve="MyStringHandleMultiSelectRowListView" />
+            <ref role="3ucQsQ" node="6RKU0s3Ep$o" resolve="MyStringHandleMultiSelectRowListViewElements" />
             <node concept="1DSg3y" id="4CJYu48FDhj" role="1DS4Qo">
               <property role="3_VSTZ" value="ROW_A" />
             </node>
@@ -3819,7 +3819,7 @@
         </node>
         <node concept="DUd2R" id="4CJYu48_VwX" role="1s$QAX">
           <node concept="30nzp_" id="4CJYu48_VwY" role="DUiSb">
-            <ref role="30nzpS" node="6RKU0s3Ep$o" resolve="MyStringHandleMultiSelectRowListView" />
+            <ref role="30nzpS" node="6RKU0s3Ep$o" resolve="MyStringHandleMultiSelectRowListViewElements" />
             <node concept="1i$re" id="4CJYu48GJTl" role="30nDbQ">
               <node concept="1i$qk" id="4CJYu48GJTm" role="1i$rf">
                 <node concept="CNEhi" id="4CJYu48GJTz" role="3o2WtG">
@@ -4003,7 +4003,7 @@
         <node concept="DUd5q" id="2w4bAIFS7K9" role="1s$QAM">
           <node concept="30ylMN" id="2w4bAIFTIqZ" role="DUiS9">
             <property role="3_VSTS" value="0" />
-            <ref role="23N36s" node="2w4bAIFOccT" resolve="MyListView" />
+            <ref role="23N36s" node="2w4bAIFOccT" resolve="MyFlags" />
             <node concept="Tef3P" id="2w4bAIFTIr1" role="30ylMY">
               <property role="Te1Rl" value="true" />
               <ref role="3ucQsQ" node="2w4bAIFOcdQ" resolve="Checkboxes" />
@@ -4013,7 +4013,7 @@
         <node concept="DUd5q" id="2w4bAIG1wGk" role="1s$QAM">
           <node concept="30ylMN" id="2w4bAIG1wGl" role="DUiS9">
             <property role="3_VSTS" value="1" />
-            <ref role="23N36s" node="2w4bAIFOccT" resolve="MyListView" />
+            <ref role="23N36s" node="2w4bAIFOccT" resolve="MyFlags" />
             <node concept="Tef3P" id="2w4bAIG1wGm" role="30ylMY">
               <ref role="3ucQsQ" node="2w4bAIFOcdQ" resolve="Checkboxes" />
             </node>
@@ -4021,7 +4021,7 @@
         </node>
         <node concept="DUd2R" id="2w4bAIFYfzV" role="1s$QAX">
           <node concept="30nzp_" id="2w4bAIFYfzX" role="DUiSb">
-            <ref role="30nzpS" node="2w4bAIFOccT" resolve="MyListView" />
+            <ref role="30nzpS" node="2w4bAIFOccT" resolve="MyFlags" />
             <node concept="1i$re" id="2w4bAIFYfzY" role="30nDbQ">
               <node concept="1i$qk" id="2w4bAIFYfzZ" role="1i$rf">
                 <node concept="CNEhi" id="2w4bAIFYf$0" role="3o2WtG">
@@ -4059,7 +4059,7 @@
         <node concept="DUd5q" id="2w4bAIG1wF$" role="1s$QAM">
           <node concept="30ylMN" id="2w4bAIG1wGe" role="DUiS9">
             <property role="3_VSTS" value="0" />
-            <ref role="23N36s" node="2w4bAIFOccq" resolve="MyTableView" />
+            <ref role="23N36s" node="2w4bAIFOccq" resolve="MyComboBoxes" />
             <node concept="3eaLtv" id="2w4bAIG1wGg" role="30ylMY">
               <property role="2qt_KD" value="MyText1" />
               <ref role="3ucQsQ" node="2w4bAIFOceD" resolve="FreeTextComboBoxes" />
@@ -4069,7 +4069,7 @@
         <node concept="DUd5q" id="2w4bAIG1wGh" role="1s$QAM">
           <node concept="30ylMN" id="2w4bAIG1wGi" role="DUiS9">
             <property role="3_VSTS" value="1" />
-            <ref role="23N36s" node="2w4bAIFOccq" resolve="MyTableView" />
+            <ref role="23N36s" node="2w4bAIFOccq" resolve="MyComboBoxes" />
             <node concept="3eaLtv" id="2w4bAIG1wGj" role="30ylMY">
               <property role="2qt_KD" value="MyText2" />
               <ref role="3ucQsQ" node="2w4bAIFOceD" resolve="FreeTextComboBoxes" />
@@ -4079,7 +4079,7 @@
         <node concept="DUd5q" id="2w4bAIG1wGp" role="1s$QAM">
           <node concept="30ylMN" id="2w4bAIG1wGr" role="DUiS9">
             <property role="3_VSTS" value="0" />
-            <ref role="23N36s" node="2w4bAIFOccq" resolve="MyTableView" />
+            <ref role="23N36s" node="2w4bAIFOccq" resolve="MyComboBoxes" />
             <node concept="3eaLtv" id="2w4bAIG1wGt" role="30ylMY">
               <property role="2qt_KD" value="B" />
               <ref role="3ucQsQ" node="2w4bAIFOcfa" resolve="EntryComboBoxes" />
@@ -4089,7 +4089,7 @@
         <node concept="DUd5q" id="2w4bAIG1wG$" role="1s$QAM">
           <node concept="30ylMN" id="2w4bAIG1wG_" role="DUiS9">
             <property role="3_VSTS" value="1" />
-            <ref role="23N36s" node="2w4bAIFOccq" resolve="MyTableView" />
+            <ref role="23N36s" node="2w4bAIFOccq" resolve="MyComboBoxes" />
             <node concept="3eaLtv" id="2w4bAIG1wGA" role="30ylMY">
               <property role="2qt_KD" value="D" />
               <ref role="3ucQsQ" node="2w4bAIFOcfa" resolve="EntryComboBoxes" />
@@ -4098,7 +4098,7 @@
         </node>
         <node concept="DUd2R" id="2w4bAIG1wFB" role="1s$QAX">
           <node concept="30nzp_" id="2w4bAIG1wFO" role="DUiSb">
-            <ref role="30nzpS" node="2w4bAIFOccq" resolve="MyTableView" />
+            <ref role="30nzpS" node="2w4bAIFOccq" resolve="MyComboBoxes" />
             <node concept="3UVeCy" id="2w4bAIG1wFP" role="30nDbQ">
               <node concept="2ayrQO" id="2w4bAIG1wFQ" role="3UVeCz">
                 <node concept="1EpGR1" id="2$TY9D5W8NS" role="1EpG3j">
@@ -4183,7 +4183,7 @@
         <node concept="DUd5q" id="2w4bAIG1wHB" role="1s$QAM">
           <node concept="30ylMN" id="2w4bAIG1wHD" role="DUiS9">
             <property role="3_VSTS" value="0" />
-            <ref role="23N36s" node="2w4bAIFOcd9" resolve="MyTreeView" />
+            <ref role="23N36s" node="2w4bAIFOcd9" resolve="MyStandardControls" />
             <node concept="3eaLt2" id="2w4bAIG1wHF" role="30ylMY">
               <property role="3fQinD" value="A" />
               <ref role="3ucQsQ" node="2w4bAIFOcfj" resolve="TextBoxes" />
@@ -4193,7 +4193,7 @@
         <node concept="DUd5q" id="2w4bAIG1wHG" role="1s$QAM">
           <node concept="30ylMN" id="2w4bAIG1wHH" role="DUiS9">
             <property role="3_VSTS" value="1" />
-            <ref role="23N36s" node="2w4bAIFOcd9" resolve="MyTreeView" />
+            <ref role="23N36s" node="2w4bAIFOcd9" resolve="MyStandardControls" />
             <node concept="3eaLt2" id="2w4bAIG1wHI" role="30ylMY">
               <property role="3fQinD" value="B" />
               <ref role="3ucQsQ" node="2w4bAIFOcfj" resolve="TextBoxes" />
@@ -4203,7 +4203,7 @@
         <node concept="DUd5q" id="2w4bAIG1wHJ" role="1s$QAM">
           <node concept="30ylMN" id="2w4bAIG1wHL" role="DUiS9">
             <property role="3_VSTS" value="0" />
-            <ref role="23N36s" node="2w4bAIFOcd9" resolve="MyTreeView" />
+            <ref role="23N36s" node="2w4bAIFOcd9" resolve="MyStandardControls" />
             <node concept="3eaLt3" id="2w4bAIG1wHN" role="30ylMY">
               <ref role="3ucQsQ" node="2w4bAIFOcfB" resolve="Buttons" />
             </node>
@@ -4211,7 +4211,7 @@
         </node>
         <node concept="DUd2R" id="2w4bAIG1wGP" role="1s$QAX">
           <node concept="30nzp_" id="2w4bAIG1wHk" role="DUiSb">
-            <ref role="30nzpS" node="2w4bAIFOcd9" resolve="MyTreeView" />
+            <ref role="30nzpS" node="2w4bAIFOcd9" resolve="MyStandardControls" />
             <node concept="3Vayj_" id="2w4bAIG1wHl" role="30nDbQ">
               <node concept="3VayiJ" id="2w4bAIG1wHm" role="3Vayj$">
                 <node concept="1EpGR1" id="2$TY9D5W8NT" role="1EpBIi">
@@ -4882,8 +4882,8 @@
             <node concept="1Wmaf1" id="5C8UTa3z2zN" role="3YbqX6">
               <property role="327w9R" value="true" />
               <node concept="_vnHb" id="5C8UTa3z2$4" role="1Wmaf7">
-                <node concept="2RqM1Q" id="5C8UTa3z2_y" role="_vnH8">
-                  <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+                <node concept="_vnHe" id="5C8UTa3z2_y" role="35HzJw">
+                  <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
                 </node>
               </node>
               <node concept="1Wm7YT" id="5C8UTa3z2_1" role="1Wm7Yz">
@@ -4925,8 +4925,8 @@
                     <node concept="1Wmaf1" id="4cF8FMB5mWb" role="3YbqX6">
                       <property role="327w9R" value="true" />
                       <node concept="3xHE8C" id="4cF8FMB5mWr" role="1Wmaf7">
-                        <node concept="2RqM1Q" id="4cF8FMB5mWq" role="_vnH8">
-                          <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+                        <node concept="_vnHe" id="4cF8FMB5mWq" role="35HzJw">
+                          <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
                         </node>
                       </node>
                       <node concept="1Wm7YT" id="4cF8FMB5mXg" role="1Wm7Yz">
@@ -5010,7 +5010,7 @@
   <node concept="30n1Qd" id="_w8fxLMj9A">
     <property role="3GE5qa" value="context" />
     <property role="TrG5h" value="DataPathContext_ViewTests" />
-    <ref role="30n1PB" node="_w8fxLMj9y" resolve="DataContextPath_View" />
+    <ref role="30n1PB" node="_w8fxLMj9y" resolve="DataPathContext_View" />
     <node concept="3LKzX3" id="_w8fxLMj9B" role="30n1Qb">
       <property role="TrG5h" value="Data Path Context" />
       <node concept="1IbZgy" id="_w8fxLMj9C" role="DUd2K">

@@ -1,0 +1,10 @@
+namespace commands ;
+
+
+
+abstract class GenericCommands_ViewTestSetup {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : GenericCommands_View  ;
+}

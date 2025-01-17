@@ -1,0 +1,12 @@
+namespace context ;
+
+
+
+abstract class XmlElementContext_ViewTestSetup {
+  
+  public abstract Init (  ) ;
+  
+  public abstract SetXmlElementContext (   in xml : String  ) ;
+  
+  public abstract BuildSut (  ) : XmlElementContext_View  ;
+}

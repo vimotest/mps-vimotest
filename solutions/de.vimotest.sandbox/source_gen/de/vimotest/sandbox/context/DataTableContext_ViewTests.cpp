@@ -1,9 +1,9 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "DataTableContext_ViewContextProvider.h"
+#include "DataTableContext_ViewTestSetup.h"
 #include "DataTableContext_View.h"
-#include "DataTableContext_ViewContextProviderImpl.h"
+#include "DataTableContext_ViewTestSetupImpl.h"
 #include <string>
 
 namespace context
@@ -12,7 +12,7 @@ namespace context
   {
     public:
     std::shared_ptr<DataTableContext_View> sut;
-    std::shared_ptr<DataTableContext_ViewContextProvider> contextProvider;
+    std::shared_ptr<DataTableContext_ViewTestSetup> testSetup;
     virtual void BuildSut() ;
     std::string dataTableCustomSetter = R"(| id | name |
 | 0 | A |)";
@@ -38,8 +38,8 @@ namespace context
   };
   void DataTableContext_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<DataTableContext_ViewContextProviderImpl>();
-    this->contextProvider->Init();
+    this->testSetup = std::make_shared<DataTableContext_ViewTestSetupImpl>();
+    this->testSetup->Init();
   }
   TEST_F(DataTableContext_ViewTests,  DataTable_Context_Custom_Setter_given_dataTableCustomSetter_when_then_) 
   {
@@ -68,27 +68,27 @@ namespace context
   }
   void DataTableContext_ViewTests::BuildSut( ) 
   {
-    this->sut = this->contextProvider->BuildSut();
+    this->sut = this->testSetup->BuildSut();
   }
   void DataTableContext_ViewTests::given_dataTableCustomSetter( ) 
   {
-    this->contextProvider->SetIdAndName(this->dataTableCustomSetter);
+    this->testSetup->SetIdAndName(this->dataTableCustomSetter);
   }
   void DataTableContext_ViewTests::given_dataTableToString( ) 
   {
-    this->contextProvider->SetDataTableString(this->dataTableToString);
+    this->testSetup->SetDataTableString(this->dataTableToString);
   }
   void DataTableContext_ViewTests::given_dataTableToJson( ) 
   {
-    this->contextProvider->SetDataTableJson(this->dataTableToJson);
+    this->testSetup->SetDataTableJson(this->dataTableToJson);
   }
   void DataTableContext_ViewTests::given_dataTableToXml( ) 
   {
-    this->contextProvider->SetDataTableXml(this->dataTableToXml);
+    this->testSetup->SetDataTableXml(this->dataTableToXml);
   }
   void DataTableContext_ViewTests::given_id_0_name_A( ) 
   {
-    this->contextProvider->SetDataTableString(this->id_0_name_A);
+    this->testSetup->SetDataTableString(this->id_0_name_A);
   }
 }
 

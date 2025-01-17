@@ -1,10 +1,10 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "LoadCommand_ViewContextProvider.h"
+#include "LoadCommand_ViewTestSetup.h"
 #include "LoadCommand_View.h"
 #include <string>
-#include "LoadCommand_ViewContextProviderImpl.h"
+#include "LoadCommand_ViewTestSetupImpl.h"
 
 namespace commands
 {
@@ -12,7 +12,7 @@ namespace commands
   {
     public:
     std::shared_ptr<LoadCommand_View> sut;
-    std::shared_ptr<LoadCommand_ViewContextProvider> contextProvider;
+    std::shared_ptr<LoadCommand_ViewTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void when_LoadView() ;
     virtual void when_LoadViewWithName() ;
@@ -21,8 +21,8 @@ namespace commands
   };
   void LoadCommand_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<LoadCommand_ViewContextProviderImpl>();
-    this->contextProvider->Init();
+    this->testSetup = std::make_shared<LoadCommand_ViewTestSetupImpl>();
+    this->testSetup->Init();
   }
   TEST_F(LoadCommand_ViewTests,  Load_Commands_Call_given_when_LoadView_then_) 
   {
@@ -36,7 +36,7 @@ namespace commands
   }
   void LoadCommand_ViewTests::BuildSut( ) 
   {
-    this->sut = this->contextProvider->BuildSut();
+    this->sut = this->testSetup->BuildSut();
   }
   void LoadCommand_ViewTests::when_LoadView( ) 
   {

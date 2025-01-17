@@ -6,12 +6,12 @@ class ListViews_ViewTest {
   
   private sut : ListViews_View  ;
   
-  private contextProvider : ListViews_ViewContextProvider  ;
+  private testSetup : ListViews_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new ListViews_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new ListViews_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -39,7 +39,7 @@ class ListViews_ViewTest {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   

@@ -6,12 +6,12 @@ class RadioButton_ViewTests {
   
   private sut : RadioButton_View  ;
   
-  private contextProvider : RadioButton_ViewContextProvider  ;
+  private testSetup : RadioButton_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new RadioButton_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new RadioButton_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -22,7 +22,7 @@ class RadioButton_ViewTests {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   

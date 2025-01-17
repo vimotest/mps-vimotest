@@ -6,12 +6,12 @@ class CheckBoxes_ViewTest {
   
   private sut : CheckBoxes_View  ;
   
-  private contextProvider : CheckBoxes_ViewContextProvider  ;
+  private testSetup : CheckBoxes_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new CheckBoxes_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new CheckBoxes_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -25,7 +25,7 @@ class CheckBoxes_ViewTest {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   

@@ -6,12 +6,12 @@ class SelectEntryCommand_ViewTests {
   
   private sut : SelectEntryCommand_View  ;
   
-  private contextProvider : SelectEntryCommand_ViewContextProvider  ;
+  private testSetup : SelectEntryCommand_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new SelectEntryCommand_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new SelectEntryCommand_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -28,7 +28,7 @@ class SelectEntryCommand_ViewTests {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   

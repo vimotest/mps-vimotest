@@ -2,7 +2,7 @@
 <model ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)">
   <persistence version="9" />
   <languages>
-    <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="0" />
+    <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -176,7 +176,7 @@
     <property role="3GE5qa" value="util" />
     <property role="TrG5h" value="StringValue" />
     <property role="34LRSv" value="string" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6RKU0sd8qlX" role="1TKVEl">
       <property role="IQ2nx" value="7922086861527426429" />
       <property role="TrG5h" value="value" />

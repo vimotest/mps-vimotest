@@ -6,12 +6,12 @@ class FillTextCommand_ViewTests {
   
   private sut : FillTextCommand_View  ;
   
-  private contextProvider : FillTextCommand_ViewContextProvider  ;
+  private testSetup : FillTextCommand_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new FillTextCommand_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new FillTextCommand_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -27,7 +27,7 @@ class FillTextCommand_ViewTests {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   

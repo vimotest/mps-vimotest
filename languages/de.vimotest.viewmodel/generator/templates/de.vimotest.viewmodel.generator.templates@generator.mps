@@ -2,7 +2,7 @@
 <model ref="r:82509cd6-30ba-42e3-82e0-e58184c3d7f7(de.vimotest.viewmodel.generator.templates@generator)">
   <persistence version="9" />
   <languages>
-    <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="0" />
+    <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
@@ -17,6 +17,7 @@
     <import index="davt" ref="r:9d2fb39f-5375-4c80-8980-936f0533f829(generationAnnotations)" />
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" />
     <import index="bqjt" ref="r:ec1f09af-a5e9-4755-932d-7ccae7bdd219(alfi.behavior)" />
+    <import index="stu" ref="r:3d4c677e-9995-49a6-a26d-5a02e8d59528(alfi.commonGeneratorHelper)" />
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="45v0" ref="r:ba746408-9865-4b76-b4e7-cbd40a893006(de.vimotest.types.behavior)" implicit="true" />
@@ -312,7 +313,7 @@
       <concept id="2674824929519052396" name="alfi.structure.StringLiteralExpression" flags="ng" index="_iklQ" />
       <concept id="2674824929518918217" name="alfi.structure.ThisExpression" flags="ng" index="_iR_j" />
       <concept id="2674824929519835217" name="alfi.structure.QualifiedName" flags="ng" index="_vnHb">
-        <child id="2674824929519835218" name="names" index="_vnH8" />
+        <child id="5213821159894486360" name="nameBinding" index="35HzJw" />
       </concept>
       <concept id="2674824929519835220" name="alfi.structure.NameBinding" flags="ng" index="_vnHe">
         <reference id="3855977438835276054" name="nameRef" index="3acloq" />
@@ -332,9 +333,6 @@
       </concept>
       <concept id="3328952194368015164" name="alfi.structure.NamespaceDefinition" flags="ng" index="PCHHu">
         <child id="3328952194368015165" name="ownedMember" index="PCHHv" />
-      </concept>
-      <concept id="8550147057602730244" name="alfi.structure.NameReference" flags="ng" index="2RqM1Q">
-        <reference id="8550147057602730245" name="target" index="2RqM1R" />
       </concept>
       <concept id="3594942814681426355" name="alfi.structure.PredefinedStereotypeName" flags="ng" index="113yj2">
         <reference id="3594942814681438582" name="ref" index="113tg7" />
@@ -843,11 +841,11 @@
         <property role="PCHHn" value="6OepWIVA92M/private" />
         <property role="TrG5h" value="widgetFeature" />
         <node concept="3xHE8C" id="2evlxT958rO" role="3xMlr6">
-          <node concept="2RqM1Q" id="2evlxT958rM" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
-          </node>
           <node concept="1sPUBX" id="2evlxT95K9h" role="lGtFl">
             <ref role="v9R2y" node="2evlxT95xQL" resolve="switch_WidgetFeatureType" />
+          </node>
+          <node concept="_vnHe" id="2evlxT958rM" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
           </node>
         </node>
         <node concept="raruj" id="2evlxT94BvF" role="lGtFl" />
@@ -941,11 +939,11 @@
           <property role="3xR695" value="3Ud70gdvRyt/return" />
           <property role="TrG5h" value="__return__" />
           <node concept="3xHE8C" id="7FAtRx$VHaT" role="3xMlr6">
-            <node concept="2RqM1Q" id="7FAtRx$VHaU" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
-            </node>
             <node concept="1sPUBX" id="7FAtRx$VHaV" role="lGtFl">
               <ref role="v9R2y" node="2evlxT95xQL" resolve="switch_WidgetFeatureType" />
+            </node>
+            <node concept="_vnHe" id="7FAtRx$VHaU" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             </node>
           </node>
           <node concept="3xMmcA" id="7FAtRx_8Mr2" role="3xLlrW">
@@ -991,11 +989,12 @@
       <ref role="30HIoZ" to="at53:7H4Lpx0iNpu" resolve="TextFeature" />
       <node concept="1Koe21" id="2evlxT95EDE" role="1lVwrX">
         <node concept="3xHE8C" id="2evlxT95PFp" role="1Koe22">
-          <node concept="2RqM1Q" id="2evlxT95PFq" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+          <node concept="raruj" id="2evlxT95PFz" role="lGtFl" />
+          <node concept="_vnHe" id="2evlxT95PFq" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             <node concept="1ZhdrF" id="2evlxT95PFr" role="lGtFl">
-              <property role="2qtEX8" value="target" />
-              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <property role="2qtEX8" value="nameRef" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="2evlxT95PFs" role="3$ytzL">
                 <node concept="3clFbS" id="2evlxT95PFt" role="2VODD2">
                   <node concept="3clFbF" id="2evlxT95PFu" role="3cqZAp">
@@ -1015,7 +1014,6 @@
               </node>
             </node>
           </node>
-          <node concept="raruj" id="2evlxT95PFz" role="lGtFl" />
         </node>
       </node>
     </node>
@@ -1024,11 +1022,12 @@
       <ref role="30HIoZ" to="at53:4SDJcZBNVBU" resolve="EnabledFeature" />
       <node concept="1Koe21" id="2evlxT95FO5" role="1lVwrX">
         <node concept="3xHE8C" id="2evlxT95P1S" role="1Koe22">
-          <node concept="2RqM1Q" id="2evlxT95P1T" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+          <node concept="raruj" id="2evlxT95P6H" role="lGtFl" />
+          <node concept="_vnHe" id="2evlxT95P1T" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             <node concept="1ZhdrF" id="2evlxT95Pbc" role="lGtFl">
-              <property role="2qtEX8" value="target" />
-              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <property role="2qtEX8" value="nameRef" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="2evlxT95Pbd" role="3$ytzL">
                 <node concept="3clFbS" id="2evlxT95Pbe" role="2VODD2">
                   <node concept="3clFbF" id="2evlxT95Pgq" role="3cqZAp">
@@ -1048,7 +1047,6 @@
               </node>
             </node>
           </node>
-          <node concept="raruj" id="2evlxT95P6H" role="lGtFl" />
         </node>
       </node>
     </node>
@@ -1057,11 +1055,12 @@
       <ref role="30HIoZ" to="at53:4SDJcZBNVBT" resolve="VisibilityFeature" />
       <node concept="1Koe21" id="2evlxT95G0u" role="1lVwrX">
         <node concept="3xHE8C" id="2evlxT95PlY" role="1Koe22">
-          <node concept="2RqM1Q" id="2evlxT95PlZ" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+          <node concept="raruj" id="2evlxT95Pm8" role="lGtFl" />
+          <node concept="_vnHe" id="2evlxT95PlZ" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             <node concept="1ZhdrF" id="2evlxT95Pm0" role="lGtFl">
-              <property role="2qtEX8" value="target" />
-              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <property role="2qtEX8" value="nameRef" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="2evlxT95Pm1" role="3$ytzL">
                 <node concept="3clFbS" id="2evlxT95Pm2" role="2VODD2">
                   <node concept="3clFbF" id="2evlxT95Pm3" role="3cqZAp">
@@ -1081,7 +1080,6 @@
               </node>
             </node>
           </node>
-          <node concept="raruj" id="2evlxT95Pm8" role="lGtFl" />
         </node>
       </node>
     </node>
@@ -1090,11 +1088,12 @@
       <ref role="30HIoZ" to="at53:6RKU0s1p1ab" resolve="ToolTipFeature" />
       <node concept="1Koe21" id="6RKU0s39o0W" role="1lVwrX">
         <node concept="3xHE8C" id="6RKU0s39o0X" role="1Koe22">
-          <node concept="2RqM1Q" id="6RKU0s39o0Y" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+          <node concept="raruj" id="6RKU0s39o17" role="lGtFl" />
+          <node concept="_vnHe" id="6RKU0s39o0Y" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             <node concept="1ZhdrF" id="6RKU0s39o0Z" role="lGtFl">
-              <property role="2qtEX8" value="target" />
-              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <property role="2qtEX8" value="nameRef" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="6RKU0s39o10" role="3$ytzL">
                 <node concept="3clFbS" id="6RKU0s39o11" role="2VODD2">
                   <node concept="3clFbF" id="6RKU0s39o12" role="3cqZAp">
@@ -1114,7 +1113,6 @@
               </node>
             </node>
           </node>
-          <node concept="raruj" id="6RKU0s39o17" role="lGtFl" />
         </node>
       </node>
     </node>
@@ -1123,11 +1121,12 @@
       <ref role="30HIoZ" to="at53:50C086hrZsj" resolve="TextColorFeature" />
       <node concept="1Koe21" id="3mOHzzzMkGL" role="1lVwrX">
         <node concept="3xHE8C" id="3mOHzzzMkGM" role="1Koe22">
-          <node concept="2RqM1Q" id="3mOHzzzMkGN" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+          <node concept="raruj" id="3mOHzzzMkGW" role="lGtFl" />
+          <node concept="_vnHe" id="3mOHzzzMkGN" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             <node concept="1ZhdrF" id="3mOHzzzMkGO" role="lGtFl">
-              <property role="2qtEX8" value="target" />
-              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <property role="2qtEX8" value="nameRef" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="3mOHzzzMkGP" role="3$ytzL">
                 <node concept="3clFbS" id="3mOHzzzMkGQ" role="2VODD2">
                   <node concept="3clFbF" id="3mOHzzzMkGR" role="3cqZAp">
@@ -1147,7 +1146,6 @@
               </node>
             </node>
           </node>
-          <node concept="raruj" id="3mOHzzzMkGW" role="lGtFl" />
         </node>
       </node>
     </node>
@@ -1156,11 +1154,12 @@
       <ref role="30HIoZ" to="at53:4SDJcZBNVBS" resolve="CheckedFeature" />
       <node concept="1Koe21" id="2evlxT95G3H" role="1lVwrX">
         <node concept="3xHE8C" id="2evlxT95PwP" role="1Koe22">
-          <node concept="2RqM1Q" id="2evlxT95PwQ" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+          <node concept="raruj" id="2evlxT95PwZ" role="lGtFl" />
+          <node concept="_vnHe" id="2evlxT95PwQ" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             <node concept="1ZhdrF" id="2evlxT95PwR" role="lGtFl">
-              <property role="2qtEX8" value="target" />
-              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <property role="2qtEX8" value="nameRef" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="2evlxT95PwS" role="3$ytzL">
                 <node concept="3clFbS" id="2evlxT95PwT" role="2VODD2">
                   <node concept="3clFbF" id="2evlxT95PwU" role="3cqZAp">
@@ -1180,7 +1179,6 @@
               </node>
             </node>
           </node>
-          <node concept="raruj" id="2evlxT95PwZ" role="lGtFl" />
         </node>
       </node>
     </node>
@@ -1189,11 +1187,12 @@
       <ref role="30HIoZ" to="at53:3pKiF2wNf4E" resolve="ImageSourceFeature" />
       <node concept="1Koe21" id="Of5vVZofMY" role="1lVwrX">
         <node concept="3xHE8C" id="Of5vVZofMZ" role="1Koe22">
-          <node concept="2RqM1Q" id="Of5vVZofN0" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+          <node concept="raruj" id="Of5vVZofN9" role="lGtFl" />
+          <node concept="_vnHe" id="Of5vVZofN0" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             <node concept="1ZhdrF" id="Of5vVZofN1" role="lGtFl">
-              <property role="2qtEX8" value="target" />
-              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <property role="2qtEX8" value="nameRef" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="Of5vVZofN2" role="3$ytzL">
                 <node concept="3clFbS" id="Of5vVZofN3" role="2VODD2">
                   <node concept="3clFbF" id="Of5vVZofN4" role="3cqZAp">
@@ -1213,7 +1212,6 @@
               </node>
             </node>
           </node>
-          <node concept="raruj" id="Of5vVZofN9" role="lGtFl" />
         </node>
       </node>
     </node>
@@ -1222,11 +1220,12 @@
       <ref role="30HIoZ" to="at53:44HS8_67HzK" resolve="SelectedEntryFeature" />
       <node concept="1Koe21" id="5jkMFwsGaSD" role="1lVwrX">
         <node concept="3xHE8C" id="5jkMFwsGaSE" role="1Koe22">
-          <node concept="2RqM1Q" id="5jkMFwsGaSF" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+          <node concept="raruj" id="5jkMFwsGaSO" role="lGtFl" />
+          <node concept="_vnHe" id="5jkMFwsGaSF" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             <node concept="1ZhdrF" id="5jkMFwsGaSG" role="lGtFl">
-              <property role="2qtEX8" value="target" />
-              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <property role="2qtEX8" value="nameRef" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="5jkMFwsGaSH" role="3$ytzL">
                 <node concept="3clFbS" id="5jkMFwsGaSI" role="2VODD2">
                   <node concept="3clFbF" id="5jkMFwsGaSJ" role="3cqZAp">
@@ -1246,7 +1245,6 @@
               </node>
             </node>
           </node>
-          <node concept="raruj" id="5jkMFwsGaSO" role="lGtFl" />
         </node>
       </node>
     </node>
@@ -1255,11 +1253,12 @@
       <ref role="30HIoZ" to="at53:7NXUkdPQsh_" resolve="RadioButtonChoicesFeature" />
       <node concept="1Koe21" id="7NXUkdSwiGw" role="1lVwrX">
         <node concept="3xHE8C" id="7NXUkdSwiGx" role="1Koe22">
-          <node concept="2RqM1Q" id="7NXUkdSwiGy" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+          <node concept="raruj" id="7NXUkdSwiGF" role="lGtFl" />
+          <node concept="_vnHe" id="7NXUkdSwiGy" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             <node concept="1ZhdrF" id="7NXUkdSwiGz" role="lGtFl">
-              <property role="2qtEX8" value="target" />
-              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <property role="2qtEX8" value="nameRef" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="7NXUkdSwiG$" role="3$ytzL">
                 <node concept="3clFbS" id="7NXUkdSwiG_" role="2VODD2">
                   <node concept="3clFbF" id="7NXUkdSwiGA" role="3cqZAp">
@@ -1279,7 +1278,6 @@
               </node>
             </node>
           </node>
-          <node concept="raruj" id="7NXUkdSwiGF" role="lGtFl" />
         </node>
       </node>
     </node>
@@ -1288,11 +1286,12 @@
       <ref role="30HIoZ" to="at53:44HS8_67HzJ" resolve="ComboBoxEntriesFeature" />
       <node concept="1Koe21" id="5jkMFwsGbfa" role="1lVwrX">
         <node concept="3xHE8C" id="5jkMFwsGbfb" role="1Koe22">
-          <node concept="2RqM1Q" id="5jkMFwsGbfc" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+          <node concept="raruj" id="5jkMFwsGbfl" role="lGtFl" />
+          <node concept="_vnHe" id="5jkMFwsGbfc" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             <node concept="1ZhdrF" id="5jkMFwsGbfd" role="lGtFl">
-              <property role="2qtEX8" value="target" />
-              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <property role="2qtEX8" value="nameRef" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="5jkMFwsGbfe" role="3$ytzL">
                 <node concept="3clFbS" id="5jkMFwsGbff" role="2VODD2">
                   <node concept="3clFbF" id="5jkMFwsGbfg" role="3cqZAp">
@@ -1312,7 +1311,6 @@
               </node>
             </node>
           </node>
-          <node concept="raruj" id="5jkMFwsGbfl" role="lGtFl" />
         </node>
       </node>
     </node>
@@ -1321,11 +1319,12 @@
       <ref role="30HIoZ" to="at53:7WgsBLYmzhD" resolve="SelectedRowFeature" />
       <node concept="1Koe21" id="5jkMFwsGc8M" role="1lVwrX">
         <node concept="3xHE8C" id="5jkMFwsGc8N" role="1Koe22">
-          <node concept="2RqM1Q" id="5jkMFwsGc8O" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+          <node concept="raruj" id="5jkMFwsGc8X" role="lGtFl" />
+          <node concept="_vnHe" id="5jkMFwsGc8O" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             <node concept="1ZhdrF" id="5jkMFwsGc8P" role="lGtFl">
-              <property role="2qtEX8" value="target" />
-              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <property role="2qtEX8" value="nameRef" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="5jkMFwsGc8Q" role="3$ytzL">
                 <node concept="3clFbS" id="5jkMFwsGc8R" role="2VODD2">
                   <node concept="3cpWs8" id="4CJYu49fLdF" role="3cqZAp">
@@ -1394,7 +1393,6 @@
               </node>
             </node>
           </node>
-          <node concept="raruj" id="5jkMFwsGc8X" role="lGtFl" />
         </node>
       </node>
     </node>
@@ -1403,11 +1401,11 @@
       <ref role="30HIoZ" to="at53:2lm5WNlbZLf" resolve="WidgetListRowsFeature" />
       <node concept="gft3U" id="3JF9X1LICbn" role="1lVwrX">
         <node concept="3xHE8C" id="3JF9X1LICbu" role="gfFT$">
-          <node concept="2RqM1Q" id="3JF9X1LICbv" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+          <node concept="_vnHe" id="3JF9X1LICbv" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             <node concept="1ZhdrF" id="3JF9X1LICbw" role="lGtFl">
-              <property role="2qtEX8" value="target" />
-              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <property role="2qtEX8" value="nameRef" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="3JF9X1LICbx" role="3$ytzL">
                 <node concept="3clFbS" id="3JF9X1LICby" role="2VODD2">
                   <node concept="3clFbF" id="247DgsTsBqg" role="3cqZAp">
@@ -1440,11 +1438,11 @@
       <ref role="30HIoZ" to="at53:2lm5WNlbZLh" resolve="WidgetTableRowsFeature" />
       <node concept="gft3U" id="7nrre2bDneF" role="1lVwrX">
         <node concept="3xHE8C" id="7nrre2bDneG" role="gfFT$">
-          <node concept="2RqM1Q" id="7nrre2bDneH" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+          <node concept="_vnHe" id="7nrre2bDneH" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             <node concept="1ZhdrF" id="7nrre2bDneI" role="lGtFl">
-              <property role="2qtEX8" value="target" />
-              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <property role="2qtEX8" value="nameRef" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="7nrre2bDneJ" role="3$ytzL">
                 <node concept="3clFbS" id="7nrre2bDneK" role="2VODD2">
                   <node concept="3clFbF" id="7nrre2bDneL" role="3cqZAp">
@@ -1477,11 +1475,11 @@
       <ref role="30HIoZ" to="at53:2lm5WNlbZLg" resolve="WidgetTreeRowsFeature" />
       <node concept="gft3U" id="7nrre2bDntm" role="1lVwrX">
         <node concept="3xHE8C" id="7nrre2bDntn" role="gfFT$">
-          <node concept="2RqM1Q" id="7nrre2bDnto" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+          <node concept="_vnHe" id="7nrre2bDnto" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             <node concept="1ZhdrF" id="7nrre2bDntp" role="lGtFl">
-              <property role="2qtEX8" value="target" />
-              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <property role="2qtEX8" value="nameRef" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="7nrre2bDntq" role="3$ytzL">
                 <node concept="3clFbS" id="7nrre2bDntr" role="2VODD2">
                   <node concept="3clFbF" id="7nrre2bDnts" role="3cqZAp">
@@ -1868,16 +1866,16 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsu" resolve="CheckCommand" />
       <node concept="gft3U" id="3JF9X1M5zmh" role="1lVwrX">
-        <node concept="15s5l7" id="3JF9X1M5zE6" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
+        <node concept="15s5l7" id="3jDKmRYVyaY" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  Boolean (nameRef) is out of search scope" />
         </node>
         <node concept="3xR696" id="3JF9X1M5zCU" role="gfFT$">
           <property role="3xR695" value="1KdBIfXPktw/in" />
           <property role="TrG5h" value="isChecked" />
           <node concept="3xHE8C" id="3JF9X1M5zCV" role="3xMlr6">
-            <node concept="2RqM1Q" id="3JF9X1M5zCW" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+            <node concept="_vnHe" id="3JF9X1M5zCW" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             </node>
           </node>
         </node>
@@ -1887,16 +1885,16 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsw" resolve="FillTextCommand" />
       <node concept="gft3U" id="3JF9X1M5zE8" role="1lVwrX">
-        <node concept="15s5l7" id="3JF9X1M5zE9" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
+        <node concept="15s5l7" id="3jDKmRYVyaZ" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  String (nameRef) is out of search scope" />
         </node>
         <node concept="3xR696" id="3JF9X1M5zH$" role="gfFT$">
           <property role="TrG5h" value="text" />
           <property role="3xR695" value="1KdBIfXPktw/in" />
           <node concept="3xHE8C" id="3JF9X1M5zH_" role="3xMlr6">
-            <node concept="2RqM1Q" id="3JF9X1M5zHA" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+            <node concept="_vnHe" id="3JF9X1M5zHA" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
             </node>
           </node>
         </node>
@@ -1906,16 +1904,16 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsz" resolve="SelectEntryCommand" />
       <node concept="gft3U" id="5jkMFwsKKlz" role="1lVwrX">
-        <node concept="15s5l7" id="5jkMFwsKKl$" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
+        <node concept="15s5l7" id="3jDKmRYVyb0" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  String (nameRef) is out of search scope" />
         </node>
         <node concept="3xR696" id="5jkMFwsKKl_" role="gfFT$">
           <property role="TrG5h" value="entryName" />
           <property role="3xR695" value="1KdBIfXPktw/in" />
           <node concept="3xHE8C" id="5jkMFwsKKlA" role="3xMlr6">
-            <node concept="2RqM1Q" id="5jkMFwsKKlB" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+            <node concept="_vnHe" id="5jkMFwsKKlB" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
             </node>
           </node>
         </node>
@@ -1925,16 +1923,16 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsy" resolve="SelectRowCommand" />
       <node concept="gft3U" id="3JF9X1M5zIL" role="1lVwrX">
-        <node concept="15s5l7" id="3JF9X1M5zIM" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
+        <node concept="15s5l7" id="3jDKmRYVyb1" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  String (nameRef) is out of search scope" />
         </node>
         <node concept="3xR696" id="3JF9X1M5zIN" role="gfFT$">
           <property role="TrG5h" value="rowHandle" />
           <property role="3xR695" value="1KdBIfXPktw/in" />
           <node concept="3xHE8C" id="3JF9X1M5zIO" role="3xMlr6">
-            <node concept="2RqM1Q" id="3JF9X1M5zIP" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+            <node concept="_vnHe" id="3JF9X1M5zIP" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
             </node>
           </node>
           <node concept="3xMmcA" id="4CJYu49aOrt" role="3xLlrW">
@@ -2011,16 +2009,16 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsy" resolve="SelectRowCommand" />
       <node concept="gft3U" id="3JF9X1M5DTV" role="1lVwrX">
-        <node concept="15s5l7" id="3JF9X1M5DTW" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
+        <node concept="15s5l7" id="3jDKmRYVyMW" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Integer (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  Integer (nameRef) is out of search scope" />
         </node>
         <node concept="3xR696" id="3JF9X1M5EBj" role="gfFT$">
           <property role="3xR695" value="1KdBIfXPktw/in" />
           <property role="TrG5h" value="rowIndex" />
           <node concept="3xHE8C" id="3JF9X1M5EBk" role="3xMlr6">
-            <node concept="2RqM1Q" id="3JF9X1M5EBl" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+            <node concept="_vnHe" id="3JF9X1M5EBl" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
             </node>
           </node>
           <node concept="3xMmcA" id="4CJYu49aPRZ" role="3xLlrW">
@@ -2107,9 +2105,6 @@
             <property role="3xR695" value="1KdBIfXPktw/in" />
             <property role="TrG5h" value="args" />
             <node concept="3xHE8C" id="Of5vVZKDPu" role="3xMlr6">
-              <node concept="2RqM1Q" id="Of5vVZKDPv" role="_vnH8">
-                <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
-              </node>
               <node concept="29HgVG" id="Of5vVZKDPw" role="lGtFl">
                 <node concept="3NFfHV" id="Of5vVZKDPx" role="3NFExx">
                   <node concept="3clFbS" id="Of5vVZKDPy" role="2VODD2">
@@ -2123,6 +2118,9 @@
                     </node>
                   </node>
                 </node>
+              </node>
+              <node concept="_vnHe" id="Of5vVZKDPv" role="35HzJw">
+                <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
               </node>
             </node>
             <node concept="17Uvod" id="Of5vVZKDPL" role="lGtFl">
@@ -2615,11 +2613,11 @@
         <property role="PCHHn" value="6OepWIVA92M/private" />
         <property role="TrG5h" value="feature" />
         <node concept="3xHE8C" id="5veytyjPf63" role="3xMlr6">
-          <node concept="2RqM1Q" id="5veytyjPf64" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+          <node concept="_vnHe" id="5veytyjPf64" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             <node concept="1ZhdrF" id="5veytyjQuWk" role="lGtFl">
-              <property role="2qtEX8" value="target" />
-              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <property role="2qtEX8" value="nameRef" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="5veytyjQuWl" role="3$ytzL">
                 <node concept="3clFbS" id="5veytyjQuWm" role="2VODD2">
                   <node concept="3clFbF" id="5veytyjQOQ2" role="3cqZAp">
@@ -2716,11 +2714,11 @@
           <property role="3xR695" value="3Ud70gdvRyt/return" />
           <property role="TrG5h" value="__return__" />
           <node concept="3xHE8C" id="5veytyjPf6C" role="3xMlr6">
-            <node concept="2RqM1Q" id="5veytyjPf6D" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+            <node concept="_vnHe" id="5veytyjPf6D" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
               <node concept="1ZhdrF" id="5veytyjQyiP" role="lGtFl">
-                <property role="2qtEX8" value="target" />
-                <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+                <property role="2qtEX8" value="nameRef" />
+                <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
                 <node concept="3$xsQk" id="5veytyjQyiQ" role="3$ytzL">
                   <node concept="3clFbS" id="5veytyjQyiR" role="2VODD2">
                     <node concept="3clFbF" id="5veytyjQPPm" role="3cqZAp">
@@ -2760,11 +2758,11 @@
       <ref role="30HIoZ" to="evry:6LujpsVK9sR" resolve="BoolType" />
       <node concept="gft3U" id="2mzDF_tW637" role="1lVwrX">
         <node concept="3xHE8C" id="2mzDF_tW63b" role="gfFT$">
-          <node concept="2RqM1Q" id="2mzDF_tW85V" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+          <node concept="_vnHe" id="2mzDF_tW85V" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             <node concept="1ZhdrF" id="2mzDF_tW85W" role="lGtFl">
-              <property role="2qtEX8" value="target" />
-              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <property role="2qtEX8" value="nameRef" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="2mzDF_tW85X" role="3$ytzL">
                 <node concept="3clFbS" id="2mzDF_tW85Y" role="2VODD2">
                   <node concept="3clFbF" id="2mzDF_tW63X" role="3cqZAp">
@@ -2792,11 +2790,11 @@
       <ref role="30HIoZ" to="evry:6LujpsVKo4e" resolve="IntType" />
       <node concept="gft3U" id="2mzDF_tW8gf" role="1lVwrX">
         <node concept="3xHE8C" id="2mzDF_tW8gg" role="gfFT$">
-          <node concept="2RqM1Q" id="2mzDF_tW9tL" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+          <node concept="_vnHe" id="2mzDF_tW9tL" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
             <node concept="1ZhdrF" id="2mzDF_tW9tM" role="lGtFl">
-              <property role="2qtEX8" value="target" />
-              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <property role="2qtEX8" value="nameRef" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="2mzDF_tW9tN" role="3$ytzL">
                 <node concept="3clFbS" id="2mzDF_tW9tO" role="2VODD2">
                   <node concept="3clFbF" id="2mzDF_tWc03" role="3cqZAp">
@@ -2824,11 +2822,11 @@
       <ref role="30HIoZ" to="evry:6LujpsVKsRl" resolve="StringType" />
       <node concept="gft3U" id="2mzDF_tW9Na" role="1lVwrX">
         <node concept="3xHE8C" id="2mzDF_tW9Nb" role="gfFT$">
-          <node concept="2RqM1Q" id="2mzDF_tWaI_" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+          <node concept="_vnHe" id="2mzDF_tWaI_" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
             <node concept="1ZhdrF" id="2mzDF_tWaIA" role="lGtFl">
-              <property role="2qtEX8" value="target" />
-              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/8550147057602730244/8550147057602730245" />
+              <property role="2qtEX8" value="nameRef" />
+              <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
               <node concept="3$xsQk" id="2mzDF_tWaIB" role="3$ytzL">
                 <node concept="3clFbS" id="2mzDF_tWaIC" role="2VODD2">
                   <node concept="3clFbF" id="2mzDF_tWcb6" role="3cqZAp">
@@ -2856,9 +2854,6 @@
       <ref role="30HIoZ" to="evry:5jkMFwCyKPa" resolve="ListType" />
       <node concept="gft3U" id="5jkMFwFMOfV" role="1lVwrX">
         <node concept="3xHE8C" id="5jkMFwFMOfW" role="gfFT$">
-          <node concept="2RqM1Q" id="5jkMFwFMOfX" role="_vnH8">
-            <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
-          </node>
           <node concept="29HgVG" id="5jkMFwG6e_i" role="lGtFl">
             <node concept="3NFfHV" id="5jkMFwG6e_j" role="3NFExx">
               <node concept="3clFbS" id="5jkMFwG6e_k" role="2VODD2">
@@ -2873,6 +2868,9 @@
               </node>
             </node>
           </node>
+          <node concept="_vnHe" id="5jkMFwFMOfX" role="35HzJw">
+            <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
+          </node>
         </node>
       </node>
     </node>
@@ -2884,8 +2882,8 @@
       <node concept="3clFbS" id="GirOujt6Wd" role="2VODD2">
         <node concept="3clFbF" id="5jkMFwvD5HM" role="3cqZAp">
           <node concept="2YIFZM" id="5jkMFwvD5Iv" role="3clFbG">
-            <ref role="37wK5l" to="jrwo:5jkMFwvD2ZM" resolve="generateMissingAlfNamespaces" />
-            <ref role="1Pybhc" to="jrwo:5jkMFwvD2YP" resolve="AlfNamespaceGenerator" />
+            <ref role="37wK5l" to="stu:5jkMFwvD2ZM" resolve="generateMissingAlfNamespaces" />
+            <ref role="1Pybhc" to="stu:5jkMFwvD2YP" resolve="AlfNamespaceGenerator" />
             <node concept="1Q6Npb" id="5jkMFwvD5IX" role="37wK5m" />
           </node>
         </node>
@@ -2899,19 +2897,19 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsu" resolve="CheckCommand" />
       <node concept="gft3U" id="Of5vVZ$e2d" role="1lVwrX">
+        <node concept="15s5l7" id="3jDKmRYVvz1" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  Boolean (nameRef) is out of search scope" />
+        </node>
         <node concept="15s5l7" id="Of5vVZ$hf1" role="lGtFl">
           <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be child)&quot;;FLAVOUR_MESSAGE=&quot;Node 'isChecked' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3120704408893424229]&quot;;" />
           <property role="huDt6" value="Node 'isChecked' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'" />
         </node>
-        <node concept="15s5l7" id="Of5vVZ$e2e" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
-        </node>
         <node concept="6lMYc" id="Of5vVZ$hdx" role="gfFT$">
           <property role="TrG5h" value="isChecked" />
           <node concept="3xHE8C" id="Of5vVZ$hdy" role="3xMlr6">
-            <node concept="2RqM1Q" id="Of5vVZ$hdz" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+            <node concept="_vnHe" id="Of5vVZ$hdz" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
             </node>
           </node>
         </node>
@@ -2921,19 +2919,19 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsw" resolve="FillTextCommand" />
       <node concept="gft3U" id="Of5vVZ$e2j" role="1lVwrX">
+        <node concept="15s5l7" id="3jDKmRYVvz2" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  String (nameRef) is out of search scope" />
+        </node>
         <node concept="15s5l7" id="Of5vVZ$hju" role="lGtFl">
           <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be child)&quot;;FLAVOUR_MESSAGE=&quot;Node 'text' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3120704408893424229]&quot;;" />
           <property role="huDt6" value="Node 'text' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'" />
         </node>
-        <node concept="15s5l7" id="Of5vVZ$e2k" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
-        </node>
         <node concept="6lMYc" id="Of5vVZ$hiX" role="gfFT$">
           <property role="TrG5h" value="text" />
           <node concept="3xHE8C" id="Of5vVZ$hiY" role="3xMlr6">
-            <node concept="2RqM1Q" id="Of5vVZ$hiZ" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+            <node concept="_vnHe" id="Of5vVZ$hiZ" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
             </node>
           </node>
         </node>
@@ -2943,19 +2941,19 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsz" resolve="SelectEntryCommand" />
       <node concept="gft3U" id="Of5vVZ$e2p" role="1lVwrX">
+        <node concept="15s5l7" id="3jDKmRYVvz3" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  String (nameRef) is out of search scope" />
+        </node>
         <node concept="15s5l7" id="Of5vVZ$hm_" role="lGtFl">
           <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be child)&quot;;FLAVOUR_MESSAGE=&quot;Node 'entryName' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3120704408893424229]&quot;;" />
           <property role="huDt6" value="Node 'entryName' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'" />
         </node>
-        <node concept="15s5l7" id="Of5vVZ$e2q" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
-        </node>
         <node concept="6lMYc" id="Of5vVZ$hkV" role="gfFT$">
           <property role="TrG5h" value="entryName" />
           <node concept="3xHE8C" id="Of5vVZ$hkW" role="3xMlr6">
-            <node concept="2RqM1Q" id="Of5vVZ$hkX" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+            <node concept="_vnHe" id="Of5vVZ$hkX" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
             </node>
           </node>
         </node>
@@ -2965,19 +2963,19 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsy" resolve="SelectRowCommand" />
       <node concept="gft3U" id="Of5vVZ$e2v" role="1lVwrX">
+        <node concept="15s5l7" id="3jDKmRYVvz4" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  String (nameRef) is out of search scope" />
+        </node>
         <node concept="15s5l7" id="Of5vVZ$hpV" role="lGtFl">
           <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be child)&quot;;FLAVOUR_MESSAGE=&quot;Node 'rowHandle' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3120704408893424229]&quot;;" />
           <property role="huDt6" value="Node 'rowHandle' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'" />
         </node>
-        <node concept="15s5l7" id="Of5vVZ$e2w" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
-        </node>
         <node concept="6lMYc" id="Of5vVZ$hoh" role="gfFT$">
           <property role="TrG5h" value="rowHandle" />
           <node concept="3xHE8C" id="Of5vVZ$hoi" role="3xMlr6">
-            <node concept="2RqM1Q" id="Of5vVZ$hoj" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+            <node concept="_vnHe" id="Of5vVZ$hoj" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
             </node>
           </node>
         </node>
@@ -3011,19 +3009,19 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUu$Xsy" resolve="SelectRowCommand" />
       <node concept="gft3U" id="Of5vVZ$e2K" role="1lVwrX">
+        <node concept="15s5l7" id="3jDKmRYVvz5" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Integer (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  Integer (nameRef) is out of search scope" />
+        </node>
         <node concept="15s5l7" id="Of5vVZ$hvR" role="lGtFl">
           <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be child)&quot;;FLAVOUR_MESSAGE=&quot;Node 'rowIndex' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3120704408893424229]&quot;;" />
           <property role="huDt6" value="Node 'rowIndex' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'" />
         </node>
-        <node concept="15s5l7" id="Of5vVZ$e2L" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  Boolean (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  Boolean (target) is out of search scope" />
-        </node>
         <node concept="6lMYc" id="Of5vVZ$hv9" role="gfFT$">
           <property role="TrG5h" value="rowIndex" />
           <node concept="3xHE8C" id="Of5vVZ$hva" role="3xMlr6">
-            <node concept="2RqM1Q" id="Of5vVZ$hvb" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+            <node concept="_vnHe" id="Of5vVZ$hvb" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
             </node>
           </node>
         </node>
@@ -3060,8 +3058,8 @@
         <node concept="6lMYc" id="Of5vVZKIDC" role="1Koe22">
           <property role="TrG5h" value="field" />
           <node concept="3xHE8C" id="Of5vVZKIDD" role="3xMlr6">
-            <node concept="2RqM1Q" id="Of5vVZKIDE" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+            <node concept="_vnHe" id="Of5vVZKIDE" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
             </node>
           </node>
           <node concept="raruj" id="Of5vVZPZFp" role="lGtFl" />
@@ -3099,8 +3097,8 @@
         <node concept="6lMYc" id="Of5vVZKsAB" role="PCHHv">
           <property role="TrG5h" value="rowIndex" />
           <node concept="3xHE8C" id="Of5vVZKsAC" role="3xMlr6">
-            <node concept="2RqM1Q" id="Of5vVZKsAD" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+            <node concept="_vnHe" id="Of5vVZKsAD" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
             </node>
           </node>
         </node>
@@ -3153,8 +3151,8 @@
             <property role="3xR695" value="1KdBIfXPktw/in" />
             <property role="TrG5h" value="additionalArgs" />
             <node concept="3xHE8C" id="Of5vVZKy3i" role="3xMlr6">
-              <node concept="2RqM1Q" id="Of5vVZKy3j" role="_vnH8">
-                <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+              <node concept="_vnHe" id="Of5vVZKy3j" role="35HzJw">
+                <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
               </node>
             </node>
             <node concept="1W57fq" id="Of5vVZKy3k" role="lGtFl">
@@ -3180,8 +3178,8 @@
             <property role="3xR695" value="1KdBIfXPktw/in" />
             <property role="TrG5h" value="args" />
             <node concept="3xHE8C" id="Of5vVZKsAX" role="3xMlr6">
-              <node concept="2RqM1Q" id="Of5vVZKsAY" role="_vnH8">
-                <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+              <node concept="_vnHe" id="Of5vVZKsAY" role="35HzJw">
+                <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
               </node>
             </node>
             <node concept="1W57fq" id="Of5vVZKsAZ" role="lGtFl">
@@ -3203,8 +3201,8 @@
                   <property role="3xR695" value="1KdBIfXPktw/in" />
                   <property role="TrG5h" value="parameters" />
                   <node concept="3xHE8C" id="Of5vVZKsB8" role="3xMlr6">
-                    <node concept="2RqM1Q" id="Of5vVZKsB9" role="_vnH8">
-                      <ref role="2RqM1R" node="5Z7ORBx9Ynn" resolve="CommandParameterObject" />
+                    <node concept="_vnHe" id="Of5vVZKsB9" role="35HzJw">
+                      <ref role="3acloq" node="5Z7ORBx9Ynn" resolve="CommandParameterObject" />
                     </node>
                   </node>
                 </node>
@@ -3257,16 +3255,16 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUuu6dE" resolve="ViewWidgetCommand" />
       <node concept="gft3U" id="Of5vVZK_9m" role="1lVwrX">
-        <node concept="15s5l7" id="Of5vVZK_Hu" role="lGtFl">
-          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (target) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;target&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/7858332524527965581]&quot;;" />
-          <property role="huDt6" value="The reference  String (target) is out of search scope" />
+        <node concept="15s5l7" id="3jDKmRYVv8S" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  String (nameRef) is out of search scope" />
         </node>
         <node concept="3xR696" id="Of5vVZK_ab" role="gfFT$">
           <property role="3xR695" value="1KdBIfXPktw/in" />
           <property role="TrG5h" value="rowHandle" />
           <node concept="3xHE8C" id="Of5vVZK_ac" role="3xMlr6">
-            <node concept="2RqM1Q" id="Of5vVZK_ad" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
+            <node concept="_vnHe" id="Of5vVZK_ad" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
             </node>
           </node>
           <node concept="1W57fq" id="Of5vVZK_ae" role="lGtFl">
@@ -3305,8 +3303,8 @@
                 <property role="3xR695" value="1KdBIfXPktw/in" />
                 <property role="TrG5h" value="rowIndex" />
                 <node concept="3xHE8C" id="Of5vVZK_au" role="3xMlr6">
-                  <node concept="2RqM1Q" id="Of5vVZK_av" role="_vnH8">
-                    <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+                  <node concept="_vnHe" id="Of5vVZK_av" role="35HzJw">
+                    <ref role="3acloq" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
                   </node>
                 </node>
               </node>
@@ -3457,22 +3455,22 @@
             <property role="3xR695" value="3Ud70gdvRyt/return" />
             <property role="TrG5h" value="__return__" />
             <node concept="3xHE8C" id="4ncpC4iI02n" role="3xMlr6">
-              <node concept="2RqM1Q" id="4ncpC4iI02o" role="_vnH8">
-                <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
-              </node>
               <node concept="29HgVG" id="4ncpC4iSsvl" role="lGtFl">
                 <node concept="3NFfHV" id="4ncpC4iSsRh" role="3NFExx">
                   <node concept="3clFbS" id="4ncpC4iSsRi" role="2VODD2">
                     <node concept="3clFbF" id="4ncpC4iQiWW" role="3cqZAp">
                       <node concept="2OqwBi" id="4ncpC4iQiWX" role="3clFbG">
                         <node concept="3TrEf2" id="4ncpC4iQiWY" role="2OqNvi">
-                          <ref role="3Tt5mk" to="28lk:1KdBIfXLcw_" />
+                          <ref role="3Tt5mk" to="28lk:1KdBIfXLcw_" resolve="typeName" />
                         </node>
                         <node concept="30H73N" id="4ncpC4iQiWZ" role="2Oq$k0" />
                       </node>
                     </node>
                   </node>
                 </node>
+              </node>
+              <node concept="_vnHe" id="4ncpC4iI02o" role="35HzJw">
+                <ref role="3acloq" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
               </node>
             </node>
             <node concept="3xMmcA" id="4ncpC4iIQXD" role="3xLlrW">

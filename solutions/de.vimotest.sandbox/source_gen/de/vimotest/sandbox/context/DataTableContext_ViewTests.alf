@@ -6,12 +6,12 @@ class DataTableContext_ViewTests {
   
   private sut : DataTableContext_View  ;
   
-  private contextProvider : DataTableContext_ViewContextProvider  ;
+  private testSetup : DataTableContext_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new DataTableContext_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new DataTableContext_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -42,7 +42,7 @@ class DataTableContext_ViewTests {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   
@@ -52,31 +52,31 @@ class DataTableContext_ViewTests {
   private dataTableCustomSetter : String = "| id | name |\n| 0 | A |";
   
   public given_dataTableCustomSetter (  ) {
-  this.contextProvider.SetIdAndName ( this.dataTableCustomSetter );
+  this.testSetup.SetIdAndName ( this.dataTableCustomSetter );
  }
   
   private dataTableToString : String = "| id | name |\n| 0 | A |";
   
   public given_dataTableToString (  ) {
-  this.contextProvider.SetDataTableString ( this.dataTableToString );
+  this.testSetup.SetDataTableString ( this.dataTableToString );
  }
   
   private dataTableToJson : String = "[ { id:\"0\", name:\"A\" } ]";
   
   public given_dataTableToJson (  ) {
-  this.contextProvider.SetDataTableJson ( this.dataTableToJson );
+  this.testSetup.SetDataTableJson ( this.dataTableToJson );
  }
   
   private dataTableToXml : String = "<Data>\n  <DataRow>\n    <id>0    </id>\n    <name>A    </name>\n| 0 | A |\n  </DataRow>\n</Data>";
   
   public given_dataTableToXml (  ) {
-  this.contextProvider.SetDataTableXml ( this.dataTableToXml );
+  this.testSetup.SetDataTableXml ( this.dataTableToXml );
  }
   
   private id_0_name_A : String = "| id | name |\n| 0 | A |";
   
   public given_id_0_name_A (  ) {
-  this.contextProvider.SetDataTableString ( this.id_0_name_A );
+  this.testSetup.SetDataTableString ( this.id_0_name_A );
  }
   
   // When Helper Definitions

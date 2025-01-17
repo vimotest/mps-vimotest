@@ -1,0 +1,12 @@
+namespace widgetassertions ;
+
+
+
+class LowLevelFields_ViewTestSetupImpl specializes LowLevelFields_ViewTestSetup {
+  
+  public Init (  ) {     }
+  
+  public BuildSut (  ) : LowLevelFields_View  {
+  return null;
+ }
+}

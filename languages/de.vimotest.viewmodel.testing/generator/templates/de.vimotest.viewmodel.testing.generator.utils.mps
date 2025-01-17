@@ -702,7 +702,7 @@
           <node concept="22lmx$" id="3wuujysijQ5" role="3clFbw">
             <node concept="2OqwBi" id="3wuujyrXDc5" role="3uHU7B">
               <node concept="37vLTw" id="3wuujysitGs" role="2Oq$k0">
-                <ref role="3cqZAo" node="3wuujysitGm" resolve="toLowerCase" />
+                <ref role="3cqZAo" node="3wuujysitGm" resolve="nameToLower" />
               </node>
               <node concept="liA8E" id="3wuujyrXDXo" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />
@@ -713,7 +713,7 @@
             </node>
             <node concept="2OqwBi" id="3wuujysikr1" role="3uHU7w">
               <node concept="37vLTw" id="3wuujysitGt" role="2Oq$k0">
-                <ref role="3cqZAo" node="3wuujysitGm" resolve="toLowerCase" />
+                <ref role="3cqZAo" node="3wuujysitGm" resolve="nameToLower" />
               </node>
               <node concept="liA8E" id="3wuujysikr5" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />
@@ -849,7 +849,7 @@
               </node>
               <node concept="32eq0B" id="7T8HsuTG51d" role="2OqNvi">
                 <node concept="37vLTw" id="3wuujyrNIpG" role="32eq0w">
-                  <ref role="3cqZAo" node="3wuujyrNIpE" resolve="string" />
+                  <ref role="3cqZAo" node="3wuujyrNIpE" resolve="baseNameWithUnderscore" />
                 </node>
                 <node concept="2OqwBi" id="7T8HsuTG51f" role="32eq0x">
                   <node concept="37vLTw" id="7T8HsuTG51g" role="2Oq$k0">
@@ -1219,14 +1219,14 @@
           <node concept="3cpWsn" id="7ceEXPSz50W" role="3cpWs9">
             <property role="TrG5h" value="ref" />
             <node concept="3Tqbb2" id="7ceEXPSz4Yi" role="1tU5fm">
-              <ref role="ehGHo" to="28lk:7qCenb1KL$4" resolve="NameReference" />
+              <ref role="ehGHo" to="28lk:2kuSLC0oTxk" resolve="NameBinding" />
             </node>
             <node concept="3K4zz7" id="7ceEXPSz50X" role="33vP2m">
               <node concept="2pJPEk" id="7ceEXPSz50Y" role="3K4E3e">
                 <node concept="2pJPED" id="7ceEXPSz50Z" role="2pJPEn">
-                  <ref role="2pJxaS" to="28lk:7qCenb1KL$4" resolve="NameReference" />
+                  <ref role="2pJxaS" to="28lk:2kuSLC0oTxk" resolve="NameBinding" />
                   <node concept="2pIpSj" id="7ceEXPSz510" role="2pJxcM">
-                    <ref role="2pIpSl" to="28lk:7qCenb1KL$5" resolve="target" />
+                    <ref role="2pIpSl" to="28lk:3m3bKNZGB$m" />
                     <node concept="36bGnv" id="7ceEXPSz511" role="28nt2d">
                       <ref role="36bGnp" to="hsxa:37zNn5KVoSC" resolve="AssertTrue" />
                     </node>
@@ -1238,9 +1238,9 @@
               </node>
               <node concept="2pJPEk" id="7ceEXPSz513" role="3K4GZi">
                 <node concept="2pJPED" id="7ceEXPSz514" role="2pJPEn">
-                  <ref role="2pJxaS" to="28lk:7qCenb1KL$4" resolve="NameReference" />
+                  <ref role="2pJxaS" to="28lk:2kuSLC0oTxk" resolve="NameBinding" />
                   <node concept="2pIpSj" id="7ceEXPSz515" role="2pJxcM">
-                    <ref role="2pIpSl" to="28lk:7qCenb1KL$5" resolve="target" />
+                    <ref role="2pIpSl" to="28lk:3m3bKNZGB$m" />
                     <node concept="36bGnv" id="7ceEXPSz516" role="28nt2d">
                       <ref role="36bGnp" to="hsxa:37zNn5KVoUd" resolve="AssertFalse" />
                     </node>
@@ -1256,7 +1256,7 @@
               <ref role="3cqZAo" node="7ceEXPSz50W" resolve="ref" />
             </node>
             <node concept="3TrEf2" id="7ceEXPSz5mC" role="2OqNvi">
-              <ref role="3Tt5mk" to="28lk:7qCenb1KL$5" resolve="target" />
+              <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" />
             </node>
           </node>
         </node>
@@ -1798,7 +1798,7 @@
                 <ref role="3cqZAo" node="6RKU0sdiVXa" resolve="node" />
               </node>
               <node concept="3Tsc0h" id="6RKU0sdkmjI" role="2OqNvi">
-                <ref role="3TtcxE" to="53m0:6RKU0sd8q9M" />
+                <ref role="3TtcxE" to="53m0:6RKU0sd8q9M" resolve="rows" />
               </node>
             </node>
             <node concept="2es0OD" id="6RKU0sdkmjJ" role="2OqNvi">
@@ -2002,7 +2002,7 @@
                                     <ref role="3cqZAo" node="6RKU0sdkmke" resolve="row" />
                                   </node>
                                   <node concept="3Tsc0h" id="6RKU0sdkmjZ" role="2OqNvi">
-                                    <ref role="3TtcxE" to="53m0:6RKU0sd8q9I" />
+                                    <ref role="3TtcxE" to="53m0:6RKU0sd8q9I" resolve="values" />
                                   </node>
                                 </node>
                                 <node concept="3$u5V9" id="6RKU0sdkmk0" role="2OqNvi">
@@ -2161,7 +2161,7 @@
                 <ref role="3cqZAo" node="6RKU0sdiVXg" resolve="node" />
               </node>
               <node concept="3Tsc0h" id="6RKU0sdm9jd" role="2OqNvi">
-                <ref role="3TtcxE" to="53m0:6RKU0sd8q9M" />
+                <ref role="3TtcxE" to="53m0:6RKU0sd8q9M" resolve="rows" />
               </node>
             </node>
             <node concept="2es0OD" id="6RKU0sdm9je" role="2OqNvi">
@@ -2232,7 +2232,7 @@
                           <ref role="3cqZAo" node="6RKU0sdm9kM" resolve="row" />
                         </node>
                         <node concept="3Tsc0h" id="6RKU0sdm9jl" role="2OqNvi">
-                          <ref role="3TtcxE" to="53m0:6RKU0sd8q9I" />
+                          <ref role="3TtcxE" to="53m0:6RKU0sd8q9I" resolve="values" />
                         </node>
                       </node>
                       <node concept="2es0OD" id="6RKU0sdm9jm" role="2OqNvi">
@@ -2284,11 +2284,11 @@
                                           <ref role="3cqZAo" node="6RKU0sdiVXg" resolve="node" />
                                         </node>
                                         <node concept="3TrEf2" id="6RKU0sdm9j$" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="53m0:6RKU0sd8q9K" />
+                                          <ref role="3Tt5mk" to="53m0:6RKU0sd8q9K" resolve="headersRow" />
                                         </node>
                                       </node>
                                       <node concept="3Tsc0h" id="6RKU0sdm9j_" role="2OqNvi">
-                                        <ref role="3TtcxE" to="53m0:6RKU0sd8q9I" />
+                                        <ref role="3TtcxE" to="53m0:6RKU0sd8q9I" resolve="values" />
                                       </node>
                                     </node>
                                   </node>
@@ -2438,9 +2438,9 @@
     <node concept="3Tm1VV" id="6RKU0sdiTy0" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="7NXUkdT9lK0">
-    <property role="TrG5h" value="ContextProviderGenerationHelper" />
+    <property role="TrG5h" value="TestSetupGenerationHelper" />
     <node concept="2YIFZL" id="7NXUkdT9sLN" role="jymVt">
-      <property role="TrG5h" value="isContextProviderGeneratedForTestSuite" />
+      <property role="TrG5h" value="isTestSetupGeneratedForTestSuite" />
       <node concept="3clFbS" id="7NXUkdT9sLP" role="3clF47">
         <node concept="3clFbF" id="7NXUkdT9sLY" role="3cqZAp">
           <node concept="17QLQc" id="7NXUkdT9sLZ" role="3clFbG">
@@ -2475,7 +2475,7 @@
       <node concept="3Tm1VV" id="7NXUkdT9sM5" role="1B3o_S" />
     </node>
     <node concept="2YIFZL" id="7NXUkdT9G9t" role="jymVt">
-      <property role="TrG5h" value="getPrimaryTestSuiteInputForContextProvider" />
+      <property role="TrG5h" value="getPrimaryTestSuiteInputForTestSetup" />
       <node concept="3clFbS" id="7NXUkdT9G9u" role="3clF47">
         <node concept="3SKdUt" id="7NXUkdT2d8j" role="3cqZAp">
           <node concept="1PaTwC" id="7NXUkdT2d8k" role="1aUNEU">
@@ -2506,11 +2506,11 @@
             <node concept="3oM_SD" id="7NXUkdT2Cbl" role="1PaTwD">
               <property role="3oM_SC" value="the" />
             </node>
-            <node concept="3oM_SD" id="7NXUkdT2CbA" role="1PaTwD">
-              <property role="3oM_SC" value="context" />
+            <node concept="3oM_SD" id="3MgLhTgf2zY" role="1PaTwD">
+              <property role="3oM_SC" value="test" />
             </node>
-            <node concept="3oM_SD" id="7NXUkdT2GvD" role="1PaTwD">
-              <property role="3oM_SC" value="provider" />
+            <node concept="3oM_SD" id="3MgLhTgf2zZ" role="1PaTwD">
+              <property role="3oM_SC" value="setup" />
             </node>
             <node concept="3oM_SD" id="7NXUkdT2Gwe" role="1PaTwD">
               <property role="3oM_SC" value="class," />
@@ -2558,7 +2558,7 @@
           <node concept="3y3z36" id="7NXUkdT3okD" role="1gVkn0">
             <node concept="10Nm6u" id="7NXUkdT3okK" role="3uHU7w" />
             <node concept="37vLTw" id="7NXUkdT3ifH" role="3uHU7B">
-              <ref role="3cqZAo" node="7NXUkdT1N9d" resolve="testSuiteMappedToContextProvider" />
+              <ref role="3cqZAo" node="7NXUkdT1N9d" resolve="primaryTestSuiteNode" />
             </node>
           </node>
           <node concept="3cpWs3" id="7NXUkdT9Lta" role="1gVpfI">
@@ -2569,13 +2569,13 @@
               </node>
             </node>
             <node concept="Xl_RD" id="7NXUkdT3t4p" role="3uHU7B">
-              <property role="Xl_RC" value="Context Provider not mapped correctly to a primary context provider with key: " />
+              <property role="Xl_RC" value="Test Setup not mapped correctly to a primary Test Setup with key: " />
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="7NXUkdT9Jpr" role="3cqZAp">
           <node concept="37vLTw" id="7NXUkdT9Jpp" role="3clFbG">
-            <ref role="3cqZAo" node="7NXUkdT1N9d" resolve="testSuiteMappedToContextProvider" />
+            <ref role="3cqZAo" node="7NXUkdT1N9d" resolve="primaryTestSuiteNode" />
           </node>
         </node>
       </node>
@@ -2595,7 +2595,7 @@
       </node>
     </node>
     <node concept="2YIFZL" id="7NXUkdT9u0l" role="jymVt">
-      <property role="TrG5h" value="setTestSuiteAsInputForContextProvider" />
+      <property role="TrG5h" value="setTestSuiteAsInputForTestSetup" />
       <node concept="3clFbS" id="7NXUkdT9u0m" role="3clF47">
         <node concept="3clFbF" id="7NXUkdSVc5q" role="3cqZAp">
           <node concept="37vLTI" id="7NXUkdSVkdy" role="3clFbG">
@@ -2647,11 +2647,11 @@
                 <ref role="3cqZAo" node="7NXUkdT9nLq" resolve="node" />
               </node>
               <node concept="2qgKlT" id="7NXUkdT9our" role="2OqNvi">
-                <ref role="37wK5l" to="fwln:4Pj3bOmvh0Z" resolve="getEffectiveContextProviderName" />
+                <ref role="37wK5l" to="fwln:4Pj3bOmvh0Z" resolve="getEffectiveTestSetupName" />
               </node>
             </node>
             <node concept="Xl_RD" id="7NXUkdT9ous" role="3uHU7B">
-              <property role="Xl_RC" value="contextprovider-generated-" />
+              <property role="Xl_RC" value="testsetup-generated-" />
             </node>
           </node>
         </node>

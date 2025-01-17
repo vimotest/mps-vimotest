@@ -464,7 +464,7 @@
         </node>
         <node concept="DUd2R" id="6RKU0s1bfWu" role="1s$QAX">
           <node concept="30nzp_" id="6RKU0s1bfWq" role="DUiSb">
-            <ref role="30nzpS" node="17xw4ZmTXrv" resolve="ErrorText" />
+            <ref role="30nzpS" node="17xw4ZmTXrv" resolve="Error" />
             <node concept="V3Zc6" id="6RKU0s1bfWr" role="30nDbQ">
               <node concept="V3Zdv" id="6RKU0s1bfWs" role="V3Zc7">
                 <node concept="o7Kjd" id="6RKU0s1bfWt" role="oSbKM">

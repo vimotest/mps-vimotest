@@ -6,12 +6,12 @@ class TableViews_ViewTest {
   
   private sut : TableViews_View  ;
   
-  private contextProvider : TableViews_ViewContextProvider  ;
+  private testSetup : TableViews_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new TableViews_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new TableViews_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -30,7 +30,7 @@ class TableViews_ViewTest {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   

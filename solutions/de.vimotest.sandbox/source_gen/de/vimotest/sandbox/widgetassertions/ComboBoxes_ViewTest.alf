@@ -6,12 +6,12 @@ class ComboBoxes_ViewTest {
   
   private sut : ComboBoxes_View  ;
   
-  private contextProvider : ComboBoxes_ViewContextProvider  ;
+  private testSetup : ComboBoxes_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new ComboBoxes_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new ComboBoxes_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -24,7 +24,7 @@ class ComboBoxes_ViewTest {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   

@@ -759,7 +759,7 @@
             <ref role="1YBMHb" node="1mmsj6xZiCe" resolve="viewWidget" />
           </node>
           <node concept="2qgKlT" id="1mmsj6xZlvE" role="2OqNvi">
-            <ref role="37wK5l" to="nrs2:1mmsj6xYY9u" resolve="getWidgetNameSuffixesToAvoid" />
+            <ref role="37wK5l" to="nrs2:1mmsj6xYY9u" resolve="getWidgetTypeIndicators" />
           </node>
         </node>
       </node>

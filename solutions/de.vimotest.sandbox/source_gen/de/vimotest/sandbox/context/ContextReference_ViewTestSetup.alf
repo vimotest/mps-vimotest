@@ -1,0 +1,12 @@
+namespace context ;
+
+
+
+abstract class ContextReference_ViewTestSetup {
+  
+  public abstract Init (  ) ;
+  
+  public abstract SetSimpleStringContext (   in string : String  ) ;
+  
+  public abstract BuildSut (  ) : ContextReference_View  ;
+}

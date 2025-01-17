@@ -6,12 +6,12 @@ class SelectRowCommand_ViewTests {
   
   private sut : SelectRowCommand_View  ;
   
-  private contextProvider : SelectRowCommand_ViewContextProvider  ;
+  private testSetup : SelectRowCommand_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new SelectRowCommand_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new SelectRowCommand_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -59,7 +59,7 @@ class SelectRowCommand_ViewTests {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   

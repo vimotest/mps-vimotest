@@ -6,12 +6,12 @@ class RowBasedCommand_ViewTests {
   
   private sut : RowBasedCommand_View  ;
   
-  private contextProvider : RowBasedCommand_ViewContextProvider  ;
+  private testSetup : RowBasedCommand_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new RowBasedCommand_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new RowBasedCommand_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -41,7 +41,7 @@ class RowBasedCommand_ViewTests {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   

@@ -1,10 +1,10 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "Buttons_ViewContextProvider.h"
+#include "Buttons_ViewTestSetup.h"
 #include "Buttons_View.h"
 #include <string>
-#include "Buttons_ViewContextProviderImpl.h"
+#include "Buttons_ViewTestSetupImpl.h"
 
 namespace widgetassertions
 {
@@ -12,7 +12,7 @@ namespace widgetassertions
   {
     public:
     std::shared_ptr<Buttons_View> sut;
-    std::shared_ptr<Buttons_ViewContextProvider> contextProvider;
+    std::shared_ptr<Buttons_ViewTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
     virtual void then_Ok_is_enabled_and_is_visible_and_shows_text_Test_() ;
@@ -21,8 +21,8 @@ namespace widgetassertions
   };
   void Buttons_ViewTests::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<Buttons_ViewContextProviderImpl>();
-    this->contextProvider->Init();
+    this->testSetup = std::make_shared<Buttons_ViewTestSetupImpl>();
+    this->testSetup->Init();
   }
   TEST_F(Buttons_ViewTests,  My_Scenario_given_empty_context_when_then_Ok_is_enabled_and_is_visible_and_shows_text_Test_) 
   {
@@ -32,7 +32,7 @@ namespace widgetassertions
   }
   void Buttons_ViewTests::BuildSut( ) 
   {
-    this->sut = this->contextProvider->BuildSut();
+    this->sut = this->testSetup->BuildSut();
   }
   void Buttons_ViewTests::given_empty_context( ) 
   {

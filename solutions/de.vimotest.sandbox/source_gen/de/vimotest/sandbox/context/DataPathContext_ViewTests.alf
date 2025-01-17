@@ -6,12 +6,12 @@ class DataPathContext_ViewTests {
   
   private sut : DataPathContext_View  ;
   
-  private contextProvider : DataPathContext_ViewContextProvider  ;
+  private testSetup : DataPathContext_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new DataPathContext_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new DataPathContext_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -27,7 +27,7 @@ class DataPathContext_ViewTests {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   
@@ -35,11 +35,11 @@ class DataPathContext_ViewTests {
 
   
   public given_my_element (  ) {
-  this.contextProvider.SetDataPathContext ( "resource:/elements/myelement" );
+  this.testSetup.SetDataPathContext ( "resource:/elements/myelement" );
  }
   
   public given_path_resource_elements_myelement (  ) {
-  this.contextProvider.SetDataPathContext ( "resource:/elements/myelement" );
+  this.testSetup.SetDataPathContext ( "resource:/elements/myelement" );
  }
   
   // When Helper Definitions

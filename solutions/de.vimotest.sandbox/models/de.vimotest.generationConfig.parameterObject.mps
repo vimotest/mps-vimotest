@@ -175,7 +175,7 @@
         </node>
         <node concept="DUd5q" id="Of5vVZwrN$" role="1s$QAM">
           <node concept="Tef3P" id="Of5vVZwrNA" role="DUiS9">
-            <ref role="3ucQsQ" node="Of5vVZtNIW" resolve="MyCheckBox" />
+            <ref role="3ucQsQ" node="Of5vVZtNIW" resolve="MyFlag" />
           </node>
         </node>
       </node>

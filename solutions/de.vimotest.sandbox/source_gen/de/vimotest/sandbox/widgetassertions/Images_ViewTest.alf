@@ -6,12 +6,12 @@ class Images_ViewTest {
   
   private sut : Images_View  ;
   
-  private contextProvider : Images_ViewContextProvider  ;
+  private testSetup : Images_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new Images_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new Images_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -24,7 +24,7 @@ class Images_ViewTest {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   

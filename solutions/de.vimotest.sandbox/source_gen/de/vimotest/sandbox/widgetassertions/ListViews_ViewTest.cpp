@@ -1,7 +1,7 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "ListViews_ViewContextProvider.h"
+#include "ListViews_ViewTestSetup.h"
 #include "ListViews_View.h"
 #include <vector>
 #include "ListViews_ViewMyListOfLabelRow.h"
@@ -10,7 +10,7 @@
 #include "ListViews_ViewMyCheckboxesRow.h"
 #include "ListViews_ViewMyStringRowHandlesRow.h"
 #include "ListViews_ViewMyListWithMultiRowSelectionRow.h"
-#include "ListViews_ViewContextProviderImpl.h"
+#include "ListViews_ViewTestSetupImpl.h"
 
 namespace widgetassertions
 {
@@ -18,7 +18,7 @@ namespace widgetassertions
   {
     public:
     std::shared_ptr<ListViews_View> sut;
-    std::shared_ptr<ListViews_ViewContextProvider> contextProvider;
+    std::shared_ptr<ListViews_ViewTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
     virtual void then_MyListOfLabel_has_4_rows_and_selected_row_index_3() ;
@@ -33,8 +33,8 @@ namespace widgetassertions
   };
   void ListViews_ViewTest::SetUp( ) 
   {
-    this->contextProvider = std::make_shared<ListViews_ViewContextProviderImpl>();
-    this->contextProvider->Init();
+    this->testSetup = std::make_shared<ListViews_ViewTestSetupImpl>();
+    this->testSetup->Init();
   }
   TEST_F(ListViews_ViewTest,  My_Scenario_given_empty_context_when_then_MyListOfLabel_has_4_rows_and_selected_row_index_3_and_MyListOfImages_has_2_rows_and_MyCheckboxes_has_3_rows_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1_and_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_) 
   {
@@ -60,7 +60,7 @@ namespace widgetassertions
   }
   void ListViews_ViewTest::BuildSut( ) 
   {
-    this->sut = this->contextProvider->BuildSut();
+    this->sut = this->testSetup->BuildSut();
   }
   void ListViews_ViewTest::given_empty_context( ) 
   {

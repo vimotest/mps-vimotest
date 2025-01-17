@@ -6,12 +6,12 @@ class LoginViewTests {
   
   private sut : LoginView  ;
   
-  private contextProvider : LoginViewContextProvider  ;
+  private testSetup : LoginViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new LoginViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new LoginViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -69,7 +69,7 @@ class LoginViewTests {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   
@@ -81,7 +81,7 @@ class LoginViewTests {
   private prefilledValues : String = "<Prefs>  \n  <User>Ada</User>\n  <Pw>Lovelace1</Pw>\n</Prefs>";
   
   public given_prefilledValues (  ) {
-  this.contextProvider.SetXmlElementContext ( this.prefilledValues );
+  this.testSetup.SetXmlElementContext ( this.prefilledValues );
  }
   
   // When Helper Definitions

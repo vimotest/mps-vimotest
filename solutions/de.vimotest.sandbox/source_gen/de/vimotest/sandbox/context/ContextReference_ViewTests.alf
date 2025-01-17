@@ -6,12 +6,12 @@ class ContextReference_ViewTests {
   
   private sut : ContextReference_View  ;
   
-  private contextProvider : ContextReference_ViewContextProvider  ;
+  private testSetup : ContextReference_ViewTestSetup  ;
   
   
   protected BeforeTest (  ) {
-  this.contextProvider = new ContextReference_ViewContextProviderImpl (  );
-   this.contextProvider.Init (  );
+  this.testSetup = new ContextReference_ViewTestSetupImpl (  );
+   this.testSetup.Init (  );
  }
   
   
@@ -27,7 +27,7 @@ class ContextReference_ViewTests {
   
   
   protected BuildSut (  ) {
-  this.sut = this.contextProvider.BuildSut (  );
+  this.sut = this.testSetup.BuildSut (  );
  }
   
   
@@ -37,11 +37,11 @@ class ContextReference_ViewTests {
   private base : String = "My Context";
   
   public given_base (  ) {
-  this.contextProvider.SetSimpleStringContext ( this.base );
+  this.testSetup.SetSimpleStringContext ( this.base );
  }
   
   public given_base_1 (  ) {
-  this.contextProvider.SetSimpleStringContext ( this.base );
+  this.testSetup.SetSimpleStringContext ( this.base );
  }
   
   // When Helper Definitions

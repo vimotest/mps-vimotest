@@ -162,9 +162,6 @@
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
-      <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
-        <property id="1225456424731" name="value" index="1iTho6" />
-      </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ngI" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
@@ -232,6 +229,7 @@
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
+      <concept id="1176809959526" name="jetbrains.mps.lang.editor.structure.QueryFunction_Color" flags="in" index="3ZlJ5R" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
@@ -4599,8 +4597,16 @@
         <node concept="VechU" id="6RKU0sbDxRA" role="3F10Kt" />
       </node>
       <node concept="Veino" id="6RKU0sbDxRB" role="3F10Kt">
-        <node concept="1iSF2X" id="6RKU0sbDxRC" role="VblUZ">
-          <property role="1iTho6" value="F8F8F8" />
+        <node concept="3ZlJ5R" id="1FGkP86atEk" role="VblUZ">
+          <node concept="3clFbS" id="1FGkP86atEl" role="2VODD2">
+            <node concept="3cpWs6" id="5rqC7JBshVj" role="3cqZAp">
+              <node concept="2YIFZM" id="5rqC7JBYdT$" role="3cqZAk">
+                <ref role="37wK5l" to="nrs2:5rqC7JBYaja" resolve="getLabelBackgroundLightDarkColor" />
+                <ref role="1Pybhc" to="nrs2:5mvtLdU$vM7" resolve="CellWidgetHelper" />
+                <node concept="1Q80Hx" id="1FGkP86au9t" role="37wK5m" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

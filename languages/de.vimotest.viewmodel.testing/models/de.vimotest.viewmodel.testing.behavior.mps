@@ -1980,11 +1980,16 @@
                     <ref role="3cqZAo" to="5ueo:~StyleAttributes.TEXT_COLOR" resolve="TEXT_COLOR" />
                     <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
                   </node>
-                  <node concept="2YIFZM" id="5oh1xNFAELd" role="37wK5m">
-                    <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                    <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                    <node concept="Xl_RD" id="5oh1xNFAELe" role="37wK5m">
-                      <property role="Xl_RC" value="#F8F8F8" />
+                  <node concept="2YIFZM" id="5rqC7JC0aCI" role="37wK5m">
+                    <ref role="37wK5l" to="nrs2:5rqC7JC03iT" resolve="getDisabledTextLightDarkColor" />
+                    <ref role="1Pybhc" to="nrs2:5mvtLdU$vM7" resolve="CellWidgetHelper" />
+                    <node concept="2OqwBi" id="5rqC7JC0b47" role="37wK5m">
+                      <node concept="37vLTw" id="5rqC7JC0aVu" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5oh1xNFsBJ5" resolve="buttonEditorCell" />
+                      </node>
+                      <node concept="liA8E" id="5rqC7JC0bsB" role="2OqNvi">
+                        <ref role="37wK5l" to="f4zo:~EditorCell.getContext()" resolve="getContext" />
+                      </node>
                     </node>
                   </node>
                 </node>

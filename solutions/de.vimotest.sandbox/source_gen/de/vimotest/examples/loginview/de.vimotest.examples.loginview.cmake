@@ -2,7 +2,6 @@
 
 set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/de/vimotest/examples/loginview/LoginView.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/de/vimotest/examples/loginview/LoginViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/de/vimotest/examples/loginview/LoginViewTestSetupImpl.cpp
 )
 

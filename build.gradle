@@ -12,31 +12,6 @@ apply from: 'gradle/init-gradle-scripts.gradle'
 apply from: 'gradle/sandbox/make-project-sandbox.gradle'
 apply from: 'gradle/sandbox/package-generated-code.gradle'
 
-task setupSubmodules {
-    description = "Initialize and update Git submodules"
-    group = "build setup"
-
-    onlyIf {
-        def submoduleDir = new File("submodules/mps-vimotest-samples")
-        !submoduleDir.isDirectory() || submoduleDir.listFiles().length == 0
-    }
-
-    doLast {
-        def os = System.getProperty("os.name").toLowerCase()
-        def command = 'git submodule update --init --recursive'
-
-        if (os.contains("win")) {
-            command = ["cmd", "/c", command]
-        } else {
-            command = ["sh", "-c", command]
-        }
-
-        exec {
-            commandLine = command
-        }
-    }
-}
-
 task prepareMps {
     group 'mps'
     dependsOn 'buildOsSpecificBundle'
@@ -53,7 +28,7 @@ task prepareMps {
 
 task mpsBuild {
     group 'mps'
-    dependsOn setupSubmodules, 'mpsAntGenerate', 'mpsAntBuild'
+    dependsOn 'mpsAntGenerate', 'mpsAntBuild'
 }
 
 task mpsClean {
@@ -66,10 +41,9 @@ task mpsTest {
     dependsOn 'mpsAntCheck', 'parseTestReportAfterAntCheck'
 }
 
-tasks['mpsOpenProjectInMpsForCurrentOs'].mustRunAfter(setupSubmodules)
 task openProjectInMps {
     group 'mps'
-    dependsOn setupSubmodules, 'mpsOpenProjectInMpsForCurrentOs'
+    dependsOn 'mpsOpenProjectInMpsForCurrentOs'
 }
 
 task buildAndOpenProjectInMps {

@@ -41,6 +41,7 @@ jobs:
           release_name: Release ${{ steps.extract_branch.outputs.branch }}
           body: |
             TODO: write changes in ${{ steps.extract_branch.outputs.branch }}
+            TODO: integrate into https://github.com/vimotest/mps-vimotest-samples
             TODO: consider running Bundle ViMoTest MPS workflow to attach MPS bundles
             
             Number: ${{ github.run_number }}

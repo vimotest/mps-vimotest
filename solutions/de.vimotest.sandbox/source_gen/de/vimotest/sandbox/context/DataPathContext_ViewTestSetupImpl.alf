@@ -6,7 +6,7 @@ class DataPathContext_ViewTestSetupImpl specializes DataPathContext_ViewTestSetu
   
   public Init (  ) {     }
   
-  public SetDataPathContext (   in contextPath : String  ) {     }
+  public SetDataPathContext (   in contextPath: String  ) {     }
   
   public BuildSut (  ) : DataPathContext_View  {
   return null;

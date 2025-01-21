@@ -28,7 +28,7 @@ class SelectEntryCommand_View {
   return this.MyOptionsRadioButtonSelectedEntry;
  }
   
-  public myElementsEntrySelected (   in entryName : String  ) {     }
+  public myElementsEntrySelected (   in entryName: String  ) {     }
   
-  public myOptionsEntrySelected (   in entryName : String  ) {     }
+  public myOptionsEntrySelected (   in entryName: String  ) {     }
 }

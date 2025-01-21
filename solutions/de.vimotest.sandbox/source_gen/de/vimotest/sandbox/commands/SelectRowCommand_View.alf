@@ -100,19 +100,19 @@ class SelectRowCommand_View {
   return this.MyStringHandleMultiSelectRowListViewElementsListSelectedRows;
  }
   
-  public myListViewElementsRowSelected (   in rowIndex : Integer  ) {     }
+  public myListViewElementsRowSelected (   in rowIndex: Integer  ) {     }
   
-  public myStringRowHandleListViewElementsRowSelected (   in rowHandle : String  ) {     }
+  public myStringRowHandleListViewElementsRowSelected (   in rowHandle: String  ) {     }
   
-  public myTableViewElementsRowSelected (   in rowIndex : Integer  ) {     }
+  public myTableViewElementsRowSelected (   in rowIndex: Integer  ) {     }
   
-  public myStringRowHandleTableViewElementsRowSelected (   in rowHandle : String  ) {     }
+  public myStringRowHandleTableViewElementsRowSelected (   in rowHandle: String  ) {     }
   
-  public myTreeViewElementsRowSelected (   in rowIndex : Integer  ) {     }
+  public myTreeViewElementsRowSelected (   in rowIndex: Integer  ) {     }
   
-  public myStringRowHandleTreeViewElementsRowSelected (   in rowHandle : String  ) {     }
+  public myStringRowHandleTreeViewElementsRowSelected (   in rowHandle: String  ) {     }
   
-  public myIndexBasedMultiSelectRowListViewElementsRowSelected (   in rowIndices : Integer [ * ]  ) {     }
+  public myIndexBasedMultiSelectRowListViewElementsRowSelected (   in rowIndices: Integer [ * ]  ) {     }
   
-  public myStringHandleMultiSelectRowListViewElementsRowSelected (   in rowHandles : String [ * ]  ) {     }
+  public myStringHandleMultiSelectRowListViewElementsRowSelected (   in rowHandles: String [ * ]  ) {     }
 }

@@ -6,7 +6,7 @@ abstract class DataPathContext_ViewTestSetup {
   
   public abstract Init (  ) ;
   
-  public abstract SetDataPathContext (   in contextPath : String  ) ;
+  public abstract SetDataPathContext (   in contextPath: String  ) ;
   
   public abstract BuildSut (  ) : DataPathContext_View  ;
 }

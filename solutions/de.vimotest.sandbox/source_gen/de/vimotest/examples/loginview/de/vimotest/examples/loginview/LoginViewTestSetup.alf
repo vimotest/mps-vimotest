@@ -8,7 +8,7 @@ abstract class LoginViewTestSetup {
   
   public abstract SetEmptyContext (  ) ;
   
-  public abstract SetXmlElementContext (   in xml : String  ) ;
+  public abstract SetXmlElementContext (   in xml: String  ) ;
   
   public abstract BuildSut (  ) : LoginView  ;
 }

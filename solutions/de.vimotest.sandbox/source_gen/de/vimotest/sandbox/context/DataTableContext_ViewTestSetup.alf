@@ -6,13 +6,13 @@ abstract class DataTableContext_ViewTestSetup {
   
   public abstract Init (  ) ;
   
-  public abstract SetIdAndName (   in string : String  ) ;
+  public abstract SetIdAndName (   in string: String  ) ;
   
-  public abstract SetDataTableString (   in string : String  ) ;
+  public abstract SetDataTableString (   in string: String  ) ;
   
-  public abstract SetDataTableJson (   in json : String  ) ;
+  public abstract SetDataTableJson (   in json: String  ) ;
   
-  public abstract SetDataTableXml (   in xml : String  ) ;
+  public abstract SetDataTableXml (   in xml: String  ) ;
   
   public abstract BuildSut (  ) : DataTableContext_View  ;
 }

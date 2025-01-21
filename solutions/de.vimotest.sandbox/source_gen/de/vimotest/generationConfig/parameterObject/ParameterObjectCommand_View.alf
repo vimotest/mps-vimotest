@@ -31,12 +31,12 @@ class ParameterObjectCommand_View {
  }
   }
   
-  public loadView (   in parameters : LoadViewParams  ) {     }
+  public loadView (   in parameters: LoadViewParams  ) {     }
   
   public datatype CheckParams {
     
     public isChecked : Boolean  ;
   }
   
-  public myFlagChecked (   in parameters : CheckParams  ) {     }
+  public myFlagChecked (   in parameters: CheckParams  ) {     }
 }

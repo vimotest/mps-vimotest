@@ -42,11 +42,11 @@ class LoginView {
   
   public loadView (  ) {     }
   
-  public usernameTextFilled (   in text : String  ) {     }
+  public usernameTextFilled (   in text: String  ) {     }
   
-  public passwordTextFilled (   in text : String  ) {     }
+  public passwordTextFilled (   in text: String  ) {     }
   
-  public showPasswordChecked (   in isChecked : Boolean  ) {     }
+  public showPasswordChecked (   in isChecked: Boolean  ) {     }
   
   public loginClicked (  ) {     }
 }

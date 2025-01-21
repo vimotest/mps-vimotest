@@ -6,13 +6,13 @@ class DataTableContext_ViewTestSetupImpl specializes DataTableContext_ViewTestSe
   
   public Init (  ) {     }
   
-  public SetIdAndName (   in string : String  ) {     }
+  public SetIdAndName (   in string: String  ) {     }
   
-  public SetDataTableString (   in string : String  ) {     }
+  public SetDataTableString (   in string: String  ) {     }
   
-  public SetDataTableJson (   in json : String  ) {     }
+  public SetDataTableJson (   in json: String  ) {     }
   
-  public SetDataTableXml (   in xml : String  ) {     }
+  public SetDataTableXml (   in xml: String  ) {     }
   
   public BuildSut (  ) : DataTableContext_View  {
   return null;

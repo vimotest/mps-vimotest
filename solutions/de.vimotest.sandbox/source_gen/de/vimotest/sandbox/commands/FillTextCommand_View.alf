@@ -28,7 +28,7 @@ class FillTextCommand_View {
   return this.MyFreeValueComboBoxText;
  }
   
-  public myValueTextFilled (   in text : String  ) {     }
+  public myValueTextFilled (   in text: String  ) {     }
   
-  public myFreeValueTextFilled (   in text : String  ) {     }
+  public myFreeValueTextFilled (   in text: String  ) {     }
 }

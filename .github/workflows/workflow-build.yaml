@@ -15,8 +15,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: true
 
       - name: Set up JDK 21
         uses: actions/setup-java@v4
@@ -49,12 +47,6 @@ jobs:
       # Stop Xvfb
       - name: Tear down xvfb
         run: killall Xvfb
-
-      # Build and Test taskview example
-      # Note: while we test Sandbox separately, we test TaskView Example here to avoid archiving and use freshly generated files
-      - name: Build TaskView Example
-        run: sh ./gradlew build
-        working-directory: submodules/mps-vimotest-samples/taskmanager
 
       # Archive Artifacts
       - name: Archive artifacts
@@ -100,8 +92,6 @@ jobs:
           distribution: 'temurin'
 
       - uses: actions/checkout@v4
-        with:
-          submodules: true
 
       - name: Download Sandbox Code
         uses: actions/download-artifact@v4

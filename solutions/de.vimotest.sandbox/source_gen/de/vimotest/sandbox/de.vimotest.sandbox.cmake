@@ -47,63 +47,32 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_View.cpp
   ${CMAKE_CURRENT_LIST_DIR}/bindings/NameBinding_View.cpp
   ${CMAKE_CURRENT_LIST_DIR}/bindings/CustomFileNameBinding.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/StringContext_View.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/XmlFileContext_View.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_View.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_View.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_View.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_View.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/DataPathContext_View.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_View.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Images_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Images_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TextBoxes_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TextBoxes_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/GenericCommands_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/GenericCommands_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/CheckCommand_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/CheckCommand_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Buttons_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Buttons_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/FillTextCommand_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/FillTextCommand_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/ClickCommand_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/ClickCommand_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/LoadCommand_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/LoadCommand_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/StringContext_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/StringContext_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/XmlFileContext_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/XmlFileContext_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/DataPathContext_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/DataPathContext_ViewTestSetupImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_ViewTestSetupImpl.cpp
 )
 

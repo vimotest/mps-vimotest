@@ -6,7 +6,7 @@ class ContextReference_ViewTestSetupImpl specializes ContextReference_ViewTestSe
   
   public Init (  ) {     }
   
-  public SetSimpleStringContext (   in string : String  ) {     }
+  public SetSimpleStringContext (   in string: String  ) {     }
   
   public BuildSut (  ) : ContextReference_View  {
   return null;

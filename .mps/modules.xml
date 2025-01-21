@@ -15,7 +15,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/de.vimotest.mpstest/de.vimotest.mpstest.msd" folder="3_util" />
       <modulePath path="$PROJECT_DIR$/solutions/de.vimotest.plugin/de.vimotest.plugin.msd" folder="3_util" />
       <modulePath path="$PROJECT_DIR$/solutions/de.vimotest.sandbox/de.vimotest.sandbox.msd" folder="2_models" />
-      <modulePath path="$PROJECT_DIR$/submodules/mps-vimotest-samples/solutions/de.vimotest.examples.taskmanager/de.vimotest.examples.taskmanager.msd" folder="2_models" />
     </projectModules>
   </component>
   <component name="ProjectModuleManager">

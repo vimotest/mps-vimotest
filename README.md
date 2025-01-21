@@ -24,7 +24,6 @@ See wiki: https://github.com/vimotest/mps-vimotest/wiki
 
 * ensure you use Java 20 (required by Gradle 8.2)
   * in the following, use `gradlew` for Windows, `./gradlew` for MacOS/Linux
-* execute `gradlew setupSubmodules` to initialize the submodules
 * execute `gradlew buildAndOpenProjectInMps`
     * this downloads MPS for your current OS and creates an executable installation in `build/mps-bundle`
     * Windows: executes `build/mps-bundle/mps/bin/mps.bat`

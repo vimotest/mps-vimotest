@@ -6,7 +6,7 @@ class XmlElementContext_ViewTestSetupImpl specializes XmlElementContext_ViewTest
   
   public Init (  ) {     }
   
-  public SetXmlElementContext (   in xml : String  ) {     }
+  public SetXmlElementContext (   in xml: String  ) {     }
   
   public BuildSut (  ) : XmlElementContext_View  {
   return null;

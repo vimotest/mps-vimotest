@@ -8,7 +8,7 @@ class LoginViewTestSetupImpl specializes LoginViewTestSetup {
   
   public SetEmptyContext (  ) {     }
   
-  public SetXmlElementContext (   in xml : String  ) {     }
+  public SetXmlElementContext (   in xml: String  ) {     }
   
   public BuildSut (  ) : LoginView  {
   return null;

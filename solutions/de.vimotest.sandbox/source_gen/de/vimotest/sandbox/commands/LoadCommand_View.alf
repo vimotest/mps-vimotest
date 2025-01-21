@@ -6,5 +6,5 @@ class LoadCommand_View {
   
   public loadView (  ) {     }
   
-  public loadViewWithName (   in Name : String  ) {     }
+  public loadViewWithName (   in Name: String  ) {     }
 }

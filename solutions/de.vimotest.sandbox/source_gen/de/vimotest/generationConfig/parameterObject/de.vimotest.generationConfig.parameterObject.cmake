@@ -2,7 +2,6 @@
 
 set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/ParameterObjectCommand_View.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/ParameterObjectCommand_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/ParameterObjectCommand_ViewTestSetupImpl.cpp
 )
 

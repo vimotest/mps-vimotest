@@ -3,7 +3,6 @@
 set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/MyViewModel.cpp
   ${CMAKE_CURRENT_LIST_DIR}/MyViewController.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/SeparateViewController_ViewTestSetup.cpp
   ${CMAKE_CURRENT_LIST_DIR}/SeparateViewController_ViewTestSetupImpl.cpp
 )
 

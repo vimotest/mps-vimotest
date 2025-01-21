@@ -260,9 +260,6 @@
         <node concept="L2wRC" id="63ktVPu1262" role="39821P">
           <ref role="L2wRA" node="220dcIkyAj2" resolve="de.vimotest.sandbox" />
         </node>
-        <node concept="L2wRC" id="5fMSlmO7f8J" role="39821P">
-          <ref role="L2wRA" node="5fMSlmO7f7e" resolve="de.vimotest.examples.taskmanager" />
-        </node>
         <node concept="L2wRC" id="bZSVZdidI_" role="39821P">
           <ref role="L2wRA" node="bZSVZdidFi" resolve="de.vimotest.mpstest" />
         </node>
@@ -1148,55 +1145,6 @@
         <node concept="1SiIV0" id="26p1ZnjrouR" role="3bR37C">
           <node concept="3bR9La" id="26p1ZnjrouS" role="1SiIV1">
             <ref role="3bR37D" node="26p1ZnjrosE" resolve="de.vimotest.genplan" />
-          </node>
-        </node>
-      </node>
-      <node concept="1E1JtA" id="5fMSlmO7f7e" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.vimotest.examples.taskmanager" />
-        <property role="3LESm3" value="7ff2565a-9010-45f7-90dd-787927640c82" />
-        <node concept="55IIr" id="5fMSlmO7f7h" role="3LF7KH">
-          <node concept="2Ry0Ak" id="5fMSlmO7f7o" role="iGT6I">
-            <property role="2Ry0Am" value="submodules" />
-            <node concept="2Ry0Ak" id="5fMSlmO7f7s" role="2Ry0An">
-              <property role="2Ry0Am" value="mps-vimotest-samples" />
-              <node concept="2Ry0Ak" id="5fMSlmO7f7v" role="2Ry0An">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="5fMSlmO7f7y" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.vimotest.examples.taskmanager" />
-                  <node concept="2Ry0Ak" id="5fMSlmO7f7_" role="2Ry0An">
-                    <property role="2Ry0Am" value="de.vimotest.examples.taskmanager.msd" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1BupzO" id="5fMSlmO7f8B" role="3bR31x">
-          <property role="3ZfqAx" value="models" />
-          <property role="1Hdu6h" value="true" />
-          <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="5fMSlmO7f8C" role="1HemKq">
-            <node concept="55IIr" id="5fMSlmO7f8x" role="3LXTmr">
-              <node concept="2Ry0Ak" id="5fMSlmO7f8y" role="iGT6I">
-                <property role="2Ry0Am" value="submodules" />
-                <node concept="2Ry0Ak" id="5fMSlmO7f8z" role="2Ry0An">
-                  <property role="2Ry0Am" value="mps-vimotest-samples" />
-                  <node concept="2Ry0Ak" id="5fMSlmO7f8$" role="2Ry0An">
-                    <property role="2Ry0Am" value="solutions" />
-                    <node concept="2Ry0Ak" id="5fMSlmO7f8_" role="2Ry0An">
-                      <property role="2Ry0Am" value="de.vimotest.examples.taskmanager" />
-                      <node concept="2Ry0Ak" id="5fMSlmO7f8A" role="2Ry0An">
-                        <property role="2Ry0Am" value="models" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="5fMSlmO7f8D" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
           </node>
         </node>
       </node>

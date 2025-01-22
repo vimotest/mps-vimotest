@@ -624,6 +624,16 @@
             <ref role="1Busuk" to="mk2q:5tK9548cRi8" resolve="alfi" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7MpdXqfFsX3" role="3bR37C">
+          <node concept="3bR9La" id="7MpdXqfFsX4" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7MpdXqfFsX5" role="3bR37C">
+          <node concept="3bR9La" id="7MpdXqfFsX6" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6vtOLtwgJlO" role="2G$12L">
         <property role="BnDLt" value="true" />

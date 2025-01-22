@@ -4350,7 +4350,7 @@
               <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
               <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
               <node concept="Xl_RD" id="5rqC7JBZqmn" role="37wK5m">
-                <property role="Xl_RC" value="#F8F800" />
+                <property role="Xl_RC" value="#F8F8F8" />
               </node>
             </node>
           </node>

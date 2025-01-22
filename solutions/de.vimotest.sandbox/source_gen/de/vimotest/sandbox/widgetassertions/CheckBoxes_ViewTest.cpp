@@ -4,6 +4,7 @@
 #include "CheckBoxes_ViewTestSetup.h"
 #include "CheckBoxes_View.h"
 #include <string>
+#include <optional>
 #include "CheckBoxes_ViewTestSetupImpl.h"
 
 namespace widgetassertions
@@ -17,7 +18,7 @@ namespace widgetassertions
     virtual void given_empty_context() ;
     virtual void then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_() ;
     virtual void then_MyFlagNoLabel_is_not_checked() ;
-    virtual void then_MyFlagTriState_is_not_checked() ;
+    virtual void then_MyFlagTriState_is_mixed() ;
     protected:
     void SetUp() override ;
   };
@@ -26,13 +27,13 @@ namespace widgetassertions
     this->testSetup = std::make_shared<CheckBoxes_ViewTestSetupImpl>();
     this->testSetup->Init();
   }
-  TEST_F(CheckBoxes_ViewTest,  My_Scenario_given_empty_context_when_then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_and_MyFlagNoLabel_is_not_checked_and_MyFlagTriState_is_not_checked) 
+  TEST_F(CheckBoxes_ViewTest,  My_Scenario_given_empty_context_when_then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_and_MyFlagNoLabel_is_not_checked_and_MyFlagTriState_is_mixed) 
   {
     this->given_empty_context();
     this->BuildSut();
     this->then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_();
     this->then_MyFlagNoLabel_is_not_checked();
-    this->then_MyFlagTriState_is_not_checked();
+    this->then_MyFlagTriState_is_mixed();
   }
   void CheckBoxes_ViewTest::BuildSut( ) 
   {
@@ -53,9 +54,9 @@ namespace widgetassertions
   {
     EXPECT_FALSE(this->sut->getIsMyFlagNoLabelCheckBoxChecked());
   }
-  void CheckBoxes_ViewTest::then_MyFlagTriState_is_not_checked( ) 
+  void CheckBoxes_ViewTest::then_MyFlagTriState_is_mixed( ) 
   {
-    EXPECT_FALSE(this->sut->getIsMyFlagTriStateCheckBoxChecked());
+    EXPECT_EQ(std:: nullopt, this->sut->getIsMyFlagTriStateCheckBoxChecked());
   }
 }
 

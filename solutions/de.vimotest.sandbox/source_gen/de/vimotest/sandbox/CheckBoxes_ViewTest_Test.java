@@ -13,12 +13,14 @@ public class CheckBoxes_ViewTest_Test {
   private CheckBoxes_View sut;
   private CheckBoxes_ViewTestSetup testSetup;
   @Test
-  public void test_My_Scenario_given_empty_context_when_then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_and_MyFlagNoLabel_is_not_checked_and_MyFlagTriState_is_mixed() throws Exception {
+  public void test_My_Scenario_given_empty_context_when_then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_and_MyFlagNoLabel_is_not_checked_and_MyFlagTriState_is_mixed_and_MyFlagTriState_is_checked_and_MyFlagTriState_is_not_checked() throws Exception {
     this.given_empty_context();
     this.BuildSut();
     this.then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_();
     this.then_MyFlagNoLabel_is_not_checked();
     this.then_MyFlagTriState_is_mixed();
+    this.then_MyFlagTriState_is_checked();
+    this.then_MyFlagTriState_is_not_checked();
   }
   @BeforeEach
   public void setUp() {
@@ -51,5 +53,11 @@ public class CheckBoxes_ViewTest_Test {
   }
   public void then_MyFlagTriState_is_mixed() {
     Assert.assertEquals(null, this.sut.getIsMyFlagTriStateCheckBoxChecked());
+  }
+  public void then_MyFlagTriState_is_checked() {
+    Assert.assertTrue(this.sut.getIsMyFlagTriStateCheckBoxChecked());
+  }
+  public void then_MyFlagTriState_is_not_checked() {
+    Assert.assertFalse(this.sut.getIsMyFlagTriStateCheckBoxChecked());
   }
 }

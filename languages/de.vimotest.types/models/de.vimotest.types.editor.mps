@@ -14,6 +14,7 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -49,7 +50,9 @@
         <property id="1186403713874" name="color" index="Vb096" />
         <child id="1186403803051" name="query" index="VblUZ" />
       </concept>
-      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2" />
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
+      </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
@@ -99,6 +102,7 @@
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -118,6 +122,9 @@
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
@@ -232,7 +239,17 @@
       <property role="TrG5h" value="LeftBracket" />
       <node concept="Vb9p2" id="F907haLJY1" role="3F10Kt" />
       <node concept="VechU" id="F907haLJY6" role="3F10Kt">
-        <property role="Vb096" value="fLJRk5_/gray" />
+        <node concept="3ZlJ5R" id="1DHLMcWBt1" role="VblUZ">
+          <node concept="3clFbS" id="1DHLMcWBt2" role="2VODD2">
+            <node concept="3clFbF" id="1DHLMcWBDG" role="3cqZAp">
+              <node concept="2YIFZM" id="1DHLMcWBED" role="3clFbG">
+                <ref role="37wK5l" node="1DHLMcWzr3" resolve="getGrayColorByTheme" />
+                <ref role="1Pybhc" node="5QSnpBWlEt3" resolve="ViMoTestStyleColorHelper" />
+                <node concept="1Q80Hx" id="1DHLMcWBFv" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3mYdg7" id="F907haLJYn" role="3F10Kt">
         <property role="1413C4" value="bracket" />
@@ -242,7 +259,17 @@
       <property role="TrG5h" value="RightBracket" />
       <node concept="Vb9p2" id="F907haLJYa" role="3F10Kt" />
       <node concept="VechU" id="F907haLJYb" role="3F10Kt">
-        <property role="Vb096" value="fLJRk5_/gray" />
+        <node concept="3ZlJ5R" id="1DHLMcWC4d" role="VblUZ">
+          <node concept="3clFbS" id="1DHLMcWC4e" role="2VODD2">
+            <node concept="3clFbF" id="1DHLMcWC4f" role="3cqZAp">
+              <node concept="2YIFZM" id="1DHLMcWC4g" role="3clFbG">
+                <ref role="37wK5l" node="1DHLMcWzr3" resolve="getGrayColorByTheme" />
+                <ref role="1Pybhc" node="5QSnpBWlEt3" resolve="ViMoTestStyleColorHelper" />
+                <node concept="1Q80Hx" id="1DHLMcWC4h" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3mYdg7" id="F907haLJYi" role="3F10Kt">
         <property role="1413C4" value="bracket" />
@@ -276,6 +303,33 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="1DHLMcXB_e" role="V601i">
+      <property role="TrG5h" value="GrayItalic" />
+      <node concept="Vb9p2" id="55YtzNav4of" role="3F10Kt">
+        <property role="Vbekb" value="g1_kEg4/ITALIC" />
+      </node>
+      <node concept="VechU" id="55YtzNav4og" role="3F10Kt">
+        <node concept="3ZlJ5R" id="1DHLMcXAXJ" role="VblUZ">
+          <node concept="3clFbS" id="1DHLMcXAXK" role="2VODD2">
+            <node concept="3clFbF" id="1DHLMcXB9O" role="3cqZAp">
+              <node concept="2YIFZM" id="1DHLMcXB9P" role="3clFbG">
+                <ref role="37wK5l" node="1DHLMcWzr3" resolve="getGrayColorByTheme" />
+                <ref role="1Pybhc" node="5QSnpBWlEt3" resolve="ViMoTestStyleColorHelper" />
+                <node concept="1Q80Hx" id="1DHLMcXB9Q" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="1DHLMcXMKo" role="V601i">
+      <property role="TrG5h" value="EmptyConstant" />
+      <node concept="3Xmtl4" id="1DHLMcXMKI" role="3F10Kt">
+        <node concept="1wgc9g" id="1DHLMcXMKJ" role="3XvnJa">
+          <ref role="1wgcnl" node="1DHLMcXB_e" resolve="GrayItalic" />
         </node>
       </node>
     </node>
@@ -477,6 +531,217 @@
         <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
     </node>
+    <node concept="2YIFZL" id="1DHLMcXUM$" role="jymVt">
+      <property role="TrG5h" value="getColorByTheme" />
+      <node concept="3clFbS" id="1DHLMcXUMB" role="3clF47">
+        <node concept="3cpWs8" id="1DHLMcXViY" role="3cqZAp">
+          <node concept="3cpWsn" id="1DHLMcXViZ" role="3cpWs9">
+            <property role="TrG5h" value="darkTheme" />
+            <node concept="10P_77" id="1DHLMcXVj0" role="1tU5fm" />
+            <node concept="1rXfSq" id="1DHLMcXVj1" role="33vP2m">
+              <ref role="37wK5l" node="6RgQz$N34xq" resolve="isDarkTheme" />
+              <node concept="37vLTw" id="1DHLMcXVj2" role="37wK5m">
+                <ref role="3cqZAo" node="1DHLMcXUU3" resolve="editorContext" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1DHLMcXVj3" role="3cqZAp">
+          <node concept="3K4zz7" id="1DHLMcXVj4" role="3clFbG">
+            <node concept="37vLTw" id="1DHLMcXVLS" role="3K4E3e">
+              <ref role="3cqZAo" node="1DHLMcXVb7" resolve="colorDark" />
+            </node>
+            <node concept="37vLTw" id="1DHLMcXVj7" role="3K4Cdx">
+              <ref role="3cqZAo" node="1DHLMcXViZ" resolve="darkTheme" />
+            </node>
+            <node concept="37vLTw" id="1DHLMcXVYB" role="3K4GZi">
+              <ref role="3cqZAo" node="1DHLMcXV0F" resolve="colorLight" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1DHLMcXUqA" role="1B3o_S" />
+      <node concept="3uibUv" id="1DHLMcXUKL" role="3clF45">
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+      </node>
+      <node concept="37vLTG" id="1DHLMcXUU3" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="1DHLMcXUU2" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1DHLMcXV0F" role="3clF46">
+        <property role="TrG5h" value="colorLight" />
+        <node concept="3uibUv" id="1DHLMcXV90" role="1tU5fm">
+          <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1DHLMcXVb7" role="3clF46">
+        <property role="TrG5h" value="colorDark" />
+        <node concept="3uibUv" id="1DHLMcXVep" role="1tU5fm">
+          <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1DHLMcWAFp" role="jymVt" />
+    <node concept="2YIFZL" id="1DHLMcWzr3" role="jymVt">
+      <property role="TrG5h" value="getGrayColorByTheme" />
+      <node concept="37vLTG" id="1DHLMcWzr4" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="1DHLMcWzr5" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1DHLMcWzra" role="3clF47">
+        <node concept="3cpWs8" id="1DHLMcWzrb" role="3cqZAp">
+          <node concept="3cpWsn" id="1DHLMcWzrc" role="3cpWs9">
+            <property role="TrG5h" value="darkTheme" />
+            <node concept="10P_77" id="1DHLMcWzrd" role="1tU5fm" />
+            <node concept="1rXfSq" id="1DHLMcWzre" role="33vP2m">
+              <ref role="37wK5l" node="6RgQz$N34xq" resolve="isDarkTheme" />
+              <node concept="37vLTw" id="1DHLMcWzrf" role="37wK5m">
+                <ref role="3cqZAo" node="1DHLMcWzr4" resolve="editorContext" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1DHLMcWzrg" role="3cqZAp">
+          <node concept="3K4zz7" id="1DHLMcW_gc" role="3clFbG">
+            <node concept="10M0yZ" id="1DHLMcW_tV" role="3K4E3e">
+              <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
+              <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+            </node>
+            <node concept="10M0yZ" id="1DHLMcW_FZ" role="3K4GZi">
+              <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
+              <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+            </node>
+            <node concept="37vLTw" id="1DHLMcWzrk" role="3K4Cdx">
+              <ref role="3cqZAo" node="1DHLMcWzrc" resolve="darkTheme" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1DHLMcWzrn" role="1B3o_S" />
+      <node concept="3uibUv" id="1DHLMcWzro" role="3clF45">
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+      </node>
+    </node>
+    <node concept="2YIFZL" id="1DHLMcW_Ij" role="jymVt">
+      <property role="TrG5h" value="getLightGrayColorByTheme" />
+      <node concept="37vLTG" id="1DHLMcW_Ik" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="1DHLMcW_Il" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1DHLMcW_Im" role="3clF47">
+        <node concept="3cpWs8" id="1DHLMcW_In" role="3cqZAp">
+          <node concept="3cpWsn" id="1DHLMcW_Io" role="3cpWs9">
+            <property role="TrG5h" value="darkTheme" />
+            <node concept="10P_77" id="1DHLMcW_Ip" role="1tU5fm" />
+            <node concept="1rXfSq" id="1DHLMcW_Iq" role="33vP2m">
+              <ref role="37wK5l" node="6RgQz$N34xq" resolve="isDarkTheme" />
+              <node concept="37vLTw" id="1DHLMcW_Ir" role="37wK5m">
+                <ref role="3cqZAo" node="1DHLMcW_Ik" resolve="editorContext" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1DHLMcW_Is" role="3cqZAp">
+          <node concept="3K4zz7" id="1DHLMcW_It" role="3clFbG">
+            <node concept="10M0yZ" id="1DHLMcW_SY" role="3K4E3e">
+              <ref role="3cqZAo" to="z60i:~Color.gray" resolve="gray" />
+              <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+            </node>
+            <node concept="10M0yZ" id="1DHLMcW_Wm" role="3K4GZi">
+              <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
+              <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+            </node>
+            <node concept="37vLTw" id="1DHLMcW_Iw" role="3K4Cdx">
+              <ref role="3cqZAo" node="1DHLMcW_Io" resolve="darkTheme" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1DHLMcW_Ix" role="1B3o_S" />
+      <node concept="3uibUv" id="1DHLMcW_Iy" role="3clF45">
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+      </node>
+    </node>
+    <node concept="2YIFZL" id="1DHLMcW_Z6" role="jymVt">
+      <property role="TrG5h" value="getBlackColorByTheme" />
+      <node concept="37vLTG" id="1DHLMcW_Z7" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="1DHLMcW_Z8" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1DHLMcW_Z9" role="3clF47">
+        <node concept="3cpWs8" id="1DHLMcW_Za" role="3cqZAp">
+          <node concept="3cpWsn" id="1DHLMcW_Zb" role="3cpWs9">
+            <property role="TrG5h" value="darkTheme" />
+            <node concept="10P_77" id="1DHLMcW_Zc" role="1tU5fm" />
+            <node concept="1rXfSq" id="1DHLMcW_Zd" role="33vP2m">
+              <ref role="37wK5l" node="6RgQz$N34xq" resolve="isDarkTheme" />
+              <node concept="37vLTw" id="1DHLMcW_Ze" role="37wK5m">
+                <ref role="3cqZAo" node="1DHLMcW_Z7" resolve="editorContext" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1DHLMcW_Zf" role="3cqZAp">
+          <node concept="3K4zz7" id="1DHLMcW_Zg" role="3clFbG">
+            <node concept="10M0yZ" id="1DHLMcWA_z" role="3K4E3e">
+              <ref role="3cqZAo" to="z60i:~Color.white" resolve="white" />
+              <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+            </node>
+            <node concept="10M0yZ" id="1DHLMcWACB" role="3K4GZi">
+              <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
+              <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+            </node>
+            <node concept="37vLTw" id="1DHLMcW_Zj" role="3K4Cdx">
+              <ref role="3cqZAo" node="1DHLMcW_Zb" resolve="darkTheme" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1DHLMcW_Zk" role="1B3o_S" />
+      <node concept="3uibUv" id="1DHLMcW_Zl" role="3clF45">
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+      </node>
+    </node>
+    <node concept="2YIFZL" id="1DHLMcXYpD" role="jymVt">
+      <property role="TrG5h" value="getDarkGreenColorByTheme" />
+      <node concept="37vLTG" id="1DHLMcXYpE" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="1DHLMcXYpF" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1DHLMcXYpG" role="3clF47">
+        <node concept="3clFbF" id="1DHLMcXYK0" role="3cqZAp">
+          <node concept="1rXfSq" id="1DHLMcXYJY" role="3clFbG">
+            <ref role="37wK5l" node="1DHLMcXUM$" resolve="getColorByTheme" />
+            <node concept="37vLTw" id="1DHLMcXYTg" role="37wK5m">
+              <ref role="3cqZAo" node="1DHLMcXYpE" resolve="editorContext" />
+            </node>
+            <node concept="10M0yZ" id="1DHLMcY0ws" role="37wK5m">
+              <ref role="3cqZAo" to="exr9:~MPSColors.darkGreen" resolve="darkGreen" />
+              <ref role="1PxDUh" to="exr9:~MPSColors" resolve="MPSColors" />
+            </node>
+            <node concept="10M0yZ" id="1DHLMcY10o" role="37wK5m">
+              <ref role="3cqZAo" to="exr9:~MPSColors.green" resolve="green" />
+              <ref role="1PxDUh" to="exr9:~MPSColors" resolve="MPSColors" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1DHLMcXYpR" role="1B3o_S" />
+      <node concept="3uibUv" id="1DHLMcXYpS" role="3clF45">
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1DHLMcWALm" role="jymVt" />
     <node concept="2YIFZL" id="5QSnpBWoNKU" role="jymVt">
       <property role="TrG5h" value="getColorByTheme" />
       <node concept="37vLTG" id="5QSnpBWoNKV" role="3clF46">

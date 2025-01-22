@@ -7,6 +7,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="dgt9" ref="r:a46eceb8-d68d-4f8d-a755-6da4c2f592cc(de.vimotest.types.editor)" />
     <import index="3255" ref="r:3f8a28d8-19f1-4a98-ae2b-f05e49ec6d87(de.vimotest.widgetdsl.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -32,18 +33,14 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
-      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
-        <property id="1186403713874" name="color" index="Vb096" />
-      </concept>
-      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
-        <property id="1186403771423" name="style" index="Vbekb" />
-      </concept>
-      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ngI" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
@@ -257,12 +254,7 @@
       </node>
       <node concept="3F0ifn" id="4DeESu7$ls4" role="3EZMnx">
         <property role="3F0ifm" value="(inherent)" />
-        <node concept="Vb9p2" id="4DeESu7$lsb" role="3F10Kt">
-          <property role="Vbekb" value="g1_kEg4/ITALIC" />
-        </node>
-        <node concept="VechU" id="4DeESu7$lsg" role="3F10Kt">
-          <property role="Vb096" value="fLJRk5_/gray" />
-        </node>
+        <ref role="1k5W1q" to="dgt9:1DHLMcXB_e" resolve="GrayItalic" />
         <node concept="pkWqt" id="4DeESu7$lsk" role="pqm2j">
           <node concept="3clFbS" id="4DeESu7$lsl" role="2VODD2">
             <node concept="3clFbF" id="4DeESu7$lDS" role="3cqZAp">
@@ -346,21 +338,11 @@
         </node>
         <node concept="3F0ifn" id="2exRXkpMrxX" role="3EZMnx">
           <property role="3F0ifm" value="operates on feature" />
-          <node concept="Vb9p2" id="2exRXkpMwGk" role="3F10Kt">
-            <property role="Vbekb" value="g1_kEg4/ITALIC" />
-          </node>
-          <node concept="VechU" id="2exRXkpMwGl" role="3F10Kt">
-            <property role="Vb096" value="fLJRk5_/gray" />
-          </node>
+          <ref role="1k5W1q" to="dgt9:1DHLMcXB_e" resolve="GrayItalic" />
         </node>
         <node concept="1iCGBv" id="2exRXkpMry0" role="3EZMnx">
           <ref role="1NtTu8" to="3255:2exRXkpMlLe" resolve="operatesOnFeature" />
-          <node concept="Vb9p2" id="2exRXkpMwGm" role="3F10Kt">
-            <property role="Vbekb" value="g1_kEg4/ITALIC" />
-          </node>
-          <node concept="VechU" id="2exRXkpMwGn" role="3F10Kt">
-            <property role="Vb096" value="fLJRk5_/gray" />
-          </node>
+          <ref role="1k5W1q" to="dgt9:1DHLMcXB_e" resolve="GrayItalic" />
           <node concept="1sVBvm" id="2exRXkpMry2" role="1sWHZn">
             <node concept="3F0A7n" id="2exRXkpMry6" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -380,21 +362,11 @@
         <node concept="2iRfu4" id="2exRXkpMvP7" role="2iSdaV" />
         <node concept="3F0ifn" id="2exRXkpMvxm" role="3EZMnx">
           <property role="3F0ifm" value="can execute by feature:" />
-          <node concept="Vb9p2" id="2exRXkpMwGi" role="3F10Kt">
-            <property role="Vbekb" value="g1_kEg4/ITALIC" />
-          </node>
-          <node concept="VechU" id="2exRXkpMwGj" role="3F10Kt">
-            <property role="Vb096" value="fLJRk5_/gray" />
-          </node>
+          <ref role="1k5W1q" to="dgt9:1DHLMcXB_e" resolve="GrayItalic" />
         </node>
         <node concept="1iCGBv" id="2exRXkpMwGo" role="3EZMnx">
           <ref role="1NtTu8" to="3255:2exRXkpMlLf" resolve="canExecuteByFeature" />
-          <node concept="Vb9p2" id="2exRXkpMwGp" role="3F10Kt">
-            <property role="Vbekb" value="g1_kEg4/ITALIC" />
-          </node>
-          <node concept="VechU" id="2exRXkpMwGq" role="3F10Kt">
-            <property role="Vb096" value="fLJRk5_/gray" />
-          </node>
+          <ref role="1k5W1q" to="dgt9:1DHLMcXB_e" resolve="GrayItalic" />
           <node concept="1sVBvm" id="2exRXkpMwGr" role="1sWHZn">
             <node concept="3F0A7n" id="2exRXkpMwGs" role="2wV5jI">
               <property role="1Intyy" value="true" />

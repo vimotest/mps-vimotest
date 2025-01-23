@@ -15,6 +15,8 @@ namespace widgetassertions
     std::shared_ptr<RadioButton_ViewTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void then_MyChoices_selected_OptionC_() ;
+    virtual void then_MyChoices_selected_OptionC_and_is_not_enabled() ;
+    virtual void then_MyChoices_selected_OptionC_and_is_not_visible() ;
     protected:
     void SetUp() override ;
   };
@@ -28,6 +30,16 @@ namespace widgetassertions
     this->BuildSut();
     this->then_MyChoices_selected_OptionC_();
   }
+  TEST_F(RadioButton_ViewTests,  RadioButton_disabled_given_when_then_MyChoices_selected_OptionC_and_is_not_enabled) 
+  {
+    this->BuildSut();
+    this->then_MyChoices_selected_OptionC_and_is_not_enabled();
+  }
+  TEST_F(RadioButton_ViewTests,  RadioButton_invisible_given_when_then_MyChoices_selected_OptionC_and_is_not_visible) 
+  {
+    this->BuildSut();
+    this->then_MyChoices_selected_OptionC_and_is_not_visible();
+  }
   void RadioButton_ViewTests::BuildSut( ) 
   {
     this->sut = this->testSetup->BuildSut();
@@ -35,6 +47,16 @@ namespace widgetassertions
   void RadioButton_ViewTests::then_MyChoices_selected_OptionC_( ) 
   {
     EXPECT_EQ(std::string("OptionC"), this->sut->getMyChoicesRadioButtonSelectedEntry());
+  }
+  void RadioButton_ViewTests::then_MyChoices_selected_OptionC_and_is_not_enabled( ) 
+  {
+    EXPECT_EQ(std::string("OptionC"), this->sut->getMyChoicesRadioButtonSelectedEntry());
+    EXPECT_FALSE(this->sut->getIsMyChoicesRadioButtonEnabled());
+  }
+  void RadioButton_ViewTests::then_MyChoices_selected_OptionC_and_is_not_visible( ) 
+  {
+    EXPECT_EQ(std::string("OptionC"), this->sut->getMyChoicesRadioButtonSelectedEntry());
+    EXPECT_FALSE(this->sut->getIsMyChoicesRadioButtonVisible());
   }
 }
 

@@ -20,6 +20,18 @@ public class Labels_ViewTest_Test {
     this.then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible();
   }
   @Test
+  public void test_Single_Line_Label_Disabled_given_empty_context_when_then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible() throws Exception {
+    this.given_empty_context();
+    this.BuildSut();
+    this.then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible();
+  }
+  @Test
+  public void test_Single_Line_Label_Invisible_given_empty_context_when_then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible() throws Exception {
+    this.given_empty_context();
+    this.BuildSut();
+    this.then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible();
+  }
+  @Test
   public void test_Multi_Line_Label_given_empty_context_when_then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_() throws Exception {
     this.given_empty_context();
     this.BuildSut();
@@ -68,6 +80,16 @@ public class Labels_ViewTest_Test {
     Assert.assertEquals("My Expectation Text", this.sut.getTestLabelText());
     Assert.assertTrue(this.sut.getIsTestLabelEnabled());
     Assert.assertTrue(this.sut.getIsTestLabelVisible());
+  }
+  public void then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible() {
+    Assert.assertEquals("My Expectation Text", this.sut.getTestLabelText());
+    Assert.assertFalse(this.sut.getIsTestLabelEnabled());
+    Assert.assertTrue(this.sut.getIsTestLabelVisible());
+  }
+  public void then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible() {
+    Assert.assertEquals("My Expectation Text", this.sut.getTestLabelText());
+    Assert.assertTrue(this.sut.getIsTestLabelEnabled());
+    Assert.assertFalse(this.sut.getIsTestLabelVisible());
   }
   public void then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_() {
     List<String> actualMultiLineLines = this.sut.getMultiLineLabelText();

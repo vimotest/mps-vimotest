@@ -20,6 +20,16 @@ class RadioButton_ViewTests {
    this.then_MyChoices_selected_OptionC_ (  );
  }
   
+  public RadioButton_disabled_given_when_then_MyChoices_selected_OptionC_and_is_not_enabled (  ) {
+  this.BuildSut (  );
+   this.then_MyChoices_selected_OptionC_and_is_not_enabled (  );
+ }
+  
+  public RadioButton_invisible_given_when_then_MyChoices_selected_OptionC_and_is_not_visible (  ) {
+  this.BuildSut (  );
+   this.then_MyChoices_selected_OptionC_and_is_not_visible (  );
+ }
+  
   
   protected BuildSut (  ) {
   this.sut = this.testSetup.BuildSut (  );
@@ -37,5 +47,15 @@ class RadioButton_ViewTests {
   
   public then_MyChoices_selected_OptionC_ (  ) {
   AssertEqual ( "OptionC", this.sut.getMyChoicesRadioButtonSelectedEntry (  ) );
+ }
+  
+  public then_MyChoices_selected_OptionC_and_is_not_enabled (  ) {
+  AssertEqual ( "OptionC", this.sut.getMyChoicesRadioButtonSelectedEntry (  ) );
+   AssertFalse ( this.sut.getIsMyChoicesRadioButtonEnabled (  ) );
+ }
+  
+  public then_MyChoices_selected_OptionC_and_is_not_visible (  ) {
+  AssertEqual ( "OptionC", this.sut.getMyChoicesRadioButtonSelectedEntry (  ) );
+   AssertFalse ( this.sut.getIsMyChoicesRadioButtonVisible (  ) );
  }
 }

@@ -17,6 +17,16 @@ public class RadioButton_ViewTests_Test {
     this.BuildSut();
     this.then_MyChoices_selected_OptionC_();
   }
+  @Test
+  public void test_RadioButton_disabled_given_when_then_MyChoices_selected_OptionC_and_is_not_enabled() throws Exception {
+    this.BuildSut();
+    this.then_MyChoices_selected_OptionC_and_is_not_enabled();
+  }
+  @Test
+  public void test_RadioButton_invisible_given_when_then_MyChoices_selected_OptionC_and_is_not_visible() throws Exception {
+    this.BuildSut();
+    this.then_MyChoices_selected_OptionC_and_is_not_visible();
+  }
   @BeforeEach
   public void setUp() {
     this.testSetup = new RadioButton_ViewTestSetupImpl();
@@ -37,5 +47,13 @@ public class RadioButton_ViewTests_Test {
 
   public void then_MyChoices_selected_OptionC_() {
     Assert.assertEquals("OptionC", this.sut.getMyChoicesRadioButtonSelectedEntry());
+  }
+  public void then_MyChoices_selected_OptionC_and_is_not_enabled() {
+    Assert.assertEquals("OptionC", this.sut.getMyChoicesRadioButtonSelectedEntry());
+    Assert.assertFalse(this.sut.getIsMyChoicesRadioButtonEnabled());
+  }
+  public void then_MyChoices_selected_OptionC_and_is_not_visible() {
+    Assert.assertEquals("OptionC", this.sut.getMyChoicesRadioButtonSelectedEntry());
+    Assert.assertFalse(this.sut.getIsMyChoicesRadioButtonVisible());
   }
 }

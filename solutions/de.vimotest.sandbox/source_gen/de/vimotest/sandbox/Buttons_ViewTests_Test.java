@@ -18,6 +18,18 @@ public class Buttons_ViewTests_Test {
     this.BuildSut();
     this.then_Ok_is_enabled_and_is_visible_and_shows_text_Test_();
   }
+  @Test
+  public void test_My_Scenario_given_empty_context_when_then_Ok_is_not_enabled_and_is_visible_and_shows_text_Test_() throws Exception {
+    this.given_empty_context();
+    this.BuildSut();
+    this.then_Ok_is_not_enabled_and_is_visible_and_shows_text_Test_();
+  }
+  @Test
+  public void test_My_Scenario_given_empty_context_when_then_Ok_is_enabled_and_is_not_visible_and_shows_text_Test_() throws Exception {
+    this.given_empty_context();
+    this.BuildSut();
+    this.then_Ok_is_enabled_and_is_not_visible_and_shows_text_Test_();
+  }
   @BeforeEach
   public void setUp() {
     this.testSetup = new Buttons_ViewTestSetupImpl();
@@ -41,6 +53,16 @@ public class Buttons_ViewTests_Test {
   public void then_Ok_is_enabled_and_is_visible_and_shows_text_Test_() {
     Assert.assertTrue(this.sut.getIsOkButtonEnabled());
     Assert.assertTrue(this.sut.getIsOkButtonVisible());
+    Assert.assertEquals("Test", this.sut.getOkButtonText());
+  }
+  public void then_Ok_is_not_enabled_and_is_visible_and_shows_text_Test_() {
+    Assert.assertFalse(this.sut.getIsOkButtonEnabled());
+    Assert.assertTrue(this.sut.getIsOkButtonVisible());
+    Assert.assertEquals("Test", this.sut.getOkButtonText());
+  }
+  public void then_Ok_is_enabled_and_is_not_visible_and_shows_text_Test_() {
+    Assert.assertTrue(this.sut.getIsOkButtonEnabled());
+    Assert.assertFalse(this.sut.getIsOkButtonVisible());
     Assert.assertEquals("Test", this.sut.getOkButtonText());
   }
 }

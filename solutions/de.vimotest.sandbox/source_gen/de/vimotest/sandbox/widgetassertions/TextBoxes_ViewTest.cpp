@@ -17,6 +17,8 @@ namespace widgetassertions
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
     virtual void then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible() ;
+    virtual void then_MyValue_shows_text_Some_entered_Input_and_is_not_enabled_and_is_visible() ;
+    virtual void then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_not_visible() ;
     virtual void then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_() ;
     protected:
     void SetUp() override ;
@@ -26,13 +28,25 @@ namespace widgetassertions
     this->testSetup = std::make_shared<TextBoxes_ViewTestSetupImpl>();
     this->testSetup->Init();
   }
-  TEST_F(TextBoxes_ViewTest,  My_SingleLine_Scenario_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible) 
+  TEST_F(TextBoxes_ViewTest,  SingleLine_TextBox_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible) 
   {
     this->given_empty_context();
     this->BuildSut();
     this->then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible();
   }
-  TEST_F(TextBoxes_ViewTest,  My_MultiLine_Scenario_given_empty_context_when_then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_) 
+  TEST_F(TextBoxes_ViewTest,  SingleLine_TextBox_disabled_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_not_enabled_and_is_visible) 
+  {
+    this->given_empty_context();
+    this->BuildSut();
+    this->then_MyValue_shows_text_Some_entered_Input_and_is_not_enabled_and_is_visible();
+  }
+  TEST_F(TextBoxes_ViewTest,  SingleLine_TextBox_invisible_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_not_visible) 
+  {
+    this->given_empty_context();
+    this->BuildSut();
+    this->then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_not_visible();
+  }
+  TEST_F(TextBoxes_ViewTest,  MultiLine_TextBox_given_empty_context_when_then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_) 
   {
     this->given_empty_context();
     this->BuildSut();
@@ -51,6 +65,18 @@ namespace widgetassertions
     EXPECT_EQ(std::string("Some entered Input"), this->sut->getMyValueTextBoxText());
     EXPECT_TRUE(this->sut->getIsMyValueTextBoxEnabled());
     EXPECT_TRUE(this->sut->getIsMyValueTextBoxVisible());
+  }
+  void TextBoxes_ViewTest::then_MyValue_shows_text_Some_entered_Input_and_is_not_enabled_and_is_visible( ) 
+  {
+    EXPECT_EQ(std::string("Some entered Input"), this->sut->getMyValueTextBoxText());
+    EXPECT_FALSE(this->sut->getIsMyValueTextBoxEnabled());
+    EXPECT_TRUE(this->sut->getIsMyValueTextBoxVisible());
+  }
+  void TextBoxes_ViewTest::then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_not_visible( ) 
+  {
+    EXPECT_EQ(std::string("Some entered Input"), this->sut->getMyValueTextBoxText());
+    EXPECT_TRUE(this->sut->getIsMyValueTextBoxEnabled());
+    EXPECT_FALSE(this->sut->getIsMyValueTextBoxVisible());
   }
   void TextBoxes_ViewTest::then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_( ) 
   {

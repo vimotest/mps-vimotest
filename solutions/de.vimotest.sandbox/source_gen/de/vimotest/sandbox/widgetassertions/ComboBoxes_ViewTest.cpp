@@ -19,6 +19,8 @@ namespace widgetassertions
     virtual void given_empty_context() ;
     virtual void then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible() ;
     virtual void then_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_() ;
+    virtual void then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled() ;
+    virtual void then_MyOptions_has_1_entries_and_selected_A_and_is_not_visible() ;
     protected:
     void SetUp() override ;
   };
@@ -33,6 +35,16 @@ namespace widgetassertions
     this->BuildSut();
     this->then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible();
     this->then_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_();
+  }
+  TEST_F(ComboBoxes_ViewTest,  ComboBox_disabled_given_when_then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled) 
+  {
+    this->BuildSut();
+    this->then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled();
+  }
+  TEST_F(ComboBoxes_ViewTest,  ComboBox_invisible_given_when_then_MyOptions_has_1_entries_and_selected_A_and_is_not_visible) 
+  {
+    this->BuildSut();
+    this->then_MyOptions_has_1_entries_and_selected_A_and_is_not_visible();
   }
   void ComboBoxes_ViewTest::BuildSut( ) 
   {
@@ -61,6 +73,22 @@ namespace widgetassertions
     EXPECT_EQ(std::string("E2"), actualMyOptionsWithFreeTextEntries.at(1));
     EXPECT_EQ(std:: nullopt, this->sut->getMyOptionsWithFreeTextComboBoxSelectedEntry());
     EXPECT_EQ(std::string("My Free Text"), this->sut->getMyOptionsWithFreeTextComboBoxText());
+  }
+  void ComboBoxes_ViewTest::then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled( ) 
+  {
+    auto& actualMyOptionsEntries_1 = this->sut->getMyOptionsComboBoxEntries();
+    EXPECT_EQ(1, actualMyOptionsEntries_1.size());
+    EXPECT_EQ(std::string("A"), actualMyOptionsEntries_1.at(0));
+    EXPECT_EQ(std::string("A"), this->sut->getMyOptionsComboBoxSelectedEntry());
+    EXPECT_FALSE(this->sut->getIsMyOptionsComboBoxEnabled());
+  }
+  void ComboBoxes_ViewTest::then_MyOptions_has_1_entries_and_selected_A_and_is_not_visible( ) 
+  {
+    auto& actualMyOptionsEntries_2 = this->sut->getMyOptionsComboBoxEntries();
+    EXPECT_EQ(1, actualMyOptionsEntries_2.size());
+    EXPECT_EQ(std::string("A"), actualMyOptionsEntries_2.at(0));
+    EXPECT_EQ(std::string("A"), this->sut->getMyOptionsComboBoxSelectedEntry());
+    EXPECT_FALSE(this->sut->getIsMyOptionsComboBoxVisible());
   }
 }
 

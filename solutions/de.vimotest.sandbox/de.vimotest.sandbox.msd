@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="de.vimotest.sandbox" uuid="2980a7d4-8976-4973-92f1-1d4ee8626c70" moduleVersion="1">
+<solution name="de.vimotest.sandbox" uuid="2980a7d4-8976-4973-92f1-1d4ee8626c70" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot path="${module}/models" />

@@ -15,13 +15,25 @@ class TextBoxes_ViewTest {
  }
   
   
-  public My_SingleLine_Scenario_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible (  ) {
+  public SingleLine_TextBox_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible (  ) {
   this.given_empty_context (  );
    this.BuildSut (  );
    this.then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible (  );
  }
   
-  public My_MultiLine_Scenario_given_empty_context_when_then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_ (  ) {
+  public SingleLine_TextBox_disabled_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_not_enabled_and_is_visible (  ) {
+  this.given_empty_context (  );
+   this.BuildSut (  );
+   this.then_MyValue_shows_text_Some_entered_Input_and_is_not_enabled_and_is_visible (  );
+ }
+  
+  public SingleLine_TextBox_invisible_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_not_visible (  ) {
+  this.given_empty_context (  );
+   this.BuildSut (  );
+   this.then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_not_visible (  );
+ }
+  
+  public MultiLine_TextBox_given_empty_context_when_then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_ (  ) {
   this.given_empty_context (  );
    this.BuildSut (  );
    this.then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_ (  );
@@ -48,6 +60,18 @@ class TextBoxes_ViewTest {
   AssertEqual ( "Some entered Input", this.sut.getMyValueTextBoxText (  ) );
    AssertTrue ( this.sut.getIsMyValueTextBoxEnabled (  ) );
    AssertTrue ( this.sut.getIsMyValueTextBoxVisible (  ) );
+ }
+  
+  public then_MyValue_shows_text_Some_entered_Input_and_is_not_enabled_and_is_visible (  ) {
+  AssertEqual ( "Some entered Input", this.sut.getMyValueTextBoxText (  ) );
+   AssertFalse ( this.sut.getIsMyValueTextBoxEnabled (  ) );
+   AssertTrue ( this.sut.getIsMyValueTextBoxVisible (  ) );
+ }
+  
+  public then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_not_visible (  ) {
+  AssertEqual ( "Some entered Input", this.sut.getMyValueTextBoxText (  ) );
+   AssertTrue ( this.sut.getIsMyValueTextBoxEnabled (  ) );
+   AssertFalse ( this.sut.getIsMyValueTextBoxVisible (  ) );
  }
   
   public then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_ (  ) {

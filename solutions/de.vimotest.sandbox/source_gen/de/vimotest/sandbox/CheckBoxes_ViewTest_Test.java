@@ -22,6 +22,16 @@ public class CheckBoxes_ViewTest_Test {
     this.then_MyFlagTriState_is_checked();
     this.then_MyFlagTriState_is_not_checked();
   }
+  @Test
+  public void test_CheckBox_disabled_given_when_then_MyFlagWithLabel_is_checked_and_is_not_enabled_and_shows_text_value_() throws Exception {
+    this.BuildSut();
+    this.then_MyFlagWithLabel_is_checked_and_is_not_enabled_and_shows_text_value_();
+  }
+  @Test
+  public void test_CheckBox_invisible_given_when_then_MyFlagWithLabel_is_checked_and_is_not_visible_and_shows_text_test_() throws Exception {
+    this.BuildSut();
+    this.then_MyFlagWithLabel_is_checked_and_is_not_visible_and_shows_text_test_();
+  }
   @BeforeEach
   public void setUp() {
     this.testSetup = new CheckBoxes_ViewTestSetupImpl();
@@ -59,5 +69,15 @@ public class CheckBoxes_ViewTest_Test {
   }
   public void then_MyFlagTriState_is_not_checked() {
     Assert.assertFalse(this.sut.getIsMyFlagTriStateCheckBoxChecked());
+  }
+  public void then_MyFlagWithLabel_is_checked_and_is_not_enabled_and_shows_text_value_() {
+    Assert.assertTrue(this.sut.getIsMyFlagWithLabelCheckBoxChecked());
+    Assert.assertFalse(this.sut.getIsMyFlagWithLabelCheckBoxEnabled());
+    Assert.assertEquals("value", this.sut.getMyFlagWithLabelCheckBoxText());
+  }
+  public void then_MyFlagWithLabel_is_checked_and_is_not_visible_and_shows_text_test_() {
+    Assert.assertTrue(this.sut.getIsMyFlagWithLabelCheckBoxChecked());
+    Assert.assertFalse(this.sut.getIsMyFlagWithLabelCheckBoxVisible());
+    Assert.assertEquals("test", this.sut.getMyFlagWithLabelCheckBoxText());
   }
 }

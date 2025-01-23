@@ -22,6 +22,16 @@ class ComboBoxes_ViewTest {
    this.then_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_ (  );
  }
   
+  public ComboBox_disabled_given_when_then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled (  ) {
+  this.BuildSut (  );
+   this.then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled (  );
+ }
+  
+  public ComboBox_invisible_given_when_then_MyOptions_has_1_entries_and_selected_A_and_is_not_visible (  ) {
+  this.BuildSut (  );
+   this.then_MyOptions_has_1_entries_and_selected_A_and_is_not_visible (  );
+ }
+  
   
   protected BuildSut (  ) {
   this.sut = this.testSetup.BuildSut (  );
@@ -57,5 +67,21 @@ class ComboBoxes_ViewTest {
    AssertEqual ( "E2", actualMyOptionsWithFreeTextEntries[ 2 ] ?? "" );
    AssertEqual ( null, this.sut.getMyOptionsWithFreeTextComboBoxSelectedEntry (  ) );
    AssertEqual ( "My Free Text", this.sut.getMyOptionsWithFreeTextComboBoxText (  ) );
+ }
+  
+  public then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled (  ) {
+  let actualMyOptionsEntries_1: String [] = this.sut.getMyOptionsComboBoxEntries (  );
+   AssertEqual ( 1, actualMyOptionsEntries_1->size (  ) );
+   AssertEqual ( "A", actualMyOptionsEntries_1[ 1 ] ?? "" );
+   AssertEqual ( "A", this.sut.getMyOptionsComboBoxSelectedEntry (  ) );
+   AssertFalse ( this.sut.getIsMyOptionsComboBoxEnabled (  ) );
+ }
+  
+  public then_MyOptions_has_1_entries_and_selected_A_and_is_not_visible (  ) {
+  let actualMyOptionsEntries_2: String [] = this.sut.getMyOptionsComboBoxEntries (  );
+   AssertEqual ( 1, actualMyOptionsEntries_2->size (  ) );
+   AssertEqual ( "A", actualMyOptionsEntries_2[ 1 ] ?? "" );
+   AssertEqual ( "A", this.sut.getMyOptionsComboBoxSelectedEntry (  ) );
+   AssertFalse ( this.sut.getIsMyOptionsComboBoxVisible (  ) );
  }
 }

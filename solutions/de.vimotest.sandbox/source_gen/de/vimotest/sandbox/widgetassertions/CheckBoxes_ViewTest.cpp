@@ -21,6 +21,8 @@ namespace widgetassertions
     virtual void then_MyFlagTriState_is_mixed() ;
     virtual void then_MyFlagTriState_is_checked() ;
     virtual void then_MyFlagTriState_is_not_checked() ;
+    virtual void then_MyFlagWithLabel_is_checked_and_is_not_enabled_and_shows_text_value_() ;
+    virtual void then_MyFlagWithLabel_is_checked_and_is_not_visible_and_shows_text_test_() ;
     protected:
     void SetUp() override ;
   };
@@ -38,6 +40,16 @@ namespace widgetassertions
     this->then_MyFlagTriState_is_mixed();
     this->then_MyFlagTriState_is_checked();
     this->then_MyFlagTriState_is_not_checked();
+  }
+  TEST_F(CheckBoxes_ViewTest,  CheckBox_disabled_given_when_then_MyFlagWithLabel_is_checked_and_is_not_enabled_and_shows_text_value_) 
+  {
+    this->BuildSut();
+    this->then_MyFlagWithLabel_is_checked_and_is_not_enabled_and_shows_text_value_();
+  }
+  TEST_F(CheckBoxes_ViewTest,  CheckBox_invisible_given_when_then_MyFlagWithLabel_is_checked_and_is_not_visible_and_shows_text_test_) 
+  {
+    this->BuildSut();
+    this->then_MyFlagWithLabel_is_checked_and_is_not_visible_and_shows_text_test_();
   }
   void CheckBoxes_ViewTest::BuildSut( ) 
   {
@@ -69,6 +81,18 @@ namespace widgetassertions
   void CheckBoxes_ViewTest::then_MyFlagTriState_is_not_checked( ) 
   {
     EXPECT_FALSE(this->sut->getIsMyFlagTriStateCheckBoxChecked().value());
+  }
+  void CheckBoxes_ViewTest::then_MyFlagWithLabel_is_checked_and_is_not_enabled_and_shows_text_value_( ) 
+  {
+    EXPECT_TRUE(this->sut->getIsMyFlagWithLabelCheckBoxChecked());
+    EXPECT_FALSE(this->sut->getIsMyFlagWithLabelCheckBoxEnabled());
+    EXPECT_EQ(std::string("value"), this->sut->getMyFlagWithLabelCheckBoxText());
+  }
+  void CheckBoxes_ViewTest::then_MyFlagWithLabel_is_checked_and_is_not_visible_and_shows_text_test_( ) 
+  {
+    EXPECT_TRUE(this->sut->getIsMyFlagWithLabelCheckBoxChecked());
+    EXPECT_FALSE(this->sut->getIsMyFlagWithLabelCheckBoxVisible());
+    EXPECT_EQ(std::string("test"), this->sut->getMyFlagWithLabelCheckBoxText());
   }
 }
 

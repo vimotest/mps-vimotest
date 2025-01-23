@@ -18,6 +18,8 @@ namespace widgetassertions
     virtual void given_empty_context() ;
     virtual void given_empty_context_1() ;
     virtual void then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible() ;
+    virtual void then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible() ;
+    virtual void then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible() ;
     virtual void then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_() ;
     virtual void then_WithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_() ;
     virtual void then_WithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_() ;
@@ -35,6 +37,18 @@ namespace widgetassertions
     this->given_empty_context();
     this->BuildSut();
     this->then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible();
+  }
+  TEST_F(Labels_ViewTest,  Single_Line_Label_Disabled_given_empty_context_when_then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible) 
+  {
+    this->given_empty_context();
+    this->BuildSut();
+    this->then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible();
+  }
+  TEST_F(Labels_ViewTest,  Single_Line_Label_Invisible_given_empty_context_when_then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible) 
+  {
+    this->given_empty_context();
+    this->BuildSut();
+    this->then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible();
   }
   TEST_F(Labels_ViewTest,  Multi_Line_Label_given_empty_context_when_then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_) 
   {
@@ -76,6 +90,18 @@ namespace widgetassertions
     EXPECT_EQ(std::string("My Expectation Text"), this->sut->getTestLabelText());
     EXPECT_TRUE(this->sut->getIsTestLabelEnabled());
     EXPECT_TRUE(this->sut->getIsTestLabelVisible());
+  }
+  void Labels_ViewTest::then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible( ) 
+  {
+    EXPECT_EQ(std::string("My Expectation Text"), this->sut->getTestLabelText());
+    EXPECT_FALSE(this->sut->getIsTestLabelEnabled());
+    EXPECT_TRUE(this->sut->getIsTestLabelVisible());
+  }
+  void Labels_ViewTest::then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible( ) 
+  {
+    EXPECT_EQ(std::string("My Expectation Text"), this->sut->getTestLabelText());
+    EXPECT_TRUE(this->sut->getIsTestLabelEnabled());
+    EXPECT_FALSE(this->sut->getIsTestLabelVisible());
   }
   void Labels_ViewTest::then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_( ) 
   {

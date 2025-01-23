@@ -585,6 +585,48 @@
         </node>
       </node>
     </node>
+    <node concept="3LKzX3" id="5EP_M$dMvY3" role="30n1Qb">
+      <property role="TrG5h" value="CheckBox (disabled)" />
+      <node concept="1s$VFG" id="5EP_M$dMvY6" role="1s$QAY">
+        <node concept="DUd2R" id="5EP_M$dMvY9" role="1s$QAX">
+          <node concept="30nzp_" id="5EP_M$dMvYb" role="DUiSb">
+            <ref role="30nzpS" node="6vtOLtwdT_M" resolve="MyFlagWithLabel" />
+            <node concept="C4Fn6" id="5EP_M$dMvYc" role="30nDbQ">
+              <node concept="35STPD" id="5EP_M$dMvYd" role="C4Fn7">
+                <property role="35S$ZG" value="1EVo$X00Gbt/TRUE" />
+              </node>
+              <node concept="35STUl" id="5EP_M$dMvYe" role="C4Fn7" />
+              <node concept="V3Zdv" id="5EP_M$dMvYm" role="C4Fn7">
+                <node concept="o7Kjd" id="5EP_M$dMvYn" role="oSbKM">
+                  <property role="o7K7r" value="value" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="5EP_M$dMvYf" role="30n1Qb">
+      <property role="TrG5h" value="CheckBox (invisible)" />
+      <node concept="1s$VFG" id="5EP_M$dMvYg" role="1s$QAY">
+        <node concept="DUd2R" id="5EP_M$dMvYh" role="1s$QAX">
+          <node concept="30nzp_" id="5EP_M$dMvYi" role="DUiSb">
+            <ref role="30nzpS" node="6vtOLtwdT_M" resolve="MyFlagWithLabel" />
+            <node concept="C4Fn6" id="5EP_M$dMvYj" role="30nDbQ">
+              <node concept="35STPD" id="5EP_M$dMvYk" role="C4Fn7">
+                <property role="35S$ZG" value="1EVo$X00Gbt/TRUE" />
+              </node>
+              <node concept="35STUn" id="5EP_M$dMvYo" role="C4Fn7" />
+              <node concept="V3Zdv" id="5EP_M$dMvYp" role="C4Fn7">
+                <node concept="o7Kjd" id="5EP_M$dMvYq" role="oSbKM">
+                  <property role="o7K7r" value="test" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1u6Luu" id="2YeT3IB8PiW">
     <property role="TrG5h" value="Sandbox Images" />
@@ -1372,6 +1414,58 @@
         </node>
       </node>
     </node>
+    <node concept="3LKzX3" id="6GOLoDXmWG5" role="30n1Qb">
+      <property role="TrG5h" value="Single Line Label (Disabled)" />
+      <node concept="1IbZgy" id="6GOLoDXmWG6" role="DUd2K">
+        <property role="1IbZgB" value="some" />
+        <node concept="30l7Wy" id="6GOLoDXmWG7" role="DUiTU" />
+      </node>
+      <node concept="1s$VFG" id="6GOLoDXmWG8" role="1s$QAY">
+        <node concept="DUd2R" id="6GOLoDXmWG9" role="1s$QAX">
+          <node concept="30nzp_" id="6GOLoDXmWGa" role="DUiSb">
+            <ref role="30nzpS" node="4w9z1ta2qal" resolve="Test" />
+            <node concept="V3Zc6" id="6GOLoDXmWGb" role="30nDbQ">
+              <node concept="V3Zdv" id="6GOLoDXmWGc" role="V3Zc7">
+                <property role="3egigc" value="My Expectation Text" />
+                <node concept="o7Kjd" id="6GOLoDXmWGd" role="oSbKM">
+                  <property role="o7K7r" value="My Expectation Text" />
+                </node>
+              </node>
+              <node concept="35STUl" id="6GOLoDXmWGe" role="V3Zc7" />
+              <node concept="35STUn" id="6GOLoDXmWGf" role="V3Zc7">
+                <property role="3XJem9" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="6GOLoDXmWGg" role="30n1Qb">
+      <property role="TrG5h" value="Single Line Label (Invisible)" />
+      <node concept="1IbZgy" id="6GOLoDXmWGh" role="DUd2K">
+        <property role="1IbZgB" value="some" />
+        <node concept="30l7Wy" id="6GOLoDXmWGi" role="DUiTU" />
+      </node>
+      <node concept="1s$VFG" id="6GOLoDXmWGj" role="1s$QAY">
+        <node concept="DUd2R" id="6GOLoDXmWGk" role="1s$QAX">
+          <node concept="30nzp_" id="6GOLoDXmWGl" role="DUiSb">
+            <ref role="30nzpS" node="4w9z1ta2qal" resolve="Test" />
+            <node concept="V3Zc6" id="6GOLoDXmWGm" role="30nDbQ">
+              <node concept="V3Zdv" id="6GOLoDXmWGn" role="V3Zc7">
+                <property role="3egigc" value="My Expectation Text" />
+                <node concept="o7Kjd" id="6GOLoDXmWGo" role="oSbKM">
+                  <property role="o7K7r" value="My Expectation Text" />
+                </node>
+              </node>
+              <node concept="35STUl" id="6GOLoDXmWGp" role="V3Zc7">
+                <property role="3XJMQh" value="true" />
+              </node>
+              <node concept="35STUn" id="6GOLoDXmWGq" role="V3Zc7" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3LKzX3" id="6RKU0s0$Ixv" role="30n1Qb">
       <property role="TrG5h" value="Multi Line Label" />
       <node concept="1IbZgy" id="6RKU0s0$Ixw" role="DUd2K">
@@ -1557,6 +1651,48 @@
                   <property role="o7K7r" value="My Free Text" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="5EP_M$eDFcq" role="30n1Qb">
+      <property role="TrG5h" value="ComboBox (disabled)" />
+      <node concept="1s$VFG" id="5EP_M$eDFct" role="1s$QAY">
+        <node concept="DUd2R" id="5EP_M$eDFcw" role="1s$QAX">
+          <node concept="30nzp_" id="5EP_M$eDFcy" role="DUiSb">
+            <ref role="30nzpS" node="4w9z1ta2$11" resolve="MyOptions" />
+            <node concept="7cNBp" id="5EP_M$eDFcz" role="30nDbQ">
+              <node concept="7cN$v" id="5EP_M$eDFc$" role="7cNBo">
+                <node concept="2gaR_a" id="5EP_M$eDFcA" role="LTUL5">
+                  <property role="TrG5h" value="A" />
+                </node>
+              </node>
+              <node concept="7cN$h" id="5EP_M$eDFc_" role="7cNBo">
+                <ref role="1B0EOZ" node="5EP_M$eDFcA" resolve="A" />
+              </node>
+              <node concept="35STUl" id="5EP_M$eDFcB" role="7cNBo" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="5EP_M$eDFcC" role="30n1Qb">
+      <property role="TrG5h" value="ComboBox (invisible)" />
+      <node concept="1s$VFG" id="5EP_M$eDFcD" role="1s$QAY">
+        <node concept="DUd2R" id="5EP_M$eDFcE" role="1s$QAX">
+          <node concept="30nzp_" id="5EP_M$eDFcF" role="DUiSb">
+            <ref role="30nzpS" node="4w9z1ta2$11" resolve="MyOptions" />
+            <node concept="7cNBp" id="5EP_M$eDFcG" role="30nDbQ">
+              <node concept="7cN$v" id="5EP_M$eDFcH" role="7cNBo">
+                <node concept="2gaR_a" id="5EP_M$eDFcI" role="LTUL5">
+                  <property role="TrG5h" value="A" />
+                </node>
+              </node>
+              <node concept="7cN$h" id="5EP_M$eDFcJ" role="7cNBo">
+                <ref role="1B0EOZ" node="5EP_M$eDFcI" resolve="A" />
+              </node>
+              <node concept="35STUn" id="5EP_M$eDFcM" role="7cNBo" />
             </node>
           </node>
         </node>
@@ -2841,7 +2977,7 @@
     <property role="3GE5qa" value="widgetassertions" />
     <ref role="30n1PB" node="2exRXkpRk2R" resolve="TextBoxes_View" />
     <node concept="3LKzX3" id="2exRXkpRoQf" role="30n1Qb">
-      <property role="TrG5h" value="My SingleLine Scenario" />
+      <property role="TrG5h" value="SingleLine TextBox" />
       <node concept="1IbZgy" id="2exRXkpRoQm" role="DUd2K">
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="2exRXkpRoQn" role="DUiTU" />
@@ -2868,8 +3004,60 @@
         </node>
       </node>
     </node>
+    <node concept="3LKzX3" id="6GOLoDXmWGr" role="30n1Qb">
+      <property role="TrG5h" value="SingleLine TextBox (disabled)" />
+      <node concept="1IbZgy" id="6GOLoDXmWGs" role="DUd2K">
+        <property role="1IbZgB" value="some" />
+        <node concept="30l7Wy" id="6GOLoDXmWGt" role="DUiTU" />
+      </node>
+      <node concept="1s$VFG" id="6GOLoDXmWGu" role="1s$QAY">
+        <node concept="DUd2R" id="6GOLoDXmWGv" role="1s$QAX">
+          <node concept="30nzp_" id="6GOLoDXmWGw" role="DUiSb">
+            <ref role="30nzpS" node="2exRXkpRtDe" resolve="MyValue" />
+            <node concept="UtuKh" id="6GOLoDXmWGx" role="30nDbQ">
+              <node concept="V3Zdv" id="6GOLoDXmWGy" role="UtuKg">
+                <property role="3egigc" value="Some entered Input" />
+                <node concept="o7Kjd" id="6GOLoDXmWGz" role="oSbKM">
+                  <property role="o7K7r" value="Some entered Input" />
+                </node>
+              </node>
+              <node concept="35STUl" id="6GOLoDXmWG$" role="UtuKg" />
+              <node concept="35STUn" id="6GOLoDXmWG_" role="UtuKg">
+                <property role="3XJem9" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="6GOLoDXmWGA" role="30n1Qb">
+      <property role="TrG5h" value="SingleLine TextBox (invisible)" />
+      <node concept="1IbZgy" id="6GOLoDXmWGB" role="DUd2K">
+        <property role="1IbZgB" value="some" />
+        <node concept="30l7Wy" id="6GOLoDXmWGC" role="DUiTU" />
+      </node>
+      <node concept="1s$VFG" id="6GOLoDXmWGD" role="1s$QAY">
+        <node concept="DUd2R" id="6GOLoDXmWGE" role="1s$QAX">
+          <node concept="30nzp_" id="6GOLoDXmWGF" role="DUiSb">
+            <ref role="30nzpS" node="2exRXkpRtDe" resolve="MyValue" />
+            <node concept="UtuKh" id="6GOLoDXmWGG" role="30nDbQ">
+              <node concept="V3Zdv" id="6GOLoDXmWGH" role="UtuKg">
+                <property role="3egigc" value="Some entered Input" />
+                <node concept="o7Kjd" id="6GOLoDXmWGI" role="oSbKM">
+                  <property role="o7K7r" value="Some entered Input" />
+                </node>
+              </node>
+              <node concept="35STUl" id="6GOLoDXmWGJ" role="UtuKg">
+                <property role="3XJMQh" value="true" />
+              </node>
+              <node concept="35STUn" id="6GOLoDXmWGK" role="UtuKg" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3LKzX3" id="3c$pnH1kzuG" role="30n1Qb">
-      <property role="TrG5h" value="My MultiLine Scenario" />
+      <property role="TrG5h" value="MultiLine TextBox" />
       <node concept="1IbZgy" id="3c$pnH1kzuH" role="DUd2K">
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="3c$pnH1kzuI" role="DUiTU" />
@@ -3070,6 +3258,58 @@
               <node concept="V3Zdv" id="5oh1xNFBPTL" role="2X2XOb">
                 <property role="3egigc" value="Test" />
                 <node concept="o7Kjd" id="6RKU0s0Mwuq" role="oSbKM">
+                  <property role="o7K7r" value="Test" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="6GOLoDXmWFJ" role="30n1Qb">
+      <property role="TrG5h" value="My Scenario" />
+      <node concept="1IbZgy" id="6GOLoDXmWFK" role="DUd2K">
+        <property role="1IbZgB" value="some" />
+        <node concept="30l7Wy" id="6GOLoDXmWFL" role="DUiTU" />
+      </node>
+      <node concept="1s$VFG" id="6GOLoDXmWFM" role="1s$QAY">
+        <node concept="DUd2R" id="6GOLoDXmWFN" role="1s$QAX">
+          <node concept="30nzp_" id="6GOLoDXmWFO" role="DUiSb">
+            <ref role="30nzpS" node="5oh1xNFyt$V" resolve="Ok" />
+            <node concept="2X2XOa" id="6GOLoDXmWFP" role="30nDbQ">
+              <node concept="35STUl" id="6GOLoDXmWFQ" role="2X2XOb" />
+              <node concept="35STUn" id="6GOLoDXmWFR" role="2X2XOb">
+                <property role="3XJem9" value="true" />
+              </node>
+              <node concept="V3Zdv" id="6GOLoDXmWFS" role="2X2XOb">
+                <property role="3egigc" value="Test" />
+                <node concept="o7Kjd" id="6GOLoDXmWFT" role="oSbKM">
+                  <property role="o7K7r" value="Test" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="6GOLoDXmWFU" role="30n1Qb">
+      <property role="TrG5h" value="My Scenario" />
+      <node concept="1IbZgy" id="6GOLoDXmWFV" role="DUd2K">
+        <property role="1IbZgB" value="some" />
+        <node concept="30l7Wy" id="6GOLoDXmWFW" role="DUiTU" />
+      </node>
+      <node concept="1s$VFG" id="6GOLoDXmWFX" role="1s$QAY">
+        <node concept="DUd2R" id="6GOLoDXmWFY" role="1s$QAX">
+          <node concept="30nzp_" id="6GOLoDXmWFZ" role="DUiSb">
+            <ref role="30nzpS" node="5oh1xNFyt$V" resolve="Ok" />
+            <node concept="2X2XOa" id="6GOLoDXmWG0" role="30nDbQ">
+              <node concept="35STUl" id="6GOLoDXmWG1" role="2X2XOb">
+                <property role="3XJMQh" value="true" />
+              </node>
+              <node concept="35STUn" id="6GOLoDXmWG2" role="2X2XOb" />
+              <node concept="V3Zdv" id="6GOLoDXmWG3" role="2X2XOb">
+                <property role="3egigc" value="Test" />
+                <node concept="o7Kjd" id="6GOLoDXmWG4" role="oSbKM">
                   <property role="o7K7r" value="Test" />
                 </node>
               </node>
@@ -4581,6 +4821,38 @@
               <node concept="7cN$h" id="7NXUkdR4k5P" role="992RT">
                 <ref role="1B0EOZ" node="7NXUkdSh__p" resolve="OptionC" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="5EP_M$eDFc8" role="30n1Qb">
+      <property role="TrG5h" value="RadioButton (disabled)" />
+      <node concept="1s$VFG" id="5EP_M$eDFc9" role="1s$QAY">
+        <node concept="DUd2R" id="5EP_M$eDFca" role="1s$QAX">
+          <node concept="30nzp_" id="5EP_M$eDFcb" role="DUiSb">
+            <ref role="30nzpS" node="7NXUkdQpVLK" resolve="MyChoices" />
+            <node concept="992RU" id="5EP_M$eDFcc" role="30nDbQ">
+              <node concept="7cN$h" id="5EP_M$eDFcd" role="992RT">
+                <ref role="1B0EOZ" node="7NXUkdSh__p" resolve="OptionC" />
+              </node>
+              <node concept="35STUl" id="5EP_M$eDFce" role="992RT" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="5EP_M$eDFcf" role="30n1Qb">
+      <property role="TrG5h" value="RadioButton (invisible)" />
+      <node concept="1s$VFG" id="5EP_M$eDFcg" role="1s$QAY">
+        <node concept="DUd2R" id="5EP_M$eDFch" role="1s$QAX">
+          <node concept="30nzp_" id="5EP_M$eDFci" role="DUiSb">
+            <ref role="30nzpS" node="7NXUkdQpVLK" resolve="MyChoices" />
+            <node concept="992RU" id="5EP_M$eDFcj" role="30nDbQ">
+              <node concept="7cN$h" id="5EP_M$eDFck" role="992RT">
+                <ref role="1B0EOZ" node="7NXUkdSh__p" resolve="OptionC" />
+              </node>
+              <node concept="35STUn" id="5EP_M$eDFcm" role="992RT" />
             </node>
           </node>
         </node>

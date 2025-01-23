@@ -804,6 +804,11 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJt" resolve="jetbrains.mps.ide.platform" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5EP_M$g9LFE" role="3bR37C">
+          <node concept="3bR9La" id="5EP_M$g9LFF" role="1SiIV1">
+            <ref role="3bR37D" node="220dcIkyAiQ" resolve="de.vimotest.types" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="220dcIkyGuM" role="3989C9">

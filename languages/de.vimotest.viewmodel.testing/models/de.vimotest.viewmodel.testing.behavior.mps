@@ -30,9 +30,9 @@
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" />
     <import index="ao3" ref="7124e466-fc92-4803-a656-d7a6b7eb3910/java:jetbrains.mps.text(MPS.TextGen/)" />
     <import index="dgt9" ref="r:a46eceb8-d68d-4f8d-a755-6da4c2f592cc(de.vimotest.types.editor)" />
+    <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
@@ -1929,9 +1929,17 @@
                     <ref role="3cqZAo" to="5ueo:~StyleAttributes.BACKGROUND_COLOR" resolve="BACKGROUND_COLOR" />
                     <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
                   </node>
-                  <node concept="10M0yZ" id="5oh1xNFzACe" role="37wK5m">
-                    <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                  <node concept="2YIFZM" id="5EP_M$fTgo7" role="37wK5m">
+                    <ref role="37wK5l" to="dgt9:1DHLMcW_Ij" resolve="getLightGrayColorByTheme" />
+                    <ref role="1Pybhc" to="dgt9:5QSnpBWlEt3" resolve="ViMoTestStyleColorHelper" />
+                    <node concept="2OqwBi" id="5EP_M$fThff" role="37wK5m">
+                      <node concept="37vLTw" id="5EP_M$fTgKP" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5oh1xNFsBJ5" resolve="buttonEditorCell" />
+                      </node>
+                      <node concept="liA8E" id="5EP_M$fThpl" role="2OqNvi">
+                        <ref role="37wK5l" to="f4zo:~EditorCell.getContext()" resolve="getContext" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -1952,13 +1960,44 @@
                     <ref role="3cqZAo" to="5ueo:~StyleAttributes.TEXT_COLOR" resolve="TEXT_COLOR" />
                     <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
                   </node>
-                  <node concept="2YIFZM" id="5oh1xNFAELd" role="37wK5m">
-                    <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                    <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                    <node concept="Xl_RD" id="5oh1xNFAELe" role="37wK5m">
+                  <node concept="2YIFZM" id="5EP_M$fTcRZ" role="37wK5m">
+                    <ref role="37wK5l" to="dgt9:5rqC7JBZX5S" resolve="getColorByTheme" />
+                    <ref role="1Pybhc" to="dgt9:5QSnpBWlEt3" resolve="ViMoTestStyleColorHelper" />
+                    <node concept="2OqwBi" id="5EP_M$fTd8D" role="37wK5m">
+                      <node concept="37vLTw" id="5EP_M$fTd01" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5oh1xNFsBJ5" resolve="buttonEditorCell" />
+                      </node>
+                      <node concept="liA8E" id="5EP_M$fTdml" role="2OqNvi">
+                        <ref role="37wK5l" to="f4zo:~EditorCell.getContext()" resolve="getContext" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="5EP_M$fTdtw" role="37wK5m">
                       <property role="Xl_RC" value="#F8F8F8" />
                     </node>
+                    <node concept="Xl_RD" id="5EP_M$fTeG$" role="37wK5m">
+                      <property role="Xl_RC" value="#020202" />
+                    </node>
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5EP_M$fZqVB" role="3cqZAp">
+              <node concept="2OqwBi" id="5EP_M$fZqVC" role="3clFbG">
+                <node concept="2OqwBi" id="5EP_M$fZqVD" role="2Oq$k0">
+                  <node concept="37vLTw" id="5EP_M$fZqVE" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5oh1xNFsBJ5" resolve="buttonEditorCell" />
+                  </node>
+                  <node concept="liA8E" id="5EP_M$fZqVF" role="2OqNvi">
+                    <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="5EP_M$fZqVG" role="2OqNvi">
+                  <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
+                  <node concept="10M0yZ" id="5EP_M$fZqVH" role="37wK5m">
+                    <ref role="3cqZAo" to="5ueo:~StyleAttributes.DRAW_BORDER" resolve="DRAW_BORDER" />
+                    <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
+                  </node>
+                  <node concept="3clFbT" id="5EP_M$fZqVI" role="37wK5m" />
                 </node>
               </node>
             </node>
@@ -2723,26 +2762,11 @@
       <node concept="3clFbS" id="2_MKLxJoJZr" role="3clF47">
         <node concept="3clFbJ" id="6NwBQMyFC6e" role="3cqZAp">
           <node concept="3clFbS" id="6NwBQMyFC6g" role="3clFbx">
-            <node concept="3clFbF" id="6NwBQMyDkTK" role="3cqZAp">
-              <node concept="2OqwBi" id="6NwBQMyDkTL" role="3clFbG">
-                <node concept="2OqwBi" id="6NwBQMyDkTM" role="2Oq$k0">
-                  <node concept="37vLTw" id="6NwBQMyDkTN" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2_MKLxJoJZs" resolve="labelEditorCell" />
-                  </node>
-                  <node concept="liA8E" id="6NwBQMyDkTO" role="2OqNvi">
-                    <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="6NwBQMyDkTP" role="2OqNvi">
-                  <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
-                  <node concept="10M0yZ" id="6NwBQMyDlhv" role="37wK5m">
-                    <ref role="3cqZAo" to="5ueo:~StyleAttributes.TEXT_COLOR" resolve="TEXT_COLOR" />
-                    <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
-                  </node>
-                  <node concept="10M0yZ" id="6NwBQMyDu21" role="37wK5m">
-                    <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                  </node>
+            <node concept="3clFbF" id="5EP_M$fGO1i" role="3cqZAp">
+              <node concept="BsUDl" id="5EP_M$fGO1j" role="3clFbG">
+                <ref role="37wK5l" node="5EP_M$fGG$f" resolve="setCommonInvisibleTextColor" />
+                <node concept="37vLTw" id="5EP_M$fGO1k" role="37wK5m">
+                  <ref role="3cqZAo" node="2_MKLxJoJZs" resolve="labelEditorCell" />
                 </node>
               </node>
             </node>
@@ -2772,26 +2796,11 @@
       <node concept="3clFbS" id="2exRXkpRUwn" role="3clF47">
         <node concept="3clFbJ" id="2exRXkpRVCH" role="3cqZAp">
           <node concept="3clFbS" id="2exRXkpRVCI" role="3clFbx">
-            <node concept="3clFbF" id="2exRXkpRVCJ" role="3cqZAp">
-              <node concept="2OqwBi" id="2exRXkpRVCK" role="3clFbG">
-                <node concept="2OqwBi" id="2exRXkpRVCL" role="2Oq$k0">
-                  <node concept="37vLTw" id="2exRXkpRVCM" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2exRXkpRUwo" resolve="textBoxEditorCell" />
-                  </node>
-                  <node concept="liA8E" id="2exRXkpRVCN" role="2OqNvi">
-                    <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="2exRXkpRVCO" role="2OqNvi">
-                  <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
-                  <node concept="10M0yZ" id="2exRXkpRVCP" role="37wK5m">
-                    <ref role="3cqZAo" to="5ueo:~StyleAttributes.TEXT_COLOR" resolve="TEXT_COLOR" />
-                    <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
-                  </node>
-                  <node concept="10M0yZ" id="2exRXkpRVCQ" role="37wK5m">
-                    <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                  </node>
+            <node concept="3clFbF" id="5EP_M$fGNcr" role="3cqZAp">
+              <node concept="BsUDl" id="5EP_M$fGNcs" role="3clFbG">
+                <ref role="37wK5l" node="5EP_M$fGG$f" resolve="setCommonInvisibleTextColor" />
+                <node concept="37vLTw" id="5EP_M$fGNct" role="37wK5m">
+                  <ref role="3cqZAo" node="2exRXkpRUwo" resolve="textBoxEditorCell" />
                 </node>
               </node>
             </node>
@@ -2821,26 +2830,11 @@
       <node concept="3clFbS" id="5oh1xNFs$sj" role="3clF47">
         <node concept="3clFbJ" id="5oh1xNF$ROb" role="3cqZAp">
           <node concept="3clFbS" id="5oh1xNF$ROc" role="3clFbx">
-            <node concept="3clFbF" id="5oh1xNF$ROd" role="3cqZAp">
-              <node concept="2OqwBi" id="5oh1xNF$ROe" role="3clFbG">
-                <node concept="2OqwBi" id="5oh1xNF$ROf" role="2Oq$k0">
-                  <node concept="37vLTw" id="5oh1xNF$ROg" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5oh1xNFs$sk" resolve="buttonEditorCell" />
-                  </node>
-                  <node concept="liA8E" id="5oh1xNF$ROh" role="2OqNvi">
-                    <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="5oh1xNF$ROi" role="2OqNvi">
-                  <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
-                  <node concept="10M0yZ" id="5oh1xNF$ROj" role="37wK5m">
-                    <ref role="3cqZAo" to="5ueo:~StyleAttributes.TEXT_COLOR" resolve="TEXT_COLOR" />
-                    <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
-                  </node>
-                  <node concept="10M0yZ" id="5oh1xNF$ROk" role="37wK5m">
-                    <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                  </node>
+            <node concept="3clFbF" id="5EP_M$fGMFp" role="3cqZAp">
+              <node concept="BsUDl" id="5EP_M$fGMFq" role="3clFbG">
+                <ref role="37wK5l" node="5EP_M$fGG$f" resolve="setCommonInvisibleTextColor" />
+                <node concept="37vLTw" id="5EP_M$fGMFr" role="37wK5m">
+                  <ref role="3cqZAo" node="5oh1xNFs$sk" resolve="buttonEditorCell" />
                 </node>
               </node>
             </node>
@@ -2860,11 +2854,22 @@
                     <ref role="3cqZAo" to="5ueo:~StyleAttributes.BACKGROUND_COLOR" resolve="BACKGROUND_COLOR" />
                     <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
                   </node>
-                  <node concept="2YIFZM" id="5oh1xNFy4kt" role="37wK5m">
-                    <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                    <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                    <node concept="Xl_RD" id="5oh1xNFy4ku" role="37wK5m">
+                  <node concept="2YIFZM" id="5EP_M$fGOK$" role="37wK5m">
+                    <ref role="37wK5l" to="dgt9:5rqC7JBZX5S" resolve="getColorByTheme" />
+                    <ref role="1Pybhc" to="dgt9:5QSnpBWlEt3" resolve="ViMoTestStyleColorHelper" />
+                    <node concept="2OqwBi" id="5EP_M$fGPFk" role="37wK5m">
+                      <node concept="37vLTw" id="5EP_M$fGPh_" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5oh1xNFs$sk" resolve="buttonEditorCell" />
+                      </node>
+                      <node concept="liA8E" id="5EP_M$fGPOA" role="2OqNvi">
+                        <ref role="37wK5l" to="f4zo:~EditorCell.getContext()" resolve="getContext" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="5EP_M$fGQqr" role="37wK5m">
                       <property role="Xl_RC" value="#F0F0F0" />
+                    </node>
+                    <node concept="Xl_RD" id="5EP_M$fGRPO" role="37wK5m">
+                      <property role="Xl_RC" value="#0F0F0F" />
                     </node>
                   </node>
                 </node>
@@ -3282,26 +3287,11 @@
                       </node>
                       <node concept="9aQIb" id="7NXUkdQ9j_0" role="9aQIa">
                         <node concept="3clFbS" id="7NXUkdQ9j_1" role="9aQI4">
-                          <node concept="3clFbF" id="7NXUkdQ9oFO" role="3cqZAp">
-                            <node concept="2OqwBi" id="7NXUkdQ9oFP" role="3clFbG">
-                              <node concept="2OqwBi" id="7NXUkdQ9oFQ" role="2Oq$k0">
-                                <node concept="2GrUjf" id="7NXUkdQ9pkI" role="2Oq$k0">
-                                  <ref role="2Gs0qQ" node="7NXUkdQ99El" resolve="leafCell" />
-                                </node>
-                                <node concept="liA8E" id="7NXUkdQ9oFS" role="2OqNvi">
-                                  <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="7NXUkdQ9oFT" role="2OqNvi">
-                                <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
-                                <node concept="10M0yZ" id="7NXUkdQ9oFU" role="37wK5m">
-                                  <ref role="3cqZAo" to="5ueo:~StyleAttributes.TEXT_COLOR" resolve="TEXT_COLOR" />
-                                  <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
-                                </node>
-                                <node concept="10M0yZ" id="7NXUkdQ9oFV" role="37wK5m">
-                                  <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                                </node>
+                          <node concept="3clFbF" id="5EP_M$fGKVf" role="3cqZAp">
+                            <node concept="BsUDl" id="5EP_M$fGKVg" role="3clFbG">
+                              <ref role="37wK5l" node="5EP_M$fGG$f" resolve="setCommonInvisibleTextColor" />
+                              <node concept="2GrUjf" id="5EP_M$fGLLW" role="37wK5m">
+                                <ref role="2Gs0qQ" node="7NXUkdQ99El" resolve="leafCell" />
                               </node>
                             </node>
                           </node>
@@ -3354,53 +3344,23 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="5ZbqeTHyMnS" role="3cqZAp">
-              <node concept="2OqwBi" id="5ZbqeTHyMnT" role="3clFbG">
-                <node concept="2OqwBi" id="5ZbqeTHyMnU" role="2Oq$k0">
-                  <node concept="37vLTw" id="5ZbqeTHyMnV" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5ZbqeTHyPIY" resolve="comboBoxCell" />
-                  </node>
-                  <node concept="liA8E" id="5ZbqeTHyMnW" role="2OqNvi">
-                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getStyle()" resolve="getStyle" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="5ZbqeTHyMnX" role="2OqNvi">
-                  <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
-                  <node concept="10M0yZ" id="5ZbqeTHyMnY" role="37wK5m">
-                    <ref role="3cqZAo" to="5ueo:~StyleAttributes.TEXT_COLOR" resolve="TEXT_COLOR" />
-                    <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
-                  </node>
-                  <node concept="10M0yZ" id="5ZbqeTHyMnZ" role="37wK5m">
-                    <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                  </node>
+            <node concept="3clFbF" id="5EP_M$fGK0x" role="3cqZAp">
+              <node concept="BsUDl" id="5EP_M$fGK0v" role="3clFbG">
+                <ref role="37wK5l" node="5EP_M$fGG$f" resolve="setCommonInvisibleTextColor" />
+                <node concept="37vLTw" id="5EP_M$fGK6V" role="37wK5m">
+                  <ref role="3cqZAo" node="5ZbqeTHyPIY" resolve="comboBoxCell" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="5ZbqeTHyQZ7" role="3cqZAp">
-              <node concept="2OqwBi" id="5ZbqeTH$IB1" role="3clFbG">
-                <node concept="2OqwBi" id="5ZbqeTH$I0Q" role="2Oq$k0">
-                  <node concept="2OqwBi" id="5ZbqeTHySxH" role="2Oq$k0">
-                    <node concept="37vLTw" id="5ZbqeTHyQZ5" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5ZbqeTHyPIY" resolve="comboBoxCell" />
-                    </node>
-                    <node concept="liA8E" id="5ZbqeTH$HQq" role="2OqNvi">
-                      <ref role="37wK5l" to="5xyw:5ZbqeTHz7t_" resolve="getLabelCell" />
-                    </node>
+            <node concept="3clFbF" id="5EP_M$fGKD0" role="3cqZAp">
+              <node concept="BsUDl" id="5EP_M$fGKD1" role="3clFbG">
+                <ref role="37wK5l" node="5EP_M$fGG$f" resolve="setCommonInvisibleTextColor" />
+                <node concept="2OqwBi" id="5EP_M$fGKJE" role="37wK5m">
+                  <node concept="37vLTw" id="5EP_M$fGKJF" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ZbqeTHyPIY" resolve="comboBoxCell" />
                   </node>
-                  <node concept="liA8E" id="5ZbqeTH$Irm" role="2OqNvi">
-                    <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="5ZbqeTH$IUC" role="2OqNvi">
-                  <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
-                  <node concept="10M0yZ" id="5ZbqeTH$IUD" role="37wK5m">
-                    <ref role="3cqZAo" to="5ueo:~StyleAttributes.TEXT_COLOR" resolve="TEXT_COLOR" />
-                    <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
-                  </node>
-                  <node concept="10M0yZ" id="5ZbqeTH$IUE" role="37wK5m">
-                    <ref role="3cqZAo" to="z60i:~Color.lightGray" resolve="lightGray" />
-                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                  <node concept="liA8E" id="5EP_M$fGKJG" role="2OqNvi">
+                    <ref role="37wK5l" to="5xyw:5ZbqeTHz7t_" resolve="getLabelCell" />
                   </node>
                 </node>
               </node>
@@ -3423,6 +3383,50 @@
         </node>
       </node>
       <node concept="3cqZAl" id="44HS8_6jXro" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="5EP_M$fGG$f" role="13h7CS">
+      <property role="TrG5h" value="setCommonInvisibleTextColor" />
+      <node concept="37vLTG" id="5EP_M$fGIHc" role="3clF46">
+        <property role="TrG5h" value="cell" />
+        <node concept="3uibUv" id="5EP_M$fGIHd" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="5EP_M$fGIEP" role="1B3o_S" />
+      <node concept="3clFbS" id="5EP_M$fGG$i" role="3clF47">
+        <node concept="3clFbF" id="5EP_M$fGIJ1" role="3cqZAp">
+          <node concept="2OqwBi" id="5EP_M$fGIJ2" role="3clFbG">
+            <node concept="2OqwBi" id="5EP_M$fGIJ3" role="2Oq$k0">
+              <node concept="37vLTw" id="5EP_M$fGIJ5" role="2Oq$k0">
+                <ref role="3cqZAo" node="5EP_M$fGIHc" resolve="cell" />
+              </node>
+              <node concept="liA8E" id="5EP_M$fGIJ7" role="2OqNvi">
+                <ref role="37wK5l" to="f4zo:~EditorCell.getStyle()" resolve="getStyle" />
+              </node>
+            </node>
+            <node concept="liA8E" id="5EP_M$fGIJ8" role="2OqNvi">
+              <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object)" resolve="set" />
+              <node concept="10M0yZ" id="5EP_M$fGIJ9" role="37wK5m">
+                <ref role="3cqZAo" to="5ueo:~StyleAttributes.TEXT_COLOR" resolve="TEXT_COLOR" />
+                <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
+              </node>
+              <node concept="2YIFZM" id="5EP_M$fGX7t" role="37wK5m">
+                <ref role="37wK5l" to="dgt9:1DHLMcW_Ij" resolve="getLightGrayColorByTheme" />
+                <ref role="1Pybhc" to="dgt9:5QSnpBWlEt3" resolve="ViMoTestStyleColorHelper" />
+                <node concept="2OqwBi" id="5EP_M$fGY7u" role="37wK5m">
+                  <node concept="37vLTw" id="5EP_M$fGXyD" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5EP_M$fGIHc" resolve="cell" />
+                  </node>
+                  <node concept="liA8E" id="5EP_M$fGZs6" role="2OqNvi">
+                    <ref role="37wK5l" to="f4zo:~EditorCell.getContext()" resolve="getContext" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="5EP_M$fGIFE" role="3clF45" />
     </node>
     <node concept="13i0hz" id="4w9z1ta8OcW" role="13h7CS">
       <property role="TrG5h" value="getThenDescriptionText" />

@@ -24,7 +24,7 @@
     </language>
   </registry>
   <node concept="2VgMpV" id="5hkZeVaMzHS">
-    <property role="TrG5h" value="ViMoTestToJavaGenPlan" />
+    <property role="TrG5h" value="ViMoTestToCppGenPlan" />
     <node concept="NozSJ" id="5jkMFwtj766" role="2VgMA7">
       <ref role="NozSM" to="p78k:5jkMFwtj763" resolve="ViMoTestToAlfiGenPlan" />
     </node>

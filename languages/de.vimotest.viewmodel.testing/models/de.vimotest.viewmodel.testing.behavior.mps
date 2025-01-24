@@ -342,6 +342,9 @@
         <child id="1182506816063" name="smodel" index="1iTxcG" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
+      </concept>
       <concept id="1145572800087" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingsOperation" flags="nn" index="2Ttrtt" />
       <concept id="1145573345940" name="jetbrains.mps.lang.smodel.structure.Node_GetAllSiblingsOperation" flags="nn" index="2TvwIu" />
       <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
@@ -686,6 +689,61 @@
                 <ref role="37wK5l" node="4Pj3bOmvh0Z" resolve="getEffectiveTestSetupName" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="P0m5w1mq03" role="13h7CS">
+      <property role="TrG5h" value="getTestSuitesOfSameViewModel" />
+      <node concept="3Tm1VV" id="P0m5w1mq04" role="1B3o_S" />
+      <node concept="2I9FWS" id="P0m5w1mqx7" role="3clF45">
+        <ref role="2I9WkF" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+      </node>
+      <node concept="3clFbS" id="P0m5w1mq06" role="3clF47">
+        <node concept="3clFbF" id="P0m5w1mv66" role="3cqZAp">
+          <node concept="2OqwBi" id="P0m5w1mwBH" role="3clFbG">
+            <node concept="2OqwBi" id="P0m5w1mv68" role="2Oq$k0">
+              <node concept="2OqwBi" id="P0m5w1mv69" role="2Oq$k0">
+                <node concept="2OqwBi" id="P0m5w1mv6a" role="2Oq$k0">
+                  <node concept="13iPFW" id="P0m5w1mv6b" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="P0m5w1mv6c" role="2OqNvi" />
+                </node>
+                <node concept="2SmgA7" id="P0m5w1mv6d" role="2OqNvi">
+                  <node concept="chp4Y" id="P0m5w1mv6e" role="1dBWTz">
+                    <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3zZkjj" id="P0m5w1mv6f" role="2OqNvi">
+                <node concept="1bVj0M" id="P0m5w1mv6g" role="23t8la">
+                  <node concept="3clFbS" id="P0m5w1mv6h" role="1bW5cS">
+                    <node concept="3clFbF" id="P0m5w1mv6i" role="3cqZAp">
+                      <node concept="3clFbC" id="P0m5w1mv6j" role="3clFbG">
+                        <node concept="2OqwBi" id="P0m5w1mv6k" role="3uHU7w">
+                          <node concept="13iPFW" id="P0m5w1mv6l" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="P0m5w1mv6m" role="2OqNvi">
+                            <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="P0m5w1mv6n" role="3uHU7B">
+                          <node concept="37vLTw" id="P0m5w1mv6o" role="2Oq$k0">
+                            <ref role="3cqZAo" node="P0m5w1mv6q" resolve="it" />
+                          </node>
+                          <node concept="3TrEf2" id="P0m5w1mv6p" role="2OqNvi">
+                            <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="gl6BB" id="P0m5w1mv6q" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="P0m5w1mv6r" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="ANE8D" id="P0m5w1mxIB" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -13649,6 +13707,25 @@
       <node concept="3Tm1VV" id="7T8HsuTy$5r" role="1B3o_S" />
       <node concept="17QB3L" id="7T8HsuTy$5I" role="3clF45" />
       <node concept="3clFbS" id="7T8HsuTy$5t" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="P0m5w1mQC1" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getEffectiveTestAssertionTypeName" />
+      <node concept="3Tm1VV" id="P0m5w1mQC2" role="1B3o_S" />
+      <node concept="17QB3L" id="P0m5w1mQCl" role="3clF45" />
+      <node concept="3clFbS" id="P0m5w1mQC4" role="3clF47">
+        <node concept="3clFbF" id="P0m5w1mQTI" role="3cqZAp">
+          <node concept="2OqwBi" id="P0m5w1mRQ1" role="3clFbG">
+            <node concept="2OqwBi" id="P0m5w1mR4P" role="2Oq$k0">
+              <node concept="13iPFW" id="P0m5w1mQTH" role="2Oq$k0" />
+              <node concept="2yIwOk" id="P0m5w1mRce" role="2OqNvi" />
+            </node>
+            <node concept="liA8E" id="P0m5w1mSf8" role="2OqNvi">
+              <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13hLZK" id="7T8HsuTys$S" role="13h7CW">
       <node concept="3clFbS" id="7T8HsuTys$T" role="2VODD2" />

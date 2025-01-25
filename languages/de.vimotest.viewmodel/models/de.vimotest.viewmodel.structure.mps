@@ -1438,6 +1438,14 @@
       <property role="TrG5h" value="defaultSelectedChoice" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="6mbwwcDcOuj" role="1TKVEl">
+      <property role="IQ2nx" value="7317084969681242003" />
+      <property role="TrG5h" value="isFixedEnumeration" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="6mbwwcDcOuk" role="lGtFl">
+        <property role="t5JxN" value="If true, the RadioButton Choices are transformed to an Enumeration in Programming Languages" />
+      </node>
+    </node>
     <node concept="PrWs8" id="7NXUkdRt6om" role="PzmwI">
       <ref role="PrY4T" node="7NXUkdRspaV" resolve="IProvideChoiceEntries" />
     </node>

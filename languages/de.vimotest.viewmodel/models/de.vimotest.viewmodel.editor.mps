@@ -4840,6 +4840,17 @@
       <node concept="PMmxH" id="7NXUkdQtzhR" role="3EZMnx">
         <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector_EC" />
       </node>
+      <node concept="2yq9I_" id="6mbwwcDcXlZ" role="3EZMnx">
+        <ref role="225u1j" to="at53:6mbwwcDcOuj" resolve="isFixedEnumeration" />
+        <node concept="1563Vb" id="6mbwwcDcXm1" role="1563LE">
+          <property role="1563UK" value="[ ]" />
+          <property role="1563Ve" value="[x]" />
+        </node>
+        <node concept="3F0ifn" id="6mbwwcDcXm2" role="2fqkNU">
+          <property role="3F0ifm" value="is fixed enumeration" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="PKFIW" id="5C8UTa3RE9K">

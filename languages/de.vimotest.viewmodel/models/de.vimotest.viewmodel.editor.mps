@@ -4709,14 +4709,53 @@
       <node concept="3F0ifn" id="7NXUkdPQshE" role="wsdo6">
         <property role="3F0ifm" value="supports choices" />
       </node>
-      <node concept="3F0ifn" id="7NXUkdPQshF" role="1j7Clw">
-        <property role="3F0ifm" value="r" />
-        <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
-        <node concept="Veino" id="7NXUkdPQshG" role="3F10Kt">
-          <property role="Vb096" value="g1_eI4o/darkBlue" />
+      <node concept="3EZMnI" id="3jx7KigJbL" role="1j7Clw">
+        <node concept="2iRfu4" id="3jx7KigJbM" role="2iSdaV" />
+        <node concept="3F0ifn" id="7NXUkdPQshF" role="3EZMnx">
+          <property role="3F0ifm" value="r" />
+          <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
+          <node concept="Veino" id="7NXUkdPQshG" role="3F10Kt">
+            <property role="Vb096" value="g1_eI4o/darkBlue" />
+          </node>
+          <node concept="VechU" id="7NXUkdPQshH" role="3F10Kt">
+            <property role="Vb096" value="hEZAO13/white" />
+          </node>
+          <node concept="pkWqt" id="3jx7KiqMl6" role="pqm2j">
+            <node concept="3clFbS" id="3jx7KiqMl7" role="2VODD2">
+              <node concept="3clFbF" id="3jx7KiqMz$" role="3cqZAp">
+                <node concept="3fqX7Q" id="3jx7KiqNpB" role="3clFbG">
+                  <node concept="2OqwBi" id="3jx7KiqNpD" role="3fr31v">
+                    <node concept="pncrf" id="3jx7KiqNpE" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="3jx7KiqNpF" role="2OqNvi">
+                      <ref role="3TsBF5" to="at53:6mbwwcDcOuj" resolve="isFixedEnumeration" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
-        <node concept="VechU" id="7NXUkdPQshH" role="3F10Kt">
-          <property role="Vb096" value="hEZAO13/white" />
+        <node concept="3F0ifn" id="3jx7KigJbN" role="3EZMnx">
+          <property role="3F0ifm" value="s*" />
+          <ref role="1k5W1q" node="43UPKEZ9RW1" resolve="FeatureIndication" />
+          <node concept="Veino" id="3jx7KigJcZ" role="3F10Kt">
+            <property role="Vb096" value="g1_eI4o/darkBlue" />
+          </node>
+          <node concept="VechU" id="3jx7KigJd0" role="3F10Kt">
+            <property role="Vb096" value="hEZAO13/white" />
+          </node>
+          <node concept="pkWqt" id="3jx7KigJbQ" role="pqm2j">
+            <node concept="3clFbS" id="3jx7KigJbR" role="2VODD2">
+              <node concept="3clFbF" id="3jx7KigJbS" role="3cqZAp">
+                <node concept="2OqwBi" id="3jx7KigJbT" role="3clFbG">
+                  <node concept="pncrf" id="3jx7KigJbU" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="3jx7KigJbV" role="2OqNvi">
+                    <ref role="3TsBF5" to="at53:6mbwwcDcOuj" resolve="isFixedEnumeration" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

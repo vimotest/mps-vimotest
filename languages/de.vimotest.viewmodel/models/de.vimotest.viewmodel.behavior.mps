@@ -9481,6 +9481,38 @@
       </node>
       <node concept="17QB3L" id="1mmsj6yLMqo" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="3jx7Ki45At" role="13h7CS">
+      <property role="TrG5h" value="isCustomTypeNameSupported" />
+      <ref role="13i0hy" node="5jkMFw_KLIp" resolve="isCustomTypeNameSupported" />
+      <node concept="3Tm1VV" id="3jx7Ki45Au" role="1B3o_S" />
+      <node concept="3clFbS" id="3jx7Ki45Az" role="3clF47">
+        <node concept="3clFbF" id="3jx7Ki4qyF" role="3cqZAp">
+          <node concept="2OqwBi" id="3jx7Ki4qMs" role="3clFbG">
+            <node concept="13iPFW" id="3jx7Ki4qyA" role="2Oq$k0" />
+            <node concept="3TrcHB" id="3jx7Ki4sF0" role="2OqNvi">
+              <ref role="3TsBF5" to="at53:6mbwwcDcOuj" resolve="isFixedEnumeration" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="3jx7Ki45A$" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="3jx7Ki5Eau" role="13h7CS">
+      <property role="TrG5h" value="isCustomFileNameSupported" />
+      <ref role="13i0hy" node="2N4oO4qvn9C" resolve="isCustomFileNameSupported" />
+      <node concept="3Tm1VV" id="3jx7Ki5Eav" role="1B3o_S" />
+      <node concept="3clFbS" id="3jx7Ki5Ea$" role="3clF47">
+        <node concept="3clFbF" id="3jx7Ki5EvZ" role="3cqZAp">
+          <node concept="2OqwBi" id="3jx7Ki5Ew0" role="3clFbG">
+            <node concept="13iPFW" id="3jx7Ki5Ew1" role="2Oq$k0" />
+            <node concept="3TrcHB" id="3jx7Ki5Ew2" role="2OqNvi">
+              <ref role="3TsBF5" to="at53:6mbwwcDcOuj" resolve="isFixedEnumeration" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="3jx7Ki5Ea_" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="7NXUkdRspnt">
     <property role="3GE5qa" value="widgets.choices" />

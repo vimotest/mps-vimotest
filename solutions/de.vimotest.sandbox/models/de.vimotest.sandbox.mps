@@ -311,6 +311,7 @@
       </concept>
       <concept id="9006611305760146533" name="de.vimotest.viewmodel.structure.RadioButtonChoicesFeature" flags="ng" index="992OA">
         <property id="9006611305760197211" name="defaultSelectedChoice" index="99Qco" />
+        <property id="7317084969681242003" name="isFixedEnumeration" index="1cIcmg" />
         <child id="9006611305760197210" name="defaultEntries" index="99Qcp" />
       </concept>
       <concept id="9006611305760146542" name="de.vimotest.viewmodel.structure.RadioButtonWidget" flags="ng" index="992OH">
@@ -4804,6 +4805,23 @@
         <node concept="C4FCh" id="7NXUkdQpVLP" role="992OL">
           <property role="2VM7R0" value="true" />
         </node>
+      </node>
+      <node concept="992OH" id="3jx7KigIsL" role="103ZUC">
+        <property role="TrG5h" value="FixedEnumeration" />
+        <node concept="3Vw88H" id="3jx7KigIsM" role="992OK" />
+        <node concept="992OA" id="3jx7KigIsO" role="992OG">
+          <property role="99Qco" value="OptionA" />
+          <property role="1cIcmg" value="true" />
+          <node concept="2gaR_a" id="3jx7KigIsQ" role="99Qcp">
+            <property role="TrG5h" value="OptionA" />
+          </node>
+          <node concept="2gaR_a" id="3jx7KigIsY" role="99Qcp">
+            <property role="TrG5h" value="OptionB" />
+          </node>
+        </node>
+        <node concept="7cNxT" id="3jx7KigIsS" role="992ON" />
+        <node concept="C4FCg" id="3jx7KigIsU" role="992OM" />
+        <node concept="C4FCh" id="3jx7KigIsW" role="992OL" />
       </node>
     </node>
   </node>

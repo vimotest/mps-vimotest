@@ -27,4 +27,18 @@ class RadioButton_View {
   public getIsMyChoicesRadioButtonEnabled (  ) : Boolean  {
   return this.isMyChoicesRadioButtonEnabled;
  }
+  
+  private FixedEnumerationRadioButtonName : RadioButton_ViewFixedEnumerationOption [ * ]  ;
+  
+  public getFixedEnumerationRadioButtonName (  ) : RadioButton_ViewFixedEnumerationOption [ * ]  {
+  return this.FixedEnumerationRadioButtonName;
+ }
+  
+  private FixedEnumerationRadioButtonSelectedEntry : String  ;
+  
+  public getFixedEnumerationRadioButtonSelectedEntry (  ) : String  {
+  return this.FixedEnumerationRadioButtonSelectedEntry;
+ }
+  
+  public fixedEnumerationEntrySelected (   in entryName: String  ) {     }
 }

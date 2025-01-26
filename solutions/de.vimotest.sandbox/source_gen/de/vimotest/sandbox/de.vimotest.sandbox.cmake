@@ -181,5 +181,6 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/context/DataPathContext_ViewTestSetupImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_ViewTestSetup.h
   ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_ViewTestSetupImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewFixedEnumerationOption.h
 )
 

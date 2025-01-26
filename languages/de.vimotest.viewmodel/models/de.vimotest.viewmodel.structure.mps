@@ -1452,6 +1452,12 @@
     <node concept="PrWs8" id="7NXUkdS_Kfg" role="PzmwI">
       <ref role="PrY4T" node="7FAtRx$VQ6k" resolve="ICanHaveMultipleValues" />
     </node>
+    <node concept="PrWs8" id="3jx7Ki4576" role="PzmwI">
+      <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+    </node>
+    <node concept="PrWs8" id="3jx7Ki5cdu" role="PzmwI">
+      <ref role="PrY4T" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7NXUkdPQshI">
     <property role="EcuMT" value="9006611305760146542" />

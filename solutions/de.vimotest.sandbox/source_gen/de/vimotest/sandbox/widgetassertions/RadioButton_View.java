@@ -22,4 +22,14 @@ public class RadioButton_View {
   public Boolean getIsMyChoicesRadioButtonEnabled() {
     return this.isMyChoicesRadioButtonEnabled;
   }
+  private List<RadioButton_ViewFixedEnumerationOption> FixedEnumerationRadioButtonName = new LinkedList<>();
+  public List<RadioButton_ViewFixedEnumerationOption> getFixedEnumerationRadioButtonName() {
+    return this.FixedEnumerationRadioButtonName;
+  }
+  private String FixedEnumerationRadioButtonSelectedEntry;
+  public String getFixedEnumerationRadioButtonSelectedEntry() {
+    return this.FixedEnumerationRadioButtonSelectedEntry;
+  }
+  public void fixedEnumerationEntrySelected(String entryName) {
+  }
 }

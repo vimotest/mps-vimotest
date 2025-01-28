@@ -458,15 +458,15 @@
                     <node concept="2Rf3mk" id="5ZbqeTImK84" role="2OqNvi">
                       <node concept="1xMEDy" id="5ZbqeTImK86" role="1xVPHs">
                         <node concept="chp4Y" id="5ZbqeTImKdV" role="ri$Ld">
-                          <ref role="cht4Q" to="at53:44HS8_67HzJ" resolve="ComboBoxEntriesFeature" />
+                          <ref role="cht4Q" to="at53:7NXUkdRspaV" resolve="IProvideChoiceEntries" />
                         </node>
                       </node>
                     </node>
                   </node>
                   <node concept="1uHKPH" id="5ZbqeTIczBk" role="2OqNvi" />
                 </node>
-                <node concept="3Tsc0h" id="5ZbqeTIc$jj" role="2OqNvi">
-                  <ref role="3TtcxE" to="at53:4TXqppWtP_y" resolve="defaultEntries" />
+                <node concept="2qgKlT" id="7wIkOM9CGxg" role="2OqNvi">
+                  <ref role="37wK5l" to="nrs2:7NXUkdRsp$h" resolve="getChoiceEntries" />
                 </node>
               </node>
             </node>

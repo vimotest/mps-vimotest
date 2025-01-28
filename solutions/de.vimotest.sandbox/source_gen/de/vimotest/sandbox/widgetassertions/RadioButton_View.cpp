@@ -27,7 +27,7 @@ namespace widgetassertions
   {
     return this->FixedEnumerationRadioButtonName;
   }
-  std::string RadioButton_View::getFixedEnumerationRadioButtonSelectedEntry( ) 
+  RadioButton_ViewFixedEnumerationOption RadioButton_View::getFixedEnumerationRadioButtonSelectedEntry( ) 
   {
     return this->FixedEnumerationRadioButtonSelectedEntry;
   }

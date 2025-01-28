@@ -15,14 +15,14 @@ namespace widgetassertions
     virtual bool getIsMyChoicesRadioButtonVisible() ;
     virtual bool getIsMyChoicesRadioButtonEnabled() ;
     virtual std::vector<RadioButton_ViewFixedEnumerationOption> getFixedEnumerationRadioButtonName() ;
-    virtual std::string getFixedEnumerationRadioButtonSelectedEntry() ;
+    virtual RadioButton_ViewFixedEnumerationOption getFixedEnumerationRadioButtonSelectedEntry() ;
     private:
     std::vector<std::string> MyChoicesRadioButtonName;
     std::string MyChoicesRadioButtonSelectedEntry;
     bool isMyChoicesRadioButtonVisible;
     bool isMyChoicesRadioButtonEnabled;
     std::vector<RadioButton_ViewFixedEnumerationOption> FixedEnumerationRadioButtonName;
-    std::string FixedEnumerationRadioButtonSelectedEntry;
+    RadioButton_ViewFixedEnumerationOption FixedEnumerationRadioButtonSelectedEntry;
   };
 }
 

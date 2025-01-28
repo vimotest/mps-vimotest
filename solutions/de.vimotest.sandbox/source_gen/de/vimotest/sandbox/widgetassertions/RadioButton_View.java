@@ -26,8 +26,8 @@ public class RadioButton_View {
   public List<RadioButton_ViewFixedEnumerationOption> getFixedEnumerationRadioButtonName() {
     return this.FixedEnumerationRadioButtonName;
   }
-  private String FixedEnumerationRadioButtonSelectedEntry;
-  public String getFixedEnumerationRadioButtonSelectedEntry() {
+  private RadioButton_ViewFixedEnumerationOption FixedEnumerationRadioButtonSelectedEntry;
+  public RadioButton_ViewFixedEnumerationOption getFixedEnumerationRadioButtonSelectedEntry() {
     return this.FixedEnumerationRadioButtonSelectedEntry;
   }
 }

@@ -34,9 +34,9 @@ class SelectEntryCommand_View {
   return this.FixedEnumerationRadioButtonName;
  }
   
-  private FixedEnumerationRadioButtonSelectedEntry : String  ;
+  private FixedEnumerationRadioButtonSelectedEntry : SelectEntryCommand_ViewFixedEnumerationOption  ;
   
-  public getFixedEnumerationRadioButtonSelectedEntry (  ) : String  {
+  public getFixedEnumerationRadioButtonSelectedEntry (  ) : SelectEntryCommand_ViewFixedEnumerationOption  {
   return this.FixedEnumerationRadioButtonSelectedEntry;
  }
   

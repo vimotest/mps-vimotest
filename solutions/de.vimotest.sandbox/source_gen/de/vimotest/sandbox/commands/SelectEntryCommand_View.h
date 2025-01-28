@@ -15,7 +15,7 @@ namespace commands
     virtual std::vector<std::string> getMyOptionsRadioButtonName() ;
     virtual std::string getMyOptionsRadioButtonSelectedEntry() ;
     virtual std::vector<SelectEntryCommand_ViewFixedEnumerationOption> getFixedEnumerationRadioButtonName() ;
-    virtual std::string getFixedEnumerationRadioButtonSelectedEntry() ;
+    virtual SelectEntryCommand_ViewFixedEnumerationOption getFixedEnumerationRadioButtonSelectedEntry() ;
     virtual void myElementsEntrySelected(std::string entryName) ;
     virtual void myOptionsEntrySelected(std::string entryName) ;
     virtual void fixedEnumerationEntrySelected(std::string entryName) ;
@@ -25,7 +25,7 @@ namespace commands
     std::vector<std::string> MyOptionsRadioButtonName;
     std::string MyOptionsRadioButtonSelectedEntry;
     std::vector<SelectEntryCommand_ViewFixedEnumerationOption> FixedEnumerationRadioButtonName;
-    std::string FixedEnumerationRadioButtonSelectedEntry;
+    SelectEntryCommand_ViewFixedEnumerationOption FixedEnumerationRadioButtonSelectedEntry;
   };
 }
 

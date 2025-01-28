@@ -27,7 +27,7 @@ namespace commands
   {
     return this->FixedEnumerationRadioButtonName;
   }
-  std::string SelectEntryCommand_View::getFixedEnumerationRadioButtonSelectedEntry( ) 
+  SelectEntryCommand_ViewFixedEnumerationOption SelectEntryCommand_View::getFixedEnumerationRadioButtonSelectedEntry( ) 
   {
     return this->FixedEnumerationRadioButtonSelectedEntry;
   }

@@ -39,6 +39,4 @@ class RadioButton_View {
   public getFixedEnumerationRadioButtonSelectedEntry (  ) : String  {
   return this.FixedEnumerationRadioButtonSelectedEntry;
  }
-  
-  public fixedEnumerationEntrySelected (   in entryName: String  ) {     }
 }

@@ -4,6 +4,7 @@
 #include "SelectEntryCommand_ViewTestSetup.h"
 #include <string>
 #include "SelectEntryCommand_View.h"
+#include "SelectEntryCommand_ViewFixedEnumerationOption.h"
 #include <vector>
 #include <optional>
 #include "SelectEntryCommand_ViewTestSetupImpl.h"
@@ -18,6 +19,7 @@ namespace commands
     virtual void BuildSut() ;
     virtual void when_select_entry_C_in_MyElements() ;
     virtual void when_select_entry_B_in_MyOptions() ;
+    virtual void when_select_entry_OptionB_in_FixedEnumeration() ;
     virtual void then_MyElements_has_3_entries_and() ;
     protected:
     void SetUp() override ;
@@ -38,6 +40,11 @@ namespace commands
     this->BuildSut();
     this->when_select_entry_B_in_MyOptions();
   }
+  TEST_F(SelectEntryCommand_ViewTests,  Select_Entry_RadioButton_Call_Fixed_Enumeration_given_when_select_entry_OptionB_in_FixedEnumeration_then_) 
+  {
+    this->BuildSut();
+    this->when_select_entry_OptionB_in_FixedEnumeration();
+  }
   void SelectEntryCommand_ViewTests::BuildSut( ) 
   {
     this->sut = this->testSetup->BuildSut();
@@ -49,6 +56,10 @@ namespace commands
   void SelectEntryCommand_ViewTests::when_select_entry_B_in_MyOptions( ) 
   {
     this->sut->myOptionsEntrySelected(std::string("B"));
+  }
+  void SelectEntryCommand_ViewTests::when_select_entry_OptionB_in_FixedEnumeration( ) 
+  {
+    this->sut->fixedEnumerationEntrySelected(commands::SelectEntryCommand_ViewFixedEnumerationOption::OptionB);
   }
   void SelectEntryCommand_ViewTests::then_MyElements_has_3_entries_and( ) 
   {

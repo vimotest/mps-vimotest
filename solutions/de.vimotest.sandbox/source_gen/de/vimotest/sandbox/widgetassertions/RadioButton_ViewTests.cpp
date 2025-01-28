@@ -4,6 +4,7 @@
 #include "RadioButton_ViewTestSetup.h"
 #include <string>
 #include "RadioButton_View.h"
+#include "RadioButton_ViewFixedEnumerationOption.h"
 #include "RadioButton_ViewTestSetupImpl.h"
 
 namespace widgetassertions
@@ -17,6 +18,7 @@ namespace widgetassertions
     virtual void then_MyChoices_selected_OptionC_() ;
     virtual void then_MyChoices_selected_OptionC_and_is_not_enabled() ;
     virtual void then_MyChoices_selected_OptionC_and_is_not_visible() ;
+    virtual void then_FixedEnumeration_selected_OptionB_() ;
     protected:
     void SetUp() override ;
   };
@@ -40,6 +42,11 @@ namespace widgetassertions
     this->BuildSut();
     this->then_MyChoices_selected_OptionC_and_is_not_visible();
   }
+  TEST_F(RadioButton_ViewTests,  RadioButton_Fixed_Enumeration_given_when_then_FixedEnumeration_selected_OptionB_) 
+  {
+    this->BuildSut();
+    this->then_FixedEnumeration_selected_OptionB_();
+  }
   void RadioButton_ViewTests::BuildSut( ) 
   {
     this->sut = this->testSetup->BuildSut();
@@ -57,6 +64,10 @@ namespace widgetassertions
   {
     EXPECT_EQ(std::string("OptionC"), this->sut->getMyChoicesRadioButtonSelectedEntry());
     EXPECT_FALSE(this->sut->getIsMyChoicesRadioButtonVisible());
+  }
+  void RadioButton_ViewTests::then_FixedEnumeration_selected_OptionB_( ) 
+  {
+    EXPECT_EQ(widgetassertions::RadioButton_ViewFixedEnumerationOption::OptionB, this->sut->getFixedEnumerationRadioButtonSelectedEntry());
   }
 }
 

@@ -69,6 +69,7 @@
         <child id="9155943921465570483" name="checks" index="1i$rf" />
       </concept>
       <concept id="4696656866608863640" name="de.vimotest.viewmodel.testing.structure.SelectedEntryCheckValue" flags="ng" index="7cN$h">
+        <property id="9006611305786853230" name="selectedEntryName" index="bzaSH" />
         <reference id="8650007110383850140" name="selectedEntry" index="1B0EOZ" />
       </concept>
       <concept id="4696656866608863638" name="de.vimotest.viewmodel.testing.structure.ComboBoxEntriesCheckValue" flags="ng" index="7cN$v">
@@ -3470,6 +3471,23 @@
         <node concept="C4FCh" id="7NXUkdSh_A5" role="992OL" />
         <node concept="3Vw88H" id="7NXUkdSh_A8" role="992OK" />
       </node>
+      <node concept="992OH" id="7wIkOM9dfhe" role="103ZUC">
+        <property role="TrG5h" value="FixedEnumeration" />
+        <node concept="992OA" id="7wIkOM9dfhf" role="992OG">
+          <property role="99Qco" value="OptionA" />
+          <property role="1cIcmg" value="true" />
+          <node concept="2gaR_a" id="7wIkOM9dfhg" role="99Qcp">
+            <property role="TrG5h" value="OptionA" />
+          </node>
+          <node concept="2gaR_a" id="7wIkOM9dfhh" role="99Qcp">
+            <property role="TrG5h" value="OptionB" />
+          </node>
+        </node>
+        <node concept="7cNxT" id="7wIkOM9dfhi" role="992ON" />
+        <node concept="C4FCg" id="7wIkOM9dfhj" role="992OM" />
+        <node concept="C4FCh" id="7wIkOM9dfhk" role="992OL" />
+        <node concept="3Vw88H" id="7wIkOM9dfhl" role="992OK" />
+      </node>
     </node>
   </node>
   <node concept="30n1Qd" id="5imH8sU7U2Q">
@@ -3513,6 +3531,17 @@
           <node concept="3eaLtv" id="7NXUkdSh_Am" role="DUiS9">
             <property role="2qt_KD" value="B" />
             <ref role="3ucQsQ" node="7NXUkdSh__V" resolve="MyOptions" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="7wIkOM9dfhm" role="30n1Qb">
+      <property role="TrG5h" value="Select Entry RadioButton Call (Fixed Enumeration)" />
+      <node concept="1s$VFG" id="7wIkOM9dfhn" role="1s$QAY">
+        <node concept="DUd5q" id="7wIkOM9dfho" role="1s$QAM">
+          <node concept="3eaLtv" id="7wIkOM9dfhr" role="DUiS9">
+            <property role="2qt_KD" value="OptionB" />
+            <ref role="3ucQsQ" node="7wIkOM9dfhe" resolve="FixedEnumeration" />
           </node>
         </node>
       </node>
@@ -4808,7 +4837,6 @@
       </node>
       <node concept="992OH" id="3jx7KigIsL" role="103ZUC">
         <property role="TrG5h" value="FixedEnumeration" />
-        <node concept="3Vw88H" id="3jx7KigIsM" role="992OK" />
         <node concept="992OA" id="3jx7KigIsO" role="992OG">
           <property role="99Qco" value="OptionA" />
           <property role="1cIcmg" value="true" />
@@ -4871,6 +4899,22 @@
                 <ref role="1B0EOZ" node="7NXUkdSh__p" resolve="OptionC" />
               </node>
               <node concept="35STUn" id="5EP_M$eDFcm" role="992RT" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="7wIkOM9r800" role="30n1Qb">
+      <property role="TrG5h" value="RadioButton (Fixed Enumeration)" />
+      <node concept="1s$VFG" id="7wIkOM9r801" role="1s$QAY">
+        <node concept="DUd2R" id="7wIkOM9r802" role="1s$QAX">
+          <node concept="30nzp_" id="7wIkOM9r808" role="DUiSb">
+            <ref role="30nzpS" node="3jx7KigIsL" resolve="FixedEnumeration" />
+            <node concept="992RU" id="7wIkOM9r809" role="30nDbQ">
+              <node concept="7cN$h" id="7wIkOM9r80a" role="992RT">
+                <property role="bzaSH" value="OptionB" />
+                <ref role="1B0EOZ" node="3jx7KigIsY" resolve="OptionB" />
+              </node>
             </node>
           </node>
         </node>

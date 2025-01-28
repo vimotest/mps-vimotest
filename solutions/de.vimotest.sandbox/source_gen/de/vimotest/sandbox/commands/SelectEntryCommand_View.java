@@ -22,8 +22,18 @@ public class SelectEntryCommand_View {
   public String getMyOptionsRadioButtonSelectedEntry() {
     return this.MyOptionsRadioButtonSelectedEntry;
   }
+  private List<SelectEntryCommand_ViewFixedEnumerationOption> FixedEnumerationRadioButtonName = new LinkedList<>();
+  public List<SelectEntryCommand_ViewFixedEnumerationOption> getFixedEnumerationRadioButtonName() {
+    return this.FixedEnumerationRadioButtonName;
+  }
+  private String FixedEnumerationRadioButtonSelectedEntry;
+  public String getFixedEnumerationRadioButtonSelectedEntry() {
+    return this.FixedEnumerationRadioButtonSelectedEntry;
+  }
   public void myElementsEntrySelected(String entryName) {
   }
   public void myOptionsEntrySelected(String entryName) {
+  }
+  public void fixedEnumerationEntrySelected(String entryName) {
   }
 }

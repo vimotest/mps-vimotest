@@ -31,9 +31,5 @@ namespace widgetassertions
   {
     return this->FixedEnumerationRadioButtonSelectedEntry;
   }
-  void RadioButton_View::fixedEnumerationEntrySelected(std::string entryName ) 
-  {
-    
-  }
 }
 

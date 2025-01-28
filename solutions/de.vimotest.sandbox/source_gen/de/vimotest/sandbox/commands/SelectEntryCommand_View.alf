@@ -28,7 +28,21 @@ class SelectEntryCommand_View {
   return this.MyOptionsRadioButtonSelectedEntry;
  }
   
+  private FixedEnumerationRadioButtonName : SelectEntryCommand_ViewFixedEnumerationOption [ * ]  ;
+  
+  public getFixedEnumerationRadioButtonName (  ) : SelectEntryCommand_ViewFixedEnumerationOption [ * ]  {
+  return this.FixedEnumerationRadioButtonName;
+ }
+  
+  private FixedEnumerationRadioButtonSelectedEntry : String  ;
+  
+  public getFixedEnumerationRadioButtonSelectedEntry (  ) : String  {
+  return this.FixedEnumerationRadioButtonSelectedEntry;
+ }
+  
   public myElementsEntrySelected (   in entryName: String  ) {     }
   
   public myOptionsEntrySelected (   in entryName: String  ) {     }
+  
+  public fixedEnumerationEntrySelected (   in entryName: String  ) {     }
 }

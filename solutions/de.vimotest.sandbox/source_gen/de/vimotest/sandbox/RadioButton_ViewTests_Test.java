@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.widgetassertions.RadioButton_ViewTestSetupImpl;
 import org.junit.Assert;
+import de.vimotest.sandbox.widgetassertions.RadioButton_ViewFixedEnumerationOption;
 
 public class RadioButton_ViewTests_Test {
   private RadioButton_View sut;
@@ -26,6 +27,11 @@ public class RadioButton_ViewTests_Test {
   public void test_RadioButton_invisible_given_when_then_MyChoices_selected_OptionC_and_is_not_visible() throws Exception {
     this.BuildSut();
     this.then_MyChoices_selected_OptionC_and_is_not_visible();
+  }
+  @Test
+  public void test_RadioButton_Fixed_Enumeration_given_when_then_FixedEnumeration_selected_OptionB_() throws Exception {
+    this.BuildSut();
+    this.then_FixedEnumeration_selected_OptionB_();
   }
   @BeforeEach
   public void setUp() {
@@ -55,5 +61,8 @@ public class RadioButton_ViewTests_Test {
   public void then_MyChoices_selected_OptionC_and_is_not_visible() {
     Assert.assertEquals("OptionC", this.sut.getMyChoicesRadioButtonSelectedEntry());
     Assert.assertFalse(this.sut.getIsMyChoicesRadioButtonVisible());
+  }
+  public void then_FixedEnumeration_selected_OptionB_() {
+    Assert.assertEquals(RadioButton_ViewFixedEnumerationOption.OptionB, this.sut.getFixedEnumerationRadioButtonSelectedEntry());
   }
 }

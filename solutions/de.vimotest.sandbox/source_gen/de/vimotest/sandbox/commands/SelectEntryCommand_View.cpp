@@ -2,6 +2,7 @@
 #include "SelectEntryCommand_View.h"
 #include "SelectEntryCommand_View.h"
 #include <vector>
+#include "SelectEntryCommand_ViewFixedEnumerationOption.h"
 #include <string>
 
 namespace commands
@@ -22,11 +23,23 @@ namespace commands
   {
     return this->MyOptionsRadioButtonSelectedEntry;
   }
+  std::vector<SelectEntryCommand_ViewFixedEnumerationOption> SelectEntryCommand_View::getFixedEnumerationRadioButtonName( ) 
+  {
+    return this->FixedEnumerationRadioButtonName;
+  }
+  std::string SelectEntryCommand_View::getFixedEnumerationRadioButtonSelectedEntry( ) 
+  {
+    return this->FixedEnumerationRadioButtonSelectedEntry;
+  }
   void SelectEntryCommand_View::myElementsEntrySelected(std::string entryName ) 
   {
     
   }
   void SelectEntryCommand_View::myOptionsEntrySelected(std::string entryName ) 
+  {
+    
+  }
+  void SelectEntryCommand_View::fixedEnumerationEntrySelected(std::string entryName ) 
   {
     
   }

@@ -8,6 +8,7 @@
 #include "ListViews_ViewMyCheckboxesRow.h"
 #include "ListViews_ViewMyStringRowHandlesRow.h"
 #include "ListViews_ViewMyListWithMultiRowSelectionRow.h"
+#include "ListViews_ViewMyButtonsRow.h"
 #include <string>
 
 namespace widgetassertions
@@ -31,6 +32,8 @@ namespace widgetassertions
     virtual std::string getMyStringRowHandlesListSelectedRow() ;
     virtual std::vector<std::shared_ptr<ListViews_ViewMyListWithMultiRowSelectionRow>> getMyListWithMultiRowSelectionListRows() ;
     virtual std::vector<int> getMyListWithMultiRowSelectionListSelectedRows() ;
+    virtual std::vector<std::shared_ptr<ListViews_ViewMyButtonsRow>> getMyButtonsListRows() ;
+    virtual void buttonsClicked(int rowIndex) ;
     private:
     bool isMyListOfLabelListVisible;
     bool isMyListOfLabelListEnabled;
@@ -48,6 +51,7 @@ namespace widgetassertions
     std::string MyStringRowHandlesListSelectedRow;
     std::vector<std::shared_ptr<ListViews_ViewMyListWithMultiRowSelectionRow>> MyListWithMultiRowSelectionListRows;
     std::vector<int> MyListWithMultiRowSelectionListSelectedRows;
+    std::vector<std::shared_ptr<ListViews_ViewMyButtonsRow>> MyButtonsListRows;
   };
 }
 

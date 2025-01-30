@@ -8,6 +8,7 @@
 #include "ListViews_ViewMyCheckboxesRow.h"
 #include "ListViews_ViewMyStringRowHandlesRow.h"
 #include "ListViews_ViewMyListWithMultiRowSelectionRow.h"
+#include "ListViews_ViewMyButtonsRow.h"
 #include <string>
 
 namespace widgetassertions
@@ -75,6 +76,14 @@ namespace widgetassertions
   std::vector<int> ListViews_View::getMyListWithMultiRowSelectionListSelectedRows( ) 
   {
     return this->MyListWithMultiRowSelectionListSelectedRows;
+  }
+  std::vector<std::shared_ptr<ListViews_ViewMyButtonsRow>> ListViews_View::getMyButtonsListRows( ) 
+  {
+    return this->MyButtonsListRows;
+  }
+  void ListViews_View::buttonsClicked(int rowIndex ) 
+  {
+    
   }
 }
 

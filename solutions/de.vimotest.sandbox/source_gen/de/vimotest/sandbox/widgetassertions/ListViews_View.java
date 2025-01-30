@@ -70,4 +70,10 @@ public class ListViews_View {
   public List<Integer> getMyListWithMultiRowSelectionListSelectedRows() {
     return this.MyListWithMultiRowSelectionListSelectedRows;
   }
+  private List<ListViews_ViewMyButtonsRow> MyButtonsListRows = new LinkedList<>();
+  public List<ListViews_ViewMyButtonsRow> getMyButtonsListRows() {
+    return this.MyButtonsListRows;
+  }
+  public void buttonsClicked(Integer rowIndex) {
+  }
 }

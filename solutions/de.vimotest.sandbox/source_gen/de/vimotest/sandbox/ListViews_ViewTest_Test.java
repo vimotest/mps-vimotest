@@ -14,6 +14,7 @@ import de.vimotest.sandbox.widgetassertions.ListViews_ViewMyListOfImagesRow;
 import de.vimotest.sandbox.widgetassertions.ListViews_ViewMyCheckboxesRow;
 import de.vimotest.sandbox.widgetassertions.ListViews_ViewMyStringRowHandlesRow;
 import de.vimotest.sandbox.widgetassertions.ListViews_ViewMyListWithMultiRowSelectionRow;
+import de.vimotest.sandbox.widgetassertions.ListViews_ViewMyButtonsRow;
 
 public class ListViews_ViewTest_Test {
   private ListViews_View sut;
@@ -39,6 +40,11 @@ public class ListViews_ViewTest_Test {
     this.given_empty_context();
     this.BuildSut();
     this.then_MyListOfLabel_has_4_rows_1();
+  }
+  @Test
+  public void test_List_of_Buttons_given_when_then_MyButtons_has_0_rows() throws Exception {
+    this.BuildSut();
+    this.then_MyButtons_has_0_rows();
   }
   @BeforeEach
   public void setUp() {
@@ -205,5 +211,9 @@ public class ListViews_ViewTest_Test {
     Assert.assertEquals("D", row3.getMyValueLabelText());
     Assert.assertTrue(row3.getIsMyValueLabelVisible());
     // }
+  }
+  public void then_MyButtons_has_0_rows() {
+    List<ListViews_ViewMyButtonsRow> actualRows = this.sut.getMyButtonsListRows();
+    Assert.assertEquals(0, actualRows.size());
   }
 }

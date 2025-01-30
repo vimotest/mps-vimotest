@@ -37,6 +37,11 @@ class ListViews_ViewTest {
    this.then_MyListOfLabel_has_4_rows_1 (  );
  }
   
+  public List_of_Buttons_given_when_then_MyButtons_has_0_rows (  ) {
+  this.BuildSut (  );
+   this.then_MyButtons_has_0_rows (  );
+ }
+  
   
   protected BuildSut (  ) {
   this.sut = this.testSetup.BuildSut (  );
@@ -205,5 +210,10 @@ class ListViews_ViewTest {
    AssertEqual ( "D", row3.getMyValueLabelText (  ) );
    AssertTrue ( row3.getIsMyValueLabelVisible (  ) );
  }
+ }
+  
+  public then_MyButtons_has_0_rows (  ) {
+  let actualRows: ListViews_ViewMyButtonsRow [] = this.sut.getMyButtonsListRows (  );
+   AssertEqual ( 0, actualRows->size (  ) );
  }
 }

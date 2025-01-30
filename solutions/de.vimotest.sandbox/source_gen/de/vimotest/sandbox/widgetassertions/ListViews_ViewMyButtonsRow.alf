@@ -1,0 +1,18 @@
+namespace widgetassertions ;
+
+
+
+class ListViews_ViewMyButtonsRow {
+  
+  private ButtonsButtonText : String  ;
+  
+  public getButtonsButtonText (  ) : String  {
+  return this.ButtonsButtonText;
+ }
+  
+  private RowHandle : String  ;
+  
+  public getRowHandle (  ) : String  {
+  return this.RowHandle;
+ }
+}

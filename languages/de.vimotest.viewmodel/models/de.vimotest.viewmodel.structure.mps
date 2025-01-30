@@ -220,6 +220,14 @@
       <property role="TrG5h" value="inherentSupport" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="zuT2RNpaqc" role="1TKVEl">
+      <property role="IQ2nx" value="639199083141310092" />
+      <property role="TrG5h" value="ignoreInherentSupport" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="zuT2RNpaqd" role="lGtFl">
+        <property role="t5JxN" value="In seldom situations, inherent features might be removed (e.g., text in a static label)" />
+      </node>
+    </node>
     <node concept="PrWs8" id="3F1kzPoMTK5" role="PzmwI">
       <ref role="PrY4T" node="3F1kzPoMMcm" resolve="ICanHaveCustomPropertyName" />
     </node>

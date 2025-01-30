@@ -289,6 +289,7 @@
       </concept>
       <concept id="885291782481719619" name="de.vimotest.viewmodel.structure.ViewWidgetFeature" flags="ng" index="25b05G">
         <property id="5555266676524595291" name="supported" index="2VM7R0" />
+        <property id="639199083141310092" name="ignoreInherentSupport" index="3VI$ax" />
       </concept>
       <concept id="4696656866608863471" name="de.vimotest.viewmodel.structure.ComboBoxEntriesFeature" flags="ng" index="7cNxA">
         <property id="5655792802101418340" name="old_defaultText" index="M2z3M" />
@@ -842,6 +843,23 @@
           <property role="2VM7R0" value="true" />
           <property role="31hZzl" value="red" />
         </node>
+      </node>
+      <node concept="V3ZfZ" id="zuT2RNp9Fc" role="103ZUC">
+        <property role="TrG5h" value="OnlyVisibility" />
+        <node concept="V3Zf6" id="zuT2RNp9Fe" role="V3ZfK">
+          <property role="3VI$ax" value="true" />
+          <node concept="o7Kjd" id="zuT2RNp9Fg" role="o6p68">
+            <property role="o7K7r" value="StaticText" />
+          </node>
+        </node>
+        <node concept="C4FCh" id="zuT2RNp9Fi" role="V3ZfL" />
+        <node concept="C4FCg" id="zuT2RNp9Fk" role="V3ZfM">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="1G_fEc" id="zuT2RNp9Fm" role="1G_fIJ">
+          <node concept="o7Kjd" id="zuT2RNp9Fo" role="1AQzBo" />
+        </node>
+        <node concept="31hZui" id="zuT2RNp9Fq" role="31m0es" />
       </node>
     </node>
   </node>

@@ -46,5 +46,9 @@ namespace widgetassertions
   {
     return this->WithTextColorLabelTextColor;
   }
+  bool Labels_View::getIsOnlyVisibilityLabelVisible( ) 
+  {
+    return this->isOnlyVisibilityLabelVisible;
+  }
 }
 

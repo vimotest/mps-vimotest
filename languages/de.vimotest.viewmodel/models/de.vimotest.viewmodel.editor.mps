@@ -3981,13 +3981,42 @@
     <property role="TrG5h" value="ViewWidgetFeature_Inspector_EC" />
     <property role="3GE5qa" value="widgets" />
     <ref role="1XX52x" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
-    <node concept="3EZMnI" id="1EVo$X00WZ$" role="2wV5jI">
-      <node concept="2iRfu4" id="1EVo$X00WZ_" role="2iSdaV" />
+    <node concept="3EZMnI" id="zuT2RNpaYO" role="2wV5jI">
+      <node concept="l2Vlx" id="zuT2RNpaYP" role="2iSdaV" />
       <node concept="3F0ifn" id="1EVo$X00WZA" role="3EZMnx">
         <property role="3F0ifm" value="inherent support:" />
       </node>
       <node concept="3F0A7n" id="1EVo$X00WZB" role="3EZMnx">
         <ref role="1NtTu8" to="at53:4OohpJQO3Nl" resolve="inherentSupport" />
+        <node concept="xShMh" id="zuT2RNpaYC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VPxyj" id="zuT2RNpaYE" role="3F10Kt" />
+      </node>
+      <node concept="2yq9I_" id="zuT2RNpaYT" role="3EZMnx">
+        <ref role="225u1j" to="at53:zuT2RNpaqc" resolve="ignoreInherentSupport" />
+        <node concept="1563Vb" id="zuT2RNpaYV" role="1563LE">
+          <property role="1563UK" value="[ ]" />
+          <property role="1563Ve" value="[x]" />
+        </node>
+        <node concept="pVoyu" id="zuT2RNpaYW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="zuT2RNpaYX" role="2fqkNU">
+          <property role="3F0ifm" value="ignored inherent support" />
+        </node>
+        <node concept="pkWqt" id="zuT2RNpaYY" role="pqm2j">
+          <node concept="3clFbS" id="zuT2RNpaYZ" role="2VODD2">
+            <node concept="3clFbF" id="zuT2RNpaZY" role="3cqZAp">
+              <node concept="2OqwBi" id="zuT2RNpbpl" role="3clFbG">
+                <node concept="pncrf" id="zuT2RNpaZX" role="2Oq$k0" />
+                <node concept="3TrcHB" id="zuT2RNpbLW" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:zuT2RNpaqc" resolve="ignoreInherentSupport" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

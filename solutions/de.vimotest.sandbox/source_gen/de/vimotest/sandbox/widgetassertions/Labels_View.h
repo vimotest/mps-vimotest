@@ -19,6 +19,7 @@ namespace widgetassertions
     virtual std::vector<std::string> getWithMultiLineToolTipLabelToolTip() ;
     virtual std::string getWithTextColorLabelText() ;
     virtual std::string getWithTextColorLabelTextColor() ;
+    virtual bool getIsOnlyVisibilityLabelVisible() ;
     private:
     std::string TestLabelText;
     bool isTestLabelEnabled;
@@ -30,6 +31,7 @@ namespace widgetassertions
     std::vector<std::string> WithMultiLineToolTipLabelToolTip;
     std::string WithTextColorLabelText;
     std::string WithTextColorLabelTextColor;
+    bool isOnlyVisibilityLabelVisible;
   };
 }
 

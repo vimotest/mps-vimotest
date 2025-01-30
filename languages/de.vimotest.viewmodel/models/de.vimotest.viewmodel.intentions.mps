@@ -92,6 +92,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -1162,6 +1165,59 @@
             <node concept="2Sf5sV" id="2N4oO4q_oDS" role="2Oq$k0" />
             <node concept="2qgKlT" id="2N4oO4q_pbz" role="2OqNvi">
               <ref role="37wK5l" to="nrs2:2N4oO4qvn9C" resolve="isCustomFileNameSupported" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="zuT2RNpc1J">
+    <property role="3GE5qa" value="widgets" />
+    <property role="TrG5h" value="IgnoreInherentFeatureSupport" />
+    <ref role="2ZfgGC" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
+    <node concept="2S6ZIM" id="zuT2RNpc1K" role="2ZfVej">
+      <node concept="3clFbS" id="zuT2RNpc1L" role="2VODD2">
+        <node concept="3clFbF" id="zuT2RNpetv" role="3cqZAp">
+          <node concept="Xl_RD" id="zuT2RNpetu" role="3clFbG">
+            <property role="Xl_RC" value="Ignore Inherent Feature Support" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="zuT2RNpc1M" role="2ZfgGD">
+      <node concept="3clFbS" id="zuT2RNpc1N" role="2VODD2">
+        <node concept="3clFbF" id="zuT2RNpjx1" role="3cqZAp">
+          <node concept="37vLTI" id="zuT2RNpm9m" role="3clFbG">
+            <node concept="3clFbT" id="zuT2RNpma4" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="zuT2RNpjx3" role="37vLTJ">
+              <node concept="2Sf5sV" id="zuT2RNpjx4" role="2Oq$k0" />
+              <node concept="3TrcHB" id="zuT2RNpjx5" role="2OqNvi">
+                <ref role="3TsBF5" to="at53:zuT2RNpaqc" resolve="ignoreInherentSupport" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="zuT2RNpeZo" role="2ZfVeh">
+      <node concept="3clFbS" id="zuT2RNpeZp" role="2VODD2">
+        <node concept="3clFbF" id="zuT2RNpfdo" role="3cqZAp">
+          <node concept="1Wc70l" id="zuT2RNpihx" role="3clFbG">
+            <node concept="3fqX7Q" id="zuT2RNpjvK" role="3uHU7B">
+              <node concept="2OqwBi" id="zuT2RNpjvL" role="3fr31v">
+                <node concept="2Sf5sV" id="zuT2RNpjvM" role="2Oq$k0" />
+                <node concept="3TrcHB" id="zuT2RNpjvN" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:zuT2RNpaqc" resolve="ignoreInherentSupport" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="zuT2RNpjvO" role="3uHU7w">
+              <node concept="2Sf5sV" id="zuT2RNpjvP" role="2Oq$k0" />
+              <node concept="3TrcHB" id="zuT2RNpjvQ" role="2OqNvi">
+                <ref role="3TsBF5" to="at53:4OohpJQO3Nl" resolve="inherentSupport" />
+              </node>
             </node>
           </node>
         </node>

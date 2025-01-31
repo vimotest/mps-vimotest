@@ -18,7 +18,7 @@ namespace commands
     virtual SelectEntryCommand_ViewFixedEnumerationOption getFixedEnumerationRadioButtonSelectedEntry() ;
     virtual void myElementsEntrySelected(std::string entryName) ;
     virtual void myOptionsEntrySelected(std::string entryName) ;
-    virtual void fixedEnumerationEntrySelected(std::string entryName) ;
+    virtual void fixedEnumerationEntrySelected(SelectEntryCommand_ViewFixedEnumerationOption entryName) ;
     private:
     std::vector<std::string> MyElementsComboBoxEntries;
     std::string MyElementsComboBoxSelectedEntry;

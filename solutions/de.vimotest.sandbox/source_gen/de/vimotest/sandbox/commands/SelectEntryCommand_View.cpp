@@ -39,7 +39,7 @@ namespace commands
   {
     
   }
-  void SelectEntryCommand_View::fixedEnumerationEntrySelected(std::string entryName ) 
+  void SelectEntryCommand_View::fixedEnumerationEntrySelected(SelectEntryCommand_ViewFixedEnumerationOption entryName ) 
   {
     
   }

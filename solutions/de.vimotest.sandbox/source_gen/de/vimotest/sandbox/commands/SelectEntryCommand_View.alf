@@ -44,5 +44,5 @@ class SelectEntryCommand_View {
   
   public myOptionsEntrySelected (   in entryName: String  ) {     }
   
-  public fixedEnumerationEntrySelected (   in entryName: String  ) {     }
+  public fixedEnumerationEntrySelected (   in entryName: SelectEntryCommand_ViewFixedEnumerationOption  ) {     }
 }

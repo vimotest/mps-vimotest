@@ -34,6 +34,6 @@ public class SelectEntryCommand_View {
   }
   public void myOptionsEntrySelected(String entryName) {
   }
-  public void fixedEnumerationEntrySelected(String entryName) {
+  public void fixedEnumerationEntrySelected(SelectEntryCommand_ViewFixedEnumerationOption entryName) {
   }
 }

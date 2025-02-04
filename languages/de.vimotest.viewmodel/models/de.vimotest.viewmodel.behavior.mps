@@ -3277,7 +3277,7 @@
           <node concept="3cpWsn" id="7uPLQmZfa2" role="3cpWs9">
             <property role="TrG5h" value="firstColumn" />
             <node concept="3Tqbb2" id="7uPLQmZcAY" role="1tU5fm">
-              <ref role="ehGHo" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+              <ref role="ehGHo" to="at53:7uPLQmTOoE" resolve="ColumnSubComponent" />
             </node>
             <node concept="2OqwBi" id="7uPLQmZfa3" role="33vP2m">
               <node concept="2OqwBi" id="7uPLQmZfa4" role="2Oq$k0">
@@ -4417,7 +4417,7 @@
           <node concept="3cpWsn" id="4Ips5F15WNh" role="3cpWs9">
             <property role="TrG5h" value="firstColumn" />
             <node concept="3Tqbb2" id="4Ips5F15WNi" role="1tU5fm">
-              <ref role="ehGHo" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+              <ref role="ehGHo" to="at53:7uPLQmTOoE" resolve="ColumnSubComponent" />
             </node>
             <node concept="2OqwBi" id="4Ips5F15WNj" role="33vP2m">
               <node concept="2OqwBi" id="4Ips5F15WNk" role="2Oq$k0">
@@ -4685,7 +4685,7 @@
   </node>
   <node concept="13h7C7" id="7N9Xs9XTOpw">
     <property role="3GE5qa" value="widgets.structures.util" />
-    <ref role="13h7C2" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+    <ref role="13h7C2" to="at53:7uPLQmTOoE" resolve="ColumnSubComponent" />
     <node concept="13hLZK" id="7N9Xs9XTOpx" role="13h7CW">
       <node concept="3clFbS" id="7N9Xs9XTOpy" role="2VODD2">
         <node concept="3clFbF" id="7N9Xs9XTTxv" role="3cqZAp">
@@ -4725,7 +4725,7 @@
       <property role="3TUv4t" value="true" />
       <node concept="3Tm6S6" id="4Ia639WslvN" role="1B3o_S" />
       <node concept="2I9FWS" id="2DHgAdq7T4T" role="1tU5fm">
-        <ref role="2I9WkF" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+        <ref role="2I9WkF" to="at53:7uPLQmTOoE" resolve="ColumnSubComponent" />
       </node>
     </node>
     <node concept="312cEg" id="2DHgAdq8md_" role="jymVt">
@@ -4811,7 +4811,7 @@
       <node concept="37vLTG" id="2DHgAdq8ei4" role="3clF46">
         <property role="TrG5h" value="columns" />
         <node concept="2I9FWS" id="2DHgAdq8fMT" role="1tU5fm">
-          <ref role="2I9WkF" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+          <ref role="2I9WkF" to="at53:7uPLQmTOoE" resolve="ColumnSubComponent" />
         </node>
       </node>
       <node concept="37vLTG" id="2DHgAdq8gRN" role="3clF46">
@@ -4882,7 +4882,7 @@
             <property role="TrG5h" value="columnNode" />
             <property role="3TUv4t" value="true" />
             <node concept="3Tqbb2" id="1si8oglRCzq" role="1tU5fm">
-              <ref role="ehGHo" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+              <ref role="ehGHo" to="at53:7uPLQmTOoE" resolve="ColumnSubComponent" />
             </node>
             <node concept="1y4W85" id="1si8oglRCWX" role="33vP2m">
               <node concept="37vLTw" id="1si8oglRCWY" role="1y58nS">
@@ -4914,7 +4914,7 @@
                         <ref role="3cqZAo" node="1si8oglRCWW" resolve="columnNode" />
                       </node>
                       <node concept="355D3s" id="1si8oglRR28" role="37wK5m">
-                        <ref role="355D3t" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+                        <ref role="355D3t" to="at53:7uPLQmTOoE" resolve="ColumnSubComponent" />
                         <ref role="355D3u" to="at53:7uPLQmTPAc" resolve="header" />
                       </node>
                       <node concept="3clFbT" id="1si8oglRR29" role="37wK5m" />
@@ -5201,7 +5201,7 @@
               <node concept="2ShNRf" id="7L_HBKdCyQF" role="1sKFgg">
                 <node concept="2fJWfE" id="7L_HBKdC$f7" role="2ShVmc">
                   <node concept="3Tqbb2" id="7L_HBKdC$f9" role="3zrR0E">
-                    <ref role="ehGHo" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+                    <ref role="ehGHo" to="at53:7uPLQmTOoE" resolve="ColumnSubComponent" />
                   </node>
                 </node>
               </node>
@@ -6136,7 +6136,7 @@
               <node concept="2Xjw5R" id="2w4bAIFLjbY" role="2OqNvi">
                 <node concept="1xMEDy" id="2w4bAIFLjc0" role="1xVPHs">
                   <node concept="chp4Y" id="2w4bAIFLjeu" role="ri$Ld">
-                    <ref role="cht4Q" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+                    <ref role="cht4Q" to="at53:7uPLQmTOoE" resolve="ColumnSubComponent" />
                   </node>
                 </node>
               </node>

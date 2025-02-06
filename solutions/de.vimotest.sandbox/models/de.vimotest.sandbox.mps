@@ -194,6 +194,7 @@
       <concept id="7922086861434398150" name="de.vimotest.viewmodel.testing.structure.ColumnCheckInfo" flags="ng" index="1EpGR1">
         <property id="7922086861434398930" name="ignoreChecksOnColumn" index="1EpG3l" />
         <reference id="7922086861434398929" name="columnDefinition" index="1EpG3m" />
+        <child id="7333321911413943730" name="checkValue" index="2$FTNu" />
       </concept>
       <concept id="7922086861330453140" name="de.vimotest.viewmodel.testing.structure.ToolTipCheckValue" flags="ng" index="1G_fEj">
         <child id="7922086861496919261" name="expectedToolTipText" index="1ACcNq" />
@@ -2543,6 +2544,9 @@
               <node concept="2ayrQO" id="1QIns2dYSIC" role="3UVeCz">
                 <node concept="1EpGR1" id="1QIns2dYSID" role="1EpG3j">
                   <ref role="1EpG3m" node="1QIns2dYSGX" />
+                  <node concept="35STUn" id="6n5cmN1$Dac" role="2$FTNu">
+                    <property role="3XJem9" value="true" />
+                  </node>
                 </node>
               </node>
             </node>

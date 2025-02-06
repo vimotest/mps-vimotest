@@ -151,6 +151,13 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
+        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
+        <child id="1883223317721008709" name="body" index="Jncv$" />
+        <child id="1883223317721008711" name="variable" index="JncvA" />
+        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
+      </concept>
+      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1181949435690" name="jetbrains.mps.lang.smodel.structure.Concept_NewInstance" flags="nn" index="LFhST" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
@@ -409,6 +416,21 @@
             </node>
           </node>
         </node>
+        <node concept="Jncv_" id="6n5cmN1$GT9" role="3cqZAp">
+          <ref role="JncvD" to="53m0:2A_f6m9DK1R" resolve="DynamicFeatureCheck" />
+          <node concept="nLn13" id="6n5cmN1$HaT" role="JncvB" />
+          <node concept="3clFbS" id="6n5cmN1$GTd" role="Jncv$">
+            <node concept="3cpWs6" id="6n5cmN1$I3Y" role="3cqZAp">
+              <node concept="3clFbT" id="6n5cmN1$IlI" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="6n5cmN1$GTf" role="JncvA">
+            <property role="TrG5h" value="dynamicFeatureCheck" />
+            <node concept="2jxLKc" id="6n5cmN1$GTg" role="1tU5fm" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="6k2oWGc63Ib" role="3cqZAp">
           <node concept="3cpWsn" id="6k2oWGc63Ic" role="3cpWs9">
             <property role="TrG5h" value="widgetCheckParentNode" />
@@ -424,8 +446,8 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6k2oWGcaCXx" role="3cqZAp">
-          <node concept="2OqwBi" id="6k2oWGcaD9g" role="3clFbG">
+        <node concept="3cpWs6" id="6n5cmN1$Fwm" role="3cqZAp">
+          <node concept="2OqwBi" id="6k2oWGcaD9g" role="3cqZAk">
             <node concept="37vLTw" id="6k2oWGcaCXv" role="2Oq$k0">
               <ref role="3cqZAo" node="6k2oWGc63Ic" resolve="widgetCheckParentNode" />
             </node>

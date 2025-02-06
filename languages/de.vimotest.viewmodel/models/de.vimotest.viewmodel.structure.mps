@@ -1521,7 +1521,7 @@
   </node>
   <node concept="1TIwiD" id="1QIns2dDkt_">
     <property role="EcuMT" value="2138749954639087461" />
-    <property role="3GE5qa" value="widgets.subcomponents" />
+    <property role="3GE5qa" value="widgets.dynamicfeature" />
     <property role="TrG5h" value="DynamicFeatureScope" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />

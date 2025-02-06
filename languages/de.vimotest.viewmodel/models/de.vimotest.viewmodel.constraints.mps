@@ -393,7 +393,7 @@
   </node>
   <node concept="1M2fIO" id="5GwHzPxlueO">
     <property role="3GE5qa" value="widgets.structures.util" />
-    <ref role="1M2myG" to="at53:7uPLQmTOoE" resolve="ColumnSubComponent" />
+    <ref role="1M2myG" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
     <node concept="EnEH3" id="5GwHzPxlvJM" role="1MhHOB">
       <ref role="EomxK" to="at53:7uPLQmTPAc" resolve="header" />
       <node concept="Eqf_E" id="5GwHzPxlvLr" role="EtsB7">

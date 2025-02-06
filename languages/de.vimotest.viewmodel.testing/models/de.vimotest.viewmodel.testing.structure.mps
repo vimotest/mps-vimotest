@@ -1166,7 +1166,7 @@
     <property role="3GE5qa" value="test.assert._checkvalues" />
     <property role="TrG5h" value="ColumnCheckInfo" />
     <property role="34LRSv" value="column check info" />
-    <ref role="1TJDcQ" node="2A_f6m9DK1R" resolve="DynamicFeatureCheck" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6RKU0s7_yzh" role="1TKVEi">
       <property role="IQ2ns" value="7922086861434398929" />
       <property role="20kJfa" value="columnDefinition" />
@@ -1176,12 +1176,6 @@
       <property role="IQ2nx" value="7922086861434398930" />
       <property role="TrG5h" value="ignoreChecksOnColumn" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyj" id="6n5cmN1qEQM" role="1TKVEi">
-      <property role="IQ2ns" value="7333321911413943730" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="checkValue" />
-      <ref role="20lvS9" node="3CJ09vZN9S0" resolve="VisibilityCheckValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="50C086hrZs_">
@@ -1369,13 +1363,6 @@
     <node concept="PrWs8" id="178awX4Zkx5" role="PzmwI">
       <ref role="PrY4T" node="2Yd1qrJOMZM" resolve="ITestScenarioContext" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="2A_f6m9DK1R">
-    <property role="EcuMT" value="3000871133511090295" />
-    <property role="3GE5qa" value="test.assert.dynamicfeature" />
-    <property role="TrG5h" value="DynamicFeatureCheck" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
   </node>
 </model>
 

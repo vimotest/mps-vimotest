@@ -580,7 +580,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="columnFeature" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7uPLQmTOoE" resolve="ColumnSubComponent" />
+      <ref role="20lvS9" node="7uPLQmTOoE" resolve="ColumnDefinition" />
     </node>
     <node concept="1TJgyj" id="7WgsBLYqF$p" role="1TKVEi">
       <property role="IQ2ns" value="9155943921466652953" />
@@ -631,7 +631,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="columnsFeature" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="7uPLQmTOoE" resolve="ColumnSubComponent" />
+      <ref role="20lvS9" node="7uPLQmTOoE" resolve="ColumnDefinition" />
     </node>
     <node concept="1TJgyj" id="K_fAvR3LCR" role="1TKVEi">
       <property role="IQ2ns" value="875174318840945207" />
@@ -677,19 +677,13 @@
     <property role="3GE5qa" value="widgets.structures.util" />
     <property role="TrG5h" value="ColumnDefinition" />
     <property role="34LRSv" value="column" />
-    <ref role="1TJDcQ" node="1QIns2dDkt_" resolve="DynamicFeatureScope" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7uPLQmTQNN" role="1TKVEi">
       <property role="IQ2ns" value="134781560953466099" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="widgetType" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="F907haLIRF" resolve="ViewWidget" />
-    </node>
-    <node concept="1TJgyj" id="1QIns2dDuyz" role="1TKVEi">
-      <property role="IQ2ns" value="2138749954639128739" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="visibilityFeature" />
-      <ref role="20lvS9" node="4SDJcZBNVBT" resolve="VisibilityFeature" />
     </node>
     <node concept="1TJgyi" id="7uPLQmTPAc" role="1TKVEl">
       <property role="IQ2nx" value="134781560953461132" />
@@ -715,7 +709,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="columnsFeature" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="7uPLQmTOoE" resolve="ColumnSubComponent" />
+      <ref role="20lvS9" node="7uPLQmTOoE" resolve="ColumnDefinition" />
     </node>
     <node concept="1TJgyj" id="24MyZrrRA69" role="1TKVEi">
       <property role="IQ2ns" value="2392128244454154633" />
@@ -1518,13 +1512,6 @@
     <property role="EcuMT" value="9006611305786872507" />
     <property role="3GE5qa" value="widgets.choices" />
     <property role="TrG5h" value="IProvideChoiceEntries" />
-  </node>
-  <node concept="1TIwiD" id="1QIns2dDkt_">
-    <property role="EcuMT" value="2138749954639087461" />
-    <property role="3GE5qa" value="widgets.dynamicfeature" />
-    <property role="TrG5h" value="DynamicFeatureScope" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
   </node>
 </model>
 

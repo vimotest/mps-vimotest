@@ -194,7 +194,6 @@
       <concept id="7922086861434398150" name="de.vimotest.viewmodel.testing.structure.ColumnCheckInfo" flags="ng" index="1EpGR1">
         <property id="7922086861434398930" name="ignoreChecksOnColumn" index="1EpG3l" />
         <reference id="7922086861434398929" name="columnDefinition" index="1EpG3m" />
-        <child id="7333321911413943730" name="checkValue" index="2$FTNu" />
       </concept>
       <concept id="7922086861330453140" name="de.vimotest.viewmodel.testing.structure.ToolTipCheckValue" flags="ng" index="1G_fEj">
         <child id="7922086861496919261" name="expectedToolTipText" index="1ACcNq" />
@@ -335,7 +334,6 @@
       </concept>
       <concept id="134781560953456170" name="de.vimotest.viewmodel.structure.ColumnDefinition" flags="ng" index="2nep4R">
         <property id="134781560953461132" name="header" index="2neoUh" />
-        <child id="2138749954639128739" name="visibilityFeature" index="2g2Vlz" />
         <child id="134781560953466099" name="widgetType" index="2nerJI" />
       </concept>
       <concept id="5219625661134590255" name="de.vimotest.viewmodel.structure.SingleOrMultiLineString" flags="ng" index="o7Kjd">
@@ -1253,35 +1251,6 @@
         </node>
         <node concept="C4FCg" id="6fEYrkZdc4g" role="3UVeDW" />
         <node concept="C4FCh" id="6fEYrkZdc4i" role="3UVeDX" />
-      </node>
-      <node concept="3UVeDL" id="1QIns2dYSGW" role="103ZUC">
-        <property role="TrG5h" value="VisibilityColumn" />
-        <node concept="2nep4R" id="1QIns2dYSGX" role="2azj8S">
-          <node concept="V3ZfZ" id="1QIns2dYSH6" role="2nerJI">
-            <property role="TrG5h" value="Header" />
-            <node concept="V3Zf6" id="1QIns2dYSHf" role="V3ZfK">
-              <node concept="o7Kjd" id="1QIns2dYSHo" role="o6p68" />
-            </node>
-            <node concept="C4FCh" id="1QIns2dYSHx" role="V3ZfL" />
-            <node concept="C4FCg" id="1QIns2dYSHE" role="V3ZfM" />
-            <node concept="1G_fEc" id="1QIns2dYSHN" role="1G_fIJ">
-              <node concept="o7Kjd" id="1QIns2dYSHW" role="1AQzBo" />
-            </node>
-            <node concept="31hZui" id="1QIns2dYSI5" role="31m0es" />
-          </node>
-          <node concept="C4FCg" id="1QIns2dYSIr" role="2g2Vlz">
-            <property role="2VM7R0" value="true" />
-          </node>
-        </node>
-        <node concept="3KuuIt" id="1QIns2dYSIf" role="3UVeDY">
-          <node concept="3D8xT1" id="1QIns2dYSIh" role="3D86r8">
-            <property role="34jNyx" value="1RiAxJSewmn/StringRowHandle" />
-          </node>
-          <node concept="3D8CoO" id="1QIns2dYSIj" role="3D86r9" />
-        </node>
-        <node concept="1i$ol" id="1QIns2dYSIl" role="3UVeDZ" />
-        <node concept="C4FCg" id="1QIns2dYSIn" role="3UVeDW" />
-        <node concept="C4FCh" id="1QIns2dYSIp" role="3UVeDX" />
       </node>
     </node>
   </node>
@@ -2527,26 +2496,6 @@
                 </node>
                 <node concept="1EpGR1" id="2$TY9D5Li6O" role="1EpG3j">
                   <ref role="1EpG3m" node="4w9z1ta2HQ9" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3LKzX3" id="1QIns2dYSIu" role="30n1Qb">
-      <property role="TrG5h" value="Column with Visibility" />
-      <node concept="1s$VFG" id="1QIns2dYSIx" role="1s$QAY">
-        <node concept="DUd2R" id="1QIns2dYSI$" role="1s$QAX">
-          <node concept="30nzp_" id="1QIns2dYSIA" role="DUiSb">
-            <ref role="30nzpS" node="1QIns2dYSGW" resolve="VisibilityColumn" />
-            <node concept="3UVeCy" id="1QIns2dYSIB" role="30nDbQ">
-              <node concept="2ayrQO" id="1QIns2dYSIC" role="3UVeCz">
-                <node concept="1EpGR1" id="1QIns2dYSID" role="1EpG3j">
-                  <ref role="1EpG3m" node="1QIns2dYSGX" />
-                  <node concept="35STUn" id="6n5cmN1$Dac" role="2$FTNu">
-                    <property role="3XJem9" value="true" />
-                  </node>
                 </node>
               </node>
             </node>

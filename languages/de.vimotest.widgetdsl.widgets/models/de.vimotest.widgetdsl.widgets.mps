@@ -16,6 +16,9 @@
       </concept>
     </language>
     <language id="9a43c831-bbd9-4521-b233-9f7d6522a85c" name="de.vimotest.widgetdsl">
+      <concept id="3217850698200884480" name="de.vimotest.widgetdsl.structure.WidgetSubComponentDefinition" flags="ng" index="iarWD">
+        <property id="3217850698201595680" name="isMany" index="i96k9" />
+      </concept>
       <concept id="2567579368931204509" name="de.vimotest.widgetdsl.structure.CommandDefinition" flags="ng" index="Ups98">
         <property id="2567579368931224175" name="shortName" index="UprmU" />
       </concept>
@@ -32,6 +35,7 @@
       <concept id="2273207380833615610" name="de.vimotest.widgetdsl.structure.WidgetDefinition" flags="ng" index="2WVz3F">
         <property id="8764372007625948681" name="shortName" index="2SiFfI" />
         <property id="777152910168742153" name="package" index="103t_X" />
+        <child id="3217850698200884479" name="subComponents" index="iarVm" />
         <child id="2567579368931792789" name="commands" index="Urcx0" />
         <child id="2273207380833616349" name="features" index="2WV$Zc" />
       </concept>
@@ -391,6 +395,15 @@
       <ref role="Uq8ev" node="2exRXkpMcaR" resolve="SelectEntry" />
       <ref role="Uq8er" node="44HS8_67EZV" resolve="SelectedEntry" />
       <ref role="Uq8eq" node="1Yc3x6zoTLX" resolve="Enabled" />
+    </node>
+    <node concept="iarWD" id="2MC6y$YympY" role="iarVm">
+      <property role="103t_X" value="widgets" />
+      <property role="TrG5h" value="RadioButtonOption" />
+      <property role="2SiFfI" value="radio button option" />
+      <property role="i96k9" value="true" />
+      <node concept="2WVz4l" id="2MC6y$YyI7q" role="2WV$Zc">
+        <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
+      </node>
     </node>
   </node>
   <node concept="2WVz3E" id="7NXUkdPNB4M">

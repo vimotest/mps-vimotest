@@ -375,12 +375,8 @@
   <node concept="2WVz3F" id="7NXUkdPNASe">
     <property role="103t_X" value="widgets.choices" />
     <property role="3GE5qa" value="widgets" />
-    <property role="TrG5h" value="RadioButton" />
-    <property role="2SiFfI" value="radio button" />
-    <node concept="2WVz4l" id="7NXUkdPNB4K" role="2WV$Zc">
-      <property role="3dRBvX" value="true" />
-      <ref role="2WVz4k" node="7NXUkdPNB4M" resolve="RadioButtonChoices" />
-    </node>
+    <property role="TrG5h" value="RadioButtonGroup" />
+    <property role="2SiFfI" value="radio button group" />
     <node concept="2WVz4l" id="7NXUkdPNB4L" role="2WV$Zc">
       <property role="3dRBvX" value="true" />
       <ref role="2WVz4k" node="44HS8_67EZV" resolve="SelectedEntry" />
@@ -398,9 +394,16 @@
     </node>
     <node concept="iarWD" id="2MC6y$YympY" role="iarVm">
       <property role="103t_X" value="widgets" />
-      <property role="TrG5h" value="RadioButtonOption" />
-      <property role="2SiFfI" value="radio button option" />
+      <property role="TrG5h" value="RadioButton" />
+      <property role="2SiFfI" value="radio button" />
       <property role="i96k9" value="true" />
+      <node concept="2WVz4l" id="12kpBrp1H3T" role="2WV$Zc">
+        <property role="3dRBvX" value="true" />
+        <ref role="2WVz4k" node="7H4Lpx0an3A" resolve="Text" />
+      </node>
+      <node concept="2WVz4l" id="12kpBrp1H3S" role="2WV$Zc">
+        <ref role="2WVz4k" node="1Yc3x6zoTLW" resolve="Visibility" />
+      </node>
       <node concept="2WVz4l" id="2MC6y$YyI7q" role="2WV$Zc">
         <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
       </node>

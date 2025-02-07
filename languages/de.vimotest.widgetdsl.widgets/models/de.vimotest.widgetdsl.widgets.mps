@@ -398,7 +398,6 @@
       <property role="2SiFfI" value="radio button" />
       <property role="i96k9" value="true" />
       <node concept="2WVz4l" id="12kpBrp1H3T" role="2WV$Zc">
-        <property role="3dRBvX" value="true" />
         <ref role="2WVz4k" node="7H4Lpx0an3A" resolve="Text" />
       </node>
       <node concept="2WVz4l" id="12kpBrp1H3S" role="2WV$Zc">
@@ -408,13 +407,6 @@
         <ref role="2WVz4k" node="1Yc3x6zoTLX" resolve="Enabled" />
       </node>
     </node>
-  </node>
-  <node concept="2WVz3E" id="7NXUkdPNB4M">
-    <property role="3GE5qa" value="features" />
-    <property role="TrG5h" value="RadioButtonChoices" />
-    <property role="2WV$r6" value="choices" />
-    <property role="2WVz4g" value="r" />
-    <property role="3yYw5D" value="g1_eI4o/darkBlue" />
   </node>
 </model>
 

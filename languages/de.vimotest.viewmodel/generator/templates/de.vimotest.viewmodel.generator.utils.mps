@@ -1450,7 +1450,7 @@
       </node>
     </node>
     <node concept="2YIFZL" id="3jx7Ki4NEN" role="jymVt">
-      <property role="TrG5h" value="getChoiceEnumName" />
+      <property role="TrG5h" value="getRadioButtonGroupEnumName" />
       <node concept="3clFbS" id="3jx7Ki4NEO" role="3clF47">
         <node concept="3clFbJ" id="3jx7Ki5tXe" role="3cqZAp">
           <node concept="3clFbS" id="3jx7Ki5tXf" role="3clFbx">
@@ -1458,7 +1458,7 @@
               <node concept="2OqwBi" id="3jx7Ki5tXh" role="3cqZAk">
                 <node concept="2OqwBi" id="3jx7Ki5tXi" role="2Oq$k0">
                   <node concept="37vLTw" id="3jx7Ki5tXj" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3jx7Ki4NFq" resolve="choicesFeature" />
+                    <ref role="3cqZAo" node="3jx7Ki4NFq" resolve="node" />
                   </node>
                   <node concept="3CFZ6_" id="3jx7Ki5tXk" role="2OqNvi">
                     <node concept="3CFYIy" id="3jx7Ki5tXl" role="3CFYIz">
@@ -1475,7 +1475,7 @@
           <node concept="2OqwBi" id="3jx7Ki5tXn" role="3clFbw">
             <node concept="2OqwBi" id="3jx7Ki5tXo" role="2Oq$k0">
               <node concept="37vLTw" id="3jx7Ki5tXp" role="2Oq$k0">
-                <ref role="3cqZAo" node="3jx7Ki4NFq" resolve="choicesFeature" />
+                <ref role="3cqZAo" node="3jx7Ki4NFq" resolve="node" />
               </node>
               <node concept="3CFZ6_" id="3jx7Ki5tXq" role="2OqNvi">
                 <node concept="3CFYIy" id="3jx7Ki5tXr" role="3CFYIz">
@@ -1500,7 +1500,7 @@
               </node>
               <node concept="2OqwBi" id="3jx7Ki50kA" role="1m5AlR">
                 <node concept="37vLTw" id="3jx7Ki50kB" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3jx7Ki4NFq" resolve="choicesFeature" />
+                  <ref role="3cqZAo" node="3jx7Ki4NFq" resolve="node" />
                 </node>
                 <node concept="1mfA1w" id="3jx7Ki50kC" role="2OqNvi" />
               </node>
@@ -1549,7 +1549,7 @@
       <node concept="37vLTG" id="3jx7Ki4NFq" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="3jx7Ki4NFr" role="1tU5fm">
-          <ref role="ehGHo" to="at53:7NXUkdPQsh_" resolve="RadioButtonChoicesFeature" />
+          <ref role="ehGHo" to="at53:12kpBrp1H3U" resolve="RadioButtonGroupWidget" />
         </node>
       </node>
     </node>

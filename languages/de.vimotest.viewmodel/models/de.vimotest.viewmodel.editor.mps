@@ -2535,7 +2535,7 @@
   </node>
   <node concept="24kQdi" id="3mckYa_DPbh">
     <property role="3GE5qa" value="widgets.choices" />
-    <ref role="1XX52x" to="at53:3mckYa_DMEC" resolve="ChoiceEntry" />
+    <ref role="1XX52x" to="at53:3mckYa_DMEC" resolve="ComboBoxEntry" />
     <node concept="3EZMnI" id="3mckYa_DRHh" role="2wV5jI">
       <node concept="3F0ifn" id="3mckYa_DRHl" role="3EZMnx">
         <property role="3F0ifm" value="entry" />

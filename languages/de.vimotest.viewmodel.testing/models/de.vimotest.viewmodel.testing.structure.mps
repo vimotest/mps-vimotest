@@ -856,7 +856,7 @@
     <node concept="1TJgyj" id="7waZUcv25as" role="1TKVEi">
       <property role="IQ2ns" value="8650007110383850140" />
       <property role="20kJfa" value="selectedEntry" />
-      <ref role="20lvS9" to="at53:3mckYa_DMEC" resolve="ChoiceEntry" />
+      <ref role="20lvS9" to="at53:1Ukm5RfrSRo" resolve="IChoiceEntry" />
     </node>
     <node concept="1TJgyi" id="7NXUkdRsktI" role="1TKVEl">
       <property role="IQ2nx" value="9006611305786853230" />

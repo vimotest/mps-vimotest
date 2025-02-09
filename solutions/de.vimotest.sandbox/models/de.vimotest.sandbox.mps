@@ -153,6 +153,9 @@
       <concept id="4192570430936882688" name="de.vimotest.viewmodel.testing.structure.VisibilityCheckValue" flags="ng" index="35STUn">
         <property id="6835274084472266777" name="expectedIsVisible" index="3XJem9" />
       </concept>
+      <concept id="1194692461793300812" name="de.vimotest.viewmodel.testing.structure.RadioButtonGroupCheck" flags="ng" index="39$FsU">
+        <child id="1194692461793300813" name="checks" index="39$FsV" />
+      </concept>
       <concept id="8996304390297115759" name="de.vimotest.viewmodel.testing.structure.FillTextCommandAction" flags="ng" index="3eaLt2">
         <property id="8996304390298037956" name="text" index="3fQinD" />
       </concept>
@@ -4810,44 +4813,6 @@
     <property role="TrG5h" value="RadioButton_View" />
     <node concept="103ZXx" id="7NXUkdQpV_c" role="103ZXC" />
     <node concept="103ZXB" id="7NXUkdQpV_e" role="103ZXF">
-      <node concept="992OH" id="7NXUkdQpVLK" role="103ZUC">
-        <property role="TrG5h" value="MyChoices" />
-        <node concept="992OA" id="7NXUkdQpVLL" role="992OG">
-          <property role="99Qco" value="OptionB" />
-          <node concept="2gaR_a" id="7NXUkdSh__n" role="99Qcp">
-            <property role="TrG5h" value="OptionA" />
-          </node>
-          <node concept="2gaR_a" id="7NXUkdSh__o" role="99Qcp">
-            <property role="TrG5h" value="OptionB" />
-          </node>
-          <node concept="2gaR_a" id="7NXUkdSh__p" role="99Qcp">
-            <property role="TrG5h" value="OptionC" />
-          </node>
-        </node>
-        <node concept="7cNxT" id="7NXUkdQpVLN" role="992ON" />
-        <node concept="C4FCg" id="7NXUkdQpVLO" role="992OM">
-          <property role="2VM7R0" value="true" />
-        </node>
-        <node concept="C4FCh" id="7NXUkdQpVLP" role="992OL">
-          <property role="2VM7R0" value="true" />
-        </node>
-      </node>
-      <node concept="992OH" id="3jx7KigIsL" role="103ZUC">
-        <property role="TrG5h" value="FixedEnumeration" />
-        <node concept="992OA" id="3jx7KigIsO" role="992OG">
-          <property role="99Qco" value="OptionA" />
-          <property role="1cIcmg" value="true" />
-          <node concept="2gaR_a" id="3jx7KigIsQ" role="99Qcp">
-            <property role="TrG5h" value="OptionA" />
-          </node>
-          <node concept="2gaR_a" id="3jx7KigIsY" role="99Qcp">
-            <property role="TrG5h" value="OptionB" />
-          </node>
-        </node>
-        <node concept="7cNxT" id="3jx7KigIsS" role="992ON" />
-        <node concept="C4FCg" id="3jx7KigIsU" role="992OM" />
-        <node concept="C4FCh" id="3jx7KigIsW" role="992OL" />
-      </node>
       <node concept="39$Fqc" id="3YuUBZ_RxKY" role="103ZUC">
         <property role="TrG5h" value="Options" />
         <node concept="7cNxT" id="3YuUBZ_RxL0" role="39$Fqd" />
@@ -4892,12 +4857,10 @@
       <property role="TrG5h" value="Select Option" />
       <node concept="1s$VFG" id="7NXUkdQR3k9" role="1s$QAY">
         <node concept="DUd2R" id="7NXUkdQR3kc" role="1s$QAX">
-          <node concept="30nzp_" id="7NXUkdR4k5N" role="DUiSb">
-            <ref role="30nzpS" node="7NXUkdQpVLK" resolve="MyChoices" />
-            <node concept="992RU" id="7NXUkdR4k5O" role="30nDbQ">
-              <node concept="7cN$h" id="7NXUkdR4k5P" role="992RT">
-                <ref role="1B0EOZ" node="7NXUkdSh__p" resolve="OptionC" />
-              </node>
+          <node concept="30nzp_" id="7kzHNKBtJus" role="DUiSb">
+            <ref role="30nzpS" node="3YuUBZ_RxKY" resolve="Options" />
+            <node concept="39$FsU" id="7kzHNKBtJut" role="30nDbQ">
+              <node concept="7cN$h" id="7kzHNKBtJuu" role="39$FsV" />
             </node>
           </node>
         </node>

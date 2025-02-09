@@ -822,7 +822,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="defaultEntries" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3mckYa_DMEC" resolve="ChoiceEntry" />
+      <ref role="20lvS9" node="3mckYa_DMEC" resolve="ComboBoxEntry" />
     </node>
     <node concept="1TJgyi" id="4TXqppWtP_$" role="1TKVEl">
       <property role="IQ2nx" value="5655792802101418340" />
@@ -846,7 +846,7 @@
     <node concept="1TJgyj" id="5ZbqeTIc1i1" role="1TKVEi">
       <property role="IQ2ns" value="6902726227135566977" />
       <property role="20kJfa" value="defaultSelectedEntry" />
-      <ref role="20lvS9" node="3mckYa_DMEC" resolve="ChoiceEntry" />
+      <ref role="20lvS9" node="3mckYa_DMEC" resolve="ComboBoxEntry" />
     </node>
   </node>
   <node concept="1TIwiD" id="44HS8_67H$1">
@@ -909,11 +909,11 @@
   <node concept="1TIwiD" id="3mckYa_DMEC">
     <property role="EcuMT" value="3858551213656582824" />
     <property role="3GE5qa" value="widgets.choices" />
-    <property role="TrG5h" value="ChoiceEntry" />
+    <property role="TrG5h" value="ComboBoxEntry" />
     <property role="34LRSv" value="entry" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3mckYa_DPbg" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="1Ukm5RfrSRq" role="PzmwI">
+      <ref role="PrY4T" node="1Ukm5RfrSRo" resolve="IChoiceEntry" />
     </node>
   </node>
   <node concept="1TIwiD" id="7ZadkZWNZxB">
@@ -1455,6 +1455,9 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
     </node>
+    <node concept="PrWs8" id="1Ukm5Rfsg7a" role="PzmwI">
+      <ref role="PrY4T" node="1Ukm5RfrSRo" resolve="IChoiceEntry" />
+    </node>
   </node>
   <node concept="PlHQZ" id="7NXUkdRspaV">
     <property role="EcuMT" value="9006611305786872507" />
@@ -1501,6 +1504,9 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7NXUkdPQshI" resolve="RadioButtonWidget" />
     </node>
+    <node concept="PrWs8" id="7kzHNKBtMCG" role="PzmwI">
+      <ref role="PrY4T" node="7NXUkdRspaV" resolve="IProvideChoiceEntries" />
+    </node>
     <node concept="PrWs8" id="JsS3D9I3ed" role="PzmwI">
       <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
     </node>
@@ -1511,6 +1517,14 @@
       <property role="IQ2nx" value="7392067456843023282" />
       <property role="TrG5h" value="isFixedEnumeration" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1Ukm5RfrSRo">
+    <property role="EcuMT" value="2203483277626412504" />
+    <property role="3GE5qa" value="widgets.choices" />
+    <property role="TrG5h" value="IChoiceEntry" />
+    <node concept="PrWs8" id="1Ukm5RfrSRp" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

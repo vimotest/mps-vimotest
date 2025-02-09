@@ -543,7 +543,7 @@
             <node concept="3cpWsn" id="7NXUkdRsDl9" role="3cpWs9">
               <property role="TrG5h" value="matchingEntry" />
               <node concept="3Tqbb2" id="7NXUkdRsDjG" role="1tU5fm">
-                <ref role="ehGHo" to="at53:3mckYa_DMEC" resolve="ChoiceEntry" />
+                <ref role="ehGHo" to="at53:1Ukm5RfrSRo" resolve="IChoiceEntry" />
               </node>
               <node concept="2OqwBi" id="7NXUkdRsDla" role="33vP2m">
                 <node concept="1z4cxt" id="7NXUkdRsDlf" role="2OqNvi">

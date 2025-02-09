@@ -10614,7 +10614,7 @@
         </node>
       </node>
       <node concept="2I9FWS" id="7NXUkdRsocp" role="3clF45">
-        <ref role="2I9WkF" to="at53:3mckYa_DMEC" resolve="ChoiceEntry" />
+        <ref role="2I9WkF" to="at53:1Ukm5RfrSRo" resolve="IChoiceEntry" />
       </node>
       <node concept="3Tm1VV" id="7NXUkdRSDXt" role="1B3o_S" />
     </node>
@@ -10705,7 +10705,7 @@
         </node>
       </node>
       <node concept="2I9FWS" id="7NXUkdRspVH" role="3clF45">
-        <ref role="2I9WkF" to="at53:3mckYa_DMEC" resolve="ChoiceEntry" />
+        <ref role="2I9WkF" to="at53:1Ukm5RfrSRo" resolve="IChoiceEntry" />
       </node>
     </node>
   </node>

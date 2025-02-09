@@ -4899,5 +4899,29 @@
       </node>
     </node>
   </node>
+  <node concept="PKFIW" id="3YuUBZ_RxM8">
+    <property role="3GE5qa" value="widgets.choices" />
+    <property role="TrG5h" value="RadioButtonGroupWidget_Inspector_EC" />
+    <ref role="1XX52x" to="at53:12kpBrp1H3U" resolve="RadioButtonGroupWidget" />
+    <node concept="1PE4EZ" id="3YuUBZ_RxMa" role="1PM95z">
+      <ref role="1PE7su" node="L9c2Y9pjGJ" resolve="ViewWidget_Inspector_EC" />
+    </node>
+    <node concept="3EZMnI" id="3YuUBZ_RxMb" role="2wV5jI">
+      <node concept="2iRkQZ" id="3YuUBZ_RxMc" role="2iSdaV" />
+      <node concept="PMmxH" id="3YuUBZ_RxMd" role="3EZMnx">
+        <ref role="PMmxG" node="4OohpJQEUlZ" resolve="ViewWidget_WidgetFeatures_EC" />
+      </node>
+      <node concept="PMmxH" id="3YuUBZ_RxMe" role="3EZMnx">
+        <ref role="PMmxG" node="1F_Q10zSP_8" resolve="ViewWidget_Commands_EC" />
+      </node>
+      <node concept="3F0ifn" id="3YuUBZ_RxMf" role="3EZMnx">
+        <property role="3F0ifm" value="--- Radio Buttons" />
+      </node>
+      <node concept="3F2HdR" id="3YuUBZ_RxMh" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:12kpBrp1HEy" resolve="radioButtonWidgets" />
+        <node concept="2iRkQZ" id="3YuUBZ_RxMj" role="2czzBx" />
+      </node>
+    </node>
+  </node>
 </model>
 

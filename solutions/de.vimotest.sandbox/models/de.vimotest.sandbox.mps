@@ -321,6 +321,7 @@
         <child id="9006611305760146546" name="enabledFeature" index="992OL" />
         <child id="9006611305760146545" name="visibilityFeature" index="992OM" />
         <child id="9006611305760146544" name="selectedEntryFeature" index="992ON" />
+        <child id="1194692461793303205" name="textFeature" index="39$FNj" />
       </concept>
       <concept id="3858551213656582824" name="de.vimotest.viewmodel.structure.ChoiceEntry" flags="ng" index="2gaR_a" />
       <concept id="3922717397912187187" name="de.vimotest.viewmodel.structure.ImageWidget" flags="ng" index="2mJbI3">
@@ -396,6 +397,12 @@
       </concept>
       <concept id="3467481306584357561" name="de.vimotest.viewmodel.structure.IRowBasedViewWidget" flags="ngI" index="18mAPp">
         <child id="6487694277737356034" name="additionalFields" index="3pPB2g" />
+      </concept>
+      <concept id="1194692461793300730" name="de.vimotest.viewmodel.structure.RadioButtonGroupWidget" flags="ng" index="39$Fqc">
+        <child id="1194692461793300732" name="visibilityFeature" index="39$Fqa" />
+        <child id="1194692461793300733" name="enabledFeature" index="39$Fqb" />
+        <child id="1194692461793300731" name="selectedEntryFeature" index="39$Fqd" />
+        <child id="1194692461793303202" name="radioButtonWidgets" index="39$FNk" />
       </concept>
       <concept id="2820520252859978186" name="de.vimotest.viewmodel.structure.ImageDefinitionRef" flags="ng" index="3eDL7N">
         <reference id="2820520252859978187" name="image" index="3eDL7M" />
@@ -4840,6 +4847,40 @@
         <node concept="7cNxT" id="3jx7KigIsS" role="992ON" />
         <node concept="C4FCg" id="3jx7KigIsU" role="992OM" />
         <node concept="C4FCh" id="3jx7KigIsW" role="992OL" />
+      </node>
+      <node concept="39$Fqc" id="3YuUBZ_RxKY" role="103ZUC">
+        <property role="TrG5h" value="Options" />
+        <node concept="7cNxT" id="3YuUBZ_RxL0" role="39$Fqd" />
+        <node concept="C4FCg" id="3YuUBZ_RxL2" role="39$Fqa">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="C4FCh" id="3YuUBZ_RxL4" role="39$Fqb">
+          <property role="2VM7R0" value="true" />
+        </node>
+        <node concept="992OH" id="3YuUBZ_UqCK" role="39$FNk">
+          <property role="TrG5h" value="OptionA" />
+          <node concept="V3Zf6" id="3YuUBZ_UqCL" role="39$FNj">
+            <node concept="o7Kjd" id="3YuUBZ_UqCM" role="o6p68" />
+          </node>
+          <node concept="C4FCg" id="3YuUBZ_UqCN" role="992OM" />
+          <node concept="C4FCh" id="3YuUBZ_UqCO" role="992OL" />
+        </node>
+        <node concept="992OH" id="3YuUBZ_UqCP" role="39$FNk">
+          <property role="TrG5h" value="OptionB" />
+          <node concept="V3Zf6" id="3YuUBZ_UqCQ" role="39$FNj">
+            <node concept="o7Kjd" id="3YuUBZ_UqCR" role="o6p68" />
+          </node>
+          <node concept="C4FCg" id="3YuUBZ_UqCS" role="992OM" />
+          <node concept="C4FCh" id="3YuUBZ_UqCT" role="992OL" />
+        </node>
+        <node concept="992OH" id="3YuUBZ_UqCU" role="39$FNk">
+          <property role="TrG5h" value="OptionC" />
+          <node concept="V3Zf6" id="3YuUBZ_UqCV" role="39$FNj">
+            <node concept="o7Kjd" id="3YuUBZ_UqCW" role="o6p68" />
+          </node>
+          <node concept="C4FCg" id="3YuUBZ_UqCX" role="992OM" />
+          <node concept="C4FCh" id="3YuUBZ_UqCY" role="992OL" />
+        </node>
       </node>
     </node>
   </node>

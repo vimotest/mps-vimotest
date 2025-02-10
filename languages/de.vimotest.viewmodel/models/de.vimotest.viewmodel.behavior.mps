@@ -5813,6 +5813,29 @@
         <node concept="17QB3L" id="1mmsj6xZXxN" role="A3Ik2" />
       </node>
     </node>
+    <node concept="13i0hz" id="19OyC3_hdLn" role="13h7CS">
+      <property role="TrG5h" value="getChoiceEntries" />
+      <ref role="13i0hy" node="7NXUkdRsp$h" resolve="getChoiceEntries" />
+      <node concept="3Tm1VV" id="19OyC3_hdLo" role="1B3o_S" />
+      <node concept="3clFbS" id="19OyC3_hdLr" role="3clF47">
+        <node concept="3clFbF" id="19OyC3_hlvT" role="3cqZAp">
+          <node concept="2OqwBi" id="19OyC3_hmxj" role="3clFbG">
+            <node concept="2OqwBi" id="19OyC3_hlJE" role="2Oq$k0">
+              <node concept="13iPFW" id="19OyC3_hlvS" role="2Oq$k0" />
+              <node concept="3TrEf2" id="19OyC3_hlYS" role="2OqNvi">
+                <ref role="3Tt5mk" to="at53:44HS8_67H$2" resolve="comboBoxEntriesFeature" />
+              </node>
+            </node>
+            <node concept="3Tsc0h" id="19OyC3_hmL5" role="2OqNvi">
+              <ref role="3TtcxE" to="at53:4TXqppWtP_y" resolve="defaultEntries" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="19OyC3_hdLs" role="3clF45">
+        <ref role="2I9WkF" to="at53:1Ukm5RfrSRo" resolve="IChoiceEntry" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="2exRXkpP3e5">
     <property role="TrG5h" value="TextBoxWidget_Behavior" />
@@ -9476,24 +9499,6 @@
     <ref role="13h7C2" to="at53:44HS8_67HzJ" resolve="ComboBoxEntriesFeature" />
     <node concept="13hLZK" id="7NXUkdRt5Fw" role="13h7CW">
       <node concept="3clFbS" id="7NXUkdRt5Fx" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="7NXUkdRt5Sj" role="13h7CS">
-      <property role="TrG5h" value="getChoiceEntries" />
-      <ref role="13i0hy" node="7NXUkdRsp$h" resolve="getChoiceEntries" />
-      <node concept="3Tm1VV" id="7NXUkdRt5Sk" role="1B3o_S" />
-      <node concept="3clFbS" id="7NXUkdRt5Sn" role="3clF47">
-        <node concept="3clFbF" id="7NXUkdRt5SE" role="3cqZAp">
-          <node concept="2OqwBi" id="7NXUkdRt67x" role="3clFbG">
-            <node concept="13iPFW" id="7NXUkdRt5SD" role="2Oq$k0" />
-            <node concept="3Tsc0h" id="7NXUkdRt6lf" role="2OqNvi">
-              <ref role="3TtcxE" to="at53:4TXqppWtP_y" resolve="defaultEntries" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2I9FWS" id="7NXUkdRt5So" role="3clF45">
-        <ref role="2I9WkF" to="at53:1Ukm5RfrSRo" resolve="IChoiceEntry" />
-      </node>
     </node>
     <node concept="13i0hz" id="1mmsj6yLLrZ" role="13h7CS">
       <property role="TrG5h" value="getFeatureBaseName" />

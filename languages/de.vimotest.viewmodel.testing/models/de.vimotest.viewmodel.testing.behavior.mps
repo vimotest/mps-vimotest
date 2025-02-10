@@ -346,7 +346,6 @@
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1145572800087" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingsOperation" flags="nn" index="2Ttrtt" />
-      <concept id="1145573345940" name="jetbrains.mps.lang.smodel.structure.Node_GetAllSiblingsOperation" flags="nn" index="2TvwIu" />
       <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
         <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
       </concept>
@@ -10348,6 +10347,76 @@
       </node>
       <node concept="3cqZAl" id="44HS8_67HA0" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="19OyC3_gMRr" role="13h7CS">
+      <property role="TrG5h" value="getChoiceEntries" />
+      <ref role="13i0hy" to="nrs2:7NXUkdRsp$h" resolve="getChoiceEntries" />
+      <node concept="3Tm1VV" id="19OyC3_gMRs" role="1B3o_S" />
+      <node concept="3clFbS" id="19OyC3_gMRv" role="3clF47">
+        <node concept="3cpWs8" id="19OyC3_h7V0" role="3cqZAp">
+          <node concept="3cpWsn" id="19OyC3_h7V1" role="3cpWs9">
+            <property role="TrG5h" value="provideChoiceEntriesByCheckValue" />
+            <node concept="3Tqbb2" id="19OyC3_h7Ue" role="1tU5fm">
+              <ref role="ehGHo" to="at53:7NXUkdRspaV" resolve="IProvideChoiceEntries" />
+            </node>
+            <node concept="2OqwBi" id="19OyC3_h7V2" role="33vP2m">
+              <node concept="2OqwBi" id="19OyC3_h7V3" role="2Oq$k0">
+                <node concept="2OqwBi" id="19OyC3_h7V4" role="2Oq$k0">
+                  <node concept="13iPFW" id="19OyC3_h7V5" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="19OyC3_h7V6" role="2OqNvi">
+                    <ref role="3TtcxE" to="53m0:44HS8_67H_h" resolve="checks" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="19OyC3_h7V7" role="2OqNvi">
+                  <node concept="chp4Y" id="19OyC3_h7V8" role="v3oSu">
+                    <ref role="cht4Q" to="at53:7NXUkdRspaV" resolve="IProvideChoiceEntries" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="19OyC3_h7V9" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="19OyC3_h8dN" role="3cqZAp">
+          <node concept="3clFbS" id="19OyC3_h8dP" role="3clFbx">
+            <node concept="3cpWs6" id="19OyC3_h8Mh" role="3cqZAp">
+              <node concept="2OqwBi" id="19OyC3_h96S" role="3cqZAk">
+                <node concept="37vLTw" id="19OyC3_h8V$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="19OyC3_h7V1" resolve="checkValue" />
+                </node>
+                <node concept="2qgKlT" id="19OyC3_h9X2" role="2OqNvi">
+                  <ref role="37wK5l" to="nrs2:7NXUkdRsp$h" resolve="getChoiceEntries" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="19OyC3_h8w1" role="3clFbw">
+            <node concept="37vLTw" id="19OyC3_h8ho" role="2Oq$k0">
+              <ref role="3cqZAo" node="19OyC3_h7V1" resolve="checkValue" />
+            </node>
+            <node concept="3x8VRR" id="19OyC3_h8GF" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="19OyC3_haih" role="3cqZAp">
+          <node concept="2OqwBi" id="19OyC3_hbnv" role="3cqZAk">
+            <node concept="1PxgMI" id="19OyC3_haWf" role="2Oq$k0">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="19OyC3_haZf" role="3oSUPX">
+                <ref role="cht4Q" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
+              </node>
+              <node concept="BsUDl" id="19OyC3_hakN" role="1m5AlR">
+                <ref role="37wK5l" node="4jKdMMdJYzD" resolve="getWidgetToCheck" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="19OyC3_hcik" role="2OqNvi">
+              <ref role="37wK5l" to="nrs2:7NXUkdRsp$h" resolve="getChoiceEntries" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="19OyC3_gMRw" role="3clF45">
+        <ref role="2I9WkF" to="at53:1Ukm5RfrSRo" resolve="IChoiceEntry" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="44HS8_6taCK">
     <property role="3GE5qa" value="test.assert._checkvalues" />
@@ -10529,85 +10598,30 @@
       <node concept="3clFbS" id="7NXUkdRsnBl" role="3clF47">
         <node concept="3cpWs8" id="7NXUkdRsLY6" role="3cqZAp">
           <node concept="3cpWsn" id="7NXUkdRsLY7" role="3cpWs9">
-            <property role="TrG5h" value="siblingProvidingEntries" />
+            <property role="TrG5h" value="provideChoiceEntries" />
             <node concept="3Tqbb2" id="7NXUkdRst_Q" role="1tU5fm">
               <ref role="ehGHo" to="at53:7NXUkdRspaV" resolve="IProvideChoiceEntries" />
             </node>
-            <node concept="2OqwBi" id="7NXUkdRsLY8" role="33vP2m">
-              <node concept="2OqwBi" id="7NXUkdRsLY9" role="2Oq$k0">
-                <node concept="2OqwBi" id="7NXUkdRsLYa" role="2Oq$k0">
-                  <node concept="13iPFW" id="7NXUkdRSBxt" role="2Oq$k0" />
-                  <node concept="2TvwIu" id="7NXUkdRsLYc" role="2OqNvi" />
-                </node>
-                <node concept="v3k3i" id="7NXUkdRsLYd" role="2OqNvi">
-                  <node concept="chp4Y" id="7NXUkdRsLYe" role="v3oSu">
-                    <ref role="cht4Q" to="at53:7NXUkdRspaV" resolve="IProvideChoiceEntries" />
-                  </node>
-                </node>
+            <node concept="1PxgMI" id="19OyC3_gK6b" role="33vP2m">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="19OyC3_gK9u" role="3oSUPX">
+                <ref role="cht4Q" to="at53:7NXUkdRspaV" resolve="IProvideChoiceEntries" />
               </node>
-              <node concept="1uHKPH" id="7NXUkdRsLYf" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="7NXUkdRsNUe" role="3cqZAp">
-          <node concept="3clFbS" id="7NXUkdRsNUg" role="3clFbx">
-            <node concept="3cpWs6" id="7NXUkdRsQ$7" role="3cqZAp">
-              <node concept="2OqwBi" id="7NXUkdRst3L" role="3cqZAk">
-                <node concept="37vLTw" id="7NXUkdRsLYg" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7NXUkdRsLY7" resolve="siblingProvidingEntries" />
-                </node>
-                <node concept="2qgKlT" id="7NXUkdRstys" role="2OqNvi">
-                  <ref role="37wK5l" to="nrs2:7NXUkdRsp$h" resolve="getChoiceEntries" />
+              <node concept="2OqwBi" id="19OyC3_gIrm" role="1m5AlR">
+                <node concept="13iPFW" id="19OyC3_gIrn" role="2Oq$k0" />
+                <node concept="2qgKlT" id="19OyC3_gIro" role="2OqNvi">
+                  <ref role="37wK5l" node="7ceEXPSzaTA" resolve="getParentCheck" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="7NXUkdRsOLp" role="3clFbw">
-            <node concept="37vLTw" id="7NXUkdRsOkM" role="2Oq$k0">
-              <ref role="3cqZAo" node="7NXUkdRsLY7" resolve="siblingProvidingEntries" />
-            </node>
-            <node concept="3x8VRR" id="7NXUkdRsP9T" role="2OqNvi" />
-          </node>
         </node>
-        <node concept="3clFbH" id="7NXUkdRsR$N" role="3cqZAp" />
-        <node concept="3cpWs8" id="7NXUkdRt3jS" role="3cqZAp">
-          <node concept="3cpWsn" id="7NXUkdRt3jT" role="3cpWs9">
-            <property role="TrG5h" value="widgetDefaultEntries" />
-            <node concept="3Tqbb2" id="7NXUkdRt2ZU" role="1tU5fm">
-              <ref role="ehGHo" to="at53:7NXUkdRspaV" resolve="IProvideChoiceEntries" />
+        <node concept="3cpWs6" id="7NXUkdRsQ$7" role="3cqZAp">
+          <node concept="2OqwBi" id="7NXUkdRst3L" role="3cqZAk">
+            <node concept="37vLTw" id="7NXUkdRsLYg" role="2Oq$k0">
+              <ref role="3cqZAo" node="7NXUkdRsLY7" resolve="provideChoiceEntries" />
             </node>
-            <node concept="2OqwBi" id="7NXUkdRt3jU" role="33vP2m">
-              <node concept="2OqwBi" id="7NXUkdRt3jV" role="2Oq$k0">
-                <node concept="2OqwBi" id="7NXUkdRt3jW" role="2Oq$k0">
-                  <node concept="2OqwBi" id="7NXUkdRt3jX" role="2Oq$k0">
-                    <node concept="2OqwBi" id="7NXUkdRt3jY" role="2Oq$k0">
-                      <node concept="13iPFW" id="7NXUkdRSB_A" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="7NXUkdRt3k0" role="2OqNvi">
-                        <ref role="37wK5l" node="7ceEXPSzaTA" resolve="getParentCheck" />
-                      </node>
-                    </node>
-                    <node concept="2qgKlT" id="7NXUkdRt3k1" role="2OqNvi">
-                      <ref role="37wK5l" node="4jKdMMdJYzD" resolve="getWidgetToCheck" />
-                    </node>
-                  </node>
-                  <node concept="32TBzR" id="7NXUkdRt3k2" role="2OqNvi" />
-                </node>
-                <node concept="v3k3i" id="7NXUkdRt3k3" role="2OqNvi">
-                  <node concept="chp4Y" id="7NXUkdRt3k4" role="v3oSu">
-                    <ref role="cht4Q" to="at53:7NXUkdRspaV" resolve="IProvideChoiceEntries" />
-                  </node>
-                </node>
-              </node>
-              <node concept="1uHKPH" id="7NXUkdRt3k5" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="7NXUkdRsRGW" role="3cqZAp">
-          <node concept="2OqwBi" id="7NXUkdRt4$w" role="3cqZAk">
-            <node concept="37vLTw" id="7NXUkdRt3k6" role="2Oq$k0">
-              <ref role="3cqZAo" node="7NXUkdRt3jT" resolve="widgetDefaultEntries" />
-            </node>
-            <node concept="2qgKlT" id="7NXUkdRt5h7" role="2OqNvi">
+            <node concept="2qgKlT" id="7NXUkdRstys" role="2OqNvi">
               <ref role="37wK5l" to="nrs2:7NXUkdRsp$h" resolve="getChoiceEntries" />
             </node>
           </node>
@@ -16574,6 +16588,35 @@
       </node>
       <node concept="3uibUv" id="12kpBrp1H6h" role="3clF45">
         <ref role="3uigEE" to="f4zo:~EditorCell" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="19OyC3_hodV" role="13h7CS">
+      <property role="TrG5h" value="getChoiceEntries" />
+      <ref role="13i0hy" to="nrs2:7NXUkdRsp$h" resolve="getChoiceEntries" />
+      <node concept="3Tm1VV" id="19OyC3_hodW" role="1B3o_S" />
+      <node concept="3clFbS" id="19OyC3_hodZ" role="3clF47">
+        <node concept="3clFbF" id="19OyC3_hokg" role="3cqZAp">
+          <node concept="2OqwBi" id="19OyC3_hpGk" role="3clFbG">
+            <node concept="1PxgMI" id="19OyC3_hpkd" role="2Oq$k0">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="19OyC3_hplg" role="3oSUPX">
+                <ref role="cht4Q" to="at53:12kpBrp1H3U" resolve="RadioButtonGroupWidget" />
+              </node>
+              <node concept="2OqwBi" id="19OyC3_hoxj" role="1m5AlR">
+                <node concept="13iPFW" id="19OyC3_hokf" role="2Oq$k0" />
+                <node concept="2qgKlT" id="19OyC3_hoG0" role="2OqNvi">
+                  <ref role="37wK5l" node="4jKdMMdJYzD" resolve="getWidgetToCheck" />
+                </node>
+              </node>
+            </node>
+            <node concept="2qgKlT" id="19OyC3_hq0n" role="2OqNvi">
+              <ref role="37wK5l" to="nrs2:7NXUkdRsp$h" resolve="getChoiceEntries" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="19OyC3_hoe0" role="3clF45">
+        <ref role="2I9WkF" to="at53:1Ukm5RfrSRo" resolve="IChoiceEntry" />
       </node>
     </node>
   </node>

@@ -833,9 +833,6 @@
     <node concept="PrWs8" id="7FAtRx$VXNP" role="PzmwI">
       <ref role="PrY4T" node="7FAtRx$VQ6k" resolve="ICanHaveMultipleValues" />
     </node>
-    <node concept="PrWs8" id="7NXUkdRt5Fu" role="PzmwI">
-      <ref role="PrY4T" node="7NXUkdRspaV" resolve="IProvideChoiceEntries" />
-    </node>
   </node>
   <node concept="1TIwiD" id="44HS8_67HzK">
     <property role="EcuMT" value="4696656866608863472" />
@@ -904,6 +901,9 @@
     </node>
     <node concept="PrWs8" id="3c$pnH1eGrc" role="PzmwI">
       <ref role="PrY4T" node="3c$pnH1eja4" resolve="ISingleOrMultiLineStringSupport" />
+    </node>
+    <node concept="PrWs8" id="19OyC3_hbFc" role="PzmwI">
+      <ref role="PrY4T" node="7NXUkdRspaV" resolve="IProvideChoiceEntries" />
     </node>
   </node>
   <node concept="1TIwiD" id="3mckYa_DMEC">

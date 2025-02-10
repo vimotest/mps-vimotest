@@ -820,6 +820,9 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="44HS8_67H$U" resolve="IComboBoxCheckValue" />
     </node>
+    <node concept="PrWs8" id="19OyC3_gLMe" role="PzmwI">
+      <ref role="PrY4T" to="at53:7NXUkdRspaV" resolve="IProvideChoiceEntries" />
+    </node>
   </node>
   <node concept="1TIwiD" id="44HS8_67HAm">
     <property role="EcuMT" value="4696656866608863638" />
@@ -1381,6 +1384,9 @@
       <property role="20kJfa" value="radioButtonChecks" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7NXUkdPQsiT" resolve="RadioButtonCheck" />
+    </node>
+    <node concept="PrWs8" id="19OyC3_ti1L" role="PzmwI">
+      <ref role="PrY4T" to="at53:7NXUkdRspaV" resolve="IProvideChoiceEntries" />
     </node>
   </node>
 </model>

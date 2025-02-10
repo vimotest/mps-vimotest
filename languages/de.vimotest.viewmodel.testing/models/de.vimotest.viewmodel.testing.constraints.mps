@@ -167,6 +167,9 @@
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
         <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
       </concept>
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -1103,6 +1106,23 @@
     <ref role="1M2myG" to="53m0:7NXUkdPQsiT" resolve="RadioButtonCheck" />
     <node concept="9S07l" id="7NXUkdPQsiW" role="9Vyp8">
       <node concept="3clFbS" id="7NXUkdPQsiX" role="2VODD2">
+        <node concept="3clFbJ" id="tdZQKTOq7q" role="3cqZAp">
+          <node concept="3clFbS" id="tdZQKTOq7s" role="3clFbx">
+            <node concept="3cpWs6" id="tdZQKTOtzj" role="3cqZAp">
+              <node concept="3clFbT" id="tdZQKTOtzw" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="tdZQKTOqLi" role="3clFbw">
+            <node concept="nLn13" id="tdZQKTOq8$" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="tdZQKTOsTa" role="2OqNvi">
+              <node concept="chp4Y" id="tdZQKTOsW6" role="cj9EA">
+                <ref role="cht4Q" to="53m0:12kpBrp1H5c" resolve="RadioButtonGroupCheck" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7NXUkdPQsiY" role="3cqZAp">
           <node concept="17R0WA" id="7NXUkdPQsiZ" role="3clFbG">
             <node concept="35c_gC" id="7NXUkdPQsj0" role="3uHU7w">

@@ -155,6 +155,7 @@
       </concept>
       <concept id="1194692461793300812" name="de.vimotest.viewmodel.testing.structure.RadioButtonGroupCheck" flags="ng" index="39$FsU">
         <child id="1194692461793300813" name="checks" index="39$FsV" />
+        <child id="4584359305733977741" name="radioButtonChecks" index="3qAlNM" />
       </concept>
       <concept id="8996304390297115759" name="de.vimotest.viewmodel.testing.structure.FillTextCommandAction" flags="ng" index="3eaLt2">
         <property id="8996304390298037956" name="text" index="3fQinD" />
@@ -326,7 +327,7 @@
         <child id="9006611305760146544" name="selectedEntryFeature" index="992ON" />
         <child id="1194692461793303205" name="textFeature" index="39$FNj" />
       </concept>
-      <concept id="3858551213656582824" name="de.vimotest.viewmodel.structure.ChoiceEntry" flags="ng" index="2gaR_a" />
+      <concept id="3858551213656582824" name="de.vimotest.viewmodel.structure.ComboBoxEntry" flags="ng" index="2gaR_a" />
       <concept id="3922717397912187187" name="de.vimotest.viewmodel.structure.ImageWidget" flags="ng" index="2mJbI3">
         <child id="3922717397912187188" name="imageSourceFeature" index="2mJbI4" />
         <child id="3922717397912187189" name="enabledFeature" index="2mJbI5" />
@@ -4835,16 +4836,24 @@
           <node concept="V3Zf6" id="3YuUBZ_UqCQ" role="39$FNj">
             <node concept="o7Kjd" id="3YuUBZ_UqCR" role="o6p68" />
           </node>
-          <node concept="C4FCg" id="3YuUBZ_UqCS" role="992OM" />
-          <node concept="C4FCh" id="3YuUBZ_UqCT" role="992OL" />
+          <node concept="C4FCg" id="3YuUBZ_UqCS" role="992OM">
+            <property role="2VM7R0" value="true" />
+          </node>
+          <node concept="C4FCh" id="3YuUBZ_UqCT" role="992OL">
+            <property role="2VM7R0" value="true" />
+          </node>
         </node>
         <node concept="992OH" id="3YuUBZ_UqCU" role="39$FNk">
           <property role="TrG5h" value="OptionC" />
           <node concept="V3Zf6" id="3YuUBZ_UqCV" role="39$FNj">
             <node concept="o7Kjd" id="3YuUBZ_UqCW" role="o6p68" />
           </node>
-          <node concept="C4FCg" id="3YuUBZ_UqCX" role="992OM" />
-          <node concept="C4FCh" id="3YuUBZ_UqCY" role="992OL" />
+          <node concept="C4FCg" id="3YuUBZ_UqCX" role="992OM">
+            <property role="2VM7R0" value="true" />
+          </node>
+          <node concept="C4FCh" id="3YuUBZ_UqCY" role="992OL">
+            <property role="2VM7R0" value="true" />
+          </node>
         </node>
       </node>
     </node>
@@ -4860,7 +4869,13 @@
           <node concept="30nzp_" id="7kzHNKBtJus" role="DUiSb">
             <ref role="30nzpS" node="3YuUBZ_RxKY" resolve="Options" />
             <node concept="39$FsU" id="7kzHNKBtJut" role="30nDbQ">
-              <node concept="7cN$h" id="7kzHNKBtJuu" role="39$FsV" />
+              <node concept="7cN$h" id="7kzHNKBtJuu" role="39$FsV">
+                <property role="bzaSH" value="OptionB" />
+                <ref role="1B0EOZ" node="3YuUBZ_UqCP" resolve="OptionB" />
+              </node>
+              <node concept="992RU" id="19OyC3AvWPt" role="3qAlNM" />
+              <node concept="992RU" id="19OyC3AvWPv" role="3qAlNM" />
+              <node concept="992RU" id="19OyC3AvWPx" role="3qAlNM" />
             </node>
           </node>
         </node>
@@ -4870,45 +4885,39 @@
       <property role="TrG5h" value="RadioButton (disabled)" />
       <node concept="1s$VFG" id="5EP_M$eDFc9" role="1s$QAY">
         <node concept="DUd2R" id="5EP_M$eDFca" role="1s$QAX">
-          <node concept="30nzp_" id="5EP_M$eDFcb" role="DUiSb">
-            <ref role="30nzpS" node="7NXUkdQpVLK" resolve="MyChoices" />
-            <node concept="992RU" id="5EP_M$eDFcc" role="30nDbQ">
-              <node concept="7cN$h" id="5EP_M$eDFcd" role="992RT">
-                <ref role="1B0EOZ" node="7NXUkdSh__p" resolve="OptionC" />
+          <node concept="30nzp_" id="19OyC3_PDtB" role="DUiSb">
+            <ref role="30nzpS" node="3YuUBZ_RxKY" resolve="Options" />
+            <node concept="39$FsU" id="19OyC3_PDtC" role="30nDbQ">
+              <node concept="7cN$h" id="19OyC3_PDtD" role="39$FsV">
+                <property role="bzaSH" value="OptionA" />
+                <ref role="1B0EOZ" node="3YuUBZ_UqCK" resolve="OptionA" />
               </node>
-              <node concept="35STUl" id="5EP_M$eDFce" role="992RT" />
+              <node concept="992RU" id="19OyC3AvWPn" role="3qAlNM" />
+              <node concept="992RU" id="19OyC3AvWPp" role="3qAlNM">
+                <node concept="35STUl" id="tdZQKTV2FX" role="992RT" />
+              </node>
+              <node concept="992RU" id="19OyC3AvWPr" role="3qAlNM" />
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node concept="3LKzX3" id="5EP_M$eDFcf" role="30n1Qb">
+    <node concept="3LKzX3" id="tdZQKTV2FY" role="30n1Qb">
       <property role="TrG5h" value="RadioButton (invisible)" />
-      <node concept="1s$VFG" id="5EP_M$eDFcg" role="1s$QAY">
-        <node concept="DUd2R" id="5EP_M$eDFch" role="1s$QAX">
-          <node concept="30nzp_" id="5EP_M$eDFci" role="DUiSb">
-            <ref role="30nzpS" node="7NXUkdQpVLK" resolve="MyChoices" />
-            <node concept="992RU" id="5EP_M$eDFcj" role="30nDbQ">
-              <node concept="7cN$h" id="5EP_M$eDFck" role="992RT">
-                <ref role="1B0EOZ" node="7NXUkdSh__p" resolve="OptionC" />
+      <node concept="1s$VFG" id="tdZQKTV2FZ" role="1s$QAY">
+        <node concept="DUd2R" id="tdZQKTV2G0" role="1s$QAX">
+          <node concept="30nzp_" id="tdZQKTV2G1" role="DUiSb">
+            <ref role="30nzpS" node="3YuUBZ_RxKY" resolve="Options" />
+            <node concept="39$FsU" id="tdZQKTV2G2" role="30nDbQ">
+              <node concept="7cN$h" id="tdZQKTV2G3" role="39$FsV">
+                <property role="bzaSH" value="OptionA" />
+                <ref role="1B0EOZ" node="3YuUBZ_UqCK" resolve="OptionA" />
               </node>
-              <node concept="35STUn" id="5EP_M$eDFcm" role="992RT" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3LKzX3" id="7wIkOM9r800" role="30n1Qb">
-      <property role="TrG5h" value="RadioButton (Fixed Enumeration)" />
-      <node concept="1s$VFG" id="7wIkOM9r801" role="1s$QAY">
-        <node concept="DUd2R" id="7wIkOM9r802" role="1s$QAX">
-          <node concept="30nzp_" id="7wIkOM9r808" role="DUiSb">
-            <ref role="30nzpS" node="3jx7KigIsL" resolve="FixedEnumeration" />
-            <node concept="992RU" id="7wIkOM9r809" role="30nDbQ">
-              <node concept="7cN$h" id="7wIkOM9r80a" role="992RT">
-                <property role="bzaSH" value="OptionB" />
-                <ref role="1B0EOZ" node="3jx7KigIsY" resolve="OptionB" />
+              <node concept="992RU" id="tdZQKTV2G4" role="3qAlNM" />
+              <node concept="992RU" id="tdZQKTV2G5" role="3qAlNM">
+                <node concept="35STUn" id="tdZQKTV2G8" role="992RT" />
               </node>
+              <node concept="992RU" id="tdZQKTV2G7" role="3qAlNM" />
             </node>
           </node>
         </node>

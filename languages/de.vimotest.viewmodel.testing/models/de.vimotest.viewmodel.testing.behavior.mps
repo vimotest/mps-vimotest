@@ -200,6 +200,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -486,6 +487,7 @@
       <concept id="1227022196108" name="jetbrains.mps.baseLanguage.collections.structure.RemoveAtElementOperation" flags="nn" index="2KedMh">
         <child id="1227022274197" name="index" index="2KewY8" />
       </concept>
+      <concept id="1227026094155" name="jetbrains.mps.baseLanguage.collections.structure.RemoveLastElementOperation" flags="nn" index="2Kt5_m" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="4611582986551314327" name="jetbrains.mps.baseLanguage.collections.structure.OfTypeOperation" flags="nn" index="UnYns">
@@ -16559,8 +16561,12 @@
               <node concept="37vLTw" id="3YuUBZ_22AZ" role="37wK5m">
                 <ref role="3cqZAo" node="3YuUBZ_22Ay" resolve="selectedNameAccessor" />
               </node>
-              <node concept="37vLTw" id="3YuUBZ_22B0" role="37wK5m">
-                <ref role="3cqZAo" node="12kpBrp1H6f" resolve="widgetNode" />
+              <node concept="13iPFW" id="19OyC3_VJfe" role="37wK5m" />
+              <node concept="2OqwBi" id="19OyC3A7JOI" role="37wK5m">
+                <node concept="13iPFW" id="19OyC3A7Jbn" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="19OyC3A7K6D" role="2OqNvi">
+                  <ref role="3TtcxE" to="53m0:3YuUBZ_1Vqd" resolve="radioButtonChecks" />
+                </node>
               </node>
               <node concept="2OqwBi" id="3YuUBZ_283w" role="37wK5m">
                 <node concept="37vLTw" id="3YuUBZ_27I_" role="2Oq$k0">
@@ -16590,6 +16596,29 @@
         <ref role="3uigEE" to="f4zo:~EditorCell" />
       </node>
     </node>
+    <node concept="13i0hz" id="19OyC3AnD1w" role="13h7CS">
+      <property role="TrG5h" value="getRadioButtonGroupWidget" />
+      <node concept="3Tm1VV" id="19OyC3AnD1x" role="1B3o_S" />
+      <node concept="3Tqbb2" id="19OyC3AnEV9" role="3clF45">
+        <ref role="ehGHo" to="at53:12kpBrp1H3U" resolve="RadioButtonGroupWidget" />
+      </node>
+      <node concept="3clFbS" id="19OyC3AnD1z" role="3clF47">
+        <node concept="3clFbF" id="19OyC3AnEWb" role="3cqZAp">
+          <node concept="1PxgMI" id="19OyC3AnEWd" role="3clFbG">
+            <property role="1BlNFB" value="true" />
+            <node concept="chp4Y" id="19OyC3AnEWe" role="3oSUPX">
+              <ref role="cht4Q" to="at53:12kpBrp1H3U" resolve="RadioButtonGroupWidget" />
+            </node>
+            <node concept="2OqwBi" id="19OyC3AnEWf" role="1m5AlR">
+              <node concept="13iPFW" id="19OyC3AnEWg" role="2Oq$k0" />
+              <node concept="2qgKlT" id="19OyC3AnEWh" role="2OqNvi">
+                <ref role="37wK5l" node="4jKdMMdJYzD" resolve="getWidgetToCheck" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="19OyC3_hodV" role="13h7CS">
       <property role="TrG5h" value="getChoiceEntries" />
       <ref role="13i0hy" to="nrs2:7NXUkdRsp$h" resolve="getChoiceEntries" />
@@ -16597,26 +16626,159 @@
       <node concept="3clFbS" id="19OyC3_hodZ" role="3clF47">
         <node concept="3clFbF" id="19OyC3_hokg" role="3cqZAp">
           <node concept="2OqwBi" id="19OyC3_hpGk" role="3clFbG">
-            <node concept="1PxgMI" id="19OyC3_hpkd" role="2Oq$k0">
-              <property role="1BlNFB" value="true" />
-              <node concept="chp4Y" id="19OyC3_hplg" role="3oSUPX">
-                <ref role="cht4Q" to="at53:12kpBrp1H3U" resolve="RadioButtonGroupWidget" />
-              </node>
-              <node concept="2OqwBi" id="19OyC3_hoxj" role="1m5AlR">
-                <node concept="13iPFW" id="19OyC3_hokf" role="2Oq$k0" />
-                <node concept="2qgKlT" id="19OyC3_hoG0" role="2OqNvi">
-                  <ref role="37wK5l" node="4jKdMMdJYzD" resolve="getWidgetToCheck" />
-                </node>
-              </node>
-            </node>
             <node concept="2qgKlT" id="19OyC3_hq0n" role="2OqNvi">
               <ref role="37wK5l" to="nrs2:7NXUkdRsp$h" resolve="getChoiceEntries" />
+            </node>
+            <node concept="BsUDl" id="19OyC3AnF4S" role="2Oq$k0">
+              <ref role="37wK5l" node="19OyC3AnD1w" resolve="getRadioButtonGroupWidget" />
             </node>
           </node>
         </node>
       </node>
       <node concept="2I9FWS" id="19OyC3_hoe0" role="3clF45">
         <ref role="2I9WkF" to="at53:1Ukm5RfrSRo" resolve="IChoiceEntry" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="19OyC3AnwpR" role="13h7CS">
+      <property role="TrG5h" value="adjustSubChecks" />
+      <node concept="3Tm1VV" id="19OyC3AnwpS" role="1B3o_S" />
+      <node concept="3cqZAl" id="19OyC3AnxxV" role="3clF45" />
+      <node concept="3clFbS" id="19OyC3AnwpU" role="3clF47">
+        <node concept="3cpWs8" id="19OyC3AnNcl" role="3cqZAp">
+          <node concept="3cpWsn" id="19OyC3AnNcm" role="3cpWs9">
+            <property role="TrG5h" value="radioButtonCount" />
+            <node concept="10Oyi0" id="19OyC3AnNb6" role="1tU5fm" />
+            <node concept="2OqwBi" id="19OyC3AnNcn" role="33vP2m">
+              <node concept="2OqwBi" id="19OyC3AnNco" role="2Oq$k0">
+                <node concept="2OqwBi" id="19OyC3AnNcp" role="2Oq$k0">
+                  <node concept="13iPFW" id="19OyC3AnNcq" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="19OyC3AnNcr" role="2OqNvi">
+                    <ref role="37wK5l" node="19OyC3AnD1w" resolve="getRadioButtonGroupWidget" />
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="19OyC3AnNcs" role="2OqNvi">
+                  <ref role="3TtcxE" to="at53:12kpBrp1HEy" resolve="radioButtonWidgets" />
+                </node>
+              </node>
+              <node concept="34oBXx" id="19OyC3AnNct" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="19OyC3Aomc5" role="3cqZAp">
+          <node concept="3cpWsn" id="19OyC3Aomc6" role="3cpWs9">
+            <property role="TrG5h" value="checksCount" />
+            <node concept="10Oyi0" id="19OyC3AolZI" role="1tU5fm" />
+            <node concept="2OqwBi" id="19OyC3Aomc7" role="33vP2m">
+              <node concept="2OqwBi" id="19OyC3Aomc9" role="2Oq$k0">
+                <node concept="13iPFW" id="19OyC3Aomca" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="19OyC3Aomcb" role="2OqNvi">
+                  <ref role="3TtcxE" to="53m0:3YuUBZ_1Vqd" resolve="radioButtonChecks" />
+                </node>
+              </node>
+              <node concept="34oBXx" id="19OyC3Aomcd" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="19OyC3AnxzX" role="3cqZAp">
+          <node concept="3eOVzh" id="19OyC3AnC81" role="3clFbw">
+            <node concept="37vLTw" id="19OyC3AnNcu" role="3uHU7w">
+              <ref role="3cqZAo" node="19OyC3AnNcm" resolve="i" />
+            </node>
+            <node concept="37vLTw" id="19OyC3Aomce" role="3uHU7B">
+              <ref role="3cqZAo" node="19OyC3Aomc6" resolve="i" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="19OyC3AnxzZ" role="3clFbx">
+            <node concept="1Dw8fO" id="19OyC3AnUnY" role="3cqZAp">
+              <node concept="3cpWsn" id="19OyC3AnUnZ" role="1Duv9x">
+                <property role="TrG5h" value="i" />
+                <node concept="10Oyi0" id="19OyC3AnUDw" role="1tU5fm" />
+                <node concept="2OqwBi" id="19OyC3AnUW3" role="33vP2m">
+                  <node concept="2OqwBi" id="19OyC3AnUW5" role="2Oq$k0">
+                    <node concept="13iPFW" id="19OyC3AnUW6" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="19OyC3AnUW7" role="2OqNvi">
+                      <ref role="3TtcxE" to="53m0:3YuUBZ_1Vqd" resolve="radioButtonChecks" />
+                    </node>
+                  </node>
+                  <node concept="34oBXx" id="19OyC3AnUW9" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="19OyC3AnUo0" role="2LFqv$">
+                <node concept="3clFbF" id="19OyC3Ao0Wv" role="3cqZAp">
+                  <node concept="2OqwBi" id="19OyC3Ao7_f" role="3clFbG">
+                    <node concept="2OqwBi" id="19OyC3Ao0Wy" role="2Oq$k0">
+                      <node concept="13iPFW" id="19OyC3Ao0Wz" role="2Oq$k0" />
+                      <node concept="3Tsc0h" id="19OyC3Ao0W$" role="2OqNvi">
+                        <ref role="3TtcxE" to="53m0:3YuUBZ_1Vqd" resolve="radioButtonChecks" />
+                      </node>
+                    </node>
+                    <node concept="2DeJg1" id="19OyC3Ao9xd" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3eOVzh" id="19OyC3AnY2b" role="1Dwp0S">
+                <node concept="37vLTw" id="19OyC3AnY8k" role="3uHU7w">
+                  <ref role="3cqZAo" node="19OyC3AnNcm" resolve="radioButtonCount" />
+                </node>
+                <node concept="37vLTw" id="19OyC3AnVwm" role="3uHU7B">
+                  <ref role="3cqZAo" node="19OyC3AnUnZ" resolve="i" />
+                </node>
+              </node>
+              <node concept="3uNrnE" id="19OyC3Ao0B7" role="1Dwrff">
+                <node concept="37vLTw" id="19OyC3Ao0B9" role="2$L3a6">
+                  <ref role="3cqZAo" node="19OyC3AnUnZ" resolve="i" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3eNFk2" id="19OyC3Aof93" role="3eNLev">
+            <node concept="3clFbS" id="19OyC3Aof95" role="3eOfB_">
+              <node concept="1Dw8fO" id="19OyC3AohLL" role="3cqZAp">
+                <node concept="3cpWsn" id="19OyC3AohLM" role="1Duv9x">
+                  <property role="TrG5h" value="i" />
+                  <node concept="10Oyi0" id="19OyC3AohLN" role="1tU5fm" />
+                  <node concept="37vLTw" id="19OyC3Aokt2" role="33vP2m">
+                    <ref role="3cqZAo" node="19OyC3AnNcm" resolve="radioButtonCount" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="19OyC3AohLT" role="2LFqv$">
+                  <node concept="3clFbF" id="19OyC3AohLU" role="3cqZAp">
+                    <node concept="2OqwBi" id="19OyC3AohLV" role="3clFbG">
+                      <node concept="2OqwBi" id="19OyC3AohLW" role="2Oq$k0">
+                        <node concept="13iPFW" id="19OyC3AohLX" role="2Oq$k0" />
+                        <node concept="3Tsc0h" id="19OyC3AohLY" role="2OqNvi">
+                          <ref role="3TtcxE" to="53m0:3YuUBZ_1Vqd" resolve="radioButtonChecks" />
+                        </node>
+                      </node>
+                      <node concept="2Kt5_m" id="19OyC3Aoq0C" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3eOVzh" id="19OyC3AohM0" role="1Dwp0S">
+                  <node concept="37vLTw" id="19OyC3AohM2" role="3uHU7B">
+                    <ref role="3cqZAo" node="19OyC3AohLM" resolve="i" />
+                  </node>
+                  <node concept="37vLTw" id="19OyC3Aomcf" role="3uHU7w">
+                    <ref role="3cqZAo" node="19OyC3Aomc6" resolve="i" />
+                  </node>
+                </node>
+                <node concept="3uNrnE" id="19OyC3AohM3" role="1Dwrff">
+                  <node concept="37vLTw" id="19OyC3AohM4" role="2$L3a6">
+                    <ref role="3cqZAo" node="19OyC3AohLM" resolve="i" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3eOSWO" id="19OyC3AohB$" role="3eO9$A">
+              <node concept="37vLTw" id="19OyC3Aomcg" role="3uHU7B">
+                <ref role="3cqZAo" node="19OyC3Aomc6" resolve="i" />
+              </node>
+              <node concept="37vLTw" id="19OyC3AofVR" role="3uHU7w">
+                <ref role="3cqZAo" node="19OyC3AnNcm" resolve="radioButtonCount" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

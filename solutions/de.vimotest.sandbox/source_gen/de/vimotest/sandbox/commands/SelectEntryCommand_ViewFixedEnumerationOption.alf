@@ -1,7 +1,0 @@
-namespace commands ;
-
-
-
-enum SelectEntryCommand_ViewFixedEnumerationOption {
-  OptionA, OptionB
-}

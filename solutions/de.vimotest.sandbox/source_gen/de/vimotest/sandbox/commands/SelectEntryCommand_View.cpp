@@ -2,7 +2,6 @@
 #include "SelectEntryCommand_View.h"
 #include "SelectEntryCommand_View.h"
 #include <vector>
-#include "SelectEntryCommand_ViewFixedEnumerationOption.h"
 #include <string>
 
 namespace commands
@@ -15,31 +14,15 @@ namespace commands
   {
     return this->MyElementsComboBoxSelectedEntry;
   }
-  std::vector<std::string> SelectEntryCommand_View::getMyOptionsRadioButtonName( ) 
+  std::string SelectEntryCommand_View::getMyOptionsRadioButtonGroupSelectedEntry( ) 
   {
-    return this->MyOptionsRadioButtonName;
-  }
-  std::string SelectEntryCommand_View::getMyOptionsRadioButtonSelectedEntry( ) 
-  {
-    return this->MyOptionsRadioButtonSelectedEntry;
-  }
-  std::vector<SelectEntryCommand_ViewFixedEnumerationOption> SelectEntryCommand_View::getFixedEnumerationRadioButtonName( ) 
-  {
-    return this->FixedEnumerationRadioButtonName;
-  }
-  SelectEntryCommand_ViewFixedEnumerationOption SelectEntryCommand_View::getFixedEnumerationRadioButtonSelectedEntry( ) 
-  {
-    return this->FixedEnumerationRadioButtonSelectedEntry;
+    return this->MyOptionsRadioButtonGroupSelectedEntry;
   }
   void SelectEntryCommand_View::myElementsEntrySelected(std::string entryName ) 
   {
     
   }
   void SelectEntryCommand_View::myOptionsEntrySelected(std::string entryName ) 
-  {
-    
-  }
-  void SelectEntryCommand_View::fixedEnumerationEntrySelected(SelectEntryCommand_ViewFixedEnumerationOption entryName ) 
   {
     
   }

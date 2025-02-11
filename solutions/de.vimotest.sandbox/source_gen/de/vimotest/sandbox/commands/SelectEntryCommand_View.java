@@ -14,26 +14,12 @@ public class SelectEntryCommand_View {
   public String getMyElementsComboBoxSelectedEntry() {
     return this.MyElementsComboBoxSelectedEntry;
   }
-  private List<String> MyOptionsRadioButtonName = new LinkedList<>();
-  public List<String> getMyOptionsRadioButtonName() {
-    return this.MyOptionsRadioButtonName;
-  }
-  private String MyOptionsRadioButtonSelectedEntry;
-  public String getMyOptionsRadioButtonSelectedEntry() {
-    return this.MyOptionsRadioButtonSelectedEntry;
-  }
-  private List<SelectEntryCommand_ViewFixedEnumerationOption> FixedEnumerationRadioButtonName = new LinkedList<>();
-  public List<SelectEntryCommand_ViewFixedEnumerationOption> getFixedEnumerationRadioButtonName() {
-    return this.FixedEnumerationRadioButtonName;
-  }
-  private SelectEntryCommand_ViewFixedEnumerationOption FixedEnumerationRadioButtonSelectedEntry;
-  public SelectEntryCommand_ViewFixedEnumerationOption getFixedEnumerationRadioButtonSelectedEntry() {
-    return this.FixedEnumerationRadioButtonSelectedEntry;
+  private String MyOptionsRadioButtonGroupSelectedEntry;
+  public String getMyOptionsRadioButtonGroupSelectedEntry() {
+    return this.MyOptionsRadioButtonGroupSelectedEntry;
   }
   public void myElementsEntrySelected(String entryName) {
   }
   public void myOptionsEntrySelected(String entryName) {
-  }
-  public void fixedEnumerationEntrySelected(SelectEntryCommand_ViewFixedEnumerationOption entryName) {
   }
 }

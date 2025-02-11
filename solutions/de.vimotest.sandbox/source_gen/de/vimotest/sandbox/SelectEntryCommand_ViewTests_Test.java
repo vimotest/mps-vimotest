@@ -7,7 +7,6 @@ import de.vimotest.sandbox.commands.SelectEntryCommand_ViewTestSetup;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.commands.SelectEntryCommand_ViewTestSetupImpl;
-import de.vimotest.sandbox.commands.SelectEntryCommand_ViewFixedEnumerationOption;
 import java.util.List;
 import org.junit.Assert;
 
@@ -24,11 +23,6 @@ public class SelectEntryCommand_ViewTests_Test {
   public void test_Select_Entry_RadioButton_Call_given_when_select_entry_B_in_MyOptions_then_() throws Exception {
     this.BuildSut();
     this.when_select_entry_B_in_MyOptions();
-  }
-  @Test
-  public void test_Select_Entry_RadioButton_Call_Fixed_Enumeration_given_when_select_entry_OptionB_in_FixedEnumeration_then_() throws Exception {
-    this.BuildSut();
-    this.when_select_entry_OptionB_in_FixedEnumeration();
   }
   @BeforeEach
   public void setUp() {
@@ -51,9 +45,6 @@ public class SelectEntryCommand_ViewTests_Test {
   }
   public void when_select_entry_B_in_MyOptions() {
     this.sut.myOptionsEntrySelected("B");
-  }
-  public void when_select_entry_OptionB_in_FixedEnumeration() {
-    this.sut.fixedEnumerationEntrySelected(SelectEntryCommand_ViewFixedEnumerationOption.OptionB);
   }
 
 

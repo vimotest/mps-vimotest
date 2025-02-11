@@ -1,35 +1,21 @@
 
 #include "RadioButton_View.h"
 #include "RadioButton_View.h"
-#include <vector>
-#include "RadioButton_ViewFixedEnumerationOption.h"
 #include <string>
 
 namespace widgetassertions
 {
-  std::vector<std::string> RadioButton_View::getMyChoicesRadioButtonName( ) 
+  std::string RadioButton_View::getOptionsRadioButtonGroupSelectedEntry( ) 
   {
-    return this->MyChoicesRadioButtonName;
+    return this->OptionsRadioButtonGroupSelectedEntry;
   }
-  std::string RadioButton_View::getMyChoicesRadioButtonSelectedEntry( ) 
+  bool RadioButton_View::getIsOptionsRadioButtonGroupVisible( ) 
   {
-    return this->MyChoicesRadioButtonSelectedEntry;
+    return this->isOptionsRadioButtonGroupVisible;
   }
-  bool RadioButton_View::getIsMyChoicesRadioButtonVisible( ) 
+  bool RadioButton_View::getIsOptionsRadioButtonGroupEnabled( ) 
   {
-    return this->isMyChoicesRadioButtonVisible;
-  }
-  bool RadioButton_View::getIsMyChoicesRadioButtonEnabled( ) 
-  {
-    return this->isMyChoicesRadioButtonEnabled;
-  }
-  std::vector<RadioButton_ViewFixedEnumerationOption> RadioButton_View::getFixedEnumerationRadioButtonName( ) 
-  {
-    return this->FixedEnumerationRadioButtonName;
-  }
-  RadioButton_ViewFixedEnumerationOption RadioButton_View::getFixedEnumerationRadioButtonSelectedEntry( ) 
-  {
-    return this->FixedEnumerationRadioButtonSelectedEntry;
+    return this->isOptionsRadioButtonGroupEnabled;
   }
 }
 

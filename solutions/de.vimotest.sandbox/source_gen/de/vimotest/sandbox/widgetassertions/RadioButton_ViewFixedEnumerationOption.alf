@@ -1,7 +1,0 @@
-namespace widgetassertions ;
-
-
-
-enum RadioButton_ViewFixedEnumerationOption {
-  OptionA, OptionB
-}

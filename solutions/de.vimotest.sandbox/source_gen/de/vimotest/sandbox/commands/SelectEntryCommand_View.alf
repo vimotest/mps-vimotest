@@ -16,33 +16,13 @@ class SelectEntryCommand_View {
   return this.MyElementsComboBoxSelectedEntry;
  }
   
-  private MyOptionsRadioButtonName : String [ * ]  ;
+  private MyOptionsRadioButtonGroupSelectedEntry : String  ;
   
-  public getMyOptionsRadioButtonName (  ) : String [ * ]  {
-  return this.MyOptionsRadioButtonName;
- }
-  
-  private MyOptionsRadioButtonSelectedEntry : String  ;
-  
-  public getMyOptionsRadioButtonSelectedEntry (  ) : String  {
-  return this.MyOptionsRadioButtonSelectedEntry;
- }
-  
-  private FixedEnumerationRadioButtonName : SelectEntryCommand_ViewFixedEnumerationOption [ * ]  ;
-  
-  public getFixedEnumerationRadioButtonName (  ) : SelectEntryCommand_ViewFixedEnumerationOption [ * ]  {
-  return this.FixedEnumerationRadioButtonName;
- }
-  
-  private FixedEnumerationRadioButtonSelectedEntry : SelectEntryCommand_ViewFixedEnumerationOption  ;
-  
-  public getFixedEnumerationRadioButtonSelectedEntry (  ) : SelectEntryCommand_ViewFixedEnumerationOption  {
-  return this.FixedEnumerationRadioButtonSelectedEntry;
+  public getMyOptionsRadioButtonGroupSelectedEntry (  ) : String  {
+  return this.MyOptionsRadioButtonGroupSelectedEntry;
  }
   
   public myElementsEntrySelected (   in entryName: String  ) {     }
   
   public myOptionsEntrySelected (   in entryName: String  ) {     }
-  
-  public fixedEnumerationEntrySelected (   in entryName: SelectEntryCommand_ViewFixedEnumerationOption  ) {     }
 }

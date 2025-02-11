@@ -8,30 +8,24 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.widgetassertions.RadioButton_ViewTestSetupImpl;
 import org.junit.Assert;
-import de.vimotest.sandbox.widgetassertions.RadioButton_ViewFixedEnumerationOption;
 
 public class RadioButton_ViewTests_Test {
   private RadioButton_View sut;
   private RadioButton_ViewTestSetup testSetup;
   @Test
-  public void test_Select_Option_given_when_then_MyChoices_selected_OptionC_() throws Exception {
+  public void test_Select_Option_given_when_then_Options_selected_OptionB_() throws Exception {
     this.BuildSut();
-    this.then_MyChoices_selected_OptionC_();
+    this.then_Options_selected_OptionB_();
   }
   @Test
-  public void test_RadioButton_disabled_given_when_then_MyChoices_selected_OptionC_and_is_not_enabled() throws Exception {
+  public void test_RadioButton_disabled_given_when_then_Options_selected_OptionA_() throws Exception {
     this.BuildSut();
-    this.then_MyChoices_selected_OptionC_and_is_not_enabled();
+    this.then_Options_selected_OptionA_();
   }
   @Test
-  public void test_RadioButton_invisible_given_when_then_MyChoices_selected_OptionC_and_is_not_visible() throws Exception {
+  public void test_RadioButton_invisible_given_when_then_Options_selected_OptionA_() throws Exception {
     this.BuildSut();
-    this.then_MyChoices_selected_OptionC_and_is_not_visible();
-  }
-  @Test
-  public void test_RadioButton_Fixed_Enumeration_given_when_then_FixedEnumeration_selected_OptionB_() throws Exception {
-    this.BuildSut();
-    this.then_FixedEnumeration_selected_OptionB_();
+    this.then_Options_selected_OptionA__1();
   }
   @BeforeEach
   public void setUp() {
@@ -51,18 +45,13 @@ public class RadioButton_ViewTests_Test {
 
 
 
-  public void then_MyChoices_selected_OptionC_() {
-    Assert.assertEquals("OptionC", this.sut.getMyChoicesRadioButtonSelectedEntry());
+  public void then_Options_selected_OptionB_() {
+    Assert.assertEquals("OptionB", this.sut.getOptionsRadioButtonGroupSelectedEntry());
   }
-  public void then_MyChoices_selected_OptionC_and_is_not_enabled() {
-    Assert.assertEquals("OptionC", this.sut.getMyChoicesRadioButtonSelectedEntry());
-    Assert.assertFalse(this.sut.getIsMyChoicesRadioButtonEnabled());
+  public void then_Options_selected_OptionA_() {
+    Assert.assertEquals("OptionA", this.sut.getOptionsRadioButtonGroupSelectedEntry());
   }
-  public void then_MyChoices_selected_OptionC_and_is_not_visible() {
-    Assert.assertEquals("OptionC", this.sut.getMyChoicesRadioButtonSelectedEntry());
-    Assert.assertFalse(this.sut.getIsMyChoicesRadioButtonVisible());
-  }
-  public void then_FixedEnumeration_selected_OptionB_() {
-    Assert.assertEquals(RadioButton_ViewFixedEnumerationOption.OptionB, this.sut.getFixedEnumerationRadioButtonSelectedEntry());
+  public void then_Options_selected_OptionA__1() {
+    Assert.assertEquals("OptionA", this.sut.getOptionsRadioButtonGroupSelectedEntry());
   }
 }

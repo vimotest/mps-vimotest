@@ -26,11 +26,6 @@ class SelectEntryCommand_ViewTests {
    this.when_select_entry_B_in_MyOptions (  );
  }
   
-  public Select_Entry_RadioButton_Call_Fixed_Enumeration_given_when_select_entry_OptionB_in_FixedEnumeration_then_ (  ) {
-  this.BuildSut (  );
-   this.when_select_entry_OptionB_in_FixedEnumeration (  );
- }
-  
   
   protected BuildSut (  ) {
   this.sut = this.testSetup.BuildSut (  );
@@ -49,10 +44,6 @@ class SelectEntryCommand_ViewTests {
   
   public when_select_entry_B_in_MyOptions (  ) {
   this.sut.myOptionsEntrySelected ( "B" );
- }
-  
-  public when_select_entry_OptionB_in_FixedEnumeration (  ) {
-  this.sut.fixedEnumerationEntrySelected ( OptionB );
  }
   
   // Then Helper Definitions

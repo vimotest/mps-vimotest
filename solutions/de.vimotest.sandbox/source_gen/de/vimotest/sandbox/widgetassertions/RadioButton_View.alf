@@ -4,39 +4,21 @@ namespace widgetassertions ;
 
 class RadioButton_View {
   
-  private MyChoicesRadioButtonName : String [ * ]  ;
+  private OptionsRadioButtonGroupSelectedEntry : String  ;
   
-  public getMyChoicesRadioButtonName (  ) : String [ * ]  {
-  return this.MyChoicesRadioButtonName;
+  public getOptionsRadioButtonGroupSelectedEntry (  ) : String  {
+  return this.OptionsRadioButtonGroupSelectedEntry;
  }
   
-  private MyChoicesRadioButtonSelectedEntry : String  ;
+  private isOptionsRadioButtonGroupVisible : Boolean  ;
   
-  public getMyChoicesRadioButtonSelectedEntry (  ) : String  {
-  return this.MyChoicesRadioButtonSelectedEntry;
+  public getIsOptionsRadioButtonGroupVisible (  ) : Boolean  {
+  return this.isOptionsRadioButtonGroupVisible;
  }
   
-  private isMyChoicesRadioButtonVisible : Boolean  ;
+  private isOptionsRadioButtonGroupEnabled : Boolean  ;
   
-  public getIsMyChoicesRadioButtonVisible (  ) : Boolean  {
-  return this.isMyChoicesRadioButtonVisible;
- }
-  
-  private isMyChoicesRadioButtonEnabled : Boolean  ;
-  
-  public getIsMyChoicesRadioButtonEnabled (  ) : Boolean  {
-  return this.isMyChoicesRadioButtonEnabled;
- }
-  
-  private FixedEnumerationRadioButtonName : RadioButton_ViewFixedEnumerationOption [ * ]  ;
-  
-  public getFixedEnumerationRadioButtonName (  ) : RadioButton_ViewFixedEnumerationOption [ * ]  {
-  return this.FixedEnumerationRadioButtonName;
- }
-  
-  private FixedEnumerationRadioButtonSelectedEntry : RadioButton_ViewFixedEnumerationOption  ;
-  
-  public getFixedEnumerationRadioButtonSelectedEntry (  ) : RadioButton_ViewFixedEnumerationOption  {
-  return this.FixedEnumerationRadioButtonSelectedEntry;
+  public getIsOptionsRadioButtonGroupEnabled (  ) : Boolean  {
+  return this.isOptionsRadioButtonGroupEnabled;
  }
 }

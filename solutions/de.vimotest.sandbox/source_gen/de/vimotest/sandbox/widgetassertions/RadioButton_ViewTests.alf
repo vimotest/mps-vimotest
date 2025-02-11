@@ -15,24 +15,19 @@ class RadioButton_ViewTests {
  }
   
   
-  public Select_Option_given_when_then_MyChoices_selected_OptionC_ (  ) {
+  public Select_Option_given_when_then_Options_selected_OptionB_ (  ) {
   this.BuildSut (  );
-   this.then_MyChoices_selected_OptionC_ (  );
+   this.then_Options_selected_OptionB_ (  );
  }
   
-  public RadioButton_disabled_given_when_then_MyChoices_selected_OptionC_and_is_not_enabled (  ) {
+  public RadioButton_disabled_given_when_then_Options_selected_OptionA_ (  ) {
   this.BuildSut (  );
-   this.then_MyChoices_selected_OptionC_and_is_not_enabled (  );
+   this.then_Options_selected_OptionA_ (  );
  }
   
-  public RadioButton_invisible_given_when_then_MyChoices_selected_OptionC_and_is_not_visible (  ) {
+  public RadioButton_invisible_given_when_then_Options_selected_OptionA_ (  ) {
   this.BuildSut (  );
-   this.then_MyChoices_selected_OptionC_and_is_not_visible (  );
- }
-  
-  public RadioButton_Fixed_Enumeration_given_when_then_FixedEnumeration_selected_OptionB_ (  ) {
-  this.BuildSut (  );
-   this.then_FixedEnumeration_selected_OptionB_ (  );
+   this.then_Options_selected_OptionA__1 (  );
  }
   
   
@@ -50,21 +45,15 @@ class RadioButton_ViewTests {
   // Then Helper Definitions
 
   
-  public then_MyChoices_selected_OptionC_ (  ) {
-  AssertEqual ( "OptionC", this.sut.getMyChoicesRadioButtonSelectedEntry (  ) );
+  public then_Options_selected_OptionB_ (  ) {
+  AssertEqual ( "OptionB", this.sut.getOptionsRadioButtonGroupSelectedEntry (  ) );
  }
   
-  public then_MyChoices_selected_OptionC_and_is_not_enabled (  ) {
-  AssertEqual ( "OptionC", this.sut.getMyChoicesRadioButtonSelectedEntry (  ) );
-   AssertFalse ( this.sut.getIsMyChoicesRadioButtonEnabled (  ) );
+  public then_Options_selected_OptionA_ (  ) {
+  AssertEqual ( "OptionA", this.sut.getOptionsRadioButtonGroupSelectedEntry (  ) );
  }
   
-  public then_MyChoices_selected_OptionC_and_is_not_visible (  ) {
-  AssertEqual ( "OptionC", this.sut.getMyChoicesRadioButtonSelectedEntry (  ) );
-   AssertFalse ( this.sut.getIsMyChoicesRadioButtonVisible (  ) );
- }
-  
-  public then_FixedEnumeration_selected_OptionB_ (  ) {
-  AssertEqual ( OptionB, this.sut.getFixedEnumerationRadioButtonSelectedEntry (  ) );
+  public then_Options_selected_OptionA__1 (  ) {
+  AssertEqual ( "OptionA", this.sut.getOptionsRadioButtonGroupSelectedEntry (  ) );
  }
 }

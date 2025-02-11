@@ -395,6 +395,7 @@
         <child id="6487694277737356034" name="additionalFields" index="3pPB2g" />
       </concept>
       <concept id="1194692461793300730" name="de.vimotest.viewmodel.structure.RadioButtonGroupWidget" flags="ng" index="39$Fqc">
+        <property id="7392067456843023282" name="isFixedEnumeration" index="2ejQmt" />
         <child id="1194692461793300734" name="selectEntryCommand" index="39$Fq8" />
         <child id="1194692461793300732" name="visibilityFeature" index="39$Fqa" />
         <child id="1194692461793300733" name="enabledFeature" index="39$Fqb" />
@@ -3467,6 +3468,7 @@
       </node>
       <node concept="39$Fqc" id="5LG6vEKw9S7" role="103ZUC">
         <property role="TrG5h" value="MyOptions" />
+        <property role="2ejQmt" value="true" />
         <node concept="992OH" id="5LG6vEKw9Sv" role="39$FNk">
           <property role="TrG5h" value="A" />
           <node concept="V3Zf6" id="5LG6vEKw9Sw" role="39$FNj">
@@ -4788,6 +4790,7 @@
     <node concept="103ZXB" id="7NXUkdQpV_e" role="103ZXF">
       <node concept="39$Fqc" id="3YuUBZ_RxKY" role="103ZUC">
         <property role="TrG5h" value="Options" />
+        <property role="2ejQmt" value="true" />
         <node concept="7cNxT" id="3YuUBZ_RxL0" role="39$Fqd" />
         <node concept="C4FCg" id="3YuUBZ_RxL2" role="39$Fqa">
           <property role="2VM7R0" value="true" />

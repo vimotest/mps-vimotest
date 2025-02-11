@@ -4,8 +4,8 @@ package de.vimotest.sandbox.widgetassertions;
 
 
 public class RadioButton_View {
-  private String OptionsRadioButtonGroupSelectedEntry;
-  public String getOptionsRadioButtonGroupSelectedEntry() {
+  private RadioButton_ViewOptionsOption OptionsRadioButtonGroupSelectedEntry;
+  public RadioButton_ViewOptionsOption getOptionsRadioButtonGroupSelectedEntry() {
     return this.OptionsRadioButtonGroupSelectedEntry;
   }
   private Boolean isOptionsRadioButtonGroupVisible;

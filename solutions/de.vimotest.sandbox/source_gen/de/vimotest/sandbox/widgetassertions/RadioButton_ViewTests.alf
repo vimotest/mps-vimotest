@@ -46,14 +46,14 @@ class RadioButton_ViewTests {
 
   
   public then_Options_selected_OptionB_ (  ) {
-  AssertEqual ( "OptionB", this.sut.getOptionsRadioButtonGroupSelectedEntry (  ) );
+  AssertEqual ( OptionB, this.sut.getOptionsRadioButtonGroupSelectedEntry (  ) );
  }
   
   public then_Options_selected_OptionA_ (  ) {
-  AssertEqual ( "OptionA", this.sut.getOptionsRadioButtonGroupSelectedEntry (  ) );
+  AssertEqual ( OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry (  ) );
  }
   
   public then_Options_selected_OptionA__1 (  ) {
-  AssertEqual ( "OptionA", this.sut.getOptionsRadioButtonGroupSelectedEntry (  ) );
+  AssertEqual ( OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry (  ) );
  }
 }

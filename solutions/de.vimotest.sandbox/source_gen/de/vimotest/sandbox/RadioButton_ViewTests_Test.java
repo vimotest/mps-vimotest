@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.widgetassertions.RadioButton_ViewTestSetupImpl;
 import org.junit.Assert;
+import de.vimotest.sandbox.widgetassertions.RadioButton_ViewOptionsOption;
 
 public class RadioButton_ViewTests_Test {
   private RadioButton_View sut;
@@ -46,12 +47,12 @@ public class RadioButton_ViewTests_Test {
 
 
   public void then_Options_selected_OptionB_() {
-    Assert.assertEquals("OptionB", this.sut.getOptionsRadioButtonGroupSelectedEntry());
+    Assert.assertEquals(RadioButton_ViewOptionsOption.OptionB, this.sut.getOptionsRadioButtonGroupSelectedEntry());
   }
   public void then_Options_selected_OptionA_() {
-    Assert.assertEquals("OptionA", this.sut.getOptionsRadioButtonGroupSelectedEntry());
+    Assert.assertEquals(RadioButton_ViewOptionsOption.OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry());
   }
   public void then_Options_selected_OptionA__1() {
-    Assert.assertEquals("OptionA", this.sut.getOptionsRadioButtonGroupSelectedEntry());
+    Assert.assertEquals(RadioButton_ViewOptionsOption.OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry());
   }
 }

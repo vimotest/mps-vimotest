@@ -1,11 +1,11 @@
 
 #include "RadioButton_View.h"
 #include "RadioButton_View.h"
-#include <string>
+#include "RadioButton_ViewOptionsOption.h"
 
 namespace widgetassertions
 {
-  std::string RadioButton_View::getOptionsRadioButtonGroupSelectedEntry( ) 
+  RadioButton_ViewOptionsOption RadioButton_View::getOptionsRadioButtonGroupSelectedEntry( ) 
   {
     return this->OptionsRadioButtonGroupSelectedEntry;
   }

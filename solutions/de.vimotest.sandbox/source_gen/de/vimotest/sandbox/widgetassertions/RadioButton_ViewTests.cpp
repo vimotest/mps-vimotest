@@ -2,7 +2,7 @@
 #include <gtest/gtest.h>
 #include <memory>
 #include "RadioButton_ViewTestSetup.h"
-#include <string>
+#include "RadioButton_ViewOptionsOption.h"
 #include "RadioButton_View.h"
 #include "RadioButton_ViewTestSetupImpl.h"
 
@@ -46,15 +46,15 @@ namespace widgetassertions
   }
   void RadioButton_ViewTests::then_Options_selected_OptionB_( ) 
   {
-    EXPECT_EQ(std::string("OptionB"), this->sut->getOptionsRadioButtonGroupSelectedEntry());
+    EXPECT_EQ(widgetassertions::RadioButton_ViewOptionsOption::OptionB, this->sut->getOptionsRadioButtonGroupSelectedEntry());
   }
   void RadioButton_ViewTests::then_Options_selected_OptionA_( ) 
   {
-    EXPECT_EQ(std::string("OptionA"), this->sut->getOptionsRadioButtonGroupSelectedEntry());
+    EXPECT_EQ(widgetassertions::RadioButton_ViewOptionsOption::OptionA, this->sut->getOptionsRadioButtonGroupSelectedEntry());
   }
   void RadioButton_ViewTests::then_Options_selected_OptionA__1( ) 
   {
-    EXPECT_EQ(std::string("OptionA"), this->sut->getOptionsRadioButtonGroupSelectedEntry());
+    EXPECT_EQ(widgetassertions::RadioButton_ViewOptionsOption::OptionA, this->sut->getOptionsRadioButtonGroupSelectedEntry());
   }
 }
 

@@ -4,9 +4,9 @@ namespace widgetassertions ;
 
 class RadioButton_View {
   
-  private OptionsRadioButtonGroupSelectedEntry : String  ;
+  private OptionsRadioButtonGroupSelectedEntry : RadioButton_ViewOptionsOption  ;
   
-  public getOptionsRadioButtonGroupSelectedEntry (  ) : String  {
+  public getOptionsRadioButtonGroupSelectedEntry (  ) : RadioButton_ViewOptionsOption  {
   return this.OptionsRadioButtonGroupSelectedEntry;
  }
   

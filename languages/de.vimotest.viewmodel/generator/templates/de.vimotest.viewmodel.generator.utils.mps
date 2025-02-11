@@ -1487,26 +1487,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="3jx7Ki5tX7" role="3cqZAp" />
-        <node concept="3cpWs8" id="3jx7Ki50ky" role="3cqZAp">
-          <node concept="3cpWsn" id="3jx7Ki50kz" role="3cpWs9">
-            <property role="TrG5h" value="widget" />
-            <node concept="3Tqbb2" id="3jx7Ki4ZXa" role="1tU5fm">
-              <ref role="ehGHo" to="at53:7NXUkdPQshI" resolve="RadioButtonWidget" />
-            </node>
-            <node concept="1PxgMI" id="3jx7Ki50k$" role="33vP2m">
-              <property role="1BlNFB" value="true" />
-              <node concept="chp4Y" id="3jx7Ki50k_" role="3oSUPX">
-                <ref role="cht4Q" to="at53:7NXUkdPQshI" resolve="RadioButtonWidget" />
-              </node>
-              <node concept="2OqwBi" id="3jx7Ki50kA" role="1m5AlR">
-                <node concept="37vLTw" id="3jx7Ki50kB" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3jx7Ki4NFq" resolve="node" />
-                </node>
-                <node concept="1mfA1w" id="3jx7Ki50kC" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="3jx7Ki4NFa" role="3cqZAp">
           <node concept="3cpWs3" id="3jx7Ki4NFb" role="3clFbG">
             <node concept="Xl_RD" id="3jx7Ki4NFc" role="3uHU7w">
@@ -1521,7 +1501,7 @@
                     <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   </node>
                   <node concept="37vLTw" id="3jx7Ki52pD" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3jx7Ki50kz" resolve="widget" />
+                    <ref role="3cqZAo" node="3jx7Ki4NFq" resolve="node" />
                   </node>
                 </node>
               </node>

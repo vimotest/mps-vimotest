@@ -9601,7 +9601,21 @@
     <property role="3GE5qa" value="widgets.choices" />
     <ref role="13h7C2" to="at53:12kpBrp1H3U" resolve="RadioButtonGroupWidget" />
     <node concept="13hLZK" id="12kpBrp1H4e" role="13h7CW">
-      <node concept="3clFbS" id="12kpBrp1H4f" role="2VODD2" />
+      <node concept="3clFbS" id="12kpBrp1H4f" role="2VODD2">
+        <node concept="3clFbF" id="5LG6vELfn5P" role="3cqZAp">
+          <node concept="37vLTI" id="5LG6vELfoQ$" role="3clFbG">
+            <node concept="3clFbT" id="5LG6vELfoRb" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="5LG6vELfnjV" role="37vLTJ">
+              <node concept="13iPFW" id="5LG6vELfn5O" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5LG6vELfn$E" role="2OqNvi">
+                <ref role="3TsBF5" to="at53:6qlTyZCQCeM" resolve="isFixedEnumeration" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="12kpBrp1H4g" role="13h7CS">
       <property role="TrG5h" value="createEditorCell" />

@@ -2,6 +2,7 @@
 #include "SelectEntryCommand_View.h"
 #include "SelectEntryCommand_View.h"
 #include <vector>
+#include "SelectEntryCommand_ViewMyOptionsOption.h"
 #include <string>
 
 namespace commands
@@ -14,7 +15,7 @@ namespace commands
   {
     return this->MyElementsComboBoxSelectedEntry;
   }
-  std::string SelectEntryCommand_View::getMyOptionsRadioButtonGroupSelectedEntry( ) 
+  SelectEntryCommand_ViewMyOptionsOption SelectEntryCommand_View::getMyOptionsRadioButtonGroupSelectedEntry( ) 
   {
     return this->MyOptionsRadioButtonGroupSelectedEntry;
   }
@@ -22,7 +23,7 @@ namespace commands
   {
     
   }
-  void SelectEntryCommand_View::myOptionsEntrySelected(std::string entryName ) 
+  void SelectEntryCommand_View::myOptionsEntrySelected(SelectEntryCommand_ViewMyOptionsOption entryName ) 
   {
     
   }

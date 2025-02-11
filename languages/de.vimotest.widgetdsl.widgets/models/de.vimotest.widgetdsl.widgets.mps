@@ -397,9 +397,6 @@
       <property role="TrG5h" value="RadioButton" />
       <property role="2SiFfI" value="radio button" />
       <property role="i96k9" value="true" />
-      <node concept="2WVz4l" id="12kpBrp1H3T" role="2WV$Zc">
-        <ref role="2WVz4k" node="7H4Lpx0an3A" resolve="Text" />
-      </node>
       <node concept="2WVz4l" id="12kpBrp1H3S" role="2WV$Zc">
         <ref role="2WVz4k" node="1Yc3x6zoTLW" resolve="Visibility" />
       </node>

@@ -1434,13 +1434,6 @@
     <property role="34LRSv" value="radio button" />
     <property role="3GE5qa" value="widgets.choices" />
     <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
-    <node concept="1TJgyj" id="12kpBrp1HE_" role="1TKVEi">
-      <property role="IQ2ns" value="1194692461793303205" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="textFeature" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7H4Lpx0iNpu" resolve="TextFeature" />
-    </node>
     <node concept="1TJgyj" id="7NXUkdPQshL" role="1TKVEi">
       <property role="IQ2ns" value="9006611305760146545" />
       <property role="20kJfa" value="visibilityFeature" />

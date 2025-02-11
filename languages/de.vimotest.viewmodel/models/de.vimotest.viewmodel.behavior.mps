@@ -9315,107 +9315,29 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="12kpBrp2phz" role="3cqZAp" />
-        <node concept="3clFbJ" id="12kpBrp2CVs" role="3cqZAp">
-          <node concept="3clFbS" id="12kpBrp2CVu" role="3clFbx">
-            <node concept="3cpWs8" id="12kpBrp2ph$" role="3cqZAp">
-              <node concept="3cpWsn" id="12kpBrp2ph_" role="3cpWs9">
-                <property role="TrG5h" value="textAccessor" />
-                <node concept="3uibUv" id="12kpBrp2phA" role="1tU5fm">
-                  <ref role="3uigEE" to="g51k:~PropertyAccessor" resolve="PropertyAccessor" />
-                </node>
-                <node concept="2ShNRf" id="12kpBrp2phB" role="33vP2m">
-                  <node concept="1pGfFk" id="12kpBrp2phC" role="2ShVmc">
-                    <property role="373rjd" value="true" />
-                    <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,boolean,boolean)" resolve="PropertyAccessor" />
-                    <node concept="2OqwBi" id="12kpBrp2AF7" role="37wK5m">
-                      <node concept="2OqwBi" id="12kpBrp2_Bg" role="2Oq$k0">
-                        <node concept="37vLTw" id="12kpBrp2phD" role="2Oq$k0">
-                          <ref role="3cqZAo" node="7NXUkdPQFGe" resolve="radioButton" />
-                        </node>
-                        <node concept="3TrEf2" id="12kpBrp2Adg" role="2OqNvi">
-                          <ref role="3Tt5mk" to="at53:12kpBrp1HE_" resolve="textFeature" />
-                        </node>
-                      </node>
-                      <node concept="3TrEf2" id="12kpBrp2BGu" role="2OqNvi">
-                        <ref role="3Tt5mk" to="at53:4xJPu9gt$hE" resolve="defaultText" />
-                      </node>
-                    </node>
-                    <node concept="355D3s" id="12kpBrp2phE" role="37wK5m">
-                      <ref role="355D3t" to="at53:4xJPu9gsd4J" resolve="SingleOrMultiLineString" />
-                      <ref role="355D3u" to="at53:4xJPu9gsdgT" resolve="singleLineValue" />
-                    </node>
-                    <node concept="3clFbT" id="12kpBrp2phF" role="37wK5m" />
-                    <node concept="3clFbT" id="12kpBrp2phG" role="37wK5m" />
-                  </node>
-                </node>
-              </node>
+        <node concept="3clFbF" id="12kpBrp2Fri" role="3cqZAp">
+          <node concept="2OqwBi" id="12kpBrp2Frk" role="3clFbG">
+            <node concept="37vLTw" id="12kpBrp2Frl" role="2Oq$k0">
+              <ref role="3cqZAo" node="12kpBrp2phf" resolve="radioRow" />
             </node>
-            <node concept="3clFbF" id="12kpBrp2phH" role="3cqZAp">
-              <node concept="2OqwBi" id="12kpBrp2phI" role="3clFbG">
-                <node concept="37vLTw" id="12kpBrp2phJ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="12kpBrp2phf" resolve="radioRow" />
-                </node>
-                <node concept="liA8E" id="12kpBrp2phK" role="2OqNvi">
-                  <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
-                  <node concept="2YIFZM" id="12kpBrp2phL" role="37wK5m">
-                    <ref role="37wK5l" to="g51k:~EditorCell_Property.create(jetbrains.mps.openapi.editor.EditorContext,jetbrains.mps.nodeEditor.cells.ModelAccessor,org.jetbrains.mps.openapi.model.SNode)" resolve="create" />
-                    <ref role="1Pybhc" to="g51k:~EditorCell_Property" resolve="EditorCell_Property" />
-                    <node concept="37vLTw" id="12kpBrp2phM" role="37wK5m">
-                      <ref role="3cqZAo" node="7NXUkdPQAVy" resolve="context" />
-                    </node>
-                    <node concept="37vLTw" id="12kpBrp2phN" role="37wK5m">
-                      <ref role="3cqZAo" node="12kpBrp2ph_" resolve="textAccessor" />
-                    </node>
-                    <node concept="37vLTw" id="12kpBrp2phO" role="37wK5m">
+            <node concept="liA8E" id="12kpBrp2Frm" role="2OqNvi">
+              <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
+              <node concept="2ShNRf" id="12kpBrp2Hfz" role="37wK5m">
+                <node concept="1pGfFk" id="12kpBrp329H" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="g51k:~EditorCell_Constant.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="EditorCell_Constant" />
+                  <node concept="37vLTw" id="12kpBrp33o5" role="37wK5m">
+                    <ref role="3cqZAo" node="7NXUkdPQAVy" resolve="context" />
+                  </node>
+                  <node concept="37vLTw" id="12kpBrp33vI" role="37wK5m">
+                    <ref role="3cqZAo" node="7NXUkdPQAVA" resolve="node" />
+                  </node>
+                  <node concept="2OqwBi" id="12kpBrp34V0" role="37wK5m">
+                    <node concept="37vLTw" id="12kpBrp33Iq" role="2Oq$k0">
                       <ref role="3cqZAo" node="7NXUkdPQFGe" resolve="radioButton" />
                     </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="12kpBrp2Ds6" role="3clFbw">
-            <node concept="2OqwBi" id="12kpBrp2CVx" role="2Oq$k0">
-              <node concept="37vLTw" id="12kpBrp2CVy" role="2Oq$k0">
-                <ref role="3cqZAo" node="7NXUkdPQFGe" resolve="radioButton" />
-              </node>
-              <node concept="3TrEf2" id="12kpBrp2CVz" role="2OqNvi">
-                <ref role="3Tt5mk" to="at53:12kpBrp1HE_" resolve="textFeature" />
-              </node>
-            </node>
-            <node concept="3TrcHB" id="12kpBrp2DZb" role="2OqNvi">
-              <ref role="3TsBF5" to="at53:4OohpJQO3xr" resolve="supported" />
-            </node>
-          </node>
-          <node concept="9aQIb" id="12kpBrp2FjN" role="9aQIa">
-            <node concept="3clFbS" id="12kpBrp2FjO" role="9aQI4">
-              <node concept="3clFbF" id="12kpBrp2Fri" role="3cqZAp">
-                <node concept="2OqwBi" id="12kpBrp2Frk" role="3clFbG">
-                  <node concept="37vLTw" id="12kpBrp2Frl" role="2Oq$k0">
-                    <ref role="3cqZAo" node="12kpBrp2phf" resolve="radioRow" />
-                  </node>
-                  <node concept="liA8E" id="12kpBrp2Frm" role="2OqNvi">
-                    <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
-                    <node concept="2ShNRf" id="12kpBrp2Hfz" role="37wK5m">
-                      <node concept="1pGfFk" id="12kpBrp329H" role="2ShVmc">
-                        <property role="373rjd" value="true" />
-                        <ref role="37wK5l" to="g51k:~EditorCell_Constant.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="EditorCell_Constant" />
-                        <node concept="37vLTw" id="12kpBrp33o5" role="37wK5m">
-                          <ref role="3cqZAo" node="7NXUkdPQAVy" resolve="context" />
-                        </node>
-                        <node concept="37vLTw" id="12kpBrp33vI" role="37wK5m">
-                          <ref role="3cqZAo" node="7NXUkdPQAVA" resolve="node" />
-                        </node>
-                        <node concept="2OqwBi" id="12kpBrp34V0" role="37wK5m">
-                          <node concept="37vLTw" id="12kpBrp33Iq" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7NXUkdPQFGe" resolve="radioButton" />
-                          </node>
-                          <node concept="3TrcHB" id="12kpBrp36dT" role="2OqNvi">
-                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                          </node>
-                        </node>
-                      </node>
+                    <node concept="3TrcHB" id="12kpBrp36dT" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
                   </node>
                 </node>

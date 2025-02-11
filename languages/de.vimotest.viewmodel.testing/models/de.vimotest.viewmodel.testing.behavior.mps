@@ -2507,6 +2507,40 @@
       </node>
       <node concept="3cqZAl" id="7NXUkdPQw_C" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="5LG6vEMfblo" role="13h7CS">
+      <property role="TrG5h" value="applyOnRadioButtonGroup" />
+      <ref role="13i0hy" node="12kpBrp1H56" resolve="applyOnRadioButtonGroup" />
+      <node concept="3Tm1VV" id="5LG6vEMfblr" role="1B3o_S" />
+      <node concept="3clFbS" id="5LG6vEMfblu" role="3clF47">
+        <node concept="3clFbJ" id="5LG6vEMfdiX" role="3cqZAp">
+          <node concept="3clFbS" id="5LG6vEMfdiY" role="3clFbx">
+            <node concept="3clFbF" id="5LG6vEMfeJ5" role="3cqZAp">
+              <node concept="BsUDl" id="5LG6vEMfeJ4" role="3clFbG">
+                <ref role="37wK5l" node="5EP_M$dXt_B" resolve="setCommonDisabledStyleOnCell" />
+                <node concept="37vLTw" id="5LG6vEMfeLn" role="37wK5m">
+                  <ref role="3cqZAo" node="5LG6vEMfblv" resolve="radioButtonGroupEditorCell" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="5LG6vEMfdjc" role="3clFbw">
+            <node concept="2OqwBi" id="5LG6vEMfdjd" role="3fr31v">
+              <node concept="13iPFW" id="5LG6vEMfdje" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5LG6vEMfdjf" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:5VrLp2zpew1" resolve="expectedIsEnabled" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5LG6vEMfblv" role="3clF46">
+        <property role="TrG5h" value="radioButtonGroupEditorCell" />
+        <node concept="3uibUv" id="5LG6vEMfblw" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="5LG6vEMfblx" role="3clF45" />
+    </node>
     <node concept="13i0hz" id="44HS8_6k0rG" role="13h7CS">
       <property role="TrG5h" value="applyOnComboBox" />
       <ref role="13i0hy" node="44HS8_67H_a" resolve="applyOnComboBox" />
@@ -3349,6 +3383,66 @@
         </node>
       </node>
       <node concept="3cqZAl" id="7NXUkdQ91rD" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="5LG6vEMf0Bo" role="13h7CS">
+      <property role="TrG5h" value="applyOnRadioButtonGroup" />
+      <ref role="13i0hy" node="12kpBrp1H56" resolve="applyOnRadioButtonGroup" />
+      <node concept="3Tm1VV" id="5LG6vEMf0Br" role="1B3o_S" />
+      <node concept="3clFbS" id="5LG6vEMf0Bu" role="3clF47">
+        <node concept="3clFbJ" id="5LG6vEMf2G3" role="3cqZAp">
+          <node concept="3clFbS" id="5LG6vEMf2G4" role="3clFbx">
+            <node concept="3cpWs8" id="5LG6vEMf2G5" role="3cqZAp">
+              <node concept="3cpWsn" id="5LG6vEMf2G6" role="3cpWs9">
+                <property role="TrG5h" value="groupWrapper" />
+                <node concept="3uibUv" id="5LG6vEMf2G7" role="1tU5fm">
+                  <ref role="3uigEE" to="g51k:~EditorCell_Collection" resolve="EditorCell_Collection" />
+                </node>
+                <node concept="0kSF2" id="5LG6vEMf2G8" role="33vP2m">
+                  <node concept="3uibUv" id="5LG6vEMf2G9" role="0kSFW">
+                    <ref role="3uigEE" to="g51k:~EditorCell_Collection" resolve="EditorCell_Collection" />
+                  </node>
+                  <node concept="37vLTw" id="5LG6vEMf2Ga" role="0kSFX">
+                    <ref role="3cqZAo" node="5LG6vEMf0Bv" resolve="radioButtonGroupEditorCell" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2Gpval" id="5LG6vEMf2Gb" role="3cqZAp">
+              <node concept="2GrKxI" id="5LG6vEMf2Gc" role="2Gsz3X">
+                <property role="TrG5h" value="radioRow" />
+              </node>
+              <node concept="37vLTw" id="5LG6vEMf2Gd" role="2GsD0m">
+                <ref role="3cqZAo" node="5LG6vEMf2G6" resolve="radioRow" />
+              </node>
+              <node concept="3clFbS" id="5LG6vEMf2Ge" role="2LFqv$">
+                <node concept="3clFbF" id="5LG6vEMf7Gn" role="3cqZAp">
+                  <node concept="BsUDl" id="5LG6vEMf7Gm" role="3clFbG">
+                    <ref role="37wK5l" node="7NXUkdPQsiN" resolve="applyOnRadioButton" />
+                    <node concept="2GrUjf" id="5LG6vEMf7Gp" role="37wK5m">
+                      <ref role="2Gs0qQ" node="5LG6vEMf2Gc" resolve="radioRow" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="5LG6vEMf2Gx" role="3clFbw">
+            <node concept="2OqwBi" id="5LG6vEMf2Gy" role="3fr31v">
+              <node concept="13iPFW" id="5LG6vEMf2Gz" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5LG6vEMf2G$" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:5VrLp2zpM0p" resolve="expectedIsVisible" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5LG6vEMf0Bv" role="3clF46">
+        <property role="TrG5h" value="radioButtonGroupEditorCell" />
+        <node concept="3uibUv" id="5LG6vEMf0Bw" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="5LG6vEMf0Bx" role="3clF45" />
     </node>
     <node concept="13i0hz" id="44HS8_6jXrf" role="13h7CS">
       <property role="TrG5h" value="applyOnComboBox" />

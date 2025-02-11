@@ -9539,6 +9539,26 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5LG6vEN6qm9" role="13h7CS">
+      <property role="TrG5h" value="getChildWidgets" />
+      <ref role="13i0hy" node="5LG6vEN5HBW" resolve="getChildWidgets" />
+      <node concept="3Tm1VV" id="5LG6vEN6qma" role="1B3o_S" />
+      <node concept="3clFbS" id="5LG6vEN6qme" role="3clF47">
+        <node concept="3clFbF" id="5LG6vEN6rhE" role="3cqZAp">
+          <node concept="2OqwBi" id="5LG6vEN6rzi" role="3clFbG">
+            <node concept="13iPFW" id="5LG6vEN6rhD" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="5LG6vEN6rPy" role="2OqNvi">
+              <ref role="3TtcxE" to="at53:12kpBrp1HEy" resolve="radioButtonWidgets" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="5LG6vEN6qmf" role="3clF45">
+        <node concept="3Tqbb2" id="5LG6vEN6qmg" role="A3Ik2">
+          <ref role="ehGHo" to="at53:F907haLIRF" resolve="ViewWidget" />
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="12kpBrp1H4g" role="13h7CS">
       <property role="TrG5h" value="createEditorCell" />
       <ref role="13i0hy" node="6mWHjmRL0Kv" />
@@ -9893,6 +9913,25 @@
       <node concept="2I9FWS" id="7kzHNKBtO8e" role="3clF45">
         <ref role="2I9WkF" to="at53:1Ukm5RfrSRo" resolve="IChoiceEntry" />
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="5LG6vEN6pdC">
+    <property role="3GE5qa" value="widgets.util" />
+    <ref role="13h7C2" to="at53:5LG6vEN6pdB" resolve="IViewWidgetComposite" />
+    <node concept="13i0hz" id="5LG6vEN5HBW" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getChildWidgets" />
+      <node concept="3Tm1VV" id="5LG6vEN5HBX" role="1B3o_S" />
+      <node concept="A3Dl8" id="5LG6vEN5HCy" role="3clF45">
+        <node concept="3Tqbb2" id="5LG6vEN5Iea" role="A3Ik2">
+          <ref role="ehGHo" to="at53:F907haLIRF" resolve="ViewWidget" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5LG6vEN5HBZ" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="5LG6vEN6pdD" role="13h7CW">
+      <node concept="3clFbS" id="5LG6vEN6pdE" role="2VODD2" />
     </node>
   </node>
 </model>

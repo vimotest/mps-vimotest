@@ -5084,6 +5084,45 @@
             <ref role="v9R2y" node="7ceEXPSxJ9p" resolve="switch_ViewWidgetCheckValue" />
           </node>
         </node>
+        <node concept="PDIRY" id="5LG6vEMPIyk" role="PCHzz">
+          <node concept="raruj" id="5LG6vEMPIG9" role="lGtFl" />
+          <node concept="1W57fq" id="5LG6vEN6n2h" role="lGtFl">
+            <node concept="3IZrLx" id="5LG6vEN6n2i" role="3IZSJc">
+              <node concept="3clFbS" id="5LG6vEN6n2j" role="2VODD2">
+                <node concept="3clFbF" id="5LG6vEN6nhU" role="3cqZAp">
+                  <node concept="2OqwBi" id="5LG6vEN6nEn" role="3clFbG">
+                    <node concept="30H73N" id="5LG6vEN6nhT" role="2Oq$k0" />
+                    <node concept="1mIQ4w" id="5LG6vEN6nMs" role="2OqNvi">
+                      <node concept="chp4Y" id="5LG6vEN6nPg" role="cj9EA">
+                        <ref role="cht4Q" to="53m0:5LG6vEN5HBC" resolve="IViewWidgetCheckComposite" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2b32R4" id="5LG6vEMPIGb" role="lGtFl">
+            <node concept="3JmXsc" id="5LG6vEMPIGe" role="2P8S$">
+              <node concept="3clFbS" id="5LG6vEMPIGf" role="2VODD2">
+                <node concept="3clFbF" id="5LG6vEMPIGl" role="3cqZAp">
+                  <node concept="2OqwBi" id="5LG6vEN6oXS" role="3clFbG">
+                    <node concept="1PxgMI" id="5LG6vEN6ozP" role="2Oq$k0">
+                      <property role="1BlNFB" value="true" />
+                      <node concept="chp4Y" id="5LG6vEN6oFf" role="3oSUPX">
+                        <ref role="cht4Q" to="53m0:5LG6vEN5HBC" resolve="IViewWidgetCheckComposite" />
+                      </node>
+                      <node concept="30H73N" id="5LG6vEMPIGk" role="1m5AlR" />
+                    </node>
+                    <node concept="2qgKlT" id="5LG6vEN6p7r" role="2OqNvi">
+                      <ref role="37wK5l" to="fwln:5LG6vEN5HBW" resolve="getChildChecks" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

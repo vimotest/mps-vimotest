@@ -15,8 +15,8 @@ namespace widgetassertions
     std::shared_ptr<RadioButton_ViewTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void then_Options_selected_OptionB_() ;
-    virtual void then_Options_selected_OptionA_() ;
-    virtual void then_Options_selected_OptionA__1() ;
+    virtual void then_Options_selected_OptionA_and_OptionB_is_not_enabled() ;
+    virtual void then_Options_selected_OptionA_and_OptionB_is_not_visible() ;
     protected:
     void SetUp() override ;
   };
@@ -30,15 +30,15 @@ namespace widgetassertions
     this->BuildSut();
     this->then_Options_selected_OptionB_();
   }
-  TEST_F(RadioButton_ViewTests,  RadioButton_disabled_given_when_then_Options_selected_OptionA_) 
+  TEST_F(RadioButton_ViewTests,  RadioButton_disabled_given_when_then_Options_selected_OptionA_and_OptionB_is_not_enabled) 
   {
     this->BuildSut();
-    this->then_Options_selected_OptionA_();
+    this->then_Options_selected_OptionA_and_OptionB_is_not_enabled();
   }
-  TEST_F(RadioButton_ViewTests,  RadioButton_invisible_given_when_then_Options_selected_OptionA_) 
+  TEST_F(RadioButton_ViewTests,  RadioButton_invisible_given_when_then_Options_selected_OptionA_and_OptionB_is_not_visible) 
   {
     this->BuildSut();
-    this->then_Options_selected_OptionA__1();
+    this->then_Options_selected_OptionA_and_OptionB_is_not_visible();
   }
   void RadioButton_ViewTests::BuildSut( ) 
   {
@@ -48,13 +48,15 @@ namespace widgetassertions
   {
     EXPECT_EQ(widgetassertions::RadioButton_ViewOptionsOption::OptionB, this->sut->getOptionsRadioButtonGroupSelectedEntry());
   }
-  void RadioButton_ViewTests::then_Options_selected_OptionA_( ) 
+  void RadioButton_ViewTests::then_Options_selected_OptionA_and_OptionB_is_not_enabled( ) 
   {
     EXPECT_EQ(widgetassertions::RadioButton_ViewOptionsOption::OptionA, this->sut->getOptionsRadioButtonGroupSelectedEntry());
+    EXPECT_FALSE(this->sut->getIsOptionBRadioButtonEnabled());
   }
-  void RadioButton_ViewTests::then_Options_selected_OptionA__1( ) 
+  void RadioButton_ViewTests::then_Options_selected_OptionA_and_OptionB_is_not_visible( ) 
   {
     EXPECT_EQ(widgetassertions::RadioButton_ViewOptionsOption::OptionA, this->sut->getOptionsRadioButtonGroupSelectedEntry());
+    EXPECT_FALSE(this->sut->getIsOptionBRadioButtonVisible());
   }
 }
 

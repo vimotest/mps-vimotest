@@ -17,5 +17,21 @@ namespace widgetassertions
   {
     return this->isOptionsRadioButtonGroupEnabled;
   }
+  bool RadioButton_View::getIsOptionBRadioButtonVisible( ) 
+  {
+    return this->isOptionBRadioButtonVisible;
+  }
+  bool RadioButton_View::getIsOptionBRadioButtonEnabled( ) 
+  {
+    return this->isOptionBRadioButtonEnabled;
+  }
+  bool RadioButton_View::getIsOptionCRadioButtonVisible( ) 
+  {
+    return this->isOptionCRadioButtonVisible;
+  }
+  bool RadioButton_View::getIsOptionCRadioButtonEnabled( ) 
+  {
+    return this->isOptionCRadioButtonEnabled;
+  }
 }
 

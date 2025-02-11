@@ -1463,6 +1463,9 @@
     <property role="34LRSv" value="radio button group" />
     <property role="3GE5qa" value="widgets.choices" />
     <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
+    <node concept="PrWs8" id="5LG6vEN6pfJ" role="PzmwI">
+      <ref role="PrY4T" node="5LG6vEN6pdB" resolve="IViewWidgetComposite" />
+    </node>
     <node concept="1TJgyj" id="12kpBrp1H3V" role="1TKVEi">
       <property role="IQ2ns" value="1194692461793300731" />
       <property role="20kJfa" value="selectedEntryFeature" />
@@ -1519,6 +1522,11 @@
     <node concept="PrWs8" id="1Ukm5RfrSRp" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="5LG6vEN6pdB">
+    <property role="EcuMT" value="6659726513511437159" />
+    <property role="3GE5qa" value="widgets.util" />
+    <property role="TrG5h" value="IViewWidgetComposite" />
   </node>
 </model>
 

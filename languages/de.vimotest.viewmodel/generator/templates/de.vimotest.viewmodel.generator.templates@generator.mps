@@ -1911,6 +1911,46 @@
           <node concept="3clFbT" id="3MA_BelwlX_" role="v9R3O" />
         </node>
       </node>
+      <node concept="6lMYc" id="5LG6vEMJEn1" role="PCHHv">
+        <node concept="3xHEo_" id="5LG6vEMJEn2" role="3xMlr6" />
+        <node concept="raruj" id="5LG6vEMJEn3" role="lGtFl" />
+        <node concept="1W57fq" id="5LG6vEN6vRl" role="lGtFl">
+          <node concept="3IZrLx" id="5LG6vEN6vRm" role="3IZSJc">
+            <node concept="3clFbS" id="5LG6vEN6vRn" role="2VODD2">
+              <node concept="3clFbF" id="5LG6vEN6w8Z" role="3cqZAp">
+                <node concept="2OqwBi" id="5LG6vEN6wJm" role="3clFbG">
+                  <node concept="30H73N" id="5LG6vEN6w8Y" role="2Oq$k0" />
+                  <node concept="1mIQ4w" id="5LG6vEN6xk9" role="2OqNvi">
+                    <node concept="chp4Y" id="5LG6vEN6xs5" role="cj9EA">
+                      <ref role="cht4Q" to="at53:5LG6vEN6pdB" resolve="IViewWidgetComposite" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2b32R4" id="5LG6vEMJEn4" role="lGtFl">
+          <node concept="3JmXsc" id="5LG6vEMJEn5" role="2P8S$">
+            <node concept="3clFbS" id="5LG6vEMJEn6" role="2VODD2">
+              <node concept="3clFbF" id="5LG6vEMJEn7" role="3cqZAp">
+                <node concept="2OqwBi" id="5LG6vEN6yAZ" role="3clFbG">
+                  <node concept="1PxgMI" id="5LG6vEN6y0_" role="2Oq$k0">
+                    <property role="1BlNFB" value="true" />
+                    <node concept="chp4Y" id="5LG6vEN6y0G" role="3oSUPX">
+                      <ref role="cht4Q" to="at53:5LG6vEN6pdB" resolve="IViewWidgetComposite" />
+                    </node>
+                    <node concept="30H73N" id="5LG6vEMJEna" role="1m5AlR" />
+                  </node>
+                  <node concept="2qgKlT" id="5LG6vEN6z9$" role="2OqNvi">
+                    <ref role="37wK5l" to="nrs2:5LG6vEN5HBW" resolve="getChildWidgets" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="jVnub" id="3JF9X1M5rGR">

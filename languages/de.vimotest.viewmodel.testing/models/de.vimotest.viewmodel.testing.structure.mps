@@ -1391,9 +1391,17 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7NXUkdPQsiT" resolve="RadioButtonCheck" />
     </node>
+    <node concept="PrWs8" id="5LG6vEN5IiU" role="PzmwI">
+      <ref role="PrY4T" node="5LG6vEN5HBC" resolve="IViewWidgetCheckComposite" />
+    </node>
     <node concept="PrWs8" id="19OyC3_ti1L" role="PzmwI">
       <ref role="PrY4T" to="at53:7NXUkdRspaV" resolve="IProvideChoiceEntries" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="5LG6vEN5HBC">
+    <property role="EcuMT" value="6659726513511258600" />
+    <property role="3GE5qa" value="test.assert.util" />
+    <property role="TrG5h" value="IViewWidgetCheckComposite" />
   </node>
 </model>
 

@@ -21,4 +21,28 @@ class RadioButton_View {
   public getIsOptionsRadioButtonGroupEnabled (  ) : Boolean  {
   return this.isOptionsRadioButtonGroupEnabled;
  }
+  
+  private isOptionBRadioButtonVisible : Boolean  ;
+  
+  public getIsOptionBRadioButtonVisible (  ) : Boolean  {
+  return this.isOptionBRadioButtonVisible;
+ }
+  
+  private isOptionBRadioButtonEnabled : Boolean  ;
+  
+  public getIsOptionBRadioButtonEnabled (  ) : Boolean  {
+  return this.isOptionBRadioButtonEnabled;
+ }
+  
+  private isOptionCRadioButtonVisible : Boolean  ;
+  
+  public getIsOptionCRadioButtonVisible (  ) : Boolean  {
+  return this.isOptionCRadioButtonVisible;
+ }
+  
+  private isOptionCRadioButtonEnabled : Boolean  ;
+  
+  public getIsOptionCRadioButtonEnabled (  ) : Boolean  {
+  return this.isOptionCRadioButtonEnabled;
+ }
 }

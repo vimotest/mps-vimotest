@@ -84,6 +84,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2exRXkpMgYn" resolve="CommandDefinitionRef" />
     </node>
+    <node concept="1TJgyj" id="2MC6y$YwqjZ" role="1TKVEi">
+      <property role="IQ2ns" value="3217850698200884479" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="subComponents" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2MC6y$Ywqk0" resolve="WidgetSubComponentDefinition" />
+    </node>
     <node concept="PrWs8" id="1Yc3x6zozVZ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -226,6 +233,18 @@
       <property role="IQ2ns" value="2567579368931548239" />
       <property role="20kJfa" value="canExecuteByFeature" />
       <ref role="20lvS9" node="1Yc3x6zozVV" resolve="WidgetFeatureDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2MC6y$Ywqk0">
+    <property role="EcuMT" value="3217850698200884480" />
+    <property role="3GE5qa" value="widgets" />
+    <property role="TrG5h" value="WidgetSubComponentDefinition" />
+    <property role="34LRSv" value="sub component" />
+    <ref role="1TJDcQ" node="1Yc3x6zozVU" resolve="WidgetDefinition" />
+    <node concept="1TJgyi" id="2MC6y$Yz7Ww" role="1TKVEl">
+      <property role="IQ2nx" value="3217850698201595680" />
+      <property role="TrG5h" value="isMany" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

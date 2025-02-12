@@ -1,0 +1,7 @@
+namespace widgetassertions ;
+
+
+
+enum RadioButton_ViewOptionsOption {
+  OptionA, OptionB, OptionC
+}

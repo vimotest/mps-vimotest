@@ -1,0 +1,7 @@
+namespace commands ;
+
+
+
+enum SelectEntryCommand_ViewMyOptionsOption {
+  A, B
+}

@@ -167,6 +167,9 @@
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
         <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
       </concept>
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -543,7 +546,7 @@
             <node concept="3cpWsn" id="7NXUkdRsDl9" role="3cpWs9">
               <property role="TrG5h" value="matchingEntry" />
               <node concept="3Tqbb2" id="7NXUkdRsDjG" role="1tU5fm">
-                <ref role="ehGHo" to="at53:3mckYa_DMEC" resolve="ChoiceEntry" />
+                <ref role="ehGHo" to="at53:1Ukm5RfrSRo" resolve="IChoiceEntry" />
               </node>
               <node concept="2OqwBi" id="7NXUkdRsDla" role="33vP2m">
                 <node concept="1z4cxt" id="7NXUkdRsDlf" role="2OqNvi">
@@ -1103,6 +1106,23 @@
     <ref role="1M2myG" to="53m0:7NXUkdPQsiT" resolve="RadioButtonCheck" />
     <node concept="9S07l" id="7NXUkdPQsiW" role="9Vyp8">
       <node concept="3clFbS" id="7NXUkdPQsiX" role="2VODD2">
+        <node concept="3clFbJ" id="tdZQKTOq7q" role="3cqZAp">
+          <node concept="3clFbS" id="tdZQKTOq7s" role="3clFbx">
+            <node concept="3cpWs6" id="tdZQKTOtzj" role="3cqZAp">
+              <node concept="3clFbT" id="tdZQKTOtzw" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="tdZQKTOqLi" role="3clFbw">
+            <node concept="nLn13" id="tdZQKTOq8$" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="tdZQKTOsTa" role="2OqNvi">
+              <node concept="chp4Y" id="tdZQKTOsW6" role="cj9EA">
+                <ref role="cht4Q" to="53m0:12kpBrp1H5c" resolve="RadioButtonGroupCheck" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7NXUkdPQsiY" role="3cqZAp">
           <node concept="17R0WA" id="7NXUkdPQsiZ" role="3clFbG">
             <node concept="35c_gC" id="7NXUkdPQsj0" role="3uHU7w">
@@ -1117,38 +1137,6 @@
                 <node concept="nLn13" id="7NXUkdPQsj4" role="37wK5m" />
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="9SLcT" id="7NXUkdR4kA8" role="9SGkU">
-      <node concept="3clFbS" id="7NXUkdR4kA9" role="2VODD2">
-        <node concept="3clFbJ" id="7NXUkdR4l4G" role="3cqZAp">
-          <node concept="3clFbS" id="7NXUkdR4l4I" role="3clFbx">
-            <node concept="3cpWs6" id="7NXUkdR4npb" role="3cqZAp">
-              <node concept="3fqX7Q" id="7NXUkdR4scO" role="3cqZAk">
-                <node concept="2OqwBi" id="7NXUkdR4scQ" role="3fr31v">
-                  <node concept="2DD5aU" id="7NXUkdR4scR" role="2Oq$k0" />
-                  <node concept="3O6GUB" id="7NXUkdR4scS" role="2OqNvi">
-                    <node concept="chp4Y" id="7NXUkdR4sxD" role="3QVz_e">
-                      <ref role="cht4Q" to="53m0:7NXUkdPQsjT" resolve="RadioButtonChoicesCheckValue" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="17R0WA" id="7NXUkdR4mrz" role="3clFbw">
-            <node concept="359W_D" id="7NXUkdR4mEk" role="3uHU7w">
-              <ref role="359W_E" to="53m0:7NXUkdPQsiT" resolve="RadioButtonCheck" />
-              <ref role="359W_F" to="53m0:7NXUkdPQsiU" resolve="checks" />
-            </node>
-            <node concept="2DA6wF" id="7NXUkdR4l5v" role="3uHU7B" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="7NXUkdR4kPc" role="3cqZAp">
-          <node concept="3clFbT" id="7NXUkdR4kPb" role="3clFbG">
-            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>
@@ -1206,6 +1194,31 @@
               <node concept="3kakTB" id="4mnk8hBWUVC" role="2Oq$k0" />
               <node concept="2qgKlT" id="4mnk8hBWW4g" role="2OqNvi">
                 <ref role="37wK5l" to="fwln:4mnk8hBWVzM" resolve="initializeExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="12kpBrp1H5e">
+    <property role="TrG5h" value="RadioButtonGroupCheck_Constraints" />
+    <property role="3GE5qa" value="test.assert.widgets.choices" />
+    <ref role="1M2myG" to="53m0:12kpBrp1H5c" resolve="RadioButtonGroupCheck" />
+    <node concept="9S07l" id="12kpBrp1H5f" role="9Vyp8">
+      <node concept="3clFbS" id="12kpBrp1H5g" role="2VODD2">
+        <node concept="3clFbF" id="12kpBrp1H5h" role="3cqZAp">
+          <node concept="17R0WA" id="12kpBrp1H5i" role="3clFbG">
+            <node concept="35c_gC" id="12kpBrp1H5j" role="3uHU7w">
+              <ref role="35c_gD" to="at53:12kpBrp1H3U" resolve="RadioButtonGroupWidget" />
+            </node>
+            <node concept="2OqwBi" id="12kpBrp1H5k" role="3uHU7B">
+              <node concept="35c_gC" id="12kpBrp1H5l" role="2Oq$k0">
+                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" />
+              </node>
+              <node concept="2qgKlT" id="12kpBrp1H5m" role="2OqNvi">
+                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" />
+                <node concept="nLn13" id="12kpBrp1H5n" role="37wK5m" />
               </node>
             </node>
           </node>

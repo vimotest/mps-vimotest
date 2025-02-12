@@ -99,4 +99,12 @@ class ListViews_View {
   public getMyListWithMultiRowSelectionListSelectedRows (  ) : Integer [ * ]  {
   return this.MyListWithMultiRowSelectionListSelectedRows;
  }
+  
+  private MyButtonsListRows : ListViews_ViewMyButtonsRow [ * ]  ;
+  
+  public getMyButtonsListRows (  ) : ListViews_ViewMyButtonsRow [ * ]  {
+  return this.MyButtonsListRows;
+ }
+  
+  public buttonsClicked (   in rowIndex: Integer  ) {     }
 }

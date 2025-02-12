@@ -154,7 +154,6 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
@@ -206,7 +205,6 @@
       </concept>
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
       <concept id="1240325842691" name="jetbrains.mps.baseLanguage.collections.structure.AsSequenceOperation" flags="nn" index="39bAoz" />
-      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1240687580870" name="jetbrains.mps.baseLanguage.collections.structure.JoinOperation" flags="nn" index="3uJxvA">
         <child id="1240687658305" name="delimiter" index="3uJOhx" />
       </concept>
@@ -310,6 +308,20 @@
       <ref role="EomxK" to="at53:4OohpJQO3Nl" resolve="inherentSupport" />
       <node concept="Eqf_E" id="2S2pY38V09M" role="EtsB7">
         <node concept="3clFbS" id="2S2pY38V09N" role="2VODD2">
+          <node concept="3clFbJ" id="zuT2RNpmKU" role="3cqZAp">
+            <node concept="3clFbS" id="zuT2RNpmKW" role="3clFbx">
+              <node concept="3cpWs6" id="zuT2RNpnoK" role="3cqZAp">
+                <node concept="3clFbT" id="zuT2RNpnoZ" role="3cqZAk" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="zuT2RNpnat" role="3clFbw">
+              <node concept="EsrRn" id="zuT2RNpmMf" role="2Oq$k0" />
+              <node concept="3TrcHB" id="zuT2RNpnmw" role="2OqNvi">
+                <ref role="3TsBF5" to="at53:zuT2RNpaqc" resolve="ignoreInherentSupport" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="zuT2RNpnqw" role="3cqZAp" />
           <node concept="3clFbF" id="2S2pY38V0oi" role="3cqZAp">
             <node concept="2OqwBi" id="2S2pY38V401" role="3clFbG">
               <node concept="1PxgMI" id="2S2pY38V1qR" role="2Oq$k0">
@@ -449,24 +461,18 @@
               <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
               <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
               <node concept="2OqwBi" id="5ZbqeTIczU5" role="37wK5m">
-                <node concept="2OqwBi" id="5ZbqeTIcg5P" role="2Oq$k0">
-                  <node concept="2OqwBi" id="5ZbqeTImJWd" role="2Oq$k0">
-                    <node concept="2OqwBi" id="5ZbqeTIcffT" role="2Oq$k0">
-                      <node concept="3kakTB" id="5ZbqeTIcffU" role="2Oq$k0" />
-                      <node concept="1mfA1w" id="5ZbqeTImJJN" role="2OqNvi" />
-                    </node>
-                    <node concept="2Rf3mk" id="5ZbqeTImK84" role="2OqNvi">
-                      <node concept="1xMEDy" id="5ZbqeTImK86" role="1xVPHs">
-                        <node concept="chp4Y" id="5ZbqeTImKdV" role="ri$Ld">
-                          <ref role="cht4Q" to="at53:44HS8_67HzJ" resolve="ComboBoxEntriesFeature" />
-                        </node>
-                      </node>
-                    </node>
+                <node concept="1PxgMI" id="tdZQKU1sSG" role="2Oq$k0">
+                  <property role="1BlNFB" value="true" />
+                  <node concept="chp4Y" id="tdZQKU1t1y" role="3oSUPX">
+                    <ref role="cht4Q" to="at53:7NXUkdRspaV" resolve="IProvideChoiceEntries" />
                   </node>
-                  <node concept="1uHKPH" id="5ZbqeTIczBk" role="2OqNvi" />
+                  <node concept="2OqwBi" id="5ZbqeTIcffT" role="1m5AlR">
+                    <node concept="3kakTB" id="5ZbqeTIcffU" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="5ZbqeTImJJN" role="2OqNvi" />
+                  </node>
                 </node>
-                <node concept="3Tsc0h" id="5ZbqeTIc$jj" role="2OqNvi">
-                  <ref role="3TtcxE" to="at53:4TXqppWtP_y" resolve="defaultEntries" />
+                <node concept="2qgKlT" id="7wIkOM9CGxg" role="2OqNvi">
+                  <ref role="37wK5l" to="nrs2:7NXUkdRsp$h" resolve="getChoiceEntries" />
                 </node>
               </node>
             </node>

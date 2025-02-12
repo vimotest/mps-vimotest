@@ -2,6 +2,7 @@
 #pragma once
 
 #include <vector>
+#include "SelectEntryCommand_ViewMyOptionsOption.h"
 #include <string>
 
 namespace commands
@@ -11,15 +12,13 @@ namespace commands
     public:
     virtual std::vector<std::string> getMyElementsComboBoxEntries() ;
     virtual std::string getMyElementsComboBoxSelectedEntry() ;
-    virtual std::vector<std::string> getMyOptionsRadioButtonName() ;
-    virtual std::string getMyOptionsRadioButtonSelectedEntry() ;
+    virtual SelectEntryCommand_ViewMyOptionsOption getMyOptionsRadioButtonGroupSelectedEntry() ;
     virtual void myElementsEntrySelected(std::string entryName) ;
-    virtual void myOptionsEntrySelected(std::string entryName) ;
+    virtual void myOptionsEntrySelected(SelectEntryCommand_ViewMyOptionsOption entryName) ;
     private:
     std::vector<std::string> MyElementsComboBoxEntries;
     std::string MyElementsComboBoxSelectedEntry;
-    std::vector<std::string> MyOptionsRadioButtonName;
-    std::string MyOptionsRadioButtonSelectedEntry;
+    SelectEntryCommand_ViewMyOptionsOption MyOptionsRadioButtonGroupSelectedEntry;
   };
 }
 

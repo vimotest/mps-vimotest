@@ -1,23 +1,28 @@
 
 #pragma once
 
-#include <vector>
-#include <string>
+#include "RadioButton_ViewOptionsOption.h"
 
 namespace widgetassertions
 {
   class RadioButton_View
   {
     public:
-    virtual std::vector<std::string> getMyChoicesRadioButtonName() ;
-    virtual std::string getMyChoicesRadioButtonSelectedEntry() ;
-    virtual bool getIsMyChoicesRadioButtonVisible() ;
-    virtual bool getIsMyChoicesRadioButtonEnabled() ;
+    virtual RadioButton_ViewOptionsOption getOptionsRadioButtonGroupSelectedEntry() ;
+    virtual bool getIsOptionsRadioButtonGroupVisible() ;
+    virtual bool getIsOptionsRadioButtonGroupEnabled() ;
+    virtual bool getIsOptionBRadioButtonVisible() ;
+    virtual bool getIsOptionBRadioButtonEnabled() ;
+    virtual bool getIsOptionCRadioButtonVisible() ;
+    virtual bool getIsOptionCRadioButtonEnabled() ;
     private:
-    std::vector<std::string> MyChoicesRadioButtonName;
-    std::string MyChoicesRadioButtonSelectedEntry;
-    bool isMyChoicesRadioButtonVisible;
-    bool isMyChoicesRadioButtonEnabled;
+    RadioButton_ViewOptionsOption OptionsRadioButtonGroupSelectedEntry;
+    bool isOptionsRadioButtonGroupVisible;
+    bool isOptionsRadioButtonGroupEnabled;
+    bool isOptionBRadioButtonVisible;
+    bool isOptionBRadioButtonEnabled;
+    bool isOptionCRadioButtonVisible;
+    bool isOptionCRadioButtonEnabled;
   };
 }
 

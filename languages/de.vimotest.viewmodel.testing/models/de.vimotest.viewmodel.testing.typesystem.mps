@@ -3567,5 +3567,104 @@
       </node>
     </node>
   </node>
+  <node concept="18kY7G" id="19OyC3Au$Dy">
+    <property role="TrG5h" value="check_RadioButtonGroupCheck" />
+    <property role="3GE5qa" value="test.assert.widgets.choices" />
+    <node concept="3clFbS" id="19OyC3Au$Dz" role="18ibNy">
+      <node concept="3cpWs8" id="19OyC3AnNcl" role="3cqZAp">
+        <node concept="3cpWsn" id="19OyC3AnNcm" role="3cpWs9">
+          <property role="TrG5h" value="radioButtonCount" />
+          <node concept="10Oyi0" id="19OyC3AnNb6" role="1tU5fm" />
+          <node concept="2OqwBi" id="19OyC3AnNcn" role="33vP2m">
+            <node concept="2OqwBi" id="19OyC3AnNco" role="2Oq$k0">
+              <node concept="2OqwBi" id="19OyC3AnNcp" role="2Oq$k0">
+                <node concept="2qgKlT" id="19OyC3AnNcr" role="2OqNvi">
+                  <ref role="37wK5l" to="fwln:19OyC3AnD1w" resolve="getRadioButtonGroupWidget" />
+                </node>
+                <node concept="1YBJjd" id="19OyC3AuC28" role="2Oq$k0">
+                  <ref role="1YBMHb" node="19OyC3Au$D_" resolve="radioButtonGroupCheck" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="19OyC3AnNcs" role="2OqNvi">
+                <ref role="3TtcxE" to="at53:12kpBrp1HEy" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="19OyC3AnNct" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="19OyC3Aomc5" role="3cqZAp">
+        <node concept="3cpWsn" id="19OyC3Aomc6" role="3cpWs9">
+          <property role="TrG5h" value="checksCount" />
+          <node concept="10Oyi0" id="19OyC3AolZI" role="1tU5fm" />
+          <node concept="2OqwBi" id="19OyC3Aomc7" role="33vP2m">
+            <node concept="2OqwBi" id="19OyC3Aomc9" role="2Oq$k0">
+              <node concept="3Tsc0h" id="19OyC3Aomcb" role="2OqNvi">
+                <ref role="3TtcxE" to="53m0:3YuUBZ_1Vqd" resolve="radioButtonChecks" />
+              </node>
+              <node concept="1YBJjd" id="19OyC3AuCcc" role="2Oq$k0">
+                <ref role="1YBMHb" node="19OyC3Au$D_" resolve="radioButtonGroupCheck" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="19OyC3Aomcd" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="19OyC3AuCtl" role="3cqZAp">
+        <node concept="3clFbS" id="19OyC3AuCtn" role="3clFbx">
+          <node concept="2MkqsV" id="19OyC3AuIX_" role="3cqZAp">
+            <node concept="3cpWs3" id="19OyC3AuJYu" role="2MkJ7o">
+              <node concept="37vLTw" id="19OyC3AuJYG" role="3uHU7w">
+                <ref role="3cqZAo" node="19OyC3AnNcm" resolve="radioButtonCount" />
+              </node>
+              <node concept="Xl_RD" id="19OyC3AuIXL" role="3uHU7B">
+                <property role="Xl_RC" value="RadioButtonChecks size does not match radio button count: " />
+              </node>
+            </node>
+            <node concept="1YBJjd" id="19OyC3AuKeH" role="1urrMF">
+              <ref role="1YBMHb" node="19OyC3Au$D_" resolve="radioButtonGroupCheck" />
+            </node>
+            <node concept="3Cnw8n" id="19OyC3AuKvb" role="1urrFz">
+              <property role="ARO6o" value="true" />
+              <ref role="QpYPw" node="19OyC3AuKv8" resolve="fix_" />
+            </node>
+          </node>
+        </node>
+        <node concept="3y3z36" id="19OyC3AuHs2" role="3clFbw">
+          <node concept="37vLTw" id="19OyC3AuIWZ" role="3uHU7w">
+            <ref role="3cqZAo" node="19OyC3Aomc6" resolve="checksCount" />
+          </node>
+          <node concept="37vLTw" id="19OyC3AuCxA" role="3uHU7B">
+            <ref role="3cqZAo" node="19OyC3AnNcm" resolve="radioButtonCount" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="19OyC3Au$D_" role="1YuTPh">
+      <property role="TrG5h" value="radioButtonGroupCheck" />
+      <ref role="1YaFvo" to="53m0:12kpBrp1H5c" resolve="RadioButtonGroupCheck" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="19OyC3AuKv8">
+    <property role="TrG5h" value="fix_RadioButtonGroupCheck_RadioButtonChecksCount" />
+    <node concept="Q5ZZ6" id="19OyC3AuKv9" role="Q6x$H">
+      <node concept="3clFbS" id="19OyC3AuKva" role="2VODD2">
+        <node concept="3clFbF" id="19OyC3AuM4N" role="3cqZAp">
+          <node concept="2OqwBi" id="19OyC3AuN5P" role="3clFbG">
+            <node concept="1PxgMI" id="19OyC3AuMIj" role="2Oq$k0">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="19OyC3AuMJ0" role="3oSUPX">
+                <ref role="cht4Q" to="53m0:12kpBrp1H5c" resolve="RadioButtonGroupCheck" />
+              </node>
+              <node concept="Q6c8r" id="19OyC3AuM4M" role="1m5AlR" />
+            </node>
+            <node concept="2qgKlT" id="19OyC3AuNB3" role="2OqNvi">
+              <ref role="37wK5l" to="fwln:19OyC3AnwpR" resolve="adjustSubChecks" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

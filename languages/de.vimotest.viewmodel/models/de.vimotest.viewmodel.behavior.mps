@@ -160,6 +160,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -211,6 +212,7 @@
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -318,6 +320,7 @@
       <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
         <reference id="4705942098322467736" name="decl" index="21nZrZ" />
       </concept>
+      <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -351,6 +354,7 @@
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
+      <concept id="1145573345940" name="jetbrains.mps.lang.smodel.structure.Node_GetAllSiblingsOperation" flags="nn" index="2TvwIu" />
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
         <reference id="1139877738879" name="concept" index="1A0vxQ" />
       </concept>
@@ -467,6 +471,7 @@
         <child id="1225711182005" name="list" index="1y566C" />
         <child id="1225711191269" name="index" index="1y58nS" />
       </concept>
+      <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
     </language>
@@ -4878,6 +4883,7 @@
         <node concept="3cpWs8" id="1si8oglRCWV" role="3cqZAp">
           <node concept="3cpWsn" id="1si8oglRCWW" role="3cpWs9">
             <property role="TrG5h" value="columnNode" />
+            <property role="3TUv4t" value="true" />
             <node concept="3Tqbb2" id="1si8oglRCzq" role="1tU5fm">
               <ref role="ehGHo" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
             </node>
@@ -4900,18 +4906,65 @@
                   <ref role="3uigEE" to="g51k:~PropertyAccessor" resolve="PropertyAccessor" />
                 </node>
                 <node concept="2ShNRf" id="1si8oglRR25" role="33vP2m">
-                  <node concept="1pGfFk" id="1si8oglRR26" role="2ShVmc">
-                    <property role="373rjd" value="true" />
-                    <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,boolean,boolean)" resolve="PropertyAccessor" />
-                    <node concept="37vLTw" id="1si8oglRR27" role="37wK5m">
-                      <ref role="3cqZAo" node="1si8oglRCWW" resolve="columnNode" />
+                  <node concept="YeOm9" id="zuT2RMTDxk" role="2ShVmc">
+                    <node concept="1Y3b0j" id="zuT2RMTDxn" role="YeSDq">
+                      <property role="2bfB8j" value="true" />
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="g51k:~TransactionalPropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,boolean,boolean)" resolve="TransactionalPropertyAccessor" />
+                      <ref role="1Y3XeK" to="g51k:~TransactionalPropertyAccessor" resolve="TransactionalPropertyAccessor" />
+                      <node concept="3Tm1VV" id="zuT2RMTDxo" role="1B3o_S" />
+                      <node concept="37vLTw" id="1si8oglRR27" role="37wK5m">
+                        <ref role="3cqZAo" node="1si8oglRCWW" resolve="columnNode" />
+                      </node>
+                      <node concept="355D3s" id="1si8oglRR28" role="37wK5m">
+                        <ref role="355D3t" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+                        <ref role="355D3u" to="at53:7uPLQmTPAc" resolve="header" />
+                      </node>
+                      <node concept="3clFbT" id="1si8oglRR29" role="37wK5m" />
+                      <node concept="3clFbT" id="1si8oglRR2a" role="37wK5m" />
+                      <node concept="3clFb_" id="zuT2RMTH3S" role="jymVt">
+                        <property role="TrG5h" value="doCommit0" />
+                        <node concept="3Tmbuc" id="zuT2RMTH3T" role="1B3o_S" />
+                        <node concept="3cqZAl" id="zuT2RMTH3V" role="3clF45" />
+                        <node concept="37vLTG" id="zuT2RMTH3W" role="3clF46">
+                          <property role="TrG5h" value="oldValue" />
+                          <node concept="3uibUv" id="zuT2RMTH3X" role="1tU5fm">
+                            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                          </node>
+                        </node>
+                        <node concept="37vLTG" id="zuT2RMTH3Y" role="3clF46">
+                          <property role="TrG5h" value="newValue" />
+                          <node concept="3uibUv" id="zuT2RMTH3Z" role="1tU5fm">
+                            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                          </node>
+                        </node>
+                        <node concept="3clFbS" id="zuT2RMTH41" role="3clF47">
+                          <node concept="3clFbF" id="zuT2RN7FDu" role="3cqZAp">
+                            <node concept="37vLTI" id="zuT2RN7K4g" role="3clFbG">
+                              <node concept="3cpWs3" id="zuT2RN7POB" role="37vLTx">
+                                <node concept="Xl_RD" id="zuT2RN7QAJ" role="3uHU7w">
+                                  <property role="Xl_RC" value="" />
+                                </node>
+                                <node concept="37vLTw" id="zuT2RN7Or4" role="3uHU7B">
+                                  <ref role="3cqZAo" node="zuT2RMTH3Y" resolve="newValue" />
+                                </node>
+                              </node>
+                              <node concept="2OqwBi" id="zuT2RN7GrI" role="37vLTJ">
+                                <node concept="37vLTw" id="zuT2RN7FDs" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1si8oglRCWW" resolve="columnNode" />
+                                </node>
+                                <node concept="3TrcHB" id="zuT2RN7Hlg" role="2OqNvi">
+                                  <ref role="3TsBF5" to="at53:7uPLQmTPAc" resolve="header" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="2AHcQZ" id="zuT2RMTH42" role="2AJF6D">
+                          <ref role="2AI5Lk" to="wyt6:~Override" />
+                        </node>
+                      </node>
                     </node>
-                    <node concept="355D3s" id="1si8oglRR28" role="37wK5m">
-                      <ref role="355D3t" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
-                      <ref role="355D3u" to="at53:7uPLQmTPAc" resolve="header" />
-                    </node>
-                    <node concept="3clFbT" id="1si8oglRR29" role="37wK5m" />
-                    <node concept="3clFbT" id="1si8oglRR2a" role="37wK5m" />
                   </node>
                 </node>
               </node>
@@ -5760,6 +5813,29 @@
       </node>
       <node concept="A3Dl8" id="1mmsj6xZXxM" role="3clF45">
         <node concept="17QB3L" id="1mmsj6xZXxN" role="A3Ik2" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="19OyC3_hdLn" role="13h7CS">
+      <property role="TrG5h" value="getChoiceEntries" />
+      <ref role="13i0hy" node="7NXUkdRsp$h" resolve="getChoiceEntries" />
+      <node concept="3Tm1VV" id="19OyC3_hdLo" role="1B3o_S" />
+      <node concept="3clFbS" id="19OyC3_hdLr" role="3clF47">
+        <node concept="3clFbF" id="19OyC3_hlvT" role="3cqZAp">
+          <node concept="2OqwBi" id="19OyC3_hmxj" role="3clFbG">
+            <node concept="2OqwBi" id="19OyC3_hlJE" role="2Oq$k0">
+              <node concept="13iPFW" id="19OyC3_hlvS" role="2Oq$k0" />
+              <node concept="3TrEf2" id="19OyC3_hlYS" role="2OqNvi">
+                <ref role="3Tt5mk" to="at53:44HS8_67H$2" resolve="comboBoxEntriesFeature" />
+              </node>
+            </node>
+            <node concept="3Tsc0h" id="19OyC3_hmL5" role="2OqNvi">
+              <ref role="3TtcxE" to="at53:4TXqppWtP_y" resolve="defaultEntries" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="19OyC3_hdLs" role="3clF45">
+        <ref role="2I9WkF" to="at53:1Ukm5RfrSRo" resolve="IChoiceEntry" />
       </node>
     </node>
   </node>
@@ -9084,47 +9160,43 @@
     <property role="3GE5qa" value="widgets.choices" />
     <ref role="13h7C2" to="at53:7NXUkdPQshI" resolve="RadioButtonWidget" />
     <node concept="13hLZK" id="7NXUkdPQsi4" role="13h7CW">
-      <node concept="3clFbS" id="7NXUkdPQsi5" role="2VODD2">
-        <node concept="3clFbF" id="ZCu$dYvOC$" role="3cqZAp">
-          <node concept="2OqwBi" id="ZCu$dYvOC_" role="3clFbG">
-            <node concept="2OqwBi" id="ZCu$dYvOCA" role="2Oq$k0">
-              <node concept="13iPFW" id="ZCu$dYvOCB" role="2Oq$k0" />
-              <node concept="3TrEf2" id="ZCu$dYvOCC" role="2OqNvi">
-                <ref role="3Tt5mk" to="at53:7NXUkdPQshN" resolve="selectEntryCommand" />
-              </node>
-            </node>
-            <node concept="2DeJnY" id="ZCu$dYvOCD" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="7NXUkdPQsi5" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="7NXUkdPQsi6" role="13h7CS">
       <property role="TrG5h" value="createEditorCell" />
       <ref role="13i0hy" node="6mWHjmRL0Kv" resolve="createEditorCell" />
       <node concept="3Tm1VV" id="7NXUkdPQsi7" role="1B3o_S" />
       <node concept="3clFbS" id="7NXUkdPQsi8" role="3clF47">
+        <node concept="3clFbH" id="JsS3D9EaKG" role="3cqZAp" />
         <node concept="3cpWs8" id="7NXUkdPRXMP" role="3cqZAp">
           <node concept="3cpWsn" id="7NXUkdPRXMQ" role="3cpWs9">
             <property role="TrG5h" value="accessor" />
             <node concept="3uibUv" id="7NXUkdPRXF0" role="1tU5fm">
-              <ref role="3uigEE" to="g51k:~PropertyAccessor" resolve="PropertyAccessor" />
+              <ref role="3uigEE" to="g51k:~ModelAccessor" resolve="ModelAccessor" />
             </node>
             <node concept="2ShNRf" id="7NXUkdPRXMR" role="33vP2m">
-              <node concept="1pGfFk" id="7NXUkdPRXMS" role="2ShVmc">
+              <node concept="1pGfFk" id="JsS3D9ENv$" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,boolean,boolean)" resolve="PropertyAccessor" />
-                <node concept="2OqwBi" id="7NXUkdPRXMT" role="37wK5m">
-                  <node concept="13iPFW" id="7NXUkdPRXMU" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="7NXUkdPRXMV" role="2OqNvi">
-                    <ref role="3Tt5mk" to="at53:7NXUkdPQshJ" resolve="radioButtonChoicesFeature" />
+                <ref role="37wK5l" to="g51k:~ConstantModelAccessor.&lt;init&gt;(java.lang.String)" resolve="ConstantModelAccessor" />
+                <node concept="2OqwBi" id="JsS3D9EYS0" role="37wK5m">
+                  <node concept="2OqwBi" id="JsS3D9EXI4" role="2Oq$k0">
+                    <node concept="2OqwBi" id="JsS3D9ERyk" role="2Oq$k0">
+                      <node concept="2OqwBi" id="JsS3D9ENK6" role="2Oq$k0">
+                        <node concept="13iPFW" id="JsS3D9ENy6" role="2Oq$k0" />
+                        <node concept="2TvwIu" id="JsS3D9EPAn" role="2OqNvi" />
+                      </node>
+                      <node concept="v3k3i" id="JsS3D9EWQj" role="2OqNvi">
+                        <node concept="chp4Y" id="JsS3D9EWS9" role="v3oSu">
+                          <ref role="cht4Q" to="at53:7NXUkdPQshI" resolve="RadioButtonWidget" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="JsS3D9EYjP" role="2OqNvi" />
+                  </node>
+                  <node concept="3TrcHB" id="JsS3D9EZgY" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   </node>
                 </node>
-                <node concept="355D3s" id="7NXUkdPRXMW" role="37wK5m">
-                  <ref role="355D3t" to="at53:7NXUkdPQsh_" resolve="RadioButtonChoicesFeature" />
-                  <ref role="355D3u" to="at53:7NXUkdPQCDr" resolve="defaultSelectedChoice" />
-                </node>
-                <node concept="3clFbT" id="7NXUkdPRXMX" role="37wK5m" />
-                <node concept="3clFbT" id="7NXUkdPRXMY" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -9139,17 +9211,7 @@
               <ref role="3cqZAo" node="7NXUkdPRXMQ" resolve="accessor" />
             </node>
             <node concept="13iPFW" id="7NXUkdPRXYP" role="37wK5m" />
-            <node concept="2OqwBi" id="7NXUkdPRYPT" role="37wK5m">
-              <node concept="2OqwBi" id="7NXUkdPRYjE" role="2Oq$k0">
-                <node concept="13iPFW" id="7NXUkdPRY4j" role="2Oq$k0" />
-                <node concept="3TrEf2" id="7NXUkdPRY$n" role="2OqNvi">
-                  <ref role="3Tt5mk" to="at53:7NXUkdPQshJ" resolve="radioButtonChoicesFeature" />
-                </node>
-              </node>
-              <node concept="3Tsc0h" id="7NXUkdPRZ3C" role="2OqNvi">
-                <ref role="3TtcxE" to="at53:7NXUkdPQCDq" resolve="defaultEntries" />
-              </node>
-            </node>
+            <node concept="13iPFW" id="7NXUkdPRY4j" role="37wK5m" />
           </node>
         </node>
       </node>
@@ -9173,7 +9235,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="7NXUkdPQAV$" role="3clF46">
-        <property role="TrG5h" value="propertyAccessor" />
+        <property role="TrG5h" value="selectedNameAccessor" />
         <node concept="3uibUv" id="7NXUkdPQAV_" role="1tU5fm">
           <ref role="3uigEE" to="g51k:~ModelAccessor" resolve="ModelAccessor" />
         </node>
@@ -9183,9 +9245,9 @@
         <node concept="3Tqbb2" id="7NXUkdPQAVB" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="7NXUkdPQFGe" role="3clF46">
-        <property role="TrG5h" value="possibleChoicesNodes" />
-        <node concept="2I9FWS" id="7NXUkdPQFUG" role="1tU5fm">
-          <ref role="2I9WkF" to="at53:3mckYa_DMEC" resolve="ChoiceEntry" />
+        <property role="TrG5h" value="radioButton" />
+        <node concept="3Tqbb2" id="12kpBrp2rDW" role="1tU5fm">
+          <ref role="ehGHo" to="at53:7NXUkdPQshI" resolve="RadioButtonWidget" />
         </node>
       </node>
       <node concept="3Tm1VV" id="7NXUkdPQ_j1" role="1B3o_S" />
@@ -9193,164 +9255,99 @@
         <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
       </node>
       <node concept="3clFbS" id="7NXUkdPQ_j3" role="3clF47">
-        <node concept="3cpWs8" id="7NXUkdPRC8k" role="3cqZAp">
-          <node concept="3cpWsn" id="7NXUkdPRC8l" role="3cpWs9">
-            <property role="TrG5h" value="wrapper" />
-            <node concept="3uibUv" id="7NXUkdPRC7k" role="1tU5fm">
+        <node concept="3cpWs8" id="12kpBrp2phe" role="3cqZAp">
+          <node concept="3cpWsn" id="12kpBrp2phf" role="3cpWs9">
+            <property role="TrG5h" value="radioRow" />
+            <node concept="3uibUv" id="12kpBrp2phg" role="1tU5fm">
               <ref role="3uigEE" to="g51k:~EditorCell_Collection" resolve="EditorCell_Collection" />
             </node>
-            <node concept="2YIFZM" id="7NXUkdPRCcG" role="33vP2m">
-              <ref role="37wK5l" to="g51k:~EditorCell_Collection.createVertical(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode)" resolve="createVertical" />
+            <node concept="2YIFZM" id="12kpBrp2phh" role="33vP2m">
+              <ref role="37wK5l" to="g51k:~EditorCell_Collection.createHorizontal(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode)" resolve="createHorizontal" />
               <ref role="1Pybhc" to="g51k:~EditorCell_Collection" resolve="EditorCell_Collection" />
-              <node concept="37vLTw" id="7NXUkdPRCcH" role="37wK5m">
+              <node concept="37vLTw" id="12kpBrp2phi" role="37wK5m">
                 <ref role="3cqZAo" node="7NXUkdPQAVy" resolve="context" />
               </node>
-              <node concept="37vLTw" id="7NXUkdPRCfR" role="37wK5m">
+              <node concept="37vLTw" id="12kpBrp2phj" role="37wK5m">
                 <ref role="3cqZAo" node="7NXUkdPQAVA" resolve="node" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7NXUkdPRCw4" role="3cqZAp">
-          <node concept="2OqwBi" id="7NXUkdPRF4G" role="3clFbG">
-            <node concept="37vLTw" id="7NXUkdPRCw2" role="2Oq$k0">
-              <ref role="3cqZAo" node="7NXUkdPQFGe" resolve="possibleChoicesNodes" />
-            </node>
-            <node concept="2es0OD" id="7NXUkdPRGKO" role="2OqNvi">
-              <node concept="1bVj0M" id="7NXUkdPRGKQ" role="23t8la">
-                <node concept="3clFbS" id="7NXUkdPRGKR" role="1bW5cS">
-                  <node concept="3cpWs8" id="7NXUkdPRM_0" role="3cqZAp">
-                    <node concept="3cpWsn" id="7NXUkdPRM_1" role="3cpWs9">
-                      <property role="TrG5h" value="radioRow" />
-                      <node concept="3uibUv" id="7NXUkdPRMvP" role="1tU5fm">
-                        <ref role="3uigEE" to="g51k:~EditorCell_Collection" resolve="EditorCell_Collection" />
-                      </node>
-                      <node concept="2YIFZM" id="7NXUkdPRM_2" role="33vP2m">
-                        <ref role="37wK5l" to="g51k:~EditorCell_Collection.createHorizontal(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode)" resolve="createHorizontal" />
-                        <ref role="1Pybhc" to="g51k:~EditorCell_Collection" resolve="EditorCell_Collection" />
-                        <node concept="37vLTw" id="7NXUkdPRM_3" role="37wK5m">
-                          <ref role="3cqZAo" node="7NXUkdPQAVy" resolve="context" />
-                        </node>
-                        <node concept="37vLTw" id="7NXUkdPRM_4" role="37wK5m">
-                          <ref role="3cqZAo" node="7NXUkdPRGKS" resolve="it" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3cpWs8" id="7NXUkdPRGSs" role="3cqZAp">
-                    <node concept="3cpWsn" id="7NXUkdPRGSt" role="3cpWs9">
-                      <property role="TrG5h" value="radioButtonCell" />
-                      <node concept="2YIFZM" id="7NXUkdPRGSu" role="33vP2m">
-                        <ref role="37wK5l" to="5xyw:7NXUkdPF7V6" resolve="create" />
-                        <ref role="1Pybhc" to="5xyw:7NXUkdPF7MH" resolve="EditorCell_RadioButton" />
-                        <node concept="37vLTw" id="7NXUkdPRGSv" role="37wK5m">
-                          <ref role="3cqZAo" node="7NXUkdPQAVy" resolve="context" />
-                        </node>
-                        <node concept="37vLTw" id="7NXUkdPRGSw" role="37wK5m">
-                          <ref role="3cqZAo" node="7NXUkdPQAV$" resolve="propertyAccessor" />
-                        </node>
-                        <node concept="37vLTw" id="7NXUkdPRHj_" role="37wK5m">
-                          <ref role="3cqZAo" node="7NXUkdPRGKS" resolve="it" />
-                        </node>
-                        <node concept="2OqwBi" id="7NXUkdPRHS1" role="37wK5m">
-                          <node concept="37vLTw" id="7NXUkdPRH$c" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7NXUkdPRGKS" resolve="it" />
-                          </node>
-                          <node concept="3TrcHB" id="7NXUkdPRIdP" role="2OqNvi">
-                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3uibUv" id="7NXUkdPRVkJ" role="1tU5fm">
-                        <ref role="3uigEE" to="5xyw:7NXUkdPF7MH" resolve="EditorCell_RadioButton" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="7NXUkdPRNya" role="3cqZAp">
-                    <node concept="2OqwBi" id="7NXUkdPRP7D" role="3clFbG">
-                      <node concept="37vLTw" id="7NXUkdPRNy8" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7NXUkdPRM_1" resolve="radioRow" />
-                      </node>
-                      <node concept="liA8E" id="7NXUkdPRQoj" role="2OqNvi">
-                        <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
-                        <node concept="37vLTw" id="7NXUkdPRQ_H" role="37wK5m">
-                          <ref role="3cqZAo" node="7NXUkdPRGSt" resolve="radioButtonCell" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbH" id="7NXUkdQIA44" role="3cqZAp" />
-                  <node concept="3cpWs8" id="7NXUkdQIHj3" role="3cqZAp">
-                    <node concept="3cpWsn" id="7NXUkdQIHj4" role="3cpWs9">
-                      <property role="TrG5h" value="choiceValueAccessor" />
-                      <node concept="3uibUv" id="7NXUkdQIHbJ" role="1tU5fm">
-                        <ref role="3uigEE" to="g51k:~PropertyAccessor" resolve="PropertyAccessor" />
-                      </node>
-                      <node concept="2ShNRf" id="7NXUkdQIHj5" role="33vP2m">
-                        <node concept="1pGfFk" id="7NXUkdQIHj6" role="2ShVmc">
-                          <property role="373rjd" value="true" />
-                          <ref role="37wK5l" to="g51k:~PropertyAccessor.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,boolean,boolean)" resolve="PropertyAccessor" />
-                          <node concept="37vLTw" id="7NXUkdQIHj7" role="37wK5m">
-                            <ref role="3cqZAo" node="7NXUkdPRGKS" resolve="it" />
-                          </node>
-                          <node concept="355D3s" id="7NXUkdQIHj8" role="37wK5m">
-                            <ref role="355D3t" to="at53:3mckYa_DMEC" resolve="ChoiceEntry" />
-                            <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
-                          </node>
-                          <node concept="3clFbT" id="7NXUkdQIHj9" role="37wK5m" />
-                          <node concept="3clFbT" id="7NXUkdQIHja" role="37wK5m" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="7NXUkdPRQH$" role="3cqZAp">
-                    <node concept="2OqwBi" id="7NXUkdPRQH_" role="3clFbG">
-                      <node concept="37vLTw" id="7NXUkdPRQHA" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7NXUkdPRM_1" resolve="radioRow" />
-                      </node>
-                      <node concept="liA8E" id="7NXUkdPRQHB" role="2OqNvi">
-                        <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
-                        <node concept="2YIFZM" id="7NXUkdQIL4Y" role="37wK5m">
-                          <ref role="37wK5l" to="g51k:~EditorCell_Property.create(jetbrains.mps.openapi.editor.EditorContext,jetbrains.mps.nodeEditor.cells.ModelAccessor,org.jetbrains.mps.openapi.model.SNode)" resolve="create" />
-                          <ref role="1Pybhc" to="g51k:~EditorCell_Property" resolve="EditorCell_Property" />
-                          <node concept="37vLTw" id="7NXUkdQILAn" role="37wK5m">
-                            <ref role="3cqZAo" node="7NXUkdPQAVy" resolve="context" />
-                          </node>
-                          <node concept="37vLTw" id="7NXUkdQIMl9" role="37wK5m">
-                            <ref role="3cqZAo" node="7NXUkdQIHj4" resolve="choiceValueAccessor" />
-                          </node>
-                          <node concept="37vLTw" id="7NXUkdQIN40" role="37wK5m">
-                            <ref role="3cqZAo" node="7NXUkdPRGKS" resolve="it" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="7NXUkdPRIyF" role="3cqZAp">
-                    <node concept="2OqwBi" id="7NXUkdPRK0o" role="3clFbG">
-                      <node concept="37vLTw" id="7NXUkdPRIyD" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7NXUkdPRC8l" resolve="wrapper" />
-                      </node>
-                      <node concept="liA8E" id="7NXUkdPRLcy" role="2OqNvi">
-                        <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
-                        <node concept="37vLTw" id="7NXUkdPRLhl" role="37wK5m">
-                          <ref role="3cqZAo" node="7NXUkdPRM_1" resolve="radioRow" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
+        <node concept="3cpWs8" id="12kpBrp2phk" role="3cqZAp">
+          <node concept="3cpWsn" id="12kpBrp2phl" role="3cpWs9">
+            <property role="TrG5h" value="radioButtonCell" />
+            <node concept="2YIFZM" id="12kpBrp2phm" role="33vP2m">
+              <ref role="37wK5l" to="5xyw:7NXUkdPF7V6" resolve="create" />
+              <ref role="1Pybhc" to="5xyw:7NXUkdPF7MH" resolve="EditorCell_RadioButton" />
+              <node concept="37vLTw" id="12kpBrp2phn" role="37wK5m">
+                <ref role="3cqZAo" node="7NXUkdPQAVy" resolve="context" />
+              </node>
+              <node concept="37vLTw" id="12kpBrp2pho" role="37wK5m">
+                <ref role="3cqZAo" node="7NXUkdPQAV$" resolve="propertyAccessor" />
+              </node>
+              <node concept="37vLTw" id="12kpBrp2php" role="37wK5m">
+                <ref role="3cqZAo" node="7NXUkdPQAVA" resolve="node" />
+              </node>
+              <node concept="2OqwBi" id="12kpBrp2phq" role="37wK5m">
+                <node concept="37vLTw" id="12kpBrp2phr" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7NXUkdPQFGe" resolve="radioButton" />
                 </node>
-                <node concept="gl6BB" id="7NXUkdPRGKS" role="1bW2Oz">
-                  <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="7NXUkdPRGKT" role="1tU5fm" />
+                <node concept="3TrcHB" id="12kpBrp2phs" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+            <node concept="3uibUv" id="12kpBrp2pht" role="1tU5fm">
+              <ref role="3uigEE" to="5xyw:7NXUkdPF7MH" resolve="EditorCell_RadioButton" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="12kpBrp2phu" role="3cqZAp">
+          <node concept="2OqwBi" id="12kpBrp2phv" role="3clFbG">
+            <node concept="37vLTw" id="12kpBrp2phw" role="2Oq$k0">
+              <ref role="3cqZAo" node="12kpBrp2phf" resolve="radioRow" />
+            </node>
+            <node concept="liA8E" id="12kpBrp2phx" role="2OqNvi">
+              <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
+              <node concept="37vLTw" id="12kpBrp2phy" role="37wK5m">
+                <ref role="3cqZAo" node="12kpBrp2phl" resolve="radioButtonCell" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="12kpBrp2Fri" role="3cqZAp">
+          <node concept="2OqwBi" id="12kpBrp2Frk" role="3clFbG">
+            <node concept="37vLTw" id="12kpBrp2Frl" role="2Oq$k0">
+              <ref role="3cqZAo" node="12kpBrp2phf" resolve="radioRow" />
+            </node>
+            <node concept="liA8E" id="12kpBrp2Frm" role="2OqNvi">
+              <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
+              <node concept="2ShNRf" id="12kpBrp2Hfz" role="37wK5m">
+                <node concept="1pGfFk" id="12kpBrp329H" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="g51k:~EditorCell_Constant.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="EditorCell_Constant" />
+                  <node concept="37vLTw" id="12kpBrp33o5" role="37wK5m">
+                    <ref role="3cqZAo" node="7NXUkdPQAVy" resolve="context" />
+                  </node>
+                  <node concept="37vLTw" id="12kpBrp33vI" role="37wK5m">
+                    <ref role="3cqZAo" node="7NXUkdPQAVA" resolve="node" />
+                  </node>
+                  <node concept="2OqwBi" id="12kpBrp34V0" role="37wK5m">
+                    <node concept="37vLTw" id="12kpBrp33Iq" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7NXUkdPQFGe" resolve="radioButton" />
+                    </node>
+                    <node concept="3TrcHB" id="12kpBrp36dT" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7NXUkdPRCjz" role="3cqZAp">
-          <node concept="37vLTw" id="7NXUkdPRCjx" role="3clFbG">
-            <ref role="3cqZAo" node="7NXUkdPRC8l" resolve="wrapper" />
+        <node concept="3clFbF" id="12kpBrp2zWu" role="3cqZAp">
+          <node concept="37vLTw" id="12kpBrp2zWs" role="3clFbG">
+            <ref role="3cqZAo" node="12kpBrp2phf" resolve="radioRow" />
           </node>
         </node>
       </node>
@@ -9360,46 +9357,6 @@
       <ref role="13i0hy" node="2S2pY38UZYV" resolve="hasFeatureInherentSupport" />
       <node concept="3Tm1VV" id="7NXUkdPQsis" role="1B3o_S" />
       <node concept="3clFbS" id="7NXUkdPQsit" role="3clF47">
-        <node concept="3clFbJ" id="7NXUkdPS0Jk" role="3cqZAp">
-          <node concept="3clFbS" id="7NXUkdPS0Jl" role="3clFbx">
-            <node concept="3cpWs6" id="7NXUkdPS0Jm" role="3cqZAp">
-              <node concept="3clFbT" id="7NXUkdPS0Jn" role="3cqZAk">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbC" id="7NXUkdPS0Jo" role="3clFbw">
-            <node concept="2OqwBi" id="7NXUkdPS0Jp" role="3uHU7w">
-              <node concept="13iPFW" id="7NXUkdPS0Jq" role="2Oq$k0" />
-              <node concept="3TrEf2" id="7NXUkdPS1ed" role="2OqNvi">
-                <ref role="3Tt5mk" to="at53:7NXUkdPQshJ" resolve="radioButtonChoicesFeature" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="7NXUkdPS0Js" role="3uHU7B">
-              <ref role="3cqZAo" node="7NXUkdPQsiw" resolve="feature" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="7NXUkdPS1nb" role="3cqZAp">
-          <node concept="3clFbS" id="7NXUkdPS1nc" role="3clFbx">
-            <node concept="3cpWs6" id="7NXUkdPS1nd" role="3cqZAp">
-              <node concept="3clFbT" id="7NXUkdPS1ne" role="3cqZAk">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbC" id="7NXUkdPS1nf" role="3clFbw">
-            <node concept="2OqwBi" id="7NXUkdPS1ng" role="3uHU7w">
-              <node concept="13iPFW" id="7NXUkdPS1nh" role="2Oq$k0" />
-              <node concept="3TrEf2" id="7NXUkdPS1ni" role="2OqNvi">
-                <ref role="3Tt5mk" to="at53:7NXUkdPQshK" resolve="selectedEntryFeature" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="7NXUkdPS1nj" role="3uHU7B">
-              <ref role="3cqZAo" node="7NXUkdPQsiw" resolve="feature" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="7NXUkdPQsiu" role="3cqZAp">
           <node concept="3clFbT" id="7NXUkdPQsiv" role="3clFbG" />
         </node>
@@ -9444,44 +9401,6 @@
       </node>
     </node>
   </node>
-  <node concept="13h7C7" id="7NXUkdPQD1S">
-    <property role="3GE5qa" value="features" />
-    <ref role="13h7C2" to="at53:7NXUkdPQsh_" resolve="RadioButtonChoicesFeature" />
-    <node concept="13hLZK" id="7NXUkdPQD1T" role="13h7CW">
-      <node concept="3clFbS" id="7NXUkdPQD1U" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="7NXUkdRt6oB" role="13h7CS">
-      <property role="TrG5h" value="getChoiceEntries" />
-      <ref role="13i0hy" node="7NXUkdRsp$h" resolve="getChoiceEntries" />
-      <node concept="3Tm1VV" id="7NXUkdRt6oC" role="1B3o_S" />
-      <node concept="3clFbS" id="7NXUkdRt6oF" role="3clF47">
-        <node concept="3clFbF" id="7NXUkdRt6oY" role="3cqZAp">
-          <node concept="2OqwBi" id="7NXUkdRt6AV" role="3clFbG">
-            <node concept="13iPFW" id="7NXUkdRt6oX" role="2Oq$k0" />
-            <node concept="3Tsc0h" id="7NXUkdRt7j6" role="2OqNvi">
-              <ref role="3TtcxE" to="at53:7NXUkdPQCDq" resolve="defaultEntries" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2I9FWS" id="7NXUkdRt6oG" role="3clF45">
-        <ref role="2I9WkF" to="at53:3mckYa_DMEC" resolve="ChoiceEntry" />
-      </node>
-    </node>
-    <node concept="13i0hz" id="1mmsj6yLMpP" role="13h7CS">
-      <property role="TrG5h" value="getFeatureBaseName" />
-      <ref role="13i0hy" node="1mmsj6yLGOp" resolve="getFeatureBaseName" />
-      <node concept="3Tm1VV" id="1mmsj6yLMpQ" role="1B3o_S" />
-      <node concept="3clFbS" id="1mmsj6yLMqn" role="3clF47">
-        <node concept="3clFbF" id="1mmsj6yLMyL" role="3cqZAp">
-          <node concept="Xl_RD" id="1mmsj6yLMyK" role="3clFbG">
-            <property role="Xl_RC" value="Name" />
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="1mmsj6yLMqo" role="3clF45" />
-    </node>
-  </node>
   <node concept="13h7C7" id="7NXUkdRspnt">
     <property role="3GE5qa" value="widgets.choices" />
     <ref role="13h7C2" to="at53:7NXUkdRspaV" resolve="IProvideChoiceEntries" />
@@ -9491,7 +9410,7 @@
       <property role="TrG5h" value="getChoiceEntries" />
       <node concept="3Tm1VV" id="7NXUkdRsp$i" role="1B3o_S" />
       <node concept="2I9FWS" id="7NXUkdRsp$_" role="3clF45">
-        <ref role="2I9WkF" to="at53:3mckYa_DMEC" resolve="ChoiceEntry" />
+        <ref role="2I9WkF" to="at53:1Ukm5RfrSRo" resolve="IChoiceEntry" />
       </node>
       <node concept="3clFbS" id="7NXUkdRsp$k" role="3clF47" />
     </node>
@@ -9504,24 +9423,6 @@
     <ref role="13h7C2" to="at53:44HS8_67HzJ" resolve="ComboBoxEntriesFeature" />
     <node concept="13hLZK" id="7NXUkdRt5Fw" role="13h7CW">
       <node concept="3clFbS" id="7NXUkdRt5Fx" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="7NXUkdRt5Sj" role="13h7CS">
-      <property role="TrG5h" value="getChoiceEntries" />
-      <ref role="13i0hy" node="7NXUkdRsp$h" resolve="getChoiceEntries" />
-      <node concept="3Tm1VV" id="7NXUkdRt5Sk" role="1B3o_S" />
-      <node concept="3clFbS" id="7NXUkdRt5Sn" role="3clF47">
-        <node concept="3clFbF" id="7NXUkdRt5SE" role="3cqZAp">
-          <node concept="2OqwBi" id="7NXUkdRt67x" role="3clFbG">
-            <node concept="13iPFW" id="7NXUkdRt5SD" role="2Oq$k0" />
-            <node concept="3Tsc0h" id="7NXUkdRt6lf" role="2OqNvi">
-              <ref role="3TtcxE" to="at53:4TXqppWtP_y" resolve="defaultEntries" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2I9FWS" id="7NXUkdRt5So" role="3clF45">
-        <ref role="2I9WkF" to="at53:3mckYa_DMEC" resolve="ChoiceEntry" />
-      </node>
     </node>
     <node concept="13i0hz" id="1mmsj6yLLrZ" role="13h7CS">
       <property role="TrG5h" value="getFeatureBaseName" />
@@ -9615,6 +9516,422 @@
     </node>
     <node concept="13hLZK" id="1mmsj6yLMM8" role="13h7CW">
       <node concept="3clFbS" id="1mmsj6yLMM9" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="12kpBrp1H4d">
+    <property role="TrG5h" value="RadioButtonGroupWidget_Behavior" />
+    <property role="3GE5qa" value="widgets.choices" />
+    <ref role="13h7C2" to="at53:12kpBrp1H3U" resolve="RadioButtonGroupWidget" />
+    <node concept="13hLZK" id="12kpBrp1H4e" role="13h7CW">
+      <node concept="3clFbS" id="12kpBrp1H4f" role="2VODD2">
+        <node concept="3clFbF" id="5LG6vELfn5P" role="3cqZAp">
+          <node concept="37vLTI" id="5LG6vELfoQ$" role="3clFbG">
+            <node concept="3clFbT" id="5LG6vELfoRb" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="5LG6vELfnjV" role="37vLTJ">
+              <node concept="13iPFW" id="5LG6vELfn5O" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5LG6vELfn$E" role="2OqNvi">
+                <ref role="3TsBF5" to="at53:6qlTyZCQCeM" resolve="isFixedEnumeration" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5LG6vEN6qm9" role="13h7CS">
+      <property role="TrG5h" value="getChildWidgets" />
+      <ref role="13i0hy" node="5LG6vEN5HBW" resolve="getChildWidgets" />
+      <node concept="3Tm1VV" id="5LG6vEN6qma" role="1B3o_S" />
+      <node concept="3clFbS" id="5LG6vEN6qme" role="3clF47">
+        <node concept="3clFbF" id="5LG6vEN6rhE" role="3cqZAp">
+          <node concept="2OqwBi" id="5LG6vEN6rzi" role="3clFbG">
+            <node concept="13iPFW" id="5LG6vEN6rhD" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="5LG6vEN6rPy" role="2OqNvi">
+              <ref role="3TtcxE" to="at53:12kpBrp1HEy" resolve="radioButtonWidgets" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="5LG6vEN6qmf" role="3clF45">
+        <node concept="3Tqbb2" id="5LG6vEN6qmg" role="A3Ik2">
+          <ref role="ehGHo" to="at53:F907haLIRF" resolve="ViewWidget" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="12kpBrp1H4g" role="13h7CS">
+      <property role="TrG5h" value="createEditorCell" />
+      <ref role="13i0hy" node="6mWHjmRL0Kv" />
+      <node concept="3Tm1VV" id="12kpBrp1H4h" role="1B3o_S" />
+      <node concept="3clFbS" id="12kpBrp1H4i" role="3clF47">
+        <node concept="3cpWs8" id="JsS3D9FfxG" role="3cqZAp">
+          <node concept="3cpWsn" id="JsS3D9FfxH" role="3cpWs9">
+            <property role="TrG5h" value="accessor" />
+            <node concept="3uibUv" id="JsS3D9FfxI" role="1tU5fm">
+              <ref role="3uigEE" to="g51k:~ModelAccessor" resolve="ModelAccessor" />
+            </node>
+            <node concept="2ShNRf" id="JsS3D9FfxJ" role="33vP2m">
+              <node concept="1pGfFk" id="JsS3D9FfxK" role="2ShVmc">
+                <property role="373rjd" value="true" />
+                <ref role="37wK5l" to="g51k:~ConstantModelAccessor.&lt;init&gt;(java.lang.String)" resolve="ConstantModelAccessor" />
+                <node concept="2OqwBi" id="JsS3D9FfxL" role="37wK5m">
+                  <node concept="2OqwBi" id="JsS3D9FjII" role="2Oq$k0">
+                    <node concept="2OqwBi" id="JsS3D9FfXS" role="2Oq$k0">
+                      <node concept="13iPFW" id="JsS3D9FfNA" role="2Oq$k0" />
+                      <node concept="3Tsc0h" id="JsS3D9FgaJ" role="2OqNvi">
+                        <ref role="3TtcxE" to="at53:12kpBrp1HEy" resolve="radioButtonWidgets" />
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="JsS3D9FlWa" role="2OqNvi" />
+                  </node>
+                  <node concept="3TrcHB" id="JsS3D9FfxU" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="12kpBrp2kL$" role="3cqZAp">
+          <node concept="BsUDl" id="12kpBrp2kLz" role="3clFbG">
+            <ref role="37wK5l" node="12kpBrp2ivD" resolve="makeRadioButtonEditorCell" />
+            <node concept="37vLTw" id="12kpBrp2loz" role="37wK5m">
+              <ref role="3cqZAo" node="12kpBrp1H4y" resolve="context" />
+            </node>
+            <node concept="37vLTw" id="JsS3D9Fmxi" role="37wK5m">
+              <ref role="3cqZAo" node="JsS3D9FfxH" resolve="accessor" />
+            </node>
+            <node concept="13iPFW" id="JsS3D9Fm_E" role="37wK5m" />
+            <node concept="2OqwBi" id="JsS3D9Fn2h" role="37wK5m">
+              <node concept="13iPFW" id="JsS3D9FmLC" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="JsS3D9FnmV" role="2OqNvi">
+                <ref role="3TtcxE" to="at53:12kpBrp1HEy" resolve="radioButtonWidgets" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="19OyC3A7G5f" role="37wK5m">
+              <node concept="13iPFW" id="19OyC3A7G5g" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="19OyC3A7G5h" role="2OqNvi">
+                <ref role="3TtcxE" to="at53:12kpBrp1HEy" resolve="radioButtonWidgets" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="12kpBrp1H4y" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="12kpBrp1H4z" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="12kpBrp1H4$" role="3clF45">
+        <ref role="3uigEE" to="f4zo:~EditorCell" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="12kpBrp2ivD" role="13h7CS">
+      <property role="TrG5h" value="makeRadioButtonGroupEditorCell" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="37vLTG" id="12kpBrp2ivE" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="12kpBrp2ivF" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="12kpBrp2ivG" role="3clF46">
+        <property role="TrG5h" value="selectedNameAccessor" />
+        <node concept="3uibUv" id="12kpBrp2ivH" role="1tU5fm">
+          <ref role="3uigEE" to="g51k:~ModelAccessor" resolve="ModelAccessor" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="12kpBrp2ivI" role="3clF46">
+        <property role="TrG5h" value="groupOwnerNode" />
+        <node concept="3Tqbb2" id="12kpBrp2ivJ" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="19OyC3A7zlm" role="3clF46">
+        <property role="TrG5h" value="radioButtonCellOwnerNodes" />
+        <node concept="2I9FWS" id="19OyC3A7$JE" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="12kpBrp2ivK" role="3clF46">
+        <property role="TrG5h" value="radioButtons" />
+        <node concept="2I9FWS" id="12kpBrp2ivL" role="1tU5fm">
+          <ref role="2I9WkF" to="at53:7NXUkdPQshI" resolve="RadioButtonWidget" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="12kpBrp2ivM" role="1B3o_S" />
+      <node concept="3uibUv" id="12kpBrp2ivN" role="3clF45">
+        <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+      </node>
+      <node concept="3clFbS" id="12kpBrp2ivO" role="3clF47">
+        <node concept="3cpWs8" id="12kpBrp2fat" role="3cqZAp">
+          <node concept="3cpWsn" id="12kpBrp2fau" role="3cpWs9">
+            <property role="TrG5h" value="groupWrapper" />
+            <node concept="3uibUv" id="12kpBrp2fav" role="1tU5fm">
+              <ref role="3uigEE" to="g51k:~EditorCell_Collection" resolve="EditorCell_Collection" />
+            </node>
+            <node concept="2YIFZM" id="12kpBrp2faw" role="33vP2m">
+              <ref role="37wK5l" to="g51k:~EditorCell_Collection.createVertical(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode)" resolve="createVertical" />
+              <ref role="1Pybhc" to="g51k:~EditorCell_Collection" resolve="EditorCell_Collection" />
+              <node concept="37vLTw" id="12kpBrp2fax" role="37wK5m">
+                <ref role="3cqZAo" node="12kpBrp2ivE" resolve="context" />
+              </node>
+              <node concept="37vLTw" id="12kpBrp2fay" role="37wK5m">
+                <ref role="3cqZAo" node="12kpBrp2ivI" resolve="node" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="12kpBrp2faz" role="3cqZAp">
+          <node concept="2OqwBi" id="12kpBrp2fa$" role="3clFbG">
+            <node concept="37vLTw" id="12kpBrp2fa_" role="2Oq$k0">
+              <ref role="3cqZAo" node="12kpBrp2ivK" resolve="possibleChoicesNodes" />
+            </node>
+            <node concept="2es0OD" id="12kpBrp2faA" role="2OqNvi">
+              <node concept="1bVj0M" id="12kpBrp2faB" role="23t8la">
+                <node concept="3clFbS" id="12kpBrp2faC" role="1bW5cS">
+                  <node concept="3cpWs8" id="19OyC3Ah8zF" role="3cqZAp">
+                    <node concept="3cpWsn" id="19OyC3Ah8zG" role="3cpWs9">
+                      <property role="TrG5h" value="radioCellOwner" />
+                      <node concept="3Tqbb2" id="19OyC3Ah827" role="1tU5fm" />
+                      <node concept="3K4zz7" id="19OyC3Ah9Zs" role="33vP2m">
+                        <node concept="3eOVzh" id="19OyC3AhmQs" role="3K4Cdx">
+                          <node concept="2OqwBi" id="19OyC3AhmQ$" role="3uHU7B">
+                            <node concept="37vLTw" id="19OyC3AhmQ_" role="2Oq$k0">
+                              <ref role="3cqZAo" node="12kpBrp2fbl" resolve="radioButton" />
+                            </node>
+                            <node concept="2bSWHS" id="19OyC3AhmQA" role="2OqNvi" />
+                          </node>
+                          <node concept="2OqwBi" id="19OyC3AhmQB" role="3uHU7w">
+                            <node concept="37vLTw" id="19OyC3AhmQC" role="2Oq$k0">
+                              <ref role="3cqZAo" node="19OyC3A7zlm" resolve="radioButtonCellOwnerNodes" />
+                            </node>
+                            <node concept="34oBXx" id="19OyC3AhmQD" role="2OqNvi" />
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="19OyC3AhazU" role="3K4GZi">
+                          <ref role="3cqZAo" node="12kpBrp2ivI" resolve="groupOwnerNode" />
+                        </node>
+                        <node concept="1y4W85" id="19OyC3AhELb" role="3K4E3e">
+                          <node concept="37vLTw" id="19OyC3AhCte" role="1y566C">
+                            <ref role="3cqZAo" node="19OyC3A7zlm" resolve="radioButtonCellOwnerNodes" />
+                          </node>
+                          <node concept="2OqwBi" id="19OyC3Ah8zI" role="1y58nS">
+                            <node concept="37vLTw" id="19OyC3Ah8zJ" role="2Oq$k0">
+                              <ref role="3cqZAo" node="12kpBrp2fbl" resolve="radioButton" />
+                            </node>
+                            <node concept="2bSWHS" id="19OyC3Ah8zK" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3cpWs8" id="19OyC3_JMWD" role="3cqZAp">
+                    <node concept="3cpWsn" id="19OyC3_JMWE" role="3cpWs9">
+                      <property role="TrG5h" value="radioButtonCell" />
+                      <node concept="3uibUv" id="19OyC3_JMlA" role="1tU5fm">
+                        <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+                      </node>
+                      <node concept="2OqwBi" id="19OyC3_JMWF" role="33vP2m">
+                        <node concept="35c_gC" id="19OyC3_JMWG" role="2Oq$k0">
+                          <ref role="35c_gD" to="at53:7NXUkdPQshI" resolve="RadioButtonWidget" />
+                        </node>
+                        <node concept="2qgKlT" id="19OyC3_JMWH" role="2OqNvi">
+                          <ref role="37wK5l" node="7NXUkdPQ_j0" resolve="makeRadioButtonEditorCell" />
+                          <node concept="37vLTw" id="19OyC3_JMWI" role="37wK5m">
+                            <ref role="3cqZAo" node="12kpBrp2ivE" resolve="context" />
+                          </node>
+                          <node concept="37vLTw" id="19OyC3_JMWJ" role="37wK5m">
+                            <ref role="3cqZAo" node="12kpBrp2ivG" resolve="selectedNameAccessor" />
+                          </node>
+                          <node concept="37vLTw" id="19OyC3Ah8zM" role="37wK5m">
+                            <ref role="3cqZAo" node="19OyC3Ah8zG" resolve="node" />
+                          </node>
+                          <node concept="37vLTw" id="19OyC3_JMWL" role="37wK5m">
+                            <ref role="3cqZAo" node="12kpBrp2fbl" resolve="radioButton" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="12kpBrp2fbg" role="3cqZAp">
+                    <node concept="2OqwBi" id="12kpBrp2fbh" role="3clFbG">
+                      <node concept="37vLTw" id="12kpBrp2fbi" role="2Oq$k0">
+                        <ref role="3cqZAo" node="12kpBrp2fau" resolve="wrapper" />
+                      </node>
+                      <node concept="liA8E" id="12kpBrp2fbj" role="2OqNvi">
+                        <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
+                        <node concept="37vLTw" id="12kpBrp2fbk" role="37wK5m">
+                          <ref role="3cqZAo" node="19OyC3_JMWE" resolve="radioButtonCell" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="gl6BB" id="12kpBrp2fbl" role="1bW2Oz">
+                  <property role="TrG5h" value="radioButton" />
+                  <node concept="2jxLKc" id="12kpBrp2fbm" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="12kpBrp2fbn" role="3cqZAp">
+          <node concept="37vLTw" id="12kpBrp2fbo" role="3clFbG">
+            <ref role="3cqZAo" node="12kpBrp2fau" resolve="wrapper" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="12kpBrp1H4_" role="13h7CS">
+      <property role="TrG5h" value="hasFeatureInherentSupport" />
+      <ref role="13i0hy" node="2S2pY38UZYV" />
+      <node concept="3Tm1VV" id="12kpBrp1H4A" role="1B3o_S" />
+      <node concept="3clFbS" id="12kpBrp1H4B" role="3clF47">
+        <node concept="3clFbJ" id="12kpBrp1H4I" role="3cqZAp">
+          <node concept="3clFbS" id="12kpBrp1H4J" role="3clFbx">
+            <node concept="3cpWs6" id="12kpBrp1H4K" role="3cqZAp">
+              <node concept="3clFbT" id="12kpBrp1H4L" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="12kpBrp1H4M" role="3clFbw">
+            <node concept="37vLTw" id="12kpBrp1H4N" role="3uHU7B">
+              <ref role="3cqZAo" node="12kpBrp1H4E" resolve="feature" />
+            </node>
+            <node concept="2OqwBi" id="12kpBrp1H4O" role="3uHU7w">
+              <node concept="13iPFW" id="12kpBrp1H4P" role="2Oq$k0" />
+              <node concept="3TrEf2" id="12kpBrp1H4H" role="2OqNvi">
+                <ref role="3Tt5mk" to="at53:12kpBrp1H3V" resolve="selectedEntryFeature" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="12kpBrp1H4C" role="3cqZAp">
+          <node concept="3clFbT" id="12kpBrp1H4D" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="12kpBrp1H4E" role="3clF46">
+        <property role="TrG5h" value="feature" />
+        <node concept="3Tqbb2" id="12kpBrp1H4F" role="1tU5fm">
+          <ref role="ehGHo" to="at53:L9c2Y9pj53" />
+        </node>
+      </node>
+      <node concept="10P_77" id="12kpBrp1H4G" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="12kpBrp2eGP" role="13h7CS">
+      <property role="TrG5h" value="getWidgetTypeIndicators" />
+      <ref role="13i0hy" node="1mmsj6xYY9u" resolve="getWidgetTypeIndicators" />
+      <node concept="3Tm1VV" id="12kpBrp2eGQ" role="1B3o_S" />
+      <node concept="3clFbS" id="12kpBrp2eGR" role="3clF47">
+        <node concept="3clFbF" id="12kpBrp2eGS" role="3cqZAp">
+          <node concept="2ShNRf" id="12kpBrp2eGT" role="3clFbG">
+            <node concept="Tc6Ow" id="12kpBrp2eGU" role="2ShVmc">
+              <node concept="Xl_RD" id="12kpBrp2eGV" role="HW$Y0">
+                <property role="Xl_RC" value="RadioButton" />
+              </node>
+              <node concept="Xl_RD" id="12kpBrp2eGW" role="HW$Y0">
+                <property role="Xl_RC" value="Radio" />
+              </node>
+              <node concept="Xl_RD" id="12kpBrp2eGX" role="HW$Y0">
+                <property role="Xl_RC" value="Button" />
+              </node>
+              <node concept="Xl_RD" id="12kpBrp2eGY" role="HW$Y0">
+                <property role="Xl_RC" value="Rdo" />
+              </node>
+              <node concept="Xl_RD" id="12kpBrp2eGZ" role="HW$Y0">
+                <property role="Xl_RC" value="Rad" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="12kpBrp2eH0" role="3clF45">
+        <node concept="17QB3L" id="12kpBrp2eH1" role="A3Ik2" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="3YuUBZ_2es6" role="13h7CS">
+      <property role="TrG5h" value="findRadioButtonByName" />
+      <node concept="3Tm1VV" id="3YuUBZ_2es7" role="1B3o_S" />
+      <node concept="3Tqbb2" id="3YuUBZ_2eIw" role="3clF45">
+        <ref role="ehGHo" to="at53:7NXUkdPQshI" resolve="RadioButtonWidget" />
+      </node>
+      <node concept="3clFbS" id="3YuUBZ_2es9" role="3clF47">
+        <node concept="3clFbF" id="3YuUBZ_2eK8" role="3cqZAp">
+          <node concept="2OqwBi" id="3YuUBZ_2jmb" role="3clFbG">
+            <node concept="2OqwBi" id="3YuUBZ_2eZT" role="2Oq$k0">
+              <node concept="13iPFW" id="3YuUBZ_2eK7" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="3YuUBZ_2fwa" role="2OqNvi">
+                <ref role="3TtcxE" to="at53:12kpBrp1HEy" resolve="radioButtonWidgets" />
+              </node>
+            </node>
+            <node concept="1z4cxt" id="3YuUBZ_2lx1" role="2OqNvi">
+              <node concept="1bVj0M" id="3YuUBZ_2lx3" role="23t8la">
+                <node concept="3clFbS" id="3YuUBZ_2lx4" role="1bW5cS">
+                  <node concept="3clFbF" id="3YuUBZ_2lBJ" role="3cqZAp">
+                    <node concept="17R0WA" id="3YuUBZ_2qpg" role="3clFbG">
+                      <node concept="37vLTw" id="3YuUBZ_2qs5" role="3uHU7w">
+                        <ref role="3cqZAo" node="3YuUBZ_2eJN" resolve="name" />
+                      </node>
+                      <node concept="2OqwBi" id="3YuUBZ_2lR4" role="3uHU7B">
+                        <node concept="37vLTw" id="3YuUBZ_2lBI" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3YuUBZ_2lx5" resolve="it" />
+                        </node>
+                        <node concept="3TrcHB" id="3YuUBZ_2mdN" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="gl6BB" id="3YuUBZ_2lx5" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="3YuUBZ_2lx6" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3YuUBZ_2eJN" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="3YuUBZ_2eJM" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="7kzHNKBtO89" role="13h7CS">
+      <property role="TrG5h" value="getChoiceEntries" />
+      <ref role="13i0hy" node="7NXUkdRsp$h" resolve="getChoiceEntries" />
+      <node concept="3Tm1VV" id="7kzHNKBtO8a" role="1B3o_S" />
+      <node concept="3clFbS" id="7kzHNKBtO8d" role="3clF47">
+        <node concept="3clFbF" id="1Ukm5Rfsdlv" role="3cqZAp">
+          <node concept="2OqwBi" id="1Ukm5RfsdAa" role="3clFbG">
+            <node concept="13iPFW" id="1Ukm5Rfsdlu" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="1Ukm5RfsfwS" role="2OqNvi">
+              <ref role="3TtcxE" to="at53:12kpBrp1HEy" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="7kzHNKBtO8e" role="3clF45">
+        <ref role="2I9WkF" to="at53:1Ukm5RfrSRo" resolve="IChoiceEntry" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="5LG6vEN6pdC">
+    <property role="3GE5qa" value="widgets.util" />
+    <ref role="13h7C2" to="at53:5LG6vEN6pdB" resolve="IViewWidgetComposite" />
+    <node concept="13i0hz" id="5LG6vEN5HBW" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getChildWidgets" />
+      <node concept="3Tm1VV" id="5LG6vEN5HBX" role="1B3o_S" />
+      <node concept="A3Dl8" id="5LG6vEN5HCy" role="3clF45">
+        <node concept="3Tqbb2" id="5LG6vEN5Iea" role="A3Ik2">
+          <ref role="ehGHo" to="at53:F907haLIRF" resolve="ViewWidget" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5LG6vEN5HBZ" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="5LG6vEN6pdD" role="13h7CW">
+      <node concept="3clFbS" id="5LG6vEN6pdE" role="2VODD2" />
     </node>
   </node>
 </model>

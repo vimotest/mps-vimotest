@@ -28,6 +28,7 @@ namespace widgetassertions
     virtual void then_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_() ;
     virtual void then_MyListOfLabel_has_4_rows() ;
     virtual void then_MyListOfLabel_has_4_rows_1() ;
+    virtual void then_MyButtons_has_0_rows() ;
     protected:
     void SetUp() override ;
   };
@@ -57,6 +58,11 @@ namespace widgetassertions
     this->given_empty_context();
     this->BuildSut();
     this->then_MyListOfLabel_has_4_rows_1();
+  }
+  TEST_F(ListViews_ViewTest,  List_of_Buttons_given_when_then_MyButtons_has_0_rows) 
+  {
+    this->BuildSut();
+    this->then_MyButtons_has_0_rows();
   }
   void ListViews_ViewTest::BuildSut( ) 
   {
@@ -218,6 +224,11 @@ namespace widgetassertions
     EXPECT_EQ(std::string("D"), row3->getMyValueLabelText());
     EXPECT_TRUE(row3->getIsMyValueLabelVisible());
     // }
+  }
+  void ListViews_ViewTest::then_MyButtons_has_0_rows( ) 
+  {
+    auto& actualRows = this->sut->getMyButtonsListRows();
+    EXPECT_EQ(0, actualRows.size());
   }
 }
 

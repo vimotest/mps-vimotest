@@ -263,6 +263,9 @@
     <node concept="PrWs8" id="7NXUkdQ8Z$l" role="PzmwI">
       <ref role="PrY4T" node="7NXUkdPQsiz" resolve="IRadioButtonCheckValue" />
     </node>
+    <node concept="PrWs8" id="5LG6vEMeVzw" role="PzmwI">
+      <ref role="PrY4T" node="12kpBrp1H4Q" resolve="IRadioButtonGroupCheckValue" />
+    </node>
     <node concept="PrWs8" id="44HS8_6jW4K" role="PzmwI">
       <ref role="PrY4T" node="44HS8_67H$U" resolve="IComboBoxCheckValue" />
     </node>
@@ -309,6 +312,9 @@
     </node>
     <node concept="PrWs8" id="7NXUkdPQsH3" role="PzmwI">
       <ref role="PrY4T" node="7NXUkdPQsiz" resolve="IRadioButtonCheckValue" />
+    </node>
+    <node concept="PrWs8" id="5LG6vEMf83m" role="PzmwI">
+      <ref role="PrY4T" node="12kpBrp1H4Q" resolve="IRadioButtonGroupCheckValue" />
     </node>
     <node concept="PrWs8" id="44HS8_6jYIs" role="PzmwI">
       <ref role="PrY4T" node="44HS8_67H$U" resolve="IComboBoxCheckValue" />
@@ -820,6 +826,9 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="44HS8_67H$U" resolve="IComboBoxCheckValue" />
     </node>
+    <node concept="PrWs8" id="19OyC3_gLMe" role="PzmwI">
+      <ref role="PrY4T" to="at53:7NXUkdRspaV" resolve="IProvideChoiceEntries" />
+    </node>
   </node>
   <node concept="1TIwiD" id="44HS8_67HAm">
     <property role="EcuMT" value="4696656866608863638" />
@@ -851,12 +860,12 @@
       <ref role="PrY4T" node="44HS8_67H$U" resolve="IComboBoxCheckValue" />
     </node>
     <node concept="PrWs8" id="7NXUkdPQsH2" role="PzmwI">
-      <ref role="PrY4T" node="7NXUkdPQsiz" resolve="IRadioButtonCheckValue" />
+      <ref role="PrY4T" node="12kpBrp1H4Q" resolve="IRadioButtonGroupCheckValue" />
     </node>
     <node concept="1TJgyj" id="7waZUcv25as" role="1TKVEi">
       <property role="IQ2ns" value="8650007110383850140" />
       <property role="20kJfa" value="selectedEntry" />
-      <ref role="20lvS9" to="at53:3mckYa_DMEC" resolve="ChoiceEntry" />
+      <ref role="20lvS9" to="at53:1Ukm5RfrSRo" resolve="IChoiceEntry" />
     </node>
     <node concept="1TJgyi" id="7NXUkdRsktI" role="1TKVEl">
       <property role="IQ2nx" value="9006611305786853230" />
@@ -1291,19 +1300,9 @@
     <node concept="1TJgyj" id="7NXUkdPQsiU" role="1TKVEi">
       <property role="IQ2ns" value="9006611305760146618" />
       <property role="20kJfa" value="checks" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="7NXUkdPQsiz" resolve="IRadioButtonCheckValue" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7NXUkdPQsjT">
-    <property role="EcuMT" value="9006611305760146681" />
-    <property role="TrG5h" value="RadioButtonChoicesCheckValue" />
-    <property role="34LRSv" value="choices" />
-    <property role="3GE5qa" value="test.assert._checkvalues" />
-    <ref role="1TJDcQ" node="5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
-    <node concept="PrWs8" id="7NXUkdPQsjU" role="PzmwI">
-      <ref role="PrY4T" node="7NXUkdPQsiz" resolve="IRadioButtonCheckValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="2GcDibl8goZ">
@@ -1363,6 +1362,46 @@
     <node concept="PrWs8" id="178awX4Zkx5" role="PzmwI">
       <ref role="PrY4T" node="2Yd1qrJOMZM" resolve="ITestScenarioContext" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="12kpBrp1H4Q">
+    <property role="EcuMT" value="1194692461793300790" />
+    <property role="TrG5h" value="IRadioButtonGroupCheckValue" />
+    <property role="3GE5qa" value="test.assert.widgets.choices" />
+    <node concept="PrWs8" id="12kpBrp1H4R" role="PrDN$">
+      <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="12kpBrp1H5c">
+    <property role="EcuMT" value="1194692461793300812" />
+    <property role="TrG5h" value="RadioButtonGroupCheck" />
+    <property role="34LRSv" value="check radio button group" />
+    <property role="3GE5qa" value="test.assert.widgets.choices" />
+    <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
+    <node concept="1TJgyj" id="12kpBrp1H5d" role="1TKVEi">
+      <property role="IQ2ns" value="1194692461793300813" />
+      <property role="20kJfa" value="checks" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="12kpBrp1H4Q" resolve="IRadioButtonGroupCheckValue" />
+    </node>
+    <node concept="1TJgyj" id="3YuUBZ_1Vqd" role="1TKVEi">
+      <property role="IQ2ns" value="4584359305733977741" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="radioButtonChecks" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7NXUkdPQsiT" resolve="RadioButtonCheck" />
+    </node>
+    <node concept="PrWs8" id="5LG6vEN5IiU" role="PzmwI">
+      <ref role="PrY4T" node="5LG6vEN5HBC" resolve="IViewWidgetCheckComposite" />
+    </node>
+    <node concept="PrWs8" id="19OyC3_ti1L" role="PzmwI">
+      <ref role="PrY4T" to="at53:7NXUkdRspaV" resolve="IProvideChoiceEntries" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5LG6vEN5HBC">
+    <property role="EcuMT" value="6659726513511258600" />
+    <property role="3GE5qa" value="test.assert.util" />
+    <property role="TrG5h" value="IViewWidgetCheckComposite" />
   </node>
 </model>
 

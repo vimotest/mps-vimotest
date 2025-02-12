@@ -16,19 +16,13 @@ class SelectEntryCommand_View {
   return this.MyElementsComboBoxSelectedEntry;
  }
   
-  private MyOptionsRadioButtonName : String [ * ]  ;
+  private MyOptionsRadioButtonGroupSelectedEntry : SelectEntryCommand_ViewMyOptionsOption  ;
   
-  public getMyOptionsRadioButtonName (  ) : String [ * ]  {
-  return this.MyOptionsRadioButtonName;
- }
-  
-  private MyOptionsRadioButtonSelectedEntry : String  ;
-  
-  public getMyOptionsRadioButtonSelectedEntry (  ) : String  {
-  return this.MyOptionsRadioButtonSelectedEntry;
+  public getMyOptionsRadioButtonGroupSelectedEntry (  ) : SelectEntryCommand_ViewMyOptionsOption  {
+  return this.MyOptionsRadioButtonGroupSelectedEntry;
  }
   
   public myElementsEntrySelected (   in entryName: String  ) {     }
   
-  public myOptionsEntrySelected (   in entryName: String  ) {     }
+  public myOptionsEntrySelected (   in entryName: SelectEntryCommand_ViewMyOptionsOption  ) {     }
 }

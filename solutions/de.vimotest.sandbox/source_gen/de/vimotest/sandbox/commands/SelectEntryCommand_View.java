@@ -14,16 +14,12 @@ public class SelectEntryCommand_View {
   public String getMyElementsComboBoxSelectedEntry() {
     return this.MyElementsComboBoxSelectedEntry;
   }
-  private List<String> MyOptionsRadioButtonName = new LinkedList<>();
-  public List<String> getMyOptionsRadioButtonName() {
-    return this.MyOptionsRadioButtonName;
-  }
-  private String MyOptionsRadioButtonSelectedEntry;
-  public String getMyOptionsRadioButtonSelectedEntry() {
-    return this.MyOptionsRadioButtonSelectedEntry;
+  private SelectEntryCommand_ViewMyOptionsOption MyOptionsRadioButtonGroupSelectedEntry;
+  public SelectEntryCommand_ViewMyOptionsOption getMyOptionsRadioButtonGroupSelectedEntry() {
+    return this.MyOptionsRadioButtonGroupSelectedEntry;
   }
   public void myElementsEntrySelected(String entryName) {
   }
-  public void myOptionsEntrySelected(String entryName) {
+  public void myOptionsEntrySelected(SelectEntryCommand_ViewMyOptionsOption entryName) {
   }
 }

@@ -53,7 +53,6 @@
         <child id="8882441622785832607" name="checks" index="V3Zc7" />
       </concept>
       <concept id="8882441622785832647" name="de.vimotest.viewmodel.testing.structure.TextCheckValue" flags="ng" index="V3Zdv">
-        <property id="7845445839813196640" name="old_expectedText" index="3egigc" />
         <child id="5219625661136595408" name="expectedText" index="oSbKM" />
       </concept>
       <concept id="6201744883139140374" name="de.vimotest.viewmodel.testing.structure.ButtonCheck" flags="ng" index="2X2XOa">
@@ -256,7 +255,6 @@
             <ref role="30nzpS" node="17xw4ZmRkJ0" resolve="Username" />
             <node concept="UtuKh" id="17xw4ZmUXU5" role="30nDbQ">
               <node concept="V3Zdv" id="17xw4ZmUXU6" role="UtuKg">
-                <property role="3egigc" value="User" />
                 <node concept="o7Kjd" id="6RKU0s0Mwur" role="oSbKM">
                   <property role="o7K7r" value="User" />
                 </node>
@@ -269,7 +267,6 @@
             <ref role="30nzpS" node="17xw4ZmRWXv" resolve="Password" />
             <node concept="UtuKh" id="17xw4ZmUXTZ" role="30nDbQ">
               <node concept="V3Zdv" id="17xw4ZmUXU0" role="UtuKg">
-                <property role="3egigc" value="MyPass123" />
                 <node concept="o7Kjd" id="6RKU0s0Mwus" role="oSbKM">
                   <property role="o7K7r" value="MyPass123" />
                 </node>
@@ -310,7 +307,6 @@
             <ref role="30nzpS" node="17xw4ZmRkJ0" resolve="Username" />
             <node concept="UtuKh" id="6fEYrkZxlRe" role="30nDbQ">
               <node concept="V3Zdv" id="6fEYrkZxlRf" role="UtuKg">
-                <property role="3egigc" value="User" />
                 <node concept="o7Kjd" id="6RKU0s0Mwut" role="oSbKM">
                   <property role="o7K7r" value="User" />
                 </node>
@@ -354,7 +350,6 @@
             <ref role="30nzpS" node="17xw4ZmRkJ0" resolve="Username" />
             <node concept="UtuKh" id="6RKU0s0VjnV" role="30nDbQ">
               <node concept="V3Zdv" id="6RKU0s0VjnW" role="UtuKg">
-                <property role="3egigc" value="User" />
                 <node concept="o7Kjd" id="6RKU0s0VjnX" role="oSbKM">
                   <property role="o7K7r" value="Ada" />
                 </node>
@@ -367,7 +362,6 @@
             <ref role="30nzpS" node="17xw4ZmRWXv" resolve="Password" />
             <node concept="UtuKh" id="6RKU0s0Vjo0" role="30nDbQ">
               <node concept="V3Zdv" id="6RKU0s0Vjo1" role="UtuKg">
-                <property role="3egigc" value="MyPass123" />
                 <node concept="o7Kjd" id="6RKU0s0Vjo2" role="oSbKM">
                   <property role="o7K7r" value="******" />
                 </node>
@@ -403,7 +397,6 @@
             <ref role="30nzpS" node="17xw4ZmRkJ0" resolve="Username" />
             <node concept="UtuKh" id="6RKU0s1bfVE" role="30nDbQ">
               <node concept="V3Zdv" id="6RKU0s1bfVF" role="UtuKg">
-                <property role="3egigc" value="User" />
                 <node concept="o7Kjd" id="6RKU0s1bfVG" role="oSbKM">
                   <property role="o7K7r" value="Ada" />
                 </node>
@@ -416,7 +409,6 @@
             <ref role="30nzpS" node="17xw4ZmRWXv" resolve="Password" />
             <node concept="UtuKh" id="6RKU0s1bfVJ" role="30nDbQ">
               <node concept="V3Zdv" id="6RKU0s1bfVK" role="UtuKg">
-                <property role="3egigc" value="MyPass123" />
                 <node concept="o7Kjd" id="6RKU0s1bfVL" role="oSbKM">
                   <property role="o7K7r" value="Lovelace1" />
                 </node>

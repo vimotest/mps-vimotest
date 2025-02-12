@@ -6,6 +6,7 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewMyCheckboxesRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewMyStringRowHandlesRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewMyListWithMultiRowSelectionRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewMyButtonsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyListViewElementsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringRowHandleListViewElementsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewElementsRow.cpp
@@ -82,6 +83,7 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewMyCheckboxesRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewMyStringRowHandlesRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewMyListWithMultiRowSelectionRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewMyButtonsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyListViewElementsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyStringRowHandleListViewElementsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewElementsRow.h
@@ -181,5 +183,7 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/context/DataPathContext_ViewTestSetupImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_ViewTestSetup.h
   ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_ViewTestSetupImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewMyOptionsOption.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewOptionsOption.h
 )
 

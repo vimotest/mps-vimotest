@@ -4,6 +4,7 @@
 #include "SelectEntryCommand_ViewTestSetup.h"
 #include <string>
 #include "SelectEntryCommand_View.h"
+#include "SelectEntryCommand_ViewMyOptionsOption.h"
 #include <vector>
 #include <optional>
 #include "SelectEntryCommand_ViewTestSetupImpl.h"
@@ -48,7 +49,7 @@ namespace commands
   }
   void SelectEntryCommand_ViewTests::when_select_entry_B_in_MyOptions( ) 
   {
-    this->sut->myOptionsEntrySelected(std::string("B"));
+    this->sut->myOptionsEntrySelected(commands::SelectEntryCommand_ViewMyOptionsOption::B);
   }
   void SelectEntryCommand_ViewTests::then_MyElements_has_3_entries_and( ) 
   {

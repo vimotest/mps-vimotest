@@ -7,6 +7,7 @@ import de.vimotest.sandbox.commands.SelectEntryCommand_ViewTestSetup;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.commands.SelectEntryCommand_ViewTestSetupImpl;
+import de.vimotest.sandbox.commands.SelectEntryCommand_ViewMyOptionsOption;
 import java.util.List;
 import org.junit.Assert;
 
@@ -44,7 +45,7 @@ public class SelectEntryCommand_ViewTests_Test {
     this.sut.myElementsEntrySelected("C");
   }
   public void when_select_entry_B_in_MyOptions() {
-    this.sut.myOptionsEntrySelected("B");
+    this.sut.myOptionsEntrySelected(SelectEntryCommand_ViewMyOptionsOption.B);
   }
 
 

@@ -43,7 +43,7 @@ class SelectEntryCommand_ViewTests {
  }
   
   public when_select_entry_B_in_MyOptions (  ) {
-  this.sut.myOptionsEntrySelected ( "B" );
+  this.sut.myOptionsEntrySelected ( B );
  }
   
   // Then Helper Definitions

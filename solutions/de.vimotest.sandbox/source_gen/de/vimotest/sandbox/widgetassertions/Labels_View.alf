@@ -63,4 +63,10 @@ class Labels_View {
   public getWithTextColorLabelTextColor (  ) : String  {
   return this.WithTextColorLabelTextColor;
  }
+  
+  private isOnlyVisibilityLabelVisible : Boolean  ;
+  
+  public getIsOnlyVisibilityLabelVisible (  ) : Boolean  {
+  return this.isOnlyVisibilityLabelVisible;
+ }
 }

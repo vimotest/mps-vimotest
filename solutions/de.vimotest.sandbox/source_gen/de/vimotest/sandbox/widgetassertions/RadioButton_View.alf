@@ -4,27 +4,45 @@ namespace widgetassertions ;
 
 class RadioButton_View {
   
-  private MyChoicesRadioButtonName : String [ * ]  ;
+  private OptionsRadioButtonGroupSelectedEntry : RadioButton_ViewOptionsOption  ;
   
-  public getMyChoicesRadioButtonName (  ) : String [ * ]  {
-  return this.MyChoicesRadioButtonName;
+  public getOptionsRadioButtonGroupSelectedEntry (  ) : RadioButton_ViewOptionsOption  {
+  return this.OptionsRadioButtonGroupSelectedEntry;
  }
   
-  private MyChoicesRadioButtonSelectedEntry : String  ;
+  private isOptionsRadioButtonGroupVisible : Boolean  ;
   
-  public getMyChoicesRadioButtonSelectedEntry (  ) : String  {
-  return this.MyChoicesRadioButtonSelectedEntry;
+  public getIsOptionsRadioButtonGroupVisible (  ) : Boolean  {
+  return this.isOptionsRadioButtonGroupVisible;
  }
   
-  private isMyChoicesRadioButtonVisible : Boolean  ;
+  private isOptionsRadioButtonGroupEnabled : Boolean  ;
   
-  public getIsMyChoicesRadioButtonVisible (  ) : Boolean  {
-  return this.isMyChoicesRadioButtonVisible;
+  public getIsOptionsRadioButtonGroupEnabled (  ) : Boolean  {
+  return this.isOptionsRadioButtonGroupEnabled;
  }
   
-  private isMyChoicesRadioButtonEnabled : Boolean  ;
+  private isOptionBRadioButtonVisible : Boolean  ;
   
-  public getIsMyChoicesRadioButtonEnabled (  ) : Boolean  {
-  return this.isMyChoicesRadioButtonEnabled;
+  public getIsOptionBRadioButtonVisible (  ) : Boolean  {
+  return this.isOptionBRadioButtonVisible;
+ }
+  
+  private isOptionBRadioButtonEnabled : Boolean  ;
+  
+  public getIsOptionBRadioButtonEnabled (  ) : Boolean  {
+  return this.isOptionBRadioButtonEnabled;
+ }
+  
+  private isOptionCRadioButtonVisible : Boolean  ;
+  
+  public getIsOptionCRadioButtonVisible (  ) : Boolean  {
+  return this.isOptionCRadioButtonVisible;
+ }
+  
+  private isOptionCRadioButtonEnabled : Boolean  ;
+  
+  public getIsOptionCRadioButtonEnabled (  ) : Boolean  {
+  return this.isOptionCRadioButtonEnabled;
  }
 }

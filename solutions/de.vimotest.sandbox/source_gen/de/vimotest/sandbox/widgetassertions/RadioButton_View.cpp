@@ -1,26 +1,37 @@
 
 #include "RadioButton_View.h"
 #include "RadioButton_View.h"
-#include <vector>
-#include <string>
+#include "RadioButton_ViewOptionsOption.h"
 
 namespace widgetassertions
 {
-  std::vector<std::string> RadioButton_View::getMyChoicesRadioButtonName( ) 
+  RadioButton_ViewOptionsOption RadioButton_View::getOptionsRadioButtonGroupSelectedEntry( ) 
   {
-    return this->MyChoicesRadioButtonName;
+    return this->OptionsRadioButtonGroupSelectedEntry;
   }
-  std::string RadioButton_View::getMyChoicesRadioButtonSelectedEntry( ) 
+  bool RadioButton_View::getIsOptionsRadioButtonGroupVisible( ) 
   {
-    return this->MyChoicesRadioButtonSelectedEntry;
+    return this->isOptionsRadioButtonGroupVisible;
   }
-  bool RadioButton_View::getIsMyChoicesRadioButtonVisible( ) 
+  bool RadioButton_View::getIsOptionsRadioButtonGroupEnabled( ) 
   {
-    return this->isMyChoicesRadioButtonVisible;
+    return this->isOptionsRadioButtonGroupEnabled;
   }
-  bool RadioButton_View::getIsMyChoicesRadioButtonEnabled( ) 
+  bool RadioButton_View::getIsOptionBRadioButtonVisible( ) 
   {
-    return this->isMyChoicesRadioButtonEnabled;
+    return this->isOptionBRadioButtonVisible;
+  }
+  bool RadioButton_View::getIsOptionBRadioButtonEnabled( ) 
+  {
+    return this->isOptionBRadioButtonEnabled;
+  }
+  bool RadioButton_View::getIsOptionCRadioButtonVisible( ) 
+  {
+    return this->isOptionCRadioButtonVisible;
+  }
+  bool RadioButton_View::getIsOptionCRadioButtonEnabled( ) 
+  {
+    return this->isOptionCRadioButtonEnabled;
   }
 }
 

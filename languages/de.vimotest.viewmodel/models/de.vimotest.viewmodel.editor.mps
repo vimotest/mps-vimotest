@@ -2265,6 +2265,7 @@
     <node concept="3EZMnI" id="2UxxT8c6ElY" role="6VMZX">
       <node concept="3F0ifn" id="2UxxT8c7lpT" role="3EZMnx">
         <property role="3F0ifm" value="type:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
       </node>
       <node concept="3F1sOY" id="esdQ51MbIk" role="3EZMnx">
         <ref role="1NtTu8" to="at53:7uPLQmTQNN" resolve="widgetType" />
@@ -2303,7 +2304,7 @@
         </node>
         <node concept="3F2HdR" id="4Ips5F1hH2K" role="3EZMnx">
           <property role="2czwfO" value="-----" />
-          <ref role="1NtTu8" to="at53:4Ips5F1549y" resolve="columnsFeature" />
+          <ref role="1NtTu8" to="at53:4Ips5F1549y" resolve="columnDefinitions_old" />
           <node concept="l2Vlx" id="4Ips5F1hH2L" role="2czzBx" />
           <node concept="2w$q5c" id="4Ips5F1hH2M" role="78xua">
             <node concept="2aJ2om" id="4Ips5F1hH2N" role="2w$qW5">
@@ -4918,6 +4919,48 @@
         <ref role="1NtTu8" to="at53:12kpBrp1HEy" resolve="radioButtonWidgets" />
         <node concept="2iRkQZ" id="3YuUBZ_RxMj" role="2czzBx" />
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="q9OOkGw2yl">
+    <property role="TrG5h" value="TableColumnWidget_Features_EC" />
+    <property role="3GE5qa" value="widgets.structures" />
+    <ref role="1XX52x" to="at53:q9OOkGw2yi" resolve="TableColumnWidget" />
+    <node concept="1PE4EZ" id="q9OOkGw2yn" role="1PM95z">
+      <ref role="1PE7su" node="4OohpJQEUlZ" resolve="ViewWidget_WidgetFeatures_EC" />
+    </node>
+    <node concept="3EZMnI" id="q9OOkGw2yo" role="2wV5jI">
+      <node concept="2EHx9g" id="q9OOkGw2yp" role="2iSdaV" />
+      <node concept="3F1sOY" id="q9OOkGQb1v" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:q9OOkGw2yj" resolve="textFeature" />
+      </node>
+      <node concept="3F1sOY" id="q9OOkGw2yq" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:q9OOkGQb1s" />
+      </node>
+      <node concept="3F1sOY" id="q9OOkGw2yr" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:q9OOkGw2yk" resolve="enabledFeature" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="q9OOkGw2ys">
+    <property role="TrG5h" value="TableColumnWidget_Commands_EC" />
+    <property role="3GE5qa" value="widgets.structures" />
+    <ref role="1XX52x" to="at53:q9OOkGw2yi" resolve="TableColumnWidget" />
+    <node concept="1PE4EZ" id="q9OOkGw2yu" role="1PM95z">
+      <ref role="1PE7su" node="1F_Q10zSP_8" resolve="ViewWidget_Commands_EC" />
+    </node>
+    <node concept="3EZMnI" id="q9OOkGw2yv" role="2wV5jI">
+      <node concept="2EHx9g" id="q9OOkGw2yw" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="q9OOkGw2yx">
+    <property role="TrG5h" value="RadioButtonWidget_Commands_EC" />
+    <property role="3GE5qa" value="widgets" />
+    <ref role="1XX52x" to="at53:7NXUkdPQshI" resolve="RadioButtonWidget" />
+    <node concept="1PE4EZ" id="q9OOkGw2yz" role="1PM95z">
+      <ref role="1PE7su" node="1F_Q10zSP_8" resolve="ViewWidget_Commands_EC" />
+    </node>
+    <node concept="3EZMnI" id="q9OOkGw2y$" role="2wV5jI">
+      <node concept="2EHx9g" id="q9OOkGw2y_" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -126,6 +126,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
+        <child id="1164991057263" name="throwable" index="YScLw" />
+      </concept>
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
@@ -4426,7 +4429,7 @@
               <node concept="2OqwBi" id="4Ips5F15WNk" role="2Oq$k0">
                 <node concept="13iPFW" id="4Ips5F15WNl" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="4Ips5F15WNm" role="2OqNvi">
-                  <ref role="3TtcxE" to="at53:4Ips5F1549y" resolve="columnsFeature" />
+                  <ref role="3TtcxE" to="at53:4Ips5F1549y" resolve="columnDefinitions_old" />
                 </node>
               </node>
               <node concept="2DeJg1" id="4Ips5F15WNn" role="2OqNvi" />
@@ -4719,6 +4722,40 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="q9OOkGQpMO" role="13h7CS">
+      <property role="TrG5h" value="getColumnWidgetType" />
+      <ref role="13i0hy" node="q9OOkGQoXY" resolve="getColumnWidgetType" />
+      <node concept="3Tm1VV" id="q9OOkGQpMP" role="1B3o_S" />
+      <node concept="3clFbS" id="q9OOkGQpMS" role="3clF47">
+        <node concept="3clFbF" id="q9OOkGQpTr" role="3cqZAp">
+          <node concept="2OqwBi" id="q9OOkGQq5$" role="3clFbG">
+            <node concept="13iPFW" id="q9OOkGQpTq" role="2Oq$k0" />
+            <node concept="3TrEf2" id="q9OOkGQqeL" role="2OqNvi">
+              <ref role="3Tt5mk" to="at53:7uPLQmTQNN" resolve="widgetType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="q9OOkGQpMT" role="3clF45">
+        <ref role="ehGHo" to="at53:F907haLIRF" resolve="ViewWidget" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="q9OOkGQpMU" role="13h7CS">
+      <property role="TrG5h" value="getColumnHeader" />
+      <ref role="13i0hy" node="q9OOkGQp08" resolve="getColumnHeader" />
+      <node concept="3Tm1VV" id="q9OOkGQpMV" role="1B3o_S" />
+      <node concept="3clFbS" id="q9OOkGQpMY" role="3clF47">
+        <node concept="3clFbF" id="q9OOkGQqf$" role="3cqZAp">
+          <node concept="2OqwBi" id="q9OOkGQqhN" role="3clFbG">
+            <node concept="13iPFW" id="q9OOkGQqfz" role="2Oq$k0" />
+            <node concept="3TrcHB" id="q9OOkGQqmm" role="2OqNvi">
+              <ref role="3TsBF5" to="at53:7uPLQmTPAc" resolve="header" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="q9OOkGQpMZ" role="3clF45" />
+    </node>
   </node>
   <node concept="312cEu" id="4Ia639WrZWU">
     <property role="3GE5qa" value="widgets.structures.util" />
@@ -4756,7 +4793,7 @@
                 <ref role="3cqZAo" node="4Ia639WsoHH" resolve="tableWidget" />
               </node>
               <node concept="3Tsc0h" id="2DHgAdq7Zdd" role="2OqNvi">
-                <ref role="3TtcxE" to="at53:4Ips5F1549y" resolve="columnsFeature" />
+                <ref role="3TtcxE" to="at53:4Ips5F1549y" resolve="columnDefinitions_old" />
               </node>
             </node>
           </node>
@@ -9932,6 +9969,169 @@
     </node>
     <node concept="13hLZK" id="5LG6vEN6pdD" role="13h7CW">
       <node concept="3clFbS" id="5LG6vEN6pdE" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="q9OOkGw2yA">
+    <property role="TrG5h" value="TableColumnWidget_Behavior" />
+    <property role="3GE5qa" value="widgets.structures" />
+    <ref role="13h7C2" to="at53:q9OOkGw2yi" resolve="TableColumnWidget" />
+    <node concept="13hLZK" id="q9OOkGw2yB" role="13h7CW">
+      <node concept="3clFbS" id="q9OOkGw2yC" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="q9OOkGw2yD" role="13h7CS">
+      <property role="TrG5h" value="createEditorCell" />
+      <ref role="13i0hy" node="6mWHjmRL0Kv" />
+      <node concept="3Tm1VV" id="q9OOkGw2yE" role="1B3o_S" />
+      <node concept="3clFbS" id="q9OOkGw2yF" role="3clF47">
+        <node concept="3SKdUt" id="q9OOkGPQ70" role="3cqZAp">
+          <node concept="1PaTwC" id="q9OOkGPQ71" role="1aUNEU">
+            <node concept="3oM_SD" id="q9OOkGPQ72" role="1PaTwD">
+              <property role="3oM_SC" value="columns" />
+            </node>
+            <node concept="3oM_SD" id="q9OOkGPQ7l" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="q9OOkGPQ7n" role="1PaTwD">
+              <property role="3oM_SC" value="inherently" />
+            </node>
+            <node concept="3oM_SD" id="q9OOkGPQ7S" role="1PaTwD">
+              <property role="3oM_SC" value="provided" />
+            </node>
+            <node concept="3oM_SD" id="q9OOkGPQ89" role="1PaTwD">
+              <property role="3oM_SC" value="by" />
+            </node>
+            <node concept="3oM_SD" id="q9OOkGPQ8q" role="1PaTwD">
+              <property role="3oM_SC" value="TableModels" />
+            </node>
+          </node>
+        </node>
+        <node concept="YS8fn" id="q9OOkGPQ9W" role="3cqZAp">
+          <node concept="2ShNRf" id="q9OOkGPQaq" role="YScLw">
+            <node concept="1pGfFk" id="q9OOkGQ9WS" role="2ShVmc">
+              <property role="373rjd" value="true" />
+              <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+              <node concept="Xl_RD" id="q9OOkGQ9YJ" role="37wK5m">
+                <property role="Xl_RC" value="TableColumnWidget.createEditorCell() does not make sense" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="q9OOkGw2yV" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="q9OOkGw2yW" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="q9OOkGw2yX" role="3clF45">
+        <ref role="3uigEE" to="f4zo:~EditorCell" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="q9OOkGw2yY" role="13h7CS">
+      <property role="TrG5h" value="hasFeatureInherentSupport" />
+      <ref role="13i0hy" node="2S2pY38UZYV" />
+      <node concept="3Tm1VV" id="q9OOkGw2yZ" role="1B3o_S" />
+      <node concept="3clFbS" id="q9OOkGw2z0" role="3clF47">
+        <node concept="3clFbJ" id="q9OOkGQdje" role="3cqZAp">
+          <node concept="3clFbS" id="q9OOkGQdjf" role="3clFbx">
+            <node concept="3cpWs6" id="q9OOkGQdjg" role="3cqZAp">
+              <node concept="3clFbT" id="q9OOkGQdjh" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="q9OOkGQdji" role="3clFbw">
+            <node concept="2OqwBi" id="q9OOkGQdjj" role="3uHU7w">
+              <node concept="13iPFW" id="q9OOkGQdjk" role="2Oq$k0" />
+              <node concept="3TrEf2" id="q9OOkGQdjl" role="2OqNvi">
+                <ref role="3Tt5mk" to="at53:q9OOkGw2yj" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="q9OOkGQdjm" role="3uHU7B">
+              <ref role="3cqZAo" node="q9OOkGw2z3" resolve="feature" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="q9OOkGw2z1" role="3cqZAp">
+          <node concept="3clFbT" id="q9OOkGw2z2" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="q9OOkGw2z3" role="3clF46">
+        <property role="TrG5h" value="feature" />
+        <node concept="3Tqbb2" id="q9OOkGw2z4" role="1tU5fm">
+          <ref role="ehGHo" to="at53:L9c2Y9pj53" />
+        </node>
+      </node>
+      <node concept="10P_77" id="q9OOkGw2z5" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="q9OOkGQqUy" role="13h7CS">
+      <property role="TrG5h" value="getColumnWidgetType" />
+      <ref role="13i0hy" node="q9OOkGQoXY" resolve="getColumnWidgetType" />
+      <node concept="3Tm1VV" id="q9OOkGQqUz" role="1B3o_S" />
+      <node concept="3clFbS" id="q9OOkGQqUA" role="3clF47">
+        <node concept="3clFbF" id="q9OOkGQrI3" role="3cqZAp">
+          <node concept="2OqwBi" id="q9OOkGQrVL" role="3clFbG">
+            <node concept="13iPFW" id="q9OOkGQrI2" role="2Oq$k0" />
+            <node concept="3TrEf2" id="q9OOkGQs9u" role="2OqNvi">
+              <ref role="3Tt5mk" to="at53:q9OOkGQqmU" resolve="widgetType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="q9OOkGQqUB" role="3clF45">
+        <ref role="ehGHo" to="at53:F907haLIRF" resolve="ViewWidget" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="q9OOkGQrss" role="13h7CS">
+      <property role="TrG5h" value="getColumnHeader" />
+      <ref role="13i0hy" node="q9OOkGQp08" resolve="getColumnHeader" />
+      <node concept="3Tm1VV" id="q9OOkGQrst" role="1B3o_S" />
+      <node concept="3clFbS" id="q9OOkGQrsw" role="3clF47">
+        <node concept="3clFbF" id="q9OOkGQsah" role="3cqZAp">
+          <node concept="2OqwBi" id="q9OOkGQsU8" role="3clFbG">
+            <node concept="2OqwBi" id="q9OOkGQst6" role="2Oq$k0">
+              <node concept="2OqwBi" id="q9OOkGQsd8" role="2Oq$k0">
+                <node concept="13iPFW" id="q9OOkGQsag" role="2Oq$k0" />
+                <node concept="3TrEf2" id="q9OOkGQsec" role="2OqNvi">
+                  <ref role="3Tt5mk" to="at53:q9OOkGw2yj" resolve="textFeature" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="q9OOkGQsFk" role="2OqNvi">
+                <ref role="3Tt5mk" to="at53:4xJPu9gt$hE" resolve="defaultText" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="q9OOkGQteJ" role="2OqNvi">
+              <ref role="3TsBF5" to="at53:4xJPu9gsdgT" resolve="singleLineValue" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="q9OOkGQrsx" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="q9OOkGQoXF">
+    <property role="3GE5qa" value="widgets.structures.util" />
+    <ref role="13h7C2" to="at53:q9OOkGQoXE" resolve="ITableColumn" />
+    <node concept="13i0hz" id="q9OOkGQoXY" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getColumnWidgetType" />
+      <node concept="3Tm1VV" id="q9OOkGQoXZ" role="1B3o_S" />
+      <node concept="3Tqbb2" id="q9OOkGQoYi" role="3clF45">
+        <ref role="ehGHo" to="at53:F907haLIRF" resolve="ViewWidget" />
+      </node>
+      <node concept="3clFbS" id="q9OOkGQoY1" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="q9OOkGQp08" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getColumnHeader" />
+      <node concept="3Tm1VV" id="q9OOkGQp09" role="1B3o_S" />
+      <node concept="17QB3L" id="q9OOkGQp0t" role="3clF45" />
+      <node concept="3clFbS" id="q9OOkGQp0b" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="q9OOkGQoXG" role="13h7CW">
+      <node concept="3clFbS" id="q9OOkGQoXH" role="2VODD2" />
     </node>
   </node>
 </model>

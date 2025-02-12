@@ -762,6 +762,13 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="24MyZrrRA6Y" resolve="ITableViewCheckValue" />
     </node>
+    <node concept="1TJgyj" id="q9OOkGElnL" role="1TKVEi">
+      <property role="IQ2ns" value="471139930092426737" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="tableColumnChecks" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="q9OOkGw2zs" resolve="TableColumnCheck" />
+    </node>
   </node>
   <node concept="1TIwiD" id="24MyZrrSM5G">
     <property role="EcuMT" value="2392128244454465900" />
@@ -1402,6 +1409,28 @@
     <property role="EcuMT" value="6659726513511258600" />
     <property role="3GE5qa" value="test.assert.util" />
     <property role="TrG5h" value="IViewWidgetCheckComposite" />
+  </node>
+  <node concept="PlHQZ" id="q9OOkGw2z6">
+    <property role="EcuMT" value="471139930089728198" />
+    <property role="TrG5h" value="ITableColumnCheckValue" />
+    <property role="3GE5qa" value="test.assert.widgets" />
+    <node concept="PrWs8" id="q9OOkGw2z7" role="PrDN$">
+      <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="q9OOkGw2zs">
+    <property role="EcuMT" value="471139930089728220" />
+    <property role="TrG5h" value="TableColumnCheck" />
+    <property role="34LRSv" value="check table column" />
+    <property role="3GE5qa" value="test.assert.widgets" />
+    <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
+    <node concept="1TJgyj" id="q9OOkGw2zt" role="1TKVEi">
+      <property role="IQ2ns" value="471139930089728221" />
+      <property role="20kJfa" value="checks" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="q9OOkGw2z6" resolve="ITableColumnCheckValue" />
+    </node>
   </node>
 </model>
 

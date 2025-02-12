@@ -6614,5 +6614,40 @@
       <node concept="2iRkQZ" id="12kpBrp1H5s" role="2czzBx" />
     </node>
   </node>
+  <node concept="22mcaB" id="q9OOkGw2z8">
+    <property role="TrG5h" value="ITableColumnCheckValue_SubstituteMenu" />
+    <property role="3GE5qa" value="test.assert.widgets" />
+    <ref role="aqKnT" to="53m0:q9OOkGw2z6" resolve="ITableColumnCheckValue" />
+    <node concept="22hDWj" id="q9OOkGw2z9" role="22hAXT" />
+    <node concept="2VfDsV" id="q9OOkGw2za" role="3ft7WO">
+      <node concept="1GpqWn" id="q9OOkGw2zb" role="1Go12V">
+        <node concept="3clFbS" id="q9OOkGw2zc" role="2VODD2">
+          <node concept="3clFbF" id="q9OOkGw2zd" role="3cqZAp">
+            <node concept="3fqX7Q" id="q9OOkGw2ze" role="3clFbG">
+              <node concept="2YIFZM" id="q9OOkGw2zf" role="3fr31v">
+                <ref role="37wK5l" node="2_MKLxJcA3M" />
+                <ref role="1Pybhc" node="2_MKLxJcA2h" />
+                <node concept="1GpqW3" id="q9OOkGw2zg" role="37wK5m" />
+                <node concept="3bvxqY" id="q9OOkGw2zh" role="37wK5m" />
+                <node concept="1J7kdh" id="q9OOkGw2zi" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="q9OOkGw2zC">
+    <property role="TrG5h" value="TableColumnCheck_Inspector_Checks_EC" />
+    <property role="3GE5qa" value="test.assert.widgets" />
+    <ref role="1XX52x" to="53m0:q9OOkGw2zs" resolve="TableColumnCheck" />
+    <node concept="1PE4EZ" id="q9OOkGw2zE" role="1PM95z">
+      <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_Checks_EC" />
+    </node>
+    <node concept="3F2HdR" id="q9OOkGw2zF" role="2wV5jI">
+      <ref role="1NtTu8" to="53m0:q9OOkGw2zt" resolve="checks" />
+      <node concept="2iRkQZ" id="q9OOkGw2zG" role="2czzBx" />
+    </node>
+  </node>
 </model>
 

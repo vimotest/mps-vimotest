@@ -2247,7 +2247,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7uPLQmTPAd">
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="widgets.structures.column" />
     <ref role="1XX52x" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
     <node concept="3EZMnI" id="7uPLQmTQNJ" role="2wV5jI">
       <node concept="3F0ifn" id="7N9Xs9XSrsn" role="3EZMnx">
@@ -4744,7 +4744,7 @@
     </node>
   </node>
   <node concept="PKFIW" id="5C8UTa3RE9K">
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="widgets.structures.row" />
     <property role="TrG5h" value="IRowBasedViewWidget_additionalFields_EC" />
     <ref role="1XX52x" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
     <node concept="1QoScp" id="5C8UTa3REa4" role="2wV5jI">
@@ -4923,7 +4923,7 @@
   </node>
   <node concept="PKFIW" id="q9OOkGw2yl">
     <property role="TrG5h" value="TableColumnWidget_Features_EC" />
-    <property role="3GE5qa" value="widgets.structures" />
+    <property role="3GE5qa" value="widgets.structures.column" />
     <ref role="1XX52x" to="at53:q9OOkGw2yi" resolve="TableColumnWidget" />
     <node concept="1PE4EZ" id="q9OOkGw2yn" role="1PM95z">
       <ref role="1PE7su" node="4OohpJQEUlZ" resolve="ViewWidget_WidgetFeatures_EC" />
@@ -4943,7 +4943,7 @@
   </node>
   <node concept="PKFIW" id="q9OOkGw2ys">
     <property role="TrG5h" value="TableColumnWidget_Commands_EC" />
-    <property role="3GE5qa" value="widgets.structures" />
+    <property role="3GE5qa" value="widgets.structures.column" />
     <ref role="1XX52x" to="at53:q9OOkGw2yi" resolve="TableColumnWidget" />
     <node concept="1PE4EZ" id="q9OOkGw2yu" role="1PM95z">
       <ref role="1PE7su" node="1F_Q10zSP_8" resolve="ViewWidget_Commands_EC" />

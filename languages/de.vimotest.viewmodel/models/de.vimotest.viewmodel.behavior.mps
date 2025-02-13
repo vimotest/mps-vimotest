@@ -3535,7 +3535,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2zlSkwD9osT">
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="widgets.structures.row" />
     <ref role="13h7C2" to="at53:2zlSkwD9nfw" resolve="ITreeRow" />
     <node concept="13i0hz" id="2zlSkwD9pDm" role="13h7CS">
       <property role="13i0iv" value="true" />
@@ -4673,7 +4673,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="24MyZrrSPdu">
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="widgets.structures.row" />
     <ref role="13h7C2" to="at53:24MyZrrSND$" resolve="ITableRow" />
     <node concept="13hLZK" id="24MyZrrSPdv" role="13h7CW">
       <node concept="3clFbS" id="24MyZrrSPdw" role="2VODD2" />
@@ -4690,7 +4690,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7N9Xs9XTOpw">
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="widgets.structures.column" />
     <ref role="13h7C2" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
     <node concept="13hLZK" id="7N9Xs9XTOpx" role="13h7CW">
       <node concept="3clFbS" id="7N9Xs9XTOpy" role="2VODD2">
@@ -4758,7 +4758,7 @@
     </node>
   </node>
   <node concept="312cEu" id="4Ia639WrZWU">
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="widgets.structures.row" />
     <property role="TrG5h" value="ColumnDefinitionsTableModel" />
     <node concept="312cEg" id="4Ia639WslvM" role="jymVt">
       <property role="TrG5h" value="columns" />
@@ -6908,7 +6908,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2w4bAIFM3CN">
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="widgets.structures.row" />
     <ref role="13h7C2" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
     <node concept="13i0hz" id="2w4bAIFM8vc" role="13h7CS">
       <property role="13i0iv" value="true" />
@@ -9973,7 +9973,7 @@
   </node>
   <node concept="13h7C7" id="q9OOkGw2yA">
     <property role="TrG5h" value="TableColumnWidget_Behavior" />
-    <property role="3GE5qa" value="widgets.structures" />
+    <property role="3GE5qa" value="widgets.structures.column" />
     <ref role="13h7C2" to="at53:q9OOkGw2yi" resolve="TableColumnWidget" />
     <node concept="13hLZK" id="q9OOkGw2yB" role="13h7CW">
       <node concept="3clFbS" id="q9OOkGw2yC" role="2VODD2" />
@@ -10110,7 +10110,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="q9OOkGQoXF">
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="widgets.structures.column" />
     <ref role="13h7C2" to="at53:q9OOkGQoXE" resolve="ITableColumn" />
     <node concept="13i0hz" id="q9OOkGQoXY" role="13h7CS">
       <property role="13i0iv" value="true" />

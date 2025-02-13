@@ -668,7 +668,7 @@
   </node>
   <node concept="PlHQZ" id="2zlSkwD9nfw">
     <property role="EcuMT" value="2942505631600702432" />
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="widgets.structures.row" />
     <property role="TrG5h" value="ITreeRow" />
     <node concept="PrWs8" id="24MyZrrSPcH" role="PrDN$">
       <ref role="PrY4T" node="24MyZrrSND$" resolve="ITableRow" />
@@ -676,7 +676,7 @@
   </node>
   <node concept="1TIwiD" id="7uPLQmTOoE">
     <property role="EcuMT" value="134781560953456170" />
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="widgets.structures.column" />
     <property role="TrG5h" value="ColumnDefinition" />
     <property role="34LRSv" value="column" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -759,12 +759,12 @@
   </node>
   <node concept="PlHQZ" id="24MyZrrSND$">
     <property role="EcuMT" value="2392128244454472292" />
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="widgets.structures.row" />
     <property role="TrG5h" value="ITableRow" />
   </node>
   <node concept="PlHQZ" id="30uXY1Sh9ET">
     <property role="EcuMT" value="3467481306584357561" />
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="widgets.structures.row" />
     <property role="TrG5h" value="IRowBasedViewWidget" />
     <node concept="1TJgyj" id="5C8UTa3RDG2" role="1TKVEi">
       <property role="IQ2ns" value="6487694277737356034" />
@@ -1547,7 +1547,7 @@
     <property role="EcuMT" value="471139930089728146" />
     <property role="TrG5h" value="TableColumnWidget" />
     <property role="34LRSv" value="table column" />
-    <property role="3GE5qa" value="widgets.structures" />
+    <property role="3GE5qa" value="widgets.structures.column" />
     <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
     <node concept="1TJgyj" id="q9OOkGw2yj" role="1TKVEi">
       <property role="IQ2ns" value="471139930089728147" />
@@ -1586,7 +1586,7 @@
   </node>
   <node concept="PlHQZ" id="q9OOkGQoXE">
     <property role="EcuMT" value="471139930095587178" />
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="widgets.structures.column" />
     <property role="TrG5h" value="ITableColumn" />
   </node>
 </model>

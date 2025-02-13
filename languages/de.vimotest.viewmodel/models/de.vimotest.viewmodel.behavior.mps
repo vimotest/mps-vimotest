@@ -68,6 +68,10 @@
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1224071154655" name="jetbrains.mps.baseLanguage.structure.AsExpression" flags="nn" index="0kSF2">
+        <child id="1224071154657" name="classifierType" index="0kSFW" />
+        <child id="1224071154656" name="expression" index="0kSFX" />
+      </concept>
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1219920932475" name="jetbrains.mps.baseLanguage.structure.VariableArityType" flags="in" index="8X2XB">
         <child id="1219921048460" name="componentType" index="8Xvag" />
@@ -89,6 +93,10 @@
       <concept id="5279705229678483897" name="jetbrains.mps.baseLanguage.structure.FloatingPointFloatConstant" flags="nn" index="2$xPTn">
         <property id="5279705229678483899" name="value" index="2$xPTl" />
       </concept>
+      <concept id="1173175405605" name="jetbrains.mps.baseLanguage.structure.ArrayAccessExpression" flags="nn" index="AH0OO">
+        <child id="1173175577737" name="index" index="AHEQo" />
+        <child id="1173175590490" name="array" index="AHHXb" />
+      </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -96,6 +104,9 @@
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -140,6 +151,9 @@
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534436861" name="jetbrains.mps.baseLanguage.structure.FloatType" flags="in" index="10OMs4" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
+        <child id="1070534760952" name="componentType" index="10Q1$1" />
+      </concept>
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -272,6 +286,7 @@
         <child id="1163670677455" name="expression" index="3Kbmr1" />
         <child id="1163670683720" name="body" index="3Kbo56" />
       </concept>
+      <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
@@ -449,16 +464,26 @@
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
+      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
+        <child id="1153944400369" name="variable" index="2Gsz3X" />
+        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
+      </concept>
+      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
+      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
+        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
+      </concept>
       <concept id="1235573135402" name="jetbrains.mps.baseLanguage.collections.structure.SingletonSequenceCreator" flags="nn" index="2HTt$P">
         <child id="1235573187520" name="singletonValue" index="2HTEbv" />
       </concept>
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435808" name="initValue" index="HW$Y0" />
+        <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
       <concept id="1227022196108" name="jetbrains.mps.baseLanguage.collections.structure.RemoveAtElementOperation" flags="nn" index="2KedMh">
         <child id="1227022274197" name="index" index="2KewY8" />
       </concept>
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
+      <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1240325842691" name="jetbrains.mps.baseLanguage.collections.structure.AsSequenceOperation" flags="nn" index="39bAoz" />
@@ -4570,6 +4595,158 @@
             <ref role="3cqZAo" node="7L_HBKdBBl$" resolve="tableEditorCell" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="50zZ52cYx5P" role="13h7CS">
+      <property role="TrG5h" value="getColumnCells" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="50zZ52cYx5Q" role="1B3o_S" />
+      <node concept="A3Dl8" id="50zZ52cYCHs" role="3clF45">
+        <node concept="3uibUv" id="50zZ52cYCIz" role="A3Ik2">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="50zZ52cYx5S" role="3clF47">
+        <node concept="3cpWs8" id="50zZ52cZ4ii" role="3cqZAp">
+          <node concept="3cpWsn" id="50zZ52cZ4ij" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="_YKpA" id="50zZ52cZ4hg" role="1tU5fm">
+              <node concept="3uibUv" id="50zZ52cZ4hj" role="_ZDj9">
+                <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="50zZ52cZ4ik" role="33vP2m">
+              <node concept="Tc6Ow" id="50zZ52cZ4il" role="2ShVmc">
+                <node concept="3uibUv" id="50zZ52cZ4im" role="HW$YZ">
+                  <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="50zZ52cZadS" role="3cqZAp">
+          <node concept="3cpWsn" id="50zZ52cZadV" role="3cpWs9">
+            <property role="TrG5h" value="columnIndexWithIndicator" />
+            <node concept="10Oyi0" id="50zZ52cZadQ" role="1tU5fm" />
+            <node concept="3cpWs3" id="50zZ52cZdoI" role="33vP2m">
+              <node concept="3cmrfG" id="50zZ52cZdoL" role="3uHU7w">
+                <property role="3cmrfH" value="1" />
+              </node>
+              <node concept="37vLTw" id="50zZ52cZbdY" role="3uHU7B">
+                <ref role="3cqZAo" node="50zZ52cYCJG" resolve="columnIndex" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="50zZ52cZ4N_" role="3cqZAp" />
+        <node concept="3cpWs8" id="50zZ52cYDi_" role="3cqZAp">
+          <node concept="3cpWsn" id="50zZ52cYDiA" role="3cpWs9">
+            <property role="TrG5h" value="rowCollection" />
+            <node concept="3uibUv" id="50zZ52cYDhX" role="1tU5fm">
+              <ref role="3uigEE" to="f4zo:~EditorCell_Collection" resolve="EditorCell_Collection" />
+            </node>
+            <node concept="0kSF2" id="50zZ52cYDiB" role="33vP2m">
+              <node concept="3uibUv" id="50zZ52cYDiC" role="0kSFW">
+                <ref role="3uigEE" to="f4zo:~EditorCell_Collection" resolve="EditorCell_Collection" />
+              </node>
+              <node concept="37vLTw" id="50zZ52cYDiD" role="0kSFX">
+                <ref role="3cqZAo" node="50zZ52cYCKO" resolve="tableCell" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="50zZ52cYDwW" role="3cqZAp">
+          <node concept="2GrKxI" id="50zZ52cYDwY" role="2Gsz3X">
+            <property role="TrG5h" value="rowCell" />
+          </node>
+          <node concept="37vLTw" id="50zZ52cYDzs" role="2GsD0m">
+            <ref role="3cqZAo" node="50zZ52cYDiA" resolve="rowCollection" />
+          </node>
+          <node concept="3clFbS" id="50zZ52cYDx2" role="2LFqv$">
+            <node concept="3cpWs8" id="50zZ52cYF_m" role="3cqZAp">
+              <node concept="3cpWsn" id="50zZ52cYF_n" role="3cpWs9">
+                <property role="TrG5h" value="cellCollection" />
+                <node concept="3uibUv" id="50zZ52cYF$G" role="1tU5fm">
+                  <ref role="3uigEE" to="g51k:~EditorCell_Collection" resolve="EditorCell_Collection" />
+                </node>
+                <node concept="0kSF2" id="50zZ52cYF_o" role="33vP2m">
+                  <node concept="3uibUv" id="50zZ52cYF_p" role="0kSFW">
+                    <ref role="3uigEE" to="g51k:~EditorCell_Collection" resolve="EditorCell_Collection" />
+                  </node>
+                  <node concept="2GrUjf" id="50zZ52cYF_q" role="0kSFX">
+                    <ref role="2Gs0qQ" node="50zZ52cYDwY" resolve="rowCell" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="50zZ52cYIzI" role="3cqZAp">
+              <node concept="3cpWsn" id="50zZ52cYIzJ" role="3cpWs9">
+                <property role="TrG5h" value="cells" />
+                <node concept="10Q1$e" id="50zZ52cYIvr" role="1tU5fm">
+                  <node concept="3uibUv" id="50zZ52cYIvu" role="10Q1$1">
+                    <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="50zZ52cYIzK" role="33vP2m">
+                  <node concept="37vLTw" id="50zZ52cYIzL" role="2Oq$k0">
+                    <ref role="3cqZAo" node="50zZ52cYF_n" resolve="cellCollection" />
+                  </node>
+                  <node concept="liA8E" id="50zZ52cYIzM" role="2OqNvi">
+                    <ref role="37wK5l" to="g51k:~EditorCell_Collection.getCells()" resolve="getCells" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="50zZ52cYIPh" role="3cqZAp">
+              <node concept="3clFbS" id="50zZ52cYIPj" role="3clFbx">
+                <node concept="3clFbF" id="50zZ52cZ5q1" role="3cqZAp">
+                  <node concept="2OqwBi" id="50zZ52cZ7Ih" role="3clFbG">
+                    <node concept="37vLTw" id="50zZ52cZ5pZ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="50zZ52cZ4ij" resolve="result" />
+                    </node>
+                    <node concept="TSZUe" id="50zZ52cZ8OA" role="2OqNvi">
+                      <node concept="AH0OO" id="50zZ52cZ9sB" role="25WWJ7">
+                        <node concept="37vLTw" id="50zZ52cZ9CQ" role="AHEQo">
+                          <ref role="3cqZAo" node="50zZ52cZadV" resolve="columnIndexWithIndicator" />
+                        </node>
+                        <node concept="37vLTw" id="50zZ52cZ94_" role="AHHXb">
+                          <ref role="3cqZAo" node="50zZ52cYIzJ" resolve="cells" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3eOVzh" id="50zZ52cYO0i" role="3clFbw">
+                <node concept="2OqwBi" id="50zZ52cYQoy" role="3uHU7w">
+                  <node concept="37vLTw" id="50zZ52cYOwG" role="2Oq$k0">
+                    <ref role="3cqZAo" node="50zZ52cYIzJ" resolve="cells" />
+                  </node>
+                  <node concept="1Rwk04" id="50zZ52cYQAM" role="2OqNvi" />
+                </node>
+                <node concept="37vLTw" id="50zZ52cYIXV" role="3uHU7B">
+                  <ref role="3cqZAo" node="50zZ52cZadV" resolve="columnIndexWithIndicator" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="50zZ52cZ51Y" role="3cqZAp" />
+        <node concept="3clFbF" id="50zZ52cZ5aU" role="3cqZAp">
+          <node concept="37vLTw" id="50zZ52cZ5aS" role="3clFbG">
+            <ref role="3cqZAo" node="50zZ52cZ4ij" resolve="result" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="50zZ52cYCKO" role="3clF46">
+        <property role="TrG5h" value="tableCell" />
+        <node concept="3uibUv" id="50zZ52cYCL8" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="50zZ52cYCJG" role="3clF46">
+        <property role="TrG5h" value="columnIndex" />
+        <node concept="10Oyi0" id="50zZ52cYCJF" role="1tU5fm" />
       </node>
     </node>
     <node concept="13i0hz" id="24MyZrrRA6H" role="13h7CS">

@@ -2413,6 +2413,91 @@
       </node>
       <node concept="3cqZAl" id="bZSVZd7jqW" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="50zZ52diW9g" role="13h7CS">
+      <property role="TrG5h" value="applyOnTableColumn" />
+      <ref role="13i0hy" node="q9OOkGw2zm" resolve="applyOnTableColumn" />
+      <node concept="3Tm1VV" id="50zZ52diW9j" role="1B3o_S" />
+      <node concept="3clFbS" id="50zZ52diW9m" role="3clF47">
+        <node concept="3clFbJ" id="50zZ52dj0Zm" role="3cqZAp">
+          <node concept="3clFbS" id="50zZ52dj0Zo" role="3clFbx">
+            <node concept="3cpWs8" id="50zZ52diZNb" role="3cqZAp">
+              <node concept="3cpWsn" id="50zZ52diZNc" role="3cpWs9">
+                <property role="TrG5h" value="columnIndex" />
+                <node concept="10Oyi0" id="50zZ52diZNd" role="1tU5fm" />
+                <node concept="2OqwBi" id="50zZ52diZNe" role="33vP2m">
+                  <node concept="2OqwBi" id="50zZ52diZNf" role="2Oq$k0">
+                    <node concept="13iPFW" id="50zZ52diZNg" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="50zZ52diZNh" role="2OqNvi">
+                      <ref role="37wK5l" node="7ceEXPSzaTA" resolve="getParentCheck" />
+                    </node>
+                  </node>
+                  <node concept="2bSWHS" id="50zZ52diZNi" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="50zZ52diZNj" role="3cqZAp">
+              <node concept="3cpWsn" id="50zZ52diZNk" role="3cpWs9">
+                <property role="TrG5h" value="columnCells" />
+                <node concept="A3Dl8" id="50zZ52diZNl" role="1tU5fm">
+                  <node concept="3uibUv" id="50zZ52diZNm" role="A3Ik2">
+                    <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="50zZ52diZNn" role="33vP2m">
+                  <node concept="35c_gC" id="50zZ52diZNo" role="2Oq$k0">
+                    <ref role="35c_gD" to="at53:24MyZrrRA67" resolve="TableViewWidget" />
+                  </node>
+                  <node concept="2qgKlT" id="50zZ52diZNp" role="2OqNvi">
+                    <ref role="37wK5l" to="nrs2:50zZ52cYx5P" resolve="getColumnCells" />
+                    <node concept="37vLTw" id="50zZ52diZNq" role="37wK5m">
+                      <ref role="3cqZAo" node="50zZ52diW9n" resolve="tableColumnEditorCell" />
+                    </node>
+                    <node concept="37vLTw" id="50zZ52diZNr" role="37wK5m">
+                      <ref role="3cqZAo" node="50zZ52diZNc" resolve="columnIndex" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2Gpval" id="50zZ52diZNs" role="3cqZAp">
+              <node concept="2GrKxI" id="50zZ52diZNt" role="2Gsz3X">
+                <property role="TrG5h" value="cell" />
+              </node>
+              <node concept="37vLTw" id="50zZ52diZNu" role="2GsD0m">
+                <ref role="3cqZAo" node="50zZ52diZNk" resolve="columnCells" />
+              </node>
+              <node concept="3clFbS" id="50zZ52diZNv" role="2LFqv$">
+                <node concept="3clFbF" id="50zZ52diZNw" role="3cqZAp">
+                  <node concept="2YIFZM" id="50zZ52diZNx" role="3clFbG">
+                    <ref role="37wK5l" node="7ISwm1Rtjr8" resolve="dispatchOnCell" />
+                    <ref role="1Pybhc" node="5mvtLdU$vM7" resolve="CellWidgetTestHelper" />
+                    <node concept="2GrUjf" id="50zZ52diZNy" role="37wK5m">
+                      <ref role="2Gs0qQ" node="50zZ52diZNt" resolve="cell" />
+                    </node>
+                    <node concept="13iPFW" id="50zZ52diZNz" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="50zZ52dj1o$" role="3clFbw">
+            <node concept="2OqwBi" id="50zZ52dj1GW" role="3fr31v">
+              <node concept="13iPFW" id="50zZ52dj1GX" role="2Oq$k0" />
+              <node concept="3TrcHB" id="50zZ52dj1GY" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:5VrLp2zpew1" resolve="expectedIsEnabled" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="50zZ52diW9n" role="3clF46">
+        <property role="TrG5h" value="tableColumnEditorCell" />
+        <node concept="3uibUv" id="50zZ52diW9o" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="50zZ52diW9p" role="3clF45" />
+    </node>
     <node concept="13i0hz" id="bZSVZd7jqX" role="13h7CS">
       <property role="TrG5h" value="applyOnTreeView" />
       <ref role="13i0hy" node="K_fAvR3LDW" resolve="applyOnTreeView" />
@@ -3254,6 +3339,91 @@
         </node>
       </node>
       <node concept="3cqZAl" id="bZSVZd6xA6" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="50zZ52cZhkG" role="13h7CS">
+      <property role="TrG5h" value="applyOnTableColumn" />
+      <ref role="13i0hy" node="q9OOkGw2zm" resolve="applyOnTableColumn" />
+      <node concept="3Tm1VV" id="50zZ52cZhkJ" role="1B3o_S" />
+      <node concept="3clFbS" id="50zZ52cZhkM" role="3clF47">
+        <node concept="3clFbJ" id="50zZ52dj3Ry" role="3cqZAp">
+          <node concept="3clFbS" id="50zZ52dj3R$" role="3clFbx">
+            <node concept="3cpWs8" id="50zZ52cZlek" role="3cqZAp">
+              <node concept="3cpWsn" id="50zZ52cZlel" role="3cpWs9">
+                <property role="TrG5h" value="columnIndex" />
+                <node concept="10Oyi0" id="50zZ52cZl6e" role="1tU5fm" />
+                <node concept="2OqwBi" id="50zZ52cZlem" role="33vP2m">
+                  <node concept="2OqwBi" id="50zZ52cZlen" role="2Oq$k0">
+                    <node concept="13iPFW" id="50zZ52cZleo" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="50zZ52cZlep" role="2OqNvi">
+                      <ref role="37wK5l" node="7ceEXPSzaTA" resolve="getParentCheck" />
+                    </node>
+                  </node>
+                  <node concept="2bSWHS" id="50zZ52cZleq" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="50zZ52d9QHl" role="3cqZAp">
+              <node concept="3cpWsn" id="50zZ52d9QHm" role="3cpWs9">
+                <property role="TrG5h" value="columnCells" />
+                <node concept="A3Dl8" id="50zZ52d9Qrl" role="1tU5fm">
+                  <node concept="3uibUv" id="50zZ52d9Qro" role="A3Ik2">
+                    <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="50zZ52d9QHn" role="33vP2m">
+                  <node concept="35c_gC" id="50zZ52d9QHo" role="2Oq$k0">
+                    <ref role="35c_gD" to="at53:24MyZrrRA67" resolve="TableViewWidget" />
+                  </node>
+                  <node concept="2qgKlT" id="50zZ52d9QHp" role="2OqNvi">
+                    <ref role="37wK5l" to="nrs2:50zZ52cYx5P" resolve="getColumnCells" />
+                    <node concept="37vLTw" id="50zZ52d9QHq" role="37wK5m">
+                      <ref role="3cqZAo" node="50zZ52cZhkN" resolve="tableColumnEditorCell" />
+                    </node>
+                    <node concept="37vLTw" id="50zZ52d9QHr" role="37wK5m">
+                      <ref role="3cqZAo" node="50zZ52cZlel" resolve="columnIndex" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2Gpval" id="50zZ52d9Ugn" role="3cqZAp">
+              <node concept="2GrKxI" id="50zZ52d9Ugp" role="2Gsz3X">
+                <property role="TrG5h" value="cell" />
+              </node>
+              <node concept="37vLTw" id="50zZ52d9UHk" role="2GsD0m">
+                <ref role="3cqZAo" node="50zZ52d9QHm" resolve="columnCells" />
+              </node>
+              <node concept="3clFbS" id="50zZ52d9Ugt" role="2LFqv$">
+                <node concept="3clFbF" id="50zZ52d9V0M" role="3cqZAp">
+                  <node concept="2YIFZM" id="50zZ52d9V0O" role="3clFbG">
+                    <ref role="37wK5l" node="7ISwm1Rtjr8" resolve="dispatchOnCell" />
+                    <ref role="1Pybhc" node="5mvtLdU$vM7" resolve="CellWidgetTestHelper" />
+                    <node concept="2GrUjf" id="50zZ52d9V0P" role="37wK5m">
+                      <ref role="2Gs0qQ" node="50zZ52d9Ugp" resolve="cell" />
+                    </node>
+                    <node concept="13iPFW" id="50zZ52d9V0Q" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="50zZ52dj3RB" role="3clFbw">
+            <node concept="2OqwBi" id="50zZ52dj3RC" role="3fr31v">
+              <node concept="13iPFW" id="50zZ52dj3RD" role="2Oq$k0" />
+              <node concept="3TrcHB" id="50zZ52dj3RE" role="2OqNvi">
+                <ref role="3TsBF5" to="53m0:5VrLp2zpM0p" resolve="expectedIsVisible" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="50zZ52cZhkN" role="3clF46">
+        <property role="TrG5h" value="tableColumnEditorCell" />
+        <node concept="3uibUv" id="50zZ52cZhkO" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="50zZ52cZhkP" role="3clF45" />
     </node>
     <node concept="13i0hz" id="bZSVZd6x7w" role="13h7CS">
       <property role="TrG5h" value="applyOnTreeView" />
@@ -4100,6 +4270,114 @@
         </node>
       </node>
       <node concept="3cqZAl" id="44HS8_6k26$" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="50zZ52dj7u5" role="13h7CS">
+      <property role="TrG5h" value="applyOnTableColumn" />
+      <ref role="13i0hy" node="q9OOkGw2zm" resolve="applyOnTableColumn" />
+      <node concept="3Tm1VV" id="50zZ52dj7u8" role="1B3o_S" />
+      <node concept="3clFbS" id="50zZ52dj7ub" role="3clF47">
+        <node concept="3cpWs8" id="50zZ52dj95n" role="3cqZAp">
+          <node concept="3cpWsn" id="50zZ52dj95o" role="3cpWs9">
+            <property role="TrG5h" value="columnIndex" />
+            <node concept="10Oyi0" id="50zZ52dj95p" role="1tU5fm" />
+            <node concept="2OqwBi" id="50zZ52dj95q" role="33vP2m">
+              <node concept="2OqwBi" id="50zZ52dj95r" role="2Oq$k0">
+                <node concept="13iPFW" id="50zZ52dj95s" role="2Oq$k0" />
+                <node concept="2qgKlT" id="50zZ52dj95t" role="2OqNvi">
+                  <ref role="37wK5l" node="7ceEXPSzaTA" resolve="getParentCheck" />
+                </node>
+              </node>
+              <node concept="2bSWHS" id="50zZ52dj95u" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="50zZ52dj95v" role="3cqZAp">
+          <node concept="3cpWsn" id="50zZ52dj95w" role="3cpWs9">
+            <property role="TrG5h" value="columnCells" />
+            <node concept="A3Dl8" id="50zZ52dj95x" role="1tU5fm">
+              <node concept="3uibUv" id="50zZ52dj95y" role="A3Ik2">
+                <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="50zZ52dj95z" role="33vP2m">
+              <node concept="35c_gC" id="50zZ52dj95$" role="2Oq$k0">
+                <ref role="35c_gD" to="at53:24MyZrrRA67" resolve="TableViewWidget" />
+              </node>
+              <node concept="2qgKlT" id="50zZ52dj95_" role="2OqNvi">
+                <ref role="37wK5l" to="nrs2:50zZ52cYx5P" resolve="getColumnCells" />
+                <node concept="37vLTw" id="50zZ52dj95A" role="37wK5m">
+                  <ref role="3cqZAo" node="50zZ52dj7uc" resolve="tableColumnEditorCell" />
+                </node>
+                <node concept="37vLTw" id="50zZ52dj95B" role="37wK5m">
+                  <ref role="3cqZAo" node="50zZ52dj95o" resolve="columnIndex" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="50zZ52djbQe" role="3cqZAp">
+          <node concept="3clFbS" id="50zZ52djbQg" role="3clFbx">
+            <node concept="3SKdUt" id="50zZ52dj$Na" role="3cqZAp">
+              <node concept="1PaTwC" id="50zZ52dj$Nb" role="1aUNEU">
+                <node concept="3oM_SD" id="50zZ52dj$Nc" role="1PaTwD">
+                  <property role="3oM_SC" value="todo:" />
+                </node>
+                <node concept="3oM_SD" id="50zZ52dj_6o" role="1PaTwD">
+                  <property role="3oM_SC" value="needs" />
+                </node>
+                <node concept="3oM_SD" id="50zZ52dj_6q" role="1PaTwD">
+                  <property role="3oM_SC" value="to" />
+                </node>
+                <node concept="3oM_SD" id="50zZ52dj_6F" role="1PaTwD">
+                  <property role="3oM_SC" value="be" />
+                </node>
+                <node concept="3oM_SD" id="50zZ52dj_6G" role="1PaTwD">
+                  <property role="3oM_SC" value="implemented" />
+                </node>
+              </node>
+            </node>
+            <node concept="2xdQw9" id="50zZ52dj_pT" role="3cqZAp">
+              <property role="2xdLsb" value="gZ5fksE/warn" />
+              <node concept="Xl_RD" id="50zZ52dj_pV" role="9lYJi">
+                <property role="Xl_RC" value="TextCheckValue needs to be implemented for ITableColumnCheckValue" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="50zZ52djd7y" role="3clFbw">
+            <node concept="37vLTw" id="50zZ52djcsC" role="2Oq$k0">
+              <ref role="3cqZAo" node="50zZ52dj95w" resolve="columnCells" />
+            </node>
+            <node concept="3GX2aA" id="50zZ52djfez" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="2Gpval" id="50zZ52dj95C" role="3cqZAp">
+          <node concept="2GrKxI" id="50zZ52dj95D" role="2Gsz3X">
+            <property role="TrG5h" value="cell" />
+          </node>
+          <node concept="37vLTw" id="50zZ52dj95E" role="2GsD0m">
+            <ref role="3cqZAo" node="50zZ52dj95w" resolve="columnCells" />
+          </node>
+          <node concept="3clFbS" id="50zZ52dj95F" role="2LFqv$">
+            <node concept="3clFbF" id="50zZ52dj95G" role="3cqZAp">
+              <node concept="2YIFZM" id="50zZ52dj95H" role="3clFbG">
+                <ref role="37wK5l" node="7ISwm1Rtjr8" resolve="dispatchOnCell" />
+                <ref role="1Pybhc" node="5mvtLdU$vM7" resolve="CellWidgetTestHelper" />
+                <node concept="2GrUjf" id="50zZ52dj95I" role="37wK5m">
+                  <ref role="2Gs0qQ" node="50zZ52dj95D" resolve="cell" />
+                </node>
+                <node concept="13iPFW" id="50zZ52dj95J" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="50zZ52dj7uc" role="3clF46">
+        <property role="TrG5h" value="tableColumnEditorCell" />
+        <node concept="3uibUv" id="50zZ52dj7ud" role="1tU5fm">
+          <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="50zZ52dj7ue" role="3clF45" />
     </node>
     <node concept="13i0hz" id="4w9z1ta8Rml" role="13h7CS">
       <property role="TrG5h" value="getThenDescriptionText" />
@@ -7423,6 +7701,43 @@
               <node concept="13iPFW" id="24MyZrrRA7Z" role="2Oq$k0" />
               <node concept="3Tsc0h" id="4Ips5F13SEX" role="2OqNvi">
                 <ref role="3TtcxE" to="53m0:24MyZrrRA7l" resolve="checks" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="50zZ52cYmyQ" role="3cqZAp" />
+        <node concept="3clFbF" id="50zZ52cYnhT" role="3cqZAp">
+          <node concept="2OqwBi" id="50zZ52cYrOi" role="3clFbG">
+            <node concept="2OqwBi" id="50zZ52cYnKb" role="2Oq$k0">
+              <node concept="13iPFW" id="50zZ52cYnhR" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="50zZ52cYosh" role="2OqNvi">
+                <ref role="3TtcxE" to="53m0:q9OOkGElnL" resolve="tableColumnChecks" />
+              </node>
+            </node>
+            <node concept="2es0OD" id="50zZ52cYtVj" role="2OqNvi">
+              <node concept="1bVj0M" id="50zZ52cYtVl" role="23t8la">
+                <node concept="3clFbS" id="50zZ52cYtVm" role="1bW5cS">
+                  <node concept="3clFbF" id="50zZ52cYuxg" role="3cqZAp">
+                    <node concept="2OqwBi" id="50zZ52cYv28" role="3clFbG">
+                      <node concept="37vLTw" id="50zZ52cYuxf" role="2Oq$k0">
+                        <ref role="3cqZAo" node="50zZ52cYtVn" resolve="it" />
+                      </node>
+                      <node concept="2qgKlT" id="50zZ52cYvy$" role="2OqNvi">
+                        <ref role="37wK5l" node="2Yd1qrJP3FF" resolve="applyOnWidget" />
+                        <node concept="37vLTw" id="50zZ52cYwdp" role="37wK5m">
+                          <ref role="3cqZAo" node="24MyZrrRA80" resolve="editorCell" />
+                        </node>
+                        <node concept="37vLTw" id="50zZ52cYwdH" role="37wK5m">
+                          <ref role="3cqZAo" node="24MyZrrRA82" resolve="widget" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="gl6BB" id="50zZ52cYtVn" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="50zZ52cYtVo" role="1tU5fm" />
+                </node>
               </node>
             </node>
           </node>

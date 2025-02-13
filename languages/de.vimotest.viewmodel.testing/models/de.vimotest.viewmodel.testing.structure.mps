@@ -260,6 +260,9 @@
     <node concept="PrWs8" id="bZSVZd6xeg" role="PzmwI">
       <ref role="PrY4T" node="24MyZrrRA6Y" resolve="ITableViewCheckValue" />
     </node>
+    <node concept="PrWs8" id="50zZ52cZe$o" role="PzmwI">
+      <ref role="PrY4T" node="q9OOkGw2z6" resolve="ITableColumnCheckValue" />
+    </node>
     <node concept="PrWs8" id="7NXUkdQ8Z$l" role="PzmwI">
       <ref role="PrY4T" node="7NXUkdPQsiz" resolve="IRadioButtonCheckValue" />
     </node>
@@ -306,6 +309,9 @@
     </node>
     <node concept="PrWs8" id="bZSVZd7iC0" role="PzmwI">
       <ref role="PrY4T" node="24MyZrrRA6Y" resolve="ITableViewCheckValue" />
+    </node>
+    <node concept="PrWs8" id="50zZ52diSSL" role="PzmwI">
+      <ref role="PrY4T" node="q9OOkGw2z6" resolve="ITableColumnCheckValue" />
     </node>
     <node concept="PrWs8" id="bZSVZd7iC1" role="PzmwI">
       <ref role="PrY4T" node="K_fAvR3LDG" resolve="ITreeViewCheckValue" />
@@ -500,6 +506,9 @@
     </node>
     <node concept="PrWs8" id="5oh1xNFsD1E" role="PzmwI">
       <ref role="PrY4T" node="5oh1xNF6HG0" resolve="IButtonCheckValue" />
+    </node>
+    <node concept="PrWs8" id="50zZ52dj6KW" role="PzmwI">
+      <ref role="PrY4T" node="q9OOkGw2z6" resolve="ITableColumnCheckValue" />
     </node>
     <node concept="PrWs8" id="3c$pnH1f0uZ" role="PzmwI">
       <ref role="PrY4T" to="at53:3c$pnH1eja4" resolve="ISingleOrMultiLineStringSupport" />

@@ -778,6 +778,9 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="q9OOkGw2zs" resolve="TableColumnCheck" />
     </node>
+    <node concept="PrWs8" id="38_Nq5SMNbe" role="PzmwI">
+      <ref role="PrY4T" node="5LG6vEN5HBC" resolve="IViewWidgetCheckComposite" />
+    </node>
   </node>
   <node concept="1TIwiD" id="24MyZrrSM5G">
     <property role="EcuMT" value="2392128244454465900" />
@@ -1436,7 +1439,7 @@
     <node concept="1TJgyj" id="q9OOkGw2zt" role="1TKVEi">
       <property role="IQ2ns" value="471139930089728221" />
       <property role="20kJfa" value="checks" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="q9OOkGw2z6" resolve="ITableColumnCheckValue" />
     </node>

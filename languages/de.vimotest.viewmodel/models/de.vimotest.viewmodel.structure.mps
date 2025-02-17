@@ -4,12 +4,13 @@
   <languages>
     <use id="611ecc9e-0703-4ab9-a13c-fb396c607716" name="de.vimotest.types" version="0" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -686,11 +687,6 @@
       <property role="20kJfa" value="widgetType" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="F907haLIRF" resolve="ViewWidget" />
-    </node>
-    <node concept="1TJgyi" id="7uPLQmTPAc" role="1TKVEl">
-      <property role="IQ2nx" value="134781560953461132" />
-      <property role="TrG5h" value="header" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="q9OOkGQp1v" role="PzmwI">
       <ref role="PrY4T" node="q9OOkGQoXE" resolve="ITableColumn" />
@@ -1588,8 +1584,10 @@
     <property role="EcuMT" value="471139930095587178" />
     <property role="3GE5qa" value="widgets.structures.column" />
     <property role="TrG5h" value="ITableColumn" />
-    <node concept="PrWs8" id="38_Nq5QWksr" role="PrDN$">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="1TJgyi" id="7uPLQmTPAc" role="1TKVEl">
+      <property role="IQ2nx" value="134781560953461132" />
+      <property role="TrG5h" value="header" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

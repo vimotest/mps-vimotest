@@ -985,5 +985,59 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="38_Nq5TqXaP">
+    <property role="3GE5qa" value="widgets.structures.column" />
+    <ref role="1M2myG" to="at53:q9OOkGw2yi" resolve="TableColumnWidget" />
+    <node concept="EnEH3" id="38_Nq5TqXaQ" role="1MhHOB">
+      <ref role="EomxK" to="at53:7uPLQmTPAc" resolve="header" />
+      <node concept="Eqf_E" id="38_Nq5TqXbQ" role="EtsB7">
+        <node concept="3clFbS" id="38_Nq5TqXbR" role="2VODD2">
+          <node concept="3clFbF" id="38_Nq5TqXs0" role="3cqZAp">
+            <node concept="2OqwBi" id="q9OOkGQsU8" role="3clFbG">
+              <node concept="2OqwBi" id="q9OOkGQst6" role="2Oq$k0">
+                <node concept="2OqwBi" id="q9OOkGQsd8" role="2Oq$k0">
+                  <node concept="3TrEf2" id="q9OOkGQsec" role="2OqNvi">
+                    <ref role="3Tt5mk" to="at53:q9OOkGw2yj" resolve="textFeature" />
+                  </node>
+                  <node concept="EsrRn" id="38_Nq5TqXNg" role="2Oq$k0" />
+                </node>
+                <node concept="3TrEf2" id="q9OOkGQsFk" role="2OqNvi">
+                  <ref role="3Tt5mk" to="at53:4xJPu9gt$hE" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="q9OOkGQteJ" role="2OqNvi">
+                <ref role="3TsBF5" to="at53:4xJPu9gsdgT" resolve="singleLineValue" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1LLf8_" id="38_Nq5TqXQt" role="1LXaQT">
+        <node concept="3clFbS" id="38_Nq5TqXQu" role="2VODD2">
+          <node concept="3clFbF" id="38_Nq5TqXRH" role="3cqZAp">
+            <node concept="37vLTI" id="38_Nq5Tr0yr" role="3clFbG">
+              <node concept="1Wqviy" id="38_Nq5Tr12N" role="37vLTx" />
+              <node concept="2OqwBi" id="38_Nq5TqXRJ" role="37vLTJ">
+                <node concept="2OqwBi" id="38_Nq5TqXRK" role="2Oq$k0">
+                  <node concept="2OqwBi" id="38_Nq5TqXRL" role="2Oq$k0">
+                    <node concept="3TrEf2" id="38_Nq5TqXRM" role="2OqNvi">
+                      <ref role="3Tt5mk" to="at53:q9OOkGw2yj" resolve="textFeature" />
+                    </node>
+                    <node concept="EsrRn" id="38_Nq5TqXRN" role="2Oq$k0" />
+                  </node>
+                  <node concept="3TrEf2" id="38_Nq5TqXRO" role="2OqNvi">
+                    <ref role="3Tt5mk" to="at53:4xJPu9gt$hE" resolve="defaultText" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="38_Nq5TqXRP" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:4xJPu9gsdgT" resolve="singleLineValue" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

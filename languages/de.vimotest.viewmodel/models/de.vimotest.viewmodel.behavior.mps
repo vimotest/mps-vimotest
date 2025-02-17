@@ -4916,22 +4916,6 @@
         <ref role="ehGHo" to="at53:F907haLIRF" resolve="ViewWidget" />
       </node>
     </node>
-    <node concept="13i0hz" id="q9OOkGQpMU" role="13h7CS">
-      <property role="TrG5h" value="getColumnHeader" />
-      <ref role="13i0hy" node="q9OOkGQp08" resolve="getColumnHeader" />
-      <node concept="3Tm1VV" id="q9OOkGQpMV" role="1B3o_S" />
-      <node concept="3clFbS" id="q9OOkGQpMY" role="3clF47">
-        <node concept="3clFbF" id="q9OOkGQqf$" role="3cqZAp">
-          <node concept="2OqwBi" id="q9OOkGQqhN" role="3clFbG">
-            <node concept="13iPFW" id="q9OOkGQqfz" role="2Oq$k0" />
-            <node concept="3TrcHB" id="q9OOkGQqmm" role="2OqNvi">
-              <ref role="3TsBF5" to="at53:7uPLQmTPAc" resolve="header" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="q9OOkGQpMZ" role="3clF45" />
-    </node>
   </node>
   <node concept="312cEu" id="4Ia639WrZWU">
     <property role="3GE5qa" value="widgets.structures.row" />
@@ -5165,7 +5149,7 @@
                       </node>
                       <node concept="355D3s" id="1si8oglRR28" role="37wK5m">
                         <ref role="355D3t" to="at53:q9OOkGQoXE" resolve="ITableColumn" />
-                        <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
+                        <ref role="355D3u" to="at53:7uPLQmTPAc" resolve="header" />
                       </node>
                       <node concept="3clFbT" id="1si8oglRR29" role="37wK5m" />
                       <node concept="3clFbT" id="1si8oglRR2a" role="37wK5m" />
@@ -5201,7 +5185,7 @@
                                   <ref role="3cqZAo" node="1si8oglRCWW" resolve="columnNode" />
                                 </node>
                                 <node concept="3TrcHB" id="zuT2RN7Hlg" role="2OqNvi">
-                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                  <ref role="3TsBF5" to="at53:7uPLQmTPAc" resolve="header" />
                                 </node>
                               </node>
                             </node>
@@ -10305,32 +10289,6 @@
         <ref role="ehGHo" to="at53:F907haLIRF" resolve="ViewWidget" />
       </node>
     </node>
-    <node concept="13i0hz" id="q9OOkGQrss" role="13h7CS">
-      <property role="TrG5h" value="getColumnHeader" />
-      <ref role="13i0hy" node="q9OOkGQp08" resolve="getColumnHeader" />
-      <node concept="3Tm1VV" id="q9OOkGQrst" role="1B3o_S" />
-      <node concept="3clFbS" id="q9OOkGQrsw" role="3clF47">
-        <node concept="3clFbF" id="q9OOkGQsah" role="3cqZAp">
-          <node concept="2OqwBi" id="q9OOkGQsU8" role="3clFbG">
-            <node concept="2OqwBi" id="q9OOkGQst6" role="2Oq$k0">
-              <node concept="2OqwBi" id="q9OOkGQsd8" role="2Oq$k0">
-                <node concept="13iPFW" id="q9OOkGQsag" role="2Oq$k0" />
-                <node concept="3TrEf2" id="q9OOkGQsec" role="2OqNvi">
-                  <ref role="3Tt5mk" to="at53:q9OOkGw2yj" resolve="textFeature" />
-                </node>
-              </node>
-              <node concept="3TrEf2" id="q9OOkGQsFk" role="2OqNvi">
-                <ref role="3Tt5mk" to="at53:4xJPu9gt$hE" resolve="defaultText" />
-              </node>
-            </node>
-            <node concept="3TrcHB" id="q9OOkGQteJ" role="2OqNvi">
-              <ref role="3TsBF5" to="at53:4xJPu9gsdgT" resolve="singleLineValue" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="q9OOkGQrsx" role="3clF45" />
-    </node>
   </node>
   <node concept="13h7C7" id="q9OOkGQoXF">
     <property role="3GE5qa" value="widgets.structures.column" />
@@ -10344,14 +10302,6 @@
         <ref role="ehGHo" to="at53:F907haLIRF" resolve="ViewWidget" />
       </node>
       <node concept="3clFbS" id="q9OOkGQoY1" role="3clF47" />
-    </node>
-    <node concept="13i0hz" id="q9OOkGQp08" role="13h7CS">
-      <property role="13i0iv" value="true" />
-      <property role="13i0it" value="true" />
-      <property role="TrG5h" value="getColumnHeader" />
-      <node concept="3Tm1VV" id="q9OOkGQp09" role="1B3o_S" />
-      <node concept="17QB3L" id="q9OOkGQp0t" role="3clF45" />
-      <node concept="3clFbS" id="q9OOkGQp0b" role="3clF47" />
     </node>
     <node concept="13hLZK" id="q9OOkGQoXG" role="13h7CW">
       <node concept="3clFbS" id="q9OOkGQoXH" role="2VODD2" />

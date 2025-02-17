@@ -1588,6 +1588,9 @@
     <property role="EcuMT" value="471139930095587178" />
     <property role="3GE5qa" value="widgets.structures.column" />
     <property role="TrG5h" value="ITableColumn" />
+    <node concept="PrWs8" id="38_Nq5QWksr" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 

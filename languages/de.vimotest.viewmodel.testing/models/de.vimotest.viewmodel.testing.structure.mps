@@ -1195,7 +1195,7 @@
     <node concept="1TJgyj" id="6RKU0s7_yzh" role="1TKVEi">
       <property role="IQ2ns" value="7922086861434398929" />
       <property role="20kJfa" value="columnDefinition" />
-      <ref role="20lvS9" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+      <ref role="20lvS9" to="at53:q9OOkGQoXE" resolve="ITableColumn" />
     </node>
     <node concept="1TJgyi" id="6RKU0s7_yzi" role="1TKVEl">
       <property role="IQ2nx" value="7922086861434398930" />

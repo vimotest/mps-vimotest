@@ -7366,12 +7366,12 @@
                       <ref role="3cqZAo" node="7N9Xs9XVbGM" resolve="tableWidget" />
                     </node>
                     <node concept="3Tsc0h" id="7N9Xs9XVbGZ" role="2OqNvi">
-                      <ref role="3TtcxE" to="at53:4Ips5F1549y" resolve="columnDefinitions_old" />
+                      <ref role="3TtcxE" to="at53:q9OOkGw2Dh" />
                     </node>
                   </node>
                 </node>
                 <node concept="3TrEf2" id="7N9Xs9XVbH0" role="2OqNvi">
-                  <ref role="3Tt5mk" to="at53:7uPLQmTQNN" resolve="widgetType" />
+                  <ref role="3Tt5mk" to="at53:q9OOkGQqmU" />
                 </node>
               </node>
             </node>
@@ -7863,7 +7863,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="3wuujyrrWhU" role="2OqNvi">
-                <ref role="3TtcxE" to="at53:4Ips5F1549y" resolve="columnDefinitions_old" />
+                <ref role="3TtcxE" to="at53:q9OOkGw2Dh" />
               </node>
             </node>
             <node concept="2es0OD" id="3wuujyrrWhV" role="2OqNvi">
@@ -8030,7 +8030,7 @@
                   <ref role="3cqZAo" node="4Ips5F14Bir" resolve="column" />
                 </node>
                 <node concept="3TrEf2" id="4Ips5F14Biq" role="2OqNvi">
-                  <ref role="3Tt5mk" to="at53:7uPLQmTQNN" resolve="widgetType" />
+                  <ref role="3Tt5mk" to="at53:q9OOkGQqmU" />
                 </node>
               </node>
             </node>
@@ -8040,7 +8040,7 @@
       <node concept="37vLTG" id="4Ips5F14Bir" role="3clF46">
         <property role="TrG5h" value="column" />
         <node concept="3Tqbb2" id="4Ips5F14Bis" role="1tU5fm">
-          <ref role="ehGHo" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+          <ref role="ehGHo" to="at53:q9OOkGw2yi" resolve="TableColumnWidget" />
         </node>
       </node>
     </node>
@@ -8075,8 +8075,8 @@
                   <ref role="37wK5l" node="4Ips5F147fx" resolve="getTableViewWidget" />
                 </node>
               </node>
-              <node concept="3Tsc0h" id="4Ips5F18aFY" role="2OqNvi">
-                <ref role="3TtcxE" to="at53:4Ips5F1549y" resolve="columnDefinitions_old" />
+              <node concept="3Tsc0h" id="38_Nq5QWeNh" role="2OqNvi">
+                <ref role="3TtcxE" to="at53:q9OOkGw2Dh" />
               </node>
             </node>
             <node concept="2es0OD" id="4Ips5F18aFZ" role="2OqNvi">
@@ -8273,7 +8273,7 @@
                 <ref role="3cqZAo" node="4Ia639WslvM" resolve="tableWidget" />
               </node>
               <node concept="3Tsc0h" id="1si8oglRKAz" role="2OqNvi">
-                <ref role="3TtcxE" to="at53:4Ips5F1549y" resolve="columnDefinitions_old" />
+                <ref role="3TtcxE" to="at53:q9OOkGw2Dh" />
               </node>
             </node>
           </node>
@@ -8339,7 +8339,7 @@
           <node concept="3cpWsn" id="1si8oglRCWW" role="3cpWs9">
             <property role="TrG5h" value="columnNode" />
             <node concept="3Tqbb2" id="1si8oglRCzq" role="1tU5fm">
-              <ref role="ehGHo" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+              <ref role="ehGHo" to="at53:q9OOkGw2yi" resolve="TableColumnWidget" />
             </node>
             <node concept="1y4W85" id="1si8oglRCWX" role="33vP2m">
               <node concept="37vLTw" id="1si8oglRCWY" role="1y58nS">
@@ -8350,7 +8350,7 @@
                   <ref role="3cqZAo" node="4Ia639WslvM" resolve="tableWidget" />
                 </node>
                 <node concept="3Tsc0h" id="1si8oglRCX1" role="2OqNvi">
-                  <ref role="3TtcxE" to="at53:4Ips5F1549y" resolve="columnDefinitions_old" />
+                  <ref role="3TtcxE" to="at53:q9OOkGw2Dh" />
                 </node>
               </node>
             </node>
@@ -8606,7 +8606,7 @@
                           <ref role="3cqZAo" node="1si8oglRCWW" resolve="columnNode" />
                         </node>
                         <node concept="3TrEf2" id="7L_HBKdGacv" role="2OqNvi">
-                          <ref role="3Tt5mk" to="at53:7uPLQmTQNN" resolve="widgetType" />
+                          <ref role="3Tt5mk" to="at53:q9OOkGQqmU" />
                         </node>
                       </node>
                     </node>
@@ -8636,7 +8636,7 @@
                         <ref role="3cqZAo" node="1si8oglRCWW" resolve="columnNode" />
                       </node>
                       <node concept="3TrEf2" id="7L_HBKdGdyv" role="2OqNvi">
-                        <ref role="3Tt5mk" to="at53:7uPLQmTQNN" resolve="widgetType" />
+                        <ref role="3Tt5mk" to="at53:q9OOkGQqmU" />
                       </node>
                     </node>
                   </node>

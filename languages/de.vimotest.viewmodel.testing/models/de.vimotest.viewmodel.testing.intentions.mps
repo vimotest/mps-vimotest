@@ -12,6 +12,7 @@
     <import index="53m0" ref="r:b38f4eba-3263-43b3-b5a0-ad906d4f1a11(de.vimotest.viewmodel.testing.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="fwln" ref="r:fb31fced-d3c6-408c-9dff-13efe5b49745(de.vimotest.viewmodel.testing.behavior)" implicit="true" />
+    <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -408,8 +409,8 @@
                     <ref role="3Tt5mk" to="53m0:6RKU0s7_yzh" resolve="columnDefinition" />
                   </node>
                 </node>
-                <node concept="3TrcHB" id="6RKU0s8tb5L" role="2OqNvi">
-                  <ref role="3TsBF5" to="at53:7uPLQmTPAc" resolve="header" />
+                <node concept="2qgKlT" id="38_Nq5RFbQf" role="2OqNvi">
+                  <ref role="37wK5l" to="nrs2:q9OOkGQp08" resolve="getColumnHeader" />
                 </node>
               </node>
             </node>

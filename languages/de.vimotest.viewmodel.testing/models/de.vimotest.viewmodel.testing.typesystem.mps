@@ -400,7 +400,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="6DnDTlRVUjf" role="2OqNvi">
-              <ref role="3TtcxE" to="at53:q9OOkGw2Dh" />
+              <ref role="3TtcxE" to="at53:q9OOkGw2Dh" resolve="tableColumnWidgets" />
             </node>
           </node>
         </node>
@@ -583,7 +583,7 @@
             </node>
             <node concept="2OqwBi" id="6DnDTlRUvqe" role="3uHU7B">
               <node concept="37vLTw" id="6DnDTlRUnV9" role="2Oq$k0">
-                <ref role="3cqZAo" node="6DnDTlRUnIS" resolve="columnDefinitions" />
+                <ref role="3cqZAo" node="6DnDTlRUnIS" resolve="columns" />
               </node>
               <node concept="34oBXx" id="6DnDTlRUz1f" role="2OqNvi" />
             </node>
@@ -598,7 +598,7 @@
                   <node concept="3cpWs3" id="6DnDTlRV4S9" role="37wK5m">
                     <node concept="2OqwBi" id="6DnDTlRV7a2" role="3uHU7w">
                       <node concept="37vLTw" id="6DnDTlRV4Xh" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6DnDTlRUnIS" resolve="columnDefinitions" />
+                        <ref role="3cqZAo" node="6DnDTlRUnIS" resolve="columns" />
                       </node>
                       <node concept="34oBXx" id="6DnDTlRV9c0" role="2OqNvi" />
                     </node>
@@ -633,7 +633,7 @@
             <property role="TrG5h" value="column" />
           </node>
           <node concept="37vLTw" id="6DnDTlRVjuG" role="2GsD0m">
-            <ref role="3cqZAo" node="6DnDTlRUnIS" resolve="columnDefinitions" />
+            <ref role="3cqZAo" node="6DnDTlRUnIS" resolve="columns" />
           </node>
           <node concept="3clFbS" id="6DnDTlRVisq" role="2LFqv$">
             <node concept="3cpWs8" id="6DnDTlRVv68" role="3cqZAp">
@@ -786,7 +786,7 @@
               <node concept="1rXfSq" id="bZSVZcB0tD" role="3clFbG">
                 <ref role="37wK5l" node="bZSVZcB2qz" resolve="removeCellWithMissingColumn" />
                 <node concept="37vLTw" id="bZSVZcB1z5" role="37wK5m">
-                  <ref role="3cqZAo" node="6DnDTlRVMLi" resolve="columnDefinitions" />
+                  <ref role="3cqZAo" node="6DnDTlRVMLi" resolve="columns" />
                 </node>
                 <node concept="37vLTw" id="bZSVZcB28T" role="37wK5m">
                   <ref role="3cqZAo" node="6DnDTlRVMLk" resolve="cellChecks" />
@@ -797,7 +797,7 @@
           <node concept="3eOVzh" id="bZSVZcAYKS" role="3clFbw">
             <node concept="2OqwBi" id="bZSVZcASqY" role="3uHU7B">
               <node concept="37vLTw" id="bZSVZcASqZ" role="2Oq$k0">
-                <ref role="3cqZAo" node="6DnDTlRVMLi" resolve="columnDefinitions" />
+                <ref role="3cqZAo" node="6DnDTlRVMLi" resolve="columns" />
               </node>
               <node concept="34oBXx" id="bZSVZcASr0" role="2OqNvi" />
             </node>
@@ -817,7 +817,7 @@
                     <ref role="3cqZAo" node="bZSVZcXffQ" resolve="rowNode" />
                   </node>
                   <node concept="37vLTw" id="bZSVZcB9nz" role="37wK5m">
-                    <ref role="3cqZAo" node="6DnDTlRVMLi" resolve="columnDefinitions" />
+                    <ref role="3cqZAo" node="6DnDTlRVMLi" resolve="columns" />
                   </node>
                   <node concept="37vLTw" id="bZSVZcB9n$" role="37wK5m">
                     <ref role="3cqZAo" node="6DnDTlRVMLk" resolve="cellChecks" />
@@ -828,7 +828,7 @@
             <node concept="3eOSWO" id="bZSVZcB8z6" role="3eO9$A">
               <node concept="2OqwBi" id="bZSVZcB8aZ" role="3uHU7B">
                 <node concept="37vLTw" id="bZSVZcB8b0" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6DnDTlRVMLi" resolve="columnDefinitions" />
+                  <ref role="3cqZAo" node="6DnDTlRVMLi" resolve="columns" />
                 </node>
                 <node concept="34oBXx" id="bZSVZcB8b1" role="2OqNvi" />
               </node>
@@ -868,7 +868,7 @@
         <node concept="3clFbF" id="bZSVZcC01A" role="3cqZAp">
           <node concept="2OqwBi" id="bZSVZcC01B" role="3clFbG">
             <node concept="37vLTw" id="bZSVZcC01C" role="2Oq$k0">
-              <ref role="3cqZAo" node="bZSVZcB2q_" resolve="columnDefinitions" />
+              <ref role="3cqZAo" node="bZSVZcB2q_" resolve="columns" />
             </node>
             <node concept="2es0OD" id="bZSVZcC01D" role="2OqNvi">
               <node concept="1bVj0M" id="bZSVZcC01E" role="23t8la">
@@ -1022,7 +1022,7 @@
             <property role="TrG5h" value="column" />
           </node>
           <node concept="37vLTw" id="bZSVZcBZgy" role="2GsD0m">
-            <ref role="3cqZAo" node="bZSVZcB3dU" resolve="columnDefinitions" />
+            <ref role="3cqZAo" node="bZSVZcB3dU" resolve="columns" />
           </node>
           <node concept="3clFbS" id="bZSVZcBZgz" role="2LFqv$">
             <node concept="3clFbJ" id="bZSVZcBZg$" role="3cqZAp">
@@ -2247,7 +2247,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="6RKU0s7_Jr7" role="2OqNvi">
-              <ref role="3TtcxE" to="at53:q9OOkGw2Dh" />
+              <ref role="3TtcxE" to="at53:q9OOkGw2Dh" resolve="tableColumnWidgets" />
             </node>
           </node>
         </node>
@@ -2430,7 +2430,7 @@
             </node>
             <node concept="2OqwBi" id="2$TY9D5wB21" role="3uHU7B">
               <node concept="37vLTw" id="2$TY9D5wB22" role="2Oq$k0">
-                <ref role="3cqZAo" node="6RKU0s7_VWI" resolve="columnDefinitions" />
+                <ref role="3cqZAo" node="6RKU0s7_VWI" resolve="columns" />
               </node>
               <node concept="34oBXx" id="2$TY9D5wB23" role="2OqNvi" />
             </node>
@@ -2445,7 +2445,7 @@
                   <node concept="3cpWs3" id="2$TY9D5wB29" role="37wK5m">
                     <node concept="2OqwBi" id="2$TY9D5wB2a" role="3uHU7w">
                       <node concept="37vLTw" id="2$TY9D5wB2b" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6RKU0s7_VWI" resolve="columnDefinitions" />
+                        <ref role="3cqZAo" node="6RKU0s7_VWI" resolve="columns" />
                       </node>
                       <node concept="34oBXx" id="2$TY9D5wB2c" role="2OqNvi" />
                     </node>
@@ -2480,7 +2480,7 @@
             <property role="TrG5h" value="column" />
           </node>
           <node concept="37vLTw" id="2$TY9D5wB2o" role="2GsD0m">
-            <ref role="3cqZAo" node="6RKU0s7_VWI" resolve="columnDefinitions" />
+            <ref role="3cqZAo" node="6RKU0s7_VWI" resolve="columns" />
           </node>
           <node concept="3clFbS" id="2$TY9D5wB2p" role="2LFqv$">
             <node concept="3cpWs8" id="2$TY9D5wB2q" role="3cqZAp">
@@ -2601,7 +2601,7 @@
               <node concept="1rXfSq" id="2$TY9D5xjgH" role="3clFbG">
                 <ref role="37wK5l" node="2$TY9D5wH0r" resolve="removeColumnInfoWithMissingColumn" />
                 <node concept="37vLTw" id="2$TY9D5xgAj" role="37wK5m">
-                  <ref role="3cqZAo" node="6RKU0s7_VWP" resolve="columnDefinitions" />
+                  <ref role="3cqZAo" node="6RKU0s7_VWP" resolve="columns" />
                 </node>
                 <node concept="37vLTw" id="2$TY9D5xgAk" role="37wK5m">
                   <ref role="3cqZAo" node="6RKU0s7AziU" resolve="columnCheckInfos" />
@@ -2612,7 +2612,7 @@
           <node concept="3eOVzh" id="2$TY9D5wFnJ" role="3clFbw">
             <node concept="2OqwBi" id="2$TY9D5wFnK" role="3uHU7B">
               <node concept="37vLTw" id="2$TY9D5wFnL" role="2Oq$k0">
-                <ref role="3cqZAo" node="6RKU0s7_VWP" resolve="columnDefinitions" />
+                <ref role="3cqZAo" node="6RKU0s7_VWP" resolve="columns" />
               </node>
               <node concept="34oBXx" id="2$TY9D5wFnM" role="2OqNvi" />
             </node>
@@ -2629,7 +2629,7 @@
                 <node concept="1rXfSq" id="2$TY9D5xipR" role="3clFbG">
                   <ref role="37wK5l" node="2$TY9D5wH1e" resolve="addColumnInfoForColumnWhereNecessary" />
                   <node concept="37vLTw" id="2$TY9D5xhwh" role="37wK5m">
-                    <ref role="3cqZAo" node="6RKU0s7_VWP" resolve="columnDefinitions" />
+                    <ref role="3cqZAo" node="6RKU0s7_VWP" resolve="columns" />
                   </node>
                   <node concept="37vLTw" id="2$TY9D5xhwi" role="37wK5m">
                     <ref role="3cqZAo" node="6RKU0s7AziU" resolve="columnCheckInfos" />
@@ -2640,7 +2640,7 @@
             <node concept="3eOSWO" id="2$TY9D5wFnX" role="3eO9$A">
               <node concept="2OqwBi" id="2$TY9D5wFnY" role="3uHU7B">
                 <node concept="37vLTw" id="2$TY9D5wFnZ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6RKU0s7_VWP" resolve="columnDefinitions" />
+                  <ref role="3cqZAo" node="6RKU0s7_VWP" resolve="columns" />
                 </node>
                 <node concept="34oBXx" id="2$TY9D5wFo0" role="2OqNvi" />
               </node>
@@ -2685,7 +2685,7 @@
                 <node concept="37vLTI" id="2$TY9D5N9De" role="3clFbG">
                   <node concept="2OqwBi" id="2$TY9D5Nd8t" role="37vLTx">
                     <node concept="37vLTw" id="2$TY9D5Nahf" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6RKU0s7_VWP" resolve="columnDefinitions" />
+                      <ref role="3cqZAo" node="6RKU0s7_VWP" resolve="columns" />
                     </node>
                     <node concept="1uHKPH" id="2$TY9D5Nf5N" role="2OqNvi" />
                   </node>
@@ -2726,7 +2726,7 @@
                   <ref role="ehGHo" to="at53:q9OOkGQoXE" resolve="ITableColumn" />
                 </node>
                 <node concept="37vLTw" id="2$TY9D5xBqR" role="I$8f6">
-                  <ref role="3cqZAo" node="2$TY9D5wH18" resolve="columnDefinitions" />
+                  <ref role="3cqZAo" node="2$TY9D5wH18" resolve="columns" />
                 </node>
               </node>
             </node>
@@ -2856,7 +2856,7 @@
             <property role="TrG5h" value="column" />
           </node>
           <node concept="37vLTw" id="2$TY9D5wH1E" role="2GsD0m">
-            <ref role="3cqZAo" node="2$TY9D5wH2m" resolve="columnDefinitions" />
+            <ref role="3cqZAo" node="2$TY9D5wH2m" resolve="columns" />
           </node>
           <node concept="3clFbS" id="2$TY9D5wH1F" role="2LFqv$">
             <node concept="3clFbJ" id="2$TY9D5wH1G" role="3cqZAp">

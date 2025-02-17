@@ -4453,7 +4453,7 @@
               <node concept="2OqwBi" id="4Ips5F15WNk" role="2Oq$k0">
                 <node concept="13iPFW" id="4Ips5F15WNl" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="4Ips5F15WNm" role="2OqNvi">
-                  <ref role="3TtcxE" to="at53:q9OOkGw2Dh" />
+                  <ref role="3TtcxE" to="at53:q9OOkGw2Dh" resolve="tableColumnWidgets" />
                 </node>
               </node>
               <node concept="2DeJg1" id="4Ips5F15WNn" role="2OqNvi" />
@@ -4472,7 +4472,7 @@
                   <ref role="3cqZAo" node="4Ips5F15WNh" resolve="firstColumn" />
                 </node>
                 <node concept="3TrEf2" id="4Ips5F15WNu" role="2OqNvi">
-                  <ref role="3Tt5mk" to="at53:q9OOkGQqmU" />
+                  <ref role="3Tt5mk" to="at53:q9OOkGQqmU" resolve="widgetType" />
                 </node>
               </node>
               <node concept="2DeJnY" id="4Ips5F15WNv" role="2OqNvi">
@@ -10345,9 +10345,6 @@
       </node>
       <node concept="3clFbS" id="q9OOkGQoY1" role="3clF47" />
     </node>
-    <node concept="13hLZK" id="q9OOkGQoXG" role="13h7CW">
-      <node concept="3clFbS" id="q9OOkGQoXH" role="2VODD2" />
-    </node>
     <node concept="13i0hz" id="q9OOkGQp08" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
@@ -10355,6 +10352,9 @@
       <node concept="3Tm1VV" id="q9OOkGQp09" role="1B3o_S" />
       <node concept="17QB3L" id="q9OOkGQp0t" role="3clF45" />
       <node concept="3clFbS" id="q9OOkGQp0b" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="q9OOkGQoXG" role="13h7CW">
+      <node concept="3clFbS" id="q9OOkGQoXH" role="2VODD2" />
     </node>
   </node>
 </model>

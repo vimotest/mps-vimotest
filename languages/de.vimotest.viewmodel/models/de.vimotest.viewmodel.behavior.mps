@@ -5175,7 +5175,7 @@
                           </node>
                         </node>
                         <node concept="2AHcQZ" id="zuT2RMTH42" role="2AJF6D">
-                          <ref role="2AI5Lk" to="wyt6:~Override" />
+                          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                         </node>
                       </node>
                     </node>
@@ -9497,7 +9497,7 @@
                 <ref role="3cqZAo" node="7NXUkdPQAVy" resolve="context" />
               </node>
               <node concept="37vLTw" id="12kpBrp2pho" role="37wK5m">
-                <ref role="3cqZAo" node="7NXUkdPQAV$" resolve="propertyAccessor" />
+                <ref role="3cqZAo" node="7NXUkdPQAV$" resolve="selectedNameAccessor" />
               </node>
               <node concept="37vLTw" id="12kpBrp2php" role="37wK5m">
                 <ref role="3cqZAo" node="7NXUkdPQAVA" resolve="node" />
@@ -9775,7 +9775,7 @@
     </node>
     <node concept="13i0hz" id="12kpBrp1H4g" role="13h7CS">
       <property role="TrG5h" value="createEditorCell" />
-      <ref role="13i0hy" node="6mWHjmRL0Kv" />
+      <ref role="13i0hy" node="6mWHjmRL0Kv" resolve="createEditorCell" />
       <node concept="3Tm1VV" id="12kpBrp1H4h" role="1B3o_S" />
       <node concept="3clFbS" id="12kpBrp1H4i" role="3clF47">
         <node concept="3cpWs8" id="JsS3D9FfxG" role="3cqZAp">
@@ -9808,7 +9808,7 @@
         </node>
         <node concept="3clFbF" id="12kpBrp2kL$" role="3cqZAp">
           <node concept="BsUDl" id="12kpBrp2kLz" role="3clFbG">
-            <ref role="37wK5l" node="12kpBrp2ivD" resolve="makeRadioButtonEditorCell" />
+            <ref role="37wK5l" node="12kpBrp2ivD" resolve="makeRadioButtonGroupEditorCell" />
             <node concept="37vLTw" id="12kpBrp2loz" role="37wK5m">
               <ref role="3cqZAo" node="12kpBrp1H4y" resolve="context" />
             </node>
@@ -9834,11 +9834,11 @@
       <node concept="37vLTG" id="12kpBrp1H4y" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="12kpBrp1H4z" role="1tU5fm">
-          <ref role="3uigEE" to="cj4x:~EditorContext" />
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
         </node>
       </node>
       <node concept="3uibUv" id="12kpBrp1H4$" role="3clF45">
-        <ref role="3uigEE" to="f4zo:~EditorCell" />
+        <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
       </node>
     </node>
     <node concept="13i0hz" id="12kpBrp2ivD" role="13h7CS">
@@ -9888,7 +9888,7 @@
                 <ref role="3cqZAo" node="12kpBrp2ivE" resolve="context" />
               </node>
               <node concept="37vLTw" id="12kpBrp2fay" role="37wK5m">
-                <ref role="3cqZAo" node="12kpBrp2ivI" resolve="node" />
+                <ref role="3cqZAo" node="12kpBrp2ivI" resolve="groupOwnerNode" />
               </node>
             </node>
           </node>
@@ -9896,7 +9896,7 @@
         <node concept="3clFbF" id="12kpBrp2faz" role="3cqZAp">
           <node concept="2OqwBi" id="12kpBrp2fa$" role="3clFbG">
             <node concept="37vLTw" id="12kpBrp2fa_" role="2Oq$k0">
-              <ref role="3cqZAo" node="12kpBrp2ivK" resolve="possibleChoicesNodes" />
+              <ref role="3cqZAo" node="12kpBrp2ivK" resolve="radioButtons" />
             </node>
             <node concept="2es0OD" id="12kpBrp2faA" role="2OqNvi">
               <node concept="1bVj0M" id="12kpBrp2faB" role="23t8la">
@@ -9956,7 +9956,7 @@
                             <ref role="3cqZAo" node="12kpBrp2ivG" resolve="selectedNameAccessor" />
                           </node>
                           <node concept="37vLTw" id="19OyC3Ah8zM" role="37wK5m">
-                            <ref role="3cqZAo" node="19OyC3Ah8zG" resolve="node" />
+                            <ref role="3cqZAo" node="19OyC3Ah8zG" resolve="radioCellOwner" />
                           </node>
                           <node concept="37vLTw" id="19OyC3_JMWL" role="37wK5m">
                             <ref role="3cqZAo" node="12kpBrp2fbl" resolve="radioButton" />
@@ -9968,7 +9968,7 @@
                   <node concept="3clFbF" id="12kpBrp2fbg" role="3cqZAp">
                     <node concept="2OqwBi" id="12kpBrp2fbh" role="3clFbG">
                       <node concept="37vLTw" id="12kpBrp2fbi" role="2Oq$k0">
-                        <ref role="3cqZAo" node="12kpBrp2fau" resolve="wrapper" />
+                        <ref role="3cqZAo" node="12kpBrp2fau" resolve="groupWrapper" />
                       </node>
                       <node concept="liA8E" id="12kpBrp2fbj" role="2OqNvi">
                         <ref role="37wK5l" to="g51k:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell)" resolve="addEditorCell" />
@@ -9989,14 +9989,14 @@
         </node>
         <node concept="3clFbF" id="12kpBrp2fbn" role="3cqZAp">
           <node concept="37vLTw" id="12kpBrp2fbo" role="3clFbG">
-            <ref role="3cqZAo" node="12kpBrp2fau" resolve="wrapper" />
+            <ref role="3cqZAo" node="12kpBrp2fau" resolve="groupWrapper" />
           </node>
         </node>
       </node>
     </node>
     <node concept="13i0hz" id="12kpBrp1H4_" role="13h7CS">
       <property role="TrG5h" value="hasFeatureInherentSupport" />
-      <ref role="13i0hy" node="2S2pY38UZYV" />
+      <ref role="13i0hy" node="2S2pY38UZYV" resolve="hasFeatureInherentSupport" />
       <node concept="3Tm1VV" id="12kpBrp1H4A" role="1B3o_S" />
       <node concept="3clFbS" id="12kpBrp1H4B" role="3clF47">
         <node concept="3clFbJ" id="12kpBrp1H4I" role="3cqZAp">
@@ -10026,7 +10026,7 @@
       <node concept="37vLTG" id="12kpBrp1H4E" role="3clF46">
         <property role="TrG5h" value="feature" />
         <node concept="3Tqbb2" id="12kpBrp1H4F" role="1tU5fm">
-          <ref role="ehGHo" to="at53:L9c2Y9pj53" />
+          <ref role="ehGHo" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
         </node>
       </node>
       <node concept="10P_77" id="12kpBrp1H4G" role="3clF45" />
@@ -10119,7 +10119,7 @@
           <node concept="2OqwBi" id="1Ukm5RfsdAa" role="3clFbG">
             <node concept="13iPFW" id="1Ukm5Rfsdlu" role="2Oq$k0" />
             <node concept="3Tsc0h" id="1Ukm5RfsfwS" role="2OqNvi">
-              <ref role="3TtcxE" to="at53:12kpBrp1HEy" />
+              <ref role="3TtcxE" to="at53:12kpBrp1HEy" resolve="radioButtonWidgets" />
             </node>
           </node>
         </node>
@@ -10157,7 +10157,7 @@
     </node>
     <node concept="13i0hz" id="q9OOkGw2yD" role="13h7CS">
       <property role="TrG5h" value="createEditorCell" />
-      <ref role="13i0hy" node="6mWHjmRL0Kv" />
+      <ref role="13i0hy" node="6mWHjmRL0Kv" resolve="createEditorCell" />
       <node concept="3Tm1VV" id="q9OOkGw2yE" role="1B3o_S" />
       <node concept="3clFbS" id="q9OOkGw2yF" role="3clF47">
         <node concept="3SKdUt" id="q9OOkGPQ70" role="3cqZAp">
@@ -10197,16 +10197,16 @@
       <node concept="37vLTG" id="q9OOkGw2yV" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="q9OOkGw2yW" role="1tU5fm">
-          <ref role="3uigEE" to="cj4x:~EditorContext" />
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
         </node>
       </node>
       <node concept="3uibUv" id="q9OOkGw2yX" role="3clF45">
-        <ref role="3uigEE" to="f4zo:~EditorCell" />
+        <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
       </node>
     </node>
     <node concept="13i0hz" id="q9OOkGw2yY" role="13h7CS">
       <property role="TrG5h" value="hasFeatureInherentSupport" />
-      <ref role="13i0hy" node="2S2pY38UZYV" />
+      <ref role="13i0hy" node="2S2pY38UZYV" resolve="hasFeatureInherentSupport" />
       <node concept="3Tm1VV" id="q9OOkGw2yZ" role="1B3o_S" />
       <node concept="3clFbS" id="q9OOkGw2z0" role="3clF47">
         <node concept="3clFbJ" id="q9OOkGQdje" role="3cqZAp">
@@ -10221,7 +10221,7 @@
             <node concept="2OqwBi" id="q9OOkGQdjj" role="3uHU7w">
               <node concept="13iPFW" id="q9OOkGQdjk" role="2Oq$k0" />
               <node concept="3TrEf2" id="q9OOkGQdjl" role="2OqNvi">
-                <ref role="3Tt5mk" to="at53:q9OOkGw2yj" />
+                <ref role="3Tt5mk" to="at53:q9OOkGw2yj" resolve="textFeature" />
               </node>
             </node>
             <node concept="37vLTw" id="q9OOkGQdjm" role="3uHU7B">
@@ -10236,7 +10236,7 @@
       <node concept="37vLTG" id="q9OOkGw2z3" role="3clF46">
         <property role="TrG5h" value="feature" />
         <node concept="3Tqbb2" id="q9OOkGw2z4" role="1tU5fm">
-          <ref role="ehGHo" to="at53:L9c2Y9pj53" />
+          <ref role="ehGHo" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
         </node>
       </node>
       <node concept="10P_77" id="q9OOkGw2z5" role="3clF45" />

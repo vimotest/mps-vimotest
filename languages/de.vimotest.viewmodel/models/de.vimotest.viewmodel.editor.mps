@@ -4934,7 +4934,7 @@
         <ref role="1NtTu8" to="at53:q9OOkGw2yj" resolve="textFeature" />
       </node>
       <node concept="3F1sOY" id="q9OOkGw2yq" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:q9OOkGQb1s" />
+        <ref role="1NtTu8" to="at53:q9OOkGQb1s" resolve="visibilityFeature" />
       </node>
       <node concept="3F1sOY" id="q9OOkGw2yr" role="3EZMnx">
         <ref role="1NtTu8" to="at53:q9OOkGw2yk" resolve="enabledFeature" />

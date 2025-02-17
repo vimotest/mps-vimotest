@@ -569,7 +569,7 @@
     </node>
     <node concept="3lhOvk" id="3jx7KixuOP" role="3lj3bC">
       <ref role="30HIoZ" to="at53:12kpBrp1H3U" resolve="RadioButtonGroupWidget" />
-      <ref role="3lhOvi" node="3jx7Ki4sI2" />
+      <ref role="3lhOvi" node="3jx7Ki4sI2" resolve="root_mapping_RadioButtonGroupEnum" />
       <node concept="30G5F_" id="3jx7KixvbQ" role="30HLyM">
         <node concept="3clFbS" id="3jx7KixvbR" role="2VODD2">
           <node concept="3clFbF" id="3jx7Kixvck" role="3cqZAp">
@@ -1260,7 +1260,7 @@
                     <node concept="2OqwBi" id="7wIkOM9AujY" role="3clFbG">
                       <node concept="1iwH7S" id="7wIkOM9AujZ" role="2Oq$k0" />
                       <node concept="1iwH70" id="7wIkOM9Auk0" role="2OqNvi">
-                        <ref role="1iwH77" node="3jx7Ki5GYf" resolve="RadioButtonChoicesFeature_EnumerationDefinition" />
+                        <ref role="1iwH77" node="3jx7Ki5GYf" resolve="RadioButtonGroupWidget_EnumerationDefinition" />
                         <node concept="1PxgMI" id="7wIkOM9Auyl" role="1iwH7V">
                           <property role="1BlNFB" value="true" />
                           <node concept="chp4Y" id="7wIkOM9Auym" role="3oSUPX">
@@ -2017,7 +2017,7 @@
                       <node concept="2OqwBi" id="7wIkOM95ar$" role="3clFbG">
                         <node concept="1iwH7S" id="7wIkOM95ar_" role="2Oq$k0" />
                         <node concept="1iwH70" id="7wIkOM95arA" role="2OqNvi">
-                          <ref role="1iwH77" node="3jx7Ki5GYf" resolve="RadioButtonChoicesFeature_EnumerationDefinition" />
+                          <ref role="1iwH77" node="3jx7Ki5GYf" resolve="RadioButtonGroupWidget_EnumerationDefinition" />
                           <node concept="1PxgMI" id="5f9t2TrY0Pm" role="1iwH7V">
                             <property role="1BlNFB" value="true" />
                             <node concept="chp4Y" id="5f9t2TrY0Pn" role="3oSUPX">
@@ -3150,7 +3150,7 @@
                       <node concept="2OqwBi" id="5f9t2TrY5fL" role="3clFbG">
                         <node concept="1iwH7S" id="5f9t2TrY5fM" role="2Oq$k0" />
                         <node concept="1iwH70" id="5f9t2TrY5fN" role="2OqNvi">
-                          <ref role="1iwH77" node="3jx7Ki5GYf" resolve="RadioButtonChoicesFeature_EnumerationDefinition" />
+                          <ref role="1iwH77" node="3jx7Ki5GYf" resolve="RadioButtonGroupWidget_EnumerationDefinition" />
                           <node concept="1PxgMI" id="5f9t2TrY5fE" role="1iwH7V">
                             <property role="1BlNFB" value="true" />
                             <node concept="chp4Y" id="5f9t2TrY5fF" role="3oSUPX">
@@ -4011,14 +4011,14 @@
       <node concept="b5qeC" id="3jx7Ki5K6m" role="PCHHv">
         <property role="TrG5h" value="Symbol" />
         <node concept="1WS0z7" id="3jx7Ki5Psh" role="lGtFl">
-          <ref role="2rW$FS" node="3jx7Ki5HoT" resolve="ChoiceEntry_EnumerationLiteral" />
+          <ref role="2rW$FS" node="3jx7Ki5HoT" resolve="RadioButtonWidget_EnumerationLiteral" />
           <node concept="3JmXsc" id="3jx7Ki5Psi" role="3Jn$fo">
             <node concept="3clFbS" id="3jx7Ki5Psj" role="2VODD2">
               <node concept="3clFbF" id="3jx7Ki5R19" role="3cqZAp">
                 <node concept="2OqwBi" id="3jx7Ki5RoY" role="3clFbG">
                   <node concept="30H73N" id="3jx7Ki5R18" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="3jx7Ki5RT8" role="2OqNvi">
-                    <ref role="3TtcxE" to="at53:12kpBrp1HEy" />
+                    <ref role="3TtcxE" to="at53:12kpBrp1HEy" resolve="radioButtonWidgets" />
                   </node>
                 </node>
               </node>
@@ -4049,7 +4049,7 @@
           <node concept="3clFbS" id="3jx7Ki4$qc" role="2VODD2">
             <node concept="3clFbF" id="3jx7Ki4K0V" role="3cqZAp">
               <node concept="2YIFZM" id="3jx7Ki55s$" role="3clFbG">
-                <ref role="37wK5l" to="jrwo:3jx7Ki4NEN" resolve="getChoiceEnumName" />
+                <ref role="37wK5l" to="jrwo:3jx7Ki4NEN" resolve="getRadioButtonGroupEnumName" />
                 <ref role="1Pybhc" to="jrwo:2evlxT94KqS" resolve="ViewModelGeneratorNameHelper" />
                 <node concept="30H73N" id="3jx7Ki560C" role="37wK5m" />
               </node>
@@ -4175,7 +4175,7 @@
         </node>
       </node>
       <node concept="2ZBi8u" id="3jx7Ki60WW" role="lGtFl">
-        <ref role="2rW$FS" node="3jx7Ki5GYf" resolve="RadioButtonChoicesFeature_EnumerationDefinition" />
+        <ref role="2rW$FS" node="3jx7Ki5GYf" resolve="RadioButtonGroupWidget_EnumerationDefinition" />
       </node>
     </node>
     <node concept="n94m4" id="3jx7Ki4sI4" role="lGtFl">

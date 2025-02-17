@@ -454,7 +454,7 @@
           <node concept="17R0WA" id="q9OOkGQm9f" role="3clFbw">
             <node concept="359W_D" id="q9OOkGQmvR" role="3uHU7w">
               <ref role="359W_E" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
-              <ref role="359W_F" to="at53:7uPLQmTQNN" />
+              <ref role="359W_F" to="at53:7uPLQmTQNN" resolve="widgetType" />
             </node>
             <node concept="2DA6wF" id="q9OOkGQj4N" role="3uHU7B" />
           </node>

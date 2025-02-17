@@ -863,7 +863,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="entries" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" to="at53:3mckYa_DMEC" resolve="ChoiceEntry" />
+      <ref role="20lvS9" to="at53:3mckYa_DMEC" resolve="ComboBoxEntry" />
     </node>
   </node>
   <node concept="1TIwiD" id="44HS8_67HAo">

@@ -400,7 +400,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="6DnDTlRVUjf" role="2OqNvi">
-              <ref role="3TtcxE" to="at53:4Ips5F1549y" resolve="columnsFeature" />
+              <ref role="3TtcxE" to="at53:4Ips5F1549y" resolve="columnDefinitions_old" />
             </node>
           </node>
         </node>
@@ -2247,7 +2247,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="6RKU0s7_Jr7" role="2OqNvi">
-              <ref role="3TtcxE" to="at53:4Ips5F1549y" resolve="columnsFeature" />
+              <ref role="3TtcxE" to="at53:4Ips5F1549y" resolve="columnDefinitions_old" />
             </node>
           </node>
         </node>
@@ -3586,7 +3586,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="19OyC3AnNcs" role="2OqNvi">
-                <ref role="3TtcxE" to="at53:12kpBrp1HEy" />
+                <ref role="3TtcxE" to="at53:12kpBrp1HEy" resolve="radioButtonWidgets" />
               </node>
             </node>
             <node concept="34oBXx" id="19OyC3AnNct" role="2OqNvi" />
@@ -3626,7 +3626,7 @@
             </node>
             <node concept="3Cnw8n" id="19OyC3AuKvb" role="1urrFz">
               <property role="ARO6o" value="true" />
-              <ref role="QpYPw" node="19OyC3AuKv8" resolve="fix_" />
+              <ref role="QpYPw" node="19OyC3AuKv8" resolve="fix_RadioButtonGroupCheck_RadioButtonChecksCount" />
             </node>
           </node>
         </node>

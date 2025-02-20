@@ -4,6 +4,10 @@ package de.vimotest.sandbox.commands;
 
 
 public class SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow {
+  private String columnCellTableColumnText;
+  public String getColumnCellTableColumnText() {
+    return this.columnCellTableColumnText;
+  }
   private String columnCellLabelText;
   public String getColumnCellLabelText() {
     return this.columnCellLabelText;

@@ -6406,7 +6406,7 @@
               <node concept="2Xjw5R" id="2w4bAIFLjbY" role="2OqNvi">
                 <node concept="1xMEDy" id="2w4bAIFLjc0" role="1xVPHs">
                   <node concept="chp4Y" id="2w4bAIFLjeu" role="ri$Ld">
-                    <ref role="cht4Q" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+                    <ref role="cht4Q" to="at53:q9OOkGQoXE" resolve="ITableColumn" />
                   </node>
                 </node>
               </node>

@@ -4,6 +4,12 @@ namespace commands ;
 
 class SelectRowCommand_ViewMyTableViewElementsRow {
   
+  private columnCellTableColumnText : String  ;
+  
+  public getColumnCellTableColumnText (  ) : String  {
+  return this.columnCellTableColumnText;
+ }
+  
   private columnCellLabelText : String  ;
   
   public getColumnCellLabelText (  ) : String  {

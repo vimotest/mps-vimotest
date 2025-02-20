@@ -4,6 +4,12 @@ namespace widgetassertions ;
 
 class LowLevelFields_ViewCustomTableRowFieldRow {
   
+  private HeaderTableColumnText : String  ;
+  
+  public getHeaderTableColumnText (  ) : String  {
+  return this.HeaderTableColumnText;
+ }
+  
   private HeaderLabelText : String  ;
   
   public getHeaderLabelText (  ) : String  {

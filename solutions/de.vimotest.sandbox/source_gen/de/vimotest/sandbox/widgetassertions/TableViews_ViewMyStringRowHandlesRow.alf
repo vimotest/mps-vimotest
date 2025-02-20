@@ -4,6 +4,12 @@ namespace widgetassertions ;
 
 class TableViews_ViewMyStringRowHandlesRow {
   
+  private ValuesTableColumnText : String  ;
+  
+  public getValuesTableColumnText (  ) : String  {
+  return this.ValuesTableColumnText;
+ }
+  
   private ValuesLabelText : String  ;
   
   public getValuesLabelText (  ) : String  {

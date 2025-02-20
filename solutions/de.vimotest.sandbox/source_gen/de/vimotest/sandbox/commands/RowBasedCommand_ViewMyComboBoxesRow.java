@@ -6,6 +6,10 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class RowBasedCommand_ViewMyComboBoxesRow {
+  private String FreeTextComboBoxesTableColumnText;
+  public String getFreeTextComboBoxesTableColumnText() {
+    return this.FreeTextComboBoxesTableColumnText;
+  }
   private List<String> FreeTextComboBoxesComboBoxEntries = new LinkedList<>();
   public List<String> getFreeTextComboBoxesComboBoxEntries() {
     return this.FreeTextComboBoxesComboBoxEntries;
@@ -17,6 +21,10 @@ public class RowBasedCommand_ViewMyComboBoxesRow {
   private String FreeTextComboBoxesComboBoxText;
   public String getFreeTextComboBoxesComboBoxText() {
     return this.FreeTextComboBoxesComboBoxText;
+  }
+  private String EntryComboBoxesTableColumnText;
+  public String getEntryComboBoxesTableColumnText() {
+    return this.EntryComboBoxesTableColumnText;
   }
   private List<String> EntryComboBoxesComboBoxEntries = new LinkedList<>();
   public List<String> getEntryComboBoxesComboBoxEntries() {

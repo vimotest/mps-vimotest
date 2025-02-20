@@ -5,6 +5,10 @@
 
 namespace bindings
 {
+  std::string ViMoTestFileNameBindingMyElementsRow::getColumnCellTableColumnText( ) 
+  {
+    return this->columnCellTableColumnText;
+  }
   std::string ViMoTestFileNameBindingMyElementsRow::getColumnCellLabelText( ) 
   {
     return this->columnCellLabelText;

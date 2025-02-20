@@ -57,7 +57,7 @@ class TreeViews_ViewTest {
    AssertTrue ( row0.getIsIncludeCheckBoxChecked (  ) );
    AssertEqual ( "A", row0.getNameLabelText (  ) );
    AssertEqual ( "B", row0.getDescriptionLabelText (  ) );
-   AssertEqual ( "image_triangle", row0.getInfoIconImageName (  ) );
+   AssertEqual ( "image_triangle", row0.getInfoImageName (  ) );
  }
    {
   let row1: TreeViews_ViewMyTreeViewElementsRow = actualRows[ 2 ];
@@ -66,7 +66,7 @@ class TreeViews_ViewTest {
    AssertFalse ( row1.getIsIncludeCheckBoxChecked (  ) );
    AssertEqual ( "C", row1.getNameLabelText (  ) );
    AssertEqual ( "D", row1.getDescriptionLabelText (  ) );
-   AssertEqual ( "image_circle", row1.getInfoIconImageName (  ) );
+   AssertEqual ( "image_circle", row1.getInfoImageName (  ) );
  }
    AssertEqual ( 1, this.sut.getMyTreeViewElementsTreeSelectedRow (  ) );
    AssertTrue ( this.sut.getIsMyTreeViewElementsTreeEnabled (  ) );

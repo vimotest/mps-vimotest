@@ -4645,16 +4645,16 @@
             <node concept="3clFbS" id="2w4bAIFLvoo" role="2VODD2">
               <node concept="3cpWs8" id="2w4bAIFLXR1" role="3cqZAp">
                 <node concept="3cpWsn" id="2w4bAIFLXR2" role="3cpWs9">
-                  <property role="TrG5h" value="columnDefinition" />
+                  <property role="TrG5h" value="column" />
                   <node concept="3Tqbb2" id="2w4bAIFLXM2" role="1tU5fm">
-                    <ref role="ehGHo" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+                    <ref role="ehGHo" to="at53:q9OOkGQoXE" resolve="ITableColumn" />
                   </node>
                   <node concept="2OqwBi" id="2w4bAIFLXR3" role="33vP2m">
                     <node concept="2ZBlsa" id="2w4bAIFLXR4" role="2Oq$k0" />
                     <node concept="2Xjw5R" id="2w4bAIFLXR5" role="2OqNvi">
                       <node concept="1xMEDy" id="2w4bAIFLXR6" role="1xVPHs">
                         <node concept="chp4Y" id="2w4bAIFLXR7" role="ri$Ld">
-                          <ref role="cht4Q" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+                          <ref role="cht4Q" to="at53:q9OOkGQoXE" resolve="ITableColumn" />
                         </node>
                       </node>
                     </node>

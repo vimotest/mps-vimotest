@@ -4,6 +4,10 @@ package de.vimotest.sandbox.widgetassertions;
 
 
 public class LowLevelFields_ViewCustomTableRowFieldRow {
+  private String HeaderTableColumnText;
+  public String getHeaderTableColumnText() {
+    return this.HeaderTableColumnText;
+  }
   private String HeaderLabelText;
   public String getHeaderLabelText() {
     return this.HeaderLabelText;

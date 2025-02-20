@@ -5,6 +5,10 @@
 
 namespace widgetassertions
 {
+  std::string LowLevelFields_ViewCustomTableRowFieldRow::getHeaderTableColumnText( ) 
+  {
+    return this->HeaderTableColumnText;
+  }
   std::string LowLevelFields_ViewCustomTableRowFieldRow::getHeaderLabelText( ) 
   {
     return this->HeaderLabelText;

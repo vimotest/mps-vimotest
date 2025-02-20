@@ -67,7 +67,7 @@ namespace widgetassertions
     EXPECT_TRUE(row0->getIsIncludeCheckBoxChecked());
     EXPECT_EQ(std::string("A"), row0->getNameLabelText());
     EXPECT_EQ(std::string("B"), row0->getDescriptionLabelText());
-    EXPECT_EQ(std::string("image_triangle"), row0->getInfoIconImageName());
+    EXPECT_EQ(std::string("image_triangle"), row0->getInfoImageName());
     // }
     // {
     auto& row1 = actualRows.at(1);
@@ -76,7 +76,7 @@ namespace widgetassertions
     EXPECT_FALSE(row1->getIsIncludeCheckBoxChecked());
     EXPECT_EQ(std::string("C"), row1->getNameLabelText());
     EXPECT_EQ(std::string("D"), row1->getDescriptionLabelText());
-    EXPECT_EQ(std::string("image_circle"), row1->getInfoIconImageName());
+    EXPECT_EQ(std::string("image_circle"), row1->getInfoImageName());
     // }
     EXPECT_EQ(1, this->sut->getMyTreeViewElementsTreeSelectedRow());
     EXPECT_TRUE(this->sut->getIsMyTreeViewElementsTreeEnabled());

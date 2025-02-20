@@ -1601,7 +1601,7 @@
                     </node>
                     <node concept="v3k3i" id="7nrre2bDsGR" role="2OqNvi">
                       <node concept="chp4Y" id="7nrre2bDsGW" role="v3oSu">
-                        <ref role="cht4Q" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+                        <ref role="cht4Q" to="at53:q9OOkGQoXE" resolve="ITableColumn" />
                       </node>
                     </node>
                   </node>

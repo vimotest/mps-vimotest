@@ -4,6 +4,12 @@ namespace commands ;
 
 class RowBasedCommand_ViewMyComboBoxesRow {
   
+  private FreeTextComboBoxesTableColumnText : String  ;
+  
+  public getFreeTextComboBoxesTableColumnText (  ) : String  {
+  return this.FreeTextComboBoxesTableColumnText;
+ }
+  
   private FreeTextComboBoxesComboBoxEntries : String [ * ]  ;
   
   public getFreeTextComboBoxesComboBoxEntries (  ) : String [ * ]  {
@@ -20,6 +26,12 @@ class RowBasedCommand_ViewMyComboBoxesRow {
   
   public getFreeTextComboBoxesComboBoxText (  ) : String  {
   return this.FreeTextComboBoxesComboBoxText;
+ }
+  
+  private EntryComboBoxesTableColumnText : String  ;
+  
+  public getEntryComboBoxesTableColumnText (  ) : String  {
+  return this.EntryComboBoxesTableColumnText;
  }
   
   private EntryComboBoxesComboBoxEntries : String [ * ]  ;

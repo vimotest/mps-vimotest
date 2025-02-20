@@ -16,9 +16,9 @@ public class TreeViews_ViewMyTreeViewElementsRow {
   public String getDescriptionLabelText() {
     return this.DescriptionLabelText;
   }
-  private String InfoIconImageName;
-  public String getInfoIconImageName() {
-    return this.InfoIconImageName;
+  private String InfoImageName;
+  public String getInfoImageName() {
+    return this.InfoImageName;
   }
   private Integer RowIndex;
   public Integer getRowIndex() {

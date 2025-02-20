@@ -5,6 +5,10 @@
 
 namespace widgetassertions
 {
+  std::string TableViews_ViewMyStringRowHandlesRow::getValuesTableColumnText( ) 
+  {
+    return this->ValuesTableColumnText;
+  }
   std::string TableViews_ViewMyStringRowHandlesRow::getValuesLabelText( ) 
   {
     return this->ValuesLabelText;

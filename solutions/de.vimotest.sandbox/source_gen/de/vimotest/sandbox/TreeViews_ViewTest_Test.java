@@ -62,7 +62,7 @@ public class TreeViews_ViewTest_Test {
     Assert.assertTrue(row0.getIsIncludeCheckBoxChecked());
     Assert.assertEquals("A", row0.getNameLabelText());
     Assert.assertEquals("B", row0.getDescriptionLabelText());
-    Assert.assertEquals("image_triangle", row0.getInfoIconImageName());
+    Assert.assertEquals("image_triangle", row0.getInfoImageName());
     // }
     // {
     TreeViews_ViewMyTreeViewElementsRow row1 = actualRows.get(2 - 1);
@@ -71,7 +71,7 @@ public class TreeViews_ViewTest_Test {
     Assert.assertFalse(row1.getIsIncludeCheckBoxChecked());
     Assert.assertEquals("C", row1.getNameLabelText());
     Assert.assertEquals("D", row1.getDescriptionLabelText());
-    Assert.assertEquals("image_circle", row1.getInfoIconImageName());
+    Assert.assertEquals("image_circle", row1.getInfoImageName());
     // }
     Assert.assertEquals(Integer.valueOf(this.sut.getMyTreeViewElementsTreeSelectedRow()), this.sut.getMyTreeViewElementsTreeSelectedRow());
     Assert.assertTrue(this.sut.getIsMyTreeViewElementsTreeEnabled());

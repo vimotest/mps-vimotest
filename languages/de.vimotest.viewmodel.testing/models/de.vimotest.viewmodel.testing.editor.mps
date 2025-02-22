@@ -6616,7 +6616,7 @@
   </node>
   <node concept="22mcaB" id="q9OOkGw2z8">
     <property role="TrG5h" value="ITableColumnCheckValue_SubstituteMenu" />
-    <property role="3GE5qa" value="test.assert.widgets" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.column" />
     <ref role="aqKnT" to="53m0:q9OOkGw2z6" resolve="ITableColumnCheckValue" />
     <node concept="22hDWj" id="q9OOkGw2z9" role="22hAXT" />
     <node concept="2VfDsV" id="q9OOkGw2za" role="3ft7WO">
@@ -6639,7 +6639,7 @@
   </node>
   <node concept="PKFIW" id="q9OOkGw2zC">
     <property role="TrG5h" value="TableColumnCheck_Inspector_Checks_EC" />
-    <property role="3GE5qa" value="test.assert.widgets" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.column" />
     <ref role="1XX52x" to="53m0:q9OOkGw2zs" resolve="TableColumnCheck" />
     <node concept="1PE4EZ" id="q9OOkGw2zE" role="1PM95z">
       <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_Checks_EC" />
@@ -6647,6 +6647,41 @@
     <node concept="3F2HdR" id="q9OOkGw2zF" role="2wV5jI">
       <ref role="1NtTu8" to="53m0:q9OOkGw2zt" resolve="checks" />
       <node concept="2iRkQZ" id="q9OOkGw2zG" role="2czzBx" />
+    </node>
+  </node>
+  <node concept="22mcaB" id="5Pt$ekxgGAj">
+    <property role="TrG5h" value="ITreeColumnCheckValue_SubstituteMenu" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.column" />
+    <ref role="aqKnT" to="53m0:5Pt$ekxgGAh" resolve="ITreeColumnCheckValue" />
+    <node concept="22hDWj" id="5Pt$ekxgGAk" role="22hAXT" />
+    <node concept="2VfDsV" id="5Pt$ekxgGAl" role="3ft7WO">
+      <node concept="1GpqWn" id="5Pt$ekxgGAm" role="1Go12V">
+        <node concept="3clFbS" id="5Pt$ekxgGAn" role="2VODD2">
+          <node concept="3clFbF" id="5Pt$ekxgGAo" role="3cqZAp">
+            <node concept="3fqX7Q" id="5Pt$ekxgGAp" role="3clFbG">
+              <node concept="2YIFZM" id="5Pt$ekxgGAq" role="3fr31v">
+                <ref role="37wK5l" node="2_MKLxJcA3M" />
+                <ref role="1Pybhc" node="2_MKLxJcA2h" />
+                <node concept="1GpqW3" id="5Pt$ekxgGAr" role="37wK5m" />
+                <node concept="3bvxqY" id="5Pt$ekxgGAs" role="37wK5m" />
+                <node concept="1J7kdh" id="5Pt$ekxgGAt" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="5Pt$ekxgGAN">
+    <property role="TrG5h" value="TreeColumnCheck_Inspector_Checks_EC" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.column" />
+    <ref role="1XX52x" to="53m0:5Pt$ekxgGAB" resolve="TreeColumnCheck" />
+    <node concept="1PE4EZ" id="5Pt$ekxgGAP" role="1PM95z">
+      <ref role="1PE7su" node="6I6OCWxY99K" resolve="ViewWidgetCheck_Inspector_Checks_EC" />
+    </node>
+    <node concept="3F2HdR" id="5Pt$ekxgGAQ" role="2wV5jI">
+      <ref role="1NtTu8" to="53m0:5Pt$ekxgGAC" resolve="checks" />
+      <node concept="2iRkQZ" id="5Pt$ekxgGAR" role="2czzBx" />
     </node>
   </node>
 </model>

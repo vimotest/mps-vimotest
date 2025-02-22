@@ -511,6 +511,7 @@
       <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
+      <concept id="6934061334344388674" name="jetbrains.mps.lang.text.structure.NumberedLine" flags="ng" index="3WpeL9" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -7751,6 +7752,50 @@
             </node>
           </node>
         </node>
+        <node concept="3SKdUt" id="5Pt$ekxUJHl" role="3cqZAp">
+          <node concept="1PaTwC" id="5Pt$ekxUJHm" role="1aUNEU">
+            <node concept="3oM_SD" id="5Pt$ekxUKXU" role="1PaTwD">
+              <property role="3oM_SC" value="todo:" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="5Pt$ekxUMkT" role="3cqZAp">
+          <node concept="3WpeL9" id="5Pt$ekxURIh" role="1aUNEU">
+            <node concept="3oM_SD" id="5Pt$ekxURIf" role="1PaTwD">
+              <property role="3oM_SC" value="check" />
+            </node>
+            <node concept="3oM_SD" id="5Pt$ekxVl3Q" role="1PaTwD">
+              <property role="3oM_SC" value="composite" />
+            </node>
+            <node concept="3oM_SD" id="5Pt$ekxVl5T" role="1PaTwD">
+              <property role="3oM_SC" value="(IViewWidgetCheckComposite):" />
+            </node>
+            <node concept="3oM_SD" id="5Pt$ekxVl5U" role="1PaTwD">
+              <property role="3oM_SC" value="getChildChecks" />
+            </node>
+            <node concept="3oM_SD" id="5Pt$ekxV4wi" role="1PaTwD">
+              <property role="3oM_SC" value="/" />
+            </node>
+            <node concept="3oM_SD" id="5Pt$ekxV4uJ" role="1PaTwD">
+              <property role="3oM_SC" value="getViewWidgetForChildCheck" />
+            </node>
+            <node concept="3oM_SD" id="5Pt$ekxV4v0" role="1PaTwD">
+              <property role="3oM_SC" value="/" />
+            </node>
+            <node concept="3oM_SD" id="5Pt$ekxV4vh" role="1PaTwD">
+              <property role="3oM_SC" value="getChildCheckWidgetConcepts" />
+            </node>
+            <node concept="3oM_SD" id="5Pt$ekxUTKg" role="1PaTwD">
+              <property role="3oM_SC" value="override" />
+            </node>
+            <node concept="3oM_SD" id="5Pt$ekxUTKL" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="5Pt$ekxUTKM" role="1PaTwD">
+              <property role="3oM_SC" value="subcomponents" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="7WnLzoFMIjh" role="3cqZAp">
           <node concept="3clFbS" id="7WnLzoFMIjj" role="3clFbx">
             <node concept="2xdQw9" id="7WnLzoFMJ2T" role="3cqZAp">
@@ -8259,8 +8304,8 @@
                     <node concept="37vLTw" id="7WgsBLYrkQB" role="2Oq$k0">
                       <ref role="3cqZAo" node="7WgsBLYqMUx" resolve="widgetConcept" />
                     </node>
-                    <node concept="3Tsc0h" id="7WgsBLYrnwO" role="2OqNvi">
-                      <ref role="3TtcxE" to="tpce:f_TKVDF" resolve="linkDeclaration" />
+                    <node concept="2qgKlT" id="5Pt$ekxgYdY" role="2OqNvi">
+                      <ref role="37wK5l" to="tpcn:hEwILKK" resolve="getLinkDeclarations" />
                     </node>
                   </node>
                   <node concept="2HwmR7" id="7WgsBLYrxQ3" role="2OqNvi">

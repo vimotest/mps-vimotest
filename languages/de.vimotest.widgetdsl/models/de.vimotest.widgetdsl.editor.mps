@@ -37,6 +37,8 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
+      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -498,8 +500,30 @@
   <node concept="24kQdi" id="2MC6y$Yz7Xs">
     <property role="3GE5qa" value="widgets" />
     <ref role="1XX52x" to="3255:2MC6y$Ywqk0" resolve="WidgetSubComponentDefinition" />
-    <node concept="PMmxH" id="2MC6y$Yz7Xu" role="2wV5jI">
-      <ref role="PMmxG" node="2MC6y$Yz7Wy" resolve="WidgetDefinition_EC" />
+    <node concept="3EZMnI" id="5Pt$ekxTRbp" role="2wV5jI">
+      <node concept="2iRfu4" id="5Pt$ekxTRbq" role="2iSdaV" />
+      <node concept="PMmxH" id="2MC6y$Yz7Xu" role="3EZMnx">
+        <ref role="PMmxG" node="2MC6y$Yz7Wy" resolve="WidgetDefinition_EC" />
+      </node>
+      <node concept="3F0ifn" id="5Pt$ekxTRbs" role="3EZMnx">
+        <property role="3F0ifm" value="[*]" />
+        <node concept="pkWqt" id="5Pt$ekxTRbu" role="pqm2j">
+          <node concept="3clFbS" id="5Pt$ekxTRbv" role="2VODD2">
+            <node concept="3clFbF" id="5Pt$ekxTRp5" role="3cqZAp">
+              <node concept="2OqwBi" id="5Pt$ekxTRNm" role="3clFbG">
+                <node concept="pncrf" id="5Pt$ekxTRp4" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5Pt$ekxTS0_" role="2OqNvi">
+                  <ref role="3TsBF5" to="3255:2MC6y$Yz7Ww" resolve="isMany" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="VPxyj" id="5Pt$ekxTS3r" role="3F10Kt" />
+        <node concept="11L4FC" id="5Pt$ekxUf6Q" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
     <node concept="3EZMnI" id="2MC6y$Yz7Xv" role="6VMZX">
       <node concept="l2Vlx" id="2MC6y$Yz7Xw" role="2iSdaV" />

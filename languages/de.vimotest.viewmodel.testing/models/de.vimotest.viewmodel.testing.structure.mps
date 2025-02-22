@@ -254,14 +254,17 @@
     <node concept="PrWs8" id="7WgsBLYoxwc" role="PzmwI">
       <ref role="PrY4T" node="7WgsBLYmzis" resolve="IListViewCheckValue" />
     </node>
-    <node concept="PrWs8" id="bZSVZd6wKk" role="PzmwI">
-      <ref role="PrY4T" node="K_fAvR3LDG" resolve="ITreeViewCheckValue" />
-    </node>
     <node concept="PrWs8" id="bZSVZd6xeg" role="PzmwI">
       <ref role="PrY4T" node="24MyZrrRA6Y" resolve="ITableViewCheckValue" />
     </node>
     <node concept="PrWs8" id="50zZ52cZe$o" role="PzmwI">
       <ref role="PrY4T" node="q9OOkGw2z6" resolve="ITableColumnCheckValue" />
+    </node>
+    <node concept="PrWs8" id="bZSVZd6wKk" role="PzmwI">
+      <ref role="PrY4T" node="K_fAvR3LDG" resolve="ITreeViewCheckValue" />
+    </node>
+    <node concept="PrWs8" id="5Pt$ekxVp_A" role="PzmwI">
+      <ref role="PrY4T" node="5Pt$ekxgGAh" resolve="ITreeColumnCheckValue" />
     </node>
     <node concept="PrWs8" id="7NXUkdQ8Z$l" role="PzmwI">
       <ref role="PrY4T" node="7NXUkdPQsiz" resolve="IRadioButtonCheckValue" />
@@ -315,6 +318,9 @@
     </node>
     <node concept="PrWs8" id="bZSVZd7iC1" role="PzmwI">
       <ref role="PrY4T" node="K_fAvR3LDG" resolve="ITreeViewCheckValue" />
+    </node>
+    <node concept="PrWs8" id="5Pt$ekxVp_C" role="PzmwI">
+      <ref role="PrY4T" node="5Pt$ekxgGAh" resolve="ITreeColumnCheckValue" />
     </node>
     <node concept="PrWs8" id="7NXUkdPQsH3" role="PzmwI">
       <ref role="PrY4T" node="7NXUkdPQsiz" resolve="IRadioButtonCheckValue" />
@@ -510,6 +516,9 @@
     <node concept="PrWs8" id="50zZ52dj6KW" role="PzmwI">
       <ref role="PrY4T" node="q9OOkGw2z6" resolve="ITableColumnCheckValue" />
     </node>
+    <node concept="PrWs8" id="5Pt$ekxVp_B" role="PzmwI">
+      <ref role="PrY4T" node="5Pt$ekxgGAh" resolve="ITreeColumnCheckValue" />
+    </node>
     <node concept="PrWs8" id="3c$pnH1f0uZ" role="PzmwI">
       <ref role="PrY4T" to="at53:3c$pnH1eja4" resolve="ISingleOrMultiLineStringSupport" />
     </node>
@@ -670,6 +679,16 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="K_fAvR3LDG" resolve="ITreeViewCheckValue" />
+    </node>
+    <node concept="1TJgyj" id="5Pt$ekxU_G1" role="1TKVEi">
+      <property role="IQ2ns" value="6727692732152306433" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="treeColumnChecks" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5Pt$ekxgGAB" resolve="TreeColumnCheck" />
+    </node>
+    <node concept="PrWs8" id="5Pt$ekxVbkF" role="PzmwI">
+      <ref role="PrY4T" node="5LG6vEN5HBC" resolve="IViewWidgetCheckComposite" />
     </node>
   </node>
   <node concept="1TIwiD" id="K_fAvR3LF8">
@@ -1425,7 +1444,7 @@
   <node concept="PlHQZ" id="q9OOkGw2z6">
     <property role="EcuMT" value="471139930089728198" />
     <property role="TrG5h" value="ITableColumnCheckValue" />
-    <property role="3GE5qa" value="test.assert.widgets" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.column" />
     <node concept="PrWs8" id="q9OOkGw2z7" role="PrDN$">
       <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
     </node>
@@ -1434,7 +1453,7 @@
     <property role="EcuMT" value="471139930089728220" />
     <property role="TrG5h" value="TableColumnCheck" />
     <property role="34LRSv" value="check table column" />
-    <property role="3GE5qa" value="test.assert.widgets" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.column" />
     <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
     <node concept="1TJgyj" id="q9OOkGw2zt" role="1TKVEi">
       <property role="IQ2ns" value="471139930089728221" />
@@ -1442,6 +1461,28 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="q9OOkGw2z6" resolve="ITableColumnCheckValue" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5Pt$ekxgGAh">
+    <property role="EcuMT" value="6727692732141324689" />
+    <property role="TrG5h" value="ITreeColumnCheckValue" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.column" />
+    <node concept="PrWs8" id="5Pt$ekxgGAi" role="PrDN$">
+      <ref role="PrY4T" node="5VrLp2zs35u" resolve="IWidgetCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Pt$ekxgGAB">
+    <property role="EcuMT" value="6727692732141324711" />
+    <property role="TrG5h" value="TreeColumnCheck" />
+    <property role="34LRSv" value="check tree column" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.column" />
+    <ref role="1TJDcQ" node="2Yd1qrJONfw" resolve="ViewWidgetCheck" />
+    <node concept="1TJgyj" id="5Pt$ekxgGAC" role="1TKVEi">
+      <property role="IQ2ns" value="6727692732141324712" />
+      <property role="20kJfa" value="checks" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="5Pt$ekxgGAh" resolve="ITreeColumnCheckValue" />
     </node>
   </node>
 </model>

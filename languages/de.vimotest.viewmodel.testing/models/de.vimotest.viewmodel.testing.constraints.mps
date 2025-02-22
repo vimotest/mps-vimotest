@@ -1228,7 +1228,7 @@
   </node>
   <node concept="1M2fIO" id="q9OOkGw2zu">
     <property role="TrG5h" value="TableColumnCheck_Constraints" />
-    <property role="3GE5qa" value="test.assert.widgets" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.column" />
     <ref role="1M2myG" to="53m0:q9OOkGw2zs" resolve="TableColumnCheck" />
     <node concept="9S07l" id="q9OOkGw2zv" role="9Vyp8">
       <node concept="3clFbS" id="q9OOkGw2zw" role="2VODD2">
@@ -1244,6 +1244,31 @@
               <node concept="2qgKlT" id="q9OOkGw2zA" role="2OqNvi">
                 <ref role="37wK5l" to="fwln:7a1oxbxXWUl" resolve="getWidgetConceptToCheckByParentNode" />
                 <node concept="nLn13" id="q9OOkGw2zB" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5Pt$ekxgGAD">
+    <property role="TrG5h" value="TreeColumnCheck_Constraints" />
+    <property role="3GE5qa" value="test.assert.widgets.structures.column" />
+    <ref role="1M2myG" to="53m0:5Pt$ekxgGAB" resolve="TreeColumnCheck" />
+    <node concept="9S07l" id="5Pt$ekxgGAE" role="9Vyp8">
+      <node concept="3clFbS" id="5Pt$ekxgGAF" role="2VODD2">
+        <node concept="3clFbF" id="5Pt$ekxgGAG" role="3cqZAp">
+          <node concept="17R0WA" id="5Pt$ekxgGAH" role="3clFbG">
+            <node concept="35c_gC" id="5Pt$ekxgGAI" role="3uHU7w">
+              <ref role="35c_gD" to="at53:5Pt$ekxgG_n" resolve="TreeColumnWidget" />
+            </node>
+            <node concept="2OqwBi" id="5Pt$ekxgGAJ" role="3uHU7B">
+              <node concept="35c_gC" id="5Pt$ekxgGAK" role="2Oq$k0">
+                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" />
+              </node>
+              <node concept="2qgKlT" id="5Pt$ekxgGAL" role="2OqNvi">
+                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" />
+                <node concept="nLn13" id="5Pt$ekxgGAM" role="37wK5m" />
               </node>
             </node>
           </node>

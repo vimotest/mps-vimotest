@@ -629,12 +629,20 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2lm5WNlbZLg" resolve="WidgetTreeRowsFeature" />
     </node>
+    <node concept="1TJgyj" id="5Pt$ekxTRbn" role="1TKVEi">
+      <property role="IQ2ns" value="6727692732152115927" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="treeColumnWidgets" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5Pt$ekxgG_n" resolve="TreeColumnWidget" />
+    </node>
     <node concept="1TJgyj" id="7uPLQmTQNM" role="1TKVEi">
       <property role="IQ2ns" value="134781560953466098" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="columnsFeature" />
+      <property role="20kJfa" value="columnsFeature_old" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="7uPLQmTOoE" resolve="ColumnDefinition" />
+      <node concept="asaX9" id="5Pt$ekxTRbo" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="K_fAvR3LCR" role="1TKVEi">
       <property role="IQ2ns" value="875174318840945207" />
@@ -1596,6 +1604,13 @@
     <property role="TrG5h" value="SubComponentViewWidget" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
+  </node>
+  <node concept="1TIwiD" id="5Pt$ekxgG_n">
+    <property role="EcuMT" value="6727692732141324631" />
+    <property role="TrG5h" value="TreeColumnWidget" />
+    <property role="34LRSv" value="tree column" />
+    <property role="3GE5qa" value="widgets.structures.column" />
+    <ref role="1TJDcQ" node="q9OOkGw2yi" resolve="TableColumnWidget" />
   </node>
 </model>
 

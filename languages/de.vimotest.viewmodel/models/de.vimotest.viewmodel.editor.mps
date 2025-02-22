@@ -2291,6 +2291,10 @@
     </node>
     <node concept="3EZMnI" id="24MyZrrRA6f" role="2wV5jI">
       <node concept="2EHx9g" id="24MyZrrRA6g" role="2iSdaV" />
+      <node concept="3F0ifn" id="5Pt$ekx8ooT" role="3EZMnx">
+        <property role="3F0ifm" value="table features:" />
+        <ref role="1k5W1q" to="dgt9:1DHLMcXB_e" resolve="GrayItalic" />
+      </node>
       <node concept="3F1sOY" id="24MyZrrRA6h" role="3EZMnx">
         <ref role="1NtTu8" to="at53:24MyZrrRA68" resolve="widgetTableRowsFeature" />
       </node>
@@ -2305,12 +2309,9 @@
       </node>
       <node concept="3EZMnI" id="4Ips5F1hH2G" role="3EZMnx">
         <node concept="VPM3Z" id="4Ips5F1hH2H" role="3F10Kt" />
-        <node concept="3vyZuw" id="4Ips5F1hH2I" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
         <node concept="3F0ifn" id="4Ips5F1hH2J" role="3EZMnx">
           <property role="3F0ifm" value="columns:" />
-          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+          <ref role="1k5W1q" to="dgt9:1DHLMcXB_e" resolve="GrayItalic" />
         </node>
         <node concept="3F2HdR" id="4Ips5F1hH2K" role="3EZMnx">
           <property role="2czwfO" value="-----" />
@@ -4930,6 +4931,10 @@
       <ref role="1PE7su" node="4OohpJQEUlZ" resolve="ViewWidget_WidgetFeatures_EC" />
     </node>
     <node concept="3EZMnI" id="q9OOkGw2yo" role="2wV5jI">
+      <node concept="3F0ifn" id="5Pt$ekx8ooU" role="3EZMnx">
+        <property role="3F0ifm" value="column features:" />
+        <ref role="1k5W1q" to="dgt9:1DHLMcXB_e" resolve="GrayItalic" />
+      </node>
       <node concept="2EHx9g" id="q9OOkGw2yp" role="2iSdaV" />
       <node concept="3F1sOY" id="q9OOkGQb1v" role="3EZMnx">
         <ref role="1NtTu8" to="at53:q9OOkGw2yj" resolve="textFeature" />
@@ -4964,65 +4969,50 @@
       <node concept="2EHx9g" id="q9OOkGw2y_" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="IyTQnQLLCA">
-    <property role="3GE5qa" value="widgets.structures.column" />
-    <ref role="1XX52x" to="at53:q9OOkGw2yi" resolve="TableColumnWidget" />
-    <node concept="PMmxH" id="IyTQnQLLCC" role="6VMZX">
-      <ref role="PMmxG" node="L9c2Y9pjGJ" resolve="ViewWidget_Inspector_EC" />
-    </node>
-    <node concept="3EZMnI" id="IyTQnQLLCD" role="2wV5jI">
-      <node concept="27yT$n" id="IyTQnQLLCJ" role="3F10Kt">
-        <property role="2hoDZC" value="hQhnRQp/PIXELS" />
-        <property role="3$6WeP" value="5" />
-      </node>
-      <node concept="27z8qx" id="IyTQnQLLCK" role="3F10Kt">
-        <property role="3$6WeP" value="5" />
-        <property role="2hoDZC" value="hQhnRQp/PIXELS" />
-      </node>
-      <node concept="PMmxH" id="IyTQnQLLCF" role="3EZMnx">
-        <ref role="PMmxG" node="L9c2Y9pcOs" resolve="ViewWidget_TypeAlias_FeatureIndication_EC" />
-      </node>
-      <node concept="3F0ifn" id="IyTQnQLLCH" role="3EZMnx" />
-      <node concept="PMmxH" id="10l9XAu6tYs" role="3EZMnx">
-        <ref role="PMmxG" node="L9c2Y9pvfV" resolve="ViewWidget_Rendering_EC" />
-        <node concept="pVoyu" id="10l9XAu6tYt" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="lj46D" id="10l9XAu6tYu" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="l2Vlx" id="IyTQnQLLCS" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="PKFIW" id="IyTQnQP3M$">
     <property role="3GE5qa" value="widgets.structures.column" />
     <property role="TrG5h" value="TableColumnWidget_Rendering_EC" />
     <ref role="1XX52x" to="at53:q9OOkGw2yi" resolve="TableColumnWidget" />
-    <node concept="3EZMnI" id="IyTQnQP3MB" role="2wV5jI">
-      <node concept="3EZMnI" id="IyTQnQP3MG" role="3EZMnx">
-        <node concept="3F0ifn" id="IyTQnQP3MH" role="3EZMnx">
-          <property role="3F0ifm" value="type" />
+    <node concept="1PE4EZ" id="IyTQnQP3MA" role="1PM95z">
+      <ref role="1PE7su" node="L9c2Y9pvfV" resolve="ViewWidget_Rendering_EC" />
+    </node>
+    <node concept="3F0ifn" id="5Pt$ekwTdXa" role="2wV5jI" />
+  </node>
+  <node concept="PKFIW" id="5Pt$ekwTdWL">
+    <property role="3GE5qa" value="widgets.structures.column" />
+    <property role="TrG5h" value="TableColumnWidget_Inspector_EC" />
+    <ref role="1XX52x" to="at53:q9OOkGw2yi" resolve="TableColumnWidget" />
+    <node concept="1PE4EZ" id="5Pt$ekwTdWN" role="1PM95z">
+      <ref role="1PE7su" node="L9c2Y9pjGJ" resolve="ViewWidget_Inspector_EC" />
+    </node>
+    <node concept="3EZMnI" id="5Pt$ekwTdWS" role="2wV5jI">
+      <node concept="PMmxH" id="5Pt$ekwTdWU" role="3EZMnx">
+        <ref role="PMmxG" node="4OohpJQEUlZ" resolve="ViewWidget_WidgetFeatures_EC" />
+      </node>
+      <node concept="PMmxH" id="5Pt$ekwTdWV" role="3EZMnx">
+        <ref role="PMmxG" node="1F_Q10zSP_8" resolve="ViewWidget_Commands_EC" />
+      </node>
+      <node concept="3F0ifn" id="5Pt$ekwTdWW" role="3EZMnx" />
+      <node concept="3EZMnI" id="5Pt$ekwTdWX" role="3EZMnx">
+        <node concept="3F0ifn" id="5Pt$ekwTdWY" role="3EZMnx">
+          <property role="3F0ifm" value="cell type" />
           <ref role="1k5W1q" to="dgt9:1DHLMcXB_e" resolve="GrayItalic" />
-          <node concept="VSNWy" id="IyTQnQP3MI" role="3F10Kt">
+          <node concept="VSNWy" id="5Pt$ekwTdWZ" role="3F10Kt">
             <property role="1lJzqX" value="8" />
           </node>
         </node>
-        <node concept="2iRfu4" id="IyTQnQP3MJ" role="2iSdaV" />
-        <node concept="3F1sOY" id="IyTQnQP3MK" role="3EZMnx">
+        <node concept="2iRfu4" id="5Pt$ekwTdX0" role="2iSdaV" />
+        <node concept="3F1sOY" id="5Pt$ekwTdX1" role="3EZMnx">
           <ref role="1NtTu8" to="at53:q9OOkGQqmU" />
         </node>
-        <node concept="pVoyu" id="IyTQnQP3ML" role="3F10Kt">
+        <node concept="VPXOz" id="5Pt$ekwTdX4" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="l2Vlx" id="IyTQnQP3ME" role="2iSdaV" />
-      <node concept="VPXOz" id="10l9XAu9vCB" role="3F10Kt">
+      <node concept="2iRkQZ" id="5Pt$ekwTdWT" role="2iSdaV" />
+      <node concept="3vyZuw" id="5Pt$ekx8ooS" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
-    </node>
-    <node concept="1PE4EZ" id="IyTQnQP3MA" role="1PM95z">
-      <ref role="1PE7su" node="L9c2Y9pvfV" resolve="ViewWidget_Rendering_EC" />
     </node>
   </node>
 </model>

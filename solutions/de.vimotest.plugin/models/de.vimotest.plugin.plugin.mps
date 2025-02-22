@@ -511,7 +511,6 @@
       <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
-      <concept id="6934061334344388674" name="jetbrains.mps.lang.text.structure.NumberedLine" flags="ng" index="3WpeL9" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -7752,50 +7751,7 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="5Pt$ekxUJHl" role="3cqZAp">
-          <node concept="1PaTwC" id="5Pt$ekxUJHm" role="1aUNEU">
-            <node concept="3oM_SD" id="5Pt$ekxUKXU" role="1PaTwD">
-              <property role="3oM_SC" value="todo:" />
-            </node>
-          </node>
-        </node>
-        <node concept="3SKdUt" id="5Pt$ekxUMkT" role="3cqZAp">
-          <node concept="3WpeL9" id="5Pt$ekxURIh" role="1aUNEU">
-            <node concept="3oM_SD" id="5Pt$ekxURIf" role="1PaTwD">
-              <property role="3oM_SC" value="check" />
-            </node>
-            <node concept="3oM_SD" id="5Pt$ekxVl3Q" role="1PaTwD">
-              <property role="3oM_SC" value="composite" />
-            </node>
-            <node concept="3oM_SD" id="5Pt$ekxVl5T" role="1PaTwD">
-              <property role="3oM_SC" value="(IViewWidgetCheckComposite):" />
-            </node>
-            <node concept="3oM_SD" id="5Pt$ekxVl5U" role="1PaTwD">
-              <property role="3oM_SC" value="getChildChecks" />
-            </node>
-            <node concept="3oM_SD" id="5Pt$ekxV4wi" role="1PaTwD">
-              <property role="3oM_SC" value="/" />
-            </node>
-            <node concept="3oM_SD" id="5Pt$ekxV4uJ" role="1PaTwD">
-              <property role="3oM_SC" value="getViewWidgetForChildCheck" />
-            </node>
-            <node concept="3oM_SD" id="5Pt$ekxV4v0" role="1PaTwD">
-              <property role="3oM_SC" value="/" />
-            </node>
-            <node concept="3oM_SD" id="5Pt$ekxV4vh" role="1PaTwD">
-              <property role="3oM_SC" value="getChildCheckWidgetConcepts" />
-            </node>
-            <node concept="3oM_SD" id="5Pt$ekxUTKg" role="1PaTwD">
-              <property role="3oM_SC" value="override" />
-            </node>
-            <node concept="3oM_SD" id="5Pt$ekxUTKL" role="1PaTwD">
-              <property role="3oM_SC" value="for" />
-            </node>
-            <node concept="3oM_SD" id="5Pt$ekxUTKM" role="1PaTwD">
-              <property role="3oM_SC" value="subcomponents" />
-            </node>
-          </node>
-        </node>
+        <node concept="3clFbH" id="5Pt$ekyItFy" role="3cqZAp" />
         <node concept="3clFbJ" id="7WnLzoFMIjh" role="3cqZAp">
           <node concept="3clFbS" id="7WnLzoFMIjj" role="3clFbx">
             <node concept="2xdQw9" id="7WnLzoFMJ2T" role="3cqZAp">
@@ -8809,6 +8765,69 @@
               </node>
               <node concept="3fqX7Q" id="q9OOkGioID" role="3clFbw">
                 <node concept="37vLTw" id="q9OOkGioIE" role="3fr31v">
+                  <ref role="3cqZAo" node="q9OOkGioI9" resolve="valid" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="5Pt$ekyIuVL" role="3cqZAp" />
+            <node concept="3clFbF" id="5Pt$ekyIxH2" role="3cqZAp">
+              <node concept="37vLTI" id="5Pt$ekyICeE" role="3clFbG">
+                <node concept="2OqwBi" id="5Pt$ekyIMye" role="37vLTx">
+                  <node concept="37vLTw" id="5Pt$ekyIHP2" role="2Oq$k0">
+                    <ref role="3cqZAo" node="q9OOkGioHP" resolve="parentCheckConcept" />
+                  </node>
+                  <node concept="2qgKlT" id="5Pt$ekyIOdk" role="2OqNvi">
+                    <ref role="37wK5l" to="tpcn:4UTtJHK9fEJ" resolve="isSubconceptOf" />
+                    <node concept="35c_gC" id="5Pt$ekyIPwu" role="37wK5m">
+                      <ref role="35c_gD" to="53m0:5LG6vEN5HBC" resolve="IViewWidgetCheckComposite" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="5Pt$ekyIxH0" role="37vLTJ">
+                  <ref role="3cqZAo" node="q9OOkGioI9" resolve="valid" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="5Pt$ekyIWYq" role="3cqZAp">
+              <node concept="3clFbS" id="5Pt$ekyIWYr" role="3clFbx">
+                <node concept="2xdQw9" id="5Pt$ekyIWYs" role="3cqZAp">
+                  <property role="2xdLsb" value="gZ5fh_4/error" />
+                  <node concept="3cpWs3" id="5Pt$ekyIWYt" role="9lYJi">
+                    <node concept="3cpWs3" id="5Pt$ekyIWYv" role="3uHU7B">
+                      <node concept="3cpWs3" id="5Pt$ekyIWYw" role="3uHU7B">
+                        <node concept="Xl_RD" id="5Pt$ekyIWYx" role="3uHU7B">
+                          <property role="Xl_RC" value="WidgetChecker: " />
+                        </node>
+                        <node concept="2OqwBi" id="5Pt$ekyIWYy" role="3uHU7w">
+                          <node concept="37vLTw" id="5Pt$ekyIWYz" role="2Oq$k0">
+                            <ref role="3cqZAo" node="q9OOkGioHP" resolve="parentCheckConcept" />
+                          </node>
+                          <node concept="3TrcHB" id="5Pt$ekyIWY$" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="5Pt$ekyIWY_" role="3uHU7w">
+                        <property role="Xl_RC" value=" does not inherit from " />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="5Pt$ekyJ6gP" role="3uHU7w">
+                      <node concept="35c_gC" id="5Pt$ekyJ4$K" role="2Oq$k0">
+                        <ref role="35c_gD" to="53m0:5LG6vEN5HBC" resolve="IViewWidgetCheckComposite" />
+                      </node>
+                      <node concept="liA8E" id="5Pt$ekyJbNT" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="5Pt$ekyIWYA" role="3cqZAp" />
+                <node concept="3cpWs6" id="5Pt$ekyIWYB" role="3cqZAp">
+                  <node concept="3clFbT" id="5Pt$ekyIWYC" role="3cqZAk" />
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="5Pt$ekyIWYD" role="3clFbw">
+                <node concept="37vLTw" id="5Pt$ekyIWYE" role="3fr31v">
                   <ref role="3cqZAo" node="q9OOkGioI9" resolve="valid" />
                 </node>
               </node>

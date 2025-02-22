@@ -41,6 +41,9 @@
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="fwln" ref="r:fb31fced-d3c6-408c-9dff-13efe5b49745(de.vimotest.viewmodel.testing.behavior)" implicit="true" />
+    <import index="c1s6" ref="r:72110f26-d77a-4fe2-add0-e841f4017b83(de.vimotest.widgetdsl.behavior)" implicit="true" />
+    <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -265,6 +268,11 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1208623485264" name="jetbrains.mps.baseLanguage.structure.AbstractOperation" flags="nn" index="1B$H19" />
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
@@ -7990,6 +7998,125 @@
                   <node concept="3fqX7Q" id="44HS8_685nN" role="3clFbw">
                     <node concept="37vLTw" id="44HS8_685nO" role="3fr31v">
                       <ref role="3cqZAo" node="44HS8_685nj" resolve="valid" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="5Pt$ekwr0x1" role="3cqZAp">
+                  <node concept="3clFbS" id="5Pt$ekwr0x3" role="3clFbx">
+                    <node concept="3cpWs8" id="5Pt$ekweVxS" role="3cqZAp">
+                      <node concept="3cpWsn" id="5Pt$ekweVxT" role="3cpWs9">
+                        <property role="TrG5h" value="viewWidgetBaseConcept" />
+                        <node concept="3K4zz7" id="5Pt$ekwfmCh" role="33vP2m">
+                          <node concept="2OqwBi" id="5Pt$ekwfye7" role="3K4Cdx">
+                            <node concept="2GrUjf" id="5Pt$ekwfvNZ" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="44HS8_685mG" resolve="widget" />
+                            </node>
+                            <node concept="2qgKlT" id="5Pt$ekwfGuI" role="2OqNvi">
+                              <ref role="37wK5l" to="c1s6:5Pt$ekwf$Gc" resolve="isSubComponent" />
+                            </node>
+                          </node>
+                          <node concept="35c_gC" id="5Pt$ekweVxU" role="3K4E3e">
+                            <ref role="35c_gD" to="at53:5Pt$ekwduj6" resolve="SubComponentViewWidget" />
+                          </node>
+                          <node concept="35c_gC" id="5Pt$ekwfr$j" role="3K4GZi">
+                            <ref role="35c_gD" to="at53:F907haLIRF" resolve="ViewWidget" />
+                          </node>
+                        </node>
+                        <node concept="3bZ5Sz" id="5Pt$ekwfTKr" role="1tU5fm" />
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="5Pt$ekwe5LA" role="3cqZAp">
+                      <node concept="15s5l7" id="5Pt$ekwfkTH" role="lGtFl">
+                        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: This operation can produce 'java.lang.NullPointerException'&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/3451033204592343684]&quot;;" />
+                        <property role="huDt6" value="Warning: This operation can produce 'java.lang.NullPointerException'" />
+                      </node>
+                      <node concept="37vLTI" id="5Pt$ekwe9Bm" role="3clFbG">
+                        <node concept="2OqwBi" id="5Pt$ekwef2l" role="37vLTx">
+                          <node concept="37vLTw" id="5Pt$ekwecpC" role="2Oq$k0">
+                            <ref role="3cqZAo" node="44HS8_685mZ" resolve="concept" />
+                          </node>
+                          <node concept="2qgKlT" id="5Pt$ekw_Wgw" role="2OqNvi">
+                            <ref role="37wK5l" to="tpcn:4UTtJHK9fEJ" resolve="isSubconceptOf" />
+                            <node concept="37vLTw" id="5Pt$ekwA6EX" role="37wK5m">
+                              <ref role="3cqZAo" node="5Pt$ekweVxT" resolve="viewWidgetBaseConcept" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="5Pt$ekwe5L$" role="37vLTJ">
+                          <ref role="3cqZAo" node="44HS8_685nj" resolve="valid" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbJ" id="5Pt$ekweJby" role="3cqZAp">
+                      <node concept="3clFbS" id="5Pt$ekweJbz" role="3clFbx">
+                        <node concept="2xdQw9" id="5Pt$ekweJb$" role="3cqZAp">
+                          <property role="2xdLsb" value="gZ5fh_4/error" />
+                          <node concept="3cpWs3" id="5Pt$ekweJb_" role="9lYJi">
+                            <node concept="3cpWs3" id="5Pt$ekweJbD" role="3uHU7B">
+                              <node concept="Xl_RD" id="5Pt$ekweJbE" role="3uHU7w">
+                                <property role="Xl_RC" value=" does not inherit " />
+                              </node>
+                              <node concept="3cpWs3" id="5Pt$ekweJbF" role="3uHU7B">
+                                <node concept="2OqwBi" id="5Pt$ekweJbG" role="3uHU7w">
+                                  <node concept="2GrUjf" id="5Pt$ekweJbH" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="44HS8_685mG" resolve="widget" />
+                                  </node>
+                                  <node concept="3TrcHB" id="5Pt$ekweJbI" role="2OqNvi">
+                                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                  </node>
+                                </node>
+                                <node concept="3cpWs3" id="5Pt$ekweJbJ" role="3uHU7B">
+                                  <node concept="3cpWs3" id="5Pt$ekweJbK" role="3uHU7B">
+                                    <node concept="Xl_RD" id="5Pt$ekweJbL" role="3uHU7B">
+                                      <property role="Xl_RC" value="WidgetChecker: " />
+                                    </node>
+                                    <node concept="2OqwBi" id="5Pt$ekweJbM" role="3uHU7w">
+                                      <node concept="37vLTw" id="5Pt$ekweJbN" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="44HS8_685mZ" resolve="concept" />
+                                      </node>
+                                      <node concept="3TrcHB" id="5Pt$ekweJbO" role="2OqNvi">
+                                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="Xl_RD" id="5Pt$ekweJbP" role="3uHU7w">
+                                    <property role="Xl_RC" value=" based on " />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="5Pt$ekwf7cZ" role="3uHU7w">
+                              <node concept="37vLTw" id="5Pt$ekwf4Zc" role="2Oq$k0">
+                                <ref role="3cqZAo" node="5Pt$ekweVxT" resolve="baseConcept" />
+                              </node>
+                              <node concept="liA8E" id="5Pt$ekwfayY" role="2OqNvi">
+                                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbH" id="5Pt$ekweJbQ" role="3cqZAp" />
+                        <node concept="3cpWs6" id="5Pt$ekweJbR" role="3cqZAp">
+                          <node concept="3clFbT" id="5Pt$ekweJbS" role="3cqZAk" />
+                        </node>
+                      </node>
+                      <node concept="3fqX7Q" id="5Pt$ekweJbT" role="3clFbw">
+                        <node concept="37vLTw" id="5Pt$ekweJbU" role="3fr31v">
+                          <ref role="3cqZAo" node="44HS8_685nj" resolve="valid" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="17R0WA" id="5Pt$ekwrecg" role="3clFbw">
+                    <node concept="2GrUjf" id="5Pt$ekwr7lW" role="3uHU7B">
+                      <ref role="2Gs0qQ" node="44HS8_68KJ0" resolve="conceptName" />
+                    </node>
+                    <node concept="2YIFZM" id="5Pt$ekwriCT" role="3uHU7w">
+                      <ref role="37wK5l" node="26yOs7SpkVY" resolve="getConceptName" />
+                      <ref role="1Pybhc" node="26yOs7Sonts" resolve="WidgetGenerator" />
+                      <node concept="2GrUjf" id="5Pt$ekwriCU" role="37wK5m">
+                        <ref role="2Gs0qQ" node="44HS8_685mG" resolve="widget" />
+                      </node>
                     </node>
                   </node>
                 </node>

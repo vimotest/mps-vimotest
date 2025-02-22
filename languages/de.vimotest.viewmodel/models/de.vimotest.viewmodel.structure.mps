@@ -1444,7 +1444,7 @@
     <property role="TrG5h" value="RadioButtonWidget" />
     <property role="34LRSv" value="radio button" />
     <property role="3GE5qa" value="widgets.choices" />
-    <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
+    <ref role="1TJDcQ" node="5Pt$ekwduj6" resolve="SubComponentViewWidget" />
     <node concept="1TJgyj" id="7NXUkdPQshL" role="1TKVEi">
       <property role="IQ2ns" value="9006611305760146545" />
       <property role="20kJfa" value="visibilityFeature" />
@@ -1544,7 +1544,7 @@
     <property role="TrG5h" value="TableColumnWidget" />
     <property role="34LRSv" value="table column" />
     <property role="3GE5qa" value="widgets.structures.column" />
-    <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
+    <ref role="1TJDcQ" node="5Pt$ekwduj6" resolve="SubComponentViewWidget" />
     <node concept="1TJgyj" id="q9OOkGw2yj" role="1TKVEi">
       <property role="IQ2ns" value="471139930089728147" />
       <property role="20kJfa" value="textFeature" />
@@ -1589,6 +1589,13 @@
       <property role="TrG5h" value="header" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5Pt$ekwduj6">
+    <property role="EcuMT" value="6727692732123702470" />
+    <property role="3GE5qa" value="widgets.util" />
+    <property role="TrG5h" value="SubComponentViewWidget" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
   </node>
 </model>
 

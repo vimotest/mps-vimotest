@@ -9482,7 +9482,7 @@
                 <ref role="3cqZAo" node="2DHgAdqaPJT" resolve="treeWidget" />
               </node>
               <node concept="3Tsc0h" id="2DHgAdqaPKv" role="2OqNvi">
-                <ref role="3TtcxE" to="at53:7uPLQmTQNM" resolve="columnsFeature" />
+                <ref role="3TtcxE" to="at53:5Pt$ekxTRbn" />
               </node>
             </node>
           </node>
@@ -9548,7 +9548,7 @@
           <node concept="3cpWsn" id="2DHgAdqaPKU" role="3cpWs9">
             <property role="TrG5h" value="columnNode" />
             <node concept="3Tqbb2" id="2DHgAdqaPKV" role="1tU5fm">
-              <ref role="ehGHo" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+              <ref role="ehGHo" to="at53:5Pt$ekxgG_n" resolve="TreeColumnWidget" />
             </node>
             <node concept="1y4W85" id="2DHgAdqaPKW" role="33vP2m">
               <node concept="37vLTw" id="2DHgAdqaPKX" role="1y58nS">
@@ -9559,7 +9559,7 @@
                   <ref role="3cqZAo" node="2DHgAdqaPJT" resolve="treeWidget" />
                 </node>
                 <node concept="3Tsc0h" id="2DHgAdqaPL0" role="2OqNvi">
-                  <ref role="3TtcxE" to="at53:7uPLQmTQNM" resolve="columnsFeature" />
+                  <ref role="3TtcxE" to="at53:5Pt$ekxTRbn" />
                 </node>
               </node>
             </node>
@@ -9815,7 +9815,7 @@
                           <ref role="3cqZAo" node="2DHgAdqaPKU" resolve="columnNode" />
                         </node>
                         <node concept="3TrEf2" id="2DHgAdqaPLN" role="2OqNvi">
-                          <ref role="3Tt5mk" to="at53:7uPLQmTQNN" resolve="widgetType" />
+                          <ref role="3Tt5mk" to="at53:q9OOkGQqmU" />
                         </node>
                       </node>
                     </node>
@@ -9845,7 +9845,7 @@
                         <ref role="3cqZAo" node="2DHgAdqaPKU" resolve="columnNode" />
                       </node>
                       <node concept="3TrEf2" id="2DHgAdqaPLX" role="2OqNvi">
-                        <ref role="3Tt5mk" to="at53:7uPLQmTQNN" resolve="widgetType" />
+                        <ref role="3Tt5mk" to="at53:q9OOkGQqmU" />
                       </node>
                     </node>
                   </node>

@@ -3168,6 +3168,9 @@
                     </node>
                   </node>
                 </node>
+                <node concept="35c_gC" id="6mQWpyUrUk" role="37wK5m">
+                  <ref role="35c_gD" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+                </node>
                 <node concept="3clFbT" id="44HS8_5r3Nj" role="37wK5m" />
               </node>
             </node>
@@ -3311,13 +3314,13 @@
           <node concept="3cpWsn" id="7uPLQmZfa2" role="3cpWs9">
             <property role="TrG5h" value="firstColumn" />
             <node concept="3Tqbb2" id="7uPLQmZcAY" role="1tU5fm">
-              <ref role="ehGHo" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+              <ref role="ehGHo" to="at53:5Pt$ekxgG_n" resolve="TreeColumnWidget" />
             </node>
             <node concept="2OqwBi" id="7uPLQmZfa3" role="33vP2m">
               <node concept="2OqwBi" id="7uPLQmZfa4" role="2Oq$k0">
                 <node concept="13iPFW" id="7uPLQmZfa5" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="7uPLQmZfa6" role="2OqNvi">
-                  <ref role="3TtcxE" to="at53:7uPLQmTQNM" resolve="columnsFeature_old" />
+                  <ref role="3TtcxE" to="at53:5Pt$ekxTRbn" />
                 </node>
               </node>
               <node concept="2DeJg1" id="7uPLQmZfa7" role="2OqNvi" />
@@ -3336,7 +3339,7 @@
                   <ref role="3cqZAo" node="7uPLQmZfa2" resolve="firstColumn" />
                 </node>
                 <node concept="3TrEf2" id="7uPLQmZzzV" role="2OqNvi">
-                  <ref role="3Tt5mk" to="at53:7uPLQmTQNN" resolve="widgetType" />
+                  <ref role="3Tt5mk" to="at53:q9OOkGQqmU" />
                 </node>
               </node>
               <node concept="2DeJnY" id="7uPLQmZC_v" role="2OqNvi">
@@ -3427,8 +3430,11 @@
                     <ref role="3cqZAo" node="2zlSkwD7Vgm" resolve="treeWidget" />
                   </node>
                   <node concept="3Tsc0h" id="2DHgAdq8uFu" role="2OqNvi">
-                    <ref role="3TtcxE" to="at53:7uPLQmTQNM" resolve="columnsFeature_old" />
+                    <ref role="3TtcxE" to="at53:5Pt$ekxTRbn" />
                   </node>
+                </node>
+                <node concept="35c_gC" id="6mQWpyUxhk" role="37wK5m">
+                  <ref role="35c_gD" to="at53:5Pt$ekxgG_n" resolve="TreeColumnWidget" />
                 </node>
                 <node concept="3clFbT" id="2DHgAdq8uRm" role="37wK5m">
                   <property role="3clFbU" value="true" />
@@ -5186,14 +5192,14 @@
         </node>
         <node concept="3clFbF" id="38_Nq5U62YE" role="3cqZAp">
           <node concept="37vLTI" id="38_Nq5U62YF" role="3clFbG">
-            <node concept="35c_gC" id="38_Nq5U62YG" role="37vLTx">
-              <ref role="35c_gD" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
-            </node>
             <node concept="2OqwBi" id="38_Nq5U62YH" role="37vLTJ">
               <node concept="Xjq3P" id="38_Nq5U62YI" role="2Oq$k0" />
               <node concept="2OwXpG" id="38_Nq5U62YJ" role="2OqNvi">
                 <ref role="2Oxat5" node="38_Nq5U5W3E" resolve="columnConcept" />
               </node>
+            </node>
+            <node concept="37vLTw" id="6mQWpyUnNt" role="37vLTx">
+              <ref role="3cqZAo" node="6mQWpyUmdY" resolve="columnConcept" />
             </node>
           </node>
         </node>
@@ -5201,7 +5207,13 @@
       <node concept="37vLTG" id="2DHgAdq8ei4" role="3clF46">
         <property role="TrG5h" value="columns" />
         <node concept="2I9FWS" id="2DHgAdq8fMT" role="1tU5fm">
-          <ref role="2I9WkF" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+          <ref role="2I9WkF" to="at53:q9OOkGQoXE" resolve="ITableColumn" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6mQWpyUmdY" role="3clF46">
+        <property role="TrG5h" value="columnConcept" />
+        <node concept="3bZ5Sz" id="6mQWpyUmFy" role="1tU5fm">
+          <ref role="3bZ5Sy" to="at53:q9OOkGQoXE" resolve="ITableColumn" />
         </node>
       </node>
       <node concept="37vLTG" id="2DHgAdq8gRN" role="3clF46">

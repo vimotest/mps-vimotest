@@ -1149,7 +1149,7 @@
         <node concept="3cpWsn" id="bZSVZcAlpz" role="3cpWs9">
           <property role="TrG5h" value="columns" />
           <node concept="2I9FWS" id="bZSVZcAlp$" role="1tU5fm">
-            <ref role="2I9WkF" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+            <ref role="2I9WkF" to="at53:5Pt$ekxgG_n" resolve="TreeColumnWidget" />
           </node>
           <node concept="2OqwBi" id="bZSVZcAlp_" role="33vP2m">
             <node concept="1PxgMI" id="bZSVZcAlpA" role="2Oq$k0">
@@ -1176,7 +1176,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="bZSVZcAlpJ" role="2OqNvi">
-              <ref role="3TtcxE" to="at53:7uPLQmTQNM" resolve="columnsFeature" />
+              <ref role="3TtcxE" to="at53:5Pt$ekxTRbn" />
             </node>
           </node>
         </node>
@@ -2993,7 +2993,7 @@
         <node concept="3cpWsn" id="2$TY9D5HOtX" role="3cpWs9">
           <property role="TrG5h" value="columns" />
           <node concept="2I9FWS" id="2$TY9D5HOtY" role="1tU5fm">
-            <ref role="2I9WkF" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+            <ref role="2I9WkF" to="at53:5Pt$ekxgG_n" resolve="TreeColumnWidget" />
           </node>
           <node concept="2OqwBi" id="2$TY9D5HOtZ" role="33vP2m">
             <node concept="1PxgMI" id="2$TY9D5HOu0" role="2Oq$k0">
@@ -3020,7 +3020,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="2$TY9D5HOu9" role="2OqNvi">
-              <ref role="3TtcxE" to="at53:7uPLQmTQNM" resolve="columnsFeature" />
+              <ref role="3TtcxE" to="at53:5Pt$ekxTRbn" />
             </node>
           </node>
         </node>

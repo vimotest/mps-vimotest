@@ -25,6 +25,10 @@ namespace widgetassertions
   {
     return this->isMyElementsTableEnabled;
   }
+  bool TableViews_View::getIsDescriptionTableColumnVisible( ) 
+  {
+    return this->isDescriptionTableColumnVisible;
+  }
   std::vector<std::shared_ptr<TableViews_ViewMyStringRowHandlesRow>> TableViews_View::getMyStringRowHandlesTableRows( ) 
   {
     return this->MyStringRowHandlesTableRows;

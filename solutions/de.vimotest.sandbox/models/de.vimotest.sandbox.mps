@@ -110,7 +110,9 @@
       <concept id="7445061853131767061" name="de.vimotest.viewmodel.testing.structure.WhenDescriptionWithAction" flags="ng" index="DUd5q">
         <child id="7445061853131768390" name="action" index="DUiS9" />
       </concept>
-      <concept id="471139930089728220" name="de.vimotest.viewmodel.testing.structure.TableColumnCheck" flags="ng" index="E2vIp" />
+      <concept id="471139930089728220" name="de.vimotest.viewmodel.testing.structure.TableColumnCheck" flags="ng" index="E2vIp">
+        <child id="471139930089728221" name="checks" index="E2vIo" />
+      </concept>
       <concept id="1938192778485639397" name="de.vimotest.viewmodel.testing.structure.CheckCommandAction" flags="ng" index="Tef3P">
         <property id="1938192778485679557" name="checked" index="Te1Rl" />
       </concept>
@@ -240,7 +242,9 @@
         <child id="875174318840945283" name="checks" index="3Vayj$" />
         <child id="6727692732152306433" name="treeColumnChecks" index="1WHWJ$" />
       </concept>
-      <concept id="6727692732141324711" name="de.vimotest.viewmodel.testing.structure.TreeColumnCheck" flags="ng" index="1W7P_2" />
+      <concept id="6727692732141324711" name="de.vimotest.viewmodel.testing.structure.TreeColumnCheck" flags="ng" index="1W7P_2">
+        <child id="6727692732141324712" name="checks" index="1W7P_d" />
+      </concept>
       <concept id="3102035812374611519" name="de.vimotest.viewmodel.testing.structure.ViewModelFieldAssertion" flags="ng" index="3Ybqct">
         <reference id="3102035812374612579" name="field" index="3YbqX1" />
         <child id="3102035812374612580" name="expectedValue" index="3YbqX6" />
@@ -1227,7 +1231,9 @@
               <property role="o7K7r" value="Description" />
             </node>
           </node>
-          <node concept="C4FCg" id="4KZE_p8sHpl" role="Ekmcp" />
+          <node concept="C4FCg" id="4KZE_p8sHpl" role="Ekmcp">
+            <property role="2VM7R0" value="true" />
+          </node>
           <node concept="C4FCh" id="4KZE_p8sHpm" role="E2vJh" />
           <node concept="V3ZfZ" id="4w9z1ta2HQ5" role="Ek7rZ">
             <property role="TrG5h" value="Description" />
@@ -1372,7 +1378,9 @@
               <property role="o7K7r" value="Description" />
             </node>
           </node>
-          <node concept="C4FCg" id="6mQWpyU2mv" role="Ekmcp" />
+          <node concept="C4FCg" id="6mQWpyU2mv" role="Ekmcp">
+            <property role="2VM7R0" value="true" />
+          </node>
           <node concept="C4FCh" id="6mQWpyU2mw" role="E2vJh" />
           <node concept="V3ZfZ" id="4w9z1ta2MKU" role="Ek7rZ">
             <property role="TrG5h" value="Description" />
@@ -2439,7 +2447,9 @@
               </node>
               <node concept="E2vIp" id="4KZE_p8sHq8" role="E88qO" />
               <node concept="E2vIp" id="4KZE_p8sHq9" role="E88qO" />
-              <node concept="E2vIp" id="4KZE_p8sHqa" role="E88qO" />
+              <node concept="E2vIp" id="4KZE_p8sHqa" role="E88qO">
+                <node concept="35STUn" id="7ENWPnE6_16" role="E2vIo" />
+              </node>
               <node concept="E2vIp" id="4KZE_p8sHqb" role="E88qO" />
             </node>
           </node>
@@ -2729,7 +2739,9 @@
               </node>
               <node concept="1W7P_2" id="6mQWpyU2nu" role="1WHWJ$" />
               <node concept="1W7P_2" id="6mQWpyU2nv" role="1WHWJ$" />
-              <node concept="1W7P_2" id="6mQWpyU2nw" role="1WHWJ$" />
+              <node concept="1W7P_2" id="6mQWpyU2nw" role="1WHWJ$">
+                <node concept="35STUn" id="7ENWPnEU18C" role="1W7P_d" />
+              </node>
               <node concept="1W7P_2" id="6mQWpyU2nx" role="1WHWJ$" />
             </node>
           </node>

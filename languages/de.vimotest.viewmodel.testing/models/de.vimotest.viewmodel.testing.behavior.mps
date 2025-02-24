@@ -6864,6 +6864,43 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="7ENWPnEU91E" role="3cqZAp" />
+        <node concept="3clFbF" id="7ENWPnEU91F" role="3cqZAp">
+          <node concept="2OqwBi" id="7ENWPnEU91G" role="3clFbG">
+            <node concept="2OqwBi" id="7ENWPnEU91H" role="2Oq$k0">
+              <node concept="13iPFW" id="7ENWPnEU91I" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="7ENWPnEU91J" role="2OqNvi">
+                <ref role="3TtcxE" to="53m0:5Pt$ekxU_G1" />
+              </node>
+            </node>
+            <node concept="2es0OD" id="7ENWPnEU91K" role="2OqNvi">
+              <node concept="1bVj0M" id="7ENWPnEU91L" role="23t8la">
+                <node concept="3clFbS" id="7ENWPnEU91M" role="1bW5cS">
+                  <node concept="3clFbF" id="7ENWPnEU91N" role="3cqZAp">
+                    <node concept="2OqwBi" id="7ENWPnEU91O" role="3clFbG">
+                      <node concept="37vLTw" id="7ENWPnEU91P" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7ENWPnEU91T" resolve="it" />
+                      </node>
+                      <node concept="2qgKlT" id="7ENWPnEU91Q" role="2OqNvi">
+                        <ref role="37wK5l" node="2Yd1qrJP3FF" resolve="applyOnWidget" />
+                        <node concept="37vLTw" id="7ENWPnEU91R" role="37wK5m">
+                          <ref role="3cqZAo" node="K_fAvR3LEI" resolve="editorCell" />
+                        </node>
+                        <node concept="37vLTw" id="7ENWPnEU91S" role="37wK5m">
+                          <ref role="3cqZAo" node="K_fAvR3LEK" resolve="widget" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="gl6BB" id="7ENWPnEU91T" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="7ENWPnEU91U" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="37vLTG" id="K_fAvR3LEI" role="3clF46">
         <property role="TrG5h" value="editorCell" />
@@ -18214,6 +18251,37 @@
         <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
       </node>
     </node>
+    <node concept="13i0hz" id="7ENWPnEj8Jk" role="13h7CS">
+      <property role="TrG5h" value="shouldRenderColumnCheck" />
+      <node concept="3Tm1VV" id="7ENWPnEj8Jl" role="1B3o_S" />
+      <node concept="10P_77" id="7ENWPnEj9AB" role="3clF45" />
+      <node concept="3clFbS" id="7ENWPnEj8Jn" role="3clF47">
+        <node concept="3clFbF" id="7ENWPnEj9Bp" role="3cqZAp">
+          <node concept="22lmx$" id="7ENWPnDXdUn" role="3clFbG">
+            <node concept="2OqwBi" id="7ENWPnDXhwt" role="3uHU7B">
+              <node concept="2OqwBi" id="7ENWPnDXejq" role="2Oq$k0">
+                <node concept="3Tsc0h" id="7ENWPnDXeGr" role="2OqNvi">
+                  <ref role="3TtcxE" to="53m0:q9OOkGw2zt" />
+                </node>
+                <node concept="13iPFW" id="7ENWPnEjyB3" role="2Oq$k0" />
+              </node>
+              <node concept="3GX2aA" id="7ENWPnDXjIA" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="7ENWPnDXcQO" role="3uHU7w">
+              <node concept="2OqwBi" id="7ENWPnDXa_I" role="2Oq$k0">
+                <node concept="2qgKlT" id="7ENWPnDXcsr" role="2OqNvi">
+                  <ref role="37wK5l" node="4jKdMMdJYzD" resolve="getWidgetToCheck" />
+                </node>
+                <node concept="13iPFW" id="7ENWPnEjyEz" role="2Oq$k0" />
+              </node>
+              <node concept="2qgKlT" id="7ENWPnDXdmg" role="2OqNvi">
+                <ref role="37wK5l" to="nrs2:L9c2Y9pgr5" resolve="hasAnySupportedFeature" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="5Pt$ekxgGAu">
     <property role="TrG5h" value="ITreeColumnCheckValue_Behavior" />
@@ -18359,6 +18427,37 @@
       </node>
       <node concept="3uibUv" id="5Pt$ekxgGBG" role="3clF45">
         <ref role="3uigEE" to="f4zo:~EditorCell" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="7ENWPnEzVom" role="13h7CS">
+      <property role="TrG5h" value="shouldRenderColumnCheck" />
+      <node concept="3Tm1VV" id="7ENWPnEzVon" role="1B3o_S" />
+      <node concept="10P_77" id="7ENWPnEzVoo" role="3clF45" />
+      <node concept="3clFbS" id="7ENWPnEzVop" role="3clF47">
+        <node concept="3clFbF" id="7ENWPnEzVoq" role="3cqZAp">
+          <node concept="22lmx$" id="7ENWPnEzVor" role="3clFbG">
+            <node concept="2OqwBi" id="7ENWPnEzVos" role="3uHU7B">
+              <node concept="2OqwBi" id="7ENWPnEzVot" role="2Oq$k0">
+                <node concept="3Tsc0h" id="7ENWPnEzVou" role="2OqNvi">
+                  <ref role="3TtcxE" to="53m0:5Pt$ekxgGAC" />
+                </node>
+                <node concept="13iPFW" id="7ENWPnEzVov" role="2Oq$k0" />
+              </node>
+              <node concept="3GX2aA" id="7ENWPnEzVow" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="7ENWPnEzVox" role="3uHU7w">
+              <node concept="2OqwBi" id="7ENWPnEzVoy" role="2Oq$k0">
+                <node concept="2qgKlT" id="7ENWPnEzVoz" role="2OqNvi">
+                  <ref role="37wK5l" node="4jKdMMdJYzD" resolve="getWidgetToCheck" />
+                </node>
+                <node concept="13iPFW" id="7ENWPnEzVo$" role="2Oq$k0" />
+              </node>
+              <node concept="2qgKlT" id="7ENWPnEzVo_" role="2OqNvi">
+                <ref role="37wK5l" to="nrs2:L9c2Y9pgr5" resolve="hasAnySupportedFeature" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

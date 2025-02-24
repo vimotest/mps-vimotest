@@ -28,6 +28,12 @@ class TreeViews_View {
   return this.MyTreeViewElementsTreeRows;
  }
   
+  private isDescriptionTreeColumnVisible : Boolean  ;
+  
+  public getIsDescriptionTreeColumnVisible (  ) : Boolean  {
+  return this.isDescriptionTreeColumnVisible;
+ }
+  
   private MyStringRowHandlesTreeRows : TreeViews_ViewMyStringRowHandlesRow [ * ]  ;
   
   public getMyStringRowHandlesTreeRows (  ) : TreeViews_ViewMyStringRowHandlesRow [ * ]  {

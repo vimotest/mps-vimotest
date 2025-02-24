@@ -18,10 +18,10 @@ public class TreeViews_ViewTest_Test {
   private TreeViews_View sut;
   private TreeViews_ViewTestSetup testSetup;
   @Test
-  public void test_My_Scenario_given_empty_context_when_then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1_and_MyParentIndexRowHandles_has_4_rows_and_MyParentStringRowHandles_has_4_rows() throws Exception {
+  public void test_My_Scenario_given_empty_context_when_then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1_and_MyParentIndexRowHandles_has_4_rows_and_MyParentStringRowHandles_has_4_rows() throws Exception {
     this.given_empty_context();
     this.BuildSut();
-    this.then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible();
+    this.then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible();
     this.then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1();
     this.then_MyParentIndexRowHandles_has_4_rows();
     this.then_MyParentStringRowHandles_has_4_rows();
@@ -52,7 +52,7 @@ public class TreeViews_ViewTest_Test {
 
 
 
-  public void then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible() {
+  public void then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible() {
     List<TreeViews_ViewMyTreeViewElementsRow> actualRows = this.sut.getMyTreeViewElementsTreeRows();
     Assert.assertEquals(2, actualRows.size());
     // {
@@ -76,6 +76,7 @@ public class TreeViews_ViewTest_Test {
     Assert.assertEquals(Integer.valueOf(this.sut.getMyTreeViewElementsTreeSelectedRow()), this.sut.getMyTreeViewElementsTreeSelectedRow());
     Assert.assertTrue(this.sut.getIsMyTreeViewElementsTreeEnabled());
     Assert.assertTrue(this.sut.getIsMyTreeViewElementsTreeVisible());
+    Assert.assertFalse(this.sut.getIsDescriptionTreeColumnVisible());
   }
   public void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() {
     List<TreeViews_ViewMyStringRowHandlesRow> actualRows = this.sut.getMyStringRowHandlesTreeRows();

@@ -1610,8 +1610,13 @@
                       <node concept="3clFbS" id="7nrre2bD_UW" role="1bW5cS">
                         <node concept="3clFbF" id="7nrre2bDACQ" role="3cqZAp">
                           <node concept="2OqwBi" id="7nrre2bDB7j" role="3clFbG">
-                            <node concept="37vLTw" id="7nrre2bDACP" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7nrre2bD_UX" resolve="it" />
+                            <node concept="2OqwBi" id="7ENWPnF4TdT" role="2Oq$k0">
+                              <node concept="37vLTw" id="7nrre2bDACP" role="2Oq$k0">
+                                <ref role="3cqZAo" node="7nrre2bD_UX" resolve="it" />
+                              </node>
+                              <node concept="2qgKlT" id="7ENWPnF4TN9" role="2OqNvi">
+                                <ref role="37wK5l" to="nrs2:q9OOkGQoXY" resolve="getColumnWidgetType" />
+                              </node>
                             </node>
                             <node concept="2Rf3mk" id="7nrre2bDBzV" role="2OqNvi">
                               <node concept="1xMEDy" id="7nrre2bDBzW" role="1xVPHs">

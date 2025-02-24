@@ -16,6 +16,7 @@ namespace widgetassertions
     virtual int getMyElementsTableSelectedRow() ;
     virtual bool getIsMyElementsTableVisible() ;
     virtual bool getIsMyElementsTableEnabled() ;
+    virtual bool getIsDescriptionTableColumnVisible() ;
     virtual std::vector<std::shared_ptr<TableViews_ViewMyStringRowHandlesRow>> getMyStringRowHandlesTableRows() ;
     virtual std::string getMyStringRowHandlesTableSelectedRow() ;
     private:
@@ -23,6 +24,7 @@ namespace widgetassertions
     int MyElementsTableSelectedRow;
     bool isMyElementsTableVisible;
     bool isMyElementsTableEnabled;
+    bool isDescriptionTableColumnVisible;
     std::vector<std::shared_ptr<TableViews_ViewMyStringRowHandlesRow>> MyStringRowHandlesTableRows;
     std::string MyStringRowHandlesTableSelectedRow;
   };

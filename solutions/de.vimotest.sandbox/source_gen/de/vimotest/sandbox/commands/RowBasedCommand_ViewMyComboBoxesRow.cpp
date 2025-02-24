@@ -6,10 +6,6 @@
 
 namespace commands
 {
-  std::string RowBasedCommand_ViewMyComboBoxesRow::getFreeTextComboBoxesTableColumnText( ) 
-  {
-    return this->FreeTextComboBoxesTableColumnText;
-  }
   std::vector<std::string> RowBasedCommand_ViewMyComboBoxesRow::getFreeTextComboBoxesComboBoxEntries( ) 
   {
     return this->FreeTextComboBoxesComboBoxEntries;
@@ -21,10 +17,6 @@ namespace commands
   std::string RowBasedCommand_ViewMyComboBoxesRow::getFreeTextComboBoxesComboBoxText( ) 
   {
     return this->FreeTextComboBoxesComboBoxText;
-  }
-  std::string RowBasedCommand_ViewMyComboBoxesRow::getEntryComboBoxesTableColumnText( ) 
-  {
-    return this->EntryComboBoxesTableColumnText;
   }
   std::vector<std::string> RowBasedCommand_ViewMyComboBoxesRow::getEntryComboBoxesComboBoxEntries( ) 
   {

@@ -4,33 +4,17 @@ package de.vimotest.sandbox.widgetassertions;
 
 
 public class TableViews_ViewMyElementsRow {
-  private String IncludeTableColumnText;
-  public String getIncludeTableColumnText() {
-    return this.IncludeTableColumnText;
-  }
   private Boolean isIncludeCheckBoxChecked;
   public Boolean getIsIncludeCheckBoxChecked() {
     return this.isIncludeCheckBoxChecked;
-  }
-  private String NameTableColumnText;
-  public String getNameTableColumnText() {
-    return this.NameTableColumnText;
   }
   private String NameLabelText;
   public String getNameLabelText() {
     return this.NameLabelText;
   }
-  private String DescriptionTableColumnText;
-  public String getDescriptionTableColumnText() {
-    return this.DescriptionTableColumnText;
-  }
   private String DescriptionLabelText;
   public String getDescriptionLabelText() {
     return this.DescriptionLabelText;
-  }
-  private String InfoIconTableColumnText;
-  public String getInfoIconTableColumnText() {
-    return this.InfoIconTableColumnText;
   }
   private String InfoIconImageName;
   public String getInfoIconImageName() {

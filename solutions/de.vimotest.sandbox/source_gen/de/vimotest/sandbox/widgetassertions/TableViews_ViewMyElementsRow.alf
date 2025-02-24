@@ -4,22 +4,10 @@ namespace widgetassertions ;
 
 class TableViews_ViewMyElementsRow {
   
-  private IncludeTableColumnText : String  ;
-  
-  public getIncludeTableColumnText (  ) : String  {
-  return this.IncludeTableColumnText;
- }
-  
   private isIncludeCheckBoxChecked : Boolean  ;
   
   public getIsIncludeCheckBoxChecked (  ) : Boolean  {
   return this.isIncludeCheckBoxChecked;
- }
-  
-  private NameTableColumnText : String  ;
-  
-  public getNameTableColumnText (  ) : String  {
-  return this.NameTableColumnText;
  }
   
   private NameLabelText : String  ;
@@ -28,22 +16,10 @@ class TableViews_ViewMyElementsRow {
   return this.NameLabelText;
  }
   
-  private DescriptionTableColumnText : String  ;
-  
-  public getDescriptionTableColumnText (  ) : String  {
-  return this.DescriptionTableColumnText;
- }
-  
   private DescriptionLabelText : String  ;
   
   public getDescriptionLabelText (  ) : String  {
   return this.DescriptionLabelText;
- }
-  
-  private InfoIconTableColumnText : String  ;
-  
-  public getInfoIconTableColumnText (  ) : String  {
-  return this.InfoIconTableColumnText;
  }
   
   private InfoIconImageName : String  ;

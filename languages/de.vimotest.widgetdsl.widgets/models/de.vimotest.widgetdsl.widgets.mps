@@ -201,7 +201,6 @@
       <property role="2SiFfI" value="tree column" />
       <property role="i96k9" value="true" />
       <node concept="2WVz4l" id="5Pt$ekxgG_k" role="2WV$Zc">
-        <property role="3dRBvX" value="true" />
         <ref role="2WVz4k" node="7H4Lpx0an3A" resolve="Text" />
       </node>
       <node concept="2WVz4l" id="5Pt$ekxgG_l" role="2WV$Zc">
@@ -248,7 +247,6 @@
       <property role="2SiFfI" value="table column" />
       <property role="i96k9" value="true" />
       <node concept="2WVz4l" id="q9OOkGQaJB" role="2WV$Zc">
-        <property role="3dRBvX" value="true" />
         <ref role="2WVz4k" node="7H4Lpx0an3A" resolve="Text" />
       </node>
       <node concept="2WVz4l" id="q9OOkGw2yf" role="2WV$Zc">

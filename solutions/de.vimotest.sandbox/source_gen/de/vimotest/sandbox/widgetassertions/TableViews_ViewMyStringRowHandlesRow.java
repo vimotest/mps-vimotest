@@ -4,10 +4,6 @@ package de.vimotest.sandbox.widgetassertions;
 
 
 public class TableViews_ViewMyStringRowHandlesRow {
-  private String ValuesTableColumnText;
-  public String getValuesTableColumnText() {
-    return this.ValuesTableColumnText;
-  }
   private String ValuesLabelText;
   public String getValuesLabelText() {
     return this.ValuesLabelText;

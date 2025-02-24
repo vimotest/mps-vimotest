@@ -5,10 +5,6 @@
 
 namespace commands
 {
-  std::string SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow::getColumnCellTableColumnText( ) 
-  {
-    return this->columnCellTableColumnText;
-  }
   std::string SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow::getColumnCellLabelText( ) 
   {
     return this->columnCellLabelText;

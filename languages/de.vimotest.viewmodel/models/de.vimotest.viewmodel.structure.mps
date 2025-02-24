@@ -674,6 +674,9 @@
     <node concept="PrWs8" id="30uXY1Shcgi" role="PzmwI">
       <ref role="PrY4T" node="30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
     </node>
+    <node concept="PrWs8" id="5tPiafuqYze" role="PzmwI">
+      <ref role="PrY4T" node="5LG6vEN6pdB" resolve="IViewWidgetComposite" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2zlSkwD9nfw">
     <property role="EcuMT" value="2942505631600702432" />
@@ -759,6 +762,9 @@
     </node>
     <node concept="PrWs8" id="30uXY1Shcgh" role="PzmwI">
       <ref role="PrY4T" node="30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
+    </node>
+    <node concept="PrWs8" id="5tPiafuqYzf" role="PzmwI">
+      <ref role="PrY4T" node="5LG6vEN6pdB" resolve="IViewWidgetComposite" />
     </node>
   </node>
   <node concept="PlHQZ" id="24MyZrrSND$">

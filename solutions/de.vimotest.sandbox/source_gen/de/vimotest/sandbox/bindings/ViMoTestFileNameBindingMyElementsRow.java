@@ -4,10 +4,6 @@ package de.vimotest.sandbox.bindings;
 
 
 public class ViMoTestFileNameBindingMyElementsRow {
-  private String columnCellTableColumnText;
-  public String getColumnCellTableColumnText() {
-    return this.columnCellTableColumnText;
-  }
   private String columnCellLabelText;
   public String getColumnCellLabelText() {
     return this.columnCellLabelText;

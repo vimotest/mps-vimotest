@@ -81,7 +81,7 @@ namespace widgetassertions
     EXPECT_EQ(1, this->sut->getMyTreeViewElementsTreeSelectedRow());
     EXPECT_TRUE(this->sut->getIsMyTreeViewElementsTreeEnabled());
     EXPECT_TRUE(this->sut->getIsMyTreeViewElementsTreeVisible());
-    EXPECT_FALSE(this->sut->getIsDescriptionTreeColumnVisible());
+    EXPECT_FALSE(this->sut->getIsMyTreeViewElementsTreeDescriptionColumnVisible());
   }
   void TreeViews_ViewTest::then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1( ) 
   {

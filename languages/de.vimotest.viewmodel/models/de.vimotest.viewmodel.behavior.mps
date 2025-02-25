@@ -7983,7 +7983,7 @@
     <ref role="13h7C2" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
     <node concept="13i0hz" id="6RKU0s3M2ca" role="13h7CS">
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="getWidgetDisplayName" />
+      <property role="TrG5h" value="getWidgetFeatureDisplayName" />
       <node concept="3Tm1VV" id="6RKU0s3M2cb" role="1B3o_S" />
       <node concept="17QB3L" id="6RKU0s3M2cu" role="3clF45" />
       <node concept="3clFbS" id="6RKU0s3M2cd" role="3clF47">
@@ -9231,7 +9231,7 @@
       <node concept="3clFbS" id="6RKU0s3M5HB" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="6RKU0s3M5U1" role="13h7CS">
-      <property role="TrG5h" value="getWidgetDisplayName" />
+      <property role="TrG5h" value="getWidgetFeatureDisplayName" />
       <ref role="13i0hy" node="6RKU0s3M2ca" resolve="getWidgetDisplayName" />
       <node concept="3Tm1VV" id="6RKU0s3M5U2" role="1B3o_S" />
       <node concept="3clFbS" id="6RKU0s3M5Ub" role="3clF47">
@@ -9900,6 +9900,48 @@
       <node concept="A3Dl8" id="1mmsj6y05O2" role="3clF45">
         <node concept="17QB3L" id="1mmsj6y05O3" role="A3Ik2" />
       </node>
+    </node>
+    <node concept="13i0hz" id="4PSlizivGeM" role="13h7CS">
+      <property role="TrG5h" value="shouldPrefixParentWidgetNameForGeneration" />
+      <ref role="13i0hy" node="4PSlizivFib" resolve="shouldPrefixParentWidgetNameForGeneration" />
+      <node concept="3Tm1VV" id="4PSlizivGeN" role="1B3o_S" />
+      <node concept="3clFbS" id="4PSlizivGeS" role="3clF47">
+        <node concept="3SKdUt" id="4PSlizivGSP" role="3cqZAp">
+          <node concept="1PaTwC" id="4PSlizivGSQ" role="1aUNEU">
+            <node concept="3oM_SD" id="4PSlizivGSR" role="1PaTwD">
+              <property role="3oM_SC" value="RadioButtonGroup" />
+            </node>
+            <node concept="3oM_SD" id="4PSlizivGTi" role="1PaTwD">
+              <property role="3oM_SC" value="&lt;XY&gt;" />
+            </node>
+            <node concept="3oM_SD" id="4PSlizivGUO" role="1PaTwD">
+              <property role="3oM_SC" value="RadioButton" />
+            </node>
+            <node concept="3oM_SD" id="4PSlizivGV5" role="1PaTwD">
+              <property role="3oM_SC" value="sounds" />
+            </node>
+            <node concept="3oM_SD" id="4PSlizivGVQ" role="1PaTwD">
+              <property role="3oM_SC" value="weird," />
+            </node>
+            <node concept="3oM_SD" id="4PSlizivGVR" role="1PaTwD">
+              <property role="3oM_SC" value="so" />
+            </node>
+            <node concept="3oM_SD" id="4PSlizivGVS" role="1PaTwD">
+              <property role="3oM_SC" value="keep" />
+            </node>
+            <node concept="3oM_SD" id="4PSlizivGW9" role="1PaTwD">
+              <property role="3oM_SC" value="only" />
+            </node>
+            <node concept="3oM_SD" id="4PSlizivGWU" role="1PaTwD">
+              <property role="3oM_SC" value="RadioButton" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4PSlizivGB2" role="3cqZAp">
+          <node concept="3clFbT" id="4PSlizivGB1" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="10P_77" id="4PSlizivGeT" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="7NXUkdRspnt">
@@ -10722,6 +10764,19 @@
         <ref role="ehGHo" to="at53:F907haLIRF" resolve="ViewWidget" />
       </node>
     </node>
+    <node concept="13i0hz" id="4PSlizhZhBn" role="13h7CS">
+      <property role="TrG5h" value="getWidgetNameSuffix" />
+      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetNameSuffix" />
+      <node concept="3Tm1VV" id="4PSlizhZhBo" role="1B3o_S" />
+      <node concept="3clFbS" id="4PSlizhZhBp" role="3clF47">
+        <node concept="3clFbF" id="4PSlizhZhBq" role="3cqZAp">
+          <node concept="Xl_RD" id="4PSlizhZhBr" role="3clFbG">
+            <property role="Xl_RC" value="Column" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4PSlizhZhBs" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="q9OOkGQoXF">
     <property role="3GE5qa" value="widgets.structures.column" />
@@ -10838,6 +10893,39 @@
         </node>
       </node>
       <node concept="10P_77" id="5Pt$ekxgGA7" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="4PSlizhZ0_9" role="13h7CS">
+      <property role="TrG5h" value="getWidgetNameSuffix" />
+      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetNameSuffix" />
+      <node concept="3Tm1VV" id="4PSlizhZ0_a" role="1B3o_S" />
+      <node concept="3clFbS" id="4PSlizhZ0_k" role="3clF47">
+        <node concept="3clFbF" id="4PSlizhZetv" role="3cqZAp">
+          <node concept="Xl_RD" id="4PSlizhZeLO" role="3clFbG">
+            <property role="Xl_RC" value="Column" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4PSlizhZ0_l" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="4PSlizivFhS">
+    <property role="3GE5qa" value="widgets.util" />
+    <ref role="13h7C2" to="at53:5Pt$ekwduj6" resolve="SubComponentViewWidget" />
+    <node concept="13i0hz" id="4PSlizivFib" role="13h7CS">
+      <property role="TrG5h" value="shouldPrefixParentWidgetNameForGeneration" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="4PSlizivFic" role="1B3o_S" />
+      <node concept="10P_77" id="4PSlizivFiv" role="3clF45" />
+      <node concept="3clFbS" id="4PSlizivFie" role="3clF47">
+        <node concept="3clFbF" id="4PSlizivFjy" role="3cqZAp">
+          <node concept="3clFbT" id="4PSlizivFjx" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="4PSlizivFhT" role="13h7CW">
+      <node concept="3clFbS" id="4PSlizivFhU" role="2VODD2" />
     </node>
   </node>
 </model>

@@ -18,7 +18,7 @@ namespace widgetassertions
     virtual bool getIsMyTreeViewElementsTreeVisible() ;
     virtual bool getIsMyTreeViewElementsTreeEnabled() ;
     virtual std::vector<std::shared_ptr<TreeViews_ViewMyTreeViewElementsRow>> getMyTreeViewElementsTreeRows() ;
-    virtual bool getIsDescriptionTreeColumnVisible() ;
+    virtual bool getIsMyTreeViewElementsTreeDescriptionColumnVisible() ;
     virtual std::vector<std::shared_ptr<TreeViews_ViewMyStringRowHandlesRow>> getMyStringRowHandlesTreeRows() ;
     virtual std::string getMyStringRowHandlesTreeSelectedRow() ;
     virtual std::vector<std::shared_ptr<TreeViews_ViewMyParentIndexRowHandlesRow>> getMyParentIndexRowHandlesTreeRows() ;
@@ -28,7 +28,7 @@ namespace widgetassertions
     bool isMyTreeViewElementsTreeVisible;
     bool isMyTreeViewElementsTreeEnabled;
     std::vector<std::shared_ptr<TreeViews_ViewMyTreeViewElementsRow>> MyTreeViewElementsTreeRows;
-    bool isDescriptionTreeColumnVisible;
+    bool isMyTreeViewElementsTreeDescriptionColumnVisible;
     std::vector<std::shared_ptr<TreeViews_ViewMyStringRowHandlesRow>> MyStringRowHandlesTreeRows;
     std::string MyStringRowHandlesTreeSelectedRow;
     std::vector<std::shared_ptr<TreeViews_ViewMyParentIndexRowHandlesRow>> MyParentIndexRowHandlesTreeRows;

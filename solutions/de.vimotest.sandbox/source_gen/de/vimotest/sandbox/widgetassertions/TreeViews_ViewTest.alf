@@ -71,7 +71,7 @@ class TreeViews_ViewTest {
    AssertEqual ( 1, this.sut.getMyTreeViewElementsTreeSelectedRow (  ) );
    AssertTrue ( this.sut.getIsMyTreeViewElementsTreeEnabled (  ) );
    AssertTrue ( this.sut.getIsMyTreeViewElementsTreeVisible (  ) );
-   AssertFalse ( this.sut.getIsDescriptionTreeColumnVisible (  ) );
+   AssertFalse ( this.sut.getIsMyTreeViewElementsTreeDescriptionColumnVisible (  ) );
  }
   
   public then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  ) {

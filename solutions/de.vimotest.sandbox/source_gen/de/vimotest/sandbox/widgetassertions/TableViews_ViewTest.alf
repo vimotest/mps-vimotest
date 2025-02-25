@@ -67,7 +67,7 @@ class TableViews_ViewTest {
    AssertEqual ( 1, this.sut.getMyElementsTableSelectedRow (  ) );
    AssertTrue ( this.sut.getIsMyElementsTableVisible (  ) );
    AssertTrue ( this.sut.getIsMyElementsTableEnabled (  ) );
-   AssertFalse ( this.sut.getIsDescriptionTableColumnVisible (  ) );
+   AssertFalse ( this.sut.getIsMyElementsTableDescriptionColumnVisible (  ) );
  }
   
   public then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  ) {

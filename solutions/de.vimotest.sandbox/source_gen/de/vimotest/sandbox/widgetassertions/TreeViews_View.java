@@ -22,9 +22,9 @@ public class TreeViews_View {
   public List<TreeViews_ViewMyTreeViewElementsRow> getMyTreeViewElementsTreeRows() {
     return this.MyTreeViewElementsTreeRows;
   }
-  private Boolean isDescriptionTreeColumnVisible;
-  public Boolean getIsDescriptionTreeColumnVisible() {
-    return this.isDescriptionTreeColumnVisible;
+  private Boolean isMyTreeViewElementsTreeDescriptionColumnVisible;
+  public Boolean getIsMyTreeViewElementsTreeDescriptionColumnVisible() {
+    return this.isMyTreeViewElementsTreeDescriptionColumnVisible;
   }
   private List<TreeViews_ViewMyStringRowHandlesRow> MyStringRowHandlesTreeRows = new LinkedList<>();
   public List<TreeViews_ViewMyStringRowHandlesRow> getMyStringRowHandlesTreeRows() {

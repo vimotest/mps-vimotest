@@ -70,7 +70,7 @@ public class TableViews_ViewTest_Test {
     Assert.assertEquals(Integer.valueOf(this.sut.getMyElementsTableSelectedRow()), this.sut.getMyElementsTableSelectedRow());
     Assert.assertTrue(this.sut.getIsMyElementsTableVisible());
     Assert.assertTrue(this.sut.getIsMyElementsTableEnabled());
-    Assert.assertFalse(this.sut.getIsDescriptionTableColumnVisible());
+    Assert.assertFalse(this.sut.getIsMyElementsTableDescriptionColumnVisible());
   }
   public void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() {
     List<TableViews_ViewMyStringRowHandlesRow> actualRows = this.sut.getMyStringRowHandlesTableRows();

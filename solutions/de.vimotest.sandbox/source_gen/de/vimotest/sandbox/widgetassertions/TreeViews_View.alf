@@ -28,10 +28,10 @@ class TreeViews_View {
   return this.MyTreeViewElementsTreeRows;
  }
   
-  private isDescriptionTreeColumnVisible : Boolean  ;
+  private isMyTreeViewElementsTreeDescriptionColumnVisible : Boolean  ;
   
-  public getIsDescriptionTreeColumnVisible (  ) : Boolean  {
-  return this.isDescriptionTreeColumnVisible;
+  public getIsMyTreeViewElementsTreeDescriptionColumnVisible (  ) : Boolean  {
+  return this.isMyTreeViewElementsTreeDescriptionColumnVisible;
  }
   
   private MyStringRowHandlesTreeRows : TreeViews_ViewMyStringRowHandlesRow [ * ]  ;

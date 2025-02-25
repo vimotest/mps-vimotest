@@ -73,7 +73,7 @@ namespace widgetassertions
     EXPECT_EQ(1, this->sut->getMyElementsTableSelectedRow());
     EXPECT_TRUE(this->sut->getIsMyElementsTableVisible());
     EXPECT_TRUE(this->sut->getIsMyElementsTableEnabled());
-    EXPECT_FALSE(this->sut->getIsDescriptionTableColumnVisible());
+    EXPECT_FALSE(this->sut->getIsMyElementsTableDescriptionColumnVisible());
   }
   void TableViews_ViewTest::then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1( ) 
   {

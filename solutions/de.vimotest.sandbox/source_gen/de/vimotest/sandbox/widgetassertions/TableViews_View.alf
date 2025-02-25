@@ -28,10 +28,10 @@ class TableViews_View {
   return this.isMyElementsTableEnabled;
  }
   
-  private isDescriptionTableColumnVisible : Boolean  ;
+  private isMyElementsTableDescriptionColumnVisible : Boolean  ;
   
-  public getIsDescriptionTableColumnVisible (  ) : Boolean  {
-  return this.isDescriptionTableColumnVisible;
+  public getIsMyElementsTableDescriptionColumnVisible (  ) : Boolean  {
+  return this.isMyElementsTableDescriptionColumnVisible;
  }
   
   private MyStringRowHandlesTableRows : TableViews_ViewMyStringRowHandlesRow [ * ]  ;

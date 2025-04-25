@@ -1226,7 +1226,7 @@
                 <node concept="2pJPED" id="7ceEXPSz50Z" role="2pJPEn">
                   <ref role="2pJxaS" to="28lk:2kuSLC0oTxk" resolve="NameBinding" />
                   <node concept="2pIpSj" id="7ceEXPSz510" role="2pJxcM">
-                    <ref role="2pIpSl" to="28lk:3m3bKNZGB$m" />
+                    <ref role="2pIpSl" to="28lk:3m3bKNZGB$m" resolve="nameRef" />
                     <node concept="36bGnv" id="7ceEXPSz511" role="28nt2d">
                       <ref role="36bGnp" to="hsxa:37zNn5KVoSC" resolve="AssertTrue" />
                     </node>
@@ -1240,7 +1240,7 @@
                 <node concept="2pJPED" id="7ceEXPSz514" role="2pJPEn">
                   <ref role="2pJxaS" to="28lk:2kuSLC0oTxk" resolve="NameBinding" />
                   <node concept="2pIpSj" id="7ceEXPSz515" role="2pJxcM">
-                    <ref role="2pIpSl" to="28lk:3m3bKNZGB$m" />
+                    <ref role="2pIpSl" to="28lk:3m3bKNZGB$m" resolve="nameRef" />
                     <node concept="36bGnv" id="7ceEXPSz516" role="28nt2d">
                       <ref role="36bGnp" to="hsxa:37zNn5KVoUd" resolve="AssertFalse" />
                     </node>
@@ -1256,7 +1256,7 @@
               <ref role="3cqZAo" node="7ceEXPSz50W" resolve="ref" />
             </node>
             <node concept="3TrEf2" id="7ceEXPSz5mC" role="2OqNvi">
-              <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" />
+              <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" resolve="nameRef" />
             </node>
           </node>
         </node>

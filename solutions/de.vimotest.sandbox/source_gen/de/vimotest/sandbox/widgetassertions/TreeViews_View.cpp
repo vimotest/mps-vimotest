@@ -27,6 +27,10 @@ namespace widgetassertions
   {
     return this->MyTreeViewElementsTreeRows;
   }
+  bool TreeViews_View::getIsMyTreeViewElementsTreeDescriptionColumnVisible( ) 
+  {
+    return this->isMyTreeViewElementsTreeDescriptionColumnVisible;
+  }
   std::vector<std::shared_ptr<TreeViews_ViewMyStringRowHandlesRow>> TreeViews_View::getMyStringRowHandlesTreeRows( ) 
   {
     return this->MyStringRowHandlesTreeRows;

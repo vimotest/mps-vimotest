@@ -4,12 +4,13 @@
   <languages>
     <use id="611ecc9e-0703-4ab9-a13c-fb396c607716" name="de.vimotest.types" version="0" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -41,7 +42,9 @@
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -626,12 +629,20 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2lm5WNlbZLg" resolve="WidgetTreeRowsFeature" />
     </node>
+    <node concept="1TJgyj" id="5Pt$ekxTRbn" role="1TKVEi">
+      <property role="IQ2ns" value="6727692732152115927" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="treeColumnWidgets" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5Pt$ekxgG_n" resolve="TreeColumnWidget" />
+    </node>
     <node concept="1TJgyj" id="7uPLQmTQNM" role="1TKVEi">
       <property role="IQ2ns" value="134781560953466098" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="columnsFeature" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20kJfa" value="columnsFeature_old" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7uPLQmTOoE" resolve="ColumnDefinition" />
+      <node concept="asaX9" id="5Pt$ekxTRbo" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="K_fAvR3LCR" role="1TKVEi">
       <property role="IQ2ns" value="875174318840945207" />
@@ -663,10 +674,13 @@
     <node concept="PrWs8" id="30uXY1Shcgi" role="PzmwI">
       <ref role="PrY4T" node="30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
     </node>
+    <node concept="PrWs8" id="5tPiafuqYze" role="PzmwI">
+      <ref role="PrY4T" node="5LG6vEN6pdB" resolve="IViewWidgetComposite" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2zlSkwD9nfw">
     <property role="EcuMT" value="2942505631600702432" />
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="widgets.structures.row" />
     <property role="TrG5h" value="ITreeRow" />
     <node concept="PrWs8" id="24MyZrrSPcH" role="PrDN$">
       <ref role="PrY4T" node="24MyZrrSND$" resolve="ITableRow" />
@@ -674,7 +688,7 @@
   </node>
   <node concept="1TIwiD" id="7uPLQmTOoE">
     <property role="EcuMT" value="134781560953456170" />
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="widgets.structures.column" />
     <property role="TrG5h" value="ColumnDefinition" />
     <property role="34LRSv" value="column" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -685,10 +699,8 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="F907haLIRF" resolve="ViewWidget" />
     </node>
-    <node concept="1TJgyi" id="7uPLQmTPAc" role="1TKVEl">
-      <property role="IQ2nx" value="134781560953461132" />
-      <property role="TrG5h" value="header" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="PrWs8" id="q9OOkGQp1v" role="PzmwI">
+      <ref role="PrY4T" node="q9OOkGQoXE" resolve="ITableColumn" />
     </node>
   </node>
   <node concept="1TIwiD" id="24MyZrrRA67">
@@ -704,12 +716,22 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2lm5WNlbZLh" resolve="WidgetTableRowsFeature" />
     </node>
+    <node concept="1TJgyj" id="q9OOkGw2Dh" role="1TKVEi">
+      <property role="IQ2ns" value="471139930089728593" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="tableColumnWidgets" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="q9OOkGw2yi" resolve="TableColumnWidget" />
+    </node>
     <node concept="1TJgyj" id="4Ips5F1549y" role="1TKVEi">
       <property role="IQ2ns" value="5447508759370023522" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="columnsFeature" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20kJfa" value="columnDefinitions_old" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7uPLQmTOoE" resolve="ColumnDefinition" />
+      <node concept="asaX9" id="q9OOkGQaJA" role="lGtFl">
+        <property role="YLQ7P" value="Replaced by tableColumnWidgets" />
+      </node>
     </node>
     <node concept="1TJgyj" id="24MyZrrRA69" role="1TKVEi">
       <property role="IQ2ns" value="2392128244454154633" />
@@ -741,15 +763,18 @@
     <node concept="PrWs8" id="30uXY1Shcgh" role="PzmwI">
       <ref role="PrY4T" node="30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
     </node>
+    <node concept="PrWs8" id="5tPiafuqYzf" role="PzmwI">
+      <ref role="PrY4T" node="5LG6vEN6pdB" resolve="IViewWidgetComposite" />
+    </node>
   </node>
   <node concept="PlHQZ" id="24MyZrrSND$">
     <property role="EcuMT" value="2392128244454472292" />
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="widgets.structures.row" />
     <property role="TrG5h" value="ITableRow" />
   </node>
   <node concept="PlHQZ" id="30uXY1Sh9ET">
     <property role="EcuMT" value="3467481306584357561" />
-    <property role="3GE5qa" value="widgets.structures.util" />
+    <property role="3GE5qa" value="widgets.structures.row" />
     <property role="TrG5h" value="IRowBasedViewWidget" />
     <node concept="1TJgyj" id="5C8UTa3RDG2" role="1TKVEi">
       <property role="IQ2ns" value="6487694277737356034" />
@@ -1433,7 +1458,7 @@
     <property role="TrG5h" value="RadioButtonWidget" />
     <property role="34LRSv" value="radio button" />
     <property role="3GE5qa" value="widgets.choices" />
-    <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
+    <ref role="1TJDcQ" node="5Pt$ekwduj6" resolve="SubComponentViewWidget" />
     <node concept="1TJgyj" id="7NXUkdPQshL" role="1TKVEi">
       <property role="IQ2ns" value="9006611305760146545" />
       <property role="20kJfa" value="visibilityFeature" />
@@ -1527,6 +1552,71 @@
     <property role="EcuMT" value="6659726513511437159" />
     <property role="3GE5qa" value="widgets.util" />
     <property role="TrG5h" value="IViewWidgetComposite" />
+  </node>
+  <node concept="1TIwiD" id="q9OOkGw2yi">
+    <property role="EcuMT" value="471139930089728146" />
+    <property role="TrG5h" value="TableColumnWidget" />
+    <property role="34LRSv" value="table column" />
+    <property role="3GE5qa" value="widgets.structures.column" />
+    <ref role="1TJDcQ" node="5Pt$ekwduj6" resolve="SubComponentViewWidget" />
+    <node concept="1TJgyj" id="q9OOkGw2yj" role="1TKVEi">
+      <property role="IQ2ns" value="471139930089728147" />
+      <property role="20kJfa" value="textFeature" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7H4Lpx0iNpu" resolve="TextFeature" />
+      <node concept="t5JxF" id="q9OOkGQb1t" role="lGtFl">
+        <property role="t5JxN" value="Column Header" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="q9OOkGQb1s" role="1TKVEi">
+      <property role="IQ2ns" value="471139930095530076" />
+      <property role="20kJfa" value="visibilityFeature" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4SDJcZBNVBT" resolve="VisibilityFeature" />
+    </node>
+    <node concept="1TJgyj" id="q9OOkGw2yk" role="1TKVEi">
+      <property role="IQ2ns" value="471139930089728148" />
+      <property role="20kJfa" value="enabledFeature" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4SDJcZBNVBU" resolve="EnabledFeature" />
+    </node>
+    <node concept="1TJgyj" id="q9OOkGQqmU" role="1TKVEi">
+      <property role="IQ2ns" value="471139930095592890" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="widgetType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="F907haLIRF" resolve="ViewWidget" />
+    </node>
+    <node concept="PrWs8" id="q9OOkGQqmS" role="PzmwI">
+      <ref role="PrY4T" node="q9OOkGQoXE" resolve="ITableColumn" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="q9OOkGQoXE">
+    <property role="EcuMT" value="471139930095587178" />
+    <property role="3GE5qa" value="widgets.structures.column" />
+    <property role="TrG5h" value="ITableColumn" />
+    <node concept="1TJgyi" id="7uPLQmTPAc" role="1TKVEl">
+      <property role="IQ2nx" value="134781560953461132" />
+      <property role="TrG5h" value="header" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5Pt$ekwduj6">
+    <property role="EcuMT" value="6727692732123702470" />
+    <property role="3GE5qa" value="widgets.util" />
+    <property role="TrG5h" value="SubComponentViewWidget" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
+  </node>
+  <node concept="1TIwiD" id="5Pt$ekxgG_n">
+    <property role="EcuMT" value="6727692732141324631" />
+    <property role="TrG5h" value="TreeColumnWidget" />
+    <property role="34LRSv" value="tree column" />
+    <property role="3GE5qa" value="widgets.structures.column" />
+    <ref role="1TJDcQ" node="q9OOkGw2yi" resolve="TableColumnWidget" />
   </node>
 </model>
 

@@ -22,6 +22,10 @@ public class TableViews_View {
   public Boolean getIsMyElementsTableEnabled() {
     return this.isMyElementsTableEnabled;
   }
+  private Boolean isMyElementsTableDescriptionColumnVisible;
+  public Boolean getIsMyElementsTableDescriptionColumnVisible() {
+    return this.isMyElementsTableDescriptionColumnVisible;
+  }
   private List<TableViews_ViewMyStringRowHandlesRow> MyStringRowHandlesTableRows = new LinkedList<>();
   public List<TableViews_ViewMyStringRowHandlesRow> getMyStringRowHandlesTableRows() {
     return this.MyStringRowHandlesTableRows;

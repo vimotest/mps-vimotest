@@ -6,7 +6,7 @@
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
-    <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing" version="0" />
+    <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing" version="1" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -3351,7 +3351,7 @@
                       <node concept="3y3z36" id="7wIkOM95arr" role="1gVkn0">
                         <node concept="10Nm6u" id="7wIkOM95ars" role="3uHU7w" />
                         <node concept="37vLTw" id="7wIkOM95art" role="3uHU7B">
-                          <ref role="3cqZAo" node="7wIkOM95arc" resolve="entry" />
+                          <ref role="3cqZAo" node="7wIkOM95arc" resolve="radioButton" />
                         </node>
                       </node>
                       <node concept="3cpWs3" id="7wIkOM95aru" role="1gVpfI">
@@ -3370,9 +3370,9 @@
                       <node concept="2OqwBi" id="7wIkOM95ar$" role="3clFbG">
                         <node concept="1iwH7S" id="7wIkOM95ar_" role="2Oq$k0" />
                         <node concept="1iwH70" id="7wIkOM95arA" role="2OqNvi">
-                          <ref role="1iwH77" to="qhqb:3jx7Ki5HoT" resolve="ChoiceEntry_EnumerationLiteral" />
+                          <ref role="1iwH77" to="qhqb:3jx7Ki5HoT" resolve="RadioButtonWidget_EnumerationLiteral" />
                           <node concept="37vLTw" id="7wIkOM95arB" role="1iwH7V">
-                            <ref role="3cqZAo" node="7wIkOM95arc" resolve="entry" />
+                            <ref role="3cqZAo" node="7wIkOM95arc" resolve="radioButton" />
                           </node>
                         </node>
                       </node>
@@ -4456,7 +4456,7 @@
                             <node concept="3y3z36" id="7wIkOM9hoGB" role="1gVkn0">
                               <node concept="10Nm6u" id="7wIkOM9hoGC" role="3uHU7w" />
                               <node concept="37vLTw" id="7wIkOM9hoGD" role="3uHU7B">
-                                <ref role="3cqZAo" node="7wIkOM9hoGo" resolve="entry" />
+                                <ref role="3cqZAo" node="7wIkOM9hoGo" resolve="radioButton" />
                               </node>
                             </node>
                             <node concept="3cpWs3" id="7wIkOM9hoGE" role="1gVpfI">
@@ -4475,9 +4475,9 @@
                             <node concept="2OqwBi" id="7wIkOM9hoGK" role="3clFbG">
                               <node concept="1iwH7S" id="7wIkOM9hoGL" role="2Oq$k0" />
                               <node concept="1iwH70" id="7wIkOM9hoGM" role="2OqNvi">
-                                <ref role="1iwH77" to="qhqb:3jx7Ki5HoT" resolve="ChoiceEntry_EnumerationLiteral" />
+                                <ref role="1iwH77" to="qhqb:3jx7Ki5HoT" resolve="RadioButtonWidget_EnumerationLiteral" />
                                 <node concept="37vLTw" id="7wIkOM9hoGN" role="1iwH7V">
-                                  <ref role="3cqZAo" node="7wIkOM9hoGo" resolve="entry" />
+                                  <ref role="3cqZAo" node="7wIkOM9hoGo" resolve="radioButton" />
                                 </node>
                               </node>
                             </node>
@@ -6253,7 +6253,7 @@
                   <property role="TrG5h" value="testAssertion" />
                 </node>
                 <node concept="37vLTw" id="P0m5w1mGgn" role="2GsD0m">
-                  <ref role="3cqZAo" node="P0m5w1mGfR" resolve="allRelatedTestContexts" />
+                  <ref role="3cqZAo" node="P0m5w1mGfR" resolve="allRelatedTestAssertions" />
                 </node>
                 <node concept="3clFbS" id="P0m5w1mGgo" role="2LFqv$">
                   <node concept="3cpWs8" id="P0m5w1mGgp" role="3cqZAp">
@@ -6262,10 +6262,10 @@
                       <node concept="17QB3L" id="P0m5w1mGgr" role="1tU5fm" />
                       <node concept="2OqwBi" id="P0m5w1mGgs" role="33vP2m">
                         <node concept="2GrUjf" id="P0m5w1mGgt" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="P0m5w1mGgm" resolve="testContext" />
+                          <ref role="2Gs0qQ" node="P0m5w1mGgm" resolve="testAssertion" />
                         </node>
                         <node concept="2qgKlT" id="P0m5w1mGgu" role="2OqNvi">
-                          <ref role="37wK5l" to="fwln:P0m5w1mQC1" resolve="getTestAssertionType" />
+                          <ref role="37wK5l" to="fwln:P0m5w1mQC1" resolve="getEffectiveTestAssertionTypeName" />
                         </node>
                       </node>
                     </node>
@@ -6291,7 +6291,7 @@
                           </node>
                           <node concept="TSZUe" id="P0m5w1mGgD" role="2OqNvi">
                             <node concept="2GrUjf" id="P0m5w1mGgE" role="25WWJ7">
-                              <ref role="2Gs0qQ" node="P0m5w1mGgm" resolve="testContext" />
+                              <ref role="2Gs0qQ" node="P0m5w1mGgm" resolve="testAssertion" />
                             </node>
                           </node>
                         </node>
@@ -6299,7 +6299,7 @@
                       <node concept="3clFbF" id="P0m5w1mGgF" role="3cqZAp">
                         <node concept="37vLTI" id="P0m5w1mGgG" role="3clFbG">
                           <node concept="2GrUjf" id="P0m5w1mGgH" role="37vLTx">
-                            <ref role="2Gs0qQ" node="P0m5w1mGgm" resolve="testContext" />
+                            <ref role="2Gs0qQ" node="P0m5w1mGgm" resolve="testAssertion" />
                           </node>
                           <node concept="2OqwBi" id="P0m5w1mGgI" role="37vLTJ">
                             <node concept="1iwH7S" id="P0m5w1mGgJ" role="2Oq$k0" />

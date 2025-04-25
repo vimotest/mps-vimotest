@@ -22,10 +22,10 @@ class TreeViews_ViewMyTreeViewElementsRow {
   return this.DescriptionLabelText;
  }
   
-  private InfoIconImageName : String  ;
+  private InfoImageName : String  ;
   
-  public getInfoIconImageName (  ) : String  {
-  return this.InfoIconImageName;
+  public getInfoImageName (  ) : String  {
+  return this.InfoImageName;
  }
   
   private RowIndex : Integer  ;

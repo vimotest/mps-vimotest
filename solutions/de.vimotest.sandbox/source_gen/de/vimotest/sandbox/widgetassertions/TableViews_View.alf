@@ -28,6 +28,12 @@ class TableViews_View {
   return this.isMyElementsTableEnabled;
  }
   
+  private isMyElementsTableDescriptionColumnVisible : Boolean  ;
+  
+  public getIsMyElementsTableDescriptionColumnVisible (  ) : Boolean  {
+  return this.isMyElementsTableDescriptionColumnVisible;
+ }
+  
   private MyStringRowHandlesTableRows : TableViews_ViewMyStringRowHandlesRow [ * ]  ;
   
   public getMyStringRowHandlesTableRows (  ) : TableViews_ViewMyStringRowHandlesRow [ * ]  {

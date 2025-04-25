@@ -15,10 +15,10 @@ class TreeViews_ViewTest {
  }
   
   
-  public My_Scenario_given_empty_context_when_then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1_and_MyParentIndexRowHandles_has_4_rows_and_MyParentStringRowHandles_has_4_rows (  ) {
+  public My_Scenario_given_empty_context_when_then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1_and_MyParentIndexRowHandles_has_4_rows_and_MyParentStringRowHandles_has_4_rows (  ) {
   this.given_empty_context (  );
    this.BuildSut (  );
-   this.then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible (  );
+   this.then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible (  );
    this.then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  );
    this.then_MyParentIndexRowHandles_has_4_rows (  );
    this.then_MyParentStringRowHandles_has_4_rows (  );
@@ -47,7 +47,7 @@ class TreeViews_ViewTest {
   // Then Helper Definitions
 
   
-  public then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible (  ) {
+  public then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible (  ) {
   let actualRows: TreeViews_ViewMyTreeViewElementsRow [] = this.sut.getMyTreeViewElementsTreeRows (  );
    AssertEqual ( 2, actualRows->size (  ) );
    {
@@ -57,7 +57,7 @@ class TreeViews_ViewTest {
    AssertTrue ( row0.getIsIncludeCheckBoxChecked (  ) );
    AssertEqual ( "A", row0.getNameLabelText (  ) );
    AssertEqual ( "B", row0.getDescriptionLabelText (  ) );
-   AssertEqual ( "image_triangle", row0.getInfoIconImageName (  ) );
+   AssertEqual ( "image_triangle", row0.getInfoImageName (  ) );
  }
    {
   let row1: TreeViews_ViewMyTreeViewElementsRow = actualRows[ 2 ];
@@ -66,11 +66,12 @@ class TreeViews_ViewTest {
    AssertFalse ( row1.getIsIncludeCheckBoxChecked (  ) );
    AssertEqual ( "C", row1.getNameLabelText (  ) );
    AssertEqual ( "D", row1.getDescriptionLabelText (  ) );
-   AssertEqual ( "image_circle", row1.getInfoIconImageName (  ) );
+   AssertEqual ( "image_circle", row1.getInfoImageName (  ) );
  }
    AssertEqual ( 1, this.sut.getMyTreeViewElementsTreeSelectedRow (  ) );
    AssertTrue ( this.sut.getIsMyTreeViewElementsTreeEnabled (  ) );
    AssertTrue ( this.sut.getIsMyTreeViewElementsTreeVisible (  ) );
+   AssertFalse ( this.sut.getIsMyTreeViewElementsTreeDescriptionColumnVisible (  ) );
  }
   
   public then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  ) {

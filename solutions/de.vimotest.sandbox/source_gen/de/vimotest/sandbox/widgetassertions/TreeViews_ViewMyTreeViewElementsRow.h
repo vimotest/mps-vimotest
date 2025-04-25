@@ -11,14 +11,14 @@ namespace widgetassertions
     virtual bool getIsIncludeCheckBoxChecked() ;
     virtual std::string getNameLabelText() ;
     virtual std::string getDescriptionLabelText() ;
-    virtual std::string getInfoIconImageName() ;
+    virtual std::string getInfoImageName() ;
     virtual int getRowIndex() ;
     virtual int getRowDepth() ;
     private:
     bool isIncludeCheckBoxChecked;
     std::string NameLabelText;
     std::string DescriptionLabelText;
-    std::string InfoIconImageName;
+    std::string InfoImageName;
     int RowIndex;
     int RowDepth;
   };

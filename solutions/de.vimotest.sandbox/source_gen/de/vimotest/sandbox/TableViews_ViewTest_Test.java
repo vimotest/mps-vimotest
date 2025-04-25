@@ -16,10 +16,10 @@ public class TableViews_ViewTest_Test {
   private TableViews_View sut;
   private TableViews_ViewTestSetup testSetup;
   @Test
-  public void test_My_Scenario_given_empty_context_when_then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() throws Exception {
+  public void test_My_Scenario_given_empty_context_when_then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() throws Exception {
     this.given_empty_context();
     this.BuildSut();
-    this.then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled();
+    this.then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible();
     this.then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1();
   }
   @Test
@@ -48,7 +48,7 @@ public class TableViews_ViewTest_Test {
 
 
 
-  public void then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled() {
+  public void then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible() {
     List<TableViews_ViewMyElementsRow> actualRows = this.sut.getMyElementsTableRows();
     Assert.assertEquals(2, actualRows.size());
     // {
@@ -70,6 +70,7 @@ public class TableViews_ViewTest_Test {
     Assert.assertEquals(Integer.valueOf(this.sut.getMyElementsTableSelectedRow()), this.sut.getMyElementsTableSelectedRow());
     Assert.assertTrue(this.sut.getIsMyElementsTableVisible());
     Assert.assertTrue(this.sut.getIsMyElementsTableEnabled());
+    Assert.assertFalse(this.sut.getIsMyElementsTableDescriptionColumnVisible());
   }
   public void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() {
     List<TableViews_ViewMyStringRowHandlesRow> actualRows = this.sut.getMyStringRowHandlesTableRows();

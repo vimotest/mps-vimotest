@@ -18,7 +18,7 @@ namespace widgetassertions
     std::shared_ptr<TableViews_ViewTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
-    virtual void then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled() ;
+    virtual void then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible() ;
     virtual void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() ;
     virtual void then_MyElements_has_2_rows() ;
     protected:
@@ -29,11 +29,11 @@ namespace widgetassertions
     this->testSetup = std::make_shared<TableViews_ViewTestSetupImpl>();
     this->testSetup->Init();
   }
-  TEST_F(TableViews_ViewTest,  My_Scenario_given_empty_context_when_then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1) 
+  TEST_F(TableViews_ViewTest,  My_Scenario_given_empty_context_when_then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1) 
   {
     this->given_empty_context();
     this->BuildSut();
-    this->then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled();
+    this->then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible();
     this->then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1();
   }
   TEST_F(TableViews_ViewTest,  Table_Ignore_Columns_given_empty_context_when_then_MyElements_has_2_rows) 
@@ -50,7 +50,7 @@ namespace widgetassertions
   {
     
   }
-  void TableViews_ViewTest::then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled( ) 
+  void TableViews_ViewTest::then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible( ) 
   {
     auto& actualRows = this->sut->getMyElementsTableRows();
     EXPECT_EQ(2, actualRows.size());
@@ -73,6 +73,7 @@ namespace widgetassertions
     EXPECT_EQ(1, this->sut->getMyElementsTableSelectedRow());
     EXPECT_TRUE(this->sut->getIsMyElementsTableVisible());
     EXPECT_TRUE(this->sut->getIsMyElementsTableEnabled());
+    EXPECT_FALSE(this->sut->getIsMyElementsTableDescriptionColumnVisible());
   }
   void TableViews_ViewTest::then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1( ) 
   {

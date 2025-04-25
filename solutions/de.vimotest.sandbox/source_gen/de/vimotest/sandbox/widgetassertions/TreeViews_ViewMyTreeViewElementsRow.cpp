@@ -17,9 +17,9 @@ namespace widgetassertions
   {
     return this->DescriptionLabelText;
   }
-  std::string TreeViews_ViewMyTreeViewElementsRow::getInfoIconImageName( ) 
+  std::string TreeViews_ViewMyTreeViewElementsRow::getInfoImageName( ) 
   {
-    return this->InfoIconImageName;
+    return this->InfoImageName;
   }
   int TreeViews_ViewMyTreeViewElementsRow::getRowIndex( ) 
   {

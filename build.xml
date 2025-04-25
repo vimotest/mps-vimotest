@@ -12,6 +12,7 @@
   <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.alfi-build" location="${dependencies_home}" />
   <property name="artifacts.CppBaseLanguage" location="${dependencies_home}" />
+  <property name="artifacts.CsBaseLanguage" location="${dependencies_home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
@@ -751,6 +752,7 @@
       <module namespace="de.vimotest.build" type="solution" uuid="694fa9f8-dbdd-46fd-a9d9-f8f8c27d011b">
         <dependencies>
           <module ref="4b6b1874-7e10-42bc-88e2-7525942dcfc8(CppBaseLanguage.build)" kind="cl" />
+          <module ref="4c997861-1d80-410f-8bda-2feda30a3568(CsBaseLanguage.build)" kind="cl" />
           <module ref="b1005ef7-77b9-4100-a8d1-d289b725faf9(alfi.build)" kind="cl" />
         </dependencies>
         <uses>
@@ -1548,6 +1550,7 @@
       <module namespace="de.vimotest.build" type="solution" uuid="694fa9f8-dbdd-46fd-a9d9-f8f8c27d011b">
         <dependencies>
           <module ref="4b6b1874-7e10-42bc-88e2-7525942dcfc8(CppBaseLanguage.build)" kind="cl" />
+          <module ref="4c997861-1d80-410f-8bda-2feda30a3568(CsBaseLanguage.build)" kind="cl" />
           <module ref="b1005ef7-77b9-4100-a8d1-d289b725faf9(alfi.build)" kind="cl" />
         </dependencies>
         <uses>
@@ -1943,6 +1946,7 @@
     <generate fork="true" logLevel="${mps.ant.log}">      
       <settings refid="m2m-defaults" />
       <plugin path="${artifacts.CppBaseLanguage}/CppBaseLanguage" id="CppBaseLanguage" />
+      <plugin path="${artifacts.CsBaseLanguage}/CsBaseLanguage" id="CsBaseLanguage" />
       <plugin path="${artifacts.alfi-build}/alfi" id="alfi" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
@@ -2732,6 +2736,7 @@
       </src>
       <classpath>
         <fileset file="${artifacts.CppBaseLanguage}/CppBaseLanguage/languages/CppBaseLanguage/CppBaseLanguage.build.jar" />
+        <fileset file="${artifacts.CsBaseLanguage}/CsBaseLanguage/languages/CsBaseLanguage/CsBaseLanguage.build.jar" />
         <fileset file="${artifacts.alfi-build}/alfi/languages/alfi-support/alfi.build.jar" />
       </classpath>
     </javac>
@@ -2936,6 +2941,7 @@
       <library file="${build.layout}/tests/de.vimotest.widgetdsl.jar" />
       
       <plugin id="CppBaseLanguage" path="${artifacts.CppBaseLanguage}/CppBaseLanguage" />
+      <plugin id="CsBaseLanguage" path="${artifacts.CsBaseLanguage}/CsBaseLanguage" />
       <plugin id="alfi" path="${artifacts.alfi-build}/alfi" />
       <plugin id="com.intellij.modules.mps" path="${artifacts.mps}/lib/mps-workbench.jar" />
       <plugin id="jetbrains.mps.build" path="${artifacts.mps}/plugins/mps-build" />

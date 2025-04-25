@@ -7,18 +7,21 @@ class MyCustomRow {
   private RowText : String  ;
   
   public GetRowText (  ) : String  {
-  return this.RowText;
- }
+    return this.RowText;
+
+  }
   
   private handle : Integer  ;
   
   public getHandle (  ) : Integer  {
-  return this.handle;
- }
+    return this.handle;
+
+  }
   
   private level : Integer  ;
   
   public getLevel (  ) : Integer  {
-  return this.level;
- }
+    return this.level;
+
+  }
 }

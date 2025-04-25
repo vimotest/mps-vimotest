@@ -10,26 +10,34 @@ class SelectEntryCommand_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.testSetup = new SelectEntryCommand_ViewTestSetupImpl (  );
-   this.testSetup.Init (  );
- }
+    this.testSetup = new SelectEntryCommand_ViewTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
   
   
   public Select_Entry_Combobox_Call_given_when_select_entry_C_in_MyElements_then_MyElements_has_3_entries_and (  ) {
-  this.BuildSut (  );
-   this.when_select_entry_C_in_MyElements (  );
-   this.then_MyElements_has_3_entries_and (  );
- }
+    this.BuildSut (  );
+
+    this.when_select_entry_C_in_MyElements (  );
+
+    this.then_MyElements_has_3_entries_and (  );
+
+  }
   
   public Select_Entry_RadioButton_Call_given_when_select_entry_B_in_MyOptions_then_ (  ) {
-  this.BuildSut (  );
-   this.when_select_entry_B_in_MyOptions (  );
- }
+    this.BuildSut (  );
+
+    this.when_select_entry_B_in_MyOptions (  );
+
+  }
   
   
   protected BuildSut (  ) {
-  this.sut = this.testSetup.BuildSut (  );
- }
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
   
   
   // Given Helper Definitions
@@ -39,22 +47,30 @@ class SelectEntryCommand_ViewTests {
 
   
   public when_select_entry_C_in_MyElements (  ) {
-  this.sut.myElementsEntrySelected ( "C" );
- }
+    this.sut.myElementsEntrySelected ( "C" );
+
+  }
   
   public when_select_entry_B_in_MyOptions (  ) {
-  this.sut.myOptionsEntrySelected ( B );
- }
+    this.sut.myOptionsEntrySelected ( B );
+
+  }
   
   // Then Helper Definitions
 
   
   public then_MyElements_has_3_entries_and (  ) {
-  let actualMyElementsEntries: String [] = this.sut.getMyElementsComboBoxEntries (  );
-   AssertEqual ( 3, actualMyElementsEntries->size (  ) );
-   AssertEqual ( "A", actualMyElementsEntries[ 1 ] ?? "" );
-   AssertEqual ( "B", actualMyElementsEntries[ 2 ] ?? "" );
-   AssertEqual ( "C", actualMyElementsEntries[ 3 ] ?? "" );
-   AssertEqual ( null, this.sut.getMyElementsComboBoxSelectedEntry (  ) );
- }
+    let actualMyElementsEntries: String [] = this.sut.getMyElementsComboBoxEntries (  );
+
+    AssertEqual ( 3, actualMyElementsEntries->size (  ) );
+
+    AssertEqual ( "A", actualMyElementsEntries[ 1 ] ?? "" );
+
+    AssertEqual ( "B", actualMyElementsEntries[ 2 ] ?? "" );
+
+    AssertEqual ( "C", actualMyElementsEntries[ 3 ] ?? "" );
+
+    AssertEqual ( null, this.sut.getMyElementsComboBoxSelectedEntry (  ) );
+
+  }
 }

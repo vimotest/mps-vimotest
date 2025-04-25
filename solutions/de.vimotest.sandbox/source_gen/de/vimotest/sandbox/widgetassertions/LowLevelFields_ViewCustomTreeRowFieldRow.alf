@@ -7,24 +7,28 @@ class LowLevelFields_ViewCustomTreeRowFieldRow {
   private HeaderLabelText : String  ;
   
   public getHeaderLabelText (  ) : String  {
-  return this.HeaderLabelText;
- }
+    return this.HeaderLabelText;
+
+  }
   
   public AdditionalInt : Integer  ;
   
   public getAdditionalInt (  ) : Integer  {
-  return this.AdditionalInt;
- }
+    return this.AdditionalInt;
+
+  }
   
   private RowHandle : String  ;
   
   public getRowHandle (  ) : String  {
-  return this.RowHandle;
- }
+    return this.RowHandle;
+
+  }
   
   private RowDepth : Integer  ;
   
   public getRowDepth (  ) : Integer  {
-  return this.RowDepth;
- }
+    return this.RowDepth;
+
+  }
 }

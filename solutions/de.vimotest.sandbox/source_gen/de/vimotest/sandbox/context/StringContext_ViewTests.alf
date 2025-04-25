@@ -10,25 +10,32 @@ class StringContext_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.testSetup = new StringContext_ViewTestSetupImpl (  );
-   this.testSetup.Init (  );
- }
+    this.testSetup = new StringContext_ViewTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
   
   
   public SimpleStringContext_given_alice_bob_charlie_when_then_ (  ) {
-  this.given_alice_bob_charlie (  );
-   this.BuildSut (  );
- }
+    this.given_alice_bob_charlie (  );
+
+    this.BuildSut (  );
+
+  }
   
   public SimpleStringContext_implicit_name_given_Alice_Bob_Charlie_when_then_ (  ) {
-  this.given_Alice_Bob_Charlie (  );
-   this.BuildSut (  );
- }
+    this.given_Alice_Bob_Charlie (  );
+
+    this.BuildSut (  );
+
+  }
   
   
   protected BuildSut (  ) {
-  this.sut = this.testSetup.BuildSut (  );
- }
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
   
   
   // Given Helper Definitions
@@ -37,14 +44,16 @@ class StringContext_ViewTests {
   private alice_bob_charlie : String = "Alice, Bob, Charlie";
   
   public given_alice_bob_charlie (  ) {
-  this.testSetup.SetSimpleStringContext ( this.alice_bob_charlie );
- }
+    this.testSetup.SetSimpleStringContext ( this.alice_bob_charlie );
+
+  }
   
   private Alice_Bob_Charlie : String = "Alice, Bob, Charlie";
   
   public given_Alice_Bob_Charlie (  ) {
-  this.testSetup.SetSimpleStringContext ( this.Alice_Bob_Charlie );
- }
+    this.testSetup.SetSimpleStringContext ( this.Alice_Bob_Charlie );
+
+  }
   
   // When Helper Definitions
 

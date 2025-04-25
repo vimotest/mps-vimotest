@@ -3345,7 +3345,7 @@
               <node concept="2OqwBi" id="7uPLQmZfa4" role="2Oq$k0">
                 <node concept="13iPFW" id="7uPLQmZfa5" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="7uPLQmZfa6" role="2OqNvi">
-                  <ref role="3TtcxE" to="at53:5Pt$ekxTRbn" />
+                  <ref role="3TtcxE" to="at53:5Pt$ekxTRbn" resolve="treeColumnWidgets" />
                 </node>
               </node>
               <node concept="2DeJg1" id="7uPLQmZfa7" role="2OqNvi" />
@@ -3364,7 +3364,7 @@
                   <ref role="3cqZAo" node="7uPLQmZfa2" resolve="firstColumn" />
                 </node>
                 <node concept="3TrEf2" id="7uPLQmZzzV" role="2OqNvi">
-                  <ref role="3Tt5mk" to="at53:q9OOkGQqmU" />
+                  <ref role="3Tt5mk" to="at53:q9OOkGQqmU" resolve="widgetType" />
                 </node>
               </node>
               <node concept="2DeJnY" id="7uPLQmZC_v" role="2OqNvi">
@@ -3455,7 +3455,7 @@
                     <ref role="3cqZAo" node="2zlSkwD7Vgm" resolve="treeWidget" />
                   </node>
                   <node concept="3Tsc0h" id="2DHgAdq8uFu" role="2OqNvi">
-                    <ref role="3TtcxE" to="at53:5Pt$ekxTRbn" />
+                    <ref role="3TtcxE" to="at53:5Pt$ekxTRbn" resolve="treeColumnWidgets" />
                   </node>
                 </node>
                 <node concept="35c_gC" id="6mQWpyUxhk" role="37wK5m">
@@ -3552,7 +3552,7 @@
                 <ref role="3uigEE" to="f4zo:~EditorCell_Collection" resolve="EditorCell_Collection" />
               </node>
               <node concept="37vLTw" id="5Pt$ekxVFXF" role="0kSFX">
-                <ref role="3cqZAo" node="5Pt$ekxVFYe" resolve="tableCell" />
+                <ref role="3cqZAo" node="5Pt$ekxVFYe" resolve="treeCell" />
               </node>
             </node>
           </node>
@@ -9232,7 +9232,7 @@
     </node>
     <node concept="13i0hz" id="6RKU0s3M5U1" role="13h7CS">
       <property role="TrG5h" value="getWidgetFeatureDisplayName" />
-      <ref role="13i0hy" node="6RKU0s3M2ca" resolve="getWidgetDisplayName" />
+      <ref role="13i0hy" node="6RKU0s3M2ca" resolve="getWidgetFeatureDisplayName" />
       <node concept="3Tm1VV" id="6RKU0s3M5U2" role="1B3o_S" />
       <node concept="3clFbS" id="6RKU0s3M5Ub" role="3clF47">
         <node concept="3cpWs8" id="6RKU0s3M6xw" role="3cqZAp">
@@ -9272,7 +9272,7 @@
             <node concept="2OqwBi" id="6RKU0s3M5Ud" role="3uHU7B">
               <node concept="13iAh5" id="6RKU0s3M5Ue" role="2Oq$k0" />
               <node concept="2qgKlT" id="6RKU0s3M5Uf" role="2OqNvi">
-                <ref role="37wK5l" node="6RKU0s3M2ca" resolve="getWidgetDisplayName" />
+                <ref role="37wK5l" node="6RKU0s3M2ca" resolve="getWidgetFeatureDisplayName" />
               </node>
             </node>
           </node>
@@ -10539,11 +10539,11 @@
               <node concept="2OqwBi" id="7ENWPnDGVue" role="2Oq$k0">
                 <node concept="13iPFW" id="7ENWPnDGVuf" role="2Oq$k0" />
                 <node concept="3TrEf2" id="7ENWPnDGVug" role="2OqNvi">
-                  <ref role="3Tt5mk" to="at53:q9OOkGw2yj" />
+                  <ref role="3Tt5mk" to="at53:q9OOkGw2yj" resolve="textFeature" />
                 </node>
               </node>
               <node concept="3TrEf2" id="7ENWPnDGVuh" role="2OqNvi">
-                <ref role="3Tt5mk" to="at53:4xJPu9gt$hE" />
+                <ref role="3Tt5mk" to="at53:4xJPu9gt$hE" resolve="defaultText" />
               </node>
             </node>
           </node>
@@ -10804,7 +10804,7 @@
     </node>
     <node concept="13i0hz" id="5Pt$ekxgG_F" role="13h7CS">
       <property role="TrG5h" value="createEditorCell" />
-      <ref role="13i0hy" node="6mWHjmRL0Kv" />
+      <ref role="13i0hy" node="6mWHjmRL0Kv" resolve="createEditorCell" />
       <node concept="3Tm1VV" id="5Pt$ekxgG_G" role="1B3o_S" />
       <node concept="3clFbS" id="5Pt$ekxgG_H" role="3clF47">
         <node concept="3SKdUt" id="7ENWPnEzXXF" role="3cqZAp">
@@ -10857,11 +10857,11 @@
               <node concept="2OqwBi" id="7ENWPnEzXXX" role="2Oq$k0">
                 <node concept="13iPFW" id="7ENWPnEzXXY" role="2Oq$k0" />
                 <node concept="3TrEf2" id="7ENWPnEzXXZ" role="2OqNvi">
-                  <ref role="3Tt5mk" to="at53:q9OOkGw2yj" />
+                  <ref role="3Tt5mk" to="at53:q9OOkGw2yj" resolve="textFeature" />
                 </node>
               </node>
               <node concept="3TrEf2" id="7ENWPnEzXY0" role="2OqNvi">
-                <ref role="3Tt5mk" to="at53:4xJPu9gt$hE" />
+                <ref role="3Tt5mk" to="at53:4xJPu9gt$hE" resolve="defaultText" />
               </node>
             </node>
           </node>
@@ -10870,16 +10870,16 @@
       <node concept="37vLTG" id="5Pt$ekxgG_X" role="3clF46">
         <property role="TrG5h" value="context" />
         <node concept="3uibUv" id="5Pt$ekxgG_Y" role="1tU5fm">
-          <ref role="3uigEE" to="cj4x:~EditorContext" />
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
         </node>
       </node>
       <node concept="3uibUv" id="5Pt$ekxgG_Z" role="3clF45">
-        <ref role="3uigEE" to="f4zo:~EditorCell" />
+        <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
       </node>
     </node>
     <node concept="13i0hz" id="5Pt$ekxgGA0" role="13h7CS">
       <property role="TrG5h" value="hasFeatureInherentSupport" />
-      <ref role="13i0hy" node="2S2pY38UZYV" />
+      <ref role="13i0hy" node="2S2pY38UZYV" resolve="hasFeatureInherentSupport" />
       <node concept="3Tm1VV" id="5Pt$ekxgGA1" role="1B3o_S" />
       <node concept="3clFbS" id="5Pt$ekxgGA2" role="3clF47">
         <node concept="3clFbF" id="5Pt$ekxgGA3" role="3cqZAp">
@@ -10889,7 +10889,7 @@
       <node concept="37vLTG" id="5Pt$ekxgGA5" role="3clF46">
         <property role="TrG5h" value="feature" />
         <node concept="3Tqbb2" id="5Pt$ekxgGA6" role="1tU5fm">
-          <ref role="ehGHo" to="at53:L9c2Y9pj53" />
+          <ref role="ehGHo" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
         </node>
       </node>
       <node concept="10P_77" id="5Pt$ekxgGA7" role="3clF45" />

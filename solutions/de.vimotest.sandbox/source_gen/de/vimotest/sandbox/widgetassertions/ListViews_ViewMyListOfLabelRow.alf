@@ -7,24 +7,28 @@ class ListViews_ViewMyListOfLabelRow {
   private MyValueLabelText : String  ;
   
   public getMyValueLabelText (  ) : String  {
-  return this.MyValueLabelText;
- }
+    return this.MyValueLabelText;
+
+  }
   
   private isMyValueLabelEnabled : Boolean  ;
   
   public getIsMyValueLabelEnabled (  ) : Boolean  {
-  return this.isMyValueLabelEnabled;
- }
+    return this.isMyValueLabelEnabled;
+
+  }
   
   private isMyValueLabelVisible : Boolean  ;
   
   public getIsMyValueLabelVisible (  ) : Boolean  {
-  return this.isMyValueLabelVisible;
- }
+    return this.isMyValueLabelVisible;
+
+  }
   
   private RowIndex : Integer  ;
   
   public getRowIndex (  ) : Integer  {
-  return this.RowIndex;
- }
+    return this.RowIndex;
+
+  }
 }

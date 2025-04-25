@@ -10,25 +10,32 @@ class XmlFileContext_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.testSetup = new XmlFileContext_ViewTestSetupImpl (  );
-   this.testSetup.Init (  );
- }
+    this.testSetup = new XmlFileContext_ViewTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
   
   
   public XmlFile_NoExternalFile_given_XmlFile_NoExternalFile_when_then_ (  ) {
-  this.given_XmlFile_NoExternalFile (  );
-   this.BuildSut (  );
- }
+    this.given_XmlFile_NoExternalFile (  );
+
+    this.BuildSut (  );
+
+  }
   
   public XmlFile_ExternalFile_given_XmlFile_ExternalFile_when_then_ (  ) {
-  this.given_XmlFile_ExternalFile (  );
-   this.BuildSut (  );
- }
+    this.given_XmlFile_ExternalFile (  );
+
+    this.BuildSut (  );
+
+  }
   
   
   protected BuildSut (  ) {
-  this.sut = this.testSetup.BuildSut (  );
- }
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
   
   
   // Given Helper Definitions
@@ -37,12 +44,14 @@ class XmlFileContext_ViewTests {
   private XmlFile_NoExternalFile : String = "<MyXML>  \n  <Inner></Inner>\n</MyXML>";
   
   public given_XmlFile_NoExternalFile (  ) {
-  this.testSetup.SetXmlFileContext ( this.XmlFile_NoExternalFile );
- }
+    this.testSetup.SetXmlFileContext ( this.XmlFile_NoExternalFile );
+
+  }
   
   public given_XmlFile_ExternalFile (  ) {
-  this.testSetup.SetXmlExternalFileContext ( "XmlFile_ExternalFile.xml" );
- }
+    this.testSetup.SetXmlExternalFileContext ( "XmlFile_ExternalFile.xml" );
+
+  }
   
   // When Helper Definitions
 

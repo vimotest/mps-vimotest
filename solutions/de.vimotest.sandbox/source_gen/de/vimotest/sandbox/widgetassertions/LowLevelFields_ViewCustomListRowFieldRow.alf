@@ -7,18 +7,21 @@ class LowLevelFields_ViewCustomListRowFieldRow {
   private HeaderLabelText : String  ;
   
   public getHeaderLabelText (  ) : String  {
-  return this.HeaderLabelText;
- }
+    return this.HeaderLabelText;
+
+  }
   
   public AdditionalStrings : String [ * ]  ;
   
   public getAdditionalStrings (  ) : String [ * ]  {
-  return this.AdditionalStrings;
- }
+    return this.AdditionalStrings;
+
+  }
   
   private RowHandle : String  ;
   
   public getRowHandle (  ) : String  {
-  return this.RowHandle;
- }
+    return this.RowHandle;
+
+  }
 }

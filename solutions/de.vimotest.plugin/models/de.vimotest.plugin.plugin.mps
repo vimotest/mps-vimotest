@@ -8088,7 +8088,7 @@
                             </node>
                             <node concept="2OqwBi" id="5Pt$ekwf7cZ" role="3uHU7w">
                               <node concept="37vLTw" id="5Pt$ekwf4Zc" role="2Oq$k0">
-                                <ref role="3cqZAo" node="5Pt$ekweVxT" resolve="baseConcept" />
+                                <ref role="3cqZAo" node="5Pt$ekweVxT" resolve="viewWidgetBaseConcept" />
                               </node>
                               <node concept="liA8E" id="5Pt$ekwfayY" role="2OqNvi">
                                 <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />

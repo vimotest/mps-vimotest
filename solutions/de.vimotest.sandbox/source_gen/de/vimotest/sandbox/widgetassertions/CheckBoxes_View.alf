@@ -7,36 +7,42 @@ class CheckBoxes_View {
   private isMyFlagWithLabelCheckBoxChecked : Boolean  ;
   
   public getIsMyFlagWithLabelCheckBoxChecked (  ) : Boolean  {
-  return this.isMyFlagWithLabelCheckBoxChecked;
- }
+    return this.isMyFlagWithLabelCheckBoxChecked;
+
+  }
   
   private isMyFlagWithLabelCheckBoxVisible : Boolean  ;
   
   public getIsMyFlagWithLabelCheckBoxVisible (  ) : Boolean  {
-  return this.isMyFlagWithLabelCheckBoxVisible;
- }
+    return this.isMyFlagWithLabelCheckBoxVisible;
+
+  }
   
   private isMyFlagWithLabelCheckBoxEnabled : Boolean  ;
   
   public getIsMyFlagWithLabelCheckBoxEnabled (  ) : Boolean  {
-  return this.isMyFlagWithLabelCheckBoxEnabled;
- }
+    return this.isMyFlagWithLabelCheckBoxEnabled;
+
+  }
   
   private MyFlagWithLabelCheckBoxText : String  ;
   
   public getMyFlagWithLabelCheckBoxText (  ) : String  {
-  return this.MyFlagWithLabelCheckBoxText;
- }
+    return this.MyFlagWithLabelCheckBoxText;
+
+  }
   
   private isMyFlagNoLabelCheckBoxChecked : Boolean  ;
   
   public getIsMyFlagNoLabelCheckBoxChecked (  ) : Boolean  {
-  return this.isMyFlagNoLabelCheckBoxChecked;
- }
+    return this.isMyFlagNoLabelCheckBoxChecked;
+
+  }
   
   private isMyFlagTriStateCheckBoxChecked : Boolean [ 0 .. 1 ]  ;
   
   public getIsMyFlagTriStateCheckBoxChecked (  ) : Boolean [ 0 .. 1 ]  {
-  return this.isMyFlagTriStateCheckBoxChecked;
- }
+    return this.isMyFlagTriStateCheckBoxChecked;
+
+  }
 }

@@ -4,11 +4,14 @@ namespace widgetassertions ;
 
 class Buttons_ViewTestSetupImpl specializes Buttons_ViewTestSetup {
   
-  public Init (  ) {     }
+  public Init (  ) {    
+  }
   
-  public SetEmptyContext (  ) {     }
+  public SetEmptyContext (  ) {    
+  }
   
   public BuildSut (  ) : Buttons_View  {
-  return null;
- }
+    return null;
+
+  }
 }

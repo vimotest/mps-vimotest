@@ -6,7 +6,7 @@
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="b1ab8c10-c118-4755-bf2a-cebab35cf533" name="jetbrains.mps.lang.editor.tooltips" version="0" />
     <use id="602c36ad-cc55-47ff-8c40-73d7f12f035c" name="jetbrains.mps.lang.editor.forms" version="0" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1928,7 +1928,7 @@
                       <node concept="2OqwBi" id="6RKU0s3M4FE" role="3clFbG">
                         <node concept="pncrf" id="6RKU0s3M4fD" role="2Oq$k0" />
                         <node concept="2qgKlT" id="6RKU0s3M56$" role="2OqNvi">
-                          <ref role="37wK5l" to="nrs2:6RKU0s3M2ca" resolve="getWidgetDisplayName" />
+                          <ref role="37wK5l" to="nrs2:6RKU0s3M2ca" resolve="getWidgetFeatureDisplayName" />
                         </node>
                       </node>
                     </node>
@@ -1976,7 +1976,7 @@
                     <node concept="2OqwBi" id="6RKU0s3UQoq" role="3clFbG">
                       <node concept="pncrf" id="6RKU0s3UQor" role="2Oq$k0" />
                       <node concept="2qgKlT" id="6RKU0s3UQos" role="2OqNvi">
-                        <ref role="37wK5l" to="nrs2:6RKU0s3M2ca" resolve="getWidgetDisplayName" />
+                        <ref role="37wK5l" to="nrs2:6RKU0s3M2ca" resolve="getWidgetFeatureDisplayName" />
                       </node>
                     </node>
                   </node>
@@ -2169,7 +2169,7 @@
         </node>
         <node concept="3F2HdR" id="K_fAvR63EQ" role="3EZMnx">
           <property role="2czwfO" value="-----" />
-          <ref role="1NtTu8" to="at53:5Pt$ekxTRbn" />
+          <ref role="1NtTu8" to="at53:5Pt$ekxTRbn" resolve="treeColumnWidgets" />
           <node concept="l2Vlx" id="K_fAvR63ES" role="2czzBx" />
           <node concept="2w$q5c" id="K_fAvR65MN" role="78xua">
             <node concept="2aJ2om" id="K_fAvR65MO" role="2w$qW5">
@@ -4995,7 +4995,7 @@
         </node>
         <node concept="2iRfu4" id="5Pt$ekwTdX0" role="2iSdaV" />
         <node concept="3F1sOY" id="5Pt$ekwTdX1" role="3EZMnx">
-          <ref role="1NtTu8" to="at53:q9OOkGQqmU" />
+          <ref role="1NtTu8" to="at53:q9OOkGQqmU" resolve="widgetType" />
         </node>
         <node concept="VPXOz" id="5Pt$ekwTdX4" role="3F10Kt">
           <property role="VOm3f" value="true" />

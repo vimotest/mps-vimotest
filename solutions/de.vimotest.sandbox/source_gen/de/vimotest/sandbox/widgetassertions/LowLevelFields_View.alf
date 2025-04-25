@@ -7,42 +7,49 @@ class LowLevelFields_View {
   public MyBool : Boolean  ;
   
   public getMyBool (  ) : Boolean  {
-  return this.MyBool;
- }
+    return this.MyBool;
+
+  }
   
   public MyInt : Integer  ;
   
   public getMyInt (  ) : Integer  {
-  return this.MyInt;
- }
+    return this.MyInt;
+
+  }
   
   public MyString : String  ;
   
   public getMyString (  ) : String  {
-  return this.MyString;
- }
+    return this.MyString;
+
+  }
   
   public MyStrings : String [ * ]  ;
   
   public getMyStrings (  ) : String [ * ]  {
-  return this.MyStrings;
- }
+    return this.MyStrings;
+
+  }
   
   private CustomTableRowFieldTableRows : LowLevelFields_ViewCustomTableRowFieldRow [ * ]  ;
   
   public getCustomTableRowFieldTableRows (  ) : LowLevelFields_ViewCustomTableRowFieldRow [ * ]  {
-  return this.CustomTableRowFieldTableRows;
- }
+    return this.CustomTableRowFieldTableRows;
+
+  }
   
   private CustomListRowFieldListRows : LowLevelFields_ViewCustomListRowFieldRow [ * ]  ;
   
   public getCustomListRowFieldListRows (  ) : LowLevelFields_ViewCustomListRowFieldRow [ * ]  {
-  return this.CustomListRowFieldListRows;
- }
+    return this.CustomListRowFieldListRows;
+
+  }
   
   private CustomTreeRowFieldTreeRows : LowLevelFields_ViewCustomTreeRowFieldRow [ * ]  ;
   
   public getCustomTreeRowFieldTreeRows (  ) : LowLevelFields_ViewCustomTreeRowFieldRow [ * ]  {
-  return this.CustomTreeRowFieldTreeRows;
- }
+    return this.CustomTreeRowFieldTreeRows;
+
+  }
 }

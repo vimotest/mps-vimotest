@@ -4,11 +4,14 @@ namespace context ;
 
 class DataPathContext_ViewTestSetupImpl specializes DataPathContext_ViewTestSetup {
   
-  public Init (  ) {     }
+  public Init (  ) {    
+  }
   
-  public SetDataPathContext (   in contextPath: String  ) {     }
+  public SetDataPathContext (   in contextPath: String  ) {    
+  }
   
   public BuildSut (  ) : DataPathContext_View  {
-  return null;
- }
+    return null;
+
+  }
 }

@@ -10,25 +10,32 @@ class XmlElementContext_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.testSetup = new XmlElementContext_ViewTestSetupImpl (  );
-   this.testSetup.Init (  );
- }
+    this.testSetup = new XmlElementContext_ViewTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
   
   
   public Xml_Context_given_myxml_when_then_ (  ) {
-  this.given_myxml (  );
-   this.BuildSut (  );
- }
+    this.given_myxml (  );
+
+    this.BuildSut (  );
+
+  }
   
   public Xml_Context_explicit_name_given_MyXML_Inner_when_then_ (  ) {
-  this.given_MyXML_Inner (  );
-   this.BuildSut (  );
- }
+    this.given_MyXML_Inner (  );
+
+    this.BuildSut (  );
+
+  }
   
   
   protected BuildSut (  ) {
-  this.sut = this.testSetup.BuildSut (  );
- }
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
   
   
   // Given Helper Definitions
@@ -37,14 +44,16 @@ class XmlElementContext_ViewTests {
   private myxml : String = "<MyXML>  \n  <Inner></Inner>\n</MyXML>";
   
   public given_myxml (  ) {
-  this.testSetup.SetXmlElementContext ( this.myxml );
- }
+    this.testSetup.SetXmlElementContext ( this.myxml );
+
+  }
   
   private MyXML_Inner : String = "<MyXML>  \n  <Inner></Inner>\n</MyXML>";
   
   public given_MyXML_Inner (  ) {
-  this.testSetup.SetXmlElementContext ( this.MyXML_Inner );
- }
+    this.testSetup.SetXmlElementContext ( this.MyXML_Inner );
+
+  }
   
   // When Helper Definitions
 

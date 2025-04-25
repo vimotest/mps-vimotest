@@ -10,21 +10,27 @@ class CheckCommand_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.testSetup = new CheckCommand_ViewTestSetupImpl (  );
-   this.testSetup.Init (  );
- }
+    this.testSetup = new CheckCommand_ViewTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
   
   
   public Check_CheckBox_given_when_check_MyCheckBox1_and_uncheck_MyCheckBox2_then_ (  ) {
-  this.BuildSut (  );
-   this.when_check_MyCheckBox1 (  );
-   this.when_uncheck_MyCheckBox2 (  );
- }
+    this.BuildSut (  );
+
+    this.when_check_MyCheckBox1 (  );
+
+    this.when_uncheck_MyCheckBox2 (  );
+
+  }
   
   
   protected BuildSut (  ) {
-  this.sut = this.testSetup.BuildSut (  );
- }
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
   
   
   // Given Helper Definitions
@@ -34,12 +40,14 @@ class CheckCommand_ViewTests {
 
   
   public when_check_MyCheckBox1 (  ) {
-  this.sut.myCheckBox1Checked ( true );
- }
+    this.sut.myCheckBox1Checked ( true );
+
+  }
   
   public when_uncheck_MyCheckBox2 (  ) {
-  this.sut.myCheckBox2Checked ( false );
- }
+    this.sut.myCheckBox2Checked ( false );
+
+  }
   
   // Then Helper Definitions
 

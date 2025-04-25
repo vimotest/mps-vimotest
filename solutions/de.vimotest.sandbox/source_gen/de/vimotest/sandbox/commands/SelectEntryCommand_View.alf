@@ -7,22 +7,27 @@ class SelectEntryCommand_View {
   private MyElementsComboBoxEntries : String [ * ]  ;
   
   public getMyElementsComboBoxEntries (  ) : String [ * ]  {
-  return this.MyElementsComboBoxEntries;
- }
+    return this.MyElementsComboBoxEntries;
+
+  }
   
   private MyElementsComboBoxSelectedEntry : String  ;
   
   public getMyElementsComboBoxSelectedEntry (  ) : String  {
-  return this.MyElementsComboBoxSelectedEntry;
- }
+    return this.MyElementsComboBoxSelectedEntry;
+
+  }
   
   private MyOptionsRadioButtonGroupSelectedEntry : SelectEntryCommand_ViewMyOptionsOption  ;
   
   public getMyOptionsRadioButtonGroupSelectedEntry (  ) : SelectEntryCommand_ViewMyOptionsOption  {
-  return this.MyOptionsRadioButtonGroupSelectedEntry;
- }
+    return this.MyOptionsRadioButtonGroupSelectedEntry;
+
+  }
   
-  public myElementsEntrySelected (   in entryName: String  ) {     }
+  public myElementsEntrySelected (   in entryName: String  ) {    
+  }
   
-  public myOptionsEntrySelected (   in entryName: SelectEntryCommand_ViewMyOptionsOption  ) {     }
+  public myOptionsEntrySelected (   in entryName: SelectEntryCommand_ViewMyOptionsOption  ) {    
+  }
 }

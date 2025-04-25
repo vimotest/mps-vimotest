@@ -7,12 +7,14 @@ class CapitalizedGetterNames_ViewMyElementsRow {
   private HeaderLabelText : String  ;
   
   public GetHeaderLabelText (  ) : String  {
-  return this.HeaderLabelText;
- }
+    return this.HeaderLabelText;
+
+  }
   
   private myRowHandle : Integer  ;
   
   public GetMyRowHandle (  ) : Integer  {
-  return this.myRowHandle;
- }
+    return this.myRowHandle;
+
+  }
 }

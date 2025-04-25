@@ -7,12 +7,14 @@ class SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow {
   private columnCellLabelText : String  ;
   
   public getColumnCellLabelText (  ) : String  {
-  return this.columnCellLabelText;
- }
+    return this.columnCellLabelText;
+
+  }
   
   private RowHandle : String  ;
   
   public getRowHandle (  ) : String  {
-  return this.RowHandle;
- }
+    return this.RowHandle;
+
+  }
 }

@@ -7,18 +7,21 @@ class RowBasedCommand_ViewMyStandardControlsRow {
   private TextBoxesTextBoxText : String  ;
   
   public getTextBoxesTextBoxText (  ) : String  {
-  return this.TextBoxesTextBoxText;
- }
+    return this.TextBoxesTextBoxText;
+
+  }
   
   private RowIndex : Integer  ;
   
   public getRowIndex (  ) : Integer  {
-  return this.RowIndex;
- }
+    return this.RowIndex;
+
+  }
   
   private RowDepth : Integer  ;
   
   public getRowDepth (  ) : Integer  {
-  return this.RowDepth;
- }
+    return this.RowDepth;
+
+  }
 }

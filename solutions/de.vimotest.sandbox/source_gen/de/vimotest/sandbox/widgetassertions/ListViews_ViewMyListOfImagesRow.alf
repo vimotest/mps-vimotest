@@ -7,24 +7,28 @@ class ListViews_ViewMyListOfImagesRow {
   private MyInfoImageName : String  ;
   
   public getMyInfoImageName (  ) : String  {
-  return this.MyInfoImageName;
- }
+    return this.MyInfoImageName;
+
+  }
   
   private isMyInfoImageEnabled : Boolean  ;
   
   public getIsMyInfoImageEnabled (  ) : Boolean  {
-  return this.isMyInfoImageEnabled;
- }
+    return this.isMyInfoImageEnabled;
+
+  }
   
   private isMyInfoImageVisible : Boolean  ;
   
   public getIsMyInfoImageVisible (  ) : Boolean  {
-  return this.isMyInfoImageVisible;
- }
+    return this.isMyInfoImageVisible;
+
+  }
   
   private RowIndex : Integer  ;
   
   public getRowIndex (  ) : Integer  {
-  return this.RowIndex;
- }
+    return this.RowIndex;
+
+  }
 }

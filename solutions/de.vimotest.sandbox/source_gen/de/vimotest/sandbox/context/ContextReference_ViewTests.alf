@@ -10,25 +10,32 @@ class ContextReference_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.testSetup = new ContextReference_ViewTestSetupImpl (  );
-   this.testSetup.Init (  );
- }
+    this.testSetup = new ContextReference_ViewTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
   
   
   public String_Context_given_base_when_then_ (  ) {
-  this.given_base (  );
-   this.BuildSut (  );
- }
+    this.given_base (  );
+
+    this.BuildSut (  );
+
+  }
   
   public Context_Reference_given_base_when_then_ (  ) {
-  this.given_base_1 (  );
-   this.BuildSut (  );
- }
+    this.given_base_1 (  );
+
+    this.BuildSut (  );
+
+  }
   
   
   protected BuildSut (  ) {
-  this.sut = this.testSetup.BuildSut (  );
- }
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
   
   
   // Given Helper Definitions
@@ -37,12 +44,14 @@ class ContextReference_ViewTests {
   private base : String = "My Context";
   
   public given_base (  ) {
-  this.testSetup.SetSimpleStringContext ( this.base );
- }
+    this.testSetup.SetSimpleStringContext ( this.base );
+
+  }
   
   public given_base_1 (  ) {
-  this.testSetup.SetSimpleStringContext ( this.base );
- }
+    this.testSetup.SetSimpleStringContext ( this.base );
+
+  }
   
   // When Helper Definitions
 

@@ -10,30 +10,39 @@ class RadioButton_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.testSetup = new RadioButton_ViewTestSetupImpl (  );
-   this.testSetup.Init (  );
- }
+    this.testSetup = new RadioButton_ViewTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
   
   
   public Select_Option_given_when_then_Options_selected_OptionB_ (  ) {
-  this.BuildSut (  );
-   this.then_Options_selected_OptionB_ (  );
- }
+    this.BuildSut (  );
+
+    this.then_Options_selected_OptionB_ (  );
+
+  }
   
   public RadioButton_disabled_given_when_then_Options_selected_OptionA_and_OptionB_is_not_enabled (  ) {
-  this.BuildSut (  );
-   this.then_Options_selected_OptionA_and_OptionB_is_not_enabled (  );
- }
+    this.BuildSut (  );
+
+    this.then_Options_selected_OptionA_and_OptionB_is_not_enabled (  );
+
+  }
   
   public RadioButton_invisible_given_when_then_Options_selected_OptionA_and_OptionB_is_not_visible (  ) {
-  this.BuildSut (  );
-   this.then_Options_selected_OptionA_and_OptionB_is_not_visible (  );
- }
+    this.BuildSut (  );
+
+    this.then_Options_selected_OptionA_and_OptionB_is_not_visible (  );
+
+  }
   
   
   protected BuildSut (  ) {
-  this.sut = this.testSetup.BuildSut (  );
- }
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
   
   
   // Given Helper Definitions
@@ -46,16 +55,21 @@ class RadioButton_ViewTests {
 
   
   public then_Options_selected_OptionB_ (  ) {
-  AssertEqual ( OptionB, this.sut.getOptionsRadioButtonGroupSelectedEntry (  ) );
- }
+    AssertEqual ( OptionB, this.sut.getOptionsRadioButtonGroupSelectedEntry (  ) );
+
+  }
   
   public then_Options_selected_OptionA_and_OptionB_is_not_enabled (  ) {
-  AssertEqual ( OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry (  ) );
-   AssertFalse ( this.sut.getIsOptionBRadioButtonEnabled (  ) );
- }
+    AssertEqual ( OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry (  ) );
+
+    AssertFalse ( this.sut.getIsOptionBRadioButtonEnabled (  ) );
+
+  }
   
   public then_Options_selected_OptionA_and_OptionB_is_not_visible (  ) {
-  AssertEqual ( OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry (  ) );
-   AssertFalse ( this.sut.getIsOptionBRadioButtonVisible (  ) );
- }
+    AssertEqual ( OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry (  ) );
+
+    AssertFalse ( this.sut.getIsOptionBRadioButtonVisible (  ) );
+
+  }
 }

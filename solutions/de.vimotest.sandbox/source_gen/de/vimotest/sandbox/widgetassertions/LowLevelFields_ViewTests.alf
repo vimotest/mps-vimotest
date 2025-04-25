@@ -10,34 +10,47 @@ class LowLevelFields_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.testSetup = new LowLevelFields_ViewTestSetupImpl (  );
-   this.testSetup.Init (  );
- }
+    this.testSetup = new LowLevelFields_ViewTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
   
   
   public Primitive_Field_Asserts_given_when_then_MyBool_is_true_and_MyInt_is_42_and_MyString_is_text_ (  ) {
-  this.BuildSut (  );
-   this.then_MyBool_is_true (  );
-   this.then_MyInt_is_42 (  );
-   this.then_MyString_is_text_ (  );
- }
+    this.BuildSut (  );
+
+    this.then_MyBool_is_true (  );
+
+    this.then_MyInt_is_42 (  );
+
+    this.then_MyString_is_text_ (  );
+
+  }
   
   public Primitive_List_Field_Asserts_given_when_then_MyStrings_is_new_String____A___B__ (  ) {
-  this.BuildSut (  );
-   this.then_MyStrings_is_new_String____A___B__ (  );
- }
+    this.BuildSut (  );
+
+    this.then_MyStrings_is_new_String____A___B__ (  );
+
+  }
   
   public Rowbased_Primitive_Fields_given_when_then_CustomListRowField_has_1_rows_and_CustomTableRowField_has_1_rows_and_CustomTreeRowField_has_1_rows (  ) {
-  this.BuildSut (  );
-   this.then_CustomListRowField_has_1_rows (  );
-   this.then_CustomTableRowField_has_1_rows (  );
-   this.then_CustomTreeRowField_has_1_rows (  );
- }
+    this.BuildSut (  );
+
+    this.then_CustomListRowField_has_1_rows (  );
+
+    this.then_CustomTableRowField_has_1_rows (  );
+
+    this.then_CustomTreeRowField_has_1_rows (  );
+
+  }
   
   
   protected BuildSut (  ) {
-  this.sut = this.testSetup.BuildSut (  );
- }
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
   
   
   // Given Helper Definitions
@@ -50,55 +63,84 @@ class LowLevelFields_ViewTests {
 
   
   public then_MyBool_is_true (  ) {
-  AssertTrue ( this.sut.getMyBool (  ) );
- }
+    AssertTrue ( this.sut.getMyBool (  ) );
+
+  }
   
   public then_MyInt_is_42 (  ) {
-  AssertEqual ( 42, this.sut.getMyInt (  ) );
- }
+    AssertEqual ( 42, this.sut.getMyInt (  ) );
+
+  }
   
   public then_MyString_is_text_ (  ) {
-  AssertEqual ( "text", this.sut.getMyString (  ) );
- }
+    AssertEqual ( "text", this.sut.getMyString (  ) );
+
+  }
   
   public then_MyStrings_is_new_String____A___B__ (  ) {
-  let actualMyStrings: String [] = this.sut.getMyStrings (  );
-   AssertEqual ( "A", actualMyStrings[ 1 ] ?? "" );
-   AssertEqual ( "B", actualMyStrings[ 2 ] ?? "" );
- }
+    let actualMyStrings: String [] = this.sut.getMyStrings (  );
+
+    AssertEqual ( "A", actualMyStrings[ 1 ] ?? "" );
+
+    AssertEqual ( "B", actualMyStrings[ 2 ] ?? "" );
+
+  }
   
   public then_CustomListRowField_has_1_rows (  ) {
-  let actualRows: LowLevelFields_ViewCustomListRowFieldRow [] = this.sut.getCustomListRowFieldListRows (  );
-   AssertEqual ( 1, actualRows->size (  ) );
-   {
-  let row0: LowLevelFields_ViewCustomListRowFieldRow = actualRows[ 1 ];
-   AssertEqual ( "0", row0.getRowHandle (  ) );
-   AssertEqual ( "", row0.getHeaderLabelText (  ) );
-   let actualAdditionalStrings: String [] = row0.getAdditionalStrings (  );
-   AssertEqual ( "A", actualAdditionalStrings[ 1 ] ?? "" );
- }
- }
+    let actualRows: LowLevelFields_ViewCustomListRowFieldRow [] = this.sut.getCustomListRowFieldListRows (  );
+
+    AssertEqual ( 1, actualRows->size (  ) );
+
+    {
+      let row0: LowLevelFields_ViewCustomListRowFieldRow = actualRows[ 1 ];
+
+      AssertEqual ( "0", row0.getRowHandle (  ) );
+
+      AssertEqual ( "", row0.getHeaderLabelText (  ) );
+
+      let actualAdditionalStrings: String [] = row0.getAdditionalStrings (  );
+
+      AssertEqual ( "A", actualAdditionalStrings[ 1 ] ?? "" );
+
+    }
+
+  }
   
   public then_CustomTableRowField_has_1_rows (  ) {
-  let actualRows: LowLevelFields_ViewCustomTableRowFieldRow [] = this.sut.getCustomTableRowFieldTableRows (  );
-   AssertEqual ( 1, actualRows->size (  ) );
-   {
-  let row0: LowLevelFields_ViewCustomTableRowFieldRow = actualRows[ 1 ];
-   AssertEqual ( "0", row0.getRowHandle (  ) );
-   AssertEqual ( "", row0.getHeaderLabelText (  ) );
-   AssertFalse ( row0.getAdditionalBool (  ) );
- }
- }
+    let actualRows: LowLevelFields_ViewCustomTableRowFieldRow [] = this.sut.getCustomTableRowFieldTableRows (  );
+
+    AssertEqual ( 1, actualRows->size (  ) );
+
+    {
+      let row0: LowLevelFields_ViewCustomTableRowFieldRow = actualRows[ 1 ];
+
+      AssertEqual ( "0", row0.getRowHandle (  ) );
+
+      AssertEqual ( "", row0.getHeaderLabelText (  ) );
+
+      AssertFalse ( row0.getAdditionalBool (  ) );
+
+    }
+
+  }
   
   public then_CustomTreeRowField_has_1_rows (  ) {
-  let actualRows: LowLevelFields_ViewCustomTreeRowFieldRow [] = this.sut.getCustomTreeRowFieldTreeRows (  );
-   AssertEqual ( 1, actualRows->size (  ) );
-   {
-  let row0: LowLevelFields_ViewCustomTreeRowFieldRow = actualRows[ 1 ];
-   AssertEqual ( "9", row0.getRowHandle (  ) );
-   AssertEqual ( 0, row0.getRowDepth (  ) );
-   AssertEqual ( "", row0.getHeaderLabelText (  ) );
-   AssertEqual ( 42, row0.getAdditionalInt (  ) );
- }
- }
+    let actualRows: LowLevelFields_ViewCustomTreeRowFieldRow [] = this.sut.getCustomTreeRowFieldTreeRows (  );
+
+    AssertEqual ( 1, actualRows->size (  ) );
+
+    {
+      let row0: LowLevelFields_ViewCustomTreeRowFieldRow = actualRows[ 1 ];
+
+      AssertEqual ( "9", row0.getRowHandle (  ) );
+
+      AssertEqual ( 0, row0.getRowDepth (  ) );
+
+      AssertEqual ( "", row0.getHeaderLabelText (  ) );
+
+      AssertEqual ( 42, row0.getAdditionalInt (  ) );
+
+    }
+
+  }
 }

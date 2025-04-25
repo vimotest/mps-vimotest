@@ -10,41 +10,53 @@ class ParameterObjectCommand_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.testSetup = new ParameterObjectCommand_ViewTestSetupImpl (  );
-   this.testSetup.Init (  );
- }
+    this.testSetup = new ParameterObjectCommand_ViewTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
   
   
   public MyTest_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_ (  ) {
-  this.given_empty_context (  );
-   this.BuildSut (  );
-   this.when_LoadView (  );
-   this.when_uncheck_MyFlag (  );
- }
+    this.given_empty_context (  );
+
+    this.BuildSut (  );
+
+    this.when_LoadView (  );
+
+    this.when_uncheck_MyFlag (  );
+
+  }
   
   
   protected BuildSut (  ) {
-  this.sut = this.testSetup.BuildSut (  );
- }
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
   
   
   // Given Helper Definitions
 
   
-  public given_empty_context (  ) {     }
+  public given_empty_context (  ) {    
+  }
   
   // When Helper Definitions
 
   
   public when_LoadView (  ) {
-  let loadViewParameters: LoadViewParams = new ParameterObjectCommand_View:: LoadViewParams ( "A", true, 42 );
-   this.sut.loadView ( loadViewParameters );
- }
+    let loadViewParameters: LoadViewParams = new ParameterObjectCommand_View:: LoadViewParams ( "A", true, 42 );
+
+    this.sut.loadView ( loadViewParameters );
+
+  }
   
   public when_uncheck_MyFlag (  ) {
-  let checkedParameters: CheckParams = new ParameterObjectCommand_View:: CheckParams ( false );
-   this.sut.myFlagChecked ( checkedParameters );
- }
+    let checkedParameters: CheckParams = new ParameterObjectCommand_View:: CheckParams ( false );
+
+    this.sut.myFlagChecked ( checkedParameters );
+
+  }
   
   // Then Helper Definitions
 

@@ -10,25 +10,32 @@ class LoadCommand_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.testSetup = new LoadCommand_ViewTestSetupImpl (  );
-   this.testSetup.Init (  );
- }
+    this.testSetup = new LoadCommand_ViewTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
   
   
   public Load_Commands_Call_given_when_LoadView_then_ (  ) {
-  this.BuildSut (  );
-   this.when_LoadView (  );
- }
+    this.BuildSut (  );
+
+    this.when_LoadView (  );
+
+  }
   
   public Load_with_Parameter_Commands_Call_given_when_LoadViewWithName_then_ (  ) {
-  this.BuildSut (  );
-   this.when_LoadViewWithName (  );
- }
+    this.BuildSut (  );
+
+    this.when_LoadViewWithName (  );
+
+  }
   
   
   protected BuildSut (  ) {
-  this.sut = this.testSetup.BuildSut (  );
- }
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
   
   
   // Given Helper Definitions
@@ -38,12 +45,14 @@ class LoadCommand_ViewTests {
 
   
   public when_LoadView (  ) {
-  this.sut.loadView (  );
- }
+    this.sut.loadView (  );
+
+  }
   
   public when_LoadViewWithName (  ) {
-  this.sut.loadViewWithName ( "Name" );
- }
+    this.sut.loadViewWithName ( "Name" );
+
+  }
   
   // Then Helper Definitions
 

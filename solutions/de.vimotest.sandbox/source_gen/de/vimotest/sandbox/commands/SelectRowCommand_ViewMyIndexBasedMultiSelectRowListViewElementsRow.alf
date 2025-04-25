@@ -7,12 +7,14 @@ class SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewElementsRow {
   private HeaderLabelText : String  ;
   
   public getHeaderLabelText (  ) : String  {
-  return this.HeaderLabelText;
- }
+    return this.HeaderLabelText;
+
+  }
   
   private RowIndex : Integer  ;
   
   public getRowIndex (  ) : Integer  {
-  return this.RowIndex;
- }
+    return this.RowIndex;
+
+  }
 }

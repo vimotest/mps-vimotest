@@ -10,64 +10,89 @@ class Labels_ViewTest {
   
   
   protected BeforeTest (  ) {
-  this.testSetup = new Labels_ViewTestSetupImpl (  );
-   this.testSetup.Init (  );
- }
+    this.testSetup = new Labels_ViewTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
   
   
   public Single_Line_Label_given_empty_context_when_then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible (  ) {
-  this.given_empty_context (  );
-   this.BuildSut (  );
-   this.then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible (  );
- }
+    this.given_empty_context (  );
+
+    this.BuildSut (  );
+
+    this.then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible (  );
+
+  }
   
   public Single_Line_Label_Disabled_given_empty_context_when_then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible (  ) {
-  this.given_empty_context (  );
-   this.BuildSut (  );
-   this.then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible (  );
- }
+    this.given_empty_context (  );
+
+    this.BuildSut (  );
+
+    this.then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible (  );
+
+  }
   
   public Single_Line_Label_Invisible_given_empty_context_when_then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible (  ) {
-  this.given_empty_context (  );
-   this.BuildSut (  );
-   this.then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible (  );
- }
+    this.given_empty_context (  );
+
+    this.BuildSut (  );
+
+    this.then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible (  );
+
+  }
   
   public Multi_Line_Label_given_empty_context_when_then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_ (  ) {
-  this.given_empty_context (  );
-   this.BuildSut (  );
-   this.then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_ (  );
- }
+    this.given_empty_context (  );
+
+    this.BuildSut (  );
+
+    this.then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_ (  );
+
+  }
   
   public ToolTip_Label_given_empty_context_when_then_WithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_ (  ) {
-  this.given_empty_context_1 (  );
-   this.BuildSut (  );
-   this.then_WithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_ (  );
- }
+    this.given_empty_context_1 (  );
+
+    this.BuildSut (  );
+
+    this.then_WithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_ (  );
+
+  }
   
   public MultiLine_ToolTip_Label_given_empty_context_when_then_WithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_ (  ) {
-  this.given_empty_context_1 (  );
-   this.BuildSut (  );
-   this.then_WithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_ (  );
- }
+    this.given_empty_context_1 (  );
+
+    this.BuildSut (  );
+
+    this.then_WithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_ (  );
+
+  }
   
   public TextColor_Label_given_when_then_WithTextColor_shows_text_Info_and_has_text_color_blue_ (  ) {
-  this.BuildSut (  );
-   this.then_WithTextColor_shows_text_Info_and_has_text_color_blue_ (  );
- }
+    this.BuildSut (  );
+
+    this.then_WithTextColor_shows_text_Info_and_has_text_color_blue_ (  );
+
+  }
   
   
   protected BuildSut (  ) {
-  this.sut = this.testSetup.BuildSut (  );
- }
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
   
   
   // Given Helper Definitions
 
   
-  public given_empty_context (  ) {     }
+  public given_empty_context (  ) {    
+  }
   
-  public given_empty_context_1 (  ) {     }
+  public given_empty_context_1 (  ) {    
+  }
   
   // When Helper Definitions
 
@@ -76,45 +101,67 @@ class Labels_ViewTest {
 
   
   public then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible (  ) {
-  AssertEqual ( "My Expectation Text", this.sut.getTestLabelText (  ) );
-   AssertTrue ( this.sut.getIsTestLabelEnabled (  ) );
-   AssertTrue ( this.sut.getIsTestLabelVisible (  ) );
- }
+    AssertEqual ( "My Expectation Text", this.sut.getTestLabelText (  ) );
+
+    AssertTrue ( this.sut.getIsTestLabelEnabled (  ) );
+
+    AssertTrue ( this.sut.getIsTestLabelVisible (  ) );
+
+  }
   
   public then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible (  ) {
-  AssertEqual ( "My Expectation Text", this.sut.getTestLabelText (  ) );
-   AssertFalse ( this.sut.getIsTestLabelEnabled (  ) );
-   AssertTrue ( this.sut.getIsTestLabelVisible (  ) );
- }
+    AssertEqual ( "My Expectation Text", this.sut.getTestLabelText (  ) );
+
+    AssertFalse ( this.sut.getIsTestLabelEnabled (  ) );
+
+    AssertTrue ( this.sut.getIsTestLabelVisible (  ) );
+
+  }
   
   public then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible (  ) {
-  AssertEqual ( "My Expectation Text", this.sut.getTestLabelText (  ) );
-   AssertTrue ( this.sut.getIsTestLabelEnabled (  ) );
-   AssertFalse ( this.sut.getIsTestLabelVisible (  ) );
- }
+    AssertEqual ( "My Expectation Text", this.sut.getTestLabelText (  ) );
+
+    AssertTrue ( this.sut.getIsTestLabelEnabled (  ) );
+
+    AssertFalse ( this.sut.getIsTestLabelVisible (  ) );
+
+  }
   
   public then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_ (  ) {
-  let actualMultiLineLines: String [] = this.sut.getMultiLineLabelText (  );
-   AssertEqual ( 2, actualMultiLineLines->size (  ) );
-   AssertEqual ( "Expected Line 1", actualMultiLineLines[ 1 ] ?? "" );
-   AssertEqual ( "Expected Line 2", actualMultiLineLines[ 2 ] ?? "" );
- }
+    let actualMultiLineLines: String [] = this.sut.getMultiLineLabelText (  );
+
+    AssertEqual ( 2, actualMultiLineLines->size (  ) );
+
+    AssertEqual ( "Expected Line 1", actualMultiLineLines[ 1 ] ?? "" );
+
+    AssertEqual ( "Expected Line 2", actualMultiLineLines[ 2 ] ?? "" );
+
+  }
   
   public then_WithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_ (  ) {
-  AssertEqual ( "Info", this.sut.getWithToolTipLabelText (  ) );
-   AssertEqual ( "My Expected Tooltip", this.sut.getWithToolTipLabelToolTip (  ) );
- }
+    AssertEqual ( "Info", this.sut.getWithToolTipLabelText (  ) );
+
+    AssertEqual ( "My Expected Tooltip", this.sut.getWithToolTipLabelToolTip (  ) );
+
+  }
   
   public then_WithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_ (  ) {
-  AssertEqual ( "Info", this.sut.getWithMultiLineToolTipLabelText (  ) );
-   let actualWithMultiLineToolTipLines: String [] = this.sut.getWithMultiLineToolTipLabelToolTip (  );
-   AssertEqual ( 2, actualWithMultiLineToolTipLines->size (  ) );
-   AssertEqual ( "Line1", actualWithMultiLineToolTipLines[ 1 ] ?? "" );
-   AssertEqual ( "Line2", actualWithMultiLineToolTipLines[ 2 ] ?? "" );
- }
+    AssertEqual ( "Info", this.sut.getWithMultiLineToolTipLabelText (  ) );
+
+    let actualWithMultiLineToolTipLines: String [] = this.sut.getWithMultiLineToolTipLabelToolTip (  );
+
+    AssertEqual ( 2, actualWithMultiLineToolTipLines->size (  ) );
+
+    AssertEqual ( "Line1", actualWithMultiLineToolTipLines[ 1 ] ?? "" );
+
+    AssertEqual ( "Line2", actualWithMultiLineToolTipLines[ 2 ] ?? "" );
+
+  }
   
   public then_WithTextColor_shows_text_Info_and_has_text_color_blue_ (  ) {
-  AssertEqual ( "Info", this.sut.getWithTextColorLabelText (  ) );
-   AssertEqual ( "blue", this.sut.getWithTextColorLabelTextColor (  ) );
- }
+    AssertEqual ( "Info", this.sut.getWithTextColorLabelText (  ) );
+
+    AssertEqual ( "blue", this.sut.getWithTextColorLabelTextColor (  ) );
+
+  }
 }

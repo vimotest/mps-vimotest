@@ -10,37 +10,46 @@ class DataPathContext_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.testSetup = new DataPathContext_ViewTestSetupImpl (  );
-   this.testSetup.Init (  );
- }
+    this.testSetup = new DataPathContext_ViewTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
   
   
   public Data_Path_Context_given_my_element_when_then_ (  ) {
-  this.given_my_element (  );
-   this.BuildSut (  );
- }
+    this.given_my_element (  );
+
+    this.BuildSut (  );
+
+  }
   
   public Data_Path_Context_implicit_name_given_path_resource_elements_myelement_when_then_ (  ) {
-  this.given_path_resource_elements_myelement (  );
-   this.BuildSut (  );
- }
+    this.given_path_resource_elements_myelement (  );
+
+    this.BuildSut (  );
+
+  }
   
   
   protected BuildSut (  ) {
-  this.sut = this.testSetup.BuildSut (  );
- }
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
   
   
   // Given Helper Definitions
 
   
   public given_my_element (  ) {
-  this.testSetup.SetDataPathContext ( "resource:/elements/myelement" );
- }
+    this.testSetup.SetDataPathContext ( "resource:/elements/myelement" );
+
+  }
   
   public given_path_resource_elements_myelement (  ) {
-  this.testSetup.SetDataPathContext ( "resource:/elements/myelement" );
- }
+    this.testSetup.SetDataPathContext ( "resource:/elements/myelement" );
+
+  }
   
   // When Helper Definitions
 

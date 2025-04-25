@@ -709,10 +709,10 @@
                             <node concept="2OqwBi" id="6mQWpytefI" role="33vP2m">
                               <node concept="2OqwBi" id="6mQWpytefJ" role="2Oq$k0">
                                 <node concept="Jnkvi" id="6mQWpytefK" role="2Oq$k0">
-                                  <ref role="1M0zk5" node="6mQWpyteg9" resolve="tableWidget" />
+                                  <ref role="1M0zk5" node="6mQWpyteg9" resolve="treeWidget" />
                                 </node>
                                 <node concept="3Tsc0h" id="6mQWpytefL" role="2OqNvi">
-                                  <ref role="3TtcxE" to="at53:5Pt$ekxTRbn" />
+                                  <ref role="3TtcxE" to="at53:5Pt$ekxTRbn" resolve="treeColumnWidgets" />
                                 </node>
                               </node>
                               <node concept="2DeJg1" id="6mQWpytefM" role="2OqNvi" />
@@ -1029,7 +1029,7 @@
                       </node>
                       <node concept="2OqwBi" id="6mQWpytqZh" role="1m5AlR">
                         <node concept="2GrUjf" id="6mQWpytqZi" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="6mQWpytqZa" resolve="tableCheck" />
+                          <ref role="2Gs0qQ" node="6mQWpytqZa" resolve="treeCheck" />
                         </node>
                         <node concept="2qgKlT" id="6mQWpytqZj" role="2OqNvi">
                           <ref role="37wK5l" to="fwln:4jKdMMdJYzD" resolve="getWidgetToCheck" />
@@ -1044,10 +1044,10 @@
                       <node concept="2OqwBi" id="6mQWpytqZn" role="3clFbG">
                         <node concept="2OqwBi" id="6mQWpytqZo" role="2Oq$k0">
                           <node concept="2GrUjf" id="6mQWpytqZp" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="6mQWpytqZa" resolve="tableCheck" />
+                            <ref role="2Gs0qQ" node="6mQWpytqZa" resolve="treeCheck" />
                           </node>
                           <node concept="3Tsc0h" id="6mQWpytqZq" role="2OqNvi">
-                            <ref role="3TtcxE" to="53m0:5Pt$ekxU_G1" />
+                            <ref role="3TtcxE" to="53m0:5Pt$ekxU_G1" resolve="treeColumnChecks" />
                           </node>
                         </node>
                         <node concept="2DeJg1" id="6mQWpytqZr" role="2OqNvi" />
@@ -1060,10 +1060,10 @@
                     <node concept="2OqwBi" id="6mQWpytqZu" role="33vP2m">
                       <node concept="2OqwBi" id="6mQWpytqZv" role="2Oq$k0">
                         <node concept="2GrUjf" id="6mQWpytqZw" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="6mQWpytqZa" resolve="tableCheck" />
+                          <ref role="2Gs0qQ" node="6mQWpytqZa" resolve="treeCheck" />
                         </node>
                         <node concept="3Tsc0h" id="6mQWpytqZx" role="2OqNvi">
-                          <ref role="3TtcxE" to="53m0:5Pt$ekxU_G1" />
+                          <ref role="3TtcxE" to="53m0:5Pt$ekxU_G1" resolve="treeColumnChecks" />
                         </node>
                       </node>
                       <node concept="34oBXx" id="6mQWpytqZy" role="2OqNvi" />
@@ -1073,10 +1073,10 @@
                     <node concept="2OqwBi" id="6mQWpytqZ$" role="3uHU7w">
                       <node concept="2OqwBi" id="6mQWpytqZ_" role="2Oq$k0">
                         <node concept="37vLTw" id="6mQWpytqZA" role="2Oq$k0">
-                          <ref role="3cqZAo" node="6mQWpytqZd" resolve="table" />
+                          <ref role="3cqZAo" node="6mQWpytqZd" resolve="tree" />
                         </node>
                         <node concept="3Tsc0h" id="6mQWpytqZB" role="2OqNvi">
-                          <ref role="3TtcxE" to="at53:5Pt$ekxTRbn" />
+                          <ref role="3TtcxE" to="at53:5Pt$ekxTRbn" resolve="treeColumnWidgets" />
                         </node>
                       </node>
                       <node concept="34oBXx" id="6mQWpytqZC" role="2OqNvi" />

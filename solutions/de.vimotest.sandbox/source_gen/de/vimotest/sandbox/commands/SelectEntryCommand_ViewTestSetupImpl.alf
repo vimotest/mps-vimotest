@@ -4,9 +4,11 @@ namespace commands ;
 
 class SelectEntryCommand_ViewTestSetupImpl specializes SelectEntryCommand_ViewTestSetup {
   
-  public Init (  ) {     }
+  public Init (  ) {    
+  }
   
   public BuildSut (  ) : SelectEntryCommand_View  {
-  return null;
- }
+    return null;
+
+  }
 }

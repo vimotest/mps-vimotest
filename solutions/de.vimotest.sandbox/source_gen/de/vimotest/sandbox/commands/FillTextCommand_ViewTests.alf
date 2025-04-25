@@ -10,25 +10,32 @@ class FillTextCommand_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.testSetup = new FillTextCommand_ViewTestSetupImpl (  );
-   this.testSetup.Init (  );
- }
+    this.testSetup = new FillTextCommand_ViewTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
   
   
   public Fill_Text_TextBox_given_when_fill_Changed_in_MyValue_then_ (  ) {
-  this.BuildSut (  );
-   this.when_fill_Changed_in_MyValue (  );
- }
+    this.BuildSut (  );
+
+    this.when_fill_Changed_in_MyValue (  );
+
+  }
   
   public Fill_Text_ComboBox_given_when_fill_Changed_in_MyFreeValue_then_ (  ) {
-  this.BuildSut (  );
-   this.when_fill_Changed_in_MyFreeValue (  );
- }
+    this.BuildSut (  );
+
+    this.when_fill_Changed_in_MyFreeValue (  );
+
+  }
   
   
   protected BuildSut (  ) {
-  this.sut = this.testSetup.BuildSut (  );
- }
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
   
   
   // Given Helper Definitions
@@ -38,12 +45,14 @@ class FillTextCommand_ViewTests {
 
   
   public when_fill_Changed_in_MyValue (  ) {
-  this.sut.myValueTextFilled ( "Changed" );
- }
+    this.sut.myValueTextFilled ( "Changed" );
+
+  }
   
   public when_fill_Changed_in_MyFreeValue (  ) {
-  this.sut.myFreeValueTextFilled ( "Changed" );
- }
+    this.sut.myFreeValueTextFilled ( "Changed" );
+
+  }
   
   // Then Helper Definitions
 

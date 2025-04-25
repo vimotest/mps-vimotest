@@ -7,42 +7,49 @@ class RadioButton_View {
   private OptionsRadioButtonGroupSelectedEntry : RadioButton_ViewOptionsOption  ;
   
   public getOptionsRadioButtonGroupSelectedEntry (  ) : RadioButton_ViewOptionsOption  {
-  return this.OptionsRadioButtonGroupSelectedEntry;
- }
+    return this.OptionsRadioButtonGroupSelectedEntry;
+
+  }
   
   private isOptionsRadioButtonGroupVisible : Boolean  ;
   
   public getIsOptionsRadioButtonGroupVisible (  ) : Boolean  {
-  return this.isOptionsRadioButtonGroupVisible;
- }
+    return this.isOptionsRadioButtonGroupVisible;
+
+  }
   
   private isOptionsRadioButtonGroupEnabled : Boolean  ;
   
   public getIsOptionsRadioButtonGroupEnabled (  ) : Boolean  {
-  return this.isOptionsRadioButtonGroupEnabled;
- }
+    return this.isOptionsRadioButtonGroupEnabled;
+
+  }
   
   private isOptionBRadioButtonVisible : Boolean  ;
   
   public getIsOptionBRadioButtonVisible (  ) : Boolean  {
-  return this.isOptionBRadioButtonVisible;
- }
+    return this.isOptionBRadioButtonVisible;
+
+  }
   
   private isOptionBRadioButtonEnabled : Boolean  ;
   
   public getIsOptionBRadioButtonEnabled (  ) : Boolean  {
-  return this.isOptionBRadioButtonEnabled;
- }
+    return this.isOptionBRadioButtonEnabled;
+
+  }
   
   private isOptionCRadioButtonVisible : Boolean  ;
   
   public getIsOptionCRadioButtonVisible (  ) : Boolean  {
-  return this.isOptionCRadioButtonVisible;
- }
+    return this.isOptionCRadioButtonVisible;
+
+  }
   
   private isOptionCRadioButtonEnabled : Boolean  ;
   
   public getIsOptionCRadioButtonEnabled (  ) : Boolean  {
-  return this.isOptionCRadioButtonEnabled;
- }
+    return this.isOptionCRadioButtonEnabled;
+
+  }
 }

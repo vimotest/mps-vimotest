@@ -286,7 +286,7 @@
       </node>
       <node concept="3_J27D" id="220dcIkyAjd" role="m$_w8">
         <node concept="3Mxwew" id="220dcIkyAje" role="3MwsjC">
-          <property role="3MwjfP" value="2024.3.0-SNAPSHOT" />
+          <property role="3MwjfP" value="2024.3.0" />
         </node>
       </node>
       <node concept="m$f5U" id="220dcIkyAjf" role="m$_yh">

@@ -10,36 +10,49 @@ class TreeViews_ViewTest {
   
   
   protected BeforeTest (  ) {
-  this.testSetup = new TreeViews_ViewTestSetupImpl (  );
-   this.testSetup.Init (  );
- }
+    this.testSetup = new TreeViews_ViewTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
   
   
   public My_Scenario_given_empty_context_when_then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1_and_MyParentIndexRowHandles_has_4_rows_and_MyParentStringRowHandles_has_4_rows (  ) {
-  this.given_empty_context (  );
-   this.BuildSut (  );
-   this.then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible (  );
-   this.then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  );
-   this.then_MyParentIndexRowHandles_has_4_rows (  );
-   this.then_MyParentStringRowHandles_has_4_rows (  );
- }
+    this.given_empty_context (  );
+
+    this.BuildSut (  );
+
+    this.then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible (  );
+
+    this.then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  );
+
+    this.then_MyParentIndexRowHandles_has_4_rows (  );
+
+    this.then_MyParentStringRowHandles_has_4_rows (  );
+
+  }
   
   public TreeView_Ignore_Column_given_empty_context_when_then_MyTreeViewElements_has_2_rows (  ) {
-  this.given_empty_context (  );
-   this.BuildSut (  );
-   this.then_MyTreeViewElements_has_2_rows (  );
- }
+    this.given_empty_context (  );
+
+    this.BuildSut (  );
+
+    this.then_MyTreeViewElements_has_2_rows (  );
+
+  }
   
   
   protected BuildSut (  ) {
-  this.sut = this.testSetup.BuildSut (  );
- }
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
   
   
   // Given Helper Definitions
 
   
-  public given_empty_context (  ) {     }
+  public given_empty_context (  ) {    
+  }
   
   // When Helper Definitions
 
@@ -48,122 +61,213 @@ class TreeViews_ViewTest {
 
   
   public then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible (  ) {
-  let actualRows: TreeViews_ViewMyTreeViewElementsRow [] = this.sut.getMyTreeViewElementsTreeRows (  );
-   AssertEqual ( 2, actualRows->size (  ) );
-   {
-  let row0: TreeViews_ViewMyTreeViewElementsRow = actualRows[ 1 ];
-   AssertEqual ( 0, row0.getRowIndex (  ) );
-   AssertEqual ( 0, row0.getRowDepth (  ) );
-   AssertTrue ( row0.getIsIncludeCheckBoxChecked (  ) );
-   AssertEqual ( "A", row0.getNameLabelText (  ) );
-   AssertEqual ( "B", row0.getDescriptionLabelText (  ) );
-   AssertEqual ( "image_triangle", row0.getInfoImageName (  ) );
- }
-   {
-  let row1: TreeViews_ViewMyTreeViewElementsRow = actualRows[ 2 ];
-   AssertEqual ( 1, row1.getRowIndex (  ) );
-   AssertEqual ( 1, row1.getRowDepth (  ) );
-   AssertFalse ( row1.getIsIncludeCheckBoxChecked (  ) );
-   AssertEqual ( "C", row1.getNameLabelText (  ) );
-   AssertEqual ( "D", row1.getDescriptionLabelText (  ) );
-   AssertEqual ( "image_circle", row1.getInfoImageName (  ) );
- }
-   AssertEqual ( 1, this.sut.getMyTreeViewElementsTreeSelectedRow (  ) );
-   AssertTrue ( this.sut.getIsMyTreeViewElementsTreeEnabled (  ) );
-   AssertTrue ( this.sut.getIsMyTreeViewElementsTreeVisible (  ) );
-   AssertFalse ( this.sut.getIsMyTreeViewElementsTreeDescriptionColumnVisible (  ) );
- }
+    let actualRows: TreeViews_ViewMyTreeViewElementsRow [] = this.sut.getMyTreeViewElementsTreeRows (  );
+
+    AssertEqual ( 2, actualRows->size (  ) );
+
+    {
+      let row0: TreeViews_ViewMyTreeViewElementsRow = actualRows[ 1 ];
+
+      AssertEqual ( 0, row0.getRowIndex (  ) );
+
+      AssertEqual ( 0, row0.getRowDepth (  ) );
+
+      AssertTrue ( row0.getIsIncludeCheckBoxChecked (  ) );
+
+      AssertEqual ( "A", row0.getNameLabelText (  ) );
+
+      AssertEqual ( "B", row0.getDescriptionLabelText (  ) );
+
+      AssertEqual ( "image_triangle", row0.getInfoImageName (  ) );
+
+    }
+
+    {
+      let row1: TreeViews_ViewMyTreeViewElementsRow = actualRows[ 2 ];
+
+      AssertEqual ( 1, row1.getRowIndex (  ) );
+
+      AssertEqual ( 1, row1.getRowDepth (  ) );
+
+      AssertFalse ( row1.getIsIncludeCheckBoxChecked (  ) );
+
+      AssertEqual ( "C", row1.getNameLabelText (  ) );
+
+      AssertEqual ( "D", row1.getDescriptionLabelText (  ) );
+
+      AssertEqual ( "image_circle", row1.getInfoImageName (  ) );
+
+    }
+
+    AssertEqual ( 1, this.sut.getMyTreeViewElementsTreeSelectedRow (  ) );
+
+    AssertTrue ( this.sut.getIsMyTreeViewElementsTreeEnabled (  ) );
+
+    AssertTrue ( this.sut.getIsMyTreeViewElementsTreeVisible (  ) );
+
+    AssertFalse ( this.sut.getIsMyTreeViewElementsTreeDescriptionColumnVisible (  ) );
+
+  }
   
   public then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  ) {
-  let actualRows: TreeViews_ViewMyStringRowHandlesRow [] = this.sut.getMyStringRowHandlesTreeRows (  );
-   AssertEqual ( 2, actualRows->size (  ) );
-   {
-  let row0: TreeViews_ViewMyStringRowHandlesRow = actualRows[ 1 ];
-   AssertEqual ( "ROW0", row0.getRowHandle (  ) );
-   AssertEqual ( 0, row0.getRowDepth (  ) );
-   AssertEqual ( "A", row0.getValuesLabelText (  ) );
- }
-   {
-  let row1: TreeViews_ViewMyStringRowHandlesRow = actualRows[ 2 ];
-   AssertEqual ( "ROW1", row1.getRowHandle (  ) );
-   AssertEqual ( 0, row1.getRowDepth (  ) );
-   AssertEqual ( "B", row1.getValuesLabelText (  ) );
- }
-   AssertEqual ( "ROW1", this.sut.getMyStringRowHandlesTreeSelectedRow (  ) );
- }
+    let actualRows: TreeViews_ViewMyStringRowHandlesRow [] = this.sut.getMyStringRowHandlesTreeRows (  );
+
+    AssertEqual ( 2, actualRows->size (  ) );
+
+    {
+      let row0: TreeViews_ViewMyStringRowHandlesRow = actualRows[ 1 ];
+
+      AssertEqual ( "ROW0", row0.getRowHandle (  ) );
+
+      AssertEqual ( 0, row0.getRowDepth (  ) );
+
+      AssertEqual ( "A", row0.getValuesLabelText (  ) );
+
+    }
+
+    {
+      let row1: TreeViews_ViewMyStringRowHandlesRow = actualRows[ 2 ];
+
+      AssertEqual ( "ROW1", row1.getRowHandle (  ) );
+
+      AssertEqual ( 0, row1.getRowDepth (  ) );
+
+      AssertEqual ( "B", row1.getValuesLabelText (  ) );
+
+    }
+
+    AssertEqual ( "ROW1", this.sut.getMyStringRowHandlesTreeSelectedRow (  ) );
+
+  }
   
   public then_MyParentIndexRowHandles_has_4_rows (  ) {
-  let actualRows: TreeViews_ViewMyParentIndexRowHandlesRow [] = this.sut.getMyParentIndexRowHandlesTreeRows (  );
-   AssertEqual ( 4, actualRows->size (  ) );
-   {
-  let row0: TreeViews_ViewMyParentIndexRowHandlesRow = actualRows[ 1 ];
-   AssertEqual ( 0, row0.getRowIndex (  ) );
-   AssertEqual ( -1, row0.getParentRowIndex (  ) );
-   AssertEqual ( "A", row0.getValuesLabelText (  ) );
- }
-   {
-  let row1: TreeViews_ViewMyParentIndexRowHandlesRow = actualRows[ 2 ];
-   AssertEqual ( 1, row1.getRowIndex (  ) );
-   AssertEqual ( 0, row1.getParentRowIndex (  ) );
-   AssertEqual ( "A.B", row1.getValuesLabelText (  ) );
- }
-   {
-  let row2: TreeViews_ViewMyParentIndexRowHandlesRow = actualRows[ 3 ];
-   AssertEqual ( 2, row2.getRowIndex (  ) );
-   AssertEqual ( -1, row2.getParentRowIndex (  ) );
-   AssertEqual ( "C", row2.getValuesLabelText (  ) );
- }
-   {
-  let row3: TreeViews_ViewMyParentIndexRowHandlesRow = actualRows[ 4 ];
-   AssertEqual ( 3, row3.getRowIndex (  ) );
-   AssertEqual ( 2, row3.getParentRowIndex (  ) );
-   AssertEqual ( "C.D", row3.getValuesLabelText (  ) );
- }
- }
+    let actualRows: TreeViews_ViewMyParentIndexRowHandlesRow [] = this.sut.getMyParentIndexRowHandlesTreeRows (  );
+
+    AssertEqual ( 4, actualRows->size (  ) );
+
+    {
+      let row0: TreeViews_ViewMyParentIndexRowHandlesRow = actualRows[ 1 ];
+
+      AssertEqual ( 0, row0.getRowIndex (  ) );
+
+      AssertEqual ( -1, row0.getParentRowIndex (  ) );
+
+      AssertEqual ( "A", row0.getValuesLabelText (  ) );
+
+    }
+
+    {
+      let row1: TreeViews_ViewMyParentIndexRowHandlesRow = actualRows[ 2 ];
+
+      AssertEqual ( 1, row1.getRowIndex (  ) );
+
+      AssertEqual ( 0, row1.getParentRowIndex (  ) );
+
+      AssertEqual ( "A.B", row1.getValuesLabelText (  ) );
+
+    }
+
+    {
+      let row2: TreeViews_ViewMyParentIndexRowHandlesRow = actualRows[ 3 ];
+
+      AssertEqual ( 2, row2.getRowIndex (  ) );
+
+      AssertEqual ( -1, row2.getParentRowIndex (  ) );
+
+      AssertEqual ( "C", row2.getValuesLabelText (  ) );
+
+    }
+
+    {
+      let row3: TreeViews_ViewMyParentIndexRowHandlesRow = actualRows[ 4 ];
+
+      AssertEqual ( 3, row3.getRowIndex (  ) );
+
+      AssertEqual ( 2, row3.getParentRowIndex (  ) );
+
+      AssertEqual ( "C.D", row3.getValuesLabelText (  ) );
+
+    }
+
+  }
   
   public then_MyParentStringRowHandles_has_4_rows (  ) {
-  let actualRows: TreeViews_ViewMyParentStringRowHandlesRow [] = this.sut.getMyParentStringRowHandlesTreeRows (  );
-   AssertEqual ( 4, actualRows->size (  ) );
-   {
-  let row0: TreeViews_ViewMyParentStringRowHandlesRow = actualRows[ 1 ];
-   AssertEqual ( "HANDLE_A", row0.getRowHandle (  ) );
-   AssertEqual ( "-", row0.getParentRowHandle (  ) );
-   AssertEqual ( "A", row0.getValuesLabelText (  ) );
- }
-   {
-  let row1: TreeViews_ViewMyParentStringRowHandlesRow = actualRows[ 2 ];
-   AssertEqual ( "HANDLE_B", row1.getRowHandle (  ) );
-   AssertEqual ( "HANDLE_A", row1.getParentRowHandle (  ) );
-   AssertEqual ( "A.B", row1.getValuesLabelText (  ) );
- }
-   {
-  let row2: TreeViews_ViewMyParentStringRowHandlesRow = actualRows[ 3 ];
-   AssertEqual ( "HANDLE_C", row2.getRowHandle (  ) );
-   AssertEqual ( "-", row2.getParentRowHandle (  ) );
-   AssertEqual ( "C", row2.getValuesLabelText (  ) );
- }
-   {
-  let row3: TreeViews_ViewMyParentStringRowHandlesRow = actualRows[ 4 ];
-   AssertEqual ( "HANDLE_D", row3.getRowHandle (  ) );
-   AssertEqual ( "HANDLE_C", row3.getParentRowHandle (  ) );
-   AssertEqual ( "C.D", row3.getValuesLabelText (  ) );
- }
- }
+    let actualRows: TreeViews_ViewMyParentStringRowHandlesRow [] = this.sut.getMyParentStringRowHandlesTreeRows (  );
+
+    AssertEqual ( 4, actualRows->size (  ) );
+
+    {
+      let row0: TreeViews_ViewMyParentStringRowHandlesRow = actualRows[ 1 ];
+
+      AssertEqual ( "HANDLE_A", row0.getRowHandle (  ) );
+
+      AssertEqual ( "-", row0.getParentRowHandle (  ) );
+
+      AssertEqual ( "A", row0.getValuesLabelText (  ) );
+
+    }
+
+    {
+      let row1: TreeViews_ViewMyParentStringRowHandlesRow = actualRows[ 2 ];
+
+      AssertEqual ( "HANDLE_B", row1.getRowHandle (  ) );
+
+      AssertEqual ( "HANDLE_A", row1.getParentRowHandle (  ) );
+
+      AssertEqual ( "A.B", row1.getValuesLabelText (  ) );
+
+    }
+
+    {
+      let row2: TreeViews_ViewMyParentStringRowHandlesRow = actualRows[ 3 ];
+
+      AssertEqual ( "HANDLE_C", row2.getRowHandle (  ) );
+
+      AssertEqual ( "-", row2.getParentRowHandle (  ) );
+
+      AssertEqual ( "C", row2.getValuesLabelText (  ) );
+
+    }
+
+    {
+      let row3: TreeViews_ViewMyParentStringRowHandlesRow = actualRows[ 4 ];
+
+      AssertEqual ( "HANDLE_D", row3.getRowHandle (  ) );
+
+      AssertEqual ( "HANDLE_C", row3.getParentRowHandle (  ) );
+
+      AssertEqual ( "C.D", row3.getValuesLabelText (  ) );
+
+    }
+
+  }
   
   public then_MyTreeViewElements_has_2_rows (  ) {
-  let actualRows: TreeViews_ViewMyTreeViewElementsRow [] = this.sut.getMyTreeViewElementsTreeRows (  );
-   AssertEqual ( 2, actualRows->size (  ) );
-   {
-  let row0: TreeViews_ViewMyTreeViewElementsRow = actualRows[ 1 ];
-   AssertEqual ( 0, row0.getRowIndex (  ) );
-   AssertEqual ( 0, row0.getRowDepth (  ) );
-   AssertTrue ( row0.getIsIncludeCheckBoxChecked (  ) );
- }
-   {
-  let row1: TreeViews_ViewMyTreeViewElementsRow = actualRows[ 2 ];
-   AssertEqual ( 1, row1.getRowIndex (  ) );
-   AssertEqual ( 1, row1.getRowDepth (  ) );
-   AssertEqual ( "D", row1.getDescriptionLabelText (  ) );
- }
- }
+    let actualRows: TreeViews_ViewMyTreeViewElementsRow [] = this.sut.getMyTreeViewElementsTreeRows (  );
+
+    AssertEqual ( 2, actualRows->size (  ) );
+
+    {
+      let row0: TreeViews_ViewMyTreeViewElementsRow = actualRows[ 1 ];
+
+      AssertEqual ( 0, row0.getRowIndex (  ) );
+
+      AssertEqual ( 0, row0.getRowDepth (  ) );
+
+      AssertTrue ( row0.getIsIncludeCheckBoxChecked (  ) );
+
+    }
+
+    {
+      let row1: TreeViews_ViewMyTreeViewElementsRow = actualRows[ 2 ];
+
+      AssertEqual ( 1, row1.getRowIndex (  ) );
+
+      AssertEqual ( 1, row1.getRowDepth (  ) );
+
+      AssertEqual ( "D", row1.getDescriptionLabelText (  ) );
+
+    }
+
+  }
 }

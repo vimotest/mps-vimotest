@@ -7,54 +7,63 @@ class TreeViews_View {
   private MyTreeViewElementsTreeSelectedRow : Integer  ;
   
   public getMyTreeViewElementsTreeSelectedRow (  ) : Integer  {
-  return this.MyTreeViewElementsTreeSelectedRow;
- }
+    return this.MyTreeViewElementsTreeSelectedRow;
+
+  }
   
   private isMyTreeViewElementsTreeVisible : Boolean  ;
   
   public getIsMyTreeViewElementsTreeVisible (  ) : Boolean  {
-  return this.isMyTreeViewElementsTreeVisible;
- }
+    return this.isMyTreeViewElementsTreeVisible;
+
+  }
   
   private isMyTreeViewElementsTreeEnabled : Boolean  ;
   
   public getIsMyTreeViewElementsTreeEnabled (  ) : Boolean  {
-  return this.isMyTreeViewElementsTreeEnabled;
- }
+    return this.isMyTreeViewElementsTreeEnabled;
+
+  }
   
   private MyTreeViewElementsTreeRows : TreeViews_ViewMyTreeViewElementsRow [ * ]  ;
   
   public getMyTreeViewElementsTreeRows (  ) : TreeViews_ViewMyTreeViewElementsRow [ * ]  {
-  return this.MyTreeViewElementsTreeRows;
- }
+    return this.MyTreeViewElementsTreeRows;
+
+  }
   
   private isMyTreeViewElementsTreeDescriptionColumnVisible : Boolean  ;
   
   public getIsMyTreeViewElementsTreeDescriptionColumnVisible (  ) : Boolean  {
-  return this.isMyTreeViewElementsTreeDescriptionColumnVisible;
- }
+    return this.isMyTreeViewElementsTreeDescriptionColumnVisible;
+
+  }
   
   private MyStringRowHandlesTreeRows : TreeViews_ViewMyStringRowHandlesRow [ * ]  ;
   
   public getMyStringRowHandlesTreeRows (  ) : TreeViews_ViewMyStringRowHandlesRow [ * ]  {
-  return this.MyStringRowHandlesTreeRows;
- }
+    return this.MyStringRowHandlesTreeRows;
+
+  }
   
   private MyStringRowHandlesTreeSelectedRow : String  ;
   
   public getMyStringRowHandlesTreeSelectedRow (  ) : String  {
-  return this.MyStringRowHandlesTreeSelectedRow;
- }
+    return this.MyStringRowHandlesTreeSelectedRow;
+
+  }
   
   private MyParentIndexRowHandlesTreeRows : TreeViews_ViewMyParentIndexRowHandlesRow [ * ]  ;
   
   public getMyParentIndexRowHandlesTreeRows (  ) : TreeViews_ViewMyParentIndexRowHandlesRow [ * ]  {
-  return this.MyParentIndexRowHandlesTreeRows;
- }
+    return this.MyParentIndexRowHandlesTreeRows;
+
+  }
   
   private MyParentStringRowHandlesTreeRows : TreeViews_ViewMyParentStringRowHandlesRow [ * ]  ;
   
   public getMyParentStringRowHandlesTreeRows (  ) : TreeViews_ViewMyParentStringRowHandlesRow [ * ]  {
-  return this.MyParentStringRowHandlesTreeRows;
- }
+    return this.MyParentStringRowHandlesTreeRows;
+
+  }
 }

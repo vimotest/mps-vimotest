@@ -4,15 +4,19 @@
 
 class SeparateViewController_ViewTestSetupImpl specializes SeparateViewController_ViewTestSetup {
   
-  public Init (  ) {     }
+  public Init (  ) {    
+  }
   
-  public SetEmptyContext (  ) {     }
+  public SetEmptyContext (  ) {    
+  }
   
   public BuildSutViewController (  ) : MyViewController  {
-  return null;
- }
+    return null;
+
+  }
   
   public GetViewModel (  ) : MyViewModel  {
-  return null;
- }
+    return null;
+
+  }
 }

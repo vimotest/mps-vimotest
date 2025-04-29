@@ -7,36 +7,42 @@ class TreeViews_ViewMyTreeViewElementsRow {
   private isIncludeCheckBoxChecked : Boolean  ;
   
   public getIsIncludeCheckBoxChecked (  ) : Boolean  {
-  return this.isIncludeCheckBoxChecked;
- }
+    return this.isIncludeCheckBoxChecked;
+
+  }
   
   private NameLabelText : String  ;
   
   public getNameLabelText (  ) : String  {
-  return this.NameLabelText;
- }
+    return this.NameLabelText;
+
+  }
   
   private DescriptionLabelText : String  ;
   
   public getDescriptionLabelText (  ) : String  {
-  return this.DescriptionLabelText;
- }
+    return this.DescriptionLabelText;
+
+  }
   
   private InfoImageName : String  ;
   
   public getInfoImageName (  ) : String  {
-  return this.InfoImageName;
- }
+    return this.InfoImageName;
+
+  }
   
   private RowIndex : Integer  ;
   
   public getRowIndex (  ) : Integer  {
-  return this.RowIndex;
- }
+    return this.RowIndex;
+
+  }
   
   private RowDepth : Integer  ;
   
   public getRowDepth (  ) : Integer  {
-  return this.RowDepth;
- }
+    return this.RowDepth;
+
+  }
 }

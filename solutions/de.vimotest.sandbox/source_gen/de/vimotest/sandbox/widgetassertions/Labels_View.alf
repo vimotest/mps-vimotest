@@ -7,66 +7,77 @@ class Labels_View {
   private TestLabelText : String  ;
   
   public getTestLabelText (  ) : String  {
-  return this.TestLabelText;
- }
+    return this.TestLabelText;
+
+  }
   
   private isTestLabelEnabled : Boolean  ;
   
   public getIsTestLabelEnabled (  ) : Boolean  {
-  return this.isTestLabelEnabled;
- }
+    return this.isTestLabelEnabled;
+
+  }
   
   private isTestLabelVisible : Boolean  ;
   
   public getIsTestLabelVisible (  ) : Boolean  {
-  return this.isTestLabelVisible;
- }
+    return this.isTestLabelVisible;
+
+  }
   
   private MultiLineLabelText : String [ * ]  ;
   
   public getMultiLineLabelText (  ) : String [ * ]  {
-  return this.MultiLineLabelText;
- }
+    return this.MultiLineLabelText;
+
+  }
   
   private WithToolTipLabelText : String  ;
   
   public getWithToolTipLabelText (  ) : String  {
-  return this.WithToolTipLabelText;
- }
+    return this.WithToolTipLabelText;
+
+  }
   
   private WithToolTipLabelToolTip : String  ;
   
   public getWithToolTipLabelToolTip (  ) : String  {
-  return this.WithToolTipLabelToolTip;
- }
+    return this.WithToolTipLabelToolTip;
+
+  }
   
   private WithMultiLineToolTipLabelText : String  ;
   
   public getWithMultiLineToolTipLabelText (  ) : String  {
-  return this.WithMultiLineToolTipLabelText;
- }
+    return this.WithMultiLineToolTipLabelText;
+
+  }
   
   private WithMultiLineToolTipLabelToolTip : String [ * ]  ;
   
   public getWithMultiLineToolTipLabelToolTip (  ) : String [ * ]  {
-  return this.WithMultiLineToolTipLabelToolTip;
- }
+    return this.WithMultiLineToolTipLabelToolTip;
+
+  }
   
   private WithTextColorLabelText : String  ;
   
   public getWithTextColorLabelText (  ) : String  {
-  return this.WithTextColorLabelText;
- }
+    return this.WithTextColorLabelText;
+
+  }
   
   private WithTextColorLabelTextColor : String  ;
   
   public getWithTextColorLabelTextColor (  ) : String  {
-  return this.WithTextColorLabelTextColor;
- }
+    return this.WithTextColorLabelTextColor;
+
+  }
   
   private isOnlyVisibilityLabelVisible : Boolean  ;
   
   public getIsOnlyVisibilityLabelVisible (  ) : Boolean  {
-  return this.isOnlyVisibilityLabelVisible;
- }
+    return this.isOnlyVisibilityLabelVisible;
+
+  }
 }

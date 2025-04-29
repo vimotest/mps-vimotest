@@ -7,46 +7,57 @@ class LoginView {
   private UsernameTextBoxText : String  ;
   
   public getUsernameTextBoxText (  ) : String  {
-  return this.UsernameTextBoxText;
- }
+    return this.UsernameTextBoxText;
+
+  }
   
   private PasswordTextBoxText : String  ;
   
   public getPasswordTextBoxText (  ) : String  {
-  return this.PasswordTextBoxText;
- }
+    return this.PasswordTextBoxText;
+
+  }
   
   private isShowPasswordCheckBoxChecked : Boolean  ;
   
   public getIsShowPasswordCheckBoxChecked (  ) : Boolean  {
-  return this.isShowPasswordCheckBoxChecked;
- }
+    return this.isShowPasswordCheckBoxChecked;
+
+  }
   
   private isLoginButtonEnabled : Boolean  ;
   
   public getIsLoginButtonEnabled (  ) : Boolean  {
-  return this.isLoginButtonEnabled;
- }
+    return this.isLoginButtonEnabled;
+
+  }
   
   private ErrorLabelText : String  ;
   
   public getErrorLabelText (  ) : String  {
-  return this.ErrorLabelText;
- }
+    return this.ErrorLabelText;
+
+  }
   
   private isErrorLabelVisible : Boolean  ;
   
   public getIsErrorLabelVisible (  ) : Boolean  {
-  return this.isErrorLabelVisible;
- }
+    return this.isErrorLabelVisible;
+
+  }
   
-  public loadView (  ) {     }
+  public loadView (  ) {    
+  }
   
-  public usernameTextFilled (   in text: String  ) {     }
+  public usernameTextFilled (   in text: String  ) {    
+  }
   
-  public passwordTextFilled (   in text: String  ) {     }
+  public passwordTextFilled (   in text: String  ) {    
+  }
   
-  public showPasswordChecked (   in isChecked: Boolean  ) {     }
+  public showPasswordChecked (   in isChecked: Boolean  ) {    
+  }
   
-  public loginClicked (  ) {     }
+  public loginClicked (  ) {    
+  }
 }

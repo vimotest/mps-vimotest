@@ -7,18 +7,21 @@ class LowLevelFields_ViewCustomTableRowFieldRow {
   private HeaderLabelText : String  ;
   
   public getHeaderLabelText (  ) : String  {
-  return this.HeaderLabelText;
- }
+    return this.HeaderLabelText;
+
+  }
   
   public AdditionalBool : Boolean  ;
   
   public getAdditionalBool (  ) : Boolean  {
-  return this.AdditionalBool;
- }
+    return this.AdditionalBool;
+
+  }
   
   private RowHandle : String  ;
   
   public getRowHandle (  ) : String  {
-  return this.RowHandle;
- }
+    return this.RowHandle;
+
+  }
 }

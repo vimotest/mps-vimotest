@@ -4,11 +4,14 @@ namespace context ;
 
 class XmlElementContext_ViewTestSetupImpl specializes XmlElementContext_ViewTestSetup {
   
-  public Init (  ) {     }
+  public Init (  ) {    
+  }
   
-  public SetXmlElementContext (   in xml: String  ) {     }
+  public SetXmlElementContext (   in xml: String  ) {    
+  }
   
   public BuildSut (  ) : XmlElementContext_View  {
-  return null;
- }
+    return null;
+
+  }
 }

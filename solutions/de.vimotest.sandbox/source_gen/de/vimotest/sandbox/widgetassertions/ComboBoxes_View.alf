@@ -7,54 +7,63 @@ class ComboBoxes_View {
   private MyOptionsComboBoxEntries : String [ * ]  ;
   
   public getMyOptionsComboBoxEntries (  ) : String [ * ]  {
-  return this.MyOptionsComboBoxEntries;
- }
+    return this.MyOptionsComboBoxEntries;
+
+  }
   
   private MyOptionsComboBoxSelectedEntry : String  ;
   
   public getMyOptionsComboBoxSelectedEntry (  ) : String  {
-  return this.MyOptionsComboBoxSelectedEntry;
- }
+    return this.MyOptionsComboBoxSelectedEntry;
+
+  }
   
   private isMyOptionsComboBoxVisible : Boolean  ;
   
   public getIsMyOptionsComboBoxVisible (  ) : Boolean  {
-  return this.isMyOptionsComboBoxVisible;
- }
+    return this.isMyOptionsComboBoxVisible;
+
+  }
   
   private isMyOptionsComboBoxEnabled : Boolean  ;
   
   public getIsMyOptionsComboBoxEnabled (  ) : Boolean  {
-  return this.isMyOptionsComboBoxEnabled;
- }
+    return this.isMyOptionsComboBoxEnabled;
+
+  }
   
   private MyOptionsWithFreeTextComboBoxEntries : String [ * ]  ;
   
   public getMyOptionsWithFreeTextComboBoxEntries (  ) : String [ * ]  {
-  return this.MyOptionsWithFreeTextComboBoxEntries;
- }
+    return this.MyOptionsWithFreeTextComboBoxEntries;
+
+  }
   
   private MyOptionsWithFreeTextComboBoxSelectedEntry : String  ;
   
   public getMyOptionsWithFreeTextComboBoxSelectedEntry (  ) : String  {
-  return this.MyOptionsWithFreeTextComboBoxSelectedEntry;
- }
+    return this.MyOptionsWithFreeTextComboBoxSelectedEntry;
+
+  }
   
   private MyOptionsWithFreeTextComboBoxText : String  ;
   
   public getMyOptionsWithFreeTextComboBoxText (  ) : String  {
-  return this.MyOptionsWithFreeTextComboBoxText;
- }
+    return this.MyOptionsWithFreeTextComboBoxText;
+
+  }
   
   private isMyOptionsWithFreeTextComboBoxVisible : Boolean  ;
   
   public getIsMyOptionsWithFreeTextComboBoxVisible (  ) : Boolean  {
-  return this.isMyOptionsWithFreeTextComboBoxVisible;
- }
+    return this.isMyOptionsWithFreeTextComboBoxVisible;
+
+  }
   
   private isMyOptionsWithFreeTextComboBoxEnabled : Boolean  ;
   
   public getIsMyOptionsWithFreeTextComboBoxEnabled (  ) : Boolean  {
-  return this.isMyOptionsWithFreeTextComboBoxEnabled;
- }
+    return this.isMyOptionsWithFreeTextComboBoxEnabled;
+
+  }
 }

@@ -4,9 +4,11 @@ namespace commands ;
 
 class GenericCommands_ViewTestSetupImpl specializes GenericCommands_ViewTestSetup {
   
-  public Init (  ) {     }
+  public Init (  ) {    
+  }
   
   public BuildSut (  ) : GenericCommands_View  {
-  return null;
- }
+    return null;
+
+  }
 }

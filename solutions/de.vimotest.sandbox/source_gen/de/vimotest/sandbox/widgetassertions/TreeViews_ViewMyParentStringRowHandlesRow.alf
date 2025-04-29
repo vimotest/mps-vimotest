@@ -7,18 +7,21 @@ class TreeViews_ViewMyParentStringRowHandlesRow {
   private ValuesLabelText : String  ;
   
   public getValuesLabelText (  ) : String  {
-  return this.ValuesLabelText;
- }
+    return this.ValuesLabelText;
+
+  }
   
   private RowHandle : String  ;
   
   public getRowHandle (  ) : String  {
-  return this.RowHandle;
- }
+    return this.RowHandle;
+
+  }
   
   private ParentRowHandle : String  ;
   
   public getParentRowHandle (  ) : String  {
-  return this.ParentRowHandle;
- }
+    return this.ParentRowHandle;
+
+  }
 }

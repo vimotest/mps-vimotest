@@ -7,16 +7,20 @@ class CheckCommand_View {
   private isMyCheckBox1CheckBoxChecked : Boolean  ;
   
   public getIsMyCheckBox1CheckBoxChecked (  ) : Boolean  {
-  return this.isMyCheckBox1CheckBoxChecked;
- }
+    return this.isMyCheckBox1CheckBoxChecked;
+
+  }
   
   private isMyCheckBox2CheckBoxChecked : Boolean  ;
   
   public getIsMyCheckBox2CheckBoxChecked (  ) : Boolean  {
-  return this.isMyCheckBox2CheckBoxChecked;
- }
+    return this.isMyCheckBox2CheckBoxChecked;
+
+  }
   
-  public myCheckBox1Checked (   in isChecked: Boolean  ) {     }
+  public myCheckBox1Checked (   in isChecked: Boolean  ) {    
+  }
   
-  public myCheckBox2Checked (   in isChecked: Boolean  ) {     }
+  public myCheckBox2Checked (   in isChecked: Boolean  ) {    
+  }
 }

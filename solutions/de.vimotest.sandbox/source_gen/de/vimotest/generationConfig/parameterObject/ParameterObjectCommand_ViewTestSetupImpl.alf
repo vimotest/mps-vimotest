@@ -4,11 +4,14 @@
 
 class ParameterObjectCommand_ViewTestSetupImpl specializes ParameterObjectCommand_ViewTestSetup {
   
-  public Init (  ) {     }
+  public Init (  ) {    
+  }
   
-  public SetEmptyContext (  ) {     }
+  public SetEmptyContext (  ) {    
+  }
   
   public BuildSut (  ) : ParameterObjectCommand_View  {
-  return null;
- }
+    return null;
+
+  }
 }

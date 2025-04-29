@@ -7,8 +7,10 @@ class ViMoTestFileNameBinding {
   private MyElementsTableRows : ViMoTestFileNameBindingMyElementsRow [ * ]  ;
   
   public getMyElementsTableRows (  ) : ViMoTestFileNameBindingMyElementsRow [ * ]  {
-  return this.MyElementsTableRows;
- }
+    return this.MyElementsTableRows;
+
+  }
   
-  public loadView (  ) {     }
+  public loadView (  ) {    
+  }
 }

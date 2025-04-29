@@ -10,20 +10,25 @@ class StringContext2_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.testSetup = new StringContext_ViewTestSetupImpl (  );
-   this.testSetup.Init (  );
- }
+    this.testSetup = new StringContext_ViewTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
   
   
   public SimpleStringContext2_given_alice_bob_charlie_when_then_ (  ) {
-  this.given_alice_bob_charlie (  );
-   this.BuildSut (  );
- }
+    this.given_alice_bob_charlie (  );
+
+    this.BuildSut (  );
+
+  }
   
   
   protected BuildSut (  ) {
-  this.sut = this.testSetup.BuildSut (  );
- }
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
   
   
   // Given Helper Definitions
@@ -32,8 +37,9 @@ class StringContext2_ViewTests {
   private alice_bob_charlie : String = "Alice, Bob, Charlie";
   
   public given_alice_bob_charlie (  ) {
-  this.testSetup.SetSimpleStringContext ( this.alice_bob_charlie );
- }
+    this.testSetup.SetSimpleStringContext ( this.alice_bob_charlie );
+
+  }
   
   // When Helper Definitions
 

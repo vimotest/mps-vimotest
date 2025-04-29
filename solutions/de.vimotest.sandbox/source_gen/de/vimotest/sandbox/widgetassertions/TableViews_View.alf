@@ -7,42 +7,49 @@ class TableViews_View {
   private MyElementsTableRows : TableViews_ViewMyElementsRow [ * ]  ;
   
   public getMyElementsTableRows (  ) : TableViews_ViewMyElementsRow [ * ]  {
-  return this.MyElementsTableRows;
- }
+    return this.MyElementsTableRows;
+
+  }
   
   private MyElementsTableSelectedRow : Integer  ;
   
   public getMyElementsTableSelectedRow (  ) : Integer  {
-  return this.MyElementsTableSelectedRow;
- }
+    return this.MyElementsTableSelectedRow;
+
+  }
   
   private isMyElementsTableVisible : Boolean  ;
   
   public getIsMyElementsTableVisible (  ) : Boolean  {
-  return this.isMyElementsTableVisible;
- }
+    return this.isMyElementsTableVisible;
+
+  }
   
   private isMyElementsTableEnabled : Boolean  ;
   
   public getIsMyElementsTableEnabled (  ) : Boolean  {
-  return this.isMyElementsTableEnabled;
- }
+    return this.isMyElementsTableEnabled;
+
+  }
   
   private isMyElementsTableDescriptionColumnVisible : Boolean  ;
   
   public getIsMyElementsTableDescriptionColumnVisible (  ) : Boolean  {
-  return this.isMyElementsTableDescriptionColumnVisible;
- }
+    return this.isMyElementsTableDescriptionColumnVisible;
+
+  }
   
   private MyStringRowHandlesTableRows : TableViews_ViewMyStringRowHandlesRow [ * ]  ;
   
   public getMyStringRowHandlesTableRows (  ) : TableViews_ViewMyStringRowHandlesRow [ * ]  {
-  return this.MyStringRowHandlesTableRows;
- }
+    return this.MyStringRowHandlesTableRows;
+
+  }
   
   private MyStringRowHandlesTableSelectedRow : String  ;
   
   public getMyStringRowHandlesTableSelectedRow (  ) : String  {
-  return this.MyStringRowHandlesTableSelectedRow;
- }
+    return this.MyStringRowHandlesTableSelectedRow;
+
+  }
 }

@@ -7,12 +7,14 @@ class SelectRowCommand_ViewMyStringRowHandleListViewElementsRow {
   private HeaderLabelText : String  ;
   
   public getHeaderLabelText (  ) : String  {
-  return this.HeaderLabelText;
- }
+    return this.HeaderLabelText;
+
+  }
   
   private RowHandle : String  ;
   
   public getRowHandle (  ) : String  {
-  return this.RowHandle;
- }
+    return this.RowHandle;
+
+  }
 }

@@ -4,9 +4,11 @@ namespace commands ;
 
 class RowBasedCommand_ViewTestSetupImpl specializes RowBasedCommand_ViewTestSetup {
   
-  public Init (  ) {     }
+  public Init (  ) {    
+  }
   
   public BuildSut (  ) : RowBasedCommand_View  {
-  return null;
- }
+    return null;
+
+  }
 }

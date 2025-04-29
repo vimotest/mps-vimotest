@@ -4,9 +4,11 @@ namespace commands ;
 
 class CheckCommand_ViewTestSetupImpl specializes CheckCommand_ViewTestSetup {
   
-  public Init (  ) {     }
+  public Init (  ) {    
+  }
   
   public BuildSut (  ) : CheckCommand_View  {
-  return null;
- }
+    return null;
+
+  }
 }

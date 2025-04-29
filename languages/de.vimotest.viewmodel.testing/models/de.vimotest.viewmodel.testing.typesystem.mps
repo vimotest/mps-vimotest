@@ -1176,7 +1176,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="bZSVZcAlpJ" role="2OqNvi">
-              <ref role="3TtcxE" to="at53:5Pt$ekxTRbn" />
+              <ref role="3TtcxE" to="at53:5Pt$ekxTRbn" resolve="treeColumnWidgets" />
             </node>
           </node>
         </node>
@@ -3020,7 +3020,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="2$TY9D5HOu9" role="2OqNvi">
-              <ref role="3TtcxE" to="at53:5Pt$ekxTRbn" />
+              <ref role="3TtcxE" to="at53:5Pt$ekxTRbn" resolve="treeColumnWidgets" />
             </node>
           </node>
         </node>

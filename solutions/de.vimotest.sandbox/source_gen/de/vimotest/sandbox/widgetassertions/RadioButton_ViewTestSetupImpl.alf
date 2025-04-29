@@ -4,9 +4,11 @@ namespace widgetassertions ;
 
 class RadioButton_ViewTestSetupImpl specializes RadioButton_ViewTestSetup {
   
-  public Init (  ) {     }
+  public Init (  ) {    
+  }
   
   public BuildSut (  ) : RadioButton_View  {
-  return null;
- }
+    return null;
+
+  }
 }

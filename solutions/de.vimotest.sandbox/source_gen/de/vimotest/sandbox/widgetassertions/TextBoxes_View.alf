@@ -7,24 +7,28 @@ class TextBoxes_View {
   private MyValueTextBoxText : String  ;
   
   public getMyValueTextBoxText (  ) : String  {
-  return this.MyValueTextBoxText;
- }
+    return this.MyValueTextBoxText;
+
+  }
   
   private isMyValueTextBoxVisible : Boolean  ;
   
   public getIsMyValueTextBoxVisible (  ) : Boolean  {
-  return this.isMyValueTextBoxVisible;
- }
+    return this.isMyValueTextBoxVisible;
+
+  }
   
   private isMyValueTextBoxEnabled : Boolean  ;
   
   public getIsMyValueTextBoxEnabled (  ) : Boolean  {
-  return this.isMyValueTextBoxEnabled;
- }
+    return this.isMyValueTextBoxEnabled;
+
+  }
   
   private MultiLineTextBoxValueTextBoxText : String [ * ]  ;
   
   public getMultiLineTextBoxValueTextBoxText (  ) : String [ * ]  {
-  return this.MultiLineTextBoxValueTextBoxText;
- }
+    return this.MultiLineTextBoxValueTextBoxText;
+
+  }
 }

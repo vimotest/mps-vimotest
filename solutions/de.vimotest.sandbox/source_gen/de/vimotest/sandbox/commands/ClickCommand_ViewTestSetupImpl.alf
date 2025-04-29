@@ -4,9 +4,11 @@ namespace commands ;
 
 class ClickCommand_ViewTestSetupImpl specializes ClickCommand_ViewTestSetup {
   
-  public Init (  ) {     }
+  public Init (  ) {    
+  }
   
   public BuildSut (  ) : ClickCommand_View  {
-  return null;
- }
+    return null;
+
+  }
 }

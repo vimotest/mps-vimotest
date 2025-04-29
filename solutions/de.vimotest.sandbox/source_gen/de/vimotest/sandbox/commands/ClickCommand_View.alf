@@ -4,5 +4,6 @@ namespace commands ;
 
 class ClickCommand_View {
   
-  public okClicked (  ) {     }
+  public okClicked (  ) {    
+  }
 }

@@ -10,20 +10,25 @@ class ClickCommand_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.testSetup = new ClickCommand_ViewTestSetupImpl (  );
-   this.testSetup.Init (  );
- }
+    this.testSetup = new ClickCommand_ViewTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
   
   
   public Click_Button_given_when_click_Ok_then_ (  ) {
-  this.BuildSut (  );
-   this.when_click_Ok (  );
- }
+    this.BuildSut (  );
+
+    this.when_click_Ok (  );
+
+  }
   
   
   protected BuildSut (  ) {
-  this.sut = this.testSetup.BuildSut (  );
- }
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
   
   
   // Given Helper Definitions
@@ -33,8 +38,9 @@ class ClickCommand_ViewTests {
 
   
   public when_click_Ok (  ) {
-  this.sut.okClicked (  );
- }
+    this.sut.okClicked (  );
+
+  }
   
   // Then Helper Definitions
 

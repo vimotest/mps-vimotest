@@ -4,13 +4,17 @@ namespace context ;
 
 class XmlFileContext_ViewTestSetupImpl specializes XmlFileContext_ViewTestSetup {
   
-  public Init (  ) {     }
+  public Init (  ) {    
+  }
   
-  public SetXmlFileContext (   in xmlFileContent: String  ) {     }
+  public SetXmlFileContext (   in xmlFileContent: String  ) {    
+  }
   
-  public SetXmlExternalFileContext (   in xmlFileName: String  ) {     }
+  public SetXmlExternalFileContext (   in xmlFileName: String  ) {    
+  }
   
   public BuildSut (  ) : XmlFileContext_View  {
-  return null;
- }
+    return null;
+
+  }
 }

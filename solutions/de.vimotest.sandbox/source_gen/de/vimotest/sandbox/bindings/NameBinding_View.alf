@@ -7,22 +7,27 @@ class NameBinding_View {
   private mText : String  ;
   
   public getCustomText (  ) : String  {
-  return this.mText;
- }
+    return this.mText;
+
+  }
   
   private mEnabled : Boolean  ;
   
   public getCustomEnabled (  ) : Boolean  {
-  return this.mEnabled;
- }
+    return this.mEnabled;
+
+  }
   
   private rows : MyCustomRow [ * ]  ;
   
   public getRows (  ) : MyCustomRow [ * ]  {
-  return this.rows;
- }
+    return this.rows;
+
+  }
   
-  public loadView (  ) {     }
+  public loadView (  ) {    
+  }
   
-  public OkClicked (  ) {     }
+  public OkClicked (  ) {    
+  }
 }

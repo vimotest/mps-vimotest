@@ -7,30 +7,35 @@ class TableViews_ViewMyElementsRow {
   private isIncludeCheckBoxChecked : Boolean  ;
   
   public getIsIncludeCheckBoxChecked (  ) : Boolean  {
-  return this.isIncludeCheckBoxChecked;
- }
+    return this.isIncludeCheckBoxChecked;
+
+  }
   
   private NameLabelText : String  ;
   
   public getNameLabelText (  ) : String  {
-  return this.NameLabelText;
- }
+    return this.NameLabelText;
+
+  }
   
   private DescriptionLabelText : String  ;
   
   public getDescriptionLabelText (  ) : String  {
-  return this.DescriptionLabelText;
- }
+    return this.DescriptionLabelText;
+
+  }
   
   private InfoIconImageName : String  ;
   
   public getInfoIconImageName (  ) : String  {
-  return this.InfoIconImageName;
- }
+    return this.InfoIconImageName;
+
+  }
   
   private RowIndex : Integer  ;
   
   public getRowIndex (  ) : Integer  {
-  return this.RowIndex;
- }
+    return this.RowIndex;
+
+  }
 }

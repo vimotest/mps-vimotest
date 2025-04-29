@@ -7,18 +7,21 @@ class Buttons_View {
   private OkButtonText : String  ;
   
   public getOkButtonText (  ) : String  {
-  return this.OkButtonText;
- }
+    return this.OkButtonText;
+
+  }
   
   private isOkButtonEnabled : Boolean  ;
   
   public getIsOkButtonEnabled (  ) : Boolean  {
-  return this.isOkButtonEnabled;
- }
+    return this.isOkButtonEnabled;
+
+  }
   
   private isOkButtonVisible : Boolean  ;
   
   public getIsOkButtonVisible (  ) : Boolean  {
-  return this.isOkButtonVisible;
- }
+    return this.isOkButtonVisible;
+
+  }
 }

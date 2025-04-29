@@ -10,40 +10,53 @@ class DataTableContext_ViewTests {
   
   
   protected BeforeTest (  ) {
-  this.testSetup = new DataTableContext_ViewTestSetupImpl (  );
-   this.testSetup.Init (  );
- }
+    this.testSetup = new DataTableContext_ViewTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
   
   
   public DataTable_Context_Custom_Setter_given_dataTableCustomSetter_when_then_ (  ) {
-  this.given_dataTableCustomSetter (  );
-   this.BuildSut (  );
- }
+    this.given_dataTableCustomSetter (  );
+
+    this.BuildSut (  );
+
+  }
   
   public DataTable_Context_to_String_given_dataTableToString_when_then_ (  ) {
-  this.given_dataTableToString (  );
-   this.BuildSut (  );
- }
+    this.given_dataTableToString (  );
+
+    this.BuildSut (  );
+
+  }
   
   public DataTable_Context_to_JSON_given_dataTableToJson_when_then_ (  ) {
-  this.given_dataTableToJson (  );
-   this.BuildSut (  );
- }
+    this.given_dataTableToJson (  );
+
+    this.BuildSut (  );
+
+  }
   
   public DataTable_Context_to_XML_given_dataTableToXml_when_then_ (  ) {
-  this.given_dataTableToXml (  );
-   this.BuildSut (  );
- }
+    this.given_dataTableToXml (  );
+
+    this.BuildSut (  );
+
+  }
   
   public DataTable_Context_implicit_name_given_id_0_name_A_when_then_ (  ) {
-  this.given_id_0_name_A (  );
-   this.BuildSut (  );
- }
+    this.given_id_0_name_A (  );
+
+    this.BuildSut (  );
+
+  }
   
   
   protected BuildSut (  ) {
-  this.sut = this.testSetup.BuildSut (  );
- }
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
   
   
   // Given Helper Definitions
@@ -52,32 +65,37 @@ class DataTableContext_ViewTests {
   private dataTableCustomSetter : String = "| id | name |\n| 0 | A |";
   
   public given_dataTableCustomSetter (  ) {
-  this.testSetup.SetIdAndName ( this.dataTableCustomSetter );
- }
+    this.testSetup.SetIdAndName ( this.dataTableCustomSetter );
+
+  }
   
   private dataTableToString : String = "| id | name |\n| 0 | A |";
   
   public given_dataTableToString (  ) {
-  this.testSetup.SetDataTableString ( this.dataTableToString );
- }
+    this.testSetup.SetDataTableString ( this.dataTableToString );
+
+  }
   
   private dataTableToJson : String = "[ { id:\"0\", name:\"A\" } ]";
   
   public given_dataTableToJson (  ) {
-  this.testSetup.SetDataTableJson ( this.dataTableToJson );
- }
+    this.testSetup.SetDataTableJson ( this.dataTableToJson );
+
+  }
   
   private dataTableToXml : String = "<Data>\n  <DataRow>\n    <id>0    </id>\n    <name>A    </name>\n| 0 | A |\n  </DataRow>\n</Data>";
   
   public given_dataTableToXml (  ) {
-  this.testSetup.SetDataTableXml ( this.dataTableToXml );
- }
+    this.testSetup.SetDataTableXml ( this.dataTableToXml );
+
+  }
   
   private id_0_name_A : String = "| id | name |\n| 0 | A |";
   
   public given_id_0_name_A (  ) {
-  this.testSetup.SetDataTableString ( this.id_0_name_A );
- }
+    this.testSetup.SetDataTableString ( this.id_0_name_A );
+
+  }
   
   // When Helper Definitions
 

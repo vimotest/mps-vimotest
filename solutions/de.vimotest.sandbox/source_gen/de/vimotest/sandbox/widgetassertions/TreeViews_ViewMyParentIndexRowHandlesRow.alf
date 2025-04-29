@@ -7,18 +7,21 @@ class TreeViews_ViewMyParentIndexRowHandlesRow {
   private ValuesLabelText : String  ;
   
   public getValuesLabelText (  ) : String  {
-  return this.ValuesLabelText;
- }
+    return this.ValuesLabelText;
+
+  }
   
   private RowIndex : Integer  ;
   
   public getRowIndex (  ) : Integer  {
-  return this.RowIndex;
- }
+    return this.RowIndex;
+
+  }
   
   private ParentRowIndex : Integer  ;
   
   public getParentRowIndex (  ) : Integer  {
-  return this.ParentRowIndex;
- }
+    return this.ParentRowIndex;
+
+  }
 }

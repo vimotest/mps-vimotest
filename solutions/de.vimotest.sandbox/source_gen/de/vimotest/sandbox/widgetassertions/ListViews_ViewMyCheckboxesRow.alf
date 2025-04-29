@@ -7,18 +7,21 @@ class ListViews_ViewMyCheckboxesRow {
   private isHeaderCheckBoxChecked : Boolean  ;
   
   public getIsHeaderCheckBoxChecked (  ) : Boolean  {
-  return this.isHeaderCheckBoxChecked;
- }
+    return this.isHeaderCheckBoxChecked;
+
+  }
   
   private HeaderCheckBoxText : String  ;
   
   public getHeaderCheckBoxText (  ) : String  {
-  return this.HeaderCheckBoxText;
- }
+    return this.HeaderCheckBoxText;
+
+  }
   
   private RowIndex : Integer  ;
   
   public getRowIndex (  ) : Integer  {
-  return this.RowIndex;
- }
+    return this.RowIndex;
+
+  }
 }

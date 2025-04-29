@@ -7,12 +7,14 @@ class ViMoTestFileNameBindingMyElementsRow {
   private columnCellLabelText : String  ;
   
   public getColumnCellLabelText (  ) : String  {
-  return this.columnCellLabelText;
- }
+    return this.columnCellLabelText;
+
+  }
   
   private RowIndex : Integer  ;
   
   public getRowIndex (  ) : Integer  {
-  return this.RowIndex;
- }
+    return this.RowIndex;
+
+  }
 }

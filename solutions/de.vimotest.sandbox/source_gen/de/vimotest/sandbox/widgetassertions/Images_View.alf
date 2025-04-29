@@ -7,24 +7,28 @@ class Images_View {
   private StatusImageName : String  ;
   
   public getStatusImageName (  ) : String  {
-  return this.StatusImageName;
- }
+    return this.StatusImageName;
+
+  }
   
   private isStatusImageEnabled : Boolean  ;
   
   public getIsStatusImageEnabled (  ) : Boolean  {
-  return this.isStatusImageEnabled;
- }
+    return this.isStatusImageEnabled;
+
+  }
   
   private isStatusImageVisible : Boolean  ;
   
   public getIsStatusImageVisible (  ) : Boolean  {
-  return this.isStatusImageVisible;
- }
+    return this.isStatusImageVisible;
+
+  }
   
   private UpOrDownImageName : String  ;
   
   public getUpOrDownImageName (  ) : String  {
-  return this.UpOrDownImageName;
- }
+    return this.UpOrDownImageName;
+
+  }
 }

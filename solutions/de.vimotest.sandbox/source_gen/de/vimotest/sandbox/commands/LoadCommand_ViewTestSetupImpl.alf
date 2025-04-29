@@ -4,9 +4,11 @@ namespace commands ;
 
 class LoadCommand_ViewTestSetupImpl specializes LoadCommand_ViewTestSetup {
   
-  public Init (  ) {     }
+  public Init (  ) {    
+  }
   
   public BuildSut (  ) : LoadCommand_View  {
-  return null;
- }
+    return null;
+
+  }
 }

@@ -7,104 +7,122 @@ class ListViews_View {
   private isMyListOfLabelListVisible : Boolean  ;
   
   public getIsMyListOfLabelListVisible (  ) : Boolean  {
-  return this.isMyListOfLabelListVisible;
- }
+    return this.isMyListOfLabelListVisible;
+
+  }
   
   private isMyListOfLabelListEnabled : Boolean  ;
   
   public getIsMyListOfLabelListEnabled (  ) : Boolean  {
-  return this.isMyListOfLabelListEnabled;
- }
+    return this.isMyListOfLabelListEnabled;
+
+  }
   
   private MyListOfLabelListRows : ListViews_ViewMyListOfLabelRow [ * ]  ;
   
   public getMyListOfLabelListRows (  ) : ListViews_ViewMyListOfLabelRow [ * ]  {
-  return this.MyListOfLabelListRows;
- }
+    return this.MyListOfLabelListRows;
+
+  }
   
   private MyListOfLabelListSelectedRow : Integer  ;
   
   public getMyListOfLabelListSelectedRow (  ) : Integer  {
-  return this.MyListOfLabelListSelectedRow;
- }
+    return this.MyListOfLabelListSelectedRow;
+
+  }
   
   private isMyListOfImagesListVisible : Boolean  ;
   
   public getIsMyListOfImagesListVisible (  ) : Boolean  {
-  return this.isMyListOfImagesListVisible;
- }
+    return this.isMyListOfImagesListVisible;
+
+  }
   
   private isMyListOfImagesListEnabled : Boolean  ;
   
   public getIsMyListOfImagesListEnabled (  ) : Boolean  {
-  return this.isMyListOfImagesListEnabled;
- }
+    return this.isMyListOfImagesListEnabled;
+
+  }
   
   private MyListOfImagesListRows : ListViews_ViewMyListOfImagesRow [ * ]  ;
   
   public getMyListOfImagesListRows (  ) : ListViews_ViewMyListOfImagesRow [ * ]  {
-  return this.MyListOfImagesListRows;
- }
+    return this.MyListOfImagesListRows;
+
+  }
   
   private MyListOfImagesListSelectedRow : Integer  ;
   
   public getMyListOfImagesListSelectedRow (  ) : Integer  {
-  return this.MyListOfImagesListSelectedRow;
- }
+    return this.MyListOfImagesListSelectedRow;
+
+  }
   
   private MyCheckboxesListRows : ListViews_ViewMyCheckboxesRow [ * ]  ;
   
   public getMyCheckboxesListRows (  ) : ListViews_ViewMyCheckboxesRow [ * ]  {
-  return this.MyCheckboxesListRows;
- }
+    return this.MyCheckboxesListRows;
+
+  }
   
   private MyCheckboxesListSelectedRow : Integer  ;
   
   public getMyCheckboxesListSelectedRow (  ) : Integer  {
-  return this.MyCheckboxesListSelectedRow;
- }
+    return this.MyCheckboxesListSelectedRow;
+
+  }
   
   private isMyCheckboxesListVisible : Boolean  ;
   
   public getIsMyCheckboxesListVisible (  ) : Boolean  {
-  return this.isMyCheckboxesListVisible;
- }
+    return this.isMyCheckboxesListVisible;
+
+  }
   
   private isMyCheckboxesListEnabled : Boolean  ;
   
   public getIsMyCheckboxesListEnabled (  ) : Boolean  {
-  return this.isMyCheckboxesListEnabled;
- }
+    return this.isMyCheckboxesListEnabled;
+
+  }
   
   private MyStringRowHandlesListRows : ListViews_ViewMyStringRowHandlesRow [ * ]  ;
   
   public getMyStringRowHandlesListRows (  ) : ListViews_ViewMyStringRowHandlesRow [ * ]  {
-  return this.MyStringRowHandlesListRows;
- }
+    return this.MyStringRowHandlesListRows;
+
+  }
   
   private MyStringRowHandlesListSelectedRow : String  ;
   
   public getMyStringRowHandlesListSelectedRow (  ) : String  {
-  return this.MyStringRowHandlesListSelectedRow;
- }
+    return this.MyStringRowHandlesListSelectedRow;
+
+  }
   
   private MyListWithMultiRowSelectionListRows : ListViews_ViewMyListWithMultiRowSelectionRow [ * ]  ;
   
   public getMyListWithMultiRowSelectionListRows (  ) : ListViews_ViewMyListWithMultiRowSelectionRow [ * ]  {
-  return this.MyListWithMultiRowSelectionListRows;
- }
+    return this.MyListWithMultiRowSelectionListRows;
+
+  }
   
   private MyListWithMultiRowSelectionListSelectedRows : Integer [ * ]  ;
   
   public getMyListWithMultiRowSelectionListSelectedRows (  ) : Integer [ * ]  {
-  return this.MyListWithMultiRowSelectionListSelectedRows;
- }
+    return this.MyListWithMultiRowSelectionListSelectedRows;
+
+  }
   
   private MyButtonsListRows : ListViews_ViewMyButtonsRow [ * ]  ;
   
   public getMyButtonsListRows (  ) : ListViews_ViewMyButtonsRow [ * ]  {
-  return this.MyButtonsListRows;
- }
+    return this.MyButtonsListRows;
+
+  }
   
-  public buttonsClicked (   in rowIndex: Integer  ) {     }
+  public buttonsClicked (   in rowIndex: Integer  ) {    
+  }
 }

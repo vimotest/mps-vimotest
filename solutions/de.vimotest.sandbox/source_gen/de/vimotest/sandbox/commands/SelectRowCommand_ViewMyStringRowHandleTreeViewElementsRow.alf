@@ -7,18 +7,21 @@ class SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow {
   private columnCellLabelText : String  ;
   
   public getColumnCellLabelText (  ) : String  {
-  return this.columnCellLabelText;
- }
+    return this.columnCellLabelText;
+
+  }
   
   private RowHandle : String  ;
   
   public getRowHandle (  ) : String  {
-  return this.RowHandle;
- }
+    return this.RowHandle;
+
+  }
   
   private RowDepth : Integer  ;
   
   public getRowDepth (  ) : Integer  {
-  return this.RowDepth;
- }
+    return this.RowDepth;
+
+  }
 }

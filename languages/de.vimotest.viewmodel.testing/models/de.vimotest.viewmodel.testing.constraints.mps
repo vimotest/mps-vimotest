@@ -1264,10 +1264,10 @@
             </node>
             <node concept="2OqwBi" id="5Pt$ekxgGAJ" role="3uHU7B">
               <node concept="35c_gC" id="5Pt$ekxgGAK" role="2Oq$k0">
-                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" />
+                <ref role="35c_gD" to="53m0:2Yd1qrJONfw" resolve="ViewWidgetCheck" />
               </node>
               <node concept="2qgKlT" id="5Pt$ekxgGAL" role="2OqNvi">
-                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" />
+                <ref role="37wK5l" to="fwln:7a1oxbxXWUl" resolve="getWidgetConceptToCheckByParentNode" />
                 <node concept="nLn13" id="5Pt$ekxgGAM" role="37wK5m" />
               </node>
             </node>

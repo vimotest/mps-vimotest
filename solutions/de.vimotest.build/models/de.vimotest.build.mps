@@ -10,6 +10,7 @@
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="mk2q" ref="r:394bda66-ac7c-48d2-8b30-5ebcc56c2d2a(alfi.build)" />
     <import index="gwjr" ref="r:9d11b55c-368f-4d5a-8409-18718d1d42b0(CppBaseLanguage.build)" />
+    <import index="jn6j" ref="r:ded66146-2842-4fe9-8436-576d58b859d9(CsBaseLanguage.build)" />
   </imports>
   <registry>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
@@ -234,6 +235,12 @@
         <ref role="398BVh" node="OD4q9CUuk9" resolve="dependencies_home" />
       </node>
     </node>
+    <node concept="2sgV4H" id="34dedS$vgbx" role="1l3spa">
+      <ref role="1l3spb" to="jn6j:4xDflt7HBlw" resolve="CsBaseLanguage" />
+      <node concept="398BVA" id="34dedS$vgbz" role="2JcizS">
+        <ref role="398BVh" node="OD4q9CUuk9" resolve="dependencies_home" />
+      </node>
+    </node>
     <node concept="1l3spV" id="220dcIkyAjn" role="1l3spN">
       <node concept="m$_wl" id="5a8akp1RYYw" role="39821P">
         <ref role="m_rDy" node="220dcIkyAja" resolve="de.vimotest" />
@@ -279,7 +286,7 @@
       </node>
       <node concept="3_J27D" id="220dcIkyAjd" role="m$_w8">
         <node concept="3Mxwew" id="220dcIkyAje" role="3MwsjC">
-          <property role="3MwjfP" value="2024.1.9" />
+          <property role="3MwjfP" value="2024.3.0-SNAPSHOT" />
         </node>
       </node>
       <node concept="m$f5U" id="220dcIkyAjf" role="m$_yh">
@@ -1037,6 +1044,11 @@
         <node concept="1SiIV0" id="4_8VHnqVero" role="3bR37C">
           <node concept="3bR9La" id="4_8VHnqVerp" role="1SiIV1">
             <ref role="3bR37D" to="gwjr:4h_5oU0U7hO" resolve="CppBaseLanguage.build" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="34dedS$vgcj" role="3bR37C">
+          <node concept="3bR9La" id="34dedS$vgck" role="1SiIV1">
+            <ref role="3bR37D" to="jn6j:7d6JWQ55TB$" resolve="CsBaseLanguage.build" />
           </node>
         </node>
       </node>

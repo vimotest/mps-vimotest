@@ -4,9 +4,11 @@ namespace commands ;
 
 class FillTextCommand_ViewTestSetupImpl specializes FillTextCommand_ViewTestSetup {
   
-  public Init (  ) {     }
+  public Init (  ) {    
+  }
   
   public BuildSut (  ) : FillTextCommand_View  {
-  return null;
- }
+    return null;
+
+  }
 }

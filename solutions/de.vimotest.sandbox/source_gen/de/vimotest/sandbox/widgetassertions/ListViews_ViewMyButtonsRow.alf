@@ -7,12 +7,14 @@ class ListViews_ViewMyButtonsRow {
   private ButtonsButtonText : String  ;
   
   public getButtonsButtonText (  ) : String  {
-  return this.ButtonsButtonText;
- }
+    return this.ButtonsButtonText;
+
+  }
   
   private RowHandle : String  ;
   
   public getRowHandle (  ) : String  {
-  return this.RowHandle;
- }
+    return this.RowHandle;
+
+  }
 }

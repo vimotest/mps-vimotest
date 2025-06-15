@@ -52,7 +52,7 @@
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.vimotest</id>
         <name>mps-vimotest</name>
-        <version>2025.1.0</version>
+        <version>2025.1.1-SNAPSHOT</version>
         <depends>com.intellij.modules.platform</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.editor.tooltips</depends>
@@ -88,6 +88,7 @@
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" kind="rt" />
           <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" kind="rt" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
           <module ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" kind="rt" />
@@ -126,6 +127,7 @@
           <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
           <language id="l:515552c7-fcc0-4ab4-9789-2f3c49344e85:jetbrains.mps.baseLanguage.varVariable" />
           <language id="l:df345b11-b8c7-4213-ac66-48d2a9b75d88:jetbrains.mps.baseLanguageInternal" />
+          <language id="l:63650c59-16c8-498a-99c8-005c7ee9515d:jetbrains.mps.lang.access" />
           <language id="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" />
           <language id="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" />
           <language id="l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints" />
@@ -850,7 +852,7 @@
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>de.vimotest</id>
         <name>mps-vimotest</name>
-        <version>2025.1.0</version>
+        <version>2025.1.1-SNAPSHOT</version>
         <depends>com.intellij.modules.platform</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.editor.tooltips</depends>
@@ -886,6 +888,7 @@
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" kind="rt" />
           <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" kind="rt" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
           <module ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" kind="rt" />
@@ -924,6 +927,7 @@
           <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
           <language id="l:515552c7-fcc0-4ab4-9789-2f3c49344e85:jetbrains.mps.baseLanguage.varVariable" />
           <language id="l:df345b11-b8c7-4213-ac66-48d2a9b75d88:jetbrains.mps.baseLanguageInternal" />
+          <language id="l:63650c59-16c8-498a-99c8-005c7ee9515d:jetbrains.mps.lang.access" />
           <language id="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" />
           <language id="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" />
           <language id="l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints" />
@@ -1954,6 +1958,7 @@
       <plugin path="${artifacts.mps}/plugins/mps-junit5" id="jetbrains.mps.junit5" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" id="jetbrains.mps.testing" />
       <plugin path="${artifacts.mps}/plugins/mps-tooltips" id="jetbrains.mps.editor.tooltips" />
+      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
       <library file="${artifacts.mps}/languages/workbench-stub.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
       <chunk>
@@ -2563,7 +2568,6 @@
         <fileset file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/de.vimotest.mpswidgets.runtime">
@@ -2934,6 +2938,7 @@
       </jvmargs>
       
       
+      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
       <library file="${artifacts.mps}/languages/workbench-stub.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
       <library file="${build.layout}/tests/de.vimotest.plugin.jar" />

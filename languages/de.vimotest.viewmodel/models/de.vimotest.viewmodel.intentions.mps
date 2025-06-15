@@ -18,6 +18,7 @@
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="dj18" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.psi(MPS.IDEA/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="fnpx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.notification(MPS.IDEA/)" />
     <import index="at53" ref="r:9e3a5843-688b-4c6d-b3dd-9f321700c21b(de.vimotest.viewmodel.structure)" implicit="true" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -50,6 +51,10 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -71,6 +76,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -123,6 +131,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -847,7 +856,7 @@
                   <node concept="17QB3L" id="nMAdlmy6aV" role="1tU5fm" />
                   <node concept="2OqwBi" id="skhZFNolfF" role="33vP2m">
                     <node concept="Xl_RD" id="nMAdlmy8LB" role="2Oq$k0">
-                      <property role="Xl_RC" value="The image file is outside of the module directory. Cannot import files." />
+                      <property role="Xl_RC" value="The image file is outside of the module directory %s. Cannot import files." />
                     </node>
                     <node concept="2cAKMz" id="skhZFNonO3" role="2OqNvi">
                       <node concept="37vLTw" id="43lx_5liadw" role="2cAKU6">
@@ -861,6 +870,60 @@
                 <property role="2xdLsb" value="gZ5fh_4/error" />
                 <node concept="37vLTw" id="43lx_5li3la" role="9lYJi">
                   <ref role="3cqZAo" node="nMAdlmy6b0" resolve="message" />
+                </node>
+              </node>
+              <node concept="3cpWs8" id="6611lFS5lez" role="3cqZAp">
+                <node concept="3cpWsn" id="6611lFS5le$" role="3cpWs9">
+                  <property role="TrG5h" value="ideaProject" />
+                  <property role="3TUv4t" value="true" />
+                  <node concept="3uibUv" id="6611lFS5le_" role="1tU5fm">
+                    <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+                  </node>
+                  <node concept="2YIFZM" id="6611lFS5leA" role="33vP2m">
+                    <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project)" resolve="toIdeaProject" />
+                    <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+                    <node concept="2OqwBi" id="6611lFS5leB" role="37wK5m">
+                      <node concept="2OqwBi" id="6611lFS5leC" role="2Oq$k0">
+                        <node concept="37vLTw" id="6611lFS5leD" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6611lFS3d2c" resolve="editorContext" />
+                        </node>
+                        <node concept="liA8E" id="6611lFS5leE" role="2OqNvi">
+                          <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext()" resolve="getOperationContext" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="6611lFS5leF" role="2OqNvi">
+                        <ref role="37wK5l" to="w1kc:~IOperationContext.getProject()" resolve="getProject" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="6611lFS4Fqr" role="3cqZAp">
+                <node concept="2YIFZM" id="6611lFS4GwJ" role="3clFbG">
+                  <ref role="37wK5l" to="fnpx:~Notifications$Bus.notify(com.intellij.notification.Notification,com.intellij.openapi.project.Project)" resolve="notify" />
+                  <ref role="1Pybhc" to="fnpx:~Notifications$Bus" resolve="Notifications.Bus" />
+                  <node concept="2ShNRf" id="6611lFS4GQ3" role="37wK5m">
+                    <node concept="1pGfFk" id="6611lFS5eet" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="fnpx:~Notification.&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,com.intellij.notification.NotificationType)" resolve="Notification" />
+                      <node concept="Xl_RD" id="6611lFS5xWU" role="37wK5m">
+                        <property role="Xl_RC" value="vimotest" />
+                      </node>
+                      <node concept="Xl_RD" id="6611lFS5gDD" role="37wK5m">
+                        <property role="Xl_RC" value="Image Import Failed" />
+                      </node>
+                      <node concept="37vLTw" id="6611lFS5fV6" role="37wK5m">
+                        <ref role="3cqZAo" node="nMAdlmy6b0" resolve="message" />
+                      </node>
+                      <node concept="Rm8GO" id="6611lFS5iGY" role="37wK5m">
+                        <ref role="Rm8GQ" to="fnpx:~NotificationType.ERROR" resolve="ERROR" />
+                        <ref role="1Px2BO" to="fnpx:~NotificationType" resolve="NotificationType" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="6611lFS5jr8" role="37wK5m">
+                    <ref role="3cqZAo" node="6611lFS5le$" resolve="ideaProject" />
+                  </node>
                 </node>
               </node>
             </node>

@@ -6873,15 +6873,10 @@
       <node concept="30G5F_" id="50C086h8clb" role="30HLyM">
         <node concept="3clFbS" id="50C086h8clc" role="2VODD2">
           <node concept="3clFbF" id="50C086h8cld" role="3cqZAp">
-            <node concept="2OqwBi" id="50C086h8dNF" role="3clFbG">
-              <node concept="2OqwBi" id="50C086h8dNG" role="2Oq$k0">
-                <node concept="30H73N" id="50C086h8dNH" role="2Oq$k0" />
-                <node concept="3TrEf2" id="50C086h8dNI" role="2OqNvi">
-                  <ref role="3Tt5mk" to="53m0:50C086h85lF" resolve="value" />
-                </node>
-              </node>
-              <node concept="3TrcHB" id="50C086h8dNJ" role="2OqNvi">
-                <ref role="3TsBF5" to="at53:4xJPu9gsdgV" resolve="isMultiLine" />
+            <node concept="2OqwBi" id="4M9b1EU8YxQ" role="3clFbG">
+              <node concept="30H73N" id="4M9b1EU8Ygh" role="2Oq$k0" />
+              <node concept="2qgKlT" id="4M9b1EU8YGL" role="2OqNvi">
+                <ref role="37wK5l" to="fwln:4M9b1EU8USP" resolve="definesVariable" />
               </node>
             </node>
           </node>
@@ -7055,12 +7050,10 @@
       <node concept="30G5F_" id="5ZcB1Gh4QAu" role="30HLyM">
         <node concept="3clFbS" id="5ZcB1Gh4QAv" role="2VODD2">
           <node concept="3clFbF" id="5ZcB1Gh4Raj" role="3cqZAp">
-            <node concept="3fqX7Q" id="5ZcB1Gh4Rah" role="3clFbG">
-              <node concept="2OqwBi" id="5ZcB1Gh4RzK" role="3fr31v">
-                <node concept="30H73N" id="5ZcB1Gh4Rb3" role="2Oq$k0" />
-                <node concept="3TrcHB" id="5ZcB1Gh4RVS" role="2OqNvi">
-                  <ref role="3TsBF5" to="53m0:5ZcB1GgVwqn" resolve="generateAsFile" />
-                </node>
+            <node concept="2OqwBi" id="4M9b1EU90gV" role="3clFbG">
+              <node concept="30H73N" id="4M9b1EU8ZZm" role="2Oq$k0" />
+              <node concept="2qgKlT" id="4M9b1EU90rQ" role="2OqNvi">
+                <ref role="37wK5l" to="fwln:4M9b1EU8USP" resolve="definesVariable" />
               </node>
             </node>
           </node>
@@ -7211,6 +7204,52 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="4M9b1ETYCp7" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="53m0:7NXUkdOvp8K" resolve="ContextReference" />
+      <node concept="gft3U" id="4M9b1ETYCp8" role="1lVwrX">
+        <node concept="2VYdi" id="4M9b1ETYCp9" role="gfFT$">
+          <node concept="2ZBi8u" id="4M9b1EU7oWQ" role="lGtFl">
+            <ref role="2rW$FS" node="5ZcB1GfZVeY" resolve="ITestScenarioContext_NamespaceDefinition" />
+          </node>
+          <node concept="1sPUBX" id="4M9b1ETYCpa" role="lGtFl">
+            <ref role="v9R2y" node="5ZcB1GfUHlK" resolve="switch_ITestScenarioContext_Definition" />
+            <node concept="3NFfHV" id="4M9b1ETYCpb" role="1sPUBK">
+              <node concept="3clFbS" id="4M9b1ETYCpc" role="2VODD2">
+                <node concept="3clFbF" id="4M9b1ETYCpd" role="3cqZAp">
+                  <node concept="2OqwBi" id="4M9b1ETYCpe" role="3clFbG">
+                    <node concept="30H73N" id="4M9b1ETYCpf" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="4M9b1ETYCpg" role="2OqNvi">
+                      <ref role="3Tt5mk" to="53m0:7NXUkdOvpli" resolve="ref" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="4M9b1ETYDN3" role="30HLyM">
+        <node concept="3clFbS" id="4M9b1ETYDN4" role="2VODD2">
+          <node concept="3clFbF" id="4M9b1EU0A4y" role="3cqZAp">
+            <node concept="1Wc70l" id="4M9b1EU934c" role="3clFbG">
+              <node concept="2OqwBi" id="4M9b1EU93pg" role="3uHU7w">
+                <node concept="30H73N" id="4M9b1EU939m" role="2Oq$k0" />
+                <node concept="2qgKlT" id="4M9b1EU93$G" role="2OqNvi">
+                  <ref role="37wK5l" to="fwln:4M9b1EU8USP" resolve="definesVariable" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4M9b1EU0Am8" role="3uHU7B">
+                <node concept="30H73N" id="4M9b1EU0A4x" role="2Oq$k0" />
+                <node concept="2qgKlT" id="4M9b1EU0Ax2" role="2OqNvi">
+                  <ref role="37wK5l" to="fwln:4M9b1EU0uXu" resolve="referencesOtherTestSuite" />
                 </node>
               </node>
             </node>

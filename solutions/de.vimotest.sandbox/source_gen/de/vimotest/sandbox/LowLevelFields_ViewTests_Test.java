@@ -69,7 +69,7 @@ public class LowLevelFields_ViewTests_Test {
   }
   public void then_CustomListRowField_has_1_rows() {
     List<LowLevelFields_ViewCustomListRowFieldRow> actualRows = this.sut.getCustomListRowFieldListRows();
-    Assert.assertEquals(1, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(actualRows.size()));
     // {
     LowLevelFields_ViewCustomListRowFieldRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("0", row0.getRowHandle());
@@ -80,7 +80,7 @@ public class LowLevelFields_ViewTests_Test {
   }
   public void then_CustomTableRowField_has_1_rows() {
     List<LowLevelFields_ViewCustomTableRowFieldRow> actualRows = this.sut.getCustomTableRowFieldTableRows();
-    Assert.assertEquals(1, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(actualRows.size()));
     // {
     LowLevelFields_ViewCustomTableRowFieldRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("0", row0.getRowHandle());
@@ -90,7 +90,7 @@ public class LowLevelFields_ViewTests_Test {
   }
   public void then_CustomTreeRowField_has_1_rows() {
     List<LowLevelFields_ViewCustomTreeRowFieldRow> actualRows = this.sut.getCustomTreeRowFieldTreeRows();
-    Assert.assertEquals(1, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(actualRows.size()));
     // {
     LowLevelFields_ViewCustomTreeRowFieldRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("9", row0.getRowHandle());

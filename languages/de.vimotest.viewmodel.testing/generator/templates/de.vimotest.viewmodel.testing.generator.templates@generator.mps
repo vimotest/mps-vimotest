@@ -262,6 +262,9 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="611ecc9e-0703-4ab9-a13c-fb396c607716" name="de.vimotest.types">
+      <concept id="7808764115844976085" name="de.vimotest.types.structure.StringType" flags="ng" index="1nBS12" />
+    </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
       <concept id="1217889960776" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_UserObjectAccessBase" flags="nn" index="2fTw9j">
         <child id="1217890689512" name="userKey" index="2fWi3N" />
@@ -7214,25 +7217,13 @@
     <node concept="3aamgX" id="4M9b1ETYCp7" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="53m0:7NXUkdOvp8K" resolve="ContextReference" />
+      <ref role="2sgKRv" node="5ZcB1GfZVeY" resolve="ITestScenarioContext_NamespaceDefinition" />
       <node concept="gft3U" id="4M9b1ETYCp8" role="1lVwrX">
-        <node concept="2VYdi" id="4M9b1ETYCp9" role="gfFT$">
-          <node concept="2ZBi8u" id="4M9b1EU7oWQ" role="lGtFl">
-            <ref role="2rW$FS" node="5ZcB1GfZVeY" resolve="ITestScenarioContext_NamespaceDefinition" />
-          </node>
-          <node concept="1sPUBX" id="4M9b1ETYCpa" role="lGtFl">
+        <node concept="6lMYc" id="2qzEpKp4bCK" role="gfFT$">
+          <property role="TrG5h" value="foo" />
+          <node concept="1nBS12" id="2qzEpKp4bNC" role="3xMlr6" />
+          <node concept="1sPUBX" id="2qzEpKp4bO2" role="lGtFl">
             <ref role="v9R2y" node="5ZcB1GfUHlK" resolve="switch_ITestScenarioContext_Definition" />
-            <node concept="3NFfHV" id="4M9b1ETYCpb" role="1sPUBK">
-              <node concept="3clFbS" id="4M9b1ETYCpc" role="2VODD2">
-                <node concept="3clFbF" id="4M9b1ETYCpd" role="3cqZAp">
-                  <node concept="2OqwBi" id="4M9b1ETYCpe" role="3clFbG">
-                    <node concept="30H73N" id="4M9b1ETYCpf" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="4M9b1ETYCpg" role="2OqNvi">
-                      <ref role="3Tt5mk" to="53m0:7NXUkdOvpli" resolve="ref" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
         </node>
       </node>

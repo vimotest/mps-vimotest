@@ -68,7 +68,7 @@ public class ListViews_ViewTest_Test {
 
   public void then_MyListOfLabel_has_4_rows_and_selected_row_index_3() {
     List<ListViews_ViewMyListOfLabelRow> actualRows = this.sut.getMyListOfLabelListRows();
-    Assert.assertEquals(4, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(4), Integer.valueOf(actualRows.size()));
     // {
     ListViews_ViewMyListOfLabelRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
@@ -98,7 +98,7 @@ public class ListViews_ViewTest_Test {
   }
   public void then_MyListOfImages_has_2_rows() {
     List<ListViews_ViewMyListOfImagesRow> actualRows = this.sut.getMyListOfImagesListRows();
-    Assert.assertEquals(2, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     ListViews_ViewMyListOfImagesRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
@@ -112,7 +112,7 @@ public class ListViews_ViewTest_Test {
   }
   public void then_MyCheckboxes_has_3_rows() {
     List<ListViews_ViewMyCheckboxesRow> actualRows = this.sut.getMyCheckboxesListRows();
-    Assert.assertEquals(3, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(3), Integer.valueOf(actualRows.size()));
     // {
     ListViews_ViewMyCheckboxesRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
@@ -132,7 +132,7 @@ public class ListViews_ViewTest_Test {
   }
   public void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() {
     List<ListViews_ViewMyStringRowHandlesRow> actualRows = this.sut.getMyStringRowHandlesListRows();
-    Assert.assertEquals(2, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     ListViews_ViewMyStringRowHandlesRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("ROW0", row0.getRowHandle());
@@ -147,7 +147,7 @@ public class ListViews_ViewTest_Test {
   }
   public void then_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_() {
     List<ListViews_ViewMyListWithMultiRowSelectionRow> actualRows = this.sut.getMyListWithMultiRowSelectionListRows();
-    Assert.assertEquals(3, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(3), Integer.valueOf(actualRows.size()));
     // {
     ListViews_ViewMyListWithMultiRowSelectionRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
@@ -164,13 +164,13 @@ public class ListViews_ViewTest_Test {
     Assert.assertEquals("C", row2.getHeaderLabelText());
     // }
     List<Integer> actualMyListWithMultiRowSelectionSelectedRowHandles = this.sut.getMyListWithMultiRowSelectionListSelectedRows();
-    Assert.assertEquals(2, actualMyListWithMultiRowSelectionSelectedRowHandles.size());
+    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualMyListWithMultiRowSelectionSelectedRowHandles.size()));
     Assert.assertEquals(Integer.valueOf(actualMyListWithMultiRowSelectionSelectedRowHandles.get(1 - 1)), actualMyListWithMultiRowSelectionSelectedRowHandles.get(1 - 1));
     Assert.assertEquals(Integer.valueOf(actualMyListWithMultiRowSelectionSelectedRowHandles.get(2 - 1)), actualMyListWithMultiRowSelectionSelectedRowHandles.get(2 - 1));
   }
   public void then_MyListOfLabel_has_4_rows() {
     List<ListViews_ViewMyListOfLabelRow> actualRows = this.sut.getMyListOfLabelListRows();
-    Assert.assertEquals(4, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(4), Integer.valueOf(actualRows.size()));
     // {
     ListViews_ViewMyListOfLabelRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
@@ -190,7 +190,7 @@ public class ListViews_ViewTest_Test {
   }
   public void then_MyListOfLabel_has_4_rows_1() {
     List<ListViews_ViewMyListOfLabelRow> actualRows = this.sut.getMyListOfLabelListRows();
-    Assert.assertEquals(4, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(4), Integer.valueOf(actualRows.size()));
     // {
     ListViews_ViewMyListOfLabelRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
@@ -214,6 +214,6 @@ public class ListViews_ViewTest_Test {
   }
   public void then_MyButtons_has_0_rows() {
     List<ListViews_ViewMyButtonsRow> actualRows = this.sut.getMyButtonsListRows();
-    Assert.assertEquals(0, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(0), Integer.valueOf(actualRows.size()));
   }
 }

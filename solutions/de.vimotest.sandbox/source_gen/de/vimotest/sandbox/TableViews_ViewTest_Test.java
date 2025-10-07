@@ -50,7 +50,7 @@ public class TableViews_ViewTest_Test {
 
   public void then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible() {
     List<TableViews_ViewMyElementsRow> actualRows = this.sut.getMyElementsTableRows();
-    Assert.assertEquals(2, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TableViews_ViewMyElementsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
@@ -74,7 +74,7 @@ public class TableViews_ViewTest_Test {
   }
   public void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() {
     List<TableViews_ViewMyStringRowHandlesRow> actualRows = this.sut.getMyStringRowHandlesTableRows();
-    Assert.assertEquals(2, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TableViews_ViewMyStringRowHandlesRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("ROW0", row0.getRowHandle());
@@ -89,7 +89,7 @@ public class TableViews_ViewTest_Test {
   }
   public void then_MyElements_has_2_rows() {
     List<TableViews_ViewMyElementsRow> actualRows = this.sut.getMyElementsTableRows();
-    Assert.assertEquals(2, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TableViews_ViewMyElementsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());

@@ -52,7 +52,7 @@ public class ComboBoxes_ViewTest_Test {
 
   public void then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible() {
     List<String> actualMyOptionsEntries = this.sut.getMyOptionsComboBoxEntries();
-    Assert.assertEquals(3, actualMyOptionsEntries.size());
+    Assert.assertEquals(Integer.valueOf(3), Integer.valueOf(actualMyOptionsEntries.size()));
     Assert.assertEquals("A1", actualMyOptionsEntries.get(1 - 1));
     Assert.assertEquals("A2", actualMyOptionsEntries.get(2 - 1));
     Assert.assertEquals("A3", actualMyOptionsEntries.get(3 - 1));
@@ -62,7 +62,7 @@ public class ComboBoxes_ViewTest_Test {
   }
   public void then_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_() {
     List<String> actualMyOptionsWithFreeTextEntries = this.sut.getMyOptionsWithFreeTextComboBoxEntries();
-    Assert.assertEquals(2, actualMyOptionsWithFreeTextEntries.size());
+    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualMyOptionsWithFreeTextEntries.size()));
     Assert.assertEquals("E1", actualMyOptionsWithFreeTextEntries.get(1 - 1));
     Assert.assertEquals("E2", actualMyOptionsWithFreeTextEntries.get(2 - 1));
     Assert.assertEquals(null, this.sut.getMyOptionsWithFreeTextComboBoxSelectedEntry());
@@ -70,14 +70,14 @@ public class ComboBoxes_ViewTest_Test {
   }
   public void then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled() {
     List<String> actualMyOptionsEntries_1 = this.sut.getMyOptionsComboBoxEntries();
-    Assert.assertEquals(1, actualMyOptionsEntries_1.size());
+    Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(actualMyOptionsEntries_1.size()));
     Assert.assertEquals("A", actualMyOptionsEntries_1.get(1 - 1));
     Assert.assertEquals("A", this.sut.getMyOptionsComboBoxSelectedEntry());
     Assert.assertFalse(this.sut.getIsMyOptionsComboBoxEnabled());
   }
   public void then_MyOptions_has_1_entries_and_selected_A_and_is_not_visible() {
     List<String> actualMyOptionsEntries_2 = this.sut.getMyOptionsComboBoxEntries();
-    Assert.assertEquals(1, actualMyOptionsEntries_2.size());
+    Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(actualMyOptionsEntries_2.size()));
     Assert.assertEquals("A", actualMyOptionsEntries_2.get(1 - 1));
     Assert.assertEquals("A", this.sut.getMyOptionsComboBoxSelectedEntry());
     Assert.assertFalse(this.sut.getIsMyOptionsComboBoxVisible());

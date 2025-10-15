@@ -6,6 +6,7 @@
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -263,6 +264,18 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
     <language id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes">
@@ -15459,6 +15472,18 @@
           <node concept="3clFbT" id="4M9b1EU8Vn_" role="3clFbG" />
         </node>
       </node>
+      <node concept="P$JXv" id="5r9VRHXP$vy" role="lGtFl">
+        <node concept="TZ5HA" id="5r9VRHXP$vz" role="TZ5H$">
+          <node concept="1dT_AC" id="5r9VRHXP$v$" role="1dT_Ay">
+            <property role="1dT_AB" value="Generator information:" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5r9VRHXP$x1" role="TZ5H$">
+          <node concept="1dT_AC" id="5r9VRHXP$x2" role="1dT_Ay">
+            <property role="1dT_AB" value="Determines if the context defines content which is generated into a variable (e.g., multiline strings)." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13hLZK" id="5ZcB1GfVPbn" role="13h7CW">
       <node concept="3clFbS" id="5ZcB1GfVPbo" role="2VODD2" />
@@ -16631,9 +16656,35 @@
       <node concept="17QB3L" id="5hwqM0OEUKf" role="3clF45" />
       <node concept="3Tm1VV" id="5hwqM0OEUJR" role="1B3o_S" />
     </node>
+    <node concept="13i0hz" id="5r9VRHXJRIv" role="13h7CS">
+      <property role="TrG5h" value="definesVariable" />
+      <ref role="13i0hy" node="4M9b1EU8USP" resolve="definesVariable" />
+      <node concept="3Tm1VV" id="5r9VRHXJRIw" role="1B3o_S" />
+      <node concept="3clFbS" id="5r9VRHXJRI_" role="3clF47">
+        <node concept="3clFbF" id="5r9VRHXJZAc" role="3cqZAp">
+          <node concept="1Wc70l" id="5r9VRHXK01v" role="3clFbG">
+            <node concept="2OqwBi" id="5r9VRHXK2so" role="3uHU7w">
+              <node concept="2OqwBi" id="5r9VRHXK0dF" role="2Oq$k0">
+                <node concept="13iPFW" id="5r9VRHXK02p" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5r9VRHXK22g" role="2OqNvi">
+                  <ref role="3Tt5mk" to="53m0:7NXUkdOvpli" resolve="ref" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="5r9VRHXK2DL" role="2OqNvi">
+                <ref role="37wK5l" node="4M9b1EU8USP" resolve="definesVariable" />
+              </node>
+            </node>
+            <node concept="BsUDl" id="5r9VRHXJZAb" role="3uHU7B">
+              <ref role="37wK5l" node="4M9b1EU0uXu" resolve="referencesOtherTestSuite" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="5r9VRHXJRIA" role="3clF45" />
+    </node>
     <node concept="13i0hz" id="4M9b1EU0uXu" role="13h7CS">
       <property role="TrG5h" value="referencesOtherTestSuite" />
-      <node concept="3Tm1VV" id="4M9b1EU0uXv" role="1B3o_S" />
+      <node concept="3Tm6S6" id="5r9VRHXP_el" role="1B3o_S" />
       <node concept="10P_77" id="4M9b1EU0_cO" role="3clF45" />
       <node concept="3clFbS" id="4M9b1EU0uXx" role="3clF47">
         <node concept="3cpWs8" id="4M9b1ETYFdh" role="3cqZAp">

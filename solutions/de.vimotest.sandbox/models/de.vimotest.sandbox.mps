@@ -5605,5 +5605,28 @@
       <node concept="1s$VFG" id="5hwqM0OOxug" role="1s$QAY" />
     </node>
   </node>
+  <node concept="30n1Qd" id="6S_Is8aAYHl">
+    <property role="3GE5qa" value="context" />
+    <property role="TrG5h" value="ContextReference_ViewTests_OtherSuite" />
+    <ref role="30n1PB" node="7NXUkdPqj5$" resolve="ContextReference_View" />
+    <node concept="3LKzX3" id="6S_Is8aAYHe" role="30n1Qb">
+      <property role="TrG5h" value="1st Context Reference from other suite" />
+      <node concept="1IbZgy" id="6S_Is8aAYHf" role="DUd2K">
+        <node concept="8w7HN" id="6S_Is8aAYHj" role="DUiTU">
+          <ref role="8w7Kh" node="7NXUkdPqjuN" resolve="base" />
+        </node>
+      </node>
+      <node concept="1s$VFG" id="6S_Is8aAYHh" role="1s$QAY" />
+    </node>
+    <node concept="3LKzX3" id="6S_Is8aAYHm" role="30n1Qb">
+      <property role="TrG5h" value="2nd Context Reference from other suite" />
+      <node concept="1IbZgy" id="6S_Is8aAYHn" role="DUd2K">
+        <node concept="8w7HN" id="6S_Is8aAYHo" role="DUiTU">
+          <ref role="8w7Kh" node="7NXUkdPqjuN" resolve="base" />
+        </node>
+      </node>
+      <node concept="1s$VFG" id="6S_Is8aAYHp" role="1s$QAY" />
+    </node>
+  </node>
 </model>
 

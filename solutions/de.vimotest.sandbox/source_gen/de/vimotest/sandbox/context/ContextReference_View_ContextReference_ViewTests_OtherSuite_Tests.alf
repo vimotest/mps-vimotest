@@ -1,0 +1,61 @@
+namespace context ;
+
+private import Testing ;
+
+class ContextReference_View_ContextReference_ViewTests_OtherSuite_Tests {
+  
+  private sut : ContextReference_View  ;
+  
+  private testSetup : ContextReference_ViewTestSetup  ;
+  
+  
+  protected BeforeTest (  ) {
+    this.testSetup = new ContextReference_ViewTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
+  
+  
+  public _1st_Context_Reference_from_other_suite_given_base_when_then_ (  ) {
+    this.given_base (  );
+
+    this.BuildSut (  );
+
+  }
+  
+  public _2nd_Context_Reference_from_other_suite_given_base_when_then_ (  ) {
+    this.given_base_1 (  );
+
+    this.BuildSut (  );
+
+  }
+  
+  
+  protected BuildSut (  ) {
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
+  
+  
+  // Given Helper Definitions
+
+  
+  private base : String = "My Context";
+  
+  public given_base (  ) {
+    this.testSetup.SetSimpleStringContext ( this.base );
+
+  }
+  
+  public given_base_1 (  ) {
+    this.testSetup.SetSimpleStringContext ( this.base );
+
+  }
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+}

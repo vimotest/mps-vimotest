@@ -164,6 +164,9 @@
         <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -1074,6 +1077,31 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="9S07l" id="f0fgygtikM" role="9Vyp8">
+      <node concept="3clFbS" id="f0fgygtikN" role="2VODD2">
+        <node concept="3clFbJ" id="f0fgygtisO" role="3cqZAp">
+          <property role="TyiWK" value="true" />
+          <node concept="3clFbS" id="f0fgygtisP" role="3clFbx">
+            <node concept="3cpWs6" id="f0fgygtl1_" role="3cqZAp">
+              <node concept="3clFbT" id="f0fgygtl2w" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="f0fgygtj3q" role="3clFbw">
+            <node concept="nLn13" id="f0fgygtiMD" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="f0fgygtkTQ" role="2OqNvi">
+              <node concept="chp4Y" id="f0fgygtkWJ" role="cj9EA">
+                <ref role="cht4Q" to="at53:F907haLJWj" resolve="ViewModelData" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="f0fgygtisZ" role="3cqZAp">
+          <node concept="3clFbT" id="f0fgygtit0" role="3clFbG">
+            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>

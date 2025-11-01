@@ -702,6 +702,9 @@
     <node concept="PrWs8" id="q9OOkGQp1v" role="PzmwI">
       <ref role="PrY4T" node="q9OOkGQoXE" resolve="ITableColumn" />
     </node>
+    <node concept="t5JxF" id="2j_CuGYidgI" role="lGtFl">
+      <property role="t5JxN" value="A nearly obsolete concept. It is still used in ListViewWidget, where we should also use a ColumnWidget instead. Either reuse TableColumnWidget or define a dedicated one." />
+    </node>
   </node>
   <node concept="1TIwiD" id="24MyZrrRA67">
     <property role="EcuMT" value="2392128244454154631" />

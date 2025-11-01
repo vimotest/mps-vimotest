@@ -1312,5 +1312,9 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="38nA5hDRv4k">
+    <property role="3GE5qa" value="test.context" />
+    <ref role="1M2myG" to="53m0:2Yd1qrJOMZM" resolve="ITestScenarioContext" />
+  </node>
 </model>
 

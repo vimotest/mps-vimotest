@@ -45,13 +45,6 @@ class DataTableContext_ViewTests {
 
   }
   
-  public DataTable_Context_implicit_name_given_id_0_name_A_when_then_ (  ) {
-    this.given_id_0_name_A (  );
-
-    this.BuildSut (  );
-
-  }
-  
   
   protected BuildSut (  ) {
     this.sut = this.testSetup.BuildSut (  );
@@ -87,13 +80,6 @@ class DataTableContext_ViewTests {
   
   public given_dataTableToXml (  ) {
     this.testSetup.SetDataTableXml ( this.dataTableToXml );
-
-  }
-  
-  private id_0_name_A : String = "| id | name |\n| 0 | A |";
-  
-  public given_id_0_name_A (  ) {
-    this.testSetup.SetDataTableString ( this.id_0_name_A );
 
   }
   

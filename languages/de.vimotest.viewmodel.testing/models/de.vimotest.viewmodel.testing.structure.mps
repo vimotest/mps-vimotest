@@ -364,6 +364,9 @@
     <node concept="PrWs8" id="5ZcB1GfZTxb" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="38nA5hDRvcN" role="PrDN$">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
     <node concept="1TJgyi" id="1MbPAgiZPYp" role="1TKVEl">
       <property role="IQ2nx" value="2056973380128563097" />
       <property role="TrG5h" value="customTestContextTypeName" />

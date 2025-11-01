@@ -24,10 +24,10 @@ class DataTableContext_View_DataTableContext_ViewTests_Naming_Tests {
 
   }
   
-  public DataTable_Context_duplicate_name_given_data_and_data_when_then_ (  ) {
+  public DataTable_Context_two_objects_equal_contents_given_data_and_data1_when_then_ (  ) {
     this.given_data (  );
 
-    this.given_data_1 (  );
+    this.given_data1 (  );
 
     this.BuildSut (  );
 
@@ -41,7 +41,7 @@ class DataTableContext_View_DataTableContext_ViewTests_Naming_Tests {
   }
   
   public DataTable_Context_Ref_duplicate_name_from_other_test_given_data_when_then_ (  ) {
-    this.given_data_2 (  );
+    this.given_data_1 (  );
 
     this.BuildSut (  );
 
@@ -71,14 +71,14 @@ class DataTableContext_View_DataTableContext_ViewTests_Naming_Tests {
 
   }
   
-  private data_1 : String = "| id | name |\n| 1 | B |";
+  private data1 : String = "| id | name |\n| 0 | A |";
   
-  public given_data_1 (  ) {
-    this.testSetup.SetDataTableString ( this.data_1 );
+  public given_data1 (  ) {
+    this.testSetup.SetDataTableString ( this.data1 );
 
   }
   
-  public given_data_2 (  ) {
+  public given_data_1 (  ) {
     this.testSetup.SetDataTableString ( this.data );
 
   }

@@ -20,10 +20,10 @@ namespace context
     std::string data = R"(| id | name |
 | 0 | A |)";
     virtual void given_data() ;
-    std::string data_1 = R"(| id | name |
-| 1 | B |)";
+    std::string data1 = R"(| id | name |
+| 0 | A |)";
+    virtual void given_data1() ;
     virtual void given_data_1() ;
-    virtual void given_data_2() ;
     protected:
     void SetUp() override ;
   };
@@ -37,10 +37,10 @@ namespace context
     this->given_id_0_name_A();
     this->BuildSut();
   }
-  TEST_F(DataTableContext_View_DataTableContext_ViewTests_Naming_Tests,  DataTable_Context_duplicate_name_given_data_and_data_when_then_) 
+  TEST_F(DataTableContext_View_DataTableContext_ViewTests_Naming_Tests,  DataTable_Context_two_objects_equal_contents_given_data_and_data1_when_then_) 
   {
     this->given_data();
-    this->given_data_1();
+    this->given_data1();
     this->BuildSut();
   }
   TEST_F(DataTableContext_View_DataTableContext_ViewTests_Naming_Tests,  DataTable_Context_duplicate_name_from_other_test_given_data_when_then_) 
@@ -50,7 +50,7 @@ namespace context
   }
   TEST_F(DataTableContext_View_DataTableContext_ViewTests_Naming_Tests,  DataTable_Context_Ref_duplicate_name_from_other_test_given_data_when_then_) 
   {
-    this->given_data_2();
+    this->given_data_1();
     this->BuildSut();
   }
   void DataTableContext_View_DataTableContext_ViewTests_Naming_Tests::BuildSut( ) 
@@ -65,11 +65,11 @@ namespace context
   {
     this->testSetup->SetDataTableString(this->data);
   }
-  void DataTableContext_View_DataTableContext_ViewTests_Naming_Tests::given_data_1( ) 
+  void DataTableContext_View_DataTableContext_ViewTests_Naming_Tests::given_data1( ) 
   {
-    this->testSetup->SetDataTableString(this->data_1);
+    this->testSetup->SetDataTableString(this->data1);
   }
-  void DataTableContext_View_DataTableContext_ViewTests_Naming_Tests::given_data_2( ) 
+  void DataTableContext_View_DataTableContext_ViewTests_Naming_Tests::given_data_1( ) 
   {
     this->testSetup->SetDataTableString(this->data);
   }

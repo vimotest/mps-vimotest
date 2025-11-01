@@ -5633,7 +5633,7 @@
       <node concept="1s$VFG" id="5hwqM0OOxtC" role="1s$QAY" />
     </node>
     <node concept="3LKzX3" id="38nA5hDKMBZ" role="30n1Qb">
-      <property role="TrG5h" value="DataTable Context (duplicate name)" />
+      <property role="TrG5h" value="DataTable Context (two objects, equal contents)" />
       <node concept="1IbZgy" id="38nA5hDKMC0" role="DUd2K">
         <node concept="1wOnht" id="38nA5hDKMC1" role="DUiTU">
           <property role="TrG5h" value="data" />
@@ -5657,7 +5657,7 @@
       </node>
       <node concept="1IbZgy" id="38nA5hDKMC9" role="DUd2K">
         <node concept="1wOnht" id="38nA5hDKMCa" role="DUiTU">
-          <property role="TrG5h" value="data" />
+          <property role="TrG5h" value="data1" />
           <node concept="1wOntz" id="38nA5hDKMCb" role="1wOkDR">
             <node concept="1wOkDO" id="38nA5hDKMCc" role="1wOkDD">
               <property role="1wOkPU" value="id" />
@@ -5668,10 +5668,10 @@
           </node>
           <node concept="1wOntz" id="38nA5hDKMCe" role="1wOkDP">
             <node concept="1wOkDO" id="38nA5hDKMCf" role="1wOkDD">
-              <property role="1wOkPU" value="1" />
+              <property role="1wOkPU" value="0" />
             </node>
             <node concept="1wOkDO" id="38nA5hDKMCg" role="1wOkDD">
-              <property role="1wOkPU" value="B" />
+              <property role="1wOkPU" value="A" />
             </node>
           </node>
         </node>

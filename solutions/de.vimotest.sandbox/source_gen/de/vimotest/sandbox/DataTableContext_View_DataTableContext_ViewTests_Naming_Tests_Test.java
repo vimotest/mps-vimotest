@@ -13,16 +13,16 @@ public class DataTableContext_View_DataTableContext_ViewTests_Naming_Tests_Test 
   private DataTableContext_ViewTestSetup testSetup;
   private String id_0_name_A = "| id | name |\n| 0 | A |";
   private String data = "| id | name |\n| 0 | A |";
-  private String data_1 = "| id | name |\n| 1 | B |";
+  private String data1 = "| id | name |\n| 0 | A |";
   @Test
   public void test_DataTable_Context_implicit_name_given_id_0_name_A_when_then_() throws Exception {
     this.given_id_0_name_A();
     this.BuildSut();
   }
   @Test
-  public void test_DataTable_Context_duplicate_name_given_data_and_data_when_then_() throws Exception {
+  public void test_DataTable_Context_two_objects_equal_contents_given_data_and_data1_when_then_() throws Exception {
     this.given_data();
-    this.given_data_1();
+    this.given_data1();
     this.BuildSut();
   }
   @Test
@@ -32,7 +32,7 @@ public class DataTableContext_View_DataTableContext_ViewTests_Naming_Tests_Test 
   }
   @Test
   public void test_DataTable_Context_Ref_duplicate_name_from_other_test_given_data_when_then_() throws Exception {
-    this.given_data_2();
+    this.given_data_1();
     this.BuildSut();
   }
   @BeforeEach
@@ -55,10 +55,10 @@ public class DataTableContext_View_DataTableContext_ViewTests_Naming_Tests_Test 
   public void given_data() {
     this.testSetup.SetDataTableString(this.data);
   }
-  public void given_data_1() {
-    this.testSetup.SetDataTableString(this.data_1);
+  public void given_data1() {
+    this.testSetup.SetDataTableString(this.data1);
   }
-  public void given_data_2() {
+  public void given_data_1() {
     this.testSetup.SetDataTableString(this.data);
   }
 

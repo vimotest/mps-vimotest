@@ -5974,6 +5974,26 @@
           </node>
         </node>
       </node>
+      <node concept="3F0ifn" id="3dQE_iX_9q9" role="3EZMnx">
+        <property role="3F0ifm" value="|" />
+        <node concept="pVoyu" id="3dQE_iX_9qa" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="3dQE_iX_9qb" role="3F10Kt">
+          <node concept="3ZlJ5R" id="3dQE_iX_9qc" role="VblUZ">
+            <node concept="3clFbS" id="3dQE_iX_9qd" role="2VODD2">
+              <node concept="3clFbF" id="3dQE_iX_9qe" role="3cqZAp">
+                <node concept="2YIFZM" id="3dQE_iX_9qf" role="3clFbG">
+                  <ref role="37wK5l" to="dgt9:1DHLMcW_Ij" resolve="getLightGrayColorByTheme" />
+                  <ref role="1Pybhc" to="dgt9:5QSnpBWlEt3" resolve="ViMoTestStyleColorHelper" />
+                  <node concept="1Q80Hx" id="3dQE_iX_9qg" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Vb9p2" id="3dQE_iX_9qh" role="3F10Kt" />
+      </node>
       <node concept="2iRfu4" id="6RKU0sdzp_L" role="2iSdaV" />
     </node>
     <node concept="3EZMnI" id="6RKU0sdzqq_" role="6VMZX">

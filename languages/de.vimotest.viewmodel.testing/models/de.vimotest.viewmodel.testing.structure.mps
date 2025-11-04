@@ -1294,7 +1294,7 @@
     <node concept="25R33" id="6RKU0sdiK3k" role="25R1y">
       <property role="3tVfz5" value="7922086861530136788" />
       <property role="TrG5h" value="MultiLineString" />
-      <property role="1L1pqM" value="string" />
+      <property role="1L1pqM" value="multiLineString" />
     </node>
     <node concept="25R33" id="6RKU0sdiKfu" role="25R1y">
       <property role="3tVfz5" value="7922086861530137566" />

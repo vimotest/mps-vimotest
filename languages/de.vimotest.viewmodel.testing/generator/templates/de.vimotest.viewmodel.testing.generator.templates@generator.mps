@@ -7286,7 +7286,7 @@
         </node>
         <node concept="3xR696" id="5ZcB1GfUJO7" role="gfFT$">
           <property role="3xR695" value="1KdBIfXPktw/in" />
-          <property role="TrG5h" value="string" />
+          <property role="TrG5h" value="stringValue" />
           <node concept="3xHE8C" id="5ZcB1GfUJO8" role="3xMlr6">
             <node concept="_vnHe" id="5ZcB1GfUJO9" role="35HzJw">
               <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
@@ -7305,7 +7305,7 @@
         </node>
         <node concept="3xR696" id="6RKU0sdSV7D" role="gfFT$">
           <property role="3xR695" value="1KdBIfXPktw/in" />
-          <property role="TrG5h" value="string" />
+          <property role="TrG5h" value="value" />
           <node concept="3xHE8C" id="6RKU0sdSV7E" role="3xMlr6">
             <node concept="_vnHe" id="6RKU0sdSV7F" role="35HzJw">
               <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />

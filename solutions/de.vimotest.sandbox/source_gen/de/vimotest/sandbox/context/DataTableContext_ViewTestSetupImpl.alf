@@ -7,10 +7,10 @@ class DataTableContext_ViewTestSetupImpl specializes DataTableContext_ViewTestSe
   public Init (  ) {    
   }
   
-  public SetIdAndName (   in string: String  ) {    
+  public SetIdAndName (   in multiLineString: String  ) {    
   }
   
-  public SetDataTableString (   in string: String  ) {    
+  public SetDataTableString (   in multiLineString: String  ) {    
   }
   
   public SetDataTableJson (   in json: String  ) {    

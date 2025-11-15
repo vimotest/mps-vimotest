@@ -11,7 +11,7 @@ namespace context
   {
     
   }
-  void ContextReference_ViewTestSetupImpl::SetSimpleStringContext(std::string string ) 
+  void ContextReference_ViewTestSetupImpl::SetSimpleStringContext(std::string stringValue ) 
   {
     
   }

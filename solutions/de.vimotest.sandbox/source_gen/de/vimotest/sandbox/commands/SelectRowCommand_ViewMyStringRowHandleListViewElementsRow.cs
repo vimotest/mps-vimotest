@@ -1,0 +1,25 @@
+/// <filename>
+///     SelectRowCommand_ViewMyStringRowHandleListViewElementsRow.cs
+/// </filename>
+
+
+namespace commands
+{
+    internal class SelectRowCommand_ViewMyStringRowHandleListViewElementsRow
+  {
+        private string HeaderLabelText;
+     
+        public     virtual string getHeaderLabelText()
+    {
+      return this.HeaderLabelText;
+    }
+     
+        private string RowHandle;
+     
+        public     virtual string getRowHandle()
+    {
+      return this.RowHandle;
+    }
+  }
+}
+

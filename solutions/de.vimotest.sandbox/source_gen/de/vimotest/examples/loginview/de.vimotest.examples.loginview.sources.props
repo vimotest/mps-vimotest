@@ -1,0 +1,7 @@
+<Project>  
+  <ItemGroup>    
+    <Compile Include="$(MSBuildThisFileDirectory)de/vimotest/examples/loginview/LoginView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)de/vimotest/examples/loginview/LoginViewTestSetup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)de/vimotest/examples/loginview/LoginViewTestSetupImpl.cs" />
+  </ItemGroup>
+</Project>

@@ -5,8 +5,8 @@ package de.vimotest.sandbox.context;
 
 public abstract class DataTableContext_ViewTestSetup {
   public abstract void Init();
-  public abstract void SetIdAndName(String string);
-  public abstract void SetDataTableString(String string);
+  public abstract void SetIdAndName(String multiLineString);
+  public abstract void SetDataTableString(String multiLineString);
   public abstract void SetDataTableJson(String json);
   public abstract void SetDataTableXml(String xml);
   public abstract DataTableContext_View BuildSut();

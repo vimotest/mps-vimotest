@@ -1,0 +1,6 @@
+<Project>  
+  <ItemGroup>    
+    <Compile Include="$(MSBuildThisFileDirectory)SeparateViewController_ViewTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SeparateViewController_2_ViewTests.cs" />
+  </ItemGroup>
+</Project>

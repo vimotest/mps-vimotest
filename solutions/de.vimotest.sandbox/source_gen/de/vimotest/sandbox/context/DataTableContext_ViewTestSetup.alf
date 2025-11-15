@@ -6,9 +6,9 @@ abstract class DataTableContext_ViewTestSetup {
   
   public abstract Init (  ) ;
   
-  public abstract SetIdAndName (   in string: String  ) ;
+  public abstract SetIdAndName (   in multiLineString: String  ) ;
   
-  public abstract SetDataTableString (   in string: String  ) ;
+  public abstract SetDataTableString (   in multiLineString: String  ) ;
   
   public abstract SetDataTableJson (   in json: String  ) ;
   

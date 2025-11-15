@@ -446,6 +446,7 @@
       <concept id="2674824929519835220" name="alfi.structure.NameBinding" flags="ng" index="_vnHe">
         <reference id="3855977438835276054" name="nameRef" index="3acloq" />
       </concept>
+      <concept id="4713069577842010111" name="alfi.structure.IsTestSourceAttribute" flags="ng" index="_$gwK" />
       <concept id="8164141882416860677" name="alfi.structure.ICanBeAbstract" flags="ngI" index="G55nc">
         <property id="3328952194368015168" name="isAbstract" index="PCHGy" />
       </concept>
@@ -6498,6 +6499,7 @@
         </node>
       </node>
     </node>
+    <node concept="_$gwK" id="4$4BtXe9U0y" role="lGtFl" />
   </node>
   <node concept="jVnub" id="5ZcB1GfUHlJ">
     <property role="3GE5qa" value="scenario.given" />
@@ -8361,6 +8363,7 @@
         </node>
       </node>
     </node>
+    <node concept="_$gwK" id="4$4BtXe9Rxl" role="lGtFl" />
   </node>
   <node concept="jVnub" id="4mnk8hC741u">
     <property role="3GE5qa" value="scenario.then.field" />

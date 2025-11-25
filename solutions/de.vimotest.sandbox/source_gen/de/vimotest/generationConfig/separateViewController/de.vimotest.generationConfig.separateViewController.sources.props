@@ -2,7 +2,5 @@
   <ItemGroup>    
     <Compile Include="$(MSBuildThisFileDirectory)MyViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MyViewController.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)SeparateViewController_ViewTestSetup.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)SeparateViewController_ViewTestSetupImpl.cs" />
   </ItemGroup>
 </Project>

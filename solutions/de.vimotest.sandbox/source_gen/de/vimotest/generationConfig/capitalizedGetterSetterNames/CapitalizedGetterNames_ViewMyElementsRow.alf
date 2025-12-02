@@ -2,7 +2,8 @@
 
 
 
-class CapitalizedGetterNames_ViewMyElementsRow {
+
+public class CapitalizedGetterNames_ViewMyElementsRow {
   
   private HeaderLabelText : String  ;
   

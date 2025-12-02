@@ -2,7 +2,8 @@ namespace widgetassertions ;
 
 
 
-class TableViews_View {
+
+public class TableViews_View {
   
   private MyElementsTableRows : TableViews_ViewMyElementsRow [ * ]  ;
   

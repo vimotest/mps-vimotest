@@ -2,7 +2,8 @@ namespace widgetassertions ;
 
 
 
-class Labels_View {
+
+public class Labels_View {
   
   private TestLabelText : String  ;
   

@@ -6,7 +6,7 @@ using bindings;
 
 namespace bindings
 {
-    internal class NameBinding_View
+    public class NameBinding_View
   {
         private string mText;
      

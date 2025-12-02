@@ -5,7 +5,7 @@
 
 namespace context
 {
-    internal class DataPathContext_View
+    public class DataPathContext_View
   {
 
   }

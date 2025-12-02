@@ -2,7 +2,8 @@
 
 
 
-class ParameterObjectCommand_View {
+
+public class ParameterObjectCommand_View {
   
   private isMyFlagCheckBoxChecked : Boolean  ;
   

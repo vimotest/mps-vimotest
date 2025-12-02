@@ -5,7 +5,7 @@
 
 namespace widgetassertions
 {
-    internal class TreeViews_ViewMyStringRowHandlesRow
+    public class TreeViews_ViewMyStringRowHandlesRow
   {
         private string ValuesLabelText;
      

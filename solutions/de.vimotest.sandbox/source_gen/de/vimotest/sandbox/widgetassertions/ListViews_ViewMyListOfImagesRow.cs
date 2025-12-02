@@ -5,7 +5,7 @@
 
 namespace widgetassertions
 {
-    internal class ListViews_ViewMyListOfImagesRow
+    public class ListViews_ViewMyListOfImagesRow
   {
         private string MyInfoImageName;
      

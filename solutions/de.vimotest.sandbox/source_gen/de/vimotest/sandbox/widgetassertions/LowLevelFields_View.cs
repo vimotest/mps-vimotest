@@ -6,7 +6,7 @@ using widgetassertions;
 
 namespace widgetassertions
 {
-    internal class LowLevelFields_View
+    public class LowLevelFields_View
   {
         public bool MyBool;
      

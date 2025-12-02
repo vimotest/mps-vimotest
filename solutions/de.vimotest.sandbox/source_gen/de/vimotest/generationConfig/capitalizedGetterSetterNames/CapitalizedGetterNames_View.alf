@@ -2,7 +2,8 @@
 
 
 
-class CapitalizedGetterNames_View {
+
+public class CapitalizedGetterNames_View {
   
   private isMyFlagCheckBoxChecked : Boolean  ;
   

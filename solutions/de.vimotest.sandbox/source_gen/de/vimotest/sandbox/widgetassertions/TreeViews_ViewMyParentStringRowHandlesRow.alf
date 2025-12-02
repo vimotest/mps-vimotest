@@ -2,7 +2,8 @@ namespace widgetassertions ;
 
 
 
-class TreeViews_ViewMyParentStringRowHandlesRow {
+
+public class TreeViews_ViewMyParentStringRowHandlesRow {
   
   private ValuesLabelText : String  ;
   

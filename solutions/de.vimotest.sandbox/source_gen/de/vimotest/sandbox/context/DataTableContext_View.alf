@@ -2,6 +2,7 @@ namespace context ;
 
 
 
-class DataTableContext_View {
+
+public class DataTableContext_View {
 
 }

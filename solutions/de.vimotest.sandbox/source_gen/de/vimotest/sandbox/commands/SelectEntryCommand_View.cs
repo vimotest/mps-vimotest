@@ -6,7 +6,7 @@ using commands;
 
 namespace commands
 {
-    internal class SelectEntryCommand_View
+    public class SelectEntryCommand_View
   {
         private System.Collections.Generic.List<string> MyElementsComboBoxEntries = new System.Collections.Generic.List<string>();
      

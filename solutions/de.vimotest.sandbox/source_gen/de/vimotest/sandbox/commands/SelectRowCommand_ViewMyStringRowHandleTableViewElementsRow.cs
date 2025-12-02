@@ -5,7 +5,7 @@
 
 namespace commands
 {
-    internal class SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow
+    public class SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow
   {
         private string columnCellLabelText;
      

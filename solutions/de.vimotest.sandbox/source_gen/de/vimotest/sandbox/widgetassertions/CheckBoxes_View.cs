@@ -5,7 +5,7 @@
 
 namespace widgetassertions
 {
-    internal class CheckBoxes_View
+    public class CheckBoxes_View
   {
         private bool isMyFlagWithLabelCheckBoxChecked;
      

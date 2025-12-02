@@ -2,7 +2,8 @@ namespace widgetassertions ;
 
 
 
-class TreeViews_View {
+
+public class TreeViews_View {
   
   private MyTreeViewElementsTreeSelectedRow : Integer  ;
   

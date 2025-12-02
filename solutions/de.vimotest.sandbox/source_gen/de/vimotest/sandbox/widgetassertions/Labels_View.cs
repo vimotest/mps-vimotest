@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace widgetassertions
 {
-    internal class Labels_View
+    public class Labels_View
   {
         private string TestLabelText;
      

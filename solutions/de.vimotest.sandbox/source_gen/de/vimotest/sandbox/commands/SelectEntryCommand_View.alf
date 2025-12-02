@@ -2,7 +2,8 @@ namespace commands ;
 
 
 
-class SelectEntryCommand_View {
+
+public class SelectEntryCommand_View {
   
   private MyElementsComboBoxEntries : String [ * ]  ;
   

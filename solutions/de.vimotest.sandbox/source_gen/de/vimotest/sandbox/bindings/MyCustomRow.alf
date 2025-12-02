@@ -2,7 +2,8 @@ namespace bindings ;
 
 
 
-class MyCustomRow {
+
+public class MyCustomRow {
   
   private RowText : String  ;
   

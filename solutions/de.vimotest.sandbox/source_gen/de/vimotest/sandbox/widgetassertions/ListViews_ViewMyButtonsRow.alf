@@ -2,7 +2,8 @@ namespace widgetassertions ;
 
 
 
-class ListViews_ViewMyButtonsRow {
+
+public class ListViews_ViewMyButtonsRow {
   
   private ButtonsButtonText : String  ;
   

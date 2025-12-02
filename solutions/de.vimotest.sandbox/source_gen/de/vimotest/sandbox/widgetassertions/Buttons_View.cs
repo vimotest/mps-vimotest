@@ -5,7 +5,7 @@
 
 namespace widgetassertions
 {
-    internal class Buttons_View
+    public class Buttons_View
   {
         private string OkButtonText;
      

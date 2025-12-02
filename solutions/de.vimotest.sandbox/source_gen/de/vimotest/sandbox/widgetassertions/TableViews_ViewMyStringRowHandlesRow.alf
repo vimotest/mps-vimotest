@@ -2,7 +2,8 @@ namespace widgetassertions ;
 
 
 
-class TableViews_ViewMyStringRowHandlesRow {
+
+public class TableViews_ViewMyStringRowHandlesRow {
   
   private ValuesLabelText : String  ;
   

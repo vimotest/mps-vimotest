@@ -5,7 +5,7 @@
 
 namespace de.vimotest.examples.loginview
 {
-    internal class LoginView
+    public class LoginView
   {
         private string UsernameTextBoxText;
      

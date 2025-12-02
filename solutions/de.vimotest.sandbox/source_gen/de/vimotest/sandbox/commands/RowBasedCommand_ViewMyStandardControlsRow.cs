@@ -5,7 +5,7 @@
 
 namespace commands
 {
-    internal class RowBasedCommand_ViewMyStandardControlsRow
+    public class RowBasedCommand_ViewMyStandardControlsRow
   {
         private string TextBoxesTextBoxText;
      

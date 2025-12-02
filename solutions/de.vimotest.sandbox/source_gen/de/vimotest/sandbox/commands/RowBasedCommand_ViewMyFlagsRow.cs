@@ -5,7 +5,7 @@
 
 namespace commands
 {
-    internal class RowBasedCommand_ViewMyFlagsRow
+    public class RowBasedCommand_ViewMyFlagsRow
   {
         private bool isCheckboxesCheckBoxChecked;
      

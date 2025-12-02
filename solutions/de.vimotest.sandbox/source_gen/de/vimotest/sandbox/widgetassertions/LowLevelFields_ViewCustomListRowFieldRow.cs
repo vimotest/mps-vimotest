@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace widgetassertions
 {
-    internal class LowLevelFields_ViewCustomListRowFieldRow
+    public class LowLevelFields_ViewCustomListRowFieldRow
   {
         private string HeaderLabelText;
      

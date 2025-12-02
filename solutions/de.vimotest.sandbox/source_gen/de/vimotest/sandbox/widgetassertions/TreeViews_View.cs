@@ -6,7 +6,7 @@ using widgetassertions;
 
 namespace widgetassertions
 {
-    internal class TreeViews_View
+    public class TreeViews_View
   {
         private int MyTreeViewElementsTreeSelectedRow;
      

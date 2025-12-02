@@ -5,7 +5,7 @@
 
 namespace commands
 {
-    internal enum SelectEntryCommand_ViewMyOptionsOption
+    public enum SelectEntryCommand_ViewMyOptionsOption
   {
         A /* no value */,
         B /* no value */

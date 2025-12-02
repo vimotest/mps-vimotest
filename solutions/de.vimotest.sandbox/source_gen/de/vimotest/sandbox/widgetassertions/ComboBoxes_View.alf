@@ -2,7 +2,8 @@ namespace widgetassertions ;
 
 
 
-class ComboBoxes_View {
+
+public class ComboBoxes_View {
   
   private MyOptionsComboBoxEntries : String [ * ]  ;
   

@@ -2,7 +2,8 @@
 
 
 
-class MyViewModel {
+
+public class MyViewModel {
   
   private isMyFlagCheckBoxChecked : Boolean  ;
   

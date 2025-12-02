@@ -3,7 +3,7 @@
 /// </filename>
 using System.Collections.Generic;
 
-internal class CapitalizedGetterNames_View
+public class CapitalizedGetterNames_View
 {
     private bool isMyFlagCheckBoxChecked;
  

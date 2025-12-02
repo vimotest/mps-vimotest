@@ -2,7 +2,8 @@ namespace widgetassertions ;
 
 
 
-class CheckBoxes_View {
+
+public class CheckBoxes_View {
   
   private isMyFlagWithLabelCheckBoxChecked : Boolean  ;
   

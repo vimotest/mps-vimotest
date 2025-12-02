@@ -5,7 +5,7 @@
 
 namespace widgetassertions
 {
-    internal class TreeViews_ViewMyTreeViewElementsRow
+    public class TreeViews_ViewMyTreeViewElementsRow
   {
         private bool isIncludeCheckBoxChecked;
      

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace widgetassertions
 {
-    internal class TextBoxes_View
+    public class TextBoxes_View
   {
         private string MyValueTextBoxText;
      

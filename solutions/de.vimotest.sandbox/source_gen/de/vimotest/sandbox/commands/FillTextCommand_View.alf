@@ -2,7 +2,8 @@ namespace commands ;
 
 
 
-class FillTextCommand_View {
+
+public class FillTextCommand_View {
   
   private MyValueTextBoxText : String  ;
   

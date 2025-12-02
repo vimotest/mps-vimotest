@@ -2,7 +2,8 @@ namespace de:: vimotest:: examples:: loginview ;
 
 
 
-class LoginView {
+
+public class LoginView {
   
   private UsernameTextBoxText : String  ;
   

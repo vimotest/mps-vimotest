@@ -5,7 +5,7 @@
 
 namespace context
 {
-    internal class XmlElementContext_View
+    public class XmlElementContext_View
   {
 
   }

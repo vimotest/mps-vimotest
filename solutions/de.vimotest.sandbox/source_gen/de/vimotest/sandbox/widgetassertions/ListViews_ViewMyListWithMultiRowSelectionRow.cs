@@ -5,7 +5,7 @@
 
 namespace widgetassertions
 {
-    internal class ListViews_ViewMyListWithMultiRowSelectionRow
+    public class ListViews_ViewMyListWithMultiRowSelectionRow
   {
         private string HeaderLabelText;
      

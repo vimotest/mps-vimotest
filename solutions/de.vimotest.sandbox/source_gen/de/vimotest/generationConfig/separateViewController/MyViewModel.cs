@@ -3,7 +3,7 @@
 /// </filename>
 
 
-internal class MyViewModel
+public class MyViewModel
 {
     private bool isMyFlagCheckBoxChecked;
  

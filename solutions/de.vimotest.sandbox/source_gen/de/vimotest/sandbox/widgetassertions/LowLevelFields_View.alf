@@ -2,7 +2,8 @@ namespace widgetassertions ;
 
 
 
-class LowLevelFields_View {
+
+public class LowLevelFields_View {
   
   public MyBool : Boolean  ;
   

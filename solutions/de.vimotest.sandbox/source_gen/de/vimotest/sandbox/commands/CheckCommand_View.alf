@@ -2,7 +2,8 @@ namespace commands ;
 
 
 
-class CheckCommand_View {
+
+public class CheckCommand_View {
   
   private isMyCheckBox1CheckBoxChecked : Boolean  ;
   

@@ -2,7 +2,8 @@ namespace widgetassertions ;
 
 
 
-class RadioButton_View {
+
+public class RadioButton_View {
   
   private OptionsRadioButtonGroupSelectedEntry : RadioButton_ViewOptionsOption  ;
   

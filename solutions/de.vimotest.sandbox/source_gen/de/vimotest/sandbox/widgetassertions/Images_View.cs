@@ -5,7 +5,7 @@
 
 namespace widgetassertions
 {
-    internal class Images_View
+    public class Images_View
   {
         private string StatusImageName;
      

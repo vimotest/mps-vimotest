@@ -5,7 +5,7 @@
 
 namespace commands
 {
-    internal class CheckCommand_View
+    public class CheckCommand_View
   {
         private bool isMyCheckBox1CheckBoxChecked;
      

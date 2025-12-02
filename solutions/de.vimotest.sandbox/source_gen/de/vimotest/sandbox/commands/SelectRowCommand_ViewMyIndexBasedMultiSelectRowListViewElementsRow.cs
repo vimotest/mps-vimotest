@@ -5,7 +5,7 @@
 
 namespace commands
 {
-    internal class SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewElementsRow
+    public class SelectRowCommand_ViewMyIndexBasedMultiSelectRowListViewElementsRow
   {
         private string HeaderLabelText;
      

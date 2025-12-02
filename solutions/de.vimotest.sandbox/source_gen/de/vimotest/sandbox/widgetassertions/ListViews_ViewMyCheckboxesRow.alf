@@ -2,7 +2,8 @@ namespace widgetassertions ;
 
 
 
-class ListViews_ViewMyCheckboxesRow {
+
+public class ListViews_ViewMyCheckboxesRow {
   
   private isHeaderCheckBoxChecked : Boolean  ;
   

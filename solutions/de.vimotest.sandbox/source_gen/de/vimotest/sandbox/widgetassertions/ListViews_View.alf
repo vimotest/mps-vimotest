@@ -2,7 +2,8 @@ namespace widgetassertions ;
 
 
 
-class ListViews_View {
+
+public class ListViews_View {
   
   private isMyListOfLabelListVisible : Boolean  ;
   

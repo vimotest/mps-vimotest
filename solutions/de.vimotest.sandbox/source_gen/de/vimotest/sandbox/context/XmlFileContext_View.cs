@@ -5,7 +5,7 @@
 
 namespace context
 {
-    internal class XmlFileContext_View
+    public class XmlFileContext_View
   {
 
   }

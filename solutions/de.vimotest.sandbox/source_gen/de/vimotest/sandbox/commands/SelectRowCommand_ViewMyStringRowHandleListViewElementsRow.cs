@@ -5,7 +5,7 @@
 
 namespace commands
 {
-    internal class SelectRowCommand_ViewMyStringRowHandleListViewElementsRow
+    public class SelectRowCommand_ViewMyStringRowHandleListViewElementsRow
   {
         private string HeaderLabelText;
      

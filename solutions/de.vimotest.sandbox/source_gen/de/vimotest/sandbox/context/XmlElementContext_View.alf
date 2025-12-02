@@ -2,6 +2,7 @@ namespace context ;
 
 
 
-class XmlElementContext_View {
+
+public class XmlElementContext_View {
 
 }

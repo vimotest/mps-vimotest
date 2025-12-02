@@ -5,7 +5,7 @@
 
 namespace bindings
 {
-    internal class MyCustomRow
+    public class MyCustomRow
   {
         private string RowText;
      

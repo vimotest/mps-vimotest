@@ -5,7 +5,7 @@
 
 namespace widgetassertions
 {
-    internal class ListViews_ViewMyButtonsRow
+    public class ListViews_ViewMyButtonsRow
   {
         private string ButtonsButtonText;
      

@@ -6,7 +6,7 @@ using commands;
 
 namespace commands
 {
-    internal class RowBasedCommand_View
+    public class RowBasedCommand_View
   {
         private System.Collections.Generic.List<commands.RowBasedCommand_ViewMyFlagsRow> MyFlagsListRows = new System.Collections.Generic.List<commands.RowBasedCommand_ViewMyFlagsRow>();
      

@@ -5,7 +5,7 @@
 
 namespace context
 {
-    internal class ContextReference_View
+    public class ContextReference_View
   {
 
   }

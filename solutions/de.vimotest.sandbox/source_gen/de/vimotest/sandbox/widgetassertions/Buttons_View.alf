@@ -2,7 +2,8 @@ namespace widgetassertions ;
 
 
 
-class Buttons_View {
+
+public class Buttons_View {
   
   private OkButtonText : String  ;
   

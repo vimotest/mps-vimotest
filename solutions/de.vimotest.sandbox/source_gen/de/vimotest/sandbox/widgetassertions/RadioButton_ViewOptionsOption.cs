@@ -5,7 +5,7 @@
 
 namespace widgetassertions
 {
-    internal enum RadioButton_ViewOptionsOption
+    public enum RadioButton_ViewOptionsOption
   {
         OptionA /* no value */,
         OptionB /* no value */,

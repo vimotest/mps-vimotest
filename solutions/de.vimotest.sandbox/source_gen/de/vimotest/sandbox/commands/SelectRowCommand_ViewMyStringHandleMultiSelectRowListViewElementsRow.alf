@@ -2,7 +2,8 @@ namespace commands ;
 
 
 
-class SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow {
+
+public class SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow {
   
   private HeaderLabelText : String  ;
   

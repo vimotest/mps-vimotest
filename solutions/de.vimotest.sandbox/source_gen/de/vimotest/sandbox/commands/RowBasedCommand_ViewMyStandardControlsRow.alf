@@ -2,7 +2,8 @@ namespace commands ;
 
 
 
-class RowBasedCommand_ViewMyStandardControlsRow {
+
+public class RowBasedCommand_ViewMyStandardControlsRow {
   
   private TextBoxesTextBoxText : String  ;
   

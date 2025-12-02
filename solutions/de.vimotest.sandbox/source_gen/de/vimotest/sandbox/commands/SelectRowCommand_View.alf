@@ -2,7 +2,8 @@ namespace commands ;
 
 
 
-class SelectRowCommand_View {
+
+public class SelectRowCommand_View {
   
   private MyListViewElementsListRows : SelectRowCommand_ViewMyListViewElementsRow [ * ]  ;
   

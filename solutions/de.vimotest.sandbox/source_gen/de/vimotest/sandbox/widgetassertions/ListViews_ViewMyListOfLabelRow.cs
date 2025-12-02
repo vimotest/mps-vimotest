@@ -5,7 +5,7 @@
 
 namespace widgetassertions
 {
-    internal class ListViews_ViewMyListOfLabelRow
+    public class ListViews_ViewMyListOfLabelRow
   {
         private string MyValueLabelText;
      

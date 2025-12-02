@@ -6,7 +6,7 @@ using bindings;
 
 namespace bindings
 {
-    internal class ViMoTestFileNameBinding
+    public class ViMoTestFileNameBinding
   {
         private System.Collections.Generic.List<bindings.ViMoTestFileNameBindingMyElementsRow> MyElementsTableRows = new System.Collections.Generic.List<bindings.ViMoTestFileNameBindingMyElementsRow>();
      

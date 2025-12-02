@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace widgetassertions
 {
-    internal class ComboBoxes_View
+    public class ComboBoxes_View
   {
         private System.Collections.Generic.List<string> MyOptionsComboBoxEntries = new System.Collections.Generic.List<string>();
      

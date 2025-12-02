@@ -3,7 +3,7 @@
 /// </filename>
 
 
-internal abstract class MyViewController
+public abstract class MyViewController
 {
     public   virtual void loadView()
   {

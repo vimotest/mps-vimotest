@@ -2,7 +2,8 @@ namespace commands ;
 
 
 
-class RowBasedCommand_View {
+
+public class RowBasedCommand_View {
   
   private MyFlagsListRows : RowBasedCommand_ViewMyFlagsRow [ * ]  ;
   

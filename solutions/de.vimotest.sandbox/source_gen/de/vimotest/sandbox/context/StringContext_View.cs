@@ -5,7 +5,7 @@
 
 namespace context
 {
-    internal class StringContext_View
+    public class StringContext_View
   {
 
   }

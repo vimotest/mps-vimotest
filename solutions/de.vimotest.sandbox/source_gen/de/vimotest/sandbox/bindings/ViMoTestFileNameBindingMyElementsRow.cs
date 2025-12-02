@@ -5,7 +5,7 @@
 
 namespace bindings
 {
-    internal class ViMoTestFileNameBindingMyElementsRow
+    public class ViMoTestFileNameBindingMyElementsRow
   {
         private string columnCellLabelText;
      

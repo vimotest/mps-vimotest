@@ -2,6 +2,7 @@ namespace context ;
 
 
 
-class XmlFileContext_View {
+
+public class XmlFileContext_View {
 
 }

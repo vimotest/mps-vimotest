@@ -2,7 +2,8 @@ namespace widgetassertions ;
 
 
 
-class ListViews_ViewMyStringRowHandlesRow {
+
+public class ListViews_ViewMyStringRowHandlesRow {
   
   private ValuesLabelText : String  ;
   

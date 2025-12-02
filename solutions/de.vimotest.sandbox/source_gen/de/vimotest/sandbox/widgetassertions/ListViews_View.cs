@@ -6,7 +6,7 @@ using widgetassertions;
 
 namespace widgetassertions
 {
-    internal class ListViews_View
+    public class ListViews_View
   {
         private bool isMyListOfLabelListVisible;
      

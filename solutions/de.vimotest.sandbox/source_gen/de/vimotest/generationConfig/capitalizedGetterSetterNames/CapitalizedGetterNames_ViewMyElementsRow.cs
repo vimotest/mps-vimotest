@@ -3,7 +3,7 @@
 /// </filename>
 
 
-internal class CapitalizedGetterNames_ViewMyElementsRow
+public class CapitalizedGetterNames_ViewMyElementsRow
 {
     private string HeaderLabelText;
  

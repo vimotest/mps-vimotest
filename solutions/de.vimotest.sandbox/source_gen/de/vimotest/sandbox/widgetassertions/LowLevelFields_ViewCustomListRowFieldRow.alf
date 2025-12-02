@@ -2,7 +2,8 @@ namespace widgetassertions ;
 
 
 
-class LowLevelFields_ViewCustomListRowFieldRow {
+
+public class LowLevelFields_ViewCustomListRowFieldRow {
   
   private HeaderLabelText : String  ;
   

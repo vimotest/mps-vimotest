@@ -5,7 +5,7 @@
 
 namespace widgetassertions
 {
-    internal class ListViews_ViewMyCheckboxesRow
+    public class ListViews_ViewMyCheckboxesRow
   {
         private bool isHeaderCheckBoxChecked;
      

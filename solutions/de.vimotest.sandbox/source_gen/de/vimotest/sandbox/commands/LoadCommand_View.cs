@@ -5,7 +5,7 @@
 
 namespace commands
 {
-    internal class LoadCommand_View
+    public class LoadCommand_View
   {
         public     virtual void loadView()
     {

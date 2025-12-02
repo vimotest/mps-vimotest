@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace commands
 {
-    internal class FillTextCommand_View
+    public class FillTextCommand_View
   {
         private string MyValueTextBoxText;
      

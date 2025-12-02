@@ -5,7 +5,7 @@ using widgetassertions;
 
 namespace widgetassertions
 {
-    internal class RadioButton_View
+    public class RadioButton_View
   {
         private widgetassertions.RadioButton_ViewOptionsOption OptionsRadioButtonGroupSelectedEntry;
      

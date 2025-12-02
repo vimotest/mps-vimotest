@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace commands
 {
-    internal class RowBasedCommand_ViewMyComboBoxesRow
+    public class RowBasedCommand_ViewMyComboBoxesRow
   {
         private System.Collections.Generic.List<string> FreeTextComboBoxesComboBoxEntries = new System.Collections.Generic.List<string>();
      

@@ -6,7 +6,7 @@ using commands;
 
 namespace commands
 {
-    internal class SelectRowCommand_View
+    public class SelectRowCommand_View
   {
         private System.Collections.Generic.List<commands.SelectRowCommand_ViewMyListViewElementsRow> MyListViewElementsListRows = new System.Collections.Generic.List<commands.SelectRowCommand_ViewMyListViewElementsRow>();
      

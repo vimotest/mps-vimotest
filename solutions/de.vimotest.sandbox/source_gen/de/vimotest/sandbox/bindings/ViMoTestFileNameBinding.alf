@@ -2,7 +2,8 @@ namespace bindings ;
 
 
 
-class ViMoTestFileNameBinding {
+
+public class ViMoTestFileNameBinding {
   
   private MyElementsTableRows : ViMoTestFileNameBindingMyElementsRow [ * ]  ;
   

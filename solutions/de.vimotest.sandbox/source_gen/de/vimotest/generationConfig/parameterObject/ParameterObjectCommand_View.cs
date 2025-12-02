@@ -3,7 +3,7 @@
 /// </filename>
 
 
-internal class ParameterObjectCommand_View
+public class ParameterObjectCommand_View
 {
     private bool isMyFlagCheckBoxChecked;
  

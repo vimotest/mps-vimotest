@@ -2,7 +2,8 @@ namespace bindings ;
 
 
 
-class NameBinding_View {
+
+public class NameBinding_View {
   
   private mText : String  ;
   

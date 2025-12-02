@@ -5,7 +5,7 @@
 
 namespace widgetassertions
 {
-    internal class TableViews_ViewMyElementsRow
+    public class TableViews_ViewMyElementsRow
   {
         private bool isIncludeCheckBoxChecked;
      

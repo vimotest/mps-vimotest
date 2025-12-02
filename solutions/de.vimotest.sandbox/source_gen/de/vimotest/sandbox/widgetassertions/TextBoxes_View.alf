@@ -2,7 +2,8 @@ namespace widgetassertions ;
 
 
 
-class TextBoxes_View {
+
+public class TextBoxes_View {
   
   private MyValueTextBoxText : String  ;
   

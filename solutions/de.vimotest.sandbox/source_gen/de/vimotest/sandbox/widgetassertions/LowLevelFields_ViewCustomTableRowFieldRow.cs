@@ -5,7 +5,7 @@
 
 namespace widgetassertions
 {
-    internal class LowLevelFields_ViewCustomTableRowFieldRow
+    public class LowLevelFields_ViewCustomTableRowFieldRow
   {
         private string HeaderLabelText;
      

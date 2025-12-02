@@ -5,7 +5,7 @@
 
 namespace commands
 {
-    internal class ClickCommand_View
+    public class ClickCommand_View
   {
         public     virtual void okClicked()
     {

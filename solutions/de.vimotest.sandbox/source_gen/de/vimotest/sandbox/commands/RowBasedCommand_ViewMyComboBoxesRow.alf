@@ -2,7 +2,8 @@ namespace commands ;
 
 
 
-class RowBasedCommand_ViewMyComboBoxesRow {
+
+public class RowBasedCommand_ViewMyComboBoxesRow {
   
   private FreeTextComboBoxesComboBoxEntries : String [ * ]  ;
   

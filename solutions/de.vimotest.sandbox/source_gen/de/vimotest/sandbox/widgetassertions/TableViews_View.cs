@@ -6,7 +6,7 @@ using widgetassertions;
 
 namespace widgetassertions
 {
-    internal class TableViews_View
+    public class TableViews_View
   {
         private System.Collections.Generic.List<widgetassertions.TableViews_ViewMyElementsRow> MyElementsTableRows = new System.Collections.Generic.List<widgetassertions.TableViews_ViewMyElementsRow>();
      

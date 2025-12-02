@@ -58,6 +58,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -205,6 +206,7 @@
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
+      <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
     </language>
@@ -1029,6 +1031,30 @@
       <ref role="1N5Vy1" to="53m0:7NXUkdOvpli" resolve="ref" />
       <node concept="3dgokm" id="7NXUkdOvpJA" role="1N6uqs">
         <node concept="3clFbS" id="7NXUkdOvpJC" role="2VODD2">
+          <node concept="3cpWs8" id="4M9b1ETXWMJ" role="3cqZAp">
+            <node concept="3cpWsn" id="4M9b1ETXWMK" role="3cpWs9">
+              <property role="TrG5h" value="testSuitesOfSameViewModel" />
+              <node concept="2I9FWS" id="4M9b1ETXWDW" role="1tU5fm">
+                <ref role="2I9WkF" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+              </node>
+              <node concept="2OqwBi" id="4M9b1ETXWML" role="33vP2m">
+                <node concept="2OqwBi" id="4M9b1ETXWMM" role="2Oq$k0">
+                  <node concept="2rP1CM" id="4M9b1ETXWMN" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="4M9b1ETXWMO" role="2OqNvi">
+                    <node concept="1xMEDy" id="4M9b1ETXWMP" role="1xVPHs">
+                      <node concept="chp4Y" id="4M9b1ETXWMQ" role="ri$Ld">
+                        <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="4M9b1ETXWMR" role="2OqNvi">
+                  <ref role="37wK5l" to="fwln:P0m5w1mq03" resolve="getTestSuitesOfSameViewModel" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="4M9b1ETXU61" role="3cqZAp" />
           <node concept="3cpWs8" id="7NXUkdOv$4K" role="3cqZAp">
             <node concept="3cpWsn" id="7NXUkdOv$4L" role="3cpWs9">
               <property role="TrG5h" value="contextList" />
@@ -1038,21 +1064,31 @@
                 </node>
               </node>
               <node concept="2OqwBi" id="7NXUkdOv$4M" role="33vP2m">
-                <node concept="2OqwBi" id="7NXUkdOv$4N" role="2Oq$k0">
-                  <node concept="2OqwBi" id="7NXUkdOv$4O" role="2Oq$k0">
-                    <node concept="2rP1CM" id="7NXUkdOv$4P" role="2Oq$k0" />
-                    <node concept="2Xjw5R" id="7NXUkdOv$4Q" role="2OqNvi">
-                      <node concept="1xMEDy" id="7NXUkdOv$4R" role="1xVPHs">
-                        <node concept="chp4Y" id="7NXUkdOv$4S" role="ri$Ld">
-                          <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+                <node concept="2OqwBi" id="4M9b1ETY4NM" role="2Oq$k0">
+                  <node concept="37vLTw" id="4M9b1ETXX3h" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4M9b1ETXWMK" resolve="testSuitesOfSameViewModel" />
+                  </node>
+                  <node concept="3goQfb" id="4M9b1ETY5z5" role="2OqNvi">
+                    <node concept="1bVj0M" id="4M9b1ETY5z7" role="23t8la">
+                      <node concept="3clFbS" id="4M9b1ETY5z8" role="1bW5cS">
+                        <node concept="3clFbF" id="4M9b1ETY69i" role="3cqZAp">
+                          <node concept="2OqwBi" id="4M9b1ETY6$U" role="3clFbG">
+                            <node concept="37vLTw" id="4M9b1ETY69h" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4M9b1ETY5z9" resolve="it" />
+                            </node>
+                            <node concept="2Rf3mk" id="7NXUkdOv$4T" role="2OqNvi">
+                              <node concept="1xMEDy" id="7NXUkdOv$4U" role="1xVPHs">
+                                <node concept="chp4Y" id="7NXUkdOv$4V" role="ri$Ld">
+                                  <ref role="cht4Q" to="53m0:2Yd1qrJOMZM" resolve="ITestScenarioContext" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                         </node>
                       </node>
-                    </node>
-                  </node>
-                  <node concept="2Rf3mk" id="7NXUkdOv$4T" role="2OqNvi">
-                    <node concept="1xMEDy" id="7NXUkdOv$4U" role="1xVPHs">
-                      <node concept="chp4Y" id="7NXUkdOv$4V" role="ri$Ld">
-                        <ref role="cht4Q" to="53m0:2Yd1qrJOMZM" resolve="ITestScenarioContext" />
+                      <node concept="gl6BB" id="4M9b1ETY5z9" role="1bW2Oz">
+                        <property role="TrG5h" value="it" />
+                        <node concept="2jxLKc" id="4M9b1ETY5za" role="1tU5fm" />
                       </node>
                     </node>
                   </node>
@@ -1275,6 +1311,10 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="38nA5hDRv4k">
+    <property role="3GE5qa" value="test.context" />
+    <ref role="1M2myG" to="53m0:2Yd1qrJOMZM" resolve="ITestScenarioContext" />
   </node>
 </model>
 

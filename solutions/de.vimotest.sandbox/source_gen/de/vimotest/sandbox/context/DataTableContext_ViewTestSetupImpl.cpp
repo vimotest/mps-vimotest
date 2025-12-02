@@ -11,11 +11,11 @@ namespace context
   {
     
   }
-  void DataTableContext_ViewTestSetupImpl::SetIdAndName(std::string string ) 
+  void DataTableContext_ViewTestSetupImpl::SetIdAndName(std::string multiLineString ) 
   {
     
   }
-  void DataTableContext_ViewTestSetupImpl::SetDataTableString(std::string string ) 
+  void DataTableContext_ViewTestSetupImpl::SetDataTableString(std::string multiLineString ) 
   {
     
   }

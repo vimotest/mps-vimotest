@@ -5196,30 +5196,6 @@
       </node>
       <node concept="1s$VFG" id="1MbPAgjKbKY" role="1s$QAY" />
     </node>
-    <node concept="3LKzX3" id="5hwqM0OOxtv" role="30n1Qb">
-      <property role="TrG5h" value="DataTable Context (implicit name)" />
-      <node concept="1IbZgy" id="5hwqM0OOxtw" role="DUd2K">
-        <node concept="1wOnht" id="5hwqM0OOxtx" role="DUiTU">
-          <node concept="1wOntz" id="5hwqM0OOxty" role="1wOkDR">
-            <node concept="1wOkDO" id="5hwqM0OOxtz" role="1wOkDD">
-              <property role="1wOkPU" value="id" />
-            </node>
-            <node concept="1wOkDO" id="5hwqM0OOxt$" role="1wOkDD">
-              <property role="1wOkPU" value="name" />
-            </node>
-          </node>
-          <node concept="1wOntz" id="5hwqM0OOxt_" role="1wOkDP">
-            <node concept="1wOkDO" id="5hwqM0OOxtA" role="1wOkDD">
-              <property role="1wOkPU" value="0" />
-            </node>
-            <node concept="1wOkDO" id="5hwqM0OOxtB" role="1wOkDD">
-              <property role="1wOkPU" value="A" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1s$VFG" id="5hwqM0OOxtC" role="1s$QAY" />
-    </node>
   </node>
   <node concept="30n1Qd" id="aV2Sa0vgFk">
     <property role="3GE5qa" value="context" />
@@ -5603,6 +5579,138 @@
         </node>
       </node>
       <node concept="1s$VFG" id="5hwqM0OOxug" role="1s$QAY" />
+    </node>
+  </node>
+  <node concept="30n1Qd" id="6S_Is8aAYHl">
+    <property role="3GE5qa" value="context" />
+    <property role="TrG5h" value="ContextReference_ViewTests_OtherSuite" />
+    <ref role="30n1PB" node="7NXUkdPqj5$" resolve="ContextReference_View" />
+    <node concept="3LKzX3" id="6S_Is8aAYHe" role="30n1Qb">
+      <property role="TrG5h" value="1st Context Reference from other suite" />
+      <node concept="1IbZgy" id="6S_Is8aAYHf" role="DUd2K">
+        <node concept="8w7HN" id="6S_Is8aAYHj" role="DUiTU">
+          <ref role="8w7Kh" node="7NXUkdPqjuN" resolve="base" />
+        </node>
+      </node>
+      <node concept="1s$VFG" id="6S_Is8aAYHh" role="1s$QAY" />
+    </node>
+    <node concept="3LKzX3" id="6S_Is8aAYHm" role="30n1Qb">
+      <property role="TrG5h" value="2nd Context Reference from other suite" />
+      <node concept="1IbZgy" id="6S_Is8aAYHn" role="DUd2K">
+        <node concept="8w7HN" id="6S_Is8aAYHo" role="DUiTU">
+          <ref role="8w7Kh" node="7NXUkdPqjuN" resolve="base" />
+        </node>
+      </node>
+      <node concept="1s$VFG" id="6S_Is8aAYHp" role="1s$QAY" />
+    </node>
+  </node>
+  <node concept="30n1Qd" id="38nA5hDQURP">
+    <property role="3GE5qa" value="context" />
+    <property role="TrG5h" value="DataTableContext_ViewTests_Naming" />
+    <ref role="30n1PB" node="1MbPAgjlD43" resolve="DataTableContext_View" />
+    <node concept="3LKzX3" id="5hwqM0OOxtv" role="30n1Qb">
+      <property role="TrG5h" value="DataTable Context (implicit name)" />
+      <node concept="1IbZgy" id="5hwqM0OOxtw" role="DUd2K">
+        <node concept="1wOnht" id="5hwqM0OOxtx" role="DUiTU">
+          <node concept="1wOntz" id="5hwqM0OOxty" role="1wOkDR">
+            <node concept="1wOkDO" id="5hwqM0OOxtz" role="1wOkDD">
+              <property role="1wOkPU" value="id" />
+            </node>
+            <node concept="1wOkDO" id="5hwqM0OOxt$" role="1wOkDD">
+              <property role="1wOkPU" value="name" />
+            </node>
+          </node>
+          <node concept="1wOntz" id="5hwqM0OOxt_" role="1wOkDP">
+            <node concept="1wOkDO" id="5hwqM0OOxtA" role="1wOkDD">
+              <property role="1wOkPU" value="0" />
+            </node>
+            <node concept="1wOkDO" id="5hwqM0OOxtB" role="1wOkDD">
+              <property role="1wOkPU" value="A" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1s$VFG" id="5hwqM0OOxtC" role="1s$QAY" />
+    </node>
+    <node concept="3LKzX3" id="38nA5hDKMBZ" role="30n1Qb">
+      <property role="TrG5h" value="DataTable Context (two objects, equal contents)" />
+      <node concept="1IbZgy" id="38nA5hDKMC0" role="DUd2K">
+        <node concept="1wOnht" id="38nA5hDKMC1" role="DUiTU">
+          <property role="TrG5h" value="data" />
+          <node concept="1wOntz" id="38nA5hDKMC2" role="1wOkDR">
+            <node concept="1wOkDO" id="38nA5hDKMC3" role="1wOkDD">
+              <property role="1wOkPU" value="id" />
+            </node>
+            <node concept="1wOkDO" id="38nA5hDKMC4" role="1wOkDD">
+              <property role="1wOkPU" value="name" />
+            </node>
+          </node>
+          <node concept="1wOntz" id="38nA5hDKMC5" role="1wOkDP">
+            <node concept="1wOkDO" id="38nA5hDKMC6" role="1wOkDD">
+              <property role="1wOkPU" value="0" />
+            </node>
+            <node concept="1wOkDO" id="38nA5hDKMC7" role="1wOkDD">
+              <property role="1wOkPU" value="A" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1IbZgy" id="38nA5hDKMC9" role="DUd2K">
+        <node concept="1wOnht" id="38nA5hDKMCa" role="DUiTU">
+          <property role="TrG5h" value="data1" />
+          <node concept="1wOntz" id="38nA5hDKMCb" role="1wOkDR">
+            <node concept="1wOkDO" id="38nA5hDKMCc" role="1wOkDD">
+              <property role="1wOkPU" value="id" />
+            </node>
+            <node concept="1wOkDO" id="38nA5hDKMCd" role="1wOkDD">
+              <property role="1wOkPU" value="name" />
+            </node>
+          </node>
+          <node concept="1wOntz" id="38nA5hDKMCe" role="1wOkDP">
+            <node concept="1wOkDO" id="38nA5hDKMCf" role="1wOkDD">
+              <property role="1wOkPU" value="0" />
+            </node>
+            <node concept="1wOkDO" id="38nA5hDKMCg" role="1wOkDD">
+              <property role="1wOkPU" value="A" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1s$VFG" id="38nA5hDKMC8" role="1s$QAY" />
+    </node>
+    <node concept="3LKzX3" id="38nA5hDQURn" role="30n1Qb">
+      <property role="TrG5h" value="DataTable Context (duplicate name from other test)" />
+      <node concept="1IbZgy" id="38nA5hDQURo" role="DUd2K">
+        <node concept="1wOnht" id="38nA5hDQURp" role="DUiTU">
+          <property role="TrG5h" value="data" />
+          <node concept="1wOntz" id="38nA5hDQURq" role="1wOkDR">
+            <node concept="1wOkDO" id="38nA5hDQURr" role="1wOkDD">
+              <property role="1wOkPU" value="id" />
+            </node>
+            <node concept="1wOkDO" id="38nA5hDQURs" role="1wOkDD">
+              <property role="1wOkPU" value="name" />
+            </node>
+          </node>
+          <node concept="1wOntz" id="38nA5hDQURt" role="1wOkDP">
+            <node concept="1wOkDO" id="38nA5hDQURu" role="1wOkDD">
+              <property role="1wOkPU" value="0" />
+            </node>
+            <node concept="1wOkDO" id="38nA5hDQURv" role="1wOkDD">
+              <property role="1wOkPU" value="A" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1s$VFG" id="38nA5hDQURE" role="1s$QAY" />
+    </node>
+    <node concept="3LKzX3" id="38nA5hDQURF" role="30n1Qb">
+      <property role="TrG5h" value="DataTable Context Ref (duplicate name from other test)" />
+      <node concept="1IbZgy" id="38nA5hDQURG" role="DUd2K">
+        <node concept="8w7HN" id="38nA5hDKMCj" role="DUiTU">
+          <ref role="8w7Kh" node="38nA5hDKMC1" resolve="data" />
+        </node>
+      </node>
+      <node concept="1s$VFG" id="38nA5hDQURO" role="1s$QAY" />
     </node>
   </node>
 </model>

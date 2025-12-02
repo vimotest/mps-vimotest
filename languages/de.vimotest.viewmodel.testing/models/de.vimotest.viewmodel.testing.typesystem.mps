@@ -170,6 +170,9 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
@@ -2023,7 +2026,7 @@
                   <node concept="2Xjw5R" id="5ZcB1GgmYKt" role="2OqNvi">
                     <node concept="1xMEDy" id="5ZcB1GgmYKv" role="1xVPHs">
                       <node concept="chp4Y" id="5ZcB1GgmYMC" role="ri$Ld">
-                        <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+                        <ref role="cht4Q" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestScenario" />
                       </node>
                     </node>
                   </node>
@@ -2104,24 +2107,24 @@
           </node>
         </node>
         <node concept="3clFbS" id="5ZcB1GgmYrE" role="3clFbx">
-          <node concept="2MkqsV" id="5ZcB1GgnfJH" role="3cqZAp">
-            <node concept="3cpWs3" id="5ZcB1GgngKG" role="2MkJ7o">
-              <node concept="2OqwBi" id="5ZcB1Ggnh8Y" role="3uHU7w">
-                <node concept="1YBJjd" id="5ZcB1GgngKU" role="2Oq$k0">
+          <node concept="a7r0C" id="38nA5hDKTwE" role="3cqZAp">
+            <node concept="3cpWs3" id="38nA5hDKTwG" role="a7wSD">
+              <node concept="2OqwBi" id="38nA5hDKTwH" role="3uHU7w">
+                <node concept="1YBJjd" id="38nA5hDKTwI" role="2Oq$k0">
                   <ref role="1YBMHb" node="5ZcB1GgmYr6" resolve="testContext" />
                 </node>
-                <node concept="3TrcHB" id="5ZcB1Ggnhxx" role="2OqNvi">
+                <node concept="3TrcHB" id="38nA5hDKTwJ" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
-              <node concept="Xl_RD" id="5ZcB1GgnfJQ" role="3uHU7B">
-                <property role="Xl_RC" value="TestContext names have to be unique: " />
+              <node concept="Xl_RD" id="38nA5hDKTwK" role="3uHU7B">
+                <property role="Xl_RC" value="TestContext names have to be unique inside scenario: " />
               </node>
             </node>
-            <node concept="1YBJjd" id="5ZcB1GgnhOA" role="1urrMF">
+            <node concept="1YBJjd" id="38nA5hDKTwL" role="1urrMF">
               <ref role="1YBMHb" node="5ZcB1GgmYr6" resolve="testContext" />
             </node>
-            <node concept="2ODE4t" id="5ZcB1GgnhSc" role="1urrC5">
+            <node concept="2ODE4t" id="38nA5hDKTwM" role="1urrC5">
               <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>

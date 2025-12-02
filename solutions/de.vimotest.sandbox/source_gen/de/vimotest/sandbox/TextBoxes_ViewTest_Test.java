@@ -74,7 +74,7 @@ public class TextBoxes_ViewTest_Test {
   }
   public void then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_() {
     List<String> actualMultiLineTextBoxValueLines = this.sut.getMultiLineTextBoxValueTextBoxText();
-    Assert.assertEquals(2, actualMultiLineTextBoxValueLines.size());
+    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualMultiLineTextBoxValueLines.size()));
     Assert.assertEquals("Expected1", actualMultiLineTextBoxValueLines.get(1 - 1));
     Assert.assertEquals("Expected2", actualMultiLineTextBoxValueLines.get(2 - 1));
   }

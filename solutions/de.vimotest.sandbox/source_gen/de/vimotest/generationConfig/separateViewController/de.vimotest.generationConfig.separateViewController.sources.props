@@ -1,0 +1,6 @@
+<Project>  
+  <ItemGroup>    
+    <Compile Include="$(MSBuildThisFileDirectory)MyViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MyViewController.cs" />
+  </ItemGroup>
+</Project>

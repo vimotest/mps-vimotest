@@ -54,7 +54,7 @@ public class TreeViews_ViewTest_Test {
 
   public void then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible() {
     List<TreeViews_ViewMyTreeViewElementsRow> actualRows = this.sut.getMyTreeViewElementsTreeRows();
-    Assert.assertEquals(2, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TreeViews_ViewMyTreeViewElementsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
@@ -80,7 +80,7 @@ public class TreeViews_ViewTest_Test {
   }
   public void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() {
     List<TreeViews_ViewMyStringRowHandlesRow> actualRows = this.sut.getMyStringRowHandlesTreeRows();
-    Assert.assertEquals(2, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TreeViews_ViewMyStringRowHandlesRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("ROW0", row0.getRowHandle());
@@ -97,7 +97,7 @@ public class TreeViews_ViewTest_Test {
   }
   public void then_MyParentIndexRowHandles_has_4_rows() {
     List<TreeViews_ViewMyParentIndexRowHandlesRow> actualRows = this.sut.getMyParentIndexRowHandlesTreeRows();
-    Assert.assertEquals(4, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(4), Integer.valueOf(actualRows.size()));
     // {
     TreeViews_ViewMyParentIndexRowHandlesRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
@@ -125,7 +125,7 @@ public class TreeViews_ViewTest_Test {
   }
   public void then_MyParentStringRowHandles_has_4_rows() {
     List<TreeViews_ViewMyParentStringRowHandlesRow> actualRows = this.sut.getMyParentStringRowHandlesTreeRows();
-    Assert.assertEquals(4, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(4), Integer.valueOf(actualRows.size()));
     // {
     TreeViews_ViewMyParentStringRowHandlesRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("HANDLE_A", row0.getRowHandle());
@@ -153,7 +153,7 @@ public class TreeViews_ViewTest_Test {
   }
   public void then_MyTreeViewElements_has_2_rows() {
     List<TreeViews_ViewMyTreeViewElementsRow> actualRows = this.sut.getMyTreeViewElementsTreeRows();
-    Assert.assertEquals(2, actualRows.size());
+    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TreeViews_ViewMyTreeViewElementsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());

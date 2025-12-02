@@ -8,7 +8,7 @@ public class ContextReference_ViewTestSetupImpl extends ContextReference_ViewTes
   public void Init() {
   }
   @Override
-  public void SetSimpleStringContext(String string) {
+  public void SetSimpleStringContext(String stringValue) {
   }
   @Override
   public ContextReference_View BuildSut() {

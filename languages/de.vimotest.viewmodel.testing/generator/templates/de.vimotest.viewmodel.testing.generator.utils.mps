@@ -6,6 +6,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -155,6 +156,18 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+    </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
       <concept id="1217889960776" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_UserObjectAccessBase" flags="nn" index="2fTw9j">
         <child id="1217890689512" name="userKey" index="2fWi3N" />
@@ -261,6 +274,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -1078,6 +1092,51 @@
       <node concept="37vLTG" id="6RKU0s3puut" role="3clF46">
         <property role="TrG5h" value="name" />
         <node concept="17QB3L" id="6RKU0s3puus" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2YIFZL" id="2j_CuGY2Xpx" role="jymVt">
+      <property role="TrG5h" value="toUniqueValidIdentifier" />
+      <node concept="3clFbS" id="2j_CuGY2Xp$" role="3clF47">
+        <node concept="3cpWs8" id="2j_CuGY33t4" role="3cqZAp">
+          <node concept="3cpWsn" id="2j_CuGY33t5" role="3cpWs9">
+            <property role="TrG5h" value="identifier" />
+            <node concept="17QB3L" id="2j_CuGY33ew" role="1tU5fm" />
+            <node concept="1rXfSq" id="2j_CuGY33t6" role="33vP2m">
+              <ref role="37wK5l" node="6RKU0s3ptv0" resolve="toValidIdentifier" />
+              <node concept="37vLTw" id="2j_CuGY33t7" role="37wK5m">
+                <ref role="3cqZAo" node="2j_CuGY2Y6r" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2j_CuGY31yF" role="3cqZAp">
+          <node concept="1rXfSq" id="2j_CuGY31yE" role="3clFbG">
+            <ref role="37wK5l" node="7T8HsuTFVkU" resolve="toNameWithSequenceNumber" />
+            <node concept="37vLTw" id="2j_CuGY33t8" role="37wK5m">
+              <ref role="3cqZAo" node="2j_CuGY33t5" resolve="identifier" />
+            </node>
+            <node concept="37vLTw" id="2j_CuGY32Ym" role="37wK5m">
+              <ref role="3cqZAo" node="2j_CuGY32DU" resolve="node" />
+            </node>
+            <node concept="37vLTw" id="2j_CuGY33e6" role="37wK5m">
+              <ref role="3cqZAo" node="2j_CuGY32DW" resolve="genContext" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2j_CuGY2WQY" role="1B3o_S" />
+      <node concept="17QB3L" id="2j_CuGY2XfU" role="3clF45" />
+      <node concept="37vLTG" id="2j_CuGY2Y6r" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="2j_CuGY2Y6q" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="2j_CuGY32DU" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="2j_CuGY32DV" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="2j_CuGY32DW" role="3clF46">
+        <property role="TrG5h" value="genContext" />
+        <node concept="1iwH7U" id="2j_CuGY32DX" role="1tU5fm" />
       </node>
     </node>
     <node concept="3Tm1VV" id="2evlxT94KqT" role="1B3o_S" />
@@ -3128,6 +3187,53 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="4pcNtzUbV2u" role="1B3o_S" />
+    <node concept="3UR2Jj" id="38nA5hEzQzl" role="lGtFl">
+      <node concept="TZ5HA" id="38nA5hEzQzm" role="TZ5H$">
+        <node concept="1dT_AC" id="38nA5hEzQzn" role="1dT_Ay">
+          <property role="1dT_AB" value="* This class provides mechanisms to **cache and reuse structurally equal generated nodes**" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="38nA5hEzQPr" role="TZ5H$">
+        <node concept="1dT_AC" id="38nA5hEzQPs" role="1dT_Ay">
+          <property role="1dT_AB" value="* (specifically those representing parts of a test description, like 'TestDescriptionPart')." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="38nA5hEzR9F" role="TZ5H$">
+        <node concept="1dT_AC" id="38nA5hEzR9G" role="1dT_Ay">
+          <property role="1dT_AB" value="* By checking for previously generated, identical nodes within the current generation" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="38nA5hEzRp5" role="TZ5H$">
+        <node concept="1dT_AC" id="38nA5hEzRp6" role="1dT_Ay">
+          <property role="1dT_AB" value="* context (genContext), it helps to reduce the number of redundant nodes created," />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="38nA5hEzRCv" role="TZ5H$">
+        <node concept="1dT_AC" id="38nA5hEzRCw" role="1dT_Ay">
+          <property role="1dT_AB" value="* which can significantly optimize the resulting model size and generation speed." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="38nA5hEzRRT" role="TZ5H$">
+        <node concept="1dT_AC" id="38nA5hEzRRU" role="1dT_Ay">
+          <property role="1dT_AB" value="* The core concept is to use a lookup key based on the node's textual content (via `contentToText()`)" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="38nA5hEzS7j" role="TZ5H$">
+        <node concept="1dT_AC" id="38nA5hEzS7k" role="1dT_Ay">
+          <property role="1dT_AB" value="* and its specific location within the 'ViewModelFeatureTestSuite' to identify candidates." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="38nA5hEzSmH" role="TZ5H$">
+        <node concept="1dT_AC" id="38nA5hEzSmI" role="1dT_Ay">
+          <property role="1dT_AB" value="* It is primarily designed to recognize and deduplicate common structural elements" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="38nA5hEzSA7" role="TZ5H$">
+        <node concept="1dT_AC" id="38nA5hEzSA8" role="1dT_Ay">
+          <property role="1dT_AB" value="* when transforming the ViMoTest DSL into the target language/platform." />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

@@ -8,7 +8,7 @@ public class StringContext_ViewTestSetupImpl extends StringContext_ViewTestSetup
   public void Init() {
   }
   @Override
-  public void SetSimpleStringContext(String string) {
+  public void SetSimpleStringContext(String stringValue) {
   }
   @Override
   public StringContext_View BuildSut() {

@@ -6,7 +6,7 @@ abstract class StringContext_ViewTestSetup {
   
   public abstract Init (  ) ;
   
-  public abstract SetSimpleStringContext (   in string: String  ) ;
+  public abstract SetSimpleStringContext (   in stringValue: String  ) ;
   
   public abstract BuildSut (  ) : StringContext_View  ;
 }

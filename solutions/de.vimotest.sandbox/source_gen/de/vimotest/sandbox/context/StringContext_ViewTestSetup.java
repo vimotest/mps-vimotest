@@ -5,6 +5,6 @@ package de.vimotest.sandbox.context;
 
 public abstract class StringContext_ViewTestSetup {
   public abstract void Init();
-  public abstract void SetSimpleStringContext(String string);
+  public abstract void SetSimpleStringContext(String stringValue);
   public abstract StringContext_View BuildSut();
 }

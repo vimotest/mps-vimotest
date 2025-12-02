@@ -364,6 +364,9 @@
     <node concept="PrWs8" id="5ZcB1GfZTxb" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="38nA5hDRvcN" role="PrDN$">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
     <node concept="1TJgyi" id="1MbPAgiZPYp" role="1TKVEl">
       <property role="IQ2nx" value="2056973380128563097" />
       <property role="TrG5h" value="customTestContextTypeName" />
@@ -1291,7 +1294,7 @@
     <node concept="25R33" id="6RKU0sdiK3k" role="25R1y">
       <property role="3tVfz5" value="7922086861530136788" />
       <property role="TrG5h" value="MultiLineString" />
-      <property role="1L1pqM" value="string" />
+      <property role="1L1pqM" value="multiLineString" />
     </node>
     <node concept="25R33" id="6RKU0sdiKfu" role="25R1y">
       <property role="3tVfz5" value="7922086861530137566" />

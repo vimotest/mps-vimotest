@@ -93,7 +93,7 @@ public class Labels_ViewTest_Test {
   }
   public void then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_() {
     List<String> actualMultiLineLines = this.sut.getMultiLineLabelText();
-    Assert.assertEquals(2, actualMultiLineLines.size());
+    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualMultiLineLines.size()));
     Assert.assertEquals("Expected Line 1", actualMultiLineLines.get(1 - 1));
     Assert.assertEquals("Expected Line 2", actualMultiLineLines.get(2 - 1));
   }
@@ -104,7 +104,7 @@ public class Labels_ViewTest_Test {
   public void then_WithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_() {
     Assert.assertEquals("Info", this.sut.getWithMultiLineToolTipLabelText());
     List<String> actualWithMultiLineToolTipLines = this.sut.getWithMultiLineToolTipLabelToolTip();
-    Assert.assertEquals(2, actualWithMultiLineToolTipLines.size());
+    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualWithMultiLineToolTipLines.size()));
     Assert.assertEquals("Line1", actualWithMultiLineToolTipLines.get(1 - 1));
     Assert.assertEquals("Line2", actualWithMultiLineToolTipLines.get(2 - 1));
   }

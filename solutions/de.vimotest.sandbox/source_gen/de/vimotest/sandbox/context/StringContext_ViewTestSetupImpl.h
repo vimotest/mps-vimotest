@@ -12,7 +12,7 @@ namespace context
   {
     public:
     void Init() override ;
-    void SetSimpleStringContext(std::string string) override ;
+    void SetSimpleStringContext(std::string stringValue) override ;
     std::shared_ptr<StringContext_View> BuildSut() override ;
   };
 }

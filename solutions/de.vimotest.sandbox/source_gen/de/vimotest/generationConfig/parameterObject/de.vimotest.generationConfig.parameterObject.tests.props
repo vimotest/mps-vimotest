@@ -1,0 +1,7 @@
+<Project>  
+  <ItemGroup>    
+    <Compile Include="$(MSBuildThisFileDirectory)ParameterObjectCommand_ViewTestSetup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ParameterObjectCommand_ViewTestSetupImpl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ParameterObjectCommand_ViewTests.cs" />
+  </ItemGroup>
+</Project>

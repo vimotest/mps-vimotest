@@ -8,10 +8,10 @@ public class DataTableContext_ViewTestSetupImpl extends DataTableContext_ViewTes
   public void Init() {
   }
   @Override
-  public void SetIdAndName(String string) {
+  public void SetIdAndName(String multiLineString) {
   }
   @Override
-  public void SetDataTableString(String string) {
+  public void SetDataTableString(String multiLineString) {
   }
   @Override
   public void SetDataTableJson(String json) {

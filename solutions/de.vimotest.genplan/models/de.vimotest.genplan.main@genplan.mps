@@ -9,6 +9,7 @@
     <import index="tprf" ref="r:a5eeda19-54af-4c12-a5b4-4113a08de4b3(alfi.genplan.alfi.toJavaBaseLanguage@genplan)" />
     <import index="4snh" ref="r:0374a2a3-2e83-460e-8228-7bd146963871(alfi.genplan.alfi.toCppBaseLanguage@genplan)" />
     <import index="p78k" ref="r:037d404d-f9a9-43ed-8048-9f09b287fd4d(de.vimotest.genplan.vimotestToAlfi@genplan)" />
+    <import index="a4ka" ref="r:40561aac-5491-43fc-a1e6-30abe63e5a61(alfi.genplan.alfi.toCsBaseLanguage@genplan)" />
   </imports>
   <registry>
     <language id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan">
@@ -51,6 +52,9 @@
     </node>
     <node concept="10T23i" id="64vLWnJGj9K" role="2VgMA7">
       <ref role="10T23l" to="4snh:3OZQpz3aSq" resolve="AlfiToCppBaselanguage" />
+    </node>
+    <node concept="10T23i" id="4$4BtXefzXc" role="2VgMA7">
+      <ref role="10T23l" to="a4ka:3OZQpz3aSq" resolve="AlfiToCsBaselanguage" />
     </node>
     <node concept="2VgMA2" id="5XCh6Wgn9ve" role="2VgMA7">
       <property role="1s431M" value="true" />

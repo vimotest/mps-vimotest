@@ -201,11 +201,11 @@
             <ref role="37wK5l" to="18ew:~NameUtil.toValidIdentifier(java.lang.String)" resolve="toValidIdentifier" />
             <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
             <node concept="2OqwBi" id="5jkMFwvfkdE" role="37wK5m">
-              <node concept="3TrcHB" id="5jkMFwvfkdF" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
               <node concept="37vLTw" id="5jkMFwvfkdG" role="2Oq$k0">
                 <ref role="3cqZAo" node="5jkMFwvdO70" resolve="viewModel" />
+              </node>
+              <node concept="2qgKlT" id="2Rk2hp$j3QL" role="2OqNvi">
+                <ref role="37wK5l" to="nrs2:2Rk2hp$iTtS" resolve="getEffectiveViewModelName" />
               </node>
             </node>
           </node>
@@ -284,8 +284,8 @@
                     <node concept="1mfA1w" id="5jkMFw_P4Wp" role="2OqNvi" />
                   </node>
                 </node>
-                <node concept="3TrcHB" id="5jkMFw_P6mx" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                <node concept="2qgKlT" id="2Rk2hp$j39r" role="2OqNvi">
+                  <ref role="37wK5l" to="nrs2:2Rk2hp$iTtS" resolve="getEffectiveViewModelName" />
                 </node>
               </node>
             </node>

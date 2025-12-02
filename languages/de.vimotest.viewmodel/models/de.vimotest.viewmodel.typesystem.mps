@@ -256,7 +256,7 @@
         <node concept="3clFbS" id="F907haMxbd" role="3clFbx">
           <node concept="a7r0C" id="F907haM$b8" role="3cqZAp">
             <node concept="Xl_RD" id="F907haM$bk" role="a7wSD">
-              <property role="Xl_RC" value="ViewModel name should have the suffix 'View'" />
+              <property role="Xl_RC" value="ViewModel name should have the suffix 'View" />
             </node>
             <node concept="1YBJjd" id="F907haM$cc" role="1urrMF">
               <ref role="1YBMHb" node="F907haMxb3" resolve="viewModel" />

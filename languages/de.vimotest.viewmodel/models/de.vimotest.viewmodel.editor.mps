@@ -773,6 +773,20 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F0ifn" id="69SOXVnRyEQ" role="3EZMnx">
+        <node concept="pVoyu" id="69SOXVnRyER" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="69SOXVnRCI0" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:69SOXVnRi$L" resolve="viewModelDependencies" />
+        <node concept="pVoyu" id="69SOXVnRCI1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="69SOXVnRCI2" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="F907haLJW2" role="3EZMnx">
         <property role="3F0ifm" value="}" />
         <ref role="1k5W1q" to="dgt9:F907haLJXX" resolve="RightBracket" />

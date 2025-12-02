@@ -133,6 +133,12 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="F907haLJWj" resolve="ViewModelData" />
     </node>
+    <node concept="1TJgyj" id="69SOXVnRi$L" role="1TKVEi">
+      <property role="IQ2ns" value="7095654166980012337" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="viewModelDependencies" />
+      <ref role="20lvS9" node="69SOXVnRzRz" resolve="ViewModelDependencyDescriptor" />
+    </node>
     <node concept="PrWs8" id="F907haLJWq" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -1620,6 +1626,23 @@
     <property role="34LRSv" value="tree column" />
     <property role="3GE5qa" value="widgets.structures.column" />
     <ref role="1TJDcQ" node="q9OOkGw2yi" resolve="TableColumnWidget" />
+  </node>
+  <node concept="1TIwiD" id="69SOXVnRitH">
+    <property role="EcuMT" value="7095654166980011885" />
+    <property role="TrG5h" value="ViewModelDependency" />
+    <property role="34LRSv" value="dependency" />
+    <property role="3GE5qa" value="dependencies" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="69SOXVnRizY" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="69SOXVnRzRz">
+    <property role="EcuMT" value="7095654166980083171" />
+    <property role="TrG5h" value="ViewModelDependencyDescriptor" />
+    <property role="34LRSv" value="dependencies" />
+    <property role="3GE5qa" value="dependencies" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

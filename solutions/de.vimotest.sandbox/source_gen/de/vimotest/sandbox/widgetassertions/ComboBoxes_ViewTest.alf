@@ -4,13 +4,13 @@ private import Testing ;
 
 class ComboBoxes_ViewTest {
   
-  private sut : ComboBoxes_View  ;
+  private sut : ComboBoxes_ViewModel  ;
   
-  private testSetup : ComboBoxes_ViewTestSetup  ;
+  private testSetup : ComboBoxes_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new ComboBoxes_ViewTestSetupImpl (  );
+    this.testSetup = new ComboBoxes_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 

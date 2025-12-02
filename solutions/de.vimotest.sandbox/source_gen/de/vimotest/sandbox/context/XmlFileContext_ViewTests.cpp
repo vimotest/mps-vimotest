@@ -1,18 +1,18 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "XmlFileContext_ViewTestSetup.h"
+#include "XmlFileContext_ViewModelTestSetup.h"
 #include <string>
-#include "XmlFileContext_View.h"
-#include "XmlFileContext_ViewTestSetupImpl.h"
+#include "XmlFileContext_ViewModel.h"
+#include "XmlFileContext_ViewModelTestSetupImpl.h"
 
 namespace context
 {
   class XmlFileContext_ViewTests : public testing::Test
   {
     public:
-    std::shared_ptr<XmlFileContext_View> sut;
-    std::shared_ptr<XmlFileContext_ViewTestSetup> testSetup;
+    std::shared_ptr<XmlFileContext_ViewModel> sut;
+    std::shared_ptr<XmlFileContext_ViewModelTestSetup> testSetup;
     virtual void BuildSut() ;
     std::string XmlFile_NoExternalFile = R"(<MyXML>  
   <Inner></Inner>
@@ -24,7 +24,7 @@ namespace context
   };
   void XmlFileContext_ViewTests::SetUp( ) 
   {
-    this->testSetup = std::make_shared<XmlFileContext_ViewTestSetupImpl>();
+    this->testSetup = std::make_shared<XmlFileContext_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
   TEST_F(XmlFileContext_ViewTests,  XmlFile_NoExternalFile_given_XmlFile_NoExternalFile_when_then_) 

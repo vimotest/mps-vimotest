@@ -4,13 +4,13 @@ private import Testing ;
 
 class ContextReference_ViewTests {
   
-  private sut : ContextReference_View  ;
+  private sut : ContextReference_ViewModel  ;
   
-  private testSetup : ContextReference_ViewTestSetup  ;
+  private testSetup : ContextReference_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new ContextReference_ViewTestSetupImpl (  );
+    this.testSetup = new ContextReference_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 

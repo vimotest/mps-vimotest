@@ -8,14 +8,14 @@ using System.Collections.Generic;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class LowLevelFields_ViewTests
 {
-    private widgetassertions.LowLevelFields_View sut;
+    private widgetassertions.LowLevelFields_ViewModel sut;
  
-    private widgetassertions.LowLevelFields_ViewTestSetup testSetup;
+    private widgetassertions.LowLevelFields_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new widgetassertions.LowLevelFields_ViewTestSetupImpl();
+    this.testSetup = new widgetassertions.LowLevelFields_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  

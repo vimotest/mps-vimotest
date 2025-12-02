@@ -1,0 +1,49 @@
+
+
+
+
+
+public class ParameterObjectCommand_ViewModel {
+  
+  private isMyFlagCheckBoxChecked : Boolean  ;
+  
+  public getIsMyFlagCheckBoxChecked (  ) : Boolean  {
+    return this.isMyFlagCheckBoxChecked;
+
+  }
+  
+  public datatype LoadViewParams {
+    
+    public Value1 : String  ;
+    
+    public getValue1 (  ) : String  {
+      return this.Value1;
+
+    }
+    
+    public Value2 : Boolean  ;
+    
+    public getValue2 (  ) : Boolean  {
+      return this.Value2;
+
+    }
+    
+    public Value3 : Integer  ;
+    
+    public getValue3 (  ) : Integer  {
+      return this.Value3;
+
+    }
+  }
+  
+  public loadView (   in parameters: LoadViewParams  ) {    
+  }
+  
+  public datatype CheckParams {
+    
+    public isChecked : Boolean  ;
+  }
+  
+  public myFlagChecked (   in parameters: CheckParams  ) {    
+  }
+}

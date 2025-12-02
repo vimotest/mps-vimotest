@@ -1,17 +1,17 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "ClickCommand_ViewTestSetup.h"
-#include "ClickCommand_View.h"
-#include "ClickCommand_ViewTestSetupImpl.h"
+#include "ClickCommand_ViewModelTestSetup.h"
+#include "ClickCommand_ViewModel.h"
+#include "ClickCommand_ViewModelTestSetupImpl.h"
 
 namespace commands
 {
   class ClickCommand_ViewTests : public testing::Test
   {
     public:
-    std::shared_ptr<ClickCommand_View> sut;
-    std::shared_ptr<ClickCommand_ViewTestSetup> testSetup;
+    std::shared_ptr<ClickCommand_ViewModel> sut;
+    std::shared_ptr<ClickCommand_ViewModelTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void when_click_Ok() ;
     protected:
@@ -19,7 +19,7 @@ namespace commands
   };
   void ClickCommand_ViewTests::SetUp( ) 
   {
-    this->testSetup = std::make_shared<ClickCommand_ViewTestSetupImpl>();
+    this->testSetup = std::make_shared<ClickCommand_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
   TEST_F(ClickCommand_ViewTests,  Click_Button_given_when_click_Ok_then_) 

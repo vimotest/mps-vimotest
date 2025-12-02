@@ -1,0 +1,70 @@
+namespace widgetassertions ;
+
+
+
+
+public class TreeViews_ViewModel {
+  
+  private MyTreeViewElementsTreeSelectedRow : Integer  ;
+  
+  public getMyTreeViewElementsTreeSelectedRow (  ) : Integer  {
+    return this.MyTreeViewElementsTreeSelectedRow;
+
+  }
+  
+  private isMyTreeViewElementsTreeVisible : Boolean  ;
+  
+  public getIsMyTreeViewElementsTreeVisible (  ) : Boolean  {
+    return this.isMyTreeViewElementsTreeVisible;
+
+  }
+  
+  private isMyTreeViewElementsTreeEnabled : Boolean  ;
+  
+  public getIsMyTreeViewElementsTreeEnabled (  ) : Boolean  {
+    return this.isMyTreeViewElementsTreeEnabled;
+
+  }
+  
+  private MyTreeViewElementsTreeRows : TreeViews_ViewModelMyTreeViewElementsRow [ * ]  ;
+  
+  public getMyTreeViewElementsTreeRows (  ) : TreeViews_ViewModelMyTreeViewElementsRow [ * ]  {
+    return this.MyTreeViewElementsTreeRows;
+
+  }
+  
+  private isMyTreeViewElementsTreeDescriptionColumnVisible : Boolean  ;
+  
+  public getIsMyTreeViewElementsTreeDescriptionColumnVisible (  ) : Boolean  {
+    return this.isMyTreeViewElementsTreeDescriptionColumnVisible;
+
+  }
+  
+  private MyStringRowHandlesTreeRows : TreeViews_ViewModelMyStringRowHandlesRow [ * ]  ;
+  
+  public getMyStringRowHandlesTreeRows (  ) : TreeViews_ViewModelMyStringRowHandlesRow [ * ]  {
+    return this.MyStringRowHandlesTreeRows;
+
+  }
+  
+  private MyStringRowHandlesTreeSelectedRow : String  ;
+  
+  public getMyStringRowHandlesTreeSelectedRow (  ) : String  {
+    return this.MyStringRowHandlesTreeSelectedRow;
+
+  }
+  
+  private MyParentIndexRowHandlesTreeRows : TreeViews_ViewModelMyParentIndexRowHandlesRow [ * ]  ;
+  
+  public getMyParentIndexRowHandlesTreeRows (  ) : TreeViews_ViewModelMyParentIndexRowHandlesRow [ * ]  {
+    return this.MyParentIndexRowHandlesTreeRows;
+
+  }
+  
+  private MyParentStringRowHandlesTreeRows : TreeViews_ViewModelMyParentStringRowHandlesRow [ * ]  ;
+  
+  public getMyParentStringRowHandlesTreeRows (  ) : TreeViews_ViewModelMyParentStringRowHandlesRow [ * ]  {
+    return this.MyParentStringRowHandlesTreeRows;
+
+  }
+}

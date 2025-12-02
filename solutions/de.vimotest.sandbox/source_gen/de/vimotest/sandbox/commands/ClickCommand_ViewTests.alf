@@ -4,13 +4,13 @@ private import Testing ;
 
 class ClickCommand_ViewTests {
   
-  private sut : ClickCommand_View  ;
+  private sut : ClickCommand_ViewModel  ;
   
-  private testSetup : ClickCommand_ViewTestSetup  ;
+  private testSetup : ClickCommand_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new ClickCommand_ViewTestSetupImpl (  );
+    this.testSetup = new ClickCommand_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 

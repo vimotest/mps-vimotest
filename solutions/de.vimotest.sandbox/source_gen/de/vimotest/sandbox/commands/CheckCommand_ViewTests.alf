@@ -4,13 +4,13 @@ private import Testing ;
 
 class CheckCommand_ViewTests {
   
-  private sut : CheckCommand_View  ;
+  private sut : CheckCommand_ViewModel  ;
   
-  private testSetup : CheckCommand_ViewTestSetup  ;
+  private testSetup : CheckCommand_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new CheckCommand_ViewTestSetupImpl (  );
+    this.testSetup = new CheckCommand_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 

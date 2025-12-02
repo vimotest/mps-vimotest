@@ -2,17 +2,17 @@
 #include <gtest/gtest.h>
 #include <string>
 #include <memory>
-#include "ContextReference_ViewTestSetup.h"
-#include "ContextReference_View.h"
-#include "ContextReference_ViewTestSetupImpl.h"
+#include "ContextReference_ViewModelTestSetup.h"
+#include "ContextReference_ViewModel.h"
+#include "ContextReference_ViewModelTestSetupImpl.h"
 
 namespace context
 {
   class ContextReference_ViewTests : public testing::Test
   {
     public:
-    std::shared_ptr<ContextReference_View> sut;
-    std::shared_ptr<ContextReference_ViewTestSetup> testSetup;
+    std::shared_ptr<ContextReference_ViewModel> sut;
+    std::shared_ptr<ContextReference_ViewModelTestSetup> testSetup;
     virtual void BuildSut() ;
     std::string base = std::string("My Context");
     virtual void given_base() ;
@@ -22,7 +22,7 @@ namespace context
   };
   void ContextReference_ViewTests::SetUp( ) 
   {
-    this->testSetup = std::make_shared<ContextReference_ViewTestSetupImpl>();
+    this->testSetup = std::make_shared<ContextReference_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
   TEST_F(ContextReference_ViewTests,  String_Context_given_base_when_then_) 

@@ -7,14 +7,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class XmlElementContext_ViewTests
 {
-    private context.XmlElementContext_View sut;
+    private context.XmlElementContext_ViewModel sut;
  
-    private context.XmlElementContext_ViewTestSetup testSetup;
+    private context.XmlElementContext_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new context.XmlElementContext_ViewTestSetupImpl();
+    this.testSetup = new context.XmlElementContext_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  

@@ -1,18 +1,18 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "GenericCommands_ViewTestSetup.h"
+#include "GenericCommands_ViewModelTestSetup.h"
 #include <string>
-#include "GenericCommands_View.h"
-#include "GenericCommands_ViewTestSetupImpl.h"
+#include "GenericCommands_ViewModel.h"
+#include "GenericCommands_ViewModelTestSetupImpl.h"
 
 namespace commands
 {
   class GenericCommands_ViewTests : public testing::Test
   {
     public:
-    std::shared_ptr<GenericCommands_View> sut;
-    std::shared_ptr<GenericCommands_ViewTestSetup> testSetup;
+    std::shared_ptr<GenericCommands_ViewModel> sut;
+    std::shared_ptr<GenericCommands_ViewModelTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void when_MyCommand() ;
     protected:
@@ -20,7 +20,7 @@ namespace commands
   };
   void GenericCommands_ViewTests::SetUp( ) 
   {
-    this->testSetup = std::make_shared<GenericCommands_ViewTestSetupImpl>();
+    this->testSetup = std::make_shared<GenericCommands_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
   TEST_F(GenericCommands_ViewTests,  Generic_Commands_Call_given_when_MyCommand_then_) 

@@ -1,0 +1,21 @@
+namespace commands ;
+
+
+
+
+public class SelectRowCommand_ViewModelMyIndexBasedMultiSelectRowListViewElementsRow {
+  
+  private HeaderLabelText : String  ;
+  
+  public getHeaderLabelText (  ) : String  {
+    return this.HeaderLabelText;
+
+  }
+  
+  private RowIndex : Integer  ;
+  
+  public getRowIndex (  ) : Integer  {
+    return this.RowIndex;
+
+  }
+}

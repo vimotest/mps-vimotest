@@ -1,0 +1,8 @@
+namespace widgetassertions ;
+
+
+
+
+public enum RadioButton_ViewModelOptionsOption {
+  OptionA, OptionB, OptionC
+}

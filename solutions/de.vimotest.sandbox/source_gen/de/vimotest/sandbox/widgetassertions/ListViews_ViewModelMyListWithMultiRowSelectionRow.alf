@@ -1,0 +1,21 @@
+namespace widgetassertions ;
+
+
+
+
+public class ListViews_ViewModelMyListWithMultiRowSelectionRow {
+  
+  private HeaderLabelText : String  ;
+  
+  public getHeaderLabelText (  ) : String  {
+    return this.HeaderLabelText;
+
+  }
+  
+  private RowIndex : Integer  ;
+  
+  public getRowIndex (  ) : Integer  {
+    return this.RowIndex;
+
+  }
+}

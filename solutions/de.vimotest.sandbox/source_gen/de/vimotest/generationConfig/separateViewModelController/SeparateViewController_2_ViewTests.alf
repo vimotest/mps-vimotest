@@ -1,0 +1,68 @@
+
+
+private import Testing ;
+
+class SeparateViewController_2_ViewTests {
+  
+  private sutViewModel : MyViewModel  ;
+  
+  private sutViewController : MyViewController  ;
+  
+  private testSetup : SeparateViewController_ViewModelTestSetup  ;
+  
+  
+  protected BeforeTest (  ) {
+    this.testSetup = new SeparateViewController_ViewModelTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
+  
+  
+  public MyTest2_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_ (  ) {
+    this.given_empty_context (  );
+
+    this.BuildSut (  );
+
+    this.when_LoadView (  );
+
+    this.when_uncheck_MyFlag (  );
+
+    this.RetrieveViewModel (  );
+
+  }
+  
+  
+  protected BuildSut (  ) {
+    this.sutViewController = this.testSetup.BuildSutViewController (  );
+
+  }
+  
+  
+  protected RetrieveViewModel (  ) {
+    this.sutViewModel = this.testSetup.GetViewModel (  );
+
+  }
+  
+  // Given Helper Definitions
+
+  
+  public given_empty_context (  ) {    
+  }
+  
+  // When Helper Definitions
+
+  
+  public when_LoadView (  ) {
+    this.sutViewController.loadView (  );
+
+  }
+  
+  public when_uncheck_MyFlag (  ) {
+    this.sutViewController.myFlagChecked ( false );
+
+  }
+  
+  // Then Helper Definitions
+
+}

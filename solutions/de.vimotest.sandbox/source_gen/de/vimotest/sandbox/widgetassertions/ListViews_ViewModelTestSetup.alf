@@ -1,0 +1,12 @@
+namespace widgetassertions ;
+
+
+
+abstract class ListViews_ViewModelTestSetup {
+  
+  public abstract Init (  ) ;
+  
+  public abstract SetEmptyContext (  ) ;
+  
+  public abstract BuildSut (  ) : ListViews_ViewModel  ;
+}

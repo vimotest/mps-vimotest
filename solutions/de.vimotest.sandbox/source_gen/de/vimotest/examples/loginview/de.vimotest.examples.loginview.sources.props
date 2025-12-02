@@ -1,5 +1,5 @@
 <Project>  
   <ItemGroup>    
-    <Compile Include="$(MSBuildThisFileDirectory)de/vimotest/examples/loginview/LoginView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)de/vimotest/examples/loginview/LoginViewModel.cs" />
   </ItemGroup>
 </Project>

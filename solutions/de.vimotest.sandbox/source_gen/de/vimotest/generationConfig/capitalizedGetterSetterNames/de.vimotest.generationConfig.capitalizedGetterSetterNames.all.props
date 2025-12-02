@@ -1,6 +1,6 @@
 <Project>  
   <ItemGroup>    
-    <Compile Include="$(MSBuildThisFileDirectory)CapitalizedGetterNames_ViewMyElementsRow.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)CapitalizedGetterNames_View.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CapitalizedGetterNames_ViewModelMyElementsRow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CapitalizedGetterNames_ViewModel.cs" />
   </ItemGroup>
 </Project>

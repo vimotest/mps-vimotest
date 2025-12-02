@@ -1,0 +1,35 @@
+namespace widgetassertions ;
+
+
+
+
+public class LowLevelFields_ViewModelCustomTreeRowFieldRow {
+  
+  private HeaderLabelText : String  ;
+  
+  public getHeaderLabelText (  ) : String  {
+    return this.HeaderLabelText;
+
+  }
+  
+  public AdditionalInt : Integer  ;
+  
+  public getAdditionalInt (  ) : Integer  {
+    return this.AdditionalInt;
+
+  }
+  
+  private RowHandle : String  ;
+  
+  public getRowHandle (  ) : String  {
+    return this.RowHandle;
+
+  }
+  
+  private RowDepth : Integer  ;
+  
+  public getRowDepth (  ) : Integer  {
+    return this.RowDepth;
+
+  }
+}

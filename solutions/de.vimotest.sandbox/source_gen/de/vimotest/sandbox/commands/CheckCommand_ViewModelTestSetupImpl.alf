@@ -1,0 +1,14 @@
+namespace commands ;
+
+
+
+class CheckCommand_ViewModelTestSetupImpl specializes CheckCommand_ViewModelTestSetup {
+  
+  public Init (  ) {    
+  }
+  
+  public BuildSut (  ) : CheckCommand_ViewModel  {
+    return null;
+
+  }
+}

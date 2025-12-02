@@ -1,0 +1,28 @@
+namespace commands ;
+
+
+
+
+public class SelectRowCommand_ViewModelMyStringRowHandleTreeViewElementsRow {
+  
+  private columnCellLabelText : String  ;
+  
+  public getColumnCellLabelText (  ) : String  {
+    return this.columnCellLabelText;
+
+  }
+  
+  private RowHandle : String  ;
+  
+  public getRowHandle (  ) : String  {
+    return this.RowHandle;
+
+  }
+  
+  private RowDepth : Integer  ;
+  
+  public getRowDepth (  ) : Integer  {
+    return this.RowDepth;
+
+  }
+}

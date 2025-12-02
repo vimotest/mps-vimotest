@@ -1,0 +1,21 @@
+namespace commands ;
+
+
+
+
+public class RowBasedCommand_ViewModelMyFlagsRow {
+  
+  private isCheckboxesCheckBoxChecked : Boolean  ;
+  
+  public getIsCheckboxesCheckBoxChecked (  ) : Boolean  {
+    return this.isCheckboxesCheckBoxChecked;
+
+  }
+  
+  private RowIndex : Integer  ;
+  
+  public getRowIndex (  ) : Integer  {
+    return this.RowIndex;
+
+  }
+}

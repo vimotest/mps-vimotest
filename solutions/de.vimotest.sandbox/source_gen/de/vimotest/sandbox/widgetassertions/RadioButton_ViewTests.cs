@@ -7,14 +7,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class RadioButton_ViewTests
 {
-    private widgetassertions.RadioButton_View sut;
+    private widgetassertions.RadioButton_ViewModel sut;
  
-    private widgetassertions.RadioButton_ViewTestSetup testSetup;
+    private widgetassertions.RadioButton_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new widgetassertions.RadioButton_ViewTestSetupImpl();
+    this.testSetup = new widgetassertions.RadioButton_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  
@@ -46,18 +46,18 @@ public class RadioButton_ViewTests
  
     public   virtual void then_Options_selected_OptionB_()
   {
-    Assert.AreEqual(widgetassertions.RadioButton_ViewOptionsOption.OptionB, this.sut.getOptionsRadioButtonGroupSelectedEntry());
+    Assert.AreEqual(widgetassertions.RadioButton_ViewModelOptionsOption.OptionB, this.sut.getOptionsRadioButtonGroupSelectedEntry());
   }
  
     public   virtual void then_Options_selected_OptionA_and_OptionB_is_not_enabled()
   {
-    Assert.AreEqual(widgetassertions.RadioButton_ViewOptionsOption.OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry());
+    Assert.AreEqual(widgetassertions.RadioButton_ViewModelOptionsOption.OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry());
     Assert.IsFalse(this.sut.getIsOptionBRadioButtonEnabled());
   }
  
     public   virtual void then_Options_selected_OptionA_and_OptionB_is_not_visible()
   {
-    Assert.AreEqual(widgetassertions.RadioButton_ViewOptionsOption.OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry());
+    Assert.AreEqual(widgetassertions.RadioButton_ViewModelOptionsOption.OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry());
     Assert.IsFalse(this.sut.getIsOptionBRadioButtonVisible());
   }
 }

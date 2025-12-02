@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 
 public class ParameterObjectCommand_ViewTests_Test {
-  private ParameterObjectCommand_View sut;
-  private ParameterObjectCommand_ViewTestSetup testSetup;
+  private ParameterObjectCommand_ViewModel sut;
+  private ParameterObjectCommand_ViewModelTestSetup testSetup;
   @Test
   public void test_MyTest_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_() throws Exception {
     this.given_empty_context();
@@ -17,7 +17,7 @@ public class ParameterObjectCommand_ViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.testSetup = new ParameterObjectCommand_ViewTestSetupImpl();
+    this.testSetup = new ParameterObjectCommand_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
 
@@ -34,11 +34,11 @@ public class ParameterObjectCommand_ViewTests_Test {
 
 
   public void when_LoadView() {
-    ParameterObjectCommand_View.LoadViewParams loadViewParameters = new ParameterObjectCommand_View.LoadViewParams("A", true, 42);
+    ParameterObjectCommand_ViewModel.LoadViewParams loadViewParameters = new ParameterObjectCommand_ViewModel.LoadViewParams("A", true, 42);
     this.sut.loadView(loadViewParameters);
   }
   public void when_uncheck_MyFlag() {
-    ParameterObjectCommand_View.CheckParams checkedParameters = new ParameterObjectCommand_View.CheckParams(false);
+    ParameterObjectCommand_ViewModel.CheckParams checkedParameters = new ParameterObjectCommand_ViewModel.CheckParams(false);
     this.sut.myFlagChecked(checkedParameters);
   }
 

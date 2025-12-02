@@ -1,0 +1,56 @@
+namespace widgetassertions ;
+
+
+
+
+public class LowLevelFields_ViewModel {
+  
+  public MyBool : Boolean  ;
+  
+  public getMyBool (  ) : Boolean  {
+    return this.MyBool;
+
+  }
+  
+  public MyInt : Integer  ;
+  
+  public getMyInt (  ) : Integer  {
+    return this.MyInt;
+
+  }
+  
+  public MyString : String  ;
+  
+  public getMyString (  ) : String  {
+    return this.MyString;
+
+  }
+  
+  public MyStrings : String [ * ]  ;
+  
+  public getMyStrings (  ) : String [ * ]  {
+    return this.MyStrings;
+
+  }
+  
+  private CustomTableRowFieldTableRows : LowLevelFields_ViewModelCustomTableRowFieldRow [ * ]  ;
+  
+  public getCustomTableRowFieldTableRows (  ) : LowLevelFields_ViewModelCustomTableRowFieldRow [ * ]  {
+    return this.CustomTableRowFieldTableRows;
+
+  }
+  
+  private CustomListRowFieldListRows : LowLevelFields_ViewModelCustomListRowFieldRow [ * ]  ;
+  
+  public getCustomListRowFieldListRows (  ) : LowLevelFields_ViewModelCustomListRowFieldRow [ * ]  {
+    return this.CustomListRowFieldListRows;
+
+  }
+  
+  private CustomTreeRowFieldTreeRows : LowLevelFields_ViewModelCustomTreeRowFieldRow [ * ]  ;
+  
+  public getCustomTreeRowFieldTreeRows (  ) : LowLevelFields_ViewModelCustomTreeRowFieldRow [ * ]  {
+    return this.CustomTreeRowFieldTreeRows;
+
+  }
+}

@@ -1,20 +1,20 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "ComboBoxes_ViewTestSetup.h"
-#include "ComboBoxes_View.h"
+#include "ComboBoxes_ViewModelTestSetup.h"
+#include "ComboBoxes_ViewModel.h"
 #include <vector>
 #include <string>
 #include <optional>
-#include "ComboBoxes_ViewTestSetupImpl.h"
+#include "ComboBoxes_ViewModelTestSetupImpl.h"
 
 namespace widgetassertions
 {
   class ComboBoxes_ViewTest : public testing::Test
   {
     public:
-    std::shared_ptr<ComboBoxes_View> sut;
-    std::shared_ptr<ComboBoxes_ViewTestSetup> testSetup;
+    std::shared_ptr<ComboBoxes_ViewModel> sut;
+    std::shared_ptr<ComboBoxes_ViewModelTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
     virtual void then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible() ;
@@ -26,7 +26,7 @@ namespace widgetassertions
   };
   void ComboBoxes_ViewTest::SetUp( ) 
   {
-    this->testSetup = std::make_shared<ComboBoxes_ViewTestSetupImpl>();
+    this->testSetup = std::make_shared<ComboBoxes_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
   TEST_F(ComboBoxes_ViewTest,  My_Scenario_given_empty_context_when_then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible_and_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_) 

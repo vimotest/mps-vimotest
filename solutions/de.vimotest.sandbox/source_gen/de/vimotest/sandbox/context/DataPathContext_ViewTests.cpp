@@ -1,18 +1,18 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "DataPathContext_ViewTestSetup.h"
+#include "DataPathContext_ViewModelTestSetup.h"
 #include <string>
-#include "DataPathContext_View.h"
-#include "DataPathContext_ViewTestSetupImpl.h"
+#include "DataPathContext_ViewModel.h"
+#include "DataPathContext_ViewModelTestSetupImpl.h"
 
 namespace context
 {
   class DataPathContext_ViewTests : public testing::Test
   {
     public:
-    std::shared_ptr<DataPathContext_View> sut;
-    std::shared_ptr<DataPathContext_ViewTestSetup> testSetup;
+    std::shared_ptr<DataPathContext_ViewModel> sut;
+    std::shared_ptr<DataPathContext_ViewModelTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void given_my_element() ;
     virtual void given_path_resource_elements_myelement() ;
@@ -21,7 +21,7 @@ namespace context
   };
   void DataPathContext_ViewTests::SetUp( ) 
   {
-    this->testSetup = std::make_shared<DataPathContext_ViewTestSetupImpl>();
+    this->testSetup = std::make_shared<DataPathContext_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
   TEST_F(DataPathContext_ViewTests,  Data_Path_Context_given_my_element_when_then_) 

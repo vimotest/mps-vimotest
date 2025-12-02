@@ -1,5 +1,5 @@
 <Project>  
   <ItemGroup>    
-    <Compile Include="$(MSBuildThisFileDirectory)ParameterObjectCommand_View.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ParameterObjectCommand_ViewModel.cs" />
   </ItemGroup>
 </Project>

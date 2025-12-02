@@ -1,18 +1,18 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "LoadCommand_ViewTestSetup.h"
-#include "LoadCommand_View.h"
+#include "LoadCommand_ViewModelTestSetup.h"
+#include "LoadCommand_ViewModel.h"
 #include <string>
-#include "LoadCommand_ViewTestSetupImpl.h"
+#include "LoadCommand_ViewModelTestSetupImpl.h"
 
 namespace commands
 {
   class LoadCommand_ViewTests : public testing::Test
   {
     public:
-    std::shared_ptr<LoadCommand_View> sut;
-    std::shared_ptr<LoadCommand_ViewTestSetup> testSetup;
+    std::shared_ptr<LoadCommand_ViewModel> sut;
+    std::shared_ptr<LoadCommand_ViewModelTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void when_LoadView() ;
     virtual void when_LoadViewWithName() ;
@@ -21,7 +21,7 @@ namespace commands
   };
   void LoadCommand_ViewTests::SetUp( ) 
   {
-    this->testSetup = std::make_shared<LoadCommand_ViewTestSetupImpl>();
+    this->testSetup = std::make_shared<LoadCommand_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
   TEST_F(LoadCommand_ViewTests,  Load_Commands_Call_given_when_LoadView_then_) 

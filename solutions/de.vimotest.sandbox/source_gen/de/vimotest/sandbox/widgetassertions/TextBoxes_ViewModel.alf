@@ -1,0 +1,35 @@
+namespace widgetassertions ;
+
+
+
+
+public class TextBoxes_ViewModel {
+  
+  private MyValueTextBoxText : String  ;
+  
+  public getMyValueTextBoxText (  ) : String  {
+    return this.MyValueTextBoxText;
+
+  }
+  
+  private isMyValueTextBoxVisible : Boolean  ;
+  
+  public getIsMyValueTextBoxVisible (  ) : Boolean  {
+    return this.isMyValueTextBoxVisible;
+
+  }
+  
+  private isMyValueTextBoxEnabled : Boolean  ;
+  
+  public getIsMyValueTextBoxEnabled (  ) : Boolean  {
+    return this.isMyValueTextBoxEnabled;
+
+  }
+  
+  private MultiLineTextBoxValueTextBoxText : String [ * ]  ;
+  
+  public getMultiLineTextBoxValueTextBoxText (  ) : String [ * ]  {
+    return this.MultiLineTextBoxValueTextBoxText;
+
+  }
+}

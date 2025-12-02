@@ -1,0 +1,17 @@
+namespace widgetassertions ;
+
+
+
+class Labels_ViewModelTestSetupImpl specializes Labels_ViewModelTestSetup {
+  
+  public Init (  ) {    
+  }
+  
+  public SetEmptyContext (  ) {    
+  }
+  
+  public BuildSut (  ) : Labels_ViewModel  {
+    return null;
+
+  }
+}

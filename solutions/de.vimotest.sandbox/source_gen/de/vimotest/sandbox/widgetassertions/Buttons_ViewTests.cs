@@ -7,14 +7,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class Buttons_ViewTests
 {
-    private widgetassertions.Buttons_View sut;
+    private widgetassertions.Buttons_ViewModel sut;
  
-    private widgetassertions.Buttons_ViewTestSetup testSetup;
+    private widgetassertions.Buttons_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new widgetassertions.Buttons_ViewTestSetupImpl();
+    this.testSetup = new widgetassertions.Buttons_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  

@@ -1,9 +1,9 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "DataTableContext_ViewTestSetup.h"
-#include "DataTableContext_View.h"
-#include "DataTableContext_ViewTestSetupImpl.h"
+#include "DataTableContext_ViewModelTestSetup.h"
+#include "DataTableContext_ViewModel.h"
+#include "DataTableContext_ViewModelTestSetupImpl.h"
 #include <string>
 
 namespace context
@@ -11,8 +11,8 @@ namespace context
   class DataTableContext_ViewTests : public testing::Test
   {
     public:
-    std::shared_ptr<DataTableContext_View> sut;
-    std::shared_ptr<DataTableContext_ViewTestSetup> testSetup;
+    std::shared_ptr<DataTableContext_ViewModel> sut;
+    std::shared_ptr<DataTableContext_ViewModelTestSetup> testSetup;
     virtual void BuildSut() ;
     std::string dataTableCustomSetter = R"(| id | name |
 | 0 | A |)";
@@ -35,7 +35,7 @@ namespace context
   };
   void DataTableContext_ViewTests::SetUp( ) 
   {
-    this->testSetup = std::make_shared<DataTableContext_ViewTestSetupImpl>();
+    this->testSetup = std::make_shared<DataTableContext_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
   TEST_F(DataTableContext_ViewTests,  DataTable_Context_Custom_Setter_given_dataTableCustomSetter_when_then_) 

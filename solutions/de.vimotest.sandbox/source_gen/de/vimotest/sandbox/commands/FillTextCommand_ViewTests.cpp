@@ -1,18 +1,18 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "FillTextCommand_ViewTestSetup.h"
+#include "FillTextCommand_ViewModelTestSetup.h"
 #include <string>
-#include "FillTextCommand_View.h"
-#include "FillTextCommand_ViewTestSetupImpl.h"
+#include "FillTextCommand_ViewModel.h"
+#include "FillTextCommand_ViewModelTestSetupImpl.h"
 
 namespace commands
 {
   class FillTextCommand_ViewTests : public testing::Test
   {
     public:
-    std::shared_ptr<FillTextCommand_View> sut;
-    std::shared_ptr<FillTextCommand_ViewTestSetup> testSetup;
+    std::shared_ptr<FillTextCommand_ViewModel> sut;
+    std::shared_ptr<FillTextCommand_ViewModelTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void when_fill_Changed_in_MyValue() ;
     virtual void when_fill_Changed_in_MyFreeValue() ;
@@ -21,7 +21,7 @@ namespace commands
   };
   void FillTextCommand_ViewTests::SetUp( ) 
   {
-    this->testSetup = std::make_shared<FillTextCommand_ViewTestSetupImpl>();
+    this->testSetup = std::make_shared<FillTextCommand_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
   TEST_F(FillTextCommand_ViewTests,  Fill_Text_TextBox_given_when_fill_Changed_in_MyValue_then_) 

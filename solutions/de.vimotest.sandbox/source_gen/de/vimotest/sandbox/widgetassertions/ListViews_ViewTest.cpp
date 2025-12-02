@@ -1,24 +1,24 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "ListViews_ViewTestSetup.h"
-#include "ListViews_View.h"
+#include "ListViews_ViewModelTestSetup.h"
+#include "ListViews_ViewModel.h"
 #include <vector>
-#include "ListViews_ViewMyListOfLabelRow.h"
+#include "ListViews_ViewModelMyListOfLabelRow.h"
 #include <string>
-#include "ListViews_ViewMyListOfImagesRow.h"
-#include "ListViews_ViewMyCheckboxesRow.h"
-#include "ListViews_ViewMyStringRowHandlesRow.h"
-#include "ListViews_ViewMyListWithMultiRowSelectionRow.h"
-#include "ListViews_ViewTestSetupImpl.h"
+#include "ListViews_ViewModelMyListOfImagesRow.h"
+#include "ListViews_ViewModelMyCheckboxesRow.h"
+#include "ListViews_ViewModelMyStringRowHandlesRow.h"
+#include "ListViews_ViewModelMyListWithMultiRowSelectionRow.h"
+#include "ListViews_ViewModelTestSetupImpl.h"
 
 namespace widgetassertions
 {
   class ListViews_ViewTest : public testing::Test
   {
     public:
-    std::shared_ptr<ListViews_View> sut;
-    std::shared_ptr<ListViews_ViewTestSetup> testSetup;
+    std::shared_ptr<ListViews_ViewModel> sut;
+    std::shared_ptr<ListViews_ViewModelTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
     virtual void then_MyListOfLabel_has_4_rows_and_selected_row_index_3() ;
@@ -34,7 +34,7 @@ namespace widgetassertions
   };
   void ListViews_ViewTest::SetUp( ) 
   {
-    this->testSetup = std::make_shared<ListViews_ViewTestSetupImpl>();
+    this->testSetup = std::make_shared<ListViews_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
   TEST_F(ListViews_ViewTest,  My_Scenario_given_empty_context_when_then_MyListOfLabel_has_4_rows_and_selected_row_index_3_and_MyListOfImages_has_2_rows_and_MyCheckboxes_has_3_rows_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1_and_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_) 

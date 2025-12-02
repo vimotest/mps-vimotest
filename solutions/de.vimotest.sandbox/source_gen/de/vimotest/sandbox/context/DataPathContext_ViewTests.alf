@@ -4,13 +4,13 @@ private import Testing ;
 
 class DataPathContext_ViewTests {
   
-  private sut : DataPathContext_View  ;
+  private sut : DataPathContext_ViewModel  ;
   
-  private testSetup : DataPathContext_ViewTestSetup  ;
+  private testSetup : DataPathContext_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new DataPathContext_ViewTestSetupImpl (  );
+    this.testSetup = new DataPathContext_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 

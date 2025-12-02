@@ -4,13 +4,13 @@ private import Testing ;
 
 class Labels_ViewTest {
   
-  private sut : Labels_View  ;
+  private sut : Labels_ViewModel  ;
   
-  private testSetup : Labels_ViewTestSetup  ;
+  private testSetup : Labels_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new Labels_ViewTestSetupImpl (  );
+    this.testSetup = new Labels_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 

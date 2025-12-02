@@ -4,13 +4,13 @@ private import Testing ;
 
 class TextBoxes_ViewTest {
   
-  private sut : TextBoxes_View  ;
+  private sut : TextBoxes_ViewModel  ;
   
-  private testSetup : TextBoxes_ViewTestSetup  ;
+  private testSetup : TextBoxes_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new TextBoxes_ViewTestSetupImpl (  );
+    this.testSetup = new TextBoxes_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 

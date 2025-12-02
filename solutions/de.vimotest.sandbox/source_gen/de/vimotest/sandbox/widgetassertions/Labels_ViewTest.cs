@@ -8,14 +8,14 @@ using System.Collections.Generic;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class Labels_ViewTest
 {
-    private widgetassertions.Labels_View sut;
+    private widgetassertions.Labels_ViewModel sut;
  
-    private widgetassertions.Labels_ViewTestSetup testSetup;
+    private widgetassertions.Labels_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new widgetassertions.Labels_ViewTestSetupImpl();
+    this.testSetup = new widgetassertions.Labels_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  

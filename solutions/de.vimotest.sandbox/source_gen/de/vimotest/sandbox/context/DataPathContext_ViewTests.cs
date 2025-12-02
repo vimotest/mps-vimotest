@@ -7,14 +7,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class DataPathContext_ViewTests
 {
-    private context.DataPathContext_View sut;
+    private context.DataPathContext_ViewModel sut;
  
-    private context.DataPathContext_ViewTestSetup testSetup;
+    private context.DataPathContext_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new context.DataPathContext_ViewTestSetupImpl();
+    this.testSetup = new context.DataPathContext_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  

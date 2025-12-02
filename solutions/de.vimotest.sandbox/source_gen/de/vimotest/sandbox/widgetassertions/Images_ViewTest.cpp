@@ -1,18 +1,18 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "Images_ViewTestSetup.h"
+#include "Images_ViewModelTestSetup.h"
 #include <string>
-#include "Images_View.h"
-#include "Images_ViewTestSetupImpl.h"
+#include "Images_ViewModel.h"
+#include "Images_ViewModelTestSetupImpl.h"
 
 namespace widgetassertions
 {
   class Images_ViewTest : public testing::Test
   {
     public:
-    std::shared_ptr<Images_View> sut;
-    std::shared_ptr<Images_ViewTestSetup> testSetup;
+    std::shared_ptr<Images_ViewModel> sut;
+    std::shared_ptr<Images_ViewModelTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
     virtual void then_Status_shows_image_image_active_() ;
@@ -22,7 +22,7 @@ namespace widgetassertions
   };
   void Images_ViewTest::SetUp( ) 
   {
-    this->testSetup = std::make_shared<Images_ViewTestSetupImpl>();
+    this->testSetup = std::make_shared<Images_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
   TEST_F(Images_ViewTest,  My_Scenario_given_empty_context_when_then_Status_shows_image_image_active_and_UpOrDown_shows_image_image_down_) 

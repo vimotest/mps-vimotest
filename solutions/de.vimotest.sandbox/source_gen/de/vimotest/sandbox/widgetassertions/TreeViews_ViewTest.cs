@@ -8,14 +8,14 @@ using System.Collections.Generic;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class TreeViews_ViewTest
 {
-    private widgetassertions.TreeViews_View sut;
+    private widgetassertions.TreeViews_ViewModel sut;
  
-    private widgetassertions.TreeViews_ViewTestSetup testSetup;
+    private widgetassertions.TreeViews_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new widgetassertions.TreeViews_ViewTestSetupImpl();
+    this.testSetup = new widgetassertions.TreeViews_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  

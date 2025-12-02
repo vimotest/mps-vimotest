@@ -1,0 +1,17 @@
+namespace widgetassertions ;
+
+
+
+class TreeViews_ViewModelTestSetupImpl specializes TreeViews_ViewModelTestSetup {
+  
+  public Init (  ) {    
+  }
+  
+  public SetEmptyContext (  ) {    
+  }
+  
+  public BuildSut (  ) : TreeViews_ViewModel  {
+    return null;
+
+  }
+}

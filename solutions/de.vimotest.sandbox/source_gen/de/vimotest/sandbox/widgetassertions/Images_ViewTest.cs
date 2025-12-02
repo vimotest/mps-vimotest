@@ -7,14 +7,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class Images_ViewTest
 {
-    private widgetassertions.Images_View sut;
+    private widgetassertions.Images_ViewModel sut;
  
-    private widgetassertions.Images_ViewTestSetup testSetup;
+    private widgetassertions.Images_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new widgetassertions.Images_ViewTestSetupImpl();
+    this.testSetup = new widgetassertions.Images_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  

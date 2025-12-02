@@ -1,0 +1,8 @@
+namespace context ;
+
+
+
+
+public class XmlElementContext_ViewModel {
+
+}

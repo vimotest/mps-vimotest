@@ -1,0 +1,22 @@
+
+
+
+
+class SeparateViewController_ViewModelTestSetupImpl specializes SeparateViewController_ViewModelTestSetup {
+  
+  public Init (  ) {    
+  }
+  
+  public SetEmptyContext (  ) {    
+  }
+  
+  public BuildSutViewController (  ) : MyViewController  {
+    return null;
+
+  }
+  
+  public GetViewModel (  ) : MyViewModel  {
+    return null;
+
+  }
+}

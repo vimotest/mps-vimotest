@@ -4,13 +4,13 @@ private import Testing ;
 
 class GenericCommands_ViewTests {
   
-  private sut : GenericCommands_View  ;
+  private sut : GenericCommands_ViewModel  ;
   
-  private testSetup : GenericCommands_ViewTestSetup  ;
+  private testSetup : GenericCommands_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new GenericCommands_ViewTestSetupImpl (  );
+    this.testSetup = new GenericCommands_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 

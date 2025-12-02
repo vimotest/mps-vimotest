@@ -8,14 +8,14 @@ using System.Collections.Generic;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class SelectRowCommand_ViewTests
 {
-    private commands.SelectRowCommand_View sut;
+    private commands.SelectRowCommand_ViewModel sut;
  
-    private commands.SelectRowCommand_ViewTestSetup testSetup;
+    private commands.SelectRowCommand_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new commands.SelectRowCommand_ViewTestSetupImpl();
+    this.testSetup = new commands.SelectRowCommand_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  

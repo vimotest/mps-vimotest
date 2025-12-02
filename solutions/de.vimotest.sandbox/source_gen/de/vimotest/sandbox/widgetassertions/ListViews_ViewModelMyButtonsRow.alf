@@ -1,0 +1,21 @@
+namespace widgetassertions ;
+
+
+
+
+public class ListViews_ViewModelMyButtonsRow {
+  
+  private ButtonsButtonText : String  ;
+  
+  public getButtonsButtonText (  ) : String  {
+    return this.ButtonsButtonText;
+
+  }
+  
+  private RowHandle : String  ;
+  
+  public getRowHandle (  ) : String  {
+    return this.RowHandle;
+
+  }
+}

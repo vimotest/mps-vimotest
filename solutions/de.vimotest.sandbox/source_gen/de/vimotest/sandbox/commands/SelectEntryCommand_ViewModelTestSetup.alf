@@ -1,0 +1,10 @@
+namespace commands ;
+
+
+
+abstract class SelectEntryCommand_ViewModelTestSetup {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : SelectEntryCommand_ViewModel  ;
+}

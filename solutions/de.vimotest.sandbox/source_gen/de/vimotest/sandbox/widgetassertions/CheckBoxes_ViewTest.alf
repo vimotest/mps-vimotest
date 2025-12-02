@@ -4,13 +4,13 @@ private import Testing ;
 
 class CheckBoxes_ViewTest {
   
-  private sut : CheckBoxes_View  ;
+  private sut : CheckBoxes_ViewModel  ;
   
-  private testSetup : CheckBoxes_ViewTestSetup  ;
+  private testSetup : CheckBoxes_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new CheckBoxes_ViewTestSetupImpl (  );
+    this.testSetup = new CheckBoxes_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 

@@ -1,0 +1,129 @@
+namespace widgetassertions ;
+
+
+
+
+public class ListViews_ViewModel {
+  
+  private isMyListOfLabelListVisible : Boolean  ;
+  
+  public getIsMyListOfLabelListVisible (  ) : Boolean  {
+    return this.isMyListOfLabelListVisible;
+
+  }
+  
+  private isMyListOfLabelListEnabled : Boolean  ;
+  
+  public getIsMyListOfLabelListEnabled (  ) : Boolean  {
+    return this.isMyListOfLabelListEnabled;
+
+  }
+  
+  private MyListOfLabelListRows : ListViews_ViewModelMyListOfLabelRow [ * ]  ;
+  
+  public getMyListOfLabelListRows (  ) : ListViews_ViewModelMyListOfLabelRow [ * ]  {
+    return this.MyListOfLabelListRows;
+
+  }
+  
+  private MyListOfLabelListSelectedRow : Integer  ;
+  
+  public getMyListOfLabelListSelectedRow (  ) : Integer  {
+    return this.MyListOfLabelListSelectedRow;
+
+  }
+  
+  private isMyListOfImagesListVisible : Boolean  ;
+  
+  public getIsMyListOfImagesListVisible (  ) : Boolean  {
+    return this.isMyListOfImagesListVisible;
+
+  }
+  
+  private isMyListOfImagesListEnabled : Boolean  ;
+  
+  public getIsMyListOfImagesListEnabled (  ) : Boolean  {
+    return this.isMyListOfImagesListEnabled;
+
+  }
+  
+  private MyListOfImagesListRows : ListViews_ViewModelMyListOfImagesRow [ * ]  ;
+  
+  public getMyListOfImagesListRows (  ) : ListViews_ViewModelMyListOfImagesRow [ * ]  {
+    return this.MyListOfImagesListRows;
+
+  }
+  
+  private MyListOfImagesListSelectedRow : Integer  ;
+  
+  public getMyListOfImagesListSelectedRow (  ) : Integer  {
+    return this.MyListOfImagesListSelectedRow;
+
+  }
+  
+  private MyCheckboxesListRows : ListViews_ViewModelMyCheckboxesRow [ * ]  ;
+  
+  public getMyCheckboxesListRows (  ) : ListViews_ViewModelMyCheckboxesRow [ * ]  {
+    return this.MyCheckboxesListRows;
+
+  }
+  
+  private MyCheckboxesListSelectedRow : Integer  ;
+  
+  public getMyCheckboxesListSelectedRow (  ) : Integer  {
+    return this.MyCheckboxesListSelectedRow;
+
+  }
+  
+  private isMyCheckboxesListVisible : Boolean  ;
+  
+  public getIsMyCheckboxesListVisible (  ) : Boolean  {
+    return this.isMyCheckboxesListVisible;
+
+  }
+  
+  private isMyCheckboxesListEnabled : Boolean  ;
+  
+  public getIsMyCheckboxesListEnabled (  ) : Boolean  {
+    return this.isMyCheckboxesListEnabled;
+
+  }
+  
+  private MyStringRowHandlesListRows : ListViews_ViewModelMyStringRowHandlesRow [ * ]  ;
+  
+  public getMyStringRowHandlesListRows (  ) : ListViews_ViewModelMyStringRowHandlesRow [ * ]  {
+    return this.MyStringRowHandlesListRows;
+
+  }
+  
+  private MyStringRowHandlesListSelectedRow : String  ;
+  
+  public getMyStringRowHandlesListSelectedRow (  ) : String  {
+    return this.MyStringRowHandlesListSelectedRow;
+
+  }
+  
+  private MyListWithMultiRowSelectionListRows : ListViews_ViewModelMyListWithMultiRowSelectionRow [ * ]  ;
+  
+  public getMyListWithMultiRowSelectionListRows (  ) : ListViews_ViewModelMyListWithMultiRowSelectionRow [ * ]  {
+    return this.MyListWithMultiRowSelectionListRows;
+
+  }
+  
+  private MyListWithMultiRowSelectionListSelectedRows : Integer [ * ]  ;
+  
+  public getMyListWithMultiRowSelectionListSelectedRows (  ) : Integer [ * ]  {
+    return this.MyListWithMultiRowSelectionListSelectedRows;
+
+  }
+  
+  private MyButtonsListRows : ListViews_ViewModelMyButtonsRow [ * ]  ;
+  
+  public getMyButtonsListRows (  ) : ListViews_ViewModelMyButtonsRow [ * ]  {
+    return this.MyButtonsListRows;
+
+  }
+  
+  public buttonsClicked (   in rowIndex: Integer  ) {    
+  }
+}

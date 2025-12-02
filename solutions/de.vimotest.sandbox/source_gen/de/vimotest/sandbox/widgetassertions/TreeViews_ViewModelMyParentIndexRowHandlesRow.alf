@@ -1,0 +1,28 @@
+namespace widgetassertions ;
+
+
+
+
+public class TreeViews_ViewModelMyParentIndexRowHandlesRow {
+  
+  private ValuesLabelText : String  ;
+  
+  public getValuesLabelText (  ) : String  {
+    return this.ValuesLabelText;
+
+  }
+  
+  private RowIndex : Integer  ;
+  
+  public getRowIndex (  ) : Integer  {
+    return this.RowIndex;
+
+  }
+  
+  private ParentRowIndex : Integer  ;
+  
+  public getParentRowIndex (  ) : Integer  {
+    return this.ParentRowIndex;
+
+  }
+}

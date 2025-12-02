@@ -1,0 +1,10 @@
+namespace commands ;
+
+
+
+abstract class ClickCommand_ViewModelTestSetup {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : ClickCommand_ViewModel  ;
+}

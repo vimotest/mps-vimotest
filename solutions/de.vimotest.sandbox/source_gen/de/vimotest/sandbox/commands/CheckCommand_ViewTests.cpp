@@ -1,17 +1,17 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "CheckCommand_ViewTestSetup.h"
-#include "CheckCommand_View.h"
-#include "CheckCommand_ViewTestSetupImpl.h"
+#include "CheckCommand_ViewModelTestSetup.h"
+#include "CheckCommand_ViewModel.h"
+#include "CheckCommand_ViewModelTestSetupImpl.h"
 
 namespace commands
 {
   class CheckCommand_ViewTests : public testing::Test
   {
     public:
-    std::shared_ptr<CheckCommand_View> sut;
-    std::shared_ptr<CheckCommand_ViewTestSetup> testSetup;
+    std::shared_ptr<CheckCommand_ViewModel> sut;
+    std::shared_ptr<CheckCommand_ViewModelTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void when_check_MyCheckBox1() ;
     virtual void when_uncheck_MyCheckBox2() ;
@@ -20,7 +20,7 @@ namespace commands
   };
   void CheckCommand_ViewTests::SetUp( ) 
   {
-    this->testSetup = std::make_shared<CheckCommand_ViewTestSetupImpl>();
+    this->testSetup = std::make_shared<CheckCommand_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
   TEST_F(CheckCommand_ViewTests,  Check_CheckBox_given_when_check_MyCheckBox1_and_uncheck_MyCheckBox2_then_) 

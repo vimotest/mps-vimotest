@@ -7,14 +7,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class StringContext2_ViewTests
 {
-    private context.StringContext_View sut;
+    private context.StringContext_ViewModel sut;
  
-    private context.StringContext_ViewTestSetup testSetup;
+    private context.StringContext_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new context.StringContext_ViewTestSetupImpl();
+    this.testSetup = new context.StringContext_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  

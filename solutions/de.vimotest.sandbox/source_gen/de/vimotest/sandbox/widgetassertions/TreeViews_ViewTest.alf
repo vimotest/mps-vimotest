@@ -4,13 +4,13 @@ private import Testing ;
 
 class TreeViews_ViewTest {
   
-  private sut : TreeViews_View  ;
+  private sut : TreeViews_ViewModel  ;
   
-  private testSetup : TreeViews_ViewTestSetup  ;
+  private testSetup : TreeViews_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new TreeViews_ViewTestSetupImpl (  );
+    this.testSetup = new TreeViews_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 
@@ -61,12 +61,12 @@ class TreeViews_ViewTest {
 
   
   public then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible (  ) {
-    let actualRows: TreeViews_ViewMyTreeViewElementsRow [] = this.sut.getMyTreeViewElementsTreeRows (  );
+    let actualRows: TreeViews_ViewModelMyTreeViewElementsRow [] = this.sut.getMyTreeViewElementsTreeRows (  );
 
     AssertEqual ( 2, actualRows->size (  ) );
 
     {
-      let row0: TreeViews_ViewMyTreeViewElementsRow = actualRows[ 1 ];
+      let row0: TreeViews_ViewModelMyTreeViewElementsRow = actualRows[ 1 ];
 
       AssertEqual ( 0, row0.getRowIndex (  ) );
 
@@ -83,7 +83,7 @@ class TreeViews_ViewTest {
     }
 
     {
-      let row1: TreeViews_ViewMyTreeViewElementsRow = actualRows[ 2 ];
+      let row1: TreeViews_ViewModelMyTreeViewElementsRow = actualRows[ 2 ];
 
       AssertEqual ( 1, row1.getRowIndex (  ) );
 
@@ -110,12 +110,12 @@ class TreeViews_ViewTest {
   }
   
   public then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  ) {
-    let actualRows: TreeViews_ViewMyStringRowHandlesRow [] = this.sut.getMyStringRowHandlesTreeRows (  );
+    let actualRows: TreeViews_ViewModelMyStringRowHandlesRow [] = this.sut.getMyStringRowHandlesTreeRows (  );
 
     AssertEqual ( 2, actualRows->size (  ) );
 
     {
-      let row0: TreeViews_ViewMyStringRowHandlesRow = actualRows[ 1 ];
+      let row0: TreeViews_ViewModelMyStringRowHandlesRow = actualRows[ 1 ];
 
       AssertEqual ( "ROW0", row0.getRowHandle (  ) );
 
@@ -126,7 +126,7 @@ class TreeViews_ViewTest {
     }
 
     {
-      let row1: TreeViews_ViewMyStringRowHandlesRow = actualRows[ 2 ];
+      let row1: TreeViews_ViewModelMyStringRowHandlesRow = actualRows[ 2 ];
 
       AssertEqual ( "ROW1", row1.getRowHandle (  ) );
 
@@ -141,12 +141,12 @@ class TreeViews_ViewTest {
   }
   
   public then_MyParentIndexRowHandles_has_4_rows (  ) {
-    let actualRows: TreeViews_ViewMyParentIndexRowHandlesRow [] = this.sut.getMyParentIndexRowHandlesTreeRows (  );
+    let actualRows: TreeViews_ViewModelMyParentIndexRowHandlesRow [] = this.sut.getMyParentIndexRowHandlesTreeRows (  );
 
     AssertEqual ( 4, actualRows->size (  ) );
 
     {
-      let row0: TreeViews_ViewMyParentIndexRowHandlesRow = actualRows[ 1 ];
+      let row0: TreeViews_ViewModelMyParentIndexRowHandlesRow = actualRows[ 1 ];
 
       AssertEqual ( 0, row0.getRowIndex (  ) );
 
@@ -157,7 +157,7 @@ class TreeViews_ViewTest {
     }
 
     {
-      let row1: TreeViews_ViewMyParentIndexRowHandlesRow = actualRows[ 2 ];
+      let row1: TreeViews_ViewModelMyParentIndexRowHandlesRow = actualRows[ 2 ];
 
       AssertEqual ( 1, row1.getRowIndex (  ) );
 
@@ -168,7 +168,7 @@ class TreeViews_ViewTest {
     }
 
     {
-      let row2: TreeViews_ViewMyParentIndexRowHandlesRow = actualRows[ 3 ];
+      let row2: TreeViews_ViewModelMyParentIndexRowHandlesRow = actualRows[ 3 ];
 
       AssertEqual ( 2, row2.getRowIndex (  ) );
 
@@ -179,7 +179,7 @@ class TreeViews_ViewTest {
     }
 
     {
-      let row3: TreeViews_ViewMyParentIndexRowHandlesRow = actualRows[ 4 ];
+      let row3: TreeViews_ViewModelMyParentIndexRowHandlesRow = actualRows[ 4 ];
 
       AssertEqual ( 3, row3.getRowIndex (  ) );
 
@@ -192,12 +192,12 @@ class TreeViews_ViewTest {
   }
   
   public then_MyParentStringRowHandles_has_4_rows (  ) {
-    let actualRows: TreeViews_ViewMyParentStringRowHandlesRow [] = this.sut.getMyParentStringRowHandlesTreeRows (  );
+    let actualRows: TreeViews_ViewModelMyParentStringRowHandlesRow [] = this.sut.getMyParentStringRowHandlesTreeRows (  );
 
     AssertEqual ( 4, actualRows->size (  ) );
 
     {
-      let row0: TreeViews_ViewMyParentStringRowHandlesRow = actualRows[ 1 ];
+      let row0: TreeViews_ViewModelMyParentStringRowHandlesRow = actualRows[ 1 ];
 
       AssertEqual ( "HANDLE_A", row0.getRowHandle (  ) );
 
@@ -208,7 +208,7 @@ class TreeViews_ViewTest {
     }
 
     {
-      let row1: TreeViews_ViewMyParentStringRowHandlesRow = actualRows[ 2 ];
+      let row1: TreeViews_ViewModelMyParentStringRowHandlesRow = actualRows[ 2 ];
 
       AssertEqual ( "HANDLE_B", row1.getRowHandle (  ) );
 
@@ -219,7 +219,7 @@ class TreeViews_ViewTest {
     }
 
     {
-      let row2: TreeViews_ViewMyParentStringRowHandlesRow = actualRows[ 3 ];
+      let row2: TreeViews_ViewModelMyParentStringRowHandlesRow = actualRows[ 3 ];
 
       AssertEqual ( "HANDLE_C", row2.getRowHandle (  ) );
 
@@ -230,7 +230,7 @@ class TreeViews_ViewTest {
     }
 
     {
-      let row3: TreeViews_ViewMyParentStringRowHandlesRow = actualRows[ 4 ];
+      let row3: TreeViews_ViewModelMyParentStringRowHandlesRow = actualRows[ 4 ];
 
       AssertEqual ( "HANDLE_D", row3.getRowHandle (  ) );
 
@@ -243,12 +243,12 @@ class TreeViews_ViewTest {
   }
   
   public then_MyTreeViewElements_has_2_rows (  ) {
-    let actualRows: TreeViews_ViewMyTreeViewElementsRow [] = this.sut.getMyTreeViewElementsTreeRows (  );
+    let actualRows: TreeViews_ViewModelMyTreeViewElementsRow [] = this.sut.getMyTreeViewElementsTreeRows (  );
 
     AssertEqual ( 2, actualRows->size (  ) );
 
     {
-      let row0: TreeViews_ViewMyTreeViewElementsRow = actualRows[ 1 ];
+      let row0: TreeViews_ViewModelMyTreeViewElementsRow = actualRows[ 1 ];
 
       AssertEqual ( 0, row0.getRowIndex (  ) );
 
@@ -259,7 +259,7 @@ class TreeViews_ViewTest {
     }
 
     {
-      let row1: TreeViews_ViewMyTreeViewElementsRow = actualRows[ 2 ];
+      let row1: TreeViews_ViewModelMyTreeViewElementsRow = actualRows[ 2 ];
 
       AssertEqual ( 1, row1.getRowIndex (  ) );
 

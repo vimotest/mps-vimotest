@@ -1,16 +1,16 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "ParameterObjectCommand_ViewTestSetup.h"
+#include "ParameterObjectCommand_ViewModelTestSetup.h"
 #include <string>
-#include "ParameterObjectCommand_View.h"
-#include "ParameterObjectCommand_ViewTestSetupImpl.h"
+#include "ParameterObjectCommand_ViewModel.h"
+#include "ParameterObjectCommand_ViewModelTestSetupImpl.h"
 
 class ParameterObjectCommand_ViewTests : public testing::Test
 {
   public:
-  std::shared_ptr<ParameterObjectCommand_View> sut;
-  std::shared_ptr<ParameterObjectCommand_ViewTestSetup> testSetup;
+  std::shared_ptr<ParameterObjectCommand_ViewModel> sut;
+  std::shared_ptr<ParameterObjectCommand_ViewModelTestSetup> testSetup;
   virtual void BuildSut() ;
   virtual void given_empty_context() ;
   virtual void when_LoadView() ;
@@ -21,7 +21,7 @@ class ParameterObjectCommand_ViewTests : public testing::Test
 
 void ParameterObjectCommand_ViewTests::SetUp( ) 
 {
-  this->testSetup = std::make_shared<ParameterObjectCommand_ViewTestSetupImpl>();
+  this->testSetup = std::make_shared<ParameterObjectCommand_ViewModelTestSetupImpl>();
   this->testSetup->Init();
 }
 
@@ -45,12 +45,12 @@ void ParameterObjectCommand_ViewTests::given_empty_context( )
 
 void ParameterObjectCommand_ViewTests::when_LoadView( ) 
 {
-  ParameterObjectCommand_View::LoadViewParams loadViewParameters = { std::string("A"), true, 42 };
+  ParameterObjectCommand_ViewModel::LoadViewParams loadViewParameters = { std::string("A"), true, 42 };
   this->sut->loadView(loadViewParameters);
 }
 
 void ParameterObjectCommand_ViewTests::when_uncheck_MyFlag( ) 
 {
-  ParameterObjectCommand_View::CheckParams checkedParameters = { false };
+  ParameterObjectCommand_ViewModel::CheckParams checkedParameters = { false };
   this->sut->myFlagChecked(checkedParameters);
 }

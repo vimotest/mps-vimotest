@@ -7,14 +7,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class ContextReference_ViewTests
 {
-    private context.ContextReference_View sut;
+    private context.ContextReference_ViewModel sut;
  
-    private context.ContextReference_ViewTestSetup testSetup;
+    private context.ContextReference_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new context.ContextReference_ViewTestSetupImpl();
+    this.testSetup = new context.ContextReference_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  

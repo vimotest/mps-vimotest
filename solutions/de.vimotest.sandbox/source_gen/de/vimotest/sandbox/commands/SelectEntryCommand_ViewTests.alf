@@ -4,13 +4,13 @@ private import Testing ;
 
 class SelectEntryCommand_ViewTests {
   
-  private sut : SelectEntryCommand_View  ;
+  private sut : SelectEntryCommand_ViewModel  ;
   
-  private testSetup : SelectEntryCommand_ViewTestSetup  ;
+  private testSetup : SelectEntryCommand_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new SelectEntryCommand_ViewTestSetupImpl (  );
+    this.testSetup = new SelectEntryCommand_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 

@@ -8,14 +8,14 @@ using System.Collections.Generic;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class ComboBoxes_ViewTest
 {
-    private widgetassertions.ComboBoxes_View sut;
+    private widgetassertions.ComboBoxes_ViewModel sut;
  
-    private widgetassertions.ComboBoxes_ViewTestSetup testSetup;
+    private widgetassertions.ComboBoxes_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new widgetassertions.ComboBoxes_ViewTestSetupImpl();
+    this.testSetup = new widgetassertions.ComboBoxes_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  

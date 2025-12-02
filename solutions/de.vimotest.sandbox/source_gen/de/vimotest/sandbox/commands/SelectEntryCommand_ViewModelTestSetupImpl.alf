@@ -1,0 +1,14 @@
+namespace commands ;
+
+
+
+class SelectEntryCommand_ViewModelTestSetupImpl specializes SelectEntryCommand_ViewModelTestSetup {
+  
+  public Init (  ) {    
+  }
+  
+  public BuildSut (  ) : SelectEntryCommand_ViewModel  {
+    return null;
+
+  }
+}

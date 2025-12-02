@@ -1,18 +1,18 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "Buttons_ViewTestSetup.h"
-#include "Buttons_View.h"
+#include "Buttons_ViewModelTestSetup.h"
+#include "Buttons_ViewModel.h"
 #include <string>
-#include "Buttons_ViewTestSetupImpl.h"
+#include "Buttons_ViewModelTestSetupImpl.h"
 
 namespace widgetassertions
 {
   class Buttons_ViewTests : public testing::Test
   {
     public:
-    std::shared_ptr<Buttons_View> sut;
-    std::shared_ptr<Buttons_ViewTestSetup> testSetup;
+    std::shared_ptr<Buttons_ViewModel> sut;
+    std::shared_ptr<Buttons_ViewModelTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
     virtual void then_Ok_is_enabled_and_is_visible_and_shows_text_Test_() ;
@@ -23,7 +23,7 @@ namespace widgetassertions
   };
   void Buttons_ViewTests::SetUp( ) 
   {
-    this->testSetup = std::make_shared<Buttons_ViewTestSetupImpl>();
+    this->testSetup = std::make_shared<Buttons_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
   TEST_F(Buttons_ViewTests,  My_Scenario_given_empty_context_when_then_Ok_is_enabled_and_is_visible_and_shows_text_Test_) 

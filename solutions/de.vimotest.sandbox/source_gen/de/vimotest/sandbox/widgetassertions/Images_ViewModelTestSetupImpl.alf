@@ -1,0 +1,17 @@
+namespace widgetassertions ;
+
+
+
+class Images_ViewModelTestSetupImpl specializes Images_ViewModelTestSetup {
+  
+  public Init (  ) {    
+  }
+  
+  public SetEmptyContext (  ) {    
+  }
+  
+  public BuildSut (  ) : Images_ViewModel  {
+    return null;
+
+  }
+}

@@ -7,14 +7,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class ClickCommand_ViewTests
 {
-    private commands.ClickCommand_View sut;
+    private commands.ClickCommand_ViewModel sut;
  
-    private commands.ClickCommand_ViewTestSetup testSetup;
+    private commands.ClickCommand_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new commands.ClickCommand_ViewTestSetupImpl();
+    this.testSetup = new commands.ClickCommand_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  

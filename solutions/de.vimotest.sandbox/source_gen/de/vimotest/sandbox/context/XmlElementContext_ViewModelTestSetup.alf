@@ -1,0 +1,12 @@
+namespace context ;
+
+
+
+abstract class XmlElementContext_ViewModelTestSetup {
+  
+  public abstract Init (  ) ;
+  
+  public abstract SetXmlElementContext (   in xml: String  ) ;
+  
+  public abstract BuildSut (  ) : XmlElementContext_ViewModel  ;
+}

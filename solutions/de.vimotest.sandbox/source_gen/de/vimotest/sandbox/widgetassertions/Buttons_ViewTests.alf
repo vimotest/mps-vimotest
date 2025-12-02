@@ -4,13 +4,13 @@ private import Testing ;
 
 class Buttons_ViewTests {
   
-  private sut : Buttons_View  ;
+  private sut : Buttons_ViewModel  ;
   
-  private testSetup : Buttons_ViewTestSetup  ;
+  private testSetup : Buttons_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new Buttons_ViewTestSetupImpl (  );
+    this.testSetup = new Buttons_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 

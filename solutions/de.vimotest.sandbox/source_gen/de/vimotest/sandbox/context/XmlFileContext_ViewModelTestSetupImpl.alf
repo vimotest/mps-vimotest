@@ -1,0 +1,20 @@
+namespace context ;
+
+
+
+class XmlFileContext_ViewModelTestSetupImpl specializes XmlFileContext_ViewModelTestSetup {
+  
+  public Init (  ) {    
+  }
+  
+  public SetXmlFileContext (   in xmlFileContent: String  ) {    
+  }
+  
+  public SetXmlExternalFileContext (   in xmlFileName: String  ) {    
+  }
+  
+  public BuildSut (  ) : XmlFileContext_ViewModel  {
+    return null;
+
+  }
+}

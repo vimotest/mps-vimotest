@@ -1,8 +1,0 @@
-namespace commands ;
-
-
-
-
-public enum SelectEntryCommand_ViewMyOptionsOption {
-  A, B
-}

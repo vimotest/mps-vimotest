@@ -7,14 +7,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class XmlFileContext_ViewTests
 {
-    private context.XmlFileContext_View sut;
+    private context.XmlFileContext_ViewModel sut;
  
-    private context.XmlFileContext_ViewTestSetup testSetup;
+    private context.XmlFileContext_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new context.XmlFileContext_ViewTestSetupImpl();
+    this.testSetup = new context.XmlFileContext_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  

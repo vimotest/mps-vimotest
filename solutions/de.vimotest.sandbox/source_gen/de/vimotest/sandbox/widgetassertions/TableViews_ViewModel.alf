@@ -1,0 +1,56 @@
+namespace widgetassertions ;
+
+
+
+
+public class TableViews_ViewModel {
+  
+  private MyElementsTableRows : TableViews_ViewModelMyElementsRow [ * ]  ;
+  
+  public getMyElementsTableRows (  ) : TableViews_ViewModelMyElementsRow [ * ]  {
+    return this.MyElementsTableRows;
+
+  }
+  
+  private MyElementsTableSelectedRow : Integer  ;
+  
+  public getMyElementsTableSelectedRow (  ) : Integer  {
+    return this.MyElementsTableSelectedRow;
+
+  }
+  
+  private isMyElementsTableVisible : Boolean  ;
+  
+  public getIsMyElementsTableVisible (  ) : Boolean  {
+    return this.isMyElementsTableVisible;
+
+  }
+  
+  private isMyElementsTableEnabled : Boolean  ;
+  
+  public getIsMyElementsTableEnabled (  ) : Boolean  {
+    return this.isMyElementsTableEnabled;
+
+  }
+  
+  private isMyElementsTableDescriptionColumnVisible : Boolean  ;
+  
+  public getIsMyElementsTableDescriptionColumnVisible (  ) : Boolean  {
+    return this.isMyElementsTableDescriptionColumnVisible;
+
+  }
+  
+  private MyStringRowHandlesTableRows : TableViews_ViewModelMyStringRowHandlesRow [ * ]  ;
+  
+  public getMyStringRowHandlesTableRows (  ) : TableViews_ViewModelMyStringRowHandlesRow [ * ]  {
+    return this.MyStringRowHandlesTableRows;
+
+  }
+  
+  private MyStringRowHandlesTableSelectedRow : String  ;
+  
+  public getMyStringRowHandlesTableSelectedRow (  ) : String  {
+    return this.MyStringRowHandlesTableSelectedRow;
+
+  }
+}

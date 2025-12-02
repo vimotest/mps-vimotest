@@ -7,14 +7,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class CheckBoxes_ViewTest
 {
-    private widgetassertions.CheckBoxes_View sut;
+    private widgetassertions.CheckBoxes_ViewModel sut;
  
-    private widgetassertions.CheckBoxes_ViewTestSetup testSetup;
+    private widgetassertions.CheckBoxes_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new widgetassertions.CheckBoxes_ViewTestSetupImpl();
+    this.testSetup = new widgetassertions.CheckBoxes_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  

@@ -1,23 +1,23 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "RowBasedCommand_ViewTestSetup.h"
-#include "RowBasedCommand_View.h"
+#include "RowBasedCommand_ViewModelTestSetup.h"
+#include "RowBasedCommand_ViewModel.h"
 #include <string>
 #include <vector>
-#include "RowBasedCommand_ViewMyFlagsRow.h"
-#include "RowBasedCommand_ViewMyComboBoxesRow.h"
+#include "RowBasedCommand_ViewModelMyFlagsRow.h"
+#include "RowBasedCommand_ViewModelMyComboBoxesRow.h"
 #include <optional>
-#include "RowBasedCommand_ViewMyStandardControlsRow.h"
-#include "RowBasedCommand_ViewTestSetupImpl.h"
+#include "RowBasedCommand_ViewModelMyStandardControlsRow.h"
+#include "RowBasedCommand_ViewModelTestSetupImpl.h"
 
 namespace commands
 {
   class RowBasedCommand_ViewTests : public testing::Test
   {
     public:
-    std::shared_ptr<RowBasedCommand_View> sut;
-    std::shared_ptr<RowBasedCommand_ViewTestSetup> testSetup;
+    std::shared_ptr<RowBasedCommand_ViewModel> sut;
+    std::shared_ptr<RowBasedCommand_ViewModelTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void when_check_Checkboxes_at_0() ;
     virtual void when_uncheck_Checkboxes_at_1() ;
@@ -36,7 +36,7 @@ namespace commands
   };
   void RowBasedCommand_ViewTests::SetUp( ) 
   {
-    this->testSetup = std::make_shared<RowBasedCommand_ViewTestSetupImpl>();
+    this->testSetup = std::make_shared<RowBasedCommand_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
   TEST_F(RowBasedCommand_ViewTests,  ListView_RowBased_Commands_given_when_check_Checkboxes_at_0_and_uncheck_Checkboxes_at_1_then_MyFlags_has_2_rows) 

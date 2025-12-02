@@ -1,0 +1,41 @@
+namespace commands ;
+
+
+
+
+public class FillTextCommand_ViewModel {
+  
+  private MyValueTextBoxText : String  ;
+  
+  public getMyValueTextBoxText (  ) : String  {
+    return this.MyValueTextBoxText;
+
+  }
+  
+  private MyFreeValueComboBoxEntries : String [ * ]  ;
+  
+  public getMyFreeValueComboBoxEntries (  ) : String [ * ]  {
+    return this.MyFreeValueComboBoxEntries;
+
+  }
+  
+  private MyFreeValueComboBoxSelectedEntry : String  ;
+  
+  public getMyFreeValueComboBoxSelectedEntry (  ) : String  {
+    return this.MyFreeValueComboBoxSelectedEntry;
+
+  }
+  
+  private MyFreeValueComboBoxText : String  ;
+  
+  public getMyFreeValueComboBoxText (  ) : String  {
+    return this.MyFreeValueComboBoxText;
+
+  }
+  
+  public myValueTextFilled (   in text: String  ) {    
+  }
+  
+  public myFreeValueTextFilled (   in text: String  ) {    
+  }
+}

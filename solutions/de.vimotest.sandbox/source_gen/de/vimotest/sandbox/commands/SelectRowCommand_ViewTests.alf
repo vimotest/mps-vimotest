@@ -4,13 +4,13 @@ private import Testing ;
 
 class SelectRowCommand_ViewTests {
   
-  private sut : SelectRowCommand_View  ;
+  private sut : SelectRowCommand_ViewModel  ;
   
-  private testSetup : SelectRowCommand_ViewTestSetup  ;
+  private testSetup : SelectRowCommand_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new SelectRowCommand_ViewTestSetupImpl (  );
+    this.testSetup = new SelectRowCommand_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 
@@ -132,12 +132,12 @@ class SelectRowCommand_ViewTests {
 
   
   public then_MyListViewElements_has_2_rows (  ) {
-    let actualRows: SelectRowCommand_ViewMyListViewElementsRow [] = this.sut.getMyListViewElementsListRows (  );
+    let actualRows: SelectRowCommand_ViewModelMyListViewElementsRow [] = this.sut.getMyListViewElementsListRows (  );
 
     AssertEqual ( 2, actualRows->size (  ) );
 
     {
-      let row0: SelectRowCommand_ViewMyListViewElementsRow = actualRows[ 1 ];
+      let row0: SelectRowCommand_ViewModelMyListViewElementsRow = actualRows[ 1 ];
 
       AssertEqual ( 0, row0.getRowIndex (  ) );
 
@@ -146,7 +146,7 @@ class SelectRowCommand_ViewTests {
     }
 
     {
-      let row1: SelectRowCommand_ViewMyListViewElementsRow = actualRows[ 2 ];
+      let row1: SelectRowCommand_ViewModelMyListViewElementsRow = actualRows[ 2 ];
 
       AssertEqual ( 1, row1.getRowIndex (  ) );
 
@@ -157,12 +157,12 @@ class SelectRowCommand_ViewTests {
   }
   
   public then_MyStringRowHandleListViewElements_has_2_rows (  ) {
-    let actualRows: SelectRowCommand_ViewMyStringRowHandleListViewElementsRow [] = this.sut.getMyStringRowHandleListViewElementsListRows (  );
+    let actualRows: SelectRowCommand_ViewModelMyStringRowHandleListViewElementsRow [] = this.sut.getMyStringRowHandleListViewElementsListRows (  );
 
     AssertEqual ( 2, actualRows->size (  ) );
 
     {
-      let row0: SelectRowCommand_ViewMyStringRowHandleListViewElementsRow = actualRows[ 1 ];
+      let row0: SelectRowCommand_ViewModelMyStringRowHandleListViewElementsRow = actualRows[ 1 ];
 
       AssertEqual ( "ROW_A", row0.getRowHandle (  ) );
 
@@ -171,7 +171,7 @@ class SelectRowCommand_ViewTests {
     }
 
     {
-      let row1: SelectRowCommand_ViewMyStringRowHandleListViewElementsRow = actualRows[ 2 ];
+      let row1: SelectRowCommand_ViewModelMyStringRowHandleListViewElementsRow = actualRows[ 2 ];
 
       AssertEqual ( "ROW_B", row1.getRowHandle (  ) );
 
@@ -182,12 +182,12 @@ class SelectRowCommand_ViewTests {
   }
   
   public then_MyTableViewElements_has_2_rows (  ) {
-    let actualRows: SelectRowCommand_ViewMyTableViewElementsRow [] = this.sut.getMyTableViewElementsTableRows (  );
+    let actualRows: SelectRowCommand_ViewModelMyTableViewElementsRow [] = this.sut.getMyTableViewElementsTableRows (  );
 
     AssertEqual ( 2, actualRows->size (  ) );
 
     {
-      let row0: SelectRowCommand_ViewMyTableViewElementsRow = actualRows[ 1 ];
+      let row0: SelectRowCommand_ViewModelMyTableViewElementsRow = actualRows[ 1 ];
 
       AssertEqual ( 0, row0.getRowIndex (  ) );
 
@@ -196,7 +196,7 @@ class SelectRowCommand_ViewTests {
     }
 
     {
-      let row1: SelectRowCommand_ViewMyTableViewElementsRow = actualRows[ 2 ];
+      let row1: SelectRowCommand_ViewModelMyTableViewElementsRow = actualRows[ 2 ];
 
       AssertEqual ( 1, row1.getRowIndex (  ) );
 
@@ -207,12 +207,12 @@ class SelectRowCommand_ViewTests {
   }
   
   public then_MyStringRowHandleTableViewElements_has_2_rows (  ) {
-    let actualRows: SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow [] = this.sut.getMyStringRowHandleTableViewElementsTableRows (  );
+    let actualRows: SelectRowCommand_ViewModelMyStringRowHandleTableViewElementsRow [] = this.sut.getMyStringRowHandleTableViewElementsTableRows (  );
 
     AssertEqual ( 2, actualRows->size (  ) );
 
     {
-      let row0: SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow = actualRows[ 1 ];
+      let row0: SelectRowCommand_ViewModelMyStringRowHandleTableViewElementsRow = actualRows[ 1 ];
 
       AssertEqual ( "ROW_A", row0.getRowHandle (  ) );
 
@@ -221,7 +221,7 @@ class SelectRowCommand_ViewTests {
     }
 
     {
-      let row1: SelectRowCommand_ViewMyStringRowHandleTableViewElementsRow = actualRows[ 2 ];
+      let row1: SelectRowCommand_ViewModelMyStringRowHandleTableViewElementsRow = actualRows[ 2 ];
 
       AssertEqual ( "ROW_B", row1.getRowHandle (  ) );
 
@@ -232,12 +232,12 @@ class SelectRowCommand_ViewTests {
   }
   
   public then_MyTreeViewElements_has_2_rows (  ) {
-    let actualRows: SelectRowCommand_ViewMyTreeViewElementsRow [] = this.sut.getMyTreeViewElementsTreeRows (  );
+    let actualRows: SelectRowCommand_ViewModelMyTreeViewElementsRow [] = this.sut.getMyTreeViewElementsTreeRows (  );
 
     AssertEqual ( 2, actualRows->size (  ) );
 
     {
-      let row0: SelectRowCommand_ViewMyTreeViewElementsRow = actualRows[ 1 ];
+      let row0: SelectRowCommand_ViewModelMyTreeViewElementsRow = actualRows[ 1 ];
 
       AssertEqual ( 0, row0.getRowIndex (  ) );
 
@@ -248,7 +248,7 @@ class SelectRowCommand_ViewTests {
     }
 
     {
-      let row1: SelectRowCommand_ViewMyTreeViewElementsRow = actualRows[ 2 ];
+      let row1: SelectRowCommand_ViewModelMyTreeViewElementsRow = actualRows[ 2 ];
 
       AssertEqual ( 1, row1.getRowIndex (  ) );
 
@@ -261,12 +261,12 @@ class SelectRowCommand_ViewTests {
   }
   
   public then_MyStringRowHandleTreeViewElements_has_2_rows (  ) {
-    let actualRows: SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow [] = this.sut.getMyStringRowHandleTreeViewElementsTreeRows (  );
+    let actualRows: SelectRowCommand_ViewModelMyStringRowHandleTreeViewElementsRow [] = this.sut.getMyStringRowHandleTreeViewElementsTreeRows (  );
 
     AssertEqual ( 2, actualRows->size (  ) );
 
     {
-      let row0: SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow = actualRows[ 1 ];
+      let row0: SelectRowCommand_ViewModelMyStringRowHandleTreeViewElementsRow = actualRows[ 1 ];
 
       AssertEqual ( "ROW_A", row0.getRowHandle (  ) );
 
@@ -277,7 +277,7 @@ class SelectRowCommand_ViewTests {
     }
 
     {
-      let row1: SelectRowCommand_ViewMyStringRowHandleTreeViewElementsRow = actualRows[ 2 ];
+      let row1: SelectRowCommand_ViewModelMyStringRowHandleTreeViewElementsRow = actualRows[ 2 ];
 
       AssertEqual ( "ROW_B", row1.getRowHandle (  ) );
 
@@ -290,12 +290,12 @@ class SelectRowCommand_ViewTests {
   }
   
   public then_MyStringHandleMultiSelectRowListViewElements_has_3_rows (  ) {
-    let actualRows: SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow [] = this.sut.getMyStringHandleMultiSelectRowListViewElementsListRows (  );
+    let actualRows: SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow [] = this.sut.getMyStringHandleMultiSelectRowListViewElementsListRows (  );
 
     AssertEqual ( 3, actualRows->size (  ) );
 
     {
-      let row0: SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow = actualRows[ 1 ];
+      let row0: SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow = actualRows[ 1 ];
 
       AssertEqual ( "ROW_A", row0.getRowHandle (  ) );
 
@@ -304,7 +304,7 @@ class SelectRowCommand_ViewTests {
     }
 
     {
-      let row1: SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow = actualRows[ 2 ];
+      let row1: SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow = actualRows[ 2 ];
 
       AssertEqual ( "ROW_B", row1.getRowHandle (  ) );
 
@@ -313,7 +313,7 @@ class SelectRowCommand_ViewTests {
     }
 
     {
-      let row2: SelectRowCommand_ViewMyStringHandleMultiSelectRowListViewElementsRow = actualRows[ 3 ];
+      let row2: SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow = actualRows[ 3 ];
 
       AssertEqual ( "ROW_C", row2.getRowHandle (  ) );
 

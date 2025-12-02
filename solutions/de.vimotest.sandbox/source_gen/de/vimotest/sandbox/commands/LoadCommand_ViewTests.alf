@@ -4,13 +4,13 @@ private import Testing ;
 
 class LoadCommand_ViewTests {
   
-  private sut : LoadCommand_View  ;
+  private sut : LoadCommand_ViewModel  ;
   
-  private testSetup : LoadCommand_ViewTestSetup  ;
+  private testSetup : LoadCommand_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new LoadCommand_ViewTestSetupImpl (  );
+    this.testSetup = new LoadCommand_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 

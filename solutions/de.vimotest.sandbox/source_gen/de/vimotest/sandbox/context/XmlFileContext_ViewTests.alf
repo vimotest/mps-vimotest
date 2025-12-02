@@ -4,13 +4,13 @@ private import Testing ;
 
 class XmlFileContext_ViewTests {
   
-  private sut : XmlFileContext_View  ;
+  private sut : XmlFileContext_ViewModel  ;
   
-  private testSetup : XmlFileContext_ViewTestSetup  ;
+  private testSetup : XmlFileContext_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new XmlFileContext_ViewTestSetupImpl (  );
+    this.testSetup = new XmlFileContext_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 

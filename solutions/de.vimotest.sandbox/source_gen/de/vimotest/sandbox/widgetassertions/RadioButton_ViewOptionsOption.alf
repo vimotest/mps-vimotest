@@ -1,8 +1,0 @@
-namespace widgetassertions ;
-
-
-
-
-public enum RadioButton_ViewOptionsOption {
-  OptionA, OptionB, OptionC
-}

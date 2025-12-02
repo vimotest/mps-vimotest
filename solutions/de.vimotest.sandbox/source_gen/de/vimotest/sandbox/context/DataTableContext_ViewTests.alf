@@ -4,13 +4,13 @@ private import Testing ;
 
 class DataTableContext_ViewTests {
   
-  private sut : DataTableContext_View  ;
+  private sut : DataTableContext_ViewModel  ;
   
-  private testSetup : DataTableContext_ViewTestSetup  ;
+  private testSetup : DataTableContext_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new DataTableContext_ViewTestSetupImpl (  );
+    this.testSetup = new DataTableContext_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 

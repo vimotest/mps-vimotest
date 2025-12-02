@@ -1,22 +1,22 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "LowLevelFields_ViewTestSetup.h"
-#include "LowLevelFields_View.h"
+#include "LowLevelFields_ViewModelTestSetup.h"
+#include "LowLevelFields_ViewModel.h"
 #include <string>
 #include <vector>
-#include "LowLevelFields_ViewCustomListRowFieldRow.h"
-#include "LowLevelFields_ViewCustomTableRowFieldRow.h"
-#include "LowLevelFields_ViewCustomTreeRowFieldRow.h"
-#include "LowLevelFields_ViewTestSetupImpl.h"
+#include "LowLevelFields_ViewModelCustomListRowFieldRow.h"
+#include "LowLevelFields_ViewModelCustomTableRowFieldRow.h"
+#include "LowLevelFields_ViewModelCustomTreeRowFieldRow.h"
+#include "LowLevelFields_ViewModelTestSetupImpl.h"
 
 namespace widgetassertions
 {
   class LowLevelFields_ViewTests : public testing::Test
   {
     public:
-    std::shared_ptr<LowLevelFields_View> sut;
-    std::shared_ptr<LowLevelFields_ViewTestSetup> testSetup;
+    std::shared_ptr<LowLevelFields_ViewModel> sut;
+    std::shared_ptr<LowLevelFields_ViewModelTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void then_MyBool_is_true() ;
     virtual void then_MyInt_is_42() ;
@@ -30,7 +30,7 @@ namespace widgetassertions
   };
   void LowLevelFields_ViewTests::SetUp( ) 
   {
-    this->testSetup = std::make_shared<LowLevelFields_ViewTestSetupImpl>();
+    this->testSetup = std::make_shared<LowLevelFields_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
   TEST_F(LowLevelFields_ViewTests,  Primitive_Field_Asserts_given_when_then_MyBool_is_true_and_MyInt_is_42_and_MyString_is_text_) 

@@ -8,14 +8,14 @@ using System.Collections.Generic;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class SelectEntryCommand_ViewTests
 {
-    private commands.SelectEntryCommand_View sut;
+    private commands.SelectEntryCommand_ViewModel sut;
  
-    private commands.SelectEntryCommand_ViewTestSetup testSetup;
+    private commands.SelectEntryCommand_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new commands.SelectEntryCommand_ViewTestSetupImpl();
+    this.testSetup = new commands.SelectEntryCommand_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  
@@ -46,7 +46,7 @@ public class SelectEntryCommand_ViewTests
  
     public   virtual void when_select_entry_B_in_MyOptions()
   {
-    this.sut.myOptionsEntrySelected(commands.SelectEntryCommand_ViewMyOptionsOption.B);
+    this.sut.myOptionsEntrySelected(commands.SelectEntryCommand_ViewModelMyOptionsOption.B);
   }
  
     public   virtual void then_MyElements_has_3_entries_and()

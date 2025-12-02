@@ -4,13 +4,13 @@ private import Testing ;
 
 class FillTextCommand_ViewTests {
   
-  private sut : FillTextCommand_View  ;
+  private sut : FillTextCommand_ViewModel  ;
   
-  private testSetup : FillTextCommand_ViewTestSetup  ;
+  private testSetup : FillTextCommand_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new FillTextCommand_ViewTestSetupImpl (  );
+    this.testSetup = new FillTextCommand_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 

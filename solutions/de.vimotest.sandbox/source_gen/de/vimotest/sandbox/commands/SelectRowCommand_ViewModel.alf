@@ -1,0 +1,143 @@
+namespace commands ;
+
+
+
+
+public class SelectRowCommand_ViewModel {
+  
+  private MyListViewElementsListRows : SelectRowCommand_ViewModelMyListViewElementsRow [ * ]  ;
+  
+  public getMyListViewElementsListRows (  ) : SelectRowCommand_ViewModelMyListViewElementsRow [ * ]  {
+    return this.MyListViewElementsListRows;
+
+  }
+  
+  private MyListViewElementsListSelectedRow : Integer  ;
+  
+  public getMyListViewElementsListSelectedRow (  ) : Integer  {
+    return this.MyListViewElementsListSelectedRow;
+
+  }
+  
+  private MyStringRowHandleListViewElementsListRows : SelectRowCommand_ViewModelMyStringRowHandleListViewElementsRow [ * ]  ;
+  
+  public getMyStringRowHandleListViewElementsListRows (  ) : SelectRowCommand_ViewModelMyStringRowHandleListViewElementsRow [ * ]  {
+    return this.MyStringRowHandleListViewElementsListRows;
+
+  }
+  
+  private MyStringRowHandleListViewElementsListSelectedRow : String  ;
+  
+  public getMyStringRowHandleListViewElementsListSelectedRow (  ) : String  {
+    return this.MyStringRowHandleListViewElementsListSelectedRow;
+
+  }
+  
+  private MyTableViewElementsTableRows : SelectRowCommand_ViewModelMyTableViewElementsRow [ * ]  ;
+  
+  public getMyTableViewElementsTableRows (  ) : SelectRowCommand_ViewModelMyTableViewElementsRow [ * ]  {
+    return this.MyTableViewElementsTableRows;
+
+  }
+  
+  private MyTableViewElementsTableSelectedRow : Integer  ;
+  
+  public getMyTableViewElementsTableSelectedRow (  ) : Integer  {
+    return this.MyTableViewElementsTableSelectedRow;
+
+  }
+  
+  private MyStringRowHandleTableViewElementsTableRows : SelectRowCommand_ViewModelMyStringRowHandleTableViewElementsRow [ * ]  ;
+  
+  public getMyStringRowHandleTableViewElementsTableRows (  ) : SelectRowCommand_ViewModelMyStringRowHandleTableViewElementsRow [ * ]  {
+    return this.MyStringRowHandleTableViewElementsTableRows;
+
+  }
+  
+  private MyStringRowHandleTableViewElementsTableSelectedRow : String  ;
+  
+  public getMyStringRowHandleTableViewElementsTableSelectedRow (  ) : String  {
+    return this.MyStringRowHandleTableViewElementsTableSelectedRow;
+
+  }
+  
+  private MyTreeViewElementsTreeRows : SelectRowCommand_ViewModelMyTreeViewElementsRow [ * ]  ;
+  
+  public getMyTreeViewElementsTreeRows (  ) : SelectRowCommand_ViewModelMyTreeViewElementsRow [ * ]  {
+    return this.MyTreeViewElementsTreeRows;
+
+  }
+  
+  private MyTreeViewElementsTreeSelectedRow : Integer  ;
+  
+  public getMyTreeViewElementsTreeSelectedRow (  ) : Integer  {
+    return this.MyTreeViewElementsTreeSelectedRow;
+
+  }
+  
+  private MyStringRowHandleTreeViewElementsTreeRows : SelectRowCommand_ViewModelMyStringRowHandleTreeViewElementsRow [ * ]  ;
+  
+  public getMyStringRowHandleTreeViewElementsTreeRows (  ) : SelectRowCommand_ViewModelMyStringRowHandleTreeViewElementsRow [ * ]  {
+    return this.MyStringRowHandleTreeViewElementsTreeRows;
+
+  }
+  
+  private MyStringRowHandleTreeViewElementsTreeSelectedRow : String  ;
+  
+  public getMyStringRowHandleTreeViewElementsTreeSelectedRow (  ) : String  {
+    return this.MyStringRowHandleTreeViewElementsTreeSelectedRow;
+
+  }
+  
+  private MyIndexBasedMultiSelectRowListViewElementsListRows : SelectRowCommand_ViewModelMyIndexBasedMultiSelectRowListViewElementsRow [ * ]  ;
+  
+  public getMyIndexBasedMultiSelectRowListViewElementsListRows (  ) : SelectRowCommand_ViewModelMyIndexBasedMultiSelectRowListViewElementsRow [ * ]  {
+    return this.MyIndexBasedMultiSelectRowListViewElementsListRows;
+
+  }
+  
+  private MyIndexBasedMultiSelectRowListViewElementsListSelectedRows : Integer [ * ]  ;
+  
+  public getMyIndexBasedMultiSelectRowListViewElementsListSelectedRows (  ) : Integer [ * ]  {
+    return this.MyIndexBasedMultiSelectRowListViewElementsListSelectedRows;
+
+  }
+  
+  private MyStringHandleMultiSelectRowListViewElementsListRows : SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow [ * ]  ;
+  
+  public getMyStringHandleMultiSelectRowListViewElementsListRows (  ) : SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow [ * ]  {
+    return this.MyStringHandleMultiSelectRowListViewElementsListRows;
+
+  }
+  
+  private MyStringHandleMultiSelectRowListViewElementsListSelectedRows : String [ * ]  ;
+  
+  public getMyStringHandleMultiSelectRowListViewElementsListSelectedRows (  ) : String [ * ]  {
+    return this.MyStringHandleMultiSelectRowListViewElementsListSelectedRows;
+
+  }
+  
+  public myListViewElementsRowSelected (   in rowIndex: Integer  ) {    
+  }
+  
+  public myStringRowHandleListViewElementsRowSelected (   in rowHandle: String  ) {    
+  }
+  
+  public myTableViewElementsRowSelected (   in rowIndex: Integer  ) {    
+  }
+  
+  public myStringRowHandleTableViewElementsRowSelected (   in rowHandle: String  ) {    
+  }
+  
+  public myTreeViewElementsRowSelected (   in rowIndex: Integer  ) {    
+  }
+  
+  public myStringRowHandleTreeViewElementsRowSelected (   in rowHandle: String  ) {    
+  }
+  
+  public myIndexBasedMultiSelectRowListViewElementsRowSelected (   in rowIndices: Integer [ * ]  ) {    
+  }
+  
+  public myStringHandleMultiSelectRowListViewElementsRowSelected (   in rowHandles: String [ * ]  ) {    
+  }
+}

@@ -1,0 +1,14 @@
+namespace commands ;
+
+
+
+class ClickCommand_ViewModelTestSetupImpl specializes ClickCommand_ViewModelTestSetup {
+  
+  public Init (  ) {    
+  }
+  
+  public BuildSut (  ) : ClickCommand_ViewModel  {
+    return null;
+
+  }
+}

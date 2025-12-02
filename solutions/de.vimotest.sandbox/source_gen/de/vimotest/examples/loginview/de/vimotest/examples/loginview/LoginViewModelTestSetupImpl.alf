@@ -1,0 +1,20 @@
+namespace de:: vimotest:: examples:: loginview ;
+
+
+
+class LoginViewModelTestSetupImpl specializes LoginViewModelTestSetup {
+  
+  public Init (  ) {    
+  }
+  
+  public SetEmptyContext (  ) {    
+  }
+  
+  public SetXmlElementContext (   in xml: String  ) {    
+  }
+  
+  public BuildSut (  ) : LoginViewModel  {
+    return null;
+
+  }
+}

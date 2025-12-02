@@ -221,7 +221,7 @@
     </node>
   </node>
   <node concept="30n1Qd" id="17xw4ZmRfVM">
-    <property role="TrG5h" value="LoginViewTests" />
+    <property role="TrG5h" value="LoginViewModelTests" />
     <property role="3GE5qa" value="de.vimotest.examples.loginview" />
     <ref role="30n1PB" node="17xw4ZmRb8p" resolve="LoginView" />
     <node concept="3LKzX3" id="17xw4ZmUI2t" role="30n1Qb">

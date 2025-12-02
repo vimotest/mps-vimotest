@@ -1,0 +1,56 @@
+namespace widgetassertions ;
+
+
+
+
+public class RadioButton_ViewModel {
+  
+  private OptionsRadioButtonGroupSelectedEntry : RadioButton_ViewModelOptionsOption  ;
+  
+  public getOptionsRadioButtonGroupSelectedEntry (  ) : RadioButton_ViewModelOptionsOption  {
+    return this.OptionsRadioButtonGroupSelectedEntry;
+
+  }
+  
+  private isOptionsRadioButtonGroupVisible : Boolean  ;
+  
+  public getIsOptionsRadioButtonGroupVisible (  ) : Boolean  {
+    return this.isOptionsRadioButtonGroupVisible;
+
+  }
+  
+  private isOptionsRadioButtonGroupEnabled : Boolean  ;
+  
+  public getIsOptionsRadioButtonGroupEnabled (  ) : Boolean  {
+    return this.isOptionsRadioButtonGroupEnabled;
+
+  }
+  
+  private isOptionBRadioButtonVisible : Boolean  ;
+  
+  public getIsOptionBRadioButtonVisible (  ) : Boolean  {
+    return this.isOptionBRadioButtonVisible;
+
+  }
+  
+  private isOptionBRadioButtonEnabled : Boolean  ;
+  
+  public getIsOptionBRadioButtonEnabled (  ) : Boolean  {
+    return this.isOptionBRadioButtonEnabled;
+
+  }
+  
+  private isOptionCRadioButtonVisible : Boolean  ;
+  
+  public getIsOptionCRadioButtonVisible (  ) : Boolean  {
+    return this.isOptionCRadioButtonVisible;
+
+  }
+  
+  private isOptionCRadioButtonEnabled : Boolean  ;
+  
+  public getIsOptionCRadioButtonEnabled (  ) : Boolean  {
+    return this.isOptionCRadioButtonEnabled;
+
+  }
+}

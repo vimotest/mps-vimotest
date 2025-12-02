@@ -4,13 +4,13 @@ private import Testing ;
 
 class ParameterObjectCommand_ViewTests {
   
-  private sut : ParameterObjectCommand_View  ;
+  private sut : ParameterObjectCommand_ViewModel  ;
   
-  private testSetup : ParameterObjectCommand_ViewTestSetup  ;
+  private testSetup : ParameterObjectCommand_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new ParameterObjectCommand_ViewTestSetupImpl (  );
+    this.testSetup = new ParameterObjectCommand_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 
@@ -45,14 +45,14 @@ class ParameterObjectCommand_ViewTests {
 
   
   public when_LoadView (  ) {
-    let loadViewParameters: LoadViewParams = new ParameterObjectCommand_View:: LoadViewParams ( "A", true, 42 );
+    let loadViewParameters: LoadViewParams = new ParameterObjectCommand_ViewModel:: LoadViewParams ( "A", true, 42 );
 
     this.sut.loadView ( loadViewParameters );
 
   }
   
   public when_uncheck_MyFlag (  ) {
-    let checkedParameters: CheckParams = new ParameterObjectCommand_View:: CheckParams ( false );
+    let checkedParameters: CheckParams = new ParameterObjectCommand_ViewModel:: CheckParams ( false );
 
     this.sut.myFlagChecked ( checkedParameters );
 

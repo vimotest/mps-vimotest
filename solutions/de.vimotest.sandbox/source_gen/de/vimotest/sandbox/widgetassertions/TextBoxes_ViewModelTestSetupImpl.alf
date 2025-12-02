@@ -1,0 +1,17 @@
+namespace widgetassertions ;
+
+
+
+class TextBoxes_ViewModelTestSetupImpl specializes TextBoxes_ViewModelTestSetup {
+  
+  public Init (  ) {    
+  }
+  
+  public SetEmptyContext (  ) {    
+  }
+  
+  public BuildSut (  ) : TextBoxes_ViewModel  {
+    return null;
+
+  }
+}

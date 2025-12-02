@@ -4,13 +4,13 @@ private import Testing ;
 
 class StringContext_ViewTests {
   
-  private sut : StringContext_View  ;
+  private sut : StringContext_ViewModel  ;
   
-  private testSetup : StringContext_ViewTestSetup  ;
+  private testSetup : StringContext_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new StringContext_ViewTestSetupImpl (  );
+    this.testSetup = new StringContext_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 

@@ -1,0 +1,14 @@
+namespace commands ;
+
+
+
+class FillTextCommand_ViewModelTestSetupImpl specializes FillTextCommand_ViewModelTestSetup {
+  
+  public Init (  ) {    
+  }
+  
+  public BuildSut (  ) : FillTextCommand_ViewModel  {
+    return null;
+
+  }
+}

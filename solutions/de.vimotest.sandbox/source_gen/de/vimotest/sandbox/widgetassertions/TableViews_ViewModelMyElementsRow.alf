@@ -1,0 +1,42 @@
+namespace widgetassertions ;
+
+
+
+
+public class TableViews_ViewModelMyElementsRow {
+  
+  private isIncludeCheckBoxChecked : Boolean  ;
+  
+  public getIsIncludeCheckBoxChecked (  ) : Boolean  {
+    return this.isIncludeCheckBoxChecked;
+
+  }
+  
+  private NameLabelText : String  ;
+  
+  public getNameLabelText (  ) : String  {
+    return this.NameLabelText;
+
+  }
+  
+  private DescriptionLabelText : String  ;
+  
+  public getDescriptionLabelText (  ) : String  {
+    return this.DescriptionLabelText;
+
+  }
+  
+  private InfoIconImageName : String  ;
+  
+  public getInfoIconImageName (  ) : String  {
+    return this.InfoIconImageName;
+
+  }
+  
+  private RowIndex : Integer  ;
+  
+  public getRowIndex (  ) : Integer  {
+    return this.RowIndex;
+
+  }
+}

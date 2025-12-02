@@ -4,13 +4,13 @@ private import Testing ;
 
 class RadioButton_ViewTests {
   
-  private sut : RadioButton_View  ;
+  private sut : RadioButton_ViewModel  ;
   
-  private testSetup : RadioButton_ViewTestSetup  ;
+  private testSetup : RadioButton_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new RadioButton_ViewTestSetupImpl (  );
+    this.testSetup = new RadioButton_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 

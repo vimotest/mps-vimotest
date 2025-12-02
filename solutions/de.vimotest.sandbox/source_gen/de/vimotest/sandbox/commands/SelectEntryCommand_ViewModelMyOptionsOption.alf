@@ -1,0 +1,8 @@
+namespace commands ;
+
+
+
+
+public enum SelectEntryCommand_ViewModelMyOptionsOption {
+  A, B
+}

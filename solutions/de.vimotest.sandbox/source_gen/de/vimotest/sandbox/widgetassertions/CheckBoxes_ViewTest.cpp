@@ -1,19 +1,19 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "CheckBoxes_ViewTestSetup.h"
-#include "CheckBoxes_View.h"
+#include "CheckBoxes_ViewModelTestSetup.h"
+#include "CheckBoxes_ViewModel.h"
 #include <string>
 #include <optional>
-#include "CheckBoxes_ViewTestSetupImpl.h"
+#include "CheckBoxes_ViewModelTestSetupImpl.h"
 
 namespace widgetassertions
 {
   class CheckBoxes_ViewTest : public testing::Test
   {
     public:
-    std::shared_ptr<CheckBoxes_View> sut;
-    std::shared_ptr<CheckBoxes_ViewTestSetup> testSetup;
+    std::shared_ptr<CheckBoxes_ViewModel> sut;
+    std::shared_ptr<CheckBoxes_ViewModelTestSetup> testSetup;
     virtual void BuildSut() ;
     virtual void given_empty_context() ;
     virtual void then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_() ;
@@ -28,7 +28,7 @@ namespace widgetassertions
   };
   void CheckBoxes_ViewTest::SetUp( ) 
   {
-    this->testSetup = std::make_shared<CheckBoxes_ViewTestSetupImpl>();
+    this->testSetup = std::make_shared<CheckBoxes_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
   TEST_F(CheckBoxes_ViewTest,  My_Scenario_given_empty_context_when_then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_and_MyFlagNoLabel_is_not_checked_and_MyFlagTriState_is_mixed_and_MyFlagTriState_is_checked_and_MyFlagTriState_is_not_checked) 

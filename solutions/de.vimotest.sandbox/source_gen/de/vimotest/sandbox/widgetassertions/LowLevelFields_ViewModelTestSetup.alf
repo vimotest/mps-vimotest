@@ -1,0 +1,10 @@
+namespace widgetassertions ;
+
+
+
+abstract class LowLevelFields_ViewModelTestSetup {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : LowLevelFields_ViewModel  ;
+}

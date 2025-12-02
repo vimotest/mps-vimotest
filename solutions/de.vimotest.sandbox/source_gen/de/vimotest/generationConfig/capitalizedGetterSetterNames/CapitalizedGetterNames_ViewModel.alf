@@ -1,0 +1,42 @@
+
+
+
+
+
+public class CapitalizedGetterNames_ViewModel {
+  
+  private isMyFlagCheckBoxChecked : Boolean  ;
+  
+  public GetIsMyFlagCheckBoxChecked (  ) : Boolean  {
+    return this.isMyFlagCheckBoxChecked;
+
+  }
+  
+  private myVisibility : Boolean  ;
+  
+  public GetMyVisibility (  ) : Boolean  {
+    return this.myVisibility;
+
+  }
+  
+  private isMyFlagCheckBoxEnabled : Boolean  ;
+  
+  public GetIsMyFlagCheckBoxEnabled (  ) : Boolean  {
+    return this.isMyFlagCheckBoxEnabled;
+
+  }
+  
+  private MyFlagCheckBoxText : String  ;
+  
+  public GetMyFlagCheckBoxText (  ) : String  {
+    return this.MyFlagCheckBoxText;
+
+  }
+  
+  private myRows : CapitalizedGetterNames_ViewModelMyElementsRow [ * ]  ;
+  
+  public GetMyRows (  ) : CapitalizedGetterNames_ViewModelMyElementsRow [ * ]  {
+    return this.myRows;
+
+  }
+}

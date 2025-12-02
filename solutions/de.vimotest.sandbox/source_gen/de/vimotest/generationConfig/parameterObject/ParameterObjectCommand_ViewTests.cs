@@ -6,14 +6,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class ParameterObjectCommand_ViewTests
 {
-    private ParameterObjectCommand_View sut;
+    private ParameterObjectCommand_ViewModel sut;
  
-    private ParameterObjectCommand_ViewTestSetup testSetup;
+    private ParameterObjectCommand_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new ParameterObjectCommand_ViewTestSetupImpl();
+    this.testSetup = new ParameterObjectCommand_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  
@@ -38,13 +38,13 @@ public class ParameterObjectCommand_ViewTests
  
     public   virtual void when_LoadView()
   {
-    ParameterObjectCommand_View.LoadViewParams loadViewParameters = new ParameterObjectCommand_View.LoadViewParams("A", true, 42);
+    ParameterObjectCommand_ViewModel.LoadViewParams loadViewParameters = new ParameterObjectCommand_ViewModel.LoadViewParams("A", true, 42);
     this.sut.loadView(loadViewParameters);
   }
  
     public   virtual void when_uncheck_MyFlag()
   {
-    ParameterObjectCommand_View.CheckParams checkedParameters = new ParameterObjectCommand_View.CheckParams(false);
+    ParameterObjectCommand_ViewModel.CheckParams checkedParameters = new ParameterObjectCommand_ViewModel.CheckParams(false);
     this.sut.myFlagChecked(checkedParameters);
   }
 }

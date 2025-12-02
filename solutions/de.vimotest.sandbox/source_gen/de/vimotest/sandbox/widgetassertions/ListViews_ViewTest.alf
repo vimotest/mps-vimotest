@@ -4,13 +4,13 @@ private import Testing ;
 
 class ListViews_ViewTest {
   
-  private sut : ListViews_View  ;
+  private sut : ListViews_ViewModel  ;
   
-  private testSetup : ListViews_ViewTestSetup  ;
+  private testSetup : ListViews_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new ListViews_ViewTestSetupImpl (  );
+    this.testSetup = new ListViews_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 
@@ -79,12 +79,12 @@ class ListViews_ViewTest {
 
   
   public then_MyListOfLabel_has_4_rows_and_selected_row_index_3 (  ) {
-    let actualRows: ListViews_ViewMyListOfLabelRow [] = this.sut.getMyListOfLabelListRows (  );
+    let actualRows: ListViews_ViewModelMyListOfLabelRow [] = this.sut.getMyListOfLabelListRows (  );
 
     AssertEqual ( 4, actualRows->size (  ) );
 
     {
-      let row0: ListViews_ViewMyListOfLabelRow = actualRows[ 1 ];
+      let row0: ListViews_ViewModelMyListOfLabelRow = actualRows[ 1 ];
 
       AssertEqual ( 0, row0.getRowIndex (  ) );
 
@@ -97,7 +97,7 @@ class ListViews_ViewTest {
     }
 
     {
-      let row1: ListViews_ViewMyListOfLabelRow = actualRows[ 2 ];
+      let row1: ListViews_ViewModelMyListOfLabelRow = actualRows[ 2 ];
 
       AssertEqual ( 1, row1.getRowIndex (  ) );
 
@@ -108,7 +108,7 @@ class ListViews_ViewTest {
     }
 
     {
-      let row2: ListViews_ViewMyListOfLabelRow = actualRows[ 3 ];
+      let row2: ListViews_ViewModelMyListOfLabelRow = actualRows[ 3 ];
 
       AssertEqual ( 2, row2.getRowIndex (  ) );
 
@@ -119,7 +119,7 @@ class ListViews_ViewTest {
     }
 
     {
-      let row3: ListViews_ViewMyListOfLabelRow = actualRows[ 4 ];
+      let row3: ListViews_ViewModelMyListOfLabelRow = actualRows[ 4 ];
 
       AssertEqual ( 3, row3.getRowIndex (  ) );
 
@@ -134,12 +134,12 @@ class ListViews_ViewTest {
   }
   
   public then_MyListOfImages_has_2_rows (  ) {
-    let actualRows: ListViews_ViewMyListOfImagesRow [] = this.sut.getMyListOfImagesListRows (  );
+    let actualRows: ListViews_ViewModelMyListOfImagesRow [] = this.sut.getMyListOfImagesListRows (  );
 
     AssertEqual ( 2, actualRows->size (  ) );
 
     {
-      let row0: ListViews_ViewMyListOfImagesRow = actualRows[ 1 ];
+      let row0: ListViews_ViewModelMyListOfImagesRow = actualRows[ 1 ];
 
       AssertEqual ( 0, row0.getRowIndex (  ) );
 
@@ -148,7 +148,7 @@ class ListViews_ViewTest {
     }
 
     {
-      let row1: ListViews_ViewMyListOfImagesRow = actualRows[ 2 ];
+      let row1: ListViews_ViewModelMyListOfImagesRow = actualRows[ 2 ];
 
       AssertEqual ( 1, row1.getRowIndex (  ) );
 
@@ -159,12 +159,12 @@ class ListViews_ViewTest {
   }
   
   public then_MyCheckboxes_has_3_rows (  ) {
-    let actualRows: ListViews_ViewMyCheckboxesRow [] = this.sut.getMyCheckboxesListRows (  );
+    let actualRows: ListViews_ViewModelMyCheckboxesRow [] = this.sut.getMyCheckboxesListRows (  );
 
     AssertEqual ( 3, actualRows->size (  ) );
 
     {
-      let row0: ListViews_ViewMyCheckboxesRow = actualRows[ 1 ];
+      let row0: ListViews_ViewModelMyCheckboxesRow = actualRows[ 1 ];
 
       AssertEqual ( 0, row0.getRowIndex (  ) );
 
@@ -173,7 +173,7 @@ class ListViews_ViewTest {
     }
 
     {
-      let row1: ListViews_ViewMyCheckboxesRow = actualRows[ 2 ];
+      let row1: ListViews_ViewModelMyCheckboxesRow = actualRows[ 2 ];
 
       AssertEqual ( 1, row1.getRowIndex (  ) );
 
@@ -182,7 +182,7 @@ class ListViews_ViewTest {
     }
 
     {
-      let row2: ListViews_ViewMyCheckboxesRow = actualRows[ 3 ];
+      let row2: ListViews_ViewModelMyCheckboxesRow = actualRows[ 3 ];
 
       AssertEqual ( 2, row2.getRowIndex (  ) );
 
@@ -195,12 +195,12 @@ class ListViews_ViewTest {
   }
   
   public then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  ) {
-    let actualRows: ListViews_ViewMyStringRowHandlesRow [] = this.sut.getMyStringRowHandlesListRows (  );
+    let actualRows: ListViews_ViewModelMyStringRowHandlesRow [] = this.sut.getMyStringRowHandlesListRows (  );
 
     AssertEqual ( 2, actualRows->size (  ) );
 
     {
-      let row0: ListViews_ViewMyStringRowHandlesRow = actualRows[ 1 ];
+      let row0: ListViews_ViewModelMyStringRowHandlesRow = actualRows[ 1 ];
 
       AssertEqual ( "ROW0", row0.getRowHandle (  ) );
 
@@ -209,7 +209,7 @@ class ListViews_ViewTest {
     }
 
     {
-      let row1: ListViews_ViewMyStringRowHandlesRow = actualRows[ 2 ];
+      let row1: ListViews_ViewModelMyStringRowHandlesRow = actualRows[ 2 ];
 
       AssertEqual ( "ROW1", row1.getRowHandle (  ) );
 
@@ -222,12 +222,12 @@ class ListViews_ViewTest {
   }
   
   public then_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_ (  ) {
-    let actualRows: ListViews_ViewMyListWithMultiRowSelectionRow [] = this.sut.getMyListWithMultiRowSelectionListRows (  );
+    let actualRows: ListViews_ViewModelMyListWithMultiRowSelectionRow [] = this.sut.getMyListWithMultiRowSelectionListRows (  );
 
     AssertEqual ( 3, actualRows->size (  ) );
 
     {
-      let row0: ListViews_ViewMyListWithMultiRowSelectionRow = actualRows[ 1 ];
+      let row0: ListViews_ViewModelMyListWithMultiRowSelectionRow = actualRows[ 1 ];
 
       AssertEqual ( 0, row0.getRowIndex (  ) );
 
@@ -236,7 +236,7 @@ class ListViews_ViewTest {
     }
 
     {
-      let row1: ListViews_ViewMyListWithMultiRowSelectionRow = actualRows[ 2 ];
+      let row1: ListViews_ViewModelMyListWithMultiRowSelectionRow = actualRows[ 2 ];
 
       AssertEqual ( 1, row1.getRowIndex (  ) );
 
@@ -245,7 +245,7 @@ class ListViews_ViewTest {
     }
 
     {
-      let row2: ListViews_ViewMyListWithMultiRowSelectionRow = actualRows[ 3 ];
+      let row2: ListViews_ViewModelMyListWithMultiRowSelectionRow = actualRows[ 3 ];
 
       AssertEqual ( 2, row2.getRowIndex (  ) );
 
@@ -264,33 +264,33 @@ class ListViews_ViewTest {
   }
   
   public then_MyListOfLabel_has_4_rows (  ) {
-    let actualRows: ListViews_ViewMyListOfLabelRow [] = this.sut.getMyListOfLabelListRows (  );
+    let actualRows: ListViews_ViewModelMyListOfLabelRow [] = this.sut.getMyListOfLabelListRows (  );
 
     AssertEqual ( 4, actualRows->size (  ) );
 
     {
-      let row0: ListViews_ViewMyListOfLabelRow = actualRows[ 1 ];
+      let row0: ListViews_ViewModelMyListOfLabelRow = actualRows[ 1 ];
 
       AssertEqual ( 0, row0.getRowIndex (  ) );
 
     }
 
     {
-      let row1: ListViews_ViewMyListOfLabelRow = actualRows[ 2 ];
+      let row1: ListViews_ViewModelMyListOfLabelRow = actualRows[ 2 ];
 
       AssertEqual ( 1, row1.getRowIndex (  ) );
 
     }
 
     {
-      let row2: ListViews_ViewMyListOfLabelRow = actualRows[ 3 ];
+      let row2: ListViews_ViewModelMyListOfLabelRow = actualRows[ 3 ];
 
       AssertEqual ( 2, row2.getRowIndex (  ) );
 
     }
 
     {
-      let row3: ListViews_ViewMyListOfLabelRow = actualRows[ 4 ];
+      let row3: ListViews_ViewModelMyListOfLabelRow = actualRows[ 4 ];
 
       AssertEqual ( 3, row3.getRowIndex (  ) );
 
@@ -299,19 +299,19 @@ class ListViews_ViewTest {
   }
   
   public then_MyListOfLabel_has_4_rows_1 (  ) {
-    let actualRows: ListViews_ViewMyListOfLabelRow [] = this.sut.getMyListOfLabelListRows (  );
+    let actualRows: ListViews_ViewModelMyListOfLabelRow [] = this.sut.getMyListOfLabelListRows (  );
 
     AssertEqual ( 4, actualRows->size (  ) );
 
     {
-      let row0: ListViews_ViewMyListOfLabelRow = actualRows[ 1 ];
+      let row0: ListViews_ViewModelMyListOfLabelRow = actualRows[ 1 ];
 
       AssertEqual ( 0, row0.getRowIndex (  ) );
 
     }
 
     {
-      let row1: ListViews_ViewMyListOfLabelRow = actualRows[ 2 ];
+      let row1: ListViews_ViewModelMyListOfLabelRow = actualRows[ 2 ];
 
       AssertEqual ( 1, row1.getRowIndex (  ) );
 
@@ -322,14 +322,14 @@ class ListViews_ViewTest {
     }
 
     {
-      let row2: ListViews_ViewMyListOfLabelRow = actualRows[ 3 ];
+      let row2: ListViews_ViewModelMyListOfLabelRow = actualRows[ 3 ];
 
       AssertEqual ( 2, row2.getRowIndex (  ) );
 
     }
 
     {
-      let row3: ListViews_ViewMyListOfLabelRow = actualRows[ 4 ];
+      let row3: ListViews_ViewModelMyListOfLabelRow = actualRows[ 4 ];
 
       AssertEqual ( 3, row3.getRowIndex (  ) );
 
@@ -342,7 +342,7 @@ class ListViews_ViewTest {
   }
   
   public then_MyButtons_has_0_rows (  ) {
-    let actualRows: ListViews_ViewMyButtonsRow [] = this.sut.getMyButtonsListRows (  );
+    let actualRows: ListViews_ViewModelMyButtonsRow [] = this.sut.getMyButtonsListRows (  );
 
     AssertEqual ( 0, actualRows->size (  ) );
 

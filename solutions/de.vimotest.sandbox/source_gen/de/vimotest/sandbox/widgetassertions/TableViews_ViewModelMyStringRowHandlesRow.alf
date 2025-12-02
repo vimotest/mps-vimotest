@@ -1,0 +1,21 @@
+namespace widgetassertions ;
+
+
+
+
+public class TableViews_ViewModelMyStringRowHandlesRow {
+  
+  private ValuesLabelText : String  ;
+  
+  public getValuesLabelText (  ) : String  {
+    return this.ValuesLabelText;
+
+  }
+  
+  private RowHandle : String  ;
+  
+  public getRowHandle (  ) : String  {
+    return this.RowHandle;
+
+  }
+}

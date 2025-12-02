@@ -7,14 +7,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class FillTextCommand_ViewTests
 {
-    private commands.FillTextCommand_View sut;
+    private commands.FillTextCommand_ViewModel sut;
  
-    private commands.FillTextCommand_ViewTestSetup testSetup;
+    private commands.FillTextCommand_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new commands.FillTextCommand_ViewTestSetupImpl();
+    this.testSetup = new commands.FillTextCommand_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  

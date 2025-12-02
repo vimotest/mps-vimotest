@@ -8,14 +8,14 @@ using System.Collections.Generic;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class ListViews_ViewTest
 {
-    private widgetassertions.ListViews_View sut;
+    private widgetassertions.ListViews_ViewModel sut;
  
-    private widgetassertions.ListViews_ViewTestSetup testSetup;
+    private widgetassertions.ListViews_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new widgetassertions.ListViews_ViewTestSetupImpl();
+    this.testSetup = new widgetassertions.ListViews_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  

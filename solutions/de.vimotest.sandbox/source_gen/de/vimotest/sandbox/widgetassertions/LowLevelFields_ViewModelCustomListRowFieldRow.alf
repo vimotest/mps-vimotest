@@ -1,0 +1,28 @@
+namespace widgetassertions ;
+
+
+
+
+public class LowLevelFields_ViewModelCustomListRowFieldRow {
+  
+  private HeaderLabelText : String  ;
+  
+  public getHeaderLabelText (  ) : String  {
+    return this.HeaderLabelText;
+
+  }
+  
+  public AdditionalStrings : String [ * ]  ;
+  
+  public getAdditionalStrings (  ) : String [ * ]  {
+    return this.AdditionalStrings;
+
+  }
+  
+  private RowHandle : String  ;
+  
+  public getRowHandle (  ) : String  {
+    return this.RowHandle;
+
+  }
+}

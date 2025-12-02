@@ -8,14 +8,14 @@ using System.Collections.Generic;
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class TextBoxes_ViewTest
 {
-    private widgetassertions.TextBoxes_View sut;
+    private widgetassertions.TextBoxes_ViewModel sut;
  
-    private widgetassertions.TextBoxes_ViewTestSetup testSetup;
+    private widgetassertions.TextBoxes_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new widgetassertions.TextBoxes_ViewTestSetupImpl();
+    this.testSetup = new widgetassertions.TextBoxes_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  

@@ -1,0 +1,17 @@
+
+
+
+
+class ParameterObjectCommand_ViewModelTestSetupImpl specializes ParameterObjectCommand_ViewModelTestSetup {
+  
+  public Init (  ) {    
+  }
+  
+  public SetEmptyContext (  ) {    
+  }
+  
+  public BuildSut (  ) : ParameterObjectCommand_ViewModel  {
+    return null;
+
+  }
+}

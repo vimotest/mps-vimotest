@@ -2,7 +2,7 @@
 <model ref="r:f586de77-73d9-4416-bc27-f5da0303f859(de.vimotest.examples.loginview)">
   <persistence version="9" />
   <languages>
-    <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="0" />
+    <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="1" />
     <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing" version="1" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
   </languages>
@@ -139,6 +139,7 @@
         <child id="777152910169039599" name="commands" index="1006ar" />
       </concept>
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
+        <property id="4513875792335097421" name="baseName" index="$YGLj" />
         <child id="777152910168882972" name="viewModelCommands" index="103ZXC" />
         <child id="777152910168882975" name="viewModelData" index="103ZXF" />
       </concept>
@@ -154,8 +155,8 @@
     </language>
   </registry>
   <node concept="103ZX$" id="17xw4ZmRb8p">
-    <property role="TrG5h" value="LoginView" />
     <property role="3GE5qa" value="de.vimotest.examples.loginview" />
+    <property role="$YGLj" value="LoginView" />
     <node concept="103ZXx" id="17xw4ZmRb8q" role="103ZXC">
       <node concept="3Vw88J" id="17xw4ZmUI2u" role="1006ar">
         <property role="TrG5h" value="LoadView" />
@@ -223,7 +224,7 @@
   <node concept="30n1Qd" id="17xw4ZmRfVM">
     <property role="TrG5h" value="LoginViewModelTests" />
     <property role="3GE5qa" value="de.vimotest.examples.loginview" />
-    <ref role="30n1PB" node="17xw4ZmRb8p" resolve="LoginView" />
+    <ref role="30n1PB" node="17xw4ZmRb8p" resolve="LoginViewModel" />
     <node concept="3LKzX3" id="17xw4ZmUI2t" role="30n1Qb">
       <property role="TrG5h" value="Load View on empty context" />
       <node concept="1s$VFG" id="6fEYrkZxlQN" role="1s$QAY">

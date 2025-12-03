@@ -2,7 +2,7 @@
 <model ref="r:22f1803f-61f9-436d-a9a7-b4395f66ca15(de.vimotest.generationConfig.parameterObject)">
   <persistence version="9" />
   <languages>
-    <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="0" />
+    <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="1" />
     <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing" version="1" />
   </languages>
   <imports />
@@ -94,6 +94,7 @@
         <child id="777152910169039599" name="commands" index="1006ar" />
       </concept>
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
+        <property id="4513875792335097421" name="baseName" index="$YGLj" />
         <child id="777152910168882972" name="viewModelCommands" index="103ZXC" />
         <child id="777152910168882975" name="viewModelData" index="103ZXF" />
       </concept>
@@ -109,7 +110,7 @@
     <property role="3Mv2f9" value="true" />
   </node>
   <node concept="103ZX$" id="Of5vVZtG4V">
-    <property role="TrG5h" value="ParameterObjectCommand_View" />
+    <property role="$YGLj" value="ParameterObjectCommand_View" />
     <node concept="103ZXx" id="Of5vVZtG4W" role="103ZXC">
       <node concept="3Vw88J" id="Of5vVZtG4X" role="1006ar">
         <property role="TrG5h" value="LoadView" />
@@ -150,7 +151,7 @@
   </node>
   <node concept="30n1Qd" id="Of5vVZtOs6">
     <property role="TrG5h" value="ParameterObjectCommand_ViewTests" />
-    <ref role="30n1PB" node="Of5vVZtG4V" resolve="ParameterObjectCommand_View" />
+    <ref role="30n1PB" node="Of5vVZtG4V" resolve="ParameterObjectCommand_ViewModel" />
     <node concept="3LKzX3" id="Of5vVZwrBA" role="30n1Qb">
       <property role="TrG5h" value="MyTest" />
       <node concept="1IbZgy" id="Of5vVZwrBB" role="DUd2K">

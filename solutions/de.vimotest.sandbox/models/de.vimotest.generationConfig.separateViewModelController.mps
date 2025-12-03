@@ -4,7 +4,7 @@
   <languages>
     <use id="611ecc9e-0703-4ab9-a13c-fb396c607716" name="de.vimotest.types" version="0" />
     <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="1" />
-    <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="0" />
+    <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="1" />
     <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing" version="1" />
   </languages>
   <imports />
@@ -75,6 +75,7 @@
         <child id="777152910169039599" name="commands" index="1006ar" />
       </concept>
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
+        <property id="4513875792335097421" name="baseName" index="$YGLj" />
         <child id="777152910168882972" name="viewModelCommands" index="103ZXC" />
         <child id="777152910168882975" name="viewModelData" index="103ZXF" />
       </concept>
@@ -90,7 +91,7 @@
     <property role="1LiYYg" value="true" />
   </node>
   <node concept="103ZX$" id="Of5vVZtG4V">
-    <property role="TrG5h" value="SeparateViewController_View" />
+    <property role="$YGLj" value="SeparateViewController_View" />
     <node concept="103ZXx" id="Of5vVZtG4W" role="103ZXC">
       <node concept="3Vw88J" id="Of5vVZtG4X" role="1006ar">
         <property role="TrG5h" value="LoadView" />
@@ -117,7 +118,7 @@
   </node>
   <node concept="30n1Qd" id="Of5vVZtOs6">
     <property role="TrG5h" value="SeparateViewController_ViewTests" />
-    <ref role="30n1PB" node="Of5vVZtG4V" resolve="SeparateViewController_View" />
+    <ref role="30n1PB" node="Of5vVZtG4V" resolve="SeparateViewController_ViewModel" />
     <node concept="3LKzX3" id="Of5vVZwrBA" role="30n1Qb">
       <property role="TrG5h" value="MyTest" />
       <node concept="1IbZgy" id="Of5vVZwrBB" role="DUd2K">
@@ -140,7 +141,7 @@
   </node>
   <node concept="30n1Qd" id="aV2Sa0uGCw">
     <property role="TrG5h" value="SeparateViewController_2_ViewTests" />
-    <ref role="30n1PB" node="Of5vVZtG4V" resolve="SeparateViewController_View" />
+    <ref role="30n1PB" node="Of5vVZtG4V" resolve="SeparateViewController_ViewModel" />
     <node concept="3LKzX3" id="aV2Sa0uGCx" role="30n1Qb">
       <property role="TrG5h" value="MyTest2" />
       <node concept="1IbZgy" id="aV2Sa0uGCy" role="DUd2K">

@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="0" />
+    <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="1" />
     <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing" version="1" />
   </languages>
   <imports>
@@ -101,6 +101,7 @@
         <child id="777152910169039599" name="commands" index="1006ar" />
       </concept>
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
+        <property id="4513875792335097421" name="baseName" index="$YGLj" />
         <child id="777152910168882972" name="viewModelCommands" index="103ZXC" />
         <child id="777152910168882975" name="viewModelData" index="103ZXF" />
       </concept>
@@ -114,7 +115,7 @@
     <property role="TrG5h" value="Typesystem_GenericCommandParameterTests" />
     <node concept="1qefOq" id="63ktVPtYQyw" role="1SKRRt">
       <node concept="103ZX$" id="63ktVPtYQys" role="1qenE9">
-        <property role="TrG5h" value="MyViewModel_View" />
+        <property role="$YGLj" value="MyViewModel_View" />
         <node concept="103ZXx" id="63ktVPtYQyt" role="103ZXC">
           <node concept="3Vw88J" id="63ktVPtYQyu" role="1006ar">
             <property role="TrG5h" value="LoadView" />
@@ -131,7 +132,7 @@
     <node concept="1qefOq" id="63ktVPtYQz5" role="1SKRRt">
       <node concept="30n1Qd" id="63ktVPtYQzt" role="1qenE9">
         <property role="TrG5h" value="TestSuite" />
-        <ref role="30n1PB" node="63ktVPtYQys" resolve="MyViewModel_View" />
+        <ref role="30n1PB" node="63ktVPtYQys" resolve="MyViewModel_ViewModel" />
         <node concept="3LKzX3" id="63ktVPtYQzu" role="30n1Qb">
           <property role="TrG5h" value="Scenario" />
           <node concept="1s$VFG" id="63ktVPtYQzx" role="1s$QAY">
@@ -179,7 +180,7 @@
     <property role="TrG5h" value="Typesystem_ViewWidgetCommandTests" />
     <node concept="1qefOq" id="63ktVPu4rvt" role="1SKRRt">
       <node concept="103ZX$" id="63ktVPu4rvu" role="1qenE9">
-        <property role="TrG5h" value="MyViewModel_View" />
+        <property role="$YGLj" value="MyViewModel_View" />
         <node concept="103ZXx" id="63ktVPu4rvv" role="103ZXC" />
         <node concept="103ZXB" id="63ktVPu4rvz" role="103ZXF">
           <node concept="7cNA8" id="63ktVPu4znc" role="103ZUC">

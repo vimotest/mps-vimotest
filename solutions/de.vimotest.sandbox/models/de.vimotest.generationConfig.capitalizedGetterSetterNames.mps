@@ -2,7 +2,7 @@
 <model ref="r:a69c3e38-bfb5-459b-b2a8-7dda15b5048d(de.vimotest.generationConfig.capitalizedGetterSetterNames)">
   <persistence version="9" />
   <languages>
-    <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="0" />
+    <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="1" />
   </languages>
   <imports />
   <registry>
@@ -61,6 +61,7 @@
       </concept>
       <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommands" flags="ng" index="103ZXx" />
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
+        <property id="4513875792335097421" name="baseName" index="$YGLj" />
         <child id="777152910168882972" name="viewModelCommands" index="103ZXC" />
         <child id="777152910168882975" name="viewModelData" index="103ZXF" />
       </concept>
@@ -88,7 +89,7 @@
     <property role="1a4JyJ" value="true" />
   </node>
   <node concept="103ZX$" id="Of5vVZt$vi">
-    <property role="TrG5h" value="CapitalizedGetterNames_View" />
+    <property role="$YGLj" value="CapitalizedGetterNames_View" />
     <node concept="103ZXx" id="Of5vVZt$vj" role="103ZXC" />
     <node concept="103ZXB" id="Of5vVZt$vl" role="103ZXF">
       <node concept="C4FCE" id="Of5vVZtG4Q" role="103ZUC">

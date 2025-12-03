@@ -663,8 +663,8 @@
                       <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="5MEwsyLeMQ3" role="2OqNvi">
-                    <ref role="37wK5l" to="nrs2:2Rk2hp$iTtS" resolve="getEffectiveViewModelName" />
+                  <node concept="3TrcHB" id="3U$wxSqnQHX" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   </node>
                 </node>
               </node>

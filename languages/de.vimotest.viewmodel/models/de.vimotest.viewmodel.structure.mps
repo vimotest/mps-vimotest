@@ -168,6 +168,14 @@
         </node>
       </node>
     </node>
+    <node concept="1TJgyi" id="3U$wxSqn$Td" role="1TKVEl">
+      <property role="IQ2nx" value="4513875792335097421" />
+      <property role="TrG5h" value="baseName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="t5JxF" id="3U$wxSqn$Up" role="lGtFl">
+        <property role="t5JxN" value="The Base Name without &quot;ViewModel&quot; Suffix" />
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="F907haLJWj">
     <property role="EcuMT" value="777152910168882963" />

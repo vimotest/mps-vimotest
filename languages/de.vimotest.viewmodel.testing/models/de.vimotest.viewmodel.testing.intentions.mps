@@ -12,7 +12,6 @@
     <import index="53m0" ref="r:b38f4eba-3263-43b3-b5a0-ad906d4f1a11(de.vimotest.viewmodel.testing.structure)" />
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" implicit="true" />
     <import index="fwln" ref="r:fb31fced-d3c6-408c-9dff-13efe5b49745(de.vimotest.viewmodel.testing.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -333,8 +332,8 @@
               </node>
               <node concept="2OqwBi" id="5QmCreimJay" role="3uHU7B">
                 <node concept="2Sf5sV" id="5QmCreimJ2o" role="2Oq$k0" />
-                <node concept="2qgKlT" id="5MEwsyLt9u$" role="2OqNvi">
-                  <ref role="37wK5l" to="nrs2:2Rk2hp$iTtS" resolve="getEffectiveViewModelName" />
+                <node concept="3TrcHB" id="3U$wxSqnStW" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
             </node>
@@ -890,8 +889,8 @@
                     <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="5MEwsyLt8Fi" role="2OqNvi">
-                  <ref role="37wK5l" to="nrs2:2Rk2hp$iTtS" resolve="getEffectiveViewModelName" />
+                <node concept="3TrcHB" id="3U$wxSqnRCc" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
             </node>

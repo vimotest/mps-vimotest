@@ -25,8 +25,8 @@
     <import index="hdif" ref="r:358d5e99-ca53-4b21-ba6f-a58c1c8e0993(de.vimotest.mpswidgets.behavior)" />
     <import index="dgt9" ref="r:a46eceb8-d68d-4f8d-a755-6da4c2f592cc(de.vimotest.types.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
@@ -498,7 +498,7 @@
         <node concept="VPxyj" id="5jkMFwt_Eu2" role="3F10Kt" />
       </node>
       <node concept="3F0A7n" id="F907haMtKB" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1NtTu8" to="at53:3U$wxSqn$Td" resolve="baseName" />
         <ref role="1k5W1q" to="dgt9:F907haMqVA" resolve="Name" />
       </node>
       <node concept="3F0ifn" id="2Rk2hp$33tj" role="3EZMnx">
@@ -524,7 +524,7 @@
                 <node concept="2OqwBi" id="7juAOV6rbuK" role="2Oq$k0">
                   <node concept="pncrf" id="7juAOV6rbuL" role="2Oq$k0" />
                   <node concept="3TrcHB" id="7juAOV6rbuM" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    <ref role="3TsBF5" to="at53:3U$wxSqn$Td" resolve="baseName" />
                   </node>
                 </node>
                 <node concept="17RlXB" id="7juAOV6rfz6" role="2OqNvi" />
@@ -537,7 +537,7 @@
                     <node concept="2OqwBi" id="2Rk2hp$3ei1" role="2Oq$k0">
                       <node concept="pncrf" id="2Rk2hp$3ei2" role="2Oq$k0" />
                       <node concept="3TrcHB" id="2Rk2hp$3ei3" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        <ref role="3TsBF5" to="at53:3U$wxSqn$Td" resolve="baseName" />
                       </node>
                     </node>
                     <node concept="liA8E" id="2Rk2hp$3ei4" role="2OqNvi">
@@ -553,7 +553,7 @@
                     <node concept="2OqwBi" id="2Rk2hp$3eMf" role="2Oq$k0">
                       <node concept="pncrf" id="2Rk2hp$3eMg" role="2Oq$k0" />
                       <node concept="3TrcHB" id="2Rk2hp$3eMh" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        <ref role="3TsBF5" to="at53:3U$wxSqn$Td" resolve="baseName" />
                       </node>
                     </node>
                     <node concept="liA8E" id="2Rk2hp$3eMi" role="2OqNvi">
@@ -592,7 +592,7 @@
                 <node concept="2OqwBi" id="7juAOV6rfKF" role="2Oq$k0">
                   <node concept="pncrf" id="7juAOV6rfKG" role="2Oq$k0" />
                   <node concept="3TrcHB" id="7juAOV6rfKH" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    <ref role="3TsBF5" to="at53:3U$wxSqn$Td" resolve="baseName" />
                   </node>
                 </node>
                 <node concept="17RlXB" id="7juAOV6rfKI" role="2OqNvi" />
@@ -604,7 +604,7 @@
                   <node concept="2OqwBi" id="2Rk2hp$3eZZ" role="2Oq$k0">
                     <node concept="pncrf" id="2Rk2hp$3f00" role="2Oq$k0" />
                     <node concept="3TrcHB" id="2Rk2hp$3f01" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      <ref role="3TsBF5" to="at53:3U$wxSqn$Td" resolve="baseName" />
                     </node>
                   </node>
                   <node concept="liA8E" id="2Rk2hp$3f02" role="2OqNvi">

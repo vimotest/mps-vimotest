@@ -1,0 +1,9 @@
+def sandboxCsharpProjectDir = "$project.sandboxCodeGenDir/sandbox/csharp"
+
+task buildCsharpSandboxProject(type: Exec) {
+    group 'vimotest-sandbox'
+    description 'Build C# Sandbox Programs'
+
+    commandLine 'dotnet', 'build', 'Sandbox.sln'
+    workingDir sandboxCsharpProjectDir
+}

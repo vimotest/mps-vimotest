@@ -14,9 +14,9 @@ namespace context
     std::shared_ptr<ContextReference_ViewModel> sut;
     std::shared_ptr<ContextReference_ViewModelTestSetup> testSetup;
     virtual void BuildSut() ;
-    std::string base = std::string("My Context");
-    virtual void given_base() ;
-    virtual void given_base_1() ;
+    std::string baseContext = std::string("My Context");
+    virtual void given_baseContext() ;
+    virtual void given_baseContext_1() ;
     protected:
     void SetUp() override ;
   };
@@ -25,27 +25,27 @@ namespace context
     this->testSetup = std::make_shared<ContextReference_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
-  TEST_F(ContextReference_ViewTests,  String_Context_given_base_when_then_) 
+  TEST_F(ContextReference_ViewTests,  String_Context_given_baseContext_when_then_) 
   {
-    this->given_base();
+    this->given_baseContext();
     this->BuildSut();
   }
-  TEST_F(ContextReference_ViewTests,  Context_Reference_given_base_when_then_) 
+  TEST_F(ContextReference_ViewTests,  Context_Reference_given_baseContext_when_then_) 
   {
-    this->given_base_1();
+    this->given_baseContext_1();
     this->BuildSut();
   }
   void ContextReference_ViewTests::BuildSut( ) 
   {
     this->sut = this->testSetup->BuildSut();
   }
-  void ContextReference_ViewTests::given_base( ) 
+  void ContextReference_ViewTests::given_baseContext( ) 
   {
-    this->testSetup->SetSimpleStringContext(this->base);
+    this->testSetup->SetSimpleStringContext(this->baseContext);
   }
-  void ContextReference_ViewTests::given_base_1( ) 
+  void ContextReference_ViewTests::given_baseContext_1( ) 
   {
-    this->testSetup->SetSimpleStringContext(this->base);
+    this->testSetup->SetSimpleStringContext(this->baseContext);
   }
 }
 

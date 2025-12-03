@@ -17,15 +17,15 @@ class ContextReference_ViewTests {
   }
   
   
-  public String_Context_given_base_when_then_ (  ) {
-    this.given_base (  );
+  public String_Context_given_baseContext_when_then_ (  ) {
+    this.given_baseContext (  );
 
     this.BuildSut (  );
 
   }
   
-  public Context_Reference_given_base_when_then_ (  ) {
-    this.given_base_1 (  );
+  public Context_Reference_given_baseContext_when_then_ (  ) {
+    this.given_baseContext_1 (  );
 
     this.BuildSut (  );
 
@@ -41,15 +41,15 @@ class ContextReference_ViewTests {
   // Given Helper Definitions
 
   
-  private base : String = "My Context";
+  private baseContext : String = "My Context";
   
-  public given_base (  ) {
-    this.testSetup.SetSimpleStringContext ( this.base );
+  public given_baseContext (  ) {
+    this.testSetup.SetSimpleStringContext ( this.baseContext );
 
   }
   
-  public given_base_1 (  ) {
-    this.testSetup.SetSimpleStringContext ( this.base );
+  public given_baseContext_1 (  ) {
+    this.testSetup.SetSimpleStringContext ( this.baseContext );
 
   }
   

@@ -11,15 +11,15 @@ import de.vimotest.sandbox.context.ContextReference_ViewModelTestSetupImpl;
 public class ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests_Test {
   private ContextReference_ViewModel sut;
   private ContextReference_ViewModelTestSetup testSetup;
-  private String base = "My Context";
+  private String baseContext = "My Context";
   @Test
-  public void test__1st_Context_Reference_from_other_suite_given_base_when_then_() throws Exception {
-    this.given_base();
+  public void test__1st_Context_Reference_from_other_suite_given_baseContext_when_then_() throws Exception {
+    this.given_baseContext();
     this.BuildSut();
   }
   @Test
-  public void test__2nd_Context_Reference_from_other_suite_given_base_when_then_() throws Exception {
-    this.given_base_1();
+  public void test__2nd_Context_Reference_from_other_suite_given_baseContext_when_then_() throws Exception {
+    this.given_baseContext_1();
     this.BuildSut();
   }
   @BeforeEach
@@ -36,11 +36,11 @@ public class ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Te
 
 
 
-  public void given_base() {
-    this.testSetup.SetSimpleStringContext(this.base);
+  public void given_baseContext() {
+    this.testSetup.SetSimpleStringContext(this.baseContext);
   }
-  public void given_base_1() {
-    this.testSetup.SetSimpleStringContext(this.base);
+  public void given_baseContext_1() {
+    this.testSetup.SetSimpleStringContext(this.baseContext);
   }
 
 

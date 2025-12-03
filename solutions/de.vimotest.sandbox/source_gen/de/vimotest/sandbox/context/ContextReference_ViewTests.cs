@@ -19,16 +19,16 @@ public class ContextReference_ViewTests
   }
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
-  public void String_Context_given_base_when_then_()
+  public void String_Context_given_baseContext_when_then_()
   {
-    this.given_base();
+    this.given_baseContext();
     this.BuildSut();
   }
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
-  public void Context_Reference_given_base_when_then_()
+  public void Context_Reference_given_baseContext_when_then_()
   {
-    this.given_base_1();
+    this.given_baseContext_1();
     this.BuildSut();
   }
  
@@ -37,15 +37,15 @@ public class ContextReference_ViewTests
     this.sut = this.testSetup.BuildSut();
   }
  
-    private string base = "My Context";
+    private string baseContext = "My Context";
  
-    public   virtual void given_base()
+    public   virtual void given_baseContext()
   {
-    this.testSetup.SetSimpleStringContext(this.base);
+    this.testSetup.SetSimpleStringContext(this.baseContext);
   }
  
-    public   virtual void given_base_1()
+    public   virtual void given_baseContext_1()
   {
-    this.testSetup.SetSimpleStringContext(this.base);
+    this.testSetup.SetSimpleStringContext(this.baseContext);
   }
 }

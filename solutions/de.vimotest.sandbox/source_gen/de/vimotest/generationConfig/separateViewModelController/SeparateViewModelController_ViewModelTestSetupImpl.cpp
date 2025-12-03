@@ -1,6 +1,5 @@
 
 #include "SeparateViewModelController_ViewModelTestSetupImpl.h"
-#include "SeparateViewModelController_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "MyViewController.h"
 #include "MyViewModel.h"

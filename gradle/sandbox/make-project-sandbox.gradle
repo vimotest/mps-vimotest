@@ -3,3 +3,4 @@ ext {
 }
 apply from: 'gradle/sandbox/make-project-sandbox-java.gradle'
 apply from: 'gradle/sandbox/make-project-sandbox-cpp.gradle'
+apply from: 'gradle/sandbox/make-project-sandbox-csharp.gradle'

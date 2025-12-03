@@ -17,15 +17,15 @@ class ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests {
   }
   
   
-  public _1st_Context_Reference_from_other_suite_given_base_when_then_ (  ) {
-    this.given_base (  );
+  public _1st_Context_Reference_from_other_suite_given_baseContext_when_then_ (  ) {
+    this.given_baseContext (  );
 
     this.BuildSut (  );
 
   }
   
-  public _2nd_Context_Reference_from_other_suite_given_base_when_then_ (  ) {
-    this.given_base_1 (  );
+  public _2nd_Context_Reference_from_other_suite_given_baseContext_when_then_ (  ) {
+    this.given_baseContext_1 (  );
 
     this.BuildSut (  );
 
@@ -41,15 +41,15 @@ class ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests {
   // Given Helper Definitions
 
   
-  private base : String = "My Context";
+  private baseContext : String = "My Context";
   
-  public given_base (  ) {
-    this.testSetup.SetSimpleStringContext ( this.base );
+  public given_baseContext (  ) {
+    this.testSetup.SetSimpleStringContext ( this.baseContext );
 
   }
   
-  public given_base_1 (  ) {
-    this.testSetup.SetSimpleStringContext ( this.base );
+  public given_baseContext_1 (  ) {
+    this.testSetup.SetSimpleStringContext ( this.baseContext );
 
   }
   

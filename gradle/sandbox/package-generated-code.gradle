@@ -44,6 +44,16 @@ private def copyGeneratedCode(String sourcesArtifact, String targetDirName) {
 
     copy {
         from zipTree(sourcesArtifact)
+        into "$targetDir/csharp/src"
+        include('**/*.cs')
+    }
+    copy {
+        from "$projectDir/solutions/de.vimotest.$targetDirName/scripts/csharp"
+        into "$targetDir/csharp"
+    }
+
+    copy {
+        from zipTree(sourcesArtifact)
         into "$targetDir/alf"
         include('**/*.alf')
     }

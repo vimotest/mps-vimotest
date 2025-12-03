@@ -14,9 +14,9 @@ namespace context
     std::shared_ptr<ContextReference_ViewModel> sut;
     std::shared_ptr<ContextReference_ViewModelTestSetup> testSetup;
     virtual void BuildSut() ;
-    std::string base = std::string("My Context");
-    virtual void given_base() ;
-    virtual void given_base_1() ;
+    std::string baseContext = std::string("My Context");
+    virtual void given_baseContext() ;
+    virtual void given_baseContext_1() ;
     protected:
     void SetUp() override ;
   };
@@ -25,27 +25,27 @@ namespace context
     this->testSetup = std::make_shared<ContextReference_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
-  TEST_F(ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests,  _1st_Context_Reference_from_other_suite_given_base_when_then_) 
+  TEST_F(ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests,  _1st_Context_Reference_from_other_suite_given_baseContext_when_then_) 
   {
-    this->given_base();
+    this->given_baseContext();
     this->BuildSut();
   }
-  TEST_F(ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests,  _2nd_Context_Reference_from_other_suite_given_base_when_then_) 
+  TEST_F(ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests,  _2nd_Context_Reference_from_other_suite_given_baseContext_when_then_) 
   {
-    this->given_base_1();
+    this->given_baseContext_1();
     this->BuildSut();
   }
   void ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests::BuildSut( ) 
   {
     this->sut = this->testSetup->BuildSut();
   }
-  void ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests::given_base( ) 
+  void ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests::given_baseContext( ) 
   {
-    this->testSetup->SetSimpleStringContext(this->base);
+    this->testSetup->SetSimpleStringContext(this->baseContext);
   }
-  void ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests::given_base_1( ) 
+  void ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests::given_baseContext_1( ) 
   {
-    this->testSetup->SetSimpleStringContext(this->base);
+    this->testSetup->SetSimpleStringContext(this->baseContext);
   }
 }
 

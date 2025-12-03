@@ -4959,7 +4959,7 @@
       <property role="TrG5h" value="String Context" />
       <node concept="1IbZgy" id="7NXUkdPqjuG" role="DUd2K">
         <node concept="1g3lgF" id="7NXUkdPqjuN" role="DUiTU">
-          <property role="TrG5h" value="base" />
+          <property role="TrG5h" value="baseContext" />
           <node concept="o7Kjd" id="7NXUkdPqjuP" role="3125nE">
             <property role="o7K7r" value="My Context" />
           </node>
@@ -4971,7 +4971,7 @@
       <property role="TrG5h" value="Context Reference" />
       <node concept="1IbZgy" id="7NXUkdPqjuS" role="DUd2K">
         <node concept="8w7HN" id="7NXUkdPsXFv" role="DUiTU">
-          <ref role="8w7Kh" node="7NXUkdPqjuN" resolve="base" />
+          <ref role="8w7Kh" node="7NXUkdPqjuN" resolve="baseContext" />
         </node>
       </node>
       <node concept="1s$VFG" id="7NXUkdPqjuU" role="1s$QAY" />
@@ -5590,7 +5590,7 @@
       <property role="TrG5h" value="1st Context Reference from other suite" />
       <node concept="1IbZgy" id="6S_Is8aAYHf" role="DUd2K">
         <node concept="8w7HN" id="6S_Is8aAYHj" role="DUiTU">
-          <ref role="8w7Kh" node="7NXUkdPqjuN" resolve="base" />
+          <ref role="8w7Kh" node="7NXUkdPqjuN" resolve="baseContext" />
         </node>
       </node>
       <node concept="1s$VFG" id="6S_Is8aAYHh" role="1s$QAY" />
@@ -5599,7 +5599,7 @@
       <property role="TrG5h" value="2nd Context Reference from other suite" />
       <node concept="1IbZgy" id="6S_Is8aAYHn" role="DUd2K">
         <node concept="8w7HN" id="6S_Is8aAYHo" role="DUiTU">
-          <ref role="8w7Kh" node="7NXUkdPqjuN" resolve="base" />
+          <ref role="8w7Kh" node="7NXUkdPqjuN" resolve="baseContext" />
         </node>
       </node>
       <node concept="1s$VFG" id="6S_Is8aAYHp" role="1s$QAY" />

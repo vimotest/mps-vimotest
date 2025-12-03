@@ -1,5 +1,6 @@
 
 #include "MyViewController.h"
+#include "MyViewController.h"
 
 void MyViewController::loadView( ) 
 {

@@ -1,21 +1,21 @@
 /// <filename>
-///     SeparateViewController_2_ViewTests.cs
+///     SeparateViewModelController_2_ViewTests.cs
 /// </filename>
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 [ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
-public class SeparateViewController_2_ViewTests
+public class SeparateViewModelController_2_ViewTests
 {
     private MyViewModel sutViewModel;
  
     private MyViewController sutViewController;
  
-    private SeparateViewController_ViewModelTestSetup testSetup;
+    private SeparateViewModelController_ViewModelTestSetup testSetup;
  
   [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
   public void SetUp()
   {
-    this.testSetup = new SeparateViewController_ViewModelTestSetupImpl();
+    this.testSetup = new SeparateViewModelController_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
  

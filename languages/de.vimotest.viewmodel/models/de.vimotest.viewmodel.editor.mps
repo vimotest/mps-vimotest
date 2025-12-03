@@ -4037,7 +4037,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="3F0ifn" id="5jkMFw_EHJ9" role="2fqkNU">
-          <property role="3F0ifm" value="generate separated controller (for commands)" />
+          <property role="3F0ifm" value="generate separated ViewModel controller (for commands)" />
           <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
         </node>
       </node>

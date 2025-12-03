@@ -2,17 +2,17 @@
 
 private import Testing ;
 
-class SeparateViewController_ViewTests {
+class SeparateViewModelController_ViewTests {
   
   private sutViewModel : MyViewModel  ;
   
   private sutViewController : MyViewController  ;
   
-  private testSetup : SeparateViewController_ViewModelTestSetup  ;
+  private testSetup : SeparateViewModelController_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new SeparateViewController_ViewModelTestSetupImpl (  );
+    this.testSetup = new SeparateViewModelController_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 

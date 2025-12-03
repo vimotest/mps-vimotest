@@ -91,7 +91,7 @@
     <property role="1LiYYg" value="true" />
   </node>
   <node concept="103ZX$" id="Of5vVZtG4V">
-    <property role="$YGLj" value="SeparateViewController_View" />
+    <property role="$YGLj" value="SeparateViewModelController_View" />
     <node concept="103ZXx" id="Of5vVZtG4W" role="103ZXC">
       <node concept="3Vw88J" id="Of5vVZtG4X" role="1006ar">
         <property role="TrG5h" value="LoadView" />
@@ -117,8 +117,8 @@
     </node>
   </node>
   <node concept="30n1Qd" id="Of5vVZtOs6">
-    <property role="TrG5h" value="SeparateViewController_ViewTests" />
-    <ref role="30n1PB" node="Of5vVZtG4V" resolve="SeparateViewController_ViewModel" />
+    <property role="TrG5h" value="SeparateViewModelController_ViewTests" />
+    <ref role="30n1PB" node="Of5vVZtG4V" resolve="SeparateViewModelController_ViewModel" />
     <node concept="3LKzX3" id="Of5vVZwrBA" role="30n1Qb">
       <property role="TrG5h" value="MyTest" />
       <node concept="1IbZgy" id="Of5vVZwrBB" role="DUd2K">
@@ -140,8 +140,8 @@
     </node>
   </node>
   <node concept="30n1Qd" id="aV2Sa0uGCw">
-    <property role="TrG5h" value="SeparateViewController_2_ViewTests" />
-    <ref role="30n1PB" node="Of5vVZtG4V" resolve="SeparateViewController_ViewModel" />
+    <property role="TrG5h" value="SeparateViewModelController_2_ViewTests" />
+    <ref role="30n1PB" node="Of5vVZtG4V" resolve="SeparateViewModelController_ViewModel" />
     <node concept="3LKzX3" id="aV2Sa0uGCx" role="30n1Qb">
       <property role="TrG5h" value="MyTest2" />
       <node concept="1IbZgy" id="aV2Sa0uGCy" role="DUd2K">

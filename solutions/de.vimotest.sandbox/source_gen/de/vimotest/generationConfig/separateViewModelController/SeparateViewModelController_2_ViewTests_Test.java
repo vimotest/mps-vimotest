@@ -5,12 +5,12 @@ package de.vimotest.generationConfig.separateViewModelController;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 
-public class SeparateViewController_ViewTests_Test {
+public class SeparateViewModelController_2_ViewTests_Test {
   private MyViewModel sutViewModel;
   private MyViewController sutViewController;
-  private SeparateViewController_ViewModelTestSetup testSetup;
+  private SeparateViewModelController_ViewModelTestSetup testSetup;
   @Test
-  public void test_MyTest_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_() throws Exception {
+  public void test_MyTest2_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_() throws Exception {
     this.given_empty_context();
     this.BuildSut();
     this.when_LoadView();
@@ -19,7 +19,7 @@ public class SeparateViewController_ViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.testSetup = new SeparateViewController_ViewModelTestSetupImpl();
+    this.testSetup = new SeparateViewModelController_ViewModelTestSetupImpl();
     this.testSetup.Init();
   }
 

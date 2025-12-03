@@ -1,9 +1,9 @@
 /// <filename>
-///     SeparateViewController_ViewModelTestSetup.cs
+///     SeparateViewModelController_ViewModelTestSetup.cs
 /// </filename>
 
 
-internal abstract class SeparateViewController_ViewModelTestSetup
+internal abstract class SeparateViewModelController_ViewModelTestSetup
 {
     public   abstract void Init();
  

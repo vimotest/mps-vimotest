@@ -1,12 +1,12 @@
 
 #pragma once
 
-#include "SeparateViewController_ViewModelTestSetup.h"
+#include "SeparateViewModelController_ViewModelTestSetup.h"
 #include <memory>
 #include "MyViewController.h"
 #include "MyViewModel.h"
 
-class SeparateViewController_ViewModelTestSetupImpl : public SeparateViewController_ViewModelTestSetup
+class SeparateViewModelController_ViewModelTestSetupImpl : public SeparateViewModelController_ViewModelTestSetup
 {
   public:
   void Init() override ;

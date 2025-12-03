@@ -2,9 +2,9 @@
   <ItemGroup>    
     <Compile Include="$(MSBuildThisFileDirectory)MyViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MyViewController.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)SeparateViewController_ViewModelTestSetup.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)SeparateViewController_ViewModelTestSetupImpl.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)SeparateViewController_ViewTests.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)SeparateViewController_2_ViewTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SeparateViewModelController_ViewModelTestSetup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SeparateViewModelController_ViewModelTestSetupImpl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SeparateViewModelController_ViewTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SeparateViewModelController_2_ViewTests.cs" />
   </ItemGroup>
 </Project>

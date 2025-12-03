@@ -1,9 +1,9 @@
 /// <filename>
-///     SeparateViewController_ViewModelTestSetupImpl.cs
+///     SeparateViewModelController_ViewModelTestSetupImpl.cs
 /// </filename>
 
 
-internal class SeparateViewController_ViewModelTestSetupImpl : SeparateViewController_ViewModelTestSetup
+internal class SeparateViewModelController_ViewModelTestSetupImpl : SeparateViewModelController_ViewModelTestSetup
 {
     public   override void Init()
   {

@@ -2,7 +2,7 @@
 
 
 
-abstract class SeparateViewController_ViewModelTestSetup {
+abstract class SeparateViewModelController_ViewModelTestSetup {
   
   public abstract Init (  ) ;
   

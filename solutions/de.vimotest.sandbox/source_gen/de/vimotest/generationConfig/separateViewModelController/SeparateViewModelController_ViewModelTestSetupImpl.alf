@@ -2,7 +2,7 @@
 
 
 
-class SeparateViewController_ViewModelTestSetupImpl specializes SeparateViewController_ViewModelTestSetup {
+class SeparateViewModelController_ViewModelTestSetupImpl specializes SeparateViewModelController_ViewModelTestSetup {
   
   public Init (  ) {    
   }

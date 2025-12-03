@@ -1,6 +1,5 @@
 
 #include "LoadCommand_ViewModel.h"
-#include "LoadCommand_ViewModel.h"
 #include <string>
 
 namespace commands

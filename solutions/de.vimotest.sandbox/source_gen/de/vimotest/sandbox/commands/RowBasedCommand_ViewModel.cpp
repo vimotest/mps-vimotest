@@ -1,6 +1,5 @@
 
 #include "RowBasedCommand_ViewModel.h"
-#include "RowBasedCommand_ViewModel.h"
 #include <vector>
 #include <memory>
 #include "RowBasedCommand_ViewModelMyFlagsRow.h"

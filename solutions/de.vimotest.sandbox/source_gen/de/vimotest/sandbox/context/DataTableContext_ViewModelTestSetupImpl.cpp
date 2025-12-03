@@ -1,6 +1,5 @@
 
 #include "DataTableContext_ViewModelTestSetupImpl.h"
-#include "DataTableContext_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "DataTableContext_ViewModel.h"
 #include <string>

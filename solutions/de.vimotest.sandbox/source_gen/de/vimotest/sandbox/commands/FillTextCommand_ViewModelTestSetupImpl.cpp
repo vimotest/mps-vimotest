@@ -1,6 +1,5 @@
 
 #include "FillTextCommand_ViewModelTestSetupImpl.h"
-#include "FillTextCommand_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "FillTextCommand_ViewModel.h"
 

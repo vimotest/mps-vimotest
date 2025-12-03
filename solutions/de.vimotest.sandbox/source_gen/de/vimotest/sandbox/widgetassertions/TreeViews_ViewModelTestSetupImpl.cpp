@@ -1,6 +1,5 @@
 
 #include "TreeViews_ViewModelTestSetupImpl.h"
-#include "TreeViews_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "TreeViews_ViewModel.h"
 

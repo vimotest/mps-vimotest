@@ -1,6 +1,5 @@
 
 #include "CustomFileNameBinding.h"
-#include "CustomFileNameBinding.h"
 #include <vector>
 #include <memory>
 #include "ViMoTestFileNameBindingMyElementsRow.h"

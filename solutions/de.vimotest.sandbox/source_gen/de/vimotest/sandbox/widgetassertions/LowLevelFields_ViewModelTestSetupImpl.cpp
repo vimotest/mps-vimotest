@@ -1,6 +1,5 @@
 
 #include "LowLevelFields_ViewModelTestSetupImpl.h"
-#include "LowLevelFields_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "LowLevelFields_ViewModel.h"
 

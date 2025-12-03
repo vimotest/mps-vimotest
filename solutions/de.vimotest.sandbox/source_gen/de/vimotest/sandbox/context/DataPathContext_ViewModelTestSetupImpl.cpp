@@ -1,6 +1,5 @@
 
 #include "DataPathContext_ViewModelTestSetupImpl.h"
-#include "DataPathContext_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "DataPathContext_ViewModel.h"
 #include <string>

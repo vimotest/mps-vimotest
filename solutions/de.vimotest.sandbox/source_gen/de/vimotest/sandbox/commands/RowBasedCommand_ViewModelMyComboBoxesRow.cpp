@@ -1,6 +1,5 @@
 
 #include "RowBasedCommand_ViewModelMyComboBoxesRow.h"
-#include "RowBasedCommand_ViewModelMyComboBoxesRow.h"
 #include <vector>
 #include <string>
 

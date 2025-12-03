@@ -1,6 +1,5 @@
 
 #include "ParameterObjectCommand_ViewModel.h"
-#include "ParameterObjectCommand_ViewModel.h"
 
 bool ParameterObjectCommand_ViewModel::getIsMyFlagCheckBoxChecked( ) 
 {

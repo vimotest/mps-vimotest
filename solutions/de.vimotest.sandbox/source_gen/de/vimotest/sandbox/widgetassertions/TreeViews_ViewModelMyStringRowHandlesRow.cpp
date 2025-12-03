@@ -1,6 +1,5 @@
 
 #include "TreeViews_ViewModelMyStringRowHandlesRow.h"
-#include "TreeViews_ViewModelMyStringRowHandlesRow.h"
 #include <string>
 
 namespace widgetassertions

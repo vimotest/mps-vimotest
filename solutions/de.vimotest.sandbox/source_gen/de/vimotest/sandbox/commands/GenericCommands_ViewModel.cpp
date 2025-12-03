@@ -1,6 +1,5 @@
 
 #include "GenericCommands_ViewModel.h"
-#include "GenericCommands_ViewModel.h"
 #include <vector>
 #include <string>
 

@@ -1,6 +1,5 @@
 
 #include "ComboBoxes_ViewModel.h"
-#include "ComboBoxes_ViewModel.h"
 #include <vector>
 #include <string>
 

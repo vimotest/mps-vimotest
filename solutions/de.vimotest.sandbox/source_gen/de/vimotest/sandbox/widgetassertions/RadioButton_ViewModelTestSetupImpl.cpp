@@ -1,6 +1,5 @@
 
 #include "RadioButton_ViewModelTestSetupImpl.h"
-#include "RadioButton_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "RadioButton_ViewModel.h"
 

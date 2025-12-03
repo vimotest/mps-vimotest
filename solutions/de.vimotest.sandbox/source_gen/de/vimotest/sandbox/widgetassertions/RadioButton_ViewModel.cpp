@@ -1,6 +1,5 @@
 
 #include "RadioButton_ViewModel.h"
-#include "RadioButton_ViewModel.h"
 #include "RadioButton_ViewModelOptionsOption.h"
 
 namespace widgetassertions

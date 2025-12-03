@@ -1,6 +1,5 @@
 
 #include "Labels_ViewModel.h"
-#include "Labels_ViewModel.h"
 #include <vector>
 #include <string>
 

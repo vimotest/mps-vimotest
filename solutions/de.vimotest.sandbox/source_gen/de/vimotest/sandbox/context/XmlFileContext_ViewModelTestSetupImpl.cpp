@@ -1,6 +1,5 @@
 
 #include "XmlFileContext_ViewModelTestSetupImpl.h"
-#include "XmlFileContext_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "XmlFileContext_ViewModel.h"
 #include <string>

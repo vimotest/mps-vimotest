@@ -1,6 +1,5 @@
 
 #include "LoginViewModelTestSetupImpl.h"
-#include "LoginViewModelTestSetupImpl.h"
 #include <memory>
 #include "LoginViewModel.h"
 #include <string>

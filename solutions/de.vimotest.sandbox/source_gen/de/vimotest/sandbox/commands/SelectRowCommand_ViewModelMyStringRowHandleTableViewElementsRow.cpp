@@ -1,6 +1,5 @@
 
 #include "SelectRowCommand_ViewModelMyStringRowHandleTableViewElementsRow.h"
-#include "SelectRowCommand_ViewModelMyStringRowHandleTableViewElementsRow.h"
 #include <string>
 
 namespace commands

@@ -1,6 +1,5 @@
 
 #include "SelectEntryCommand_ViewModel.h"
-#include "SelectEntryCommand_ViewModel.h"
 #include <vector>
 #include "SelectEntryCommand_ViewModelMyOptionsOption.h"
 #include <string>

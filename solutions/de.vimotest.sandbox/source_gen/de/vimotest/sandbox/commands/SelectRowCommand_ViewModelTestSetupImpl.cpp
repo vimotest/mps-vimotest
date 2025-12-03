@@ -1,6 +1,5 @@
 
 #include "SelectRowCommand_ViewModelTestSetupImpl.h"
-#include "SelectRowCommand_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "SelectRowCommand_ViewModel.h"
 

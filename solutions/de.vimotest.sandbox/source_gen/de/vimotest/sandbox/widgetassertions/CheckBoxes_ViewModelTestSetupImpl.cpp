@@ -1,6 +1,5 @@
 
 #include "CheckBoxes_ViewModelTestSetupImpl.h"
-#include "CheckBoxes_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "CheckBoxes_ViewModel.h"
 

@@ -1,6 +1,5 @@
 
 #include "CapitalizedGetterNames_ViewModel.h"
-#include "CapitalizedGetterNames_ViewModel.h"
 #include <vector>
 #include <memory>
 #include "CapitalizedGetterNames_ViewModelMyElementsRow.h"

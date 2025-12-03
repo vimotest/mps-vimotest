@@ -1,6 +1,5 @@
 
 #include "LowLevelFields_ViewModelCustomTreeRowFieldRow.h"
-#include "LowLevelFields_ViewModelCustomTreeRowFieldRow.h"
 #include <string>
 
 namespace widgetassertions

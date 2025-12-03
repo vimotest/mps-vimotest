@@ -1,6 +1,5 @@
 
 #include "NameBinding_ViewModel.h"
-#include "NameBinding_ViewModel.h"
 #include <vector>
 #include <memory>
 #include "MyCustomRow.h"

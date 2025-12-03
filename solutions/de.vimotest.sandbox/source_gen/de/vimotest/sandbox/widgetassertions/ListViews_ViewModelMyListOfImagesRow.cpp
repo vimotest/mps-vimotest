@@ -1,6 +1,5 @@
 
 #include "ListViews_ViewModelMyListOfImagesRow.h"
-#include "ListViews_ViewModelMyListOfImagesRow.h"
 #include <string>
 
 namespace widgetassertions

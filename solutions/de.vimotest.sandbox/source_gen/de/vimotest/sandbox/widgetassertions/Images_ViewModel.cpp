@@ -1,6 +1,5 @@
 
 #include "Images_ViewModel.h"
-#include "Images_ViewModel.h"
 #include <string>
 
 namespace widgetassertions

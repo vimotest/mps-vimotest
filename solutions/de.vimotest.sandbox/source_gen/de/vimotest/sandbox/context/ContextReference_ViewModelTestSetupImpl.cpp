@@ -1,6 +1,5 @@
 
 #include "ContextReference_ViewModelTestSetupImpl.h"
-#include "ContextReference_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "ContextReference_ViewModel.h"
 #include <string>

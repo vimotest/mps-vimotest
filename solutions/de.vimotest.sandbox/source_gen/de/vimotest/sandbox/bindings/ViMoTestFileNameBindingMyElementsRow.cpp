@@ -1,6 +1,5 @@
 
 #include "ViMoTestFileNameBindingMyElementsRow.h"
-#include "ViMoTestFileNameBindingMyElementsRow.h"
 #include <string>
 
 namespace bindings

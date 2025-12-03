@@ -1,6 +1,5 @@
 
 #include "TextBoxes_ViewModel.h"
-#include "TextBoxes_ViewModel.h"
 #include <vector>
 #include <string>
 

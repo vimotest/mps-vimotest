@@ -1,6 +1,5 @@
 
 #include "LoginViewModel.h"
-#include "LoginViewModel.h"
 #include <string>
 
 namespace de::vimotest::examples::loginview

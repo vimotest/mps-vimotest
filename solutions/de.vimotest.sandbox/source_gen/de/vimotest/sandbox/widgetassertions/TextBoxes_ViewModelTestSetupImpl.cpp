@@ -1,6 +1,5 @@
 
 #include "TextBoxes_ViewModelTestSetupImpl.h"
-#include "TextBoxes_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "TextBoxes_ViewModel.h"
 

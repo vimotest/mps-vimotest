@@ -1,6 +1,5 @@
 
 #include "SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow.h"
-#include "SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow.h"
 #include <string>
 
 namespace commands

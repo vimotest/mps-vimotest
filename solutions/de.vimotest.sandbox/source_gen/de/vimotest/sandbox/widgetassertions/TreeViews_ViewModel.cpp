@@ -1,6 +1,5 @@
 
 #include "TreeViews_ViewModel.h"
-#include "TreeViews_ViewModel.h"
 #include <vector>
 #include <memory>
 #include "TreeViews_ViewModelMyTreeViewElementsRow.h"

@@ -1,6 +1,5 @@
 
 #include "ListViews_ViewModel.h"
-#include "ListViews_ViewModel.h"
 #include <vector>
 #include <memory>
 #include "ListViews_ViewModelMyListOfLabelRow.h"

@@ -1,6 +1,5 @@
 
 #include "ClickCommand_ViewModel.h"
-#include "ClickCommand_ViewModel.h"
 
 namespace commands
 {

@@ -1,6 +1,5 @@
 
 #include "ListViews_ViewModelMyStringRowHandlesRow.h"
-#include "ListViews_ViewModelMyStringRowHandlesRow.h"
 #include <string>
 
 namespace widgetassertions

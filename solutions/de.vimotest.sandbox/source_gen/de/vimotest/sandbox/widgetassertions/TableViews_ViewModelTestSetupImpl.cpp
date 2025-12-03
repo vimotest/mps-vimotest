@@ -1,6 +1,5 @@
 
 #include "TableViews_ViewModelTestSetupImpl.h"
-#include "TableViews_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "TableViews_ViewModel.h"
 

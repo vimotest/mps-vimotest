@@ -1,6 +1,5 @@
 
 #include "RowBasedCommand_ViewModelTestSetupImpl.h"
-#include "RowBasedCommand_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "RowBasedCommand_ViewModel.h"
 

@@ -1,6 +1,5 @@
 
 #include "SelectRowCommand_ViewModelMyTreeViewElementsRow.h"
-#include "SelectRowCommand_ViewModelMyTreeViewElementsRow.h"
 #include <string>
 
 namespace commands

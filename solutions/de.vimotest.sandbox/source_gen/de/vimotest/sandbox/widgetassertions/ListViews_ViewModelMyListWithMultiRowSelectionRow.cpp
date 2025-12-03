@@ -1,6 +1,5 @@
 
 #include "ListViews_ViewModelMyListWithMultiRowSelectionRow.h"
-#include "ListViews_ViewModelMyListWithMultiRowSelectionRow.h"
 #include <string>
 
 namespace widgetassertions

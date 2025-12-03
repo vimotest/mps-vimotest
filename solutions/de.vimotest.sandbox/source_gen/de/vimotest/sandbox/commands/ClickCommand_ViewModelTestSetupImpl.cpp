@@ -1,6 +1,5 @@
 
 #include "ClickCommand_ViewModelTestSetupImpl.h"
-#include "ClickCommand_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "ClickCommand_ViewModel.h"
 

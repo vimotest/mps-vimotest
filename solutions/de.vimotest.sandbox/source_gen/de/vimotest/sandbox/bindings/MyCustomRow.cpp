@@ -1,6 +1,5 @@
 
 #include "MyCustomRow.h"
-#include "MyCustomRow.h"
 #include <string>
 
 namespace bindings

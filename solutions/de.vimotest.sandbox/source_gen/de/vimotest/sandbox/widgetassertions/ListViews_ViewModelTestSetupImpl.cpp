@@ -1,6 +1,5 @@
 
 #include "ListViews_ViewModelTestSetupImpl.h"
-#include "ListViews_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "ListViews_ViewModel.h"
 

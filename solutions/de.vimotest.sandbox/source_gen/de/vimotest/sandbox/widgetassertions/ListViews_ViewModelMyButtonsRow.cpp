@@ -1,6 +1,5 @@
 
 #include "ListViews_ViewModelMyButtonsRow.h"
-#include "ListViews_ViewModelMyButtonsRow.h"
 #include <string>
 
 namespace widgetassertions

@@ -1,6 +1,5 @@
 
 #include "CapitalizedGetterNames_ViewModelMyElementsRow.h"
-#include "CapitalizedGetterNames_ViewModelMyElementsRow.h"
 #include <string>
 
 std::string CapitalizedGetterNames_ViewModelMyElementsRow::GetHeaderLabelText( ) 

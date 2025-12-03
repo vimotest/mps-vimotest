@@ -1,6 +1,5 @@
 
 #include "ParameterObjectCommand_ViewModelTestSetupImpl.h"
-#include "ParameterObjectCommand_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "ParameterObjectCommand_ViewModel.h"
 

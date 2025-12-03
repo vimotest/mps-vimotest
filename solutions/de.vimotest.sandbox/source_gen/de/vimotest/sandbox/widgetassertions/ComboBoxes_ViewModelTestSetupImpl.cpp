@@ -1,6 +1,5 @@
 
 #include "ComboBoxes_ViewModelTestSetupImpl.h"
-#include "ComboBoxes_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "ComboBoxes_ViewModel.h"
 

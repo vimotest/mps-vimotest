@@ -1,6 +1,5 @@
 
 #include "Labels_ViewModelTestSetupImpl.h"
-#include "Labels_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "Labels_ViewModel.h"
 

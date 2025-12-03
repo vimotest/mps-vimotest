@@ -1,6 +1,5 @@
 
 #include "Buttons_ViewModelTestSetupImpl.h"
-#include "Buttons_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "Buttons_ViewModel.h"
 

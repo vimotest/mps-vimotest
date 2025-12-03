@@ -1,6 +1,5 @@
 
 #include "ListViews_ViewModelMyCheckboxesRow.h"
-#include "ListViews_ViewModelMyCheckboxesRow.h"
 #include <string>
 
 namespace widgetassertions

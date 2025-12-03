@@ -1,6 +1,5 @@
 
 #include "TableViews_ViewModelMyElementsRow.h"
-#include "TableViews_ViewModelMyElementsRow.h"
 #include <string>
 
 namespace widgetassertions

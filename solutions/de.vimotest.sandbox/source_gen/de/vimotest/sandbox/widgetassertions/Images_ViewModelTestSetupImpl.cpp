@@ -1,6 +1,5 @@
 
 #include "Images_ViewModelTestSetupImpl.h"
-#include "Images_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "Images_ViewModel.h"
 

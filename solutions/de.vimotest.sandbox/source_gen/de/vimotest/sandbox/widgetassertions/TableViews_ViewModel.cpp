@@ -1,6 +1,5 @@
 
 #include "TableViews_ViewModel.h"
-#include "TableViews_ViewModel.h"
 #include <vector>
 #include <memory>
 #include "TableViews_ViewModelMyElementsRow.h"

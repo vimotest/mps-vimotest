@@ -1,6 +1,5 @@
 
 #include "SelectRowCommand_ViewModel.h"
-#include "SelectRowCommand_ViewModel.h"
 #include <vector>
 #include <memory>
 #include "SelectRowCommand_ViewModelMyListViewElementsRow.h"

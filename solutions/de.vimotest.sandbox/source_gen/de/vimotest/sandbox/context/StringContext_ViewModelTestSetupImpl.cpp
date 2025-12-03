@@ -1,6 +1,5 @@
 
 #include "StringContext_ViewModelTestSetupImpl.h"
-#include "StringContext_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "StringContext_ViewModel.h"
 #include <string>

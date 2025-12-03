@@ -1,6 +1,5 @@
 
 #include "TableViews_ViewModelMyStringRowHandlesRow.h"
-#include "TableViews_ViewModelMyStringRowHandlesRow.h"
 #include <string>
 
 namespace widgetassertions

@@ -1,6 +1,5 @@
 
 #include "FillTextCommand_ViewModel.h"
-#include "FillTextCommand_ViewModel.h"
 #include <vector>
 #include <string>
 

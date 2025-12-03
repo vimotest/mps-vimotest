@@ -1,6 +1,5 @@
 
 #include "Buttons_ViewModel.h"
-#include "Buttons_ViewModel.h"
 #include <string>
 
 namespace widgetassertions

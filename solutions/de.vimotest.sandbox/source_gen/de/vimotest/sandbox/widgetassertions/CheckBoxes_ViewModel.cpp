@@ -1,6 +1,5 @@
 
 #include "CheckBoxes_ViewModel.h"
-#include "CheckBoxes_ViewModel.h"
 #include <optional>
 #include <string>
 

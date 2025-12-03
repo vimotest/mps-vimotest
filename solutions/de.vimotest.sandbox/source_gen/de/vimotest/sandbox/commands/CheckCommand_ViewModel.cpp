@@ -1,6 +1,5 @@
 
 #include "CheckCommand_ViewModel.h"
-#include "CheckCommand_ViewModel.h"
 
 namespace commands
 {

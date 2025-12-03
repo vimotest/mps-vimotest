@@ -1,6 +1,5 @@
 
 #include "XmlElementContext_ViewModelTestSetupImpl.h"
-#include "XmlElementContext_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "XmlElementContext_ViewModel.h"
 #include <string>

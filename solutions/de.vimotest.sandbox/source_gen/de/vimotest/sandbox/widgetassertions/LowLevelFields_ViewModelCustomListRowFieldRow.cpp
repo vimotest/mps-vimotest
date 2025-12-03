@@ -1,6 +1,5 @@
 
 #include "LowLevelFields_ViewModelCustomListRowFieldRow.h"
-#include "LowLevelFields_ViewModelCustomListRowFieldRow.h"
 #include <vector>
 #include <string>
 

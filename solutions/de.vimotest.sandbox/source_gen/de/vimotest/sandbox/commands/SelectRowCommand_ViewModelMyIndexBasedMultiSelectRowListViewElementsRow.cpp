@@ -1,6 +1,5 @@
 
 #include "SelectRowCommand_ViewModelMyIndexBasedMultiSelectRowListViewElementsRow.h"
-#include "SelectRowCommand_ViewModelMyIndexBasedMultiSelectRowListViewElementsRow.h"
 #include <string>
 
 namespace commands

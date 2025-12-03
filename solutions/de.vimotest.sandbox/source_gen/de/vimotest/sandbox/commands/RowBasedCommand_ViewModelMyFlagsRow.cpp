@@ -1,6 +1,5 @@
 
 #include "RowBasedCommand_ViewModelMyFlagsRow.h"
-#include "RowBasedCommand_ViewModelMyFlagsRow.h"
 
 namespace commands
 {

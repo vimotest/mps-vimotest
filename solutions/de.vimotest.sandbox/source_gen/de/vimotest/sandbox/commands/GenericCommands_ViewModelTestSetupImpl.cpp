@@ -1,6 +1,5 @@
 
 #include "GenericCommands_ViewModelTestSetupImpl.h"
-#include "GenericCommands_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "GenericCommands_ViewModel.h"
 

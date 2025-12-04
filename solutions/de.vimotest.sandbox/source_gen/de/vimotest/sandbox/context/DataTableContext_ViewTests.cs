@@ -67,7 +67,7 @@ public class DataTableContext_ViewTests
     this.testSetup.SetDataTableString(this.dataTableToString);
   }
  
-    private string dataTableToJson = @"[ { id:\"0\", name:\"A\" } ]";
+    private string dataTableToJson = @"[ { id:""0"", name:""A"" } ]";
  
     public   virtual void given_dataTableToJson()
   {

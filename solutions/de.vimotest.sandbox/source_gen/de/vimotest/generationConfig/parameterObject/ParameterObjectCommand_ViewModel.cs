@@ -16,21 +16,21 @@ public class ParameterObjectCommand_ViewModel
   {
         public string Value1;
      
-        public     virtual string getValue1()
+        public string getValue1()
     {
       return this.Value1;
     }
      
         public bool Value2;
      
-        public     virtual bool getValue2()
+        public bool getValue2()
     {
       return this.Value2;
     }
      
         public int Value3;
      
-        public     virtual int getValue3()
+        public int getValue3()
     {
       return this.Value3;
     }

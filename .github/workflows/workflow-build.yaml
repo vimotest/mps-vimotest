@@ -161,7 +161,6 @@ jobs:
         with:
           dotnet-version: '9.0.x'
 
-      # TODO: enable once compile errors are solved
       # Build C# Programs
-      # - name: Build C# Sandbox
-      #  run: sh ./gradlew buildCsharpSandboxProject
+      - name: Build C# Sandbox
+        run: sh ./gradlew buildCsharpSandboxProject

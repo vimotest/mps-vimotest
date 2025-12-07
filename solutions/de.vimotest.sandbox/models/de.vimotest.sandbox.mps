@@ -366,8 +366,18 @@
         <child id="471139930095592890" name="widgetType" index="Ek7rZ" />
         <child id="471139930095530076" name="visibilityFeature" index="Ekmcp" />
       </concept>
+      <concept id="7095654166980011885" name="de.vimotest.viewmodel.structure.ViewModelDependency" flags="ng" index="2PDviN">
+        <child id="5008073225018639679" name="methods" index="RSskJ" />
+      </concept>
+      <concept id="7095654166980083171" name="de.vimotest.viewmodel.structure.ViewModelDependencyList" flags="ng" index="2PDISX">
+        <child id="5008073225018640442" name="dependencies" index="RSswE" />
+      </concept>
       <concept id="3225812364372528779" name="de.vimotest.viewmodel.structure.CustomFileNameBinding" flags="ng" index="QIaRa">
         <property id="3225812364372528782" name="customBaseFileName" index="QIaRf" />
+      </concept>
+      <concept id="5008073225018638575" name="de.vimotest.viewmodel.structure.DependencyArgument" flags="ng" index="RSs3Z" />
+      <concept id="5008073225018639227" name="de.vimotest.viewmodel.structure.DependencyMethod" flags="ng" index="RSsdF">
+        <child id="5008073225018638751" name="arguments" index="RSs6f" />
       </concept>
       <concept id="2567579368932258681" name="de.vimotest.viewmodel.structure.TextBoxWidget" flags="ng" index="UtuMG">
         <child id="2567579368932258684" name="enabledFeature" index="UtuMD" />
@@ -397,6 +407,7 @@
       </concept>
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
         <property id="4513875792335097421" name="baseName" index="$YGLj" />
+        <child id="7095654166980012337" name="viewModelDependencies" index="2PDvFJ" />
         <child id="777152910168882972" name="viewModelCommands" index="103ZXC" />
         <child id="777152910168882975" name="viewModelData" index="103ZXF" />
       </concept>
@@ -5712,6 +5723,27 @@
         </node>
       </node>
       <node concept="1s$VFG" id="38nA5hDQURO" role="1s$QAY" />
+    </node>
+  </node>
+  <node concept="103ZX$" id="4m0g11MwG31">
+    <property role="$YGLj" value="SimpleDependency_" />
+    <node concept="103ZXx" id="4m0g11MwG32" role="103ZXC">
+      <node concept="3Vw88J" id="4m0g11MwG33" role="1006ar">
+        <property role="TrG5h" value="LoadView" />
+      </node>
+    </node>
+    <node concept="103ZXB" id="4m0g11MwG34" role="103ZXF" />
+    <node concept="2PDISX" id="4m0g11MwG5r" role="2PDvFJ">
+      <node concept="2PDviN" id="4m0g11MwG5P" role="RSswE">
+        <property role="TrG5h" value="IMessageBus" />
+        <node concept="RSsdF" id="4m0g11MwG6C" role="RSskJ">
+          <property role="TrG5h" value="OnMesssage" />
+          <node concept="RSs3Z" id="4m0g11MI2dX" role="RSs6f">
+            <property role="TrG5h" value="messageId" />
+            <node concept="1nBWMp" id="4m0g11MI2eQ" role="3xMlr6" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

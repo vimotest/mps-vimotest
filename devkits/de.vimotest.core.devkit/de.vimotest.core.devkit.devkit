@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dev-kit name="de.vimotest.devkit" uuid="d1a914ef-09af-4c66-a6d1-618e1f9114ea">
+<dev-kit name="de.vimotest.core.devkit" uuid="d1a914ef-09af-4c66-a6d1-618e1f9114ea">
   <exported-language name="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0(de.vimotest.viewmodel)" />
   <exported-language name="716e8717-88c0-4280-8c16-b4d88567596f(de.vimotest.viewmodel.testing)" />
+  <exported-language name="611ecc9e-0703-4ab9-a13c-fb396c607716(de.vimotest.types)" />
   <exported-solutions>
     <exported-solution>b28932ae-6b0e-4f97-ad77-84f278001d91(de.vimotest.genplan)</exported-solution>
   </exported-solutions>

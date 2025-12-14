@@ -1,16 +1,14 @@
-
 #include "SelectRowCommand_ViewModelMyStringRowHandleListViewElementsRow.h"
 #include <string>
 
 namespace commands
 {
-  std::string SelectRowCommand_ViewModelMyStringRowHandleListViewElementsRow::getHeaderLabelText( ) 
+  std::string SelectRowCommand_ViewModelMyStringRowHandleListViewElementsRow::getHeaderLabelText()
   {
     return this->HeaderLabelText;
   }
-  std::string SelectRowCommand_ViewModelMyStringRowHandleListViewElementsRow::getRowHandle( ) 
+  std::string SelectRowCommand_ViewModelMyStringRowHandleListViewElementsRow::getRowHandle()
   {
     return this->RowHandle;
   }
 }
-

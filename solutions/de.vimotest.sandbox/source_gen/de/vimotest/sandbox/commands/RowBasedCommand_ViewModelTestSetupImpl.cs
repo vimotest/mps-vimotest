@@ -6,16 +6,14 @@ using commands;
 namespace commands
 {
     internal class RowBasedCommand_ViewModelTestSetupImpl : commands.RowBasedCommand_ViewModelTestSetup
-  {
-        public     override void Init()
     {
-      
-    }
-     
-        public     override commands.RowBasedCommand_ViewModel BuildSut()
-    {
-      return null;
-    }
-  }
-}
+        public override void Init()
+        {
+        }
 
+        public override commands.RowBasedCommand_ViewModel BuildSut()
+        {
+            return null;
+        }
+    }
+}

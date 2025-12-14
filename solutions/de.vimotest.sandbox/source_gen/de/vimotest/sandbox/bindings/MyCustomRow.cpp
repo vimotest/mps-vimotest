@@ -1,20 +1,18 @@
-
 #include "MyCustomRow.h"
 #include <string>
 
 namespace bindings
 {
-  std::string MyCustomRow::GetRowText( ) 
+  std::string MyCustomRow::GetRowText()
   {
     return this->RowText;
   }
-  int MyCustomRow::getHandle( ) 
+  int MyCustomRow::getHandle()
   {
     return this->handle;
   }
-  int MyCustomRow::getLevel( ) 
+  int MyCustomRow::getLevel()
   {
     return this->level;
   }
 }
-

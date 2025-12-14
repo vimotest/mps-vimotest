@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <vector>
@@ -12,22 +11,21 @@ namespace widgetassertions
 {
   class LowLevelFields_ViewModel
   {
-    public:
+  public:
     bool MyBool;
-    virtual bool getMyBool() ;
+    virtual bool getMyBool();
     int MyInt;
-    virtual int getMyInt() ;
+    virtual int getMyInt();
     std::string MyString;
-    virtual std::string getMyString() ;
+    virtual std::string getMyString();
     std::vector<std::string> MyStrings;
-    virtual std::vector<std::string> getMyStrings() ;
-    virtual std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomTableRowFieldRow>> getCustomTableRowFieldTableRows() ;
-    virtual std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomListRowFieldRow>> getCustomListRowFieldListRows() ;
-    virtual std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomTreeRowFieldRow>> getCustomTreeRowFieldTreeRows() ;
-    private:
+    virtual std::vector<std::string> getMyStrings();
+    virtual std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomTableRowFieldRow>> getCustomTableRowFieldTableRows();
+    virtual std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomListRowFieldRow>> getCustomListRowFieldListRows();
+    virtual std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomTreeRowFieldRow>> getCustomTreeRowFieldTreeRows();
+  private:
     std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomTableRowFieldRow>> CustomTableRowFieldTableRows;
     std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomListRowFieldRow>> CustomListRowFieldListRows;
     std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomTreeRowFieldRow>> CustomTreeRowFieldTreeRows;
   };
 }
-

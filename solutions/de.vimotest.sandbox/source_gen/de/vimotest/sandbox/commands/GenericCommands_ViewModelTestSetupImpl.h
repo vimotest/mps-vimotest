@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include "GenericCommands_ViewModelTestSetup.h"
@@ -9,9 +8,8 @@ namespace commands
 {
   class GenericCommands_ViewModelTestSetupImpl : public GenericCommands_ViewModelTestSetup
   {
-    public:
-    void Init() override ;
-    std::shared_ptr<GenericCommands_ViewModel> BuildSut() override ;
+  public:
+    void Init() override;
+    std::shared_ptr<GenericCommands_ViewModel> BuildSut() override;
   };
 }
-

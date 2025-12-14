@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <optional>
@@ -8,14 +7,14 @@ namespace widgetassertions
 {
   class CheckBoxes_ViewModel
   {
-    public:
-    virtual bool getIsMyFlagWithLabelCheckBoxChecked() ;
-    virtual bool getIsMyFlagWithLabelCheckBoxVisible() ;
-    virtual bool getIsMyFlagWithLabelCheckBoxEnabled() ;
-    virtual std::string getMyFlagWithLabelCheckBoxText() ;
-    virtual bool getIsMyFlagNoLabelCheckBoxChecked() ;
-    virtual std::optional<bool> getIsMyFlagTriStateCheckBoxChecked() ;
-    private:
+  public:
+    virtual bool getIsMyFlagWithLabelCheckBoxChecked();
+    virtual bool getIsMyFlagWithLabelCheckBoxVisible();
+    virtual bool getIsMyFlagWithLabelCheckBoxEnabled();
+    virtual std::string getMyFlagWithLabelCheckBoxText();
+    virtual bool getIsMyFlagNoLabelCheckBoxChecked();
+    virtual std::optional<bool> getIsMyFlagTriStateCheckBoxChecked();
+  private:
     bool isMyFlagWithLabelCheckBoxChecked;
     bool isMyFlagWithLabelCheckBoxVisible;
     bool isMyFlagWithLabelCheckBoxEnabled;
@@ -24,4 +23,3 @@ namespace widgetassertions
     std::optional<bool> isMyFlagTriStateCheckBoxChecked;
   };
 }
-

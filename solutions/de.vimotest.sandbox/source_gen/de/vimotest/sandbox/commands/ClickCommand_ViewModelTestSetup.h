@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <memory>
@@ -8,10 +7,9 @@ namespace commands
 {
   class ClickCommand_ViewModelTestSetup
   {
-    public:
+  public:
     virtual ~ClickCommand_ViewModelTestSetup() = default;
     virtual void Init() = 0;
     virtual std::shared_ptr<ClickCommand_ViewModel> BuildSut() = 0;
   };
 }
-

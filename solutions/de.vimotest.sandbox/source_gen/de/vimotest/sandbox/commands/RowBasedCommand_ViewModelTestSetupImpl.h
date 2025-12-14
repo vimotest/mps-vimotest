@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include "RowBasedCommand_ViewModelTestSetup.h"
@@ -9,9 +8,8 @@ namespace commands
 {
   class RowBasedCommand_ViewModelTestSetupImpl : public RowBasedCommand_ViewModelTestSetup
   {
-    public:
-    void Init() override ;
-    std::shared_ptr<RowBasedCommand_ViewModel> BuildSut() override ;
+  public:
+    void Init() override;
+    std::shared_ptr<RowBasedCommand_ViewModel> BuildSut() override;
   };
 }
-

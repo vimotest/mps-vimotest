@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <vector>
@@ -12,20 +11,19 @@ namespace commands
 {
   class RowBasedCommand_ViewModel
   {
-    public:
-    virtual std::vector<std::shared_ptr<RowBasedCommand_ViewModelMyFlagsRow>> getMyFlagsListRows() ;
-    virtual std::vector<std::shared_ptr<RowBasedCommand_ViewModelMyComboBoxesRow>> getMyComboBoxesTableRows() ;
-    virtual std::vector<std::shared_ptr<RowBasedCommand_ViewModelMyStandardControlsRow>> getMyStandardControlsTreeRows() ;
-    virtual void loadView() ;
-    virtual void checkboxesChecked(int rowIndex, bool isChecked) ;
-    virtual void freeTextComboBoxesEntrySelected(int rowIndex, std::string entryName) ;
-    virtual void entryComboBoxesEntrySelected(int rowIndex, std::string entryName) ;
-    virtual void textBoxesTextFilled(int rowIndex, std::string text) ;
-    virtual void buttonsClicked(int rowIndex) ;
-    private:
+  public:
+    virtual std::vector<std::shared_ptr<RowBasedCommand_ViewModelMyFlagsRow>> getMyFlagsListRows();
+    virtual std::vector<std::shared_ptr<RowBasedCommand_ViewModelMyComboBoxesRow>> getMyComboBoxesTableRows();
+    virtual std::vector<std::shared_ptr<RowBasedCommand_ViewModelMyStandardControlsRow>> getMyStandardControlsTreeRows();
+    virtual void loadView();
+    virtual void checkboxesChecked(int rowIndex, bool isChecked);
+    virtual void freeTextComboBoxesEntrySelected(int rowIndex, std::string entryName);
+    virtual void entryComboBoxesEntrySelected(int rowIndex, std::string entryName);
+    virtual void textBoxesTextFilled(int rowIndex, std::string text);
+    virtual void buttonsClicked(int rowIndex);
+  private:
     std::vector<std::shared_ptr<RowBasedCommand_ViewModelMyFlagsRow>> MyFlagsListRows;
     std::vector<std::shared_ptr<RowBasedCommand_ViewModelMyComboBoxesRow>> MyComboBoxesTableRows;
     std::vector<std::shared_ptr<RowBasedCommand_ViewModelMyStandardControlsRow>> MyStandardControlsTreeRows;
   };
 }
-

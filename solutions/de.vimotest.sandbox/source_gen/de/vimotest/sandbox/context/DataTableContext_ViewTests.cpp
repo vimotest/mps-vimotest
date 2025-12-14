@@ -1,4 +1,3 @@
-
 #include <gtest/gtest.h>
 #include <memory>
 #include "DataTableContext_ViewModelTestSetup.h"
@@ -10,18 +9,18 @@ namespace context
 {
   class DataTableContext_ViewTests : public testing::Test
   {
-    public:
+  public:
     std::shared_ptr<DataTableContext_ViewModel> sut;
     std::shared_ptr<DataTableContext_ViewModelTestSetup> testSetup;
-    virtual void BuildSut() ;
+    virtual void BuildSut();
     std::string dataTableCustomSetter = R"(| id | name |
 | 0 | A |)";
-    virtual void given_dataTableCustomSetter() ;
+    virtual void given_dataTableCustomSetter();
     std::string dataTableToString = R"(| id | name |
 | 0 | A |)";
-    virtual void given_dataTableToString() ;
+    virtual void given_dataTableToString();
     std::string dataTableToJson = R"([ { id:\"0\", name:\"A\" } ])";
-    virtual void given_dataTableToJson() ;
+    virtual void given_dataTableToJson();
     std::string dataTableToXml = R"(<Data>
   <DataRow>
     <id>0    </id>
@@ -29,54 +28,53 @@ namespace context
 | 0 | A |
   </DataRow>
 </Data>)";
-    virtual void given_dataTableToXml() ;
-    protected:
-    void SetUp() override ;
+    virtual void given_dataTableToXml();
+  protected:
+    void SetUp() override;
   };
-  void DataTableContext_ViewTests::SetUp( ) 
+  void DataTableContext_ViewTests::SetUp()
   {
     this->testSetup = std::make_shared<DataTableContext_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
-  TEST_F(DataTableContext_ViewTests,  DataTable_Context_Custom_Setter_given_dataTableCustomSetter_when_then_) 
+  TEST_F(DataTableContext_ViewTests, DataTable_Context_Custom_Setter_given_dataTableCustomSetter_when_then_)
   {
     this->given_dataTableCustomSetter();
     this->BuildSut();
   }
-  TEST_F(DataTableContext_ViewTests,  DataTable_Context_to_String_given_dataTableToString_when_then_) 
+  TEST_F(DataTableContext_ViewTests, DataTable_Context_to_String_given_dataTableToString_when_then_)
   {
     this->given_dataTableToString();
     this->BuildSut();
   }
-  TEST_F(DataTableContext_ViewTests,  DataTable_Context_to_JSON_given_dataTableToJson_when_then_) 
+  TEST_F(DataTableContext_ViewTests, DataTable_Context_to_JSON_given_dataTableToJson_when_then_)
   {
     this->given_dataTableToJson();
     this->BuildSut();
   }
-  TEST_F(DataTableContext_ViewTests,  DataTable_Context_to_XML_given_dataTableToXml_when_then_) 
+  TEST_F(DataTableContext_ViewTests, DataTable_Context_to_XML_given_dataTableToXml_when_then_)
   {
     this->given_dataTableToXml();
     this->BuildSut();
   }
-  void DataTableContext_ViewTests::BuildSut( ) 
+  void DataTableContext_ViewTests::BuildSut()
   {
     this->sut = this->testSetup->BuildSut();
   }
-  void DataTableContext_ViewTests::given_dataTableCustomSetter( ) 
+  void DataTableContext_ViewTests::given_dataTableCustomSetter()
   {
     this->testSetup->SetIdAndName(this->dataTableCustomSetter);
   }
-  void DataTableContext_ViewTests::given_dataTableToString( ) 
+  void DataTableContext_ViewTests::given_dataTableToString()
   {
     this->testSetup->SetDataTableString(this->dataTableToString);
   }
-  void DataTableContext_ViewTests::given_dataTableToJson( ) 
+  void DataTableContext_ViewTests::given_dataTableToJson()
   {
     this->testSetup->SetDataTableJson(this->dataTableToJson);
   }
-  void DataTableContext_ViewTests::given_dataTableToXml( ) 
+  void DataTableContext_ViewTests::given_dataTableToXml()
   {
     this->testSetup->SetDataTableXml(this->dataTableToXml);
   }
 }
-

@@ -1,12 +1,9 @@
-
 #pragma once
-
-
 
 class MyViewController
 {
-  public:
+public:
   virtual ~MyViewController() = default;
-  virtual void loadView() ;
-  virtual void myFlagChecked(bool isChecked) ;
+  virtual void loadView();
+  virtual void myFlagChecked(bool isChecked);
 };

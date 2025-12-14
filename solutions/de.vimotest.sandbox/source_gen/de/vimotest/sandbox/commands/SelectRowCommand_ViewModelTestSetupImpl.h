@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include "SelectRowCommand_ViewModelTestSetup.h"
@@ -9,9 +8,8 @@ namespace commands
 {
   class SelectRowCommand_ViewModelTestSetupImpl : public SelectRowCommand_ViewModelTestSetup
   {
-    public:
-    void Init() override ;
-    std::shared_ptr<SelectRowCommand_ViewModel> BuildSut() override ;
+  public:
+    void Init() override;
+    std::shared_ptr<SelectRowCommand_ViewModel> BuildSut() override;
   };
 }
-

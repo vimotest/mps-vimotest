@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include "ClickCommand_ViewModelTestSetup.h"
@@ -9,9 +8,8 @@ namespace commands
 {
   class ClickCommand_ViewModelTestSetupImpl : public ClickCommand_ViewModelTestSetup
   {
-    public:
-    void Init() override ;
-    std::shared_ptr<ClickCommand_ViewModel> BuildSut() override ;
+  public:
+    void Init() override;
+    std::shared_ptr<ClickCommand_ViewModel> BuildSut() override;
   };
 }
-

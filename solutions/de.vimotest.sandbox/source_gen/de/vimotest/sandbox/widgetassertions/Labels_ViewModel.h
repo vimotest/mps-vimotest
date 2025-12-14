@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <vector>
@@ -8,19 +7,19 @@ namespace widgetassertions
 {
   class Labels_ViewModel
   {
-    public:
-    virtual std::string getTestLabelText() ;
-    virtual bool getIsTestLabelEnabled() ;
-    virtual bool getIsTestLabelVisible() ;
-    virtual std::vector<std::string> getMultiLineLabelText() ;
-    virtual std::string getWithToolTipLabelText() ;
-    virtual std::string getWithToolTipLabelToolTip() ;
-    virtual std::string getWithMultiLineToolTipLabelText() ;
-    virtual std::vector<std::string> getWithMultiLineToolTipLabelToolTip() ;
-    virtual std::string getWithTextColorLabelText() ;
-    virtual std::string getWithTextColorLabelTextColor() ;
-    virtual bool getIsOnlyVisibilityLabelVisible() ;
-    private:
+  public:
+    virtual std::string getTestLabelText();
+    virtual bool getIsTestLabelEnabled();
+    virtual bool getIsTestLabelVisible();
+    virtual std::vector<std::string> getMultiLineLabelText();
+    virtual std::string getWithToolTipLabelText();
+    virtual std::string getWithToolTipLabelToolTip();
+    virtual std::string getWithMultiLineToolTipLabelText();
+    virtual std::vector<std::string> getWithMultiLineToolTipLabelToolTip();
+    virtual std::string getWithTextColorLabelText();
+    virtual std::string getWithTextColorLabelTextColor();
+    virtual bool getIsOnlyVisibilityLabelVisible();
+  private:
     std::string TestLabelText;
     bool isTestLabelEnabled;
     bool isTestLabelVisible;
@@ -34,4 +33,3 @@ namespace widgetassertions
     bool isOnlyVisibilityLabelVisible;
   };
 }
-

@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include "CheckCommand_ViewModelTestSetup.h"
@@ -9,9 +8,8 @@ namespace commands
 {
   class CheckCommand_ViewModelTestSetupImpl : public CheckCommand_ViewModelTestSetup
   {
-    public:
-    void Init() override ;
-    std::shared_ptr<CheckCommand_ViewModel> BuildSut() override ;
+  public:
+    void Init() override;
+    std::shared_ptr<CheckCommand_ViewModel> BuildSut() override;
   };
 }
-

@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <memory>
@@ -9,7 +8,7 @@ namespace de::vimotest::examples::loginview
 {
   class LoginViewModelTestSetup
   {
-    public:
+  public:
     virtual ~LoginViewModelTestSetup() = default;
     virtual void Init() = 0;
     virtual void SetEmptyContext() = 0;
@@ -17,4 +16,3 @@ namespace de::vimotest::examples::loginview
     virtual std::shared_ptr<LoginViewModel> BuildSut() = 0;
   };
 }
-

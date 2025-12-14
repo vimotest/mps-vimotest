@@ -1,4 +1,3 @@
-
 #include "LoginViewModelTestSetupImpl.h"
 #include <memory>
 #include "LoginViewModel.h"
@@ -6,21 +5,17 @@
 
 namespace de::vimotest::examples::loginview
 {
-  void LoginViewModelTestSetupImpl::Init( ) 
+  void LoginViewModelTestSetupImpl::Init()
   {
-    
   }
-  void LoginViewModelTestSetupImpl::SetEmptyContext( ) 
+  void LoginViewModelTestSetupImpl::SetEmptyContext()
   {
-    
   }
-  void LoginViewModelTestSetupImpl::SetXmlElementContext(std::string xml ) 
+  void LoginViewModelTestSetupImpl::SetXmlElementContext(std::string xml)
   {
-    
   }
-  std::shared_ptr<LoginViewModel> LoginViewModelTestSetupImpl::BuildSut( ) 
+  std::shared_ptr<LoginViewModel> LoginViewModelTestSetupImpl::BuildSut()
   {
     return nullptr;
   }
 }
-

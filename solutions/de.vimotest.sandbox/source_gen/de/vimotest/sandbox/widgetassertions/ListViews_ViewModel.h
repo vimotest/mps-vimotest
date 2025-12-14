@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <vector>
@@ -15,26 +14,26 @@ namespace widgetassertions
 {
   class ListViews_ViewModel
   {
-    public:
-    virtual bool getIsMyListOfLabelListVisible() ;
-    virtual bool getIsMyListOfLabelListEnabled() ;
-    virtual std::vector<std::shared_ptr<ListViews_ViewModelMyListOfLabelRow>> getMyListOfLabelListRows() ;
-    virtual int getMyListOfLabelListSelectedRow() ;
-    virtual bool getIsMyListOfImagesListVisible() ;
-    virtual bool getIsMyListOfImagesListEnabled() ;
-    virtual std::vector<std::shared_ptr<ListViews_ViewModelMyListOfImagesRow>> getMyListOfImagesListRows() ;
-    virtual int getMyListOfImagesListSelectedRow() ;
-    virtual std::vector<std::shared_ptr<ListViews_ViewModelMyCheckboxesRow>> getMyCheckboxesListRows() ;
-    virtual int getMyCheckboxesListSelectedRow() ;
-    virtual bool getIsMyCheckboxesListVisible() ;
-    virtual bool getIsMyCheckboxesListEnabled() ;
-    virtual std::vector<std::shared_ptr<ListViews_ViewModelMyStringRowHandlesRow>> getMyStringRowHandlesListRows() ;
-    virtual std::string getMyStringRowHandlesListSelectedRow() ;
-    virtual std::vector<std::shared_ptr<ListViews_ViewModelMyListWithMultiRowSelectionRow>> getMyListWithMultiRowSelectionListRows() ;
-    virtual std::vector<int> getMyListWithMultiRowSelectionListSelectedRows() ;
-    virtual std::vector<std::shared_ptr<ListViews_ViewModelMyButtonsRow>> getMyButtonsListRows() ;
-    virtual void buttonsClicked(int rowIndex) ;
-    private:
+  public:
+    virtual bool getIsMyListOfLabelListVisible();
+    virtual bool getIsMyListOfLabelListEnabled();
+    virtual std::vector<std::shared_ptr<ListViews_ViewModelMyListOfLabelRow>> getMyListOfLabelListRows();
+    virtual int getMyListOfLabelListSelectedRow();
+    virtual bool getIsMyListOfImagesListVisible();
+    virtual bool getIsMyListOfImagesListEnabled();
+    virtual std::vector<std::shared_ptr<ListViews_ViewModelMyListOfImagesRow>> getMyListOfImagesListRows();
+    virtual int getMyListOfImagesListSelectedRow();
+    virtual std::vector<std::shared_ptr<ListViews_ViewModelMyCheckboxesRow>> getMyCheckboxesListRows();
+    virtual int getMyCheckboxesListSelectedRow();
+    virtual bool getIsMyCheckboxesListVisible();
+    virtual bool getIsMyCheckboxesListEnabled();
+    virtual std::vector<std::shared_ptr<ListViews_ViewModelMyStringRowHandlesRow>> getMyStringRowHandlesListRows();
+    virtual std::string getMyStringRowHandlesListSelectedRow();
+    virtual std::vector<std::shared_ptr<ListViews_ViewModelMyListWithMultiRowSelectionRow>> getMyListWithMultiRowSelectionListRows();
+    virtual std::vector<int> getMyListWithMultiRowSelectionListSelectedRows();
+    virtual std::vector<std::shared_ptr<ListViews_ViewModelMyButtonsRow>> getMyButtonsListRows();
+    virtual void buttonsClicked(int rowIndex);
+  private:
     bool isMyListOfLabelListVisible;
     bool isMyListOfLabelListEnabled;
     std::vector<std::shared_ptr<ListViews_ViewModelMyListOfLabelRow>> MyListOfLabelListRows;
@@ -54,4 +53,3 @@ namespace widgetassertions
     std::vector<std::shared_ptr<ListViews_ViewModelMyButtonsRow>> MyButtonsListRows;
   };
 }
-

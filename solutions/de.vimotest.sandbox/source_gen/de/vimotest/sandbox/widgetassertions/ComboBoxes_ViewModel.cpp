@@ -1,45 +1,43 @@
-
 #include "ComboBoxes_ViewModel.h"
 #include <vector>
 #include <string>
 
 namespace widgetassertions
 {
-  std::vector<std::string> ComboBoxes_ViewModel::getMyOptionsComboBoxEntries( ) 
+  std::vector<std::string> ComboBoxes_ViewModel::getMyOptionsComboBoxEntries()
   {
     return this->MyOptionsComboBoxEntries;
   }
-  std::string ComboBoxes_ViewModel::getMyOptionsComboBoxSelectedEntry( ) 
+  std::string ComboBoxes_ViewModel::getMyOptionsComboBoxSelectedEntry()
   {
     return this->MyOptionsComboBoxSelectedEntry;
   }
-  bool ComboBoxes_ViewModel::getIsMyOptionsComboBoxVisible( ) 
+  bool ComboBoxes_ViewModel::getIsMyOptionsComboBoxVisible()
   {
     return this->isMyOptionsComboBoxVisible;
   }
-  bool ComboBoxes_ViewModel::getIsMyOptionsComboBoxEnabled( ) 
+  bool ComboBoxes_ViewModel::getIsMyOptionsComboBoxEnabled()
   {
     return this->isMyOptionsComboBoxEnabled;
   }
-  std::vector<std::string> ComboBoxes_ViewModel::getMyOptionsWithFreeTextComboBoxEntries( ) 
+  std::vector<std::string> ComboBoxes_ViewModel::getMyOptionsWithFreeTextComboBoxEntries()
   {
     return this->MyOptionsWithFreeTextComboBoxEntries;
   }
-  std::string ComboBoxes_ViewModel::getMyOptionsWithFreeTextComboBoxSelectedEntry( ) 
+  std::string ComboBoxes_ViewModel::getMyOptionsWithFreeTextComboBoxSelectedEntry()
   {
     return this->MyOptionsWithFreeTextComboBoxSelectedEntry;
   }
-  std::string ComboBoxes_ViewModel::getMyOptionsWithFreeTextComboBoxText( ) 
+  std::string ComboBoxes_ViewModel::getMyOptionsWithFreeTextComboBoxText()
   {
     return this->MyOptionsWithFreeTextComboBoxText;
   }
-  bool ComboBoxes_ViewModel::getIsMyOptionsWithFreeTextComboBoxVisible( ) 
+  bool ComboBoxes_ViewModel::getIsMyOptionsWithFreeTextComboBoxVisible()
   {
     return this->isMyOptionsWithFreeTextComboBoxVisible;
   }
-  bool ComboBoxes_ViewModel::getIsMyOptionsWithFreeTextComboBoxEnabled( ) 
+  bool ComboBoxes_ViewModel::getIsMyOptionsWithFreeTextComboBoxEnabled()
   {
     return this->isMyOptionsWithFreeTextComboBoxEnabled;
   }
 }
-

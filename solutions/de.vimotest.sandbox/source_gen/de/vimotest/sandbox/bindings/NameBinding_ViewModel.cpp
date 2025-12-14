@@ -1,4 +1,3 @@
-
 #include "NameBinding_ViewModel.h"
 #include <vector>
 #include <memory>
@@ -7,25 +6,22 @@
 
 namespace bindings
 {
-  std::string NameBinding_ViewModel::getCustomText( ) 
+  std::string NameBinding_ViewModel::getCustomText()
   {
     return this->mText;
   }
-  bool NameBinding_ViewModel::getCustomEnabled( ) 
+  bool NameBinding_ViewModel::getCustomEnabled()
   {
     return this->mEnabled;
   }
-  std::vector<std::shared_ptr<MyCustomRow>> NameBinding_ViewModel::getRows( ) 
+  std::vector<std::shared_ptr<MyCustomRow>> NameBinding_ViewModel::getRows()
   {
     return this->rows;
   }
-  void NameBinding_ViewModel::loadView( ) 
+  void NameBinding_ViewModel::loadView()
   {
-    
   }
-  void NameBinding_ViewModel::OkClicked( ) 
+  void NameBinding_ViewModel::OkClicked()
   {
-    
   }
 }
-

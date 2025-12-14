@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <memory>
@@ -8,11 +7,10 @@ namespace widgetassertions
 {
   class TreeViews_ViewModelTestSetup
   {
-    public:
+  public:
     virtual ~TreeViews_ViewModelTestSetup() = default;
     virtual void Init() = 0;
     virtual void SetEmptyContext() = 0;
     virtual std::shared_ptr<TreeViews_ViewModel> BuildSut() = 0;
   };
 }
-

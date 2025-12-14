@@ -1,4 +1,3 @@
-
 #include "ListViews_ViewModel.h"
 #include <vector>
 #include <memory>
@@ -12,77 +11,75 @@
 
 namespace widgetassertions
 {
-  bool ListViews_ViewModel::getIsMyListOfLabelListVisible( ) 
+  bool ListViews_ViewModel::getIsMyListOfLabelListVisible()
   {
     return this->isMyListOfLabelListVisible;
   }
-  bool ListViews_ViewModel::getIsMyListOfLabelListEnabled( ) 
+  bool ListViews_ViewModel::getIsMyListOfLabelListEnabled()
   {
     return this->isMyListOfLabelListEnabled;
   }
-  std::vector<std::shared_ptr<ListViews_ViewModelMyListOfLabelRow>> ListViews_ViewModel::getMyListOfLabelListRows( ) 
+  std::vector<std::shared_ptr<ListViews_ViewModelMyListOfLabelRow>> ListViews_ViewModel::getMyListOfLabelListRows()
   {
     return this->MyListOfLabelListRows;
   }
-  int ListViews_ViewModel::getMyListOfLabelListSelectedRow( ) 
+  int ListViews_ViewModel::getMyListOfLabelListSelectedRow()
   {
     return this->MyListOfLabelListSelectedRow;
   }
-  bool ListViews_ViewModel::getIsMyListOfImagesListVisible( ) 
+  bool ListViews_ViewModel::getIsMyListOfImagesListVisible()
   {
     return this->isMyListOfImagesListVisible;
   }
-  bool ListViews_ViewModel::getIsMyListOfImagesListEnabled( ) 
+  bool ListViews_ViewModel::getIsMyListOfImagesListEnabled()
   {
     return this->isMyListOfImagesListEnabled;
   }
-  std::vector<std::shared_ptr<ListViews_ViewModelMyListOfImagesRow>> ListViews_ViewModel::getMyListOfImagesListRows( ) 
+  std::vector<std::shared_ptr<ListViews_ViewModelMyListOfImagesRow>> ListViews_ViewModel::getMyListOfImagesListRows()
   {
     return this->MyListOfImagesListRows;
   }
-  int ListViews_ViewModel::getMyListOfImagesListSelectedRow( ) 
+  int ListViews_ViewModel::getMyListOfImagesListSelectedRow()
   {
     return this->MyListOfImagesListSelectedRow;
   }
-  std::vector<std::shared_ptr<ListViews_ViewModelMyCheckboxesRow>> ListViews_ViewModel::getMyCheckboxesListRows( ) 
+  std::vector<std::shared_ptr<ListViews_ViewModelMyCheckboxesRow>> ListViews_ViewModel::getMyCheckboxesListRows()
   {
     return this->MyCheckboxesListRows;
   }
-  int ListViews_ViewModel::getMyCheckboxesListSelectedRow( ) 
+  int ListViews_ViewModel::getMyCheckboxesListSelectedRow()
   {
     return this->MyCheckboxesListSelectedRow;
   }
-  bool ListViews_ViewModel::getIsMyCheckboxesListVisible( ) 
+  bool ListViews_ViewModel::getIsMyCheckboxesListVisible()
   {
     return this->isMyCheckboxesListVisible;
   }
-  bool ListViews_ViewModel::getIsMyCheckboxesListEnabled( ) 
+  bool ListViews_ViewModel::getIsMyCheckboxesListEnabled()
   {
     return this->isMyCheckboxesListEnabled;
   }
-  std::vector<std::shared_ptr<ListViews_ViewModelMyStringRowHandlesRow>> ListViews_ViewModel::getMyStringRowHandlesListRows( ) 
+  std::vector<std::shared_ptr<ListViews_ViewModelMyStringRowHandlesRow>> ListViews_ViewModel::getMyStringRowHandlesListRows()
   {
     return this->MyStringRowHandlesListRows;
   }
-  std::string ListViews_ViewModel::getMyStringRowHandlesListSelectedRow( ) 
+  std::string ListViews_ViewModel::getMyStringRowHandlesListSelectedRow()
   {
     return this->MyStringRowHandlesListSelectedRow;
   }
-  std::vector<std::shared_ptr<ListViews_ViewModelMyListWithMultiRowSelectionRow>> ListViews_ViewModel::getMyListWithMultiRowSelectionListRows( ) 
+  std::vector<std::shared_ptr<ListViews_ViewModelMyListWithMultiRowSelectionRow>> ListViews_ViewModel::getMyListWithMultiRowSelectionListRows()
   {
     return this->MyListWithMultiRowSelectionListRows;
   }
-  std::vector<int> ListViews_ViewModel::getMyListWithMultiRowSelectionListSelectedRows( ) 
+  std::vector<int> ListViews_ViewModel::getMyListWithMultiRowSelectionListSelectedRows()
   {
     return this->MyListWithMultiRowSelectionListSelectedRows;
   }
-  std::vector<std::shared_ptr<ListViews_ViewModelMyButtonsRow>> ListViews_ViewModel::getMyButtonsListRows( ) 
+  std::vector<std::shared_ptr<ListViews_ViewModelMyButtonsRow>> ListViews_ViewModel::getMyButtonsListRows()
   {
     return this->MyButtonsListRows;
   }
-  void ListViews_ViewModel::buttonsClicked(int rowIndex ) 
+  void ListViews_ViewModel::buttonsClicked(int rowIndex)
   {
-    
   }
 }
-

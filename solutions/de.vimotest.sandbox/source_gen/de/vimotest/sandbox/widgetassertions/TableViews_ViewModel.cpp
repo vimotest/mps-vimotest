@@ -1,4 +1,3 @@
-
 #include "TableViews_ViewModel.h"
 #include <vector>
 #include <memory>
@@ -8,33 +7,32 @@
 
 namespace widgetassertions
 {
-  std::vector<std::shared_ptr<TableViews_ViewModelMyElementsRow>> TableViews_ViewModel::getMyElementsTableRows( ) 
+  std::vector<std::shared_ptr<TableViews_ViewModelMyElementsRow>> TableViews_ViewModel::getMyElementsTableRows()
   {
     return this->MyElementsTableRows;
   }
-  int TableViews_ViewModel::getMyElementsTableSelectedRow( ) 
+  int TableViews_ViewModel::getMyElementsTableSelectedRow()
   {
     return this->MyElementsTableSelectedRow;
   }
-  bool TableViews_ViewModel::getIsMyElementsTableVisible( ) 
+  bool TableViews_ViewModel::getIsMyElementsTableVisible()
   {
     return this->isMyElementsTableVisible;
   }
-  bool TableViews_ViewModel::getIsMyElementsTableEnabled( ) 
+  bool TableViews_ViewModel::getIsMyElementsTableEnabled()
   {
     return this->isMyElementsTableEnabled;
   }
-  bool TableViews_ViewModel::getIsMyElementsTableDescriptionColumnVisible( ) 
+  bool TableViews_ViewModel::getIsMyElementsTableDescriptionColumnVisible()
   {
     return this->isMyElementsTableDescriptionColumnVisible;
   }
-  std::vector<std::shared_ptr<TableViews_ViewModelMyStringRowHandlesRow>> TableViews_ViewModel::getMyStringRowHandlesTableRows( ) 
+  std::vector<std::shared_ptr<TableViews_ViewModelMyStringRowHandlesRow>> TableViews_ViewModel::getMyStringRowHandlesTableRows()
   {
     return this->MyStringRowHandlesTableRows;
   }
-  std::string TableViews_ViewModel::getMyStringRowHandlesTableSelectedRow( ) 
+  std::string TableViews_ViewModel::getMyStringRowHandlesTableSelectedRow()
   {
     return this->MyStringRowHandlesTableSelectedRow;
   }
 }
-

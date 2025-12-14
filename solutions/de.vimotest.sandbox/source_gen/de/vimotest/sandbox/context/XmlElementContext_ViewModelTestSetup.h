@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <memory>
@@ -9,11 +8,10 @@ namespace context
 {
   class XmlElementContext_ViewModelTestSetup
   {
-    public:
+  public:
     virtual ~XmlElementContext_ViewModelTestSetup() = default;
     virtual void Init() = 0;
     virtual void SetXmlElementContext(std::string xml) = 0;
     virtual std::shared_ptr<XmlElementContext_ViewModel> BuildSut() = 0;
   };
 }
-

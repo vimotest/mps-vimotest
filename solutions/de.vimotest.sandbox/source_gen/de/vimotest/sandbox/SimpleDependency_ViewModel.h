@@ -1,10 +1,7 @@
-
 #pragma once
-
-
 
 class SimpleDependency_ViewModel
 {
-  public:
-  virtual void loadView() ;
+public:
+  virtual void loadView();
 };

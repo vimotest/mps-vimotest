@@ -5,11 +5,10 @@ using commands;
 
 namespace commands
 {
-    internal   abstract class RowBasedCommand_ViewModelTestSetup
-  {
-        public     abstract void Init();
-     
-        public     abstract commands.RowBasedCommand_ViewModel BuildSut();
-  }
-}
+    internal abstract class RowBasedCommand_ViewModelTestSetup
+    {
+        public abstract void Init();
 
+        public abstract commands.RowBasedCommand_ViewModel BuildSut();
+    }
+}

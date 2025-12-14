@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include "XmlElementContext_ViewModelTestSetup.h"
@@ -10,10 +9,9 @@ namespace context
 {
   class XmlElementContext_ViewModelTestSetupImpl : public XmlElementContext_ViewModelTestSetup
   {
-    public:
-    void Init() override ;
-    void SetXmlElementContext(std::string xml) override ;
-    std::shared_ptr<XmlElementContext_ViewModel> BuildSut() override ;
+  public:
+    void Init() override;
+    void SetXmlElementContext(std::string xml) override;
+    std::shared_ptr<XmlElementContext_ViewModel> BuildSut() override;
   };
 }
-

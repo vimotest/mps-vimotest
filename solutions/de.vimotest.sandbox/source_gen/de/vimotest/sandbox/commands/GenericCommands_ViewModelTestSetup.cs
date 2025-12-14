@@ -5,11 +5,10 @@ using commands;
 
 namespace commands
 {
-    internal   abstract class GenericCommands_ViewModelTestSetup
-  {
-        public     abstract void Init();
-     
-        public     abstract commands.GenericCommands_ViewModel BuildSut();
-  }
-}
+    internal abstract class GenericCommands_ViewModelTestSetup
+    {
+        public abstract void Init();
 
+        public abstract commands.GenericCommands_ViewModel BuildSut();
+    }
+}

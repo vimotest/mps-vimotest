@@ -1,4 +1,3 @@
-
 #include <gtest/gtest.h>
 #include <string>
 #include <memory>
@@ -11,32 +10,31 @@ namespace context
 {
   class StringContext2_ViewTests : public testing::Test
   {
-    public:
+  public:
     std::shared_ptr<StringContext_ViewModel> sut;
     std::shared_ptr<StringContext_ViewModelTestSetup> testSetup;
-    virtual void BuildSut() ;
+    virtual void BuildSut();
     std::string alice_bob_charlie = std::string("Alice, Bob, Charlie");
-    virtual void given_alice_bob_charlie() ;
-    protected:
-    void SetUp() override ;
+    virtual void given_alice_bob_charlie();
+  protected:
+    void SetUp() override;
   };
-  void StringContext2_ViewTests::SetUp( ) 
+  void StringContext2_ViewTests::SetUp()
   {
     this->testSetup = std::make_shared<StringContext_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
-  TEST_F(StringContext2_ViewTests,  SimpleStringContext2_given_alice_bob_charlie_when_then_) 
+  TEST_F(StringContext2_ViewTests, SimpleStringContext2_given_alice_bob_charlie_when_then_)
   {
     this->given_alice_bob_charlie();
     this->BuildSut();
   }
-  void StringContext2_ViewTests::BuildSut( ) 
+  void StringContext2_ViewTests::BuildSut()
   {
     this->sut = this->testSetup->BuildSut();
   }
-  void StringContext2_ViewTests::given_alice_bob_charlie( ) 
+  void StringContext2_ViewTests::given_alice_bob_charlie()
   {
     this->testSetup->SetSimpleStringContext(this->alice_bob_charlie);
   }
 }
-

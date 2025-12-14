@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <memory>
@@ -9,11 +8,10 @@ namespace context
 {
   class ContextReference_ViewModelTestSetup
   {
-    public:
+  public:
     virtual ~ContextReference_ViewModelTestSetup() = default;
     virtual void Init() = 0;
     virtual void SetSimpleStringContext(std::string stringValue) = 0;
     virtual std::shared_ptr<ContextReference_ViewModel> BuildSut() = 0;
   };
 }
-

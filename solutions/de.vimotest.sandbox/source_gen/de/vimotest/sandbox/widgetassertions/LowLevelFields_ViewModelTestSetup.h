@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <memory>
@@ -8,10 +7,9 @@ namespace widgetassertions
 {
   class LowLevelFields_ViewModelTestSetup
   {
-    public:
+  public:
     virtual ~LowLevelFields_ViewModelTestSetup() = default;
     virtual void Init() = 0;
     virtual std::shared_ptr<LowLevelFields_ViewModel> BuildSut() = 0;
   };
 }
-

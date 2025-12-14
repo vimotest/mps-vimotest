@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <memory>
@@ -7,7 +6,7 @@
 
 class SeparateViewModelController_ViewModelTestSetup
 {
-  public:
+public:
   virtual ~SeparateViewModelController_ViewModelTestSetup() = default;
   virtual void Init() = 0;
   virtual void SetEmptyContext() = 0;

@@ -1,7 +1,4 @@
-
 #pragma once
-
-
 
 namespace commands
 {
@@ -11,4 +8,3 @@ namespace commands
     B /* no value */
   };
 }
-

@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <vector>
@@ -8,13 +7,13 @@
 
 class CapitalizedGetterNames_ViewModel
 {
-  public:
-  virtual bool GetIsMyFlagCheckBoxChecked() ;
-  virtual bool GetMyVisibility() ;
-  virtual bool GetIsMyFlagCheckBoxEnabled() ;
-  virtual std::string GetMyFlagCheckBoxText() ;
-  virtual std::vector<std::shared_ptr<CapitalizedGetterNames_ViewModelMyElementsRow>> GetMyRows() ;
-  private:
+public:
+  virtual bool GetIsMyFlagCheckBoxChecked();
+  virtual bool GetMyVisibility();
+  virtual bool GetIsMyFlagCheckBoxEnabled();
+  virtual std::string GetMyFlagCheckBoxText();
+  virtual std::vector<std::shared_ptr<CapitalizedGetterNames_ViewModelMyElementsRow>> GetMyRows();
+private:
   bool isMyFlagCheckBoxChecked;
   bool myVisibility;
   bool isMyFlagCheckBoxEnabled;

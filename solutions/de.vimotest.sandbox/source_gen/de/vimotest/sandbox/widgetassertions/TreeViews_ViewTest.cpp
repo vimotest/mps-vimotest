@@ -1,4 +1,3 @@
-
 #include <gtest/gtest.h>
 #include <memory>
 #include "TreeViews_ViewModelTestSetup.h"
@@ -15,25 +14,25 @@ namespace widgetassertions
 {
   class TreeViews_ViewTest : public testing::Test
   {
-    public:
+  public:
     std::shared_ptr<TreeViews_ViewModel> sut;
     std::shared_ptr<TreeViews_ViewModelTestSetup> testSetup;
-    virtual void BuildSut() ;
-    virtual void given_empty_context() ;
-    virtual void then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible() ;
-    virtual void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() ;
-    virtual void then_MyParentIndexRowHandles_has_4_rows() ;
-    virtual void then_MyParentStringRowHandles_has_4_rows() ;
-    virtual void then_MyTreeViewElements_has_2_rows() ;
-    protected:
-    void SetUp() override ;
+    virtual void BuildSut();
+    virtual void given_empty_context();
+    virtual void then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible();
+    virtual void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1();
+    virtual void then_MyParentIndexRowHandles_has_4_rows();
+    virtual void then_MyParentStringRowHandles_has_4_rows();
+    virtual void then_MyTreeViewElements_has_2_rows();
+  protected:
+    void SetUp() override;
   };
-  void TreeViews_ViewTest::SetUp( ) 
+  void TreeViews_ViewTest::SetUp()
   {
     this->testSetup = std::make_shared<TreeViews_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
-  TEST_F(TreeViews_ViewTest,  My_Scenario_given_empty_context_when_then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1_and_MyParentIndexRowHandles_has_4_rows_and_MyParentStringRowHandles_has_4_rows) 
+  TEST_F(TreeViews_ViewTest, My_Scenario_given_empty_context_when_then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1_and_MyParentIndexRowHandles_has_4_rows_and_MyParentStringRowHandles_has_4_rows)
   {
     this->given_empty_context();
     this->BuildSut();
@@ -42,21 +41,20 @@ namespace widgetassertions
     this->then_MyParentIndexRowHandles_has_4_rows();
     this->then_MyParentStringRowHandles_has_4_rows();
   }
-  TEST_F(TreeViews_ViewTest,  TreeView_Ignore_Column_given_empty_context_when_then_MyTreeViewElements_has_2_rows) 
+  TEST_F(TreeViews_ViewTest, TreeView_Ignore_Column_given_empty_context_when_then_MyTreeViewElements_has_2_rows)
   {
     this->given_empty_context();
     this->BuildSut();
     this->then_MyTreeViewElements_has_2_rows();
   }
-  void TreeViews_ViewTest::BuildSut( ) 
+  void TreeViews_ViewTest::BuildSut()
   {
     this->sut = this->testSetup->BuildSut();
   }
-  void TreeViews_ViewTest::given_empty_context( ) 
+  void TreeViews_ViewTest::given_empty_context()
   {
-    
   }
-  void TreeViews_ViewTest::then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible( ) 
+  void TreeViews_ViewTest::then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible()
   {
     auto& actualRows = this->sut->getMyTreeViewElementsTreeRows();
     EXPECT_EQ(2, actualRows.size());
@@ -83,7 +81,7 @@ namespace widgetassertions
     EXPECT_TRUE(this->sut->getIsMyTreeViewElementsTreeVisible());
     EXPECT_FALSE(this->sut->getIsMyTreeViewElementsTreeDescriptionColumnVisible());
   }
-  void TreeViews_ViewTest::then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1( ) 
+  void TreeViews_ViewTest::then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1()
   {
     auto& actualRows = this->sut->getMyStringRowHandlesTreeRows();
     EXPECT_EQ(2, actualRows.size());
@@ -101,7 +99,7 @@ namespace widgetassertions
     // }
     EXPECT_EQ(std::string("ROW1"), this->sut->getMyStringRowHandlesTreeSelectedRow());
   }
-  void TreeViews_ViewTest::then_MyParentIndexRowHandles_has_4_rows( ) 
+  void TreeViews_ViewTest::then_MyParentIndexRowHandles_has_4_rows()
   {
     auto& actualRows = this->sut->getMyParentIndexRowHandlesTreeRows();
     EXPECT_EQ(4, actualRows.size());
@@ -130,7 +128,7 @@ namespace widgetassertions
     EXPECT_EQ(std::string("C.D"), row3->getValuesLabelText());
     // }
   }
-  void TreeViews_ViewTest::then_MyParentStringRowHandles_has_4_rows( ) 
+  void TreeViews_ViewTest::then_MyParentStringRowHandles_has_4_rows()
   {
     auto& actualRows = this->sut->getMyParentStringRowHandlesTreeRows();
     EXPECT_EQ(4, actualRows.size());
@@ -159,7 +157,7 @@ namespace widgetassertions
     EXPECT_EQ(std::string("C.D"), row3->getValuesLabelText());
     // }
   }
-  void TreeViews_ViewTest::then_MyTreeViewElements_has_2_rows( ) 
+  void TreeViews_ViewTest::then_MyTreeViewElements_has_2_rows()
   {
     auto& actualRows = this->sut->getMyTreeViewElementsTreeRows();
     EXPECT_EQ(2, actualRows.size());
@@ -177,4 +175,3 @@ namespace widgetassertions
     // }
   }
 }
-

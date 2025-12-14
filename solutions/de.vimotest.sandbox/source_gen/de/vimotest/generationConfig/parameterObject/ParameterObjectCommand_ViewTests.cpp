@@ -1,4 +1,3 @@
-
 #include <gtest/gtest.h>
 #include <memory>
 #include "ParameterObjectCommand_ViewModelTestSetup.h"
@@ -8,24 +7,24 @@
 
 class ParameterObjectCommand_ViewTests : public testing::Test
 {
-  public:
+public:
   std::shared_ptr<ParameterObjectCommand_ViewModel> sut;
   std::shared_ptr<ParameterObjectCommand_ViewModelTestSetup> testSetup;
-  virtual void BuildSut() ;
-  virtual void given_empty_context() ;
-  virtual void when_LoadView() ;
-  virtual void when_uncheck_MyFlag() ;
-  protected:
-  void SetUp() override ;
+  virtual void BuildSut();
+  virtual void given_empty_context();
+  virtual void when_LoadView();
+  virtual void when_uncheck_MyFlag();
+protected:
+  void SetUp() override;
 };
 
-void ParameterObjectCommand_ViewTests::SetUp( ) 
+void ParameterObjectCommand_ViewTests::SetUp()
 {
   this->testSetup = std::make_shared<ParameterObjectCommand_ViewModelTestSetupImpl>();
   this->testSetup->Init();
 }
 
-TEST_F(ParameterObjectCommand_ViewTests,  MyTest_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_) 
+TEST_F(ParameterObjectCommand_ViewTests, MyTest_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_)
 {
   this->given_empty_context();
   this->BuildSut();
@@ -33,23 +32,22 @@ TEST_F(ParameterObjectCommand_ViewTests,  MyTest_given_empty_context_when_LoadVi
   this->when_uncheck_MyFlag();
 }
 
-void ParameterObjectCommand_ViewTests::BuildSut( ) 
+void ParameterObjectCommand_ViewTests::BuildSut()
 {
   this->sut = this->testSetup->BuildSut();
 }
 
-void ParameterObjectCommand_ViewTests::given_empty_context( ) 
+void ParameterObjectCommand_ViewTests::given_empty_context()
 {
-  
 }
 
-void ParameterObjectCommand_ViewTests::when_LoadView( ) 
+void ParameterObjectCommand_ViewTests::when_LoadView()
 {
   ParameterObjectCommand_ViewModel::LoadViewParams loadViewParameters = { std::string("A"), true, 42 };
   this->sut->loadView(loadViewParameters);
 }
 
-void ParameterObjectCommand_ViewTests::when_uncheck_MyFlag( ) 
+void ParameterObjectCommand_ViewTests::when_uncheck_MyFlag()
 {
   ParameterObjectCommand_ViewModel::CheckParams checkedParameters = { false };
   this->sut->myFlagChecked(checkedParameters);

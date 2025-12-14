@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <memory>
@@ -8,11 +7,10 @@ namespace widgetassertions
 {
   class CheckBoxes_ViewModelTestSetup
   {
-    public:
+  public:
     virtual ~CheckBoxes_ViewModelTestSetup() = default;
     virtual void Init() = 0;
     virtual void SetEmptyContext() = 0;
     virtual std::shared_ptr<CheckBoxes_ViewModel> BuildSut() = 0;
   };
 }
-

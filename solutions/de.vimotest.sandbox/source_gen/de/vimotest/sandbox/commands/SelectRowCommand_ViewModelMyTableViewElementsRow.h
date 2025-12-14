@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <string>
@@ -7,12 +6,11 @@ namespace commands
 {
   class SelectRowCommand_ViewModelMyTableViewElementsRow
   {
-    public:
-    virtual std::string getColumnCellLabelText() ;
-    virtual int getRowIndex() ;
-    private:
+  public:
+    virtual std::string getColumnCellLabelText();
+    virtual int getRowIndex();
+  private:
     std::string columnCellLabelText;
     int RowIndex;
   };
 }
-

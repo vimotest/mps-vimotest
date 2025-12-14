@@ -2,7 +2,7 @@
 <model ref="r:a69c3e38-bfb5-459b-b2a8-7dda15b5048d(de.vimotest.generationConfig.capitalizedGetterSetterNames)">
   <persistence version="9" />
   <languages>
-    <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="1" />
+    <devkit ref="1511a6f0-18cf-4e0d-a302-d49c56209130(de.vimotest.all.devkit)" />
   </languages>
   <imports />
   <registry>

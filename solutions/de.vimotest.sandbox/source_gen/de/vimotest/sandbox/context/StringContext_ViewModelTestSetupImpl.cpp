@@ -1,4 +1,3 @@
-
 #include "StringContext_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "StringContext_ViewModel.h"
@@ -6,17 +5,14 @@
 
 namespace context
 {
-  void StringContext_ViewModelTestSetupImpl::Init( ) 
+  void StringContext_ViewModelTestSetupImpl::Init()
   {
-    
   }
-  void StringContext_ViewModelTestSetupImpl::SetSimpleStringContext(std::string stringValue ) 
+  void StringContext_ViewModelTestSetupImpl::SetSimpleStringContext(std::string stringValue)
   {
-    
   }
-  std::shared_ptr<StringContext_ViewModel> StringContext_ViewModelTestSetupImpl::BuildSut( ) 
+  std::shared_ptr<StringContext_ViewModel> StringContext_ViewModelTestSetupImpl::BuildSut()
   {
     return nullptr;
   }
 }
-

@@ -1,4 +1,3 @@
-
 #include "SelectEntryCommand_ViewModel.h"
 #include <vector>
 #include "SelectEntryCommand_ViewModelMyOptionsOption.h"
@@ -6,25 +5,22 @@
 
 namespace commands
 {
-  std::vector<std::string> SelectEntryCommand_ViewModel::getMyElementsComboBoxEntries( ) 
+  std::vector<std::string> SelectEntryCommand_ViewModel::getMyElementsComboBoxEntries()
   {
     return this->MyElementsComboBoxEntries;
   }
-  std::string SelectEntryCommand_ViewModel::getMyElementsComboBoxSelectedEntry( ) 
+  std::string SelectEntryCommand_ViewModel::getMyElementsComboBoxSelectedEntry()
   {
     return this->MyElementsComboBoxSelectedEntry;
   }
-  SelectEntryCommand_ViewModelMyOptionsOption SelectEntryCommand_ViewModel::getMyOptionsRadioButtonGroupSelectedEntry( ) 
+  SelectEntryCommand_ViewModelMyOptionsOption SelectEntryCommand_ViewModel::getMyOptionsRadioButtonGroupSelectedEntry()
   {
     return this->MyOptionsRadioButtonGroupSelectedEntry;
   }
-  void SelectEntryCommand_ViewModel::myElementsEntrySelected(std::string entryName ) 
+  void SelectEntryCommand_ViewModel::myElementsEntrySelected(std::string entryName)
   {
-    
   }
-  void SelectEntryCommand_ViewModel::myOptionsEntrySelected(SelectEntryCommand_ViewModelMyOptionsOption entryName ) 
+  void SelectEntryCommand_ViewModel::myOptionsEntrySelected(SelectEntryCommand_ViewModelMyOptionsOption entryName)
   {
-    
   }
 }
-

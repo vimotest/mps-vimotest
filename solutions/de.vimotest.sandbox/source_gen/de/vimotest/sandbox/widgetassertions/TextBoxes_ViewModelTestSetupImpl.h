@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include "TextBoxes_ViewModelTestSetup.h"
@@ -9,10 +8,9 @@ namespace widgetassertions
 {
   class TextBoxes_ViewModelTestSetupImpl : public TextBoxes_ViewModelTestSetup
   {
-    public:
-    void Init() override ;
-    void SetEmptyContext() override ;
-    std::shared_ptr<TextBoxes_ViewModel> BuildSut() override ;
+  public:
+    void Init() override;
+    void SetEmptyContext() override;
+    std::shared_ptr<TextBoxes_ViewModel> BuildSut() override;
   };
 }
-

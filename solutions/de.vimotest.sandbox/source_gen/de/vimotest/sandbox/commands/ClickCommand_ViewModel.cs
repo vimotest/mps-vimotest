@@ -1,16 +1,12 @@
 /// <filename>
 ///     ClickCommand_ViewModel.cs
 /// </filename>
-
-
 namespace commands
 {
     public class ClickCommand_ViewModel
-  {
-        public     virtual void okClicked()
     {
-      
+        public virtual void okClicked()
+        {
+        }
     }
-  }
 }
-

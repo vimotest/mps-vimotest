@@ -1,4 +1,3 @@
-
 #include "DataPathContext_ViewModelTestSetupImpl.h"
 #include <memory>
 #include "DataPathContext_ViewModel.h"
@@ -6,17 +5,14 @@
 
 namespace context
 {
-  void DataPathContext_ViewModelTestSetupImpl::Init( ) 
+  void DataPathContext_ViewModelTestSetupImpl::Init()
   {
-    
   }
-  void DataPathContext_ViewModelTestSetupImpl::SetDataPathContext(std::string contextPath ) 
+  void DataPathContext_ViewModelTestSetupImpl::SetDataPathContext(std::string contextPath)
   {
-    
   }
-  std::shared_ptr<DataPathContext_ViewModel> DataPathContext_ViewModelTestSetupImpl::BuildSut( ) 
+  std::shared_ptr<DataPathContext_ViewModel> DataPathContext_ViewModelTestSetupImpl::BuildSut()
   {
     return nullptr;
   }
 }
-

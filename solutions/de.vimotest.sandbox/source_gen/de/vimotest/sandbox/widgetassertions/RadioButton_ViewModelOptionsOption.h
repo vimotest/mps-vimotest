@@ -1,7 +1,4 @@
-
 #pragma once
-
-
 
 namespace widgetassertions
 {
@@ -12,4 +9,3 @@ namespace widgetassertions
     OptionC /* no value */
   };
 }
-

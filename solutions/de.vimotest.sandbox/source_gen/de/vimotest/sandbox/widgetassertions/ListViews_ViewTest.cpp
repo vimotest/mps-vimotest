@@ -1,4 +1,3 @@
-
 #include <gtest/gtest.h>
 #include <memory>
 #include "ListViews_ViewModelTestSetup.h"
@@ -16,28 +15,28 @@ namespace widgetassertions
 {
   class ListViews_ViewTest : public testing::Test
   {
-    public:
+  public:
     std::shared_ptr<ListViews_ViewModel> sut;
     std::shared_ptr<ListViews_ViewModelTestSetup> testSetup;
-    virtual void BuildSut() ;
-    virtual void given_empty_context() ;
-    virtual void then_MyListOfLabel_has_4_rows_and_selected_row_index_3() ;
-    virtual void then_MyListOfImages_has_2_rows() ;
-    virtual void then_MyCheckboxes_has_3_rows() ;
-    virtual void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() ;
-    virtual void then_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_() ;
-    virtual void then_MyListOfLabel_has_4_rows() ;
-    virtual void then_MyListOfLabel_has_4_rows_1() ;
-    virtual void then_MyButtons_has_0_rows() ;
-    protected:
-    void SetUp() override ;
+    virtual void BuildSut();
+    virtual void given_empty_context();
+    virtual void then_MyListOfLabel_has_4_rows_and_selected_row_index_3();
+    virtual void then_MyListOfImages_has_2_rows();
+    virtual void then_MyCheckboxes_has_3_rows();
+    virtual void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1();
+    virtual void then_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_();
+    virtual void then_MyListOfLabel_has_4_rows();
+    virtual void then_MyListOfLabel_has_4_rows_1();
+    virtual void then_MyButtons_has_0_rows();
+  protected:
+    void SetUp() override;
   };
-  void ListViews_ViewTest::SetUp( ) 
+  void ListViews_ViewTest::SetUp()
   {
     this->testSetup = std::make_shared<ListViews_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
-  TEST_F(ListViews_ViewTest,  My_Scenario_given_empty_context_when_then_MyListOfLabel_has_4_rows_and_selected_row_index_3_and_MyListOfImages_has_2_rows_and_MyCheckboxes_has_3_rows_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1_and_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_) 
+  TEST_F(ListViews_ViewTest, My_Scenario_given_empty_context_when_then_MyListOfLabel_has_4_rows_and_selected_row_index_3_and_MyListOfImages_has_2_rows_and_MyCheckboxes_has_3_rows_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1_and_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_)
   {
     this->given_empty_context();
     this->BuildSut();
@@ -47,32 +46,31 @@ namespace widgetassertions
     this->then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1();
     this->then_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_();
   }
-  TEST_F(ListViews_ViewTest,  List_Ignore_Column_given_empty_context_when_then_MyListOfLabel_has_4_rows) 
+  TEST_F(ListViews_ViewTest, List_Ignore_Column_given_empty_context_when_then_MyListOfLabel_has_4_rows)
   {
     this->given_empty_context();
     this->BuildSut();
     this->then_MyListOfLabel_has_4_rows();
   }
-  TEST_F(ListViews_ViewTest,  List_Ignore_Cell_given_empty_context_when_then_MyListOfLabel_has_4_rows) 
+  TEST_F(ListViews_ViewTest, List_Ignore_Cell_given_empty_context_when_then_MyListOfLabel_has_4_rows)
   {
     this->given_empty_context();
     this->BuildSut();
     this->then_MyListOfLabel_has_4_rows_1();
   }
-  TEST_F(ListViews_ViewTest,  List_of_Buttons_given_when_then_MyButtons_has_0_rows) 
+  TEST_F(ListViews_ViewTest, List_of_Buttons_given_when_then_MyButtons_has_0_rows)
   {
     this->BuildSut();
     this->then_MyButtons_has_0_rows();
   }
-  void ListViews_ViewTest::BuildSut( ) 
+  void ListViews_ViewTest::BuildSut()
   {
     this->sut = this->testSetup->BuildSut();
   }
-  void ListViews_ViewTest::given_empty_context( ) 
+  void ListViews_ViewTest::given_empty_context()
   {
-    
   }
-  void ListViews_ViewTest::then_MyListOfLabel_has_4_rows_and_selected_row_index_3( ) 
+  void ListViews_ViewTest::then_MyListOfLabel_has_4_rows_and_selected_row_index_3()
   {
     auto& actualRows = this->sut->getMyListOfLabelListRows();
     EXPECT_EQ(4, actualRows.size());
@@ -103,7 +101,7 @@ namespace widgetassertions
     // }
     EXPECT_EQ(3, this->sut->getMyListOfLabelListSelectedRow());
   }
-  void ListViews_ViewTest::then_MyListOfImages_has_2_rows( ) 
+  void ListViews_ViewTest::then_MyListOfImages_has_2_rows()
   {
     auto& actualRows = this->sut->getMyListOfImagesListRows();
     EXPECT_EQ(2, actualRows.size());
@@ -118,7 +116,7 @@ namespace widgetassertions
     EXPECT_EQ(std::string("image_circle"), row1->getMyInfoImageName());
     // }
   }
-  void ListViews_ViewTest::then_MyCheckboxes_has_3_rows( ) 
+  void ListViews_ViewTest::then_MyCheckboxes_has_3_rows()
   {
     auto& actualRows = this->sut->getMyCheckboxesListRows();
     EXPECT_EQ(3, actualRows.size());
@@ -139,7 +137,7 @@ namespace widgetassertions
     EXPECT_EQ(std::string("My Label"), row2->getHeaderCheckBoxText());
     // }
   }
-  void ListViews_ViewTest::then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1( ) 
+  void ListViews_ViewTest::then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1()
   {
     auto& actualRows = this->sut->getMyStringRowHandlesListRows();
     EXPECT_EQ(2, actualRows.size());
@@ -155,7 +153,7 @@ namespace widgetassertions
     // }
     EXPECT_EQ(std::string("ROW1"), this->sut->getMyStringRowHandlesListSelectedRow());
   }
-  void ListViews_ViewTest::then_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_( ) 
+  void ListViews_ViewTest::then_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_()
   {
     auto& actualRows = this->sut->getMyListWithMultiRowSelectionListRows();
     EXPECT_EQ(3, actualRows.size());
@@ -179,7 +177,7 @@ namespace widgetassertions
     EXPECT_EQ(0, actualMyListWithMultiRowSelectionSelectedRowHandles.at(0));
     EXPECT_EQ(2, actualMyListWithMultiRowSelectionSelectedRowHandles.at(1));
   }
-  void ListViews_ViewTest::then_MyListOfLabel_has_4_rows( ) 
+  void ListViews_ViewTest::then_MyListOfLabel_has_4_rows()
   {
     auto& actualRows = this->sut->getMyListOfLabelListRows();
     EXPECT_EQ(4, actualRows.size());
@@ -200,7 +198,7 @@ namespace widgetassertions
     EXPECT_EQ(3, row3->getRowIndex());
     // }
   }
-  void ListViews_ViewTest::then_MyListOfLabel_has_4_rows_1( ) 
+  void ListViews_ViewTest::then_MyListOfLabel_has_4_rows_1()
   {
     auto& actualRows = this->sut->getMyListOfLabelListRows();
     EXPECT_EQ(4, actualRows.size());
@@ -225,10 +223,9 @@ namespace widgetassertions
     EXPECT_TRUE(row3->getIsMyValueLabelVisible());
     // }
   }
-  void ListViews_ViewTest::then_MyButtons_has_0_rows( ) 
+  void ListViews_ViewTest::then_MyButtons_has_0_rows()
   {
     auto& actualRows = this->sut->getMyButtonsListRows();
     EXPECT_EQ(0, actualRows.size());
   }
 }
-

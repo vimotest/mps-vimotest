@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="de.vimotest.all.devkit" uuid="1511a6f0-18cf-4e0d-a302-d49c56209130">
+  <extendedDevKits>
+    <extendedDevKit>3480a401-485a-4fe3-84d3-7880843682ac(alfi.all.devkit)</extendedDevKit>
+    <extendedDevKit>d1a914ef-09af-4c66-a6d1-618e1f9114ea(de.vimotest.core.devkit)</extendedDevKit>
+  </extendedDevKits>
+  <generation-plan model="r:1824e859-c1f6-46d5-8ab9-c61fd55c97bb(de.vimotest.genplan.main@genplan)" />
+</dev-kit>
+

@@ -1,32 +1,29 @@
 /// <filename>
 ///     TreeViews_ViewModelMyParentStringRowHandlesRow.cs
 /// </filename>
-
-
 namespace widgetassertions
 {
     public class TreeViews_ViewModelMyParentStringRowHandlesRow
-  {
+    {
         private string ValuesLabelText;
-     
-        public     virtual string getValuesLabelText()
-    {
-      return this.ValuesLabelText;
-    }
-     
-        private string RowHandle;
-     
-        public     virtual string getRowHandle()
-    {
-      return this.RowHandle;
-    }
-     
-        private string ParentRowHandle;
-     
-        public     virtual string getParentRowHandle()
-    {
-      return this.ParentRowHandle;
-    }
-  }
-}
 
+        public virtual string getValuesLabelText()
+        {
+            return this.ValuesLabelText;
+        }
+
+        private string RowHandle;
+
+        public virtual string getRowHandle()
+        {
+            return this.RowHandle;
+        }
+
+        private string ParentRowHandle;
+
+        public virtual string getParentRowHandle()
+        {
+            return this.ParentRowHandle;
+        }
+    }
+}

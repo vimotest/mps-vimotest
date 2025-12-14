@@ -1,7 +1,6 @@
-
 #include "MyViewModel.h"
 
-bool MyViewModel::getIsMyFlagCheckBoxChecked( ) 
+bool MyViewModel::getIsMyFlagCheckBoxChecked()
 {
   return this->isMyFlagCheckBoxChecked;
 }

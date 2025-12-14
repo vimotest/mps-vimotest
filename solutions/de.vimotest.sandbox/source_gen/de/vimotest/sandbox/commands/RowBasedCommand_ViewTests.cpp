@@ -1,4 +1,3 @@
-
 #include <gtest/gtest.h>
 #include <memory>
 #include "RowBasedCommand_ViewModelTestSetup.h"
@@ -15,38 +14,38 @@ namespace commands
 {
   class RowBasedCommand_ViewTests : public testing::Test
   {
-    public:
+  public:
     std::shared_ptr<RowBasedCommand_ViewModel> sut;
     std::shared_ptr<RowBasedCommand_ViewModelTestSetup> testSetup;
-    virtual void BuildSut() ;
-    virtual void when_check_Checkboxes_at_0() ;
-    virtual void when_uncheck_Checkboxes_at_1() ;
-    virtual void when_select_entry_MyText1_in_FreeTextComboBoxes_at_0() ;
-    virtual void when_select_entry_MyText2_in_FreeTextComboBoxes_at_1() ;
-    virtual void when_select_entry_B_in_EntryComboBoxes_at_0() ;
-    virtual void when_select_entry_D_in_EntryComboBoxes_at_1() ;
-    virtual void when_fill_A_in_TextBoxes_at_0() ;
-    virtual void when_fill_B_in_TextBoxes_at_1() ;
-    virtual void when_click_Buttons_at_0() ;
-    virtual void then_MyFlags_has_2_rows() ;
-    virtual void then_MyComboBoxes_has_2_rows() ;
-    virtual void then_MyStandardControls_has_2_rows() ;
-    protected:
-    void SetUp() override ;
+    virtual void BuildSut();
+    virtual void when_check_Checkboxes_at_0();
+    virtual void when_uncheck_Checkboxes_at_1();
+    virtual void when_select_entry_MyText1_in_FreeTextComboBoxes_at_0();
+    virtual void when_select_entry_MyText2_in_FreeTextComboBoxes_at_1();
+    virtual void when_select_entry_B_in_EntryComboBoxes_at_0();
+    virtual void when_select_entry_D_in_EntryComboBoxes_at_1();
+    virtual void when_fill_A_in_TextBoxes_at_0();
+    virtual void when_fill_B_in_TextBoxes_at_1();
+    virtual void when_click_Buttons_at_0();
+    virtual void then_MyFlags_has_2_rows();
+    virtual void then_MyComboBoxes_has_2_rows();
+    virtual void then_MyStandardControls_has_2_rows();
+  protected:
+    void SetUp() override;
   };
-  void RowBasedCommand_ViewTests::SetUp( ) 
+  void RowBasedCommand_ViewTests::SetUp()
   {
     this->testSetup = std::make_shared<RowBasedCommand_ViewModelTestSetupImpl>();
     this->testSetup->Init();
   }
-  TEST_F(RowBasedCommand_ViewTests,  ListView_RowBased_Commands_given_when_check_Checkboxes_at_0_and_uncheck_Checkboxes_at_1_then_MyFlags_has_2_rows) 
+  TEST_F(RowBasedCommand_ViewTests, ListView_RowBased_Commands_given_when_check_Checkboxes_at_0_and_uncheck_Checkboxes_at_1_then_MyFlags_has_2_rows)
   {
     this->BuildSut();
     this->when_check_Checkboxes_at_0();
     this->when_uncheck_Checkboxes_at_1();
     this->then_MyFlags_has_2_rows();
   }
-  TEST_F(RowBasedCommand_ViewTests,  TableView_RowBased_Commands_given_when_select_entry_MyText1_in_FreeTextComboBoxes_at_0_and_select_entry_MyText2_in_FreeTextComboBoxes_at_1_and_select_entry_B_in_EntryComboBoxes_at_0_and_select_entry_D_in_EntryComboBoxes_at_1_then_MyComboBoxes_has_2_rows) 
+  TEST_F(RowBasedCommand_ViewTests, TableView_RowBased_Commands_given_when_select_entry_MyText1_in_FreeTextComboBoxes_at_0_and_select_entry_MyText2_in_FreeTextComboBoxes_at_1_and_select_entry_B_in_EntryComboBoxes_at_0_and_select_entry_D_in_EntryComboBoxes_at_1_then_MyComboBoxes_has_2_rows)
   {
     this->BuildSut();
     this->when_select_entry_MyText1_in_FreeTextComboBoxes_at_0();
@@ -55,7 +54,7 @@ namespace commands
     this->when_select_entry_D_in_EntryComboBoxes_at_1();
     this->then_MyComboBoxes_has_2_rows();
   }
-  TEST_F(RowBasedCommand_ViewTests,  TreeView_RowBased_Commands_given_when_fill_A_in_TextBoxes_at_0_and_fill_B_in_TextBoxes_at_1_and_click_Buttons_at_0_then_MyStandardControls_has_2_rows) 
+  TEST_F(RowBasedCommand_ViewTests, TreeView_RowBased_Commands_given_when_fill_A_in_TextBoxes_at_0_and_fill_B_in_TextBoxes_at_1_and_click_Buttons_at_0_then_MyStandardControls_has_2_rows)
   {
     this->BuildSut();
     this->when_fill_A_in_TextBoxes_at_0();
@@ -63,47 +62,47 @@ namespace commands
     this->when_click_Buttons_at_0();
     this->then_MyStandardControls_has_2_rows();
   }
-  void RowBasedCommand_ViewTests::BuildSut( ) 
+  void RowBasedCommand_ViewTests::BuildSut()
   {
     this->sut = this->testSetup->BuildSut();
   }
-  void RowBasedCommand_ViewTests::when_check_Checkboxes_at_0( ) 
+  void RowBasedCommand_ViewTests::when_check_Checkboxes_at_0()
   {
     this->sut->checkboxesChecked(0, true);
   }
-  void RowBasedCommand_ViewTests::when_uncheck_Checkboxes_at_1( ) 
+  void RowBasedCommand_ViewTests::when_uncheck_Checkboxes_at_1()
   {
     this->sut->checkboxesChecked(1, false);
   }
-  void RowBasedCommand_ViewTests::when_select_entry_MyText1_in_FreeTextComboBoxes_at_0( ) 
+  void RowBasedCommand_ViewTests::when_select_entry_MyText1_in_FreeTextComboBoxes_at_0()
   {
     this->sut->freeTextComboBoxesEntrySelected(0, std::string("MyText1"));
   }
-  void RowBasedCommand_ViewTests::when_select_entry_MyText2_in_FreeTextComboBoxes_at_1( ) 
+  void RowBasedCommand_ViewTests::when_select_entry_MyText2_in_FreeTextComboBoxes_at_1()
   {
     this->sut->freeTextComboBoxesEntrySelected(1, std::string("MyText2"));
   }
-  void RowBasedCommand_ViewTests::when_select_entry_B_in_EntryComboBoxes_at_0( ) 
+  void RowBasedCommand_ViewTests::when_select_entry_B_in_EntryComboBoxes_at_0()
   {
     this->sut->entryComboBoxesEntrySelected(0, std::string("B"));
   }
-  void RowBasedCommand_ViewTests::when_select_entry_D_in_EntryComboBoxes_at_1( ) 
+  void RowBasedCommand_ViewTests::when_select_entry_D_in_EntryComboBoxes_at_1()
   {
     this->sut->entryComboBoxesEntrySelected(1, std::string("D"));
   }
-  void RowBasedCommand_ViewTests::when_fill_A_in_TextBoxes_at_0( ) 
+  void RowBasedCommand_ViewTests::when_fill_A_in_TextBoxes_at_0()
   {
     this->sut->textBoxesTextFilled(0, std::string("A"));
   }
-  void RowBasedCommand_ViewTests::when_fill_B_in_TextBoxes_at_1( ) 
+  void RowBasedCommand_ViewTests::when_fill_B_in_TextBoxes_at_1()
   {
     this->sut->textBoxesTextFilled(1, std::string("B"));
   }
-  void RowBasedCommand_ViewTests::when_click_Buttons_at_0( ) 
+  void RowBasedCommand_ViewTests::when_click_Buttons_at_0()
   {
     this->sut->buttonsClicked(0);
   }
-  void RowBasedCommand_ViewTests::then_MyFlags_has_2_rows( ) 
+  void RowBasedCommand_ViewTests::then_MyFlags_has_2_rows()
   {
     auto& actualRows = this->sut->getMyFlagsListRows();
     EXPECT_EQ(2, actualRows.size());
@@ -118,7 +117,7 @@ namespace commands
     EXPECT_FALSE(row1->getIsCheckboxesCheckBoxChecked());
     // }
   }
-  void RowBasedCommand_ViewTests::then_MyComboBoxes_has_2_rows( ) 
+  void RowBasedCommand_ViewTests::then_MyComboBoxes_has_2_rows()
   {
     auto& actualRows = this->sut->getMyComboBoxesTableRows();
     EXPECT_EQ(2, actualRows.size());
@@ -151,7 +150,7 @@ namespace commands
     EXPECT_EQ(std:: nullopt, row1->getEntryComboBoxesComboBoxSelectedEntry());
     // }
   }
-  void RowBasedCommand_ViewTests::then_MyStandardControls_has_2_rows( ) 
+  void RowBasedCommand_ViewTests::then_MyStandardControls_has_2_rows()
   {
     auto& actualRows = this->sut->getMyStandardControlsTreeRows();
     EXPECT_EQ(2, actualRows.size());
@@ -169,4 +168,3 @@ namespace commands
     // }
   }
 }
-

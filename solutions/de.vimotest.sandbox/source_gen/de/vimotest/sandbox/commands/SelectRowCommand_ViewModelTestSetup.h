@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <memory>
@@ -8,10 +7,9 @@ namespace commands
 {
   class SelectRowCommand_ViewModelTestSetup
   {
-    public:
+  public:
     virtual ~SelectRowCommand_ViewModelTestSetup() = default;
     virtual void Init() = 0;
     virtual std::shared_ptr<SelectRowCommand_ViewModel> BuildSut() = 0;
   };
 }
-

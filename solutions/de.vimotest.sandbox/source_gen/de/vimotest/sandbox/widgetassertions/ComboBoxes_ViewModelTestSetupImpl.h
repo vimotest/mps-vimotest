@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include "ComboBoxes_ViewModelTestSetup.h"
@@ -9,10 +8,9 @@ namespace widgetassertions
 {
   class ComboBoxes_ViewModelTestSetupImpl : public ComboBoxes_ViewModelTestSetup
   {
-    public:
-    void Init() override ;
-    void SetEmptyContext() override ;
-    std::shared_ptr<ComboBoxes_ViewModel> BuildSut() override ;
+  public:
+    void Init() override;
+    void SetEmptyContext() override;
+    std::shared_ptr<ComboBoxes_ViewModel> BuildSut() override;
   };
 }
-

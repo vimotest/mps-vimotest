@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <vector>
@@ -8,8 +7,7 @@ namespace commands
 {
   class GenericCommands_ViewModel
   {
-    public:
-    virtual void myCommand(bool MyFlag, std::vector<std::string> Names) ;
+  public:
+    virtual void myCommand(bool MyFlag, std::vector<std::string> Names);
   };
 }
-

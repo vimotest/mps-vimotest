@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <string>
@@ -7,13 +6,13 @@ namespace widgetassertions
 {
   class TableViews_ViewModelMyElementsRow
   {
-    public:
-    virtual bool getIsIncludeCheckBoxChecked() ;
-    virtual std::string getNameLabelText() ;
-    virtual std::string getDescriptionLabelText() ;
-    virtual std::string getInfoIconImageName() ;
-    virtual int getRowIndex() ;
-    private:
+  public:
+    virtual bool getIsIncludeCheckBoxChecked();
+    virtual std::string getNameLabelText();
+    virtual std::string getDescriptionLabelText();
+    virtual std::string getInfoIconImageName();
+    virtual int getRowIndex();
+  private:
     bool isIncludeCheckBoxChecked;
     std::string NameLabelText;
     std::string DescriptionLabelText;
@@ -21,4 +20,3 @@ namespace widgetassertions
     int RowIndex;
   };
 }
-

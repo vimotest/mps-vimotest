@@ -1,12 +1,9 @@
-
 #pragma once
-
-
 
 class MyViewModel
 {
-  public:
-  virtual bool getIsMyFlagCheckBoxChecked() ;
-  private:
+public:
+  virtual bool getIsMyFlagCheckBoxChecked();
+private:
   bool isMyFlagCheckBoxChecked;
 };

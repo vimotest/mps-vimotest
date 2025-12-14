@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <memory>
@@ -9,7 +8,7 @@ namespace context
 {
   class XmlFileContext_ViewModelTestSetup
   {
-    public:
+  public:
     virtual ~XmlFileContext_ViewModelTestSetup() = default;
     virtual void Init() = 0;
     virtual void SetXmlFileContext(std::string xmlFileContent) = 0;
@@ -17,4 +16,3 @@ namespace context
     virtual std::shared_ptr<XmlFileContext_ViewModel> BuildSut() = 0;
   };
 }
-

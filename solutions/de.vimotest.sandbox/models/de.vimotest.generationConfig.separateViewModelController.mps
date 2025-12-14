@@ -2,10 +2,7 @@
 <model ref="r:8b345620-0a96-4968-a35a-cba6b0ba3fe1(de.vimotest.generationConfig.separateViewModelController)">
   <persistence version="9" />
   <languages>
-    <use id="611ecc9e-0703-4ab9-a13c-fb396c607716" name="de.vimotest.types" version="0" />
-    <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="1" />
-    <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="1" />
-    <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing" version="1" />
+    <devkit ref="1511a6f0-18cf-4e0d-a302-d49c56209130(de.vimotest.all.devkit)" />
   </languages>
   <imports />
   <registry>

@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <memory>
@@ -9,7 +8,7 @@ namespace context
 {
   class DataTableContext_ViewModelTestSetup
   {
-    public:
+  public:
     virtual ~DataTableContext_ViewModelTestSetup() = default;
     virtual void Init() = 0;
     virtual void SetIdAndName(std::string multiLineString) = 0;
@@ -19,4 +18,3 @@ namespace context
     virtual std::shared_ptr<DataTableContext_ViewModel> BuildSut() = 0;
   };
 }
-

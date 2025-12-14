@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <memory>
@@ -9,11 +8,10 @@ namespace context
 {
   class DataPathContext_ViewModelTestSetup
   {
-    public:
+  public:
     virtual ~DataPathContext_ViewModelTestSetup() = default;
     virtual void Init() = 0;
     virtual void SetDataPathContext(std::string contextPath) = 0;
     virtual std::shared_ptr<DataPathContext_ViewModel> BuildSut() = 0;
   };
 }
-

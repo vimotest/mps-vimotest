@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <vector>
@@ -11,15 +10,15 @@ namespace widgetassertions
 {
   class TableViews_ViewModel
   {
-    public:
-    virtual std::vector<std::shared_ptr<TableViews_ViewModelMyElementsRow>> getMyElementsTableRows() ;
-    virtual int getMyElementsTableSelectedRow() ;
-    virtual bool getIsMyElementsTableVisible() ;
-    virtual bool getIsMyElementsTableEnabled() ;
-    virtual bool getIsMyElementsTableDescriptionColumnVisible() ;
-    virtual std::vector<std::shared_ptr<TableViews_ViewModelMyStringRowHandlesRow>> getMyStringRowHandlesTableRows() ;
-    virtual std::string getMyStringRowHandlesTableSelectedRow() ;
-    private:
+  public:
+    virtual std::vector<std::shared_ptr<TableViews_ViewModelMyElementsRow>> getMyElementsTableRows();
+    virtual int getMyElementsTableSelectedRow();
+    virtual bool getIsMyElementsTableVisible();
+    virtual bool getIsMyElementsTableEnabled();
+    virtual bool getIsMyElementsTableDescriptionColumnVisible();
+    virtual std::vector<std::shared_ptr<TableViews_ViewModelMyStringRowHandlesRow>> getMyStringRowHandlesTableRows();
+    virtual std::string getMyStringRowHandlesTableSelectedRow();
+  private:
     std::vector<std::shared_ptr<TableViews_ViewModelMyElementsRow>> MyElementsTableRows;
     int MyElementsTableSelectedRow;
     bool isMyElementsTableVisible;
@@ -29,4 +28,3 @@ namespace widgetassertions
     std::string MyStringRowHandlesTableSelectedRow;
   };
 }
-

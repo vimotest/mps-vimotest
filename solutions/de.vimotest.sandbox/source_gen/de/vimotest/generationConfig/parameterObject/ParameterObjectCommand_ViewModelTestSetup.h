@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <memory>
@@ -6,7 +5,7 @@
 
 class ParameterObjectCommand_ViewModelTestSetup
 {
-  public:
+public:
   virtual ~ParameterObjectCommand_ViewModelTestSetup() = default;
   virtual void Init() = 0;
   virtual void SetEmptyContext() = 0;

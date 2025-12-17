@@ -834,18 +834,72 @@
       <zipfileset file="${basedir}/solutions/de.vimotest.genplan/de.vimotest.genplan.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.genplan-models" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/de.vimotest.devkit.jar" />
-    <mkdir dir="${build.tmp}/default/de.vimotest.devkit.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/de.vimotest.devkit.jar/META-INF/module.xml">
-      <module namespace="de.vimotest.devkit" type="devkit" uuid="d1a914ef-09af-4c66-a6d1-618e1f9114ea">
+    <mkdir dir="${build.layout}/mps-vimotest/languages" />
+    <mkdir dir="${build.layout}/mps-vimotest/languages/mps-devkits" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.core.devkit.jar" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.core.devkit.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.core.devkit.jar/META-INF/module.xml">
+      <module namespace="de.vimotest.core.devkit" type="devkit" uuid="d1a914ef-09af-4c66-a6d1-618e1f9114ea">
         <dependencies />
         <uses />
-        <sources jar="." descriptor="de.vimotest.devkit.devkit" />
+        <sources jar="." descriptor="de.vimotest.core.devkit.devkit" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/mps-vimotest/languages/mps-build/de.vimotest.devkit.jar" duplicate="preserve">
-      <zipfileset file="${basedir}/devkits/de.vimotest.devkit/de.vimotest.devkit.devkit" prefix="module" />
-      <fileset dir="${build.tmp}/default/de.vimotest.devkit.jar" />
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-devkits/de.vimotest.core.devkit.jar" duplicate="preserve">
+      <zipfileset file="${basedir}/devkits/de.vimotest.core.devkit/de.vimotest.core.devkit.devkit" prefix="module" />
+      <fileset dir="${build.tmp}/default/de.vimotest.core.devkit.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.all.devkit.jar" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.all.devkit.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.all.devkit.jar/META-INF/module.xml">
+      <module namespace="de.vimotest.all.devkit" type="devkit" uuid="1511a6f0-18cf-4e0d-a302-d49c56209130">
+        <dependencies />
+        <uses />
+        <sources jar="." descriptor="de.vimotest.all.devkit.devkit" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-devkits/de.vimotest.all.devkit.jar" duplicate="preserve">
+      <zipfileset file="${basedir}/devkits/de.vimotest.all.devkit/de.vimotest.all.devkit.devkit" prefix="module" />
+      <fileset dir="${build.tmp}/default/de.vimotest.all.devkit.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.java.devkit.jar" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.java.devkit.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.java.devkit.jar/META-INF/module.xml">
+      <module namespace="de.vimotest.java.devkit" type="devkit" uuid="75f14ea5-e499-4fbf-8683-2924042b8aa5">
+        <dependencies />
+        <uses />
+        <sources jar="." descriptor="de.vimotest.java.devkit.devkit" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-devkits/de.vimotest.java.devkit.jar" duplicate="preserve">
+      <zipfileset file="${basedir}/devkits/de.vimotest.java.devkit/de.vimotest.java.devkit.devkit" prefix="module" />
+      <fileset dir="${build.tmp}/default/de.vimotest.java.devkit.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.cpp.devkit.jar" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.cpp.devkit.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.cpp.devkit.jar/META-INF/module.xml">
+      <module namespace="de.vimotest.cpp.devkit" type="devkit" uuid="4d8d5c90-be1b-4498-b93e-7cc05c02acbe">
+        <dependencies />
+        <uses />
+        <sources jar="." descriptor="de.vimotest.cpp.devkit.devkit" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-devkits/de.vimotest.cpp.devkit.jar" duplicate="preserve">
+      <zipfileset file="${basedir}/devkits/de.vimotest.cpp.devkit/de.vimotest.cpp.devkit.devkit" prefix="module" />
+      <fileset dir="${build.tmp}/default/de.vimotest.cpp.devkit.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.cs.devkit.jar" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.cs.devkit.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.cs.devkit.jar/META-INF/module.xml">
+      <module namespace="de.vimotest.cs.devkit" type="devkit" uuid="bf23a82d-b147-4ba0-826b-672105a6b088">
+        <dependencies />
+        <uses />
+        <sources jar="." descriptor="de.vimotest.cs.devkit.devkit" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/mps-vimotest/languages/mps-devkits/de.vimotest.cs.devkit.jar" duplicate="preserve">
+      <zipfileset file="${basedir}/devkits/de.vimotest.cs.devkit/de.vimotest.cs.devkit.devkit" prefix="module" />
+      <fileset dir="${build.tmp}/default/de.vimotest.cs.devkit.jar" />
     </jar>
     <mkdir dir="${build.tmp}/default/mps-vimotest.zip" />
     <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest" />
@@ -1640,18 +1694,72 @@
       <zipfileset file="${basedir}/solutions/de.vimotest.genplan/de.vimotest.genplan.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-de.vimotest.genplan-models1" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/de.vimotest.devkit.jar1" />
-    <mkdir dir="${build.tmp}/default/de.vimotest.devkit.jar1/META-INF" />
-    <echoxml file="${build.tmp}/default/de.vimotest.devkit.jar1/META-INF/module.xml">
-      <module namespace="de.vimotest.devkit" type="devkit" uuid="d1a914ef-09af-4c66-a6d1-618e1f9114ea">
+    <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages" />
+    <mkdir dir="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-devkits" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.core.devkit.jar1" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.core.devkit.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.core.devkit.jar1/META-INF/module.xml">
+      <module namespace="de.vimotest.core.devkit" type="devkit" uuid="d1a914ef-09af-4c66-a6d1-618e1f9114ea">
         <dependencies />
         <uses />
-        <sources jar="." descriptor="de.vimotest.devkit.devkit" />
+        <sources jar="." descriptor="de.vimotest.core.devkit.devkit" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-build/de.vimotest.devkit.jar" duplicate="preserve">
-      <zipfileset file="${basedir}/devkits/de.vimotest.devkit/de.vimotest.devkit.devkit" prefix="module" />
-      <fileset dir="${build.tmp}/default/de.vimotest.devkit.jar1" />
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-devkits/de.vimotest.core.devkit.jar" duplicate="preserve">
+      <zipfileset file="${basedir}/devkits/de.vimotest.core.devkit/de.vimotest.core.devkit.devkit" prefix="module" />
+      <fileset dir="${build.tmp}/default/de.vimotest.core.devkit.jar1" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.all.devkit.jar1" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.all.devkit.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.all.devkit.jar1/META-INF/module.xml">
+      <module namespace="de.vimotest.all.devkit" type="devkit" uuid="1511a6f0-18cf-4e0d-a302-d49c56209130">
+        <dependencies />
+        <uses />
+        <sources jar="." descriptor="de.vimotest.all.devkit.devkit" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-devkits/de.vimotest.all.devkit.jar" duplicate="preserve">
+      <zipfileset file="${basedir}/devkits/de.vimotest.all.devkit/de.vimotest.all.devkit.devkit" prefix="module" />
+      <fileset dir="${build.tmp}/default/de.vimotest.all.devkit.jar1" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.java.devkit.jar1" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.java.devkit.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.java.devkit.jar1/META-INF/module.xml">
+      <module namespace="de.vimotest.java.devkit" type="devkit" uuid="75f14ea5-e499-4fbf-8683-2924042b8aa5">
+        <dependencies />
+        <uses />
+        <sources jar="." descriptor="de.vimotest.java.devkit.devkit" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-devkits/de.vimotest.java.devkit.jar" duplicate="preserve">
+      <zipfileset file="${basedir}/devkits/de.vimotest.java.devkit/de.vimotest.java.devkit.devkit" prefix="module" />
+      <fileset dir="${build.tmp}/default/de.vimotest.java.devkit.jar1" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.cpp.devkit.jar1" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.cpp.devkit.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.cpp.devkit.jar1/META-INF/module.xml">
+      <module namespace="de.vimotest.cpp.devkit" type="devkit" uuid="4d8d5c90-be1b-4498-b93e-7cc05c02acbe">
+        <dependencies />
+        <uses />
+        <sources jar="." descriptor="de.vimotest.cpp.devkit.devkit" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-devkits/de.vimotest.cpp.devkit.jar" duplicate="preserve">
+      <zipfileset file="${basedir}/devkits/de.vimotest.cpp.devkit/de.vimotest.cpp.devkit.devkit" prefix="module" />
+      <fileset dir="${build.tmp}/default/de.vimotest.cpp.devkit.jar1" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.vimotest.cs.devkit.jar1" />
+    <mkdir dir="${build.tmp}/default/de.vimotest.cs.devkit.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/de.vimotest.cs.devkit.jar1/META-INF/module.xml">
+      <module namespace="de.vimotest.cs.devkit" type="devkit" uuid="bf23a82d-b147-4ba0-826b-672105a6b088">
+        <dependencies />
+        <uses />
+        <sources jar="." descriptor="de.vimotest.cs.devkit.devkit" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-vimotest.zip/mps-vimotest/languages/mps-devkits/de.vimotest.cs.devkit.jar" duplicate="preserve">
+      <zipfileset file="${basedir}/devkits/de.vimotest.cs.devkit/de.vimotest.cs.devkit.devkit" prefix="module" />
+      <fileset dir="${build.tmp}/default/de.vimotest.cs.devkit.jar1" />
     </jar>
     <zip destfile="${build.layout}/mps-vimotest.zip">
       <fileset dir="${build.tmp}/default/mps-vimotest.zip" />
@@ -1830,16 +1938,28 @@
     <echoxml file="${build.tmp}/default/de.vimotest.sandbox.jar/META-INF/module.xml">
       <module namespace="de.vimotest.sandbox" type="solution" uuid="2980a7d4-8976-4973-92f1-1d4ee8626c70">
         <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
           <module ref="49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)" kind="rt" />
           <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="6ef0db41-d3b2-47fe-82ac-d55a42cb6b13(jetbrains.mps.baseLanguage.unitTest.runtime)" kind="rt" />
           <module ref="c234a56a-502f-4751-aded-6f9846fff7ce(jetbrains.mps.lang.test.junit5)" kind="rt" />
-          <module ref="b28932ae-6b0e-4f97-ad77-84f278001d91(de.vimotest.genplan)" kind="cl" />
+          <module ref="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt" />
         </dependencies>
         <uses>
+          <language id="l:caee2629-07dd-4ee1-aceb-6d1e4dce0f12:CppBaseLanguage" />
+          <language id="l:d74e25c9-4d91-43b6-bad7-d18af7bf6674:CsBaseLanguage" />
           <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
+          <language id="l:05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3:alfi.PrimitiveMapping" />
+          <language id="l:ded42a5f-0d92-4cc2-b9ff-116aae7175a9:alfi.simplifyAlfiLanguage" />
+          <language id="l:e745d4a0-ccf7-4cb3-8db8-0f77222a00bf:alfi.toCppBaseLanguage" />
+          <language id="l:0f0152f2-19d3-46ec-9e98-47a1e2ed7e0b:alfi.toCsBaseLanguage" />
+          <language id="l:d0e1230a-72e3-4b6b-88f2-98d924f7de11:alfi.toJavaBaseLanguage" />
           <language id="l:611ecc9e-0703-4ab9-a13c-fb396c607716:de.vimotest.types" />
           <language id="l:ce7915b5-36b4-4478-a67c-f5a8a72ed4a0:de.vimotest.viewmodel" />
           <language id="l:716e8717-88c0-4280-8c16-b4d88567596f:de.vimotest.viewmodel.testing" />
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:f61473f9-130f-42f6-b98d-6c438812c2f6:jetbrains.mps.baseLanguage.unitTest" />
           <language id="l:479c7a8c-02f9-43b5-9139-d910cb22f298:jetbrains.mps.core.xml" />
         </uses>
         <classpath>
@@ -1984,7 +2104,11 @@
         <module file="${basedir}/languages/de.vimotest.viewmodel/de.vimotest.viewmodel.mpl" />
       </chunk>
       <chunk>
-        <module file="${basedir}/devkits/de.vimotest.devkit/de.vimotest.devkit.devkit" />
+        <module file="${basedir}/devkits/de.vimotest.all.devkit/de.vimotest.all.devkit.devkit" />
+        <module file="${basedir}/devkits/de.vimotest.core.devkit/de.vimotest.core.devkit.devkit" />
+        <module file="${basedir}/devkits/de.vimotest.cpp.devkit/de.vimotest.cpp.devkit.devkit" />
+        <module file="${basedir}/devkits/de.vimotest.cs.devkit/de.vimotest.cs.devkit.devkit" />
+        <module file="${basedir}/devkits/de.vimotest.java.devkit/de.vimotest.java.devkit.devkit" />
         <module file="${basedir}/solutions/de.vimotest.plugin/de.vimotest.plugin.msd" />
         <module file="${basedir}/languages/de.vimotest.viewmodel.testing/de.vimotest.viewmodel.testing.mpl" />
       </chunk>
@@ -2085,6 +2209,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/text/jetbrains.mps.lang.text.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <fileset file="${artifacts.alfi-build}/alfi/languages/alfi-transformations/alfi.GeneratorUtils.java_src.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/de.vimotest.viewmodel">
@@ -2147,6 +2272,7 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.alfi-build}/alfi/languages/alfi-transformations/alfi.GeneratorUtils.java_src.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/de.vimotest.viewmodel.generator">
@@ -2807,6 +2933,8 @@
         <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.alfi-build}/alfi/languages/alfi-modules/alfi.StandardModelLibrary.jar" />
+        <fileset file="${artifacts.alfi-build}/alfi/languages/alfi-transformations/alfi.genplan.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.junit5.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.9.3.jar" />

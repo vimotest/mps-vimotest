@@ -11,9 +11,6 @@
     </facet>
     <facet type="generator" planModel="r:1824e859-c1f6-46d5-8ab9-c61fd55c97bb(de.vimotest.genplan.main@genplan)" />
   </facets>
-  <dependencies>
-    <dependency reexport="false">1511a6f0-18cf-4e0d-a302-d49c56209130(de.vimotest.all.devkit)</dependency>
-  </dependencies>
   <languageVersions>
     <language slang="l:caee2629-07dd-4ee1-aceb-6d1e4dce0f12:CppBaseLanguage" version="0" />
     <language slang="l:d74e25c9-4d91-43b6-bad7-d18af7bf6674:CsBaseLanguage" version="4" />
@@ -31,7 +28,6 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="1511a6f0-18cf-4e0d-a302-d49c56209130(de.vimotest.all.devkit)" version="0" />
     <module reference="2980a7d4-8976-4973-92f1-1d4ee8626c70(de.vimotest.sandbox)" version="0" />
   </dependencyVersions>
 </solution>

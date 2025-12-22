@@ -4,7 +4,7 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
@@ -299,16 +299,10 @@
       <concept id="1225797177491" name="jetbrains.mps.baseLanguage.closures.structure.InvokeFunctionOperation" flags="nn" index="1Bd96e" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
       <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
@@ -5344,24 +5338,156 @@
     </node>
     <node concept="3Tm1VV" id="2ChO0gBxVPy" role="1B3o_S" />
     <node concept="3UR2Jj" id="35wopT39dVw" role="lGtFl">
-      <node concept="TZ5HA" id="35wopT39h2T" role="TZ5H$">
-        <node concept="1dT_AC" id="35wopT39h2U" role="1dT_Ay">
-          <property role="1dT_AB" value="Copied from jetbrains.mps.lang.editor.table.runtime.EditorCell_Table (MPS 2024.1)" />
+      <node concept="1PaTwC" id="7eKFyZ9Kzo$" role="1Vez_I">
+        <node concept="3oM_SD" id="7eKFyZ9Kzo_" role="1PaTwD">
+          <property role="3oM_SC" value="Copied" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoA" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoB" role="1PaTwD">
+          <property role="3oM_SC" value="jetbrains.mps.lang.editor.table.runtime.EditorCell_Table" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoC" role="1PaTwD">
+          <property role="3oM_SC" value="(MPS" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoD" role="1PaTwD">
+          <property role="3oM_SC" value="2024.1)" />
         </node>
       </node>
-      <node concept="TZ5HA" id="35wopT39h2V" role="TZ5H$">
-        <node concept="1dT_AC" id="35wopT39h2W" role="1dT_Ay">
-          <property role="1dT_AB" value="It uses the CustomCellsTableModel with a getCellAt() method, which directly yields the EditorCell. This gives more flexibility we need for custom cells in ViMoTest." />
+      <node concept="1PaTwC" id="7eKFyZ9KzoE" role="1Vez_I">
+        <node concept="3oM_SD" id="7eKFyZ9KzoF" role="1PaTwD">
+          <property role="3oM_SC" value="It" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoG" role="1PaTwD">
+          <property role="3oM_SC" value="uses" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoH" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoI" role="1PaTwD">
+          <property role="3oM_SC" value="CustomCellsTableModel" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoJ" role="1PaTwD">
+          <property role="3oM_SC" value="with" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoK" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoL" role="1PaTwD">
+          <property role="3oM_SC" value="getCellAt()" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoM" role="1PaTwD">
+          <property role="3oM_SC" value="method," />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoN" role="1PaTwD">
+          <property role="3oM_SC" value="which" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoO" role="1PaTwD">
+          <property role="3oM_SC" value="directly" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoP" role="1PaTwD">
+          <property role="3oM_SC" value="yields" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoQ" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoR" role="1PaTwD">
+          <property role="3oM_SC" value="EditorCell." />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoS" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoT" role="1PaTwD">
+          <property role="3oM_SC" value="gives" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoU" role="1PaTwD">
+          <property role="3oM_SC" value="more" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoV" role="1PaTwD">
+          <property role="3oM_SC" value="flexibility" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoW" role="1PaTwD">
+          <property role="3oM_SC" value="we" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoX" role="1PaTwD">
+          <property role="3oM_SC" value="need" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoY" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzoZ" role="1PaTwD">
+          <property role="3oM_SC" value="custom" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzp0" role="1PaTwD">
+          <property role="3oM_SC" value="cells" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzp1" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzp2" role="1PaTwD">
+          <property role="3oM_SC" value="ViMoTest." />
         </node>
       </node>
-      <node concept="TZ5HA" id="35wopT39dVx" role="TZ5H$">
-        <node concept="1dT_AC" id="35wopT39dVy" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="7eKFyZ9Kzp3" role="1Vez_I">
+        <node concept="3oM_SD" id="7eKFyZ9Kzp4" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="35wopT39pZQ" role="TZ5H$">
-        <node concept="1dT_AC" id="35wopT39pZR" role="1dT_Ay">
-          <property role="1dT_AB" value="@note we decided to copy it, since we want the well editor action behavior of the MPS' table." />
+      <node concept="1PaTwC" id="7eKFyZ9Kzp5" role="1Vez_I">
+        <node concept="3oM_SD" id="7eKFyZ9Kzp6" role="1PaTwD">
+          <property role="3oM_SC" value="@note" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzp7" role="1PaTwD">
+          <property role="3oM_SC" value="we" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzp8" role="1PaTwD">
+          <property role="3oM_SC" value="decided" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzp9" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpa" role="1PaTwD">
+          <property role="3oM_SC" value="copy" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpb" role="1PaTwD">
+          <property role="3oM_SC" value="it," />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpc" role="1PaTwD">
+          <property role="3oM_SC" value="since" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpd" role="1PaTwD">
+          <property role="3oM_SC" value="we" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpe" role="1PaTwD">
+          <property role="3oM_SC" value="want" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpf" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpg" role="1PaTwD">
+          <property role="3oM_SC" value="well" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzph" role="1PaTwD">
+          <property role="3oM_SC" value="editor" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpi" role="1PaTwD">
+          <property role="3oM_SC" value="action" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpj" role="1PaTwD">
+          <property role="3oM_SC" value="behavior" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpk" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpl" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpm" role="1PaTwD">
+          <property role="3oM_SC" value="MPS'" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpn" role="1PaTwD">
+          <property role="3oM_SC" value="table." />
         </node>
       </node>
     </node>
@@ -5480,14 +5606,80 @@
     </node>
     <node concept="3Tm1VV" id="4Ia639Wv8az" role="1B3o_S" />
     <node concept="3UR2Jj" id="35wopT38V8$" role="lGtFl">
-      <node concept="TZ5HA" id="35wopT38V8_" role="TZ5H$">
-        <node concept="1dT_AC" id="35wopT38V8A" role="1dT_Ay">
-          <property role="1dT_AB" value="Copied from jetbrains.mps.lang.editor.table.runtime.TableModel (MPS 2024.1)" />
+      <node concept="1PaTwC" id="7eKFyZ9Kzpo" role="1Vez_I">
+        <node concept="3oM_SD" id="7eKFyZ9Kzpp" role="1PaTwD">
+          <property role="3oM_SC" value="Copied" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpq" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpr" role="1PaTwD">
+          <property role="3oM_SC" value="jetbrains.mps.lang.editor.table.runtime.TableModel" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzps" role="1PaTwD">
+          <property role="3oM_SC" value="(MPS" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpt" role="1PaTwD">
+          <property role="3oM_SC" value="2024.1)" />
         </node>
       </node>
-      <node concept="TZ5HA" id="35wopT38VeQ" role="TZ5H$">
-        <node concept="1dT_AC" id="35wopT38VeR" role="1dT_Ay">
-          <property role="1dT_AB" value="It has a getCellAt() method, instead of a getValueAt() method. This gives more flexibility we need for our EditorCell_CustomCellsTable" />
+      <node concept="1PaTwC" id="7eKFyZ9Kzpu" role="1Vez_I">
+        <node concept="3oM_SD" id="7eKFyZ9Kzpv" role="1PaTwD">
+          <property role="3oM_SC" value="It" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpw" role="1PaTwD">
+          <property role="3oM_SC" value="has" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpx" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpy" role="1PaTwD">
+          <property role="3oM_SC" value="getCellAt()" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzpz" role="1PaTwD">
+          <property role="3oM_SC" value="method," />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzp$" role="1PaTwD">
+          <property role="3oM_SC" value="instead" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9Kzp_" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzpA" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzpB" role="1PaTwD">
+          <property role="3oM_SC" value="getValueAt()" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzpC" role="1PaTwD">
+          <property role="3oM_SC" value="method." />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzpD" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzpE" role="1PaTwD">
+          <property role="3oM_SC" value="gives" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzpF" role="1PaTwD">
+          <property role="3oM_SC" value="more" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzpG" role="1PaTwD">
+          <property role="3oM_SC" value="flexibility" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzpH" role="1PaTwD">
+          <property role="3oM_SC" value="we" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzpI" role="1PaTwD">
+          <property role="3oM_SC" value="need" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzpJ" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzpK" role="1PaTwD">
+          <property role="3oM_SC" value="our" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzpL" role="1PaTwD">
+          <property role="3oM_SC" value="EditorCell_CustomCellsTable" />
         </node>
       </node>
     </node>
@@ -6622,9 +6814,21 @@
       <ref role="3uigEE" to="b8lf:~AbstractMultipleSelection" resolve="AbstractMultipleSelection" />
     </node>
     <node concept="3UR2Jj" id="35wopT39xJw" role="lGtFl">
-      <node concept="TZ5HA" id="35wopT39AUx" role="TZ5H$">
-        <node concept="1dT_AC" id="35wopT39AUy" role="1dT_Ay">
-          <property role="1dT_AB" value="Copied from jetbrains.mps.lang.editor.table.runtime.TableColumnSelection (MPS 2024.1)" />
+      <node concept="1PaTwC" id="7eKFyZ9KzpM" role="1Vez_I">
+        <node concept="3oM_SD" id="7eKFyZ9KzpN" role="1PaTwD">
+          <property role="3oM_SC" value="Copied" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzpO" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzpP" role="1PaTwD">
+          <property role="3oM_SC" value="jetbrains.mps.lang.editor.table.runtime.TableColumnSelection" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzpQ" role="1PaTwD">
+          <property role="3oM_SC" value="(MPS" />
+        </node>
+        <node concept="3oM_SD" id="7eKFyZ9KzpR" role="1PaTwD">
+          <property role="3oM_SC" value="2024.1)" />
         </node>
       </node>
     </node>

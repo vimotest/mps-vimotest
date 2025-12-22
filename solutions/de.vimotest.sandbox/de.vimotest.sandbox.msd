@@ -28,6 +28,10 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+    <module reference="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" version="0" />
+    <module reference="76f7ae4d-6343-4b77-b3be-95673e578bcf(alfi.genplan)" version="0" />
+    <module reference="b28932ae-6b0e-4f97-ad77-84f278001d91(de.vimotest.genplan)" version="0" />
     <module reference="2980a7d4-8976-4973-92f1-1d4ee8626c70(de.vimotest.sandbox)" version="0" />
   </dependencyVersions>
 </solution>

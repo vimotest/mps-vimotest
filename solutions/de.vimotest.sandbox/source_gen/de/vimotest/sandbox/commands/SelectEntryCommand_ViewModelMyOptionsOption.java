@@ -4,7 +4,7 @@ package de.vimotest.sandbox.commands;
 
 
 /**
- * 
+ * foo
  */
 public enum SelectEntryCommand_ViewModelMyOptionsOption {
   A(),

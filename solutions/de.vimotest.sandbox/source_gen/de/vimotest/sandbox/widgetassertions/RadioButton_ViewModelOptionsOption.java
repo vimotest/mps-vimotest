@@ -4,7 +4,7 @@ package de.vimotest.sandbox.widgetassertions;
 
 
 /**
- * 
+ * foo
  */
 public enum RadioButton_ViewModelOptionsOption {
   OptionA(),

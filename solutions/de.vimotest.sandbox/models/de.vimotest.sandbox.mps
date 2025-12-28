@@ -5728,6 +5728,7 @@
   </node>
   <node concept="103ZX$" id="4m0g11MwG31">
     <property role="$YGLj" value="SimpleDependency_" />
+    <property role="3GE5qa" value="support" />
     <node concept="103ZXx" id="4m0g11MwG32" role="103ZXC">
       <node concept="3Vw88J" id="4m0g11MwG33" role="1006ar">
         <property role="TrG5h" value="LoadView" />
@@ -5747,6 +5748,19 @@
           <node concept="RSs3Z" id="4m0g11MI2dX" role="RSs6f">
             <property role="TrG5h" value="messageId" />
             <node concept="1nBWMp" id="4m0g11MI2eQ" role="3xMlr6" />
+          </node>
+          <node concept="RSs3Z" id="47nlIY1AK2m" role="RSs6f">
+            <property role="TrG5h" value="names" />
+            <node concept="1WnWvM" id="47nlIY1AK2t" role="3xMlr6">
+              <node concept="1nBS12" id="47nlIY1AK2F" role="1WnWvN" />
+            </node>
+          </node>
+        </node>
+        <node concept="RSsdF" id="47nlIY1WoCd" role="RSskJ">
+          <property role="TrG5h" value="Foo" />
+          <node concept="RSs3Z" id="47nlIY1YT6F" role="RSs6f">
+            <property role="TrG5h" value="bar" />
+            <node concept="1nBHEw" id="47nlIY1YTad" role="3xMlr6" />
           </node>
         </node>
       </node>

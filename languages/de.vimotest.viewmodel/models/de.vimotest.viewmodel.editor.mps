@@ -504,13 +504,10 @@
       </node>
       <node concept="3F0ifn" id="2Rk2hp$33tj" role="3EZMnx">
         <property role="3F0ifm" value="View" />
+        <ref role="1k5W1q" node="47nlIY1vvun" resolve="ViewModelSuffix" />
         <node concept="11L4FC" id="2Rk2hp$39Dn" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="VechU" id="2Rk2hp$aSkH" role="3F10Kt">
-          <property role="Vb096" value="fLwANPu/blue" />
-        </node>
-        <node concept="Vb9p2" id="2Rk2hp$aSkI" role="3F10Kt" />
         <node concept="pkWqt" id="2Rk2hp$39FJ" role="pqm2j">
           <node concept="3clFbS" id="2Rk2hp$39FK" role="2VODD2">
             <node concept="3clFbJ" id="7juAOV6reLC" role="3cqZAp">
@@ -572,13 +569,10 @@
       </node>
       <node concept="3F0ifn" id="2Rk2hp$352z" role="3EZMnx">
         <property role="3F0ifm" value="Model" />
+        <ref role="1k5W1q" node="47nlIY1vvun" resolve="ViewModelSuffix" />
         <node concept="11L4FC" id="2Rk2hp$39Ea" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="VechU" id="2Rk2hp$8wfn" role="3F10Kt">
-          <property role="Vb096" value="fLwANPu/blue" />
-        </node>
-        <node concept="Vb9p2" id="2Rk2hp$aSaA" role="3F10Kt" />
         <node concept="pkWqt" id="2Rk2hp$3eZS" role="pqm2j">
           <node concept="3clFbS" id="2Rk2hp$3eZT" role="2VODD2">
             <node concept="3clFbJ" id="7juAOV6rfKA" role="3cqZAp">
@@ -1471,6 +1465,29 @@
       <property role="TrG5h" value="DescriptionText" />
       <node concept="Vb9p2" id="6tib4XeWUAU" role="3F10Kt">
         <property role="Vbekb" value="g1_kEg4/ITALIC" />
+      </node>
+    </node>
+    <node concept="14StLt" id="47nlIY1vvun" role="V601i">
+      <property role="TrG5h" value="ViewModelSuffix" />
+      <node concept="Vb9p2" id="47nlIY1v_80" role="3F10Kt" />
+      <node concept="VechU" id="47nlIY1yA3z" role="3F10Kt">
+        <node concept="3ZlJ5R" id="47nlIY1yAkZ" role="VblUZ">
+          <node concept="3clFbS" id="47nlIY1yAl0" role="2VODD2">
+            <node concept="3clFbF" id="47nlIY1yztA" role="3cqZAp">
+              <node concept="2YIFZM" id="5QSnpBWoY$M" role="3clFbG">
+                <ref role="37wK5l" to="dgt9:5rqC7JBZX5S" resolve="getColorByTheme" />
+                <ref role="1Pybhc" to="dgt9:5QSnpBWlEt3" resolve="ViMoTestStyleColorHelper" />
+                <node concept="1Q80Hx" id="5QSnpBWoY$N" role="37wK5m" />
+                <node concept="Xl_RD" id="5QSnpBWoY$O" role="37wK5m">
+                  <property role="Xl_RC" value="#EC8C2F" />
+                </node>
+                <node concept="Xl_RD" id="5QSnpBWoY$P" role="37wK5m">
+                  <property role="Xl_RC" value="#F2A95E" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

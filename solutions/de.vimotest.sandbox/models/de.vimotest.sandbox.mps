@@ -5733,7 +5733,12 @@
         <property role="TrG5h" value="LoadView" />
       </node>
     </node>
-    <node concept="103ZXB" id="4m0g11MwG34" role="103ZXF" />
+    <node concept="103ZXB" id="4m0g11MwG34" role="103ZXF">
+      <node concept="1nWCU9" id="47nlIY1vbaW" role="103ZUC">
+        <property role="TrG5h" value="MyBool" />
+        <node concept="1nBHEw" id="47nlIY1vbb3" role="3xMlr6" />
+      </node>
+    </node>
     <node concept="2PDISX" id="4m0g11MwG5r" role="2PDvFJ">
       <node concept="2PDviN" id="4m0g11MwG5P" role="RSswE">
         <property role="TrG5h" value="IMessageBus" />

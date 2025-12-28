@@ -10966,5 +10966,67 @@
       <node concept="3clFbS" id="4PSlizivFhU" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="47nlIY20x2n">
+    <property role="3GE5qa" value="dependencies" />
+    <ref role="13h7C2" to="at53:47nlIY20x2m" resolve="IDependencyListElement" />
+    <node concept="13i0hz" id="47nlIY20x2E" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getDependency" />
+      <node concept="3Tm1VV" id="47nlIY20x2F" role="1B3o_S" />
+      <node concept="3Tqbb2" id="47nlIY20yZl" role="3clF45">
+        <ref role="ehGHo" to="at53:69SOXVnRitH" resolve="ViewModelDependency" />
+      </node>
+      <node concept="3clFbS" id="47nlIY20x2H" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="47nlIY20x2o" role="13h7CW">
+      <node concept="3clFbS" id="47nlIY20x2p" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="47nlIY20z0o">
+    <property role="3GE5qa" value="dependencies" />
+    <ref role="13h7C2" to="at53:69SOXVnRitH" resolve="ViewModelDependency" />
+    <node concept="13hLZK" id="47nlIY20z0p" role="13h7CW">
+      <node concept="3clFbS" id="47nlIY20z0q" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="47nlIY20z0F" role="13h7CS">
+      <property role="TrG5h" value="getDependency" />
+      <ref role="13i0hy" node="47nlIY20x2E" resolve="getDependency" />
+      <node concept="3Tm1VV" id="47nlIY20z0G" role="1B3o_S" />
+      <node concept="3clFbS" id="47nlIY20z0J" role="3clF47">
+        <node concept="3clFbF" id="47nlIY20z12" role="3cqZAp">
+          <node concept="13iPFW" id="47nlIY20z11" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="47nlIY20z0K" role="3clF45">
+        <ref role="ehGHo" to="at53:69SOXVnRitH" resolve="ViewModelDependency" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="47nlIY20z3x">
+    <property role="3GE5qa" value="dependencies" />
+    <ref role="13h7C2" to="at53:47nlIY20z3u" resolve="ViewModelDependencyRef" />
+    <node concept="13hLZK" id="47nlIY20z3y" role="13h7CW">
+      <node concept="3clFbS" id="47nlIY20z3z" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="47nlIY20z48" role="13h7CS">
+      <property role="TrG5h" value="getDependency" />
+      <ref role="13i0hy" node="47nlIY20x2E" resolve="getDependency" />
+      <node concept="3Tm1VV" id="47nlIY20z49" role="1B3o_S" />
+      <node concept="3clFbS" id="47nlIY20z4c" role="3clF47">
+        <node concept="3clFbF" id="47nlIY20z4v" role="3cqZAp">
+          <node concept="2OqwBi" id="47nlIY20zgC" role="3clFbG">
+            <node concept="13iPFW" id="47nlIY20z4u" role="2Oq$k0" />
+            <node concept="3TrEf2" id="47nlIY20zpP" role="2OqNvi">
+              <ref role="3Tt5mk" to="at53:47nlIY20z3w" resolve="ref" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="47nlIY20z4d" role="3clF45">
+        <ref role="ehGHo" to="at53:69SOXVnRitH" resolve="ViewModelDependency" />
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -1676,6 +1676,9 @@
     <node concept="PrWs8" id="69SOXVnRizY" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="47nlIY20z0n" role="PzmwI">
+      <ref role="PrY4T" node="47nlIY20x2m" resolve="IDependencyListElement" />
+    </node>
     <node concept="1TJgyj" id="4m0g11MookZ" role="1TKVEi">
       <property role="IQ2ns" value="5008073225018639679" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1695,7 +1698,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="dependencies" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="69SOXVnRitH" resolve="ViewModelDependency" />
+      <ref role="20lvS9" node="47nlIY20x2m" resolve="IDependencyListElement" />
     </node>
   </node>
   <node concept="1TIwiD" id="4m0g11Moo3J">
@@ -1718,6 +1721,87 @@
     </node>
     <node concept="PrWs8" id="4m0g11Mooif" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="47nlIY20wOD">
+    <property role="EcuMT" value="4744356319136451881" />
+    <property role="3GE5qa" value="dependencies" />
+    <property role="TrG5h" value="ViewModelDependencyRegistry" />
+    <property role="34LRSv" value="dependency registry" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="47nlIY20wOF" role="1TKVEi">
+      <property role="IQ2ns" value="4744356319136451883" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dependencies" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="69SOXVnRitH" resolve="ViewModelDependency" />
+    </node>
+    <node concept="PrWs8" id="47nlIY2eTGn" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1irR5M" id="47nlIY2CU63" role="rwd14">
+      <property role="2$rrk2" value="3" />
+      <node concept="1irR9n" id="47nlIY2CU64" role="1irR9h">
+        <node concept="3PKj8D" id="47nlIY2CU65" role="3PKjn_">
+          <property role="3PKj8l" value="A0A0A0" />
+        </node>
+      </node>
+      <node concept="1irR9n" id="47nlIY2CU66" role="1irR9h">
+        <property role="1irPjQ" value="1ng4Vf3UMuc/medium" />
+        <node concept="3PKj8D" id="47nlIY2CU67" role="3PKjn_">
+          <property role="3PKj8l" value="A0A0A0" />
+        </node>
+        <node concept="3PKj8D" id="47nlIY2CU68" role="3PKjnB">
+          <property role="3PKj8l" value="C0C0C0" />
+        </node>
+      </node>
+      <node concept="1irPie" id="47nlIY2CU69" role="1irR9h">
+        <property role="1irPi9" value="i" />
+        <node concept="3PKj8D" id="47nlIY2CU6a" role="3PKjny">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
+      <node concept="1irR9n" id="47nlIY2CU6b" role="2rmM5M">
+        <node concept="3PKj8D" id="47nlIY2CU6c" role="3PKjn_">
+          <property role="3PKj8l" value="80A0B0" />
+        </node>
+      </node>
+      <node concept="1irR9n" id="47nlIY2CU6d" role="2rmM5M">
+        <property role="1irPjQ" value="1ng4Vf3UMuc/medium" />
+        <node concept="3PKj8D" id="47nlIY2CU6e" role="3PKjn_">
+          <property role="3PKj8l" value="80A0B0" />
+        </node>
+        <node concept="3PKj8D" id="47nlIY2CU6f" role="3PKjnB">
+          <property role="3PKj8l" value="C0C0C0" />
+        </node>
+      </node>
+      <node concept="1irPie" id="47nlIY2CU6g" role="2rmM5M">
+        <property role="1irPi9" value="d" />
+        <node concept="3PKj8D" id="47nlIY2CU6h" role="3PKjny">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PlHQZ" id="47nlIY20x2m">
+    <property role="EcuMT" value="4744356319136452758" />
+    <property role="3GE5qa" value="dependencies" />
+    <property role="TrG5h" value="IDependencyListElement" />
+  </node>
+  <node concept="1TIwiD" id="47nlIY20z3u">
+    <property role="EcuMT" value="4744356319136461022" />
+    <property role="3GE5qa" value="dependencies" />
+    <property role="TrG5h" value="ViewModelDependencyRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="47nlIY20z3v" role="PzmwI">
+      <ref role="PrY4T" node="47nlIY20x2m" resolve="IDependencyListElement" />
+    </node>
+    <node concept="1TJgyj" id="47nlIY20z3w" role="1TKVEi">
+      <property role="IQ2ns" value="4744356319136461024" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="69SOXVnRitH" resolve="ViewModelDependency" />
     </node>
   </node>
 </model>

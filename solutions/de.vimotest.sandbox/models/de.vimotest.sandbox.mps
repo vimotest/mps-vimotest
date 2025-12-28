@@ -416,6 +416,12 @@
       <concept id="5775867078593476371" name="de.vimotest.viewmodel.structure.TextColorFeature" flags="ng" index="31hZui">
         <property id="5775867078593476692" name="defaultColorCode" index="31hZzl" />
       </concept>
+      <concept id="4744356319136451881" name="de.vimotest.viewmodel.structure.ViewModelDependencyRegistry" flags="ng" index="33PlJ6">
+        <child id="4744356319136451883" name="dependencies" index="33PlJ4" />
+      </concept>
+      <concept id="4744356319136461022" name="de.vimotest.viewmodel.structure.ViewModelDependencyRef" flags="ng" index="33PmoL">
+        <reference id="4744356319136461024" name="ref" index="33Pmof" />
+      </concept>
       <concept id="3467481306584357561" name="de.vimotest.viewmodel.structure.IRowBasedViewWidget" flags="ngI" index="18mAPp">
         <child id="6487694277737356034" name="additionalFields" index="3pPB2g" />
       </concept>
@@ -5762,6 +5768,23 @@
             <property role="TrG5h" value="bar" />
             <node concept="1nBHEw" id="47nlIY1YTad" role="3xMlr6" />
           </node>
+        </node>
+      </node>
+      <node concept="33PmoL" id="47nlIY2uGJx" role="RSswE">
+        <ref role="33Pmof" node="47nlIY2maYg" resolve="Logger" />
+      </node>
+    </node>
+  </node>
+  <node concept="33PlJ6" id="47nlIY28L$V">
+    <property role="3GE5qa" value="support" />
+    <property role="TrG5h" value="SimpleDependencies" />
+    <node concept="2PDviN" id="47nlIY2maYg" role="33PlJ4">
+      <property role="TrG5h" value="Logger" />
+      <node concept="RSsdF" id="47nlIY2maYh" role="RSskJ">
+        <property role="TrG5h" value="Log" />
+        <node concept="RSs3Z" id="47nlIY2maYi" role="RSs6f">
+          <property role="TrG5h" value="message" />
+          <node concept="1nBS12" id="47nlIY2maYp" role="3xMlr6" />
         </node>
       </node>
     </node>

@@ -5186,6 +5186,7 @@
       </node>
       <node concept="3F0ifn" id="4m0g11Moopx" role="3EZMnx">
         <property role="3F0ifm" value="{" />
+        <ref role="1k5W1q" to="dgt9:F907haLJXS" resolve="LeftBracket" />
       </node>
       <node concept="3F2HdR" id="4m0g11Mooqm" role="3EZMnx">
         <ref role="1NtTu8" to="at53:4m0g11MookZ" resolve="methods" />
@@ -5202,6 +5203,7 @@
       </node>
       <node concept="3F0ifn" id="4m0g11MoorB" role="3EZMnx">
         <property role="3F0ifm" value="}" />
+        <ref role="1k5W1q" to="dgt9:F907haLJXX" resolve="RightBracket" />
         <node concept="pVoyu" id="4m0g11Mooss" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -5224,6 +5226,9 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="lj46D" id="4m0g11Moo$7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="47nlIY2uGJz" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -5289,6 +5294,64 @@
         <ref role="1k5W1q" to="dgt9:F907haLJXX" resolve="RightBracket" />
       </node>
       <node concept="l2Vlx" id="47nlIY1FxjE" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="47nlIY20wOG">
+    <property role="3GE5qa" value="dependencies" />
+    <ref role="1XX52x" to="at53:47nlIY20wOD" resolve="ViewModelDependencyRegistry" />
+    <node concept="3EZMnI" id="47nlIY20wOI" role="2wV5jI">
+      <node concept="PMmxH" id="47nlIY20wOM" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0A7n" id="47nlIY2eTGp" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="47nlIY20wOO" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+        <ref role="1k5W1q" to="dgt9:F907haLJXS" resolve="LeftBracket" />
+      </node>
+      <node concept="3F2HdR" id="47nlIY20wOU" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:47nlIY20wOF" resolve="dependencies" />
+        <node concept="l2Vlx" id="47nlIY20wOW" role="2czzBx" />
+        <node concept="pVoyu" id="47nlIY20wOX" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="47nlIY20wOY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="47nlIY20x2l" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="47nlIY20wOR" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <ref role="1k5W1q" to="dgt9:F907haLJXX" resolve="RightBracket" />
+        <node concept="pVoyu" id="47nlIY20wOZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="47nlIY20wOL" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="47nlIY20zY1">
+    <property role="3GE5qa" value="dependencies" />
+    <ref role="1XX52x" to="at53:47nlIY20z3u" resolve="ViewModelDependencyRef" />
+    <node concept="3EZMnI" id="47nlIY20zY3" role="2wV5jI">
+      <node concept="3F0ifn" id="47nlIY20zYg" role="3EZMnx">
+        <property role="3F0ifm" value="ref" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="1iCGBv" id="47nlIY20zY7" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:47nlIY20z3w" resolve="ref" />
+        <node concept="1sVBvm" id="47nlIY20zY9" role="1sWHZn">
+          <node concept="3F0A7n" id="47nlIY20zYd" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="47nlIY20zY6" role="2iSdaV" />
     </node>
   </node>
 </model>

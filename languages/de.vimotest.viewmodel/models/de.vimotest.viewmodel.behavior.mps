@@ -11025,6 +11025,30 @@
         <ref role="ehGHo" to="at53:69SOXVnRitH" resolve="ViewModelDependency" />
       </node>
     </node>
+    <node concept="13i0hz" id="3kGPU1Q2LGh" role="13h7CS">
+      <property role="TrG5h" value="getDependencyNamespace" />
+      <node concept="3Tm1VV" id="3kGPU1Q2LGi" role="1B3o_S" />
+      <node concept="17QB3L" id="3kGPU1Q2LGX" role="3clF45" />
+      <node concept="3clFbS" id="3kGPU1Q2LGk" role="3clF47">
+        <node concept="3clFbF" id="3kGPU1Q2LIg" role="3cqZAp">
+          <node concept="2OqwBi" id="3kGPU1Q2Mle" role="3clFbG">
+            <node concept="2OqwBi" id="3kGPU1Q2LVj" role="2Oq$k0">
+              <node concept="13iPFW" id="3kGPU1Q2LIf" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="3kGPU1Q2M61" role="2OqNvi">
+                <node concept="1xMEDy" id="3kGPU1Q2M63" role="1xVPHs">
+                  <node concept="chp4Y" id="3kGPU1Q2M8A" role="ri$Ld">
+                    <ref role="cht4Q" to="at53:47nlIY20wOD" resolve="ViewModelDependencyRegistry" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3TrcHB" id="3kGPU1Q2MuX" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="47nlIY20z3x">
     <property role="3GE5qa" value="dependencies" />

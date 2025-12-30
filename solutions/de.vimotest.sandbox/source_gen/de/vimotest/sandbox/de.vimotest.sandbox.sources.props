@@ -55,7 +55,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/LowLevelFields_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/DataPathContext_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/XmlElementContext_ViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)SimpleDependency_ViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/SimpleDependency_ViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MessageBus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logger.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)commands/SelectEntryCommand_ViewModelMyOptionsOption.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/RadioButton_ViewModelOptionsOption.cs" />
   </ItemGroup>

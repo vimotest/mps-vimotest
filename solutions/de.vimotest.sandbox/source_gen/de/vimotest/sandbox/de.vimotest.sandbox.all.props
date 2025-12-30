@@ -55,7 +55,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/LowLevelFields_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/DataPathContext_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/XmlElementContext_ViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)SimpleDependency_ViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/SimpleDependency_ViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MessageBus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logger.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/CheckBoxes_ViewModelTestSetup.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/CheckBoxes_ViewModelTestSetupImpl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/CheckBoxes_ViewTest.cs" />

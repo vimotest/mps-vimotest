@@ -5734,7 +5734,7 @@
   </node>
   <node concept="103ZX$" id="4m0g11MwG31">
     <property role="$YGLj" value="SimpleDependency_" />
-    <property role="3GE5qa" value="support" />
+    <property role="3GE5qa" value="dependencies" />
     <node concept="103ZXx" id="4m0g11MwG32" role="103ZXC">
       <node concept="3Vw88J" id="4m0g11MwG33" role="1006ar">
         <property role="TrG5h" value="LoadView" />
@@ -5748,7 +5748,7 @@
     </node>
     <node concept="2PDISX" id="4m0g11MwG5r" role="2PDvFJ">
       <node concept="2PDviN" id="4m0g11MwG5P" role="RSswE">
-        <property role="TrG5h" value="IMessageBus" />
+        <property role="TrG5h" value="MessageBus" />
         <node concept="RSsdF" id="4m0g11MwG6C" role="RSskJ">
           <property role="TrG5h" value="OnMesssage" />
           <node concept="RSs3Z" id="4m0g11MI2dX" role="RSs6f">
@@ -5776,7 +5776,7 @@
     </node>
   </node>
   <node concept="33PlJ6" id="47nlIY28L$V">
-    <property role="3GE5qa" value="support" />
+    <property role="3GE5qa" value="dependencies" />
     <property role="TrG5h" value="SimpleDependencies" />
     <node concept="2PDviN" id="47nlIY2maYg" role="33PlJ4">
       <property role="TrG5h" value="Logger" />

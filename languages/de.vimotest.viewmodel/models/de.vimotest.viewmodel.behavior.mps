@@ -10979,6 +10979,29 @@
       </node>
       <node concept="3clFbS" id="47nlIY20x2H" role="3clF47" />
     </node>
+    <node concept="13i0hz" id="3kGPU1POVgU" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="isInRegistry" />
+      <node concept="3Tm1VV" id="3kGPU1POVgV" role="1B3o_S" />
+      <node concept="10P_77" id="3kGPU1PPfdW" role="3clF45" />
+      <node concept="3clFbS" id="3kGPU1POVgX" role="3clF47">
+        <node concept="3clFbF" id="3kGPU1PPfeJ" role="3cqZAp">
+          <node concept="2OqwBi" id="3kGPU1PPfKo" role="3clFbG">
+            <node concept="2OqwBi" id="3kGPU1PPfpQ" role="2Oq$k0">
+              <node concept="13iPFW" id="3kGPU1PPfeI" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="3kGPU1PPfxf" role="2OqNvi">
+                <node concept="1xMEDy" id="3kGPU1PPfxh" role="1xVPHs">
+                  <node concept="chp4Y" id="3kGPU1PPfz_" role="ri$Ld">
+                    <ref role="cht4Q" to="at53:47nlIY20wOD" resolve="ViewModelDependencyRegistry" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="3kGPU1PPfU7" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="47nlIY20x2o" role="13h7CW">
       <node concept="3clFbS" id="47nlIY20x2p" role="2VODD2" />
     </node>

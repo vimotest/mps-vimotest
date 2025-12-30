@@ -155,6 +155,9 @@
     <node concept="PrWs8" id="1F_Q10zW1eJ" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
+    <node concept="PrWs8" id="3kGPU1QcSOJ" role="PzmwI">
+      <ref role="PrY4T" node="3kGPU1QcSOP" resolve="IReferenceableDependency" />
+    </node>
     <node concept="1irR5M" id="6fZwY6igm51" role="rwd14">
       <property role="2$rrk2" value="1" />
       <node concept="1irR9n" id="2ZnRpGqLyK5" role="1irR9h">
@@ -1679,6 +1682,9 @@
     <node concept="PrWs8" id="47nlIY20z0n" role="PzmwI">
       <ref role="PrY4T" node="47nlIY20x2m" resolve="IDependencyListElement" />
     </node>
+    <node concept="PrWs8" id="3kGPU1QcSOR" role="PzmwI">
+      <ref role="PrY4T" node="3kGPU1QcSOP" resolve="IReferenceableDependency" />
+    </node>
     <node concept="1TJgyj" id="4m0g11MookZ" role="1TKVEi">
       <property role="IQ2ns" value="5008073225018639679" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1801,7 +1807,15 @@
       <property role="IQ2ns" value="4744356319136461024" />
       <property role="20kJfa" value="ref" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="69SOXVnRitH" resolve="ViewModelDependency" />
+      <ref role="20lvS9" node="3kGPU1QcSOP" resolve="IReferenceableDependency" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3kGPU1QcSOP">
+    <property role="EcuMT" value="3831674467163278645" />
+    <property role="3GE5qa" value="dependencies" />
+    <property role="TrG5h" value="IReferenceableDependency" />
+    <node concept="PrWs8" id="3kGPU1QjftN" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

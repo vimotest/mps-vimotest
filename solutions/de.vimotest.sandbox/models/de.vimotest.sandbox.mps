@@ -5789,5 +5789,21 @@
       </node>
     </node>
   </node>
+  <node concept="103ZX$" id="3kGPU1Qqw_Z">
+    <property role="$YGLj" value="ViewModelDependency_" />
+    <property role="3GE5qa" value="dependencies" />
+    <node concept="103ZXx" id="3kGPU1QqwA0" role="103ZXC">
+      <node concept="3Vw88J" id="3kGPU1QqwA1" role="1006ar">
+        <property role="TrG5h" value="LoadView" />
+      </node>
+    </node>
+    <node concept="103ZXB" id="3kGPU1QqwA2" role="103ZXF">
+      <node concept="1nWCU9" id="3kGPU1QqwA3" role="103ZUC">
+        <property role="TrG5h" value="MyBool" />
+        <node concept="1nBHEw" id="3kGPU1QqwA4" role="3xMlr6" />
+      </node>
+    </node>
+    <node concept="2PDISX" id="3kGPU1QqwA5" role="2PDvFJ" />
+  </node>
 </model>
 

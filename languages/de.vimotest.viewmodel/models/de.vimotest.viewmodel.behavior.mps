@@ -10975,7 +10975,7 @@
       <property role="TrG5h" value="getDependency" />
       <node concept="3Tm1VV" id="47nlIY20x2F" role="1B3o_S" />
       <node concept="3Tqbb2" id="47nlIY20yZl" role="3clF45">
-        <ref role="ehGHo" to="at53:69SOXVnRitH" resolve="ViewModelDependency" />
+        <ref role="ehGHo" to="at53:3kGPU1QcSOP" resolve="IReferenceableDependency" />
       </node>
       <node concept="3clFbS" id="47nlIY20x2H" role="3clF47" />
     </node>
@@ -11071,7 +11071,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="47nlIY20z4d" role="3clF45">
-        <ref role="ehGHo" to="at53:69SOXVnRitH" resolve="ViewModelDependency" />
+        <ref role="ehGHo" to="at53:3kGPU1QcSOP" resolve="IReferenceableDependency" />
       </node>
     </node>
   </node>

@@ -1,0 +1,10 @@
+namespace dependencies ;
+
+
+
+abstract class MessageBus {
+  
+  public abstract OnMesssage (  ) ;
+  
+  public abstract Foo (  ) ;
+}

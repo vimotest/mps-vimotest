@@ -400,7 +400,6 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
@@ -3732,19 +3731,6 @@
         <ref role="1NtTu8" to="at53:3JF9X1Ls77z" resolve="namespace" />
       </node>
       <node concept="l2Vlx" id="3JF9X1LtxCI" role="2iSdaV" />
-      <node concept="pkWqt" id="3JF9X1LtxCJ" role="pqm2j">
-        <node concept="3clFbS" id="3JF9X1LtxCK" role="2VODD2">
-          <node concept="3clFbF" id="3JF9X1LtxCL" role="3cqZAp">
-            <node concept="3clFbC" id="3JF9X1LtxCM" role="3clFbG">
-              <node concept="pncrf" id="3JF9X1LtxCN" role="3uHU7w" />
-              <node concept="2OqwBi" id="3JF9X1LtxCO" role="3uHU7B">
-                <node concept="pncrf" id="3JF9X1LtxCP" role="2Oq$k0" />
-                <node concept="2Rxl7S" id="3JF9X1LtxCQ" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3F1kzPoHIXO">
@@ -5209,6 +5195,12 @@
         </node>
       </node>
       <node concept="l2Vlx" id="4m0g11Moont" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="32SpZNJbbFx" role="6VMZX">
+      <node concept="l2Vlx" id="32SpZNJbbFy" role="2iSdaV" />
+      <node concept="PMmxH" id="32SpZNJbbFz" role="3EZMnx">
+        <ref role="PMmxG" node="3JF9X1LtxCE" resolve="IHasNamespace_EC" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="4m0g11Mootf">

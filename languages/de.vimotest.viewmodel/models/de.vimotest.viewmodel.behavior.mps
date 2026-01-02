@@ -365,6 +365,7 @@
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
@@ -7954,7 +7955,10 @@
           <node concept="3clFbS" id="3JF9X1LtLo_" role="3clFbx">
             <node concept="3cpWs6" id="3JF9X1LtNPx" role="3cqZAp">
               <node concept="2OqwBi" id="3JF9X1LtNRX" role="3cqZAk">
-                <node concept="13iPFW" id="3JF9X1LtNPB" role="2Oq$k0" />
+                <node concept="2OqwBi" id="32SpZNJg1Uj" role="2Oq$k0">
+                  <node concept="13iPFW" id="3JF9X1LtNPB" role="2Oq$k0" />
+                  <node concept="2Rxl7S" id="32SpZNJg3GT" role="2OqNvi" />
+                </node>
                 <node concept="3TrcHB" id="3JF9X1LtNTp" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:hnGE5uv" resolve="virtualPackage" />
                 </node>

@@ -51,6 +51,7 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewModel.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewModel.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/SimpleDependency_ViewModel.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewModelDependency_ViewModel.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewModelTestSetupImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewModelTestSetupImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewModelTestSetupImpl.cpp
@@ -135,8 +136,9 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/context/DataPathContext_ViewModel.h
   ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_ViewModel.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/SimpleDependency_ViewModel.h
-  ${CMAKE_CURRENT_LIST_DIR}/MessageBus.h
-  ${CMAKE_CURRENT_LIST_DIR}/Logger.h
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewModelDependency_ViewModel.h
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/MessageBus.h
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/Logger.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewModelTestSetup.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewModelTestSetupImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewModelTestSetup.h

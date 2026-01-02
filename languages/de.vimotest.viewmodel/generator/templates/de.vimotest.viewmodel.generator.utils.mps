@@ -1626,6 +1626,67 @@
         </node>
       </node>
     </node>
+    <node concept="2YIFZL" id="32SpZNIS3lj" role="jymVt">
+      <property role="TrG5h" value="getViewModelDependencyClassName" />
+      <node concept="37vLTG" id="32SpZNIS4wS" role="3clF46">
+        <property role="TrG5h" value="dependency" />
+        <node concept="3Tqbb2" id="32SpZNIS4SH" role="1tU5fm">
+          <ref role="ehGHo" to="at53:69SOXVnRitH" resolve="ViewModelDependency" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="32SpZNIS3lm" role="3clF47">
+        <node concept="3clFbJ" id="32SpZNIS3Pa" role="3cqZAp">
+          <node concept="3clFbS" id="32SpZNIS3Pb" role="3clFbx">
+            <node concept="3cpWs6" id="32SpZNIS3Pc" role="3cqZAp">
+              <node concept="2OqwBi" id="32SpZNIS3Pd" role="3cqZAk">
+                <node concept="2OqwBi" id="32SpZNIS3Pe" role="2Oq$k0">
+                  <node concept="37vLTw" id="32SpZNIS3Pf" role="2Oq$k0">
+                    <ref role="3cqZAo" node="32SpZNIS4wS" resolve="dependency" />
+                  </node>
+                  <node concept="3CFZ6_" id="32SpZNIS3Pg" role="2OqNvi">
+                    <node concept="3CFYIy" id="32SpZNIS3Ph" role="3CFYIz">
+                      <ref role="3CFYIx" to="at53:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="32SpZNIS3Pi" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:3MA_BelBku6" resolve="customName" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="32SpZNIS3Pj" role="3clFbw">
+            <node concept="2OqwBi" id="32SpZNIS3Pk" role="2Oq$k0">
+              <node concept="37vLTw" id="32SpZNIS3Pl" role="2Oq$k0">
+                <ref role="3cqZAo" node="32SpZNIS4wS" resolve="dependency" />
+              </node>
+              <node concept="3CFZ6_" id="32SpZNIS3Pm" role="2OqNvi">
+                <node concept="3CFYIy" id="32SpZNIS3Pn" role="3CFYIz">
+                  <ref role="3CFYIx" to="at53:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="32SpZNIS3Po" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="32SpZNIS3Pp" role="3cqZAp">
+          <node concept="2YIFZM" id="32SpZNIS3Pq" role="3clFbG">
+            <ref role="37wK5l" to="18ew:~NameUtil.toValidIdentifier(java.lang.String)" resolve="toValidIdentifier" />
+            <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+            <node concept="2OqwBi" id="32SpZNIS3Pr" role="37wK5m">
+              <node concept="37vLTw" id="32SpZNIS3Ps" role="2Oq$k0">
+                <ref role="3cqZAo" node="32SpZNIS4wS" resolve="dependency" />
+              </node>
+              <node concept="3TrcHB" id="32SpZNIS3Pt" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="32SpZNIS0OU" role="1B3o_S" />
+      <node concept="17QB3L" id="32SpZNIS2ZV" role="3clF45" />
+    </node>
     <node concept="3Tm1VV" id="2evlxT94KqT" role="1B3o_S" />
   </node>
 </model>

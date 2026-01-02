@@ -5773,6 +5773,9 @@
       <node concept="33PmoL" id="47nlIY2uGJx" role="RSswE">
         <ref role="33Pmof" node="47nlIY2maYg" resolve="Logger" />
       </node>
+      <node concept="33PmoL" id="32SpZNIZgXF" role="RSswE">
+        <ref role="33Pmof" node="3kGPU1Qqw_Z" resolve="ViewModelDependency_ViewModel" />
+      </node>
     </node>
   </node>
   <node concept="33PlJ6" id="47nlIY28L$V">

@@ -1685,6 +1685,15 @@
     <node concept="PrWs8" id="3kGPU1QcSOR" role="PzmwI">
       <ref role="PrY4T" node="3kGPU1QcSOP" resolve="IReferenceableDependency" />
     </node>
+    <node concept="PrWs8" id="32SpZNIS8iJ" role="PzmwI">
+      <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+    </node>
+    <node concept="PrWs8" id="32SpZNIS8iK" role="PzmwI">
+      <ref role="PrY4T" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+    </node>
+    <node concept="PrWs8" id="32SpZNIS8iL" role="PzmwI">
+      <ref role="PrY4T" node="3JF9X1LrZr1" resolve="IHasNamespace" />
+    </node>
     <node concept="1TJgyj" id="4m0g11MookZ" role="1TKVEi">
       <property role="IQ2ns" value="5008073225018639679" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

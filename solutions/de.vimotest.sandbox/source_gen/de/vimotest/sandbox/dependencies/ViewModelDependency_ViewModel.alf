@@ -1,0 +1,17 @@
+namespace dependencies ;
+
+
+
+
+public class ViewModelDependency_ViewModel {
+  
+  public MyBool : Boolean  ;
+  
+  public getMyBool (  ) : Boolean  {
+    return this.MyBool;
+
+  }
+  
+  public loadView (  ) {    
+  }
+}

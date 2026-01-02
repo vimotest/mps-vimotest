@@ -3721,11 +3721,23 @@
     <property role="3GE5qa" value="util" />
     <ref role="1XX52x" to="at53:3JF9X1LrZr1" resolve="IHasNamespace" />
     <node concept="3EZMnI" id="3JF9X1LtxCF" role="2wV5jI">
-      <node concept="3F0ifn" id="3JF9X1LtxCG" role="3EZMnx">
-        <property role="3F0ifm" value="namespace:" />
+      <node concept="3F0ifn" id="1GOfCi7TEns" role="3EZMnx">
+        <property role="3F0ifm" value="virtual package:" />
         <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
       </node>
-      <node concept="3F0A7n" id="3JF9X1LtxCH" role="3EZMnx">
+      <node concept="3F0A7n" id="1GOfCi7TEnk" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <property role="1$x2rV" value="none" />
+        <ref role="1NtTu8" to="tpck:hnGE5uv" resolve="virtualPackage" />
+      </node>
+      <node concept="3F0ifn" id="32SpZNJC1_C" role="3EZMnx">
+        <property role="3F0ifm" value="namespace:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        <node concept="pVoyu" id="32SpZNJC1_D" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="32SpZNJC1_B" role="3EZMnx">
         <property role="1$x2rV" value="&lt;virtualPackage&gt;" />
         <property role="1O74Pk" value="true" />
         <ref role="1NtTu8" to="at53:3JF9X1Ls77z" resolve="namespace" />

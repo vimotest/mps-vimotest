@@ -7954,13 +7954,10 @@
           </node>
           <node concept="3clFbS" id="3JF9X1LtLo_" role="3clFbx">
             <node concept="3cpWs6" id="3JF9X1LtNPx" role="3cqZAp">
-              <node concept="2OqwBi" id="3JF9X1LtNRX" role="3cqZAk">
-                <node concept="2OqwBi" id="32SpZNJg1Uj" role="2Oq$k0">
-                  <node concept="13iPFW" id="3JF9X1LtNPB" role="2Oq$k0" />
-                  <node concept="2Rxl7S" id="32SpZNJg3GT" role="2OqNvi" />
-                </node>
-                <node concept="3TrcHB" id="3JF9X1LtNTp" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:hnGE5uv" resolve="virtualPackage" />
+              <node concept="2OqwBi" id="32SpZNJGTbr" role="3cqZAk">
+                <node concept="13iPFW" id="32SpZNJGTax" role="2Oq$k0" />
+                <node concept="2qgKlT" id="32SpZNJGTl8" role="2OqNvi">
+                  <ref role="37wK5l" node="32SpZNJGR81" resolve="getEffectiveVirtualPackage" />
                 </node>
               </node>
             </node>
@@ -7971,6 +7968,45 @@
             <node concept="13iPFW" id="3JF9X1LtNVj" role="2Oq$k0" />
             <node concept="3TrcHB" id="3JF9X1LtOeZ" role="2OqNvi">
               <ref role="3TsBF5" to="at53:3JF9X1Ls77z" resolve="namespace" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="32SpZNJGR81" role="13h7CS">
+      <property role="TrG5h" value="getEffectiveVirtualPackage" />
+      <node concept="3Tm1VV" id="32SpZNJGR82" role="1B3o_S" />
+      <node concept="17QB3L" id="32SpZNJGR9L" role="3clF45" />
+      <node concept="3clFbS" id="32SpZNJGR84" role="3clF47">
+        <node concept="3clFbJ" id="32SpZNJGRaj" role="3cqZAp">
+          <node concept="2OqwBi" id="32SpZNJGSq7" role="3clFbw">
+            <node concept="2OqwBi" id="32SpZNJGRjW" role="2Oq$k0">
+              <node concept="13iPFW" id="32SpZNJGRaG" role="2Oq$k0" />
+              <node concept="3TrcHB" id="32SpZNJGRrp" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:hnGE5uv" resolve="virtualPackage" />
+              </node>
+            </node>
+            <node concept="17RlXB" id="32SpZNJGSIr" role="2OqNvi" />
+          </node>
+          <node concept="3clFbS" id="32SpZNJGRal" role="3clFbx">
+            <node concept="3cpWs6" id="32SpZNJGSJ1" role="3cqZAp">
+              <node concept="2OqwBi" id="32SpZNJGSJ2" role="3cqZAk">
+                <node concept="2OqwBi" id="32SpZNJGSJ3" role="2Oq$k0">
+                  <node concept="13iPFW" id="32SpZNJGSJ4" role="2Oq$k0" />
+                  <node concept="2Rxl7S" id="32SpZNJGSJ5" role="2OqNvi" />
+                </node>
+                <node concept="3TrcHB" id="32SpZNJGSJ6" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:hnGE5uv" resolve="virtualPackage" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="32SpZNJGSLB" role="3cqZAp">
+          <node concept="2OqwBi" id="32SpZNJGT02" role="3cqZAk">
+            <node concept="13iPFW" id="32SpZNJGSQ8" role="2Oq$k0" />
+            <node concept="3TrcHB" id="32SpZNJGT88" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:hnGE5uv" resolve="virtualPackage" />
             </node>
           </node>
         </node>

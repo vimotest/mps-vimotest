@@ -1,12 +1,14 @@
 /// <filename>
 ///     MessageBus.cs
 /// </filename>
+using System.Collections.Generic;
+
 namespace dependencies
 {
     internal interface MessageBus
     {
-        void OnMesssage();
+        void OnMesssage(int messageId, System.Collections.Generic.List<string> names);
 
-        void Foo();
+        void Foo(bool bar);
     }
 }

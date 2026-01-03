@@ -4,5 +4,5 @@ namespace dependencies ;
 
 abstract class Logger {
   
-  public abstract Log (  ) ;
+  public abstract Log (   in message: String  ) ;
 }

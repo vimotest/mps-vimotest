@@ -1,12 +1,15 @@
 #pragma once
 
+#include <vector>
+#include <string>
+
 namespace dependencies
 {
   class MessageBus
   {
   public:
     virtual ~MessageBus() = default;
-    virtual void OnMesssage() = 0;
-    virtual void Foo() = 0;
+    virtual void OnMesssage(int messageId, std::vector<std::string> names) = 0;
+    virtual void Foo(bool bar) = 0;
   };
 }

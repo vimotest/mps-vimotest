@@ -1130,6 +1130,7 @@
       </node>
       <node concept="3F0ifn" id="4Pj3bOmvgzL" role="3EZMnx">
         <property role="3F0ifm" value="test setup class name:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
         <node concept="pVoyu" id="4Pj3bOmvgzN" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

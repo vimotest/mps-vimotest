@@ -4,5 +4,5 @@ package de.vimotest.sandbox.dependencies;
 
 
 public interface Logger {
-  void Log();
+  void Log(String message);
 }

@@ -5,6 +5,6 @@ namespace dependencies
 {
     internal interface Logger
     {
-        void Log();
+        void Log(string message);
     }
 }

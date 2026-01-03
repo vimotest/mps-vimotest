@@ -4,7 +4,7 @@ namespace dependencies ;
 
 abstract class MessageBus {
   
-  public abstract OnMesssage (  ) ;
+  public abstract OnMesssage (   in messageId: Integer ,   in names: String [ * ]  ) ;
   
-  public abstract Foo (  ) ;
+  public abstract Foo (   in bar: Boolean  ) ;
 }

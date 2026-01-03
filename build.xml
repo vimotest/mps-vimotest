@@ -108,6 +108,7 @@
           <module ref="779e9fc4-5168-49e7-b541-bfe5ba91a814(de.vimotest.mpswidgets)" kind="cl" />
           <module ref="79d38a3b-c7d9-48fe-86ef-ab311632763c(de.vimotest.mpswidgets.runtime)" kind="cl" />
           <module ref="611ecc9e-0703-4ab9-a13c-fb396c607716(de.vimotest.types)" kind="cl" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" kind="cl" />
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
           <module ref="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" kind="cl" />
           <module ref="258bd2f6-0d02-411d-86b2-5a5ea083e6d2(jetbrains.mps.lang.editor.table.runtime)" kind="cl" />
@@ -968,6 +969,7 @@
           <module ref="779e9fc4-5168-49e7-b541-bfe5ba91a814(de.vimotest.mpswidgets)" kind="cl" />
           <module ref="79d38a3b-c7d9-48fe-86ef-ab311632763c(de.vimotest.mpswidgets.runtime)" kind="cl" />
           <module ref="611ecc9e-0703-4ab9-a13c-fb396c607716(de.vimotest.types)" kind="cl" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" kind="cl" />
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
           <module ref="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" kind="cl" />
           <module ref="258bd2f6-0d02-411d-86b2-5a5ea083e6d2(jetbrains.mps.lang.editor.table.runtime)" kind="cl" />

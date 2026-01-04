@@ -11,4 +11,5 @@ class SelectEntryCommand_ViewModelTestSetupImpl specializes SelectEntryCommand_V
     return null;
 
   }
+  
 }

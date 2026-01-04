@@ -23,4 +23,5 @@ public class DataTableContext_ViewModelTestSetupImpl extends DataTableContext_Vi
   public DataTableContext_ViewModel BuildSut() {
     return null;
   }
+
 }

@@ -14,4 +14,5 @@ public class Buttons_ViewModelTestSetupImpl extends Buttons_ViewModelTestSetup {
   public Buttons_ViewModel BuildSut() {
     return null;
   }
+
 }

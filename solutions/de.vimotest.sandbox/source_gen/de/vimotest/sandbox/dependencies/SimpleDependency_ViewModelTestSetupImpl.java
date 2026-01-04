@@ -11,4 +11,13 @@ public class SimpleDependency_ViewModelTestSetupImpl extends SimpleDependency_Vi
   public SimpleDependency_ViewModel BuildSut() {
     return null;
   }
+  @Override
+  public MessageBus getMessageBus() {
+    return null;
+  }
+  @Override
+  public Logger getLogger() {
+    return null;
+  }
+
 }

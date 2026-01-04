@@ -17,4 +17,5 @@ class XmlFileContext_ViewModelTestSetupImpl specializes XmlFileContext_ViewModel
     return null;
 
   }
+  
 }

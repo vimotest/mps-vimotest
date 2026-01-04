@@ -11,4 +11,5 @@ public class RadioButton_ViewModelTestSetupImpl extends RadioButton_ViewModelTes
   public RadioButton_ViewModel BuildSut() {
     return null;
   }
+
 }

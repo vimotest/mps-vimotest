@@ -10,5 +10,9 @@ namespace dependencies
         public abstract void Init();
 
         public abstract dependencies.SimpleDependency_ViewModel BuildSut();
+
+        public abstract dependencies.MessageBus getMessageBus();
+
+        public abstract dependencies.Logger getLogger();
     }
 }

@@ -11041,7 +11041,7 @@
   </node>
   <node concept="13h7C7" id="47nlIY20x2n">
     <property role="3GE5qa" value="dependencies" />
-    <ref role="13h7C2" to="at53:47nlIY20x2m" resolve="IDependencyListElement" />
+    <ref role="13h7C2" to="at53:47nlIY20x2m" resolve="IDependencySectionContent" />
     <node concept="13i0hz" id="47nlIY20x2E" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />

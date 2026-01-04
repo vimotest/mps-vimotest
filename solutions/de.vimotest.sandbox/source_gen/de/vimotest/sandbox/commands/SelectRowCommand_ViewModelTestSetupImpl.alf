@@ -11,4 +11,5 @@ class SelectRowCommand_ViewModelTestSetupImpl specializes SelectRowCommand_ViewM
     return null;
 
   }
+  
 }

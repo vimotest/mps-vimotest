@@ -11,4 +11,5 @@ public class LoadCommand_ViewModelTestSetupImpl extends LoadCommand_ViewModelTes
   public LoadCommand_ViewModel BuildSut() {
     return null;
   }
+
 }

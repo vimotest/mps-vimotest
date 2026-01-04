@@ -2,6 +2,8 @@
 
 #include <memory>
 #include "SimpleDependency_ViewModel.h"
+#include "MessageBus.h"
+#include "Logger.h"
 
 namespace dependencies
 {
@@ -11,5 +13,7 @@ namespace dependencies
     virtual ~SimpleDependency_ViewModelTestSetup() = default;
     virtual void Init() = 0;
     virtual std::shared_ptr<SimpleDependency_ViewModel> BuildSut() = 0;
+    virtual std::shared_ptr<MessageBus> getMessageBus() = 0;
+    virtual std::shared_ptr<Logger> getLogger() = 0;
   };
 }

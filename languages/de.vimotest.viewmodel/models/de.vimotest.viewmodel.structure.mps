@@ -137,8 +137,8 @@
     <node concept="1TJgyj" id="69SOXVnRi$L" role="1TKVEi">
       <property role="IQ2ns" value="7095654166980012337" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="dependencies" />
-      <ref role="20lvS9" node="69SOXVnRzRz" resolve="DependencyList" />
+      <property role="20kJfa" value="dependencySection" />
+      <ref role="20lvS9" node="69SOXVnRzRz" resolve="DependencySection" />
     </node>
     <node concept="PrWs8" id="F907haLJWq" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -1686,7 +1686,7 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="47nlIY20z0n" role="PzmwI">
-      <ref role="PrY4T" node="47nlIY20x2m" resolve="IDependencyListElement" />
+      <ref role="PrY4T" node="47nlIY20x2m" resolve="IDependencySectionContent" />
     </node>
     <node concept="PrWs8" id="3kGPU1QcSOR" role="PzmwI">
       <ref role="PrY4T" node="3kGPU1QcSOP" resolve="IReferenceableDependency" />
@@ -1724,16 +1724,16 @@
   </node>
   <node concept="1TIwiD" id="69SOXVnRzRz">
     <property role="EcuMT" value="7095654166980083171" />
-    <property role="TrG5h" value="DependencyList" />
+    <property role="TrG5h" value="DependencySection" />
     <property role="34LRSv" value="dependencies" />
     <property role="3GE5qa" value="dependencies" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4m0g11MoowU" role="1TKVEi">
       <property role="IQ2ns" value="5008073225018640442" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="dependencies" />
+      <property role="20kJfa" value="contents" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="47nlIY20x2m" resolve="IDependencyListElement" />
+      <ref role="20lvS9" node="47nlIY20x2m" resolve="IDependencySectionContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="4m0g11Moo3J">
@@ -1822,7 +1822,7 @@
   <node concept="PlHQZ" id="47nlIY20x2m">
     <property role="EcuMT" value="4744356319136452758" />
     <property role="3GE5qa" value="dependencies" />
-    <property role="TrG5h" value="IDependencyListElement" />
+    <property role="TrG5h" value="IDependencySectionContent" />
   </node>
   <node concept="1TIwiD" id="47nlIY20z3u">
     <property role="EcuMT" value="4744356319136461022" />
@@ -1830,7 +1830,7 @@
     <property role="TrG5h" value="DependencyRef" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="47nlIY20z3v" role="PzmwI">
-      <ref role="PrY4T" node="47nlIY20x2m" resolve="IDependencyListElement" />
+      <ref role="PrY4T" node="47nlIY20x2m" resolve="IDependencySectionContent" />
     </node>
     <node concept="1TJgyj" id="47nlIY20z3w" role="1TKVEi">
       <property role="IQ2ns" value="4744356319136461024" />

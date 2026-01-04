@@ -56,7 +56,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)context/DataPathContext_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/XmlElementContext_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/SimpleDependency_ViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)dependencies/Dependency_ViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/ViewModelDependency_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/MessageBus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/Logger.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)commands/SelectEntryCommand_ViewModelMyOptionsOption.cs" />

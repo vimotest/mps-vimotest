@@ -79,7 +79,7 @@
       <concept id="4696656866608863568" name="de.vimotest.viewmodel.testing.structure.ComboBoxCheck" flags="ng" index="7cNBp">
         <child id="4696656866608863569" name="checks" index="7cNBo" />
       </concept>
-      <concept id="8948051009467167877" name="de.vimotest.viewmodel.testing.structure.ViewCommandInvocationAction" flags="ng" index="27s6xY">
+      <concept id="8948051009467167877" name="de.vimotest.viewmodel.testing.structure.CommandInvocationAction" flags="ng" index="27s6xY">
         <reference id="8948051009467187564" name="targetCommand" index="27sXQn" />
         <child id="8948051009467207553" name="parameters" index="27sTdU" />
       </concept>
@@ -301,7 +301,7 @@
       <concept id="9155943921465570409" name="de.vimotest.viewmodel.structure.SelectedRowFeature" flags="ng" index="1i$ol">
         <property id="7922086861368564014" name="supportMultipleSelectedRows" index="1Imn4D" />
       </concept>
-      <concept id="9208231005772576871" name="de.vimotest.viewmodel.structure.AbstractViewModelParameterizedCommand" flags="ng" index="231sOC">
+      <concept id="9208231005772576871" name="de.vimotest.viewmodel.structure.AbstractParameterizedCommand" flags="ng" index="231sOC">
         <property id="1008128444466031715" name="hasParameters" index="2hCfGp" />
       </concept>
       <concept id="885291782481719619" name="de.vimotest.viewmodel.structure.ViewWidgetFeature" flags="ng" index="25b05G">
@@ -374,8 +374,8 @@
       <concept id="7095654166980011885" name="de.vimotest.viewmodel.structure.Dependency" flags="ng" index="2PDviN">
         <child id="5008073225018639679" name="operations" index="RSskJ" />
       </concept>
-      <concept id="7095654166980083171" name="de.vimotest.viewmodel.structure.ViewModelDependencyList" flags="ng" index="2PDISX">
-        <child id="5008073225018640442" name="dependencies" index="RSswE" />
+      <concept id="7095654166980083171" name="de.vimotest.viewmodel.structure.DependencySection" flags="ng" index="2PDISX">
+        <child id="5008073225018640442" name="contents" index="RSswE" />
       </concept>
       <concept id="3225812364372528779" name="de.vimotest.viewmodel.structure.CustomFileNameBinding" flags="ng" index="QIaRa">
         <property id="3225812364372528782" name="customBaseFileName" index="QIaRf" />
@@ -407,23 +407,23 @@
         <child id="6201744883139140302" name="textFeature" index="2X2XNi" />
         <child id="6201744883139140303" name="enabledFeature" index="2X2XNj" />
       </concept>
-      <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommands" flags="ng" index="103ZXx">
-        <child id="777152910169039599" name="commands" index="1006ar" />
+      <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommandSection" flags="ng" index="103ZXx">
+        <child id="777152910169039599" name="contents" index="1006ar" />
       </concept>
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
         <property id="4513875792335097421" name="baseName" index="$YGLj" />
-        <child id="7095654166980012337" name="dependencies" index="2PDvFJ" />
-        <child id="777152910168882972" name="commands" index="103ZXC" />
-        <child id="777152910168882975" name="state" index="103ZXF" />
+        <child id="7095654166980012337" name="dependencySection" index="2PDvFJ" />
+        <child id="777152910168882972" name="commandSection" index="103ZXC" />
+        <child id="777152910168882975" name="stateSection" index="103ZXF" />
       </concept>
-      <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelState" flags="ng" index="103ZXB" />
+      <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelStateSection" flags="ng" index="103ZXB" />
       <concept id="5775867078593476371" name="de.vimotest.viewmodel.structure.TextColorFeature" flags="ng" index="31hZui">
         <property id="5775867078593476692" name="defaultColorCode" index="31hZzl" />
       </concept>
-      <concept id="4744356319136451881" name="de.vimotest.viewmodel.structure.ViewModelDependencyRegistry" flags="ng" index="33PlJ6">
+      <concept id="4744356319136451881" name="de.vimotest.viewmodel.structure.DependencyRegistry" flags="ng" index="33PlJ6">
         <child id="4744356319136451883" name="dependencies" index="33PlJ4" />
       </concept>
-      <concept id="4744356319136461022" name="de.vimotest.viewmodel.structure.ViewModelDependencyRef" flags="ng" index="33PmoL">
+      <concept id="4744356319136461022" name="de.vimotest.viewmodel.structure.DependencyRef" flags="ng" index="33PmoL">
         <reference id="4744356319136461024" name="ref" index="33Pmof" />
       </concept>
       <concept id="3467481306584357561" name="de.vimotest.viewmodel.structure.IRowBasedViewWidget" flags="ngI" index="18mAPp">
@@ -5794,7 +5794,7 @@
     </node>
   </node>
   <node concept="103ZX$" id="3kGPU1Qqw_Z">
-    <property role="$YGLj" value="Dependency_" />
+    <property role="$YGLj" value="ViewModelDependency_" />
     <property role="3GE5qa" value="dependencies" />
     <node concept="103ZXx" id="3kGPU1QqwA0" role="103ZXC">
       <node concept="3Vw88J" id="3kGPU1QqwA1" role="1006ar">
@@ -5815,8 +5815,8 @@
   </node>
   <node concept="30n1Qd" id="54nmQxEJWUd">
     <property role="3GE5qa" value="dependencies" />
-    <property role="TrG5h" value="Dependency_ViewModelTests" />
-    <ref role="30n1PB" node="3kGPU1Qqw_Z" resolve="Dependency_ViewModel" />
+    <property role="TrG5h" value="ViewModelDependency_ViewModelTests" />
+    <ref role="30n1PB" node="3kGPU1Qqw_Z" resolve="ViewModelDependency_ViewModel" />
     <node concept="3LKzX3" id="54nmQxEJWUe" role="30n1Qb">
       <property role="TrG5h" value="ViewModel Dependency Invocation" />
       <node concept="1s$VFG" id="54nmQxEJWUh" role="1s$QAY">

@@ -1133,6 +1133,36 @@
         <node concept="1iwH7U" id="2j_CuGY32DX" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2YIFZL" id="54nmQxI_fA2" role="jymVt">
+      <property role="TrG5h" value="getDependencyGetterName" />
+      <node concept="3clFbS" id="54nmQxI_fA5" role="3clF47">
+        <node concept="3clFbF" id="54nmQxI_jQp" role="3cqZAp">
+          <node concept="1rXfSq" id="54nmQxI_jQn" role="3clFbG">
+            <ref role="37wK5l" node="6RKU0s3ptv0" resolve="toValidIdentifier" />
+            <node concept="2YIFZM" id="54nmQxI_k8Y" role="37wK5m">
+              <ref role="37wK5l" to="18ew:~NameUtil.getGetterName(java.lang.String)" resolve="getGetterName" />
+              <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+              <node concept="2OqwBi" id="54nmQxI_k8Z" role="37wK5m">
+                <node concept="37vLTw" id="54nmQxI_k90" role="2Oq$k0">
+                  <ref role="3cqZAo" node="54nmQxI_g_j" resolve="node" />
+                </node>
+                <node concept="3TrcHB" id="54nmQxI_k91" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="54nmQxI_eTR" role="1B3o_S" />
+      <node concept="17QB3L" id="54nmQxI_fod" role="3clF45" />
+      <node concept="37vLTG" id="54nmQxI_g_j" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="54nmQxI_g_i" role="1tU5fm">
+          <ref role="ehGHo" to="at53:3kGPU1QcSOP" resolve="IReferenceableDependency" />
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="2evlxT94KqT" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="7ceEXPSyDOa">

@@ -11,4 +11,5 @@ public class SelectEntryCommand_ViewModelTestSetupImpl extends SelectEntryComman
   public SelectEntryCommand_ViewModel BuildSut() {
     return null;
   }
+
 }

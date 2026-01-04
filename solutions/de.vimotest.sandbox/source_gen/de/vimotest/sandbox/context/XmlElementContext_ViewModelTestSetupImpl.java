@@ -14,4 +14,5 @@ public class XmlElementContext_ViewModelTestSetupImpl extends XmlElementContext_
   public XmlElementContext_ViewModel BuildSut() {
     return null;
   }
+
 }

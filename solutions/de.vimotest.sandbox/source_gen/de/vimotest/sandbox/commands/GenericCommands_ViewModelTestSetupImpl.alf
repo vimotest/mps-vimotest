@@ -11,4 +11,5 @@ class GenericCommands_ViewModelTestSetupImpl specializes GenericCommands_ViewMod
     return null;
 
   }
+  
 }

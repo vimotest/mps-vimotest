@@ -1,20 +1,20 @@
 /// <filename>
-///     Dependency_ViewModelTests.cs
+///     ViewModelDependency_ViewModelTests.cs
 /// </filename>
 using dependencies;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
-public class Dependency_ViewModelTests
+public class ViewModelDependency_ViewModelTests
 {
-    private dependencies.Dependency_ViewModel sut;
+    private dependencies.ViewModelDependency_ViewModel sut;
 
-    private dependencies.Dependency_ViewModelTestSetup testSetup;
+    private dependencies.ViewModelDependency_ViewModelTestSetup testSetup;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new dependencies.Dependency_ViewModelTestSetupImpl();
+        this.testSetup = new dependencies.ViewModelDependency_ViewModelTestSetupImpl();
         this.testSetup.Init();
     }
 

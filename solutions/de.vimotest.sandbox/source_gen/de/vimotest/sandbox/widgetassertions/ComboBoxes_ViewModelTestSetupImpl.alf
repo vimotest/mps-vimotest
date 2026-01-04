@@ -14,4 +14,5 @@ class ComboBoxes_ViewModelTestSetupImpl specializes ComboBoxes_ViewModelTestSetu
     return null;
 
   }
+  
 }

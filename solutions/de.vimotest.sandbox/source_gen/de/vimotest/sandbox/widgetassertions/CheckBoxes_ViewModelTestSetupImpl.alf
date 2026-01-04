@@ -14,4 +14,5 @@ class CheckBoxes_ViewModelTestSetupImpl specializes CheckBoxes_ViewModelTestSetu
     return null;
 
   }
+  
 }

@@ -14,4 +14,5 @@ public class ComboBoxes_ViewModelTestSetupImpl extends ComboBoxes_ViewModelTestS
   public ComboBoxes_ViewModel BuildSut() {
     return null;
   }
+
 }

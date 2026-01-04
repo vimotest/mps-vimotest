@@ -15,5 +15,15 @@ namespace dependencies
         {
             return null;
         }
+
+        public override dependencies.MessageBus getMessageBus()
+        {
+            return null;
+        }
+
+        public override dependencies.Logger getLogger()
+        {
+            return null;
+        }
     }
 }

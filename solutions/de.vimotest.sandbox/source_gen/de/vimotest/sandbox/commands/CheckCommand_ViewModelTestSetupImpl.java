@@ -11,4 +11,5 @@ public class CheckCommand_ViewModelTestSetupImpl extends CheckCommand_ViewModelT
   public CheckCommand_ViewModel BuildSut() {
     return null;
   }
+
 }

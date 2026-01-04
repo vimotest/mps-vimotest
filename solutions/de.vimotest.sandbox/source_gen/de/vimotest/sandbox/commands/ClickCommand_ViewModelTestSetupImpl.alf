@@ -11,4 +11,5 @@ class ClickCommand_ViewModelTestSetupImpl specializes ClickCommand_ViewModelTest
     return null;
 
   }
+  
 }

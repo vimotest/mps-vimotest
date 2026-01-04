@@ -3,7 +3,7 @@ namespace dependencies ;
 
 
 
-public class Dependency_ViewModel {
+public class ViewModelDependency_ViewModel {
   
   public MyBool : Boolean  ;
   

@@ -14,4 +14,5 @@ public class ContextReference_ViewModelTestSetupImpl extends ContextReference_Vi
   public ContextReference_ViewModel BuildSut() {
     return null;
   }
+
 }

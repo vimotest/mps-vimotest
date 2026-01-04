@@ -7,4 +7,8 @@ abstract class SimpleDependency_ViewModelTestSetup {
   public abstract Init (  ) ;
   
   public abstract BuildSut (  ) : SimpleDependency_ViewModel  ;
+  
+  public abstract getMessageBus (  ) : MessageBus  ;
+  
+  public abstract getLogger (  ) : Logger  ;
 }

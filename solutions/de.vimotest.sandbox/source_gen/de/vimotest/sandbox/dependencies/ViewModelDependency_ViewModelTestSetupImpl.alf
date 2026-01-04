@@ -1,0 +1,20 @@
+namespace dependencies ;
+
+
+
+class ViewModelDependency_ViewModelTestSetupImpl specializes ViewModelDependency_ViewModelTestSetup {
+  
+  public Init (  ) {    
+  }
+  
+  public BuildSut (  ) : ViewModelDependency_ViewModel  {
+    return null;
+
+  }
+  
+  public getSimpleDependency_ViewModel (  ) : ViewModelDependency_ViewModel  {
+    return null;
+
+  }
+  
+}

@@ -6218,6 +6218,61 @@
           <ref role="2rW$FS" node="aV2Sa0uTZ8" resolve="ViewModelFeatureTestSuite_TestSetup_BuildSut_OperationDefinition" />
         </node>
       </node>
+      <node concept="6nSm6" id="54nmQxIy8ke" role="PCHHv">
+        <property role="TrG5h" value="GetDependency" />
+        <property role="PCHGy" value="true" />
+        <node concept="1ps_y7" id="54nmQxI_z7P" role="lGtFl">
+          <node concept="1ps_xZ" id="54nmQxI_z7Q" role="1ps_xO">
+            <property role="TrG5h" value="testSuite" />
+            <node concept="2jfdEK" id="54nmQxI_z7R" role="1ps_xN">
+              <node concept="3clFbS" id="54nmQxI_z7S" role="2VODD2">
+                <node concept="3clFbF" id="54nmQxI_zhj" role="3cqZAp">
+                  <node concept="30H73N" id="54nmQxI_zhi" role="3clFbG" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1WS0z7" id="54nmQxIy8kf" role="lGtFl">
+          <node concept="3JmXsc" id="54nmQxIy8kg" role="3Jn$fo">
+            <node concept="3clFbS" id="54nmQxIy8kh" role="2VODD2">
+              <node concept="3clFbF" id="54nmQxIygJs" role="3cqZAp">
+                <node concept="2OqwBi" id="54nmQxIykvx" role="3clFbG">
+                  <node concept="2OqwBi" id="54nmQxIyjYv" role="2Oq$k0">
+                    <node concept="2OqwBi" id="54nmQxIygZV" role="2Oq$k0">
+                      <node concept="30H73N" id="54nmQxIygJr" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="54nmQxIyhgY" role="2OqNvi">
+                        <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="54nmQxIykhY" role="2OqNvi">
+                      <ref role="3Tt5mk" to="at53:69SOXVnRi$L" resolve="dependencySection" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="54nmQxIykDy" role="2OqNvi">
+                    <ref role="3TtcxE" to="at53:4m0g11MoowU" resolve="contents" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1sPUBX" id="54nmQxIy8ls" role="lGtFl">
+          <ref role="v9R2y" node="54nmQxI_7RB" resolve="switch_IDependencySectionContent_TestSetup_getDependency" />
+          <node concept="1mL9RQ" id="54nmQxI_Fhf" role="v9R3O">
+            <ref role="1mL9RD" node="54nmQxI_z7Q" resolve="testSuite" />
+          </node>
+        </node>
+        <node concept="3xR696" id="54nmQxIyeMb" role="NkNyt">
+          <property role="3xR695" value="3Ud70gdvRyt/return" />
+          <property role="TrG5h" value="__return__" />
+          <node concept="3xHE8C" id="54nmQxIyf2o" role="3xMlr6">
+            <node concept="_vnHe" id="54nmQxIyf2n" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="6nSm6" id="P0m5w1mGfu" role="PCHHv">
         <property role="TrG5h" value="AdditionalTestAssertionOperation" />
         <property role="PCHGy" value="true" />
@@ -8238,6 +8293,62 @@
           </node>
         </node>
       </node>
+      <node concept="6nSm6" id="54nmQxJiLB7" role="PCHHv">
+        <property role="TrG5h" value="GetDependency" />
+        <node concept="1ps_y7" id="54nmQxJiLB8" role="lGtFl">
+          <node concept="1ps_xZ" id="54nmQxJiLB9" role="1ps_xO">
+            <property role="TrG5h" value="testSuite" />
+            <node concept="2jfdEK" id="54nmQxJiLBa" role="1ps_xN">
+              <node concept="3clFbS" id="54nmQxJiLBb" role="2VODD2">
+                <node concept="3clFbF" id="54nmQxJiLBc" role="3cqZAp">
+                  <node concept="30H73N" id="54nmQxJiLBd" role="3clFbG" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1WS0z7" id="54nmQxJiLBe" role="lGtFl">
+          <node concept="3JmXsc" id="54nmQxJiLBf" role="3Jn$fo">
+            <node concept="3clFbS" id="54nmQxJiLBg" role="2VODD2">
+              <node concept="3clFbF" id="54nmQxJiLBh" role="3cqZAp">
+                <node concept="2OqwBi" id="54nmQxJiLBi" role="3clFbG">
+                  <node concept="2OqwBi" id="54nmQxJiLBj" role="2Oq$k0">
+                    <node concept="2OqwBi" id="54nmQxJiLBk" role="2Oq$k0">
+                      <node concept="30H73N" id="54nmQxJiLBl" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="54nmQxJiLBm" role="2OqNvi">
+                        <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="54nmQxJiLBn" role="2OqNvi">
+                      <ref role="3Tt5mk" to="at53:69SOXVnRi$L" resolve="dependencySection" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="54nmQxJiLBo" role="2OqNvi">
+                    <ref role="3TtcxE" to="at53:4m0g11MoowU" resolve="contents" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1sPUBX" id="54nmQxJiLBp" role="lGtFl">
+          <ref role="v9R2y" node="54nmQxJiBMK" resolve="switch_IDependencySectionContent_TestSetupImpl_getDependency" />
+          <node concept="1mL9RQ" id="54nmQxJiLBq" role="v9R3O">
+            <ref role="1mL9RD" node="54nmQxJiLB9" resolve="testSuite" />
+          </node>
+        </node>
+        <node concept="3xR696" id="54nmQxJiLBr" role="NkNyt">
+          <property role="3xR695" value="3Ud70gdvRyt/return" />
+          <property role="TrG5h" value="__return__" />
+          <node concept="3xHE8C" id="54nmQxJiLBs" role="3xMlr6">
+            <node concept="_vnHe" id="54nmQxJiLBt" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+            </node>
+          </node>
+        </node>
+        <node concept="PCHzy" id="54nmQxJiNAu" role="GbAUv" />
+      </node>
+      <node concept="8qQDt" id="54nmQxJiKOK" role="PCHHv" />
       <node concept="6nSm6" id="3nKDvO$wDBr" role="PCHHv">
         <property role="TrG5h" value="GetViewModel" />
         <node concept="PCHzy" id="3nKDvO$wDBs" role="GbAUv">
@@ -8922,6 +9033,7 @@
   </node>
   <node concept="jVnub" id="3$6KP6ykIOs">
     <property role="TrG5h" value="switch_TestDescriptionPart_Operation" />
+    <property role="3GE5qa" value="scenario" />
     <node concept="3aamgX" id="1srqdXUGcgX" role="3aUrZf">
       <ref role="30HIoZ" to="53m0:3JdhG1lSFby" resolve="GivenDescriptionWithContext" />
       <node concept="j$656" id="1srqdXUGch1" role="1lVwrX">
@@ -9788,6 +9900,357 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="jVnub" id="54nmQxI_7RB">
+    <property role="3GE5qa" value="testenvironment" />
+    <property role="TrG5h" value="switch_IDependencySectionContent_TestSetup_getDependency" />
+    <node concept="1N15co" id="54nmQxI_uEz" role="1s_3oS">
+      <property role="TrG5h" value="testSuite" />
+      <node concept="3Tqbb2" id="54nmQxI_uGl" role="1N15GL">
+        <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="54nmQxI_9eI" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:69SOXVnRitH" resolve="Dependency" />
+      <node concept="gft3U" id="54nmQxI_9eK" role="1lVwrX">
+        <node concept="6nSm6" id="54nmQxI_9eO" role="gfFT$">
+          <property role="TrG5h" value="foo" />
+          <property role="PCHGy" value="true" />
+          <node concept="17Uvod" id="54nmQxI_9eS" role="lGtFl">
+            <property role="2qtEX9" value="name" />
+            <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+            <node concept="3zFVjK" id="54nmQxI_9eV" role="3zH0cK">
+              <node concept="3clFbS" id="54nmQxI_9eW" role="2VODD2">
+                <node concept="3clFbF" id="54nmQxI_lj7" role="3cqZAp">
+                  <node concept="2YIFZM" id="54nmQxI_lj8" role="3clFbG">
+                    <ref role="37wK5l" to="zcip:54nmQxI_fA2" resolve="getDependencyGetterName" />
+                    <ref role="1Pybhc" to="zcip:2evlxT94KqS" resolve="TestScenarioGeneratorNameHelper" />
+                    <node concept="30H73N" id="54nmQxI_lj9" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3xR696" id="54nmQxI_a6C" role="NkNyt">
+            <property role="3xR695" value="3Ud70gdvRyt/return" />
+            <property role="TrG5h" value="__return__" />
+            <node concept="3xHE8C" id="54nmQxI_wbQ" role="3xMlr6">
+              <node concept="_vnHe" id="54nmQxI_wbP" role="35HzJw">
+                <ref role="3acloq" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+                <node concept="1ZhdrF" id="54nmQxI_weO" role="lGtFl">
+                  <property role="2qtEX8" value="nameRef" />
+                  <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
+                  <node concept="3$xsQk" id="54nmQxI_weP" role="3$ytzL">
+                    <node concept="3clFbS" id="54nmQxI_weQ" role="2VODD2">
+                      <node concept="3clFbF" id="54nmQxI_wxD" role="3cqZAp">
+                        <node concept="2OqwBi" id="54nmQxI_wxF" role="3clFbG">
+                          <node concept="1iwH7S" id="54nmQxI_wxG" role="2Oq$k0" />
+                          <node concept="1iwH70" id="54nmQxI_wxH" role="2OqNvi">
+                            <ref role="1iwH77" to="qhqb:54nmQxFEMFx" resolve="ViewModelDependency_ClassDefinition" />
+                            <node concept="30H73N" id="54nmQxI_xpZ" role="1iwH7V" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="54nmQxI_9Br" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:F907haLJWg" resolve="ViewModel" />
+      <node concept="gft3U" id="54nmQxI_9Bs" role="1lVwrX">
+        <node concept="6nSm6" id="54nmQxI_9Bt" role="gfFT$">
+          <property role="TrG5h" value="foo" />
+          <property role="PCHGy" value="true" />
+          <node concept="PCHzy" id="54nmQxI_9Bu" role="GbAUv" />
+          <node concept="17Uvod" id="54nmQxI_9Bv" role="lGtFl">
+            <property role="2qtEX9" value="name" />
+            <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+            <node concept="3zFVjK" id="54nmQxI_9Bw" role="3zH0cK">
+              <node concept="3clFbS" id="54nmQxI_9Bx" role="2VODD2">
+                <node concept="3clFbF" id="54nmQxI_lrB" role="3cqZAp">
+                  <node concept="2YIFZM" id="54nmQxI_lrC" role="3clFbG">
+                    <ref role="37wK5l" to="zcip:54nmQxI_fA2" resolve="getDependencyGetterName" />
+                    <ref role="1Pybhc" to="zcip:2evlxT94KqS" resolve="TestScenarioGeneratorNameHelper" />
+                    <node concept="30H73N" id="54nmQxI_lrD" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3xR696" id="54nmQxI_9JN" role="NkNyt">
+            <property role="3xR695" value="3Ud70gdvRyt/return" />
+            <property role="TrG5h" value="__return__" />
+            <node concept="3xHE8C" id="54nmQxI_9K$" role="3xMlr6">
+              <node concept="_vnHe" id="54nmQxI_9Kz" role="35HzJw">
+                <ref role="3acloq" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+                <node concept="1ZhdrF" id="54nmQxI_9M5" role="lGtFl">
+                  <property role="2qtEX8" value="nameRef" />
+                  <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
+                  <node concept="3$xsQk" id="54nmQxI_9M8" role="3$ytzL">
+                    <node concept="3clFbS" id="54nmQxI_9M9" role="2VODD2">
+                      <node concept="3clFbJ" id="54nmQxI_sPW" role="3cqZAp">
+                        <node concept="3clFbS" id="54nmQxI_sPX" role="3clFbx">
+                          <node concept="3cpWs6" id="54nmQxI_sPY" role="3cqZAp">
+                            <node concept="2OqwBi" id="54nmQxI_sPZ" role="3cqZAk">
+                              <node concept="1iwH7S" id="54nmQxI_sQ0" role="2Oq$k0" />
+                              <node concept="1iwH70" id="54nmQxI_sQ1" role="2OqNvi">
+                                <ref role="1iwH77" to="qhqb:5jkMFw_K_1h" resolve="ViewModel_ViewController_ClassDefinition" />
+                                <node concept="2OqwBi" id="54nmQxI_sQ2" role="1iwH7V">
+                                  <node concept="3TrEf2" id="54nmQxI_sQ4" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
+                                  </node>
+                                  <node concept="v3LJS" id="54nmQxI_vgd" role="2Oq$k0">
+                                    <ref role="v3LJV" node="54nmQxI_uEz" resolve="testSuite" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="2YIFZM" id="54nmQxI_sQ5" role="3clFbw">
+                          <ref role="37wK5l" to="nrs2:5jkMFw_KBaY" resolve="separateControllerViewModel" />
+                          <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                          <node concept="30H73N" id="54nmQxI_sQ6" role="37wK5m" />
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="54nmQxI_sQ7" role="3cqZAp">
+                        <node concept="2OqwBi" id="54nmQxI_sQ8" role="3clFbG">
+                          <node concept="1iwH7S" id="54nmQxI_sQ9" role="2Oq$k0" />
+                          <node concept="1iwH70" id="54nmQxI_sQa" role="2OqNvi">
+                            <ref role="1iwH77" to="qhqb:2KQA9MxTmGp" resolve="ViewModel_ClassDefinition" />
+                            <node concept="2OqwBi" id="54nmQxI_vB8" role="1iwH7V">
+                              <node concept="3TrEf2" id="54nmQxI_vB9" role="2OqNvi">
+                                <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
+                              </node>
+                              <node concept="v3LJS" id="54nmQxI_vBa" role="2Oq$k0">
+                                <ref role="v3LJV" node="54nmQxI_uEz" resolve="testSuite" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="54nmQxI_9ok" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:47nlIY20z3u" resolve="DependencyRef" />
+      <node concept="gft3U" id="54nmQxI_9Bl" role="1lVwrX">
+        <node concept="2VYdi" id="54nmQxI_9Bn" role="gfFT$">
+          <node concept="1sPUBX" id="54nmQxI_9Bq" role="lGtFl">
+            <ref role="v9R2y" node="54nmQxI_7RB" resolve="switch_IDependencySectionContent_TestSetup_getDependency" />
+            <node concept="v3LJS" id="54nmQxI_xwd" role="v9R3O">
+              <ref role="v3LJV" node="54nmQxI_uEz" resolve="testSuite" />
+            </node>
+            <node concept="3NFfHV" id="54nmQxJbTU3" role="1sPUBK">
+              <node concept="3clFbS" id="54nmQxJbTU4" role="2VODD2">
+                <node concept="3clFbF" id="54nmQxJbUoX" role="3cqZAp">
+                  <node concept="2OqwBi" id="54nmQxJbU_9" role="3clFbG">
+                    <node concept="30H73N" id="54nmQxJbUoW" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="54nmQxJbUIz" role="2OqNvi">
+                      <ref role="3Tt5mk" to="at53:47nlIY20z3w" resolve="ref" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="b5Tf3" id="54nmQxIHWnw" role="jxRDz" />
+  </node>
+  <node concept="jVnub" id="54nmQxJiBMK">
+    <property role="3GE5qa" value="testenvironment" />
+    <property role="TrG5h" value="switch_IDependencySectionContent_TestSetupImpl_getDependency" />
+    <node concept="1N15co" id="54nmQxJiBML" role="1s_3oS">
+      <property role="TrG5h" value="testSuite" />
+      <node concept="3Tqbb2" id="54nmQxJiBMM" role="1N15GL">
+        <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="54nmQxJiBMN" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:69SOXVnRitH" resolve="Dependency" />
+      <node concept="gft3U" id="54nmQxJiBMO" role="1lVwrX">
+        <node concept="6nSm6" id="54nmQxJiBMP" role="gfFT$">
+          <property role="TrG5h" value="foo" />
+          <node concept="17Uvod" id="54nmQxJiBMQ" role="lGtFl">
+            <property role="2qtEX9" value="name" />
+            <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+            <node concept="3zFVjK" id="54nmQxJiBMR" role="3zH0cK">
+              <node concept="3clFbS" id="54nmQxJiBMS" role="2VODD2">
+                <node concept="3clFbF" id="54nmQxJiBMT" role="3cqZAp">
+                  <node concept="2YIFZM" id="54nmQxJiBMU" role="3clFbG">
+                    <ref role="37wK5l" to="zcip:54nmQxI_fA2" resolve="getDependencyGetterName" />
+                    <ref role="1Pybhc" to="zcip:2evlxT94KqS" resolve="TestScenarioGeneratorNameHelper" />
+                    <node concept="30H73N" id="54nmQxJiBMV" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3xR696" id="54nmQxJiBMW" role="NkNyt">
+            <property role="3xR695" value="3Ud70gdvRyt/return" />
+            <property role="TrG5h" value="__return__" />
+            <node concept="3xHE8C" id="54nmQxJiBMX" role="3xMlr6">
+              <node concept="_vnHe" id="54nmQxJiBMY" role="35HzJw">
+                <ref role="3acloq" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+                <node concept="1ZhdrF" id="54nmQxJiBMZ" role="lGtFl">
+                  <property role="2qtEX8" value="nameRef" />
+                  <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
+                  <node concept="3$xsQk" id="54nmQxJiBN0" role="3$ytzL">
+                    <node concept="3clFbS" id="54nmQxJiBN1" role="2VODD2">
+                      <node concept="3clFbF" id="54nmQxJiBN2" role="3cqZAp">
+                        <node concept="2OqwBi" id="54nmQxJiBN3" role="3clFbG">
+                          <node concept="1iwH7S" id="54nmQxJiBN4" role="2Oq$k0" />
+                          <node concept="1iwH70" id="54nmQxJiBN5" role="2OqNvi">
+                            <ref role="1iwH77" to="qhqb:54nmQxFEMFx" resolve="ViewModelDependency_ClassDefinition" />
+                            <node concept="30H73N" id="54nmQxJiBN6" role="1iwH7V" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="PCHzy" id="54nmQxJiOkL" role="GbAUv">
+            <node concept="32G6VT" id="54nmQxJpyB2" role="PCHzz">
+              <node concept="2_e7m4" id="54nmQxJpyB4" role="2vFQ1F" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="54nmQxJiBN7" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:F907haLJWg" resolve="ViewModel" />
+      <node concept="gft3U" id="54nmQxJiBN8" role="1lVwrX">
+        <node concept="6nSm6" id="54nmQxJiBN9" role="gfFT$">
+          <property role="TrG5h" value="foo" />
+          <node concept="PCHzy" id="54nmQxJiBNa" role="GbAUv">
+            <node concept="32G6VT" id="54nmQxJpyB6" role="PCHzz">
+              <node concept="2_e7m4" id="54nmQxJpyB8" role="2vFQ1F" />
+            </node>
+          </node>
+          <node concept="17Uvod" id="54nmQxJiBNb" role="lGtFl">
+            <property role="2qtEX9" value="name" />
+            <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+            <node concept="3zFVjK" id="54nmQxJiBNc" role="3zH0cK">
+              <node concept="3clFbS" id="54nmQxJiBNd" role="2VODD2">
+                <node concept="3clFbF" id="54nmQxJiBNe" role="3cqZAp">
+                  <node concept="2YIFZM" id="54nmQxJiBNf" role="3clFbG">
+                    <ref role="37wK5l" to="zcip:54nmQxI_fA2" resolve="getDependencyGetterName" />
+                    <ref role="1Pybhc" to="zcip:2evlxT94KqS" resolve="TestScenarioGeneratorNameHelper" />
+                    <node concept="30H73N" id="54nmQxJiBNg" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3xR696" id="54nmQxJiBNh" role="NkNyt">
+            <property role="3xR695" value="3Ud70gdvRyt/return" />
+            <property role="TrG5h" value="__return__" />
+            <node concept="3xHE8C" id="54nmQxJiBNi" role="3xMlr6">
+              <node concept="_vnHe" id="54nmQxJiBNj" role="35HzJw">
+                <ref role="3acloq" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+                <node concept="1ZhdrF" id="54nmQxJiBNk" role="lGtFl">
+                  <property role="2qtEX8" value="nameRef" />
+                  <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
+                  <node concept="3$xsQk" id="54nmQxJiBNl" role="3$ytzL">
+                    <node concept="3clFbS" id="54nmQxJiBNm" role="2VODD2">
+                      <node concept="3clFbJ" id="54nmQxJiBNn" role="3cqZAp">
+                        <node concept="3clFbS" id="54nmQxJiBNo" role="3clFbx">
+                          <node concept="3cpWs6" id="54nmQxJiBNp" role="3cqZAp">
+                            <node concept="2OqwBi" id="54nmQxJiBNq" role="3cqZAk">
+                              <node concept="1iwH7S" id="54nmQxJiBNr" role="2Oq$k0" />
+                              <node concept="1iwH70" id="54nmQxJiBNs" role="2OqNvi">
+                                <ref role="1iwH77" to="qhqb:5jkMFw_K_1h" resolve="ViewModel_ViewController_ClassDefinition" />
+                                <node concept="2OqwBi" id="54nmQxJiBNt" role="1iwH7V">
+                                  <node concept="3TrEf2" id="54nmQxJiBNu" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
+                                  </node>
+                                  <node concept="v3LJS" id="54nmQxJiBNv" role="2Oq$k0">
+                                    <ref role="v3LJV" node="54nmQxJiBML" resolve="testSuite" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="2YIFZM" id="54nmQxJiBNw" role="3clFbw">
+                          <ref role="37wK5l" to="nrs2:5jkMFw_KBaY" resolve="separateControllerViewModel" />
+                          <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                          <node concept="30H73N" id="54nmQxJiBNx" role="37wK5m" />
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="54nmQxJiBNy" role="3cqZAp">
+                        <node concept="2OqwBi" id="54nmQxJiBNz" role="3clFbG">
+                          <node concept="1iwH7S" id="54nmQxJiBN$" role="2Oq$k0" />
+                          <node concept="1iwH70" id="54nmQxJiBN_" role="2OqNvi">
+                            <ref role="1iwH77" to="qhqb:2KQA9MxTmGp" resolve="ViewModel_ClassDefinition" />
+                            <node concept="2OqwBi" id="54nmQxJiBNA" role="1iwH7V">
+                              <node concept="3TrEf2" id="54nmQxJiBNB" role="2OqNvi">
+                                <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
+                              </node>
+                              <node concept="v3LJS" id="54nmQxJiBNC" role="2Oq$k0">
+                                <ref role="v3LJV" node="54nmQxJiBML" resolve="testSuite" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="54nmQxJiBND" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:47nlIY20z3u" resolve="DependencyRef" />
+      <node concept="gft3U" id="54nmQxJiBNE" role="1lVwrX">
+        <node concept="2VYdi" id="54nmQxJiBNF" role="gfFT$">
+          <node concept="1sPUBX" id="54nmQxJiBNG" role="lGtFl">
+            <ref role="v9R2y" node="54nmQxJiBMK" resolve="switch_IDependencySectionContent_TestSetupImpl_getDependency" />
+            <node concept="v3LJS" id="54nmQxJiBNH" role="v9R3O">
+              <ref role="v3LJV" node="54nmQxJiBML" resolve="testSuite" />
+            </node>
+            <node concept="3NFfHV" id="54nmQxJiBNI" role="1sPUBK">
+              <node concept="3clFbS" id="54nmQxJiBNJ" role="2VODD2">
+                <node concept="3clFbF" id="54nmQxJiBNK" role="3cqZAp">
+                  <node concept="2OqwBi" id="54nmQxJiBNL" role="3clFbG">
+                    <node concept="30H73N" id="54nmQxJiBNM" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="54nmQxJiBNN" role="2OqNvi">
+                      <ref role="3Tt5mk" to="at53:47nlIY20z3w" resolve="ref" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="b5Tf3" id="54nmQxJiBNO" role="jxRDz" />
   </node>
 </model>
 

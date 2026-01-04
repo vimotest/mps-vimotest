@@ -2,7 +2,7 @@
 
 namespace dependencies
 {
-  class Dependency_ViewModel
+  class ViewModelDependency_ViewModel
   {
   public:
     bool MyBool;

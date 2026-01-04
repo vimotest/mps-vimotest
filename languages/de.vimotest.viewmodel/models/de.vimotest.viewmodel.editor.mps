@@ -940,7 +940,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="69SOXVnRCI0" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:69SOXVnRi$L" resolve="dependencies" />
+        <ref role="1NtTu8" to="at53:69SOXVnRi$L" resolve="dependencySection" />
         <node concept="pVoyu" id="69SOXVnRCI1" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -5250,14 +5250,14 @@
   </node>
   <node concept="24kQdi" id="4m0g11Mootf">
     <property role="3GE5qa" value="dependencies" />
-    <ref role="1XX52x" to="at53:69SOXVnRzRz" resolve="DependencyList" />
+    <ref role="1XX52x" to="at53:69SOXVnRzRz" resolve="DependencySection" />
     <node concept="3EZMnI" id="4m0g11MoouP" role="2wV5jI">
       <node concept="3F0ifn" id="4m0g11MoouT" role="3EZMnx">
         <property role="3F0ifm" value="dependencies" />
         <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
       </node>
       <node concept="3F2HdR" id="4m0g11MoozE" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:4m0g11MoowU" resolve="dependencies" />
+        <ref role="1NtTu8" to="at53:4m0g11MoowU" resolve="contents" />
         <node concept="l2Vlx" id="4m0g11MoozG" role="2czzBx" />
         <node concept="pVoyu" id="4m0g11Moo$6" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -5396,7 +5396,7 @@
     <property role="TrG5h" value="Dependency_CompletionStyling" />
     <node concept="3Tm1VV" id="32SpZNJYDOC" role="1B3o_S" />
     <node concept="KNhPm" id="32SpZNJYDPM" role="KNiz3">
-      <ref role="2RIln$" to="at53:47nlIY20x2m" resolve="IDependencyListElement" />
+      <ref role="2RIln$" to="at53:47nlIY20x2m" resolve="IDependencySectionContent" />
     </node>
     <node concept="3lBaaS" id="32SpZNJYDOE" role="3l$a4r">
       <node concept="3clFbS" id="32SpZNJYDOF" role="2VODD2">

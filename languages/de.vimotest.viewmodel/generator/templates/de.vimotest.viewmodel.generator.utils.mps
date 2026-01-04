@@ -223,9 +223,9 @@
     <node concept="2YIFZL" id="5jkMFw_P2_w" role="jymVt">
       <property role="TrG5h" value="getViewControllerClassName" />
       <node concept="37vLTG" id="5jkMFw_P2O8" role="3clF46">
-        <property role="TrG5h" value="viewModelCommands" />
+        <property role="TrG5h" value="commands" />
         <node concept="3Tqbb2" id="5jkMFw_P2O9" role="1tU5fm">
-          <ref role="ehGHo" to="at53:F907haLJWl" resolve="ViewModelCommands" />
+          <ref role="ehGHo" to="at53:F907haLJWl" resolve="ViewModelCommandSection" />
         </node>
       </node>
       <node concept="3clFbS" id="5jkMFw_P2_z" role="3clF47">
@@ -235,7 +235,7 @@
               <node concept="2OqwBi" id="5jkMFw_P3wz" role="3cqZAk">
                 <node concept="2OqwBi" id="5jkMFw_P3w$" role="2Oq$k0">
                   <node concept="37vLTw" id="5jkMFw_P3w_" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5jkMFw_P2O8" resolve="viewModelCommands" />
+                    <ref role="3cqZAo" node="5jkMFw_P2O8" resolve="commands" />
                   </node>
                   <node concept="3CFZ6_" id="5jkMFw_P3wA" role="2OqNvi">
                     <node concept="3CFYIy" id="5jkMFw_P3wB" role="3CFYIz">
@@ -252,7 +252,7 @@
           <node concept="2OqwBi" id="5jkMFw_P3wD" role="3clFbw">
             <node concept="2OqwBi" id="5jkMFw_P3wE" role="2Oq$k0">
               <node concept="37vLTw" id="5jkMFw_P3wF" role="2Oq$k0">
-                <ref role="3cqZAo" node="5jkMFw_P2O8" resolve="viewModelCommands" />
+                <ref role="3cqZAo" node="5jkMFw_P2O8" resolve="commands" />
               </node>
               <node concept="3CFZ6_" id="5jkMFw_P3wG" role="2OqNvi">
                 <node concept="3CFYIy" id="5jkMFw_P3wH" role="3CFYIz">
@@ -279,7 +279,7 @@
                   </node>
                   <node concept="2OqwBi" id="5jkMFw_P4x9" role="1m5AlR">
                     <node concept="37vLTw" id="5jkMFw_P3wN" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5jkMFw_P2O8" resolve="viewModelCommands" />
+                      <ref role="3cqZAo" node="5jkMFw_P2O8" resolve="commands" />
                     </node>
                     <node concept="1mfA1w" id="5jkMFw_P4Wp" role="2OqNvi" />
                   </node>
@@ -391,7 +391,7 @@
       <node concept="37vLTG" id="Of5vVZ$3uv" role="3clF46">
         <property role="TrG5h" value="command" />
         <node concept="3Tqbb2" id="Of5vVZ$3uw" role="1tU5fm">
-          <ref role="ehGHo" to="at53:F907haLJXw" resolve="IViewModelCommand" />
+          <ref role="ehGHo" to="at53:F907haLJXw" resolve="ICommand" />
         </node>
       </node>
       <node concept="37vLTG" id="Of5vVZKuRk" role="3clF46">
@@ -480,7 +480,7 @@
       <node concept="37vLTG" id="2evlxT95uzv" role="3clF46">
         <property role="TrG5h" value="command" />
         <node concept="3Tqbb2" id="2evlxT95uzw" role="1tU5fm">
-          <ref role="ehGHo" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+          <ref role="ehGHo" to="at53:7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
         </node>
       </node>
     </node>
@@ -1631,7 +1631,7 @@
       <node concept="37vLTG" id="32SpZNIS4wS" role="3clF46">
         <property role="TrG5h" value="dependency" />
         <node concept="3Tqbb2" id="32SpZNIS4SH" role="1tU5fm">
-          <ref role="ehGHo" to="at53:69SOXVnRitH" resolve="ViewModelDependency" />
+          <ref role="ehGHo" to="at53:69SOXVnRitH" resolve="Dependency" />
         </node>
       </node>
       <node concept="3clFbS" id="32SpZNIS3lm" role="3clF47">

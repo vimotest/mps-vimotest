@@ -2767,11 +2767,11 @@
   </node>
   <node concept="24kQdi" id="RX_REsnhRH">
     <property role="3GE5qa" value="commands.base" />
-    <ref role="1XX52x" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+    <ref role="1XX52x" to="at53:7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
     <node concept="3EZMnI" id="5QmCreitFj_" role="6VMZX">
       <node concept="l2Vlx" id="5QmCreitFjA" role="2iSdaV" />
       <node concept="PMmxH" id="6kjlgUuubE8" role="3EZMnx">
-        <ref role="PMmxG" node="6kjlgUuubE3" resolve="AbstractViewModelParameterizedCommand_hasParameters_EC" />
+        <ref role="PMmxG" node="6kjlgUuubE3" resolve="AbstractParameterizedCommand_hasParameters_EC" />
       </node>
     </node>
     <node concept="3EZMnI" id="F907haMjlR" role="2wV5jI">
@@ -2826,9 +2826,9 @@
     </node>
   </node>
   <node concept="PKFIW" id="6kjlgUuubE3">
-    <property role="TrG5h" value="AbstractViewModelParameterizedCommand_hasParameters_EC" />
+    <property role="TrG5h" value="AbstractParameterizedCommand_hasParameters_EC" />
     <property role="3GE5qa" value="commands.base" />
-    <ref role="1XX52x" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+    <ref role="1XX52x" to="at53:7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
     <node concept="2yq9I_" id="6kjlgUuubE4" role="2wV5jI">
       <ref role="225u1j" to="at53:RX_REsnmLz" resolve="hasParameters" />
       <node concept="1563Vb" id="6kjlgUuubE5" role="1563LE">

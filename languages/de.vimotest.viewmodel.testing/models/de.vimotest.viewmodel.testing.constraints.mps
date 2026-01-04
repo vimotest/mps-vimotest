@@ -703,11 +703,11 @@
   </node>
   <node concept="1M2fIO" id="7ynD$XoIqbQ">
     <property role="3GE5qa" value="test.actions" />
-    <ref role="1M2myG" to="53m0:7KHRfJVnri5" resolve="ViewCommandInvocationAction" />
+    <ref role="1M2myG" to="53m0:7KHRfJVnri5" resolve="CommandInvocationAction" />
     <node concept="1N5Pfh" id="17xw4ZmNcaP" role="1Mr941">
       <ref role="1N5Vy1" to="53m0:7KHRfJVnw5G" resolve="targetCommand" />
       <node concept="1dDu$B" id="17xw4ZmNcfm" role="1N6uqs">
-        <ref role="1dDu$A" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+        <ref role="1dDu$A" to="at53:7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
       </node>
     </node>
     <node concept="9SQb8" id="7ynD$XoI_ls" role="9SGkC">

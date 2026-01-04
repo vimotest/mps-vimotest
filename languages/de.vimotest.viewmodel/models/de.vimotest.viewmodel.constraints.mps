@@ -522,7 +522,7 @@
   </node>
   <node concept="1M2fIO" id="6LujpsVKDD4">
     <property role="3GE5qa" value="commands.base" />
-    <ref role="1M2myG" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+    <ref role="1M2myG" to="at53:7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
     <node concept="9SLcT" id="6LujpsVKIs5" role="9SGkU">
       <node concept="3clFbS" id="6LujpsVKIs6" role="2VODD2">
         <node concept="3clFbF" id="6LujpsVKIDG" role="3cqZAp">

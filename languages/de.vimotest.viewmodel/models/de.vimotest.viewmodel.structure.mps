@@ -222,12 +222,12 @@
   <node concept="PlHQZ" id="F907haLJXw">
     <property role="EcuMT" value="777152910168883040" />
     <property role="3GE5qa" value="viewmodel.commands" />
-    <property role="TrG5h" value="IViewModelCommand" />
-    <node concept="PrWs8" id="54nmQxH1bsr" role="PrDN$">
-      <ref role="PrY4T" node="54nmQxH1bsq" resolve="IViewModelCommandSectionContent" />
-    </node>
+    <property role="TrG5h" value="ICommand" />
     <node concept="PrWs8" id="54nmQxE1KaE" role="PrDN$">
       <ref role="PrY4T" node="54nmQxE1KaC" resolve="IOperation" />
+    </node>
+    <node concept="PrWs8" id="54nmQxH1bsr" role="PrDN$">
+      <ref role="PrY4T" node="54nmQxH1bsq" resolve="IViewModelCommandSectionContent" />
     </node>
     <node concept="PrWs8" id="5jkMFwAVGTY" role="PrDN$">
       <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
@@ -1002,11 +1002,11 @@
   <node concept="1TIwiD" id="7ZadkZWNZxB">
     <property role="EcuMT" value="9208231005772576871" />
     <property role="3GE5qa" value="commands.base" />
-    <property role="TrG5h" value="AbstractViewModelParameterizedCommand" />
+    <property role="TrG5h" value="AbstractParameterizedCommand" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="evry:F907haLJu3" resolve="AbstractNamedStructType" />
     <node concept="PrWs8" id="7ZadkZWP0_m" role="PzmwI">
-      <ref role="PrY4T" node="F907haLJXw" resolve="IViewModelCommand" />
+      <ref role="PrY4T" node="F907haLJXw" resolve="ICommand" />
     </node>
     <node concept="1TJgyi" id="RX_REsnmLz" role="1TKVEl">
       <property role="IQ2nx" value="1008128444466031715" />
@@ -1058,7 +1058,7 @@
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1F_Q10zSUwb" role="PzmwI">
-      <ref role="PrY4T" node="F907haLJXw" resolve="IViewModelCommand" />
+      <ref role="PrY4T" node="F907haLJXw" resolve="ICommand" />
     </node>
     <node concept="PrWs8" id="26p1ZnjbkLQ" role="PzmwI">
       <ref role="PrY4T" node="26p1Znjaeba" resolve="ICanHaveCustomOperationName" />
@@ -1069,7 +1069,7 @@
     <property role="3GE5qa" value="commands.base" />
     <property role="TrG5h" value="GenericViewModelCommand" />
     <property role="34LRSv" value="generic command" />
-    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
   </node>
   <node concept="1TIwiD" id="6kjlgUu$Xsu">
     <property role="EcuMT" value="7283258543666616094" />
@@ -1097,7 +1097,7 @@
     <property role="TrG5h" value="LoadCommand" />
     <property role="34LRSv" value="load view" />
     <property role="3GE5qa" value="commands" />
-    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+    <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
   </node>
   <node concept="1TIwiD" id="6kjlgUu$Xsy">
     <property role="EcuMT" value="7283258543666616098" />

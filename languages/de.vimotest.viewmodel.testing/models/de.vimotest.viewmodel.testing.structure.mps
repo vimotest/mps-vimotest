@@ -954,7 +954,7 @@
   <node concept="1TIwiD" id="7KHRfJVnri5">
     <property role="EcuMT" value="8948051009467167877" />
     <property role="3GE5qa" value="test.actions" />
-    <property role="TrG5h" value="ViewCommandInvocationAction" />
+    <property role="TrG5h" value="CommandInvocationAction" />
     <property role="34LRSv" value="invoke command" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7KHRfJVnw5F" role="PzmwI">
@@ -967,7 +967,7 @@
       <property role="IQ2ns" value="8948051009467187564" />
       <property role="20kJfa" value="targetCommand" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+      <ref role="20lvS9" to="at53:7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
     </node>
     <node concept="1TJgyj" id="7KHRfJVn$Y1" role="1TKVEi">
       <property role="IQ2ns" value="8948051009467207553" />

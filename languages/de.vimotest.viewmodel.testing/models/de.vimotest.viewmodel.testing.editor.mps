@@ -3685,7 +3685,7 @@
   </node>
   <node concept="24kQdi" id="7KHRfJVnw5H">
     <property role="3GE5qa" value="test.actions" />
-    <ref role="1XX52x" to="53m0:7KHRfJVnri5" resolve="ViewCommandInvocationAction" />
+    <ref role="1XX52x" to="53m0:7KHRfJVnri5" resolve="CommandInvocationAction" />
     <node concept="3EZMnI" id="7KHRfJVn$SJ" role="2wV5jI">
       <node concept="3F0ifn" id="7KHRfJVn$SN" role="3EZMnx">
         <property role="3F0ifm" value="call command" />
@@ -4058,7 +4058,7 @@
                         </node>
                       </node>
                       <node concept="3TrEf2" id="7UthagY4INN" role="2OqNvi">
-                        <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="viewModelData" />
+                        <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="stateSection" />
                       </node>
                     </node>
                     <node concept="3Tsc0h" id="7UthagY4INO" role="2OqNvi">
@@ -4306,7 +4306,7 @@
                     </node>
                   </node>
                   <node concept="3TrEf2" id="7UthagY6fG6" role="2OqNvi">
-                    <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="viewModelData" />
+                    <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="stateSection" />
                   </node>
                 </node>
                 <node concept="2Rf3mk" id="7UthagY6kPM" role="2OqNvi">
@@ -5000,7 +5000,7 @@
                     </node>
                   </node>
                   <node concept="3TrEf2" id="2w4bAIFLvpa" role="2OqNvi">
-                    <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="viewModelData" />
+                    <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="stateSection" />
                   </node>
                 </node>
                 <node concept="2Rf3mk" id="2w4bAIFLvpb" role="2OqNvi">
@@ -7392,7 +7392,7 @@
   </node>
   <node concept="24kQdi" id="6gWUZpXe6ZH">
     <property role="3GE5qa" value="test.actions" />
-    <ref role="1XX52x" to="53m0:6gWUZpXe6H5" resolve="ViewModelDependencyOperationInvocationAction" />
+    <ref role="1XX52x" to="53m0:6gWUZpXe6H5" resolve="DependencyOperationInvocationAction" />
     <node concept="3EZMnI" id="6gWUZpXe6ZJ" role="2wV5jI">
       <node concept="3F0ifn" id="6gWUZpXe6ZK" role="3EZMnx">
         <property role="3F0ifm" value="call dependency" />

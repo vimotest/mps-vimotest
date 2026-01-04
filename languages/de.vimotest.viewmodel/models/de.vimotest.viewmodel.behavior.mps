@@ -1212,7 +1212,7 @@
                   </node>
                   <node concept="v3k3i" id="17xw4ZmO0xi" role="2OqNvi">
                     <node concept="chp4Y" id="17xw4ZmO0xj" role="v3oSu">
-                      <ref role="cht4Q" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+                      <ref role="cht4Q" to="at53:7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
                     </node>
                   </node>
                 </node>
@@ -1225,7 +1225,7 @@
             </node>
             <node concept="2Zo12i" id="17xw4ZmNZTu" role="2OqNvi">
               <node concept="chp4Y" id="17xw4ZmO0co" role="2Zo12j">
-                <ref role="cht4Q" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+                <ref role="cht4Q" to="at53:7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
               </node>
             </node>
           </node>
@@ -6850,7 +6850,7 @@
       <node concept="3Tm1VV" id="54nmQxHfEi3" role="1B3o_S" />
       <node concept="A3Dl8" id="54nmQxHfJmj" role="3clF45">
         <node concept="3Tqbb2" id="54nmQxHfJxW" role="A3Ik2">
-          <ref role="ehGHo" to="at53:F907haLJXw" resolve="IViewModelCommand" />
+          <ref role="ehGHo" to="at53:F907haLJXw" resolve="ICommand" />
         </node>
       </node>
       <node concept="3clFbS" id="54nmQxHfEi5" role="3clF47">
@@ -6864,7 +6864,7 @@
             </node>
             <node concept="v3k3i" id="54nmQxHfJfR" role="2OqNvi">
               <node concept="chp4Y" id="54nmQxHfJij" role="v3oSu">
-                <ref role="cht4Q" to="at53:F907haLJXw" resolve="IViewModelCommand" />
+                <ref role="cht4Q" to="at53:F907haLJXw" resolve="ICommand" />
               </node>
             </node>
           </node>
@@ -8824,7 +8824,7 @@
   </node>
   <node concept="13h7C7" id="5jkMFwAVGTZ">
     <property role="3GE5qa" value="viewmodel.commands" />
-    <ref role="13h7C2" to="at53:F907haLJXw" resolve="IViewModelCommand" />
+    <ref role="13h7C2" to="at53:F907haLJXw" resolve="ICommand" />
     <node concept="13hLZK" id="5jkMFwAVGU0" role="13h7CW">
       <node concept="3clFbS" id="5jkMFwAVGU1" role="2VODD2" />
     </node>
@@ -8872,7 +8872,7 @@
   </node>
   <node concept="13h7C7" id="5jkMFwBr3MZ">
     <property role="3GE5qa" value="commands.base" />
-    <ref role="13h7C2" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+    <ref role="13h7C2" to="at53:7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
     <node concept="13hLZK" id="5jkMFwBr3N0" role="13h7CW">
       <node concept="3clFbS" id="5jkMFwBr3N1" role="2VODD2" />
     </node>

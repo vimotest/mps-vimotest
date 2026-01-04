@@ -593,7 +593,7 @@
                 </node>
                 <node concept="2Zo12i" id="1F_Q10zWoJ1" role="2OqNvi">
                   <node concept="chp4Y" id="1F_Q10zWoKi" role="2Zo12j">
-                    <ref role="cht4Q" to="at53:F907haLJXw" resolve="IViewModelCommand" />
+                    <ref role="cht4Q" to="at53:F907haLJXw" resolve="ICommand" />
                   </node>
                 </node>
               </node>
@@ -604,7 +604,7 @@
               </node>
               <node concept="2Zo12i" id="17xw4ZmNiSi" role="2OqNvi">
                 <node concept="chp4Y" id="17xw4ZmNiSj" role="2Zo12j">
-                  <ref role="cht4Q" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+                  <ref role="cht4Q" to="at53:7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
                 </node>
               </node>
             </node>
@@ -15390,7 +15390,7 @@
   </node>
   <node concept="13h7C7" id="7T8HsuT$S_n">
     <property role="3GE5qa" value="test.actions" />
-    <ref role="13h7C2" to="53m0:7KHRfJVnri5" resolve="ViewCommandInvocationAction" />
+    <ref role="13h7C2" to="53m0:7KHRfJVnri5" resolve="CommandInvocationAction" />
     <node concept="13hLZK" id="7T8HsuT$S_o" role="13h7CW">
       <node concept="3clFbS" id="7T8HsuT$S_p" role="2VODD2" />
     </node>
@@ -17635,7 +17635,7 @@
                     </node>
                   </node>
                   <node concept="3TrEf2" id="4cF8FMAYC6l" role="2OqNvi">
-                    <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="viewModelData" />
+                    <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="stateSection" />
                   </node>
                 </node>
                 <node concept="3Tsc0h" id="4cF8FMAYC6m" role="2OqNvi">
@@ -19699,7 +19699,7 @@
                         </node>
                       </node>
                       <node concept="3TrEf2" id="54nmQxErU$8" role="2OqNvi">
-                        <ref role="3Tt5mk" to="at53:69SOXVnRi$L" resolve="viewModelDependencies" />
+                        <ref role="3Tt5mk" to="at53:69SOXVnRi$L" resolve="dependencies" />
                       </node>
                     </node>
                     <node concept="3Tsc0h" id="54nmQxErU$9" role="2OqNvi">

@@ -663,9 +663,9 @@
       </node>
     </node>
     <node concept="3aamgX" id="7T8HsuTSYVg" role="3acgRq">
-      <ref role="30HIoZ" to="53m0:7KHRfJVnri5" resolve="ViewCommandInvocationAction" />
+      <ref role="30HIoZ" to="53m0:7KHRfJVnri5" resolve="CommandInvocationAction" />
       <node concept="j$656" id="7T8HsuTSYVk" role="1lVwrX">
-        <ref role="v9R2y" node="7T8HsuTSYVi" resolve="reduce_ViewCommandInvocationAction" />
+        <ref role="v9R2y" node="7T8HsuTSYVi" resolve="reduce_CommandInvocationAction" />
       </node>
     </node>
     <node concept="3aamgX" id="54nmQxFECY1" role="3acgRq">
@@ -2371,7 +2371,7 @@
                 </node>
                 <node concept="_vnHb" id="6p4JAx60nk7" role="31diN2">
                   <node concept="_vnHe" id="6p4JAx60nk8" role="35HzJw">
-                    <ref role="3acloq" node="7T8HsuTUlmm" resolve="reduce_ViewCommandInvocationAction" />
+                    <ref role="3acloq" node="7T8HsuTUlmm" resolve="reduce_CommandInvocationAction" />
                     <node concept="1ZhdrF" id="6p4JAx60nk9" role="lGtFl">
                       <property role="2qtEX8" value="nameRef" />
                       <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
@@ -2414,7 +2414,7 @@
                             <node concept="2OqwBi" id="6p4JAx60nks" role="3clFbG">
                               <node concept="1iwH7S" id="6p4JAx60nkt" role="2Oq$k0" />
                               <node concept="1iwH70" id="6p4JAx60nku" role="2OqNvi">
-                                <ref role="1iwH77" to="qhqb:4a2vw53deQl" resolve="IViewModelCommand_ParameterObject_DataTypeDefinition" />
+                                <ref role="1iwH77" to="qhqb:4a2vw53deQl" resolve="ICommand_ParameterObject_DataTypeDefinition" />
                                 <node concept="2OqwBi" id="6p4JAx60nkv" role="1iwH7V">
                                   <node concept="30H73N" id="6p4JAx60nkw" role="2Oq$k0" />
                                   <node concept="2qgKlT" id="6p4JAx60p79" role="2OqNvi">
@@ -2432,7 +2432,7 @@
               </node>
               <node concept="3xHE8C" id="4a2vw53h68N" role="327w9S">
                 <node concept="_vnHe" id="4a2vw53h68O" role="35HzJw">
-                  <ref role="3acloq" node="7T8HsuTUlmm" resolve="reduce_ViewCommandInvocationAction" />
+                  <ref role="3acloq" node="7T8HsuTUlmm" resolve="reduce_CommandInvocationAction" />
                   <node concept="1ZhdrF" id="4a2vw53h68P" role="lGtFl">
                     <property role="2qtEX8" value="nameRef" />
                     <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
@@ -2442,7 +2442,7 @@
                           <node concept="2OqwBi" id="4a2vw53h68T" role="3clFbG">
                             <node concept="1iwH7S" id="4a2vw53h68U" role="2Oq$k0" />
                             <node concept="1iwH70" id="4a2vw53h68V" role="2OqNvi">
-                              <ref role="1iwH77" to="qhqb:4a2vw53deQl" resolve="IViewModelCommand_ParameterObject_DataTypeDefinition" />
+                              <ref role="1iwH77" to="qhqb:4a2vw53deQl" resolve="ICommand_ParameterObject_DataTypeDefinition" />
                               <node concept="2OqwBi" id="4a2vw53h68W" role="1iwH7V">
                                 <node concept="30H73N" id="4a2vw53h68X" role="2Oq$k0" />
                                 <node concept="2qgKlT" id="4a2vw53haeQ" role="2OqNvi">
@@ -2622,7 +2622,7 @@
                             <node concept="2OqwBi" id="7T8HsuTTeh1" role="3clFbG">
                               <node concept="1iwH7S" id="7T8HsuTTe3k" role="2Oq$k0" />
                               <node concept="1iwH70" id="7T8HsuTTemO" role="2OqNvi">
-                                <ref role="1iwH77" to="qhqb:7T8HsuTSUCz" resolve="IViewModelCommand_OperationDefinition" />
+                                <ref role="1iwH77" to="qhqb:7T8HsuTSUCz" resolve="ICommand_OperationDefinition" />
                                 <node concept="37vLTw" id="7T8HsuTUaL2" role="1iwH7V">
                                   <ref role="3cqZAo" node="7T8HsuTUaKY" resolve="command" />
                                 </node>
@@ -2789,7 +2789,7 @@
                             <node concept="2OqwBi" id="62U8hQkDHSD" role="3clFbG">
                               <node concept="1iwH7S" id="62U8hQkDHSE" role="2Oq$k0" />
                               <node concept="1iwH70" id="62U8hQkDHSF" role="2OqNvi">
-                                <ref role="1iwH77" to="qhqb:7T8HsuTSUCz" resolve="IViewModelCommand_OperationDefinition" />
+                                <ref role="1iwH77" to="qhqb:7T8HsuTSUCz" resolve="ICommand_OperationDefinition" />
                                 <node concept="37vLTw" id="62U8hQkDHSG" role="1iwH7V">
                                   <ref role="3cqZAo" node="62U8hQkDHSv" resolve="command" />
                                 </node>
@@ -2900,19 +2900,19 @@
     </node>
   </node>
   <node concept="13MO4I" id="7T8HsuTSYVi">
-    <property role="TrG5h" value="reduce_ViewCommandInvocationAction" />
+    <property role="TrG5h" value="reduce_CommandInvocationAction" />
     <property role="3GE5qa" value="scenario.when" />
-    <ref role="3gUMe" to="53m0:7KHRfJVnri5" resolve="ViewCommandInvocationAction" />
+    <ref role="3gUMe" to="53m0:7KHRfJVnri5" resolve="CommandInvocationAction" />
     <node concept="3mGtxK" id="7T8HsuTUlml" role="13RCb5">
       <node concept="6nSm2" id="7T8HsuTUlmm" role="3mGtxP">
         <property role="PCHHn" value="6OepWIVA92I/package" />
-        <property role="TrG5h" value="reduce_ViewCommandInvocationAction" />
+        <property role="TrG5h" value="reduce_CommandInvocationAction" />
         <node concept="6lMYc" id="7T8HsuTUlmn" role="PCHHv">
           <property role="TrG5h" value="sut" />
           <property role="PCHHn" value="6OepWIVA92M/private" />
           <node concept="3xHE8C" id="7T8HsuTUlmo" role="3xMlr6">
             <node concept="_vnHe" id="7T8HsuTUlmp" role="35HzJw">
-              <ref role="3acloq" node="7T8HsuTUlmm" resolve="reduce_ViewCommandInvocationAction" />
+              <ref role="3acloq" node="7T8HsuTUlmm" resolve="reduce_CommandInvocationAction" />
             </node>
           </node>
         </node>
@@ -2948,7 +2948,7 @@
                 </node>
                 <node concept="_vnHb" id="6p4JAx606xh" role="31diN2">
                   <node concept="_vnHe" id="6p4JAx606xi" role="35HzJw">
-                    <ref role="3acloq" node="7T8HsuTUlmm" resolve="reduce_ViewCommandInvocationAction" />
+                    <ref role="3acloq" node="7T8HsuTUlmm" resolve="reduce_CommandInvocationAction" />
                     <node concept="1ZhdrF" id="6p4JAx60dyr" role="lGtFl">
                       <property role="2qtEX8" value="nameRef" />
                       <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
@@ -2991,7 +2991,7 @@
                             <node concept="2OqwBi" id="6p4JAx60gCV" role="3clFbG">
                               <node concept="1iwH7S" id="6p4JAx60gCW" role="2Oq$k0" />
                               <node concept="1iwH70" id="6p4JAx60gCX" role="2OqNvi">
-                                <ref role="1iwH77" to="qhqb:4a2vw53deQl" resolve="IViewModelCommand_ParameterObject_DataTypeDefinition" />
+                                <ref role="1iwH77" to="qhqb:4a2vw53deQl" resolve="ICommand_ParameterObject_DataTypeDefinition" />
                                 <node concept="2OqwBi" id="6p4JAx60gCY" role="1iwH7V">
                                   <node concept="30H73N" id="6p4JAx60gCZ" role="2Oq$k0" />
                                   <node concept="3TrEf2" id="6p4JAx60h3g" role="2OqNvi">
@@ -3009,7 +3009,7 @@
               </node>
               <node concept="3xHE8C" id="4a2vw53gOxu" role="327w9S">
                 <node concept="_vnHe" id="4a2vw53gOxs" role="35HzJw">
-                  <ref role="3acloq" node="7T8HsuTUlmm" resolve="reduce_ViewCommandInvocationAction" />
+                  <ref role="3acloq" node="7T8HsuTUlmm" resolve="reduce_CommandInvocationAction" />
                   <node concept="1ZhdrF" id="4a2vw53gOG3" role="lGtFl">
                     <property role="2qtEX8" value="nameRef" />
                     <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
@@ -3019,7 +3019,7 @@
                           <node concept="2OqwBi" id="4a2vw53gPbl" role="3clFbG">
                             <node concept="1iwH7S" id="4a2vw53gPbm" role="2Oq$k0" />
                             <node concept="1iwH70" id="4a2vw53gPbn" role="2OqNvi">
-                              <ref role="1iwH77" to="qhqb:4a2vw53deQl" resolve="IViewModelCommand_ParameterObject_DataTypeDefinition" />
+                              <ref role="1iwH77" to="qhqb:4a2vw53deQl" resolve="ICommand_ParameterObject_DataTypeDefinition" />
                               <node concept="2OqwBi" id="4a2vw53gPbo" role="1iwH7V">
                                 <node concept="30H73N" id="4a2vw53gPbp" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="4a2vw53gPbq" role="2OqNvi">
@@ -3180,7 +3180,7 @@
                             <node concept="2OqwBi" id="3_BGOS45C61" role="3clFbG">
                               <node concept="1iwH7S" id="3_BGOS45C62" role="2Oq$k0" />
                               <node concept="1iwH70" id="3_BGOS45C63" role="2OqNvi">
-                                <ref role="1iwH77" to="qhqb:7T8HsuTSUCz" resolve="IViewModelCommand_OperationDefinition" />
+                                <ref role="1iwH77" to="qhqb:7T8HsuTSUCz" resolve="ICommand_OperationDefinition" />
                                 <node concept="2OqwBi" id="3_BGOS45Dyq" role="1iwH7V">
                                   <node concept="30H73N" id="3_BGOS45DeN" role="2Oq$k0" />
                                   <node concept="3TrEf2" id="3_BGOS45DGy" role="2OqNvi">

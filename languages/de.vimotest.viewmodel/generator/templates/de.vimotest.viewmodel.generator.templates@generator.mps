@@ -409,14 +409,14 @@
       <ref role="2rZz_L" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
     </node>
     <node concept="2rT7sh" id="7T8HsuTSUCz" role="2rTMjI">
-      <property role="TrG5h" value="IViewModelCommand_OperationDefinition" />
-      <ref role="2rTdP9" to="at53:F907haLJXw" resolve="IViewModelCommand" />
+      <property role="TrG5h" value="ICommand_OperationDefinition" />
+      <ref role="2rTdP9" to="at53:F907haLJXw" resolve="ICommand" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
     </node>
     <node concept="2rT7sh" id="4a2vw53deQl" role="2rTMjI">
-      <property role="TrG5h" value="IViewModelCommand_ParameterObject_DataTypeDefinition" />
+      <property role="TrG5h" value="ICommand_ParameterObject_DataTypeDefinition" />
       <ref role="2rZz_L" to="28lk:1KdBIfX5Okr" resolve="DataTypeDefinition" />
-      <ref role="2rTdP9" to="at53:F907haLJXw" resolve="IViewModelCommand" />
+      <ref role="2rTdP9" to="at53:F907haLJXw" resolve="ICommand" />
     </node>
     <node concept="2rT7sh" id="7ceEXPSz6YX" role="2rTMjI">
       <property role="TrG5h" value="ViewWidgetFeature_Getter_OperationDefinition" />
@@ -479,7 +479,7 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:6kjlgUuu6dE" resolve="ViewWidgetCommand" />
       <node concept="j$656" id="3JF9X1M5pUO" role="1lVwrX">
-        <ref role="v9R2y" node="Of5vVZKs_b" resolve="reduce_Base_ViewModelCommand" />
+        <ref role="v9R2y" node="Of5vVZKs_b" resolve="reduce_Base_Command" />
         <node concept="2YIFZM" id="Of5vVZKMpo" role="v9R3O">
           <ref role="37wK5l" to="jrwo:2evlxT94RVh" resolve="getOperationName" />
           <ref role="1Pybhc" to="jrwo:2evlxT94KqS" resolve="ViewModelGeneratorNameHelper" />
@@ -489,9 +489,9 @@
     </node>
     <node concept="3aamgX" id="2evlxT95dWY" role="3acgRq">
       <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+      <ref role="30HIoZ" to="at53:7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
       <node concept="j$656" id="2evlxT95dWZ" role="1lVwrX">
-        <ref role="v9R2y" node="Of5vVZKs_b" resolve="reduce_Base_ViewModelCommand" />
+        <ref role="v9R2y" node="Of5vVZKs_b" resolve="reduce_Base_Command" />
         <node concept="2YIFZM" id="Of5vVZKMxM" role="v9R3O">
           <ref role="37wK5l" to="jrwo:2evlxT95uzf" resolve="getOperationNameForParameterizedCommand" />
           <ref role="1Pybhc" to="jrwo:2evlxT94KqS" resolve="ViewModelGeneratorNameHelper" />
@@ -734,7 +734,7 @@
                       <node concept="30H73N" id="3hBQrFq97su" role="2Oq$k0" />
                     </node>
                     <node concept="3Tsc0h" id="3JF9X1M51tt" role="2OqNvi">
-                      <ref role="3TtcxE" to="at53:F907haMmbJ" resolve="commands" />
+                      <ref role="3TtcxE" to="at53:F907haMmbJ" resolve="contents" />
                     </node>
                   </node>
                   <node concept="4Tj9Z" id="3JF9X1M55Mf" role="2OqNvi">
@@ -2292,7 +2292,7 @@
     </node>
     <node concept="3aamgX" id="Of5vVZKBbc" role="3aUrZf">
       <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+      <ref role="30HIoZ" to="at53:7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
       <node concept="1Koe21" id="Of5vVZKDPo" role="1lVwrX">
         <node concept="15s5l7" id="5jkMFwFHvjS" role="lGtFl">
           <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be parent)&quot;;FLAVOUR_MESSAGE=&quot;Node '(instance of OnesidedMultiplicityRange)' cannot be parent of node '(instance of IfMacro)'&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/2021446509811532628]&quot;;" />
@@ -3325,7 +3325,7 @@
     </node>
     <node concept="3aamgX" id="Of5vVZKGS_" role="3aUrZf">
       <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="at53:7ZadkZWNZxB" resolve="AbstractViewModelParameterizedCommand" />
+      <ref role="30HIoZ" to="at53:7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
       <node concept="1Koe21" id="Of5vVZKGSA" role="1lVwrX">
         <node concept="6lMYc" id="Of5vVZKIDC" role="1Koe22">
           <property role="TrG5h" value="field" />
@@ -3356,8 +3356,8 @@
   </node>
   <node concept="13MO4I" id="Of5vVZKs_b">
     <property role="3GE5qa" value="viewmodel.commands" />
-    <property role="TrG5h" value="reduce_Base_ViewModelCommand" />
-    <ref role="3gUMe" to="at53:F907haLJXw" resolve="IViewModelCommand" />
+    <property role="TrG5h" value="reduce_Base_Command" />
+    <ref role="3gUMe" to="at53:F907haLJXw" resolve="ICommand" />
     <node concept="1N15co" id="Of5vVZKtt0" role="1s_3oS">
       <property role="TrG5h" value="operatorName" />
       <node concept="17QB3L" id="Of5vVZKtzP" role="1N15GL" />
@@ -3383,7 +3383,7 @@
             </node>
           </node>
           <node concept="raruj" id="5Z7ORBx9Ywt" role="lGtFl">
-            <ref role="2sdACS" node="4a2vw53deQl" resolve="IViewModelCommand_ParameterObject_DataTypeDefinition" />
+            <ref role="2sdACS" node="4a2vw53deQl" resolve="ICommand_ParameterObject_DataTypeDefinition" />
           </node>
           <node concept="17Uvod" id="5Z7ORBx9YBh" role="lGtFl">
             <property role="2qtEX9" value="name" />
@@ -3486,7 +3486,7 @@
           </node>
           <node concept="PCHzy" id="Of5vVZKsBb" role="GbAUv" />
           <node concept="raruj" id="Of5vVZKsBc" role="lGtFl">
-            <ref role="2sdACS" node="7T8HsuTSUCz" resolve="IViewModelCommand_OperationDefinition" />
+            <ref role="2sdACS" node="7T8HsuTSUCz" resolve="ICommand_OperationDefinition" />
           </node>
           <node concept="17Uvod" id="Of5vVZKsBd" role="lGtFl">
             <property role="2qtEX9" value="name" />
@@ -3827,7 +3827,7 @@
                       <node concept="30H73N" id="5jkMFw_Kwck" role="2Oq$k0" />
                     </node>
                     <node concept="3Tsc0h" id="5jkMFw_Kwcl" role="2OqNvi">
-                      <ref role="3TtcxE" to="at53:F907haMmbJ" resolve="commands" />
+                      <ref role="3TtcxE" to="at53:F907haMmbJ" resolve="contents" />
                     </node>
                   </node>
                   <node concept="4Tj9Z" id="5jkMFw_Kwcm" role="2OqNvi">

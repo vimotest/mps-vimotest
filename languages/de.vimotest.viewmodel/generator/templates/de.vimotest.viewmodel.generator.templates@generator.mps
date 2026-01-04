@@ -450,7 +450,7 @@
     </node>
     <node concept="2rT7sh" id="54nmQxFEMFx" role="2rTMjI">
       <property role="TrG5h" value="ViewModelDependency_ClassDefinition" />
-      <ref role="2rTdP9" to="at53:69SOXVnRitH" resolve="ViewModelDependency" />
+      <ref role="2rTdP9" to="at53:69SOXVnRitH" resolve="Dependency" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
     </node>
     <node concept="2rT7sh" id="54nmQxFENq0" role="2rTMjI">
@@ -557,7 +557,7 @@
     <node concept="3aamgX" id="3kGPU1PzUSR" role="3acgRq">
       <ref role="30HIoZ" to="at53:4m0g11MoodV" resolve="DependencyOperation" />
       <node concept="j$656" id="3kGPU1PzV20" role="1lVwrX">
-        <ref role="v9R2y" node="3kGPU1Pr1_U" resolve="reduce_DependencyMethod" />
+        <ref role="v9R2y" node="3kGPU1Pr1_U" resolve="reduce_DependencyOperation" />
       </node>
     </node>
     <node concept="3aamgX" id="6gWUZpWZCVJ" role="3acgRq">
@@ -591,8 +591,8 @@
       </node>
     </node>
     <node concept="3lhOvk" id="47nlIY2QbNZ" role="3lj3bC">
-      <ref role="30HIoZ" to="at53:69SOXVnRitH" resolve="ViewModelDependency" />
-      <ref role="3lhOvi" node="47nlIY2Qc27" resolve="root_mapping_ViewModelDependency" />
+      <ref role="30HIoZ" to="at53:69SOXVnRitH" resolve="Dependency" />
+      <ref role="3lhOvi" node="47nlIY2Qc27" resolve="root_mapping_Dependency" />
     </node>
     <node concept="3lhOvk" id="3jx7KixuOP" role="3lj3bC">
       <ref role="30HIoZ" to="at53:12kpBrp1H3U" resolve="RadioButtonGroupWidget" />
@@ -632,7 +632,7 @@
       <ref role="aOQi4" to="at53:6wbjV0Q45wI" resolve="ImageDefinitionRegistry" />
     </node>
     <node concept="aNPBN" id="3kGPU1Ptakz" role="aQYdv">
-      <ref role="aOQi4" to="at53:47nlIY20wOD" resolve="ViewModelDependencyRegistry" />
+      <ref role="aOQi4" to="at53:47nlIY20wOD" resolve="DependencyRegistry" />
     </node>
   </node>
   <node concept="3mGtxK" id="YSmflIzKTk">
@@ -683,7 +683,7 @@
                   <node concept="2OqwBi" id="3hBQrFq99oU" role="2Oq$k0">
                     <node concept="30H73N" id="3hBQrFq93iS" role="2Oq$k0" />
                     <node concept="3TrEf2" id="3hBQrFq99Zh" role="2OqNvi">
-                      <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="viewModelData" />
+                      <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="state" />
                     </node>
                   </node>
                   <node concept="3Tsc0h" id="3JF9X1M4OGG" role="2OqNvi">
@@ -729,7 +729,7 @@
                   <node concept="2OqwBi" id="3hBQrFq98gZ" role="2Oq$k0">
                     <node concept="2OqwBi" id="3hBQrFq97sq" role="2Oq$k0">
                       <node concept="3TrEf2" id="3hBQrFq97X5" role="2OqNvi">
-                        <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="viewModelCommands" />
+                        <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commands" />
                       </node>
                       <node concept="30H73N" id="3hBQrFq97su" role="2Oq$k0" />
                     </node>
@@ -742,7 +742,7 @@
                       <node concept="2OqwBi" id="3JF9X1M56kc" role="2Oq$k0">
                         <node concept="30H73N" id="3JF9X1M55YF" role="2Oq$k0" />
                         <node concept="3TrEf2" id="3JF9X1M56Gu" role="2OqNvi">
-                          <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="viewModelData" />
+                          <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="state" />
                         </node>
                       </node>
                       <node concept="2Rf3mk" id="3JF9X1M57GI" role="2OqNvi">
@@ -3803,7 +3803,7 @@
                 <node concept="2OqwBi" id="5jkMFw_URWI" role="37wK5m">
                   <node concept="30H73N" id="5jkMFw_Pb63" role="2Oq$k0" />
                   <node concept="3TrEf2" id="5jkMFw_USEF" role="2OqNvi">
-                    <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="viewModelCommands" />
+                    <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commands" />
                   </node>
                 </node>
               </node>
@@ -3822,7 +3822,7 @@
                   <node concept="2OqwBi" id="5jkMFw_Kwch" role="2Oq$k0">
                     <node concept="2OqwBi" id="5jkMFw_Kwci" role="2Oq$k0">
                       <node concept="3TrEf2" id="5jkMFw_Kwcj" role="2OqNvi">
-                        <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="viewModelCommands" />
+                        <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commands" />
                       </node>
                       <node concept="30H73N" id="5jkMFw_Kwck" role="2Oq$k0" />
                     </node>
@@ -3835,7 +3835,7 @@
                       <node concept="2OqwBi" id="5jkMFw_Kwco" role="2Oq$k0">
                         <node concept="30H73N" id="5jkMFw_Kwcp" role="2Oq$k0" />
                         <node concept="3TrEf2" id="5jkMFw_Kwcq" role="2OqNvi">
-                          <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="viewModelData" />
+                          <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="state" />
                         </node>
                       </node>
                       <node concept="2Rf3mk" id="5jkMFw_Kwcr" role="2OqNvi">
@@ -3880,7 +3880,7 @@
                           <node concept="2OqwBi" id="5ZcB1GfzN1G" role="2Oq$k0">
                             <node concept="30H73N" id="5ZcB1GfzN1H" role="2Oq$k0" />
                             <node concept="3TrEf2" id="5ZcB1GfzN1I" role="2OqNvi">
-                              <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="viewModelCommands" />
+                              <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commands" />
                             </node>
                           </node>
                         </node>
@@ -3910,7 +3910,7 @@
                       <node concept="2OqwBi" id="5ZcB1GfzMp6" role="2Oq$k0">
                         <node concept="30H73N" id="5ZcB1GfzMp7" role="2Oq$k0" />
                         <node concept="3TrEf2" id="5ZcB1GfzMp8" role="2OqNvi">
-                          <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="viewModelCommands" />
+                          <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commands" />
                         </node>
                       </node>
                     </node>
@@ -3923,7 +3923,7 @@
                     <node concept="2OqwBi" id="5ZcB1GfzJD$" role="2Oq$k0">
                       <node concept="30H73N" id="5ZcB1GfzJD_" role="2Oq$k0" />
                       <node concept="3TrEf2" id="5ZcB1GfzJDA" role="2OqNvi">
-                        <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="viewModelCommands" />
+                        <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commands" />
                       </node>
                     </node>
                   </node>
@@ -4240,7 +4240,7 @@
     <property role="TrG5h" value="map_ViewModelDependency" />
     <node concept="6nSm2" id="47nlIY2QcRZ" role="3mGtxP">
       <property role="PCHHn" value="6OepWIVA92I/package" />
-      <property role="TrG5h" value="root_mapping_ViewModelDependency" />
+      <property role="TrG5h" value="root_mapping_Dependency" />
       <property role="PCHGy" value="true" />
       <node concept="6nSm6" id="3kGPU1PzVbX" role="PCHHv">
         <property role="TrG5h" value="dependencyMethod" />
@@ -4394,7 +4394,7 @@
       </node>
     </node>
     <node concept="n94m4" id="47nlIY2Qc29" role="lGtFl">
-      <ref role="n9lRv" to="at53:69SOXVnRitH" resolve="ViewModelDependency" />
+      <ref role="n9lRv" to="at53:69SOXVnRitH" resolve="Dependency" />
     </node>
     <node concept="17Uvod" id="32SpZNJ4pYa" role="lGtFl">
       <property role="2qtEX9" value="virtualPackage" />
@@ -4414,7 +4414,7 @@
     </node>
   </node>
   <node concept="13MO4I" id="3kGPU1Pr1_U">
-    <property role="TrG5h" value="reduce_DependencyMethod" />
+    <property role="TrG5h" value="reduce_DependencyOperation" />
     <property role="3GE5qa" value="dependencies" />
     <ref role="3gUMe" to="at53:4m0g11MoodV" resolve="DependencyOperation" />
     <node concept="3mGtxK" id="3kGPU1Pr1_W" role="13RCb5">

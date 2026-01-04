@@ -2,15 +2,15 @@ namespace dependencies ;
 
 private import Testing ;
 
-class ViewModelDependency_ViewModelTests {
+class Dependency_ViewModelTests {
   
-  private sut : ViewModelDependency_ViewModel  ;
+  private sut : Dependency_ViewModel  ;
   
-  private testSetup : ViewModelDependency_ViewModelTestSetup  ;
+  private testSetup : Dependency_ViewModelTestSetup  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new ViewModelDependency_ViewModelTestSetupImpl (  );
+    this.testSetup = new Dependency_ViewModelTestSetupImpl (  );
 
     this.testSetup.Init (  );
 

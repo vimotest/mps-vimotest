@@ -1165,7 +1165,7 @@
                     <node concept="2OqwBi" id="1F_Q10zW4O$" role="2Oq$k0">
                       <node concept="13iPFW" id="1F_Q10zW4Bg" role="2Oq$k0" />
                       <node concept="3TrEf2" id="1F_Q10zW50M" role="2OqNvi">
-                        <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="viewModelData" />
+                        <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="state" />
                       </node>
                     </node>
                     <node concept="3Tsc0h" id="1F_Q10zW6f1" role="2OqNvi">
@@ -1203,7 +1203,7 @@
                     <node concept="2OqwBi" id="17xw4ZmO0xe" role="2Oq$k0">
                       <node concept="13iPFW" id="17xw4ZmO0xf" role="2Oq$k0" />
                       <node concept="3TrEf2" id="17xw4ZmO0xg" role="2OqNvi">
-                        <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="viewModelCommands" />
+                        <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commands" />
                       </node>
                     </node>
                     <node concept="3Tsc0h" id="17xw4ZmO1Xx" role="2OqNvi">
@@ -1269,7 +1269,7 @@
             <node concept="2OqwBi" id="54nmQxFoZKp" role="2Oq$k0">
               <node concept="13iPFW" id="54nmQxFoZvy" role="2Oq$k0" />
               <node concept="3TrEf2" id="54nmQxFp01t" role="2OqNvi">
-                <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="viewModelCommands" />
+                <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commands" />
               </node>
             </node>
             <node concept="3Tsc0h" id="54nmQxFp0xO" role="2OqNvi">
@@ -6784,7 +6784,7 @@
                 </node>
               </node>
               <node concept="3TrEf2" id="1F_Q10zUO9F" role="2OqNvi">
-                <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="viewModelData" />
+                <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="state" />
               </node>
             </node>
             <node concept="2Rf3mk" id="1F_Q10zUOLu" role="2OqNvi">
@@ -11057,7 +11057,7 @@
               <node concept="2Xjw5R" id="3kGPU1PPfxf" role="2OqNvi">
                 <node concept="1xMEDy" id="3kGPU1PPfxh" role="1xVPHs">
                   <node concept="chp4Y" id="3kGPU1PPfz_" role="ri$Ld">
-                    <ref role="cht4Q" to="at53:47nlIY20wOD" resolve="ViewModelDependencyRegistry" />
+                    <ref role="cht4Q" to="at53:47nlIY20wOD" resolve="DependencyRegistry" />
                   </node>
                 </node>
               </node>
@@ -11073,7 +11073,7 @@
   </node>
   <node concept="13h7C7" id="47nlIY20z0o">
     <property role="3GE5qa" value="dependencies" />
-    <ref role="13h7C2" to="at53:69SOXVnRitH" resolve="ViewModelDependency" />
+    <ref role="13h7C2" to="at53:69SOXVnRitH" resolve="Dependency" />
     <node concept="13hLZK" id="47nlIY20z0p" role="13h7CW">
       <node concept="3clFbS" id="47nlIY20z0q" role="2VODD2" />
     </node>
@@ -11087,7 +11087,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="47nlIY20z0K" role="3clF45">
-        <ref role="ehGHo" to="at53:69SOXVnRitH" resolve="ViewModelDependency" />
+        <ref role="ehGHo" to="at53:69SOXVnRitH" resolve="Dependency" />
       </node>
     </node>
     <node concept="13i0hz" id="3kGPU1Q2LGh" role="13h7CS">
@@ -11102,7 +11102,7 @@
               <node concept="2Xjw5R" id="3kGPU1Q2M61" role="2OqNvi">
                 <node concept="1xMEDy" id="3kGPU1Q2M63" role="1xVPHs">
                   <node concept="chp4Y" id="3kGPU1Q2M8A" role="ri$Ld">
-                    <ref role="cht4Q" to="at53:47nlIY20wOD" resolve="ViewModelDependencyRegistry" />
+                    <ref role="cht4Q" to="at53:47nlIY20wOD" resolve="DependencyRegistry" />
                   </node>
                 </node>
               </node>
@@ -11137,7 +11137,7 @@
   </node>
   <node concept="13h7C7" id="47nlIY20z3x">
     <property role="3GE5qa" value="dependencies" />
-    <ref role="13h7C2" to="at53:47nlIY20z3u" resolve="ViewModelDependencyRef" />
+    <ref role="13h7C2" to="at53:47nlIY20z3u" resolve="DependencyRef" />
     <node concept="13hLZK" id="47nlIY20z3y" role="13h7CW">
       <node concept="3clFbS" id="47nlIY20z3z" role="2VODD2" />
     </node>

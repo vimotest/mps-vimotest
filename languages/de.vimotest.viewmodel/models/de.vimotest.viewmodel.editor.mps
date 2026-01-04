@@ -912,7 +912,7 @@
         <ref role="1k5W1q" to="dgt9:F907haLJXS" resolve="LeftBracket" />
       </node>
       <node concept="3F1sOY" id="F907haLJZb" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:F907haLJWv" resolve="viewModelData" />
+        <ref role="1NtTu8" to="at53:F907haLJWv" resolve="state" />
         <node concept="pVoyu" id="F907haLJZc" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -926,7 +926,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="F907haLJYX" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:F907haLJWs" resolve="viewModelCommands" />
+        <ref role="1NtTu8" to="at53:F907haLJWs" resolve="commands" />
         <node concept="pVoyu" id="F907haLJZ6" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -940,7 +940,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="69SOXVnRCI0" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:69SOXVnRi$L" resolve="viewModelDependencies" />
+        <ref role="1NtTu8" to="at53:69SOXVnRi$L" resolve="dependencies" />
         <node concept="pVoyu" id="69SOXVnRCI1" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -3398,7 +3398,7 @@
   </node>
   <node concept="24kQdi" id="7UthagXVal1">
     <property role="3GE5qa" value="viewmodel" />
-    <ref role="1XX52x" to="at53:F907haLJWj" resolve="ViewModelData" />
+    <ref role="1XX52x" to="at53:F907haLJWj" resolve="ViewModelState" />
     <node concept="3EZMnI" id="7UthagXVf8d" role="2wV5jI">
       <node concept="1QoScp" id="7UthagXVf8h" role="3EZMnx">
         <property role="1QpmdY" value="true" />
@@ -5206,7 +5206,7 @@
   </node>
   <node concept="24kQdi" id="4m0g11Moomb">
     <property role="3GE5qa" value="dependencies" />
-    <ref role="1XX52x" to="at53:69SOXVnRitH" resolve="ViewModelDependency" />
+    <ref role="1XX52x" to="at53:69SOXVnRitH" resolve="Dependency" />
     <node concept="3EZMnI" id="4m0g11Moonq" role="2wV5jI">
       <node concept="3F0ifn" id="4m0g11Moonu" role="3EZMnx">
         <property role="3F0ifm" value="dependency" />
@@ -5250,7 +5250,7 @@
   </node>
   <node concept="24kQdi" id="4m0g11Mootf">
     <property role="3GE5qa" value="dependencies" />
-    <ref role="1XX52x" to="at53:69SOXVnRzRz" resolve="ViewModelDependencyList" />
+    <ref role="1XX52x" to="at53:69SOXVnRzRz" resolve="DependencyList" />
     <node concept="3EZMnI" id="4m0g11MoouP" role="2wV5jI">
       <node concept="3F0ifn" id="4m0g11MoouT" role="3EZMnx">
         <property role="3F0ifm" value="dependencies" />
@@ -5335,7 +5335,7 @@
   </node>
   <node concept="24kQdi" id="47nlIY20wOG">
     <property role="3GE5qa" value="dependencies" />
-    <ref role="1XX52x" to="at53:47nlIY20wOD" resolve="ViewModelDependencyRegistry" />
+    <ref role="1XX52x" to="at53:47nlIY20wOD" resolve="DependencyRegistry" />
     <node concept="3EZMnI" id="47nlIY20wOI" role="2wV5jI">
       <node concept="PMmxH" id="47nlIY20wOM" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -5373,7 +5373,7 @@
   </node>
   <node concept="24kQdi" id="47nlIY20zY1">
     <property role="3GE5qa" value="dependencies" />
-    <ref role="1XX52x" to="at53:47nlIY20z3u" resolve="ViewModelDependencyRef" />
+    <ref role="1XX52x" to="at53:47nlIY20z3u" resolve="DependencyRef" />
     <node concept="3EZMnI" id="47nlIY20zY3" role="2wV5jI">
       <node concept="3F0ifn" id="47nlIY20zYg" role="3EZMnx">
         <property role="3F0ifm" value="ref" />
@@ -5393,7 +5393,7 @@
   </node>
   <node concept="3dRTYf" id="32SpZNJYDOB">
     <property role="3GE5qa" value="dependencies" />
-    <property role="TrG5h" value="ViewModelDependency_CompletionStyling" />
+    <property role="TrG5h" value="Dependency_CompletionStyling" />
     <node concept="3Tm1VV" id="32SpZNJYDOC" role="1B3o_S" />
     <node concept="KNhPm" id="32SpZNJYDPM" role="KNiz3">
       <ref role="2RIln$" to="at53:47nlIY20x2m" resolve="IDependencyListElement" />
@@ -5443,7 +5443,7 @@
             </node>
             <node concept="2Zo12i" id="32SpZNK1bll" role="2OqNvi">
               <node concept="chp4Y" id="32SpZNK1bpt" role="2Zo12j">
-                <ref role="cht4Q" to="at53:69SOXVnRitH" resolve="ViewModelDependency" />
+                <ref role="cht4Q" to="at53:69SOXVnRitH" resolve="Dependency" />
               </node>
             </node>
           </node>
@@ -5538,7 +5538,7 @@
             </node>
             <node concept="2Zo12i" id="32SpZNK3ADL" role="2OqNvi">
               <node concept="chp4Y" id="32SpZNK3ADM" role="2Zo12j">
-                <ref role="cht4Q" to="at53:47nlIY20z3u" resolve="ViewModelDependencyRef" />
+                <ref role="cht4Q" to="at53:47nlIY20z3u" resolve="DependencyRef" />
               </node>
             </node>
           </node>

@@ -123,22 +123,22 @@
     <node concept="1TJgyj" id="F907haLJWs" role="1TKVEi">
       <property role="IQ2ns" value="777152910168882972" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="viewModelCommands" />
+      <property role="20kJfa" value="commands" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="F907haLJWl" resolve="ViewModelCommands" />
     </node>
     <node concept="1TJgyj" id="F907haLJWv" role="1TKVEi">
       <property role="IQ2ns" value="777152910168882975" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="viewModelData" />
+      <property role="20kJfa" value="state" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="F907haLJWj" resolve="ViewModelData" />
+      <ref role="20lvS9" node="F907haLJWj" resolve="ViewModelState" />
     </node>
     <node concept="1TJgyj" id="69SOXVnRi$L" role="1TKVEi">
       <property role="IQ2ns" value="7095654166980012337" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="viewModelDependencies" />
-      <ref role="20lvS9" node="69SOXVnRzRz" resolve="ViewModelDependencyList" />
+      <property role="20kJfa" value="dependencies" />
+      <ref role="20lvS9" node="69SOXVnRzRz" resolve="DependencyList" />
     </node>
     <node concept="PrWs8" id="F907haLJWq" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -195,8 +195,8 @@
   <node concept="1TIwiD" id="F907haLJWj">
     <property role="EcuMT" value="777152910168882963" />
     <property role="3GE5qa" value="viewmodel" />
-    <property role="TrG5h" value="ViewModelData" />
-    <property role="34LRSv" value="contents" />
+    <property role="TrG5h" value="ViewModelState" />
+    <property role="34LRSv" value="state" />
     <ref role="1TJDcQ" to="evry:F907haLJtZ" resolve="AbstractStructType" />
   </node>
   <node concept="1TIwiD" id="F907haLJWl">
@@ -1675,7 +1675,7 @@
   </node>
   <node concept="1TIwiD" id="69SOXVnRitH">
     <property role="EcuMT" value="7095654166980011885" />
-    <property role="TrG5h" value="ViewModelDependency" />
+    <property role="TrG5h" value="Dependency" />
     <property role="34LRSv" value="dependency" />
     <property role="3GE5qa" value="dependencies" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -1721,7 +1721,7 @@
   </node>
   <node concept="1TIwiD" id="69SOXVnRzRz">
     <property role="EcuMT" value="7095654166980083171" />
-    <property role="TrG5h" value="ViewModelDependencyList" />
+    <property role="TrG5h" value="DependencyList" />
     <property role="34LRSv" value="dependencies" />
     <property role="3GE5qa" value="dependencies" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -1758,7 +1758,7 @@
   <node concept="1TIwiD" id="47nlIY20wOD">
     <property role="EcuMT" value="4744356319136451881" />
     <property role="3GE5qa" value="dependencies" />
-    <property role="TrG5h" value="ViewModelDependencyRegistry" />
+    <property role="TrG5h" value="DependencyRegistry" />
     <property role="34LRSv" value="dependency registry" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -1767,7 +1767,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="dependencies" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="69SOXVnRitH" resolve="ViewModelDependency" />
+      <ref role="20lvS9" node="69SOXVnRitH" resolve="Dependency" />
     </node>
     <node concept="PrWs8" id="47nlIY2eTGn" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -1824,7 +1824,7 @@
   <node concept="1TIwiD" id="47nlIY20z3u">
     <property role="EcuMT" value="4744356319136461022" />
     <property role="3GE5qa" value="dependencies" />
-    <property role="TrG5h" value="ViewModelDependencyRef" />
+    <property role="TrG5h" value="DependencyRef" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="47nlIY20z3v" role="PzmwI">
       <ref role="PrY4T" node="47nlIY20x2m" resolve="IDependencyListElement" />

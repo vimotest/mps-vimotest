@@ -1,9 +1,9 @@
 /// <filename>
-///     ViewModelDependency_ViewModel.cs
+///     Dependency_ViewModel.cs
 /// </filename>
 namespace dependencies
 {
-    public class ViewModelDependency_ViewModel
+    public class Dependency_ViewModel
     {
         public bool MyBool;
 

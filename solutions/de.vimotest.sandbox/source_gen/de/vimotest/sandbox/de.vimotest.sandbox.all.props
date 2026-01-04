@@ -56,7 +56,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)context/DataPathContext_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/XmlElementContext_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/SimpleDependency_ViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)dependencies/ViewModelDependency_ViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/Dependency_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/MessageBus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/Logger.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/CheckBoxes_ViewModelTestSetup.cs" />
@@ -134,9 +134,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)context/XmlElementContext_ViewModelTestSetup.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/XmlElementContext_ViewModelTestSetupImpl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/XmlElementContext_ViewTests.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)dependencies/ViewModelDependency_ViewModelTestSetup.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)dependencies/ViewModelDependency_ViewModelTestSetupImpl.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)dependencies/ViewModelDependency_ViewModelTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/Dependency_ViewModelTestSetup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/Dependency_ViewModelTestSetupImpl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/Dependency_ViewModelTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/SimpleDependency_ViewModelTestSetup.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/SimpleDependency_ViewModelTestSetupImpl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/SimpleDependency_ViewModelTests.cs" />

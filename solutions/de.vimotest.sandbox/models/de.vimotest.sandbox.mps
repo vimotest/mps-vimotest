@@ -371,7 +371,7 @@
         <child id="471139930095592890" name="widgetType" index="Ek7rZ" />
         <child id="471139930095530076" name="visibilityFeature" index="Ekmcp" />
       </concept>
-      <concept id="7095654166980011885" name="de.vimotest.viewmodel.structure.ViewModelDependency" flags="ng" index="2PDviN">
+      <concept id="7095654166980011885" name="de.vimotest.viewmodel.structure.Dependency" flags="ng" index="2PDviN">
         <child id="5008073225018639679" name="operations" index="RSskJ" />
       </concept>
       <concept id="7095654166980083171" name="de.vimotest.viewmodel.structure.ViewModelDependencyList" flags="ng" index="2PDISX">
@@ -412,11 +412,11 @@
       </concept>
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
         <property id="4513875792335097421" name="baseName" index="$YGLj" />
-        <child id="7095654166980012337" name="viewModelDependencies" index="2PDvFJ" />
-        <child id="777152910168882972" name="viewModelCommands" index="103ZXC" />
-        <child id="777152910168882975" name="viewModelData" index="103ZXF" />
+        <child id="7095654166980012337" name="dependencies" index="2PDvFJ" />
+        <child id="777152910168882972" name="commands" index="103ZXC" />
+        <child id="777152910168882975" name="state" index="103ZXF" />
       </concept>
-      <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelData" flags="ng" index="103ZXB" />
+      <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelState" flags="ng" index="103ZXB" />
       <concept id="5775867078593476371" name="de.vimotest.viewmodel.structure.TextColorFeature" flags="ng" index="31hZui">
         <property id="5775867078593476692" name="defaultColorCode" index="31hZzl" />
       </concept>
@@ -5794,7 +5794,7 @@
     </node>
   </node>
   <node concept="103ZX$" id="3kGPU1Qqw_Z">
-    <property role="$YGLj" value="ViewModelDependency_" />
+    <property role="$YGLj" value="Dependency_" />
     <property role="3GE5qa" value="dependencies" />
     <node concept="103ZXx" id="3kGPU1QqwA0" role="103ZXC">
       <node concept="3Vw88J" id="3kGPU1QqwA1" role="1006ar">
@@ -5815,8 +5815,8 @@
   </node>
   <node concept="30n1Qd" id="54nmQxEJWUd">
     <property role="3GE5qa" value="dependencies" />
-    <property role="TrG5h" value="ViewModelDependency_ViewModelTests" />
-    <ref role="30n1PB" node="3kGPU1Qqw_Z" resolve="ViewModelDependency_ViewModel" />
+    <property role="TrG5h" value="Dependency_ViewModelTests" />
+    <ref role="30n1PB" node="3kGPU1Qqw_Z" resolve="Dependency_ViewModel" />
     <node concept="3LKzX3" id="54nmQxEJWUe" role="30n1Qb">
       <property role="TrG5h" value="ViewModel Dependency Invocation" />
       <node concept="1s$VFG" id="54nmQxEJWUh" role="1s$QAY">

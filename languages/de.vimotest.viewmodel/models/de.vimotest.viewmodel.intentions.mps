@@ -1505,17 +1505,17 @@
     <property role="3GE5qa" value="dependencies" />
     <property role="TrG5h" value="MoveDependencyToRegistryIntention" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="at53:69SOXVnRitH" resolve="ViewModelDependency" />
+    <ref role="2ZfgGC" to="at53:69SOXVnRitH" resolve="Dependency" />
     <node concept="38BcoT" id="3kGPU1POIoB" role="3dlsAV">
       <node concept="3Tqbb2" id="3kGPU1POQoY" role="3ddBve">
-        <ref role="ehGHo" to="at53:47nlIY20wOD" resolve="ViewModelDependencyRegistry" />
+        <ref role="ehGHo" to="at53:47nlIY20wOD" resolve="DependencyRegistry" />
       </node>
       <node concept="3clFbS" id="3kGPU1POIoD" role="2VODD2">
         <node concept="3cpWs8" id="3kGPU1Q1jY9" role="3cqZAp">
           <node concept="3cpWsn" id="3kGPU1Q1jYa" role="3cpWs9">
             <property role="TrG5h" value="registryNodes" />
             <node concept="2I9FWS" id="3kGPU1Q1jE_" role="1tU5fm">
-              <ref role="2I9WkF" to="at53:47nlIY20wOD" resolve="ViewModelDependencyRegistry" />
+              <ref role="2I9WkF" to="at53:47nlIY20wOD" resolve="DependencyRegistry" />
             </node>
             <node concept="2OqwBi" id="3kGPU1Q1n1n" role="33vP2m">
               <node concept="2OqwBi" id="3kGPU1Q1jYb" role="2Oq$k0">
@@ -1525,7 +1525,7 @@
                 </node>
                 <node concept="2SmgA7" id="3kGPU1Q1jYf" role="2OqNvi">
                   <node concept="chp4Y" id="3kGPU1Q1jYg" role="1dBWTz">
-                    <ref role="cht4Q" to="at53:47nlIY20wOD" resolve="ViewModelDependencyRegistry" />
+                    <ref role="cht4Q" to="at53:47nlIY20wOD" resolve="DependencyRegistry" />
                   </node>
                 </node>
               </node>
@@ -1609,7 +1609,7 @@
           <node concept="3cpWsn" id="3kGPU1PPpdc" role="3cpWs9">
             <property role="TrG5h" value="targetRegistry" />
             <node concept="3Tqbb2" id="3kGPU1PPpcM" role="1tU5fm">
-              <ref role="ehGHo" to="at53:47nlIY20wOD" resolve="ViewModelDependencyRegistry" />
+              <ref role="ehGHo" to="at53:47nlIY20wOD" resolve="DependencyRegistry" />
             </node>
             <node concept="38Zlrr" id="3kGPU1PPpdd" role="33vP2m" />
           </node>
@@ -1633,7 +1633,7 @@
                     <node concept="2ShNRf" id="3kGPU1PPqDk" role="3BYIHq">
                       <node concept="3zrR0B" id="3kGPU1PPKV1" role="2ShVmc">
                         <node concept="3Tqbb2" id="3kGPU1PPKV3" role="3zrR0E">
-                          <ref role="ehGHo" to="at53:47nlIY20wOD" resolve="ViewModelDependencyRegistry" />
+                          <ref role="ehGHo" to="at53:47nlIY20wOD" resolve="DependencyRegistry" />
                         </node>
                       </node>
                     </node>
@@ -1666,12 +1666,12 @@
           <node concept="3cpWsn" id="3kGPU1PVLvO" role="3cpWs9">
             <property role="TrG5h" value="reference" />
             <node concept="3Tqbb2" id="3kGPU1PVLtt" role="1tU5fm">
-              <ref role="ehGHo" to="at53:47nlIY20z3u" resolve="ViewModelDependencyRef" />
+              <ref role="ehGHo" to="at53:47nlIY20z3u" resolve="DependencyRef" />
             </node>
             <node concept="2ShNRf" id="3kGPU1PVLvP" role="33vP2m">
               <node concept="3zrR0B" id="3kGPU1PVLvQ" role="2ShVmc">
                 <node concept="3Tqbb2" id="3kGPU1PVLvR" role="3zrR0E">
-                  <ref role="ehGHo" to="at53:47nlIY20z3u" resolve="ViewModelDependencyRef" />
+                  <ref role="ehGHo" to="at53:47nlIY20z3u" resolve="DependencyRef" />
                 </node>
               </node>
             </node>

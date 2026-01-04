@@ -223,6 +223,9 @@
     <property role="EcuMT" value="777152910168883040" />
     <property role="3GE5qa" value="viewmodel" />
     <property role="TrG5h" value="IViewModelCommand" />
+    <node concept="PrWs8" id="54nmQxE1KaE" role="PrDN$">
+      <ref role="PrY4T" node="54nmQxE1KaC" resolve="IOperation" />
+    </node>
     <node concept="PrWs8" id="5jkMFwAVGTY" role="PrDN$">
       <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
     </node>
@@ -342,7 +345,7 @@
   <node concept="PlHQZ" id="2ZnRpGqKU3p">
     <property role="EcuMT" value="3447467698014101721" />
     <property role="TrG5h" value="ILinkedViewModelTest" />
-    <property role="3GE5qa" value="util" />
+    <property role="3GE5qa" value="viewmodel.util" />
   </node>
   <node concept="1TIwiD" id="7H4Lpx0iNpu">
     <property role="EcuMT" value="8882441622785832542" />
@@ -1210,7 +1213,7 @@
   </node>
   <node concept="PlHQZ" id="3JF9X1LrZr1">
     <property role="EcuMT" value="4317588443974596289" />
-    <property role="3GE5qa" value="util" />
+    <property role="3GE5qa" value="core" />
     <property role="TrG5h" value="IHasNamespace" />
     <node concept="1TJgyi" id="3JF9X1Ls77z" role="1TKVEl">
       <property role="IQ2nx" value="4317588443974627811" />
@@ -1697,9 +1700,9 @@
     <node concept="1TJgyj" id="4m0g11MookZ" role="1TKVEi">
       <property role="IQ2ns" value="5008073225018639679" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="methods" />
+      <property role="20kJfa" value="operations" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="4m0g11MoodV" resolve="DependencyMethod" />
+      <ref role="20lvS9" node="4m0g11MoodV" resolve="DependencyOperation" />
     </node>
     <node concept="1irR5M" id="32SpZNKigR7" role="rwd14">
       <property role="2$rrk2" value="4" />
@@ -1739,7 +1742,7 @@
   <node concept="1TIwiD" id="4m0g11MoodV">
     <property role="EcuMT" value="5008073225018639227" />
     <property role="3GE5qa" value="dependencies" />
-    <property role="TrG5h" value="DependencyMethod" />
+    <property role="TrG5h" value="DependencyOperation" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4m0g11Moo6v" role="1TKVEi">
       <property role="IQ2ns" value="5008073225018638751" />
@@ -1750,6 +1753,9 @@
     </node>
     <node concept="PrWs8" id="4m0g11Mooif" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="54nmQxE1KaF" role="PzmwI">
+      <ref role="PrY4T" node="54nmQxE1KaC" resolve="IOperation" />
     </node>
   </node>
   <node concept="1TIwiD" id="47nlIY20wOD">
@@ -1840,6 +1846,11 @@
     <node concept="PrWs8" id="3kGPU1QjftN" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="54nmQxE1KaC">
+    <property role="EcuMT" value="5843239545550078632" />
+    <property role="3GE5qa" value="core" />
+    <property role="TrG5h" value="IOperation" />
   </node>
 </model>
 

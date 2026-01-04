@@ -3751,7 +3751,7 @@
   </node>
   <node concept="PKFIW" id="3JF9X1LtxCE">
     <property role="TrG5h" value="IHasNamespace_EC" />
-    <property role="3GE5qa" value="util" />
+    <property role="3GE5qa" value="core" />
     <ref role="1XX52x" to="at53:3JF9X1LrZr1" resolve="IHasNamespace" />
     <node concept="3EZMnI" id="3JF9X1LtxCF" role="2wV5jI">
       <node concept="3F0ifn" id="1GOfCi7TEns" role="3EZMnx">
@@ -5220,7 +5220,7 @@
         <ref role="1k5W1q" to="dgt9:F907haLJXS" resolve="LeftBracket" />
       </node>
       <node concept="3F2HdR" id="4m0g11Mooqm" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:4m0g11MookZ" resolve="methods" />
+        <ref role="1NtTu8" to="at53:4m0g11MookZ" resolve="operations" />
         <node concept="l2Vlx" id="4m0g11Mooqo" role="2czzBx" />
         <node concept="pVoyu" id="4m0g11MooqM" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -5274,7 +5274,7 @@
   </node>
   <node concept="24kQdi" id="4m0g11MoU_U">
     <property role="3GE5qa" value="dependencies" />
-    <ref role="1XX52x" to="at53:4m0g11MoodV" resolve="DependencyMethod" />
+    <ref role="1XX52x" to="at53:4m0g11MoodV" resolve="DependencyOperation" />
     <node concept="3EZMnI" id="4m0g11MoUD7" role="2wV5jI">
       <node concept="3F0ifn" id="4m0g11MoUG4" role="3EZMnx">
         <property role="3F0ifm" value="method" />

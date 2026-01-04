@@ -990,7 +990,7 @@
           </node>
           <node concept="v3k3i" id="3kGPU1Q2pBf" role="2OqNvi">
             <node concept="chp4Y" id="3kGPU1Q2pBg" role="v3oSu">
-              <ref role="cht4Q" to="at53:4m0g11MoodV" resolve="DependencyMethod" />
+              <ref role="cht4Q" to="at53:4m0g11MoodV" resolve="DependencyOperation" />
             </node>
           </node>
         </node>
@@ -998,7 +998,7 @@
     </node>
     <node concept="1YaCAy" id="3kGPU1Q2pAM" role="1YuTPh">
       <property role="TrG5h" value="method" />
-      <ref role="1YaFvo" to="at53:4m0g11MoodV" resolve="DependencyMethod" />
+      <ref role="1YaFvo" to="at53:4m0g11MoodV" resolve="DependencyOperation" />
     </node>
   </node>
 </model>

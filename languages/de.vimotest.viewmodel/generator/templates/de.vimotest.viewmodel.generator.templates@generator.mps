@@ -545,7 +545,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="3kGPU1PzUSR" role="3acgRq">
-      <ref role="30HIoZ" to="at53:4m0g11MoodV" resolve="DependencyMethod" />
+      <ref role="30HIoZ" to="at53:4m0g11MoodV" resolve="DependencyOperation" />
       <node concept="j$656" id="3kGPU1PzV20" role="1lVwrX">
         <ref role="v9R2y" node="3kGPU1Pr1_U" resolve="reduce_DependencyMethod" />
       </node>
@@ -3345,7 +3345,7 @@
     <node concept="b5Tf3" id="Of5vVZ$e30" role="jxRDz" />
   </node>
   <node concept="13MO4I" id="Of5vVZKs_b">
-    <property role="3GE5qa" value="commands" />
+    <property role="3GE5qa" value="viewmodel" />
     <property role="TrG5h" value="reduce_Base_ViewModelCommand" />
     <ref role="3gUMe" to="at53:F907haLJXw" resolve="IViewModelCommand" />
     <node concept="1N15co" id="Of5vVZKtt0" role="1s_3oS">
@@ -4242,7 +4242,7 @@
               <node concept="3clFbF" id="3kGPU1PzVd7" role="3cqZAp">
                 <node concept="2OqwBi" id="3kGPU1PzVd2" role="3clFbG">
                   <node concept="3Tsc0h" id="3kGPU1PzVd5" role="2OqNvi">
-                    <ref role="3TtcxE" to="at53:4m0g11MookZ" resolve="methods" />
+                    <ref role="3TtcxE" to="at53:4m0g11MookZ" resolve="operations" />
                   </node>
                   <node concept="30H73N" id="3kGPU1PzVd6" role="2Oq$k0" />
                 </node>
@@ -4403,7 +4403,7 @@
   <node concept="13MO4I" id="3kGPU1Pr1_U">
     <property role="TrG5h" value="reduce_DependencyMethod" />
     <property role="3GE5qa" value="dependencies" />
-    <ref role="3gUMe" to="at53:4m0g11MoodV" resolve="DependencyMethod" />
+    <ref role="3gUMe" to="at53:4m0g11MoodV" resolve="DependencyOperation" />
     <node concept="3mGtxK" id="3kGPU1Pr1_W" role="13RCb5">
       <node concept="6nSm2" id="3kGPU1Pr1_Y" role="3mGtxP">
         <property role="PCHHn" value="6OepWIVA92I/package" />

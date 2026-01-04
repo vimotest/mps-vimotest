@@ -1077,7 +1077,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6fZwY6ieXGL">
-    <property role="3GE5qa" value="util" />
+    <property role="3GE5qa" value="viewmodel.util" />
     <ref role="13h7C2" to="at53:2ZnRpGqKU3p" resolve="ILinkedViewModelTest" />
     <node concept="13i0hz" id="2ZnRpGqKV6r" role="13h7CS">
       <property role="13i0iv" value="true" />
@@ -7935,7 +7935,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3JF9X1LtDGB">
-    <property role="3GE5qa" value="util" />
+    <property role="3GE5qa" value="core" />
     <ref role="13h7C2" to="at53:3JF9X1LrZr1" resolve="IHasNamespace" />
     <node concept="13i0hz" id="3JF9X1LtLmd" role="13h7CS">
       <property role="TrG5h" value="getEffectiveNamespace" />

@@ -7390,5 +7390,61 @@
       <ref role="2$4xQ3" to="czmc:K_fAvR65uJ" resolve="ViewWidget_EmbeddedInspector_Hint" />
     </node>
   </node>
+  <node concept="24kQdi" id="6gWUZpXe6ZH">
+    <property role="3GE5qa" value="test.actions" />
+    <ref role="1XX52x" to="53m0:6gWUZpXe6H5" resolve="ViewModelDependencyOperationInvocationAction" />
+    <node concept="3EZMnI" id="6gWUZpXe6ZJ" role="2wV5jI">
+      <node concept="3F0ifn" id="6gWUZpXe6ZK" role="3EZMnx">
+        <property role="3F0ifm" value="call dependency" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="1iCGBv" id="6gWUZpXebyX" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:6gWUZpXebkS" resolve="targetDependency" />
+        <node concept="1sVBvm" id="6gWUZpXebyZ" role="1sWHZn">
+          <node concept="3F0A7n" id="6gWUZpXebzO" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6gWUZpXeb$C" role="3EZMnx">
+        <property role="3F0ifm" value="." />
+        <node concept="11L4FC" id="6gWUZpXeb_r" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="6gWUZpXeb_t" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="6gWUZpXe6ZL" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:6gWUZpXe7fR" resolve="targetOperation" />
+        <node concept="1sVBvm" id="6gWUZpXe6ZM" role="1sWHZn">
+          <node concept="3F0A7n" id="6gWUZpXe6ZN" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="6gWUZpXe6ZO" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:6gWUZpXe7fS" resolve="parameters" />
+        <node concept="pkWqt" id="6gWUZpXe6ZP" role="pqm2j">
+          <node concept="3clFbS" id="6gWUZpXe6ZQ" role="2VODD2">
+            <node concept="3clFbF" id="6gWUZpXe6ZR" role="3cqZAp">
+              <node concept="2OqwBi" id="6gWUZpXe6ZS" role="3clFbG">
+                <node concept="2OqwBi" id="6gWUZpXe6ZT" role="2Oq$k0">
+                  <node concept="pncrf" id="6gWUZpXe6ZU" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="6gWUZpXe6ZV" role="2OqNvi">
+                    <ref role="3Tt5mk" to="53m0:6gWUZpXe7fS" resolve="parameters" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="6gWUZpXe6ZW" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="6gWUZpXe6ZX" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

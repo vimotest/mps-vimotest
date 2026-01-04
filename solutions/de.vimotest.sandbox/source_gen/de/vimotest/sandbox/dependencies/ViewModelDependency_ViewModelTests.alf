@@ -1,0 +1,46 @@
+namespace dependencies ;
+
+private import Testing ;
+
+class ViewModelDependency_ViewModelTests {
+  
+  private sut : ViewModelDependency_ViewModel  ;
+  
+  private testSetup : ViewModelDependency_ViewModelTestSetup  ;
+  
+  
+  protected BeforeTest (  ) {
+    this.testSetup = new ViewModelDependency_ViewModelTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
+  
+  
+  public ViewModel_Dependency_Invocation_given_when_LoadView_then_ (  ) {
+    this.BuildSut (  );
+
+    this.when_LoadView (  );
+
+  }
+  
+  
+  protected BuildSut (  ) {
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
+  
+  
+  // Given Helper Definitions
+
+  
+  // When Helper Definitions
+
+  
+  public when_LoadView (  ) {
+
+  }
+  
+  // Then Helper Definitions
+
+}

@@ -955,6 +955,7 @@
     <property role="EcuMT" value="8948051009467167877" />
     <property role="3GE5qa" value="test.actions" />
     <property role="TrG5h" value="ViewCommandInvocationAction" />
+    <property role="34LRSv" value="invoke command" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7KHRfJVnw5F" role="PzmwI">
       <ref role="PrY4T" node="6fZwY6ifv53" resolve="ITestScenarioAction" />
@@ -1498,6 +1499,37 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="5Pt$ekxgGAh" resolve="ITreeColumnCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6gWUZpXe6H5">
+    <property role="EcuMT" value="7222907346290764613" />
+    <property role="3GE5qa" value="test.actions" />
+    <property role="TrG5h" value="DependencyOperationInvocationAction" />
+    <property role="34LRSv" value="invoke dependency operation" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6gWUZpXe7fS" role="1TKVEi">
+      <property role="IQ2ns" value="7222907346290766840" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="parameters" />
+      <ref role="20lvS9" to="28lk:2kuSLC0oUiq" resolve="PositionalTuple" />
+    </node>
+    <node concept="1TJgyj" id="6gWUZpXebkS" role="1TKVEi">
+      <property role="IQ2ns" value="7222907346290783544" />
+      <property role="20kJfa" value="targetDependency" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="at53:3kGPU1QcSOP" resolve="IReferenceableDependency" />
+    </node>
+    <node concept="1TJgyj" id="6gWUZpXe7fR" role="1TKVEi">
+      <property role="IQ2ns" value="7222907346290766839" />
+      <property role="20kJfa" value="targetOperation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="at53:54nmQxE1KaC" resolve="IOperation" />
+    </node>
+    <node concept="PrWs8" id="6gWUZpXe6H6" role="PzmwI">
+      <ref role="PrY4T" node="6fZwY6ifv53" resolve="ITestScenarioAction" />
+    </node>
+    <node concept="PrWs8" id="6gWUZpXeadH" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
 </model>

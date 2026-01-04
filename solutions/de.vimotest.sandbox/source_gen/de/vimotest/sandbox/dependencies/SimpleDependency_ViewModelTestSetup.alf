@@ -1,0 +1,10 @@
+namespace dependencies ;
+
+
+
+abstract class SimpleDependency_ViewModelTestSetup {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : SimpleDependency_ViewModel  ;
+}

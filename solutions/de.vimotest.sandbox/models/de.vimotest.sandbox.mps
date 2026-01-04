@@ -99,6 +99,10 @@
       <concept id="3922717397912187253" name="de.vimotest.viewmodel.testing.structure.ImageCheck" flags="ng" index="2mJbJ5">
         <child id="3922717397912187254" name="checks" index="2mJbJ6" />
       </concept>
+      <concept id="7222907346290764613" name="de.vimotest.viewmodel.testing.structure.DependencyOperationInvocationAction" flags="ng" index="p182N">
+        <reference id="7222907346290783544" name="targetDependency" index="p15Ve" />
+        <reference id="7222907346290766839" name="targetOperation" index="p19w1" />
+      </concept>
       <concept id="5213916851000129542" name="de.vimotest.viewmodel.testing.structure.CheckBoxCheck" flags="ng" index="C4Fn6">
         <child id="5213916851000129543" name="checks" index="C4Fn7" />
       </concept>
@@ -368,7 +372,7 @@
         <child id="471139930095530076" name="visibilityFeature" index="Ekmcp" />
       </concept>
       <concept id="7095654166980011885" name="de.vimotest.viewmodel.structure.ViewModelDependency" flags="ng" index="2PDviN">
-        <child id="5008073225018639679" name="methods" index="RSskJ" />
+        <child id="5008073225018639679" name="operations" index="RSskJ" />
       </concept>
       <concept id="7095654166980083171" name="de.vimotest.viewmodel.structure.ViewModelDependencyList" flags="ng" index="2PDISX">
         <child id="5008073225018640442" name="dependencies" index="RSswE" />
@@ -377,7 +381,7 @@
         <property id="3225812364372528782" name="customBaseFileName" index="QIaRf" />
       </concept>
       <concept id="5008073225018638575" name="de.vimotest.viewmodel.structure.DependencyArgument" flags="ng" index="RSs3Z" />
-      <concept id="5008073225018639227" name="de.vimotest.viewmodel.structure.DependencyMethod" flags="ng" index="RSsdF">
+      <concept id="5008073225018639227" name="de.vimotest.viewmodel.structure.DependencyOperation" flags="ng" index="RSsdF">
         <child id="5008073225018638751" name="arguments" index="RSs6f" />
       </concept>
       <concept id="2567579368932258681" name="de.vimotest.viewmodel.structure.TextBoxWidget" flags="ng" index="UtuMG">
@@ -5750,7 +5754,7 @@
       <node concept="2PDviN" id="4m0g11MwG5P" role="RSswE">
         <property role="TrG5h" value="MessageBus" />
         <node concept="RSsdF" id="4m0g11MwG6C" role="RSskJ">
-          <property role="TrG5h" value="OnMesssage" />
+          <property role="TrG5h" value="OnMessage" />
           <node concept="RSs3Z" id="4m0g11MI2dX" role="RSs6f">
             <property role="TrG5h" value="messageId" />
             <node concept="1nBWMp" id="4m0g11MI2eQ" role="3xMlr6" />
@@ -5772,9 +5776,6 @@
       </node>
       <node concept="33PmoL" id="47nlIY2uGJx" role="RSswE">
         <ref role="33Pmof" node="47nlIY2maYg" resolve="Logger" />
-      </node>
-      <node concept="33PmoL" id="32SpZNIZgXF" role="RSswE">
-        <ref role="33Pmof" node="3kGPU1Qqw_Z" resolve="ViewModelDependency_ViewModel" />
       </node>
     </node>
   </node>
@@ -5806,7 +5807,54 @@
         <node concept="1nBHEw" id="3kGPU1QqwA4" role="3xMlr6" />
       </node>
     </node>
-    <node concept="2PDISX" id="3kGPU1QqwA5" role="2PDvFJ" />
+    <node concept="2PDISX" id="3kGPU1QqwA5" role="2PDvFJ">
+      <node concept="33PmoL" id="32SpZNIZgXF" role="RSswE">
+        <ref role="33Pmof" node="4m0g11MwG31" resolve="SimpleDependency_ViewModel" />
+      </node>
+    </node>
+  </node>
+  <node concept="30n1Qd" id="54nmQxEJWUd">
+    <property role="3GE5qa" value="dependencies" />
+    <property role="TrG5h" value="ViewModelDependency_ViewModelTests" />
+    <ref role="30n1PB" node="3kGPU1Qqw_Z" resolve="ViewModelDependency_ViewModel" />
+    <node concept="3LKzX3" id="54nmQxEJWUe" role="30n1Qb">
+      <property role="TrG5h" value="ViewModel Dependency Invocation" />
+      <node concept="1s$VFG" id="54nmQxEJWUh" role="1s$QAY">
+        <node concept="DUd5q" id="54nmQxEJWUi" role="1s$QAM">
+          <node concept="p182N" id="54nmQxEJWUm" role="DUiS9">
+            <ref role="p15Ve" node="4m0g11MwG31" resolve="SimpleDependency_ViewModel" />
+            <ref role="p19w1" node="4m0g11MwG33" resolve="LoadView" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="30n1Qd" id="54nmQxF9CwB">
+    <property role="3GE5qa" value="dependencies" />
+    <property role="TrG5h" value="SimpleDependency_ViewModelTests" />
+    <ref role="30n1PB" node="4m0g11MwG31" resolve="SimpleDependency_ViewModel" />
+    <node concept="3LKzX3" id="54nmQxF9CwC" role="30n1Qb">
+      <property role="TrG5h" value="Invoke Direct Dependency" />
+      <node concept="1s$VFG" id="54nmQxF9CwF" role="1s$QAY">
+        <node concept="DUd5q" id="54nmQxF9CwG" role="1s$QAM">
+          <node concept="p182N" id="54nmQxF9CwK" role="DUiS9">
+            <ref role="p15Ve" node="4m0g11MwG5P" resolve="MessageBus" />
+            <ref role="p19w1" node="4m0g11MwG6C" resolve="OnMessage" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="54nmQxFeL_Z" role="30n1Qb">
+      <property role="TrG5h" value="Invoke Registry Dependency" />
+      <node concept="1s$VFG" id="54nmQxFeLA0" role="1s$QAY">
+        <node concept="DUd5q" id="54nmQxFeLA1" role="1s$QAM">
+          <node concept="p182N" id="54nmQxFeLA4" role="DUiS9">
+            <ref role="p15Ve" node="47nlIY2maYg" resolve="Logger" />
+            <ref role="p19w1" node="47nlIY2maYh" resolve="Log" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

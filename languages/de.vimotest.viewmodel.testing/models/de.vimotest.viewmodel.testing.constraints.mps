@@ -24,7 +24,6 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -155,9 +154,6 @@
       <concept id="1181949435690" name="jetbrains.mps.lang.smodel.structure.Concept_NewInstance" flags="nn" index="LFhST" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
-        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
-      </concept>
       <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
         <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
         <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
@@ -718,24 +714,11 @@
       <node concept="3clFbS" id="7ynD$XoI_lt" role="2VODD2">
         <node concept="3clFbJ" id="7ynD$XoI_yX" role="3cqZAp">
           <node concept="3clFbS" id="7ynD$XoI_yY" role="3clFbx">
-            <node concept="3cpWs6" id="7ynD$XoIBAb" role="3cqZAp">
-              <node concept="22lmx$" id="5jkMFwF7W$2" role="3cqZAk">
-                <node concept="2OqwBi" id="5jkMFwF7Xsb" role="3uHU7w">
-                  <node concept="2DD5aU" id="5jkMFwF7WTL" role="2Oq$k0" />
-                  <node concept="2Zo12i" id="5jkMFwF7Y8h" role="2OqNvi">
-                    <node concept="chp4Y" id="5jkMFwF7Ytb" role="2Zo12j">
-                      <ref role="cht4Q" to="28lk:5jkMFwCz6_T" resolve="SequenceConstructionExpression" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="7ynD$XoIFqy" role="3uHU7B">
-                  <node concept="2DD5aU" id="7ynD$XoIBOT" role="2Oq$k0" />
-                  <node concept="2Zo12i" id="7ynD$XoIG6u" role="2OqNvi">
-                    <node concept="chp4Y" id="7ynD$XoIGra" role="2Zo12j">
-                      <ref role="cht4Q" to="28lk:2kuSLC0kNK3" resolve="LiteralExpression" />
-                    </node>
-                  </node>
-                </node>
+            <node concept="3cpWs6" id="6gWUZpXe9U7" role="3cqZAp">
+              <node concept="2YIFZM" id="6gWUZpXe9W3" role="3cqZAk">
+                <ref role="37wK5l" to="fwln:6gWUZpXe8PI" resolve="isSupportedExpressionConcept" />
+                <ref role="1Pybhc" to="fwln:6gWUZpXe80Z" resolve="ActionExpressionHelper" />
+                <node concept="2DD5aU" id="6gWUZpXe9X3" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -1315,6 +1298,49 @@
   <node concept="1M2fIO" id="38nA5hDRv4k">
     <property role="3GE5qa" value="test.context" />
     <ref role="1M2myG" to="53m0:2Yd1qrJOMZM" resolve="ITestScenarioContext" />
+  </node>
+  <node concept="1M2fIO" id="6gWUZpXe9Ym">
+    <property role="3GE5qa" value="test.actions" />
+    <ref role="1M2myG" to="53m0:6gWUZpXe6H5" resolve="DependencyOperationInvocationAction" />
+    <node concept="1N5Pfh" id="6gWUZpXebGh" role="1Mr941">
+      <ref role="1N5Vy1" to="53m0:6gWUZpXebkS" resolve="targetDependency" />
+      <node concept="1dDu$B" id="6gWUZpXebGi" role="1N6uqs">
+        <ref role="1dDu$A" to="at53:3kGPU1QcSOP" resolve="IReferenceableDependency" />
+      </node>
+    </node>
+    <node concept="1N5Pfh" id="6gWUZpXeanQ" role="1Mr941">
+      <ref role="1N5Vy1" to="53m0:6gWUZpXe7fR" resolve="targetOperation" />
+      <node concept="1dDu$B" id="6gWUZpXeaq9" role="1N6uqs">
+        <ref role="1dDu$A" to="at53:54nmQxE1KaC" resolve="IOperation" />
+      </node>
+    </node>
+    <node concept="9SQb8" id="6gWUZpXe9Yn" role="9SGkC">
+      <node concept="3clFbS" id="6gWUZpXe9Yo" role="2VODD2">
+        <node concept="3clFbJ" id="6gWUZpXe9Yq" role="3cqZAp">
+          <node concept="3clFbS" id="6gWUZpXe9Yr" role="3clFbx">
+            <node concept="3cpWs6" id="6gWUZpXe9Ys" role="3cqZAp">
+              <node concept="2YIFZM" id="6gWUZpXe9Yt" role="3cqZAk">
+                <ref role="37wK5l" to="fwln:6gWUZpXe8PI" resolve="isSupportedExpressionConcept" />
+                <ref role="1Pybhc" to="fwln:6gWUZpXe80Z" resolve="ActionExpressionHelper" />
+                <node concept="2DD5aU" id="6gWUZpXe9Yu" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="17R0WA" id="6gWUZpXe9Yv" role="3clFbw">
+            <node concept="359W_D" id="6gWUZpXe9Yw" role="3uHU7w">
+              <ref role="359W_E" to="28lk:2kuSLC0oUiq" resolve="PositionalTuple" />
+              <ref role="359W_F" to="28lk:2kuSLC0oUir" resolve="expression" />
+            </node>
+            <node concept="2DA6wF" id="6gWUZpXe9Yx" role="3uHU7B" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6gWUZpXe9Yy" role="3cqZAp">
+          <node concept="3clFbT" id="6gWUZpXe9Yz" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

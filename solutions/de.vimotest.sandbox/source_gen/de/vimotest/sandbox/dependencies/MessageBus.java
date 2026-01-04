@@ -5,6 +5,6 @@ package de.vimotest.sandbox.dependencies;
 import java.util.List;
 
 public interface MessageBus {
-  void OnMesssage(Integer messageId, List<String> names);
+  void OnMessage(Integer messageId, List<String> names);
   void Foo(Boolean bar);
 }

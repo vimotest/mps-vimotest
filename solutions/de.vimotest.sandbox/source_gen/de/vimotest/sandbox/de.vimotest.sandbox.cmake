@@ -77,6 +77,8 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewModelTestSetupImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/DataPathContext_ViewModelTestSetupImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_ViewModelTestSetupImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewModelDependency_ViewModelTestSetupImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/SimpleDependency_ViewModelTestSetupImpl.cpp
 )
 
 set(GENERATED_HEADERS
@@ -189,6 +191,10 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/context/DataPathContext_ViewModelTestSetupImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_ViewModelTestSetup.h
   ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_ViewModelTestSetupImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewModelDependency_ViewModelTestSetup.h
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewModelDependency_ViewModelTestSetupImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/SimpleDependency_ViewModelTestSetup.h
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/SimpleDependency_ViewModelTestSetupImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewModelMyOptionsOption.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewModelOptionsOption.h
 )

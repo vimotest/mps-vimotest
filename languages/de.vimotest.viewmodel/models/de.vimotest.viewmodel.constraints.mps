@@ -1401,5 +1401,42 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="54nmQxEhZBY">
+    <property role="3GE5qa" value="commands.base" />
+    <ref role="1M2myG" to="at53:6kjlgUuu6dE" resolve="ViewWidgetCommand" />
+    <node concept="EnEH3" id="54nmQxEhZBZ" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="Eqf_E" id="54nmQxEhZC0" role="EtsB7">
+        <node concept="3clFbS" id="54nmQxEhZC1" role="2VODD2">
+          <node concept="3clFbF" id="54nmQxEhZKs" role="3cqZAp">
+            <node concept="3cpWs3" id="54nmQxEi7pv" role="3clFbG">
+              <node concept="3cpWs3" id="54nmQxEi9ox" role="3uHU7B">
+                <node concept="Xl_RD" id="54nmQxEi9pG" role="3uHU7w">
+                  <property role="Xl_RC" value=" " />
+                </node>
+                <node concept="2OqwBi" id="54nmQxEi8ge" role="3uHU7B">
+                  <node concept="2OqwBi" id="54nmQxEi7Kc" role="2Oq$k0">
+                    <node concept="EsrRn" id="54nmQxEi7qi" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="54nmQxEi82g" role="2OqNvi">
+                      <ref role="37wK5l" to="nrs2:1F_Q10zSZF3" resolve="getWidget" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="54nmQxEi8u1" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="54nmQxEi06b" role="3uHU7w">
+                <node concept="EsrRn" id="54nmQxEhZKr" role="2Oq$k0" />
+                <node concept="2qgKlT" id="54nmQxEi22n" role="2OqNvi">
+                  <ref role="37wK5l" to="nrs2:5jkMFwuFk23" resolve="getCommandOperationName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

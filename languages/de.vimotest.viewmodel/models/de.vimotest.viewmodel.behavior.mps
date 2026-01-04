@@ -1259,6 +1259,31 @@
         <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
       </node>
     </node>
+    <node concept="13i0hz" id="54nmQxFoZlg" role="13h7CS">
+      <property role="TrG5h" value="getOperations" />
+      <ref role="13i0hy" node="54nmQxFoPsu" resolve="getOperations" />
+      <node concept="3Tm1VV" id="54nmQxFoZlh" role="1B3o_S" />
+      <node concept="3clFbS" id="54nmQxFoZll" role="3clF47">
+        <node concept="3clFbF" id="54nmQxFoZvz" role="3cqZAp">
+          <node concept="2OqwBi" id="54nmQxFp0ik" role="3clFbG">
+            <node concept="2OqwBi" id="54nmQxFoZKp" role="2Oq$k0">
+              <node concept="13iPFW" id="54nmQxFoZvy" role="2Oq$k0" />
+              <node concept="3TrEf2" id="54nmQxFp01t" role="2OqNvi">
+                <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="viewModelCommands" />
+              </node>
+            </node>
+            <node concept="3Tsc0h" id="54nmQxFp0xO" role="2OqNvi">
+              <ref role="3TtcxE" to="at53:F907haMmbJ" resolve="commands" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="54nmQxFoZlm" role="3clF45">
+        <node concept="3Tqbb2" id="54nmQxFoZln" role="A3Ik2">
+          <ref role="ehGHo" to="at53:54nmQxE1KaC" resolve="IOperation" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="7H4Lpx0iNpN">
     <property role="TrG5h" value="LabelWidget_Behavior" />
@@ -11089,6 +11114,26 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="54nmQxFoXjz" role="13h7CS">
+      <property role="TrG5h" value="getOperations" />
+      <ref role="13i0hy" node="54nmQxFoPsu" resolve="getOperations" />
+      <node concept="3Tm1VV" id="54nmQxFoXj$" role="1B3o_S" />
+      <node concept="3clFbS" id="54nmQxFoXjC" role="3clF47">
+        <node concept="3clFbF" id="54nmQxFoXkS" role="3cqZAp">
+          <node concept="2OqwBi" id="54nmQxFoX_I" role="3clFbG">
+            <node concept="13iPFW" id="54nmQxFoXkR" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="54nmQxFoXQM" role="2OqNvi">
+              <ref role="3TtcxE" to="at53:4m0g11MookZ" resolve="operations" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="54nmQxFoXjD" role="3clF45">
+        <node concept="3Tqbb2" id="54nmQxFoXjE" role="A3Ik2">
+          <ref role="ehGHo" to="at53:54nmQxE1KaC" resolve="IOperation" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="47nlIY20z3x">
     <property role="3GE5qa" value="dependencies" />
@@ -11113,6 +11158,25 @@
       <node concept="3Tqbb2" id="47nlIY20z4d" role="3clF45">
         <ref role="ehGHo" to="at53:3kGPU1QcSOP" resolve="IReferenceableDependency" />
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="54nmQxFoPsb">
+    <property role="3GE5qa" value="dependencies" />
+    <ref role="13h7C2" to="at53:3kGPU1QcSOP" resolve="IReferenceableDependency" />
+    <node concept="13i0hz" id="54nmQxFoPsu" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getOperations" />
+      <node concept="3Tm1VV" id="54nmQxFoPsv" role="1B3o_S" />
+      <node concept="A3Dl8" id="54nmQxFoXdY" role="3clF45">
+        <node concept="3Tqbb2" id="54nmQxFoXeh" role="A3Ik2">
+          <ref role="ehGHo" to="at53:54nmQxE1KaC" resolve="IOperation" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="54nmQxFoPsx" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="54nmQxFoPsc" role="13h7CW">
+      <node concept="3clFbS" id="54nmQxFoPsd" role="2VODD2" />
     </node>
   </node>
 </model>

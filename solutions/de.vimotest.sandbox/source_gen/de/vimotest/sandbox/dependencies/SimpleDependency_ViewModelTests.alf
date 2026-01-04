@@ -1,0 +1,57 @@
+namespace dependencies ;
+
+private import Testing ;
+
+class SimpleDependency_ViewModelTests {
+  
+  private sut : SimpleDependency_ViewModel  ;
+  
+  private testSetup : SimpleDependency_ViewModelTestSetup  ;
+  
+  
+  protected BeforeTest (  ) {
+    this.testSetup = new SimpleDependency_ViewModelTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
+  
+  
+  public Invoke_Direct_Dependency_given_when_OnMessage_then_ (  ) {
+    this.BuildSut (  );
+
+    this.when_OnMessage (  );
+
+  }
+  
+  public Invoke_Registry_Dependency_given_when_Log_then_ (  ) {
+    this.BuildSut (  );
+
+    this.when_Log (  );
+
+  }
+  
+  
+  protected BuildSut (  ) {
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
+  
+  
+  // Given Helper Definitions
+
+  
+  // When Helper Definitions
+
+  
+  public when_OnMessage (  ) {
+
+  }
+  
+  public when_Log (  ) {
+
+  }
+  
+  // Then Helper Definitions
+
+}

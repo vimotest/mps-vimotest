@@ -448,6 +448,16 @@
       <ref role="2rTdP9" to="at53:7NXUkdPQshI" resolve="RadioButtonWidget" />
       <ref role="2rZz_L" to="28lk:3_puicMjdEb" resolve="EnumerationLiteralName" />
     </node>
+    <node concept="2rT7sh" id="54nmQxFEMFx" role="2rTMjI">
+      <property role="TrG5h" value="ViewModelDependency_ClassDefinition" />
+      <ref role="2rTdP9" to="at53:69SOXVnRitH" resolve="ViewModelDependency" />
+      <ref role="2rZz_L" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
+    </node>
+    <node concept="2rT7sh" id="54nmQxFENq0" role="2rTMjI">
+      <property role="TrG5h" value="DependencyOperation_OperationDefinition" />
+      <ref role="2rTdP9" to="at53:4m0g11MoodV" resolve="DependencyOperation" />
+      <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
+    </node>
     <node concept="3aamgX" id="ZCu$dYEoOF" role="3acgRq">
       <ref role="30HIoZ" to="evry:F907haLJLR" resolve="EmptyStructContent" />
       <node concept="gft3U" id="ZCu$dYEqLf" role="1lVwrX">
@@ -4379,6 +4389,9 @@
           </node>
         </node>
       </node>
+      <node concept="2ZBi8u" id="54nmQxFEOWu" role="lGtFl">
+        <ref role="2rW$FS" node="54nmQxFEMFx" resolve="ViewModelDependency_ClassDefinition" />
+      </node>
     </node>
     <node concept="n94m4" id="47nlIY2Qc29" role="lGtFl">
       <ref role="n9lRv" to="at53:69SOXVnRitH" resolve="ViewModelDependency" />
@@ -4434,7 +4447,9 @@
               </node>
             </node>
           </node>
-          <node concept="raruj" id="3kGPU1Pr1AF" role="lGtFl" />
+          <node concept="raruj" id="3kGPU1Pr1AF" role="lGtFl">
+            <ref role="2sdACS" node="54nmQxFENq0" resolve="DependencyOperation_OperationDefinition" />
+          </node>
           <node concept="17Uvod" id="3kGPU1Pr1AG" role="lGtFl">
             <property role="2qtEX9" value="name" />
             <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />

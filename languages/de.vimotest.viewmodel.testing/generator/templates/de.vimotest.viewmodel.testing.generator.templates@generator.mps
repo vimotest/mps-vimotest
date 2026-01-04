@@ -658,6 +658,12 @@
         <ref role="v9R2y" node="7T8HsuTSYVi" resolve="reduce_ViewCommandInvocationAction" />
       </node>
     </node>
+    <node concept="3aamgX" id="54nmQxFECY1" role="3acgRq">
+      <ref role="30HIoZ" to="53m0:6gWUZpXe6H5" resolve="DependencyOperationInvocationAction" />
+      <node concept="j$656" id="54nmQxFED5z" role="1lVwrX">
+        <ref role="v9R2y" node="54nmQxFE$XF" resolve="reduce_DependencyOperationInvocationAction" />
+      </node>
+    </node>
     <node concept="3aamgX" id="ioQSx0BivP" role="3acgRq">
       <ref role="30HIoZ" to="53m0:2Yd1qrJONf3" resolve="ViewWidgetAssertion" />
       <node concept="j$656" id="ioQSx0BivT" role="1lVwrX">
@@ -9662,6 +9668,34 @@
           </node>
         </node>
         <node concept="3clFbH" id="6S_Is8aaHVv" role="3cqZAp" />
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="54nmQxFE$XF">
+    <property role="TrG5h" value="reduce_DependencyOperationInvocationAction" />
+    <property role="3GE5qa" value="scenario.when" />
+    <ref role="3gUMe" to="53m0:6gWUZpXe6H5" resolve="DependencyOperationInvocationAction" />
+    <node concept="3mGtxK" id="54nmQxFE$XG" role="13RCb5">
+      <node concept="6nSm2" id="54nmQxFE$XH" role="3mGtxP">
+        <property role="PCHHn" value="6OepWIVA92I/package" />
+        <property role="TrG5h" value="reduce_ViewCommandInvocationAction" />
+        <node concept="6lMYc" id="54nmQxFE$XI" role="PCHHv">
+          <property role="TrG5h" value="testSetup" />
+          <property role="PCHHn" value="6OepWIVA92M/private" />
+          <node concept="3xHE8C" id="54nmQxFE$XJ" role="3xMlr6">
+            <node concept="_vnHe" id="54nmQxFE$XK" role="35HzJw">
+              <ref role="3acloq" node="54nmQxFE$XH" resolve="reduce_ViewCommandInvocationAction" />
+            </node>
+          </node>
+        </node>
+        <node concept="6nSm6" id="54nmQxFE$XL" role="PCHHv">
+          <property role="TrG5h" value="foo" />
+          <node concept="PCHzy" id="54nmQxFE$XM" role="GbAUv">
+            <node concept="PDbRn" id="54nmQxFEQ59" role="PCHzz">
+              <node concept="raruj" id="54nmQxFEQ5Q" role="lGtFl" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

@@ -123,16 +123,16 @@
     <node concept="1TJgyj" id="F907haLJWs" role="1TKVEi">
       <property role="IQ2ns" value="777152910168882972" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="commands" />
+      <property role="20kJfa" value="commandSection" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="F907haLJWl" resolve="ViewModelCommands" />
+      <ref role="20lvS9" node="F907haLJWl" resolve="ViewModelCommandSection" />
     </node>
     <node concept="1TJgyj" id="F907haLJWv" role="1TKVEi">
       <property role="IQ2ns" value="777152910168882975" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="state" />
+      <property role="20kJfa" value="stateSection" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="F907haLJWj" resolve="ViewModelState" />
+      <ref role="20lvS9" node="F907haLJWj" resolve="ViewModelStateSection" />
     </node>
     <node concept="1TJgyj" id="69SOXVnRi$L" role="1TKVEi">
       <property role="IQ2ns" value="7095654166980012337" />
@@ -195,22 +195,22 @@
   <node concept="1TIwiD" id="F907haLJWj">
     <property role="EcuMT" value="777152910168882963" />
     <property role="3GE5qa" value="viewmodel" />
-    <property role="TrG5h" value="ViewModelState" />
+    <property role="TrG5h" value="ViewModelStateSection" />
     <property role="34LRSv" value="state" />
     <ref role="1TJDcQ" to="evry:F907haLJtZ" resolve="AbstractStructType" />
   </node>
   <node concept="1TIwiD" id="F907haLJWl">
     <property role="EcuMT" value="777152910168882965" />
-    <property role="3GE5qa" value="viewmodel" />
-    <property role="TrG5h" value="ViewModelCommands" />
+    <property role="3GE5qa" value="viewmodel.commands" />
+    <property role="TrG5h" value="ViewModelCommandSection" />
     <property role="34LRSv" value="commands" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="F907haMmbJ" role="1TKVEi">
       <property role="IQ2ns" value="777152910169039599" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="commands" />
+      <property role="20kJfa" value="contents" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="F907haLJXw" resolve="IViewModelCommand" />
+      <ref role="20lvS9" node="54nmQxH1bsq" resolve="IViewModelCommandSectionContent" />
     </node>
     <node concept="PrWs8" id="5jkMFw_OY7u" role="PzmwI">
       <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
@@ -221,8 +221,11 @@
   </node>
   <node concept="PlHQZ" id="F907haLJXw">
     <property role="EcuMT" value="777152910168883040" />
-    <property role="3GE5qa" value="viewmodel" />
+    <property role="3GE5qa" value="viewmodel.commands" />
     <property role="TrG5h" value="IViewModelCommand" />
+    <node concept="PrWs8" id="54nmQxH1bsr" role="PrDN$">
+      <ref role="PrY4T" node="54nmQxH1bsq" resolve="IViewModelCommandSectionContent" />
+    </node>
     <node concept="PrWs8" id="54nmQxE1KaE" role="PrDN$">
       <ref role="PrY4T" node="54nmQxE1KaC" resolve="IOperation" />
     </node>
@@ -232,11 +235,11 @@
   </node>
   <node concept="1TIwiD" id="F907haLJXy">
     <property role="EcuMT" value="777152910168883042" />
-    <property role="TrG5h" value="EmptyContent" />
+    <property role="TrG5h" value="EmptyCommandSectionContent" />
     <property role="3GE5qa" value="viewmodel.empty" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="F907haLJXz" role="PzmwI">
-      <ref role="PrY4T" node="F907haLJXw" resolve="IViewModelCommand" />
+      <ref role="PrY4T" node="54nmQxH1bsq" resolve="IViewModelCommandSectionContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="L9c2Y9pj53">
@@ -1851,6 +1854,11 @@
     <node concept="PrWs8" id="54nmQxEhZn$" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="54nmQxH1bsq">
+    <property role="EcuMT" value="5843239545600259866" />
+    <property role="3GE5qa" value="viewmodel.commands" />
+    <property role="TrG5h" value="IViewModelCommandSectionContent" />
   </node>
 </model>
 

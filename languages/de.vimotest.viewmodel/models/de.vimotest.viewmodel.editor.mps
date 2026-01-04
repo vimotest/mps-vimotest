@@ -29,8 +29,8 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
-    <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
+    <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
     <import index="tpch" ref="r:00000000-0000-4000-0000-011c8959028d(jetbrains.mps.lang.structure.editor)" implicit="true" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" implicit="true" />
@@ -516,12 +516,12 @@
   </registry>
   <node concept="24kQdi" id="F907haLJXF">
     <property role="3GE5qa" value="viewmodel.empty" />
-    <ref role="1XX52x" to="at53:F907haLJXy" resolve="EmptyContent" />
+    <ref role="1XX52x" to="at53:F907haLJXy" resolve="EmptyCommandSectionContent" />
     <node concept="3F0ifn" id="F907haLJXH" role="2wV5jI" />
   </node>
   <node concept="22mcaB" id="F907haLJXK">
     <property role="3GE5qa" value="viewmodel.empty" />
-    <ref role="aqKnT" to="at53:F907haLJXy" resolve="EmptyContent" />
+    <ref role="aqKnT" to="at53:F907haLJXy" resolve="EmptyCommandSectionContent" />
     <node concept="22hDWj" id="F907haLJXL" role="22hAXT" />
   </node>
   <node concept="24kQdi" id="F907haLJYr">
@@ -912,7 +912,7 @@
         <ref role="1k5W1q" to="dgt9:F907haLJXS" resolve="LeftBracket" />
       </node>
       <node concept="3F1sOY" id="F907haLJZb" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:F907haLJWv" resolve="state" />
+        <ref role="1NtTu8" to="at53:F907haLJWv" resolve="stateSection" />
         <node concept="pVoyu" id="F907haLJZc" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -926,7 +926,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="F907haLJYX" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:F907haLJWs" resolve="commands" />
+        <ref role="1NtTu8" to="at53:F907haLJWs" resolve="commandSection" />
         <node concept="pVoyu" id="F907haLJZ6" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -993,8 +993,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="F907haMjil">
-    <property role="3GE5qa" value="viewmodel" />
-    <ref role="1XX52x" to="at53:F907haLJWl" resolve="ViewModelCommands" />
+    <property role="3GE5qa" value="viewmodel.commands" />
+    <ref role="1XX52x" to="at53:F907haLJWl" resolve="ViewModelCommandSection" />
     <node concept="3EZMnI" id="F907haMm84" role="2wV5jI">
       <node concept="PMmxH" id="F907haMm85" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -1006,7 +1006,7 @@
         <ref role="1k5W1q" to="dgt9:F907haLJXS" resolve="LeftBracket" />
       </node>
       <node concept="3F2HdR" id="F907haLJVP" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:F907haMmbJ" resolve="commands" />
+        <ref role="1NtTu8" to="at53:F907haMmbJ" resolve="contents" />
         <node concept="l2Vlx" id="F907haLJVR" role="2czzBx" />
         <node concept="pVoyu" id="F907haLJWb" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -1020,7 +1020,7 @@
               <node concept="2ShNRf" id="F907haLUeP" role="3clFbG">
                 <node concept="3zrR0B" id="F907haLVsK" role="2ShVmc">
                   <node concept="3Tqbb2" id="F907haLVsM" role="3zrR0E">
-                    <ref role="ehGHo" to="evry:F907haLJLR" resolve="EmptyStructContent" />
+                    <ref role="ehGHo" to="at53:F907haLJXy" resolve="EmptyCommandSectionContent" />
                   </node>
                 </node>
               </node>
@@ -3398,7 +3398,7 @@
   </node>
   <node concept="24kQdi" id="7UthagXVal1">
     <property role="3GE5qa" value="viewmodel" />
-    <ref role="1XX52x" to="at53:F907haLJWj" resolve="ViewModelState" />
+    <ref role="1XX52x" to="at53:F907haLJWj" resolve="ViewModelStateSection" />
     <node concept="3EZMnI" id="7UthagXVf8d" role="2wV5jI">
       <node concept="1QoScp" id="7UthagXVf8h" role="3EZMnx">
         <property role="1QpmdY" value="true" />

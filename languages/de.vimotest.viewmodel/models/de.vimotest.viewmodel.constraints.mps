@@ -1175,7 +1175,7 @@
             <node concept="nLn13" id="f0fgygtiMD" role="2Oq$k0" />
             <node concept="1mIQ4w" id="f0fgygtkTQ" role="2OqNvi">
               <node concept="chp4Y" id="f0fgygtkWJ" role="cj9EA">
-                <ref role="cht4Q" to="at53:F907haLJWj" resolve="ViewModelState" />
+                <ref role="cht4Q" to="at53:F907haLJWj" resolve="ViewModelStateSection" />
               </node>
             </node>
           </node>

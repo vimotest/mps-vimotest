@@ -683,7 +683,7 @@
                   <node concept="2OqwBi" id="3hBQrFq99oU" role="2Oq$k0">
                     <node concept="30H73N" id="3hBQrFq93iS" role="2Oq$k0" />
                     <node concept="3TrEf2" id="3hBQrFq99Zh" role="2OqNvi">
-                      <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="state" />
+                      <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="stateSection" />
                     </node>
                   </node>
                   <node concept="3Tsc0h" id="3JF9X1M4OGG" role="2OqNvi">
@@ -729,7 +729,7 @@
                   <node concept="2OqwBi" id="3hBQrFq98gZ" role="2Oq$k0">
                     <node concept="2OqwBi" id="3hBQrFq97sq" role="2Oq$k0">
                       <node concept="3TrEf2" id="3hBQrFq97X5" role="2OqNvi">
-                        <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commands" />
+                        <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commandSection" />
                       </node>
                       <node concept="30H73N" id="3hBQrFq97su" role="2Oq$k0" />
                     </node>
@@ -742,7 +742,7 @@
                       <node concept="2OqwBi" id="3JF9X1M56kc" role="2Oq$k0">
                         <node concept="30H73N" id="3JF9X1M55YF" role="2Oq$k0" />
                         <node concept="3TrEf2" id="3JF9X1M56Gu" role="2OqNvi">
-                          <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="state" />
+                          <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="stateSection" />
                         </node>
                       </node>
                       <node concept="2Rf3mk" id="3JF9X1M57GI" role="2OqNvi">
@@ -3355,7 +3355,7 @@
     <node concept="b5Tf3" id="Of5vVZ$e30" role="jxRDz" />
   </node>
   <node concept="13MO4I" id="Of5vVZKs_b">
-    <property role="3GE5qa" value="viewmodel" />
+    <property role="3GE5qa" value="viewmodel.commands" />
     <property role="TrG5h" value="reduce_Base_ViewModelCommand" />
     <ref role="3gUMe" to="at53:F907haLJXw" resolve="IViewModelCommand" />
     <node concept="1N15co" id="Of5vVZKtt0" role="1s_3oS">
@@ -3803,7 +3803,7 @@
                 <node concept="2OqwBi" id="5jkMFw_URWI" role="37wK5m">
                   <node concept="30H73N" id="5jkMFw_Pb63" role="2Oq$k0" />
                   <node concept="3TrEf2" id="5jkMFw_USEF" role="2OqNvi">
-                    <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commands" />
+                    <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commandSection" />
                   </node>
                 </node>
               </node>
@@ -3822,7 +3822,7 @@
                   <node concept="2OqwBi" id="5jkMFw_Kwch" role="2Oq$k0">
                     <node concept="2OqwBi" id="5jkMFw_Kwci" role="2Oq$k0">
                       <node concept="3TrEf2" id="5jkMFw_Kwcj" role="2OqNvi">
-                        <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commands" />
+                        <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commandSection" />
                       </node>
                       <node concept="30H73N" id="5jkMFw_Kwck" role="2Oq$k0" />
                     </node>
@@ -3835,7 +3835,7 @@
                       <node concept="2OqwBi" id="5jkMFw_Kwco" role="2Oq$k0">
                         <node concept="30H73N" id="5jkMFw_Kwcp" role="2Oq$k0" />
                         <node concept="3TrEf2" id="5jkMFw_Kwcq" role="2OqNvi">
-                          <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="state" />
+                          <ref role="3Tt5mk" to="at53:F907haLJWv" resolve="stateSection" />
                         </node>
                       </node>
                       <node concept="2Rf3mk" id="5jkMFw_Kwcr" role="2OqNvi">
@@ -3880,7 +3880,7 @@
                           <node concept="2OqwBi" id="5ZcB1GfzN1G" role="2Oq$k0">
                             <node concept="30H73N" id="5ZcB1GfzN1H" role="2Oq$k0" />
                             <node concept="3TrEf2" id="5ZcB1GfzN1I" role="2OqNvi">
-                              <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commands" />
+                              <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commandSection" />
                             </node>
                           </node>
                         </node>
@@ -3910,7 +3910,7 @@
                       <node concept="2OqwBi" id="5ZcB1GfzMp6" role="2Oq$k0">
                         <node concept="30H73N" id="5ZcB1GfzMp7" role="2Oq$k0" />
                         <node concept="3TrEf2" id="5ZcB1GfzMp8" role="2OqNvi">
-                          <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commands" />
+                          <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commandSection" />
                         </node>
                       </node>
                     </node>
@@ -3923,7 +3923,7 @@
                     <node concept="2OqwBi" id="5ZcB1GfzJD$" role="2Oq$k0">
                       <node concept="30H73N" id="5ZcB1GfzJD_" role="2Oq$k0" />
                       <node concept="3TrEf2" id="5ZcB1GfzJDA" role="2OqNvi">
-                        <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commands" />
+                        <ref role="3Tt5mk" to="at53:F907haLJWs" resolve="commandSection" />
                       </node>
                     </node>
                   </node>

@@ -7446,5 +7446,196 @@
       <node concept="2iRfu4" id="6gWUZpXe6ZX" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="54nmQxL7zMo">
+    <property role="3GE5qa" value="test.assert.calls" />
+    <ref role="1XX52x" to="53m0:54nmQxL7zig" resolve="DependencyCallAssertion" />
+    <node concept="3EZMnI" id="54nmQxL7zMq" role="2wV5jI">
+      <node concept="3F0ifn" id="54nmQxL7zMy" role="3EZMnx">
+        <property role="3F0ifm" value="verify called" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="1iCGBv" id="54nmQxL7zM_" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:54nmQxL7zLH" resolve="targetDependency" />
+        <node concept="1sVBvm" id="54nmQxL7zMB" role="1sWHZn">
+          <node concept="3F0A7n" id="54nmQxL7zMF" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="54nmQxL7zMI" role="3EZMnx">
+        <property role="3F0ifm" value="." />
+        <node concept="11L4FC" id="54nmQxL7zMK" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="54nmQxL7zMM" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="54nmQxL7zMP" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:54nmQxL7zLI" resolve="targetOperation" />
+        <node concept="1sVBvm" id="54nmQxL7zMR" role="1sWHZn">
+          <node concept="3F0A7n" id="54nmQxL7zMV" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="54nmQxL7zN0" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="dgt9:F907haLJXS" resolve="LeftBracket" />
+      </node>
+      <node concept="3F2HdR" id="54nmQxL7zN4" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:54nmQxL7zLJ" resolve="expectedValues" />
+        <node concept="2iRfu4" id="54nmQxL7zN6" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="54nmQxL7zN2" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="dgt9:F907haLJXX" resolve="RightBracket" />
+      </node>
+      <node concept="3F0ifn" id="54nmQxL7zN8" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11LMrY" id="54nmQxL7zNn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="54nmQxL7zNb" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:54nmQxL7zLB" resolve="atLeastCount" />
+      </node>
+      <node concept="3F0ifn" id="54nmQxL7zNe" role="3EZMnx">
+        <property role="3F0ifm" value=".." />
+        <node concept="11L4FC" id="54nmQxL7zNo" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="54nmQxL7zNq" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pkWqt" id="54nmQxL7zNw" role="pqm2j">
+          <node concept="3clFbS" id="54nmQxL7zNx" role="2VODD2">
+            <node concept="3clFbF" id="54nmQxL7zSH" role="3cqZAp">
+              <node concept="2OqwBi" id="54nmQxL7$9p" role="3clFbG">
+                <node concept="pncrf" id="54nmQxL7zSG" role="2Oq$k0" />
+                <node concept="3TrcHB" id="54nmQxL7$kW" role="2OqNvi">
+                  <ref role="3TsBF5" to="53m0:54nmQxL7zNv" resolve="isExpectRange" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0A7n" id="54nmQxL7zNh" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:54nmQxL7zLD" resolve="atMostCount" />
+        <node concept="pkWqt" id="54nmQxL7$uL" role="pqm2j">
+          <node concept="3clFbS" id="54nmQxL7$uM" role="2VODD2">
+            <node concept="3clFbF" id="54nmQxL7$uN" role="3cqZAp">
+              <node concept="2OqwBi" id="54nmQxL7$uO" role="3clFbG">
+                <node concept="pncrf" id="54nmQxL7$uP" role="2Oq$k0" />
+                <node concept="3TrcHB" id="54nmQxL7$uQ" role="2OqNvi">
+                  <ref role="3TsBF5" to="53m0:54nmQxL7zNv" resolve="isExpectRange" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="54nmQxL7zNt" role="3EZMnx">
+        <property role="3F0ifm" value="times" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0ifn" id="54nmQxL7zNk" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="11L4FC" id="54nmQxL7zNm" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="54nmQxL7zMt" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="54nmQxL7$EG" role="6VMZX">
+      <node concept="l2Vlx" id="54nmQxL7$EH" role="2iSdaV" />
+      <node concept="2yq9I_" id="54nmQxL7$G7" role="3EZMnx">
+        <ref role="225u1j" to="53m0:54nmQxL7zNv" resolve="isExpectRange" />
+        <node concept="1563Vb" id="54nmQxL7$G8" role="1563LE">
+          <property role="1563UK" value="[ ]" />
+          <property role="1563Ve" value="[x]" />
+        </node>
+        <node concept="3F0ifn" id="54nmQxL7$G9" role="2fqkNU">
+          <property role="3F0ifm" value="expect range [x..y]" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="54nmQxL7$Gb" role="3EZMnx">
+        <property role="3F0ifm" value="at least:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        <node concept="pVoyu" id="54nmQxL7$Ge" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="54nmQxL7$Gg" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:54nmQxL7zLB" resolve="atLeastCount" />
+      </node>
+      <node concept="3F0ifn" id="54nmQxL7$Gk" role="3EZMnx">
+        <property role="3F0ifm" value="at most:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        <node concept="pVoyu" id="54nmQxL7$Gl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pkWqt" id="54nmQxL7$Gm" role="pqm2j">
+          <node concept="3clFbS" id="54nmQxL7$Gn" role="2VODD2">
+            <node concept="3clFbF" id="54nmQxL7$Go" role="3cqZAp">
+              <node concept="2OqwBi" id="54nmQxL7$Gp" role="3clFbG">
+                <node concept="pncrf" id="54nmQxL7$Gq" role="2Oq$k0" />
+                <node concept="3TrcHB" id="54nmQxL7$Gr" role="2OqNvi">
+                  <ref role="3TsBF5" to="53m0:54nmQxL7zNv" resolve="isExpectRange" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0A7n" id="54nmQxL7$Gj" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:54nmQxL7zLD" resolve="atMostCount" />
+        <node concept="pkWqt" id="54nmQxL7$LU" role="pqm2j">
+          <node concept="3clFbS" id="54nmQxL7$LV" role="2VODD2">
+            <node concept="3clFbF" id="54nmQxL7$LW" role="3cqZAp">
+              <node concept="2OqwBi" id="54nmQxL7$LX" role="3clFbG">
+                <node concept="pncrf" id="54nmQxL7$LY" role="2Oq$k0" />
+                <node concept="3TrcHB" id="54nmQxL7$LZ" role="2OqNvi">
+                  <ref role="3TsBF5" to="53m0:54nmQxL7zNv" resolve="isExpectRange" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="54nmQxLHbwr">
+    <property role="3GE5qa" value="test.assert.calls" />
+    <ref role="1XX52x" to="53m0:54nmQxL7zLK" resolve="DependencyCallArgumentExpectation" />
+    <node concept="3EZMnI" id="54nmQxLHbwt" role="2wV5jI">
+      <node concept="1iCGBv" id="54nmQxLHbwx" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:54nmQxL7zMl" resolve="actualParameter" />
+        <node concept="1sVBvm" id="54nmQxLHbwz" role="1sWHZn">
+          <node concept="B$lHz" id="54nmQxLHbwB" role="2wV5jI">
+            <node concept="xShMh" id="54nmQxLHbwM" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="VPxyj" id="54nmQxLHbwL" role="3F10Kt" />
+        <node concept="xShMh" id="54nmQxLJIOH" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="54nmQxLHbwE" role="3EZMnx">
+        <property role="3F0ifm" value="==" />
+      </node>
+      <node concept="3F1sOY" id="54nmQxLHbwJ" role="3EZMnx">
+        <property role="1$x2rV" value="any" />
+        <ref role="1NtTu8" to="53m0:54nmQxL7zLM" resolve="expectedValue" />
+      </node>
+      <node concept="2iRfu4" id="54nmQxLHbww" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

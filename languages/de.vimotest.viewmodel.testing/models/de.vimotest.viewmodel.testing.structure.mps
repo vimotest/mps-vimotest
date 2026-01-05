@@ -1533,5 +1533,71 @@
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
+  <node concept="1TIwiD" id="54nmQxL7zig">
+    <property role="EcuMT" value="5843239545669039248" />
+    <property role="3GE5qa" value="test.assert.calls" />
+    <property role="TrG5h" value="DependencyCallAssertion" />
+    <property role="34LRSv" value="verify call" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="54nmQxL7zLJ" role="1TKVEi">
+      <property role="IQ2ns" value="5843239545669041263" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expectedValues" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="54nmQxL7zLK" resolve="DependencyCallArgumentExpectation" />
+    </node>
+    <node concept="1TJgyj" id="54nmQxL7zLH" role="1TKVEi">
+      <property role="IQ2ns" value="5843239545669041261" />
+      <property role="20kJfa" value="targetDependency" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="at53:3kGPU1QcSOP" resolve="IReferenceableDependency" />
+    </node>
+    <node concept="1TJgyj" id="54nmQxL7zLI" role="1TKVEi">
+      <property role="IQ2ns" value="5843239545669041262" />
+      <property role="20kJfa" value="targetOperation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="at53:54nmQxE1KaC" resolve="IOperation" />
+    </node>
+    <node concept="PrWs8" id="54nmQxL7zij" role="PzmwI">
+      <ref role="PrY4T" node="6fZwY6ifv52" resolve="ITestScenarioAssertion" />
+    </node>
+    <node concept="PrWs8" id="54nmQxLhrKK" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyi" id="54nmQxL7zLB" role="1TKVEl">
+      <property role="IQ2nx" value="5843239545669041255" />
+      <property role="TrG5h" value="atLeastCount" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="54nmQxL7zLD" role="1TKVEl">
+      <property role="IQ2nx" value="5843239545669041257" />
+      <property role="TrG5h" value="atMostCount" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="54nmQxL7zNv" role="1TKVEl">
+      <property role="IQ2nx" value="5843239545669041375" />
+      <property role="TrG5h" value="isExpectRange" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="54nmQxL7zLK">
+    <property role="EcuMT" value="5843239545669041264" />
+    <property role="3GE5qa" value="test.assert.calls" />
+    <property role="TrG5h" value="DependencyCallArgumentExpectation" />
+    <property role="34LRSv" value="verify argument" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="54nmQxL7zLM" role="1TKVEi">
+      <property role="IQ2ns" value="5843239545669041266" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expectedValue" />
+      <ref role="20lvS9" to="28lk:2kuSLC0kNK2" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="54nmQxL7zMl" role="1TKVEi">
+      <property role="IQ2ns" value="5843239545669041301" />
+      <property role="20kJfa" value="actualParameter" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="evry:F907haLIRL" resolve="IStructContent" />
+    </node>
+  </node>
 </model>
 

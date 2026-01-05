@@ -104,6 +104,15 @@
         <reference id="7222907346290766839" name="targetOperation" index="p19w1" />
         <child id="7222907346290766840" name="arguments" index="p19we" />
       </concept>
+      <concept id="5843239545669041264" name="de.vimotest.viewmodel.testing.structure.DependencyCallArgumentExpectation" flags="ng" index="w2mso">
+        <reference id="5843239545669041301" name="actualParameter" index="w2mvX" />
+      </concept>
+      <concept id="5843239545669039248" name="de.vimotest.viewmodel.testing.structure.DependencyCallAssertion" flags="ng" index="w2mZS">
+        <property id="5843239545669041255" name="atLeastCount" index="w2msf" />
+        <reference id="5843239545669041261" name="targetDependency" index="w2ms5" />
+        <reference id="5843239545669041262" name="targetOperation" index="w2ms6" />
+        <child id="5843239545669041263" name="expectedValues" index="w2ms7" />
+      </concept>
       <concept id="5213916851000129542" name="de.vimotest.viewmodel.testing.structure.CheckBoxCheck" flags="ng" index="C4Fn6">
         <child id="5213916851000129543" name="checks" index="C4Fn7" />
       </concept>
@@ -5959,6 +5968,44 @@
               <node concept="_iklQ" id="54nmQxKvrcy" role="_vku1">
                 <property role="_iklR" value="my message" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="103ZX$" id="54nmQxLhoWA">
+    <property role="3GE5qa" value="dependencies.spy" />
+    <property role="$YGLj" value="SpyDependencies" />
+    <node concept="103ZXx" id="54nmQxLhoWB" role="103ZXC">
+      <node concept="3Vw88J" id="54nmQxLhoWC" role="1006ar">
+        <property role="TrG5h" value="LoadView" />
+      </node>
+    </node>
+    <node concept="103ZXB" id="54nmQxLhoWD" role="103ZXF" />
+    <node concept="2PDISX" id="54nmQxLhoX1" role="2PDvFJ">
+      <node concept="33PmoL" id="54nmQxLhoX2" role="RSswE">
+        <ref role="33Pmof" node="47nlIY2maYg" resolve="Logger" />
+      </node>
+      <node concept="33PmoL" id="54nmQxLhoX4" role="RSswE">
+        <ref role="33Pmof" node="4m0g11MwG31" resolve="SimpleDependency_ViewModel" />
+      </node>
+    </node>
+  </node>
+  <node concept="30n1Qd" id="54nmQxLhoX6">
+    <property role="3GE5qa" value="dependencies.spy" />
+    <property role="TrG5h" value="SpyDependenciesViewModelTests" />
+    <ref role="30n1PB" node="54nmQxLhoWA" resolve="SpyDependenciesViewModel" />
+    <node concept="3LKzX3" id="54nmQxLhoX7" role="30n1Qb">
+      <property role="TrG5h" value="Verify dependency call" />
+      <node concept="1s$VFG" id="54nmQxLhoXa" role="1s$QAY">
+        <node concept="DUd2R" id="54nmQxLhoXd" role="1s$QAX">
+          <node concept="w2mZS" id="54nmQxLhoXf" role="DUiSb">
+            <property role="w2msf" value="1" />
+            <ref role="w2ms5" node="47nlIY2maYg" resolve="Logger" />
+            <ref role="w2ms6" node="47nlIY2maYh" resolve="Log" />
+            <node concept="w2mso" id="54nmQxLQEv$" role="w2ms7">
+              <ref role="w2mvX" node="47nlIY2maYi" resolve="message" />
             </node>
           </node>
         </node>

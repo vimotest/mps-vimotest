@@ -14,5 +14,4 @@ class StringContext_ViewModelTestSetupImpl specializes StringContext_ViewModelTe
     return null;
 
   }
-  
 }

@@ -11,5 +11,4 @@ class CheckCommand_ViewModelTestSetupImpl specializes CheckCommand_ViewModelTest
     return null;
 
   }
-  
 }

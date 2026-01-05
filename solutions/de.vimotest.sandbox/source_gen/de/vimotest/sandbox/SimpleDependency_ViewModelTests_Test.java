@@ -7,6 +7,7 @@ import de.vimotest.sandbox.dependencies.SimpleDependency_ViewModelTestSetup;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.dependencies.SimpleDependency_ViewModelTestSetupImpl;
+import java.util.Arrays;
 
 public class SimpleDependency_ViewModelTests_Test {
   private SimpleDependency_ViewModel sut;
@@ -38,10 +39,10 @@ public class SimpleDependency_ViewModelTests_Test {
 
 
   public void when_OnMessage() {
-
+    this.testSetup.getMessageBus().OnMessage(0, Arrays.asList("A", "B"));
   }
   public void when_Log() {
-
+    this.testSetup.getLogger().Log("my message");
   }
 
 

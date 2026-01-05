@@ -14,5 +14,4 @@ class ListViews_ViewModelTestSetupImpl specializes ListViews_ViewModelTestSetup 
     return null;
 
   }
-  
 }

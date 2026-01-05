@@ -14,5 +14,4 @@ public class Labels_ViewModelTestSetupImpl extends Labels_ViewModelTestSetup {
   public Labels_ViewModel BuildSut() {
     return null;
   }
-
 }

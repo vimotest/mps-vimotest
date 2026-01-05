@@ -11,5 +11,4 @@ class FillTextCommand_ViewModelTestSetupImpl specializes FillTextCommand_ViewMod
     return null;
 
   }
-  
 }

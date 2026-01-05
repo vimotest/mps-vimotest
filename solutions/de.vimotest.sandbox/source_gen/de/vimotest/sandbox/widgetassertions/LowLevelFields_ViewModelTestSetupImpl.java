@@ -11,5 +11,4 @@ public class LowLevelFields_ViewModelTestSetupImpl extends LowLevelFields_ViewMo
   public LowLevelFields_ViewModel BuildSut() {
     return null;
   }
-
 }

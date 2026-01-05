@@ -11,5 +11,4 @@ public class RowBasedCommand_ViewModelTestSetupImpl extends RowBasedCommand_View
   public RowBasedCommand_ViewModel BuildSut() {
     return null;
   }
-
 }

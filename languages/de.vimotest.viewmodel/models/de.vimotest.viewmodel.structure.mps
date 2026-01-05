@@ -1739,7 +1739,7 @@
   <node concept="1TIwiD" id="4m0g11Moo3J">
     <property role="EcuMT" value="5008073225018638575" />
     <property role="3GE5qa" value="dependencies" />
-    <property role="TrG5h" value="DependencyArgument" />
+    <property role="TrG5h" value="DependencyParameter" />
     <ref role="1TJDcQ" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
   </node>
   <node concept="1TIwiD" id="4m0g11MoodV">
@@ -1750,9 +1750,9 @@
     <node concept="1TJgyj" id="4m0g11Moo6v" role="1TKVEi">
       <property role="IQ2ns" value="5008073225018638751" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="arguments" />
+      <property role="20kJfa" value="parameters" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="4m0g11Moo3J" resolve="DependencyArgument" />
+      <ref role="20lvS9" node="4m0g11Moo3J" resolve="DependencyParameter" />
     </node>
     <node concept="PrWs8" id="54nmQxE1KaF" role="PzmwI">
       <ref role="PrY4T" node="54nmQxE1KaC" resolve="IOperation" />

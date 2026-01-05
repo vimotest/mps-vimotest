@@ -3,6 +3,7 @@
 /// </filename>
 using dependencies;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 
 [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class SimpleDependency_ViewModelTests
@@ -39,9 +40,11 @@ public class SimpleDependency_ViewModelTests
 
     public virtual void when_OnMessage()
     {
+        this.testSetup.getMessageBus().OnMessage(0, new System.Collections.Generic.List<string> { "A", "B" });
     }
 
     public virtual void when_Log()
     {
+        this.testSetup.getLogger().Log("my message");
     }
 }

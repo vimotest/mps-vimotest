@@ -14,5 +14,4 @@ public class TextBoxes_ViewModelTestSetupImpl extends TextBoxes_ViewModelTestSet
   public TextBoxes_ViewModel BuildSut() {
     return null;
   }
-
 }

@@ -14,5 +14,4 @@ public class StringContext_ViewModelTestSetupImpl extends StringContext_ViewMode
   public StringContext_ViewModel BuildSut() {
     return null;
   }
-
 }

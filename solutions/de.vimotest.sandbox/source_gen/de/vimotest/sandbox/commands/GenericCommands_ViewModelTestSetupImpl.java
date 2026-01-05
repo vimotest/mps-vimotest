@@ -11,5 +11,4 @@ public class GenericCommands_ViewModelTestSetupImpl extends GenericCommands_View
   public GenericCommands_ViewModel BuildSut() {
     return null;
   }
-
 }

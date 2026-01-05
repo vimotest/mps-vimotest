@@ -33,7 +33,7 @@ public class ViewModelDependency_ViewModelTests_Test {
 
 
   public void when_LoadView() {
-
+    this.testSetup.getSimpleDependency_ViewModel().loadView();
   }
 
 

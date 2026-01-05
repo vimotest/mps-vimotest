@@ -14,5 +14,4 @@ public class CheckBoxes_ViewModelTestSetupImpl extends CheckBoxes_ViewModelTestS
   public CheckBoxes_ViewModel BuildSut() {
     return null;
   }
-
 }

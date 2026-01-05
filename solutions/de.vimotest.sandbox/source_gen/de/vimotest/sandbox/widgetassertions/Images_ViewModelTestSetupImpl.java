@@ -14,5 +14,4 @@ public class Images_ViewModelTestSetupImpl extends Images_ViewModelTestSetup {
   public Images_ViewModel BuildSut() {
     return null;
   }
-
 }

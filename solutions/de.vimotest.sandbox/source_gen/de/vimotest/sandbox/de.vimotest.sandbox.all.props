@@ -57,8 +57,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)context/XmlElementContext_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/SimpleDependency_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/ViewModelDependency_ViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/subscope/RepeatUsageDependency_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/MessageBus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/Logger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/subscope/MessageBus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/CheckBoxes_ViewModelTestSetup.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/CheckBoxes_ViewModelTestSetupImpl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/CheckBoxes_ViewTest.cs" />
@@ -140,6 +142,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/SimpleDependency_ViewModelTestSetup.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/SimpleDependency_ViewModelTestSetupImpl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/SimpleDependency_ViewModelTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/subscope/RepeatUsageDependency_ViewModelTestSetup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/subscope/RepeatUsageDependency_ViewModelTestSetupImpl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/subscope/RepeatUsageDependency_ViewModelTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/StringContext2_ViewTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests.cs" />

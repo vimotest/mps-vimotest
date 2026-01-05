@@ -14,5 +14,4 @@ class DataPathContext_ViewModelTestSetupImpl specializes DataPathContext_ViewMod
     return null;
 
   }
-  
 }

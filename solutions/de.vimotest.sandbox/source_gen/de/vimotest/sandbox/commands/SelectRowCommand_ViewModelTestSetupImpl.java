@@ -11,5 +11,4 @@ public class SelectRowCommand_ViewModelTestSetupImpl extends SelectRowCommand_Vi
   public SelectRowCommand_ViewModel BuildSut() {
     return null;
   }
-
 }

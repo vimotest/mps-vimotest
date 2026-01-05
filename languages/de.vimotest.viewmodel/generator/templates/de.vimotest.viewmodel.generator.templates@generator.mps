@@ -561,9 +561,9 @@
       </node>
     </node>
     <node concept="3aamgX" id="6gWUZpWZCVJ" role="3acgRq">
-      <ref role="30HIoZ" to="at53:4m0g11Moo3J" resolve="DependencyArgument" />
+      <ref role="30HIoZ" to="at53:4m0g11Moo3J" resolve="DependencyParameter" />
       <node concept="j$656" id="6gWUZpWZDi1" role="1lVwrX">
-        <ref role="v9R2y" node="6gWUZpWZ_OG" resolve="reduce_DependencyArgument" />
+        <ref role="v9R2y" node="6gWUZpWZ_OG" resolve="reduce_DependencyParameter" />
       </node>
     </node>
     <node concept="3lhOvk" id="247DgsTsc0Z" role="3lj3bC">
@@ -4438,7 +4438,7 @@
                   <node concept="3clFbF" id="6gWUZpWZJr4" role="3cqZAp">
                     <node concept="2OqwBi" id="6gWUZpWZJqZ" role="3clFbG">
                       <node concept="3Tsc0h" id="6gWUZpWZJr2" role="2OqNvi">
-                        <ref role="3TtcxE" to="at53:4m0g11Moo6v" resolve="arguments" />
+                        <ref role="3TtcxE" to="at53:4m0g11Moo6v" resolve="parameters" />
                       </node>
                       <node concept="30H73N" id="6gWUZpWZJr3" role="2Oq$k0" />
                     </node>
@@ -4471,9 +4471,9 @@
     </node>
   </node>
   <node concept="13MO4I" id="6gWUZpWZ_OG">
-    <property role="TrG5h" value="reduce_DependencyArgument" />
+    <property role="TrG5h" value="reduce_DependencyParameter" />
     <property role="3GE5qa" value="dependencies" />
-    <ref role="3gUMe" to="at53:4m0g11Moo3J" resolve="DependencyArgument" />
+    <ref role="3gUMe" to="at53:4m0g11Moo3J" resolve="DependencyParameter" />
     <node concept="3mGtxK" id="6gWUZpWZ_OH" role="13RCb5">
       <node concept="6nSm2" id="6gWUZpWZ_OI" role="3mGtxP">
         <property role="PCHHn" value="6OepWIVA92I/package" />

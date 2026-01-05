@@ -1,6 +1,9 @@
 #include <gtest/gtest.h>
 #include <memory>
 #include "SimpleDependency_ViewModelTestSetup.h"
+#include <string>
+#include "MessageBus.h"
+#include "Logger.h"
 #include "SimpleDependency_ViewModel.h"
 #include "SimpleDependency_ViewModelTestSetupImpl.h"
 
@@ -38,8 +41,10 @@ namespace dependencies
   }
   void SimpleDependency_ViewModelTests::when_OnMessage()
   {
+    this->testSetup->getMessageBus()->OnMessage(0, { std::string("A"), std::string("B") });
   }
   void SimpleDependency_ViewModelTests::when_Log()
   {
+    this->testSetup->getLogger()->Log(std::string("my message"));
   }
 }

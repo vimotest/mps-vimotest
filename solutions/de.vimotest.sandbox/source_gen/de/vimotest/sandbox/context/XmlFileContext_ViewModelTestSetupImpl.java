@@ -17,5 +17,4 @@ public class XmlFileContext_ViewModelTestSetupImpl extends XmlFileContext_ViewMo
   public XmlFileContext_ViewModel BuildSut() {
     return null;
   }
-
 }

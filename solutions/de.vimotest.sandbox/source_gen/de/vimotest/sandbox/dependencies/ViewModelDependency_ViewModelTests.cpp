@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include <memory>
 #include "ViewModelDependency_ViewModelTestSetup.h"
+#include "SimpleDependency_ViewModel.h"
 #include "ViewModelDependency_ViewModel.h"
 #include "ViewModelDependency_ViewModelTestSetupImpl.h"
 
@@ -32,5 +33,6 @@ namespace dependencies
   }
   void ViewModelDependency_ViewModelTests::when_LoadView()
   {
+    this->testSetup->getSimpleDependency_ViewModel()->loadView();
   }
 }

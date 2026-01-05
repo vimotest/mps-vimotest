@@ -14,5 +14,4 @@ class XmlElementContext_ViewModelTestSetupImpl specializes XmlElementContext_Vie
     return null;
 
   }
-  
 }

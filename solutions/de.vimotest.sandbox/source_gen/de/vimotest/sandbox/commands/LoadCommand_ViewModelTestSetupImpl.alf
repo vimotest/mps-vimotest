@@ -11,5 +11,4 @@ class LoadCommand_ViewModelTestSetupImpl specializes LoadCommand_ViewModelTestSe
     return null;
 
   }
-  
 }

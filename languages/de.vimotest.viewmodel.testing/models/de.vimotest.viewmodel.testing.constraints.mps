@@ -702,8 +702,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7ynD$XoIqbQ">
-    <property role="3GE5qa" value="test.actions" />
-    <ref role="1M2myG" to="53m0:7KHRfJVnri5" resolve="CommandInvocationAction" />
+    <property role="3GE5qa" value="test.actions.base" />
+    <ref role="1M2myG" to="53m0:7KHRfJVnri5" resolve="ParameterizedCommandInvocationAction" />
     <node concept="1N5Pfh" id="17xw4ZmNcaP" role="1Mr941">
       <ref role="1N5Vy1" to="53m0:7KHRfJVnw5G" resolve="targetCommand" />
       <node concept="1dDu$B" id="17xw4ZmNcfm" role="1N6uqs">
@@ -739,7 +739,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="1F_Q10zVWhQ">
-    <property role="3GE5qa" value="test.actions.base" />
+    <property role="3GE5qa" value="test.actions.base.base" />
     <ref role="1M2myG" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
     <node concept="1N5Pfh" id="1F_Q10zW1bx" role="1Mr941">
       <ref role="1N5Vy1" to="53m0:4VeFpYgZsED" resolve="widget" />
@@ -825,7 +825,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="2w4bAIFMbn9">
-    <property role="3GE5qa" value="test.actions.base" />
+    <property role="3GE5qa" value="test.actions.base.base" />
     <ref role="1M2myG" to="53m0:5_Cxj2pStA3" resolve="RowBasedViewWidgetCommandAction" />
     <node concept="1N5Pfh" id="2w4bAIFMgd8" role="1Mr941">
       <ref role="1N5Vy1" to="53m0:2w4bAIFM1ZR" resolve="tabularWidget" />
@@ -904,7 +904,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="6RKU0s44amw">
-    <property role="3GE5qa" value="test.actions" />
+    <property role="3GE5qa" value="test.actions.base" />
     <ref role="1M2myG" to="53m0:7NpiMQMW_LL" resolve="SelectRowCommandAction" />
     <node concept="9SLcT" id="6RKU0s44ayE" role="9SGkU">
       <node concept="3clFbS" id="6RKU0s44ayF" role="2VODD2">
@@ -1300,7 +1300,7 @@
     <ref role="1M2myG" to="53m0:2Yd1qrJOMZM" resolve="ITestScenarioContext" />
   </node>
   <node concept="1M2fIO" id="6gWUZpXe9Ym">
-    <property role="3GE5qa" value="test.actions" />
+    <property role="3GE5qa" value="test.actions.base" />
     <ref role="1M2myG" to="53m0:6gWUZpXe6H5" resolve="DependencyOperationInvocationAction" />
     <node concept="1N5Pfh" id="6gWUZpXebGh" role="1Mr941">
       <ref role="1N5Vy1" to="53m0:6gWUZpXebkS" resolve="targetDependency" />

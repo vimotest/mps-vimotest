@@ -11,5 +11,4 @@ class RowBasedCommand_ViewModelTestSetupImpl specializes RowBasedCommand_ViewMod
     return null;
 
   }
-  
 }

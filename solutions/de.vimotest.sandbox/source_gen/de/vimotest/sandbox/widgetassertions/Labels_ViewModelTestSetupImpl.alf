@@ -14,5 +14,4 @@ class Labels_ViewModelTestSetupImpl specializes Labels_ViewModelTestSetup {
     return null;
 
   }
-  
 }

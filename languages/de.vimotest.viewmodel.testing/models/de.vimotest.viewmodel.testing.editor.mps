@@ -3684,8 +3684,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="7KHRfJVnw5H">
-    <property role="3GE5qa" value="test.actions" />
-    <ref role="1XX52x" to="53m0:7KHRfJVnri5" resolve="CommandInvocationAction" />
+    <property role="3GE5qa" value="test.actions.base" />
+    <ref role="1XX52x" to="53m0:7KHRfJVnri5" resolve="ParameterizedCommandInvocationAction" />
     <node concept="3EZMnI" id="7KHRfJVn$SJ" role="2wV5jI">
       <node concept="3F0ifn" id="7KHRfJVn$SN" role="3EZMnx">
         <property role="3F0ifm" value="call command" />
@@ -3722,7 +3722,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1F_Q10zRnts">
-    <property role="3GE5qa" value="test.actions.base" />
+    <property role="3GE5qa" value="test.actions.base.base" />
     <ref role="1XX52x" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
     <node concept="PMmxH" id="4VeFpYh1HAi" role="2wV5jI">
       <ref role="PMmxG" node="4VeFpYh1HAb" resolve="ViewWidgetCommandAction_EC" />
@@ -3730,7 +3730,7 @@
   </node>
   <node concept="PKFIW" id="4VeFpYh1HAb">
     <property role="TrG5h" value="ViewWidgetCommandAction_EC" />
-    <property role="3GE5qa" value="test.actions.base" />
+    <property role="3GE5qa" value="test.actions.base.base" />
     <ref role="1XX52x" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
     <node concept="3EZMnI" id="4VeFpYh1HAc" role="2wV5jI">
       <node concept="1HlG4h" id="4CJYu48yUFu" role="3EZMnx">
@@ -3757,7 +3757,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4VeFpYh1HAj">
-    <property role="3GE5qa" value="test.actions" />
+    <property role="3GE5qa" value="test.actions.base" />
     <ref role="1XX52x" to="53m0:1F_Q10zRiz_" resolve="CheckCommandAction" />
     <node concept="3EZMnI" id="4VeFpYh1MvW" role="2wV5jI">
       <node concept="1QoScp" id="4VeFpYh1Mwb" role="3EZMnx">
@@ -3798,7 +3798,7 @@
   </node>
   <node concept="PKFIW" id="4VeFpYh1Mw5">
     <property role="TrG5h" value="ViewWidgetCommandAction_widgetReference_EC" />
-    <property role="3GE5qa" value="test.actions.base" />
+    <property role="3GE5qa" value="test.actions.base.base" />
     <ref role="1XX52x" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
     <node concept="1iCGBv" id="4VeFpYh1Mw6" role="2wV5jI">
       <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
@@ -3847,7 +3847,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7NpiMQN01qe">
-    <property role="3GE5qa" value="test.actions" />
+    <property role="3GE5qa" value="test.actions.base" />
     <ref role="1XX52x" to="53m0:7NpiMQMW_LJ" resolve="FillTextCommandAction" />
     <node concept="3EZMnI" id="7NpiMQN06tA" role="2wV5jI">
       <node concept="PMmxH" id="7NpiMQN06tK" role="3EZMnx">
@@ -4126,7 +4126,7 @@
     </node>
   </node>
   <node concept="22mcaB" id="7UthagY64L2">
-    <property role="3GE5qa" value="test.actions.base" />
+    <property role="3GE5qa" value="test.actions.base.base" />
     <ref role="aqKnT" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
     <node concept="22hDWj" id="7UthagY69$v" role="22hAXT" />
     <node concept="2F$Pav" id="7UthagY69$Q" role="3ft7WO">
@@ -4346,7 +4346,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="58LMrr8h2a9">
-    <property role="3GE5qa" value="test.actions" />
+    <property role="3GE5qa" value="test.actions.base" />
     <ref role="1XX52x" to="53m0:7NpiMQMW_LM" resolve="SelectEntryCommandAction" />
     <node concept="3EZMnI" id="58LMrr8h6Xv" role="2wV5jI">
       <node concept="PMmxH" id="58LMrr8h6Xw" role="3EZMnx">
@@ -4376,7 +4376,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1LLcOD9FY2z">
-    <property role="3GE5qa" value="test.actions" />
+    <property role="3GE5qa" value="test.actions.base" />
     <ref role="1XX52x" to="53m0:7NpiMQMW_LL" resolve="SelectRowCommandAction" />
     <node concept="3EZMnI" id="1LLcOD9G3FZ" role="2wV5jI">
       <node concept="PMmxH" id="1LLcOD9G3G0" role="3EZMnx">
@@ -4687,7 +4687,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5_Cxj2pStAf">
-    <property role="3GE5qa" value="test.actions.base" />
+    <property role="3GE5qa" value="test.actions.base.base" />
     <ref role="1XX52x" to="53m0:5_Cxj2pStA3" resolve="RowBasedViewWidgetCommandAction" />
     <node concept="3EZMnI" id="5_Cxj2pStAh" role="2wV5jI">
       <node concept="3F0ifn" id="2w4bAIFYfzT" role="3EZMnx">
@@ -4717,7 +4717,7 @@
     </node>
   </node>
   <node concept="22mcaB" id="2w4bAIFLqwT">
-    <property role="3GE5qa" value="test.actions.base" />
+    <property role="3GE5qa" value="test.actions.base.base" />
     <ref role="aqKnT" to="53m0:5_Cxj2pStA3" resolve="RowBasedViewWidgetCommandAction" />
     <node concept="2F$Pav" id="2w4bAIFLvnT" role="3ft7WO">
       <node concept="3eGOop" id="2w4bAIFLvnU" role="2$S_pN">
@@ -7391,7 +7391,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6gWUZpXe6ZH">
-    <property role="3GE5qa" value="test.actions" />
+    <property role="3GE5qa" value="test.actions.base" />
     <ref role="1XX52x" to="53m0:6gWUZpXe6H5" resolve="DependencyOperationInvocationAction" />
     <node concept="3EZMnI" id="6gWUZpXe6ZJ" role="2wV5jI">
       <node concept="3F0ifn" id="6gWUZpXe6ZK" role="3EZMnx">
@@ -7426,7 +7426,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="6gWUZpXe6ZO" role="3EZMnx">
-        <ref role="1NtTu8" to="53m0:6gWUZpXe7fS" resolve="parameters" />
+        <ref role="1NtTu8" to="53m0:6gWUZpXe7fS" resolve="arguments" />
         <node concept="pkWqt" id="6gWUZpXe6ZP" role="pqm2j">
           <node concept="3clFbS" id="6gWUZpXe6ZQ" role="2VODD2">
             <node concept="3clFbF" id="6gWUZpXe6ZR" role="3cqZAp">
@@ -7434,7 +7434,7 @@
                 <node concept="2OqwBi" id="6gWUZpXe6ZT" role="2Oq$k0">
                   <node concept="pncrf" id="6gWUZpXe6ZU" role="2Oq$k0" />
                   <node concept="3TrEf2" id="6gWUZpXe6ZV" role="2OqNvi">
-                    <ref role="3Tt5mk" to="53m0:6gWUZpXe7fS" resolve="parameters" />
+                    <ref role="3Tt5mk" to="53m0:6gWUZpXe7fS" resolve="arguments" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="6gWUZpXe6ZW" role="2OqNvi" />

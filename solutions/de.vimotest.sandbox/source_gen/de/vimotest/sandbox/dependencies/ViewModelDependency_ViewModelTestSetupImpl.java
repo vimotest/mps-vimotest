@@ -15,5 +15,4 @@ public class ViewModelDependency_ViewModelTestSetupImpl extends ViewModelDepende
   public ViewModelDependency_ViewModel getSimpleDependency_ViewModel() {
     return null;
   }
-
 }

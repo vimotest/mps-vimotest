@@ -14,5 +14,4 @@ class TableViews_ViewModelTestSetupImpl specializes TableViews_ViewModelTestSetu
     return null;
 
   }
-  
 }

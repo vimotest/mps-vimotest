@@ -23,5 +23,4 @@ class DataTableContext_ViewModelTestSetupImpl specializes DataTableContext_ViewM
     return null;
 
   }
-  
 }

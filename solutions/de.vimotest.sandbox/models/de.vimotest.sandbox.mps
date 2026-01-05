@@ -79,7 +79,7 @@
       <concept id="4696656866608863568" name="de.vimotest.viewmodel.testing.structure.ComboBoxCheck" flags="ng" index="7cNBp">
         <child id="4696656866608863569" name="checks" index="7cNBo" />
       </concept>
-      <concept id="8948051009467167877" name="de.vimotest.viewmodel.testing.structure.CommandInvocationAction" flags="ng" index="27s6xY">
+      <concept id="8948051009467167877" name="de.vimotest.viewmodel.testing.structure.ParameterizedCommandInvocationAction" flags="ng" index="27s6xY">
         <reference id="8948051009467187564" name="targetCommand" index="27sXQn" />
         <child id="8948051009467207553" name="parameters" index="27sTdU" />
       </concept>
@@ -102,6 +102,7 @@
       <concept id="7222907346290764613" name="de.vimotest.viewmodel.testing.structure.DependencyOperationInvocationAction" flags="ng" index="p182N">
         <reference id="7222907346290783544" name="targetDependency" index="p15Ve" />
         <reference id="7222907346290766839" name="targetOperation" index="p19w1" />
+        <child id="7222907346290766840" name="arguments" index="p19we" />
       </concept>
       <concept id="5213916851000129542" name="de.vimotest.viewmodel.testing.structure.CheckBoxCheck" flags="ng" index="C4Fn6">
         <child id="5213916851000129543" name="checks" index="C4Fn7" />
@@ -256,6 +257,7 @@
       </concept>
     </language>
     <language id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi">
+      <concept id="8152398782397110011" name="alfi.structure.NullExpression" flags="ng" index="2_e7m4" />
       <concept id="2674824929519052396" name="alfi.structure.StringLiteralExpression" flags="ng" index="_iklQ">
         <property id="2674824929519052397" name="value" index="_iklR" />
       </concept>
@@ -380,9 +382,9 @@
       <concept id="3225812364372528779" name="de.vimotest.viewmodel.structure.CustomFileNameBinding" flags="ng" index="QIaRa">
         <property id="3225812364372528782" name="customBaseFileName" index="QIaRf" />
       </concept>
-      <concept id="5008073225018638575" name="de.vimotest.viewmodel.structure.DependencyArgument" flags="ng" index="RSs3Z" />
+      <concept id="5008073225018638575" name="de.vimotest.viewmodel.structure.DependencyParameter" flags="ng" index="RSs3Z" />
       <concept id="5008073225018639227" name="de.vimotest.viewmodel.structure.DependencyOperation" flags="ng" index="RSsdF">
-        <child id="5008073225018638751" name="arguments" index="RSs6f" />
+        <child id="5008073225018638751" name="parameters" index="RSs6f" />
       </concept>
       <concept id="2567579368932258681" name="de.vimotest.viewmodel.structure.TextBoxWidget" flags="ng" index="UtuMG">
         <child id="2567579368932258684" name="enabledFeature" index="UtuMD" />
@@ -5840,6 +5842,27 @@
           <node concept="p182N" id="54nmQxF9CwK" role="DUiS9">
             <ref role="p15Ve" node="4m0g11MwG5P" resolve="MessageBus" />
             <ref role="p19w1" node="4m0g11MwG6C" resolve="OnMessage" />
+            <node concept="_vku0" id="54nmQxKvqZs" role="p19we">
+              <node concept="32T38h" id="54nmQxKvr1R" role="_vku1">
+                <property role="32T38g" value="0" />
+              </node>
+              <node concept="1Wmaf1" id="54nmQxKvr2K" role="_vku1">
+                <property role="327w9R" value="true" />
+                <node concept="1Wm7YT" id="54nmQxKvr5X" role="1Wm7Yz">
+                  <node concept="_iklQ" id="54nmQxKvr71" role="1Wm7YV">
+                    <property role="_iklR" value="A" />
+                  </node>
+                  <node concept="_iklQ" id="54nmQxKvr7_" role="1Wm7YV">
+                    <property role="_iklR" value="B" />
+                  </node>
+                </node>
+                <node concept="3xHE8C" id="54nmQxKE0C0" role="1Wmaf7">
+                  <node concept="_vnHe" id="54nmQxKE0BZ" role="35HzJw">
+                    <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -5851,6 +5874,92 @@
           <node concept="p182N" id="54nmQxFeLA4" role="DUiS9">
             <ref role="p15Ve" node="47nlIY2maYg" resolve="Logger" />
             <ref role="p19w1" node="47nlIY2maYh" resolve="Log" />
+            <node concept="_vku0" id="54nmQxKvqZq" role="p19we">
+              <node concept="_iklQ" id="54nmQxKvraS" role="_vku1">
+                <property role="_iklR" value="my message" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="103ZX$" id="54nmQxJP_TD">
+    <property role="$YGLj" value="RepeatUsageDependency_" />
+    <property role="3GE5qa" value="dependencies.subscope" />
+    <node concept="103ZXx" id="54nmQxJP_TE" role="103ZXC">
+      <node concept="3Vw88J" id="54nmQxJP_TF" role="1006ar">
+        <property role="TrG5h" value="LoadView" />
+      </node>
+    </node>
+    <node concept="103ZXB" id="54nmQxJP_TG" role="103ZXF">
+      <node concept="1nWCU9" id="54nmQxJP_TH" role="103ZUC">
+        <property role="TrG5h" value="MyBool" />
+        <node concept="1nBHEw" id="54nmQxJP_TI" role="3xMlr6" />
+      </node>
+    </node>
+    <node concept="2PDISX" id="54nmQxJP_TJ" role="2PDvFJ">
+      <node concept="2PDviN" id="54nmQxJP_TK" role="RSswE">
+        <property role="TrG5h" value="MessageBus" />
+        <node concept="RSsdF" id="54nmQxJP_TL" role="RSskJ">
+          <property role="TrG5h" value="OnMessage" />
+          <node concept="RSs3Z" id="54nmQxJP_TM" role="RSs6f">
+            <property role="TrG5h" value="messageId" />
+            <node concept="1nBWMp" id="54nmQxJP_TN" role="3xMlr6" />
+          </node>
+          <node concept="RSs3Z" id="54nmQxJP_TO" role="RSs6f">
+            <property role="TrG5h" value="names" />
+            <node concept="1WnWvM" id="54nmQxJP_TP" role="3xMlr6">
+              <node concept="1nBS12" id="54nmQxJP_TQ" role="1WnWvN" />
+            </node>
+          </node>
+        </node>
+        <node concept="RSsdF" id="54nmQxJP_TR" role="RSskJ">
+          <property role="TrG5h" value="Foo" />
+          <node concept="RSs3Z" id="54nmQxJP_TS" role="RSs6f">
+            <property role="TrG5h" value="bar" />
+            <node concept="1nBHEw" id="54nmQxJP_TT" role="3xMlr6" />
+          </node>
+        </node>
+      </node>
+      <node concept="33PmoL" id="54nmQxJP_TU" role="RSswE">
+        <ref role="33Pmof" node="47nlIY2maYg" resolve="Logger" />
+      </node>
+    </node>
+  </node>
+  <node concept="30n1Qd" id="54nmQxJPA70">
+    <property role="3GE5qa" value="dependencies.subscope" />
+    <property role="TrG5h" value="RepeatUsageDependency_ViewModelTests" />
+    <ref role="30n1PB" node="54nmQxJP_TD" resolve="RepeatUsageDependency_ViewModel" />
+    <node concept="3LKzX3" id="54nmQxJPA75" role="30n1Qb">
+      <property role="TrG5h" value="Invoke Direct Dependency" />
+      <node concept="1s$VFG" id="54nmQxJPA76" role="1s$QAY">
+        <node concept="DUd5q" id="54nmQxJPA77" role="1s$QAM">
+          <node concept="p182N" id="54nmQxJPA78" role="DUiS9">
+            <ref role="p15Ve" node="54nmQxJP_TK" resolve="MessageBus" />
+            <ref role="p19w1" node="54nmQxJP_TL" resolve="OnMessage" />
+            <node concept="_vku0" id="54nmQxKvqYs" role="p19we">
+              <node concept="32T38h" id="54nmQxKvrec" role="_vku1">
+                <property role="32T38g" value="0" />
+              </node>
+              <node concept="2_e7m4" id="54nmQxKvrgz" role="_vku1" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="54nmQxJPA79" role="30n1Qb">
+      <property role="TrG5h" value="Invoke Registry Dependency" />
+      <node concept="1s$VFG" id="54nmQxJPA7a" role="1s$QAY">
+        <node concept="DUd5q" id="54nmQxJPA7b" role="1s$QAM">
+          <node concept="p182N" id="54nmQxJPA7c" role="DUiS9">
+            <ref role="p15Ve" node="47nlIY2maYg" resolve="Logger" />
+            <ref role="p19w1" node="47nlIY2maYh" resolve="Log" />
+            <node concept="_vku0" id="54nmQxKvqYq" role="p19we">
+              <node concept="_iklQ" id="54nmQxKvrcy" role="_vku1">
+                <property role="_iklR" value="my message" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

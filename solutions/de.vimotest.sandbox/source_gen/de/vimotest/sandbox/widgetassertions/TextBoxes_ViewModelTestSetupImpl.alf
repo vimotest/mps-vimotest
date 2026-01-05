@@ -14,5 +14,4 @@ class TextBoxes_ViewModelTestSetupImpl specializes TextBoxes_ViewModelTestSetup 
     return null;
 
   }
-  
 }

@@ -11,5 +11,4 @@ public class ClickCommand_ViewModelTestSetupImpl extends ClickCommand_ViewModelT
   public ClickCommand_ViewModel BuildSut() {
     return null;
   }
-
 }

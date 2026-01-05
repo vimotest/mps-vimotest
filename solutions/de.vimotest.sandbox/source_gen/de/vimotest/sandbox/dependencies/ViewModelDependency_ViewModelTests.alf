@@ -38,6 +38,7 @@ class ViewModelDependency_ViewModelTests {
 
   
   public when_LoadView (  ) {
+    this.testSetup.getSimpleDependency_ViewModel (  ).loadView (  );
 
   }
   

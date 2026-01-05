@@ -14,5 +14,4 @@ class Buttons_ViewModelTestSetupImpl specializes Buttons_ViewModelTestSetup {
     return null;
 
   }
-  
 }

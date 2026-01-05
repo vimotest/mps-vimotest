@@ -14,5 +14,4 @@ public class DataPathContext_ViewModelTestSetupImpl extends DataPathContext_View
   public DataPathContext_ViewModel BuildSut() {
     return null;
   }
-
 }

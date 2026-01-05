@@ -11,5 +11,4 @@ class LowLevelFields_ViewModelTestSetupImpl specializes LowLevelFields_ViewModel
     return null;
 
   }
-  
 }

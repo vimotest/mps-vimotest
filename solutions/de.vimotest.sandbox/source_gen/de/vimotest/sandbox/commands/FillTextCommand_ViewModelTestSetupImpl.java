@@ -11,5 +11,4 @@ public class FillTextCommand_ViewModelTestSetupImpl extends FillTextCommand_View
   public FillTextCommand_ViewModel BuildSut() {
     return null;
   }
-
 }

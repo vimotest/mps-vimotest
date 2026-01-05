@@ -14,5 +14,4 @@ class ContextReference_ViewModelTestSetupImpl specializes ContextReference_ViewM
     return null;
 
   }
-  
 }

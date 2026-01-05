@@ -14,5 +14,4 @@ public class ListViews_ViewModelTestSetupImpl extends ListViews_ViewModelTestSet
   public ListViews_ViewModel BuildSut() {
     return null;
   }
-
 }

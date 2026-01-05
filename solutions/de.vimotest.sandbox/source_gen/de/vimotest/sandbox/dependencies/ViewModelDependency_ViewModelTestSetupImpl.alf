@@ -16,5 +16,4 @@ class ViewModelDependency_ViewModelTestSetupImpl specializes ViewModelDependency
     return null;
 
   }
-  
 }

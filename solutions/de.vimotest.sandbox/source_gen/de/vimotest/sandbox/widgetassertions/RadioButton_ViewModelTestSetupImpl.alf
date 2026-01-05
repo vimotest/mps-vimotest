@@ -11,5 +11,4 @@ class RadioButton_ViewModelTestSetupImpl specializes RadioButton_ViewModelTestSe
     return null;
 
   }
-  
 }

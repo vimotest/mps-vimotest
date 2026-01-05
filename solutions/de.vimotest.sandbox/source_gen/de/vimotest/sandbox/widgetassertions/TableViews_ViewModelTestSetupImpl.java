@@ -14,5 +14,4 @@ public class TableViews_ViewModelTestSetupImpl extends TableViews_ViewModelTestS
   public TableViews_ViewModel BuildSut() {
     return null;
   }
-
 }

@@ -19,5 +19,4 @@ public class SimpleDependency_ViewModelTestSetupImpl extends SimpleDependency_Vi
   public Logger getLogger() {
     return null;
   }
-
 }

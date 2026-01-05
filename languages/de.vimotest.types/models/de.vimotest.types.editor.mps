@@ -741,6 +741,35 @@
         <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
     </node>
+    <node concept="2YIFZL" id="6DwkffaVpWf" role="jymVt">
+      <property role="TrG5h" value="getOrangeColorByTheme" />
+      <node concept="37vLTG" id="6DwkffaVq3P" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="6DwkffaVq3Q" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6DwkffaVpWi" role="3clF47">
+        <node concept="3clFbF" id="6DwkffaVqhQ" role="3cqZAp">
+          <node concept="1rXfSq" id="6DwkffaVq_P" role="3clFbG">
+            <ref role="37wK5l" node="5rqC7JBZX5S" resolve="getColorByTheme" />
+            <node concept="37vLTw" id="6DwkffaVqJz" role="37wK5m">
+              <ref role="3cqZAo" node="6DwkffaVq3P" resolve="editorContext" />
+            </node>
+            <node concept="Xl_RD" id="6DwkffaVqhU" role="37wK5m">
+              <property role="Xl_RC" value="#D3761B" />
+            </node>
+            <node concept="Xl_RD" id="6DwkffaVqhV" role="37wK5m">
+              <property role="Xl_RC" value="#F5B97B" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6DwkffaVpwc" role="1B3o_S" />
+      <node concept="3uibUv" id="6DwkffaVpTu" role="3clF45">
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="1DHLMcWALm" role="jymVt" />
     <node concept="2YIFZL" id="5QSnpBWoNKU" role="jymVt">
       <property role="TrG5h" value="getColorByTheme" />

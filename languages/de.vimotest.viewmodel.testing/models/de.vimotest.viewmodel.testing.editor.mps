@@ -895,6 +895,7 @@
       </node>
       <node concept="3F0ifn" id="2Yd1qrJOhyp" role="3EZMnx">
         <property role="3F0ifm" value="for" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
       </node>
       <node concept="3F0ifn" id="2Yd1qrJOhyN" role="3EZMnx">
         <property role="3F0ifm" value="viewmodel" />
@@ -912,10 +913,10 @@
           <node concept="3ZlJ5R" id="1DHLMcXSzT" role="VblUZ">
             <node concept="3clFbS" id="1DHLMcXSzU" role="2VODD2">
               <node concept="3clFbF" id="1DHLMcWBDG" role="3cqZAp">
-                <node concept="2YIFZM" id="1DHLMcY345" role="3clFbG">
-                  <ref role="37wK5l" to="dgt9:1DHLMcXYpD" resolve="getDarkGreenColorByTheme" />
+                <node concept="2YIFZM" id="6DwkffaVrK$" role="3clFbG">
+                  <ref role="37wK5l" to="dgt9:6DwkffaVpWf" resolve="getOrangeColorByTheme" />
                   <ref role="1Pybhc" to="dgt9:5QSnpBWlEt3" resolve="ViMoTestStyleColorHelper" />
-                  <node concept="1Q80Hx" id="1DHLMcY346" role="37wK5m" />
+                  <node concept="1Q80Hx" id="6DwkffaVrK_" role="37wK5m" />
                 </node>
               </node>
             </node>

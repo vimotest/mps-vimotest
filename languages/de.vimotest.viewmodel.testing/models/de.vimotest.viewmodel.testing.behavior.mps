@@ -20138,49 +20138,71 @@
                     <ref role="ehGHo" to="at53:3kGPU1QcSOP" resolve="IReferenceableDependency" />
                   </node>
                 </node>
-                <node concept="2OqwBi" id="54nmQxLhq4d" role="33vP2m">
-                  <node concept="2OqwBi" id="54nmQxLhq4e" role="2Oq$k0">
-                    <node concept="2OqwBi" id="54nmQxLhq4f" role="2Oq$k0">
-                      <node concept="2OqwBi" id="54nmQxLhq4g" role="2Oq$k0">
-                        <node concept="2OqwBi" id="54nmQxLhq4h" role="2Oq$k0">
-                          <node concept="13iPFW" id="54nmQxLhq4i" role="2Oq$k0" />
-                          <node concept="2Xjw5R" id="54nmQxLhq4j" role="2OqNvi">
-                            <node concept="1xMEDy" id="54nmQxLhq4k" role="1xVPHs">
-                              <node concept="chp4Y" id="54nmQxLhq4l" role="ri$Ld">
-                                <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+                <node concept="2OqwBi" id="HXq1W4bzwz" role="33vP2m">
+                  <node concept="2OqwBi" id="54nmQxLhq4d" role="2Oq$k0">
+                    <node concept="2OqwBi" id="54nmQxLhq4e" role="2Oq$k0">
+                      <node concept="2OqwBi" id="54nmQxLhq4f" role="2Oq$k0">
+                        <node concept="2OqwBi" id="54nmQxLhq4g" role="2Oq$k0">
+                          <node concept="2OqwBi" id="54nmQxLhq4h" role="2Oq$k0">
+                            <node concept="13iPFW" id="54nmQxLhq4i" role="2Oq$k0" />
+                            <node concept="2Xjw5R" id="54nmQxLhq4j" role="2OqNvi">
+                              <node concept="1xMEDy" id="54nmQxLhq4k" role="1xVPHs">
+                                <node concept="chp4Y" id="54nmQxLhq4l" role="ri$Ld">
+                                  <ref role="cht4Q" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3TrEf2" id="54nmQxLhq4m" role="2OqNvi">
+                            <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="54nmQxLhq4n" role="2OqNvi">
+                          <ref role="3Tt5mk" to="at53:69SOXVnRi$L" resolve="dependencySection" />
+                        </node>
+                      </node>
+                      <node concept="3Tsc0h" id="54nmQxLhq4o" role="2OqNvi">
+                        <ref role="3TtcxE" to="at53:4m0g11MoowU" resolve="contents" />
+                      </node>
+                    </node>
+                    <node concept="3$u5V9" id="54nmQxLhq4p" role="2OqNvi">
+                      <node concept="1bVj0M" id="54nmQxLhq4q" role="23t8la">
+                        <node concept="3clFbS" id="54nmQxLhq4r" role="1bW5cS">
+                          <node concept="3clFbF" id="54nmQxLhq4s" role="3cqZAp">
+                            <node concept="2OqwBi" id="54nmQxLhq4t" role="3clFbG">
+                              <node concept="37vLTw" id="54nmQxLhq4u" role="2Oq$k0">
+                                <ref role="3cqZAo" node="54nmQxLhq4w" resolve="it" />
+                              </node>
+                              <node concept="2qgKlT" id="54nmQxLhq4v" role="2OqNvi">
+                                <ref role="37wK5l" to="nrs2:47nlIY20x2E" resolve="getDependency" />
                               </node>
                             </node>
                           </node>
                         </node>
-                        <node concept="3TrEf2" id="54nmQxLhq4m" role="2OqNvi">
-                          <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
+                        <node concept="gl6BB" id="54nmQxLhq4w" role="1bW2Oz">
+                          <property role="TrG5h" value="it" />
+                          <node concept="2jxLKc" id="54nmQxLhq4x" role="1tU5fm" />
                         </node>
                       </node>
-                      <node concept="3TrEf2" id="54nmQxLhq4n" role="2OqNvi">
-                        <ref role="3Tt5mk" to="at53:69SOXVnRi$L" resolve="dependencySection" />
-                      </node>
-                    </node>
-                    <node concept="3Tsc0h" id="54nmQxLhq4o" role="2OqNvi">
-                      <ref role="3TtcxE" to="at53:4m0g11MoowU" resolve="contents" />
                     </node>
                   </node>
-                  <node concept="3$u5V9" id="54nmQxLhq4p" role="2OqNvi">
-                    <node concept="1bVj0M" id="54nmQxLhq4q" role="23t8la">
-                      <node concept="3clFbS" id="54nmQxLhq4r" role="1bW5cS">
-                        <node concept="3clFbF" id="54nmQxLhq4s" role="3cqZAp">
-                          <node concept="2OqwBi" id="54nmQxLhq4t" role="3clFbG">
-                            <node concept="37vLTw" id="54nmQxLhq4u" role="2Oq$k0">
-                              <ref role="3cqZAo" node="54nmQxLhq4w" resolve="it" />
+                  <node concept="3zZkjj" id="HXq1W4bzZ6" role="2OqNvi">
+                    <node concept="1bVj0M" id="HXq1W4bzZ8" role="23t8la">
+                      <node concept="3clFbS" id="HXq1W4bzZ9" role="1bW5cS">
+                        <node concept="3clFbF" id="HXq1W4b$7_" role="3cqZAp">
+                          <node concept="2OqwBi" id="HXq1W4b$tB" role="3clFbG">
+                            <node concept="37vLTw" id="HXq1W4b$7$" role="2Oq$k0">
+                              <ref role="3cqZAo" node="HXq1W4bzZa" resolve="it" />
                             </node>
-                            <node concept="2qgKlT" id="54nmQxLhq4v" role="2OqNvi">
-                              <ref role="37wK5l" to="nrs2:47nlIY20x2E" resolve="getDependency" />
+                            <node concept="3TrcHB" id="HXq1W4b_ig" role="2OqNvi">
+                              <ref role="3TsBF5" to="at53:HXq1W42mE1" resolve="supportsSpying" />
                             </node>
                           </node>
                         </node>
                       </node>
-                      <node concept="gl6BB" id="54nmQxLhq4w" role="1bW2Oz">
+                      <node concept="gl6BB" id="HXq1W4bzZa" role="1bW2Oz">
                         <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="54nmQxLhq4x" role="1tU5fm" />
+                        <node concept="2jxLKc" id="HXq1W4bzZb" role="1tU5fm" />
                       </node>
                     </node>
                   </node>

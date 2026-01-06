@@ -21,7 +21,7 @@ namespace dependencies
             return null;
         }
 
-        public override dependencies.Logger getLogger()
+        public override dependencies.LoggerSpy getLogger()
         {
             return null;
         }

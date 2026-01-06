@@ -16,7 +16,7 @@ public class SimpleDependency_ViewModelTestSetupImpl extends SimpleDependency_Vi
     return null;
   }
   @Override
-  public Logger getLogger() {
+  public LoggerSpy getLogger() {
     return null;
   }
 }

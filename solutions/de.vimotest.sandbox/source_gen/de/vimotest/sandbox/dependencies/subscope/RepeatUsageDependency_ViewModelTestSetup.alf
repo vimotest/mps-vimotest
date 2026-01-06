@@ -10,5 +10,5 @@ abstract class RepeatUsageDependency_ViewModelTestSetup {
   
   public abstract getMessageBus (  ) : MessageBus  ;
   
-  public abstract getLogger (  ) : Logger  ;
+  public abstract getLogger (  ) : LoggerSpy  ;
 }

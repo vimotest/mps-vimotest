@@ -431,6 +431,9 @@
       <concept id="5775867078593476371" name="de.vimotest.viewmodel.structure.TextColorFeature" flags="ng" index="31hZui">
         <property id="5775867078593476692" name="defaultColorCode" index="31hZzl" />
       </concept>
+      <concept id="3831674467163278645" name="de.vimotest.viewmodel.structure.IReferenceableDependency" flags="ngI" index="137PEl">
+        <property id="827932388927040129" name="supportsSpying" index="ft0au" />
+      </concept>
       <concept id="4744356319136451881" name="de.vimotest.viewmodel.structure.DependencyRegistry" flags="ng" index="33PlJ6">
         <child id="4744356319136451883" name="dependencies" index="33PlJ4" />
       </concept>
@@ -5795,6 +5798,7 @@
     <property role="TrG5h" value="SimpleDependencies" />
     <node concept="2PDviN" id="47nlIY2maYg" role="33PlJ4">
       <property role="TrG5h" value="Logger" />
+      <property role="ft0au" value="true" />
       <node concept="RSsdF" id="47nlIY2maYh" role="RSskJ">
         <property role="TrG5h" value="Log" />
         <node concept="RSs3Z" id="47nlIY2maYi" role="RSs6f">
@@ -5975,8 +5979,8 @@
     </node>
   </node>
   <node concept="103ZX$" id="54nmQxLhoWA">
-    <property role="3GE5qa" value="dependencies.spy" />
-    <property role="$YGLj" value="SpyDependencies" />
+    <property role="3GE5qa" value="dependencies.calls" />
+    <property role="$YGLj" value="VerifyDependencyCall" />
     <node concept="103ZXx" id="54nmQxLhoWB" role="103ZXC">
       <node concept="3Vw88J" id="54nmQxLhoWC" role="1006ar">
         <property role="TrG5h" value="LoadView" />
@@ -5993,9 +5997,9 @@
     </node>
   </node>
   <node concept="30n1Qd" id="54nmQxLhoX6">
-    <property role="3GE5qa" value="dependencies.spy" />
-    <property role="TrG5h" value="SpyDependenciesViewModelTests" />
-    <ref role="30n1PB" node="54nmQxLhoWA" resolve="SpyDependenciesViewModel" />
+    <property role="3GE5qa" value="dependencies.calls" />
+    <property role="TrG5h" value="VerifyDependencyCallViewModelTests" />
+    <ref role="30n1PB" node="54nmQxLhoWA" resolve="VerifyDependencyCallViewModel" />
     <node concept="3LKzX3" id="54nmQxLhoX7" role="30n1Qb">
       <property role="TrG5h" value="Verify dependency call" />
       <node concept="1s$VFG" id="54nmQxLhoXa" role="1s$QAY">

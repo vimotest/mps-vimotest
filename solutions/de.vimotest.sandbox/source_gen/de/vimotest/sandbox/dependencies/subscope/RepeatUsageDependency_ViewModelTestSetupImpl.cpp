@@ -2,7 +2,7 @@
 #include <memory>
 #include "RepeatUsageDependency_ViewModel.h"
 #include "MessageBus.h"
-#include "dependencies/Logger.h"
+#include "dependencies/LoggerSpy.h"
 
 namespace dependencies::subscope
 {
@@ -17,7 +17,7 @@ namespace dependencies::subscope
   {
     return nullptr;
   }
-  std::shared_ptr<Logger> RepeatUsageDependency_ViewModelTestSetupImpl::getLogger()
+  std::shared_ptr<LoggerSpy> RepeatUsageDependency_ViewModelTestSetupImpl::getLogger()
   {
     return nullptr;
   }

@@ -58,6 +58,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/SimpleDependency_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/ViewModelDependency_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/subscope/RepeatUsageDependency_ViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/calls/VerifyDependencyCallViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/MessageBus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/Logger.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/subscope/MessageBus.cs" />
@@ -145,9 +146,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/subscope/RepeatUsageDependency_ViewModelTestSetup.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/subscope/RepeatUsageDependency_ViewModelTestSetupImpl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/subscope/RepeatUsageDependency_ViewModelTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/calls/VerifyDependencyCallViewModelTestSetup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/calls/VerifyDependencyCallViewModelTestSetupImpl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/calls/VerifyDependencyCallViewModelTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/StringContext2_ViewTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/LoggerSpy.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)commands/SelectEntryCommand_ViewModelMyOptionsOption.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/RadioButton_ViewModelOptionsOption.cs" />
   </ItemGroup>

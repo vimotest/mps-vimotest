@@ -14,6 +14,6 @@ namespace dependencies.subscope
 
         public abstract dependencies.subscope.MessageBus getMessageBus();
 
-        public abstract dependencies.Logger getLogger();
+        public abstract dependencies.LoggerSpy getLogger();
     }
 }

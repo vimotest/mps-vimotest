@@ -449,7 +449,7 @@
       <ref role="2rZz_L" to="28lk:3_puicMjdEb" resolve="EnumerationLiteralName" />
     </node>
     <node concept="2rT7sh" id="54nmQxFEMFx" role="2rTMjI">
-      <property role="TrG5h" value="ViewModelDependency_ClassDefinition" />
+      <property role="TrG5h" value="Dependency_ClassDefinition" />
       <ref role="2rTdP9" to="at53:69SOXVnRitH" resolve="Dependency" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
     </node>
@@ -4243,7 +4243,7 @@
       <property role="TrG5h" value="root_mapping_Dependency" />
       <property role="PCHGy" value="true" />
       <node concept="6nSm6" id="3kGPU1PzVbX" role="PCHHv">
-        <property role="TrG5h" value="dependencyMethod" />
+        <property role="TrG5h" value="dependencyOperation" />
         <property role="PCHGy" value="true" />
         <node concept="PCHzy" id="3kGPU1PzVbY" role="GbAUv" />
         <node concept="2b32R4" id="3kGPU1PzVcX" role="lGtFl">
@@ -4390,7 +4390,7 @@
         </node>
       </node>
       <node concept="2ZBi8u" id="54nmQxFEOWu" role="lGtFl">
-        <ref role="2rW$FS" node="54nmQxFEMFx" resolve="ViewModelDependency_ClassDefinition" />
+        <ref role="2rW$FS" node="54nmQxFEMFx" resolve="Dependency_ClassDefinition" />
       </node>
     </node>
     <node concept="n94m4" id="47nlIY2Qc29" role="lGtFl">

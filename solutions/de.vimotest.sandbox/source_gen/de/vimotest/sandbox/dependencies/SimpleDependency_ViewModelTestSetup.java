@@ -7,5 +7,5 @@ public abstract class SimpleDependency_ViewModelTestSetup {
   public abstract void Init();
   public abstract SimpleDependency_ViewModel BuildSut();
   public abstract MessageBus getMessageBus();
-  public abstract Logger getLogger();
+  public abstract LoggerSpy getLogger();
 }

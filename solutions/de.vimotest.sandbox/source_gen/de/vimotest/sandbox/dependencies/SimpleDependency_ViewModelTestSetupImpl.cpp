@@ -2,7 +2,7 @@
 #include <memory>
 #include "SimpleDependency_ViewModel.h"
 #include "MessageBus.h"
-#include "Logger.h"
+#include "LoggerSpy.h"
 
 namespace dependencies
 {
@@ -17,7 +17,7 @@ namespace dependencies
   {
     return nullptr;
   }
-  std::shared_ptr<Logger> SimpleDependency_ViewModelTestSetupImpl::getLogger()
+  std::shared_ptr<LoggerSpy> SimpleDependency_ViewModelTestSetupImpl::getLogger()
   {
     return nullptr;
   }

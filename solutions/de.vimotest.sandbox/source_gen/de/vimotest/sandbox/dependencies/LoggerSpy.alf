@@ -1,0 +1,11 @@
+namespace dependencies ;
+
+
+
+class LoggerSpy specializes Logger {
+  
+  public Log (   in message: String  ) {
+// TODO Implement
+
+  }
+}

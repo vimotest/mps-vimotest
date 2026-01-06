@@ -1846,6 +1846,11 @@
     <node concept="PrWs8" id="3kGPU1QjftN" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyi" id="HXq1W42mE1" role="1TKVEl">
+      <property role="IQ2nx" value="827932388927040129" />
+      <property role="TrG5h" value="supportsSpying" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="PlHQZ" id="54nmQxE1KaC">
     <property role="EcuMT" value="5843239545550078632" />

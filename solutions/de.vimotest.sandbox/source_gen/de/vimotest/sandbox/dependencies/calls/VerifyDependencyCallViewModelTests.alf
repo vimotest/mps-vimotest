@@ -1,0 +1,47 @@
+namespace dependencies:: calls ;
+
+private import Testing ;
+
+class VerifyDependencyCallViewModelTests {
+  
+  private sut : VerifyDependencyCallViewModel  ;
+  
+  private testSetup : VerifyDependencyCallViewModelTestSetup  ;
+  
+  
+  protected BeforeTest (  ) {
+    this.testSetup = new VerifyDependencyCallViewModelTestSetupImpl (  );
+
+    this.testSetup.Init (  );
+
+  }
+  
+  
+  public Verify_dependency_call_given_when_then_call_Logger_Log_any_ (  ) {
+    this.BuildSut (  );
+
+    this.then_call_Logger_Log_any_ (  );
+
+  }
+  
+  
+  protected BuildSut (  ) {
+    this.sut = this.testSetup.BuildSut (  );
+
+  }
+  
+  
+  // Given Helper Definitions
+
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+  
+  public then_call_Logger_Log_any_ (  ) {
+    ;
+
+  }
+}

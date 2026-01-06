@@ -17,7 +17,7 @@ class SimpleDependency_ViewModelTestSetupImpl specializes SimpleDependency_ViewM
 
   }
   
-  public getLogger (  ) : Logger  {
+  public getLogger (  ) : LoggerSpy  {
     return null;
 
   }

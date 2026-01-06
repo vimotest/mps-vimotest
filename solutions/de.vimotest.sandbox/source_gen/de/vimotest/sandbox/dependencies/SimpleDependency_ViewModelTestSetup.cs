@@ -13,6 +13,6 @@ namespace dependencies
 
         public abstract dependencies.MessageBus getMessageBus();
 
-        public abstract dependencies.Logger getLogger();
+        public abstract dependencies.LoggerSpy getLogger();
     }
 }

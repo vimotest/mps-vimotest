@@ -1185,6 +1185,12 @@
       <node concept="PMmxH" id="3JF9X1LtDkJ" role="3EZMnx">
         <ref role="PMmxG" node="3JF9X1LtxCE" resolve="IHasNamespace_EC" />
       </node>
+      <node concept="PMmxH" id="HXq1W42Hb8" role="3EZMnx">
+        <ref role="PMmxG" node="HXq1W42mE2" resolve="IReferenceableDependency_supportsSpying_EC" />
+        <node concept="pVoyu" id="HXq1W42Hb9" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="F907haLQW8">
@@ -5463,6 +5469,12 @@
       <node concept="PMmxH" id="32SpZNJbbFz" role="3EZMnx">
         <ref role="PMmxG" node="3JF9X1LtxCE" resolve="IHasNamespace_EC" />
       </node>
+      <node concept="PMmxH" id="HXq1W42mEd" role="3EZMnx">
+        <ref role="PMmxG" node="HXq1W42mE2" resolve="IReferenceableDependency_supportsSpying_EC" />
+        <node concept="pVoyu" id="HXq1W42mEe" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="4m0g11Mootf">
@@ -5772,6 +5784,25 @@
           <node concept="3clFbS" id="32SpZNJYEb1" role="3clFbx" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="HXq1W42mE2">
+    <property role="3GE5qa" value="dependencies" />
+    <property role="TrG5h" value="IReferenceableDependency_supportsSpying_EC" />
+    <ref role="1XX52x" to="at53:3kGPU1QcSOP" resolve="IReferenceableDependency" />
+    <node concept="3EZMnI" id="HXq1W42mE4" role="2wV5jI">
+      <node concept="2yq9I_" id="HXq1W42mE8" role="3EZMnx">
+        <ref role="225u1j" to="at53:HXq1W42mE1" resolve="supportsSpying" />
+        <node concept="1563Vb" id="HXq1W42mEa" role="1563LE">
+          <property role="1563UK" value="[ ]" />
+          <property role="1563Ve" value="[x]" />
+        </node>
+        <node concept="3F0ifn" id="HXq1W42mEb" role="2fqkNU">
+          <property role="3F0ifm" value="supports call tracking (spy)" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="HXq1W42mE7" role="2iSdaV" />
     </node>
   </node>
 </model>

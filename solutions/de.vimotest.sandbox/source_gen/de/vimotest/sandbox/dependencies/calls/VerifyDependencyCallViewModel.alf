@@ -1,0 +1,10 @@
+namespace dependencies:: calls ;
+
+
+
+
+public class VerifyDependencyCallViewModel {
+  
+  public loadView (  ) {    
+  }
+}

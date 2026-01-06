@@ -3,7 +3,7 @@
 #include <memory>
 #include "RepeatUsageDependency_ViewModel.h"
 #include "MessageBus.h"
-#include "dependencies/Logger.h"
+#include "dependencies/LoggerSpy.h"
 
 namespace dependencies::subscope
 {
@@ -14,6 +14,6 @@ namespace dependencies::subscope
     virtual void Init() = 0;
     virtual std::shared_ptr<RepeatUsageDependency_ViewModel> BuildSut() = 0;
     virtual std::shared_ptr<MessageBus> getMessageBus() = 0;
-    virtual std::shared_ptr<Logger> getLogger() = 0;
+    virtual std::shared_ptr<LoggerSpy> getLogger() = 0;
   };
 }

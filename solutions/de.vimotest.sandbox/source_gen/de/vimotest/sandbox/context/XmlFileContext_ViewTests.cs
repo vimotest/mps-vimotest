@@ -9,13 +9,13 @@ public class XmlFileContext_ViewTests
 {
     private context.XmlFileContext_ViewModel sut;
 
-    private context.XmlFileContext_ViewModelTestSetup testSetup;
+    private context.XmlFileContext_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new context.XmlFileContext_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new context.XmlFileContext_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -34,7 +34,7 @@ public class XmlFileContext_ViewTests
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     private string XmlFile_NoExternalFile = @"<MyXML>
@@ -43,11 +43,11 @@ public class XmlFileContext_ViewTests
 
     public virtual void given_XmlFile_NoExternalFile()
     {
-        this.testSetup.SetXmlFileContext(this.XmlFile_NoExternalFile);
+        this.testEnvironment.SetXmlFileContext(this.XmlFile_NoExternalFile);
     }
 
     public virtual void given_XmlFile_ExternalFile()
     {
-        this.testSetup.SetXmlExternalFileContext("XmlFile_ExternalFile.xml");
+        this.testEnvironment.SetXmlExternalFileContext("XmlFile_ExternalFile.xml");
     }
 }

@@ -1,0 +1,24 @@
+namespace dependencies:: calls ;
+
+
+
+class VerifyDependencyCallViewModelTestEnvironmentImpl specializes VerifyDependencyCallViewModelTestEnvironment {
+  
+  public Init (  ) {    
+  }
+  
+  public BuildSut (  ) : VerifyDependencyCallViewModel  {
+    return null;
+
+  }
+  
+  public getLogger (  ) : LoggerSpy  {
+    return null;
+
+  }
+  
+  public getSimpleDependency_ViewModel (  ) : VerifyDependencyCallViewModel  {
+    return null;
+
+  }
+}

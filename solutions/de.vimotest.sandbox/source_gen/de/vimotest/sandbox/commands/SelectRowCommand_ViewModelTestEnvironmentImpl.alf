@@ -1,0 +1,14 @@
+namespace commands ;
+
+
+
+class SelectRowCommand_ViewModelTestEnvironmentImpl specializes SelectRowCommand_ViewModelTestEnvironment {
+  
+  public Init (  ) {    
+  }
+  
+  public BuildSut (  ) : SelectRowCommand_ViewModel  {
+    return null;
+
+  }
+}

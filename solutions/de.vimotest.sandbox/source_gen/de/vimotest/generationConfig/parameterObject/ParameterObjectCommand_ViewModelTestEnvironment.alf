@@ -1,0 +1,12 @@
+
+
+
+
+abstract class ParameterObjectCommand_ViewModelTestEnvironment {
+  
+  public abstract Init (  ) ;
+  
+  public abstract SetEmptyContext (  ) ;
+  
+  public abstract BuildSut (  ) : ParameterObjectCommand_ViewModel  ;
+}

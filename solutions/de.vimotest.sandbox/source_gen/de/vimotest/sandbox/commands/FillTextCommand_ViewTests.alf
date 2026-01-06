@@ -6,13 +6,13 @@ class FillTextCommand_ViewTests {
   
   private sut : FillTextCommand_ViewModel  ;
   
-  private testSetup : FillTextCommand_ViewModelTestSetup  ;
+  private testEnvironment : FillTextCommand_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new FillTextCommand_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new FillTextCommand_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -33,7 +33,7 @@ class FillTextCommand_ViewTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

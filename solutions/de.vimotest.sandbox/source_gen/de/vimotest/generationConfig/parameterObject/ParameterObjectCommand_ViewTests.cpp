@@ -1,15 +1,15 @@
 #include <gtest/gtest.h>
 #include <memory>
-#include "ParameterObjectCommand_ViewModelTestSetup.h"
+#include "ParameterObjectCommand_ViewModelTestEnvironment.h"
 #include <string>
 #include "ParameterObjectCommand_ViewModel.h"
-#include "ParameterObjectCommand_ViewModelTestSetupImpl.h"
+#include "ParameterObjectCommand_ViewModelTestEnvironmentImpl.h"
 
 class ParameterObjectCommand_ViewTests : public testing::Test
 {
 public:
   std::shared_ptr<ParameterObjectCommand_ViewModel> sut;
-  std::shared_ptr<ParameterObjectCommand_ViewModelTestSetup> testSetup;
+  std::shared_ptr<ParameterObjectCommand_ViewModelTestEnvironment> testEnvironment;
   virtual void BuildSut();
   virtual void given_empty_context();
   virtual void when_LoadView();
@@ -20,8 +20,8 @@ protected:
 
 void ParameterObjectCommand_ViewTests::SetUp()
 {
-  this->testSetup = std::make_shared<ParameterObjectCommand_ViewModelTestSetupImpl>();
-  this->testSetup->Init();
+  this->testEnvironment = std::make_shared<ParameterObjectCommand_ViewModelTestEnvironmentImpl>();
+  this->testEnvironment->Init();
 }
 
 TEST_F(ParameterObjectCommand_ViewTests, MyTest_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_)
@@ -34,7 +34,7 @@ TEST_F(ParameterObjectCommand_ViewTests, MyTest_given_empty_context_when_LoadVie
 
 void ParameterObjectCommand_ViewTests::BuildSut()
 {
-  this->sut = this->testSetup->BuildSut();
+  this->sut = this->testEnvironment->BuildSut();
 }
 
 void ParameterObjectCommand_ViewTests::given_empty_context()

@@ -9,13 +9,13 @@ public class StringContext_ViewTests
 {
     private context.StringContext_ViewModel sut;
 
-    private context.StringContext_ViewModelTestSetup testSetup;
+    private context.StringContext_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new context.StringContext_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new context.StringContext_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -34,20 +34,20 @@ public class StringContext_ViewTests
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     private string alice_bob_charlie = "Alice, Bob, Charlie";
 
     public virtual void given_alice_bob_charlie()
     {
-        this.testSetup.SetSimpleStringContext(this.alice_bob_charlie);
+        this.testEnvironment.SetSimpleStringContext(this.alice_bob_charlie);
     }
 
     private string Alice_Bob_Charlie = "Alice, Bob, Charlie";
 
     public virtual void given_Alice_Bob_Charlie()
     {
-        this.testSetup.SetSimpleStringContext(this.Alice_Bob_Charlie);
+        this.testEnvironment.SetSimpleStringContext(this.Alice_Bob_Charlie);
     }
 }

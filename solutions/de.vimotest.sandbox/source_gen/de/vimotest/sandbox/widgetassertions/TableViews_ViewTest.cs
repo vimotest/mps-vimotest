@@ -10,13 +10,13 @@ public class TableViews_ViewTest
 {
     private widgetassertions.TableViews_ViewModel sut;
 
-    private widgetassertions.TableViews_ViewModelTestSetup testSetup;
+    private widgetassertions.TableViews_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new widgetassertions.TableViews_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new widgetassertions.TableViews_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -38,7 +38,7 @@ public class TableViews_ViewTest
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     public virtual void given_empty_context()

@@ -1,0 +1,14 @@
+namespace widgetassertions ;
+
+
+
+class RadioButton_ViewModelTestEnvironmentImpl specializes RadioButton_ViewModelTestEnvironment {
+  
+  public Init (  ) {    
+  }
+  
+  public BuildSut (  ) : RadioButton_ViewModel  {
+    return null;
+
+  }
+}

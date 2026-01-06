@@ -9,13 +9,13 @@ public class VerifyDependencyCallViewModelTests
 {
     private dependencies.calls.VerifyDependencyCallViewModel sut;
 
-    private dependencies.calls.VerifyDependencyCallViewModelTestSetup testSetup;
+    private dependencies.calls.VerifyDependencyCallViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new dependencies.calls.VerifyDependencyCallViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new dependencies.calls.VerifyDependencyCallViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -27,7 +27,7 @@ public class VerifyDependencyCallViewModelTests
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     public virtual void then_call_Logger_Log_any_()

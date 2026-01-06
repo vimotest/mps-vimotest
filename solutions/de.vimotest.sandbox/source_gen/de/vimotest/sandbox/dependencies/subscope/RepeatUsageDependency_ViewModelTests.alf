@@ -6,13 +6,13 @@ class RepeatUsageDependency_ViewModelTests {
   
   private sut : RepeatUsageDependency_ViewModel  ;
   
-  private testSetup : RepeatUsageDependency_ViewModelTestSetup  ;
+  private testEnvironment : RepeatUsageDependency_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new RepeatUsageDependency_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new RepeatUsageDependency_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -33,7 +33,7 @@ class RepeatUsageDependency_ViewModelTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   
@@ -45,12 +45,12 @@ class RepeatUsageDependency_ViewModelTests {
 
   
   public when_OnMessage (  ) {
-    this.testSetup.getMessageBus (  ).OnMessage ( 0, null );
+    this.testEnvironment.getMessageBus (  ).OnMessage ( 0, null );
 
   }
   
   public when_Log (  ) {
-    this.testSetup.getLogger (  ).Log ( "my message" );
+    this.testEnvironment.getLogger (  ).Log ( "my message" );
 
   }
   

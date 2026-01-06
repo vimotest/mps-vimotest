@@ -1,10 +1,10 @@
 #include <gtest/gtest.h>
 #include <memory>
-#include "TextBoxes_ViewModelTestSetup.h"
+#include "TextBoxes_ViewModelTestEnvironment.h"
 #include <string>
 #include "TextBoxes_ViewModel.h"
 #include <vector>
-#include "TextBoxes_ViewModelTestSetupImpl.h"
+#include "TextBoxes_ViewModelTestEnvironmentImpl.h"
 
 namespace widgetassertions
 {
@@ -12,7 +12,7 @@ namespace widgetassertions
   {
   public:
     std::shared_ptr<TextBoxes_ViewModel> sut;
-    std::shared_ptr<TextBoxes_ViewModelTestSetup> testSetup;
+    std::shared_ptr<TextBoxes_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
     virtual void given_empty_context();
     virtual void then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible();
@@ -24,8 +24,8 @@ namespace widgetassertions
   };
   void TextBoxes_ViewTest::SetUp()
   {
-    this->testSetup = std::make_shared<TextBoxes_ViewModelTestSetupImpl>();
-    this->testSetup->Init();
+    this->testEnvironment = std::make_shared<TextBoxes_ViewModelTestEnvironmentImpl>();
+    this->testEnvironment->Init();
   }
   TEST_F(TextBoxes_ViewTest, SingleLine_TextBox_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible)
   {
@@ -53,7 +53,7 @@ namespace widgetassertions
   }
   void TextBoxes_ViewTest::BuildSut()
   {
-    this->sut = this->testSetup->BuildSut();
+    this->sut = this->testEnvironment->BuildSut();
   }
   void TextBoxes_ViewTest::given_empty_context()
   {

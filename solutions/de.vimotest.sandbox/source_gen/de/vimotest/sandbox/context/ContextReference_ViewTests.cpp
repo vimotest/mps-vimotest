@@ -1,9 +1,9 @@
 #include <gtest/gtest.h>
 #include <string>
 #include <memory>
-#include "ContextReference_ViewModelTestSetup.h"
+#include "ContextReference_ViewModelTestEnvironment.h"
 #include "ContextReference_ViewModel.h"
-#include "ContextReference_ViewModelTestSetupImpl.h"
+#include "ContextReference_ViewModelTestEnvironmentImpl.h"
 
 namespace context
 {
@@ -11,7 +11,7 @@ namespace context
   {
   public:
     std::shared_ptr<ContextReference_ViewModel> sut;
-    std::shared_ptr<ContextReference_ViewModelTestSetup> testSetup;
+    std::shared_ptr<ContextReference_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
     std::string baseContext = std::string("My Context");
     virtual void given_baseContext();
@@ -21,8 +21,8 @@ namespace context
   };
   void ContextReference_ViewTests::SetUp()
   {
-    this->testSetup = std::make_shared<ContextReference_ViewModelTestSetupImpl>();
-    this->testSetup->Init();
+    this->testEnvironment = std::make_shared<ContextReference_ViewModelTestEnvironmentImpl>();
+    this->testEnvironment->Init();
   }
   TEST_F(ContextReference_ViewTests, String_Context_given_baseContext_when_then_)
   {
@@ -36,14 +36,14 @@ namespace context
   }
   void ContextReference_ViewTests::BuildSut()
   {
-    this->sut = this->testSetup->BuildSut();
+    this->sut = this->testEnvironment->BuildSut();
   }
   void ContextReference_ViewTests::given_baseContext()
   {
-    this->testSetup->SetSimpleStringContext(this->baseContext);
+    this->testEnvironment->SetSimpleStringContext(this->baseContext);
   }
   void ContextReference_ViewTests::given_baseContext_1()
   {
-    this->testSetup->SetSimpleStringContext(this->baseContext);
+    this->testEnvironment->SetSimpleStringContext(this->baseContext);
   }
 }

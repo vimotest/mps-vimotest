@@ -1,12 +1,12 @@
 #include <gtest/gtest.h>
 #include <memory>
-#include "TableViews_ViewModelTestSetup.h"
+#include "TableViews_ViewModelTestEnvironment.h"
 #include "TableViews_ViewModel.h"
 #include <vector>
 #include "TableViews_ViewModelMyElementsRow.h"
 #include <string>
 #include "TableViews_ViewModelMyStringRowHandlesRow.h"
-#include "TableViews_ViewModelTestSetupImpl.h"
+#include "TableViews_ViewModelTestEnvironmentImpl.h"
 
 namespace widgetassertions
 {
@@ -14,7 +14,7 @@ namespace widgetassertions
   {
   public:
     std::shared_ptr<TableViews_ViewModel> sut;
-    std::shared_ptr<TableViews_ViewModelTestSetup> testSetup;
+    std::shared_ptr<TableViews_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
     virtual void given_empty_context();
     virtual void then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible();
@@ -25,8 +25,8 @@ namespace widgetassertions
   };
   void TableViews_ViewTest::SetUp()
   {
-    this->testSetup = std::make_shared<TableViews_ViewModelTestSetupImpl>();
-    this->testSetup->Init();
+    this->testEnvironment = std::make_shared<TableViews_ViewModelTestEnvironmentImpl>();
+    this->testEnvironment->Init();
   }
   TEST_F(TableViews_ViewTest, My_Scenario_given_empty_context_when_then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1)
   {
@@ -43,7 +43,7 @@ namespace widgetassertions
   }
   void TableViews_ViewTest::BuildSut()
   {
-    this->sut = this->testSetup->BuildSut();
+    this->sut = this->testEnvironment->BuildSut();
   }
   void TableViews_ViewTest::given_empty_context()
   {

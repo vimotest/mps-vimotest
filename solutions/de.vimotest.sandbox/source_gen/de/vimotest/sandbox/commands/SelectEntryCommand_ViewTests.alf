@@ -6,13 +6,13 @@ class SelectEntryCommand_ViewTests {
   
   private sut : SelectEntryCommand_ViewModel  ;
   
-  private testSetup : SelectEntryCommand_ViewModelTestSetup  ;
+  private testEnvironment : SelectEntryCommand_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new SelectEntryCommand_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new SelectEntryCommand_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -35,7 +35,7 @@ class SelectEntryCommand_ViewTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

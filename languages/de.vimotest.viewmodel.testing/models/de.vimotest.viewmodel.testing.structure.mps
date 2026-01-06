@@ -163,7 +163,7 @@
     </node>
     <node concept="1TJgyi" id="4Pj3bOmuYX9" role="1TKVEl">
       <property role="IQ2nx" value="5571811170253008713" />
-      <property role="TrG5h" value="testSetupClassName" />
+      <property role="TrG5h" value="testEnvironmentClassName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

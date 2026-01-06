@@ -6,13 +6,13 @@ class Images_ViewTest {
   
   private sut : Images_ViewModel  ;
   
-  private testSetup : Images_ViewModelTestSetup  ;
+  private testEnvironment : Images_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new Images_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new Images_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -30,7 +30,7 @@ class Images_ViewTest {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

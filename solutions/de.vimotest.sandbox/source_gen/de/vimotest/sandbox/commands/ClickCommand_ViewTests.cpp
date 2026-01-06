@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
 #include <memory>
-#include "ClickCommand_ViewModelTestSetup.h"
+#include "ClickCommand_ViewModelTestEnvironment.h"
 #include "ClickCommand_ViewModel.h"
-#include "ClickCommand_ViewModelTestSetupImpl.h"
+#include "ClickCommand_ViewModelTestEnvironmentImpl.h"
 
 namespace commands
 {
@@ -10,7 +10,7 @@ namespace commands
   {
   public:
     std::shared_ptr<ClickCommand_ViewModel> sut;
-    std::shared_ptr<ClickCommand_ViewModelTestSetup> testSetup;
+    std::shared_ptr<ClickCommand_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
     virtual void when_click_Ok();
   protected:
@@ -18,8 +18,8 @@ namespace commands
   };
   void ClickCommand_ViewTests::SetUp()
   {
-    this->testSetup = std::make_shared<ClickCommand_ViewModelTestSetupImpl>();
-    this->testSetup->Init();
+    this->testEnvironment = std::make_shared<ClickCommand_ViewModelTestEnvironmentImpl>();
+    this->testEnvironment->Init();
   }
   TEST_F(ClickCommand_ViewTests, Click_Button_given_when_click_Ok_then_)
   {
@@ -28,7 +28,7 @@ namespace commands
   }
   void ClickCommand_ViewTests::BuildSut()
   {
-    this->sut = this->testSetup->BuildSut();
+    this->sut = this->testEnvironment->BuildSut();
   }
   void ClickCommand_ViewTests::when_click_Ok()
   {

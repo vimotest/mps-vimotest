@@ -6,13 +6,13 @@ class LowLevelFields_ViewTests {
   
   private sut : LowLevelFields_ViewModel  ;
   
-  private testSetup : LowLevelFields_ViewModelTestSetup  ;
+  private testEnvironment : LowLevelFields_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new LowLevelFields_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new LowLevelFields_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -48,7 +48,7 @@ class LowLevelFields_ViewTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

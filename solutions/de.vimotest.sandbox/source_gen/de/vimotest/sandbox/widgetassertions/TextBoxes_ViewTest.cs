@@ -10,13 +10,13 @@ public class TextBoxes_ViewTest
 {
     private widgetassertions.TextBoxes_ViewModel sut;
 
-    private widgetassertions.TextBoxes_ViewModelTestSetup testSetup;
+    private widgetassertions.TextBoxes_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new widgetassertions.TextBoxes_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new widgetassertions.TextBoxes_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -53,7 +53,7 @@ public class TextBoxes_ViewTest
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     public virtual void given_empty_context()

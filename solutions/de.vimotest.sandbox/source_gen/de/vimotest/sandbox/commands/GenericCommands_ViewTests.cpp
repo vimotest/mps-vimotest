@@ -1,9 +1,9 @@
 #include <gtest/gtest.h>
 #include <memory>
-#include "GenericCommands_ViewModelTestSetup.h"
+#include "GenericCommands_ViewModelTestEnvironment.h"
 #include <string>
 #include "GenericCommands_ViewModel.h"
-#include "GenericCommands_ViewModelTestSetupImpl.h"
+#include "GenericCommands_ViewModelTestEnvironmentImpl.h"
 
 namespace commands
 {
@@ -11,7 +11,7 @@ namespace commands
   {
   public:
     std::shared_ptr<GenericCommands_ViewModel> sut;
-    std::shared_ptr<GenericCommands_ViewModelTestSetup> testSetup;
+    std::shared_ptr<GenericCommands_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
     virtual void when_MyCommand();
   protected:
@@ -19,8 +19,8 @@ namespace commands
   };
   void GenericCommands_ViewTests::SetUp()
   {
-    this->testSetup = std::make_shared<GenericCommands_ViewModelTestSetupImpl>();
-    this->testSetup->Init();
+    this->testEnvironment = std::make_shared<GenericCommands_ViewModelTestEnvironmentImpl>();
+    this->testEnvironment->Init();
   }
   TEST_F(GenericCommands_ViewTests, Generic_Commands_Call_given_when_MyCommand_then_)
   {
@@ -29,7 +29,7 @@ namespace commands
   }
   void GenericCommands_ViewTests::BuildSut()
   {
-    this->sut = this->testSetup->BuildSut();
+    this->sut = this->testEnvironment->BuildSut();
   }
   void GenericCommands_ViewTests::when_MyCommand()
   {

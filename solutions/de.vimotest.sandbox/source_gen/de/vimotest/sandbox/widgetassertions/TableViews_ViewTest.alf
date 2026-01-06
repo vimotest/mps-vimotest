@@ -6,13 +6,13 @@ class TableViews_ViewTest {
   
   private sut : TableViews_ViewModel  ;
   
-  private testSetup : TableViews_ViewModelTestSetup  ;
+  private testEnvironment : TableViews_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new TableViews_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new TableViews_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -39,7 +39,7 @@ class TableViews_ViewTest {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

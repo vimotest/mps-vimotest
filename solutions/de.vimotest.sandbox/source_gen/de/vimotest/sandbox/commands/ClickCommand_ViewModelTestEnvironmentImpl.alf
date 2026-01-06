@@ -1,0 +1,14 @@
+namespace commands ;
+
+
+
+class ClickCommand_ViewModelTestEnvironmentImpl specializes ClickCommand_ViewModelTestEnvironment {
+  
+  public Init (  ) {    
+  }
+  
+  public BuildSut (  ) : ClickCommand_ViewModel  {
+    return null;
+
+  }
+}

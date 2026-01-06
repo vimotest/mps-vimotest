@@ -6,13 +6,13 @@ class ClickCommand_ViewTests {
   
   private sut : ClickCommand_ViewModel  ;
   
-  private testSetup : ClickCommand_ViewModelTestSetup  ;
+  private testEnvironment : ClickCommand_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new ClickCommand_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new ClickCommand_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -26,7 +26,7 @@ class ClickCommand_ViewTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

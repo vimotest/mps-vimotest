@@ -1,9 +1,9 @@
 #include <gtest/gtest.h>
 #include <memory>
-#include "XmlFileContext_ViewModelTestSetup.h"
+#include "XmlFileContext_ViewModelTestEnvironment.h"
 #include <string>
 #include "XmlFileContext_ViewModel.h"
-#include "XmlFileContext_ViewModelTestSetupImpl.h"
+#include "XmlFileContext_ViewModelTestEnvironmentImpl.h"
 
 namespace context
 {
@@ -11,7 +11,7 @@ namespace context
   {
   public:
     std::shared_ptr<XmlFileContext_ViewModel> sut;
-    std::shared_ptr<XmlFileContext_ViewModelTestSetup> testSetup;
+    std::shared_ptr<XmlFileContext_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
     std::string XmlFile_NoExternalFile = R"(<MyXML>
   <Inner></Inner>
@@ -23,8 +23,8 @@ namespace context
   };
   void XmlFileContext_ViewTests::SetUp()
   {
-    this->testSetup = std::make_shared<XmlFileContext_ViewModelTestSetupImpl>();
-    this->testSetup->Init();
+    this->testEnvironment = std::make_shared<XmlFileContext_ViewModelTestEnvironmentImpl>();
+    this->testEnvironment->Init();
   }
   TEST_F(XmlFileContext_ViewTests, XmlFile_NoExternalFile_given_XmlFile_NoExternalFile_when_then_)
   {
@@ -38,14 +38,14 @@ namespace context
   }
   void XmlFileContext_ViewTests::BuildSut()
   {
-    this->sut = this->testSetup->BuildSut();
+    this->sut = this->testEnvironment->BuildSut();
   }
   void XmlFileContext_ViewTests::given_XmlFile_NoExternalFile()
   {
-    this->testSetup->SetXmlFileContext(this->XmlFile_NoExternalFile);
+    this->testEnvironment->SetXmlFileContext(this->XmlFile_NoExternalFile);
   }
   void XmlFileContext_ViewTests::given_XmlFile_ExternalFile()
   {
-    this->testSetup->SetXmlExternalFileContext(std::string("XmlFile_ExternalFile.xml"));
+    this->testEnvironment->SetXmlExternalFileContext(std::string("XmlFile_ExternalFile.xml"));
   }
 }

@@ -2521,9 +2521,9 @@
     <node concept="3Tm1VV" id="6RKU0sdiTy0" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="7NXUkdT9lK0">
-    <property role="TrG5h" value="TestSetupGenerationHelper" />
+    <property role="TrG5h" value="TestEnvironmentGenerationHelper" />
     <node concept="2YIFZL" id="7NXUkdT9sLN" role="jymVt">
-      <property role="TrG5h" value="isTestSetupGeneratedForTestSuite" />
+      <property role="TrG5h" value="isTestEnvironmentGeneratedForTestSuite" />
       <node concept="3clFbS" id="7NXUkdT9sLP" role="3clF47">
         <node concept="3clFbF" id="7NXUkdT9sLY" role="3cqZAp">
           <node concept="17QLQc" id="7NXUkdT9sLZ" role="3clFbG">
@@ -2558,7 +2558,7 @@
       <node concept="3Tm1VV" id="7NXUkdT9sM5" role="1B3o_S" />
     </node>
     <node concept="2YIFZL" id="7NXUkdT9G9t" role="jymVt">
-      <property role="TrG5h" value="getPrimaryTestSuiteInputForTestSetup" />
+      <property role="TrG5h" value="getPrimaryTestSuiteInputForTestEnvironment" />
       <node concept="3clFbS" id="7NXUkdT9G9u" role="3clF47">
         <node concept="3SKdUt" id="7NXUkdT2d8j" role="3cqZAp">
           <node concept="1PaTwC" id="7NXUkdT2d8k" role="1aUNEU">
@@ -2678,7 +2678,7 @@
       </node>
     </node>
     <node concept="2YIFZL" id="7NXUkdT9u0l" role="jymVt">
-      <property role="TrG5h" value="setTestSuiteAsInputForTestSetup" />
+      <property role="TrG5h" value="setTestSuiteAsInputForTestEnvironment" />
       <node concept="3clFbS" id="7NXUkdT9u0m" role="3clF47">
         <node concept="3clFbF" id="7NXUkdSVc5q" role="3cqZAp">
           <node concept="37vLTI" id="7NXUkdSVkdy" role="3clFbG">
@@ -2730,11 +2730,11 @@
                 <ref role="3cqZAo" node="7NXUkdT9nLq" resolve="node" />
               </node>
               <node concept="2qgKlT" id="7NXUkdT9our" role="2OqNvi">
-                <ref role="37wK5l" to="fwln:4Pj3bOmvh0Z" resolve="getEffectiveTestSetupName" />
+                <ref role="37wK5l" to="fwln:4Pj3bOmvh0Z" resolve="getEffectiveTestEnvironmentName" />
               </node>
             </node>
             <node concept="Xl_RD" id="7NXUkdT9ous" role="3uHU7B">
-              <property role="Xl_RC" value="testsetup-generated-" />
+              <property role="Xl_RC" value="testenv-generated-" />
             </node>
           </node>
         </node>

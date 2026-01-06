@@ -6,13 +6,13 @@ class ComboBoxes_ViewTest {
   
   private sut : ComboBoxes_ViewModel  ;
   
-  private testSetup : ComboBoxes_ViewModelTestSetup  ;
+  private testEnvironment : ComboBoxes_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new ComboBoxes_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new ComboBoxes_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -44,7 +44,7 @@ class ComboBoxes_ViewTest {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

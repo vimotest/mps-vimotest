@@ -6,13 +6,13 @@ class ContextReference_ViewTests {
   
   private sut : ContextReference_ViewModel  ;
   
-  private testSetup : ContextReference_ViewModelTestSetup  ;
+  private testEnvironment : ContextReference_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new ContextReference_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new ContextReference_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -33,7 +33,7 @@ class ContextReference_ViewTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   
@@ -44,12 +44,12 @@ class ContextReference_ViewTests {
   private baseContext : String = "My Context";
   
   public given_baseContext (  ) {
-    this.testSetup.SetSimpleStringContext ( this.baseContext );
+    this.testEnvironment.SetSimpleStringContext ( this.baseContext );
 
   }
   
   public given_baseContext_1 (  ) {
-    this.testSetup.SetSimpleStringContext ( this.baseContext );
+    this.testEnvironment.SetSimpleStringContext ( this.baseContext );
 
   }
   

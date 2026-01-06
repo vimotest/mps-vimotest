@@ -1,8 +1,8 @@
 <Project>  
   <ItemGroup>    
     <Compile Include="$(MSBuildThisFileDirectory)de/vimotest/examples/loginview/LoginViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)de/vimotest/examples/loginview/LoginViewModelTestSetup.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)de/vimotest/examples/loginview/LoginViewModelTestSetupImpl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)de/vimotest/examples/loginview/LoginViewModelTestEnvironment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)de/vimotest/examples/loginview/LoginViewModelTestEnvironmentImpl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)de/vimotest/examples/loginview/LoginViewModelTests.cs" />
   </ItemGroup>
 </Project>

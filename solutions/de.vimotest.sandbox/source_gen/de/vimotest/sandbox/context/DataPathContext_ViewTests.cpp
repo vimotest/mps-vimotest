@@ -1,9 +1,9 @@
 #include <gtest/gtest.h>
 #include <memory>
-#include "DataPathContext_ViewModelTestSetup.h"
+#include "DataPathContext_ViewModelTestEnvironment.h"
 #include <string>
 #include "DataPathContext_ViewModel.h"
-#include "DataPathContext_ViewModelTestSetupImpl.h"
+#include "DataPathContext_ViewModelTestEnvironmentImpl.h"
 
 namespace context
 {
@@ -11,7 +11,7 @@ namespace context
   {
   public:
     std::shared_ptr<DataPathContext_ViewModel> sut;
-    std::shared_ptr<DataPathContext_ViewModelTestSetup> testSetup;
+    std::shared_ptr<DataPathContext_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
     virtual void given_my_element();
     virtual void given_path_resource_elements_myelement();
@@ -20,8 +20,8 @@ namespace context
   };
   void DataPathContext_ViewTests::SetUp()
   {
-    this->testSetup = std::make_shared<DataPathContext_ViewModelTestSetupImpl>();
-    this->testSetup->Init();
+    this->testEnvironment = std::make_shared<DataPathContext_ViewModelTestEnvironmentImpl>();
+    this->testEnvironment->Init();
   }
   TEST_F(DataPathContext_ViewTests, Data_Path_Context_given_my_element_when_then_)
   {
@@ -35,14 +35,14 @@ namespace context
   }
   void DataPathContext_ViewTests::BuildSut()
   {
-    this->sut = this->testSetup->BuildSut();
+    this->sut = this->testEnvironment->BuildSut();
   }
   void DataPathContext_ViewTests::given_my_element()
   {
-    this->testSetup->SetDataPathContext(std::string("resource:/elements/myelement"));
+    this->testEnvironment->SetDataPathContext(std::string("resource:/elements/myelement"));
   }
   void DataPathContext_ViewTests::given_path_resource_elements_myelement()
   {
-    this->testSetup->SetDataPathContext(std::string("resource:/elements/myelement"));
+    this->testEnvironment->SetDataPathContext(std::string("resource:/elements/myelement"));
   }
 }

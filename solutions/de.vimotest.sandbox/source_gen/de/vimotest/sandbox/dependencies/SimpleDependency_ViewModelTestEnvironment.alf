@@ -1,0 +1,14 @@
+namespace dependencies ;
+
+
+
+abstract class SimpleDependency_ViewModelTestEnvironment {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : SimpleDependency_ViewModel  ;
+  
+  public abstract getMessageBus (  ) : MessageBus  ;
+  
+  public abstract getLogger (  ) : LoggerSpy  ;
+}

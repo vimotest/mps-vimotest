@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <memory>
-#include "TreeViews_ViewModelTestSetup.h"
+#include "TreeViews_ViewModelTestEnvironment.h"
 #include "TreeViews_ViewModel.h"
 #include <vector>
 #include "TreeViews_ViewModelMyTreeViewElementsRow.h"
@@ -8,7 +8,7 @@
 #include "TreeViews_ViewModelMyStringRowHandlesRow.h"
 #include "TreeViews_ViewModelMyParentIndexRowHandlesRow.h"
 #include "TreeViews_ViewModelMyParentStringRowHandlesRow.h"
-#include "TreeViews_ViewModelTestSetupImpl.h"
+#include "TreeViews_ViewModelTestEnvironmentImpl.h"
 
 namespace widgetassertions
 {
@@ -16,7 +16,7 @@ namespace widgetassertions
   {
   public:
     std::shared_ptr<TreeViews_ViewModel> sut;
-    std::shared_ptr<TreeViews_ViewModelTestSetup> testSetup;
+    std::shared_ptr<TreeViews_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
     virtual void given_empty_context();
     virtual void then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible();
@@ -29,8 +29,8 @@ namespace widgetassertions
   };
   void TreeViews_ViewTest::SetUp()
   {
-    this->testSetup = std::make_shared<TreeViews_ViewModelTestSetupImpl>();
-    this->testSetup->Init();
+    this->testEnvironment = std::make_shared<TreeViews_ViewModelTestEnvironmentImpl>();
+    this->testEnvironment->Init();
   }
   TEST_F(TreeViews_ViewTest, My_Scenario_given_empty_context_when_then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1_and_MyParentIndexRowHandles_has_4_rows_and_MyParentStringRowHandles_has_4_rows)
   {
@@ -49,7 +49,7 @@ namespace widgetassertions
   }
   void TreeViews_ViewTest::BuildSut()
   {
-    this->sut = this->testSetup->BuildSut();
+    this->sut = this->testEnvironment->BuildSut();
   }
   void TreeViews_ViewTest::given_empty_context()
   {

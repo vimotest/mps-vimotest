@@ -1,11 +1,11 @@
 #include <gtest/gtest.h>
 #include <memory>
-#include "SimpleDependency_ViewModelTestSetup.h"
+#include "SimpleDependency_ViewModelTestEnvironment.h"
 #include <string>
 #include "MessageBus.h"
 #include "Logger.h"
 #include "SimpleDependency_ViewModel.h"
-#include "SimpleDependency_ViewModelTestSetupImpl.h"
+#include "SimpleDependency_ViewModelTestEnvironmentImpl.h"
 
 namespace dependencies
 {
@@ -13,7 +13,7 @@ namespace dependencies
   {
   public:
     std::shared_ptr<SimpleDependency_ViewModel> sut;
-    std::shared_ptr<SimpleDependency_ViewModelTestSetup> testSetup;
+    std::shared_ptr<SimpleDependency_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
     virtual void when_OnMessage();
     virtual void when_Log();
@@ -22,8 +22,8 @@ namespace dependencies
   };
   void SimpleDependency_ViewModelTests::SetUp()
   {
-    this->testSetup = std::make_shared<SimpleDependency_ViewModelTestSetupImpl>();
-    this->testSetup->Init();
+    this->testEnvironment = std::make_shared<SimpleDependency_ViewModelTestEnvironmentImpl>();
+    this->testEnvironment->Init();
   }
   TEST_F(SimpleDependency_ViewModelTests, Invoke_Direct_Dependency_given_when_OnMessage_then_)
   {
@@ -37,14 +37,14 @@ namespace dependencies
   }
   void SimpleDependency_ViewModelTests::BuildSut()
   {
-    this->sut = this->testSetup->BuildSut();
+    this->sut = this->testEnvironment->BuildSut();
   }
   void SimpleDependency_ViewModelTests::when_OnMessage()
   {
-    this->testSetup->getMessageBus()->OnMessage(0, { std::string("A"), std::string("B") });
+    this->testEnvironment->getMessageBus()->OnMessage(0, { std::string("A"), std::string("B") });
   }
   void SimpleDependency_ViewModelTests::when_Log()
   {
-    this->testSetup->getLogger()->Log(std::string("my message"));
+    this->testEnvironment->getLogger()->Log(std::string("my message"));
   }
 }

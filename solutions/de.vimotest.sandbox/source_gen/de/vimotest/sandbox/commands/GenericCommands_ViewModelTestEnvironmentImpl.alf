@@ -1,0 +1,14 @@
+namespace commands ;
+
+
+
+class GenericCommands_ViewModelTestEnvironmentImpl specializes GenericCommands_ViewModelTestEnvironment {
+  
+  public Init (  ) {    
+  }
+  
+  public BuildSut (  ) : GenericCommands_ViewModel  {
+    return null;
+
+  }
+}

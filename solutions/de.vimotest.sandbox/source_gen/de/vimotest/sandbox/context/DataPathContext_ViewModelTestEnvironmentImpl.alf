@@ -1,0 +1,17 @@
+namespace context ;
+
+
+
+class DataPathContext_ViewModelTestEnvironmentImpl specializes DataPathContext_ViewModelTestEnvironment {
+  
+  public Init (  ) {    
+  }
+  
+  public SetDataPathContext (   in contextPath: String  ) {    
+  }
+  
+  public BuildSut (  ) : DataPathContext_ViewModel  {
+    return null;
+
+  }
+}

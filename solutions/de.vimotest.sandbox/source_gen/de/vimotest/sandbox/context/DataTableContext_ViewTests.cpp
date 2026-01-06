@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
 #include <memory>
-#include "DataTableContext_ViewModelTestSetup.h"
+#include "DataTableContext_ViewModelTestEnvironment.h"
 #include "DataTableContext_ViewModel.h"
-#include "DataTableContext_ViewModelTestSetupImpl.h"
+#include "DataTableContext_ViewModelTestEnvironmentImpl.h"
 #include <string>
 
 namespace context
@@ -11,7 +11,7 @@ namespace context
   {
   public:
     std::shared_ptr<DataTableContext_ViewModel> sut;
-    std::shared_ptr<DataTableContext_ViewModelTestSetup> testSetup;
+    std::shared_ptr<DataTableContext_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
     std::string dataTableCustomSetter = R"(| id | name |
 | 0 | A |)";
@@ -34,8 +34,8 @@ namespace context
   };
   void DataTableContext_ViewTests::SetUp()
   {
-    this->testSetup = std::make_shared<DataTableContext_ViewModelTestSetupImpl>();
-    this->testSetup->Init();
+    this->testEnvironment = std::make_shared<DataTableContext_ViewModelTestEnvironmentImpl>();
+    this->testEnvironment->Init();
   }
   TEST_F(DataTableContext_ViewTests, DataTable_Context_Custom_Setter_given_dataTableCustomSetter_when_then_)
   {
@@ -59,22 +59,22 @@ namespace context
   }
   void DataTableContext_ViewTests::BuildSut()
   {
-    this->sut = this->testSetup->BuildSut();
+    this->sut = this->testEnvironment->BuildSut();
   }
   void DataTableContext_ViewTests::given_dataTableCustomSetter()
   {
-    this->testSetup->SetIdAndName(this->dataTableCustomSetter);
+    this->testEnvironment->SetIdAndName(this->dataTableCustomSetter);
   }
   void DataTableContext_ViewTests::given_dataTableToString()
   {
-    this->testSetup->SetDataTableString(this->dataTableToString);
+    this->testEnvironment->SetDataTableString(this->dataTableToString);
   }
   void DataTableContext_ViewTests::given_dataTableToJson()
   {
-    this->testSetup->SetDataTableJson(this->dataTableToJson);
+    this->testEnvironment->SetDataTableJson(this->dataTableToJson);
   }
   void DataTableContext_ViewTests::given_dataTableToXml()
   {
-    this->testSetup->SetDataTableXml(this->dataTableToXml);
+    this->testEnvironment->SetDataTableXml(this->dataTableToXml);
   }
 }

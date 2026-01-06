@@ -9,13 +9,13 @@ public class ClickCommand_ViewTests
 {
     private commands.ClickCommand_ViewModel sut;
 
-    private commands.ClickCommand_ViewModelTestSetup testSetup;
+    private commands.ClickCommand_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new commands.ClickCommand_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new commands.ClickCommand_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -27,7 +27,7 @@ public class ClickCommand_ViewTests
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     public virtual void when_click_Ok()

@@ -10,13 +10,13 @@ public class ListViews_ViewTest
 {
     private widgetassertions.ListViews_ViewModel sut;
 
-    private widgetassertions.ListViews_ViewModelTestSetup testSetup;
+    private widgetassertions.ListViews_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new widgetassertions.ListViews_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new widgetassertions.ListViews_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -56,7 +56,7 @@ public class ListViews_ViewTest
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     public virtual void given_empty_context()

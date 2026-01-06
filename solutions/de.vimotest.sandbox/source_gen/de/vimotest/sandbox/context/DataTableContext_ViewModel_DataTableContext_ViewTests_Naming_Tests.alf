@@ -6,13 +6,13 @@ class DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests {
   
   private sut : DataTableContext_ViewModel  ;
   
-  private testSetup : DataTableContext_ViewModelTestSetup  ;
+  private testEnvironment : DataTableContext_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new DataTableContext_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new DataTableContext_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -49,7 +49,7 @@ class DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   
@@ -60,26 +60,26 @@ class DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests {
   private id_0_name_A : String = "| id | name |\n| 0 | A |";
   
   public given_id_0_name_A (  ) {
-    this.testSetup.SetDataTableString ( this.id_0_name_A );
+    this.testEnvironment.SetDataTableString ( this.id_0_name_A );
 
   }
   
   private data : String = "| id | name |\n| 0 | A |";
   
   public given_data (  ) {
-    this.testSetup.SetDataTableString ( this.data );
+    this.testEnvironment.SetDataTableString ( this.data );
 
   }
   
   private data1 : String = "| id | name |\n| 0 | A |";
   
   public given_data1 (  ) {
-    this.testSetup.SetDataTableString ( this.data1 );
+    this.testEnvironment.SetDataTableString ( this.data1 );
 
   }
   
   public given_data_1 (  ) {
-    this.testSetup.SetDataTableString ( this.data );
+    this.testEnvironment.SetDataTableString ( this.data );
 
   }
   

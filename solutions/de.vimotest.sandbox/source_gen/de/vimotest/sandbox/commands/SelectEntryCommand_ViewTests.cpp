@@ -1,12 +1,12 @@
 #include <gtest/gtest.h>
 #include <memory>
-#include "SelectEntryCommand_ViewModelTestSetup.h"
+#include "SelectEntryCommand_ViewModelTestEnvironment.h"
 #include <string>
 #include "SelectEntryCommand_ViewModel.h"
 #include "SelectEntryCommand_ViewModelMyOptionsOption.h"
 #include <vector>
 #include <optional>
-#include "SelectEntryCommand_ViewModelTestSetupImpl.h"
+#include "SelectEntryCommand_ViewModelTestEnvironmentImpl.h"
 
 namespace commands
 {
@@ -14,7 +14,7 @@ namespace commands
   {
   public:
     std::shared_ptr<SelectEntryCommand_ViewModel> sut;
-    std::shared_ptr<SelectEntryCommand_ViewModelTestSetup> testSetup;
+    std::shared_ptr<SelectEntryCommand_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
     virtual void when_select_entry_C_in_MyElements();
     virtual void when_select_entry_B_in_MyOptions();
@@ -24,8 +24,8 @@ namespace commands
   };
   void SelectEntryCommand_ViewTests::SetUp()
   {
-    this->testSetup = std::make_shared<SelectEntryCommand_ViewModelTestSetupImpl>();
-    this->testSetup->Init();
+    this->testEnvironment = std::make_shared<SelectEntryCommand_ViewModelTestEnvironmentImpl>();
+    this->testEnvironment->Init();
   }
   TEST_F(SelectEntryCommand_ViewTests, Select_Entry_Combobox_Call_given_when_select_entry_C_in_MyElements_then_MyElements_has_3_entries_and)
   {
@@ -40,7 +40,7 @@ namespace commands
   }
   void SelectEntryCommand_ViewTests::BuildSut()
   {
-    this->sut = this->testSetup->BuildSut();
+    this->sut = this->testEnvironment->BuildSut();
   }
   void SelectEntryCommand_ViewTests::when_select_entry_C_in_MyElements()
   {

@@ -1,0 +1,14 @@
+namespace commands ;
+
+
+
+class LoadCommand_ViewModelTestEnvironmentImpl specializes LoadCommand_ViewModelTestEnvironment {
+  
+  public Init (  ) {    
+  }
+  
+  public BuildSut (  ) : LoadCommand_ViewModel  {
+    return null;
+
+  }
+}

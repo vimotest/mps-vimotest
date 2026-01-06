@@ -1,0 +1,17 @@
+namespace context ;
+
+
+
+class XmlElementContext_ViewModelTestEnvironmentImpl specializes XmlElementContext_ViewModelTestEnvironment {
+  
+  public Init (  ) {    
+  }
+  
+  public SetXmlElementContext (   in xml: String  ) {    
+  }
+  
+  public BuildSut (  ) : XmlElementContext_ViewModel  {
+    return null;
+
+  }
+}

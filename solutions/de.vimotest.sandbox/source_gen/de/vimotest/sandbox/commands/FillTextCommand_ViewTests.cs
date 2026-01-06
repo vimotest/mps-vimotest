@@ -9,13 +9,13 @@ public class FillTextCommand_ViewTests
 {
     private commands.FillTextCommand_ViewModel sut;
 
-    private commands.FillTextCommand_ViewModelTestSetup testSetup;
+    private commands.FillTextCommand_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new commands.FillTextCommand_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new commands.FillTextCommand_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -34,7 +34,7 @@ public class FillTextCommand_ViewTests
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     public virtual void when_fill_Changed_in_MyValue()

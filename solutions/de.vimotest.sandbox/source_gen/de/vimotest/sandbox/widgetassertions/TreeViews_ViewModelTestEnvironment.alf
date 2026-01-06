@@ -1,0 +1,12 @@
+namespace widgetassertions ;
+
+
+
+abstract class TreeViews_ViewModelTestEnvironment {
+  
+  public abstract Init (  ) ;
+  
+  public abstract SetEmptyContext (  ) ;
+  
+  public abstract BuildSut (  ) : TreeViews_ViewModel  ;
+}

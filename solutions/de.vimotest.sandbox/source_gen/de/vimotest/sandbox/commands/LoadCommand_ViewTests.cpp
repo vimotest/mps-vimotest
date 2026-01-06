@@ -1,9 +1,9 @@
 #include <gtest/gtest.h>
 #include <memory>
-#include "LoadCommand_ViewModelTestSetup.h"
+#include "LoadCommand_ViewModelTestEnvironment.h"
 #include "LoadCommand_ViewModel.h"
 #include <string>
-#include "LoadCommand_ViewModelTestSetupImpl.h"
+#include "LoadCommand_ViewModelTestEnvironmentImpl.h"
 
 namespace commands
 {
@@ -11,7 +11,7 @@ namespace commands
   {
   public:
     std::shared_ptr<LoadCommand_ViewModel> sut;
-    std::shared_ptr<LoadCommand_ViewModelTestSetup> testSetup;
+    std::shared_ptr<LoadCommand_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
     virtual void when_LoadView();
     virtual void when_LoadViewWithName();
@@ -20,8 +20,8 @@ namespace commands
   };
   void LoadCommand_ViewTests::SetUp()
   {
-    this->testSetup = std::make_shared<LoadCommand_ViewModelTestSetupImpl>();
-    this->testSetup->Init();
+    this->testEnvironment = std::make_shared<LoadCommand_ViewModelTestEnvironmentImpl>();
+    this->testEnvironment->Init();
   }
   TEST_F(LoadCommand_ViewTests, Load_Commands_Call_given_when_LoadView_then_)
   {
@@ -35,7 +35,7 @@ namespace commands
   }
   void LoadCommand_ViewTests::BuildSut()
   {
-    this->sut = this->testSetup->BuildSut();
+    this->sut = this->testEnvironment->BuildSut();
   }
   void LoadCommand_ViewTests::when_LoadView()
   {

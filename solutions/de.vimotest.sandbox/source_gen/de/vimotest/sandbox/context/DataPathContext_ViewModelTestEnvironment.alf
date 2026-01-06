@@ -1,0 +1,12 @@
+namespace context ;
+
+
+
+abstract class DataPathContext_ViewModelTestEnvironment {
+  
+  public abstract Init (  ) ;
+  
+  public abstract SetDataPathContext (   in contextPath: String  ) ;
+  
+  public abstract BuildSut (  ) : DataPathContext_ViewModel  ;
+}

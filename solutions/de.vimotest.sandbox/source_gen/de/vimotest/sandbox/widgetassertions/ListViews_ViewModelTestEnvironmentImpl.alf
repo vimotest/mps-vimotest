@@ -1,0 +1,17 @@
+namespace widgetassertions ;
+
+
+
+class ListViews_ViewModelTestEnvironmentImpl specializes ListViews_ViewModelTestEnvironment {
+  
+  public Init (  ) {    
+  }
+  
+  public SetEmptyContext (  ) {    
+  }
+  
+  public BuildSut (  ) : ListViews_ViewModel  {
+    return null;
+
+  }
+}

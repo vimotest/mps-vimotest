@@ -6,13 +6,13 @@ class StringContext_ViewTests {
   
   private sut : StringContext_ViewModel  ;
   
-  private testSetup : StringContext_ViewModelTestSetup  ;
+  private testEnvironment : StringContext_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new StringContext_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new StringContext_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -33,7 +33,7 @@ class StringContext_ViewTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   
@@ -44,14 +44,14 @@ class StringContext_ViewTests {
   private alice_bob_charlie : String = "Alice, Bob, Charlie";
   
   public given_alice_bob_charlie (  ) {
-    this.testSetup.SetSimpleStringContext ( this.alice_bob_charlie );
+    this.testEnvironment.SetSimpleStringContext ( this.alice_bob_charlie );
 
   }
   
   private Alice_Bob_Charlie : String = "Alice, Bob, Charlie";
   
   public given_Alice_Bob_Charlie (  ) {
-    this.testSetup.SetSimpleStringContext ( this.Alice_Bob_Charlie );
+    this.testEnvironment.SetSimpleStringContext ( this.Alice_Bob_Charlie );
 
   }
   

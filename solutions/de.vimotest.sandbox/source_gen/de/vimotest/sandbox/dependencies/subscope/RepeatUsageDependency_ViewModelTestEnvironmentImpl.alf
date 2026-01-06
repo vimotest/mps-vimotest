@@ -1,0 +1,24 @@
+namespace dependencies:: subscope ;
+
+
+
+class RepeatUsageDependency_ViewModelTestEnvironmentImpl specializes RepeatUsageDependency_ViewModelTestEnvironment {
+  
+  public Init (  ) {    
+  }
+  
+  public BuildSut (  ) : RepeatUsageDependency_ViewModel  {
+    return null;
+
+  }
+  
+  public getMessageBus (  ) : MessageBus  {
+    return null;
+
+  }
+  
+  public getLogger (  ) : LoggerSpy  {
+    return null;
+
+  }
+}

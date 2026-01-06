@@ -1,0 +1,14 @@
+namespace commands ;
+
+
+
+class CheckCommand_ViewModelTestEnvironmentImpl specializes CheckCommand_ViewModelTestEnvironment {
+  
+  public Init (  ) {    
+  }
+  
+  public BuildSut (  ) : CheckCommand_ViewModel  {
+    return null;
+
+  }
+}

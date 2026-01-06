@@ -10,13 +10,13 @@ public class SimpleDependency_ViewModelTests
 {
     private dependencies.SimpleDependency_ViewModel sut;
 
-    private dependencies.SimpleDependency_ViewModelTestSetup testSetup;
+    private dependencies.SimpleDependency_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new dependencies.SimpleDependency_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new dependencies.SimpleDependency_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -35,16 +35,16 @@ public class SimpleDependency_ViewModelTests
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     public virtual void when_OnMessage()
     {
-        this.testSetup.getMessageBus().OnMessage(0, new System.Collections.Generic.List<string> { "A", "B" });
+        this.testEnvironment.getMessageBus().OnMessage(0, new System.Collections.Generic.List<string> { "A", "B" });
     }
 
     public virtual void when_Log()
     {
-        this.testSetup.getLogger().Log("my message");
+        this.testEnvironment.getLogger().Log("my message");
     }
 }

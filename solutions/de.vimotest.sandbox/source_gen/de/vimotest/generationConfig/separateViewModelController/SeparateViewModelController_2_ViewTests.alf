@@ -8,13 +8,13 @@ class SeparateViewModelController_2_ViewTests {
   
   private sutViewController : MyViewController  ;
   
-  private testSetup : SeparateViewModelController_ViewModelTestSetup  ;
+  private testEnvironment : SeparateViewModelController_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new SeparateViewModelController_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new SeparateViewModelController_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -34,13 +34,13 @@ class SeparateViewModelController_2_ViewTests {
   
   
   protected BuildSut (  ) {
-    this.sutViewController = this.testSetup.BuildSutViewController (  );
+    this.sutViewController = this.testEnvironment.BuildSutViewController (  );
 
   }
   
   
   protected RetrieveViewModel (  ) {
-    this.sutViewModel = this.testSetup.GetViewModel (  );
+    this.sutViewModel = this.testEnvironment.GetViewModel (  );
 
   }
   

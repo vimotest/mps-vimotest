@@ -1,0 +1,14 @@
+namespace widgetassertions ;
+
+
+
+class LowLevelFields_ViewModelTestEnvironmentImpl specializes LowLevelFields_ViewModelTestEnvironment {
+  
+  public Init (  ) {    
+  }
+  
+  public BuildSut (  ) : LowLevelFields_ViewModel  {
+    return null;
+
+  }
+}

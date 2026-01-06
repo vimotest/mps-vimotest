@@ -10,13 +10,13 @@ public class LowLevelFields_ViewTests
 {
     private widgetassertions.LowLevelFields_ViewModel sut;
 
-    private widgetassertions.LowLevelFields_ViewModelTestSetup testSetup;
+    private widgetassertions.LowLevelFields_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new widgetassertions.LowLevelFields_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new widgetassertions.LowLevelFields_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -46,7 +46,7 @@ public class LowLevelFields_ViewTests
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     public virtual void then_MyBool_is_true()

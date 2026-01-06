@@ -6,13 +6,13 @@ class XmlFileContext_ViewTests {
   
   private sut : XmlFileContext_ViewModel  ;
   
-  private testSetup : XmlFileContext_ViewModelTestSetup  ;
+  private testEnvironment : XmlFileContext_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new XmlFileContext_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new XmlFileContext_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -33,7 +33,7 @@ class XmlFileContext_ViewTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   
@@ -44,12 +44,12 @@ class XmlFileContext_ViewTests {
   private XmlFile_NoExternalFile : String = "<MyXML>  \n  <Inner></Inner>\n</MyXML>";
   
   public given_XmlFile_NoExternalFile (  ) {
-    this.testSetup.SetXmlFileContext ( this.XmlFile_NoExternalFile );
+    this.testEnvironment.SetXmlFileContext ( this.XmlFile_NoExternalFile );
 
   }
   
   public given_XmlFile_ExternalFile (  ) {
-    this.testSetup.SetXmlExternalFileContext ( "XmlFile_ExternalFile.xml" );
+    this.testEnvironment.SetXmlExternalFileContext ( "XmlFile_ExternalFile.xml" );
 
   }
   

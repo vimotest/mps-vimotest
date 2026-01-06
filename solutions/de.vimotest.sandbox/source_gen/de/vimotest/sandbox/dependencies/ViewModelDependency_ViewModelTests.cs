@@ -9,13 +9,13 @@ public class ViewModelDependency_ViewModelTests
 {
     private dependencies.ViewModelDependency_ViewModel sut;
 
-    private dependencies.ViewModelDependency_ViewModelTestSetup testSetup;
+    private dependencies.ViewModelDependency_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new dependencies.ViewModelDependency_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new dependencies.ViewModelDependency_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -27,11 +27,11 @@ public class ViewModelDependency_ViewModelTests
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     public virtual void when_LoadView()
     {
-        this.testSetup.getSimpleDependency_ViewModel().loadView();
+        this.testEnvironment.getSimpleDependency_ViewModel().loadView();
     }
 }

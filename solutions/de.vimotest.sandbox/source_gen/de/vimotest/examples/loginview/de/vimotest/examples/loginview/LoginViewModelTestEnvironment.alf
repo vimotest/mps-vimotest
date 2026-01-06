@@ -1,0 +1,14 @@
+namespace de:: vimotest:: examples:: loginview ;
+
+
+
+abstract class LoginViewModelTestEnvironment {
+  
+  public abstract Init (  ) ;
+  
+  public abstract SetEmptyContext (  ) ;
+  
+  public abstract SetXmlElementContext (   in xml: String  ) ;
+  
+  public abstract BuildSut (  ) : LoginViewModel  ;
+}

@@ -10,13 +10,13 @@ public class SelectRowCommand_ViewTests
 {
     private commands.SelectRowCommand_ViewModel sut;
 
-    private commands.SelectRowCommand_ViewModelTestSetup testSetup;
+    private commands.SelectRowCommand_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new commands.SelectRowCommand_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new commands.SelectRowCommand_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -77,7 +77,7 @@ public class SelectRowCommand_ViewTests
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     public virtual void when_select_row_1_in_MyListViewElements()

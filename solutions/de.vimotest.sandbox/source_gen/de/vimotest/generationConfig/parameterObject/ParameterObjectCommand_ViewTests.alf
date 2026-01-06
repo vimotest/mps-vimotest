@@ -6,13 +6,13 @@ class ParameterObjectCommand_ViewTests {
   
   private sut : ParameterObjectCommand_ViewModel  ;
   
-  private testSetup : ParameterObjectCommand_ViewModelTestSetup  ;
+  private testEnvironment : ParameterObjectCommand_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new ParameterObjectCommand_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new ParameterObjectCommand_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -30,7 +30,7 @@ class ParameterObjectCommand_ViewTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

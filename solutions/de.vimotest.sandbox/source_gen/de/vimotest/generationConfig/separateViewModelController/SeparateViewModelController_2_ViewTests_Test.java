@@ -8,7 +8,7 @@ import org.junit.jupiter.api.BeforeEach;
 public class SeparateViewModelController_2_ViewTests_Test {
   private MyViewModel sutViewModel;
   private MyViewController sutViewController;
-  private SeparateViewModelController_ViewModelTestSetup testSetup;
+  private SeparateViewModelController_ViewModelTestEnvironment testEnvironment;
   @Test
   public void test_MyTest2_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_() throws Exception {
     this.given_empty_context();
@@ -19,18 +19,18 @@ public class SeparateViewModelController_2_ViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.testSetup = new SeparateViewModelController_ViewModelTestSetupImpl();
-    this.testSetup.Init();
+    this.testEnvironment = new SeparateViewModelController_ViewModelTestEnvironmentImpl();
+    this.testEnvironment.Init();
   }
 
 
 
   protected void BuildSut() {
-    this.sutViewController = this.testSetup.BuildSutViewController();
+    this.sutViewController = this.testEnvironment.BuildSutViewController();
   }
 
   protected void RetrieveViewModel() {
-    this.sutViewModel = this.testSetup.GetViewModel();
+    this.sutViewModel = this.testEnvironment.GetViewModel();
   }
 
 

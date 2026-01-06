@@ -1,0 +1,10 @@
+namespace commands ;
+
+
+
+abstract class GenericCommands_ViewModelTestEnvironment {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : GenericCommands_ViewModel  ;
+}

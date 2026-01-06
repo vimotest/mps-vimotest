@@ -6,13 +6,13 @@ class LoadCommand_ViewTests {
   
   private sut : LoadCommand_ViewModel  ;
   
-  private testSetup : LoadCommand_ViewModelTestSetup  ;
+  private testEnvironment : LoadCommand_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new LoadCommand_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new LoadCommand_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -33,7 +33,7 @@ class LoadCommand_ViewTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

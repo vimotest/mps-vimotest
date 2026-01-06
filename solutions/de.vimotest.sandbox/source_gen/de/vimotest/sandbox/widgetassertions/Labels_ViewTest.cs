@@ -10,13 +10,13 @@ public class Labels_ViewTest
 {
     private widgetassertions.Labels_ViewModel sut;
 
-    private widgetassertions.Labels_ViewModelTestSetup testSetup;
+    private widgetassertions.Labels_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new widgetassertions.Labels_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new widgetassertions.Labels_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -76,7 +76,7 @@ public class Labels_ViewTest
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     public virtual void given_empty_context()

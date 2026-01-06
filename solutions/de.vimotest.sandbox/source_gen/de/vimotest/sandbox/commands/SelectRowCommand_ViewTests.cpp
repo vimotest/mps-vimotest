@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <memory>
-#include "SelectRowCommand_ViewModelTestSetup.h"
+#include "SelectRowCommand_ViewModelTestEnvironment.h"
 #include "SelectRowCommand_ViewModel.h"
 #include <string>
 #include <vector>
@@ -11,7 +11,7 @@
 #include "SelectRowCommand_ViewModelMyTreeViewElementsRow.h"
 #include "SelectRowCommand_ViewModelMyStringRowHandleTreeViewElementsRow.h"
 #include "SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow.h"
-#include "SelectRowCommand_ViewModelTestSetupImpl.h"
+#include "SelectRowCommand_ViewModelTestEnvironmentImpl.h"
 
 namespace commands
 {
@@ -19,7 +19,7 @@ namespace commands
   {
   public:
     std::shared_ptr<SelectRowCommand_ViewModel> sut;
-    std::shared_ptr<SelectRowCommand_ViewModelTestSetup> testSetup;
+    std::shared_ptr<SelectRowCommand_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
     virtual void when_select_row_1_in_MyListViewElements();
     virtual void when_select_row_ROW_B_in_MyStringRowHandleListViewElements();
@@ -40,8 +40,8 @@ namespace commands
   };
   void SelectRowCommand_ViewTests::SetUp()
   {
-    this->testSetup = std::make_shared<SelectRowCommand_ViewModelTestSetupImpl>();
-    this->testSetup->Init();
+    this->testEnvironment = std::make_shared<SelectRowCommand_ViewModelTestEnvironmentImpl>();
+    this->testEnvironment->Init();
   }
   TEST_F(SelectRowCommand_ViewTests, Select_Row_ListView_Call_given_when_select_row_1_in_MyListViewElements_then_MyListViewElements_has_2_rows)
   {
@@ -87,7 +87,7 @@ namespace commands
   }
   void SelectRowCommand_ViewTests::BuildSut()
   {
-    this->sut = this->testSetup->BuildSut();
+    this->sut = this->testEnvironment->BuildSut();
   }
   void SelectRowCommand_ViewTests::when_select_row_1_in_MyListViewElements()
   {

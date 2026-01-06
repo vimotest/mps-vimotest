@@ -6,13 +6,13 @@ class RadioButton_ViewTests {
   
   private sut : RadioButton_ViewModel  ;
   
-  private testSetup : RadioButton_ViewModelTestSetup  ;
+  private testEnvironment : RadioButton_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new RadioButton_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new RadioButton_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -40,7 +40,7 @@ class RadioButton_ViewTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

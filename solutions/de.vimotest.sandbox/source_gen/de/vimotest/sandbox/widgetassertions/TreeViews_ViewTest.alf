@@ -6,13 +6,13 @@ class TreeViews_ViewTest {
   
   private sut : TreeViews_ViewModel  ;
   
-  private testSetup : TreeViews_ViewModelTestSetup  ;
+  private testEnvironment : TreeViews_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new TreeViews_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new TreeViews_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -43,7 +43,7 @@ class TreeViews_ViewTest {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

@@ -10,13 +10,13 @@ public class TreeViews_ViewTest
 {
     private widgetassertions.TreeViews_ViewModel sut;
 
-    private widgetassertions.TreeViews_ViewModelTestSetup testSetup;
+    private widgetassertions.TreeViews_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new widgetassertions.TreeViews_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new widgetassertions.TreeViews_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -40,7 +40,7 @@ public class TreeViews_ViewTest
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     public virtual void given_empty_context()

@@ -1,0 +1,12 @@
+namespace dependencies ;
+
+
+
+abstract class ViewModelDependency_ViewModelTestEnvironment {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : ViewModelDependency_ViewModel  ;
+  
+  public abstract getSimpleDependency_ViewModel (  ) : ViewModelDependency_ViewModel  ;
+}

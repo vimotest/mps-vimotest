@@ -9,13 +9,13 @@ public class CheckBoxes_ViewTest
 {
     private widgetassertions.CheckBoxes_ViewModel sut;
 
-    private widgetassertions.CheckBoxes_ViewModelTestSetup testSetup;
+    private widgetassertions.CheckBoxes_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new widgetassertions.CheckBoxes_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new widgetassertions.CheckBoxes_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -46,7 +46,7 @@ public class CheckBoxes_ViewTest
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     public virtual void given_empty_context()

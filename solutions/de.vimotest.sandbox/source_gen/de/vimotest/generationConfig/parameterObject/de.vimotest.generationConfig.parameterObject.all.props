@@ -1,8 +1,8 @@
 <Project>  
   <ItemGroup>    
     <Compile Include="$(MSBuildThisFileDirectory)ParameterObjectCommand_ViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ParameterObjectCommand_ViewModelTestSetup.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ParameterObjectCommand_ViewModelTestSetupImpl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ParameterObjectCommand_ViewModelTestEnvironment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ParameterObjectCommand_ViewModelTestEnvironmentImpl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ParameterObjectCommand_ViewTests.cs" />
   </ItemGroup>
 </Project>

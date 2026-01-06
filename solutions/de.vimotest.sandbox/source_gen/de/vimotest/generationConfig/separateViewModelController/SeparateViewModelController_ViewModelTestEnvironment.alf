@@ -1,0 +1,14 @@
+
+
+
+
+abstract class SeparateViewModelController_ViewModelTestEnvironment {
+  
+  public abstract Init (  ) ;
+  
+  public abstract SetEmptyContext (  ) ;
+  
+  public abstract BuildSutViewController (  ) : MyViewController  ;
+  
+  public abstract GetViewModel (  ) : MyViewModel  ;
+}

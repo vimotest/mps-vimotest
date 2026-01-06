@@ -1,0 +1,26 @@
+namespace context ;
+
+
+
+class DataTableContext_ViewModelTestEnvironmentImpl specializes DataTableContext_ViewModelTestEnvironment {
+  
+  public Init (  ) {    
+  }
+  
+  public SetIdAndName (   in multiLineString: String  ) {    
+  }
+  
+  public SetDataTableString (   in multiLineString: String  ) {    
+  }
+  
+  public SetDataTableJson (   in json: String  ) {    
+  }
+  
+  public SetDataTableXml (   in xml: String  ) {    
+  }
+  
+  public BuildSut (  ) : DataTableContext_ViewModel  {
+    return null;
+
+  }
+}

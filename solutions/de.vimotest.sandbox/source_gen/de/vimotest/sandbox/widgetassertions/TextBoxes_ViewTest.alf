@@ -6,13 +6,13 @@ class TextBoxes_ViewTest {
   
   private sut : TextBoxes_ViewModel  ;
   
-  private testSetup : TextBoxes_ViewModelTestSetup  ;
+  private testEnvironment : TextBoxes_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new TextBoxes_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new TextBoxes_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -55,7 +55,7 @@ class TextBoxes_ViewTest {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

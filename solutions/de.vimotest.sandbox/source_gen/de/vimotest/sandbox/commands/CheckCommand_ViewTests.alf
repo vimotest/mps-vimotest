@@ -6,13 +6,13 @@ class CheckCommand_ViewTests {
   
   private sut : CheckCommand_ViewModel  ;
   
-  private testSetup : CheckCommand_ViewModelTestSetup  ;
+  private testEnvironment : CheckCommand_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new CheckCommand_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new CheckCommand_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -28,7 +28,7 @@ class CheckCommand_ViewTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

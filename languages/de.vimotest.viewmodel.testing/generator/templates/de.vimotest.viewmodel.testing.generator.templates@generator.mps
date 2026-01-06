@@ -737,7 +737,7 @@
     </node>
     <node concept="3lhOvk" id="4Pj3bOmxylW" role="3lj3bC">
       <ref role="30HIoZ" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
-      <ref role="3lhOvi" node="4Pj3bOmxnkc" resolve="root_mapping_TestSetup" />
+      <ref role="3lhOvi" node="4Pj3bOmxnkc" resolve="root_mapping_TestEnvironment" />
       <node concept="30G5F_" id="7NXUkdSVaVw" role="30HLyM">
         <node concept="3clFbS" id="7NXUkdSVaVx" role="2VODD2">
           <node concept="3clFbJ" id="7NXUkdSVhXa" role="3cqZAp">
@@ -747,8 +747,8 @@
               </node>
             </node>
             <node concept="2YIFZM" id="7NXUkdT9t9W" role="3clFbw">
-              <ref role="37wK5l" to="zcip:7NXUkdT9sLN" resolve="isTestSetupGeneratedForTestSuite" />
-              <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="TestSetupGenerationHelper" />
+              <ref role="37wK5l" to="zcip:7NXUkdT9sLN" resolve="isTestEnvironmentGeneratedForTestSuite" />
+              <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="TestEnvironmentGenerationHelper" />
               <node concept="1iwH7S" id="7NXUkdT9tqd" role="37wK5m" />
               <node concept="30H73N" id="7NXUkdT9tGo" role="37wK5m" />
             </node>
@@ -756,8 +756,8 @@
           <node concept="3clFbH" id="7NXUkdT9yMg" role="3cqZAp" />
           <node concept="3clFbF" id="7NXUkdT9y5T" role="3cqZAp">
             <node concept="2YIFZM" id="7NXUkdT9y6D" role="3clFbG">
-              <ref role="37wK5l" to="zcip:7NXUkdT9u0l" resolve="setTestSuiteAsInputForTestSetup" />
-              <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="TestSetupGenerationHelper" />
+              <ref role="37wK5l" to="zcip:7NXUkdT9u0l" resolve="setTestSuiteAsInputForTestEnvironment" />
+              <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="TestEnvironmentGenerationHelper" />
               <node concept="1iwH7S" id="7NXUkdT9yu1" role="37wK5m" />
               <node concept="30H73N" id="7NXUkdT9ynx" role="37wK5m" />
             </node>
@@ -772,15 +772,15 @@
     </node>
     <node concept="3lhOvk" id="3nKDvO$xpAT" role="3lj3bC">
       <ref role="30HIoZ" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
-      <ref role="3lhOvi" node="3nKDvO$wD$V" resolve="root_mapping_TestSetupImpl" />
+      <ref role="3lhOvi" node="3nKDvO$wD$V" resolve="root_mapping_TestEnvironmentImpl" />
       <node concept="30G5F_" id="3nKDvO$xpAU" role="30HLyM">
         <node concept="3clFbS" id="3nKDvO$xpAV" role="2VODD2">
           <node concept="3clFbF" id="3nKDvO$xpB4" role="3cqZAp">
             <node concept="17R0WA" id="3nKDvO$xsSo" role="3clFbG">
               <node concept="30H73N" id="3nKDvO$xt7L" role="3uHU7w" />
               <node concept="2YIFZM" id="3nKDvO$xr0Y" role="3uHU7B">
-                <ref role="37wK5l" to="zcip:7NXUkdT9G9t" resolve="getPrimaryTestSuiteInputForTestSetup" />
-                <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="TestSetupGenerationHelper" />
+                <ref role="37wK5l" to="zcip:7NXUkdT9G9t" resolve="getPrimaryTestSuiteInputForTestEnvironment" />
+                <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="TestEnvironmentGenerationHelper" />
                 <node concept="1iwH7S" id="3nKDvO$xr0Z" role="37wK5m" />
                 <node concept="30H73N" id="3nKDvO$xr10" role="37wK5m" />
               </node>
@@ -836,27 +836,27 @@
       <ref role="2rZz_L" to="28lk:2HeY20H6tuG" resolve="AttributeDefinition" />
     </node>
     <node concept="2rT7sh" id="4Pj3bOmxylV" role="2rTMjI">
-      <property role="TrG5h" value="ViewModelFeatureTestSuite_TestSetup_ClassDefinition" />
+      <property role="TrG5h" value="ViewModelFeatureTestSuite_TestEnvironment_ClassDefinition" />
       <ref role="2rTdP9" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
     </node>
     <node concept="2rT7sh" id="aV2Sa0uTZ8" role="2rTMjI">
-      <property role="TrG5h" value="ViewModelFeatureTestSuite_TestSetup_BuildSut_OperationDefinition" />
+      <property role="TrG5h" value="ViewModelFeatureTestSuite_TestEnvironment_BuildSut_OperationDefinition" />
       <ref role="2rTdP9" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
     </node>
     <node concept="2rT7sh" id="3nKDvO$x7IY" role="2rTMjI">
-      <property role="TrG5h" value="ViewModelFeatureTestSuite_TestSetupImpl_ClassDefinition" />
+      <property role="TrG5h" value="ViewModelFeatureTestSuite_TestEnvironmentImpl_ClassDefinition" />
       <ref role="2rTdP9" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
     </node>
     <node concept="2rT7sh" id="4Pj3bOmxAow" role="2rTMjI">
-      <property role="TrG5h" value="ViewModelFeatureTestSuite_TestSetup_AttributeDefinition" />
+      <property role="TrG5h" value="ViewModelFeatureTestSuite_TestEnvironment_AttributeDefinition" />
       <ref role="2rTdP9" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
       <ref role="2rZz_L" to="28lk:2HeY20H6tuG" resolve="AttributeDefinition" />
     </node>
     <node concept="2rT7sh" id="54nmQxJD6Rr" role="2rTMjI">
-      <property role="TrG5h" value="IReferenceableDependency_TestSetup_getDependency_OperationDefinition" />
+      <property role="TrG5h" value="IReferenceableDependency_TestEnvironment_getDependency_OperationDefinition" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
       <ref role="2rTdP9" to="at53:3kGPU1QcSOP" resolve="IReferenceableDependency" />
     </node>
@@ -896,7 +896,7 @@
       <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
     </node>
     <node concept="2rT7sh" id="P0m5w1mEYt" role="2rTMjI">
-      <property role="TrG5h" value="ITestScenarioAssertion_TestSetup_Additional_OperationDefinition" />
+      <property role="TrG5h" value="ITestScenarioAssertion_TestEnvironment_Additional_OperationDefinition" />
       <ref role="2rTdP9" to="53m0:6fZwY6ifv52" resolve="ITestScenarioAssertion" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
     </node>
@@ -1031,11 +1031,11 @@
         </node>
       </node>
       <node concept="6lMYc" id="4Pj3bOmxAoW" role="PCHHv">
-        <property role="TrG5h" value="testSetup" />
+        <property role="TrG5h" value="testEnvironment" />
         <property role="PCHHn" value="6OepWIVA92M/private" />
         <node concept="3xHE8C" id="4Pj3bOmxAoX" role="3xMlr6">
           <node concept="_vnHe" id="4Pj3bOmxAoY" role="35HzJw">
-            <ref role="3acloq" node="4Pj3bOmxwrC" resolve="root_mapping_TestSetup" />
+            <ref role="3acloq" node="4Pj3bOmxwrC" resolve="root_mapping_TestEnvironment" />
             <node concept="1ZhdrF" id="4Pj3bOmxAoZ" role="lGtFl">
               <property role="2qtEX8" value="nameRef" />
               <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
@@ -1048,8 +1048,8 @@
                         <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
                       </node>
                       <node concept="2YIFZM" id="7NXUkdTaom6" role="33vP2m">
-                        <ref role="37wK5l" to="zcip:7NXUkdT9G9t" resolve="getPrimaryTestSuiteInputForTestSetup" />
-                        <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="TestSetupGenerationHelper" />
+                        <ref role="37wK5l" to="zcip:7NXUkdT9G9t" resolve="getPrimaryTestSuiteInputForTestEnvironment" />
+                        <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="TestEnvironmentGenerationHelper" />
                         <node concept="1iwH7S" id="7NXUkdTasFh" role="37wK5m" />
                         <node concept="30H73N" id="7NXUkdTasEU" role="37wK5m" />
                       </node>
@@ -1059,7 +1059,7 @@
                     <node concept="2OqwBi" id="4Pj3bOmxAp3" role="3clFbG">
                       <node concept="1iwH7S" id="4Pj3bOmxAp4" role="2Oq$k0" />
                       <node concept="1iwH70" id="4Pj3bOmxAp5" role="2OqNvi">
-                        <ref role="1iwH77" node="4Pj3bOmxylV" resolve="ViewModelFeatureTestSuite_TestSetup_ClassDefinition" />
+                        <ref role="1iwH77" node="4Pj3bOmxylV" resolve="ViewModelFeatureTestSuite_TestEnvironment_ClassDefinition" />
                         <node concept="37vLTw" id="7NXUkdT37C0" role="1iwH7V">
                           <ref role="3cqZAo" node="7NXUkdT1N9d" resolve="primaryTestSuite" />
                         </node>
@@ -1072,7 +1072,7 @@
           </node>
         </node>
         <node concept="2ZBi8u" id="4Pj3bOmxAp9" role="lGtFl">
-          <ref role="2rW$FS" node="4Pj3bOmxAow" resolve="ViewModelFeatureTestSuite_TestSetup_AttributeDefinition" />
+          <ref role="2rW$FS" node="4Pj3bOmxAow" resolve="ViewModelFeatureTestSuite_TestEnvironment_AttributeDefinition" />
         </node>
       </node>
       <node concept="8qQDt" id="4Pj3bOmEuHC" role="PCHHv" />
@@ -1086,14 +1086,14 @@
                 <node concept="32Pqhl" id="4Pj3bOmxEU_" role="3122rd">
                   <node concept="_iR_j" id="4Pj3bOmxEUm" role="32Men7" />
                   <node concept="_vnHe" id="4Pj3bOmxG5I" role="32Men1">
-                    <ref role="3acloq" node="4Pj3bOmxAoW" resolve="testSetup" />
+                    <ref role="3acloq" node="4Pj3bOmxAoW" resolve="testEnvironment" />
                   </node>
                 </node>
               </node>
               <node concept="31diN3" id="4Pj3bOmxHYz" role="315$E5">
                 <node concept="_vnHb" id="4Pj3bOmxHY$" role="31diN2">
                   <node concept="_vnHe" id="4Pj3bOmxKiy" role="35HzJw">
-                    <ref role="3acloq" node="4Pj3bOmxwrC" resolve="root_mapping_TestSetup" />
+                    <ref role="3acloq" node="4Pj3bOmxwrC" resolve="root_mapping_TestEnvironment" />
                     <node concept="1ZhdrF" id="4Pj3bOmxKiz" role="lGtFl">
                       <property role="2qtEX8" value="nameRef" />
                       <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
@@ -1106,8 +1106,8 @@
                                 <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
                               </node>
                               <node concept="2YIFZM" id="7NXUkdTaEsW" role="33vP2m">
-                                <ref role="37wK5l" to="zcip:7NXUkdT9G9t" resolve="getPrimaryTestSuiteInputForTestSetup" />
-                                <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="TestSetupGenerationHelper" />
+                                <ref role="37wK5l" to="zcip:7NXUkdT9G9t" resolve="getPrimaryTestSuiteInputForTestEnvironment" />
+                                <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="TestEnvironmentGenerationHelper" />
                                 <node concept="1iwH7S" id="7NXUkdTaEsX" role="37wK5m" />
                                 <node concept="30H73N" id="7NXUkdTaEsY" role="37wK5m" />
                               </node>
@@ -1117,7 +1117,7 @@
                             <node concept="2OqwBi" id="4Pj3bOmxKiB" role="3clFbG">
                               <node concept="1iwH7S" id="4Pj3bOmxKiC" role="2Oq$k0" />
                               <node concept="1iwH70" id="4Pj3bOmxKiD" role="2OqNvi">
-                                <ref role="1iwH77" node="3nKDvO$x7IY" resolve="ViewModelFeatureTestSuite_TestSetupImpl_ClassDefinition" />
+                                <ref role="1iwH77" node="3nKDvO$x7IY" resolve="ViewModelFeatureTestSuite_TestEnvironmentImpl_ClassDefinition" />
                                 <node concept="37vLTw" id="7NXUkdTaE_e" role="1iwH7V">
                                   <ref role="3cqZAo" node="7NXUkdTaEsU" resolve="primaryTestSuite" />
                                 </node>
@@ -1143,7 +1143,7 @@
                   <node concept="32Pqhl" id="4Pj3bOmxXcu" role="32PqmZ">
                     <node concept="_iR_j" id="4Pj3bOmxXcv" role="32Men7" />
                     <node concept="_vnHe" id="4Pj3bOmxXcw" role="32Men1">
-                      <ref role="3acloq" node="4Pj3bOmxAoW" resolve="testSetup" />
+                      <ref role="3acloq" node="4Pj3bOmxAoW" resolve="testEnvironment" />
                     </node>
                   </node>
                 </node>
@@ -1320,8 +1320,8 @@
                                 <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
                               </node>
                               <node concept="2YIFZM" id="aV2Sa0vciF" role="33vP2m">
-                                <ref role="37wK5l" to="zcip:7NXUkdT9G9t" resolve="getPrimaryTestSuiteInputForTestSetup" />
-                                <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="TestSetupGenerationHelper" />
+                                <ref role="37wK5l" to="zcip:7NXUkdT9G9t" resolve="getPrimaryTestSuiteInputForTestEnvironment" />
+                                <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="TestEnvironmentGenerationHelper" />
                                 <node concept="1iwH7S" id="aV2Sa0vciG" role="37wK5m" />
                                 <node concept="30H73N" id="aV2Sa0vciH" role="37wK5m" />
                               </node>
@@ -1331,7 +1331,7 @@
                             <node concept="2OqwBi" id="aV2Sa0vciJ" role="3clFbG">
                               <node concept="1iwH7S" id="aV2Sa0vciK" role="2Oq$k0" />
                               <node concept="1iwH70" id="aV2Sa0vciL" role="2OqNvi">
-                                <ref role="1iwH77" node="aV2Sa0uTZ8" resolve="ViewModelFeatureTestSuite_TestSetup_BuildSut_OperationDefinition" />
+                                <ref role="1iwH77" node="aV2Sa0uTZ8" resolve="ViewModelFeatureTestSuite_TestEnvironment_BuildSut_OperationDefinition" />
                                 <node concept="37vLTw" id="aV2Sa0vciM" role="1iwH7V">
                                   <ref role="3cqZAo" node="aV2Sa0vciD" resolve="primaryTestSuite" />
                                 </node>
@@ -1346,7 +1346,7 @@
                     <node concept="32Pqhl" id="5jkMFwAfoM_" role="32PqmZ">
                       <node concept="_iR_j" id="5jkMFwAfoMA" role="32Men7" />
                       <node concept="_vnHe" id="5jkMFwAfoMB" role="32Men1">
-                        <ref role="3acloq" node="4Pj3bOmxAoW" resolve="testSetup" />
+                        <ref role="3acloq" node="4Pj3bOmxAoW" resolve="testEnvironment" />
                       </node>
                     </node>
                   </node>
@@ -1393,8 +1393,8 @@
                                       <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
                                     </node>
                                     <node concept="2YIFZM" id="aV2Sa0vgBj" role="33vP2m">
-                                      <ref role="37wK5l" to="zcip:7NXUkdT9G9t" resolve="getPrimaryTestSuiteInputForTestSetup" />
-                                      <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="TestSetupGenerationHelper" />
+                                      <ref role="37wK5l" to="zcip:7NXUkdT9G9t" resolve="getPrimaryTestSuiteInputForTestEnvironment" />
+                                      <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="TestEnvironmentGenerationHelper" />
                                       <node concept="1iwH7S" id="aV2Sa0vgBk" role="37wK5m" />
                                       <node concept="30H73N" id="aV2Sa0vgBl" role="37wK5m" />
                                     </node>
@@ -1404,7 +1404,7 @@
                                   <node concept="2OqwBi" id="aV2Sa0vgBn" role="3clFbG">
                                     <node concept="1iwH7S" id="aV2Sa0vgBo" role="2Oq$k0" />
                                     <node concept="1iwH70" id="aV2Sa0vgBp" role="2OqNvi">
-                                      <ref role="1iwH77" node="aV2Sa0uTZ8" resolve="ViewModelFeatureTestSuite_TestSetup_BuildSut_OperationDefinition" />
+                                      <ref role="1iwH77" node="aV2Sa0uTZ8" resolve="ViewModelFeatureTestSuite_TestEnvironment_BuildSut_OperationDefinition" />
                                       <node concept="37vLTw" id="aV2Sa0vgBq" role="1iwH7V">
                                         <ref role="3cqZAo" node="aV2Sa0vgBh" resolve="primaryTestSuite" />
                                       </node>
@@ -1419,7 +1419,7 @@
                           <node concept="32Pqhl" id="4Pj3bOmysWT" role="32PqmZ">
                             <node concept="_iR_j" id="4Pj3bOmysWU" role="32Men7" />
                             <node concept="_vnHe" id="4Pj3bOmysWV" role="32Men1">
-                              <ref role="3acloq" node="4Pj3bOmxAoW" resolve="testSetup" />
+                              <ref role="3acloq" node="4Pj3bOmxAoW" resolve="testEnvironment" />
                             </node>
                           </node>
                         </node>
@@ -1457,7 +1457,7 @@
                     <node concept="32Pqhl" id="5ZcB1Gi7Scs" role="32PqmZ">
                       <node concept="_iR_j" id="5ZcB1Gi7Sct" role="32Men7" />
                       <node concept="_vnHe" id="5ZcB1Gi7Scu" role="32Men1">
-                        <ref role="3acloq" node="4Pj3bOmxAoW" resolve="testSetup" />
+                        <ref role="3acloq" node="4Pj3bOmxAoW" resolve="testEnvironment" />
                       </node>
                     </node>
                   </node>
@@ -1978,7 +1978,7 @@
                   <node concept="32Pqhl" id="5ZcB1GfVt_g" role="32PqmZ">
                     <node concept="_iR_j" id="5ZcB1GfVt_h" role="32Men7" />
                     <node concept="_vnHe" id="5ZcB1GfVt_i" role="32Men1">
-                      <ref role="3acloq" node="4Pj3bOmxAoW" resolve="testSetup" />
+                      <ref role="3acloq" node="4Pj3bOmxAoW" resolve="testEnvironment" />
                       <node concept="1ZhdrF" id="5ZcB1GfVGPA" role="lGtFl">
                         <property role="2qtEX8" value="nameRef" />
                         <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
@@ -1988,7 +1988,7 @@
                               <node concept="2OqwBi" id="5ZcB1GfVI0L" role="3clFbG">
                                 <node concept="1iwH7S" id="5ZcB1GfVHMY" role="2Oq$k0" />
                                 <node concept="1iwH70" id="5ZcB1GfVI6F" role="2OqNvi">
-                                  <ref role="1iwH77" node="4Pj3bOmxAow" resolve="ViewModelFeatureTestSuite_TestSetup_AttributeDefinition" />
+                                  <ref role="1iwH77" node="4Pj3bOmxAow" resolve="ViewModelFeatureTestSuite_TestEnvironment_AttributeDefinition" />
                                   <node concept="2OqwBi" id="5ZcB1GfVIcH" role="1iwH7V">
                                     <node concept="30H73N" id="5ZcB1GfVIcI" role="2Oq$k0" />
                                     <node concept="2Xjw5R" id="5ZcB1GfVIcJ" role="2OqNvi">
@@ -5934,7 +5934,7 @@
   <node concept="3mGtxK" id="4Pj3bOmxnkc">
     <node concept="6nSm2" id="4Pj3bOmxwrC" role="3mGtxP">
       <property role="PCHHn" value="6OepWIVA92I/package" />
-      <property role="TrG5h" value="root_mapping_TestSetup" />
+      <property role="TrG5h" value="root_mapping_TestEnvironment" />
       <property role="PCHGy" value="true" />
       <node concept="17Uvod" id="4Pj3bOmxwti" role="lGtFl">
         <property role="2qtEX9" value="name" />
@@ -5945,7 +5945,7 @@
               <node concept="2OqwBi" id="4Pj3bOmxwtn" role="3clFbG">
                 <node concept="30H73N" id="4Pj3bOmxwtr" role="2Oq$k0" />
                 <node concept="2qgKlT" id="4Pj3bOmxxf$" role="2OqNvi">
-                  <ref role="37wK5l" to="fwln:4Pj3bOmvh0Z" resolve="getEffectiveTestSetupName" />
+                  <ref role="37wK5l" to="fwln:4Pj3bOmvh0Z" resolve="getEffectiveTestEnvironmentName" />
                 </node>
               </node>
             </node>
@@ -5968,7 +5968,7 @@
             </node>
           </node>
           <node concept="1sPUBX" id="5ZcB1GfUJM0" role="lGtFl">
-            <ref role="v9R2y" node="5ZcB1GfUJJa" resolve="switch_ITestScenarioContext_TestSetup_Parameters" />
+            <ref role="v9R2y" node="5ZcB1GfUJJa" resolve="switch_ITestScenarioContext_TestEnvironment_Parameters" />
           </node>
         </node>
         <node concept="17Uvod" id="5ZcB1GfVNJK" role="lGtFl">
@@ -6253,7 +6253,7 @@
           </node>
         </node>
         <node concept="2ZBi8u" id="aV2Sa0uSHY" role="lGtFl">
-          <ref role="2rW$FS" node="aV2Sa0uTZ8" resolve="ViewModelFeatureTestSuite_TestSetup_BuildSut_OperationDefinition" />
+          <ref role="2rW$FS" node="aV2Sa0uTZ8" resolve="ViewModelFeatureTestSuite_TestEnvironment_BuildSut_OperationDefinition" />
         </node>
       </node>
       <node concept="6nSm6" id="54nmQxIy8ke" role="PCHHv">
@@ -6296,7 +6296,7 @@
           </node>
         </node>
         <node concept="1sPUBX" id="54nmQxIy8ls" role="lGtFl">
-          <ref role="v9R2y" node="54nmQxI_7RB" resolve="switch_IDependencySectionContent_TestSetup_getDependency" />
+          <ref role="v9R2y" node="54nmQxI_7RB" resolve="switch_IDependencySectionContent_TestEnvironment_getDependency" />
           <node concept="1mL9RQ" id="54nmQxI_Fhf" role="v9R3O">
             <ref role="1mL9RD" node="54nmQxI_z7Q" resolve="testSuite" />
           </node>
@@ -6489,7 +6489,7 @@
           </node>
         </node>
         <node concept="1sPUBX" id="P0m5w1nd8g" role="lGtFl">
-          <ref role="v9R2y" node="P0m5w1ncY_" resolve="switch_TestAssertion_TestSetup_additionalOperation" />
+          <ref role="v9R2y" node="P0m5w1ncY_" resolve="switch_TestAssertion_TestEnvironment_additionalOperation" />
         </node>
       </node>
       <node concept="6nSm6" id="5jkMFwAfrZ2" role="PCHHv">
@@ -6541,7 +6541,7 @@
         </node>
       </node>
       <node concept="2ZBi8u" id="4Pj3bOmBeNk" role="lGtFl">
-        <ref role="2rW$FS" node="4Pj3bOmxylV" resolve="ViewModelFeatureTestSuite_TestSetup_ClassDefinition" />
+        <ref role="2rW$FS" node="4Pj3bOmxylV" resolve="ViewModelFeatureTestSuite_TestEnvironment_ClassDefinition" />
       </node>
       <node concept="3wUxaT" id="5jkMFwxmTtC" role="3wUx9_">
         <node concept="113yj2" id="5jkMFwxmTtD" role="2hPqOu">
@@ -7386,7 +7386,7 @@
   </node>
   <node concept="jVnub" id="5ZcB1GfUJJa">
     <property role="3GE5qa" value="scenario.given" />
-    <property role="TrG5h" value="switch_ITestScenarioContext_TestSetup_Parameters" />
+    <property role="TrG5h" value="switch_ITestScenarioContext_TestEnvironment_Parameters" />
     <node concept="3aamgX" id="5ZcB1GfUJJb" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="53m0:5ZcB1GfKswK" resolve="SimpleStringContext" />
@@ -7533,7 +7533,7 @@
       <node concept="gft3U" id="7NXUkdPl4JO" role="1lVwrX">
         <node concept="2VYdi" id="7NXUkdPl4JP" role="gfFT$">
           <node concept="1sPUBX" id="7NXUkdPl4JQ" role="lGtFl">
-            <ref role="v9R2y" node="5ZcB1GfUJJa" resolve="switch_ITestScenarioContext_TestSetup_Parameters" />
+            <ref role="v9R2y" node="5ZcB1GfUJJa" resolve="switch_ITestScenarioContext_TestEnvironment_Parameters" />
             <node concept="3NFfHV" id="7NXUkdPl4JR" role="1sPUBK">
               <node concept="3clFbS" id="7NXUkdPl4JS" role="2VODD2">
                 <node concept="3clFbF" id="7NXUkdPl4JT" role="3cqZAp">
@@ -7977,7 +7977,7 @@
   <node concept="3mGtxK" id="3nKDvO$wD$V">
     <node concept="6nSm2" id="3nKDvO$wD$W" role="3mGtxP">
       <property role="PCHHn" value="6OepWIVA92I/package" />
-      <property role="TrG5h" value="root_mapping_TestSetupImpl" />
+      <property role="TrG5h" value="root_mapping_TestEnvironmentImpl" />
       <node concept="17Uvod" id="3nKDvO$wD$X" role="lGtFl">
         <property role="2qtEX9" value="name" />
         <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
@@ -7987,7 +7987,7 @@
               <node concept="2OqwBi" id="3nKDvO$wD_1" role="3clFbG">
                 <node concept="30H73N" id="3nKDvO$wD_2" role="2Oq$k0" />
                 <node concept="2qgKlT" id="3nKDvO$wD_3" role="2OqNvi">
-                  <ref role="37wK5l" to="fwln:3nKDvO$wPos" resolve="getEffectiveTestSetupImplName" />
+                  <ref role="37wK5l" to="fwln:3nKDvO$wPos" resolve="getEffectiveTestEnvironmentImplName" />
                 </node>
               </node>
             </node>
@@ -8010,7 +8010,7 @@
             </node>
           </node>
           <node concept="1sPUBX" id="3nKDvO$wD_b" role="lGtFl">
-            <ref role="v9R2y" node="5ZcB1GfUJJa" resolve="switch_ITestScenarioContext_TestSetup_Parameters" />
+            <ref role="v9R2y" node="5ZcB1GfUJJa" resolve="switch_ITestScenarioContext_TestEnvironment_Parameters" />
           </node>
         </node>
         <node concept="17Uvod" id="3nKDvO$wD_c" role="lGtFl">
@@ -8370,7 +8370,7 @@
           </node>
         </node>
         <node concept="1sPUBX" id="54nmQxJiLBp" role="lGtFl">
-          <ref role="v9R2y" node="54nmQxJiBMK" resolve="switch_IDependencySectionContent_TestSetupImpl_getDependency" />
+          <ref role="v9R2y" node="54nmQxJiBMK" resolve="switch_IDependencySectionContent_TestEnvironmentImpl_getDependency" />
           <node concept="1mL9RQ" id="54nmQxJiLBq" role="v9R3O">
             <ref role="1mL9RD" node="54nmQxJiLB9" resolve="testSuite" />
           </node>
@@ -8439,7 +8439,7 @@
         </node>
       </node>
       <node concept="2ZBi8u" id="3nKDvO$wDBM" role="lGtFl">
-        <ref role="2rW$FS" node="3nKDvO$x7IY" resolve="ViewModelFeatureTestSuite_TestSetupImpl_ClassDefinition" />
+        <ref role="2rW$FS" node="3nKDvO$x7IY" resolve="ViewModelFeatureTestSuite_TestEnvironmentImpl_ClassDefinition" />
       </node>
       <node concept="3wUxaT" id="3nKDvO$wDBN" role="3wUx9_">
         <node concept="113yj2" id="3nKDvO$wDBO" role="2hPqOu">
@@ -8497,7 +8497,7 @@
                   <node concept="2OqwBi" id="3nKDvO$x8E$" role="3clFbG">
                     <node concept="1iwH7S" id="3nKDvO$x8sH" role="2Oq$k0" />
                     <node concept="1iwH70" id="3nKDvO$x8Kv" role="2OqNvi">
-                      <ref role="1iwH77" node="4Pj3bOmxylV" resolve="ViewModelFeatureTestSuite_TestSetup_ClassDefinition" />
+                      <ref role="1iwH77" node="4Pj3bOmxylV" resolve="ViewModelFeatureTestSuite_TestEnvironment_ClassDefinition" />
                       <node concept="30H73N" id="3nKDvO$xbbn" role="1iwH7V" />
                     </node>
                   </node>
@@ -9207,7 +9207,7 @@
   </node>
   <node concept="jVnub" id="P0m5w1ncY_">
     <property role="3GE5qa" value="scenario.then" />
-    <property role="TrG5h" value="switch_TestAssertion_TestSetup_additionalOperation" />
+    <property role="TrG5h" value="switch_TestAssertion_TestEnvironment_additionalOperation" />
     <node concept="3DQ70j" id="54nmQxHLOEK" role="lGtFl">
       <property role="3V$3am" value="parameter" />
       <property role="3V$3ak" value="b401a680-8325-4110-8fd3-84331ff25bef/982871510064032177/982871510064032342" />
@@ -9919,7 +9919,7 @@
         <property role="PCHHn" value="6OepWIVA92I/package" />
         <property role="TrG5h" value="reduce_ViewCommandInvocationAction" />
         <node concept="6lMYc" id="54nmQxFE$XI" role="PCHHv">
-          <property role="TrG5h" value="testSetup" />
+          <property role="TrG5h" value="testEnvironment" />
           <property role="PCHHn" value="6OepWIVA92M/private" />
           <node concept="3xHE8C" id="54nmQxFE$XJ" role="3xMlr6">
             <node concept="_vnHe" id="54nmQxFE$XK" role="35HzJw">
@@ -9963,7 +9963,7 @@
                         <node concept="32Pqhl" id="54nmQxJCYg0" role="32PqmZ">
                           <node concept="_iR_j" id="54nmQxJCYg1" role="32Men7" />
                           <node concept="_vnHe" id="54nmQxJCYg2" role="32Men1">
-                            <ref role="3acloq" node="54nmQxFE$XI" resolve="testSetup" />
+                            <ref role="3acloq" node="54nmQxFE$XI" resolve="testEnvironment" />
                             <node concept="1ZhdrF" id="54nmQxJCYg3" role="lGtFl">
                               <property role="2qtEX8" value="nameRef" />
                               <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
@@ -9973,7 +9973,7 @@
                                     <node concept="2OqwBi" id="54nmQxJCYgk" role="3clFbG">
                                       <node concept="1iwH7S" id="54nmQxJCYgl" role="2Oq$k0" />
                                       <node concept="1iwH70" id="54nmQxJCYgm" role="2OqNvi">
-                                        <ref role="1iwH77" node="4Pj3bOmxAow" resolve="ViewModelFeatureTestSuite_TestSetup_AttributeDefinition" />
+                                        <ref role="1iwH77" node="4Pj3bOmxAow" resolve="ViewModelFeatureTestSuite_TestEnvironment_AttributeDefinition" />
                                         <node concept="2OqwBi" id="54nmQxJCYgn" role="1iwH7V">
                                           <node concept="30H73N" id="54nmQxJCYgo" role="2Oq$k0" />
                                           <node concept="2Xjw5R" id="54nmQxJCYgp" role="2OqNvi">
@@ -10004,7 +10004,7 @@
                                 <node concept="2OqwBi" id="54nmQxJCYgx" role="3clFbG">
                                   <node concept="1iwH7S" id="54nmQxJCYgy" role="2Oq$k0" />
                                   <node concept="1iwH70" id="54nmQxJCYgz" role="2OqNvi">
-                                    <ref role="1iwH77" node="54nmQxJD6Rr" resolve="IReferenceableDependency_TestSetup_getDependency_OperationDefinition" />
+                                    <ref role="1iwH77" node="54nmQxJD6Rr" resolve="IReferenceableDependency_TestEnvironment_getDependency_OperationDefinition" />
                                     <node concept="2OqwBi" id="54nmQxJCYg$" role="1iwH7V">
                                       <node concept="30H73N" id="54nmQxJCYg_" role="2Oq$k0" />
                                       <node concept="3TrEf2" id="54nmQxJDjr4" role="2OqNvi">
@@ -10024,7 +10024,7 @@
                   <node concept="_vnHe" id="54nmQxJD4FA" role="32Men1">
                     <ref role="3acloq" node="54nmQxFE$XL" resolve="foo" />
                     <node concept="1sPUBX" id="54nmQxJDnxC" role="lGtFl">
-                      <ref role="v9R2y" node="54nmQxJDnVp" resolve="switch_IOperation_TestSetup_dependencyOperationInvocationAction" />
+                      <ref role="v9R2y" node="54nmQxJDnVp" resolve="switch_IOperation_TestEnvironment_dependencyOperationInvocationAction" />
                       <node concept="3NFfHV" id="54nmQxJDp3Q" role="1sPUBK">
                         <node concept="3clFbS" id="54nmQxJDp3R" role="2VODD2">
                           <node concept="3clFbF" id="54nmQxJDpvo" role="3cqZAp">
@@ -10050,7 +10050,7 @@
   </node>
   <node concept="jVnub" id="54nmQxI_7RB">
     <property role="3GE5qa" value="testenvironment" />
-    <property role="TrG5h" value="switch_IDependencySectionContent_TestSetup_getDependency" />
+    <property role="TrG5h" value="switch_IDependencySectionContent_TestEnvironment_getDependency" />
     <node concept="1N15co" id="54nmQxI_uEz" role="1s_3oS">
       <property role="TrG5h" value="testSuite" />
       <node concept="3Tqbb2" id="54nmQxI_uGl" role="1N15GL">
@@ -10060,7 +10060,7 @@
     <node concept="3aamgX" id="54nmQxI_9eI" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:69SOXVnRitH" resolve="Dependency" />
-      <ref role="2sgKRv" node="54nmQxJD6Rr" resolve="IReferenceableDependency_TestSetup_getDependency_OperationDefinition" />
+      <ref role="2sgKRv" node="54nmQxJD6Rr" resolve="IReferenceableDependency_TestEnvironment_getDependency_OperationDefinition" />
       <node concept="gft3U" id="54nmQxI_9eK" role="1lVwrX">
         <node concept="6nSm6" id="54nmQxI_9eO" role="gfFT$">
           <property role="TrG5h" value="foo" />
@@ -10131,7 +10131,7 @@
     <node concept="3aamgX" id="54nmQxI_9Br" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:F907haLJWg" resolve="ViewModel" />
-      <ref role="2sgKRv" node="54nmQxJD6Rr" resolve="IReferenceableDependency_TestSetup_getDependency_OperationDefinition" />
+      <ref role="2sgKRv" node="54nmQxJD6Rr" resolve="IReferenceableDependency_TestEnvironment_getDependency_OperationDefinition" />
       <node concept="gft3U" id="54nmQxI_9Bs" role="1lVwrX">
         <node concept="6nSm6" id="54nmQxI_9Bt" role="gfFT$">
           <property role="TrG5h" value="foo" />
@@ -10219,7 +10219,7 @@
       <node concept="gft3U" id="54nmQxI_9Bl" role="1lVwrX">
         <node concept="2VYdi" id="54nmQxI_9Bn" role="gfFT$">
           <node concept="1sPUBX" id="54nmQxI_9Bq" role="lGtFl">
-            <ref role="v9R2y" node="54nmQxI_7RB" resolve="switch_IDependencySectionContent_TestSetup_getDependency" />
+            <ref role="v9R2y" node="54nmQxI_7RB" resolve="switch_IDependencySectionContent_TestEnvironment_getDependency" />
             <node concept="v3LJS" id="54nmQxI_xwd" role="v9R3O">
               <ref role="v3LJV" node="54nmQxI_uEz" resolve="testSuite" />
             </node>
@@ -10243,7 +10243,7 @@
   </node>
   <node concept="jVnub" id="54nmQxJiBMK">
     <property role="3GE5qa" value="testenvironment" />
-    <property role="TrG5h" value="switch_IDependencySectionContent_TestSetupImpl_getDependency" />
+    <property role="TrG5h" value="switch_IDependencySectionContent_TestEnvironmentImpl_getDependency" />
     <node concept="1N15co" id="54nmQxJiBML" role="1s_3oS">
       <property role="TrG5h" value="testSuite" />
       <node concept="3Tqbb2" id="54nmQxJiBMM" role="1N15GL">
@@ -10417,7 +10417,7 @@
       <node concept="gft3U" id="54nmQxJiBNE" role="1lVwrX">
         <node concept="2VYdi" id="54nmQxJiBNF" role="gfFT$">
           <node concept="1sPUBX" id="54nmQxJiBNG" role="lGtFl">
-            <ref role="v9R2y" node="54nmQxJiBMK" resolve="switch_IDependencySectionContent_TestSetupImpl_getDependency" />
+            <ref role="v9R2y" node="54nmQxJiBMK" resolve="switch_IDependencySectionContent_TestEnvironmentImpl_getDependency" />
             <node concept="v3LJS" id="54nmQxJiBNH" role="v9R3O">
               <ref role="v3LJV" node="54nmQxJiBML" resolve="testSuite" />
             </node>
@@ -10441,7 +10441,7 @@
   </node>
   <node concept="jVnub" id="54nmQxJDnVp">
     <property role="3GE5qa" value="testenvironment" />
-    <property role="TrG5h" value="switch_IOperation_TestSetup_dependencyOperationInvocationAction" />
+    <property role="TrG5h" value="switch_IOperation_TestEnvironment_dependencyOperationInvocationAction" />
     <node concept="3aamgX" id="54nmQxJDpTZ" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:4m0g11MoodV" resolve="DependencyOperation" />
@@ -10503,7 +10503,7 @@
         <property role="PCHHn" value="6OepWIVA92I/package" />
         <property role="TrG5h" value="reduce_DependencyCallAssertion" />
         <node concept="6lMYc" id="6DwkffaEi$Y" role="PCHHv">
-          <property role="TrG5h" value="testSetup" />
+          <property role="TrG5h" value="testEnvironment" />
           <property role="PCHHn" value="6OepWIVA92M/private" />
           <node concept="3xHE8C" id="6DwkffaEi$Z" role="3xMlr6">
             <node concept="_vnHe" id="6DwkffaEi_0" role="35HzJw">

@@ -10,13 +10,13 @@ public class RepeatUsageDependency_ViewModelTests
 {
     private dependencies.subscope.RepeatUsageDependency_ViewModel sut;
 
-    private dependencies.subscope.RepeatUsageDependency_ViewModelTestSetup testSetup;
+    private dependencies.subscope.RepeatUsageDependency_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new dependencies.subscope.RepeatUsageDependency_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new dependencies.subscope.RepeatUsageDependency_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -35,16 +35,16 @@ public class RepeatUsageDependency_ViewModelTests
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     public virtual void when_OnMessage()
     {
-        this.testSetup.getMessageBus().OnMessage(0, null);
+        this.testEnvironment.getMessageBus().OnMessage(0, null);
     }
 
     public virtual void when_Log()
     {
-        this.testSetup.getLogger().Log("my message");
+        this.testEnvironment.getLogger().Log("my message");
     }
 }

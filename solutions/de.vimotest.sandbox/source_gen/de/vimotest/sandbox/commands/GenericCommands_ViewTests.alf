@@ -6,13 +6,13 @@ class GenericCommands_ViewTests {
   
   private sut : GenericCommands_ViewModel  ;
   
-  private testSetup : GenericCommands_ViewModelTestSetup  ;
+  private testEnvironment : GenericCommands_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new GenericCommands_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new GenericCommands_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -26,7 +26,7 @@ class GenericCommands_ViewTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

@@ -1,0 +1,14 @@
+namespace commands ;
+
+
+
+class RowBasedCommand_ViewModelTestEnvironmentImpl specializes RowBasedCommand_ViewModelTestEnvironment {
+  
+  public Init (  ) {    
+  }
+  
+  public BuildSut (  ) : RowBasedCommand_ViewModel  {
+    return null;
+
+  }
+}

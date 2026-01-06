@@ -1,0 +1,17 @@
+namespace widgetassertions ;
+
+
+
+class Buttons_ViewModelTestEnvironmentImpl specializes Buttons_ViewModelTestEnvironment {
+  
+  public Init (  ) {    
+  }
+  
+  public SetEmptyContext (  ) {    
+  }
+  
+  public BuildSut (  ) : Buttons_ViewModel  {
+    return null;
+
+  }
+}

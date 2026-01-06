@@ -1139,7 +1139,7 @@
       <node concept="3F0A7n" id="4Pj3bOmvgzP" role="3EZMnx">
         <property role="1O74Pk" value="true" />
         <property role="1$x2rV" value="&lt;ViewModelClassName&gt;ContextProvider" />
-        <ref role="1NtTu8" to="53m0:4Pj3bOmuYX9" resolve="testSetupClassName" />
+        <ref role="1NtTu8" to="53m0:4Pj3bOmuYX9" resolve="testEnvironmentClassName" />
       </node>
     </node>
   </node>

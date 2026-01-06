@@ -6,13 +6,13 @@ class LoginViewModelTests {
   
   private sut : LoginViewModel  ;
   
-  private testSetup : LoginViewModelTestSetup  ;
+  private testEnvironment : LoginViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new LoginViewModelTestSetupImpl (  );
+    this.testEnvironment = new LoginViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -108,7 +108,7 @@ class LoginViewModelTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   
@@ -122,7 +122,7 @@ class LoginViewModelTests {
   private prefilledValues : String = "<Prefs>  \n  <User>Ada</User>\n  <Pw>Lovelace1</Pw>\n</Prefs>";
   
   public given_prefilledValues (  ) {
-    this.testSetup.SetXmlElementContext ( this.prefilledValues );
+    this.testEnvironment.SetXmlElementContext ( this.prefilledValues );
 
   }
   

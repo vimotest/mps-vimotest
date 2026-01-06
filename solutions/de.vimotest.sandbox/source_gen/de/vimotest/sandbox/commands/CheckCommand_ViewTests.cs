@@ -9,13 +9,13 @@ public class CheckCommand_ViewTests
 {
     private commands.CheckCommand_ViewModel sut;
 
-    private commands.CheckCommand_ViewModelTestSetup testSetup;
+    private commands.CheckCommand_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new commands.CheckCommand_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new commands.CheckCommand_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -28,7 +28,7 @@ public class CheckCommand_ViewTests
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     public virtual void when_check_MyCheckBox1()

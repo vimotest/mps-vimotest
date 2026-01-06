@@ -6,13 +6,13 @@ class SelectRowCommand_ViewTests {
   
   private sut : SelectRowCommand_ViewModel  ;
   
-  private testSetup : SelectRowCommand_ViewModelTestSetup  ;
+  private testEnvironment : SelectRowCommand_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new SelectRowCommand_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new SelectRowCommand_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -82,7 +82,7 @@ class SelectRowCommand_ViewTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

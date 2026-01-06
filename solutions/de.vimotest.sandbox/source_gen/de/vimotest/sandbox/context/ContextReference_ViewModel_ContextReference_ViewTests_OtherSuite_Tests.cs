@@ -9,13 +9,13 @@ public class ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Te
 {
     private context.ContextReference_ViewModel sut;
 
-    private context.ContextReference_ViewModelTestSetup testSetup;
+    private context.ContextReference_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new context.ContextReference_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new context.ContextReference_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -34,18 +34,18 @@ public class ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Te
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     private string baseContext = "My Context";
 
     public virtual void given_baseContext()
     {
-        this.testSetup.SetSimpleStringContext(this.baseContext);
+        this.testEnvironment.SetSimpleStringContext(this.baseContext);
     }
 
     public virtual void given_baseContext_1()
     {
-        this.testSetup.SetSimpleStringContext(this.baseContext);
+        this.testEnvironment.SetSimpleStringContext(this.baseContext);
     }
 }

@@ -6,13 +6,13 @@ class ListViews_ViewTest {
   
   private sut : ListViews_ViewModel  ;
   
-  private testSetup : ListViews_ViewModelTestSetup  ;
+  private testEnvironment : ListViews_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new ListViews_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new ListViews_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -61,7 +61,7 @@ class ListViews_ViewTest {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

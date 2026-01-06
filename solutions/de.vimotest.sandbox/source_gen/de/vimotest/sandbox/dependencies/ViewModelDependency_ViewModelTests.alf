@@ -6,13 +6,13 @@ class ViewModelDependency_ViewModelTests {
   
   private sut : ViewModelDependency_ViewModel  ;
   
-  private testSetup : ViewModelDependency_ViewModelTestSetup  ;
+  private testEnvironment : ViewModelDependency_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new ViewModelDependency_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new ViewModelDependency_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -26,7 +26,7 @@ class ViewModelDependency_ViewModelTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   
@@ -38,7 +38,7 @@ class ViewModelDependency_ViewModelTests {
 
   
   public when_LoadView (  ) {
-    this.testSetup.getSimpleDependency_ViewModel (  ).loadView (  );
+    this.testEnvironment.getSimpleDependency_ViewModel (  ).loadView (  );
 
   }
   

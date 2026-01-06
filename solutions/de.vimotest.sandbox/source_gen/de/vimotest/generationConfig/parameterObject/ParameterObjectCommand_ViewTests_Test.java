@@ -7,7 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 
 public class ParameterObjectCommand_ViewTests_Test {
   private ParameterObjectCommand_ViewModel sut;
-  private ParameterObjectCommand_ViewModelTestSetup testSetup;
+  private ParameterObjectCommand_ViewModelTestEnvironment testEnvironment;
   @Test
   public void test_MyTest_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_() throws Exception {
     this.given_empty_context();
@@ -17,14 +17,14 @@ public class ParameterObjectCommand_ViewTests_Test {
   }
   @BeforeEach
   public void setUp() {
-    this.testSetup = new ParameterObjectCommand_ViewModelTestSetupImpl();
-    this.testSetup.Init();
+    this.testEnvironment = new ParameterObjectCommand_ViewModelTestEnvironmentImpl();
+    this.testEnvironment.Init();
   }
 
 
 
   protected void BuildSut() {
-    this.sut = this.testSetup.BuildSut();
+    this.sut = this.testEnvironment.BuildSut();
   }
 
 

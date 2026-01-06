@@ -6,13 +6,13 @@ class Buttons_ViewTests {
   
   private sut : Buttons_ViewModel  ;
   
-  private testSetup : Buttons_ViewModelTestSetup  ;
+  private testEnvironment : Buttons_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new Buttons_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new Buttons_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -46,7 +46,7 @@ class Buttons_ViewTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

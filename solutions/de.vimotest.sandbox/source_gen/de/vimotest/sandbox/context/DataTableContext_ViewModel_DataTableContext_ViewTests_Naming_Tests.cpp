@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
 #include <memory>
-#include "DataTableContext_ViewModelTestSetup.h"
+#include "DataTableContext_ViewModelTestEnvironment.h"
 #include "DataTableContext_ViewModel.h"
-#include "DataTableContext_ViewModelTestSetupImpl.h"
+#include "DataTableContext_ViewModelTestEnvironmentImpl.h"
 #include <string>
 
 namespace context
@@ -11,7 +11,7 @@ namespace context
   {
   public:
     std::shared_ptr<DataTableContext_ViewModel> sut;
-    std::shared_ptr<DataTableContext_ViewModelTestSetup> testSetup;
+    std::shared_ptr<DataTableContext_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
     std::string id_0_name_A = R"(| id | name |
 | 0 | A |)";
@@ -28,8 +28,8 @@ namespace context
   };
   void DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests::SetUp()
   {
-    this->testSetup = std::make_shared<DataTableContext_ViewModelTestSetupImpl>();
-    this->testSetup->Init();
+    this->testEnvironment = std::make_shared<DataTableContext_ViewModelTestEnvironmentImpl>();
+    this->testEnvironment->Init();
   }
   TEST_F(DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests, DataTable_Context_implicit_name_given_id_0_name_A_when_then_)
   {
@@ -54,22 +54,22 @@ namespace context
   }
   void DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests::BuildSut()
   {
-    this->sut = this->testSetup->BuildSut();
+    this->sut = this->testEnvironment->BuildSut();
   }
   void DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests::given_id_0_name_A()
   {
-    this->testSetup->SetDataTableString(this->id_0_name_A);
+    this->testEnvironment->SetDataTableString(this->id_0_name_A);
   }
   void DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests::given_data()
   {
-    this->testSetup->SetDataTableString(this->data);
+    this->testEnvironment->SetDataTableString(this->data);
   }
   void DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests::given_data1()
   {
-    this->testSetup->SetDataTableString(this->data1);
+    this->testEnvironment->SetDataTableString(this->data1);
   }
   void DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests::given_data_1()
   {
-    this->testSetup->SetDataTableString(this->data);
+    this->testEnvironment->SetDataTableString(this->data);
   }
 }

@@ -6,13 +6,13 @@ class XmlElementContext_ViewTests {
   
   private sut : XmlElementContext_ViewModel  ;
   
-  private testSetup : XmlElementContext_ViewModelTestSetup  ;
+  private testEnvironment : XmlElementContext_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new XmlElementContext_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new XmlElementContext_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -33,7 +33,7 @@ class XmlElementContext_ViewTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   
@@ -44,14 +44,14 @@ class XmlElementContext_ViewTests {
   private myxml : String = "<MyXML>  \n  <Inner></Inner>\n</MyXML>";
   
   public given_myxml (  ) {
-    this.testSetup.SetXmlElementContext ( this.myxml );
+    this.testEnvironment.SetXmlElementContext ( this.myxml );
 
   }
   
   private MyXML_Inner : String = "<MyXML>  \n  <Inner></Inner>\n</MyXML>";
   
   public given_MyXML_Inner (  ) {
-    this.testSetup.SetXmlElementContext ( this.MyXML_Inner );
+    this.testEnvironment.SetXmlElementContext ( this.MyXML_Inner );
 
   }
   

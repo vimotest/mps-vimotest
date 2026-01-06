@@ -9,13 +9,13 @@ public class DataTableContext_ViewTests
 {
     private context.DataTableContext_ViewModel sut;
 
-    private context.DataTableContext_ViewModelTestSetup testSetup;
+    private context.DataTableContext_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new context.DataTableContext_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new context.DataTableContext_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -48,7 +48,7 @@ public class DataTableContext_ViewTests
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     private string dataTableCustomSetter = @"| id | name |
@@ -56,7 +56,7 @@ public class DataTableContext_ViewTests
 
     public virtual void given_dataTableCustomSetter()
     {
-        this.testSetup.SetIdAndName(this.dataTableCustomSetter);
+        this.testEnvironment.SetIdAndName(this.dataTableCustomSetter);
     }
 
     private string dataTableToString = @"| id | name |
@@ -64,14 +64,14 @@ public class DataTableContext_ViewTests
 
     public virtual void given_dataTableToString()
     {
-        this.testSetup.SetDataTableString(this.dataTableToString);
+        this.testEnvironment.SetDataTableString(this.dataTableToString);
     }
 
     private string dataTableToJson = @"[ { id:""0"", name:""A"" } ]";
 
     public virtual void given_dataTableToJson()
     {
-        this.testSetup.SetDataTableJson(this.dataTableToJson);
+        this.testEnvironment.SetDataTableJson(this.dataTableToJson);
     }
 
     private string dataTableToXml = @"<Data>
@@ -84,6 +84,6 @@ public class DataTableContext_ViewTests
 
     public virtual void given_dataTableToXml()
     {
-        this.testSetup.SetDataTableXml(this.dataTableToXml);
+        this.testEnvironment.SetDataTableXml(this.dataTableToXml);
     }
 }

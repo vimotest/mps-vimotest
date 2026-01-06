@@ -1,0 +1,17 @@
+
+
+
+
+class ParameterObjectCommand_ViewModelTestEnvironmentImpl specializes ParameterObjectCommand_ViewModelTestEnvironment {
+  
+  public Init (  ) {    
+  }
+  
+  public SetEmptyContext (  ) {    
+  }
+  
+  public BuildSut (  ) : ParameterObjectCommand_ViewModel  {
+    return null;
+
+  }
+}

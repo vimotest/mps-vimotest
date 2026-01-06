@@ -6,13 +6,13 @@ class CheckBoxes_ViewTest {
   
   private sut : CheckBoxes_ViewModel  ;
   
-  private testSetup : CheckBoxes_ViewModelTestSetup  ;
+  private testEnvironment : CheckBoxes_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new CheckBoxes_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new CheckBoxes_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -50,7 +50,7 @@ class CheckBoxes_ViewTest {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

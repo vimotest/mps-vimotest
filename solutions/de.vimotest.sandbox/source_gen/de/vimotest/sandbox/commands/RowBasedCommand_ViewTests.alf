@@ -6,13 +6,13 @@ class RowBasedCommand_ViewTests {
   
   private sut : RowBasedCommand_ViewModel  ;
   
-  private testSetup : RowBasedCommand_ViewModelTestSetup  ;
+  private testEnvironment : RowBasedCommand_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new RowBasedCommand_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new RowBasedCommand_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -58,7 +58,7 @@ class RowBasedCommand_ViewTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

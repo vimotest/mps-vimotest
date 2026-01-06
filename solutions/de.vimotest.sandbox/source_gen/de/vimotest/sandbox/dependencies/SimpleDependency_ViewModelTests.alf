@@ -6,13 +6,13 @@ class SimpleDependency_ViewModelTests {
   
   private sut : SimpleDependency_ViewModel  ;
   
-  private testSetup : SimpleDependency_ViewModelTestSetup  ;
+  private testEnvironment : SimpleDependency_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new SimpleDependency_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new SimpleDependency_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -33,7 +33,7 @@ class SimpleDependency_ViewModelTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   
@@ -45,12 +45,12 @@ class SimpleDependency_ViewModelTests {
 
   
   public when_OnMessage (  ) {
-    this.testSetup.getMessageBus (  ).OnMessage ( 0, new String [] { "A",  "B" } );
+    this.testEnvironment.getMessageBus (  ).OnMessage ( 0, new String [] { "A",  "B" } );
 
   }
   
   public when_Log (  ) {
-    this.testSetup.getLogger (  ).Log ( "my message" );
+    this.testEnvironment.getLogger (  ).Log ( "my message" );
 
   }
   

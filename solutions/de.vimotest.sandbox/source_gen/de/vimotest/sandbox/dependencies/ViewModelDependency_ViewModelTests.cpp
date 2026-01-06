@@ -1,9 +1,9 @@
 #include <gtest/gtest.h>
 #include <memory>
-#include "ViewModelDependency_ViewModelTestSetup.h"
+#include "ViewModelDependency_ViewModelTestEnvironment.h"
 #include "SimpleDependency_ViewModel.h"
 #include "ViewModelDependency_ViewModel.h"
-#include "ViewModelDependency_ViewModelTestSetupImpl.h"
+#include "ViewModelDependency_ViewModelTestEnvironmentImpl.h"
 
 namespace dependencies
 {
@@ -11,7 +11,7 @@ namespace dependencies
   {
   public:
     std::shared_ptr<ViewModelDependency_ViewModel> sut;
-    std::shared_ptr<ViewModelDependency_ViewModelTestSetup> testSetup;
+    std::shared_ptr<ViewModelDependency_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
     virtual void when_LoadView();
   protected:
@@ -19,8 +19,8 @@ namespace dependencies
   };
   void ViewModelDependency_ViewModelTests::SetUp()
   {
-    this->testSetup = std::make_shared<ViewModelDependency_ViewModelTestSetupImpl>();
-    this->testSetup->Init();
+    this->testEnvironment = std::make_shared<ViewModelDependency_ViewModelTestEnvironmentImpl>();
+    this->testEnvironment->Init();
   }
   TEST_F(ViewModelDependency_ViewModelTests, ViewModel_Dependency_Invocation_given_when_LoadView_then_)
   {
@@ -29,10 +29,10 @@ namespace dependencies
   }
   void ViewModelDependency_ViewModelTests::BuildSut()
   {
-    this->sut = this->testSetup->BuildSut();
+    this->sut = this->testEnvironment->BuildSut();
   }
   void ViewModelDependency_ViewModelTests::when_LoadView()
   {
-    this->testSetup->getSimpleDependency_ViewModel()->loadView();
+    this->testEnvironment->getSimpleDependency_ViewModel()->loadView();
   }
 }

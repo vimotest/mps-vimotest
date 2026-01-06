@@ -1,12 +1,12 @@
 #include <gtest/gtest.h>
 #include <memory>
-#include "RepeatUsageDependency_ViewModelTestSetup.h"
+#include "RepeatUsageDependency_ViewModelTestEnvironment.h"
 #include "MessageBus.h"
 #include <string>
-#include "dependencies/SimpleDependency_ViewModelTestSetup.h"
+#include "dependencies/SimpleDependency_ViewModelTestEnvironment.h"
 #include "dependencies/Logger.h"
 #include "RepeatUsageDependency_ViewModel.h"
-#include "RepeatUsageDependency_ViewModelTestSetupImpl.h"
+#include "RepeatUsageDependency_ViewModelTestEnvironmentImpl.h"
 
 namespace dependencies::subscope
 {
@@ -14,7 +14,7 @@ namespace dependencies::subscope
   {
   public:
     std::shared_ptr<RepeatUsageDependency_ViewModel> sut;
-    std::shared_ptr<RepeatUsageDependency_ViewModelTestSetup> testSetup;
+    std::shared_ptr<RepeatUsageDependency_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
     virtual void when_OnMessage();
     virtual void when_Log();
@@ -23,8 +23,8 @@ namespace dependencies::subscope
   };
   void RepeatUsageDependency_ViewModelTests::SetUp()
   {
-    this->testSetup = std::make_shared<RepeatUsageDependency_ViewModelTestSetupImpl>();
-    this->testSetup->Init();
+    this->testEnvironment = std::make_shared<RepeatUsageDependency_ViewModelTestEnvironmentImpl>();
+    this->testEnvironment->Init();
   }
   TEST_F(RepeatUsageDependency_ViewModelTests, Invoke_Direct_Dependency_given_when_OnMessage_then_)
   {
@@ -38,14 +38,14 @@ namespace dependencies::subscope
   }
   void RepeatUsageDependency_ViewModelTests::BuildSut()
   {
-    this->sut = this->testSetup->BuildSut();
+    this->sut = this->testEnvironment->BuildSut();
   }
   void RepeatUsageDependency_ViewModelTests::when_OnMessage()
   {
-    this->testSetup->getMessageBus()->OnMessage(0, nullptr);
+    this->testEnvironment->getMessageBus()->OnMessage(0, nullptr);
   }
   void RepeatUsageDependency_ViewModelTests::when_Log()
   {
-    this->testSetup->getLogger()->Log(std::string("my message"));
+    this->testEnvironment->getLogger()->Log(std::string("my message"));
   }
 }

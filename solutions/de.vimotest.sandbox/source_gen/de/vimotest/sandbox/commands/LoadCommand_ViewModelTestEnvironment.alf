@@ -1,0 +1,10 @@
+namespace commands ;
+
+
+
+abstract class LoadCommand_ViewModelTestEnvironment {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : LoadCommand_ViewModel  ;
+}

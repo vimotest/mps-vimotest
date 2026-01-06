@@ -9,13 +9,13 @@ public class XmlElementContext_ViewTests
 {
     private context.XmlElementContext_ViewModel sut;
 
-    private context.XmlElementContext_ViewModelTestSetup testSetup;
+    private context.XmlElementContext_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new context.XmlElementContext_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new context.XmlElementContext_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -34,7 +34,7 @@ public class XmlElementContext_ViewTests
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     private string myxml = @"<MyXML>
@@ -43,7 +43,7 @@ public class XmlElementContext_ViewTests
 
     public virtual void given_myxml()
     {
-        this.testSetup.SetXmlElementContext(this.myxml);
+        this.testEnvironment.SetXmlElementContext(this.myxml);
     }
 
     private string MyXML_Inner = @"<MyXML>
@@ -52,6 +52,6 @@ public class XmlElementContext_ViewTests
 
     public virtual void given_MyXML_Inner()
     {
-        this.testSetup.SetXmlElementContext(this.MyXML_Inner);
+        this.testEnvironment.SetXmlElementContext(this.MyXML_Inner);
     }
 }

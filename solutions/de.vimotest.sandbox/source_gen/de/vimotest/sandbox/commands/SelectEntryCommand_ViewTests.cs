@@ -10,13 +10,13 @@ public class SelectEntryCommand_ViewTests
 {
     private commands.SelectEntryCommand_ViewModel sut;
 
-    private commands.SelectEntryCommand_ViewModelTestSetup testSetup;
+    private commands.SelectEntryCommand_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new commands.SelectEntryCommand_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new commands.SelectEntryCommand_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -36,7 +36,7 @@ public class SelectEntryCommand_ViewTests
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     public virtual void when_select_entry_C_in_MyElements()

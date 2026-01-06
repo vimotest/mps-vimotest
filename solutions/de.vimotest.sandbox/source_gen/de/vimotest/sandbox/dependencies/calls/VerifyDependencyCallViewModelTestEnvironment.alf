@@ -1,0 +1,14 @@
+namespace dependencies:: calls ;
+
+
+
+abstract class VerifyDependencyCallViewModelTestEnvironment {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : VerifyDependencyCallViewModel  ;
+  
+  public abstract getLogger (  ) : LoggerSpy  ;
+  
+  public abstract getSimpleDependency_ViewModel (  ) : VerifyDependencyCallViewModel  ;
+}

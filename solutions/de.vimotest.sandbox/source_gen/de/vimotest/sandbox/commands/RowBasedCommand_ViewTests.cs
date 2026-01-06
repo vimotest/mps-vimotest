@@ -10,13 +10,13 @@ public class RowBasedCommand_ViewTests
 {
     private commands.RowBasedCommand_ViewModel sut;
 
-    private commands.RowBasedCommand_ViewModelTestSetup testSetup;
+    private commands.RowBasedCommand_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new commands.RowBasedCommand_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new commands.RowBasedCommand_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -51,7 +51,7 @@ public class RowBasedCommand_ViewTests
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     public virtual void when_check_Checkboxes_at_0()

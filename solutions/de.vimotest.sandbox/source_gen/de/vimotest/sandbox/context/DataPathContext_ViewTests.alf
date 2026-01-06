@@ -6,13 +6,13 @@ class DataPathContext_ViewTests {
   
   private sut : DataPathContext_ViewModel  ;
   
-  private testSetup : DataPathContext_ViewModelTestSetup  ;
+  private testEnvironment : DataPathContext_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new DataPathContext_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new DataPathContext_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -33,7 +33,7 @@ class DataPathContext_ViewTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   
@@ -42,12 +42,12 @@ class DataPathContext_ViewTests {
 
   
   public given_my_element (  ) {
-    this.testSetup.SetDataPathContext ( "resource:/elements/myelement" );
+    this.testEnvironment.SetDataPathContext ( "resource:/elements/myelement" );
 
   }
   
   public given_path_resource_elements_myelement (  ) {
-    this.testSetup.SetDataPathContext ( "resource:/elements/myelement" );
+    this.testEnvironment.SetDataPathContext ( "resource:/elements/myelement" );
 
   }
   

@@ -9,13 +9,13 @@ public class Buttons_ViewTests
 {
     private widgetassertions.Buttons_ViewModel sut;
 
-    private widgetassertions.Buttons_ViewModelTestSetup testSetup;
+    private widgetassertions.Buttons_ViewModelTestEnvironment testEnvironment;
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
     public void SetUp()
     {
-        this.testSetup = new widgetassertions.Buttons_ViewModelTestSetupImpl();
-        this.testSetup.Init();
+        this.testEnvironment = new widgetassertions.Buttons_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -44,7 +44,7 @@ public class Buttons_ViewTests
 
     protected virtual void BuildSut()
     {
-        this.sut = this.testSetup.BuildSut();
+        this.sut = this.testEnvironment.BuildSut();
     }
 
     public virtual void given_empty_context()

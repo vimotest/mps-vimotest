@@ -1,0 +1,10 @@
+namespace widgetassertions ;
+
+
+
+abstract class RadioButton_ViewModelTestEnvironment {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : RadioButton_ViewModel  ;
+}

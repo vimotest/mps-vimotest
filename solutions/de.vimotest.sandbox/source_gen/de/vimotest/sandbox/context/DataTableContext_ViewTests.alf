@@ -6,13 +6,13 @@ class DataTableContext_ViewTests {
   
   private sut : DataTableContext_ViewModel  ;
   
-  private testSetup : DataTableContext_ViewModelTestSetup  ;
+  private testEnvironment : DataTableContext_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new DataTableContext_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new DataTableContext_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -47,7 +47,7 @@ class DataTableContext_ViewTests {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   
@@ -58,28 +58,28 @@ class DataTableContext_ViewTests {
   private dataTableCustomSetter : String = "| id | name |\n| 0 | A |";
   
   public given_dataTableCustomSetter (  ) {
-    this.testSetup.SetIdAndName ( this.dataTableCustomSetter );
+    this.testEnvironment.SetIdAndName ( this.dataTableCustomSetter );
 
   }
   
   private dataTableToString : String = "| id | name |\n| 0 | A |";
   
   public given_dataTableToString (  ) {
-    this.testSetup.SetDataTableString ( this.dataTableToString );
+    this.testEnvironment.SetDataTableString ( this.dataTableToString );
 
   }
   
   private dataTableToJson : String = "[ { id:\"0\", name:\"A\" } ]";
   
   public given_dataTableToJson (  ) {
-    this.testSetup.SetDataTableJson ( this.dataTableToJson );
+    this.testEnvironment.SetDataTableJson ( this.dataTableToJson );
 
   }
   
   private dataTableToXml : String = "<Data>\n  <DataRow>\n    <id>0    </id>\n    <name>A    </name>\n| 0 | A |\n  </DataRow>\n</Data>";
   
   public given_dataTableToXml (  ) {
-    this.testSetup.SetDataTableXml ( this.dataTableToXml );
+    this.testEnvironment.SetDataTableXml ( this.dataTableToXml );
 
   }
   

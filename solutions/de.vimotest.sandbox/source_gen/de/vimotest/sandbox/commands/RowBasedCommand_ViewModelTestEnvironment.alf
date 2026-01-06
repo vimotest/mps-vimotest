@@ -1,0 +1,10 @@
+namespace commands ;
+
+
+
+abstract class RowBasedCommand_ViewModelTestEnvironment {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : RowBasedCommand_ViewModel  ;
+}

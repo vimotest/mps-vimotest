@@ -6,13 +6,13 @@ class Labels_ViewTest {
   
   private sut : Labels_ViewModel  ;
   
-  private testSetup : Labels_ViewModelTestSetup  ;
+  private testEnvironment : Labels_ViewModelTestEnvironment  ;
   
   
   protected BeforeTest (  ) {
-    this.testSetup = new Labels_ViewModelTestSetupImpl (  );
+    this.testEnvironment = new Labels_ViewModelTestEnvironmentImpl (  );
 
-    this.testSetup.Init (  );
+    this.testEnvironment.Init (  );
 
   }
   
@@ -80,7 +80,7 @@ class Labels_ViewTest {
   
   
   protected BuildSut (  ) {
-    this.sut = this.testSetup.BuildSut (  );
+    this.sut = this.testEnvironment.BuildSut (  );
 
   }
   

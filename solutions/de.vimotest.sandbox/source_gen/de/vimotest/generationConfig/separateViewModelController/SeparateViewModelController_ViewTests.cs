@@ -3,54 +3,53 @@
 /// </filename>
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-[ Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
+[Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class SeparateViewModelController_ViewTests
 {
     private MyViewModel sutViewModel;
- 
+
     private MyViewController sutViewController;
- 
-    private SeparateViewModelController_ViewModelTestSetup testSetup;
- 
-  [ Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
-  public void SetUp()
-  {
-    this.testSetup = new SeparateViewModelController_ViewModelTestSetupImpl();
-    this.testSetup.Init();
-  }
- 
-  [ Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
-  public void MyTest_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_()
-  {
-    this.given_empty_context();
-    this.BuildSut();
-    this.when_LoadView();
-    this.when_uncheck_MyFlag();
-    this.RetrieveViewModel();
-  }
- 
-    protected   virtual void BuildSut()
-  {
-    this.sutViewController = this.testSetup.BuildSutViewController();
-  }
- 
-    protected   virtual void RetrieveViewModel()
-  {
-    this.sutViewModel = this.testSetup.GetViewModel();
-  }
- 
-    public   virtual void given_empty_context()
-  {
-    
-  }
- 
-    public   virtual void when_LoadView()
-  {
-    this.sutViewController.loadView();
-  }
- 
-    public   virtual void when_uncheck_MyFlag()
-  {
-    this.sutViewController.myFlagChecked(false);
-  }
+
+    private SeparateViewModelController_ViewModelTestEnvironment testEnvironment;
+
+    [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitialize]
+    public void SetUp()
+    {
+        this.testEnvironment = new SeparateViewModelController_ViewModelTestEnvironmentImpl();
+        this.testEnvironment.Init();
+    }
+
+    [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
+    public void MyTest_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_()
+    {
+        this.given_empty_context();
+        this.BuildSut();
+        this.when_LoadView();
+        this.when_uncheck_MyFlag();
+        this.RetrieveViewModel();
+    }
+
+    protected virtual void BuildSut()
+    {
+        this.sutViewController = this.testEnvironment.BuildSutViewController();
+    }
+
+    protected virtual void RetrieveViewModel()
+    {
+        this.sutViewModel = this.testEnvironment.GetViewModel();
+    }
+
+    public virtual void given_empty_context()
+    {
+    }
+
+    public virtual void when_LoadView()
+    {
+        this.sutViewController.loadView();
+    }
+
+    public virtual void when_uncheck_MyFlag()
+    {
+        this.sutViewController.myFlagChecked(false);
+    }
 }

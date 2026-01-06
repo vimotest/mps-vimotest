@@ -1,0 +1,14 @@
+namespace dependencies:: subscope ;
+
+
+
+abstract class RepeatUsageDependency_ViewModelTestEnvironment {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : RepeatUsageDependency_ViewModel  ;
+  
+  public abstract getMessageBus (  ) : MessageBus  ;
+  
+  public abstract getLogger (  ) : LoggerSpy  ;
+}

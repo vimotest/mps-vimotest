@@ -17,17 +17,14 @@ namespace dependencies
 
         public struct LogCalls
         {
-            public int count = 0;
-
             public string messageValue;
 
             public LogCalls()
             {
             }
 
-            public LogCalls(int count, string messageValue)
+            public LogCalls(string messageValue)
             {
-                this.count = count;
                 this.messageValue = messageValue;
             }
         }

@@ -14,12 +14,10 @@ public class LoggerSpy implements Logger {
   }
 
   public static class LogCalls {
-    public Integer count = 0;
     public String messageValue;
     public LogCalls() {
     }
-    public LogCalls(Integer count, String messageValue) {
-      this.count = count;
+    public LogCalls(String messageValue) {
       this.messageValue = messageValue;
     }
   }

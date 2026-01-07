@@ -13,7 +13,6 @@ namespace dependencies
     virtual void setDelegate(std::shared_ptr<Logger> delegate);
     struct LogCalls
     {
-      int count = 0;
       std::string messageValue;
     };
     void Log(std::string message) override;

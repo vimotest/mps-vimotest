@@ -3,7 +3,6 @@
 #include "RepeatUsageDependency_ViewModelTestEnvironment.h"
 #include "MessageBus.h"
 #include <string>
-#include "dependencies/SimpleDependency_ViewModelTestEnvironment.h"
 #include "dependencies/Logger.h"
 #include "RepeatUsageDependency_ViewModel.h"
 #include "RepeatUsageDependency_ViewModelTestEnvironmentImpl.h"

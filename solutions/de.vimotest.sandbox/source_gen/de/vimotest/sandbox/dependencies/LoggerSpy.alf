@@ -15,8 +15,6 @@ class LoggerSpy specializes Logger {
   
   public datatype LogCalls {
     
-    public count : Integer = 0;
-    
     public messageValue : String  ;
   }
   

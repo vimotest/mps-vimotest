@@ -4,11 +4,11 @@ namespace dependencies ;
 
 class LoggerSpy specializes Logger {
   
-  private delegate : Logger  ;
+  private wrapped : Logger  ;
   
   
-  public setDelegate (   in delegate: Logger  ) {
-    this.delegate = delegate;
+  public setWrapped (   in wrapped: Logger  ) {
+    this.wrapped = wrapped;
 
   }
   
@@ -21,8 +21,8 @@ class LoggerSpy specializes Logger {
   private calls : LogCalls [ * ]  ;
   
   public Log (   in message: String  ) {
-    if ( this.delegate != null ) {
-      this.delegate.Log ( message );
+    if ( this.wrapped != null ) {
+      this.wrapped.Log ( message );
 
     } 
 

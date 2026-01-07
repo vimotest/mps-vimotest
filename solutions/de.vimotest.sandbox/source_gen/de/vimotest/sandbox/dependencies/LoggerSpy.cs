@@ -8,11 +8,11 @@ namespace dependencies
 {
     internal class LoggerSpy : dependencies.Logger
     {
-        private dependencies.Logger delegate;
+        private dependencies.Logger wrapped;
 
-        public virtual void setDelegate(dependencies.Logger delegate)
+        public virtual void setWrapped(dependencies.Logger wrapped)
         {
-            this.delegate = delegate;
+            this.wrapped = wrapped;
         }
 
         public struct LogCalls
@@ -33,9 +33,9 @@ namespace dependencies
 
         public virtual void Log(string message)
         {
-            if (this.delegate != null)
+            if (this.wrapped != null)
             {
-                this.delegate.Log(message);
+                this.wrapped.Log(message);
             }
 
             dependencies.LoggerSpy.LogCalls callInfo = new dependencies.LoggerSpy.LogCalls();

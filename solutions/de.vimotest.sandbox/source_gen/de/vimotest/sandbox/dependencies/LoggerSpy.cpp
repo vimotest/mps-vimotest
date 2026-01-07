@@ -6,15 +6,15 @@
 
 namespace dependencies
 {
-  void LoggerSpy::setDelegate(std::shared_ptr<Logger> delegate)
+  void LoggerSpy::setWrapped(std::shared_ptr<Logger> wrapped)
   {
-    this->delegate = delegate;
+    this->wrapped = wrapped;
   }
   void LoggerSpy::Log(std::string message)
   {
-    if (this->delegate != nullptr)
+    if (this->wrapped != nullptr)
     {
-      this->delegate->Log(message);
+      this->wrapped->Log(message);
     }
 
     LoggerSpy::LogCalls callInfo = { };

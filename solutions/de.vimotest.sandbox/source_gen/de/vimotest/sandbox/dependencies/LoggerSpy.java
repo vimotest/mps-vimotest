@@ -7,10 +7,10 @@ import java.util.LinkedList;
 import java.util.Objects;
 
 public class LoggerSpy implements Logger {
-  private Logger delegate;
+  private Logger wrapped;
 
-  public void setDelegate(Logger delegate) {
-    this.delegate = delegate;
+  public void setWrapped(Logger wrapped) {
+    this.wrapped = wrapped;
   }
 
   public static class LogCalls {
@@ -24,8 +24,8 @@ public class LoggerSpy implements Logger {
   private List<LogCalls> calls = new LinkedList<>();
   @Override
   public void Log(String message) {
-    if (!(Objects.equals(this.delegate, null))) {
-      this.delegate.Log(message);
+    if (!(Objects.equals(this.wrapped, null))) {
+      this.wrapped.Log(message);
     }
     LogCalls callInfo = new LogCalls();
     callInfo.messageValue = message;

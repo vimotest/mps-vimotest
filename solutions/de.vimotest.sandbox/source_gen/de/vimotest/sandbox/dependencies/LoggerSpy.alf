@@ -4,8 +4,35 @@ namespace dependencies ;
 
 class LoggerSpy specializes Logger {
   
+  private delegate : Logger  ;
+  
+  
+  public setDelegate (   in delegate: Logger  ) {
+    this.delegate = delegate;
+
+  }
+  
+  
+  public datatype LogCalls {
+    
+    public count : Integer = 0;
+    
+    public messageValue : String  ;
+  }
+  
+  private calls : LogCalls [ * ]  ;
+  
   public Log (   in message: String  ) {
-// TODO Implement
+    if ( this.delegate != null ) {
+      this.delegate.Log ( message );
+
+    } 
+
+    let callInfo: LogCalls = new LogCalls (  );
+
+    callInfo.messageValue = message;
+
+    this.calls->add ( callInfo );
 
   }
 }

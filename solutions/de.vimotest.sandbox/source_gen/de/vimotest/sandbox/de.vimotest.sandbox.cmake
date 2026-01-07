@@ -85,6 +85,7 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/subscope/RepeatUsageDependency_ViewModelTestEnvironmentImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/calls/VerifyDependencyCallViewModelTestEnvironment.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/calls/VerifyDependencyCallViewModelTestEnvironmentImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/LoggerSpy.cpp
 )
 
 set(GENERATED_HEADERS

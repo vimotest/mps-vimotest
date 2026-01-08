@@ -954,9 +954,9 @@
   <node concept="1TIwiD" id="7KHRfJVnri5">
     <property role="EcuMT" value="8948051009467167877" />
     <property role="3GE5qa" value="test.actions.base" />
-    <property role="TrG5h" value="ParameterizedCommandInvocationAction" />
-    <property role="34LRSv" value="invoke command" />
-    <ref role="1TJDcQ" node="54nmQxK9C3h" resolve="OperationInvocationAction" />
+    <property role="TrG5h" value="ParameterizedCommandCallAction" />
+    <property role="34LRSv" value="call command" />
+    <ref role="1TJDcQ" node="54nmQxK9C3h" resolve="OperationCallAction" />
     <node concept="1TJgyj" id="7KHRfJVnw5G" role="1TKVEi">
       <property role="IQ2ns" value="8948051009467187564" />
       <property role="20kJfa" value="targetCommand" />
@@ -966,7 +966,7 @@
     <node concept="1TJgyj" id="7KHRfJVn$Y1" role="1TKVEi">
       <property role="IQ2ns" value="8948051009467207553" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="parameters" />
+      <property role="20kJfa" value="arguments" />
       <ref role="20lvS9" to="28lk:2kuSLC0oUiq" resolve="PositionalTuple" />
     </node>
   </node>
@@ -1498,9 +1498,9 @@
   <node concept="1TIwiD" id="6gWUZpXe6H5">
     <property role="EcuMT" value="7222907346290764613" />
     <property role="3GE5qa" value="test.actions.base" />
-    <property role="TrG5h" value="DependencyOperationInvocationAction" />
-    <property role="34LRSv" value="invoke dependency operation" />
-    <ref role="1TJDcQ" node="54nmQxK9C3h" resolve="OperationInvocationAction" />
+    <property role="TrG5h" value="DependencyOperationCallAction" />
+    <property role="34LRSv" value="call dependency operation" />
+    <ref role="1TJDcQ" node="54nmQxK9C3h" resolve="OperationCallAction" />
     <node concept="1TJgyj" id="6gWUZpXe7fS" role="1TKVEi">
       <property role="IQ2ns" value="7222907346290766840" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1523,7 +1523,7 @@
   <node concept="1TIwiD" id="54nmQxK9C3h">
     <property role="EcuMT" value="5843239545652805841" />
     <property role="3GE5qa" value="test.actions.base.base" />
-    <property role="TrG5h" value="OperationInvocationAction" />
+    <property role="TrG5h" value="OperationCallAction" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="54nmQxK9C3k" role="PzmwI">

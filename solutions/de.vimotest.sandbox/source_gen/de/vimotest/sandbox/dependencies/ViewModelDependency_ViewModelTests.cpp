@@ -22,7 +22,7 @@ namespace dependencies
     this->testEnvironment = std::make_shared<ViewModelDependency_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
-  TEST_F(ViewModelDependency_ViewModelTests, ViewModel_Dependency_Invocation_given_when_LoadView_then_)
+  TEST_F(ViewModelDependency_ViewModelTests, ViewModel_Dependency_Call_given_when_LoadView_then_)
   {
     this->BuildSut();
     this->when_LoadView();

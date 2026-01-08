@@ -15390,7 +15390,7 @@
   </node>
   <node concept="13h7C7" id="7T8HsuT$S_n">
     <property role="3GE5qa" value="test.actions.base" />
-    <ref role="13h7C2" to="53m0:7KHRfJVnri5" resolve="ParameterizedCommandInvocationAction" />
+    <ref role="13h7C2" to="53m0:7KHRfJVnri5" resolve="ParameterizedCommandCallAction" />
     <node concept="13hLZK" id="7T8HsuT$S_o" role="13h7CW">
       <node concept="3clFbS" id="7T8HsuT$S_p" role="2VODD2" />
     </node>
@@ -15414,7 +15414,7 @@
               <property role="3oM_SC" value="to" />
             </node>
             <node concept="3oM_SD" id="54nmQxKvvEO" role="1PaTwD">
-              <property role="3oM_SC" value="OperationInvocation" />
+              <property role="3oM_SC" value="OperationCall" />
             </node>
             <node concept="3oM_SD" id="54nmQxKvvF5" role="1PaTwD">
               <property role="3oM_SC" value="when" />
@@ -15445,13 +15445,13 @@
             </node>
           </node>
           <node concept="iy1fb" id="5jkMFwF8WZa" role="3clFbw">
-            <ref role="iy1sa" to="53m0:7KHRfJVn$Y1" resolve="parameters" />
+            <ref role="iy1sa" to="53m0:7KHRfJVn$Y1" resolve="arguments" />
           </node>
         </node>
         <node concept="3clFbF" id="5jkMFwF8TJV" role="3cqZAp">
           <node concept="2OqwBi" id="5jkMFwF8TJS" role="3clFbG">
             <node concept="13iAh5" id="5jkMFwF8TJT" role="2Oq$k0">
-              <ref role="3eA5LN" to="53m0:54nmQxK9C3h" resolve="OperationInvocationAction" />
+              <ref role="3eA5LN" to="53m0:54nmQxK9C3h" resolve="OperationCallAction" />
             </node>
             <node concept="2qgKlT" id="5jkMFwF8TJU" role="2OqNvi">
               <ref role="37wK5l" to="tpcu:52_Geb4QDV$" resolve="getScope" />
@@ -15486,7 +15486,7 @@
           <node concept="2OqwBi" id="54nmQxK9GJl" role="3clFbG">
             <node concept="13iPFW" id="54nmQxK9Gxn" role="2Oq$k0" />
             <node concept="3TrEf2" id="54nmQxK9GVx" role="2OqNvi">
-              <ref role="3Tt5mk" to="53m0:7KHRfJVn$Y1" resolve="parameters" />
+              <ref role="3Tt5mk" to="53m0:7KHRfJVn$Y1" resolve="arguments" />
             </node>
           </node>
         </node>
@@ -15505,7 +15505,7 @@
             <node concept="2OqwBi" id="54nmQxKas2c" role="2Oq$k0">
               <node concept="13iPFW" id="54nmQxKas2d" role="2Oq$k0" />
               <node concept="3TrEf2" id="54nmQxKas2e" role="2OqNvi">
-                <ref role="3Tt5mk" to="53m0:7KHRfJVn$Y1" resolve="parameters" />
+                <ref role="3Tt5mk" to="53m0:7KHRfJVn$Y1" resolve="arguments" />
               </node>
             </node>
             <node concept="2DeJnY" id="54nmQxKas2f" role="2OqNvi" />
@@ -19617,7 +19617,7 @@
   </node>
   <node concept="13h7C7" id="6gWUZpXe6H7">
     <property role="3GE5qa" value="test.actions.base" />
-    <ref role="13h7C2" to="53m0:6gWUZpXe6H5" resolve="DependencyOperationInvocationAction" />
+    <ref role="13h7C2" to="53m0:6gWUZpXe6H5" resolve="DependencyOperationCallAction" />
     <node concept="13hLZK" id="6gWUZpXe6H8" role="13h7CW">
       <node concept="3clFbS" id="6gWUZpXe6H9" role="2VODD2" />
     </node>
@@ -19641,7 +19641,7 @@
               <property role="3oM_SC" value="to" />
             </node>
             <node concept="3oM_SD" id="54nmQxKvvLQ" role="1PaTwD">
-              <property role="3oM_SC" value="OperationInvocation" />
+              <property role="3oM_SC" value="OperationCall" />
             </node>
             <node concept="3oM_SD" id="54nmQxKvvLR" role="1PaTwD">
               <property role="3oM_SC" value="when" />
@@ -19792,7 +19792,7 @@
         <node concept="3clFbF" id="54nmQxK$Kxd" role="3cqZAp">
           <node concept="2OqwBi" id="54nmQxK$Kxe" role="3clFbG">
             <node concept="13iAh5" id="54nmQxK$Kxf" role="2Oq$k0">
-              <ref role="3eA5LN" to="53m0:54nmQxK9C3h" resolve="OperationInvocationAction" />
+              <ref role="3eA5LN" to="53m0:54nmQxK9C3h" resolve="OperationCallAction" />
             </node>
             <node concept="2qgKlT" id="54nmQxK$Kxg" role="2OqNvi">
               <ref role="37wK5l" to="tpcu:52_Geb4QDV$" resolve="getScope" />
@@ -19878,7 +19878,7 @@
   </node>
   <node concept="13h7C7" id="54nmQxK9D7a">
     <property role="3GE5qa" value="test.actions.base.base" />
-    <ref role="13h7C2" to="53m0:54nmQxK9C3h" resolve="OperationInvocationAction" />
+    <ref role="13h7C2" to="53m0:54nmQxK9C3h" resolve="OperationCallAction" />
     <node concept="13i0hz" id="6gWUZpXe6HE" role="13h7CS">
       <property role="TrG5h" value="toText" />
       <ref role="13i0hy" node="7T8HsuTyH9j" resolve="toText" />
@@ -20093,7 +20093,7 @@
               <property role="3oM_SC" value="to" />
             </node>
             <node concept="3oM_SD" id="54nmQxLhq3A" role="1PaTwD">
-              <property role="3oM_SC" value="OperationInvocation" />
+              <property role="3oM_SC" value="OperationCall" />
             </node>
             <node concept="3oM_SD" id="54nmQxLhq3B" role="1PaTwD">
               <property role="3oM_SC" value="when" />

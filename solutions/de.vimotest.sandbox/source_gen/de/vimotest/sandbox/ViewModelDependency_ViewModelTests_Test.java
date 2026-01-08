@@ -12,7 +12,7 @@ public class ViewModelDependency_ViewModelTests_Test {
   private ViewModelDependency_ViewModel sut;
   private ViewModelDependency_ViewModelTestEnvironment testEnvironment;
   @Test
-  public void test_ViewModel_Dependency_Invocation_given_when_LoadView_then_() throws Exception {
+  public void test_ViewModel_Dependency_Call_given_when_LoadView_then_() throws Exception {
     this.BuildSut();
     this.when_LoadView();
   }

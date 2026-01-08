@@ -17,7 +17,7 @@ class ViewModelDependency_ViewModelTests {
   }
   
   
-  public ViewModel_Dependency_Invocation_given_when_LoadView_then_ (  ) {
+  public ViewModel_Dependency_Call_given_when_LoadView_then_ (  ) {
     this.BuildSut (  );
 
     this.when_LoadView (  );

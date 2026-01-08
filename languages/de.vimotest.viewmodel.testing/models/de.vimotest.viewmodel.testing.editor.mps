@@ -3686,7 +3686,7 @@
   </node>
   <node concept="24kQdi" id="7KHRfJVnw5H">
     <property role="3GE5qa" value="test.actions.base" />
-    <ref role="1XX52x" to="53m0:7KHRfJVnri5" resolve="ParameterizedCommandInvocationAction" />
+    <ref role="1XX52x" to="53m0:7KHRfJVnri5" resolve="ParameterizedCommandCallAction" />
     <node concept="3EZMnI" id="7KHRfJVn$SJ" role="2wV5jI">
       <node concept="3F0ifn" id="7KHRfJVn$SN" role="3EZMnx">
         <property role="3F0ifm" value="call command" />
@@ -3702,7 +3702,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7KHRfJVn$Y3" role="3EZMnx">
-        <ref role="1NtTu8" to="53m0:7KHRfJVn$Y1" resolve="parameters" />
+        <ref role="1NtTu8" to="53m0:7KHRfJVn$Y1" resolve="arguments" />
         <node concept="pkWqt" id="7KHRfJVn$Y5" role="pqm2j">
           <node concept="3clFbS" id="7KHRfJVn$Y6" role="2VODD2">
             <node concept="3clFbF" id="7KHRfJVnLoT" role="3cqZAp">
@@ -3710,7 +3710,7 @@
                 <node concept="2OqwBi" id="7KHRfJVnLMg" role="2Oq$k0">
                   <node concept="pncrf" id="7KHRfJVnLoS" role="2Oq$k0" />
                   <node concept="3TrEf2" id="7KHRfJVnLXN" role="2OqNvi">
-                    <ref role="3Tt5mk" to="53m0:7KHRfJVn$Y1" resolve="parameters" />
+                    <ref role="3Tt5mk" to="53m0:7KHRfJVn$Y1" resolve="arguments" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="7KHRfJVnMqQ" role="2OqNvi" />
@@ -7393,7 +7393,7 @@
   </node>
   <node concept="24kQdi" id="6gWUZpXe6ZH">
     <property role="3GE5qa" value="test.actions.base" />
-    <ref role="1XX52x" to="53m0:6gWUZpXe6H5" resolve="DependencyOperationInvocationAction" />
+    <ref role="1XX52x" to="53m0:6gWUZpXe6H5" resolve="DependencyOperationCallAction" />
     <node concept="3EZMnI" id="6gWUZpXe6ZJ" role="2wV5jI">
       <node concept="3F0ifn" id="6gWUZpXe6ZK" role="3EZMnx">
         <property role="3F0ifm" value="call dependency" />

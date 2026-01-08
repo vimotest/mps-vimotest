@@ -1540,7 +1540,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="7KHRfJVnMJ5">
-    <property role="TrG5h" value="check_OperationInvocationAction" />
+    <property role="TrG5h" value="check_OperationCallAction" />
     <property role="3GE5qa" value="test.actions.base" />
     <node concept="3clFbS" id="7KHRfJVnMJ6" role="18ibNy">
       <node concept="3cpWs8" id="7KHRfJVoaHu" role="3cqZAp">
@@ -1613,7 +1613,7 @@
                 </node>
                 <node concept="3Cnw8n" id="7KHRfJVodu7" role="1urrFz">
                   <property role="ARO6o" value="true" />
-                  <ref role="QpYPw" node="7KHRfJVodu4" resolve="fix_OperationInvocationAction_ArgumentsCount" />
+                  <ref role="QpYPw" node="7KHRfJVodu4" resolve="fix_OperationCallAction_ArgumentsCount" />
                 </node>
               </node>
             </node>
@@ -1679,11 +1679,11 @@
     </node>
     <node concept="1YaCAy" id="7KHRfJVnMJ8" role="1YuTPh">
       <property role="TrG5h" value="node" />
-      <ref role="1YaFvo" to="53m0:54nmQxK9C3h" resolve="OperationInvocationAction" />
+      <ref role="1YaFvo" to="53m0:54nmQxK9C3h" resolve="OperationCallAction" />
     </node>
   </node>
   <node concept="Q5z_Y" id="7KHRfJVodu4">
-    <property role="TrG5h" value="fix_OperationInvocationAction_ArgumentsCount" />
+    <property role="TrG5h" value="fix_OperationCallAction_ArgumentsCount" />
     <property role="3GE5qa" value="test.actions.base" />
     <node concept="Q5ZZ6" id="7KHRfJVodu5" role="Q6x$H">
       <node concept="3clFbS" id="7KHRfJVodu6" role="2VODD2">
@@ -1691,12 +1691,12 @@
           <node concept="3cpWsn" id="7KHRfJVoe0T" role="3cpWs9">
             <property role="TrG5h" value="actionNode" />
             <node concept="3Tqbb2" id="7KHRfJVoe0v" role="1tU5fm">
-              <ref role="ehGHo" to="53m0:54nmQxK9C3h" resolve="OperationInvocationAction" />
+              <ref role="ehGHo" to="53m0:54nmQxK9C3h" resolve="OperationCallAction" />
             </node>
             <node concept="1PxgMI" id="7KHRfJVoe0U" role="33vP2m">
               <property role="1BlNFB" value="true" />
               <node concept="chp4Y" id="7KHRfJVoe0V" role="3oSUPX">
-                <ref role="cht4Q" to="53m0:54nmQxK9C3h" resolve="OperationInvocationAction" />
+                <ref role="cht4Q" to="53m0:54nmQxK9C3h" resolve="OperationCallAction" />
               </node>
               <node concept="Q6c8r" id="7KHRfJVoe0W" role="1m5AlR" />
             </node>
@@ -1828,7 +1828,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="5_TItGJV8qH">
-    <property role="TrG5h" value="typeof_OperationInvocationAction" />
+    <property role="TrG5h" value="typeof_OperationCallAction" />
     <property role="3GE5qa" value="test.actions.base" />
     <node concept="3clFbS" id="5_TItGJV8qI" role="18ibNy">
       <node concept="3cpWs8" id="54nmQxKaA2H" role="3cqZAp">
@@ -1994,7 +1994,7 @@
     </node>
     <node concept="1YaCAy" id="5_TItGJV8qK" role="1YuTPh">
       <property role="TrG5h" value="node" />
-      <ref role="1YaFvo" to="53m0:54nmQxK9C3h" resolve="OperationInvocationAction" />
+      <ref role="1YaFvo" to="53m0:54nmQxK9C3h" resolve="OperationCallAction" />
     </node>
   </node>
   <node concept="18kY7G" id="5ZcB1GgmYr3">

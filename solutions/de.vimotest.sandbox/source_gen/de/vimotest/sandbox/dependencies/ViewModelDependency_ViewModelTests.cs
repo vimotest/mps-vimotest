@@ -19,7 +19,7 @@ public class ViewModelDependency_ViewModelTests
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
-    public void ViewModel_Dependency_Invocation_given_when_LoadView_then_()
+    public void ViewModel_Dependency_Call_given_when_LoadView_then_()
     {
         this.BuildSut();
         this.when_LoadView();

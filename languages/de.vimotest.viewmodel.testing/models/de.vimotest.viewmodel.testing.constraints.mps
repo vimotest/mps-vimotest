@@ -720,7 +720,7 @@
   </node>
   <node concept="1M2fIO" id="7ynD$XoIqbQ">
     <property role="3GE5qa" value="test.actions.base" />
-    <ref role="1M2myG" to="53m0:7KHRfJVnri5" resolve="ParameterizedCommandInvocationAction" />
+    <ref role="1M2myG" to="53m0:7KHRfJVnri5" resolve="ParameterizedCommandCallAction" />
     <node concept="1N5Pfh" id="17xw4ZmNcaP" role="1Mr941">
       <ref role="1N5Vy1" to="53m0:7KHRfJVnw5G" resolve="targetCommand" />
       <node concept="1dDu$B" id="17xw4ZmNcfm" role="1N6uqs">
@@ -1318,7 +1318,7 @@
   </node>
   <node concept="1M2fIO" id="6gWUZpXe9Ym">
     <property role="3GE5qa" value="test.actions.base" />
-    <ref role="1M2myG" to="53m0:6gWUZpXe6H5" resolve="DependencyOperationInvocationAction" />
+    <ref role="1M2myG" to="53m0:6gWUZpXe6H5" resolve="DependencyOperationCallAction" />
     <node concept="1N5Pfh" id="6gWUZpXebGh" role="1Mr941">
       <ref role="1N5Vy1" to="53m0:6gWUZpXebkS" resolve="targetDependency" />
       <node concept="1dDu$B" id="6gWUZpXebGi" role="1N6uqs">

@@ -5833,7 +5833,7 @@
     <property role="TrG5h" value="ViewModelDependency_ViewModelTests" />
     <ref role="30n1PB" node="3kGPU1Qqw_Z" resolve="ViewModelDependency_ViewModel" />
     <node concept="3LKzX3" id="54nmQxEJWUe" role="30n1Qb">
-      <property role="TrG5h" value="ViewModel Dependency Invocation" />
+      <property role="TrG5h" value="ViewModel Dependency Call" />
       <node concept="1s$VFG" id="54nmQxEJWUh" role="1s$QAY">
         <node concept="DUd5q" id="54nmQxEJWUi" role="1s$QAM">
           <node concept="p182N" id="54nmQxEJWUm" role="DUiS9">

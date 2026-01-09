@@ -610,7 +610,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="1mmsj6xYUQM" role="13h7CS">
-      <property role="TrG5h" value="getWidgetNameSuffix" />
+      <property role="TrG5h" value="getWidgetTypeNameSuffix" />
       <property role="13i0it" value="true" />
       <node concept="3Tm1VV" id="1mmsj6xYUQN" role="1B3o_S" />
       <node concept="17QB3L" id="1mmsj6xYWAn" role="3clF45" />
@@ -643,7 +643,7 @@
               <node concept="2OqwBi" id="1mmsj6xZilE" role="2HTEbv">
                 <node concept="13iPFW" id="1mmsj6xZi9B" role="2Oq$k0" />
                 <node concept="2qgKlT" id="1mmsj6xZixh" role="2OqNvi">
-                  <ref role="37wK5l" node="1mmsj6xYUQM" resolve="getWidgetNameSuffix" />
+                  <ref role="37wK5l" node="1mmsj6xYUQM" resolve="getWidgetTypeNameSuffix" />
                 </node>
               </node>
             </node>
@@ -1039,8 +1039,8 @@
       <node concept="10P_77" id="3c$pnH1eFl3" role="3clF45" />
     </node>
     <node concept="13i0hz" id="1mmsj6yx1lR" role="13h7CS">
-      <property role="TrG5h" value="getWidgetNameSuffix" />
-      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetNameSuffix" />
+      <property role="TrG5h" value="getWidgetTypeNameSuffix" />
+      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetTypeNameSuffix" />
       <node concept="3Tm1VV" id="1mmsj6yx1lS" role="1B3o_S" />
       <node concept="3clFbS" id="1mmsj6yx1m2" role="3clF47">
         <node concept="3clFbF" id="1mmsj6yx2bE" role="3cqZAp">
@@ -3313,8 +3313,8 @@
       </node>
     </node>
     <node concept="13i0hz" id="1mmsj6yDowC" role="13h7CS">
-      <property role="TrG5h" value="getWidgetNameSuffix" />
-      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetNameSuffix" />
+      <property role="TrG5h" value="getWidgetTypeNameSuffix" />
+      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetTypeNameSuffix" />
       <node concept="3Tm1VV" id="1mmsj6yDowD" role="1B3o_S" />
       <node concept="3clFbS" id="1mmsj6yDowN" role="3clF47">
         <node concept="3clFbF" id="1mmsj6yDoTM" role="3cqZAp">
@@ -3744,8 +3744,8 @@
       </node>
     </node>
     <node concept="13i0hz" id="1mmsj6yDnNh" role="13h7CS">
-      <property role="TrG5h" value="getWidgetNameSuffix" />
-      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetNameSuffix" />
+      <property role="TrG5h" value="getWidgetTypeNameSuffix" />
+      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetTypeNameSuffix" />
       <node concept="3Tm1VV" id="1mmsj6yDnNi" role="1B3o_S" />
       <node concept="3clFbS" id="1mmsj6yDnNs" role="3clF47">
         <node concept="3clFbF" id="1mmsj6yDnXL" role="3cqZAp">
@@ -5060,8 +5060,8 @@
       </node>
     </node>
     <node concept="13i0hz" id="1mmsj6yDmDp" role="13h7CS">
-      <property role="TrG5h" value="getWidgetNameSuffix" />
-      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetNameSuffix" />
+      <property role="TrG5h" value="getWidgetTypeNameSuffix" />
+      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetTypeNameSuffix" />
       <node concept="3Tm1VV" id="1mmsj6yDmDq" role="1B3o_S" />
       <node concept="3clFbS" id="1mmsj6yDmD$" role="3clF47">
         <node concept="3clFbF" id="1mmsj6yDmO8" role="3cqZAp">
@@ -6301,8 +6301,8 @@
       <node concept="10P_77" id="3c$pnH1eGdU" role="3clF45" />
     </node>
     <node concept="13i0hz" id="1mmsj6yx3d8" role="13h7CS">
-      <property role="TrG5h" value="getWidgetNameSuffix" />
-      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetNameSuffix" />
+      <property role="TrG5h" value="getWidgetTypeNameSuffix" />
+      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetTypeNameSuffix" />
       <node concept="3Tm1VV" id="1mmsj6yx3d9" role="1B3o_S" />
       <node concept="3clFbS" id="1mmsj6yx3dj" role="3clF47">
         <node concept="3clFbF" id="1mmsj6yx3D8" role="3cqZAp">
@@ -6594,8 +6594,8 @@
       <node concept="10P_77" id="3c$pnH1eISX" role="3clF45" />
     </node>
     <node concept="13i0hz" id="1mmsj6yx4wx" role="13h7CS">
-      <property role="TrG5h" value="getWidgetNameSuffix" />
-      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetNameSuffix" />
+      <property role="TrG5h" value="getWidgetTypeNameSuffix" />
+      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetTypeNameSuffix" />
       <node concept="3Tm1VV" id="1mmsj6yx4wy" role="1B3o_S" />
       <node concept="3clFbS" id="1mmsj6yx4wG" role="3clF47">
         <node concept="3clFbF" id="1mmsj6yx4Gj" role="3cqZAp">
@@ -11079,8 +11079,8 @@
       </node>
     </node>
     <node concept="13i0hz" id="4PSlizhZhBn" role="13h7CS">
-      <property role="TrG5h" value="getWidgetNameSuffix" />
-      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetNameSuffix" />
+      <property role="TrG5h" value="getWidgetTypeNameSuffix" />
+      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetTypeNameSuffix" />
       <node concept="3Tm1VV" id="4PSlizhZhBo" role="1B3o_S" />
       <node concept="3clFbS" id="4PSlizhZhBp" role="3clF47">
         <node concept="3clFbF" id="4PSlizhZhBq" role="3cqZAp">
@@ -11209,8 +11209,8 @@
       <node concept="10P_77" id="5Pt$ekxgGA7" role="3clF45" />
     </node>
     <node concept="13i0hz" id="4PSlizhZ0_9" role="13h7CS">
-      <property role="TrG5h" value="getWidgetNameSuffix" />
-      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetNameSuffix" />
+      <property role="TrG5h" value="getWidgetTypeNameSuffix" />
+      <ref role="13i0hy" node="1mmsj6xYUQM" resolve="getWidgetTypeNameSuffix" />
       <node concept="3Tm1VV" id="4PSlizhZ0_a" role="1B3o_S" />
       <node concept="3clFbS" id="4PSlizhZ0_k" role="3clF47">
         <node concept="3clFbF" id="4PSlizhZetv" role="3cqZAp">

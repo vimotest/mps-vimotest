@@ -1213,6 +1213,9 @@
     <node concept="PrWs8" id="2N4oO4qwWpY" role="PrDN$">
       <ref role="PrY4T" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
     </node>
+    <node concept="PrWs8" id="1U5fKw6KX_p" role="PrDN$">
+      <ref role="PrY4T" node="3JF9X1LrZr1" resolve="IHasNamespace" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3JF9X1LrZr1">
     <property role="EcuMT" value="4317588443974596289" />
@@ -1591,6 +1594,9 @@
     </node>
     <node concept="PrWs8" id="6qlTyZCQFe6" role="PzmwI">
       <ref role="PrY4T" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+    </node>
+    <node concept="PrWs8" id="1U5fKw6KXiy" role="PzmwI">
+      <ref role="PrY4T" node="3JF9X1LrZr1" resolve="IHasNamespace" />
     </node>
     <node concept="1TJgyi" id="6qlTyZCQCeM" role="1TKVEl">
       <property role="IQ2nx" value="7392067456843023282" />

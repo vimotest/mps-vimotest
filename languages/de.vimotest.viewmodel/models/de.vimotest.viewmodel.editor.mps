@@ -3924,6 +3924,9 @@
       </node>
       <node concept="l2Vlx" id="1RiAxJSfEZu" role="2iSdaV" />
     </node>
+    <node concept="PMmxH" id="1U5fKw6KYxe" role="6VMZX">
+      <ref role="PMmxG" node="1U5fKw6KYx6" resolve="IRowBasedFeature_Inspector_EC" />
+    </node>
   </node>
   <node concept="24kQdi" id="1RiAxJSg_pR">
     <property role="3GE5qa" value="features" />
@@ -3952,6 +3955,9 @@
       </node>
       <node concept="l2Vlx" id="1RiAxJSgEdw" role="2iSdaV" />
     </node>
+    <node concept="PMmxH" id="1U5fKw6KYxf" role="6VMZX">
+      <ref role="PMmxG" node="1U5fKw6KYx6" resolve="IRowBasedFeature_Inspector_EC" />
+    </node>
   </node>
   <node concept="24kQdi" id="1RiAxJSgEdy">
     <property role="3GE5qa" value="features" />
@@ -3970,6 +3976,9 @@
         </node>
       </node>
       <node concept="l2Vlx" id="1RiAxJSgJ3p" role="2iSdaV" />
+    </node>
+    <node concept="PMmxH" id="1U5fKw6KYxd" role="6VMZX">
+      <ref role="PMmxG" node="1U5fKw6KYx6" resolve="IRowBasedFeature_Inspector_EC" />
     </node>
   </node>
   <node concept="PKFIW" id="3JF9X1LtxCE">
@@ -5337,12 +5346,20 @@
       <node concept="PMmxH" id="3YuUBZ_RxMe" role="3EZMnx">
         <ref role="PMmxG" node="1F_Q10zSP_8" resolve="ViewWidget_Commands_EC" />
       </node>
+      <node concept="3F0ifn" id="1U5fKw6KYrc" role="3EZMnx" />
       <node concept="3F0ifn" id="3YuUBZ_RxMf" role="3EZMnx">
         <property role="3F0ifm" value="--- Radio Buttons" />
       </node>
       <node concept="3F2HdR" id="3YuUBZ_RxMh" role="3EZMnx">
         <ref role="1NtTu8" to="at53:12kpBrp1HEy" resolve="radioButtonWidgets" />
         <node concept="2iRkQZ" id="3YuUBZ_RxMj" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="1U5fKw6KYrb" role="3EZMnx" />
+      <node concept="3F0ifn" id="1U5fKw6KYr7" role="3EZMnx">
+        <property role="3F0ifm" value="--- Type Information" />
+      </node>
+      <node concept="PMmxH" id="1U5fKw6KYra" role="3EZMnx">
+        <ref role="PMmxG" node="3JF9X1LtxCE" resolve="IHasNamespace_EC" />
       </node>
     </node>
   </node>
@@ -5803,6 +5820,23 @@
         </node>
       </node>
       <node concept="2iRfu4" id="HXq1W42mE7" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="1U5fKw6KYx6">
+    <property role="3GE5qa" value="features.rowbased" />
+    <property role="TrG5h" value="IRowBasedFeature_Inspector_EC" />
+    <ref role="1XX52x" to="at53:1RiAxJSe_9Q" resolve="IRowBasedFeature" />
+    <node concept="3EZMnI" id="1U5fKw6KYx8" role="2wV5jI">
+      <node concept="3F0ifn" id="1U5fKw6KYx9" role="3EZMnx">
+        <property role="3F0ifm" value="--- Type Information" />
+      </node>
+      <node concept="PMmxH" id="1U5fKw6KYxa" role="3EZMnx">
+        <ref role="PMmxG" node="3JF9X1LtxCE" resolve="IHasNamespace_EC" />
+        <node concept="pVoyu" id="1U5fKw6KYxb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1U5fKw6KYxc" role="2iSdaV" />
     </node>
   </node>
 </model>

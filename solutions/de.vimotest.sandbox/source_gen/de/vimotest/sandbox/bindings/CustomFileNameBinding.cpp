@@ -9,7 +9,7 @@ namespace bindings
   {
     return this->MyElementsTableRows;
   }
-  void ViMoTestFileNameBinding::loadView()
+  void ViMoTestFileNameBinding::loadViewModel()
   {
   }
 }

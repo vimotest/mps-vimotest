@@ -10,6 +10,6 @@ public class ViMoTestFileNameBinding {
   public List<ViMoTestFileNameBindingMyElementsRow> getMyElementsTableRows() {
     return this.MyElementsTableRows;
   }
-  public void loadView() {
+  public void loadViewModel() {
   }
 }

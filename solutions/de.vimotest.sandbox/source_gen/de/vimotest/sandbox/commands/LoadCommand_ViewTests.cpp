@@ -13,7 +13,7 @@ namespace commands
     std::shared_ptr<LoadCommand_ViewModel> sut;
     std::shared_ptr<LoadCommand_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
-    virtual void when_LoadView();
+    virtual void when_LoadViewModel();
     virtual void when_LoadViewWithName();
   protected:
     void SetUp() override;
@@ -23,10 +23,10 @@ namespace commands
     this->testEnvironment = std::make_shared<LoadCommand_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
-  TEST_F(LoadCommand_ViewTests, Load_Commands_Call_given_when_LoadView_then_)
+  TEST_F(LoadCommand_ViewTests, Load_Commands_Call_given_when_LoadViewModel_then_)
   {
     this->BuildSut();
-    this->when_LoadView();
+    this->when_LoadViewModel();
   }
   TEST_F(LoadCommand_ViewTests, Load_with_Parameter_Commands_Call_given_when_LoadViewWithName_then_)
   {
@@ -37,9 +37,9 @@ namespace commands
   {
     this->sut = this->testEnvironment->BuildSut();
   }
-  void LoadCommand_ViewTests::when_LoadView()
+  void LoadCommand_ViewTests::when_LoadViewModel()
   {
-    this->sut->loadView();
+    this->sut->loadViewModel();
   }
   void LoadCommand_ViewTests::when_LoadViewWithName()
   {

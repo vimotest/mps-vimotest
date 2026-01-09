@@ -28,14 +28,14 @@ public class LoginViewModel {
   public Boolean getIsErrorLabelVisible() {
     return this.isErrorLabelVisible;
   }
-  public void loadView() {
+  public void loadViewModel() {
   }
-  public void usernameTextFilled(String text) {
+  public void usernameTextBoxTextFilled(String text) {
   }
-  public void passwordTextFilled(String text) {
+  public void passwordTextBoxTextFilled(String text) {
   }
-  public void showPasswordChecked(Boolean isChecked) {
+  public void showPasswordCheckBoxChecked(Boolean isChecked) {
   }
-  public void loginClicked() {
+  public void loginButtonClicked() {
   }
 }

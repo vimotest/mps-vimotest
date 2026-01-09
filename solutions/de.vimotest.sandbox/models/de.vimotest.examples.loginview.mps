@@ -30,7 +30,7 @@
       </concept>
     </language>
     <language id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing">
-      <concept id="8948051009467167877" name="de.vimotest.viewmodel.testing.structure.ViewCommandInvocationAction" flags="ng" index="27s6xY">
+      <concept id="8948051009467167877" name="de.vimotest.viewmodel.testing.structure.ParameterizedCommandCallAction" flags="ng" index="27s6xY">
         <reference id="8948051009467187564" name="targetCommand" index="27sXQn" />
       </concept>
       <concept id="5213916851000129542" name="de.vimotest.viewmodel.testing.structure.CheckBoxCheck" flags="ng" index="C4Fn6">
@@ -134,15 +134,15 @@
         <child id="6201744883139140302" name="textFeature" index="2X2XNi" />
         <child id="6201744883139140303" name="enabledFeature" index="2X2XNj" />
       </concept>
-      <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommands" flags="ng" index="103ZXx">
-        <child id="777152910169039599" name="commands" index="1006ar" />
+      <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommandSection" flags="ng" index="103ZXx">
+        <child id="777152910169039599" name="contents" index="1006ar" />
       </concept>
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
         <property id="4513875792335097421" name="baseName" index="$YGLj" />
-        <child id="777152910168882972" name="viewModelCommands" index="103ZXC" />
-        <child id="777152910168882975" name="viewModelData" index="103ZXF" />
+        <child id="777152910168882972" name="commandSection" index="103ZXC" />
+        <child id="777152910168882975" name="stateSection" index="103ZXF" />
       </concept>
-      <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelData" flags="ng" index="103ZXB" />
+      <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelStateSection" flags="ng" index="103ZXB" />
       <concept id="5775867078593476371" name="de.vimotest.viewmodel.structure.TextColorFeature" flags="ng" index="31hZui" />
       <concept id="7922086861330453131" name="de.vimotest.viewmodel.structure.ToolTipFeature" flags="ng" index="1G_fEc">
         <child id="7922086861494473183" name="defaultToolTipText" index="1AQzBo" />
@@ -158,7 +158,7 @@
     <property role="$YGLj" value="LoginView" />
     <node concept="103ZXx" id="17xw4ZmRb8q" role="103ZXC">
       <node concept="3Vw88J" id="17xw4ZmUI2u" role="1006ar">
-        <property role="TrG5h" value="LoadView" />
+        <property role="TrG5h" value="LoadViewModel" />
       </node>
     </node>
     <node concept="103ZXB" id="17xw4ZmRb8r" role="103ZXF">
@@ -229,7 +229,7 @@
       <node concept="1s$VFG" id="6fEYrkZxlQN" role="1s$QAY">
         <node concept="DUd5q" id="17xw4ZmUXTS" role="1s$QAM">
           <node concept="27s6xY" id="17xw4ZmUXTU" role="DUiS9">
-            <ref role="27sXQn" node="17xw4ZmUI2u" resolve="LoadView" />
+            <ref role="27sXQn" node="17xw4ZmUI2u" resolve="LoadViewModel" />
           </node>
         </node>
         <node concept="DUd5q" id="17xw4ZmUXU7" role="1s$QAM">
@@ -288,7 +288,7 @@
       <node concept="1s$VFG" id="6fEYrkZxlQZ" role="1s$QAY">
         <node concept="DUd5q" id="6fEYrkZxlR0" role="1s$QAM">
           <node concept="27s6xY" id="6fEYrkZxlR2" role="DUiS9">
-            <ref role="27sXQn" node="17xw4ZmUI2u" resolve="LoadView" />
+            <ref role="27sXQn" node="17xw4ZmUI2u" resolve="LoadViewModel" />
           </node>
         </node>
         <node concept="DUd5q" id="6fEYrkZxlR4" role="1s$QAM">
@@ -342,7 +342,7 @@
       <node concept="1s$VFG" id="6RKU0s0VjnK" role="1s$QAY">
         <node concept="DUd5q" id="6RKU0s0VjnL" role="1s$QAM">
           <node concept="27s6xY" id="6RKU0s0VjnM" role="DUiS9">
-            <ref role="27sXQn" node="17xw4ZmUI2u" resolve="LoadView" />
+            <ref role="27sXQn" node="17xw4ZmUI2u" resolve="LoadViewModel" />
           </node>
         </node>
         <node concept="DUd2R" id="6RKU0s0VjnT" role="1s$QAX">
@@ -383,7 +383,7 @@
       <node concept="1s$VFG" id="6RKU0s1bfV_" role="1s$QAY">
         <node concept="DUd5q" id="6RKU0s1bfVA" role="1s$QAM">
           <node concept="27s6xY" id="6RKU0s1bfVB" role="DUiS9">
-            <ref role="27sXQn" node="17xw4ZmUI2u" resolve="LoadView" />
+            <ref role="27sXQn" node="17xw4ZmUI2u" resolve="LoadViewModel" />
           </node>
         </node>
         <node concept="DUd5q" id="6RKU0s1bfVQ" role="1s$QAM">
@@ -440,7 +440,7 @@
       <node concept="1s$VFG" id="6RKU0s1bfVY" role="1s$QAY">
         <node concept="DUd5q" id="6RKU0s1bfVZ" role="1s$QAM">
           <node concept="27s6xY" id="6RKU0s1bfW0" role="DUiS9">
-            <ref role="27sXQn" node="17xw4ZmUI2u" resolve="LoadView" />
+            <ref role="27sXQn" node="17xw4ZmUI2u" resolve="LoadViewModel" />
           </node>
         </node>
         <node concept="DUd5q" id="6RKU0s1bfW1" role="1s$QAM">

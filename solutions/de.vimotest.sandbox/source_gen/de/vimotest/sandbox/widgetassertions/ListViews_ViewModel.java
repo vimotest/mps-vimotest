@@ -74,6 +74,6 @@ public class ListViews_ViewModel {
   public List<ListViews_ViewModelMyButtonsRow> getMyButtonsListRows() {
     return this.MyButtonsListRows;
   }
-  public void buttonsClicked(Integer rowIndex) {
+  public void buttonsButtonClicked(Integer rowIndex) {
   }
 }

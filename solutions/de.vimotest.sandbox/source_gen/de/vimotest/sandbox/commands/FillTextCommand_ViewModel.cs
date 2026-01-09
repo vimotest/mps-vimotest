@@ -35,11 +35,11 @@ namespace commands
             return this.MyFreeValueComboBoxText;
         }
 
-        public virtual void myValueTextFilled(string text)
+        public virtual void myValueTextBoxTextFilled(string text)
         {
         }
 
-        public virtual void myFreeValueTextFilled(string text)
+        public virtual void myFreeValueComboBoxTextFilled(string text)
         {
         }
     }

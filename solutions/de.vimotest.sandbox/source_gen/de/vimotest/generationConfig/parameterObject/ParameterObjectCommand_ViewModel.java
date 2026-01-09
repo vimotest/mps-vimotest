@@ -29,7 +29,7 @@ public class ParameterObjectCommand_ViewModel {
       this.Value3 = Value3;
     }
   }
-  public void loadView(LoadViewParams parameters) {
+  public void loadViewModel(LoadViewParams parameters) {
   }
   public static class CheckParams {
     public Boolean isChecked;
@@ -39,6 +39,6 @@ public class ParameterObjectCommand_ViewModel {
       this.isChecked = isChecked;
     }
   }
-  public void myFlagChecked(CheckParams parameters) {
+  public void myFlagCheckBoxChecked(CheckParams parameters) {
   }
 }

@@ -117,27 +117,27 @@ public class SelectRowCommand_ViewModel {
 
   }
   
-  public myListViewElementsRowSelected (   in rowIndex: Integer  ) {    
+  public myListViewElementsListRowSelected (   in rowIndex: Integer  ) {    
   }
   
-  public myStringRowHandleListViewElementsRowSelected (   in rowHandle: String  ) {    
+  public myStringRowHandleListViewElementsListRowSelected (   in rowHandle: String  ) {    
   }
   
-  public myTableViewElementsRowSelected (   in rowIndex: Integer  ) {    
+  public myTableViewElementsTableRowSelected (   in rowIndex: Integer  ) {    
   }
   
-  public myStringRowHandleTableViewElementsRowSelected (   in rowHandle: String  ) {    
+  public myStringRowHandleTableViewElementsTableRowSelected (   in rowHandle: String  ) {    
   }
   
-  public myTreeViewElementsRowSelected (   in rowIndex: Integer  ) {    
+  public myTreeViewElementsTreeRowSelected (   in rowIndex: Integer  ) {    
   }
   
-  public myStringRowHandleTreeViewElementsRowSelected (   in rowHandle: String  ) {    
+  public myStringRowHandleTreeViewElementsTreeRowSelected (   in rowHandle: String  ) {    
   }
   
-  public myIndexBasedMultiSelectRowListViewElementsRowSelected (   in rowIndices: Integer [ * ]  ) {    
+  public myIndexBasedMultiSelectRowListViewElementsListRowSelected (   in rowIndices: Integer [ * ]  ) {    
   }
   
-  public myStringHandleMultiSelectRowListViewElementsRowSelected (   in rowHandles: String [ * ]  ) {    
+  public myStringHandleMultiSelectRowListViewElementsListRowSelected (   in rowHandles: String [ * ]  ) {    
   }
 }

@@ -120,35 +120,35 @@ namespace commands
             return this.MyStringHandleMultiSelectRowListViewElementsListSelectedRows;
         }
 
-        public virtual void myListViewElementsRowSelected(int rowIndex)
+        public virtual void myListViewElementsListRowSelected(int rowIndex)
         {
         }
 
-        public virtual void myStringRowHandleListViewElementsRowSelected(string rowHandle)
+        public virtual void myStringRowHandleListViewElementsListRowSelected(string rowHandle)
         {
         }
 
-        public virtual void myTableViewElementsRowSelected(int rowIndex)
+        public virtual void myTableViewElementsTableRowSelected(int rowIndex)
         {
         }
 
-        public virtual void myStringRowHandleTableViewElementsRowSelected(string rowHandle)
+        public virtual void myStringRowHandleTableViewElementsTableRowSelected(string rowHandle)
         {
         }
 
-        public virtual void myTreeViewElementsRowSelected(int rowIndex)
+        public virtual void myTreeViewElementsTreeRowSelected(int rowIndex)
         {
         }
 
-        public virtual void myStringRowHandleTreeViewElementsRowSelected(string rowHandle)
+        public virtual void myStringRowHandleTreeViewElementsTreeRowSelected(string rowHandle)
         {
         }
 
-        public virtual void myIndexBasedMultiSelectRowListViewElementsRowSelected(System.Collections.Generic.List<int> rowIndices)
+        public virtual void myIndexBasedMultiSelectRowListViewElementsListRowSelected(System.Collections.Generic.List<int> rowIndices)
         {
         }
 
-        public virtual void myStringHandleMultiSelectRowListViewElementsRowSelected(System.Collections.Generic.List<string> rowHandles)
+        public virtual void myStringHandleMultiSelectRowListViewElementsListRowSelected(System.Collections.Generic.List<string> rowHandles)
         {
         }
     }

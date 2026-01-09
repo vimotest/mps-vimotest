@@ -17,10 +17,10 @@ namespace commands
   {
     return this->MyOptionsRadioButtonGroupSelectedEntry;
   }
-  void SelectEntryCommand_ViewModel::myElementsEntrySelected(std::string entryName)
+  void SelectEntryCommand_ViewModel::myElementsComboBoxEntrySelected(std::string entryName)
   {
   }
-  void SelectEntryCommand_ViewModel::myOptionsEntrySelected(SelectEntryCommand_ViewModelMyOptionsOption entryName)
+  void SelectEntryCommand_ViewModel::myOptionsRadioButtonGroupEntrySelected(SelectEntryCommand_ViewModelMyOptionsOption entryName)
   {
   }
 }

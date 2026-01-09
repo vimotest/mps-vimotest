@@ -12,8 +12,8 @@ public class CheckCommand_ViewModel {
   public Boolean getIsMyCheckBox2CheckBoxChecked() {
     return this.isMyCheckBox2CheckBoxChecked;
   }
-  public void myCheckBox1Checked(Boolean isChecked) {
+  public void myCheckBox1CheckBoxChecked(Boolean isChecked) {
   }
-  public void myCheckBox2Checked(Boolean isChecked) {
+  public void myCheckBox2CheckBoxChecked(Boolean isChecked) {
   }
 }

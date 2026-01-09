@@ -10,10 +10,10 @@ namespace commands
   {
     return this->isMyCheckBox2CheckBoxChecked;
   }
-  void CheckCommand_ViewModel::myCheckBox1Checked(bool isChecked)
+  void CheckCommand_ViewModel::myCheckBox1CheckBoxChecked(bool isChecked)
   {
   }
-  void CheckCommand_ViewModel::myCheckBox2Checked(bool isChecked)
+  void CheckCommand_ViewModel::myCheckBox2CheckBoxChecked(bool isChecked)
   {
   }
 }

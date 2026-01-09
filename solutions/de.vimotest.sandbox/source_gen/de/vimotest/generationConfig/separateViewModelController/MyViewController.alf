@@ -5,9 +5,9 @@
 
 public abstract class MyViewController {
   
-  public loadView (  ) {    
+  public loadViewModel (  ) {    
   }
   
-  public myFlagChecked (   in isChecked: Boolean  ) {    
+  public myFlagCheckBoxChecked (   in isChecked: Boolean  ) {    
   }
 }

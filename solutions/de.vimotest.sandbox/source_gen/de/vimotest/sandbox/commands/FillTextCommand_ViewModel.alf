@@ -33,9 +33,9 @@ public class FillTextCommand_ViewModel {
 
   }
   
-  public myValueTextFilled (   in text: String  ) {    
+  public myValueTextBoxTextFilled (   in text: String  ) {    
   }
   
-  public myFreeValueTextFilled (   in text: String  ) {    
+  public myFreeValueComboBoxTextFilled (   in text: String  ) {    
   }
 }

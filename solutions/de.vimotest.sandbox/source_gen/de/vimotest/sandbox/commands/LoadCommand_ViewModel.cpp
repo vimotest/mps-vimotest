@@ -3,7 +3,7 @@
 
 namespace commands
 {
-  void LoadCommand_ViewModel::loadView()
+  void LoadCommand_ViewModel::loadViewModel()
   {
   }
   void LoadCommand_ViewModel::loadViewWithName(std::string Name)

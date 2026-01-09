@@ -26,9 +26,9 @@ public class SelectEntryCommand_ViewModel {
 
   }
   
-  public myElementsEntrySelected (   in entryName: String  ) {    
+  public myElementsComboBoxEntrySelected (   in entryName: String  ) {    
   }
   
-  public myOptionsEntrySelected (   in entryName: SelectEntryCommand_ViewModelMyOptionsOption  ) {    
+  public myOptionsRadioButtonGroupEntrySelected (   in entryName: SelectEntryCommand_ViewModelMyOptionsOption  ) {    
   }
 }

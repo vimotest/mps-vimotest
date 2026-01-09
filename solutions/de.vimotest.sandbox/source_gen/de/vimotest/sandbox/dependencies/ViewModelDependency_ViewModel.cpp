@@ -6,7 +6,7 @@ namespace dependencies
   {
     return this->MyBool;
   }
-  void ViewModelDependency_ViewModel::loadView()
+  void ViewModelDependency_ViewModel::loadViewModel()
   {
   }
 }

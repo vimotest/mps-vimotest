@@ -34,10 +34,10 @@ namespace commands
   }
   void CheckCommand_ViewTests::when_check_MyCheckBox1()
   {
-    this->sut->myCheckBox1Checked(true);
+    this->sut->myCheckBox1CheckBoxChecked(true);
   }
   void CheckCommand_ViewTests::when_uncheck_MyCheckBox2()
   {
-    this->sut->myCheckBox2Checked(false);
+    this->sut->myCheckBox2CheckBoxChecked(false);
   }
 }

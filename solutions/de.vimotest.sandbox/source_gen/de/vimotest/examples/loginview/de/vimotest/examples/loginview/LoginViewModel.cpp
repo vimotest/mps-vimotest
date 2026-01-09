@@ -27,19 +27,19 @@ namespace de::vimotest::examples::loginview
   {
     return this->isErrorLabelVisible;
   }
-  void LoginViewModel::loadView()
+  void LoginViewModel::loadViewModel()
   {
   }
-  void LoginViewModel::usernameTextFilled(std::string text)
+  void LoginViewModel::usernameTextBoxTextFilled(std::string text)
   {
   }
-  void LoginViewModel::passwordTextFilled(std::string text)
+  void LoginViewModel::passwordTextBoxTextFilled(std::string text)
   {
   }
-  void LoginViewModel::showPasswordChecked(bool isChecked)
+  void LoginViewModel::showPasswordCheckBoxChecked(bool isChecked)
   {
   }
-  void LoginViewModel::loginClicked()
+  void LoginViewModel::loginButtonClicked()
   {
   }
 }

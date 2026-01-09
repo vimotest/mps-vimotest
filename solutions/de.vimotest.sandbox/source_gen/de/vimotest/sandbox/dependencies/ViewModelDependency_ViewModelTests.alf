@@ -17,10 +17,10 @@ class ViewModelDependency_ViewModelTests {
   }
   
   
-  public ViewModel_Dependency_Call_given_when_LoadView_then_ (  ) {
+  public ViewModel_Dependency_Call_given_when_LoadViewModel_then_ (  ) {
     this.BuildSut (  );
 
-    this.when_LoadView (  );
+    this.when_LoadViewModel (  );
 
   }
   
@@ -37,8 +37,8 @@ class ViewModelDependency_ViewModelTests {
   // When Helper Definitions
 
   
-  public when_LoadView (  ) {
-    this.testEnvironment.getSimpleDependency_ViewModel (  ).loadView (  );
+  public when_LoadViewModel (  ) {
+    this.testEnvironment.getSimpleDependency_ViewModel (  ).loadViewModel (  );
 
   }
   

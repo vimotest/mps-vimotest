@@ -19,10 +19,10 @@ public class LoadCommand_ViewTests
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
-    public void Load_Commands_Call_given_when_LoadView_then_()
+    public void Load_Commands_Call_given_when_LoadViewModel_then_()
     {
         this.BuildSut();
-        this.when_LoadView();
+        this.when_LoadViewModel();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -37,9 +37,9 @@ public class LoadCommand_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
-    public virtual void when_LoadView()
+    public virtual void when_LoadViewModel()
     {
-        this.sut.loadView();
+        this.sut.loadViewModel();
     }
 
     public virtual void when_LoadViewWithName()

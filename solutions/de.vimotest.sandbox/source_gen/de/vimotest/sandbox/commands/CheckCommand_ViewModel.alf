@@ -19,9 +19,9 @@ public class CheckCommand_ViewModel {
 
   }
   
-  public myCheckBox1Checked (   in isChecked: Boolean  ) {    
+  public myCheckBox1CheckBoxChecked (   in isChecked: Boolean  ) {    
   }
   
-  public myCheckBox2Checked (   in isChecked: Boolean  ) {    
+  public myCheckBox2CheckBoxChecked (   in isChecked: Boolean  ) {    
   }
 }

@@ -1095,7 +1095,7 @@
   <node concept="1TIwiD" id="6kjlgUu$Xsx">
     <property role="EcuMT" value="7283258543666616097" />
     <property role="TrG5h" value="LoadCommand" />
-    <property role="34LRSv" value="load view" />
+    <property role="34LRSv" value="load view model" />
     <property role="3GE5qa" value="commands" />
     <ref role="1TJDcQ" node="7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
   </node>
@@ -1595,13 +1595,13 @@
     <node concept="PrWs8" id="6qlTyZCQFe6" role="PzmwI">
       <ref role="PrY4T" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
     </node>
-    <node concept="PrWs8" id="1U5fKw6KXiy" role="PzmwI">
-      <ref role="PrY4T" node="3JF9X1LrZr1" resolve="IHasNamespace" />
-    </node>
     <node concept="1TJgyi" id="6qlTyZCQCeM" role="1TKVEl">
       <property role="IQ2nx" value="7392067456843023282" />
       <property role="TrG5h" value="isFixedEnumeration" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="1U5fKw6KXiy" role="PzmwI">
+      <ref role="PrY4T" node="3JF9X1LrZr1" resolve="IHasNamespace" />
     </node>
   </node>
   <node concept="PlHQZ" id="1Ukm5RfrSRo">

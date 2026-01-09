@@ -82,37 +82,37 @@ public class SelectRowCommand_ViewTests
 
     public virtual void when_select_row_1_in_MyListViewElements()
     {
-        this.sut.myListViewElementsRowSelected(1);
+        this.sut.myListViewElementsListRowSelected(1);
     }
 
     public virtual void when_select_row_ROW_B_in_MyStringRowHandleListViewElements()
     {
-        this.sut.myStringRowHandleListViewElementsRowSelected("ROW_B");
+        this.sut.myStringRowHandleListViewElementsListRowSelected("ROW_B");
     }
 
     public virtual void when_select_row_1_in_MyTableViewElements()
     {
-        this.sut.myTableViewElementsRowSelected(1);
+        this.sut.myTableViewElementsTableRowSelected(1);
     }
 
     public virtual void when_select_row_ROW_B_in_MyStringRowHandleTableViewElements()
     {
-        this.sut.myStringRowHandleTableViewElementsRowSelected("ROW_B");
+        this.sut.myStringRowHandleTableViewElementsTableRowSelected("ROW_B");
     }
 
     public virtual void when_select_row_1_in_MyTreeViewElements()
     {
-        this.sut.myTreeViewElementsRowSelected(1);
+        this.sut.myTreeViewElementsTreeRowSelected(1);
     }
 
     public virtual void when_select_row_ROW_B_in_MyStringRowHandleTreeViewElements()
     {
-        this.sut.myStringRowHandleTreeViewElementsRowSelected("ROW_B");
+        this.sut.myStringRowHandleTreeViewElementsTreeRowSelected("ROW_B");
     }
 
     public virtual void when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListViewElements()
     {
-        this.sut.myStringHandleMultiSelectRowListViewElementsRowSelected(new System.Collections.Generic.List<string> { "ROW_A", "ROW_C" });
+        this.sut.myStringHandleMultiSelectRowListViewElementsListRowSelected(new System.Collections.Generic.List<string> { "ROW_A", "ROW_C" });
     }
 
     public virtual void then_MyListViewElements_has_2_rows()

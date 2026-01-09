@@ -13,7 +13,7 @@ namespace dependencies
     std::shared_ptr<ViewModelDependency_ViewModel> sut;
     std::shared_ptr<ViewModelDependency_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
-    virtual void when_LoadView();
+    virtual void when_LoadViewModel();
   protected:
     void SetUp() override;
   };
@@ -22,17 +22,17 @@ namespace dependencies
     this->testEnvironment = std::make_shared<ViewModelDependency_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
-  TEST_F(ViewModelDependency_ViewModelTests, ViewModel_Dependency_Call_given_when_LoadView_then_)
+  TEST_F(ViewModelDependency_ViewModelTests, ViewModel_Dependency_Call_given_when_LoadViewModel_then_)
   {
     this->BuildSut();
-    this->when_LoadView();
+    this->when_LoadViewModel();
   }
   void ViewModelDependency_ViewModelTests::BuildSut()
   {
     this->sut = this->testEnvironment->BuildSut();
   }
-  void ViewModelDependency_ViewModelTests::when_LoadView()
+  void ViewModelDependency_ViewModelTests::when_LoadViewModel()
   {
-    this->testEnvironment->getSimpleDependency_ViewModel()->loadView();
+    this->testEnvironment->getSimpleDependency_ViewModel()->loadViewModel();
   }
 }

@@ -57,31 +57,31 @@ public class RowBasedCommand_ViewTests_Test {
 
 
   public void when_check_Checkboxes_at_0() {
-    this.sut.checkboxesChecked(0, true);
+    this.sut.checkboxesCheckBoxChecked(0, true);
   }
   public void when_uncheck_Checkboxes_at_1() {
-    this.sut.checkboxesChecked(1, false);
+    this.sut.checkboxesCheckBoxChecked(1, false);
   }
   public void when_select_entry_MyText1_in_FreeTextComboBoxes_at_0() {
-    this.sut.freeTextComboBoxesEntrySelected(0, "MyText1");
+    this.sut.freeTextComboBoxesComboBoxEntrySelected(0, "MyText1");
   }
   public void when_select_entry_MyText2_in_FreeTextComboBoxes_at_1() {
-    this.sut.freeTextComboBoxesEntrySelected(1, "MyText2");
+    this.sut.freeTextComboBoxesComboBoxEntrySelected(1, "MyText2");
   }
   public void when_select_entry_B_in_EntryComboBoxes_at_0() {
-    this.sut.entryComboBoxesEntrySelected(0, "B");
+    this.sut.entryComboBoxesComboBoxEntrySelected(0, "B");
   }
   public void when_select_entry_D_in_EntryComboBoxes_at_1() {
-    this.sut.entryComboBoxesEntrySelected(1, "D");
+    this.sut.entryComboBoxesComboBoxEntrySelected(1, "D");
   }
   public void when_fill_A_in_TextBoxes_at_0() {
-    this.sut.textBoxesTextFilled(0, "A");
+    this.sut.textBoxesTextBoxTextFilled(0, "A");
   }
   public void when_fill_B_in_TextBoxes_at_1() {
-    this.sut.textBoxesTextFilled(1, "B");
+    this.sut.textBoxesTextBoxTextFilled(1, "B");
   }
   public void when_click_Buttons_at_0() {
-    this.sut.buttonsClicked(0);
+    this.sut.buttonsButtonClicked(0);
   }
 
 

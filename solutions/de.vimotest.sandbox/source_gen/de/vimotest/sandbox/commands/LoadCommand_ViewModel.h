@@ -7,7 +7,7 @@ namespace commands
   class LoadCommand_ViewModel
   {
   public:
-    virtual void loadView();
+    virtual void loadViewModel();
     virtual void loadViewWithName(std::string Name);
   };
 }

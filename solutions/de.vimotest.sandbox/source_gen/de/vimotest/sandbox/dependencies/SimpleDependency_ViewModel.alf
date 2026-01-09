@@ -12,6 +12,6 @@ public class SimpleDependency_ViewModel {
 
   }
   
-  public loadView (  ) {    
+  public loadViewModel (  ) {    
   }
 }

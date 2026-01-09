@@ -12,9 +12,9 @@ public class LoadCommand_ViewTests_Test {
   private LoadCommand_ViewModel sut;
   private LoadCommand_ViewModelTestEnvironment testEnvironment;
   @Test
-  public void test_Load_Commands_Call_given_when_LoadView_then_() throws Exception {
+  public void test_Load_Commands_Call_given_when_LoadViewModel_then_() throws Exception {
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
   }
   @Test
   public void test_Load_with_Parameter_Commands_Call_given_when_LoadViewWithName_then_() throws Exception {
@@ -37,8 +37,8 @@ public class LoadCommand_ViewTests_Test {
 
 
 
-  public void when_LoadView() {
-    this.sut.loadView();
+  public void when_LoadViewModel() {
+    this.sut.loadViewModel();
   }
   public void when_LoadViewWithName() {
     this.sut.loadViewWithName("Name");

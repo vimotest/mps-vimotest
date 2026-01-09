@@ -44,11 +44,11 @@ namespace commands
   }
   void SelectEntryCommand_ViewTests::when_select_entry_C_in_MyElements()
   {
-    this->sut->myElementsEntrySelected(std::string("C"));
+    this->sut->myElementsComboBoxEntrySelected(std::string("C"));
   }
   void SelectEntryCommand_ViewTests::when_select_entry_B_in_MyOptions()
   {
-    this->sut->myOptionsEntrySelected(commands::SelectEntryCommand_ViewModelMyOptionsOption::B);
+    this->sut->myOptionsRadioButtonGroupEntrySelected(commands::SelectEntryCommand_ViewModelMyOptionsOption::B);
   }
   void SelectEntryCommand_ViewTests::then_MyElements_has_3_entries_and()
   {

@@ -12,8 +12,8 @@ namespace commands
     virtual std::vector<std::string> getMyElementsComboBoxEntries();
     virtual std::string getMyElementsComboBoxSelectedEntry();
     virtual SelectEntryCommand_ViewModelMyOptionsOption getMyOptionsRadioButtonGroupSelectedEntry();
-    virtual void myElementsEntrySelected(std::string entryName);
-    virtual void myOptionsEntrySelected(SelectEntryCommand_ViewModelMyOptionsOption entryName);
+    virtual void myElementsComboBoxEntrySelected(std::string entryName);
+    virtual void myOptionsRadioButtonGroupEntrySelected(SelectEntryCommand_ViewModelMyOptionsOption entryName);
   private:
     std::vector<std::string> MyElementsComboBoxEntries;
     std::string MyElementsComboBoxSelectedEntry;

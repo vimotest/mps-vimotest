@@ -19,10 +19,10 @@ public class ViewModelDependency_ViewModelTests
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
-    public void ViewModel_Dependency_Call_given_when_LoadView_then_()
+    public void ViewModel_Dependency_Call_given_when_LoadViewModel_then_()
     {
         this.BuildSut();
-        this.when_LoadView();
+        this.when_LoadViewModel();
     }
 
     protected virtual void BuildSut()
@@ -30,8 +30,8 @@ public class ViewModelDependency_ViewModelTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
-    public virtual void when_LoadView()
+    public virtual void when_LoadViewModel()
     {
-        this.testEnvironment.getSimpleDependency_ViewModel().loadView();
+        this.testEnvironment.getSimpleDependency_ViewModel().loadViewModel();
     }
 }

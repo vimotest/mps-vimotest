@@ -10,7 +10,7 @@ namespace bindings
   {
   public:
     virtual std::vector<std::shared_ptr<ViMoTestFileNameBindingMyElementsRow>> getMyElementsTableRows();
-    virtual void loadView();
+    virtual void loadViewModel();
   private:
     std::vector<std::shared_ptr<ViMoTestFileNameBindingMyElementsRow>> MyElementsTableRows;
   };

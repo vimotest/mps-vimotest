@@ -33,7 +33,7 @@ public class ClickCommand_ViewTests_Test {
 
 
   public void when_click_Ok() {
-    this.sut.okClicked();
+    this.sut.okButtonClicked();
   }
 
 

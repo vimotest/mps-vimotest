@@ -4,6 +4,6 @@ package de.vimotest.sandbox.commands;
 
 
 public class ClickCommand_ViewModel {
-  public void okClicked() {
+  public void okButtonClicked() {
   }
 }

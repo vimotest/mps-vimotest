@@ -18,16 +18,16 @@ public class RowBasedCommand_ViewModel {
   public List<RowBasedCommand_ViewModelMyStandardControlsRow> getMyStandardControlsTreeRows() {
     return this.MyStandardControlsTreeRows;
   }
-  public void loadView() {
+  public void loadViewModel() {
   }
-  public void checkboxesChecked(Integer rowIndex, Boolean isChecked) {
+  public void checkboxesCheckBoxChecked(Integer rowIndex, Boolean isChecked) {
   }
-  public void freeTextComboBoxesEntrySelected(Integer rowIndex, String entryName) {
+  public void freeTextComboBoxesComboBoxEntrySelected(Integer rowIndex, String entryName) {
   }
-  public void entryComboBoxesEntrySelected(Integer rowIndex, String entryName) {
+  public void entryComboBoxesComboBoxEntrySelected(Integer rowIndex, String entryName) {
   }
-  public void textBoxesTextFilled(Integer rowIndex, String text) {
+  public void textBoxesTextBoxTextFilled(Integer rowIndex, String text) {
   }
-  public void buttonsClicked(Integer rowIndex) {
+  public void buttonsButtonClicked(Integer rowIndex) {
   }
 }

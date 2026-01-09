@@ -18,8 +18,8 @@ public class SelectEntryCommand_ViewModel {
   public SelectEntryCommand_ViewModelMyOptionsOption getMyOptionsRadioButtonGroupSelectedEntry() {
     return this.MyOptionsRadioButtonGroupSelectedEntry;
   }
-  public void myElementsEntrySelected(String entryName) {
+  public void myElementsComboBoxEntrySelected(String entryName) {
   }
-  public void myOptionsEntrySelected(SelectEntryCommand_ViewModelMyOptionsOption entryName) {
+  public void myOptionsRadioButtonGroupEntrySelected(SelectEntryCommand_ViewModelMyOptionsOption entryName) {
   }
 }

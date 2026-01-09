@@ -38,7 +38,7 @@ class ClickCommand_ViewTests {
 
   
   public when_click_Ok (  ) {
-    this.sut.okClicked (  );
+    this.sut.okButtonClicked (  );
 
   }
   

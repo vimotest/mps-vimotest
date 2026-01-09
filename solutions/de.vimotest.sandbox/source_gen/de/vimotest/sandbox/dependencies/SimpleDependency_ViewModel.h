@@ -7,6 +7,6 @@ namespace dependencies
   public:
     bool MyBool;
     virtual bool getMyBool();
-    virtual void loadView();
+    virtual void loadViewModel();
   };
 }

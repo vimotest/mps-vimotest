@@ -45,12 +45,12 @@ class FillTextCommand_ViewTests {
 
   
   public when_fill_Changed_in_MyValue (  ) {
-    this.sut.myValueTextFilled ( "Changed" );
+    this.sut.myValueTextBoxTextFilled ( "Changed" );
 
   }
   
   public when_fill_Changed_in_MyFreeValue (  ) {
-    this.sut.myFreeValueTextFilled ( "Changed" );
+    this.sut.myFreeValueComboBoxTextFilled ( "Changed" );
 
   }
   

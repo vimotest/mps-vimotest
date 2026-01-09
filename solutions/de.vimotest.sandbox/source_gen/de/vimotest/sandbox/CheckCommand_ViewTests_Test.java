@@ -34,10 +34,10 @@ public class CheckCommand_ViewTests_Test {
 
 
   public void when_check_MyCheckBox1() {
-    this.sut.myCheckBox1Checked(true);
+    this.sut.myCheckBox1CheckBoxChecked(true);
   }
   public void when_uncheck_MyCheckBox2() {
-    this.sut.myCheckBox2Checked(false);
+    this.sut.myCheckBox2CheckBoxChecked(false);
   }
 
 

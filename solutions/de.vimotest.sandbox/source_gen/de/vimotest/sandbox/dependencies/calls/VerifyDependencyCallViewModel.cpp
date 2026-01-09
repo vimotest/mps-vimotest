@@ -2,7 +2,7 @@
 
 namespace dependencies::calls
 {
-  void VerifyDependencyCallViewModel::loadView()
+  void VerifyDependencyCallViewModel::loadViewModel()
   {
   }
 }

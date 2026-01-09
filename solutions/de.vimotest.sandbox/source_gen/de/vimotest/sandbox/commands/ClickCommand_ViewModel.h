@@ -5,6 +5,6 @@ namespace commands
   class ClickCommand_ViewModel
   {
   public:
-    virtual void okClicked();
+    virtual void okButtonClicked();
   };
 }

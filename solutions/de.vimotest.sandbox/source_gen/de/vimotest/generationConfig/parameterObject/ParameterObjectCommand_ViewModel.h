@@ -15,12 +15,12 @@ public:
     int Value3;
     virtual int getValue3();
   };
-  virtual void loadView(LoadViewParams parameters);
+  virtual void loadViewModel(LoadViewParams parameters);
   struct CheckParams
   {
     bool isChecked;
   };
-  virtual void myFlagChecked(CheckParams parameters);
+  virtual void myFlagCheckBoxChecked(CheckParams parameters);
 private:
   bool isMyFlagCheckBoxChecked;
 };

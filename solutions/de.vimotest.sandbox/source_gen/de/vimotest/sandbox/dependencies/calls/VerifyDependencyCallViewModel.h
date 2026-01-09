@@ -5,6 +5,6 @@ namespace dependencies::calls
   class VerifyDependencyCallViewModel
   {
   public:
-    virtual void loadView();
+    virtual void loadViewModel();
   };
 }

@@ -47,23 +47,23 @@ namespace de.vimotest.examples.loginview
             return this.isErrorLabelVisible;
         }
 
-        public virtual void loadView()
+        public virtual void loadViewModel()
         {
         }
 
-        public virtual void usernameTextFilled(string text)
+        public virtual void usernameTextBoxTextFilled(string text)
         {
         }
 
-        public virtual void passwordTextFilled(string text)
+        public virtual void passwordTextBoxTextFilled(string text)
         {
         }
 
-        public virtual void showPasswordChecked(bool isChecked)
+        public virtual void showPasswordCheckBoxChecked(bool isChecked)
         {
         }
 
-        public virtual void loginClicked()
+        public virtual void loginButtonClicked()
         {
         }
     }

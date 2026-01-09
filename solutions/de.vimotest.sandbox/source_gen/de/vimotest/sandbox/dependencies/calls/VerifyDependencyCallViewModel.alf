@@ -5,6 +5,6 @@ namespace dependencies:: calls ;
 
 public class VerifyDependencyCallViewModel {
   
-  public loadView (  ) {    
+  public loadViewModel (  ) {    
   }
 }

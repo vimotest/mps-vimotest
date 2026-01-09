@@ -12,8 +12,8 @@ namespace commands
     virtual std::vector<std::string> getMyFreeValueComboBoxEntries();
     virtual std::string getMyFreeValueComboBoxSelectedEntry();
     virtual std::string getMyFreeValueComboBoxText();
-    virtual void myValueTextFilled(std::string text);
-    virtual void myFreeValueTextFilled(std::string text);
+    virtual void myValueTextBoxTextFilled(std::string text);
+    virtual void myFreeValueComboBoxTextFilled(std::string text);
   private:
     std::string MyValueTextBoxText;
     std::vector<std::string> MyFreeValueComboBoxEntries;

@@ -17,10 +17,10 @@ class LoadCommand_ViewTests {
   }
   
   
-  public Load_Commands_Call_given_when_LoadView_then_ (  ) {
+  public Load_Commands_Call_given_when_LoadViewModel_then_ (  ) {
     this.BuildSut (  );
 
-    this.when_LoadView (  );
+    this.when_LoadViewModel (  );
 
   }
   
@@ -44,8 +44,8 @@ class LoadCommand_ViewTests {
   // When Helper Definitions
 
   
-  public when_LoadView (  ) {
-    this.sut.loadView (  );
+  public when_LoadViewModel (  ) {
+    this.sut.loadViewModel (  );
 
   }
   

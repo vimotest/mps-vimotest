@@ -1,9 +1,9 @@
 #include "MyViewController.h"
 
-void MyViewController::loadView()
+void MyViewController::loadViewModel()
 {
 }
 
-void MyViewController::myFlagChecked(bool isChecked)
+void MyViewController::myFlagCheckBoxChecked(bool isChecked)
 {
 }

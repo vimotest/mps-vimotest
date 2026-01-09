@@ -9,10 +9,10 @@ public class ParameterObjectCommand_ViewTests_Test {
   private ParameterObjectCommand_ViewModel sut;
   private ParameterObjectCommand_ViewModelTestEnvironment testEnvironment;
   @Test
-  public void test_MyTest_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_() throws Exception {
+  public void test_MyTest_given_empty_context_when_LoadViewModel_and_uncheck_MyFlag_then_() throws Exception {
     this.given_empty_context();
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.when_uncheck_MyFlag();
   }
   @BeforeEach
@@ -33,13 +33,13 @@ public class ParameterObjectCommand_ViewTests_Test {
   }
 
 
-  public void when_LoadView() {
-    ParameterObjectCommand_ViewModel.LoadViewParams loadViewParameters = new ParameterObjectCommand_ViewModel.LoadViewParams("A", true, 42);
-    this.sut.loadView(loadViewParameters);
+  public void when_LoadViewModel() {
+    ParameterObjectCommand_ViewModel.LoadViewParams loadViewModelParameters = new ParameterObjectCommand_ViewModel.LoadViewParams("A", true, 42);
+    this.sut.loadViewModel(loadViewModelParameters);
   }
   public void when_uncheck_MyFlag() {
     ParameterObjectCommand_ViewModel.CheckParams checkedParameters = new ParameterObjectCommand_ViewModel.CheckParams(false);
-    this.sut.myFlagChecked(checkedParameters);
+    this.sut.myFlagCheckBoxChecked(checkedParameters);
   }
 
 

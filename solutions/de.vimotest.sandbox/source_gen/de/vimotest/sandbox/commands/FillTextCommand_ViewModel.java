@@ -22,8 +22,8 @@ public class FillTextCommand_ViewModel {
   public String getMyFreeValueComboBoxText() {
     return this.MyFreeValueComboBoxText;
   }
-  public void myValueTextFilled(String text) {
+  public void myValueTextBoxTextFilled(String text) {
   }
-  public void myFreeValueTextFilled(String text) {
+  public void myFreeValueComboBoxTextFilled(String text) {
   }
 }

@@ -32,7 +32,7 @@ namespace widgetassertions
     virtual std::vector<std::shared_ptr<ListViews_ViewModelMyListWithMultiRowSelectionRow>> getMyListWithMultiRowSelectionListRows();
     virtual std::vector<int> getMyListWithMultiRowSelectionListSelectedRows();
     virtual std::vector<std::shared_ptr<ListViews_ViewModelMyButtonsRow>> getMyButtonsListRows();
-    virtual void buttonsClicked(int rowIndex);
+    virtual void buttonsButtonClicked(int rowIndex);
   private:
     bool isMyListOfLabelListVisible;
     bool isMyListOfLabelListEnabled;

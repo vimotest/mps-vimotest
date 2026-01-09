@@ -4,6 +4,6 @@ package de.vimotest.sandbox.dependencies.calls;
 
 
 public class VerifyDependencyCallViewModel {
-  public void loadView() {
+  public void loadViewModel() {
   }
 }

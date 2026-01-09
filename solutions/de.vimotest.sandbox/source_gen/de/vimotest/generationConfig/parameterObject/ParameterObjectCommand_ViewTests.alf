@@ -17,12 +17,12 @@ class ParameterObjectCommand_ViewTests {
   }
   
   
-  public MyTest_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_ (  ) {
+  public MyTest_given_empty_context_when_LoadViewModel_and_uncheck_MyFlag_then_ (  ) {
     this.given_empty_context (  );
 
     this.BuildSut (  );
 
-    this.when_LoadView (  );
+    this.when_LoadViewModel (  );
 
     this.when_uncheck_MyFlag (  );
 
@@ -44,17 +44,17 @@ class ParameterObjectCommand_ViewTests {
   // When Helper Definitions
 
   
-  public when_LoadView (  ) {
-    let loadViewParameters: LoadViewParams = new ParameterObjectCommand_ViewModel:: LoadViewParams ( "A", true, 42 );
+  public when_LoadViewModel (  ) {
+    let loadViewModelParameters: LoadViewParams = new ParameterObjectCommand_ViewModel:: LoadViewParams ( "A", true, 42 );
 
-    this.sut.loadView ( loadViewParameters );
+    this.sut.loadViewModel ( loadViewModelParameters );
 
   }
   
   public when_uncheck_MyFlag (  ) {
     let checkedParameters: CheckParams = new ParameterObjectCommand_ViewModel:: CheckParams ( false );
 
-    this.sut.myFlagChecked ( checkedParameters );
+    this.sut.myFlagCheckBoxChecked ( checkedParameters );
 
   }
   

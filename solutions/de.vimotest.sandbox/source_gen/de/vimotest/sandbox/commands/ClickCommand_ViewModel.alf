@@ -5,6 +5,6 @@ namespace commands ;
 
 public class ClickCommand_ViewModel {
   
-  public okClicked (  ) {    
+  public okButtonClicked (  ) {    
   }
 }

@@ -19,11 +19,11 @@ namespace commands
             return this.isMyCheckBox2CheckBoxChecked;
         }
 
-        public virtual void myCheckBox1Checked(bool isChecked)
+        public virtual void myCheckBox1CheckBoxChecked(bool isChecked)
         {
         }
 
-        public virtual void myCheckBox2Checked(bool isChecked)
+        public virtual void myCheckBox2CheckBoxChecked(bool isChecked)
         {
         }
     }

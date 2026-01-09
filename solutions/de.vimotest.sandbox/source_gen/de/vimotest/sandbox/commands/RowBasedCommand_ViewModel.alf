@@ -26,21 +26,21 @@ public class RowBasedCommand_ViewModel {
 
   }
   
-  public loadView (  ) {    
+  public loadViewModel (  ) {    
   }
   
-  public checkboxesChecked (   in rowIndex: Integer ,   in isChecked: Boolean  ) {    
+  public checkboxesCheckBoxChecked (   in rowIndex: Integer ,   in isChecked: Boolean  ) {    
   }
   
-  public freeTextComboBoxesEntrySelected (   in rowIndex: Integer ,   in entryName: String  ) {    
+  public freeTextComboBoxesComboBoxEntrySelected (   in rowIndex: Integer ,   in entryName: String  ) {    
   }
   
-  public entryComboBoxesEntrySelected (   in rowIndex: Integer ,   in entryName: String  ) {    
+  public entryComboBoxesComboBoxEntrySelected (   in rowIndex: Integer ,   in entryName: String  ) {    
   }
   
-  public textBoxesTextFilled (   in rowIndex: Integer ,   in text: String  ) {    
+  public textBoxesTextBoxTextFilled (   in rowIndex: Integer ,   in text: String  ) {    
   }
   
-  public buttonsClicked (   in rowIndex: Integer  ) {    
+  public buttonsButtonClicked (   in rowIndex: Integer  ) {    
   }
 }

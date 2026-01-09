@@ -124,6 +124,6 @@ public class ListViews_ViewModel {
 
   }
   
-  public buttonsClicked (   in rowIndex: Integer  ) {    
+  public buttonsButtonClicked (   in rowIndex: Integer  ) {    
   }
 }

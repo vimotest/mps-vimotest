@@ -12,9 +12,9 @@ public class ViewModelDependency_ViewModelTests_Test {
   private ViewModelDependency_ViewModel sut;
   private ViewModelDependency_ViewModelTestEnvironment testEnvironment;
   @Test
-  public void test_ViewModel_Dependency_Call_given_when_LoadView_then_() throws Exception {
+  public void test_ViewModel_Dependency_Call_given_when_LoadViewModel_then_() throws Exception {
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
   }
   @BeforeEach
   public void setUp() {
@@ -32,8 +32,8 @@ public class ViewModelDependency_ViewModelTests_Test {
 
 
 
-  public void when_LoadView() {
-    this.testEnvironment.getSimpleDependency_ViewModel().loadView();
+  public void when_LoadViewModel() {
+    this.testEnvironment.getSimpleDependency_ViewModel().loadViewModel();
   }
 
 

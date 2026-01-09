@@ -47,12 +47,12 @@ class SelectEntryCommand_ViewTests {
 
   
   public when_select_entry_C_in_MyElements (  ) {
-    this.sut.myElementsEntrySelected ( "C" );
+    this.sut.myElementsComboBoxEntrySelected ( "C" );
 
   }
   
   public when_select_entry_B_in_MyOptions (  ) {
-    this.sut.myOptionsEntrySelected ( B );
+    this.sut.myOptionsRadioButtonGroupEntrySelected ( B );
 
   }
   

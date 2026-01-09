@@ -5,7 +5,7 @@ namespace dependencies.calls
 {
     public class VerifyDependencyCallViewModel
     {
-        public virtual void loadView()
+        public virtual void loadViewModel()
         {
         }
     }

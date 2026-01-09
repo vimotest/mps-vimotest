@@ -29,7 +29,7 @@ namespace bindings
             return this.rows;
         }
 
-        public virtual void loadView()
+        public virtual void loadViewModel()
         {
         }
 

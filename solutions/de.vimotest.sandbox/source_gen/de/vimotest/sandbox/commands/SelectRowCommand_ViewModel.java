@@ -70,20 +70,20 @@ public class SelectRowCommand_ViewModel {
   public List<String> getMyStringHandleMultiSelectRowListViewElementsListSelectedRows() {
     return this.MyStringHandleMultiSelectRowListViewElementsListSelectedRows;
   }
-  public void myListViewElementsRowSelected(Integer rowIndex) {
+  public void myListViewElementsListRowSelected(Integer rowIndex) {
   }
-  public void myStringRowHandleListViewElementsRowSelected(String rowHandle) {
+  public void myStringRowHandleListViewElementsListRowSelected(String rowHandle) {
   }
-  public void myTableViewElementsRowSelected(Integer rowIndex) {
+  public void myTableViewElementsTableRowSelected(Integer rowIndex) {
   }
-  public void myStringRowHandleTableViewElementsRowSelected(String rowHandle) {
+  public void myStringRowHandleTableViewElementsTableRowSelected(String rowHandle) {
   }
-  public void myTreeViewElementsRowSelected(Integer rowIndex) {
+  public void myTreeViewElementsTreeRowSelected(Integer rowIndex) {
   }
-  public void myStringRowHandleTreeViewElementsRowSelected(String rowHandle) {
+  public void myStringRowHandleTreeViewElementsTreeRowSelected(String rowHandle) {
   }
-  public void myIndexBasedMultiSelectRowListViewElementsRowSelected(List<Integer> rowIndices) {
+  public void myIndexBasedMultiSelectRowListViewElementsListRowSelected(List<Integer> rowIndices) {
   }
-  public void myStringHandleMultiSelectRowListViewElementsRowSelected(List<String> rowHandles) {
+  public void myStringHandleMultiSelectRowListViewElementsListRowSelected(List<String> rowHandles) {
   }
 }

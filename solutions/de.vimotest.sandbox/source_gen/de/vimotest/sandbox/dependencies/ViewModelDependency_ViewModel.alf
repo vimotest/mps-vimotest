@@ -12,6 +12,6 @@ public class ViewModelDependency_ViewModel {
 
   }
   
-  public loadView (  ) {    
+  public loadViewModel (  ) {    
   }
 }

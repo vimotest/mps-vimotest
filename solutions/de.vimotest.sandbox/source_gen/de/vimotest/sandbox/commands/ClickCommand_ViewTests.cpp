@@ -32,6 +32,6 @@ namespace commands
   }
   void ClickCommand_ViewTests::when_click_Ok()
   {
-    this->sut->okClicked();
+    this->sut->okButtonClicked();
   }
 }

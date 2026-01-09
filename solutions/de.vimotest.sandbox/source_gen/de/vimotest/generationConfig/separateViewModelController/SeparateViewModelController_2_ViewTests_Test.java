@@ -10,10 +10,10 @@ public class SeparateViewModelController_2_ViewTests_Test {
   private MyViewController sutViewController;
   private SeparateViewModelController_ViewModelTestEnvironment testEnvironment;
   @Test
-  public void test_MyTest2_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_() throws Exception {
+  public void test_MyTest2_given_empty_context_when_LoadViewModel_and_uncheck_MyFlag_then_() throws Exception {
     this.given_empty_context();
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.when_uncheck_MyFlag();
     this.RetrieveViewModel();
   }
@@ -38,11 +38,11 @@ public class SeparateViewModelController_2_ViewTests_Test {
   }
 
 
-  public void when_LoadView() {
-    this.sutViewController.loadView();
+  public void when_LoadViewModel() {
+    this.sutViewController.loadViewModel();
   }
   public void when_uncheck_MyFlag() {
-    this.sutViewController.myFlagChecked(false);
+    this.sutViewController.myFlagCheckBoxChecked(false);
   }
 
 

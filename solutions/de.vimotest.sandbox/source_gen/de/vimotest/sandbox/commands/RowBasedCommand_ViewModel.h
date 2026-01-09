@@ -15,12 +15,12 @@ namespace commands
     virtual std::vector<std::shared_ptr<RowBasedCommand_ViewModelMyFlagsRow>> getMyFlagsListRows();
     virtual std::vector<std::shared_ptr<RowBasedCommand_ViewModelMyComboBoxesRow>> getMyComboBoxesTableRows();
     virtual std::vector<std::shared_ptr<RowBasedCommand_ViewModelMyStandardControlsRow>> getMyStandardControlsTreeRows();
-    virtual void loadView();
-    virtual void checkboxesChecked(int rowIndex, bool isChecked);
-    virtual void freeTextComboBoxesEntrySelected(int rowIndex, std::string entryName);
-    virtual void entryComboBoxesEntrySelected(int rowIndex, std::string entryName);
-    virtual void textBoxesTextFilled(int rowIndex, std::string text);
-    virtual void buttonsClicked(int rowIndex);
+    virtual void loadViewModel();
+    virtual void checkboxesCheckBoxChecked(int rowIndex, bool isChecked);
+    virtual void freeTextComboBoxesComboBoxEntrySelected(int rowIndex, std::string entryName);
+    virtual void entryComboBoxesComboBoxEntrySelected(int rowIndex, std::string entryName);
+    virtual void textBoxesTextBoxTextFilled(int rowIndex, std::string text);
+    virtual void buttonsButtonClicked(int rowIndex);
   private:
     std::vector<std::shared_ptr<RowBasedCommand_ViewModelMyFlagsRow>> MyFlagsListRows;
     std::vector<std::shared_ptr<RowBasedCommand_ViewModelMyComboBoxesRow>> MyComboBoxesTableRows;

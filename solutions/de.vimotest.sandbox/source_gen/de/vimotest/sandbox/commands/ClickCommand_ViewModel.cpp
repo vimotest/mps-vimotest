@@ -2,7 +2,7 @@
 
 namespace commands
 {
-  void ClickCommand_ViewModel::okClicked()
+  void ClickCommand_ViewModel::okButtonClicked()
   {
   }
 }

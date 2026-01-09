@@ -42,10 +42,10 @@ public class SelectEntryCommand_ViewTests_Test {
 
 
   public void when_select_entry_C_in_MyElements() {
-    this.sut.myElementsEntrySelected("C");
+    this.sut.myElementsComboBoxEntrySelected("C");
   }
   public void when_select_entry_B_in_MyOptions() {
-    this.sut.myOptionsEntrySelected(SelectEntryCommand_ViewModelMyOptionsOption.B);
+    this.sut.myOptionsRadioButtonGroupEntrySelected(SelectEntryCommand_ViewModelMyOptionsOption.B);
   }
 
 

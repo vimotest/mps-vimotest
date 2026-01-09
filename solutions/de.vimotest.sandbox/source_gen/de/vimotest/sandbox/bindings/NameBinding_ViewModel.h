@@ -13,7 +13,7 @@ namespace bindings
     virtual std::string getCustomText();
     virtual bool getCustomEnabled();
     virtual std::vector<std::shared_ptr<MyCustomRow>> getRows();
-    virtual void loadView();
+    virtual void loadViewModel();
     virtual void OkClicked();
   private:
     std::string mText;

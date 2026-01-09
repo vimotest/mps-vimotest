@@ -3,11 +3,11 @@
 /// </filename>
 public abstract class MyViewController
 {
-    public virtual void loadView()
+    public virtual void loadViewModel()
     {
     }
 
-    public virtual void myFlagChecked(bool isChecked)
+    public virtual void myFlagCheckBoxChecked(bool isChecked)
     {
     }
 }

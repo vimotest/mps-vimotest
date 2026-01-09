@@ -20,10 +20,10 @@ namespace commands
   {
     return this->MyFreeValueComboBoxText;
   }
-  void FillTextCommand_ViewModel::myValueTextFilled(std::string text)
+  void FillTextCommand_ViewModel::myValueTextBoxTextFilled(std::string text)
   {
   }
-  void FillTextCommand_ViewModel::myFreeValueTextFilled(std::string text)
+  void FillTextCommand_ViewModel::myFreeValueComboBoxTextFilled(std::string text)
   {
   }
 }

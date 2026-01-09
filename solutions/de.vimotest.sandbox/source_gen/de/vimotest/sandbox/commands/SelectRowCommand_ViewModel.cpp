@@ -77,28 +77,28 @@ namespace commands
   {
     return this->MyStringHandleMultiSelectRowListViewElementsListSelectedRows;
   }
-  void SelectRowCommand_ViewModel::myListViewElementsRowSelected(int rowIndex)
+  void SelectRowCommand_ViewModel::myListViewElementsListRowSelected(int rowIndex)
   {
   }
-  void SelectRowCommand_ViewModel::myStringRowHandleListViewElementsRowSelected(std::string rowHandle)
+  void SelectRowCommand_ViewModel::myStringRowHandleListViewElementsListRowSelected(std::string rowHandle)
   {
   }
-  void SelectRowCommand_ViewModel::myTableViewElementsRowSelected(int rowIndex)
+  void SelectRowCommand_ViewModel::myTableViewElementsTableRowSelected(int rowIndex)
   {
   }
-  void SelectRowCommand_ViewModel::myStringRowHandleTableViewElementsRowSelected(std::string rowHandle)
+  void SelectRowCommand_ViewModel::myStringRowHandleTableViewElementsTableRowSelected(std::string rowHandle)
   {
   }
-  void SelectRowCommand_ViewModel::myTreeViewElementsRowSelected(int rowIndex)
+  void SelectRowCommand_ViewModel::myTreeViewElementsTreeRowSelected(int rowIndex)
   {
   }
-  void SelectRowCommand_ViewModel::myStringRowHandleTreeViewElementsRowSelected(std::string rowHandle)
+  void SelectRowCommand_ViewModel::myStringRowHandleTreeViewElementsTreeRowSelected(std::string rowHandle)
   {
   }
-  void SelectRowCommand_ViewModel::myIndexBasedMultiSelectRowListViewElementsRowSelected(std::vector<int> rowIndices)
+  void SelectRowCommand_ViewModel::myIndexBasedMultiSelectRowListViewElementsListRowSelected(std::vector<int> rowIndices)
   {
   }
-  void SelectRowCommand_ViewModel::myStringHandleMultiSelectRowListViewElementsRowSelected(std::vector<std::string> rowHandles)
+  void SelectRowCommand_ViewModel::myStringHandleMultiSelectRowListViewElementsListRowSelected(std::vector<std::string> rowHandles)
   {
   }
 }

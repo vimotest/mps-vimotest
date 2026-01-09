@@ -127,7 +127,7 @@ namespace widgetassertions
             return this.MyButtonsListRows;
         }
 
-        public virtual void buttonsClicked(int rowIndex)
+        public virtual void buttonsButtonClicked(int rowIndex)
         {
         }
     }

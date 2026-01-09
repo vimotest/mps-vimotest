@@ -19,12 +19,12 @@ class SeparateViewModelController_2_ViewTests {
   }
   
   
-  public MyTest2_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_ (  ) {
+  public MyTest2_given_empty_context_when_LoadViewModel_and_uncheck_MyFlag_then_ (  ) {
     this.given_empty_context (  );
 
     this.BuildSut (  );
 
-    this.when_LoadView (  );
+    this.when_LoadViewModel (  );
 
     this.when_uncheck_MyFlag (  );
 
@@ -53,13 +53,13 @@ class SeparateViewModelController_2_ViewTests {
   // When Helper Definitions
 
   
-  public when_LoadView (  ) {
-    this.sutViewController.loadView (  );
+  public when_LoadViewModel (  ) {
+    this.sutViewController.loadViewModel (  );
 
   }
   
   public when_uncheck_MyFlag (  ) {
-    this.sutViewController.myFlagChecked ( false );
+    this.sutViewController.myFlagCheckBoxChecked ( false );
 
   }
   

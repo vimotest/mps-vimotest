@@ -29,27 +29,27 @@ namespace commands
             return this.MyStandardControlsTreeRows;
         }
 
-        public virtual void loadView()
+        public virtual void loadViewModel()
         {
         }
 
-        public virtual void checkboxesChecked(int rowIndex, bool isChecked)
+        public virtual void checkboxesCheckBoxChecked(int rowIndex, bool isChecked)
         {
         }
 
-        public virtual void freeTextComboBoxesEntrySelected(int rowIndex, string entryName)
+        public virtual void freeTextComboBoxesComboBoxEntrySelected(int rowIndex, string entryName)
         {
         }
 
-        public virtual void entryComboBoxesEntrySelected(int rowIndex, string entryName)
+        public virtual void entryComboBoxesComboBoxEntrySelected(int rowIndex, string entryName)
         {
         }
 
-        public virtual void textBoxesTextFilled(int rowIndex, string text)
+        public virtual void textBoxesTextBoxTextFilled(int rowIndex, string text)
         {
         }
 
-        public virtual void buttonsClicked(int rowIndex)
+        public virtual void buttonsButtonClicked(int rowIndex)
         {
         }
     }

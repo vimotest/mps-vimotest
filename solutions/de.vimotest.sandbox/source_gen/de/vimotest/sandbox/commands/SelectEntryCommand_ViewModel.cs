@@ -29,11 +29,11 @@ namespace commands
             return this.MyOptionsRadioButtonGroupSelectedEntry;
         }
 
-        public virtual void myElementsEntrySelected(string entryName)
+        public virtual void myElementsComboBoxEntrySelected(string entryName)
         {
         }
 
-        public virtual void myOptionsEntrySelected(commands.SelectEntryCommand_ViewModelMyOptionsOption entryName)
+        public virtual void myOptionsRadioButtonGroupEntrySelected(commands.SelectEntryCommand_ViewModelMyOptionsOption entryName)
         {
         }
     }

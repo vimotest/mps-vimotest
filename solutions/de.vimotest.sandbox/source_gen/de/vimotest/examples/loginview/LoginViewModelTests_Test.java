@@ -14,10 +14,10 @@ public class LoginViewModelTests_Test {
   private LoginViewModelTestEnvironment testEnvironment;
   private String prefilledValues = "<Prefs>  \n  <User>Ada</User>\n  <Pw>Lovelace1</Pw>\n</Prefs>";
   @Test
-  public void test_Load_View_on_empty_context_given_empty_context_when_LoadView_and_fill_User_in_Username_and_fill_MyPass123_in_Password_and_check_ShowPassword_then_Username_shows_text_User_and_Password_shows_text_MyPass123_and_Login_is_enabled() throws Exception {
+  public void test_Load_View_on_empty_context_given_empty_context_when_LoadViewModel_and_fill_User_in_Username_and_fill_MyPass123_in_Password_and_check_ShowPassword_then_Username_shows_text_User_and_Password_shows_text_MyPass123_and_Login_is_enabled() throws Exception {
     this.given_empty_context();
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.when_fill_User_in_Username();
     this.when_fill_MyPass123_in_Password();
     this.when_check_ShowPassword();
@@ -26,10 +26,10 @@ public class LoginViewModelTests_Test {
     this.then_Login_is_enabled();
   }
   @Test
-  public void test_Load_View_on_empty_context_given_empty_context_when_LoadView_and_fill_User_in_Username_and_clear_text_in_Password_then_Username_shows_text_User_and_Password_shows_empty_text_and_Login_is_not_enabled() throws Exception {
+  public void test_Load_View_on_empty_context_given_empty_context_when_LoadViewModel_and_fill_User_in_Username_and_clear_text_in_Password_then_Username_shows_text_User_and_Password_shows_empty_text_and_Login_is_not_enabled() throws Exception {
     this.given_empty_context();
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.when_fill_User_in_Username();
     this.when_clear_text_in_Password();
     this.then_Username_shows_text_User_();
@@ -37,19 +37,19 @@ public class LoginViewModelTests_Test {
     this.then_Login_is_not_enabled();
   }
   @Test
-  public void test_Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadView_then_Username_shows_text_Ada_and_Password_shows_text_____and_Login_is_enabled() throws Exception {
+  public void test_Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadViewModel_then_Username_shows_text_Ada_and_Password_shows_text_____and_Login_is_enabled() throws Exception {
     this.given_prefilledValues();
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.then_Username_shows_text_Ada_();
     this.then_Password_shows_text_____();
     this.then_Login_is_enabled();
   }
   @Test
-  public void test_Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadView_and_check_ShowPassword_then_Username_shows_text_Ada_and_Password_shows_text_Lovelace1_and_ShowPassword_is_checked_and_Login_is_enabled() throws Exception {
+  public void test_Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadViewModel_and_check_ShowPassword_then_Username_shows_text_Ada_and_Password_shows_text_Lovelace1_and_ShowPassword_is_checked_and_Login_is_enabled() throws Exception {
     this.given_prefilledValues();
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.when_check_ShowPassword();
     this.then_Username_shows_text_Ada_();
     this.then_Password_shows_text_Lovelace1_();
@@ -57,10 +57,10 @@ public class LoginViewModelTests_Test {
     this.then_Login_is_enabled();
   }
   @Test
-  public void test_Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadView_and_fill_lovelace_in_Password_and_click_Login_then_Error_shows_text_Needs_uppercase_letters_() throws Exception {
+  public void test_Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadViewModel_and_fill_lovelace_in_Password_and_click_Login_then_Error_shows_text_Needs_uppercase_letters_() throws Exception {
     this.given_prefilledValues();
     this.BuildSut();
-    this.when_LoadView();
+    this.when_LoadViewModel();
     this.when_fill_lovelace_in_Password();
     this.when_click_Login();
     this.then_Error_shows_text_Needs_uppercase_letters_();
@@ -86,26 +86,26 @@ public class LoginViewModelTests_Test {
   }
 
 
-  public void when_LoadView() {
-    this.sut.loadView();
+  public void when_LoadViewModel() {
+    this.sut.loadViewModel();
   }
   public void when_fill_User_in_Username() {
-    this.sut.usernameTextFilled("User");
+    this.sut.usernameTextBoxTextFilled("User");
   }
   public void when_fill_MyPass123_in_Password() {
-    this.sut.passwordTextFilled("MyPass123");
+    this.sut.passwordTextBoxTextFilled("MyPass123");
   }
   public void when_check_ShowPassword() {
-    this.sut.showPasswordChecked(true);
+    this.sut.showPasswordCheckBoxChecked(true);
   }
   public void when_clear_text_in_Password() {
-    this.sut.passwordTextFilled("");
+    this.sut.passwordTextBoxTextFilled("");
   }
   public void when_fill_lovelace_in_Password() {
-    this.sut.passwordTextFilled("lovelace");
+    this.sut.passwordTextBoxTextFilled("lovelace");
   }
   public void when_click_Login() {
-    this.sut.loginClicked();
+    this.sut.loginButtonClicked();
   }
 
 

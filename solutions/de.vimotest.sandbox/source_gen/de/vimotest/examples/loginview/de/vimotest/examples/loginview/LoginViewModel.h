@@ -13,11 +13,11 @@ namespace de::vimotest::examples::loginview
     virtual bool getIsLoginButtonEnabled();
     virtual std::string getErrorLabelText();
     virtual bool getIsErrorLabelVisible();
-    virtual void loadView();
-    virtual void usernameTextFilled(std::string text);
-    virtual void passwordTextFilled(std::string text);
-    virtual void showPasswordChecked(bool isChecked);
-    virtual void loginClicked();
+    virtual void loadViewModel();
+    virtual void usernameTextBoxTextFilled(std::string text);
+    virtual void passwordTextBoxTextFilled(std::string text);
+    virtual void showPasswordCheckBoxChecked(bool isChecked);
+    virtual void loginButtonClicked();
   private:
     std::string UsernameTextBoxText;
     std::string PasswordTextBoxText;

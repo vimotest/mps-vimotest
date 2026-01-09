@@ -47,18 +47,18 @@ public class LoginViewModel {
 
   }
   
-  public loadView (  ) {    
+  public loadViewModel (  ) {    
   }
   
-  public usernameTextFilled (   in text: String  ) {    
+  public usernameTextBoxTextFilled (   in text: String  ) {    
   }
   
-  public passwordTextFilled (   in text: String  ) {    
+  public passwordTextBoxTextFilled (   in text: String  ) {    
   }
   
-  public showPasswordChecked (   in isChecked: Boolean  ) {    
+  public showPasswordCheckBoxChecked (   in isChecked: Boolean  ) {    
   }
   
-  public loginClicked (  ) {    
+  public loginButtonClicked (  ) {    
   }
 }

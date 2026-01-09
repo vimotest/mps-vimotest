@@ -79,9 +79,9 @@
       <concept id="4696656866608863568" name="de.vimotest.viewmodel.testing.structure.ComboBoxCheck" flags="ng" index="7cNBp">
         <child id="4696656866608863569" name="checks" index="7cNBo" />
       </concept>
-      <concept id="8948051009467167877" name="de.vimotest.viewmodel.testing.structure.ParameterizedCommandInvocationAction" flags="ng" index="27s6xY">
+      <concept id="8948051009467167877" name="de.vimotest.viewmodel.testing.structure.ParameterizedCommandCallAction" flags="ng" index="27s6xY">
         <reference id="8948051009467187564" name="targetCommand" index="27sXQn" />
-        <child id="8948051009467207553" name="parameters" index="27sTdU" />
+        <child id="8948051009467207553" name="arguments" index="27sTdU" />
       </concept>
       <concept id="9006611305737327152" name="de.vimotest.viewmodel.testing.structure.ContextReference" flags="ng" index="8w7HN">
         <reference id="9006611305737327954" name="ref" index="8w7Kh" />
@@ -99,7 +99,7 @@
       <concept id="3922717397912187253" name="de.vimotest.viewmodel.testing.structure.ImageCheck" flags="ng" index="2mJbJ5">
         <child id="3922717397912187254" name="checks" index="2mJbJ6" />
       </concept>
-      <concept id="7222907346290764613" name="de.vimotest.viewmodel.testing.structure.DependencyOperationInvocationAction" flags="ng" index="p182N">
+      <concept id="7222907346290764613" name="de.vimotest.viewmodel.testing.structure.DependencyOperationCallAction" flags="ng" index="p182N">
         <reference id="7222907346290783544" name="targetDependency" index="p15Ve" />
         <reference id="7222907346290766839" name="targetOperation" index="p19w1" />
         <child id="7222907346290766840" name="arguments" index="p19we" />
@@ -3556,7 +3556,7 @@
     <property role="$YGLj" value="LoadCommand_View" />
     <node concept="103ZXx" id="5imH8sU2ENy" role="103ZXC">
       <node concept="3Vw88J" id="5imH8sU2ENK" role="1006ar">
-        <property role="TrG5h" value="LoadView" />
+        <property role="TrG5h" value="LoadViewModel" />
       </node>
       <node concept="3Vw88J" id="5imH8sU7TY_" role="1006ar">
         <property role="TrG5h" value="LoadViewWithName" />
@@ -3578,7 +3578,7 @@
       <node concept="1s$VFG" id="6fEYrkZxlQK" role="1s$QAY">
         <node concept="DUd5q" id="5imH8sU7flG" role="1s$QAM">
           <node concept="27s6xY" id="5imH8sU7flI" role="DUiS9">
-            <ref role="27sXQn" node="5imH8sU2ENK" resolve="LoadView" />
+            <ref role="27sXQn" node="5imH8sU2ENK" resolve="LoadViewModel" />
           </node>
         </node>
       </node>
@@ -4329,7 +4329,7 @@
     <property role="$YGLj" value="RowBasedCommand_View" />
     <node concept="103ZXx" id="2w4bAIFO7n3" role="103ZXC">
       <node concept="3Vw88J" id="2w4bAIFO7n4" role="1006ar">
-        <property role="TrG5h" value="LoadView" />
+        <property role="TrG5h" value="LoadViewModel" />
       </node>
     </node>
     <node concept="103ZXB" id="2w4bAIFO7n5" role="103ZXF">
@@ -4749,7 +4749,7 @@
     <property role="$YGLj" value="NameBinding_View" />
     <node concept="103ZXx" id="3F1kzPoIN6$" role="103ZXC">
       <node concept="3Vw88J" id="3F1kzPoIN6_" role="1006ar">
-        <property role="TrG5h" value="LoadView" />
+        <property role="TrG5h" value="LoadViewModel" />
       </node>
     </node>
     <node concept="103ZXB" id="3F1kzPoIN6A" role="103ZXF">
@@ -4852,7 +4852,7 @@
     <property role="$YGLj" value="FileNameBinding_View" />
     <node concept="103ZXx" id="2N4oO4q_l_o" role="103ZXC">
       <node concept="3Vw88J" id="2N4oO4q_l_p" role="1006ar">
-        <property role="TrG5h" value="LoadView" />
+        <property role="TrG5h" value="LoadViewModel" />
       </node>
     </node>
     <node concept="103ZXB" id="2N4oO4q_l_q" role="103ZXF">
@@ -5755,7 +5755,7 @@
     <property role="3GE5qa" value="dependencies" />
     <node concept="103ZXx" id="4m0g11MwG32" role="103ZXC">
       <node concept="3Vw88J" id="4m0g11MwG33" role="1006ar">
-        <property role="TrG5h" value="LoadView" />
+        <property role="TrG5h" value="LoadViewModel" />
       </node>
     </node>
     <node concept="103ZXB" id="4m0g11MwG34" role="103ZXF">
@@ -5813,7 +5813,7 @@
     <property role="3GE5qa" value="dependencies" />
     <node concept="103ZXx" id="3kGPU1QqwA0" role="103ZXC">
       <node concept="3Vw88J" id="3kGPU1QqwA1" role="1006ar">
-        <property role="TrG5h" value="LoadView" />
+        <property role="TrG5h" value="LoadViewModel" />
       </node>
     </node>
     <node concept="103ZXB" id="3kGPU1QqwA2" role="103ZXF">
@@ -5838,7 +5838,7 @@
         <node concept="DUd5q" id="54nmQxEJWUi" role="1s$QAM">
           <node concept="p182N" id="54nmQxEJWUm" role="DUiS9">
             <ref role="p15Ve" node="4m0g11MwG31" resolve="SimpleDependency_ViewModel" />
-            <ref role="p19w1" node="4m0g11MwG33" resolve="LoadView" />
+            <ref role="p19w1" node="4m0g11MwG33" resolve="LoadViewModel" />
           </node>
         </node>
       </node>
@@ -5902,7 +5902,7 @@
     <property role="3GE5qa" value="dependencies.subscope" />
     <node concept="103ZXx" id="54nmQxJP_TE" role="103ZXC">
       <node concept="3Vw88J" id="54nmQxJP_TF" role="1006ar">
-        <property role="TrG5h" value="LoadView" />
+        <property role="TrG5h" value="LoadViewModel" />
       </node>
     </node>
     <node concept="103ZXB" id="54nmQxJP_TG" role="103ZXF">
@@ -5983,7 +5983,7 @@
     <property role="$YGLj" value="VerifyDependencyCall" />
     <node concept="103ZXx" id="54nmQxLhoWB" role="103ZXC">
       <node concept="3Vw88J" id="54nmQxLhoWC" role="1006ar">
-        <property role="TrG5h" value="LoadView" />
+        <property role="TrG5h" value="LoadViewModel" />
       </node>
     </node>
     <node concept="103ZXB" id="54nmQxLhoWD" role="103ZXF" />

@@ -68,39 +68,39 @@ namespace commands
   }
   void RowBasedCommand_ViewTests::when_check_Checkboxes_at_0()
   {
-    this->sut->checkboxesChecked(0, true);
+    this->sut->checkboxesCheckBoxChecked(0, true);
   }
   void RowBasedCommand_ViewTests::when_uncheck_Checkboxes_at_1()
   {
-    this->sut->checkboxesChecked(1, false);
+    this->sut->checkboxesCheckBoxChecked(1, false);
   }
   void RowBasedCommand_ViewTests::when_select_entry_MyText1_in_FreeTextComboBoxes_at_0()
   {
-    this->sut->freeTextComboBoxesEntrySelected(0, std::string("MyText1"));
+    this->sut->freeTextComboBoxesComboBoxEntrySelected(0, std::string("MyText1"));
   }
   void RowBasedCommand_ViewTests::when_select_entry_MyText2_in_FreeTextComboBoxes_at_1()
   {
-    this->sut->freeTextComboBoxesEntrySelected(1, std::string("MyText2"));
+    this->sut->freeTextComboBoxesComboBoxEntrySelected(1, std::string("MyText2"));
   }
   void RowBasedCommand_ViewTests::when_select_entry_B_in_EntryComboBoxes_at_0()
   {
-    this->sut->entryComboBoxesEntrySelected(0, std::string("B"));
+    this->sut->entryComboBoxesComboBoxEntrySelected(0, std::string("B"));
   }
   void RowBasedCommand_ViewTests::when_select_entry_D_in_EntryComboBoxes_at_1()
   {
-    this->sut->entryComboBoxesEntrySelected(1, std::string("D"));
+    this->sut->entryComboBoxesComboBoxEntrySelected(1, std::string("D"));
   }
   void RowBasedCommand_ViewTests::when_fill_A_in_TextBoxes_at_0()
   {
-    this->sut->textBoxesTextFilled(0, std::string("A"));
+    this->sut->textBoxesTextBoxTextFilled(0, std::string("A"));
   }
   void RowBasedCommand_ViewTests::when_fill_B_in_TextBoxes_at_1()
   {
-    this->sut->textBoxesTextFilled(1, std::string("B"));
+    this->sut->textBoxesTextBoxTextFilled(1, std::string("B"));
   }
   void RowBasedCommand_ViewTests::when_click_Buttons_at_0()
   {
-    this->sut->buttonsClicked(0);
+    this->sut->buttonsButtonClicked(0);
   }
   void RowBasedCommand_ViewTests::then_MyFlags_has_2_rows()
   {

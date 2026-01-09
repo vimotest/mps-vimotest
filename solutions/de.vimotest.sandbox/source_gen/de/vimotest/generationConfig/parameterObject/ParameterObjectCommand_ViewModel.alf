@@ -36,7 +36,7 @@ public class ParameterObjectCommand_ViewModel {
     }
   }
   
-  public loadView (   in parameters: LoadViewParams  ) {    
+  public loadViewModel (   in parameters: LoadViewParams  ) {    
   }
   
   public datatype CheckParams {
@@ -44,6 +44,6 @@ public class ParameterObjectCommand_ViewModel {
     public isChecked : Boolean  ;
   }
   
-  public myFlagChecked (   in parameters: CheckParams  ) {    
+  public myFlagCheckBoxChecked (   in parameters: CheckParams  ) {    
   }
 }

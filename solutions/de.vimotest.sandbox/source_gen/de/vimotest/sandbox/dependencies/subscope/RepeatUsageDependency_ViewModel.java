@@ -8,6 +8,6 @@ public class RepeatUsageDependency_ViewModel {
   public Boolean getMyBool() {
     return this.MyBool;
   }
-  public void loadView() {
+  public void loadViewModel() {
   }
 }

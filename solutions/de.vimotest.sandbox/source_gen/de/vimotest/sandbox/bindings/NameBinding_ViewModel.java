@@ -18,7 +18,7 @@ public class NameBinding_ViewModel {
   public List<MyCustomRow> getRows() {
     return this.rows;
   }
-  public void loadView() {
+  public void loadViewModel() {
   }
   public void OkClicked() {
   }

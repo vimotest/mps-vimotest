@@ -41,12 +41,12 @@ public class SelectEntryCommand_ViewTests
 
     public virtual void when_select_entry_C_in_MyElements()
     {
-        this.sut.myElementsEntrySelected("C");
+        this.sut.myElementsComboBoxEntrySelected("C");
     }
 
     public virtual void when_select_entry_B_in_MyOptions()
     {
-        this.sut.myOptionsEntrySelected(commands.SelectEntryCommand_ViewModelMyOptionsOption.B);
+        this.sut.myOptionsRadioButtonGroupEntrySelected(commands.SelectEntryCommand_ViewModelMyOptionsOption.B);
     }
 
     public virtual void then_MyElements_has_3_entries_and()

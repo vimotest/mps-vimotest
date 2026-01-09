@@ -20,22 +20,22 @@ namespace commands
   {
     return this->MyStandardControlsTreeRows;
   }
-  void RowBasedCommand_ViewModel::loadView()
+  void RowBasedCommand_ViewModel::loadViewModel()
   {
   }
-  void RowBasedCommand_ViewModel::checkboxesChecked(int rowIndex, bool isChecked)
+  void RowBasedCommand_ViewModel::checkboxesCheckBoxChecked(int rowIndex, bool isChecked)
   {
   }
-  void RowBasedCommand_ViewModel::freeTextComboBoxesEntrySelected(int rowIndex, std::string entryName)
+  void RowBasedCommand_ViewModel::freeTextComboBoxesComboBoxEntrySelected(int rowIndex, std::string entryName)
   {
   }
-  void RowBasedCommand_ViewModel::entryComboBoxesEntrySelected(int rowIndex, std::string entryName)
+  void RowBasedCommand_ViewModel::entryComboBoxesComboBoxEntrySelected(int rowIndex, std::string entryName)
   {
   }
-  void RowBasedCommand_ViewModel::textBoxesTextFilled(int rowIndex, std::string text)
+  void RowBasedCommand_ViewModel::textBoxesTextBoxTextFilled(int rowIndex, std::string text)
   {
   }
-  void RowBasedCommand_ViewModel::buttonsClicked(int rowIndex)
+  void RowBasedCommand_ViewModel::buttonsButtonClicked(int rowIndex)
   {
   }
 }

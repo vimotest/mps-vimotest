@@ -18,7 +18,7 @@ namespace bindings
   {
     return this->rows;
   }
-  void NameBinding_ViewModel::loadView()
+  void NameBinding_ViewModel::loadViewModel()
   {
   }
   void NameBinding_ViewModel::OkClicked()

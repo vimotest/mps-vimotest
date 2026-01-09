@@ -15,7 +15,7 @@ namespace bindings
             return this.MyElementsTableRows;
         }
 
-        public virtual void loadView()
+        public virtual void loadViewModel()
         {
         }
     }

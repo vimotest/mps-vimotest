@@ -91,31 +91,31 @@ namespace commands
   }
   void SelectRowCommand_ViewTests::when_select_row_1_in_MyListViewElements()
   {
-    this->sut->myListViewElementsRowSelected(1);
+    this->sut->myListViewElementsListRowSelected(1);
   }
   void SelectRowCommand_ViewTests::when_select_row_ROW_B_in_MyStringRowHandleListViewElements()
   {
-    this->sut->myStringRowHandleListViewElementsRowSelected(std::string("ROW_B"));
+    this->sut->myStringRowHandleListViewElementsListRowSelected(std::string("ROW_B"));
   }
   void SelectRowCommand_ViewTests::when_select_row_1_in_MyTableViewElements()
   {
-    this->sut->myTableViewElementsRowSelected(1);
+    this->sut->myTableViewElementsTableRowSelected(1);
   }
   void SelectRowCommand_ViewTests::when_select_row_ROW_B_in_MyStringRowHandleTableViewElements()
   {
-    this->sut->myStringRowHandleTableViewElementsRowSelected(std::string("ROW_B"));
+    this->sut->myStringRowHandleTableViewElementsTableRowSelected(std::string("ROW_B"));
   }
   void SelectRowCommand_ViewTests::when_select_row_1_in_MyTreeViewElements()
   {
-    this->sut->myTreeViewElementsRowSelected(1);
+    this->sut->myTreeViewElementsTreeRowSelected(1);
   }
   void SelectRowCommand_ViewTests::when_select_row_ROW_B_in_MyStringRowHandleTreeViewElements()
   {
-    this->sut->myStringRowHandleTreeViewElementsRowSelected(std::string("ROW_B"));
+    this->sut->myStringRowHandleTreeViewElementsTreeRowSelected(std::string("ROW_B"));
   }
   void SelectRowCommand_ViewTests::when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListViewElements()
   {
-    this->sut->myStringHandleMultiSelectRowListViewElementsRowSelected({ std::string("ROW_A"), std::string("ROW_C") });
+    this->sut->myStringHandleMultiSelectRowListViewElementsListRowSelected({ std::string("ROW_A"), std::string("ROW_C") });
   }
   void SelectRowCommand_ViewTests::then_MyListViewElements_has_2_rows()
   {

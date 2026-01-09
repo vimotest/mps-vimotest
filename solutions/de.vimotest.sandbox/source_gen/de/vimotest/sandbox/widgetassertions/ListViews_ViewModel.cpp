@@ -79,7 +79,7 @@ namespace widgetassertions
   {
     return this->MyButtonsListRows;
   }
-  void ListViews_ViewModel::buttonsClicked(int rowIndex)
+  void ListViews_ViewModel::buttonsButtonClicked(int rowIndex)
   {
   }
 }

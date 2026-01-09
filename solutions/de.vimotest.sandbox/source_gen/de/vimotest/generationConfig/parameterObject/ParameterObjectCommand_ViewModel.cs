@@ -45,7 +45,7 @@ public class ParameterObjectCommand_ViewModel
         }
     }
 
-    public virtual void loadView(ParameterObjectCommand_ViewModel.LoadViewParams parameters)
+    public virtual void loadViewModel(ParameterObjectCommand_ViewModel.LoadViewParams parameters)
     {
     }
 
@@ -63,7 +63,7 @@ public class ParameterObjectCommand_ViewModel
         }
     }
 
-    public virtual void myFlagChecked(ParameterObjectCommand_ViewModel.CheckParams parameters)
+    public virtual void myFlagCheckBoxChecked(ParameterObjectCommand_ViewModel.CheckParams parameters)
     {
     }
 }

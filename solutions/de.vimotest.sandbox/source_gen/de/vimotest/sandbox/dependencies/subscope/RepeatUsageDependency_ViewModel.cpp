@@ -6,7 +6,7 @@ namespace dependencies::subscope
   {
     return this->MyBool;
   }
-  void RepeatUsageDependency_ViewModel::loadView()
+  void RepeatUsageDependency_ViewModel::loadViewModel()
   {
   }
 }

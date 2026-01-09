@@ -20,11 +20,11 @@ public class SeparateViewModelController_2_ViewTests
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
-    public void MyTest2_given_empty_context_when_LoadView_and_uncheck_MyFlag_then_()
+    public void MyTest2_given_empty_context_when_LoadViewModel_and_uncheck_MyFlag_then_()
     {
         this.given_empty_context();
         this.BuildSut();
-        this.when_LoadView();
+        this.when_LoadViewModel();
         this.when_uncheck_MyFlag();
         this.RetrieveViewModel();
     }
@@ -43,13 +43,13 @@ public class SeparateViewModelController_2_ViewTests
     {
     }
 
-    public virtual void when_LoadView()
+    public virtual void when_LoadViewModel()
     {
-        this.sutViewController.loadView();
+        this.sutViewController.loadViewModel();
     }
 
     public virtual void when_uncheck_MyFlag()
     {
-        this.sutViewController.myFlagChecked(false);
+        this.sutViewController.myFlagCheckBoxChecked(false);
     }
 }

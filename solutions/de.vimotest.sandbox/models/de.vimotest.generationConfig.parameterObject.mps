@@ -24,9 +24,9 @@
       </concept>
     </language>
     <language id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing">
-      <concept id="8948051009467167877" name="de.vimotest.viewmodel.testing.structure.ViewCommandInvocationAction" flags="ng" index="27s6xY">
+      <concept id="8948051009467167877" name="de.vimotest.viewmodel.testing.structure.ParameterizedCommandCallAction" flags="ng" index="27s6xY">
         <reference id="8948051009467187564" name="targetCommand" index="27sXQn" />
-        <child id="8948051009467207553" name="parameters" index="27sTdU" />
+        <child id="8948051009467207553" name="arguments" index="27sTdU" />
       </concept>
       <concept id="7445061853131767061" name="de.vimotest.viewmodel.testing.structure.WhenDescriptionWithAction" flags="ng" index="DUd5q">
         <child id="7445061853131768390" name="action" index="DUiS9" />
@@ -69,7 +69,7 @@
       </concept>
     </language>
     <language id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel">
-      <concept id="9208231005772576871" name="de.vimotest.viewmodel.structure.AbstractViewModelParameterizedCommand" flags="ng" index="231sOC">
+      <concept id="9208231005772576871" name="de.vimotest.viewmodel.structure.AbstractParameterizedCommand" flags="ng" index="231sOC">
         <property id="1008128444466031715" name="hasParameters" index="2hCfGp" />
       </concept>
       <concept id="5219625661134590255" name="de.vimotest.viewmodel.structure.SingleOrMultiLineString" flags="ng" index="o7Kjd" />
@@ -89,15 +89,15 @@
       <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6">
         <child id="5219625661134947434" name="defaultText" index="o6p68" />
       </concept>
-      <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommands" flags="ng" index="103ZXx">
-        <child id="777152910169039599" name="commands" index="1006ar" />
+      <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommandSection" flags="ng" index="103ZXx">
+        <child id="777152910169039599" name="contents" index="1006ar" />
       </concept>
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
         <property id="4513875792335097421" name="baseName" index="$YGLj" />
-        <child id="777152910168882972" name="viewModelCommands" index="103ZXC" />
-        <child id="777152910168882975" name="viewModelData" index="103ZXF" />
+        <child id="777152910168882972" name="commandSection" index="103ZXC" />
+        <child id="777152910168882975" name="stateSection" index="103ZXF" />
       </concept>
-      <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelData" flags="ng" index="103ZXB" />
+      <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelStateSection" flags="ng" index="103ZXB" />
       <concept id="6112733486387704342" name="de.vimotest.viewmodel.structure.GenerationConfig" flags="ng" index="1a4JyI">
         <property id="940995032095340087" name="useParameterObjects" index="3Mv2f9" />
       </concept>
@@ -112,7 +112,7 @@
     <property role="$YGLj" value="ParameterObjectCommand_View" />
     <node concept="103ZXx" id="Of5vVZtG4W" role="103ZXC">
       <node concept="3Vw88J" id="Of5vVZtG4X" role="1006ar">
-        <property role="TrG5h" value="LoadView" />
+        <property role="TrG5h" value="LoadViewModel" />
         <property role="2hCfGp" value="true" />
         <node concept="1nWCU9" id="Of5vVZtNJ2" role="103ZUC">
           <property role="TrG5h" value="Value1" />
@@ -159,7 +159,7 @@
       <node concept="1s$VFG" id="Of5vVZwrBD" role="1s$QAY">
         <node concept="DUd5q" id="Of5vVZwrBE" role="1s$QAM">
           <node concept="27s6xY" id="Of5vVZwrBS" role="DUiS9">
-            <ref role="27sXQn" node="Of5vVZtG4X" resolve="LoadView" />
+            <ref role="27sXQn" node="Of5vVZtG4X" resolve="LoadViewModel" />
             <node concept="_vku0" id="Of5vVZwrBU" role="27sTdU">
               <node concept="_iklQ" id="Of5vVZwrDT" role="_vku1">
                 <property role="_iklR" value="A" />

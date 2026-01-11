@@ -13,22 +13,22 @@ public class LoggerSpy implements Logger {
     this.wrapped = wrapped;
   }
 
-  public static class LogCalls {
+  public static class LogCallInfo {
     public String messageValue;
-    public LogCalls() {
+    public LogCallInfo() {
     }
-    public LogCalls(String messageValue) {
+    public LogCallInfo(String messageValue) {
       this.messageValue = messageValue;
     }
   }
-  private List<LogCalls> calls = new LinkedList<>();
+  public List<LogCallInfo> LogCallInfos = new LinkedList<>();
   @Override
   public void Log(String message) {
     if (!(Objects.equals(this.wrapped, null))) {
       this.wrapped.Log(message);
     }
-    LogCalls callInfo = new LogCalls();
+    LogCallInfo callInfo = new LogCallInfo();
     callInfo.messageValue = message;
-    this.calls.add(callInfo);
+    this.LogCallInfos.add(callInfo);
   }
 }

@@ -1579,6 +1579,16 @@
       <property role="TrG5h" value="isExpectRange" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="1Y8tlDlGFIb" role="1TKVEl">
+      <property role="IQ2nx" value="2272195042853698443" />
+      <property role="TrG5h" value="expectedIndex" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="1Y8tlDlGFIa" role="1TKVEl">
+      <property role="IQ2nx" value="2272195042853698442" />
+      <property role="TrG5h" value="isSpecificIndex" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="54nmQxL7zLK">
     <property role="EcuMT" value="5843239545669041264" />

@@ -17,8 +17,8 @@ namespace dependencies
       this->wrapped->Log(message);
     }
 
-    LoggerSpy::LogCalls callInfo = { };
+    LoggerSpy::LogCallInfo callInfo = { };
     callInfo.messageValue = message;
-    this->calls.push_back(callInfo);
+    this->LogCallInfos.push_back(callInfo);
   }
 }

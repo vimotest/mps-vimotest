@@ -41,7 +41,9 @@ class VerifyDependencyCallViewModelTests {
 
   
   public then_call_Logger_Log_any_ (  ) {
-    ;
+    let spy: LoggerSpy = this.testEnvironment.getLogger (  );
+
+    AssertEqual ( 1, spy.LogCallInfos->size (  ) );
 
   }
 }

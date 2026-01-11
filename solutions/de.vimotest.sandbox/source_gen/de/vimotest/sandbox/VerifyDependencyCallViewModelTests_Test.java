@@ -7,6 +7,8 @@ import de.vimotest.sandbox.dependencies.calls.VerifyDependencyCallViewModelTestE
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.dependencies.calls.VerifyDependencyCallViewModelTestEnvironmentImpl;
+import de.vimotest.sandbox.dependencies.LoggerSpy;
+import org.junit.Assert;
 
 public class VerifyDependencyCallViewModelTests_Test {
   private VerifyDependencyCallViewModel sut;
@@ -35,6 +37,7 @@ public class VerifyDependencyCallViewModelTests_Test {
 
 
   public void then_call_Logger_Log_any_() {
-    // ;
+    LoggerSpy spy = this.testEnvironment.getLogger();
+    Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(spy.LogCallInfos.size()));
   }
 }

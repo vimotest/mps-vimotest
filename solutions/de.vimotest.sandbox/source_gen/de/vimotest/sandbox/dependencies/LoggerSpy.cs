@@ -15,21 +15,21 @@ namespace dependencies
             this.wrapped = wrapped;
         }
 
-        public struct LogCalls
+        public struct LogCallInfo
         {
             public string messageValue;
 
-            public LogCalls()
+            public LogCallInfo()
             {
             }
 
-            public LogCalls(string messageValue)
+            public LogCallInfo(string messageValue)
             {
                 this.messageValue = messageValue;
             }
         }
 
-        private System.Collections.Generic.List<dependencies.LoggerSpy.LogCalls> calls = new System.Collections.Generic.List<dependencies.LoggerSpy.LogCalls>();
+        public System.Collections.Generic.List<dependencies.LoggerSpy.LogCallInfo> LogCallInfos = new System.Collections.Generic.List<dependencies.LoggerSpy.LogCallInfo>();
 
         public virtual void Log(string message)
         {
@@ -38,9 +38,9 @@ namespace dependencies
                 this.wrapped.Log(message);
             }
 
-            dependencies.LoggerSpy.LogCalls callInfo = new dependencies.LoggerSpy.LogCalls();
+            dependencies.LoggerSpy.LogCallInfo callInfo = new dependencies.LoggerSpy.LogCallInfo();
             callInfo.messageValue = message;
-            this.calls.Add(callInfo);
+            this.LogCallInfos.Add(callInfo);
         }
     }
 }

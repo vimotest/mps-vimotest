@@ -11,13 +11,13 @@ namespace dependencies
   {
   public:
     virtual void setWrapped(std::shared_ptr<Logger> wrapped);
-    struct LogCalls
+    struct LogCallInfo
     {
       std::string messageValue;
     };
+    std::vector<LogCallInfo> LogCallInfos;
     void Log(std::string message) override;
   private:
     std::shared_ptr<Logger> wrapped;
-    std::vector<LogCalls> calls;
   };
 }

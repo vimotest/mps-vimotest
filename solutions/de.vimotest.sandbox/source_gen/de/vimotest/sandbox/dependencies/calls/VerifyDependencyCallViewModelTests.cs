@@ -3,6 +3,8 @@
 /// </filename>
 using dependencies.calls;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using dependencies;
+using System.Collections.Generic;
 
 [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class VerifyDependencyCallViewModelTests
@@ -32,6 +34,7 @@ public class VerifyDependencyCallViewModelTests
 
     public virtual void then_call_Logger_Log_any_()
     {
-        ;
+        var spy = this.testEnvironment.getLogger();
+        Assert.AreEqual(1, spy.LogCallInfos.Count);
     }
 }

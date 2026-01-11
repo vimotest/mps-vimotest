@@ -1,6 +1,8 @@
 #include <gtest/gtest.h>
 #include <memory>
 #include "VerifyDependencyCallViewModelTestEnvironment.h"
+#include "dependencies/LoggerSpy.h"
+#include <vector>
 #include "VerifyDependencyCallViewModel.h"
 #include "VerifyDependencyCallViewModelTestEnvironmentImpl.h"
 
@@ -32,6 +34,7 @@ namespace dependencies::calls
   }
   void VerifyDependencyCallViewModelTests::then_call_Logger_Log_any_()
   {
-    ;
+    auto& spy = this->testEnvironment->getLogger();
+    EXPECT_EQ(1, spy->LogCallInfos.size());
   }
 }

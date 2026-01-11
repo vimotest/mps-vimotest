@@ -13,12 +13,12 @@ class LoggerSpy specializes Logger {
   }
   
   
-  public datatype LogCalls {
+  public datatype LogCallInfo {
     
     public messageValue : String  ;
   }
   
-  private calls : LogCalls [ * ]  ;
+  public LogCallInfos : LogCallInfo [ * ]  ;
   
   public Log (   in message: String  ) {
     if ( this.wrapped != null ) {
@@ -26,11 +26,11 @@ class LoggerSpy specializes Logger {
 
     } 
 
-    let callInfo: LogCalls = new LogCalls (  );
+    let callInfo: LogCallInfo = new LogCallInfo (  );
 
     callInfo.messageValue = message;
 
-    this.calls->add ( callInfo );
+    this.LogCallInfos->add ( callInfo );
 
   }
 }

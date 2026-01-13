@@ -19,7 +19,7 @@ namespace context
     std::string dataTableToString = R"(| id | name |
 | 0 | A |)";
     virtual void given_dataTableToString();
-    std::string dataTableToJson = R"([ { id:\"0\", name:\"A\" } ])";
+    std::string dataTableToJson = R"([ { id:"0", name:"A" } ])";
     virtual void given_dataTableToJson();
     std::string dataTableToXml = R"(<Data>
   <DataRow>

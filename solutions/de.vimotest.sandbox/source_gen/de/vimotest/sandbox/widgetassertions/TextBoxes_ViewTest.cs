@@ -4,6 +4,7 @@
 using widgetassertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
+using Alf.Library.PrimitiveBehaviors;
 
 [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class TextBoxes_ViewTest
@@ -62,30 +63,30 @@ public class TextBoxes_ViewTest
 
     public virtual void then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible()
     {
-        Assert.AreEqual("Some entered Input", this.sut.getMyValueTextBoxText());
-        Assert.IsTrue(this.sut.getIsMyValueTextBoxEnabled());
-        Assert.IsTrue(this.sut.getIsMyValueTextBoxVisible());
+        Assert.AreEqual("Some entered Input", this.sut.getMyValueTextBoxText(), "Expected that textbox MyValue has text <" + "Some entered Input" + ">, but was <" + this.sut.getMyValueTextBoxText() + ">");
+        Assert.IsTrue(this.sut.getIsMyValueTextBoxEnabled(), "Expected textbox MyValue is enabled, but it was disabled");
+        Assert.IsTrue(this.sut.getIsMyValueTextBoxVisible(), "Expected textbox MyValue is visible, but it was hidden");
     }
 
     public virtual void then_MyValue_shows_text_Some_entered_Input_and_is_not_enabled_and_is_visible()
     {
-        Assert.AreEqual("Some entered Input", this.sut.getMyValueTextBoxText());
-        Assert.IsFalse(this.sut.getIsMyValueTextBoxEnabled());
-        Assert.IsTrue(this.sut.getIsMyValueTextBoxVisible());
+        Assert.AreEqual("Some entered Input", this.sut.getMyValueTextBoxText(), "Expected that textbox MyValue has text <" + "Some entered Input" + ">, but was <" + this.sut.getMyValueTextBoxText() + ">");
+        Assert.IsFalse(this.sut.getIsMyValueTextBoxEnabled(), "Expected textbox MyValue is disabled, but it was enabled");
+        Assert.IsTrue(this.sut.getIsMyValueTextBoxVisible(), "Expected textbox MyValue is visible, but it was hidden");
     }
 
     public virtual void then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_not_visible()
     {
-        Assert.AreEqual("Some entered Input", this.sut.getMyValueTextBoxText());
-        Assert.IsTrue(this.sut.getIsMyValueTextBoxEnabled());
-        Assert.IsFalse(this.sut.getIsMyValueTextBoxVisible());
+        Assert.AreEqual("Some entered Input", this.sut.getMyValueTextBoxText(), "Expected that textbox MyValue has text <" + "Some entered Input" + ">, but was <" + this.sut.getMyValueTextBoxText() + ">");
+        Assert.IsTrue(this.sut.getIsMyValueTextBoxEnabled(), "Expected textbox MyValue is enabled, but it was disabled");
+        Assert.IsFalse(this.sut.getIsMyValueTextBoxVisible(), "Expected textbox MyValue is hidden, but it was visible");
     }
 
     public virtual void then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_()
     {
         var actualMultiLineTextBoxValueLines = this.sut.getMultiLineTextBoxValueTextBoxText();
-        Assert.AreEqual(2, actualMultiLineTextBoxValueLines.Count);
-        Assert.AreEqual("Expected1", actualMultiLineTextBoxValueLines[0]);
-        Assert.AreEqual("Expected2", actualMultiLineTextBoxValueLines[1]);
+        Assert.AreEqual(2, actualMultiLineTextBoxValueLines.Count, "Expected that textbox MultiLineTextBoxValue has text with 2 lines, but has " + IntegerFunctions.ToString(actualMultiLineTextBoxValueLines.Count));
+        Assert.AreEqual("Expected1", actualMultiLineTextBoxValueLines[0], "Expected that textbox MultiLineTextBoxValue has text line at index 0 matching <" + "Expected1" + ">, but was <" + actualMultiLineTextBoxValueLines[0] + ">");
+        Assert.AreEqual("Expected2", actualMultiLineTextBoxValueLines[1], "Expected that textbox MultiLineTextBoxValue has text line at index 1 matching <" + "Expected2" + ">, but was <" + actualMultiLineTextBoxValueLines[1] + ">");
     }
 }

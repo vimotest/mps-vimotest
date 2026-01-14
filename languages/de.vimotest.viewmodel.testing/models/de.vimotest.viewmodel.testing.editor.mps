@@ -7495,59 +7495,95 @@
         <property role="3F0ifm" value=")" />
         <ref role="1k5W1q" to="dgt9:F907haLJXX" resolve="RightBracket" />
       </node>
-      <node concept="3F0ifn" id="54nmQxL7zN8" role="3EZMnx">
-        <property role="3F0ifm" value="[" />
-        <node concept="11LMrY" id="54nmQxL7zNn" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0A7n" id="54nmQxL7zNb" role="3EZMnx">
-        <ref role="1NtTu8" to="53m0:54nmQxL7zLB" resolve="atLeastCount" />
-      </node>
-      <node concept="3F0ifn" id="54nmQxL7zNe" role="3EZMnx">
-        <property role="3F0ifm" value=".." />
-        <node concept="11L4FC" id="54nmQxL7zNo" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="54nmQxL7zNq" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pkWqt" id="54nmQxL7zNw" role="pqm2j">
-          <node concept="3clFbS" id="54nmQxL7zNx" role="2VODD2">
-            <node concept="3clFbF" id="54nmQxL7zSH" role="3cqZAp">
-              <node concept="2OqwBi" id="54nmQxL7$9p" role="3clFbG">
-                <node concept="pncrf" id="54nmQxL7zSG" role="2Oq$k0" />
-                <node concept="3TrcHB" id="54nmQxL7$kW" role="2OqNvi">
-                  <ref role="3TsBF5" to="53m0:54nmQxL7zNv" resolve="isExpectRange" />
+      <node concept="1QoScp" id="2Fj9f95dGwV" role="3EZMnx">
+        <property role="1QpmdY" value="true" />
+        <node concept="pkWqt" id="2Fj9f95dGwY" role="3e4ffs">
+          <node concept="3clFbS" id="2Fj9f95dGx0" role="2VODD2">
+            <node concept="3clFbF" id="2Fj9f95dGJ1" role="3cqZAp">
+              <node concept="2OqwBi" id="2Fj9f95dH0B" role="3clFbG">
+                <node concept="pncrf" id="2Fj9f95dGJ0" role="2Oq$k0" />
+                <node concept="3TrcHB" id="2Fj9f95dHih" role="2OqNvi">
+                  <ref role="3TsBF5" to="53m0:1Y8tlDlGFIa" resolve="isSpecificIndex" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-      </node>
-      <node concept="3F0A7n" id="54nmQxL7zNh" role="3EZMnx">
-        <ref role="1NtTu8" to="53m0:54nmQxL7zLD" resolve="atMostCount" />
-        <node concept="pkWqt" id="54nmQxL7$uL" role="pqm2j">
-          <node concept="3clFbS" id="54nmQxL7$uM" role="2VODD2">
-            <node concept="3clFbF" id="54nmQxL7$uN" role="3cqZAp">
-              <node concept="2OqwBi" id="54nmQxL7$uO" role="3clFbG">
-                <node concept="pncrf" id="54nmQxL7$uP" role="2Oq$k0" />
-                <node concept="3TrcHB" id="54nmQxL7$uQ" role="2OqNvi">
-                  <ref role="3TsBF5" to="53m0:54nmQxL7zNv" resolve="isExpectRange" />
+        <node concept="3EZMnI" id="2Fj9f95dGnk" role="1QoS34">
+          <node concept="2iRfu4" id="2Fj9f95dGnl" role="2iSdaV" />
+          <node concept="3F0ifn" id="54nmQxL7zN8" role="3EZMnx">
+            <property role="3F0ifm" value="[" />
+            <node concept="11LMrY" id="54nmQxL7zNn" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F0A7n" id="2Fj9f95dHzf" role="3EZMnx">
+            <ref role="1NtTu8" to="53m0:1Y8tlDlGFIb" resolve="expectedIndex" />
+          </node>
+          <node concept="3F0ifn" id="54nmQxL7zNk" role="3EZMnx">
+            <property role="3F0ifm" value="]" />
+            <node concept="11L4FC" id="54nmQxL7zNm" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="3EZMnI" id="2Fj9f95dHpI" role="1QoVPY">
+          <node concept="2iRfu4" id="2Fj9f95dHpJ" role="2iSdaV" />
+          <node concept="3F0ifn" id="2Fj9f95dHpK" role="3EZMnx">
+            <property role="3F0ifm" value="[" />
+            <node concept="11LMrY" id="2Fj9f95dHpL" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F0A7n" id="2Fj9f95dHpM" role="3EZMnx">
+            <ref role="1NtTu8" to="53m0:54nmQxL7zLB" resolve="atLeastCount" />
+          </node>
+          <node concept="3F0ifn" id="2Fj9f95dHpN" role="3EZMnx">
+            <property role="3F0ifm" value=".." />
+            <node concept="11L4FC" id="2Fj9f95dHpO" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="11LMrY" id="2Fj9f95dHpP" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="pkWqt" id="2Fj9f95dHpQ" role="pqm2j">
+              <node concept="3clFbS" id="2Fj9f95dHpR" role="2VODD2">
+                <node concept="3clFbF" id="2Fj9f95dHpS" role="3cqZAp">
+                  <node concept="2OqwBi" id="2Fj9f95dHpT" role="3clFbG">
+                    <node concept="pncrf" id="2Fj9f95dHpU" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="2Fj9f95dHpV" role="2OqNvi">
+                      <ref role="3TsBF5" to="53m0:54nmQxL7zNv" resolve="isExpectRange" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
           </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="54nmQxL7zNt" role="3EZMnx">
-        <property role="3F0ifm" value="times" />
-        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
-      </node>
-      <node concept="3F0ifn" id="54nmQxL7zNk" role="3EZMnx">
-        <property role="3F0ifm" value="]" />
-        <node concept="11L4FC" id="54nmQxL7zNm" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+          <node concept="3F0A7n" id="2Fj9f95dHpW" role="3EZMnx">
+            <ref role="1NtTu8" to="53m0:54nmQxL7zLD" resolve="atMostCount" />
+            <node concept="pkWqt" id="2Fj9f95dHpX" role="pqm2j">
+              <node concept="3clFbS" id="2Fj9f95dHpY" role="2VODD2">
+                <node concept="3clFbF" id="2Fj9f95dHpZ" role="3cqZAp">
+                  <node concept="2OqwBi" id="2Fj9f95dHq0" role="3clFbG">
+                    <node concept="pncrf" id="2Fj9f95dHq1" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="2Fj9f95dHq2" role="2OqNvi">
+                      <ref role="3TsBF5" to="53m0:54nmQxL7zNv" resolve="isExpectRange" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3F0ifn" id="2Fj9f95dHq3" role="3EZMnx">
+            <property role="3F0ifm" value="times" />
+            <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+          </node>
+          <node concept="3F0ifn" id="2Fj9f95dHq4" role="3EZMnx">
+            <property role="3F0ifm" value="]" />
+            <node concept="11L4FC" id="2Fj9f95dHq5" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2iRfu4" id="54nmQxL7zMt" role="2iSdaV" />
@@ -7571,12 +7607,13 @@
           <node concept="2iRfu4" id="1Y8tlDlH6Br" role="2iSdaV" />
           <node concept="3F0ifn" id="1Y8tlDlGT4m" role="3EZMnx">
             <property role="3F0ifm" value="expect index" />
+            <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
           </node>
           <node concept="pVoyu" id="1Y8tlDlH6Bs" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
           <node concept="3F0A7n" id="1Y8tlDlGSJz" role="3EZMnx">
-            <ref role="1NtTu8" to="53m0:1Y8tlDlGFIa" resolve="isSpecificIndex" />
+            <ref role="1NtTu8" to="53m0:1Y8tlDlGFIb" resolve="expectedIndex" />
           </node>
           <node concept="pkWqt" id="1Y8tlDlH6Bt" role="pqm2j">
             <node concept="3clFbS" id="1Y8tlDlH6Bu" role="2VODD2">

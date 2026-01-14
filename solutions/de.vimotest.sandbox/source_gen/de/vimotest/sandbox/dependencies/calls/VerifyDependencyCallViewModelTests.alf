@@ -17,10 +17,31 @@ class VerifyDependencyCallViewModelTests {
   }
   
   
-  public Verify_dependency_call_given_when_then_call_Logger_Log_any_ (  ) {
+  public Verify_dependency_call_any_given_when_then_call_Logger_Log_any_ (  ) {
     this.BuildSut (  );
 
     this.then_call_Logger_Log_any_ (  );
+
+  }
+  
+  public Verify_dependency_call_1_times_given_when_then_call_Logger_Log___ (  ) {
+    this.BuildSut (  );
+
+    this.then_call_Logger_Log___ (  );
+
+  }
+  
+  public Verify_dependency_call_at_index_3_given_when_then_call_Logger_Log___ (  ) {
+    this.BuildSut (  );
+
+    this.then_call_Logger_Log____1 (  );
+
+  }
+  
+  public Verify_dependency_call_3_6_given_when_then_call_Logger_Log___ (  ) {
+    this.BuildSut (  );
+
+    this.then_call_Logger_Log____2 (  );
 
   }
   
@@ -43,7 +64,52 @@ class VerifyDependencyCallViewModelTests {
   public then_call_Logger_Log_any_ (  ) {
     let spy: LoggerSpy = this.testEnvironment.getLogger (  );
 
-    AssertEqual ( 1, spy.LogCallInfos->size (  ) );
+    AssertEqualWithMessage ( 1, spy.LogCallInfos->size (  ), "Expected that Logger.Log was called exactly 1 times, but was " + spy.LogCallInfos->size (  ) );
+
+  }
+  
+  public then_call_Logger_Log___ (  ) {
+    let spy: LoggerSpy = this.testEnvironment.getLogger (  );
+
+    for ( callInfoIndex in 0 .. spy.LogCallInfos->size (  ) ) {
+      let callInfo: LogCallInfo = spy.LogCallInfos->at ( callInfoIndex );
+
+      AssertEqualWithMessage ( "my log", callInfo.messageValue, "Logger.Log Call[" + callInfoIndex + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">" );
+
+    } 
+
+    AssertEqualWithMessage ( 1, spy.LogCallInfos->size (  ), "Expected that Logger.Log was called exactly 1 times, but was " + spy.LogCallInfos->size (  ) );
+
+  }
+  
+  public then_call_Logger_Log____1 (  ) {
+    let spy: LoggerSpy = this.testEnvironment.getLogger (  );
+
+    if ( 3 < spy.LogCallInfos->size (  ) ) {
+      let callInfo: LogCallInfo = spy.LogCallInfos[ 3 ];
+
+      AssertEqualWithMessage ( "my log", callInfo.messageValue, "Logger.Log Call[" + 3 + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">" );
+
+    } else {
+      AssertTrueWithMessage ( false, "Expected a call to Logger.Log at index [3], but it was only called " + spy.LogCallInfos->size (  ) + " times" );
+
+    } 
+
+  }
+  
+  public then_call_Logger_Log____2 (  ) {
+    let spy: LoggerSpy = this.testEnvironment.getLogger (  );
+
+    for ( callInfoIndex in 0 .. spy.LogCallInfos->size (  ) ) {
+      let callInfo: LogCallInfo = spy.LogCallInfos->at ( callInfoIndex );
+
+      AssertEqualWithMessage ( "my log", callInfo.messageValue, "Logger.Log Call[" + callInfoIndex + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">" );
+
+    } 
+
+    AssertTrueWithMessage ( spy.LogCallInfos->size (  ) >= 3, "Expected that Logger.Log was called at least 3 times, but was " + spy.LogCallInfos->size (  ) );
+
+    AssertTrueWithMessage ( spy.LogCallInfos->size (  ) <= 6, "Expected that Logger.Log was called at most 6 times, but was " + spy.LogCallInfos->size (  ) );
 
   }
 }

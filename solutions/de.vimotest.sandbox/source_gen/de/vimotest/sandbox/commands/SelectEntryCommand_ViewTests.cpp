@@ -5,7 +5,6 @@
 #include "SelectEntryCommand_ViewModel.h"
 #include "SelectEntryCommand_ViewModelMyOptionsOption.h"
 #include <vector>
-#include <optional>
 #include "SelectEntryCommand_ViewModelTestEnvironmentImpl.h"
 
 namespace commands
@@ -53,10 +52,10 @@ namespace commands
   void SelectEntryCommand_ViewTests::then_MyElements_has_3_entries_and()
   {
     auto& actualMyElementsEntries = this->sut->getMyElementsComboBoxEntries();
-    EXPECT_EQ(3, actualMyElementsEntries.size());
-    EXPECT_EQ(std::string("A"), actualMyElementsEntries.at(0));
-    EXPECT_EQ(std::string("B"), actualMyElementsEntries.at(1));
-    EXPECT_EQ(std::string("C"), actualMyElementsEntries.at(2));
-    EXPECT_EQ(std:: nullopt, this->sut->getMyElementsComboBoxSelectedEntry());
+    ASSERT_EQ(3, actualMyElementsEntries.size()) << std::string("Expected that combobox MyElements has 3 entries, but has ") + std::to_string(actualMyElementsEntries.size());
+    ASSERT_EQ(std::string("A"), actualMyElementsEntries.at(0)) << std::string("Expected that combobox MyElements has entry at index 0 matching <") + std::string("A") + std::string(">, but was <") + actualMyElementsEntries.at(0) + std::string(">");
+    ASSERT_EQ(std::string("B"), actualMyElementsEntries.at(1)) << std::string("Expected that combobox MyElements has entry at index 1 matching <") + std::string("B") + std::string(">, but was <") + actualMyElementsEntries.at(1) + std::string(">");
+    ASSERT_EQ(std::string("C"), actualMyElementsEntries.at(2)) << std::string("Expected that combobox MyElements has entry at index 2 matching <") + std::string("C") + std::string(">, but was <") + actualMyElementsEntries.at(2) + std::string(">");
+    ASSERT_EQ(nullptr, this->sut->getMyElementsComboBoxSelectedEntry()) << std::string("Expected that combobox MyElements has ") + std::string("no selection") + std::string(", but was <") + this->sut->getMyElementsComboBoxSelectedEntry() + std::string(">");
   }
 }

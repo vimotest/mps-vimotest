@@ -110,33 +110,33 @@ public class LoginViewModelTests_Test {
 
 
   public void then_Username_shows_text_User_() {
-    Assert.assertEquals("User", this.sut.getUsernameTextBoxText());
+    Assert.assertEquals("Expected that textbox Username has text <" + "User" + ">, but was <" + this.sut.getUsernameTextBoxText() + ">", "User", this.sut.getUsernameTextBoxText());
   }
   public void then_Password_shows_text_MyPass123_() {
-    Assert.assertEquals("MyPass123", this.sut.getPasswordTextBoxText());
+    Assert.assertEquals("Expected that textbox Password has text <" + "MyPass123" + ">, but was <" + this.sut.getPasswordTextBoxText() + ">", "MyPass123", this.sut.getPasswordTextBoxText());
   }
   public void then_Login_is_enabled() {
     Assert.assertTrue(this.sut.getIsLoginButtonEnabled());
   }
   public void then_Password_shows_empty_text() {
-    Assert.assertEquals("", this.sut.getPasswordTextBoxText());
+    Assert.assertEquals("Expected that textbox Password has text <" + "" + ">, but was <" + this.sut.getPasswordTextBoxText() + ">", "", this.sut.getPasswordTextBoxText());
   }
   public void then_Login_is_not_enabled() {
     Assert.assertFalse(this.sut.getIsLoginButtonEnabled());
   }
   public void then_Username_shows_text_Ada_() {
-    Assert.assertEquals("Ada", this.sut.getUsernameTextBoxText());
+    Assert.assertEquals("Expected that textbox Username has text <" + "Ada" + ">, but was <" + this.sut.getUsernameTextBoxText() + ">", "Ada", this.sut.getUsernameTextBoxText());
   }
   public void then_Password_shows_text_____() {
-    Assert.assertEquals("******", this.sut.getPasswordTextBoxText());
+    Assert.assertEquals("Expected that textbox Password has text <" + "******" + ">, but was <" + this.sut.getPasswordTextBoxText() + ">", "******", this.sut.getPasswordTextBoxText());
   }
   public void then_Password_shows_text_Lovelace1_() {
-    Assert.assertEquals("Lovelace1", this.sut.getPasswordTextBoxText());
+    Assert.assertEquals("Expected that textbox Password has text <" + "Lovelace1" + ">, but was <" + this.sut.getPasswordTextBoxText() + ">", "Lovelace1", this.sut.getPasswordTextBoxText());
   }
   public void then_ShowPassword_is_checked() {
     Assert.assertTrue(this.sut.getIsShowPasswordCheckBoxChecked());
   }
   public void then_Error_shows_text_Needs_uppercase_letters_() {
-    Assert.assertEquals("Needs uppercase letters", this.sut.getErrorLabelText());
+    Assert.assertEquals("Expected that label Error has text <" + "Needs uppercase letters" + ">, but was <" + this.sut.getErrorLabelText() + ">", "Needs uppercase letters", this.sut.getErrorLabelText());
   }
 }

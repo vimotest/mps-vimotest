@@ -56,13 +56,13 @@ public class CheckBoxes_ViewTest_Test {
     Assert.assertTrue(this.sut.getIsMyFlagWithLabelCheckBoxChecked());
     Assert.assertTrue(this.sut.getIsMyFlagWithLabelCheckBoxEnabled());
     Assert.assertTrue(this.sut.getIsMyFlagWithLabelCheckBoxVisible());
-    Assert.assertEquals("My Label", this.sut.getMyFlagWithLabelCheckBoxText());
+    Assert.assertEquals("Expected that checkbox MyFlagWithLabel has text <" + "My Label" + ">, but was <" + this.sut.getMyFlagWithLabelCheckBoxText() + ">", "My Label", this.sut.getMyFlagWithLabelCheckBoxText());
   }
   public void then_MyFlagNoLabel_is_not_checked() {
     Assert.assertFalse(this.sut.getIsMyFlagNoLabelCheckBoxChecked());
   }
   public void then_MyFlagTriState_is_mixed() {
-    Assert.assertEquals(null, this.sut.getIsMyFlagTriStateCheckBoxChecked());
+    Assert.assertEquals("Expected that checkbox MyFlagTriState is indeterminate (null), but was <" + this.sut.getIsMyFlagTriStateCheckBoxChecked() + ">", null, this.sut.getIsMyFlagTriStateCheckBoxChecked());
   }
   public void then_MyFlagTriState_is_checked() {
     Assert.assertTrue(this.sut.getIsMyFlagTriStateCheckBoxChecked());
@@ -73,11 +73,11 @@ public class CheckBoxes_ViewTest_Test {
   public void then_MyFlagWithLabel_is_checked_and_is_not_enabled_and_shows_text_value_() {
     Assert.assertTrue(this.sut.getIsMyFlagWithLabelCheckBoxChecked());
     Assert.assertFalse(this.sut.getIsMyFlagWithLabelCheckBoxEnabled());
-    Assert.assertEquals("value", this.sut.getMyFlagWithLabelCheckBoxText());
+    Assert.assertEquals("Expected that checkbox MyFlagWithLabel has text <" + "value" + ">, but was <" + this.sut.getMyFlagWithLabelCheckBoxText() + ">", "value", this.sut.getMyFlagWithLabelCheckBoxText());
   }
   public void then_MyFlagWithLabel_is_checked_and_is_not_visible_and_shows_text_test_() {
     Assert.assertTrue(this.sut.getIsMyFlagWithLabelCheckBoxChecked());
     Assert.assertFalse(this.sut.getIsMyFlagWithLabelCheckBoxVisible());
-    Assert.assertEquals("test", this.sut.getMyFlagWithLabelCheckBoxText());
+    Assert.assertEquals("Expected that checkbox MyFlagWithLabel has text <" + "test" + ">, but was <" + this.sut.getMyFlagWithLabelCheckBoxText() + ">", "test", this.sut.getMyFlagWithLabelCheckBoxText());
   }
 }

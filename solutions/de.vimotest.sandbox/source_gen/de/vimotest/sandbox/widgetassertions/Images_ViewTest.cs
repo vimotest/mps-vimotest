@@ -38,11 +38,11 @@ public class Images_ViewTest
 
     public virtual void then_Status_shows_image_image_active_()
     {
-        Assert.AreEqual("image_active", this.sut.getStatusImageName());
+        Assert.AreEqual("image_active", this.sut.getStatusImageName(), "Expected that image Status has " + "image <image_active>" + ", but was <" + this.sut.getStatusImageName() + ">");
     }
 
     public virtual void then_UpOrDown_shows_image_image_down_()
     {
-        Assert.AreEqual("image_down", this.sut.getUpOrDownImageName());
+        Assert.AreEqual("image_down", this.sut.getUpOrDownImageName(), "Expected that image UpOrDown has " + "image <image_down>" + ", but was <" + this.sut.getUpOrDownImageName() + ">");
     }
 }

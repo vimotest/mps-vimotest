@@ -68,51 +68,51 @@ class CheckBoxes_ViewTest {
 
   
   public then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_ (  ) {
-    AssertTrue ( this.sut.getIsMyFlagWithLabelCheckBoxChecked (  ) );
+    AssertTrue ( this.sut.getIsMyFlagWithLabelCheckBoxChecked (  ), "Expected that checkbox MyFlagWithLabel is checked, but was <" + this.sut.getIsMyFlagWithLabelCheckBoxChecked (  ) + ">" );
 
-    AssertTrue ( this.sut.getIsMyFlagWithLabelCheckBoxEnabled (  ) );
+    AssertTrue ( this.sut.getIsMyFlagWithLabelCheckBoxEnabled (  ), "Expected checkbox MyFlagWithLabel is enabled, but it was disabled" );
 
-    AssertTrue ( this.sut.getIsMyFlagWithLabelCheckBoxVisible (  ) );
+    AssertTrue ( this.sut.getIsMyFlagWithLabelCheckBoxVisible (  ), "Expected checkbox MyFlagWithLabel is visible, but it was hidden" );
 
-    AssertEqual ( "My Label", this.sut.getMyFlagWithLabelCheckBoxText (  ) );
+    AssertEqualWithMessage ( "My Label", this.sut.getMyFlagWithLabelCheckBoxText (  ), "Expected that checkbox MyFlagWithLabel has text <" + "My Label" + ">, but was <" + this.sut.getMyFlagWithLabelCheckBoxText (  ) + ">" );
 
   }
   
   public then_MyFlagNoLabel_is_not_checked (  ) {
-    AssertFalse ( this.sut.getIsMyFlagNoLabelCheckBoxChecked (  ) );
+    AssertFalse ( this.sut.getIsMyFlagNoLabelCheckBoxChecked (  ), "Expected that checkbox MyFlagNoLabel is unchecked, but was <" + this.sut.getIsMyFlagNoLabelCheckBoxChecked (  ) + ">" );
 
   }
   
   public then_MyFlagTriState_is_mixed (  ) {
-    AssertEqual ( null, this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) );
+    AssertEqualWithMessage ( null, this.sut.getIsMyFlagTriStateCheckBoxChecked (  ), "Expected that checkbox MyFlagTriState is indeterminate (null), but was <" + this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) + ">" );
 
   }
   
   public then_MyFlagTriState_is_checked (  ) {
-    AssertTrue ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) );
+    AssertTrue ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ), "Expected that checkbox MyFlagTriState is checked, but was <" + this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) + ">" );
 
   }
   
   public then_MyFlagTriState_is_not_checked (  ) {
-    AssertFalse ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) );
+    AssertFalse ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ), "Expected that checkbox MyFlagTriState is unchecked, but was <" + this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) + ">" );
 
   }
   
   public then_MyFlagWithLabel_is_checked_and_is_not_enabled_and_shows_text_value_ (  ) {
-    AssertTrue ( this.sut.getIsMyFlagWithLabelCheckBoxChecked (  ) );
+    AssertTrue ( this.sut.getIsMyFlagWithLabelCheckBoxChecked (  ), "Expected that checkbox MyFlagWithLabel is checked, but was <" + this.sut.getIsMyFlagWithLabelCheckBoxChecked (  ) + ">" );
 
-    AssertFalse ( this.sut.getIsMyFlagWithLabelCheckBoxEnabled (  ) );
+    AssertFalse ( this.sut.getIsMyFlagWithLabelCheckBoxEnabled (  ), "Expected checkbox MyFlagWithLabel is disabled, but it was enabled" );
 
-    AssertEqual ( "value", this.sut.getMyFlagWithLabelCheckBoxText (  ) );
+    AssertEqualWithMessage ( "value", this.sut.getMyFlagWithLabelCheckBoxText (  ), "Expected that checkbox MyFlagWithLabel has text <" + "value" + ">, but was <" + this.sut.getMyFlagWithLabelCheckBoxText (  ) + ">" );
 
   }
   
   public then_MyFlagWithLabel_is_checked_and_is_not_visible_and_shows_text_test_ (  ) {
-    AssertTrue ( this.sut.getIsMyFlagWithLabelCheckBoxChecked (  ) );
+    AssertTrue ( this.sut.getIsMyFlagWithLabelCheckBoxChecked (  ), "Expected that checkbox MyFlagWithLabel is checked, but was <" + this.sut.getIsMyFlagWithLabelCheckBoxChecked (  ) + ">" );
 
-    AssertFalse ( this.sut.getIsMyFlagWithLabelCheckBoxVisible (  ) );
+    AssertFalse ( this.sut.getIsMyFlagWithLabelCheckBoxVisible (  ), "Expected checkbox MyFlagWithLabel is hidden, but it was visible" );
 
-    AssertEqual ( "test", this.sut.getMyFlagWithLabelCheckBoxText (  ) );
+    AssertEqualWithMessage ( "test", this.sut.getMyFlagWithLabelCheckBoxText (  ), "Expected that checkbox MyFlagWithLabel has text <" + "test" + ">, but was <" + this.sut.getMyFlagWithLabelCheckBoxText (  ) + ">" );
 
   }
 }

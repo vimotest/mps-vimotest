@@ -10,6 +10,7 @@ import de.vimotest.sandbox.widgetassertions.TableViews_ViewModelTestEnvironmentI
 import java.util.List;
 import de.vimotest.sandbox.widgetassertions.TableViews_ViewModelMyElementsRow;
 import org.junit.Assert;
+import wrappers.javaWrappers.IntegerFunctions;
 import de.vimotest.sandbox.widgetassertions.TableViews_ViewModelMyStringRowHandlesRow;
 
 public class TableViews_ViewTest_Test {
@@ -50,55 +51,55 @@ public class TableViews_ViewTest_Test {
 
   public void then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible() {
     List<TableViews_ViewModelMyElementsRow> actualRows = this.sut.getMyElementsTableRows();
-    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view MyElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TableViews_ViewModelMyElementsRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
+    Assert.assertEquals("Expected that table view MyElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
     Assert.assertTrue(row0.getIsIncludeCheckBoxChecked());
-    Assert.assertEquals("A", row0.getNameLabelText());
-    Assert.assertEquals("B", row0.getDescriptionLabelText());
-    Assert.assertEquals("image_info", row0.getInfoIconImageName());
+    Assert.assertEquals("Expected that label Name has text <" + "A" + ">, but was <" + row0.getNameLabelText() + ">", "A", row0.getNameLabelText());
+    Assert.assertEquals("Expected that label Description has text <" + "B" + ">, but was <" + row0.getDescriptionLabelText() + ">", "B", row0.getDescriptionLabelText());
+    Assert.assertEquals("Expected that image InfoIcon has " + "image <image_info>" + ", but was <" + row0.getInfoIconImageName() + ">", "image_info", row0.getInfoIconImageName());
     // }
     // {
     TableViews_ViewModelMyElementsRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals(Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
+    Assert.assertEquals("Expected that table view MyElements row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
     Assert.assertFalse(row1.getIsIncludeCheckBoxChecked());
-    Assert.assertEquals("C", row1.getNameLabelText());
-    Assert.assertEquals("D", row1.getDescriptionLabelText());
-    Assert.assertEquals("image_star", row1.getInfoIconImageName());
+    Assert.assertEquals("Expected that label Name has text <" + "C" + ">, but was <" + row1.getNameLabelText() + ">", "C", row1.getNameLabelText());
+    Assert.assertEquals("Expected that label Description has text <" + "D" + ">, but was <" + row1.getDescriptionLabelText() + ">", "D", row1.getDescriptionLabelText());
+    Assert.assertEquals("Expected that image InfoIcon has " + "image <image_star>" + ", but was <" + row1.getInfoIconImageName() + ">", "image_star", row1.getInfoIconImageName());
     // }
-    Assert.assertEquals(Integer.valueOf(this.sut.getMyElementsTableSelectedRow()), this.sut.getMyElementsTableSelectedRow());
+    Assert.assertEquals("Expected that table view MyElements has selected row with row handle <" + 1 + ">, but was <" + this.sut.getMyElementsTableSelectedRow() + ">", Integer.valueOf(this.sut.getMyElementsTableSelectedRow()), this.sut.getMyElementsTableSelectedRow());
     Assert.assertTrue(this.sut.getIsMyElementsTableVisible());
     Assert.assertTrue(this.sut.getIsMyElementsTableEnabled());
     Assert.assertFalse(this.sut.getIsMyElementsTableDescriptionColumnVisible());
   }
   public void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() {
     List<TableViews_ViewModelMyStringRowHandlesRow> actualRows = this.sut.getMyStringRowHandlesTableRows();
-    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view MyStringRowHandles has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TableViews_ViewModelMyStringRowHandlesRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals("ROW0", row0.getRowHandle());
-    Assert.assertEquals("A", row0.getValuesLabelText());
+    Assert.assertEquals("Expected that table view MyStringRowHandles row at index 0 has rowhandle <ROW0>, but was <" + row0.getRowHandle() + ">", "ROW0", row0.getRowHandle());
+    Assert.assertEquals("Expected that label Values has text <" + "A" + ">, but was <" + row0.getValuesLabelText() + ">", "A", row0.getValuesLabelText());
     // }
     // {
     TableViews_ViewModelMyStringRowHandlesRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals("ROW1", row1.getRowHandle());
-    Assert.assertEquals("B", row1.getValuesLabelText());
+    Assert.assertEquals("Expected that table view MyStringRowHandles row at index 1 has rowhandle <ROW1>, but was <" + row1.getRowHandle() + ">", "ROW1", row1.getRowHandle());
+    Assert.assertEquals("Expected that label Values has text <" + "B" + ">, but was <" + row1.getValuesLabelText() + ">", "B", row1.getValuesLabelText());
     // }
-    Assert.assertEquals("ROW1", this.sut.getMyStringRowHandlesTableSelectedRow());
+    Assert.assertEquals("Expected that table view MyStringRowHandles has selected row with row handle <" + "ROW1" + ">, but was <" + this.sut.getMyStringRowHandlesTableSelectedRow() + ">", "ROW1", this.sut.getMyStringRowHandlesTableSelectedRow());
   }
   public void then_MyElements_has_2_rows() {
     List<TableViews_ViewModelMyElementsRow> actualRows = this.sut.getMyElementsTableRows();
-    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view MyElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TableViews_ViewModelMyElementsRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
-    Assert.assertEquals("A", row0.getNameLabelText());
+    Assert.assertEquals("Expected that table view MyElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
+    Assert.assertEquals("Expected that label Name has text <" + "A" + ">, but was <" + row0.getNameLabelText() + ">", "A", row0.getNameLabelText());
     // }
     // {
     TableViews_ViewModelMyElementsRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals(Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
-    Assert.assertEquals("image_star", row1.getInfoIconImageName());
+    Assert.assertEquals("Expected that table view MyElements row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
+    Assert.assertEquals("Expected that image InfoIcon has " + "image <image_star>" + ", but was <" + row1.getInfoIconImageName() + ">", "image_star", row1.getInfoIconImageName());
     // }
   }
 }

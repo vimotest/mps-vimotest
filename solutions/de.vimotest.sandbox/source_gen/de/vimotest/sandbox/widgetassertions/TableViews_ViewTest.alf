@@ -59,95 +59,95 @@ class TableViews_ViewTest {
   public then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible (  ) {
     let actualRows: TableViews_ViewModelMyElementsRow [] = this.sut.getMyElementsTableRows (  );
 
-    AssertEqual ( 2, actualRows->size (  ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view MyElements has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: TableViews_ViewModelMyElementsRow = actualRows[ 1 ];
 
-      AssertEqual ( 0, row0.getRowIndex (  ) );
+      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that table view MyElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
 
-      AssertTrue ( row0.getIsIncludeCheckBoxChecked (  ) );
+      AssertTrue ( row0.getIsIncludeCheckBoxChecked (  ), "Expected that checkbox Include is checked, but was <" + row0.getIsIncludeCheckBoxChecked (  ) + ">" );
 
-      AssertEqual ( "A", row0.getNameLabelText (  ) );
+      AssertEqualWithMessage ( "A", row0.getNameLabelText (  ), "Expected that label Name has text <" + "A" + ">, but was <" + row0.getNameLabelText (  ) + ">" );
 
-      AssertEqual ( "B", row0.getDescriptionLabelText (  ) );
+      AssertEqualWithMessage ( "B", row0.getDescriptionLabelText (  ), "Expected that label Description has text <" + "B" + ">, but was <" + row0.getDescriptionLabelText (  ) + ">" );
 
-      AssertEqual ( "image_info", row0.getInfoIconImageName (  ) );
+      AssertEqualWithMessage ( "image_info", row0.getInfoIconImageName (  ), "Expected that image InfoIcon has " + "image <image_info>" + ", but was <" + row0.getInfoIconImageName (  ) + ">" );
 
     }
 
     {
       let row1: TableViews_ViewModelMyElementsRow = actualRows[ 2 ];
 
-      AssertEqual ( 1, row1.getRowIndex (  ) );
+      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that table view MyElements row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
 
-      AssertFalse ( row1.getIsIncludeCheckBoxChecked (  ) );
+      AssertFalse ( row1.getIsIncludeCheckBoxChecked (  ), "Expected that checkbox Include is unchecked, but was <" + row1.getIsIncludeCheckBoxChecked (  ) + ">" );
 
-      AssertEqual ( "C", row1.getNameLabelText (  ) );
+      AssertEqualWithMessage ( "C", row1.getNameLabelText (  ), "Expected that label Name has text <" + "C" + ">, but was <" + row1.getNameLabelText (  ) + ">" );
 
-      AssertEqual ( "D", row1.getDescriptionLabelText (  ) );
+      AssertEqualWithMessage ( "D", row1.getDescriptionLabelText (  ), "Expected that label Description has text <" + "D" + ">, but was <" + row1.getDescriptionLabelText (  ) + ">" );
 
-      AssertEqual ( "image_star", row1.getInfoIconImageName (  ) );
+      AssertEqualWithMessage ( "image_star", row1.getInfoIconImageName (  ), "Expected that image InfoIcon has " + "image <image_star>" + ", but was <" + row1.getInfoIconImageName (  ) + ">" );
 
     }
 
-    AssertEqual ( 1, this.sut.getMyElementsTableSelectedRow (  ) );
+    AssertEqualWithMessage ( 1, this.sut.getMyElementsTableSelectedRow (  ), "Expected that table view MyElements has selected row with row handle <" + 1 + ">, but was <" + this.sut.getMyElementsTableSelectedRow (  ) + ">" );
 
-    AssertTrue ( this.sut.getIsMyElementsTableVisible (  ) );
+    AssertTrue ( this.sut.getIsMyElementsTableVisible (  ), "Expected table view MyElements is visible, but it was hidden" );
 
-    AssertTrue ( this.sut.getIsMyElementsTableEnabled (  ) );
+    AssertTrue ( this.sut.getIsMyElementsTableEnabled (  ), "Expected table view MyElements is enabled, but it was disabled" );
 
-    AssertFalse ( this.sut.getIsMyElementsTableDescriptionColumnVisible (  ) );
+    AssertFalse ( this.sut.getIsMyElementsTableDescriptionColumnVisible (  ), "Expected table column Description is hidden, but it was visible" );
 
   }
   
   public then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  ) {
     let actualRows: TableViews_ViewModelMyStringRowHandlesRow [] = this.sut.getMyStringRowHandlesTableRows (  );
 
-    AssertEqual ( 2, actualRows->size (  ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view MyStringRowHandles has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: TableViews_ViewModelMyStringRowHandlesRow = actualRows[ 1 ];
 
-      AssertEqual ( "ROW0", row0.getRowHandle (  ) );
+      AssertEqualWithMessage ( "ROW0", row0.getRowHandle (  ), "Expected that table view MyStringRowHandles row at index 0 has rowhandle <ROW0>, but was <" + row0.getRowHandle (  ) + ">" );
 
-      AssertEqual ( "A", row0.getValuesLabelText (  ) );
+      AssertEqualWithMessage ( "A", row0.getValuesLabelText (  ), "Expected that label Values has text <" + "A" + ">, but was <" + row0.getValuesLabelText (  ) + ">" );
 
     }
 
     {
       let row1: TableViews_ViewModelMyStringRowHandlesRow = actualRows[ 2 ];
 
-      AssertEqual ( "ROW1", row1.getRowHandle (  ) );
+      AssertEqualWithMessage ( "ROW1", row1.getRowHandle (  ), "Expected that table view MyStringRowHandles row at index 1 has rowhandle <ROW1>, but was <" + row1.getRowHandle (  ) + ">" );
 
-      AssertEqual ( "B", row1.getValuesLabelText (  ) );
+      AssertEqualWithMessage ( "B", row1.getValuesLabelText (  ), "Expected that label Values has text <" + "B" + ">, but was <" + row1.getValuesLabelText (  ) + ">" );
 
     }
 
-    AssertEqual ( "ROW1", this.sut.getMyStringRowHandlesTableSelectedRow (  ) );
+    AssertEqualWithMessage ( "ROW1", this.sut.getMyStringRowHandlesTableSelectedRow (  ), "Expected that table view MyStringRowHandles has selected row with row handle <" + "ROW1" + ">, but was <" + this.sut.getMyStringRowHandlesTableSelectedRow (  ) + ">" );
 
   }
   
   public then_MyElements_has_2_rows (  ) {
     let actualRows: TableViews_ViewModelMyElementsRow [] = this.sut.getMyElementsTableRows (  );
 
-    AssertEqual ( 2, actualRows->size (  ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view MyElements has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: TableViews_ViewModelMyElementsRow = actualRows[ 1 ];
 
-      AssertEqual ( 0, row0.getRowIndex (  ) );
+      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that table view MyElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
 
-      AssertEqual ( "A", row0.getNameLabelText (  ) );
+      AssertEqualWithMessage ( "A", row0.getNameLabelText (  ), "Expected that label Name has text <" + "A" + ">, but was <" + row0.getNameLabelText (  ) + ">" );
 
     }
 
     {
       let row1: TableViews_ViewModelMyElementsRow = actualRows[ 2 ];
 
-      AssertEqual ( 1, row1.getRowIndex (  ) );
+      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that table view MyElements row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
 
-      AssertEqual ( "image_star", row1.getInfoIconImageName (  ) );
+      AssertEqualWithMessage ( "image_star", row1.getInfoIconImageName (  ), "Expected that image InfoIcon has " + "image <image_star>" + ", but was <" + row1.getInfoIconImageName (  ) + ">" );
 
     }
 

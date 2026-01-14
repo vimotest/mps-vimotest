@@ -40,10 +40,10 @@ namespace widgetassertions
   }
   void Images_ViewTest::then_Status_shows_image_image_active_()
   {
-    EXPECT_EQ(std::string("image_active"), this->sut->getStatusImageName());
+    ASSERT_EQ(std::string("image_active"), this->sut->getStatusImageName()) << std::string("Expected that image Status has ") + std::string("image <image_active>") + std::string(", but was <") + this->sut->getStatusImageName() + std::string(">");
   }
   void Images_ViewTest::then_UpOrDown_shows_image_image_down_()
   {
-    EXPECT_EQ(std::string("image_down"), this->sut->getUpOrDownImageName());
+    ASSERT_EQ(std::string("image_down"), this->sut->getUpOrDownImageName()) << std::string("Expected that image UpOrDown has ") + std::string("image <image_down>") + std::string(", but was <") + this->sut->getUpOrDownImageName() + std::string(">");
   }
 }

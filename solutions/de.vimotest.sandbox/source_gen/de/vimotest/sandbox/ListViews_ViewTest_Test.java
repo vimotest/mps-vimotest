@@ -10,6 +10,7 @@ import de.vimotest.sandbox.widgetassertions.ListViews_ViewModelTestEnvironmentIm
 import java.util.List;
 import de.vimotest.sandbox.widgetassertions.ListViews_ViewModelMyListOfLabelRow;
 import org.junit.Assert;
+import wrappers.javaWrappers.IntegerFunctions;
 import de.vimotest.sandbox.widgetassertions.ListViews_ViewModelMyListOfImagesRow;
 import de.vimotest.sandbox.widgetassertions.ListViews_ViewModelMyCheckboxesRow;
 import de.vimotest.sandbox.widgetassertions.ListViews_ViewModelMyStringRowHandlesRow;
@@ -68,152 +69,152 @@ public class ListViews_ViewTest_Test {
 
   public void then_MyListOfLabel_has_4_rows_and_selected_row_index_3() {
     List<ListViews_ViewModelMyListOfLabelRow> actualRows = this.sut.getMyListOfLabelListRows();
-    Assert.assertEquals(Integer.valueOf(4), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that list view MyListOfLabel has 4 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(4), Integer.valueOf(actualRows.size()));
     // {
     ListViews_ViewModelMyListOfLabelRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
-    Assert.assertEquals("A", row0.getMyValueLabelText());
+    Assert.assertEquals("Expected that list view MyListOfLabel row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
+    Assert.assertEquals("Expected that label My Value has text <" + "A" + ">, but was <" + row0.getMyValueLabelText() + ">", "A", row0.getMyValueLabelText());
     Assert.assertFalse(row0.getIsMyValueLabelVisible());
     Assert.assertTrue(row0.getIsMyValueLabelEnabled());
     // }
     // {
     ListViews_ViewModelMyListOfLabelRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals(Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
-    Assert.assertEquals("B", row1.getMyValueLabelText());
+    Assert.assertEquals("Expected that list view MyListOfLabel row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
+    Assert.assertEquals("Expected that label My Value has text <" + "B" + ">, but was <" + row1.getMyValueLabelText() + ">", "B", row1.getMyValueLabelText());
     Assert.assertFalse(row1.getIsMyValueLabelEnabled());
     // }
     // {
     ListViews_ViewModelMyListOfLabelRow row2 = actualRows.get(3 - 1);
-    Assert.assertEquals(Integer.valueOf(row2.getRowIndex()), row2.getRowIndex());
-    Assert.assertEquals("C", row2.getMyValueLabelText());
+    Assert.assertEquals("Expected that list view MyListOfLabel row at index 2 has rowhandle <2>, but was <" + row2.getRowIndex() + ">", Integer.valueOf(row2.getRowIndex()), row2.getRowIndex());
+    Assert.assertEquals("Expected that label My Value has text <" + "C" + ">, but was <" + row2.getMyValueLabelText() + ">", "C", row2.getMyValueLabelText());
     Assert.assertTrue(row2.getIsMyValueLabelEnabled());
     // }
     // {
     ListViews_ViewModelMyListOfLabelRow row3 = actualRows.get(4 - 1);
-    Assert.assertEquals(Integer.valueOf(row3.getRowIndex()), row3.getRowIndex());
-    Assert.assertEquals("D", row3.getMyValueLabelText());
+    Assert.assertEquals("Expected that list view MyListOfLabel row at index 3 has rowhandle <3>, but was <" + row3.getRowIndex() + ">", Integer.valueOf(row3.getRowIndex()), row3.getRowIndex());
+    Assert.assertEquals("Expected that label My Value has text <" + "D" + ">, but was <" + row3.getMyValueLabelText() + ">", "D", row3.getMyValueLabelText());
     Assert.assertTrue(row3.getIsMyValueLabelVisible());
     // }
-    Assert.assertEquals(Integer.valueOf(this.sut.getMyListOfLabelListSelectedRow()), this.sut.getMyListOfLabelListSelectedRow());
+    Assert.assertEquals("Expected that list view MyListOfLabel has selected row with row handle <" + 3 + ">, but was <" + this.sut.getMyListOfLabelListSelectedRow() + ">", Integer.valueOf(this.sut.getMyListOfLabelListSelectedRow()), this.sut.getMyListOfLabelListSelectedRow());
   }
   public void then_MyListOfImages_has_2_rows() {
     List<ListViews_ViewModelMyListOfImagesRow> actualRows = this.sut.getMyListOfImagesListRows();
-    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that list view MyListOfImages has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     ListViews_ViewModelMyListOfImagesRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
-    Assert.assertEquals("image_star", row0.getMyInfoImageName());
+    Assert.assertEquals("Expected that list view MyListOfImages row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
+    Assert.assertEquals("Expected that image My Info has " + "image <image_star>" + ", but was <" + row0.getMyInfoImageName() + ">", "image_star", row0.getMyInfoImageName());
     // }
     // {
     ListViews_ViewModelMyListOfImagesRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals(Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
-    Assert.assertEquals("image_circle", row1.getMyInfoImageName());
+    Assert.assertEquals("Expected that list view MyListOfImages row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
+    Assert.assertEquals("Expected that image My Info has " + "image <image_circle>" + ", but was <" + row1.getMyInfoImageName() + ">", "image_circle", row1.getMyInfoImageName());
     // }
   }
   public void then_MyCheckboxes_has_3_rows() {
     List<ListViews_ViewModelMyCheckboxesRow> actualRows = this.sut.getMyCheckboxesListRows();
-    Assert.assertEquals(Integer.valueOf(3), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that list view MyCheckboxes has 3 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(3), Integer.valueOf(actualRows.size()));
     // {
     ListViews_ViewModelMyCheckboxesRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
+    Assert.assertEquals("Expected that list view MyCheckboxes row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
     Assert.assertTrue(row0.getIsHeaderCheckBoxChecked());
     // }
     // {
     ListViews_ViewModelMyCheckboxesRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals(Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
+    Assert.assertEquals("Expected that list view MyCheckboxes row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
     Assert.assertFalse(row1.getIsHeaderCheckBoxChecked());
     // }
     // {
     ListViews_ViewModelMyCheckboxesRow row2 = actualRows.get(3 - 1);
-    Assert.assertEquals(Integer.valueOf(row2.getRowIndex()), row2.getRowIndex());
+    Assert.assertEquals("Expected that list view MyCheckboxes row at index 2 has rowhandle <2>, but was <" + row2.getRowIndex() + ">", Integer.valueOf(row2.getRowIndex()), row2.getRowIndex());
     Assert.assertTrue(row2.getIsHeaderCheckBoxChecked());
-    Assert.assertEquals("My Label", row2.getHeaderCheckBoxText());
+    Assert.assertEquals("Expected that checkbox Header has text <" + "My Label" + ">, but was <" + row2.getHeaderCheckBoxText() + ">", "My Label", row2.getHeaderCheckBoxText());
     // }
   }
   public void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() {
     List<ListViews_ViewModelMyStringRowHandlesRow> actualRows = this.sut.getMyStringRowHandlesListRows();
-    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that list view MyStringRowHandles has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     ListViews_ViewModelMyStringRowHandlesRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals("ROW0", row0.getRowHandle());
-    Assert.assertEquals("A", row0.getValuesLabelText());
+    Assert.assertEquals("Expected that list view MyStringRowHandles row at index 0 has rowhandle <ROW0>, but was <" + row0.getRowHandle() + ">", "ROW0", row0.getRowHandle());
+    Assert.assertEquals("Expected that label Values has text <" + "A" + ">, but was <" + row0.getValuesLabelText() + ">", "A", row0.getValuesLabelText());
     // }
     // {
     ListViews_ViewModelMyStringRowHandlesRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals("ROW1", row1.getRowHandle());
-    Assert.assertEquals("B", row1.getValuesLabelText());
+    Assert.assertEquals("Expected that list view MyStringRowHandles row at index 1 has rowhandle <ROW1>, but was <" + row1.getRowHandle() + ">", "ROW1", row1.getRowHandle());
+    Assert.assertEquals("Expected that label Values has text <" + "B" + ">, but was <" + row1.getValuesLabelText() + ">", "B", row1.getValuesLabelText());
     // }
-    Assert.assertEquals("ROW1", this.sut.getMyStringRowHandlesListSelectedRow());
+    Assert.assertEquals("Expected that list view MyStringRowHandles has selected row with row handle <" + "ROW1" + ">, but was <" + this.sut.getMyStringRowHandlesListSelectedRow() + ">", "ROW1", this.sut.getMyStringRowHandlesListSelectedRow());
   }
   public void then_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_() {
     List<ListViews_ViewModelMyListWithMultiRowSelectionRow> actualRows = this.sut.getMyListWithMultiRowSelectionListRows();
-    Assert.assertEquals(Integer.valueOf(3), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that list view MyListWithMultiRowSelection has 3 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(3), Integer.valueOf(actualRows.size()));
     // {
     ListViews_ViewModelMyListWithMultiRowSelectionRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
-    Assert.assertEquals("A", row0.getHeaderLabelText());
+    Assert.assertEquals("Expected that list view MyListWithMultiRowSelection row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
+    Assert.assertEquals("Expected that label Header has text <" + "A" + ">, but was <" + row0.getHeaderLabelText() + ">", "A", row0.getHeaderLabelText());
     // }
     // {
     ListViews_ViewModelMyListWithMultiRowSelectionRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals(Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
-    Assert.assertEquals("B", row1.getHeaderLabelText());
+    Assert.assertEquals("Expected that list view MyListWithMultiRowSelection row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
+    Assert.assertEquals("Expected that label Header has text <" + "B" + ">, but was <" + row1.getHeaderLabelText() + ">", "B", row1.getHeaderLabelText());
     // }
     // {
     ListViews_ViewModelMyListWithMultiRowSelectionRow row2 = actualRows.get(3 - 1);
-    Assert.assertEquals(Integer.valueOf(row2.getRowIndex()), row2.getRowIndex());
-    Assert.assertEquals("C", row2.getHeaderLabelText());
+    Assert.assertEquals("Expected that list view MyListWithMultiRowSelection row at index 2 has rowhandle <2>, but was <" + row2.getRowIndex() + ">", Integer.valueOf(row2.getRowIndex()), row2.getRowIndex());
+    Assert.assertEquals("Expected that label Header has text <" + "C" + ">, but was <" + row2.getHeaderLabelText() + ">", "C", row2.getHeaderLabelText());
     // }
     List<Integer> actualMyListWithMultiRowSelectionSelectedRowHandles = this.sut.getMyListWithMultiRowSelectionListSelectedRows();
-    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualMyListWithMultiRowSelectionSelectedRowHandles.size()));
-    Assert.assertEquals(Integer.valueOf(actualMyListWithMultiRowSelectionSelectedRowHandles.get(1 - 1)), actualMyListWithMultiRowSelectionSelectedRowHandles.get(1 - 1));
-    Assert.assertEquals(Integer.valueOf(actualMyListWithMultiRowSelectionSelectedRowHandles.get(2 - 1)), actualMyListWithMultiRowSelectionSelectedRowHandles.get(2 - 1));
+    Assert.assertEquals("Expected that list view MyListWithMultiRowSelection has selected 2 rows, but has " + IntegerFunctions.ToString(actualMyListWithMultiRowSelectionSelectedRowHandles.size()), Integer.valueOf(2), Integer.valueOf(actualMyListWithMultiRowSelectionSelectedRowHandles.size()));
+    Assert.assertEquals("Expected that list view MyListWithMultiRowSelection has selected row at index 0 with row handle <" + 0 + ">, but was <" + actualMyListWithMultiRowSelectionSelectedRowHandles.get(1 - 1) + ">", Integer.valueOf(actualMyListWithMultiRowSelectionSelectedRowHandles.get(1 - 1)), actualMyListWithMultiRowSelectionSelectedRowHandles.get(1 - 1));
+    Assert.assertEquals("Expected that list view MyListWithMultiRowSelection has selected row at index 1 with row handle <" + 2 + ">, but was <" + actualMyListWithMultiRowSelectionSelectedRowHandles.get(2 - 1) + ">", Integer.valueOf(actualMyListWithMultiRowSelectionSelectedRowHandles.get(2 - 1)), actualMyListWithMultiRowSelectionSelectedRowHandles.get(2 - 1));
   }
   public void then_MyListOfLabel_has_4_rows() {
     List<ListViews_ViewModelMyListOfLabelRow> actualRows = this.sut.getMyListOfLabelListRows();
-    Assert.assertEquals(Integer.valueOf(4), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that list view MyListOfLabel has 4 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(4), Integer.valueOf(actualRows.size()));
     // {
     ListViews_ViewModelMyListOfLabelRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
+    Assert.assertEquals("Expected that list view MyListOfLabel row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
     // }
     // {
     ListViews_ViewModelMyListOfLabelRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals(Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
+    Assert.assertEquals("Expected that list view MyListOfLabel row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
     // }
     // {
     ListViews_ViewModelMyListOfLabelRow row2 = actualRows.get(3 - 1);
-    Assert.assertEquals(Integer.valueOf(row2.getRowIndex()), row2.getRowIndex());
+    Assert.assertEquals("Expected that list view MyListOfLabel row at index 2 has rowhandle <2>, but was <" + row2.getRowIndex() + ">", Integer.valueOf(row2.getRowIndex()), row2.getRowIndex());
     // }
     // {
     ListViews_ViewModelMyListOfLabelRow row3 = actualRows.get(4 - 1);
-    Assert.assertEquals(Integer.valueOf(row3.getRowIndex()), row3.getRowIndex());
+    Assert.assertEquals("Expected that list view MyListOfLabel row at index 3 has rowhandle <3>, but was <" + row3.getRowIndex() + ">", Integer.valueOf(row3.getRowIndex()), row3.getRowIndex());
     // }
   }
   public void then_MyListOfLabel_has_4_rows_1() {
     List<ListViews_ViewModelMyListOfLabelRow> actualRows = this.sut.getMyListOfLabelListRows();
-    Assert.assertEquals(Integer.valueOf(4), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that list view MyListOfLabel has 4 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(4), Integer.valueOf(actualRows.size()));
     // {
     ListViews_ViewModelMyListOfLabelRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals(Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
+    Assert.assertEquals("Expected that list view MyListOfLabel row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
     // }
     // {
     ListViews_ViewModelMyListOfLabelRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals(Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
-    Assert.assertEquals("B", row1.getMyValueLabelText());
+    Assert.assertEquals("Expected that list view MyListOfLabel row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
+    Assert.assertEquals("Expected that label My Value has text <" + "B" + ">, but was <" + row1.getMyValueLabelText() + ">", "B", row1.getMyValueLabelText());
     Assert.assertFalse(row1.getIsMyValueLabelEnabled());
     // }
     // {
     ListViews_ViewModelMyListOfLabelRow row2 = actualRows.get(3 - 1);
-    Assert.assertEquals(Integer.valueOf(row2.getRowIndex()), row2.getRowIndex());
+    Assert.assertEquals("Expected that list view MyListOfLabel row at index 2 has rowhandle <2>, but was <" + row2.getRowIndex() + ">", Integer.valueOf(row2.getRowIndex()), row2.getRowIndex());
     // }
     // {
     ListViews_ViewModelMyListOfLabelRow row3 = actualRows.get(4 - 1);
-    Assert.assertEquals(Integer.valueOf(row3.getRowIndex()), row3.getRowIndex());
-    Assert.assertEquals("D", row3.getMyValueLabelText());
+    Assert.assertEquals("Expected that list view MyListOfLabel row at index 3 has rowhandle <3>, but was <" + row3.getRowIndex() + ">", Integer.valueOf(row3.getRowIndex()), row3.getRowIndex());
+    Assert.assertEquals("Expected that label My Value has text <" + "D" + ">, but was <" + row3.getMyValueLabelText() + ">", "D", row3.getMyValueLabelText());
     Assert.assertTrue(row3.getIsMyValueLabelVisible());
     // }
   }
   public void then_MyButtons_has_0_rows() {
     List<ListViews_ViewModelMyButtonsRow> actualRows = this.sut.getMyButtonsListRows();
-    Assert.assertEquals(Integer.valueOf(0), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that list view MyButtons has 0 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(0), Integer.valueOf(actualRows.size()));
   }
 }

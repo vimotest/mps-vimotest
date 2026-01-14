@@ -137,42 +137,42 @@ namespace de::vimotest::examples::loginview
   }
   void LoginViewModelTests::then_Username_shows_text_User_()
   {
-    EXPECT_EQ(std::string("User"), this->sut->getUsernameTextBoxText());
+    ASSERT_EQ(std::string("User"), this->sut->getUsernameTextBoxText()) << std::string("Expected that textbox Username has text <") + std::string("User") + std::string(">, but was <") + this->sut->getUsernameTextBoxText() + std::string(">");
   }
   void LoginViewModelTests::then_Password_shows_text_MyPass123_()
   {
-    EXPECT_EQ(std::string("MyPass123"), this->sut->getPasswordTextBoxText());
+    ASSERT_EQ(std::string("MyPass123"), this->sut->getPasswordTextBoxText()) << std::string("Expected that textbox Password has text <") + std::string("MyPass123") + std::string(">, but was <") + this->sut->getPasswordTextBoxText() + std::string(">");
   }
   void LoginViewModelTests::then_Login_is_enabled()
   {
-    EXPECT_TRUE(this->sut->getIsLoginButtonEnabled());
+    EXPECT_TRUE(this->sut->getIsLoginButtonEnabled(), std::string("Expected button Login is enabled, but it was disabled"));
   }
   void LoginViewModelTests::then_Password_shows_empty_text()
   {
-    EXPECT_EQ(std::string(""), this->sut->getPasswordTextBoxText());
+    ASSERT_EQ(std::string(""), this->sut->getPasswordTextBoxText()) << std::string("Expected that textbox Password has text <") + std::string("") + std::string(">, but was <") + this->sut->getPasswordTextBoxText() + std::string(">");
   }
   void LoginViewModelTests::then_Login_is_not_enabled()
   {
-    EXPECT_FALSE(this->sut->getIsLoginButtonEnabled());
+    EXPECT_FALSE(this->sut->getIsLoginButtonEnabled(), std::string("Expected button Login is disabled, but it was enabled"));
   }
   void LoginViewModelTests::then_Username_shows_text_Ada_()
   {
-    EXPECT_EQ(std::string("Ada"), this->sut->getUsernameTextBoxText());
+    ASSERT_EQ(std::string("Ada"), this->sut->getUsernameTextBoxText()) << std::string("Expected that textbox Username has text <") + std::string("Ada") + std::string(">, but was <") + this->sut->getUsernameTextBoxText() + std::string(">");
   }
   void LoginViewModelTests::then_Password_shows_text_____()
   {
-    EXPECT_EQ(std::string("******"), this->sut->getPasswordTextBoxText());
+    ASSERT_EQ(std::string("******"), this->sut->getPasswordTextBoxText()) << std::string("Expected that textbox Password has text <") + std::string("******") + std::string(">, but was <") + this->sut->getPasswordTextBoxText() + std::string(">");
   }
   void LoginViewModelTests::then_Password_shows_text_Lovelace1_()
   {
-    EXPECT_EQ(std::string("Lovelace1"), this->sut->getPasswordTextBoxText());
+    ASSERT_EQ(std::string("Lovelace1"), this->sut->getPasswordTextBoxText()) << std::string("Expected that textbox Password has text <") + std::string("Lovelace1") + std::string(">, but was <") + this->sut->getPasswordTextBoxText() + std::string(">");
   }
   void LoginViewModelTests::then_ShowPassword_is_checked()
   {
-    EXPECT_TRUE(this->sut->getIsShowPasswordCheckBoxChecked());
+    EXPECT_TRUE(this->sut->getIsShowPasswordCheckBoxChecked(), std::string("Expected that checkbox ShowPassword is checked, but was <") + this->sut->getIsShowPasswordCheckBoxChecked() + std::string(">"));
   }
   void LoginViewModelTests::then_Error_shows_text_Needs_uppercase_letters_()
   {
-    EXPECT_EQ(std::string("Needs uppercase letters"), this->sut->getErrorLabelText());
+    ASSERT_EQ(std::string("Needs uppercase letters"), this->sut->getErrorLabelText()) << std::string("Expected that label Error has text <") + std::string("Needs uppercase letters") + std::string(">, but was <") + this->sut->getErrorLabelText() + std::string(">");
   }
 }

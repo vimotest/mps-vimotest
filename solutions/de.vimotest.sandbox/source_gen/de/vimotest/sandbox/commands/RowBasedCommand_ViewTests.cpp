@@ -6,7 +6,6 @@
 #include <vector>
 #include "RowBasedCommand_ViewModelMyFlagsRow.h"
 #include "RowBasedCommand_ViewModelMyComboBoxesRow.h"
-#include <optional>
 #include "RowBasedCommand_ViewModelMyStandardControlsRow.h"
 #include "RowBasedCommand_ViewModelTestEnvironmentImpl.h"
 
@@ -105,66 +104,66 @@ namespace commands
   void RowBasedCommand_ViewTests::then_MyFlags_has_2_rows()
   {
     auto& actualRows = this->sut->getMyFlagsListRows();
-    EXPECT_EQ(2, actualRows.size());
+    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that list view MyFlags has 2 rows, but has ") + std::to_string(actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
-    EXPECT_EQ(0, row0->getRowIndex());
-    EXPECT_TRUE(row0->getIsCheckboxesCheckBoxChecked());
+    ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that list view MyFlags row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
+    EXPECT_TRUE(row0->getIsCheckboxesCheckBoxChecked(), std::string("Expected that checkbox Checkboxes is checked, but was <") + row0->getIsCheckboxesCheckBoxChecked() + std::string(">"));
     // }
     // {
     auto& row1 = actualRows.at(1);
-    EXPECT_EQ(1, row1->getRowIndex());
-    EXPECT_FALSE(row1->getIsCheckboxesCheckBoxChecked());
+    ASSERT_EQ(1, row1->getRowIndex()) << std::string("Expected that list view MyFlags row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
+    EXPECT_FALSE(row1->getIsCheckboxesCheckBoxChecked(), std::string("Expected that checkbox Checkboxes is unchecked, but was <") + row1->getIsCheckboxesCheckBoxChecked() + std::string(">"));
     // }
   }
   void RowBasedCommand_ViewTests::then_MyComboBoxes_has_2_rows()
   {
     auto& actualRows = this->sut->getMyComboBoxesTableRows();
-    EXPECT_EQ(2, actualRows.size());
+    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that table view MyComboBoxes has 2 rows, but has ") + std::to_string(actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
-    EXPECT_EQ(0, row0->getRowIndex());
+    ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that table view MyComboBoxes row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
     auto& actualRow0FreeTextComboBoxesEntries = row0->getFreeTextComboBoxesComboBoxEntries();
-    EXPECT_EQ(0, actualRow0FreeTextComboBoxesEntries.size());
-    EXPECT_EQ(std:: nullopt, row0->getFreeTextComboBoxesComboBoxSelectedEntry());
-    EXPECT_EQ(std::string("MyText1"), row0->getFreeTextComboBoxesComboBoxText());
+    ASSERT_EQ(0, actualRow0FreeTextComboBoxesEntries.size()) << std::string("Expected that combobox FreeTextComboBoxes has 0 entries, but has ") + std::to_string(actualRow0FreeTextComboBoxesEntries.size());
+    ASSERT_EQ(nullptr, row0->getFreeTextComboBoxesComboBoxSelectedEntry()) << std::string("Expected that combobox FreeTextComboBoxes has ") + std::string("no selection") + std::string(", but was <") + row0->getFreeTextComboBoxesComboBoxSelectedEntry() + std::string(">");
+    ASSERT_EQ(std::string("MyText1"), row0->getFreeTextComboBoxesComboBoxText()) << std::string("Expected that combobox FreeTextComboBoxes has text <") + std::string("MyText1") + std::string(">, but was <") + row0->getFreeTextComboBoxesComboBoxText() + std::string(">");
     auto& actualRow0EntryComboBoxesEntries = row0->getEntryComboBoxesComboBoxEntries();
-    EXPECT_EQ(3, actualRow0EntryComboBoxesEntries.size());
-    EXPECT_EQ(std::string("A"), actualRow0EntryComboBoxesEntries.at(0));
-    EXPECT_EQ(std::string("B"), actualRow0EntryComboBoxesEntries.at(1));
-    EXPECT_EQ(std::string("C"), actualRow0EntryComboBoxesEntries.at(2));
-    EXPECT_EQ(std:: nullopt, row0->getEntryComboBoxesComboBoxSelectedEntry());
+    ASSERT_EQ(3, actualRow0EntryComboBoxesEntries.size()) << std::string("Expected that combobox EntryComboBoxes has 3 entries, but has ") + std::to_string(actualRow0EntryComboBoxesEntries.size());
+    ASSERT_EQ(std::string("A"), actualRow0EntryComboBoxesEntries.at(0)) << std::string("Expected that combobox EntryComboBoxes has entry at index 0 matching <") + std::string("A") + std::string(">, but was <") + actualRow0EntryComboBoxesEntries.at(0) + std::string(">");
+    ASSERT_EQ(std::string("B"), actualRow0EntryComboBoxesEntries.at(1)) << std::string("Expected that combobox EntryComboBoxes has entry at index 1 matching <") + std::string("B") + std::string(">, but was <") + actualRow0EntryComboBoxesEntries.at(1) + std::string(">");
+    ASSERT_EQ(std::string("C"), actualRow0EntryComboBoxesEntries.at(2)) << std::string("Expected that combobox EntryComboBoxes has entry at index 2 matching <") + std::string("C") + std::string(">, but was <") + actualRow0EntryComboBoxesEntries.at(2) + std::string(">");
+    ASSERT_EQ(nullptr, row0->getEntryComboBoxesComboBoxSelectedEntry()) << std::string("Expected that combobox EntryComboBoxes has ") + std::string("no selection") + std::string(", but was <") + row0->getEntryComboBoxesComboBoxSelectedEntry() + std::string(">");
     // }
     // {
     auto& row1 = actualRows.at(1);
-    EXPECT_EQ(1, row1->getRowIndex());
+    ASSERT_EQ(1, row1->getRowIndex()) << std::string("Expected that table view MyComboBoxes row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
     auto& actualRow1FreeTextComboBoxesEntries = row1->getFreeTextComboBoxesComboBoxEntries();
-    EXPECT_EQ(0, actualRow1FreeTextComboBoxesEntries.size());
-    EXPECT_EQ(std:: nullopt, row1->getFreeTextComboBoxesComboBoxSelectedEntry());
-    EXPECT_EQ(std::string("MyText2"), row1->getFreeTextComboBoxesComboBoxText());
+    ASSERT_EQ(0, actualRow1FreeTextComboBoxesEntries.size()) << std::string("Expected that combobox FreeTextComboBoxes has 0 entries, but has ") + std::to_string(actualRow1FreeTextComboBoxesEntries.size());
+    ASSERT_EQ(nullptr, row1->getFreeTextComboBoxesComboBoxSelectedEntry()) << std::string("Expected that combobox FreeTextComboBoxes has ") + std::string("no selection") + std::string(", but was <") + row1->getFreeTextComboBoxesComboBoxSelectedEntry() + std::string(">");
+    ASSERT_EQ(std::string("MyText2"), row1->getFreeTextComboBoxesComboBoxText()) << std::string("Expected that combobox FreeTextComboBoxes has text <") + std::string("MyText2") + std::string(">, but was <") + row1->getFreeTextComboBoxesComboBoxText() + std::string(">");
     auto& actualRow1EntryComboBoxesEntries = row1->getEntryComboBoxesComboBoxEntries();
-    EXPECT_EQ(3, actualRow1EntryComboBoxesEntries.size());
-    EXPECT_EQ(std::string("D"), actualRow1EntryComboBoxesEntries.at(0));
-    EXPECT_EQ(std::string("E"), actualRow1EntryComboBoxesEntries.at(1));
-    EXPECT_EQ(std::string("F"), actualRow1EntryComboBoxesEntries.at(2));
-    EXPECT_EQ(std:: nullopt, row1->getEntryComboBoxesComboBoxSelectedEntry());
+    ASSERT_EQ(3, actualRow1EntryComboBoxesEntries.size()) << std::string("Expected that combobox EntryComboBoxes has 3 entries, but has ") + std::to_string(actualRow1EntryComboBoxesEntries.size());
+    ASSERT_EQ(std::string("D"), actualRow1EntryComboBoxesEntries.at(0)) << std::string("Expected that combobox EntryComboBoxes has entry at index 0 matching <") + std::string("D") + std::string(">, but was <") + actualRow1EntryComboBoxesEntries.at(0) + std::string(">");
+    ASSERT_EQ(std::string("E"), actualRow1EntryComboBoxesEntries.at(1)) << std::string("Expected that combobox EntryComboBoxes has entry at index 1 matching <") + std::string("E") + std::string(">, but was <") + actualRow1EntryComboBoxesEntries.at(1) + std::string(">");
+    ASSERT_EQ(std::string("F"), actualRow1EntryComboBoxesEntries.at(2)) << std::string("Expected that combobox EntryComboBoxes has entry at index 2 matching <") + std::string("F") + std::string(">, but was <") + actualRow1EntryComboBoxesEntries.at(2) + std::string(">");
+    ASSERT_EQ(nullptr, row1->getEntryComboBoxesComboBoxSelectedEntry()) << std::string("Expected that combobox EntryComboBoxes has ") + std::string("no selection") + std::string(", but was <") + row1->getEntryComboBoxesComboBoxSelectedEntry() + std::string(">");
     // }
   }
   void RowBasedCommand_ViewTests::then_MyStandardControls_has_2_rows()
   {
     auto& actualRows = this->sut->getMyStandardControlsTreeRows();
-    EXPECT_EQ(2, actualRows.size());
+    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyStandardControls has 2 rows, but has ") + std::to_string(actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
-    EXPECT_EQ(0, row0->getRowIndex());
-    EXPECT_EQ(0, row0->getRowDepth());
-    EXPECT_EQ(std::string("A"), row0->getTextBoxesTextBoxText());
+    ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that tree view MyStandardControls row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
+    ASSERT_EQ(0, row0->getRowDepth()) << std::string("Expected that tree view MyStandardControls row at index 0 has parent rowhandle <") + 0 + std::string(">, but was <") + row0->getRowDepth() + std::string(">");
+    ASSERT_EQ(std::string("A"), row0->getTextBoxesTextBoxText()) << std::string("Expected that textbox TextBoxes has text <") + std::string("A") + std::string(">, but was <") + row0->getTextBoxesTextBoxText() + std::string(">");
     // }
     // {
     auto& row1 = actualRows.at(1);
-    EXPECT_EQ(1, row1->getRowIndex());
-    EXPECT_EQ(0, row1->getRowDepth());
-    EXPECT_EQ(std::string("B"), row1->getTextBoxesTextBoxText());
+    ASSERT_EQ(1, row1->getRowIndex()) << std::string("Expected that tree view MyStandardControls row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
+    ASSERT_EQ(0, row1->getRowDepth()) << std::string("Expected that tree view MyStandardControls row at index 1 has parent rowhandle <") + 0 + std::string(">, but was <") + row1->getRowDepth() + std::string(">");
+    ASSERT_EQ(std::string("B"), row1->getTextBoxesTextBoxText()) << std::string("Expected that textbox TextBoxes has text <") + std::string("B") + std::string(">, but was <") + row1->getTextBoxesTextBoxText() + std::string(">");
     // }
   }
 }

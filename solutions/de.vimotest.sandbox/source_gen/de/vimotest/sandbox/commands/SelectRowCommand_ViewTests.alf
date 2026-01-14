@@ -134,23 +134,23 @@ class SelectRowCommand_ViewTests {
   public then_MyListViewElements_has_2_rows (  ) {
     let actualRows: SelectRowCommand_ViewModelMyListViewElementsRow [] = this.sut.getMyListViewElementsListRows (  );
 
-    AssertEqual ( 2, actualRows->size (  ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that list view MyListViewElements has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: SelectRowCommand_ViewModelMyListViewElementsRow = actualRows[ 1 ];
 
-      AssertEqual ( 0, row0.getRowIndex (  ) );
+      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that list view MyListViewElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
 
-      AssertEqual ( "A", row0.getHeaderLabelText (  ) );
+      AssertEqualWithMessage ( "A", row0.getHeaderLabelText (  ), "Expected that label Header has text <" + "A" + ">, but was <" + row0.getHeaderLabelText (  ) + ">" );
 
     }
 
     {
       let row1: SelectRowCommand_ViewModelMyListViewElementsRow = actualRows[ 2 ];
 
-      AssertEqual ( 1, row1.getRowIndex (  ) );
+      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that list view MyListViewElements row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
 
-      AssertEqual ( "B", row1.getHeaderLabelText (  ) );
+      AssertEqualWithMessage ( "B", row1.getHeaderLabelText (  ), "Expected that label Header has text <" + "B" + ">, but was <" + row1.getHeaderLabelText (  ) + ">" );
 
     }
 
@@ -159,23 +159,23 @@ class SelectRowCommand_ViewTests {
   public then_MyStringRowHandleListViewElements_has_2_rows (  ) {
     let actualRows: SelectRowCommand_ViewModelMyStringRowHandleListViewElementsRow [] = this.sut.getMyStringRowHandleListViewElementsListRows (  );
 
-    AssertEqual ( 2, actualRows->size (  ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that list view MyStringRowHandleListViewElements has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: SelectRowCommand_ViewModelMyStringRowHandleListViewElementsRow = actualRows[ 1 ];
 
-      AssertEqual ( "ROW_A", row0.getRowHandle (  ) );
+      AssertEqualWithMessage ( "ROW_A", row0.getRowHandle (  ), "Expected that list view MyStringRowHandleListViewElements row at index 0 has rowhandle <ROW_A>, but was <" + row0.getRowHandle (  ) + ">" );
 
-      AssertEqual ( "A", row0.getHeaderLabelText (  ) );
+      AssertEqualWithMessage ( "A", row0.getHeaderLabelText (  ), "Expected that label Header has text <" + "A" + ">, but was <" + row0.getHeaderLabelText (  ) + ">" );
 
     }
 
     {
       let row1: SelectRowCommand_ViewModelMyStringRowHandleListViewElementsRow = actualRows[ 2 ];
 
-      AssertEqual ( "ROW_B", row1.getRowHandle (  ) );
+      AssertEqualWithMessage ( "ROW_B", row1.getRowHandle (  ), "Expected that list view MyStringRowHandleListViewElements row at index 1 has rowhandle <ROW_B>, but was <" + row1.getRowHandle (  ) + ">" );
 
-      AssertEqual ( "B", row1.getHeaderLabelText (  ) );
+      AssertEqualWithMessage ( "B", row1.getHeaderLabelText (  ), "Expected that label Header has text <" + "B" + ">, but was <" + row1.getHeaderLabelText (  ) + ">" );
 
     }
 
@@ -184,23 +184,23 @@ class SelectRowCommand_ViewTests {
   public then_MyTableViewElements_has_2_rows (  ) {
     let actualRows: SelectRowCommand_ViewModelMyTableViewElementsRow [] = this.sut.getMyTableViewElementsTableRows (  );
 
-    AssertEqual ( 2, actualRows->size (  ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view MyTableViewElements has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: SelectRowCommand_ViewModelMyTableViewElementsRow = actualRows[ 1 ];
 
-      AssertEqual ( 0, row0.getRowIndex (  ) );
+      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that table view MyTableViewElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
 
-      AssertEqual ( "A", row0.getColumnCellLabelText (  ) );
+      AssertEqualWithMessage ( "A", row0.getColumnCellLabelText (  ), "Expected that label columnCell has text <" + "A" + ">, but was <" + row0.getColumnCellLabelText (  ) + ">" );
 
     }
 
     {
       let row1: SelectRowCommand_ViewModelMyTableViewElementsRow = actualRows[ 2 ];
 
-      AssertEqual ( 1, row1.getRowIndex (  ) );
+      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that table view MyTableViewElements row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
 
-      AssertEqual ( "B", row1.getColumnCellLabelText (  ) );
+      AssertEqualWithMessage ( "B", row1.getColumnCellLabelText (  ), "Expected that label columnCell has text <" + "B" + ">, but was <" + row1.getColumnCellLabelText (  ) + ">" );
 
     }
 
@@ -209,23 +209,23 @@ class SelectRowCommand_ViewTests {
   public then_MyStringRowHandleTableViewElements_has_2_rows (  ) {
     let actualRows: SelectRowCommand_ViewModelMyStringRowHandleTableViewElementsRow [] = this.sut.getMyStringRowHandleTableViewElementsTableRows (  );
 
-    AssertEqual ( 2, actualRows->size (  ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view MyStringRowHandleTableViewElements has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: SelectRowCommand_ViewModelMyStringRowHandleTableViewElementsRow = actualRows[ 1 ];
 
-      AssertEqual ( "ROW_A", row0.getRowHandle (  ) );
+      AssertEqualWithMessage ( "ROW_A", row0.getRowHandle (  ), "Expected that table view MyStringRowHandleTableViewElements row at index 0 has rowhandle <ROW_A>, but was <" + row0.getRowHandle (  ) + ">" );
 
-      AssertEqual ( "A", row0.getColumnCellLabelText (  ) );
+      AssertEqualWithMessage ( "A", row0.getColumnCellLabelText (  ), "Expected that label columnCell has text <" + "A" + ">, but was <" + row0.getColumnCellLabelText (  ) + ">" );
 
     }
 
     {
       let row1: SelectRowCommand_ViewModelMyStringRowHandleTableViewElementsRow = actualRows[ 2 ];
 
-      AssertEqual ( "ROW_B", row1.getRowHandle (  ) );
+      AssertEqualWithMessage ( "ROW_B", row1.getRowHandle (  ), "Expected that table view MyStringRowHandleTableViewElements row at index 1 has rowhandle <ROW_B>, but was <" + row1.getRowHandle (  ) + ">" );
 
-      AssertEqual ( "B", row1.getColumnCellLabelText (  ) );
+      AssertEqualWithMessage ( "B", row1.getColumnCellLabelText (  ), "Expected that label columnCell has text <" + "B" + ">, but was <" + row1.getColumnCellLabelText (  ) + ">" );
 
     }
 
@@ -234,27 +234,27 @@ class SelectRowCommand_ViewTests {
   public then_MyTreeViewElements_has_2_rows (  ) {
     let actualRows: SelectRowCommand_ViewModelMyTreeViewElementsRow [] = this.sut.getMyTreeViewElementsTreeRows (  );
 
-    AssertEqual ( 2, actualRows->size (  ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that tree view MyTreeViewElements has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: SelectRowCommand_ViewModelMyTreeViewElementsRow = actualRows[ 1 ];
 
-      AssertEqual ( 0, row0.getRowIndex (  ) );
+      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
 
-      AssertEqual ( 0, row0.getRowDepth (  ) );
+      AssertEqualWithMessage ( 0, row0.getRowDepth (  ), "Expected that tree view MyTreeViewElements row at index 0 has parent rowhandle <" + 0 + ">, but was <" + row0.getRowDepth (  ) + ">" );
 
-      AssertEqual ( "A", row0.getColumnCellLabelText (  ) );
+      AssertEqualWithMessage ( "A", row0.getColumnCellLabelText (  ), "Expected that label columnCell has text <" + "A" + ">, but was <" + row0.getColumnCellLabelText (  ) + ">" );
 
     }
 
     {
       let row1: SelectRowCommand_ViewModelMyTreeViewElementsRow = actualRows[ 2 ];
 
-      AssertEqual ( 1, row1.getRowIndex (  ) );
+      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that tree view MyTreeViewElements row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
 
-      AssertEqual ( 0, row1.getRowDepth (  ) );
+      AssertEqualWithMessage ( 0, row1.getRowDepth (  ), "Expected that tree view MyTreeViewElements row at index 1 has parent rowhandle <" + 0 + ">, but was <" + row1.getRowDepth (  ) + ">" );
 
-      AssertEqual ( "B", row1.getColumnCellLabelText (  ) );
+      AssertEqualWithMessage ( "B", row1.getColumnCellLabelText (  ), "Expected that label columnCell has text <" + "B" + ">, but was <" + row1.getColumnCellLabelText (  ) + ">" );
 
     }
 
@@ -263,27 +263,27 @@ class SelectRowCommand_ViewTests {
   public then_MyStringRowHandleTreeViewElements_has_2_rows (  ) {
     let actualRows: SelectRowCommand_ViewModelMyStringRowHandleTreeViewElementsRow [] = this.sut.getMyStringRowHandleTreeViewElementsTreeRows (  );
 
-    AssertEqual ( 2, actualRows->size (  ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that tree view MyStringRowHandleTreeViewElements has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: SelectRowCommand_ViewModelMyStringRowHandleTreeViewElementsRow = actualRows[ 1 ];
 
-      AssertEqual ( "ROW_A", row0.getRowHandle (  ) );
+      AssertEqualWithMessage ( "ROW_A", row0.getRowHandle (  ), "Expected that tree view MyStringRowHandleTreeViewElements row at index 0 has rowhandle <ROW_A>, but was <" + row0.getRowHandle (  ) + ">" );
 
-      AssertEqual ( 0, row0.getRowDepth (  ) );
+      AssertEqualWithMessage ( 0, row0.getRowDepth (  ), "Expected that tree view MyStringRowHandleTreeViewElements row at index 0 has parent rowhandle <" + 0 + ">, but was <" + row0.getRowDepth (  ) + ">" );
 
-      AssertEqual ( "A", row0.getColumnCellLabelText (  ) );
+      AssertEqualWithMessage ( "A", row0.getColumnCellLabelText (  ), "Expected that label columnCell has text <" + "A" + ">, but was <" + row0.getColumnCellLabelText (  ) + ">" );
 
     }
 
     {
       let row1: SelectRowCommand_ViewModelMyStringRowHandleTreeViewElementsRow = actualRows[ 2 ];
 
-      AssertEqual ( "ROW_B", row1.getRowHandle (  ) );
+      AssertEqualWithMessage ( "ROW_B", row1.getRowHandle (  ), "Expected that tree view MyStringRowHandleTreeViewElements row at index 1 has rowhandle <ROW_B>, but was <" + row1.getRowHandle (  ) + ">" );
 
-      AssertEqual ( 0, row1.getRowDepth (  ) );
+      AssertEqualWithMessage ( 0, row1.getRowDepth (  ), "Expected that tree view MyStringRowHandleTreeViewElements row at index 1 has parent rowhandle <" + 0 + ">, but was <" + row1.getRowDepth (  ) + ">" );
 
-      AssertEqual ( "B", row1.getColumnCellLabelText (  ) );
+      AssertEqualWithMessage ( "B", row1.getColumnCellLabelText (  ), "Expected that label columnCell has text <" + "B" + ">, but was <" + row1.getColumnCellLabelText (  ) + ">" );
 
     }
 
@@ -292,32 +292,32 @@ class SelectRowCommand_ViewTests {
   public then_MyStringHandleMultiSelectRowListViewElements_has_3_rows (  ) {
     let actualRows: SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow [] = this.sut.getMyStringHandleMultiSelectRowListViewElementsListRows (  );
 
-    AssertEqual ( 3, actualRows->size (  ) );
+    AssertEqualWithMessage ( 3, actualRows->size (  ), "Expected that list view MyStringHandleMultiSelectRowListViewElements has 3 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow = actualRows[ 1 ];
 
-      AssertEqual ( "ROW_A", row0.getRowHandle (  ) );
+      AssertEqualWithMessage ( "ROW_A", row0.getRowHandle (  ), "Expected that list view MyStringHandleMultiSelectRowListViewElements row at index 0 has rowhandle <ROW_A>, but was <" + row0.getRowHandle (  ) + ">" );
 
-      AssertEqual ( "A", row0.getHeaderLabelText (  ) );
+      AssertEqualWithMessage ( "A", row0.getHeaderLabelText (  ), "Expected that label Header has text <" + "A" + ">, but was <" + row0.getHeaderLabelText (  ) + ">" );
 
     }
 
     {
       let row1: SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow = actualRows[ 2 ];
 
-      AssertEqual ( "ROW_B", row1.getRowHandle (  ) );
+      AssertEqualWithMessage ( "ROW_B", row1.getRowHandle (  ), "Expected that list view MyStringHandleMultiSelectRowListViewElements row at index 1 has rowhandle <ROW_B>, but was <" + row1.getRowHandle (  ) + ">" );
 
-      AssertEqual ( "B", row1.getHeaderLabelText (  ) );
+      AssertEqualWithMessage ( "B", row1.getHeaderLabelText (  ), "Expected that label Header has text <" + "B" + ">, but was <" + row1.getHeaderLabelText (  ) + ">" );
 
     }
 
     {
       let row2: SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow = actualRows[ 3 ];
 
-      AssertEqual ( "ROW_C", row2.getRowHandle (  ) );
+      AssertEqualWithMessage ( "ROW_C", row2.getRowHandle (  ), "Expected that list view MyStringHandleMultiSelectRowListViewElements row at index 2 has rowhandle <ROW_C>, but was <" + row2.getRowHandle (  ) + ">" );
 
-      AssertEqual ( "C", row2.getHeaderLabelText (  ) );
+      AssertEqualWithMessage ( "C", row2.getHeaderLabelText (  ), "Expected that label Header has text <" + "C" + ">, but was <" + row2.getHeaderLabelText (  ) + ">" );
 
     }
 

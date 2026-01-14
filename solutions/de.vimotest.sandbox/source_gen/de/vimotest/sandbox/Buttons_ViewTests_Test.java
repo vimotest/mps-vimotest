@@ -53,16 +53,16 @@ public class Buttons_ViewTests_Test {
   public void then_Ok_is_enabled_and_is_visible_and_shows_text_Test_() {
     Assert.assertTrue(this.sut.getIsOkButtonEnabled());
     Assert.assertTrue(this.sut.getIsOkButtonVisible());
-    Assert.assertEquals("Test", this.sut.getOkButtonText());
+    Assert.assertEquals("Expected that button Ok has text <" + "Test" + ">, but was <" + this.sut.getOkButtonText() + ">", "Test", this.sut.getOkButtonText());
   }
   public void then_Ok_is_not_enabled_and_is_visible_and_shows_text_Test_() {
     Assert.assertFalse(this.sut.getIsOkButtonEnabled());
     Assert.assertTrue(this.sut.getIsOkButtonVisible());
-    Assert.assertEquals("Test", this.sut.getOkButtonText());
+    Assert.assertEquals("Expected that button Ok has text <" + "Test" + ">, but was <" + this.sut.getOkButtonText() + ">", "Test", this.sut.getOkButtonText());
   }
   public void then_Ok_is_enabled_and_is_not_visible_and_shows_text_Test_() {
     Assert.assertTrue(this.sut.getIsOkButtonEnabled());
     Assert.assertFalse(this.sut.getIsOkButtonVisible());
-    Assert.assertEquals("Test", this.sut.getOkButtonText());
+    Assert.assertEquals("Expected that button Ok has text <" + "Test" + ">, but was <" + this.sut.getOkButtonText() + ">", "Test", this.sut.getOkButtonText());
   }
 }

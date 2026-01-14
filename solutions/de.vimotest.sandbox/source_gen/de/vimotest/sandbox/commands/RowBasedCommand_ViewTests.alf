@@ -120,23 +120,23 @@ class RowBasedCommand_ViewTests {
   public then_MyFlags_has_2_rows (  ) {
     let actualRows: RowBasedCommand_ViewModelMyFlagsRow [] = this.sut.getMyFlagsListRows (  );
 
-    AssertEqual ( 2, actualRows->size (  ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that list view MyFlags has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: RowBasedCommand_ViewModelMyFlagsRow = actualRows[ 1 ];
 
-      AssertEqual ( 0, row0.getRowIndex (  ) );
+      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that list view MyFlags row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
 
-      AssertTrue ( row0.getIsCheckboxesCheckBoxChecked (  ) );
+      AssertTrue ( row0.getIsCheckboxesCheckBoxChecked (  ), "Expected that checkbox Checkboxes is checked, but was <" + row0.getIsCheckboxesCheckBoxChecked (  ) + ">" );
 
     }
 
     {
       let row1: RowBasedCommand_ViewModelMyFlagsRow = actualRows[ 2 ];
 
-      AssertEqual ( 1, row1.getRowIndex (  ) );
+      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that list view MyFlags row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
 
-      AssertFalse ( row1.getIsCheckboxesCheckBoxChecked (  ) );
+      AssertFalse ( row1.getIsCheckboxesCheckBoxChecked (  ), "Expected that checkbox Checkboxes is unchecked, but was <" + row1.getIsCheckboxesCheckBoxChecked (  ) + ">" );
 
     }
 
@@ -145,59 +145,59 @@ class RowBasedCommand_ViewTests {
   public then_MyComboBoxes_has_2_rows (  ) {
     let actualRows: RowBasedCommand_ViewModelMyComboBoxesRow [] = this.sut.getMyComboBoxesTableRows (  );
 
-    AssertEqual ( 2, actualRows->size (  ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view MyComboBoxes has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: RowBasedCommand_ViewModelMyComboBoxesRow = actualRows[ 1 ];
 
-      AssertEqual ( 0, row0.getRowIndex (  ) );
+      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that table view MyComboBoxes row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
 
       let actualRow0FreeTextComboBoxesEntries: String [] = row0.getFreeTextComboBoxesComboBoxEntries (  );
 
-      AssertEqual ( 0, actualRow0FreeTextComboBoxesEntries->size (  ) );
+      AssertEqualWithMessage ( 0, actualRow0FreeTextComboBoxesEntries->size (  ), "Expected that combobox FreeTextComboBoxes has 0 entries, but has " + IntegerFunctions:: ToString ( actualRow0FreeTextComboBoxesEntries->size (  ) ) );
 
-      AssertEqual ( null, row0.getFreeTextComboBoxesComboBoxSelectedEntry (  ) );
+      AssertEqualWithMessage ( null, row0.getFreeTextComboBoxesComboBoxSelectedEntry (  ), "Expected that combobox FreeTextComboBoxes has " + "no selection" + ", but was <" + row0.getFreeTextComboBoxesComboBoxSelectedEntry (  ) + ">" );
 
-      AssertEqual ( "MyText1", row0.getFreeTextComboBoxesComboBoxText (  ) );
+      AssertEqualWithMessage ( "MyText1", row0.getFreeTextComboBoxesComboBoxText (  ), "Expected that combobox FreeTextComboBoxes has text <" + "MyText1" + ">, but was <" + row0.getFreeTextComboBoxesComboBoxText (  ) + ">" );
 
       let actualRow0EntryComboBoxesEntries: String [] = row0.getEntryComboBoxesComboBoxEntries (  );
 
-      AssertEqual ( 3, actualRow0EntryComboBoxesEntries->size (  ) );
+      AssertEqualWithMessage ( 3, actualRow0EntryComboBoxesEntries->size (  ), "Expected that combobox EntryComboBoxes has 3 entries, but has " + IntegerFunctions:: ToString ( actualRow0EntryComboBoxesEntries->size (  ) ) );
 
-      AssertEqual ( "A", actualRow0EntryComboBoxesEntries[ 1 ] ?? "" );
+      AssertEqualWithMessage ( "A", actualRow0EntryComboBoxesEntries[ 1 ] ?? "", "Expected that combobox EntryComboBoxes has entry at index 0 matching <" + "A" + ">, but was <" + actualRow0EntryComboBoxesEntries[ 1 ] ?? "" + ">" );
 
-      AssertEqual ( "B", actualRow0EntryComboBoxesEntries[ 2 ] ?? "" );
+      AssertEqualWithMessage ( "B", actualRow0EntryComboBoxesEntries[ 2 ] ?? "", "Expected that combobox EntryComboBoxes has entry at index 1 matching <" + "B" + ">, but was <" + actualRow0EntryComboBoxesEntries[ 2 ] ?? "" + ">" );
 
-      AssertEqual ( "C", actualRow0EntryComboBoxesEntries[ 3 ] ?? "" );
+      AssertEqualWithMessage ( "C", actualRow0EntryComboBoxesEntries[ 3 ] ?? "", "Expected that combobox EntryComboBoxes has entry at index 2 matching <" + "C" + ">, but was <" + actualRow0EntryComboBoxesEntries[ 3 ] ?? "" + ">" );
 
-      AssertEqual ( null, row0.getEntryComboBoxesComboBoxSelectedEntry (  ) );
+      AssertEqualWithMessage ( null, row0.getEntryComboBoxesComboBoxSelectedEntry (  ), "Expected that combobox EntryComboBoxes has " + "no selection" + ", but was <" + row0.getEntryComboBoxesComboBoxSelectedEntry (  ) + ">" );
 
     }
 
     {
       let row1: RowBasedCommand_ViewModelMyComboBoxesRow = actualRows[ 2 ];
 
-      AssertEqual ( 1, row1.getRowIndex (  ) );
+      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that table view MyComboBoxes row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
 
       let actualRow1FreeTextComboBoxesEntries: String [] = row1.getFreeTextComboBoxesComboBoxEntries (  );
 
-      AssertEqual ( 0, actualRow1FreeTextComboBoxesEntries->size (  ) );
+      AssertEqualWithMessage ( 0, actualRow1FreeTextComboBoxesEntries->size (  ), "Expected that combobox FreeTextComboBoxes has 0 entries, but has " + IntegerFunctions:: ToString ( actualRow1FreeTextComboBoxesEntries->size (  ) ) );
 
-      AssertEqual ( null, row1.getFreeTextComboBoxesComboBoxSelectedEntry (  ) );
+      AssertEqualWithMessage ( null, row1.getFreeTextComboBoxesComboBoxSelectedEntry (  ), "Expected that combobox FreeTextComboBoxes has " + "no selection" + ", but was <" + row1.getFreeTextComboBoxesComboBoxSelectedEntry (  ) + ">" );
 
-      AssertEqual ( "MyText2", row1.getFreeTextComboBoxesComboBoxText (  ) );
+      AssertEqualWithMessage ( "MyText2", row1.getFreeTextComboBoxesComboBoxText (  ), "Expected that combobox FreeTextComboBoxes has text <" + "MyText2" + ">, but was <" + row1.getFreeTextComboBoxesComboBoxText (  ) + ">" );
 
       let actualRow1EntryComboBoxesEntries: String [] = row1.getEntryComboBoxesComboBoxEntries (  );
 
-      AssertEqual ( 3, actualRow1EntryComboBoxesEntries->size (  ) );
+      AssertEqualWithMessage ( 3, actualRow1EntryComboBoxesEntries->size (  ), "Expected that combobox EntryComboBoxes has 3 entries, but has " + IntegerFunctions:: ToString ( actualRow1EntryComboBoxesEntries->size (  ) ) );
 
-      AssertEqual ( "D", actualRow1EntryComboBoxesEntries[ 1 ] ?? "" );
+      AssertEqualWithMessage ( "D", actualRow1EntryComboBoxesEntries[ 1 ] ?? "", "Expected that combobox EntryComboBoxes has entry at index 0 matching <" + "D" + ">, but was <" + actualRow1EntryComboBoxesEntries[ 1 ] ?? "" + ">" );
 
-      AssertEqual ( "E", actualRow1EntryComboBoxesEntries[ 2 ] ?? "" );
+      AssertEqualWithMessage ( "E", actualRow1EntryComboBoxesEntries[ 2 ] ?? "", "Expected that combobox EntryComboBoxes has entry at index 1 matching <" + "E" + ">, but was <" + actualRow1EntryComboBoxesEntries[ 2 ] ?? "" + ">" );
 
-      AssertEqual ( "F", actualRow1EntryComboBoxesEntries[ 3 ] ?? "" );
+      AssertEqualWithMessage ( "F", actualRow1EntryComboBoxesEntries[ 3 ] ?? "", "Expected that combobox EntryComboBoxes has entry at index 2 matching <" + "F" + ">, but was <" + actualRow1EntryComboBoxesEntries[ 3 ] ?? "" + ">" );
 
-      AssertEqual ( null, row1.getEntryComboBoxesComboBoxSelectedEntry (  ) );
+      AssertEqualWithMessage ( null, row1.getEntryComboBoxesComboBoxSelectedEntry (  ), "Expected that combobox EntryComboBoxes has " + "no selection" + ", but was <" + row1.getEntryComboBoxesComboBoxSelectedEntry (  ) + ">" );
 
     }
 
@@ -206,27 +206,27 @@ class RowBasedCommand_ViewTests {
   public then_MyStandardControls_has_2_rows (  ) {
     let actualRows: RowBasedCommand_ViewModelMyStandardControlsRow [] = this.sut.getMyStandardControlsTreeRows (  );
 
-    AssertEqual ( 2, actualRows->size (  ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that tree view MyStandardControls has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: RowBasedCommand_ViewModelMyStandardControlsRow = actualRows[ 1 ];
 
-      AssertEqual ( 0, row0.getRowIndex (  ) );
+      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that tree view MyStandardControls row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
 
-      AssertEqual ( 0, row0.getRowDepth (  ) );
+      AssertEqualWithMessage ( 0, row0.getRowDepth (  ), "Expected that tree view MyStandardControls row at index 0 has parent rowhandle <" + 0 + ">, but was <" + row0.getRowDepth (  ) + ">" );
 
-      AssertEqual ( "A", row0.getTextBoxesTextBoxText (  ) );
+      AssertEqualWithMessage ( "A", row0.getTextBoxesTextBoxText (  ), "Expected that textbox TextBoxes has text <" + "A" + ">, but was <" + row0.getTextBoxesTextBoxText (  ) + ">" );
 
     }
 
     {
       let row1: RowBasedCommand_ViewModelMyStandardControlsRow = actualRows[ 2 ];
 
-      AssertEqual ( 1, row1.getRowIndex (  ) );
+      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that tree view MyStandardControls row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
 
-      AssertEqual ( 0, row1.getRowDepth (  ) );
+      AssertEqualWithMessage ( 0, row1.getRowDepth (  ), "Expected that tree view MyStandardControls row at index 1 has parent rowhandle <" + 0 + ">, but was <" + row1.getRowDepth (  ) + ">" );
 
-      AssertEqual ( "B", row1.getTextBoxesTextBoxText (  ) );
+      AssertEqualWithMessage ( "B", row1.getTextBoxesTextBoxText (  ), "Expected that textbox TextBoxes has text <" + "B" + ">, but was <" + row1.getTextBoxesTextBoxText (  ) + ">" );
 
     }
 

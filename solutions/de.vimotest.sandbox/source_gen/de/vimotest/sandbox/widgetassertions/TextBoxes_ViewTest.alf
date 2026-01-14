@@ -73,40 +73,40 @@ class TextBoxes_ViewTest {
 
   
   public then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible (  ) {
-    AssertEqual ( "Some entered Input", this.sut.getMyValueTextBoxText (  ) );
+    AssertEqualWithMessage ( "Some entered Input", this.sut.getMyValueTextBoxText (  ), "Expected that textbox MyValue has text <" + "Some entered Input" + ">, but was <" + this.sut.getMyValueTextBoxText (  ) + ">" );
 
-    AssertTrue ( this.sut.getIsMyValueTextBoxEnabled (  ) );
+    AssertTrue ( this.sut.getIsMyValueTextBoxEnabled (  ), "Expected textbox MyValue is enabled, but it was disabled" );
 
-    AssertTrue ( this.sut.getIsMyValueTextBoxVisible (  ) );
+    AssertTrue ( this.sut.getIsMyValueTextBoxVisible (  ), "Expected textbox MyValue is visible, but it was hidden" );
 
   }
   
   public then_MyValue_shows_text_Some_entered_Input_and_is_not_enabled_and_is_visible (  ) {
-    AssertEqual ( "Some entered Input", this.sut.getMyValueTextBoxText (  ) );
+    AssertEqualWithMessage ( "Some entered Input", this.sut.getMyValueTextBoxText (  ), "Expected that textbox MyValue has text <" + "Some entered Input" + ">, but was <" + this.sut.getMyValueTextBoxText (  ) + ">" );
 
-    AssertFalse ( this.sut.getIsMyValueTextBoxEnabled (  ) );
+    AssertFalse ( this.sut.getIsMyValueTextBoxEnabled (  ), "Expected textbox MyValue is disabled, but it was enabled" );
 
-    AssertTrue ( this.sut.getIsMyValueTextBoxVisible (  ) );
+    AssertTrue ( this.sut.getIsMyValueTextBoxVisible (  ), "Expected textbox MyValue is visible, but it was hidden" );
 
   }
   
   public then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_not_visible (  ) {
-    AssertEqual ( "Some entered Input", this.sut.getMyValueTextBoxText (  ) );
+    AssertEqualWithMessage ( "Some entered Input", this.sut.getMyValueTextBoxText (  ), "Expected that textbox MyValue has text <" + "Some entered Input" + ">, but was <" + this.sut.getMyValueTextBoxText (  ) + ">" );
 
-    AssertTrue ( this.sut.getIsMyValueTextBoxEnabled (  ) );
+    AssertTrue ( this.sut.getIsMyValueTextBoxEnabled (  ), "Expected textbox MyValue is enabled, but it was disabled" );
 
-    AssertFalse ( this.sut.getIsMyValueTextBoxVisible (  ) );
+    AssertFalse ( this.sut.getIsMyValueTextBoxVisible (  ), "Expected textbox MyValue is hidden, but it was visible" );
 
   }
   
   public then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_ (  ) {
     let actualMultiLineTextBoxValueLines: String [] = this.sut.getMultiLineTextBoxValueTextBoxText (  );
 
-    AssertEqual ( 2, actualMultiLineTextBoxValueLines->size (  ) );
+    AssertEqualWithMessage ( 2, actualMultiLineTextBoxValueLines->size (  ), "Expected that textbox MultiLineTextBoxValue has text with 2 lines, but has " + IntegerFunctions:: ToString ( actualMultiLineTextBoxValueLines->size (  ) ) );
 
-    AssertEqual ( "Expected1", actualMultiLineTextBoxValueLines[ 1 ] ?? "" );
+    AssertEqualWithMessage ( "Expected1", actualMultiLineTextBoxValueLines[ 1 ] ?? "", "Expected that textbox MultiLineTextBoxValue has text line at index 0 matching <" + "Expected1" + ">, but was <" + actualMultiLineTextBoxValueLines[ 1 ] ?? "" + ">" );
 
-    AssertEqual ( "Expected2", actualMultiLineTextBoxValueLines[ 2 ] ?? "" );
+    AssertEqualWithMessage ( "Expected2", actualMultiLineTextBoxValueLines[ 2 ] ?? "", "Expected that textbox MultiLineTextBoxValue has text line at index 1 matching <" + "Expected2" + ">, but was <" + actualMultiLineTextBoxValueLines[ 2 ] ?? "" + ">" );
 
   }
 }

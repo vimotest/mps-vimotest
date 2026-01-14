@@ -63,44 +63,44 @@ class LowLevelFields_ViewTests {
 
   
   public then_MyBool_is_true (  ) {
-    AssertTrue ( this.sut.getMyBool (  ) );
+    AssertTrue ( this.sut.getMyBool (  ), "Expected field 'MyBool' has value <true>, but it was <" + this.sut.getMyBool (  ) + ">" );
 
   }
   
   public then_MyInt_is_42 (  ) {
-    AssertEqual ( 42, this.sut.getMyInt (  ) );
+    AssertEqualWithMessage ( 42, this.sut.getMyInt (  ), "Expected field 'MyInt' has value <" + 42 + ">, but it was <" + this.sut.getMyInt (  ) + ">" );
 
   }
   
   public then_MyString_is_text_ (  ) {
-    AssertEqual ( "text", this.sut.getMyString (  ) );
+    AssertEqualWithMessage ( "text", this.sut.getMyString (  ), "Expected field 'MyString' has value <" + "text" + ">, but it was <" + this.sut.getMyString (  ) + ">" );
 
   }
   
   public then_MyStrings_is_new_String____A___B__ (  ) {
     let actualMyStrings: String [] = this.sut.getMyStrings (  );
 
-    AssertEqual ( "A", actualMyStrings[ 1 ] ?? "" );
+    AssertEqualWithMessage ( "A", actualMyStrings[ 1 ] ?? "", "Expected field 'MyStrings[0]' has value <" + "A" + ">, but it was <" + actualMyStrings[ 1 ] ?? "" + ">" );
 
-    AssertEqual ( "B", actualMyStrings[ 2 ] ?? "" );
+    AssertEqualWithMessage ( "B", actualMyStrings[ 2 ] ?? "", "Expected field 'MyStrings[1]' has value <" + "B" + ">, but it was <" + actualMyStrings[ 2 ] ?? "" + ">" );
 
   }
   
   public then_CustomListRowField_has_1_rows (  ) {
     let actualRows: LowLevelFields_ViewModelCustomListRowFieldRow [] = this.sut.getCustomListRowFieldListRows (  );
 
-    AssertEqual ( 1, actualRows->size (  ) );
+    AssertEqualWithMessage ( 1, actualRows->size (  ), "Expected that list view CustomListRowField has 1 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: LowLevelFields_ViewModelCustomListRowFieldRow = actualRows[ 1 ];
 
-      AssertEqual ( "0", row0.getRowHandle (  ) );
+      AssertEqualWithMessage ( "0", row0.getRowHandle (  ), "Expected that list view CustomListRowField row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle (  ) + ">" );
 
-      AssertEqual ( "", row0.getHeaderLabelText (  ) );
+      AssertEqualWithMessage ( "", row0.getHeaderLabelText (  ), "Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText (  ) + ">" );
 
       let actualAdditionalStrings: String [] = row0.getAdditionalStrings (  );
 
-      AssertEqual ( "A", actualAdditionalStrings[ 1 ] ?? "" );
+      AssertEqualWithMessage ( "A", actualAdditionalStrings[ 1 ] ?? "", "Expected field 'AdditionalStrings[0]' has value <" + "A" + ">, but it was <" + actualAdditionalStrings[ 1 ] ?? "" + ">" );
 
     }
 
@@ -109,16 +109,16 @@ class LowLevelFields_ViewTests {
   public then_CustomTableRowField_has_1_rows (  ) {
     let actualRows: LowLevelFields_ViewModelCustomTableRowFieldRow [] = this.sut.getCustomTableRowFieldTableRows (  );
 
-    AssertEqual ( 1, actualRows->size (  ) );
+    AssertEqualWithMessage ( 1, actualRows->size (  ), "Expected that table view CustomTableRowField has 1 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: LowLevelFields_ViewModelCustomTableRowFieldRow = actualRows[ 1 ];
 
-      AssertEqual ( "0", row0.getRowHandle (  ) );
+      AssertEqualWithMessage ( "0", row0.getRowHandle (  ), "Expected that table view CustomTableRowField row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle (  ) + ">" );
 
-      AssertEqual ( "", row0.getHeaderLabelText (  ) );
+      AssertEqualWithMessage ( "", row0.getHeaderLabelText (  ), "Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText (  ) + ">" );
 
-      AssertFalse ( row0.getAdditionalBool (  ) );
+      AssertFalse ( row0.getAdditionalBool (  ), "Expected field 'AdditionalBool' has value <false>, but it was <" + row0.getAdditionalBool (  ) + ">" );
 
     }
 
@@ -127,18 +127,18 @@ class LowLevelFields_ViewTests {
   public then_CustomTreeRowField_has_1_rows (  ) {
     let actualRows: LowLevelFields_ViewModelCustomTreeRowFieldRow [] = this.sut.getCustomTreeRowFieldTreeRows (  );
 
-    AssertEqual ( 1, actualRows->size (  ) );
+    AssertEqualWithMessage ( 1, actualRows->size (  ), "Expected that tree view CustomTreeRowField has 1 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: LowLevelFields_ViewModelCustomTreeRowFieldRow = actualRows[ 1 ];
 
-      AssertEqual ( "9", row0.getRowHandle (  ) );
+      AssertEqualWithMessage ( "9", row0.getRowHandle (  ), "Expected that tree view CustomTreeRowField row at index 0 has rowhandle <9>, but was <" + row0.getRowHandle (  ) + ">" );
 
-      AssertEqual ( 0, row0.getRowDepth (  ) );
+      AssertEqualWithMessage ( 0, row0.getRowDepth (  ), "Expected that tree view CustomTreeRowField row at index 0 has parent rowhandle <" + 0 + ">, but was <" + row0.getRowDepth (  ) + ">" );
 
-      AssertEqual ( "", row0.getHeaderLabelText (  ) );
+      AssertEqualWithMessage ( "", row0.getHeaderLabelText (  ), "Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText (  ) + ">" );
 
-      AssertEqual ( 42, row0.getAdditionalInt (  ) );
+      AssertEqualWithMessage ( 42, row0.getAdditionalInt (  ), "Expected field 'AdditionalInt' has value <" + 42 + ">, but it was <" + row0.getAdditionalInt (  ) + ">" );
 
     }
 

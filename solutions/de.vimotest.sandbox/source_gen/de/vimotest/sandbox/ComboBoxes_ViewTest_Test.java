@@ -9,6 +9,7 @@ import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.widgetassertions.ComboBoxes_ViewModelTestEnvironmentImpl;
 import java.util.List;
 import org.junit.Assert;
+import wrappers.javaWrappers.IntegerFunctions;
 
 public class ComboBoxes_ViewTest_Test {
   private ComboBoxes_ViewModel sut;
@@ -52,34 +53,34 @@ public class ComboBoxes_ViewTest_Test {
 
   public void then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible() {
     List<String> actualMyOptionsEntries = this.sut.getMyOptionsComboBoxEntries();
-    Assert.assertEquals(Integer.valueOf(3), Integer.valueOf(actualMyOptionsEntries.size()));
-    Assert.assertEquals("A1", actualMyOptionsEntries.get(1 - 1));
-    Assert.assertEquals("A2", actualMyOptionsEntries.get(2 - 1));
-    Assert.assertEquals("A3", actualMyOptionsEntries.get(3 - 1));
-    Assert.assertEquals("A1", this.sut.getMyOptionsComboBoxSelectedEntry());
+    Assert.assertEquals("Expected that combobox MyOptions has 3 entries, but has " + IntegerFunctions.ToString(actualMyOptionsEntries.size()), Integer.valueOf(3), Integer.valueOf(actualMyOptionsEntries.size()));
+    Assert.assertEquals("Expected that combobox MyOptions has entry at index 0 matching <" + "A1" + ">, but was <" + actualMyOptionsEntries.get(1 - 1) + ">", "A1", actualMyOptionsEntries.get(1 - 1));
+    Assert.assertEquals("Expected that combobox MyOptions has entry at index 1 matching <" + "A2" + ">, but was <" + actualMyOptionsEntries.get(2 - 1) + ">", "A2", actualMyOptionsEntries.get(2 - 1));
+    Assert.assertEquals("Expected that combobox MyOptions has entry at index 2 matching <" + "A3" + ">, but was <" + actualMyOptionsEntries.get(3 - 1) + ">", "A3", actualMyOptionsEntries.get(3 - 1));
+    Assert.assertEquals("Expected that combobox MyOptions has " + "selected <A1>" + ", but was <" + this.sut.getMyOptionsComboBoxSelectedEntry() + ">", "A1", this.sut.getMyOptionsComboBoxSelectedEntry());
     Assert.assertTrue(this.sut.getIsMyOptionsComboBoxEnabled());
     Assert.assertTrue(this.sut.getIsMyOptionsComboBoxVisible());
   }
   public void then_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_() {
     List<String> actualMyOptionsWithFreeTextEntries = this.sut.getMyOptionsWithFreeTextComboBoxEntries();
-    Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(actualMyOptionsWithFreeTextEntries.size()));
-    Assert.assertEquals("E1", actualMyOptionsWithFreeTextEntries.get(1 - 1));
-    Assert.assertEquals("E2", actualMyOptionsWithFreeTextEntries.get(2 - 1));
-    Assert.assertEquals(null, this.sut.getMyOptionsWithFreeTextComboBoxSelectedEntry());
-    Assert.assertEquals("My Free Text", this.sut.getMyOptionsWithFreeTextComboBoxText());
+    Assert.assertEquals("Expected that combobox MyOptionsWithFreeText has 2 entries, but has " + IntegerFunctions.ToString(actualMyOptionsWithFreeTextEntries.size()), Integer.valueOf(2), Integer.valueOf(actualMyOptionsWithFreeTextEntries.size()));
+    Assert.assertEquals("Expected that combobox MyOptionsWithFreeText has entry at index 0 matching <" + "E1" + ">, but was <" + actualMyOptionsWithFreeTextEntries.get(1 - 1) + ">", "E1", actualMyOptionsWithFreeTextEntries.get(1 - 1));
+    Assert.assertEquals("Expected that combobox MyOptionsWithFreeText has entry at index 1 matching <" + "E2" + ">, but was <" + actualMyOptionsWithFreeTextEntries.get(2 - 1) + ">", "E2", actualMyOptionsWithFreeTextEntries.get(2 - 1));
+    Assert.assertEquals("Expected that combobox MyOptionsWithFreeText has " + "no selection" + ", but was <" + this.sut.getMyOptionsWithFreeTextComboBoxSelectedEntry() + ">", null, this.sut.getMyOptionsWithFreeTextComboBoxSelectedEntry());
+    Assert.assertEquals("Expected that combobox MyOptionsWithFreeText has text <" + "My Free Text" + ">, but was <" + this.sut.getMyOptionsWithFreeTextComboBoxText() + ">", "My Free Text", this.sut.getMyOptionsWithFreeTextComboBoxText());
   }
   public void then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled() {
     List<String> actualMyOptionsEntries_1 = this.sut.getMyOptionsComboBoxEntries();
-    Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(actualMyOptionsEntries_1.size()));
-    Assert.assertEquals("A", actualMyOptionsEntries_1.get(1 - 1));
-    Assert.assertEquals("A", this.sut.getMyOptionsComboBoxSelectedEntry());
+    Assert.assertEquals("Expected that combobox MyOptions has 1 entries, but has " + IntegerFunctions.ToString(actualMyOptionsEntries_1.size()), Integer.valueOf(1), Integer.valueOf(actualMyOptionsEntries_1.size()));
+    Assert.assertEquals("Expected that combobox MyOptions has entry at index 0 matching <" + "A" + ">, but was <" + actualMyOptionsEntries_1.get(1 - 1) + ">", "A", actualMyOptionsEntries_1.get(1 - 1));
+    Assert.assertEquals("Expected that combobox MyOptions has " + "selected <A>" + ", but was <" + this.sut.getMyOptionsComboBoxSelectedEntry() + ">", "A", this.sut.getMyOptionsComboBoxSelectedEntry());
     Assert.assertFalse(this.sut.getIsMyOptionsComboBoxEnabled());
   }
   public void then_MyOptions_has_1_entries_and_selected_A_and_is_not_visible() {
     List<String> actualMyOptionsEntries_2 = this.sut.getMyOptionsComboBoxEntries();
-    Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(actualMyOptionsEntries_2.size()));
-    Assert.assertEquals("A", actualMyOptionsEntries_2.get(1 - 1));
-    Assert.assertEquals("A", this.sut.getMyOptionsComboBoxSelectedEntry());
+    Assert.assertEquals("Expected that combobox MyOptions has 1 entries, but has " + IntegerFunctions.ToString(actualMyOptionsEntries_2.size()), Integer.valueOf(1), Integer.valueOf(actualMyOptionsEntries_2.size()));
+    Assert.assertEquals("Expected that combobox MyOptions has entry at index 0 matching <" + "A" + ">, but was <" + actualMyOptionsEntries_2.get(1 - 1) + ">", "A", actualMyOptionsEntries_2.get(1 - 1));
+    Assert.assertEquals("Expected that combobox MyOptions has " + "selected <A>" + ", but was <" + this.sut.getMyOptionsComboBoxSelectedEntry() + ">", "A", this.sut.getMyOptionsComboBoxSelectedEntry());
     Assert.assertFalse(this.sut.getIsMyOptionsComboBoxVisible());
   }
 }

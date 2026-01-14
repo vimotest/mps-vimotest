@@ -136,51 +136,51 @@ public class LoginViewModelTests
 
     public virtual void then_Username_shows_text_User_()
     {
-        Assert.AreEqual("User", this.sut.getUsernameTextBoxText());
+        Assert.AreEqual("User", this.sut.getUsernameTextBoxText(), "Expected that textbox Username has text <" + "User" + ">, but was <" + this.sut.getUsernameTextBoxText() + ">");
     }
 
     public virtual void then_Password_shows_text_MyPass123_()
     {
-        Assert.AreEqual("MyPass123", this.sut.getPasswordTextBoxText());
+        Assert.AreEqual("MyPass123", this.sut.getPasswordTextBoxText(), "Expected that textbox Password has text <" + "MyPass123" + ">, but was <" + this.sut.getPasswordTextBoxText() + ">");
     }
 
     public virtual void then_Login_is_enabled()
     {
-        Assert.IsTrue(this.sut.getIsLoginButtonEnabled());
+        Assert.IsTrue(this.sut.getIsLoginButtonEnabled(), "Expected button Login is enabled, but it was disabled");
     }
 
     public virtual void then_Password_shows_empty_text()
     {
-        Assert.AreEqual("", this.sut.getPasswordTextBoxText());
+        Assert.AreEqual("", this.sut.getPasswordTextBoxText(), "Expected that textbox Password has text <" + "" + ">, but was <" + this.sut.getPasswordTextBoxText() + ">");
     }
 
     public virtual void then_Login_is_not_enabled()
     {
-        Assert.IsFalse(this.sut.getIsLoginButtonEnabled());
+        Assert.IsFalse(this.sut.getIsLoginButtonEnabled(), "Expected button Login is disabled, but it was enabled");
     }
 
     public virtual void then_Username_shows_text_Ada_()
     {
-        Assert.AreEqual("Ada", this.sut.getUsernameTextBoxText());
+        Assert.AreEqual("Ada", this.sut.getUsernameTextBoxText(), "Expected that textbox Username has text <" + "Ada" + ">, but was <" + this.sut.getUsernameTextBoxText() + ">");
     }
 
     public virtual void then_Password_shows_text_____()
     {
-        Assert.AreEqual("******", this.sut.getPasswordTextBoxText());
+        Assert.AreEqual("******", this.sut.getPasswordTextBoxText(), "Expected that textbox Password has text <" + "******" + ">, but was <" + this.sut.getPasswordTextBoxText() + ">");
     }
 
     public virtual void then_Password_shows_text_Lovelace1_()
     {
-        Assert.AreEqual("Lovelace1", this.sut.getPasswordTextBoxText());
+        Assert.AreEqual("Lovelace1", this.sut.getPasswordTextBoxText(), "Expected that textbox Password has text <" + "Lovelace1" + ">, but was <" + this.sut.getPasswordTextBoxText() + ">");
     }
 
     public virtual void then_ShowPassword_is_checked()
     {
-        Assert.IsTrue(this.sut.getIsShowPasswordCheckBoxChecked());
+        Assert.IsTrue(this.sut.getIsShowPasswordCheckBoxChecked(), "Expected that checkbox ShowPassword is checked, but was <" + this.sut.getIsShowPasswordCheckBoxChecked() + ">");
     }
 
     public virtual void then_Error_shows_text_Needs_uppercase_letters_()
     {
-        Assert.AreEqual("Needs uppercase letters", this.sut.getErrorLabelText());
+        Assert.AreEqual("Needs uppercase letters", this.sut.getErrorLabelText(), "Expected that label Error has text <" + "Needs uppercase letters" + ">, but was <" + this.sut.getErrorLabelText() + ">");
     }
 }

@@ -101,67 +101,67 @@ class Labels_ViewTest {
 
   
   public then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible (  ) {
-    AssertEqual ( "My Expectation Text", this.sut.getTestLabelText (  ) );
+    AssertEqualWithMessage ( "My Expectation Text", this.sut.getTestLabelText (  ), "Expected that label Test has text <" + "My Expectation Text" + ">, but was <" + this.sut.getTestLabelText (  ) + ">" );
 
-    AssertTrue ( this.sut.getIsTestLabelEnabled (  ) );
+    AssertTrue ( this.sut.getIsTestLabelEnabled (  ), "Expected label Test is enabled, but it was disabled" );
 
-    AssertTrue ( this.sut.getIsTestLabelVisible (  ) );
+    AssertTrue ( this.sut.getIsTestLabelVisible (  ), "Expected label Test is visible, but it was hidden" );
 
   }
   
   public then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible (  ) {
-    AssertEqual ( "My Expectation Text", this.sut.getTestLabelText (  ) );
+    AssertEqualWithMessage ( "My Expectation Text", this.sut.getTestLabelText (  ), "Expected that label Test has text <" + "My Expectation Text" + ">, but was <" + this.sut.getTestLabelText (  ) + ">" );
 
-    AssertFalse ( this.sut.getIsTestLabelEnabled (  ) );
+    AssertFalse ( this.sut.getIsTestLabelEnabled (  ), "Expected label Test is disabled, but it was enabled" );
 
-    AssertTrue ( this.sut.getIsTestLabelVisible (  ) );
+    AssertTrue ( this.sut.getIsTestLabelVisible (  ), "Expected label Test is visible, but it was hidden" );
 
   }
   
   public then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible (  ) {
-    AssertEqual ( "My Expectation Text", this.sut.getTestLabelText (  ) );
+    AssertEqualWithMessage ( "My Expectation Text", this.sut.getTestLabelText (  ), "Expected that label Test has text <" + "My Expectation Text" + ">, but was <" + this.sut.getTestLabelText (  ) + ">" );
 
-    AssertTrue ( this.sut.getIsTestLabelEnabled (  ) );
+    AssertTrue ( this.sut.getIsTestLabelEnabled (  ), "Expected label Test is enabled, but it was disabled" );
 
-    AssertFalse ( this.sut.getIsTestLabelVisible (  ) );
+    AssertFalse ( this.sut.getIsTestLabelVisible (  ), "Expected label Test is hidden, but it was visible" );
 
   }
   
   public then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_ (  ) {
     let actualMultiLineLines: String [] = this.sut.getMultiLineLabelText (  );
 
-    AssertEqual ( 2, actualMultiLineLines->size (  ) );
+    AssertEqualWithMessage ( 2, actualMultiLineLines->size (  ), "Expected that label MultiLine has text with 2 lines, but has " + IntegerFunctions:: ToString ( actualMultiLineLines->size (  ) ) );
 
-    AssertEqual ( "Expected Line 1", actualMultiLineLines[ 1 ] ?? "" );
+    AssertEqualWithMessage ( "Expected Line 1", actualMultiLineLines[ 1 ] ?? "", "Expected that label MultiLine has text line at index 0 matching <" + "Expected Line 1" + ">, but was <" + actualMultiLineLines[ 1 ] ?? "" + ">" );
 
-    AssertEqual ( "Expected Line 2", actualMultiLineLines[ 2 ] ?? "" );
+    AssertEqualWithMessage ( "Expected Line 2", actualMultiLineLines[ 2 ] ?? "", "Expected that label MultiLine has text line at index 1 matching <" + "Expected Line 2" + ">, but was <" + actualMultiLineLines[ 2 ] ?? "" + ">" );
 
   }
   
   public then_WithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_ (  ) {
-    AssertEqual ( "Info", this.sut.getWithToolTipLabelText (  ) );
+    AssertEqualWithMessage ( "Info", this.sut.getWithToolTipLabelText (  ), "Expected that label WithToolTip has text <" + "Info" + ">, but was <" + this.sut.getWithToolTipLabelText (  ) + ">" );
 
-    AssertEqual ( "My Expected Tooltip", this.sut.getWithToolTipLabelToolTip (  ) );
+    AssertEqualWithMessage ( "My Expected Tooltip", this.sut.getWithToolTipLabelToolTip (  ), "Expected that label WithToolTip has tooltip <" + "My Expected Tooltip" + ">, but was <" + this.sut.getWithToolTipLabelToolTip (  ) + ">" );
 
   }
   
   public then_WithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_ (  ) {
-    AssertEqual ( "Info", this.sut.getWithMultiLineToolTipLabelText (  ) );
+    AssertEqualWithMessage ( "Info", this.sut.getWithMultiLineToolTipLabelText (  ), "Expected that label WithMultiLineToolTip has text <" + "Info" + ">, but was <" + this.sut.getWithMultiLineToolTipLabelText (  ) + ">" );
 
     let actualWithMultiLineToolTipLines: String [] = this.sut.getWithMultiLineToolTipLabelToolTip (  );
 
-    AssertEqual ( 2, actualWithMultiLineToolTipLines->size (  ) );
+    AssertEqualWithMessage ( 2, actualWithMultiLineToolTipLines->size (  ), "Expected that label WithMultiLineToolTip has tooltip with 2 lines, but has " + IntegerFunctions:: ToString ( actualWithMultiLineToolTipLines->size (  ) ) );
 
-    AssertEqual ( "Line1", actualWithMultiLineToolTipLines[ 1 ] ?? "" );
+    AssertEqualWithMessage ( "Line1", actualWithMultiLineToolTipLines[ 1 ] ?? "", "Expected that label WithMultiLineToolTip has tooltip line at index 0 matching <" + "Line1" + ">, but was <" + actualWithMultiLineToolTipLines[ 1 ] ?? "" + ">" );
 
-    AssertEqual ( "Line2", actualWithMultiLineToolTipLines[ 2 ] ?? "" );
+    AssertEqualWithMessage ( "Line2", actualWithMultiLineToolTipLines[ 2 ] ?? "", "Expected that label WithMultiLineToolTip has tooltip line at index 1 matching <" + "Line2" + ">, but was <" + actualWithMultiLineToolTipLines[ 2 ] ?? "" + ">" );
 
   }
   
   public then_WithTextColor_shows_text_Info_and_has_text_color_blue_ (  ) {
-    AssertEqual ( "Info", this.sut.getWithTextColorLabelText (  ) );
+    AssertEqualWithMessage ( "Info", this.sut.getWithTextColorLabelText (  ), "Expected that label WithTextColor has text <" + "Info" + ">, but was <" + this.sut.getWithTextColorLabelText (  ) + ">" );
 
-    AssertEqual ( "blue", this.sut.getWithTextColorLabelTextColor (  ) );
+    AssertEqualWithMessage ( "blue", this.sut.getWithTextColorLabelTextColor (  ), "Expected that label WithTextColor has text color <" + "blue" + ">, but was <" + this.sut.getWithTextColorLabelTextColor (  ) + ">" );
 
   }
 }

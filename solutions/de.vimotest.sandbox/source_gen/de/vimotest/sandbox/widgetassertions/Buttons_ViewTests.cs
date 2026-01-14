@@ -53,22 +53,22 @@ public class Buttons_ViewTests
 
     public virtual void then_Ok_is_enabled_and_is_visible_and_shows_text_Test_()
     {
-        Assert.IsTrue(this.sut.getIsOkButtonEnabled());
-        Assert.IsTrue(this.sut.getIsOkButtonVisible());
-        Assert.AreEqual("Test", this.sut.getOkButtonText());
+        Assert.IsTrue(this.sut.getIsOkButtonEnabled(), "Expected button Ok is enabled, but it was disabled");
+        Assert.IsTrue(this.sut.getIsOkButtonVisible(), "Expected button Ok is visible, but it was hidden");
+        Assert.AreEqual("Test", this.sut.getOkButtonText(), "Expected that button Ok has text <" + "Test" + ">, but was <" + this.sut.getOkButtonText() + ">");
     }
 
     public virtual void then_Ok_is_not_enabled_and_is_visible_and_shows_text_Test_()
     {
-        Assert.IsFalse(this.sut.getIsOkButtonEnabled());
-        Assert.IsTrue(this.sut.getIsOkButtonVisible());
-        Assert.AreEqual("Test", this.sut.getOkButtonText());
+        Assert.IsFalse(this.sut.getIsOkButtonEnabled(), "Expected button Ok is disabled, but it was enabled");
+        Assert.IsTrue(this.sut.getIsOkButtonVisible(), "Expected button Ok is visible, but it was hidden");
+        Assert.AreEqual("Test", this.sut.getOkButtonText(), "Expected that button Ok has text <" + "Test" + ">, but was <" + this.sut.getOkButtonText() + ">");
     }
 
     public virtual void then_Ok_is_enabled_and_is_not_visible_and_shows_text_Test_()
     {
-        Assert.IsTrue(this.sut.getIsOkButtonEnabled());
-        Assert.IsFalse(this.sut.getIsOkButtonVisible());
-        Assert.AreEqual("Test", this.sut.getOkButtonText());
+        Assert.IsTrue(this.sut.getIsOkButtonEnabled(), "Expected button Ok is enabled, but it was disabled");
+        Assert.IsFalse(this.sut.getIsOkButtonVisible(), "Expected button Ok is hidden, but it was visible");
+        Assert.AreEqual("Test", this.sut.getOkButtonText(), "Expected that button Ok has text <" + "Test" + ">, but was <" + this.sut.getOkButtonText() + ">");
     }
 }

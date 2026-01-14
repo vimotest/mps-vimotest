@@ -48,12 +48,12 @@ class Images_ViewTest {
 
   
   public then_Status_shows_image_image_active_ (  ) {
-    AssertEqual ( "image_active", this.sut.getStatusImageName (  ) );
+    AssertEqualWithMessage ( "image_active", this.sut.getStatusImageName (  ), "Expected that image Status has " + "image <image_active>" + ", but was <" + this.sut.getStatusImageName (  ) + ">" );
 
   }
   
   public then_UpOrDown_shows_image_image_down_ (  ) {
-    AssertEqual ( "image_down", this.sut.getUpOrDownImageName (  ) );
+    AssertEqualWithMessage ( "image_down", this.sut.getUpOrDownImageName (  ), "Expected that image UpOrDown has " + "image <image_down>" + ", but was <" + this.sut.getUpOrDownImageName (  ) + ">" );
 
   }
 }

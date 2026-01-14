@@ -23,6 +23,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="53m0" ref="r:b38f4eba-3263-43b3-b5a0-ad906d4f1a11(de.vimotest.viewmodel.testing.structure)" />
     <import index="7p2e" ref="r:6a61e065-5649-42c6-b0ca-3da4fcbb83a1(de.vimotest.viewmodel.testing.generator.templates@generator)" />
+    <import index="ao3" ref="7124e466-fc92-4803-a656-d7a6b7eb3910/java:jetbrains.mps.text(MPS.TextGen/)" />
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
   </imports>
   <registry>
@@ -3818,6 +3819,43 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="7QUxXLQjChs" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="6TppBVxnx3O">
+    <property role="TrG5h" value="AlfiExpressionValueHelper" />
+    <node concept="2YIFZL" id="6TppBVxnx53" role="jymVt">
+      <property role="TrG5h" value="getDisplayValue" />
+      <node concept="3clFbS" id="6TppBVxnx56" role="3clF47">
+        <node concept="3clFbF" id="6TppBVxn$RB" role="3cqZAp">
+          <node concept="2OqwBi" id="6TppBVxsMDU" role="3clFbG">
+            <node concept="2YIFZM" id="6TppBVxn$T8" role="2Oq$k0">
+              <ref role="37wK5l" to="ao3:~TextGeneratorEngine.generateText(org.jetbrains.mps.openapi.model.SNode)" resolve="generateText" />
+              <ref role="1Pybhc" to="ao3:~TextGeneratorEngine" resolve="TextGeneratorEngine" />
+              <node concept="37vLTw" id="6TppBVxn$U1" role="37wK5m">
+                <ref role="3cqZAo" node="6TppBVxnx5x" resolve="expression" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6TppBVxsMKX" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
+              <node concept="Xl_RD" id="6TppBVxsMMC" role="37wK5m">
+                <property role="Xl_RC" value="\&quot;" />
+              </node>
+              <node concept="Xl_RD" id="6TppBVxsN54" role="37wK5m">
+                <property role="Xl_RC" value="\\\\\&quot;" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6TppBVxnx4H" role="1B3o_S" />
+      <node concept="17QB3L" id="6TppBVxnx4T" role="3clF45" />
+      <node concept="37vLTG" id="6TppBVxnx5x" role="3clF46">
+        <property role="TrG5h" value="expression" />
+        <node concept="3Tqbb2" id="6TppBVxnx5w" role="1tU5fm">
+          <ref role="ehGHo" to="28lk:2kuSLC0kNK2" resolve="Expression" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="6TppBVxnx3P" role="1B3o_S" />
   </node>
 </model>
 

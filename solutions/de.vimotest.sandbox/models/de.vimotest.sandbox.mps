@@ -106,9 +106,14 @@
       </concept>
       <concept id="5843239545669041264" name="de.vimotest.viewmodel.testing.structure.DependencyCallArgumentExpectation" flags="ng" index="w2mso">
         <reference id="5843239545669041301" name="actualParameter" index="w2mvX" />
+        <child id="5843239545669041266" name="expectedValue" index="w2msq" />
       </concept>
       <concept id="5843239545669039248" name="de.vimotest.viewmodel.testing.structure.DependencyCallAssertion" flags="ng" index="w2mZS">
+        <property id="5843239545669041257" name="atMostCount" index="w2ms1" />
         <property id="5843239545669041255" name="atLeastCount" index="w2msf" />
+        <property id="5843239545669041375" name="isExpectRange" index="w2muR" />
+        <property id="2272195042853698442" name="isSpecificIndex" index="1aeGVg" />
+        <property id="2272195042853698443" name="expectedIndex" index="1aeGVh" />
         <reference id="5843239545669041261" name="targetDependency" index="w2ms5" />
         <reference id="5843239545669041262" name="targetOperation" index="w2ms6" />
         <child id="5843239545669041263" name="expectedValues" index="w2ms7" />
@@ -6001,7 +6006,7 @@
     <property role="TrG5h" value="VerifyDependencyCallViewModelTests" />
     <ref role="30n1PB" node="54nmQxLhoWA" resolve="VerifyDependencyCallViewModel" />
     <node concept="3LKzX3" id="54nmQxLhoX7" role="30n1Qb">
-      <property role="TrG5h" value="Verify dependency call" />
+      <property role="TrG5h" value="Verify dependency call any" />
       <node concept="1s$VFG" id="54nmQxLhoXa" role="1s$QAY">
         <node concept="DUd2R" id="54nmQxLhoXd" role="1s$QAX">
           <node concept="w2mZS" id="54nmQxLhoXf" role="DUiSb">
@@ -6010,6 +6015,65 @@
             <ref role="w2ms6" node="47nlIY2maYh" resolve="Log" />
             <node concept="w2mso" id="54nmQxLQEv$" role="w2ms7">
               <ref role="w2mvX" node="47nlIY2maYi" resolve="message" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="2Fj9f95asyd" role="30n1Qb">
+      <property role="TrG5h" value="Verify dependency call 1 times" />
+      <node concept="1s$VFG" id="2Fj9f95asye" role="1s$QAY">
+        <node concept="DUd2R" id="2Fj9f95asyf" role="1s$QAX">
+          <node concept="w2mZS" id="2Fj9f95asyg" role="DUiSb">
+            <property role="w2msf" value="1" />
+            <ref role="w2ms5" node="47nlIY2maYg" resolve="Logger" />
+            <ref role="w2ms6" node="47nlIY2maYh" resolve="Log" />
+            <node concept="w2mso" id="2Fj9f95asyh" role="w2ms7">
+              <ref role="w2mvX" node="47nlIY2maYi" resolve="message" />
+              <node concept="_iklQ" id="2Fj9f95asyi" role="w2msq">
+                <property role="_iklR" value="my log" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="2Fj9f95asz6" role="30n1Qb">
+      <property role="TrG5h" value="Verify dependency call at index 3" />
+      <node concept="1s$VFG" id="2Fj9f95asz7" role="1s$QAY">
+        <node concept="DUd2R" id="2Fj9f95asz8" role="1s$QAX">
+          <node concept="w2mZS" id="2Fj9f95asz9" role="DUiSb">
+            <property role="w2msf" value="1" />
+            <property role="1aeGVg" value="true" />
+            <property role="1aeGVh" value="3" />
+            <ref role="w2ms5" node="47nlIY2maYg" resolve="Logger" />
+            <ref role="w2ms6" node="47nlIY2maYh" resolve="Log" />
+            <node concept="w2mso" id="2Fj9f95asza" role="w2ms7">
+              <ref role="w2mvX" node="47nlIY2maYi" resolve="message" />
+              <node concept="_iklQ" id="2Fj9f95aszb" role="w2msq">
+                <property role="_iklR" value="my log" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="2Fj9f95iTms" role="30n1Qb">
+      <property role="TrG5h" value="Verify dependency call 3-6" />
+      <node concept="1s$VFG" id="2Fj9f95iTmt" role="1s$QAY">
+        <node concept="DUd2R" id="2Fj9f95iTmu" role="1s$QAX">
+          <node concept="w2mZS" id="2Fj9f95iTmv" role="DUiSb">
+            <property role="w2msf" value="3" />
+            <property role="1aeGVh" value="3" />
+            <property role="w2muR" value="true" />
+            <property role="w2ms1" value="6" />
+            <ref role="w2ms5" node="47nlIY2maYg" resolve="Logger" />
+            <ref role="w2ms6" node="47nlIY2maYh" resolve="Log" />
+            <node concept="w2mso" id="2Fj9f95iTmw" role="w2ms7">
+              <ref role="w2mvX" node="47nlIY2maYi" resolve="message" />
+              <node concept="_iklQ" id="2Fj9f95iTmx" role="w2msq">
+                <property role="_iklR" value="my log" />
+              </node>
             </node>
           </node>
         </node>

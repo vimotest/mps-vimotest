@@ -63,129 +63,129 @@ class TreeViews_ViewTest {
   public then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible (  ) {
     let actualRows: TreeViews_ViewModelMyTreeViewElementsRow [] = this.sut.getMyTreeViewElementsTreeRows (  );
 
-    AssertEqual ( 2, actualRows->size (  ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that tree view MyTreeViewElements has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: TreeViews_ViewModelMyTreeViewElementsRow = actualRows[ 1 ];
 
-      AssertEqual ( 0, row0.getRowIndex (  ) );
+      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
 
-      AssertEqual ( 0, row0.getRowDepth (  ) );
+      AssertEqualWithMessage ( 0, row0.getRowDepth (  ), "Expected that tree view MyTreeViewElements row at index 0 has parent rowhandle <" + 0 + ">, but was <" + row0.getRowDepth (  ) + ">" );
 
-      AssertTrue ( row0.getIsIncludeCheckBoxChecked (  ) );
+      AssertTrue ( row0.getIsIncludeCheckBoxChecked (  ), "Expected that checkbox Include is checked, but was <" + row0.getIsIncludeCheckBoxChecked (  ) + ">" );
 
-      AssertEqual ( "A", row0.getNameLabelText (  ) );
+      AssertEqualWithMessage ( "A", row0.getNameLabelText (  ), "Expected that label Name has text <" + "A" + ">, but was <" + row0.getNameLabelText (  ) + ">" );
 
-      AssertEqual ( "B", row0.getDescriptionLabelText (  ) );
+      AssertEqualWithMessage ( "B", row0.getDescriptionLabelText (  ), "Expected that label Description has text <" + "B" + ">, but was <" + row0.getDescriptionLabelText (  ) + ">" );
 
-      AssertEqual ( "image_triangle", row0.getInfoImageName (  ) );
+      AssertEqualWithMessage ( "image_triangle", row0.getInfoImageName (  ), "Expected that image Info has " + "image <image_triangle>" + ", but was <" + row0.getInfoImageName (  ) + ">" );
 
     }
 
     {
       let row1: TreeViews_ViewModelMyTreeViewElementsRow = actualRows[ 2 ];
 
-      AssertEqual ( 1, row1.getRowIndex (  ) );
+      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that tree view MyTreeViewElements row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
 
-      AssertEqual ( 1, row1.getRowDepth (  ) );
+      AssertEqualWithMessage ( 1, row1.getRowDepth (  ), "Expected that tree view MyTreeViewElements row at index 1 has parent rowhandle <" + 1 + ">, but was <" + row1.getRowDepth (  ) + ">" );
 
-      AssertFalse ( row1.getIsIncludeCheckBoxChecked (  ) );
+      AssertFalse ( row1.getIsIncludeCheckBoxChecked (  ), "Expected that checkbox Include is unchecked, but was <" + row1.getIsIncludeCheckBoxChecked (  ) + ">" );
 
-      AssertEqual ( "C", row1.getNameLabelText (  ) );
+      AssertEqualWithMessage ( "C", row1.getNameLabelText (  ), "Expected that label Name has text <" + "C" + ">, but was <" + row1.getNameLabelText (  ) + ">" );
 
-      AssertEqual ( "D", row1.getDescriptionLabelText (  ) );
+      AssertEqualWithMessage ( "D", row1.getDescriptionLabelText (  ), "Expected that label Description has text <" + "D" + ">, but was <" + row1.getDescriptionLabelText (  ) + ">" );
 
-      AssertEqual ( "image_circle", row1.getInfoImageName (  ) );
+      AssertEqualWithMessage ( "image_circle", row1.getInfoImageName (  ), "Expected that image Info has " + "image <image_circle>" + ", but was <" + row1.getInfoImageName (  ) + ">" );
 
     }
 
-    AssertEqual ( 1, this.sut.getMyTreeViewElementsTreeSelectedRow (  ) );
+    AssertEqualWithMessage ( 1, this.sut.getMyTreeViewElementsTreeSelectedRow (  ), "Expected that tree view MyTreeViewElements has selected row with row handle <" + 1 + ">, but was <" + this.sut.getMyTreeViewElementsTreeSelectedRow (  ) + ">" );
 
-    AssertTrue ( this.sut.getIsMyTreeViewElementsTreeEnabled (  ) );
+    AssertTrue ( this.sut.getIsMyTreeViewElementsTreeEnabled (  ), "Expected tree view MyTreeViewElements is enabled, but it was disabled" );
 
-    AssertTrue ( this.sut.getIsMyTreeViewElementsTreeVisible (  ) );
+    AssertTrue ( this.sut.getIsMyTreeViewElementsTreeVisible (  ), "Expected tree view MyTreeViewElements is visible, but it was hidden" );
 
-    AssertFalse ( this.sut.getIsMyTreeViewElementsTreeDescriptionColumnVisible (  ) );
+    AssertFalse ( this.sut.getIsMyTreeViewElementsTreeDescriptionColumnVisible (  ), "Expected tree column Description is hidden, but it was visible" );
 
   }
   
   public then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  ) {
     let actualRows: TreeViews_ViewModelMyStringRowHandlesRow [] = this.sut.getMyStringRowHandlesTreeRows (  );
 
-    AssertEqual ( 2, actualRows->size (  ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that tree view MyStringRowHandles has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: TreeViews_ViewModelMyStringRowHandlesRow = actualRows[ 1 ];
 
-      AssertEqual ( "ROW0", row0.getRowHandle (  ) );
+      AssertEqualWithMessage ( "ROW0", row0.getRowHandle (  ), "Expected that tree view MyStringRowHandles row at index 0 has rowhandle <ROW0>, but was <" + row0.getRowHandle (  ) + ">" );
 
-      AssertEqual ( 0, row0.getRowDepth (  ) );
+      AssertEqualWithMessage ( 0, row0.getRowDepth (  ), "Expected that tree view MyStringRowHandles row at index 0 has parent rowhandle <" + 0 + ">, but was <" + row0.getRowDepth (  ) + ">" );
 
-      AssertEqual ( "A", row0.getValuesLabelText (  ) );
+      AssertEqualWithMessage ( "A", row0.getValuesLabelText (  ), "Expected that label Values has text <" + "A" + ">, but was <" + row0.getValuesLabelText (  ) + ">" );
 
     }
 
     {
       let row1: TreeViews_ViewModelMyStringRowHandlesRow = actualRows[ 2 ];
 
-      AssertEqual ( "ROW1", row1.getRowHandle (  ) );
+      AssertEqualWithMessage ( "ROW1", row1.getRowHandle (  ), "Expected that tree view MyStringRowHandles row at index 1 has rowhandle <ROW1>, but was <" + row1.getRowHandle (  ) + ">" );
 
-      AssertEqual ( 0, row1.getRowDepth (  ) );
+      AssertEqualWithMessage ( 0, row1.getRowDepth (  ), "Expected that tree view MyStringRowHandles row at index 1 has parent rowhandle <" + 0 + ">, but was <" + row1.getRowDepth (  ) + ">" );
 
-      AssertEqual ( "B", row1.getValuesLabelText (  ) );
+      AssertEqualWithMessage ( "B", row1.getValuesLabelText (  ), "Expected that label Values has text <" + "B" + ">, but was <" + row1.getValuesLabelText (  ) + ">" );
 
     }
 
-    AssertEqual ( "ROW1", this.sut.getMyStringRowHandlesTreeSelectedRow (  ) );
+    AssertEqualWithMessage ( "ROW1", this.sut.getMyStringRowHandlesTreeSelectedRow (  ), "Expected that tree view MyStringRowHandles has selected row with row handle <" + "ROW1" + ">, but was <" + this.sut.getMyStringRowHandlesTreeSelectedRow (  ) + ">" );
 
   }
   
   public then_MyParentIndexRowHandles_has_4_rows (  ) {
     let actualRows: TreeViews_ViewModelMyParentIndexRowHandlesRow [] = this.sut.getMyParentIndexRowHandlesTreeRows (  );
 
-    AssertEqual ( 4, actualRows->size (  ) );
+    AssertEqualWithMessage ( 4, actualRows->size (  ), "Expected that tree view MyParentIndexRowHandles has 4 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: TreeViews_ViewModelMyParentIndexRowHandlesRow = actualRows[ 1 ];
 
-      AssertEqual ( 0, row0.getRowIndex (  ) );
+      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that tree view MyParentIndexRowHandles row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
 
-      AssertEqual ( -1, row0.getParentRowIndex (  ) );
+      AssertEqualWithMessage ( -1, row0.getParentRowIndex (  ), "Expected that tree view MyParentIndexRowHandles row at index 0 has parent rowhandle <" + -1 + ">, but was <" + row0.getParentRowIndex (  ) + ">" );
 
-      AssertEqual ( "A", row0.getValuesLabelText (  ) );
+      AssertEqualWithMessage ( "A", row0.getValuesLabelText (  ), "Expected that label Values has text <" + "A" + ">, but was <" + row0.getValuesLabelText (  ) + ">" );
 
     }
 
     {
       let row1: TreeViews_ViewModelMyParentIndexRowHandlesRow = actualRows[ 2 ];
 
-      AssertEqual ( 1, row1.getRowIndex (  ) );
+      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that tree view MyParentIndexRowHandles row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
 
-      AssertEqual ( 0, row1.getParentRowIndex (  ) );
+      AssertEqualWithMessage ( 0, row1.getParentRowIndex (  ), "Expected that tree view MyParentIndexRowHandles row at index 1 has parent rowhandle <" + 0 + ">, but was <" + row1.getParentRowIndex (  ) + ">" );
 
-      AssertEqual ( "A.B", row1.getValuesLabelText (  ) );
+      AssertEqualWithMessage ( "A.B", row1.getValuesLabelText (  ), "Expected that label Values has text <" + "A.B" + ">, but was <" + row1.getValuesLabelText (  ) + ">" );
 
     }
 
     {
       let row2: TreeViews_ViewModelMyParentIndexRowHandlesRow = actualRows[ 3 ];
 
-      AssertEqual ( 2, row2.getRowIndex (  ) );
+      AssertEqualWithMessage ( 2, row2.getRowIndex (  ), "Expected that tree view MyParentIndexRowHandles row at index 2 has rowhandle <2>, but was <" + row2.getRowIndex (  ) + ">" );
 
-      AssertEqual ( -1, row2.getParentRowIndex (  ) );
+      AssertEqualWithMessage ( -1, row2.getParentRowIndex (  ), "Expected that tree view MyParentIndexRowHandles row at index 2 has parent rowhandle <" + -1 + ">, but was <" + row2.getParentRowIndex (  ) + ">" );
 
-      AssertEqual ( "C", row2.getValuesLabelText (  ) );
+      AssertEqualWithMessage ( "C", row2.getValuesLabelText (  ), "Expected that label Values has text <" + "C" + ">, but was <" + row2.getValuesLabelText (  ) + ">" );
 
     }
 
     {
       let row3: TreeViews_ViewModelMyParentIndexRowHandlesRow = actualRows[ 4 ];
 
-      AssertEqual ( 3, row3.getRowIndex (  ) );
+      AssertEqualWithMessage ( 3, row3.getRowIndex (  ), "Expected that tree view MyParentIndexRowHandles row at index 3 has rowhandle <3>, but was <" + row3.getRowIndex (  ) + ">" );
 
-      AssertEqual ( 2, row3.getParentRowIndex (  ) );
+      AssertEqualWithMessage ( 2, row3.getParentRowIndex (  ), "Expected that tree view MyParentIndexRowHandles row at index 3 has parent rowhandle <" + 2 + ">, but was <" + row3.getParentRowIndex (  ) + ">" );
 
-      AssertEqual ( "C.D", row3.getValuesLabelText (  ) );
+      AssertEqualWithMessage ( "C.D", row3.getValuesLabelText (  ), "Expected that label Values has text <" + "C.D" + ">, but was <" + row3.getValuesLabelText (  ) + ">" );
 
     }
 
@@ -194,49 +194,49 @@ class TreeViews_ViewTest {
   public then_MyParentStringRowHandles_has_4_rows (  ) {
     let actualRows: TreeViews_ViewModelMyParentStringRowHandlesRow [] = this.sut.getMyParentStringRowHandlesTreeRows (  );
 
-    AssertEqual ( 4, actualRows->size (  ) );
+    AssertEqualWithMessage ( 4, actualRows->size (  ), "Expected that tree view MyParentStringRowHandles has 4 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: TreeViews_ViewModelMyParentStringRowHandlesRow = actualRows[ 1 ];
 
-      AssertEqual ( "HANDLE_A", row0.getRowHandle (  ) );
+      AssertEqualWithMessage ( "HANDLE_A", row0.getRowHandle (  ), "Expected that tree view MyParentStringRowHandles row at index 0 has rowhandle <HANDLE_A>, but was <" + row0.getRowHandle (  ) + ">" );
 
-      AssertEqual ( "-", row0.getParentRowHandle (  ) );
+      AssertEqualWithMessage ( "-", row0.getParentRowHandle (  ), "Expected that tree view MyParentStringRowHandles row at index 0 has parent rowhandle <" + "-" + ">, but was <" + row0.getParentRowHandle (  ) + ">" );
 
-      AssertEqual ( "A", row0.getValuesLabelText (  ) );
+      AssertEqualWithMessage ( "A", row0.getValuesLabelText (  ), "Expected that label Values has text <" + "A" + ">, but was <" + row0.getValuesLabelText (  ) + ">" );
 
     }
 
     {
       let row1: TreeViews_ViewModelMyParentStringRowHandlesRow = actualRows[ 2 ];
 
-      AssertEqual ( "HANDLE_B", row1.getRowHandle (  ) );
+      AssertEqualWithMessage ( "HANDLE_B", row1.getRowHandle (  ), "Expected that tree view MyParentStringRowHandles row at index 1 has rowhandle <HANDLE_B>, but was <" + row1.getRowHandle (  ) + ">" );
 
-      AssertEqual ( "HANDLE_A", row1.getParentRowHandle (  ) );
+      AssertEqualWithMessage ( "HANDLE_A", row1.getParentRowHandle (  ), "Expected that tree view MyParentStringRowHandles row at index 1 has parent rowhandle <" + "HANDLE_A" + ">, but was <" + row1.getParentRowHandle (  ) + ">" );
 
-      AssertEqual ( "A.B", row1.getValuesLabelText (  ) );
+      AssertEqualWithMessage ( "A.B", row1.getValuesLabelText (  ), "Expected that label Values has text <" + "A.B" + ">, but was <" + row1.getValuesLabelText (  ) + ">" );
 
     }
 
     {
       let row2: TreeViews_ViewModelMyParentStringRowHandlesRow = actualRows[ 3 ];
 
-      AssertEqual ( "HANDLE_C", row2.getRowHandle (  ) );
+      AssertEqualWithMessage ( "HANDLE_C", row2.getRowHandle (  ), "Expected that tree view MyParentStringRowHandles row at index 2 has rowhandle <HANDLE_C>, but was <" + row2.getRowHandle (  ) + ">" );
 
-      AssertEqual ( "-", row2.getParentRowHandle (  ) );
+      AssertEqualWithMessage ( "-", row2.getParentRowHandle (  ), "Expected that tree view MyParentStringRowHandles row at index 2 has parent rowhandle <" + "-" + ">, but was <" + row2.getParentRowHandle (  ) + ">" );
 
-      AssertEqual ( "C", row2.getValuesLabelText (  ) );
+      AssertEqualWithMessage ( "C", row2.getValuesLabelText (  ), "Expected that label Values has text <" + "C" + ">, but was <" + row2.getValuesLabelText (  ) + ">" );
 
     }
 
     {
       let row3: TreeViews_ViewModelMyParentStringRowHandlesRow = actualRows[ 4 ];
 
-      AssertEqual ( "HANDLE_D", row3.getRowHandle (  ) );
+      AssertEqualWithMessage ( "HANDLE_D", row3.getRowHandle (  ), "Expected that tree view MyParentStringRowHandles row at index 3 has rowhandle <HANDLE_D>, but was <" + row3.getRowHandle (  ) + ">" );
 
-      AssertEqual ( "HANDLE_C", row3.getParentRowHandle (  ) );
+      AssertEqualWithMessage ( "HANDLE_C", row3.getParentRowHandle (  ), "Expected that tree view MyParentStringRowHandles row at index 3 has parent rowhandle <" + "HANDLE_C" + ">, but was <" + row3.getParentRowHandle (  ) + ">" );
 
-      AssertEqual ( "C.D", row3.getValuesLabelText (  ) );
+      AssertEqualWithMessage ( "C.D", row3.getValuesLabelText (  ), "Expected that label Values has text <" + "C.D" + ">, but was <" + row3.getValuesLabelText (  ) + ">" );
 
     }
 
@@ -245,27 +245,27 @@ class TreeViews_ViewTest {
   public then_MyTreeViewElements_has_2_rows (  ) {
     let actualRows: TreeViews_ViewModelMyTreeViewElementsRow [] = this.sut.getMyTreeViewElementsTreeRows (  );
 
-    AssertEqual ( 2, actualRows->size (  ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that tree view MyTreeViewElements has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: TreeViews_ViewModelMyTreeViewElementsRow = actualRows[ 1 ];
 
-      AssertEqual ( 0, row0.getRowIndex (  ) );
+      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
 
-      AssertEqual ( 0, row0.getRowDepth (  ) );
+      AssertEqualWithMessage ( 0, row0.getRowDepth (  ), "Expected that tree view MyTreeViewElements row at index 0 has parent rowhandle <" + 0 + ">, but was <" + row0.getRowDepth (  ) + ">" );
 
-      AssertTrue ( row0.getIsIncludeCheckBoxChecked (  ) );
+      AssertTrue ( row0.getIsIncludeCheckBoxChecked (  ), "Expected that checkbox Include is checked, but was <" + row0.getIsIncludeCheckBoxChecked (  ) + ">" );
 
     }
 
     {
       let row1: TreeViews_ViewModelMyTreeViewElementsRow = actualRows[ 2 ];
 
-      AssertEqual ( 1, row1.getRowIndex (  ) );
+      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that tree view MyTreeViewElements row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
 
-      AssertEqual ( 1, row1.getRowDepth (  ) );
+      AssertEqualWithMessage ( 1, row1.getRowDepth (  ), "Expected that tree view MyTreeViewElements row at index 1 has parent rowhandle <" + 1 + ">, but was <" + row1.getRowDepth (  ) + ">" );
 
-      AssertEqual ( "D", row1.getDescriptionLabelText (  ) );
+      AssertEqualWithMessage ( "D", row1.getDescriptionLabelText (  ), "Expected that label Description has text <" + "D" + ">, but was <" + row1.getDescriptionLabelText (  ) + ">" );
 
     }
 

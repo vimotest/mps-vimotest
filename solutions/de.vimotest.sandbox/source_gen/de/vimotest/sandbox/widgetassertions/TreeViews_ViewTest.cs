@@ -4,7 +4,6 @@
 using widgetassertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using Alf.Library.PrimitiveBehaviors;
 
 [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class TreeViews_ViewTest
@@ -51,7 +50,7 @@ public class TreeViews_ViewTest
     public virtual void then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible()
     {
         var actualRows = this.sut.getMyTreeViewElementsTreeRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that tree view MyTreeViewElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that tree view MyTreeViewElements has 2 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -81,7 +80,7 @@ public class TreeViews_ViewTest
     public virtual void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1()
     {
         var actualRows = this.sut.getMyStringRowHandlesTreeRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that tree view MyStringRowHandles has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that tree view MyStringRowHandles has 2 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -102,7 +101,7 @@ public class TreeViews_ViewTest
     public virtual void then_MyParentIndexRowHandles_has_4_rows()
     {
         var actualRows = this.sut.getMyParentIndexRowHandlesTreeRows();
-        Assert.AreEqual(4, actualRows.Count, "Expected that tree view MyParentIndexRowHandles has 4 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(4, actualRows.Count, "Expected that tree view MyParentIndexRowHandles has 4 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -136,7 +135,7 @@ public class TreeViews_ViewTest
     public virtual void then_MyParentStringRowHandles_has_4_rows()
     {
         var actualRows = this.sut.getMyParentStringRowHandlesTreeRows();
-        Assert.AreEqual(4, actualRows.Count, "Expected that tree view MyParentStringRowHandles has 4 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(4, actualRows.Count, "Expected that tree view MyParentStringRowHandles has 4 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -170,7 +169,7 @@ public class TreeViews_ViewTest
     public virtual void then_MyTreeViewElements_has_2_rows()
     {
         var actualRows = this.sut.getMyTreeViewElementsTreeRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that tree view MyTreeViewElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that tree view MyTreeViewElements has 2 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];

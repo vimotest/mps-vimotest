@@ -4,7 +4,6 @@
 using commands;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using Alf.Library.PrimitiveBehaviors;
 
 [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class RowBasedCommand_ViewTests
@@ -103,7 +102,7 @@ public class RowBasedCommand_ViewTests
     public virtual void then_MyFlags_has_2_rows()
     {
         var actualRows = this.sut.getMyFlagsListRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that list view MyFlags has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that list view MyFlags has 2 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -121,17 +120,17 @@ public class RowBasedCommand_ViewTests
     public virtual void then_MyComboBoxes_has_2_rows()
     {
         var actualRows = this.sut.getMyComboBoxesTableRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that table view MyComboBoxes has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that table view MyComboBoxes has 2 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
             Assert.AreEqual(0, row0.getRowIndex(), "Expected that table view MyComboBoxes row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">");
             var actualRow0FreeTextComboBoxesEntries = row0.getFreeTextComboBoxesComboBoxEntries();
-            Assert.AreEqual(0, actualRow0FreeTextComboBoxesEntries.Count, "Expected that combobox FreeTextComboBoxes has 0 entries, but has " + IntegerFunctions.ToString(actualRow0FreeTextComboBoxesEntries.Count));
+            Assert.AreEqual(0, actualRow0FreeTextComboBoxesEntries.Count, "Expected that combobox FreeTextComboBoxes has 0 entries, but has " + actualRow0FreeTextComboBoxesEntries.Count);
             Assert.AreEqual(null, row0.getFreeTextComboBoxesComboBoxSelectedEntry(), "Expected that combobox FreeTextComboBoxes has " + "no selection" + ", but was <" + row0.getFreeTextComboBoxesComboBoxSelectedEntry() + ">");
             Assert.AreEqual("MyText1", row0.getFreeTextComboBoxesComboBoxText(), "Expected that combobox FreeTextComboBoxes has text <" + "MyText1" + ">, but was <" + row0.getFreeTextComboBoxesComboBoxText() + ">");
             var actualRow0EntryComboBoxesEntries = row0.getEntryComboBoxesComboBoxEntries();
-            Assert.AreEqual(3, actualRow0EntryComboBoxesEntries.Count, "Expected that combobox EntryComboBoxes has 3 entries, but has " + IntegerFunctions.ToString(actualRow0EntryComboBoxesEntries.Count));
+            Assert.AreEqual(3, actualRow0EntryComboBoxesEntries.Count, "Expected that combobox EntryComboBoxes has 3 entries, but has " + actualRow0EntryComboBoxesEntries.Count);
             Assert.AreEqual("A", actualRow0EntryComboBoxesEntries[0], "Expected that combobox EntryComboBoxes has entry at index 0 matching <" + "A" + ">, but was <" + actualRow0EntryComboBoxesEntries[0] + ">");
             Assert.AreEqual("B", actualRow0EntryComboBoxesEntries[1], "Expected that combobox EntryComboBoxes has entry at index 1 matching <" + "B" + ">, but was <" + actualRow0EntryComboBoxesEntries[1] + ">");
             Assert.AreEqual("C", actualRow0EntryComboBoxesEntries[2], "Expected that combobox EntryComboBoxes has entry at index 2 matching <" + "C" + ">, but was <" + actualRow0EntryComboBoxesEntries[2] + ">");
@@ -142,11 +141,11 @@ public class RowBasedCommand_ViewTests
             var row1 = actualRows[1];
             Assert.AreEqual(1, row1.getRowIndex(), "Expected that table view MyComboBoxes row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">");
             var actualRow1FreeTextComboBoxesEntries = row1.getFreeTextComboBoxesComboBoxEntries();
-            Assert.AreEqual(0, actualRow1FreeTextComboBoxesEntries.Count, "Expected that combobox FreeTextComboBoxes has 0 entries, but has " + IntegerFunctions.ToString(actualRow1FreeTextComboBoxesEntries.Count));
+            Assert.AreEqual(0, actualRow1FreeTextComboBoxesEntries.Count, "Expected that combobox FreeTextComboBoxes has 0 entries, but has " + actualRow1FreeTextComboBoxesEntries.Count);
             Assert.AreEqual(null, row1.getFreeTextComboBoxesComboBoxSelectedEntry(), "Expected that combobox FreeTextComboBoxes has " + "no selection" + ", but was <" + row1.getFreeTextComboBoxesComboBoxSelectedEntry() + ">");
             Assert.AreEqual("MyText2", row1.getFreeTextComboBoxesComboBoxText(), "Expected that combobox FreeTextComboBoxes has text <" + "MyText2" + ">, but was <" + row1.getFreeTextComboBoxesComboBoxText() + ">");
             var actualRow1EntryComboBoxesEntries = row1.getEntryComboBoxesComboBoxEntries();
-            Assert.AreEqual(3, actualRow1EntryComboBoxesEntries.Count, "Expected that combobox EntryComboBoxes has 3 entries, but has " + IntegerFunctions.ToString(actualRow1EntryComboBoxesEntries.Count));
+            Assert.AreEqual(3, actualRow1EntryComboBoxesEntries.Count, "Expected that combobox EntryComboBoxes has 3 entries, but has " + actualRow1EntryComboBoxesEntries.Count);
             Assert.AreEqual("D", actualRow1EntryComboBoxesEntries[0], "Expected that combobox EntryComboBoxes has entry at index 0 matching <" + "D" + ">, but was <" + actualRow1EntryComboBoxesEntries[0] + ">");
             Assert.AreEqual("E", actualRow1EntryComboBoxesEntries[1], "Expected that combobox EntryComboBoxes has entry at index 1 matching <" + "E" + ">, but was <" + actualRow1EntryComboBoxesEntries[1] + ">");
             Assert.AreEqual("F", actualRow1EntryComboBoxesEntries[2], "Expected that combobox EntryComboBoxes has entry at index 2 matching <" + "F" + ">, but was <" + actualRow1EntryComboBoxesEntries[2] + ">");
@@ -157,7 +156,7 @@ public class RowBasedCommand_ViewTests
     public virtual void then_MyStandardControls_has_2_rows()
     {
         var actualRows = this.sut.getMyStandardControlsTreeRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that tree view MyStandardControls has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that tree view MyStandardControls has 2 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];

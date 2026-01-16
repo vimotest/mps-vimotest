@@ -89,7 +89,7 @@ class LowLevelFields_ViewTests {
   public then_CustomListRowField_has_1_rows (  ) {
     let actualRows: LowLevelFields_ViewModelCustomListRowFieldRow [] = this.sut.getCustomListRowFieldListRows (  );
 
-    AssertEqualWithMessage ( 1, actualRows->size (  ), "Expected that list view CustomListRowField has 1 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 1, actualRows->size (  ), "Expected that list view CustomListRowField has 1 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: LowLevelFields_ViewModelCustomListRowFieldRow = actualRows[ 1 ];
@@ -109,7 +109,7 @@ class LowLevelFields_ViewTests {
   public then_CustomTableRowField_has_1_rows (  ) {
     let actualRows: LowLevelFields_ViewModelCustomTableRowFieldRow [] = this.sut.getCustomTableRowFieldTableRows (  );
 
-    AssertEqualWithMessage ( 1, actualRows->size (  ), "Expected that table view CustomTableRowField has 1 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 1, actualRows->size (  ), "Expected that table view CustomTableRowField has 1 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: LowLevelFields_ViewModelCustomTableRowFieldRow = actualRows[ 1 ];
@@ -127,7 +127,7 @@ class LowLevelFields_ViewTests {
   public then_CustomTreeRowField_has_1_rows (  ) {
     let actualRows: LowLevelFields_ViewModelCustomTreeRowFieldRow [] = this.sut.getCustomTreeRowFieldTreeRows (  );
 
-    AssertEqualWithMessage ( 1, actualRows->size (  ), "Expected that tree view CustomTreeRowField has 1 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 1, actualRows->size (  ), "Expected that tree view CustomTreeRowField has 1 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: LowLevelFields_ViewModelCustomTreeRowFieldRow = actualRows[ 1 ];

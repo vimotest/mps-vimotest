@@ -59,7 +59,7 @@ class TableViews_ViewTest {
   public then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible (  ) {
     let actualRows: TableViews_ViewModelMyElementsRow [] = this.sut.getMyElementsTableRows (  );
 
-    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view MyElements has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view MyElements has 2 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: TableViews_ViewModelMyElementsRow = actualRows[ 1 ];
@@ -104,7 +104,7 @@ class TableViews_ViewTest {
   public then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  ) {
     let actualRows: TableViews_ViewModelMyStringRowHandlesRow [] = this.sut.getMyStringRowHandlesTableRows (  );
 
-    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view MyStringRowHandles has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view MyStringRowHandles has 2 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: TableViews_ViewModelMyStringRowHandlesRow = actualRows[ 1 ];
@@ -131,7 +131,7 @@ class TableViews_ViewTest {
   public then_MyElements_has_2_rows (  ) {
     let actualRows: TableViews_ViewModelMyElementsRow [] = this.sut.getMyElementsTableRows (  );
 
-    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view MyElements has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view MyElements has 2 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: TableViews_ViewModelMyElementsRow = actualRows[ 1 ];

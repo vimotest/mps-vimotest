@@ -2,8 +2,8 @@
 #include <memory>
 #include "TreeViews_ViewModelTestEnvironment.h"
 #include "TreeViews_ViewModel.h"
-#include <string>
 #include <vector>
+#include <string>
 #include "TreeViews_ViewModelMyTreeViewElementsRow.h"
 #include "TreeViews_ViewModelMyStringRowHandlesRow.h"
 #include "TreeViews_ViewModelMyParentIndexRowHandlesRow.h"
@@ -57,7 +57,7 @@ namespace widgetassertions
   void TreeViews_ViewTest::then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible()
   {
     auto& actualRows = this->sut->getMyTreeViewElementsTreeRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyTreeViewElements has 2 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyTreeViewElements has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
@@ -84,7 +84,7 @@ namespace widgetassertions
   void TreeViews_ViewTest::then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1()
   {
     auto& actualRows = this->sut->getMyStringRowHandlesTreeRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyStringRowHandles has 2 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyStringRowHandles has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(std::string("ROW0"), row0->getRowHandle()) << std::string("Expected that tree view MyStringRowHandles row at index 0 has rowhandle <ROW0>, but was <") + row0->getRowHandle() + std::string(">");
@@ -102,7 +102,7 @@ namespace widgetassertions
   void TreeViews_ViewTest::then_MyParentIndexRowHandles_has_4_rows()
   {
     auto& actualRows = this->sut->getMyParentIndexRowHandlesTreeRows();
-    ASSERT_EQ(4, actualRows.size()) << std::string("Expected that tree view MyParentIndexRowHandles has 4 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(4, actualRows.size()) << std::string("Expected that tree view MyParentIndexRowHandles has 4 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that tree view MyParentIndexRowHandles row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
@@ -131,7 +131,7 @@ namespace widgetassertions
   void TreeViews_ViewTest::then_MyParentStringRowHandles_has_4_rows()
   {
     auto& actualRows = this->sut->getMyParentStringRowHandlesTreeRows();
-    ASSERT_EQ(4, actualRows.size()) << std::string("Expected that tree view MyParentStringRowHandles has 4 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(4, actualRows.size()) << std::string("Expected that tree view MyParentStringRowHandles has 4 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(std::string("HANDLE_A"), row0->getRowHandle()) << std::string("Expected that tree view MyParentStringRowHandles row at index 0 has rowhandle <HANDLE_A>, but was <") + row0->getRowHandle() + std::string(">");
@@ -160,7 +160,7 @@ namespace widgetassertions
   void TreeViews_ViewTest::then_MyTreeViewElements_has_2_rows()
   {
     auto& actualRows = this->sut->getMyTreeViewElementsTreeRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyTreeViewElements has 2 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyTreeViewElements has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");

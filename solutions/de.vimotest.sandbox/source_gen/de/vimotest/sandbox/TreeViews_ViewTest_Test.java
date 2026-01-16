@@ -10,7 +10,6 @@ import de.vimotest.sandbox.widgetassertions.TreeViews_ViewModelTestEnvironmentIm
 import java.util.List;
 import de.vimotest.sandbox.widgetassertions.TreeViews_ViewModelMyTreeViewElementsRow;
 import org.junit.Assert;
-import wrappers.javaWrappers.IntegerFunctions;
 import de.vimotest.sandbox.widgetassertions.TreeViews_ViewModelMyStringRowHandlesRow;
 import de.vimotest.sandbox.widgetassertions.TreeViews_ViewModelMyParentIndexRowHandlesRow;
 import de.vimotest.sandbox.widgetassertions.TreeViews_ViewModelMyParentStringRowHandlesRow;
@@ -55,7 +54,7 @@ public class TreeViews_ViewTest_Test {
 
   public void then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible() {
     List<TreeViews_ViewModelMyTreeViewElementsRow> actualRows = this.sut.getMyTreeViewElementsTreeRows();
-    Assert.assertEquals("Expected that tree view MyTreeViewElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that tree view MyTreeViewElements has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TreeViews_ViewModelMyTreeViewElementsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
@@ -81,7 +80,7 @@ public class TreeViews_ViewTest_Test {
   }
   public void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() {
     List<TreeViews_ViewModelMyStringRowHandlesRow> actualRows = this.sut.getMyStringRowHandlesTreeRows();
-    Assert.assertEquals("Expected that tree view MyStringRowHandles has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that tree view MyStringRowHandles has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TreeViews_ViewModelMyStringRowHandlesRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that tree view MyStringRowHandles row at index 0 has rowhandle <ROW0>, but was <" + row0.getRowHandle() + ">", "ROW0", row0.getRowHandle());
@@ -98,7 +97,7 @@ public class TreeViews_ViewTest_Test {
   }
   public void then_MyParentIndexRowHandles_has_4_rows() {
     List<TreeViews_ViewModelMyParentIndexRowHandlesRow> actualRows = this.sut.getMyParentIndexRowHandlesTreeRows();
-    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles has 4 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(4), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles has 4 rows, but has " + actualRows.size(), Integer.valueOf(4), Integer.valueOf(actualRows.size()));
     // {
     TreeViews_ViewModelMyParentIndexRowHandlesRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that tree view MyParentIndexRowHandles row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
@@ -126,7 +125,7 @@ public class TreeViews_ViewTest_Test {
   }
   public void then_MyParentStringRowHandles_has_4_rows() {
     List<TreeViews_ViewModelMyParentStringRowHandlesRow> actualRows = this.sut.getMyParentStringRowHandlesTreeRows();
-    Assert.assertEquals("Expected that tree view MyParentStringRowHandles has 4 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(4), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that tree view MyParentStringRowHandles has 4 rows, but has " + actualRows.size(), Integer.valueOf(4), Integer.valueOf(actualRows.size()));
     // {
     TreeViews_ViewModelMyParentStringRowHandlesRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that tree view MyParentStringRowHandles row at index 0 has rowhandle <HANDLE_A>, but was <" + row0.getRowHandle() + ">", "HANDLE_A", row0.getRowHandle());
@@ -154,7 +153,7 @@ public class TreeViews_ViewTest_Test {
   }
   public void then_MyTreeViewElements_has_2_rows() {
     List<TreeViews_ViewModelMyTreeViewElementsRow> actualRows = this.sut.getMyTreeViewElementsTreeRows();
-    Assert.assertEquals("Expected that tree view MyTreeViewElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that tree view MyTreeViewElements has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TreeViews_ViewModelMyTreeViewElementsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());

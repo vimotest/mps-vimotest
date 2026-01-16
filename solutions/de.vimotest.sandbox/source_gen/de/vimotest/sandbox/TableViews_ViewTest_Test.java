@@ -10,7 +10,6 @@ import de.vimotest.sandbox.widgetassertions.TableViews_ViewModelTestEnvironmentI
 import java.util.List;
 import de.vimotest.sandbox.widgetassertions.TableViews_ViewModelMyElementsRow;
 import org.junit.Assert;
-import wrappers.javaWrappers.IntegerFunctions;
 import de.vimotest.sandbox.widgetassertions.TableViews_ViewModelMyStringRowHandlesRow;
 
 public class TableViews_ViewTest_Test {
@@ -51,7 +50,7 @@ public class TableViews_ViewTest_Test {
 
   public void then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible() {
     List<TableViews_ViewModelMyElementsRow> actualRows = this.sut.getMyElementsTableRows();
-    Assert.assertEquals("Expected that table view MyElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view MyElements has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TableViews_ViewModelMyElementsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that table view MyElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
@@ -75,7 +74,7 @@ public class TableViews_ViewTest_Test {
   }
   public void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() {
     List<TableViews_ViewModelMyStringRowHandlesRow> actualRows = this.sut.getMyStringRowHandlesTableRows();
-    Assert.assertEquals("Expected that table view MyStringRowHandles has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view MyStringRowHandles has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TableViews_ViewModelMyStringRowHandlesRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that table view MyStringRowHandles row at index 0 has rowhandle <ROW0>, but was <" + row0.getRowHandle() + ">", "ROW0", row0.getRowHandle());
@@ -90,7 +89,7 @@ public class TableViews_ViewTest_Test {
   }
   public void then_MyElements_has_2_rows() {
     List<TableViews_ViewModelMyElementsRow> actualRows = this.sut.getMyElementsTableRows();
-    Assert.assertEquals("Expected that table view MyElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view MyElements has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TableViews_ViewModelMyElementsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that table view MyElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());

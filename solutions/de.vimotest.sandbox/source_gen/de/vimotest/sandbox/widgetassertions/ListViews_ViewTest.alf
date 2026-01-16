@@ -81,7 +81,7 @@ class ListViews_ViewTest {
   public then_MyListOfLabel_has_4_rows_and_selected_row_index_3 (  ) {
     let actualRows: ListViews_ViewModelMyListOfLabelRow [] = this.sut.getMyListOfLabelListRows (  );
 
-    AssertEqualWithMessage ( 4, actualRows->size (  ), "Expected that list view MyListOfLabel has 4 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 4, actualRows->size (  ), "Expected that list view MyListOfLabel has 4 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: ListViews_ViewModelMyListOfLabelRow = actualRows[ 1 ];
@@ -136,7 +136,7 @@ class ListViews_ViewTest {
   public then_MyListOfImages_has_2_rows (  ) {
     let actualRows: ListViews_ViewModelMyListOfImagesRow [] = this.sut.getMyListOfImagesListRows (  );
 
-    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that list view MyListOfImages has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that list view MyListOfImages has 2 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: ListViews_ViewModelMyListOfImagesRow = actualRows[ 1 ];
@@ -161,7 +161,7 @@ class ListViews_ViewTest {
   public then_MyCheckboxes_has_3_rows (  ) {
     let actualRows: ListViews_ViewModelMyCheckboxesRow [] = this.sut.getMyCheckboxesListRows (  );
 
-    AssertEqualWithMessage ( 3, actualRows->size (  ), "Expected that list view MyCheckboxes has 3 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 3, actualRows->size (  ), "Expected that list view MyCheckboxes has 3 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: ListViews_ViewModelMyCheckboxesRow = actualRows[ 1 ];
@@ -197,7 +197,7 @@ class ListViews_ViewTest {
   public then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  ) {
     let actualRows: ListViews_ViewModelMyStringRowHandlesRow [] = this.sut.getMyStringRowHandlesListRows (  );
 
-    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that list view MyStringRowHandles has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that list view MyStringRowHandles has 2 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: ListViews_ViewModelMyStringRowHandlesRow = actualRows[ 1 ];
@@ -224,7 +224,7 @@ class ListViews_ViewTest {
   public then_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_ (  ) {
     let actualRows: ListViews_ViewModelMyListWithMultiRowSelectionRow [] = this.sut.getMyListWithMultiRowSelectionListRows (  );
 
-    AssertEqualWithMessage ( 3, actualRows->size (  ), "Expected that list view MyListWithMultiRowSelection has 3 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 3, actualRows->size (  ), "Expected that list view MyListWithMultiRowSelection has 3 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: ListViews_ViewModelMyListWithMultiRowSelectionRow = actualRows[ 1 ];
@@ -255,7 +255,7 @@ class ListViews_ViewTest {
 
     let actualMyListWithMultiRowSelectionSelectedRowHandles: Integer [] = this.sut.getMyListWithMultiRowSelectionListSelectedRows (  );
 
-    AssertEqualWithMessage ( 2, actualMyListWithMultiRowSelectionSelectedRowHandles->size (  ), "Expected that list view MyListWithMultiRowSelection has selected 2 rows, but has " + IntegerFunctions:: ToString ( actualMyListWithMultiRowSelectionSelectedRowHandles->size (  ) ) );
+    AssertEqualWithMessage ( 2, actualMyListWithMultiRowSelectionSelectedRowHandles->size (  ), "Expected that list view MyListWithMultiRowSelection has selected 2 rows, but has " + actualMyListWithMultiRowSelectionSelectedRowHandles->size (  ) );
 
     AssertEqualWithMessage ( 0, actualMyListWithMultiRowSelectionSelectedRowHandles[ 1 ] ?? 0, "Expected that list view MyListWithMultiRowSelection has selected row at index 0 with row handle <" + 0 + ">, but was <" + actualMyListWithMultiRowSelectionSelectedRowHandles[ 1 ] ?? 0 + ">" );
 
@@ -266,7 +266,7 @@ class ListViews_ViewTest {
   public then_MyListOfLabel_has_4_rows (  ) {
     let actualRows: ListViews_ViewModelMyListOfLabelRow [] = this.sut.getMyListOfLabelListRows (  );
 
-    AssertEqualWithMessage ( 4, actualRows->size (  ), "Expected that list view MyListOfLabel has 4 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 4, actualRows->size (  ), "Expected that list view MyListOfLabel has 4 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: ListViews_ViewModelMyListOfLabelRow = actualRows[ 1 ];
@@ -301,7 +301,7 @@ class ListViews_ViewTest {
   public then_MyListOfLabel_has_4_rows_1 (  ) {
     let actualRows: ListViews_ViewModelMyListOfLabelRow [] = this.sut.getMyListOfLabelListRows (  );
 
-    AssertEqualWithMessage ( 4, actualRows->size (  ), "Expected that list view MyListOfLabel has 4 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 4, actualRows->size (  ), "Expected that list view MyListOfLabel has 4 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: ListViews_ViewModelMyListOfLabelRow = actualRows[ 1 ];
@@ -344,7 +344,7 @@ class ListViews_ViewTest {
   public then_MyButtons_has_0_rows (  ) {
     let actualRows: ListViews_ViewModelMyButtonsRow [] = this.sut.getMyButtonsListRows (  );
 
-    AssertEqualWithMessage ( 0, actualRows->size (  ), "Expected that list view MyButtons has 0 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 0, actualRows->size (  ), "Expected that list view MyButtons has 0 rows, but has " + actualRows->size (  ) );
 
   }
 }

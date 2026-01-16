@@ -4,7 +4,6 @@
 using widgetassertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using Alf.Library.PrimitiveBehaviors;
 
 [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class LowLevelFields_ViewTests
@@ -75,7 +74,7 @@ public class LowLevelFields_ViewTests
     public virtual void then_CustomListRowField_has_1_rows()
     {
         var actualRows = this.sut.getCustomListRowFieldListRows();
-        Assert.AreEqual(1, actualRows.Count, "Expected that list view CustomListRowField has 1 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(1, actualRows.Count, "Expected that list view CustomListRowField has 1 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -89,7 +88,7 @@ public class LowLevelFields_ViewTests
     public virtual void then_CustomTableRowField_has_1_rows()
     {
         var actualRows = this.sut.getCustomTableRowFieldTableRows();
-        Assert.AreEqual(1, actualRows.Count, "Expected that table view CustomTableRowField has 1 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(1, actualRows.Count, "Expected that table view CustomTableRowField has 1 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -102,7 +101,7 @@ public class LowLevelFields_ViewTests
     public virtual void then_CustomTreeRowField_has_1_rows()
     {
         var actualRows = this.sut.getCustomTreeRowFieldTreeRows();
-        Assert.AreEqual(1, actualRows.Count, "Expected that tree view CustomTreeRowField has 1 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(1, actualRows.Count, "Expected that tree view CustomTreeRowField has 1 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];

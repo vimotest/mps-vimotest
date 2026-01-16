@@ -4,7 +4,6 @@
 using commands;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using Alf.Library.PrimitiveBehaviors;
 
 [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class SelectRowCommand_ViewTests
@@ -119,7 +118,7 @@ public class SelectRowCommand_ViewTests
     public virtual void then_MyListViewElements_has_2_rows()
     {
         var actualRows = this.sut.getMyListViewElementsListRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that list view MyListViewElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that list view MyListViewElements has 2 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -137,7 +136,7 @@ public class SelectRowCommand_ViewTests
     public virtual void then_MyStringRowHandleListViewElements_has_2_rows()
     {
         var actualRows = this.sut.getMyStringRowHandleListViewElementsListRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that list view MyStringRowHandleListViewElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that list view MyStringRowHandleListViewElements has 2 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -155,7 +154,7 @@ public class SelectRowCommand_ViewTests
     public virtual void then_MyTableViewElements_has_2_rows()
     {
         var actualRows = this.sut.getMyTableViewElementsTableRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that table view MyTableViewElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that table view MyTableViewElements has 2 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -173,7 +172,7 @@ public class SelectRowCommand_ViewTests
     public virtual void then_MyStringRowHandleTableViewElements_has_2_rows()
     {
         var actualRows = this.sut.getMyStringRowHandleTableViewElementsTableRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that table view MyStringRowHandleTableViewElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that table view MyStringRowHandleTableViewElements has 2 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -191,7 +190,7 @@ public class SelectRowCommand_ViewTests
     public virtual void then_MyTreeViewElements_has_2_rows()
     {
         var actualRows = this.sut.getMyTreeViewElementsTreeRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that tree view MyTreeViewElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that tree view MyTreeViewElements has 2 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -211,7 +210,7 @@ public class SelectRowCommand_ViewTests
     public virtual void then_MyStringRowHandleTreeViewElements_has_2_rows()
     {
         var actualRows = this.sut.getMyStringRowHandleTreeViewElementsTreeRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that tree view MyStringRowHandleTreeViewElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that tree view MyStringRowHandleTreeViewElements has 2 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -231,7 +230,7 @@ public class SelectRowCommand_ViewTests
     public virtual void then_MyStringHandleMultiSelectRowListViewElements_has_3_rows()
     {
         var actualRows = this.sut.getMyStringHandleMultiSelectRowListViewElementsListRows();
-        Assert.AreEqual(3, actualRows.Count, "Expected that list view MyStringHandleMultiSelectRowListViewElements has 3 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(3, actualRows.Count, "Expected that list view MyStringHandleMultiSelectRowListViewElements has 3 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];

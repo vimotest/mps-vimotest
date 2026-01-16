@@ -134,7 +134,7 @@ class SelectRowCommand_ViewTests {
   public then_MyListViewElements_has_2_rows (  ) {
     let actualRows: SelectRowCommand_ViewModelMyListViewElementsRow [] = this.sut.getMyListViewElementsListRows (  );
 
-    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that list view MyListViewElements has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that list view MyListViewElements has 2 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: SelectRowCommand_ViewModelMyListViewElementsRow = actualRows[ 1 ];
@@ -159,7 +159,7 @@ class SelectRowCommand_ViewTests {
   public then_MyStringRowHandleListViewElements_has_2_rows (  ) {
     let actualRows: SelectRowCommand_ViewModelMyStringRowHandleListViewElementsRow [] = this.sut.getMyStringRowHandleListViewElementsListRows (  );
 
-    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that list view MyStringRowHandleListViewElements has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that list view MyStringRowHandleListViewElements has 2 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: SelectRowCommand_ViewModelMyStringRowHandleListViewElementsRow = actualRows[ 1 ];
@@ -184,7 +184,7 @@ class SelectRowCommand_ViewTests {
   public then_MyTableViewElements_has_2_rows (  ) {
     let actualRows: SelectRowCommand_ViewModelMyTableViewElementsRow [] = this.sut.getMyTableViewElementsTableRows (  );
 
-    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view MyTableViewElements has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view MyTableViewElements has 2 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: SelectRowCommand_ViewModelMyTableViewElementsRow = actualRows[ 1 ];
@@ -209,7 +209,7 @@ class SelectRowCommand_ViewTests {
   public then_MyStringRowHandleTableViewElements_has_2_rows (  ) {
     let actualRows: SelectRowCommand_ViewModelMyStringRowHandleTableViewElementsRow [] = this.sut.getMyStringRowHandleTableViewElementsTableRows (  );
 
-    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view MyStringRowHandleTableViewElements has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view MyStringRowHandleTableViewElements has 2 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: SelectRowCommand_ViewModelMyStringRowHandleTableViewElementsRow = actualRows[ 1 ];
@@ -234,7 +234,7 @@ class SelectRowCommand_ViewTests {
   public then_MyTreeViewElements_has_2_rows (  ) {
     let actualRows: SelectRowCommand_ViewModelMyTreeViewElementsRow [] = this.sut.getMyTreeViewElementsTreeRows (  );
 
-    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that tree view MyTreeViewElements has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that tree view MyTreeViewElements has 2 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: SelectRowCommand_ViewModelMyTreeViewElementsRow = actualRows[ 1 ];
@@ -263,7 +263,7 @@ class SelectRowCommand_ViewTests {
   public then_MyStringRowHandleTreeViewElements_has_2_rows (  ) {
     let actualRows: SelectRowCommand_ViewModelMyStringRowHandleTreeViewElementsRow [] = this.sut.getMyStringRowHandleTreeViewElementsTreeRows (  );
 
-    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that tree view MyStringRowHandleTreeViewElements has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that tree view MyStringRowHandleTreeViewElements has 2 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: SelectRowCommand_ViewModelMyStringRowHandleTreeViewElementsRow = actualRows[ 1 ];
@@ -292,7 +292,7 @@ class SelectRowCommand_ViewTests {
   public then_MyStringHandleMultiSelectRowListViewElements_has_3_rows (  ) {
     let actualRows: SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow [] = this.sut.getMyStringHandleMultiSelectRowListViewElementsListRows (  );
 
-    AssertEqualWithMessage ( 3, actualRows->size (  ), "Expected that list view MyStringHandleMultiSelectRowListViewElements has 3 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 3, actualRows->size (  ), "Expected that list view MyStringHandleMultiSelectRowListViewElements has 3 rows, but has " + actualRows->size (  ) );
 
     {
       let row0: SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow = actualRows[ 1 ];

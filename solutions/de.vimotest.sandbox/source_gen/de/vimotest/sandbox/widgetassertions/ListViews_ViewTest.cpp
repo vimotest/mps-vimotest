@@ -2,8 +2,8 @@
 #include <memory>
 #include "ListViews_ViewModelTestEnvironment.h"
 #include "ListViews_ViewModel.h"
-#include <string>
 #include <vector>
+#include <string>
 #include "ListViews_ViewModelMyListOfLabelRow.h"
 #include "ListViews_ViewModelMyListOfImagesRow.h"
 #include "ListViews_ViewModelMyCheckboxesRow.h"
@@ -73,7 +73,7 @@ namespace widgetassertions
   void ListViews_ViewTest::then_MyListOfLabel_has_4_rows_and_selected_row_index_3()
   {
     auto& actualRows = this->sut->getMyListOfLabelListRows();
-    ASSERT_EQ(4, actualRows.size()) << std::string("Expected that list view MyListOfLabel has 4 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(4, actualRows.size()) << std::string("Expected that list view MyListOfLabel has 4 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that list view MyListOfLabel row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
@@ -104,7 +104,7 @@ namespace widgetassertions
   void ListViews_ViewTest::then_MyListOfImages_has_2_rows()
   {
     auto& actualRows = this->sut->getMyListOfImagesListRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that list view MyListOfImages has 2 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that list view MyListOfImages has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that list view MyListOfImages row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
@@ -119,7 +119,7 @@ namespace widgetassertions
   void ListViews_ViewTest::then_MyCheckboxes_has_3_rows()
   {
     auto& actualRows = this->sut->getMyCheckboxesListRows();
-    ASSERT_EQ(3, actualRows.size()) << std::string("Expected that list view MyCheckboxes has 3 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(3, actualRows.size()) << std::string("Expected that list view MyCheckboxes has 3 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that list view MyCheckboxes row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
@@ -140,7 +140,7 @@ namespace widgetassertions
   void ListViews_ViewTest::then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1()
   {
     auto& actualRows = this->sut->getMyStringRowHandlesListRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that list view MyStringRowHandles has 2 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that list view MyStringRowHandles has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(std::string("ROW0"), row0->getRowHandle()) << std::string("Expected that list view MyStringRowHandles row at index 0 has rowhandle <ROW0>, but was <") + row0->getRowHandle() + std::string(">");
@@ -156,7 +156,7 @@ namespace widgetassertions
   void ListViews_ViewTest::then_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_()
   {
     auto& actualRows = this->sut->getMyListWithMultiRowSelectionListRows();
-    ASSERT_EQ(3, actualRows.size()) << std::string("Expected that list view MyListWithMultiRowSelection has 3 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(3, actualRows.size()) << std::string("Expected that list view MyListWithMultiRowSelection has 3 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that list view MyListWithMultiRowSelection row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
@@ -173,14 +173,14 @@ namespace widgetassertions
     ASSERT_EQ(std::string("C"), row2->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("C") + std::string(">, but was <") + row2->getHeaderLabelText() + std::string(">");
     // }
     auto& actualMyListWithMultiRowSelectionSelectedRowHandles = this->sut->getMyListWithMultiRowSelectionListSelectedRows();
-    ASSERT_EQ(2, actualMyListWithMultiRowSelectionSelectedRowHandles.size()) << std::string("Expected that list view MyListWithMultiRowSelection has selected 2 rows, but has ") + std::to_string(actualMyListWithMultiRowSelectionSelectedRowHandles.size());
+    ASSERT_EQ(2, actualMyListWithMultiRowSelectionSelectedRowHandles.size()) << std::string("Expected that list view MyListWithMultiRowSelection has selected 2 rows, but has ") + actualMyListWithMultiRowSelectionSelectedRowHandles.size();
     ASSERT_EQ(0, actualMyListWithMultiRowSelectionSelectedRowHandles.at(0)) << std::string("Expected that list view MyListWithMultiRowSelection has selected row at index 0 with row handle <") + 0 + std::string(">, but was <") + actualMyListWithMultiRowSelectionSelectedRowHandles.at(0) + std::string(">");
     ASSERT_EQ(2, actualMyListWithMultiRowSelectionSelectedRowHandles.at(1)) << std::string("Expected that list view MyListWithMultiRowSelection has selected row at index 1 with row handle <") + 2 + std::string(">, but was <") + actualMyListWithMultiRowSelectionSelectedRowHandles.at(1) + std::string(">");
   }
   void ListViews_ViewTest::then_MyListOfLabel_has_4_rows()
   {
     auto& actualRows = this->sut->getMyListOfLabelListRows();
-    ASSERT_EQ(4, actualRows.size()) << std::string("Expected that list view MyListOfLabel has 4 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(4, actualRows.size()) << std::string("Expected that list view MyListOfLabel has 4 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that list view MyListOfLabel row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
@@ -201,7 +201,7 @@ namespace widgetassertions
   void ListViews_ViewTest::then_MyListOfLabel_has_4_rows_1()
   {
     auto& actualRows = this->sut->getMyListOfLabelListRows();
-    ASSERT_EQ(4, actualRows.size()) << std::string("Expected that list view MyListOfLabel has 4 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(4, actualRows.size()) << std::string("Expected that list view MyListOfLabel has 4 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that list view MyListOfLabel row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
@@ -226,6 +226,6 @@ namespace widgetassertions
   void ListViews_ViewTest::then_MyButtons_has_0_rows()
   {
     auto& actualRows = this->sut->getMyButtonsListRows();
-    ASSERT_EQ(0, actualRows.size()) << std::string("Expected that list view MyButtons has 0 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(0, actualRows.size()) << std::string("Expected that list view MyButtons has 0 rows, but has ") + actualRows.size();
   }
 }

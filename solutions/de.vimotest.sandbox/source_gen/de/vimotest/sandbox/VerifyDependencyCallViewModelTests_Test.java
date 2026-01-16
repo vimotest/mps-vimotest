@@ -59,8 +59,7 @@ public class VerifyDependencyCallViewModelTests_Test {
     LoggerSpy spy = this.testEnvironment.getLogger();
     for (int callInfoIndex = 0; callInfoIndex <= spy.LogCallInfos.size(); callInfoIndex++) {
       LoggerSpy.LogCallInfo callInfo = spy.LogCallInfos.get(callInfoIndex - 1);
-      String helperVar_9dcsbz_b0b0t0 = callInfo.messageValue;
-      Assert.assertEquals("Logger.Log Call[" + callInfoIndex + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">", "my log", helperVar_9dcsbz_b0b0t0);
+      Assert.assertEquals("Logger.Log Call[" + callInfoIndex + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">", "my log", callInfo.messageValue);
     }
     Assert.assertEquals("Expected that Logger.Log was called exactly 1 times, but was " + spy.LogCallInfos.size(), Integer.valueOf(1), Integer.valueOf(spy.LogCallInfos.size()));
   }
@@ -68,8 +67,7 @@ public class VerifyDependencyCallViewModelTests_Test {
     LoggerSpy spy = this.testEnvironment.getLogger();
     if (3 < spy.LogCallInfos.size()) {
       LoggerSpy.LogCallInfo callInfo = spy.LogCallInfos.get(3 - 1);
-      String helperVar_9dcsbz_b0a0b0u0 = callInfo.messageValue;
-      Assert.assertEquals("Logger.Log Call[" + 3 + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">", "my log", helperVar_9dcsbz_b0a0b0u0);
+      Assert.assertEquals("Logger.Log Call[" + 3 + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">", "my log", callInfo.messageValue);
     } else {
       Assert.assertTrue("Expected a call to Logger.Log at index [3], but it was only called " + spy.LogCallInfos.size() + " times", false);
     }
@@ -78,8 +76,7 @@ public class VerifyDependencyCallViewModelTests_Test {
     LoggerSpy spy = this.testEnvironment.getLogger();
     for (int callInfoIndex = 0; callInfoIndex <= spy.LogCallInfos.size(); callInfoIndex++) {
       LoggerSpy.LogCallInfo callInfo = spy.LogCallInfos.get(callInfoIndex - 1);
-      String helperVar_9dcsbz_b0b0v0 = callInfo.messageValue;
-      Assert.assertEquals("Logger.Log Call[" + callInfoIndex + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">", "my log", helperVar_9dcsbz_b0b0v0);
+      Assert.assertEquals("Logger.Log Call[" + callInfoIndex + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">", "my log", callInfo.messageValue);
     }
     Assert.assertTrue("Expected that Logger.Log was called at least 3 times, but was " + spy.LogCallInfos.size(), spy.LogCallInfos.size() >= 3);
     Assert.assertTrue("Expected that Logger.Log was called at most 6 times, but was " + spy.LogCallInfos.size(), spy.LogCallInfos.size() <= 6);

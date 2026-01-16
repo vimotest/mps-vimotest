@@ -4,8 +4,6 @@
 #include "dependencies/LoggerSpy.h"
 #include <vector>
 #include <string>
-#include <alf/library/collectionfunctions/CollectionFunctions.hpp>
-#include <optional>
 #include "VerifyDependencyCallViewModel.h"
 #include "VerifyDependencyCallViewModelTestEnvironmentImpl.h"
 
@@ -63,9 +61,8 @@ namespace dependencies::calls
     auto& spy = this->testEnvironment->getLogger();
     for (int callInfoIndex = 0; callInfoIndex <= spy->LogCallInfos.size(); callInfoIndex++)
     {
-      auto& callInfo = alf::library::primitivebehaviors::CollectionFunctions::at(spy->LogCallInfos, callInfoIndex - 1);
-      std::optional<std::string> helperVar_9dcsbz_b0b0t0 = callInfo.has_value() ? callInfo.value().messageValue : std::optional<std::string>();
-      ASSERT_EQ(std::string("my log"), helperVar_9dcsbz_b0b0t0) << std::string("Logger.Log Call[") + callInfoIndex + std::string("]: Expected argument value 'message' is <") + std::string("my log") + std::string("> but was <") + callInfo.has_value() ? callInfo.value().messageValue : std::optional<std::string>() + std::string(">");
+      auto& callInfo = spy->LogCallInfos.at(callInfoIndex - 1);
+      ASSERT_EQ(std::string("my log"), callInfo.messageValue) << std::string("Logger.Log Call[") + callInfoIndex + std::string("]: Expected argument value 'message' is <") + std::string("my log") + std::string("> but was <") + callInfo.messageValue + std::string(">");
     }
     ASSERT_EQ(1, spy->LogCallInfos.size()) << std::string("Expected that Logger.Log was called exactly 1 times, but was ") + spy->LogCallInfos.size();
   }
@@ -74,9 +71,8 @@ namespace dependencies::calls
     auto& spy = this->testEnvironment->getLogger();
     if (3 < spy->LogCallInfos.size())
     {
-      auto& callInfo = alf::library::primitivebehaviors::CollectionFunctions::at(spy->LogCallInfos, 2);
-      std::optional<std::string> helperVar_9dcsbz_b0a0b0u0 = callInfo.has_value() ? callInfo.value().messageValue : std::optional<std::string>();
-      ASSERT_EQ(std::string("my log"), helperVar_9dcsbz_b0a0b0u0) << std::string("Logger.Log Call[") + 3 + std::string("]: Expected argument value 'message' is <") + std::string("my log") + std::string("> but was <") + callInfo.has_value() ? callInfo.value().messageValue : std::optional<std::string>() + std::string(">");
+      auto& callInfo = spy->LogCallInfos.at(2);
+      ASSERT_EQ(std::string("my log"), callInfo.messageValue) << std::string("Logger.Log Call[") + 3 + std::string("]: Expected argument value 'message' is <") + std::string("my log") + std::string("> but was <") + callInfo.messageValue + std::string(">");
     }
     else
     {
@@ -88,9 +84,8 @@ namespace dependencies::calls
     auto& spy = this->testEnvironment->getLogger();
     for (int callInfoIndex = 0; callInfoIndex <= spy->LogCallInfos.size(); callInfoIndex++)
     {
-      auto& callInfo = alf::library::primitivebehaviors::CollectionFunctions::at(spy->LogCallInfos, callInfoIndex - 1);
-      std::optional<std::string> helperVar_9dcsbz_b0b0v0 = callInfo.has_value() ? callInfo.value().messageValue : std::optional<std::string>();
-      ASSERT_EQ(std::string("my log"), helperVar_9dcsbz_b0b0v0) << std::string("Logger.Log Call[") + callInfoIndex + std::string("]: Expected argument value 'message' is <") + std::string("my log") + std::string("> but was <") + callInfo.has_value() ? callInfo.value().messageValue : std::optional<std::string>() + std::string(">");
+      auto& callInfo = spy->LogCallInfos.at(callInfoIndex - 1);
+      ASSERT_EQ(std::string("my log"), callInfo.messageValue) << std::string("Logger.Log Call[") + callInfoIndex + std::string("]: Expected argument value 'message' is <") + std::string("my log") + std::string("> but was <") + callInfo.messageValue + std::string(">");
     }
     ASSERT_TRUE(spy->LogCallInfos.size() >= 3) << std::string("Expected that Logger.Log was called at least 3 times, but was ") + spy->LogCallInfos.size();
     ASSERT_TRUE(spy->LogCallInfos.size() <= 6) << std::string("Expected that Logger.Log was called at most 6 times, but was ") + spy->LogCallInfos.size();

@@ -120,7 +120,7 @@ namespace commands
   void SelectRowCommand_ViewTests::then_MyListViewElements_has_2_rows()
   {
     auto& actualRows = this->sut->getMyListViewElementsListRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that list view MyListViewElements has 2 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that list view MyListViewElements has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that list view MyListViewElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
@@ -135,7 +135,7 @@ namespace commands
   void SelectRowCommand_ViewTests::then_MyStringRowHandleListViewElements_has_2_rows()
   {
     auto& actualRows = this->sut->getMyStringRowHandleListViewElementsListRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that list view MyStringRowHandleListViewElements has 2 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that list view MyStringRowHandleListViewElements has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(std::string("ROW_A"), row0->getRowHandle()) << std::string("Expected that list view MyStringRowHandleListViewElements row at index 0 has rowhandle <ROW_A>, but was <") + row0->getRowHandle() + std::string(">");
@@ -150,7 +150,7 @@ namespace commands
   void SelectRowCommand_ViewTests::then_MyTableViewElements_has_2_rows()
   {
     auto& actualRows = this->sut->getMyTableViewElementsTableRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that table view MyTableViewElements has 2 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that table view MyTableViewElements has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that table view MyTableViewElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
@@ -165,7 +165,7 @@ namespace commands
   void SelectRowCommand_ViewTests::then_MyStringRowHandleTableViewElements_has_2_rows()
   {
     auto& actualRows = this->sut->getMyStringRowHandleTableViewElementsTableRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that table view MyStringRowHandleTableViewElements has 2 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that table view MyStringRowHandleTableViewElements has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(std::string("ROW_A"), row0->getRowHandle()) << std::string("Expected that table view MyStringRowHandleTableViewElements row at index 0 has rowhandle <ROW_A>, but was <") + row0->getRowHandle() + std::string(">");
@@ -180,7 +180,7 @@ namespace commands
   void SelectRowCommand_ViewTests::then_MyTreeViewElements_has_2_rows()
   {
     auto& actualRows = this->sut->getMyTreeViewElementsTreeRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyTreeViewElements has 2 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyTreeViewElements has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
@@ -197,7 +197,7 @@ namespace commands
   void SelectRowCommand_ViewTests::then_MyStringRowHandleTreeViewElements_has_2_rows()
   {
     auto& actualRows = this->sut->getMyStringRowHandleTreeViewElementsTreeRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyStringRowHandleTreeViewElements has 2 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyStringRowHandleTreeViewElements has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(std::string("ROW_A"), row0->getRowHandle()) << std::string("Expected that tree view MyStringRowHandleTreeViewElements row at index 0 has rowhandle <ROW_A>, but was <") + row0->getRowHandle() + std::string(">");
@@ -214,7 +214,7 @@ namespace commands
   void SelectRowCommand_ViewTests::then_MyStringHandleMultiSelectRowListViewElements_has_3_rows()
   {
     auto& actualRows = this->sut->getMyStringHandleMultiSelectRowListViewElementsListRows();
-    ASSERT_EQ(3, actualRows.size()) << std::string("Expected that list view MyStringHandleMultiSelectRowListViewElements has 3 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(3, actualRows.size()) << std::string("Expected that list view MyStringHandleMultiSelectRowListViewElements has 3 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(std::string("ROW_A"), row0->getRowHandle()) << std::string("Expected that list view MyStringHandleMultiSelectRowListViewElements row at index 0 has rowhandle <ROW_A>, but was <") + row0->getRowHandle() + std::string(">");

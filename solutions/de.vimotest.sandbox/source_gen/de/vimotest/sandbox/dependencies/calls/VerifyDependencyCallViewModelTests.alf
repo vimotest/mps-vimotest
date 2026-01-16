@@ -72,7 +72,7 @@ class VerifyDependencyCallViewModelTests {
     let spy: LoggerSpy = this.testEnvironment.getLogger (  );
 
     for ( callInfoIndex in 0 .. spy.LogCallInfos->size (  ) ) {
-      let callInfo: LogCallInfo = spy.LogCallInfos->at ( callInfoIndex );
+      let callInfo: LogCallInfo = spy.LogCallInfos[ callInfoIndex ];
 
       AssertEqualWithMessage ( "my log", callInfo.messageValue, "Logger.Log Call[" + callInfoIndex + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">" );
 
@@ -101,7 +101,7 @@ class VerifyDependencyCallViewModelTests {
     let spy: LoggerSpy = this.testEnvironment.getLogger (  );
 
     for ( callInfoIndex in 0 .. spy.LogCallInfos->size (  ) ) {
-      let callInfo: LogCallInfo = spy.LogCallInfos->at ( callInfoIndex );
+      let callInfo: LogCallInfo = spy.LogCallInfos[ callInfoIndex ];
 
       AssertEqualWithMessage ( "my log", callInfo.messageValue, "Logger.Log Call[" + callInfoIndex + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">" );
 

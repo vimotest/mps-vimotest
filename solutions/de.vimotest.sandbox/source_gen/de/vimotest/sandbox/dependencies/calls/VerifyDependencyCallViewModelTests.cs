@@ -5,7 +5,6 @@ using dependencies.calls;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using dependencies;
 using System.Collections.Generic;
-using Alf.Library.PrimitiveBehaviors;
 
 [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class VerifyDependencyCallViewModelTests
@@ -65,9 +64,8 @@ public class VerifyDependencyCallViewModelTests
         var spy = this.testEnvironment.getLogger();
         for (int callInfoIndex = 0; callInfoIndex <= spy.LogCallInfos.Count; callInfoIndex++)
         {
-            var callInfo = spy.LogCallInfos.At(callInfoIndex - 1);
-            string helperVar_9dcsbz_b0b0t0 = callInfo.messageValue;
-            Assert.AreEqual("my log", helperVar_9dcsbz_b0b0t0, "Logger.Log Call[" + callInfoIndex + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">");
+            var callInfo = spy.LogCallInfos[callInfoIndex - 1];
+            Assert.AreEqual("my log", callInfo.messageValue, "Logger.Log Call[" + callInfoIndex + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">");
         }
         Assert.AreEqual(1, spy.LogCallInfos.Count, "Expected that Logger.Log was called exactly 1 times, but was " + spy.LogCallInfos.Count);
     }
@@ -77,9 +75,8 @@ public class VerifyDependencyCallViewModelTests
         var spy = this.testEnvironment.getLogger();
         if (3 < spy.LogCallInfos.Count)
         {
-            var callInfo = spy.LogCallInfos.At(2);
-            string helperVar_9dcsbz_b0a0b0u0 = callInfo.messageValue;
-            Assert.AreEqual("my log", helperVar_9dcsbz_b0a0b0u0, "Logger.Log Call[" + 3 + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">");
+            var callInfo = spy.LogCallInfos[2];
+            Assert.AreEqual("my log", callInfo.messageValue, "Logger.Log Call[" + 3 + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">");
         }
         else
         {
@@ -92,9 +89,8 @@ public class VerifyDependencyCallViewModelTests
         var spy = this.testEnvironment.getLogger();
         for (int callInfoIndex = 0; callInfoIndex <= spy.LogCallInfos.Count; callInfoIndex++)
         {
-            var callInfo = spy.LogCallInfos.At(callInfoIndex - 1);
-            string helperVar_9dcsbz_b0b0v0 = callInfo.messageValue;
-            Assert.AreEqual("my log", helperVar_9dcsbz_b0b0v0, "Logger.Log Call[" + callInfoIndex + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">");
+            var callInfo = spy.LogCallInfos[callInfoIndex - 1];
+            Assert.AreEqual("my log", callInfo.messageValue, "Logger.Log Call[" + callInfoIndex + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">");
         }
         Assert.IsTrue(spy.LogCallInfos.Count >= 3, "Expected that Logger.Log was called at least 3 times, but was " + spy.LogCallInfos.Count);
         Assert.IsTrue(spy.LogCallInfos.Count <= 6, "Expected that Logger.Log was called at most 6 times, but was " + spy.LogCallInfos.Count);

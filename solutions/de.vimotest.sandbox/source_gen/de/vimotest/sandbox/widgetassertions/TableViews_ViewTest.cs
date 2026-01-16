@@ -4,7 +4,6 @@
 using widgetassertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using Alf.Library.PrimitiveBehaviors;
 
 [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class TableViews_ViewTest
@@ -49,7 +48,7 @@ public class TableViews_ViewTest
     public virtual void then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible()
     {
         var actualRows = this.sut.getMyElementsTableRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that table view MyElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that table view MyElements has 2 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -77,7 +76,7 @@ public class TableViews_ViewTest
     public virtual void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1()
     {
         var actualRows = this.sut.getMyStringRowHandlesTableRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that table view MyStringRowHandles has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that table view MyStringRowHandles has 2 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -96,7 +95,7 @@ public class TableViews_ViewTest
     public virtual void then_MyElements_has_2_rows()
     {
         var actualRows = this.sut.getMyElementsTableRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that table view MyElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that table view MyElements has 2 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];

@@ -10,7 +10,6 @@ import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewModelTestEnvironm
 import org.junit.Assert;
 import java.util.List;
 import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewModelCustomListRowFieldRow;
-import wrappers.javaWrappers.IntegerFunctions;
 import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewModelCustomTableRowFieldRow;
 import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewModelCustomTreeRowFieldRow;
 
@@ -70,7 +69,7 @@ public class LowLevelFields_ViewTests_Test {
   }
   public void then_CustomListRowField_has_1_rows() {
     List<LowLevelFields_ViewModelCustomListRowFieldRow> actualRows = this.sut.getCustomListRowFieldListRows();
-    Assert.assertEquals("Expected that list view CustomListRowField has 1 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(1), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that list view CustomListRowField has 1 rows, but has " + actualRows.size(), Integer.valueOf(1), Integer.valueOf(actualRows.size()));
     // {
     LowLevelFields_ViewModelCustomListRowFieldRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that list view CustomListRowField row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">", "0", row0.getRowHandle());
@@ -81,7 +80,7 @@ public class LowLevelFields_ViewTests_Test {
   }
   public void then_CustomTableRowField_has_1_rows() {
     List<LowLevelFields_ViewModelCustomTableRowFieldRow> actualRows = this.sut.getCustomTableRowFieldTableRows();
-    Assert.assertEquals("Expected that table view CustomTableRowField has 1 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(1), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view CustomTableRowField has 1 rows, but has " + actualRows.size(), Integer.valueOf(1), Integer.valueOf(actualRows.size()));
     // {
     LowLevelFields_ViewModelCustomTableRowFieldRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that table view CustomTableRowField row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">", "0", row0.getRowHandle());
@@ -91,7 +90,7 @@ public class LowLevelFields_ViewTests_Test {
   }
   public void then_CustomTreeRowField_has_1_rows() {
     List<LowLevelFields_ViewModelCustomTreeRowFieldRow> actualRows = this.sut.getCustomTreeRowFieldTreeRows();
-    Assert.assertEquals("Expected that tree view CustomTreeRowField has 1 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(1), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that tree view CustomTreeRowField has 1 rows, but has " + actualRows.size(), Integer.valueOf(1), Integer.valueOf(actualRows.size()));
     // {
     LowLevelFields_ViewModelCustomTreeRowFieldRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that tree view CustomTreeRowField row at index 0 has rowhandle <9>, but was <" + row0.getRowHandle() + ">", "9", row0.getRowHandle());

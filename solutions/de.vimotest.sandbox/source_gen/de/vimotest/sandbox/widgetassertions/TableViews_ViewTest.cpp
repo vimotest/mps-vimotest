@@ -2,8 +2,8 @@
 #include <memory>
 #include "TableViews_ViewModelTestEnvironment.h"
 #include "TableViews_ViewModel.h"
-#include <string>
 #include <vector>
+#include <string>
 #include "TableViews_ViewModelMyElementsRow.h"
 #include "TableViews_ViewModelMyStringRowHandlesRow.h"
 #include "TableViews_ViewModelTestEnvironmentImpl.h"
@@ -51,7 +51,7 @@ namespace widgetassertions
   void TableViews_ViewTest::then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible()
   {
     auto& actualRows = this->sut->getMyElementsTableRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that table view MyElements has 2 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that table view MyElements has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that table view MyElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
@@ -76,7 +76,7 @@ namespace widgetassertions
   void TableViews_ViewTest::then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1()
   {
     auto& actualRows = this->sut->getMyStringRowHandlesTableRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that table view MyStringRowHandles has 2 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that table view MyStringRowHandles has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(std::string("ROW0"), row0->getRowHandle()) << std::string("Expected that table view MyStringRowHandles row at index 0 has rowhandle <ROW0>, but was <") + row0->getRowHandle() + std::string(">");
@@ -92,7 +92,7 @@ namespace widgetassertions
   void TableViews_ViewTest::then_MyElements_has_2_rows()
   {
     auto& actualRows = this->sut->getMyElementsTableRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that table view MyElements has 2 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that table view MyElements has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that table view MyElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");

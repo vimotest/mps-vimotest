@@ -4,7 +4,6 @@
 using widgetassertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using Alf.Library.PrimitiveBehaviors;
 
 [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class ListViews_ViewTest
@@ -67,7 +66,7 @@ public class ListViews_ViewTest
     public virtual void then_MyListOfLabel_has_4_rows_and_selected_row_index_3()
     {
         var actualRows = this.sut.getMyListOfLabelListRows();
-        Assert.AreEqual(4, actualRows.Count, "Expected that list view MyListOfLabel has 4 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(4, actualRows.Count, "Expected that list view MyListOfLabel has 4 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -103,7 +102,7 @@ public class ListViews_ViewTest
     public virtual void then_MyListOfImages_has_2_rows()
     {
         var actualRows = this.sut.getMyListOfImagesListRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that list view MyListOfImages has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that list view MyListOfImages has 2 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -121,7 +120,7 @@ public class ListViews_ViewTest
     public virtual void then_MyCheckboxes_has_3_rows()
     {
         var actualRows = this.sut.getMyCheckboxesListRows();
-        Assert.AreEqual(3, actualRows.Count, "Expected that list view MyCheckboxes has 3 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(3, actualRows.Count, "Expected that list view MyCheckboxes has 3 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -146,7 +145,7 @@ public class ListViews_ViewTest
     public virtual void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1()
     {
         var actualRows = this.sut.getMyStringRowHandlesListRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that list view MyStringRowHandles has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that list view MyStringRowHandles has 2 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -165,7 +164,7 @@ public class ListViews_ViewTest
     public virtual void then_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_()
     {
         var actualRows = this.sut.getMyListWithMultiRowSelectionListRows();
-        Assert.AreEqual(3, actualRows.Count, "Expected that list view MyListWithMultiRowSelection has 3 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(3, actualRows.Count, "Expected that list view MyListWithMultiRowSelection has 3 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -185,7 +184,7 @@ public class ListViews_ViewTest
             Assert.AreEqual("C", row2.getHeaderLabelText(), "Expected that label Header has text <" + "C" + ">, but was <" + row2.getHeaderLabelText() + ">");
         }
         var actualMyListWithMultiRowSelectionSelectedRowHandles = this.sut.getMyListWithMultiRowSelectionListSelectedRows();
-        Assert.AreEqual(2, actualMyListWithMultiRowSelectionSelectedRowHandles.Count, "Expected that list view MyListWithMultiRowSelection has selected 2 rows, but has " + IntegerFunctions.ToString(actualMyListWithMultiRowSelectionSelectedRowHandles.Count));
+        Assert.AreEqual(2, actualMyListWithMultiRowSelectionSelectedRowHandles.Count, "Expected that list view MyListWithMultiRowSelection has selected 2 rows, but has " + actualMyListWithMultiRowSelectionSelectedRowHandles.Count);
         Assert.AreEqual(0, actualMyListWithMultiRowSelectionSelectedRowHandles[0], "Expected that list view MyListWithMultiRowSelection has selected row at index 0 with row handle <" + 0 + ">, but was <" + actualMyListWithMultiRowSelectionSelectedRowHandles[0] + ">");
         Assert.AreEqual(2, actualMyListWithMultiRowSelectionSelectedRowHandles[1], "Expected that list view MyListWithMultiRowSelection has selected row at index 1 with row handle <" + 2 + ">, but was <" + actualMyListWithMultiRowSelectionSelectedRowHandles[1] + ">");
     }
@@ -193,7 +192,7 @@ public class ListViews_ViewTest
     public virtual void then_MyListOfLabel_has_4_rows()
     {
         var actualRows = this.sut.getMyListOfLabelListRows();
-        Assert.AreEqual(4, actualRows.Count, "Expected that list view MyListOfLabel has 4 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(4, actualRows.Count, "Expected that list view MyListOfLabel has 4 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -219,7 +218,7 @@ public class ListViews_ViewTest
     public virtual void then_MyListOfLabel_has_4_rows_1()
     {
         var actualRows = this.sut.getMyListOfLabelListRows();
-        Assert.AreEqual(4, actualRows.Count, "Expected that list view MyListOfLabel has 4 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(4, actualRows.Count, "Expected that list view MyListOfLabel has 4 rows, but has " + actualRows.Count);
 
         {
             var row0 = actualRows[0];
@@ -249,6 +248,6 @@ public class ListViews_ViewTest
     public virtual void then_MyButtons_has_0_rows()
     {
         var actualRows = this.sut.getMyButtonsListRows();
-        Assert.AreEqual(0, actualRows.Count, "Expected that list view MyButtons has 0 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(0, actualRows.Count, "Expected that list view MyButtons has 0 rows, but has " + actualRows.Count);
     }
 }

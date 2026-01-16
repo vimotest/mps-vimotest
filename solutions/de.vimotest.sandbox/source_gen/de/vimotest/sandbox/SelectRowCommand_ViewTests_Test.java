@@ -11,7 +11,6 @@ import java.util.Arrays;
 import java.util.List;
 import de.vimotest.sandbox.commands.SelectRowCommand_ViewModelMyListViewElementsRow;
 import org.junit.Assert;
-import wrappers.javaWrappers.IntegerFunctions;
 import de.vimotest.sandbox.commands.SelectRowCommand_ViewModelMyStringRowHandleListViewElementsRow;
 import de.vimotest.sandbox.commands.SelectRowCommand_ViewModelMyTableViewElementsRow;
 import de.vimotest.sandbox.commands.SelectRowCommand_ViewModelMyStringRowHandleTableViewElementsRow;
@@ -105,7 +104,7 @@ public class SelectRowCommand_ViewTests_Test {
 
   public void then_MyListViewElements_has_2_rows() {
     List<SelectRowCommand_ViewModelMyListViewElementsRow> actualRows = this.sut.getMyListViewElementsListRows();
-    Assert.assertEquals("Expected that list view MyListViewElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that list view MyListViewElements has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     SelectRowCommand_ViewModelMyListViewElementsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that list view MyListViewElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
@@ -119,7 +118,7 @@ public class SelectRowCommand_ViewTests_Test {
   }
   public void then_MyStringRowHandleListViewElements_has_2_rows() {
     List<SelectRowCommand_ViewModelMyStringRowHandleListViewElementsRow> actualRows = this.sut.getMyStringRowHandleListViewElementsListRows();
-    Assert.assertEquals("Expected that list view MyStringRowHandleListViewElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that list view MyStringRowHandleListViewElements has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     SelectRowCommand_ViewModelMyStringRowHandleListViewElementsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that list view MyStringRowHandleListViewElements row at index 0 has rowhandle <ROW_A>, but was <" + row0.getRowHandle() + ">", "ROW_A", row0.getRowHandle());
@@ -133,7 +132,7 @@ public class SelectRowCommand_ViewTests_Test {
   }
   public void then_MyTableViewElements_has_2_rows() {
     List<SelectRowCommand_ViewModelMyTableViewElementsRow> actualRows = this.sut.getMyTableViewElementsTableRows();
-    Assert.assertEquals("Expected that table view MyTableViewElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view MyTableViewElements has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     SelectRowCommand_ViewModelMyTableViewElementsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that table view MyTableViewElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
@@ -147,7 +146,7 @@ public class SelectRowCommand_ViewTests_Test {
   }
   public void then_MyStringRowHandleTableViewElements_has_2_rows() {
     List<SelectRowCommand_ViewModelMyStringRowHandleTableViewElementsRow> actualRows = this.sut.getMyStringRowHandleTableViewElementsTableRows();
-    Assert.assertEquals("Expected that table view MyStringRowHandleTableViewElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view MyStringRowHandleTableViewElements has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     SelectRowCommand_ViewModelMyStringRowHandleTableViewElementsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that table view MyStringRowHandleTableViewElements row at index 0 has rowhandle <ROW_A>, but was <" + row0.getRowHandle() + ">", "ROW_A", row0.getRowHandle());
@@ -161,7 +160,7 @@ public class SelectRowCommand_ViewTests_Test {
   }
   public void then_MyTreeViewElements_has_2_rows() {
     List<SelectRowCommand_ViewModelMyTreeViewElementsRow> actualRows = this.sut.getMyTreeViewElementsTreeRows();
-    Assert.assertEquals("Expected that tree view MyTreeViewElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that tree view MyTreeViewElements has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     SelectRowCommand_ViewModelMyTreeViewElementsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
@@ -177,7 +176,7 @@ public class SelectRowCommand_ViewTests_Test {
   }
   public void then_MyStringRowHandleTreeViewElements_has_2_rows() {
     List<SelectRowCommand_ViewModelMyStringRowHandleTreeViewElementsRow> actualRows = this.sut.getMyStringRowHandleTreeViewElementsTreeRows();
-    Assert.assertEquals("Expected that tree view MyStringRowHandleTreeViewElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that tree view MyStringRowHandleTreeViewElements has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     SelectRowCommand_ViewModelMyStringRowHandleTreeViewElementsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that tree view MyStringRowHandleTreeViewElements row at index 0 has rowhandle <ROW_A>, but was <" + row0.getRowHandle() + ">", "ROW_A", row0.getRowHandle());
@@ -193,7 +192,7 @@ public class SelectRowCommand_ViewTests_Test {
   }
   public void then_MyStringHandleMultiSelectRowListViewElements_has_3_rows() {
     List<SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow> actualRows = this.sut.getMyStringHandleMultiSelectRowListViewElementsListRows();
-    Assert.assertEquals("Expected that list view MyStringHandleMultiSelectRowListViewElements has 3 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(3), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that list view MyStringHandleMultiSelectRowListViewElements has 3 rows, but has " + actualRows.size(), Integer.valueOf(3), Integer.valueOf(actualRows.size()));
     // {
     SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that list view MyStringHandleMultiSelectRowListViewElements row at index 0 has rowhandle <ROW_A>, but was <" + row0.getRowHandle() + ">", "ROW_A", row0.getRowHandle());

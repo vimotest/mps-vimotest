@@ -76,7 +76,7 @@ namespace widgetassertions
   void LowLevelFields_ViewTests::then_CustomListRowField_has_1_rows()
   {
     auto& actualRows = this->sut->getCustomListRowFieldListRows();
-    ASSERT_EQ(1, actualRows.size()) << std::string("Expected that list view CustomListRowField has 1 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(1, actualRows.size()) << std::string("Expected that list view CustomListRowField has 1 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(std::string("0"), row0->getRowHandle()) << std::string("Expected that list view CustomListRowField row at index 0 has rowhandle <0>, but was <") + row0->getRowHandle() + std::string(">");
@@ -88,7 +88,7 @@ namespace widgetassertions
   void LowLevelFields_ViewTests::then_CustomTableRowField_has_1_rows()
   {
     auto& actualRows = this->sut->getCustomTableRowFieldTableRows();
-    ASSERT_EQ(1, actualRows.size()) << std::string("Expected that table view CustomTableRowField has 1 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(1, actualRows.size()) << std::string("Expected that table view CustomTableRowField has 1 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(std::string("0"), row0->getRowHandle()) << std::string("Expected that table view CustomTableRowField row at index 0 has rowhandle <0>, but was <") + row0->getRowHandle() + std::string(">");
@@ -99,7 +99,7 @@ namespace widgetassertions
   void LowLevelFields_ViewTests::then_CustomTreeRowField_has_1_rows()
   {
     auto& actualRows = this->sut->getCustomTreeRowFieldTreeRows();
-    ASSERT_EQ(1, actualRows.size()) << std::string("Expected that tree view CustomTreeRowField has 1 rows, but has ") + std::to_string(actualRows.size());
+    ASSERT_EQ(1, actualRows.size()) << std::string("Expected that tree view CustomTreeRowField has 1 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(std::string("9"), row0->getRowHandle()) << std::string("Expected that tree view CustomTreeRowField row at index 0 has rowhandle <9>, but was <") + row0->getRowHandle() + std::string(">");

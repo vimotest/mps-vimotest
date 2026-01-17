@@ -9,6 +9,6 @@ namespace dependencies
     {
         void OnMessage(int messageId, System.Collections.Generic.List<string> names);
 
-        void Foo(bool bar);
+        bool Foo(bool bar);
     }
 }

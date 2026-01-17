@@ -6,5 +6,5 @@ abstract class MessageBus {
   
   public abstract OnMessage (   in messageId: Integer ,   in names: String [ * ]  ) ;
   
-  public abstract Foo (   in bar: Boolean  ) ;
+  public abstract Foo (   in bar: Boolean  ) : Boolean  ;
 }

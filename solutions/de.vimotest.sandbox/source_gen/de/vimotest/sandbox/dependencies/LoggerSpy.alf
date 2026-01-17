@@ -23,35 +23,58 @@ class LoggerSpy specializes Logger {
     public messagesValue : String [ * ]  ;
   }
   
+  public datatype LogWithResultCallInfo {
+    
+    public messageValue : String  ;
+  }
+  
   public LogCallInfos : LogCallInfo [ * ]  ;
   
   public LogMultipleCallInfos : LogMultipleCallInfo [ * ]  ;
   
+  public LogWithResultCallInfos : LogWithResultCallInfo [ * ]  ;
+  
   public Log (   in message: String  ) {
-    if ( this.wrapped != null ) {
-      this.wrapped.Log ( message );
-
-    } 
-
     let callInfo: LogCallInfo = new LogCallInfo (  );
 
     callInfo.messageValue = message;
 
     this.LogCallInfos->add ( callInfo );
 
-  }
-  
-  public LogMultiple (   in messages: String [ * ]  ) {
     if ( this.wrapped != null ) {
-      this.wrapped.LogMultiple ( messages );
+      this.wrapped.Log ( message );
 
     } 
 
+  }
+  
+  public LogMultiple (   in messages: String [ * ]  ) {
     let callInfo: LogMultipleCallInfo = new LogMultipleCallInfo (  );
 
     callInfo.messagesValue = messages;
 
     this.LogMultipleCallInfos->add ( callInfo );
+
+    if ( this.wrapped != null ) {
+      this.wrapped.LogMultiple ( messages );
+
+    } 
+
+  }
+  
+  public LogWithResult (   in message: String  ) : Boolean  {
+    let callInfo: LogWithResultCallInfo = new LogWithResultCallInfo (  );
+
+    callInfo.messageValue = message;
+
+    this.LogWithResultCallInfos->add ( callInfo );
+
+    if ( this.wrapped != null ) {
+      return this.wrapped.LogWithResult ( message );
+
+    } 
+
+    return false;
 
   }
 }

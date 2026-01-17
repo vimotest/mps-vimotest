@@ -1,6 +1,6 @@
 #include "LoggerSpy.h"
-#include "Logger.h"
 #include <vector>
+#include "Logger.h"
 #include <memory>
 #include <string>
 
@@ -12,24 +12,34 @@ namespace dependencies
   }
   void LoggerSpy::Log(std::string message)
   {
+    LoggerSpy::LogCallInfo callInfo = { };
+    callInfo.messageValue = message;
+    this->LogCallInfos.push_back(callInfo);
     if (this->wrapped != nullptr)
     {
       this->wrapped->Log(message);
     }
-
-    LoggerSpy::LogCallInfo callInfo = { };
-    callInfo.messageValue = message;
-    this->LogCallInfos.push_back(callInfo);
   }
   void LoggerSpy::LogMultiple(std::vector<std::string> messages)
   {
+    LoggerSpy::LogMultipleCallInfo callInfo = { };
+    callInfo.messagesValue = messages;
+    this->LogMultipleCallInfos.push_back(callInfo);
     if (this->wrapped != nullptr)
     {
       this->wrapped->LogMultiple(messages);
     }
+  }
+  bool LoggerSpy::LogWithResult(std::string message)
+  {
+    LoggerSpy::LogWithResultCallInfo callInfo = { };
+    callInfo.messageValue = message;
+    this->LogWithResultCallInfos.push_back(callInfo);
+    if (this->wrapped != nullptr)
+    {
+      return this->wrapped->LogWithResult(message);
+    }
 
-    LoggerSpy::LogMultipleCallInfo callInfo = { };
-    callInfo.messagesValue = messages;
-    this->LogMultipleCallInfos.push_back(callInfo);
+    return false;
   }
 }

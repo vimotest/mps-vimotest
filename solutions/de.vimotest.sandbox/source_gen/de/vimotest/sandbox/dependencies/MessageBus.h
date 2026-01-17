@@ -10,6 +10,6 @@ namespace dependencies
   public:
     virtual ~MessageBus() = default;
     virtual void OnMessage(int messageId, std::vector<std::string> names) = 0;
-    virtual void Foo(bool bar) = 0;
+    virtual bool Foo(bool bar) = 0;
   };
 }

@@ -39,6 +39,7 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="fulz" ref="r:6f792c44-2a5d-40e8-9f05-33f7d4ae26ec(jetbrains.mps.editor.runtime.completion)" implicit="true" />
     <import index="av1m" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus.style(MPS.Editor/)" implicit="true" />
+    <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -5519,7 +5520,7 @@
     <ref role="1XX52x" to="at53:4m0g11MoodV" resolve="DependencyOperation" />
     <node concept="3EZMnI" id="4m0g11MoUD7" role="2wV5jI">
       <node concept="3F0ifn" id="4m0g11MoUG4" role="3EZMnx">
-        <property role="3F0ifm" value="method" />
+        <property role="3F0ifm" value="operation" />
         <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
       </node>
       <node concept="3F0A7n" id="4m0g11MoUDX" role="3EZMnx">
@@ -5572,7 +5573,42 @@
         <property role="3F0ifm" value=")" />
         <ref role="1k5W1q" to="dgt9:F907haLJXX" resolve="RightBracket" />
       </node>
+      <node concept="3EZMnI" id="5cPWD1214dB" role="3EZMnx">
+        <node concept="3F0ifn" id="5cPWD1215_0" role="3EZMnx">
+          <property role="3F0ifm" value="→" />
+        </node>
+        <node concept="VPM3Z" id="5cPWD1214dD" role="3F10Kt" />
+        <node concept="3F1sOY" id="5cPWD1215zq" role="3EZMnx">
+          <ref role="1NtTu8" to="at53:5cPWD1210DB" resolve="result" />
+        </node>
+        <node concept="2iRfu4" id="5cPWD1214dG" role="2iSdaV" />
+        <node concept="pkWqt" id="5cPWD1214fp" role="pqm2j">
+          <node concept="3clFbS" id="5cPWD1214fq" role="2VODD2">
+            <node concept="3clFbF" id="5cPWD1214gX" role="3cqZAp">
+              <node concept="2OqwBi" id="5cPWD121537" role="3clFbG">
+                <node concept="2OqwBi" id="5cPWD1214yz" role="2Oq$k0">
+                  <node concept="pncrf" id="5cPWD1214gW" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="5cPWD1214JN" role="2OqNvi">
+                    <ref role="3Tt5mk" to="at53:5cPWD1210DB" resolve="result" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="5cPWD1215sO" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="l2Vlx" id="47nlIY1FxjE" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="5cPWD1215_T" role="6VMZX">
+      <node concept="l2Vlx" id="5cPWD1215_U" role="2iSdaV" />
+      <node concept="3F0ifn" id="5cPWD1215Wi" role="3EZMnx">
+        <property role="3F0ifm" value="result:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F1sOY" id="5cPWD1215Wl" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:5cPWD1210DB" resolve="result" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="47nlIY20wOG">
@@ -5913,6 +5949,16 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5cPWD12lDEt">
+    <property role="3GE5qa" value="core" />
+    <ref role="1XX52x" to="at53:5cPWD1210DC" resolve="OperationResult" />
+    <node concept="3EZMnI" id="1KdBIfXOvYZ" role="2wV5jI">
+      <node concept="3F1sOY" id="6LujpsVJLC5" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:1KdBIfXLcw_" resolve="typeName" />
+      </node>
+      <node concept="2iRfu4" id="1KdBIfXOvZ2" role="2iSdaV" />
     </node>
   </node>
 </model>

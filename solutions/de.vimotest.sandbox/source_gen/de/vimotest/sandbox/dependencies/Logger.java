@@ -7,4 +7,5 @@ import java.util.List;
 public interface Logger {
   void Log(String message);
   void LogMultiple(List<String> messages);
+  Boolean LogWithResult(String message);
 }

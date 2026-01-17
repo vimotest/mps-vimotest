@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface MessageBus {
   void OnMessage(Integer messageId, List<String> names);
-  void Foo(Boolean bar);
+  Boolean Foo(Boolean bar);
 }

@@ -348,6 +348,7 @@
         <child id="9006611305760146545" name="visibilityFeature" index="992OM" />
       </concept>
       <concept id="3858551213656582824" name="de.vimotest.viewmodel.structure.ComboBoxEntry" flags="ng" index="2gaR_a" />
+      <concept id="5995965180310456936" name="de.vimotest.viewmodel.structure.OperationResult" flags="ng" index="hcvzS" />
       <concept id="5995965180289235692" name="de.vimotest.viewmodel.structure.ViewCallbackDependency" flags="ng" index="jXsxW" />
       <concept id="5995965180289368276" name="de.vimotest.viewmodel.structure.IDependency" flags="ngI" index="jXV94">
         <child id="5008073225018639679" name="operations" index="RSskJ" />
@@ -398,8 +399,9 @@
       <concept id="3225812364372528779" name="de.vimotest.viewmodel.structure.CustomFileNameBinding" flags="ng" index="QIaRa">
         <property id="3225812364372528782" name="customBaseFileName" index="QIaRf" />
       </concept>
-      <concept id="5008073225018638575" name="de.vimotest.viewmodel.structure.DependencyParameter" flags="ng" index="RSs3Z" />
+      <concept id="5008073225018638575" name="de.vimotest.viewmodel.structure.OperationParameter" flags="ng" index="RSs3Z" />
       <concept id="5008073225018639227" name="de.vimotest.viewmodel.structure.DependencyOperation" flags="ng" index="RSsdF">
+        <child id="5995965180310456935" name="result" index="hcvzR" />
         <child id="5008073225018638751" name="parameters" index="RSs6f" />
       </concept>
       <concept id="2567579368932258681" name="de.vimotest.viewmodel.structure.TextBoxWidget" flags="ng" index="UtuMG">
@@ -5793,6 +5795,10 @@
             <property role="TrG5h" value="bar" />
             <node concept="1nBHEw" id="47nlIY1YTad" role="3xMlr6" />
           </node>
+          <node concept="hcvzS" id="5cPWD12lDDO" role="hcvzR">
+            <property role="TrG5h" value="_operationR2esult" />
+            <node concept="1nBHEw" id="5cPWD12lDDV" role="3xMlr6" />
+          </node>
         </node>
       </node>
       <node concept="33PmoL" id="47nlIY2uGJx" role="RSswE">
@@ -5820,6 +5826,16 @@
           <node concept="1WnWvM" id="EgtOfeBw0x" role="3xMlr6">
             <node concept="1nBS12" id="EgtOfeBw0J" role="1WnWvN" />
           </node>
+        </node>
+      </node>
+      <node concept="RSsdF" id="5cPWD12DeOV" role="RSskJ">
+        <property role="TrG5h" value="LogWithResult" />
+        <node concept="RSs3Z" id="5cPWD12DeOW" role="RSs6f">
+          <property role="TrG5h" value="message" />
+          <node concept="1nBS12" id="5cPWD12DeOX" role="3xMlr6" />
+        </node>
+        <node concept="hcvzS" id="5cPWD12DePl" role="hcvzR">
+          <node concept="1nBHEw" id="5cPWD12DePs" role="3xMlr6" />
         </node>
       </node>
     </node>

@@ -11,5 +11,6 @@ namespace dependencies
     virtual ~Logger() = default;
     virtual void Log(std::string message) = 0;
     virtual void LogMultiple(std::vector<std::string> messages) = 0;
+    virtual bool LogWithResult(std::string message) = 0;
   };
 }

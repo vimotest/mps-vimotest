@@ -1722,8 +1722,9 @@
   </node>
   <node concept="1TIwiD" id="4m0g11Moo3J">
     <property role="EcuMT" value="5008073225018638575" />
-    <property role="3GE5qa" value="dependencies" />
-    <property role="TrG5h" value="DependencyParameter" />
+    <property role="3GE5qa" value="core" />
+    <property role="TrG5h" value="OperationParameter" />
+    <property role="34LRSv" value="parameter" />
     <ref role="1TJDcQ" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
   </node>
   <node concept="1TIwiD" id="4m0g11MoodV">
@@ -1737,7 +1738,13 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="parameters" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="4m0g11Moo3J" resolve="DependencyParameter" />
+      <ref role="20lvS9" node="4m0g11Moo3J" resolve="OperationParameter" />
+    </node>
+    <node concept="1TJgyj" id="5cPWD1210DB" role="1TKVEi">
+      <property role="IQ2ns" value="5995965180310456935" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="result" />
+      <ref role="20lvS9" node="5cPWD1210DC" resolve="OperationResult" />
     </node>
     <node concept="PrWs8" id="54nmQxE1KaF" role="PzmwI">
       <ref role="PrY4T" node="54nmQxE1KaC" resolve="IOperation" />
@@ -1890,12 +1897,12 @@
       <ref role="20lvS9" node="4m0g11MoodV" resolve="DependencyOperation" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5cPWD10K3FH">
-    <property role="EcuMT" value="5995965180289235693" />
-    <property role="3GE5qa" value="dependencies.view" />
-    <property role="TrG5h" value="ShowMessageBoxOperation" />
-    <property role="34LRSv" value="show messagebox" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  <node concept="1TIwiD" id="5cPWD1210DC">
+    <property role="EcuMT" value="5995965180310456936" />
+    <property role="3GE5qa" value="core" />
+    <property role="TrG5h" value="OperationResult" />
+    <property role="34LRSv" value="result" />
+    <ref role="1TJDcQ" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
   </node>
 </model>
 

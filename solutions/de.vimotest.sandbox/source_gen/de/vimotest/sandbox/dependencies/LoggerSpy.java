@@ -29,24 +29,43 @@ public class LoggerSpy implements Logger {
       this.messagesValue = messagesValue;
     }
   }
+  public static class LogWithResultCallInfo {
+    public String messageValue;
+    public LogWithResultCallInfo() {
+    }
+    public LogWithResultCallInfo(String messageValue) {
+      this.messageValue = messageValue;
+    }
+  }
   public List<LogCallInfo> LogCallInfos = new LinkedList<>();
   public List<LogMultipleCallInfo> LogMultipleCallInfos = new LinkedList<>();
+  public List<LogWithResultCallInfo> LogWithResultCallInfos = new LinkedList<>();
   @Override
   public void Log(String message) {
-    if (!(Objects.equals(this.wrapped, null))) {
-      this.wrapped.Log(message);
-    }
     LogCallInfo callInfo = new LogCallInfo();
     callInfo.messageValue = message;
     this.LogCallInfos.add(callInfo);
+    if (!(Objects.equals(this.wrapped, null))) {
+      this.wrapped.Log(message);
+    }
   }
   @Override
   public void LogMultiple(List<String> messages) {
-    if (!(Objects.equals(this.wrapped, null))) {
-      this.wrapped.LogMultiple(messages);
-    }
     LogMultipleCallInfo callInfo = new LogMultipleCallInfo();
     callInfo.messagesValue = messages;
     this.LogMultipleCallInfos.add(callInfo);
+    if (!(Objects.equals(this.wrapped, null))) {
+      this.wrapped.LogMultiple(messages);
+    }
+  }
+  @Override
+  public Boolean LogWithResult(String message) {
+    LogWithResultCallInfo callInfo = new LogWithResultCallInfo();
+    callInfo.messageValue = message;
+    this.LogWithResultCallInfos.add(callInfo);
+    if (!(Objects.equals(this.wrapped, null))) {
+      return this.wrapped.LogWithResult(message);
+    }
+    return false;
   }
 }

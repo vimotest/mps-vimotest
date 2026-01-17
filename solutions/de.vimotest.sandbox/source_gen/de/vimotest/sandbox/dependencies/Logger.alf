@@ -7,4 +7,6 @@ abstract class Logger {
   public abstract Log (   in message: String  ) ;
   
   public abstract LogMultiple (   in messages: String [ * ]  ) ;
+  
+  public abstract LogWithResult (   in message: String  ) : Boolean  ;
 }

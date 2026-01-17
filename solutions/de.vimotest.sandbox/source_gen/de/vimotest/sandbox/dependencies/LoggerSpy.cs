@@ -1,8 +1,8 @@
 /// <filename>
 ///     LoggerSpy.cs
 /// </filename>
-using dependencies;
 using System.Collections.Generic;
+using dependencies;
 
 namespace dependencies
 {
@@ -43,32 +43,59 @@ namespace dependencies
             }
         }
 
+        public struct LogWithResultCallInfo
+        {
+            public string messageValue;
+
+            public LogWithResultCallInfo()
+            {
+            }
+
+            public LogWithResultCallInfo(string messageValue)
+            {
+                this.messageValue = messageValue;
+            }
+        }
+
         public System.Collections.Generic.List<dependencies.LoggerSpy.LogCallInfo> LogCallInfos = new System.Collections.Generic.List<dependencies.LoggerSpy.LogCallInfo>();
 
         public System.Collections.Generic.List<dependencies.LoggerSpy.LogMultipleCallInfo> LogMultipleCallInfos = new System.Collections.Generic.List<dependencies.LoggerSpy.LogMultipleCallInfo>();
 
+        public System.Collections.Generic.List<dependencies.LoggerSpy.LogWithResultCallInfo> LogWithResultCallInfos = new System.Collections.Generic.List<dependencies.LoggerSpy.LogWithResultCallInfo>();
+
         public virtual void Log(string message)
         {
+            dependencies.LoggerSpy.LogCallInfo callInfo = new dependencies.LoggerSpy.LogCallInfo();
+            callInfo.messageValue = message;
+            this.LogCallInfos.Add(callInfo);
             if (this.wrapped != null)
             {
                 this.wrapped.Log(message);
             }
-
-            dependencies.LoggerSpy.LogCallInfo callInfo = new dependencies.LoggerSpy.LogCallInfo();
-            callInfo.messageValue = message;
-            this.LogCallInfos.Add(callInfo);
         }
 
         public virtual void LogMultiple(System.Collections.Generic.List<string> messages)
         {
+            dependencies.LoggerSpy.LogMultipleCallInfo callInfo = new dependencies.LoggerSpy.LogMultipleCallInfo();
+            callInfo.messagesValue = messages;
+            this.LogMultipleCallInfos.Add(callInfo);
             if (this.wrapped != null)
             {
                 this.wrapped.LogMultiple(messages);
             }
+        }
 
-            dependencies.LoggerSpy.LogMultipleCallInfo callInfo = new dependencies.LoggerSpy.LogMultipleCallInfo();
-            callInfo.messagesValue = messages;
-            this.LogMultipleCallInfos.Add(callInfo);
+        public virtual bool LogWithResult(string message)
+        {
+            dependencies.LoggerSpy.LogWithResultCallInfo callInfo = new dependencies.LoggerSpy.LogWithResultCallInfo();
+            callInfo.messageValue = message;
+            this.LogWithResultCallInfos.Add(callInfo);
+            if (this.wrapped != null)
+            {
+                return this.wrapped.LogWithResult(message);
+            }
+
+            return false;
         }
     }
 }

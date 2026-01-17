@@ -1,0 +1,8 @@
+namespace dependencies ;
+
+
+
+abstract class ViewDependencyView {
+  
+  public abstract Foo (  ) ;
+}

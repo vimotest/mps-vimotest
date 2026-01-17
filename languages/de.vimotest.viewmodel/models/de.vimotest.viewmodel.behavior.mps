@@ -11284,7 +11284,7 @@
   </node>
   <node concept="13h7C7" id="47nlIY20z0o">
     <property role="3GE5qa" value="dependencies" />
-    <ref role="13h7C2" to="at53:69SOXVnRitH" resolve="Dependency" />
+    <ref role="13h7C2" to="at53:5cPWD10K$3k" resolve="IDependency" />
     <node concept="13hLZK" id="47nlIY20z0p" role="13h7CW">
       <node concept="3clFbS" id="47nlIY20z0q" role="2VODD2" />
     </node>
@@ -11298,7 +11298,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="47nlIY20z0K" role="3clF45">
-        <ref role="ehGHo" to="at53:69SOXVnRitH" resolve="Dependency" />
+        <ref role="ehGHo" to="at53:5cPWD10K$3k" resolve="IDependency" />
       </node>
     </node>
     <node concept="13i0hz" id="3kGPU1Q2LGh" role="13h7CS">

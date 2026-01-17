@@ -722,7 +722,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="3kGPU1Q24En">
-    <property role="TrG5h" value="check_Dependency" />
+    <property role="TrG5h" value="check_IDependency" />
     <property role="3GE5qa" value="dependencies" />
     <node concept="3clFbS" id="3kGPU1Q24Eo" role="18ibNy">
       <node concept="3cpWs8" id="3kGPU1Q2QX8" role="3cqZAp">
@@ -731,7 +731,7 @@
           <node concept="17QB3L" id="3kGPU1Q2QVQ" role="1tU5fm" />
           <node concept="2OqwBi" id="3kGPU1Q2QXa" role="33vP2m">
             <node concept="1YBJjd" id="3kGPU1Q2QXb" role="2Oq$k0">
-              <ref role="1YBMHb" node="3kGPU1Q24Eq" resolve="node" />
+              <ref role="1YBMHb" node="3kGPU1Q24Eq" resolve="iDependency" />
             </node>
             <node concept="2qgKlT" id="3kGPU1Q2QXc" role="2OqNvi">
               <ref role="37wK5l" to="nrs2:3kGPU1Q2LGh" resolve="getDependencyNamespace" />
@@ -744,20 +744,20 @@
           <property role="TrG5h" value="otherDependencies" />
           <node concept="A3Dl8" id="3kGPU1Q88ev" role="1tU5fm">
             <node concept="3Tqbb2" id="3kGPU1Q88ey" role="A3Ik2">
-              <ref role="ehGHo" to="at53:69SOXVnRitH" resolve="Dependency" />
+              <ref role="ehGHo" to="at53:5cPWD10K$3k" resolve="IDependency" />
             </node>
           </node>
           <node concept="2OqwBi" id="3kGPU1Q88fx" role="33vP2m">
             <node concept="2OqwBi" id="3kGPU1Q88fy" role="2Oq$k0">
               <node concept="2OqwBi" id="3kGPU1Q88fz" role="2Oq$k0">
                 <node concept="1YBJjd" id="3kGPU1Q88f$" role="2Oq$k0">
-                  <ref role="1YBMHb" node="3kGPU1Q24Eq" resolve="node" />
+                  <ref role="1YBMHb" node="3kGPU1Q24Eq" resolve="iDependency" />
                 </node>
                 <node concept="I4A8Y" id="3kGPU1Q88f_" role="2OqNvi" />
               </node>
               <node concept="1j9C0f" id="3kGPU1Q88fA" role="2OqNvi">
                 <node concept="chp4Y" id="3kGPU1Q88fB" role="3MHPCF">
-                  <ref role="cht4Q" to="at53:69SOXVnRitH" resolve="Dependency" />
+                  <ref role="cht4Q" to="at53:5cPWD10K$3k" resolve="IDependency" />
                 </node>
               </node>
             </node>
@@ -765,7 +765,7 @@
               <node concept="2ShNRf" id="3kGPU1Q88fD" role="576Qk">
                 <node concept="2HTt$P" id="3kGPU1Q88fE" role="2ShVmc">
                   <node concept="1YBJjd" id="3kGPU1Q88fF" role="2HTEbv">
-                    <ref role="1YBMHb" node="3kGPU1Q24Eq" resolve="node" />
+                    <ref role="1YBMHb" node="3kGPU1Q24Eq" resolve="iDependency" />
                   </node>
                 </node>
               </node>
@@ -792,7 +792,7 @@
                     </node>
                     <node concept="2OqwBi" id="3kGPU1Q2MOm" role="3uHU7w">
                       <node concept="1YBJjd" id="3kGPU1Q2MOn" role="2Oq$k0">
-                        <ref role="1YBMHb" node="3kGPU1Q24Eq" resolve="node" />
+                        <ref role="1YBMHb" node="3kGPU1Q24Eq" resolve="iDependency" />
                       </node>
                       <node concept="3TrcHB" id="3kGPU1Q2MOo" role="2OqNvi">
                         <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -822,7 +822,7 @@
               <node concept="17R0WA" id="3kGPU1Q2MOq" role="3uHU7w">
                 <node concept="2OqwBi" id="3kGPU1Q2MOr" role="3uHU7w">
                   <node concept="1YBJjd" id="3kGPU1Q2MOs" role="2Oq$k0">
-                    <ref role="1YBMHb" node="3kGPU1Q24Eq" resolve="node" />
+                    <ref role="1YBMHb" node="3kGPU1Q24Eq" resolve="iDependency" />
                   </node>
                   <node concept="3TrcHB" id="3kGPU1Q2MOt" role="2OqNvi">
                     <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -846,8 +846,8 @@
       </node>
     </node>
     <node concept="1YaCAy" id="3kGPU1Q24Eq" role="1YuTPh">
-      <property role="TrG5h" value="node" />
-      <ref role="1YaFvo" to="at53:69SOXVnRitH" resolve="Dependency" />
+      <property role="TrG5h" value="iDependency" />
+      <ref role="1YaFvo" to="at53:5cPWD10K$3k" resolve="IDependency" />
     </node>
   </node>
   <node concept="18kY7G" id="3kGPU1Q2pAJ">

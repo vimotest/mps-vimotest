@@ -1503,9 +1503,9 @@
   </node>
   <node concept="3dkpOd" id="3kGPU1POIoA">
     <property role="3GE5qa" value="dependencies" />
-    <property role="TrG5h" value="MoveDependencyToRegistryIntention" />
+    <property role="TrG5h" value="MoveStandardDependencyToRegistryIntention" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="at53:69SOXVnRitH" resolve="Dependency" />
+    <ref role="2ZfgGC" to="at53:69SOXVnRitH" resolve="StandardDependency" />
     <node concept="38BcoT" id="3kGPU1POIoB" role="3dlsAV">
       <node concept="3Tqbb2" id="3kGPU1POQoY" role="3ddBve">
         <ref role="ehGHo" to="at53:47nlIY20wOD" resolve="DependencyRegistry" />

@@ -1684,35 +1684,10 @@
   </node>
   <node concept="1TIwiD" id="69SOXVnRitH">
     <property role="EcuMT" value="7095654166980011885" />
-    <property role="TrG5h" value="Dependency" />
+    <property role="TrG5h" value="StandardDependency" />
     <property role="34LRSv" value="dependency" />
     <property role="3GE5qa" value="dependencies" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="69SOXVnRizY" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="47nlIY20z0n" role="PzmwI">
-      <ref role="PrY4T" node="47nlIY20x2m" resolve="IDependencySectionContent" />
-    </node>
-    <node concept="PrWs8" id="3kGPU1QcSOR" role="PzmwI">
-      <ref role="PrY4T" node="3kGPU1QcSOP" resolve="IReferenceableDependency" />
-    </node>
-    <node concept="PrWs8" id="32SpZNIS8iJ" role="PzmwI">
-      <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
-    </node>
-    <node concept="PrWs8" id="32SpZNIS8iK" role="PzmwI">
-      <ref role="PrY4T" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
-    </node>
-    <node concept="PrWs8" id="32SpZNIS8iL" role="PzmwI">
-      <ref role="PrY4T" node="3JF9X1LrZr1" resolve="IHasNamespace" />
-    </node>
-    <node concept="1TJgyj" id="4m0g11MookZ" role="1TKVEi">
-      <property role="IQ2ns" value="5008073225018639679" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="operations" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="4m0g11MoodV" resolve="DependencyOperation" />
-    </node>
     <node concept="1irR5M" id="32SpZNKigR7" role="rwd14">
       <property role="2$rrk2" value="4" />
       <node concept="1irR9n" id="32SpZNKigR9" role="2rmM5M">
@@ -1726,6 +1701,9 @@
           <property role="3PKj8l" value="FFFFFF" />
         </node>
       </node>
+    </node>
+    <node concept="PrWs8" id="5cPWD10K$3l" role="PzmwI">
+      <ref role="PrY4T" node="5cPWD10K$3k" resolve="IDependency" />
     </node>
   </node>
   <node concept="1TIwiD" id="69SOXVnRzRz">
@@ -1752,6 +1730,7 @@
     <property role="EcuMT" value="5008073225018639227" />
     <property role="3GE5qa" value="dependencies" />
     <property role="TrG5h" value="DependencyOperation" />
+    <property role="34LRSv" value="dependency operation" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4m0g11Moo6v" role="1TKVEi">
       <property role="IQ2ns" value="5008073225018638751" />
@@ -1776,7 +1755,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="dependencies" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="69SOXVnRitH" resolve="Dependency" />
+      <ref role="20lvS9" node="5cPWD10K$3k" resolve="IDependency" />
     </node>
     <node concept="PrWs8" id="47nlIY2eTGn" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -1870,6 +1849,53 @@
     <property role="EcuMT" value="5843239545600259866" />
     <property role="3GE5qa" value="viewmodel.commands" />
     <property role="TrG5h" value="IViewModelCommandSectionContent" />
+  </node>
+  <node concept="1TIwiD" id="5cPWD10K3FG">
+    <property role="EcuMT" value="5995965180289235692" />
+    <property role="3GE5qa" value="dependencies.view" />
+    <property role="TrG5h" value="ViewCallbackDependency" />
+    <property role="34LRSv" value="view callback" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5cPWD10KMkB" role="PzmwI">
+      <ref role="PrY4T" node="5cPWD10K$3k" resolve="IDependency" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5cPWD10K$3k">
+    <property role="EcuMT" value="5995965180289368276" />
+    <property role="3GE5qa" value="dependencies" />
+    <property role="TrG5h" value="IDependency" />
+    <node concept="PrWs8" id="69SOXVnRizY" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="47nlIY20z0n" role="PrDN$">
+      <ref role="PrY4T" node="47nlIY20x2m" resolve="IDependencySectionContent" />
+    </node>
+    <node concept="PrWs8" id="3kGPU1QcSOR" role="PrDN$">
+      <ref role="PrY4T" node="3kGPU1QcSOP" resolve="IReferenceableDependency" />
+    </node>
+    <node concept="PrWs8" id="32SpZNIS8iJ" role="PrDN$">
+      <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+    </node>
+    <node concept="PrWs8" id="32SpZNIS8iK" role="PrDN$">
+      <ref role="PrY4T" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+    </node>
+    <node concept="PrWs8" id="32SpZNIS8iL" role="PrDN$">
+      <ref role="PrY4T" node="3JF9X1LrZr1" resolve="IHasNamespace" />
+    </node>
+    <node concept="1TJgyj" id="4m0g11MookZ" role="1TKVEi">
+      <property role="IQ2ns" value="5008073225018639679" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="operations" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="4m0g11MoodV" resolve="DependencyOperation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5cPWD10K3FH">
+    <property role="EcuMT" value="5995965180289235693" />
+    <property role="3GE5qa" value="dependencies.view" />
+    <property role="TrG5h" value="ShowMessageBoxOperation" />
+    <property role="34LRSv" value="show messagebox" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

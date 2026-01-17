@@ -1,0 +1,8 @@
+namespace dependencies ;
+
+
+
+
+public class ViewDependencyViewModel {
+
+}

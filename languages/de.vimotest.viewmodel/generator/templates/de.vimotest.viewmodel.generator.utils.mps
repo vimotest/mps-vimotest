@@ -1687,11 +1687,11 @@
       </node>
     </node>
     <node concept="2YIFZL" id="32SpZNIS3lj" role="jymVt">
-      <property role="TrG5h" value="getViewModelDependencyClassName" />
+      <property role="TrG5h" value="getDependencyClassName" />
       <node concept="37vLTG" id="32SpZNIS4wS" role="3clF46">
         <property role="TrG5h" value="dependency" />
         <node concept="3Tqbb2" id="32SpZNIS4SH" role="1tU5fm">
-          <ref role="ehGHo" to="at53:69SOXVnRitH" resolve="Dependency" />
+          <ref role="ehGHo" to="at53:5cPWD10K$3k" resolve="IDependency" />
         </node>
       </node>
       <node concept="3clFbS" id="32SpZNIS3lm" role="3clF47">

@@ -1,0 +1,19 @@
+namespace dependencies ;
+
+
+
+class ViewDependencyViewModelTestEnvironmentImpl specializes ViewDependencyViewModelTestEnvironment {
+  
+  public Init (  ) {    
+  }
+  
+  public BuildSut (  ) : ViewDependencyViewModel  {
+    return null;
+
+  }
+  
+  public getViewDependencyView (  ) : ViewDependencyView  {
+    return null;
+
+  }
+}

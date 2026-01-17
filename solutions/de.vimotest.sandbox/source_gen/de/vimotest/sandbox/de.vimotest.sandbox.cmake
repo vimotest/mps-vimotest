@@ -85,6 +85,7 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/subscope/RepeatUsageDependency_ViewModelTestEnvironmentImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/calls/VerifyDependencyCallViewModelTestEnvironment.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/calls/VerifyDependencyCallViewModelTestEnvironmentImpl.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewDependencyViewModelTestEnvironmentImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/LoggerSpy.cpp
 )
 
@@ -148,9 +149,11 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewModelDependency_ViewModel.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/subscope/RepeatUsageDependency_ViewModel.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/calls/VerifyDependencyCallViewModel.h
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewDependencyViewModel.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/MessageBus.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/Logger.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/subscope/MessageBus.h
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewDependencyView.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewModelTestEnvironment.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewModelTestEnvironmentImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewModelTestEnvironment.h
@@ -209,6 +212,8 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/subscope/RepeatUsageDependency_ViewModelTestEnvironmentImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/calls/VerifyDependencyCallViewModelTestEnvironment.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/calls/VerifyDependencyCallViewModelTestEnvironmentImpl.h
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewDependencyViewModelTestEnvironment.h
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewDependencyViewModelTestEnvironmentImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/LoggerSpy.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewModelMyOptionsOption.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewModelOptionsOption.h

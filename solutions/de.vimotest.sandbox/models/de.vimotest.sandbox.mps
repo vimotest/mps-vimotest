@@ -348,6 +348,10 @@
         <child id="9006611305760146545" name="visibilityFeature" index="992OM" />
       </concept>
       <concept id="3858551213656582824" name="de.vimotest.viewmodel.structure.ComboBoxEntry" flags="ng" index="2gaR_a" />
+      <concept id="5995965180289235692" name="de.vimotest.viewmodel.structure.ViewCallbackDependency" flags="ng" index="jXsxW" />
+      <concept id="5995965180289368276" name="de.vimotest.viewmodel.structure.IDependency" flags="ngI" index="jXV94">
+        <child id="5008073225018639679" name="operations" index="RSskJ" />
+      </concept>
       <concept id="3922717397912187187" name="de.vimotest.viewmodel.structure.ImageWidget" flags="ng" index="2mJbI3">
         <child id="3922717397912187188" name="imageSourceFeature" index="2mJbI4" />
         <child id="3922717397912187189" name="enabledFeature" index="2mJbI5" />
@@ -387,9 +391,7 @@
         <child id="471139930095592890" name="widgetType" index="Ek7rZ" />
         <child id="471139930095530076" name="visibilityFeature" index="Ekmcp" />
       </concept>
-      <concept id="7095654166980011885" name="de.vimotest.viewmodel.structure.Dependency" flags="ng" index="2PDviN">
-        <child id="5008073225018639679" name="operations" index="RSskJ" />
-      </concept>
+      <concept id="7095654166980011885" name="de.vimotest.viewmodel.structure.StandardDependency" flags="ng" index="2PDviN" />
       <concept id="7095654166980083171" name="de.vimotest.viewmodel.structure.DependencySection" flags="ng" index="2PDISX">
         <child id="5008073225018640442" name="contents" index="RSswE" />
       </concept>
@@ -6084,6 +6086,35 @@
                 <property role="_iklR" value="my log" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="103ZX$" id="5cPWD114oD_">
+    <property role="3GE5qa" value="dependencies" />
+    <property role="$YGLj" value="ViewDependency" />
+    <node concept="103ZXx" id="5cPWD114oDA" role="103ZXC" />
+    <node concept="103ZXB" id="5cPWD114oDC" role="103ZXF" />
+    <node concept="2PDISX" id="5cPWD114oDD" role="2PDvFJ">
+      <node concept="jXsxW" id="5cPWD11cezT" role="RSswE">
+        <node concept="RSsdF" id="5cPWD11obpb" role="RSskJ">
+          <property role="TrG5h" value="Foo" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="30n1Qd" id="5cPWD116Qju">
+    <property role="3GE5qa" value="dependencies" />
+    <property role="TrG5h" value="ViewDependencyViewModelTests" />
+    <ref role="30n1PB" node="5cPWD114oD_" resolve="ViewDependencyViewModel" />
+    <node concept="3LKzX3" id="5cPWD116Qjv" role="30n1Qb">
+      <property role="TrG5h" value="View Dependency" />
+      <node concept="1s$VFG" id="5cPWD116Qjy" role="1s$QAY">
+        <node concept="DUd5q" id="5cPWD116QjE" role="1s$QAM">
+          <node concept="p182N" id="5cPWD116QjD" role="DUiS9">
+            <ref role="p15Ve" node="5cPWD11cezT" resolve="ViewDependencyView" />
+            <ref role="p19w1" node="5cPWD11obpb" resolve="Foo" />
           </node>
         </node>
       </node>

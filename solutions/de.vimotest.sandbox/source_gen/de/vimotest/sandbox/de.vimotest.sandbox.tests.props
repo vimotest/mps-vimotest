@@ -87,6 +87,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/calls/VerifyDependencyCallViewModelTestEnvironment.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/calls/VerifyDependencyCallViewModelTestEnvironmentImpl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/calls/VerifyDependencyCallViewModelTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/ViewDependencyViewModelTestEnvironment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/ViewDependencyViewModelTestEnvironmentImpl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/ViewDependencyViewModelTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/StringContext2_ViewTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests.cs" />

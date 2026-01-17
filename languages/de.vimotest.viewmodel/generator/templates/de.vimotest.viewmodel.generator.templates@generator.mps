@@ -448,8 +448,8 @@
       <ref role="2rZz_L" to="28lk:3_puicMjdEb" resolve="EnumerationLiteralName" />
     </node>
     <node concept="2rT7sh" id="54nmQxFEMFx" role="2rTMjI">
-      <property role="TrG5h" value="Dependency_ClassDefinition" />
-      <ref role="2rTdP9" to="at53:69SOXVnRitH" resolve="Dependency" />
+      <property role="TrG5h" value="IDependency_ClassDefinition" />
+      <ref role="2rTdP9" to="at53:5cPWD10K$3k" resolve="IDependency" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
     </node>
     <node concept="2rT7sh" id="54nmQxFENq0" role="2rTMjI">
@@ -590,7 +590,8 @@
       </node>
     </node>
     <node concept="3lhOvk" id="47nlIY2QbNZ" role="3lj3bC">
-      <ref role="30HIoZ" to="at53:69SOXVnRitH" resolve="Dependency" />
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:5cPWD10K$3k" resolve="IDependency" />
       <ref role="3lhOvi" node="47nlIY2Qc27" resolve="root_mapping_Dependency" />
     </node>
     <node concept="3lhOvk" id="3jx7KixuOP" role="3lj3bC">
@@ -4367,23 +4368,22 @@
         <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
         <node concept="3zFVjK" id="3kGPU1PqSfb" role="3zH0cK">
           <node concept="3clFbS" id="3kGPU1PqSfc" role="2VODD2">
-            <node concept="3clFbF" id="3kGPU1PqSfi" role="3cqZAp">
-              <node concept="2OqwBi" id="3kGPU1PqSfd" role="3clFbG">
-                <node concept="3TrcHB" id="3kGPU1PqSfg" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                </node>
-                <node concept="30H73N" id="3kGPU1PqSfh" role="2Oq$k0" />
+            <node concept="3clFbF" id="5cPWD11LE3T" role="3cqZAp">
+              <node concept="2YIFZM" id="5cPWD11LEcK" role="3clFbG">
+                <ref role="37wK5l" to="jrwo:32SpZNIS3lj" resolve="getDependencyClassName" />
+                <ref role="1Pybhc" to="jrwo:2evlxT94KqS" resolve="ViewModelGeneratorNameHelper" />
+                <node concept="30H73N" id="5cPWD11LEek" role="37wK5m" />
               </node>
             </node>
           </node>
         </node>
       </node>
       <node concept="2ZBi8u" id="54nmQxFEOWu" role="lGtFl">
-        <ref role="2rW$FS" node="54nmQxFEMFx" resolve="Dependency_ClassDefinition" />
+        <ref role="2rW$FS" node="54nmQxFEMFx" resolve="IDependency_ClassDefinition" />
       </node>
     </node>
     <node concept="n94m4" id="47nlIY2Qc29" role="lGtFl">
-      <ref role="n9lRv" to="at53:69SOXVnRitH" resolve="Dependency" />
+      <ref role="n9lRv" to="at53:5cPWD10K$3k" resolve="IDependency" />
     </node>
     <node concept="17Uvod" id="32SpZNJ4pYa" role="lGtFl">
       <property role="2qtEX9" value="virtualPackage" />

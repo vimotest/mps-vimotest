@@ -1,0 +1,47 @@
+namespace dependencies ;
+
+private import Testing ;
+
+class ViewDependencyViewModelTests {
+  
+  private sut : ViewDependencyViewModel  ;
+  
+  private testEnvironment : ViewDependencyViewModelTestEnvironment  ;
+  
+  
+  protected BeforeTest (  ) {
+    this.testEnvironment = new ViewDependencyViewModelTestEnvironmentImpl (  );
+
+    this.testEnvironment.Init (  );
+
+  }
+  
+  
+  public View_Dependency_given_when_Foo_then_ (  ) {
+    this.BuildSut (  );
+
+    this.when_Foo (  );
+
+  }
+  
+  
+  protected BuildSut (  ) {
+    this.sut = this.testEnvironment.BuildSut (  );
+
+  }
+  
+  
+  // Given Helper Definitions
+
+  
+  // When Helper Definitions
+
+  
+  public when_Foo (  ) {
+    this.testEnvironment.getViewDependencyView (  ).Foo (  );
+
+  }
+  
+  // Then Helper Definitions
+
+}

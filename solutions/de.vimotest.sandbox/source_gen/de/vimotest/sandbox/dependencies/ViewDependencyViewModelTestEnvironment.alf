@@ -1,0 +1,12 @@
+namespace dependencies ;
+
+
+
+abstract class ViewDependencyViewModelTestEnvironment {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : ViewDependencyViewModel  ;
+  
+  public abstract getViewDependencyView (  ) : ViewDependencyView  ;
+}

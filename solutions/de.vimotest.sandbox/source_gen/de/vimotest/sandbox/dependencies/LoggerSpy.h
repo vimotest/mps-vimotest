@@ -15,8 +15,14 @@ namespace dependencies
     {
       std::string messageValue;
     };
+    struct LogMultipleCallInfo
+    {
+      std::vector<std::string> messagesValue;
+    };
     std::vector<LogCallInfo> LogCallInfos;
+    std::vector<LogMultipleCallInfo> LogMultipleCallInfos;
     void Log(std::string message) override;
+    void LogMultiple(std::vector<std::string> messages) override;
   private:
     std::shared_ptr<Logger> wrapped;
   };

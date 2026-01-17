@@ -21,4 +21,15 @@ namespace dependencies
     callInfo.messageValue = message;
     this->LogCallInfos.push_back(callInfo);
   }
+  void LoggerSpy::LogMultiple(std::vector<std::string> messages)
+  {
+    if (this->wrapped != nullptr)
+    {
+      this->wrapped->LogMultiple(messages);
+    }
+
+    LoggerSpy::LogMultipleCallInfo callInfo = { };
+    callInfo.messagesValue = messages;
+    this->LogMultipleCallInfos.push_back(callInfo);
+  }
 }

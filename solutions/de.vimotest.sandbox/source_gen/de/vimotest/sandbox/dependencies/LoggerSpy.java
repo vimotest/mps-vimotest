@@ -21,7 +21,16 @@ public class LoggerSpy implements Logger {
       this.messageValue = messageValue;
     }
   }
+  public static class LogMultipleCallInfo {
+    public List<String> messagesValue = new LinkedList<>();
+    public LogMultipleCallInfo() {
+    }
+    public LogMultipleCallInfo(List<String> messagesValue) {
+      this.messagesValue = messagesValue;
+    }
+  }
   public List<LogCallInfo> LogCallInfos = new LinkedList<>();
+  public List<LogMultipleCallInfo> LogMultipleCallInfos = new LinkedList<>();
   @Override
   public void Log(String message) {
     if (!(Objects.equals(this.wrapped, null))) {
@@ -30,5 +39,14 @@ public class LoggerSpy implements Logger {
     LogCallInfo callInfo = new LogCallInfo();
     callInfo.messageValue = message;
     this.LogCallInfos.add(callInfo);
+  }
+  @Override
+  public void LogMultiple(List<String> messages) {
+    if (!(Objects.equals(this.wrapped, null))) {
+      this.wrapped.LogMultiple(messages);
+    }
+    LogMultipleCallInfo callInfo = new LogMultipleCallInfo();
+    callInfo.messagesValue = messages;
+    this.LogMultipleCallInfos.add(callInfo);
   }
 }

@@ -1,5 +1,6 @@
 #pragma once
 
+#include <vector>
 #include <string>
 
 namespace dependencies
@@ -9,5 +10,6 @@ namespace dependencies
   public:
     virtual ~Logger() = default;
     virtual void Log(std::string message) = 0;
+    virtual void LogMultiple(std::vector<std::string> messages) = 0;
   };
 }

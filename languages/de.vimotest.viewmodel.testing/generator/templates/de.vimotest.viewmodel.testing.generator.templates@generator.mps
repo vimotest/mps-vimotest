@@ -29,6 +29,7 @@
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" implicit="true" />
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" implicit="true" />
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" implicit="true" />
+    <import index="45v0" ref="r:ba746408-9865-4b76-b4e7-cbd40a893006(de.vimotest.types.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -15646,6 +15647,23 @@
                       <node concept="30H73N" id="2Mw7PWe74I0" role="2Oq$k0" />
                       <node concept="3TrcHB" id="2Mw7PWe78Vf" role="2OqNvi">
                         <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3xMmcA" id="6gWUZpWZHhU" role="3xLlrW">
+            <node concept="32L9hf" id="6gWUZpWZHhV" role="3xM9QG" />
+            <node concept="1W57fq" id="6gWUZpWZHhW" role="lGtFl">
+              <node concept="3IZrLx" id="6gWUZpWZHhX" role="3IZSJc">
+                <node concept="3clFbS" id="6gWUZpWZHhY" role="2VODD2">
+                  <node concept="3clFbF" id="6gWUZpWZHhZ" role="3cqZAp">
+                    <node concept="2OqwBi" id="6gWUZpWZHi0" role="3clFbG">
+                      <node concept="30H73N" id="6gWUZpWZHi1" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="6gWUZpWZHi2" role="2OqNvi">
+                        <ref role="37wK5l" to="45v0:4ncpC4iJ0jQ" resolve="isListField" />
                       </node>
                     </node>
                   </node>

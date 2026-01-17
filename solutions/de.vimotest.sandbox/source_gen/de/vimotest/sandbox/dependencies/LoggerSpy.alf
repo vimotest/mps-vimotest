@@ -18,7 +18,14 @@ class LoggerSpy specializes Logger {
     public messageValue : String  ;
   }
   
+  public datatype LogMultipleCallInfo {
+    
+    public messagesValue : String [ * ]  ;
+  }
+  
   public LogCallInfos : LogCallInfo [ * ]  ;
+  
+  public LogMultipleCallInfos : LogMultipleCallInfo [ * ]  ;
   
   public Log (   in message: String  ) {
     if ( this.wrapped != null ) {
@@ -31,6 +38,20 @@ class LoggerSpy specializes Logger {
     callInfo.messageValue = message;
 
     this.LogCallInfos->add ( callInfo );
+
+  }
+  
+  public LogMultiple (   in messages: String [ * ]  ) {
+    if ( this.wrapped != null ) {
+      this.wrapped.LogMultiple ( messages );
+
+    } 
+
+    let callInfo: LogMultipleCallInfo = new LogMultipleCallInfo (  );
+
+    callInfo.messagesValue = messages;
+
+    this.LogMultipleCallInfos->add ( callInfo );
 
   }
 }

@@ -19,6 +19,11 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
@@ -69,6 +74,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
+        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
+      </concept>
       <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
         <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
         <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
@@ -95,12 +106,14 @@
           <node concept="3clFbS" id="5C8UTa3P_uy" role="3clFbx">
             <node concept="3cpWs8" id="5C8UTa3PNHk" role="3cqZAp">
               <node concept="3cpWsn" id="5C8UTa3PNHl" role="3cpWs9">
-                <property role="TrG5h" value="nestedLists" />
+                <property role="TrG5h" value="nestedCollection" />
                 <node concept="10P_77" id="5C8UTa3PNGV" role="1tU5fm" />
-                <node concept="17R0WA" id="5C8UTa3PNLs" role="33vP2m">
-                  <node concept="2DD5aU" id="5C8UTa3PNHn" role="3uHU7B" />
-                  <node concept="35c_gC" id="5C8UTa3PNHo" role="3uHU7w">
-                    <ref role="35c_gD" to="evry:5jkMFwCyKPa" resolve="ListType" />
+                <node concept="2OqwBi" id="7cQIBSRFmT2" role="33vP2m">
+                  <node concept="2DD5aU" id="5C8UTa3PNHn" role="2Oq$k0" />
+                  <node concept="2Zo12i" id="7cQIBSRFnip" role="2OqNvi">
+                    <node concept="chp4Y" id="7cQIBSRFnmK" role="2Zo12j">
+                      <ref role="cht4Q" to="evry:7cQIBSRFm$O" resolve="ICollectionType" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -108,17 +121,44 @@
             <node concept="3cpWs6" id="5C8UTa3PNcS" role="3cqZAp">
               <node concept="3fqX7Q" id="5C8UTa3PNMI" role="3cqZAk">
                 <node concept="37vLTw" id="5C8UTa3PNMK" role="3fr31v">
-                  <ref role="3cqZAo" node="5C8UTa3PNHl" resolve="nestedLists" />
+                  <ref role="3cqZAo" node="5C8UTa3PNHl" resolve="nestedCollection" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="17R0WA" id="5C8UTa3PMzI" role="3clFbw">
-            <node concept="359W_D" id="5C8UTa3PM$G" role="3uHU7w">
-              <ref role="359W_E" to="evry:5jkMFwCyKPa" resolve="ListType" />
-              <ref role="359W_F" to="evry:5jkMFwCyKPb" resolve="nestedType" />
+          <node concept="22lmx$" id="7cQIBSRJLWd" role="3clFbw">
+            <node concept="22lmx$" id="7cQIBSRJLOk" role="3uHU7B">
+              <node concept="22lmx$" id="7cQIBSRJLKZ" role="3uHU7B">
+                <node concept="17R0WA" id="5C8UTa3PMzI" role="3uHU7B">
+                  <node concept="2DA6wF" id="5C8UTa3PK_c" role="3uHU7B" />
+                  <node concept="359W_D" id="5C8UTa3PM$G" role="3uHU7w">
+                    <ref role="359W_E" to="evry:5jkMFwCyKPa" resolve="ListType" />
+                    <ref role="359W_F" to="evry:5jkMFwCyKPb" resolve="nestedType" />
+                  </node>
+                </node>
+                <node concept="17R0WA" id="7cQIBSRJLMx" role="3uHU7w">
+                  <node concept="2DA6wF" id="7cQIBSRJLMz" role="3uHU7B" />
+                  <node concept="359W_D" id="7cQIBSRJLMy" role="3uHU7w">
+                    <ref role="359W_E" to="evry:7cQIBSRFq9C" resolve="SetType" />
+                    <ref role="359W_F" to="evry:7cQIBSRFq9D" resolve="nestedType" />
+                  </node>
+                </node>
+              </node>
+              <node concept="17R0WA" id="7cQIBSRJLQb" role="3uHU7w">
+                <node concept="2DA6wF" id="7cQIBSRJLQd" role="3uHU7B" />
+                <node concept="359W_D" id="7cQIBSRJLQc" role="3uHU7w">
+                  <ref role="359W_E" to="evry:7cQIBSRFmlb" resolve="MapType" />
+                  <ref role="359W_F" to="evry:7cQIBSRFmlc" resolve="nestedKeyType" />
+                </node>
+              </node>
             </node>
-            <node concept="2DA6wF" id="5C8UTa3PK_c" role="3uHU7B" />
+            <node concept="17R0WA" id="7cQIBSRJLYp" role="3uHU7w">
+              <node concept="359W_D" id="7cQIBSRJLYq" role="3uHU7w">
+                <ref role="359W_E" to="evry:7cQIBSRFmlb" resolve="MapType" />
+                <ref role="359W_F" to="evry:7cQIBSRFmld" resolve="nestedValueType" />
+              </node>
+              <node concept="2DA6wF" id="7cQIBSRJLYr" role="3uHU7B" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="6LujpsVK2rG" role="3cqZAp">

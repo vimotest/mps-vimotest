@@ -4,6 +4,7 @@ package de.vimotest.sandbox.dependencies;
 
 import java.util.List;
 import java.util.LinkedList;
+import java.util.Map;
 import java.util.Objects;
 
 public class LoggerSpy implements Logger {
@@ -31,10 +32,14 @@ public class LoggerSpy implements Logger {
   }
   public static class LogWithResultCallInfo {
     public String messageValue;
+    public MyEnum enumValueValue;
+    public Map<String, String> parametersValue;
     public LogWithResultCallInfo() {
     }
-    public LogWithResultCallInfo(String messageValue) {
+    public LogWithResultCallInfo(String messageValue, MyEnum enumValueValue, Map<String, String> parametersValue) {
       this.messageValue = messageValue;
+      this.enumValueValue = enumValueValue;
+      this.parametersValue = parametersValue;
     }
   }
   public List<LogCallInfo> LogCallInfos = new LinkedList<>();
@@ -59,12 +64,14 @@ public class LoggerSpy implements Logger {
     }
   }
   @Override
-  public Boolean LogWithResult(String message) {
+  public Boolean LogWithResult(String message, MyEnum enumValue, Map<String, String> parameters) {
     LogWithResultCallInfo callInfo = new LogWithResultCallInfo();
     callInfo.messageValue = message;
+    callInfo.enumValueValue = enumValue;
+    callInfo.parametersValue = parameters;
     this.LogWithResultCallInfos.add(callInfo);
     if (!(Objects.equals(this.wrapped, null))) {
-      return this.wrapped.LogWithResult(message);
+      return this.wrapped.LogWithResult(message, enumValue, parameters);
     }
     return false;
   }

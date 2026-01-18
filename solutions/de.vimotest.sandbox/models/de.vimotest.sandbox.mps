@@ -24,8 +24,19 @@
       </concept>
     </language>
     <language id="611ecc9e-0703-4ab9-a13c-fb396c607716" name="de.vimotest.types">
+      <concept id="5995965180333994737" name="de.vimotest.types.structure.CustomEnumType" flags="ng" index="gnG1x">
+        <child id="5995965180333996969" name="symbols" index="gnG$T" />
+      </concept>
+      <concept id="5995965180333994738" name="de.vimotest.types.structure.EnumSymbol" flags="ng" index="gnG1y" />
       <concept id="777152910168881023" name="de.vimotest.types.structure.AbstractStructType" flags="ng" index="103Zsb">
         <child id="777152910168882908" name="contents" index="103ZUC" />
+      </concept>
+      <concept id="8302028014366844235" name="de.vimotest.types.structure.MapType" flags="ng" index="14AXWP">
+        <child id="8302028014366844236" name="nestedKeyType" index="14AXWM" />
+        <child id="8302028014366844237" name="nestedValueType" index="14AXWN" />
+      </concept>
+      <concept id="8302028014365370037" name="de.vimotest.types.structure.CustomEnumTypeUsage" flags="ng" index="14C5Nb">
+        <reference id="8302028014365370038" name="enumType" index="14C5N8" />
       </concept>
       <concept id="7808764115844896567" name="de.vimotest.types.structure.BoolType" flags="ng" index="1nBHEw" />
       <concept id="7808764115844976085" name="de.vimotest.types.structure.StringType" flags="ng" index="1nBS12" />
@@ -5834,6 +5845,19 @@
           <property role="TrG5h" value="message" />
           <node concept="1nBS12" id="5cPWD12DeOX" role="3xMlr6" />
         </node>
+        <node concept="RSs3Z" id="5cPWD13v278" role="RSs6f">
+          <property role="TrG5h" value="enumValue" />
+          <node concept="14C5Nb" id="7cQIBSRFmkK" role="3xMlr6">
+            <ref role="14C5N8" node="5cPWD13v25C" resolve="MyEnum" />
+          </node>
+        </node>
+        <node concept="RSs3Z" id="7cQIBSRRiQ4" role="RSs6f">
+          <property role="TrG5h" value="parameters" />
+          <node concept="14AXWP" id="7cQIBSRRiQb" role="3xMlr6">
+            <node concept="1nBS12" id="7cQIBSRRiQu" role="14AXWM" />
+            <node concept="1nBS12" id="7cQIBSRRiR0" role="14AXWN" />
+          </node>
+        </node>
         <node concept="hcvzS" id="5cPWD12DePl" role="hcvzR">
           <node concept="1nBHEw" id="5cPWD12DePs" role="3xMlr6" />
         </node>
@@ -6134,6 +6158,16 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="gnG1x" id="5cPWD13v25C">
+    <property role="3GE5qa" value="dependencies" />
+    <property role="TrG5h" value="MyEnum" />
+    <node concept="gnG1y" id="5cPWD13v25D" role="gnG$T">
+      <property role="TrG5h" value="A" />
+    </node>
+    <node concept="gnG1y" id="5cPWD13v25E" role="gnG$T">
+      <property role="TrG5h" value="B" />
     </node>
   </node>
 </model>

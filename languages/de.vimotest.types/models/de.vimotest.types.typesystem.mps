@@ -115,6 +115,9 @@
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -304,6 +307,61 @@
     <node concept="1YaCAy" id="17xw4ZmSEKH" role="1YuTPh">
       <property role="TrG5h" value="element" />
       <ref role="1YaFvo" to="evry:F907haLIRL" resolve="IStructContent" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4gxFnBYwlpU">
+    <property role="TrG5h" value="typeof_CustomEnumTypeUsage" />
+    <property role="3GE5qa" value="struct.types.enum" />
+    <node concept="3clFbS" id="4gxFnBYwlpV" role="18ibNy">
+      <node concept="1Z5TYs" id="4gxFnBYwlqv" role="3cqZAp">
+        <node concept="mw_s8" id="4gxFnBYwlqw" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4gxFnBYwlqx" role="mwGJk">
+            <node concept="1YBJjd" id="4gxFnBYwlqy" role="1Z2MuG">
+              <ref role="1YBMHb" node="4gxFnBYwlpX" resolve="node" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4gxFnBYwlsH" role="1ZfhKB">
+          <node concept="1Z2H0r" id="4gxFnBYwlsz" role="mwGJk">
+            <node concept="2OqwBi" id="4gxFnBYwlBl" role="1Z2MuG">
+              <node concept="1YBJjd" id="4gxFnBYwltx" role="2Oq$k0">
+                <ref role="1YBMHb" node="4gxFnBYwlpX" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="4gxFnBYwm8W" role="2OqNvi">
+                <ref role="3Tt5mk" to="evry:7cQIBSR_IqQ" resolve="enumType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4gxFnBYwlpX" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="evry:7cQIBSR_IqP" resolve="CustomEnumTypeUsage" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4gxFnBYwmbH">
+    <property role="TrG5h" value="typeof_CustomEnumType" />
+    <property role="3GE5qa" value="struct.types.enum" />
+    <node concept="3clFbS" id="4gxFnBYwmbI" role="18ibNy">
+      <node concept="1Z5TYs" id="4gxFnBYwmbO" role="3cqZAp">
+        <node concept="mw_s8" id="4gxFnBYwmbP" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4gxFnBYwmbQ" role="mwGJk">
+            <node concept="1YBJjd" id="4gxFnBYwmbR" role="1Z2MuG">
+              <ref role="1YBMHb" node="4gxFnBYwmbK" resolve="node" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4gxFnBYwmfW" role="1ZfhKB">
+          <node concept="1YBJjd" id="4gxFnBYwmfQ" role="mwGJk">
+            <ref role="1YBMHb" node="4gxFnBYwmbK" resolve="node" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4gxFnBYwmbK" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="evry:5cPWD13qNbL" resolve="CustomEnumType" />
     </node>
   </node>
 </model>

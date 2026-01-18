@@ -217,5 +217,6 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/LoggerSpy.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewModelMyOptionsOption.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewModelOptionsOption.h
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/MyEnum.h
 )
 

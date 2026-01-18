@@ -15,7 +15,7 @@
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
-    <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
+    <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
@@ -64,16 +64,21 @@
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ngI" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
         <property id="1238091709220" name="labelName" index="1413C4" />
       </concept>
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="9122903797312246523" name="jetbrains.mps.lang.editor.structure.StyleReference" flags="ng" index="1wgc9g">
         <reference id="9122903797312247166" name="style" index="1wgcnl" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -927,6 +932,157 @@
       <node concept="10P_77" id="6RgQz$N348x" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="5QSnpBWlEt4" role="1B3o_S" />
+  </node>
+  <node concept="24kQdi" id="5cPWD13qNbO">
+    <property role="3GE5qa" value="struct.types.enum" />
+    <ref role="1XX52x" to="evry:5cPWD13qNbM" resolve="EnumSymbol" />
+    <node concept="3EZMnI" id="5cPWD13qNbQ" role="2wV5jI">
+      <node concept="3F0ifn" id="5cPWD13qNbU" role="3EZMnx">
+        <property role="3F0ifm" value="symbol" />
+        <ref role="1k5W1q" node="F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0A7n" id="5cPWD13qNbX" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="2iRfu4" id="5cPWD13qNbT" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5cPWD13qOa$">
+    <property role="3GE5qa" value="struct.types.enum" />
+    <ref role="1XX52x" to="evry:5cPWD13qNbL" resolve="CustomEnumType" />
+    <node concept="3EZMnI" id="5cPWD13qOaA" role="2wV5jI">
+      <node concept="3F0ifn" id="5cPWD13qOaE" role="3EZMnx">
+        <property role="3F0ifm" value="enum type" />
+        <ref role="1k5W1q" node="F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0A7n" id="5cPWD13qOl4" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F2HdR" id="5cPWD13qOl7" role="3EZMnx">
+        <ref role="1NtTu8" to="evry:5cPWD13qNID" resolve="symbols" />
+        <node concept="l2Vlx" id="5cPWD13qOl9" role="2czzBx" />
+        <node concept="pj6Ft" id="5cPWD13qOla" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="5cPWD13qOlb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5cPWD13qOlc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5cPWD13qOaD" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7cQIBSR_IqR">
+    <property role="3GE5qa" value="struct.types.enum" />
+    <ref role="1XX52x" to="evry:7cQIBSR_IqP" resolve="CustomEnumTypeUsage" />
+    <node concept="3EZMnI" id="7cQIBSR_MCx" role="2wV5jI">
+      <node concept="3F0ifn" id="7cQIBSR_MCI" role="3EZMnx">
+        <property role="3F0ifm" value="enum" />
+        <ref role="1k5W1q" node="F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="1iCGBv" id="7cQIBSR_MC_" role="3EZMnx">
+        <ref role="1NtTu8" to="evry:7cQIBSR_IqQ" resolve="enumType" />
+        <node concept="1sVBvm" id="7cQIBSR_MCB" role="1sWHZn">
+          <node concept="3F0A7n" id="7cQIBSR_MCF" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="7cQIBSR_MC$" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7cQIBSRFqZO">
+    <property role="3GE5qa" value="struct.types.builtin" />
+    <ref role="1XX52x" to="evry:7cQIBSRFq9C" resolve="SetType" />
+    <node concept="3EZMnI" id="7cQIBSRFqZQ" role="2wV5jI">
+      <node concept="3F0ifn" id="7cQIBSRFqZR" role="3EZMnx">
+        <property role="3F0ifm" value="set" />
+        <ref role="1k5W1q" node="F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0ifn" id="7cQIBSRFqZS" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+        <node concept="11L4FC" id="7cQIBSRFqZT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="7cQIBSRFqZU" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="7cQIBSRFqZV" role="3F10Kt">
+          <property role="1413C4" value="bracet" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7cQIBSRFqZW" role="3EZMnx">
+        <ref role="1NtTu8" to="evry:7cQIBSRFq9D" resolve="nestedType" />
+      </node>
+      <node concept="3F0ifn" id="7cQIBSRFqZX" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <node concept="11L4FC" id="7cQIBSRFqZY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="7cQIBSRFqZZ" role="3F10Kt">
+          <property role="1413C4" value="bracet" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="7cQIBSRFr00" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7cQIBSRFr01">
+    <property role="3GE5qa" value="struct.types.builtin" />
+    <ref role="1XX52x" to="evry:7cQIBSRFmlb" resolve="MapType" />
+    <node concept="3EZMnI" id="7cQIBSRFr03" role="2wV5jI">
+      <node concept="3F0ifn" id="7cQIBSRFr04" role="3EZMnx">
+        <property role="3F0ifm" value="map" />
+        <ref role="1k5W1q" node="F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0ifn" id="7cQIBSRFr05" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+        <node concept="11L4FC" id="7cQIBSRFr06" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="7cQIBSRFr07" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="7cQIBSRFr08" role="3F10Kt">
+          <property role="1413C4" value="bracet" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7cQIBSRFr09" role="3EZMnx">
+        <ref role="1NtTu8" to="evry:7cQIBSRFmlc" resolve="nestedKeyType" />
+      </node>
+      <node concept="3F0ifn" id="7cQIBSRFr0f" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+        <node concept="11L4FC" id="7cQIBSRFr0j" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7cQIBSRFr0i" role="3EZMnx">
+        <ref role="1NtTu8" to="evry:7cQIBSRFmld" resolve="nestedValueType" />
+      </node>
+      <node concept="3F0ifn" id="7cQIBSRFr0a" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <node concept="11L4FC" id="7cQIBSRFr0b" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="7cQIBSRFr0c" role="3F10Kt">
+          <property role="1413C4" value="bracet" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="7cQIBSRFr0d" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7cQIBSRFrle">
+    <property role="3GE5qa" value="struct.types.enum" />
+    <ref role="1XX52x" to="evry:7cQIBSR_MCK" resolve="DialogResultEnum" />
+    <node concept="3EZMnI" id="7cQIBSRFrlg" role="2wV5jI">
+      <node concept="PMmxH" id="7cQIBSRJLcV" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" node="F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="2iRfu4" id="7cQIBSRFrlj" role="2iSdaV" />
+    </node>
   </node>
 </model>
 

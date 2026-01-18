@@ -399,6 +399,10 @@
         <child id="5944356402132808753" name="case" index="1_3QMm" />
         <child id="5944356402132808752" name="expression" index="1_3QMn" />
       </concept>
+      <concept id="5944356402132808754" name="jetbrains.mps.lang.smodel.structure.SubconceptCase" flags="ng" index="1_3QMl">
+        <child id="1163670677455" name="concept" index="3Kbmr1" />
+        <child id="1163670683720" name="body" index="3Kbo56" />
+      </concept>
       <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
         <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
       </concept>
@@ -17353,11 +17357,11 @@
               </node>
             </node>
           </node>
-          <node concept="1pnPoh" id="4mnk8hBZucS" role="1_3QMm">
-            <node concept="3gn64h" id="4mnk8hBZucT" role="1pnPq6">
-              <ref role="3gnhBz" to="evry:5jkMFwCyKPa" resolve="ListType" />
+          <node concept="1_3QMl" id="4gxFnBYw6pf" role="1_3QMm">
+            <node concept="3gn64h" id="4gxFnBYw6ph" role="3Kbmr1">
+              <ref role="3gnhBz" to="evry:7cQIBSRFm$O" resolve="ICollectionType" />
             </node>
-            <node concept="3clFbS" id="4mnk8hBZucU" role="1pnPq1">
+            <node concept="3clFbS" id="4gxFnBYw6pj" role="3Kbo56">
               <node concept="3clFbF" id="4mnk8hBZucV" role="3cqZAp">
                 <node concept="2OqwBi" id="4mnk8hBZucW" role="3clFbG">
                   <node concept="2OqwBi" id="4mnk8hBZucX" role="2Oq$k0">

@@ -47,13 +47,19 @@ namespace dependencies
         {
             public string messageValue;
 
+            public dependencies.MyEnum enumValueValue;
+
+            public System.Collections.Generic.IDictionary<string, string> parametersValue;
+
             public LogWithResultCallInfo()
             {
             }
 
-            public LogWithResultCallInfo(string messageValue)
+            public LogWithResultCallInfo(string messageValue, dependencies.MyEnum enumValueValue, System.Collections.Generic.IDictionary<string, string> parametersValue)
             {
                 this.messageValue = messageValue;
+                this.enumValueValue = enumValueValue;
+                this.parametersValue = parametersValue;
             }
         }
 
@@ -85,14 +91,16 @@ namespace dependencies
             }
         }
 
-        public virtual bool LogWithResult(string message)
+        public virtual bool LogWithResult(string message, dependencies.MyEnum enumValue, System.Collections.Generic.IDictionary<string, string> parameters)
         {
             dependencies.LoggerSpy.LogWithResultCallInfo callInfo = new dependencies.LoggerSpy.LogWithResultCallInfo();
             callInfo.messageValue = message;
+            callInfo.enumValueValue = enumValue;
+            callInfo.parametersValue = parameters;
             this.LogWithResultCallInfos.Add(callInfo);
             if (this.wrapped != null)
             {
-                return this.wrapped.LogWithResult(message);
+                return this.wrapped.LogWithResult(message, enumValue, parameters);
             }
 
             return false;

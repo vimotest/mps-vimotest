@@ -1,0 +1,8 @@
+namespace dependencies ;
+
+
+
+
+public enum MyEnum {
+  A, B
+}

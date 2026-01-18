@@ -33,6 +33,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
@@ -125,6 +126,9 @@
     <node concept="PrWs8" id="6LujpsVKj3q" role="PzmwI">
       <ref role="PrY4T" to="28lk:1KdBIfXINz6" resolve="TypeName" />
     </node>
+    <node concept="PrWs8" id="7cQIBSRFmlf" role="PzmwI">
+      <ref role="PrY4T" node="7cQIBSRFmle" resolve="IViMoTestType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6LujpsVKo4e">
     <property role="EcuMT" value="7808764115844956430" />
@@ -151,7 +155,10 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="nestedType" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6LujpsVKegj" resolve="BuiltInType" />
+      <ref role="20lvS9" node="7cQIBSRFmle" resolve="IViMoTestType" />
+    </node>
+    <node concept="PrWs8" id="7cQIBSRFm$Q" role="PzmwI">
+      <ref role="PrY4T" node="7cQIBSRFm$O" resolve="ICollectionType" />
     </node>
   </node>
   <node concept="25R3W" id="1EVo$X00Gbs">
@@ -179,6 +186,117 @@
       <property role="IQ2nx" value="7922086861527426429" />
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5cPWD13qN6U">
+    <property role="EcuMT" value="5995965180333994426" />
+    <property role="3GE5qa" value="struct.types.enum" />
+    <property role="TrG5h" value="EnumTypeUsageBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="28lk:2SMO68r_I0M" resolve="SyntaxElement" />
+    <node concept="PrWs8" id="5cPWD13qN6V" role="PzmwI">
+      <ref role="PrY4T" to="28lk:1KdBIfXINz6" resolve="TypeName" />
+    </node>
+    <node concept="PrWs8" id="7cQIBSRFmlg" role="PzmwI">
+      <ref role="PrY4T" node="7cQIBSRFmle" resolve="IViMoTestType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5cPWD13qNbL">
+    <property role="EcuMT" value="5995965180333994737" />
+    <property role="3GE5qa" value="struct.types.enum" />
+    <property role="TrG5h" value="CustomEnumType" />
+    <property role="34LRSv" value="enum type" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5cPWD13qNID" role="1TKVEi">
+      <property role="IQ2ns" value="5995965180333996969" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="symbols" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5cPWD13qNbM" resolve="EnumSymbol" />
+    </node>
+    <node concept="PrWs8" id="7cQIBSR_IqT" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5cPWD13qNbM">
+    <property role="EcuMT" value="5995965180333994738" />
+    <property role="3GE5qa" value="struct.types.enum" />
+    <property role="TrG5h" value="EnumSymbol" />
+    <property role="34LRSv" value="enum symbol" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5cPWD13qNbN" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7cQIBSR_IqP">
+    <property role="EcuMT" value="8302028014365370037" />
+    <property role="3GE5qa" value="struct.types.enum" />
+    <property role="TrG5h" value="CustomEnumTypeUsage" />
+    <property role="34LRSv" value="enum" />
+    <ref role="1TJDcQ" node="5cPWD13qN6U" resolve="EnumTypeUsageBase" />
+    <node concept="1TJgyj" id="7cQIBSR_IqQ" role="1TKVEi">
+      <property role="IQ2ns" value="8302028014365370038" />
+      <property role="20kJfa" value="enumType" />
+      <ref role="20lvS9" node="5cPWD13qNbL" resolve="CustomEnumType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7cQIBSR_MCK">
+    <property role="EcuMT" value="8302028014365387312" />
+    <property role="3GE5qa" value="struct.types.enum" />
+    <property role="TrG5h" value="DialogResultEnum" />
+    <property role="34LRSv" value="dialog result" />
+    <ref role="1TJDcQ" node="5cPWD13qN6U" resolve="EnumTypeUsageBase" />
+  </node>
+  <node concept="1TIwiD" id="7cQIBSRFmlb">
+    <property role="EcuMT" value="8302028014366844235" />
+    <property role="3GE5qa" value="struct.types.builtin" />
+    <property role="TrG5h" value="MapType" />
+    <property role="34LRSv" value="map&lt;&gt;" />
+    <ref role="1TJDcQ" node="6LujpsVKegj" resolve="BuiltInType" />
+    <node concept="1TJgyj" id="7cQIBSRFmlc" role="1TKVEi">
+      <property role="IQ2ns" value="8302028014366844236" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="nestedKeyType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7cQIBSRFmle" resolve="IViMoTestType" />
+    </node>
+    <node concept="1TJgyj" id="7cQIBSRFmld" role="1TKVEi">
+      <property role="IQ2ns" value="8302028014366844237" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="nestedValueType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7cQIBSRFmle" resolve="IViMoTestType" />
+    </node>
+    <node concept="PrWs8" id="7cQIBSRFm$P" role="PzmwI">
+      <ref role="PrY4T" node="7cQIBSRFm$O" resolve="ICollectionType" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7cQIBSRFmle">
+    <property role="EcuMT" value="8302028014366844238" />
+    <property role="3GE5qa" value="struct.types" />
+    <property role="TrG5h" value="IViMoTestType" />
+  </node>
+  <node concept="PlHQZ" id="7cQIBSRFm$O">
+    <property role="EcuMT" value="8302028014366845236" />
+    <property role="3GE5qa" value="struct.types" />
+    <property role="TrG5h" value="ICollectionType" />
+  </node>
+  <node concept="1TIwiD" id="7cQIBSRFq9C">
+    <property role="EcuMT" value="8302028014366859880" />
+    <property role="3GE5qa" value="struct.types.builtin" />
+    <property role="TrG5h" value="SetType" />
+    <property role="34LRSv" value="set&lt;&gt;" />
+    <ref role="1TJDcQ" node="6LujpsVKegj" resolve="BuiltInType" />
+    <node concept="1TJgyj" id="7cQIBSRFq9D" role="1TKVEi">
+      <property role="IQ2ns" value="8302028014366859881" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="nestedType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7cQIBSRFmle" resolve="IViMoTestType" />
+    </node>
+    <node concept="PrWs8" id="7cQIBSRFq9F" role="PzmwI">
+      <ref role="PrY4T" node="7cQIBSRFm$O" resolve="ICollectionType" />
     </node>
   </node>
 </model>

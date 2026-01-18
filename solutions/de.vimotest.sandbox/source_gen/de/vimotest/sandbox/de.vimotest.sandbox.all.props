@@ -160,5 +160,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/LoggerSpy.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)commands/SelectEntryCommand_ViewModelMyOptionsOption.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/RadioButton_ViewModelOptionsOption.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/MyEnum.cs" />
   </ItemGroup>
 </Project>

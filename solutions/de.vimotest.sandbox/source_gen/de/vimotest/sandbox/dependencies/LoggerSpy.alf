@@ -26,6 +26,10 @@ class LoggerSpy specializes Logger {
   public datatype LogWithResultCallInfo {
     
     public messageValue : String  ;
+    
+    public enumValueValue : MyEnum  ;
+    
+    public parametersValue : Map <String, String>  ;
   }
   
   public LogCallInfos : LogCallInfo [ * ]  ;
@@ -62,15 +66,19 @@ class LoggerSpy specializes Logger {
 
   }
   
-  public LogWithResult (   in message: String  ) : Boolean  {
+  public LogWithResult (   in message: String ,   in enumValue: MyEnum ,   in parameters: Map <String, String>  ) : Boolean  {
     let callInfo: LogWithResultCallInfo = new LogWithResultCallInfo (  );
 
     callInfo.messageValue = message;
 
+    callInfo.enumValueValue = enumValue;
+
+    callInfo.parametersValue = parameters;
+
     this.LogWithResultCallInfos->add ( callInfo );
 
     if ( this.wrapped != null ) {
-      return this.wrapped.LogWithResult ( message );
+      return this.wrapped.LogWithResult ( message, enumValue, parameters );
 
     } 
 

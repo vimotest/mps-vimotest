@@ -2,6 +2,8 @@
 #include <vector>
 #include "Logger.h"
 #include <memory>
+#include "MyEnum.h"
+#include <map>
 #include <string>
 
 namespace dependencies
@@ -30,14 +32,16 @@ namespace dependencies
       this->wrapped->LogMultiple(messages);
     }
   }
-  bool LoggerSpy::LogWithResult(std::string message)
+  bool LoggerSpy::LogWithResult(std::string message, MyEnum enumValue, std::map<std::string, std::string> parameters)
   {
     LoggerSpy::LogWithResultCallInfo callInfo = { };
     callInfo.messageValue = message;
+    callInfo.enumValueValue = enumValue;
+    callInfo.parametersValue = parameters;
     this->LogWithResultCallInfos.push_back(callInfo);
     if (this->wrapped != nullptr)
     {
-      return this->wrapped->LogWithResult(message);
+      return this->wrapped->LogWithResult(message, enumValue, parameters);
     }
 
     return false;

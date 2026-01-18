@@ -8,5 +8,5 @@ abstract class Logger {
   
   public abstract LogMultiple (   in messages: String [ * ]  ) ;
   
-  public abstract LogWithResult (   in message: String  ) : Boolean  ;
+  public abstract LogWithResult (   in message: String ,   in enumValue: MyEnum ,   in parameters: Map <String, String>  ) : Boolean  ;
 }

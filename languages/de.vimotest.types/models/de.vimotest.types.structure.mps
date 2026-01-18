@@ -3,11 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -18,8 +19,18 @@
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
+      <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
+        <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+        <child id="7588428831947959310" name="attributed" index="EQaZv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -52,6 +63,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -218,6 +230,15 @@
     <node concept="PrWs8" id="7cQIBSR_IqT" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="JsS3D9I3ed" role="PzmwI">
+      <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+    </node>
+    <node concept="PrWs8" id="6qlTyZCQFe6" role="PzmwI">
+      <ref role="PrY4T" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+    </node>
+    <node concept="PrWs8" id="6Nin$iibdAz" role="PzmwI">
+      <ref role="PrY4T" node="3JF9X1LrZr1" resolve="IHasNamespace" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5cPWD13qNbM">
     <property role="EcuMT" value="5995965180333994738" />
@@ -297,6 +318,68 @@
     </node>
     <node concept="PrWs8" id="7cQIBSRFq9F" role="PzmwI">
       <ref role="PrY4T" node="7cQIBSRFm$O" resolve="ICollectionType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2N4oO4qvcUb">
+    <property role="EcuMT" value="3225812364372528779" />
+    <property role="3GE5qa" value="bindings" />
+    <property role="TrG5h" value="CustomFileNameBinding" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="2N4oO4qvcUc" role="lGtFl">
+      <property role="Hh88m" value="customFileName" />
+      <node concept="trNpa" id="2N4oO4qvcUd" role="EQaZv">
+        <ref role="trN6q" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+      </node>
+    </node>
+    <node concept="1TJgyi" id="2N4oO4qvcUe" role="1TKVEl">
+      <property role="IQ2nx" value="3225812364372528782" />
+      <property role="TrG5h" value="customBaseFileName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="t5JxF" id="2N4oO4qvl90" role="lGtFl">
+        <property role="t5JxN" value="Defines a custom file base-name (without extension) for target languages where file names can be different to type names (e.g., C++)" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3MA_BelBku3">
+    <property role="EcuMT" value="4370345911585163139" />
+    <property role="3GE5qa" value="bindings" />
+    <property role="TrG5h" value="CustomTypeNameBinding" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="3MA_BelBku4" role="lGtFl">
+      <property role="Hh88m" value="customTypeName" />
+      <node concept="trNpa" id="3MA_BelBku5" role="EQaZv">
+        <ref role="trN6q" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+      </node>
+    </node>
+    <node concept="1TJgyi" id="3MA_BelBku6" role="1TKVEl">
+      <property role="IQ2nx" value="4370345911585163142" />
+      <property role="TrG5h" value="customName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2N4oO4qv7J4" role="1TKVEl">
+      <property role="IQ2nx" value="3225812364372507588" />
+      <property role="TrG5h" value="customFileName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2N4oO4qvcUg">
+    <property role="EcuMT" value="3225812364372528784" />
+    <property role="3GE5qa" value="bindings" />
+    <property role="TrG5h" value="ICanHaveCustomFileName" />
+  </node>
+  <node concept="PlHQZ" id="3MA_BelBku7">
+    <property role="EcuMT" value="4370345911585163143" />
+    <property role="3GE5qa" value="bindings" />
+    <property role="TrG5h" value="ICanHaveCustomTypeName" />
+  </node>
+  <node concept="PlHQZ" id="3JF9X1LrZr1">
+    <property role="EcuMT" value="4317588443974596289" />
+    <property role="3GE5qa" value="bindings" />
+    <property role="TrG5h" value="IHasNamespace" />
+    <node concept="1TJgyi" id="3JF9X1Ls77z" role="1TKVEl">
+      <property role="IQ2nx" value="4317588443974627811" />
+      <property role="TrG5h" value="namespace" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

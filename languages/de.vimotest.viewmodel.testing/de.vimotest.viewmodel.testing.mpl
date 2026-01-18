@@ -195,6 +195,7 @@
   </runtime>
   <extendedLanguages>
     <extendedLanguage>ce7915b5-36b4-4478-a67c-f5a8a72ed4a0(de.vimotest.viewmodel)</extendedLanguage>
+    <extendedLanguage>611ecc9e-0703-4ab9-a13c-fb396c607716(de.vimotest.types)</extendedLanguage>
   </extendedLanguages>
 </language>
 

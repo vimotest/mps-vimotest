@@ -598,6 +598,11 @@
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3_O3_eLVY3n" role="3bR37C">
+          <node concept="1Busua" id="3_O3_eLVY3o" role="1SiIV1">
+            <ref role="1Busuk" node="220dcIkyAiQ" resolve="de.vimotest.types" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="220dcIkyAiQ" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -661,6 +666,16 @@
         <node concept="1SiIV0" id="7MpdXqfFsX5" role="3bR37C">
           <node concept="3bR9La" id="7MpdXqfFsX6" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5NBxLKrQtEj" role="3bR37C">
+          <node concept="3bR9La" id="5NBxLKrQtEk" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5NBxLKrQtEl" role="3bR37C">
+          <node concept="3bR9La" id="5NBxLKrQtEm" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
         </node>
       </node>

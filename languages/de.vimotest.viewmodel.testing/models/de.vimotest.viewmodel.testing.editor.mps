@@ -19,9 +19,7 @@
     <import index="at53" ref="r:9e3a5843-688b-4c6d-b3dd-9f321700c21b(de.vimotest.viewmodel.structure)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="5ueo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.style(MPS.Editor/)" />
-    <import index="3ahc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.cells(MPS.Editor/)" />
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" />
     <import index="hdif" ref="r:358d5e99-ca53-4b21-ba6f-a58c1c8e0993(de.vimotest.mpswidgets.behavior)" />
     <import index="fwln" ref="r:fb31fced-d3c6-408c-9dff-13efe5b49745(de.vimotest.viewmodel.testing.behavior)" />
@@ -1127,7 +1125,7 @@
     <node concept="3EZMnI" id="3JF9X1LtP4n" role="6VMZX">
       <node concept="l2Vlx" id="3JF9X1LtP4o" role="2iSdaV" />
       <node concept="PMmxH" id="3JF9X1LtPes" role="3EZMnx">
-        <ref role="PMmxG" to="czmc:3JF9X1LtxCE" resolve="IHasNamespace_EC" />
+        <ref role="PMmxG" to="dgt9:3JF9X1LtxCE" resolve="IHasNamespace_EC" />
       </node>
       <node concept="3F0ifn" id="4Pj3bOmvgzL" role="3EZMnx">
         <property role="3F0ifm" value="test setup class name:" />

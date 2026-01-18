@@ -59,13 +59,13 @@
         <child id="5775867078593479453" name="textColorFeature" index="31m0es" />
         <child id="7922086861330453416" name="toolTipFeature" index="1G_fIJ" />
       </concept>
-      <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommands" flags="ng" index="103ZXx" />
+      <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommandSection" flags="ng" index="103ZXx" />
       <concept id="777152910168882960" name="de.vimotest.viewmodel.structure.ViewModel" flags="ng" index="103ZX$">
         <property id="4513875792335097421" name="baseName" index="$YGLj" />
-        <child id="777152910168882972" name="viewModelCommands" index="103ZXC" />
-        <child id="777152910168882975" name="viewModelData" index="103ZXF" />
+        <child id="777152910168882972" name="commandSection" index="103ZXC" />
+        <child id="777152910168882975" name="stateSection" index="103ZXF" />
       </concept>
-      <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelData" flags="ng" index="103ZXB" />
+      <concept id="777152910168882963" name="de.vimotest.viewmodel.structure.ViewModelStateSection" flags="ng" index="103ZXB" />
       <concept id="5775867078593476371" name="de.vimotest.viewmodel.structure.TextColorFeature" flags="ng" index="31hZui" />
       <concept id="6112733486387704342" name="de.vimotest.viewmodel.structure.GenerationConfig" flags="ng" index="1a4JyI">
         <property id="6112733486387704343" name="capitalizeOperationNames" index="1a4JyJ" />

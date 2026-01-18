@@ -144,13 +144,13 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="5jkMFwtjblm" role="PzmwI">
-      <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+      <ref role="PrY4T" to="evry:3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
     </node>
     <node concept="PrWs8" id="2N4oO4qvn7i" role="PzmwI">
-      <ref role="PrY4T" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+      <ref role="PrY4T" to="evry:2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
     </node>
     <node concept="PrWs8" id="3JF9X1Ltwwn" role="PzmwI">
-      <ref role="PrY4T" node="3JF9X1LrZr1" resolve="IHasNamespace" />
+      <ref role="PrY4T" to="evry:3JF9X1LrZr1" resolve="IHasNamespace" />
     </node>
     <node concept="PrWs8" id="1F_Q10zW1eJ" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -213,10 +213,10 @@
       <ref role="20lvS9" node="54nmQxH1bsq" resolve="IViewModelCommandSectionContent" />
     </node>
     <node concept="PrWs8" id="5jkMFw_OY7u" role="PzmwI">
-      <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+      <ref role="PrY4T" to="evry:3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
     </node>
     <node concept="PrWs8" id="2N4oO4qvn7j" role="PzmwI">
-      <ref role="PrY4T" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+      <ref role="PrY4T" to="evry:2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
     </node>
   </node>
   <node concept="PlHQZ" id="F907haLJXw">
@@ -230,7 +230,7 @@
       <ref role="PrY4T" node="54nmQxH1bsq" resolve="IViewModelCommandSectionContent" />
     </node>
     <node concept="PrWs8" id="5jkMFwAVGTY" role="PrDN$">
-      <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+      <ref role="PrY4T" to="evry:3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
     </node>
   </node>
   <node concept="1TIwiD" id="F907haLJXy">
@@ -1208,23 +1208,13 @@
       </node>
     </node>
     <node concept="PrWs8" id="5veytyjIXh8" role="PrDN$">
-      <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+      <ref role="PrY4T" to="evry:3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
     </node>
     <node concept="PrWs8" id="2N4oO4qwWpY" role="PrDN$">
-      <ref role="PrY4T" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+      <ref role="PrY4T" to="evry:2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
     </node>
     <node concept="PrWs8" id="1U5fKw6KX_p" role="PrDN$">
-      <ref role="PrY4T" node="3JF9X1LrZr1" resolve="IHasNamespace" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="3JF9X1LrZr1">
-    <property role="EcuMT" value="4317588443974596289" />
-    <property role="3GE5qa" value="core" />
-    <property role="TrG5h" value="IHasNamespace" />
-    <node concept="1TJgyi" id="3JF9X1Ls77z" role="1TKVEl">
-      <property role="IQ2nx" value="4317588443974627811" />
-      <property role="TrG5h" value="namespace" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <ref role="PrY4T" to="evry:3JF9X1LrZr1" resolve="IHasNamespace" />
     </node>
   </node>
   <node concept="PlHQZ" id="7FAtRx$VQ6k">
@@ -1258,33 +1248,6 @@
     <property role="EcuMT" value="4233755548141167382" />
     <property role="3GE5qa" value="bindings" />
     <property role="TrG5h" value="ICanHaveCustomPropertyName" />
-  </node>
-  <node concept="1TIwiD" id="3MA_BelBku3">
-    <property role="EcuMT" value="4370345911585163139" />
-    <property role="3GE5qa" value="bindings" />
-    <property role="TrG5h" value="CustomTypeNameBinding" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="M6xJ_" id="3MA_BelBku4" role="lGtFl">
-      <property role="Hh88m" value="customTypeName" />
-      <node concept="trNpa" id="3MA_BelBku5" role="EQaZv">
-        <ref role="trN6q" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="3MA_BelBku6" role="1TKVEl">
-      <property role="IQ2nx" value="4370345911585163142" />
-      <property role="TrG5h" value="customName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="2N4oO4qv7J4" role="1TKVEl">
-      <property role="IQ2nx" value="3225812364372507588" />
-      <property role="TrG5h" value="customFileName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="3MA_BelBku7">
-    <property role="EcuMT" value="4370345911585163143" />
-    <property role="3GE5qa" value="bindings" />
-    <property role="TrG5h" value="ICanHaveCustomTypeName" />
   </node>
   <node concept="1TIwiD" id="3ZV2RzmQhkT">
     <property role="EcuMT" value="4610291257172366649" />
@@ -1415,31 +1378,6 @@
         <property role="t5JxN" value="Controls if table updating flags are generated" />
       </node>
     </node>
-  </node>
-  <node concept="1TIwiD" id="2N4oO4qvcUb">
-    <property role="EcuMT" value="3225812364372528779" />
-    <property role="3GE5qa" value="bindings" />
-    <property role="TrG5h" value="CustomFileNameBinding" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="M6xJ_" id="2N4oO4qvcUc" role="lGtFl">
-      <property role="Hh88m" value="customFileName" />
-      <node concept="trNpa" id="2N4oO4qvcUd" role="EQaZv">
-        <ref role="trN6q" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="2N4oO4qvcUe" role="1TKVEl">
-      <property role="IQ2nx" value="3225812364372528782" />
-      <property role="TrG5h" value="customBaseFileName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="t5JxF" id="2N4oO4qvl90" role="lGtFl">
-        <property role="t5JxN" value="Defines a custom file base-name (without extension) for target languages where file names can be different to type names (e.g., C++)" />
-      </node>
-    </node>
-  </node>
-  <node concept="PlHQZ" id="2N4oO4qvcUg">
-    <property role="EcuMT" value="3225812364372528784" />
-    <property role="3GE5qa" value="bindings" />
-    <property role="TrG5h" value="ICanHaveCustomFileName" />
   </node>
   <node concept="1TIwiD" id="4xJPu9gsd4J">
     <property role="EcuMT" value="5219625661134590255" />
@@ -1590,10 +1528,10 @@
       <ref role="PrY4T" node="7NXUkdRspaV" resolve="IProvideChoiceEntries" />
     </node>
     <node concept="PrWs8" id="JsS3D9I3ed" role="PzmwI">
-      <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+      <ref role="PrY4T" to="evry:3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
     </node>
     <node concept="PrWs8" id="6qlTyZCQFe6" role="PzmwI">
-      <ref role="PrY4T" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+      <ref role="PrY4T" to="evry:2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
     </node>
     <node concept="1TJgyi" id="6qlTyZCQCeM" role="1TKVEl">
       <property role="IQ2nx" value="7392067456843023282" />
@@ -1601,7 +1539,7 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="PrWs8" id="1U5fKw6KXiy" role="PzmwI">
-      <ref role="PrY4T" node="3JF9X1LrZr1" resolve="IHasNamespace" />
+      <ref role="PrY4T" to="evry:3JF9X1LrZr1" resolve="IHasNamespace" />
     </node>
   </node>
   <node concept="PlHQZ" id="1Ukm5RfrSRo">
@@ -1881,13 +1819,13 @@
       <ref role="PrY4T" node="3kGPU1QcSOP" resolve="IReferenceableDependency" />
     </node>
     <node concept="PrWs8" id="32SpZNIS8iJ" role="PrDN$">
-      <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+      <ref role="PrY4T" to="evry:3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
     </node>
     <node concept="PrWs8" id="32SpZNIS8iK" role="PrDN$">
-      <ref role="PrY4T" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+      <ref role="PrY4T" to="evry:2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
     </node>
     <node concept="PrWs8" id="32SpZNIS8iL" role="PrDN$">
-      <ref role="PrY4T" node="3JF9X1LrZr1" resolve="IHasNamespace" />
+      <ref role="PrY4T" to="evry:3JF9X1LrZr1" resolve="IHasNamespace" />
     </node>
     <node concept="1TJgyj" id="4m0g11MookZ" role="1TKVEi">
       <property role="IQ2ns" value="5008073225018639679" />

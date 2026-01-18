@@ -4,6 +4,7 @@
   <languages>
     <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="1" />
     <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing" version="1" />
+    <use id="611ecc9e-0703-4ab9-a13c-fb396c607716" name="de.vimotest.types" version="0" />
     <devkit ref="1511a6f0-18cf-4e0d-a302-d49c56209130(de.vimotest.all.devkit)" />
   </languages>
   <imports>
@@ -28,6 +29,12 @@
         <child id="5995965180333996969" name="symbols" index="gnG$T" />
       </concept>
       <concept id="5995965180333994738" name="de.vimotest.types.structure.EnumSymbol" flags="ng" index="gnG1y" />
+      <concept id="4370345911585163139" name="de.vimotest.types.structure.CustomTypeNameBinding" flags="ng" index="2DeX7K">
+        <property id="4370345911585163142" name="customName" index="2DeX7P" />
+      </concept>
+      <concept id="3225812364372528779" name="de.vimotest.types.structure.CustomFileNameBinding" flags="ng" index="QIaRa">
+        <property id="3225812364372528782" name="customBaseFileName" index="QIaRf" />
+      </concept>
       <concept id="777152910168881023" name="de.vimotest.types.structure.AbstractStructType" flags="ng" index="103Zsb">
         <child id="777152910168882908" name="contents" index="103ZUC" />
       </concept>
@@ -394,9 +401,6 @@
         <child id="1938192778486065161" name="checkCommand" index="T1B0p" />
         <child id="7278489671513126078" name="textFeature" index="1ISttP" />
       </concept>
-      <concept id="4370345911585163139" name="de.vimotest.viewmodel.structure.CustomTypeNameBinding" flags="ng" index="2DeX7K">
-        <property id="4370345911585163142" name="customName" index="2DeX7P" />
-      </concept>
       <concept id="471139930089728146" name="de.vimotest.viewmodel.structure.TableColumnWidget" flags="ng" index="E2vJn">
         <child id="471139930089728148" name="enabledFeature" index="E2vJh" />
         <child id="471139930089728147" name="textFeature" index="E2vJm" />
@@ -406,9 +410,6 @@
       <concept id="7095654166980011885" name="de.vimotest.viewmodel.structure.StandardDependency" flags="ng" index="2PDviN" />
       <concept id="7095654166980083171" name="de.vimotest.viewmodel.structure.DependencySection" flags="ng" index="2PDISX">
         <child id="5008073225018640442" name="contents" index="RSswE" />
-      </concept>
-      <concept id="3225812364372528779" name="de.vimotest.viewmodel.structure.CustomFileNameBinding" flags="ng" index="QIaRa">
-        <property id="3225812364372528782" name="customBaseFileName" index="QIaRf" />
       </concept>
       <concept id="5008073225018638575" name="de.vimotest.viewmodel.structure.OperationParameter" flags="ng" index="RSs3Z" />
       <concept id="5008073225018639227" name="de.vimotest.viewmodel.structure.DependencyOperation" flags="ng" index="RSsdF">

@@ -24,7 +24,7 @@
     <import index="53m0" ref="r:b38f4eba-3263-43b3-b5a0-ad906d4f1a11(de.vimotest.viewmodel.testing.structure)" />
     <import index="7p2e" ref="r:6a61e065-5649-42c6-b0ca-3da4fcbb83a1(de.vimotest.viewmodel.testing.generator.templates@generator)" />
     <import index="ao3" ref="7124e466-fc92-4803-a656-d7a6b7eb3910/java:jetbrains.mps.text(MPS.TextGen/)" />
-    <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
+    <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -657,7 +657,7 @@
               </node>
               <node concept="3CFZ6_" id="5jkMFwvfdBv" role="2OqNvi">
                 <node concept="3CFYIy" id="5jkMFwvfdKg" role="3CFYIz">
-                  <ref role="3CFYIx" to="at53:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                  <ref role="3CFYIx" to="evry:3MA_BelBku3" resolve="CustomTypeNameBinding" />
                 </node>
               </node>
             </node>
@@ -672,12 +672,12 @@
                   </node>
                   <node concept="3CFZ6_" id="5jkMFwvffdE" role="2OqNvi">
                     <node concept="3CFYIy" id="5jkMFwvffjY" role="3CFYIz">
-                      <ref role="3CFYIx" to="at53:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                      <ref role="3CFYIx" to="evry:3MA_BelBku3" resolve="CustomTypeNameBinding" />
                     </node>
                   </node>
                 </node>
                 <node concept="3TrcHB" id="5jkMFwvffJS" role="2OqNvi">
-                  <ref role="3TsBF5" to="at53:3MA_BelBku6" resolve="customName" />
+                  <ref role="3TsBF5" to="evry:3MA_BelBku6" resolve="customName" />
                 </node>
               </node>
             </node>
@@ -1193,12 +1193,12 @@
                   </node>
                   <node concept="3CFZ6_" id="32SpZNIS3Pg" role="2OqNvi">
                     <node concept="3CFYIy" id="32SpZNIS3Ph" role="3CFYIz">
-                      <ref role="3CFYIx" to="at53:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                      <ref role="3CFYIx" to="evry:3MA_BelBku3" resolve="CustomTypeNameBinding" />
                     </node>
                   </node>
                 </node>
                 <node concept="3TrcHB" id="32SpZNIS3Pi" role="2OqNvi">
-                  <ref role="3TsBF5" to="at53:3MA_BelBku6" resolve="customName" />
+                  <ref role="3TsBF5" to="evry:3MA_BelBku6" resolve="customName" />
                 </node>
               </node>
             </node>
@@ -1210,7 +1210,7 @@
               </node>
               <node concept="3CFZ6_" id="32SpZNIS3Pm" role="2OqNvi">
                 <node concept="3CFYIy" id="32SpZNIS3Pn" role="3CFYIz">
-                  <ref role="3CFYIx" to="at53:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                  <ref role="3CFYIx" to="evry:3MA_BelBku3" resolve="CustomTypeNameBinding" />
                 </node>
               </node>
             </node>

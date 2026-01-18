@@ -605,50 +605,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="5jkMFw_KPcM">
-    <property role="3GE5qa" value="bindings" />
-    <ref role="1M2myG" to="at53:3MA_BelBku3" resolve="CustomTypeNameBinding" />
-    <node concept="9S07l" id="5jkMFw_KPcN" role="9Vyp8">
-      <node concept="3clFbS" id="5jkMFw_KPcO" role="2VODD2">
-        <node concept="3clFbF" id="5jkMFw_KPtO" role="3cqZAp">
-          <node concept="2OqwBi" id="5jkMFw_KQnc" role="3clFbG">
-            <node concept="1PxgMI" id="5jkMFw_KPY4" role="2Oq$k0">
-              <property role="1BlNFB" value="true" />
-              <node concept="chp4Y" id="5jkMFw_KQbV" role="3oSUPX">
-                <ref role="cht4Q" to="at53:3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
-              </node>
-              <node concept="nLn13" id="5jkMFw_KPtN" role="1m5AlR" />
-            </node>
-            <node concept="2qgKlT" id="5jkMFw_KQIS" role="2OqNvi">
-              <ref role="37wK5l" to="nrs2:5jkMFw_KLIp" resolve="isCustomTypeNameSupported" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="2N4oO4qvnEM">
-    <property role="3GE5qa" value="bindings" />
-    <ref role="1M2myG" to="at53:2N4oO4qvcUb" resolve="CustomFileNameBinding" />
-    <node concept="9S07l" id="2N4oO4qvnEN" role="9Vyp8">
-      <node concept="3clFbS" id="2N4oO4qvnEO" role="2VODD2">
-        <node concept="3clFbF" id="2N4oO4qvnSk" role="3cqZAp">
-          <node concept="2OqwBi" id="2N4oO4qvnSl" role="3clFbG">
-            <node concept="1PxgMI" id="2N4oO4qvnSm" role="2Oq$k0">
-              <property role="1BlNFB" value="true" />
-              <node concept="chp4Y" id="2N4oO4qvnSn" role="3oSUPX">
-                <ref role="cht4Q" to="at53:2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
-              </node>
-              <node concept="nLn13" id="2N4oO4qvnSo" role="1m5AlR" />
-            </node>
-            <node concept="2qgKlT" id="2N4oO4qvnSp" role="2OqNvi">
-              <ref role="37wK5l" to="nrs2:2N4oO4qvn9C" resolve="isCustomFileNameSupported" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="4xJPu9gsdDe">
     <property role="3GE5qa" value="util.values" />
     <ref role="1M2myG" to="at53:4xJPu9gsd4J" resolve="SingleOrMultiLineString" />

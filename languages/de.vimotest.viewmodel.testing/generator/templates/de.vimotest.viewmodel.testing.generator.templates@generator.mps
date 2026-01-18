@@ -25,11 +25,11 @@
     <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" />
     <import index="fwln" ref="r:fb31fced-d3c6-408c-9dff-13efe5b49745(de.vimotest.viewmodel.testing.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
+    <import index="45v0" ref="r:ba746408-9865-4b76-b4e7-cbd40a893006(de.vimotest.types.behavior)" />
+    <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" implicit="true" />
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" implicit="true" />
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" implicit="true" />
-    <import index="45v0" ref="r:ba746408-9865-4b76-b4e7-cbd40a893006(de.vimotest.types.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -1256,12 +1256,12 @@
                           <node concept="30H73N" id="5jkMFw_KwcD" role="2Oq$k0" />
                           <node concept="3CFZ6_" id="2N4oO4qwG1o" role="2OqNvi">
                             <node concept="3CFYIy" id="2N4oO4qwG6l" role="3CFYIz">
-                              <ref role="3CFYIx" to="at53:2N4oO4qvcUb" resolve="CustomFileNameBinding" />
+                              <ref role="3CFYIx" to="evry:2N4oO4qvcUb" resolve="CustomFileNameBinding" />
                             </node>
                           </node>
                         </node>
                         <node concept="3TrcHB" id="2N4oO4qwH2t" role="2OqNvi">
-                          <ref role="3TsBF5" to="at53:2N4oO4qvcUe" resolve="customBaseFileName" />
+                          <ref role="3TsBF5" to="evry:2N4oO4qvcUe" resolve="customBaseFileName" />
                         </node>
                       </node>
                     </node>
@@ -1281,7 +1281,7 @@
                       <node concept="30H73N" id="2N4oO4qwIAF" role="2Oq$k0" />
                       <node concept="3CFZ6_" id="2N4oO4qwJMh" role="2OqNvi">
                         <node concept="3CFYIy" id="2N4oO4qwJP5" role="3CFYIz">
-                          <ref role="3CFYIx" to="at53:2N4oO4qvcUb" resolve="CustomFileNameBinding" />
+                          <ref role="3CFYIx" to="evry:2N4oO4qvcUb" resolve="CustomFileNameBinding" />
                         </node>
                       </node>
                     </node>
@@ -1290,7 +1290,7 @@
                   <node concept="2OqwBi" id="5jkMFw_KwcK" role="3uHU7B">
                     <node concept="30H73N" id="5jkMFw_KwcL" role="2Oq$k0" />
                     <node concept="2qgKlT" id="2N4oO4qwF8W" role="2OqNvi">
-                      <ref role="37wK5l" to="nrs2:2N4oO4qvn9C" resolve="isCustomFileNameSupported" />
+                      <ref role="37wK5l" to="45v0:2N4oO4qvn9C" resolve="isCustomFileNameSupported" />
                     </node>
                   </node>
                 </node>
@@ -1316,7 +1316,7 @@
                       <node concept="2OqwBi" id="5jkMFwxn2gK" role="3clFbG">
                         <node concept="30H73N" id="5jkMFwxn2gL" role="2Oq$k0" />
                         <node concept="3TrcHB" id="5jkMFwxn2gM" role="2OqNvi">
-                          <ref role="3TsBF5" to="at53:3JF9X1Ls77z" resolve="namespace" />
+                          <ref role="3TsBF5" to="evry:3JF9X1Ls77z" resolve="namespace" />
                         </node>
                       </node>
                     </node>
@@ -1334,7 +1334,7 @@
                   <node concept="2OqwBi" id="5jkMFwxn2gS" role="2Oq$k0">
                     <node concept="30H73N" id="5jkMFwxn2gT" role="2Oq$k0" />
                     <node concept="3TrcHB" id="5jkMFwxn2gU" role="2OqNvi">
-                      <ref role="3TsBF5" to="at53:3JF9X1Ls77z" resolve="namespace" />
+                      <ref role="3TsBF5" to="evry:3JF9X1Ls77z" resolve="namespace" />
                     </node>
                   </node>
                   <node concept="17RvpY" id="5jkMFwxn2gV" role="2OqNvi" />
@@ -9535,7 +9535,7 @@
                       <node concept="2OqwBi" id="5jkMFwxmTtL" role="3clFbG">
                         <node concept="30H73N" id="5jkMFwxmTtN" role="2Oq$k0" />
                         <node concept="3TrcHB" id="5jkMFwxmTtR" role="2OqNvi">
-                          <ref role="3TsBF5" to="at53:3JF9X1Ls77z" resolve="namespace" />
+                          <ref role="3TsBF5" to="evry:3JF9X1Ls77z" resolve="namespace" />
                         </node>
                       </node>
                     </node>
@@ -9553,7 +9553,7 @@
                   <node concept="2OqwBi" id="5jkMFwxmTtX" role="2Oq$k0">
                     <node concept="30H73N" id="5jkMFwxmTtZ" role="2Oq$k0" />
                     <node concept="3TrcHB" id="5jkMFwxmTu3" role="2OqNvi">
-                      <ref role="3TsBF5" to="at53:3JF9X1Ls77z" resolve="namespace" />
+                      <ref role="3TsBF5" to="evry:3JF9X1Ls77z" resolve="namespace" />
                     </node>
                   </node>
                   <node concept="17RvpY" id="5jkMFwxmTu4" role="2OqNvi" />
@@ -11433,7 +11433,7 @@
                       <node concept="2OqwBi" id="3nKDvO$wDBW" role="3clFbG">
                         <node concept="30H73N" id="3nKDvO$wDBX" role="2Oq$k0" />
                         <node concept="3TrcHB" id="3nKDvO$wDBY" role="2OqNvi">
-                          <ref role="3TsBF5" to="at53:3JF9X1Ls77z" resolve="namespace" />
+                          <ref role="3TsBF5" to="evry:3JF9X1Ls77z" resolve="namespace" />
                         </node>
                       </node>
                     </node>
@@ -11451,7 +11451,7 @@
                   <node concept="2OqwBi" id="3nKDvO$wDC4" role="2Oq$k0">
                     <node concept="30H73N" id="3nKDvO$wDC5" role="2Oq$k0" />
                     <node concept="3TrcHB" id="3nKDvO$wDC6" role="2OqNvi">
-                      <ref role="3TsBF5" to="at53:3JF9X1Ls77z" resolve="namespace" />
+                      <ref role="3TsBF5" to="evry:3JF9X1Ls77z" resolve="namespace" />
                     </node>
                   </node>
                   <node concept="17RvpY" id="3nKDvO$wDC7" role="2OqNvi" />
@@ -16217,12 +16217,12 @@
                           <node concept="30H73N" id="32SpZNJ4qX7" role="2Oq$k0" />
                           <node concept="3CFZ6_" id="32SpZNJ4qX8" role="2OqNvi">
                             <node concept="3CFYIy" id="32SpZNJ4qX9" role="3CFYIz">
-                              <ref role="3CFYIx" to="at53:2N4oO4qvcUb" resolve="CustomFileNameBinding" />
+                              <ref role="3CFYIx" to="evry:2N4oO4qvcUb" resolve="CustomFileNameBinding" />
                             </node>
                           </node>
                         </node>
                         <node concept="3TrcHB" id="32SpZNJ4qXa" role="2OqNvi">
-                          <ref role="3TsBF5" to="at53:2N4oO4qvcUe" resolve="customBaseFileName" />
+                          <ref role="3TsBF5" to="evry:2N4oO4qvcUe" resolve="customBaseFileName" />
                         </node>
                       </node>
                     </node>
@@ -16242,7 +16242,7 @@
                       <node concept="30H73N" id="32SpZNJ4qXi" role="2Oq$k0" />
                       <node concept="3CFZ6_" id="32SpZNJ4qXj" role="2OqNvi">
                         <node concept="3CFYIy" id="32SpZNJ4qXk" role="3CFYIz">
-                          <ref role="3CFYIx" to="at53:2N4oO4qvcUb" resolve="CustomFileNameBinding" />
+                          <ref role="3CFYIx" to="evry:2N4oO4qvcUb" resolve="CustomFileNameBinding" />
                         </node>
                       </node>
                     </node>
@@ -16251,7 +16251,7 @@
                   <node concept="2OqwBi" id="32SpZNJ4qXm" role="3uHU7B">
                     <node concept="30H73N" id="32SpZNJ4qXn" role="2Oq$k0" />
                     <node concept="2qgKlT" id="32SpZNJ4qXo" role="2OqNvi">
-                      <ref role="37wK5l" to="nrs2:2N4oO4qvn9C" resolve="isCustomFileNameSupported" />
+                      <ref role="37wK5l" to="45v0:2N4oO4qvn9C" resolve="isCustomFileNameSupported" />
                     </node>
                   </node>
                 </node>
@@ -16277,7 +16277,7 @@
                       <node concept="2OqwBi" id="32SpZNJ4qXy" role="3clFbG">
                         <node concept="30H73N" id="32SpZNJ4qXz" role="2Oq$k0" />
                         <node concept="3TrcHB" id="32SpZNJ4qX$" role="2OqNvi">
-                          <ref role="3TsBF5" to="at53:3JF9X1Ls77z" resolve="namespace" />
+                          <ref role="3TsBF5" to="evry:3JF9X1Ls77z" resolve="namespace" />
                         </node>
                       </node>
                     </node>
@@ -16295,7 +16295,7 @@
                   <node concept="2OqwBi" id="32SpZNJ4qXE" role="2Oq$k0">
                     <node concept="30H73N" id="32SpZNJ4qXF" role="2Oq$k0" />
                     <node concept="3TrcHB" id="32SpZNJ4qXG" role="2OqNvi">
-                      <ref role="3TsBF5" to="at53:3JF9X1Ls77z" resolve="namespace" />
+                      <ref role="3TsBF5" to="evry:3JF9X1Ls77z" resolve="namespace" />
                     </node>
                   </node>
                   <node concept="17RvpY" id="32SpZNJ4qXH" role="2OqNvi" />
@@ -16363,7 +16363,7 @@
             <node concept="2OqwBi" id="32SpZNJ4q3k" role="3clFbG">
               <node concept="30H73N" id="32SpZNJ4q3l" role="2Oq$k0" />
               <node concept="2qgKlT" id="32SpZNJGTUl" role="2OqNvi">
-                <ref role="37wK5l" to="nrs2:32SpZNJGR81" resolve="getEffectiveVirtualPackage" />
+                <ref role="37wK5l" to="45v0:32SpZNJGR81" resolve="getEffectiveVirtualPackage" />
               </node>
             </node>
           </node>

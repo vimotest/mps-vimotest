@@ -2,11 +2,15 @@
 <model ref="r:22f1803f-61f9-436d-a9a7-b4395f66ca15(de.vimotest.generationConfig.parameterObject)">
   <persistence version="9" />
   <languages>
+    <use id="611ecc9e-0703-4ab9-a13c-fb396c607716" name="de.vimotest.types" version="0" />
     <devkit ref="1511a6f0-18cf-4e0d-a302-d49c56209130(de.vimotest.all.devkit)" />
   </languages>
   <imports />
   <registry>
     <language id="611ecc9e-0703-4ab9-a13c-fb396c607716" name="de.vimotest.types">
+      <concept id="4370345911585163139" name="de.vimotest.types.structure.CustomTypeNameBinding" flags="ng" index="2DeX7K">
+        <property id="4370345911585163142" name="customName" index="2DeX7P" />
+      </concept>
       <concept id="777152910168881023" name="de.vimotest.types.structure.AbstractStructType" flags="ng" index="103Zsb">
         <child id="777152910168882908" name="contents" index="103ZUC" />
       </concept>
@@ -82,9 +86,6 @@
         <child id="5213916851000129517" name="enabledFeature" index="C4FCH" />
         <child id="1938192778486065161" name="checkCommand" index="T1B0p" />
         <child id="7278489671513126078" name="textFeature" index="1ISttP" />
-      </concept>
-      <concept id="4370345911585163139" name="de.vimotest.viewmodel.structure.CustomTypeNameBinding" flags="ng" index="2DeX7K">
-        <property id="4370345911585163142" name="customName" index="2DeX7P" />
       </concept>
       <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6">
         <child id="5219625661134947434" name="defaultText" index="o6p68" />

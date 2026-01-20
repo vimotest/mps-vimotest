@@ -91,12 +91,12 @@ public class RowBasedCommand_ViewTests_Test {
     // {
     RowBasedCommand_ViewModelMyFlagsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that list view MyFlags row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
-    Assert.assertTrue(row0.getIsCheckboxesCheckBoxChecked());
+    Assert.assertTrue("Expected that checkbox Checkboxes is checked, but was <" + row0.getIsCheckboxesCheckBoxChecked() + ">", row0.getIsCheckboxesCheckBoxChecked());
     // }
     // {
     RowBasedCommand_ViewModelMyFlagsRow row1 = actualRows.get(2 - 1);
     Assert.assertEquals("Expected that list view MyFlags row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
-    Assert.assertFalse(row1.getIsCheckboxesCheckBoxChecked());
+    Assert.assertFalse("Expected that checkbox Checkboxes is unchecked, but was <" + row1.getIsCheckboxesCheckBoxChecked() + ">", row1.getIsCheckboxesCheckBoxChecked());
     // }
   }
   public void then_MyComboBoxes_has_2_rows() {

@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
 #include <memory>
 #include "LowLevelFields_ViewModelTestEnvironment.h"
-#include "LowLevelFields_ViewModel.h"
 #include <string>
+#include "LowLevelFields_ViewModel.h"
 #include <vector>
 #include "LowLevelFields_ViewModelCustomListRowFieldRow.h"
 #include "LowLevelFields_ViewModelCustomTableRowFieldRow.h"
@@ -57,7 +57,7 @@ namespace widgetassertions
   }
   void LowLevelFields_ViewTests::then_MyBool_is_true()
   {
-    EXPECT_TRUE(this->sut->getMyBool(), std::string("Expected field 'MyBool' has value <true>, but it was <") + this->sut->getMyBool() + std::string(">"));
+    ASSERT_TRUE(this->sut->getMyBool()) << std::string("Expected field 'MyBool' has value <true>, but it was <") + this->sut->getMyBool() + std::string(">");
   }
   void LowLevelFields_ViewTests::then_MyInt_is_42()
   {
@@ -93,7 +93,7 @@ namespace widgetassertions
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(std::string("0"), row0->getRowHandle()) << std::string("Expected that table view CustomTableRowField row at index 0 has rowhandle <0>, but was <") + row0->getRowHandle() + std::string(">");
     ASSERT_EQ(std::string(""), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
-    EXPECT_FALSE(row0->getAdditionalBool(), std::string("Expected field 'AdditionalBool' has value <false>, but it was <") + row0->getAdditionalBool() + std::string(">"));
+    ASSERT_FALSE(row0->getAdditionalBool()) << std::string("Expected field 'AdditionalBool' has value <false>, but it was <") + row0->getAdditionalBool() + std::string(">");
     // }
   }
   void LowLevelFields_ViewTests::then_CustomTreeRowField_has_1_rows()

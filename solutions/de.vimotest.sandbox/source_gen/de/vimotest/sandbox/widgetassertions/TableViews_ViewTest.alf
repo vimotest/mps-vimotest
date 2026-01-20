@@ -66,7 +66,7 @@ class TableViews_ViewTest {
 
       AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that table view MyElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
 
-      AssertTrue ( row0.getIsIncludeCheckBoxChecked (  ), "Expected that checkbox Include is checked, but was <" + row0.getIsIncludeCheckBoxChecked (  ) + ">" );
+      AssertTrueWithMessage ( row0.getIsIncludeCheckBoxChecked (  ), "Expected that checkbox Include is checked, but was <" + row0.getIsIncludeCheckBoxChecked (  ) + ">" );
 
       AssertEqualWithMessage ( "A", row0.getNameLabelText (  ), "Expected that label Name has text <" + "A" + ">, but was <" + row0.getNameLabelText (  ) + ">" );
 
@@ -81,7 +81,7 @@ class TableViews_ViewTest {
 
       AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that table view MyElements row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
 
-      AssertFalse ( row1.getIsIncludeCheckBoxChecked (  ), "Expected that checkbox Include is unchecked, but was <" + row1.getIsIncludeCheckBoxChecked (  ) + ">" );
+      AssertFalseWithMessage ( row1.getIsIncludeCheckBoxChecked (  ), "Expected that checkbox Include is unchecked, but was <" + row1.getIsIncludeCheckBoxChecked (  ) + ">" );
 
       AssertEqualWithMessage ( "C", row1.getNameLabelText (  ), "Expected that label Name has text <" + "C" + ">, but was <" + row1.getNameLabelText (  ) + ">" );
 
@@ -93,11 +93,11 @@ class TableViews_ViewTest {
 
     AssertEqualWithMessage ( 1, this.sut.getMyElementsTableSelectedRow (  ), "Expected that table view MyElements has selected row with row handle <" + 1 + ">, but was <" + this.sut.getMyElementsTableSelectedRow (  ) + ">" );
 
-    AssertTrue ( this.sut.getIsMyElementsTableVisible (  ), "Expected table view MyElements is visible, but it was hidden" );
+    AssertTrueWithMessage ( this.sut.getIsMyElementsTableVisible (  ), "Expected table view MyElements is visible, but it was hidden" );
 
-    AssertTrue ( this.sut.getIsMyElementsTableEnabled (  ), "Expected table view MyElements is enabled, but it was disabled" );
+    AssertTrueWithMessage ( this.sut.getIsMyElementsTableEnabled (  ), "Expected table view MyElements is enabled, but it was disabled" );
 
-    AssertFalse ( this.sut.getIsMyElementsTableDescriptionColumnVisible (  ), "Expected table column Description is hidden, but it was visible" );
+    AssertFalseWithMessage ( this.sut.getIsMyElementsTableDescriptionColumnVisible (  ), "Expected table column Description is hidden, but it was visible" );
 
   }
   

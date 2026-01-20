@@ -62,7 +62,7 @@ namespace widgetassertions
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
     ASSERT_EQ(0, row0->getRowDepth()) << std::string("Expected that tree view MyTreeViewElements row at index 0 has parent rowhandle <") + 0 + std::string(">, but was <") + row0->getRowDepth() + std::string(">");
-    EXPECT_TRUE(row0->getIsIncludeCheckBoxChecked(), std::string("Expected that checkbox Include is checked, but was <") + row0->getIsIncludeCheckBoxChecked() + std::string(">"));
+    ASSERT_TRUE(row0->getIsIncludeCheckBoxChecked()) << std::string("Expected that checkbox Include is checked, but was <") + row0->getIsIncludeCheckBoxChecked() + std::string(">");
     ASSERT_EQ(std::string("A"), row0->getNameLabelText()) << std::string("Expected that label Name has text <") + std::string("A") + std::string(">, but was <") + row0->getNameLabelText() + std::string(">");
     ASSERT_EQ(std::string("B"), row0->getDescriptionLabelText()) << std::string("Expected that label Description has text <") + std::string("B") + std::string(">, but was <") + row0->getDescriptionLabelText() + std::string(">");
     ASSERT_EQ(std::string("image_triangle"), row0->getInfoImageName()) << std::string("Expected that image Info has ") + std::string("image <image_triangle>") + std::string(", but was <") + row0->getInfoImageName() + std::string(">");
@@ -71,15 +71,15 @@ namespace widgetassertions
     auto& row1 = actualRows.at(1);
     ASSERT_EQ(1, row1->getRowIndex()) << std::string("Expected that tree view MyTreeViewElements row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
     ASSERT_EQ(1, row1->getRowDepth()) << std::string("Expected that tree view MyTreeViewElements row at index 1 has parent rowhandle <") + 1 + std::string(">, but was <") + row1->getRowDepth() + std::string(">");
-    EXPECT_FALSE(row1->getIsIncludeCheckBoxChecked(), std::string("Expected that checkbox Include is unchecked, but was <") + row1->getIsIncludeCheckBoxChecked() + std::string(">"));
+    ASSERT_FALSE(row1->getIsIncludeCheckBoxChecked()) << std::string("Expected that checkbox Include is unchecked, but was <") + row1->getIsIncludeCheckBoxChecked() + std::string(">");
     ASSERT_EQ(std::string("C"), row1->getNameLabelText()) << std::string("Expected that label Name has text <") + std::string("C") + std::string(">, but was <") + row1->getNameLabelText() + std::string(">");
     ASSERT_EQ(std::string("D"), row1->getDescriptionLabelText()) << std::string("Expected that label Description has text <") + std::string("D") + std::string(">, but was <") + row1->getDescriptionLabelText() + std::string(">");
     ASSERT_EQ(std::string("image_circle"), row1->getInfoImageName()) << std::string("Expected that image Info has ") + std::string("image <image_circle>") + std::string(", but was <") + row1->getInfoImageName() + std::string(">");
     // }
     ASSERT_EQ(1, this->sut->getMyTreeViewElementsTreeSelectedRow()) << std::string("Expected that tree view MyTreeViewElements has selected row with row handle <") + 1 + std::string(">, but was <") + this->sut->getMyTreeViewElementsTreeSelectedRow() + std::string(">");
-    EXPECT_TRUE(this->sut->getIsMyTreeViewElementsTreeEnabled(), std::string("Expected tree view MyTreeViewElements is enabled, but it was disabled"));
-    EXPECT_TRUE(this->sut->getIsMyTreeViewElementsTreeVisible(), std::string("Expected tree view MyTreeViewElements is visible, but it was hidden"));
-    EXPECT_FALSE(this->sut->getIsMyTreeViewElementsTreeDescriptionColumnVisible(), std::string("Expected tree column Description is hidden, but it was visible"));
+    ASSERT_TRUE(this->sut->getIsMyTreeViewElementsTreeEnabled()) << std::string("Expected tree view MyTreeViewElements is enabled, but it was disabled");
+    ASSERT_TRUE(this->sut->getIsMyTreeViewElementsTreeVisible()) << std::string("Expected tree view MyTreeViewElements is visible, but it was hidden");
+    ASSERT_FALSE(this->sut->getIsMyTreeViewElementsTreeDescriptionColumnVisible()) << std::string("Expected tree column Description is hidden, but it was visible");
   }
   void TreeViews_ViewTest::then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1()
   {
@@ -165,7 +165,7 @@ namespace widgetassertions
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
     ASSERT_EQ(0, row0->getRowDepth()) << std::string("Expected that tree view MyTreeViewElements row at index 0 has parent rowhandle <") + 0 + std::string(">, but was <") + row0->getRowDepth() + std::string(">");
-    EXPECT_TRUE(row0->getIsIncludeCheckBoxChecked(), std::string("Expected that checkbox Include is checked, but was <") + row0->getIsIncludeCheckBoxChecked() + std::string(">"));
+    ASSERT_TRUE(row0->getIsIncludeCheckBoxChecked()) << std::string("Expected that checkbox Include is checked, but was <") + row0->getIsIncludeCheckBoxChecked() + std::string(">");
     // }
     // {
     auto& row1 = actualRows.at(1);

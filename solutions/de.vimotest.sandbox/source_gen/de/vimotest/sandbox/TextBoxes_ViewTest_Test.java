@@ -59,18 +59,18 @@ public class TextBoxes_ViewTest_Test {
 
   public void then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible() {
     Assert.assertEquals("Expected that textbox MyValue has text <" + "Some entered Input" + ">, but was <" + this.sut.getMyValueTextBoxText() + ">", "Some entered Input", this.sut.getMyValueTextBoxText());
-    Assert.assertTrue(this.sut.getIsMyValueTextBoxEnabled());
-    Assert.assertTrue(this.sut.getIsMyValueTextBoxVisible());
+    Assert.assertTrue("Expected textbox MyValue is enabled, but it was disabled", this.sut.getIsMyValueTextBoxEnabled());
+    Assert.assertTrue("Expected textbox MyValue is visible, but it was hidden", this.sut.getIsMyValueTextBoxVisible());
   }
   public void then_MyValue_shows_text_Some_entered_Input_and_is_not_enabled_and_is_visible() {
     Assert.assertEquals("Expected that textbox MyValue has text <" + "Some entered Input" + ">, but was <" + this.sut.getMyValueTextBoxText() + ">", "Some entered Input", this.sut.getMyValueTextBoxText());
-    Assert.assertFalse(this.sut.getIsMyValueTextBoxEnabled());
-    Assert.assertTrue(this.sut.getIsMyValueTextBoxVisible());
+    Assert.assertFalse("Expected textbox MyValue is disabled, but it was enabled", this.sut.getIsMyValueTextBoxEnabled());
+    Assert.assertTrue("Expected textbox MyValue is visible, but it was hidden", this.sut.getIsMyValueTextBoxVisible());
   }
   public void then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_not_visible() {
     Assert.assertEquals("Expected that textbox MyValue has text <" + "Some entered Input" + ">, but was <" + this.sut.getMyValueTextBoxText() + ">", "Some entered Input", this.sut.getMyValueTextBoxText());
-    Assert.assertTrue(this.sut.getIsMyValueTextBoxEnabled());
-    Assert.assertFalse(this.sut.getIsMyValueTextBoxVisible());
+    Assert.assertTrue("Expected textbox MyValue is enabled, but it was disabled", this.sut.getIsMyValueTextBoxEnabled());
+    Assert.assertFalse("Expected textbox MyValue is hidden, but it was visible", this.sut.getIsMyValueTextBoxVisible());
   }
   public void then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_() {
     List<String> actualMultiLineTextBoxValueLines = this.sut.getMultiLineTextBoxValueTextBoxText();

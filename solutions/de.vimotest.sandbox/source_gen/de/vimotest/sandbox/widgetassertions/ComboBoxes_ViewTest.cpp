@@ -59,8 +59,8 @@ namespace widgetassertions
     ASSERT_EQ(std::string("A2"), actualMyOptionsEntries.at(1)) << std::string("Expected that combobox MyOptions has entry at index 1 matching <") + std::string("A2") + std::string(">, but was <") + actualMyOptionsEntries.at(1) + std::string(">");
     ASSERT_EQ(std::string("A3"), actualMyOptionsEntries.at(2)) << std::string("Expected that combobox MyOptions has entry at index 2 matching <") + std::string("A3") + std::string(">, but was <") + actualMyOptionsEntries.at(2) + std::string(">");
     ASSERT_EQ(std::string("A1"), this->sut->getMyOptionsComboBoxSelectedEntry()) << std::string("Expected that combobox MyOptions has ") + std::string("selected <A1>") + std::string(", but was <") + this->sut->getMyOptionsComboBoxSelectedEntry() + std::string(">");
-    EXPECT_TRUE(this->sut->getIsMyOptionsComboBoxEnabled(), std::string("Expected combobox MyOptions is enabled, but it was disabled"));
-    EXPECT_TRUE(this->sut->getIsMyOptionsComboBoxVisible(), std::string("Expected combobox MyOptions is visible, but it was hidden"));
+    ASSERT_TRUE(this->sut->getIsMyOptionsComboBoxEnabled()) << std::string("Expected combobox MyOptions is enabled, but it was disabled");
+    ASSERT_TRUE(this->sut->getIsMyOptionsComboBoxVisible()) << std::string("Expected combobox MyOptions is visible, but it was hidden");
   }
   void ComboBoxes_ViewTest::then_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_()
   {
@@ -77,7 +77,7 @@ namespace widgetassertions
     ASSERT_EQ(1, actualMyOptionsEntries_1.size()) << std::string("Expected that combobox MyOptions has 1 entries, but has ") + actualMyOptionsEntries_1.size();
     ASSERT_EQ(std::string("A"), actualMyOptionsEntries_1.at(0)) << std::string("Expected that combobox MyOptions has entry at index 0 matching <") + std::string("A") + std::string(">, but was <") + actualMyOptionsEntries_1.at(0) + std::string(">");
     ASSERT_EQ(std::string("A"), this->sut->getMyOptionsComboBoxSelectedEntry()) << std::string("Expected that combobox MyOptions has ") + std::string("selected <A>") + std::string(", but was <") + this->sut->getMyOptionsComboBoxSelectedEntry() + std::string(">");
-    EXPECT_FALSE(this->sut->getIsMyOptionsComboBoxEnabled(), std::string("Expected combobox MyOptions is disabled, but it was enabled"));
+    ASSERT_FALSE(this->sut->getIsMyOptionsComboBoxEnabled()) << std::string("Expected combobox MyOptions is disabled, but it was enabled");
   }
   void ComboBoxes_ViewTest::then_MyOptions_has_1_entries_and_selected_A_and_is_not_visible()
   {
@@ -85,6 +85,6 @@ namespace widgetassertions
     ASSERT_EQ(1, actualMyOptionsEntries_2.size()) << std::string("Expected that combobox MyOptions has 1 entries, but has ") + actualMyOptionsEntries_2.size();
     ASSERT_EQ(std::string("A"), actualMyOptionsEntries_2.at(0)) << std::string("Expected that combobox MyOptions has entry at index 0 matching <") + std::string("A") + std::string(">, but was <") + actualMyOptionsEntries_2.at(0) + std::string(">");
     ASSERT_EQ(std::string("A"), this->sut->getMyOptionsComboBoxSelectedEntry()) << std::string("Expected that combobox MyOptions has ") + std::string("selected <A>") + std::string(", but was <") + this->sut->getMyOptionsComboBoxSelectedEntry() + std::string(">");
-    EXPECT_FALSE(this->sut->getIsMyOptionsComboBoxVisible(), std::string("Expected combobox MyOptions is hidden, but it was visible"));
+    ASSERT_FALSE(this->sut->getIsMyOptionsComboBoxVisible()) << std::string("Expected combobox MyOptions is hidden, but it was visible");
   }
 }

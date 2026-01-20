@@ -54,7 +54,7 @@ public class LowLevelFields_ViewTests_Test {
 
 
   public void then_MyBool_is_true() {
-    Assert.assertTrue(this.sut.getMyBool());
+    Assert.assertTrue("Expected field 'MyBool' has value <true>, but it was <" + this.sut.getMyBool() + ">", this.sut.getMyBool());
   }
   public void then_MyInt_is_42() {
     Assert.assertEquals("Expected field 'MyInt' has value <" + 42 + ">, but it was <" + this.sut.getMyInt() + ">", Integer.valueOf(this.sut.getMyInt()), this.sut.getMyInt());
@@ -85,7 +85,7 @@ public class LowLevelFields_ViewTests_Test {
     LowLevelFields_ViewModelCustomTableRowFieldRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that table view CustomTableRowField row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">", "0", row0.getRowHandle());
     Assert.assertEquals("Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText() + ">", "", row0.getHeaderLabelText());
-    Assert.assertFalse(row0.getAdditionalBool());
+    Assert.assertFalse("Expected field 'AdditionalBool' has value <false>, but it was <" + row0.getAdditionalBool() + ">", row0.getAdditionalBool());
     // }
   }
   public void then_CustomTreeRowField_has_1_rows() {

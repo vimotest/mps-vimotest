@@ -108,12 +108,12 @@ namespace commands
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that list view MyFlags row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
-    EXPECT_TRUE(row0->getIsCheckboxesCheckBoxChecked(), std::string("Expected that checkbox Checkboxes is checked, but was <") + row0->getIsCheckboxesCheckBoxChecked() + std::string(">"));
+    ASSERT_TRUE(row0->getIsCheckboxesCheckBoxChecked()) << std::string("Expected that checkbox Checkboxes is checked, but was <") + row0->getIsCheckboxesCheckBoxChecked() + std::string(">");
     // }
     // {
     auto& row1 = actualRows.at(1);
     ASSERT_EQ(1, row1->getRowIndex()) << std::string("Expected that list view MyFlags row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
-    EXPECT_FALSE(row1->getIsCheckboxesCheckBoxChecked(), std::string("Expected that checkbox Checkboxes is unchecked, but was <") + row1->getIsCheckboxesCheckBoxChecked() + std::string(">"));
+    ASSERT_FALSE(row1->getIsCheckboxesCheckBoxChecked()) << std::string("Expected that checkbox Checkboxes is unchecked, but was <") + row1->getIsCheckboxesCheckBoxChecked() + std::string(">");
     // }
   }
   void RowBasedCommand_ViewTests::then_MyComboBoxes_has_2_rows()

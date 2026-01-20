@@ -74,9 +74,9 @@ class ComboBoxes_ViewTest {
 
     AssertEqualWithMessage ( "A1", this.sut.getMyOptionsComboBoxSelectedEntry (  ), "Expected that combobox MyOptions has " + "selected <A1>" + ", but was <" + this.sut.getMyOptionsComboBoxSelectedEntry (  ) + ">" );
 
-    AssertTrue ( this.sut.getIsMyOptionsComboBoxEnabled (  ), "Expected combobox MyOptions is enabled, but it was disabled" );
+    AssertTrueWithMessage ( this.sut.getIsMyOptionsComboBoxEnabled (  ), "Expected combobox MyOptions is enabled, but it was disabled" );
 
-    AssertTrue ( this.sut.getIsMyOptionsComboBoxVisible (  ), "Expected combobox MyOptions is visible, but it was hidden" );
+    AssertTrueWithMessage ( this.sut.getIsMyOptionsComboBoxVisible (  ), "Expected combobox MyOptions is visible, but it was hidden" );
 
   }
   
@@ -104,7 +104,7 @@ class ComboBoxes_ViewTest {
 
     AssertEqualWithMessage ( "A", this.sut.getMyOptionsComboBoxSelectedEntry (  ), "Expected that combobox MyOptions has " + "selected <A>" + ", but was <" + this.sut.getMyOptionsComboBoxSelectedEntry (  ) + ">" );
 
-    AssertFalse ( this.sut.getIsMyOptionsComboBoxEnabled (  ), "Expected combobox MyOptions is disabled, but it was enabled" );
+    AssertFalseWithMessage ( this.sut.getIsMyOptionsComboBoxEnabled (  ), "Expected combobox MyOptions is disabled, but it was enabled" );
 
   }
   
@@ -117,7 +117,7 @@ class ComboBoxes_ViewTest {
 
     AssertEqualWithMessage ( "A", this.sut.getMyOptionsComboBoxSelectedEntry (  ), "Expected that combobox MyOptions has " + "selected <A>" + ", but was <" + this.sut.getMyOptionsComboBoxSelectedEntry (  ) + ">" );
 
-    AssertFalse ( this.sut.getIsMyOptionsComboBoxVisible (  ), "Expected combobox MyOptions is hidden, but it was visible" );
+    AssertFalseWithMessage ( this.sut.getIsMyOptionsComboBoxVisible (  ), "Expected combobox MyOptions is hidden, but it was visible" );
 
   }
 }

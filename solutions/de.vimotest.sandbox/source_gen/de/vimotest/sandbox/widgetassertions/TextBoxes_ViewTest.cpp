@@ -61,20 +61,20 @@ namespace widgetassertions
   void TextBoxes_ViewTest::then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible()
   {
     ASSERT_EQ(std::string("Some entered Input"), this->sut->getMyValueTextBoxText()) << std::string("Expected that textbox MyValue has text <") + std::string("Some entered Input") + std::string(">, but was <") + this->sut->getMyValueTextBoxText() + std::string(">");
-    EXPECT_TRUE(this->sut->getIsMyValueTextBoxEnabled(), std::string("Expected textbox MyValue is enabled, but it was disabled"));
-    EXPECT_TRUE(this->sut->getIsMyValueTextBoxVisible(), std::string("Expected textbox MyValue is visible, but it was hidden"));
+    ASSERT_TRUE(this->sut->getIsMyValueTextBoxEnabled()) << std::string("Expected textbox MyValue is enabled, but it was disabled");
+    ASSERT_TRUE(this->sut->getIsMyValueTextBoxVisible()) << std::string("Expected textbox MyValue is visible, but it was hidden");
   }
   void TextBoxes_ViewTest::then_MyValue_shows_text_Some_entered_Input_and_is_not_enabled_and_is_visible()
   {
     ASSERT_EQ(std::string("Some entered Input"), this->sut->getMyValueTextBoxText()) << std::string("Expected that textbox MyValue has text <") + std::string("Some entered Input") + std::string(">, but was <") + this->sut->getMyValueTextBoxText() + std::string(">");
-    EXPECT_FALSE(this->sut->getIsMyValueTextBoxEnabled(), std::string("Expected textbox MyValue is disabled, but it was enabled"));
-    EXPECT_TRUE(this->sut->getIsMyValueTextBoxVisible(), std::string("Expected textbox MyValue is visible, but it was hidden"));
+    ASSERT_FALSE(this->sut->getIsMyValueTextBoxEnabled()) << std::string("Expected textbox MyValue is disabled, but it was enabled");
+    ASSERT_TRUE(this->sut->getIsMyValueTextBoxVisible()) << std::string("Expected textbox MyValue is visible, but it was hidden");
   }
   void TextBoxes_ViewTest::then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_not_visible()
   {
     ASSERT_EQ(std::string("Some entered Input"), this->sut->getMyValueTextBoxText()) << std::string("Expected that textbox MyValue has text <") + std::string("Some entered Input") + std::string(">, but was <") + this->sut->getMyValueTextBoxText() + std::string(">");
-    EXPECT_TRUE(this->sut->getIsMyValueTextBoxEnabled(), std::string("Expected textbox MyValue is enabled, but it was disabled"));
-    EXPECT_FALSE(this->sut->getIsMyValueTextBoxVisible(), std::string("Expected textbox MyValue is hidden, but it was visible"));
+    ASSERT_TRUE(this->sut->getIsMyValueTextBoxEnabled()) << std::string("Expected textbox MyValue is enabled, but it was disabled");
+    ASSERT_FALSE(this->sut->getIsMyValueTextBoxVisible()) << std::string("Expected textbox MyValue is hidden, but it was visible");
   }
   void TextBoxes_ViewTest::then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_()
   {

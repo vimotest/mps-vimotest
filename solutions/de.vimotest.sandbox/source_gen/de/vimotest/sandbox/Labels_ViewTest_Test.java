@@ -78,18 +78,18 @@ public class Labels_ViewTest_Test {
 
   public void then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible() {
     Assert.assertEquals("Expected that label Test has text <" + "My Expectation Text" + ">, but was <" + this.sut.getTestLabelText() + ">", "My Expectation Text", this.sut.getTestLabelText());
-    Assert.assertTrue(this.sut.getIsTestLabelEnabled());
-    Assert.assertTrue(this.sut.getIsTestLabelVisible());
+    Assert.assertTrue("Expected label Test is enabled, but it was disabled", this.sut.getIsTestLabelEnabled());
+    Assert.assertTrue("Expected label Test is visible, but it was hidden", this.sut.getIsTestLabelVisible());
   }
   public void then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible() {
     Assert.assertEquals("Expected that label Test has text <" + "My Expectation Text" + ">, but was <" + this.sut.getTestLabelText() + ">", "My Expectation Text", this.sut.getTestLabelText());
-    Assert.assertFalse(this.sut.getIsTestLabelEnabled());
-    Assert.assertTrue(this.sut.getIsTestLabelVisible());
+    Assert.assertFalse("Expected label Test is disabled, but it was enabled", this.sut.getIsTestLabelEnabled());
+    Assert.assertTrue("Expected label Test is visible, but it was hidden", this.sut.getIsTestLabelVisible());
   }
   public void then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible() {
     Assert.assertEquals("Expected that label Test has text <" + "My Expectation Text" + ">, but was <" + this.sut.getTestLabelText() + ">", "My Expectation Text", this.sut.getTestLabelText());
-    Assert.assertTrue(this.sut.getIsTestLabelEnabled());
-    Assert.assertFalse(this.sut.getIsTestLabelVisible());
+    Assert.assertTrue("Expected label Test is enabled, but it was disabled", this.sut.getIsTestLabelEnabled());
+    Assert.assertFalse("Expected label Test is hidden, but it was visible", this.sut.getIsTestLabelVisible());
   }
   public void then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_() {
     List<String> actualMultiLineLines = this.sut.getMultiLineLabelText();

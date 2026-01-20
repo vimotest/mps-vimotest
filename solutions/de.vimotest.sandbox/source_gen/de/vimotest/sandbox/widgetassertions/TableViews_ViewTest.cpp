@@ -55,7 +55,7 @@ namespace widgetassertions
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that table view MyElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
-    EXPECT_TRUE(row0->getIsIncludeCheckBoxChecked(), std::string("Expected that checkbox Include is checked, but was <") + row0->getIsIncludeCheckBoxChecked() + std::string(">"));
+    ASSERT_TRUE(row0->getIsIncludeCheckBoxChecked()) << std::string("Expected that checkbox Include is checked, but was <") + row0->getIsIncludeCheckBoxChecked() + std::string(">");
     ASSERT_EQ(std::string("A"), row0->getNameLabelText()) << std::string("Expected that label Name has text <") + std::string("A") + std::string(">, but was <") + row0->getNameLabelText() + std::string(">");
     ASSERT_EQ(std::string("B"), row0->getDescriptionLabelText()) << std::string("Expected that label Description has text <") + std::string("B") + std::string(">, but was <") + row0->getDescriptionLabelText() + std::string(">");
     ASSERT_EQ(std::string("image_info"), row0->getInfoIconImageName()) << std::string("Expected that image InfoIcon has ") + std::string("image <image_info>") + std::string(", but was <") + row0->getInfoIconImageName() + std::string(">");
@@ -63,15 +63,15 @@ namespace widgetassertions
     // {
     auto& row1 = actualRows.at(1);
     ASSERT_EQ(1, row1->getRowIndex()) << std::string("Expected that table view MyElements row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
-    EXPECT_FALSE(row1->getIsIncludeCheckBoxChecked(), std::string("Expected that checkbox Include is unchecked, but was <") + row1->getIsIncludeCheckBoxChecked() + std::string(">"));
+    ASSERT_FALSE(row1->getIsIncludeCheckBoxChecked()) << std::string("Expected that checkbox Include is unchecked, but was <") + row1->getIsIncludeCheckBoxChecked() + std::string(">");
     ASSERT_EQ(std::string("C"), row1->getNameLabelText()) << std::string("Expected that label Name has text <") + std::string("C") + std::string(">, but was <") + row1->getNameLabelText() + std::string(">");
     ASSERT_EQ(std::string("D"), row1->getDescriptionLabelText()) << std::string("Expected that label Description has text <") + std::string("D") + std::string(">, but was <") + row1->getDescriptionLabelText() + std::string(">");
     ASSERT_EQ(std::string("image_star"), row1->getInfoIconImageName()) << std::string("Expected that image InfoIcon has ") + std::string("image <image_star>") + std::string(", but was <") + row1->getInfoIconImageName() + std::string(">");
     // }
     ASSERT_EQ(1, this->sut->getMyElementsTableSelectedRow()) << std::string("Expected that table view MyElements has selected row with row handle <") + 1 + std::string(">, but was <") + this->sut->getMyElementsTableSelectedRow() + std::string(">");
-    EXPECT_TRUE(this->sut->getIsMyElementsTableVisible(), std::string("Expected table view MyElements is visible, but it was hidden"));
-    EXPECT_TRUE(this->sut->getIsMyElementsTableEnabled(), std::string("Expected table view MyElements is enabled, but it was disabled"));
-    EXPECT_FALSE(this->sut->getIsMyElementsTableDescriptionColumnVisible(), std::string("Expected table column Description is hidden, but it was visible"));
+    ASSERT_TRUE(this->sut->getIsMyElementsTableVisible()) << std::string("Expected table view MyElements is visible, but it was hidden");
+    ASSERT_TRUE(this->sut->getIsMyElementsTableEnabled()) << std::string("Expected table view MyElements is enabled, but it was disabled");
+    ASSERT_FALSE(this->sut->getIsMyElementsTableDescriptionColumnVisible()) << std::string("Expected table column Description is hidden, but it was visible");
   }
   void TableViews_ViewTest::then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1()
   {

@@ -51,10 +51,10 @@ public class RadioButton_ViewTests_Test {
   }
   public void then_Options_selected_OptionA_and_OptionB_is_not_enabled() {
     Assert.assertEquals("Expected that radio button group Options has selected <" + RadioButton_ViewModelOptionsOption.OptionA + ">, but was <" + this.sut.getOptionsRadioButtonGroupSelectedEntry() + ">", RadioButton_ViewModelOptionsOption.OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry());
-    Assert.assertFalse(this.sut.getIsOptionBRadioButtonEnabled());
+    Assert.assertFalse("Expected radio button OptionB is disabled, but it was enabled", this.sut.getIsOptionBRadioButtonEnabled());
   }
   public void then_Options_selected_OptionA_and_OptionB_is_not_visible() {
     Assert.assertEquals("Expected that radio button group Options has selected <" + RadioButton_ViewModelOptionsOption.OptionA + ">, but was <" + this.sut.getOptionsRadioButtonGroupSelectedEntry() + ">", RadioButton_ViewModelOptionsOption.OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry());
-    Assert.assertFalse(this.sut.getIsOptionBRadioButtonVisible());
+    Assert.assertFalse("Expected radio button OptionB is hidden, but it was visible", this.sut.getIsOptionBRadioButtonVisible());
   }
 }

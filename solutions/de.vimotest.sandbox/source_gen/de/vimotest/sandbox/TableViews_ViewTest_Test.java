@@ -54,7 +54,7 @@ public class TableViews_ViewTest_Test {
     // {
     TableViews_ViewModelMyElementsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that table view MyElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
-    Assert.assertTrue(row0.getIsIncludeCheckBoxChecked());
+    Assert.assertTrue("Expected that checkbox Include is checked, but was <" + row0.getIsIncludeCheckBoxChecked() + ">", row0.getIsIncludeCheckBoxChecked());
     Assert.assertEquals("Expected that label Name has text <" + "A" + ">, but was <" + row0.getNameLabelText() + ">", "A", row0.getNameLabelText());
     Assert.assertEquals("Expected that label Description has text <" + "B" + ">, but was <" + row0.getDescriptionLabelText() + ">", "B", row0.getDescriptionLabelText());
     Assert.assertEquals("Expected that image InfoIcon has " + "image <image_info>" + ", but was <" + row0.getInfoIconImageName() + ">", "image_info", row0.getInfoIconImageName());
@@ -62,15 +62,15 @@ public class TableViews_ViewTest_Test {
     // {
     TableViews_ViewModelMyElementsRow row1 = actualRows.get(2 - 1);
     Assert.assertEquals("Expected that table view MyElements row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
-    Assert.assertFalse(row1.getIsIncludeCheckBoxChecked());
+    Assert.assertFalse("Expected that checkbox Include is unchecked, but was <" + row1.getIsIncludeCheckBoxChecked() + ">", row1.getIsIncludeCheckBoxChecked());
     Assert.assertEquals("Expected that label Name has text <" + "C" + ">, but was <" + row1.getNameLabelText() + ">", "C", row1.getNameLabelText());
     Assert.assertEquals("Expected that label Description has text <" + "D" + ">, but was <" + row1.getDescriptionLabelText() + ">", "D", row1.getDescriptionLabelText());
     Assert.assertEquals("Expected that image InfoIcon has " + "image <image_star>" + ", but was <" + row1.getInfoIconImageName() + ">", "image_star", row1.getInfoIconImageName());
     // }
     Assert.assertEquals("Expected that table view MyElements has selected row with row handle <" + 1 + ">, but was <" + this.sut.getMyElementsTableSelectedRow() + ">", Integer.valueOf(this.sut.getMyElementsTableSelectedRow()), this.sut.getMyElementsTableSelectedRow());
-    Assert.assertTrue(this.sut.getIsMyElementsTableVisible());
-    Assert.assertTrue(this.sut.getIsMyElementsTableEnabled());
-    Assert.assertFalse(this.sut.getIsMyElementsTableDescriptionColumnVisible());
+    Assert.assertTrue("Expected table view MyElements is visible, but it was hidden", this.sut.getIsMyElementsTableVisible());
+    Assert.assertTrue("Expected table view MyElements is enabled, but it was disabled", this.sut.getIsMyElementsTableEnabled());
+    Assert.assertFalse("Expected table column Description is hidden, but it was visible", this.sut.getIsMyElementsTableDescriptionColumnVisible());
   }
   public void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() {
     List<TableViews_ViewModelMyStringRowHandlesRow> actualRows = this.sut.getMyStringRowHandlesTableRows();

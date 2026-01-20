@@ -57,8 +57,8 @@ public class ComboBoxes_ViewTest_Test {
     Assert.assertEquals("Expected that combobox MyOptions has entry at index 1 matching <" + "A2" + ">, but was <" + actualMyOptionsEntries.get(2 - 1) + ">", "A2", actualMyOptionsEntries.get(2 - 1));
     Assert.assertEquals("Expected that combobox MyOptions has entry at index 2 matching <" + "A3" + ">, but was <" + actualMyOptionsEntries.get(3 - 1) + ">", "A3", actualMyOptionsEntries.get(3 - 1));
     Assert.assertEquals("Expected that combobox MyOptions has " + "selected <A1>" + ", but was <" + this.sut.getMyOptionsComboBoxSelectedEntry() + ">", "A1", this.sut.getMyOptionsComboBoxSelectedEntry());
-    Assert.assertTrue(this.sut.getIsMyOptionsComboBoxEnabled());
-    Assert.assertTrue(this.sut.getIsMyOptionsComboBoxVisible());
+    Assert.assertTrue("Expected combobox MyOptions is enabled, but it was disabled", this.sut.getIsMyOptionsComboBoxEnabled());
+    Assert.assertTrue("Expected combobox MyOptions is visible, but it was hidden", this.sut.getIsMyOptionsComboBoxVisible());
   }
   public void then_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_() {
     List<String> actualMyOptionsWithFreeTextEntries = this.sut.getMyOptionsWithFreeTextComboBoxEntries();
@@ -73,13 +73,13 @@ public class ComboBoxes_ViewTest_Test {
     Assert.assertEquals("Expected that combobox MyOptions has 1 entries, but has " + actualMyOptionsEntries_1.size(), Integer.valueOf(1), Integer.valueOf(actualMyOptionsEntries_1.size()));
     Assert.assertEquals("Expected that combobox MyOptions has entry at index 0 matching <" + "A" + ">, but was <" + actualMyOptionsEntries_1.get(1 - 1) + ">", "A", actualMyOptionsEntries_1.get(1 - 1));
     Assert.assertEquals("Expected that combobox MyOptions has " + "selected <A>" + ", but was <" + this.sut.getMyOptionsComboBoxSelectedEntry() + ">", "A", this.sut.getMyOptionsComboBoxSelectedEntry());
-    Assert.assertFalse(this.sut.getIsMyOptionsComboBoxEnabled());
+    Assert.assertFalse("Expected combobox MyOptions is disabled, but it was enabled", this.sut.getIsMyOptionsComboBoxEnabled());
   }
   public void then_MyOptions_has_1_entries_and_selected_A_and_is_not_visible() {
     List<String> actualMyOptionsEntries_2 = this.sut.getMyOptionsComboBoxEntries();
     Assert.assertEquals("Expected that combobox MyOptions has 1 entries, but has " + actualMyOptionsEntries_2.size(), Integer.valueOf(1), Integer.valueOf(actualMyOptionsEntries_2.size()));
     Assert.assertEquals("Expected that combobox MyOptions has entry at index 0 matching <" + "A" + ">, but was <" + actualMyOptionsEntries_2.get(1 - 1) + ">", "A", actualMyOptionsEntries_2.get(1 - 1));
     Assert.assertEquals("Expected that combobox MyOptions has " + "selected <A>" + ", but was <" + this.sut.getMyOptionsComboBoxSelectedEntry() + ">", "A", this.sut.getMyOptionsComboBoxSelectedEntry());
-    Assert.assertFalse(this.sut.getIsMyOptionsComboBoxVisible());
+    Assert.assertFalse("Expected combobox MyOptions is hidden, but it was visible", this.sut.getIsMyOptionsComboBoxVisible());
   }
 }

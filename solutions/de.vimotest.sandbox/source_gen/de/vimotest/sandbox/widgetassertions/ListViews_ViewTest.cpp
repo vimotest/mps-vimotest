@@ -78,26 +78,26 @@ namespace widgetassertions
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that list view MyListOfLabel row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
     ASSERT_EQ(std::string("A"), row0->getMyValueLabelText()) << std::string("Expected that label My Value has text <") + std::string("A") + std::string(">, but was <") + row0->getMyValueLabelText() + std::string(">");
-    EXPECT_FALSE(row0->getIsMyValueLabelVisible(), std::string("Expected label My Value is hidden, but it was visible"));
-    EXPECT_TRUE(row0->getIsMyValueLabelEnabled(), std::string("Expected label My Value is enabled, but it was disabled"));
+    ASSERT_FALSE(row0->getIsMyValueLabelVisible()) << std::string("Expected label My Value is hidden, but it was visible");
+    ASSERT_TRUE(row0->getIsMyValueLabelEnabled()) << std::string("Expected label My Value is enabled, but it was disabled");
     // }
     // {
     auto& row1 = actualRows.at(1);
     ASSERT_EQ(1, row1->getRowIndex()) << std::string("Expected that list view MyListOfLabel row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
     ASSERT_EQ(std::string("B"), row1->getMyValueLabelText()) << std::string("Expected that label My Value has text <") + std::string("B") + std::string(">, but was <") + row1->getMyValueLabelText() + std::string(">");
-    EXPECT_FALSE(row1->getIsMyValueLabelEnabled(), std::string("Expected label My Value is disabled, but it was enabled"));
+    ASSERT_FALSE(row1->getIsMyValueLabelEnabled()) << std::string("Expected label My Value is disabled, but it was enabled");
     // }
     // {
     auto& row2 = actualRows.at(2);
     ASSERT_EQ(2, row2->getRowIndex()) << std::string("Expected that list view MyListOfLabel row at index 2 has rowhandle <2>, but was <") + row2->getRowIndex() + std::string(">");
     ASSERT_EQ(std::string("C"), row2->getMyValueLabelText()) << std::string("Expected that label My Value has text <") + std::string("C") + std::string(">, but was <") + row2->getMyValueLabelText() + std::string(">");
-    EXPECT_TRUE(row2->getIsMyValueLabelEnabled(), std::string("Expected label My Value is enabled, but it was disabled"));
+    ASSERT_TRUE(row2->getIsMyValueLabelEnabled()) << std::string("Expected label My Value is enabled, but it was disabled");
     // }
     // {
     auto& row3 = actualRows.at(3);
     ASSERT_EQ(3, row3->getRowIndex()) << std::string("Expected that list view MyListOfLabel row at index 3 has rowhandle <3>, but was <") + row3->getRowIndex() + std::string(">");
     ASSERT_EQ(std::string("D"), row3->getMyValueLabelText()) << std::string("Expected that label My Value has text <") + std::string("D") + std::string(">, but was <") + row3->getMyValueLabelText() + std::string(">");
-    EXPECT_TRUE(row3->getIsMyValueLabelVisible(), std::string("Expected label My Value is visible, but it was hidden"));
+    ASSERT_TRUE(row3->getIsMyValueLabelVisible()) << std::string("Expected label My Value is visible, but it was hidden");
     // }
     ASSERT_EQ(3, this->sut->getMyListOfLabelListSelectedRow()) << std::string("Expected that list view MyListOfLabel has selected row with row handle <") + 3 + std::string(">, but was <") + this->sut->getMyListOfLabelListSelectedRow() + std::string(">");
   }
@@ -123,17 +123,17 @@ namespace widgetassertions
     // {
     auto& row0 = actualRows.at(0);
     ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that list view MyCheckboxes row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
-    EXPECT_TRUE(row0->getIsHeaderCheckBoxChecked(), std::string("Expected that checkbox Header is checked, but was <") + row0->getIsHeaderCheckBoxChecked() + std::string(">"));
+    ASSERT_TRUE(row0->getIsHeaderCheckBoxChecked()) << std::string("Expected that checkbox Header is checked, but was <") + row0->getIsHeaderCheckBoxChecked() + std::string(">");
     // }
     // {
     auto& row1 = actualRows.at(1);
     ASSERT_EQ(1, row1->getRowIndex()) << std::string("Expected that list view MyCheckboxes row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
-    EXPECT_FALSE(row1->getIsHeaderCheckBoxChecked(), std::string("Expected that checkbox Header is unchecked, but was <") + row1->getIsHeaderCheckBoxChecked() + std::string(">"));
+    ASSERT_FALSE(row1->getIsHeaderCheckBoxChecked()) << std::string("Expected that checkbox Header is unchecked, but was <") + row1->getIsHeaderCheckBoxChecked() + std::string(">");
     // }
     // {
     auto& row2 = actualRows.at(2);
     ASSERT_EQ(2, row2->getRowIndex()) << std::string("Expected that list view MyCheckboxes row at index 2 has rowhandle <2>, but was <") + row2->getRowIndex() + std::string(">");
-    EXPECT_TRUE(row2->getIsHeaderCheckBoxChecked(), std::string("Expected that checkbox Header is checked, but was <") + row2->getIsHeaderCheckBoxChecked() + std::string(">"));
+    ASSERT_TRUE(row2->getIsHeaderCheckBoxChecked()) << std::string("Expected that checkbox Header is checked, but was <") + row2->getIsHeaderCheckBoxChecked() + std::string(">");
     ASSERT_EQ(std::string("My Label"), row2->getHeaderCheckBoxText()) << std::string("Expected that checkbox Header has text <") + std::string("My Label") + std::string(">, but was <") + row2->getHeaderCheckBoxText() + std::string(">");
     // }
   }
@@ -210,7 +210,7 @@ namespace widgetassertions
     auto& row1 = actualRows.at(1);
     ASSERT_EQ(1, row1->getRowIndex()) << std::string("Expected that list view MyListOfLabel row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
     ASSERT_EQ(std::string("B"), row1->getMyValueLabelText()) << std::string("Expected that label My Value has text <") + std::string("B") + std::string(">, but was <") + row1->getMyValueLabelText() + std::string(">");
-    EXPECT_FALSE(row1->getIsMyValueLabelEnabled(), std::string("Expected label My Value is disabled, but it was enabled"));
+    ASSERT_FALSE(row1->getIsMyValueLabelEnabled()) << std::string("Expected label My Value is disabled, but it was enabled");
     // }
     // {
     auto& row2 = actualRows.at(2);
@@ -220,7 +220,7 @@ namespace widgetassertions
     auto& row3 = actualRows.at(3);
     ASSERT_EQ(3, row3->getRowIndex()) << std::string("Expected that list view MyListOfLabel row at index 3 has rowhandle <3>, but was <") + row3->getRowIndex() + std::string(">");
     ASSERT_EQ(std::string("D"), row3->getMyValueLabelText()) << std::string("Expected that label My Value has text <") + std::string("D") + std::string(">, but was <") + row3->getMyValueLabelText() + std::string(">");
-    EXPECT_TRUE(row3->getIsMyValueLabelVisible(), std::string("Expected label My Value is visible, but it was hidden"));
+    ASSERT_TRUE(row3->getIsMyValueLabelVisible()) << std::string("Expected label My Value is visible, but it was hidden");
     // }
   }
   void ListViews_ViewTest::then_MyButtons_has_0_rows()

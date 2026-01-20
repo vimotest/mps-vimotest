@@ -63,7 +63,7 @@ class LowLevelFields_ViewTests {
 
   
   public then_MyBool_is_true (  ) {
-    AssertTrue ( this.sut.getMyBool (  ), "Expected field 'MyBool' has value <true>, but it was <" + this.sut.getMyBool (  ) + ">" );
+    AssertTrueWithMessage ( this.sut.getMyBool (  ), "Expected field 'MyBool' has value <true>, but it was <" + this.sut.getMyBool (  ) + ">" );
 
   }
   
@@ -118,7 +118,7 @@ class LowLevelFields_ViewTests {
 
       AssertEqualWithMessage ( "", row0.getHeaderLabelText (  ), "Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText (  ) + ">" );
 
-      AssertFalse ( row0.getAdditionalBool (  ), "Expected field 'AdditionalBool' has value <false>, but it was <" + row0.getAdditionalBool (  ) + ">" );
+      AssertFalseWithMessage ( row0.getAdditionalBool (  ), "Expected field 'AdditionalBool' has value <false>, but it was <" + row0.getAdditionalBool (  ) + ">" );
 
     }
 

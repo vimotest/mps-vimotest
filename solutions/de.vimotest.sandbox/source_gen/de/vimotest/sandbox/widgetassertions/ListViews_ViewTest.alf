@@ -90,9 +90,9 @@ class ListViews_ViewTest {
 
       AssertEqualWithMessage ( "A", row0.getMyValueLabelText (  ), "Expected that label My Value has text <" + "A" + ">, but was <" + row0.getMyValueLabelText (  ) + ">" );
 
-      AssertFalse ( row0.getIsMyValueLabelVisible (  ), "Expected label My Value is hidden, but it was visible" );
+      AssertFalseWithMessage ( row0.getIsMyValueLabelVisible (  ), "Expected label My Value is hidden, but it was visible" );
 
-      AssertTrue ( row0.getIsMyValueLabelEnabled (  ), "Expected label My Value is enabled, but it was disabled" );
+      AssertTrueWithMessage ( row0.getIsMyValueLabelEnabled (  ), "Expected label My Value is enabled, but it was disabled" );
 
     }
 
@@ -103,7 +103,7 @@ class ListViews_ViewTest {
 
       AssertEqualWithMessage ( "B", row1.getMyValueLabelText (  ), "Expected that label My Value has text <" + "B" + ">, but was <" + row1.getMyValueLabelText (  ) + ">" );
 
-      AssertFalse ( row1.getIsMyValueLabelEnabled (  ), "Expected label My Value is disabled, but it was enabled" );
+      AssertFalseWithMessage ( row1.getIsMyValueLabelEnabled (  ), "Expected label My Value is disabled, but it was enabled" );
 
     }
 
@@ -114,7 +114,7 @@ class ListViews_ViewTest {
 
       AssertEqualWithMessage ( "C", row2.getMyValueLabelText (  ), "Expected that label My Value has text <" + "C" + ">, but was <" + row2.getMyValueLabelText (  ) + ">" );
 
-      AssertTrue ( row2.getIsMyValueLabelEnabled (  ), "Expected label My Value is enabled, but it was disabled" );
+      AssertTrueWithMessage ( row2.getIsMyValueLabelEnabled (  ), "Expected label My Value is enabled, but it was disabled" );
 
     }
 
@@ -125,7 +125,7 @@ class ListViews_ViewTest {
 
       AssertEqualWithMessage ( "D", row3.getMyValueLabelText (  ), "Expected that label My Value has text <" + "D" + ">, but was <" + row3.getMyValueLabelText (  ) + ">" );
 
-      AssertTrue ( row3.getIsMyValueLabelVisible (  ), "Expected label My Value is visible, but it was hidden" );
+      AssertTrueWithMessage ( row3.getIsMyValueLabelVisible (  ), "Expected label My Value is visible, but it was hidden" );
 
     }
 
@@ -168,7 +168,7 @@ class ListViews_ViewTest {
 
       AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that list view MyCheckboxes row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
 
-      AssertTrue ( row0.getIsHeaderCheckBoxChecked (  ), "Expected that checkbox Header is checked, but was <" + row0.getIsHeaderCheckBoxChecked (  ) + ">" );
+      AssertTrueWithMessage ( row0.getIsHeaderCheckBoxChecked (  ), "Expected that checkbox Header is checked, but was <" + row0.getIsHeaderCheckBoxChecked (  ) + ">" );
 
     }
 
@@ -177,7 +177,7 @@ class ListViews_ViewTest {
 
       AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that list view MyCheckboxes row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
 
-      AssertFalse ( row1.getIsHeaderCheckBoxChecked (  ), "Expected that checkbox Header is unchecked, but was <" + row1.getIsHeaderCheckBoxChecked (  ) + ">" );
+      AssertFalseWithMessage ( row1.getIsHeaderCheckBoxChecked (  ), "Expected that checkbox Header is unchecked, but was <" + row1.getIsHeaderCheckBoxChecked (  ) + ">" );
 
     }
 
@@ -186,7 +186,7 @@ class ListViews_ViewTest {
 
       AssertEqualWithMessage ( 2, row2.getRowIndex (  ), "Expected that list view MyCheckboxes row at index 2 has rowhandle <2>, but was <" + row2.getRowIndex (  ) + ">" );
 
-      AssertTrue ( row2.getIsHeaderCheckBoxChecked (  ), "Expected that checkbox Header is checked, but was <" + row2.getIsHeaderCheckBoxChecked (  ) + ">" );
+      AssertTrueWithMessage ( row2.getIsHeaderCheckBoxChecked (  ), "Expected that checkbox Header is checked, but was <" + row2.getIsHeaderCheckBoxChecked (  ) + ">" );
 
       AssertEqualWithMessage ( "My Label", row2.getHeaderCheckBoxText (  ), "Expected that checkbox Header has text <" + "My Label" + ">, but was <" + row2.getHeaderCheckBoxText (  ) + ">" );
 
@@ -317,7 +317,7 @@ class ListViews_ViewTest {
 
       AssertEqualWithMessage ( "B", row1.getMyValueLabelText (  ), "Expected that label My Value has text <" + "B" + ">, but was <" + row1.getMyValueLabelText (  ) + ">" );
 
-      AssertFalse ( row1.getIsMyValueLabelEnabled (  ), "Expected label My Value is disabled, but it was enabled" );
+      AssertFalseWithMessage ( row1.getIsMyValueLabelEnabled (  ), "Expected label My Value is disabled, but it was enabled" );
 
     }
 
@@ -335,7 +335,7 @@ class ListViews_ViewTest {
 
       AssertEqualWithMessage ( "D", row3.getMyValueLabelText (  ), "Expected that label My Value has text <" + "D" + ">, but was <" + row3.getMyValueLabelText (  ) + ">" );
 
-      AssertTrue ( row3.getIsMyValueLabelVisible (  ), "Expected label My Value is visible, but it was hidden" );
+      AssertTrueWithMessage ( row3.getIsMyValueLabelVisible (  ), "Expected label My Value is visible, but it was hidden" );
 
     }
 

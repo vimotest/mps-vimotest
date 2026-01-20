@@ -85,20 +85,20 @@ namespace widgetassertions
   void Labels_ViewTest::then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible()
   {
     ASSERT_EQ(std::string("My Expectation Text"), this->sut->getTestLabelText()) << std::string("Expected that label Test has text <") + std::string("My Expectation Text") + std::string(">, but was <") + this->sut->getTestLabelText() + std::string(">");
-    EXPECT_TRUE(this->sut->getIsTestLabelEnabled(), std::string("Expected label Test is enabled, but it was disabled"));
-    EXPECT_TRUE(this->sut->getIsTestLabelVisible(), std::string("Expected label Test is visible, but it was hidden"));
+    ASSERT_TRUE(this->sut->getIsTestLabelEnabled()) << std::string("Expected label Test is enabled, but it was disabled");
+    ASSERT_TRUE(this->sut->getIsTestLabelVisible()) << std::string("Expected label Test is visible, but it was hidden");
   }
   void Labels_ViewTest::then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible()
   {
     ASSERT_EQ(std::string("My Expectation Text"), this->sut->getTestLabelText()) << std::string("Expected that label Test has text <") + std::string("My Expectation Text") + std::string(">, but was <") + this->sut->getTestLabelText() + std::string(">");
-    EXPECT_FALSE(this->sut->getIsTestLabelEnabled(), std::string("Expected label Test is disabled, but it was enabled"));
-    EXPECT_TRUE(this->sut->getIsTestLabelVisible(), std::string("Expected label Test is visible, but it was hidden"));
+    ASSERT_FALSE(this->sut->getIsTestLabelEnabled()) << std::string("Expected label Test is disabled, but it was enabled");
+    ASSERT_TRUE(this->sut->getIsTestLabelVisible()) << std::string("Expected label Test is visible, but it was hidden");
   }
   void Labels_ViewTest::then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible()
   {
     ASSERT_EQ(std::string("My Expectation Text"), this->sut->getTestLabelText()) << std::string("Expected that label Test has text <") + std::string("My Expectation Text") + std::string(">, but was <") + this->sut->getTestLabelText() + std::string(">");
-    EXPECT_TRUE(this->sut->getIsTestLabelEnabled(), std::string("Expected label Test is enabled, but it was disabled"));
-    EXPECT_FALSE(this->sut->getIsTestLabelVisible(), std::string("Expected label Test is hidden, but it was visible"));
+    ASSERT_TRUE(this->sut->getIsTestLabelEnabled()) << std::string("Expected label Test is enabled, but it was disabled");
+    ASSERT_FALSE(this->sut->getIsTestLabelVisible()) << std::string("Expected label Test is hidden, but it was visible");
   }
   void Labels_ViewTest::then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_()
   {

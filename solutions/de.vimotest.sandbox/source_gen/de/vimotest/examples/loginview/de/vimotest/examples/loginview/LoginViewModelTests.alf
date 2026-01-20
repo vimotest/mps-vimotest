@@ -178,7 +178,7 @@ class LoginViewModelTests {
   }
   
   public then_Login_is_enabled (  ) {
-    AssertTrue ( this.sut.getIsLoginButtonEnabled (  ), "Expected button Login is enabled, but it was disabled" );
+    AssertTrueWithMessage ( this.sut.getIsLoginButtonEnabled (  ), "Expected button Login is enabled, but it was disabled" );
 
   }
   
@@ -188,7 +188,7 @@ class LoginViewModelTests {
   }
   
   public then_Login_is_not_enabled (  ) {
-    AssertFalse ( this.sut.getIsLoginButtonEnabled (  ), "Expected button Login is disabled, but it was enabled" );
+    AssertFalseWithMessage ( this.sut.getIsLoginButtonEnabled (  ), "Expected button Login is disabled, but it was enabled" );
 
   }
   
@@ -208,7 +208,7 @@ class LoginViewModelTests {
   }
   
   public then_ShowPassword_is_checked (  ) {
-    AssertTrue ( this.sut.getIsShowPasswordCheckBoxChecked (  ), "Expected that checkbox ShowPassword is checked, but was <" + this.sut.getIsShowPasswordCheckBoxChecked (  ) + ">" );
+    AssertTrueWithMessage ( this.sut.getIsShowPasswordCheckBoxChecked (  ), "Expected that checkbox ShowPassword is checked, but was <" + this.sut.getIsShowPasswordCheckBoxChecked (  ) + ">" );
 
   }
   

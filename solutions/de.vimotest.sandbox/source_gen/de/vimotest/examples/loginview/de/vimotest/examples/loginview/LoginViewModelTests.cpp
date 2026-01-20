@@ -145,7 +145,7 @@ namespace de::vimotest::examples::loginview
   }
   void LoginViewModelTests::then_Login_is_enabled()
   {
-    EXPECT_TRUE(this->sut->getIsLoginButtonEnabled(), std::string("Expected button Login is enabled, but it was disabled"));
+    ASSERT_TRUE(this->sut->getIsLoginButtonEnabled()) << std::string("Expected button Login is enabled, but it was disabled");
   }
   void LoginViewModelTests::then_Password_shows_empty_text()
   {
@@ -153,7 +153,7 @@ namespace de::vimotest::examples::loginview
   }
   void LoginViewModelTests::then_Login_is_not_enabled()
   {
-    EXPECT_FALSE(this->sut->getIsLoginButtonEnabled(), std::string("Expected button Login is disabled, but it was enabled"));
+    ASSERT_FALSE(this->sut->getIsLoginButtonEnabled()) << std::string("Expected button Login is disabled, but it was enabled");
   }
   void LoginViewModelTests::then_Username_shows_text_Ada_()
   {
@@ -169,7 +169,7 @@ namespace de::vimotest::examples::loginview
   }
   void LoginViewModelTests::then_ShowPassword_is_checked()
   {
-    EXPECT_TRUE(this->sut->getIsShowPasswordCheckBoxChecked(), std::string("Expected that checkbox ShowPassword is checked, but was <") + this->sut->getIsShowPasswordCheckBoxChecked() + std::string(">"));
+    ASSERT_TRUE(this->sut->getIsShowPasswordCheckBoxChecked()) << std::string("Expected that checkbox ShowPassword is checked, but was <") + this->sut->getIsShowPasswordCheckBoxChecked() + std::string(">");
   }
   void LoginViewModelTests::then_Error_shows_text_Needs_uppercase_letters_()
   {

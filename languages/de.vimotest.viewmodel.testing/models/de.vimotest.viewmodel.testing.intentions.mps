@@ -19,6 +19,9 @@
       <concept id="1194033889146" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1XNTG" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -59,6 +62,7 @@
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
@@ -150,6 +154,7 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
@@ -172,6 +177,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -947,9 +953,9 @@
   </node>
   <node concept="2S6QgY" id="12mSCTf0mmI">
     <property role="3GE5qa" value="test.context.datatable" />
-    <property role="TrG5h" value="DataTableContext_DeleteColumn_Intention" />
+    <property role="TrG5h" value="IDataTable_DeleteColumn_Intention" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="53m0:6RKU0sd8pLq" resolve="DataTableContext" />
+    <ref role="2ZfgGC" to="53m0:5iuj9z7PSB0" resolve="IDataTable" />
     <node concept="2BZ0e9" id="12mSCTf0YOg" role="1S$sla">
       <property role="TrG5h" value="selectedCells" />
       <node concept="3Tm6S6" id="12mSCTf0YOh" role="1B3o_S" />
@@ -992,8 +998,8 @@
                       <node concept="2OqwBi" id="12mSCTf2hDk" role="1y566C">
                         <node concept="2OqwBi" id="12mSCTf2fFf" role="2Oq$k0">
                           <node concept="2Sf5sV" id="12mSCTf2fFg" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="12mSCTf2fFh" role="2OqNvi">
-                            <ref role="3Tt5mk" to="53m0:6RKU0sd8q9K" resolve="headersRow" />
+                          <node concept="2qgKlT" id="5iuj9z7Q7ZA" role="2OqNvi">
+                            <ref role="37wK5l" to="fwln:5iuj9z7PVFt" resolve="getHeadersRow" />
                           </node>
                         </node>
                         <node concept="3Tsc0h" id="12mSCTf2i61" role="2OqNvi">
@@ -1380,6 +1386,84 @@
             <node concept="359W_D" id="3dQE_iXByFe" role="3uHU7w">
               <ref role="359W_E" to="53m0:6RKU0sd8pLq" resolve="DataTableContext" />
               <ref role="359W_F" to="53m0:6RKU0sd8q9M" resolve="rows" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="5iuj9z7QpAh">
+    <property role="3GE5qa" value="test" />
+    <property role="TrG5h" value="ViewModelTestScenario_addRemoveDataTable" />
+    <ref role="2ZfgGC" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestScenario" />
+    <node concept="2S6ZIM" id="5iuj9z7QpAi" role="2ZfVej">
+      <node concept="3clFbS" id="5iuj9z7QpAj" role="2VODD2">
+        <node concept="3clFbF" id="5iuj9z7QpHs" role="3cqZAp">
+          <node concept="3cpWs3" id="5iuj9z7QrhP" role="3clFbG">
+            <node concept="Xl_RD" id="5iuj9z7Qrj3" role="3uHU7w">
+              <property role="Xl_RC" value=" Data Table" />
+            </node>
+            <node concept="1eOMI4" id="5iuj9z7QqMi" role="3uHU7B">
+              <node concept="3K4zz7" id="5iuj9z7QqMj" role="1eOMHV">
+                <node concept="2OqwBi" id="5iuj9z7QqMk" role="3K4Cdx">
+                  <node concept="2OqwBi" id="5iuj9z7QqMl" role="2Oq$k0">
+                    <node concept="2Sf5sV" id="5iuj9z7QqMm" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="5iuj9z7QqMn" role="2OqNvi">
+                      <ref role="3Tt5mk" to="53m0:5iuj9z7Qlw0" resolve="dataTable" />
+                    </node>
+                  </node>
+                  <node concept="3w_OXm" id="5iuj9z7QqMo" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="5iuj9z7QqMp" role="3K4E3e">
+                  <property role="Xl_RC" value="Add" />
+                </node>
+                <node concept="Xl_RD" id="5iuj9z7QqMq" role="3K4GZi">
+                  <property role="Xl_RC" value="Remove" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5iuj9z7QpAk" role="2ZfgGD">
+      <node concept="3clFbS" id="5iuj9z7QpAl" role="2VODD2">
+        <node concept="3clFbJ" id="5iuj9z7Qs4H" role="3cqZAp">
+          <node concept="3clFbS" id="5iuj9z7Qs4J" role="3clFbx">
+            <node concept="3clFbF" id="5iuj9z7QrHU" role="3cqZAp">
+              <node concept="2OqwBi" id="5iuj9z7Qs__" role="3clFbG">
+                <node concept="2OqwBi" id="5iuj9z7QrS8" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="5iuj9z7QrHT" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="5iuj9z7Qs3k" role="2OqNvi">
+                    <ref role="3Tt5mk" to="53m0:5iuj9z7Qlw0" resolve="dataTable" />
+                  </node>
+                </node>
+                <node concept="zfrQC" id="5iuj9z7QsB2" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5iuj9z7Qsj$" role="3clFbw">
+            <node concept="2OqwBi" id="5iuj9z7Qs7v" role="2Oq$k0">
+              <node concept="2Sf5sV" id="5iuj9z7Qs5n" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5iuj9z7Qs8I" role="2OqNvi">
+                <ref role="3Tt5mk" to="53m0:5iuj9z7Qlw0" resolve="dataTable" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="5iuj9z7Qsxs" role="2OqNvi" />
+          </node>
+          <node concept="9aQIb" id="5iuj9z7QsD9" role="9aQIa">
+            <node concept="3clFbS" id="5iuj9z7QsDa" role="9aQI4">
+              <node concept="3clFbF" id="5iuj9z7QsM1" role="3cqZAp">
+                <node concept="2OqwBi" id="5iuj9z7Qtii" role="3clFbG">
+                  <node concept="2OqwBi" id="5iuj9z7QsWf" role="2Oq$k0">
+                    <node concept="2Sf5sV" id="5iuj9z7QsM0" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="5iuj9z7Qt7p" role="2OqNvi">
+                      <ref role="3Tt5mk" to="53m0:5iuj9z7Qlw0" resolve="dataTable" />
+                    </node>
+                  </node>
+                  <node concept="3YRAZt" id="5iuj9z7Qtvn" role="2OqNvi" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

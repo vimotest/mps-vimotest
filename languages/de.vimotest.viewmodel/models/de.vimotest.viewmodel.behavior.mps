@@ -10610,7 +10610,21 @@
     <property role="3GE5qa" value="widgets.structures.column" />
     <ref role="13h7C2" to="at53:q9OOkGw2yi" resolve="TableColumnWidget" />
     <node concept="13hLZK" id="q9OOkGw2yB" role="13h7CW">
-      <node concept="3clFbS" id="q9OOkGw2yC" role="2VODD2" />
+      <node concept="3clFbS" id="q9OOkGw2yC" role="2VODD2">
+        <node concept="3clFbF" id="5iuj9z82C6A" role="3cqZAp">
+          <node concept="2OqwBi" id="5iuj9z82CLD" role="3clFbG">
+            <node concept="2OqwBi" id="5iuj9z82CjU" role="2Oq$k0">
+              <node concept="13iPFW" id="5iuj9z82C6_" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5iuj9z82Cz7" role="2OqNvi">
+                <ref role="3Tt5mk" to="at53:q9OOkGQqmU" resolve="widgetType" />
+              </node>
+            </node>
+            <node concept="2DeJnY" id="5iuj9z82CYl" role="2OqNvi">
+              <ref role="1A9B2P" to="at53:7H4Lpx0iNpB" resolve="LabelWidget" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="q9OOkGw2yD" role="13h7CS">
       <property role="TrG5h" value="createEditorCell" />

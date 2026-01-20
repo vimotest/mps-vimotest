@@ -173,6 +173,12 @@
     <property role="TrG5h" value="ViewModelTestScenario" />
     <property role="34LRSv" value="test scenario" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5iuj9z7Qlw0" role="1TKVEi">
+      <property role="IQ2ns" value="6097395164577880064" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dataTable" />
+      <ref role="20lvS9" node="5iuj9z7PE0A" resolve="ScenarioDataTable" />
+    </node>
     <node concept="1TJgyj" id="6tib4XeIJNZ" role="1TKVEi">
       <property role="IQ2ns" value="7445061853131767039" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1278,6 +1284,9 @@
     <node concept="PrWs8" id="6RKU0sdiKrX" role="PzmwI">
       <ref role="PrY4T" node="2Yd1qrJOMZM" resolve="ITestScenarioContext" />
     </node>
+    <node concept="PrWs8" id="5iuj9z7PSB1" role="PzmwI">
+      <ref role="PrY4T" node="5iuj9z7PSB0" resolve="IDataTable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6RKU0sd8pX$">
     <property role="EcuMT" value="7922086861527424868" />
@@ -1608,6 +1617,41 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="evry:F907haLIRL" resolve="IStructContent" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5iuj9z7PE0A">
+    <property role="EcuMT" value="6097395164577701926" />
+    <property role="3GE5qa" value="test.datadriven" />
+    <property role="TrG5h" value="ScenarioDataTable" />
+    <property role="34LRSv" value="data table" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5iuj9z7QkHx" role="1TKVEi">
+      <property role="IQ2ns" value="6097395164577876833" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="headersRow" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6RKU0sd8pX$" resolve="DataTableRow" />
+    </node>
+    <node concept="1TJgyj" id="5iuj9z7QkHy" role="1TKVEi">
+      <property role="IQ2ns" value="6097395164577876834" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="rows" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="6RKU0sd8pX$" resolve="DataTableRow" />
+    </node>
+    <node concept="PrWs8" id="5iuj9z7QkHz" role="PzmwI">
+      <ref role="PrY4T" node="5iuj9z7PSB0" resolve="IDataTable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5iuj9z7PE0D">
+    <property role="EcuMT" value="6097395164577701929" />
+    <property role="3GE5qa" value="test.datadriven" />
+    <property role="TrG5h" value="DataPlaceholder" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="PlHQZ" id="5iuj9z7PSB0">
+    <property role="EcuMT" value="6097395164577761728" />
+    <property role="3GE5qa" value="test.context.datatable" />
+    <property role="TrG5h" value="IDataTable" />
   </node>
   <node concept="1TIwiD" id="6gitVznp5aL">
     <property role="EcuMT" value="7210957589144949425" />

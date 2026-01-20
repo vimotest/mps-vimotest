@@ -602,6 +602,27 @@
     <ref role="1XX52x" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestScenario" />
     <node concept="3EZMnI" id="2Yd1qrJONdk" role="2wV5jI">
       <property role="S$Qs1" value="true" />
+      <node concept="3F1sOY" id="5iuj9z7QlAy" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:5iuj9z7Qlw0" resolve="dataTable" />
+        <node concept="ljvvj" id="5iuj9z7QlAU" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pkWqt" id="5iuj9z7QlAV" role="pqm2j">
+          <node concept="3clFbS" id="5iuj9z7QlAW" role="2VODD2">
+            <node concept="3clFbF" id="5iuj9z7QoCF" role="3cqZAp">
+              <node concept="2OqwBi" id="5iuj9z7QphS" role="3clFbG">
+                <node concept="2OqwBi" id="5iuj9z7QoTn" role="2Oq$k0">
+                  <node concept="pncrf" id="5iuj9z7QoCE" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="5iuj9z7Qp4U" role="2OqNvi">
+                    <ref role="3Tt5mk" to="53m0:5iuj9z7Qlw0" resolve="dataTable" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="5iuj9z7Qpxs" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3F0ifn" id="6tib4XeWUAj" role="3EZMnx">
         <property role="3F0ifm" value="scenario:" />
         <node concept="VechU" id="6tib4XeWUAk" role="3F10Kt">
@@ -6012,7 +6033,7 @@
               <node concept="2ShNRf" id="6RKU0sdzt_9" role="3clFbG">
                 <node concept="1pGfFk" id="6RKU0sdzu2I" role="2ShVmc">
                   <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="fwln:6RKU0sd8_GH" resolve="DataTableContextTableModel" />
+                  <ref role="37wK5l" to="fwln:6RKU0sd8_GH" resolve="DataTableTableModel" />
                   <node concept="pncrf" id="6RKU0sdzu4P" role="37wK5m" />
                 </node>
               </node>
@@ -7737,6 +7758,39 @@
         <ref role="1NtTu8" to="53m0:54nmQxL7zLM" resolve="expectedValue" />
       </node>
       <node concept="2iRfu4" id="54nmQxLHbww" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5iuj9z7Qtw1">
+    <property role="3GE5qa" value="test.datadriven" />
+    <ref role="1XX52x" to="53m0:5iuj9z7PE0A" resolve="ScenarioDataTable" />
+    <node concept="3EZMnI" id="5iuj9z7Qtw3" role="2wV5jI">
+      <node concept="3F0ifn" id="5iuj9z7Qtw7" role="3EZMnx">
+        <property role="3F0ifm" value="Example Values" />
+      </node>
+      <node concept="3F0ifn" id="5iuj9z7QIeE" role="3EZMnx">
+        <node concept="pVoyu" id="5iuj9z7QIfp" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1CiYdB" id="5iuj9z7QtCd" role="3EZMnx">
+        <node concept="2XI2dN" id="5iuj9z7QtCe" role="2XI0mt">
+          <node concept="3clFbS" id="5iuj9z7QtCf" role="2VODD2">
+            <node concept="3clFbF" id="5iuj9z7QtCg" role="3cqZAp">
+              <node concept="2ShNRf" id="5iuj9z7QtCh" role="3clFbG">
+                <node concept="1pGfFk" id="5iuj9z7QtCi" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="fwln:6RKU0sd8_GH" resolve="DataTableTableModel" />
+                  <node concept="pncrf" id="5iuj9z7QtCj" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pVoyu" id="5iuj9z7QI8s" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5iuj9z7Qtw6" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="6gitVznp5aM">

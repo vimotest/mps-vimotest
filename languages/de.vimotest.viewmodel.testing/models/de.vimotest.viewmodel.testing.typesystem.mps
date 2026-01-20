@@ -3373,17 +3373,17 @@
     </node>
   </node>
   <node concept="18kY7G" id="6RKU0se2GWm">
-    <property role="TrG5h" value="check_DataTableContext" />
+    <property role="TrG5h" value="check_IDataTable" />
     <property role="3GE5qa" value="test.context.datatable" />
     <node concept="3clFbS" id="6RKU0se2GWn" role="18ibNy">
       <node concept="3clFbF" id="6RKU0se2H8R" role="3cqZAp">
         <node concept="2OqwBi" id="6RKU0se2K1g" role="3clFbG">
           <node concept="2OqwBi" id="6RKU0se2HjO" role="2Oq$k0">
             <node concept="1YBJjd" id="6RKU0se2H8Q" role="2Oq$k0">
-              <ref role="1YBMHb" node="6RKU0se2GWp" resolve="dataTableContext" />
+              <ref role="1YBMHb" node="6RKU0se2GWp" resolve="dataTable" />
             </node>
-            <node concept="3Tsc0h" id="6RKU0se2Hwn" role="2OqNvi">
-              <ref role="3TtcxE" to="53m0:6RKU0sd8q9M" resolve="rows" />
+            <node concept="2qgKlT" id="5iuj9z7Qcas" role="2OqNvi">
+              <ref role="37wK5l" to="fwln:5iuj9z7QbQp" resolve="getRows" />
             </node>
           </node>
           <node concept="2es0OD" id="6RKU0se2M0p" role="2OqNvi">
@@ -3418,7 +3418,7 @@
                       </node>
                       <node concept="3Cnw8n" id="6RKU0se3lmG" role="1urrFz">
                         <property role="ARO6o" value="true" />
-                        <ref role="QpYPw" node="6RKU0se3lmD" resolve="fix_DataTableContext" />
+                        <ref role="QpYPw" node="6RKU0se3lmD" resolve="fix_IDataTable_columns" />
                         <node concept="3CnSsL" id="6RKU0seaWnI" role="3Coj4f">
                           <ref role="QkamJ" node="6RKU0seaXUN" resolve="row" />
                           <node concept="37vLTw" id="6RKU0seb0hR" role="3CoRuB">
@@ -3433,10 +3433,10 @@
                       <node concept="2OqwBi" id="6RKU0se31IE" role="2Oq$k0">
                         <node concept="2OqwBi" id="6RKU0se2ZDo" role="2Oq$k0">
                           <node concept="1YBJjd" id="6RKU0se2Z0t" role="2Oq$k0">
-                            <ref role="1YBMHb" node="6RKU0se2GWp" resolve="dataTableContext" />
+                            <ref role="1YBMHb" node="6RKU0se2GWp" resolve="dataTable" />
                           </node>
-                          <node concept="3TrEf2" id="6RKU0se317Z" role="2OqNvi">
-                            <ref role="3Tt5mk" to="53m0:6RKU0sd8q9K" resolve="headersRow" />
+                          <node concept="2qgKlT" id="5iuj9z7QbI4" role="2OqNvi">
+                            <ref role="37wK5l" to="fwln:5iuj9z7PVFt" resolve="getHeadersRow" />
                           </node>
                         </node>
                         <node concept="3Tsc0h" id="6RKU0se31Zs" role="2OqNvi">
@@ -3469,12 +3469,12 @@
       </node>
     </node>
     <node concept="1YaCAy" id="6RKU0se2GWp" role="1YuTPh">
-      <property role="TrG5h" value="dataTableContext" />
-      <ref role="1YaFvo" to="53m0:6RKU0sd8pLq" resolve="DataTableContext" />
+      <property role="TrG5h" value="dataTable" />
+      <ref role="1YaFvo" to="53m0:5iuj9z7PSB0" resolve="IDataTable" />
     </node>
   </node>
   <node concept="Q5z_Y" id="6RKU0se3lmD">
-    <property role="TrG5h" value="fix_DataTableContext" />
+    <property role="TrG5h" value="fix_IDataTable_columns" />
     <node concept="Q6JDH" id="6RKU0seaXUN" role="Q6Id_">
       <property role="TrG5h" value="row" />
       <node concept="3Tqbb2" id="6RKU0seaYEO" role="Q6QK4">
@@ -3487,12 +3487,12 @@
           <node concept="3cpWsn" id="6RKU0se3t4Y" role="3cpWs9">
             <property role="TrG5h" value="dataTable" />
             <node concept="3Tqbb2" id="6RKU0se3t4B" role="1tU5fm">
-              <ref role="ehGHo" to="53m0:6RKU0sd8pLq" resolve="DataTableContext" />
+              <ref role="ehGHo" to="53m0:5iuj9z7PSB0" resolve="IDataTable" />
             </node>
             <node concept="1PxgMI" id="6RKU0seb4zB" role="33vP2m">
               <property role="1BlNFB" value="true" />
               <node concept="chp4Y" id="6RKU0seb5er" role="3oSUPX">
-                <ref role="cht4Q" to="53m0:6RKU0sd8pLq" resolve="DataTableContext" />
+                <ref role="cht4Q" to="53m0:5iuj9z7PSB0" resolve="IDataTable" />
               </node>
               <node concept="2OqwBi" id="6RKU0seb3IN" role="1m5AlR">
                 <node concept="QwW4i" id="6RKU0seb2X9" role="2Oq$k0">
@@ -3513,8 +3513,8 @@
                   <node concept="37vLTw" id="6RKU0se3PBO" role="2Oq$k0">
                     <ref role="3cqZAo" node="6RKU0se3t4Y" resolve="dataTable" />
                   </node>
-                  <node concept="3TrEf2" id="6RKU0se3PBP" role="2OqNvi">
-                    <ref role="3Tt5mk" to="53m0:6RKU0sd8q9K" resolve="headersRow" />
+                  <node concept="2qgKlT" id="5iuj9z7Qe5b" role="2OqNvi">
+                    <ref role="37wK5l" to="fwln:5iuj9z7PVFt" resolve="getHeadersRow" />
                   </node>
                 </node>
                 <node concept="3Tsc0h" id="6RKU0se3PBQ" role="2OqNvi">

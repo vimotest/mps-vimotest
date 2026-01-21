@@ -1,0 +1,24 @@
+namespace widgetassertions ;
+
+
+
+
+public activity convertOptionsToString ( in symbol: RadioButton_ViewModelOptionsOption  ) : String  {
+  if ( symbol == RadioButton_ViewModelOptionsOption:: OptionA ) {
+    return "OptionA";
+
+  } 
+
+  if ( symbol == RadioButton_ViewModelOptionsOption:: OptionB ) {
+    return "OptionB";
+
+  } 
+
+  if ( symbol == RadioButton_ViewModelOptionsOption:: OptionC ) {
+    return "OptionC";
+
+  } 
+
+  return "?";
+
+}

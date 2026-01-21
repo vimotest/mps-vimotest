@@ -46,18 +46,18 @@ public class RadioButton_ViewTests
 
     public virtual void then_Options_selected_OptionB_()
     {
-        Assert.AreEqual(widgetassertions.RadioButton_ViewModelOptionsOption.OptionB, this.sut.getOptionsRadioButtonGroupSelectedEntry(), "Expected that radio button group Options has selected <" + widgetassertions.RadioButton_ViewModelOptionsOption.OptionB + ">, but was <" + this.sut.getOptionsRadioButtonGroupSelectedEntry() + ">");
+        Assert.AreEqual(widgetassertions.RadioButton_ViewModelOptionsOption.OptionB, this.sut.getOptionsRadioButtonGroupSelectedEntry(), "Expected that radio button group Options has selected <" + "OptionB" + ">, but was <" + ActivityconvertOptionsToString.convertOptionsToString(this.sut.getOptionsRadioButtonGroupSelectedEntry()) + ">");
     }
 
     public virtual void then_Options_selected_OptionA_and_OptionB_is_not_enabled()
     {
-        Assert.AreEqual(widgetassertions.RadioButton_ViewModelOptionsOption.OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry(), "Expected that radio button group Options has selected <" + widgetassertions.RadioButton_ViewModelOptionsOption.OptionA + ">, but was <" + this.sut.getOptionsRadioButtonGroupSelectedEntry() + ">");
+        Assert.AreEqual(widgetassertions.RadioButton_ViewModelOptionsOption.OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry(), "Expected that radio button group Options has selected <" + "OptionA" + ">, but was <" + ActivityconvertOptionsToString.convertOptionsToString(this.sut.getOptionsRadioButtonGroupSelectedEntry()) + ">");
         Assert.IsFalse(this.sut.getIsOptionBRadioButtonEnabled(), "Expected radio button OptionB is disabled, but it was enabled");
     }
 
     public virtual void then_Options_selected_OptionA_and_OptionB_is_not_visible()
     {
-        Assert.AreEqual(widgetassertions.RadioButton_ViewModelOptionsOption.OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry(), "Expected that radio button group Options has selected <" + widgetassertions.RadioButton_ViewModelOptionsOption.OptionA + ">, but was <" + this.sut.getOptionsRadioButtonGroupSelectedEntry() + ">");
+        Assert.AreEqual(widgetassertions.RadioButton_ViewModelOptionsOption.OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry(), "Expected that radio button group Options has selected <" + "OptionA" + ">, but was <" + ActivityconvertOptionsToString.convertOptionsToString(this.sut.getOptionsRadioButtonGroupSelectedEntry()) + ">");
         Assert.IsFalse(this.sut.getIsOptionBRadioButtonVisible(), "Expected radio button OptionB is hidden, but it was visible");
     }
 }

@@ -1,0 +1,19 @@
+namespace commands ;
+
+
+
+
+public activity convertMyOptionsToString ( in symbol: SelectEntryCommand_ViewModelMyOptionsOption  ) : String  {
+  if ( symbol == SelectEntryCommand_ViewModelMyOptionsOption:: A ) {
+    return "A";
+
+  } 
+
+  if ( symbol == SelectEntryCommand_ViewModelMyOptionsOption:: B ) {
+    return "B";
+
+  } 
+
+  return "?";
+
+}

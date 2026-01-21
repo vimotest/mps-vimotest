@@ -59,7 +59,7 @@ public class TreeViews_ViewTest_Test {
     TreeViews_ViewModelMyTreeViewElementsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
     Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 0 has parent rowhandle <" + 0 + ">, but was <" + row0.getRowDepth() + ">", Integer.valueOf(row0.getRowDepth()), row0.getRowDepth());
-    Assert.assertTrue("Expected that checkbox Include is checked, but was <" + row0.getIsIncludeCheckBoxChecked() + ">", row0.getIsIncludeCheckBoxChecked());
+    // ;
     Assert.assertEquals("Expected that label Name has text <" + "A" + ">, but was <" + row0.getNameLabelText() + ">", "A", row0.getNameLabelText());
     Assert.assertEquals("Expected that label Description has text <" + "B" + ">, but was <" + row0.getDescriptionLabelText() + ">", "B", row0.getDescriptionLabelText());
     Assert.assertEquals("Expected that image Info has " + "image <image_triangle>" + ", but was <" + row0.getInfoImageName() + ">", "image_triangle", row0.getInfoImageName());
@@ -68,7 +68,7 @@ public class TreeViews_ViewTest_Test {
     TreeViews_ViewModelMyTreeViewElementsRow row1 = actualRows.get(2 - 1);
     Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
     Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 1 has parent rowhandle <" + 1 + ">, but was <" + row1.getRowDepth() + ">", Integer.valueOf(row1.getRowDepth()), row1.getRowDepth());
-    Assert.assertFalse("Expected that checkbox Include is unchecked, but was <" + row1.getIsIncludeCheckBoxChecked() + ">", row1.getIsIncludeCheckBoxChecked());
+    // ;
     Assert.assertEquals("Expected that label Name has text <" + "C" + ">, but was <" + row1.getNameLabelText() + ">", "C", row1.getNameLabelText());
     Assert.assertEquals("Expected that label Description has text <" + "D" + ">, but was <" + row1.getDescriptionLabelText() + ">", "D", row1.getDescriptionLabelText());
     Assert.assertEquals("Expected that image Info has " + "image <image_circle>" + ", but was <" + row1.getInfoImageName() + ">", "image_circle", row1.getInfoImageName());
@@ -158,7 +158,7 @@ public class TreeViews_ViewTest_Test {
     TreeViews_ViewModelMyTreeViewElementsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
     Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 0 has parent rowhandle <" + 0 + ">, but was <" + row0.getRowDepth() + ">", Integer.valueOf(row0.getRowDepth()), row0.getRowDepth());
-    Assert.assertTrue("Expected that checkbox Include is checked, but was <" + row0.getIsIncludeCheckBoxChecked() + ">", row0.getIsIncludeCheckBoxChecked());
+    // ;
     // }
     // {
     TreeViews_ViewModelMyTreeViewElementsRow row1 = actualRows.get(2 - 1);

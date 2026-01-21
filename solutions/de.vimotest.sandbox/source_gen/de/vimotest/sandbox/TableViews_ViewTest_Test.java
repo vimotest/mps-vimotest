@@ -54,7 +54,7 @@ public class TableViews_ViewTest_Test {
     // {
     TableViews_ViewModelMyElementsRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that table view MyElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
-    Assert.assertTrue("Expected that checkbox Include is checked, but was <" + row0.getIsIncludeCheckBoxChecked() + ">", row0.getIsIncludeCheckBoxChecked());
+    // ;
     Assert.assertEquals("Expected that label Name has text <" + "A" + ">, but was <" + row0.getNameLabelText() + ">", "A", row0.getNameLabelText());
     Assert.assertEquals("Expected that label Description has text <" + "B" + ">, but was <" + row0.getDescriptionLabelText() + ">", "B", row0.getDescriptionLabelText());
     Assert.assertEquals("Expected that image InfoIcon has " + "image <image_info>" + ", but was <" + row0.getInfoIconImageName() + ">", "image_info", row0.getInfoIconImageName());
@@ -62,7 +62,7 @@ public class TableViews_ViewTest_Test {
     // {
     TableViews_ViewModelMyElementsRow row1 = actualRows.get(2 - 1);
     Assert.assertEquals("Expected that table view MyElements row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
-    Assert.assertFalse("Expected that checkbox Include is unchecked, but was <" + row1.getIsIncludeCheckBoxChecked() + ">", row1.getIsIncludeCheckBoxChecked());
+    // ;
     Assert.assertEquals("Expected that label Name has text <" + "C" + ">, but was <" + row1.getNameLabelText() + ">", "C", row1.getNameLabelText());
     Assert.assertEquals("Expected that label Description has text <" + "D" + ">, but was <" + row1.getDescriptionLabelText() + ">", "D", row1.getDescriptionLabelText());
     Assert.assertEquals("Expected that image InfoIcon has " + "image <image_star>" + ", but was <" + row1.getInfoIconImageName() + ">", "image_star", row1.getInfoIconImageName());

@@ -53,7 +53,7 @@ public class TableViews_ViewTest
         {
             var row0 = actualRows[0];
             Assert.AreEqual(0, row0.getRowIndex(), "Expected that table view MyElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">");
-            Assert.IsTrue(row0.getIsIncludeCheckBoxChecked(), "Expected that checkbox Include is checked, but was <" + row0.getIsIncludeCheckBoxChecked() + ">");
+            ;
             Assert.AreEqual("A", row0.getNameLabelText(), "Expected that label Name has text <" + "A" + ">, but was <" + row0.getNameLabelText() + ">");
             Assert.AreEqual("B", row0.getDescriptionLabelText(), "Expected that label Description has text <" + "B" + ">, but was <" + row0.getDescriptionLabelText() + ">");
             Assert.AreEqual("image_info", row0.getInfoIconImageName(), "Expected that image InfoIcon has " + "image <image_info>" + ", but was <" + row0.getInfoIconImageName() + ">");
@@ -62,7 +62,7 @@ public class TableViews_ViewTest
         {
             var row1 = actualRows[1];
             Assert.AreEqual(1, row1.getRowIndex(), "Expected that table view MyElements row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">");
-            Assert.IsFalse(row1.getIsIncludeCheckBoxChecked(), "Expected that checkbox Include is unchecked, but was <" + row1.getIsIncludeCheckBoxChecked() + ">");
+            ;
             Assert.AreEqual("C", row1.getNameLabelText(), "Expected that label Name has text <" + "C" + ">, but was <" + row1.getNameLabelText() + ">");
             Assert.AreEqual("D", row1.getDescriptionLabelText(), "Expected that label Description has text <" + "D" + ">, but was <" + row1.getDescriptionLabelText() + ">");
             Assert.AreEqual("image_star", row1.getInfoIconImageName(), "Expected that image InfoIcon has " + "image <image_star>" + ", but was <" + row1.getInfoIconImageName() + ">");

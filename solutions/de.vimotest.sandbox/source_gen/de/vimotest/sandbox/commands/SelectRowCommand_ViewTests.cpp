@@ -120,115 +120,115 @@ namespace commands
   void SelectRowCommand_ViewTests::then_MyListViewElements_has_2_rows()
   {
     auto& actualRows = this->sut->getMyListViewElementsListRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that list view MyListViewElements has 2 rows, but has ") + actualRows.size();
+    EXPECT_EQ(2, actualRows.size()) << std::string("Expected that list view MyListViewElements has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
-    ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that list view MyListViewElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
-    ASSERT_EQ(std::string("A"), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("A") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
+    EXPECT_EQ(0, row0->getRowIndex()) << std::string("Expected that list view MyListViewElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
+    EXPECT_EQ(std::string("A"), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("A") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
     // }
     // {
     auto& row1 = actualRows.at(1);
-    ASSERT_EQ(1, row1->getRowIndex()) << std::string("Expected that list view MyListViewElements row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
-    ASSERT_EQ(std::string("B"), row1->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("B") + std::string(">, but was <") + row1->getHeaderLabelText() + std::string(">");
+    EXPECT_EQ(1, row1->getRowIndex()) << std::string("Expected that list view MyListViewElements row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
+    EXPECT_EQ(std::string("B"), row1->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("B") + std::string(">, but was <") + row1->getHeaderLabelText() + std::string(">");
     // }
   }
   void SelectRowCommand_ViewTests::then_MyStringRowHandleListViewElements_has_2_rows()
   {
     auto& actualRows = this->sut->getMyStringRowHandleListViewElementsListRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that list view MyStringRowHandleListViewElements has 2 rows, but has ") + actualRows.size();
+    EXPECT_EQ(2, actualRows.size()) << std::string("Expected that list view MyStringRowHandleListViewElements has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
-    ASSERT_EQ(std::string("ROW_A"), row0->getRowHandle()) << std::string("Expected that list view MyStringRowHandleListViewElements row at index 0 has rowhandle <ROW_A>, but was <") + row0->getRowHandle() + std::string(">");
-    ASSERT_EQ(std::string("A"), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("A") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
+    EXPECT_EQ(std::string("ROW_A"), row0->getRowHandle()) << std::string("Expected that list view MyStringRowHandleListViewElements row at index 0 has rowhandle <ROW_A>, but was <") + row0->getRowHandle() + std::string(">");
+    EXPECT_EQ(std::string("A"), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("A") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
     // }
     // {
     auto& row1 = actualRows.at(1);
-    ASSERT_EQ(std::string("ROW_B"), row1->getRowHandle()) << std::string("Expected that list view MyStringRowHandleListViewElements row at index 1 has rowhandle <ROW_B>, but was <") + row1->getRowHandle() + std::string(">");
-    ASSERT_EQ(std::string("B"), row1->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("B") + std::string(">, but was <") + row1->getHeaderLabelText() + std::string(">");
+    EXPECT_EQ(std::string("ROW_B"), row1->getRowHandle()) << std::string("Expected that list view MyStringRowHandleListViewElements row at index 1 has rowhandle <ROW_B>, but was <") + row1->getRowHandle() + std::string(">");
+    EXPECT_EQ(std::string("B"), row1->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("B") + std::string(">, but was <") + row1->getHeaderLabelText() + std::string(">");
     // }
   }
   void SelectRowCommand_ViewTests::then_MyTableViewElements_has_2_rows()
   {
     auto& actualRows = this->sut->getMyTableViewElementsTableRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that table view MyTableViewElements has 2 rows, but has ") + actualRows.size();
+    EXPECT_EQ(2, actualRows.size()) << std::string("Expected that table view MyTableViewElements has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
-    ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that table view MyTableViewElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
-    ASSERT_EQ(std::string("A"), row0->getColumnCellLabelText()) << std::string("Expected that label columnCell has text <") + std::string("A") + std::string(">, but was <") + row0->getColumnCellLabelText() + std::string(">");
+    EXPECT_EQ(0, row0->getRowIndex()) << std::string("Expected that table view MyTableViewElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
+    EXPECT_EQ(std::string("A"), row0->getColumnCellLabelText()) << std::string("Expected that label columnCell has text <") + std::string("A") + std::string(">, but was <") + row0->getColumnCellLabelText() + std::string(">");
     // }
     // {
     auto& row1 = actualRows.at(1);
-    ASSERT_EQ(1, row1->getRowIndex()) << std::string("Expected that table view MyTableViewElements row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
-    ASSERT_EQ(std::string("B"), row1->getColumnCellLabelText()) << std::string("Expected that label columnCell has text <") + std::string("B") + std::string(">, but was <") + row1->getColumnCellLabelText() + std::string(">");
+    EXPECT_EQ(1, row1->getRowIndex()) << std::string("Expected that table view MyTableViewElements row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
+    EXPECT_EQ(std::string("B"), row1->getColumnCellLabelText()) << std::string("Expected that label columnCell has text <") + std::string("B") + std::string(">, but was <") + row1->getColumnCellLabelText() + std::string(">");
     // }
   }
   void SelectRowCommand_ViewTests::then_MyStringRowHandleTableViewElements_has_2_rows()
   {
     auto& actualRows = this->sut->getMyStringRowHandleTableViewElementsTableRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that table view MyStringRowHandleTableViewElements has 2 rows, but has ") + actualRows.size();
+    EXPECT_EQ(2, actualRows.size()) << std::string("Expected that table view MyStringRowHandleTableViewElements has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
-    ASSERT_EQ(std::string("ROW_A"), row0->getRowHandle()) << std::string("Expected that table view MyStringRowHandleTableViewElements row at index 0 has rowhandle <ROW_A>, but was <") + row0->getRowHandle() + std::string(">");
-    ASSERT_EQ(std::string("A"), row0->getColumnCellLabelText()) << std::string("Expected that label columnCell has text <") + std::string("A") + std::string(">, but was <") + row0->getColumnCellLabelText() + std::string(">");
+    EXPECT_EQ(std::string("ROW_A"), row0->getRowHandle()) << std::string("Expected that table view MyStringRowHandleTableViewElements row at index 0 has rowhandle <ROW_A>, but was <") + row0->getRowHandle() + std::string(">");
+    EXPECT_EQ(std::string("A"), row0->getColumnCellLabelText()) << std::string("Expected that label columnCell has text <") + std::string("A") + std::string(">, but was <") + row0->getColumnCellLabelText() + std::string(">");
     // }
     // {
     auto& row1 = actualRows.at(1);
-    ASSERT_EQ(std::string("ROW_B"), row1->getRowHandle()) << std::string("Expected that table view MyStringRowHandleTableViewElements row at index 1 has rowhandle <ROW_B>, but was <") + row1->getRowHandle() + std::string(">");
-    ASSERT_EQ(std::string("B"), row1->getColumnCellLabelText()) << std::string("Expected that label columnCell has text <") + std::string("B") + std::string(">, but was <") + row1->getColumnCellLabelText() + std::string(">");
+    EXPECT_EQ(std::string("ROW_B"), row1->getRowHandle()) << std::string("Expected that table view MyStringRowHandleTableViewElements row at index 1 has rowhandle <ROW_B>, but was <") + row1->getRowHandle() + std::string(">");
+    EXPECT_EQ(std::string("B"), row1->getColumnCellLabelText()) << std::string("Expected that label columnCell has text <") + std::string("B") + std::string(">, but was <") + row1->getColumnCellLabelText() + std::string(">");
     // }
   }
   void SelectRowCommand_ViewTests::then_MyTreeViewElements_has_2_rows()
   {
     auto& actualRows = this->sut->getMyTreeViewElementsTreeRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyTreeViewElements has 2 rows, but has ") + actualRows.size();
+    EXPECT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyTreeViewElements has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
-    ASSERT_EQ(0, row0->getRowIndex()) << std::string("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
-    ASSERT_EQ(0, row0->getRowDepth()) << std::string("Expected that tree view MyTreeViewElements row at index 0 has parent rowhandle <") + 0 + std::string(">, but was <") + row0->getRowDepth() + std::string(">");
-    ASSERT_EQ(std::string("A"), row0->getColumnCellLabelText()) << std::string("Expected that label columnCell has text <") + std::string("A") + std::string(">, but was <") + row0->getColumnCellLabelText() + std::string(">");
+    EXPECT_EQ(0, row0->getRowIndex()) << std::string("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
+    EXPECT_EQ(0, row0->getRowDepth()) << std::string("Expected that tree view MyTreeViewElements row at index 0 has parent rowhandle <") + 0 + std::string(">, but was <") + row0->getRowDepth() + std::string(">");
+    EXPECT_EQ(std::string("A"), row0->getColumnCellLabelText()) << std::string("Expected that label columnCell has text <") + std::string("A") + std::string(">, but was <") + row0->getColumnCellLabelText() + std::string(">");
     // }
     // {
     auto& row1 = actualRows.at(1);
-    ASSERT_EQ(1, row1->getRowIndex()) << std::string("Expected that tree view MyTreeViewElements row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
-    ASSERT_EQ(0, row1->getRowDepth()) << std::string("Expected that tree view MyTreeViewElements row at index 1 has parent rowhandle <") + 0 + std::string(">, but was <") + row1->getRowDepth() + std::string(">");
-    ASSERT_EQ(std::string("B"), row1->getColumnCellLabelText()) << std::string("Expected that label columnCell has text <") + std::string("B") + std::string(">, but was <") + row1->getColumnCellLabelText() + std::string(">");
+    EXPECT_EQ(1, row1->getRowIndex()) << std::string("Expected that tree view MyTreeViewElements row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
+    EXPECT_EQ(0, row1->getRowDepth()) << std::string("Expected that tree view MyTreeViewElements row at index 1 has parent rowhandle <") + 0 + std::string(">, but was <") + row1->getRowDepth() + std::string(">");
+    EXPECT_EQ(std::string("B"), row1->getColumnCellLabelText()) << std::string("Expected that label columnCell has text <") + std::string("B") + std::string(">, but was <") + row1->getColumnCellLabelText() + std::string(">");
     // }
   }
   void SelectRowCommand_ViewTests::then_MyStringRowHandleTreeViewElements_has_2_rows()
   {
     auto& actualRows = this->sut->getMyStringRowHandleTreeViewElementsTreeRows();
-    ASSERT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyStringRowHandleTreeViewElements has 2 rows, but has ") + actualRows.size();
+    EXPECT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyStringRowHandleTreeViewElements has 2 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
-    ASSERT_EQ(std::string("ROW_A"), row0->getRowHandle()) << std::string("Expected that tree view MyStringRowHandleTreeViewElements row at index 0 has rowhandle <ROW_A>, but was <") + row0->getRowHandle() + std::string(">");
-    ASSERT_EQ(0, row0->getRowDepth()) << std::string("Expected that tree view MyStringRowHandleTreeViewElements row at index 0 has parent rowhandle <") + 0 + std::string(">, but was <") + row0->getRowDepth() + std::string(">");
-    ASSERT_EQ(std::string("A"), row0->getColumnCellLabelText()) << std::string("Expected that label columnCell has text <") + std::string("A") + std::string(">, but was <") + row0->getColumnCellLabelText() + std::string(">");
+    EXPECT_EQ(std::string("ROW_A"), row0->getRowHandle()) << std::string("Expected that tree view MyStringRowHandleTreeViewElements row at index 0 has rowhandle <ROW_A>, but was <") + row0->getRowHandle() + std::string(">");
+    EXPECT_EQ(0, row0->getRowDepth()) << std::string("Expected that tree view MyStringRowHandleTreeViewElements row at index 0 has parent rowhandle <") + 0 + std::string(">, but was <") + row0->getRowDepth() + std::string(">");
+    EXPECT_EQ(std::string("A"), row0->getColumnCellLabelText()) << std::string("Expected that label columnCell has text <") + std::string("A") + std::string(">, but was <") + row0->getColumnCellLabelText() + std::string(">");
     // }
     // {
     auto& row1 = actualRows.at(1);
-    ASSERT_EQ(std::string("ROW_B"), row1->getRowHandle()) << std::string("Expected that tree view MyStringRowHandleTreeViewElements row at index 1 has rowhandle <ROW_B>, but was <") + row1->getRowHandle() + std::string(">");
-    ASSERT_EQ(0, row1->getRowDepth()) << std::string("Expected that tree view MyStringRowHandleTreeViewElements row at index 1 has parent rowhandle <") + 0 + std::string(">, but was <") + row1->getRowDepth() + std::string(">");
-    ASSERT_EQ(std::string("B"), row1->getColumnCellLabelText()) << std::string("Expected that label columnCell has text <") + std::string("B") + std::string(">, but was <") + row1->getColumnCellLabelText() + std::string(">");
+    EXPECT_EQ(std::string("ROW_B"), row1->getRowHandle()) << std::string("Expected that tree view MyStringRowHandleTreeViewElements row at index 1 has rowhandle <ROW_B>, but was <") + row1->getRowHandle() + std::string(">");
+    EXPECT_EQ(0, row1->getRowDepth()) << std::string("Expected that tree view MyStringRowHandleTreeViewElements row at index 1 has parent rowhandle <") + 0 + std::string(">, but was <") + row1->getRowDepth() + std::string(">");
+    EXPECT_EQ(std::string("B"), row1->getColumnCellLabelText()) << std::string("Expected that label columnCell has text <") + std::string("B") + std::string(">, but was <") + row1->getColumnCellLabelText() + std::string(">");
     // }
   }
   void SelectRowCommand_ViewTests::then_MyStringHandleMultiSelectRowListViewElements_has_3_rows()
   {
     auto& actualRows = this->sut->getMyStringHandleMultiSelectRowListViewElementsListRows();
-    ASSERT_EQ(3, actualRows.size()) << std::string("Expected that list view MyStringHandleMultiSelectRowListViewElements has 3 rows, but has ") + actualRows.size();
+    EXPECT_EQ(3, actualRows.size()) << std::string("Expected that list view MyStringHandleMultiSelectRowListViewElements has 3 rows, but has ") + actualRows.size();
     // {
     auto& row0 = actualRows.at(0);
-    ASSERT_EQ(std::string("ROW_A"), row0->getRowHandle()) << std::string("Expected that list view MyStringHandleMultiSelectRowListViewElements row at index 0 has rowhandle <ROW_A>, but was <") + row0->getRowHandle() + std::string(">");
-    ASSERT_EQ(std::string("A"), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("A") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
+    EXPECT_EQ(std::string("ROW_A"), row0->getRowHandle()) << std::string("Expected that list view MyStringHandleMultiSelectRowListViewElements row at index 0 has rowhandle <ROW_A>, but was <") + row0->getRowHandle() + std::string(">");
+    EXPECT_EQ(std::string("A"), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("A") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
     // }
     // {
     auto& row1 = actualRows.at(1);
-    ASSERT_EQ(std::string("ROW_B"), row1->getRowHandle()) << std::string("Expected that list view MyStringHandleMultiSelectRowListViewElements row at index 1 has rowhandle <ROW_B>, but was <") + row1->getRowHandle() + std::string(">");
-    ASSERT_EQ(std::string("B"), row1->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("B") + std::string(">, but was <") + row1->getHeaderLabelText() + std::string(">");
+    EXPECT_EQ(std::string("ROW_B"), row1->getRowHandle()) << std::string("Expected that list view MyStringHandleMultiSelectRowListViewElements row at index 1 has rowhandle <ROW_B>, but was <") + row1->getRowHandle() + std::string(">");
+    EXPECT_EQ(std::string("B"), row1->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("B") + std::string(">, but was <") + row1->getHeaderLabelText() + std::string(">");
     // }
     // {
     auto& row2 = actualRows.at(2);
-    ASSERT_EQ(std::string("ROW_C"), row2->getRowHandle()) << std::string("Expected that list view MyStringHandleMultiSelectRowListViewElements row at index 2 has rowhandle <ROW_C>, but was <") + row2->getRowHandle() + std::string(">");
-    ASSERT_EQ(std::string("C"), row2->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("C") + std::string(">, but was <") + row2->getHeaderLabelText() + std::string(">");
+    EXPECT_EQ(std::string("ROW_C"), row2->getRowHandle()) << std::string("Expected that list view MyStringHandleMultiSelectRowListViewElements row at index 2 has rowhandle <ROW_C>, but was <") + row2->getRowHandle() + std::string(">");
+    EXPECT_EQ(std::string("C"), row2->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("C") + std::string(">, but was <") + row2->getHeaderLabelText() + std::string(">");
     // }
   }
 }

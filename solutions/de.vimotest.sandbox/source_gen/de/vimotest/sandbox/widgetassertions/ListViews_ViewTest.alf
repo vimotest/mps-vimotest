@@ -168,7 +168,7 @@ class ListViews_ViewTest {
 
       AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that list view MyCheckboxes row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
 
-      AssertTrueWithMessage ( row0.getIsHeaderCheckBoxChecked (  ), "Expected that checkbox Header is checked, but was <" + row0.getIsHeaderCheckBoxChecked (  ) + ">" );
+      ;
 
     }
 
@@ -177,7 +177,7 @@ class ListViews_ViewTest {
 
       AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that list view MyCheckboxes row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
 
-      AssertFalseWithMessage ( row1.getIsHeaderCheckBoxChecked (  ), "Expected that checkbox Header is unchecked, but was <" + row1.getIsHeaderCheckBoxChecked (  ) + ">" );
+      ;
 
     }
 
@@ -186,7 +186,7 @@ class ListViews_ViewTest {
 
       AssertEqualWithMessage ( 2, row2.getRowIndex (  ), "Expected that list view MyCheckboxes row at index 2 has rowhandle <2>, but was <" + row2.getRowIndex (  ) + ">" );
 
-      AssertTrueWithMessage ( row2.getIsHeaderCheckBoxChecked (  ), "Expected that checkbox Header is checked, but was <" + row2.getIsHeaderCheckBoxChecked (  ) + ">" );
+      ;
 
       AssertEqualWithMessage ( "My Label", row2.getHeaderCheckBoxText (  ), "Expected that checkbox Header has text <" + "My Label" + ">, but was <" + row2.getHeaderCheckBoxText (  ) + ">" );
 

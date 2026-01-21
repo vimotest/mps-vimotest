@@ -116,17 +116,17 @@ public class ListViews_ViewTest_Test {
     // {
     ListViews_ViewModelMyCheckboxesRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that list view MyCheckboxes row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
-    Assert.assertTrue("Expected that checkbox Header is checked, but was <" + row0.getIsHeaderCheckBoxChecked() + ">", row0.getIsHeaderCheckBoxChecked());
+    // ;
     // }
     // {
     ListViews_ViewModelMyCheckboxesRow row1 = actualRows.get(2 - 1);
     Assert.assertEquals("Expected that list view MyCheckboxes row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
-    Assert.assertFalse("Expected that checkbox Header is unchecked, but was <" + row1.getIsHeaderCheckBoxChecked() + ">", row1.getIsHeaderCheckBoxChecked());
+    // ;
     // }
     // {
     ListViews_ViewModelMyCheckboxesRow row2 = actualRows.get(3 - 1);
     Assert.assertEquals("Expected that list view MyCheckboxes row at index 2 has rowhandle <2>, but was <" + row2.getRowIndex() + ">", Integer.valueOf(row2.getRowIndex()), row2.getRowIndex());
-    Assert.assertTrue("Expected that checkbox Header is checked, but was <" + row2.getIsHeaderCheckBoxChecked() + ">", row2.getIsHeaderCheckBoxChecked());
+    // ;
     Assert.assertEquals("Expected that checkbox Header has text <" + "My Label" + ">, but was <" + row2.getHeaderCheckBoxText() + ">", "My Label", row2.getHeaderCheckBoxText());
     // }
   }

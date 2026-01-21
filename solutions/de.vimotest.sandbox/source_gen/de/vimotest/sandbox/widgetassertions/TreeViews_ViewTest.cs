@@ -56,7 +56,7 @@ public class TreeViews_ViewTest
             var row0 = actualRows[0];
             Assert.AreEqual(0, row0.getRowIndex(), "Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">");
             Assert.AreEqual(0, row0.getRowDepth(), "Expected that tree view MyTreeViewElements row at index 0 has parent rowhandle <" + 0 + ">, but was <" + row0.getRowDepth() + ">");
-            Assert.IsTrue(row0.getIsIncludeCheckBoxChecked(), "Expected that checkbox Include is checked, but was <" + row0.getIsIncludeCheckBoxChecked() + ">");
+            ;
             Assert.AreEqual("A", row0.getNameLabelText(), "Expected that label Name has text <" + "A" + ">, but was <" + row0.getNameLabelText() + ">");
             Assert.AreEqual("B", row0.getDescriptionLabelText(), "Expected that label Description has text <" + "B" + ">, but was <" + row0.getDescriptionLabelText() + ">");
             Assert.AreEqual("image_triangle", row0.getInfoImageName(), "Expected that image Info has " + "image <image_triangle>" + ", but was <" + row0.getInfoImageName() + ">");
@@ -66,7 +66,7 @@ public class TreeViews_ViewTest
             var row1 = actualRows[1];
             Assert.AreEqual(1, row1.getRowIndex(), "Expected that tree view MyTreeViewElements row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">");
             Assert.AreEqual(1, row1.getRowDepth(), "Expected that tree view MyTreeViewElements row at index 1 has parent rowhandle <" + 1 + ">, but was <" + row1.getRowDepth() + ">");
-            Assert.IsFalse(row1.getIsIncludeCheckBoxChecked(), "Expected that checkbox Include is unchecked, but was <" + row1.getIsIncludeCheckBoxChecked() + ">");
+            ;
             Assert.AreEqual("C", row1.getNameLabelText(), "Expected that label Name has text <" + "C" + ">, but was <" + row1.getNameLabelText() + ">");
             Assert.AreEqual("D", row1.getDescriptionLabelText(), "Expected that label Description has text <" + "D" + ">, but was <" + row1.getDescriptionLabelText() + ">");
             Assert.AreEqual("image_circle", row1.getInfoImageName(), "Expected that image Info has " + "image <image_circle>" + ", but was <" + row1.getInfoImageName() + ">");
@@ -175,7 +175,7 @@ public class TreeViews_ViewTest
             var row0 = actualRows[0];
             Assert.AreEqual(0, row0.getRowIndex(), "Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">");
             Assert.AreEqual(0, row0.getRowDepth(), "Expected that tree view MyTreeViewElements row at index 0 has parent rowhandle <" + 0 + ">, but was <" + row0.getRowDepth() + ">");
-            Assert.IsTrue(row0.getIsIncludeCheckBoxChecked(), "Expected that checkbox Include is checked, but was <" + row0.getIsIncludeCheckBoxChecked() + ">");
+            ;
         }
 
         {

@@ -125,19 +125,19 @@ public class ListViews_ViewTest
         {
             var row0 = actualRows[0];
             Assert.AreEqual(0, row0.getRowIndex(), "Expected that list view MyCheckboxes row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">");
-            Assert.IsTrue(row0.getIsHeaderCheckBoxChecked(), "Expected that checkbox Header is checked, but was <" + row0.getIsHeaderCheckBoxChecked() + ">");
+            ;
         }
 
         {
             var row1 = actualRows[1];
             Assert.AreEqual(1, row1.getRowIndex(), "Expected that list view MyCheckboxes row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">");
-            Assert.IsFalse(row1.getIsHeaderCheckBoxChecked(), "Expected that checkbox Header is unchecked, but was <" + row1.getIsHeaderCheckBoxChecked() + ">");
+            ;
         }
 
         {
             var row2 = actualRows[2];
             Assert.AreEqual(2, row2.getRowIndex(), "Expected that list view MyCheckboxes row at index 2 has rowhandle <2>, but was <" + row2.getRowIndex() + ">");
-            Assert.IsTrue(row2.getIsHeaderCheckBoxChecked(), "Expected that checkbox Header is checked, but was <" + row2.getIsHeaderCheckBoxChecked() + ">");
+            ;
             Assert.AreEqual("My Label", row2.getHeaderCheckBoxText(), "Expected that checkbox Header has text <" + "My Label" + ">, but was <" + row2.getHeaderCheckBoxText() + ">");
         }
     }

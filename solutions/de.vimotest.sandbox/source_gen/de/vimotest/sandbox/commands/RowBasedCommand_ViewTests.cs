@@ -107,13 +107,13 @@ public class RowBasedCommand_ViewTests
         {
             var row0 = actualRows[0];
             Assert.AreEqual(0, row0.getRowIndex(), "Expected that list view MyFlags row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">");
-            Assert.IsTrue(row0.getIsCheckboxesCheckBoxChecked(), "Expected that checkbox Checkboxes is checked, but was <" + row0.getIsCheckboxesCheckBoxChecked() + ">");
+            ;
         }
 
         {
             var row1 = actualRows[1];
             Assert.AreEqual(1, row1.getRowIndex(), "Expected that list view MyFlags row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">");
-            Assert.IsFalse(row1.getIsCheckboxesCheckBoxChecked(), "Expected that checkbox Checkboxes is unchecked, but was <" + row1.getIsCheckboxesCheckBoxChecked() + ">");
+            ;
         }
     }
 

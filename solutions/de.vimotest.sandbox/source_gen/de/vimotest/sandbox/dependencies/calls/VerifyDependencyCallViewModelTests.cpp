@@ -54,7 +54,7 @@ namespace dependencies::calls
   void VerifyDependencyCallViewModelTests::then_call_Logger_Log_any_()
   {
     auto& spy = this->testEnvironment->getLogger();
-    ASSERT_EQ(1, spy->LogCallInfos.size()) << std::string("Expected that Logger.Log was called exactly 1 times, but was ") + spy->LogCallInfos.size();
+    EXPECT_EQ(1, spy->LogCallInfos.size()) << std::string("Expected that Logger.Log was called exactly 1 times, but was ") + spy->LogCallInfos.size();
   }
   void VerifyDependencyCallViewModelTests::then_call_Logger_Log___()
   {
@@ -62,9 +62,9 @@ namespace dependencies::calls
     for (int callInfoIndex = 0; callInfoIndex <= spy->LogCallInfos.size(); callInfoIndex++)
     {
       auto& callInfo = spy->LogCallInfos.at(callInfoIndex - 1);
-      ASSERT_EQ(std::string("my log"), callInfo.messageValue) << std::string("Logger.Log Call[") + callInfoIndex + std::string("]: Expected argument value 'message' is <") + std::string("my log") + std::string("> but was <") + callInfo.messageValue + std::string(">");
+      EXPECT_EQ(std::string("my log"), callInfo.messageValue) << std::string("Logger.Log Call[") + callInfoIndex + std::string("]: Expected argument value 'message' is <") + std::string("my log") + std::string("> but was <") + callInfo.messageValue + std::string(">");
     }
-    ASSERT_EQ(1, spy->LogCallInfos.size()) << std::string("Expected that Logger.Log was called exactly 1 times, but was ") + spy->LogCallInfos.size();
+    EXPECT_EQ(1, spy->LogCallInfos.size()) << std::string("Expected that Logger.Log was called exactly 1 times, but was ") + spy->LogCallInfos.size();
   }
   void VerifyDependencyCallViewModelTests::then_call_Logger_Log____1()
   {
@@ -72,11 +72,11 @@ namespace dependencies::calls
     if (3 < spy->LogCallInfos.size())
     {
       auto& callInfo = spy->LogCallInfos.at(2);
-      ASSERT_EQ(std::string("my log"), callInfo.messageValue) << std::string("Logger.Log Call[") + 3 + std::string("]: Expected argument value 'message' is <") + std::string("my log") + std::string("> but was <") + callInfo.messageValue + std::string(">");
+      EXPECT_EQ(std::string("my log"), callInfo.messageValue) << std::string("Logger.Log Call[") + 3 + std::string("]: Expected argument value 'message' is <") + std::string("my log") + std::string("> but was <") + callInfo.messageValue + std::string(">");
     }
     else
     {
-      ASSERT_TRUE(false) << std::string("Expected a call to Logger.Log at index [3], but it was only called ") + spy->LogCallInfos.size() + std::string(" times");
+      EXPECT_TRUE(false) << std::string("Expected a call to Logger.Log at index [3], but it was only called ") + spy->LogCallInfos.size() + std::string(" times");
     }
   }
   void VerifyDependencyCallViewModelTests::then_call_Logger_Log____2()
@@ -85,9 +85,9 @@ namespace dependencies::calls
     for (int callInfoIndex = 0; callInfoIndex <= spy->LogCallInfos.size(); callInfoIndex++)
     {
       auto& callInfo = spy->LogCallInfos.at(callInfoIndex - 1);
-      ASSERT_EQ(std::string("my log"), callInfo.messageValue) << std::string("Logger.Log Call[") + callInfoIndex + std::string("]: Expected argument value 'message' is <") + std::string("my log") + std::string("> but was <") + callInfo.messageValue + std::string(">");
+      EXPECT_EQ(std::string("my log"), callInfo.messageValue) << std::string("Logger.Log Call[") + callInfoIndex + std::string("]: Expected argument value 'message' is <") + std::string("my log") + std::string("> but was <") + callInfo.messageValue + std::string(">");
     }
-    ASSERT_TRUE(spy->LogCallInfos.size() >= 3) << std::string("Expected that Logger.Log was called at least 3 times, but was ") + spy->LogCallInfos.size();
-    ASSERT_TRUE(spy->LogCallInfos.size() <= 6) << std::string("Expected that Logger.Log was called at most 6 times, but was ") + spy->LogCallInfos.size();
+    EXPECT_TRUE(spy->LogCallInfos.size() >= 3) << std::string("Expected that Logger.Log was called at least 3 times, but was ") + spy->LogCallInfos.size();
+    EXPECT_TRUE(spy->LogCallInfos.size() <= 6) << std::string("Expected that Logger.Log was called at most 6 times, but was ") + spy->LogCallInfos.size();
   }
 }

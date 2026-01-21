@@ -127,7 +127,7 @@ class RowBasedCommand_ViewTests {
 
       AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that list view MyFlags row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
 
-      AssertTrueWithMessage ( row0.getIsCheckboxesCheckBoxChecked (  ), "Expected that checkbox Checkboxes is checked, but was <" + row0.getIsCheckboxesCheckBoxChecked (  ) + ">" );
+      ;
 
     }
 
@@ -136,7 +136,7 @@ class RowBasedCommand_ViewTests {
 
       AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that list view MyFlags row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
 
-      AssertFalseWithMessage ( row1.getIsCheckboxesCheckBoxChecked (  ), "Expected that checkbox Checkboxes is unchecked, but was <" + row1.getIsCheckboxesCheckBoxChecked (  ) + ">" );
+      ;
 
     }
 

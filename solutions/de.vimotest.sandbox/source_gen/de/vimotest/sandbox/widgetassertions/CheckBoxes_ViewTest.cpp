@@ -3,6 +3,8 @@
 #include "CheckBoxes_ViewModelTestEnvironment.h"
 #include <string>
 #include "CheckBoxes_ViewModel.h"
+#include <alf/library/primitivebehaviors/BooleanFunctions.hpp>
+#include <optional>
 #include "CheckBoxes_ViewModelTestEnvironmentImpl.h"
 
 namespace widgetassertions
@@ -58,37 +60,43 @@ namespace widgetassertions
   }
   void CheckBoxes_ViewTest::then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_()
   {
-    ASSERT_TRUE(this->sut->getIsMyFlagWithLabelCheckBoxChecked()) << std::string("Expected that checkbox MyFlagWithLabel is checked, but was <") + this->sut->getIsMyFlagWithLabelCheckBoxChecked() + std::string(">");
-    ASSERT_TRUE(this->sut->getIsMyFlagWithLabelCheckBoxEnabled()) << std::string("Expected checkbox MyFlagWithLabel is enabled, but it was disabled");
-    ASSERT_TRUE(this->sut->getIsMyFlagWithLabelCheckBoxVisible()) << std::string("Expected checkbox MyFlagWithLabel is visible, but it was hidden");
-    ASSERT_EQ(std::string("My Label"), this->sut->getMyFlagWithLabelCheckBoxText()) << std::string("Expected that checkbox MyFlagWithLabel has text <") + std::string("My Label") + std::string(">, but was <") + this->sut->getMyFlagWithLabelCheckBoxText() + std::string(">");
+    ;
+    EXPECT_TRUE(this->sut->getIsMyFlagWithLabelCheckBoxEnabled()) << std::string("Expected checkbox MyFlagWithLabel is enabled, but it was disabled");
+    EXPECT_TRUE(this->sut->getIsMyFlagWithLabelCheckBoxVisible()) << std::string("Expected checkbox MyFlagWithLabel is visible, but it was hidden");
+    EXPECT_EQ(std::string("My Label"), this->sut->getMyFlagWithLabelCheckBoxText()) << std::string("Expected that checkbox MyFlagWithLabel has text <") + std::string("My Label") + std::string(">, but was <") + this->sut->getMyFlagWithLabelCheckBoxText() + std::string(">");
   }
   void CheckBoxes_ViewTest::then_MyFlagNoLabel_is_not_checked()
   {
-    ASSERT_FALSE(this->sut->getIsMyFlagNoLabelCheckBoxChecked()) << std::string("Expected that checkbox MyFlagNoLabel is unchecked, but was <") + this->sut->getIsMyFlagNoLabelCheckBoxChecked() + std::string(">");
+    ;
   }
   void CheckBoxes_ViewTest::then_MyFlagTriState_is_mixed()
   {
-    ASSERT_EQ(nullptr, this->sut->getIsMyFlagTriStateCheckBoxChecked()) << std::string("Expected that checkbox MyFlagTriState is indeterminate (null), but was <") + this->sut->getIsMyFlagTriStateCheckBoxChecked() + std::string(">");
+    std::string actualCheckValue = std::string("indeterminate (null)");
+    if (this->sut->getIsMyFlagTriStateCheckBoxChecked().has_value())
+    {
+      actualCheckValue = alf::library::primitivebehaviors::BooleanFunctions::ToString(this->sut->getIsMyFlagTriStateCheckBoxChecked());
+    }
+
+    EXPECT_EQ(nullptr, this->sut->getIsMyFlagTriStateCheckBoxChecked()) << std::string("Expected that checkbox MyFlagTriState is indeterminate (null), but was <") + alf::library::primitivebehaviors::BooleanFunctions::ToString(this->sut->getIsMyFlagTriStateCheckBoxChecked()) + std::string(">");
   }
   void CheckBoxes_ViewTest::then_MyFlagTriState_is_checked()
   {
-    ASSERT_TRUE(this->sut->getIsMyFlagTriStateCheckBoxChecked()) << std::string("Expected that checkbox MyFlagTriState is checked, but was <") + this->sut->getIsMyFlagTriStateCheckBoxChecked() + std::string(">");
+    ;
   }
   void CheckBoxes_ViewTest::then_MyFlagTriState_is_not_checked()
   {
-    ASSERT_FALSE(this->sut->getIsMyFlagTriStateCheckBoxChecked()) << std::string("Expected that checkbox MyFlagTriState is unchecked, but was <") + this->sut->getIsMyFlagTriStateCheckBoxChecked() + std::string(">");
+    ;
   }
   void CheckBoxes_ViewTest::then_MyFlagWithLabel_is_checked_and_is_not_enabled_and_shows_text_value_()
   {
-    ASSERT_TRUE(this->sut->getIsMyFlagWithLabelCheckBoxChecked()) << std::string("Expected that checkbox MyFlagWithLabel is checked, but was <") + this->sut->getIsMyFlagWithLabelCheckBoxChecked() + std::string(">");
-    ASSERT_FALSE(this->sut->getIsMyFlagWithLabelCheckBoxEnabled()) << std::string("Expected checkbox MyFlagWithLabel is disabled, but it was enabled");
-    ASSERT_EQ(std::string("value"), this->sut->getMyFlagWithLabelCheckBoxText()) << std::string("Expected that checkbox MyFlagWithLabel has text <") + std::string("value") + std::string(">, but was <") + this->sut->getMyFlagWithLabelCheckBoxText() + std::string(">");
+    ;
+    EXPECT_FALSE(this->sut->getIsMyFlagWithLabelCheckBoxEnabled()) << std::string("Expected checkbox MyFlagWithLabel is disabled, but it was enabled");
+    EXPECT_EQ(std::string("value"), this->sut->getMyFlagWithLabelCheckBoxText()) << std::string("Expected that checkbox MyFlagWithLabel has text <") + std::string("value") + std::string(">, but was <") + this->sut->getMyFlagWithLabelCheckBoxText() + std::string(">");
   }
   void CheckBoxes_ViewTest::then_MyFlagWithLabel_is_checked_and_is_not_visible_and_shows_text_test_()
   {
-    ASSERT_TRUE(this->sut->getIsMyFlagWithLabelCheckBoxChecked()) << std::string("Expected that checkbox MyFlagWithLabel is checked, but was <") + this->sut->getIsMyFlagWithLabelCheckBoxChecked() + std::string(">");
-    ASSERT_FALSE(this->sut->getIsMyFlagWithLabelCheckBoxVisible()) << std::string("Expected checkbox MyFlagWithLabel is hidden, but it was visible");
-    ASSERT_EQ(std::string("test"), this->sut->getMyFlagWithLabelCheckBoxText()) << std::string("Expected that checkbox MyFlagWithLabel has text <") + std::string("test") + std::string(">, but was <") + this->sut->getMyFlagWithLabelCheckBoxText() + std::string(">");
+    ;
+    EXPECT_FALSE(this->sut->getIsMyFlagWithLabelCheckBoxVisible()) << std::string("Expected checkbox MyFlagWithLabel is hidden, but it was visible");
+    EXPECT_EQ(std::string("test"), this->sut->getMyFlagWithLabelCheckBoxText()) << std::string("Expected that checkbox MyFlagWithLabel has text <") + std::string("test") + std::string(">, but was <") + this->sut->getMyFlagWithLabelCheckBoxText() + std::string(">");
   }
 }

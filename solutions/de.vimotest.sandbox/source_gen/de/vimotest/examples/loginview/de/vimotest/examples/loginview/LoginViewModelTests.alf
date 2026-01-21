@@ -208,7 +208,7 @@ class LoginViewModelTests {
   }
   
   public then_ShowPassword_is_checked (  ) {
-    AssertTrueWithMessage ( this.sut.getIsShowPasswordCheckBoxChecked (  ), "Expected that checkbox ShowPassword is checked, but was <" + this.sut.getIsShowPasswordCheckBoxChecked (  ) + ">" );
+    AssertTrueWithMessage ( this.sut.getIsShowPasswordCheckBoxChecked (  ), "Expected that checkbox ShowPassword is checked, but was <" + ( this.sut.getIsShowPasswordCheckBoxChecked (  ) ? "checked" : "unchecked" ) + ">" );
 
   }
   

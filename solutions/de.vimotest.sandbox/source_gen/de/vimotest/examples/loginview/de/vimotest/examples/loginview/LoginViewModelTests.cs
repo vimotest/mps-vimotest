@@ -176,7 +176,7 @@ public class LoginViewModelTests
 
     public virtual void then_ShowPassword_is_checked()
     {
-        Assert.IsTrue(this.sut.getIsShowPasswordCheckBoxChecked(), "Expected that checkbox ShowPassword is checked, but was <" + this.sut.getIsShowPasswordCheckBoxChecked() + ">");
+        Assert.IsTrue(this.sut.getIsShowPasswordCheckBoxChecked(), "Expected that checkbox ShowPassword is checked, but was <" + (this.sut.getIsShowPasswordCheckBoxChecked() ? "checked" : "unchecked") + ">");
     }
 
     public virtual void then_Error_shows_text_Needs_uppercase_letters_()

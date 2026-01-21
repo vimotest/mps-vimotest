@@ -4,6 +4,7 @@
 using widgetassertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
+using Alf.Library.PrimitiveBehaviors;
 
 [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class LowLevelFields_ViewTests
@@ -51,7 +52,7 @@ public class LowLevelFields_ViewTests
 
     public virtual void then_MyBool_is_true()
     {
-        Assert.IsTrue(this.sut.getMyBool(), "Expected field 'MyBool' has value <true>, but it was <" + this.sut.getMyBool() + ">");
+        Assert.IsTrue(this.sut.getMyBool(), "Expected field 'MyBool' has value <true>, but it was <" + (this.sut.getMyBool() ? "true" : "false") + ">");
     }
 
     public virtual void then_MyInt_is_42()
@@ -74,7 +75,7 @@ public class LowLevelFields_ViewTests
     public virtual void then_CustomListRowField_has_1_rows()
     {
         var actualRows = this.sut.getCustomListRowFieldListRows();
-        Assert.AreEqual(1, actualRows.Count, "Expected that list view CustomListRowField has 1 rows, but has " + actualRows.Count);
+        Assert.AreEqual(1, actualRows.Count, "Expected that list view CustomListRowField has 1 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
 
         {
             var row0 = actualRows[0];
@@ -88,25 +89,25 @@ public class LowLevelFields_ViewTests
     public virtual void then_CustomTableRowField_has_1_rows()
     {
         var actualRows = this.sut.getCustomTableRowFieldTableRows();
-        Assert.AreEqual(1, actualRows.Count, "Expected that table view CustomTableRowField has 1 rows, but has " + actualRows.Count);
+        Assert.AreEqual(1, actualRows.Count, "Expected that table view CustomTableRowField has 1 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
 
         {
             var row0 = actualRows[0];
             Assert.AreEqual("0", row0.getRowHandle(), "Expected that table view CustomTableRowField row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">");
             Assert.AreEqual("", row0.getHeaderLabelText(), "Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText() + ">");
-            Assert.IsFalse(row0.getAdditionalBool(), "Expected field 'AdditionalBool' has value <false>, but it was <" + row0.getAdditionalBool() + ">");
+            Assert.IsFalse(row0.getAdditionalBool(), "Expected field 'AdditionalBool' has value <false>, but it was <" + (row0.getAdditionalBool() ? "true" : "false") + ">");
         }
     }
 
     public virtual void then_CustomTreeRowField_has_1_rows()
     {
         var actualRows = this.sut.getCustomTreeRowFieldTreeRows();
-        Assert.AreEqual(1, actualRows.Count, "Expected that tree view CustomTreeRowField has 1 rows, but has " + actualRows.Count);
+        Assert.AreEqual(1, actualRows.Count, "Expected that tree view CustomTreeRowField has 1 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
 
         {
             var row0 = actualRows[0];
             Assert.AreEqual("9", row0.getRowHandle(), "Expected that tree view CustomTreeRowField row at index 0 has rowhandle <9>, but was <" + row0.getRowHandle() + ">");
-            Assert.AreEqual(0, row0.getRowDepth(), "Expected that tree view CustomTreeRowField row at index 0 has parent rowhandle <" + 0 + ">, but was <" + row0.getRowDepth() + ">");
+            Assert.AreEqual(0, row0.getRowDepth(), "Expected that tree view CustomTreeRowField row at index 0 has parent rowhandle <" + IntegerFunctions.ToString(0) + ">, but was <" + IntegerFunctions.ToString(row0.getRowDepth()) + ">");
             Assert.AreEqual("", row0.getHeaderLabelText(), "Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText() + ">");
             Assert.AreEqual(42, row0.getAdditionalInt(), "Expected field 'AdditionalInt' has value <" + 42 + ">, but it was <" + row0.getAdditionalInt() + ">");
         }

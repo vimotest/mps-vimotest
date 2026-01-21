@@ -8542,6 +8542,52 @@
       </node>
       <node concept="10P_77" id="26p1ZniIL6j" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="6D$hWxhUVDI" role="13h7CS">
+      <property role="TrG5h" value="hasStringBasedRowHandle" />
+      <node concept="3Tm1VV" id="6D$hWxhUVDJ" role="1B3o_S" />
+      <node concept="10P_77" id="6D$hWxhVfmo" role="3clF45" />
+      <node concept="3clFbS" id="6D$hWxhUVDL" role="3clF47">
+        <node concept="3clFbF" id="6D$hWxhVfur" role="3cqZAp">
+          <node concept="1Wc70l" id="26p1ZniHWFy" role="3clFbG">
+            <node concept="2OqwBi" id="26p1ZniHWFz" role="3uHU7w">
+              <node concept="21noJN" id="26p1ZniHWFD" role="2OqNvi">
+                <node concept="21nZrQ" id="26p1ZniHWFE" role="21noJM">
+                  <ref role="21nZrZ" to="at53:1RiAxJSewmn" resolve="StringRowHandle" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6D$hWxhVgxI" role="2Oq$k0">
+                <node concept="2OqwBi" id="6D$hWxhVgxJ" role="2Oq$k0">
+                  <node concept="13iPFW" id="6D$hWxhVgxK" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="6D$hWxhVgxL" role="2OqNvi">
+                    <node concept="1xMEDy" id="6D$hWxhVgxM" role="1xVPHs">
+                      <node concept="chp4Y" id="6D$hWxhVgxN" role="ri$Ld">
+                        <ref role="cht4Q" to="at53:1RiAxJSe_9Q" resolve="IRowBasedFeature" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="6D$hWxhVgxO" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:1RiAxJSeDXj" resolve="rowHandleKind" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="26p1ZniHWFH" role="3uHU7B">
+              <node concept="2OqwBi" id="26p1ZniHWFI" role="2Oq$k0">
+                <node concept="13iPFW" id="6D$hWxhVgv$" role="2Oq$k0" />
+                <node concept="3TrcHB" id="26p1ZniHWFO" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:26p1ZniAsfx" resolve="kind" />
+                </node>
+              </node>
+              <node concept="21noJN" id="26p1ZniHWFP" role="2OqNvi">
+                <node concept="21nZrQ" id="26p1ZniHWFQ" role="21noJM">
+                  <ref role="21nZrZ" to="at53:26p1ZniAzYf" resolve="ByParentRowHandle" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="26p1ZniID8c">
     <property role="3GE5qa" value="features.custom" />

@@ -102,8 +102,8 @@ namespace widgetassertions
   }
   void Labels_ViewTest::then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_()
   {
-    auto& actualMultiLineLines = this->sut->getMultiLineLabelText();
-    EXPECT_EQ(2, actualMultiLineLines.size()) << std::string("Expected that label MultiLine has text with 2 lines, but has ") + actualMultiLineLines.size();
+    auto actualMultiLineLines = this->sut->getMultiLineLabelText();
+    EXPECT_EQ(2, actualMultiLineLines.size()) << std::string("Expected that label MultiLine has text with 2 lines, but has ") + std::to_string(actualMultiLineLines.size());
     EXPECT_EQ(std::string("Expected Line 1"), actualMultiLineLines.at(0)) << std::string("Expected that label MultiLine has text line at index 0 matching <") + std::string("Expected Line 1") + std::string(">, but was <") + actualMultiLineLines.at(0) + std::string(">");
     EXPECT_EQ(std::string("Expected Line 2"), actualMultiLineLines.at(1)) << std::string("Expected that label MultiLine has text line at index 1 matching <") + std::string("Expected Line 2") + std::string(">, but was <") + actualMultiLineLines.at(1) + std::string(">");
   }
@@ -115,8 +115,8 @@ namespace widgetassertions
   void Labels_ViewTest::then_WithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_()
   {
     EXPECT_EQ(std::string("Info"), this->sut->getWithMultiLineToolTipLabelText()) << std::string("Expected that label WithMultiLineToolTip has text <") + std::string("Info") + std::string(">, but was <") + this->sut->getWithMultiLineToolTipLabelText() + std::string(">");
-    auto& actualWithMultiLineToolTipLines = this->sut->getWithMultiLineToolTipLabelToolTip();
-    EXPECT_EQ(2, actualWithMultiLineToolTipLines.size()) << std::string("Expected that label WithMultiLineToolTip has tooltip with 2 lines, but has ") + actualWithMultiLineToolTipLines.size();
+    auto actualWithMultiLineToolTipLines = this->sut->getWithMultiLineToolTipLabelToolTip();
+    EXPECT_EQ(2, actualWithMultiLineToolTipLines.size()) << std::string("Expected that label WithMultiLineToolTip has tooltip with 2 lines, but has ") + std::to_string(actualWithMultiLineToolTipLines.size());
     EXPECT_EQ(std::string("Line1"), actualWithMultiLineToolTipLines.at(0)) << std::string("Expected that label WithMultiLineToolTip has tooltip line at index 0 matching <") + std::string("Line1") + std::string(">, but was <") + actualWithMultiLineToolTipLines.at(0) + std::string(">");
     EXPECT_EQ(std::string("Line2"), actualWithMultiLineToolTipLines.at(1)) << std::string("Expected that label WithMultiLineToolTip has tooltip line at index 1 matching <") + std::string("Line2") + std::string(">, but was <") + actualWithMultiLineToolTipLines.at(1) + std::string(">");
   }

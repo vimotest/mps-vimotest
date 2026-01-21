@@ -200,6 +200,9 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="4705942098322609812" name="jetbrains.mps.lang.smodel.structure.EnumMember_IsOperation" flags="ng" index="21noJN">
+        <child id="4705942098322609813" name="member" index="21noJM" />
+      </concept>
       <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
         <reference id="4705942098322467736" name="decl" index="21nZrZ" />
       </concept>
@@ -228,11 +231,15 @@
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1227264722563" name="jetbrains.mps.lang.smodel.structure.EqualsStructurallyExpression" flags="nn" index="2YFouu" />
+      <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumerationMemberType" flags="in" index="2ZThk1">
+        <reference id="1240170836027" name="enum" index="2ZWj4r" />
+      </concept>
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
         <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -1423,6 +1430,64 @@
       <node concept="37vLTG" id="7ceEXPSyU8E" role="3clF46">
         <property role="TrG5h" value="expectedValue" />
         <node concept="10P_77" id="7ceEXPSyU8D" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2YIFZL" id="3JjhRuYGgMT" role="jymVt">
+      <property role="TrG5h" value="getNullableBooleanAssertOperation" />
+      <node concept="3clFbS" id="3JjhRuYGgMU" role="3clF47">
+        <node concept="3clFbJ" id="3JjhRuYGLyI" role="3cqZAp">
+          <node concept="3clFbS" id="3JjhRuYGLyK" role="3clFbx">
+            <node concept="3cpWs6" id="3JjhRuYGM0o" role="3cqZAp">
+              <node concept="2OqwBi" id="3JjhRuYGMju" role="3cqZAk">
+                <node concept="2pJPEk" id="3JjhRuYGM5o" role="2Oq$k0">
+                  <node concept="2pJPED" id="3JjhRuYGM5p" role="2pJPEn">
+                    <ref role="2pJxaS" to="28lk:2kuSLC0oTxk" resolve="NameBinding" />
+                    <node concept="2pIpSj" id="3JjhRuYGM5q" role="2pJxcM">
+                      <ref role="2pIpSl" to="28lk:3m3bKNZGB$m" resolve="nameRef" />
+                      <node concept="36bGnv" id="3JjhRuYGM5r" role="28nt2d">
+                        <ref role="36bGnp" to="hsxa:7NQ16AKJOZm" resolve="AssertEqualWithMessage" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="3JjhRuYGMv9" role="2OqNvi">
+                  <ref role="3Tt5mk" to="28lk:3m3bKNZGB$m" resolve="nameRef" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3JjhRuYGLJi" role="3clFbw">
+            <node concept="37vLTw" id="3JjhRuYGL_U" role="2Oq$k0">
+              <ref role="3cqZAo" node="3JjhRuYGgNe" resolve="expectedValue" />
+            </node>
+            <node concept="3w_OXm" id="3JjhRuYGLTg" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3JjhRuYGMD2" role="3cqZAp">
+          <node concept="1rXfSq" id="3JjhRuYGMD0" role="3clFbG">
+            <ref role="37wK5l" node="7ceEXPSyU88" resolve="getBooleanAssertOperation" />
+            <node concept="2OqwBi" id="3JjhRuYGMXm" role="37wK5m">
+              <node concept="37vLTw" id="3JjhRuYGMNa" role="2Oq$k0">
+                <ref role="3cqZAo" node="3JjhRuYGgNe" resolve="expectedValue" />
+              </node>
+              <node concept="21noJN" id="3JjhRuYGN7k" role="2OqNvi">
+                <node concept="21nZrQ" id="3JjhRuYGN7m" role="21noJM">
+                  <ref role="21nZrZ" to="evry:1EVo$X00Gbt" resolve="TRUE" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3JjhRuYGgNc" role="1B3o_S" />
+      <node concept="3Tqbb2" id="3JjhRuYGgNd" role="3clF45">
+        <ref role="ehGHo" to="28lk:6ldY1Si$Wi5" resolve="AlfNamedConcept" />
+      </node>
+      <node concept="37vLTG" id="3JjhRuYGgNe" role="3clF46">
+        <property role="TrG5h" value="expectedValue" />
+        <node concept="2ZThk1" id="3JjhRuYG_BY" role="1tU5fm">
+          <ref role="2ZWj4r" to="evry:1EVo$X00Gbs" resolve="NullableBoolean" />
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="7ceEXPSyDOb" role="1B3o_S" />

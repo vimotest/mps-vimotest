@@ -130,7 +130,7 @@ class Labels_ViewTest {
   public then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_ (  ) {
     let actualMultiLineLines: String [] = this.sut.getMultiLineLabelText (  );
 
-    AssertEqualWithMessage ( 2, actualMultiLineLines->size (  ), "Expected that label MultiLine has text with 2 lines, but has " + actualMultiLineLines->size (  ) );
+    AssertEqualWithMessage ( 2, actualMultiLineLines->size (  ), "Expected that label MultiLine has text with 2 lines, but has " + IntegerFunctions:: ToString ( actualMultiLineLines->size (  ) ) );
 
     AssertEqualWithMessage ( "Expected Line 1", actualMultiLineLines[ 1 ] ?? "", "Expected that label MultiLine has text line at index 0 matching <" + "Expected Line 1" + ">, but was <" + actualMultiLineLines[ 1 ] ?? "" + ">" );
 
@@ -150,7 +150,7 @@ class Labels_ViewTest {
 
     let actualWithMultiLineToolTipLines: String [] = this.sut.getWithMultiLineToolTipLabelToolTip (  );
 
-    AssertEqualWithMessage ( 2, actualWithMultiLineToolTipLines->size (  ), "Expected that label WithMultiLineToolTip has tooltip with 2 lines, but has " + actualWithMultiLineToolTipLines->size (  ) );
+    AssertEqualWithMessage ( 2, actualWithMultiLineToolTipLines->size (  ), "Expected that label WithMultiLineToolTip has tooltip with 2 lines, but has " + IntegerFunctions:: ToString ( actualWithMultiLineToolTipLines->size (  ) ) );
 
     AssertEqualWithMessage ( "Line1", actualWithMultiLineToolTipLines[ 1 ] ?? "", "Expected that label WithMultiLineToolTip has tooltip line at index 0 matching <" + "Line1" + ">, but was <" + actualWithMultiLineToolTipLines[ 1 ] ?? "" + ">" );
 

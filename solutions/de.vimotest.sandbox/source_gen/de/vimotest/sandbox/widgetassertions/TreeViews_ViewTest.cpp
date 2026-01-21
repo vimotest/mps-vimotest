@@ -2,8 +2,8 @@
 #include <memory>
 #include "TreeViews_ViewModelTestEnvironment.h"
 #include "TreeViews_ViewModel.h"
-#include <vector>
 #include <string>
+#include <vector>
 #include "TreeViews_ViewModelMyTreeViewElementsRow.h"
 #include "TreeViews_ViewModelMyStringRowHandlesRow.h"
 #include "TreeViews_ViewModelMyParentIndexRowHandlesRow.h"
@@ -56,82 +56,82 @@ namespace widgetassertions
   }
   void TreeViews_ViewTest::then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible()
   {
-    auto& actualRows = this->sut->getMyTreeViewElementsTreeRows();
-    EXPECT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyTreeViewElements has 2 rows, but has ") + actualRows.size();
+    auto actualRows = this->sut->getMyTreeViewElementsTreeRows();
+    EXPECT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyTreeViewElements has 2 rows, but has ") + std::to_string(actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
-    EXPECT_EQ(0, row0->getRowIndex()) << std::string("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
-    EXPECT_EQ(0, row0->getRowDepth()) << std::string("Expected that tree view MyTreeViewElements row at index 0 has parent rowhandle <") + 0 + std::string(">, but was <") + row0->getRowDepth() + std::string(">");
-    ;
+    EXPECT_EQ(0, row0->getRowIndex()) << std::string("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <") + std::to_string(row0->getRowIndex()) + std::string(">");
+    EXPECT_EQ(0, row0->getRowDepth()) << std::string("Expected that tree view MyTreeViewElements row at index 0 has parent rowhandle <") + std::to_string(0) + std::string(">, but was <") + std::to_string(row0->getRowDepth()) + std::string(">");
+    EXPECT_TRUE(row0->getIsIncludeCheckBoxChecked()) << std::string("Expected that checkbox Include is checked, but was <") + (row0->getIsIncludeCheckBoxChecked() ? std::string("checked") : std::string("unchecked")) + std::string(">");
     EXPECT_EQ(std::string("A"), row0->getNameLabelText()) << std::string("Expected that label Name has text <") + std::string("A") + std::string(">, but was <") + row0->getNameLabelText() + std::string(">");
     EXPECT_EQ(std::string("B"), row0->getDescriptionLabelText()) << std::string("Expected that label Description has text <") + std::string("B") + std::string(">, but was <") + row0->getDescriptionLabelText() + std::string(">");
     EXPECT_EQ(std::string("image_triangle"), row0->getInfoImageName()) << std::string("Expected that image Info has ") + std::string("image <image_triangle>") + std::string(", but was <") + row0->getInfoImageName() + std::string(">");
     // }
     // {
     auto& row1 = actualRows.at(1);
-    EXPECT_EQ(1, row1->getRowIndex()) << std::string("Expected that tree view MyTreeViewElements row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
-    EXPECT_EQ(1, row1->getRowDepth()) << std::string("Expected that tree view MyTreeViewElements row at index 1 has parent rowhandle <") + 1 + std::string(">, but was <") + row1->getRowDepth() + std::string(">");
-    ;
+    EXPECT_EQ(1, row1->getRowIndex()) << std::string("Expected that tree view MyTreeViewElements row at index 1 has rowhandle <1>, but was <") + std::to_string(row1->getRowIndex()) + std::string(">");
+    EXPECT_EQ(1, row1->getRowDepth()) << std::string("Expected that tree view MyTreeViewElements row at index 1 has parent rowhandle <") + std::to_string(1) + std::string(">, but was <") + std::to_string(row1->getRowDepth()) + std::string(">");
+    EXPECT_FALSE(row1->getIsIncludeCheckBoxChecked()) << std::string("Expected that checkbox Include is unchecked, but was <") + (row1->getIsIncludeCheckBoxChecked() ? std::string("checked") : std::string("unchecked")) + std::string(">");
     EXPECT_EQ(std::string("C"), row1->getNameLabelText()) << std::string("Expected that label Name has text <") + std::string("C") + std::string(">, but was <") + row1->getNameLabelText() + std::string(">");
     EXPECT_EQ(std::string("D"), row1->getDescriptionLabelText()) << std::string("Expected that label Description has text <") + std::string("D") + std::string(">, but was <") + row1->getDescriptionLabelText() + std::string(">");
     EXPECT_EQ(std::string("image_circle"), row1->getInfoImageName()) << std::string("Expected that image Info has ") + std::string("image <image_circle>") + std::string(", but was <") + row1->getInfoImageName() + std::string(">");
     // }
-    EXPECT_EQ(1, this->sut->getMyTreeViewElementsTreeSelectedRow()) << std::string("Expected that tree view MyTreeViewElements has selected row with row handle <") + 1 + std::string(">, but was <") + this->sut->getMyTreeViewElementsTreeSelectedRow() + std::string(">");
+    EXPECT_EQ(1, this->sut->getMyTreeViewElementsTreeSelectedRow()) << std::string("Expected that tree view MyTreeViewElements has selected row with row handle <") + std::to_string(1) + std::string(">, but was <") + std::to_string(this->sut->getMyTreeViewElementsTreeSelectedRow()) + std::string(">");
     EXPECT_TRUE(this->sut->getIsMyTreeViewElementsTreeEnabled()) << std::string("Expected tree view MyTreeViewElements is enabled, but it was disabled");
     EXPECT_TRUE(this->sut->getIsMyTreeViewElementsTreeVisible()) << std::string("Expected tree view MyTreeViewElements is visible, but it was hidden");
     EXPECT_FALSE(this->sut->getIsMyTreeViewElementsTreeDescriptionColumnVisible()) << std::string("Expected tree column Description is hidden, but it was visible");
   }
   void TreeViews_ViewTest::then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1()
   {
-    auto& actualRows = this->sut->getMyStringRowHandlesTreeRows();
-    EXPECT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyStringRowHandles has 2 rows, but has ") + actualRows.size();
+    auto actualRows = this->sut->getMyStringRowHandlesTreeRows();
+    EXPECT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyStringRowHandles has 2 rows, but has ") + std::to_string(actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
     EXPECT_EQ(std::string("ROW0"), row0->getRowHandle()) << std::string("Expected that tree view MyStringRowHandles row at index 0 has rowhandle <ROW0>, but was <") + row0->getRowHandle() + std::string(">");
-    EXPECT_EQ(0, row0->getRowDepth()) << std::string("Expected that tree view MyStringRowHandles row at index 0 has parent rowhandle <") + 0 + std::string(">, but was <") + row0->getRowDepth() + std::string(">");
+    EXPECT_EQ(0, row0->getRowDepth()) << std::string("Expected that tree view MyStringRowHandles row at index 0 has parent rowhandle <") + std::to_string(0) + std::string(">, but was <") + std::to_string(row0->getRowDepth()) + std::string(">");
     EXPECT_EQ(std::string("A"), row0->getValuesLabelText()) << std::string("Expected that label Values has text <") + std::string("A") + std::string(">, but was <") + row0->getValuesLabelText() + std::string(">");
     // }
     // {
     auto& row1 = actualRows.at(1);
     EXPECT_EQ(std::string("ROW1"), row1->getRowHandle()) << std::string("Expected that tree view MyStringRowHandles row at index 1 has rowhandle <ROW1>, but was <") + row1->getRowHandle() + std::string(">");
-    EXPECT_EQ(0, row1->getRowDepth()) << std::string("Expected that tree view MyStringRowHandles row at index 1 has parent rowhandle <") + 0 + std::string(">, but was <") + row1->getRowDepth() + std::string(">");
+    EXPECT_EQ(0, row1->getRowDepth()) << std::string("Expected that tree view MyStringRowHandles row at index 1 has parent rowhandle <") + std::to_string(0) + std::string(">, but was <") + std::to_string(row1->getRowDepth()) + std::string(">");
     EXPECT_EQ(std::string("B"), row1->getValuesLabelText()) << std::string("Expected that label Values has text <") + std::string("B") + std::string(">, but was <") + row1->getValuesLabelText() + std::string(">");
     // }
     EXPECT_EQ(std::string("ROW1"), this->sut->getMyStringRowHandlesTreeSelectedRow()) << std::string("Expected that tree view MyStringRowHandles has selected row with row handle <") + std::string("ROW1") + std::string(">, but was <") + this->sut->getMyStringRowHandlesTreeSelectedRow() + std::string(">");
   }
   void TreeViews_ViewTest::then_MyParentIndexRowHandles_has_4_rows()
   {
-    auto& actualRows = this->sut->getMyParentIndexRowHandlesTreeRows();
-    EXPECT_EQ(4, actualRows.size()) << std::string("Expected that tree view MyParentIndexRowHandles has 4 rows, but has ") + actualRows.size();
+    auto actualRows = this->sut->getMyParentIndexRowHandlesTreeRows();
+    EXPECT_EQ(4, actualRows.size()) << std::string("Expected that tree view MyParentIndexRowHandles has 4 rows, but has ") + std::to_string(actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
-    EXPECT_EQ(0, row0->getRowIndex()) << std::string("Expected that tree view MyParentIndexRowHandles row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
-    EXPECT_EQ(-1, row0->getParentRowIndex()) << std::string("Expected that tree view MyParentIndexRowHandles row at index 0 has parent rowhandle <") + -1 + std::string(">, but was <") + row0->getParentRowIndex() + std::string(">");
+    EXPECT_EQ(0, row0->getRowIndex()) << std::string("Expected that tree view MyParentIndexRowHandles row at index 0 has rowhandle <0>, but was <") + std::to_string(row0->getRowIndex()) + std::string(">");
+    EXPECT_EQ(-1, row0->getParentRowIndex()) << std::string("Expected that tree view MyParentIndexRowHandles row at index 0 has parent rowhandle <") + std::to_string(-1) + std::string(">, but was <") + std::to_string(row0->getParentRowIndex()) + std::string(">");
     EXPECT_EQ(std::string("A"), row0->getValuesLabelText()) << std::string("Expected that label Values has text <") + std::string("A") + std::string(">, but was <") + row0->getValuesLabelText() + std::string(">");
     // }
     // {
     auto& row1 = actualRows.at(1);
-    EXPECT_EQ(1, row1->getRowIndex()) << std::string("Expected that tree view MyParentIndexRowHandles row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
-    EXPECT_EQ(0, row1->getParentRowIndex()) << std::string("Expected that tree view MyParentIndexRowHandles row at index 1 has parent rowhandle <") + 0 + std::string(">, but was <") + row1->getParentRowIndex() + std::string(">");
+    EXPECT_EQ(1, row1->getRowIndex()) << std::string("Expected that tree view MyParentIndexRowHandles row at index 1 has rowhandle <1>, but was <") + std::to_string(row1->getRowIndex()) + std::string(">");
+    EXPECT_EQ(0, row1->getParentRowIndex()) << std::string("Expected that tree view MyParentIndexRowHandles row at index 1 has parent rowhandle <") + std::to_string(0) + std::string(">, but was <") + std::to_string(row1->getParentRowIndex()) + std::string(">");
     EXPECT_EQ(std::string("A.B"), row1->getValuesLabelText()) << std::string("Expected that label Values has text <") + std::string("A.B") + std::string(">, but was <") + row1->getValuesLabelText() + std::string(">");
     // }
     // {
     auto& row2 = actualRows.at(2);
-    EXPECT_EQ(2, row2->getRowIndex()) << std::string("Expected that tree view MyParentIndexRowHandles row at index 2 has rowhandle <2>, but was <") + row2->getRowIndex() + std::string(">");
-    EXPECT_EQ(-1, row2->getParentRowIndex()) << std::string("Expected that tree view MyParentIndexRowHandles row at index 2 has parent rowhandle <") + -1 + std::string(">, but was <") + row2->getParentRowIndex() + std::string(">");
+    EXPECT_EQ(2, row2->getRowIndex()) << std::string("Expected that tree view MyParentIndexRowHandles row at index 2 has rowhandle <2>, but was <") + std::to_string(row2->getRowIndex()) + std::string(">");
+    EXPECT_EQ(-1, row2->getParentRowIndex()) << std::string("Expected that tree view MyParentIndexRowHandles row at index 2 has parent rowhandle <") + std::to_string(-1) + std::string(">, but was <") + std::to_string(row2->getParentRowIndex()) + std::string(">");
     EXPECT_EQ(std::string("C"), row2->getValuesLabelText()) << std::string("Expected that label Values has text <") + std::string("C") + std::string(">, but was <") + row2->getValuesLabelText() + std::string(">");
     // }
     // {
     auto& row3 = actualRows.at(3);
-    EXPECT_EQ(3, row3->getRowIndex()) << std::string("Expected that tree view MyParentIndexRowHandles row at index 3 has rowhandle <3>, but was <") + row3->getRowIndex() + std::string(">");
-    EXPECT_EQ(2, row3->getParentRowIndex()) << std::string("Expected that tree view MyParentIndexRowHandles row at index 3 has parent rowhandle <") + 2 + std::string(">, but was <") + row3->getParentRowIndex() + std::string(">");
+    EXPECT_EQ(3, row3->getRowIndex()) << std::string("Expected that tree view MyParentIndexRowHandles row at index 3 has rowhandle <3>, but was <") + std::to_string(row3->getRowIndex()) + std::string(">");
+    EXPECT_EQ(2, row3->getParentRowIndex()) << std::string("Expected that tree view MyParentIndexRowHandles row at index 3 has parent rowhandle <") + std::to_string(2) + std::string(">, but was <") + std::to_string(row3->getParentRowIndex()) + std::string(">");
     EXPECT_EQ(std::string("C.D"), row3->getValuesLabelText()) << std::string("Expected that label Values has text <") + std::string("C.D") + std::string(">, but was <") + row3->getValuesLabelText() + std::string(">");
     // }
   }
   void TreeViews_ViewTest::then_MyParentStringRowHandles_has_4_rows()
   {
-    auto& actualRows = this->sut->getMyParentStringRowHandlesTreeRows();
-    EXPECT_EQ(4, actualRows.size()) << std::string("Expected that tree view MyParentStringRowHandles has 4 rows, but has ") + actualRows.size();
+    auto actualRows = this->sut->getMyParentStringRowHandlesTreeRows();
+    EXPECT_EQ(4, actualRows.size()) << std::string("Expected that tree view MyParentStringRowHandles has 4 rows, but has ") + std::to_string(actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
     EXPECT_EQ(std::string("HANDLE_A"), row0->getRowHandle()) << std::string("Expected that tree view MyParentStringRowHandles row at index 0 has rowhandle <HANDLE_A>, but was <") + row0->getRowHandle() + std::string(">");
@@ -159,18 +159,18 @@ namespace widgetassertions
   }
   void TreeViews_ViewTest::then_MyTreeViewElements_has_2_rows()
   {
-    auto& actualRows = this->sut->getMyTreeViewElementsTreeRows();
-    EXPECT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyTreeViewElements has 2 rows, but has ") + actualRows.size();
+    auto actualRows = this->sut->getMyTreeViewElementsTreeRows();
+    EXPECT_EQ(2, actualRows.size()) << std::string("Expected that tree view MyTreeViewElements has 2 rows, but has ") + std::to_string(actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
-    EXPECT_EQ(0, row0->getRowIndex()) << std::string("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
-    EXPECT_EQ(0, row0->getRowDepth()) << std::string("Expected that tree view MyTreeViewElements row at index 0 has parent rowhandle <") + 0 + std::string(">, but was <") + row0->getRowDepth() + std::string(">");
-    ;
+    EXPECT_EQ(0, row0->getRowIndex()) << std::string("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <") + std::to_string(row0->getRowIndex()) + std::string(">");
+    EXPECT_EQ(0, row0->getRowDepth()) << std::string("Expected that tree view MyTreeViewElements row at index 0 has parent rowhandle <") + std::to_string(0) + std::string(">, but was <") + std::to_string(row0->getRowDepth()) + std::string(">");
+    EXPECT_TRUE(row0->getIsIncludeCheckBoxChecked()) << std::string("Expected that checkbox Include is checked, but was <") + (row0->getIsIncludeCheckBoxChecked() ? std::string("checked") : std::string("unchecked")) + std::string(">");
     // }
     // {
     auto& row1 = actualRows.at(1);
-    EXPECT_EQ(1, row1->getRowIndex()) << std::string("Expected that tree view MyTreeViewElements row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
-    EXPECT_EQ(1, row1->getRowDepth()) << std::string("Expected that tree view MyTreeViewElements row at index 1 has parent rowhandle <") + 1 + std::string(">, but was <") + row1->getRowDepth() + std::string(">");
+    EXPECT_EQ(1, row1->getRowIndex()) << std::string("Expected that tree view MyTreeViewElements row at index 1 has rowhandle <1>, but was <") + std::to_string(row1->getRowIndex()) + std::string(">");
+    EXPECT_EQ(1, row1->getRowDepth()) << std::string("Expected that tree view MyTreeViewElements row at index 1 has parent rowhandle <") + std::to_string(1) + std::string(">, but was <") + std::to_string(row1->getRowDepth()) + std::string(">");
     EXPECT_EQ(std::string("D"), row1->getDescriptionLabelText()) << std::string("Expected that label Description has text <") + std::string("D") + std::string(">, but was <") + row1->getDescriptionLabelText() + std::string(">");
     // }
   }

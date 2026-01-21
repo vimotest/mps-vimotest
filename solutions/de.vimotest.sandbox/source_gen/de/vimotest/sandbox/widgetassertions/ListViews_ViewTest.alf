@@ -81,12 +81,12 @@ class ListViews_ViewTest {
   public then_MyListOfLabel_has_4_rows_and_selected_row_index_3 (  ) {
     let actualRows: ListViews_ViewModelMyListOfLabelRow [] = this.sut.getMyListOfLabelListRows (  );
 
-    AssertEqualWithMessage ( 4, actualRows->size (  ), "Expected that list view MyListOfLabel has 4 rows, but has " + actualRows->size (  ) );
+    AssertEqualWithMessage ( 4, actualRows->size (  ), "Expected that list view MyListOfLabel has 4 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: ListViews_ViewModelMyListOfLabelRow = actualRows[ 1 ];
 
-      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 0 has rowhandle <0>, but was <" + IntegerFunctions:: ToString ( row0.getRowIndex (  ) ) + ">" );
 
       AssertEqualWithMessage ( "A", row0.getMyValueLabelText (  ), "Expected that label My Value has text <" + "A" + ">, but was <" + row0.getMyValueLabelText (  ) + ">" );
 
@@ -99,7 +99,7 @@ class ListViews_ViewTest {
     {
       let row1: ListViews_ViewModelMyListOfLabelRow = actualRows[ 2 ];
 
-      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 1 has rowhandle <1>, but was <" + IntegerFunctions:: ToString ( row1.getRowIndex (  ) ) + ">" );
 
       AssertEqualWithMessage ( "B", row1.getMyValueLabelText (  ), "Expected that label My Value has text <" + "B" + ">, but was <" + row1.getMyValueLabelText (  ) + ">" );
 
@@ -110,7 +110,7 @@ class ListViews_ViewTest {
     {
       let row2: ListViews_ViewModelMyListOfLabelRow = actualRows[ 3 ];
 
-      AssertEqualWithMessage ( 2, row2.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 2 has rowhandle <2>, but was <" + row2.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 2, row2.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 2 has rowhandle <2>, but was <" + IntegerFunctions:: ToString ( row2.getRowIndex (  ) ) + ">" );
 
       AssertEqualWithMessage ( "C", row2.getMyValueLabelText (  ), "Expected that label My Value has text <" + "C" + ">, but was <" + row2.getMyValueLabelText (  ) + ">" );
 
@@ -121,7 +121,7 @@ class ListViews_ViewTest {
     {
       let row3: ListViews_ViewModelMyListOfLabelRow = actualRows[ 4 ];
 
-      AssertEqualWithMessage ( 3, row3.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 3 has rowhandle <3>, but was <" + row3.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 3, row3.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 3 has rowhandle <3>, but was <" + IntegerFunctions:: ToString ( row3.getRowIndex (  ) ) + ">" );
 
       AssertEqualWithMessage ( "D", row3.getMyValueLabelText (  ), "Expected that label My Value has text <" + "D" + ">, but was <" + row3.getMyValueLabelText (  ) + ">" );
 
@@ -129,19 +129,19 @@ class ListViews_ViewTest {
 
     }
 
-    AssertEqualWithMessage ( 3, this.sut.getMyListOfLabelListSelectedRow (  ), "Expected that list view MyListOfLabel has selected row with row handle <" + 3 + ">, but was <" + this.sut.getMyListOfLabelListSelectedRow (  ) + ">" );
+    AssertEqualWithMessage ( 3, this.sut.getMyListOfLabelListSelectedRow (  ), "Expected that list view MyListOfLabel has selected row with row handle <" + IntegerFunctions:: ToString ( 3 ) + ">, but was <" + IntegerFunctions:: ToString ( this.sut.getMyListOfLabelListSelectedRow (  ) ) + ">" );
 
   }
   
   public then_MyListOfImages_has_2_rows (  ) {
     let actualRows: ListViews_ViewModelMyListOfImagesRow [] = this.sut.getMyListOfImagesListRows (  );
 
-    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that list view MyListOfImages has 2 rows, but has " + actualRows->size (  ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that list view MyListOfImages has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: ListViews_ViewModelMyListOfImagesRow = actualRows[ 1 ];
 
-      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that list view MyListOfImages row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that list view MyListOfImages row at index 0 has rowhandle <0>, but was <" + IntegerFunctions:: ToString ( row0.getRowIndex (  ) ) + ">" );
 
       AssertEqualWithMessage ( "image_star", row0.getMyInfoImageName (  ), "Expected that image My Info has " + "image <image_star>" + ", but was <" + row0.getMyInfoImageName (  ) + ">" );
 
@@ -150,7 +150,7 @@ class ListViews_ViewTest {
     {
       let row1: ListViews_ViewModelMyListOfImagesRow = actualRows[ 2 ];
 
-      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that list view MyListOfImages row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that list view MyListOfImages row at index 1 has rowhandle <1>, but was <" + IntegerFunctions:: ToString ( row1.getRowIndex (  ) ) + ">" );
 
       AssertEqualWithMessage ( "image_circle", row1.getMyInfoImageName (  ), "Expected that image My Info has " + "image <image_circle>" + ", but was <" + row1.getMyInfoImageName (  ) + ">" );
 
@@ -161,32 +161,32 @@ class ListViews_ViewTest {
   public then_MyCheckboxes_has_3_rows (  ) {
     let actualRows: ListViews_ViewModelMyCheckboxesRow [] = this.sut.getMyCheckboxesListRows (  );
 
-    AssertEqualWithMessage ( 3, actualRows->size (  ), "Expected that list view MyCheckboxes has 3 rows, but has " + actualRows->size (  ) );
+    AssertEqualWithMessage ( 3, actualRows->size (  ), "Expected that list view MyCheckboxes has 3 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: ListViews_ViewModelMyCheckboxesRow = actualRows[ 1 ];
 
-      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that list view MyCheckboxes row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that list view MyCheckboxes row at index 0 has rowhandle <0>, but was <" + IntegerFunctions:: ToString ( row0.getRowIndex (  ) ) + ">" );
 
-      ;
+      AssertTrueWithMessage ( row0.getIsHeaderCheckBoxChecked (  ), "Expected that checkbox Header is checked, but was <" + ( row0.getIsHeaderCheckBoxChecked (  ) ? "checked" : "unchecked" ) + ">" );
 
     }
 
     {
       let row1: ListViews_ViewModelMyCheckboxesRow = actualRows[ 2 ];
 
-      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that list view MyCheckboxes row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that list view MyCheckboxes row at index 1 has rowhandle <1>, but was <" + IntegerFunctions:: ToString ( row1.getRowIndex (  ) ) + ">" );
 
-      ;
+      AssertFalseWithMessage ( row1.getIsHeaderCheckBoxChecked (  ), "Expected that checkbox Header is unchecked, but was <" + ( row1.getIsHeaderCheckBoxChecked (  ) ? "checked" : "unchecked" ) + ">" );
 
     }
 
     {
       let row2: ListViews_ViewModelMyCheckboxesRow = actualRows[ 3 ];
 
-      AssertEqualWithMessage ( 2, row2.getRowIndex (  ), "Expected that list view MyCheckboxes row at index 2 has rowhandle <2>, but was <" + row2.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 2, row2.getRowIndex (  ), "Expected that list view MyCheckboxes row at index 2 has rowhandle <2>, but was <" + IntegerFunctions:: ToString ( row2.getRowIndex (  ) ) + ">" );
 
-      ;
+      AssertTrueWithMessage ( row2.getIsHeaderCheckBoxChecked (  ), "Expected that checkbox Header is checked, but was <" + ( row2.getIsHeaderCheckBoxChecked (  ) ? "checked" : "unchecked" ) + ">" );
 
       AssertEqualWithMessage ( "My Label", row2.getHeaderCheckBoxText (  ), "Expected that checkbox Header has text <" + "My Label" + ">, but was <" + row2.getHeaderCheckBoxText (  ) + ">" );
 
@@ -197,7 +197,7 @@ class ListViews_ViewTest {
   public then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  ) {
     let actualRows: ListViews_ViewModelMyStringRowHandlesRow [] = this.sut.getMyStringRowHandlesListRows (  );
 
-    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that list view MyStringRowHandles has 2 rows, but has " + actualRows->size (  ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that list view MyStringRowHandles has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: ListViews_ViewModelMyStringRowHandlesRow = actualRows[ 1 ];
@@ -224,12 +224,12 @@ class ListViews_ViewTest {
   public then_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_ (  ) {
     let actualRows: ListViews_ViewModelMyListWithMultiRowSelectionRow [] = this.sut.getMyListWithMultiRowSelectionListRows (  );
 
-    AssertEqualWithMessage ( 3, actualRows->size (  ), "Expected that list view MyListWithMultiRowSelection has 3 rows, but has " + actualRows->size (  ) );
+    AssertEqualWithMessage ( 3, actualRows->size (  ), "Expected that list view MyListWithMultiRowSelection has 3 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: ListViews_ViewModelMyListWithMultiRowSelectionRow = actualRows[ 1 ];
 
-      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that list view MyListWithMultiRowSelection row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that list view MyListWithMultiRowSelection row at index 0 has rowhandle <0>, but was <" + IntegerFunctions:: ToString ( row0.getRowIndex (  ) ) + ">" );
 
       AssertEqualWithMessage ( "A", row0.getHeaderLabelText (  ), "Expected that label Header has text <" + "A" + ">, but was <" + row0.getHeaderLabelText (  ) + ">" );
 
@@ -238,7 +238,7 @@ class ListViews_ViewTest {
     {
       let row1: ListViews_ViewModelMyListWithMultiRowSelectionRow = actualRows[ 2 ];
 
-      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that list view MyListWithMultiRowSelection row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that list view MyListWithMultiRowSelection row at index 1 has rowhandle <1>, but was <" + IntegerFunctions:: ToString ( row1.getRowIndex (  ) ) + ">" );
 
       AssertEqualWithMessage ( "B", row1.getHeaderLabelText (  ), "Expected that label Header has text <" + "B" + ">, but was <" + row1.getHeaderLabelText (  ) + ">" );
 
@@ -247,7 +247,7 @@ class ListViews_ViewTest {
     {
       let row2: ListViews_ViewModelMyListWithMultiRowSelectionRow = actualRows[ 3 ];
 
-      AssertEqualWithMessage ( 2, row2.getRowIndex (  ), "Expected that list view MyListWithMultiRowSelection row at index 2 has rowhandle <2>, but was <" + row2.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 2, row2.getRowIndex (  ), "Expected that list view MyListWithMultiRowSelection row at index 2 has rowhandle <2>, but was <" + IntegerFunctions:: ToString ( row2.getRowIndex (  ) ) + ">" );
 
       AssertEqualWithMessage ( "C", row2.getHeaderLabelText (  ), "Expected that label Header has text <" + "C" + ">, but was <" + row2.getHeaderLabelText (  ) + ">" );
 
@@ -255,44 +255,44 @@ class ListViews_ViewTest {
 
     let actualMyListWithMultiRowSelectionSelectedRowHandles: Integer [] = this.sut.getMyListWithMultiRowSelectionListSelectedRows (  );
 
-    AssertEqualWithMessage ( 2, actualMyListWithMultiRowSelectionSelectedRowHandles->size (  ), "Expected that list view MyListWithMultiRowSelection has selected 2 rows, but has " + actualMyListWithMultiRowSelectionSelectedRowHandles->size (  ) );
+    AssertEqualWithMessage ( 2, actualMyListWithMultiRowSelectionSelectedRowHandles->size (  ), "Expected that list view MyListWithMultiRowSelection has selected 2 rows, but has " + IntegerFunctions:: ToString ( actualMyListWithMultiRowSelectionSelectedRowHandles->size (  ) ) );
 
-    AssertEqualWithMessage ( 0, actualMyListWithMultiRowSelectionSelectedRowHandles[ 1 ] ?? 0, "Expected that list view MyListWithMultiRowSelection has selected row at index 0 with row handle <" + 0 + ">, but was <" + actualMyListWithMultiRowSelectionSelectedRowHandles[ 1 ] ?? 0 + ">" );
+    AssertEqualWithMessage ( 0, actualMyListWithMultiRowSelectionSelectedRowHandles[ 1 ] ?? 0, "Expected that list view MyListWithMultiRowSelection has selected row at index 0 with row handle <" + IntegerFunctions:: ToString ( 0 ) + ">, but was <" + IntegerFunctions:: ToString ( actualMyListWithMultiRowSelectionSelectedRowHandles[ 1 ] ?? 0 ) + ">" );
 
-    AssertEqualWithMessage ( 2, actualMyListWithMultiRowSelectionSelectedRowHandles[ 2 ] ?? 0, "Expected that list view MyListWithMultiRowSelection has selected row at index 1 with row handle <" + 2 + ">, but was <" + actualMyListWithMultiRowSelectionSelectedRowHandles[ 2 ] ?? 0 + ">" );
+    AssertEqualWithMessage ( 2, actualMyListWithMultiRowSelectionSelectedRowHandles[ 2 ] ?? 0, "Expected that list view MyListWithMultiRowSelection has selected row at index 1 with row handle <" + IntegerFunctions:: ToString ( 2 ) + ">, but was <" + IntegerFunctions:: ToString ( actualMyListWithMultiRowSelectionSelectedRowHandles[ 2 ] ?? 0 ) + ">" );
 
   }
   
   public then_MyListOfLabel_has_4_rows (  ) {
     let actualRows: ListViews_ViewModelMyListOfLabelRow [] = this.sut.getMyListOfLabelListRows (  );
 
-    AssertEqualWithMessage ( 4, actualRows->size (  ), "Expected that list view MyListOfLabel has 4 rows, but has " + actualRows->size (  ) );
+    AssertEqualWithMessage ( 4, actualRows->size (  ), "Expected that list view MyListOfLabel has 4 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: ListViews_ViewModelMyListOfLabelRow = actualRows[ 1 ];
 
-      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 0 has rowhandle <0>, but was <" + IntegerFunctions:: ToString ( row0.getRowIndex (  ) ) + ">" );
 
     }
 
     {
       let row1: ListViews_ViewModelMyListOfLabelRow = actualRows[ 2 ];
 
-      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 1 has rowhandle <1>, but was <" + IntegerFunctions:: ToString ( row1.getRowIndex (  ) ) + ">" );
 
     }
 
     {
       let row2: ListViews_ViewModelMyListOfLabelRow = actualRows[ 3 ];
 
-      AssertEqualWithMessage ( 2, row2.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 2 has rowhandle <2>, but was <" + row2.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 2, row2.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 2 has rowhandle <2>, but was <" + IntegerFunctions:: ToString ( row2.getRowIndex (  ) ) + ">" );
 
     }
 
     {
       let row3: ListViews_ViewModelMyListOfLabelRow = actualRows[ 4 ];
 
-      AssertEqualWithMessage ( 3, row3.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 3 has rowhandle <3>, but was <" + row3.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 3, row3.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 3 has rowhandle <3>, but was <" + IntegerFunctions:: ToString ( row3.getRowIndex (  ) ) + ">" );
 
     }
 
@@ -301,19 +301,19 @@ class ListViews_ViewTest {
   public then_MyListOfLabel_has_4_rows_1 (  ) {
     let actualRows: ListViews_ViewModelMyListOfLabelRow [] = this.sut.getMyListOfLabelListRows (  );
 
-    AssertEqualWithMessage ( 4, actualRows->size (  ), "Expected that list view MyListOfLabel has 4 rows, but has " + actualRows->size (  ) );
+    AssertEqualWithMessage ( 4, actualRows->size (  ), "Expected that list view MyListOfLabel has 4 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: ListViews_ViewModelMyListOfLabelRow = actualRows[ 1 ];
 
-      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 0, row0.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 0 has rowhandle <0>, but was <" + IntegerFunctions:: ToString ( row0.getRowIndex (  ) ) + ">" );
 
     }
 
     {
       let row1: ListViews_ViewModelMyListOfLabelRow = actualRows[ 2 ];
 
-      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 1, row1.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 1 has rowhandle <1>, but was <" + IntegerFunctions:: ToString ( row1.getRowIndex (  ) ) + ">" );
 
       AssertEqualWithMessage ( "B", row1.getMyValueLabelText (  ), "Expected that label My Value has text <" + "B" + ">, but was <" + row1.getMyValueLabelText (  ) + ">" );
 
@@ -324,14 +324,14 @@ class ListViews_ViewTest {
     {
       let row2: ListViews_ViewModelMyListOfLabelRow = actualRows[ 3 ];
 
-      AssertEqualWithMessage ( 2, row2.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 2 has rowhandle <2>, but was <" + row2.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 2, row2.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 2 has rowhandle <2>, but was <" + IntegerFunctions:: ToString ( row2.getRowIndex (  ) ) + ">" );
 
     }
 
     {
       let row3: ListViews_ViewModelMyListOfLabelRow = actualRows[ 4 ];
 
-      AssertEqualWithMessage ( 3, row3.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 3 has rowhandle <3>, but was <" + row3.getRowIndex (  ) + ">" );
+      AssertEqualWithMessage ( 3, row3.getRowIndex (  ), "Expected that list view MyListOfLabel row at index 3 has rowhandle <3>, but was <" + IntegerFunctions:: ToString ( row3.getRowIndex (  ) ) + ">" );
 
       AssertEqualWithMessage ( "D", row3.getMyValueLabelText (  ), "Expected that label My Value has text <" + "D" + ">, but was <" + row3.getMyValueLabelText (  ) + ">" );
 
@@ -344,7 +344,7 @@ class ListViews_ViewTest {
   public then_MyButtons_has_0_rows (  ) {
     let actualRows: ListViews_ViewModelMyButtonsRow [] = this.sut.getMyButtonsListRows (  );
 
-    AssertEqualWithMessage ( 0, actualRows->size (  ), "Expected that list view MyButtons has 0 rows, but has " + actualRows->size (  ) );
+    AssertEqualWithMessage ( 0, actualRows->size (  ), "Expected that list view MyButtons has 0 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
   }
 }

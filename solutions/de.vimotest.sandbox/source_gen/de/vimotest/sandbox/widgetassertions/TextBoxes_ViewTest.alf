@@ -102,7 +102,7 @@ class TextBoxes_ViewTest {
   public then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_ (  ) {
     let actualMultiLineTextBoxValueLines: String [] = this.sut.getMultiLineTextBoxValueTextBoxText (  );
 
-    AssertEqualWithMessage ( 2, actualMultiLineTextBoxValueLines->size (  ), "Expected that textbox MultiLineTextBoxValue has text with 2 lines, but has " + actualMultiLineTextBoxValueLines->size (  ) );
+    AssertEqualWithMessage ( 2, actualMultiLineTextBoxValueLines->size (  ), "Expected that textbox MultiLineTextBoxValue has text with 2 lines, but has " + IntegerFunctions:: ToString ( actualMultiLineTextBoxValueLines->size (  ) ) );
 
     AssertEqualWithMessage ( "Expected1", actualMultiLineTextBoxValueLines[ 1 ] ?? "", "Expected that textbox MultiLineTextBoxValue has text line at index 0 matching <" + "Expected1" + ">, but was <" + actualMultiLineTextBoxValueLines[ 1 ] ?? "" + ">" );
 

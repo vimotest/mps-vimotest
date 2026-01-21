@@ -78,8 +78,8 @@ namespace widgetassertions
   }
   void TextBoxes_ViewTest::then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_()
   {
-    auto& actualMultiLineTextBoxValueLines = this->sut->getMultiLineTextBoxValueTextBoxText();
-    EXPECT_EQ(2, actualMultiLineTextBoxValueLines.size()) << std::string("Expected that textbox MultiLineTextBoxValue has text with 2 lines, but has ") + actualMultiLineTextBoxValueLines.size();
+    auto actualMultiLineTextBoxValueLines = this->sut->getMultiLineTextBoxValueTextBoxText();
+    EXPECT_EQ(2, actualMultiLineTextBoxValueLines.size()) << std::string("Expected that textbox MultiLineTextBoxValue has text with 2 lines, but has ") + std::to_string(actualMultiLineTextBoxValueLines.size());
     EXPECT_EQ(std::string("Expected1"), actualMultiLineTextBoxValueLines.at(0)) << std::string("Expected that textbox MultiLineTextBoxValue has text line at index 0 matching <") + std::string("Expected1") + std::string(">, but was <") + actualMultiLineTextBoxValueLines.at(0) + std::string(">");
     EXPECT_EQ(std::string("Expected2"), actualMultiLineTextBoxValueLines.at(1)) << std::string("Expected that textbox MultiLineTextBoxValue has text line at index 1 matching <") + std::string("Expected2") + std::string(">, but was <") + actualMultiLineTextBoxValueLines.at(1) + std::string(">");
   }

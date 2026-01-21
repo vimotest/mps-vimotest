@@ -134,7 +134,7 @@ public class LoginViewModelTests_Test {
     Assert.assertEquals("Expected that textbox Password has text <" + "Lovelace1" + ">, but was <" + this.sut.getPasswordTextBoxText() + ">", "Lovelace1", this.sut.getPasswordTextBoxText());
   }
   public void then_ShowPassword_is_checked() {
-    Assert.assertTrue("Expected that checkbox ShowPassword is checked, but was <" + this.sut.getIsShowPasswordCheckBoxChecked() + ">", this.sut.getIsShowPasswordCheckBoxChecked());
+    Assert.assertTrue("Expected that checkbox ShowPassword is checked, but was <" + ((this.sut.getIsShowPasswordCheckBoxChecked() ? "checked" : "unchecked")) + ">", this.sut.getIsShowPasswordCheckBoxChecked());
   }
   public void then_Error_shows_text_Needs_uppercase_letters_() {
     Assert.assertEquals("Expected that label Error has text <" + "Needs uppercase letters" + ">, but was <" + this.sut.getErrorLabelText() + ">", "Needs uppercase letters", this.sut.getErrorLabelText());

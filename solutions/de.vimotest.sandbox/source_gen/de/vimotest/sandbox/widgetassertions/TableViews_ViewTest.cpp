@@ -2,8 +2,8 @@
 #include <memory>
 #include "TableViews_ViewModelTestEnvironment.h"
 #include "TableViews_ViewModel.h"
-#include <vector>
 #include <string>
+#include <vector>
 #include "TableViews_ViewModelMyElementsRow.h"
 #include "TableViews_ViewModelMyStringRowHandlesRow.h"
 #include "TableViews_ViewModelTestEnvironmentImpl.h"
@@ -50,33 +50,33 @@ namespace widgetassertions
   }
   void TableViews_ViewTest::then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible()
   {
-    auto& actualRows = this->sut->getMyElementsTableRows();
-    EXPECT_EQ(2, actualRows.size()) << std::string("Expected that table view MyElements has 2 rows, but has ") + actualRows.size();
+    auto actualRows = this->sut->getMyElementsTableRows();
+    EXPECT_EQ(2, actualRows.size()) << std::string("Expected that table view MyElements has 2 rows, but has ") + std::to_string(actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
-    EXPECT_EQ(0, row0->getRowIndex()) << std::string("Expected that table view MyElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
-    ;
+    EXPECT_EQ(0, row0->getRowIndex()) << std::string("Expected that table view MyElements row at index 0 has rowhandle <0>, but was <") + std::to_string(row0->getRowIndex()) + std::string(">");
+    EXPECT_TRUE(row0->getIsIncludeCheckBoxChecked()) << std::string("Expected that checkbox Include is checked, but was <") + (row0->getIsIncludeCheckBoxChecked() ? std::string("checked") : std::string("unchecked")) + std::string(">");
     EXPECT_EQ(std::string("A"), row0->getNameLabelText()) << std::string("Expected that label Name has text <") + std::string("A") + std::string(">, but was <") + row0->getNameLabelText() + std::string(">");
     EXPECT_EQ(std::string("B"), row0->getDescriptionLabelText()) << std::string("Expected that label Description has text <") + std::string("B") + std::string(">, but was <") + row0->getDescriptionLabelText() + std::string(">");
     EXPECT_EQ(std::string("image_info"), row0->getInfoIconImageName()) << std::string("Expected that image InfoIcon has ") + std::string("image <image_info>") + std::string(", but was <") + row0->getInfoIconImageName() + std::string(">");
     // }
     // {
     auto& row1 = actualRows.at(1);
-    EXPECT_EQ(1, row1->getRowIndex()) << std::string("Expected that table view MyElements row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
-    ;
+    EXPECT_EQ(1, row1->getRowIndex()) << std::string("Expected that table view MyElements row at index 1 has rowhandle <1>, but was <") + std::to_string(row1->getRowIndex()) + std::string(">");
+    EXPECT_FALSE(row1->getIsIncludeCheckBoxChecked()) << std::string("Expected that checkbox Include is unchecked, but was <") + (row1->getIsIncludeCheckBoxChecked() ? std::string("checked") : std::string("unchecked")) + std::string(">");
     EXPECT_EQ(std::string("C"), row1->getNameLabelText()) << std::string("Expected that label Name has text <") + std::string("C") + std::string(">, but was <") + row1->getNameLabelText() + std::string(">");
     EXPECT_EQ(std::string("D"), row1->getDescriptionLabelText()) << std::string("Expected that label Description has text <") + std::string("D") + std::string(">, but was <") + row1->getDescriptionLabelText() + std::string(">");
     EXPECT_EQ(std::string("image_star"), row1->getInfoIconImageName()) << std::string("Expected that image InfoIcon has ") + std::string("image <image_star>") + std::string(", but was <") + row1->getInfoIconImageName() + std::string(">");
     // }
-    EXPECT_EQ(1, this->sut->getMyElementsTableSelectedRow()) << std::string("Expected that table view MyElements has selected row with row handle <") + 1 + std::string(">, but was <") + this->sut->getMyElementsTableSelectedRow() + std::string(">");
+    EXPECT_EQ(1, this->sut->getMyElementsTableSelectedRow()) << std::string("Expected that table view MyElements has selected row with row handle <") + std::to_string(1) + std::string(">, but was <") + std::to_string(this->sut->getMyElementsTableSelectedRow()) + std::string(">");
     EXPECT_TRUE(this->sut->getIsMyElementsTableVisible()) << std::string("Expected table view MyElements is visible, but it was hidden");
     EXPECT_TRUE(this->sut->getIsMyElementsTableEnabled()) << std::string("Expected table view MyElements is enabled, but it was disabled");
     EXPECT_FALSE(this->sut->getIsMyElementsTableDescriptionColumnVisible()) << std::string("Expected table column Description is hidden, but it was visible");
   }
   void TableViews_ViewTest::then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1()
   {
-    auto& actualRows = this->sut->getMyStringRowHandlesTableRows();
-    EXPECT_EQ(2, actualRows.size()) << std::string("Expected that table view MyStringRowHandles has 2 rows, but has ") + actualRows.size();
+    auto actualRows = this->sut->getMyStringRowHandlesTableRows();
+    EXPECT_EQ(2, actualRows.size()) << std::string("Expected that table view MyStringRowHandles has 2 rows, but has ") + std::to_string(actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
     EXPECT_EQ(std::string("ROW0"), row0->getRowHandle()) << std::string("Expected that table view MyStringRowHandles row at index 0 has rowhandle <ROW0>, but was <") + row0->getRowHandle() + std::string(">");
@@ -91,16 +91,16 @@ namespace widgetassertions
   }
   void TableViews_ViewTest::then_MyElements_has_2_rows()
   {
-    auto& actualRows = this->sut->getMyElementsTableRows();
-    EXPECT_EQ(2, actualRows.size()) << std::string("Expected that table view MyElements has 2 rows, but has ") + actualRows.size();
+    auto actualRows = this->sut->getMyElementsTableRows();
+    EXPECT_EQ(2, actualRows.size()) << std::string("Expected that table view MyElements has 2 rows, but has ") + std::to_string(actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
-    EXPECT_EQ(0, row0->getRowIndex()) << std::string("Expected that table view MyElements row at index 0 has rowhandle <0>, but was <") + row0->getRowIndex() + std::string(">");
+    EXPECT_EQ(0, row0->getRowIndex()) << std::string("Expected that table view MyElements row at index 0 has rowhandle <0>, but was <") + std::to_string(row0->getRowIndex()) + std::string(">");
     EXPECT_EQ(std::string("A"), row0->getNameLabelText()) << std::string("Expected that label Name has text <") + std::string("A") + std::string(">, but was <") + row0->getNameLabelText() + std::string(">");
     // }
     // {
     auto& row1 = actualRows.at(1);
-    EXPECT_EQ(1, row1->getRowIndex()) << std::string("Expected that table view MyElements row at index 1 has rowhandle <1>, but was <") + row1->getRowIndex() + std::string(">");
+    EXPECT_EQ(1, row1->getRowIndex()) << std::string("Expected that table view MyElements row at index 1 has rowhandle <1>, but was <") + std::to_string(row1->getRowIndex()) + std::string(">");
     EXPECT_EQ(std::string("image_star"), row1->getInfoIconImageName()) << std::string("Expected that image InfoIcon has ") + std::string("image <image_star>") + std::string(", but was <") + row1->getInfoIconImageName() + std::string(">");
     // }
   }

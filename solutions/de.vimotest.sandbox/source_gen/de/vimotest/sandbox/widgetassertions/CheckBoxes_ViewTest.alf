@@ -68,7 +68,7 @@ class CheckBoxes_ViewTest {
 
   
   public then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_ (  ) {
-    ;
+    AssertTrueWithMessage ( this.sut.getIsMyFlagWithLabelCheckBoxChecked (  ), "Expected that checkbox MyFlagWithLabel is checked, but was <" + ( this.sut.getIsMyFlagWithLabelCheckBoxChecked (  ) ? "checked" : "unchecked" ) + ">" );
 
     AssertTrueWithMessage ( this.sut.getIsMyFlagWithLabelCheckBoxEnabled (  ), "Expected checkbox MyFlagWithLabel is enabled, but it was disabled" );
 
@@ -79,34 +79,27 @@ class CheckBoxes_ViewTest {
   }
   
   public then_MyFlagNoLabel_is_not_checked (  ) {
-    ;
+    AssertFalseWithMessage ( this.sut.getIsMyFlagNoLabelCheckBoxChecked (  ), "Expected that checkbox MyFlagNoLabel is unchecked, but was <" + ( this.sut.getIsMyFlagNoLabelCheckBoxChecked (  ) ? "checked" : "unchecked" ) + ">" );
 
   }
   
   public then_MyFlagTriState_is_mixed (  ) {
-    let actualCheckValue: String = "indeterminate (null)";
-
-    if ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) != null ) {
-      actualCheckValue = BooleanFunctions:: ToString ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) );
-
-    } 
-
-    AssertEqualWithMessage ( null, this.sut.getIsMyFlagTriStateCheckBoxChecked (  ), "Expected that checkbox MyFlagTriState is indeterminate (null), but was <" + BooleanFunctions:: ToString ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) ) + ">" );
+    AssertEqualWithMessage ( null, this.sut.getIsMyFlagTriStateCheckBoxChecked (  ), "Expected that checkbox MyFlagTriState is indeterminate (null), but was <" + ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) ? "checked" : "unchecked" ) + ">" );
 
   }
   
   public then_MyFlagTriState_is_checked (  ) {
-    ;
+    AssertTrueWithMessage ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ), "Expected that checkbox MyFlagTriState is checked, but was <" + ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) ? "checked" : "unchecked" ) + ">" );
 
   }
   
   public then_MyFlagTriState_is_not_checked (  ) {
-    ;
+    AssertFalseWithMessage ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ), "Expected that checkbox MyFlagTriState is unchecked, but was <" + ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) ? "checked" : "unchecked" ) + ">" );
 
   }
   
   public then_MyFlagWithLabel_is_checked_and_is_not_enabled_and_shows_text_value_ (  ) {
-    ;
+    AssertTrueWithMessage ( this.sut.getIsMyFlagWithLabelCheckBoxChecked (  ), "Expected that checkbox MyFlagWithLabel is checked, but was <" + ( this.sut.getIsMyFlagWithLabelCheckBoxChecked (  ) ? "checked" : "unchecked" ) + ">" );
 
     AssertFalseWithMessage ( this.sut.getIsMyFlagWithLabelCheckBoxEnabled (  ), "Expected checkbox MyFlagWithLabel is disabled, but it was enabled" );
 
@@ -115,7 +108,7 @@ class CheckBoxes_ViewTest {
   }
   
   public then_MyFlagWithLabel_is_checked_and_is_not_visible_and_shows_text_test_ (  ) {
-    ;
+    AssertTrueWithMessage ( this.sut.getIsMyFlagWithLabelCheckBoxChecked (  ), "Expected that checkbox MyFlagWithLabel is checked, but was <" + ( this.sut.getIsMyFlagWithLabelCheckBoxChecked (  ) ? "checked" : "unchecked" ) + ">" );
 
     AssertFalseWithMessage ( this.sut.getIsMyFlagWithLabelCheckBoxVisible (  ), "Expected checkbox MyFlagWithLabel is hidden, but it was visible" );
 

@@ -37,9 +37,9 @@ list(APPEND SANDBOX_TEST_HEADERS ${GENERATED_HEADERS})
 include(${CMAKE_SOURCE_DIR}/de/vimotest/examples/loginview/de.vimotest.examples.loginview.tests.cmake)
 list(APPEND SANDBOX_TEST_SOURCES ${GENERATED_SOURCES})
 list(APPEND SANDBOX_TEST_HEADERS ${GENERATED_HEADERS})
-include(${CMAKE_SOURCE_DIR}/de/vimotest/generationConfig/capitalizedGetterSetterNames/de.vimotest.generationConfig.capitalizedGetterSetterNames.tests.cmake)
-list(APPEND SANDBOX_TEST_SOURCES ${GENERATED_SOURCES})
-list(APPEND SANDBOX_TEST_HEADERS ${GENERATED_HEADERS})
+# no tests: include(${CMAKE_SOURCE_DIR}/de/vimotest/generationConfig/capitalizedGetterSetterNames/de.vimotest.generationConfig.capitalizedGetterSetterNames.tests.cmake)
+# list(APPEND SANDBOX_TEST_SOURCES ${GENERATED_SOURCES})
+# list(APPEND SANDBOX_TEST_HEADERS ${GENERATED_HEADERS})
 include(${CMAKE_SOURCE_DIR}/de/vimotest/generationConfig/parameterObject/de.vimotest.generationConfig.parameterObject.tests.cmake)
 list(APPEND SANDBOX_TEST_SOURCES ${GENERATED_SOURCES})
 list(APPEND SANDBOX_TEST_HEADERS ${GENERATED_HEADERS})
@@ -47,11 +47,23 @@ include(${CMAKE_SOURCE_DIR}/de/vimotest/generationConfig/separateViewModelContro
 list(APPEND SANDBOX_TEST_SOURCES ${GENERATED_SOURCES})
 list(APPEND SANDBOX_TEST_HEADERS ${GENERATED_HEADERS})
 
+# Add GoogleTest
+include(FetchContent)
+FetchContent_Declare(
+        googletest
+        GIT_REPOSITORY https://github.com/google/googletest.git
+        GIT_TAG        v1.17.0
+)
+# For Windows: Prevent overriding the parent project's compiler/linker settings
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
+
 add_executable(
         sandbox_tests
         ${SANDBOX_TEST_SOURCES}
         ${SANDBOX_TEST_HEADERS}
 )
+target_link_libraries(sandbox_tests gtest_main)
 
 target_include_directories(sandbox_lib PUBLIC
     ${CMAKE_SOURCE_DIR}/de/vimotest/sandbox

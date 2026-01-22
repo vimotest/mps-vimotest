@@ -5,7 +5,7 @@ using widgetassertions;
 
 namespace widgetassertions
 {
-    internal class RadioButton_ViewModelTestEnvironmentImpl : widgetassertions.RadioButton_ViewModelTestEnvironment
+    public class RadioButton_ViewModelTestEnvironmentImpl : widgetassertions.RadioButton_ViewModelTestEnvironment
     {
         public override void Init()
         {

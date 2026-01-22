@@ -29,6 +29,10 @@ add_library(
         ${SANDBOX_HEADERS}
 )
 
+target_include_directories(sandbox_lib PUBLIC
+    ${CMAKE_SOURCE_DIR}/de/vimotest/sandbox
+)
+
 set(SANDBOX_TEST_SOURCES "")
 set(SANDBOX_TEST_HEADERS "")
 include(${CMAKE_SOURCE_DIR}/de/vimotest/sandbox/de.vimotest.sandbox.tests.cmake)
@@ -65,6 +69,6 @@ add_executable(
 )
 target_link_libraries(sandbox_tests gtest_main)
 
-target_include_directories(sandbox_lib PUBLIC
+target_include_directories(sandbox_tests PUBLIC
     ${CMAKE_SOURCE_DIR}/de/vimotest/sandbox
 )

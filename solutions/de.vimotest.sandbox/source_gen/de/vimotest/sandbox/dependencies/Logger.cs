@@ -6,7 +6,7 @@ using dependencies;
 
 namespace dependencies
 {
-    internal interface Logger
+    public interface Logger
     {
         void Log(string message);
 

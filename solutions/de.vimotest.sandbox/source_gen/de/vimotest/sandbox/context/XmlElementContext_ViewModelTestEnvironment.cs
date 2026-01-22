@@ -5,7 +5,7 @@ using context;
 
 namespace context
 {
-    internal abstract class XmlElementContext_ViewModelTestEnvironment
+    public abstract class XmlElementContext_ViewModelTestEnvironment
     {
         public abstract void Init();
 

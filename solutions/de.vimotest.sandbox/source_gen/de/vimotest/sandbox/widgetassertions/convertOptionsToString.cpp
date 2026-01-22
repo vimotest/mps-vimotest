@@ -1,10 +1,10 @@
-#include "ActivityconvertOptionsToString.h"
+#include "convertOptionsToString.h"
 #include <string>
 #include "RadioButton_ViewModelOptionsOption.h"
 
 namespace widgetassertions
 {
-  int ActivityconvertOptionsToString::convertOptionsToString(RadioButton_ViewModelOptionsOption symbol)
+  std::string convertOptionsToString(RadioButton_ViewModelOptionsOption symbol)
   {
     if (symbol == widgetassertions::RadioButton_ViewModelOptionsOption::OptionA)
     {

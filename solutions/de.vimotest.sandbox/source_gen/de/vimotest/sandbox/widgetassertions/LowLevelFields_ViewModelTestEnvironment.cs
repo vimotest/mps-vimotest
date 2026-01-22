@@ -5,7 +5,7 @@ using widgetassertions;
 
 namespace widgetassertions
 {
-    internal abstract class LowLevelFields_ViewModelTestEnvironment
+    public abstract class LowLevelFields_ViewModelTestEnvironment
     {
         public abstract void Init();
 

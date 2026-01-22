@@ -7,7 +7,7 @@ import java.util.Objects;
 /**
  * foo
  */
-public class ActivityconvertOptionsToString {
+public class ConvertOptionsToString {
   public static String convertOptionsToString(RadioButton_ViewModelOptionsOption symbol) {
     if (Objects.equals(symbol, RadioButton_ViewModelOptionsOption.OptionA)) {
       return "OptionA";

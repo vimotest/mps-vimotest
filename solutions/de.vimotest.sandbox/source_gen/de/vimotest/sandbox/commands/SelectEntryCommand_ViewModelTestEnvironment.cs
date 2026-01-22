@@ -5,7 +5,7 @@ using commands;
 
 namespace commands
 {
-    internal abstract class SelectEntryCommand_ViewModelTestEnvironment
+    public abstract class SelectEntryCommand_ViewModelTestEnvironment
     {
         public abstract void Init();
 

@@ -5,7 +5,7 @@ using context;
 
 namespace context
 {
-    internal abstract class StringContext_ViewModelTestEnvironment
+    public abstract class StringContext_ViewModelTestEnvironment
     {
         public abstract void Init();
 

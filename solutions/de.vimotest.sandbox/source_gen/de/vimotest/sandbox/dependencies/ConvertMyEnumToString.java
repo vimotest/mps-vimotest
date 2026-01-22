@@ -7,7 +7,7 @@ import java.util.Objects;
 /**
  * foo
  */
-public class ActivityconvertMyEnumToString {
+public class ConvertMyEnumToString {
   public static String convertMyEnumToString(MyEnum symbol) {
     if (Objects.equals(symbol, MyEnum.A)) {
       return "A";

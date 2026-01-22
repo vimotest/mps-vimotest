@@ -1,9 +1,9 @@
 # de.vimotest.sandbox.cmake
 
 set(GENERATED_SOURCES
-  ${CMAKE_CURRENT_LIST_DIR}/commands/ActivityconvertMyOptionsToString.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ActivityconvertOptionsToString.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ActivityconvertMyEnumToString.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/convertMyOptionsToString.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/convertOptionsToString.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/convertMyEnumToString.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewModelMyListOfLabelRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewModelMyListOfImagesRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewModelMyCheckboxesRow.cpp
@@ -93,9 +93,9 @@ set(GENERATED_SOURCES
 )
 
 set(GENERATED_HEADERS
-  ${CMAKE_CURRENT_LIST_DIR}/commands/ActivityconvertMyOptionsToString.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ActivityconvertOptionsToString.h
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ActivityconvertMyEnumToString.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/convertMyOptionsToString.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/convertOptionsToString.h
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/convertMyEnumToString.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewModelMyListOfLabelRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewModelMyListOfImagesRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewModelMyCheckboxesRow.h

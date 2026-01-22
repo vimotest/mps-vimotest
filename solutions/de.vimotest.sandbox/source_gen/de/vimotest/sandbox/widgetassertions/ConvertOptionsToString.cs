@@ -1,13 +1,13 @@
 /// <filename>
-///     ActivityconvertOptionsToString.cs
+///     ConvertOptionsToString.cs
 /// </filename>
 using widgetassertions;
 
 namespace widgetassertions
 {
-    public class ActivityconvertOptionsToString
+    public class ConvertOptionsToString
     {
-        public static int convertOptionsToString(widgetassertions.RadioButton_ViewModelOptionsOption symbol)
+        public static string Execute(widgetassertions.RadioButton_ViewModelOptionsOption symbol)
         {
             if (symbol == widgetassertions.RadioButton_ViewModelOptionsOption.OptionA)
             {

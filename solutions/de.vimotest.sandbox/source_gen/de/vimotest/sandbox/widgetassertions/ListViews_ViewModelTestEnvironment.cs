@@ -5,7 +5,7 @@ using widgetassertions;
 
 namespace widgetassertions
 {
-    internal abstract class ListViews_ViewModelTestEnvironment
+    public abstract class ListViews_ViewModelTestEnvironment
     {
         public abstract void Init();
 

@@ -1,13 +1,13 @@
 /// <filename>
-///     ActivityconvertMyOptionsToString.cs
+///     ConvertMyOptionsToString.cs
 /// </filename>
 using commands;
 
 namespace commands
 {
-    public class ActivityconvertMyOptionsToString
+    public class ConvertMyOptionsToString
     {
-        public static int convertMyOptionsToString(commands.SelectEntryCommand_ViewModelMyOptionsOption symbol)
+        public static string Execute(commands.SelectEntryCommand_ViewModelMyOptionsOption symbol)
         {
             if (symbol == commands.SelectEntryCommand_ViewModelMyOptionsOption.A)
             {

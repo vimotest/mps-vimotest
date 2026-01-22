@@ -6,7 +6,7 @@ using dependencies;
 
 namespace dependencies.subscope
 {
-    internal abstract class RepeatUsageDependency_ViewModelTestEnvironment
+    public abstract class RepeatUsageDependency_ViewModelTestEnvironment
     {
         public abstract void Init();
 

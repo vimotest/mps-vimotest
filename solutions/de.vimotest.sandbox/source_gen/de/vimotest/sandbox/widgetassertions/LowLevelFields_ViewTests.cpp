@@ -57,11 +57,11 @@ namespace widgetassertions
   }
   void LowLevelFields_ViewTests::then_MyBool_is_true()
   {
-    EXPECT_TRUE(this->sut->getMyBool()) << std::string("Expected field 'MyBool' has value <true>, but it was <") + (this->sut->getMyBool() ? std::string("true") : std::string("false")) + std::string(">");
+    EXPECT_TRUE(this->sut->getMyBool()) << std::string("Expected field 'MyBool' has boolean value <true>, but it was <") + (this->sut->getMyBool() ? std::string("true") : std::string("false")) + std::string(">");
   }
   void LowLevelFields_ViewTests::then_MyInt_is_42()
   {
-    EXPECT_EQ(42, this->sut->getMyInt()) << std::string("Expected field 'MyInt' has value <") + 42 + std::string(">, but it was <") + this->sut->getMyInt() + std::string(">");
+    EXPECT_EQ(42, this->sut->getMyInt()) << std::string("Expected field 'MyInt' has numeric value <42>, but it was <") + std::to_string(this->sut->getMyInt()) + std::string(">");
   }
   void LowLevelFields_ViewTests::then_MyString_is_text_()
   {
@@ -93,7 +93,7 @@ namespace widgetassertions
     auto& row0 = actualRows.at(0);
     EXPECT_EQ(std::string("0"), row0->getRowHandle()) << std::string("Expected that table view CustomTableRowField row at index 0 has rowhandle <0>, but was <") + row0->getRowHandle() + std::string(">");
     EXPECT_EQ(std::string(""), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
-    EXPECT_FALSE(row0->getAdditionalBool()) << std::string("Expected field 'AdditionalBool' has value <false>, but it was <") + (row0->getAdditionalBool() ? std::string("true") : std::string("false")) + std::string(">");
+    EXPECT_FALSE(row0->getAdditionalBool()) << std::string("Expected field 'AdditionalBool' has boolean value <false>, but it was <") + (row0->getAdditionalBool() ? std::string("true") : std::string("false")) + std::string(">");
     // }
   }
   void LowLevelFields_ViewTests::then_CustomTreeRowField_has_1_rows()
@@ -105,7 +105,7 @@ namespace widgetassertions
     EXPECT_EQ(std::string("9"), row0->getRowHandle()) << std::string("Expected that tree view CustomTreeRowField row at index 0 has rowhandle <9>, but was <") + row0->getRowHandle() + std::string(">");
     EXPECT_EQ(0, row0->getRowDepth()) << std::string("Expected that tree view CustomTreeRowField row at index 0 has parent rowhandle <") + std::to_string(0) + std::string(">, but was <") + std::to_string(row0->getRowDepth()) + std::string(">");
     EXPECT_EQ(std::string(""), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
-    EXPECT_EQ(42, row0->getAdditionalInt()) << std::string("Expected field 'AdditionalInt' has value <") + 42 + std::string(">, but it was <") + row0->getAdditionalInt() + std::string(">");
+    EXPECT_EQ(42, row0->getAdditionalInt()) << std::string("Expected field 'AdditionalInt' has numeric value <42>, but it was <") + std::to_string(row0->getAdditionalInt()) + std::string(">");
     // }
   }
 }

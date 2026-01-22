@@ -1,10 +1,10 @@
-#include "ActivityconvertMyOptionsToString.h"
+#include "convertMyOptionsToString.h"
 #include <string>
 #include "SelectEntryCommand_ViewModelMyOptionsOption.h"
 
 namespace commands
 {
-  int ActivityconvertMyOptionsToString::convertMyOptionsToString(SelectEntryCommand_ViewModelMyOptionsOption symbol)
+  std::string convertMyOptionsToString(SelectEntryCommand_ViewModelMyOptionsOption symbol)
   {
     if (symbol == commands::SelectEntryCommand_ViewModelMyOptionsOption::A)
     {

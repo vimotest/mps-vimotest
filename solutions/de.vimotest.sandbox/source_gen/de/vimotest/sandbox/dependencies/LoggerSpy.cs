@@ -6,7 +6,7 @@ using dependencies;
 
 namespace dependencies
 {
-    internal class LoggerSpy : dependencies.Logger
+    public class LoggerSpy : dependencies.Logger
     {
         private dependencies.Logger wrapped;
 

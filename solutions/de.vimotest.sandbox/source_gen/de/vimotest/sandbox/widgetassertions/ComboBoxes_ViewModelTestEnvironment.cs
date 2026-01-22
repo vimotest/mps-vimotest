@@ -5,7 +5,7 @@ using widgetassertions;
 
 namespace widgetassertions
 {
-    internal abstract class ComboBoxes_ViewModelTestEnvironment
+    public abstract class ComboBoxes_ViewModelTestEnvironment
     {
         public abstract void Init();
 

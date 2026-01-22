@@ -7,7 +7,7 @@ import java.util.Objects;
 /**
  * foo
  */
-public class ActivityconvertMyOptionsToString {
+public class ConvertMyOptionsToString {
   public static String convertMyOptionsToString(SelectEntryCommand_ViewModelMyOptionsOption symbol) {
     if (Objects.equals(symbol, SelectEntryCommand_ViewModelMyOptionsOption.A)) {
       return "A";

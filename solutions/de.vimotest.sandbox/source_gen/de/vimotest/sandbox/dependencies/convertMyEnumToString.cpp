@@ -1,10 +1,10 @@
-#include "ActivityconvertMyEnumToString.h"
+#include "convertMyEnumToString.h"
 #include <string>
 #include "MyEnum.h"
 
 namespace dependencies
 {
-  int ActivityconvertMyEnumToString::convertMyEnumToString(MyEnum symbol)
+  std::string convertMyEnumToString(MyEnum symbol)
   {
     if (symbol == dependencies::MyEnum::A)
     {

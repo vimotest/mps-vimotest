@@ -5,7 +5,7 @@ using context;
 
 namespace context
 {
-    internal class XmlFileContext_ViewModelTestEnvironmentImpl : context.XmlFileContext_ViewModelTestEnvironment
+    public class XmlFileContext_ViewModelTestEnvironmentImpl : context.XmlFileContext_ViewModelTestEnvironment
     {
         public override void Init()
         {

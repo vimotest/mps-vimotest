@@ -1,13 +1,13 @@
 /// <filename>
-///     ActivityconvertMyEnumToString.cs
+///     ConvertMyEnumToString.cs
 /// </filename>
 using dependencies;
 
 namespace dependencies
 {
-    public class ActivityconvertMyEnumToString
+    public class ConvertMyEnumToString
     {
-        public static int convertMyEnumToString(dependencies.MyEnum symbol)
+        public static string Execute(dependencies.MyEnum symbol)
         {
             if (symbol == dependencies.MyEnum.A)
             {

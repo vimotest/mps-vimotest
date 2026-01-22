@@ -5,7 +5,7 @@ using commands;
 
 namespace commands
 {
-    internal class FillTextCommand_ViewModelTestEnvironmentImpl : commands.FillTextCommand_ViewModelTestEnvironment
+    public class FillTextCommand_ViewModelTestEnvironmentImpl : commands.FillTextCommand_ViewModelTestEnvironment
     {
         public override void Init()
         {

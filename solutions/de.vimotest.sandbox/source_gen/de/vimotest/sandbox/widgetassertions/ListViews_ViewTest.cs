@@ -4,7 +4,7 @@
 using widgetassertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using Alf.Library.PrimitiveBehaviors;
+using System;
 
 [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class ListViews_ViewTest
@@ -67,11 +67,11 @@ public class ListViews_ViewTest
     public virtual void then_MyListOfLabel_has_4_rows_and_selected_row_index_3()
     {
         var actualRows = this.sut.getMyListOfLabelListRows();
-        Assert.AreEqual(4, actualRows.Count, "Expected that list view MyListOfLabel has 4 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(4, actualRows.Count, "Expected that list view MyListOfLabel has 4 rows, but has " + Convert.ToString(actualRows.Count));
 
         {
             var row0 = actualRows[0];
-            Assert.AreEqual(0, row0.getRowIndex(), "Expected that list view MyListOfLabel row at index 0 has rowhandle <0>, but was <" + IntegerFunctions.ToString(row0.getRowIndex()) + ">");
+            Assert.AreEqual(0, row0.getRowIndex(), "Expected that list view MyListOfLabel row at index 0 has rowhandle <0>, but was <" + Convert.ToString(row0.getRowIndex()) + ">");
             Assert.AreEqual("A", row0.getMyValueLabelText(), "Expected that label My Value has text <" + "A" + ">, but was <" + row0.getMyValueLabelText() + ">");
             Assert.IsFalse(row0.getIsMyValueLabelVisible(), "Expected label My Value is hidden, but it was visible");
             Assert.IsTrue(row0.getIsMyValueLabelEnabled(), "Expected label My Value is enabled, but it was disabled");
@@ -79,41 +79,41 @@ public class ListViews_ViewTest
 
         {
             var row1 = actualRows[1];
-            Assert.AreEqual(1, row1.getRowIndex(), "Expected that list view MyListOfLabel row at index 1 has rowhandle <1>, but was <" + IntegerFunctions.ToString(row1.getRowIndex()) + ">");
+            Assert.AreEqual(1, row1.getRowIndex(), "Expected that list view MyListOfLabel row at index 1 has rowhandle <1>, but was <" + Convert.ToString(row1.getRowIndex()) + ">");
             Assert.AreEqual("B", row1.getMyValueLabelText(), "Expected that label My Value has text <" + "B" + ">, but was <" + row1.getMyValueLabelText() + ">");
             Assert.IsFalse(row1.getIsMyValueLabelEnabled(), "Expected label My Value is disabled, but it was enabled");
         }
 
         {
             var row2 = actualRows[2];
-            Assert.AreEqual(2, row2.getRowIndex(), "Expected that list view MyListOfLabel row at index 2 has rowhandle <2>, but was <" + IntegerFunctions.ToString(row2.getRowIndex()) + ">");
+            Assert.AreEqual(2, row2.getRowIndex(), "Expected that list view MyListOfLabel row at index 2 has rowhandle <2>, but was <" + Convert.ToString(row2.getRowIndex()) + ">");
             Assert.AreEqual("C", row2.getMyValueLabelText(), "Expected that label My Value has text <" + "C" + ">, but was <" + row2.getMyValueLabelText() + ">");
             Assert.IsTrue(row2.getIsMyValueLabelEnabled(), "Expected label My Value is enabled, but it was disabled");
         }
 
         {
             var row3 = actualRows[3];
-            Assert.AreEqual(3, row3.getRowIndex(), "Expected that list view MyListOfLabel row at index 3 has rowhandle <3>, but was <" + IntegerFunctions.ToString(row3.getRowIndex()) + ">");
+            Assert.AreEqual(3, row3.getRowIndex(), "Expected that list view MyListOfLabel row at index 3 has rowhandle <3>, but was <" + Convert.ToString(row3.getRowIndex()) + ">");
             Assert.AreEqual("D", row3.getMyValueLabelText(), "Expected that label My Value has text <" + "D" + ">, but was <" + row3.getMyValueLabelText() + ">");
             Assert.IsTrue(row3.getIsMyValueLabelVisible(), "Expected label My Value is visible, but it was hidden");
         }
-        Assert.AreEqual(3, this.sut.getMyListOfLabelListSelectedRow(), "Expected that list view MyListOfLabel has selected row with row handle <" + IntegerFunctions.ToString(3) + ">, but was <" + IntegerFunctions.ToString(this.sut.getMyListOfLabelListSelectedRow()) + ">");
+        Assert.AreEqual(3, this.sut.getMyListOfLabelListSelectedRow(), "Expected that list view MyListOfLabel has selected row with row handle <" + Convert.ToString(3) + ">, but was <" + Convert.ToString(this.sut.getMyListOfLabelListSelectedRow()) + ">");
     }
 
     public virtual void then_MyListOfImages_has_2_rows()
     {
         var actualRows = this.sut.getMyListOfImagesListRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that list view MyListOfImages has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that list view MyListOfImages has 2 rows, but has " + Convert.ToString(actualRows.Count));
 
         {
             var row0 = actualRows[0];
-            Assert.AreEqual(0, row0.getRowIndex(), "Expected that list view MyListOfImages row at index 0 has rowhandle <0>, but was <" + IntegerFunctions.ToString(row0.getRowIndex()) + ">");
+            Assert.AreEqual(0, row0.getRowIndex(), "Expected that list view MyListOfImages row at index 0 has rowhandle <0>, but was <" + Convert.ToString(row0.getRowIndex()) + ">");
             Assert.AreEqual("image_star", row0.getMyInfoImageName(), "Expected that image My Info has " + "image <image_star>" + ", but was <" + row0.getMyInfoImageName() + ">");
         }
 
         {
             var row1 = actualRows[1];
-            Assert.AreEqual(1, row1.getRowIndex(), "Expected that list view MyListOfImages row at index 1 has rowhandle <1>, but was <" + IntegerFunctions.ToString(row1.getRowIndex()) + ">");
+            Assert.AreEqual(1, row1.getRowIndex(), "Expected that list view MyListOfImages row at index 1 has rowhandle <1>, but was <" + Convert.ToString(row1.getRowIndex()) + ">");
             Assert.AreEqual("image_circle", row1.getMyInfoImageName(), "Expected that image My Info has " + "image <image_circle>" + ", but was <" + row1.getMyInfoImageName() + ">");
         }
     }
@@ -121,23 +121,23 @@ public class ListViews_ViewTest
     public virtual void then_MyCheckboxes_has_3_rows()
     {
         var actualRows = this.sut.getMyCheckboxesListRows();
-        Assert.AreEqual(3, actualRows.Count, "Expected that list view MyCheckboxes has 3 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(3, actualRows.Count, "Expected that list view MyCheckboxes has 3 rows, but has " + Convert.ToString(actualRows.Count));
 
         {
             var row0 = actualRows[0];
-            Assert.AreEqual(0, row0.getRowIndex(), "Expected that list view MyCheckboxes row at index 0 has rowhandle <0>, but was <" + IntegerFunctions.ToString(row0.getRowIndex()) + ">");
+            Assert.AreEqual(0, row0.getRowIndex(), "Expected that list view MyCheckboxes row at index 0 has rowhandle <0>, but was <" + Convert.ToString(row0.getRowIndex()) + ">");
             Assert.IsTrue(row0.getIsHeaderCheckBoxChecked(), "Expected that checkbox Header is checked, but was <" + (row0.getIsHeaderCheckBoxChecked() ? "checked" : "unchecked") + ">");
         }
 
         {
             var row1 = actualRows[1];
-            Assert.AreEqual(1, row1.getRowIndex(), "Expected that list view MyCheckboxes row at index 1 has rowhandle <1>, but was <" + IntegerFunctions.ToString(row1.getRowIndex()) + ">");
+            Assert.AreEqual(1, row1.getRowIndex(), "Expected that list view MyCheckboxes row at index 1 has rowhandle <1>, but was <" + Convert.ToString(row1.getRowIndex()) + ">");
             Assert.IsFalse(row1.getIsHeaderCheckBoxChecked(), "Expected that checkbox Header is unchecked, but was <" + (row1.getIsHeaderCheckBoxChecked() ? "checked" : "unchecked") + ">");
         }
 
         {
             var row2 = actualRows[2];
-            Assert.AreEqual(2, row2.getRowIndex(), "Expected that list view MyCheckboxes row at index 2 has rowhandle <2>, but was <" + IntegerFunctions.ToString(row2.getRowIndex()) + ">");
+            Assert.AreEqual(2, row2.getRowIndex(), "Expected that list view MyCheckboxes row at index 2 has rowhandle <2>, but was <" + Convert.ToString(row2.getRowIndex()) + ">");
             Assert.IsTrue(row2.getIsHeaderCheckBoxChecked(), "Expected that checkbox Header is checked, but was <" + (row2.getIsHeaderCheckBoxChecked() ? "checked" : "unchecked") + ">");
             Assert.AreEqual("My Label", row2.getHeaderCheckBoxText(), "Expected that checkbox Header has text <" + "My Label" + ">, but was <" + row2.getHeaderCheckBoxText() + ">");
         }
@@ -146,7 +146,7 @@ public class ListViews_ViewTest
     public virtual void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1()
     {
         var actualRows = this.sut.getMyStringRowHandlesListRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that list view MyStringRowHandles has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that list view MyStringRowHandles has 2 rows, but has " + Convert.ToString(actualRows.Count));
 
         {
             var row0 = actualRows[0];
@@ -165,82 +165,82 @@ public class ListViews_ViewTest
     public virtual void then_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_()
     {
         var actualRows = this.sut.getMyListWithMultiRowSelectionListRows();
-        Assert.AreEqual(3, actualRows.Count, "Expected that list view MyListWithMultiRowSelection has 3 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(3, actualRows.Count, "Expected that list view MyListWithMultiRowSelection has 3 rows, but has " + Convert.ToString(actualRows.Count));
 
         {
             var row0 = actualRows[0];
-            Assert.AreEqual(0, row0.getRowIndex(), "Expected that list view MyListWithMultiRowSelection row at index 0 has rowhandle <0>, but was <" + IntegerFunctions.ToString(row0.getRowIndex()) + ">");
+            Assert.AreEqual(0, row0.getRowIndex(), "Expected that list view MyListWithMultiRowSelection row at index 0 has rowhandle <0>, but was <" + Convert.ToString(row0.getRowIndex()) + ">");
             Assert.AreEqual("A", row0.getHeaderLabelText(), "Expected that label Header has text <" + "A" + ">, but was <" + row0.getHeaderLabelText() + ">");
         }
 
         {
             var row1 = actualRows[1];
-            Assert.AreEqual(1, row1.getRowIndex(), "Expected that list view MyListWithMultiRowSelection row at index 1 has rowhandle <1>, but was <" + IntegerFunctions.ToString(row1.getRowIndex()) + ">");
+            Assert.AreEqual(1, row1.getRowIndex(), "Expected that list view MyListWithMultiRowSelection row at index 1 has rowhandle <1>, but was <" + Convert.ToString(row1.getRowIndex()) + ">");
             Assert.AreEqual("B", row1.getHeaderLabelText(), "Expected that label Header has text <" + "B" + ">, but was <" + row1.getHeaderLabelText() + ">");
         }
 
         {
             var row2 = actualRows[2];
-            Assert.AreEqual(2, row2.getRowIndex(), "Expected that list view MyListWithMultiRowSelection row at index 2 has rowhandle <2>, but was <" + IntegerFunctions.ToString(row2.getRowIndex()) + ">");
+            Assert.AreEqual(2, row2.getRowIndex(), "Expected that list view MyListWithMultiRowSelection row at index 2 has rowhandle <2>, but was <" + Convert.ToString(row2.getRowIndex()) + ">");
             Assert.AreEqual("C", row2.getHeaderLabelText(), "Expected that label Header has text <" + "C" + ">, but was <" + row2.getHeaderLabelText() + ">");
         }
         var actualMyListWithMultiRowSelectionSelectedRowHandles = this.sut.getMyListWithMultiRowSelectionListSelectedRows();
-        Assert.AreEqual(2, actualMyListWithMultiRowSelectionSelectedRowHandles.Count, "Expected that list view MyListWithMultiRowSelection has selected 2 rows, but has " + IntegerFunctions.ToString(actualMyListWithMultiRowSelectionSelectedRowHandles.Count));
-        Assert.AreEqual(0, actualMyListWithMultiRowSelectionSelectedRowHandles[0], "Expected that list view MyListWithMultiRowSelection has selected row at index 0 with row handle <" + IntegerFunctions.ToString(0) + ">, but was <" + IntegerFunctions.ToString(actualMyListWithMultiRowSelectionSelectedRowHandles[0]) + ">");
-        Assert.AreEqual(2, actualMyListWithMultiRowSelectionSelectedRowHandles[1], "Expected that list view MyListWithMultiRowSelection has selected row at index 1 with row handle <" + IntegerFunctions.ToString(2) + ">, but was <" + IntegerFunctions.ToString(actualMyListWithMultiRowSelectionSelectedRowHandles[1]) + ">");
+        Assert.AreEqual(2, actualMyListWithMultiRowSelectionSelectedRowHandles.Count, "Expected that list view MyListWithMultiRowSelection has selected 2 rows, but has " + Convert.ToString(actualMyListWithMultiRowSelectionSelectedRowHandles.Count));
+        Assert.AreEqual(0, actualMyListWithMultiRowSelectionSelectedRowHandles[0], "Expected that list view MyListWithMultiRowSelection has selected row at index 0 with row handle <" + Convert.ToString(0) + ">, but was <" + Convert.ToString(actualMyListWithMultiRowSelectionSelectedRowHandles[0]) + ">");
+        Assert.AreEqual(2, actualMyListWithMultiRowSelectionSelectedRowHandles[1], "Expected that list view MyListWithMultiRowSelection has selected row at index 1 with row handle <" + Convert.ToString(2) + ">, but was <" + Convert.ToString(actualMyListWithMultiRowSelectionSelectedRowHandles[1]) + ">");
     }
 
     public virtual void then_MyListOfLabel_has_4_rows()
     {
         var actualRows = this.sut.getMyListOfLabelListRows();
-        Assert.AreEqual(4, actualRows.Count, "Expected that list view MyListOfLabel has 4 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(4, actualRows.Count, "Expected that list view MyListOfLabel has 4 rows, but has " + Convert.ToString(actualRows.Count));
 
         {
             var row0 = actualRows[0];
-            Assert.AreEqual(0, row0.getRowIndex(), "Expected that list view MyListOfLabel row at index 0 has rowhandle <0>, but was <" + IntegerFunctions.ToString(row0.getRowIndex()) + ">");
+            Assert.AreEqual(0, row0.getRowIndex(), "Expected that list view MyListOfLabel row at index 0 has rowhandle <0>, but was <" + Convert.ToString(row0.getRowIndex()) + ">");
         }
 
         {
             var row1 = actualRows[1];
-            Assert.AreEqual(1, row1.getRowIndex(), "Expected that list view MyListOfLabel row at index 1 has rowhandle <1>, but was <" + IntegerFunctions.ToString(row1.getRowIndex()) + ">");
+            Assert.AreEqual(1, row1.getRowIndex(), "Expected that list view MyListOfLabel row at index 1 has rowhandle <1>, but was <" + Convert.ToString(row1.getRowIndex()) + ">");
         }
 
         {
             var row2 = actualRows[2];
-            Assert.AreEqual(2, row2.getRowIndex(), "Expected that list view MyListOfLabel row at index 2 has rowhandle <2>, but was <" + IntegerFunctions.ToString(row2.getRowIndex()) + ">");
+            Assert.AreEqual(2, row2.getRowIndex(), "Expected that list view MyListOfLabel row at index 2 has rowhandle <2>, but was <" + Convert.ToString(row2.getRowIndex()) + ">");
         }
 
         {
             var row3 = actualRows[3];
-            Assert.AreEqual(3, row3.getRowIndex(), "Expected that list view MyListOfLabel row at index 3 has rowhandle <3>, but was <" + IntegerFunctions.ToString(row3.getRowIndex()) + ">");
+            Assert.AreEqual(3, row3.getRowIndex(), "Expected that list view MyListOfLabel row at index 3 has rowhandle <3>, but was <" + Convert.ToString(row3.getRowIndex()) + ">");
         }
     }
 
     public virtual void then_MyListOfLabel_has_4_rows_1()
     {
         var actualRows = this.sut.getMyListOfLabelListRows();
-        Assert.AreEqual(4, actualRows.Count, "Expected that list view MyListOfLabel has 4 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(4, actualRows.Count, "Expected that list view MyListOfLabel has 4 rows, but has " + Convert.ToString(actualRows.Count));
 
         {
             var row0 = actualRows[0];
-            Assert.AreEqual(0, row0.getRowIndex(), "Expected that list view MyListOfLabel row at index 0 has rowhandle <0>, but was <" + IntegerFunctions.ToString(row0.getRowIndex()) + ">");
+            Assert.AreEqual(0, row0.getRowIndex(), "Expected that list view MyListOfLabel row at index 0 has rowhandle <0>, but was <" + Convert.ToString(row0.getRowIndex()) + ">");
         }
 
         {
             var row1 = actualRows[1];
-            Assert.AreEqual(1, row1.getRowIndex(), "Expected that list view MyListOfLabel row at index 1 has rowhandle <1>, but was <" + IntegerFunctions.ToString(row1.getRowIndex()) + ">");
+            Assert.AreEqual(1, row1.getRowIndex(), "Expected that list view MyListOfLabel row at index 1 has rowhandle <1>, but was <" + Convert.ToString(row1.getRowIndex()) + ">");
             Assert.AreEqual("B", row1.getMyValueLabelText(), "Expected that label My Value has text <" + "B" + ">, but was <" + row1.getMyValueLabelText() + ">");
             Assert.IsFalse(row1.getIsMyValueLabelEnabled(), "Expected label My Value is disabled, but it was enabled");
         }
 
         {
             var row2 = actualRows[2];
-            Assert.AreEqual(2, row2.getRowIndex(), "Expected that list view MyListOfLabel row at index 2 has rowhandle <2>, but was <" + IntegerFunctions.ToString(row2.getRowIndex()) + ">");
+            Assert.AreEqual(2, row2.getRowIndex(), "Expected that list view MyListOfLabel row at index 2 has rowhandle <2>, but was <" + Convert.ToString(row2.getRowIndex()) + ">");
         }
 
         {
             var row3 = actualRows[3];
-            Assert.AreEqual(3, row3.getRowIndex(), "Expected that list view MyListOfLabel row at index 3 has rowhandle <3>, but was <" + IntegerFunctions.ToString(row3.getRowIndex()) + ">");
+            Assert.AreEqual(3, row3.getRowIndex(), "Expected that list view MyListOfLabel row at index 3 has rowhandle <3>, but was <" + Convert.ToString(row3.getRowIndex()) + ">");
             Assert.AreEqual("D", row3.getMyValueLabelText(), "Expected that label My Value has text <" + "D" + ">, but was <" + row3.getMyValueLabelText() + ">");
             Assert.IsTrue(row3.getIsMyValueLabelVisible(), "Expected label My Value is visible, but it was hidden");
         }
@@ -249,6 +249,6 @@ public class ListViews_ViewTest
     public virtual void then_MyButtons_has_0_rows()
     {
         var actualRows = this.sut.getMyButtonsListRows();
-        Assert.AreEqual(0, actualRows.Count, "Expected that list view MyButtons has 0 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(0, actualRows.Count, "Expected that list view MyButtons has 0 rows, but has " + Convert.ToString(actualRows.Count));
     }
 }

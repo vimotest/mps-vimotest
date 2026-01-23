@@ -68,17 +68,20 @@ public class CheckBoxes_ViewTest
 
     public virtual void then_MyFlagTriState_is_mixed()
     {
-        Assert.AreEqual(null, this.sut.getIsMyFlagTriStateCheckBoxChecked(), "Expected that checkbox MyFlagTriState is indeterminate (null), but was <" + (this.sut.getIsMyFlagTriStateCheckBoxChecked() ? "checked" : "unchecked") + ">");
+        string actualCheckValue = (this.sut.getIsMyFlagTriStateCheckBoxChecked() == true) ? "checked" : ((this.sut.getIsMyFlagTriStateCheckBoxChecked() == false) ? "unchecked" : "indeterminate (null)");
+        Assert.AreEqual(null, this.sut.getIsMyFlagTriStateCheckBoxChecked(), "Expected that checkbox MyFlagTriState is indeterminate (null), but was <" + actualCheckValue + ">");
     }
 
     public virtual void then_MyFlagTriState_is_checked()
     {
-        Assert.IsTrue(this.sut.getIsMyFlagTriStateCheckBoxChecked(), "Expected that checkbox MyFlagTriState is checked, but was <" + (this.sut.getIsMyFlagTriStateCheckBoxChecked() ? "checked" : "unchecked") + ">");
+        string actualCheckValue_1 = (this.sut.getIsMyFlagTriStateCheckBoxChecked() == true) ? "checked" : ((this.sut.getIsMyFlagTriStateCheckBoxChecked() == false) ? "unchecked" : "indeterminate (null)");
+        Assert.IsTrue(this.sut.getIsMyFlagTriStateCheckBoxChecked(), "Expected that checkbox MyFlagTriState is checked, but was <" + actualCheckValue_1 + ">");
     }
 
     public virtual void then_MyFlagTriState_is_not_checked()
     {
-        Assert.IsFalse(this.sut.getIsMyFlagTriStateCheckBoxChecked(), "Expected that checkbox MyFlagTriState is unchecked, but was <" + (this.sut.getIsMyFlagTriStateCheckBoxChecked() ? "checked" : "unchecked") + ">");
+        string actualCheckValue_2 = (this.sut.getIsMyFlagTriStateCheckBoxChecked() == true) ? "checked" : ((this.sut.getIsMyFlagTriStateCheckBoxChecked() == false) ? "unchecked" : "indeterminate (null)");
+        Assert.IsFalse(this.sut.getIsMyFlagTriStateCheckBoxChecked(), "Expected that checkbox MyFlagTriState is unchecked, but was <" + actualCheckValue_2 + ">");
     }
 
     public virtual void then_MyFlagWithLabel_is_checked_and_is_not_enabled_and_shows_text_value_()

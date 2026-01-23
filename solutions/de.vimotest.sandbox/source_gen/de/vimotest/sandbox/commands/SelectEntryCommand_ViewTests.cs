@@ -4,7 +4,7 @@
 using commands;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using Alf.Library.PrimitiveBehaviors;
+using System;
 
 [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class SelectEntryCommand_ViewTests
@@ -53,7 +53,7 @@ public class SelectEntryCommand_ViewTests
     public virtual void then_MyElements_has_3_entries_and()
     {
         var actualMyElementsEntries = this.sut.getMyElementsComboBoxEntries();
-        Assert.AreEqual(3, actualMyElementsEntries.Count, "Expected that combobox MyElements has 3 entries, but has " + IntegerFunctions.ToString(actualMyElementsEntries.Count));
+        Assert.AreEqual(3, actualMyElementsEntries.Count, "Expected that combobox MyElements has 3 entries, but has " + Convert.ToString(actualMyElementsEntries.Count));
         Assert.AreEqual("A", actualMyElementsEntries[0], "Expected that combobox MyElements has entry at index 0 matching <" + "A" + ">, but was <" + actualMyElementsEntries[0] + ">");
         Assert.AreEqual("B", actualMyElementsEntries[1], "Expected that combobox MyElements has entry at index 1 matching <" + "B" + ">, but was <" + actualMyElementsEntries[1] + ">");
         Assert.AreEqual("C", actualMyElementsEntries[2], "Expected that combobox MyElements has entry at index 2 matching <" + "C" + ">, but was <" + actualMyElementsEntries[2] + ">");

@@ -84,17 +84,23 @@ class CheckBoxes_ViewTest {
   }
   
   public then_MyFlagTriState_is_mixed (  ) {
-    AssertEqualWithMessage ( null, this.sut.getIsMyFlagTriStateCheckBoxChecked (  ), "Expected that checkbox MyFlagTriState is indeterminate (null), but was <" + ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) ? "checked" : "unchecked" ) + ">" );
+    let actualCheckValue: String = ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == true ) ? "checked" : ( ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == false ) ? "unchecked" : "indeterminate (null)" );
+
+    AssertEqualWithMessage ( null, this.sut.getIsMyFlagTriStateCheckBoxChecked (  ), "Expected that checkbox MyFlagTriState is indeterminate (null), but was <" + actualCheckValue + ">" );
 
   }
   
   public then_MyFlagTriState_is_checked (  ) {
-    AssertTrueWithMessage ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ), "Expected that checkbox MyFlagTriState is checked, but was <" + ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) ? "checked" : "unchecked" ) + ">" );
+    let actualCheckValue_1: String = ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == true ) ? "checked" : ( ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == false ) ? "unchecked" : "indeterminate (null)" );
+
+    AssertTrueWithMessage ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ), "Expected that checkbox MyFlagTriState is checked, but was <" + actualCheckValue_1 + ">" );
 
   }
   
   public then_MyFlagTriState_is_not_checked (  ) {
-    AssertFalseWithMessage ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ), "Expected that checkbox MyFlagTriState is unchecked, but was <" + ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) ? "checked" : "unchecked" ) + ">" );
+    let actualCheckValue_2: String = ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == true ) ? "checked" : ( ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == false ) ? "unchecked" : "indeterminate (null)" );
+
+    AssertFalseWithMessage ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ), "Expected that checkbox MyFlagTriState is unchecked, but was <" + actualCheckValue_2 + ">" );
 
   }
   

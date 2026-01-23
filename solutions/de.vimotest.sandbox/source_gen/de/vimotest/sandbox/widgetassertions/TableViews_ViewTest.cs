@@ -4,7 +4,7 @@
 using widgetassertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using Alf.Library.PrimitiveBehaviors;
+using System;
 
 [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class TableViews_ViewTest
@@ -49,11 +49,11 @@ public class TableViews_ViewTest
     public virtual void then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible()
     {
         var actualRows = this.sut.getMyElementsTableRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that table view MyElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that table view MyElements has 2 rows, but has " + Convert.ToString(actualRows.Count));
 
         {
             var row0 = actualRows[0];
-            Assert.AreEqual(0, row0.getRowIndex(), "Expected that table view MyElements row at index 0 has rowhandle <0>, but was <" + IntegerFunctions.ToString(row0.getRowIndex()) + ">");
+            Assert.AreEqual(0, row0.getRowIndex(), "Expected that table view MyElements row at index 0 has rowhandle <0>, but was <" + Convert.ToString(row0.getRowIndex()) + ">");
             Assert.IsTrue(row0.getIsIncludeCheckBoxChecked(), "Expected that checkbox Include is checked, but was <" + (row0.getIsIncludeCheckBoxChecked() ? "checked" : "unchecked") + ">");
             Assert.AreEqual("A", row0.getNameLabelText(), "Expected that label Name has text <" + "A" + ">, but was <" + row0.getNameLabelText() + ">");
             Assert.AreEqual("B", row0.getDescriptionLabelText(), "Expected that label Description has text <" + "B" + ">, but was <" + row0.getDescriptionLabelText() + ">");
@@ -62,13 +62,13 @@ public class TableViews_ViewTest
 
         {
             var row1 = actualRows[1];
-            Assert.AreEqual(1, row1.getRowIndex(), "Expected that table view MyElements row at index 1 has rowhandle <1>, but was <" + IntegerFunctions.ToString(row1.getRowIndex()) + ">");
+            Assert.AreEqual(1, row1.getRowIndex(), "Expected that table view MyElements row at index 1 has rowhandle <1>, but was <" + Convert.ToString(row1.getRowIndex()) + ">");
             Assert.IsFalse(row1.getIsIncludeCheckBoxChecked(), "Expected that checkbox Include is unchecked, but was <" + (row1.getIsIncludeCheckBoxChecked() ? "checked" : "unchecked") + ">");
             Assert.AreEqual("C", row1.getNameLabelText(), "Expected that label Name has text <" + "C" + ">, but was <" + row1.getNameLabelText() + ">");
             Assert.AreEqual("D", row1.getDescriptionLabelText(), "Expected that label Description has text <" + "D" + ">, but was <" + row1.getDescriptionLabelText() + ">");
             Assert.AreEqual("image_star", row1.getInfoIconImageName(), "Expected that image InfoIcon has " + "image <image_star>" + ", but was <" + row1.getInfoIconImageName() + ">");
         }
-        Assert.AreEqual(1, this.sut.getMyElementsTableSelectedRow(), "Expected that table view MyElements has selected row with row handle <" + IntegerFunctions.ToString(1) + ">, but was <" + IntegerFunctions.ToString(this.sut.getMyElementsTableSelectedRow()) + ">");
+        Assert.AreEqual(1, this.sut.getMyElementsTableSelectedRow(), "Expected that table view MyElements has selected row with row handle <" + Convert.ToString(1) + ">, but was <" + Convert.ToString(this.sut.getMyElementsTableSelectedRow()) + ">");
         Assert.IsTrue(this.sut.getIsMyElementsTableVisible(), "Expected table view MyElements is visible, but it was hidden");
         Assert.IsTrue(this.sut.getIsMyElementsTableEnabled(), "Expected table view MyElements is enabled, but it was disabled");
         Assert.IsFalse(this.sut.getIsMyElementsTableDescriptionColumnVisible(), "Expected table column Description is hidden, but it was visible");
@@ -77,7 +77,7 @@ public class TableViews_ViewTest
     public virtual void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1()
     {
         var actualRows = this.sut.getMyStringRowHandlesTableRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that table view MyStringRowHandles has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that table view MyStringRowHandles has 2 rows, but has " + Convert.ToString(actualRows.Count));
 
         {
             var row0 = actualRows[0];
@@ -96,17 +96,17 @@ public class TableViews_ViewTest
     public virtual void then_MyElements_has_2_rows()
     {
         var actualRows = this.sut.getMyElementsTableRows();
-        Assert.AreEqual(2, actualRows.Count, "Expected that table view MyElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.Count));
+        Assert.AreEqual(2, actualRows.Count, "Expected that table view MyElements has 2 rows, but has " + Convert.ToString(actualRows.Count));
 
         {
             var row0 = actualRows[0];
-            Assert.AreEqual(0, row0.getRowIndex(), "Expected that table view MyElements row at index 0 has rowhandle <0>, but was <" + IntegerFunctions.ToString(row0.getRowIndex()) + ">");
+            Assert.AreEqual(0, row0.getRowIndex(), "Expected that table view MyElements row at index 0 has rowhandle <0>, but was <" + Convert.ToString(row0.getRowIndex()) + ">");
             Assert.AreEqual("A", row0.getNameLabelText(), "Expected that label Name has text <" + "A" + ">, but was <" + row0.getNameLabelText() + ">");
         }
 
         {
             var row1 = actualRows[1];
-            Assert.AreEqual(1, row1.getRowIndex(), "Expected that table view MyElements row at index 1 has rowhandle <1>, but was <" + IntegerFunctions.ToString(row1.getRowIndex()) + ">");
+            Assert.AreEqual(1, row1.getRowIndex(), "Expected that table view MyElements row at index 1 has rowhandle <1>, but was <" + Convert.ToString(row1.getRowIndex()) + ">");
             Assert.AreEqual("image_star", row1.getInfoIconImageName(), "Expected that image InfoIcon has " + "image <image_star>" + ", but was <" + row1.getInfoIconImageName() + ">");
         }
     }

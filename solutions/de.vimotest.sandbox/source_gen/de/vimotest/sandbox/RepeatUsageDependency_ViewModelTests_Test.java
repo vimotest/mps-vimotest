@@ -7,6 +7,7 @@ import de.vimotest.sandbox.dependencies.subscope.RepeatUsageDependency_ViewModel
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.dependencies.subscope.RepeatUsageDependency_ViewModelTestEnvironmentImpl;
+import java.util.Arrays;
 
 public class RepeatUsageDependency_ViewModelTests_Test {
   private RepeatUsageDependency_ViewModel sut;
@@ -38,7 +39,7 @@ public class RepeatUsageDependency_ViewModelTests_Test {
 
 
   public void when_OnMessage() {
-    this.testEnvironment.getMessageBus().OnMessage(0, null);
+    this.testEnvironment.getMessageBus().OnMessage(0, Arrays.asList());
   }
   public void when_Log() {
     this.testEnvironment.getLogger().Log("my message");

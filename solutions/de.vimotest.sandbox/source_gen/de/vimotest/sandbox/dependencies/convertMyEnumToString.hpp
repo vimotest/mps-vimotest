@@ -1,9 +1,13 @@
-#include "convertMyEnumToString.h"
+#pragma once
+
 #include <string>
 #include "MyEnum.h"
 
 namespace dependencies
 {
+  /*
+
+   */
   std::string convertMyEnumToString(MyEnum symbol)
   {
     if (symbol == dependencies::MyEnum::A)

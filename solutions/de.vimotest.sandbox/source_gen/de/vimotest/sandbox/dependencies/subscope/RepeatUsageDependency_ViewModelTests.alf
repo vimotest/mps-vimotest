@@ -45,7 +45,7 @@ class RepeatUsageDependency_ViewModelTests {
 
   
   public when_OnMessage (  ) {
-    this.testEnvironment.getMessageBus (  ).OnMessage ( 0, null );
+    this.testEnvironment.getMessageBus (  ).OnMessage ( 0, new String [] {  } );
 
   }
   

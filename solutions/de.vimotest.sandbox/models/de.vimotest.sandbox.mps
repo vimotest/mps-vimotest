@@ -151,6 +151,7 @@
       <concept id="471139930089728220" name="de.vimotest.viewmodel.testing.structure.TableColumnCheck" flags="ng" index="E2vIp">
         <child id="471139930089728221" name="checks" index="E2vIo" />
       </concept>
+      <concept id="7210957589144949425" name="de.vimotest.viewmodel.testing.structure.EmptySequenceExpression" flags="ng" index="2Ntyk9" />
       <concept id="1938192778485639397" name="de.vimotest.viewmodel.testing.structure.CheckCommandAction" flags="ng" index="Tef3P">
         <property id="1938192778485679557" name="checked" index="Te1Rl" />
       </concept>
@@ -289,7 +290,6 @@
       </concept>
     </language>
     <language id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi">
-      <concept id="8152398782397110011" name="alfi.structure.NullExpression" flags="ng" index="2_e7m4" />
       <concept id="2674824929519052396" name="alfi.structure.StringLiteralExpression" flags="ng" index="_iklQ">
         <property id="2674824929519052397" name="value" index="_iklR" />
       </concept>
@@ -6012,7 +6012,7 @@
               <node concept="32T38h" id="54nmQxKvrec" role="_vku1">
                 <property role="32T38g" value="0" />
               </node>
-              <node concept="2_e7m4" id="54nmQxKvrgz" role="_vku1" />
+              <node concept="2Ntyk9" id="6gitVznAI8$" role="_vku1" />
             </node>
           </node>
         </node>

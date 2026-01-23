@@ -1,9 +1,13 @@
-#include "convertMyOptionsToString.h"
+#pragma once
+
 #include <string>
 #include "SelectEntryCommand_ViewModelMyOptionsOption.h"
 
 namespace commands
 {
+  /*
+
+   */
   std::string convertMyOptionsToString(SelectEntryCommand_ViewModelMyOptionsOption symbol)
   {
     if (symbol == commands::SelectEntryCommand_ViewModelMyOptionsOption::A)

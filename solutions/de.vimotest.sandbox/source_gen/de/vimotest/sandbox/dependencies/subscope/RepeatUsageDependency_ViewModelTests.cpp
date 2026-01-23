@@ -41,7 +41,7 @@ namespace dependencies::subscope
   }
   void RepeatUsageDependency_ViewModelTests::when_OnMessage()
   {
-    this->testEnvironment->getMessageBus()->OnMessage(0, nullptr);
+    this->testEnvironment->getMessageBus()->OnMessage(0, { });
   }
   void RepeatUsageDependency_ViewModelTests::when_Log()
   {

@@ -4,6 +4,7 @@
 using dependencies.subscope;
 using dependencies;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 
 [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class RepeatUsageDependency_ViewModelTests
@@ -40,7 +41,7 @@ public class RepeatUsageDependency_ViewModelTests
 
     public virtual void when_OnMessage()
     {
-        this.testEnvironment.getMessageBus().OnMessage(0, null);
+        this.testEnvironment.getMessageBus().OnMessage(0, new System.Collections.Generic.List<string> { });
     }
 
     public virtual void when_Log()

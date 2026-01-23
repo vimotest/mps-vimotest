@@ -1,9 +1,13 @@
-#include "convertOptionsToString.h"
+#pragma once
+
 #include <string>
 #include "RadioButton_ViewModelOptionsOption.h"
 
 namespace widgetassertions
 {
+  /*
+
+   */
   std::string convertOptionsToString(RadioButton_ViewModelOptionsOption symbol)
   {
     if (symbol == widgetassertions::RadioButton_ViewModelOptionsOption::OptionA)

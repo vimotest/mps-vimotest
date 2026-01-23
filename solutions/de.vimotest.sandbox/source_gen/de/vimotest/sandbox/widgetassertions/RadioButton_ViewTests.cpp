@@ -2,7 +2,7 @@
 #include <memory>
 #include "RadioButton_ViewModelTestEnvironment.h"
 #include <string>
-#include "convertOptionsToString.h"
+#include "convertOptionsToString.hpp"
 #include "RadioButton_ViewModel.h"
 #include "RadioButton_ViewModelOptionsOption.h"
 #include "RadioButton_ViewModelTestEnvironmentImpl.h"

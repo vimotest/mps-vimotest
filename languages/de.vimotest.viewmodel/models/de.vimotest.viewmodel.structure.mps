@@ -1378,6 +1378,14 @@
         <property role="t5JxN" value="Controls if table updating flags are generated" />
       </node>
     </node>
+    <node concept="1TJgyi" id="7VjLoWhCQf_" role="1TKVEl">
+      <property role="IQ2nx" value="9138865287131784165" />
+      <property role="TrG5h" value="generateRowsAsReferenceLists" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="7VjLoWhCQfA" role="lGtFl">
+        <property role="t5JxN" value="Controls if rows of ViewModels are generated as reference (only relevant in certain languages like C++ `vector&lt;...&gt;&amp;`)" />
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="4xJPu9gsd4J">
     <property role="EcuMT" value="5219625661134590255" />
@@ -1841,6 +1849,20 @@
     <property role="TrG5h" value="OperationResult" />
     <property role="34LRSv" value="result" />
     <ref role="1TJDcQ" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
+  </node>
+  <node concept="1TIwiD" id="7VjLoWhPcFw">
+    <property role="EcuMT" value="9138865287135021792" />
+    <property role="3GE5qa" value="util" />
+    <property role="TrG5h" value="GenerationConfigRef" />
+    <property role="34LRSv" value="generation config reference" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7VjLoWhPcFx" role="1TKVEi">
+      <property role="IQ2ns" value="9138865287135021793" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="5jkMFwuLz8m" resolve="GenerationConfig" />
+    </node>
   </node>
 </model>
 

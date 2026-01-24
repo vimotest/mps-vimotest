@@ -1154,20 +1154,35 @@
     <node concept="2YIFZL" id="54nmQxI_fA2" role="jymVt">
       <property role="TrG5h" value="getDependencyGetterName" />
       <node concept="3clFbS" id="54nmQxI_fA5" role="3clF47">
-        <node concept="3clFbF" id="54nmQxI_jQp" role="3cqZAp">
-          <node concept="1rXfSq" id="54nmQxI_jQn" role="3clFbG">
-            <ref role="37wK5l" node="6RKU0s3ptv0" resolve="toValidIdentifier" />
-            <node concept="2YIFZM" id="54nmQxI_k8Y" role="37wK5m">
-              <ref role="37wK5l" to="18ew:~NameUtil.getGetterName(java.lang.String)" resolve="getGetterName" />
-              <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
-              <node concept="2OqwBi" id="54nmQxI_k8Z" role="37wK5m">
-                <node concept="37vLTw" id="54nmQxI_k90" role="2Oq$k0">
-                  <ref role="3cqZAo" node="54nmQxI_g_j" resolve="node" />
-                </node>
-                <node concept="3TrcHB" id="54nmQxI_k91" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+        <node concept="3cpWs8" id="7VjLoWixIPT" role="3cqZAp">
+          <node concept="3cpWsn" id="7VjLoWixIPU" role="3cpWs9">
+            <property role="TrG5h" value="baseName" />
+            <node concept="17QB3L" id="7VjLoWixIyh" role="1tU5fm" />
+            <node concept="1rXfSq" id="7VjLoWixIPV" role="33vP2m">
+              <ref role="37wK5l" node="6RKU0s3ptv0" resolve="toValidIdentifier" />
+              <node concept="2YIFZM" id="7VjLoWixIPW" role="37wK5m">
+                <ref role="37wK5l" to="18ew:~NameUtil.getGetterName(java.lang.String)" resolve="getGetterName" />
+                <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                <node concept="2OqwBi" id="7VjLoWixIPX" role="37wK5m">
+                  <node concept="37vLTw" id="7VjLoWixIPY" role="2Oq$k0">
+                    <ref role="3cqZAo" node="54nmQxI_g_j" resolve="node" />
+                  </node>
+                  <node concept="3TrcHB" id="7VjLoWixIPZ" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7VjLoWixHWc" role="3cqZAp">
+          <node concept="1rXfSq" id="7VjLoWixHWa" role="3clFbG">
+            <ref role="37wK5l" node="2gGjxPLO$3t" resolve="capitalizeOperationDependingOnConfig" />
+            <node concept="37vLTw" id="7VjLoWixIn1" role="37wK5m">
+              <ref role="3cqZAo" node="54nmQxI_g_j" resolve="node" />
+            </node>
+            <node concept="37vLTw" id="7VjLoWixKpf" role="37wK5m">
+              <ref role="3cqZAo" node="7VjLoWixIPU" resolve="baseName" />
             </node>
           </node>
         </node>
@@ -1241,6 +1256,50 @@
       </node>
       <node concept="3Tm1VV" id="32SpZNIS0OU" role="1B3o_S" />
       <node concept="17QB3L" id="32SpZNIS2ZV" role="3clF45" />
+    </node>
+    <node concept="2YIFZL" id="2gGjxPLO$3t" role="jymVt">
+      <property role="TrG5h" value="capitalizeOperationDependingOnConfig" />
+      <node concept="37vLTG" id="2gGjxPLO$vj" role="3clF46">
+        <property role="TrG5h" value="anyNodeInModel" />
+        <node concept="3Tqbb2" id="2gGjxPLO$vk" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="2gGjxPLO$vl" role="3clF46">
+        <property role="TrG5h" value="baseName" />
+        <node concept="17QB3L" id="2gGjxPLO$vm" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="2gGjxPLO$3w" role="3clF47">
+        <node concept="3clFbJ" id="2gGjxPLO$RY" role="3cqZAp">
+          <node concept="3clFbS" id="2gGjxPLO$RZ" role="3clFbx">
+            <node concept="3cpWs6" id="2gGjxPLOAwQ" role="3cqZAp">
+              <node concept="2YIFZM" id="2gGjxPLO$S2" role="3cqZAk">
+                <ref role="37wK5l" to="18ew:~NameUtil.capitalize(java.lang.String)" resolve="capitalize" />
+                <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                <node concept="37vLTw" id="2gGjxPLO$S3" role="37wK5m">
+                  <ref role="3cqZAo" node="2gGjxPLO$vl" resolve="baseName" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2YIFZM" id="2gGjxPLO$S5" role="3clFbw">
+            <ref role="37wK5l" to="nrs2:Of5vVZ$0jQ" resolve="capitalizeGettersSetters" />
+            <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+            <node concept="37vLTw" id="2gGjxPLO$S6" role="37wK5m">
+              <ref role="3cqZAo" node="2gGjxPLO$vj" resolve="anyNodeInModel" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2gGjxPLO$S7" role="3cqZAp">
+          <node concept="2YIFZM" id="2gGjxPLOB0o" role="3cqZAk">
+            <ref role="37wK5l" to="18ew:~NameUtil.decapitalize(java.lang.String)" resolve="decapitalize" />
+            <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+            <node concept="37vLTw" id="2gGjxPLOB0p" role="37wK5m">
+              <ref role="3cqZAo" node="2gGjxPLO$vl" resolve="baseName" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="2gGjxPLOzC6" role="1B3o_S" />
+      <node concept="17QB3L" id="2gGjxPLOzTb" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="2evlxT94KqT" role="1B3o_S" />
   </node>

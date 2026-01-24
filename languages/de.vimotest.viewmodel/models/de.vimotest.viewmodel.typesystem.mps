@@ -152,6 +152,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
@@ -193,6 +194,7 @@
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
+      <concept id="1176903168877" name="jetbrains.mps.baseLanguage.collections.structure.UnionOperation" flags="nn" index="4Tj9Z" />
       <concept id="1176906603202" name="jetbrains.mps.baseLanguage.collections.structure.BinaryOperation" flags="nn" index="56pJg">
         <child id="1176906787974" name="rightExpression" index="576Qk" />
       </concept>
@@ -365,21 +367,44 @@
     <property role="TrG5h" value="check_NameBindingConfig" />
     <property role="3GE5qa" value="util" />
     <node concept="3clFbS" id="5jkMFwuLz8J" role="18ibNy">
+      <node concept="3cpWs8" id="7VjLoWhPd9k" role="3cqZAp">
+        <node concept="3cpWsn" id="7VjLoWhPd9l" role="3cpWs9">
+          <property role="TrG5h" value="model" />
+          <node concept="H_c77" id="7VjLoWhPd8K" role="1tU5fm" />
+          <node concept="2OqwBi" id="7VjLoWhPd9m" role="33vP2m">
+            <node concept="1YBJjd" id="7VjLoWhPd9n" role="2Oq$k0">
+              <ref role="1YBMHb" node="5jkMFwuLz8L" resolve="generationConfig" />
+            </node>
+            <node concept="I4A8Y" id="7VjLoWhPd9o" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
       <node concept="3cpWs8" id="5jkMFwuLCf4" role="3cqZAp">
         <node concept="3cpWsn" id="5jkMFwuLCf5" role="3cpWs9">
           <property role="TrG5h" value="configCount" />
           <node concept="10Oyi0" id="5jkMFwuLCe$" role="1tU5fm" />
           <node concept="2OqwBi" id="5jkMFwuLCf6" role="33vP2m">
-            <node concept="2OqwBi" id="5jkMFwuLCf7" role="2Oq$k0">
-              <node concept="2OqwBi" id="5jkMFwuLCf8" role="2Oq$k0">
-                <node concept="1YBJjd" id="5jkMFwuLCf9" role="2Oq$k0">
-                  <ref role="1YBMHb" node="5jkMFwuLz8L" resolve="nameBindingConfig" />
+            <node concept="2OqwBi" id="7VjLoWhPeUb" role="2Oq$k0">
+              <node concept="2OqwBi" id="5jkMFwuLCf7" role="2Oq$k0">
+                <node concept="37vLTw" id="7VjLoWhPd9p" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7VjLoWhPd9l" resolve="model" />
                 </node>
-                <node concept="I4A8Y" id="5jkMFwuLCfa" role="2OqNvi" />
+                <node concept="2SmgA7" id="5jkMFwuLCfb" role="2OqNvi">
+                  <node concept="chp4Y" id="5jkMFwuLCfc" role="1dBWTz">
+                    <ref role="cht4Q" to="at53:5jkMFwuLz8m" resolve="GenerationConfig" />
+                  </node>
+                </node>
               </node>
-              <node concept="2SmgA7" id="5jkMFwuLCfb" role="2OqNvi">
-                <node concept="chp4Y" id="5jkMFwuLCfc" role="1dBWTz">
-                  <ref role="cht4Q" to="at53:5jkMFwuLz8m" resolve="GenerationConfig" />
+              <node concept="4Tj9Z" id="7VjLoWhPgYP" role="2OqNvi">
+                <node concept="2OqwBi" id="7VjLoWhPh0k" role="576Qk">
+                  <node concept="37vLTw" id="7VjLoWhPh0l" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7VjLoWhPd9l" resolve="model" />
+                  </node>
+                  <node concept="2SmgA7" id="7VjLoWhPh0m" role="2OqNvi">
+                    <node concept="chp4Y" id="7VjLoWhPh0n" role="1dBWTz">
+                      <ref role="cht4Q" to="at53:7VjLoWhPcFw" resolve="GenerationConfigRef" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -391,10 +416,10 @@
         <node concept="3clFbS" id="5jkMFwuLCj1" role="3clFbx">
           <node concept="2MkqsV" id="5jkMFwuLIvR" role="3cqZAp">
             <node concept="Xl_RD" id="5jkMFwuLIw3" role="2MkJ7o">
-              <property role="Xl_RC" value="Only one NameBindingConfig is supported per model" />
+              <property role="Xl_RC" value="Only one GenerationConfig is supported per model" />
             </node>
             <node concept="1YBJjd" id="5jkMFwuLIx6" role="1urrMF">
-              <ref role="1YBMHb" node="5jkMFwuLz8L" resolve="nameBindingConfig" />
+              <ref role="1YBMHb" node="5jkMFwuLz8L" resolve="generationConfig" />
             </node>
           </node>
         </node>
@@ -409,7 +434,7 @@
       </node>
     </node>
     <node concept="1YaCAy" id="5jkMFwuLz8L" role="1YuTPh">
-      <property role="TrG5h" value="nameBindingConfig" />
+      <property role="TrG5h" value="generationConfig" />
       <ref role="1YaFvo" to="at53:5jkMFwuLz8m" resolve="GenerationConfig" />
     </node>
   </node>
@@ -923,6 +948,81 @@
     <node concept="1YaCAy" id="3kGPU1Q2pAM" role="1YuTPh">
       <property role="TrG5h" value="method" />
       <ref role="1YaFvo" to="at53:4m0g11MoodV" resolve="DependencyOperation" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7VjLoWhPhjO">
+    <property role="TrG5h" value="check_GenerationConfigRef" />
+    <property role="3GE5qa" value="util" />
+    <node concept="3clFbS" id="7VjLoWhPhjP" role="18ibNy">
+      <node concept="3cpWs8" id="7VjLoWhPhjV" role="3cqZAp">
+        <node concept="3cpWsn" id="7VjLoWhPhjW" role="3cpWs9">
+          <property role="TrG5h" value="model" />
+          <node concept="H_c77" id="7VjLoWhPhjX" role="1tU5fm" />
+          <node concept="2OqwBi" id="7VjLoWhPhjY" role="33vP2m">
+            <node concept="1YBJjd" id="7VjLoWhPhjZ" role="2Oq$k0">
+              <ref role="1YBMHb" node="7VjLoWhPhjR" resolve="generationConfigRef" />
+            </node>
+            <node concept="I4A8Y" id="7VjLoWhPhk0" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="7VjLoWhPhk1" role="3cqZAp">
+        <node concept="3cpWsn" id="7VjLoWhPhk2" role="3cpWs9">
+          <property role="TrG5h" value="configCount" />
+          <node concept="10Oyi0" id="7VjLoWhPhk3" role="1tU5fm" />
+          <node concept="2OqwBi" id="7VjLoWhPhk4" role="33vP2m">
+            <node concept="2OqwBi" id="7VjLoWhPhk5" role="2Oq$k0">
+              <node concept="2OqwBi" id="7VjLoWhPhk6" role="2Oq$k0">
+                <node concept="37vLTw" id="7VjLoWhPhk7" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7VjLoWhPhjW" resolve="model" />
+                </node>
+                <node concept="2SmgA7" id="7VjLoWhPhk8" role="2OqNvi">
+                  <node concept="chp4Y" id="7VjLoWhPhk9" role="1dBWTz">
+                    <ref role="cht4Q" to="at53:5jkMFwuLz8m" resolve="GenerationConfig" />
+                  </node>
+                </node>
+              </node>
+              <node concept="4Tj9Z" id="7VjLoWhPhka" role="2OqNvi">
+                <node concept="2OqwBi" id="7VjLoWhPhkb" role="576Qk">
+                  <node concept="37vLTw" id="7VjLoWhPhkc" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7VjLoWhPhjW" resolve="model" />
+                  </node>
+                  <node concept="2SmgA7" id="7VjLoWhPhkd" role="2OqNvi">
+                    <node concept="chp4Y" id="7VjLoWhPhke" role="1dBWTz">
+                      <ref role="cht4Q" to="at53:7VjLoWhPcFw" resolve="GenerationConfigRef" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="34oBXx" id="7VjLoWhPhkf" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="7VjLoWhPhkg" role="3cqZAp">
+        <node concept="3clFbS" id="7VjLoWhPhkh" role="3clFbx">
+          <node concept="2MkqsV" id="7VjLoWhPhki" role="3cqZAp">
+            <node concept="Xl_RD" id="7VjLoWhPhkj" role="2MkJ7o">
+              <property role="Xl_RC" value="Only one GenerationConfig is supported per model" />
+            </node>
+            <node concept="1YBJjd" id="7VjLoWhPhkk" role="1urrMF">
+              <ref role="1YBMHb" node="7VjLoWhPhjR" resolve="generationConfigRef" />
+            </node>
+          </node>
+        </node>
+        <node concept="2d3UOw" id="7VjLoWhPhkl" role="3clFbw">
+          <node concept="3cmrfG" id="7VjLoWhPhkm" role="3uHU7w">
+            <property role="3cmrfH" value="2" />
+          </node>
+          <node concept="37vLTw" id="7VjLoWhPhkn" role="3uHU7B">
+            <ref role="3cqZAo" node="7VjLoWhPhk2" resolve="configCount" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7VjLoWhPhjR" role="1YuTPh">
+      <property role="TrG5h" value="generationConfigRef" />
+      <ref role="1YaFvo" to="at53:7VjLoWhPcFw" resolve="GenerationConfigRef" />
     </node>
   </node>
 </model>

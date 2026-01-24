@@ -734,6 +734,9 @@
     <node concept="aNPBN" id="5jkMFwuRROT" role="aQYdv">
       <ref role="aOQi4" to="at53:5jkMFwuLz8m" resolve="GenerationConfig" />
     </node>
+    <node concept="aNPBN" id="7VjLoWhPijI" role="aQYdv">
+      <ref role="aOQi4" to="at53:7VjLoWhPcFw" resolve="GenerationConfigRef" />
+    </node>
     <node concept="aNPBN" id="5PCYS1MEudI" role="aQYdv">
       <ref role="aOQi4" to="at53:6wbjV0Q45wI" resolve="ImageDefinitionRegistry" />
     </node>

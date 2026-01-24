@@ -54,39 +54,6 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewModelDependency_ViewModel.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/subscope/RepeatUsageDependency_ViewModel.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/calls/VerifyDependencyCallViewModel.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Images_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TextBoxes_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/GenericCommands_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/CheckCommand_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Buttons_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/FillTextCommand_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/ClickCommand_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/LoadCommand_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/StringContext_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/XmlFileContext_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/DataPathContext_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewModelDependency_ViewModelTestEnvironment.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewModelDependency_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/SimpleDependency_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/subscope/RepeatUsageDependency_ViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/calls/VerifyDependencyCallViewModelTestEnvironment.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/calls/VerifyDependencyCallViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewDependencyViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/LoggerSpy.cpp
 )
 
 set(GENERATED_HEADERS
@@ -154,69 +121,11 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/Logger.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/subscope/MessageBus.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewDependencyView.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Images_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Images_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ListViews_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TextBoxes_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TextBoxes_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/GenericCommands_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/GenericCommands_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/CheckCommand_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/CheckCommand_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Buttons_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Buttons_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/FillTextCommand_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/FillTextCommand_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/ClickCommand_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/ClickCommand_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/LoadCommand_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/LoadCommand_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/context/StringContext_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/context/StringContext_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/context/XmlFileContext_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/context/XmlFileContext_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/context/DataPathContext_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/context/DataPathContext_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewModelDependency_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewModelDependency_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/SimpleDependency_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/SimpleDependency_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/subscope/RepeatUsageDependency_ViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/subscope/RepeatUsageDependency_ViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/calls/VerifyDependencyCallViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/calls/VerifyDependencyCallViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewDependencyViewModelTestEnvironment.h
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewDependencyViewModelTestEnvironmentImpl.h
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/LoggerSpy.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewModelMyOptionsOption.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewModelOptionsOption.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/MyEnum.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/convertMyOptionsToString.hpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/convertOptionsToString.hpp
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/convertMyEnumToString.hpp
 )
 

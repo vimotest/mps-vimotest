@@ -5,7 +5,7 @@ using widgetassertions;
 
 namespace widgetassertions
 {
-    internal abstract class Images_ViewModelTestEnvironment
+    public abstract class Images_ViewModelTestEnvironment
     {
         public abstract void Init();
 

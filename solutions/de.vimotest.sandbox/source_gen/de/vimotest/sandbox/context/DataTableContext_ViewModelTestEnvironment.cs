@@ -5,7 +5,7 @@ using context;
 
 namespace context
 {
-    internal abstract class DataTableContext_ViewModelTestEnvironment
+    public abstract class DataTableContext_ViewModelTestEnvironment
     {
         public abstract void Init();
 

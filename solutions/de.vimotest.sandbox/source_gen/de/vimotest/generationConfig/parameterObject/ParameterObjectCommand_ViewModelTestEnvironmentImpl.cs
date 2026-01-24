@@ -1,7 +1,7 @@
 /// <filename>
 ///     ParameterObjectCommand_ViewModelTestEnvironmentImpl.cs
 /// </filename>
-internal class ParameterObjectCommand_ViewModelTestEnvironmentImpl : ParameterObjectCommand_ViewModelTestEnvironment
+public class ParameterObjectCommand_ViewModelTestEnvironmentImpl : ParameterObjectCommand_ViewModelTestEnvironment
 {
     public override void Init()
     {

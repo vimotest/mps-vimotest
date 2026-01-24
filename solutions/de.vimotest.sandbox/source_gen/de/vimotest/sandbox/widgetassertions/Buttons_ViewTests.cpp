@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
 #include <memory>
 #include "Buttons_ViewModelTestEnvironment.h"
-#include "Buttons_ViewModel.h"
 #include <string>
+#include "Buttons_ViewModel.h"
 #include "Buttons_ViewModelTestEnvironmentImpl.h"
 
 namespace widgetassertions
@@ -52,20 +52,20 @@ namespace widgetassertions
   }
   void Buttons_ViewTests::then_Ok_is_enabled_and_is_visible_and_shows_text_Test_()
   {
-    EXPECT_TRUE(this->sut->getIsOkButtonEnabled(), std::string("Expected button Ok is enabled, but it was disabled"));
-    EXPECT_TRUE(this->sut->getIsOkButtonVisible(), std::string("Expected button Ok is visible, but it was hidden"));
-    ASSERT_EQ(std::string("Test"), this->sut->getOkButtonText()) << std::string("Expected that button Ok has text <") + std::string("Test") + std::string(">, but was <") + this->sut->getOkButtonText() + std::string(">");
+    EXPECT_TRUE(this->sut->getIsOkButtonEnabled()) << std::string("Expected button Ok is enabled, but it was disabled");
+    EXPECT_TRUE(this->sut->getIsOkButtonVisible()) << std::string("Expected button Ok is visible, but it was hidden");
+    EXPECT_EQ(std::string("Test"), this->sut->getOkButtonText()) << std::string("Expected that button Ok has text <") + std::string("Test") + std::string(">, but was <") + this->sut->getOkButtonText() + std::string(">");
   }
   void Buttons_ViewTests::then_Ok_is_not_enabled_and_is_visible_and_shows_text_Test_()
   {
-    EXPECT_FALSE(this->sut->getIsOkButtonEnabled(), std::string("Expected button Ok is disabled, but it was enabled"));
-    EXPECT_TRUE(this->sut->getIsOkButtonVisible(), std::string("Expected button Ok is visible, but it was hidden"));
-    ASSERT_EQ(std::string("Test"), this->sut->getOkButtonText()) << std::string("Expected that button Ok has text <") + std::string("Test") + std::string(">, but was <") + this->sut->getOkButtonText() + std::string(">");
+    EXPECT_FALSE(this->sut->getIsOkButtonEnabled()) << std::string("Expected button Ok is disabled, but it was enabled");
+    EXPECT_TRUE(this->sut->getIsOkButtonVisible()) << std::string("Expected button Ok is visible, but it was hidden");
+    EXPECT_EQ(std::string("Test"), this->sut->getOkButtonText()) << std::string("Expected that button Ok has text <") + std::string("Test") + std::string(">, but was <") + this->sut->getOkButtonText() + std::string(">");
   }
   void Buttons_ViewTests::then_Ok_is_enabled_and_is_not_visible_and_shows_text_Test_()
   {
-    EXPECT_TRUE(this->sut->getIsOkButtonEnabled(), std::string("Expected button Ok is enabled, but it was disabled"));
-    EXPECT_FALSE(this->sut->getIsOkButtonVisible(), std::string("Expected button Ok is hidden, but it was visible"));
-    ASSERT_EQ(std::string("Test"), this->sut->getOkButtonText()) << std::string("Expected that button Ok has text <") + std::string("Test") + std::string(">, but was <") + this->sut->getOkButtonText() + std::string(">");
+    EXPECT_TRUE(this->sut->getIsOkButtonEnabled()) << std::string("Expected button Ok is enabled, but it was disabled");
+    EXPECT_FALSE(this->sut->getIsOkButtonVisible()) << std::string("Expected button Ok is hidden, but it was visible");
+    EXPECT_EQ(std::string("Test"), this->sut->getOkButtonText()) << std::string("Expected that button Ok has text <") + std::string("Test") + std::string(">, but was <") + this->sut->getOkButtonText() + std::string(">");
   }
 }

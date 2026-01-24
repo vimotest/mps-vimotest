@@ -4,6 +4,7 @@
 using widgetassertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
+using System;
 
 [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class Labels_ViewTest
@@ -111,7 +112,7 @@ public class Labels_ViewTest
     public virtual void then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_()
     {
         var actualMultiLineLines = this.sut.getMultiLineLabelText();
-        Assert.AreEqual(2, actualMultiLineLines.Count, "Expected that label MultiLine has text with 2 lines, but has " + actualMultiLineLines.Count);
+        Assert.AreEqual(2, actualMultiLineLines.Count, "Expected that label MultiLine has text with 2 lines, but has " + Convert.ToString(actualMultiLineLines.Count));
         Assert.AreEqual("Expected Line 1", actualMultiLineLines[0], "Expected that label MultiLine has text line at index 0 matching <" + "Expected Line 1" + ">, but was <" + actualMultiLineLines[0] + ">");
         Assert.AreEqual("Expected Line 2", actualMultiLineLines[1], "Expected that label MultiLine has text line at index 1 matching <" + "Expected Line 2" + ">, but was <" + actualMultiLineLines[1] + ">");
     }
@@ -126,7 +127,7 @@ public class Labels_ViewTest
     {
         Assert.AreEqual("Info", this.sut.getWithMultiLineToolTipLabelText(), "Expected that label WithMultiLineToolTip has text <" + "Info" + ">, but was <" + this.sut.getWithMultiLineToolTipLabelText() + ">");
         var actualWithMultiLineToolTipLines = this.sut.getWithMultiLineToolTipLabelToolTip();
-        Assert.AreEqual(2, actualWithMultiLineToolTipLines.Count, "Expected that label WithMultiLineToolTip has tooltip with 2 lines, but has " + actualWithMultiLineToolTipLines.Count);
+        Assert.AreEqual(2, actualWithMultiLineToolTipLines.Count, "Expected that label WithMultiLineToolTip has tooltip with 2 lines, but has " + Convert.ToString(actualWithMultiLineToolTipLines.Count));
         Assert.AreEqual("Line1", actualWithMultiLineToolTipLines[0], "Expected that label WithMultiLineToolTip has tooltip line at index 0 matching <" + "Line1" + ">, but was <" + actualWithMultiLineToolTipLines[0] + ">");
         Assert.AreEqual("Line2", actualWithMultiLineToolTipLines[1], "Expected that label WithMultiLineToolTip has tooltip line at index 1 matching <" + "Line2" + ">, but was <" + actualWithMultiLineToolTipLines[1] + ">");
     }

@@ -5,7 +5,7 @@ using commands;
 
 namespace commands
 {
-    internal abstract class FillTextCommand_ViewModelTestEnvironment
+    public abstract class FillTextCommand_ViewModelTestEnvironment
     {
         public abstract void Init();
 

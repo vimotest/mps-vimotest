@@ -7739,5 +7739,13 @@
       <node concept="2iRfu4" id="54nmQxLHbww" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="6gitVznp5aM">
+    <property role="3GE5qa" value="test.assert.util" />
+    <ref role="1XX52x" to="53m0:6gitVznp5aL" resolve="EmptySequenceExpression" />
+    <node concept="PMmxH" id="6gitVznp5aO" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+    </node>
+  </node>
 </model>
 

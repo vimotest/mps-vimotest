@@ -63,12 +63,12 @@ class LowLevelFields_ViewTests {
 
   
   public then_MyBool_is_true (  ) {
-    AssertTrue ( this.sut.getMyBool (  ), "Expected field 'MyBool' has value <true>, but it was <" + this.sut.getMyBool (  ) + ">" );
+    AssertTrueWithMessage ( this.sut.getMyBool (  ), "Expected field 'MyBool' has boolean value <true>, but it was <" + ( this.sut.getMyBool (  ) ? "true" : "false" ) + ">" );
 
   }
   
   public then_MyInt_is_42 (  ) {
-    AssertEqualWithMessage ( 42, this.sut.getMyInt (  ), "Expected field 'MyInt' has value <" + 42 + ">, but it was <" + this.sut.getMyInt (  ) + ">" );
+    AssertEqualWithMessage ( 42, this.sut.getMyInt (  ), "Expected field 'MyInt' has numeric value <42>, but it was <" + IntegerFunctions:: ToString ( this.sut.getMyInt (  ) ) + ">" );
 
   }
   
@@ -89,7 +89,7 @@ class LowLevelFields_ViewTests {
   public then_CustomListRowField_has_1_rows (  ) {
     let actualRows: LowLevelFields_ViewModelCustomListRowFieldRow [] = this.sut.getCustomListRowFieldListRows (  );
 
-    AssertEqualWithMessage ( 1, actualRows->size (  ), "Expected that list view CustomListRowField has 1 rows, but has " + actualRows->size (  ) );
+    AssertEqualWithMessage ( 1, actualRows->size (  ), "Expected that list view CustomListRowField has 1 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: LowLevelFields_ViewModelCustomListRowFieldRow = actualRows[ 1 ];
@@ -109,7 +109,7 @@ class LowLevelFields_ViewTests {
   public then_CustomTableRowField_has_1_rows (  ) {
     let actualRows: LowLevelFields_ViewModelCustomTableRowFieldRow [] = this.sut.getCustomTableRowFieldTableRows (  );
 
-    AssertEqualWithMessage ( 1, actualRows->size (  ), "Expected that table view CustomTableRowField has 1 rows, but has " + actualRows->size (  ) );
+    AssertEqualWithMessage ( 1, actualRows->size (  ), "Expected that table view CustomTableRowField has 1 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: LowLevelFields_ViewModelCustomTableRowFieldRow = actualRows[ 1 ];
@@ -118,7 +118,7 @@ class LowLevelFields_ViewTests {
 
       AssertEqualWithMessage ( "", row0.getHeaderLabelText (  ), "Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText (  ) + ">" );
 
-      AssertFalse ( row0.getAdditionalBool (  ), "Expected field 'AdditionalBool' has value <false>, but it was <" + row0.getAdditionalBool (  ) + ">" );
+      AssertFalseWithMessage ( row0.getAdditionalBool (  ), "Expected field 'AdditionalBool' has boolean value <false>, but it was <" + ( row0.getAdditionalBool (  ) ? "true" : "false" ) + ">" );
 
     }
 
@@ -127,18 +127,18 @@ class LowLevelFields_ViewTests {
   public then_CustomTreeRowField_has_1_rows (  ) {
     let actualRows: LowLevelFields_ViewModelCustomTreeRowFieldRow [] = this.sut.getCustomTreeRowFieldTreeRows (  );
 
-    AssertEqualWithMessage ( 1, actualRows->size (  ), "Expected that tree view CustomTreeRowField has 1 rows, but has " + actualRows->size (  ) );
+    AssertEqualWithMessage ( 1, actualRows->size (  ), "Expected that tree view CustomTreeRowField has 1 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
       let row0: LowLevelFields_ViewModelCustomTreeRowFieldRow = actualRows[ 1 ];
 
       AssertEqualWithMessage ( "9", row0.getRowHandle (  ), "Expected that tree view CustomTreeRowField row at index 0 has rowhandle <9>, but was <" + row0.getRowHandle (  ) + ">" );
 
-      AssertEqualWithMessage ( 0, row0.getRowDepth (  ), "Expected that tree view CustomTreeRowField row at index 0 has parent rowhandle <" + 0 + ">, but was <" + row0.getRowDepth (  ) + ">" );
+      AssertEqualWithMessage ( 0, row0.getRowDepth (  ), "Expected that tree view CustomTreeRowField row at index 0 has parent rowhandle <" + IntegerFunctions:: ToString ( 0 ) + ">, but was <" + IntegerFunctions:: ToString ( row0.getRowDepth (  ) ) + ">" );
 
       AssertEqualWithMessage ( "", row0.getHeaderLabelText (  ), "Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText (  ) + ">" );
 
-      AssertEqualWithMessage ( 42, row0.getAdditionalInt (  ), "Expected field 'AdditionalInt' has value <" + 42 + ">, but it was <" + row0.getAdditionalInt (  ) + ">" );
+      AssertEqualWithMessage ( 42, row0.getAdditionalInt (  ), "Expected field 'AdditionalInt' has numeric value <42>, but it was <" + IntegerFunctions:: ToString ( row0.getAdditionalInt (  ) ) + ">" );
 
     }
 

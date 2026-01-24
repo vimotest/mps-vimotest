@@ -5,7 +5,7 @@ using widgetassertions;
 
 namespace widgetassertions
 {
-    internal abstract class TreeViews_ViewModelTestEnvironment
+    public abstract class TreeViews_ViewModelTestEnvironment
     {
         public abstract void Init();
 

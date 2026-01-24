@@ -9,6 +9,7 @@ import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.widgetassertions.Labels_ViewModelTestEnvironmentImpl;
 import org.junit.Assert;
 import java.util.List;
+import wrappers.javaWrappers.IntegerFunctions;
 
 public class Labels_ViewTest_Test {
   private Labels_ViewModel sut;
@@ -78,22 +79,22 @@ public class Labels_ViewTest_Test {
 
   public void then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible() {
     Assert.assertEquals("Expected that label Test has text <" + "My Expectation Text" + ">, but was <" + this.sut.getTestLabelText() + ">", "My Expectation Text", this.sut.getTestLabelText());
-    Assert.assertTrue(this.sut.getIsTestLabelEnabled());
-    Assert.assertTrue(this.sut.getIsTestLabelVisible());
+    Assert.assertTrue("Expected label Test is enabled, but it was disabled", this.sut.getIsTestLabelEnabled());
+    Assert.assertTrue("Expected label Test is visible, but it was hidden", this.sut.getIsTestLabelVisible());
   }
   public void then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible() {
     Assert.assertEquals("Expected that label Test has text <" + "My Expectation Text" + ">, but was <" + this.sut.getTestLabelText() + ">", "My Expectation Text", this.sut.getTestLabelText());
-    Assert.assertFalse(this.sut.getIsTestLabelEnabled());
-    Assert.assertTrue(this.sut.getIsTestLabelVisible());
+    Assert.assertFalse("Expected label Test is disabled, but it was enabled", this.sut.getIsTestLabelEnabled());
+    Assert.assertTrue("Expected label Test is visible, but it was hidden", this.sut.getIsTestLabelVisible());
   }
   public void then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible() {
     Assert.assertEquals("Expected that label Test has text <" + "My Expectation Text" + ">, but was <" + this.sut.getTestLabelText() + ">", "My Expectation Text", this.sut.getTestLabelText());
-    Assert.assertTrue(this.sut.getIsTestLabelEnabled());
-    Assert.assertFalse(this.sut.getIsTestLabelVisible());
+    Assert.assertTrue("Expected label Test is enabled, but it was disabled", this.sut.getIsTestLabelEnabled());
+    Assert.assertFalse("Expected label Test is hidden, but it was visible", this.sut.getIsTestLabelVisible());
   }
   public void then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_() {
     List<String> actualMultiLineLines = this.sut.getMultiLineLabelText();
-    Assert.assertEquals("Expected that label MultiLine has text with 2 lines, but has " + actualMultiLineLines.size(), Integer.valueOf(2), Integer.valueOf(actualMultiLineLines.size()));
+    Assert.assertEquals("Expected that label MultiLine has text with 2 lines, but has " + IntegerFunctions.ToString(actualMultiLineLines.size()), Integer.valueOf(2), Integer.valueOf(actualMultiLineLines.size()));
     Assert.assertEquals("Expected that label MultiLine has text line at index 0 matching <" + "Expected Line 1" + ">, but was <" + actualMultiLineLines.get(1 - 1) + ">", "Expected Line 1", actualMultiLineLines.get(1 - 1));
     Assert.assertEquals("Expected that label MultiLine has text line at index 1 matching <" + "Expected Line 2" + ">, but was <" + actualMultiLineLines.get(2 - 1) + ">", "Expected Line 2", actualMultiLineLines.get(2 - 1));
   }
@@ -104,7 +105,7 @@ public class Labels_ViewTest_Test {
   public void then_WithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_() {
     Assert.assertEquals("Expected that label WithMultiLineToolTip has text <" + "Info" + ">, but was <" + this.sut.getWithMultiLineToolTipLabelText() + ">", "Info", this.sut.getWithMultiLineToolTipLabelText());
     List<String> actualWithMultiLineToolTipLines = this.sut.getWithMultiLineToolTipLabelToolTip();
-    Assert.assertEquals("Expected that label WithMultiLineToolTip has tooltip with 2 lines, but has " + actualWithMultiLineToolTipLines.size(), Integer.valueOf(2), Integer.valueOf(actualWithMultiLineToolTipLines.size()));
+    Assert.assertEquals("Expected that label WithMultiLineToolTip has tooltip with 2 lines, but has " + IntegerFunctions.ToString(actualWithMultiLineToolTipLines.size()), Integer.valueOf(2), Integer.valueOf(actualWithMultiLineToolTipLines.size()));
     Assert.assertEquals("Expected that label WithMultiLineToolTip has tooltip line at index 0 matching <" + "Line1" + ">, but was <" + actualWithMultiLineToolTipLines.get(1 - 1) + ">", "Line1", actualWithMultiLineToolTipLines.get(1 - 1));
     Assert.assertEquals("Expected that label WithMultiLineToolTip has tooltip line at index 1 matching <" + "Line2" + ">, but was <" + actualWithMultiLineToolTipLines.get(2 - 1) + ">", "Line2", actualWithMultiLineToolTipLines.get(2 - 1));
   }

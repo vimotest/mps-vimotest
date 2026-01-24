@@ -5,7 +5,7 @@ using widgetassertions;
 
 namespace widgetassertions
 {
-    internal abstract class Labels_ViewModelTestEnvironment
+    public abstract class Labels_ViewModelTestEnvironment
     {
         public abstract void Init();
 

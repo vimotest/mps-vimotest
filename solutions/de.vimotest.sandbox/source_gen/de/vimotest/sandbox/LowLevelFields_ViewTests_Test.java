@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewModelTestEnvironmentImpl;
 import org.junit.Assert;
+import wrappers.javaWrappers.IntegerFunctions;
 import java.util.List;
 import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewModelCustomListRowFieldRow;
 import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewModelCustomTableRowFieldRow;
@@ -54,10 +55,10 @@ public class LowLevelFields_ViewTests_Test {
 
 
   public void then_MyBool_is_true() {
-    Assert.assertTrue(this.sut.getMyBool());
+    Assert.assertTrue("Expected field 'MyBool' has boolean value <true>, but it was <" + ((this.sut.getMyBool() ? "true" : "false")) + ">", this.sut.getMyBool());
   }
   public void then_MyInt_is_42() {
-    Assert.assertEquals("Expected field 'MyInt' has value <" + 42 + ">, but it was <" + this.sut.getMyInt() + ">", Integer.valueOf(this.sut.getMyInt()), this.sut.getMyInt());
+    Assert.assertEquals("Expected field 'MyInt' has numeric value <42>, but it was <" + IntegerFunctions.ToString(this.sut.getMyInt()) + ">", Integer.valueOf(this.sut.getMyInt()), this.sut.getMyInt());
   }
   public void then_MyString_is_text_() {
     Assert.assertEquals("Expected field 'MyString' has value <" + "text" + ">, but it was <" + this.sut.getMyString() + ">", "text", this.sut.getMyString());
@@ -69,7 +70,7 @@ public class LowLevelFields_ViewTests_Test {
   }
   public void then_CustomListRowField_has_1_rows() {
     List<LowLevelFields_ViewModelCustomListRowFieldRow> actualRows = this.sut.getCustomListRowFieldListRows();
-    Assert.assertEquals("Expected that list view CustomListRowField has 1 rows, but has " + actualRows.size(), Integer.valueOf(1), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that list view CustomListRowField has 1 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(1), Integer.valueOf(actualRows.size()));
     // {
     LowLevelFields_ViewModelCustomListRowFieldRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that list view CustomListRowField row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">", "0", row0.getRowHandle());
@@ -80,23 +81,23 @@ public class LowLevelFields_ViewTests_Test {
   }
   public void then_CustomTableRowField_has_1_rows() {
     List<LowLevelFields_ViewModelCustomTableRowFieldRow> actualRows = this.sut.getCustomTableRowFieldTableRows();
-    Assert.assertEquals("Expected that table view CustomTableRowField has 1 rows, but has " + actualRows.size(), Integer.valueOf(1), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view CustomTableRowField has 1 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(1), Integer.valueOf(actualRows.size()));
     // {
     LowLevelFields_ViewModelCustomTableRowFieldRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that table view CustomTableRowField row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">", "0", row0.getRowHandle());
     Assert.assertEquals("Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText() + ">", "", row0.getHeaderLabelText());
-    Assert.assertFalse(row0.getAdditionalBool());
+    Assert.assertFalse("Expected field 'AdditionalBool' has boolean value <false>, but it was <" + ((row0.getAdditionalBool() ? "true" : "false")) + ">", row0.getAdditionalBool());
     // }
   }
   public void then_CustomTreeRowField_has_1_rows() {
     List<LowLevelFields_ViewModelCustomTreeRowFieldRow> actualRows = this.sut.getCustomTreeRowFieldTreeRows();
-    Assert.assertEquals("Expected that tree view CustomTreeRowField has 1 rows, but has " + actualRows.size(), Integer.valueOf(1), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that tree view CustomTreeRowField has 1 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(1), Integer.valueOf(actualRows.size()));
     // {
     LowLevelFields_ViewModelCustomTreeRowFieldRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that tree view CustomTreeRowField row at index 0 has rowhandle <9>, but was <" + row0.getRowHandle() + ">", "9", row0.getRowHandle());
-    Assert.assertEquals("Expected that tree view CustomTreeRowField row at index 0 has parent rowhandle <" + 0 + ">, but was <" + row0.getRowDepth() + ">", Integer.valueOf(row0.getRowDepth()), row0.getRowDepth());
+    Assert.assertEquals("Expected that tree view CustomTreeRowField row at index 0 has parent rowhandle <" + IntegerFunctions.ToString(0) + ">, but was <" + IntegerFunctions.ToString(row0.getRowDepth()) + ">", Integer.valueOf(row0.getRowDepth()), row0.getRowDepth());
     Assert.assertEquals("Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText() + ">", "", row0.getHeaderLabelText());
-    Assert.assertEquals("Expected field 'AdditionalInt' has value <" + 42 + ">, but it was <" + row0.getAdditionalInt() + ">", Integer.valueOf(row0.getAdditionalInt()), row0.getAdditionalInt());
+    Assert.assertEquals("Expected field 'AdditionalInt' has numeric value <42>, but it was <" + IntegerFunctions.ToString(row0.getAdditionalInt()) + ">", Integer.valueOf(row0.getAdditionalInt()), row0.getAdditionalInt());
     // }
   }
 }

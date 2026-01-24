@@ -55,7 +55,7 @@ public class CheckBoxes_ViewTest
 
     public virtual void then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_()
     {
-        Assert.IsTrue(this.sut.getIsMyFlagWithLabelCheckBoxChecked(), "Expected that checkbox MyFlagWithLabel is checked, but was <" + this.sut.getIsMyFlagWithLabelCheckBoxChecked() + ">");
+        Assert.IsTrue(this.sut.getIsMyFlagWithLabelCheckBoxChecked(), "Expected that checkbox MyFlagWithLabel is checked, but was <" + (this.sut.getIsMyFlagWithLabelCheckBoxChecked() ? "checked" : "unchecked") + ">");
         Assert.IsTrue(this.sut.getIsMyFlagWithLabelCheckBoxEnabled(), "Expected checkbox MyFlagWithLabel is enabled, but it was disabled");
         Assert.IsTrue(this.sut.getIsMyFlagWithLabelCheckBoxVisible(), "Expected checkbox MyFlagWithLabel is visible, but it was hidden");
         Assert.AreEqual("My Label", this.sut.getMyFlagWithLabelCheckBoxText(), "Expected that checkbox MyFlagWithLabel has text <" + "My Label" + ">, but was <" + this.sut.getMyFlagWithLabelCheckBoxText() + ">");
@@ -63,34 +63,37 @@ public class CheckBoxes_ViewTest
 
     public virtual void then_MyFlagNoLabel_is_not_checked()
     {
-        Assert.IsFalse(this.sut.getIsMyFlagNoLabelCheckBoxChecked(), "Expected that checkbox MyFlagNoLabel is unchecked, but was <" + this.sut.getIsMyFlagNoLabelCheckBoxChecked() + ">");
+        Assert.IsFalse(this.sut.getIsMyFlagNoLabelCheckBoxChecked(), "Expected that checkbox MyFlagNoLabel is unchecked, but was <" + (this.sut.getIsMyFlagNoLabelCheckBoxChecked() ? "checked" : "unchecked") + ">");
     }
 
     public virtual void then_MyFlagTriState_is_mixed()
     {
-        Assert.AreEqual(null, this.sut.getIsMyFlagTriStateCheckBoxChecked(), "Expected that checkbox MyFlagTriState is indeterminate (null), but was <" + this.sut.getIsMyFlagTriStateCheckBoxChecked() + ">");
+        string actualCheckValue = (this.sut.getIsMyFlagTriStateCheckBoxChecked() == true) ? "checked" : ((this.sut.getIsMyFlagTriStateCheckBoxChecked() == false) ? "unchecked" : "indeterminate (null)");
+        Assert.AreEqual(null, this.sut.getIsMyFlagTriStateCheckBoxChecked(), "Expected that checkbox MyFlagTriState is indeterminate (null), but was <" + actualCheckValue + ">");
     }
 
     public virtual void then_MyFlagTriState_is_checked()
     {
-        Assert.IsTrue(this.sut.getIsMyFlagTriStateCheckBoxChecked(), "Expected that checkbox MyFlagTriState is checked, but was <" + this.sut.getIsMyFlagTriStateCheckBoxChecked() + ">");
+        string actualCheckValue_1 = (this.sut.getIsMyFlagTriStateCheckBoxChecked() == true) ? "checked" : ((this.sut.getIsMyFlagTriStateCheckBoxChecked() == false) ? "unchecked" : "indeterminate (null)");
+        Assert.IsTrue(this.sut.getIsMyFlagTriStateCheckBoxChecked(), "Expected that checkbox MyFlagTriState is checked, but was <" + actualCheckValue_1 + ">");
     }
 
     public virtual void then_MyFlagTriState_is_not_checked()
     {
-        Assert.IsFalse(this.sut.getIsMyFlagTriStateCheckBoxChecked(), "Expected that checkbox MyFlagTriState is unchecked, but was <" + this.sut.getIsMyFlagTriStateCheckBoxChecked() + ">");
+        string actualCheckValue_2 = (this.sut.getIsMyFlagTriStateCheckBoxChecked() == true) ? "checked" : ((this.sut.getIsMyFlagTriStateCheckBoxChecked() == false) ? "unchecked" : "indeterminate (null)");
+        Assert.IsFalse(this.sut.getIsMyFlagTriStateCheckBoxChecked(), "Expected that checkbox MyFlagTriState is unchecked, but was <" + actualCheckValue_2 + ">");
     }
 
     public virtual void then_MyFlagWithLabel_is_checked_and_is_not_enabled_and_shows_text_value_()
     {
-        Assert.IsTrue(this.sut.getIsMyFlagWithLabelCheckBoxChecked(), "Expected that checkbox MyFlagWithLabel is checked, but was <" + this.sut.getIsMyFlagWithLabelCheckBoxChecked() + ">");
+        Assert.IsTrue(this.sut.getIsMyFlagWithLabelCheckBoxChecked(), "Expected that checkbox MyFlagWithLabel is checked, but was <" + (this.sut.getIsMyFlagWithLabelCheckBoxChecked() ? "checked" : "unchecked") + ">");
         Assert.IsFalse(this.sut.getIsMyFlagWithLabelCheckBoxEnabled(), "Expected checkbox MyFlagWithLabel is disabled, but it was enabled");
         Assert.AreEqual("value", this.sut.getMyFlagWithLabelCheckBoxText(), "Expected that checkbox MyFlagWithLabel has text <" + "value" + ">, but was <" + this.sut.getMyFlagWithLabelCheckBoxText() + ">");
     }
 
     public virtual void then_MyFlagWithLabel_is_checked_and_is_not_visible_and_shows_text_test_()
     {
-        Assert.IsTrue(this.sut.getIsMyFlagWithLabelCheckBoxChecked(), "Expected that checkbox MyFlagWithLabel is checked, but was <" + this.sut.getIsMyFlagWithLabelCheckBoxChecked() + ">");
+        Assert.IsTrue(this.sut.getIsMyFlagWithLabelCheckBoxChecked(), "Expected that checkbox MyFlagWithLabel is checked, but was <" + (this.sut.getIsMyFlagWithLabelCheckBoxChecked() ? "checked" : "unchecked") + ">");
         Assert.IsFalse(this.sut.getIsMyFlagWithLabelCheckBoxVisible(), "Expected checkbox MyFlagWithLabel is hidden, but it was visible");
         Assert.AreEqual("test", this.sut.getMyFlagWithLabelCheckBoxText(), "Expected that checkbox MyFlagWithLabel has text <" + "test" + ">, but was <" + this.sut.getMyFlagWithLabelCheckBoxText() + ">");
     }

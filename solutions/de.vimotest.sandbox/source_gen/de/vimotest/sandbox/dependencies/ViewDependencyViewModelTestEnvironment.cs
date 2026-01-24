@@ -5,7 +5,7 @@ using dependencies;
 
 namespace dependencies
 {
-    internal abstract class ViewDependencyViewModelTestEnvironment
+    public abstract class ViewDependencyViewModelTestEnvironment
     {
         public abstract void Init();
 

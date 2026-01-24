@@ -4,6 +4,14 @@ task buildCsharpSandboxProject(type: Exec) {
     group 'vimotest-sandbox'
     description 'Build C# Sandbox Programs'
 
+    doFirst {
+        def csFiles = fileTree(sandboxCsharpProjectDir) {
+            include '**/*.cs'
+        }
+        println "=== Kompiliere ${csFiles.files.size()} C#-Dateien ==="
+        csFiles.files.sort().each { println "  $it.name" }
+    }
+
     commandLine 'dotnet', 'build', 'Sandbox.sln'
     workingDir sandboxCsharpProjectDir
 }

@@ -5,7 +5,7 @@ using widgetassertions;
 
 namespace widgetassertions
 {
-    internal class TextBoxes_ViewModelTestEnvironmentImpl : widgetassertions.TextBoxes_ViewModelTestEnvironment
+    public class TextBoxes_ViewModelTestEnvironmentImpl : widgetassertions.TextBoxes_ViewModelTestEnvironment
     {
         public override void Init()
         {

@@ -6,7 +6,7 @@ using dependencies;
 
 namespace dependencies.calls
 {
-    internal abstract class VerifyDependencyCallViewModelTestEnvironment
+    public abstract class VerifyDependencyCallViewModelTestEnvironment
     {
         public abstract void Init();
 

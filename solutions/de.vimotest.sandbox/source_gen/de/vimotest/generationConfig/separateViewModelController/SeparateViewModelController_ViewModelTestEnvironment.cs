@@ -1,7 +1,7 @@
 /// <filename>
 ///     SeparateViewModelController_ViewModelTestEnvironment.cs
 /// </filename>
-internal abstract class SeparateViewModelController_ViewModelTestEnvironment
+public abstract class SeparateViewModelController_ViewModelTestEnvironment
 {
     public abstract void Init();
 

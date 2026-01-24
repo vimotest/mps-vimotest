@@ -1,5 +1,8 @@
 <Project>  
   <ItemGroup>    
+    <Compile Include="$(MSBuildThisFileDirectory)commands/ConvertMyOptionsToString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ConvertOptionsToString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/ConvertMyEnumToString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ListViews_ViewModelMyListOfLabelRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ListViews_ViewModelMyListOfImagesRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ListViews_ViewModelMyCheckboxesRow.cs" />

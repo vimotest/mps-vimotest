@@ -1609,5 +1609,12 @@
       <ref role="20lvS9" to="evry:F907haLIRL" resolve="IStructContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6gitVznp5aL">
+    <property role="EcuMT" value="7210957589144949425" />
+    <property role="3GE5qa" value="test.assert.util" />
+    <property role="TrG5h" value="EmptySequenceExpression" />
+    <property role="34LRSv" value="empty sequence" />
+    <ref role="1TJDcQ" to="28lk:2kuSLC0kNK2" resolve="Expression" />
+  </node>
 </model>
 

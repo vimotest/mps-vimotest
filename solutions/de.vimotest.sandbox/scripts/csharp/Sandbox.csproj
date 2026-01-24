@@ -5,6 +5,7 @@
     <RootNamespace>ViMoTest.Sandbox</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <NoWarn>$(NoWarn);CS0162;CS8603;CS8618;CS0649</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>

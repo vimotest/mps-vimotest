@@ -5,7 +5,7 @@ using de.vimotest.examples.loginview;
 
 namespace de.vimotest.examples.loginview
 {
-    internal class LoginViewModelTestEnvironmentImpl : de.vimotest.examples.loginview.LoginViewModelTestEnvironment
+    public class LoginViewModelTestEnvironmentImpl : de.vimotest.examples.loginview.LoginViewModelTestEnvironment
     {
         public override void Init()
         {

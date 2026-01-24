@@ -1,7 +1,7 @@
 /// <filename>
 ///     ParameterObjectCommand_ViewModelTestEnvironment.cs
 /// </filename>
-internal abstract class ParameterObjectCommand_ViewModelTestEnvironment
+public abstract class ParameterObjectCommand_ViewModelTestEnvironment
 {
     public abstract void Init();
 

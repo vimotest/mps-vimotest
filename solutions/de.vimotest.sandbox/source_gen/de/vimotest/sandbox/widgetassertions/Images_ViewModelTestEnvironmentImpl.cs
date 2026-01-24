@@ -5,7 +5,7 @@ using widgetassertions;
 
 namespace widgetassertions
 {
-    internal class Images_ViewModelTestEnvironmentImpl : widgetassertions.Images_ViewModelTestEnvironment
+    public class Images_ViewModelTestEnvironmentImpl : widgetassertions.Images_ViewModelTestEnvironment
     {
         public override void Init()
         {

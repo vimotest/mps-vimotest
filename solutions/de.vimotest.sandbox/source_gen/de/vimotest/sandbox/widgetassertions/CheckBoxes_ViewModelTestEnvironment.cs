@@ -5,7 +5,7 @@ using widgetassertions;
 
 namespace widgetassertions
 {
-    internal abstract class CheckBoxes_ViewModelTestEnvironment
+    public abstract class CheckBoxes_ViewModelTestEnvironment
     {
         public abstract void Init();
 

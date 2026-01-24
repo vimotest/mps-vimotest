@@ -5,7 +5,7 @@ using widgetassertions;
 
 namespace widgetassertions
 {
-    internal class Buttons_ViewModelTestEnvironmentImpl : widgetassertions.Buttons_ViewModelTestEnvironment
+    public class Buttons_ViewModelTestEnvironmentImpl : widgetassertions.Buttons_ViewModelTestEnvironment
     {
         public override void Init()
         {

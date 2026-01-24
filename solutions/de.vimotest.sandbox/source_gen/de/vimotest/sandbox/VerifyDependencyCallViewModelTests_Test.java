@@ -9,6 +9,7 @@ import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.dependencies.calls.VerifyDependencyCallViewModelTestEnvironmentImpl;
 import de.vimotest.sandbox.dependencies.LoggerSpy;
 import org.junit.Assert;
+import wrappers.javaWrappers.IntegerFunctions;
 
 public class VerifyDependencyCallViewModelTests_Test {
   private VerifyDependencyCallViewModel sut;
@@ -53,32 +54,32 @@ public class VerifyDependencyCallViewModelTests_Test {
 
   public void then_call_Logger_Log_any_() {
     LoggerSpy spy = this.testEnvironment.getLogger();
-    Assert.assertEquals("Expected that Logger.Log was called exactly 1 times, but was " + spy.LogCallInfos.size(), Integer.valueOf(1), Integer.valueOf(spy.LogCallInfos.size()));
+    Assert.assertEquals("Expected that Logger.Log was called exactly 1 times, but was " + IntegerFunctions.ToString(spy.LogCallInfos.size()), Integer.valueOf(1), Integer.valueOf(spy.LogCallInfos.size()));
   }
   public void then_call_Logger_Log___() {
     LoggerSpy spy = this.testEnvironment.getLogger();
     for (int callInfoIndex = 0; callInfoIndex <= spy.LogCallInfos.size(); callInfoIndex++) {
       LoggerSpy.LogCallInfo callInfo = spy.LogCallInfos.get(callInfoIndex - 1);
-      Assert.assertEquals("Logger.Log Call[" + callInfoIndex + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">", "my log", callInfo.messageValue);
+      Assert.assertEquals("Logger.Log Call[" + IntegerFunctions.ToString(callInfoIndex) + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">", "my log", callInfo.messageValue);
     }
-    Assert.assertEquals("Expected that Logger.Log was called exactly 1 times, but was " + spy.LogCallInfos.size(), Integer.valueOf(1), Integer.valueOf(spy.LogCallInfos.size()));
+    Assert.assertEquals("Expected that Logger.Log was called exactly 1 times, but was " + IntegerFunctions.ToString(spy.LogCallInfos.size()), Integer.valueOf(1), Integer.valueOf(spy.LogCallInfos.size()));
   }
   public void then_call_Logger_Log____1() {
     LoggerSpy spy = this.testEnvironment.getLogger();
     if (3 < spy.LogCallInfos.size()) {
       LoggerSpy.LogCallInfo callInfo = spy.LogCallInfos.get(3 - 1);
-      Assert.assertEquals("Logger.Log Call[" + 3 + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">", "my log", callInfo.messageValue);
+      Assert.assertEquals("Logger.Log Call[" + IntegerFunctions.ToString(3) + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">", "my log", callInfo.messageValue);
     } else {
-      Assert.assertTrue("Expected a call to Logger.Log at index [3], but it was only called " + spy.LogCallInfos.size() + " times", false);
+      Assert.assertTrue("Expected a call to Logger.Log at index [3], but it was only called " + IntegerFunctions.ToString(spy.LogCallInfos.size()) + " times", false);
     }
   }
   public void then_call_Logger_Log____2() {
     LoggerSpy spy = this.testEnvironment.getLogger();
     for (int callInfoIndex = 0; callInfoIndex <= spy.LogCallInfos.size(); callInfoIndex++) {
       LoggerSpy.LogCallInfo callInfo = spy.LogCallInfos.get(callInfoIndex - 1);
-      Assert.assertEquals("Logger.Log Call[" + callInfoIndex + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">", "my log", callInfo.messageValue);
+      Assert.assertEquals("Logger.Log Call[" + IntegerFunctions.ToString(callInfoIndex) + "]: Expected argument value 'message' is <" + "my log" + "> but was <" + callInfo.messageValue + ">", "my log", callInfo.messageValue);
     }
-    Assert.assertTrue("Expected that Logger.Log was called at least 3 times, but was " + spy.LogCallInfos.size(), spy.LogCallInfos.size() >= 3);
-    Assert.assertTrue("Expected that Logger.Log was called at most 6 times, but was " + spy.LogCallInfos.size(), spy.LogCallInfos.size() <= 6);
+    Assert.assertTrue("Expected that Logger.Log was called at least 3 times, but was " + IntegerFunctions.ToString(spy.LogCallInfos.size()), spy.LogCallInfos.size() >= 3);
+    Assert.assertTrue("Expected that Logger.Log was called at most 6 times, but was " + IntegerFunctions.ToString(spy.LogCallInfos.size()), spy.LogCallInfos.size() <= 6);
   }
 }

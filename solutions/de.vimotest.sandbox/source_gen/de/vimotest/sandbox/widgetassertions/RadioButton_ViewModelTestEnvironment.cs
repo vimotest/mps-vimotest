@@ -5,7 +5,7 @@ using widgetassertions;
 
 namespace widgetassertions
 {
-    internal abstract class RadioButton_ViewModelTestEnvironment
+    public abstract class RadioButton_ViewModelTestEnvironment
     {
         public abstract void Init();
 

@@ -3,7 +3,7 @@
 /// </filename>
 namespace dependencies
 {
-    internal interface ViewDependencyView
+    public interface ViewDependencyView
     {
         void Foo();
     }

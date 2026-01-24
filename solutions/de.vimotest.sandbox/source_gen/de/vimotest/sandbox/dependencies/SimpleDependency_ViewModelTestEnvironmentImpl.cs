@@ -5,7 +5,7 @@ using dependencies;
 
 namespace dependencies
 {
-    internal class SimpleDependency_ViewModelTestEnvironmentImpl : dependencies.SimpleDependency_ViewModelTestEnvironment
+    public class SimpleDependency_ViewModelTestEnvironmentImpl : dependencies.SimpleDependency_ViewModelTestEnvironment
     {
         public override void Init()
         {

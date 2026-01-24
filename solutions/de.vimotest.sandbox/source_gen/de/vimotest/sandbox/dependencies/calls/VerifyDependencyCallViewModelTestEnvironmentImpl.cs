@@ -6,7 +6,7 @@ using dependencies;
 
 namespace dependencies.calls
 {
-    internal class VerifyDependencyCallViewModelTestEnvironmentImpl : dependencies.calls.VerifyDependencyCallViewModelTestEnvironment
+    public class VerifyDependencyCallViewModelTestEnvironmentImpl : dependencies.calls.VerifyDependencyCallViewModelTestEnvironment
     {
         public override void Init()
         {

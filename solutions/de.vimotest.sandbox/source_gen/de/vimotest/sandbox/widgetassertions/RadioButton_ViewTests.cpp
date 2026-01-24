@@ -2,6 +2,7 @@
 #include <memory>
 #include "RadioButton_ViewModelTestEnvironment.h"
 #include <string>
+#include "convertOptionsToString.hpp"
 #include "RadioButton_ViewModel.h"
 #include "RadioButton_ViewModelOptionsOption.h"
 #include "RadioButton_ViewModelTestEnvironmentImpl.h"
@@ -46,16 +47,16 @@ namespace widgetassertions
   }
   void RadioButton_ViewTests::then_Options_selected_OptionB_()
   {
-    ASSERT_EQ(widgetassertions::RadioButton_ViewModelOptionsOption::OptionB, this->sut->getOptionsRadioButtonGroupSelectedEntry()) << std::string("Expected that radio button group Options has selected <") + widgetassertions::RadioButton_ViewModelOptionsOption::OptionB + std::string(">, but was <") + this->sut->getOptionsRadioButtonGroupSelectedEntry() + std::string(">");
+    EXPECT_EQ(widgetassertions::RadioButton_ViewModelOptionsOption::OptionB, this->sut->getOptionsRadioButtonGroupSelectedEntry()) << std::string("Expected that radio button group Options has selected <") + std::string("OptionB") + std::string(">, but was <") + widgetassertions::convertOptionsToString(this->sut->getOptionsRadioButtonGroupSelectedEntry()) + std::string(">");
   }
   void RadioButton_ViewTests::then_Options_selected_OptionA_and_OptionB_is_not_enabled()
   {
-    ASSERT_EQ(widgetassertions::RadioButton_ViewModelOptionsOption::OptionA, this->sut->getOptionsRadioButtonGroupSelectedEntry()) << std::string("Expected that radio button group Options has selected <") + widgetassertions::RadioButton_ViewModelOptionsOption::OptionA + std::string(">, but was <") + this->sut->getOptionsRadioButtonGroupSelectedEntry() + std::string(">");
-    EXPECT_FALSE(this->sut->getIsOptionBRadioButtonEnabled(), std::string("Expected radio button OptionB is disabled, but it was enabled"));
+    EXPECT_EQ(widgetassertions::RadioButton_ViewModelOptionsOption::OptionA, this->sut->getOptionsRadioButtonGroupSelectedEntry()) << std::string("Expected that radio button group Options has selected <") + std::string("OptionA") + std::string(">, but was <") + widgetassertions::convertOptionsToString(this->sut->getOptionsRadioButtonGroupSelectedEntry()) + std::string(">");
+    EXPECT_FALSE(this->sut->getIsOptionBRadioButtonEnabled()) << std::string("Expected radio button OptionB is disabled, but it was enabled");
   }
   void RadioButton_ViewTests::then_Options_selected_OptionA_and_OptionB_is_not_visible()
   {
-    ASSERT_EQ(widgetassertions::RadioButton_ViewModelOptionsOption::OptionA, this->sut->getOptionsRadioButtonGroupSelectedEntry()) << std::string("Expected that radio button group Options has selected <") + widgetassertions::RadioButton_ViewModelOptionsOption::OptionA + std::string(">, but was <") + this->sut->getOptionsRadioButtonGroupSelectedEntry() + std::string(">");
-    EXPECT_FALSE(this->sut->getIsOptionBRadioButtonVisible(), std::string("Expected radio button OptionB is hidden, but it was visible"));
+    EXPECT_EQ(widgetassertions::RadioButton_ViewModelOptionsOption::OptionA, this->sut->getOptionsRadioButtonGroupSelectedEntry()) << std::string("Expected that radio button group Options has selected <") + std::string("OptionA") + std::string(">, but was <") + widgetassertions::convertOptionsToString(this->sut->getOptionsRadioButtonGroupSelectedEntry()) + std::string(">");
+    EXPECT_FALSE(this->sut->getIsOptionBRadioButtonVisible()) << std::string("Expected radio button OptionB is hidden, but it was visible");
   }
 }

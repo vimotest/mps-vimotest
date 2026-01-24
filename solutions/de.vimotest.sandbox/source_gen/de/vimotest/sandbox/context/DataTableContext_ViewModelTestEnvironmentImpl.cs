@@ -5,7 +5,7 @@ using context;
 
 namespace context
 {
-    internal class DataTableContext_ViewModelTestEnvironmentImpl : context.DataTableContext_ViewModelTestEnvironment
+    public class DataTableContext_ViewModelTestEnvironmentImpl : context.DataTableContext_ViewModelTestEnvironment
     {
         public override void Init()
         {

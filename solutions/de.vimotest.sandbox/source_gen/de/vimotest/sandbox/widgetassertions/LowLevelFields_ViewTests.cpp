@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
 #include <memory>
 #include "LowLevelFields_ViewModelTestEnvironment.h"
-#include "LowLevelFields_ViewModel.h"
 #include <string>
+#include "LowLevelFields_ViewModel.h"
 #include <vector>
 #include "LowLevelFields_ViewModelCustomListRowFieldRow.h"
 #include "LowLevelFields_ViewModelCustomTableRowFieldRow.h"
@@ -57,55 +57,55 @@ namespace widgetassertions
   }
   void LowLevelFields_ViewTests::then_MyBool_is_true()
   {
-    EXPECT_TRUE(this->sut->getMyBool(), std::string("Expected field 'MyBool' has value <true>, but it was <") + this->sut->getMyBool() + std::string(">"));
+    EXPECT_TRUE(this->sut->getMyBool()) << std::string("Expected field 'MyBool' has boolean value <true>, but it was <") + (this->sut->getMyBool() ? std::string("true") : std::string("false")) + std::string(">");
   }
   void LowLevelFields_ViewTests::then_MyInt_is_42()
   {
-    ASSERT_EQ(42, this->sut->getMyInt()) << std::string("Expected field 'MyInt' has value <") + 42 + std::string(">, but it was <") + this->sut->getMyInt() + std::string(">");
+    EXPECT_EQ(42, this->sut->getMyInt()) << std::string("Expected field 'MyInt' has numeric value <42>, but it was <") + std::to_string(this->sut->getMyInt()) + std::string(">");
   }
   void LowLevelFields_ViewTests::then_MyString_is_text_()
   {
-    ASSERT_EQ(std::string("text"), this->sut->getMyString()) << std::string("Expected field 'MyString' has value <") + std::string("text") + std::string(">, but it was <") + this->sut->getMyString() + std::string(">");
+    EXPECT_EQ(std::string("text"), this->sut->getMyString()) << std::string("Expected field 'MyString' has value <") + std::string("text") + std::string(">, but it was <") + this->sut->getMyString() + std::string(">");
   }
   void LowLevelFields_ViewTests::then_MyStrings_is_new_String____A___B__()
   {
-    auto& actualMyStrings = this->sut->getMyStrings();
-    ASSERT_EQ(std::string("A"), actualMyStrings.at(0)) << std::string("Expected field 'MyStrings[0]' has value <") + std::string("A") + std::string(">, but it was <") + actualMyStrings.at(0) + std::string(">");
-    ASSERT_EQ(std::string("B"), actualMyStrings.at(1)) << std::string("Expected field 'MyStrings[1]' has value <") + std::string("B") + std::string(">, but it was <") + actualMyStrings.at(1) + std::string(">");
+    auto actualMyStrings = this->sut->getMyStrings();
+    EXPECT_EQ(std::string("A"), actualMyStrings.at(0)) << std::string("Expected field 'MyStrings[0]' has value <") + std::string("A") + std::string(">, but it was <") + actualMyStrings.at(0) + std::string(">");
+    EXPECT_EQ(std::string("B"), actualMyStrings.at(1)) << std::string("Expected field 'MyStrings[1]' has value <") + std::string("B") + std::string(">, but it was <") + actualMyStrings.at(1) + std::string(">");
   }
   void LowLevelFields_ViewTests::then_CustomListRowField_has_1_rows()
   {
-    auto& actualRows = this->sut->getCustomListRowFieldListRows();
-    ASSERT_EQ(1, actualRows.size()) << std::string("Expected that list view CustomListRowField has 1 rows, but has ") + actualRows.size();
+    auto actualRows = this->sut->getCustomListRowFieldListRows();
+    EXPECT_EQ(1, actualRows.size()) << std::string("Expected that list view CustomListRowField has 1 rows, but has ") + std::to_string(actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
-    ASSERT_EQ(std::string("0"), row0->getRowHandle()) << std::string("Expected that list view CustomListRowField row at index 0 has rowhandle <0>, but was <") + row0->getRowHandle() + std::string(">");
-    ASSERT_EQ(std::string(""), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
-    auto& actualAdditionalStrings = row0->getAdditionalStrings();
-    ASSERT_EQ(std::string("A"), actualAdditionalStrings.at(0)) << std::string("Expected field 'AdditionalStrings[0]' has value <") + std::string("A") + std::string(">, but it was <") + actualAdditionalStrings.at(0) + std::string(">");
+    EXPECT_EQ(std::string("0"), row0->getRowHandle()) << std::string("Expected that list view CustomListRowField row at index 0 has rowhandle <0>, but was <") + row0->getRowHandle() + std::string(">");
+    EXPECT_EQ(std::string(""), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
+    auto actualAdditionalStrings = row0->getAdditionalStrings();
+    EXPECT_EQ(std::string("A"), actualAdditionalStrings.at(0)) << std::string("Expected field 'AdditionalStrings[0]' has value <") + std::string("A") + std::string(">, but it was <") + actualAdditionalStrings.at(0) + std::string(">");
     // }
   }
   void LowLevelFields_ViewTests::then_CustomTableRowField_has_1_rows()
   {
-    auto& actualRows = this->sut->getCustomTableRowFieldTableRows();
-    ASSERT_EQ(1, actualRows.size()) << std::string("Expected that table view CustomTableRowField has 1 rows, but has ") + actualRows.size();
+    auto actualRows = this->sut->getCustomTableRowFieldTableRows();
+    EXPECT_EQ(1, actualRows.size()) << std::string("Expected that table view CustomTableRowField has 1 rows, but has ") + std::to_string(actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
-    ASSERT_EQ(std::string("0"), row0->getRowHandle()) << std::string("Expected that table view CustomTableRowField row at index 0 has rowhandle <0>, but was <") + row0->getRowHandle() + std::string(">");
-    ASSERT_EQ(std::string(""), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
-    EXPECT_FALSE(row0->getAdditionalBool(), std::string("Expected field 'AdditionalBool' has value <false>, but it was <") + row0->getAdditionalBool() + std::string(">"));
+    EXPECT_EQ(std::string("0"), row0->getRowHandle()) << std::string("Expected that table view CustomTableRowField row at index 0 has rowhandle <0>, but was <") + row0->getRowHandle() + std::string(">");
+    EXPECT_EQ(std::string(""), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
+    EXPECT_FALSE(row0->getAdditionalBool()) << std::string("Expected field 'AdditionalBool' has boolean value <false>, but it was <") + (row0->getAdditionalBool() ? std::string("true") : std::string("false")) + std::string(">");
     // }
   }
   void LowLevelFields_ViewTests::then_CustomTreeRowField_has_1_rows()
   {
-    auto& actualRows = this->sut->getCustomTreeRowFieldTreeRows();
-    ASSERT_EQ(1, actualRows.size()) << std::string("Expected that tree view CustomTreeRowField has 1 rows, but has ") + actualRows.size();
+    auto actualRows = this->sut->getCustomTreeRowFieldTreeRows();
+    EXPECT_EQ(1, actualRows.size()) << std::string("Expected that tree view CustomTreeRowField has 1 rows, but has ") + std::to_string(actualRows.size());
     // {
     auto& row0 = actualRows.at(0);
-    ASSERT_EQ(std::string("9"), row0->getRowHandle()) << std::string("Expected that tree view CustomTreeRowField row at index 0 has rowhandle <9>, but was <") + row0->getRowHandle() + std::string(">");
-    ASSERT_EQ(0, row0->getRowDepth()) << std::string("Expected that tree view CustomTreeRowField row at index 0 has parent rowhandle <") + 0 + std::string(">, but was <") + row0->getRowDepth() + std::string(">");
-    ASSERT_EQ(std::string(""), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
-    ASSERT_EQ(42, row0->getAdditionalInt()) << std::string("Expected field 'AdditionalInt' has value <") + 42 + std::string(">, but it was <") + row0->getAdditionalInt() + std::string(">");
+    EXPECT_EQ(std::string("9"), row0->getRowHandle()) << std::string("Expected that tree view CustomTreeRowField row at index 0 has rowhandle <9>, but was <") + row0->getRowHandle() + std::string(">");
+    EXPECT_EQ(0, row0->getRowDepth()) << std::string("Expected that tree view CustomTreeRowField row at index 0 has parent rowhandle <") + std::to_string(0) + std::string(">, but was <") + std::to_string(row0->getRowDepth()) + std::string(">");
+    EXPECT_EQ(std::string(""), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
+    EXPECT_EQ(42, row0->getAdditionalInt()) << std::string("Expected field 'AdditionalInt' has numeric value <42>, but it was <") + std::to_string(row0->getAdditionalInt()) + std::string(">");
     // }
   }
 }

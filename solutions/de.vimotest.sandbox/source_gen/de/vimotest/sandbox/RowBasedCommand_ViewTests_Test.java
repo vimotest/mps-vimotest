@@ -10,6 +10,7 @@ import de.vimotest.sandbox.commands.RowBasedCommand_ViewModelTestEnvironmentImpl
 import java.util.List;
 import de.vimotest.sandbox.commands.RowBasedCommand_ViewModelMyFlagsRow;
 import org.junit.Assert;
+import wrappers.javaWrappers.IntegerFunctions;
 import de.vimotest.sandbox.commands.RowBasedCommand_ViewModelMyComboBoxesRow;
 import de.vimotest.sandbox.commands.RowBasedCommand_ViewModelMyStandardControlsRow;
 
@@ -87,63 +88,63 @@ public class RowBasedCommand_ViewTests_Test {
 
   public void then_MyFlags_has_2_rows() {
     List<RowBasedCommand_ViewModelMyFlagsRow> actualRows = this.sut.getMyFlagsListRows();
-    Assert.assertEquals("Expected that list view MyFlags has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that list view MyFlags has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     RowBasedCommand_ViewModelMyFlagsRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals("Expected that list view MyFlags row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
-    Assert.assertTrue(row0.getIsCheckboxesCheckBoxChecked());
+    Assert.assertEquals("Expected that list view MyFlags row at index 0 has rowhandle <0>, but was <" + IntegerFunctions.ToString(row0.getRowIndex()) + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
+    Assert.assertTrue("Expected that checkbox Checkboxes is checked, but was <" + ((row0.getIsCheckboxesCheckBoxChecked() ? "checked" : "unchecked")) + ">", row0.getIsCheckboxesCheckBoxChecked());
     // }
     // {
     RowBasedCommand_ViewModelMyFlagsRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals("Expected that list view MyFlags row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
-    Assert.assertFalse(row1.getIsCheckboxesCheckBoxChecked());
+    Assert.assertEquals("Expected that list view MyFlags row at index 1 has rowhandle <1>, but was <" + IntegerFunctions.ToString(row1.getRowIndex()) + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
+    Assert.assertFalse("Expected that checkbox Checkboxes is unchecked, but was <" + ((row1.getIsCheckboxesCheckBoxChecked() ? "checked" : "unchecked")) + ">", row1.getIsCheckboxesCheckBoxChecked());
     // }
   }
   public void then_MyComboBoxes_has_2_rows() {
     List<RowBasedCommand_ViewModelMyComboBoxesRow> actualRows = this.sut.getMyComboBoxesTableRows();
-    Assert.assertEquals("Expected that table view MyComboBoxes has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that table view MyComboBoxes has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     RowBasedCommand_ViewModelMyComboBoxesRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals("Expected that table view MyComboBoxes row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
+    Assert.assertEquals("Expected that table view MyComboBoxes row at index 0 has rowhandle <0>, but was <" + IntegerFunctions.ToString(row0.getRowIndex()) + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
     List<String> actualRow0FreeTextComboBoxesEntries = row0.getFreeTextComboBoxesComboBoxEntries();
-    Assert.assertEquals("Expected that combobox FreeTextComboBoxes has 0 entries, but has " + actualRow0FreeTextComboBoxesEntries.size(), Integer.valueOf(0), Integer.valueOf(actualRow0FreeTextComboBoxesEntries.size()));
-    Assert.assertEquals("Expected that combobox FreeTextComboBoxes has " + "no selection" + ", but was <" + row0.getFreeTextComboBoxesComboBoxSelectedEntry() + ">", null, row0.getFreeTextComboBoxesComboBoxSelectedEntry());
+    Assert.assertEquals("Expected that combobox FreeTextComboBoxes has 0 entries, but has " + IntegerFunctions.ToString(actualRow0FreeTextComboBoxesEntries.size()), Integer.valueOf(0), Integer.valueOf(actualRow0FreeTextComboBoxesEntries.size()));
+    Assert.assertEquals("Expected that combobox FreeTextComboBoxes has " + "no selection" + ", but was <" + row0.getFreeTextComboBoxesComboBoxSelectedEntry() + ">", "", row0.getFreeTextComboBoxesComboBoxSelectedEntry());
     Assert.assertEquals("Expected that combobox FreeTextComboBoxes has text <" + "MyText1" + ">, but was <" + row0.getFreeTextComboBoxesComboBoxText() + ">", "MyText1", row0.getFreeTextComboBoxesComboBoxText());
     List<String> actualRow0EntryComboBoxesEntries = row0.getEntryComboBoxesComboBoxEntries();
-    Assert.assertEquals("Expected that combobox EntryComboBoxes has 3 entries, but has " + actualRow0EntryComboBoxesEntries.size(), Integer.valueOf(3), Integer.valueOf(actualRow0EntryComboBoxesEntries.size()));
+    Assert.assertEquals("Expected that combobox EntryComboBoxes has 3 entries, but has " + IntegerFunctions.ToString(actualRow0EntryComboBoxesEntries.size()), Integer.valueOf(3), Integer.valueOf(actualRow0EntryComboBoxesEntries.size()));
     Assert.assertEquals("Expected that combobox EntryComboBoxes has entry at index 0 matching <" + "A" + ">, but was <" + actualRow0EntryComboBoxesEntries.get(1 - 1) + ">", "A", actualRow0EntryComboBoxesEntries.get(1 - 1));
     Assert.assertEquals("Expected that combobox EntryComboBoxes has entry at index 1 matching <" + "B" + ">, but was <" + actualRow0EntryComboBoxesEntries.get(2 - 1) + ">", "B", actualRow0EntryComboBoxesEntries.get(2 - 1));
     Assert.assertEquals("Expected that combobox EntryComboBoxes has entry at index 2 matching <" + "C" + ">, but was <" + actualRow0EntryComboBoxesEntries.get(3 - 1) + ">", "C", actualRow0EntryComboBoxesEntries.get(3 - 1));
-    Assert.assertEquals("Expected that combobox EntryComboBoxes has " + "no selection" + ", but was <" + row0.getEntryComboBoxesComboBoxSelectedEntry() + ">", null, row0.getEntryComboBoxesComboBoxSelectedEntry());
+    Assert.assertEquals("Expected that combobox EntryComboBoxes has " + "no selection" + ", but was <" + row0.getEntryComboBoxesComboBoxSelectedEntry() + ">", "", row0.getEntryComboBoxesComboBoxSelectedEntry());
     // }
     // {
     RowBasedCommand_ViewModelMyComboBoxesRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals("Expected that table view MyComboBoxes row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
+    Assert.assertEquals("Expected that table view MyComboBoxes row at index 1 has rowhandle <1>, but was <" + IntegerFunctions.ToString(row1.getRowIndex()) + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
     List<String> actualRow1FreeTextComboBoxesEntries = row1.getFreeTextComboBoxesComboBoxEntries();
-    Assert.assertEquals("Expected that combobox FreeTextComboBoxes has 0 entries, but has " + actualRow1FreeTextComboBoxesEntries.size(), Integer.valueOf(0), Integer.valueOf(actualRow1FreeTextComboBoxesEntries.size()));
-    Assert.assertEquals("Expected that combobox FreeTextComboBoxes has " + "no selection" + ", but was <" + row1.getFreeTextComboBoxesComboBoxSelectedEntry() + ">", null, row1.getFreeTextComboBoxesComboBoxSelectedEntry());
+    Assert.assertEquals("Expected that combobox FreeTextComboBoxes has 0 entries, but has " + IntegerFunctions.ToString(actualRow1FreeTextComboBoxesEntries.size()), Integer.valueOf(0), Integer.valueOf(actualRow1FreeTextComboBoxesEntries.size()));
+    Assert.assertEquals("Expected that combobox FreeTextComboBoxes has " + "no selection" + ", but was <" + row1.getFreeTextComboBoxesComboBoxSelectedEntry() + ">", "", row1.getFreeTextComboBoxesComboBoxSelectedEntry());
     Assert.assertEquals("Expected that combobox FreeTextComboBoxes has text <" + "MyText2" + ">, but was <" + row1.getFreeTextComboBoxesComboBoxText() + ">", "MyText2", row1.getFreeTextComboBoxesComboBoxText());
     List<String> actualRow1EntryComboBoxesEntries = row1.getEntryComboBoxesComboBoxEntries();
-    Assert.assertEquals("Expected that combobox EntryComboBoxes has 3 entries, but has " + actualRow1EntryComboBoxesEntries.size(), Integer.valueOf(3), Integer.valueOf(actualRow1EntryComboBoxesEntries.size()));
+    Assert.assertEquals("Expected that combobox EntryComboBoxes has 3 entries, but has " + IntegerFunctions.ToString(actualRow1EntryComboBoxesEntries.size()), Integer.valueOf(3), Integer.valueOf(actualRow1EntryComboBoxesEntries.size()));
     Assert.assertEquals("Expected that combobox EntryComboBoxes has entry at index 0 matching <" + "D" + ">, but was <" + actualRow1EntryComboBoxesEntries.get(1 - 1) + ">", "D", actualRow1EntryComboBoxesEntries.get(1 - 1));
     Assert.assertEquals("Expected that combobox EntryComboBoxes has entry at index 1 matching <" + "E" + ">, but was <" + actualRow1EntryComboBoxesEntries.get(2 - 1) + ">", "E", actualRow1EntryComboBoxesEntries.get(2 - 1));
     Assert.assertEquals("Expected that combobox EntryComboBoxes has entry at index 2 matching <" + "F" + ">, but was <" + actualRow1EntryComboBoxesEntries.get(3 - 1) + ">", "F", actualRow1EntryComboBoxesEntries.get(3 - 1));
-    Assert.assertEquals("Expected that combobox EntryComboBoxes has " + "no selection" + ", but was <" + row1.getEntryComboBoxesComboBoxSelectedEntry() + ">", null, row1.getEntryComboBoxesComboBoxSelectedEntry());
+    Assert.assertEquals("Expected that combobox EntryComboBoxes has " + "no selection" + ", but was <" + row1.getEntryComboBoxesComboBoxSelectedEntry() + ">", "", row1.getEntryComboBoxesComboBoxSelectedEntry());
     // }
   }
   public void then_MyStandardControls_has_2_rows() {
     List<RowBasedCommand_ViewModelMyStandardControlsRow> actualRows = this.sut.getMyStandardControlsTreeRows();
-    Assert.assertEquals("Expected that tree view MyStandardControls has 2 rows, but has " + actualRows.size(), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that tree view MyStandardControls has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     RowBasedCommand_ViewModelMyStandardControlsRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals("Expected that tree view MyStandardControls row at index 0 has rowhandle <0>, but was <" + row0.getRowIndex() + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
-    Assert.assertEquals("Expected that tree view MyStandardControls row at index 0 has parent rowhandle <" + 0 + ">, but was <" + row0.getRowDepth() + ">", Integer.valueOf(row0.getRowDepth()), row0.getRowDepth());
+    Assert.assertEquals("Expected that tree view MyStandardControls row at index 0 has rowhandle <0>, but was <" + IntegerFunctions.ToString(row0.getRowIndex()) + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
+    Assert.assertEquals("Expected that tree view MyStandardControls row at index 0 has parent rowhandle <" + IntegerFunctions.ToString(0) + ">, but was <" + IntegerFunctions.ToString(row0.getRowDepth()) + ">", Integer.valueOf(row0.getRowDepth()), row0.getRowDepth());
     Assert.assertEquals("Expected that textbox TextBoxes has text <" + "A" + ">, but was <" + row0.getTextBoxesTextBoxText() + ">", "A", row0.getTextBoxesTextBoxText());
     // }
     // {
     RowBasedCommand_ViewModelMyStandardControlsRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals("Expected that tree view MyStandardControls row at index 1 has rowhandle <1>, but was <" + row1.getRowIndex() + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
-    Assert.assertEquals("Expected that tree view MyStandardControls row at index 1 has parent rowhandle <" + 0 + ">, but was <" + row1.getRowDepth() + ">", Integer.valueOf(row1.getRowDepth()), row1.getRowDepth());
+    Assert.assertEquals("Expected that tree view MyStandardControls row at index 1 has rowhandle <1>, but was <" + IntegerFunctions.ToString(row1.getRowIndex()) + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
+    Assert.assertEquals("Expected that tree view MyStandardControls row at index 1 has parent rowhandle <" + IntegerFunctions.ToString(0) + ">, but was <" + IntegerFunctions.ToString(row1.getRowDepth()) + ">", Integer.valueOf(row1.getRowDepth()), row1.getRowDepth());
     Assert.assertEquals("Expected that textbox TextBoxes has text <" + "B" + ">, but was <" + row1.getTextBoxesTextBoxText() + ">", "B", row1.getTextBoxesTextBoxText());
     // }
   }

@@ -5,7 +5,7 @@ using commands;
 
 namespace commands
 {
-    internal class SelectEntryCommand_ViewModelTestEnvironmentImpl : commands.SelectEntryCommand_ViewModelTestEnvironment
+    public class SelectEntryCommand_ViewModelTestEnvironmentImpl : commands.SelectEntryCommand_ViewModelTestEnvironment
     {
         public override void Init()
         {

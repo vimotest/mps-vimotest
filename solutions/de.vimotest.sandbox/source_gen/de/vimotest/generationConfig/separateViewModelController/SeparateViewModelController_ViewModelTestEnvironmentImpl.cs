@@ -1,7 +1,7 @@
 /// <filename>
 ///     SeparateViewModelController_ViewModelTestEnvironmentImpl.cs
 /// </filename>
-internal class SeparateViewModelController_ViewModelTestEnvironmentImpl : SeparateViewModelController_ViewModelTestEnvironment
+public class SeparateViewModelController_ViewModelTestEnvironmentImpl : SeparateViewModelController_ViewModelTestEnvironment
 {
     public override void Init()
     {

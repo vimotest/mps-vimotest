@@ -1,0 +1,14 @@
+namespace datadriven ;
+
+
+
+class DataDrivenViewModelTestEnvironmentImpl specializes DataDrivenViewModelTestEnvironment {
+  
+  public Init (  ) {    
+  }
+  
+  public BuildSut (  ) : DataDrivenViewModel  {
+    return null;
+
+  }
+}

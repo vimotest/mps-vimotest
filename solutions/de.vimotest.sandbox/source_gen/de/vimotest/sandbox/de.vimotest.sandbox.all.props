@@ -22,6 +22,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)commands/RowBasedCommand_ViewModelMyComboBoxesRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)bindings/ViMoTestFileNameBindingMyElementsRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/LowLevelFields_ViewModelCustomTableRowFieldRow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)datadriven/DataDrivenViewModelResultRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/TreeViews_ViewModelMyTreeViewElementsRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/TreeViews_ViewModelMyStringRowHandlesRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/TreeViews_ViewModelMyParentIndexRowHandlesRow.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/subscope/RepeatUsageDependency_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/calls/VerifyDependencyCallViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/ViewDependencyViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)datadriven/DataDrivenViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/MessageBus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/Logger.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/subscope/MessageBus.cs" />
@@ -157,6 +159,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/ViewDependencyViewModelTestEnvironment.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/ViewDependencyViewModelTestEnvironmentImpl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/ViewDependencyViewModelTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)datadriven/DataDrivenViewModelTestEnvironment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)datadriven/DataDrivenViewModelTestEnvironmentImpl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)datadriven/DataDrivenTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/StringContext2_ViewTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests.cs" />

@@ -9,7 +9,6 @@ import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.widgetassertions.TextBoxes_ViewModelTestEnvironmentImpl;
 import org.junit.Assert;
 import java.util.List;
-import wrappers.javaWrappers.IntegerFunctions;
 
 public class TextBoxes_ViewTest_Test {
   private TextBoxes_ViewModel sut;
@@ -75,7 +74,7 @@ public class TextBoxes_ViewTest_Test {
   }
   public void then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_() {
     List<String> actualMultiLineTextBoxValueLines = this.sut.getMultiLineTextBoxValueTextBoxText();
-    Assert.assertEquals("Expected that textbox MultiLineTextBoxValue has text with 2 lines, but has " + IntegerFunctions.ToString(actualMultiLineTextBoxValueLines.size()), Integer.valueOf(2), Integer.valueOf(actualMultiLineTextBoxValueLines.size()));
+    Assert.assertEquals("Expected that textbox MultiLineTextBoxValue has text with 2 lines, but has " + Integer.toString(actualMultiLineTextBoxValueLines.size()), Integer.valueOf(2), Integer.valueOf(actualMultiLineTextBoxValueLines.size()));
     Assert.assertEquals("Expected that textbox MultiLineTextBoxValue has text line at index 0 matching <" + "Expected1" + ">, but was <" + actualMultiLineTextBoxValueLines.get(1 - 1) + ">", "Expected1", actualMultiLineTextBoxValueLines.get(1 - 1));
     Assert.assertEquals("Expected that textbox MultiLineTextBoxValue has text line at index 1 matching <" + "Expected2" + ">, but was <" + actualMultiLineTextBoxValueLines.get(2 - 1) + ">", "Expected2", actualMultiLineTextBoxValueLines.get(2 - 1));
   }

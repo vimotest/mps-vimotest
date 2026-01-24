@@ -10,7 +10,6 @@ import de.vimotest.sandbox.widgetassertions.TreeViews_ViewModelTestEnvironmentIm
 import java.util.List;
 import de.vimotest.sandbox.widgetassertions.TreeViews_ViewModelMyTreeViewElementsRow;
 import org.junit.Assert;
-import wrappers.javaWrappers.IntegerFunctions;
 import de.vimotest.sandbox.widgetassertions.TreeViews_ViewModelMyStringRowHandlesRow;
 import de.vimotest.sandbox.widgetassertions.TreeViews_ViewModelMyParentIndexRowHandlesRow;
 import de.vimotest.sandbox.widgetassertions.TreeViews_ViewModelMyParentStringRowHandlesRow;
@@ -55,11 +54,11 @@ public class TreeViews_ViewTest_Test {
 
   public void then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible() {
     List<TreeViews_ViewModelMyTreeViewElementsRow> actualRows = this.sut.getMyTreeViewElementsTreeRows();
-    Assert.assertEquals("Expected that tree view MyTreeViewElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that tree view MyTreeViewElements has 2 rows, but has " + Integer.toString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TreeViews_ViewModelMyTreeViewElementsRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <" + IntegerFunctions.ToString(row0.getRowIndex()) + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
-    Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 0 has parent rowhandle <" + IntegerFunctions.ToString(0) + ">, but was <" + IntegerFunctions.ToString(row0.getRowDepth()) + ">", Integer.valueOf(row0.getRowDepth()), row0.getRowDepth());
+    Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <" + Integer.toString(row0.getRowIndex()) + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
+    Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 0 has parent rowhandle <" + Integer.toString(0) + ">, but was <" + Integer.toString(row0.getRowDepth()) + ">", Integer.valueOf(row0.getRowDepth()), row0.getRowDepth());
     Assert.assertTrue("Expected that checkbox Include is checked, but was <" + ((row0.getIsIncludeCheckBoxChecked() ? "checked" : "unchecked")) + ">", row0.getIsIncludeCheckBoxChecked());
     Assert.assertEquals("Expected that label Name has text <" + "A" + ">, but was <" + row0.getNameLabelText() + ">", "A", row0.getNameLabelText());
     Assert.assertEquals("Expected that label Description has text <" + "B" + ">, but was <" + row0.getDescriptionLabelText() + ">", "B", row0.getDescriptionLabelText());
@@ -67,66 +66,66 @@ public class TreeViews_ViewTest_Test {
     // }
     // {
     TreeViews_ViewModelMyTreeViewElementsRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 1 has rowhandle <1>, but was <" + IntegerFunctions.ToString(row1.getRowIndex()) + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
-    Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 1 has parent rowhandle <" + IntegerFunctions.ToString(1) + ">, but was <" + IntegerFunctions.ToString(row1.getRowDepth()) + ">", Integer.valueOf(row1.getRowDepth()), row1.getRowDepth());
+    Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 1 has rowhandle <1>, but was <" + Integer.toString(row1.getRowIndex()) + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
+    Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 1 has parent rowhandle <" + Integer.toString(1) + ">, but was <" + Integer.toString(row1.getRowDepth()) + ">", Integer.valueOf(row1.getRowDepth()), row1.getRowDepth());
     Assert.assertFalse("Expected that checkbox Include is unchecked, but was <" + ((row1.getIsIncludeCheckBoxChecked() ? "checked" : "unchecked")) + ">", row1.getIsIncludeCheckBoxChecked());
     Assert.assertEquals("Expected that label Name has text <" + "C" + ">, but was <" + row1.getNameLabelText() + ">", "C", row1.getNameLabelText());
     Assert.assertEquals("Expected that label Description has text <" + "D" + ">, but was <" + row1.getDescriptionLabelText() + ">", "D", row1.getDescriptionLabelText());
     Assert.assertEquals("Expected that image Info has " + "image <image_circle>" + ", but was <" + row1.getInfoImageName() + ">", "image_circle", row1.getInfoImageName());
     // }
-    Assert.assertEquals("Expected that tree view MyTreeViewElements has selected row with row handle <" + IntegerFunctions.ToString(1) + ">, but was <" + IntegerFunctions.ToString(this.sut.getMyTreeViewElementsTreeSelectedRow()) + ">", Integer.valueOf(this.sut.getMyTreeViewElementsTreeSelectedRow()), this.sut.getMyTreeViewElementsTreeSelectedRow());
+    Assert.assertEquals("Expected that tree view MyTreeViewElements has selected row with row handle <" + Integer.toString(1) + ">, but was <" + Integer.toString(this.sut.getMyTreeViewElementsTreeSelectedRow()) + ">", Integer.valueOf(this.sut.getMyTreeViewElementsTreeSelectedRow()), this.sut.getMyTreeViewElementsTreeSelectedRow());
     Assert.assertTrue("Expected tree view MyTreeViewElements is enabled, but it was disabled", this.sut.getIsMyTreeViewElementsTreeEnabled());
     Assert.assertTrue("Expected tree view MyTreeViewElements is visible, but it was hidden", this.sut.getIsMyTreeViewElementsTreeVisible());
     Assert.assertFalse("Expected tree column Description is hidden, but it was visible", this.sut.getIsMyTreeViewElementsTreeDescriptionColumnVisible());
   }
   public void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() {
     List<TreeViews_ViewModelMyStringRowHandlesRow> actualRows = this.sut.getMyStringRowHandlesTreeRows();
-    Assert.assertEquals("Expected that tree view MyStringRowHandles has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that tree view MyStringRowHandles has 2 rows, but has " + Integer.toString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TreeViews_ViewModelMyStringRowHandlesRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that tree view MyStringRowHandles row at index 0 has rowhandle <ROW0>, but was <" + row0.getRowHandle() + ">", "ROW0", row0.getRowHandle());
-    Assert.assertEquals("Expected that tree view MyStringRowHandles row at index 0 has parent rowhandle <" + IntegerFunctions.ToString(0) + ">, but was <" + IntegerFunctions.ToString(row0.getRowDepth()) + ">", Integer.valueOf(row0.getRowDepth()), row0.getRowDepth());
+    Assert.assertEquals("Expected that tree view MyStringRowHandles row at index 0 has parent rowhandle <" + Integer.toString(0) + ">, but was <" + Integer.toString(row0.getRowDepth()) + ">", Integer.valueOf(row0.getRowDepth()), row0.getRowDepth());
     Assert.assertEquals("Expected that label Values has text <" + "A" + ">, but was <" + row0.getValuesLabelText() + ">", "A", row0.getValuesLabelText());
     // }
     // {
     TreeViews_ViewModelMyStringRowHandlesRow row1 = actualRows.get(2 - 1);
     Assert.assertEquals("Expected that tree view MyStringRowHandles row at index 1 has rowhandle <ROW1>, but was <" + row1.getRowHandle() + ">", "ROW1", row1.getRowHandle());
-    Assert.assertEquals("Expected that tree view MyStringRowHandles row at index 1 has parent rowhandle <" + IntegerFunctions.ToString(0) + ">, but was <" + IntegerFunctions.ToString(row1.getRowDepth()) + ">", Integer.valueOf(row1.getRowDepth()), row1.getRowDepth());
+    Assert.assertEquals("Expected that tree view MyStringRowHandles row at index 1 has parent rowhandle <" + Integer.toString(0) + ">, but was <" + Integer.toString(row1.getRowDepth()) + ">", Integer.valueOf(row1.getRowDepth()), row1.getRowDepth());
     Assert.assertEquals("Expected that label Values has text <" + "B" + ">, but was <" + row1.getValuesLabelText() + ">", "B", row1.getValuesLabelText());
     // }
     Assert.assertEquals("Expected that tree view MyStringRowHandles has selected row with row handle <" + "ROW1" + ">, but was <" + this.sut.getMyStringRowHandlesTreeSelectedRow() + ">", "ROW1", this.sut.getMyStringRowHandlesTreeSelectedRow());
   }
   public void then_MyParentIndexRowHandles_has_4_rows() {
     List<TreeViews_ViewModelMyParentIndexRowHandlesRow> actualRows = this.sut.getMyParentIndexRowHandlesTreeRows();
-    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles has 4 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(4), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles has 4 rows, but has " + Integer.toString(actualRows.size()), Integer.valueOf(4), Integer.valueOf(actualRows.size()));
     // {
     TreeViews_ViewModelMyParentIndexRowHandlesRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles row at index 0 has rowhandle <0>, but was <" + IntegerFunctions.ToString(row0.getRowIndex()) + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
-    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles row at index 0 has parent rowhandle <" + IntegerFunctions.ToString(-1) + ">, but was <" + IntegerFunctions.ToString(row0.getParentRowIndex()) + ">", Integer.valueOf(row0.getParentRowIndex()), row0.getParentRowIndex());
+    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles row at index 0 has rowhandle <0>, but was <" + Integer.toString(row0.getRowIndex()) + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
+    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles row at index 0 has parent rowhandle <" + Integer.toString(-1) + ">, but was <" + Integer.toString(row0.getParentRowIndex()) + ">", Integer.valueOf(row0.getParentRowIndex()), row0.getParentRowIndex());
     Assert.assertEquals("Expected that label Values has text <" + "A" + ">, but was <" + row0.getValuesLabelText() + ">", "A", row0.getValuesLabelText());
     // }
     // {
     TreeViews_ViewModelMyParentIndexRowHandlesRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles row at index 1 has rowhandle <1>, but was <" + IntegerFunctions.ToString(row1.getRowIndex()) + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
-    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles row at index 1 has parent rowhandle <" + IntegerFunctions.ToString(0) + ">, but was <" + IntegerFunctions.ToString(row1.getParentRowIndex()) + ">", Integer.valueOf(row1.getParentRowIndex()), row1.getParentRowIndex());
+    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles row at index 1 has rowhandle <1>, but was <" + Integer.toString(row1.getRowIndex()) + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
+    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles row at index 1 has parent rowhandle <" + Integer.toString(0) + ">, but was <" + Integer.toString(row1.getParentRowIndex()) + ">", Integer.valueOf(row1.getParentRowIndex()), row1.getParentRowIndex());
     Assert.assertEquals("Expected that label Values has text <" + "A.B" + ">, but was <" + row1.getValuesLabelText() + ">", "A.B", row1.getValuesLabelText());
     // }
     // {
     TreeViews_ViewModelMyParentIndexRowHandlesRow row2 = actualRows.get(3 - 1);
-    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles row at index 2 has rowhandle <2>, but was <" + IntegerFunctions.ToString(row2.getRowIndex()) + ">", Integer.valueOf(row2.getRowIndex()), row2.getRowIndex());
-    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles row at index 2 has parent rowhandle <" + IntegerFunctions.ToString(-1) + ">, but was <" + IntegerFunctions.ToString(row2.getParentRowIndex()) + ">", Integer.valueOf(row2.getParentRowIndex()), row2.getParentRowIndex());
+    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles row at index 2 has rowhandle <2>, but was <" + Integer.toString(row2.getRowIndex()) + ">", Integer.valueOf(row2.getRowIndex()), row2.getRowIndex());
+    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles row at index 2 has parent rowhandle <" + Integer.toString(-1) + ">, but was <" + Integer.toString(row2.getParentRowIndex()) + ">", Integer.valueOf(row2.getParentRowIndex()), row2.getParentRowIndex());
     Assert.assertEquals("Expected that label Values has text <" + "C" + ">, but was <" + row2.getValuesLabelText() + ">", "C", row2.getValuesLabelText());
     // }
     // {
     TreeViews_ViewModelMyParentIndexRowHandlesRow row3 = actualRows.get(4 - 1);
-    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles row at index 3 has rowhandle <3>, but was <" + IntegerFunctions.ToString(row3.getRowIndex()) + ">", Integer.valueOf(row3.getRowIndex()), row3.getRowIndex());
-    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles row at index 3 has parent rowhandle <" + IntegerFunctions.ToString(2) + ">, but was <" + IntegerFunctions.ToString(row3.getParentRowIndex()) + ">", Integer.valueOf(row3.getParentRowIndex()), row3.getParentRowIndex());
+    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles row at index 3 has rowhandle <3>, but was <" + Integer.toString(row3.getRowIndex()) + ">", Integer.valueOf(row3.getRowIndex()), row3.getRowIndex());
+    Assert.assertEquals("Expected that tree view MyParentIndexRowHandles row at index 3 has parent rowhandle <" + Integer.toString(2) + ">, but was <" + Integer.toString(row3.getParentRowIndex()) + ">", Integer.valueOf(row3.getParentRowIndex()), row3.getParentRowIndex());
     Assert.assertEquals("Expected that label Values has text <" + "C.D" + ">, but was <" + row3.getValuesLabelText() + ">", "C.D", row3.getValuesLabelText());
     // }
   }
   public void then_MyParentStringRowHandles_has_4_rows() {
     List<TreeViews_ViewModelMyParentStringRowHandlesRow> actualRows = this.sut.getMyParentStringRowHandlesTreeRows();
-    Assert.assertEquals("Expected that tree view MyParentStringRowHandles has 4 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(4), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that tree view MyParentStringRowHandles has 4 rows, but has " + Integer.toString(actualRows.size()), Integer.valueOf(4), Integer.valueOf(actualRows.size()));
     // {
     TreeViews_ViewModelMyParentStringRowHandlesRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that tree view MyParentStringRowHandles row at index 0 has rowhandle <HANDLE_A>, but was <" + row0.getRowHandle() + ">", "HANDLE_A", row0.getRowHandle());
@@ -154,17 +153,17 @@ public class TreeViews_ViewTest_Test {
   }
   public void then_MyTreeViewElements_has_2_rows() {
     List<TreeViews_ViewModelMyTreeViewElementsRow> actualRows = this.sut.getMyTreeViewElementsTreeRows();
-    Assert.assertEquals("Expected that tree view MyTreeViewElements has 2 rows, but has " + IntegerFunctions.ToString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    Assert.assertEquals("Expected that tree view MyTreeViewElements has 2 rows, but has " + Integer.toString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
     TreeViews_ViewModelMyTreeViewElementsRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <" + IntegerFunctions.ToString(row0.getRowIndex()) + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
-    Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 0 has parent rowhandle <" + IntegerFunctions.ToString(0) + ">, but was <" + IntegerFunctions.ToString(row0.getRowDepth()) + ">", Integer.valueOf(row0.getRowDepth()), row0.getRowDepth());
+    Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 0 has rowhandle <0>, but was <" + Integer.toString(row0.getRowIndex()) + ">", Integer.valueOf(row0.getRowIndex()), row0.getRowIndex());
+    Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 0 has parent rowhandle <" + Integer.toString(0) + ">, but was <" + Integer.toString(row0.getRowDepth()) + ">", Integer.valueOf(row0.getRowDepth()), row0.getRowDepth());
     Assert.assertTrue("Expected that checkbox Include is checked, but was <" + ((row0.getIsIncludeCheckBoxChecked() ? "checked" : "unchecked")) + ">", row0.getIsIncludeCheckBoxChecked());
     // }
     // {
     TreeViews_ViewModelMyTreeViewElementsRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 1 has rowhandle <1>, but was <" + IntegerFunctions.ToString(row1.getRowIndex()) + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
-    Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 1 has parent rowhandle <" + IntegerFunctions.ToString(1) + ">, but was <" + IntegerFunctions.ToString(row1.getRowDepth()) + ">", Integer.valueOf(row1.getRowDepth()), row1.getRowDepth());
+    Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 1 has rowhandle <1>, but was <" + Integer.toString(row1.getRowIndex()) + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
+    Assert.assertEquals("Expected that tree view MyTreeViewElements row at index 1 has parent rowhandle <" + Integer.toString(1) + ">, but was <" + Integer.toString(row1.getRowDepth()) + ">", Integer.valueOf(row1.getRowDepth()), row1.getRowDepth());
     Assert.assertEquals("Expected that label Description has text <" + "D" + ">, but was <" + row1.getDescriptionLabelText() + ">", "D", row1.getDescriptionLabelText());
     // }
   }

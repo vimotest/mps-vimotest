@@ -10,7 +10,6 @@ import de.vimotest.sandbox.commands.SelectEntryCommand_ViewModelTestEnvironmentI
 import de.vimotest.sandbox.commands.SelectEntryCommand_ViewModelMyOptionsOption;
 import java.util.List;
 import org.junit.Assert;
-import wrappers.javaWrappers.IntegerFunctions;
 
 public class SelectEntryCommand_ViewTests_Test {
   private SelectEntryCommand_ViewModel sut;
@@ -52,7 +51,7 @@ public class SelectEntryCommand_ViewTests_Test {
 
   public void then_MyElements_has_3_entries_and() {
     List<String> actualMyElementsEntries = this.sut.getMyElementsComboBoxEntries();
-    Assert.assertEquals("Expected that combobox MyElements has 3 entries, but has " + IntegerFunctions.ToString(actualMyElementsEntries.size()), Integer.valueOf(3), Integer.valueOf(actualMyElementsEntries.size()));
+    Assert.assertEquals("Expected that combobox MyElements has 3 entries, but has " + Integer.toString(actualMyElementsEntries.size()), Integer.valueOf(3), Integer.valueOf(actualMyElementsEntries.size()));
     Assert.assertEquals("Expected that combobox MyElements has entry at index 0 matching <" + "A" + ">, but was <" + actualMyElementsEntries.get(1 - 1) + ">", "A", actualMyElementsEntries.get(1 - 1));
     Assert.assertEquals("Expected that combobox MyElements has entry at index 1 matching <" + "B" + ">, but was <" + actualMyElementsEntries.get(2 - 1) + ">", "B", actualMyElementsEntries.get(2 - 1));
     Assert.assertEquals("Expected that combobox MyElements has entry at index 2 matching <" + "C" + ">, but was <" + actualMyElementsEntries.get(3 - 1) + ">", "C", actualMyElementsEntries.get(3 - 1));

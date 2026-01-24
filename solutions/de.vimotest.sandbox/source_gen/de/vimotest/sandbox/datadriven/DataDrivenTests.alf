@@ -1,0 +1,40 @@
+namespace datadriven ;
+
+private import Testing ;
+
+class DataDrivenTests {
+  
+  private sut : DataDrivenViewModel  ;
+  
+  private testEnvironment : DataDrivenViewModelTestEnvironment  ;
+  
+  
+  protected BeforeTest (  ) {
+    this.testEnvironment = new DataDrivenViewModelTestEnvironmentImpl (  );
+
+    this.testEnvironment.Init (  );
+
+  }
+  
+  
+  public DataDrivenTable_given_when_then_ (  ) {
+    this.BuildSut (  );
+
+  }
+  
+  
+  protected BuildSut (  ) {
+    this.sut = this.testEnvironment.BuildSut (  );
+
+  }
+  
+  
+  // Given Helper Definitions
+
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+}

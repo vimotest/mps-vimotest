@@ -1,0 +1,10 @@
+namespace datadriven ;
+
+
+
+abstract class DataDrivenViewModelTestEnvironment {
+  
+  public abstract Init (  ) ;
+  
+  public abstract BuildSut (  ) : DataDrivenViewModel  ;
+}

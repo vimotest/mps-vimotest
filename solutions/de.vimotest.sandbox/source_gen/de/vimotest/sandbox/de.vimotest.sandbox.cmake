@@ -20,6 +20,7 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewModelMyComboBoxesRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/bindings/ViMoTestFileNameBindingMyElementsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewModelCustomTableRowFieldRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/datadriven/DataDrivenViewModelResultRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewModelMyTreeViewElementsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewModelMyStringRowHandlesRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewModelMyParentIndexRowHandlesRow.cpp
@@ -54,6 +55,7 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewModelDependency_ViewModel.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/subscope/RepeatUsageDependency_ViewModel.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/calls/VerifyDependencyCallViewModel.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/datadriven/DataDrivenViewModel.cpp
 )
 
 set(GENERATED_HEADERS
@@ -76,6 +78,7 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewModelMyComboBoxesRow.h
   ${CMAKE_CURRENT_LIST_DIR}/bindings/ViMoTestFileNameBindingMyElementsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewModelCustomTableRowFieldRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/datadriven/DataDrivenViewModelResultRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewModelMyTreeViewElementsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewModelMyStringRowHandlesRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TreeViews_ViewModelMyParentIndexRowHandlesRow.h
@@ -117,6 +120,7 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/subscope/RepeatUsageDependency_ViewModel.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/calls/VerifyDependencyCallViewModel.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewDependencyViewModel.h
+  ${CMAKE_CURRENT_LIST_DIR}/datadriven/DataDrivenViewModel.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/MessageBus.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/Logger.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/subscope/MessageBus.h

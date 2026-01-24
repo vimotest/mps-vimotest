@@ -1,0 +1,35 @@
+namespace datadriven ;
+
+
+
+
+public class DataDrivenViewModelResultRow {
+  
+  private NameLabelText : String  ;
+  
+  public getNameLabelText (  ) : String  {
+    return this.NameLabelText;
+
+  }
+  
+  private IdLabelText : String  ;
+  
+  public getIdLabelText (  ) : String  {
+    return this.IdLabelText;
+
+  }
+  
+  private DescriptionLabelText : String  ;
+  
+  public getDescriptionLabelText (  ) : String  {
+    return this.DescriptionLabelText;
+
+  }
+  
+  private RowHandle : String  ;
+  
+  public getRowHandle (  ) : String  {
+    return this.RowHandle;
+
+  }
+}

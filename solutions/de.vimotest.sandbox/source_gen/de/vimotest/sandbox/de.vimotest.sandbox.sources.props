@@ -22,6 +22,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)commands/RowBasedCommand_ViewModelMyComboBoxesRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)bindings/ViMoTestFileNameBindingMyElementsRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/LowLevelFields_ViewModelCustomTableRowFieldRow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)datadriven/DataDrivenViewModelResultRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/TreeViews_ViewModelMyTreeViewElementsRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/TreeViews_ViewModelMyStringRowHandlesRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/TreeViews_ViewModelMyParentIndexRowHandlesRow.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/subscope/RepeatUsageDependency_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/calls/VerifyDependencyCallViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/ViewDependencyViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)datadriven/DataDrivenViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/MessageBus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/Logger.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/subscope/MessageBus.cs" />

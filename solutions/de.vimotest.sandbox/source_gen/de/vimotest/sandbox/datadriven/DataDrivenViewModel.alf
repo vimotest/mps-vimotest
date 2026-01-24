@@ -1,0 +1,17 @@
+namespace datadriven ;
+
+
+
+
+public class DataDrivenViewModel {
+  
+  private ResultTableRows : DataDrivenViewModelResultRow [ * ]  ;
+  
+  public getResultTableRows (  ) : DataDrivenViewModelResultRow [ * ]  {
+    return this.ResultTableRows;
+
+  }
+  
+  public loadViewModel (  ) {    
+  }
+}

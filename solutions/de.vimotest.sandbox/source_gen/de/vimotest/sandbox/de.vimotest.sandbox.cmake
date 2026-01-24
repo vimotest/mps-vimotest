@@ -128,8 +128,10 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewModelMyOptionsOption.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewModelOptionsOption.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/MyEnum.h
+  ${CMAKE_CURRENT_LIST_DIR}/bindings/CustomTypeInfoEnum.h
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/convertMyEnumToString.hpp
+  ${CMAKE_CURRENT_LIST_DIR}/bindings/MyCustomTypeInfoEnumValuesFile.hpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/convertMyOptionsToString.hpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/convertOptionsToString.hpp
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/convertMyEnumToString.hpp
 )
 

@@ -115,14 +115,8 @@
     <node concept="PrWs8" id="2Yd1qrJOhxd" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="PrWs8" id="5jkMFwva9B3" role="PzmwI">
-      <ref role="PrY4T" to="evry:3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
-    </node>
-    <node concept="PrWs8" id="2N4oO4qvn7k" role="PzmwI">
-      <ref role="PrY4T" to="evry:2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
-    </node>
-    <node concept="PrWs8" id="5NBxLKrKJ2i" role="PzmwI">
-      <ref role="PrY4T" to="evry:3JF9X1LrZr1" resolve="IHasNamespace" />
+    <node concept="PrWs8" id="7VjLoWiMzky" role="PzmwI">
+      <ref role="PrY4T" to="evry:7VjLoWiMzkq" resolve="ICustomizableTypeInfo" />
     </node>
     <node concept="PrWs8" id="6fZwY6ifrMs" role="PzmwI">
       <ref role="PrY4T" to="at53:2ZnRpGqKU3p" resolve="ILinkedViewModelTest" />

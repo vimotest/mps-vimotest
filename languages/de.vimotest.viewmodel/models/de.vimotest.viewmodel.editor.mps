@@ -1187,7 +1187,7 @@
     <node concept="3EZMnI" id="3JF9X1LrZfI" role="6VMZX">
       <node concept="l2Vlx" id="3JF9X1LrZfJ" role="2iSdaV" />
       <node concept="PMmxH" id="3JF9X1LtDkJ" role="3EZMnx">
-        <ref role="PMmxG" to="dgt9:3JF9X1LtxCE" resolve="IHasNamespace_EC" />
+        <ref role="PMmxG" to="dgt9:3JF9X1LtxCE" resolve="ICanHaveNamespace_EC" />
       </node>
       <node concept="PMmxH" id="HXq1W42Hb8" role="3EZMnx">
         <ref role="PMmxG" node="HXq1W42mE2" resolve="IReferenceableDependency_supportsSpying_EC" />
@@ -5215,7 +5215,10 @@
         <property role="3F0ifm" value="--- Type Information" />
       </node>
       <node concept="PMmxH" id="1U5fKw6KYra" role="3EZMnx">
-        <ref role="PMmxG" to="dgt9:3JF9X1LtxCE" resolve="IHasNamespace_EC" />
+        <ref role="PMmxG" to="dgt9:3JF9X1LtxCE" resolve="ICanHaveNamespace_EC" />
+      </node>
+      <node concept="PMmxH" id="7VjLoWjumTM" role="3EZMnx">
+        <ref role="PMmxG" to="dgt9:7VjLoWjumTv" resolve="IEnumDefinition_customEnumToStringOperationInfo_EC" />
       </node>
     </node>
   </node>
@@ -5340,7 +5343,7 @@
     <node concept="3EZMnI" id="32SpZNJbbFx" role="6VMZX">
       <node concept="l2Vlx" id="32SpZNJbbFy" role="2iSdaV" />
       <node concept="PMmxH" id="32SpZNJbbFz" role="3EZMnx">
-        <ref role="PMmxG" to="dgt9:3JF9X1LtxCE" resolve="IHasNamespace_EC" />
+        <ref role="PMmxG" to="dgt9:3JF9X1LtxCE" resolve="ICanHaveNamespace_EC" />
       </node>
       <node concept="PMmxH" id="HXq1W42mEd" role="3EZMnx">
         <ref role="PMmxG" node="HXq1W42mE2" resolve="IReferenceableDependency_supportsSpying_EC" />
@@ -5747,7 +5750,7 @@
         <property role="3F0ifm" value="--- Type Information" />
       </node>
       <node concept="PMmxH" id="1U5fKw6KYxa" role="3EZMnx">
-        <ref role="PMmxG" to="dgt9:3JF9X1LtxCE" resolve="IHasNamespace_EC" />
+        <ref role="PMmxG" to="dgt9:3JF9X1LtxCE" resolve="ICanHaveNamespace_EC" />
         <node concept="pVoyu" id="1U5fKw6KYxb" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -5800,7 +5803,7 @@
     <node concept="3EZMnI" id="5cPWD10KMkQ" role="6VMZX">
       <node concept="l2Vlx" id="5cPWD10KMkR" role="2iSdaV" />
       <node concept="PMmxH" id="5cPWD10KMkS" role="3EZMnx">
-        <ref role="PMmxG" to="dgt9:3JF9X1LtxCE" resolve="IHasNamespace_EC" />
+        <ref role="PMmxG" to="dgt9:3JF9X1LtxCE" resolve="ICanHaveNamespace_EC" />
       </node>
       <node concept="PMmxH" id="5cPWD10KMkT" role="3EZMnx">
         <ref role="PMmxG" node="HXq1W42mE2" resolve="IReferenceableDependency_supportsSpying_EC" />

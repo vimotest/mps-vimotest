@@ -142,6 +142,9 @@
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
@@ -506,6 +509,42 @@
     <node concept="2YIFZL" id="4eI_fte4xq_" role="jymVt">
       <property role="TrG5h" value="getOperationNameForEnumToString" />
       <node concept="3clFbS" id="4eI_fte4xqC" role="3clF47">
+        <node concept="3clFbJ" id="7VjLoWjHgur" role="3cqZAp">
+          <node concept="3clFbS" id="7VjLoWjHgus" role="3clFbx">
+            <node concept="3cpWs6" id="7VjLoWjHgut" role="3cqZAp">
+              <node concept="2OqwBi" id="7VjLoWjHw2u" role="3cqZAk">
+                <node concept="2OqwBi" id="7VjLoWjHw2v" role="2Oq$k0">
+                  <node concept="37vLTw" id="7VjLoWjHw2w" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4eI_fte4xZu" resolve="enumTypeNode" />
+                  </node>
+                  <node concept="3TrEf2" id="7VjLoWjHw2x" role="2OqNvi">
+                    <ref role="3Tt5mk" to="evry:7VjLoWiMzkt" resolve="customEnumToStringOperationInfo" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="7VjLoWjHw2y" role="2OqNvi">
+                  <ref role="3TsBF5" to="evry:7VjLoWjHolL" resolve="customOperationName" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7VjLoWjHt5a" role="3clFbw">
+            <node concept="2OqwBi" id="7VjLoWjHqQL" role="2Oq$k0">
+              <node concept="2OqwBi" id="7VjLoWjHhZX" role="2Oq$k0">
+                <node concept="37vLTw" id="7VjLoWjHguA" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4eI_fte4xZu" resolve="enumTypeNode" />
+                </node>
+                <node concept="3TrEf2" id="7VjLoWjHi$H" role="2OqNvi">
+                  <ref role="3Tt5mk" to="evry:7VjLoWiMzkt" resolve="customEnumToStringOperationInfo" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="7VjLoWjHrvV" role="2OqNvi">
+                <ref role="3TsBF5" to="evry:7VjLoWjHolL" resolve="customOperationName" />
+              </node>
+            </node>
+            <node concept="17RvpY" id="7VjLoWjHtO1" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="7VjLoWjHguq" role="3cqZAp" />
         <node concept="3cpWs8" id="4eI_fte4BNK" role="3cqZAp">
           <node concept="3cpWsn" id="4eI_fte4BNL" role="3cpWs9">
             <property role="TrG5h" value="baseName" />
@@ -551,7 +590,7 @@
       <node concept="37vLTG" id="4eI_fte4xZu" role="3clF46">
         <property role="TrG5h" value="enumTypeNode" />
         <node concept="3Tqbb2" id="4eI_fte4xZt" role="1tU5fm">
-          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
+          <ref role="ehGHo" to="evry:7VjLoWiMz5D" resolve="IEnumDefinition" />
         </node>
       </node>
     </node>

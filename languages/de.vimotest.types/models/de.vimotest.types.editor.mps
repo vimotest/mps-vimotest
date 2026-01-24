@@ -67,8 +67,10 @@
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
+        <child id="1223387335081" name="query" index="3n$kyP" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ngI" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
         <child id="5991739802479788259" name="type" index="22hAXT" />
@@ -85,6 +87,7 @@
       <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
         <property id="1238091709220" name="labelName" index="1413C4" />
       </concept>
+      <concept id="1223387125302" name="jetbrains.mps.lang.editor.structure.QueryFunction_Boolean" flags="in" index="3nzxsE" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="9122903797312246523" name="jetbrains.mps.lang.editor.structure.StyleReference" flags="ng" index="1wgc9g">
         <reference id="9122903797312247166" name="style" index="1wgcnl" />
@@ -223,6 +226,7 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -231,6 +235,9 @@
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -1013,7 +1020,13 @@
     <node concept="3EZMnI" id="3JF9X1LrZfI" role="6VMZX">
       <node concept="l2Vlx" id="3JF9X1LrZfJ" role="2iSdaV" />
       <node concept="PMmxH" id="3JF9X1LtDkJ" role="3EZMnx">
-        <ref role="PMmxG" node="3JF9X1LtxCE" resolve="IHasNamespace_EC" />
+        <ref role="PMmxG" node="3JF9X1LtxCE" resolve="ICanHaveNamespace_EC" />
+      </node>
+      <node concept="PMmxH" id="7VjLoWjumTM" role="3EZMnx">
+        <ref role="PMmxG" node="7VjLoWjumTv" resolve="IEnumDefinition_customEnumToStringOperationInfo_EC" />
+        <node concept="pVoyu" id="7VjLoWjumTO" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
     </node>
   </node>
@@ -1264,9 +1277,9 @@
     </node>
   </node>
   <node concept="PKFIW" id="3JF9X1LtxCE">
-    <property role="TrG5h" value="IHasNamespace_EC" />
+    <property role="TrG5h" value="ICanHaveNamespace_EC" />
     <property role="3GE5qa" value="bindings" />
-    <ref role="1XX52x" to="evry:3JF9X1LrZr1" resolve="IHasNamespace" />
+    <ref role="1XX52x" to="evry:3JF9X1LrZr1" resolve="ICanHaveCustomNamespace" />
     <node concept="3EZMnI" id="3JF9X1LtxCF" role="2wV5jI">
       <node concept="3F0ifn" id="1GOfCi7TEns" role="3EZMnx">
         <property role="3F0ifm" value="virtual package:" />
@@ -1290,6 +1303,66 @@
         <ref role="1NtTu8" to="evry:3JF9X1Ls77z" resolve="namespace" />
       </node>
       <node concept="l2Vlx" id="3JF9X1LtxCI" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="7VjLoWjumTv">
+    <property role="3GE5qa" value="struct.types.enum" />
+    <property role="TrG5h" value="IEnumDefinition_customEnumToStringOperationInfo_EC" />
+    <ref role="1XX52x" to="evry:7VjLoWiMz5D" resolve="IEnumDefinition" />
+    <node concept="3EZMnI" id="7VjLoWjumTE" role="2wV5jI">
+      <node concept="3F0ifn" id="7VjLoWjumTH" role="3EZMnx">
+        <property role="3F0ifm" value="define custom EnumToString operation info" />
+        <ref role="1k5W1q" node="F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="l2Vlx" id="7VjLoWjumTF" role="2iSdaV" />
+      <node concept="3F1sOY" id="7VjLoWjumTx" role="3EZMnx">
+        <ref role="1NtTu8" to="evry:7VjLoWiMzkt" resolve="customEnumToStringOperationInfo" />
+        <node concept="pVoyu" id="7VjLoWjumTJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="7VjLoWjumTK" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="VPXOz" id="7VjLoWj$ftq" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+        <node concept="3nzxsE" id="7VjLoWj$ftr" role="3n$kyP">
+          <node concept="3clFbS" id="7VjLoWj$fts" role="2VODD2">
+            <node concept="3clFbF" id="7VjLoWj$fRw" role="3cqZAp">
+              <node concept="2OqwBi" id="7VjLoWj$gBn" role="3clFbG">
+                <node concept="2OqwBi" id="7VjLoWj$g84" role="2Oq$k0">
+                  <node concept="pncrf" id="7VjLoWj$fRv" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="7VjLoWj$gnF" role="2OqNvi">
+                    <ref role="3Tt5mk" to="evry:7VjLoWiMzkt" resolve="customEnumToStringOperationInfo" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="7VjLoWj$gW5" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7VjLoWjumTz">
+    <property role="3GE5qa" value="struct.types.enum" />
+    <ref role="1XX52x" to="evry:7VjLoWiMz6G" resolve="EnumToStringOperationInfo" />
+    <node concept="3EZMnI" id="7VjLoWjumT_" role="2wV5jI">
+      <node concept="3F0ifn" id="7VjLoWjHoGm" role="3EZMnx">
+        <property role="3F0ifm" value="customOperationName:" />
+        <ref role="1k5W1q" node="F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0A7n" id="7VjLoWjHoGp" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <ref role="1NtTu8" to="evry:7VjLoWjHolL" resolve="customOperationName" />
+      </node>
+      <node concept="PMmxH" id="7VjLoWjumTD" role="3EZMnx">
+        <ref role="PMmxG" node="3JF9X1LtxCE" resolve="ICanHaveNamespace_EC" />
+        <node concept="pVoyu" id="7VjLoWjHoGr" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="7VjLoWjumTC" role="2iSdaV" />
     </node>
   </node>
 </model>

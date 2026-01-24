@@ -143,14 +143,8 @@
     <node concept="PrWs8" id="F907haLJWq" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="PrWs8" id="5jkMFwtjblm" role="PzmwI">
-      <ref role="PrY4T" to="evry:3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
-    </node>
-    <node concept="PrWs8" id="2N4oO4qvn7i" role="PzmwI">
-      <ref role="PrY4T" to="evry:2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
-    </node>
-    <node concept="PrWs8" id="3JF9X1Ltwwn" role="PzmwI">
-      <ref role="PrY4T" to="evry:3JF9X1LrZr1" resolve="IHasNamespace" />
+    <node concept="PrWs8" id="7VjLoWiMzkx" role="PzmwI">
+      <ref role="PrY4T" to="evry:7VjLoWiMzkq" resolve="ICustomizableTypeInfo" />
     </node>
     <node concept="PrWs8" id="1F_Q10zW1eJ" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -1207,14 +1201,8 @@
         <property role="t5JxN" value="delegates to rowHandleFeature.kind" />
       </node>
     </node>
-    <node concept="PrWs8" id="5veytyjIXh8" role="PrDN$">
-      <ref role="PrY4T" to="evry:3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
-    </node>
-    <node concept="PrWs8" id="2N4oO4qwWpY" role="PrDN$">
-      <ref role="PrY4T" to="evry:2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
-    </node>
-    <node concept="PrWs8" id="1U5fKw6KX_p" role="PrDN$">
-      <ref role="PrY4T" to="evry:3JF9X1LrZr1" resolve="IHasNamespace" />
+    <node concept="PrWs8" id="7VjLoWiMzkv" role="PrDN$">
+      <ref role="PrY4T" to="evry:7VjLoWiMzkq" resolve="ICustomizableTypeInfo" />
     </node>
   </node>
   <node concept="PlHQZ" id="7FAtRx$VQ6k">
@@ -1535,19 +1523,16 @@
     <node concept="PrWs8" id="7kzHNKBtMCG" role="PzmwI">
       <ref role="PrY4T" node="7NXUkdRspaV" resolve="IProvideChoiceEntries" />
     </node>
-    <node concept="PrWs8" id="JsS3D9I3ed" role="PzmwI">
-      <ref role="PrY4T" to="evry:3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+    <node concept="PrWs8" id="7VjLoWiMzkw" role="PzmwI">
+      <ref role="PrY4T" to="evry:7VjLoWiMzkq" resolve="ICustomizableTypeInfo" />
     </node>
-    <node concept="PrWs8" id="6qlTyZCQFe6" role="PzmwI">
-      <ref role="PrY4T" to="evry:2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+    <node concept="PrWs8" id="7VjLoWiM_d9" role="PzmwI">
+      <ref role="PrY4T" to="evry:7VjLoWiMz5D" resolve="IEnumDefinition" />
     </node>
     <node concept="1TJgyi" id="6qlTyZCQCeM" role="1TKVEl">
       <property role="IQ2nx" value="7392067456843023282" />
       <property role="TrG5h" value="isFixedEnumeration" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="PrWs8" id="1U5fKw6KXiy" role="PzmwI">
-      <ref role="PrY4T" to="evry:3JF9X1LrZr1" resolve="IHasNamespace" />
     </node>
   </node>
   <node concept="PlHQZ" id="1Ukm5RfrSRo">
@@ -1826,14 +1811,8 @@
     <node concept="PrWs8" id="3kGPU1QcSOR" role="PrDN$">
       <ref role="PrY4T" node="3kGPU1QcSOP" resolve="IReferenceableDependency" />
     </node>
-    <node concept="PrWs8" id="32SpZNIS8iJ" role="PrDN$">
-      <ref role="PrY4T" to="evry:3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
-    </node>
-    <node concept="PrWs8" id="32SpZNIS8iK" role="PrDN$">
-      <ref role="PrY4T" to="evry:2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
-    </node>
-    <node concept="PrWs8" id="32SpZNIS8iL" role="PrDN$">
-      <ref role="PrY4T" to="evry:3JF9X1LrZr1" resolve="IHasNamespace" />
+    <node concept="PrWs8" id="7VjLoWiMzku" role="PrDN$">
+      <ref role="PrY4T" to="evry:7VjLoWiMzkq" resolve="ICustomizableTypeInfo" />
     </node>
     <node concept="1TJgyj" id="4m0g11MookZ" role="1TKVEi">
       <property role="IQ2ns" value="5008073225018639679" />

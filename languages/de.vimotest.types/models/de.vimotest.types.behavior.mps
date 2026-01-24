@@ -501,7 +501,7 @@
   </node>
   <node concept="13h7C7" id="3JF9X1LtDGB">
     <property role="3GE5qa" value="bindings" />
-    <ref role="13h7C2" to="evry:3JF9X1LrZr1" resolve="IHasNamespace" />
+    <ref role="13h7C2" to="evry:3JF9X1LrZr1" resolve="ICanHaveCustomNamespace" />
     <node concept="13i0hz" id="3JF9X1LtLmd" role="13h7CS">
       <property role="TrG5h" value="getEffectiveNamespace" />
       <node concept="3Tm1VV" id="3JF9X1LtLme" role="1B3o_S" />
@@ -598,14 +598,14 @@
           <node concept="3cpWsn" id="1U5fKw6YFif" role="3cpWs9">
             <property role="TrG5h" value="parentNamespace" />
             <node concept="3Tqbb2" id="1U5fKw6YFig" role="1tU5fm">
-              <ref role="ehGHo" to="evry:3JF9X1LrZr1" resolve="IHasNamespace" />
+              <ref role="ehGHo" to="evry:3JF9X1LrZr1" resolve="ICanHaveCustomNamespace" />
             </node>
             <node concept="2OqwBi" id="1U5fKw6YFih" role="33vP2m">
               <node concept="13iPFW" id="1U5fKw6YFii" role="2Oq$k0" />
               <node concept="2Xjw5R" id="1U5fKw6YFij" role="2OqNvi">
                 <node concept="1xMEDy" id="1U5fKw6YFik" role="1xVPHs">
                   <node concept="chp4Y" id="1U5fKw6YFil" role="ri$Ld">
-                    <ref role="cht4Q" to="evry:3JF9X1LrZr1" resolve="IHasNamespace" />
+                    <ref role="cht4Q" to="evry:3JF9X1LrZr1" resolve="ICanHaveCustomNamespace" />
                   </node>
                 </node>
               </node>
@@ -678,6 +678,52 @@
     </node>
     <node concept="13hLZK" id="3JF9X1LtDGC" role="13h7CW">
       <node concept="3clFbS" id="3JF9X1LtDGD" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7VjLoWjg$Ck">
+    <property role="3GE5qa" value="struct.types.enum" />
+    <ref role="13h7C2" to="evry:7VjLoWiMz5D" resolve="IEnumDefinition" />
+    <node concept="13i0hz" id="7VjLoWjg$CB" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getSymbolNodes" />
+      <node concept="3Tm1VV" id="7VjLoWjg$CC" role="1B3o_S" />
+      <node concept="3clFbS" id="7VjLoWjg$CE" role="3clF47" />
+      <node concept="A3Dl8" id="3DwBQhhBnnV" role="3clF45">
+        <node concept="3Tqbb2" id="3DwBQhhBnnW" role="A3Ik2">
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="7VjLoWjg$Cl" role="13h7CW">
+      <node concept="3clFbS" id="7VjLoWjg$Cm" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7VjLoWjmACH">
+    <property role="3GE5qa" value="struct.types.enum" />
+    <ref role="13h7C2" to="evry:5cPWD13qNbL" resolve="CustomEnumType" />
+    <node concept="13hLZK" id="7VjLoWjmACI" role="13h7CW">
+      <node concept="3clFbS" id="7VjLoWjmACJ" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7VjLoWjmAD0" role="13h7CS">
+      <property role="TrG5h" value="getSymbolNodes" />
+      <ref role="13i0hy" node="7VjLoWjg$CB" resolve="getSymbolNodes" />
+      <node concept="3Tm1VV" id="7VjLoWjmAD1" role="1B3o_S" />
+      <node concept="3clFbS" id="7VjLoWjmAD5" role="3clF47">
+        <node concept="3clFbF" id="7VjLoWjmADp" role="3cqZAp">
+          <node concept="2OqwBi" id="7VjLoWjmAUf" role="3clFbG">
+            <node concept="13iPFW" id="7VjLoWjmADo" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="7VjLoWjmBbg" role="2OqNvi">
+              <ref role="3TtcxE" to="evry:5cPWD13qNID" resolve="symbols" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="7VjLoWjmAD6" role="3clF45">
+        <node concept="3Tqbb2" id="7VjLoWjmAD7" role="A3Ik2">
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

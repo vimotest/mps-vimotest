@@ -1,0 +1,8 @@
+namespace bindings ;
+
+
+
+
+public enum CustomTypeInfoEnum {
+  SymbolA, SymbolB
+}

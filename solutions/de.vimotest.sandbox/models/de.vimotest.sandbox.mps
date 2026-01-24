@@ -45,12 +45,21 @@
       <concept id="8302028014365370037" name="de.vimotest.types.structure.CustomEnumTypeUsage" flags="ng" index="14C5Nb">
         <reference id="8302028014365370038" name="enumType" index="14C5N8" />
       </concept>
+      <concept id="4317588443974596289" name="de.vimotest.types.structure.ICanHaveCustomNamespace" flags="ngI" index="1axd4h">
+        <property id="4317588443974627811" name="namespace" index="1aAPoN" />
+      </concept>
       <concept id="7808764115844896567" name="de.vimotest.types.structure.BoolType" flags="ng" index="1nBHEw" />
       <concept id="7808764115844976085" name="de.vimotest.types.structure.StringType" flags="ng" index="1nBS12" />
       <concept id="7808764115844956430" name="de.vimotest.types.structure.IntType" flags="ng" index="1nBWMp" />
       <concept id="7808764115843597086" name="de.vimotest.types.structure.FieldStructContent" flags="ng" index="1nWCU9" />
       <concept id="7922086861527425651" name="de.vimotest.types.structure.StringValue" flags="ng" index="1wOkDO">
         <property id="7922086861527426429" name="value" index="1wOkPU" />
+      </concept>
+      <concept id="9138865287151104428" name="de.vimotest.types.structure.EnumToStringOperationInfo" flags="ng" index="1G6vgz">
+        <property id="9138865287166526833" name="customOperationName" index="1Hp$3Y" />
+      </concept>
+      <concept id="9138865287151104361" name="de.vimotest.types.structure.IEnumDefinition" flags="ngI" index="1G6vjA">
+        <child id="9138865287151105309" name="customEnumToStringOperationInfo" index="1G6v2i" />
       </concept>
       <concept id="6112733486551600458" name="de.vimotest.types.structure.ListType" flags="ng" index="1WnWvM">
         <child id="6112733486551600459" name="nestedType" index="1WnWvN" />
@@ -6257,6 +6266,24 @@
           <node concept="C4FCg" id="5iuj9z88JtM" role="Ekmcp" />
           <node concept="C4FCh" id="5iuj9z88JtN" role="E2vJh" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="gnG1x" id="7VjLoWj$fo$">
+    <property role="3GE5qa" value="bindings" />
+    <property role="TrG5h" value="CustomTypeInfoEnum" />
+    <node concept="gnG1y" id="7VjLoWj$foJ" role="gnG$T">
+      <property role="TrG5h" value="SymbolA" />
+    </node>
+    <node concept="gnG1y" id="7VjLoWj$foU" role="gnG$T">
+      <property role="TrG5h" value="SymbolB" />
+    </node>
+    <node concept="1G6vgz" id="7VjLoWj$fpb" role="1G6v2i">
+      <property role="3GE5qa" value="bindings.enumtostring" />
+      <property role="1aAPoN" value="customtypeinfo_namespace" />
+      <property role="1Hp$3Y" value="ConvertMyEnumToStr" />
+      <node concept="QIaRa" id="7VjLoWj$fqv" role="lGtFl">
+        <property role="QIaRf" value="MyCustomTypeInfoEnumValuesFile" />
       </node>
     </node>
   </node>

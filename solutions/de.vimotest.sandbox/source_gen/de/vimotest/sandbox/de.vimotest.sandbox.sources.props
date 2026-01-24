@@ -1,8 +1,9 @@
 <Project>  
   <ItemGroup>    
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/ConvertMyEnumToString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)bindings/ConvertMyEnumToStr.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)commands/ConvertMyOptionsToString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ConvertOptionsToString.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)dependencies/ConvertMyEnumToString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ListViews_ViewModelMyListOfLabelRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ListViews_ViewModelMyListOfImagesRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ListViews_ViewModelMyCheckboxesRow.cs" />
@@ -72,5 +73,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)commands/SelectEntryCommand_ViewModelMyOptionsOption.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/RadioButton_ViewModelOptionsOption.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/MyEnum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)bindings/CustomTypeInfoEnum.cs" />
   </ItemGroup>
 </Project>

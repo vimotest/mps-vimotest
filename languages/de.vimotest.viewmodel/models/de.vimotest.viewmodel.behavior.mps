@@ -10674,6 +10674,26 @@
         <ref role="2I9WkF" to="at53:1Ukm5RfrSRo" resolve="IChoiceEntry" />
       </node>
     </node>
+    <node concept="13i0hz" id="7VjLoWjmCrF" role="13h7CS">
+      <property role="TrG5h" value="getSymbolNodes" />
+      <ref role="13i0hy" to="45v0:7VjLoWjg$CB" resolve="getSymbolNodes" />
+      <node concept="3Tm1VV" id="7VjLoWjmCrG" role="1B3o_S" />
+      <node concept="3clFbS" id="7VjLoWjmCrK" role="3clF47">
+        <node concept="3clFbF" id="7VjLoWjmCF2" role="3cqZAp">
+          <node concept="2OqwBi" id="7VjLoWjmD2z" role="3clFbG">
+            <node concept="13iPFW" id="7VjLoWjmCF1" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="7VjLoWjmDp_" role="2OqNvi">
+              <ref role="3TtcxE" to="at53:12kpBrp1HEy" resolve="radioButtonWidgets" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="7VjLoWjmCrL" role="3clF45">
+        <node concept="3Tqbb2" id="7VjLoWjmCrM" role="A3Ik2">
+          <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="5LG6vEN6pdC">
     <property role="3GE5qa" value="widgets.util" />

@@ -1,0 +1,20 @@
+namespace bindings ;
+
+
+
+
+
+activity ConvertMyEnumToStr ( in symbol: CustomTypeInfoEnum  ) : String  {
+  if ( symbol == CustomTypeInfoEnum:: SymbolA ) {
+    return "SymbolA";
+
+  } 
+
+  if ( symbol == CustomTypeInfoEnum:: SymbolB ) {
+    return "SymbolB";
+
+  } 
+
+  return "?";
+
+}

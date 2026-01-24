@@ -2,8 +2,7 @@ namespace widgetassertions ;
 
 
 
-
-public activity convertOptionsToString ( in symbol: RadioButton_ViewModelOptionsOption  ) : String  {
+activity convertOptionsToString ( in symbol: RadioButton_ViewModelOptionsOption  ) : String  {
   if ( symbol == RadioButton_ViewModelOptionsOption:: OptionA ) {
     return "OptionA";
 

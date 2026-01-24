@@ -11,6 +11,23 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="2756621024541681841" name="jetbrains.mps.lang.resources.structure.Primitive" flags="ng" index="1irPi6">
+        <child id="1860120738943552529" name="fillColor" index="3PKjn_" />
+      </concept>
+      <concept id="2756621024541681849" name="jetbrains.mps.lang.resources.structure.Text" flags="ng" index="1irPie">
+        <property id="2756621024541681854" name="text" index="1irPi9" />
+        <child id="1860120738943552534" name="color" index="3PKjny" />
+      </concept>
+      <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
+        <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="8984883884167239995" name="newuiLayers" index="2rmM5M" />
+      </concept>
+      <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n" />
+      <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
+        <property id="1860120738943552481" name="val" index="3PKj8l" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
@@ -39,13 +56,16 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
@@ -230,14 +250,25 @@
     <node concept="PrWs8" id="7cQIBSR_IqT" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="PrWs8" id="JsS3D9I3ed" role="PzmwI">
-      <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+    <node concept="PrWs8" id="7VjLoWiM_d8" role="PzmwI">
+      <ref role="PrY4T" node="7VjLoWiMzkq" resolve="ICustomizableTypeInfo" />
     </node>
-    <node concept="PrWs8" id="6qlTyZCQFe6" role="PzmwI">
-      <ref role="PrY4T" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+    <node concept="PrWs8" id="7VjLoWiMz5E" role="PzmwI">
+      <ref role="PrY4T" node="7VjLoWiMz5D" resolve="IEnumDefinition" />
     </node>
-    <node concept="PrWs8" id="6Nin$iibdAz" role="PzmwI">
-      <ref role="PrY4T" node="3JF9X1LrZr1" resolve="IHasNamespace" />
+    <node concept="1irR5M" id="7VjLoWjCdLM" role="rwd14">
+      <property role="2$rrk2" value="1" />
+      <node concept="1irR9n" id="7eKFyZ9Kzm3" role="2rmM5M">
+        <node concept="3PKj8D" id="7eKFyZ9Kzm4" role="3PKjn_">
+          <property role="3PKj8l" value="000040" />
+        </node>
+      </node>
+      <node concept="1irPie" id="7eKFyZ9Kzm5" role="2rmM5M">
+        <property role="1irPi9" value="E" />
+        <node concept="3PKj8D" id="7eKFyZ9Kzm6" role="3PKjny">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="5cPWD13qNbM">
@@ -375,11 +406,60 @@
   <node concept="PlHQZ" id="3JF9X1LrZr1">
     <property role="EcuMT" value="4317588443974596289" />
     <property role="3GE5qa" value="bindings" />
-    <property role="TrG5h" value="IHasNamespace" />
+    <property role="TrG5h" value="ICanHaveCustomNamespace" />
     <node concept="1TJgyi" id="3JF9X1Ls77z" role="1TKVEl">
       <property role="IQ2nx" value="4317588443974627811" />
       <property role="TrG5h" value="namespace" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7VjLoWiMz5D">
+    <property role="EcuMT" value="9138865287151104361" />
+    <property role="3GE5qa" value="struct.types.enum" />
+    <property role="TrG5h" value="IEnumDefinition" />
+    <node concept="1TJgyj" id="7VjLoWiMzkt" role="1TKVEi">
+      <property role="IQ2ns" value="9138865287151105309" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="customEnumToStringOperationInfo" />
+      <ref role="20lvS9" node="7VjLoWiMz6G" resolve="EnumToStringOperationInfo" />
+    </node>
+    <node concept="PrWs8" id="7VjLoWjgzpn" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7VjLoWiMz6G">
+    <property role="EcuMT" value="9138865287151104428" />
+    <property role="3GE5qa" value="struct.types.enum" />
+    <property role="TrG5h" value="EnumToStringOperationInfo" />
+    <property role="34LRSv" value="enum to string operation info" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7VjLoWjHolJ" role="PzmwI">
+      <ref role="PrY4T" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+    </node>
+    <node concept="PrWs8" id="7VjLoWjHolK" role="PzmwI">
+      <ref role="PrY4T" node="3JF9X1LrZr1" resolve="ICanHaveCustomNamespace" />
+    </node>
+    <node concept="1TJgyi" id="7VjLoWjHolL" role="1TKVEl">
+      <property role="IQ2nx" value="9138865287166526833" />
+      <property role="TrG5h" value="customOperationName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7VjLoWiMzkq">
+    <property role="EcuMT" value="9138865287151105306" />
+    <property role="3GE5qa" value="bindings" />
+    <property role="TrG5h" value="ICustomizableTypeInfo" />
+    <node concept="PrWs8" id="7VjLoWiMz6H" role="PrDN$">
+      <ref role="PrY4T" node="3MA_BelBku7" resolve="ICanHaveCustomTypeName" />
+    </node>
+    <node concept="PrWs8" id="7VjLoWiMz6I" role="PrDN$">
+      <ref role="PrY4T" node="2N4oO4qvcUg" resolve="ICanHaveCustomFileName" />
+    </node>
+    <node concept="PrWs8" id="7VjLoWiMz6J" role="PrDN$">
+      <ref role="PrY4T" node="3JF9X1LrZr1" resolve="ICanHaveCustomNamespace" />
+    </node>
+    <node concept="t5JxF" id="7VjLoWiMzkr" role="lGtFl">
+      <property role="t5JxN" value="Base interface for customizable typename, filename and namespace" />
     </node>
   </node>
 </model>

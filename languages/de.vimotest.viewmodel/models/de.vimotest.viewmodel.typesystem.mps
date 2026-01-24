@@ -12,6 +12,7 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1023,6 +1024,56 @@
     <node concept="1YaCAy" id="7VjLoWhPhjR" role="1YuTPh">
       <property role="TrG5h" value="generationConfigRef" />
       <ref role="1YaFvo" to="at53:7VjLoWhPcFw" resolve="GenerationConfigRef" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7VjLoWiMAnt">
+    <property role="TrG5h" value="check_RadioButtonGroupWidget" />
+    <property role="3GE5qa" value="widgets.choices" />
+    <node concept="3clFbS" id="7VjLoWiMAnu" role="18ibNy">
+      <node concept="3clFbJ" id="7VjLoWiMAo5" role="3cqZAp">
+        <node concept="1Wc70l" id="7VjLoWiMBu2" role="3clFbw">
+          <node concept="2OqwBi" id="7VjLoWiMBIa" role="3uHU7w">
+            <node concept="2OqwBi" id="7VjLoWiMBve" role="2Oq$k0">
+              <node concept="1YBJjd" id="7VjLoWiMBuB" role="2Oq$k0">
+                <ref role="1YBMHb" node="7VjLoWiMAnw" resolve="radioButtonGroupWidget" />
+              </node>
+              <node concept="3TrEf2" id="7VjLoWiMBwy" role="2OqNvi">
+                <ref role="3Tt5mk" to="evry:7VjLoWiMzkt" resolve="customEnumToStringOperationInfo" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="7VjLoWiMC0n" role="2OqNvi" />
+          </node>
+          <node concept="3fqX7Q" id="7VjLoWiMB6S" role="3uHU7B">
+            <node concept="2OqwBi" id="7VjLoWiMB6U" role="3fr31v">
+              <node concept="1YBJjd" id="7VjLoWiMB6V" role="2Oq$k0">
+                <ref role="1YBMHb" node="7VjLoWiMAnw" resolve="radioButtonGroupWidget" />
+              </node>
+              <node concept="3TrcHB" id="7VjLoWiMB6W" role="2OqNvi">
+                <ref role="3TsBF5" to="at53:6qlTyZCQCeM" resolve="isFixedEnumeration" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="7VjLoWiMAo7" role="3clFbx">
+          <node concept="2MkqsV" id="7VjLoWiMC61" role="3cqZAp">
+            <node concept="Xl_RD" id="7VjLoWiMC6a" role="2MkJ7o">
+              <property role="Xl_RC" value="Can only define custom EnumToString operation info, if isFixedEnumeration is set" />
+            </node>
+            <node concept="2OqwBi" id="7VjLoWiMCno" role="1urrMF">
+              <node concept="1YBJjd" id="7VjLoWiMC7_" role="2Oq$k0">
+                <ref role="1YBMHb" node="7VjLoWiMAnw" resolve="radioButtonGroupWidget" />
+              </node>
+              <node concept="3TrEf2" id="7VjLoWiMCTZ" role="2OqNvi">
+                <ref role="3Tt5mk" to="evry:7VjLoWiMzkt" resolve="customEnumToStringOperationInfo" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7VjLoWiMAnw" role="1YuTPh">
+      <property role="TrG5h" value="radioButtonGroupWidget" />
+      <ref role="1YaFvo" to="at53:12kpBrp1H3U" resolve="RadioButtonGroupWidget" />
     </node>
   </node>
 </model>

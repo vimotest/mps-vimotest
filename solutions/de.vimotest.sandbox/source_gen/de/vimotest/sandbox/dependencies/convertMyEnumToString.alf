@@ -2,8 +2,7 @@ namespace dependencies ;
 
 
 
-
-public activity convertMyEnumToString ( in symbol: MyEnum  ) : String  {
+activity convertMyEnumToString ( in symbol: MyEnum  ) : String  {
   if ( symbol == MyEnum:: A ) {
     return "A";
 

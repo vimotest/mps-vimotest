@@ -36,6 +36,9 @@
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -389,8 +392,11 @@
     </node>
     <node concept="1TJgyi" id="2N4oO4qv7J4" role="1TKVEl">
       <property role="IQ2nx" value="3225812364372507588" />
-      <property role="TrG5h" value="customFileName" />
+      <property role="TrG5h" value="old_customFileName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="3KSOinNfs0P" role="lGtFl">
+        <property role="YLQ7P" value="Use CustomFileNameBinding" />
+      </node>
     </node>
   </node>
   <node concept="PlHQZ" id="2N4oO4qvcUg">

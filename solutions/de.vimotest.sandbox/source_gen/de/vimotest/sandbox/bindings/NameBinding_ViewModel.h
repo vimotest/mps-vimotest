@@ -5,7 +5,7 @@
 #include "MyCustomRow.h"
 #include <string>
 
-namespace bindings
+namespace mybindings
 {
   class NameBinding_ViewModel
   {

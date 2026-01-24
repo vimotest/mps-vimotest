@@ -4777,6 +4777,7 @@
   <node concept="103ZX$" id="3F1kzPoIN6z">
     <property role="3GE5qa" value="bindings" />
     <property role="$YGLj" value="NameBinding_View" />
+    <property role="1aAPoN" value="mybindings" />
     <node concept="103ZXx" id="3F1kzPoIN6$" role="103ZXC">
       <node concept="3Vw88J" id="3F1kzPoIN6_" role="1006ar">
         <property role="TrG5h" value="LoadViewModel" />

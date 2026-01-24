@@ -2,7 +2,7 @@
 
 #include <string>
 
-namespace bindings
+namespace mybindings
 {
   class MyCustomRow
   {

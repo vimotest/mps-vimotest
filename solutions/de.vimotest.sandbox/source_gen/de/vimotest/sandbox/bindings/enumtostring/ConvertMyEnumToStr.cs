@@ -3,7 +3,7 @@
 /// </filename>
 using bindings;
 
-namespace bindings
+namespace bindings.enumtostring
 {
     public class ConvertMyEnumToStr
     {

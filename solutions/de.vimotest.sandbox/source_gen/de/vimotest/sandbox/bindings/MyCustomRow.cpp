@@ -1,7 +1,7 @@
 #include "MyCustomRow.h"
 #include <string>
 
-namespace bindings
+namespace mybindings
 {
   std::string MyCustomRow::GetRowText()
   {

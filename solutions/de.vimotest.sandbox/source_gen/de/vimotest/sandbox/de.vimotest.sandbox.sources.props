@@ -1,7 +1,7 @@
 <Project>  
   <ItemGroup>    
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/ConvertMyEnumToString.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)bindings/ConvertMyEnumToStr.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)bindings/enumtostring/ConvertMyEnumToStr.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)commands/ConvertMyOptionsToString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ConvertOptionsToString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ListViews_ViewModelMyListOfLabelRow.cs" />

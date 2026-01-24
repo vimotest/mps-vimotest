@@ -4,7 +4,7 @@
 #include "MyCustomRow.h"
 #include <string>
 
-namespace bindings
+namespace mybindings
 {
   std::string NameBinding_ViewModel::getCustomText()
   {

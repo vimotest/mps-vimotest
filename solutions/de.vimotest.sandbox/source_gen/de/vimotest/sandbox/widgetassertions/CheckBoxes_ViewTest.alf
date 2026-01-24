@@ -84,21 +84,21 @@ class CheckBoxes_ViewTest {
   }
   
   public then_MyFlagTriState_is_mixed (  ) {
-    let actualCheckValue: String = ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == true ) ? "checked" : ( ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == false ) ? "unchecked" : "indeterminate (null)" );
+    let actualCheckValue: String = ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == null ) ? "indeterminate (null)" : ( ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == true ) ? "checked" : "unchecked" );
 
     AssertEqualWithMessage ( null, this.sut.getIsMyFlagTriStateCheckBoxChecked (  ), "Expected that checkbox MyFlagTriState is indeterminate (null), but was <" + actualCheckValue + ">" );
 
   }
   
   public then_MyFlagTriState_is_checked (  ) {
-    let actualCheckValue_1: String = ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == true ) ? "checked" : ( ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == false ) ? "unchecked" : "indeterminate (null)" );
+    let actualCheckValue_1: String = ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == null ) ? "indeterminate (null)" : ( ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == true ) ? "checked" : "unchecked" );
 
     AssertTrueWithMessage ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ), "Expected that checkbox MyFlagTriState is checked, but was <" + actualCheckValue_1 + ">" );
 
   }
   
   public then_MyFlagTriState_is_not_checked (  ) {
-    let actualCheckValue_2: String = ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == true ) ? "checked" : ( ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == false ) ? "unchecked" : "indeterminate (null)" );
+    let actualCheckValue_2: String = ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == null ) ? "indeterminate (null)" : ( ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == true ) ? "checked" : "unchecked" );
 
     AssertFalseWithMessage ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ), "Expected that checkbox MyFlagTriState is unchecked, but was <" + actualCheckValue_2 + ">" );
 

@@ -26,6 +26,6 @@ namespace widgetassertions
   }
   std::optional<bool> CheckBoxes_ViewModel::getIsMyFlagTriStateCheckBoxChecked()
   {
-    return this->isMyFlagTriStateCheckBoxChecked == true;
+    return this->isMyFlagTriStateCheckBoxChecked.value() == true;
   }
 }

@@ -11882,6 +11882,17 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="7p33En4HMXs" role="13h7CS">
+      <property role="TrG5h" value="supportMultipleOccurencesInCheck" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="7p33En4HMXt" role="1B3o_S" />
+      <node concept="10P_77" id="7p33En4I0WY" role="3clF45" />
+      <node concept="3clFbS" id="7p33En4HMXv" role="3clF47">
+        <node concept="3clFbF" id="7p33En4I0Zh" role="3cqZAp">
+          <node concept="3clFbT" id="7p33En4I0Zg" role="3clFbG" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="2exRXkpP3eV">
     <property role="TrG5h" value="ITextBoxCheckValue_Behavior" />

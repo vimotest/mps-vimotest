@@ -993,7 +993,7 @@
   </node>
   <node concept="24kQdi" id="5cPWD13qOa$">
     <property role="3GE5qa" value="struct.types.enum" />
-    <ref role="1XX52x" to="evry:5cPWD13qNbL" resolve="CustomEnumType" />
+    <ref role="1XX52x" to="evry:5cPWD13qNbL" resolve="EnumType" />
     <node concept="3EZMnI" id="5cPWD13qOaA" role="2wV5jI">
       <node concept="3F0ifn" id="5cPWD13qOaE" role="3EZMnx">
         <property role="3F0ifm" value="enum type" />
@@ -1028,26 +1028,6 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="7cQIBSR_IqR">
-    <property role="3GE5qa" value="struct.types.enum" />
-    <ref role="1XX52x" to="evry:7cQIBSR_IqP" resolve="CustomEnumTypeUsage" />
-    <node concept="3EZMnI" id="7cQIBSR_MCx" role="2wV5jI">
-      <node concept="3F0ifn" id="7cQIBSR_MCI" role="3EZMnx">
-        <property role="3F0ifm" value="enum" />
-        <ref role="1k5W1q" node="F907haMqPJ" resolve="ViMoTestKeyWord" />
-      </node>
-      <node concept="1iCGBv" id="7cQIBSR_MC_" role="3EZMnx">
-        <ref role="1NtTu8" to="evry:7cQIBSR_IqQ" resolve="enumType" />
-        <node concept="1sVBvm" id="7cQIBSR_MCB" role="1sWHZn">
-          <node concept="3F0A7n" id="7cQIBSR_MCF" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-      </node>
-      <node concept="2iRfu4" id="7cQIBSR_MC$" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="7cQIBSRFqZO">
@@ -1363,6 +1343,46 @@
         </node>
       </node>
       <node concept="l2Vlx" id="7VjLoWjumTC" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5U4kGNTgf6A">
+    <property role="3GE5qa" value="struct.types.record" />
+    <ref role="1XX52x" to="evry:5U4kGNTgf6$" resolve="RecordTypeUsage" />
+    <node concept="3EZMnI" id="5U4kGNTgf6C" role="2wV5jI">
+      <node concept="3F0ifn" id="5U4kGNTgf6D" role="3EZMnx">
+        <property role="3F0ifm" value="record" />
+        <ref role="1k5W1q" node="F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="1iCGBv" id="5U4kGNTgf6E" role="3EZMnx">
+        <ref role="1NtTu8" to="evry:5U4kGNTgf6_" resolve="recordType" />
+        <node concept="1sVBvm" id="5U4kGNTgf6F" role="1sWHZn">
+          <node concept="3F0A7n" id="5U4kGNTgf6G" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="5U4kGNTgf6H" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5U4kGNTgffI">
+    <property role="3GE5qa" value="struct.types" />
+    <ref role="1XX52x" to="evry:5U4kGNTgfeN" resolve="FieldTypeReference" />
+    <node concept="3EZMnI" id="5U4kGNTgffK" role="2wV5jI">
+      <node concept="PMmxH" id="5U4kGNTgffQ" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" node="F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="1iCGBv" id="5U4kGNTgffM" role="3EZMnx">
+        <ref role="1NtTu8" to="evry:5U4kGNTgffF" resolve="typeRef" />
+        <node concept="1sVBvm" id="5U4kGNTgffN" role="1sWHZn">
+          <node concept="3F0A7n" id="5U4kGNTgffO" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="5U4kGNTgffP" role="2iSdaV" />
     </node>
   </node>
 </model>

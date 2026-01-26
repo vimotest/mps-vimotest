@@ -167,6 +167,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)context/ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/LoggerSpy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/MyRowAdditions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)commands/SelectEntryCommand_ViewModelMyOptionsOption.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/RadioButton_ViewModelOptionsOption.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/MyEnum.cs" />

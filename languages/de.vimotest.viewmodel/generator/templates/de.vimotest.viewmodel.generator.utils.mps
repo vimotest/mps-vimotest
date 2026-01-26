@@ -1838,6 +1838,73 @@
       <node concept="3Tm1VV" id="32SpZNIS0OU" role="1B3o_S" />
       <node concept="17QB3L" id="32SpZNIS2ZV" role="3clF45" />
     </node>
+    <node concept="2YIFZL" id="5U4kGNU9UOH" role="jymVt">
+      <property role="TrG5h" value="getCustomTypeDefinitionName" />
+      <node concept="3clFbS" id="5U4kGNU9UOK" role="3clF47">
+        <node concept="3clFbJ" id="5U4kGNU9VsB" role="3cqZAp">
+          <node concept="3clFbS" id="5U4kGNU9VsC" role="3clFbx">
+            <node concept="3cpWs6" id="5U4kGNU9VsD" role="3cqZAp">
+              <node concept="2OqwBi" id="5U4kGNU9VsE" role="3cqZAk">
+                <node concept="2OqwBi" id="5U4kGNU9VsF" role="2Oq$k0">
+                  <node concept="37vLTw" id="5U4kGNU9VsG" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5U4kGNU9W0I" resolve="customTypeDefinition" />
+                  </node>
+                  <node concept="3CFZ6_" id="5U4kGNU9VsH" role="2OqNvi">
+                    <node concept="3CFYIy" id="5U4kGNU9VsI" role="3CFYIz">
+                      <ref role="3CFYIx" to="evry:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="5U4kGNU9VsJ" role="2OqNvi">
+                  <ref role="3TsBF5" to="evry:3MA_BelBku6" resolve="customName" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5U4kGNU9VsK" role="3clFbw">
+            <node concept="2OqwBi" id="5U4kGNU9VsL" role="2Oq$k0">
+              <node concept="37vLTw" id="5U4kGNU9VsM" role="2Oq$k0">
+                <ref role="3cqZAo" node="5U4kGNU9W0I" resolve="customTypeDefinition" />
+              </node>
+              <node concept="3CFZ6_" id="5U4kGNU9VsN" role="2OqNvi">
+                <node concept="3CFYIy" id="5U4kGNU9VsO" role="3CFYIz">
+                  <ref role="3CFYIx" to="evry:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="5U4kGNU9VsP" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5U4kGNU9VsQ" role="3cqZAp">
+          <node concept="2YIFZM" id="5U4kGNU9VsR" role="3clFbG">
+            <ref role="37wK5l" to="18ew:~NameUtil.toValidIdentifier(java.lang.String)" resolve="toValidIdentifier" />
+            <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+            <node concept="2OqwBi" id="5U4kGNU9VsS" role="37wK5m">
+              <node concept="1PxgMI" id="5U4kGNUa3y1" role="2Oq$k0">
+                <property role="1BlNFB" value="true" />
+                <node concept="chp4Y" id="5U4kGNUa3YT" role="3oSUPX">
+                  <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                </node>
+                <node concept="37vLTw" id="5U4kGNU9VsT" role="1m5AlR">
+                  <ref role="3cqZAo" node="5U4kGNU9W0I" resolve="customTypeDefinition" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="5U4kGNU9VsU" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5U4kGNU9Ucz" role="1B3o_S" />
+      <node concept="17QB3L" id="5U4kGNU9UdR" role="3clF45" />
+      <node concept="37vLTG" id="5U4kGNU9W0I" role="3clF46">
+        <property role="TrG5h" value="customTypeDefinition" />
+        <node concept="3Tqbb2" id="5U4kGNU9W0H" role="1tU5fm">
+          <ref role="ehGHo" to="evry:7VjLoWiMzkq" resolve="ICustomizableTypeInfo" />
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="2evlxT94KqT" role="1B3o_S" />
   </node>
 </model>

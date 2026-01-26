@@ -12,7 +12,7 @@ namespace dependencies
   class LoggerSpy : public Logger
   {
   public:
-    virtual void setWrapped(std::shared_ptr<Logger> wrapped);
+    virtual void setWrapped(std::shared_ptr<Logger> wrappedObject);
     struct LogCallInfo
     {
       std::string messageValue;

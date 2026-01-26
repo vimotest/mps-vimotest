@@ -8,9 +8,9 @@
 
 namespace dependencies
 {
-  void LoggerSpy::setWrapped(std::shared_ptr<Logger> wrapped)
+  void LoggerSpy::setWrapped(std::shared_ptr<Logger> wrappedObject)
   {
-    this->wrapped = wrapped;
+    this->wrapped = wrappedObject;
   }
   void LoggerSpy::Log(std::string message)
   {

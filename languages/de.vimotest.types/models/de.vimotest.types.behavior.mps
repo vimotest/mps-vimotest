@@ -230,7 +230,7 @@
   </node>
   <node concept="13h7C7" id="5cPWD13qN6W">
     <property role="3GE5qa" value="struct.types.enum" />
-    <ref role="13h7C2" to="evry:5cPWD13qN6U" resolve="EnumTypeUsageBase" />
+    <ref role="13h7C2" to="evry:5U4kGNTgjy_" resolve="IEnumTypeReferenceBase" />
     <node concept="13i0hz" id="7cQIBSR_Ipv" role="13h7CS">
       <property role="TrG5h" value="getEnumTypeName" />
       <property role="13i0it" value="true" />
@@ -257,7 +257,7 @@
   </node>
   <node concept="13h7C7" id="5cPWD13qNbZ">
     <property role="3GE5qa" value="struct.types.enum" />
-    <ref role="13h7C2" to="evry:7cQIBSR_IqP" resolve="CustomEnumTypeUsage" />
+    <ref role="13h7C2" to="evry:7cQIBSR_IqP" resolve="EnumTypeReference" />
     <node concept="13hLZK" id="5cPWD13qNc0" role="13h7CW">
       <node concept="3clFbS" id="5cPWD13qNc1" role="2VODD2" />
     </node>
@@ -701,7 +701,7 @@
   </node>
   <node concept="13h7C7" id="7VjLoWjmACH">
     <property role="3GE5qa" value="struct.types.enum" />
-    <ref role="13h7C2" to="evry:5cPWD13qNbL" resolve="CustomEnumType" />
+    <ref role="13h7C2" to="evry:5cPWD13qNbL" resolve="EnumType" />
     <node concept="13hLZK" id="7VjLoWjmACI" role="13h7CW">
       <node concept="3clFbS" id="7VjLoWjmACJ" role="2VODD2" />
     </node>

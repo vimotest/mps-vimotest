@@ -10,9 +10,9 @@ namespace dependencies
     {
         private dependencies.Logger wrapped;
 
-        public virtual void setWrapped(dependencies.Logger wrapped)
+        public virtual void setWrapped(dependencies.Logger wrappedObject)
         {
-            this.wrapped = wrapped;
+            this.wrapped = wrappedObject;
         }
 
         public struct LogCallInfo

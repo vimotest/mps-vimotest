@@ -10,8 +10,8 @@ import java.util.Objects;
 public class LoggerSpy implements Logger {
   private Logger wrapped;
 
-  public void setWrapped(Logger wrapped) {
-    this.wrapped = wrapped;
+  public void setWrapped(Logger wrappedObject) {
+    this.wrapped = wrappedObject;
   }
 
   public static class LogCallInfo {

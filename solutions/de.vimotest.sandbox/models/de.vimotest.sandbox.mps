@@ -25,10 +25,15 @@
       </concept>
     </language>
     <language id="611ecc9e-0703-4ab9-a13c-fb396c607716" name="de.vimotest.types">
-      <concept id="5995965180333994737" name="de.vimotest.types.structure.CustomEnumType" flags="ng" index="gnG1x">
+      <concept id="5995965180333994737" name="de.vimotest.types.structure.EnumType" flags="ng" index="gnG1x">
         <child id="5995965180333996969" name="symbols" index="gnG$T" />
       </concept>
       <concept id="5995965180333994738" name="de.vimotest.types.structure.EnumSymbol" flags="ng" index="gnG1y" />
+      <concept id="6810659576799622067" name="de.vimotest.types.structure.FieldTypeReference" flags="ng" index="2BLa5Z">
+        <reference id="6810659576799622123" name="typeRef" index="2BLa4B" />
+      </concept>
+      <concept id="6810659576799621540" name="de.vimotest.types.structure.RecordTypeUsage" flags="ng" index="2BLadC" />
+      <concept id="6810659576799621538" name="de.vimotest.types.structure.RecordType" flags="ng" index="2BLadI" />
       <concept id="4370345911585163139" name="de.vimotest.types.structure.CustomTypeNameBinding" flags="ng" index="2DeX7K">
         <property id="4370345911585163142" name="customName" index="2DeX7P" />
       </concept>
@@ -42,9 +47,7 @@
         <child id="8302028014366844236" name="nestedKeyType" index="14AXWM" />
         <child id="8302028014366844237" name="nestedValueType" index="14AXWN" />
       </concept>
-      <concept id="8302028014365370037" name="de.vimotest.types.structure.CustomEnumTypeUsage" flags="ng" index="14C5Nb">
-        <reference id="8302028014365370038" name="enumType" index="14C5N8" />
-      </concept>
+      <concept id="8302028014365370037" name="de.vimotest.types.structure.EnumTypeReference" flags="ng" index="14C5Nb" />
       <concept id="4317588443974596289" name="de.vimotest.types.structure.ICanHaveCustomNamespace" flags="ngI" index="1axd4h">
         <property id="4317588443974627811" name="namespace" index="1aAPoN" />
       </concept>
@@ -5320,6 +5323,14 @@
           <property role="TrG5h" value="AdditionalBool" />
           <node concept="1nBHEw" id="5C8UTa3U3Gq" role="3xMlr6" />
         </node>
+        <node concept="1nWCU9" id="5U4kGNTgf5h" role="3pPB2g">
+          <property role="TrG5h" value="AdditionalCustomElements" />
+          <node concept="1WnWvM" id="5U4kGNTgf5o" role="3xMlr6">
+            <node concept="2BLadC" id="5U4kGNTFklF" role="1WnWvN">
+              <ref role="2BLa4B" node="5U4kGNTnh1B" resolve="MyRowAdditions" />
+            </node>
+          </node>
+        </node>
         <node concept="E2vJn" id="4KZE_p8sHq2" role="E2v$k">
           <node concept="V3Zf6" id="4KZE_p8sHq3" role="E2vJm">
             <node concept="o7Kjd" id="4KZE_p8sHq4" role="o6p68">
@@ -5858,8 +5869,8 @@
         </node>
         <node concept="RSs3Z" id="5cPWD13v278" role="RSs6f">
           <property role="TrG5h" value="enumValue" />
-          <node concept="14C5Nb" id="7cQIBSRFmkK" role="3xMlr6">
-            <ref role="14C5N8" node="5cPWD13v25C" resolve="MyEnum" />
+          <node concept="14C5Nb" id="5U4kGNTFkop" role="3xMlr6">
+            <ref role="2BLa4B" node="5cPWD13v25C" resolve="MyEnum" />
           </node>
         </node>
         <node concept="RSs3Z" id="7cQIBSRRiQ4" role="RSs6f">
@@ -6285,6 +6296,24 @@
       <property role="1Hp$3Y" value="ConvertMyEnumToStr" />
       <node concept="QIaRa" id="7VjLoWj$fqv" role="lGtFl">
         <property role="QIaRf" value="MyCustomTypeInfoEnumValuesFile" />
+      </node>
+    </node>
+  </node>
+  <node concept="2BLadI" id="5U4kGNTnh1B">
+    <property role="3GE5qa" value="widgetassertions" />
+    <property role="TrG5h" value="MyRowAdditions" />
+    <node concept="1nWCU9" id="5U4kGNTFVf1" role="103ZUC">
+      <property role="TrG5h" value="MyFlag" />
+      <node concept="1nBHEw" id="5U4kGNTFVfi" role="3xMlr6" />
+    </node>
+    <node concept="1nWCU9" id="5U4kGNTFVgo" role="103ZUC">
+      <property role="TrG5h" value="MyName" />
+      <node concept="1nBS12" id="5U4kGNTFVh8" role="3xMlr6" />
+    </node>
+    <node concept="1nWCU9" id="5U4kGNTFVja" role="103ZUC">
+      <property role="TrG5h" value="Infos" />
+      <node concept="1WnWvM" id="5U4kGNTFVko" role="3xMlr6">
+        <node concept="1nBS12" id="5U4kGNTFVlM" role="1WnWvN" />
       </node>
     </node>
   </node>

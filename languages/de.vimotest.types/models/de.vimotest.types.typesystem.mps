@@ -310,14 +310,14 @@
     </node>
   </node>
   <node concept="1YbPZF" id="4gxFnBYwlpU">
-    <property role="TrG5h" value="typeof_CustomEnumTypeUsage" />
+    <property role="TrG5h" value="typeof_FieldTypeReference" />
     <property role="3GE5qa" value="struct.types.enum" />
     <node concept="3clFbS" id="4gxFnBYwlpV" role="18ibNy">
       <node concept="1Z5TYs" id="4gxFnBYwlqv" role="3cqZAp">
         <node concept="mw_s8" id="4gxFnBYwlqw" role="1ZfhK$">
           <node concept="1Z2H0r" id="4gxFnBYwlqx" role="mwGJk">
             <node concept="1YBJjd" id="4gxFnBYwlqy" role="1Z2MuG">
-              <ref role="1YBMHb" node="4gxFnBYwlpX" resolve="node" />
+              <ref role="1YBMHb" node="4gxFnBYwlpX" resolve="fieldTypeReference" />
             </node>
           </node>
         </node>
@@ -325,10 +325,10 @@
           <node concept="1Z2H0r" id="4gxFnBYwlsz" role="mwGJk">
             <node concept="2OqwBi" id="4gxFnBYwlBl" role="1Z2MuG">
               <node concept="1YBJjd" id="4gxFnBYwltx" role="2Oq$k0">
-                <ref role="1YBMHb" node="4gxFnBYwlpX" resolve="node" />
+                <ref role="1YBMHb" node="4gxFnBYwlpX" resolve="fieldTypeReference" />
               </node>
-              <node concept="3TrEf2" id="4gxFnBYwm8W" role="2OqNvi">
-                <ref role="3Tt5mk" to="evry:7cQIBSR_IqQ" resolve="enumType" />
+              <node concept="3TrEf2" id="5U4kGNTghv3" role="2OqNvi">
+                <ref role="3Tt5mk" to="evry:5U4kGNTgffF" resolve="typeRef" />
               </node>
             </node>
           </node>
@@ -336,8 +336,8 @@
       </node>
     </node>
     <node concept="1YaCAy" id="4gxFnBYwlpX" role="1YuTPh">
-      <property role="TrG5h" value="node" />
-      <ref role="1YaFvo" to="evry:7cQIBSR_IqP" resolve="CustomEnumTypeUsage" />
+      <property role="TrG5h" value="fieldTypeReference" />
+      <ref role="1YaFvo" to="evry:5U4kGNTgfeN" resolve="FieldTypeReference" />
     </node>
   </node>
   <node concept="1YbPZF" id="4gxFnBYwmbH">
@@ -361,7 +361,31 @@
     </node>
     <node concept="1YaCAy" id="4gxFnBYwmbK" role="1YuTPh">
       <property role="TrG5h" value="node" />
-      <ref role="1YaFvo" to="evry:5cPWD13qNbL" resolve="CustomEnumType" />
+      <ref role="1YaFvo" to="evry:5cPWD13qNbL" resolve="EnumType" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5U4kGNTghCh">
+    <property role="TrG5h" value="typeof_RecordType" />
+    <property role="3GE5qa" value="struct.types.record" />
+    <node concept="3clFbS" id="5U4kGNTghCi" role="18ibNy">
+      <node concept="1Z5TYs" id="5U4kGNTghCo" role="3cqZAp">
+        <node concept="mw_s8" id="5U4kGNTghCp" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5U4kGNTghCq" role="mwGJk">
+            <node concept="1YBJjd" id="5U4kGNTghCr" role="1Z2MuG">
+              <ref role="1YBMHb" node="5U4kGNTghCk" resolve="node" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5U4kGNTghCs" role="1ZfhKB">
+          <node concept="1YBJjd" id="5U4kGNTghCt" role="mwGJk">
+            <ref role="1YBMHb" node="5U4kGNTghCk" resolve="node" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5U4kGNTghCk" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="evry:5U4kGNTgf6y" resolve="RecordType" />
     </node>
   </node>
 </model>

@@ -7,8 +7,8 @@ class LoggerSpy specializes Logger {
   private wrapped : Logger  ;
   
   
-  public setWrapped (   in wrapped: Logger  ) {
-    this.wrapped = wrapped;
+  public setWrapped (   in wrappedObject: Logger  ) {
+    this.wrapped = wrappedObject;
 
   }
   

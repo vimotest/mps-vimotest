@@ -70,6 +70,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/Logger.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/subscope/MessageBus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/ViewDependencyView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/MyRowAdditions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)commands/SelectEntryCommand_ViewModelMyOptionsOption.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/RadioButton_ViewModelOptionsOption.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/MyEnum.cs" />

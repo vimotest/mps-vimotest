@@ -80,6 +80,7 @@
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -162,7 +163,7 @@
       <ref role="PrY4T" to="28lk:1KdBIfXINz6" resolve="TypeName" />
     </node>
     <node concept="PrWs8" id="7cQIBSRFmlf" role="PzmwI">
-      <ref role="PrY4T" node="7cQIBSRFmle" resolve="IViMoTestType" />
+      <ref role="PrY4T" node="7cQIBSRFmle" resolve="IViMoFieldType" />
     </node>
   </node>
   <node concept="1TIwiD" id="6LujpsVKo4e">
@@ -190,10 +191,10 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="nestedType" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7cQIBSRFmle" resolve="IViMoTestType" />
+      <ref role="20lvS9" node="7cQIBSRFmle" resolve="IViMoFieldType" />
     </node>
     <node concept="PrWs8" id="7cQIBSRFm$Q" role="PzmwI">
-      <ref role="PrY4T" node="7cQIBSRFm$O" resolve="ICollectionType" />
+      <ref role="PrY4T" node="7cQIBSRFm$O" resolve="ICollectionFieldType" />
     </node>
   </node>
   <node concept="25R3W" id="1EVo$X00Gbs">
@@ -223,23 +224,10 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5cPWD13qN6U">
-    <property role="EcuMT" value="5995965180333994426" />
-    <property role="3GE5qa" value="struct.types.enum" />
-    <property role="TrG5h" value="EnumTypeUsageBase" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="28lk:2SMO68r_I0M" resolve="SyntaxElement" />
-    <node concept="PrWs8" id="5cPWD13qN6V" role="PzmwI">
-      <ref role="PrY4T" to="28lk:1KdBIfXINz6" resolve="TypeName" />
-    </node>
-    <node concept="PrWs8" id="7cQIBSRFmlg" role="PzmwI">
-      <ref role="PrY4T" node="7cQIBSRFmle" resolve="IViMoTestType" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="5cPWD13qNbL">
     <property role="EcuMT" value="5995965180333994737" />
     <property role="3GE5qa" value="struct.types.enum" />
-    <property role="TrG5h" value="CustomEnumType" />
+    <property role="TrG5h" value="EnumType" />
     <property role="34LRSv" value="enum type" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -287,13 +275,17 @@
   <node concept="1TIwiD" id="7cQIBSR_IqP">
     <property role="EcuMT" value="8302028014365370037" />
     <property role="3GE5qa" value="struct.types.enum" />
-    <property role="TrG5h" value="CustomEnumTypeUsage" />
+    <property role="TrG5h" value="EnumTypeReference" />
     <property role="34LRSv" value="enum" />
-    <ref role="1TJDcQ" node="5cPWD13qN6U" resolve="EnumTypeUsageBase" />
+    <ref role="1TJDcQ" node="5U4kGNTgfeN" resolve="FieldTypeReference" />
     <node concept="1TJgyj" id="7cQIBSR_IqQ" role="1TKVEi">
       <property role="IQ2ns" value="8302028014365370038" />
       <property role="20kJfa" value="enumType" />
-      <ref role="20lvS9" node="5cPWD13qNbL" resolve="CustomEnumType" />
+      <ref role="20lvS9" node="5cPWD13qNbL" resolve="EnumType" />
+      <ref role="20ksaX" node="5U4kGNTgffF" resolve="typeRef" />
+    </node>
+    <node concept="PrWs8" id="5U4kGNTgj$6" role="PzmwI">
+      <ref role="PrY4T" node="5U4kGNTgjy_" resolve="IEnumTypeReferenceBase" />
     </node>
   </node>
   <node concept="1TIwiD" id="7cQIBSR_MCK">
@@ -301,7 +293,10 @@
     <property role="3GE5qa" value="struct.types.enum" />
     <property role="TrG5h" value="DialogResultEnum" />
     <property role="34LRSv" value="dialog result" />
-    <ref role="1TJDcQ" node="5cPWD13qN6U" resolve="EnumTypeUsageBase" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5U4kGNTgj$7" role="PzmwI">
+      <ref role="PrY4T" node="5U4kGNTgjy_" resolve="IEnumTypeReferenceBase" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7cQIBSRFmlb">
     <property role="EcuMT" value="8302028014366844235" />
@@ -314,28 +309,31 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="nestedKeyType" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7cQIBSRFmle" resolve="IViMoTestType" />
+      <ref role="20lvS9" node="7cQIBSRFmle" resolve="IViMoFieldType" />
     </node>
     <node concept="1TJgyj" id="7cQIBSRFmld" role="1TKVEi">
       <property role="IQ2ns" value="8302028014366844237" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="nestedValueType" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7cQIBSRFmle" resolve="IViMoTestType" />
+      <ref role="20lvS9" node="7cQIBSRFmle" resolve="IViMoFieldType" />
     </node>
     <node concept="PrWs8" id="7cQIBSRFm$P" role="PzmwI">
-      <ref role="PrY4T" node="7cQIBSRFm$O" resolve="ICollectionType" />
+      <ref role="PrY4T" node="7cQIBSRFm$O" resolve="ICollectionFieldType" />
     </node>
   </node>
   <node concept="PlHQZ" id="7cQIBSRFmle">
     <property role="EcuMT" value="8302028014366844238" />
     <property role="3GE5qa" value="struct.types" />
-    <property role="TrG5h" value="IViMoTestType" />
+    <property role="TrG5h" value="IViMoFieldType" />
   </node>
   <node concept="PlHQZ" id="7cQIBSRFm$O">
     <property role="EcuMT" value="8302028014366845236" />
     <property role="3GE5qa" value="struct.types" />
-    <property role="TrG5h" value="ICollectionType" />
+    <property role="TrG5h" value="ICollectionFieldType" />
+    <node concept="PrWs8" id="5U4kGNTgffD" role="PrDN$">
+      <ref role="PrY4T" node="7cQIBSRFmle" resolve="IViMoFieldType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7cQIBSRFq9C">
     <property role="EcuMT" value="8302028014366859880" />
@@ -348,10 +346,10 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="nestedType" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7cQIBSRFmle" resolve="IViMoTestType" />
+      <ref role="20lvS9" node="7cQIBSRFmle" resolve="IViMoFieldType" />
     </node>
     <node concept="PrWs8" id="7cQIBSRFq9F" role="PzmwI">
-      <ref role="PrY4T" node="7cQIBSRFm$O" resolve="ICollectionType" />
+      <ref role="PrY4T" node="7cQIBSRFm$O" resolve="ICollectionFieldType" />
     </node>
   </node>
   <node concept="1TIwiD" id="2N4oO4qvcUb">
@@ -430,7 +428,7 @@
       <ref role="20lvS9" node="7VjLoWiMz6G" resolve="EnumToStringOperationInfo" />
     </node>
     <node concept="PrWs8" id="7VjLoWjgzpn" role="PrDN$">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" node="5U4kGNTgffA" resolve="IReferenceableFieldType" />
     </node>
   </node>
   <node concept="1TIwiD" id="7VjLoWiMz6G">
@@ -466,6 +464,84 @@
     </node>
     <node concept="t5JxF" id="7VjLoWiMzkr" role="lGtFl">
       <property role="t5JxN" value="Base interface for customizable typename, filename and namespace" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5U4kGNTgf6y">
+    <property role="EcuMT" value="6810659576799621538" />
+    <property role="3GE5qa" value="struct.types.record" />
+    <property role="TrG5h" value="RecordType" />
+    <property role="34LRSv" value="record type" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" node="F907haLJu3" resolve="AbstractNamedStructType" />
+    <node concept="PrWs8" id="5U4kGNTgffE" role="PzmwI">
+      <ref role="PrY4T" node="5U4kGNTgffA" resolve="IReferenceableFieldType" />
+    </node>
+    <node concept="PrWs8" id="5U4kGNU5jNa" role="PzmwI">
+      <ref role="PrY4T" node="7VjLoWiMzkq" resolve="ICustomizableTypeInfo" />
+    </node>
+    <node concept="1irR5M" id="5U4kGNTwwFg" role="rwd14">
+      <property role="2$rrk2" value="2" />
+      <node concept="1irR9n" id="5U4kGNTwwFi" role="2rmM5M">
+        <node concept="3PKj8D" id="5U4kGNTwwFj" role="3PKjn_">
+          <property role="3PKj8l" value="000040" />
+        </node>
+      </node>
+      <node concept="1irPie" id="5U4kGNTwwFk" role="2rmM5M">
+        <property role="1irPi9" value="R" />
+        <node concept="3PKj8D" id="5U4kGNTwwFl" role="3PKjny">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5U4kGNTgf6$">
+    <property role="EcuMT" value="6810659576799621540" />
+    <property role="3GE5qa" value="struct.types.record" />
+    <property role="TrG5h" value="RecordTypeUsage" />
+    <property role="34LRSv" value="record" />
+    <ref role="1TJDcQ" node="5U4kGNTgfeN" resolve="FieldTypeReference" />
+    <node concept="1TJgyj" id="5U4kGNTgf6_" role="1TKVEi">
+      <property role="IQ2ns" value="6810659576799621541" />
+      <property role="20kJfa" value="recordType" />
+      <ref role="20lvS9" node="5U4kGNTgf6y" resolve="RecordType" />
+      <ref role="20ksaX" node="5U4kGNTgffF" resolve="typeRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5U4kGNTgfeN">
+    <property role="EcuMT" value="6810659576799622067" />
+    <property role="3GE5qa" value="struct.types" />
+    <property role="TrG5h" value="FieldTypeReference" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="28lk:2SMO68r_I0M" resolve="SyntaxElement" />
+    <node concept="PrWs8" id="5U4kGNTgfeO" role="PzmwI">
+      <ref role="PrY4T" to="28lk:1KdBIfXINz6" resolve="TypeName" />
+    </node>
+    <node concept="PrWs8" id="5U4kGNTgfeP" role="PzmwI">
+      <ref role="PrY4T" node="7cQIBSRFmle" resolve="IViMoFieldType" />
+    </node>
+    <node concept="1TJgyj" id="5U4kGNTgffF" role="1TKVEi">
+      <property role="IQ2ns" value="6810659576799622123" />
+      <property role="20kJfa" value="typeRef" />
+      <ref role="20lvS9" node="5U4kGNTgffA" resolve="IReferenceableFieldType" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5U4kGNTgffA">
+    <property role="EcuMT" value="6810659576799622118" />
+    <property role="3GE5qa" value="struct.types" />
+    <property role="TrG5h" value="IReferenceableFieldType" />
+    <node concept="PrWs8" id="5U4kGNTgffC" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5U4kGNTgjy_">
+    <property role="TrG5h" value="IEnumTypeReferenceBase" />
+    <property role="3GE5qa" value="struct.types.enum" />
+    <property role="EcuMT" value="5995965180333994426" />
+    <node concept="PrWs8" id="5cPWD13qN6V" role="PrDN$">
+      <ref role="PrY4T" to="28lk:1KdBIfXINz6" resolve="TypeName" />
+    </node>
+    <node concept="PrWs8" id="7cQIBSRFmlg" role="PrDN$">
+      <ref role="PrY4T" node="7cQIBSRFmle" resolve="IViMoFieldType" />
     </node>
   </node>
 </model>

@@ -19,6 +19,13 @@ public class LowLevelFields_ViewModelCustomTableRowFieldRow {
 
   }
   
+  public AdditionalCustomElements : MyRowAdditions [ * ]  ;
+  
+  public getAdditionalCustomElements (  ) : MyRowAdditions [ * ]  {
+    return this.AdditionalCustomElements;
+
+  }
+  
   private RowHandle : String  ;
   
   public getRowHandle (  ) : String  {

@@ -4014,6 +4014,39 @@
         </node>
       </node>
     </node>
+    <node concept="2YIFZL" id="7SGLJDO$Wwg" role="jymVt">
+      <property role="TrG5h" value="getDisplayValueForPattern" />
+      <node concept="3clFbS" id="7SGLJDO$Wwh" role="3clF47">
+        <node concept="3clFbF" id="7SGLJDO$Wwi" role="3cqZAp">
+          <node concept="2OqwBi" id="7SGLJDO$Wwj" role="3clFbG">
+            <node concept="2YIFZM" id="7SGLJDO$Wwk" role="2Oq$k0">
+              <ref role="37wK5l" to="ao3:~TextGeneratorEngine.generateText(org.jetbrains.mps.openapi.model.SNode)" resolve="generateText" />
+              <ref role="1Pybhc" to="ao3:~TextGeneratorEngine" resolve="TextGeneratorEngine" />
+              <node concept="37vLTw" id="7SGLJDO$Wwl" role="37wK5m">
+                <ref role="3cqZAo" node="7SGLJDO$Wwr" resolve="pattern" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7SGLJDO$Wwm" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
+              <node concept="Xl_RD" id="7SGLJDO$Wwn" role="37wK5m">
+                <property role="Xl_RC" value="\&quot;" />
+              </node>
+              <node concept="Xl_RD" id="7SGLJDO$Wwo" role="37wK5m">
+                <property role="Xl_RC" value="\\\\\&quot;" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7SGLJDO$Wwp" role="1B3o_S" />
+      <node concept="17QB3L" id="7SGLJDO$Wwq" role="3clF45" />
+      <node concept="37vLTG" id="7SGLJDO$Wwr" role="3clF46">
+        <property role="TrG5h" value="pattern" />
+        <node concept="3Tqbb2" id="7SGLJDO$Wws" role="1tU5fm">
+          <ref role="ehGHo" to="53m0:5vdnfLxY$9D" resolve="AbstractPattern" />
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="6TppBVxnx3P" role="1B3o_S" />
   </node>
 </model>

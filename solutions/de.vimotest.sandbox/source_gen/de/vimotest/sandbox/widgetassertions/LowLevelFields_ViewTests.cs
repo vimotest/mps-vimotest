@@ -30,18 +30,25 @@ public class LowLevelFields_ViewTests
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
-    public void Primitive_List_Field_Asserts_given_when_then_MyStrings_is_new_String____A___B__()
+    public void Primitive_List_Field_Asserts_given_when_then_MyStrings_is_todo_listpattern()
     {
         this.BuildSut();
-        this.then_MyStrings_is_new_String____A___B__();
+        this.then_MyStrings_is_todo_listpattern();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
-    public void Rowbased_Primitive_Fields_given_when_then_CustomListRowField_has_1_rows_and_CustomTableRowField_has_1_rows_and_CustomTreeRowField_has_1_rows()
+    public void Record_Field_Asserts_given_when_then_MyAdditions_is_todo_recordpattern()
     {
         this.BuildSut();
-        this.then_CustomListRowField_has_1_rows();
+        this.then_MyAdditions_is_todo_recordpattern();
+    }
+
+    [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
+    public void Rowbased_Primitive_Fields_given_when_then_CustomTableRowField_has_1_rows_and_CustomListRowField_has_1_rows_and_CustomTreeRowField_has_1_rows()
+    {
+        this.BuildSut();
         this.then_CustomTableRowField_has_1_rows();
+        this.then_CustomListRowField_has_1_rows();
         this.then_CustomTreeRowField_has_1_rows();
     }
 
@@ -65,25 +72,25 @@ public class LowLevelFields_ViewTests
         Assert.AreEqual("text", this.sut.getMyString(), "Expected field 'MyString' has value <" + "text" + ">, but it was <" + this.sut.getMyString() + ">");
     }
 
-    public virtual void then_MyStrings_is_new_String____A___B__()
+    public virtual void then_MyStrings_is_todo_listpattern()
     {
-        var actualMyStrings = this.sut.getMyStrings();
-        Assert.AreEqual("A", actualMyStrings[0], "Expected field 'MyStrings[0]' has value <" + "A" + ">, but it was <" + actualMyStrings[0] + ">");
-        Assert.AreEqual("B", actualMyStrings[1], "Expected field 'MyStrings[1]' has value <" + "B" + ">, but it was <" + actualMyStrings[1] + ">");
+        var actualList = this.sut.getMyStrings();
+        var actualListItem_0 = actualList[0];
+        Assert.AreEqual("A", actualListItem_0, "Expected list item at index 0 has value <" + "A" + ">, but it was <" + actualListItem_0 + ">");
+        var actualListItem_1 = actualList[1];
+        Assert.AreEqual("B", actualListItem_1, "Expected list item at index 1 has value <" + "B" + ">, but it was <" + actualListItem_1 + ">");
     }
 
-    public virtual void then_CustomListRowField_has_1_rows()
+    public virtual void then_MyAdditions_is_todo_recordpattern()
     {
-        var actualRows = this.sut.getCustomListRowFieldListRows();
-        Assert.AreEqual(1, actualRows.Count, "Expected that list view CustomListRowField has 1 rows, but has " + Convert.ToString(actualRows.Count));
-
-        {
-            var row0 = actualRows[0];
-            Assert.AreEqual("0", row0.getRowHandle(), "Expected that list view CustomListRowField row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">");
-            Assert.AreEqual("", row0.getHeaderLabelText(), "Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText() + ">");
-            var actualAdditionalStrings = row0.getAdditionalStrings();
-            Assert.AreEqual("A", actualAdditionalStrings[0], "Expected field 'AdditionalStrings[0]' has value <" + "A" + ">, but it was <" + actualAdditionalStrings[0] + ">");
-        }
+        var actualMyAdditions = this.sut.getMyAdditions();
+        Assert.IsFalse(actualMyAdditions.getMyFlag(), "Expected field 'MyFlag' has boolean value <false>, but it was <" + (actualMyAdditions.getMyFlag() ? "true" : "false") + ">");
+        var actualList_1 = actualMyAdditions.getInfos();
+        var actualListItem_0 = actualList_1[0];
+        Assert.AreEqual("A", actualListItem_0, "Expected list item at index 0 has value <" + "A" + ">, but it was <" + actualListItem_0 + ">");
+        var actualListItem_1 = actualList_1[1];
+        Assert.AreEqual("B", actualListItem_1, "Expected list item at index 1 has value <" + "B" + ">, but it was <" + actualListItem_1 + ">");
+        Assert.AreEqual("Test", actualMyAdditions.getMyName(), "Expected field 'MyName' has value <" + "Test" + ">, but it was <" + actualMyAdditions.getMyName() + ">");
     }
 
     public virtual void then_CustomTableRowField_has_1_rows()
@@ -96,6 +103,24 @@ public class LowLevelFields_ViewTests
             Assert.AreEqual("0", row0.getRowHandle(), "Expected that table view CustomTableRowField row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">");
             Assert.AreEqual("", row0.getHeaderLabelText(), "Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText() + ">");
             Assert.IsFalse(row0.getAdditionalBool(), "Expected field 'AdditionalBool' has boolean value <false>, but it was <" + (row0.getAdditionalBool() ? "true" : "false") + ">");
+            var actualList_2 = row0.getAdditionalCustomElements();
+            var actualListItem_0 = actualList_2[0];
+            Assert.IsFalse(actualListItem_0.getMyFlag(), "Expected field 'MyFlag' has boolean value <false>, but it was <" + (actualListItem_0.getMyFlag() ? "true" : "false") + ">");
+        }
+    }
+
+    public virtual void then_CustomListRowField_has_1_rows()
+    {
+        var actualRows = this.sut.getCustomListRowFieldListRows();
+        Assert.AreEqual(1, actualRows.Count, "Expected that list view CustomListRowField has 1 rows, but has " + Convert.ToString(actualRows.Count));
+
+        {
+            var row0 = actualRows[0];
+            Assert.AreEqual("0", row0.getRowHandle(), "Expected that list view CustomListRowField row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">");
+            Assert.AreEqual("", row0.getHeaderLabelText(), "Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText() + ">");
+            var actualList_3 = row0.getAdditionalStrings();
+            var actualListItem_0 = actualList_3[0];
+            Assert.AreEqual("A", actualListItem_0, "Expected list item at index 0 has value <" + "A" + ">, but it was <" + actualListItem_0 + ">");
         }
     }
 

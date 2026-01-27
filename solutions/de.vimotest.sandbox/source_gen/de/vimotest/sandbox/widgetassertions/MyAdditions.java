@@ -5,7 +5,7 @@ package de.vimotest.sandbox.widgetassertions;
 import java.util.List;
 import java.util.LinkedList;
 
-public class MyRowAdditions {
+public class MyAdditions {
   public Boolean MyFlag;
   public Boolean getMyFlag() {
     return this.MyFlag;
@@ -18,9 +18,9 @@ public class MyRowAdditions {
   public List<String> getInfos() {
     return this.Infos;
   }
-  public MyRowAdditions() {
+  public MyAdditions() {
   }
-  public MyRowAdditions(Boolean MyFlag, String MyName, List<String> Infos) {
+  public MyAdditions(Boolean MyFlag, String MyName, List<String> Infos) {
     this.MyFlag = MyFlag;
     this.MyName = MyName;
     this.Infos = Infos;

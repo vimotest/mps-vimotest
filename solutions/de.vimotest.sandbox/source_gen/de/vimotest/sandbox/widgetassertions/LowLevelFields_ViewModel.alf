@@ -33,6 +33,13 @@ public class LowLevelFields_ViewModel {
 
   }
   
+  public MyAdditions : MyAdditions  ;
+  
+  public getMyAdditions (  ) : MyAdditions  {
+    return this.MyAdditions;
+
+  }
+  
   private CustomTableRowFieldTableRows : LowLevelFields_ViewModelCustomTableRowFieldRow [ * ]  ;
   
   public getCustomTableRowFieldTableRows (  ) : LowLevelFields_ViewModelCustomTableRowFieldRow [ * ]  {

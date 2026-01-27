@@ -1,6 +1,7 @@
 #pragma once
 
 #include <vector>
+#include "MyAdditions.h"
 #include <memory>
 #include "LowLevelFields_ViewModelCustomTableRowFieldRow.h"
 #include "LowLevelFields_ViewModelCustomListRowFieldRow.h"
@@ -20,6 +21,8 @@ namespace widgetassertions
     virtual std::string getMyString();
     std::vector<std::string> MyStrings;
     virtual std::vector<std::string> getMyStrings();
+    MyAdditions MyAdditions;
+    virtual MyAdditions getMyAdditions();
     virtual std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomTableRowFieldRow>> getCustomTableRowFieldTableRows();
     virtual std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomListRowFieldRow>> getCustomListRowFieldListRows();
     virtual std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomTreeRowFieldRow>> getCustomTreeRowFieldTreeRows();

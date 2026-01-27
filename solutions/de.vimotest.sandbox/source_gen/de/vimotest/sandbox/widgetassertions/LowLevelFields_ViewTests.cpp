@@ -4,8 +4,9 @@
 #include <string>
 #include "LowLevelFields_ViewModel.h"
 #include <vector>
-#include "LowLevelFields_ViewModelCustomListRowFieldRow.h"
+#include "MyAdditions.h"
 #include "LowLevelFields_ViewModelCustomTableRowFieldRow.h"
+#include "LowLevelFields_ViewModelCustomListRowFieldRow.h"
 #include "LowLevelFields_ViewModelCustomTreeRowFieldRow.h"
 #include "LowLevelFields_ViewModelTestEnvironmentImpl.h"
 
@@ -20,9 +21,10 @@ namespace widgetassertions
     virtual void then_MyBool_is_true();
     virtual void then_MyInt_is_42();
     virtual void then_MyString_is_text_();
-    virtual void then_MyStrings_is_new_String____A___B__();
-    virtual void then_CustomListRowField_has_1_rows();
+    virtual void then_MyStrings_is_todo_listpattern();
+    virtual void then_MyAdditions_is_todo_recordpattern();
     virtual void then_CustomTableRowField_has_1_rows();
+    virtual void then_CustomListRowField_has_1_rows();
     virtual void then_CustomTreeRowField_has_1_rows();
   protected:
     void SetUp() override;
@@ -39,16 +41,21 @@ namespace widgetassertions
     this->then_MyInt_is_42();
     this->then_MyString_is_text_();
   }
-  TEST_F(LowLevelFields_ViewTests, Primitive_List_Field_Asserts_given_when_then_MyStrings_is_new_String____A___B__)
+  TEST_F(LowLevelFields_ViewTests, Primitive_List_Field_Asserts_given_when_then_MyStrings_is_todo_listpattern)
   {
     this->BuildSut();
-    this->then_MyStrings_is_new_String____A___B__();
+    this->then_MyStrings_is_todo_listpattern();
   }
-  TEST_F(LowLevelFields_ViewTests, Rowbased_Primitive_Fields_given_when_then_CustomListRowField_has_1_rows_and_CustomTableRowField_has_1_rows_and_CustomTreeRowField_has_1_rows)
+  TEST_F(LowLevelFields_ViewTests, Record_Field_Asserts_given_when_then_MyAdditions_is_todo_recordpattern)
   {
     this->BuildSut();
-    this->then_CustomListRowField_has_1_rows();
+    this->then_MyAdditions_is_todo_recordpattern();
+  }
+  TEST_F(LowLevelFields_ViewTests, Rowbased_Primitive_Fields_given_when_then_CustomTableRowField_has_1_rows_and_CustomListRowField_has_1_rows_and_CustomTreeRowField_has_1_rows)
+  {
+    this->BuildSut();
     this->then_CustomTableRowField_has_1_rows();
+    this->then_CustomListRowField_has_1_rows();
     this->then_CustomTreeRowField_has_1_rows();
   }
   void LowLevelFields_ViewTests::BuildSut()
@@ -67,23 +74,24 @@ namespace widgetassertions
   {
     EXPECT_EQ(std::string("text"), this->sut->getMyString()) << std::string("Expected field 'MyString' has value <") + std::string("text") + std::string(">, but it was <") + this->sut->getMyString() + std::string(">");
   }
-  void LowLevelFields_ViewTests::then_MyStrings_is_new_String____A___B__()
+  void LowLevelFields_ViewTests::then_MyStrings_is_todo_listpattern()
   {
-    auto actualMyStrings = this->sut->getMyStrings();
-    EXPECT_EQ(std::string("A"), actualMyStrings.at(0)) << std::string("Expected field 'MyStrings[0]' has value <") + std::string("A") + std::string(">, but it was <") + actualMyStrings.at(0) + std::string(">");
-    EXPECT_EQ(std::string("B"), actualMyStrings.at(1)) << std::string("Expected field 'MyStrings[1]' has value <") + std::string("B") + std::string(">, but it was <") + actualMyStrings.at(1) + std::string(">");
+    auto actualList = this->sut->getMyStrings();
+    auto actualListItem_0 = actualList.at(0);
+    EXPECT_EQ(std::string("A"), actualListItem_0) << std::string("Expected list item at index 0 has value <") + std::string("A") + std::string(">, but it was <") + actualListItem_0 + std::string(">");
+    auto actualListItem_1 = actualList.at(1);
+    EXPECT_EQ(std::string("B"), actualListItem_1) << std::string("Expected list item at index 1 has value <") + std::string("B") + std::string(">, but it was <") + actualListItem_1 + std::string(">");
   }
-  void LowLevelFields_ViewTests::then_CustomListRowField_has_1_rows()
+  void LowLevelFields_ViewTests::then_MyAdditions_is_todo_recordpattern()
   {
-    auto actualRows = this->sut->getCustomListRowFieldListRows();
-    EXPECT_EQ(1, actualRows.size()) << std::string("Expected that list view CustomListRowField has 1 rows, but has ") + std::to_string(actualRows.size());
-    // {
-    auto& row0 = actualRows.at(0);
-    EXPECT_EQ(std::string("0"), row0->getRowHandle()) << std::string("Expected that list view CustomListRowField row at index 0 has rowhandle <0>, but was <") + row0->getRowHandle() + std::string(">");
-    EXPECT_EQ(std::string(""), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
-    auto actualAdditionalStrings = row0->getAdditionalStrings();
-    EXPECT_EQ(std::string("A"), actualAdditionalStrings.at(0)) << std::string("Expected field 'AdditionalStrings[0]' has value <") + std::string("A") + std::string(">, but it was <") + actualAdditionalStrings.at(0) + std::string(">");
-    // }
+    auto actualMyAdditions = this->sut->getMyAdditions();
+    EXPECT_FALSE(actualMyAdditions.getMyFlag()) << std::string("Expected field 'MyFlag' has boolean value <false>, but it was <") + (actualMyAdditions.getMyFlag() ? std::string("true") : std::string("false")) + std::string(">");
+    auto actualList_1 = actualMyAdditions.getInfos();
+    auto actualListItem_0 = actualList_1.at(0);
+    EXPECT_EQ(std::string("A"), actualListItem_0) << std::string("Expected list item at index 0 has value <") + std::string("A") + std::string(">, but it was <") + actualListItem_0 + std::string(">");
+    auto actualListItem_1 = actualList_1.at(1);
+    EXPECT_EQ(std::string("B"), actualListItem_1) << std::string("Expected list item at index 1 has value <") + std::string("B") + std::string(">, but it was <") + actualListItem_1 + std::string(">");
+    EXPECT_EQ(std::string("Test"), actualMyAdditions.getMyName()) << std::string("Expected field 'MyName' has value <") + std::string("Test") + std::string(">, but it was <") + actualMyAdditions.getMyName() + std::string(">");
   }
   void LowLevelFields_ViewTests::then_CustomTableRowField_has_1_rows()
   {
@@ -94,6 +102,22 @@ namespace widgetassertions
     EXPECT_EQ(std::string("0"), row0->getRowHandle()) << std::string("Expected that table view CustomTableRowField row at index 0 has rowhandle <0>, but was <") + row0->getRowHandle() + std::string(">");
     EXPECT_EQ(std::string(""), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
     EXPECT_FALSE(row0->getAdditionalBool()) << std::string("Expected field 'AdditionalBool' has boolean value <false>, but it was <") + (row0->getAdditionalBool() ? std::string("true") : std::string("false")) + std::string(">");
+    auto actualList_2 = row0->getAdditionalCustomElements();
+    auto actualListItem_0 = actualList_2.at(0);
+    EXPECT_FALSE(actualListItem_0.getMyFlag()) << std::string("Expected field 'MyFlag' has boolean value <false>, but it was <") + (actualListItem_0.getMyFlag() ? std::string("true") : std::string("false")) + std::string(">");
+    // }
+  }
+  void LowLevelFields_ViewTests::then_CustomListRowField_has_1_rows()
+  {
+    auto actualRows = this->sut->getCustomListRowFieldListRows();
+    EXPECT_EQ(1, actualRows.size()) << std::string("Expected that list view CustomListRowField has 1 rows, but has ") + std::to_string(actualRows.size());
+    // {
+    auto& row0 = actualRows.at(0);
+    EXPECT_EQ(std::string("0"), row0->getRowHandle()) << std::string("Expected that list view CustomListRowField row at index 0 has rowhandle <0>, but was <") + row0->getRowHandle() + std::string(">");
+    EXPECT_EQ(std::string(""), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
+    auto actualList_3 = row0->getAdditionalStrings();
+    auto actualListItem_0 = actualList_3.at(0);
+    EXPECT_EQ(std::string("A"), actualListItem_0) << std::string("Expected list item at index 0 has value <") + std::string("A") + std::string(">, but it was <") + actualListItem_0 + std::string(">");
     // }
   }
   void LowLevelFields_ViewTests::then_CustomTreeRowField_has_1_rows()

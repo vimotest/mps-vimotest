@@ -1,11 +1,11 @@
 /// <filename>
-///     MyRowAdditions.cs
+///     MyAdditions.cs
 /// </filename>
 using System.Collections.Generic;
 
 namespace widgetassertions
 {
-    public struct MyRowAdditions
+    public struct MyAdditions
     {
         public bool MyFlag;
 
@@ -28,11 +28,11 @@ namespace widgetassertions
             return this.Infos;
         }
 
-        public MyRowAdditions()
+        public MyAdditions()
         {
         }
 
-        public MyRowAdditions(bool MyFlag, string MyName, System.Collections.Generic.List<string> Infos)
+        public MyAdditions(bool MyFlag, string MyName, System.Collections.Generic.List<string> Infos)
         {
             this.MyFlag = MyFlag;
             this.MyName = MyName;

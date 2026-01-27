@@ -1,6 +1,6 @@
 #include "LowLevelFields_ViewModelCustomTableRowFieldRow.h"
 #include <vector>
-#include "MyRowAdditions.h"
+#include "MyAdditions.h"
 #include <string>
 
 namespace widgetassertions
@@ -13,7 +13,7 @@ namespace widgetassertions
   {
     return this->AdditionalBool;
   }
-  std::vector<MyRowAdditions> LowLevelFields_ViewModelCustomTableRowFieldRow::getAdditionalCustomElements()
+  std::vector<MyAdditions> LowLevelFields_ViewModelCustomTableRowFieldRow::getAdditionalCustomElements()
   {
     return this->AdditionalCustomElements;
   }

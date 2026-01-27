@@ -5,7 +5,7 @@
 
 namespace widgetassertions
 {
-  struct MyRowAdditions
+  struct MyAdditions
   {
     bool MyFlag;
     bool getMyFlag();

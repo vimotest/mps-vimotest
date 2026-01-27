@@ -14,8 +14,8 @@ public class LowLevelFields_ViewModelCustomTableRowFieldRow {
   public Boolean getAdditionalBool() {
     return this.AdditionalBool;
   }
-  public List<MyRowAdditions> AdditionalCustomElements = new LinkedList<>();
-  public List<MyRowAdditions> getAdditionalCustomElements() {
+  public List<MyAdditions> AdditionalCustomElements = new LinkedList<>();
+  public List<MyAdditions> getAdditionalCustomElements() {
     return this.AdditionalCustomElements;
   }
   private String RowHandle;

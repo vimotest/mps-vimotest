@@ -1,7 +1,7 @@
 #pragma once
 
 #include <vector>
-#include "MyRowAdditions.h"
+#include "MyAdditions.h"
 #include <string>
 
 namespace widgetassertions
@@ -12,8 +12,8 @@ namespace widgetassertions
     virtual std::string getHeaderLabelText();
     bool AdditionalBool;
     virtual bool getAdditionalBool();
-    std::vector<MyRowAdditions> AdditionalCustomElements;
-    virtual std::vector<MyRowAdditions> getAdditionalCustomElements();
+    std::vector<MyAdditions> AdditionalCustomElements;
+    virtual std::vector<MyAdditions> getAdditionalCustomElements();
     virtual std::string getRowHandle();
   private:
     std::string HeaderLabelText;

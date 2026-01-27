@@ -9,8 +9,9 @@ import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewModelTestEnvironmentImpl;
 import org.junit.Assert;
 import java.util.List;
-import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewModelCustomListRowFieldRow;
+import de.vimotest.sandbox.widgetassertions.MyAdditions;
 import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewModelCustomTableRowFieldRow;
+import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewModelCustomListRowFieldRow;
 import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewModelCustomTreeRowFieldRow;
 
 public class LowLevelFields_ViewTests_Test {
@@ -24,15 +25,20 @@ public class LowLevelFields_ViewTests_Test {
     this.then_MyString_is_text_();
   }
   @Test
-  public void test_Primitive_List_Field_Asserts_given_when_then_MyStrings_is_new_String____A___B__() throws Exception {
+  public void test_Primitive_List_Field_Asserts_given_when_then_MyStrings_is_todo_listpattern() throws Exception {
     this.BuildSut();
-    this.then_MyStrings_is_new_String____A___B__();
+    this.then_MyStrings_is_todo_listpattern();
   }
   @Test
-  public void test_Rowbased_Primitive_Fields_given_when_then_CustomListRowField_has_1_rows_and_CustomTableRowField_has_1_rows_and_CustomTreeRowField_has_1_rows() throws Exception {
+  public void test_Record_Field_Asserts_given_when_then_MyAdditions_is_todo_recordpattern() throws Exception {
     this.BuildSut();
-    this.then_CustomListRowField_has_1_rows();
+    this.then_MyAdditions_is_todo_recordpattern();
+  }
+  @Test
+  public void test_Rowbased_Primitive_Fields_given_when_then_CustomTableRowField_has_1_rows_and_CustomListRowField_has_1_rows_and_CustomTreeRowField_has_1_rows() throws Exception {
+    this.BuildSut();
     this.then_CustomTableRowField_has_1_rows();
+    this.then_CustomListRowField_has_1_rows();
     this.then_CustomTreeRowField_has_1_rows();
   }
   @BeforeEach
@@ -62,21 +68,22 @@ public class LowLevelFields_ViewTests_Test {
   public void then_MyString_is_text_() {
     Assert.assertEquals("Expected field 'MyString' has value <" + "text" + ">, but it was <" + this.sut.getMyString() + ">", "text", this.sut.getMyString());
   }
-  public void then_MyStrings_is_new_String____A___B__() {
-    List<String> actualMyStrings = this.sut.getMyStrings();
-    Assert.assertEquals("Expected field 'MyStrings[0]' has value <" + "A" + ">, but it was <" + actualMyStrings.get(1 - 1) + ">", "A", actualMyStrings.get(1 - 1));
-    Assert.assertEquals("Expected field 'MyStrings[1]' has value <" + "B" + ">, but it was <" + actualMyStrings.get(2 - 1) + ">", "B", actualMyStrings.get(2 - 1));
+  public void then_MyStrings_is_todo_listpattern() {
+    List<String> actualList = this.sut.getMyStrings();
+    String actualListItem_0 = actualList.get(1 - 1);
+    Assert.assertEquals("Expected list item at index 0 has value <" + "A" + ">, but it was <" + actualListItem_0 + ">", "A", actualListItem_0);
+    String actualListItem_1 = actualList.get(2 - 1);
+    Assert.assertEquals("Expected list item at index 1 has value <" + "B" + ">, but it was <" + actualListItem_1 + ">", "B", actualListItem_1);
   }
-  public void then_CustomListRowField_has_1_rows() {
-    List<LowLevelFields_ViewModelCustomListRowFieldRow> actualRows = this.sut.getCustomListRowFieldListRows();
-    Assert.assertEquals("Expected that list view CustomListRowField has 1 rows, but has " + Integer.toString(actualRows.size()), Integer.valueOf(1), Integer.valueOf(actualRows.size()));
-    // {
-    LowLevelFields_ViewModelCustomListRowFieldRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals("Expected that list view CustomListRowField row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">", "0", row0.getRowHandle());
-    Assert.assertEquals("Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText() + ">", "", row0.getHeaderLabelText());
-    List<String> actualAdditionalStrings = row0.getAdditionalStrings();
-    Assert.assertEquals("Expected field 'AdditionalStrings[0]' has value <" + "A" + ">, but it was <" + actualAdditionalStrings.get(1 - 1) + ">", "A", actualAdditionalStrings.get(1 - 1));
-    // }
+  public void then_MyAdditions_is_todo_recordpattern() {
+    MyAdditions actualMyAdditions = this.sut.getMyAdditions();
+    Assert.assertFalse("Expected field 'MyFlag' has boolean value <false>, but it was <" + ((actualMyAdditions.getMyFlag() ? "true" : "false")) + ">", actualMyAdditions.getMyFlag());
+    List<String> actualList_1 = actualMyAdditions.getInfos();
+    String actualListItem_0 = actualList_1.get(1 - 1);
+    Assert.assertEquals("Expected list item at index 0 has value <" + "A" + ">, but it was <" + actualListItem_0 + ">", "A", actualListItem_0);
+    String actualListItem_1 = actualList_1.get(2 - 1);
+    Assert.assertEquals("Expected list item at index 1 has value <" + "B" + ">, but it was <" + actualListItem_1 + ">", "B", actualListItem_1);
+    Assert.assertEquals("Expected field 'MyName' has value <" + "Test" + ">, but it was <" + actualMyAdditions.getMyName() + ">", "Test", actualMyAdditions.getMyName());
   }
   public void then_CustomTableRowField_has_1_rows() {
     List<LowLevelFields_ViewModelCustomTableRowFieldRow> actualRows = this.sut.getCustomTableRowFieldTableRows();
@@ -86,6 +93,21 @@ public class LowLevelFields_ViewTests_Test {
     Assert.assertEquals("Expected that table view CustomTableRowField row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">", "0", row0.getRowHandle());
     Assert.assertEquals("Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText() + ">", "", row0.getHeaderLabelText());
     Assert.assertFalse("Expected field 'AdditionalBool' has boolean value <false>, but it was <" + ((row0.getAdditionalBool() ? "true" : "false")) + ">", row0.getAdditionalBool());
+    List<MyAdditions> actualList_2 = row0.getAdditionalCustomElements();
+    MyAdditions actualListItem_0 = actualList_2.get(1 - 1);
+    Assert.assertFalse("Expected field 'MyFlag' has boolean value <false>, but it was <" + ((actualListItem_0.getMyFlag() ? "true" : "false")) + ">", actualListItem_0.getMyFlag());
+    // }
+  }
+  public void then_CustomListRowField_has_1_rows() {
+    List<LowLevelFields_ViewModelCustomListRowFieldRow> actualRows = this.sut.getCustomListRowFieldListRows();
+    Assert.assertEquals("Expected that list view CustomListRowField has 1 rows, but has " + Integer.toString(actualRows.size()), Integer.valueOf(1), Integer.valueOf(actualRows.size()));
+    // {
+    LowLevelFields_ViewModelCustomListRowFieldRow row0 = actualRows.get(1 - 1);
+    Assert.assertEquals("Expected that list view CustomListRowField row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">", "0", row0.getRowHandle());
+    Assert.assertEquals("Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText() + ">", "", row0.getHeaderLabelText());
+    List<String> actualList_3 = row0.getAdditionalStrings();
+    String actualListItem_0 = actualList_3.get(1 - 1);
+    Assert.assertEquals("Expected list item at index 0 has value <" + "A" + ">, but it was <" + actualListItem_0 + ">", "A", actualListItem_0);
     // }
   }
   public void then_CustomTreeRowField_has_1_rows() {

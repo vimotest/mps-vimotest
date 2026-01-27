@@ -36,6 +36,13 @@ namespace widgetassertions
             return this.MyStrings;
         }
 
+        public widgetassertions.MyAdditions MyAdditions;
+
+        public virtual widgetassertions.MyAdditions getMyAdditions()
+        {
+            return this.MyAdditions;
+        }
+
         private System.Collections.Generic.List<widgetassertions.LowLevelFields_ViewModelCustomTableRowFieldRow> CustomTableRowFieldTableRows = new System.Collections.Generic.List<widgetassertions.LowLevelFields_ViewModelCustomTableRowFieldRow>();
 
         public virtual System.Collections.Generic.List<widgetassertions.LowLevelFields_ViewModelCustomTableRowFieldRow> getCustomTableRowFieldTableRows()

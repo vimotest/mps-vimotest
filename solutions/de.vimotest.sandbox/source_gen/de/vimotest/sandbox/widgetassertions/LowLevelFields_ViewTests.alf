@@ -28,19 +28,26 @@ class LowLevelFields_ViewTests {
 
   }
   
-  public Primitive_List_Field_Asserts_given_when_then_MyStrings_is_new_String____A___B__ (  ) {
+  public Primitive_List_Field_Asserts_given_when_then_MyStrings_is_todo_listpattern (  ) {
     this.BuildSut (  );
 
-    this.then_MyStrings_is_new_String____A___B__ (  );
+    this.then_MyStrings_is_todo_listpattern (  );
 
   }
   
-  public Rowbased_Primitive_Fields_given_when_then_CustomListRowField_has_1_rows_and_CustomTableRowField_has_1_rows_and_CustomTreeRowField_has_1_rows (  ) {
+  public Record_Field_Asserts_given_when_then_MyAdditions_is_todo_recordpattern (  ) {
     this.BuildSut (  );
 
-    this.then_CustomListRowField_has_1_rows (  );
+    this.then_MyAdditions_is_todo_recordpattern (  );
+
+  }
+  
+  public Rowbased_Primitive_Fields_given_when_then_CustomTableRowField_has_1_rows_and_CustomListRowField_has_1_rows_and_CustomTreeRowField_has_1_rows (  ) {
+    this.BuildSut (  );
 
     this.then_CustomTableRowField_has_1_rows (  );
+
+    this.then_CustomListRowField_has_1_rows (  );
 
     this.then_CustomTreeRowField_has_1_rows (  );
 
@@ -77,32 +84,35 @@ class LowLevelFields_ViewTests {
 
   }
   
-  public then_MyStrings_is_new_String____A___B__ (  ) {
-    let actualMyStrings: String [] = this.sut.getMyStrings (  );
+  public then_MyStrings_is_todo_listpattern (  ) {
+    let actualList: String [] = this.sut.getMyStrings (  );
 
-    AssertEqualWithMessage ( "A", actualMyStrings[ 1 ] ?? "", "Expected field 'MyStrings[0]' has value <" + "A" + ">, but it was <" + actualMyStrings[ 1 ] ?? "" + ">" );
+    let actualListItem_0: String = actualList[ 1 ];
 
-    AssertEqualWithMessage ( "B", actualMyStrings[ 2 ] ?? "", "Expected field 'MyStrings[1]' has value <" + "B" + ">, but it was <" + actualMyStrings[ 2 ] ?? "" + ">" );
+    AssertEqualWithMessage ( "A", actualListItem_0, "Expected list item at index 0 has value <" + "A" + ">, but it was <" + actualListItem_0 + ">" );
+
+    let actualListItem_1: String = actualList[ 2 ];
+
+    AssertEqualWithMessage ( "B", actualListItem_1, "Expected list item at index 1 has value <" + "B" + ">, but it was <" + actualListItem_1 + ">" );
 
   }
   
-  public then_CustomListRowField_has_1_rows (  ) {
-    let actualRows: LowLevelFields_ViewModelCustomListRowFieldRow [] = this.sut.getCustomListRowFieldListRows (  );
+  public then_MyAdditions_is_todo_recordpattern (  ) {
+    let actualMyAdditions: MyAdditions = this.sut.getMyAdditions (  );
 
-    AssertEqualWithMessage ( 1, actualRows->size (  ), "Expected that list view CustomListRowField has 1 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertFalseWithMessage ( actualMyAdditions.getMyFlag (  ), "Expected field 'MyFlag' has boolean value <false>, but it was <" + ( actualMyAdditions.getMyFlag (  ) ? "true" : "false" ) + ">" );
 
-    {
-      let row0: LowLevelFields_ViewModelCustomListRowFieldRow = actualRows[ 1 ];
+    let actualList_1: String [] = actualMyAdditions.getInfos (  );
 
-      AssertEqualWithMessage ( "0", row0.getRowHandle (  ), "Expected that list view CustomListRowField row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle (  ) + ">" );
+    let actualListItem_0: String = actualList_1[ 1 ];
 
-      AssertEqualWithMessage ( "", row0.getHeaderLabelText (  ), "Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText (  ) + ">" );
+    AssertEqualWithMessage ( "A", actualListItem_0, "Expected list item at index 0 has value <" + "A" + ">, but it was <" + actualListItem_0 + ">" );
 
-      let actualAdditionalStrings: String [] = row0.getAdditionalStrings (  );
+    let actualListItem_1: String = actualList_1[ 2 ];
 
-      AssertEqualWithMessage ( "A", actualAdditionalStrings[ 1 ] ?? "", "Expected field 'AdditionalStrings[0]' has value <" + "A" + ">, but it was <" + actualAdditionalStrings[ 1 ] ?? "" + ">" );
+    AssertEqualWithMessage ( "B", actualListItem_1, "Expected list item at index 1 has value <" + "B" + ">, but it was <" + actualListItem_1 + ">" );
 
-    }
+    AssertEqualWithMessage ( "Test", actualMyAdditions.getMyName (  ), "Expected field 'MyName' has value <" + "Test" + ">, but it was <" + actualMyAdditions.getMyName (  ) + ">" );
 
   }
   
@@ -119,6 +129,34 @@ class LowLevelFields_ViewTests {
       AssertEqualWithMessage ( "", row0.getHeaderLabelText (  ), "Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText (  ) + ">" );
 
       AssertFalseWithMessage ( row0.getAdditionalBool (  ), "Expected field 'AdditionalBool' has boolean value <false>, but it was <" + ( row0.getAdditionalBool (  ) ? "true" : "false" ) + ">" );
+
+      let actualList_2: MyAdditions [] = row0.getAdditionalCustomElements (  );
+
+      let actualListItem_0: MyAdditions = actualList_2[ 1 ];
+
+      AssertFalseWithMessage ( actualListItem_0.getMyFlag (  ), "Expected field 'MyFlag' has boolean value <false>, but it was <" + ( actualListItem_0.getMyFlag (  ) ? "true" : "false" ) + ">" );
+
+    }
+
+  }
+  
+  public then_CustomListRowField_has_1_rows (  ) {
+    let actualRows: LowLevelFields_ViewModelCustomListRowFieldRow [] = this.sut.getCustomListRowFieldListRows (  );
+
+    AssertEqualWithMessage ( 1, actualRows->size (  ), "Expected that list view CustomListRowField has 1 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+
+    {
+      let row0: LowLevelFields_ViewModelCustomListRowFieldRow = actualRows[ 1 ];
+
+      AssertEqualWithMessage ( "0", row0.getRowHandle (  ), "Expected that list view CustomListRowField row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle (  ) + ">" );
+
+      AssertEqualWithMessage ( "", row0.getHeaderLabelText (  ), "Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText (  ) + ">" );
+
+      let actualList_3: String [] = row0.getAdditionalStrings (  );
+
+      let actualListItem_0: String = actualList_3[ 1 ];
+
+      AssertEqualWithMessage ( "A", actualListItem_0, "Expected list item at index 0 has value <" + "A" + ">, but it was <" + actualListItem_0 + ">" );
 
     }
 

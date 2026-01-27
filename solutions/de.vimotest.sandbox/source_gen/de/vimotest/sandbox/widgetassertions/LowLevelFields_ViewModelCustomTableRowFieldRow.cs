@@ -22,9 +22,9 @@ namespace widgetassertions
             return this.AdditionalBool;
         }
 
-        public System.Collections.Generic.List<widgetassertions.MyRowAdditions> AdditionalCustomElements = new System.Collections.Generic.List<widgetassertions.MyRowAdditions>();
+        public System.Collections.Generic.List<widgetassertions.MyAdditions> AdditionalCustomElements = new System.Collections.Generic.List<widgetassertions.MyAdditions>();
 
-        public virtual System.Collections.Generic.List<widgetassertions.MyRowAdditions> getAdditionalCustomElements()
+        public virtual System.Collections.Generic.List<widgetassertions.MyAdditions> getAdditionalCustomElements()
         {
             return this.AdditionalCustomElements;
         }

@@ -6281,31 +6281,15 @@
     </node>
   </node>
   <node concept="24kQdi" id="2GcDibl8gD_">
-    <property role="3GE5qa" value="test.assert" />
+    <property role="3GE5qa" value="test.assert.field" />
     <ref role="1XX52x" to="53m0:2GcDibl8goZ" resolve="ViewModelFieldAssertion" />
-    <node concept="3EZMnI" id="2GcDibl8gDB" role="2wV5jI">
-      <node concept="1iCGBv" id="2GcDibl8gDF" role="3EZMnx">
-        <ref role="1NtTu8" to="53m0:2GcDibl8gDz" resolve="field" />
-        <node concept="1sVBvm" id="2GcDibl8gDH" role="1sWHZn">
-          <node concept="3F0A7n" id="2GcDibl8gDL" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="2GcDibl8gDQ" role="3EZMnx">
-        <property role="3F0ifm" value="==" />
-      </node>
-      <node concept="3F1sOY" id="2GcDibl8gDT" role="3EZMnx">
-        <property role="1cu_pB" value="gtguBGO/firstEditableCell" />
-        <ref role="1NtTu8" to="53m0:2GcDibl8gD$" resolve="expectedValue" />
-      </node>
-      <node concept="2iRfu4" id="2GcDibl8gDE" role="2iSdaV" />
+    <node concept="3F1sOY" id="5vdnfLyGJk_" role="2wV5jI">
+      <ref role="1NtTu8" to="53m0:2GcDibl8gD$" resolve="fieldPattern" />
     </node>
   </node>
   <node concept="22mcaB" id="4mnk8hBWJjg">
-    <property role="3GE5qa" value="test.assert" />
-    <ref role="aqKnT" to="53m0:2GcDibl8goZ" resolve="ViewModelFieldAssertion" />
+    <property role="3GE5qa" value="test.assert.field" />
+    <ref role="aqKnT" to="53m0:5vdnfLxY$9I" resolve="FieldPattern" />
     <node concept="2F$Pav" id="4mnk8hBWKmG" role="3ft7WO">
       <node concept="3eGOop" id="4mnk8hBWKmH" role="2$S_pN">
         <node concept="ucgPf" id="4mnk8hBWKmI" role="3aKz83">
@@ -6314,12 +6298,12 @@
               <node concept="3cpWsn" id="4mnk8hBWKmL" role="3cpWs9">
                 <property role="TrG5h" value="node" />
                 <node concept="3Tqbb2" id="4mnk8hBWKmM" role="1tU5fm">
-                  <ref role="ehGHo" to="53m0:2GcDibl8goZ" resolve="ViewModelFieldAssertion" />
+                  <ref role="ehGHo" to="53m0:5vdnfLxY$9I" resolve="FieldPattern" />
                 </node>
                 <node concept="2ShNRf" id="4mnk8hBWKmN" role="33vP2m">
                   <node concept="2fJWfE" id="4mnk8hBWKmO" role="2ShVmc">
                     <node concept="3Tqbb2" id="4mnk8hBWKmP" role="3zrR0E">
-                      <ref role="ehGHo" to="53m0:2GcDibl8goZ" resolve="ViewModelFieldAssertion" />
+                      <ref role="ehGHo" to="53m0:5vdnfLxY$9I" resolve="FieldPattern" />
                     </node>
                   </node>
                 </node>
@@ -6333,7 +6317,7 @@
                     <ref role="3cqZAo" node="4mnk8hBWKmL" resolve="node" />
                   </node>
                   <node concept="3TrEf2" id="4mnk8hBWKmV" role="2OqNvi">
-                    <ref role="3Tt5mk" to="53m0:2GcDibl8gDz" resolve="field" />
+                    <ref role="3Tt5mk" to="53m0:5vdnfLxY$9N" resolve="field" />
                   </node>
                 </node>
               </node>
@@ -6345,7 +6329,7 @@
                     <ref role="3cqZAo" node="4mnk8hBWKmL" resolve="node" />
                   </node>
                   <node concept="3TrEf2" id="4mnk8hC0zSM" role="2OqNvi">
-                    <ref role="3Tt5mk" to="53m0:2GcDibl8gD$" resolve="expectedValue" />
+                    <ref role="3Tt5mk" to="53m0:5vdnfLxY$9M" resolve="expectedPattern" />
                   </node>
                 </node>
                 <node concept="1OKiuA" id="4mnk8hC0$og" role="2OqNvi">
@@ -6510,7 +6494,7 @@
                       <node concept="2Rf3mk" id="4mnk8hBWKnE" role="2OqNvi">
                         <node concept="1xMEDy" id="4mnk8hBWKnF" role="1xVPHs">
                           <node concept="chp4Y" id="4mnk8hBWKnG" role="ri$Ld">
-                            <ref role="cht4Q" to="53m0:2GcDibl8goZ" resolve="ViewModelFieldAssertion" />
+                            <ref role="cht4Q" to="53m0:5vdnfLxY$9I" resolve="FieldPattern" />
                           </node>
                         </node>
                       </node>
@@ -6525,7 +6509,7 @@
                                   <ref role="3cqZAo" node="4cF8FMAV$EE" resolve="it" />
                                 </node>
                                 <node concept="2qgKlT" id="4cF8FMAVAF9" role="2OqNvi">
-                                  <ref role="37wK5l" to="fwln:4cF8FMAV5nU" resolve="isRowBased" />
+                                  <ref role="37wK5l" to="fwln:5vdnfLyPblJ" resolve="isRowBased" />
                                 </node>
                               </node>
                             </node>
@@ -6547,7 +6531,7 @@
                               <ref role="3cqZAo" node="4mnk8hBWKnO" resolve="it" />
                             </node>
                             <node concept="3TrEf2" id="4mnk8hBWPYC" role="2OqNvi">
-                              <ref role="3Tt5mk" to="53m0:2GcDibl8gDz" resolve="field" />
+                              <ref role="3Tt5mk" to="53m0:5vdnfLxY$9N" resolve="field" />
                             </node>
                           </node>
                         </node>
@@ -6574,7 +6558,7 @@
             </node>
             <node concept="2OqwBi" id="4cF8FMAYLuG" role="33vP2m">
               <node concept="35c_gC" id="4cF8FMAYLuH" role="2Oq$k0">
-                <ref role="35c_gD" to="53m0:2GcDibl8goZ" resolve="ViewModelFieldAssertion" />
+                <ref role="35c_gD" to="53m0:5vdnfLxY$9I" resolve="FieldPattern" />
               </node>
               <node concept="2qgKlT" id="4cF8FMAYLuI" role="2OqNvi">
                 <ref role="37wK5l" to="fwln:4cF8FMAYC60" resolve="getFieldsScopeForParent" />
@@ -6675,11 +6659,16 @@
                       <node concept="3clFbS" id="4cF8FMAVlXc" role="1bW5cS">
                         <node concept="3clFbF" id="4cF8FMAVlXd" role="3cqZAp">
                           <node concept="2OqwBi" id="4cF8FMAVlXe" role="3clFbG">
-                            <node concept="37vLTw" id="4cF8FMAVlXf" role="2Oq$k0">
-                              <ref role="3cqZAo" node="4cF8FMAVlXh" resolve="it" />
+                            <node concept="2OqwBi" id="5vdnfLyOZjV" role="2Oq$k0">
+                              <node concept="37vLTw" id="4cF8FMAVlXf" role="2Oq$k0">
+                                <ref role="3cqZAo" node="4cF8FMAVlXh" resolve="it" />
+                              </node>
+                              <node concept="3TrEf2" id="5vdnfLyP0e3" role="2OqNvi">
+                                <ref role="3Tt5mk" to="53m0:2GcDibl8gD$" resolve="fieldPattern" />
+                              </node>
                             </node>
                             <node concept="3TrEf2" id="4cF8FMAVlXg" role="2OqNvi">
-                              <ref role="3Tt5mk" to="53m0:2GcDibl8gDz" resolve="field" />
+                              <ref role="3Tt5mk" to="53m0:5vdnfLxY$9N" resolve="field" />
                             </node>
                           </node>
                         </node>
@@ -6706,7 +6695,7 @@
             </node>
             <node concept="2OqwBi" id="4cF8FMAYMsT" role="33vP2m">
               <node concept="35c_gC" id="4cF8FMAYMsU" role="2Oq$k0">
-                <ref role="35c_gD" to="53m0:2GcDibl8goZ" resolve="ViewModelFieldAssertion" />
+                <ref role="35c_gD" to="53m0:5vdnfLxY$9I" resolve="FieldPattern" />
               </node>
               <node concept="2qgKlT" id="4cF8FMAYMsV" role="2OqNvi">
                 <ref role="37wK5l" to="fwln:4cF8FMAYC60" resolve="getFieldsScopeForParent" />
@@ -7846,6 +7835,29 @@
     <node concept="PMmxH" id="6gitVznp5aO" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5vdnfLyGJks">
+    <property role="3GE5qa" value="test.assert.field" />
+    <ref role="1XX52x" to="53m0:5vdnfLxY$9I" resolve="FieldPattern" />
+    <node concept="3EZMnI" id="5vdnfLyGJku" role="2wV5jI">
+      <node concept="1iCGBv" id="5vdnfLyGJkv" role="3EZMnx">
+        <ref role="1NtTu8" to="53m0:5vdnfLxY$9N" resolve="field" />
+        <node concept="1sVBvm" id="5vdnfLyGJkw" role="1sWHZn">
+          <node concept="3F0A7n" id="5vdnfLyGJkx" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5vdnfLyGJky" role="3EZMnx">
+        <property role="3F0ifm" value="==" />
+      </node>
+      <node concept="3F1sOY" id="5vdnfLyGJkz" role="3EZMnx">
+        <property role="1cu_pB" value="gtguBGO/firstEditableCell" />
+        <ref role="1NtTu8" to="53m0:5vdnfLxY$9M" resolve="expectedPattern" />
+      </node>
+      <node concept="2iRfu4" id="5vdnfLyGJk$" role="2iSdaV" />
     </node>
   </node>
 </model>

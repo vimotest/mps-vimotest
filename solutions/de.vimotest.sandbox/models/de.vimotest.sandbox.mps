@@ -164,6 +164,16 @@
         <child id="471139930089728221" name="checks" index="E2vIo" />
       </concept>
       <concept id="7210957589144949425" name="de.vimotest.viewmodel.testing.structure.EmptySequenceExpression" flags="ng" index="2Ntyk9" />
+      <concept id="6326815290570719868" name="de.vimotest.viewmodel.testing.structure.ExpressionPattern" flags="ng" index="QdLU0">
+        <child id="6326815290570719869" name="expectedValue" index="QdLU1" />
+      </concept>
+      <concept id="6326815290570719866" name="de.vimotest.viewmodel.testing.structure.ListPattern" flags="ng" index="QdLU6">
+        <child id="6326815290570719867" name="items" index="QdLU7" />
+      </concept>
+      <concept id="6326815290570719854" name="de.vimotest.viewmodel.testing.structure.FieldPattern" flags="ng" index="QdLUi">
+        <reference id="6326815290570719859" name="field" index="QdLUf" />
+        <child id="6326815290570719858" name="expectedPattern" index="QdLUe" />
+      </concept>
       <concept id="1938192778485639397" name="de.vimotest.viewmodel.testing.structure.CheckCommandAction" flags="ng" index="Tef3P">
         <property id="1938192778485679557" name="checked" index="Te1Rl" />
       </concept>
@@ -297,8 +307,7 @@
         <child id="6727692732141324712" name="checks" index="1W7P_d" />
       </concept>
       <concept id="3102035812374611519" name="de.vimotest.viewmodel.testing.structure.ViewModelFieldAssertion" flags="ng" index="3Ybqct">
-        <reference id="3102035812374612579" name="field" index="3YbqX1" />
-        <child id="3102035812374612580" name="expectedValue" index="3YbqX6" />
+        <child id="3102035812374612580" name="fieldPattern" index="3YbqX6" />
       </concept>
     </language>
     <language id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi">
@@ -5433,26 +5442,38 @@
       <property role="TrG5h" value="Primitive Field Asserts" />
       <node concept="1s$VFG" id="2GcDibl8goU" role="1s$QAY">
         <node concept="DUd2R" id="2GcDibl8goX" role="1s$QAX">
-          <node concept="3Ybqct" id="4mnk8hC0wTR" role="DUiSb">
-            <ref role="3YbqX1" node="2GcDibl8gl1" resolve="MyBool" />
-            <node concept="_jtWu" id="4mnk8hC0wTT" role="3YbqX6">
-              <property role="_jtWv" value="true" />
+          <node concept="3Ybqct" id="5vdnfLzkT6Z" role="DUiSb">
+            <node concept="QdLUi" id="5vdnfLzkT71" role="3YbqX6">
+              <ref role="QdLUf" node="2GcDibl8gl1" resolve="MyBool" />
+              <node concept="QdLU0" id="5vdnfLzkT73" role="QdLUe">
+                <node concept="_jtWu" id="5vdnfLzkT74" role="QdLU1">
+                  <property role="_jtWv" value="true" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="DUd2R" id="4mnk8hC0wUc" role="1s$QAX">
-          <node concept="3Ybqct" id="4mnk8hC41Hr" role="DUiSb">
-            <ref role="3YbqX1" node="2GcDibl8gmh" resolve="MyInt" />
-            <node concept="32T38h" id="4mnk8hC41Ht" role="3YbqX6">
-              <property role="32T38g" value="42" />
+          <node concept="3Ybqct" id="5vdnfLzkT6m" role="DUiSb">
+            <node concept="QdLUi" id="5vdnfLzkT6o" role="3YbqX6">
+              <ref role="QdLUf" node="2GcDibl8gmh" resolve="MyInt" />
+              <node concept="QdLU0" id="5vdnfLzkT6q" role="QdLUe">
+                <node concept="32T38h" id="5vdnfLzkT6r" role="QdLU1">
+                  <property role="32T38g" value="42" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="DUd2R" id="4mnk8hC0wV6" role="1s$QAX">
-          <node concept="3Ybqct" id="4mnk8hC41GI" role="DUiSb">
-            <ref role="3YbqX1" node="2GcDibl8glF" resolve="MyString" />
-            <node concept="_iklQ" id="4mnk8hC41GK" role="3YbqX6">
-              <property role="_iklR" value="text" />
+          <node concept="3Ybqct" id="5vdnfLzkT1c" role="DUiSb">
+            <node concept="QdLUi" id="5vdnfLzkT1e" role="3YbqX6">
+              <ref role="QdLUf" node="2GcDibl8glF" resolve="MyString" />
+              <node concept="QdLU0" id="5vdnfLzkT1g" role="QdLUe">
+                <node concept="_iklQ" id="5vdnfLzkT1h" role="QdLU1">
+                  <property role="_iklR" value="text" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -5462,21 +5483,19 @@
       <property role="TrG5h" value="Primitive List Field Asserts" />
       <node concept="1s$VFG" id="5C8UTa3z2y1" role="1s$QAY">
         <node concept="DUd2R" id="5C8UTa3z2zP" role="1s$QAX">
-          <node concept="3Ybqct" id="5C8UTa3z2zL" role="DUiSb">
-            <ref role="3YbqX1" node="2GcDibl8gn_" resolve="MyStrings" />
-            <node concept="1Wmaf1" id="5C8UTa3z2zN" role="3YbqX6">
-              <property role="327w9R" value="true" />
-              <node concept="_vnHb" id="5C8UTa3z2$4" role="1Wmaf7">
-                <node concept="_vnHe" id="5C8UTa3z2_y" role="35HzJw">
-                  <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
+          <node concept="3Ybqct" id="5vdnfLzkS_D" role="DUiSb">
+            <node concept="QdLUi" id="5vdnfLzkS_F" role="3YbqX6">
+              <ref role="QdLUf" node="2GcDibl8gn_" resolve="MyStrings" />
+              <node concept="QdLU6" id="5vdnfLzkS_H" role="QdLUe">
+                <node concept="QdLU0" id="5vdnfLzkS_J" role="QdLU7">
+                  <node concept="_iklQ" id="5vdnfLzkS_L" role="QdLU1">
+                    <property role="_iklR" value="A" />
+                  </node>
                 </node>
-              </node>
-              <node concept="1Wm7YT" id="5C8UTa3z2_1" role="1Wm7Yz">
-                <node concept="_iklQ" id="5C8UTa3z2_g" role="1Wm7YV">
-                  <property role="_iklR" value="A" />
-                </node>
-                <node concept="_iklQ" id="5C8UTa3z2A4" role="1Wm7YV">
-                  <property role="_iklR" value="B" />
+                <node concept="QdLU0" id="5vdnfLzkSAl" role="QdLU7">
+                  <node concept="_iklQ" id="5vdnfLzkSAm" role="QdLU1">
+                    <property role="_iklR" value="B" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -5505,18 +5524,14 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3Ybqct" id="4cF8FMB5mW9" role="3_LLfS">
-                    <ref role="3YbqX1" node="5C8UTa3UTJ7" resolve="AdditionalStrings" />
-                    <node concept="1Wmaf1" id="4cF8FMB5mWb" role="3YbqX6">
-                      <property role="327w9R" value="true" />
-                      <node concept="3xHE8C" id="4cF8FMB5mWr" role="1Wmaf7">
-                        <node concept="_vnHe" id="4cF8FMB5mWq" role="35HzJw">
-                          <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
-                        </node>
-                      </node>
-                      <node concept="1Wm7YT" id="4cF8FMB5mXg" role="1Wm7Yz">
-                        <node concept="_iklQ" id="4cF8FMB5n0r" role="1Wm7YV">
-                          <property role="_iklR" value="A" />
+                  <node concept="3Ybqct" id="5vdnfLzkSCK" role="3_LLfS">
+                    <node concept="QdLUi" id="5vdnfLzkSCL" role="3YbqX6">
+                      <ref role="QdLUf" node="2GcDibl8gn_" resolve="MyStrings" />
+                      <node concept="QdLU6" id="5vdnfLzkSCM" role="QdLUe">
+                        <node concept="QdLU0" id="5vdnfLzkSCN" role="QdLU7">
+                          <node concept="_iklQ" id="5vdnfLzkSCP" role="QdLU1">
+                            <property role="_iklR" value="A" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -5544,9 +5559,13 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3Ybqct" id="4cF8FMB5n1a" role="3_LLfS">
-                    <ref role="3YbqX1" node="5C8UTa3U3Gj" resolve="AdditionalBool" />
-                    <node concept="_jtWu" id="4cF8FMB5n1c" role="3YbqX6" />
+                  <node concept="3Ybqct" id="5vdnfLzkT0g" role="3_LLfS">
+                    <node concept="QdLUi" id="5vdnfLzkT0h" role="3YbqX6">
+                      <ref role="QdLUf" node="2GcDibl8gl1" resolve="MyBool" />
+                      <node concept="QdLU0" id="5vdnfLzkT0i" role="QdLUe">
+                        <node concept="_jtWu" id="5vdnfLzkT0j" role="QdLU1" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -5573,10 +5592,14 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3Ybqct" id="4cF8FMB5n1F" role="3_LLfS">
-                    <ref role="3YbqX1" node="5C8UTa3UTP0" resolve="AdditionalInt" />
-                    <node concept="32T38h" id="4cF8FMB5n1H" role="3YbqX6">
-                      <property role="32T38g" value="42" />
+                  <node concept="3Ybqct" id="5vdnfLzkT0_" role="3_LLfS">
+                    <node concept="QdLUi" id="5vdnfLzkT0A" role="3YbqX6">
+                      <ref role="QdLUf" node="2GcDibl8gmh" resolve="MyInt" />
+                      <node concept="QdLU0" id="5vdnfLzkT0B" role="QdLUe">
+                        <node concept="32T38h" id="5vdnfLzkT0C" role="QdLU1">
+                          <property role="32T38g" value="42" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>

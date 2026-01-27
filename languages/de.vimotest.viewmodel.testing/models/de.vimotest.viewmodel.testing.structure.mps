@@ -1358,16 +1358,10 @@
   </node>
   <node concept="1TIwiD" id="2GcDibl8goZ">
     <property role="EcuMT" value="3102035812374611519" />
-    <property role="3GE5qa" value="test.assert" />
+    <property role="3GE5qa" value="test.assert.field" />
     <property role="TrG5h" value="ViewModelFieldAssertion" />
     <property role="34LRSv" value="field assertion" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2GcDibl8gDz" role="1TKVEi">
-      <property role="IQ2ns" value="3102035812374612579" />
-      <property role="20kJfa" value="field" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
-    </node>
     <node concept="PrWs8" id="2GcDibl8gp0" role="PzmwI">
       <ref role="PrY4T" node="6fZwY6ifv52" resolve="ITestScenarioAssertion" />
     </node>
@@ -1377,9 +1371,9 @@
     <node concept="1TJgyj" id="2GcDibl8gD$" role="1TKVEi">
       <property role="IQ2ns" value="3102035812374612580" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expectedValue" />
+      <property role="20kJfa" value="fieldPattern" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="28lk:2kuSLC0kNK2" resolve="Expression" />
+      <ref role="20lvS9" node="5vdnfLxY$9I" resolve="FieldPattern" />
     </node>
   </node>
   <node concept="1TIwiD" id="4cF8FMAV2U6">
@@ -1653,6 +1647,79 @@
     <property role="TrG5h" value="EmptySequenceExpression" />
     <property role="34LRSv" value="empty sequence" />
     <ref role="1TJDcQ" to="28lk:2kuSLC0kNK2" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="5vdnfLxY$9D">
+    <property role="EcuMT" value="6326815290570719849" />
+    <property role="3GE5qa" value="test.assert.field" />
+    <property role="TrG5h" value="AbstractPattern" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="5vdnfLxY$9G">
+    <property role="EcuMT" value="6326815290570719852" />
+    <property role="3GE5qa" value="test.assert.field" />
+    <property role="TrG5h" value="RecordPattern" />
+    <property role="34LRSv" value="{record}" />
+    <ref role="1TJDcQ" node="5vdnfLxY$9D" resolve="AbstractPattern" />
+    <node concept="1TJgyj" id="5vdnfLxY$9R" role="1TKVEi">
+      <property role="IQ2ns" value="6326815290570719863" />
+      <property role="20kJfa" value="recordType" />
+      <ref role="20lvS9" to="evry:5U4kGNTgf6y" resolve="RecordType" />
+    </node>
+    <node concept="1TJgyj" id="5vdnfLxY$9S" role="1TKVEi">
+      <property role="IQ2ns" value="6326815290570719864" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="fieldPatterns" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5vdnfLxY$9I" resolve="FieldPattern" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5vdnfLxY$9I">
+    <property role="EcuMT" value="6326815290570719854" />
+    <property role="3GE5qa" value="test.assert.field" />
+    <property role="TrG5h" value="FieldPattern" />
+    <property role="34LRSv" value="{field}" />
+    <ref role="1TJDcQ" node="5vdnfLxY$9D" resolve="AbstractPattern" />
+    <node concept="1TJgyj" id="5vdnfLxY$9M" role="1TKVEi">
+      <property role="IQ2ns" value="6326815290570719858" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expectedPattern" />
+      <ref role="20lvS9" node="5vdnfLxY$9D" resolve="AbstractPattern" />
+    </node>
+    <node concept="1TJgyj" id="5vdnfLxY$9N" role="1TKVEi">
+      <property role="IQ2ns" value="6326815290570719859" />
+      <property role="20kJfa" value="field" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5vdnfLxY$9U">
+    <property role="EcuMT" value="6326815290570719866" />
+    <property role="3GE5qa" value="test.assert.field" />
+    <property role="TrG5h" value="ListPattern" />
+    <property role="34LRSv" value="{list}" />
+    <ref role="1TJDcQ" node="5vdnfLxY$9D" resolve="AbstractPattern" />
+    <node concept="1TJgyj" id="5vdnfLxY$9V" role="1TKVEi">
+      <property role="IQ2ns" value="6326815290570719867" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="items" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5vdnfLxY$9D" resolve="AbstractPattern" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5vdnfLxY$9W">
+    <property role="EcuMT" value="6326815290570719868" />
+    <property role="3GE5qa" value="test.assert.field" />
+    <property role="TrG5h" value="ExpressionPattern" />
+    <property role="34LRSv" value="{literal}" />
+    <ref role="1TJDcQ" node="5vdnfLxY$9D" resolve="AbstractPattern" />
+    <node concept="1TJgyj" id="5vdnfLxY$9X" role="1TKVEi">
+      <property role="IQ2ns" value="6326815290570719869" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expectedValue" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="28lk:2kuSLC0kNK2" resolve="Expression" />
+    </node>
   </node>
 </model>
 

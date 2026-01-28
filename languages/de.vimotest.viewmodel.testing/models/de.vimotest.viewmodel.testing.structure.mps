@@ -1661,17 +1661,15 @@
     <property role="TrG5h" value="RecordPattern" />
     <property role="34LRSv" value="{record}" />
     <ref role="1TJDcQ" node="5vdnfLxY$9D" resolve="AbstractPattern" />
-    <node concept="1TJgyj" id="5vdnfLxY$9R" role="1TKVEi">
-      <property role="IQ2ns" value="6326815290570719863" />
-      <property role="20kJfa" value="recordType" />
-      <ref role="20lvS9" to="evry:5U4kGNTgf6y" resolve="RecordType" />
-    </node>
     <node concept="1TJgyj" id="5vdnfLxY$9S" role="1TKVEi">
       <property role="IQ2ns" value="6326815290570719864" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="fieldPatterns" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="5vdnfLxY$9I" resolve="FieldPattern" />
+    </node>
+    <node concept="PrWs8" id="4mGsJw9Ou9i" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="5vdnfLxY$9I">

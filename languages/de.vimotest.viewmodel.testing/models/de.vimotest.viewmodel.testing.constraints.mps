@@ -1525,35 +1525,6 @@
     <ref role="1M2myG" to="53m0:5vdnfLxY$9I" resolve="FieldPattern" />
     <node concept="1N5Pfh" id="5vdnfLyXobW" role="1Mr941">
       <ref role="1N5Vy1" to="53m0:5vdnfLxY$9N" resolve="field" />
-      <node concept="3dgokm" id="5vdnfLyXobX" role="1N6uqs">
-        <node concept="3clFbS" id="5vdnfLyXobY" role="2VODD2">
-          <node concept="3cpWs8" id="5vdnfLyXobZ" role="3cqZAp">
-            <node concept="3cpWsn" id="5vdnfLyXoc0" role="3cpWs9">
-              <property role="TrG5h" value="fieldsScope" />
-              <node concept="A3Dl8" id="5vdnfLyXoc1" role="1tU5fm">
-                <node concept="3Tqbb2" id="5vdnfLyXoc2" role="A3Ik2">
-                  <ref role="ehGHo" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
-                </node>
-              </node>
-              <node concept="2OqwBi" id="5vdnfLyXoc3" role="33vP2m">
-                <node concept="3kakTB" id="5vdnfLyXoc4" role="2Oq$k0" />
-                <node concept="2qgKlT" id="5vdnfLyXoc5" role="2OqNvi">
-                  <ref role="37wK5l" to="fwln:4cF8FMAYvYW" resolve="getFieldsScope" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="5vdnfLyXoc6" role="3cqZAp">
-            <node concept="2YIFZM" id="5vdnfLyXoc7" role="3clFbG">
-              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
-              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-              <node concept="37vLTw" id="5vdnfLyXoc8" role="37wK5m">
-                <ref role="3cqZAo" node="5vdnfLyXoc0" resolve="fieldsScope" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3k9gUc" id="5vdnfLyXoc9" role="3kmjI7">
         <node concept="3clFbS" id="5vdnfLyXoca" role="2VODD2">
           <node concept="3clFbF" id="5vdnfLyXocb" role="3cqZAp">
@@ -1576,6 +1547,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="1dDu$B" id="4mGsJw9XFg4" role="1N6uqs">
+        <ref role="1dDu$A" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
       </node>
     </node>
   </node>

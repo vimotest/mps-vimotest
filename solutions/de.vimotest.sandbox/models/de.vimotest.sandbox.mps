@@ -170,6 +170,9 @@
       <concept id="6326815290570719866" name="de.vimotest.viewmodel.testing.structure.ListPattern" flags="ng" index="QdLU6">
         <child id="6326815290570719867" name="items" index="QdLU7" />
       </concept>
+      <concept id="6326815290570719852" name="de.vimotest.viewmodel.testing.structure.RecordPattern" flags="ng" index="QdLUg">
+        <child id="6326815290570719864" name="fieldPatterns" index="QdLU4" />
+      </concept>
       <concept id="6326815290570719854" name="de.vimotest.viewmodel.testing.structure.FieldPattern" flags="ng" index="QdLUi">
         <reference id="6326815290570719859" name="field" index="QdLUf" />
         <child id="6326815290570719858" name="expectedPattern" index="QdLUe" />
@@ -5317,6 +5320,12 @@
           <node concept="1nBS12" id="2GcDibl8gnV" role="1WnWvN" />
         </node>
       </node>
+      <node concept="1nWCU9" id="4mGsJw9O7v7" role="103ZUC">
+        <property role="TrG5h" value="MyAdditions" />
+        <node concept="2BLadC" id="4mGsJw9O7vf" role="3xMlr6">
+          <ref role="2BLa4B" node="5U4kGNTnh1B" resolve="MyAdditions" />
+        </node>
+      </node>
       <node concept="3UVeDL" id="5C8UTa3RDEz" role="103ZUC">
         <property role="TrG5h" value="CustomTableRowField" />
         <node concept="3KuuIt" id="5C8UTa3RDFQ" role="3UVeDY">
@@ -5336,7 +5345,7 @@
           <property role="TrG5h" value="AdditionalCustomElements" />
           <node concept="1WnWvM" id="5U4kGNTgf5o" role="3xMlr6">
             <node concept="2BLadC" id="5U4kGNTFklF" role="1WnWvN">
-              <ref role="2BLa4B" node="5U4kGNTnh1B" resolve="MyRowAdditions" />
+              <ref role="2BLa4B" node="5U4kGNTnh1B" resolve="MyAdditions" />
             </node>
           </node>
         </node>
@@ -5503,37 +5512,40 @@
         </node>
       </node>
     </node>
-    <node concept="3LKzX3" id="4cF8FMAOUhG" role="30n1Qb">
-      <property role="TrG5h" value="Rowbased Primitive Fields" />
-      <node concept="1s$VFG" id="4cF8FMAOUhJ" role="1s$QAY">
-        <node concept="DUd2R" id="4cF8FMAOUhM" role="1s$QAX">
-          <node concept="30nzp_" id="4cF8FMAV2bv" role="DUiSb">
-            <ref role="30nzpS" node="5C8UTa3UTIK" resolve="CustomListRowField" />
-            <node concept="1i$re" id="4cF8FMAV2bw" role="30nDbQ">
-              <node concept="1i$qk" id="4cF8FMAV2bx" role="1i$rf">
-                <node concept="1EpGR1" id="4cF8FMAV2by" role="1EpBIj">
-                  <ref role="1EpG3m" node="5C8UTa3UTIL" />
+    <node concept="3LKzX3" id="4mGsJw9O7nr" role="30n1Qb">
+      <property role="TrG5h" value="Record Field Asserts" />
+      <node concept="1s$VFG" id="4mGsJw9O7ns" role="1s$QAY">
+        <node concept="DUd2R" id="4mGsJw9O7nt" role="1s$QAX">
+          <node concept="3Ybqct" id="4mGsJw9O7nu" role="DUiSb">
+            <node concept="QdLUi" id="4mGsJw9O7nv" role="3YbqX6">
+              <ref role="QdLUf" node="4mGsJw9O7v7" resolve="MyAdditions" />
+              <node concept="QdLUg" id="4mGsJwamsgL" role="QdLUe">
+                <node concept="QdLUi" id="4mGsJwaLoZc" role="QdLU4">
+                  <ref role="QdLUf" node="5U4kGNTFVf1" resolve="MyFlag" />
+                  <node concept="QdLU0" id="4mGsJwaLoZd" role="QdLUe">
+                    <node concept="_jtWu" id="4mGsJwaLoZe" role="QdLU1" />
+                  </node>
                 </node>
-                <node concept="CNEhi" id="4cF8FMAV2bz" role="3o2WtG">
-                  <property role="3_VSTZ" value="0" />
-                  <node concept="1NuoHz" id="4cF8FMAV2b$" role="CNE8S">
-                    <ref role="3elmOO" node="5C8UTa3UTIM" resolve="Header" />
-                    <node concept="V3Zc6" id="4cF8FMAV2bA" role="1NuoHy">
-                      <node concept="V3Zdv" id="4cF8FMAV2bB" role="V3Zc7">
-                        <node concept="o7Kjd" id="4cF8FMAV2bC" role="oSbKM" />
+                <node concept="QdLUi" id="4mGsJwaLoZO" role="QdLU4">
+                  <ref role="QdLUf" node="5U4kGNTFVja" resolve="Infos" />
+                  <node concept="QdLU6" id="4mGsJwaLoZP" role="QdLUe">
+                    <node concept="QdLU0" id="4mGsJwaLoZQ" role="QdLU7">
+                      <node concept="_iklQ" id="4mGsJwaLoZS" role="QdLU1">
+                        <property role="_iklR" value="A" />
+                      </node>
+                    </node>
+                    <node concept="QdLU0" id="4mGsJwaLp0s" role="QdLU7">
+                      <node concept="_iklQ" id="4mGsJwaLp0t" role="QdLU1">
+                        <property role="_iklR" value="B" />
                       </node>
                     </node>
                   </node>
-                  <node concept="3Ybqct" id="5vdnfLzkSCK" role="3_LLfS">
-                    <node concept="QdLUi" id="5vdnfLzkSCL" role="3YbqX6">
-                      <ref role="QdLUf" node="2GcDibl8gn_" resolve="MyStrings" />
-                      <node concept="QdLU6" id="5vdnfLzkSCM" role="QdLUe">
-                        <node concept="QdLU0" id="5vdnfLzkSCN" role="QdLU7">
-                          <node concept="_iklQ" id="5vdnfLzkSCP" role="QdLU1">
-                            <property role="_iklR" value="A" />
-                          </node>
-                        </node>
-                      </node>
+                </node>
+                <node concept="QdLUi" id="4mGsJwaO1Xy" role="QdLU4">
+                  <ref role="QdLUf" node="5U4kGNTFVgo" resolve="MyName" />
+                  <node concept="QdLU0" id="4mGsJwaUq09" role="QdLUe">
+                    <node concept="_iklQ" id="4mGsJwaUq0a" role="QdLU1">
+                      <property role="_iklR" value="Test" />
                     </node>
                   </node>
                 </node>
@@ -5541,6 +5553,11 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="4cF8FMAOUhG" role="30n1Qb">
+      <property role="TrG5h" value="Rowbased Primitive Fields" />
+      <node concept="1s$VFG" id="4cF8FMAOUhJ" role="1s$QAY">
         <node concept="DUd2R" id="4cF8FMB5n0Y" role="1s$QAX">
           <node concept="30nzp_" id="4cF8FMB5n10" role="DUiSb">
             <ref role="30nzpS" node="5C8UTa3RDEz" resolve="CustomTableRowField" />
@@ -5561,15 +5578,65 @@
                   </node>
                   <node concept="3Ybqct" id="5vdnfLzkT0g" role="3_LLfS">
                     <node concept="QdLUi" id="5vdnfLzkT0h" role="3YbqX6">
-                      <ref role="QdLUf" node="2GcDibl8gl1" resolve="MyBool" />
-                      <node concept="QdLU0" id="5vdnfLzkT0i" role="QdLUe">
-                        <node concept="_jtWu" id="5vdnfLzkT0j" role="QdLU1" />
+                      <ref role="QdLUf" node="5C8UTa3U3Gj" resolve="AdditionalBool" />
+                      <node concept="QdLU0" id="4mGsJwampb2" role="QdLUe">
+                        <node concept="_jtWu" id="4mGsJwampb3" role="QdLU1" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3Ybqct" id="4mGsJw9O7F$" role="3_LLfS">
+                    <node concept="QdLUi" id="4mGsJw9O7F_" role="3YbqX6">
+                      <ref role="QdLUf" node="5U4kGNTgf5h" resolve="AdditionalCustomElements" />
+                      <node concept="QdLU6" id="4mGsJwampbl" role="QdLUe">
+                        <node concept="QdLUg" id="4mGsJwaO1Y7" role="QdLU7">
+                          <node concept="QdLUi" id="4mGsJwaUkl_" role="QdLU4">
+                            <ref role="QdLUf" node="5U4kGNTFVf1" resolve="MyFlag" />
+                            <node concept="QdLU0" id="4mGsJwaUklA" role="QdLUe">
+                              <node concept="_jtWu" id="4mGsJwaUklB" role="QdLU1" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
               <node concept="E2vIp" id="4KZE_p8sHql" role="E88qO" />
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="4cF8FMAOUhM" role="1s$QAX">
+          <node concept="30nzp_" id="4cF8FMAV2bv" role="DUiSb">
+            <ref role="30nzpS" node="5C8UTa3UTIK" resolve="CustomListRowField" />
+            <node concept="1i$re" id="4cF8FMAV2bw" role="30nDbQ">
+              <node concept="1i$qk" id="4cF8FMAV2bx" role="1i$rf">
+                <node concept="1EpGR1" id="4cF8FMAV2by" role="1EpBIj">
+                  <ref role="1EpG3m" node="5C8UTa3UTIL" />
+                </node>
+                <node concept="CNEhi" id="4cF8FMAV2bz" role="3o2WtG">
+                  <property role="3_VSTZ" value="0" />
+                  <node concept="1NuoHz" id="4cF8FMAV2b$" role="CNE8S">
+                    <ref role="3elmOO" node="5C8UTa3UTIM" resolve="Header" />
+                    <node concept="V3Zc6" id="4cF8FMAV2bA" role="1NuoHy">
+                      <node concept="V3Zdv" id="4cF8FMAV2bB" role="V3Zc7">
+                        <node concept="o7Kjd" id="4cF8FMAV2bC" role="oSbKM" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3Ybqct" id="5vdnfLzkSCK" role="3_LLfS">
+                    <node concept="QdLUi" id="5vdnfLzkSCL" role="3YbqX6">
+                      <ref role="QdLUf" node="5C8UTa3UTJ7" resolve="AdditionalStrings" />
+                      <node concept="QdLU6" id="4mGsJwampaD" role="QdLUe">
+                        <node concept="QdLU0" id="4mGsJwampaH" role="QdLU7">
+                          <node concept="_iklQ" id="4mGsJwampaJ" role="QdLU1">
+                            <property role="_iklR" value="A" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -5594,9 +5661,9 @@
                   </node>
                   <node concept="3Ybqct" id="5vdnfLzkT0_" role="3_LLfS">
                     <node concept="QdLUi" id="5vdnfLzkT0A" role="3YbqX6">
-                      <ref role="QdLUf" node="2GcDibl8gmh" resolve="MyInt" />
-                      <node concept="QdLU0" id="5vdnfLzkT0B" role="QdLUe">
-                        <node concept="32T38h" id="5vdnfLzkT0C" role="QdLU1">
+                      <ref role="QdLUf" node="5C8UTa3UTP0" resolve="AdditionalInt" />
+                      <node concept="QdLU0" id="4mGsJwaO1Xz" role="QdLUe">
+                        <node concept="32T38h" id="4mGsJwaO1X$" role="QdLU1">
                           <property role="32T38g" value="42" />
                         </node>
                       </node>
@@ -6324,7 +6391,7 @@
   </node>
   <node concept="2BLadI" id="5U4kGNTnh1B">
     <property role="3GE5qa" value="widgetassertions" />
-    <property role="TrG5h" value="MyRowAdditions" />
+    <property role="TrG5h" value="MyAdditions" />
     <node concept="1nWCU9" id="5U4kGNTFVf1" role="103ZUC">
       <property role="TrG5h" value="MyFlag" />
       <node concept="1nBHEw" id="5U4kGNTFVfi" role="3xMlr6" />

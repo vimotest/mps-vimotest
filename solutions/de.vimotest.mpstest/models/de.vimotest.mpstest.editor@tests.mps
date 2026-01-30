@@ -160,9 +160,6 @@
                 </node>
               </node>
             </node>
-            <node concept="DUd2R" id="7kmE6cdE0gG" role="1s$QAX">
-              <node concept="3LKBaz" id="7kmE6cdE0gH" role="DUiSb" />
-            </node>
           </node>
         </node>
       </node>
@@ -185,8 +182,8 @@
             <ref role="37wK5l" to="6lvu:~NodeSubstituteChooser.getNumberOfActions()" resolve="getNumberOfActions" />
           </node>
         </node>
-        <node concept="3cmrfG" id="5MDQaVz9mZn" role="3tpDZB">
-          <property role="3cmrfH" value="2" />
+        <node concept="3cmrfG" id="6SUC7zAk6tb" role="3tpDZB">
+          <property role="3cmrfH" value="3" />
         </node>
       </node>
       <node concept="3SKdUt" id="5MDQaVz9oCd" role="3cqZAp">

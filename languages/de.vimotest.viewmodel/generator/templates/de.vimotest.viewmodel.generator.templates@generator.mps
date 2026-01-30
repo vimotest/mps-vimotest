@@ -21,6 +21,7 @@
     <import index="45v0" ref="r:ba746408-9865-4b76-b4e7-cbd40a893006(de.vimotest.types.behavior)" />
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="y2za" ref="r:9b95cdd1-4ab8-4b4a-bf26-16943fc2e399(de.vimotest.viewmodel.commonGenUtils)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -3949,8 +3950,8 @@
               <node concept="3clFbS" id="4ncpC4iI1Kq" role="2VODD2">
                 <node concept="3clFbF" id="4ncpC4iI24V" role="3cqZAp">
                   <node concept="2YIFZM" id="5REyxMNgcAG" role="3clFbG">
-                    <ref role="37wK5l" to="jrwo:5REyxMNgacc" resolve="shouldGenerateAttributeForField" />
-                    <ref role="1Pybhc" to="jrwo:5REyxMNg3zb" resolve="FieldPropertyGenerationHelper" />
+                    <ref role="37wK5l" to="y2za:5REyxMNgacc" resolve="shouldGenerateAttributeForField" />
+                    <ref role="1Pybhc" to="y2za:5REyxMNg3zb" resolve="FieldPropertyGenerationHelper" />
                     <node concept="30H73N" id="5REyxMNgcAH" role="37wK5m" />
                   </node>
                 </node>
@@ -3965,8 +3966,8 @@
               <node concept="3clFbS" id="5REyxMNgfCg" role="2VODD2">
                 <node concept="3clFbJ" id="5REyxMNgg9P" role="3cqZAp">
                   <node concept="2YIFZM" id="5REyxMNghdA" role="3clFbw">
-                    <ref role="37wK5l" to="jrwo:5REyxMNg3$q" resolve="shouldGenerateGetterForField" />
-                    <ref role="1Pybhc" to="jrwo:5REyxMNg3zb" resolve="FieldPropertyGenerationHelper" />
+                    <ref role="37wK5l" to="y2za:5REyxMNg3$q" resolve="shouldGenerateGetterForField" />
+                    <ref role="1Pybhc" to="y2za:5REyxMNg3zb" resolve="FieldPropertyGenerationHelper" />
                     <node concept="30H73N" id="5REyxMNghJt" role="37wK5m" />
                   </node>
                   <node concept="3clFbS" id="5REyxMNgg9R" role="3clFbx">
@@ -4050,8 +4051,8 @@
               <node concept="3clFbS" id="6SUC7zADbtS" role="2VODD2">
                 <node concept="3clFbF" id="6SUC7zADbXN" role="3cqZAp">
                   <node concept="2YIFZM" id="5REyxMNg9Nz" role="3clFbG">
-                    <ref role="37wK5l" to="jrwo:5REyxMNg3$q" resolve="shouldGenerateGetterForField" />
-                    <ref role="1Pybhc" to="jrwo:5REyxMNg3zb" resolve="FieldPropertyGenerationHelper" />
+                    <ref role="37wK5l" to="y2za:5REyxMNg3$q" resolve="shouldGenerateGetterForField" />
+                    <ref role="1Pybhc" to="y2za:5REyxMNg3zb" resolve="FieldPropertyGenerationHelper" />
                     <node concept="30H73N" id="5REyxMNg9OB" role="37wK5m" />
                   </node>
                 </node>

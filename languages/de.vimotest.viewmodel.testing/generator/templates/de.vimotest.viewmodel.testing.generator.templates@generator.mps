@@ -28,6 +28,7 @@
     <import index="45v0" ref="r:ba746408-9865-4b76-b4e7-cbd40a893006(de.vimotest.types.behavior)" />
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" />
     <import index="jrwo" ref="r:8e4c87d1-684a-41a2-a8cd-a37856e5c003(de.vimotest.viewmodel.generator.utils)" />
+    <import index="y2za" ref="r:9b95cdd1-4ab8-4b4a-bf26-16943fc2e399(de.vimotest.viewmodel.commonGenUtils)" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" implicit="true" />
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" implicit="true" />
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" implicit="true" />
@@ -13531,8 +13532,8 @@
                     <node concept="3clFbS" id="5REyxMNHQ2S" role="2VODD2">
                       <node concept="3clFbF" id="5REyxMNHQaV" role="3cqZAp">
                         <node concept="2YIFZM" id="5REyxMNHQc3" role="3clFbG">
-                          <ref role="37wK5l" to="jrwo:5REyxMNg3$q" resolve="shouldGenerateGetterForField" />
-                          <ref role="1Pybhc" to="jrwo:5REyxMNg3zb" resolve="FieldPropertyGenerationHelper" />
+                          <ref role="37wK5l" to="y2za:5REyxMNg3$q" resolve="shouldGenerateGetterForField" />
+                          <ref role="1Pybhc" to="y2za:5REyxMNg3zb" resolve="FieldPropertyGenerationHelper" />
                           <node concept="2OqwBi" id="5REyxMNHQrS" role="37wK5m">
                             <node concept="30H73N" id="5REyxMNHQcW" role="2Oq$k0" />
                             <node concept="3TrEf2" id="5REyxMNHQ_t" role="2OqNvi">

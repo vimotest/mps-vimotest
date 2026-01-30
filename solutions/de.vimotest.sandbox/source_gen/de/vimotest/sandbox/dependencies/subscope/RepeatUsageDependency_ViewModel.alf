@@ -5,7 +5,7 @@ namespace dependencies:: subscope ;
 
 public class RepeatUsageDependency_ViewModel {
   
-  public MyBool : Boolean  ;
+  private MyBool : Boolean  ;
   
   public getMyBool (  ) : Boolean  {
     return this.MyBool;

@@ -12,14 +12,14 @@ public class LowLevelFields_ViewModelCustomTableRowFieldRow {
 
   }
   
-  public AdditionalBool : Boolean  ;
+  private AdditionalBool : Boolean  ;
   
   public getAdditionalBool (  ) : Boolean  {
     return this.AdditionalBool;
 
   }
   
-  public AdditionalCustomElements : MyAdditions [ * ]  ;
+  private AdditionalCustomElements : MyAdditions [ * ]  ;
   
   public getAdditionalCustomElements (  ) : MyAdditions [ * ]  {
     return this.AdditionalCustomElements;

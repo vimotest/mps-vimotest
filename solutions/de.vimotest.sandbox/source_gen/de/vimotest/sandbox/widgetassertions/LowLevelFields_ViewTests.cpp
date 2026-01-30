@@ -85,13 +85,13 @@ namespace widgetassertions
   void LowLevelFields_ViewTests::then_MyFieldAdditions_is_todo_recordpattern()
   {
     auto actualMyAdditions = this->sut->getMyFieldAdditions();
-    EXPECT_FALSE(actualMyAdditions.getMyFlag()) << std::string("Expected field 'MyFlag' has boolean value <false>, but it was <") + (actualMyAdditions.getMyFlag() ? std::string("true") : std::string("false")) + std::string(">");
-    auto actualList_1 = actualMyAdditions.getInfos();
+    EXPECT_FALSE(actualMyAdditions.MyFlag) << std::string("Expected field 'MyFlag' has boolean value <false>, but it was <") + (actualMyAdditions.MyFlag ? std::string("true") : std::string("false")) + std::string(">");
+    auto actualList_1 = actualMyAdditions.Infos;
     auto actualListItem_0 = actualList_1.at(0);
     EXPECT_EQ(std::string("A"), actualListItem_0) << std::string("Expected list item at index 0 has value <") + std::string("A") + std::string(">, but it was <") + actualListItem_0 + std::string(">");
     auto actualListItem_1 = actualList_1.at(1);
     EXPECT_EQ(std::string("B"), actualListItem_1) << std::string("Expected list item at index 1 has value <") + std::string("B") + std::string(">, but it was <") + actualListItem_1 + std::string(">");
-    EXPECT_EQ(std::string("Test"), actualMyAdditions.getMyName()) << std::string("Expected field 'MyName' has value <") + std::string("Test") + std::string(">, but it was <") + actualMyAdditions.getMyName() + std::string(">");
+    EXPECT_EQ(std::string("Test"), actualMyAdditions.MyName) << std::string("Expected field 'MyName' has value <") + std::string("Test") + std::string(">, but it was <") + actualMyAdditions.MyName + std::string(">");
   }
   void LowLevelFields_ViewTests::then_CustomTableRowField_has_1_rows()
   {
@@ -104,7 +104,7 @@ namespace widgetassertions
     EXPECT_FALSE(row0->getAdditionalBool()) << std::string("Expected field 'AdditionalBool' has boolean value <false>, but it was <") + (row0->getAdditionalBool() ? std::string("true") : std::string("false")) + std::string(">");
     auto actualList_2 = row0->getAdditionalCustomElements();
     auto actualListItem_0 = actualList_2.at(0);
-    EXPECT_FALSE(actualListItem_0.getMyFlag()) << std::string("Expected field 'MyFlag' has boolean value <false>, but it was <") + (actualListItem_0.getMyFlag() ? std::string("true") : std::string("false")) + std::string(">");
+    EXPECT_FALSE(actualListItem_0.MyFlag) << std::string("Expected field 'MyFlag' has boolean value <false>, but it was <") + (actualListItem_0.MyFlag ? std::string("true") : std::string("false")) + std::string(">");
     // }
   }
   void LowLevelFields_ViewTests::then_CustomListRowField_has_1_rows()

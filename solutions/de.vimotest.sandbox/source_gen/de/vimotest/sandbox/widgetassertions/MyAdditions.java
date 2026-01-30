@@ -7,17 +7,8 @@ import java.util.LinkedList;
 
 public class MyAdditions {
   public Boolean MyFlag;
-  public Boolean getMyFlag() {
-    return this.MyFlag;
-  }
   public String MyName;
-  public String getMyName() {
-    return this.MyName;
-  }
   public List<String> Infos = new LinkedList<>();
-  public List<String> getInfos() {
-    return this.Infos;
-  }
   public MyAdditions() {
   }
   public MyAdditions(Boolean MyFlag, String MyName, List<String> Infos) {

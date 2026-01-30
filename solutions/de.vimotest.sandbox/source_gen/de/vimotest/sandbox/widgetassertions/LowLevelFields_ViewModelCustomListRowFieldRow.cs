@@ -14,7 +14,7 @@ namespace widgetassertions
             return this.HeaderLabelText;
         }
 
-        public System.Collections.Generic.List<string> AdditionalStrings = new System.Collections.Generic.List<string>();
+        private System.Collections.Generic.List<string> AdditionalStrings = new System.Collections.Generic.List<string>();
 
         public virtual System.Collections.Generic.List<string> getAdditionalStrings()
         {

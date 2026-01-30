@@ -5,35 +5,35 @@ namespace widgetassertions ;
 
 public class LowLevelFields_ViewModel {
   
-  public MyBool : Boolean  ;
+  private MyBool : Boolean  ;
   
   public getMyBool (  ) : Boolean  {
     return this.MyBool;
 
   }
   
-  public MyInt : Integer  ;
+  private MyInt : Integer  ;
   
   public getMyInt (  ) : Integer  {
     return this.MyInt;
 
   }
   
-  public MyString : String  ;
+  private MyString : String  ;
   
   public getMyString (  ) : String  {
     return this.MyString;
 
   }
   
-  public MyStrings : String [ * ]  ;
+  private MyStrings : String [ * ]  ;
   
   public getMyStrings (  ) : String [ * ]  {
     return this.MyStrings;
 
   }
   
-  public MyFieldAdditions : MyAdditions  ;
+  private MyFieldAdditions : MyAdditions  ;
   
   public getMyFieldAdditions (  ) : MyAdditions  {
     return this.MyFieldAdditions;

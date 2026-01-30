@@ -10,11 +10,11 @@ public class LowLevelFields_ViewModelCustomTableRowFieldRow {
   public String getHeaderLabelText() {
     return this.HeaderLabelText;
   }
-  public Boolean AdditionalBool;
+  private Boolean AdditionalBool;
   public Boolean getAdditionalBool() {
     return this.AdditionalBool;
   }
-  public List<MyAdditions> AdditionalCustomElements = new LinkedList<>();
+  private List<MyAdditions> AdditionalCustomElements = new LinkedList<>();
   public List<MyAdditions> getAdditionalCustomElements() {
     return this.AdditionalCustomElements;
   }

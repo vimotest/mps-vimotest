@@ -77,13 +77,13 @@ public class LowLevelFields_ViewTests_Test {
   }
   public void then_MyFieldAdditions_is_todo_recordpattern() {
     MyAdditions actualMyAdditions = this.sut.getMyFieldAdditions();
-    Assert.assertFalse("Expected field 'MyFlag' has boolean value <false>, but it was <" + ((actualMyAdditions.getMyFlag() ? "true" : "false")) + ">", actualMyAdditions.getMyFlag());
-    List<String> actualList_1 = actualMyAdditions.getInfos();
+    Assert.assertFalse("Expected field 'MyFlag' has boolean value <false>, but it was <" + ((actualMyAdditions.MyFlag ? "true" : "false")) + ">", actualMyAdditions.MyFlag);
+    List<String> actualList_1 = actualMyAdditions.Infos;
     String actualListItem_0 = actualList_1.get(1 - 1);
     Assert.assertEquals("Expected list item at index 0 has value <" + "A" + ">, but it was <" + actualListItem_0 + ">", "A", actualListItem_0);
     String actualListItem_1 = actualList_1.get(2 - 1);
     Assert.assertEquals("Expected list item at index 1 has value <" + "B" + ">, but it was <" + actualListItem_1 + ">", "B", actualListItem_1);
-    Assert.assertEquals("Expected field 'MyName' has value <" + "Test" + ">, but it was <" + actualMyAdditions.getMyName() + ">", "Test", actualMyAdditions.getMyName());
+    Assert.assertEquals("Expected field 'MyName' has value <" + "Test" + ">, but it was <" + actualMyAdditions.MyName + ">", "Test", actualMyAdditions.MyName);
   }
   public void then_CustomTableRowField_has_1_rows() {
     List<LowLevelFields_ViewModelCustomTableRowFieldRow> actualRows = this.sut.getCustomTableRowFieldTableRows();
@@ -95,7 +95,7 @@ public class LowLevelFields_ViewTests_Test {
     Assert.assertFalse("Expected field 'AdditionalBool' has boolean value <false>, but it was <" + ((row0.getAdditionalBool() ? "true" : "false")) + ">", row0.getAdditionalBool());
     List<MyAdditions> actualList_2 = row0.getAdditionalCustomElements();
     MyAdditions actualListItem_0 = actualList_2.get(1 - 1);
-    Assert.assertFalse("Expected field 'MyFlag' has boolean value <false>, but it was <" + ((actualListItem_0.getMyFlag() ? "true" : "false")) + ">", actualListItem_0.getMyFlag());
+    Assert.assertFalse("Expected field 'MyFlag' has boolean value <false>, but it was <" + ((actualListItem_0.MyFlag ? "true" : "false")) + ">", actualListItem_0.MyFlag);
     // }
   }
   public void then_CustomListRowField_has_1_rows() {

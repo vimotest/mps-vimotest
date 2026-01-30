@@ -4,7 +4,7 @@ package de.vimotest.sandbox.dependencies;
 
 
 public class ViewModelDependency_ViewModel {
-  public Boolean MyBool;
+  private Boolean MyBool;
   public Boolean getMyBool() {
     return this.MyBool;
   }

@@ -6,22 +6,7 @@ datatype MyAdditions {
   
   public MyFlag : Boolean  ;
   
-  public getMyFlag (  ) : Boolean  {
-    return this.MyFlag;
-
-  }
-  
   public MyName : String  ;
   
-  public getMyName (  ) : String  {
-    return this.MyName;
-
-  }
-  
   public Infos : String [ * ]  ;
-  
-  public getInfos (  ) : String [ * ]  {
-    return this.Infos;
-
-  }
 }

@@ -6,23 +6,23 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class LowLevelFields_ViewModel {
-  public Boolean MyBool;
+  private Boolean MyBool;
   public Boolean getMyBool() {
     return this.MyBool;
   }
-  public Integer MyInt;
+  private Integer MyInt;
   public Integer getMyInt() {
     return this.MyInt;
   }
-  public String MyString;
+  private String MyString;
   public String getMyString() {
     return this.MyString;
   }
-  public List<String> MyStrings = new LinkedList<>();
+  private List<String> MyStrings = new LinkedList<>();
   public List<String> getMyStrings() {
     return this.MyStrings;
   }
-  public MyAdditions MyFieldAdditions;
+  private MyAdditions MyFieldAdditions;
   public MyAdditions getMyFieldAdditions() {
     return this.MyFieldAdditions;
   }

@@ -13,20 +13,20 @@ namespace widgetassertions
   class LowLevelFields_ViewModel
   {
   public:
-    bool MyBool;
     virtual bool getMyBool();
-    int MyInt;
     virtual int getMyInt();
-    std::string MyString;
     virtual std::string getMyString();
-    std::vector<std::string> MyStrings;
     virtual std::vector<std::string> getMyStrings();
-    MyAdditions MyFieldAdditions;
     virtual MyAdditions getMyFieldAdditions();
     virtual std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomTableRowFieldRow>> getCustomTableRowFieldTableRows();
     virtual std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomListRowFieldRow>> getCustomListRowFieldListRows();
     virtual std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomTreeRowFieldRow>> getCustomTreeRowFieldTreeRows();
   private:
+    bool MyBool;
+    int MyInt;
+    std::string MyString;
+    std::vector<std::string> MyStrings;
+    MyAdditions MyFieldAdditions;
     std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomTableRowFieldRow>> CustomTableRowFieldTableRows;
     std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomListRowFieldRow>> CustomListRowFieldListRows;
     std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomTreeRowFieldRow>> CustomTreeRowFieldTreeRows;

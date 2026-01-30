@@ -5,7 +5,7 @@ namespace dependencies.subscope
 {
     public class RepeatUsageDependency_ViewModel
     {
-        public bool MyBool;
+        private bool MyBool;
 
         public virtual bool getMyBool()
         {

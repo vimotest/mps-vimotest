@@ -100,9 +100,9 @@ class LowLevelFields_ViewTests {
   public then_MyFieldAdditions_is_todo_recordpattern (  ) {
     let actualMyAdditions: MyAdditions = this.sut.getMyFieldAdditions (  );
 
-    AssertFalseWithMessage ( actualMyAdditions.getMyFlag (  ), "Expected field 'MyFlag' has boolean value <false>, but it was <" + ( actualMyAdditions.getMyFlag (  ) ? "true" : "false" ) + ">" );
+    AssertFalseWithMessage ( actualMyAdditions.MyFlag, "Expected field 'MyFlag' has boolean value <false>, but it was <" + ( actualMyAdditions.MyFlag ? "true" : "false" ) + ">" );
 
-    let actualList_1: String [] = actualMyAdditions.getInfos (  );
+    let actualList_1: String [] = actualMyAdditions.Infos;
 
     let actualListItem_0: String = actualList_1[ 1 ];
 
@@ -112,7 +112,7 @@ class LowLevelFields_ViewTests {
 
     AssertEqualWithMessage ( "B", actualListItem_1, "Expected list item at index 1 has value <" + "B" + ">, but it was <" + actualListItem_1 + ">" );
 
-    AssertEqualWithMessage ( "Test", actualMyAdditions.getMyName (  ), "Expected field 'MyName' has value <" + "Test" + ">, but it was <" + actualMyAdditions.getMyName (  ) + ">" );
+    AssertEqualWithMessage ( "Test", actualMyAdditions.MyName, "Expected field 'MyName' has value <" + "Test" + ">, but it was <" + actualMyAdditions.MyName + ">" );
 
   }
   
@@ -134,7 +134,7 @@ class LowLevelFields_ViewTests {
 
       let actualListItem_0: MyAdditions = actualList_2[ 1 ];
 
-      AssertFalseWithMessage ( actualListItem_0.getMyFlag (  ), "Expected field 'MyFlag' has boolean value <false>, but it was <" + ( actualListItem_0.getMyFlag (  ) ? "true" : "false" ) + ">" );
+      AssertFalseWithMessage ( actualListItem_0.MyFlag, "Expected field 'MyFlag' has boolean value <false>, but it was <" + ( actualListItem_0.MyFlag ? "true" : "false" ) + ">" );
 
     }
 

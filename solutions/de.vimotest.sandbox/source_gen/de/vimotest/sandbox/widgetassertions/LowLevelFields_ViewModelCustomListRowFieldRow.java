@@ -10,7 +10,7 @@ public class LowLevelFields_ViewModelCustomListRowFieldRow {
   public String getHeaderLabelText() {
     return this.HeaderLabelText;
   }
-  public List<String> AdditionalStrings = new LinkedList<>();
+  private List<String> AdditionalStrings = new LinkedList<>();
   public List<String> getAdditionalStrings() {
     return this.AdditionalStrings;
   }

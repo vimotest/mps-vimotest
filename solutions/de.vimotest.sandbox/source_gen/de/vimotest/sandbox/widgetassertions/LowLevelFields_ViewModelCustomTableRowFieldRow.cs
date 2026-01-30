@@ -15,14 +15,14 @@ namespace widgetassertions
             return this.HeaderLabelText;
         }
 
-        public bool AdditionalBool;
+        private bool AdditionalBool;
 
         public virtual bool getAdditionalBool()
         {
             return this.AdditionalBool;
         }
 
-        public System.Collections.Generic.List<widgetassertions.MyAdditions> AdditionalCustomElements = new System.Collections.Generic.List<widgetassertions.MyAdditions>();
+        private System.Collections.Generic.List<widgetassertions.MyAdditions> AdditionalCustomElements = new System.Collections.Generic.List<widgetassertions.MyAdditions>();
 
         public virtual System.Collections.Generic.List<widgetassertions.MyAdditions> getAdditionalCustomElements()
         {

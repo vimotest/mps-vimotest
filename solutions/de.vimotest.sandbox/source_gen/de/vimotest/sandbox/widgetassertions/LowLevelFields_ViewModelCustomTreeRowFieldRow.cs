@@ -12,7 +12,7 @@ namespace widgetassertions
             return this.HeaderLabelText;
         }
 
-        public int AdditionalInt;
+        private int AdditionalInt;
 
         public virtual int getAdditionalInt()
         {

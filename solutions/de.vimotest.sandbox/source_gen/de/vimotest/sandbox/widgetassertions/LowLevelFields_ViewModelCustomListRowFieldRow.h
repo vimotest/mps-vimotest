@@ -9,11 +9,11 @@ namespace widgetassertions
   {
   public:
     virtual std::string getHeaderLabelText();
-    std::vector<std::string> AdditionalStrings;
     virtual std::vector<std::string> getAdditionalStrings();
     virtual std::string getRowHandle();
   private:
     std::string HeaderLabelText;
+    std::vector<std::string> AdditionalStrings;
     std::string RowHandle;
   };
 }

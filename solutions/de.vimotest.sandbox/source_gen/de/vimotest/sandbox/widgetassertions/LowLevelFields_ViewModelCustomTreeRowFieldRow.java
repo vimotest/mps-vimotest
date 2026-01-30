@@ -8,7 +8,7 @@ public class LowLevelFields_ViewModelCustomTreeRowFieldRow {
   public String getHeaderLabelText() {
     return this.HeaderLabelText;
   }
-  public Integer AdditionalInt;
+  private Integer AdditionalInt;
   public Integer getAdditionalInt() {
     return this.AdditionalInt;
   }

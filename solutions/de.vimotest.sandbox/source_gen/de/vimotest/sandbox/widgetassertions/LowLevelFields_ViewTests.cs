@@ -84,13 +84,13 @@ public class LowLevelFields_ViewTests
     public virtual void then_MyFieldAdditions_is_todo_recordpattern()
     {
         var actualMyAdditions = this.sut.getMyFieldAdditions();
-        Assert.IsFalse(actualMyAdditions.getMyFlag(), "Expected field 'MyFlag' has boolean value <false>, but it was <" + (actualMyAdditions.getMyFlag() ? "true" : "false") + ">");
-        var actualList_1 = actualMyAdditions.getInfos();
+        Assert.IsFalse(actualMyAdditions.MyFlag, "Expected field 'MyFlag' has boolean value <false>, but it was <" + (actualMyAdditions.MyFlag ? "true" : "false") + ">");
+        var actualList_1 = actualMyAdditions.Infos;
         var actualListItem_0 = actualList_1[0];
         Assert.AreEqual("A", actualListItem_0, "Expected list item at index 0 has value <" + "A" + ">, but it was <" + actualListItem_0 + ">");
         var actualListItem_1 = actualList_1[1];
         Assert.AreEqual("B", actualListItem_1, "Expected list item at index 1 has value <" + "B" + ">, but it was <" + actualListItem_1 + ">");
-        Assert.AreEqual("Test", actualMyAdditions.getMyName(), "Expected field 'MyName' has value <" + "Test" + ">, but it was <" + actualMyAdditions.getMyName() + ">");
+        Assert.AreEqual("Test", actualMyAdditions.MyName, "Expected field 'MyName' has value <" + "Test" + ">, but it was <" + actualMyAdditions.MyName + ">");
     }
 
     public virtual void then_CustomTableRowField_has_1_rows()
@@ -105,7 +105,7 @@ public class LowLevelFields_ViewTests
             Assert.IsFalse(row0.getAdditionalBool(), "Expected field 'AdditionalBool' has boolean value <false>, but it was <" + (row0.getAdditionalBool() ? "true" : "false") + ">");
             var actualList_2 = row0.getAdditionalCustomElements();
             var actualListItem_0 = actualList_2[0];
-            Assert.IsFalse(actualListItem_0.getMyFlag(), "Expected field 'MyFlag' has boolean value <false>, but it was <" + (actualListItem_0.getMyFlag() ? "true" : "false") + ">");
+            Assert.IsFalse(actualListItem_0.MyFlag, "Expected field 'MyFlag' has boolean value <false>, but it was <" + (actualListItem_0.MyFlag ? "true" : "false") + ">");
         }
     }
 

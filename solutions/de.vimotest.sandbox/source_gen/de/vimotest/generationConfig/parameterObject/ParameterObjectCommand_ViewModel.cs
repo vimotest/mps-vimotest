@@ -14,24 +14,9 @@ public class ParameterObjectCommand_ViewModel
     {
         public string Value1;
 
-        public string getValue1()
-        {
-            return this.Value1;
-        }
-
         public bool Value2;
 
-        public bool getValue2()
-        {
-            return this.Value2;
-        }
-
         public int Value3;
-
-        public int getValue3()
-        {
-            return this.Value3;
-        }
 
         public LoadViewParams()
         {

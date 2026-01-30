@@ -64,6 +64,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -274,6 +275,9 @@
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
+      <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
+        <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
+      </concept>
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -304,6 +308,9 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
+      <concept id="5779574625830813396" name="jetbrains.mps.lang.smodel.structure.EnumerationIdRefExpression" flags="ng" index="1XH99k">
+        <reference id="5779574625830813397" name="enumDeclaration" index="1XH99l" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -313,6 +320,7 @@
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
         <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
         <property id="1341860900487648621" name="propertyId" index="P4ACc" />
+        <property id="1189424455254633007" name="enumUsageMigrated" index="1I7cki" />
       </concept>
       <concept id="3364660638048049745" name="jetbrains.mps.lang.core.structure.LinkAttribute" flags="ng" index="A9Btn">
         <property id="1757699476691236116" name="role_DebugInfo" index="2qtEX8" />
@@ -479,6 +487,11 @@
       <property role="TrG5h" value="FieldStructContent_Getter_OperationDefinition" />
       <ref role="2rTdP9" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQA" resolve="OperationDefinition" />
+    </node>
+    <node concept="2rT7sh" id="5REyxMNgpg3" role="2rTMjI">
+      <property role="TrG5h" value="FieldStructContent_Attribute_AttributeDefinition" />
+      <ref role="2rTdP9" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
+      <ref role="2rZz_L" to="28lk:2HeY20H6tuG" resolve="AttributeDefinition" />
     </node>
     <node concept="2rT7sh" id="5veytyjQi6U" role="2rTMjI">
       <property role="TrG5h" value="CustomFeature_Getter_OperationDefinition" />
@@ -3935,16 +3948,56 @@
             <node concept="3IZrLx" id="4ncpC4iI1Kp" role="3IZSJc">
               <node concept="3clFbS" id="4ncpC4iI1Kq" role="2VODD2">
                 <node concept="3clFbF" id="4ncpC4iI24V" role="3cqZAp">
-                  <node concept="3fqX7Q" id="4ncpC4iI24W" role="3clFbG">
-                    <node concept="2YIFZM" id="4ncpC4iI24X" role="3fr31v">
-                      <ref role="37wK5l" to="nrs2:7YmnhjiwcRB" resolve="generateAbstractViewModel" />
-                      <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
-                      <node concept="30H73N" id="4ncpC4iI24Y" role="37wK5m" />
-                    </node>
+                  <node concept="2YIFZM" id="5REyxMNgcAG" role="3clFbG">
+                    <ref role="37wK5l" to="jrwo:5REyxMNgacc" resolve="shouldGenerateAttributeForField" />
+                    <ref role="1Pybhc" to="jrwo:5REyxMNg3zb" resolve="FieldPropertyGenerationHelper" />
+                    <node concept="30H73N" id="5REyxMNgcAH" role="37wK5m" />
                   </node>
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="17Uvod" id="5REyxMNgfCe" role="lGtFl">
+            <property role="2qtEX9" value="visibility" />
+            <property role="P4ACc" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/3328952194368015154/3328952194368015157" />
+            <property role="1I7cki" value="true" />
+            <node concept="3zFVjK" id="5REyxMNgfCf" role="3zH0cK">
+              <node concept="3clFbS" id="5REyxMNgfCg" role="2VODD2">
+                <node concept="3clFbJ" id="5REyxMNgg9P" role="3cqZAp">
+                  <node concept="2YIFZM" id="5REyxMNghdA" role="3clFbw">
+                    <ref role="37wK5l" to="jrwo:5REyxMNg3$q" resolve="shouldGenerateGetterForField" />
+                    <ref role="1Pybhc" to="jrwo:5REyxMNg3zb" resolve="FieldPropertyGenerationHelper" />
+                    <node concept="30H73N" id="5REyxMNghJt" role="37wK5m" />
+                  </node>
+                  <node concept="3clFbS" id="5REyxMNgg9R" role="3clFbx">
+                    <node concept="3cpWs6" id="5REyxMNgiii" role="3cqZAp">
+                      <node concept="2OqwBi" id="5REyxMNgkAL" role="3cqZAk">
+                        <node concept="1XH99k" id="5REyxMNgiQP" role="2Oq$k0">
+                          <ref role="1XH99l" to="28lk:6OepWIVA92D" resolve="Visibility" />
+                        </node>
+                        <node concept="2ViDtV" id="5REyxMNglqX" role="2OqNvi">
+                          <ref role="2ViDtZ" to="28lk:6OepWIVA92M" resolve="private" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="5REyxMNgmfn" role="3cqZAp">
+                  <node concept="2OqwBi" id="5REyxMNgmfp" role="3clFbG">
+                    <node concept="1XH99k" id="5REyxMNgmfq" role="2Oq$k0">
+                      <ref role="1XH99l" to="28lk:6OepWIVA92D" resolve="Visibility" />
+                    </node>
+                    <node concept="2ViDtV" id="5REyxMNgmfr" role="2OqNvi">
+                      <ref role="2ViDtZ" to="28lk:6OepWIVA92E" resolve="public" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="5REyxMNgmfl" role="3cqZAp" />
+              </node>
+            </node>
+          </node>
+          <node concept="2ZBi8u" id="5REyxMNgrKn" role="lGtFl">
+            <ref role="2rW$FS" node="5REyxMNgpg3" resolve="FieldStructContent_Attribute_AttributeDefinition" />
           </node>
         </node>
         <node concept="6nSm6" id="4ncpC4iI020" role="PCHHv">
@@ -3987,6 +4040,19 @@
                     <ref role="37wK5l" to="jrwo:4ncpC4iIblU" resolve="getGetterOperationNameForField" />
                     <ref role="1Pybhc" to="jrwo:2evlxT94KqS" resolve="ViewModelGeneratorNameHelper" />
                     <node concept="30H73N" id="4ncpC4iIzBp" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1W57fq" id="6SUC7zADbtQ" role="lGtFl">
+            <node concept="3IZrLx" id="6SUC7zADbtR" role="3IZSJc">
+              <node concept="3clFbS" id="6SUC7zADbtS" role="2VODD2">
+                <node concept="3clFbF" id="6SUC7zADbXN" role="3cqZAp">
+                  <node concept="2YIFZM" id="5REyxMNg9Nz" role="3clFbG">
+                    <ref role="37wK5l" to="jrwo:5REyxMNg3$q" resolve="shouldGenerateGetterForField" />
+                    <ref role="1Pybhc" to="jrwo:5REyxMNg3zb" resolve="FieldPropertyGenerationHelper" />
+                    <node concept="30H73N" id="5REyxMNg9OB" role="37wK5m" />
                   </node>
                 </node>
               </node>

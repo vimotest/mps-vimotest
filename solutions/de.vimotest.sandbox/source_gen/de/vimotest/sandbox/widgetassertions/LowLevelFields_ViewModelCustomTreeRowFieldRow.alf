@@ -12,7 +12,7 @@ public class LowLevelFields_ViewModelCustomTreeRowFieldRow {
 
   }
   
-  public AdditionalInt : Integer  ;
+  private AdditionalInt : Integer  ;
   
   public getAdditionalInt (  ) : Integer  {
     return this.AdditionalInt;

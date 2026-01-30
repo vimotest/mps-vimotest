@@ -8,35 +8,35 @@ namespace widgetassertions
 {
     public class LowLevelFields_ViewModel
     {
-        public bool MyBool;
+        private bool MyBool;
 
         public virtual bool getMyBool()
         {
             return this.MyBool;
         }
 
-        public int MyInt;
+        private int MyInt;
 
         public virtual int getMyInt()
         {
             return this.MyInt;
         }
 
-        public string MyString;
+        private string MyString;
 
         public virtual string getMyString()
         {
             return this.MyString;
         }
 
-        public System.Collections.Generic.List<string> MyStrings = new System.Collections.Generic.List<string>();
+        private System.Collections.Generic.List<string> MyStrings = new System.Collections.Generic.List<string>();
 
         public virtual System.Collections.Generic.List<string> getMyStrings()
         {
             return this.MyStrings;
         }
 
-        public widgetassertions.MyAdditions MyFieldAdditions;
+        private widgetassertions.MyAdditions MyFieldAdditions;
 
         public virtual widgetassertions.MyAdditions getMyFieldAdditions()
         {

@@ -5,7 +5,7 @@ namespace dependencies
 {
     public class ViewModelDependency_ViewModel
     {
-        public bool MyBool;
+        private bool MyBool;
 
         public virtual bool getMyBool()
         {

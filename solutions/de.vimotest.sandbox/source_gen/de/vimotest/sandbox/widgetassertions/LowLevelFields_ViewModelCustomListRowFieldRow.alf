@@ -12,7 +12,7 @@ public class LowLevelFields_ViewModelCustomListRowFieldRow {
 
   }
   
-  public AdditionalStrings : String [ * ]  ;
+  private AdditionalStrings : String [ * ]  ;
   
   public getAdditionalStrings (  ) : String [ * ]  {
     return this.AdditionalStrings;

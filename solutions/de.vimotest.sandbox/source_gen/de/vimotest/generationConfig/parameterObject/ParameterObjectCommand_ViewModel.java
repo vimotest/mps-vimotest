@@ -10,17 +10,8 @@ public class ParameterObjectCommand_ViewModel {
   }
   public static class LoadViewParams {
     public String Value1;
-    public String getValue1() {
-      return this.Value1;
-    }
     public Boolean Value2;
-    public Boolean getValue2() {
-      return this.Value2;
-    }
     public Integer Value3;
-    public Integer getValue3() {
-      return this.Value3;
-    }
     public LoadViewParams() {
     }
     public LoadViewParams(String Value1, Boolean Value2, Integer Value3) {

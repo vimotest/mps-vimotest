@@ -8,12 +8,12 @@ namespace widgetassertions
   {
   public:
     virtual std::string getHeaderLabelText();
-    int AdditionalInt;
     virtual int getAdditionalInt();
     virtual std::string getRowHandle();
     virtual int getRowDepth();
   private:
     std::string HeaderLabelText;
+    int AdditionalInt;
     std::string RowHandle;
     int RowDepth;
   };

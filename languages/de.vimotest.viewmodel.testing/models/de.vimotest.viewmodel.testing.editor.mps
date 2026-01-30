@@ -7981,5 +7981,28 @@
       <node concept="l2Vlx" id="5vdnfLzDY5r" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="1MgSEbJFwG2">
+    <property role="3GE5qa" value="test.datadriven" />
+    <ref role="1XX52x" to="53m0:1MgSEbJFwG0" resolve="ScenarioExamplePlaceholderAttribute" />
+    <node concept="3EZMnI" id="1MgSEbJFwGb" role="2wV5jI">
+      <node concept="2iRfu4" id="1MgSEbJFwGc" role="2iSdaV" />
+      <node concept="3F0ifn" id="1MgSEbJFwG8" role="3EZMnx">
+        <property role="3F0ifm" value="{{" />
+      </node>
+      <node concept="1iCGBv" id="1MgSEbJFwGg" role="3EZMnx">
+        <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
+        <ref role="1NtTu8" to="53m0:1MgSEbJFwGf" resolve="exampleTableColumnHeader" />
+        <node concept="1sVBvm" id="1MgSEbJFwGi" role="1sWHZn">
+          <node concept="3F0A7n" id="1MgSEbJFwGm" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="evry:6RKU0sd8qlX" resolve="value" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1MgSEbJFwGd" role="3EZMnx">
+        <property role="3F0ifm" value="}}" />
+      </node>
+    </node>
+  </node>
 </model>
 

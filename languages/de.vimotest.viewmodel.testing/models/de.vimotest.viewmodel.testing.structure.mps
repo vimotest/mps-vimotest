@@ -49,6 +49,9 @@
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -1717,6 +1720,22 @@
       <property role="20kJfa" value="expectedValue" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="28lk:2kuSLC0kNK2" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1MgSEbJFwG0">
+    <property role="EcuMT" value="2058394219142056704" />
+    <property role="3GE5qa" value="test.datadriven" />
+    <property role="TrG5h" value="ScenarioExamplePlaceholderAttribute" />
+    <property role="34LRSv" value="scenario example value placeholder" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDm" resolve="PropertyAttribute" />
+    <node concept="1TJgyj" id="1MgSEbJFwGf" role="1TKVEi">
+      <property role="IQ2ns" value="2058394219142056719" />
+      <property role="20kJfa" value="exampleTableColumnHeader" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="evry:6RKU0sd8q9N" resolve="StringValue" />
+    </node>
+    <node concept="M6xJ_" id="1MgSEbJFwG1" role="lGtFl">
+      <property role="Hh88m" value="examplePlaceholder" />
     </node>
   </node>
 </model>

@@ -15,9 +15,17 @@
       <concept id="6666499814681515200" name="jetbrains.mps.core.xml.structure.XmlFile" flags="ng" index="2pMbU2">
         <child id="6666499814681515201" name="document" index="2pMbU3" />
       </concept>
+      <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
+        <property id="6666499814681541920" name="text" index="2pMdty" />
+      </concept>
       <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
         <property id="6666499814681415862" name="tagName" index="2pNNFO" />
+        <child id="6666499814681415861" name="attributes" index="2pNNFR" />
         <child id="1622293396948928802" name="content" index="3o6s8t" />
+      </concept>
+      <concept id="6666499814681447923" name="jetbrains.mps.core.xml.structure.XmlAttribute" flags="ng" index="2pNUuL">
+        <property id="6666499814681447926" name="attrName" index="2pNUuO" />
+        <child id="6666499814681541918" name="value" index="2pMdts" />
       </concept>
       <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG" />
       <concept id="6786756355279841993" name="jetbrains.mps.core.xml.structure.XmlDocument" flags="ng" index="3rIKKV">
@@ -73,6 +81,10 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
+      <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
+        <property id="1757699476691236117" name="name_DebugInfo" index="2qtEX9" />
+        <property id="1341860900487648621" name="propertyId" index="P4ACc" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -122,6 +134,10 @@
       <concept id="5447508759369797102" name="de.vimotest.viewmodel.testing.structure.WidgetTableRowsCheckValue" flags="ng" index="2ayrQO">
         <child id="5447508759369822399" name="rows" index="2ay43_" />
         <child id="7922086861434398932" name="columnCheckInfos" index="1EpG3j" />
+      </concept>
+      <concept id="6097395164577701926" name="de.vimotest.viewmodel.testing.structure.ScenarioDataTable" flags="ng" index="2jieMY">
+        <child id="6097395164577876833" name="headersRow" index="2jhKvT" />
+        <child id="6097395164577876834" name="rows" index="2jhKvU" />
       </concept>
       <concept id="3922717397912187313" name="de.vimotest.viewmodel.testing.structure.ImageSourceCheckValue" flags="ng" index="2mJbG1">
         <child id="173640931447457367" name="expectedImage" index="3n32fm" />
@@ -279,8 +295,12 @@
         <property id="4309178210352018151" name="textBefore" index="1IbZgB" />
       </concept>
       <concept id="7205622933660482722" name="de.vimotest.viewmodel.testing.structure.ViewModelTestScenario" flags="ng" index="3LKzX3">
+        <child id="6097395164577880064" name="dataTable" index="2jhLio" />
         <child id="7445061853131767039" name="contextWithDescription" index="DUd2K" />
         <child id="7199841511154487307" name="whenThenDescriptions" index="1s$QAY" />
+      </concept>
+      <concept id="2058394219142056704" name="de.vimotest.viewmodel.testing.structure.ScenarioExamplePlaceholderAttribute" flags="ng" index="3NfIAy">
+        <reference id="2058394219142056719" name="exampleTableColumnHeader" index="3NfIAH" />
       </concept>
       <concept id="1116055435858972130" name="de.vimotest.viewmodel.testing.structure.WidgetCellCheck" flags="ng" index="1NuoHz">
         <property id="7922086861434394671" name="ignoreCellCheck" index="1EpJ0C" />
@@ -6289,6 +6309,56 @@
     <node concept="3LKzX3" id="5iuj9z88JtO" role="30n1Qb">
       <property role="TrG5h" value="DataDrivenTable" />
       <node concept="1s$VFG" id="5iuj9z88JtR" role="1s$QAY" />
+      <node concept="2jieMY" id="1MgSEbJFwBB" role="2jhLio">
+        <node concept="1wOntz" id="1MgSEbJFwBC" role="2jhKvT">
+          <node concept="1wOkDO" id="1MgSEbJFwBD" role="1wOkDD">
+            <property role="1wOkPU" value="Name" />
+          </node>
+          <node concept="1wOkDO" id="1MgSEbJFwBG" role="1wOkDD">
+            <property role="1wOkPU" value="Age" />
+          </node>
+        </node>
+        <node concept="1wOntz" id="1MgSEbJFwBE" role="2jhKvU">
+          <node concept="1wOkDO" id="1MgSEbJFwBF" role="1wOkDD">
+            <property role="1wOkPU" value="Max" />
+          </node>
+          <node concept="1wOkDO" id="1MgSEbJFwBH" role="1wOkDD">
+            <property role="1wOkPU" value="22" />
+          </node>
+        </node>
+        <node concept="1wOntz" id="1MgSEbJFwBK" role="2jhKvU">
+          <node concept="1wOkDO" id="1MgSEbJFwBL" role="1wOkDD">
+            <property role="1wOkPU" value="Alice" />
+          </node>
+          <node concept="1wOkDO" id="1MgSEbJFwBM" role="1wOkDD">
+            <property role="1wOkPU" value="34" />
+          </node>
+        </node>
+      </node>
+      <node concept="1IbZgy" id="1MgSEbJFwBQ" role="DUd2K">
+        <node concept="1H7tSw" id="1MgSEbJFwBO" role="DUiTU">
+          <node concept="2pNNFK" id="1MgSEbJFwBP" role="1H7tSJ">
+            <property role="2pNNFO" value="Person" />
+            <node concept="2pNUuL" id="1MgSEbJFwBT" role="2pNNFR">
+              <property role="2pNUuO" value="name" />
+              <node concept="2pMdtt" id="1MgSEbJFwBU" role="2pMdts">
+                <property role="2pMdty" value="Name" />
+              </node>
+            </node>
+            <node concept="2pNUuL" id="1MgSEbJFwBW" role="2pNNFR">
+              <property role="2pNUuO" value="age" />
+              <node concept="2pMdtt" id="1MgSEbJFwBX" role="2pMdts">
+                <property role="2pMdty" value="42" />
+                <node concept="3NfIAy" id="7tlPSJfd1zq" role="lGtFl">
+                  <property role="2qtEX9" value="text" />
+                  <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+                  <ref role="3NfIAH" node="1MgSEbJFwBD" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="103ZX$" id="5iuj9z82xo6">

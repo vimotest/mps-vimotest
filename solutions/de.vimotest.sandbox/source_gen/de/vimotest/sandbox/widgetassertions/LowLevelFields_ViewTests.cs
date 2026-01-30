@@ -37,10 +37,10 @@ public class LowLevelFields_ViewTests
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
-    public void Record_Field_Asserts_given_when_then_MyAdditions_is_todo_recordpattern()
+    public void Record_Field_Asserts_given_when_then_MyFieldAdditions_is_todo_recordpattern()
     {
         this.BuildSut();
-        this.then_MyAdditions_is_todo_recordpattern();
+        this.then_MyFieldAdditions_is_todo_recordpattern();
     }
 
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
@@ -81,9 +81,9 @@ public class LowLevelFields_ViewTests
         Assert.AreEqual("B", actualListItem_1, "Expected list item at index 1 has value <" + "B" + ">, but it was <" + actualListItem_1 + ">");
     }
 
-    public virtual void then_MyAdditions_is_todo_recordpattern()
+    public virtual void then_MyFieldAdditions_is_todo_recordpattern()
     {
-        var actualMyAdditions = this.sut.getMyAdditions();
+        var actualMyAdditions = this.sut.getMyFieldAdditions();
         Assert.IsFalse(actualMyAdditions.getMyFlag(), "Expected field 'MyFlag' has boolean value <false>, but it was <" + (actualMyAdditions.getMyFlag() ? "true" : "false") + ">");
         var actualList_1 = actualMyAdditions.getInfos();
         var actualListItem_0 = actualList_1[0];

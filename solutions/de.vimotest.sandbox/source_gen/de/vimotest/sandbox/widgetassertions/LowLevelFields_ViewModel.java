@@ -22,9 +22,9 @@ public class LowLevelFields_ViewModel {
   public List<String> getMyStrings() {
     return this.MyStrings;
   }
-  public MyAdditions MyAdditions;
-  public MyAdditions getMyAdditions() {
-    return this.MyAdditions;
+  public MyAdditions MyFieldAdditions;
+  public MyAdditions getMyFieldAdditions() {
+    return this.MyFieldAdditions;
   }
   private List<LowLevelFields_ViewModelCustomTableRowFieldRow> CustomTableRowFieldTableRows = new LinkedList<>();
   public List<LowLevelFields_ViewModelCustomTableRowFieldRow> getCustomTableRowFieldTableRows() {

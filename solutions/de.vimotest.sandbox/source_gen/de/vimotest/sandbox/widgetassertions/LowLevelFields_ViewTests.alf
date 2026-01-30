@@ -35,10 +35,10 @@ class LowLevelFields_ViewTests {
 
   }
   
-  public Record_Field_Asserts_given_when_then_MyAdditions_is_todo_recordpattern (  ) {
+  public Record_Field_Asserts_given_when_then_MyFieldAdditions_is_todo_recordpattern (  ) {
     this.BuildSut (  );
 
-    this.then_MyAdditions_is_todo_recordpattern (  );
+    this.then_MyFieldAdditions_is_todo_recordpattern (  );
 
   }
   
@@ -97,8 +97,8 @@ class LowLevelFields_ViewTests {
 
   }
   
-  public then_MyAdditions_is_todo_recordpattern (  ) {
-    let actualMyAdditions: MyAdditions = this.sut.getMyAdditions (  );
+  public then_MyFieldAdditions_is_todo_recordpattern (  ) {
+    let actualMyAdditions: MyAdditions = this.sut.getMyFieldAdditions (  );
 
     AssertFalseWithMessage ( actualMyAdditions.getMyFlag (  ), "Expected field 'MyFlag' has boolean value <false>, but it was <" + ( actualMyAdditions.getMyFlag (  ) ? "true" : "false" ) + ">" );
 

@@ -5321,7 +5321,7 @@
         </node>
       </node>
       <node concept="1nWCU9" id="4mGsJw9O7v7" role="103ZUC">
-        <property role="TrG5h" value="MyAdditions" />
+        <property role="TrG5h" value="MyFieldAdditions" />
         <node concept="2BLadC" id="4mGsJw9O7vf" role="3xMlr6">
           <ref role="2BLa4B" node="5U4kGNTnh1B" resolve="MyAdditions" />
         </node>
@@ -5518,7 +5518,7 @@
         <node concept="DUd2R" id="4mGsJw9O7nt" role="1s$QAX">
           <node concept="3Ybqct" id="4mGsJw9O7nu" role="DUiSb">
             <node concept="QdLUi" id="4mGsJw9O7nv" role="3YbqX6">
-              <ref role="QdLUf" node="4mGsJw9O7v7" resolve="MyAdditions" />
+              <ref role="QdLUf" node="4mGsJw9O7v7" resolve="MyFieldAdditions" />
               <node concept="QdLUg" id="4mGsJwamsgL" role="QdLUe">
                 <node concept="QdLUi" id="4mGsJwaLoZc" role="QdLU4">
                   <ref role="QdLUf" node="5U4kGNTFVf1" resolve="MyFlag" />

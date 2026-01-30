@@ -21,8 +21,8 @@ namespace widgetassertions
     virtual std::string getMyString();
     std::vector<std::string> MyStrings;
     virtual std::vector<std::string> getMyStrings();
-    MyAdditions MyAdditions;
-    virtual MyAdditions getMyAdditions();
+    MyAdditions MyFieldAdditions;
+    virtual MyAdditions getMyFieldAdditions();
     virtual std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomTableRowFieldRow>> getCustomTableRowFieldTableRows();
     virtual std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomListRowFieldRow>> getCustomListRowFieldListRows();
     virtual std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomTreeRowFieldRow>> getCustomTreeRowFieldTreeRows();

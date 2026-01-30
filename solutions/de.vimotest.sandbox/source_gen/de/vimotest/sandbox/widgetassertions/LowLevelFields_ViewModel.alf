@@ -33,10 +33,10 @@ public class LowLevelFields_ViewModel {
 
   }
   
-  public MyAdditions : MyAdditions  ;
+  public MyFieldAdditions : MyAdditions  ;
   
-  public getMyAdditions (  ) : MyAdditions  {
-    return this.MyAdditions;
+  public getMyFieldAdditions (  ) : MyAdditions  {
+    return this.MyFieldAdditions;
 
   }
   

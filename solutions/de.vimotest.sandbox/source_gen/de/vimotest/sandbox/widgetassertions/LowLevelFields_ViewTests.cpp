@@ -22,7 +22,7 @@ namespace widgetassertions
     virtual void then_MyInt_is_42();
     virtual void then_MyString_is_text_();
     virtual void then_MyStrings_is_todo_listpattern();
-    virtual void then_MyAdditions_is_todo_recordpattern();
+    virtual void then_MyFieldAdditions_is_todo_recordpattern();
     virtual void then_CustomTableRowField_has_1_rows();
     virtual void then_CustomListRowField_has_1_rows();
     virtual void then_CustomTreeRowField_has_1_rows();
@@ -46,10 +46,10 @@ namespace widgetassertions
     this->BuildSut();
     this->then_MyStrings_is_todo_listpattern();
   }
-  TEST_F(LowLevelFields_ViewTests, Record_Field_Asserts_given_when_then_MyAdditions_is_todo_recordpattern)
+  TEST_F(LowLevelFields_ViewTests, Record_Field_Asserts_given_when_then_MyFieldAdditions_is_todo_recordpattern)
   {
     this->BuildSut();
-    this->then_MyAdditions_is_todo_recordpattern();
+    this->then_MyFieldAdditions_is_todo_recordpattern();
   }
   TEST_F(LowLevelFields_ViewTests, Rowbased_Primitive_Fields_given_when_then_CustomTableRowField_has_1_rows_and_CustomListRowField_has_1_rows_and_CustomTreeRowField_has_1_rows)
   {
@@ -82,9 +82,9 @@ namespace widgetassertions
     auto actualListItem_1 = actualList.at(1);
     EXPECT_EQ(std::string("B"), actualListItem_1) << std::string("Expected list item at index 1 has value <") + std::string("B") + std::string(">, but it was <") + actualListItem_1 + std::string(">");
   }
-  void LowLevelFields_ViewTests::then_MyAdditions_is_todo_recordpattern()
+  void LowLevelFields_ViewTests::then_MyFieldAdditions_is_todo_recordpattern()
   {
-    auto actualMyAdditions = this->sut->getMyAdditions();
+    auto actualMyAdditions = this->sut->getMyFieldAdditions();
     EXPECT_FALSE(actualMyAdditions.getMyFlag()) << std::string("Expected field 'MyFlag' has boolean value <false>, but it was <") + (actualMyAdditions.getMyFlag() ? std::string("true") : std::string("false")) + std::string(">");
     auto actualList_1 = actualMyAdditions.getInfos();
     auto actualListItem_0 = actualList_1.at(0);

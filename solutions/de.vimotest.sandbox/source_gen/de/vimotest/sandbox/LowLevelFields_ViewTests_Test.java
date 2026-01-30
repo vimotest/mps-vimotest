@@ -30,9 +30,9 @@ public class LowLevelFields_ViewTests_Test {
     this.then_MyStrings_is_todo_listpattern();
   }
   @Test
-  public void test_Record_Field_Asserts_given_when_then_MyAdditions_is_todo_recordpattern() throws Exception {
+  public void test_Record_Field_Asserts_given_when_then_MyFieldAdditions_is_todo_recordpattern() throws Exception {
     this.BuildSut();
-    this.then_MyAdditions_is_todo_recordpattern();
+    this.then_MyFieldAdditions_is_todo_recordpattern();
   }
   @Test
   public void test_Rowbased_Primitive_Fields_given_when_then_CustomTableRowField_has_1_rows_and_CustomListRowField_has_1_rows_and_CustomTreeRowField_has_1_rows() throws Exception {
@@ -75,8 +75,8 @@ public class LowLevelFields_ViewTests_Test {
     String actualListItem_1 = actualList.get(2 - 1);
     Assert.assertEquals("Expected list item at index 1 has value <" + "B" + ">, but it was <" + actualListItem_1 + ">", "B", actualListItem_1);
   }
-  public void then_MyAdditions_is_todo_recordpattern() {
-    MyAdditions actualMyAdditions = this.sut.getMyAdditions();
+  public void then_MyFieldAdditions_is_todo_recordpattern() {
+    MyAdditions actualMyAdditions = this.sut.getMyFieldAdditions();
     Assert.assertFalse("Expected field 'MyFlag' has boolean value <false>, but it was <" + ((actualMyAdditions.getMyFlag() ? "true" : "false")) + ">", actualMyAdditions.getMyFlag());
     List<String> actualList_1 = actualMyAdditions.getInfos();
     String actualListItem_0 = actualList_1.get(1 - 1);

@@ -36,11 +36,11 @@ namespace widgetassertions
             return this.MyStrings;
         }
 
-        public widgetassertions.MyAdditions MyAdditions;
+        public widgetassertions.MyAdditions MyFieldAdditions;
 
-        public virtual widgetassertions.MyAdditions getMyAdditions()
+        public virtual widgetassertions.MyAdditions getMyFieldAdditions()
         {
-            return this.MyAdditions;
+            return this.MyFieldAdditions;
         }
 
         private System.Collections.Generic.List<widgetassertions.LowLevelFields_ViewModelCustomTableRowFieldRow> CustomTableRowFieldTableRows = new System.Collections.Generic.List<widgetassertions.LowLevelFields_ViewModelCustomTableRowFieldRow>();

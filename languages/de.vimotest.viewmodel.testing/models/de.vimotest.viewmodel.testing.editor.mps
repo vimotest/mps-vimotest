@@ -281,6 +281,9 @@
       <concept id="1950447826681509042" name="jetbrains.mps.lang.editor.structure.ApplyStyleClass" flags="lg" index="3Xmtl4">
         <child id="1950447826683828796" name="target" index="3XvnJa" />
       </concept>
+      <concept id="8428109087107030357" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_ReferenceScope" flags="ng" index="3XHNnq">
+        <reference id="8428109087107339113" name="reference" index="3XGfJA" />
+      </concept>
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -8002,6 +8005,14 @@
       <node concept="3F0ifn" id="1MgSEbJFwGd" role="3EZMnx">
         <property role="3F0ifm" value="}}" />
       </node>
+    </node>
+  </node>
+  <node concept="22mcaB" id="6feyBqVJ2kl">
+    <property role="3GE5qa" value="test.actions.base" />
+    <ref role="aqKnT" to="53m0:7KHRfJVnri5" resolve="ParameterizedCommandCallAction" />
+    <node concept="22hDWj" id="6feyBqVJ2km" role="22hAXT" />
+    <node concept="3XHNnq" id="6feyBqVJ2kn" role="3ft7WO">
+      <ref role="3XGfJA" to="53m0:7KHRfJVnw5G" resolve="targetCommand" />
     </node>
   </node>
 </model>

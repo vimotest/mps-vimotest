@@ -42,7 +42,9 @@
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -1050,6 +1052,9 @@
     <property role="34LRSv" value="load view" />
     <property role="3GE5qa" value="test.actions.base" />
     <ref role="1TJDcQ" node="4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
+    <node concept="asaX9" id="6feyBqVJ2kk" role="lGtFl">
+      <property role="YLQ7P" value="Not used, ParameterizedCommandCallAction is used for LoadViewModel commands" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7NpiMQMW_LL">
     <property role="EcuMT" value="8996304390297115761" />

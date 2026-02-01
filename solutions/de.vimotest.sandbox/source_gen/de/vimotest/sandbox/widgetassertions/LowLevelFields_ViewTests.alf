@@ -16,7 +16,12 @@ class LowLevelFields_ViewTests {
 
   }
   
-  
+  /** 
+  Scenario: Primitive Field Asserts
+    given: 
+     when: 
+     then: MyBool is true and MyInt is 42 and MyString is "text" */
+
   public Primitive_Field_Asserts_given_when_then_MyBool_is_true_and_MyInt_is_42_and_MyString_is_text_ (  ) {
     this.BuildSut (  );
 
@@ -27,21 +32,36 @@ class LowLevelFields_ViewTests {
     this.then_MyString_is_text_ (  );
 
   }
-  
+  /** 
+  Scenario: Primitive List Field Asserts
+    given: 
+     when: 
+     then: MyStrings is todo: listpattern */
+
   public Primitive_List_Field_Asserts_given_when_then_MyStrings_is_todo_listpattern (  ) {
     this.BuildSut (  );
 
     this.then_MyStrings_is_todo_listpattern (  );
 
   }
-  
+  /** 
+  Scenario: Record Field Asserts
+    given: 
+     when: 
+     then: MyFieldAdditions is todo: recordpattern */
+
   public Record_Field_Asserts_given_when_then_MyFieldAdditions_is_todo_recordpattern (  ) {
     this.BuildSut (  );
 
     this.then_MyFieldAdditions_is_todo_recordpattern (  );
 
   }
-  
+  /** 
+  Scenario: Rowbased Primitive Fields
+    given: 
+     when: 
+     then: CustomTableRowField has 1 rows and CustomListRowField has 1 rows and CustomTreeRowField has 1 rows */
+
   public Rowbased_Primitive_Fields_given_when_then_CustomTableRowField_has_1_rows_and_CustomListRowField_has_1_rows_and_CustomTreeRowField_has_1_rows (  ) {
     this.BuildSut (  );
 

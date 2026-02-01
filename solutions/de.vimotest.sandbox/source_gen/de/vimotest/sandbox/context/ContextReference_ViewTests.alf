@@ -16,14 +16,24 @@ class ContextReference_ViewTests {
 
   }
   
-  
+  /** 
+  Scenario: String Context
+    given: baseContext
+     when: 
+     then:  */
+
   public String_Context_given_baseContext_when_then_ (  ) {
     this.given_baseContext (  );
 
     this.BuildSut (  );
 
   }
-  
+  /** 
+  Scenario: Context Reference
+    given: baseContext
+     when: 
+     then:  */
+
   public Context_Reference_given_baseContext_when_then_ (  ) {
     this.given_baseContext_1 (  );
 

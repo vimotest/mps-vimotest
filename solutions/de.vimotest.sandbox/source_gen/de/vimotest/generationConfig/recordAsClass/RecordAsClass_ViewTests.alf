@@ -16,7 +16,12 @@ class RecordAsClass_ViewTests {
 
   }
   
-  
+  /** 
+  Scenario: MyTest
+    given: empty context
+     when: 
+     then: Object is todo: recordpattern */
+
   public MyTest_given_empty_context_when_then_Object_is_todo_recordpattern (  ) {
     this.given_empty_context (  );
 

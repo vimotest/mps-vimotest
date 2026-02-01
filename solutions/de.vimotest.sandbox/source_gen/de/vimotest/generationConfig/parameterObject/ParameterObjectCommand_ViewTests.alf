@@ -16,7 +16,12 @@ class ParameterObjectCommand_ViewTests {
 
   }
   
-  
+  /** 
+  Scenario: MyTest
+    given: empty context
+     when: LoadViewModel and uncheck MyFlag
+     then:  */
+
   public MyTest_given_empty_context_when_LoadViewModel_and_uncheck_MyFlag_then_ (  ) {
     this.given_empty_context (  );
 

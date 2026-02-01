@@ -500,6 +500,9 @@
       <concept id="8164141882417537798" name="alfi.structure.IHasReturnParameter" flags="ngI" index="Gbzzf">
         <child id="4507289605805843609" name="returnParameter" index="NkNyt" />
       </concept>
+      <concept id="520354255175379373" name="alfi.structure.DocumentedElementCommentContent" flags="ng" index="IbWbt">
+        <child id="520354255175379374" name="documentationLines" index="IbWbu" />
+      </concept>
       <concept id="3328952194368014464" name="alfi.structure.Block" flags="ng" index="PCHzy">
         <child id="3328952194368014465" name="statements" index="PCHzz" />
       </concept>
@@ -521,6 +524,9 @@
         <child id="520354255176588995" name="commentText" index="I4nmN" />
       </concept>
       <concept id="3328952194368290204" name="alfi.structure.EmptyStatement" flags="ng" index="PDIRY" />
+      <concept id="3328952194367901068" name="alfi.structure.DocumentedElement" flags="ngI" index="PJ9RI">
+        <child id="520354255175429050" name="documentation" index="I883a" />
+      </concept>
       <concept id="7144803224899245198" name="alfi.structure.AssignmentExpression" flags="ng" index="3122gz">
         <child id="7144803224899369512" name="rightHandSide" index="315$E5" />
         <child id="7144803224899369510" name="leftHandSide" index="315$Eb" />
@@ -2115,6 +2121,149 @@
                   <node concept="30H73N" id="1srqdXULiE5" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="1srqdXULkDS" role="2OqNvi">
                     <ref role="3TtcxE" to="53m0:6fEYrkZup0b" resolve="whenThenDescriptions" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="IbWbt" id="6feyBqWcb_V" role="I883a">
+          <node concept="1PaTwC" id="6feyBqWcb_W" role="IbWbu">
+            <node concept="3oM_SD" id="6feyBqWcb_X" role="1PaTwD">
+              <property role="3oM_SC" value="Scenario:" />
+            </node>
+            <node concept="3oM_SD" id="6feyBqWcbTu" role="1PaTwD">
+              <property role="3oM_SC" value="scenario" />
+              <node concept="17Uvod" id="6feyBqWcc2y" role="lGtFl">
+                <property role="2qtEX9" value="value" />
+                <property role="P4ACc" value="c7fb639f-be78-4307-89b0-b5959c3fa8c8/155656958578482948/155656958578482949" />
+                <node concept="3zFVjK" id="6feyBqWcc2z" role="3zH0cK">
+                  <node concept="3clFbS" id="6feyBqWcc2$" role="2VODD2">
+                    <node concept="3clFbJ" id="6feyBqWhN6Z" role="3cqZAp">
+                      <node concept="3clFbS" id="6feyBqWhN71" role="3clFbx">
+                        <node concept="3cpWs6" id="6feyBqWhTgy" role="3cqZAp">
+                          <node concept="Xl_RD" id="6feyBqWhTBS" role="3cqZAk">
+                            <property role="Xl_RC" value="unspecified" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="6feyBqWhR8C" role="3clFbw">
+                        <node concept="2OqwBi" id="6feyBqWhOu7" role="2Oq$k0">
+                          <node concept="1mL9RQ" id="6feyBqWhOu8" role="2Oq$k0">
+                            <ref role="1mL9RD" node="1srqdXULmSw" resolve="test" />
+                          </node>
+                          <node concept="3TrcHB" id="6feyBqWhOu9" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                          </node>
+                        </node>
+                        <node concept="17RlXB" id="6feyBqWhSqy" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="6feyBqWcrVT" role="3cqZAp">
+                      <node concept="2OqwBi" id="6feyBqWcsdZ" role="3clFbG">
+                        <node concept="1mL9RQ" id="6feyBqWcrVS" role="2Oq$k0">
+                          <ref role="1mL9RD" node="1srqdXULmSw" resolve="test" />
+                        </node>
+                        <node concept="3TrcHB" id="6feyBqWctle" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1PaTwC" id="6feyBqWcbTx" role="IbWbu">
+            <node concept="3oM_SD" id="6feyBqWcbTw" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6feyBqWcbTC" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6feyBqWcbTE" role="1PaTwD">
+              <property role="3oM_SC" value="given:" />
+            </node>
+            <node concept="3oM_SD" id="6feyBqWcbUb" role="1PaTwD">
+              <property role="3oM_SC" value="given" />
+              <node concept="17Uvod" id="6feyBqWcmto" role="lGtFl">
+                <property role="2qtEX9" value="value" />
+                <property role="P4ACc" value="c7fb639f-be78-4307-89b0-b5959c3fa8c8/155656958578482948/155656958578482949" />
+                <node concept="3zFVjK" id="6feyBqWcmtp" role="3zH0cK">
+                  <node concept="3clFbS" id="6feyBqWcmtq" role="2VODD2">
+                    <node concept="3clFbF" id="6feyBqWcmG1" role="3cqZAp">
+                      <node concept="2YIFZM" id="6feyBqWcn44" role="3clFbG">
+                        <ref role="37wK5l" to="zcip:6feyBqWcgcu" resolve="getGivenHeadline" />
+                        <ref role="1Pybhc" to="zcip:2evlxT94KqS" resolve="TestScenarioGeneratorNameHelper" />
+                        <node concept="1mL9RQ" id="6feyBqWcnkS" role="37wK5m">
+                          <ref role="1mL9RD" node="1srqdXULmSw" resolve="test" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1PaTwC" id="6feyBqWcbTG" role="IbWbu">
+            <node concept="3oM_SD" id="6feyBqWcbTF" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6feyBqWcbTP" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6feyBqWcbTR" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6feyBqWcbTS" role="1PaTwD">
+              <property role="3oM_SC" value="when:" />
+            </node>
+            <node concept="3oM_SD" id="6feyBqWcbUa" role="1PaTwD">
+              <property role="3oM_SC" value="when" />
+              <node concept="17Uvod" id="6feyBqWcnHb" role="lGtFl">
+                <property role="2qtEX9" value="value" />
+                <property role="P4ACc" value="c7fb639f-be78-4307-89b0-b5959c3fa8c8/155656958578482948/155656958578482949" />
+                <node concept="3zFVjK" id="6feyBqWcnHc" role="3zH0cK">
+                  <node concept="3clFbS" id="6feyBqWcnHd" role="2VODD2">
+                    <node concept="3clFbF" id="6feyBqWcnHD" role="3cqZAp">
+                      <node concept="2YIFZM" id="6feyBqWcoqM" role="3clFbG">
+                        <ref role="37wK5l" to="zcip:6feyBqWch7Q" resolve="getWhenHeadline" />
+                        <ref role="1Pybhc" to="zcip:2evlxT94KqS" resolve="TestScenarioGeneratorNameHelper" />
+                        <node concept="30H73N" id="6feyBqWcq1b" role="37wK5m" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1PaTwC" id="6feyBqWcbTU" role="IbWbu">
+            <node concept="3oM_SD" id="6feyBqWcbTT" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6feyBqWcbU5" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6feyBqWcbU7" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6feyBqWcbU8" role="1PaTwD">
+              <property role="3oM_SC" value="then:" />
+            </node>
+            <node concept="3oM_SD" id="6feyBqWcbU9" role="1PaTwD">
+              <property role="3oM_SC" value="then" />
+              <node concept="17Uvod" id="6feyBqWcr4L" role="lGtFl">
+                <property role="2qtEX9" value="value" />
+                <property role="P4ACc" value="c7fb639f-be78-4307-89b0-b5959c3fa8c8/155656958578482948/155656958578482949" />
+                <node concept="3zFVjK" id="6feyBqWcr4M" role="3zH0cK">
+                  <node concept="3clFbS" id="6feyBqWcr4N" role="2VODD2">
+                    <node concept="3clFbF" id="6feyBqWcr5f" role="3cqZAp">
+                      <node concept="2YIFZM" id="6feyBqWcrv8" role="3clFbG">
+                        <ref role="37wK5l" to="zcip:6feyBqWciNo" resolve="getThenHeadline" />
+                        <ref role="1Pybhc" to="zcip:2evlxT94KqS" resolve="TestScenarioGeneratorNameHelper" />
+                        <node concept="30H73N" id="6feyBqWcrv9" role="37wK5m" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>

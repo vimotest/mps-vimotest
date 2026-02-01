@@ -16,7 +16,12 @@ class SelectEntryCommand_ViewTests {
 
   }
   
-  
+  /** 
+  Scenario: Select Entry Combobox Call
+    given: 
+     when: select entry 'C' in MyElements
+     then: MyElements has 3 entries and */
+
   public Select_Entry_Combobox_Call_given_when_select_entry_C_in_MyElements_then_MyElements_has_3_entries_and (  ) {
     this.BuildSut (  );
 
@@ -25,7 +30,12 @@ class SelectEntryCommand_ViewTests {
     this.then_MyElements_has_3_entries_and (  );
 
   }
-  
+  /** 
+  Scenario: Select Entry RadioButton Call
+    given: 
+     when: select entry 'B' in MyOptions
+     then:  */
+
   public Select_Entry_RadioButton_Call_given_when_select_entry_B_in_MyOptions_then_ (  ) {
     this.BuildSut (  );
 

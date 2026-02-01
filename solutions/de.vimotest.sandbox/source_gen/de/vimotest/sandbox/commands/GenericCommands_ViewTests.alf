@@ -16,7 +16,12 @@ class GenericCommands_ViewTests {
 
   }
   
-  
+  /** 
+  Scenario: Generic Commands Call
+    given: 
+     when: MyCommand
+     then:  */
+
   public Generic_Commands_Call_given_when_MyCommand_then_ (  ) {
     this.BuildSut (  );
 

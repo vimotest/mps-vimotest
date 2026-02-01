@@ -16,14 +16,24 @@ class RepeatUsageDependency_ViewModelTests {
 
   }
   
-  
+  /** 
+  Scenario: Invoke Direct Dependency
+    given: 
+     when: OnMessage
+     then:  */
+
   public Invoke_Direct_Dependency_given_when_OnMessage_then_ (  ) {
     this.BuildSut (  );
 
     this.when_OnMessage (  );
 
   }
-  
+  /** 
+  Scenario: Invoke Registry Dependency
+    given: 
+     when: Log
+     then:  */
+
   public Invoke_Registry_Dependency_given_when_Log_then_ (  ) {
     this.BuildSut (  );
 

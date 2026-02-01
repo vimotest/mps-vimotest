@@ -16,14 +16,24 @@ class ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests {
 
   }
   
-  
+  /** 
+  Scenario: 1st Context Reference from other suite
+    given: baseContext
+     when: 
+     then:  */
+
   public _1st_Context_Reference_from_other_suite_given_baseContext_when_then_ (  ) {
     this.given_baseContext (  );
 
     this.BuildSut (  );
 
   }
-  
+  /** 
+  Scenario: 2nd Context Reference from other suite
+    given: baseContext
+     when: 
+     then:  */
+
   public _2nd_Context_Reference_from_other_suite_given_baseContext_when_then_ (  ) {
     this.given_baseContext_1 (  );
 

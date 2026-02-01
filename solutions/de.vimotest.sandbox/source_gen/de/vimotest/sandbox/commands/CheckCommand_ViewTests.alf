@@ -16,7 +16,12 @@ class CheckCommand_ViewTests {
 
   }
   
-  
+  /** 
+  Scenario: Check CheckBox
+    given: 
+     when: check MyCheckBox1 and uncheck MyCheckBox2
+     then:  */
+
   public Check_CheckBox_given_when_check_MyCheckBox1_and_uncheck_MyCheckBox2_then_ (  ) {
     this.BuildSut (  );
 

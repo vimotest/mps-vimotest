@@ -16,14 +16,24 @@ class DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests {
 
   }
   
-  
+  /** 
+  Scenario: DataTable Context (implicit name)
+    given: id_0_name_A
+     when: 
+     then:  */
+
   public DataTable_Context_implicit_name_given_id_0_name_A_when_then_ (  ) {
     this.given_id_0_name_A (  );
 
     this.BuildSut (  );
 
   }
-  
+  /** 
+  Scenario: DataTable Context (two objects, equal contents)
+    given: data and data1
+     when: 
+     then:  */
+
   public DataTable_Context_two_objects_equal_contents_given_data_and_data1_when_then_ (  ) {
     this.given_data (  );
 
@@ -32,14 +42,24 @@ class DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests {
     this.BuildSut (  );
 
   }
-  
+  /** 
+  Scenario: DataTable Context (duplicate name from other test)
+    given: data
+     when: 
+     then:  */
+
   public DataTable_Context_duplicate_name_from_other_test_given_data_when_then_ (  ) {
     this.given_data (  );
 
     this.BuildSut (  );
 
   }
-  
+  /** 
+  Scenario: DataTable Context Ref (duplicate name from other test)
+    given: data
+     when: 
+     then:  */
+
   public DataTable_Context_Ref_duplicate_name_from_other_test_given_data_when_then_ (  ) {
     this.given_data_1 (  );
 

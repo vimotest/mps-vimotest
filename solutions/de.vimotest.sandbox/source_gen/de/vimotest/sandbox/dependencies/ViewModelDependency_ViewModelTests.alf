@@ -16,7 +16,12 @@ class ViewModelDependency_ViewModelTests {
 
   }
   
-  
+  /** 
+  Scenario: ViewModel Dependency Call
+    given: 
+     when: LoadViewModel
+     then:  */
+
   public ViewModel_Dependency_Call_given_when_LoadViewModel_then_ (  ) {
     this.BuildSut (  );
 

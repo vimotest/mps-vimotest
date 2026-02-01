@@ -16,7 +16,12 @@ class ClickCommand_ViewTests {
 
   }
   
-  
+  /** 
+  Scenario: Click Button
+    given: 
+     when: click Ok
+     then:  */
+
   public Click_Button_given_when_click_Ok_then_ (  ) {
     this.BuildSut (  );
 

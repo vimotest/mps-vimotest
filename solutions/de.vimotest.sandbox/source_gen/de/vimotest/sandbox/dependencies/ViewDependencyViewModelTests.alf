@@ -16,7 +16,12 @@ class ViewDependencyViewModelTests {
 
   }
   
-  
+  /** 
+  Scenario: View Dependency
+    given: 
+     when: Foo
+     then:  */
+
   public View_Dependency_given_when_Foo_then_ (  ) {
     this.BuildSut (  );
 

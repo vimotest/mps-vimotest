@@ -16,14 +16,24 @@ class FillTextCommand_ViewTests {
 
   }
   
-  
+  /** 
+  Scenario: Fill Text TextBox
+    given: 
+     when: fill 'Changed' in  MyValue
+     then:  */
+
   public Fill_Text_TextBox_given_when_fill_Changed_in_MyValue_then_ (  ) {
     this.BuildSut (  );
 
     this.when_fill_Changed_in_MyValue (  );
 
   }
-  
+  /** 
+  Scenario: Fill Text ComboBox
+    given: 
+     when: fill 'Changed' in  MyFreeValue
+     then:  */
+
   public Fill_Text_ComboBox_given_when_fill_Changed_in_MyFreeValue_then_ (  ) {
     this.BuildSut (  );
 

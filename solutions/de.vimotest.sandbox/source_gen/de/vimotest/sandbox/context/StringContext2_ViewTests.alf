@@ -16,7 +16,12 @@ class StringContext2_ViewTests {
 
   }
   
-  
+  /** 
+  Scenario: SimpleStringContext2
+    given: alice_bob_charlie
+     when: 
+     then:  */
+
   public SimpleStringContext2_given_alice_bob_charlie_when_then_ (  ) {
     this.given_alice_bob_charlie (  );
 

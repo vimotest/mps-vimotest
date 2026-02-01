@@ -16,14 +16,24 @@ class LoadCommand_ViewTests {
 
   }
   
-  
+  /** 
+  Scenario: Load Commands Call
+    given: 
+     when: LoadViewModel
+     then:  */
+
   public Load_Commands_Call_given_when_LoadViewModel_then_ (  ) {
     this.BuildSut (  );
 
     this.when_LoadViewModel (  );
 
   }
-  
+  /** 
+  Scenario: Load with Parameter Commands Call
+    given: 
+     when: LoadViewWithName
+     then:  */
+
   public Load_with_Parameter_Commands_Call_given_when_LoadViewWithName_then_ (  ) {
     this.BuildSut (  );
 

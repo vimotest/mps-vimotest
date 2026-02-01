@@ -16,14 +16,24 @@ class XmlFileContext_ViewTests {
 
   }
   
-  
+  /** 
+  Scenario: XmlFile_NoExternalFile
+    given: XmlFile_NoExternalFile
+     when: 
+     then:  */
+
   public XmlFile_NoExternalFile_given_XmlFile_NoExternalFile_when_then_ (  ) {
     this.given_XmlFile_NoExternalFile (  );
 
     this.BuildSut (  );
 
   }
-  
+  /** 
+  Scenario: XmlFile_ExternalFile
+    given: XmlFile_ExternalFile
+     when: 
+     then:  */
+
   public XmlFile_ExternalFile_given_XmlFile_ExternalFile_when_then_ (  ) {
     this.given_XmlFile_ExternalFile (  );
 

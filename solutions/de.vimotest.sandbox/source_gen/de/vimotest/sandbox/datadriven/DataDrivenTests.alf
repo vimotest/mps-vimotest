@@ -16,7 +16,12 @@ class DataDrivenTests {
 
   }
   
-  
+  /** 
+  Scenario: DataDrivenTable
+    given: Person_name_Name_age_42
+     when: 
+     then:  */
+
   public DataDrivenTable_given_Person_name_Name_age_42_when_then_ (  ) {
     let NameExampleValues: String [] = new String [] {  };
 

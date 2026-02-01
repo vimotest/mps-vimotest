@@ -1,0 +1,12 @@
+
+
+
+
+abstract class RecordAsClass_ViewModelTestEnvironment {
+  
+  public abstract Init (  ) ;
+  
+  public abstract SetEmptyContext (  ) ;
+  
+  public abstract BuildSut (  ) : RecordAsClass_ViewModel  ;
+}

@@ -1,0 +1,14 @@
+
+
+
+
+
+public class RecordAsClass_ViewModel {
+  
+  private Object : MyRecordObject  ;
+  
+  public getObject (  ) : MyRecordObject  {
+    return this.Object;
+
+  }
+}

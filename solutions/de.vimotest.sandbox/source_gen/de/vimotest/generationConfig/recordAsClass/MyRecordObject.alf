@@ -1,0 +1,13 @@
+
+
+
+
+class MyRecordObject {
+  
+  private Flag : Boolean  ;
+  
+  public getFlag (  ) : Boolean  {
+    return this.Flag;
+
+  }
+}

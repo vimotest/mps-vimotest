@@ -1,0 +1,54 @@
+
+
+private import Testing ;
+
+class RecordAsClass_ViewTests {
+  
+  private sut : RecordAsClass_ViewModel  ;
+  
+  private testEnvironment : RecordAsClass_ViewModelTestEnvironment  ;
+  
+  
+  protected BeforeTest (  ) {
+    this.testEnvironment = new RecordAsClass_ViewModelTestEnvironmentImpl (  );
+
+    this.testEnvironment.Init (  );
+
+  }
+  
+  
+  public MyTest_given_empty_context_when_then_Object_is_todo_recordpattern (  ) {
+    this.given_empty_context (  );
+
+    this.BuildSut (  );
+
+    this.then_Object_is_todo_recordpattern (  );
+
+  }
+  
+  
+  protected BuildSut (  ) {
+    this.sut = this.testEnvironment.BuildSut (  );
+
+  }
+  
+  
+  // Given Helper Definitions
+
+  
+  public given_empty_context (  ) {    
+  }
+  
+  // When Helper Definitions
+
+  
+  // Then Helper Definitions
+
+  
+  public then_Object_is_todo_recordpattern (  ) {
+    let actualMyRecordObject: MyRecordObject = this.sut.getObject (  );
+
+    AssertTrueWithMessage ( actualMyRecordObject.getFlag (  ), "Expected field 'Flag' has boolean value <true>, but it was <" + ( actualMyRecordObject.getFlag (  ) ? "true" : "false" ) + ">" );
+
+  }
+}

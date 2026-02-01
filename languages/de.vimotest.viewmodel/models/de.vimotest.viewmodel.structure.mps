@@ -1374,6 +1374,14 @@
         <property role="t5JxN" value="Controls if rows of ViewModels are generated as reference (only relevant in certain languages like C++ `vector&lt;...&gt;&amp;`)" />
       </node>
     </node>
+    <node concept="1TJgyi" id="6feyBqVfZ06" role="1TKVEl">
+      <property role="IQ2nx" value="7191837897509564422" />
+      <property role="TrG5h" value="generateRecordAsEncapsulatedClass" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="6feyBqVfZ07" role="lGtFl">
+        <property role="t5JxN" value="Controls if records are generated as encapsulated classes (with getters/setters), instead of simple structures (public properties)" />
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="4xJPu9gsd4J">
     <property role="EcuMT" value="5219625661134590255" />

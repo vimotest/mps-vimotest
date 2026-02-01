@@ -1,0 +1,6 @@
+<Project>  
+  <ItemGroup>    
+    <Compile Include="$(MSBuildThisFileDirectory)RecordAsClass_ViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MyRecordObject.cs" />
+  </ItemGroup>
+</Project>

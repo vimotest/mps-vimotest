@@ -1,0 +1,17 @@
+
+
+
+
+class RecordAsClass_ViewModelTestEnvironmentImpl specializes RecordAsClass_ViewModelTestEnvironment {
+  
+  public Init (  ) {    
+  }
+  
+  public SetEmptyContext (  ) {    
+  }
+  
+  public BuildSut (  ) : RecordAsClass_ViewModel  {
+    return null;
+
+  }
+}

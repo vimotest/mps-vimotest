@@ -8834,6 +8834,30 @@
       <node concept="3Tm1VV" id="7VjLoWhDnGF" role="1B3o_S" />
       <node concept="10P_77" id="7VjLoWhDo4w" role="3clF45" />
     </node>
+    <node concept="2YIFZL" id="6feyBqVgbH4" role="jymVt">
+      <property role="TrG5h" value="generateRecordAsEncapsulatedClass" />
+      <node concept="37vLTG" id="6feyBqVgbH5" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="6feyBqVgbH6" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="6feyBqVgbH7" role="3clF47">
+        <node concept="3clFbF" id="6feyBqVgbH8" role="3cqZAp">
+          <node concept="2OqwBi" id="6feyBqVgbH9" role="3clFbG">
+            <node concept="1rXfSq" id="6feyBqVgbHa" role="2Oq$k0">
+              <ref role="37wK5l" node="Of5vVZ$0xU" resolve="getGenerationConfig" />
+              <node concept="37vLTw" id="6feyBqVgbHb" role="37wK5m">
+                <ref role="3cqZAo" node="6feyBqVgbH5" resolve="node" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="6feyBqVgbHc" role="2OqNvi">
+              <ref role="3TsBF5" to="at53:6feyBqVfZ06" resolve="generateRecordAsEncapsulatedClass" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6feyBqVgbHd" role="1B3o_S" />
+      <node concept="10P_77" id="6feyBqVgbHe" role="3clF45" />
+    </node>
     <node concept="2YIFZL" id="Of5vVZ$0xU" role="jymVt">
       <property role="TrG5h" value="getGenerationConfig" />
       <node concept="37vLTG" id="Of5vVZ$0yx" role="3clF46">

@@ -1,0 +1,9 @@
+<Project>  
+  <ItemGroup>    
+    <Compile Include="$(MSBuildThisFileDirectory)RecordAsClass_ViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MyRecordObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RecordAsClass_ViewModelTestEnvironment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RecordAsClass_ViewModelTestEnvironmentImpl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RecordAsClass_ViewTests.cs" />
+  </ItemGroup>
+</Project>

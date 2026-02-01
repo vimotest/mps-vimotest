@@ -3,6 +3,7 @@
 #include "DataDrivenViewModelTestEnvironment.h"
 #include <memory>
 #include "DataDrivenViewModel.h"
+#include <string>
 
 namespace datadriven
 {
@@ -10,6 +11,7 @@ namespace datadriven
   {
   public:
     void Init() override;
+    void SetXmlElementContext(std::string xml) override;
     std::shared_ptr<DataDrivenViewModel> BuildSut() override;
   };
 }

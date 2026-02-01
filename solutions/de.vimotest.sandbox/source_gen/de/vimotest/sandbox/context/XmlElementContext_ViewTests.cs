@@ -2,6 +2,7 @@
 ///     XmlElementContext_ViewTests.cs
 /// </filename>
 using context;
+using datadriven;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]

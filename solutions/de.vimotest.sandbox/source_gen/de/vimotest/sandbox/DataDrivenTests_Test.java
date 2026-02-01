@@ -5,15 +5,23 @@ package de.vimotest.sandbox;
 import de.vimotest.sandbox.datadriven.DataDrivenViewModel;
 import de.vimotest.sandbox.datadriven.DataDrivenViewModelTestEnvironment;
 import org.junit.jupiter.api.Test;
+import java.util.List;
+import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.datadriven.DataDrivenViewModelTestEnvironmentImpl;
 
 public class DataDrivenTests_Test {
   private DataDrivenViewModel sut;
   private DataDrivenViewModelTestEnvironment testEnvironment;
+  private String Person_name_Name_age_42 = "<Person name=\"Name\" age=\"42\"></Person>";
   @Test
-  public void test_DataDrivenTable_given_when_then_() throws Exception {
-    this.BuildSut();
+  public void test_DataDrivenTable_given_Person_name_Name_age_42_when_then_() throws Exception {
+    List<String> NameExampleValues = Arrays.asList();
+    List<String> AgeExampleValues = Arrays.asList();
+    for (int exampleIndex = 1; exampleIndex <= 2; exampleIndex++) {
+      this.given_Person_name_Name_age_42();
+      this.BuildSut();
+    }
   }
   @BeforeEach
   public void setUp() {
@@ -29,6 +37,9 @@ public class DataDrivenTests_Test {
 
 
 
+  public void given_Person_name_Name_age_42() {
+    this.testEnvironment.SetXmlElementContext(this.Person_name_Name_age_42);
+  }
 
 
 

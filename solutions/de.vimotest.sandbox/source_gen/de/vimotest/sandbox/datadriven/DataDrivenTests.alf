@@ -17,8 +17,17 @@ class DataDrivenTests {
   }
   
   
-  public DataDrivenTable_given_when_then_ (  ) {
-    this.BuildSut (  );
+  public DataDrivenTable_given_Person_name_Name_age_42_when_then_ (  ) {
+    let NameExampleValues: String [] = new String [] {  };
+
+    let AgeExampleValues: String [] = new String [] {  };
+
+    for ( exampleIndex in 1 .. 2 ) {
+      this.given_Person_name_Name_age_42 (  );
+
+      this.BuildSut (  );
+
+    } 
 
   }
   
@@ -31,6 +40,13 @@ class DataDrivenTests {
   
   // Given Helper Definitions
 
+  
+  private Person_name_Name_age_42 : String = "<Person name=\"Name\" age=\"42\"></Person>";
+  
+  public given_Person_name_Name_age_42 (  ) {
+    this.testEnvironment.SetXmlElementContext ( this.Person_name_Name_age_42 );
+
+  }
   
   // When Helper Definitions
 

@@ -8,6 +8,9 @@ public class DataDrivenViewModelTestEnvironmentImpl extends DataDrivenViewModelT
   public void Init() {
   }
   @Override
+  public void SetXmlElementContext(String xml) {
+  }
+  @Override
   public DataDrivenViewModel BuildSut() {
     return null;
   }

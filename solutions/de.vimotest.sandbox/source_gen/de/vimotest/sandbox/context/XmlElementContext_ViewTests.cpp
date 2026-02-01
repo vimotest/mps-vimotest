@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include <memory>
 #include "XmlElementContext_ViewModelTestEnvironment.h"
+#include "datadriven/DataDrivenViewModelTestEnvironment.h"
 #include "XmlElementContext_ViewModel.h"
 #include "XmlElementContext_ViewModelTestEnvironmentImpl.h"
 #include <string>

@@ -11,6 +11,10 @@ namespace datadriven
         {
         }
 
+        public override void SetXmlElementContext(string xml)
+        {
+        }
+
         public override datadriven.DataDrivenViewModel BuildSut()
         {
             return null;

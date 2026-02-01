@@ -5,5 +5,6 @@ package de.vimotest.sandbox.datadriven;
 
 public abstract class DataDrivenViewModelTestEnvironment {
   public abstract void Init();
+  public abstract void SetXmlElementContext(String xml);
   public abstract DataDrivenViewModel BuildSut();
 }

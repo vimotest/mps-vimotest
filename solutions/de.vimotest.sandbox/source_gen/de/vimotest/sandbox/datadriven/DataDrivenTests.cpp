@@ -3,6 +3,8 @@
 #include "DataDrivenViewModelTestEnvironment.h"
 #include "DataDrivenViewModel.h"
 #include "DataDrivenViewModelTestEnvironmentImpl.h"
+#include <vector>
+#include <string>
 
 namespace datadriven
 {
@@ -12,6 +14,8 @@ namespace datadriven
     std::shared_ptr<DataDrivenViewModel> sut;
     std::shared_ptr<DataDrivenViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    std::string Person_name_Name_age_42 = R"(<Person name="Name" age="42"></Person>)";
+    virtual void given_Person_name_Name_age_42();
   protected:
     void SetUp() override;
   };
@@ -20,12 +24,22 @@ namespace datadriven
     this->testEnvironment = std::make_shared<DataDrivenViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
-  TEST_F(DataDrivenTests, DataDrivenTable_given_when_then_)
+  TEST_F(DataDrivenTests, DataDrivenTable_given_Person_name_Name_age_42_when_then_)
   {
-    this->BuildSut();
+    std::vector<std::string> NameExampleValues = { };
+    std::vector<std::string> AgeExampleValues = { };
+    for (int exampleIndex = 1; exampleIndex <= 2; exampleIndex++)
+    {
+      this->given_Person_name_Name_age_42();
+      this->BuildSut();
+    }
   }
   void DataDrivenTests::BuildSut()
   {
     this->sut = this->testEnvironment->BuildSut();
+  }
+  void DataDrivenTests::given_Person_name_Name_age_42()
+  {
+    this->testEnvironment->SetXmlElementContext(this->Person_name_Name_age_42);
   }
 }

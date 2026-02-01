@@ -9,6 +9,8 @@ namespace datadriven
     {
         public abstract void Init();
 
+        public abstract void SetXmlElementContext(string xml);
+
         public abstract datadriven.DataDrivenViewModel BuildSut();
     }
 }

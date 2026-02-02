@@ -39,15 +39,12 @@ public class SelectEntryCommand_ViewTests_Test {
 
 
 
-
-
   public void when_select_entry_C_in_MyElements() {
     this.sut.myElementsComboBoxEntrySelected("C");
   }
   public void when_select_entry_B_in_MyOptions() {
     this.sut.myOptionsRadioButtonGroupEntrySelected(SelectEntryCommand_ViewModelMyOptionsOption.B);
   }
-
 
   public void then_MyElements_has_3_entries_and() {
     List<String> actualMyElementsEntries = this.sut.getMyElementsComboBoxEntries();

@@ -53,9 +53,5 @@ class DataDrivenTests {
 
   }
   
-  // When Helper Definitions
-
   
-  // Then Helper Definitions
-
 }

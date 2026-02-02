@@ -45,11 +45,8 @@ public class TreeViews_ViewTest_Test {
   }
 
 
-
   public void given_empty_context() {
   }
-
-
 
 
   public void then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible() {

@@ -63,6 +63,4 @@ class ParameterObjectCommand_ViewTests {
 
   }
   
-  // Then Helper Definitions
-
 }

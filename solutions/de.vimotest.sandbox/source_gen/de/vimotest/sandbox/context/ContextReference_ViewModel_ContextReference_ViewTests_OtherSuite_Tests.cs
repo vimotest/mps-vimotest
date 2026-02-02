@@ -18,6 +18,13 @@ public class ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Te
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: 1st Context Reference from other suite
+      given: baseContext
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void _1st_Context_Reference_from_other_suite_given_baseContext_when_then_()
     {
@@ -25,6 +32,13 @@ public class ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Te
         this.BuildSut();
     }
 
+    /*
+
+    Scenario: 2nd Context Reference from other suite
+      given: baseContext
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void _2nd_Context_Reference_from_other_suite_given_baseContext_when_then_()
     {
@@ -37,6 +51,7 @@ public class ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Te
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     private string baseContext = "My Context";
 
     public virtual void given_baseContext()

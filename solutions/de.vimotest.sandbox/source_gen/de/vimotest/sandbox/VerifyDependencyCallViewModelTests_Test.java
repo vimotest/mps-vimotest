@@ -48,9 +48,6 @@ public class VerifyDependencyCallViewModelTests_Test {
 
 
 
-
-
-
   public void then_call_Logger_Log_any_() {
     LoggerSpy spy = this.testEnvironment.getLogger();
     Assert.assertEquals("Expected that Logger.Log was called exactly 1 times, but was " + Integer.toString(spy.LogCallInfos.size()), Integer.valueOf(1), Integer.valueOf(spy.LogCallInfos.size()));

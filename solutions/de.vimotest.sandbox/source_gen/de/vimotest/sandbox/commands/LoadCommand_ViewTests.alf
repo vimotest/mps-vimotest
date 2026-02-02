@@ -48,8 +48,6 @@ class LoadCommand_ViewTests {
   }
   
   
-  // Given Helper Definitions
-
   
   // When Helper Definitions
 
@@ -64,6 +62,4 @@ class LoadCommand_ViewTests {
 
   }
   
-  // Then Helper Definitions
-
 }

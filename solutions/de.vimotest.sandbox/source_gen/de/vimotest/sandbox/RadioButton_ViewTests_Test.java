@@ -44,9 +44,6 @@ public class RadioButton_ViewTests_Test {
 
 
 
-
-
-
   public void then_Options_selected_OptionB_() {
     Assert.assertEquals("Expected that radio button group Options has selected <" + "OptionB" + ">, but was <" + ConvertOptionsToString.convertOptionsToString(this.sut.getOptionsRadioButtonGroupSelectedEntry()) + ">", RadioButton_ViewModelOptionsOption.OptionB, this.sut.getOptionsRadioButtonGroupSelectedEntry());
   }

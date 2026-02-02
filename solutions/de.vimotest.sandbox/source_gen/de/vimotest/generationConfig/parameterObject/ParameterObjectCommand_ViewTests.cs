@@ -17,6 +17,13 @@ public class ParameterObjectCommand_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: MyTest
+      given: empty context
+       when: LoadViewModel and uncheck MyFlag
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void MyTest_given_empty_context_when_LoadViewModel_and_uncheck_MyFlag_then_()
     {
@@ -31,10 +38,12 @@ public class ParameterObjectCommand_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     public virtual void given_empty_context()
     {
     }
 
+    // When Helper Definitions
     public virtual void when_LoadViewModel()
     {
         ParameterObjectCommand_ViewModel.LoadViewParams loadViewModelParameters = new ParameterObjectCommand_ViewModel.LoadViewParams("A", true, 42);

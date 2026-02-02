@@ -13,6 +13,7 @@ namespace commands
     std::shared_ptr<FillTextCommand_ViewModel> sut;
     std::shared_ptr<FillTextCommand_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // When Helper Definitions
     virtual void when_fill_Changed_in_MyValue();
     virtual void when_fill_Changed_in_MyFreeValue();
   protected:
@@ -23,11 +24,19 @@ namespace commands
     this->testEnvironment = std::make_shared<FillTextCommand_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: Fill Text TextBox
+  ///   given:
+  ///    when: fill 'Changed' in  MyValue
+  ///    then:
   TEST_F(FillTextCommand_ViewTests, Fill_Text_TextBox_given_when_fill_Changed_in_MyValue_then_)
   {
     this->BuildSut();
     this->when_fill_Changed_in_MyValue();
   }
+  /// Scenario: Fill Text ComboBox
+  ///   given:
+  ///    when: fill 'Changed' in  MyFreeValue
+  ///    then:
   TEST_F(FillTextCommand_ViewTests, Fill_Text_ComboBox_given_when_fill_Changed_in_MyFreeValue_then_)
   {
     this->BuildSut();

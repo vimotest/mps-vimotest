@@ -129,8 +129,6 @@ class Labels_ViewTest {
   public given_empty_context_1 (  ) {    
   }
   
-  // When Helper Definitions
-
   
   // Then Helper Definitions
 

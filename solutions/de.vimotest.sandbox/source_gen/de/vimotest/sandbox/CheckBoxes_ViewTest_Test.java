@@ -46,11 +46,8 @@ public class CheckBoxes_ViewTest_Test {
   }
 
 
-
   public void given_empty_context() {
   }
-
-
 
 
   public void then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_() {

@@ -31,11 +31,8 @@ public class GenericCommands_ViewTests_Test {
 
 
 
-
-
   public void when_MyCommand() {
     this.sut.myCommand(false, Arrays.asList("A", "B"));
   }
-
 
 }

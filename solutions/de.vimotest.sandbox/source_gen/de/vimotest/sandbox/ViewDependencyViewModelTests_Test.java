@@ -30,11 +30,8 @@ public class ViewDependencyViewModelTests_Test {
 
 
 
-
-
   public void when_Foo() {
     this.testEnvironment.getViewDependencyView().Foo();
   }
-
 
 }

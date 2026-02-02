@@ -92,8 +92,6 @@ class ListViews_ViewTest {
   public given_empty_context (  ) {    
   }
   
-  // When Helper Definitions
-
   
   // Then Helper Definitions
 

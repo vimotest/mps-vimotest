@@ -67,13 +67,10 @@ public class Labels_ViewTest_Test {
   }
 
 
-
   public void given_empty_context() {
   }
   public void given_empty_context_1() {
   }
-
-
 
 
   public void then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible() {

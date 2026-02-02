@@ -59,11 +59,8 @@ public class ListViews_ViewTest_Test {
   }
 
 
-
   public void given_empty_context() {
   }
-
-
 
 
   public void then_MyListOfLabel_has_4_rows_and_selected_row_index_3() {

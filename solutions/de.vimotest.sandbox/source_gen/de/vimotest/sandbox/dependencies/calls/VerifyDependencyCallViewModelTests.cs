@@ -21,6 +21,13 @@ public class VerifyDependencyCallViewModelTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: Verify dependency call any
+      given:
+       when:
+       then: call Logger.Log([any])
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Verify_dependency_call_any_given_when_then_call_Logger_Log_any_()
     {
@@ -28,6 +35,13 @@ public class VerifyDependencyCallViewModelTests
         this.then_call_Logger_Log_any_();
     }
 
+    /*
+
+    Scenario: Verify dependency call 1 times
+      given:
+       when:
+       then: call Logger.Log(["])
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Verify_dependency_call_1_times_given_when_then_call_Logger_Log___()
     {
@@ -35,6 +49,13 @@ public class VerifyDependencyCallViewModelTests
         this.then_call_Logger_Log___();
     }
 
+    /*
+
+    Scenario: Verify dependency call at index 3
+      given:
+       when:
+       then: call Logger.Log(["])
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Verify_dependency_call_at_index_3_given_when_then_call_Logger_Log___()
     {
@@ -42,6 +63,13 @@ public class VerifyDependencyCallViewModelTests
         this.then_call_Logger_Log____1();
     }
 
+    /*
+
+    Scenario: Verify dependency call 3-6
+      given:
+       when:
+       then: call Logger.Log(["])
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Verify_dependency_call_3_6_given_when_then_call_Logger_Log___()
     {
@@ -54,6 +82,7 @@ public class VerifyDependencyCallViewModelTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Then Helper Definitions
     public virtual void then_call_Logger_Log_any_()
     {
         var spy = this.testEnvironment.getLogger();

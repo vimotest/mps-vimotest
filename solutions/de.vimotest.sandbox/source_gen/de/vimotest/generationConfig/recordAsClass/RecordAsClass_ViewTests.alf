@@ -44,8 +44,6 @@ class RecordAsClass_ViewTests {
   public given_empty_context (  ) {    
   }
   
-  // When Helper Definitions
-
   
   // Then Helper Definitions
 

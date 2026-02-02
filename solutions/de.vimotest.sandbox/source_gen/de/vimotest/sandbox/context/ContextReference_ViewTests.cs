@@ -18,6 +18,13 @@ public class ContextReference_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: String Context
+      given: baseContext
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void String_Context_given_baseContext_when_then_()
     {
@@ -25,6 +32,13 @@ public class ContextReference_ViewTests
         this.BuildSut();
     }
 
+    /*
+
+    Scenario: Context Reference
+      given: baseContext
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Context_Reference_given_baseContext_when_then_()
     {
@@ -37,6 +51,7 @@ public class ContextReference_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     private string baseContext = "My Context";
 
     public virtual void given_baseContext()

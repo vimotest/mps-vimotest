@@ -19,6 +19,13 @@ public class GenericCommands_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: Generic Commands Call
+      given:
+       when: MyCommand
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Generic_Commands_Call_given_when_MyCommand_then_()
     {
@@ -31,6 +38,7 @@ public class GenericCommands_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // When Helper Definitions
     public virtual void when_MyCommand()
     {
         this.sut.myCommand(false, new System.Collections.Generic.List<string> { "A", "B" });

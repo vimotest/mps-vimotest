@@ -18,6 +18,13 @@ public class Buttons_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: My Scenario
+      given: empty context
+       when:
+       then: Ok is enabled and is visible and shows text 'Test'
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void My_Scenario_given_empty_context_when_then_Ok_is_enabled_and_is_visible_and_shows_text_Test_()
     {
@@ -26,6 +33,13 @@ public class Buttons_ViewTests
         this.then_Ok_is_enabled_and_is_visible_and_shows_text_Test_();
     }
 
+    /*
+
+    Scenario: My Scenario
+      given: empty context
+       when:
+       then: Ok is not enabled and is visible and shows text 'Test'
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void My_Scenario_given_empty_context_when_then_Ok_is_not_enabled_and_is_visible_and_shows_text_Test_()
     {
@@ -34,6 +48,13 @@ public class Buttons_ViewTests
         this.then_Ok_is_not_enabled_and_is_visible_and_shows_text_Test_();
     }
 
+    /*
+
+    Scenario: My Scenario
+      given: empty context
+       when:
+       then: Ok is enabled and is not visible and shows text 'Test'
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void My_Scenario_given_empty_context_when_then_Ok_is_enabled_and_is_not_visible_and_shows_text_Test_()
     {
@@ -47,10 +68,12 @@ public class Buttons_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     public virtual void given_empty_context()
     {
     }
 
+    // Then Helper Definitions
     public virtual void then_Ok_is_enabled_and_is_visible_and_shows_text_Test_()
     {
         Assert.IsTrue(this.sut.getIsOkButtonEnabled(), "Expected button Ok is enabled, but it was disabled");

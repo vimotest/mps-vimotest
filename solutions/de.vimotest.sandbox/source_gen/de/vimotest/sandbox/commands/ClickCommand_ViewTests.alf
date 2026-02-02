@@ -36,8 +36,6 @@ class ClickCommand_ViewTests {
   }
   
   
-  // Given Helper Definitions
-
   
   // When Helper Definitions
 
@@ -47,6 +45,4 @@ class ClickCommand_ViewTests {
 
   }
   
-  // Then Helper Definitions
-
 }

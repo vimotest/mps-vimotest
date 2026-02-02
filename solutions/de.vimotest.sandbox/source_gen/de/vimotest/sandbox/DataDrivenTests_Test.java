@@ -36,12 +36,9 @@ public class DataDrivenTests_Test {
   }
 
 
-
   public void given_Person_name_Name_age_42() {
     this.testEnvironment.SetXmlElementContext(this.Person_name_Name_age_42);
   }
-
-
 
 
 }

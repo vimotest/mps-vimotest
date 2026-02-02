@@ -19,6 +19,13 @@ public class SeparateViewModelController_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: MyTest
+      given: empty context
+       when: LoadViewModel and uncheck MyFlag
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void MyTest_given_empty_context_when_LoadViewModel_and_uncheck_MyFlag_then_()
     {
@@ -39,10 +46,12 @@ public class SeparateViewModelController_ViewTests
         this.sutViewModel = this.testEnvironment.GetViewModel();
     }
 
+    // Given Helper Definitions
     public virtual void given_empty_context()
     {
     }
 
+    // When Helper Definitions
     public virtual void when_LoadViewModel()
     {
         this.sutViewController.loadViewModel();

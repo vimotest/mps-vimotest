@@ -19,6 +19,13 @@ public class XmlElementContext_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: Xml Context
+      given: myxml
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Xml_Context_given_myxml_when_then_()
     {
@@ -26,6 +33,13 @@ public class XmlElementContext_ViewTests
         this.BuildSut();
     }
 
+    /*
+
+    Scenario: Xml Context (explicit name)
+      given: MyXML_Inner
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Xml_Context_explicit_name_given_MyXML_Inner_when_then_()
     {
@@ -38,6 +52,7 @@ public class XmlElementContext_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     private string myxml = @"<MyXML>
   <Inner></Inner>
 </MyXML>";

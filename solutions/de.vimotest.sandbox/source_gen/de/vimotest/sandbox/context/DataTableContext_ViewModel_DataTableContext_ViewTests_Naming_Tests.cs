@@ -18,6 +18,13 @@ public class DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: DataTable Context (implicit name)
+      given: id_0_name_A
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void DataTable_Context_implicit_name_given_id_0_name_A_when_then_()
     {
@@ -25,6 +32,13 @@ public class DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests
         this.BuildSut();
     }
 
+    /*
+
+    Scenario: DataTable Context (two objects, equal contents)
+      given: data and data1
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void DataTable_Context_two_objects_equal_contents_given_data_and_data1_when_then_()
     {
@@ -33,6 +47,13 @@ public class DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests
         this.BuildSut();
     }
 
+    /*
+
+    Scenario: DataTable Context (duplicate name from other test)
+      given: data
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void DataTable_Context_duplicate_name_from_other_test_given_data_when_then_()
     {
@@ -40,6 +61,13 @@ public class DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests
         this.BuildSut();
     }
 
+    /*
+
+    Scenario: DataTable Context Ref (duplicate name from other test)
+      given: data
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void DataTable_Context_Ref_duplicate_name_from_other_test_given_data_when_then_()
     {
@@ -52,6 +80,7 @@ public class DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     private string id_0_name_A = @"| id | name |
 | 0 | A |";
 

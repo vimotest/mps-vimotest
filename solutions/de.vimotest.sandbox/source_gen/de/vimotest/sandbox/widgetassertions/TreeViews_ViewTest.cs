@@ -20,6 +20,13 @@ public class TreeViews_ViewTest
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: My Scenario
+      given: empty context
+       when:
+       then: MyTreeViewElements has 2 rows and selected row index 1 and is enabled and is visible and Description is not visible and MyStringRowHandles has 2 rows and selected row handle ROW1 and MyParentIndexRowHandles has 4 rows and MyParentStringRowHandles has 4 rows
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void My_Scenario_given_empty_context_when_then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1_and_MyParentIndexRowHandles_has_4_rows_and_MyParentStringRowHandles_has_4_rows()
     {
@@ -31,6 +38,13 @@ public class TreeViews_ViewTest
         this.then_MyParentStringRowHandles_has_4_rows();
     }
 
+    /*
+
+    Scenario: TreeView Ignore Column
+      given: empty context
+       when:
+       then: MyTreeViewElements has 2 rows
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void TreeView_Ignore_Column_given_empty_context_when_then_MyTreeViewElements_has_2_rows()
     {
@@ -44,10 +58,12 @@ public class TreeViews_ViewTest
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     public virtual void given_empty_context()
     {
     }
 
+    // Then Helper Definitions
     public virtual void then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible()
     {
         var actualRows = this.sut.getMyTreeViewElementsTreeRows();

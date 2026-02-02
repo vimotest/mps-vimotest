@@ -12,7 +12,9 @@ public:
   std::shared_ptr<RecordAsClass_ViewModel> sut;
   std::shared_ptr<RecordAsClass_ViewModelTestEnvironment> testEnvironment;
   virtual void BuildSut();
+  // Given Helper Definitions
   virtual void given_empty_context();
+  // Then Helper Definitions
   virtual void then_Object_is_todo_recordpattern();
 protected:
   void SetUp() override;
@@ -24,6 +26,13 @@ void RecordAsClass_ViewTests::SetUp()
   this->testEnvironment->Init();
 }
 
+/// Scenario: MyTest
+
+///   given: empty context
+
+///    when:
+
+///    then: Object is todo: recordpattern
 TEST_F(RecordAsClass_ViewTests, MyTest_given_empty_context_when_then_Object_is_todo_recordpattern)
 {
   this->given_empty_context();

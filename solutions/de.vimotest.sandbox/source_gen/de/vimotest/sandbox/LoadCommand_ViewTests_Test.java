@@ -35,14 +35,11 @@ public class LoadCommand_ViewTests_Test {
 
 
 
-
-
   public void when_LoadViewModel() {
     this.sut.loadViewModel();
   }
   public void when_LoadViewWithName() {
     this.sut.loadViewWithName("Name");
   }
-
 
 }

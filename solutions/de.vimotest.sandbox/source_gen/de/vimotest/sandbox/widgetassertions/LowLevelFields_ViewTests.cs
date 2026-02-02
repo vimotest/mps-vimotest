@@ -20,6 +20,13 @@ public class LowLevelFields_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: Primitive Field Asserts
+      given:
+       when:
+       then: MyBool is true and MyInt is 42 and MyString is "text"
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Primitive_Field_Asserts_given_when_then_MyBool_is_true_and_MyInt_is_42_and_MyString_is_text_()
     {
@@ -29,6 +36,13 @@ public class LowLevelFields_ViewTests
         this.then_MyString_is_text_();
     }
 
+    /*
+
+    Scenario: Primitive List Field Asserts
+      given:
+       when:
+       then: MyStrings is todo: listpattern
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Primitive_List_Field_Asserts_given_when_then_MyStrings_is_todo_listpattern()
     {
@@ -36,6 +50,13 @@ public class LowLevelFields_ViewTests
         this.then_MyStrings_is_todo_listpattern();
     }
 
+    /*
+
+    Scenario: Record Field Asserts
+      given:
+       when:
+       then: MyFieldAdditions is todo: recordpattern
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Record_Field_Asserts_given_when_then_MyFieldAdditions_is_todo_recordpattern()
     {
@@ -43,6 +64,13 @@ public class LowLevelFields_ViewTests
         this.then_MyFieldAdditions_is_todo_recordpattern();
     }
 
+    /*
+
+    Scenario: Rowbased Primitive Fields
+      given:
+       when:
+       then: CustomTableRowField has 1 rows and CustomListRowField has 1 rows and CustomTreeRowField has 1 rows
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Rowbased_Primitive_Fields_given_when_then_CustomTableRowField_has_1_rows_and_CustomListRowField_has_1_rows_and_CustomTreeRowField_has_1_rows()
     {
@@ -57,6 +85,7 @@ public class LowLevelFields_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Then Helper Definitions
     public virtual void then_MyBool_is_true()
     {
         Assert.IsTrue(this.sut.getMyBool(), "Expected field 'MyBool' has boolean value <true>, but it was <" + (this.sut.getMyBool() ? "true" : "false") + ">");

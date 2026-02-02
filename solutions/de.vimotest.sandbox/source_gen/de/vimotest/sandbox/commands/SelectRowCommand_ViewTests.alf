@@ -122,8 +122,6 @@ class SelectRowCommand_ViewTests {
   }
   
   
-  // Given Helper Definitions
-
   
   // When Helper Definitions
 

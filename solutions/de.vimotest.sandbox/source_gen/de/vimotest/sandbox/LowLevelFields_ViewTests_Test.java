@@ -56,9 +56,6 @@ public class LowLevelFields_ViewTests_Test {
 
 
 
-
-
-
   public void then_MyBool_is_true() {
     Assert.assertTrue("Expected field 'MyBool' has boolean value <true>, but it was <" + ((this.sut.getMyBool() ? "true" : "false")) + ">", this.sut.getMyBool());
   }

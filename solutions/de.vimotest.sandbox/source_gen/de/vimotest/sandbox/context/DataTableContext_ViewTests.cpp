@@ -13,6 +13,7 @@ namespace context
     std::shared_ptr<DataTableContext_ViewModel> sut;
     std::shared_ptr<DataTableContext_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // Given Helper Definitions
     std::string dataTableCustomSetter = R"(| id | name |
 | 0 | A |)";
     virtual void given_dataTableCustomSetter();
@@ -37,21 +38,37 @@ namespace context
     this->testEnvironment = std::make_shared<DataTableContext_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: DataTable Context Custom Setter
+  ///   given: dataTableCustomSetter
+  ///    when:
+  ///    then:
   TEST_F(DataTableContext_ViewTests, DataTable_Context_Custom_Setter_given_dataTableCustomSetter_when_then_)
   {
     this->given_dataTableCustomSetter();
     this->BuildSut();
   }
+  /// Scenario: DataTable Context to String
+  ///   given: dataTableToString
+  ///    when:
+  ///    then:
   TEST_F(DataTableContext_ViewTests, DataTable_Context_to_String_given_dataTableToString_when_then_)
   {
     this->given_dataTableToString();
     this->BuildSut();
   }
+  /// Scenario: DataTable Context to JSON
+  ///   given: dataTableToJson
+  ///    when:
+  ///    then:
   TEST_F(DataTableContext_ViewTests, DataTable_Context_to_JSON_given_dataTableToJson_when_then_)
   {
     this->given_dataTableToJson();
     this->BuildSut();
   }
+  /// Scenario: DataTable Context to XML
+  ///   given: dataTableToXml
+  ///    when:
+  ///    then:
   TEST_F(DataTableContext_ViewTests, DataTable_Context_to_XML_given_dataTableToXml_when_then_)
   {
     this->given_dataTableToXml();

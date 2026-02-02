@@ -19,6 +19,13 @@ public class DataDrivenTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: DataDrivenTable
+      given: Person_name_Name_age_42
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void DataDrivenTable_given_Person_name_Name_age_42_when_then_()
     {
@@ -36,6 +43,7 @@ public class DataDrivenTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     private string Person_name_Name_age_42 = @"<Person name=""Name"" age=""42""></Person>";
 
     public virtual void given_Person_name_Name_age_42()

@@ -18,6 +18,13 @@ public class StringContext2_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: SimpleStringContext2
+      given: alice_bob_charlie
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void SimpleStringContext2_given_alice_bob_charlie_when_then_()
     {
@@ -30,6 +37,7 @@ public class StringContext2_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     private string alice_bob_charlie = "Alice, Bob, Charlie";
 
     public virtual void given_alice_bob_charlie()

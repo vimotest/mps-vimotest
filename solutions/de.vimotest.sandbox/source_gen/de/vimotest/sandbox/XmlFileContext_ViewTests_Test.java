@@ -35,15 +35,12 @@ public class XmlFileContext_ViewTests_Test {
   }
 
 
-
   public void given_XmlFile_NoExternalFile() {
     this.testEnvironment.SetXmlFileContext(this.XmlFile_NoExternalFile);
   }
   public void given_XmlFile_ExternalFile() {
     this.testEnvironment.SetXmlExternalFileContext("XmlFile_ExternalFile.xml");
   }
-
-
 
 
 }

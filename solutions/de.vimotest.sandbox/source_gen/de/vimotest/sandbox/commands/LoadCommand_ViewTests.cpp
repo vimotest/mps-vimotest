@@ -13,6 +13,7 @@ namespace commands
     std::shared_ptr<LoadCommand_ViewModel> sut;
     std::shared_ptr<LoadCommand_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // When Helper Definitions
     virtual void when_LoadViewModel();
     virtual void when_LoadViewWithName();
   protected:
@@ -23,11 +24,19 @@ namespace commands
     this->testEnvironment = std::make_shared<LoadCommand_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: Load Commands Call
+  ///   given:
+  ///    when: LoadViewModel
+  ///    then:
   TEST_F(LoadCommand_ViewTests, Load_Commands_Call_given_when_LoadViewModel_then_)
   {
     this->BuildSut();
     this->when_LoadViewModel();
   }
+  /// Scenario: Load with Parameter Commands Call
+  ///   given:
+  ///    when: LoadViewWithName
+  ///    then:
   TEST_F(LoadCommand_ViewTests, Load_with_Parameter_Commands_Call_given_when_LoadViewWithName_then_)
   {
     this->BuildSut();

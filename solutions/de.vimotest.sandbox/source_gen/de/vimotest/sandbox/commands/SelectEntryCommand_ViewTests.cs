@@ -20,6 +20,13 @@ public class SelectEntryCommand_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: Select Entry Combobox Call
+      given:
+       when: select entry 'C' in MyElements
+       then: MyElements has 3 entries and
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Select_Entry_Combobox_Call_given_when_select_entry_C_in_MyElements_then_MyElements_has_3_entries_and()
     {
@@ -28,6 +35,13 @@ public class SelectEntryCommand_ViewTests
         this.then_MyElements_has_3_entries_and();
     }
 
+    /*
+
+    Scenario: Select Entry RadioButton Call
+      given:
+       when: select entry 'B' in MyOptions
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Select_Entry_RadioButton_Call_given_when_select_entry_B_in_MyOptions_then_()
     {
@@ -40,6 +54,7 @@ public class SelectEntryCommand_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // When Helper Definitions
     public virtual void when_select_entry_C_in_MyElements()
     {
         this.sut.myElementsComboBoxEntrySelected("C");
@@ -50,6 +65,7 @@ public class SelectEntryCommand_ViewTests
         this.sut.myOptionsRadioButtonGroupEntrySelected(commands.SelectEntryCommand_ViewModelMyOptionsOption.B);
     }
 
+    // Then Helper Definitions
     public virtual void then_MyElements_has_3_entries_and()
     {
         var actualMyElementsEntries = this.sut.getMyElementsComboBoxEntries();

@@ -46,9 +46,5 @@ class StringContext2_ViewTests {
 
   }
   
-  // When Helper Definitions
-
   
-  // Then Helper Definitions
-
 }

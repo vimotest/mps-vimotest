@@ -50,11 +50,8 @@ public class TextBoxes_ViewTest_Test {
   }
 
 
-
   public void given_empty_context() {
   }
-
-
 
 
   public void then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible() {

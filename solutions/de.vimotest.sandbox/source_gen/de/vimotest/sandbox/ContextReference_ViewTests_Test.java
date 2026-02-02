@@ -35,15 +35,12 @@ public class ContextReference_ViewTests_Test {
   }
 
 
-
   public void given_baseContext() {
     this.testEnvironment.SetSimpleStringContext(this.baseContext);
   }
   public void given_baseContext_1() {
     this.testEnvironment.SetSimpleStringContext(this.baseContext);
   }
-
-
 
 
 }

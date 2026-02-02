@@ -36,8 +36,6 @@ class ViewDependencyViewModelTests {
   }
   
   
-  // Given Helper Definitions
-
   
   // When Helper Definitions
 
@@ -47,6 +45,4 @@ class ViewDependencyViewModelTests {
 
   }
   
-  // Then Helper Definitions
-
 }

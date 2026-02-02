@@ -18,6 +18,13 @@ public class StringContext_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: SimpleStringContext
+      given: alice_bob_charlie
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void SimpleStringContext_given_alice_bob_charlie_when_then_()
     {
@@ -25,6 +32,13 @@ public class StringContext_ViewTests
         this.BuildSut();
     }
 
+    /*
+
+    Scenario: SimpleStringContext (implicit name)
+      given: Alice_Bob_Charlie
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void SimpleStringContext_implicit_name_given_Alice_Bob_Charlie_when_then_()
     {
@@ -37,6 +51,7 @@ public class StringContext_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     private string alice_bob_charlie = "Alice, Bob, Charlie";
 
     public virtual void given_alice_bob_charlie()

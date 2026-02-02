@@ -54,8 +54,6 @@ public class RowBasedCommand_ViewTests_Test {
 
 
 
-
-
   public void when_check_Checkboxes_at_0() {
     this.sut.checkboxesCheckBoxChecked(0, true);
   }
@@ -83,7 +81,6 @@ public class RowBasedCommand_ViewTests_Test {
   public void when_click_Buttons_at_0() {
     this.sut.buttonsButtonClicked(0);
   }
-
 
   public void then_MyFlags_has_2_rows() {
     List<RowBasedCommand_ViewModelMyFlagsRow> actualRows = this.sut.getMyFlagsListRows();

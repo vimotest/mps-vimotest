@@ -12,6 +12,7 @@ namespace commands
     std::shared_ptr<CheckCommand_ViewModel> sut;
     std::shared_ptr<CheckCommand_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // When Helper Definitions
     virtual void when_check_MyCheckBox1();
     virtual void when_uncheck_MyCheckBox2();
   protected:
@@ -22,6 +23,10 @@ namespace commands
     this->testEnvironment = std::make_shared<CheckCommand_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: Check CheckBox
+  ///   given:
+  ///    when: check MyCheckBox1 and uncheck MyCheckBox2
+  ///    then:
   TEST_F(CheckCommand_ViewTests, Check_CheckBox_given_when_check_MyCheckBox1_and_uncheck_MyCheckBox2_then_)
   {
     this->BuildSut();

@@ -13,6 +13,7 @@ namespace context
     std::shared_ptr<ContextReference_ViewModel> sut;
     std::shared_ptr<ContextReference_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // Given Helper Definitions
     std::string baseContext = std::string("My Context");
     virtual void given_baseContext();
     virtual void given_baseContext_1();
@@ -24,11 +25,19 @@ namespace context
     this->testEnvironment = std::make_shared<ContextReference_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: String Context
+  ///   given: baseContext
+  ///    when:
+  ///    then:
   TEST_F(ContextReference_ViewTests, String_Context_given_baseContext_when_then_)
   {
     this->given_baseContext();
     this->BuildSut();
   }
+  /// Scenario: Context Reference
+  ///   given: baseContext
+  ///    when:
+  ///    then:
   TEST_F(ContextReference_ViewTests, Context_Reference_given_baseContext_when_then_)
   {
     this->given_baseContext_1();

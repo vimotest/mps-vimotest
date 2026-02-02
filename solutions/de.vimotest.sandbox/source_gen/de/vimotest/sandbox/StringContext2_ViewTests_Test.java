@@ -30,12 +30,9 @@ public class StringContext2_ViewTests_Test {
   }
 
 
-
   public void given_alice_bob_charlie() {
     this.testEnvironment.SetSimpleStringContext(this.alice_bob_charlie);
   }
-
-
 
 
 }

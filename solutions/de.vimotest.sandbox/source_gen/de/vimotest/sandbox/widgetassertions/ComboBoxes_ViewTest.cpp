@@ -14,7 +14,9 @@ namespace widgetassertions
     std::shared_ptr<ComboBoxes_ViewModel> sut;
     std::shared_ptr<ComboBoxes_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // Given Helper Definitions
     virtual void given_empty_context();
+    // Then Helper Definitions
     virtual void then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible();
     virtual void then_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_();
     virtual void then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled();
@@ -27,6 +29,10 @@ namespace widgetassertions
     this->testEnvironment = std::make_shared<ComboBoxes_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: My Scenario
+  ///   given: empty context
+  ///    when:
+  ///    then: MyOptions has 3 entries and selected 'A1' and is enabled and is visible and MyOptionsWithFreeText has 2 entries and  and shows text 'My Free Text'
   TEST_F(ComboBoxes_ViewTest, My_Scenario_given_empty_context_when_then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible_and_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_)
   {
     this->given_empty_context();
@@ -34,11 +40,19 @@ namespace widgetassertions
     this->then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible();
     this->then_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_();
   }
+  /// Scenario: ComboBox (disabled)
+  ///   given:
+  ///    when:
+  ///    then: MyOptions has 1 entries and selected 'A' and is not enabled
   TEST_F(ComboBoxes_ViewTest, ComboBox_disabled_given_when_then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled)
   {
     this->BuildSut();
     this->then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled();
   }
+  /// Scenario: ComboBox (invisible)
+  ///   given:
+  ///    when:
+  ///    then: MyOptions has 1 entries and selected 'A' and is not visible
   TEST_F(ComboBoxes_ViewTest, ComboBox_invisible_given_when_then_MyOptions_has_1_entries_and_selected_A_and_is_not_visible)
   {
     this->BuildSut();

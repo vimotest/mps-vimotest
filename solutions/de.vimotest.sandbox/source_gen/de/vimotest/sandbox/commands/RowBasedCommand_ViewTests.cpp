@@ -17,6 +17,7 @@ namespace commands
     std::shared_ptr<RowBasedCommand_ViewModel> sut;
     std::shared_ptr<RowBasedCommand_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // When Helper Definitions
     virtual void when_check_Checkboxes_at_0();
     virtual void when_uncheck_Checkboxes_at_1();
     virtual void when_select_entry_MyText1_in_FreeTextComboBoxes_at_0();
@@ -26,6 +27,7 @@ namespace commands
     virtual void when_fill_A_in_TextBoxes_at_0();
     virtual void when_fill_B_in_TextBoxes_at_1();
     virtual void when_click_Buttons_at_0();
+    // Then Helper Definitions
     virtual void then_MyFlags_has_2_rows();
     virtual void then_MyComboBoxes_has_2_rows();
     virtual void then_MyStandardControls_has_2_rows();
@@ -37,6 +39,10 @@ namespace commands
     this->testEnvironment = std::make_shared<RowBasedCommand_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: ListView RowBased Commands
+  ///   given:
+  ///    when: check Checkboxes at 0 and uncheck Checkboxes at 1
+  ///    then: MyFlags has 2 rows
   TEST_F(RowBasedCommand_ViewTests, ListView_RowBased_Commands_given_when_check_Checkboxes_at_0_and_uncheck_Checkboxes_at_1_then_MyFlags_has_2_rows)
   {
     this->BuildSut();
@@ -44,6 +50,10 @@ namespace commands
     this->when_uncheck_Checkboxes_at_1();
     this->then_MyFlags_has_2_rows();
   }
+  /// Scenario: TableView RowBased Commands
+  ///   given:
+  ///    when: select entry 'MyText1' in FreeTextComboBoxes at 0 and select entry 'MyText2' in FreeTextComboBoxes at 1 and select entry 'B' in EntryComboBoxes at 0 and select entry 'D' in EntryComboBoxes at 1
+  ///    then: MyComboBoxes has 2 rows
   TEST_F(RowBasedCommand_ViewTests, TableView_RowBased_Commands_given_when_select_entry_MyText1_in_FreeTextComboBoxes_at_0_and_select_entry_MyText2_in_FreeTextComboBoxes_at_1_and_select_entry_B_in_EntryComboBoxes_at_0_and_select_entry_D_in_EntryComboBoxes_at_1_then_MyComboBoxes_has_2_rows)
   {
     this->BuildSut();
@@ -53,6 +63,10 @@ namespace commands
     this->when_select_entry_D_in_EntryComboBoxes_at_1();
     this->then_MyComboBoxes_has_2_rows();
   }
+  /// Scenario: TreeView RowBased Commands
+  ///   given:
+  ///    when: fill 'A' in  TextBoxes at 0 and fill 'B' in  TextBoxes at 1 and click Buttons at 0
+  ///    then: MyStandardControls has 2 rows
   TEST_F(RowBasedCommand_ViewTests, TreeView_RowBased_Commands_given_when_fill_A_in_TextBoxes_at_0_and_fill_B_in_TextBoxes_at_1_and_click_Buttons_at_0_then_MyStandardControls_has_2_rows)
   {
     this->BuildSut();

@@ -18,6 +18,13 @@ public class ViewModelDependency_ViewModelTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: ViewModel Dependency Call
+      given:
+       when: LoadViewModel
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void ViewModel_Dependency_Call_given_when_LoadViewModel_then_()
     {
@@ -30,6 +37,7 @@ public class ViewModelDependency_ViewModelTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // When Helper Definitions
     public virtual void when_LoadViewModel()
     {
         this.testEnvironment.getSimpleDependency_ViewModel().loadViewModel();

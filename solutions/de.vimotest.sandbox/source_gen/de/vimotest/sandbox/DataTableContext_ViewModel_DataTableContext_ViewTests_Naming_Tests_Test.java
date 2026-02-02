@@ -48,7 +48,6 @@ public class DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests_
   }
 
 
-
   public void given_id_0_name_A() {
     this.testEnvironment.SetDataTableString(this.id_0_name_A);
   }
@@ -61,8 +60,6 @@ public class DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests_
   public void given_data_1() {
     this.testEnvironment.SetDataTableString(this.data);
   }
-
-
 
 
 }

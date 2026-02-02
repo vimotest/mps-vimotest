@@ -33,10 +33,8 @@ public class SeparateViewModelController_ViewTests_Test {
     this.sutViewModel = this.testEnvironment.GetViewModel();
   }
 
-
   public void given_empty_context() {
   }
-
 
   public void when_LoadViewModel() {
     this.sutViewController.loadViewModel();
@@ -44,6 +42,5 @@ public class SeparateViewModelController_ViewTests_Test {
   public void when_uncheck_MyFlag() {
     this.sutViewController.myFlagCheckBoxChecked(false);
   }
-
 
 }

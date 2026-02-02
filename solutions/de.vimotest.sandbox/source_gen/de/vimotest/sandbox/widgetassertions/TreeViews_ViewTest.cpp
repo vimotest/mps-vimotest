@@ -18,7 +18,9 @@ namespace widgetassertions
     std::shared_ptr<TreeViews_ViewModel> sut;
     std::shared_ptr<TreeViews_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // Given Helper Definitions
     virtual void given_empty_context();
+    // Then Helper Definitions
     virtual void then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible();
     virtual void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1();
     virtual void then_MyParentIndexRowHandles_has_4_rows();
@@ -32,6 +34,10 @@ namespace widgetassertions
     this->testEnvironment = std::make_shared<TreeViews_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: My Scenario
+  ///   given: empty context
+  ///    when:
+  ///    then: MyTreeViewElements has 2 rows and selected row index 1 and is enabled and is visible and Description is not visible and MyStringRowHandles has 2 rows and selected row handle ROW1 and MyParentIndexRowHandles has 4 rows and MyParentStringRowHandles has 4 rows
   TEST_F(TreeViews_ViewTest, My_Scenario_given_empty_context_when_then_MyTreeViewElements_has_2_rows_and_selected_row_index_1_and_is_enabled_and_is_visible_and_Description_is_not_visible_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1_and_MyParentIndexRowHandles_has_4_rows_and_MyParentStringRowHandles_has_4_rows)
   {
     this->given_empty_context();
@@ -41,6 +47,10 @@ namespace widgetassertions
     this->then_MyParentIndexRowHandles_has_4_rows();
     this->then_MyParentStringRowHandles_has_4_rows();
   }
+  /// Scenario: TreeView Ignore Column
+  ///   given: empty context
+  ///    when:
+  ///    then: MyTreeViewElements has 2 rows
   TEST_F(TreeViews_ViewTest, TreeView_Ignore_Column_given_empty_context_when_then_MyTreeViewElements_has_2_rows)
   {
     this->given_empty_context();

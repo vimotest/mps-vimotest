@@ -35,14 +35,11 @@ public class FillTextCommand_ViewTests_Test {
 
 
 
-
-
   public void when_fill_Changed_in_MyValue() {
     this.sut.myValueTextBoxTextFilled("Changed");
   }
   public void when_fill_Changed_in_MyFreeValue() {
     this.sut.myFreeValueComboBoxTextFilled("Changed");
   }
-
 
 }

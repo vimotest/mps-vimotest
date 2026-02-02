@@ -63,9 +63,5 @@ class ContextReference_ViewTests {
 
   }
   
-  // When Helper Definitions
-
   
-  // Then Helper Definitions
-
 }

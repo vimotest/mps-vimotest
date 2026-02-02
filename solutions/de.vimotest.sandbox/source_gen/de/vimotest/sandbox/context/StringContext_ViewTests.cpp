@@ -14,6 +14,7 @@ namespace context
     std::shared_ptr<StringContext_ViewModel> sut;
     std::shared_ptr<StringContext_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // Given Helper Definitions
     std::string alice_bob_charlie = std::string("Alice, Bob, Charlie");
     virtual void given_alice_bob_charlie();
     std::string Alice_Bob_Charlie = std::string("Alice, Bob, Charlie");
@@ -26,11 +27,19 @@ namespace context
     this->testEnvironment = std::make_shared<StringContext_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: SimpleStringContext
+  ///   given: alice_bob_charlie
+  ///    when:
+  ///    then:
   TEST_F(StringContext_ViewTests, SimpleStringContext_given_alice_bob_charlie_when_then_)
   {
     this->given_alice_bob_charlie();
     this->BuildSut();
   }
+  /// Scenario: SimpleStringContext (implicit name)
+  ///   given: Alice_Bob_Charlie
+  ///    when:
+  ///    then:
   TEST_F(StringContext_ViewTests, SimpleStringContext_implicit_name_given_Alice_Bob_Charlie_when_then_)
   {
     this->given_Alice_Bob_Charlie();

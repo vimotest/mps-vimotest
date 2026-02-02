@@ -41,11 +41,8 @@ public class TableViews_ViewTest_Test {
   }
 
 
-
   public void given_empty_context() {
   }
-
-
 
 
   public void then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible() {

@@ -18,6 +18,13 @@ public class ClickCommand_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: Click Button
+      given:
+       when: click Ok
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Click_Button_given_when_click_Ok_then_()
     {
@@ -30,6 +37,7 @@ public class ClickCommand_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // When Helper Definitions
     public virtual void when_click_Ok()
     {
         this.sut.okButtonClicked();

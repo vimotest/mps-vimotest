@@ -13,12 +13,14 @@ namespace de::vimotest::examples::loginview
     std::shared_ptr<LoginViewModel> sut;
     std::shared_ptr<LoginViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // Given Helper Definitions
     virtual void given_empty_context();
     std::string prefilledValues = R"(<Prefs>
   <User>Ada</User>
   <Pw>Lovelace1</Pw>
 </Prefs>)";
     virtual void given_prefilledValues();
+    // When Helper Definitions
     virtual void when_LoadViewModel();
     virtual void when_fill_User_in_Username();
     virtual void when_fill_MyPass123_in_Password();
@@ -26,6 +28,7 @@ namespace de::vimotest::examples::loginview
     virtual void when_clear_text_in_Password();
     virtual void when_fill_lovelace_in_Password();
     virtual void when_click_Login();
+    // Then Helper Definitions
     virtual void then_Username_shows_text_User_();
     virtual void then_Password_shows_text_MyPass123_();
     virtual void then_Login_is_enabled();
@@ -44,6 +47,10 @@ namespace de::vimotest::examples::loginview
     this->testEnvironment = std::make_shared<LoginViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: Load View on empty context
+  ///   given: empty context
+  ///    when: LoadViewModel and fill 'User' in  Username and fill 'MyPass123' in  Password and check ShowPassword
+  ///    then: Username shows text 'User' and Password shows text 'MyPass123' and Login is enabled
   TEST_F(LoginViewModelTests, Load_View_on_empty_context_given_empty_context_when_LoadViewModel_and_fill_User_in_Username_and_fill_MyPass123_in_Password_and_check_ShowPassword_then_Username_shows_text_User_and_Password_shows_text_MyPass123_and_Login_is_enabled)
   {
     this->given_empty_context();
@@ -56,6 +63,10 @@ namespace de::vimotest::examples::loginview
     this->then_Password_shows_text_MyPass123_();
     this->then_Login_is_enabled();
   }
+  /// Scenario: Load View on empty context
+  ///   given: empty context
+  ///    when: LoadViewModel and fill 'User' in  Username and clear text in Password
+  ///    then: Username shows text 'User' and Password shows empty text and Login is not enabled
   TEST_F(LoginViewModelTests, Load_View_on_empty_context_given_empty_context_when_LoadViewModel_and_fill_User_in_Username_and_clear_text_in_Password_then_Username_shows_text_User_and_Password_shows_empty_text_and_Login_is_not_enabled)
   {
     this->given_empty_context();
@@ -67,6 +78,10 @@ namespace de::vimotest::examples::loginview
     this->then_Password_shows_empty_text();
     this->then_Login_is_not_enabled();
   }
+  /// Scenario: Load View on Pre-filled User-Preferences
+  ///   given: prefilledValues
+  ///    when: LoadViewModel
+  ///    then: Username shows text 'Ada' and Password shows text '******' and Login is enabled
   TEST_F(LoginViewModelTests, Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadViewModel_then_Username_shows_text_Ada_and_Password_shows_text_____and_Login_is_enabled)
   {
     this->given_prefilledValues();
@@ -76,6 +91,10 @@ namespace de::vimotest::examples::loginview
     this->then_Password_shows_text_____();
     this->then_Login_is_enabled();
   }
+  /// Scenario: Load View on Pre-filled User-Preferences
+  ///   given: prefilledValues
+  ///    when: LoadViewModel and check ShowPassword
+  ///    then: Username shows text 'Ada' and Password shows text 'Lovelace1' and ShowPassword is checked and Login is enabled
   TEST_F(LoginViewModelTests, Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadViewModel_and_check_ShowPassword_then_Username_shows_text_Ada_and_Password_shows_text_Lovelace1_and_ShowPassword_is_checked_and_Login_is_enabled)
   {
     this->given_prefilledValues();
@@ -87,6 +106,10 @@ namespace de::vimotest::examples::loginview
     this->then_ShowPassword_is_checked();
     this->then_Login_is_enabled();
   }
+  /// Scenario: Load View on Pre-filled User-Preferences
+  ///   given: prefilledValues
+  ///    when: LoadViewModel and fill 'lovelace' in  Password and click Login
+  ///    then: Error shows text 'Needs uppercase letters'
   TEST_F(LoginViewModelTests, Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadViewModel_and_fill_lovelace_in_Password_and_click_Login_then_Error_shows_text_Needs_uppercase_letters_)
   {
     this->given_prefilledValues();

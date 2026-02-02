@@ -20,6 +20,13 @@ public class TextBoxes_ViewTest
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: SingleLine TextBox
+      given: empty context
+       when:
+       then: MyValue shows text 'Some entered Input' and is enabled and is visible
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void SingleLine_TextBox_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible()
     {
@@ -28,6 +35,13 @@ public class TextBoxes_ViewTest
         this.then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible();
     }
 
+    /*
+
+    Scenario: SingleLine TextBox (disabled)
+      given: empty context
+       when:
+       then: MyValue shows text 'Some entered Input' and is not enabled and is visible
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void SingleLine_TextBox_disabled_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_not_enabled_and_is_visible()
     {
@@ -36,6 +50,13 @@ public class TextBoxes_ViewTest
         this.then_MyValue_shows_text_Some_entered_Input_and_is_not_enabled_and_is_visible();
     }
 
+    /*
+
+    Scenario: SingleLine TextBox (invisible)
+      given: empty context
+       when:
+       then: MyValue shows text 'Some entered Input' and is enabled and is not visible
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void SingleLine_TextBox_invisible_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_not_visible()
     {
@@ -44,6 +65,13 @@ public class TextBoxes_ViewTest
         this.then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_not_visible();
     }
 
+    /*
+
+    Scenario: MultiLine TextBox
+      given: empty context
+       when:
+       then: MultiLineTextBoxValue shows text 'Expected1|Expected2'
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void MultiLine_TextBox_given_empty_context_when_then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_()
     {
@@ -57,10 +85,12 @@ public class TextBoxes_ViewTest
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     public virtual void given_empty_context()
     {
     }
 
+    // Then Helper Definitions
     public virtual void then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible()
     {
         Assert.AreEqual("Some entered Input", this.sut.getMyValueTextBoxText(), "Expected that textbox MyValue has text <" + "Some entered Input" + ">, but was <" + this.sut.getMyValueTextBoxText() + ">");

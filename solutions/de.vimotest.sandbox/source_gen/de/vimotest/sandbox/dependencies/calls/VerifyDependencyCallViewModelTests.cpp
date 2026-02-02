@@ -15,6 +15,7 @@ namespace dependencies::calls
     std::shared_ptr<VerifyDependencyCallViewModel> sut;
     std::shared_ptr<VerifyDependencyCallViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // Then Helper Definitions
     virtual void then_call_Logger_Log_any_();
     virtual void then_call_Logger_Log___();
     virtual void then_call_Logger_Log____1();
@@ -27,21 +28,37 @@ namespace dependencies::calls
     this->testEnvironment = std::make_shared<VerifyDependencyCallViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: Verify dependency call any
+  ///   given:
+  ///    when:
+  ///    then: call Logger.Log([any])
   TEST_F(VerifyDependencyCallViewModelTests, Verify_dependency_call_any_given_when_then_call_Logger_Log_any_)
   {
     this->BuildSut();
     this->then_call_Logger_Log_any_();
   }
+  /// Scenario: Verify dependency call 1 times
+  ///   given:
+  ///    when:
+  ///    then: call Logger.Log(["])
   TEST_F(VerifyDependencyCallViewModelTests, Verify_dependency_call_1_times_given_when_then_call_Logger_Log___)
   {
     this->BuildSut();
     this->then_call_Logger_Log___();
   }
+  /// Scenario: Verify dependency call at index 3
+  ///   given:
+  ///    when:
+  ///    then: call Logger.Log(["])
   TEST_F(VerifyDependencyCallViewModelTests, Verify_dependency_call_at_index_3_given_when_then_call_Logger_Log___)
   {
     this->BuildSut();
     this->then_call_Logger_Log____1();
   }
+  /// Scenario: Verify dependency call 3-6
+  ///   given:
+  ///    when:
+  ///    then: call Logger.Log(["])
   TEST_F(VerifyDependencyCallViewModelTests, Verify_dependency_call_3_6_given_when_then_call_Logger_Log___)
   {
     this->BuildSut();

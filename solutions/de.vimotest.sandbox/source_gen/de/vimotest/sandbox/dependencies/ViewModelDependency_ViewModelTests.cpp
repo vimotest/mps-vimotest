@@ -13,6 +13,7 @@ namespace dependencies
     std::shared_ptr<ViewModelDependency_ViewModel> sut;
     std::shared_ptr<ViewModelDependency_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // When Helper Definitions
     virtual void when_LoadViewModel();
   protected:
     void SetUp() override;
@@ -22,6 +23,10 @@ namespace dependencies
     this->testEnvironment = std::make_shared<ViewModelDependency_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: ViewModel Dependency Call
+  ///   given:
+  ///    when: LoadViewModel
+  ///    then:
   TEST_F(ViewModelDependency_ViewModelTests, ViewModel_Dependency_Call_given_when_LoadViewModel_then_)
   {
     this->BuildSut();

@@ -77,8 +77,6 @@ public class SelectRowCommand_ViewTests_Test {
 
 
 
-
-
   public void when_select_row_1_in_MyListViewElements() {
     this.sut.myListViewElementsListRowSelected(1);
   }
@@ -100,7 +98,6 @@ public class SelectRowCommand_ViewTests_Test {
   public void when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListViewElements() {
     this.sut.myStringHandleMultiSelectRowListViewElementsListRowSelected(Arrays.asList("ROW_A", "ROW_C"));
   }
-
 
   public void then_MyListViewElements_has_2_rows() {
     List<SelectRowCommand_ViewModelMyListViewElementsRow> actualRows = this.sut.getMyListViewElementsListRows();

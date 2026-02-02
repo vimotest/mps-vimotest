@@ -19,6 +19,13 @@ public class SimpleDependency_ViewModelTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: Invoke Direct Dependency
+      given:
+       when: OnMessage
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Invoke_Direct_Dependency_given_when_OnMessage_then_()
     {
@@ -26,6 +33,13 @@ public class SimpleDependency_ViewModelTests
         this.when_OnMessage();
     }
 
+    /*
+
+    Scenario: Invoke Registry Dependency
+      given:
+       when: Log
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Invoke_Registry_Dependency_given_when_Log_then_()
     {
@@ -38,6 +52,7 @@ public class SimpleDependency_ViewModelTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // When Helper Definitions
     public virtual void when_OnMessage()
     {
         this.testEnvironment.getMessageBus().OnMessage(0, new System.Collections.Generic.List<string> { "A", "B" });

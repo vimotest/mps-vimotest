@@ -68,6 +68,4 @@ class SeparateViewModelController_ViewTests {
 
   }
   
-  // Then Helper Definitions
-
 }

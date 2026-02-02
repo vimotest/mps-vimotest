@@ -20,6 +20,13 @@ public class TableViews_ViewTest
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: My Scenario
+      given: empty context
+       when:
+       then: MyElements has 2 rows and selected row index 1 and is visible and is enabled and Description is not visible and MyStringRowHandles has 2 rows and selected row handle ROW1
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void My_Scenario_given_empty_context_when_then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1()
     {
@@ -29,6 +36,13 @@ public class TableViews_ViewTest
         this.then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1();
     }
 
+    /*
+
+    Scenario: Table Ignore Columns
+      given: empty context
+       when:
+       then: MyElements has 2 rows
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Table_Ignore_Columns_given_empty_context_when_then_MyElements_has_2_rows()
     {
@@ -42,10 +56,12 @@ public class TableViews_ViewTest
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     public virtual void given_empty_context()
     {
     }
 
+    // Then Helper Definitions
     public virtual void then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible()
     {
         var actualRows = this.sut.getMyElementsTableRows();

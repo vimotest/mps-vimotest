@@ -13,6 +13,7 @@ namespace context
     std::shared_ptr<DataPathContext_ViewModel> sut;
     std::shared_ptr<DataPathContext_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // Given Helper Definitions
     virtual void given_my_element();
     virtual void given_path_resource_elements_myelement();
   protected:
@@ -23,11 +24,19 @@ namespace context
     this->testEnvironment = std::make_shared<DataPathContext_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: Data Path Context
+  ///   given: my element
+  ///    when:
+  ///    then:
   TEST_F(DataPathContext_ViewTests, Data_Path_Context_given_my_element_when_then_)
   {
     this->given_my_element();
     this->BuildSut();
   }
+  /// Scenario: Data Path Context (implicit name)
+  ///   given: path_resource_elements_myelement
+  ///    when:
+  ///    then:
   TEST_F(DataPathContext_ViewTests, Data_Path_Context_implicit_name_given_path_resource_elements_myelement_when_then_)
   {
     this->given_path_resource_elements_myelement();

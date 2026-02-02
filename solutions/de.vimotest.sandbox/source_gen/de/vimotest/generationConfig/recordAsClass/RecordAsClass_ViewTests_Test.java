@@ -28,11 +28,8 @@ public class RecordAsClass_ViewTests_Test {
   }
 
 
-
   public void given_empty_context() {
   }
-
-
 
 
   public void then_Object_is_todo_recordpattern() {

@@ -20,6 +20,13 @@ public class ListViews_ViewTest
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: My Scenario
+      given: empty context
+       when:
+       then: MyListOfLabel has 4 rows and selected row index 3 and MyListOfImages has 2 rows and MyCheckboxes has 3 rows and MyStringRowHandles has 2 rows and selected row handle ROW1 and MyListWithMultiRowSelection has 3 rows and selected row indices [0,2]
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void My_Scenario_given_empty_context_when_then_MyListOfLabel_has_4_rows_and_selected_row_index_3_and_MyListOfImages_has_2_rows_and_MyCheckboxes_has_3_rows_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1_and_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_()
     {
@@ -32,6 +39,13 @@ public class ListViews_ViewTest
         this.then_MyListWithMultiRowSelection_has_3_rows_and_selected_row_indices_0_2_();
     }
 
+    /*
+
+    Scenario: List Ignore Column
+      given: empty context
+       when:
+       then: MyListOfLabel has 4 rows
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void List_Ignore_Column_given_empty_context_when_then_MyListOfLabel_has_4_rows()
     {
@@ -40,6 +54,13 @@ public class ListViews_ViewTest
         this.then_MyListOfLabel_has_4_rows();
     }
 
+    /*
+
+    Scenario: List Ignore Cell
+      given: empty context
+       when:
+       then: MyListOfLabel has 4 rows
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void List_Ignore_Cell_given_empty_context_when_then_MyListOfLabel_has_4_rows()
     {
@@ -48,6 +69,13 @@ public class ListViews_ViewTest
         this.then_MyListOfLabel_has_4_rows_1();
     }
 
+    /*
+
+    Scenario: List of Buttons
+      given:
+       when:
+       then: MyButtons has 0 rows
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void List_of_Buttons_given_when_then_MyButtons_has_0_rows()
     {
@@ -60,10 +88,12 @@ public class ListViews_ViewTest
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     public virtual void given_empty_context()
     {
     }
 
+    // Then Helper Definitions
     public virtual void then_MyListOfLabel_has_4_rows_and_selected_row_index_3()
     {
         var actualRows = this.sut.getMyListOfLabelListRows();

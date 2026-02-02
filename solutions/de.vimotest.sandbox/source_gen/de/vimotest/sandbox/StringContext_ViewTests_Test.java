@@ -36,15 +36,12 @@ public class StringContext_ViewTests_Test {
   }
 
 
-
   public void given_alice_bob_charlie() {
     this.testEnvironment.SetSimpleStringContext(this.alice_bob_charlie);
   }
   public void given_Alice_Bob_Charlie() {
     this.testEnvironment.SetSimpleStringContext(this.Alice_Bob_Charlie);
   }
-
-
 
 
 }

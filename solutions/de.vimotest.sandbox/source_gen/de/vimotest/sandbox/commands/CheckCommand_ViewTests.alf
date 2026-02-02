@@ -38,8 +38,6 @@ class CheckCommand_ViewTests {
   }
   
   
-  // Given Helper Definitions
-
   
   // When Helper Definitions
 
@@ -54,6 +52,4 @@ class CheckCommand_ViewTests {
 
   }
   
-  // Then Helper Definitions
-
 }

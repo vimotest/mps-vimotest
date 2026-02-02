@@ -78,8 +78,6 @@ class RowBasedCommand_ViewTests {
   }
   
   
-  // Given Helper Definitions
-
   
   // When Helper Definitions
 

@@ -18,6 +18,13 @@ public class FillTextCommand_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: Fill Text TextBox
+      given:
+       when: fill 'Changed' in  MyValue
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Fill_Text_TextBox_given_when_fill_Changed_in_MyValue_then_()
     {
@@ -25,6 +32,13 @@ public class FillTextCommand_ViewTests
         this.when_fill_Changed_in_MyValue();
     }
 
+    /*
+
+    Scenario: Fill Text ComboBox
+      given:
+       when: fill 'Changed' in  MyFreeValue
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Fill_Text_ComboBox_given_when_fill_Changed_in_MyFreeValue_then_()
     {
@@ -37,6 +51,7 @@ public class FillTextCommand_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // When Helper Definitions
     public virtual void when_fill_Changed_in_MyValue()
     {
         this.sut.myValueTextBoxTextFilled("Changed");

@@ -17,6 +17,13 @@ public class RecordAsClass_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: MyTest
+      given: empty context
+       when:
+       then: Object is todo: recordpattern
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void MyTest_given_empty_context_when_then_Object_is_todo_recordpattern()
     {
@@ -30,10 +37,12 @@ public class RecordAsClass_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     public virtual void given_empty_context()
     {
     }
 
+    // Then Helper Definitions
     public virtual void then_Object_is_todo_recordpattern()
     {
         var actualMyRecordObject = this.sut.getObject();

@@ -63,9 +63,5 @@ class ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests {
 
   }
   
-  // When Helper Definitions
-
   
-  // Then Helper Definitions
-
 }

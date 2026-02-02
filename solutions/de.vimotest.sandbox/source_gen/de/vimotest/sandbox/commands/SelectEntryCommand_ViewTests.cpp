@@ -15,8 +15,10 @@ namespace commands
     std::shared_ptr<SelectEntryCommand_ViewModel> sut;
     std::shared_ptr<SelectEntryCommand_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // When Helper Definitions
     virtual void when_select_entry_C_in_MyElements();
     virtual void when_select_entry_B_in_MyOptions();
+    // Then Helper Definitions
     virtual void then_MyElements_has_3_entries_and();
   protected:
     void SetUp() override;
@@ -26,12 +28,20 @@ namespace commands
     this->testEnvironment = std::make_shared<SelectEntryCommand_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: Select Entry Combobox Call
+  ///   given:
+  ///    when: select entry 'C' in MyElements
+  ///    then: MyElements has 3 entries and
   TEST_F(SelectEntryCommand_ViewTests, Select_Entry_Combobox_Call_given_when_select_entry_C_in_MyElements_then_MyElements_has_3_entries_and)
   {
     this->BuildSut();
     this->when_select_entry_C_in_MyElements();
     this->then_MyElements_has_3_entries_and();
   }
+  /// Scenario: Select Entry RadioButton Call
+  ///   given:
+  ///    when: select entry 'B' in MyOptions
+  ///    then:
   TEST_F(SelectEntryCommand_ViewTests, Select_Entry_RadioButton_Call_given_when_select_entry_B_in_MyOptions_then_)
   {
     this->BuildSut();

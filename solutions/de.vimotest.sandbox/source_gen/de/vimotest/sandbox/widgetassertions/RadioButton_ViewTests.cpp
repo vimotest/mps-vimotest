@@ -15,6 +15,7 @@ namespace widgetassertions
     std::shared_ptr<RadioButton_ViewModel> sut;
     std::shared_ptr<RadioButton_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // Then Helper Definitions
     virtual void then_Options_selected_OptionB_();
     virtual void then_Options_selected_OptionA_and_OptionB_is_not_enabled();
     virtual void then_Options_selected_OptionA_and_OptionB_is_not_visible();
@@ -26,16 +27,28 @@ namespace widgetassertions
     this->testEnvironment = std::make_shared<RadioButton_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: Select Option
+  ///   given:
+  ///    when:
+  ///    then: Options selected 'OptionB'
   TEST_F(RadioButton_ViewTests, Select_Option_given_when_then_Options_selected_OptionB_)
   {
     this->BuildSut();
     this->then_Options_selected_OptionB_();
   }
+  /// Scenario: RadioButton (disabled)
+  ///   given:
+  ///    when:
+  ///    then: Options selected 'OptionA' and OptionB is not enabled
   TEST_F(RadioButton_ViewTests, RadioButton_disabled_given_when_then_Options_selected_OptionA_and_OptionB_is_not_enabled)
   {
     this->BuildSut();
     this->then_Options_selected_OptionA_and_OptionB_is_not_enabled();
   }
+  /// Scenario: RadioButton (invisible)
+  ///   given:
+  ///    when:
+  ///    then: Options selected 'OptionA' and OptionB is not visible
   TEST_F(RadioButton_ViewTests, RadioButton_invisible_given_when_then_Options_selected_OptionA_and_OptionB_is_not_visible)
   {
     this->BuildSut();

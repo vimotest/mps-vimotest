@@ -32,11 +32,8 @@ public class Images_ViewTest_Test {
   }
 
 
-
   public void given_empty_context() {
   }
-
-
 
 
   public void then_Status_shows_image_image_active_() {

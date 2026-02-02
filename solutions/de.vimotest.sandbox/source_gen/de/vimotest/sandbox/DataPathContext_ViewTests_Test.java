@@ -34,15 +34,12 @@ public class DataPathContext_ViewTests_Test {
   }
 
 
-
   public void given_my_element() {
     this.testEnvironment.SetDataPathContext("resource:/elements/myelement");
   }
   public void given_path_resource_elements_myelement() {
     this.testEnvironment.SetDataPathContext("resource:/elements/myelement");
   }
-
-
 
 
 }

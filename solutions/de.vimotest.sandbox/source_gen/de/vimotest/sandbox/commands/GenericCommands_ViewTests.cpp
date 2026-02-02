@@ -13,6 +13,7 @@ namespace commands
     std::shared_ptr<GenericCommands_ViewModel> sut;
     std::shared_ptr<GenericCommands_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // When Helper Definitions
     virtual void when_MyCommand();
   protected:
     void SetUp() override;
@@ -22,6 +23,10 @@ namespace commands
     this->testEnvironment = std::make_shared<GenericCommands_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: Generic Commands Call
+  ///   given:
+  ///    when: MyCommand
+  ///    then:
   TEST_F(GenericCommands_ViewTests, Generic_Commands_Call_given_when_MyCommand_then_)
   {
     this->BuildSut();

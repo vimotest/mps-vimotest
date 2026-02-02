@@ -48,8 +48,6 @@ class RepeatUsageDependency_ViewModelTests {
   }
   
   
-  // Given Helper Definitions
-
   
   // When Helper Definitions
 
@@ -64,6 +62,4 @@ class RepeatUsageDependency_ViewModelTests {
 
   }
   
-  // Then Helper Definitions
-
 }

@@ -18,6 +18,13 @@ public class Images_ViewTest
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: My Scenario
+      given: empty context
+       when:
+       then: Status shows image 'image_active' and UpOrDown shows image 'image_down'
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void My_Scenario_given_empty_context_when_then_Status_shows_image_image_active_and_UpOrDown_shows_image_image_down_()
     {
@@ -32,10 +39,12 @@ public class Images_ViewTest
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     public virtual void given_empty_context()
     {
     }
 
+    // Then Helper Definitions
     public virtual void then_Status_shows_image_image_active_()
     {
         Assert.AreEqual("image_active", this.sut.getStatusImageName(), "Expected that image Status has " + "image <image_active>" + ", but was <" + this.sut.getStatusImageName() + ">");

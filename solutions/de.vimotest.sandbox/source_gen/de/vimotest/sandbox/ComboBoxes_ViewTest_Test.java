@@ -43,11 +43,8 @@ public class ComboBoxes_ViewTest_Test {
   }
 
 
-
   public void given_empty_context() {
   }
-
-
 
 
   public void then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible() {

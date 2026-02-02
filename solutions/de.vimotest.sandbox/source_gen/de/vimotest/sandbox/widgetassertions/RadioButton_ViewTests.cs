@@ -18,6 +18,13 @@ public class RadioButton_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: Select Option
+      given:
+       when:
+       then: Options selected 'OptionB'
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Select_Option_given_when_then_Options_selected_OptionB_()
     {
@@ -25,6 +32,13 @@ public class RadioButton_ViewTests
         this.then_Options_selected_OptionB_();
     }
 
+    /*
+
+    Scenario: RadioButton (disabled)
+      given:
+       when:
+       then: Options selected 'OptionA' and OptionB is not enabled
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void RadioButton_disabled_given_when_then_Options_selected_OptionA_and_OptionB_is_not_enabled()
     {
@@ -32,6 +46,13 @@ public class RadioButton_ViewTests
         this.then_Options_selected_OptionA_and_OptionB_is_not_enabled();
     }
 
+    /*
+
+    Scenario: RadioButton (invisible)
+      given:
+       when:
+       then: Options selected 'OptionA' and OptionB is not visible
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void RadioButton_invisible_given_when_then_Options_selected_OptionA_and_OptionB_is_not_visible()
     {
@@ -44,6 +65,7 @@ public class RadioButton_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Then Helper Definitions
     public virtual void then_Options_selected_OptionB_()
     {
         Assert.AreEqual(widgetassertions.RadioButton_ViewModelOptionsOption.OptionB, this.sut.getOptionsRadioButtonGroupSelectedEntry(), "Expected that radio button group Options has selected <" + "OptionB" + ">, but was <" + ConvertOptionsToString.Execute(this.sut.getOptionsRadioButtonGroupSelectedEntry()) + ">");

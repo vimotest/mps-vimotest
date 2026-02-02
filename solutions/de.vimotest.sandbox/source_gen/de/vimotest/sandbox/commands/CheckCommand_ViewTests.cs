@@ -18,6 +18,13 @@ public class CheckCommand_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: Check CheckBox
+      given:
+       when: check MyCheckBox1 and uncheck MyCheckBox2
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Check_CheckBox_given_when_check_MyCheckBox1_and_uncheck_MyCheckBox2_then_()
     {
@@ -31,6 +38,7 @@ public class CheckCommand_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // When Helper Definitions
     public virtual void when_check_MyCheckBox1()
     {
         this.sut.myCheckBox1CheckBoxChecked(true);

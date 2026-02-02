@@ -18,6 +18,7 @@ namespace widgetassertions
     std::shared_ptr<LowLevelFields_ViewModel> sut;
     std::shared_ptr<LowLevelFields_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // Then Helper Definitions
     virtual void then_MyBool_is_true();
     virtual void then_MyInt_is_42();
     virtual void then_MyString_is_text_();
@@ -34,6 +35,10 @@ namespace widgetassertions
     this->testEnvironment = std::make_shared<LowLevelFields_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: Primitive Field Asserts
+  ///   given:
+  ///    when:
+  ///    then: MyBool is true and MyInt is 42 and MyString is "text"
   TEST_F(LowLevelFields_ViewTests, Primitive_Field_Asserts_given_when_then_MyBool_is_true_and_MyInt_is_42_and_MyString_is_text_)
   {
     this->BuildSut();
@@ -41,16 +46,28 @@ namespace widgetassertions
     this->then_MyInt_is_42();
     this->then_MyString_is_text_();
   }
+  /// Scenario: Primitive List Field Asserts
+  ///   given:
+  ///    when:
+  ///    then: MyStrings is todo: listpattern
   TEST_F(LowLevelFields_ViewTests, Primitive_List_Field_Asserts_given_when_then_MyStrings_is_todo_listpattern)
   {
     this->BuildSut();
     this->then_MyStrings_is_todo_listpattern();
   }
+  /// Scenario: Record Field Asserts
+  ///   given:
+  ///    when:
+  ///    then: MyFieldAdditions is todo: recordpattern
   TEST_F(LowLevelFields_ViewTests, Record_Field_Asserts_given_when_then_MyFieldAdditions_is_todo_recordpattern)
   {
     this->BuildSut();
     this->then_MyFieldAdditions_is_todo_recordpattern();
   }
+  /// Scenario: Rowbased Primitive Fields
+  ///   given:
+  ///    when:
+  ///    then: CustomTableRowField has 1 rows and CustomListRowField has 1 rows and CustomTreeRowField has 1 rows
   TEST_F(LowLevelFields_ViewTests, Rowbased_Primitive_Fields_given_when_then_CustomTableRowField_has_1_rows_and_CustomListRowField_has_1_rows_and_CustomTreeRowField_has_1_rows)
   {
     this->BuildSut();

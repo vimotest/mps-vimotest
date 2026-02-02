@@ -21,6 +21,7 @@ namespace commands
     std::shared_ptr<SelectRowCommand_ViewModel> sut;
     std::shared_ptr<SelectRowCommand_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // When Helper Definitions
     virtual void when_select_row_1_in_MyListViewElements();
     virtual void when_select_row_ROW_B_in_MyStringRowHandleListViewElements();
     virtual void when_select_row_1_in_MyTableViewElements();
@@ -28,6 +29,7 @@ namespace commands
     virtual void when_select_row_1_in_MyTreeViewElements();
     virtual void when_select_row_ROW_B_in_MyStringRowHandleTreeViewElements();
     virtual void when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListViewElements();
+    // Then Helper Definitions
     virtual void then_MyListViewElements_has_2_rows();
     virtual void then_MyStringRowHandleListViewElements_has_2_rows();
     virtual void then_MyTableViewElements_has_2_rows();
@@ -43,42 +45,70 @@ namespace commands
     this->testEnvironment = std::make_shared<SelectRowCommand_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: Select Row ListView Call
+  ///   given:
+  ///    when: select row 1 in MyListViewElements
+  ///    then: MyListViewElements has 2 rows
   TEST_F(SelectRowCommand_ViewTests, Select_Row_ListView_Call_given_when_select_row_1_in_MyListViewElements_then_MyListViewElements_has_2_rows)
   {
     this->BuildSut();
     this->when_select_row_1_in_MyListViewElements();
     this->then_MyListViewElements_has_2_rows();
   }
+  /// Scenario: Select Row ListView Call (string row handle)
+  ///   given:
+  ///    when: select row ROW_B in MyStringRowHandleListViewElements
+  ///    then: MyStringRowHandleListViewElements has 2 rows
   TEST_F(SelectRowCommand_ViewTests, Select_Row_ListView_Call_string_row_handle_given_when_select_row_ROW_B_in_MyStringRowHandleListViewElements_then_MyStringRowHandleListViewElements_has_2_rows)
   {
     this->BuildSut();
     this->when_select_row_ROW_B_in_MyStringRowHandleListViewElements();
     this->then_MyStringRowHandleListViewElements_has_2_rows();
   }
+  /// Scenario: Select Row TableView Call
+  ///   given:
+  ///    when: select row 1 in MyTableViewElements
+  ///    then: MyTableViewElements has 2 rows
   TEST_F(SelectRowCommand_ViewTests, Select_Row_TableView_Call_given_when_select_row_1_in_MyTableViewElements_then_MyTableViewElements_has_2_rows)
   {
     this->BuildSut();
     this->when_select_row_1_in_MyTableViewElements();
     this->then_MyTableViewElements_has_2_rows();
   }
+  /// Scenario: Select Row TableView Call (string row handle)
+  ///   given:
+  ///    when: select row ROW_B in MyStringRowHandleTableViewElements
+  ///    then: MyStringRowHandleTableViewElements has 2 rows
   TEST_F(SelectRowCommand_ViewTests, Select_Row_TableView_Call_string_row_handle_given_when_select_row_ROW_B_in_MyStringRowHandleTableViewElements_then_MyStringRowHandleTableViewElements_has_2_rows)
   {
     this->BuildSut();
     this->when_select_row_ROW_B_in_MyStringRowHandleTableViewElements();
     this->then_MyStringRowHandleTableViewElements_has_2_rows();
   }
+  /// Scenario: Select Row TreeView Call
+  ///   given:
+  ///    when: select row 1 in MyTreeViewElements
+  ///    then: MyTreeViewElements has 2 rows
   TEST_F(SelectRowCommand_ViewTests, Select_Row_TreeView_Call_given_when_select_row_1_in_MyTreeViewElements_then_MyTreeViewElements_has_2_rows)
   {
     this->BuildSut();
     this->when_select_row_1_in_MyTreeViewElements();
     this->then_MyTreeViewElements_has_2_rows();
   }
+  /// Scenario: Select Row TreeView Call (string row handle)
+  ///   given:
+  ///    when: select row ROW_B in MyStringRowHandleTreeViewElements
+  ///    then: MyStringRowHandleTreeViewElements has 2 rows
   TEST_F(SelectRowCommand_ViewTests, Select_Row_TreeView_Call_string_row_handle_given_when_select_row_ROW_B_in_MyStringRowHandleTreeViewElements_then_MyStringRowHandleTreeViewElements_has_2_rows)
   {
     this->BuildSut();
     this->when_select_row_ROW_B_in_MyStringRowHandleTreeViewElements();
     this->then_MyStringRowHandleTreeViewElements_has_2_rows();
   }
+  /// Scenario: Select Multiple Rows
+  ///   given:
+  ///    when: select rows ROW_A,ROW_C in MyStringHandleMultiSelectRowListViewElements
+  ///    then: MyStringHandleMultiSelectRowListViewElements has 3 rows
   TEST_F(SelectRowCommand_ViewTests, Select_Multiple_Rows_given_when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListViewElements_then_MyStringHandleMultiSelectRowListViewElements_has_3_rows)
   {
     this->BuildSut();

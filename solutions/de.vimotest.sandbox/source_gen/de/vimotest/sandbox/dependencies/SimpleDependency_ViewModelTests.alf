@@ -48,8 +48,6 @@ class SimpleDependency_ViewModelTests {
   }
   
   
-  // Given Helper Definitions
-
   
   // When Helper Definitions
 
@@ -64,6 +62,4 @@ class SimpleDependency_ViewModelTests {
 
   }
   
-  // Then Helper Definitions
-
 }

@@ -15,6 +15,7 @@ namespace dependencies
     std::shared_ptr<SimpleDependency_ViewModel> sut;
     std::shared_ptr<SimpleDependency_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // When Helper Definitions
     virtual void when_OnMessage();
     virtual void when_Log();
   protected:
@@ -25,11 +26,19 @@ namespace dependencies
     this->testEnvironment = std::make_shared<SimpleDependency_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: Invoke Direct Dependency
+  ///   given:
+  ///    when: OnMessage
+  ///    then:
   TEST_F(SimpleDependency_ViewModelTests, Invoke_Direct_Dependency_given_when_OnMessage_then_)
   {
     this->BuildSut();
     this->when_OnMessage();
   }
+  /// Scenario: Invoke Registry Dependency
+  ///   given:
+  ///    when: Log
+  ///    then:
   TEST_F(SimpleDependency_ViewModelTests, Invoke_Registry_Dependency_given_when_Log_then_)
   {
     this->BuildSut();

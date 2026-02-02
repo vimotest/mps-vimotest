@@ -20,6 +20,13 @@ public class ComboBoxes_ViewTest
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: My Scenario
+      given: empty context
+       when:
+       then: MyOptions has 3 entries and selected 'A1' and is enabled and is visible and MyOptionsWithFreeText has 2 entries and  and shows text 'My Free Text'
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void My_Scenario_given_empty_context_when_then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible_and_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_()
     {
@@ -29,6 +36,13 @@ public class ComboBoxes_ViewTest
         this.then_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_();
     }
 
+    /*
+
+    Scenario: ComboBox (disabled)
+      given:
+       when:
+       then: MyOptions has 1 entries and selected 'A' and is not enabled
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void ComboBox_disabled_given_when_then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled()
     {
@@ -36,6 +50,13 @@ public class ComboBoxes_ViewTest
         this.then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled();
     }
 
+    /*
+
+    Scenario: ComboBox (invisible)
+      given:
+       when:
+       then: MyOptions has 1 entries and selected 'A' and is not visible
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void ComboBox_invisible_given_when_then_MyOptions_has_1_entries_and_selected_A_and_is_not_visible()
     {
@@ -48,10 +69,12 @@ public class ComboBoxes_ViewTest
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     public virtual void given_empty_context()
     {
     }
 
+    // Then Helper Definitions
     public virtual void then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible()
     {
         var actualMyOptionsEntries = this.sut.getMyOptionsComboBoxEntries();

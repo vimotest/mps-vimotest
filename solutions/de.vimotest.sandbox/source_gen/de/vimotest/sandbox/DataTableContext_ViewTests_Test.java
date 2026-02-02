@@ -48,7 +48,6 @@ public class DataTableContext_ViewTests_Test {
   }
 
 
-
   public void given_dataTableCustomSetter() {
     this.testEnvironment.SetIdAndName(this.dataTableCustomSetter);
   }
@@ -61,8 +60,6 @@ public class DataTableContext_ViewTests_Test {
   public void given_dataTableToXml() {
     this.testEnvironment.SetDataTableXml(this.dataTableToXml);
   }
-
-
 
 
 }

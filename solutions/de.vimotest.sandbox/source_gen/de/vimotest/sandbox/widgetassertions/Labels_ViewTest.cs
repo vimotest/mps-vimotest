@@ -20,6 +20,13 @@ public class Labels_ViewTest
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: Single Line Label
+      given: empty context
+       when:
+       then: Test shows text 'My Expectation Text' and is enabled and is visible
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Single_Line_Label_given_empty_context_when_then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible()
     {
@@ -28,6 +35,13 @@ public class Labels_ViewTest
         this.then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible();
     }
 
+    /*
+
+    Scenario: Single Line Label (Disabled)
+      given: empty context
+       when:
+       then: Test shows text 'My Expectation Text' and is not enabled and is visible
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Single_Line_Label_Disabled_given_empty_context_when_then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible()
     {
@@ -36,6 +50,13 @@ public class Labels_ViewTest
         this.then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible();
     }
 
+    /*
+
+    Scenario: Single Line Label (Invisible)
+      given: empty context
+       when:
+       then: Test shows text 'My Expectation Text' and is enabled and is not visible
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Single_Line_Label_Invisible_given_empty_context_when_then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible()
     {
@@ -44,6 +65,13 @@ public class Labels_ViewTest
         this.then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible();
     }
 
+    /*
+
+    Scenario: Multi Line Label
+      given: empty context
+       when:
+       then: MultiLine shows text 'Expected Line 1|Expected Line 2'
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Multi_Line_Label_given_empty_context_when_then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_()
     {
@@ -52,6 +80,13 @@ public class Labels_ViewTest
         this.then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_();
     }
 
+    /*
+
+    Scenario: ToolTip Label
+      given: empty context
+       when:
+       then: WithToolTip shows text 'Info' and shows tooltip 'My Expected Tooltip'
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void ToolTip_Label_given_empty_context_when_then_WithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_()
     {
@@ -60,6 +95,13 @@ public class Labels_ViewTest
         this.then_WithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_();
     }
 
+    /*
+
+    Scenario: MultiLine ToolTip Label
+      given: empty context
+       when:
+       then: WithMultiLineToolTip shows text 'Info' and shows tooltip 'Line1|Line2'
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void MultiLine_ToolTip_Label_given_empty_context_when_then_WithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_()
     {
@@ -68,6 +110,13 @@ public class Labels_ViewTest
         this.then_WithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_();
     }
 
+    /*
+
+    Scenario: TextColor Label
+      given:
+       when:
+       then: WithTextColor shows text 'Info' and has text color 'blue'
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void TextColor_Label_given_when_then_WithTextColor_shows_text_Info_and_has_text_color_blue_()
     {
@@ -80,6 +129,7 @@ public class Labels_ViewTest
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     public virtual void given_empty_context()
     {
     }
@@ -88,6 +138,7 @@ public class Labels_ViewTest
     {
     }
 
+    // Then Helper Definitions
     public virtual void then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible()
     {
         Assert.AreEqual("My Expectation Text", this.sut.getTestLabelText(), "Expected that label Test has text <" + "My Expectation Text" + ">, but was <" + this.sut.getTestLabelText() + ">");

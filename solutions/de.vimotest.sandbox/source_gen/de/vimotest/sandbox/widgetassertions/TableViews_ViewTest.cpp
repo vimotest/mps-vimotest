@@ -16,7 +16,9 @@ namespace widgetassertions
     std::shared_ptr<TableViews_ViewModel> sut;
     std::shared_ptr<TableViews_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // Given Helper Definitions
     virtual void given_empty_context();
+    // Then Helper Definitions
     virtual void then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible();
     virtual void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1();
     virtual void then_MyElements_has_2_rows();
@@ -28,6 +30,10 @@ namespace widgetassertions
     this->testEnvironment = std::make_shared<TableViews_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: My Scenario
+  ///   given: empty context
+  ///    when:
+  ///    then: MyElements has 2 rows and selected row index 1 and is visible and is enabled and Description is not visible and MyStringRowHandles has 2 rows and selected row handle ROW1
   TEST_F(TableViews_ViewTest, My_Scenario_given_empty_context_when_then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1)
   {
     this->given_empty_context();
@@ -35,6 +41,10 @@ namespace widgetassertions
     this->then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible();
     this->then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1();
   }
+  /// Scenario: Table Ignore Columns
+  ///   given: empty context
+  ///    when:
+  ///    then: MyElements has 2 rows
   TEST_F(TableViews_ViewTest, Table_Ignore_Columns_given_empty_context_when_then_MyElements_has_2_rows)
   {
     this->given_empty_context();

@@ -11,7 +11,9 @@ public:
   std::shared_ptr<ParameterObjectCommand_ViewModel> sut;
   std::shared_ptr<ParameterObjectCommand_ViewModelTestEnvironment> testEnvironment;
   virtual void BuildSut();
+  // Given Helper Definitions
   virtual void given_empty_context();
+  // When Helper Definitions
   virtual void when_LoadViewModel();
   virtual void when_uncheck_MyFlag();
 protected:
@@ -24,6 +26,13 @@ void ParameterObjectCommand_ViewTests::SetUp()
   this->testEnvironment->Init();
 }
 
+/// Scenario: MyTest
+
+///   given: empty context
+
+///    when: LoadViewModel and uncheck MyFlag
+
+///    then:
 TEST_F(ParameterObjectCommand_ViewTests, MyTest_given_empty_context_when_LoadViewModel_and_uncheck_MyFlag_then_)
 {
   this->given_empty_context();

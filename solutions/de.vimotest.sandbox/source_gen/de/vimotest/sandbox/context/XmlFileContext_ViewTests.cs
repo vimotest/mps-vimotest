@@ -18,6 +18,13 @@ public class XmlFileContext_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: XmlFile_NoExternalFile
+      given: XmlFile_NoExternalFile
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void XmlFile_NoExternalFile_given_XmlFile_NoExternalFile_when_then_()
     {
@@ -25,6 +32,13 @@ public class XmlFileContext_ViewTests
         this.BuildSut();
     }
 
+    /*
+
+    Scenario: XmlFile_ExternalFile
+      given: XmlFile_ExternalFile
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void XmlFile_ExternalFile_given_XmlFile_ExternalFile_when_then_()
     {
@@ -37,6 +51,7 @@ public class XmlFileContext_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     private string XmlFile_NoExternalFile = @"<MyXML>
   <Inner></Inner>
 </MyXML>";

@@ -18,6 +18,13 @@ public class DataTableContext_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: DataTable Context Custom Setter
+      given: dataTableCustomSetter
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void DataTable_Context_Custom_Setter_given_dataTableCustomSetter_when_then_()
     {
@@ -25,6 +32,13 @@ public class DataTableContext_ViewTests
         this.BuildSut();
     }
 
+    /*
+
+    Scenario: DataTable Context to String
+      given: dataTableToString
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void DataTable_Context_to_String_given_dataTableToString_when_then_()
     {
@@ -32,6 +46,13 @@ public class DataTableContext_ViewTests
         this.BuildSut();
     }
 
+    /*
+
+    Scenario: DataTable Context to JSON
+      given: dataTableToJson
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void DataTable_Context_to_JSON_given_dataTableToJson_when_then_()
     {
@@ -39,6 +60,13 @@ public class DataTableContext_ViewTests
         this.BuildSut();
     }
 
+    /*
+
+    Scenario: DataTable Context to XML
+      given: dataTableToXml
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void DataTable_Context_to_XML_given_dataTableToXml_when_then_()
     {
@@ -51,6 +79,7 @@ public class DataTableContext_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     private string dataTableCustomSetter = @"| id | name |
 | 0 | A |";
 

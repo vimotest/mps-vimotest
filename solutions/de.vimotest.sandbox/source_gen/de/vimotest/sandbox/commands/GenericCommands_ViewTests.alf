@@ -36,8 +36,6 @@ class GenericCommands_ViewTests {
   }
   
   
-  // Given Helper Definitions
-
   
   // When Helper Definitions
 
@@ -47,6 +45,4 @@ class GenericCommands_ViewTests {
 
   }
   
-  // Then Helper Definitions
-
 }

@@ -18,6 +18,13 @@ public class DataPathContext_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: Data Path Context
+      given: my element
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Data_Path_Context_given_my_element_when_then_()
     {
@@ -25,6 +32,13 @@ public class DataPathContext_ViewTests
         this.BuildSut();
     }
 
+    /*
+
+    Scenario: Data Path Context (implicit name)
+      given: path_resource_elements_myelement
+       when:
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Data_Path_Context_implicit_name_given_path_resource_elements_myelement_when_then_()
     {
@@ -37,6 +51,7 @@ public class DataPathContext_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // Given Helper Definitions
     public virtual void given_my_element()
     {
         this.testEnvironment.SetDataPathContext("resource:/elements/myelement");

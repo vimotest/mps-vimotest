@@ -36,15 +36,12 @@ public class XmlElementContext_ViewTests_Test {
   }
 
 
-
   public void given_myxml() {
     this.testEnvironment.SetXmlElementContext(this.myxml);
   }
   public void given_MyXML_Inner() {
     this.testEnvironment.SetXmlElementContext(this.MyXML_Inner);
   }
-
-
 
 
 }

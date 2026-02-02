@@ -14,7 +14,9 @@ namespace widgetassertions
     std::shared_ptr<TextBoxes_ViewModel> sut;
     std::shared_ptr<TextBoxes_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // Given Helper Definitions
     virtual void given_empty_context();
+    // Then Helper Definitions
     virtual void then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible();
     virtual void then_MyValue_shows_text_Some_entered_Input_and_is_not_enabled_and_is_visible();
     virtual void then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_not_visible();
@@ -27,24 +29,40 @@ namespace widgetassertions
     this->testEnvironment = std::make_shared<TextBoxes_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: SingleLine TextBox
+  ///   given: empty context
+  ///    when:
+  ///    then: MyValue shows text 'Some entered Input' and is enabled and is visible
   TEST_F(TextBoxes_ViewTest, SingleLine_TextBox_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible)
   {
     this->given_empty_context();
     this->BuildSut();
     this->then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_visible();
   }
+  /// Scenario: SingleLine TextBox (disabled)
+  ///   given: empty context
+  ///    when:
+  ///    then: MyValue shows text 'Some entered Input' and is not enabled and is visible
   TEST_F(TextBoxes_ViewTest, SingleLine_TextBox_disabled_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_not_enabled_and_is_visible)
   {
     this->given_empty_context();
     this->BuildSut();
     this->then_MyValue_shows_text_Some_entered_Input_and_is_not_enabled_and_is_visible();
   }
+  /// Scenario: SingleLine TextBox (invisible)
+  ///   given: empty context
+  ///    when:
+  ///    then: MyValue shows text 'Some entered Input' and is enabled and is not visible
   TEST_F(TextBoxes_ViewTest, SingleLine_TextBox_invisible_given_empty_context_when_then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_not_visible)
   {
     this->given_empty_context();
     this->BuildSut();
     this->then_MyValue_shows_text_Some_entered_Input_and_is_enabled_and_is_not_visible();
   }
+  /// Scenario: MultiLine TextBox
+  ///   given: empty context
+  ///    when:
+  ///    then: MultiLineTextBoxValue shows text 'Expected1|Expected2'
   TEST_F(TextBoxes_ViewTest, MultiLine_TextBox_given_empty_context_when_then_MultiLineTextBoxValue_shows_text_Expected1_Expected2_)
   {
     this->given_empty_context();

@@ -20,6 +20,13 @@ public class SelectRowCommand_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: Select Row ListView Call
+      given:
+       when: select row 1 in MyListViewElements
+       then: MyListViewElements has 2 rows
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Select_Row_ListView_Call_given_when_select_row_1_in_MyListViewElements_then_MyListViewElements_has_2_rows()
     {
@@ -28,6 +35,13 @@ public class SelectRowCommand_ViewTests
         this.then_MyListViewElements_has_2_rows();
     }
 
+    /*
+
+    Scenario: Select Row ListView Call (string row handle)
+      given:
+       when: select row ROW_B in MyStringRowHandleListViewElements
+       then: MyStringRowHandleListViewElements has 2 rows
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Select_Row_ListView_Call_string_row_handle_given_when_select_row_ROW_B_in_MyStringRowHandleListViewElements_then_MyStringRowHandleListViewElements_has_2_rows()
     {
@@ -36,6 +50,13 @@ public class SelectRowCommand_ViewTests
         this.then_MyStringRowHandleListViewElements_has_2_rows();
     }
 
+    /*
+
+    Scenario: Select Row TableView Call
+      given:
+       when: select row 1 in MyTableViewElements
+       then: MyTableViewElements has 2 rows
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Select_Row_TableView_Call_given_when_select_row_1_in_MyTableViewElements_then_MyTableViewElements_has_2_rows()
     {
@@ -44,6 +65,13 @@ public class SelectRowCommand_ViewTests
         this.then_MyTableViewElements_has_2_rows();
     }
 
+    /*
+
+    Scenario: Select Row TableView Call (string row handle)
+      given:
+       when: select row ROW_B in MyStringRowHandleTableViewElements
+       then: MyStringRowHandleTableViewElements has 2 rows
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Select_Row_TableView_Call_string_row_handle_given_when_select_row_ROW_B_in_MyStringRowHandleTableViewElements_then_MyStringRowHandleTableViewElements_has_2_rows()
     {
@@ -52,6 +80,13 @@ public class SelectRowCommand_ViewTests
         this.then_MyStringRowHandleTableViewElements_has_2_rows();
     }
 
+    /*
+
+    Scenario: Select Row TreeView Call
+      given:
+       when: select row 1 in MyTreeViewElements
+       then: MyTreeViewElements has 2 rows
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Select_Row_TreeView_Call_given_when_select_row_1_in_MyTreeViewElements_then_MyTreeViewElements_has_2_rows()
     {
@@ -60,6 +95,13 @@ public class SelectRowCommand_ViewTests
         this.then_MyTreeViewElements_has_2_rows();
     }
 
+    /*
+
+    Scenario: Select Row TreeView Call (string row handle)
+      given:
+       when: select row ROW_B in MyStringRowHandleTreeViewElements
+       then: MyStringRowHandleTreeViewElements has 2 rows
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Select_Row_TreeView_Call_string_row_handle_given_when_select_row_ROW_B_in_MyStringRowHandleTreeViewElements_then_MyStringRowHandleTreeViewElements_has_2_rows()
     {
@@ -68,6 +110,13 @@ public class SelectRowCommand_ViewTests
         this.then_MyStringRowHandleTreeViewElements_has_2_rows();
     }
 
+    /*
+
+    Scenario: Select Multiple Rows
+      given:
+       when: select rows ROW_A,ROW_C in MyStringHandleMultiSelectRowListViewElements
+       then: MyStringHandleMultiSelectRowListViewElements has 3 rows
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Select_Multiple_Rows_given_when_select_rows_ROW_A_ROW_C_in_MyStringHandleMultiSelectRowListViewElements_then_MyStringHandleMultiSelectRowListViewElements_has_3_rows()
     {
@@ -81,6 +130,7 @@ public class SelectRowCommand_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // When Helper Definitions
     public virtual void when_select_row_1_in_MyListViewElements()
     {
         this.sut.myListViewElementsListRowSelected(1);
@@ -116,6 +166,7 @@ public class SelectRowCommand_ViewTests
         this.sut.myStringHandleMultiSelectRowListViewElementsListRowSelected(new System.Collections.Generic.List<string> { "ROW_A", "ROW_C" });
     }
 
+    // Then Helper Definitions
     public virtual void then_MyListViewElements_has_2_rows()
     {
         var actualRows = this.sut.getMyListViewElementsListRows();

@@ -18,6 +18,13 @@ public class ViewDependencyViewModelTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: View Dependency
+      given:
+       when: Foo
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void View_Dependency_given_when_Foo_then_()
     {
@@ -30,6 +37,7 @@ public class ViewDependencyViewModelTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // When Helper Definitions
     public virtual void when_Foo()
     {
         this.testEnvironment.getViewDependencyView().Foo();

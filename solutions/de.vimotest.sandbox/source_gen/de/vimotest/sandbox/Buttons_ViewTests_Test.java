@@ -43,11 +43,8 @@ public class Buttons_ViewTests_Test {
   }
 
 
-
   public void given_empty_context() {
   }
-
-
 
 
   public void then_Ok_is_enabled_and_is_visible_and_shows_text_Test_() {

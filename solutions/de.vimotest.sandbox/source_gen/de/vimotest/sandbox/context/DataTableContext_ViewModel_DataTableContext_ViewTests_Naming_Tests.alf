@@ -103,9 +103,5 @@ class DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests {
 
   }
   
-  // When Helper Definitions
-
   
-  // Then Helper Definitions
-
 }

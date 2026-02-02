@@ -12,6 +12,7 @@ namespace commands
     std::shared_ptr<ClickCommand_ViewModel> sut;
     std::shared_ptr<ClickCommand_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // When Helper Definitions
     virtual void when_click_Ok();
   protected:
     void SetUp() override;
@@ -21,6 +22,10 @@ namespace commands
     this->testEnvironment = std::make_shared<ClickCommand_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: Click Button
+  ///   given:
+  ///    when: click Ok
+  ///    then:
   TEST_F(ClickCommand_ViewTests, Click_Button_given_when_click_Ok_then_)
   {
     this->BuildSut();

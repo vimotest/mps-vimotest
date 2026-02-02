@@ -18,6 +18,13 @@ public class LoadCommand_ViewTests
         this.testEnvironment.Init();
     }
 
+    /*
+
+    Scenario: Load Commands Call
+      given:
+       when: LoadViewModel
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Load_Commands_Call_given_when_LoadViewModel_then_()
     {
@@ -25,6 +32,13 @@ public class LoadCommand_ViewTests
         this.when_LoadViewModel();
     }
 
+    /*
+
+    Scenario: Load with Parameter Commands Call
+      given:
+       when: LoadViewWithName
+       then:
+   */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
     public void Load_with_Parameter_Commands_Call_given_when_LoadViewWithName_then_()
     {
@@ -37,6 +51,7 @@ public class LoadCommand_ViewTests
         this.sut = this.testEnvironment.BuildSut();
     }
 
+    // When Helper Definitions
     public virtual void when_LoadViewModel()
     {
         this.sut.loadViewModel();

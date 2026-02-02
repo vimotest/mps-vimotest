@@ -14,7 +14,9 @@ namespace widgetassertions
     std::shared_ptr<CheckBoxes_ViewModel> sut;
     std::shared_ptr<CheckBoxes_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // Given Helper Definitions
     virtual void given_empty_context();
+    // Then Helper Definitions
     virtual void then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_();
     virtual void then_MyFlagNoLabel_is_not_checked();
     virtual void then_MyFlagTriState_is_mixed();
@@ -30,6 +32,10 @@ namespace widgetassertions
     this->testEnvironment = std::make_shared<CheckBoxes_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: My Scenario
+  ///   given: empty context
+  ///    when:
+  ///    then: MyFlagWithLabel is checked and is enabled and is visible and shows text 'My Label' and MyFlagNoLabel is not checked and MyFlagTriState is mixed and MyFlagTriState is checked and MyFlagTriState is not checked
   TEST_F(CheckBoxes_ViewTest, My_Scenario_given_empty_context_when_then_MyFlagWithLabel_is_checked_and_is_enabled_and_is_visible_and_shows_text_My_Label_and_MyFlagNoLabel_is_not_checked_and_MyFlagTriState_is_mixed_and_MyFlagTriState_is_checked_and_MyFlagTriState_is_not_checked)
   {
     this->given_empty_context();
@@ -40,11 +46,19 @@ namespace widgetassertions
     this->then_MyFlagTriState_is_checked();
     this->then_MyFlagTriState_is_not_checked();
   }
+  /// Scenario: CheckBox (disabled)
+  ///   given:
+  ///    when:
+  ///    then: MyFlagWithLabel is checked and is not enabled and shows text 'value'
   TEST_F(CheckBoxes_ViewTest, CheckBox_disabled_given_when_then_MyFlagWithLabel_is_checked_and_is_not_enabled_and_shows_text_value_)
   {
     this->BuildSut();
     this->then_MyFlagWithLabel_is_checked_and_is_not_enabled_and_shows_text_value_();
   }
+  /// Scenario: CheckBox (invisible)
+  ///   given:
+  ///    when:
+  ///    then: MyFlagWithLabel is checked and is not visible and shows text 'test'
   TEST_F(CheckBoxes_ViewTest, CheckBox_invisible_given_when_then_MyFlagWithLabel_is_checked_and_is_not_visible_and_shows_text_test_)
   {
     this->BuildSut();

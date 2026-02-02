@@ -78,13 +78,11 @@ public class LoginViewModelTests_Test {
   }
 
 
-
   public void given_empty_context() {
   }
   public void given_prefilledValues() {
     this.testEnvironment.SetXmlElementContext(this.prefilledValues);
   }
-
 
   public void when_LoadViewModel() {
     this.sut.loadViewModel();
@@ -107,7 +105,6 @@ public class LoginViewModelTests_Test {
   public void when_click_Login() {
     this.sut.loginButtonClicked();
   }
-
 
   public void then_Username_shows_text_User_() {
     Assert.assertEquals("Expected that textbox Username has text <" + "User" + ">, but was <" + this.sut.getUsernameTextBoxText() + ">", "User", this.sut.getUsernameTextBoxText());

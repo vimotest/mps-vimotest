@@ -14,6 +14,7 @@ namespace context
     std::shared_ptr<XmlElementContext_ViewModel> sut;
     std::shared_ptr<XmlElementContext_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // Given Helper Definitions
     std::string myxml = R"(<MyXML>
   <Inner></Inner>
 </MyXML>)";
@@ -30,11 +31,19 @@ namespace context
     this->testEnvironment = std::make_shared<XmlElementContext_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: Xml Context
+  ///   given: myxml
+  ///    when:
+  ///    then:
   TEST_F(XmlElementContext_ViewTests, Xml_Context_given_myxml_when_then_)
   {
     this->given_myxml();
     this->BuildSut();
   }
+  /// Scenario: Xml Context (explicit name)
+  ///   given: MyXML_Inner
+  ///    when:
+  ///    then:
   TEST_F(XmlElementContext_ViewTests, Xml_Context_explicit_name_given_MyXML_Inner_when_then_)
   {
     this->given_MyXML_Inner();

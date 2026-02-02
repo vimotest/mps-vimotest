@@ -28,10 +28,8 @@ public class ParameterObjectCommand_ViewTests_Test {
   }
 
 
-
   public void given_empty_context() {
   }
-
 
   public void when_LoadViewModel() {
     ParameterObjectCommand_ViewModel.LoadViewParams loadViewModelParameters = new ParameterObjectCommand_ViewModel.LoadViewParams("A", true, 42);
@@ -41,6 +39,5 @@ public class ParameterObjectCommand_ViewTests_Test {
     ParameterObjectCommand_ViewModel.CheckParams checkedParameters = new ParameterObjectCommand_ViewModel.CheckParams(false);
     this.sut.myFlagCheckBoxChecked(checkedParameters);
   }
-
 
 }

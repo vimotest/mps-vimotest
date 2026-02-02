@@ -65,9 +65,5 @@ class StringContext_ViewTests {
 
   }
   
-  // When Helper Definitions
-
   
-  // Then Helper Definitions
-
 }

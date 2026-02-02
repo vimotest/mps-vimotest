@@ -13,7 +13,9 @@ namespace widgetassertions
     std::shared_ptr<Images_ViewModel> sut;
     std::shared_ptr<Images_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // Given Helper Definitions
     virtual void given_empty_context();
+    // Then Helper Definitions
     virtual void then_Status_shows_image_image_active_();
     virtual void then_UpOrDown_shows_image_image_down_();
   protected:
@@ -24,6 +26,10 @@ namespace widgetassertions
     this->testEnvironment = std::make_shared<Images_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: My Scenario
+  ///   given: empty context
+  ///    when:
+  ///    then: Status shows image 'image_active' and UpOrDown shows image 'image_down'
   TEST_F(Images_ViewTest, My_Scenario_given_empty_context_when_then_Status_shows_image_image_active_and_UpOrDown_shows_image_image_down_)
   {
     this->given_empty_context();

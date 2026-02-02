@@ -14,6 +14,7 @@ namespace datadriven
     std::shared_ptr<DataDrivenViewModel> sut;
     std::shared_ptr<DataDrivenViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // Given Helper Definitions
     std::string Person_name_Name_age_42 = R"(<Person name="Name" age="42"></Person>)";
     virtual void given_Person_name_Name_age_42();
   protected:
@@ -24,6 +25,10 @@ namespace datadriven
     this->testEnvironment = std::make_shared<DataDrivenViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: DataDrivenTable
+  ///   given: Person_name_Name_age_42
+  ///    when:
+  ///    then:
   TEST_F(DataDrivenTests, DataDrivenTable_given_Person_name_Name_age_42_when_then_)
   {
     std::vector<std::string> NameExampleValues = { };

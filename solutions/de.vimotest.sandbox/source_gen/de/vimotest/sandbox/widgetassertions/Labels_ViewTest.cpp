@@ -14,8 +14,10 @@ namespace widgetassertions
     std::shared_ptr<Labels_ViewModel> sut;
     std::shared_ptr<Labels_ViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
+    // Given Helper Definitions
     virtual void given_empty_context();
     virtual void given_empty_context_1();
+    // Then Helper Definitions
     virtual void then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible();
     virtual void then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible();
     virtual void then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible();
@@ -31,42 +33,70 @@ namespace widgetassertions
     this->testEnvironment = std::make_shared<Labels_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
+  /// Scenario: Single Line Label
+  ///   given: empty context
+  ///    when:
+  ///    then: Test shows text 'My Expectation Text' and is enabled and is visible
   TEST_F(Labels_ViewTest, Single_Line_Label_given_empty_context_when_then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible)
   {
     this->given_empty_context();
     this->BuildSut();
     this->then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_visible();
   }
+  /// Scenario: Single Line Label (Disabled)
+  ///   given: empty context
+  ///    when:
+  ///    then: Test shows text 'My Expectation Text' and is not enabled and is visible
   TEST_F(Labels_ViewTest, Single_Line_Label_Disabled_given_empty_context_when_then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible)
   {
     this->given_empty_context();
     this->BuildSut();
     this->then_Test_shows_text_My_Expectation_Text_and_is_not_enabled_and_is_visible();
   }
+  /// Scenario: Single Line Label (Invisible)
+  ///   given: empty context
+  ///    when:
+  ///    then: Test shows text 'My Expectation Text' and is enabled and is not visible
   TEST_F(Labels_ViewTest, Single_Line_Label_Invisible_given_empty_context_when_then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible)
   {
     this->given_empty_context();
     this->BuildSut();
     this->then_Test_shows_text_My_Expectation_Text_and_is_enabled_and_is_not_visible();
   }
+  /// Scenario: Multi Line Label
+  ///   given: empty context
+  ///    when:
+  ///    then: MultiLine shows text 'Expected Line 1|Expected Line 2'
   TEST_F(Labels_ViewTest, Multi_Line_Label_given_empty_context_when_then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_)
   {
     this->given_empty_context();
     this->BuildSut();
     this->then_MultiLine_shows_text_Expected_Line_1_Expected_Line_2_();
   }
+  /// Scenario: ToolTip Label
+  ///   given: empty context
+  ///    when:
+  ///    then: WithToolTip shows text 'Info' and shows tooltip 'My Expected Tooltip'
   TEST_F(Labels_ViewTest, ToolTip_Label_given_empty_context_when_then_WithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_)
   {
     this->given_empty_context_1();
     this->BuildSut();
     this->then_WithToolTip_shows_text_Info_and_shows_tooltip_My_Expected_Tooltip_();
   }
+  /// Scenario: MultiLine ToolTip Label
+  ///   given: empty context
+  ///    when:
+  ///    then: WithMultiLineToolTip shows text 'Info' and shows tooltip 'Line1|Line2'
   TEST_F(Labels_ViewTest, MultiLine_ToolTip_Label_given_empty_context_when_then_WithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_)
   {
     this->given_empty_context_1();
     this->BuildSut();
     this->then_WithMultiLineToolTip_shows_text_Info_and_shows_tooltip_Line1_Line2_();
   }
+  /// Scenario: TextColor Label
+  ///   given:
+  ///    when:
+  ///    then: WithTextColor shows text 'Info' and has text color 'blue'
   TEST_F(Labels_ViewTest, TextColor_Label_given_when_then_WithTextColor_shows_text_Info_and_has_text_color_blue_)
   {
     this->BuildSut();

@@ -4300,6 +4300,45 @@
         <ref role="3uigEE" to="g51k:~EditorCell" resolve="EditorCell" />
       </node>
       <node concept="3clFbS" id="4X0XnVPrLxt" role="3clF47">
+        <node concept="3cpWs8" id="4Bfut2qR$6R" role="3cqZAp">
+          <node concept="3cpWsn" id="4Bfut2qR$6S" role="3cpWs9">
+            <property role="TrG5h" value="targetNode" />
+            <node concept="3Tqbb2" id="4Bfut2qRN1T" role="1tU5fm" />
+            <node concept="1rXfSq" id="4Bfut2qR$6T" role="33vP2m">
+              <ref role="37wK5l" to="g51k:~EditorCell_Basic.getSNode()" resolve="getSNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4Bfut2qSzBJ" role="3cqZAp">
+          <node concept="3clFbS" id="4Bfut2qSzBL" role="3clFbx">
+            <node concept="3clFbF" id="4Bfut2qSVyo" role="3cqZAp">
+              <node concept="37vLTI" id="4Bfut2qT2Lf" role="3clFbG">
+                <node concept="37vLTw" id="4Bfut2qSVym" role="37vLTJ">
+                  <ref role="3cqZAo" node="4Bfut2qR$6S" resolve="targetNode" />
+                </node>
+                <node concept="2OqwBi" id="4Bfut2qSfcI" role="37vLTx">
+                  <node concept="37vLTw" id="4Bfut2qSchS" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7oCDJDn_QjY" resolve="myModel" />
+                  </node>
+                  <node concept="liA8E" id="4Bfut2qSiCc" role="2OqNvi">
+                    <ref role="37wK5l" node="6fEYrkYX$z4" resolve="getRowCellNodeOwner" />
+                    <node concept="37vLTw" id="4Bfut2qVTXD" role="37wK5m">
+                      <ref role="3cqZAo" node="4X0XnVPrLzG" resolve="rowNumber" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3eOSWO" id="4Bfut2qSO1Q" role="3clFbw">
+            <node concept="3cmrfG" id="4Bfut2qSRyU" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+            <node concept="37vLTw" id="4Bfut2qSERC" role="3uHU7B">
+              <ref role="3cqZAo" node="4X0XnVPrLzG" resolve="rowNumber" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="4X0XnVPrLxx" role="3cqZAp">
           <node concept="3cpWsn" id="4X0XnVPrLxy" role="3cpWs9">
             <property role="TrG5h" value="emptyCell" />
@@ -4312,8 +4351,8 @@
                 <node concept="1rXfSq" id="4hiugqyyKJX" role="37wK5m">
                   <ref role="37wK5l" to="g51k:~EditorCell_Basic.getContext()" resolve="getContext" />
                 </node>
-                <node concept="1rXfSq" id="4hiugqyySTN" role="37wK5m">
-                  <ref role="37wK5l" to="g51k:~EditorCell_Basic.getSNode()" resolve="getSNode" />
+                <node concept="37vLTw" id="4Bfut2qR$6U" role="37wK5m">
+                  <ref role="3cqZAo" node="4Bfut2qR$6S" resolve="targetNode" />
                 </node>
               </node>
             </node>
@@ -4330,8 +4369,8 @@
               <node concept="2ShNRf" id="3BgDQ5UGD50" role="37wK5m">
                 <node concept="1pGfFk" id="3BgDQ5UGW1W" role="2ShVmc">
                   <ref role="37wK5l" to="q4oi:~CellAction_DeleteNode.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode$DeleteDirection)" resolve="CellAction_DeleteNode" />
-                  <node concept="1rXfSq" id="3BgDQ5UH0F2" role="37wK5m">
-                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getSNode()" resolve="getSNode" />
+                  <node concept="37vLTw" id="4Bfut2qR$6V" role="37wK5m">
+                    <ref role="3cqZAo" node="4Bfut2qR$6S" resolve="targetNode" />
                   </node>
                   <node concept="Rm8GO" id="1VSb7QEZ2Tf" role="37wK5m">
                     <ref role="Rm8GQ" to="q4oi:~CellAction_DeleteNode$DeleteDirection.FORWARD" resolve="FORWARD" />
@@ -4356,8 +4395,8 @@
               <node concept="2ShNRf" id="FYOSwhQcM4" role="37wK5m">
                 <node concept="1pGfFk" id="FYOSwhQcM5" role="2ShVmc">
                   <ref role="37wK5l" to="q4oi:~CellAction_DeleteNode.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode$DeleteDirection)" resolve="CellAction_DeleteNode" />
-                  <node concept="1rXfSq" id="FYOSwhQcM6" role="37wK5m">
-                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getSNode()" resolve="getSNode" />
+                  <node concept="37vLTw" id="4Bfut2qR$6W" role="37wK5m">
+                    <ref role="3cqZAo" node="4Bfut2qR$6S" resolve="targetNode" />
                   </node>
                   <node concept="Rm8GO" id="1VSb7QEZ3aB" role="37wK5m">
                     <ref role="Rm8GQ" to="q4oi:~CellAction_DeleteNode$DeleteDirection.BACKWARD" resolve="BACKWARD" />
@@ -4514,7 +4553,7 @@
             </node>
           </node>
           <node concept="37vLTw" id="2BHiRxgm80M" role="3clFbw">
-            <ref role="3cqZAo" node="7X6Fu5g4DVN" resolve="beggining" />
+            <ref role="3cqZAo" node="7X6Fu5g4DVN" resolve="beginning" />
           </node>
         </node>
         <node concept="3clFbF" id="2aJi2xfh1bp" role="3cqZAp">
@@ -4548,7 +4587,7 @@
                 <node concept="1eOMI4" id="7X6Fu5g4DVW" role="3uHU7w">
                   <node concept="3K4zz7" id="7X6Fu5g4DVZ" role="1eOMHV">
                     <node concept="37vLTw" id="2BHiRxgm8KB" role="3K4Cdx">
-                      <ref role="3cqZAo" node="7X6Fu5g4DVN" resolve="beggining" />
+                      <ref role="3cqZAo" node="7X6Fu5g4DVN" resolve="beginning" />
                     </node>
                     <node concept="Xl_RD" id="7X6Fu5g4DW4" role="3K4GZi">
                       <property role="Xl_RC" value="_lastCell" />
@@ -4578,7 +4617,7 @@
         <node concept="17QB3L" id="4X0XnVPrLxX" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="7X6Fu5g4DVN" role="3clF46">
-        <property role="TrG5h" value="beggining" />
+        <property role="TrG5h" value="beginning" />
         <property role="3TUv4t" value="false" />
         <node concept="10P_77" id="7X6Fu5g4DVP" role="1tU5fm" />
       </node>

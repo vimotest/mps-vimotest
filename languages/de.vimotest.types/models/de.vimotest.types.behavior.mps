@@ -205,6 +205,28 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="4p8dieZeYFQ" role="13h7CS">
+      <property role="TrG5h" value="isStringField" />
+      <node concept="3Tm1VV" id="4p8dieZeYFR" role="1B3o_S" />
+      <node concept="10P_77" id="4p8dieZeYFS" role="3clF45" />
+      <node concept="3clFbS" id="4p8dieZeYFT" role="3clF47">
+        <node concept="3clFbF" id="4p8dieZeYFU" role="3cqZAp">
+          <node concept="2OqwBi" id="4p8dieZeYFV" role="3clFbG">
+            <node concept="2OqwBi" id="4p8dieZeYFW" role="2Oq$k0">
+              <node concept="13iPFW" id="4p8dieZeYFX" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4p8dieZeYFY" role="2OqNvi">
+                <ref role="3Tt5mk" to="28lk:1KdBIfXLcw_" resolve="typeName" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="4p8dieZeYFZ" role="2OqNvi">
+              <node concept="chp4Y" id="4p8dieZeYG0" role="cj9EA">
+                <ref role="cht4Q" to="evry:6LujpsVKsRl" resolve="StringType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="4ncpC4iJ0jQ" role="13h7CS">
       <property role="TrG5h" value="isListField" />
       <node concept="3Tm1VV" id="4ncpC4iJ0jR" role="1B3o_S" />

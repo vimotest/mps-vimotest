@@ -93,6 +93,7 @@ public class LowLevelFields_ViewTests_Test {
     List<MyAdditions> actualList_2 = row0.getAdditionalCustomElements();
     MyAdditions actualListItem_0 = actualList_2.get(1 - 1);
     Assert.assertFalse("Expected field 'MyFlag' has boolean value <false>, but it was <" + ((actualListItem_0.MyFlag ? "true" : "false")) + ">", actualListItem_0.MyFlag);
+    Assert.assertEquals("Expected field 'MyName' has value <" + "Foo" + ">, but it was <" + actualListItem_0.MyName + ">", "Foo", actualListItem_0.MyName);
     // }
   }
   public void then_CustomListRowField_has_1_rows() {

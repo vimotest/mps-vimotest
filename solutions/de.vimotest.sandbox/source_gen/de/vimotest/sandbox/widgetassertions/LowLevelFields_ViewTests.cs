@@ -135,6 +135,7 @@ public class LowLevelFields_ViewTests
             var actualList_2 = row0.getAdditionalCustomElements();
             var actualListItem_0 = actualList_2[0];
             Assert.IsFalse(actualListItem_0.MyFlag, "Expected field 'MyFlag' has boolean value <false>, but it was <" + (actualListItem_0.MyFlag ? "true" : "false") + ">");
+            Assert.AreEqual("Foo", actualListItem_0.MyName, "Expected field 'MyName' has value <" + "Foo" + ">, but it was <" + actualListItem_0.MyName + ">");
         }
     }
 

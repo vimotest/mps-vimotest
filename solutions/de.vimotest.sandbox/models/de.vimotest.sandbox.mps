@@ -41,7 +41,9 @@
         <reference id="6810659576799622123" name="typeRef" index="2BLa4B" />
       </concept>
       <concept id="6810659576799621540" name="de.vimotest.types.structure.RecordTypeUsage" flags="ng" index="2BLadC" />
-      <concept id="6810659576799621538" name="de.vimotest.types.structure.RecordType" flags="ng" index="2BLadI" />
+      <concept id="6810659576799621538" name="de.vimotest.types.structure.RecordType" flags="ng" index="2BLadI">
+        <reference id="5064356208620739379" name="toStringField" index="3SEySg" />
+      </concept>
       <concept id="4370345911585163139" name="de.vimotest.types.structure.CustomTypeNameBinding" flags="ng" index="2DeX7K">
         <property id="4370345911585163142" name="customName" index="2DeX7P" />
       </concept>
@@ -5361,6 +5363,12 @@
           <property role="TrG5h" value="AdditionalBool" />
           <node concept="1nBHEw" id="5C8UTa3U3Gq" role="3xMlr6" />
         </node>
+        <node concept="1nWCU9" id="4p8dif0qp02" role="3pPB2g">
+          <property role="TrG5h" value="AdditionalElement" />
+          <node concept="2BLadC" id="4p8dif0qp09" role="3xMlr6">
+            <ref role="2BLa4B" node="5U4kGNTnh1B" resolve="MyAdditions" />
+          </node>
+        </node>
         <node concept="1nWCU9" id="5U4kGNTgf5h" role="3pPB2g">
           <property role="TrG5h" value="AdditionalCustomElements" />
           <node concept="1WnWvM" id="5U4kGNTgf5o" role="3xMlr6">
@@ -5613,6 +5621,32 @@
                             <ref role="QdLUf" node="5U4kGNTFVf1" resolve="MyFlag" />
                             <node concept="QdLU0" id="4mGsJwaUklA" role="QdLUe">
                               <node concept="_jtWu" id="4mGsJwaUklB" role="QdLU1" />
+                            </node>
+                          </node>
+                          <node concept="QdLUi" id="4p8dieZNfQh" role="QdLU4">
+                            <ref role="QdLUf" node="5U4kGNTFVgo" resolve="MyName" />
+                            <node concept="QdLU0" id="4p8dieZNfQi" role="QdLUe">
+                              <node concept="_iklQ" id="4p8dieZNfQj" role="QdLU1">
+                                <property role="_iklR" value="Foo" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="QdLUg" id="4p8dif0Oxmy" role="QdLU7">
+                          <node concept="QdLUi" id="4p8dif0Oxmz" role="QdLU4">
+                            <ref role="QdLUf" node="5U4kGNTFVf1" resolve="MyFlag" />
+                            <node concept="QdLU0" id="4p8dif0Oxm$" role="QdLUe">
+                              <node concept="_jtWu" id="4p8dif0Oxm_" role="QdLU1">
+                                <property role="_jtWv" value="true" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="QdLUi" id="4p8dif0OxmA" role="QdLU4">
+                            <ref role="QdLUf" node="5U4kGNTFVgo" resolve="MyName" />
+                            <node concept="QdLU0" id="4p8dif0OxmB" role="QdLUe">
+                              <node concept="_iklQ" id="4p8dif0OxmC" role="QdLU1">
+                                <property role="_iklR" value="Bar" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -6462,6 +6496,7 @@
   <node concept="2BLadI" id="5U4kGNTnh1B">
     <property role="3GE5qa" value="widgetassertions" />
     <property role="TrG5h" value="MyAdditions" />
+    <ref role="3SEySg" node="5U4kGNTFVgo" resolve="MyName" />
     <node concept="1nWCU9" id="5U4kGNTFVf1" role="103ZUC">
       <property role="TrG5h" value="MyFlag" />
       <node concept="1nBHEw" id="5U4kGNTFVfi" role="3xMlr6" />

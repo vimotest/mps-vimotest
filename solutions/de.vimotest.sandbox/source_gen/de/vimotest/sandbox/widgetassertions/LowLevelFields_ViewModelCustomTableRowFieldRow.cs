@@ -1,8 +1,8 @@
 /// <filename>
 ///     LowLevelFields_ViewModelCustomTableRowFieldRow.cs
 /// </filename>
-using System.Collections.Generic;
 using widgetassertions;
+using System.Collections.Generic;
 
 namespace widgetassertions
 {
@@ -20,6 +20,13 @@ namespace widgetassertions
         public virtual bool getAdditionalBool()
         {
             return this.AdditionalBool;
+        }
+
+        private widgetassertions.MyAdditions AdditionalElement;
+
+        public virtual widgetassertions.MyAdditions getAdditionalElement()
+        {
+            return this.AdditionalElement;
         }
 
         private System.Collections.Generic.List<widgetassertions.MyAdditions> AdditionalCustomElements = new System.Collections.Generic.List<widgetassertions.MyAdditions>();

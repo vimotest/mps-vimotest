@@ -122,6 +122,7 @@ namespace widgetassertions
     auto actualList_2 = row0->getAdditionalCustomElements();
     auto actualListItem_0 = actualList_2.at(0);
     EXPECT_FALSE(actualListItem_0.MyFlag) << std::string("Expected field 'MyFlag' has boolean value <false>, but it was <") + (actualListItem_0.MyFlag ? std::string("true") : std::string("false")) + std::string(">");
+    EXPECT_EQ(std::string("Foo"), actualListItem_0.MyName) << std::string("Expected field 'MyName' has value <") + std::string("Foo") + std::string(">, but it was <") + actualListItem_0.MyName + std::string(">");
     // }
   }
   void LowLevelFields_ViewTests::then_CustomListRowField_has_1_rows()

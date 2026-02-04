@@ -152,6 +152,8 @@ class LowLevelFields_ViewTests {
 
       AssertFalseWithMessage ( actualListItem_0.MyFlag, "Expected field 'MyFlag' has boolean value <false>, but it was <" + ( actualListItem_0.MyFlag ? "true" : "false" ) + ">" );
 
+      AssertEqualWithMessage ( "Foo", actualListItem_0.MyName, "Expected field 'MyName' has value <" + "Foo" + ">, but it was <" + actualListItem_0.MyName + ">" );
+
     }
 
   }

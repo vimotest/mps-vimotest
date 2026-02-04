@@ -18710,6 +18710,64 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3cpWs8" id="5MYP8lUg76d" role="3cqZAp">
+                  <node concept="3cpWsn" id="5MYP8lUg76e" role="3cpWs9">
+                    <property role="TrG5h" value="fieldAssertion" />
+                    <node concept="3Tqbb2" id="5MYP8lUg6YM" role="1tU5fm">
+                      <ref role="ehGHo" to="53m0:2GcDibl8goZ" resolve="ViewModelFieldAssertion" />
+                    </node>
+                    <node concept="2OqwBi" id="5MYP8lUg76f" role="33vP2m">
+                      <node concept="30H73N" id="5MYP8lUg76g" role="2Oq$k0" />
+                      <node concept="2Xjw5R" id="5MYP8lUg76h" role="2OqNvi">
+                        <node concept="1xMEDy" id="5MYP8lUg76i" role="1xVPHs">
+                          <node concept="chp4Y" id="5MYP8lUg76j" role="ri$Ld">
+                            <ref role="cht4Q" to="53m0:2GcDibl8goZ" resolve="ViewModelFieldAssertion" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="5MYP8lUghLj" role="3cqZAp">
+                  <node concept="3cpWsn" id="5MYP8lUghLm" role="3cpWs9">
+                    <property role="TrG5h" value="contextNode" />
+                    <node concept="3Tqbb2" id="5MYP8lUghLh" role="1tU5fm" />
+                    <node concept="37vLTw" id="5MYP8lUgi5a" role="33vP2m">
+                      <ref role="3cqZAo" node="5MYP8lUg76e" resolve="fieldAssertion" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="5MYP8lUg7fF" role="3cqZAp">
+                  <node concept="3clFbS" id="5MYP8lUg7fH" role="3clFbx">
+                    <node concept="3clFbF" id="5MYP8lUg9CS" role="3cqZAp">
+                      <node concept="37vLTI" id="5MYP8lUg9Op" role="3clFbG">
+                        <node concept="2OqwBi" id="5MYP8lUgimv" role="37vLTx">
+                          <node concept="37vLTw" id="5MYP8lUgi9B" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5MYP8lUg76e" resolve="fieldAssertion" />
+                          </node>
+                          <node concept="2Xjw5R" id="5MYP8lUgizN" role="2OqNvi">
+                            <node concept="1xMEDy" id="5MYP8lUgizP" role="1xVPHs">
+                              <node concept="chp4Y" id="5MYP8lUgiAt" role="ri$Ld">
+                                <ref role="cht4Q" to="53m0:5VrLp2zs35u" resolve="IWidgetCheckValue" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="5MYP8lUg9CQ" role="37vLTJ">
+                          <ref role="3cqZAo" node="5MYP8lUghLm" resolve="contextNode" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="5MYP8lUg7zT" role="3clFbw">
+                    <node concept="37vLTw" id="5MYP8lUg7hZ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5MYP8lUg76e" resolve="fieldAssertion" />
+                    </node>
+                    <node concept="2qgKlT" id="5MYP8lUg9x_" role="2OqNvi">
+                      <ref role="37wK5l" to="fwln:4cF8FMAV5nU" resolve="isRowBased" />
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="6SUC7z_Fldv" role="3cqZAp">
                   <node concept="2YIFZM" id="4nl3uN3gl0I" role="3clFbG">
                     <ref role="37wK5l" to="zcip:4nl3uN3gfun" resolve="toNameWithSequenceNumberInclude0" />
@@ -18717,15 +18775,8 @@
                     <node concept="37vLTw" id="4nl3uN3gl0J" role="37wK5m">
                       <ref role="3cqZAo" node="6SUC7z_Fldo" resolve="baseName" />
                     </node>
-                    <node concept="2OqwBi" id="4nl3uN3gl0K" role="37wK5m">
-                      <node concept="30H73N" id="4nl3uN3gl0L" role="2Oq$k0" />
-                      <node concept="2Xjw5R" id="4nl3uN3gl0M" role="2OqNvi">
-                        <node concept="1xMEDy" id="4nl3uN3gl0N" role="1xVPHs">
-                          <node concept="chp4Y" id="4nl3uN3gl0O" role="ri$Ld">
-                            <ref role="cht4Q" to="53m0:2GcDibl8goZ" resolve="ViewModelFieldAssertion" />
-                          </node>
-                        </node>
-                      </node>
+                    <node concept="37vLTw" id="5MYP8lUg76k" role="37wK5m">
+                      <ref role="3cqZAo" node="5MYP8lUghLm" resolve="contextNode" />
                     </node>
                     <node concept="1iwH7S" id="4nl3uN3gl0P" role="37wK5m" />
                   </node>

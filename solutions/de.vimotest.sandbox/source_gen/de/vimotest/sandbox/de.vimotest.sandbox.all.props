@@ -18,6 +18,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/LowLevelFields_ViewModelCustomListRowFieldRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/TableViews_ViewModelMyElementsRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/TableViews_ViewModelMyStringRowHandlesRow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/TableViews_ViewModelFirstColumnRowHandleRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)commands/SelectRowCommand_ViewModelMyTableViewElementsRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)commands/SelectRowCommand_ViewModelMyStringRowHandleTableViewElementsRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)commands/RowBasedCommand_ViewModelMyComboBoxesRow.cs" />

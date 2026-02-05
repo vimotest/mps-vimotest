@@ -56,5 +56,19 @@ namespace widgetassertions
         {
             return this.MyStringRowHandlesTableSelectedRow;
         }
+
+        private System.Collections.Generic.List<widgetassertions.TableViews_ViewModelFirstColumnRowHandleRow> FirstColumnRowHandleTableRows = new System.Collections.Generic.List<widgetassertions.TableViews_ViewModelFirstColumnRowHandleRow>();
+
+        public virtual System.Collections.Generic.List<widgetassertions.TableViews_ViewModelFirstColumnRowHandleRow> getFirstColumnRowHandleTableRows()
+        {
+            return this.FirstColumnRowHandleTableRows;
+        }
+
+        private string FirstColumnRowHandleTableSelectedRow;
+
+        public virtual string getFirstColumnRowHandleTableSelectedRow()
+        {
+            return this.FirstColumnRowHandleTableSelectedRow;
+        }
     }
 }

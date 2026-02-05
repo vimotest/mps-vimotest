@@ -136,6 +136,9 @@ public class LowLevelFields_ViewTests
             var actualListItem_0 = actualList_2[0];
             Assert.IsFalse(actualListItem_0.MyFlag, "Expected field 'MyFlag' has boolean value <false>, but it was <" + (actualListItem_0.MyFlag ? "true" : "false") + ">");
             Assert.AreEqual("Foo", actualListItem_0.MyName, "Expected field 'MyName' has value <" + "Foo" + ">, but it was <" + actualListItem_0.MyName + ">");
+            var actualListItem_1 = actualList_2[1];
+            Assert.IsTrue(actualListItem_1.MyFlag, "Expected field 'MyFlag' has boolean value <true>, but it was <" + (actualListItem_1.MyFlag ? "true" : "false") + ">");
+            Assert.AreEqual("Bar", actualListItem_1.MyName, "Expected field 'MyName' has value <" + "Bar" + ">, but it was <" + actualListItem_1.MyName + ">");
         }
     }
 

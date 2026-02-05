@@ -11,6 +11,7 @@ import java.util.List;
 import de.vimotest.sandbox.widgetassertions.TableViews_ViewModelMyElementsRow;
 import org.junit.Assert;
 import de.vimotest.sandbox.widgetassertions.TableViews_ViewModelMyStringRowHandlesRow;
+import de.vimotest.sandbox.widgetassertions.TableViews_ViewModelFirstColumnRowHandleRow;
 
 public class TableViews_ViewTest_Test {
   private TableViews_ViewModel sut;
@@ -27,6 +28,11 @@ public class TableViews_ViewTest_Test {
     this.given_empty_context();
     this.BuildSut();
     this.then_MyElements_has_2_rows();
+  }
+  @Test
+  public void test_FirstLabelColumn_row_handle_given_when_then_FirstColumnRowHandle_has_2_rows_and_selected_row_handle_MyRow1() throws Exception {
+    this.BuildSut();
+    this.then_FirstColumnRowHandle_has_2_rows_and_selected_row_handle_MyRow1();
   }
   @BeforeEach
   public void setUp() {
@@ -97,5 +103,18 @@ public class TableViews_ViewTest_Test {
     Assert.assertEquals("Expected that table view MyElements row at index 1 has rowhandle <1>, but was <" + Integer.toString(row1.getRowIndex()) + ">", Integer.valueOf(row1.getRowIndex()), row1.getRowIndex());
     Assert.assertEquals("Expected that image InfoIcon has " + "image <image_star>" + ", but was <" + row1.getInfoIconImageName() + ">", "image_star", row1.getInfoIconImageName());
     // }
+  }
+  public void then_FirstColumnRowHandle_has_2_rows_and_selected_row_handle_MyRow1() {
+    List<TableViews_ViewModelFirstColumnRowHandleRow> actualRows = this.sut.getFirstColumnRowHandleTableRows();
+    Assert.assertEquals("Expected that table view FirstColumnRowHandle has 2 rows, but has " + Integer.toString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    // {
+    TableViews_ViewModelFirstColumnRowHandleRow row0 = actualRows.get(1 - 1);
+    Assert.assertEquals("Expected that label Name has text <" + "MyRow0" + ">, but was <" + row0.getNameLabelText() + ">", "MyRow0", row0.getNameLabelText());
+    // }
+    // {
+    TableViews_ViewModelFirstColumnRowHandleRow row1 = actualRows.get(2 - 1);
+    Assert.assertEquals("Expected that label Name has text <" + "MyRow1" + ">, but was <" + row1.getNameLabelText() + ">", "MyRow1", row1.getNameLabelText());
+    // }
+    Assert.assertEquals("Expected that table view FirstColumnRowHandle has selected row with row handle <" + "MyRow1" + ">, but was <" + this.sut.getFirstColumnRowHandleTableSelectedRow() + ">", "MyRow1", this.sut.getFirstColumnRowHandleTableSelectedRow());
   }
 }

@@ -241,7 +241,7 @@
     <property role="3GE5qa" value="widgets" />
     <property role="TrG5h" value="ViewWidgetFeature" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="5jGmAfqGMnw" resolve="FeatureBase" />
     <node concept="1TJgyi" id="4OohpJQO3xr" role="1TKVEl">
       <property role="IQ2nx" value="5555266676524595291" />
       <property role="TrG5h" value="supported" />
@@ -259,9 +259,6 @@
       <node concept="t5JxF" id="zuT2RNpaqd" role="lGtFl">
         <property role="t5JxN" value="In seldom situations, inherent features might be removed (e.g., text in a static label)" />
       </node>
-    </node>
-    <node concept="PrWs8" id="3F1kzPoMTK5" role="PzmwI">
-      <ref role="PrY4T" node="3F1kzPoMMcm" resolve="ICanHaveCustomPropertyName" />
     </node>
   </node>
   <node concept="1TIwiD" id="4SDJcZBNVBS">
@@ -1159,6 +1156,11 @@
       <property role="TrG5h" value="StringRowHandle" />
       <property role="1L1pqM" value="string row handle" />
     </node>
+    <node concept="25R33" id="4Tqlyky29Fi" role="25R1y">
+      <property role="3tVfz5" value="5645919800347106002" />
+      <property role="TrG5h" value="FirstLabelColumn" />
+      <property role="1L1pqM" value="use first label column as row handle" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1RiAxJSewmp">
     <property role="EcuMT" value="2148949417128494489" />
@@ -1173,6 +1175,9 @@
       <property role="IQ2nx" value="2148949417128694884" />
       <property role="TrG5h" value="stringRowHandle" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="t5JxF" id="4Tqlyky2iU2" role="lGtFl">
+        <property role="t5JxN" value="This includes also &quot;FirstLabelColumn&quot; row handle kind" />
+      </node>
     </node>
   </node>
   <node concept="PlHQZ" id="1RiAxJSe_9Q">
@@ -1273,10 +1278,7 @@
     <property role="3GE5qa" value="widgets.util" />
     <property role="TrG5h" value="CustomFeature" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3ZV2RzmQJmo" role="PzmwI">
-      <ref role="PrY4T" node="3F1kzPoMMcm" resolve="ICanHaveCustomPropertyName" />
-    </node>
+    <ref role="1TJDcQ" node="5jGmAfqGMnw" resolve="FeatureBase" />
     <node concept="t5JxF" id="3ZV2RzmQQQI" role="lGtFl">
       <property role="t5JxN" value="This is mainly a helper concept to attach ICanHaveCustomPropertyName to special/custom features, as row handles" />
     </node>
@@ -1849,6 +1851,16 @@
       <property role="20kJfa" value="ref" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="5jkMFwuLz8m" resolve="GenerationConfig" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5jGmAfqGMnw">
+    <property role="EcuMT" value="6119365378607097312" />
+    <property role="3GE5qa" value="widgets.util" />
+    <property role="TrG5h" value="FeatureBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5jGmAfqGMnx" role="PzmwI">
+      <ref role="PrY4T" node="3F1kzPoMMcm" resolve="ICanHaveCustomPropertyName" />
     </node>
   </node>
 </model>

@@ -34,4 +34,12 @@ public class TableViews_ViewModel {
   public String getMyStringRowHandlesTableSelectedRow() {
     return this.MyStringRowHandlesTableSelectedRow;
   }
+  private List<TableViews_ViewModelFirstColumnRowHandleRow> FirstColumnRowHandleTableRows = new LinkedList<>();
+  public List<TableViews_ViewModelFirstColumnRowHandleRow> getFirstColumnRowHandleTableRows() {
+    return this.FirstColumnRowHandleTableRows;
+  }
+  private String FirstColumnRowHandleTableSelectedRow;
+  public String getFirstColumnRowHandleTableSelectedRow() {
+    return this.FirstColumnRowHandleTableSelectedRow;
+  }
 }

@@ -53,4 +53,18 @@ public class TableViews_ViewModel {
     return this.MyStringRowHandlesTableSelectedRow;
 
   }
+  
+  private FirstColumnRowHandleTableRows : TableViews_ViewModelFirstColumnRowHandleRow [ * ]  ;
+  
+  public getFirstColumnRowHandleTableRows (  ) : TableViews_ViewModelFirstColumnRowHandleRow [ * ]  {
+    return this.FirstColumnRowHandleTableRows;
+
+  }
+  
+  private FirstColumnRowHandleTableSelectedRow : String  ;
+  
+  public getFirstColumnRowHandleTableSelectedRow (  ) : String  {
+    return this.FirstColumnRowHandleTableSelectedRow;
+
+  }
 }

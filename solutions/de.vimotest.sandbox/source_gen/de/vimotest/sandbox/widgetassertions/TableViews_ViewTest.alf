@@ -46,6 +46,18 @@ class TableViews_ViewTest {
     this.then_MyElements_has_2_rows (  );
 
   }
+  /** 
+  Scenario: FirstLabelColumn row handle
+    given: 
+     when: 
+     then: FirstColumnRowHandle has 2 rows and selected row handle MyRow1 */
+
+  public FirstLabelColumn_row_handle_given_when_then_FirstColumnRowHandle_has_2_rows_and_selected_row_handle_MyRow1 (  ) {
+    this.BuildSut (  );
+
+    this.then_FirstColumnRowHandle_has_2_rows_and_selected_row_handle_MyRow1 (  );
+
+  }
   
   
   protected BuildSut (  ) {
@@ -158,6 +170,29 @@ class TableViews_ViewTest {
       AssertEqualWithMessage ( "image_star", row1.getInfoIconImageName (  ), "Expected that image InfoIcon has " + "image <image_star>" + ", but was <" + row1.getInfoIconImageName (  ) + ">" );
 
     }
+
+  }
+  
+  public then_FirstColumnRowHandle_has_2_rows_and_selected_row_handle_MyRow1 (  ) {
+    let actualRows: TableViews_ViewModelFirstColumnRowHandleRow [] = this.sut.getFirstColumnRowHandleTableRows (  );
+
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view FirstColumnRowHandle has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+
+    {
+      let row0: TableViews_ViewModelFirstColumnRowHandleRow = actualRows[ 1 ];
+
+      AssertEqualWithMessage ( "MyRow0", row0.getNameLabelText (  ), "Expected that label Name has text <" + "MyRow0" + ">, but was <" + row0.getNameLabelText (  ) + ">" );
+
+    }
+
+    {
+      let row1: TableViews_ViewModelFirstColumnRowHandleRow = actualRows[ 2 ];
+
+      AssertEqualWithMessage ( "MyRow1", row1.getNameLabelText (  ), "Expected that label Name has text <" + "MyRow1" + ">, but was <" + row1.getNameLabelText (  ) + ">" );
+
+    }
+
+    AssertEqualWithMessage ( "MyRow1", this.sut.getFirstColumnRowHandleTableSelectedRow (  ), "Expected that table view FirstColumnRowHandle has selected row with row handle <" + "MyRow1" + ">, but was <" + this.sut.getFirstColumnRowHandleTableSelectedRow (  ) + ">" );
 
   }
 }

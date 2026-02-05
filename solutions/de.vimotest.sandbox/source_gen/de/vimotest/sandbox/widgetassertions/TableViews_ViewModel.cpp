@@ -3,6 +3,7 @@
 #include <memory>
 #include "TableViews_ViewModelMyElementsRow.h"
 #include "TableViews_ViewModelMyStringRowHandlesRow.h"
+#include "TableViews_ViewModelFirstColumnRowHandleRow.h"
 #include <string>
 
 namespace widgetassertions
@@ -34,5 +35,13 @@ namespace widgetassertions
   std::string TableViews_ViewModel::getMyStringRowHandlesTableSelectedRow()
   {
     return this->MyStringRowHandlesTableSelectedRow;
+  }
+  std::vector<std::shared_ptr<TableViews_ViewModelFirstColumnRowHandleRow>> TableViews_ViewModel::getFirstColumnRowHandleTableRows()
+  {
+    return this->FirstColumnRowHandleTableRows;
+  }
+  std::string TableViews_ViewModel::getFirstColumnRowHandleTableSelectedRow()
+  {
+    return this->FirstColumnRowHandleTableSelectedRow;
   }
 }

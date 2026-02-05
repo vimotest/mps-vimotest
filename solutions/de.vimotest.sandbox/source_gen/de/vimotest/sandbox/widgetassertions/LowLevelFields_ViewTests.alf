@@ -154,6 +154,12 @@ class LowLevelFields_ViewTests {
 
       AssertEqualWithMessage ( "Foo", actualListItem_0.MyName, "Expected field 'MyName' has value <" + "Foo" + ">, but it was <" + actualListItem_0.MyName + ">" );
 
+      let actualListItem_1: MyAdditions = actualList_2[ 2 ];
+
+      AssertTrueWithMessage ( actualListItem_1.MyFlag, "Expected field 'MyFlag' has boolean value <true>, but it was <" + ( actualListItem_1.MyFlag ? "true" : "false" ) + ">" );
+
+      AssertEqualWithMessage ( "Bar", actualListItem_1.MyName, "Expected field 'MyName' has value <" + "Bar" + ">, but it was <" + actualListItem_1.MyName + ">" );
+
     }
 
   }

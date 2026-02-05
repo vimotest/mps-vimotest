@@ -6,6 +6,7 @@
 #include <vector>
 #include "TableViews_ViewModelMyElementsRow.h"
 #include "TableViews_ViewModelMyStringRowHandlesRow.h"
+#include "TableViews_ViewModelFirstColumnRowHandleRow.h"
 #include "TableViews_ViewModelTestEnvironmentImpl.h"
 
 namespace widgetassertions
@@ -22,6 +23,7 @@ namespace widgetassertions
     virtual void then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible();
     virtual void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1();
     virtual void then_MyElements_has_2_rows();
+    virtual void then_FirstColumnRowHandle_has_2_rows_and_selected_row_handle_MyRow1();
   protected:
     void SetUp() override;
   };
@@ -50,6 +52,15 @@ namespace widgetassertions
     this->given_empty_context();
     this->BuildSut();
     this->then_MyElements_has_2_rows();
+  }
+  /// Scenario: FirstLabelColumn row handle
+  ///   given:
+  ///    when:
+  ///    then: FirstColumnRowHandle has 2 rows and selected row handle MyRow1
+  TEST_F(TableViews_ViewTest, FirstLabelColumn_row_handle_given_when_then_FirstColumnRowHandle_has_2_rows_and_selected_row_handle_MyRow1)
+  {
+    this->BuildSut();
+    this->then_FirstColumnRowHandle_has_2_rows_and_selected_row_handle_MyRow1();
   }
   void TableViews_ViewTest::BuildSut()
   {
@@ -113,5 +124,19 @@ namespace widgetassertions
     EXPECT_EQ(1, row1->getRowIndex()) << std::string("Expected that table view MyElements row at index 1 has rowhandle <1>, but was <") + std::to_string(row1->getRowIndex()) + std::string(">");
     EXPECT_EQ(std::string("image_star"), row1->getInfoIconImageName()) << std::string("Expected that image InfoIcon has ") + std::string("image <image_star>") + std::string(", but was <") + row1->getInfoIconImageName() + std::string(">");
     // }
+  }
+  void TableViews_ViewTest::then_FirstColumnRowHandle_has_2_rows_and_selected_row_handle_MyRow1()
+  {
+    auto actualRows = this->sut->getFirstColumnRowHandleTableRows();
+    EXPECT_EQ(2, actualRows.size()) << std::string("Expected that table view FirstColumnRowHandle has 2 rows, but has ") + std::to_string(actualRows.size());
+    // {
+    auto& row0 = actualRows.at(0);
+    EXPECT_EQ(std::string("MyRow0"), row0->getNameLabelText()) << std::string("Expected that label Name has text <") + std::string("MyRow0") + std::string(">, but was <") + row0->getNameLabelText() + std::string(">");
+    // }
+    // {
+    auto& row1 = actualRows.at(1);
+    EXPECT_EQ(std::string("MyRow1"), row1->getNameLabelText()) << std::string("Expected that label Name has text <") + std::string("MyRow1") + std::string(">, but was <") + row1->getNameLabelText() + std::string(">");
+    // }
+    EXPECT_EQ(std::string("MyRow1"), this->sut->getFirstColumnRowHandleTableSelectedRow()) << std::string("Expected that table view FirstColumnRowHandle has selected row with row handle <") + std::string("MyRow1") + std::string(">, but was <") + this->sut->getFirstColumnRowHandleTableSelectedRow() + std::string(">");
   }
 }

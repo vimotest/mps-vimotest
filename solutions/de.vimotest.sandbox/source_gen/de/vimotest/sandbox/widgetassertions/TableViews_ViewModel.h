@@ -4,6 +4,7 @@
 #include <memory>
 #include "TableViews_ViewModelMyElementsRow.h"
 #include "TableViews_ViewModelMyStringRowHandlesRow.h"
+#include "TableViews_ViewModelFirstColumnRowHandleRow.h"
 #include <string>
 
 namespace widgetassertions
@@ -18,6 +19,8 @@ namespace widgetassertions
     virtual bool getIsMyElementsTableDescriptionColumnVisible();
     virtual std::vector<std::shared_ptr<TableViews_ViewModelMyStringRowHandlesRow>> getMyStringRowHandlesTableRows();
     virtual std::string getMyStringRowHandlesTableSelectedRow();
+    virtual std::vector<std::shared_ptr<TableViews_ViewModelFirstColumnRowHandleRow>> getFirstColumnRowHandleTableRows();
+    virtual std::string getFirstColumnRowHandleTableSelectedRow();
   private:
     std::vector<std::shared_ptr<TableViews_ViewModelMyElementsRow>> MyElementsTableRows;
     int MyElementsTableSelectedRow;
@@ -26,5 +29,7 @@ namespace widgetassertions
     bool isMyElementsTableDescriptionColumnVisible;
     std::vector<std::shared_ptr<TableViews_ViewModelMyStringRowHandlesRow>> MyStringRowHandlesTableRows;
     std::string MyStringRowHandlesTableSelectedRow;
+    std::vector<std::shared_ptr<TableViews_ViewModelFirstColumnRowHandleRow>> FirstColumnRowHandleTableRows;
+    std::string FirstColumnRowHandleTableSelectedRow;
   };
 }

@@ -1,0 +1,14 @@
+namespace widgetassertions ;
+
+
+
+
+public class TableViews_ViewModelFirstColumnRowHandleRow {
+  
+  private NameLabelText : String  ;
+  
+  public getNameLabelText (  ) : String  {
+    return this.NameLabelText;
+
+  }
+}

@@ -51,6 +51,20 @@ public class TableViews_ViewTest
         this.then_MyElements_has_2_rows();
     }
 
+    /*
+
+    Scenario: FirstLabelColumn row handle
+      given:
+       when:
+       then: FirstColumnRowHandle has 2 rows and selected row handle MyRow1
+   */
+    [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
+    public void FirstLabelColumn_row_handle_given_when_then_FirstColumnRowHandle_has_2_rows_and_selected_row_handle_MyRow1()
+    {
+        this.BuildSut();
+        this.then_FirstColumnRowHandle_has_2_rows_and_selected_row_handle_MyRow1();
+    }
+
     protected virtual void BuildSut()
     {
         this.sut = this.testEnvironment.BuildSut();
@@ -125,5 +139,22 @@ public class TableViews_ViewTest
             Assert.AreEqual(1, row1.getRowIndex(), "Expected that table view MyElements row at index 1 has rowhandle <1>, but was <" + Convert.ToString(row1.getRowIndex()) + ">");
             Assert.AreEqual("image_star", row1.getInfoIconImageName(), "Expected that image InfoIcon has " + "image <image_star>" + ", but was <" + row1.getInfoIconImageName() + ">");
         }
+    }
+
+    public virtual void then_FirstColumnRowHandle_has_2_rows_and_selected_row_handle_MyRow1()
+    {
+        var actualRows = this.sut.getFirstColumnRowHandleTableRows();
+        Assert.AreEqual(2, actualRows.Count, "Expected that table view FirstColumnRowHandle has 2 rows, but has " + Convert.ToString(actualRows.Count));
+
+        {
+            var row0 = actualRows[0];
+            Assert.AreEqual("MyRow0", row0.getNameLabelText(), "Expected that label Name has text <" + "MyRow0" + ">, but was <" + row0.getNameLabelText() + ">");
+        }
+
+        {
+            var row1 = actualRows[1];
+            Assert.AreEqual("MyRow1", row1.getNameLabelText(), "Expected that label Name has text <" + "MyRow1" + ">, but was <" + row1.getNameLabelText() + ">");
+        }
+        Assert.AreEqual("MyRow1", this.sut.getFirstColumnRowHandleTableSelectedRow(), "Expected that table view FirstColumnRowHandle has selected row with row handle <" + "MyRow1" + ">, but was <" + this.sut.getFirstColumnRowHandleTableSelectedRow() + ">");
     }
 }

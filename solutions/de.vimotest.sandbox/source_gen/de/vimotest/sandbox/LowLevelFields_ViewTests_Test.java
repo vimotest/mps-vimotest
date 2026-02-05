@@ -94,6 +94,9 @@ public class LowLevelFields_ViewTests_Test {
     MyAdditions actualListItem_0 = actualList_2.get(1 - 1);
     Assert.assertFalse("Expected field 'MyFlag' has boolean value <false>, but it was <" + ((actualListItem_0.MyFlag ? "true" : "false")) + ">", actualListItem_0.MyFlag);
     Assert.assertEquals("Expected field 'MyName' has value <" + "Foo" + ">, but it was <" + actualListItem_0.MyName + ">", "Foo", actualListItem_0.MyName);
+    MyAdditions actualListItem_1 = actualList_2.get(2 - 1);
+    Assert.assertTrue("Expected field 'MyFlag' has boolean value <true>, but it was <" + ((actualListItem_1.MyFlag ? "true" : "false")) + ">", actualListItem_1.MyFlag);
+    Assert.assertEquals("Expected field 'MyName' has value <" + "Bar" + ">, but it was <" + actualListItem_1.MyName + ">", "Bar", actualListItem_1.MyName);
     // }
   }
   public void then_CustomListRowField_has_1_rows() {

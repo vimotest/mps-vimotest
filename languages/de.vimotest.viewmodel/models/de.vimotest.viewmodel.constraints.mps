@@ -107,6 +107,9 @@
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
+      </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
@@ -227,6 +230,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1580,6 +1591,46 @@
     </node>
     <node concept="9S07l" id="5U4kGNTFAuL" role="9Vyp8">
       <node concept="3clFbS" id="5U4kGNTFAuM" role="2VODD2">
+        <node concept="3clFbJ" id="BXIJikz7SL" role="3cqZAp">
+          <node concept="3clFbS" id="BXIJikz7SM" role="3clFbx">
+            <node concept="3SKdUt" id="BXIJikz7SN" role="3cqZAp">
+              <node concept="1PaTwC" id="BXIJikz7SO" role="1aUNEU">
+                <node concept="3oM_SD" id="BXIJikz7SP" role="1PaTwD">
+                  <property role="3oM_SC" value="Currently," />
+                </node>
+                <node concept="3oM_SD" id="BXIJikz7SQ" role="1PaTwD">
+                  <property role="3oM_SC" value="in" />
+                </node>
+                <node concept="3oM_SD" id="BXIJikz7SR" role="1PaTwD">
+                  <property role="3oM_SC" value="AbstractParameterizedCommand" />
+                </node>
+                <node concept="3oM_SD" id="BXIJikz7SS" role="1PaTwD">
+                  <property role="3oM_SC" value="we" />
+                </node>
+                <node concept="3oM_SD" id="BXIJikz7ST" role="1PaTwD">
+                  <property role="3oM_SC" value="only" />
+                </node>
+                <node concept="3oM_SD" id="BXIJikz7SU" role="1PaTwD">
+                  <property role="3oM_SC" value="support" />
+                </node>
+                <node concept="3oM_SD" id="BXIJikz7SV" role="1PaTwD">
+                  <property role="3oM_SC" value="&quot;field&quot;" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="BXIJikz7SW" role="3cqZAp">
+              <node concept="3clFbT" id="BXIJikz7SX" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="BXIJikz7SY" role="3clFbw">
+            <node concept="nLn13" id="BXIJikz7SZ" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="BXIJikz7T0" role="2OqNvi">
+              <node concept="chp4Y" id="BXIJikz7T1" role="cj9EA">
+                <ref role="cht4Q" to="at53:7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="5U4kGNTFAuO" role="3cqZAp">
           <node concept="22lmx$" id="5U4kGNTFAuP" role="3clFbG">
             <node concept="2OqwBi" id="5U4kGNTFAuQ" role="3uHU7B">
@@ -1676,6 +1727,46 @@
     <ref role="1M2myG" to="at53:4m0g11Moo3J" resolve="OperationParameter" />
     <node concept="9S07l" id="5U4kGNT$ZZp" role="9Vyp8">
       <node concept="3clFbS" id="5U4kGNT$ZZq" role="2VODD2">
+        <node concept="3clFbJ" id="BXIJikz6qP" role="3cqZAp">
+          <node concept="3clFbS" id="BXIJikz6qR" role="3clFbx">
+            <node concept="3SKdUt" id="BXIJikz7pN" role="3cqZAp">
+              <node concept="1PaTwC" id="BXIJikz7pO" role="1aUNEU">
+                <node concept="3oM_SD" id="BXIJikz7pP" role="1PaTwD">
+                  <property role="3oM_SC" value="Currently," />
+                </node>
+                <node concept="3oM_SD" id="BXIJikz7tt" role="1PaTwD">
+                  <property role="3oM_SC" value="in" />
+                </node>
+                <node concept="3oM_SD" id="BXIJikz7wl" role="1PaTwD">
+                  <property role="3oM_SC" value="AbstractParameterizedCommand" />
+                </node>
+                <node concept="3oM_SD" id="BXIJikz7yn" role="1PaTwD">
+                  <property role="3oM_SC" value="we" />
+                </node>
+                <node concept="3oM_SD" id="BXIJikz7yr" role="1PaTwD">
+                  <property role="3oM_SC" value="only" />
+                </node>
+                <node concept="3oM_SD" id="BXIJikz7yP" role="1PaTwD">
+                  <property role="3oM_SC" value="support" />
+                </node>
+                <node concept="3oM_SD" id="BXIJikz7zi" role="1PaTwD">
+                  <property role="3oM_SC" value="&quot;field&quot;" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="BXIJikz7ic" role="3cqZAp">
+              <node concept="3clFbT" id="BXIJikz7ir" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="BXIJikz6KI" role="3clFbw">
+            <node concept="nLn13" id="BXIJikz6uh" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="BXIJikz6V_" role="2OqNvi">
+              <node concept="chp4Y" id="BXIJikz6Zd" role="cj9EA">
+                <ref role="cht4Q" to="at53:7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="5U4kGNT_0pR" role="3cqZAp">
           <node concept="22lmx$" id="5U4kGNT_0pS" role="3clFbG">
             <node concept="2OqwBi" id="5U4kGNT_0pT" role="3uHU7B">

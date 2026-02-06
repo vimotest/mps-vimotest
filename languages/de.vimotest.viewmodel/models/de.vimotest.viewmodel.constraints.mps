@@ -1719,5 +1719,35 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="BXIJijIiK8">
+    <property role="3GE5qa" value="features" />
+    <ref role="1M2myG" to="at53:7WgsBLYmzhD" resolve="SelectedRowFeature" />
+    <node concept="EnEH3" id="BXIJijIiK9" role="1MhHOB">
+      <ref role="EomxK" to="at53:4OohpJQO3xr" resolve="supported" />
+      <node concept="1LLf8_" id="BXIJijIj3U" role="1LXaQT">
+        <node concept="3clFbS" id="BXIJijIj3V" role="2VODD2">
+          <node concept="3clFbF" id="BXIJijIj6J" role="3cqZAp">
+            <node concept="37vLTI" id="BXIJijIm69" role="3clFbG">
+              <node concept="1Wqviy" id="BXIJijImfD" role="37vLTx" />
+              <node concept="2OqwBi" id="BXIJijIjjj" role="37vLTJ">
+                <node concept="EsrRn" id="BXIJijIj6I" role="2Oq$k0" />
+                <node concept="3TrcHB" id="BXIJijIldK" role="2OqNvi">
+                  <ref role="3TsBF5" to="at53:4OohpJQO3xr" resolve="supported" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="BXIJijInu8" role="3cqZAp">
+            <node concept="2OqwBi" id="BXIJijInHJ" role="3clFbG">
+              <node concept="EsrRn" id="BXIJijInu7" role="2Oq$k0" />
+              <node concept="2qgKlT" id="BXIJijInXN" role="2OqNvi">
+                <ref role="37wK5l" to="nrs2:BXIJijInnq" resolve="supportedChanged" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

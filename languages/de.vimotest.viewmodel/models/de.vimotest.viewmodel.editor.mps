@@ -2550,14 +2550,15 @@
         </node>
         <node concept="l2Vlx" id="2S2pY38Twhs" role="2iSdaV" />
       </node>
-      <node concept="3F1sOY" id="7WgsBLYvZT0" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:7WgsBLYqF$p" resolve="selectedRowFeature" />
-      </node>
+      <node concept="3F0ifn" id="BXIJikhlgy" role="3EZMnx" />
       <node concept="3F1sOY" id="7WgsBLYmzi2" role="3EZMnx">
         <ref role="1NtTu8" to="at53:7WgsBLYmzhV" resolve="visibilityFeature" />
       </node>
       <node concept="3F1sOY" id="7WgsBLYmzi3" role="3EZMnx">
         <ref role="1NtTu8" to="at53:7WgsBLYmzhW" resolve="enabledFeature" />
+      </node>
+      <node concept="3F1sOY" id="7WgsBLYvZT0" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:7WgsBLYqF$p" resolve="selectedRowFeature" />
       </node>
     </node>
   </node>
@@ -2576,9 +2577,6 @@
       <node concept="2EHx9g" id="K_fAvR3LCY" role="2iSdaV" />
       <node concept="3F1sOY" id="K_fAvR3LCZ" role="3EZMnx">
         <ref role="1NtTu8" to="at53:K_fAvR3LCQ" resolve="widgetTreeRowsFeature" />
-      </node>
-      <node concept="3F1sOY" id="K_fAvR3LD0" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:K_fAvR3LCR" resolve="selectedRowFeature" />
       </node>
       <node concept="3F1sOY" id="K_fAvR3LD1" role="3EZMnx">
         <ref role="1NtTu8" to="at53:K_fAvR3LCS" resolve="visibilityFeature" />
@@ -2626,6 +2624,10 @@
           </node>
         </node>
         <node concept="l2Vlx" id="K_fAvR62Or" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="BXIJikhlgz" role="3EZMnx" />
+      <node concept="3F1sOY" id="K_fAvR3LD0" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:K_fAvR3LCR" resolve="selectedRowFeature" />
       </node>
     </node>
   </node>
@@ -2726,9 +2728,6 @@
       <node concept="3F1sOY" id="24MyZrrRA6h" role="3EZMnx">
         <ref role="1NtTu8" to="at53:24MyZrrRA68" resolve="widgetTableRowsFeature" />
       </node>
-      <node concept="3F1sOY" id="24MyZrrRA6i" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:24MyZrrRA69" resolve="selectedRowFeature" />
-      </node>
       <node concept="3F1sOY" id="24MyZrrRA6j" role="3EZMnx">
         <ref role="1NtTu8" to="at53:24MyZrrRA6a" resolve="visibilityFeature" />
       </node>
@@ -2775,6 +2774,10 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+      </node>
+      <node concept="3F0ifn" id="BXIJikhlgx" role="3EZMnx" />
+      <node concept="3F1sOY" id="24MyZrrRA6i" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:24MyZrrRA69" resolve="selectedRowFeature" />
       </node>
     </node>
   </node>

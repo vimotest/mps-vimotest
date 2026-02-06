@@ -485,6 +485,7 @@
         <child id="6201744883139140302" name="textFeature" index="2X2XNi" />
         <child id="6201744883139140303" name="enabledFeature" index="2X2XNj" />
       </concept>
+      <concept id="777152910168883042" name="de.vimotest.viewmodel.structure.EmptyCommandSectionContent" flags="ng" index="103ZWm" />
       <concept id="777152910168882965" name="de.vimotest.viewmodel.structure.ViewModelCommandSection" flags="ng" index="103ZXx">
         <child id="777152910169039599" name="contents" index="1006ar" />
       </concept>
@@ -3246,6 +3247,7 @@
           </node>
         </node>
       </node>
+      <node concept="103ZWm" id="BXIJijoLpK" role="1006ar" />
     </node>
     <node concept="103ZXB" id="7ZadkZWP7l_" role="103ZXF" />
   </node>

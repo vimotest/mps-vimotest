@@ -7,4 +7,5 @@ public class GenericCommands_ViewModel {
   
   public myCommand (   in MyFlag: Boolean ,   in Names: String [ * ]  ) {    
   }
+  
 }

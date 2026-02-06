@@ -571,6 +571,16 @@
         <node concept="8qQDt" id="ZCu$dYEqLj" role="gfFT$" />
       </node>
     </node>
+    <node concept="3aamgX" id="BXIJijwKD9" role="3acgRq">
+      <ref role="30HIoZ" to="at53:F907haLJXy" resolve="EmptyCommandSectionContent" />
+      <node concept="gft3U" id="BXIJijwKDa" role="1lVwrX">
+        <node concept="15s5l7" id="BXIJijwKDb" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be child)&quot;;FLAVOUR_MESSAGE=&quot;Node '(instance of EmptyLineNamespaceMember)' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3492897886878835755]&quot;;" />
+          <property role="huDt6" value="Node '(instance of EmptyLineNamespaceMember)' cannot be child of node '(instance of InlineTemplate_RuleConsequence)'" />
+        </node>
+        <node concept="8qQDt" id="BXIJijwKDc" role="gfFT$" />
+      </node>
+    </node>
     <node concept="3aamgX" id="3JF9X1M4Pww" role="3acgRq">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:F907haLIRF" resolve="ViewWidget" />

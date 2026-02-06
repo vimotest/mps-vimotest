@@ -7,4 +7,5 @@ import java.util.List;
 public class GenericCommands_ViewModel {
   public void myCommand(Boolean MyFlag, List<String> Names) {
   }
+
 }

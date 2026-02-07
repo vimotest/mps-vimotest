@@ -2,6 +2,7 @@
 #include <vector>
 #include <memory>
 #include "DataDrivenViewModelResultRow.h"
+#include <string>
 
 namespace datadriven
 {
@@ -9,7 +10,7 @@ namespace datadriven
   {
     return this->ResultTableRows;
   }
-  void DataDrivenViewModel::loadViewModel()
+  void DataDrivenViewModel::loadViewModel(std::string name)
   {
   }
 }

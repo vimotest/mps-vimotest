@@ -14,8 +14,10 @@
         <child id="1820634577908471815" name="steps" index="2VgMA7" />
       </concept>
       <concept id="1820634577908471810" name="jetbrains.mps.lang.generator.plan.structure.Transform" flags="ng" index="2VgMA2">
+        <property id="2209292798354050154" name="individualStepPerGenerator" index="1s431M" />
         <child id="1152961914448142326" name="entries" index="2Qf7GQ" />
       </concept>
+      <concept id="6257322641293267918" name="jetbrains.mps.lang.generator.plan.structure.CheckpointDeclaration" flags="ng" index="19BiC4" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
@@ -31,6 +33,18 @@
   </registry>
   <node concept="2VgMpV" id="5jkMFwtj763">
     <property role="TrG5h" value="ViMoTestToAlfiGenPlan" />
+    <node concept="2VgMA2" id="7y9Sd3jj7LA" role="2VgMA7">
+      <property role="1s431M" value="true" />
+      <node concept="2Qf6Nf" id="7y9Sd3jj7LC" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="7y9Sd3jj7LE" role="2Qf6Ng">
+          <property role="2V$B1T" value="5e0eeeb3-eed4-4b9b-abeb-23480a03ca33" />
+          <property role="2V$B1Q" value="de.vimotest.generation.preprocessing" />
+        </node>
+      </node>
+    </node>
+    <node concept="19BiC4" id="7y9Sd3jj7LI" role="2VgMA7">
+      <property role="TrG5h" value="de.vimotest.generation.preprocessing.checkpoint" />
+    </node>
     <node concept="2VgMA2" id="26p1Znjpwdg" role="2VgMA7">
       <node concept="2Qf6Nf" id="2mzDF_u6nQV" role="2Qf7GQ">
         <node concept="2V$Bhx" id="2mzDF_u6nQX" role="2Qf6Ng">

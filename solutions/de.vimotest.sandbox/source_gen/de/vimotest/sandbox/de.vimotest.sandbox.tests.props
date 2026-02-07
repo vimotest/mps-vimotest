@@ -92,7 +92,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/ViewDependencyViewModelTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)datadriven/DataDrivenViewModelTestEnvironment.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)datadriven/DataDrivenViewModelTestEnvironmentImpl.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)datadriven/DataDrivenTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)datadriven/DataDrivenViewModel_DataDrivenTests_DataDrivenTable_DataDriven_Tests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/StringContext2_ViewTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests.cs" />

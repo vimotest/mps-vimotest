@@ -64,7 +64,7 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewDependencyViewModelTestEnvironmentImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewDependencyViewModelTests.cpp
   ${CMAKE_CURRENT_LIST_DIR}/datadriven/DataDrivenViewModelTestEnvironmentImpl.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/datadriven/DataDrivenTests.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/datadriven/DataDrivenViewModel_DataDrivenTests_DataDrivenTable_DataDriven_Tests.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/StringContext2_ViewTests.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests.cpp

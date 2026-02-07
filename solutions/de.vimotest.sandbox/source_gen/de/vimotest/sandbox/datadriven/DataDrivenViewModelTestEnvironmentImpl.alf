@@ -10,6 +10,9 @@ class DataDrivenViewModelTestEnvironmentImpl specializes DataDrivenViewModelTest
   public SetXmlElementContext (   in xml: String  ) {    
   }
   
+  public SetITestScenarioContext (  ) {    
+  }
+  
   public BuildSut (  ) : DataDrivenViewModel  {
     return null;
 

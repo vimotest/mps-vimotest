@@ -12,6 +12,7 @@ namespace datadriven
   public:
     void Init() override;
     void SetXmlElementContext(std::string xml) override;
+    void SetITestScenarioContext() override;
     std::shared_ptr<DataDrivenViewModel> BuildSut() override;
   };
 }

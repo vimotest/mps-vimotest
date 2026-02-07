@@ -15,7 +15,7 @@ namespace datadriven
             return this.ResultTableRows;
         }
 
-        public virtual void loadViewModel()
+        public virtual void loadViewModel(string name)
         {
         }
     }

@@ -94,6 +94,20 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="75b45ab1-ab60-4e56-9499-3ebb61ad3411(de.vimotest.viewmodel.testing.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:6a61e065-5649-42c6-b0ca-3da4fcbb83a1(de.vimotest.viewmodel.testing.generator.templates@generator)" nodeID="8685720543859220479" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="75b45ab1-ab60-4e56-9499-3ebb61ad3411(de.vimotest.viewmodel.testing.generator)" />
+            <external-mapping>
+              <mapping-node modelUID="r:6a61e065-5649-42c6-b0ca-3da4fcbb83a1(de.vimotest.viewmodel.testing.generator.templates@generator)" nodeID="477382408145435546" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>

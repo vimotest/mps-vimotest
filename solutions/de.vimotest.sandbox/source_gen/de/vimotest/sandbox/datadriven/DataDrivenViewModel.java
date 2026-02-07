@@ -10,6 +10,6 @@ public class DataDrivenViewModel {
   public List<DataDrivenViewModelResultRow> getResultTableRows() {
     return this.ResultTableRows;
   }
-  public void loadViewModel() {
+  public void loadViewModel(String name) {
   }
 }

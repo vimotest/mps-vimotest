@@ -8,5 +8,7 @@ abstract class DataDrivenViewModelTestEnvironment {
   
   public abstract SetXmlElementContext (   in xml: String  ) ;
   
+  public abstract SetITestScenarioContext (  ) ;
+  
   public abstract BuildSut (  ) : DataDrivenViewModel  ;
 }

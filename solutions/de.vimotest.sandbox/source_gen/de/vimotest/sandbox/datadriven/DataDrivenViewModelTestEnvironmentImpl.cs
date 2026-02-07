@@ -15,6 +15,10 @@ namespace datadriven
         {
         }
 
+        public override void SetITestScenarioContext()
+        {
+        }
+
         public override datadriven.DataDrivenViewModel BuildSut()
         {
             return null;

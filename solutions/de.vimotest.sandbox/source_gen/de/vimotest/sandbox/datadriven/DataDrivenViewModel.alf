@@ -12,6 +12,6 @@ public class DataDrivenViewModel {
 
   }
   
-  public loadViewModel (  ) {    
+  public loadViewModel (   in name: String  ) {    
   }
 }

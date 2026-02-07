@@ -7,6 +7,7 @@
       <modulePath path="$PROJECT_DIR$/devkits/de.vimotest.cpp.devkit/de.vimotest.cpp.devkit.devkit" folder="3_util.devkit" />
       <modulePath path="$PROJECT_DIR$/devkits/de.vimotest.cs.devkit/de.vimotest.cs.devkit.devkit" folder="3_util.devkit" />
       <modulePath path="$PROJECT_DIR$/devkits/de.vimotest.java.devkit/de.vimotest.java.devkit.devkit" folder="3_util.devkit" />
+      <modulePath path="$PROJECT_DIR$/languages/de.vimotest.generation.preprocessing/de.vimotest.generation.preprocessing.mpl" folder="1_vimotestdsl.genpreprocessing" />
       <modulePath path="$PROJECT_DIR$/languages/de.vimotest.mpswidgets.runtime/de.vimotest.mpswidgets.runtime.msd" folder="3_util.mpswidgets" />
       <modulePath path="$PROJECT_DIR$/languages/de.vimotest.mpswidgets/de.vimotest.mpswidgets.mpl" folder="3_util.mpswidgets" />
       <modulePath path="$PROJECT_DIR$/languages/de.vimotest.types/de.vimotest.types.mpl" folder="1_vimotestdsl.types" />

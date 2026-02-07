@@ -10,5 +10,5 @@ abstract class VerifyDependencyCallViewModelTestEnvironment {
   
   public abstract getLogger (  ) : LoggerSpy  ;
   
-  public abstract getSimpleDependency_ViewModel (  ) : VerifyDependencyCallViewModel  ;
+  public abstract getSimpleDependency_ViewModel (  ) : SimpleDependency_ViewModel  ;
 }

@@ -1,4 +1,5 @@
 #include "SimpleDependency_ViewModel.h"
+#include <string>
 
 namespace dependencies
 {
@@ -6,7 +7,7 @@ namespace dependencies
   {
     return this->MyBool;
   }
-  void SimpleDependency_ViewModel::loadViewModel()
+  void SimpleDependency_ViewModel::loadViewModel(std::string Path)
   {
   }
 }

@@ -6018,9 +6018,15 @@
   <node concept="103ZX$" id="4m0g11MwG31">
     <property role="$YGLj" value="SimpleDependency_" />
     <property role="3GE5qa" value="dependencies" />
+    <property role="ft0au" value="true" />
     <node concept="103ZXx" id="4m0g11MwG32" role="103ZXC">
       <node concept="3Vw88J" id="4m0g11MwG33" role="1006ar">
         <property role="TrG5h" value="LoadViewModel" />
+        <property role="2hCfGp" value="true" />
+        <node concept="1nWCU9" id="4I$Err6HaMM" role="103ZUC">
+          <property role="TrG5h" value="Path" />
+          <node concept="1nBS12" id="4I$Err6HaMT" role="3xMlr6" />
+        </node>
       </node>
     </node>
     <node concept="103ZXB" id="4m0g11MwG34" role="103ZXF">
@@ -6140,6 +6146,11 @@
           <node concept="p182N" id="54nmQxEJWUm" role="DUiS9">
             <ref role="p15Ve" node="4m0g11MwG31" resolve="SimpleDependency_ViewModel" />
             <ref role="p19w1" node="4m0g11MwG33" resolve="LoadViewModel" />
+            <node concept="_vku0" id="4I$Err6HaNm" role="p19we">
+              <node concept="_iklQ" id="4I$Err6HaNF" role="_vku1">
+                <property role="_iklR" value="MyPath" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

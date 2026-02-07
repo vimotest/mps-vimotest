@@ -10315,9 +10315,6 @@
         </node>
         <node concept="1sPUBX" id="54nmQxIy8ls" role="lGtFl">
           <ref role="v9R2y" node="54nmQxI_7RB" resolve="switch_IDependencySectionContent_TestEnvironment_getDependency" />
-          <node concept="1mL9RQ" id="54nmQxI_Fhf" role="v9R3O">
-            <ref role="1mL9RD" node="54nmQxI_z7Q" resolve="testSuite" />
-          </node>
         </node>
         <node concept="3xR696" id="54nmQxIyeMb" role="NkNyt">
           <property role="3xR695" value="3Ud70gdvRyt/return" />
@@ -12359,9 +12356,6 @@
         </node>
         <node concept="1sPUBX" id="54nmQxJiLBp" role="lGtFl">
           <ref role="v9R2y" node="54nmQxJiBMK" resolve="switch_IDependencySectionContent_TestEnvironmentImpl_getDependency" />
-          <node concept="1mL9RQ" id="54nmQxJiLBq" role="v9R3O">
-            <ref role="1mL9RD" node="54nmQxJiLB9" resolve="testSuite" />
-          </node>
         </node>
         <node concept="3xR696" id="54nmQxJiLBr" role="NkNyt">
           <property role="3xR695" value="3Ud70gdvRyt/return" />
@@ -14904,12 +14898,6 @@
   <node concept="jVnub" id="54nmQxI_7RB">
     <property role="3GE5qa" value="testenvironment" />
     <property role="TrG5h" value="switch_IDependencySectionContent_TestEnvironment_getDependency" />
-    <node concept="1N15co" id="54nmQxI_uEz" role="1s_3oS">
-      <property role="TrG5h" value="testSuite" />
-      <node concept="3Tqbb2" id="54nmQxI_uGl" role="1N15GL">
-        <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
-      </node>
-    </node>
     <node concept="3aamgX" id="54nmQxI_9eI" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:5cPWD10K$3k" resolve="IDependency" />
@@ -15023,14 +15011,7 @@
                               <node concept="1iwH7S" id="54nmQxI_sQ0" role="2Oq$k0" />
                               <node concept="1iwH70" id="54nmQxI_sQ1" role="2OqNvi">
                                 <ref role="1iwH77" to="qhqb:5jkMFw_K_1h" resolve="ViewModel_ViewController_ClassDefinition" />
-                                <node concept="2OqwBi" id="54nmQxI_sQ2" role="1iwH7V">
-                                  <node concept="3TrEf2" id="54nmQxI_sQ4" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
-                                  </node>
-                                  <node concept="v3LJS" id="54nmQxI_vgd" role="2Oq$k0">
-                                    <ref role="v3LJV" node="54nmQxI_uEz" resolve="testSuite" />
-                                  </node>
-                                </node>
+                                <node concept="30H73N" id="4I$Err7_5sm" role="1iwH7V" />
                               </node>
                             </node>
                           </node>
@@ -15046,14 +15027,7 @@
                           <node concept="1iwH7S" id="54nmQxI_sQ9" role="2Oq$k0" />
                           <node concept="1iwH70" id="54nmQxI_sQa" role="2OqNvi">
                             <ref role="1iwH77" to="qhqb:2KQA9MxTmGp" resolve="ViewModel_ClassDefinition" />
-                            <node concept="2OqwBi" id="54nmQxI_vB8" role="1iwH7V">
-                              <node concept="3TrEf2" id="54nmQxI_vB9" role="2OqNvi">
-                                <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
-                              </node>
-                              <node concept="v3LJS" id="54nmQxI_vBa" role="2Oq$k0">
-                                <ref role="v3LJV" node="54nmQxI_uEz" resolve="testSuite" />
-                              </node>
-                            </node>
+                            <node concept="30H73N" id="4I$Err7_5DU" role="1iwH7V" />
                           </node>
                         </node>
                       </node>
@@ -15073,9 +15047,6 @@
         <node concept="2VYdi" id="54nmQxI_9Bn" role="gfFT$">
           <node concept="1sPUBX" id="54nmQxI_9Bq" role="lGtFl">
             <ref role="v9R2y" node="54nmQxI_7RB" resolve="switch_IDependencySectionContent_TestEnvironment_getDependency" />
-            <node concept="v3LJS" id="54nmQxI_xwd" role="v9R3O">
-              <ref role="v3LJV" node="54nmQxI_uEz" resolve="testSuite" />
-            </node>
             <node concept="3NFfHV" id="54nmQxJbTU3" role="1sPUBK">
               <node concept="3clFbS" id="54nmQxJbTU4" role="2VODD2">
                 <node concept="3clFbF" id="54nmQxJbUoX" role="3cqZAp">
@@ -15097,12 +15068,6 @@
   <node concept="jVnub" id="54nmQxJiBMK">
     <property role="3GE5qa" value="testenvironment" />
     <property role="TrG5h" value="switch_IDependencySectionContent_TestEnvironmentImpl_getDependency" />
-    <node concept="1N15co" id="54nmQxJiBML" role="1s_3oS">
-      <property role="TrG5h" value="testSuite" />
-      <node concept="3Tqbb2" id="54nmQxJiBMM" role="1N15GL">
-        <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
-      </node>
-    </node>
     <node concept="3aamgX" id="54nmQxJiBMN" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="at53:5cPWD10K$3k" resolve="IDependency" />
@@ -15221,14 +15186,7 @@
                               <node concept="1iwH7S" id="54nmQxJiBNr" role="2Oq$k0" />
                               <node concept="1iwH70" id="54nmQxJiBNs" role="2OqNvi">
                                 <ref role="1iwH77" to="qhqb:5jkMFw_K_1h" resolve="ViewModel_ViewController_ClassDefinition" />
-                                <node concept="2OqwBi" id="54nmQxJiBNt" role="1iwH7V">
-                                  <node concept="3TrEf2" id="54nmQxJiBNu" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
-                                  </node>
-                                  <node concept="v3LJS" id="54nmQxJiBNv" role="2Oq$k0">
-                                    <ref role="v3LJV" node="54nmQxJiBML" resolve="testSuite" />
-                                  </node>
-                                </node>
+                                <node concept="30H73N" id="4I$Err7ktOW" role="1iwH7V" />
                               </node>
                             </node>
                           </node>
@@ -15244,14 +15202,7 @@
                           <node concept="1iwH7S" id="54nmQxJiBN$" role="2Oq$k0" />
                           <node concept="1iwH70" id="54nmQxJiBN_" role="2OqNvi">
                             <ref role="1iwH77" to="qhqb:2KQA9MxTmGp" resolve="ViewModel_ClassDefinition" />
-                            <node concept="2OqwBi" id="54nmQxJiBNA" role="1iwH7V">
-                              <node concept="3TrEf2" id="54nmQxJiBNB" role="2OqNvi">
-                                <ref role="3Tt5mk" to="53m0:2Yd1qrJOhz1" resolve="targetViewModel" />
-                              </node>
-                              <node concept="v3LJS" id="54nmQxJiBNC" role="2Oq$k0">
-                                <ref role="v3LJV" node="54nmQxJiBML" resolve="testSuite" />
-                              </node>
-                            </node>
+                            <node concept="30H73N" id="4I$Err7kumF" role="1iwH7V" />
                           </node>
                         </node>
                       </node>
@@ -15271,9 +15222,6 @@
         <node concept="2VYdi" id="54nmQxJiBNF" role="gfFT$">
           <node concept="1sPUBX" id="54nmQxJiBNG" role="lGtFl">
             <ref role="v9R2y" node="54nmQxJiBMK" resolve="switch_IDependencySectionContent_TestEnvironmentImpl_getDependency" />
-            <node concept="v3LJS" id="54nmQxJiBNH" role="v9R3O">
-              <ref role="v3LJV" node="54nmQxJiBML" resolve="testSuite" />
-            </node>
             <node concept="3NFfHV" id="54nmQxJiBNI" role="1sPUBK">
               <node concept="3clFbS" id="54nmQxJiBNJ" role="2VODD2">
                 <node concept="3clFbF" id="54nmQxJiBNK" role="3cqZAp">

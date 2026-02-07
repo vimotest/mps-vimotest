@@ -40,6 +40,6 @@ public class ViewModelDependency_ViewModelTests
     // When Helper Definitions
     public virtual void when_LoadViewModel()
     {
-        this.testEnvironment.getSimpleDependency_ViewModel().loadViewModel();
+        this.testEnvironment.getSimpleDependency_ViewModel().loadViewModel("MyPath");
     }
 }

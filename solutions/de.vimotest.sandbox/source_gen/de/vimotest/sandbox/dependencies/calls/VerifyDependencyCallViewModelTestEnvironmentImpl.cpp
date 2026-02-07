@@ -2,6 +2,7 @@
 #include <memory>
 #include "VerifyDependencyCallViewModel.h"
 #include "dependencies/LoggerSpy.h"
+#include "dependencies/SimpleDependency_ViewModel.h"
 
 namespace dependencies::calls
 {
@@ -16,7 +17,7 @@ namespace dependencies::calls
   {
     return nullptr;
   }
-  std::shared_ptr<VerifyDependencyCallViewModel> VerifyDependencyCallViewModelTestEnvironmentImpl::getSimpleDependency_ViewModel()
+  std::shared_ptr<SimpleDependency_ViewModel> VerifyDependencyCallViewModelTestEnvironmentImpl::getSimpleDependency_ViewModel()
   {
     return nullptr;
   }

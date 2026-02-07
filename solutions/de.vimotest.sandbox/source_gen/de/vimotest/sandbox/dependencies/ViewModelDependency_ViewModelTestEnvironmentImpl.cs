@@ -16,7 +16,7 @@ namespace dependencies
             return null;
         }
 
-        public override dependencies.ViewModelDependency_ViewModel getSimpleDependency_ViewModel()
+        public override dependencies.SimpleDependency_ViewModel getSimpleDependency_ViewModel()
         {
             return null;
         }

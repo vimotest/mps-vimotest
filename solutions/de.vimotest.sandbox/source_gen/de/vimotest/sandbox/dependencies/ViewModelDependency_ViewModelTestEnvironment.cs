@@ -11,6 +11,6 @@ namespace dependencies
 
         public abstract dependencies.ViewModelDependency_ViewModel BuildSut();
 
-        public abstract dependencies.ViewModelDependency_ViewModel getSimpleDependency_ViewModel();
+        public abstract dependencies.SimpleDependency_ViewModel getSimpleDependency_ViewModel();
     }
 }

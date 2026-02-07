@@ -41,7 +41,7 @@ class ViewModelDependency_ViewModelTests {
 
   
   public when_LoadViewModel (  ) {
-    this.testEnvironment.getSimpleDependency_ViewModel (  ).loadViewModel (  );
+    this.testEnvironment.getSimpleDependency_ViewModel (  ).loadViewModel ( "MyPath" );
 
   }
   

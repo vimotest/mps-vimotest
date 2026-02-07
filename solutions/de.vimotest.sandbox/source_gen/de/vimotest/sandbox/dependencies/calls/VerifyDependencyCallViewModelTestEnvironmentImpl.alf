@@ -17,7 +17,7 @@ class VerifyDependencyCallViewModelTestEnvironmentImpl specializes VerifyDepende
 
   }
   
-  public getSimpleDependency_ViewModel (  ) : VerifyDependencyCallViewModel  {
+  public getSimpleDependency_ViewModel (  ) : SimpleDependency_ViewModel  {
     return null;
 
   }

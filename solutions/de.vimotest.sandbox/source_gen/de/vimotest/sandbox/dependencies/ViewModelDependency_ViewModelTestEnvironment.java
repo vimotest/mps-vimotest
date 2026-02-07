@@ -6,5 +6,5 @@ package de.vimotest.sandbox.dependencies;
 public abstract class ViewModelDependency_ViewModelTestEnvironment {
   public abstract void Init();
   public abstract ViewModelDependency_ViewModel BuildSut();
-  public abstract ViewModelDependency_ViewModel getSimpleDependency_ViewModel();
+  public abstract SimpleDependency_ViewModel getSimpleDependency_ViewModel();
 }

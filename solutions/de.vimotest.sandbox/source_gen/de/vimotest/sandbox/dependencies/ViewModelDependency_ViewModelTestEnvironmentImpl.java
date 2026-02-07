@@ -12,7 +12,7 @@ public class ViewModelDependency_ViewModelTestEnvironmentImpl extends ViewModelD
     return null;
   }
   @Override
-  public ViewModelDependency_ViewModel getSimpleDependency_ViewModel() {
+  public SimpleDependency_ViewModel getSimpleDependency_ViewModel() {
     return null;
   }
 }

@@ -8,6 +8,6 @@ public class SimpleDependency_ViewModel {
   public Boolean getMyBool() {
     return this.MyBool;
   }
-  public void loadViewModel() {
+  public void loadViewModel(String Path) {
   }
 }

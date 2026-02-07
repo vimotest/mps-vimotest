@@ -22,7 +22,7 @@ namespace dependencies.calls
             return null;
         }
 
-        public override dependencies.calls.VerifyDependencyCallViewModel getSimpleDependency_ViewModel()
+        public override dependencies.SimpleDependency_ViewModel getSimpleDependency_ViewModel()
         {
             return null;
         }

@@ -12,7 +12,7 @@ namespace dependencies
             return this.MyBool;
         }
 
-        public virtual void loadViewModel()
+        public virtual void loadViewModel(string Path)
         {
         }
     }

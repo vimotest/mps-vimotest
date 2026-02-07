@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include <memory>
 #include "ViewModelDependency_ViewModelTestEnvironment.h"
+#include <string>
 #include "SimpleDependency_ViewModel.h"
 #include "ViewModelDependency_ViewModel.h"
 #include "ViewModelDependency_ViewModelTestEnvironmentImpl.h"
@@ -38,6 +39,6 @@ namespace dependencies
   }
   void ViewModelDependency_ViewModelTests::when_LoadViewModel()
   {
-    this->testEnvironment->getSimpleDependency_ViewModel()->loadViewModel();
+    this->testEnvironment->getSimpleDependency_ViewModel()->loadViewModel(std::string("MyPath"));
   }
 }

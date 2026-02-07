@@ -1,6 +1,7 @@
 #include "ViewModelDependency_ViewModelTestEnvironmentImpl.h"
 #include <memory>
 #include "ViewModelDependency_ViewModel.h"
+#include "SimpleDependency_ViewModel.h"
 
 namespace dependencies
 {
@@ -11,7 +12,7 @@ namespace dependencies
   {
     return nullptr;
   }
-  std::shared_ptr<ViewModelDependency_ViewModel> ViewModelDependency_ViewModelTestEnvironmentImpl::getSimpleDependency_ViewModel()
+  std::shared_ptr<SimpleDependency_ViewModel> ViewModelDependency_ViewModelTestEnvironmentImpl::getSimpleDependency_ViewModel()
   {
     return nullptr;
   }

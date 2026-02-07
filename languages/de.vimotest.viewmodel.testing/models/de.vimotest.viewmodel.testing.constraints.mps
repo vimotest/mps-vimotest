@@ -195,6 +195,9 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -1550,6 +1553,59 @@
       </node>
       <node concept="1dDu$B" id="4mGsJw9XFg4" role="1N6uqs">
         <ref role="1dDu$A" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7y9Sd3ifJGB">
+    <property role="3GE5qa" value="test.datadriven" />
+    <ref role="1M2myG" to="53m0:1MgSEbJFwG0" resolve="ScenarioExamplePlaceholderAttribute" />
+    <node concept="1N5Pfh" id="7y9Sd3ifJGC" role="1Mr941">
+      <ref role="1N5Vy1" to="53m0:1MgSEbJFwGf" resolve="exampleTableColumnHeader" />
+      <node concept="3dgokm" id="7y9Sd3ifJJk" role="1N6uqs">
+        <node concept="3clFbS" id="7y9Sd3ifJJm" role="2VODD2">
+          <node concept="3cpWs8" id="7y9Sd3ifN6a" role="3cqZAp">
+            <node concept="3cpWsn" id="7y9Sd3ifN6b" role="3cpWs9">
+              <property role="TrG5h" value="headersRow" />
+              <node concept="3Tqbb2" id="7y9Sd3ifN3H" role="1tU5fm">
+                <ref role="ehGHo" to="53m0:6RKU0sd8pX$" resolve="DataTableRow" />
+              </node>
+              <node concept="2OqwBi" id="7y9Sd3ifN6c" role="33vP2m">
+                <node concept="2OqwBi" id="7y9Sd3ifN6d" role="2Oq$k0">
+                  <node concept="2OqwBi" id="7y9Sd3ifN6e" role="2Oq$k0">
+                    <node concept="2rP1CM" id="7y9Sd3ifN6f" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="7y9Sd3ifN6g" role="2OqNvi">
+                      <node concept="1xMEDy" id="7y9Sd3ifN6h" role="1xVPHs">
+                        <node concept="chp4Y" id="7y9Sd3ifN6i" role="ri$Ld">
+                          <ref role="cht4Q" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestScenario" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="7y9Sd3ifN6j" role="2OqNvi">
+                    <ref role="3Tt5mk" to="53m0:5iuj9z7Qlw0" resolve="dataTable" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="7y9Sd3ifN6k" role="2OqNvi">
+                  <ref role="3Tt5mk" to="53m0:5iuj9z7QkHx" resolve="headersRow" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="7y9Sd3ifN8G" role="3cqZAp">
+            <node concept="2YIFZM" id="7y9Sd3ifNry" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="7y9Sd3ifN_6" role="37wK5m">
+                <node concept="37vLTw" id="7y9Sd3ifNrz" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7y9Sd3ifN6b" resolve="headersRow" />
+                </node>
+                <node concept="3Tsc0h" id="7y9Sd3ifNJV" role="2OqNvi">
+                  <ref role="3TtcxE" to="53m0:6RKU0sd8q9I" resolve="values" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

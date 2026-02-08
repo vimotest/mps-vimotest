@@ -703,7 +703,6 @@
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1240824834947" name="jetbrains.mps.baseLanguage.collections.structure.ValueAccessOperation" flags="nn" index="3AV6Ez" />
-      <concept id="1240825616499" name="jetbrains.mps.baseLanguage.collections.structure.KeyAccessOperation" flags="nn" index="3AY5_j" />
       <concept id="1197932370469" name="jetbrains.mps.baseLanguage.collections.structure.MapElement" flags="nn" index="3EllGN">
         <child id="1197932505799" name="map" index="3ElQJh" />
         <child id="1197932525128" name="key" index="3ElVtu" />
@@ -14349,20 +14348,6 @@
             <ref role="3cqZAo" node="6S_Is8aatE3" resolve="groupByTestSuite" />
           </node>
           <node concept="3clFbS" id="6S_Is8aaIIA" role="2LFqv$">
-            <node concept="3cpWs8" id="6S_Is8aaKJF" role="3cqZAp">
-              <node concept="3cpWsn" id="6S_Is8aaKJG" role="3cpWs9">
-                <property role="TrG5h" value="testSuite" />
-                <node concept="3Tqbb2" id="6S_Is8aaKJj" role="1tU5fm">
-                  <ref role="ehGHo" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
-                </node>
-                <node concept="2OqwBi" id="6S_Is8aaKJH" role="33vP2m">
-                  <node concept="2GrUjf" id="6S_Is8aaKJI" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="6S_Is8aaIIy" resolve="testSuiteToContextRefs" />
-                  </node>
-                  <node concept="3AY5_j" id="6S_Is8aaKJJ" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="6S_Is8aaLlL" role="3cqZAp">
               <node concept="3cpWsn" id="6S_Is8aaLlM" role="3cpWs9">
                 <property role="TrG5h" value="contextRefs" />

@@ -1743,5 +1743,56 @@
       <property role="Hh88m" value="examplePlaceholder" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2L$sa54YxYg">
+    <property role="EcuMT" value="3198805473289183120" />
+    <property role="3GE5qa" value="test.context.dependencies" />
+    <property role="TrG5h" value="DependencyStubContext" />
+    <property role="34LRSv" value="dependency stub" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2L$sa55B4Ig" role="1TKVEi">
+      <property role="IQ2ns" value="3198805473299811216" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="stubValues" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2L$sa55B4Ic" resolve="DependencyStubValues" />
+    </node>
+    <node concept="PrWs8" id="2L$sa54YxYh" role="PzmwI">
+      <ref role="PrY4T" node="2Yd1qrJOMZM" resolve="ITestScenarioContext" />
+    </node>
+    <node concept="PrWs8" id="2L$sa55fFlZ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyj" id="2L$sa54YxYo" role="1TKVEi">
+      <property role="IQ2ns" value="3198805473289183128" />
+      <property role="20kJfa" value="targetDependency" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="at53:3kGPU1QcSOP" resolve="IReferenceableDependency" />
+    </node>
+    <node concept="1TJgyj" id="2L$sa54YxYp" role="1TKVEi">
+      <property role="IQ2ns" value="3198805473289183129" />
+      <property role="20kJfa" value="targetOperation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="at53:54nmQxE1KaC" resolve="IOperation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2L$sa55B4Ic">
+    <property role="EcuMT" value="3198805473299811212" />
+    <property role="3GE5qa" value="test.context.dependencies" />
+    <property role="TrG5h" value="DependencyStubValues" />
+    <property role="34LRSv" value="stub values" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2L$sa55B4Id" role="1TKVEi">
+      <property role="IQ2ns" value="3198805473299811213" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="value" />
+      <ref role="20lvS9" to="28lk:2kuSLC0kNK2" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="2L$sa55B4Ie" role="1TKVEi">
+      <property role="IQ2ns" value="3198805473299811214" />
+      <property role="20kJfa" value="result" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="at53:5cPWD1210DC" resolve="OperationResult" />
+    </node>
+  </node>
 </model>
 

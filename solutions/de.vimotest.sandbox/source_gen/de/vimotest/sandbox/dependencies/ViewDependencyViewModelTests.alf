@@ -19,13 +19,13 @@ class ViewDependencyViewModelTests {
   /** 
   Scenario: View Dependency
     given: 
-     when: Foo
+     when: Refresh
      then:  */
 
-  public View_Dependency_given_when_Foo_then_ (  ) {
+  public View_Dependency_given_when_Refresh_then_ (  ) {
     this.BuildSut (  );
 
-    this.when_Foo (  );
+    this.when_Refresh (  );
 
   }
   
@@ -40,8 +40,8 @@ class ViewDependencyViewModelTests {
   // When Helper Definitions
 
   
-  public when_Foo (  ) {
-    this.testEnvironment.getViewDependencyView (  ).Foo (  );
+  public when_Refresh (  ) {
+    this.testEnvironment.getViewDependencyView (  ).Refresh (  );
 
   }
   

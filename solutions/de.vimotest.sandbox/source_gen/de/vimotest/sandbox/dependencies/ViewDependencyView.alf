@@ -4,7 +4,11 @@ namespace dependencies ;
 
 abstract class ViewDependencyView {
   
-  public abstract Foo (  ) ;
+  public abstract Refresh (  ) ;
   
-  public abstract ConfirmDeletion (  ) ;
+  public abstract ConfirmDeletion (  ) : Boolean  ;
+  
+  public abstract AskForEnum (  ) : MyEnum  ;
+  
+  public abstract GetSomeResultList (   in scope: String  ) : String [ * ]  ;
 }

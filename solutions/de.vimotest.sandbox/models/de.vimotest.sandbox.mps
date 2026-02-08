@@ -280,6 +280,15 @@
       <concept id="4840000418189422214" name="de.vimotest.viewmodel.testing.structure.CheckRowBase" flags="ng" index="3_LKKU">
         <child id="4840000418189422916" name="additionalFieldAssertions" index="3_LLfS" />
       </concept>
+      <concept id="3198805473289183120" name="de.vimotest.viewmodel.testing.structure.DependencyStubContext" flags="ng" index="1CBAWL">
+        <reference id="3198805473289183129" name="targetOperation" index="1CBAWS" />
+        <reference id="3198805473289183128" name="targetDependency" index="1CBAWT" />
+        <child id="3198805473299811216" name="stubValues" index="1DY3GL" />
+      </concept>
+      <concept id="3198805473299811212" name="de.vimotest.viewmodel.testing.structure.DependencyStubValues" flags="ng" index="1DY3GH">
+        <reference id="3198805473299811214" name="result" index="1DY3GJ" />
+        <child id="3198805473299811213" name="value" index="1DY3GG" />
+      </concept>
       <concept id="7922086861434398150" name="de.vimotest.viewmodel.testing.structure.ColumnCheckInfo" flags="ng" index="1EpGR1">
         <property id="7922086861434398930" name="ignoreChecksOnColumn" index="1EpG3l" />
         <reference id="7922086861434398929" name="columnDefinition" index="1EpG3m" />
@@ -6414,10 +6423,33 @@
     <node concept="2PDISX" id="5cPWD114oDD" role="2PDvFJ">
       <node concept="jXsxW" id="5cPWD11cezT" role="RSswE">
         <node concept="RSsdF" id="5cPWD11obpb" role="RSskJ">
-          <property role="TrG5h" value="Foo" />
+          <property role="TrG5h" value="Refresh" />
         </node>
         <node concept="RSsdF" id="4I$Err6PlDn" role="RSskJ">
           <property role="TrG5h" value="ConfirmDeletion" />
+          <node concept="hcvzS" id="2L$sa54Ik3X" role="hcvzR">
+            <node concept="1nBHEw" id="2L$sa54Iknb" role="3xMlr6" />
+          </node>
+        </node>
+        <node concept="RSsdF" id="2L$sa54Qrah" role="RSskJ">
+          <property role="TrG5h" value="AskForEnum" />
+          <node concept="hcvzS" id="2L$sa54Qrai" role="hcvzR">
+            <node concept="14C5Nb" id="2L$sa54QraE" role="3xMlr6">
+              <ref role="2BLa4B" node="5cPWD13v25C" resolve="MyEnum" />
+            </node>
+          </node>
+        </node>
+        <node concept="RSsdF" id="2L$sa54Qrb7" role="RSskJ">
+          <property role="TrG5h" value="GetSomeResultList" />
+          <node concept="RSs3Z" id="2L$sa54Qrb8" role="RSs6f">
+            <property role="TrG5h" value="scope" />
+            <node concept="1nBS12" id="2L$sa54Qrbf" role="3xMlr6" />
+          </node>
+          <node concept="hcvzS" id="2L$sa54QrbG" role="hcvzR">
+            <node concept="1WnWvM" id="2L$sa54Qrcc" role="3xMlr6">
+              <node concept="1nBS12" id="2L$sa54Qrcp" role="1WnWvN" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -6427,12 +6459,35 @@
     <property role="TrG5h" value="ViewDependencyViewModelTests" />
     <ref role="30n1PB" node="5cPWD114oD_" resolve="ViewDependencyViewModel" />
     <node concept="3LKzX3" id="5cPWD116Qjv" role="30n1Qb">
-      <property role="TrG5h" value="View Dependency" />
+      <property role="TrG5h" value="View Dependency Call (no parameters, no results)" />
       <node concept="1s$VFG" id="5cPWD116Qjy" role="1s$QAY">
         <node concept="DUd5q" id="5cPWD116QjE" role="1s$QAM">
           <node concept="p182N" id="5cPWD116QjD" role="DUiS9">
             <ref role="p15Ve" node="5cPWD11cezT" resolve="ViewDependencyView" />
-            <ref role="p19w1" node="5cPWD11obpb" resolve="Foo" />
+            <ref role="p19w1" node="5cPWD11obpb" resolve="Refresh" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="2L$sa54YxYc" role="30n1Qb">
+      <property role="TrG5h" value="View Dependency With Result" />
+      <node concept="1s$VFG" id="2L$sa54YxYd" role="1s$QAY">
+        <node concept="DUd5q" id="2L$sa54YxYe" role="1s$QAM">
+          <node concept="p182N" id="2L$sa54YxYf" role="DUiS9">
+            <ref role="p15Ve" node="5cPWD11cezT" resolve="ViewDependencyView" />
+            <ref role="p19w1" node="4I$Err6PlDn" resolve="ConfirmDeletion" />
+          </node>
+        </node>
+      </node>
+      <node concept="1IbZgy" id="2L$sa55fC9_" role="DUd2K">
+        <node concept="1CBAWL" id="2L$sa55fC9$" role="DUiTU">
+          <ref role="1CBAWT" node="5cPWD11cezT" resolve="ViewDependencyView" />
+          <ref role="1CBAWS" node="2L$sa54Qrah" resolve="AskForEnum" />
+          <node concept="1DY3GH" id="2L$sa55Jn8_" role="1DY3GL">
+            <ref role="1DY3GJ" node="2L$sa54Qrai" resolve="_operationResult" />
+            <node concept="_iklQ" id="2L$sa55M9ti" role="1DY3GG">
+              <property role="_iklR" value="enumvalue" />
+            </node>
           </node>
         </node>
       </node>

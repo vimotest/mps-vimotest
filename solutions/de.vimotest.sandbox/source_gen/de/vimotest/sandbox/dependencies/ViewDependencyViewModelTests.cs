@@ -22,14 +22,14 @@ public class ViewDependencyViewModelTests
 
     Scenario: View Dependency
       given:
-       when: Foo
+       when: Refresh
        then:
    */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
-    public void View_Dependency_given_when_Foo_then_()
+    public void View_Dependency_given_when_Refresh_then_()
     {
         this.BuildSut();
-        this.when_Foo();
+        this.when_Refresh();
     }
 
     protected virtual void BuildSut()
@@ -38,8 +38,8 @@ public class ViewDependencyViewModelTests
     }
 
     // When Helper Definitions
-    public virtual void when_Foo()
+    public virtual void when_Refresh()
     {
-        this.testEnvironment.getViewDependencyView().Foo();
+        this.testEnvironment.getViewDependencyView().Refresh();
     }
 }

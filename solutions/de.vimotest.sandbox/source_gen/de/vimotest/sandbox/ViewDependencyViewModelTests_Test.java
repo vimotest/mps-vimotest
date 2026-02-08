@@ -12,9 +12,9 @@ public class ViewDependencyViewModelTests_Test {
   private ViewDependencyViewModel sut;
   private ViewDependencyViewModelTestEnvironment testEnvironment;
   @Test
-  public void test_View_Dependency_given_when_Foo_then_() throws Exception {
+  public void test_View_Dependency_given_when_Refresh_then_() throws Exception {
     this.BuildSut();
-    this.when_Foo();
+    this.when_Refresh();
   }
   @BeforeEach
   public void setUp() {
@@ -30,8 +30,8 @@ public class ViewDependencyViewModelTests_Test {
 
 
 
-  public void when_Foo() {
-    this.testEnvironment.getViewDependencyView().Foo();
+  public void when_Refresh() {
+    this.testEnvironment.getViewDependencyView().Refresh();
   }
 
 }

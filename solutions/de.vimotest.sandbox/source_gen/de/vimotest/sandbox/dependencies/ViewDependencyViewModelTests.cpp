@@ -14,7 +14,7 @@ namespace dependencies
     std::shared_ptr<ViewDependencyViewModelTestEnvironment> testEnvironment;
     virtual void BuildSut();
     // When Helper Definitions
-    virtual void when_Foo();
+    virtual void when_Refresh();
   protected:
     void SetUp() override;
   };
@@ -25,19 +25,19 @@ namespace dependencies
   }
   /// Scenario: View Dependency
   ///   given:
-  ///    when: Foo
+  ///    when: Refresh
   ///    then:
-  TEST_F(ViewDependencyViewModelTests, View_Dependency_given_when_Foo_then_)
+  TEST_F(ViewDependencyViewModelTests, View_Dependency_given_when_Refresh_then_)
   {
     this->BuildSut();
-    this->when_Foo();
+    this->when_Refresh();
   }
   void ViewDependencyViewModelTests::BuildSut()
   {
     this->sut = this->testEnvironment->BuildSut();
   }
-  void ViewDependencyViewModelTests::when_Foo()
+  void ViewDependencyViewModelTests::when_Refresh()
   {
-    this->testEnvironment->getViewDependencyView()->Foo();
+    this->testEnvironment->getViewDependencyView()->Refresh();
   }
 }

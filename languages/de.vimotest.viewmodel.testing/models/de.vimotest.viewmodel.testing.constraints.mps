@@ -1609,5 +1609,21 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="2L$sa55fCBY">
+    <property role="3GE5qa" value="test.context.dependencies" />
+    <ref role="1M2myG" to="53m0:2L$sa54YxYg" resolve="DependencyStubContext" />
+    <node concept="1N5Pfh" id="2L$sa55fCBZ" role="1Mr941">
+      <ref role="1N5Vy1" to="53m0:2L$sa54YxYo" resolve="targetDependency" />
+      <node concept="1dDu$B" id="2L$sa55fCC0" role="1N6uqs">
+        <ref role="1dDu$A" to="at53:3kGPU1QcSOP" resolve="IReferenceableDependency" />
+      </node>
+    </node>
+    <node concept="1N5Pfh" id="2L$sa55fCC1" role="1Mr941">
+      <ref role="1N5Vy1" to="53m0:2L$sa54YxYp" resolve="targetOperation" />
+      <node concept="1dDu$B" id="2L$sa55fCC2" role="1N6uqs">
+        <ref role="1dDu$A" to="at53:54nmQxE1KaC" resolve="IOperation" />
+      </node>
+    </node>
+  </node>
 </model>
 

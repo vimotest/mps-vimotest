@@ -67,7 +67,7 @@ add_executable(
         ${SANDBOX_TEST_SOURCES}
         ${SANDBOX_TEST_HEADERS}
 )
-target_link_libraries(sandbox_tests gtest_main)
+target_link_libraries(sandbox_tests sandbox_lib gtest_main)
 
 target_include_directories(sandbox_tests PUBLIC
     ${CMAKE_SOURCE_DIR}/de/vimotest/sandbox

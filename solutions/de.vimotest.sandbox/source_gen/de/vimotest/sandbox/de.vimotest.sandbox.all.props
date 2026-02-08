@@ -62,6 +62,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)context/DataPathContext_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/XmlElementContext_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/SimpleDependency_ViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/SimpleDependency_ViewModelSpy.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/ViewModelDependency_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/subscope/RepeatUsageDependency_ViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/calls/VerifyDependencyCallViewModel.cs" />

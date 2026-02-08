@@ -6,5 +6,7 @@ namespace dependencies
     public interface ViewDependencyView
     {
         void Foo();
+
+        void ConfirmDeletion();
     }
 }

@@ -7,6 +7,8 @@ import de.vimotest.sandbox.dependencies.ViewModelDependency_ViewModelTestEnviron
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.dependencies.ViewModelDependency_ViewModelTestEnvironmentImpl;
+import de.vimotest.sandbox.dependencies.SimpleDependency_ViewModelSpy;
+import org.junit.Assert;
 
 public class ViewModelDependency_ViewModelTests_Test {
   private ViewModelDependency_ViewModel sut;
@@ -15,6 +17,11 @@ public class ViewModelDependency_ViewModelTests_Test {
   public void test_ViewModel_Dependency_Call_given_when_LoadViewModel_then_() throws Exception {
     this.BuildSut();
     this.when_LoadViewModel();
+  }
+  @Test
+  public void test_ViewModel_Dependency_Verify_given_when_then_call_SimpleDependency_ViewModel_LoadViewModel___() throws Exception {
+    this.BuildSut();
+    this.then_call_SimpleDependency_ViewModel_LoadViewModel___();
   }
   @BeforeEach
   public void setUp() {
@@ -34,4 +41,12 @@ public class ViewModelDependency_ViewModelTests_Test {
     this.testEnvironment.getSimpleDependency_ViewModel().loadViewModel("MyPath");
   }
 
+  public void then_call_SimpleDependency_ViewModel_LoadViewModel___() {
+    SimpleDependency_ViewModelSpy spy = this.testEnvironment.getSimpleDependency_ViewModel();
+    for (int callInfoIndex = 0; callInfoIndex <= spy.LoadViewModelCallInfos.size(); callInfoIndex++) {
+      SimpleDependency_ViewModelSpy.LoadViewModelCallInfo callInfo = spy.LoadViewModelCallInfos.get(callInfoIndex - 1);
+      Assert.assertEquals("SimpleDependency_ViewModel.LoadViewModel Call[" + Integer.toString(callInfoIndex) + "]: Expected argument value 'Path' is <" + "MyPath" + "> but was <" + callInfo.PathValue + ">", "MyPath", callInfo.PathValue);
+    }
+    Assert.assertEquals("Expected that SimpleDependency_ViewModel.LoadViewModel was called exactly 1 times, but was " + Integer.toString(spy.LoadViewModelCallInfos.size()), Integer.valueOf(1), Integer.valueOf(spy.LoadViewModelCallInfos.size()));
+  }
 }

@@ -3,7 +3,7 @@
 #include "ViewModelDependency_ViewModelTestEnvironment.h"
 #include <memory>
 #include "ViewModelDependency_ViewModel.h"
-#include "SimpleDependency_ViewModel.h"
+#include "SimpleDependency_ViewModelSpy.h"
 
 namespace dependencies
 {
@@ -12,6 +12,6 @@ namespace dependencies
   public:
     void Init() override;
     std::shared_ptr<ViewModelDependency_ViewModel> BuildSut() override;
-    std::shared_ptr<SimpleDependency_ViewModel> getSimpleDependency_ViewModel() override;
+    std::shared_ptr<SimpleDependency_ViewModelSpy> getSimpleDependency_ViewModel() override;
   };
 }

@@ -1,5 +1,6 @@
 <Project>  
   <ItemGroup>    
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/SimpleDependency_ViewModelSpy.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/CheckBoxes_ViewModelTestEnvironment.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/CheckBoxes_ViewModelTestEnvironmentImpl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/CheckBoxes_ViewTest.cs" />

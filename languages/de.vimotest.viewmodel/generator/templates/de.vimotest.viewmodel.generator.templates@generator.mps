@@ -562,8 +562,8 @@
       <ref role="2rZz_L" to="28lk:2SMO68r$0GZ" resolve="ClassifierDefinition" />
     </node>
     <node concept="2rT7sh" id="54nmQxFEMFx" role="2rTMjI">
-      <property role="TrG5h" value="IDependency_ClassDefinition" />
-      <ref role="2rTdP9" to="at53:5cPWD10K$3k" resolve="IDependency" />
+      <property role="TrG5h" value="IReferenceableDependency_ClassDefinition" />
+      <ref role="2rTdP9" to="at53:3kGPU1QcSOP" resolve="IReferenceableDependency" />
       <ref role="2rZz_L" to="28lk:2HeY20H4nQy" resolve="ClassDefinition" />
     </node>
     <node concept="2rT7sh" id="54nmQxFENq0" role="2rTMjI">
@@ -740,7 +740,7 @@
     <node concept="3aamgX" id="Of5vW0aHum" role="3acgRq">
       <ref role="30HIoZ" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
       <node concept="j$656" id="Of5vW0aH$M" role="1lVwrX">
-        <ref role="v9R2y" node="Of5vW0aH$K" resolve="reduce_FieldStructContent" />
+        <ref role="v9R2y" node="Of5vW0aH$K" resolve="reduce_FieldStructContent_toProperty" />
       </node>
     </node>
     <node concept="3aamgX" id="3kGPU1PzUSR" role="3acgRq">
@@ -749,10 +749,40 @@
         <ref role="v9R2y" node="3kGPU1Pr1_U" resolve="reduce_DependencyOperation" />
       </node>
     </node>
+    <node concept="3aamgX" id="2L$sa50vJG2" role="3acgRq">
+      <ref role="30HIoZ" to="at53:4m0g11Moo3J" resolve="OperationParameter" />
+      <node concept="j$656" id="2L$sa50vJG3" role="1lVwrX">
+        <ref role="v9R2y" node="Of5vW0aH$K" resolve="reduce_FieldStructContent_toProperty" />
+      </node>
+      <node concept="30G5F_" id="2L$sa50vK52" role="30HLyM">
+        <node concept="3clFbS" id="2L$sa50vK53" role="2VODD2">
+          <node concept="3clFbF" id="2L$sa50vLKd" role="3cqZAp">
+            <node concept="1Wc70l" id="2L$sa50vLyX" role="3clFbG">
+              <node concept="2YIFZM" id="2L$sa50vLAy" role="3uHU7w">
+                <ref role="37wK5l" to="nrs2:Of5vVZzSQw" resolve="generateParameterObjects" />
+                <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                <node concept="30H73N" id="2L$sa50vLCq" role="37wK5m" />
+              </node>
+              <node concept="2OqwBi" id="2L$sa50vKRi" role="3uHU7B">
+                <node concept="2OqwBi" id="2L$sa50vKm5" role="2Oq$k0">
+                  <node concept="30H73N" id="2L$sa50vK63" role="2Oq$k0" />
+                  <node concept="1mfA1w" id="2L$sa50vKI5" role="2OqNvi" />
+                </node>
+                <node concept="1mIQ4w" id="2L$sa50vL6P" role="2OqNvi">
+                  <node concept="chp4Y" id="2L$sa50vL9j" role="cj9EA">
+                    <ref role="cht4Q" to="at53:7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="6gWUZpWZCVJ" role="3acgRq">
       <ref role="30HIoZ" to="at53:4m0g11Moo3J" resolve="OperationParameter" />
       <node concept="j$656" id="6gWUZpWZDi1" role="1lVwrX">
-        <ref role="v9R2y" node="6gWUZpWZ_OG" resolve="reduce_OperationParameter" />
+        <ref role="v9R2y" node="6gWUZpWZ_OG" resolve="reduce_FieldStructContent_toInputParameter" />
       </node>
     </node>
     <node concept="3aamgX" id="5cPWD12vxmi" role="3acgRq">
@@ -1110,6 +1140,33 @@
         </node>
       </node>
       <node concept="15s5l7" id="4QhVP4173FH" role="lGtFl" />
+      <node concept="1pdMLZ" id="2L$sa4YdfXL" role="lGtFl">
+        <node concept="15lBmy" id="2L$sa4Ydge9" role="15mYut">
+          <node concept="3clFbS" id="2L$sa4Ydgea" role="2VODD2">
+            <node concept="3clFbJ" id="2L$sa4Ydgeb" role="3cqZAp">
+              <node concept="3clFbS" id="2L$sa4Ydged" role="3clFbx">
+                <node concept="3clFbF" id="2L$sa4Ydh0W" role="3cqZAp">
+                  <node concept="2OqwBi" id="2L$sa4Ydh9K" role="3clFbG">
+                    <node concept="1iwH7S" id="2L$sa4Ydh0V" role="2Oq$k0" />
+                    <node concept="703nC" id="2L$sa4YdhfF" role="2OqNvi">
+                      <ref role="707pR" node="54nmQxFEMFx" resolve="IReferenceableDependency_ClassDefinition" />
+                      <node concept="30H73N" id="2L$sa4Ydhgd" role="707Db" />
+                      <node concept="3l3mFP" id="2L$sa4YdhgT" role="707Dt" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="2L$sa4Ydi87" role="3clFbw">
+                <node concept="2YIFZM" id="2L$sa4Ydi89" role="3fr31v">
+                  <ref role="37wK5l" to="nrs2:5jkMFw_KBaY" resolve="separateControllerViewModel" />
+                  <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                  <node concept="30H73N" id="2L$sa4Ydi8a" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1pdMLZ" id="3KSOinN$9li" role="lGtFl">
       <node concept="15lBmy" id="3KSOinN$aDU" role="15mYut">
@@ -4028,7 +4085,7 @@
     <node concept="b5Tf3" id="Of5vVZK$Rd" role="jxRDz" />
   </node>
   <node concept="13MO4I" id="Of5vW0aH$K">
-    <property role="TrG5h" value="reduce_FieldStructContent" />
+    <property role="TrG5h" value="reduce_FieldStructContent_toProperty" />
     <property role="3GE5qa" value="types" />
     <ref role="3gUMe" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
     <node concept="3mGtxK" id="Of5vW0aH$O" role="13RCb5">
@@ -4444,6 +4501,31 @@
         </node>
       </node>
       <node concept="15s5l7" id="4QhVP417c5B" role="lGtFl" />
+      <node concept="1pdMLZ" id="2L$sa4Ydj3u" role="lGtFl">
+        <node concept="15lBmy" id="2L$sa4YdjdC" role="15mYut">
+          <node concept="3clFbS" id="2L$sa4YdjdD" role="2VODD2">
+            <node concept="3clFbJ" id="2L$sa4YdjdE" role="3cqZAp">
+              <node concept="3clFbS" id="2L$sa4YdjdM" role="3clFbx">
+                <node concept="3clFbF" id="2L$sa4YdjdN" role="3cqZAp">
+                  <node concept="2OqwBi" id="2L$sa4YdjdO" role="3clFbG">
+                    <node concept="1iwH7S" id="2L$sa4YdjdP" role="2Oq$k0" />
+                    <node concept="703nC" id="2L$sa4YdjdQ" role="2OqNvi">
+                      <ref role="707pR" node="54nmQxFEMFx" resolve="IReferenceableDependency_ClassDefinition" />
+                      <node concept="30H73N" id="2L$sa4YdjdR" role="707Db" />
+                      <node concept="3l3mFP" id="2L$sa4YdjdS" role="707Dt" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2YIFZM" id="2L$sa4YdjdH" role="3clFbw">
+                <ref role="37wK5l" to="nrs2:5jkMFw_KBaY" resolve="separateControllerViewModel" />
+                <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
+                <node concept="30H73N" id="2L$sa4YdjdI" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1pdMLZ" id="3KSOinN$dCq" role="lGtFl">
       <node concept="15lBmy" id="3KSOinN$dMl" role="15mYut">
@@ -4858,7 +4940,7 @@
         </node>
       </node>
       <node concept="2ZBi8u" id="54nmQxFEOWu" role="lGtFl">
-        <ref role="2rW$FS" node="54nmQxFEMFx" resolve="IDependency_ClassDefinition" />
+        <ref role="2rW$FS" node="54nmQxFEMFx" resolve="IReferenceableDependency_ClassDefinition" />
       </node>
     </node>
     <node concept="n94m4" id="47nlIY2Qc29" role="lGtFl">
@@ -5119,7 +5201,7 @@
     </node>
   </node>
   <node concept="13MO4I" id="6gWUZpWZ_OG">
-    <property role="TrG5h" value="reduce_OperationParameter" />
+    <property role="TrG5h" value="reduce_FieldStructContent_toInputParameter" />
     <property role="3GE5qa" value="core" />
     <ref role="3gUMe" to="at53:4m0g11Moo3J" resolve="OperationParameter" />
     <node concept="3mGtxK" id="6gWUZpWZ_OH" role="13RCb5">

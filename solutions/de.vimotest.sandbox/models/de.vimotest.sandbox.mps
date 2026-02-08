@@ -2,7 +2,7 @@
 <model ref="r:c5fb840f-70c5-4022-a6fa-6af427663d41(de.vimotest.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="1" />
+    <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="2" />
     <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing" version="1" />
     <use id="611ecc9e-0703-4ab9-a13c-fb396c607716" name="de.vimotest.types" version="0" />
     <devkit ref="1511a6f0-18cf-4e0d-a302-d49c56209130(de.vimotest.all.devkit)" />
@@ -414,7 +414,7 @@
       <concept id="3858551213656582824" name="de.vimotest.viewmodel.structure.ComboBoxEntry" flags="ng" index="2gaR_a" />
       <concept id="5995965180310456936" name="de.vimotest.viewmodel.structure.OperationResult" flags="ng" index="hcvzS" />
       <concept id="5995965180289235692" name="de.vimotest.viewmodel.structure.ViewCallbackDependency" flags="ng" index="jXsxW" />
-      <concept id="5995965180289368276" name="de.vimotest.viewmodel.structure.IDependency" flags="ngI" index="jXV94">
+      <concept id="5995965180289368276" name="de.vimotest.viewmodel.structure.IDependencyDefinition" flags="ngI" index="jXV94">
         <child id="5008073225018639679" name="operations" index="RSskJ" />
       </concept>
       <concept id="3922717397912187187" name="de.vimotest.viewmodel.structure.ImageWidget" flags="ng" index="2mJbI3">
@@ -3236,11 +3236,11 @@
       <node concept="3V$Nq4" id="1F_Q10zSP$v" role="1006ar">
         <property role="TrG5h" value="MyCommand" />
         <property role="2hCfGp" value="true" />
-        <node concept="1nWCU9" id="1F_Q10zSP$w" role="103ZUC">
+        <node concept="RSs3Z" id="2L$sa502fuM" role="103ZUC">
           <property role="TrG5h" value="MyFlag" />
           <node concept="1nBHEw" id="1F_Q10zSP$B" role="3xMlr6" />
         </node>
-        <node concept="1nWCU9" id="5jkMFwCz1HF" role="103ZUC">
+        <node concept="RSs3Z" id="2L$sa502fuN" role="103ZUC">
           <property role="TrG5h" value="Names" />
           <node concept="1WnWvM" id="5jkMFwCz1HN" role="3xMlr6">
             <node concept="1nBS12" id="5jkMFwCz1Ix" role="1WnWvN" />
@@ -3707,7 +3707,7 @@
       <node concept="3Vw88J" id="5imH8sU7TY_" role="1006ar">
         <property role="TrG5h" value="LoadViewWithName" />
         <property role="2hCfGp" value="true" />
-        <node concept="1nWCU9" id="5imH8sU7TYA" role="103ZUC">
+        <node concept="RSs3Z" id="2L$sa502fuO" role="103ZUC">
           <property role="TrG5h" value="Name" />
           <node concept="1nBS12" id="5imH8sU7TYH" role="3xMlr6" />
         </node>
@@ -6018,12 +6018,11 @@
   <node concept="103ZX$" id="4m0g11MwG31">
     <property role="$YGLj" value="SimpleDependency_" />
     <property role="3GE5qa" value="dependencies" />
-    <property role="ft0au" value="true" />
     <node concept="103ZXx" id="4m0g11MwG32" role="103ZXC">
       <node concept="3Vw88J" id="4m0g11MwG33" role="1006ar">
         <property role="TrG5h" value="LoadViewModel" />
         <property role="2hCfGp" value="true" />
-        <node concept="1nWCU9" id="4I$Err6HaMM" role="103ZUC">
+        <node concept="RSs3Z" id="2L$sa502fuP" role="103ZUC">
           <property role="TrG5h" value="Path" />
           <node concept="1nBS12" id="4I$Err6HaMT" role="3xMlr6" />
         </node>
@@ -6133,6 +6132,9 @@
       <node concept="33PmoL" id="32SpZNIZgXF" role="RSswE">
         <ref role="33Pmof" node="4m0g11MwG31" resolve="SimpleDependency_ViewModel" />
       </node>
+      <node concept="33PmoL" id="2L$sa525ZvY" role="RSswE">
+        <ref role="33Pmof" node="2L$sa525YSL" resolve="SimplyDependencyWithSpy_ViewModel" />
+      </node>
     </node>
   </node>
   <node concept="30n1Qd" id="54nmQxEJWUd">
@@ -6148,6 +6150,25 @@
             <ref role="p19w1" node="4m0g11MwG33" resolve="LoadViewModel" />
             <node concept="_vku0" id="4I$Err6HaNm" role="p19we">
               <node concept="_iklQ" id="4I$Err6HaNF" role="_vku1">
+                <property role="_iklR" value="MyPath" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="4I$Err6E7pL" role="30n1Qb">
+      <property role="TrG5h" value="ViewModel Dependency Verify" />
+      <node concept="1s$VFG" id="4I$Err6E7pM" role="1s$QAY">
+        <node concept="DUd2R" id="4I$Err6E7pR" role="1s$QAX">
+          <node concept="w2mZS" id="4I$Err6E7pQ" role="DUiSb">
+            <property role="w2msf" value="1" />
+            <property role="w2ms1" value="1" />
+            <ref role="w2ms5" node="2L$sa525YSL" resolve="SimplyDependencyWithSpy_ViewModel" />
+            <ref role="w2ms6" node="2L$sa525YSN" resolve="LoadViewModel" />
+            <node concept="w2mso" id="2L$sa53mN1W" role="w2ms7">
+              <ref role="w2mvX" node="2L$sa525YSO" resolve="Path" />
+              <node concept="_iklQ" id="2L$sa53mN2D" role="w2msq">
                 <property role="_iklR" value="MyPath" />
               </node>
             </node>
@@ -6596,7 +6617,7 @@
       <node concept="3Vw88J" id="5iuj9z82xo8" role="1006ar">
         <property role="TrG5h" value="LoadViewModel" />
         <property role="2hCfGp" value="true" />
-        <node concept="1nWCU9" id="7y9Sd3k0D$x" role="103ZUC">
+        <node concept="RSs3Z" id="2L$sa502fuQ" role="103ZUC">
           <property role="TrG5h" value="name" />
           <node concept="1nBS12" id="7y9Sd3k0D$C" role="3xMlr6" />
         </node>
@@ -6710,6 +6731,28 @@
         <node concept="1nBS12" id="5U4kGNTFVlM" role="1WnWvN" />
       </node>
     </node>
+  </node>
+  <node concept="103ZX$" id="2L$sa525YSL">
+    <property role="$YGLj" value="SimplyDependencyWithSpy_" />
+    <property role="3GE5qa" value="dependencies" />
+    <property role="ft0au" value="true" />
+    <node concept="103ZXx" id="2L$sa525YSM" role="103ZXC">
+      <node concept="3Vw88J" id="2L$sa525YSN" role="1006ar">
+        <property role="TrG5h" value="LoadViewModel" />
+        <property role="2hCfGp" value="true" />
+        <node concept="RSs3Z" id="2L$sa525YSO" role="103ZUC">
+          <property role="TrG5h" value="Path" />
+          <node concept="1nBS12" id="2L$sa525YSP" role="3xMlr6" />
+        </node>
+      </node>
+    </node>
+    <node concept="103ZXB" id="2L$sa525YSQ" role="103ZXF">
+      <node concept="1nWCU9" id="2L$sa52e6f3" role="103ZUC">
+        <property role="TrG5h" value="MyBool" />
+        <node concept="1nBHEw" id="2L$sa52e6f4" role="3xMlr6" />
+      </node>
+    </node>
+    <node concept="2PDISX" id="2L$sa525YST" role="2PDvFJ" />
   </node>
 </model>
 

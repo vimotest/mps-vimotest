@@ -28,6 +28,18 @@ class ViewModelDependency_ViewModelTests {
     this.when_LoadViewModel (  );
 
   }
+  /** 
+  Scenario: ViewModel Dependency Verify
+    given: 
+     when: 
+     then: call SimpleDependency_ViewModel.LoadViewModel(["]) */
+
+  public ViewModel_Dependency_Verify_given_when_then_call_SimpleDependency_ViewModel_LoadViewModel___ (  ) {
+    this.BuildSut (  );
+
+    this.then_call_SimpleDependency_ViewModel_LoadViewModel___ (  );
+
+  }
   
   
   protected BuildSut (  ) {
@@ -45,4 +57,20 @@ class ViewModelDependency_ViewModelTests {
 
   }
   
+  // Then Helper Definitions
+
+  
+  public then_call_SimpleDependency_ViewModel_LoadViewModel___ (  ) {
+    let spy: SimpleDependency_ViewModelSpy = this.testEnvironment.getSimpleDependency_ViewModel (  );
+
+    for ( callInfoIndex in 0 .. spy.LoadViewModelCallInfos->size (  ) ) {
+      let callInfo: LoadViewModelCallInfo = spy.LoadViewModelCallInfos[ callInfoIndex ];
+
+      AssertEqualWithMessage ( "MyPath", callInfo.PathValue, "SimpleDependency_ViewModel.LoadViewModel Call[" + IntegerFunctions:: ToString ( callInfoIndex ) + "]: Expected argument value 'Path' is <" + "MyPath" + "> but was <" + callInfo.PathValue + ">" );
+
+    } 
+
+    AssertEqualWithMessage ( 1, spy.LoadViewModelCallInfos->size (  ), "Expected that SimpleDependency_ViewModel.LoadViewModel was called exactly 1 times, but was " + IntegerFunctions:: ToString ( spy.LoadViewModelCallInfos->size (  ) ) );
+
+  }
 }

@@ -1,6 +1,7 @@
 # de.vimotest.sandbox.tests.cmake
 
 set(GENERATED_SOURCES
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/SimpleDependency_ViewModelSpy.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewModelTestEnvironmentImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewTest.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewModelTestEnvironmentImpl.cpp
@@ -51,14 +52,12 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/context/DataPathContext_ViewTests.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_ViewModelTestEnvironmentImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/XmlElementContext_ViewTests.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewModelDependency_ViewModelTestEnvironment.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewModelDependency_ViewModelTestEnvironmentImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewModelDependency_ViewModelTests.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/SimpleDependency_ViewModelTestEnvironmentImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/SimpleDependency_ViewModelTests.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/subscope/RepeatUsageDependency_ViewModelTestEnvironmentImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/subscope/RepeatUsageDependency_ViewModelTests.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/dependencies/calls/VerifyDependencyCallViewModelTestEnvironment.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/calls/VerifyDependencyCallViewModelTestEnvironmentImpl.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/calls/VerifyDependencyCallViewModelTests.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewDependencyViewModelTestEnvironmentImpl.cpp
@@ -72,6 +71,7 @@ set(GENERATED_SOURCES
 )
 
 set(GENERATED_HEADERS
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/SimpleDependency_ViewModelSpy.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewModelTestEnvironment.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/CheckBoxes_ViewModelTestEnvironmentImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/Labels_ViewModelTestEnvironment.h

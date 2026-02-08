@@ -8,5 +8,5 @@ abstract class ViewModelDependency_ViewModelTestEnvironment {
   
   public abstract BuildSut (  ) : ViewModelDependency_ViewModel  ;
   
-  public abstract getSimpleDependency_ViewModel (  ) : SimpleDependency_ViewModel  ;
+  public abstract getSimpleDependency_ViewModel (  ) : SimpleDependency_ViewModelSpy  ;
 }

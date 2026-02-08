@@ -1293,7 +1293,7 @@
               <property role="TrG5h" value="dependencyNodes" />
               <node concept="A3Dl8" id="47nlIY2xqJn" role="1tU5fm">
                 <node concept="3Tqbb2" id="47nlIY2xqJq" role="A3Ik2">
-                  <ref role="ehGHo" to="at53:5cPWD10K$3k" resolve="IDependency" />
+                  <ref role="ehGHo" to="at53:5cPWD10K$3k" resolve="IDependencyDefinition" />
                 </node>
               </node>
               <node concept="2OqwBi" id="47nlIY2xqMU" role="33vP2m">

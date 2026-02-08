@@ -14,6 +14,6 @@ namespace dependencies.calls
 
         public abstract dependencies.LoggerSpy getLogger();
 
-        public abstract dependencies.SimpleDependency_ViewModel getSimpleDependency_ViewModel();
+        public abstract dependencies.SimpleDependency_ViewModelSpy getSimpleDependency_ViewModel();
     }
 }

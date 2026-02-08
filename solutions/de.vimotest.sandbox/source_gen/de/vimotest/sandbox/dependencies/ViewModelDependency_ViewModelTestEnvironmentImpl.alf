@@ -12,7 +12,7 @@ class ViewModelDependency_ViewModelTestEnvironmentImpl specializes ViewModelDepe
 
   }
   
-  public getSimpleDependency_ViewModel (  ) : SimpleDependency_ViewModel  {
+  public getSimpleDependency_ViewModel (  ) : SimpleDependency_ViewModelSpy  {
     return null;
 
   }

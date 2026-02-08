@@ -1,0 +1,36 @@
+namespace dependencies ;
+
+
+
+class SimpleDependency_ViewModelSpy specializes SimpleDependency_ViewModel {
+  
+  private wrapped : SimpleDependency_ViewModel  ;
+  
+  
+  public setWrapped (   in wrappedObject: SimpleDependency_ViewModel  ) {
+    this.wrapped = wrappedObject;
+
+  }
+  
+  
+  public datatype LoadViewModelCallInfo {
+    
+    public PathValue : String  ;
+  }
+  
+  public LoadViewModelCallInfos : LoadViewModelCallInfo [ * ]  ;
+  
+  public LoadViewModel (   in Path: String  ) {
+    let callInfo: LoadViewModelCallInfo = new LoadViewModelCallInfo (  );
+
+    callInfo.PathValue = Path;
+
+    this.LoadViewModelCallInfos->add ( callInfo );
+
+    if ( this.wrapped != null ) {
+      this.wrapped.loadViewModel ( Path );
+
+    } 
+
+  }
+}

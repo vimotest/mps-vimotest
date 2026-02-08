@@ -1644,7 +1644,7 @@
       </node>
     </node>
     <node concept="PrWs8" id="5cPWD10K$3l" role="PzmwI">
-      <ref role="PrY4T" node="5cPWD10K$3k" resolve="IDependency" />
+      <ref role="PrY4T" node="5cPWD10K$3k" resolve="IDependencyDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="69SOXVnRzRz">
@@ -1704,7 +1704,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="dependencies" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="5cPWD10K$3k" resolve="IDependency" />
+      <ref role="20lvS9" node="5cPWD10K$3k" resolve="IDependencyDefinition" />
     </node>
     <node concept="PrWs8" id="47nlIY2eTGn" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -1780,6 +1780,9 @@
     <node concept="PrWs8" id="3kGPU1QjftN" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="2L$sa4YGccy" role="PrDN$">
+      <ref role="PrY4T" to="evry:7VjLoWiMzkq" resolve="ICustomizableTypeInfo" />
+    </node>
     <node concept="1TJgyi" id="HXq1W42mE1" role="1TKVEl">
       <property role="IQ2nx" value="827932388927040129" />
       <property role="TrG5h" value="supportsSpying" />
@@ -1806,13 +1809,13 @@
     <property role="34LRSv" value="view callback" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5cPWD10KMkB" role="PzmwI">
-      <ref role="PrY4T" node="5cPWD10K$3k" resolve="IDependency" />
+      <ref role="PrY4T" node="5cPWD10K$3k" resolve="IDependencyDefinition" />
     </node>
   </node>
   <node concept="PlHQZ" id="5cPWD10K$3k">
     <property role="EcuMT" value="5995965180289368276" />
     <property role="3GE5qa" value="dependencies" />
-    <property role="TrG5h" value="IDependency" />
+    <property role="TrG5h" value="IDependencyDefinition" />
     <node concept="PrWs8" id="69SOXVnRizY" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -1821,9 +1824,6 @@
     </node>
     <node concept="PrWs8" id="3kGPU1QcSOR" role="PrDN$">
       <ref role="PrY4T" node="3kGPU1QcSOP" resolve="IReferenceableDependency" />
-    </node>
-    <node concept="PrWs8" id="7VjLoWiMzku" role="PrDN$">
-      <ref role="PrY4T" to="evry:7VjLoWiMzkq" resolve="ICustomizableTypeInfo" />
     </node>
     <node concept="1TJgyj" id="4m0g11MookZ" role="1TKVEi">
       <property role="IQ2ns" value="5008073225018639679" />

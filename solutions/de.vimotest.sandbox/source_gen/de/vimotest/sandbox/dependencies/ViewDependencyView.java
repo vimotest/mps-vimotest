@@ -5,4 +5,5 @@ package de.vimotest.sandbox.dependencies;
 
 public interface ViewDependencyView {
   void Foo();
+  void ConfirmDeletion();
 }

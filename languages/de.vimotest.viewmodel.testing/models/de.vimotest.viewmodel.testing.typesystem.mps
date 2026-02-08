@@ -3862,7 +3862,7 @@
             <property role="TrG5h" value="definedParameters" />
             <node concept="A3Dl8" id="54nmQxLQDSy" role="1tU5fm">
               <node concept="3Tqbb2" id="54nmQxLQDS_" role="A3Ik2">
-                <ref role="ehGHo" to="evry:F907haLIRL" resolve="IStructContent" />
+                <ref role="ehGHo" to="at53:4m0g11Moo3J" resolve="OperationParameter" />
               </node>
             </node>
             <node concept="2OqwBi" id="54nmQxLQL$q" role="33vP2m">
@@ -3911,7 +3911,7 @@
             <property role="TrG5h" value="definedParametersList" />
             <node concept="_YKpA" id="54nmQxLQMWH" role="1tU5fm">
               <node concept="3Tqbb2" id="54nmQxLQMWK" role="_ZDj9">
-                <ref role="ehGHo" to="evry:F907haLIRL" resolve="IStructContent" />
+                <ref role="ehGHo" to="at53:4m0g11Moo3J" resolve="OperationParameter" />
               </node>
             </node>
             <node concept="2OqwBi" id="54nmQxLQMXg" role="33vP2m">
@@ -4042,7 +4042,7 @@
               <node concept="3cpWsn" id="54nmQxLRdZm" role="3cpWs9">
                 <property role="TrG5h" value="parameters" />
                 <node concept="2I9FWS" id="54nmQxLRe58" role="1tU5fm">
-                  <ref role="2I9WkF" to="evry:F907haLIRL" resolve="IStructContent" />
+                  <ref role="2I9WkF" to="at53:4m0g11Moo3J" resolve="OperationParameter" />
                 </node>
                 <node concept="2OqwBi" id="54nmQxLRdZn" role="33vP2m">
                   <node concept="2OqwBi" id="54nmQxLRdZo" role="2Oq$k0">

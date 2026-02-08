@@ -817,7 +817,7 @@
     </node>
     <node concept="3lhOvk" id="47nlIY2QbNZ" role="3lj3bC">
       <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="at53:5cPWD10K$3k" resolve="IDependency" />
+      <ref role="30HIoZ" to="at53:5cPWD10K$3k" resolve="IDependencyDefinition" />
       <ref role="3lhOvi" node="47nlIY2Qc27" resolve="root_mapping_Dependency" />
     </node>
     <node concept="3lhOvk" id="3jx7KixuOP" role="3lj3bC">
@@ -4944,7 +4944,7 @@
       </node>
     </node>
     <node concept="n94m4" id="47nlIY2Qc29" role="lGtFl">
-      <ref role="n9lRv" to="at53:5cPWD10K$3k" resolve="IDependency" />
+      <ref role="n9lRv" to="at53:5cPWD10K$3k" resolve="IDependencyDefinition" />
     </node>
     <node concept="1pdMLZ" id="3KSOinN$jMm" role="lGtFl">
       <node concept="15lBmy" id="3KSOinN$jVP" role="15mYut">

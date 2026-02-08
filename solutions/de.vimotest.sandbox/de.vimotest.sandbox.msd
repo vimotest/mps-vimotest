@@ -21,7 +21,7 @@
     <language slang="l:d0e1230a-72e3-4b6b-88f2-98d924f7de11:alfi.toJavaBaseLanguage" version="0" />
     <language slang="l:5e0eeeb3-eed4-4b9b-abeb-23480a03ca33:de.vimotest.generation.preprocessing" version="0" />
     <language slang="l:611ecc9e-0703-4ab9-a13c-fb396c607716:de.vimotest.types" version="0" />
-    <language slang="l:ce7915b5-36b4-4478-a67c-f5a8a72ed4a0:de.vimotest.viewmodel" version="1" />
+    <language slang="l:ce7915b5-36b4-4478-a67c-f5a8a72ed4a0:de.vimotest.viewmodel" version="2" />
     <language slang="l:716e8717-88c0-4280-8c16-b4d88567596f:de.vimotest.viewmodel.testing" version="1" />
     <language slang="l:479c7a8c-02f9-43b5-9139-d910cb22f298:jetbrains.mps.core.xml" version="0" />
     <language slang="l:4caf0310-491e-41f5-8a9b-2006b3a94898:jetbrains.mps.execution.util" version="0" />

@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="1" />
+    <use id="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" name="de.vimotest.viewmodel" version="2" />
     <use id="716e8717-88c0-4280-8c16-b4d88567596f" name="de.vimotest.viewmodel.testing" version="1" />
   </languages>
   <imports>
@@ -36,7 +36,6 @@
         <child id="777152910168882908" name="contents" index="103ZUC" />
       </concept>
       <concept id="7808764115844956430" name="de.vimotest.types.structure.IntType" flags="ng" index="1nBWMp" />
-      <concept id="7808764115843597086" name="de.vimotest.types.structure.FieldStructContent" flags="ng" index="1nWCU9" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -94,6 +93,7 @@
       <concept id="5219625661134590255" name="de.vimotest.viewmodel.structure.SingleOrMultiLineString" flags="ng" index="o7Kjd" />
       <concept id="5213916851000129488" name="de.vimotest.viewmodel.structure.VisibilityFeature" flags="ng" index="C4FCg" />
       <concept id="5213916851000129489" name="de.vimotest.viewmodel.structure.EnabledFeature" flags="ng" index="C4FCh" />
+      <concept id="5008073225018638575" name="de.vimotest.viewmodel.structure.OperationParameter" flags="ng" index="RSs3Z" />
       <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6">
         <child id="5219625661134947434" name="defaultText" index="o6p68" />
       </concept>
@@ -120,7 +120,7 @@
           <node concept="3Vw88J" id="63ktVPtYQyu" role="1006ar">
             <property role="TrG5h" value="LoadViewModel" />
             <property role="2hCfGp" value="true" />
-            <node concept="1nWCU9" id="63ktVPtYQyx" role="103ZUC">
+            <node concept="RSs3Z" id="2L$sa502kdc" role="103ZUC">
               <property role="TrG5h" value="Parameter" />
               <node concept="1nBWMp" id="63ktVPtYQyC" role="3xMlr6" />
             </node>

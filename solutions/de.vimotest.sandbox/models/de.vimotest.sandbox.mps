@@ -6018,6 +6018,7 @@
   <node concept="103ZX$" id="4m0g11MwG31">
     <property role="$YGLj" value="SimpleDependency_" />
     <property role="3GE5qa" value="dependencies" />
+    <property role="ft0au" value="true" />
     <node concept="103ZXx" id="4m0g11MwG32" role="103ZXC">
       <node concept="3Vw88J" id="4m0g11MwG33" role="1006ar">
         <property role="TrG5h" value="LoadViewModel" />
@@ -6132,9 +6133,6 @@
       <node concept="33PmoL" id="32SpZNIZgXF" role="RSswE">
         <ref role="33Pmof" node="4m0g11MwG31" resolve="SimpleDependency_ViewModel" />
       </node>
-      <node concept="33PmoL" id="2L$sa525ZvY" role="RSswE">
-        <ref role="33Pmof" node="2L$sa525YSL" resolve="SimplyDependencyWithSpy_ViewModel" />
-      </node>
     </node>
   </node>
   <node concept="30n1Qd" id="54nmQxEJWUd">
@@ -6164,11 +6162,11 @@
           <node concept="w2mZS" id="4I$Err6E7pQ" role="DUiSb">
             <property role="w2msf" value="1" />
             <property role="w2ms1" value="1" />
-            <ref role="w2ms5" node="2L$sa525YSL" resolve="SimplyDependencyWithSpy_ViewModel" />
-            <ref role="w2ms6" node="2L$sa525YSN" resolve="LoadViewModel" />
-            <node concept="w2mso" id="2L$sa53mN1W" role="w2ms7">
-              <ref role="w2mvX" node="2L$sa525YSO" resolve="Path" />
-              <node concept="_iklQ" id="2L$sa53mN2D" role="w2msq">
+            <ref role="w2ms5" node="4m0g11MwG31" resolve="SimpleDependency_ViewModel" />
+            <ref role="w2ms6" node="4m0g11MwG33" resolve="LoadViewModel" />
+            <node concept="w2mso" id="4I$Err6HaML" role="w2ms7">
+              <ref role="w2mvX" node="2L$sa502fuP" resolve="Path" />
+              <node concept="_iklQ" id="4I$Err6HaPl" role="w2msq">
                 <property role="_iklR" value="MyPath" />
               </node>
             </node>
@@ -6417,6 +6415,9 @@
       <node concept="jXsxW" id="5cPWD11cezT" role="RSswE">
         <node concept="RSsdF" id="5cPWD11obpb" role="RSskJ">
           <property role="TrG5h" value="Foo" />
+        </node>
+        <node concept="RSsdF" id="4I$Err6PlDn" role="RSskJ">
+          <property role="TrG5h" value="ConfirmDeletion" />
         </node>
       </node>
     </node>
@@ -6731,28 +6732,6 @@
         <node concept="1nBS12" id="5U4kGNTFVlM" role="1WnWvN" />
       </node>
     </node>
-  </node>
-  <node concept="103ZX$" id="2L$sa525YSL">
-    <property role="$YGLj" value="SimplyDependencyWithSpy_" />
-    <property role="3GE5qa" value="dependencies" />
-    <property role="ft0au" value="true" />
-    <node concept="103ZXx" id="2L$sa525YSM" role="103ZXC">
-      <node concept="3Vw88J" id="2L$sa525YSN" role="1006ar">
-        <property role="TrG5h" value="LoadViewModel" />
-        <property role="2hCfGp" value="true" />
-        <node concept="RSs3Z" id="2L$sa525YSO" role="103ZUC">
-          <property role="TrG5h" value="Path" />
-          <node concept="1nBS12" id="2L$sa525YSP" role="3xMlr6" />
-        </node>
-      </node>
-    </node>
-    <node concept="103ZXB" id="2L$sa525YSQ" role="103ZXF">
-      <node concept="1nWCU9" id="2L$sa52e6f3" role="103ZUC">
-        <property role="TrG5h" value="MyBool" />
-        <node concept="1nBHEw" id="2L$sa52e6f4" role="3xMlr6" />
-      </node>
-    </node>
-    <node concept="2PDISX" id="2L$sa525YST" role="2PDvFJ" />
   </node>
 </model>
 

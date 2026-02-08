@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="de.vimotest.viewmodel" uuid="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" languageVersion="1" moduleVersion="0">
+<language namespace="de.vimotest.viewmodel" uuid="ce7915b5-36b4-4478-a67c-f5a8a72ed4a0" languageVersion="2" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot path="${module}/models" />

@@ -17,7 +17,6 @@
       <concept id="7808764115844896567" name="de.vimotest.types.structure.BoolType" flags="ng" index="1nBHEw" />
       <concept id="7808764115844976085" name="de.vimotest.types.structure.StringType" flags="ng" index="1nBS12" />
       <concept id="7808764115844956430" name="de.vimotest.types.structure.IntType" flags="ng" index="1nBWMp" />
-      <concept id="7808764115843597086" name="de.vimotest.types.structure.FieldStructContent" flags="ng" index="1nWCU9" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -87,6 +86,7 @@
         <child id="1938192778486065161" name="checkCommand" index="T1B0p" />
         <child id="7278489671513126078" name="textFeature" index="1ISttP" />
       </concept>
+      <concept id="5008073225018638575" name="de.vimotest.viewmodel.structure.OperationParameter" flags="ng" index="RSs3Z" />
       <concept id="8882441622785832542" name="de.vimotest.viewmodel.structure.TextFeature" flags="ng" index="V3Zf6">
         <child id="5219625661134947434" name="defaultText" index="o6p68" />
       </concept>
@@ -115,15 +115,15 @@
       <node concept="3Vw88J" id="Of5vVZtG4X" role="1006ar">
         <property role="TrG5h" value="LoadViewModel" />
         <property role="2hCfGp" value="true" />
-        <node concept="1nWCU9" id="Of5vVZtNJ2" role="103ZUC">
+        <node concept="RSs3Z" id="2L$sa502fuJ" role="103ZUC">
           <property role="TrG5h" value="Value1" />
           <node concept="1nBS12" id="Of5vVZtNJ9" role="3xMlr6" />
         </node>
-        <node concept="1nWCU9" id="Of5vVZtNJG" role="103ZUC">
+        <node concept="RSs3Z" id="2L$sa502fuK" role="103ZUC">
           <property role="TrG5h" value="Value2" />
           <node concept="1nBHEw" id="Of5vVZtNJO" role="3xMlr6" />
         </node>
-        <node concept="1nWCU9" id="Of5vVZtNKi" role="103ZUC">
+        <node concept="RSs3Z" id="2L$sa502fuL" role="103ZUC">
           <property role="TrG5h" value="Value3" />
           <node concept="1nBWMp" id="Of5vVZtNKq" role="3xMlr6" />
         </node>

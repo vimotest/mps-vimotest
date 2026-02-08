@@ -1782,7 +1782,7 @@
       <node concept="37vLTG" id="32SpZNIS4wS" role="3clF46">
         <property role="TrG5h" value="dependency" />
         <node concept="3Tqbb2" id="32SpZNIS4SH" role="1tU5fm">
-          <ref role="ehGHo" to="at53:5cPWD10K$3k" resolve="IDependency" />
+          <ref role="ehGHo" to="at53:5cPWD10K$3k" resolve="IDependencyDefinition" />
         </node>
       </node>
       <node concept="3clFbS" id="32SpZNIS3lm" role="3clF47">

@@ -1,6 +1,7 @@
 #pragma once
 
 #include <vector>
+#include "CommandEnum.h"
 #include <string>
 
 namespace commands
@@ -8,6 +9,6 @@ namespace commands
   class GenericCommands_ViewModel
   {
   public:
-    virtual void myCommand(bool MyFlag, std::vector<std::string> Names);
+    virtual void myCommand(bool MyFlag, std::vector<std::string> Names, CommandEnum EnumValue);
   };
 }

@@ -11,6 +11,10 @@ namespace dependencies
         {
         }
 
+        public override void SetDependencyStubContext()
+        {
+        }
+
         public override dependencies.ViewDependencyViewModel BuildSut()
         {
             return null;

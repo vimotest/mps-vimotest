@@ -2,6 +2,7 @@
 #include <memory>
 #include "GenericCommands_ViewModelTestEnvironment.h"
 #include <string>
+#include "CommandEnum.h"
 #include "GenericCommands_ViewModel.h"
 #include "GenericCommands_ViewModelTestEnvironmentImpl.h"
 
@@ -38,6 +39,6 @@ namespace commands
   }
   void GenericCommands_ViewTests::when_MyCommand()
   {
-    this->sut->myCommand(false, { std::string("A"), std::string("B") });
+    this->sut->myCommand(false, { std::string("A"), std::string("B") }, commands::CommandEnum::Value1);
   }
 }

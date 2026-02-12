@@ -17,15 +17,29 @@ class ViewDependencyViewModelTests {
   }
   
   /** 
-  Scenario: View Dependency
+  Scenario: View Dependency Call (no parameters, no results)
     given: 
      when: Refresh
      then:  */
 
-  public View_Dependency_given_when_Refresh_then_ (  ) {
+  public View_Dependency_Call_no_parameters_no_results_given_when_Refresh_then_ (  ) {
     this.BuildSut (  );
 
     this.when_Refresh (  );
+
+  }
+  /** 
+  Scenario: View Dependency With Result
+    given: DependencyStubContext
+     when: ConfirmDeletion
+     then:  */
+
+  public View_Dependency_With_Result_given_DependencyStubContext_when_ConfirmDeletion_then_ (  ) {
+    this.given_DependencyStubContext (  );
+
+    this.BuildSut (  );
+
+    this.when_ConfirmDeletion (  );
 
   }
   
@@ -36,12 +50,24 @@ class ViewDependencyViewModelTests {
   }
   
   
+  // Given Helper Definitions
+
+  
+  public given_DependencyStubContext (  ) {
+    this.testEnvironment.SetDependencyStubContext (  );
+
+  }
   
   // When Helper Definitions
 
   
   public when_Refresh (  ) {
     this.testEnvironment.getViewDependencyView (  ).Refresh (  );
+
+  }
+  
+  public when_ConfirmDeletion (  ) {
+    this.testEnvironment.getViewDependencyView (  ).ConfirmDeletion (  );
 
   }
   

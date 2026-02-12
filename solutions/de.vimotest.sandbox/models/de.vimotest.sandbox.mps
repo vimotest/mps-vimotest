@@ -266,6 +266,9 @@
         <child id="7199841511154487303" name="actionsWithDescription" index="1s$QAM" />
         <child id="7199841511154487304" name="assertsWithDescription" index="1s$QAX" />
       </concept>
+      <concept id="5391318435979830590" name="de.vimotest.viewmodel.testing.structure.EnumSymbolExpression" flags="ng" index="3thAEN">
+        <reference id="5391318435979878567" name="symbol" index="3tiqWE" />
+      </concept>
       <concept id="5678667081004710962" name="de.vimotest.viewmodel.testing.structure.ViewWidgetCommandAction" flags="ng" index="3ucX6H">
         <reference id="5678667081004731049" name="widget" index="3ucQsQ" />
       </concept>
@@ -3255,6 +3258,12 @@
             <node concept="1nBS12" id="5jkMFwCz1Ix" role="1WnWvN" />
           </node>
         </node>
+        <node concept="RSs3Z" id="4FhNSQnMdng" role="103ZUC">
+          <property role="TrG5h" value="EnumValue" />
+          <node concept="14C5Nb" id="4FhNSQnMdno" role="3xMlr6">
+            <ref role="2BLa4B" node="4FhNSQnMdlA" resolve="CommandEnum" />
+          </node>
+        </node>
       </node>
       <node concept="103ZWm" id="BXIJijoLpK" role="1006ar" />
     </node>
@@ -3446,6 +3455,9 @@
                     <property role="_iklR" value="B" />
                   </node>
                 </node>
+              </node>
+              <node concept="3thAEN" id="4FhNSQnSTIl" role="_vku1">
+                <ref role="3tiqWE" node="4FhNSQnMdlH" resolve="Value1" />
               </node>
             </node>
           </node>
@@ -6786,6 +6798,16 @@
       <node concept="1WnWvM" id="5U4kGNTFVko" role="3xMlr6">
         <node concept="1nBS12" id="5U4kGNTFVlM" role="1WnWvN" />
       </node>
+    </node>
+  </node>
+  <node concept="gnG1x" id="4FhNSQnMdlA">
+    <property role="3GE5qa" value="commands" />
+    <property role="TrG5h" value="CommandEnum" />
+    <node concept="gnG1y" id="4FhNSQnMdlH" role="gnG$T">
+      <property role="TrG5h" value="Value1" />
+    </node>
+    <node concept="gnG1y" id="4FhNSQnMdlX" role="gnG$T">
+      <property role="TrG5h" value="Value2" />
     </node>
   </node>
 </model>

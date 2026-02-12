@@ -8,6 +8,9 @@ namespace dependencies
   void ViewDependencyViewModelTestEnvironmentImpl::Init()
   {
   }
+  void ViewDependencyViewModelTestEnvironmentImpl::SetDependencyStubContext()
+  {
+  }
   std::shared_ptr<ViewDependencyViewModel> ViewDependencyViewModelTestEnvironmentImpl::BuildSut()
   {
     return nullptr;

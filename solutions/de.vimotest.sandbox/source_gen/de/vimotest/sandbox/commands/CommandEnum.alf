@@ -1,0 +1,8 @@
+namespace commands ;
+
+
+
+
+public enum CommandEnum {
+  Value1, Value2
+}

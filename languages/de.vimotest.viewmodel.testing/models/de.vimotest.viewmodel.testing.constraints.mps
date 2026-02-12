@@ -1625,5 +1625,15 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="4FhNSQnA62L">
+    <property role="3GE5qa" value="test.assert.util" />
+    <ref role="1M2myG" to="53m0:4FhNSQn_UkY" resolve="EnumSymbolExpression" />
+    <node concept="1N5Pfh" id="4FhNSQnA62M" role="1Mr941">
+      <ref role="1N5Vy1" to="53m0:4FhNSQnA62B" resolve="symbol" />
+      <node concept="1dDu$B" id="4FhNSQnA65x" role="1N6uqs">
+        <ref role="1dDu$A" to="evry:5cPWD13qNbM" resolve="EnumSymbol" />
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -7,6 +7,9 @@ class ViewDependencyViewModelTestEnvironmentImpl specializes ViewDependencyViewM
   public Init (  ) {    
   }
   
+  public SetDependencyStubContext (  ) {    
+  }
+  
   public BuildSut (  ) : ViewDependencyViewModel  {
     return null;
 

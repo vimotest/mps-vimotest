@@ -11,8 +11,8 @@
     <import index="at53" ref="r:9e3a5843-688b-4c6d-b3dd-9f321700c21b(de.vimotest.viewmodel.structure)" />
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
     <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" />
+    <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="28lk" ref="r:44b855ed-3db6-4327-8e8d-7c8dcf7b1b4f(alfi.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -1792,6 +1792,21 @@
       <property role="20kJfa" value="result" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="at53:5cPWD1210DC" resolve="OperationResult" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4FhNSQn_UkY">
+    <property role="EcuMT" value="5391318435979830590" />
+    <property role="3GE5qa" value="test.assert.util" />
+    <property role="TrG5h" value="EnumSymbolExpression" />
+    <property role="34LRSv" value="enum value" />
+    <ref role="1TJDcQ" to="28lk:2kuSLC0kNK2" resolve="Expression" />
+    <node concept="PrWs8" id="4FhNSQn_U$4" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyj" id="4FhNSQnA62B" role="1TKVEi">
+      <property role="IQ2ns" value="5391318435979878567" />
+      <property role="20kJfa" value="symbol" />
+      <ref role="20lvS9" to="evry:5cPWD13qNbM" resolve="EnumSymbol" />
     </node>
   </node>
 </model>

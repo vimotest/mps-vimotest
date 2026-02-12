@@ -454,11 +454,14 @@
       <concept id="3492897886877920834" name="alfi.structure.EmptyLineNamespaceMember" flags="ng" index="8qQDt">
         <child id="3331415707833704702" name="comment" index="2AFz0h" />
       </concept>
+      <concept id="4132467325163854475" name="alfi.structure.EnumerationLiteralName" flags="ng" index="b5qeC" />
+      <concept id="4132467325163832519" name="alfi.structure.EnumerationDefinition" flags="ng" index="b5vR$" />
       <concept id="2317419387863167286" name="alfi.structure.ConditionalTestExpression" flags="ng" index="2h1H6h">
         <child id="2317419387863175119" name="operand1" index="2h6iXC" />
         <child id="2317419387863175123" name="operand3" index="2h6iXO" />
         <child id="2317419387863175121" name="operand2" index="2h6iXQ" />
       </concept>
+      <concept id="8280419611661851712" name="alfi.structure.PackageDefinition" flags="ng" index="2qCqA3" />
       <concept id="7811714995598096642" name="alfi.structure.SequenceAccessExpression" flags="ng" index="rnV1$">
         <property id="7811714995598096673" name="unsafe" index="rnV17" />
         <child id="7811714995598096644" name="index" index="rnV1y" />
@@ -885,6 +888,94 @@
                         <ref role="3Tt5mk" to="28lk:1KdBIfXLcw_" resolve="typeName" />
                       </node>
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="4FhNSQo3djA" role="3acgRq">
+      <ref role="30HIoZ" to="53m0:4FhNSQn_UkY" resolve="EnumSymbolExpression" />
+      <node concept="1Koe21" id="4FhNSQo3ehf" role="1lVwrX">
+        <node concept="3mGtxK" id="4FhNSQo3ehj" role="1Koe22">
+          <node concept="2qCqA3" id="4FhNSQo3ehl" role="3mGtxP">
+            <property role="PCHHn" value="6OepWIVA92I/package" />
+            <property role="TrG5h" value="Foo" />
+            <node concept="b5vR$" id="4FhNSQo3ehn" role="PCHHv">
+              <property role="TrG5h" value="MyEnum" />
+              <node concept="b5qeC" id="4FhNSQo3ehZ" role="PCHHv">
+                <property role="TrG5h" value="Value" />
+              </node>
+            </node>
+            <node concept="PCHHj" id="4FhNSQo3eiJ" role="PCHHv">
+              <property role="TrG5h" value="Bar" />
+              <node concept="PCHzy" id="4FhNSQo3eiN" role="PCHGa">
+                <node concept="_jtW9" id="4FhNSQo3gNm" role="PCHzz">
+                  <node concept="_uYbk" id="4FhNSQo3gOb" role="_jtWe">
+                    <node concept="_vnHb" id="4FhNSQo3gOc" role="_uYbl">
+                      <node concept="_vnHe" id="4FhNSQo3gOd" role="35HzJw">
+                        <ref role="3acloq" node="4FhNSQo3ehn" resolve="MyEnum" />
+                        <node concept="1ZhdrF" id="4FhNSQo3gW_" role="lGtFl">
+                          <property role="2qtEX8" value="nameRef" />
+                          <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
+                          <node concept="3$xsQk" id="4FhNSQo3gWA" role="3$ytzL">
+                            <node concept="3clFbS" id="4FhNSQo3gWB" role="2VODD2">
+                              <node concept="3clFbF" id="4FhNSQo3gZ7" role="3cqZAp">
+                                <node concept="2OqwBi" id="4FhNSQo3hcX" role="3clFbG">
+                                  <node concept="1iwH7S" id="4FhNSQo3gZ6" role="2Oq$k0" />
+                                  <node concept="1iwH70" id="4FhNSQo3hjm" role="2OqNvi">
+                                    <ref role="1iwH77" to="qhqb:4gxFnBYLx_I" resolve="INamedConcept_EnumerationDefinition" />
+                                    <node concept="1PxgMI" id="4FhNSQo3ioj" role="1iwH7V">
+                                      <property role="1BlNFB" value="true" />
+                                      <node concept="2OqwBi" id="4FhNSQo3hN$" role="1m5AlR">
+                                        <node concept="2OqwBi" id="4FhNSQo3jXf" role="2Oq$k0">
+                                          <node concept="30H73N" id="4FhNSQo3hwH" role="2Oq$k0" />
+                                          <node concept="3TrEf2" id="4FhNSQo3k68" role="2OqNvi">
+                                            <ref role="3Tt5mk" to="53m0:4FhNSQnA62B" resolve="symbol" />
+                                          </node>
+                                        </node>
+                                        <node concept="1mfA1w" id="4FhNSQo3i0X" role="2OqNvi" />
+                                      </node>
+                                      <node concept="chp4Y" id="60aRe9Ye0Rc" role="3oSUPX">
+                                        <ref role="cht4Q" to="evry:5cPWD13qNbL" resolve="EnumType" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="_vnHe" id="4FhNSQo3gOe" role="35HzJw">
+                        <ref role="3acloq" node="4FhNSQo3ehZ" resolve="Value" />
+                        <node concept="1ZhdrF" id="4FhNSQo3iAn" role="lGtFl">
+                          <property role="2qtEX8" value="nameRef" />
+                          <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
+                          <node concept="3$xsQk" id="4FhNSQo3iAq" role="3$ytzL">
+                            <node concept="3clFbS" id="4FhNSQo3iAr" role="2VODD2">
+                              <node concept="3clFbF" id="4FhNSQo3iPM" role="3cqZAp">
+                                <node concept="2OqwBi" id="4FhNSQo3j3C" role="3clFbG">
+                                  <node concept="1iwH7S" id="4FhNSQo3iPL" role="2Oq$k0" />
+                                  <node concept="1iwH70" id="4FhNSQo3j9M" role="2OqNvi">
+                                    <ref role="1iwH77" to="qhqb:4gxFnBYLxOw" resolve="INamedConcept_EnumerationLiteral" />
+                                    <node concept="2OqwBi" id="4FhNSQo3j_p" role="1iwH7V">
+                                      <node concept="30H73N" id="4FhNSQo3ji_" role="2Oq$k0" />
+                                      <node concept="3TrEf2" id="4FhNSQo3jPE" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="53m0:4FhNSQnA62B" resolve="symbol" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="raruj" id="4FhNSQo3gU$" role="lGtFl" />
                   </node>
                 </node>
               </node>

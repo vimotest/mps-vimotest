@@ -12,9 +12,15 @@ public class ViewDependencyViewModelTests_Test {
   private ViewDependencyViewModel sut;
   private ViewDependencyViewModelTestEnvironment testEnvironment;
   @Test
-  public void test_View_Dependency_given_when_Refresh_then_() throws Exception {
+  public void test_View_Dependency_Call_no_parameters_no_results_given_when_Refresh_then_() throws Exception {
     this.BuildSut();
     this.when_Refresh();
+  }
+  @Test
+  public void test_View_Dependency_With_Result_given_DependencyStubContext_when_ConfirmDeletion_then_() throws Exception {
+    this.given_DependencyStubContext();
+    this.BuildSut();
+    this.when_ConfirmDeletion();
   }
   @BeforeEach
   public void setUp() {
@@ -29,9 +35,15 @@ public class ViewDependencyViewModelTests_Test {
   }
 
 
+  public void given_DependencyStubContext() {
+    this.testEnvironment.SetDependencyStubContext();
+  }
 
   public void when_Refresh() {
     this.testEnvironment.getViewDependencyView().Refresh();
+  }
+  public void when_ConfirmDeletion() {
+    this.testEnvironment.getViewDependencyView().ConfirmDeletion();
   }
 
 }

@@ -11,6 +11,7 @@ namespace dependencies
   {
   public:
     void Init() override;
+    void SetDependencyStubContext() override;
     std::shared_ptr<ViewDependencyViewModel> BuildSut() override;
     std::shared_ptr<ViewDependencyView> getViewDependencyView() override;
   };

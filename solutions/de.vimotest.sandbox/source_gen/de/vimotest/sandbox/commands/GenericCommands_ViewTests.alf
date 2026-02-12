@@ -41,7 +41,7 @@ class GenericCommands_ViewTests {
 
   
   public when_MyCommand (  ) {
-    this.sut.myCommand ( false, new String [] { "A",  "B" } );
+    this.sut.myCommand ( false, new String [] { "A",  "B" }, CommandEnum:: Value1 );
 
   }
   

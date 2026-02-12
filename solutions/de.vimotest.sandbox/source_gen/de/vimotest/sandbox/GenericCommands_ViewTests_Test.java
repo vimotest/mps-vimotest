@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.commands.GenericCommands_ViewModelTestEnvironmentImpl;
 import java.util.Arrays;
+import de.vimotest.sandbox.commands.CommandEnum;
 
 public class GenericCommands_ViewTests_Test {
   private GenericCommands_ViewModel sut;
@@ -32,7 +33,7 @@ public class GenericCommands_ViewTests_Test {
 
 
   public void when_MyCommand() {
-    this.sut.myCommand(false, Arrays.asList("A", "B"));
+    this.sut.myCommand(false, Arrays.asList("A", "B"), CommandEnum.Value1);
   }
 
 }

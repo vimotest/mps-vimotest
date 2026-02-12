@@ -8,6 +8,9 @@ public class ViewDependencyViewModelTestEnvironmentImpl extends ViewDependencyVi
   public void Init() {
   }
   @Override
+  public void SetDependencyStubContext() {
+  }
+  @Override
   public ViewDependencyViewModel BuildSut() {
     return null;
   }

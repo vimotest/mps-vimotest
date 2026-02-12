@@ -1,0 +1,18 @@
+namespace commands ;
+
+
+
+activity convertCommandEnumToString ( in symbol: CommandEnum  ) : String  {
+  if ( symbol == CommandEnum:: Value1 ) {
+    return "Value1";
+
+  } 
+
+  if ( symbol == CommandEnum:: Value2 ) {
+    return "Value2";
+
+  } 
+
+  return "?";
+
+}

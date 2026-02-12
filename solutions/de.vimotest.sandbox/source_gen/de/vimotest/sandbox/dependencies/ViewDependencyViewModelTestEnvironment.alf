@@ -6,6 +6,8 @@ abstract class ViewDependencyViewModelTestEnvironment {
   
   public abstract Init (  ) ;
   
+  public abstract SetDependencyStubContext (  ) ;
+  
   public abstract BuildSut (  ) : ViewDependencyViewModel  ;
   
   public abstract getViewDependencyView (  ) : ViewDependencyView  ;

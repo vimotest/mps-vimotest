@@ -2,6 +2,7 @@
   <ItemGroup>    
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/ConvertMyEnumToString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)bindings/enumtostring/ConvertMyEnumToStr.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)commands/ConvertCommandEnumToString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)commands/ConvertMyOptionsToString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ConvertOptionsToString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ListViews_ViewModelMyListOfLabelRow.cs" />
@@ -174,5 +175,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/RadioButton_ViewModelOptionsOption.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/MyEnum.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)bindings/CustomTypeInfoEnum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)commands/CommandEnum.cs" />
   </ItemGroup>
 </Project>

@@ -5,7 +5,7 @@ package de.vimotest.sandbox.commands;
 import java.util.List;
 
 public class GenericCommands_ViewModel {
-  public void myCommand(Boolean MyFlag, List<String> Names) {
+  public void myCommand(Boolean MyFlag, List<String> Names, CommandEnum EnumValue) {
   }
 
 }

@@ -9,6 +9,8 @@ namespace dependencies
     {
         public abstract void Init();
 
+        public abstract void SetDependencyStubContext();
+
         public abstract dependencies.ViewDependencyViewModel BuildSut();
 
         public abstract dependencies.ViewDependencyView getViewDependencyView();

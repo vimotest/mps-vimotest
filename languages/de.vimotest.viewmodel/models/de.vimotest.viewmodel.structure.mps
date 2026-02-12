@@ -107,7 +107,7 @@
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="F907haLIRH" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" to="evry:50glfRjeyqR" resolve="IValidViMoIdentifier" />
     </node>
     <node concept="PrWs8" id="F907haLJ3t" role="PzmwI">
       <ref role="PrY4T" to="evry:F907haLIRL" resolve="IStructContent" />
@@ -141,7 +141,7 @@
       <ref role="20lvS9" node="69SOXVnRzRz" resolve="DependencySection" />
     </node>
     <node concept="PrWs8" id="F907haLJWq" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" to="evry:50glfRjeyqR" resolve="IValidViMoIdentifier" />
     </node>
     <node concept="PrWs8" id="7VjLoWiMzkx" role="PzmwI">
       <ref role="PrY4T" to="evry:7VjLoWiMzkq" resolve="ICustomizableTypeInfo" />
@@ -559,7 +559,7 @@
       </node>
     </node>
     <node concept="PrWs8" id="2YeT3IB9Gyg" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" to="evry:50glfRjeyqR" resolve="IValidViMoIdentifier" />
     </node>
   </node>
   <node concept="1TIwiD" id="2s$w3BDwT7a">
@@ -1707,7 +1707,7 @@
       <ref role="20lvS9" node="5cPWD10K$3k" resolve="IDependencyDefinition" />
     </node>
     <node concept="PrWs8" id="47nlIY2eTGn" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" to="evry:50glfRjeyqR" resolve="IValidViMoIdentifier" />
     </node>
     <node concept="1irR5M" id="47nlIY2CU63" role="rwd14">
       <property role="2$rrk2" value="3" />
@@ -1817,7 +1817,7 @@
     <property role="3GE5qa" value="dependencies" />
     <property role="TrG5h" value="IDependencyDefinition" />
     <node concept="PrWs8" id="69SOXVnRizY" role="PrDN$">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" to="evry:50glfRjeyqR" resolve="IValidViMoIdentifier" />
     </node>
     <node concept="PrWs8" id="47nlIY20z0n" role="PrDN$">
       <ref role="PrY4T" node="47nlIY20x2m" resolve="IDependencySectionContent" />

@@ -124,7 +124,7 @@
     <property role="3GE5qa" value="struct" />
     <ref role="1TJDcQ" node="F907haLJtZ" resolve="AbstractStructType" />
     <node concept="PrWs8" id="F907haLJu4" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" node="50glfRjeyqR" resolve="IValidViMoIdentifier" />
     </node>
   </node>
   <node concept="1TIwiD" id="F907haLJLR">
@@ -239,7 +239,7 @@
       <ref role="20lvS9" node="5cPWD13qNbM" resolve="EnumSymbol" />
     </node>
     <node concept="PrWs8" id="7cQIBSR_IqT" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" node="50glfRjeyqR" resolve="IValidViMoIdentifier" />
     </node>
     <node concept="PrWs8" id="7VjLoWiM_d8" role="PzmwI">
       <ref role="PrY4T" node="7VjLoWiMzkq" resolve="ICustomizableTypeInfo" />
@@ -554,6 +554,14 @@
     </node>
     <node concept="PrWs8" id="7cQIBSRFmlg" role="PrDN$">
       <ref role="PrY4T" node="7cQIBSRFmle" resolve="IViMoFieldType" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="50glfRjeyqR">
+    <property role="EcuMT" value="5769204571808868023" />
+    <property role="3GE5qa" value="util" />
+    <property role="TrG5h" value="IValidViMoIdentifier" />
+    <node concept="PrWs8" id="50glfRjeyqS" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

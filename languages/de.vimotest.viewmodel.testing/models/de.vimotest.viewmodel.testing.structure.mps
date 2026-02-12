@@ -118,7 +118,7 @@
       <ref role="20lvS9" node="6fZwY6ifrMy" resolve="ViewModelTestScenario" />
     </node>
     <node concept="PrWs8" id="2Yd1qrJOhxd" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" to="evry:50glfRjeyqR" resolve="IValidViMoIdentifier" />
     </node>
     <node concept="PrWs8" id="7VjLoWiMzky" role="PzmwI">
       <ref role="PrY4T" to="evry:7VjLoWiMzkq" resolve="ICustomizableTypeInfo" />

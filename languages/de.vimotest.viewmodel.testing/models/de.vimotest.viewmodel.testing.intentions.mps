@@ -209,12 +209,17 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7236635212850979475" name="jetbrains.mps.lang.smodel.structure.Node_HasNextSiblingOperation" flags="nn" index="rvlfL" />
+      <concept id="8432949284911505116" name="jetbrains.mps.lang.smodel.structure.Node_HasPrevSiblingOperation" flags="nn" index="2t3KhH" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
+      </concept>
+      <concept id="1143224127713" name="jetbrains.mps.lang.smodel.structure.Node_InsertPrevSiblingOperation" flags="nn" index="HtX7F">
+        <child id="1143224127716" name="insertedNode" index="HtX7I" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
@@ -228,6 +233,8 @@
       </concept>
       <concept id="1145573345940" name="jetbrains.mps.lang.smodel.structure.Node_GetAllSiblingsOperation" flags="nn" index="2TvwIu" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
+      <concept id="1143512015885" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingOperation" flags="nn" index="YCak7" />
       <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
         <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
         <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
@@ -2429,6 +2436,193 @@
                 <node concept="3YRAZt" id="yum1wjJrci" role="2OqNvi" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="50glfRj9NWc">
+    <property role="3GE5qa" value="test.assert.widgets.structures.tableview" />
+    <property role="TrG5h" value="DuplicateTableCheckRow_Intention" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="53m0:24MyZrrSM5G" resolve="TableCheckRow" />
+    <node concept="2S6ZIM" id="50glfRj9NWd" role="2ZfVej">
+      <node concept="3clFbS" id="50glfRj9NWe" role="2VODD2">
+        <node concept="3clFbF" id="50glfRj9O3$" role="3cqZAp">
+          <node concept="Xl_RD" id="50glfRj9O3z" role="3clFbG">
+            <property role="Xl_RC" value="Duplicate Row" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="50glfRj9NWf" role="2ZfgGD">
+      <node concept="3clFbS" id="50glfRj9NWg" role="2VODD2">
+        <node concept="3cpWs8" id="50glfRj9OO9" role="3cqZAp">
+          <node concept="3cpWsn" id="50glfRj9OOa" role="3cpWs9">
+            <property role="TrG5h" value="newRow" />
+            <node concept="3Tqbb2" id="50glfRj9ONh" role="1tU5fm">
+              <ref role="ehGHo" to="53m0:24MyZrrSM5G" resolve="TableCheckRow" />
+            </node>
+            <node concept="2OqwBi" id="50glfRj9OOb" role="33vP2m">
+              <node concept="2Sf5sV" id="50glfRj9OOc" role="2Oq$k0" />
+              <node concept="1$rogu" id="50glfRj9OOd" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="50glfRj9O5R" role="3cqZAp">
+          <node concept="2OqwBi" id="50glfRj9OhD" role="3clFbG">
+            <node concept="2Sf5sV" id="50glfRj9O5Q" role="2Oq$k0" />
+            <node concept="HtI8k" id="50glfRj9Ow5" role="2OqNvi">
+              <node concept="37vLTw" id="50glfRj9OOe" role="HtI8F">
+                <ref role="3cqZAo" node="50glfRj9OOa" resolve="newRow" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="50glfRj9PC3" role="3cqZAp">
+          <node concept="2OqwBi" id="50glfRj9PKi" role="3clFbG">
+            <node concept="1XNTG" id="50glfRj9PC2" role="2Oq$k0" />
+            <node concept="liA8E" id="50glfRj9PSv" role="2OqNvi">
+              <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode)" resolve="selectWRTFocusPolicy" />
+              <node concept="37vLTw" id="50glfRj9PTi" role="37wK5m">
+                <ref role="3cqZAo" node="50glfRj9OOa" resolve="newRow" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="50glfRjd0T7">
+    <property role="3GE5qa" value="test.assert.widgets.structures.tableview" />
+    <property role="TrG5h" value="DeleteTableCheckRow_Intention" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="53m0:24MyZrrSM5G" resolve="TableCheckRow" />
+    <node concept="2S6ZIM" id="50glfRjd0T8" role="2ZfVej">
+      <node concept="3clFbS" id="50glfRjd0T9" role="2VODD2">
+        <node concept="3clFbF" id="50glfRjd0Ta" role="3cqZAp">
+          <node concept="Xl_RD" id="50glfRjd0Tb" role="3clFbG">
+            <property role="Xl_RC" value="Delete Row" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="50glfRjd0Tc" role="2ZfgGD">
+      <node concept="3clFbS" id="50glfRjd0Td" role="2VODD2">
+        <node concept="3clFbF" id="50glfRjd1dM" role="3cqZAp">
+          <node concept="2OqwBi" id="50glfRjd1p$" role="3clFbG">
+            <node concept="2Sf5sV" id="50glfRjd1dL" role="2Oq$k0" />
+            <node concept="3YRAZt" id="50glfRjd1C0" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="50glfRjd1D1">
+    <property role="3GE5qa" value="test.assert.widgets.structures.tableview" />
+    <property role="TrG5h" value="MoveUpTableCheckRow_Intention" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="53m0:24MyZrrSM5G" resolve="TableCheckRow" />
+    <node concept="2S6ZIM" id="50glfRjd1D2" role="2ZfVej">
+      <node concept="3clFbS" id="50glfRjd1D3" role="2VODD2">
+        <node concept="3clFbF" id="50glfRjd1D4" role="3cqZAp">
+          <node concept="Xl_RD" id="50glfRjd1D5" role="3clFbG">
+            <property role="Xl_RC" value="Move Row up" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="50glfRjd1D6" role="2ZfgGD">
+      <node concept="3clFbS" id="50glfRjd1D7" role="2VODD2">
+        <node concept="3cpWs8" id="50glfRjd2Gi" role="3cqZAp">
+          <node concept="3cpWsn" id="50glfRjd2Gj" role="3cpWs9">
+            <property role="TrG5h" value="prevSibling" />
+            <node concept="3Tqbb2" id="50glfRjd2FU" role="1tU5fm" />
+            <node concept="2OqwBi" id="50glfRjd2Gk" role="33vP2m">
+              <node concept="2Sf5sV" id="50glfRjd2Gl" role="2Oq$k0" />
+              <node concept="YBYNd" id="50glfRjd2Gm" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="50glfRjd3$t" role="3cqZAp">
+          <node concept="2OqwBi" id="50glfRjd3_3" role="3clFbG">
+            <node concept="2Sf5sV" id="50glfRjd3$s" role="2Oq$k0" />
+            <node concept="3YRAZt" id="50glfRjd3Ah" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="50glfRjd3Bh" role="3cqZAp">
+          <node concept="2OqwBi" id="50glfRjd3Kj" role="3clFbG">
+            <node concept="37vLTw" id="50glfRjd3Bc" role="2Oq$k0">
+              <ref role="3cqZAo" node="50glfRjd2Gj" resolve="prevSibling" />
+            </node>
+            <node concept="HtX7F" id="50glfRjd3Sj" role="2OqNvi">
+              <node concept="2Sf5sV" id="50glfRjd3SW" role="HtX7I" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="50glfRjd1Y6" role="2ZfVeh">
+      <node concept="3clFbS" id="50glfRjd1Y7" role="2VODD2">
+        <node concept="3clFbF" id="50glfRjd25N" role="3cqZAp">
+          <node concept="2OqwBi" id="50glfRjd2oj" role="3clFbG">
+            <node concept="2Sf5sV" id="50glfRjd25M" role="2Oq$k0" />
+            <node concept="2t3KhH" id="50glfRjd2AP" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="50glfRjd3TM">
+    <property role="3GE5qa" value="test.assert.widgets.structures.tableview" />
+    <property role="TrG5h" value="MoveDownTableCheckRow_Intention" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="53m0:24MyZrrSM5G" resolve="TableCheckRow" />
+    <node concept="2S6ZIM" id="50glfRjd3TN" role="2ZfVej">
+      <node concept="3clFbS" id="50glfRjd3TO" role="2VODD2">
+        <node concept="3clFbF" id="50glfRjd3TP" role="3cqZAp">
+          <node concept="Xl_RD" id="50glfRjd3TQ" role="3clFbG">
+            <property role="Xl_RC" value="Move Row down" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="50glfRjd3TR" role="2ZfgGD">
+      <node concept="3clFbS" id="50glfRjd3TS" role="2VODD2">
+        <node concept="3cpWs8" id="50glfRjd3TT" role="3cqZAp">
+          <node concept="3cpWsn" id="50glfRjd3TU" role="3cpWs9">
+            <property role="TrG5h" value="nextSibling" />
+            <node concept="3Tqbb2" id="50glfRjd3TV" role="1tU5fm" />
+            <node concept="2OqwBi" id="50glfRjd3TW" role="33vP2m">
+              <node concept="2Sf5sV" id="50glfRjd3TX" role="2Oq$k0" />
+              <node concept="YCak7" id="50glfRjd5l0" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="50glfRjd3TZ" role="3cqZAp">
+          <node concept="2OqwBi" id="50glfRjd3U0" role="3clFbG">
+            <node concept="2Sf5sV" id="50glfRjd3U1" role="2Oq$k0" />
+            <node concept="3YRAZt" id="50glfRjd3U2" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="50glfRjd3U3" role="3cqZAp">
+          <node concept="2OqwBi" id="50glfRjd3U4" role="3clFbG">
+            <node concept="37vLTw" id="50glfRjd3U5" role="2Oq$k0">
+              <ref role="3cqZAo" node="50glfRjd3TU" resolve="nextSibling" />
+            </node>
+            <node concept="HtI8k" id="50glfRjd5nf" role="2OqNvi">
+              <node concept="2Sf5sV" id="50glfRjd5nU" role="HtI8F" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="50glfRjd3U8" role="2ZfVeh">
+      <node concept="3clFbS" id="50glfRjd3U9" role="2VODD2">
+        <node concept="3clFbF" id="50glfRjd3Ua" role="3cqZAp">
+          <node concept="2OqwBi" id="50glfRjd3Ub" role="3clFbG">
+            <node concept="2Sf5sV" id="50glfRjd3Uc" role="2Oq$k0" />
+            <node concept="rvlfL" id="50glfRjd4hZ" role="2OqNvi" />
           </node>
         </node>
       </node>

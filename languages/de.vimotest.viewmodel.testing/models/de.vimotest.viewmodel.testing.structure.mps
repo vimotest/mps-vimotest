@@ -1809,5 +1809,19 @@
       <ref role="20lvS9" to="evry:5cPWD13qNbM" resolve="EnumSymbol" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5r5zsb3CYIz">
+    <property role="EcuMT" value="6252559525319273379" />
+    <property role="3GE5qa" value="test.assert.util" />
+    <property role="TrG5h" value="SequenceValuesExpression" />
+    <property role="34LRSv" value="sequence values" />
+    <ref role="1TJDcQ" to="28lk:2kuSLC0kNK2" resolve="Expression" />
+    <node concept="1TJgyj" id="5jkMFwCzbk3" role="1TKVEi">
+      <property role="IQ2ns" value="6112733486551708931" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="values" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" to="28lk:2kuSLC0kNK2" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

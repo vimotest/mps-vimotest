@@ -239,6 +239,9 @@
       <concept id="772883491827578824" name="jetbrains.mps.lang.editor.structure.CompletionCustomization_CustomizeFunction" flags="ig" index="3lBaaS" />
       <concept id="772883491827671409" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameterCustomize_CompletionItemInformation" flags="ng" index="3lBNg1" />
       <concept id="772883491827671446" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameterCustomize_Style" flags="ng" index="3lBNjA" />
+      <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
+        <property id="1238091709220" name="labelName" index="1413C4" />
+      </concept>
       <concept id="1223387125302" name="jetbrains.mps.lang.editor.structure.QueryFunction_Boolean" flags="in" index="3nzxsE" />
       <concept id="5329678514806335510" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Concepts" flags="ng" index="1rTJD9">
         <child id="2857509971901910028" name="concepts" index="AZAoy" />
@@ -8431,6 +8434,36 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5r5zsb3CYI$">
+    <property role="3GE5qa" value="test.assert.util" />
+    <ref role="1XX52x" to="53m0:5r5zsb3CYIz" resolve="SequenceValuesExpression" />
+    <node concept="3EZMnI" id="5r5zsb3CYIA" role="2wV5jI">
+      <node concept="3F0ifn" id="5r5zsb3RZ2$" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11LMrY" id="5r5zsb3RZ2A" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="5r5zsb3RZ2G" role="3F10Kt">
+          <property role="1413C4" value="bracket" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="5r5zsb3CYIE" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="53m0:5jkMFwCzbk3" resolve="values" />
+        <node concept="2iRfu4" id="5r5zsb3CYIG" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="5r5zsb3RZ2C" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="11L4FC" id="5r5zsb3RZ2E" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="5r5zsb3RZ2J" role="3F10Kt">
+          <property role="1413C4" value="bracket" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="5r5zsb3CYID" role="2iSdaV" />
     </node>
   </node>
 </model>

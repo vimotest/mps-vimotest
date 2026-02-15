@@ -1635,5 +1635,36 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="5r5zsb43cZ9">
+    <property role="3GE5qa" value="test.assert.util" />
+    <ref role="1M2myG" to="53m0:5r5zsb3CYIz" resolve="SequenceValuesExpression" />
+    <node concept="9S07l" id="5r5zsb43cZa" role="9Vyp8">
+      <node concept="3clFbS" id="5r5zsb43cZb" role="2VODD2">
+        <node concept="3clFbJ" id="5r5zsb43d4i" role="3cqZAp">
+          <node concept="3clFbS" id="5r5zsb43d4j" role="3clFbx">
+            <node concept="3cpWs6" id="5r5zsb43d4k" role="3cqZAp">
+              <node concept="2YIFZM" id="5r5zsb43d4l" role="3cqZAk">
+                <ref role="37wK5l" to="fwln:54nmQxLhsB5" resolve="isSupportedExpressionConcept" />
+                <ref role="1Pybhc" to="fwln:54nmQxLhsA4" resolve="AlfiExpressionScopingHelper" />
+                <node concept="2DD5aU" id="5r5zsb43d4m" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="17R0WA" id="5r5zsb43d4n" role="3clFbw">
+            <node concept="359W_D" id="5r5zsb43d4o" role="3uHU7w">
+              <ref role="359W_E" to="53m0:5r5zsb3CYIz" resolve="SequenceValuesExpression" />
+              <ref role="359W_F" to="53m0:5jkMFwCzbk3" resolve="values" />
+            </node>
+            <node concept="2DA6wF" id="5r5zsb43d4p" role="3uHU7B" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5r5zsb43d4q" role="3cqZAp">
+          <node concept="3clFbT" id="5r5zsb43d4r" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

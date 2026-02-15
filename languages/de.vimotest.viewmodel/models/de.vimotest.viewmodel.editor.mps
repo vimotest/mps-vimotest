@@ -4295,6 +4295,7 @@
       <node concept="l2Vlx" id="zuT2RNpaYP" role="2iSdaV" />
       <node concept="3F0ifn" id="1EVo$X00WZA" role="3EZMnx">
         <property role="3F0ifm" value="inherent support:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
       </node>
       <node concept="3F0A7n" id="1EVo$X00WZB" role="3EZMnx">
         <ref role="1NtTu8" to="at53:4OohpJQO3Nl" resolve="inherentSupport" />
@@ -4314,6 +4315,7 @@
         </node>
         <node concept="3F0ifn" id="zuT2RNpaYX" role="2fqkNU">
           <property role="3F0ifm" value="ignored inherent support" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
         </node>
         <node concept="pkWqt" id="zuT2RNpaYY" role="pqm2j">
           <node concept="3clFbS" id="zuT2RNpaYZ" role="2VODD2">
@@ -4340,15 +4342,19 @@
       <node concept="PMmxH" id="1EVo$X070q$" role="3EZMnx">
         <ref role="PMmxG" node="1EVo$X00WZz" resolve="ViewWidgetFeature_Inspector_EC" />
       </node>
-      <node concept="3F0ifn" id="1EVo$X070q_" role="3EZMnx">
-        <property role="3F0ifm" value="tri-state" />
-        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
-        <node concept="pVoyu" id="1EVo$X070qA" role="3F10Kt">
+      <node concept="2yq9I_" id="5r5zsb4mLAw" role="3EZMnx">
+        <ref role="225u1j" to="at53:1EVo$X00MI7" resolve="supportsTriState" />
+        <node concept="1563Vb" id="5r5zsb4mLAy" role="1563LE">
+          <property role="1563UK" value="[ ]" />
+          <property role="1563Ve" value="[x]" />
+        </node>
+        <node concept="3F0ifn" id="5r5zsb4mLAz" role="2fqkNU">
+          <property role="3F0ifm" value="tri-state" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        </node>
+        <node concept="pVoyu" id="5r5zsb4mLA$" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-      </node>
-      <node concept="3F0A7n" id="1EVo$X070qB" role="3EZMnx">
-        <ref role="1NtTu8" to="at53:1EVo$X00MI7" resolve="supportsTriState" />
       </node>
       <node concept="l2Vlx" id="1EVo$X070qC" role="2iSdaV" />
     </node>

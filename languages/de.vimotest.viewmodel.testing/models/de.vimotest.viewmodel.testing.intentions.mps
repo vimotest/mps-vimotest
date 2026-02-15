@@ -2628,5 +2628,38 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="5r5zsb5zad5">
+    <property role="3GE5qa" value="test.description" />
+    <property role="2ZfUl0" value="true" />
+    <property role="TrG5h" value="ComposedWhenThenParts_AddNext_Intention" />
+    <ref role="2ZfgGC" to="53m0:6fEYrkZukdp" resolve="ComposedWhenThenParts" />
+    <node concept="2S6ZIM" id="5r5zsb5zad6" role="2ZfVej">
+      <node concept="3clFbS" id="5r5zsb5zad7" role="2VODD2">
+        <node concept="3clFbF" id="5r5zsb5zak_" role="3cqZAp">
+          <node concept="Xl_RD" id="5r5zsb5zak$" role="3clFbG">
+            <property role="Xl_RC" value="Add Further When/Then Part" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5r5zsb5zad8" role="2ZfgGD">
+      <node concept="3clFbS" id="5r5zsb5zad9" role="2VODD2">
+        <node concept="3clFbF" id="5r5zsb5zart" role="3cqZAp">
+          <node concept="2OqwBi" id="5r5zsb5za$T" role="3clFbG">
+            <node concept="2Sf5sV" id="5r5zsb5zars" role="2Oq$k0" />
+            <node concept="HtI8k" id="5r5zsb5zaIs" role="2OqNvi">
+              <node concept="2ShNRf" id="5r5zsb5zaJf" role="HtI8F">
+                <node concept="3zrR0B" id="5r5zsb5zcao" role="2ShVmc">
+                  <node concept="3Tqbb2" id="5r5zsb5zcaq" role="3zrR0E">
+                    <ref role="ehGHo" to="53m0:6fEYrkZukdp" resolve="ComposedWhenThenParts" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

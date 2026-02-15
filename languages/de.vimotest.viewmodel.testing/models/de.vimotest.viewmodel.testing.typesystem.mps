@@ -14,6 +14,7 @@
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -259,10 +260,14 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
+      </concept>
       <concept id="1145573345940" name="jetbrains.mps.lang.smodel.structure.Node_GetAllSiblingsOperation" flags="nn" index="2TvwIu" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
@@ -4290,6 +4295,97 @@
     <node concept="1YaCAy" id="7p33En4I14x" role="1YuTPh">
       <property role="TrG5h" value="checkValue" />
       <ref role="1YaFvo" to="53m0:5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5r5zsb4Zdso">
+    <property role="TrG5h" value="check_ViewModelTestScenario" />
+    <property role="3GE5qa" value="test" />
+    <node concept="3clFbS" id="5r5zsb4Zdsp" role="18ibNy">
+      <node concept="3cpWs8" id="50glfRjev0j" role="3cqZAp">
+        <node concept="3cpWsn" id="50glfRjev0k" role="3cpWs9">
+          <property role="TrG5h" value="scenariosWithSameName" />
+          <node concept="A3Dl8" id="50glfRjeuYB" role="1tU5fm">
+            <node concept="3Tqbb2" id="50glfRjeuYE" role="A3Ik2">
+              <ref role="ehGHo" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestScenario" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="50glfRjev0l" role="33vP2m">
+            <node concept="2OqwBi" id="50glfRjev0m" role="2Oq$k0">
+              <node concept="2OqwBi" id="50glfRjev0n" role="2Oq$k0">
+                <node concept="1YBJjd" id="5r5zsb4Zfra" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5r5zsb4Zdsr" resolve="scenario" />
+                </node>
+                <node concept="I4A8Y" id="50glfRjev0p" role="2OqNvi" />
+              </node>
+              <node concept="2SmgA7" id="50glfRjev0q" role="2OqNvi">
+                <node concept="chp4Y" id="50glfRjev0r" role="1dBWTz">
+                  <ref role="cht4Q" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestScenario" />
+                </node>
+              </node>
+            </node>
+            <node concept="3zZkjj" id="50glfRjev0s" role="2OqNvi">
+              <node concept="1bVj0M" id="50glfRjev0t" role="23t8la">
+                <node concept="3clFbS" id="50glfRjev0u" role="1bW5cS">
+                  <node concept="3clFbF" id="50glfRjev0v" role="3cqZAp">
+                    <node concept="17R0WA" id="50glfRjev0w" role="3clFbG">
+                      <node concept="2OqwBi" id="50glfRjev0x" role="3uHU7w">
+                        <node concept="1YBJjd" id="50glfRjev0y" role="2Oq$k0">
+                          <ref role="1YBMHb" node="5r5zsb4Zdsr" resolve="scenario" />
+                        </node>
+                        <node concept="2qgKlT" id="50glfRjev0z" role="2OqNvi">
+                          <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="50glfRjev0$" role="3uHU7B">
+                        <node concept="37vLTw" id="50glfRjev0_" role="2Oq$k0">
+                          <ref role="3cqZAo" node="50glfRjev0B" resolve="it" />
+                        </node>
+                        <node concept="2qgKlT" id="50glfRjev0A" role="2OqNvi">
+                          <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="gl6BB" id="50glfRjev0B" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="50glfRjev0C" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="50glfRjeviI" role="3cqZAp">
+        <node concept="3clFbS" id="50glfRjeviK" role="3clFbx">
+          <node concept="2MkqsV" id="50glfRjeyaQ" role="3cqZAp">
+            <node concept="Xl_RD" id="50glfRjeyb2" role="2MkJ7o">
+              <property role="Xl_RC" value="Test Scenario names must be unique" />
+            </node>
+            <node concept="1YBJjd" id="50glfRjeybK" role="1urrMF">
+              <ref role="1YBMHb" node="5r5zsb4Zdsr" resolve="scenario" />
+            </node>
+            <node concept="2ODE4t" id="50glfRjeycM" role="1urrC5">
+              <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="3eOSWO" id="50glfRjexRH" role="3clFbw">
+          <node concept="3cmrfG" id="50glfRjey37" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="2OqwBi" id="50glfRjev$g" role="3uHU7B">
+            <node concept="37vLTw" id="50glfRjevmu" role="2Oq$k0">
+              <ref role="3cqZAo" node="50glfRjev0k" resolve="scenariosWithSameName" />
+            </node>
+            <node concept="34oBXx" id="50glfRjevNK" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5r5zsb4Zdsr" role="1YuTPh">
+      <property role="TrG5h" value="scenario" />
+      <ref role="1YaFvo" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestScenario" />
     </node>
   </node>
 </model>

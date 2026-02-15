@@ -27,31 +27,31 @@ namespace widgetassertions
     this->testEnvironment = std::make_shared<Buttons_ViewModelTestEnvironmentImpl>();
     this->testEnvironment->Init();
   }
-  /// Scenario: My Scenario
+  /// Scenario: Button Enabled
   ///   given: empty context
   ///    when:
   ///    then: Ok is enabled and is visible and shows text 'Test'
-  TEST_F(Buttons_ViewTests, My_Scenario_given_empty_context_when_then_Ok_is_enabled_and_is_visible_and_shows_text_Test_)
+  TEST_F(Buttons_ViewTests, Button_Enabled_given_empty_context_when_then_Ok_is_enabled_and_is_visible_and_shows_text_Test_)
   {
     this->given_empty_context();
     this->BuildSut();
     this->then_Ok_is_enabled_and_is_visible_and_shows_text_Test_();
   }
-  /// Scenario: My Scenario
+  /// Scenario: Button Disabled
   ///   given: empty context
   ///    when:
   ///    then: Ok is not enabled and is visible and shows text 'Test'
-  TEST_F(Buttons_ViewTests, My_Scenario_given_empty_context_when_then_Ok_is_not_enabled_and_is_visible_and_shows_text_Test_)
+  TEST_F(Buttons_ViewTests, Button_Disabled_given_empty_context_when_then_Ok_is_not_enabled_and_is_visible_and_shows_text_Test_)
   {
     this->given_empty_context();
     this->BuildSut();
     this->then_Ok_is_not_enabled_and_is_visible_and_shows_text_Test_();
   }
-  /// Scenario: My Scenario
+  /// Scenario: Button Invisible
   ///   given: empty context
   ///    when:
   ///    then: Ok is enabled and is not visible and shows text 'Test'
-  TEST_F(Buttons_ViewTests, My_Scenario_given_empty_context_when_then_Ok_is_enabled_and_is_not_visible_and_shows_text_Test_)
+  TEST_F(Buttons_ViewTests, Button_Invisible_given_empty_context_when_then_Ok_is_enabled_and_is_not_visible_and_shows_text_Test_)
   {
     this->given_empty_context();
     this->BuildSut();

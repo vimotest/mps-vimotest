@@ -13,19 +13,19 @@ public class Buttons_ViewTests_Test {
   private Buttons_ViewModel sut;
   private Buttons_ViewModelTestEnvironment testEnvironment;
   @Test
-  public void test_My_Scenario_given_empty_context_when_then_Ok_is_enabled_and_is_visible_and_shows_text_Test_() throws Exception {
+  public void test_Button_Enabled_given_empty_context_when_then_Ok_is_enabled_and_is_visible_and_shows_text_Test_() throws Exception {
     this.given_empty_context();
     this.BuildSut();
     this.then_Ok_is_enabled_and_is_visible_and_shows_text_Test_();
   }
   @Test
-  public void test_My_Scenario_given_empty_context_when_then_Ok_is_not_enabled_and_is_visible_and_shows_text_Test_() throws Exception {
+  public void test_Button_Disabled_given_empty_context_when_then_Ok_is_not_enabled_and_is_visible_and_shows_text_Test_() throws Exception {
     this.given_empty_context();
     this.BuildSut();
     this.then_Ok_is_not_enabled_and_is_visible_and_shows_text_Test_();
   }
   @Test
-  public void test_My_Scenario_given_empty_context_when_then_Ok_is_enabled_and_is_not_visible_and_shows_text_Test_() throws Exception {
+  public void test_Button_Invisible_given_empty_context_when_then_Ok_is_enabled_and_is_not_visible_and_shows_text_Test_() throws Exception {
     this.given_empty_context();
     this.BuildSut();
     this.then_Ok_is_enabled_and_is_not_visible_and_shows_text_Test_();

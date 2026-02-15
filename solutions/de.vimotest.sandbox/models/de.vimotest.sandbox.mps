@@ -3556,7 +3556,7 @@
     <property role="TrG5h" value="Buttons_ViewTests" />
     <ref role="30n1PB" node="5oh1xNFyoLI" resolve="Buttons_ViewModel" />
     <node concept="3LKzX3" id="5oh1xNFzrMV" role="30n1Qb">
-      <property role="TrG5h" value="My Scenario" />
+      <property role="TrG5h" value="Button Enabled" />
       <node concept="1IbZgy" id="5oh1xNFzrN2" role="DUd2K">
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="5oh1xNFzrN3" role="DUiTU" />
@@ -3583,7 +3583,7 @@
       </node>
     </node>
     <node concept="3LKzX3" id="6GOLoDXmWFJ" role="30n1Qb">
-      <property role="TrG5h" value="My Scenario" />
+      <property role="TrG5h" value="Button Disabled" />
       <node concept="1IbZgy" id="6GOLoDXmWFK" role="DUd2K">
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="6GOLoDXmWFL" role="DUiTU" />
@@ -3608,7 +3608,7 @@
       </node>
     </node>
     <node concept="3LKzX3" id="6GOLoDXmWFU" role="30n1Qb">
-      <property role="TrG5h" value="My Scenario" />
+      <property role="TrG5h" value="Button Invisible" />
       <node concept="1IbZgy" id="6GOLoDXmWFV" role="DUd2K">
         <property role="1IbZgB" value="some" />
         <node concept="30l7Wy" id="6GOLoDXmWFW" role="DUiTU" />

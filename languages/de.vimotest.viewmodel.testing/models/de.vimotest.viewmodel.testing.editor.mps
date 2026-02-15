@@ -4084,7 +4084,7 @@
                         <node concept="2Xjw5R" id="7UthagY4INm" role="2OqNvi">
                           <node concept="1xMEDy" id="7UthagY4INn" role="1xVPHs">
                             <node concept="chp4Y" id="7UthagY4INo" role="ri$Ld">
-                              <ref role="cht4Q" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestScenario" />
+                              <ref role="cht4Q" to="53m0:6fEYrkZukdp" resolve="ComposedWhenThenParts" />
                             </node>
                           </node>
                           <node concept="1xIGOp" id="7UthagY4INp" role="1xVPHs" />

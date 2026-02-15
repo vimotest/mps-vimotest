@@ -19,6 +19,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" implicit="true" />
+    <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" implicit="true" />
   </imports>
@@ -136,6 +137,7 @@
       <concept id="1152959968041" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertySetter" flags="in" index="1LLf8_" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <reference id="1213106917431" name="defaultConcreteConcept" index="1MND4H" />
         <child id="6702802731807532730" name="canBeAncestor" index="9SGkC" />
         <child id="6702802731807532712" name="canBeParent" index="9SGkU" />
         <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
@@ -557,18 +559,43 @@
   <node concept="1M2fIO" id="6LujpsVKDD4">
     <property role="3GE5qa" value="commands.base" />
     <ref role="1M2myG" to="at53:7ZadkZWNZxB" resolve="AbstractParameterizedCommand" />
+    <ref role="1MND4H" to="at53:6kjlgUuw6ea" resolve="GenericViewModelCommand" />
     <node concept="9SLcT" id="6LujpsVKIs5" role="9SGkU">
       <node concept="3clFbS" id="6LujpsVKIs6" role="2VODD2">
-        <node concept="3clFbF" id="6LujpsVKIDG" role="3cqZAp">
-          <node concept="3fqX7Q" id="6LujpsVKUqJ" role="3clFbG">
-            <node concept="2OqwBi" id="6LujpsVKUqL" role="3fr31v">
-              <node concept="2DD5aU" id="6LujpsVKUqM" role="2Oq$k0" />
-              <node concept="2Zo12i" id="6LujpsVKUqN" role="2OqNvi">
-                <node concept="chp4Y" id="6LujpsVKUqO" role="2Zo12j">
-                  <ref role="cht4Q" to="at53:F907haLIRF" resolve="ViewWidget" />
+        <node concept="3clFbJ" id="5r5zsb4S6XW" role="3cqZAp">
+          <node concept="3clFbS" id="5r5zsb4S6XX" role="3clFbx">
+            <node concept="3cpWs6" id="5r5zsb4S6XY" role="3cqZAp">
+              <node concept="22lmx$" id="5r5zsb4Sr0F" role="3cqZAk">
+                <node concept="2OqwBi" id="5r5zsb4S6XZ" role="3uHU7B">
+                  <node concept="2DD5aU" id="5r5zsb4S6Y0" role="2Oq$k0" />
+                  <node concept="2Zo12i" id="5r5zsb4S6Y1" role="2OqNvi">
+                    <node concept="chp4Y" id="5r5zsb4S6Y2" role="2Zo12j">
+                      <ref role="cht4Q" to="at53:4m0g11Moo3J" resolve="OperationParameter" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="5r5zsb4Sr1U" role="3uHU7w">
+                  <node concept="2DD5aU" id="5r5zsb4Sr1V" role="2Oq$k0" />
+                  <node concept="3O6GUB" id="5r5zsb4SrjY" role="2OqNvi">
+                    <node concept="chp4Y" id="5r5zsb4Srlc" role="3QVz_e">
+                      <ref role="cht4Q" to="evry:F907haLJLR" resolve="EmptyStructContent" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="17R0WA" id="5r5zsb4S6Y3" role="3clFbw">
+            <node concept="359W_D" id="5r5zsb4S6Y4" role="3uHU7w">
+              <ref role="359W_E" to="evry:F907haLJu3" resolve="AbstractNamedStructType" />
+              <ref role="359W_F" to="evry:F907haLJVs" resolve="contents" />
+            </node>
+            <node concept="2DA6wF" id="5r5zsb4S6Y5" role="3uHU7B" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5r5zsb4S6Y6" role="3cqZAp">
+          <node concept="3clFbT" id="5r5zsb4S6Y7" role="3clFbG">
+            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>

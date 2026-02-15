@@ -92,19 +92,19 @@ public class CheckBoxes_ViewTest
     public virtual void then_MyFlagTriState_is_mixed()
     {
         string actualCheckValue = (this.sut.getIsMyFlagTriStateCheckBoxChecked() == null) ? "indeterminate (null)" : ((this.sut.getIsMyFlagTriStateCheckBoxChecked() == true) ? "checked" : "unchecked");
-        Assert.AreEqual(null, this.sut.getIsMyFlagTriStateCheckBoxChecked(), "Expected that checkbox MyFlagTriState is indeterminate (null), but was <" + actualCheckValue + ">");
+        Assert.AreEqual("indeterminate (null)", actualCheckValue, "Expected that checkbox MyFlagTriState is indeterminate (null), but was <" + actualCheckValue + ">");
     }
 
     public virtual void then_MyFlagTriState_is_checked()
     {
-        string actualCheckValue_1 = (this.sut.getIsMyFlagTriStateCheckBoxChecked() == null) ? "indeterminate (null)" : ((this.sut.getIsMyFlagTriStateCheckBoxChecked() == true) ? "checked" : "unchecked");
-        Assert.IsTrue(this.sut.getIsMyFlagTriStateCheckBoxChecked(), "Expected that checkbox MyFlagTriState is checked, but was <" + actualCheckValue_1 + ">");
+        string actualCheckValue = (this.sut.getIsMyFlagTriStateCheckBoxChecked() == null) ? "indeterminate (null)" : ((this.sut.getIsMyFlagTriStateCheckBoxChecked() == true) ? "checked" : "unchecked");
+        Assert.AreEqual("checked", actualCheckValue, "Expected that checkbox MyFlagTriState is checked, but was <" + actualCheckValue + ">");
     }
 
     public virtual void then_MyFlagTriState_is_not_checked()
     {
-        string actualCheckValue_2 = (this.sut.getIsMyFlagTriStateCheckBoxChecked() == null) ? "indeterminate (null)" : ((this.sut.getIsMyFlagTriStateCheckBoxChecked() == true) ? "checked" : "unchecked");
-        Assert.IsFalse(this.sut.getIsMyFlagTriStateCheckBoxChecked(), "Expected that checkbox MyFlagTriState is unchecked, but was <" + actualCheckValue_2 + ">");
+        string actualCheckValue = (this.sut.getIsMyFlagTriStateCheckBoxChecked() == null) ? "indeterminate (null)" : ((this.sut.getIsMyFlagTriStateCheckBoxChecked() == true) ? "checked" : "unchecked");
+        Assert.AreEqual("unchecked", actualCheckValue, "Expected that checkbox MyFlagTriState is unchecked, but was <" + actualCheckValue + ">");
     }
 
     public virtual void then_MyFlagWithLabel_is_checked_and_is_not_enabled_and_shows_text_value_()

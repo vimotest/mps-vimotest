@@ -99,21 +99,21 @@ class CheckBoxes_ViewTest {
   public then_MyFlagTriState_is_mixed (  ) {
     let actualCheckValue: String = ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == null ) ? "indeterminate (null)" : ( ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == true ) ? "checked" : "unchecked" );
 
-    AssertEqualWithMessage ( null, this.sut.getIsMyFlagTriStateCheckBoxChecked (  ), "Expected that checkbox MyFlagTriState is indeterminate (null), but was <" + actualCheckValue + ">" );
+    AssertEqualWithMessage ( "indeterminate (null)", actualCheckValue, "Expected that checkbox MyFlagTriState is indeterminate (null), but was <" + actualCheckValue + ">" );
 
   }
   
   public then_MyFlagTriState_is_checked (  ) {
-    let actualCheckValue_1: String = ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == null ) ? "indeterminate (null)" : ( ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == true ) ? "checked" : "unchecked" );
+    let actualCheckValue: String = ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == null ) ? "indeterminate (null)" : ( ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == true ) ? "checked" : "unchecked" );
 
-    AssertTrueWithMessage ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ), "Expected that checkbox MyFlagTriState is checked, but was <" + actualCheckValue_1 + ">" );
+    AssertEqualWithMessage ( "checked", actualCheckValue, "Expected that checkbox MyFlagTriState is checked, but was <" + actualCheckValue + ">" );
 
   }
   
   public then_MyFlagTriState_is_not_checked (  ) {
-    let actualCheckValue_2: String = ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == null ) ? "indeterminate (null)" : ( ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == true ) ? "checked" : "unchecked" );
+    let actualCheckValue: String = ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == null ) ? "indeterminate (null)" : ( ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ) == true ) ? "checked" : "unchecked" );
 
-    AssertFalseWithMessage ( this.sut.getIsMyFlagTriStateCheckBoxChecked (  ), "Expected that checkbox MyFlagTriState is unchecked, but was <" + actualCheckValue_2 + ">" );
+    AssertEqualWithMessage ( "unchecked", actualCheckValue, "Expected that checkbox MyFlagTriState is unchecked, but was <" + actualCheckValue + ">" );
 
   }
   

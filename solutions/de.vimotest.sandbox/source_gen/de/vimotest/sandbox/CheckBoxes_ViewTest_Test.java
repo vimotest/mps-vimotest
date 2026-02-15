@@ -61,15 +61,15 @@ public class CheckBoxes_ViewTest_Test {
   }
   public void then_MyFlagTriState_is_mixed() {
     String actualCheckValue = ((Objects.equals(this.sut.getIsMyFlagTriStateCheckBoxChecked(), null)) ? "indeterminate (null)" : (((Objects.equals(this.sut.getIsMyFlagTriStateCheckBoxChecked(), true)) ? "checked" : "unchecked")));
-    Assert.assertEquals("Expected that checkbox MyFlagTriState is indeterminate (null), but was <" + actualCheckValue + ">", null, this.sut.getIsMyFlagTriStateCheckBoxChecked());
+    Assert.assertEquals("Expected that checkbox MyFlagTriState is indeterminate (null), but was <" + actualCheckValue + ">", "indeterminate (null)", actualCheckValue);
   }
   public void then_MyFlagTriState_is_checked() {
-    String actualCheckValue_1 = ((Objects.equals(this.sut.getIsMyFlagTriStateCheckBoxChecked(), null)) ? "indeterminate (null)" : (((Objects.equals(this.sut.getIsMyFlagTriStateCheckBoxChecked(), true)) ? "checked" : "unchecked")));
-    Assert.assertTrue("Expected that checkbox MyFlagTriState is checked, but was <" + actualCheckValue_1 + ">", this.sut.getIsMyFlagTriStateCheckBoxChecked());
+    String actualCheckValue = ((Objects.equals(this.sut.getIsMyFlagTriStateCheckBoxChecked(), null)) ? "indeterminate (null)" : (((Objects.equals(this.sut.getIsMyFlagTriStateCheckBoxChecked(), true)) ? "checked" : "unchecked")));
+    Assert.assertEquals("Expected that checkbox MyFlagTriState is checked, but was <" + actualCheckValue + ">", "checked", actualCheckValue);
   }
   public void then_MyFlagTriState_is_not_checked() {
-    String actualCheckValue_2 = ((Objects.equals(this.sut.getIsMyFlagTriStateCheckBoxChecked(), null)) ? "indeterminate (null)" : (((Objects.equals(this.sut.getIsMyFlagTriStateCheckBoxChecked(), true)) ? "checked" : "unchecked")));
-    Assert.assertFalse("Expected that checkbox MyFlagTriState is unchecked, but was <" + actualCheckValue_2 + ">", this.sut.getIsMyFlagTriStateCheckBoxChecked());
+    String actualCheckValue = ((Objects.equals(this.sut.getIsMyFlagTriStateCheckBoxChecked(), null)) ? "indeterminate (null)" : (((Objects.equals(this.sut.getIsMyFlagTriStateCheckBoxChecked(), true)) ? "checked" : "unchecked")));
+    Assert.assertEquals("Expected that checkbox MyFlagTriState is unchecked, but was <" + actualCheckValue + ">", "unchecked", actualCheckValue);
   }
   public void then_MyFlagWithLabel_is_checked_and_is_not_enabled_and_shows_text_value_() {
     Assert.assertTrue("Expected that checkbox MyFlagWithLabel is checked, but was <" + ((this.sut.getIsMyFlagWithLabelCheckBoxChecked() ? "checked" : "unchecked")) + ">", this.sut.getIsMyFlagWithLabelCheckBoxChecked());

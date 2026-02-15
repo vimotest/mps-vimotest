@@ -85,17 +85,17 @@ namespace widgetassertions
   void CheckBoxes_ViewTest::then_MyFlagTriState_is_mixed()
   {
     std::string actualCheckValue = (!this->sut->getIsMyFlagTriStateCheckBoxChecked().has_value()) ? std::string("indeterminate (null)") : ((this->sut->getIsMyFlagTriStateCheckBoxChecked().value() == true) ? std::string("checked") : std::string("unchecked"));
-    EXPECT_EQ(std:: nullopt, this->sut->getIsMyFlagTriStateCheckBoxChecked()) << std::string("Expected that checkbox MyFlagTriState is indeterminate (null), but was <") + actualCheckValue + std::string(">");
+    EXPECT_EQ(std::string("indeterminate (null)"), actualCheckValue) << std::string("Expected that checkbox MyFlagTriState is indeterminate (null), but was <") + actualCheckValue + std::string(">");
   }
   void CheckBoxes_ViewTest::then_MyFlagTriState_is_checked()
   {
-    std::string actualCheckValue_1 = (!this->sut->getIsMyFlagTriStateCheckBoxChecked().has_value()) ? std::string("indeterminate (null)") : ((this->sut->getIsMyFlagTriStateCheckBoxChecked().value() == true) ? std::string("checked") : std::string("unchecked"));
-    EXPECT_TRUE(this->sut->getIsMyFlagTriStateCheckBoxChecked().value()) << std::string("Expected that checkbox MyFlagTriState is checked, but was <") + actualCheckValue_1 + std::string(">");
+    std::string actualCheckValue = (!this->sut->getIsMyFlagTriStateCheckBoxChecked().has_value()) ? std::string("indeterminate (null)") : ((this->sut->getIsMyFlagTriStateCheckBoxChecked().value() == true) ? std::string("checked") : std::string("unchecked"));
+    EXPECT_EQ(std::string("checked"), actualCheckValue) << std::string("Expected that checkbox MyFlagTriState is checked, but was <") + actualCheckValue + std::string(">");
   }
   void CheckBoxes_ViewTest::then_MyFlagTriState_is_not_checked()
   {
-    std::string actualCheckValue_2 = (!this->sut->getIsMyFlagTriStateCheckBoxChecked().has_value()) ? std::string("indeterminate (null)") : ((this->sut->getIsMyFlagTriStateCheckBoxChecked().value() == true) ? std::string("checked") : std::string("unchecked"));
-    EXPECT_FALSE(this->sut->getIsMyFlagTriStateCheckBoxChecked().value()) << std::string("Expected that checkbox MyFlagTriState is unchecked, but was <") + actualCheckValue_2 + std::string(">");
+    std::string actualCheckValue = (!this->sut->getIsMyFlagTriStateCheckBoxChecked().has_value()) ? std::string("indeterminate (null)") : ((this->sut->getIsMyFlagTriStateCheckBoxChecked().value() == true) ? std::string("checked") : std::string("unchecked"));
+    EXPECT_EQ(std::string("unchecked"), actualCheckValue) << std::string("Expected that checkbox MyFlagTriState is unchecked, but was <") + actualCheckValue + std::string(">");
   }
   void CheckBoxes_ViewTest::then_MyFlagWithLabel_is_checked_and_is_not_enabled_and_shows_text_value_()
   {

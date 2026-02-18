@@ -10923,6 +10923,27 @@
       <ref role="n9lRv" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
     </node>
     <node concept="_$gwK" id="4$4BtXe9U0y" role="lGtFl" />
+    <node concept="1pdMLZ" id="1XMXj$oM3HR" role="lGtFl">
+      <node concept="15lBmy" id="1XMXj$oM5Fg" role="15mYut">
+        <node concept="3clFbS" id="1XMXj$oM5Fh" role="2VODD2">
+          <node concept="3clFbF" id="1XMXj$oM97i" role="3cqZAp">
+            <node concept="37vLTI" id="1XMXj$oMc95" role="3clFbG">
+              <node concept="2YIFZM" id="1XMXj$oMcpo" role="37vLTx">
+                <ref role="37wK5l" to="zcip:1XMXj$oM8Em" resolve="getVirtualPackageForTestEnvironment" />
+                <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="TestEnvironmentGenerationHelper" />
+                <node concept="30H73N" id="1XMXj$oMcsK" role="37wK5m" />
+              </node>
+              <node concept="2OqwBi" id="1XMXj$oM9jV" role="37vLTJ">
+                <node concept="3l3mFP" id="1XMXj$oM97h" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1XMXj$oMbck" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:hnGE5uv" resolve="virtualPackage" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="jVnub" id="5ZcB1GfUHlJ">
     <property role="3GE5qa" value="scenario.given" />
@@ -12809,6 +12830,27 @@
       <ref role="n9lRv" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
     </node>
     <node concept="_$gwK" id="4$4BtXe9Rxl" role="lGtFl" />
+    <node concept="1pdMLZ" id="1XMXj$oMfkD" role="lGtFl">
+      <node concept="15lBmy" id="1XMXj$oMgb8" role="15mYut">
+        <node concept="3clFbS" id="1XMXj$oMgb9" role="2VODD2">
+          <node concept="3clFbF" id="1XMXj$oMgba" role="3cqZAp">
+            <node concept="37vLTI" id="1XMXj$oMgbb" role="3clFbG">
+              <node concept="2YIFZM" id="1XMXj$oMgbc" role="37vLTx">
+                <ref role="37wK5l" to="zcip:1XMXj$oM8Em" resolve="getVirtualPackageForTestEnvironment" />
+                <ref role="1Pybhc" to="zcip:7NXUkdT9lK0" resolve="TestEnvironmentGenerationHelper" />
+                <node concept="30H73N" id="1XMXj$oMgbd" role="37wK5m" />
+              </node>
+              <node concept="2OqwBi" id="1XMXj$oMgbe" role="37vLTJ">
+                <node concept="3l3mFP" id="1XMXj$oMgbf" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1XMXj$oMgbg" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:hnGE5uv" resolve="virtualPackage" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="jVnub" id="4mnk8hC741u">
     <property role="3GE5qa" value="scenario.then.assert_field" />

@@ -29,6 +29,10 @@ namespace widgetassertions
   {
     return this->MyFieldAdditions;
   }
+  std::vector<MyAdditions> LowLevelFields_ViewModel::getMyFieldAdditionsList()
+  {
+    return this->MyFieldAdditionsList;
+  }
   std::vector<std::shared_ptr<LowLevelFields_ViewModelCustomTableRowFieldRow>> LowLevelFields_ViewModel::getCustomTableRowFieldTableRows()
   {
     return this->CustomTableRowFieldTableRows;

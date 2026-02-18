@@ -26,6 +26,10 @@ public class LowLevelFields_ViewModel {
   public MyAdditions getMyFieldAdditions() {
     return this.MyFieldAdditions;
   }
+  private List<MyAdditions> MyFieldAdditionsList = new LinkedList<>();
+  public List<MyAdditions> getMyFieldAdditionsList() {
+    return this.MyFieldAdditionsList;
+  }
   private List<LowLevelFields_ViewModelCustomTableRowFieldRow> CustomTableRowFieldTableRows = new LinkedList<>();
   public List<LowLevelFields_ViewModelCustomTableRowFieldRow> getCustomTableRowFieldTableRows() {
     return this.CustomTableRowFieldTableRows;

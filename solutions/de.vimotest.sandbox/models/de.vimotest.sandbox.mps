@@ -5424,6 +5424,14 @@
           <ref role="2BLa4B" node="5U4kGNTnh1B" resolve="MyAdditions" />
         </node>
       </node>
+      <node concept="1nWCU9" id="7unHigaFFrE" role="103ZUC">
+        <property role="TrG5h" value="MyFieldAdditionsList" />
+        <node concept="1WnWvM" id="7unHigaFFsi" role="3xMlr6">
+          <node concept="2BLadC" id="7unHigaFFyy" role="1WnWvN">
+            <ref role="2BLa4B" node="5U4kGNTnh1B" resolve="MyAdditions" />
+          </node>
+        </node>
+      </node>
       <node concept="3UVeDL" id="5C8UTa3RDEz" role="103ZUC">
         <property role="TrG5h" value="CustomTableRowField" />
         <node concept="3KuuIt" id="5C8UTa3RDFQ" role="3UVeDY">
@@ -5650,6 +5658,25 @@
                   <node concept="QdLU0" id="4mGsJwaUq09" role="QdLUe">
                     <node concept="_iklQ" id="4mGsJwaUq0a" role="QdLU1">
                       <property role="_iklR" value="Test" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="7unHigaFFz$" role="1s$QAX">
+          <node concept="3Ybqct" id="7unHigaFFzA" role="DUiSb">
+            <node concept="QdLUi" id="7unHigaFFzC" role="3YbqX6">
+              <ref role="QdLUf" node="7unHigaFFrE" resolve="MyFieldAdditionsList" />
+              <node concept="QdLU6" id="7unHigaFFzE" role="QdLUe">
+                <node concept="QdLUg" id="7unHigaFFzF" role="QdLU7">
+                  <node concept="QdLUi" id="7unHigaFFzG" role="QdLU4">
+                    <ref role="QdLUf" node="5U4kGNTFVgo" resolve="MyName" />
+                    <node concept="QdLU0" id="7unHigaFFzH" role="QdLUe">
+                      <node concept="_iklQ" id="7unHigaFFzI" role="QdLU1">
+                        <property role="_iklR" value="Foo" />
+                      </node>
                     </node>
                   </node>
                 </node>

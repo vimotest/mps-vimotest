@@ -30,9 +30,10 @@ public class LowLevelFields_ViewTests_Test {
     this.then_MyStrings_is_todo_listpattern();
   }
   @Test
-  public void test_Record_Field_Asserts_given_when_then_MyFieldAdditions_is_todo_recordpattern() throws Exception {
+  public void test_Record_Field_Asserts_given_when_then_MyFieldAdditions_is_todo_recordpattern_and_MyFieldAdditionsList_is_todo_listpattern() throws Exception {
     this.BuildSut();
     this.then_MyFieldAdditions_is_todo_recordpattern();
+    this.then_MyFieldAdditionsList_is_todo_listpattern();
   }
   @Test
   public void test_Rowbased_Primitive_Fields_given_when_then_CustomTableRowField_has_1_rows_and_CustomListRowField_has_1_rows_and_CustomTreeRowField_has_1_rows() throws Exception {
@@ -82,6 +83,11 @@ public class LowLevelFields_ViewTests_Test {
     Assert.assertEquals("Expected list item at index 1 has value <" + "B" + ">, but it was <" + actualListItem_1 + ">", "B", actualListItem_1);
     Assert.assertEquals("Expected field 'MyName' has value <" + "Test" + ">, but it was <" + actualMyAdditions.MyName + ">", "Test", actualMyAdditions.MyName);
   }
+  public void then_MyFieldAdditionsList_is_todo_listpattern() {
+    List<MyAdditions> actualList_2 = this.sut.getMyFieldAdditionsList();
+    MyAdditions actualListItem_0 = actualList_2.get(1 - 1);
+    Assert.assertEquals("Expected field 'MyName' has value <" + "Foo" + ">, but it was <" + actualListItem_0.MyName + ">", "Foo", actualListItem_0.MyName);
+  }
   public void then_CustomTableRowField_has_1_rows() {
     List<LowLevelFields_ViewModelCustomTableRowFieldRow> actualRows = this.sut.getCustomTableRowFieldTableRows();
     Assert.assertEquals("Expected that table view CustomTableRowField has 1 rows, but has " + Integer.toString(actualRows.size()), Integer.valueOf(1), Integer.valueOf(actualRows.size()));
@@ -90,11 +96,11 @@ public class LowLevelFields_ViewTests_Test {
     Assert.assertEquals("Expected that table view CustomTableRowField row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">", "0", row0.getRowHandle());
     Assert.assertEquals("Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText() + ">", "", row0.getHeaderLabelText());
     Assert.assertFalse("Expected field 'AdditionalBool' has boolean value <false>, but it was <" + ((row0.getAdditionalBool() ? "true" : "false")) + ">", row0.getAdditionalBool());
-    List<MyAdditions> actualList_2 = row0.getAdditionalCustomElements();
-    MyAdditions actualListItem_0 = actualList_2.get(1 - 1);
+    List<MyAdditions> actualList_3 = row0.getAdditionalCustomElements();
+    MyAdditions actualListItem_0 = actualList_3.get(1 - 1);
     Assert.assertFalse("Expected field 'MyFlag' has boolean value <false>, but it was <" + ((actualListItem_0.MyFlag ? "true" : "false")) + ">", actualListItem_0.MyFlag);
     Assert.assertEquals("Expected field 'MyName' has value <" + "Foo" + ">, but it was <" + actualListItem_0.MyName + ">", "Foo", actualListItem_0.MyName);
-    MyAdditions actualListItem_1 = actualList_2.get(2 - 1);
+    MyAdditions actualListItem_1 = actualList_3.get(2 - 1);
     Assert.assertTrue("Expected field 'MyFlag' has boolean value <true>, but it was <" + ((actualListItem_1.MyFlag ? "true" : "false")) + ">", actualListItem_1.MyFlag);
     Assert.assertEquals("Expected field 'MyName' has value <" + "Bar" + ">, but it was <" + actualListItem_1.MyName + ">", "Bar", actualListItem_1.MyName);
     // }
@@ -106,8 +112,8 @@ public class LowLevelFields_ViewTests_Test {
     LowLevelFields_ViewModelCustomListRowFieldRow row0 = actualRows.get(1 - 1);
     Assert.assertEquals("Expected that list view CustomListRowField row at index 0 has rowhandle <0>, but was <" + row0.getRowHandle() + ">", "0", row0.getRowHandle());
     Assert.assertEquals("Expected that label Header has text <" + "" + ">, but was <" + row0.getHeaderLabelText() + ">", "", row0.getHeaderLabelText());
-    List<String> actualList_3 = row0.getAdditionalStrings();
-    String actualListItem_0 = actualList_3.get(1 - 1);
+    List<String> actualList_4 = row0.getAdditionalStrings();
+    String actualListItem_0 = actualList_4.get(1 - 1);
     Assert.assertEquals("Expected list item at index 0 has value <" + "A" + ">, but it was <" + actualListItem_0 + ">", "A", actualListItem_0);
     // }
   }

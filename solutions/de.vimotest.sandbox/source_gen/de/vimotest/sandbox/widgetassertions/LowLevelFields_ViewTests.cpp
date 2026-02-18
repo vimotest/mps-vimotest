@@ -24,6 +24,7 @@ namespace widgetassertions
     virtual void then_MyString_is_text_();
     virtual void then_MyStrings_is_todo_listpattern();
     virtual void then_MyFieldAdditions_is_todo_recordpattern();
+    virtual void then_MyFieldAdditionsList_is_todo_listpattern();
     virtual void then_CustomTableRowField_has_1_rows();
     virtual void then_CustomListRowField_has_1_rows();
     virtual void then_CustomTreeRowField_has_1_rows();
@@ -58,11 +59,12 @@ namespace widgetassertions
   /// Scenario: Record Field Asserts
   ///   given:
   ///    when:
-  ///    then: MyFieldAdditions is todo: recordpattern
-  TEST_F(LowLevelFields_ViewTests, Record_Field_Asserts_given_when_then_MyFieldAdditions_is_todo_recordpattern)
+  ///    then: MyFieldAdditions is todo: recordpattern and MyFieldAdditionsList is todo: listpattern
+  TEST_F(LowLevelFields_ViewTests, Record_Field_Asserts_given_when_then_MyFieldAdditions_is_todo_recordpattern_and_MyFieldAdditionsList_is_todo_listpattern)
   {
     this->BuildSut();
     this->then_MyFieldAdditions_is_todo_recordpattern();
+    this->then_MyFieldAdditionsList_is_todo_listpattern();
   }
   /// Scenario: Rowbased Primitive Fields
   ///   given:
@@ -110,6 +112,12 @@ namespace widgetassertions
     EXPECT_EQ(std::string("B"), actualListItem_1) << std::string("Expected list item at index 1 has value <") + std::string("B") + std::string(">, but it was <") + actualListItem_1 + std::string(">");
     EXPECT_EQ(std::string("Test"), actualMyAdditions.MyName) << std::string("Expected field 'MyName' has value <") + std::string("Test") + std::string(">, but it was <") + actualMyAdditions.MyName + std::string(">");
   }
+  void LowLevelFields_ViewTests::then_MyFieldAdditionsList_is_todo_listpattern()
+  {
+    auto actualList_2 = this->sut->getMyFieldAdditionsList();
+    auto actualListItem_0 = actualList_2.at(0);
+    EXPECT_EQ(std::string("Foo"), actualListItem_0.MyName) << std::string("Expected field 'MyName' has value <") + std::string("Foo") + std::string(">, but it was <") + actualListItem_0.MyName + std::string(">");
+  }
   void LowLevelFields_ViewTests::then_CustomTableRowField_has_1_rows()
   {
     auto actualRows = this->sut->getCustomTableRowFieldTableRows();
@@ -119,11 +127,11 @@ namespace widgetassertions
     EXPECT_EQ(std::string("0"), row0->getRowHandle()) << std::string("Expected that table view CustomTableRowField row at index 0 has rowhandle <0>, but was <") + row0->getRowHandle() + std::string(">");
     EXPECT_EQ(std::string(""), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
     EXPECT_FALSE(row0->getAdditionalBool()) << std::string("Expected field 'AdditionalBool' has boolean value <false>, but it was <") + (row0->getAdditionalBool() ? std::string("true") : std::string("false")) + std::string(">");
-    auto actualList_2 = row0->getAdditionalCustomElements();
-    auto actualListItem_0 = actualList_2.at(0);
+    auto actualList_3 = row0->getAdditionalCustomElements();
+    auto actualListItem_0 = actualList_3.at(0);
     EXPECT_FALSE(actualListItem_0.MyFlag) << std::string("Expected field 'MyFlag' has boolean value <false>, but it was <") + (actualListItem_0.MyFlag ? std::string("true") : std::string("false")) + std::string(">");
     EXPECT_EQ(std::string("Foo"), actualListItem_0.MyName) << std::string("Expected field 'MyName' has value <") + std::string("Foo") + std::string(">, but it was <") + actualListItem_0.MyName + std::string(">");
-    auto actualListItem_1 = actualList_2.at(1);
+    auto actualListItem_1 = actualList_3.at(1);
     EXPECT_TRUE(actualListItem_1.MyFlag) << std::string("Expected field 'MyFlag' has boolean value <true>, but it was <") + (actualListItem_1.MyFlag ? std::string("true") : std::string("false")) + std::string(">");
     EXPECT_EQ(std::string("Bar"), actualListItem_1.MyName) << std::string("Expected field 'MyName' has value <") + std::string("Bar") + std::string(">, but it was <") + actualListItem_1.MyName + std::string(">");
     // }
@@ -136,8 +144,8 @@ namespace widgetassertions
     auto& row0 = actualRows.at(0);
     EXPECT_EQ(std::string("0"), row0->getRowHandle()) << std::string("Expected that list view CustomListRowField row at index 0 has rowhandle <0>, but was <") + row0->getRowHandle() + std::string(">");
     EXPECT_EQ(std::string(""), row0->getHeaderLabelText()) << std::string("Expected that label Header has text <") + std::string("") + std::string(">, but was <") + row0->getHeaderLabelText() + std::string(">");
-    auto actualList_3 = row0->getAdditionalStrings();
-    auto actualListItem_0 = actualList_3.at(0);
+    auto actualList_4 = row0->getAdditionalStrings();
+    auto actualListItem_0 = actualList_4.at(0);
     EXPECT_EQ(std::string("A"), actualListItem_0) << std::string("Expected list item at index 0 has value <") + std::string("A") + std::string(">, but it was <") + actualListItem_0 + std::string(">");
     // }
   }

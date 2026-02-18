@@ -188,6 +188,7 @@
         <child id="1630016958697057552" name="parameterType" index="2ZBHrp" />
       </concept>
       <concept id="1182191800432" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeListFilter" flags="in" index="107P5z" />
+      <concept id="1214406454886" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" flags="ln" index="30gYXW" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1182233249301" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_childNode" flags="nn" index="12_Ws6" />
@@ -971,6 +972,30 @@
     <property role="3GE5qa" value="test" />
     <ref role="1XX52x" to="53m0:2Yd1qrJOhwF" resolve="ViewModelFeatureTestSuite" />
     <node concept="3EZMnI" id="2Yd1qrJOhwS" role="2wV5jI">
+      <node concept="3F0ifn" id="1qY9$mvKXX2" role="3EZMnx">
+        <property role="3F0ifm" value="IGNORE" />
+        <node concept="pkWqt" id="1qY9$mvKY7a" role="pqm2j">
+          <node concept="3clFbS" id="1qY9$mvKY7b" role="2VODD2">
+            <node concept="3clFbF" id="1qY9$mvKY9_" role="3cqZAp">
+              <node concept="2OqwBi" id="1qY9$mvKYwB" role="3clFbG">
+                <node concept="pncrf" id="1qY9$mvKY9$" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1qY9$mvKYS8" role="2OqNvi">
+                  <ref role="3TsBF5" to="53m0:1qY9$mvKVZh" resolve="ignore" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Vb9p2" id="1qY9$mvKYST" role="3F10Kt">
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
+        </node>
+        <node concept="VechU" id="1qY9$mvKZ3k" role="3F10Kt">
+          <property role="Vb096" value="6cZGtrcKCoS/black" />
+        </node>
+        <node concept="30gYXW" id="1qY9$mvKYUh" role="3F10Kt">
+          <property role="Vb096" value="fLwANPp/orange" />
+        </node>
+      </node>
       <node concept="PMmxH" id="6fZwY6ifZcA" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
@@ -1226,6 +1251,20 @@
         <property role="1O74Pk" value="true" />
         <property role="1$x2rV" value="&lt;ViewModelClassName&gt;ContextProvider" />
         <ref role="1NtTu8" to="53m0:4Pj3bOmuYX9" resolve="testEnvironmentClassName" />
+      </node>
+      <node concept="2yq9I_" id="1qY9$mvKXhQ" role="3EZMnx">
+        <ref role="225u1j" to="53m0:1qY9$mvKVZh" resolve="ignore" />
+        <node concept="1563Vb" id="1qY9$mvKXhS" role="1563LE">
+          <property role="1563UK" value="[ ]" />
+          <property role="1563Ve" value="[x]" />
+        </node>
+        <node concept="pVoyu" id="1qY9$mvKXhT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="1qY9$mvKXhU" role="2fqkNU">
+          <property role="3F0ifm" value="ignore" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        </node>
       </node>
     </node>
   </node>

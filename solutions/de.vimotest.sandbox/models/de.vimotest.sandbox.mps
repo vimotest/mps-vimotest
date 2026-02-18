@@ -3232,6 +3232,10 @@
       <node concept="3V$Nq4" id="1F_Q10zSP$v" role="1006ar">
         <property role="TrG5h" value="MyCommand" />
         <property role="2hCfGp" value="true" />
+        <node concept="RSs3Z" id="7unHigaVHsn" role="103ZUC">
+          <property role="TrG5h" value="Id" />
+          <node concept="1nBS12" id="7unHigaVHsv" role="3xMlr6" />
+        </node>
         <node concept="RSs3Z" id="2L$sa502fuM" role="103ZUC">
           <property role="TrG5h" value="MyFlag" />
           <node concept="1nBHEw" id="1F_Q10zSP$B" role="3xMlr6" />
@@ -3423,6 +3427,9 @@
           <node concept="27s6xY" id="1F_Q10zSP$W" role="DUiS9">
             <ref role="27sXQn" node="1F_Q10zSP$v" resolve="MyCommand" />
             <node concept="_vku0" id="1F_Q10zSP$Y" role="27sTdU">
+              <node concept="_iklQ" id="7unHigaVHH7" role="_vku1">
+                <property role="_iklR" value="Foo" />
+              </node>
               <node concept="_jtWu" id="1F_Q10zSP_1" role="_vku1" />
               <node concept="2lpApx" id="5r5zsb3RYXy" role="_vku1">
                 <node concept="_iklQ" id="5jkMFwF8KiU" role="1Wm7YV">

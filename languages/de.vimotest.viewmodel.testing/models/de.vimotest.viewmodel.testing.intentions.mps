@@ -198,6 +198,7 @@
       </concept>
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
+      <concept id="767145758118872828" name="jetbrains.mps.lang.actions.structure.NF_Node_ReplaceWithNewOperation" flags="nn" index="2DeJnW" />
       <concept id="767145758118872830" name="jetbrains.mps.lang.actions.structure.NF_Link_SetNewChildOperation" flags="nn" index="2DeJnY" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -254,6 +255,9 @@
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
+      <concept id="1139867745658" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithNewOperation" flags="nn" index="1_qnLN">
+        <reference id="1139867957129" name="concept" index="1_rbq0" />
+      </concept>
       <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
       </concept>
@@ -2655,6 +2659,58 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7unHigaUyVc">
+    <property role="3GE5qa" value="test.assert.util" />
+    <property role="TrG5h" value="ConvertSequenceValuesToEmptySequence_Intention" />
+    <ref role="2ZfgGC" to="53m0:5r5zsb3CYIz" resolve="SequenceValuesExpression" />
+    <node concept="2S6ZIM" id="7unHigaUyVd" role="2ZfVej">
+      <node concept="3clFbS" id="7unHigaUyVe" role="2VODD2">
+        <node concept="3clFbF" id="7unHigaUz2z" role="3cqZAp">
+          <node concept="Xl_RD" id="7unHigaUz2y" role="3clFbG">
+            <property role="Xl_RC" value="Convert to Empty Sequence" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7unHigaUyVf" role="2ZfgGD">
+      <node concept="3clFbS" id="7unHigaUyVg" role="2VODD2">
+        <node concept="3clFbF" id="7unHigaUzdX" role="3cqZAp">
+          <node concept="2OqwBi" id="7unHigaUzoX" role="3clFbG">
+            <node concept="2Sf5sV" id="7unHigaUzdW" role="2Oq$k0" />
+            <node concept="2DeJnW" id="7unHigaUz_K" role="2OqNvi">
+              <ref role="1_rbq0" to="53m0:6gitVznp5aL" resolve="EmptySequenceExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7unHigaUzAT">
+    <property role="3GE5qa" value="test.assert.util" />
+    <property role="TrG5h" value="ConvertEmptySequenceToSequenceValues_Intention" />
+    <ref role="2ZfgGC" to="53m0:6gitVznp5aL" resolve="EmptySequenceExpression" />
+    <node concept="2S6ZIM" id="7unHigaUzAU" role="2ZfVej">
+      <node concept="3clFbS" id="7unHigaUzAV" role="2VODD2">
+        <node concept="3clFbF" id="7unHigaUzAW" role="3cqZAp">
+          <node concept="Xl_RD" id="7unHigaUzAX" role="3clFbG">
+            <property role="Xl_RC" value="Convert to Sequence Values" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7unHigaUzAY" role="2ZfgGD">
+      <node concept="3clFbS" id="7unHigaUzAZ" role="2VODD2">
+        <node concept="3clFbF" id="7unHigaUzB0" role="3cqZAp">
+          <node concept="2OqwBi" id="7unHigaUzB1" role="3clFbG">
+            <node concept="2Sf5sV" id="7unHigaUzB2" role="2Oq$k0" />
+            <node concept="2DeJnW" id="7unHigaUzB3" role="2OqNvi">
+              <ref role="1_rbq0" to="53m0:5r5zsb3CYIz" resolve="SequenceValuesExpression" />
             </node>
           </node>
         </node>

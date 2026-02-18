@@ -1384,6 +1384,14 @@
         <property role="t5JxN" value="Controls if records are generated as encapsulated classes (with getters/setters), instead of simple structures (public properties)" />
       </node>
     </node>
+    <node concept="1TJgyi" id="4aWOvo5da$e" role="1TKVEl">
+      <property role="IQ2nx" value="4808949356704344334" />
+      <property role="TrG5h" value="generateShortTestCaseNames" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="4aWOvo5da$f" role="lGtFl">
+        <property role="t5JxN" value="Controls if testcase names are only based on scenario names" />
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="4xJPu9gsd4J">
     <property role="EcuMT" value="5219625661134590255" />

@@ -26,7 +26,7 @@ public class LoginViewModelTests
        then: Username shows text 'User' and Password shows text 'MyPass123' and Login is enabled
    */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
-    public void Load_View_on_empty_context_given_empty_context_when_LoadViewModel_and_fill_User_in_Username_and_fill_MyPass123_in_Password_and_check_ShowPassword_then_Username_shows_text_User_and_Password_shows_text_MyPass123_and_Login_is_enabled()
+    public void Load_View_on_empty_context_0_()
     {
         this.given_empty_context();
         this.BuildSut();
@@ -47,7 +47,7 @@ public class LoginViewModelTests
        then: Username shows text 'User' and Password shows empty text and Login is not enabled
    */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
-    public void Load_View_on_empty_context_given_empty_context_when_LoadViewModel_and_fill_User_in_Username_and_clear_text_in_Password_then_Username_shows_text_User_and_Password_shows_empty_text_and_Login_is_not_enabled()
+    public void Load_View_on_empty_context_1_()
     {
         this.given_empty_context();
         this.BuildSut();
@@ -67,7 +67,7 @@ public class LoginViewModelTests
        then: Username shows text 'Ada' and Password shows text '******' and Login is enabled
    */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
-    public void Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadViewModel_then_Username_shows_text_Ada_and_Password_shows_text_____and_Login_is_enabled()
+    public void Load_View_on_Pre_filled_User_Preferences_0_()
     {
         this.given_prefilledValues();
         this.BuildSut();
@@ -85,7 +85,7 @@ public class LoginViewModelTests
        then: Username shows text 'Ada' and Password shows text 'Lovelace1' and ShowPassword is checked and Login is enabled
    */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
-    public void Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadViewModel_and_check_ShowPassword_then_Username_shows_text_Ada_and_Password_shows_text_Lovelace1_and_ShowPassword_is_checked_and_Login_is_enabled()
+    public void Load_View_on_Pre_filled_User_Preferences_1_()
     {
         this.given_prefilledValues();
         this.BuildSut();
@@ -105,7 +105,7 @@ public class LoginViewModelTests
        then: Error shows text 'Needs uppercase letters'
    */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
-    public void Load_View_on_Pre_filled_User_Preferences_given_prefilledValues_when_LoadViewModel_and_fill_lovelace_in_Password_and_click_Login_then_Error_shows_text_Needs_uppercase_letters_()
+    public void Load_View_on_Pre_filled_User_Preferences_2_()
     {
         this.given_prefilledValues();
         this.BuildSut();

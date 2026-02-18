@@ -4284,6 +4284,23 @@
           <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
         </node>
       </node>
+      <node concept="2yq9I_" id="4aWOvo5da$g" role="3EZMnx">
+        <ref role="225u1j" to="at53:4aWOvo5da$e" resolve="generateShortTestCaseNames" />
+        <node concept="1563Vb" id="4aWOvo5da$h" role="1563LE">
+          <property role="1563UK" value="[ ]" />
+          <property role="1563Ve" value="[x]" />
+        </node>
+        <node concept="pVoyu" id="4aWOvo5da$i" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="4aWOvo5da$j" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="4aWOvo5da$k" role="2fqkNU">
+          <property role="3F0ifm" value="generate short testcase names" />
+          <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        </node>
+      </node>
       <node concept="l2Vlx" id="5jkMFwuLz8t" role="2iSdaV" />
     </node>
   </node>

@@ -22170,9 +22170,7 @@
                     <node concept="37vLTw" id="4p8dif09ady" role="37wK5m">
                       <ref role="3cqZAo" node="4p8dieZEz5g" resolve="context" />
                     </node>
-                    <node concept="37vLTw" id="4p8dif09adz" role="37wK5m">
-                      <ref role="3cqZAo" node="4p8dieZEK6R" resolve="widget" />
-                    </node>
+                    <node concept="10Nm6u" id="1Kip6F94bWw" role="37wK5m" />
                     <node concept="3cpWs3" id="4p8dif0qO8R" role="37wK5m">
                       <node concept="Xl_RD" id="4p8dif0qOer" role="3uHU7w">
                         <property role="Xl_RC" value="*" />

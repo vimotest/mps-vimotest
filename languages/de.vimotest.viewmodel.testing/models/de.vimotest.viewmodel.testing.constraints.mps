@@ -41,6 +41,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
@@ -99,6 +100,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -1606,6 +1608,58 @@
       </node>
       <node concept="1dDu$B" id="4mGsJw9XFg4" role="1N6uqs">
         <ref role="1dDu$A" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
+      </node>
+    </node>
+    <node concept="9SLcT" id="4NbMNnqSS4t" role="9SGkU">
+      <node concept="3clFbS" id="4NbMNnqSS4u" role="2VODD2">
+        <node concept="3clFbJ" id="4NbMNnqSSeg" role="3cqZAp">
+          <node concept="3clFbS" id="4NbMNnqSSei" role="3clFbx">
+            <node concept="3cpWs8" id="4NbMNnqSZCc" role="3cqZAp">
+              <node concept="3cpWsn" id="4NbMNnqSZCd" role="3cpWs9">
+                <property role="TrG5h" value="expectedChildConcept" />
+                <node concept="3bZ5Sz" id="4NbMNnqSZBJ" role="1tU5fm">
+                  <ref role="3bZ5Sy" to="53m0:5vdnfLxY$9D" resolve="AbstractPattern" />
+                </node>
+                <node concept="2OqwBi" id="4NbMNnqSZCe" role="33vP2m">
+                  <node concept="EsrRn" id="4NbMNnqSZCf" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="4NbMNnqSZCg" role="2OqNvi">
+                    <ref role="37wK5l" to="fwln:4NbMNnqSVfm" resolve="getRestrictedChildPattern" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="4NbMNnqSZJa" role="3cqZAp">
+              <node concept="3clFbS" id="4NbMNnqSZJc" role="3clFbx">
+                <node concept="3cpWs6" id="4NbMNnqT0CX" role="3cqZAp">
+                  <node concept="17R0WA" id="4NbMNnqT36b" role="3cqZAk">
+                    <node concept="37vLTw" id="4NbMNnqT37E" role="3uHU7w">
+                      <ref role="3cqZAo" node="4NbMNnqSZCd" resolve="expectedChildConcept" />
+                    </node>
+                    <node concept="2DD5aU" id="4NbMNnqT0Ep" role="3uHU7B" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="4NbMNnqT0jn" role="3clFbw">
+                <node concept="10Nm6u" id="4NbMNnqT0s8" role="3uHU7w" />
+                <node concept="37vLTw" id="4NbMNnqSZKl" role="3uHU7B">
+                  <ref role="3cqZAo" node="4NbMNnqSZCd" resolve="expectedChildConcept" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="17R0WA" id="4NbMNnqSTnV" role="3clFbw">
+            <node concept="359W_D" id="4NbMNnqSToL" role="3uHU7w">
+              <ref role="359W_E" to="53m0:5vdnfLxY$9I" resolve="FieldPattern" />
+              <ref role="359W_F" to="53m0:5vdnfLxY$9M" resolve="expectedPattern" />
+            </node>
+            <node concept="2DA6wF" id="4NbMNnqSSqi" role="3uHU7B" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="4NbMNnqSSco" role="3cqZAp">
+          <node concept="3clFbT" id="4NbMNnqSScn" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

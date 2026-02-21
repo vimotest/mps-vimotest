@@ -8066,6 +8066,7 @@
       </node>
       <node concept="3F1sOY" id="5vdnfLyGJkz" role="3EZMnx">
         <property role="1cu_pB" value="gtguBGO/firstEditableCell" />
+        <property role="1$x2rV" value="&lt;ignore&gt;" />
         <ref role="1NtTu8" to="53m0:5vdnfLxY$9M" resolve="expectedPattern" />
       </node>
       <node concept="2iRfu4" id="5vdnfLyGJk$" role="2iSdaV" />

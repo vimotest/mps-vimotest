@@ -574,6 +574,7 @@
     <node concept="3F0A7n" id="6RKU0sd8qy9" role="2wV5jI">
       <property role="1O74Pk" value="true" />
       <ref role="1NtTu8" to="evry:6RKU0sd8qlX" resolve="value" />
+      <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
     </node>
   </node>
   <node concept="312cEu" id="5QSnpBWlEt3">

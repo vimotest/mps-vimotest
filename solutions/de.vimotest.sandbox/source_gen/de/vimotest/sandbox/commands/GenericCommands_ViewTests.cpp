@@ -39,6 +39,6 @@ namespace commands
   }
   void GenericCommands_ViewTests::when_MyCommand()
   {
-    this->sut->myCommand(false, { std::string("A"), std::string("B") }, commands::CommandEnum::Value1);
+    this->sut->myCommand(std::string("Foo"), false, { std::string("A"), std::string("B") }, commands::CommandEnum::Value1);
   }
 }

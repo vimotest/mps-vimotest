@@ -41,6 +41,6 @@ public class GenericCommands_ViewTests
     // When Helper Definitions
     public virtual void when_MyCommand()
     {
-        this.sut.myCommand(false, new System.Collections.Generic.List<string> { "A", "B" }, commands.CommandEnum.Value1);
+        this.sut.myCommand("Foo", false, new System.Collections.Generic.List<string> { "A", "B" }, commands.CommandEnum.Value1);
     }
 }

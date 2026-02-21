@@ -9,6 +9,6 @@ namespace commands
   class GenericCommands_ViewModel
   {
   public:
-    virtual void myCommand(bool MyFlag, std::vector<std::string> Names, CommandEnum EnumValue);
+    virtual void myCommand(std::string Id, bool MyFlag, std::vector<std::string> Names, CommandEnum EnumValue);
   };
 }

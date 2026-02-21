@@ -3823,7 +3823,7 @@
                 <node concept="3clFbS" id="6fEYrkZmT7h" role="2VODD2">
                   <node concept="3cpWs8" id="6fEYrkZmT7i" role="3cqZAp">
                     <node concept="3cpWsn" id="6fEYrkZmT7j" role="3cpWs9">
-                      <property role="TrG5h" value="indices" />
+                      <property role="TrG5h" value="rowHandles" />
                       <node concept="_YKpA" id="6fEYrkZmT7k" role="1tU5fm">
                         <node concept="17QB3L" id="6fEYrkZmT7l" role="_ZDj9" />
                         <node concept="2yE$l8" id="6fEYrkZmT7m" role="lGtFl" />
@@ -3834,22 +3834,15 @@
                     </node>
                   </node>
                   <node concept="3clFbJ" id="6fEYrkZmT7p" role="3cqZAp">
-                    <node concept="2OqwBi" id="6fEYrkZmT7q" role="3clFbw">
-                      <node concept="21noJN" id="6fEYrkZmT7r" role="2OqNvi">
-                        <node concept="21nZrQ" id="6fEYrkZmT7s" role="21noJM">
-                          <ref role="21nZrZ" to="at53:1RiAxJSewmn" resolve="StringRowHandle" />
+                    <node concept="2OqwBi" id="6fEYrkZmT7t" role="3clFbw">
+                      <node concept="2OqwBi" id="6fEYrkZmT7u" role="2Oq$k0">
+                        <node concept="3GMtW1" id="6fEYrkZmT7v" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="6fEYrkZmT7w" role="2OqNvi">
+                          <ref role="37wK5l" to="nrs2:1RiAxJSeINg" resolve="getRowBasedFeature" />
                         </node>
                       </node>
-                      <node concept="2OqwBi" id="6fEYrkZmT7t" role="2Oq$k0">
-                        <node concept="2OqwBi" id="6fEYrkZmT7u" role="2Oq$k0">
-                          <node concept="3GMtW1" id="6fEYrkZmT7v" role="2Oq$k0" />
-                          <node concept="2qgKlT" id="6fEYrkZmT7w" role="2OqNvi">
-                            <ref role="37wK5l" to="nrs2:1RiAxJSeINg" resolve="getRowBasedFeature" />
-                          </node>
-                        </node>
-                        <node concept="3TrcHB" id="6fEYrkZmT7x" role="2OqNvi">
-                          <ref role="3TsBF5" to="at53:1RiAxJSeDXj" resolve="rowHandleKind" />
-                        </node>
+                      <node concept="2qgKlT" id="4NbMNnqcsiC" role="2OqNvi">
+                        <ref role="37wK5l" to="nrs2:4Tqlyky2dDX" resolve="isStringBasedRowHandle" />
                       </node>
                     </node>
                     <node concept="3clFbS" id="6fEYrkZmT7y" role="3clFbx">
@@ -3861,7 +3854,7 @@
                           <node concept="3clFbF" id="6fEYrkZmT7A" role="3cqZAp">
                             <node concept="2OqwBi" id="6fEYrkZmT7B" role="3clFbG">
                               <node concept="37vLTw" id="6fEYrkZmT7C" role="2Oq$k0">
-                                <ref role="3cqZAo" node="6fEYrkZmT7j" resolve="indices" />
+                                <ref role="3cqZAo" node="6fEYrkZmT7j" resolve="rowHandles" />
                               </node>
                               <node concept="TSZUe" id="6fEYrkZmT7D" role="2OqNvi">
                                 <node concept="2GrUjf" id="6fEYrkZmVsS" role="25WWJ7">
@@ -3882,7 +3875,7 @@
                   </node>
                   <node concept="3cpWs6" id="6fEYrkZmT7K" role="3cqZAp">
                     <node concept="37vLTw" id="6fEYrkZmT7L" role="3cqZAk">
-                      <ref role="3cqZAo" node="6fEYrkZmT7j" resolve="indices" />
+                      <ref role="3cqZAo" node="6fEYrkZmT7j" resolve="rowHandles" />
                     </node>
                   </node>
                 </node>

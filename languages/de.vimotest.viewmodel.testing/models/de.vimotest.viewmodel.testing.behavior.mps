@@ -6614,6 +6614,44 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="4NbMNnqcyIp" role="13h7CS">
+      <property role="TrG5h" value="getValidStringRowHandles" />
+      <ref role="13i0hy" to="nrs2:6fEYrkZmGvj" resolve="getValidStringRowHandles" />
+      <node concept="3Tm1VV" id="4NbMNnqcyIq" role="1B3o_S" />
+      <node concept="3clFbS" id="4NbMNnqcyIx" role="3clF47">
+        <node concept="3clFbF" id="4NbMNnqczrf" role="3cqZAp">
+          <node concept="2YIFZM" id="4NbMNnqczrg" role="3clFbG">
+            <ref role="37wK5l" node="2w4bAIFYvkG" resolve="getValidRowHandles" />
+            <ref role="1Pybhc" node="2w4bAIFYpT0" resolve="PossibleRowHandleDeterminer" />
+            <node concept="2OqwBi" id="4NbMNnqczrh" role="37wK5m">
+              <node concept="13iPFW" id="4NbMNnqczri" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="4NbMNnqczrj" role="2OqNvi">
+                <node concept="1xMEDy" id="4NbMNnqczrk" role="1xVPHs">
+                  <node concept="chp4Y" id="4NbMNnqczrl" role="ri$Ld">
+                    <ref role="cht4Q" to="53m0:6fZwY6ifrMy" resolve="ViewModelTestScenario" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1PxgMI" id="4NbMNnqcAla" role="37wK5m">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="4NbMNnqcArF" role="3oSUPX">
+                <ref role="cht4Q" to="at53:F907haLIRF" resolve="ViewWidget" />
+              </node>
+              <node concept="2OqwBi" id="4NbMNnqczrm" role="1m5AlR">
+                <node concept="13iPFW" id="4NbMNnqczrn" role="2Oq$k0" />
+                <node concept="2qgKlT" id="4NbMNnqczMF" role="2OqNvi">
+                  <ref role="37wK5l" to="nrs2:4cF8FMB2q_S" resolve="getRowBasedWidget" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="4NbMNnqcyIy" role="3clF45">
+        <node concept="17QB3L" id="4NbMNnqcyIz" role="A3Ik2" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="7WgsBLYp0db">
     <property role="3GE5qa" value="test.assert._checkvalues" />

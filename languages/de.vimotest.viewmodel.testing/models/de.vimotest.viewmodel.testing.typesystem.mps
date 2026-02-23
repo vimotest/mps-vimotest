@@ -300,6 +300,7 @@
       <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumerationMemberType" flags="in" index="2ZThk1">
         <reference id="1240170836027" name="enum" index="2ZWj4r" />
       </concept>
+      <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -405,6 +406,7 @@
         <child id="1197932505799" name="map" index="3ElQJh" />
         <child id="1197932525128" name="key" index="3ElVtu" />
       </concept>
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
   </registry>
@@ -4940,6 +4942,100 @@
       <property role="TrG5h" value="field" />
       <node concept="3Tqbb2" id="4NbMNnqsnBf" role="Q6QK4">
         <ref role="ehGHo" to="evry:6LujpsVFccu" resolve="FieldStructContent" />
+      </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="6TFgjK3qg8x">
+    <property role="TrG5h" value="check_ComboBoxCheck" />
+    <property role="3GE5qa" value="test.assert.widgets.choices" />
+    <node concept="3clFbS" id="6TFgjK3qg8y" role="18ibNy">
+      <node concept="3clFbJ" id="6TFgjK3qg9Z" role="3cqZAp">
+        <node concept="1Wc70l" id="6TFgjK3qgXq" role="3clFbw">
+          <node concept="2OqwBi" id="6TFgjK3qli$" role="3uHU7w">
+            <node concept="2OqwBi" id="6TFgjK3qj60" role="2Oq$k0">
+              <node concept="2OqwBi" id="6TFgjK3qgY_" role="2Oq$k0">
+                <node concept="1YBJjd" id="6TFgjK3qgXX" role="2Oq$k0">
+                  <ref role="1YBMHb" node="6TFgjK3qg8$" resolve="comboBoxCheck" />
+                </node>
+                <node concept="3Tsc0h" id="6TFgjK3qgZU" role="2OqNvi">
+                  <ref role="3TtcxE" to="53m0:44HS8_67H_h" resolve="checks" />
+                </node>
+              </node>
+              <node concept="v3k3i" id="6TFgjK3ql0I" role="2OqNvi">
+                <node concept="chp4Y" id="6TFgjK3ql3x" role="v3oSu">
+                  <ref role="cht4Q" to="53m0:44HS8_67HAm" resolve="ComboBoxEntriesCheckValue" />
+                </node>
+              </node>
+            </node>
+            <node concept="3GX2aA" id="6TFgjK3qlzK" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="6TFgjK3qgl2" role="3uHU7B">
+            <node concept="1YBJjd" id="6TFgjK3qga8" role="2Oq$k0">
+              <ref role="1YBMHb" node="6TFgjK3qg8$" resolve="comboBoxCheck" />
+            </node>
+            <node concept="2qgKlT" id="6TFgjK3qgxD" role="2OqNvi">
+              <ref role="37wK5l" to="fwln:6TFgjK2cfun" resolve="hasFixedChoices" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="6TFgjK3qga1" role="3clFbx">
+          <node concept="2MkqsV" id="6TFgjK3ql_V" role="3cqZAp">
+            <node concept="Xl_RD" id="6TFgjK3qlA4" role="2MkJ7o">
+              <property role="Xl_RC" value="Cannot check entries when choices are fix" />
+            </node>
+            <node concept="1YBJjd" id="6TFgjK3qlBm" role="1urrMF">
+              <ref role="1YBMHb" node="6TFgjK3qg8$" resolve="comboBoxCheck" />
+            </node>
+            <node concept="3Cnw8n" id="6TFgjK3qlCN" role="1urrFz">
+              <property role="ARO6o" value="true" />
+              <ref role="QpYPw" node="6TFgjK3qlCK" resolve="fix_ComboBoxCheck_Remove_ComboBoxEntriesCheckValue" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6TFgjK3qg8$" role="1YuTPh">
+      <property role="TrG5h" value="comboBoxCheck" />
+      <ref role="1YaFvo" to="53m0:44HS8_67H_g" resolve="ComboBoxCheck" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="6TFgjK3qlCK">
+    <property role="TrG5h" value="fix_ComboBoxCheck_Remove_ComboBoxEntriesCheckValue" />
+    <node concept="Q5ZZ6" id="6TFgjK3qlCL" role="Q6x$H">
+      <node concept="3clFbS" id="6TFgjK3qlCM" role="2VODD2">
+        <node concept="3clFbF" id="6TFgjK3qlNl" role="3cqZAp">
+          <node concept="2OqwBi" id="6TFgjK3qqef" role="3clFbG">
+            <node concept="2OqwBi" id="6TFgjK3qnm9" role="2Oq$k0">
+              <node concept="2OqwBi" id="6TFgjK3qlVZ" role="2Oq$k0">
+                <node concept="Q6c8r" id="6TFgjK3qlNk" role="2Oq$k0" />
+                <node concept="32TBzR" id="6TFgjK3qm3S" role="2OqNvi" />
+              </node>
+              <node concept="v3k3i" id="6TFgjK3qpZY" role="2OqNvi">
+                <node concept="chp4Y" id="6TFgjK3qq1p" role="v3oSu">
+                  <ref role="cht4Q" to="53m0:44HS8_67HAm" resolve="ComboBoxEntriesCheckValue" />
+                </node>
+              </node>
+            </node>
+            <node concept="2es0OD" id="6TFgjK3qqvn" role="2OqNvi">
+              <node concept="1bVj0M" id="6TFgjK3qqvp" role="23t8la">
+                <node concept="3clFbS" id="6TFgjK3qqvq" role="1bW5cS">
+                  <node concept="3clFbF" id="6TFgjK3qqyz" role="3cqZAp">
+                    <node concept="2OqwBi" id="6TFgjK3qqLf" role="3clFbG">
+                      <node concept="37vLTw" id="6TFgjK3qqyy" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6TFgjK3qqvr" resolve="it" />
+                      </node>
+                      <node concept="3YRAZt" id="6TFgjK3qrNp" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="gl6BB" id="6TFgjK3qqvr" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="6TFgjK3qqvs" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

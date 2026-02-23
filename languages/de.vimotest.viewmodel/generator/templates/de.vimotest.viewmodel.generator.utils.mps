@@ -1777,6 +1777,192 @@
         </node>
       </node>
     </node>
+    <node concept="2YIFZL" id="3Zy2c1G3az8" role="jymVt">
+      <property role="TrG5h" value="getComboBoxEnumName" />
+      <node concept="37vLTG" id="3Zy2c1G3bcP" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="3Zy2c1G3bcQ" role="1tU5fm">
+          <ref role="ehGHo" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3Zy2c1G3azb" role="3clF47">
+        <node concept="3clFbJ" id="3Zy2c1G3c8h" role="3cqZAp">
+          <node concept="3clFbS" id="3Zy2c1G3c8i" role="3clFbx">
+            <node concept="3cpWs6" id="3Zy2c1G3c8j" role="3cqZAp">
+              <node concept="2OqwBi" id="3Zy2c1G3c8k" role="3cqZAk">
+                <node concept="2OqwBi" id="3Zy2c1G3c8l" role="2Oq$k0">
+                  <node concept="37vLTw" id="3Zy2c1G3c8m" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3Zy2c1G3bcP" resolve="node" />
+                  </node>
+                  <node concept="3CFZ6_" id="3Zy2c1G3c8n" role="2OqNvi">
+                    <node concept="3CFYIy" id="3Zy2c1G3c8o" role="3CFYIz">
+                      <ref role="3CFYIx" to="evry:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="3Zy2c1G3c8p" role="2OqNvi">
+                  <ref role="3TsBF5" to="evry:3MA_BelBku6" resolve="customName" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3Zy2c1G3c8q" role="3clFbw">
+            <node concept="2OqwBi" id="3Zy2c1G3c8r" role="2Oq$k0">
+              <node concept="37vLTw" id="3Zy2c1G3c8s" role="2Oq$k0">
+                <ref role="3cqZAo" node="3Zy2c1G3bcP" resolve="node" />
+              </node>
+              <node concept="3CFZ6_" id="3Zy2c1G3c8t" role="2OqNvi">
+                <node concept="3CFYIy" id="3Zy2c1G3c8u" role="3CFYIz">
+                  <ref role="3CFYIx" to="evry:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="3Zy2c1G3c8v" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="3Zy2c1G3c8w" role="3cqZAp" />
+        <node concept="3clFbF" id="3Zy2c1G3c8x" role="3cqZAp">
+          <node concept="3cpWs3" id="3Zy2c1G3c8y" role="3clFbG">
+            <node concept="Xl_RD" id="3Zy2c1G3c8z" role="3uHU7w">
+              <property role="Xl_RC" value="Option" />
+            </node>
+            <node concept="3cpWs3" id="3Zy2c1G3c8$" role="3uHU7B">
+              <node concept="2YIFZM" id="3Zy2c1G3c8_" role="3uHU7w">
+                <ref role="37wK5l" to="18ew:~NameUtil.capitalize(java.lang.String)" resolve="capitalize" />
+                <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                <node concept="2OqwBi" id="3Zy2c1G3c8A" role="37wK5m">
+                  <node concept="3TrcHB" id="3Zy2c1G3c8B" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                  <node concept="37vLTw" id="3Zy2c1G3c8C" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3Zy2c1G3bcP" resolve="node" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1rXfSq" id="3Zy2c1G3c8D" role="3uHU7B">
+                <ref role="37wK5l" node="5jkMFwvdNVB" resolve="getViewModelClassName" />
+                <node concept="2OqwBi" id="3Zy2c1G3c8E" role="37wK5m">
+                  <node concept="37vLTw" id="3Zy2c1G3c8F" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3Zy2c1G3bcP" resolve="node" />
+                  </node>
+                  <node concept="2Xjw5R" id="3Zy2c1G3c8G" role="2OqNvi">
+                    <node concept="1xMEDy" id="3Zy2c1G3c8H" role="1xVPHs">
+                      <node concept="chp4Y" id="3Zy2c1G3c8I" role="ri$Ld">
+                        <ref role="cht4Q" to="at53:F907haLJWg" resolve="ViewModel" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3Zy2c1G39tm" role="1B3o_S" />
+      <node concept="17QB3L" id="3Zy2c1G3ay_" role="3clF45" />
+    </node>
+    <node concept="2YIFZL" id="3Zy2c1G3kO6" role="jymVt">
+      <property role="TrG5h" value="getComboBoxEntriesFeatureRecordClassName" />
+      <node concept="37vLTG" id="3Zy2c1G3kO7" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="3Zy2c1G3kO8" role="1tU5fm">
+          <ref role="ehGHo" to="at53:44HS8_67HzJ" resolve="ComboBoxEntriesFeature" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3Zy2c1G3kO9" role="3clF47">
+        <node concept="3clFbJ" id="3Zy2c1G3kOa" role="3cqZAp">
+          <node concept="3clFbS" id="3Zy2c1G3kOb" role="3clFbx">
+            <node concept="3cpWs6" id="3Zy2c1G3kOc" role="3cqZAp">
+              <node concept="2OqwBi" id="3Zy2c1G3kOd" role="3cqZAk">
+                <node concept="2OqwBi" id="3Zy2c1G3kOe" role="2Oq$k0">
+                  <node concept="37vLTw" id="3Zy2c1G3kOf" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3Zy2c1G3kO7" resolve="node" />
+                  </node>
+                  <node concept="3CFZ6_" id="3Zy2c1G3kOg" role="2OqNvi">
+                    <node concept="3CFYIy" id="3Zy2c1G3kOh" role="3CFYIz">
+                      <ref role="3CFYIx" to="evry:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="3Zy2c1G3kOi" role="2OqNvi">
+                  <ref role="3TsBF5" to="evry:3MA_BelBku6" resolve="customName" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3Zy2c1G3kOj" role="3clFbw">
+            <node concept="2OqwBi" id="3Zy2c1G3kOk" role="2Oq$k0">
+              <node concept="37vLTw" id="3Zy2c1G3kOl" role="2Oq$k0">
+                <ref role="3cqZAo" node="3Zy2c1G3kO7" resolve="node" />
+              </node>
+              <node concept="3CFZ6_" id="3Zy2c1G3kOm" role="2OqNvi">
+                <node concept="3CFYIy" id="3Zy2c1G3kOn" role="3CFYIz">
+                  <ref role="3CFYIx" to="evry:3MA_BelBku3" resolve="CustomTypeNameBinding" />
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="3Zy2c1G3kOo" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="3Zy2c1G3kOp" role="3cqZAp" />
+        <node concept="3cpWs8" id="3Zy2c1G3sZb" role="3cqZAp">
+          <node concept="3cpWsn" id="3Zy2c1G3sZc" role="3cpWs9">
+            <property role="TrG5h" value="comboBoxName" />
+            <node concept="17QB3L" id="3Zy2c1G3srN" role="1tU5fm" />
+            <node concept="2OqwBi" id="3Zy2c1G3sZd" role="33vP2m">
+              <node concept="1PxgMI" id="3Zy2c1G3sZe" role="2Oq$k0">
+                <property role="1BlNFB" value="true" />
+                <node concept="chp4Y" id="3Zy2c1G3sZf" role="3oSUPX">
+                  <ref role="cht4Q" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
+                </node>
+                <node concept="2OqwBi" id="3Zy2c1G3sZg" role="1m5AlR">
+                  <node concept="37vLTw" id="3Zy2c1G3sZh" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3Zy2c1G3kO7" resolve="node" />
+                  </node>
+                  <node concept="1mfA1w" id="3Zy2c1G3sZi" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="3Zy2c1G3sZj" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3Zy2c1G3kOq" role="3cqZAp">
+          <node concept="3cpWs3" id="3Zy2c1G3kOr" role="3clFbG">
+            <node concept="Xl_RD" id="3Zy2c1G3kOs" role="3uHU7w">
+              <property role="Xl_RC" value="Entry" />
+            </node>
+            <node concept="3cpWs3" id="3Zy2c1G3kOt" role="3uHU7B">
+              <node concept="2YIFZM" id="3Zy2c1G3kOu" role="3uHU7w">
+                <ref role="37wK5l" to="18ew:~NameUtil.capitalize(java.lang.String)" resolve="capitalize" />
+                <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                <node concept="37vLTw" id="3Zy2c1G3sZk" role="37wK5m">
+                  <ref role="3cqZAo" node="3Zy2c1G3sZc" resolve="comboBoxName" />
+                </node>
+              </node>
+              <node concept="1rXfSq" id="3Zy2c1G3kOy" role="3uHU7B">
+                <ref role="37wK5l" node="5jkMFwvdNVB" resolve="getViewModelClassName" />
+                <node concept="2OqwBi" id="3Zy2c1G3kOz" role="37wK5m">
+                  <node concept="37vLTw" id="3Zy2c1G3kO$" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3Zy2c1G3kO7" resolve="node" />
+                  </node>
+                  <node concept="2Xjw5R" id="3Zy2c1G3kO_" role="2OqNvi">
+                    <node concept="1xMEDy" id="3Zy2c1G3kOA" role="1xVPHs">
+                      <node concept="chp4Y" id="3Zy2c1G3kOB" role="ri$Ld">
+                        <ref role="cht4Q" to="at53:F907haLJWg" resolve="ViewModel" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3Zy2c1G3kOC" role="1B3o_S" />
+      <node concept="17QB3L" id="3Zy2c1G3kOD" role="3clF45" />
+    </node>
     <node concept="2YIFZL" id="32SpZNIS3lj" role="jymVt">
       <property role="TrG5h" value="getDependencyClassName" />
       <node concept="37vLTG" id="32SpZNIS4wS" role="3clF46">

@@ -1,0 +1,8 @@
+namespace widgetassertions ;
+
+
+
+
+public enum ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption {
+  Green, Yellow, Red
+}

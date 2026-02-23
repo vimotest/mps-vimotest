@@ -904,8 +904,34 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
       <node concept="asaX9" id="3c$pnH1gHul" role="lGtFl" />
     </node>
+    <node concept="1TJgyi" id="6TFgjK2bAwg" role="1TKVEl">
+      <property role="IQ2nx" value="7956524892670552080" />
+      <property role="TrG5h" value="hasFixedChoices" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6TFgjK2bF1v" role="1TKVEl">
+      <property role="IQ2nx" value="7956524892670570591" />
+      <property role="TrG5h" value="hasSeparateDisplayValue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="3Zy2c1G3_4s" role="1TKVEl">
+      <property role="IQ2nx" value="4603251391665688860" />
+      <property role="TrG5h" value="customSeparateLogicalValueName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3Zy2c1G3_4t" role="1TKVEl">
+      <property role="IQ2nx" value="4603251391665688861" />
+      <property role="TrG5h" value="customSeparateDisplayValueName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="7FAtRx$VXNP" role="PzmwI">
       <ref role="PrY4T" node="7FAtRx$VQ6k" resolve="ICanHaveMultipleValues" />
+    </node>
+    <node concept="PrWs8" id="6TFgjK2OmIU" role="PzmwI">
+      <ref role="PrY4T" node="6TFgjK2Ol61" resolve="IProvideComboBoxConfig" />
+    </node>
+    <node concept="PrWs8" id="3Zy2c1G2MDZ" role="PzmwI">
+      <ref role="PrY4T" to="evry:7VjLoWiMzkq" resolve="ICustomizableTypeInfo" />
     </node>
   </node>
   <node concept="1TIwiD" id="44HS8_67HzK">
@@ -926,6 +952,9 @@
     <property role="34LRSv" value="combobox" />
     <property role="3GE5qa" value="widgets.choices" />
     <ref role="1TJDcQ" node="F907haLIRF" resolve="ViewWidget" />
+    <node concept="PrWs8" id="3Zy2c1FHHfA" role="PzmwI">
+      <ref role="PrY4T" to="evry:7VjLoWiMzkq" resolve="ICustomizableTypeInfo" />
+    </node>
     <node concept="1TJgyj" id="44HS8_67H$2" role="1TKVEi">
       <property role="IQ2ns" value="4696656866608863490" />
       <property role="20kJfa" value="comboBoxEntriesFeature" />
@@ -979,6 +1008,9 @@
     <node concept="PrWs8" id="19OyC3_hbFc" role="PzmwI">
       <ref role="PrY4T" node="7NXUkdRspaV" resolve="IProvideChoiceEntries" />
     </node>
+    <node concept="PrWs8" id="3Zy2c1HNaiC" role="PzmwI">
+      <ref role="PrY4T" to="evry:7VjLoWiMz5D" resolve="IEnumDefinition" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3mckYa_DMEC">
     <property role="EcuMT" value="3858551213656582824" />
@@ -986,6 +1018,11 @@
     <property role="TrG5h" value="ComboBoxEntry" />
     <property role="34LRSv" value="entry" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6TFgjK2bF1u" role="1TKVEl">
+      <property role="IQ2nx" value="7956524892670570590" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="1Ukm5RfrSRq" role="PzmwI">
       <ref role="PrY4T" node="1Ukm5RfrSRo" resolve="IChoiceEntry" />
     </node>
@@ -1871,6 +1908,11 @@
     <node concept="PrWs8" id="5jGmAfqGMnx" role="PzmwI">
       <ref role="PrY4T" node="3F1kzPoMMcm" resolve="ICanHaveCustomPropertyName" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="6TFgjK2Ol61">
+    <property role="EcuMT" value="7956524892681228673" />
+    <property role="3GE5qa" value="widgets.choices" />
+    <property role="TrG5h" value="IProvideComboBoxConfig" />
   </node>
 </model>
 

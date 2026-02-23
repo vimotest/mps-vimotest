@@ -905,6 +905,9 @@
     <node concept="PrWs8" id="7NXUkdRsp_B" role="PzmwI">
       <ref role="PrY4T" to="at53:7NXUkdRspaV" resolve="IProvideChoiceEntries" />
     </node>
+    <node concept="PrWs8" id="6TFgjK2OnPd" role="PzmwI">
+      <ref role="PrY4T" to="at53:6TFgjK2Ol61" resolve="IProvideComboBoxConfig" />
+    </node>
     <node concept="1TJgyj" id="5ZbqeTIbciF" role="1TKVEi">
       <property role="IQ2ns" value="6902726227135349931" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

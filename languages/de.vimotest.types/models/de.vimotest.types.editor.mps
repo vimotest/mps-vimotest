@@ -1339,6 +1339,18 @@
         <ref role="1NtTu8" to="evry:3JF9X1Ls77z" resolve="namespace" />
       </node>
       <node concept="l2Vlx" id="3JF9X1LtxCI" role="2iSdaV" />
+      <node concept="pkWqt" id="3Zy2c1G2RwV" role="pqm2j">
+        <node concept="3clFbS" id="3Zy2c1G2RwW" role="2VODD2">
+          <node concept="3clFbF" id="3Zy2c1G2RV0" role="3cqZAp">
+            <node concept="2OqwBi" id="3Zy2c1G2SaE" role="3clFbG">
+              <node concept="pncrf" id="3Zy2c1G2RUZ" role="2Oq$k0" />
+              <node concept="2qgKlT" id="3Zy2c1G2Soz" role="2OqNvi">
+                <ref role="37wK5l" to="45v0:3Zy2c1G2Oha" resolve="isCustomNamespaceSupported" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="PKFIW" id="7VjLoWjumTv">

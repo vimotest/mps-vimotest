@@ -1,0 +1,23 @@
+namespace widgetassertions ;
+
+
+
+activity convertMyOptionsWithFixedChoicesToString ( in symbol: ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption  ) : String  {
+  if ( symbol == ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption:: Green ) {
+    return "Green";
+
+  } 
+
+  if ( symbol == ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption:: Yellow ) {
+    return "Yellow";
+
+  } 
+
+  if ( symbol == ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption:: Red ) {
+    return "Red";
+
+  } 
+
+  return "?";
+
+}

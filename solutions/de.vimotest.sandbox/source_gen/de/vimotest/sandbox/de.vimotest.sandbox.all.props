@@ -3,6 +3,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/ConvertMyEnumToString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)bindings/enumtostring/ConvertMyEnumToStr.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)commands/ConvertCommandEnumToString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ConvertMyOptionsWithFixedChoicesToString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ConvertMyOptionsWithFixedChoicesAndDisplayValueToString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)commands/ConvertMyOptionsToString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ConvertOptionsToString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ListViews_ViewModelMyListOfLabelRow.cs" />
@@ -170,9 +172,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)context/ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/LoggerSpy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ComboBoxes_ViewModelMyOptionsWithDisplayValueEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueEntry.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/MyAdditions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)commands/SelectEntryCommand_ViewModelMyOptionsOption.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/RadioButton_ViewModelOptionsOption.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/MyEnum.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)bindings/CustomTypeInfoEnum.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)commands/CommandEnum.cs" />

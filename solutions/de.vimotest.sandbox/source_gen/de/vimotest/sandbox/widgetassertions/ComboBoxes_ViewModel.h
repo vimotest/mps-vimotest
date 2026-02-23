@@ -1,6 +1,10 @@
 #pragma once
 
 #include <vector>
+#include "ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption.h"
+#include "ComboBoxes_ViewModelMyOptionsWithDisplayValueEntry.h"
+#include "ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueEntry.h"
+#include "ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption.h"
 #include <string>
 
 namespace widgetassertions
@@ -17,6 +21,15 @@ namespace widgetassertions
     virtual std::string getMyOptionsWithFreeTextComboBoxText();
     virtual bool getIsMyOptionsWithFreeTextComboBoxVisible();
     virtual bool getIsMyOptionsWithFreeTextComboBoxEnabled();
+    virtual std::vector<ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption> getMyOptionsWithFixedChoicesComboBoxEntries();
+    virtual ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption getMyOptionsWithFixedChoicesComboBoxSelectedEntry();
+    virtual std::vector<ComboBoxes_ViewModelMyOptionsWithDisplayValueEntry> getMyOptionsWithDisplayValueComboBoxEntries();
+    virtual std::string getMyOptionsWithDisplayValueComboBoxSelectedEntry();
+    virtual std::vector<ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueEntry> getMyOptionsWithFixedChoicesAndDisplayValueComboBoxEntries();
+    virtual ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption getMyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry();
+    virtual void myOptionsWithFixedChoicesComboBoxEntrySelected(std::string entryName);
+    virtual void myOptionsWithDisplayValueComboBoxEntrySelected(std::string entryName);
+    virtual void myOptionsWithFixedChoicesAndDisplayValueComboBoxEntrySelected(std::string entryName);
   private:
     std::vector<std::string> MyOptionsComboBoxEntries;
     std::string MyOptionsComboBoxSelectedEntry;
@@ -27,5 +40,11 @@ namespace widgetassertions
     std::string MyOptionsWithFreeTextComboBoxText;
     bool isMyOptionsWithFreeTextComboBoxVisible;
     bool isMyOptionsWithFreeTextComboBoxEnabled;
+    std::vector<ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption> MyOptionsWithFixedChoicesComboBoxEntries;
+    ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption MyOptionsWithFixedChoicesComboBoxSelectedEntry;
+    std::vector<ComboBoxes_ViewModelMyOptionsWithDisplayValueEntry> MyOptionsWithDisplayValueComboBoxEntries;
+    std::string MyOptionsWithDisplayValueComboBoxSelectedEntry;
+    std::vector<ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueEntry> MyOptionsWithFixedChoicesAndDisplayValueComboBoxEntries;
+    ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption MyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry;
   };
 }

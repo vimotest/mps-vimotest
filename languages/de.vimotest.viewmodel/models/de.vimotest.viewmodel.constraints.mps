@@ -1824,5 +1824,23 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="3Zy2c1FEIY4">
+    <property role="3GE5qa" value="widgets.choices" />
+    <ref role="1M2myG" to="at53:7NXUkdPQshI" resolve="RadioButtonWidget" />
+    <node concept="9S07l" id="3Zy2c1FEIY5" role="9Vyp8">
+      <node concept="3clFbS" id="3Zy2c1FEIY6" role="2VODD2">
+        <node concept="3clFbF" id="3Zy2c1FELij" role="3cqZAp">
+          <node concept="2OqwBi" id="3Zy2c1FELxy" role="3clFbG">
+            <node concept="nLn13" id="3Zy2c1FELii" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="3Zy2c1FELDx" role="2OqNvi">
+              <node concept="chp4Y" id="3Zy2c1FELG1" role="cj9EA">
+                <ref role="cht4Q" to="at53:12kpBrp1H3U" resolve="RadioButtonGroupWidget" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -7414,6 +7414,51 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="3Zy2c1Jsg2B" role="13h7CS">
+      <property role="TrG5h" value="canSupportGenerateNoRowHandleParameter" />
+      <node concept="3Tm1VV" id="3Zy2c1Jsg2C" role="1B3o_S" />
+      <node concept="10P_77" id="3Zy2c1Jsg6I" role="3clF45" />
+      <node concept="3clFbS" id="3Zy2c1Jsg2E" role="3clF47">
+        <node concept="3clFbF" id="3Zy2c1Jsg7K" role="3cqZAp">
+          <node concept="1Wc70l" id="3Zy2c1JsjHL" role="3clFbG">
+            <node concept="2OqwBi" id="3Zy2c1Js8g5" role="3uHU7B">
+              <node concept="13iPFW" id="3Zy2c1Jsggc" role="2Oq$k0" />
+              <node concept="2qgKlT" id="3Zy2c1Js8g7" role="2OqNvi">
+                <ref role="37wK5l" node="2w4bAIFLfrc" resolve="isRowBased" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3Zy2c1JsdfT" role="3uHU7w">
+              <node concept="2OqwBi" id="3Zy2c1JsdfU" role="2Oq$k0">
+                <node concept="2OqwBi" id="3Zy2c1JsdfV" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3Zy2c1JsdfW" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3Zy2c1JsdfX" role="2Oq$k0">
+                      <node concept="13iPFW" id="3Zy2c1JsgoD" role="2Oq$k0" />
+                      <node concept="2Xjw5R" id="3Zy2c1J_TVi" role="2OqNvi">
+                        <node concept="1xMEDy" id="3Zy2c1J_TVk" role="1xVPHs">
+                          <node concept="chp4Y" id="3Zy2c1J_U5Q" role="ri$Ld">
+                            <ref role="cht4Q" to="at53:30uXY1Sh9ET" resolve="IRowBasedViewWidget" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="32TBzR" id="3Zy2c1Jsdg0" role="2OqNvi" />
+                  </node>
+                  <node concept="v3k3i" id="3Zy2c1Jsdg1" role="2OqNvi">
+                    <node concept="chp4Y" id="3Zy2c1Jsdg2" role="v3oSu">
+                      <ref role="cht4Q" to="at53:7WgsBLYmzhD" resolve="SelectedRowFeature" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="3Zy2c1Jsdg3" role="2OqNvi" />
+              </node>
+              <node concept="3TrcHB" id="3Zy2c1Jsdg4" role="2OqNvi">
+                <ref role="3TsBF5" to="at53:4OohpJQO3xr" resolve="supported" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="1F_Q10zUHGb">
     <property role="3GE5qa" value="viewmodel.commands" />

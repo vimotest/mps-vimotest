@@ -4,6 +4,7 @@
 #include "RowBasedCommand_ViewModelMyFlagsRow.h"
 #include "RowBasedCommand_ViewModelMyComboBoxesRow.h"
 #include "RowBasedCommand_ViewModelMyStandardControlsRow.h"
+#include "RowBasedCommand_ViewModelRowBasedCommandWithNoRowHandleParameterRow.h"
 #include <string>
 
 namespace commands
@@ -19,6 +20,14 @@ namespace commands
   std::vector<std::shared_ptr<RowBasedCommand_ViewModelMyStandardControlsRow>> RowBasedCommand_ViewModel::getMyStandardControlsTreeRows()
   {
     return this->MyStandardControlsTreeRows;
+  }
+  std::vector<std::shared_ptr<RowBasedCommand_ViewModelRowBasedCommandWithNoRowHandleParameterRow>> RowBasedCommand_ViewModel::getRowBasedCommandWithNoRowHandleParameterListRows()
+  {
+    return this->RowBasedCommandWithNoRowHandleParameterListRows;
+  }
+  int RowBasedCommand_ViewModel::getRowBasedCommandWithNoRowHandleParameterListSelectedRow()
+  {
+    return this->RowBasedCommandWithNoRowHandleParameterListSelectedRow;
   }
   void RowBasedCommand_ViewModel::loadViewModel()
   {
@@ -36,6 +45,12 @@ namespace commands
   {
   }
   void RowBasedCommand_ViewModel::buttonsButtonClicked(int rowIndex)
+  {
+  }
+  void RowBasedCommand_ViewModel::checkboxesCheckBoxChecked(bool isChecked)
+  {
+  }
+  void RowBasedCommand_ViewModel::rowBasedCommandWithNoRowHandleParameterListRowSelected(int rowIndex)
   {
   }
 }

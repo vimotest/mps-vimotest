@@ -32,8 +32,8 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
-    <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
+    <import index="evry" ref="r:828316ae-8ce0-4b9e-99ba-23f7af175199(de.vimotest.types.structure)" implicit="true" />
     <import index="tpch" ref="r:00000000-0000-4000-0000-011c8959028d(jetbrains.mps.lang.structure.editor)" implicit="true" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
@@ -3623,6 +3623,28 @@
         </node>
       </node>
       <node concept="l2Vlx" id="6kjlgUuuhig" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="3Zy2c1JhhSO" role="6VMZX">
+      <node concept="l2Vlx" id="3Zy2c1JhhSP" role="2iSdaV" />
+      <node concept="3F0ifn" id="3Zy2c1Jhj0Y" role="3EZMnx">
+        <property role="3F0ifm" value="@generateNoRowHandleParameter:" />
+        <ref role="1k5W1q" to="tpen:hshU_KJ" resolve="Annotation" />
+      </node>
+      <node concept="3F0A7n" id="3Zy2c1Jhj10" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:3Zy2c1Jhgn8" resolve="generateNoRowHandleParameter" />
+      </node>
+      <node concept="pkWqt" id="3Zy2c1JhkUw" role="pqm2j">
+        <node concept="3clFbS" id="3Zy2c1JhkUx" role="2VODD2">
+          <node concept="3clFbF" id="3Zy2c1JhkWo" role="3cqZAp">
+            <node concept="2OqwBi" id="3Zy2c1JhlhA" role="3clFbG">
+              <node concept="pncrf" id="3Zy2c1JhkWn" role="2Oq$k0" />
+              <node concept="2qgKlT" id="3Zy2c1Jsj6O" role="2OqNvi">
+                <ref role="37wK5l" to="nrs2:3Zy2c1Jsg2B" resolve="canSupportGenerateNoRowHandleParameter" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="PKFIW" id="1F_Q10zSP_8">

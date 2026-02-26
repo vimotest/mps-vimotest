@@ -29,6 +29,20 @@ namespace commands
             return this.MyStandardControlsTreeRows;
         }
 
+        private System.Collections.Generic.List<commands.RowBasedCommand_ViewModelRowBasedCommandWithNoRowHandleParameterRow> RowBasedCommandWithNoRowHandleParameterListRows = new System.Collections.Generic.List<commands.RowBasedCommand_ViewModelRowBasedCommandWithNoRowHandleParameterRow>();
+
+        public virtual System.Collections.Generic.List<commands.RowBasedCommand_ViewModelRowBasedCommandWithNoRowHandleParameterRow> getRowBasedCommandWithNoRowHandleParameterListRows()
+        {
+            return this.RowBasedCommandWithNoRowHandleParameterListRows;
+        }
+
+        private int RowBasedCommandWithNoRowHandleParameterListSelectedRow;
+
+        public virtual int getRowBasedCommandWithNoRowHandleParameterListSelectedRow()
+        {
+            return this.RowBasedCommandWithNoRowHandleParameterListSelectedRow;
+        }
+
         public virtual void loadViewModel()
         {
         }
@@ -50,6 +64,14 @@ namespace commands
         }
 
         public virtual void buttonsButtonClicked(int rowIndex)
+        {
+        }
+
+        public virtual void checkboxesCheckBoxChecked(bool isChecked)
+        {
+        }
+
+        public virtual void rowBasedCommandWithNoRowHandleParameterListRowSelected(int rowIndex)
         {
         }
     }

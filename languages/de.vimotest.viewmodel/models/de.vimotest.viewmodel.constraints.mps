@@ -1455,6 +1455,37 @@
         </node>
       </node>
     </node>
+    <node concept="EnEH3" id="3Zy2c1Js7iE" role="1MhHOB">
+      <ref role="EomxK" to="at53:3Zy2c1Jhgn8" resolve="generateNoRowHandleParameter" />
+      <node concept="Eqf_E" id="3Zy2c1Js7mB" role="EtsB7">
+        <node concept="3clFbS" id="3Zy2c1Js7mC" role="2VODD2">
+          <node concept="3clFbJ" id="3Zy2c1Js8bu" role="3cqZAp">
+            <property role="TyiWK" value="true" />
+            <node concept="3clFbS" id="3Zy2c1Js8bw" role="3clFbx">
+              <node concept="3cpWs6" id="3Zy2c1JsdmB" role="3cqZAp">
+                <node concept="3clFbT" id="3Zy2c1JsdmQ" role="3cqZAk" />
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="3Zy2c1Jskuq" role="3clFbw">
+              <node concept="2OqwBi" id="3Zy2c1JskPg" role="3fr31v">
+                <node concept="EsrRn" id="3Zy2c1JskAh" role="2Oq$k0" />
+                <node concept="2qgKlT" id="3Zy2c1Jslbg" role="2OqNvi">
+                  <ref role="37wK5l" to="nrs2:3Zy2c1Jsg2B" resolve="canSupportGenerateNoRowHandleParameter" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="3Zy2c1Js7wt" role="3cqZAp">
+            <node concept="2OqwBi" id="3Zy2c1Js7PF" role="3clFbG">
+              <node concept="EsrRn" id="3Zy2c1Js7ws" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3Zy2c1Js896" role="2OqNvi">
+                <ref role="3TsBF5" to="at53:3Zy2c1Jhgn8" resolve="generateNoRowHandleParameter" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1M2fIO" id="5cPWD10KVDL">
     <property role="3GE5qa" value="dependencies.view" />

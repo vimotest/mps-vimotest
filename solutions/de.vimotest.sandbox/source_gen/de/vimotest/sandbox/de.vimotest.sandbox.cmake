@@ -12,6 +12,7 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewModelMyIndexBasedMultiSelectRowListViewElementsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewModelMyFlagsRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewModelRowBasedCommandWithNoRowHandleParameterRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewModelCustomListRowFieldRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewModelMyElementsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewModelMyStringRowHandlesRow.cpp
@@ -71,6 +72,7 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewModelMyIndexBasedMultiSelectRowListViewElementsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewModelMyFlagsRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewModelRowBasedCommandWithNoRowHandleParameterRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewModelCustomListRowFieldRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewModelMyElementsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewModelMyStringRowHandlesRow.h

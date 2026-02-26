@@ -1091,6 +1091,14 @@
     <node concept="PrWs8" id="26p1ZnjbkLQ" role="PzmwI">
       <ref role="PrY4T" node="26p1Znjaeba" resolve="ICanHaveCustomOperationName" />
     </node>
+    <node concept="1TJgyi" id="3Zy2c1Jhgn8" role="1TKVEl">
+      <property role="IQ2nx" value="4603251391719605704" />
+      <property role="TrG5h" value="generateNoRowHandleParameter" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="3Zy2c1Jhj12" role="lGtFl">
+        <property role="t5JxN" value="If the command is row-based, the flag controls, if the command definition accepts a row handle" />
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="6kjlgUuw6ea">
     <property role="EcuMT" value="7283258543665341322" />

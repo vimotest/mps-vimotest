@@ -26,6 +26,20 @@ public class RowBasedCommand_ViewModel {
 
   }
   
+  private RowBasedCommandWithNoRowHandleParameterListRows : RowBasedCommand_ViewModelRowBasedCommandWithNoRowHandleParameterRow [ * ]  ;
+  
+  public getRowBasedCommandWithNoRowHandleParameterListRows (  ) : RowBasedCommand_ViewModelRowBasedCommandWithNoRowHandleParameterRow [ * ]  {
+    return this.RowBasedCommandWithNoRowHandleParameterListRows;
+
+  }
+  
+  private RowBasedCommandWithNoRowHandleParameterListSelectedRow : Integer  ;
+  
+  public getRowBasedCommandWithNoRowHandleParameterListSelectedRow (  ) : Integer  {
+    return this.RowBasedCommandWithNoRowHandleParameterListSelectedRow;
+
+  }
+  
   public loadViewModel (  ) {    
   }
   
@@ -42,5 +56,11 @@ public class RowBasedCommand_ViewModel {
   }
   
   public buttonsButtonClicked (   in rowIndex: Integer  ) {    
+  }
+  
+  public checkboxesCheckBoxChecked (   in isChecked: Boolean  ) {    
+  }
+  
+  public rowBasedCommandWithNoRowHandleParameterListRowSelected (   in rowIndex: Integer  ) {    
   }
 }

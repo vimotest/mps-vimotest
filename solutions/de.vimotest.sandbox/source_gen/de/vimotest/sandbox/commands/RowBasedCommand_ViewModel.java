@@ -18,6 +18,14 @@ public class RowBasedCommand_ViewModel {
   public List<RowBasedCommand_ViewModelMyStandardControlsRow> getMyStandardControlsTreeRows() {
     return this.MyStandardControlsTreeRows;
   }
+  private List<RowBasedCommand_ViewModelRowBasedCommandWithNoRowHandleParameterRow> RowBasedCommandWithNoRowHandleParameterListRows = new LinkedList<>();
+  public List<RowBasedCommand_ViewModelRowBasedCommandWithNoRowHandleParameterRow> getRowBasedCommandWithNoRowHandleParameterListRows() {
+    return this.RowBasedCommandWithNoRowHandleParameterListRows;
+  }
+  private Integer RowBasedCommandWithNoRowHandleParameterListSelectedRow;
+  public Integer getRowBasedCommandWithNoRowHandleParameterListSelectedRow() {
+    return this.RowBasedCommandWithNoRowHandleParameterListSelectedRow;
+  }
   public void loadViewModel() {
   }
   public void checkboxesCheckBoxChecked(Integer rowIndex, Boolean isChecked) {
@@ -29,5 +37,9 @@ public class RowBasedCommand_ViewModel {
   public void textBoxesTextBoxTextFilled(Integer rowIndex, String text) {
   }
   public void buttonsButtonClicked(Integer rowIndex) {
+  }
+  public void checkboxesCheckBoxChecked(Boolean isChecked) {
+  }
+  public void rowBasedCommandWithNoRowHandleParameterListRowSelected(Integer rowIndex) {
   }
 }

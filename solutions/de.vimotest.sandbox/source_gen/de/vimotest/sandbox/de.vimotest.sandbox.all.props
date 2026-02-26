@@ -19,6 +19,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)commands/SelectRowCommand_ViewModelMyIndexBasedMultiSelectRowListViewElementsRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)commands/SelectRowCommand_ViewModelMyStringHandleMultiSelectRowListViewElementsRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)commands/RowBasedCommand_ViewModelMyFlagsRow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)commands/RowBasedCommand_ViewModelRowBasedCommandWithNoRowHandleParameterRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/LowLevelFields_ViewModelCustomListRowFieldRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/TableViews_ViewModelMyElementsRow.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)widgetassertions/TableViews_ViewModelMyStringRowHandlesRow.cs" />

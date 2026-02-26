@@ -3,6 +3,7 @@
 #include "SelectEntryCommand_ViewModelTestEnvironment.h"
 #include <string>
 #include "SelectEntryCommand_ViewModel.h"
+#include "SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption.h"
 #include "SelectEntryCommand_ViewModelMyOptionsOption.h"
 #include <vector>
 #include "SelectEntryCommand_ViewModelTestEnvironmentImpl.h"
@@ -17,6 +18,7 @@ namespace commands
     virtual void BuildSut();
     // When Helper Definitions
     virtual void when_select_entry_C_in_MyElements();
+    virtual void when_select_entry_Red_in_MyOptionsWithFixedChoices();
     virtual void when_select_entry_B_in_MyOptions();
     // Then Helper Definitions
     virtual void then_MyElements_has_3_entries_and();
@@ -30,12 +32,13 @@ namespace commands
   }
   /// Scenario: Select Entry Combobox Call
   ///   given:
-  ///    when: select entry 'C' in MyElements
+  ///    when: select entry 'C' in MyElements and select entry 'Red' in MyOptionsWithFixedChoices
   ///    then: MyElements has 3 entries and
-  TEST_F(SelectEntryCommand_ViewTests, Select_Entry_Combobox_Call_given_when_select_entry_C_in_MyElements_then_MyElements_has_3_entries_and)
+  TEST_F(SelectEntryCommand_ViewTests, Select_Entry_Combobox_Call_given_when_select_entry_C_in_MyElements_and_select_entry_Red_in_MyOptionsWithFixedChoices_then_MyElements_has_3_entries_and)
   {
     this->BuildSut();
     this->when_select_entry_C_in_MyElements();
+    this->when_select_entry_Red_in_MyOptionsWithFixedChoices();
     this->then_MyElements_has_3_entries_and();
   }
   /// Scenario: Select Entry RadioButton Call
@@ -54,6 +57,10 @@ namespace commands
   void SelectEntryCommand_ViewTests::when_select_entry_C_in_MyElements()
   {
     this->sut->myElementsComboBoxEntrySelected(std::string("C"));
+  }
+  void SelectEntryCommand_ViewTests::when_select_entry_Red_in_MyOptionsWithFixedChoices()
+  {
+    this->sut->myOptionsWithFixedChoicesComboBoxEntrySelected(commands::SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption::Red);
   }
   void SelectEntryCommand_ViewTests::when_select_entry_B_in_MyOptions()
   {

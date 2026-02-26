@@ -7,6 +7,7 @@ import de.vimotest.sandbox.commands.SelectEntryCommand_ViewModelTestEnvironment;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.commands.SelectEntryCommand_ViewModelTestEnvironmentImpl;
+import de.vimotest.sandbox.commands.SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption;
 import de.vimotest.sandbox.commands.SelectEntryCommand_ViewModelMyOptionsOption;
 import java.util.List;
 import org.junit.Assert;
@@ -15,9 +16,10 @@ public class SelectEntryCommand_ViewTests_Test {
   private SelectEntryCommand_ViewModel sut;
   private SelectEntryCommand_ViewModelTestEnvironment testEnvironment;
   @Test
-  public void test_Select_Entry_Combobox_Call_given_when_select_entry_C_in_MyElements_then_MyElements_has_3_entries_and() throws Exception {
+  public void test_Select_Entry_Combobox_Call_given_when_select_entry_C_in_MyElements_and_select_entry_Red_in_MyOptionsWithFixedChoices_then_MyElements_has_3_entries_and() throws Exception {
     this.BuildSut();
     this.when_select_entry_C_in_MyElements();
+    this.when_select_entry_Red_in_MyOptionsWithFixedChoices();
     this.then_MyElements_has_3_entries_and();
   }
   @Test
@@ -41,6 +43,9 @@ public class SelectEntryCommand_ViewTests_Test {
 
   public void when_select_entry_C_in_MyElements() {
     this.sut.myElementsComboBoxEntrySelected("C");
+  }
+  public void when_select_entry_Red_in_MyOptionsWithFixedChoices() {
+    this.sut.myOptionsWithFixedChoicesComboBoxEntrySelected(SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption.Red);
   }
   public void when_select_entry_B_in_MyOptions() {
     this.sut.myOptionsRadioButtonGroupEntrySelected(SelectEntryCommand_ViewModelMyOptionsOption.B);

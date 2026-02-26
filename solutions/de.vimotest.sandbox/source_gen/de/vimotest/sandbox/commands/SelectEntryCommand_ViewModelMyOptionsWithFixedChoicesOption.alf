@@ -1,0 +1,8 @@
+namespace commands ;
+
+
+
+
+public enum SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption {
+  Green, Yellow, Red
+}

@@ -566,6 +566,16 @@
       <ref role="2rTdP9" to="at53:44HS8_67HzJ" resolve="ComboBoxEntriesFeature" />
       <ref role="2rZz_L" to="28lk:2SMO68r$0GZ" resolve="ClassifierDefinition" />
     </node>
+    <node concept="2rT7sh" id="3bL6Lt0ZYXO" role="2rTMjI">
+      <property role="TrG5h" value="ComboBoxEntriesFeature_Record_Value_AttributeDefinition" />
+      <ref role="2rTdP9" to="at53:44HS8_67HzJ" resolve="ComboBoxEntriesFeature" />
+      <ref role="2rZz_L" to="28lk:2HeY20H6tuG" resolve="AttributeDefinition" />
+    </node>
+    <node concept="2rT7sh" id="3bL6Lt101YT" role="2rTMjI">
+      <property role="TrG5h" value="ComboBoxEntriesFeature_Record_DisplayValue_AttributeDefinition" />
+      <ref role="2rTdP9" to="at53:44HS8_67HzJ" resolve="ComboBoxEntriesFeature" />
+      <ref role="2rZz_L" to="28lk:2HeY20H6tuG" resolve="AttributeDefinition" />
+    </node>
     <node concept="2rT7sh" id="54nmQxFEMFx" role="2rTMjI">
       <property role="TrG5h" value="IReferenceableDependency_ClassDefinition" />
       <ref role="2rTdP9" to="at53:3kGPU1QcSOP" resolve="IReferenceableDependency" />
@@ -847,15 +857,10 @@
       <node concept="30G5F_" id="3Zy2c1Gpx9U" role="30HLyM">
         <node concept="3clFbS" id="3Zy2c1Gpx9V" role="2VODD2">
           <node concept="3clFbF" id="3Zy2c1Gpxao" role="3cqZAp">
-            <node concept="2OqwBi" id="3Zy2c1GpyFm" role="3clFbG">
-              <node concept="2OqwBi" id="3Zy2c1Gpxze" role="2Oq$k0">
-                <node concept="30H73N" id="3Zy2c1Gpxan" role="2Oq$k0" />
-                <node concept="3TrEf2" id="3Zy2c1GpxUa" role="2OqNvi">
-                  <ref role="3Tt5mk" to="at53:44HS8_67H$2" resolve="comboBoxEntriesFeature" />
-                </node>
-              </node>
-              <node concept="3TrcHB" id="3Zy2c1GpzaA" role="2OqNvi">
-                <ref role="3TsBF5" to="at53:6TFgjK2bAwg" resolve="hasFixedChoices" />
+            <node concept="2OqwBi" id="3Zy2c1Gpxze" role="3clFbG">
+              <node concept="30H73N" id="3Zy2c1Gpxan" role="2Oq$k0" />
+              <node concept="2qgKlT" id="10wtdZPtOF6" role="2OqNvi">
+                <ref role="37wK5l" to="nrs2:10wtdZPtGij" resolve="isFixedEnumeration" />
               </node>
             </node>
           </node>
@@ -1843,24 +1848,19 @@
       <node concept="30G5F_" id="3Zy2c1H6Nvj" role="30HLyM">
         <node concept="3clFbS" id="3Zy2c1H6Nvk" role="2VODD2">
           <node concept="3clFbF" id="3Zy2c1H6U00" role="3cqZAp">
-            <node concept="2OqwBi" id="3Zy2c1H7fXb" role="3clFbG">
-              <node concept="2OqwBi" id="3Zy2c1H7f6F" role="2Oq$k0">
-                <node concept="1PxgMI" id="3Zy2c1H79RY" role="2Oq$k0">
-                  <property role="1BlNFB" value="true" />
-                  <node concept="chp4Y" id="3Zy2c1H7eHh" role="3oSUPX">
-                    <ref role="cht4Q" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
-                  </node>
-                  <node concept="2OqwBi" id="3Zy2c1H6Uiw" role="1m5AlR">
-                    <node concept="30H73N" id="3Zy2c1H6TZZ" role="2Oq$k0" />
-                    <node concept="1mfA1w" id="3Zy2c1H6YbN" role="2OqNvi" />
-                  </node>
+            <node concept="2OqwBi" id="3Zy2c1H7f6F" role="3clFbG">
+              <node concept="1PxgMI" id="3Zy2c1H79RY" role="2Oq$k0">
+                <property role="1BlNFB" value="true" />
+                <node concept="chp4Y" id="3Zy2c1H7eHh" role="3oSUPX">
+                  <ref role="cht4Q" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
                 </node>
-                <node concept="3TrEf2" id="3Zy2c1H7fzY" role="2OqNvi">
-                  <ref role="3Tt5mk" to="at53:44HS8_67H$2" resolve="comboBoxEntriesFeature" />
+                <node concept="2OqwBi" id="3Zy2c1H6Uiw" role="1m5AlR">
+                  <node concept="30H73N" id="3Zy2c1H6TZZ" role="2Oq$k0" />
+                  <node concept="1mfA1w" id="3Zy2c1H6YbN" role="2OqNvi" />
                 </node>
               </node>
-              <node concept="3TrcHB" id="3Zy2c1H7gll" role="2OqNvi">
-                <ref role="3TsBF5" to="at53:6TFgjK2bAwg" resolve="hasFixedChoices" />
+              <node concept="2qgKlT" id="10wtdZPtSa8" role="2OqNvi">
+                <ref role="37wK5l" to="nrs2:10wtdZPtGij" resolve="isFixedEnumeration" />
               </node>
             </node>
           </node>
@@ -2031,24 +2031,19 @@
       <node concept="30G5F_" id="3Zy2c1H7Git" role="30HLyM">
         <node concept="3clFbS" id="3Zy2c1H7Giu" role="2VODD2">
           <node concept="3clFbF" id="3Zy2c1H7Giv" role="3cqZAp">
-            <node concept="2OqwBi" id="3Zy2c1H7Giw" role="3clFbG">
-              <node concept="2OqwBi" id="3Zy2c1H7Gix" role="2Oq$k0">
-                <node concept="1PxgMI" id="3Zy2c1H7Giy" role="2Oq$k0">
-                  <property role="1BlNFB" value="true" />
-                  <node concept="chp4Y" id="3Zy2c1H7Giz" role="3oSUPX">
-                    <ref role="cht4Q" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
-                  </node>
-                  <node concept="2OqwBi" id="3Zy2c1H7Gi$" role="1m5AlR">
-                    <node concept="30H73N" id="3Zy2c1H7Gi_" role="2Oq$k0" />
-                    <node concept="1mfA1w" id="3Zy2c1H7GiA" role="2OqNvi" />
-                  </node>
+            <node concept="2OqwBi" id="3Zy2c1H7Gix" role="3clFbG">
+              <node concept="1PxgMI" id="3Zy2c1H7Giy" role="2Oq$k0">
+                <property role="1BlNFB" value="true" />
+                <node concept="chp4Y" id="3Zy2c1H7Giz" role="3oSUPX">
+                  <ref role="cht4Q" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
                 </node>
-                <node concept="3TrEf2" id="3Zy2c1H7GiB" role="2OqNvi">
-                  <ref role="3Tt5mk" to="at53:44HS8_67H$2" resolve="comboBoxEntriesFeature" />
+                <node concept="2OqwBi" id="3Zy2c1H7Gi$" role="1m5AlR">
+                  <node concept="30H73N" id="3Zy2c1H7Gi_" role="2Oq$k0" />
+                  <node concept="1mfA1w" id="3Zy2c1H7GiA" role="2OqNvi" />
                 </node>
               </node>
-              <node concept="3TrcHB" id="3Zy2c1H7GiC" role="2OqNvi">
-                <ref role="3TsBF5" to="at53:6TFgjK2bAwg" resolve="hasFixedChoices" />
+              <node concept="2qgKlT" id="10wtdZPtSkH" role="2OqNvi">
+                <ref role="37wK5l" to="nrs2:10wtdZPtGij" resolve="isFixedEnumeration" />
               </node>
             </node>
           </node>
@@ -2800,6 +2795,76 @@
               </node>
               <node concept="3TrcHB" id="7wIkOM958gz" role="2OqNvi">
                 <ref role="3TsBF5" to="at53:6qlTyZCQCeM" resolve="isFixedEnumeration" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="10wtdZQhJH0" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="at53:6kjlgUu$Xsz" resolve="SelectEntryCommand" />
+      <node concept="gft3U" id="10wtdZQhJH1" role="1lVwrX">
+        <node concept="15s5l7" id="10wtdZQhJH2" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  String (nameRef) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;nameRef&quot;;FLAVOUR_RULE_ID=&quot;[r:104f0cd9-92f7-43f4-be7d-b080b77958d2(alfi.constraints)/3855977438827374887]&quot;;" />
+          <property role="huDt6" value="The reference  String (nameRef) is out of search scope" />
+        </node>
+        <node concept="3xR696" id="10wtdZQhJH3" role="gfFT$">
+          <property role="TrG5h" value="entryOption" />
+          <property role="3xR695" value="1KdBIfXPktw/in" />
+          <node concept="3xHE8C" id="10wtdZQhJH4" role="3xMlr6">
+            <node concept="_vnHe" id="10wtdZQhJH5" role="35HzJw">
+              <ref role="3acloq" to="gkn4:1KdBIfXrfVO" resolve="String" />
+              <node concept="1ZhdrF" id="10wtdZQhJH6" role="lGtFl">
+                <property role="2qtEX8" value="nameRef" />
+                <property role="P3scX" value="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703/2674824929519835220/3855977438835276054" />
+                <node concept="3$xsQk" id="10wtdZQhJH7" role="3$ytzL">
+                  <node concept="3clFbS" id="10wtdZQhJH8" role="2VODD2">
+                    <node concept="3clFbF" id="10wtdZQhJH9" role="3cqZAp">
+                      <node concept="2OqwBi" id="10wtdZQhJHa" role="3clFbG">
+                        <node concept="1iwH7S" id="10wtdZQhJHb" role="2Oq$k0" />
+                        <node concept="1iwH70" id="10wtdZQhJHc" role="2OqNvi">
+                          <ref role="1iwH77" node="4gxFnBYLx_I" resolve="INamedConcept_EnumerationDefinition" />
+                          <node concept="1PxgMI" id="10wtdZQhJHd" role="1iwH7V">
+                            <property role="1BlNFB" value="true" />
+                            <node concept="chp4Y" id="10wtdZQhJHe" role="3oSUPX">
+                              <ref role="cht4Q" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
+                            </node>
+                            <node concept="2OqwBi" id="10wtdZQhJHf" role="1m5AlR">
+                              <node concept="30H73N" id="10wtdZQhJHg" role="2Oq$k0" />
+                              <node concept="2qgKlT" id="10wtdZQhJHh" role="2OqNvi">
+                                <ref role="37wK5l" to="nrs2:1F_Q10zSZF3" resolve="getWidget" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30G5F_" id="10wtdZQhJHi" role="30HLyM">
+        <node concept="3clFbS" id="10wtdZQhJHj" role="2VODD2">
+          <node concept="3clFbF" id="10wtdZQhJHk" role="3cqZAp">
+            <node concept="2OqwBi" id="10wtdZQhKo6" role="3clFbG">
+              <node concept="1PxgMI" id="10wtdZQhJHm" role="2Oq$k0">
+                <property role="1BlNFB" value="true" />
+                <node concept="chp4Y" id="10wtdZQhJHn" role="3oSUPX">
+                  <ref role="cht4Q" to="at53:44HS8_67H$1" resolve="ComboBoxWidget" />
+                </node>
+                <node concept="2OqwBi" id="10wtdZQhJHo" role="1m5AlR">
+                  <node concept="30H73N" id="10wtdZQhJHp" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="10wtdZQhJHq" role="2OqNvi">
+                    <ref role="37wK5l" to="nrs2:1F_Q10zSZF3" resolve="getWidget" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2qgKlT" id="10wtdZQhKQl" role="2OqNvi">
+                <ref role="37wK5l" to="nrs2:10wtdZPtGij" resolve="isFixedEnumeration" />
               </node>
             </node>
           </node>
@@ -6566,7 +6631,7 @@
                       <node concept="2OqwBi" id="3Zy2c1G3xzY" role="3fr31v">
                         <node concept="30H73N" id="3Zy2c1G3xzZ" role="2Oq$k0" />
                         <node concept="3TrcHB" id="3Zy2c1G3x$0" role="2OqNvi">
-                          <ref role="3TsBF5" to="at53:6TFgjK2bAwg" resolve="hasFixedChoices" />
+                          <ref role="3TsBF5" to="at53:6TFgjK2bAwg" resolve="isFixedEnumeration" />
                         </node>
                       </node>
                     </node>
@@ -6640,6 +6705,9 @@
             </node>
           </node>
         </node>
+        <node concept="2ZBi8u" id="3bL6Lt103WW" role="lGtFl">
+          <ref role="2rW$FS" node="3bL6Lt0ZYXO" resolve="ComboBoxEntriesFeature_Record_Value_AttributeDefinition" />
+        </node>
       </node>
       <node concept="6lMYc" id="3Zy2c1G3w1b" role="PCHHv">
         <property role="TrG5h" value="DisplayValue" />
@@ -6681,6 +6749,9 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="2ZBi8u" id="3bL6Lt104ad" role="lGtFl">
+          <ref role="2rW$FS" node="3bL6Lt101YT" resolve="ComboBoxEntriesFeature_Record_DisplayValue_AttributeDefinition" />
         </node>
       </node>
       <node concept="17Uvod" id="3Zy2c1FEHPw" role="lGtFl">
@@ -7000,7 +7071,7 @@
                       <node concept="2OqwBi" id="3Zy2c1HmfRW" role="3fr31v">
                         <node concept="30H73N" id="3Zy2c1HmfRX" role="2Oq$k0" />
                         <node concept="3TrcHB" id="3Zy2c1HmfRY" role="2OqNvi">
-                          <ref role="3TsBF5" to="at53:6TFgjK2bAwg" resolve="hasFixedChoices" />
+                          <ref role="3TsBF5" to="at53:6TFgjK2bAwg" resolve="isFixedEnumeration" />
                         </node>
                       </node>
                     </node>
@@ -7074,6 +7145,9 @@
             </node>
           </node>
         </node>
+        <node concept="2ZBi8u" id="3bL6Lt102wA" role="lGtFl">
+          <ref role="2rW$FS" node="3bL6Lt0ZYXO" resolve="ComboBoxEntriesFeature_Record_Value_AttributeDefinition" />
+        </node>
       </node>
       <node concept="6lMYc" id="3Zy2c1HmfSt" role="PCHHv">
         <property role="TrG5h" value="DisplayValue" />
@@ -7115,6 +7189,9 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="2ZBi8u" id="3bL6Lt102VK" role="lGtFl">
+          <ref role="2rW$FS" node="3bL6Lt101YT" resolve="ComboBoxEntriesFeature_Record_DisplayValue_AttributeDefinition" />
         </node>
       </node>
       <node concept="3wUxaT" id="3Zy2c1Hm9Np" role="3wUx9_">

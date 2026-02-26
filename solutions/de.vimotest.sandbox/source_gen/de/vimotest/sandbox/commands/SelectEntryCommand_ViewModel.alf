@@ -19,6 +19,20 @@ public class SelectEntryCommand_ViewModel {
 
   }
   
+  private MyOptionsWithFixedChoicesComboBoxEntries : SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption [ * ]  ;
+  
+  public getMyOptionsWithFixedChoicesComboBoxEntries (  ) : SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption [ * ]  {
+    return this.MyOptionsWithFixedChoicesComboBoxEntries;
+
+  }
+  
+  private MyOptionsWithFixedChoicesComboBoxSelectedEntry : SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption  ;
+  
+  public getMyOptionsWithFixedChoicesComboBoxSelectedEntry (  ) : SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption  {
+    return this.MyOptionsWithFixedChoicesComboBoxSelectedEntry;
+
+  }
+  
   private MyOptionsRadioButtonGroupSelectedEntry : SelectEntryCommand_ViewModelMyOptionsOption  ;
   
   public getMyOptionsRadioButtonGroupSelectedEntry (  ) : SelectEntryCommand_ViewModelMyOptionsOption  {
@@ -27,6 +41,9 @@ public class SelectEntryCommand_ViewModel {
   }
   
   public myElementsComboBoxEntrySelected (   in entryName: String  ) {    
+  }
+  
+  public myOptionsWithFixedChoicesComboBoxEntrySelected (   in entryOption: SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption  ) {    
   }
   
   public myOptionsRadioButtonGroupEntrySelected (   in entryName: SelectEntryCommand_ViewModelMyOptionsOption  ) {    

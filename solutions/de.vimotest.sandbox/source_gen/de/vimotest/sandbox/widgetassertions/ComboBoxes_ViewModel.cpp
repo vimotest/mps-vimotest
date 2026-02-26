@@ -68,13 +68,13 @@ namespace widgetassertions
   {
     return this->MyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry;
   }
-  void ComboBoxes_ViewModel::myOptionsWithFixedChoicesComboBoxEntrySelected(std::string entryName)
+  void ComboBoxes_ViewModel::myOptionsWithFixedChoicesComboBoxEntrySelected(ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption entryOption)
   {
   }
   void ComboBoxes_ViewModel::myOptionsWithDisplayValueComboBoxEntrySelected(std::string entryName)
   {
   }
-  void ComboBoxes_ViewModel::myOptionsWithFixedChoicesAndDisplayValueComboBoxEntrySelected(std::string entryName)
+  void ComboBoxes_ViewModel::myOptionsWithFixedChoicesAndDisplayValueComboBoxEntrySelected(ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption entryOption)
   {
   }
 }

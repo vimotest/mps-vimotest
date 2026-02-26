@@ -113,7 +113,7 @@ namespace widgetassertions
             return this.MyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry;
         }
 
-        public virtual void myOptionsWithFixedChoicesComboBoxEntrySelected(string entryName)
+        public virtual void myOptionsWithFixedChoicesComboBoxEntrySelected(widgetassertions.ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption entryOption)
         {
         }
 
@@ -121,7 +121,7 @@ namespace widgetassertions
         {
         }
 
-        public virtual void myOptionsWithFixedChoicesAndDisplayValueComboBoxEntrySelected(string entryName)
+        public virtual void myOptionsWithFixedChoicesAndDisplayValueComboBoxEntrySelected(widgetassertions.ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption entryOption)
         {
         }
     }

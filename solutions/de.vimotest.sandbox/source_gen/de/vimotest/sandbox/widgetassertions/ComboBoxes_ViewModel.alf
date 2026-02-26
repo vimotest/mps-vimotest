@@ -110,12 +110,12 @@ public class ComboBoxes_ViewModel {
 
   }
   
-  public myOptionsWithFixedChoicesComboBoxEntrySelected (   in entryName: String  ) {    
+  public myOptionsWithFixedChoicesComboBoxEntrySelected (   in entryOption: ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption  ) {    
   }
   
   public myOptionsWithDisplayValueComboBoxEntrySelected (   in entryName: String  ) {    
   }
   
-  public myOptionsWithFixedChoicesAndDisplayValueComboBoxEntrySelected (   in entryName: String  ) {    
+  public myOptionsWithFixedChoicesAndDisplayValueComboBoxEntrySelected (   in entryOption: ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption  ) {    
   }
 }

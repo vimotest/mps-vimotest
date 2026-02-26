@@ -10,6 +10,10 @@ import de.vimotest.sandbox.widgetassertions.ComboBoxes_ViewModelTestEnvironmentI
 import java.util.List;
 import org.junit.Assert;
 import de.vimotest.sandbox.widgetassertions.ComboBoxes_ViewModelMyOptionsWithDisplayValueEntry;
+import de.vimotest.sandbox.widgetassertions.ConvertMyOptionsWithFixedChoicesToString;
+import de.vimotest.sandbox.widgetassertions.ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption;
+import de.vimotest.sandbox.widgetassertions.ConvertMyOptionsWithFixedChoicesAndDisplayValueToString;
+import de.vimotest.sandbox.widgetassertions.ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption;
 
 public class ComboBoxes_ViewTest_Test {
   private ComboBoxes_ViewModel sut;
@@ -72,15 +76,19 @@ public class ComboBoxes_ViewTest_Test {
   public void then_MyOptionsWithDisplayValue_has_2_entries_and_selected_OptionA_() {
     List<ComboBoxes_ViewModelMyOptionsWithDisplayValueEntry> actualMyOptionsWithDisplayValueEntries = this.sut.getMyOptionsWithDisplayValueComboBoxEntries();
     Assert.assertEquals("Expected that combobox MyOptionsWithDisplayValue has 2 entries, but has " + Integer.toString(actualMyOptionsWithDisplayValueEntries.size()), Integer.valueOf(2), Integer.valueOf(actualMyOptionsWithDisplayValueEntries.size()));
-    Assert.assertEquals("Expected that combobox MyOptionsWithDisplayValue has entry at index 0 matching <" + "OptionA" + ">, but was <" + actualMyOptionsWithDisplayValueEntries.get(1 - 1) + ">", "OptionA", actualMyOptionsWithDisplayValueEntries.get(1 - 1));
-    Assert.assertEquals("Expected that combobox MyOptionsWithDisplayValue has entry at index 1 matching <" + "OptionB" + ">, but was <" + actualMyOptionsWithDisplayValueEntries.get(2 - 1) + ">", "OptionB", actualMyOptionsWithDisplayValueEntries.get(2 - 1));
+    ComboBoxes_ViewModelMyOptionsWithDisplayValueEntry actualMyOptionsWithDisplayValueEntry0 = actualMyOptionsWithDisplayValueEntries.get(1 - 1);
+    Assert.assertEquals("Expected that combobox MyOptionsWithDisplayValue has entry with display value at index 0 matching <" + "OptionA" + ">, but was <" + actualMyOptionsWithDisplayValueEntry0.DisplayValue + ">", "OptionA", actualMyOptionsWithDisplayValueEntry0.DisplayValue);
+    Assert.assertEquals("Expected that combobox MyOptionsWithDisplayValue has entry with logical value at index 0 matching <" + "Option A" + ">, but was <" + actualMyOptionsWithDisplayValueEntry0.Value + ">", "Option A", actualMyOptionsWithDisplayValueEntry0.Value);
+    ComboBoxes_ViewModelMyOptionsWithDisplayValueEntry actualMyOptionsWithDisplayValueEntry1 = actualMyOptionsWithDisplayValueEntries.get(2 - 1);
+    Assert.assertEquals("Expected that combobox MyOptionsWithDisplayValue has entry with display value at index 1 matching <" + "OptionB" + ">, but was <" + actualMyOptionsWithDisplayValueEntry1.DisplayValue + ">", "OptionB", actualMyOptionsWithDisplayValueEntry1.DisplayValue);
+    Assert.assertEquals("Expected that combobox MyOptionsWithDisplayValue has entry with logical value at index 1 matching <" + "Option B" + ">, but was <" + actualMyOptionsWithDisplayValueEntry1.Value + ">", "Option B", actualMyOptionsWithDisplayValueEntry1.Value);
     Assert.assertEquals("Expected that combobox MyOptionsWithDisplayValue has " + "selected <OptionA>" + ", but was <" + this.sut.getMyOptionsWithDisplayValueComboBoxSelectedEntry() + ">", "OptionA", this.sut.getMyOptionsWithDisplayValueComboBoxSelectedEntry());
   }
   public void then_MyOptionsWithFixedChoices_selected_Red_() {
-    Assert.assertEquals("Expected that combobox MyOptionsWithFixedChoices has " + "selected <Red>" + ", but was <" + this.sut.getMyOptionsWithFixedChoicesComboBoxSelectedEntry() + ">", "Red", this.sut.getMyOptionsWithFixedChoicesComboBoxSelectedEntry());
+    Assert.assertEquals("Expected that combobox MyOptionsWithFixedChoices has selected entry <" + "Red" + ">, but was <" + ConvertMyOptionsWithFixedChoicesToString.convertMyOptionsWithFixedChoicesToString(this.sut.getMyOptionsWithFixedChoicesComboBoxSelectedEntry()) + ">", ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption.Red, this.sut.getMyOptionsWithFixedChoicesComboBoxSelectedEntry());
   }
   public void then_MyOptionsWithFixedChoicesAndDisplayValue_selected__yellow_() {
-    Assert.assertEquals("Expected that combobox MyOptionsWithFixedChoicesAndDisplayValue has " + "selected <(yellow)>" + ", but was <" + this.sut.getMyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry() + ">", "(yellow)", this.sut.getMyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry());
+    Assert.assertEquals("Expected that combobox MyOptionsWithFixedChoicesAndDisplayValue has selected entry <" + "(yellow)" + ">, but was <" + ConvertMyOptionsWithFixedChoicesAndDisplayValueToString.convertMyOptionsWithFixedChoicesAndDisplayValueToString(this.sut.getMyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry()) + ">", ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption.Yellow, this.sut.getMyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry());
   }
   public void then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled() {
     List<String> actualMyOptionsEntries_1 = this.sut.getMyOptionsComboBoxEntries();

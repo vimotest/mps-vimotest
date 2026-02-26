@@ -22,6 +22,20 @@ namespace commands
             return this.MyElementsComboBoxSelectedEntry;
         }
 
+        private System.Collections.Generic.List<commands.SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption> MyOptionsWithFixedChoicesComboBoxEntries = new System.Collections.Generic.List<commands.SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption>();
+
+        public virtual System.Collections.Generic.List<commands.SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption> getMyOptionsWithFixedChoicesComboBoxEntries()
+        {
+            return this.MyOptionsWithFixedChoicesComboBoxEntries;
+        }
+
+        private commands.SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption MyOptionsWithFixedChoicesComboBoxSelectedEntry;
+
+        public virtual commands.SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption getMyOptionsWithFixedChoicesComboBoxSelectedEntry()
+        {
+            return this.MyOptionsWithFixedChoicesComboBoxSelectedEntry;
+        }
+
         private commands.SelectEntryCommand_ViewModelMyOptionsOption MyOptionsRadioButtonGroupSelectedEntry;
 
         public virtual commands.SelectEntryCommand_ViewModelMyOptionsOption getMyOptionsRadioButtonGroupSelectedEntry()
@@ -30,6 +44,10 @@ namespace commands
         }
 
         public virtual void myElementsComboBoxEntrySelected(string entryName)
+        {
+        }
+
+        public virtual void myOptionsWithFixedChoicesComboBoxEntrySelected(commands.SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption entryOption)
         {
         }
 

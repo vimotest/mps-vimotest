@@ -906,7 +906,7 @@
     </node>
     <node concept="1TJgyi" id="6TFgjK2bAwg" role="1TKVEl">
       <property role="IQ2nx" value="7956524892670552080" />
-      <property role="TrG5h" value="hasFixedChoices" />
+      <property role="TrG5h" value="isFixedEnumeration" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyi" id="6TFgjK2bF1v" role="1TKVEl">

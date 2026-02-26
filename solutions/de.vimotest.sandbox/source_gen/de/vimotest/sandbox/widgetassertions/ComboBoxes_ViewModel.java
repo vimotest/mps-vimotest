@@ -66,10 +66,10 @@ public class ComboBoxes_ViewModel {
   public ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption getMyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry() {
     return this.MyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry;
   }
-  public void myOptionsWithFixedChoicesComboBoxEntrySelected(String entryName) {
+  public void myOptionsWithFixedChoicesComboBoxEntrySelected(ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption entryOption) {
   }
   public void myOptionsWithDisplayValueComboBoxEntrySelected(String entryName) {
   }
-  public void myOptionsWithFixedChoicesAndDisplayValueComboBoxEntrySelected(String entryName) {
+  public void myOptionsWithFixedChoicesAndDisplayValueComboBoxEntrySelected(ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption entryOption) {
   }
 }

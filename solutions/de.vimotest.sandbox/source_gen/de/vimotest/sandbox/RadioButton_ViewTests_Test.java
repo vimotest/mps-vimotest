@@ -45,14 +45,14 @@ public class RadioButton_ViewTests_Test {
 
 
   public void then_Options_selected_OptionB_() {
-    Assert.assertEquals("Expected that radio button group Options has selected <" + "OptionB" + ">, but was <" + ConvertOptionsToString.convertOptionsToString(this.sut.getOptionsRadioButtonGroupSelectedEntry()) + ">", RadioButton_ViewModelOptionsOption.OptionB, this.sut.getOptionsRadioButtonGroupSelectedEntry());
+    Assert.assertEquals("Expected that radio button group Options has selected option <" + "OptionB" + ">, but was <" + ConvertOptionsToString.convertOptionsToString(this.sut.getOptionsRadioButtonGroupSelectedEntry()) + ">", RadioButton_ViewModelOptionsOption.OptionB, this.sut.getOptionsRadioButtonGroupSelectedEntry());
   }
   public void then_Options_selected_OptionA_and_OptionB_is_not_enabled() {
-    Assert.assertEquals("Expected that radio button group Options has selected <" + "OptionA" + ">, but was <" + ConvertOptionsToString.convertOptionsToString(this.sut.getOptionsRadioButtonGroupSelectedEntry()) + ">", RadioButton_ViewModelOptionsOption.OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry());
+    Assert.assertEquals("Expected that radio button group Options has selected option <" + "OptionA" + ">, but was <" + ConvertOptionsToString.convertOptionsToString(this.sut.getOptionsRadioButtonGroupSelectedEntry()) + ">", RadioButton_ViewModelOptionsOption.OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry());
     Assert.assertFalse("Expected radio button OptionB is disabled, but it was enabled", this.sut.getIsOptionBRadioButtonEnabled());
   }
   public void then_Options_selected_OptionA_and_OptionB_is_not_visible() {
-    Assert.assertEquals("Expected that radio button group Options has selected <" + "OptionA" + ">, but was <" + ConvertOptionsToString.convertOptionsToString(this.sut.getOptionsRadioButtonGroupSelectedEntry()) + ">", RadioButton_ViewModelOptionsOption.OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry());
+    Assert.assertEquals("Expected that radio button group Options has selected option <" + "OptionA" + ">, but was <" + ConvertOptionsToString.convertOptionsToString(this.sut.getOptionsRadioButtonGroupSelectedEntry()) + ">", RadioButton_ViewModelOptionsOption.OptionA, this.sut.getOptionsRadioButtonGroupSelectedEntry());
     Assert.assertFalse("Expected radio button OptionB is hidden, but it was visible", this.sut.getIsOptionBRadioButtonVisible());
   }
 }

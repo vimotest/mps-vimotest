@@ -3897,6 +3897,30 @@
         <node concept="C4FCh" id="5imH8sU7TYx" role="7cNAf" />
         <node concept="3Vw88H" id="5imH8sU7TY$" role="2WQ0re" />
       </node>
+      <node concept="7cNA8" id="10wtdZPiPPJ" role="103ZUC">
+        <property role="TrG5h" value="MyOptionsWithFixedChoices" />
+        <node concept="3Vw88H" id="10wtdZPiPPK" role="2WQ0re" />
+        <node concept="7cNxA" id="10wtdZPiPPL" role="7cNAb">
+          <property role="1Ghi$G" value="true" />
+          <node concept="2gaR_a" id="10wtdZPiPPM" role="M2z3O">
+            <property role="TrG5h" value="Green" />
+          </node>
+          <node concept="2gaR_a" id="10wtdZPiPPN" role="M2z3O">
+            <property role="TrG5h" value="Yellow" />
+          </node>
+          <node concept="2gaR_a" id="10wtdZPiPPO" role="M2z3O">
+            <property role="TrG5h" value="Red" />
+          </node>
+        </node>
+        <node concept="7cNxT" id="10wtdZPiPPP" role="7cNAa">
+          <ref role="LYRLJ" node="10wtdZPiPPM" resolve="Green" />
+        </node>
+        <node concept="V3Zf6" id="10wtdZPiPPQ" role="7cNAd">
+          <node concept="o7Kjd" id="10wtdZPiPPR" role="o6p68" />
+        </node>
+        <node concept="C4FCg" id="10wtdZPiPPS" role="7cNAc" />
+        <node concept="C4FCh" id="10wtdZPiPPT" role="7cNAf" />
+      </node>
       <node concept="39$Fqc" id="5LG6vEKw9S7" role="103ZUC">
         <property role="TrG5h" value="MyOptions" />
         <property role="2ejQmt" value="true" />
@@ -3928,6 +3952,12 @@
           <node concept="3eaLtv" id="5imH8sU7U3W" role="DUiS9">
             <property role="2qt_KD" value="C" />
             <ref role="3ucQsQ" node="5imH8sU7TYs" resolve="MyElements" />
+          </node>
+        </node>
+        <node concept="DUd5q" id="10wtdZPiPPU" role="1s$QAM">
+          <node concept="3eaLtv" id="10wtdZPiPPW" role="DUiS9">
+            <property role="2qt_KD" value="Red" />
+            <ref role="3ucQsQ" node="10wtdZPiPPJ" resolve="MyOptionsWithFixedChoices" />
           </node>
         </node>
         <node concept="DUd2R" id="58LMrr8jMBu" role="1s$QAX">

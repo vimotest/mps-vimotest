@@ -27,9 +27,9 @@ namespace widgetassertions
     virtual std::string getMyOptionsWithDisplayValueComboBoxSelectedEntry();
     virtual std::vector<ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueEntry> getMyOptionsWithFixedChoicesAndDisplayValueComboBoxEntries();
     virtual ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption getMyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry();
-    virtual void myOptionsWithFixedChoicesComboBoxEntrySelected(std::string entryName);
+    virtual void myOptionsWithFixedChoicesComboBoxEntrySelected(ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption entryOption);
     virtual void myOptionsWithDisplayValueComboBoxEntrySelected(std::string entryName);
-    virtual void myOptionsWithFixedChoicesAndDisplayValueComboBoxEntrySelected(std::string entryName);
+    virtual void myOptionsWithFixedChoicesAndDisplayValueComboBoxEntrySelected(ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption entryOption);
   private:
     std::vector<std::string> MyOptionsComboBoxEntries;
     std::string MyOptionsComboBoxSelectedEntry;

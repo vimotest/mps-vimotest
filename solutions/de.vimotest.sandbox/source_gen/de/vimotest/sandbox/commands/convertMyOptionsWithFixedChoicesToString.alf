@@ -1,0 +1,23 @@
+namespace commands ;
+
+
+
+activity convertMyOptionsWithFixedChoicesToString ( in symbol: SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption  ) : String  {
+  if ( symbol == SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption:: Green ) {
+    return "Green";
+
+  } 
+
+  if ( symbol == SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption:: Yellow ) {
+    return "Yellow";
+
+  } 
+
+  if ( symbol == SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption:: Red ) {
+    return "Red";
+
+  } 
+
+  return "?";
+
+}

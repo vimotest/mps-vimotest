@@ -104,19 +104,23 @@ public class ComboBoxes_ViewTest
     {
         var actualMyOptionsWithDisplayValueEntries = this.sut.getMyOptionsWithDisplayValueComboBoxEntries();
         Assert.AreEqual(2, actualMyOptionsWithDisplayValueEntries.Count, "Expected that combobox MyOptionsWithDisplayValue has 2 entries, but has " + Convert.ToString(actualMyOptionsWithDisplayValueEntries.Count));
-        Assert.AreEqual("OptionA", actualMyOptionsWithDisplayValueEntries[0], "Expected that combobox MyOptionsWithDisplayValue has entry at index 0 matching <" + "OptionA" + ">, but was <" + actualMyOptionsWithDisplayValueEntries[0] + ">");
-        Assert.AreEqual("OptionB", actualMyOptionsWithDisplayValueEntries[1], "Expected that combobox MyOptionsWithDisplayValue has entry at index 1 matching <" + "OptionB" + ">, but was <" + actualMyOptionsWithDisplayValueEntries[1] + ">");
+        var actualMyOptionsWithDisplayValueEntry0 = actualMyOptionsWithDisplayValueEntries[0];
+        Assert.AreEqual("OptionA", actualMyOptionsWithDisplayValueEntry0.DisplayValue, "Expected that combobox MyOptionsWithDisplayValue has entry with display value at index 0 matching <" + "OptionA" + ">, but was <" + actualMyOptionsWithDisplayValueEntry0.DisplayValue + ">", "OptionA");
+        Assert.AreEqual("Option A", actualMyOptionsWithDisplayValueEntry0.Value, "Expected that combobox MyOptionsWithDisplayValue has entry with logical value at index 0 matching <" + "Option A" + ">, but was <" + actualMyOptionsWithDisplayValueEntry0.Value + ">");
+        var actualMyOptionsWithDisplayValueEntry1 = actualMyOptionsWithDisplayValueEntries[1];
+        Assert.AreEqual("OptionB", actualMyOptionsWithDisplayValueEntry1.DisplayValue, "Expected that combobox MyOptionsWithDisplayValue has entry with display value at index 1 matching <" + "OptionB" + ">, but was <" + actualMyOptionsWithDisplayValueEntry1.DisplayValue + ">", "OptionB");
+        Assert.AreEqual("Option B", actualMyOptionsWithDisplayValueEntry1.Value, "Expected that combobox MyOptionsWithDisplayValue has entry with logical value at index 1 matching <" + "Option B" + ">, but was <" + actualMyOptionsWithDisplayValueEntry1.Value + ">");
         Assert.AreEqual("OptionA", this.sut.getMyOptionsWithDisplayValueComboBoxSelectedEntry(), "Expected that combobox MyOptionsWithDisplayValue has " + "selected <OptionA>" + ", but was <" + this.sut.getMyOptionsWithDisplayValueComboBoxSelectedEntry() + ">");
     }
 
     public virtual void then_MyOptionsWithFixedChoices_selected_Red_()
     {
-        Assert.AreEqual("Red", this.sut.getMyOptionsWithFixedChoicesComboBoxSelectedEntry(), "Expected that combobox MyOptionsWithFixedChoices has " + "selected <Red>" + ", but was <" + this.sut.getMyOptionsWithFixedChoicesComboBoxSelectedEntry() + ">");
+        Assert.AreEqual(widgetassertions.ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption.Red, this.sut.getMyOptionsWithFixedChoicesComboBoxSelectedEntry(), "Expected that combobox MyOptionsWithFixedChoices has selected entry <" + "Red" + ">, but was <" + ConvertMyOptionsWithFixedChoicesToString.Execute(this.sut.getMyOptionsWithFixedChoicesComboBoxSelectedEntry()) + ">");
     }
 
     public virtual void then_MyOptionsWithFixedChoicesAndDisplayValue_selected__yellow_()
     {
-        Assert.AreEqual("(yellow)", this.sut.getMyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry(), "Expected that combobox MyOptionsWithFixedChoicesAndDisplayValue has " + "selected <(yellow)>" + ", but was <" + this.sut.getMyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry() + ">");
+        Assert.AreEqual(widgetassertions.ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption.Yellow, this.sut.getMyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry(), "Expected that combobox MyOptionsWithFixedChoicesAndDisplayValue has selected entry <" + "(yellow)" + ">, but was <" + ConvertMyOptionsWithFixedChoicesAndDisplayValueToString.Execute(this.sut.getMyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry()) + ">");
     }
 
     public virtual void then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled()

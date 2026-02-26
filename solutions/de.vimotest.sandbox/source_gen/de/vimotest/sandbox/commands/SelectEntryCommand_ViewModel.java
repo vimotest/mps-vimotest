@@ -14,11 +14,21 @@ public class SelectEntryCommand_ViewModel {
   public String getMyElementsComboBoxSelectedEntry() {
     return this.MyElementsComboBoxSelectedEntry;
   }
+  private List<SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption> MyOptionsWithFixedChoicesComboBoxEntries = new LinkedList<>();
+  public List<SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption> getMyOptionsWithFixedChoicesComboBoxEntries() {
+    return this.MyOptionsWithFixedChoicesComboBoxEntries;
+  }
+  private SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption MyOptionsWithFixedChoicesComboBoxSelectedEntry;
+  public SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption getMyOptionsWithFixedChoicesComboBoxSelectedEntry() {
+    return this.MyOptionsWithFixedChoicesComboBoxSelectedEntry;
+  }
   private SelectEntryCommand_ViewModelMyOptionsOption MyOptionsRadioButtonGroupSelectedEntry;
   public SelectEntryCommand_ViewModelMyOptionsOption getMyOptionsRadioButtonGroupSelectedEntry() {
     return this.MyOptionsRadioButtonGroupSelectedEntry;
   }
   public void myElementsComboBoxEntrySelected(String entryName) {
+  }
+  public void myOptionsWithFixedChoicesComboBoxEntrySelected(SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption entryOption) {
   }
   public void myOptionsRadioButtonGroupEntrySelected(SelectEntryCommand_ViewModelMyOptionsOption entryName) {
   }

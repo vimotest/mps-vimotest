@@ -2,8 +2,10 @@
 #include <vector>
 #include <memory>
 #include "TableViews_ViewModelMyElementsRow.h"
-#include "TableViews_ViewModelMyStringRowHandlesRow.h"
+#include "TableViews_ViewModelMyStringRowHandleRow.h"
+#include "TableViews_ViewModelMyStringMultiRowHandlesRow.h"
 #include "TableViews_ViewModelFirstColumnRowHandleRow.h"
+#include "TableViews_ViewModelFirstColumnMultiRowHandleRow.h"
 #include <string>
 
 namespace widgetassertions
@@ -28,13 +30,21 @@ namespace widgetassertions
   {
     return this->isMyElementsTableDescriptionColumnVisible;
   }
-  std::vector<std::shared_ptr<TableViews_ViewModelMyStringRowHandlesRow>> TableViews_ViewModel::getMyStringRowHandlesTableRows()
+  std::vector<std::shared_ptr<TableViews_ViewModelMyStringRowHandleRow>> TableViews_ViewModel::getMyStringRowHandleTableRows()
   {
-    return this->MyStringRowHandlesTableRows;
+    return this->MyStringRowHandleTableRows;
   }
-  std::string TableViews_ViewModel::getMyStringRowHandlesTableSelectedRow()
+  std::string TableViews_ViewModel::getMyStringRowHandleTableSelectedRow()
   {
-    return this->MyStringRowHandlesTableSelectedRow;
+    return this->MyStringRowHandleTableSelectedRow;
+  }
+  std::vector<std::shared_ptr<TableViews_ViewModelMyStringMultiRowHandlesRow>> TableViews_ViewModel::getMyStringMultiRowHandlesTableRows()
+  {
+    return this->MyStringMultiRowHandlesTableRows;
+  }
+  std::vector<std::string> TableViews_ViewModel::getMyStringMultiRowHandlesTableSelectedRows()
+  {
+    return this->MyStringMultiRowHandlesTableSelectedRows;
   }
   std::vector<std::shared_ptr<TableViews_ViewModelFirstColumnRowHandleRow>> TableViews_ViewModel::getFirstColumnRowHandleTableRows()
   {
@@ -43,5 +53,13 @@ namespace widgetassertions
   std::string TableViews_ViewModel::getFirstColumnRowHandleTableSelectedRow()
   {
     return this->FirstColumnRowHandleTableSelectedRow;
+  }
+  std::vector<std::shared_ptr<TableViews_ViewModelFirstColumnMultiRowHandleRow>> TableViews_ViewModel::getFirstColumnMultiRowHandleTableRows()
+  {
+    return this->FirstColumnMultiRowHandleTableRows;
+  }
+  std::vector<std::string> TableViews_ViewModel::getFirstColumnMultiRowHandleTableSelectedRows()
+  {
+    return this->FirstColumnMultiRowHandleTableSelectedRows;
   }
 }

@@ -40,17 +40,31 @@ public class TableViews_ViewModel {
 
   }
   
-  private MyStringRowHandlesTableRows : TableViews_ViewModelMyStringRowHandlesRow [ * ]  ;
+  private MyStringRowHandleTableRows : TableViews_ViewModelMyStringRowHandleRow [ * ]  ;
   
-  public getMyStringRowHandlesTableRows (  ) : TableViews_ViewModelMyStringRowHandlesRow [ * ]  {
-    return this.MyStringRowHandlesTableRows;
+  public getMyStringRowHandleTableRows (  ) : TableViews_ViewModelMyStringRowHandleRow [ * ]  {
+    return this.MyStringRowHandleTableRows;
 
   }
   
-  private MyStringRowHandlesTableSelectedRow : String  ;
+  private MyStringRowHandleTableSelectedRow : String  ;
   
-  public getMyStringRowHandlesTableSelectedRow (  ) : String  {
-    return this.MyStringRowHandlesTableSelectedRow;
+  public getMyStringRowHandleTableSelectedRow (  ) : String  {
+    return this.MyStringRowHandleTableSelectedRow;
+
+  }
+  
+  private MyStringMultiRowHandlesTableRows : TableViews_ViewModelMyStringMultiRowHandlesRow [ * ]  ;
+  
+  public getMyStringMultiRowHandlesTableRows (  ) : TableViews_ViewModelMyStringMultiRowHandlesRow [ * ]  {
+    return this.MyStringMultiRowHandlesTableRows;
+
+  }
+  
+  private MyStringMultiRowHandlesTableSelectedRows : String [ * ]  ;
+  
+  public getMyStringMultiRowHandlesTableSelectedRows (  ) : String [ * ]  {
+    return this.MyStringMultiRowHandlesTableSelectedRows;
 
   }
   
@@ -65,6 +79,20 @@ public class TableViews_ViewModel {
   
   public getFirstColumnRowHandleTableSelectedRow (  ) : String  {
     return this.FirstColumnRowHandleTableSelectedRow;
+
+  }
+  
+  private FirstColumnMultiRowHandleTableRows : TableViews_ViewModelFirstColumnMultiRowHandleRow [ * ]  ;
+  
+  public getFirstColumnMultiRowHandleTableRows (  ) : TableViews_ViewModelFirstColumnMultiRowHandleRow [ * ]  {
+    return this.FirstColumnMultiRowHandleTableRows;
+
+  }
+  
+  private FirstColumnMultiRowHandleTableSelectedRows : String [ * ]  ;
+  
+  public getFirstColumnMultiRowHandleTableSelectedRows (  ) : String [ * ]  {
+    return this.FirstColumnMultiRowHandleTableSelectedRows;
 
   }
 }

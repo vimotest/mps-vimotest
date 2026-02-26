@@ -8174,7 +8174,7 @@
               </node>
               <node concept="v3k3i" id="5jGmAfqGyae" role="2OqNvi">
                 <node concept="chp4Y" id="5jGmAfqGyaf" role="v3oSu">
-                  <ref role="cht4Q" to="at53:7uPLQmTOoE" resolve="ColumnDefinition" />
+                  <ref role="cht4Q" to="at53:q9OOkGQoXE" resolve="ITableColumn" />
                 </node>
               </node>
             </node>
@@ -8187,8 +8187,8 @@
                         <node concept="37vLTw" id="5jGmAfqGyam" role="2Oq$k0">
                           <ref role="3cqZAo" node="5jGmAfqGyaq" resolve="it" />
                         </node>
-                        <node concept="3TrEf2" id="5jGmAfqGyan" role="2OqNvi">
-                          <ref role="3Tt5mk" to="at53:7uPLQmTQNN" resolve="widgetType" />
+                        <node concept="2qgKlT" id="3Zy2c1L2TJa" role="2OqNvi">
+                          <ref role="37wK5l" node="q9OOkGQoXY" resolve="getColumnWidgetType" />
                         </node>
                       </node>
                       <node concept="1mIQ4w" id="5jGmAfqGyao" role="2OqNvi">

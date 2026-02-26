@@ -10,18 +10,21 @@ import de.vimotest.sandbox.widgetassertions.TableViews_ViewModelTestEnvironmentI
 import java.util.List;
 import de.vimotest.sandbox.widgetassertions.TableViews_ViewModelMyElementsRow;
 import org.junit.Assert;
-import de.vimotest.sandbox.widgetassertions.TableViews_ViewModelMyStringRowHandlesRow;
+import de.vimotest.sandbox.widgetassertions.TableViews_ViewModelMyStringRowHandleRow;
+import de.vimotest.sandbox.widgetassertions.TableViews_ViewModelMyStringMultiRowHandlesRow;
 import de.vimotest.sandbox.widgetassertions.TableViews_ViewModelFirstColumnRowHandleRow;
+import de.vimotest.sandbox.widgetassertions.TableViews_ViewModelFirstColumnMultiRowHandleRow;
 
 public class TableViews_ViewTest_Test {
   private TableViews_ViewModel sut;
   private TableViews_ViewModelTestEnvironment testEnvironment;
   @Test
-  public void test_My_Scenario_given_empty_context_when_then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() throws Exception {
+  public void test_My_Scenario_given_empty_context_when_then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible_and_MyStringRowHandle_has_2_rows_and_selected_row_handle_ROW1_and_MyStringMultiRowHandles_has_2_rows_and_selected_row_handles_A_() throws Exception {
     this.given_empty_context();
     this.BuildSut();
     this.then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible();
-    this.then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1();
+    this.then_MyStringRowHandle_has_2_rows_and_selected_row_handle_ROW1();
+    this.then_MyStringMultiRowHandles_has_2_rows_and_selected_row_handles_A_();
   }
   @Test
   public void test_Table_Ignore_Columns_given_empty_context_when_then_MyElements_has_2_rows() throws Exception {
@@ -30,9 +33,10 @@ public class TableViews_ViewTest_Test {
     this.then_MyElements_has_2_rows();
   }
   @Test
-  public void test_FirstLabelColumn_row_handle_given_when_then_FirstColumnRowHandle_has_2_rows_and_selected_row_handle_MyRow1() throws Exception {
+  public void test_FirstLabelColumn_row_handle_given_when_then_FirstColumnRowHandle_has_2_rows_and_selected_row_handle_MyRow1_and_FirstColumnMultiRowHandle_has_2_rows_and_selected_row_handles_Row0_Row1_() throws Exception {
     this.BuildSut();
     this.then_FirstColumnRowHandle_has_2_rows_and_selected_row_handle_MyRow1();
+    this.then_FirstColumnMultiRowHandle_has_2_rows_and_selected_row_handles_Row0_Row1_();
   }
   @BeforeEach
   public void setUp() {
@@ -75,20 +79,37 @@ public class TableViews_ViewTest_Test {
     Assert.assertTrue("Expected table view MyElements is enabled, but it was disabled", this.sut.getIsMyElementsTableEnabled());
     Assert.assertFalse("Expected table column Description is hidden, but it was visible", this.sut.getIsMyElementsTableDescriptionColumnVisible());
   }
-  public void then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1() {
-    List<TableViews_ViewModelMyStringRowHandlesRow> actualRows = this.sut.getMyStringRowHandlesTableRows();
-    Assert.assertEquals("Expected that table view MyStringRowHandles has 2 rows, but has " + Integer.toString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+  public void then_MyStringRowHandle_has_2_rows_and_selected_row_handle_ROW1() {
+    List<TableViews_ViewModelMyStringRowHandleRow> actualRows = this.sut.getMyStringRowHandleTableRows();
+    Assert.assertEquals("Expected that table view MyStringRowHandle has 2 rows, but has " + Integer.toString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
     // {
-    TableViews_ViewModelMyStringRowHandlesRow row0 = actualRows.get(1 - 1);
-    Assert.assertEquals("Expected that table view MyStringRowHandles row at index 0 has rowhandle <ROW0>, but was <" + row0.getRowHandle() + ">", "ROW0", row0.getRowHandle());
+    TableViews_ViewModelMyStringRowHandleRow row0 = actualRows.get(1 - 1);
+    Assert.assertEquals("Expected that table view MyStringRowHandle row at index 0 has rowhandle <ROW0>, but was <" + row0.getRowHandle() + ">", "ROW0", row0.getRowHandle());
     Assert.assertEquals("Expected that label Values has text <" + "A" + ">, but was <" + row0.getValuesLabelText() + ">", "A", row0.getValuesLabelText());
     // }
     // {
-    TableViews_ViewModelMyStringRowHandlesRow row1 = actualRows.get(2 - 1);
-    Assert.assertEquals("Expected that table view MyStringRowHandles row at index 1 has rowhandle <ROW1>, but was <" + row1.getRowHandle() + ">", "ROW1", row1.getRowHandle());
+    TableViews_ViewModelMyStringRowHandleRow row1 = actualRows.get(2 - 1);
+    Assert.assertEquals("Expected that table view MyStringRowHandle row at index 1 has rowhandle <ROW1>, but was <" + row1.getRowHandle() + ">", "ROW1", row1.getRowHandle());
     Assert.assertEquals("Expected that label Values has text <" + "B" + ">, but was <" + row1.getValuesLabelText() + ">", "B", row1.getValuesLabelText());
     // }
-    Assert.assertEquals("Expected that table view MyStringRowHandles has selected row with row handle <" + "ROW1" + ">, but was <" + this.sut.getMyStringRowHandlesTableSelectedRow() + ">", "ROW1", this.sut.getMyStringRowHandlesTableSelectedRow());
+    Assert.assertEquals("Expected that table view MyStringRowHandle has selected row with row handle <" + "ROW1" + ">, but was <" + this.sut.getMyStringRowHandleTableSelectedRow() + ">", "ROW1", this.sut.getMyStringRowHandleTableSelectedRow());
+  }
+  public void then_MyStringMultiRowHandles_has_2_rows_and_selected_row_handles_A_() {
+    List<TableViews_ViewModelMyStringMultiRowHandlesRow> actualRows = this.sut.getMyStringMultiRowHandlesTableRows();
+    Assert.assertEquals("Expected that table view MyStringMultiRowHandles has 2 rows, but has " + Integer.toString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    // {
+    TableViews_ViewModelMyStringMultiRowHandlesRow row0 = actualRows.get(1 - 1);
+    Assert.assertEquals("Expected that table view MyStringMultiRowHandles row at index 0 has rowhandle <A>, but was <" + row0.getRowHandle() + ">", "A", row0.getRowHandle());
+    Assert.assertEquals("Expected that label Values has text <" + "" + ">, but was <" + row0.getValuesLabelText() + ">", "", row0.getValuesLabelText());
+    // }
+    // {
+    TableViews_ViewModelMyStringMultiRowHandlesRow row1 = actualRows.get(2 - 1);
+    Assert.assertEquals("Expected that table view MyStringMultiRowHandles row at index 1 has rowhandle <B>, but was <" + row1.getRowHandle() + ">", "B", row1.getRowHandle());
+    Assert.assertEquals("Expected that label Values has text <" + "" + ">, but was <" + row1.getValuesLabelText() + ">", "", row1.getValuesLabelText());
+    // }
+    List<String> actualMyStringMultiRowHandlesSelectedRowHandles = this.sut.getMyStringMultiRowHandlesTableSelectedRows();
+    Assert.assertEquals("Expected that table view MyStringMultiRowHandles has selected 1 rows, but has " + Integer.toString(actualMyStringMultiRowHandlesSelectedRowHandles.size()), Integer.valueOf(1), Integer.valueOf(actualMyStringMultiRowHandlesSelectedRowHandles.size()));
+    Assert.assertEquals("Expected that table view MyStringMultiRowHandles has selected row at index 0 with row handle <" + "A" + ">, but was <" + actualMyStringMultiRowHandlesSelectedRowHandles.get(1 - 1) + ">", "A", actualMyStringMultiRowHandlesSelectedRowHandles.get(1 - 1));
   }
   public void then_MyElements_has_2_rows() {
     List<TableViews_ViewModelMyElementsRow> actualRows = this.sut.getMyElementsTableRows();
@@ -116,5 +137,21 @@ public class TableViews_ViewTest_Test {
     Assert.assertEquals("Expected that label Name has text <" + "MyRow1" + ">, but was <" + row1.getNameLabelText() + ">", "MyRow1", row1.getNameLabelText());
     // }
     Assert.assertEquals("Expected that table view FirstColumnRowHandle has selected row with row handle <" + "MyRow1" + ">, but was <" + this.sut.getFirstColumnRowHandleTableSelectedRow() + ">", "MyRow1", this.sut.getFirstColumnRowHandleTableSelectedRow());
+  }
+  public void then_FirstColumnMultiRowHandle_has_2_rows_and_selected_row_handles_Row0_Row1_() {
+    List<TableViews_ViewModelFirstColumnMultiRowHandleRow> actualRows = this.sut.getFirstColumnMultiRowHandleTableRows();
+    Assert.assertEquals("Expected that table view FirstColumnMultiRowHandle has 2 rows, but has " + Integer.toString(actualRows.size()), Integer.valueOf(2), Integer.valueOf(actualRows.size()));
+    // {
+    TableViews_ViewModelFirstColumnMultiRowHandleRow row0 = actualRows.get(1 - 1);
+    Assert.assertEquals("Expected that label Name has text <" + "Row0" + ">, but was <" + row0.getNameLabelText() + ">", "Row0", row0.getNameLabelText());
+    // }
+    // {
+    TableViews_ViewModelFirstColumnMultiRowHandleRow row1 = actualRows.get(2 - 1);
+    Assert.assertEquals("Expected that label Name has text <" + "Row1" + ">, but was <" + row1.getNameLabelText() + ">", "Row1", row1.getNameLabelText());
+    // }
+    List<String> actualFirstColumnMultiRowHandleSelectedRowHandles = this.sut.getFirstColumnMultiRowHandleTableSelectedRows();
+    Assert.assertEquals("Expected that table view FirstColumnMultiRowHandle has selected 2 rows, but has " + Integer.toString(actualFirstColumnMultiRowHandleSelectedRowHandles.size()), Integer.valueOf(2), Integer.valueOf(actualFirstColumnMultiRowHandleSelectedRowHandles.size()));
+    Assert.assertEquals("Expected that table view FirstColumnMultiRowHandle has selected row at index 0 with row handle <" + "Row0" + ">, but was <" + actualFirstColumnMultiRowHandleSelectedRowHandles.get(1 - 1) + ">", "Row0", actualFirstColumnMultiRowHandleSelectedRowHandles.get(1 - 1));
+    Assert.assertEquals("Expected that table view FirstColumnMultiRowHandle has selected row at index 1 with row handle <" + "Row1" + ">, but was <" + actualFirstColumnMultiRowHandleSelectedRowHandles.get(2 - 1) + ">", "Row1", actualFirstColumnMultiRowHandleSelectedRowHandles.get(2 - 1));
   }
 }

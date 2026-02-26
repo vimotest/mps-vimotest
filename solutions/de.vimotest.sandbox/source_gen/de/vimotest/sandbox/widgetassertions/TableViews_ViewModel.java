@@ -26,13 +26,21 @@ public class TableViews_ViewModel {
   public Boolean getIsMyElementsTableDescriptionColumnVisible() {
     return this.isMyElementsTableDescriptionColumnVisible;
   }
-  private List<TableViews_ViewModelMyStringRowHandlesRow> MyStringRowHandlesTableRows = new LinkedList<>();
-  public List<TableViews_ViewModelMyStringRowHandlesRow> getMyStringRowHandlesTableRows() {
-    return this.MyStringRowHandlesTableRows;
+  private List<TableViews_ViewModelMyStringRowHandleRow> MyStringRowHandleTableRows = new LinkedList<>();
+  public List<TableViews_ViewModelMyStringRowHandleRow> getMyStringRowHandleTableRows() {
+    return this.MyStringRowHandleTableRows;
   }
-  private String MyStringRowHandlesTableSelectedRow;
-  public String getMyStringRowHandlesTableSelectedRow() {
-    return this.MyStringRowHandlesTableSelectedRow;
+  private String MyStringRowHandleTableSelectedRow;
+  public String getMyStringRowHandleTableSelectedRow() {
+    return this.MyStringRowHandleTableSelectedRow;
+  }
+  private List<TableViews_ViewModelMyStringMultiRowHandlesRow> MyStringMultiRowHandlesTableRows = new LinkedList<>();
+  public List<TableViews_ViewModelMyStringMultiRowHandlesRow> getMyStringMultiRowHandlesTableRows() {
+    return this.MyStringMultiRowHandlesTableRows;
+  }
+  private List<String> MyStringMultiRowHandlesTableSelectedRows = new LinkedList<>();
+  public List<String> getMyStringMultiRowHandlesTableSelectedRows() {
+    return this.MyStringMultiRowHandlesTableSelectedRows;
   }
   private List<TableViews_ViewModelFirstColumnRowHandleRow> FirstColumnRowHandleTableRows = new LinkedList<>();
   public List<TableViews_ViewModelFirstColumnRowHandleRow> getFirstColumnRowHandleTableRows() {
@@ -41,5 +49,13 @@ public class TableViews_ViewModel {
   private String FirstColumnRowHandleTableSelectedRow;
   public String getFirstColumnRowHandleTableSelectedRow() {
     return this.FirstColumnRowHandleTableSelectedRow;
+  }
+  private List<TableViews_ViewModelFirstColumnMultiRowHandleRow> FirstColumnMultiRowHandleTableRows = new LinkedList<>();
+  public List<TableViews_ViewModelFirstColumnMultiRowHandleRow> getFirstColumnMultiRowHandleTableRows() {
+    return this.FirstColumnMultiRowHandleTableRows;
+  }
+  private List<String> FirstColumnMultiRowHandleTableSelectedRows = new LinkedList<>();
+  public List<String> getFirstColumnMultiRowHandleTableSelectedRows() {
+    return this.FirstColumnMultiRowHandleTableSelectedRows;
   }
 }

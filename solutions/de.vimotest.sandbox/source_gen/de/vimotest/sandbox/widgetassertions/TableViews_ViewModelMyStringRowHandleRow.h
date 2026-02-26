@@ -4,7 +4,7 @@
 
 namespace widgetassertions
 {
-  class TableViews_ViewModelMyStringRowHandlesRow
+  class TableViews_ViewModelMyStringRowHandleRow
   {
   public:
     virtual std::string getValuesLabelText();

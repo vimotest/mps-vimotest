@@ -15,8 +15,10 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewModelRowBasedCommandWithNoRowHandleParameterRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewModelCustomListRowFieldRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewModelMyElementsRow.cpp
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewModelMyStringRowHandlesRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewModelMyStringRowHandleRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewModelMyStringMultiRowHandlesRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewModelFirstColumnRowHandleRow.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewModelFirstColumnMultiRowHandleRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewModelMyTableViewElementsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewModelMyStringRowHandleTableViewElementsRow.cpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewModelMyComboBoxesRow.cpp
@@ -75,8 +77,10 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewModelRowBasedCommandWithNoRowHandleParameterRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/LowLevelFields_ViewModelCustomListRowFieldRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewModelMyElementsRow.h
-  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewModelMyStringRowHandlesRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewModelMyStringRowHandleRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewModelMyStringMultiRowHandlesRow.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewModelFirstColumnRowHandleRow.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/TableViews_ViewModelFirstColumnMultiRowHandleRow.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewModelMyTableViewElementsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectRowCommand_ViewModelMyStringRowHandleTableViewElementsRow.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/RowBasedCommand_ViewModelMyComboBoxesRow.h

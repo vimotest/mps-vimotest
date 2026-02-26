@@ -20,16 +20,18 @@ class TableViews_ViewTest {
   Scenario: My Scenario
     given: empty context
      when: 
-     then: MyElements has 2 rows and selected row index 1 and is visible and is enabled and Description is not visible and MyStringRowHandles has 2 rows and selected row handle ROW1 */
+     then: MyElements has 2 rows and selected row index 1 and is visible and is enabled and Description is not visible and MyStringRowHandle has 2 rows and selected row handle ROW1 and MyStringMultiRowHandles has 2 rows and selected row handles [A] */
 
-  public My_Scenario_given_empty_context_when_then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible_and_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  ) {
+  public My_Scenario_given_empty_context_when_then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible_and_MyStringRowHandle_has_2_rows_and_selected_row_handle_ROW1_and_MyStringMultiRowHandles_has_2_rows_and_selected_row_handles_A_ (  ) {
     this.given_empty_context (  );
 
     this.BuildSut (  );
 
     this.then_MyElements_has_2_rows_and_selected_row_index_1_and_is_visible_and_is_enabled_and_Description_is_not_visible (  );
 
-    this.then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  );
+    this.then_MyStringRowHandle_has_2_rows_and_selected_row_handle_ROW1 (  );
+
+    this.then_MyStringMultiRowHandles_has_2_rows_and_selected_row_handles_A_ (  );
 
   }
   /** 
@@ -50,12 +52,14 @@ class TableViews_ViewTest {
   Scenario: FirstLabelColumn row handle
     given: 
      when: 
-     then: FirstColumnRowHandle has 2 rows and selected row handle MyRow1 */
+     then: FirstColumnRowHandle has 2 rows and selected row handle MyRow1 and FirstColumnMultiRowHandle has 2 rows and selected row handles [Row0,Row1] */
 
-  public FirstLabelColumn_row_handle_given_when_then_FirstColumnRowHandle_has_2_rows_and_selected_row_handle_MyRow1 (  ) {
+  public FirstLabelColumn_row_handle_given_when_then_FirstColumnRowHandle_has_2_rows_and_selected_row_handle_MyRow1_and_FirstColumnMultiRowHandle_has_2_rows_and_selected_row_handles_Row0_Row1_ (  ) {
     this.BuildSut (  );
 
     this.then_FirstColumnRowHandle_has_2_rows_and_selected_row_handle_MyRow1 (  );
+
+    this.then_FirstColumnMultiRowHandle_has_2_rows_and_selected_row_handles_Row0_Row1_ (  );
 
   }
   
@@ -121,30 +125,61 @@ class TableViews_ViewTest {
 
   }
   
-  public then_MyStringRowHandles_has_2_rows_and_selected_row_handle_ROW1 (  ) {
-    let actualRows: TableViews_ViewModelMyStringRowHandlesRow [] = this.sut.getMyStringRowHandlesTableRows (  );
+  public then_MyStringRowHandle_has_2_rows_and_selected_row_handle_ROW1 (  ) {
+    let actualRows: TableViews_ViewModelMyStringRowHandleRow [] = this.sut.getMyStringRowHandleTableRows (  );
 
-    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view MyStringRowHandles has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view MyStringRowHandle has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
 
     {
-      let row0: TableViews_ViewModelMyStringRowHandlesRow = actualRows[ 1 ];
+      let row0: TableViews_ViewModelMyStringRowHandleRow = actualRows[ 1 ];
 
-      AssertEqualWithMessage ( "ROW0", row0.getRowHandle (  ), "Expected that table view MyStringRowHandles row at index 0 has rowhandle <ROW0>, but was <" + row0.getRowHandle (  ) + ">" );
+      AssertEqualWithMessage ( "ROW0", row0.getRowHandle (  ), "Expected that table view MyStringRowHandle row at index 0 has rowhandle <ROW0>, but was <" + row0.getRowHandle (  ) + ">" );
 
       AssertEqualWithMessage ( "A", row0.getValuesLabelText (  ), "Expected that label Values has text <" + "A" + ">, but was <" + row0.getValuesLabelText (  ) + ">" );
 
     }
 
     {
-      let row1: TableViews_ViewModelMyStringRowHandlesRow = actualRows[ 2 ];
+      let row1: TableViews_ViewModelMyStringRowHandleRow = actualRows[ 2 ];
 
-      AssertEqualWithMessage ( "ROW1", row1.getRowHandle (  ), "Expected that table view MyStringRowHandles row at index 1 has rowhandle <ROW1>, but was <" + row1.getRowHandle (  ) + ">" );
+      AssertEqualWithMessage ( "ROW1", row1.getRowHandle (  ), "Expected that table view MyStringRowHandle row at index 1 has rowhandle <ROW1>, but was <" + row1.getRowHandle (  ) + ">" );
 
       AssertEqualWithMessage ( "B", row1.getValuesLabelText (  ), "Expected that label Values has text <" + "B" + ">, but was <" + row1.getValuesLabelText (  ) + ">" );
 
     }
 
-    AssertEqualWithMessage ( "ROW1", this.sut.getMyStringRowHandlesTableSelectedRow (  ), "Expected that table view MyStringRowHandles has selected row with row handle <" + "ROW1" + ">, but was <" + this.sut.getMyStringRowHandlesTableSelectedRow (  ) + ">" );
+    AssertEqualWithMessage ( "ROW1", this.sut.getMyStringRowHandleTableSelectedRow (  ), "Expected that table view MyStringRowHandle has selected row with row handle <" + "ROW1" + ">, but was <" + this.sut.getMyStringRowHandleTableSelectedRow (  ) + ">" );
+
+  }
+  
+  public then_MyStringMultiRowHandles_has_2_rows_and_selected_row_handles_A_ (  ) {
+    let actualRows: TableViews_ViewModelMyStringMultiRowHandlesRow [] = this.sut.getMyStringMultiRowHandlesTableRows (  );
+
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view MyStringMultiRowHandles has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+
+    {
+      let row0: TableViews_ViewModelMyStringMultiRowHandlesRow = actualRows[ 1 ];
+
+      AssertEqualWithMessage ( "A", row0.getRowHandle (  ), "Expected that table view MyStringMultiRowHandles row at index 0 has rowhandle <A>, but was <" + row0.getRowHandle (  ) + ">" );
+
+      AssertEqualWithMessage ( "", row0.getValuesLabelText (  ), "Expected that label Values has text <" + "" + ">, but was <" + row0.getValuesLabelText (  ) + ">" );
+
+    }
+
+    {
+      let row1: TableViews_ViewModelMyStringMultiRowHandlesRow = actualRows[ 2 ];
+
+      AssertEqualWithMessage ( "B", row1.getRowHandle (  ), "Expected that table view MyStringMultiRowHandles row at index 1 has rowhandle <B>, but was <" + row1.getRowHandle (  ) + ">" );
+
+      AssertEqualWithMessage ( "", row1.getValuesLabelText (  ), "Expected that label Values has text <" + "" + ">, but was <" + row1.getValuesLabelText (  ) + ">" );
+
+    }
+
+    let actualMyStringMultiRowHandlesSelectedRowHandles: String [] = this.sut.getMyStringMultiRowHandlesTableSelectedRows (  );
+
+    AssertEqualWithMessage ( 1, actualMyStringMultiRowHandlesSelectedRowHandles->size (  ), "Expected that table view MyStringMultiRowHandles has selected 1 rows, but has " + IntegerFunctions:: ToString ( actualMyStringMultiRowHandlesSelectedRowHandles->size (  ) ) );
+
+    AssertEqualWithMessage ( "A", actualMyStringMultiRowHandlesSelectedRowHandles[ 1 ] ?? "", "Expected that table view MyStringMultiRowHandles has selected row at index 0 with row handle <" + "A" + ">, but was <" + actualMyStringMultiRowHandlesSelectedRowHandles[ 1 ] ?? "" + ">" );
 
   }
   
@@ -193,6 +228,35 @@ class TableViews_ViewTest {
     }
 
     AssertEqualWithMessage ( "MyRow1", this.sut.getFirstColumnRowHandleTableSelectedRow (  ), "Expected that table view FirstColumnRowHandle has selected row with row handle <" + "MyRow1" + ">, but was <" + this.sut.getFirstColumnRowHandleTableSelectedRow (  ) + ">" );
+
+  }
+  
+  public then_FirstColumnMultiRowHandle_has_2_rows_and_selected_row_handles_Row0_Row1_ (  ) {
+    let actualRows: TableViews_ViewModelFirstColumnMultiRowHandleRow [] = this.sut.getFirstColumnMultiRowHandleTableRows (  );
+
+    AssertEqualWithMessage ( 2, actualRows->size (  ), "Expected that table view FirstColumnMultiRowHandle has 2 rows, but has " + IntegerFunctions:: ToString ( actualRows->size (  ) ) );
+
+    {
+      let row0: TableViews_ViewModelFirstColumnMultiRowHandleRow = actualRows[ 1 ];
+
+      AssertEqualWithMessage ( "Row0", row0.getNameLabelText (  ), "Expected that label Name has text <" + "Row0" + ">, but was <" + row0.getNameLabelText (  ) + ">" );
+
+    }
+
+    {
+      let row1: TableViews_ViewModelFirstColumnMultiRowHandleRow = actualRows[ 2 ];
+
+      AssertEqualWithMessage ( "Row1", row1.getNameLabelText (  ), "Expected that label Name has text <" + "Row1" + ">, but was <" + row1.getNameLabelText (  ) + ">" );
+
+    }
+
+    let actualFirstColumnMultiRowHandleSelectedRowHandles: String [] = this.sut.getFirstColumnMultiRowHandleTableSelectedRows (  );
+
+    AssertEqualWithMessage ( 2, actualFirstColumnMultiRowHandleSelectedRowHandles->size (  ), "Expected that table view FirstColumnMultiRowHandle has selected 2 rows, but has " + IntegerFunctions:: ToString ( actualFirstColumnMultiRowHandleSelectedRowHandles->size (  ) ) );
+
+    AssertEqualWithMessage ( "Row0", actualFirstColumnMultiRowHandleSelectedRowHandles[ 1 ] ?? "", "Expected that table view FirstColumnMultiRowHandle has selected row at index 0 with row handle <" + "Row0" + ">, but was <" + actualFirstColumnMultiRowHandleSelectedRowHandles[ 1 ] ?? "" + ">" );
+
+    AssertEqualWithMessage ( "Row1", actualFirstColumnMultiRowHandleSelectedRowHandles[ 2 ] ?? "", "Expected that table view FirstColumnMultiRowHandle has selected row at index 1 with row handle <" + "Row1" + ">, but was <" + actualFirstColumnMultiRowHandleSelectedRowHandles[ 2 ] ?? "" + ">" );
 
   }
 }

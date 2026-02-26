@@ -3,7 +3,7 @@ namespace widgetassertions ;
 
 
 
-public class TableViews_ViewModelMyStringRowHandlesRow {
+public class TableViews_ViewModelMyStringMultiRowHandlesRow {
   
   private ValuesLabelText : String  ;
   

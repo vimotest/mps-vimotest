@@ -43,18 +43,32 @@ namespace widgetassertions
             return this.isMyElementsTableDescriptionColumnVisible;
         }
 
-        private System.Collections.Generic.List<widgetassertions.TableViews_ViewModelMyStringRowHandlesRow> MyStringRowHandlesTableRows = new System.Collections.Generic.List<widgetassertions.TableViews_ViewModelMyStringRowHandlesRow>();
+        private System.Collections.Generic.List<widgetassertions.TableViews_ViewModelMyStringRowHandleRow> MyStringRowHandleTableRows = new System.Collections.Generic.List<widgetassertions.TableViews_ViewModelMyStringRowHandleRow>();
 
-        public virtual System.Collections.Generic.List<widgetassertions.TableViews_ViewModelMyStringRowHandlesRow> getMyStringRowHandlesTableRows()
+        public virtual System.Collections.Generic.List<widgetassertions.TableViews_ViewModelMyStringRowHandleRow> getMyStringRowHandleTableRows()
         {
-            return this.MyStringRowHandlesTableRows;
+            return this.MyStringRowHandleTableRows;
         }
 
-        private string MyStringRowHandlesTableSelectedRow;
+        private string MyStringRowHandleTableSelectedRow;
 
-        public virtual string getMyStringRowHandlesTableSelectedRow()
+        public virtual string getMyStringRowHandleTableSelectedRow()
         {
-            return this.MyStringRowHandlesTableSelectedRow;
+            return this.MyStringRowHandleTableSelectedRow;
+        }
+
+        private System.Collections.Generic.List<widgetassertions.TableViews_ViewModelMyStringMultiRowHandlesRow> MyStringMultiRowHandlesTableRows = new System.Collections.Generic.List<widgetassertions.TableViews_ViewModelMyStringMultiRowHandlesRow>();
+
+        public virtual System.Collections.Generic.List<widgetassertions.TableViews_ViewModelMyStringMultiRowHandlesRow> getMyStringMultiRowHandlesTableRows()
+        {
+            return this.MyStringMultiRowHandlesTableRows;
+        }
+
+        private System.Collections.Generic.List<string> MyStringMultiRowHandlesTableSelectedRows = new System.Collections.Generic.List<string>();
+
+        public virtual System.Collections.Generic.List<string> getMyStringMultiRowHandlesTableSelectedRows()
+        {
+            return this.MyStringMultiRowHandlesTableSelectedRows;
         }
 
         private System.Collections.Generic.List<widgetassertions.TableViews_ViewModelFirstColumnRowHandleRow> FirstColumnRowHandleTableRows = new System.Collections.Generic.List<widgetassertions.TableViews_ViewModelFirstColumnRowHandleRow>();
@@ -69,6 +83,20 @@ namespace widgetassertions
         public virtual string getFirstColumnRowHandleTableSelectedRow()
         {
             return this.FirstColumnRowHandleTableSelectedRow;
+        }
+
+        private System.Collections.Generic.List<widgetassertions.TableViews_ViewModelFirstColumnMultiRowHandleRow> FirstColumnMultiRowHandleTableRows = new System.Collections.Generic.List<widgetassertions.TableViews_ViewModelFirstColumnMultiRowHandleRow>();
+
+        public virtual System.Collections.Generic.List<widgetassertions.TableViews_ViewModelFirstColumnMultiRowHandleRow> getFirstColumnMultiRowHandleTableRows()
+        {
+            return this.FirstColumnMultiRowHandleTableRows;
+        }
+
+        private System.Collections.Generic.List<string> FirstColumnMultiRowHandleTableSelectedRows = new System.Collections.Generic.List<string>();
+
+        public virtual System.Collections.Generic.List<string> getFirstColumnMultiRowHandleTableSelectedRows()
+        {
+            return this.FirstColumnMultiRowHandleTableSelectedRows;
         }
     }
 }

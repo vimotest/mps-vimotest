@@ -1,9 +1,9 @@
 /// <filename>
-///     TableViews_ViewModelMyStringRowHandlesRow.cs
+///     TableViews_ViewModelMyStringRowHandleRow.cs
 /// </filename>
 namespace widgetassertions
 {
-    public class TableViews_ViewModelMyStringRowHandlesRow
+    public class TableViews_ViewModelMyStringRowHandleRow
     {
         private string ValuesLabelText;
 

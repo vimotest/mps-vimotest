@@ -127,15 +127,23 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/Logger.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/subscope/MessageBus.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewDependencyView.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewModelMyOptionsWithDisplayValueEntry.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueEntry.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/MyAdditions.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewModelMyOptionsOption.h
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/RadioButton_ViewModelOptionsOption.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption.h
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption.h
+  ${CMAKE_CURRENT_LIST_DIR}/commands/SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/MyEnum.h
   ${CMAKE_CURRENT_LIST_DIR}/bindings/CustomTypeInfoEnum.h
   ${CMAKE_CURRENT_LIST_DIR}/commands/CommandEnum.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/convertMyEnumToString.hpp
   ${CMAKE_CURRENT_LIST_DIR}/bindings/enumtostring/MyCustomTypeInfoEnumValuesFile.hpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/convertCommandEnumToString.hpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/convertMyOptionsWithFixedChoicesToString.hpp
+  ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/convertMyOptionsWithFixedChoicesAndDisplayValueToString.hpp
+  ${CMAKE_CURRENT_LIST_DIR}/commands/convertMyOptionsWithFixedChoicesToString.hpp
   ${CMAKE_CURRENT_LIST_DIR}/commands/convertMyOptionsToString.hpp
   ${CMAKE_CURRENT_LIST_DIR}/widgetassertions/convertOptionsToString.hpp
 )

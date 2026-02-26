@@ -69,6 +69,7 @@
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <property id="4467513934994662257" name="forceMultiLine" index="TyiWK" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
@@ -111,6 +112,7 @@
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
@@ -586,6 +588,50 @@
                 <node concept="nLn13" id="44HS8_67H_r" role="37wK5m" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="9SLcT" id="6TFgjK2c9Kw" role="9SGkU">
+      <node concept="3clFbS" id="6TFgjK2c9Kx" role="2VODD2">
+        <node concept="3clFbJ" id="6TFgjK2ca7I" role="3cqZAp">
+          <node concept="17R0WA" id="6TFgjK2cb5H" role="3clFbw">
+            <node concept="359W_D" id="6TFgjK2cb6m" role="3uHU7w">
+              <ref role="359W_E" to="53m0:44HS8_67H_g" resolve="ComboBoxCheck" />
+              <ref role="359W_F" to="53m0:44HS8_67H_h" resolve="checks" />
+            </node>
+            <node concept="2DA6wF" id="6TFgjK2ca8i" role="3uHU7B" />
+          </node>
+          <node concept="3clFbS" id="6TFgjK2ca7K" role="3clFbx">
+            <node concept="3clFbJ" id="6TFgjK2cbqi" role="3cqZAp">
+              <property role="TyiWK" value="true" />
+              <node concept="1Wc70l" id="6TFgjK2cpTf" role="3clFbw">
+                <node concept="2OqwBi" id="6TFgjK2cqer" role="3uHU7w">
+                  <node concept="2DD5aU" id="6TFgjK2cpUo" role="2Oq$k0" />
+                  <node concept="2Zo12i" id="6TFgjK2cqGF" role="2OqNvi">
+                    <node concept="chp4Y" id="6TFgjK2cqTB" role="2Zo12j">
+                      <ref role="cht4Q" to="53m0:44HS8_67HAm" resolve="ComboBoxEntriesCheckValue" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="6TFgjK2cbEC" role="3uHU7B">
+                  <node concept="EsrRn" id="6TFgjK2cbr3" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="6TFgjK2cptT" role="2OqNvi">
+                    <ref role="37wK5l" to="fwln:6TFgjK2cfun" resolve="hasFixedSet" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="6TFgjK2cbqk" role="3clFbx">
+                <node concept="3cpWs6" id="6TFgjK2cpyd" role="3cqZAp">
+                  <node concept="3clFbT" id="6TFgjK2cqVn" role="3cqZAk" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6TFgjK2cbnW" role="3cqZAp">
+          <node concept="3clFbT" id="6TFgjK2cbnV" role="3clFbG">
+            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>

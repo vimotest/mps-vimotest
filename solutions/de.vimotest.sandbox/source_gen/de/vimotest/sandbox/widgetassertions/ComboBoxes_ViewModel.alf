@@ -67,4 +67,55 @@ public class ComboBoxes_ViewModel {
     return this.isMyOptionsWithFreeTextComboBoxEnabled;
 
   }
+  
+  private MyOptionsWithFixedChoicesComboBoxEntries : ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption [ * ]  ;
+  
+  public getMyOptionsWithFixedChoicesComboBoxEntries (  ) : ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption [ * ]  {
+    return this.MyOptionsWithFixedChoicesComboBoxEntries;
+
+  }
+  
+  private MyOptionsWithFixedChoicesComboBoxSelectedEntry : ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption  ;
+  
+  public getMyOptionsWithFixedChoicesComboBoxSelectedEntry (  ) : ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption  {
+    return this.MyOptionsWithFixedChoicesComboBoxSelectedEntry;
+
+  }
+  
+  private MyOptionsWithDisplayValueComboBoxEntries : ComboBoxes_ViewModelMyOptionsWithDisplayValueEntry [ * ]  ;
+  
+  public getMyOptionsWithDisplayValueComboBoxEntries (  ) : ComboBoxes_ViewModelMyOptionsWithDisplayValueEntry [ * ]  {
+    return this.MyOptionsWithDisplayValueComboBoxEntries;
+
+  }
+  
+  private MyOptionsWithDisplayValueComboBoxSelectedEntry : String  ;
+  
+  public getMyOptionsWithDisplayValueComboBoxSelectedEntry (  ) : String  {
+    return this.MyOptionsWithDisplayValueComboBoxSelectedEntry;
+
+  }
+  
+  private MyOptionsWithFixedChoicesAndDisplayValueComboBoxEntries : ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueEntry [ * ]  ;
+  
+  public getMyOptionsWithFixedChoicesAndDisplayValueComboBoxEntries (  ) : ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueEntry [ * ]  {
+    return this.MyOptionsWithFixedChoicesAndDisplayValueComboBoxEntries;
+
+  }
+  
+  private MyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry : ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption  ;
+  
+  public getMyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry (  ) : ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption  {
+    return this.MyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry;
+
+  }
+  
+  public myOptionsWithFixedChoicesComboBoxEntrySelected (   in entryOption: ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption  ) {    
+  }
+  
+  public myOptionsWithDisplayValueComboBoxEntrySelected (   in entryName: String  ) {    
+  }
+  
+  public myOptionsWithFixedChoicesAndDisplayValueComboBoxEntrySelected (   in entryOption: ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption  ) {    
+  }
 }

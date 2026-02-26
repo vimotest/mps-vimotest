@@ -9,16 +9,24 @@ import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.widgetassertions.ComboBoxes_ViewModelTestEnvironmentImpl;
 import java.util.List;
 import org.junit.Assert;
+import de.vimotest.sandbox.widgetassertions.ComboBoxes_ViewModelMyOptionsWithDisplayValueEntry;
+import de.vimotest.sandbox.widgetassertions.ConvertMyOptionsWithFixedChoicesToString;
+import de.vimotest.sandbox.widgetassertions.ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption;
+import de.vimotest.sandbox.widgetassertions.ConvertMyOptionsWithFixedChoicesAndDisplayValueToString;
+import de.vimotest.sandbox.widgetassertions.ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption;
 
 public class ComboBoxes_ViewTest_Test {
   private ComboBoxes_ViewModel sut;
   private ComboBoxes_ViewModelTestEnvironment testEnvironment;
   @Test
-  public void test_My_Scenario_given_empty_context_when_then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible_and_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_() throws Exception {
+  public void test_My_Scenario_given_empty_context_when_then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible_and_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_and_MyOptionsWithDisplayValue_has_2_entries_and_selected_OptionA_and_MyOptionsWithFixedChoices_selected_Red_and_MyOptionsWithFixedChoicesAndDisplayValue_selected__yellow_() throws Exception {
     this.given_empty_context();
     this.BuildSut();
     this.then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible();
     this.then_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_();
+    this.then_MyOptionsWithDisplayValue_has_2_entries_and_selected_OptionA_();
+    this.then_MyOptionsWithFixedChoices_selected_Red_();
+    this.then_MyOptionsWithFixedChoicesAndDisplayValue_selected__yellow_();
   }
   @Test
   public void test_ComboBox_disabled_given_when_then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled() throws Exception {
@@ -64,6 +72,23 @@ public class ComboBoxes_ViewTest_Test {
     Assert.assertEquals("Expected that combobox MyOptionsWithFreeText has entry at index 1 matching <" + "E2" + ">, but was <" + actualMyOptionsWithFreeTextEntries.get(2 - 1) + ">", "E2", actualMyOptionsWithFreeTextEntries.get(2 - 1));
     Assert.assertEquals("Expected that combobox MyOptionsWithFreeText has " + "no selection" + ", but was <" + this.sut.getMyOptionsWithFreeTextComboBoxSelectedEntry() + ">", "", this.sut.getMyOptionsWithFreeTextComboBoxSelectedEntry());
     Assert.assertEquals("Expected that combobox MyOptionsWithFreeText has text <" + "My Free Text" + ">, but was <" + this.sut.getMyOptionsWithFreeTextComboBoxText() + ">", "My Free Text", this.sut.getMyOptionsWithFreeTextComboBoxText());
+  }
+  public void then_MyOptionsWithDisplayValue_has_2_entries_and_selected_OptionA_() {
+    List<ComboBoxes_ViewModelMyOptionsWithDisplayValueEntry> actualMyOptionsWithDisplayValueEntries = this.sut.getMyOptionsWithDisplayValueComboBoxEntries();
+    Assert.assertEquals("Expected that combobox MyOptionsWithDisplayValue has 2 entries, but has " + Integer.toString(actualMyOptionsWithDisplayValueEntries.size()), Integer.valueOf(2), Integer.valueOf(actualMyOptionsWithDisplayValueEntries.size()));
+    ComboBoxes_ViewModelMyOptionsWithDisplayValueEntry actualMyOptionsWithDisplayValueEntry0 = actualMyOptionsWithDisplayValueEntries.get(1 - 1);
+    Assert.assertEquals("Expected that combobox MyOptionsWithDisplayValue has entry with display value at index 0 matching <" + "OptionA" + ">, but was <" + actualMyOptionsWithDisplayValueEntry0.DisplayValue + ">", "OptionA", actualMyOptionsWithDisplayValueEntry0.DisplayValue);
+    Assert.assertEquals("Expected that combobox MyOptionsWithDisplayValue has entry with logical value at index 0 matching <" + "Option A" + ">, but was <" + actualMyOptionsWithDisplayValueEntry0.Value + ">", "Option A", actualMyOptionsWithDisplayValueEntry0.Value);
+    ComboBoxes_ViewModelMyOptionsWithDisplayValueEntry actualMyOptionsWithDisplayValueEntry1 = actualMyOptionsWithDisplayValueEntries.get(2 - 1);
+    Assert.assertEquals("Expected that combobox MyOptionsWithDisplayValue has entry with display value at index 1 matching <" + "OptionB" + ">, but was <" + actualMyOptionsWithDisplayValueEntry1.DisplayValue + ">", "OptionB", actualMyOptionsWithDisplayValueEntry1.DisplayValue);
+    Assert.assertEquals("Expected that combobox MyOptionsWithDisplayValue has entry with logical value at index 1 matching <" + "Option B" + ">, but was <" + actualMyOptionsWithDisplayValueEntry1.Value + ">", "Option B", actualMyOptionsWithDisplayValueEntry1.Value);
+    Assert.assertEquals("Expected that combobox MyOptionsWithDisplayValue has " + "selected <OptionA>" + ", but was <" + this.sut.getMyOptionsWithDisplayValueComboBoxSelectedEntry() + ">", "OptionA", this.sut.getMyOptionsWithDisplayValueComboBoxSelectedEntry());
+  }
+  public void then_MyOptionsWithFixedChoices_selected_Red_() {
+    Assert.assertEquals("Expected that combobox MyOptionsWithFixedChoices has selected entry <" + "Red" + ">, but was <" + ConvertMyOptionsWithFixedChoicesToString.convertMyOptionsWithFixedChoicesToString(this.sut.getMyOptionsWithFixedChoicesComboBoxSelectedEntry()) + ">", ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption.Red, this.sut.getMyOptionsWithFixedChoicesComboBoxSelectedEntry());
+  }
+  public void then_MyOptionsWithFixedChoicesAndDisplayValue_selected__yellow_() {
+    Assert.assertEquals("Expected that combobox MyOptionsWithFixedChoicesAndDisplayValue has selected entry <" + "(yellow)" + ">, but was <" + ConvertMyOptionsWithFixedChoicesAndDisplayValueToString.convertMyOptionsWithFixedChoicesAndDisplayValueToString(this.sut.getMyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry()) + ">", ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption.Yellow, this.sut.getMyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry());
   }
   public void then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled() {
     List<String> actualMyOptionsEntries_1 = this.sut.getMyOptionsComboBoxEntries();

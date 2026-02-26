@@ -24,14 +24,15 @@ public class SelectEntryCommand_ViewTests
 
     Scenario: Select Entry Combobox Call
       given:
-       when: select entry 'C' in MyElements
+       when: select entry 'C' in MyElements and select entry 'Red' in MyOptionsWithFixedChoices
        then: MyElements has 3 entries and
    */
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
-    public void Select_Entry_Combobox_Call_given_when_select_entry_C_in_MyElements_then_MyElements_has_3_entries_and()
+    public void Select_Entry_Combobox_Call_given_when_select_entry_C_in_MyElements_and_select_entry_Red_in_MyOptionsWithFixedChoices_then_MyElements_has_3_entries_and()
     {
         this.BuildSut();
         this.when_select_entry_C_in_MyElements();
+        this.when_select_entry_Red_in_MyOptionsWithFixedChoices();
         this.then_MyElements_has_3_entries_and();
     }
 
@@ -58,6 +59,11 @@ public class SelectEntryCommand_ViewTests
     public virtual void when_select_entry_C_in_MyElements()
     {
         this.sut.myElementsComboBoxEntrySelected("C");
+    }
+
+    public virtual void when_select_entry_Red_in_MyOptionsWithFixedChoices()
+    {
+        this.sut.myOptionsWithFixedChoicesComboBoxEntrySelected(commands.SelectEntryCommand_ViewModelMyOptionsWithFixedChoicesOption.Red);
     }
 
     public virtual void when_select_entry_B_in_MyOptions()

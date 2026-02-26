@@ -1,0 +1,10 @@
+namespace widgetassertions ;
+
+
+
+datatype ComboBoxes_ViewModelMyOptionsWithDisplayValueEntry {
+  
+  public Value : String  ;
+  
+  public DisplayValue : String  ;
+}

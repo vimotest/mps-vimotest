@@ -4,6 +4,11 @@
 #include "ComboBoxes_ViewModel.h"
 #include <string>
 #include <vector>
+#include "ComboBoxes_ViewModelMyOptionsWithDisplayValueEntry.h"
+#include "convertMyOptionsWithFixedChoicesToString.hpp"
+#include "ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption.h"
+#include "convertMyOptionsWithFixedChoicesAndDisplayValueToString.hpp"
+#include "ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption.h"
 #include "ComboBoxes_ViewModelTestEnvironmentImpl.h"
 
 namespace widgetassertions
@@ -19,6 +24,9 @@ namespace widgetassertions
     // Then Helper Definitions
     virtual void then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible();
     virtual void then_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_();
+    virtual void then_MyOptionsWithDisplayValue_has_2_entries_and_selected_OptionA_();
+    virtual void then_MyOptionsWithFixedChoices_selected_Red_();
+    virtual void then_MyOptionsWithFixedChoicesAndDisplayValue_selected__yellow_();
     virtual void then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled();
     virtual void then_MyOptions_has_1_entries_and_selected_A_and_is_not_visible();
   protected:
@@ -32,13 +40,16 @@ namespace widgetassertions
   /// Scenario: My Scenario
   ///   given: empty context
   ///    when:
-  ///    then: MyOptions has 3 entries and selected 'A1' and is enabled and is visible and MyOptionsWithFreeText has 2 entries and  and shows text 'My Free Text'
-  TEST_F(ComboBoxes_ViewTest, My_Scenario_given_empty_context_when_then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible_and_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_)
+  ///    then: MyOptions has 3 entries and selected 'A1' and is enabled and is visible and MyOptionsWithFreeText has 2 entries and  and shows text 'My Free Text' and MyOptionsWithDisplayValue has 2 entries and selected 'OptionA' and MyOptionsWithFixedChoices selected 'Red' and MyOptionsWithFixedChoicesAndDisplayValue selected '(yellow)'
+  TEST_F(ComboBoxes_ViewTest, My_Scenario_given_empty_context_when_then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible_and_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_and_MyOptionsWithDisplayValue_has_2_entries_and_selected_OptionA_and_MyOptionsWithFixedChoices_selected_Red_and_MyOptionsWithFixedChoicesAndDisplayValue_selected__yellow_)
   {
     this->given_empty_context();
     this->BuildSut();
     this->then_MyOptions_has_3_entries_and_selected_A1_and_is_enabled_and_is_visible();
     this->then_MyOptionsWithFreeText_has_2_entries_and_and_shows_text_My_Free_Text_();
+    this->then_MyOptionsWithDisplayValue_has_2_entries_and_selected_OptionA_();
+    this->then_MyOptionsWithFixedChoices_selected_Red_();
+    this->then_MyOptionsWithFixedChoicesAndDisplayValue_selected__yellow_();
   }
   /// Scenario: ComboBox (disabled)
   ///   given:
@@ -84,6 +95,26 @@ namespace widgetassertions
     EXPECT_EQ(std::string("E2"), actualMyOptionsWithFreeTextEntries.at(1)) << std::string("Expected that combobox MyOptionsWithFreeText has entry at index 1 matching <") + std::string("E2") + std::string(">, but was <") + actualMyOptionsWithFreeTextEntries.at(1) + std::string(">");
     EXPECT_EQ(std::string(""), this->sut->getMyOptionsWithFreeTextComboBoxSelectedEntry()) << std::string("Expected that combobox MyOptionsWithFreeText has ") + std::string("no selection") + std::string(", but was <") + this->sut->getMyOptionsWithFreeTextComboBoxSelectedEntry() + std::string(">");
     EXPECT_EQ(std::string("My Free Text"), this->sut->getMyOptionsWithFreeTextComboBoxText()) << std::string("Expected that combobox MyOptionsWithFreeText has text <") + std::string("My Free Text") + std::string(">, but was <") + this->sut->getMyOptionsWithFreeTextComboBoxText() + std::string(">");
+  }
+  void ComboBoxes_ViewTest::then_MyOptionsWithDisplayValue_has_2_entries_and_selected_OptionA_()
+  {
+    auto actualMyOptionsWithDisplayValueEntries = this->sut->getMyOptionsWithDisplayValueComboBoxEntries();
+    EXPECT_EQ(2, actualMyOptionsWithDisplayValueEntries.size()) << std::string("Expected that combobox MyOptionsWithDisplayValue has 2 entries, but has ") + std::to_string(actualMyOptionsWithDisplayValueEntries.size());
+    auto& actualMyOptionsWithDisplayValueEntry0 = actualMyOptionsWithDisplayValueEntries.at(0);
+    EXPECT_EQ(std::string("OptionA"), actualMyOptionsWithDisplayValueEntry0.DisplayValue) << std::string("Expected that combobox MyOptionsWithDisplayValue has entry with display value at index 0 matching <") + std::string("OptionA") + std::string(">, but was <") + actualMyOptionsWithDisplayValueEntry0.DisplayValue + std::string(">");
+    EXPECT_EQ(std::string("Option A"), actualMyOptionsWithDisplayValueEntry0.Value) << std::string("Expected that combobox MyOptionsWithDisplayValue has entry with logical value at index 0 matching <") + std::string("Option A") + std::string(">, but was <") + actualMyOptionsWithDisplayValueEntry0.Value + std::string(">");
+    auto& actualMyOptionsWithDisplayValueEntry1 = actualMyOptionsWithDisplayValueEntries.at(1);
+    EXPECT_EQ(std::string("OptionB"), actualMyOptionsWithDisplayValueEntry1.DisplayValue) << std::string("Expected that combobox MyOptionsWithDisplayValue has entry with display value at index 1 matching <") + std::string("OptionB") + std::string(">, but was <") + actualMyOptionsWithDisplayValueEntry1.DisplayValue + std::string(">");
+    EXPECT_EQ(std::string("Option B"), actualMyOptionsWithDisplayValueEntry1.Value) << std::string("Expected that combobox MyOptionsWithDisplayValue has entry with logical value at index 1 matching <") + std::string("Option B") + std::string(">, but was <") + actualMyOptionsWithDisplayValueEntry1.Value + std::string(">");
+    EXPECT_EQ(std::string("OptionA"), this->sut->getMyOptionsWithDisplayValueComboBoxSelectedEntry()) << std::string("Expected that combobox MyOptionsWithDisplayValue has ") + std::string("selected <OptionA>") + std::string(", but was <") + this->sut->getMyOptionsWithDisplayValueComboBoxSelectedEntry() + std::string(">");
+  }
+  void ComboBoxes_ViewTest::then_MyOptionsWithFixedChoices_selected_Red_()
+  {
+    EXPECT_EQ(widgetassertions::ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption::Red, this->sut->getMyOptionsWithFixedChoicesComboBoxSelectedEntry()) << std::string("Expected that combobox MyOptionsWithFixedChoices has selected entry <") + std::string("Red") + std::string(">, but was <") + widgetassertions::convertMyOptionsWithFixedChoicesToString(this->sut->getMyOptionsWithFixedChoicesComboBoxSelectedEntry()) + std::string(">");
+  }
+  void ComboBoxes_ViewTest::then_MyOptionsWithFixedChoicesAndDisplayValue_selected__yellow_()
+  {
+    EXPECT_EQ(widgetassertions::ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption::Yellow, this->sut->getMyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry()) << std::string("Expected that combobox MyOptionsWithFixedChoicesAndDisplayValue has selected entry <") + std::string("(yellow)") + std::string(">, but was <") + widgetassertions::convertMyOptionsWithFixedChoicesAndDisplayValueToString(this->sut->getMyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry()) + std::string(">");
   }
   void ComboBoxes_ViewTest::then_MyOptions_has_1_entries_and_selected_A_and_is_not_enabled()
   {

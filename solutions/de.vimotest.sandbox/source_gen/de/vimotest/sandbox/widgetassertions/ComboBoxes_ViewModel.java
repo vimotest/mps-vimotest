@@ -42,4 +42,34 @@ public class ComboBoxes_ViewModel {
   public Boolean getIsMyOptionsWithFreeTextComboBoxEnabled() {
     return this.isMyOptionsWithFreeTextComboBoxEnabled;
   }
+  private List<ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption> MyOptionsWithFixedChoicesComboBoxEntries = new LinkedList<>();
+  public List<ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption> getMyOptionsWithFixedChoicesComboBoxEntries() {
+    return this.MyOptionsWithFixedChoicesComboBoxEntries;
+  }
+  private ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption MyOptionsWithFixedChoicesComboBoxSelectedEntry;
+  public ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption getMyOptionsWithFixedChoicesComboBoxSelectedEntry() {
+    return this.MyOptionsWithFixedChoicesComboBoxSelectedEntry;
+  }
+  private List<ComboBoxes_ViewModelMyOptionsWithDisplayValueEntry> MyOptionsWithDisplayValueComboBoxEntries = new LinkedList<>();
+  public List<ComboBoxes_ViewModelMyOptionsWithDisplayValueEntry> getMyOptionsWithDisplayValueComboBoxEntries() {
+    return this.MyOptionsWithDisplayValueComboBoxEntries;
+  }
+  private String MyOptionsWithDisplayValueComboBoxSelectedEntry;
+  public String getMyOptionsWithDisplayValueComboBoxSelectedEntry() {
+    return this.MyOptionsWithDisplayValueComboBoxSelectedEntry;
+  }
+  private List<ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueEntry> MyOptionsWithFixedChoicesAndDisplayValueComboBoxEntries = new LinkedList<>();
+  public List<ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueEntry> getMyOptionsWithFixedChoicesAndDisplayValueComboBoxEntries() {
+    return this.MyOptionsWithFixedChoicesAndDisplayValueComboBoxEntries;
+  }
+  private ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption MyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry;
+  public ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption getMyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry() {
+    return this.MyOptionsWithFixedChoicesAndDisplayValueComboBoxSelectedEntry;
+  }
+  public void myOptionsWithFixedChoicesComboBoxEntrySelected(ComboBoxes_ViewModelMyOptionsWithFixedChoicesOption entryOption) {
+  }
+  public void myOptionsWithDisplayValueComboBoxEntrySelected(String entryName) {
+  }
+  public void myOptionsWithFixedChoicesAndDisplayValueComboBoxEntrySelected(ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption entryOption) {
+  }
 }

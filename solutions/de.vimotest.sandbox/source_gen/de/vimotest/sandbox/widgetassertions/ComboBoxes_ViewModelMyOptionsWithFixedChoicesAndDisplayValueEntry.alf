@@ -1,0 +1,10 @@
+namespace widgetassertions ;
+
+
+
+datatype ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueEntry {
+  
+  public EnumValue : ComboBoxes_ViewModelMyOptionsWithFixedChoicesAndDisplayValueOption  ;
+  
+  public VisibleValue : String  ;
+}

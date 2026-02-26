@@ -386,6 +386,10 @@
       </concept>
       <concept id="4696656866608863471" name="de.vimotest.viewmodel.structure.ComboBoxEntriesFeature" flags="ng" index="7cNxA">
         <property id="5655792802101418340" name="old_defaultText" index="M2z3M" />
+        <property id="4603251391665688860" name="customSeparateLogicalValueName" index="1jV5Bs" />
+        <property id="4603251391665688861" name="customSeparateDisplayValueName" index="1jV5Bt" />
+        <property id="7956524892670552080" name="hasFixedChoices" index="1Ghi$G" />
+        <property id="7956524892670570591" name="hasSeparateDisplayValue" index="1Ghv5z" />
         <child id="5655792802101418338" name="defaultEntries" index="M2z3O" />
       </concept>
       <concept id="4696656866608863472" name="de.vimotest.viewmodel.structure.SelectedEntryFeature" flags="ng" index="7cNxT">
@@ -407,7 +411,9 @@
         <child id="9006611305760146546" name="enabledFeature" index="992OL" />
         <child id="9006611305760146545" name="visibilityFeature" index="992OM" />
       </concept>
-      <concept id="3858551213656582824" name="de.vimotest.viewmodel.structure.ComboBoxEntry" flags="ng" index="2gaR_a" />
+      <concept id="3858551213656582824" name="de.vimotest.viewmodel.structure.ComboBoxEntry" flags="ng" index="2gaR_a">
+        <property id="7956524892670570590" name="value" index="1Ghv5y" />
+      </concept>
       <concept id="5995965180310456936" name="de.vimotest.viewmodel.structure.OperationResult" flags="ng" index="hcvzS" />
       <concept id="5995965180289235692" name="de.vimotest.viewmodel.structure.ViewCallbackDependency" flags="ng" index="jXsxW" />
       <concept id="5995965180289368276" name="de.vimotest.viewmodel.structure.IDependencyDefinition" flags="ngI" index="jXV94">
@@ -1069,6 +1075,83 @@
         <node concept="C4FCh" id="4w9z1ta2$1g" role="7cNAf">
           <property role="2VM7R0" value="true" />
         </node>
+      </node>
+      <node concept="7cNA8" id="6TFgjK2rMgt" role="103ZUC">
+        <property role="TrG5h" value="MyOptionsWithFixedChoices" />
+        <node concept="3Vw88H" id="6TFgjK2rMgu" role="2WQ0re" />
+        <node concept="7cNxA" id="6TFgjK2rMgw" role="7cNAb">
+          <property role="1Ghi$G" value="true" />
+          <node concept="2gaR_a" id="6TFgjK2rO9V" role="M2z3O">
+            <property role="TrG5h" value="Green" />
+          </node>
+          <node concept="2gaR_a" id="6TFgjK2rO9W" role="M2z3O">
+            <property role="TrG5h" value="Yellow" />
+          </node>
+          <node concept="2gaR_a" id="6TFgjK2rO9X" role="M2z3O">
+            <property role="TrG5h" value="Red" />
+          </node>
+        </node>
+        <node concept="7cNxT" id="6TFgjK2rMgy" role="7cNAa">
+          <ref role="LYRLJ" node="6TFgjK2rO9V" resolve="Green" />
+        </node>
+        <node concept="V3Zf6" id="6TFgjK2rMg$" role="7cNAd">
+          <node concept="o7Kjd" id="6TFgjK2rMgA" role="o6p68" />
+        </node>
+        <node concept="C4FCg" id="6TFgjK2rMgC" role="7cNAc" />
+        <node concept="C4FCh" id="6TFgjK2rMgE" role="7cNAf" />
+      </node>
+      <node concept="7cNA8" id="6TFgjK2rO9Y" role="103ZUC">
+        <property role="TrG5h" value="MyOptionsWithDisplayValue" />
+        <node concept="3Vw88H" id="6TFgjK2rO9Z" role="2WQ0re" />
+        <node concept="7cNxA" id="6TFgjK2rOa0" role="7cNAb">
+          <property role="1Ghv5z" value="true" />
+          <node concept="2gaR_a" id="6TFgjK2rOa1" role="M2z3O">
+            <property role="TrG5h" value="Option 1" />
+            <property role="1Ghv5y" value="Option1" />
+          </node>
+          <node concept="2gaR_a" id="6TFgjK2rOa2" role="M2z3O">
+            <property role="TrG5h" value="Option 2" />
+            <property role="1Ghv5y" value="Option2" />
+          </node>
+        </node>
+        <node concept="7cNxT" id="6TFgjK2rOa4" role="7cNAa">
+          <ref role="LYRLJ" node="6TFgjK2rOa1" resolve="Option 1" />
+        </node>
+        <node concept="V3Zf6" id="6TFgjK2rOa5" role="7cNAd">
+          <node concept="o7Kjd" id="6TFgjK2rOa6" role="o6p68" />
+        </node>
+        <node concept="C4FCg" id="6TFgjK2rOa7" role="7cNAc" />
+        <node concept="C4FCh" id="6TFgjK2rOa8" role="7cNAf" />
+      </node>
+      <node concept="7cNA8" id="6TFgjK2rOa9" role="103ZUC">
+        <property role="TrG5h" value="MyOptionsWithFixedChoicesAndDisplayValue" />
+        <node concept="3Vw88H" id="6TFgjK2rOaa" role="2WQ0re" />
+        <node concept="7cNxA" id="6TFgjK2rOab" role="7cNAb">
+          <property role="1Ghi$G" value="true" />
+          <property role="1Ghv5z" value="true" />
+          <property role="1jV5Bs" value="EnumValue" />
+          <property role="1jV5Bt" value="VisibleValue" />
+          <node concept="2gaR_a" id="6TFgjK2rOac" role="M2z3O">
+            <property role="TrG5h" value="(green)" />
+            <property role="1Ghv5y" value="Green" />
+          </node>
+          <node concept="2gaR_a" id="6TFgjK2rOad" role="M2z3O">
+            <property role="TrG5h" value="(yellow)" />
+            <property role="1Ghv5y" value="Yellow" />
+          </node>
+          <node concept="2gaR_a" id="6TFgjK2rOae" role="M2z3O">
+            <property role="TrG5h" value="(red)" />
+            <property role="1Ghv5y" value="Red" />
+          </node>
+        </node>
+        <node concept="7cNxT" id="6TFgjK2rOaf" role="7cNAa">
+          <ref role="LYRLJ" node="6TFgjK2rOac" resolve="(green)" />
+        </node>
+        <node concept="V3Zf6" id="6TFgjK2rOag" role="7cNAd">
+          <node concept="o7Kjd" id="6TFgjK2rOah" role="o6p68" />
+        </node>
+        <node concept="C4FCg" id="6TFgjK2rOai" role="7cNAc" />
+        <node concept="C4FCh" id="6TFgjK2rOaj" role="7cNAf" />
       </node>
     </node>
   </node>
@@ -1926,6 +2009,46 @@
                 <node concept="o7Kjd" id="6RKU0s0MwtX" role="oSbKM">
                   <property role="o7K7r" value="My Free Text" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="6TFgjK2OkD5" role="1s$QAX">
+          <node concept="30nzp_" id="6TFgjK2OkD7" role="DUiSb">
+            <ref role="30nzpS" node="6TFgjK2rO9Y" resolve="MyOptionsWithDisplayValue" />
+            <node concept="7cNBp" id="6TFgjK2OkD8" role="30nDbQ">
+              <node concept="7cN$v" id="6TFgjK2OkD9" role="7cNBo">
+                <node concept="2gaR_a" id="6TFgjK2OkDb" role="LTUL5">
+                  <property role="TrG5h" value="OptionA" />
+                  <property role="1Ghv5y" value="Option A" />
+                </node>
+                <node concept="2gaR_a" id="6TFgjK2OkDc" role="LTUL5">
+                  <property role="TrG5h" value="OptionB" />
+                  <property role="1Ghv5y" value="Option B" />
+                </node>
+              </node>
+              <node concept="7cN$h" id="6TFgjK2OkDa" role="7cNBo">
+                <ref role="1B0EOZ" node="6TFgjK2OkDb" resolve="OptionA" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="6TFgjK3qdmq" role="1s$QAX">
+          <node concept="30nzp_" id="6TFgjK3qdms" role="DUiSb">
+            <ref role="30nzpS" node="6TFgjK2rMgt" resolve="MyOptionsWithFixedChoices" />
+            <node concept="7cNBp" id="6TFgjK3qdmt" role="30nDbQ">
+              <node concept="7cN$h" id="6TFgjK3qdmv" role="7cNBo">
+                <ref role="1B0EOZ" node="6TFgjK2rO9X" resolve="Red" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="6TFgjK3rcCJ" role="1s$QAX">
+          <node concept="30nzp_" id="6TFgjK3rcCL" role="DUiSb">
+            <ref role="30nzpS" node="6TFgjK2rOa9" resolve="MyOptionsWithFixedChoicesAndDisplayValue" />
+            <node concept="7cNBp" id="6TFgjK3rcCM" role="30nDbQ">
+              <node concept="7cN$h" id="6TFgjK3rcCO" role="7cNBo">
+                <ref role="1B0EOZ" node="6TFgjK2rOad" resolve="(yellow)" />
               </node>
             </node>
           </node>
@@ -3774,6 +3897,30 @@
         <node concept="C4FCh" id="5imH8sU7TYx" role="7cNAf" />
         <node concept="3Vw88H" id="5imH8sU7TY$" role="2WQ0re" />
       </node>
+      <node concept="7cNA8" id="10wtdZPiPPJ" role="103ZUC">
+        <property role="TrG5h" value="MyOptionsWithFixedChoices" />
+        <node concept="3Vw88H" id="10wtdZPiPPK" role="2WQ0re" />
+        <node concept="7cNxA" id="10wtdZPiPPL" role="7cNAb">
+          <property role="1Ghi$G" value="true" />
+          <node concept="2gaR_a" id="10wtdZPiPPM" role="M2z3O">
+            <property role="TrG5h" value="Green" />
+          </node>
+          <node concept="2gaR_a" id="10wtdZPiPPN" role="M2z3O">
+            <property role="TrG5h" value="Yellow" />
+          </node>
+          <node concept="2gaR_a" id="10wtdZPiPPO" role="M2z3O">
+            <property role="TrG5h" value="Red" />
+          </node>
+        </node>
+        <node concept="7cNxT" id="10wtdZPiPPP" role="7cNAa">
+          <ref role="LYRLJ" node="10wtdZPiPPM" resolve="Green" />
+        </node>
+        <node concept="V3Zf6" id="10wtdZPiPPQ" role="7cNAd">
+          <node concept="o7Kjd" id="10wtdZPiPPR" role="o6p68" />
+        </node>
+        <node concept="C4FCg" id="10wtdZPiPPS" role="7cNAc" />
+        <node concept="C4FCh" id="10wtdZPiPPT" role="7cNAf" />
+      </node>
       <node concept="39$Fqc" id="5LG6vEKw9S7" role="103ZUC">
         <property role="TrG5h" value="MyOptions" />
         <property role="2ejQmt" value="true" />
@@ -3805,6 +3952,12 @@
           <node concept="3eaLtv" id="5imH8sU7U3W" role="DUiS9">
             <property role="2qt_KD" value="C" />
             <ref role="3ucQsQ" node="5imH8sU7TYs" resolve="MyElements" />
+          </node>
+        </node>
+        <node concept="DUd5q" id="10wtdZPiPPU" role="1s$QAM">
+          <node concept="3eaLtv" id="10wtdZPiPPW" role="DUiS9">
+            <property role="2qt_KD" value="Red" />
+            <ref role="3ucQsQ" node="10wtdZPiPPJ" resolve="MyOptionsWithFixedChoices" />
           </node>
         </node>
         <node concept="DUd2R" id="58LMrr8jMBu" role="1s$QAX">

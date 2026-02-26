@@ -107,12 +107,6 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
-      <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
-        <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="8356039341262087992" name="line" index="1aUNEU" />
-      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
@@ -292,14 +286,6 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
-        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
-        <child id="1883223317721008709" name="body" index="Jncv$" />
-        <child id="1883223317721008711" name="variable" index="JncvA" />
-        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
-      </concept>
-      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
-      <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
       <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
@@ -359,14 +345,6 @@
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
         <property id="8575328350543493365" name="message" index="huDt6" />
         <property id="2423417345669755629" name="filter" index="1eyWvh" />
-      </concept>
-    </language>
-    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
-        <property id="155656958578482949" name="value" index="3oM_SC" />
-      </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
-        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi">
@@ -1416,77 +1394,6 @@
                   <ref role="37wK5l" to="nrs2:7YmnhjiwcRB" resolve="generateAbstractViewModel" />
                   <ref role="1Pybhc" to="nrs2:Of5vVZzSPq" resolve="GenerationConfigHelper" />
                   <node concept="30H73N" id="6RKU0saNxrq" role="37wK5m" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1pdMLZ" id="5jGmAfqGk8Y" role="lGtFl">
-          <node concept="15lBmy" id="5jGmAfqGkpx" role="15mYut">
-            <node concept="3clFbS" id="5jGmAfqGkpy" role="2VODD2">
-              <node concept="Jncv_" id="5jGmAfqGLpQ" role="3cqZAp">
-                <ref role="JncvD" to="at53:7H4Lpx0iNpu" resolve="TextFeature" />
-                <node concept="30H73N" id="5jGmAfqGLqm" role="JncvB" />
-                <node concept="3clFbS" id="5jGmAfqGLpS" role="Jncv$">
-                  <node concept="3SKdUt" id="5jGmAfqGSl7" role="3cqZAp">
-                    <node concept="1PaTwC" id="5jGmAfqGSl8" role="1aUNEU">
-                      <node concept="3oM_SD" id="5jGmAfqGSl9" role="1PaTwD">
-                        <property role="3oM_SC" value="if" />
-                      </node>
-                      <node concept="3oM_SD" id="5jGmAfqGSmc" role="1PaTwD">
-                        <property role="3oM_SC" value="no" />
-                      </node>
-                      <node concept="3oM_SD" id="5jGmAfqGSme" role="1PaTwD">
-                        <property role="3oM_SC" value="explicit" />
-                      </node>
-                      <node concept="3oM_SD" id="5jGmAfqGSmv" role="1PaTwD">
-                        <property role="3oM_SC" value="rowHandle" />
-                      </node>
-                      <node concept="3oM_SD" id="5jGmAfqGSon" role="1PaTwD">
-                        <property role="3oM_SC" value="is" />
-                      </node>
-                      <node concept="3oM_SD" id="5jGmAfqGSoC" role="1PaTwD">
-                        <property role="3oM_SC" value="defined," />
-                      </node>
-                      <node concept="3oM_SD" id="5jGmAfqGSoD" role="1PaTwD">
-                        <property role="3oM_SC" value="use" />
-                      </node>
-                      <node concept="3oM_SD" id="5jGmAfqGSoU" role="1PaTwD">
-                        <property role="3oM_SC" value="the" />
-                      </node>
-                      <node concept="3oM_SD" id="5jGmAfqGSoV" role="1PaTwD">
-                        <property role="3oM_SC" value="firstLabelColumn" />
-                      </node>
-                      <node concept="3oM_SD" id="5jGmAfqGSpG" role="1PaTwD">
-                        <property role="3oM_SC" value="getter" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbJ" id="5jGmAfqGLsB" role="3cqZAp">
-                    <node concept="2YIFZM" id="5jGmAfqGLtA" role="3clFbw">
-                      <ref role="37wK5l" to="nrs2:5jGmAfqGI8r" resolve="isFirstLabelColumnTextFeature" />
-                      <ref role="1Pybhc" to="nrs2:5jGmAfqGHz8" resolve="FirstLabelColumnHelper" />
-                      <node concept="Jnkvi" id="5jGmAfqGLu6" role="37wK5m">
-                        <ref role="1M0zk5" node="5jGmAfqGLpT" resolve="textFeature" />
-                      </node>
-                    </node>
-                    <node concept="3clFbS" id="5jGmAfqGLsD" role="3clFbx">
-                      <node concept="3clFbF" id="5jGmAfqGLuI" role="3cqZAp">
-                        <node concept="2OqwBi" id="5jGmAfqGLBy" role="3clFbG">
-                          <node concept="1iwH7S" id="5jGmAfqGLuH" role="2Oq$k0" />
-                          <node concept="703nC" id="5jGmAfqGLGS" role="2OqNvi">
-                            <ref role="707pR" node="5veytyjQi6U" resolve="CustomFeature_Getter_OperationDefinition" />
-                            <node concept="30H73N" id="5jGmAfqGLHq" role="707Db" />
-                            <node concept="3l3mFP" id="5jGmAfqGLHU" role="707Dt" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="JncvC" id="5jGmAfqGLpT" role="JncvA">
-                  <property role="TrG5h" value="textFeature" />
-                  <node concept="2jxLKc" id="5jGmAfqGLpU" role="1tU5fm" />
                 </node>
               </node>
             </node>

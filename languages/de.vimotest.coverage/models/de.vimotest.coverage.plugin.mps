@@ -22,9 +22,10 @@
     <import index="wwqx" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.logging(MPS.Core/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="tqvn" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.tempmodel(MPS.Core/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="at53" ref="r:9e3a5843-688b-4c6d-b3dd-9f321700c21b(de.vimotest.viewmodel.structure)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
@@ -122,12 +123,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
-      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -170,9 +166,6 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
-      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
-        <reference id="1116615189566" name="classifier" index="3VsUkX" />
-      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -270,25 +263,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="2U3DH_RHmev" role="3cqZAp" />
-        <node concept="3cpWs8" id="2U3DH_RHgNq" role="3cqZAp">
-          <node concept="3cpWsn" id="2U3DH_RHgNr" role="3cpWs9">
-            <property role="TrG5h" value="transientModelsProvider" />
-            <node concept="3uibUv" id="2U3DH_RHgIg" role="1tU5fm">
-              <ref role="3uigEE" to="ap4t:~TransientModelsProvider" resolve="TransientModelsProvider" />
-            </node>
-            <node concept="2OqwBi" id="2U3DH_RHgNs" role="33vP2m">
-              <node concept="37vLTw" id="2U3DH_RHgNt" role="2Oq$k0">
-                <ref role="3cqZAo" node="2U3DH_RGLY6" resolve="project" />
-              </node>
-              <node concept="liA8E" id="2U3DH_RHgNu" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~MPSProject.getComponent(java.lang.Class)" resolve="getComponent" />
-                <node concept="3VsKOn" id="2U3DH_RHgNv" role="37wK5m">
-                  <ref role="3VsUkX" to="ap4t:~TransientModelsProvider" resolve="TransientModelsProvider" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="2U3DH_RETd1" role="3cqZAp">
           <node concept="3cpWsn" id="2U3DH_RETd2" role="3cpWs9">
             <property role="TrG5h" value="coverage" />
@@ -298,9 +272,6 @@
             <node concept="2YIFZM" id="2U3DH_RETd3" role="33vP2m">
               <ref role="37wK5l" node="2U3DH_REMYm" resolve="analyse" />
               <ref role="1Pybhc" node="2U3DH_REJtq" resolve="ViewModelCoverageAnalyser" />
-              <node concept="37vLTw" id="2U3DH_RGWf9" role="37wK5m">
-                <ref role="3cqZAo" node="2U3DH_RHgNr" resolve="transientModelsProvider" />
-              </node>
               <node concept="2OqwBi" id="2U3DH_RETd4" role="37wK5m">
                 <node concept="2WthIp" id="2U3DH_RETd5" role="2Oq$k0" />
                 <node concept="3gHZIF" id="2U3DH_RETd6" role="2OqNvi">
@@ -567,11 +538,16 @@
           <node concept="2OqwBi" id="2U3DH_RHo9c" role="3clFbG">
             <node concept="2OqwBi" id="2U3DH_RHnPT" role="2Oq$k0">
               <node concept="2OqwBi" id="2U3DH_RHnyK" role="2Oq$k0">
-                <node concept="37vLTw" id="2U3DH_RHnpa" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2U3DH_RGMKq" resolve="transients" />
+                <node concept="2JrnkZ" id="2U3DH_RLVze" role="2Oq$k0">
+                  <node concept="2OqwBi" id="2U3DH_RLUoW" role="2JrQYb">
+                    <node concept="37vLTw" id="2U3DH_RHnpa" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2U3DH_REN7s" resolve="viewModel" />
+                    </node>
+                    <node concept="I4A8Y" id="2U3DH_RLUP_" role="2OqNvi" />
+                  </node>
                 </node>
                 <node concept="liA8E" id="2U3DH_RHnEE" role="2OqNvi">
-                  <ref role="37wK5l" to="ap4t:~TransientModelsProvider.getRepository()" resolve="getRepository" />
+                  <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
                 </node>
               </node>
               <node concept="liA8E" id="2U3DH_RHnYP" role="2OqNvi">
@@ -582,40 +558,42 @@
               <ref role="37wK5l" to="lui2:~ModelAccess.runWriteAction(java.lang.Runnable)" resolve="runWriteAction" />
               <node concept="1bVj0M" id="2U3DH_RHon8" role="37wK5m">
                 <node concept="3clFbS" id="2U3DH_RHonb" role="1bW5cS">
-                  <node concept="3cpWs8" id="2U3DH_RIOo7" role="3cqZAp">
-                    <node concept="3cpWsn" id="2U3DH_RIOo8" role="3cpWs9">
-                      <property role="TrG5h" value="transientModule" />
-                      <node concept="3uibUv" id="2U3DH_RIOkB" role="1tU5fm">
-                        <ref role="3uigEE" to="ap4t:~TransientModelsModule" resolve="TransientModelsModule" />
+                  <node concept="3cpWs8" id="2U3DH_RM4Rp" role="3cqZAp">
+                    <node concept="3cpWsn" id="2U3DH_RM4Rq" role="3cpWs9">
+                      <property role="TrG5h" value="options" />
+                      <node concept="3uibUv" id="2U3DH_RM4L7" role="1tU5fm">
+                        <ref role="3uigEE" to="tqvn:~TempModuleOptions" resolve="TempModuleOptions" />
                       </node>
-                      <node concept="2OqwBi" id="2U3DH_RIOo9" role="33vP2m">
-                        <node concept="37vLTw" id="2U3DH_RIOoa" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2U3DH_RGMKq" resolve="transients" />
-                        </node>
-                        <node concept="liA8E" id="2U3DH_RIOob" role="2OqNvi">
-                          <ref role="37wK5l" to="ap4t:~TransientModelsProvider.createModule(java.lang.String)" resolve="createModule" />
-                          <node concept="Xl_RD" id="2U3DH_RIOoc" role="37wK5m">
-                            <property role="Xl_RC" value="de.vimotest.coverageAnalysis" />
+                      <node concept="2YIFZM" id="2U3DH_RM4Rr" role="33vP2m">
+                        <ref role="37wK5l" to="tqvn:~TempModuleOptions.forNewModule(org.jetbrains.mps.openapi.module.SRepository,org.jetbrains.mps.openapi.module.SModuleFacet...)" resolve="forNewModule" />
+                        <ref role="1Pybhc" to="tqvn:~TempModuleOptions" resolve="TempModuleOptions" />
+                        <node concept="2OqwBi" id="2U3DH_RM4Rs" role="37wK5m">
+                          <node concept="2JrnkZ" id="2U3DH_RM4Rt" role="2Oq$k0">
+                            <node concept="2OqwBi" id="2U3DH_RM4Ru" role="2JrQYb">
+                              <node concept="37vLTw" id="2U3DH_RM4Rv" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2U3DH_REN7s" resolve="viewModel" />
+                              </node>
+                              <node concept="I4A8Y" id="2U3DH_RM4Rw" role="2OqNvi" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="2U3DH_RM4Rx" role="2OqNvi">
+                            <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
                           </node>
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="3cpWs8" id="2U3DH_RIPHO" role="3cqZAp">
-                    <node concept="3cpWsn" id="2U3DH_RIPHP" role="3cpWs9">
-                      <property role="TrG5h" value="modelId" />
-                      <node concept="3uibUv" id="2U3DH_RIPE2" role="1tU5fm">
-                        <ref role="3uigEE" to="w1kc:~SModelId$IntegerSModelId" resolve="SModelId.IntegerSModelId" />
+                  <node concept="3clFbF" id="2U3DH_RM34X" role="3cqZAp">
+                    <node concept="2OqwBi" id="2U3DH_RM3Xn" role="3clFbG">
+                      <node concept="2YIFZM" id="2U3DH_RM3DW" role="2Oq$k0">
+                        <ref role="37wK5l" to="tqvn:~TemporaryModels.getInstance()" resolve="getInstance" />
+                        <ref role="1Pybhc" to="tqvn:~TemporaryModels" resolve="TemporaryModels" />
                       </node>
-                      <node concept="2OqwBi" id="2U3DH_RIPHQ" role="33vP2m">
-                        <node concept="37vLTw" id="2U3DH_RIPHR" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2U3DH_RIOo8" resolve="transientModule" />
-                        </node>
-                        <node concept="liA8E" id="2U3DH_RIPHS" role="2OqNvi">
-                          <ref role="37wK5l" to="ap4t:~TransientModelsModule.nextModelId(int)" resolve="nextModelId" />
-                          <node concept="3cmrfG" id="2U3DH_RIPHT" role="37wK5m">
-                            <property role="3cmrfH" value="0" />
-                          </node>
+                      <node concept="liA8E" id="2U3DH_RM4lc" role="2OqNvi">
+                        <ref role="37wK5l" to="tqvn:~TemporaryModels.createEditable(boolean,jetbrains.mps.smodel.tempmodel.TempModuleOptions)" resolve="createEditable" />
+                        <node concept="3clFbT" id="2U3DH_RM4zH" role="37wK5m" />
+                        <node concept="37vLTw" id="2U3DH_RM5UG" role="37wK5m">
+                          <ref role="3cqZAo" node="2U3DH_RM4Rq" resolve="options" />
                         </node>
                       </node>
                     </node>
@@ -626,53 +604,17 @@
                       <node concept="3uibUv" id="2U3DH_RITtB" role="1tU5fm">
                         <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
                       </node>
-                      <node concept="2OqwBi" id="2U3DH_RITy8" role="33vP2m">
-                        <node concept="37vLTw" id="2U3DH_RITy9" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2U3DH_RIOo8" resolve="transientModule" />
+                      <node concept="2OqwBi" id="2U3DH_RM6_2" role="33vP2m">
+                        <node concept="2YIFZM" id="2U3DH_RM6_3" role="2Oq$k0">
+                          <ref role="37wK5l" to="tqvn:~TemporaryModels.getInstance()" resolve="getInstance" />
+                          <ref role="1Pybhc" to="tqvn:~TemporaryModels" resolve="TemporaryModels" />
                         </node>
-                        <node concept="liA8E" id="2U3DH_RITya" role="2OqNvi">
-                          <ref role="37wK5l" to="ap4t:~TransientModelsModule.createTransientModel(org.jetbrains.mps.openapi.model.SModelReference)" resolve="createTransientModel" />
-                          <node concept="2ShNRf" id="2U3DH_RITyb" role="37wK5m">
-                            <node concept="1pGfFk" id="2U3DH_RITyc" role="2ShVmc">
-                              <property role="373rjd" value="true" />
-                              <ref role="37wK5l" to="w1kc:~SModelReference.&lt;init&gt;(org.jetbrains.mps.openapi.module.SModuleReference,org.jetbrains.mps.openapi.model.SModelId,java.lang.String)" resolve="SModelReference" />
-                              <node concept="2OqwBi" id="2U3DH_RITyd" role="37wK5m">
-                                <node concept="37vLTw" id="2U3DH_RITye" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="2U3DH_RIOo8" resolve="transientModule" />
-                                </node>
-                                <node concept="liA8E" id="2U3DH_RITyf" role="2OqNvi">
-                                  <ref role="37wK5l" to="ap4t:~TransientModelsModule.getModuleReference()" resolve="getModuleReference" />
-                                </node>
-                              </node>
-                              <node concept="37vLTw" id="2U3DH_RITyg" role="37wK5m">
-                                <ref role="3cqZAo" node="2U3DH_RIPHP" resolve="modelId" />
-                              </node>
-                              <node concept="Xl_RD" id="2U3DH_RITyh" role="37wK5m">
-                                <property role="Xl_RC" value="coverageAnalysis@transient" />
-                              </node>
-                            </node>
+                        <node concept="liA8E" id="2U3DH_RM6_4" role="2OqNvi">
+                          <ref role="37wK5l" to="tqvn:~TemporaryModels.createEditable(boolean,jetbrains.mps.smodel.tempmodel.TempModuleOptions)" resolve="createEditable" />
+                          <node concept="3clFbT" id="2U3DH_RM6_5" role="37wK5m" />
+                          <node concept="37vLTw" id="2U3DH_RM6_6" role="37wK5m">
+                            <ref role="3cqZAo" node="2U3DH_RM4Rq" resolve="options" />
                           </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="2U3DH_RKW8z" role="3cqZAp">
-                    <node concept="2OqwBi" id="2U3DH_RKWSo" role="3clFbG">
-                      <node concept="37vLTw" id="2U3DH_RKW8x" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2U3DH_RIOo8" resolve="transientModule" />
-                      </node>
-                      <node concept="liA8E" id="2U3DH_RKXHB" role="2OqNvi">
-                        <ref role="37wK5l" to="ap4t:~TransientModelsModule.addModelToKeep(org.jetbrains.mps.openapi.model.SModelReference,boolean)" resolve="addModelToKeep" />
-                        <node concept="2OqwBi" id="2U3DH_RKY9w" role="37wK5m">
-                          <node concept="37vLTw" id="2U3DH_RKXSQ" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2U3DH_RITy7" resolve="targetModel" />
-                          </node>
-                          <node concept="liA8E" id="2U3DH_RKYs4" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SModel.getReference()" resolve="getReference" />
-                          </node>
-                        </node>
-                        <node concept="3clFbT" id="2U3DH_RKYOG" role="37wK5m">
-                          <property role="3clFbU" value="true" />
                         </node>
                       </node>
                     </node>
@@ -692,53 +634,6 @@
                         <node concept="37vLTw" id="2U3DH_RIVWO" role="37wK5m">
                           <ref role="3cqZAo" node="2U3DH_RITy7" resolve="targetModel" />
                         </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbH" id="2U3DH_RKQrj" role="3cqZAp" />
-                  <node concept="3cpWs8" id="2U3DH_RL6l9" role="3cqZAp">
-                    <node concept="3cpWsn" id="2U3DH_RL6la" role="3cpWs9">
-                      <property role="TrG5h" value="dummyTask" />
-                      <node concept="3uibUv" id="2U3DH_RL6bP" role="1tU5fm">
-                        <ref role="3uigEE" to="ap4t:~GeneratorTaskBase" resolve="GeneratorTaskBase" />
-                      </node>
-                      <node concept="2ShNRf" id="2U3DH_RL6lb" role="33vP2m">
-                        <node concept="1pGfFk" id="2U3DH_RL6lc" role="2ShVmc">
-                          <property role="373rjd" value="true" />
-                          <ref role="37wK5l" to="ap4t:~GeneratorTaskBase.&lt;init&gt;(org.jetbrains.mps.openapi.model.SModel)" resolve="GeneratorTaskBase" />
-                          <node concept="2OqwBi" id="2U3DH_RL6ld" role="37wK5m">
-                            <node concept="37vLTw" id="2U3DH_RL6le" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2U3DH_REN7s" resolve="viewModel" />
-                            </node>
-                            <node concept="I4A8Y" id="2U3DH_RL6lf" role="2OqNvi" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="2U3DH_RL2ae" role="3cqZAp">
-                    <node concept="2OqwBi" id="2U3DH_RL2En" role="3clFbG">
-                      <node concept="37vLTw" id="2U3DH_RL2ac" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2U3DH_RGMKq" resolve="transients" />
-                      </node>
-                      <node concept="liA8E" id="2U3DH_RL39R" role="2OqNvi">
-                        <ref role="37wK5l" to="ap4t:~TransientModelsProvider.associate(jetbrains.mps.generator.GeneratorTask,jetbrains.mps.generator.TransientModelsModule)" resolve="associate" />
-                        <node concept="37vLTw" id="2U3DH_RL6lg" role="37wK5m">
-                          <ref role="3cqZAo" node="2U3DH_RL6la" resolve="dummyTask" />
-                        </node>
-                        <node concept="37vLTw" id="2U3DH_RL7b$" role="37wK5m">
-                          <ref role="3cqZAo" node="2U3DH_RIOo8" resolve="transientModule" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="2U3DH_RKPlX" role="3cqZAp">
-                    <node concept="2OqwBi" id="2U3DH_RKPLQ" role="3clFbG">
-                      <node concept="37vLTw" id="2U3DH_RKPlV" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2U3DH_RIOo8" resolve="transientModule" />
-                      </node>
-                      <node concept="liA8E" id="2U3DH_RKQgX" role="2OqNvi">
-                        <ref role="37wK5l" to="ap4t:~TransientModelsModule.publishAll()" resolve="publishAll" />
                       </node>
                     </node>
                   </node>
@@ -776,12 +671,6 @@
       <node concept="3Tm1VV" id="2U3DH_REJJh" role="1B3o_S" />
       <node concept="3Tqbb2" id="2U3DH_REMY3" role="3clF45">
         <ref role="ehGHo" to="rwkt:2U3DH_REGG_" resolve="ViewModelCoverageAnalysisResult" />
-      </node>
-      <node concept="37vLTG" id="2U3DH_RGMKq" role="3clF46">
-        <property role="TrG5h" value="transients" />
-        <node concept="3uibUv" id="2U3DH_RGVXa" role="1tU5fm">
-          <ref role="3uigEE" to="ap4t:~TransientModelsProvider" resolve="TransientModelsProvider" />
-        </node>
       </node>
       <node concept="37vLTG" id="2U3DH_REN7s" role="3clF46">
         <property role="TrG5h" value="viewModel" />
@@ -841,30 +730,6 @@
         <node concept="H_c77" id="2U3DH_RIUMj" role="1tU5fm" />
       </node>
       <node concept="3Tm6S6" id="2U3DH_RIUMl" role="1B3o_S" />
-    </node>
-    <node concept="2YIFZL" id="2U3DH_RIs5F" role="jymVt">
-      <property role="TrG5h" value="createLogger" />
-      <node concept="3Tm6S6" id="2U3DH_RIs5G" role="1B3o_S" />
-      <node concept="3uibUv" id="2U3DH_RIs5H" role="3clF45">
-        <ref role="3uigEE" to="et5u:~LogHandler" resolve="LogHandler" />
-      </node>
-      <node concept="3clFbS" id="2U3DH_RIs5$" role="3clF47">
-        <node concept="3cpWs6" id="2U3DH_RIs5_" role="3cqZAp">
-          <node concept="2ShNRf" id="2U3DH_RIs5A" role="3cqZAk">
-            <node concept="1pGfFk" id="2U3DH_RIs5B" role="2ShVmc">
-              <property role="373rjd" value="true" />
-              <ref role="37wK5l" to="et5u:~LogHandler.&lt;init&gt;(jetbrains.mps.logging.Logger)" resolve="LogHandler" />
-              <node concept="2YIFZM" id="2U3DH_RIs5C" role="37wK5m">
-                <ref role="37wK5l" to="wwqx:~Logger.getLogger(java.lang.Class)" resolve="getLogger" />
-                <ref role="1Pybhc" to="wwqx:~Logger" resolve="Logger" />
-                <node concept="3VsKOn" id="2U3DH_RIs5D" role="37wK5m">
-                  <ref role="3VsUkX" node="2U3DH_REJtq" resolve="ViewModelCoverageAnalyser" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="3Tm1VV" id="2U3DH_REJtr" role="1B3o_S" />
   </node>

@@ -7,8 +7,9 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="at53" ref="r:9e3a5843-688b-4c6d-b3dd-9f321700c21b(de.vimotest.viewmodel.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="at53" ref="r:9e3a5843-688b-4c6d-b3dd-9f321700c21b(de.vimotest.viewmodel.structure)" implicit="true" />
+    <import index="53m0" ref="r:b38f4eba-3263-43b3-b5a0-ad906d4f1a11(de.vimotest.viewmodel.testing.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -41,6 +42,19 @@
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="coverage result" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2U3DH_RMh84" role="1TKVEi">
+      <property role="IQ2ns" value="3351706000641561092" />
+      <property role="20kJfa" value="viewModel" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="at53:F907haLJWg" resolve="ViewModel" />
+    </node>
+    <node concept="1TJgyj" id="2U3DH_RMh8e" role="1TKVEi">
+      <property role="IQ2ns" value="3351706000641561102" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="widgetCoverage" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2U3DH_REGGA" resolve="WidgetCoverage" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2U3DH_REGGA">
     <property role="EcuMT" value="3351706000639576870" />
@@ -60,6 +74,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2U3DH_REGGX" resolve="WidgetFeatureCoverage" />
     </node>
+    <node concept="1TJgyj" id="2U3DH_ROAxP" role="1TKVEi">
+      <property role="IQ2ns" value="3351706000642173045" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="commandCoverage" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2U3DH_ROdZI" resolve="WidgetCommandCoverage" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2U3DH_REGGX">
     <property role="EcuMT" value="3351706000639576893" />
@@ -69,7 +90,15 @@
     <node concept="1TJgyj" id="2U3DH_REGGY" role="1TKVEi">
       <property role="IQ2ns" value="3351706000639576894" />
       <property role="20kJfa" value="feature" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
+    </node>
+    <node concept="1TJgyj" id="3B$45SOP9RY" role="1TKVEi">
+      <property role="IQ2ns" value="4171477151651241470" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="checkValues" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2U3DH_REGH0" resolve="CoverageCheckValueRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="2U3DH_REGH0">
@@ -77,6 +106,43 @@
     <property role="TrG5h" value="CoverageCheckValueRef" />
     <property role="34LRSv" value="check value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3B$45SP5NAL" role="1TKVEi">
+      <property role="IQ2ns" value="4171477151655606705" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="53m0:5VrLp2zrQlb" resolve="WidgetFeatureCheckValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2U3DH_ROdZI">
+    <property role="EcuMT" value="3351706000642072558" />
+    <property role="TrG5h" value="WidgetCommandCoverage" />
+    <property role="34LRSv" value="feature coverage" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2U3DH_ROdZJ" role="1TKVEi">
+      <property role="IQ2ns" value="3351706000642072559" />
+      <property role="20kJfa" value="command" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="at53:6kjlgUuu6dE" resolve="ViewWidgetCommand" />
+    </node>
+    <node concept="1TJgyj" id="3B$45SP3jqE" role="1TKVEi">
+      <property role="IQ2ns" value="4171477151654950570" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="commandActions" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3B$45SP5NAJ" resolve="CoverageCommandActionRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3B$45SP5NAJ">
+    <property role="EcuMT" value="4171477151655606703" />
+    <property role="TrG5h" value="CoverageCommandActionRef" />
+    <property role="34LRSv" value="check value" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3B$45SP5NAK" role="1TKVEi">
+      <property role="IQ2ns" value="4171477151655606704" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="53m0:4VeFpYgZnKM" resolve="ViewWidgetCommandAction" />
+    </node>
   </node>
 </model>
 

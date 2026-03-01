@@ -617,7 +617,7 @@
                 <node concept="2OqwBi" id="6TFgjK2cbEC" role="3uHU7B">
                   <node concept="EsrRn" id="6TFgjK2cbr3" role="2Oq$k0" />
                   <node concept="2qgKlT" id="6TFgjK2cptT" role="2OqNvi">
-                    <ref role="37wK5l" to="fwln:6TFgjK2cfun" resolve="hasFixedSet" />
+                    <ref role="37wK5l" to="fwln:6TFgjK2cfun" resolve="isFixedEnumeration" />
                   </node>
                 </node>
               </node>

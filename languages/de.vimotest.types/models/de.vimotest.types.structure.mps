@@ -564,5 +564,22 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5UAv6YTrKfL">
+    <property role="EcuMT" value="6820275504993469425" />
+    <property role="3GE5qa" value="struct.types.builtin" />
+    <property role="TrG5h" value="OptionalType" />
+    <property role="34LRSv" value="optional&lt;&gt;" />
+    <ref role="1TJDcQ" node="6LujpsVKegj" resolve="BuiltInType" />
+    <node concept="1TJgyj" id="5UAv6YTrKfM" role="1TKVEi">
+      <property role="IQ2ns" value="6820275504993469426" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="nestedType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7cQIBSRFmle" resolve="IViMoFieldType" />
+    </node>
+    <node concept="PrWs8" id="5UAv6YTrKfN" role="PzmwI">
+      <ref role="PrY4T" node="7cQIBSRFmle" resolve="IViMoFieldType" />
+    </node>
+  </node>
 </model>
 

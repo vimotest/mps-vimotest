@@ -66,6 +66,9 @@
       <concept id="7922086861527425651" name="de.vimotest.types.structure.StringValue" flags="ng" index="1wOkDO">
         <property id="7922086861527426429" name="value" index="1wOkPU" />
       </concept>
+      <concept id="6820275504993469425" name="de.vimotest.types.structure.OptionalType" flags="ng" index="3BMnYu">
+        <child id="6820275504993469426" name="nestedType" index="3BMnYt" />
+      </concept>
       <concept id="9138865287151104428" name="de.vimotest.types.structure.EnumToStringOperationInfo" flags="ng" index="1G6vgz">
         <property id="9138865287166526833" name="customOperationName" index="1Hp$3Y" />
       </concept>
@@ -349,6 +352,7 @@
       </concept>
     </language>
     <language id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi">
+      <concept id="8152398782397110011" name="alfi.structure.NullExpression" flags="ng" index="2_e7m4" />
       <concept id="2674824929519052396" name="alfi.structure.StringLiteralExpression" flags="ng" index="_iklQ">
         <property id="2674824929519052397" name="value" index="_iklR" />
       </concept>
@@ -5756,6 +5760,12 @@
         <property role="TrG5h" value="MyString" />
         <node concept="1nBS12" id="2GcDibl8glN" role="3xMlr6" />
       </node>
+      <node concept="1nWCU9" id="5UAv6YTOQXP" role="103ZUC">
+        <property role="TrG5h" value="MyOptBool" />
+        <node concept="3BMnYu" id="5UAv6YTOQYl" role="3xMlr6">
+          <node concept="1nBHEw" id="5UAv6YTOQXX" role="3BMnYt" />
+        </node>
+      </node>
       <node concept="1nWCU9" id="2GcDibl8gn_" role="103ZUC">
         <property role="TrG5h" value="MyStrings" />
         <node concept="1WnWvM" id="2GcDibl8gnH" role="3xMlr6">
@@ -5938,6 +5948,43 @@
                 <node concept="_iklQ" id="5vdnfLzkT1h" role="QdLU1">
                   <property role="_iklR" value="text" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="5UAv6YUmoLr" role="30n1Qb">
+      <property role="TrG5h" value="Primitive Optional Boolean Asserts" />
+      <node concept="1s$VFG" id="5UAv6YUmoLu" role="1s$QAY">
+        <node concept="DUd2R" id="5UAv6YUmoLx" role="1s$QAX">
+          <node concept="3Ybqct" id="5UAv6YUmoQ4" role="DUiSb">
+            <node concept="QdLUi" id="5UAv6YUmoQ6" role="3YbqX6">
+              <ref role="QdLUf" node="5UAv6YTOQXP" resolve="MyOptBool" />
+              <node concept="QdLU0" id="5UAv6YUmoQ8" role="QdLUe">
+                <node concept="_jtWu" id="5UAv6YUmoQ9" role="QdLU1" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="5UAv6YUmp0n" role="1s$QAX">
+          <node concept="3Ybqct" id="5UAv6YUmp0o" role="DUiSb">
+            <node concept="QdLUi" id="5UAv6YUmp0p" role="3YbqX6">
+              <ref role="QdLUf" node="5UAv6YTOQXP" resolve="MyOptBool" />
+              <node concept="QdLU0" id="5UAv6YUmp0q" role="QdLUe">
+                <node concept="_jtWu" id="5UAv6YUmp0r" role="QdLU1">
+                  <property role="_jtWv" value="true" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="DUd2R" id="5UAv6YUmp0H" role="1s$QAX">
+          <node concept="3Ybqct" id="5UAv6YUmp0I" role="DUiSb">
+            <node concept="QdLUi" id="5UAv6YUmp0J" role="3YbqX6">
+              <ref role="QdLUf" node="5UAv6YTOQXP" resolve="MyOptBool" />
+              <node concept="QdLU0" id="5UAv6YUmp0K" role="QdLUe">
+                <node concept="2_e7m4" id="5UAv6YUmp1k" role="QdLU1" />
               </node>
             </node>
           </node>

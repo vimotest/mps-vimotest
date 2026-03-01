@@ -3,6 +3,7 @@
 #include "LowLevelFields_ViewModelTestEnvironment.h"
 #include <string>
 #include "LowLevelFields_ViewModel.h"
+#include <optional>
 #include <vector>
 #include "MyAdditions.h"
 #include "LowLevelFields_ViewModelCustomTableRowFieldRow.h"
@@ -22,6 +23,9 @@ namespace widgetassertions
     virtual void then_MyBool_is_true();
     virtual void then_MyInt_is_42();
     virtual void then_MyString_is_text_();
+    virtual void then_MyOptBool_is_false();
+    virtual void then_MyOptBool_is_true();
+    virtual void then_MyOptBool_is_null();
     virtual void then_MyStrings_is_todo_listpattern();
     virtual void then_MyFieldAdditions_is_todo_recordpattern();
     virtual void then_MyFieldAdditionsList_is_todo_listpattern();
@@ -46,6 +50,17 @@ namespace widgetassertions
     this->then_MyBool_is_true();
     this->then_MyInt_is_42();
     this->then_MyString_is_text_();
+  }
+  /// Scenario: Primitive Optional Boolean Asserts
+  ///   given:
+  ///    when:
+  ///    then: MyOptBool is false and MyOptBool is true and MyOptBool is null
+  TEST_F(LowLevelFields_ViewTests, Primitive_Optional_Boolean_Asserts_given_when_then_MyOptBool_is_false_and_MyOptBool_is_true_and_MyOptBool_is_null)
+  {
+    this->BuildSut();
+    this->then_MyOptBool_is_false();
+    this->then_MyOptBool_is_true();
+    this->then_MyOptBool_is_null();
   }
   /// Scenario: Primitive List Field Asserts
   ///   given:
@@ -92,6 +107,21 @@ namespace widgetassertions
   void LowLevelFields_ViewTests::then_MyString_is_text_()
   {
     EXPECT_EQ(std::string("text"), this->sut->getMyString()) << std::string("Expected field 'MyString' has value <") + std::string("text") + std::string(">, but it was <") + this->sut->getMyString() + std::string(">");
+  }
+  void LowLevelFields_ViewTests::then_MyOptBool_is_false()
+  {
+    std::string actualMyOptBoolValue = (!this->sut->getMyOptBool().has_value()) ? std::string("null") : ((this->sut->getMyOptBool().value() == true) ? std::string("true") : std::string("false"));
+    EXPECT_EQ(std::string("false"), actualMyOptBoolValue) << std::string("Expected field 'MyOptBool' has optional boolean value <false>, but it was <") + actualMyOptBoolValue + std::string(">");
+  }
+  void LowLevelFields_ViewTests::then_MyOptBool_is_true()
+  {
+    std::string actualMyOptBoolValue = (!this->sut->getMyOptBool().has_value()) ? std::string("null") : ((this->sut->getMyOptBool().value() == true) ? std::string("true") : std::string("false"));
+    EXPECT_EQ(std::string("true"), actualMyOptBoolValue) << std::string("Expected field 'MyOptBool' has optional boolean value <true>, but it was <") + actualMyOptBoolValue + std::string(">");
+  }
+  void LowLevelFields_ViewTests::then_MyOptBool_is_null()
+  {
+    std::string actualMyOptBoolValue = (!this->sut->getMyOptBool().has_value()) ? std::string("null") : ((this->sut->getMyOptBool().value() == true) ? std::string("true") : std::string("false"));
+    EXPECT_EQ(std::string("null"), actualMyOptBoolValue) << std::string("Expected field 'MyOptBool' has optional boolean value <null>, but it was <") + actualMyOptBoolValue + std::string(">");
   }
   void LowLevelFields_ViewTests::then_MyStrings_is_todo_listpattern()
   {

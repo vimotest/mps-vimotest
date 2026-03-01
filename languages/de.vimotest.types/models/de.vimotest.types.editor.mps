@@ -1482,5 +1482,40 @@
       <ref role="1PE7su" node="4p8dieYSID$" resolve="AbstractNamedStructType_Inspector_EC" />
     </node>
   </node>
+  <node concept="24kQdi" id="5UAv6YTDyYz">
+    <property role="3GE5qa" value="struct.types.builtin" />
+    <ref role="1XX52x" to="evry:5UAv6YTrKfL" resolve="OptionalType" />
+    <node concept="3EZMnI" id="5UAv6YTDyY_" role="2wV5jI">
+      <node concept="3F0ifn" id="5UAv6YTDyYA" role="3EZMnx">
+        <property role="3F0ifm" value="optional" />
+        <ref role="1k5W1q" node="F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0ifn" id="5UAv6YTDyYB" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+        <node concept="11L4FC" id="5UAv6YTDyYC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="5UAv6YTDyYD" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="5UAv6YTDyYE" role="3F10Kt">
+          <property role="1413C4" value="bracet" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5UAv6YTDyYF" role="3EZMnx">
+        <ref role="1NtTu8" to="evry:5UAv6YTrKfM" resolve="nestedType" />
+      </node>
+      <node concept="3F0ifn" id="5UAv6YTDyYG" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <node concept="11L4FC" id="5UAv6YTDyYH" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="5UAv6YTDyYI" role="3F10Kt">
+          <property role="1413C4" value="bracet" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="5UAv6YTDyYJ" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

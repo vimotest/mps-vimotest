@@ -1,4 +1,5 @@
 #include "LowLevelFields_ViewModel.h"
+#include <optional>
 #include <vector>
 #include "MyAdditions.h"
 #include <memory>
@@ -20,6 +21,10 @@ namespace widgetassertions
   std::string LowLevelFields_ViewModel::getMyString()
   {
     return this->MyString;
+  }
+  std::optional<bool> LowLevelFields_ViewModel::getMyOptBool()
+  {
+    return this->MyOptBool.value() == true;
   }
   std::vector<std::string> LowLevelFields_ViewModel::getMyStrings()
   {

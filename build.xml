@@ -50,7 +50,7 @@
       <idea-plugin>
         <id>de.vimotest</id>
         <name>mps-vimotest</name>
-        <version>2025.3.2-SNAPSHOT</version>
+        <version>2025.3.2</version>
         <depends>com.intellij.modules.mps</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.editor.tooltips</depends>
@@ -1035,7 +1035,7 @@
       <idea-plugin>
         <id>de.vimotest</id>
         <name>mps-vimotest</name>
-        <version>2025.3.2-SNAPSHOT</version>
+        <version>2025.3.2</version>
         <depends>com.intellij.modules.mps</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.editor.tooltips</depends>

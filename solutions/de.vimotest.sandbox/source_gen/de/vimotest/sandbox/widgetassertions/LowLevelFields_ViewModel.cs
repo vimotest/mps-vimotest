@@ -29,6 +29,13 @@ namespace widgetassertions
             return this.MyString;
         }
 
+        private bool? MyOptBool;
+
+        public virtual bool? getMyOptBool()
+        {
+            return this.MyOptBool == true;
+        }
+
         private System.Collections.Generic.List<string> MyStrings = new System.Collections.Generic.List<string>();
 
         public virtual System.Collections.Generic.List<string> getMyStrings()

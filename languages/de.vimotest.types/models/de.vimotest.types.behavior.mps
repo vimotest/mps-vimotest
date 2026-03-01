@@ -265,6 +265,28 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5UAv6YTOTAe" role="13h7CS">
+      <property role="TrG5h" value="isOptionalField" />
+      <node concept="3Tm1VV" id="5UAv6YTOTAf" role="1B3o_S" />
+      <node concept="10P_77" id="5UAv6YTOTAg" role="3clF45" />
+      <node concept="3clFbS" id="5UAv6YTOTAh" role="3clF47">
+        <node concept="3clFbF" id="5UAv6YTOTAi" role="3cqZAp">
+          <node concept="2OqwBi" id="5UAv6YTOTAj" role="3clFbG">
+            <node concept="2OqwBi" id="5UAv6YTOTAk" role="2Oq$k0">
+              <node concept="13iPFW" id="5UAv6YTOTAl" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5UAv6YTOTAm" role="2OqNvi">
+                <ref role="3Tt5mk" to="28lk:1KdBIfXLcw_" resolve="typeName" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="5UAv6YTOTAn" role="2OqNvi">
+              <node concept="chp4Y" id="5UAv6YTOTAo" role="cj9EA">
+                <ref role="cht4Q" to="evry:5UAv6YTrKfL" resolve="OptionalType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="5cPWD13qN6W">
     <property role="3GE5qa" value="struct.types.enum" />

@@ -96,7 +96,7 @@
     <node concept="1TJgyj" id="3B$45SOP9RY" role="1TKVEi">
       <property role="IQ2ns" value="4171477151651241470" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="checkValues" />
+      <property role="20kJfa" value="checkValueRefs" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2U3DH_REGH0" resolve="CoverageCheckValueRef" />
     </node>
@@ -127,7 +127,7 @@
     <node concept="1TJgyj" id="3B$45SP3jqE" role="1TKVEi">
       <property role="IQ2ns" value="4171477151654950570" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="commandActions" />
+      <property role="20kJfa" value="commandActionRefs" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="3B$45SP5NAJ" resolve="CoverageCommandActionRef" />
     </node>

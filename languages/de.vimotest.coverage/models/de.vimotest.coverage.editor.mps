@@ -7,6 +7,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="vu8v" ref="r:1fc2b9d3-a755-44c9-a805-efb86717e17d(de.vimotest.coverage.behavior)" />
     <import index="rwkt" ref="r:b07b5d1a-01fc-41ed-8414-727d3e591c27(de.vimotest.coverage.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
@@ -29,7 +30,6 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -37,9 +37,11 @@
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
+      <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1214406454886" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" flags="ln" index="30gYXW" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -82,17 +84,33 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
+      </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -105,6 +123,7 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
@@ -216,36 +235,99 @@
         </node>
         <node concept="pkWqt" id="3B$45SP6N1O" role="3e4ffs">
           <node concept="3clFbS" id="3B$45SP6N1Q" role="2VODD2">
-            <node concept="3clFbF" id="3B$45SP6N70" role="3cqZAp">
-              <node concept="2OqwBi" id="3B$45SP6QbB" role="3clFbG">
-                <node concept="2OqwBi" id="3B$45SP6NmM" role="2Oq$k0">
-                  <node concept="pncrf" id="3B$45SP6N6Z" role="2Oq$k0" />
-                  <node concept="3Tsc0h" id="3B$45SP6N_0" role="2OqNvi">
-                    <ref role="3TtcxE" to="rwkt:3B$45SOP9RY" resolve="checkValues" />
+            <node concept="3clFbF" id="7F9xqpiHGqH" role="3cqZAp">
+              <node concept="17R0WA" id="7F9xqpiHGqI" role="3clFbG">
+                <node concept="Rm8GO" id="7F9xqpiHGTR" role="3uHU7w">
+                  <ref role="Rm8GQ" to="vu8v:7F9xqpiGBkG" resolve="WELL_COVERED" />
+                  <ref role="1Px2BO" to="vu8v:7F9xqpiGBkF" resolve="CoverageInfo.CoverageStatus" />
+                </node>
+                <node concept="2OqwBi" id="7F9xqpiHGqK" role="3uHU7B">
+                  <node concept="2OqwBi" id="7F9xqpiHGqL" role="2Oq$k0">
+                    <node concept="pncrf" id="7F9xqpiHGqM" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="7F9xqpiHGqN" role="2OqNvi">
+                      <ref role="37wK5l" to="vu8v:7F9xqpiG82M" resolve="getCoverageInfo" />
+                    </node>
+                  </node>
+                  <node concept="2OwXpG" id="7F9xqpiHGqO" role="2OqNvi">
+                    <ref role="2Oxat5" to="vu8v:7F9xqpiGBs3" resolve="Status" />
                   </node>
                 </node>
-                <node concept="3GX2aA" id="3B$45SP6S9N" role="2OqNvi" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3F0ifn" id="3B$45SP6N6T" role="1QoVPY">
-          <property role="3F0ifm" value="not covered" />
-          <node concept="VechU" id="3B$45SP6N6X" role="3F10Kt">
-            <property role="Vb096" value="fLwANPn/red" />
-          </node>
-        </node>
-        <node concept="3EZMnI" id="3B$45SP6N1I" role="1QoS34">
-          <node concept="2iRfu4" id="3B$45SP6N1J" role="2iSdaV" />
-          <node concept="3F0ifn" id="3B$45SP3ooq" role="3EZMnx">
-            <property role="3F0ifm" value="covered by" />
-            <node concept="VechU" id="3B$45SP3oot" role="3F10Kt">
-              <property role="Vb096" value="fLwANPr/green" />
+        <node concept="1QoScp" id="7F9xqpiHBos" role="1QoVPY">
+          <property role="1QpmdY" value="true" />
+          <node concept="3F0ifn" id="7F9xqpiHBov" role="1QoS34">
+            <property role="3F0ifm" value="partially covered" />
+            <node concept="VechU" id="7F9xqpiHBow" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5B/darkGray" />
+            </node>
+            <node concept="30gYXW" id="7F9xqpiHH0Q" role="3F10Kt">
+              <property role="Vb096" value="fLwANPp/orange" />
             </node>
           </node>
-          <node concept="3F2HdR" id="3B$45SP3oou" role="3EZMnx">
-            <ref role="1NtTu8" to="rwkt:3B$45SOP9RY" resolve="checkValues" />
-            <node concept="2EHx9g" id="3B$45SP3oov" role="2czzBx" />
+          <node concept="pkWqt" id="7F9xqpiHBox" role="3e4ffs">
+            <node concept="3clFbS" id="7F9xqpiHBo$" role="2VODD2">
+              <node concept="3clFbF" id="7F9xqpiHBqq" role="3cqZAp">
+                <node concept="17R0WA" id="7F9xqpiHFG2" role="3clFbG">
+                  <node concept="Rm8GO" id="7F9xqpiHG5Y" role="3uHU7w">
+                    <ref role="Rm8GQ" to="vu8v:7F9xqpiGBkH" resolve="PARTIAL" />
+                    <ref role="1Px2BO" to="vu8v:7F9xqpiGBkF" resolve="CoverageInfo.CoverageStatus" />
+                  </node>
+                  <node concept="2OqwBi" id="7F9xqpiHBZV" role="3uHU7B">
+                    <node concept="2OqwBi" id="7F9xqpiHBEc" role="2Oq$k0">
+                      <node concept="pncrf" id="7F9xqpiHBqp" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="7F9xqpiHBO1" role="2OqNvi">
+                        <ref role="37wK5l" to="vu8v:7F9xqpiG82M" resolve="getCoverageInfo" />
+                      </node>
+                    </node>
+                    <node concept="2OwXpG" id="7F9xqpiHC8t" role="2OqNvi">
+                      <ref role="2Oxat5" to="vu8v:7F9xqpiGBs3" resolve="Status" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3F0ifn" id="7F9xqpiHBqj" role="1QoVPY">
+            <property role="3F0ifm" value="not covered" />
+            <node concept="VechU" id="7F9xqpiHBqn" role="3F10Kt">
+              <property role="Vb096" value="hEZAO13/white" />
+            </node>
+            <node concept="30gYXW" id="7F9xqpiHH0T" role="3F10Kt">
+              <property role="Vb096" value="fLwANPn/red" />
+            </node>
+          </node>
+        </node>
+        <node concept="3F0ifn" id="3B$45SP3ooq" role="1QoS34">
+          <property role="3F0ifm" value="covered by" />
+          <node concept="VechU" id="7F9xqpiQRg8" role="3F10Kt">
+            <property role="Vb096" value="hEZAO13/white" />
+          </node>
+          <node concept="Veino" id="7F9xqpiQRg9" role="3F10Kt">
+            <property role="Vb096" value="g1_qRwE/darkGreen" />
+          </node>
+        </node>
+      </node>
+      <node concept="1HlG4h" id="7F9xqpiHK8m" role="3EZMnx">
+        <node concept="1HfYo3" id="7F9xqpiHK8o" role="1HlULh">
+          <node concept="3TQlhw" id="7F9xqpiHK8q" role="1Hhtcw">
+            <node concept="3clFbS" id="7F9xqpiHK8s" role="2VODD2">
+              <node concept="3clFbF" id="7F9xqpiHKhw" role="3cqZAp">
+                <node concept="2OqwBi" id="7F9xqpiHKQH" role="3clFbG">
+                  <node concept="2OqwBi" id="7F9xqpiHKyH" role="2Oq$k0">
+                    <node concept="pncrf" id="7F9xqpiHKhv" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="7F9xqpiHKGy" role="2OqNvi">
+                      <ref role="37wK5l" to="vu8v:7F9xqpiG82M" resolve="getCoverageInfo" />
+                    </node>
+                  </node>
+                  <node concept="2OwXpG" id="7F9xqpiHLfD" role="2OqNvi">
+                    <ref role="2Oxat5" to="vu8v:7F9xqpiGBzR" resolve="Summary" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -266,46 +348,72 @@
           </node>
         </node>
       </node>
-      <node concept="1QoScp" id="3B$45SP6Sb5" role="3EZMnx">
+      <node concept="1QoScp" id="7F9xqpiI5kN" role="3EZMnx">
         <property role="1QpmdY" value="true" />
-        <node concept="pVoyu" id="3B$45SP6Sb6" role="3F10Kt">
+        <node concept="pVoyu" id="7F9xqpiI5kO" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="lj46D" id="3B$45SP6Sb7" role="3F10Kt">
+        <node concept="lj46D" id="7F9xqpiI5kP" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="pkWqt" id="3B$45SP6Sb8" role="3e4ffs">
-          <node concept="3clFbS" id="3B$45SP6Sb9" role="2VODD2">
-            <node concept="3clFbF" id="3B$45SP6Sg8" role="3cqZAp">
-              <node concept="2OqwBi" id="3B$45SP6VkJ" role="3clFbG">
-                <node concept="2OqwBi" id="3B$45SP6SvU" role="2Oq$k0">
-                  <node concept="pncrf" id="3B$45SP6Sg7" role="2Oq$k0" />
-                  <node concept="3Tsc0h" id="3B$45SP6SI8" role="2OqNvi">
-                    <ref role="3TtcxE" to="rwkt:3B$45SP3jqE" resolve="commandActions" />
+        <node concept="pkWqt" id="7F9xqpiI5kQ" role="3e4ffs">
+          <node concept="3clFbS" id="7F9xqpiI5kR" role="2VODD2">
+            <node concept="3clFbF" id="7F9xqpiI5y7" role="3cqZAp">
+              <node concept="2OqwBi" id="7F9xqpiI8yD" role="3clFbG">
+                <node concept="2OqwBi" id="7F9xqpiI5LT" role="2Oq$k0">
+                  <node concept="pncrf" id="7F9xqpiI5y6" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="7F9xqpiI5W2" role="2OqNvi">
+                    <ref role="3TtcxE" to="rwkt:3B$45SP3jqE" resolve="commandActionRefs" />
                   </node>
                 </node>
-                <node concept="3GX2aA" id="3B$45SP6XiV" role="2OqNvi" />
+                <node concept="3GX2aA" id="7F9xqpiIav0" role="2OqNvi" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3F0ifn" id="3B$45SP6Sba" role="1QoVPY">
-          <property role="3F0ifm" value="not covered" />
-          <node concept="VechU" id="3B$45SP6Sbb" role="3F10Kt">
-            <property role="Vb096" value="fLwANPn/red" />
-          </node>
-        </node>
-        <node concept="3EZMnI" id="3B$45SP6Sbc" role="1QoS34">
-          <node concept="2iRfu4" id="3B$45SP6Sbd" role="2iSdaV" />
-          <node concept="3F0ifn" id="3B$45SP6Sbe" role="3EZMnx">
+        <node concept="3EZMnI" id="7F9xqpiQ0t0" role="1QoS34">
+          <node concept="2iRfu4" id="7F9xqpiQ0t1" role="2iSdaV" />
+          <node concept="3F0ifn" id="7F9xqpiI5lh" role="3EZMnx">
             <property role="3F0ifm" value="covered by" />
-            <node concept="VechU" id="3B$45SP6Sbf" role="3F10Kt">
-              <property role="Vb096" value="fLwANPr/green" />
+            <node concept="VechU" id="7F9xqpiI5li" role="3F10Kt">
+              <property role="Vb096" value="hEZAO13/white" />
+            </node>
+            <node concept="Veino" id="7F9xqpiQQWb" role="3F10Kt">
+              <property role="Vb096" value="g1_qRwE/darkGreen" />
             </node>
           </node>
-          <node concept="3F2HdR" id="3B$45SP6Sbg" role="3EZMnx">
-            <ref role="1NtTu8" to="rwkt:3B$45SP3jqE" resolve="commandActions" />
-            <node concept="2EHx9g" id="3B$45SP6Sbh" role="2czzBx" />
+          <node concept="1HlG4h" id="7F9xqpiQ0ui" role="3EZMnx">
+            <node concept="1HfYo3" id="7F9xqpiQ0uk" role="1HlULh">
+              <node concept="3TQlhw" id="7F9xqpiQ0um" role="1Hhtcw">
+                <node concept="3clFbS" id="7F9xqpiQ0uo" role="2VODD2">
+                  <node concept="3clFbF" id="7F9xqpiQ0$E" role="3cqZAp">
+                    <node concept="3cpWs3" id="7F9xqpiQ8mp" role="3clFbG">
+                      <node concept="Xl_RD" id="7F9xqpiQ8mt" role="3uHU7w">
+                        <property role="Xl_RC" value=" command actions" />
+                      </node>
+                      <node concept="2OqwBi" id="7F9xqpiQ3PW" role="3uHU7B">
+                        <node concept="2OqwBi" id="7F9xqpiQ0RB" role="2Oq$k0">
+                          <node concept="pncrf" id="7F9xqpiQ0$D" role="2Oq$k0" />
+                          <node concept="3Tsc0h" id="7F9xqpiQ1d4" role="2OqNvi">
+                            <ref role="3TtcxE" to="rwkt:3B$45SP3jqE" resolve="commandActionRefs" />
+                          </node>
+                        </node>
+                        <node concept="34oBXx" id="7F9xqpiQ5Mj" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3F0ifn" id="7F9xqpiI5le" role="1QoVPY">
+          <property role="3F0ifm" value="not covered" />
+          <node concept="VechU" id="7F9xqpiI5lf" role="3F10Kt">
+            <property role="Vb096" value="hEZAO13/white" />
+          </node>
+          <node concept="30gYXW" id="7F9xqpiI5lg" role="3F10Kt">
+            <property role="Vb096" value="fLwANPn/red" />
           </node>
         </node>
       </node>

@@ -1489,7 +1489,7 @@
                           <ref role="3cqZAo" node="3B$45SP62N_" resolve="coverage" />
                         </node>
                         <node concept="3Tsc0h" id="3B$45SP2EXV" role="2OqNvi">
-                          <ref role="3TtcxE" to="rwkt:3B$45SOP9RY" resolve="checkValues" />
+                          <ref role="3TtcxE" to="rwkt:3B$45SOP9RY" resolve="checkValueRefs" />
                         </node>
                       </node>
                       <node concept="TSZUe" id="3B$45SP2P4Y" role="2OqNvi">
@@ -1586,7 +1586,7 @@
                           <ref role="3cqZAo" node="3B$45SP6457" resolve="coverage" />
                         </node>
                         <node concept="3Tsc0h" id="3B$45SP2Q1_" role="2OqNvi">
-                          <ref role="3TtcxE" to="rwkt:3B$45SP3jqE" resolve="commandActions" />
+                          <ref role="3TtcxE" to="rwkt:3B$45SP3jqE" resolve="commandActionRefs" />
                         </node>
                       </node>
                       <node concept="TSZUe" id="3B$45SP2Q1A" role="2OqNvi">

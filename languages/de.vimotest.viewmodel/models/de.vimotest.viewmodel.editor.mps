@@ -64,6 +64,7 @@
       </concept>
     </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="3696012239575138270" name="jetbrains.mps.lang.editor.structure.CellModel_URL" flags="sg" stub="8104358048506729359" index="225u1i" />
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="2000375450116454183" name="jetbrains.mps.lang.editor.structure.ISubstituteMenu" flags="ngI" index="22mbnS">
         <child id="414384289274416996" name="parts" index="3ft7WO" />
@@ -245,6 +246,7 @@
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
+        <property id="1082639509531" name="nullText" index="ilYzB" />
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
       <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
@@ -1257,6 +1259,12 @@
       <node concept="PMmxH" id="HXq1W42Hb8" role="3EZMnx">
         <ref role="PMmxG" node="HXq1W42mE2" resolve="IReferenceableDependency_supportsSpying_EC" />
         <node concept="pVoyu" id="HXq1W42Hb9" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="PMmxH" id="2tg4EP5sqVc" role="3EZMnx">
+        <ref role="PMmxG" node="2tg4EP5gpmW" resolve="IHasTraceabilityLinks_EC" />
+        <node concept="pVoyu" id="2tg4EP5sqVd" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -6914,6 +6922,100 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="2tg4EP5gpmW">
+    <property role="3GE5qa" value="core.traceability" />
+    <property role="TrG5h" value="IHasTraceabilityLinks_EC" />
+    <ref role="1XX52x" to="at53:2tg4EP5gpmO" resolve="IHasTraceabilityLinks" />
+    <node concept="3EZMnI" id="2tg4EP5gpmY" role="2wV5jI">
+      <node concept="3F0ifn" id="2tg4EP5gpn2" role="3EZMnx">
+        <property role="3F0ifm" value="tracability links:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F2HdR" id="2tg4EP5gpn5" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:2tg4EP5gpmU" resolve="traceabilityLinks" />
+        <node concept="2iRkQZ" id="2tg4EP5gpna" role="2czzBx" />
+      </node>
+      <node concept="2iRfu4" id="2tg4EP5gpn1" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2tg4EP5gpnc">
+    <property role="3GE5qa" value="core.traceability" />
+    <ref role="1XX52x" to="at53:2tg4EP5gpmP" resolve="TraceabilityLink" />
+    <node concept="3EZMnI" id="2tg4EP5gpne" role="2wV5jI">
+      <node concept="3F0ifn" id="2tg4EP5gpnk" role="3EZMnx">
+        <property role="3F0ifm" value="requirement ID:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0A7n" id="2tg4EP5gpnn" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:2tg4EP5gpmQ" resolve="requirementId" />
+      </node>
+      <node concept="2iRfu4" id="2tg4EP5gpnh" role="2iSdaV" />
+      <node concept="3EZMnI" id="2tg4EP5IYMd" role="3EZMnx">
+        <node concept="3F0ifn" id="2tg4EP5IYM5" role="3EZMnx">
+          <property role="3F0ifm" value="--&gt;" />
+        </node>
+        <node concept="225u1i" id="2tg4EP5IYM8" role="3EZMnx">
+          <ref role="1NtTu8" to="at53:2tg4EP5IQFq" resolve="requirementUrl" />
+          <node concept="VechU" id="2tg4EP5V6CV" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5B/darkGray" />
+          </node>
+          <node concept="Vb9p2" id="2tg4EP5V6CX" role="3F10Kt">
+            <property role="Vbekb" value="g1_kEg4/ITALIC" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="2tg4EP5IYMe" role="2iSdaV" />
+        <node concept="pkWqt" id="2tg4EP5IYMh" role="pqm2j">
+          <node concept="3clFbS" id="2tg4EP5IYMi" role="2VODD2">
+            <node concept="3clFbF" id="2tg4EP5IYN_" role="3cqZAp">
+              <node concept="2OqwBi" id="2tg4EP5IZQx" role="3clFbG">
+                <node concept="2OqwBi" id="2tg4EP5IZ3n" role="2Oq$k0">
+                  <node concept="pncrf" id="2tg4EP5IYN$" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="2tg4EP5IZh_" role="2OqNvi">
+                    <ref role="3TsBF5" to="at53:2tg4EP5IQFq" resolve="requirementUrl" />
+                  </node>
+                </node>
+                <node concept="17RvpY" id="2tg4EP5J0j3" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2tg4EP5gQe5">
+    <property role="3GE5qa" value="core.traceability" />
+    <ref role="1XX52x" to="at53:2tg4EP5gpYv" resolve="ProjectConfig" />
+    <node concept="3EZMnI" id="2tg4EP5gQe7" role="2wV5jI">
+      <node concept="3F0ifn" id="2tg4EP5gQeb" role="3EZMnx">
+        <property role="3F0ifm" value="project config" />
+        <property role="ilYzB" value="ViMoTestKeyWord+" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+      </node>
+      <node concept="3F0ifn" id="2tg4EP5gQeg" role="3EZMnx">
+        <property role="3F0ifm" value="issue tracker URL:" />
+        <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        <node concept="pVoyu" id="2tg4EP5gQei" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="2tg4EP5gQej" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="2tg4EP5gQel" role="3EZMnx">
+        <ref role="1NtTu8" to="at53:2tg4EP5gpYy" resolve="issueTrackerUrlPattern" />
+      </node>
+      <node concept="3F0ifn" id="2tg4EP5gQeo" role="3EZMnx">
+        <property role="3F0ifm" value="use $requirementId as placeholder" />
+        <node concept="VechU" id="2tg4EP5gQyt" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5A/lightGray" />
+        </node>
+        <node concept="VSNWy" id="2tg4EP5gQyv" role="3F10Kt">
+          <property role="1lJzqX" value="8" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2tg4EP5gQea" role="2iSdaV" />
     </node>
   </node>
 </model>

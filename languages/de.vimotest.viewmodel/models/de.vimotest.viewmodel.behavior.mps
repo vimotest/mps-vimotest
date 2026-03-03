@@ -409,6 +409,9 @@
       <concept id="1154546950173" name="jetbrains.mps.lang.smodel.structure.ConceptReference" flags="ng" index="3gn64h">
         <reference id="1154546997487" name="concept" index="3gnhBz" />
       </concept>
+      <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
+        <child id="6750920497477143623" name="conceptArgument" index="3MHPCF" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -12942,6 +12945,38 @@
     </node>
     <node concept="13hLZK" id="6TFgjK2Omtl" role="13h7CW">
       <node concept="3clFbS" id="6TFgjK2Omtm" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="2tg4EP5IROT">
+    <property role="3GE5qa" value="core.traceability" />
+    <ref role="13h7C2" to="at53:2tg4EP5gpmP" resolve="TraceabilityLink" />
+    <node concept="13i0hz" id="2tg4EP5IRPc" role="13h7CS">
+      <property role="TrG5h" value="getProjectConfig" />
+      <node concept="3Tm1VV" id="2tg4EP5IRPd" role="1B3o_S" />
+      <node concept="3Tqbb2" id="2tg4EP5IRUn" role="3clF45">
+        <ref role="ehGHo" to="at53:2tg4EP5gpYv" resolve="ProjectConfig" />
+      </node>
+      <node concept="3clFbS" id="2tg4EP5IRPf" role="3clF47">
+        <node concept="3clFbF" id="2tg4EP5hfow" role="3cqZAp">
+          <node concept="2OqwBi" id="2tg4EP5hfOy" role="3clFbG">
+            <node concept="2OqwBi" id="2tg4EP5hfOz" role="2Oq$k0">
+              <node concept="2OqwBi" id="2tg4EP5hfO$" role="2Oq$k0">
+                <node concept="13iPFW" id="2tg4EP5IRV_" role="2Oq$k0" />
+                <node concept="I4A8Y" id="2tg4EP5hfOA" role="2OqNvi" />
+              </node>
+              <node concept="1j9C0f" id="2tg4EP5hfOB" role="2OqNvi">
+                <node concept="chp4Y" id="2tg4EP5hfOC" role="3MHPCF">
+                  <ref role="cht4Q" to="at53:2tg4EP5gpYv" resolve="ProjectConfig" />
+                </node>
+              </node>
+            </node>
+            <node concept="1uHKPH" id="2tg4EP5hfOD" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="2tg4EP5IROU" role="13h7CW">
+      <node concept="3clFbS" id="2tg4EP5IROV" role="2VODD2" />
     </node>
   </node>
 </model>

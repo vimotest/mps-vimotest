@@ -147,6 +147,15 @@
       <concept id="6112733486387704342" name="de.vimotest.viewmodel.structure.GenerationConfig" flags="ng" index="1a4JyI">
         <property id="4808949356704344334" name="generateShortTestCaseNames" index="17y7zS" />
       </concept>
+      <concept id="2832784701016610229" name="de.vimotest.viewmodel.structure.TraceabilityLink" flags="ng" index="1y4oso">
+        <property id="2832784701016610230" name="requirementId" index="1y4osr" />
+      </concept>
+      <concept id="2832784701016610228" name="de.vimotest.viewmodel.structure.IHasTraceabilityLinks" flags="ngI" index="1y4osp">
+        <child id="2832784701016610234" name="traceabilityLinks" index="1y4osn" />
+      </concept>
+      <concept id="2832784701016612767" name="de.vimotest.viewmodel.structure.ProjectConfig" flags="ng" index="1y4oOM">
+        <property id="2832784701016612770" name="issueTrackerUrlPattern" index="1y4oOf" />
+      </concept>
       <concept id="7922086861330453131" name="de.vimotest.viewmodel.structure.ToolTipFeature" flags="ng" index="1G_fEc">
         <child id="7922086861494473183" name="defaultToolTipText" index="1AQzBo" />
       </concept>
@@ -339,6 +348,9 @@
       <node concept="1IbZgy" id="2DSbB2zNDsy" role="DUd2K">
         <node concept="30l7Wy" id="2DSbB2zNDsx" role="DUiTU" />
       </node>
+      <node concept="1y4oso" id="2tg4EP5Ddlh" role="1y4osn">
+        <property role="1y4osr" value="7" />
+      </node>
     </node>
     <node concept="3LKzX3" id="6RKU0s0VjnJ" role="30n1Qb">
       <property role="TrG5h" value="Load View on Pre-filled User-Preferences" />
@@ -494,8 +506,12 @@
     </node>
   </node>
   <node concept="1a4JyI" id="4aWOvo5psb7">
-    <property role="3GE5qa" value="de.vimotest.examples.loginview" />
+    <property role="3GE5qa" value="de.vimotest.examples.loginview.config" />
     <property role="17y7zS" value="true" />
+  </node>
+  <node concept="1y4oOM" id="2tg4EP5souV">
+    <property role="3GE5qa" value="de.vimotest.examples.loginview.config" />
+    <property role="1y4oOf" value="https://github.com/vimotest/mps-vimotest/issues/$requirementId" />
   </node>
 </model>
 

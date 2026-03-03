@@ -129,6 +129,9 @@
     <node concept="PrWs8" id="1F_Q10zWlcg" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
+    <node concept="PrWs8" id="2tg4EP5sqVe" role="PzmwI">
+      <ref role="PrY4T" to="at53:2tg4EP5gpmO" resolve="IHasTraceabilityLinks" />
+    </node>
     <node concept="1TJgyj" id="2Yd1qrJOhz1" role="1TKVEi">
       <property role="IQ2ns" value="3426401106044983489" />
       <property role="20kJfa" value="targetViewModel" />
@@ -199,6 +202,9 @@
     </node>
     <node concept="PrWs8" id="5_TItGIKXWW" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="2tg4EP5srPb" role="PzmwI">
+      <ref role="PrY4T" to="at53:2tg4EP5gpmO" resolve="IHasTraceabilityLinks" />
     </node>
   </node>
   <node concept="PlHQZ" id="6fZwY6ifv52">

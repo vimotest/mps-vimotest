@@ -152,6 +152,9 @@
     <node concept="PrWs8" id="3kGPU1QcSOJ" role="PzmwI">
       <ref role="PrY4T" node="3kGPU1QcSOP" resolve="IReferenceableDependency" />
     </node>
+    <node concept="PrWs8" id="2tg4EP5souW" role="PzmwI">
+      <ref role="PrY4T" node="2tg4EP5gpmO" resolve="IHasTraceabilityLinks" />
+    </node>
     <node concept="1irR5M" id="6fZwY6igm51" role="rwd14">
       <property role="2$rrk2" value="1" />
       <node concept="1irR9n" id="2ZnRpGqLyK5" role="1irR9h">
@@ -1921,6 +1924,51 @@
     <property role="EcuMT" value="7956524892681228673" />
     <property role="3GE5qa" value="widgets.choices" />
     <property role="TrG5h" value="IProvideComboBoxConfig" />
+  </node>
+  <node concept="PlHQZ" id="2tg4EP5gpmO">
+    <property role="EcuMT" value="2832784701016610228" />
+    <property role="3GE5qa" value="core.traceability" />
+    <property role="TrG5h" value="IHasTraceabilityLinks" />
+    <node concept="1TJgyj" id="2tg4EP5gpmU" role="1TKVEi">
+      <property role="IQ2ns" value="2832784701016610234" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="traceabilityLinks" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2tg4EP5gpmP" resolve="TraceabilityLink" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2tg4EP5gpmP">
+    <property role="EcuMT" value="2832784701016610229" />
+    <property role="3GE5qa" value="core.traceability" />
+    <property role="TrG5h" value="TraceabilityLink" />
+    <property role="34LRSv" value="trace id" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2tg4EP5gpmQ" role="1TKVEl">
+      <property role="IQ2nx" value="2832784701016610230" />
+      <property role="TrG5h" value="requirementId" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2tg4EP5IQFq" role="1TKVEl">
+      <property role="IQ2nx" value="2832784701024594650" />
+      <property role="TrG5h" value="requirementUrl" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2tg4EP5gpYv">
+    <property role="EcuMT" value="2832784701016612767" />
+    <property role="3GE5qa" value="core.traceability" />
+    <property role="TrG5h" value="ProjectConfig" />
+    <property role="34LRSv" value="project config" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2tg4EP5gpYy" role="1TKVEl">
+      <property role="IQ2nx" value="2832784701016612770" />
+      <property role="TrG5h" value="issueTrackerUrlPattern" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="t5JxF" id="2tg4EP5gpY$" role="lGtFl">
+        <property role="t5JxN" value="Defines the URL pattern for the issue tracking system, e.g., https://jira.mycompany.com/browse/$requirementId" />
+      </node>
+    </node>
   </node>
 </model>
 

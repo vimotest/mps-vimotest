@@ -142,6 +142,11 @@
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
@@ -180,6 +185,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2U3DH_RN_DL">
+    <property role="3GE5qa" value="coverage" />
     <ref role="1XX52x" to="rwkt:2U3DH_REGGA" resolve="WidgetCoverage" />
     <node concept="3EZMnI" id="2U3DH_RN_DN" role="2wV5jI">
       <node concept="3EZMnI" id="3ycnvoHa8OQ" role="3EZMnx">
@@ -322,6 +328,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2U3DH_RN_Ea">
+    <property role="3GE5qa" value="coverage" />
     <ref role="1XX52x" to="rwkt:2U3DH_REGGX" resolve="WidgetFeatureCoverage" />
     <node concept="3EZMnI" id="2U3DH_RN_Ec" role="2wV5jI">
       <node concept="3F0ifn" id="2U3DH_RN_Eg" role="3EZMnx">
@@ -445,6 +452,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2U3DH_ROdZK">
+    <property role="3GE5qa" value="coverage" />
     <ref role="1XX52x" to="rwkt:2U3DH_ROdZI" resolve="WidgetCommandCoverage" />
     <node concept="3EZMnI" id="2U3DH_ROdZM" role="2wV5jI">
       <node concept="3F0ifn" id="2U3DH_ROdZN" role="3EZMnx">
@@ -531,6 +539,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3B$45SP6F3p">
+    <property role="3GE5qa" value="coverage.ref" />
     <ref role="1XX52x" to="rwkt:3B$45SP5NAJ" resolve="CoverageCommandActionRef" />
     <node concept="3EZMnI" id="3B$45SP6F3r" role="2wV5jI">
       <node concept="2iRfu4" id="3B$45SP6F3u" role="2iSdaV" />
@@ -558,6 +567,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3B$45SP6F3A">
+    <property role="3GE5qa" value="coverage.ref" />
     <ref role="1XX52x" to="rwkt:2U3DH_REGH0" resolve="CoverageCheckValueRef" />
     <node concept="3EZMnI" id="3B$45SP6F3H" role="2wV5jI">
       <node concept="2iRfu4" id="3B$45SP6F3K" role="2iSdaV" />

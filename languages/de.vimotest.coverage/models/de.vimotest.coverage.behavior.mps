@@ -210,6 +210,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -245,6 +248,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="7F9xqpiG7qL">
+    <property role="3GE5qa" value="coverage" />
     <ref role="13h7C2" to="rwkt:2U3DH_REGGX" resolve="WidgetFeatureCoverage" />
     <node concept="13i0hz" id="7F9xqpiG82M" role="13h7CS">
       <property role="TrG5h" value="getCoverageInfo" />

@@ -31,6 +31,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -60,6 +63,7 @@
     <property role="EcuMT" value="3351706000639576870" />
     <property role="TrG5h" value="WidgetCoverage" />
     <property role="34LRSv" value="widget coverage" />
+    <property role="3GE5qa" value="coverage" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2U3DH_REGGB" role="1TKVEi">
       <property role="IQ2ns" value="3351706000639576871" />
@@ -86,6 +90,7 @@
     <property role="EcuMT" value="3351706000639576893" />
     <property role="TrG5h" value="WidgetFeatureCoverage" />
     <property role="34LRSv" value="feature coverage" />
+    <property role="3GE5qa" value="coverage" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2U3DH_REGGY" role="1TKVEi">
       <property role="IQ2ns" value="3351706000639576894" />
@@ -105,6 +110,7 @@
     <property role="EcuMT" value="3351706000639576896" />
     <property role="TrG5h" value="CoverageCheckValueRef" />
     <property role="34LRSv" value="check value" />
+    <property role="3GE5qa" value="coverage.ref" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3B$45SP5NAL" role="1TKVEi">
       <property role="IQ2ns" value="4171477151655606705" />
@@ -117,6 +123,7 @@
     <property role="EcuMT" value="3351706000642072558" />
     <property role="TrG5h" value="WidgetCommandCoverage" />
     <property role="34LRSv" value="feature coverage" />
+    <property role="3GE5qa" value="coverage" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2U3DH_ROdZJ" role="1TKVEi">
       <property role="IQ2ns" value="3351706000642072559" />
@@ -136,6 +143,7 @@
     <property role="EcuMT" value="4171477151655606703" />
     <property role="TrG5h" value="CoverageCommandActionRef" />
     <property role="34LRSv" value="check value" />
+    <property role="3GE5qa" value="coverage.ref" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3B$45SP5NAK" role="1TKVEi">
       <property role="IQ2ns" value="4171477151655606704" />

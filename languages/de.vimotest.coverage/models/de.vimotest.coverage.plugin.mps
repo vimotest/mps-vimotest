@@ -253,6 +253,7 @@
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -1114,20 +1115,21 @@
                         </node>
                       </node>
                       <node concept="2OqwBi" id="3B$45SONm6P" role="33vP2m">
-                        <node concept="2OqwBi" id="3B$45SONm6Q" role="2Oq$k0">
-                          <node concept="2OqwBi" id="3B$45SONm6R" role="2Oq$k0">
-                            <node concept="37vLTw" id="3B$45SONm6S" role="2Oq$k0">
-                              <ref role="3cqZAo" node="3B$45SONm82" resolve="widgetCoverage" />
-                            </node>
-                            <node concept="3TrEf2" id="3B$45SONm6T" role="2OqNvi">
-                              <ref role="3Tt5mk" to="rwkt:2U3DH_REGGB" resolve="widget" />
-                            </node>
-                          </node>
-                          <node concept="2Rf3mk" id="3B$45SONm6U" role="2OqNvi">
-                            <node concept="1xMEDy" id="3B$45SONm6V" role="1xVPHs">
-                              <node concept="chp4Y" id="3B$45SONm6W" role="ri$Ld">
-                                <ref role="cht4Q" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
+                        <node concept="2OqwBi" id="5Po0rqd_2xA" role="2Oq$k0">
+                          <node concept="2OqwBi" id="3B$45SONm6Q" role="2Oq$k0">
+                            <node concept="2OqwBi" id="3B$45SONm6R" role="2Oq$k0">
+                              <node concept="37vLTw" id="3B$45SONm6S" role="2Oq$k0">
+                                <ref role="3cqZAo" node="3B$45SONm82" resolve="widgetCoverage" />
                               </node>
+                              <node concept="3TrEf2" id="3B$45SONm6T" role="2OqNvi">
+                                <ref role="3Tt5mk" to="rwkt:2U3DH_REGGB" resolve="widget" />
+                              </node>
+                            </node>
+                            <node concept="32TBzR" id="5Po0rqd$Yl6" role="2OqNvi" />
+                          </node>
+                          <node concept="v3k3i" id="5Po0rqd_4XO" role="2OqNvi">
+                            <node concept="chp4Y" id="5Po0rqd_5JI" role="v3oSu">
+                              <ref role="cht4Q" to="at53:L9c2Y9pj53" resolve="ViewWidgetFeature" />
                             </node>
                           </node>
                         </node>

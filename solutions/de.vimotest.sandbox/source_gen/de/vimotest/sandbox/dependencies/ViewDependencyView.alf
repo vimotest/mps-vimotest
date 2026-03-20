@@ -11,4 +11,6 @@ abstract class ViewDependencyView {
   public abstract AskForEnum (  ) : MyEnum  ;
   
   public abstract GetSomeResultList (   in scope: String  ) : String [ * ]  ;
+  
+  public abstract ShowError (   in errorMessage: String  ) ;
 }

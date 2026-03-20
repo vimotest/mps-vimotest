@@ -42,6 +42,18 @@ class ViewDependencyViewModelTests {
     this.when_ConfirmDeletion (  );
 
   }
+  /** 
+  Scenario: View Operation Spy
+    given: 
+     when: 
+     then: call ViewDependencyView.ShowError(["]) */
+
+  public View_Operation_Spy_given_when_then_call_ViewDependencyView_ShowError___ (  ) {
+    this.BuildSut (  );
+
+    this.then_call_ViewDependencyView_ShowError___ (  );
+
+  }
   
   
   protected BuildSut (  ) {
@@ -71,4 +83,20 @@ class ViewDependencyViewModelTests {
 
   }
   
+  // Then Helper Definitions
+
+  
+  public then_call_ViewDependencyView_ShowError___ (  ) {
+    let spy: ViewDependencyViewSpy = this.testEnvironment.getViewDependencyView (  );
+
+    for ( callInfoIndex in 0 .. spy.ShowErrorCallInfos->size (  ) ) {
+      let callInfo: ShowErrorCallInfo = spy.ShowErrorCallInfos[ callInfoIndex ];
+
+      AssertEqualWithMessage ( "Error", callInfo.errorMessageValue, "ViewDependencyView.ShowError Call[" + IntegerFunctions:: ToString ( callInfoIndex ) + "]: Expected argument value 'errorMessage' is <" + "Error" + "> but was <" + callInfo.errorMessageValue + ">" );
+
+    } 
+
+    AssertEqualWithMessage ( 1, spy.ShowErrorCallInfos->size (  ), "Expected that ViewDependencyView.ShowError was called exactly 1 times, but was " + IntegerFunctions:: ToString ( spy.ShowErrorCallInfos->size (  ) ) );
+
+  }
 }

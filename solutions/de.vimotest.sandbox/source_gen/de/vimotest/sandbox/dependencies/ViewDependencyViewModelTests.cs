@@ -3,6 +3,8 @@
 /// </filename>
 using dependencies;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Collections.Generic;
 
 [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]
 public class ViewDependencyViewModelTests
@@ -47,6 +49,20 @@ public class ViewDependencyViewModelTests
         this.when_ConfirmDeletion();
     }
 
+    /*
+
+    Scenario: View Operation Spy
+      given:
+       when:
+       then: call ViewDependencyView.ShowError(["])
+   */
+    [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
+    public void View_Operation_Spy_given_when_then_call_ViewDependencyView_ShowError___()
+    {
+        this.BuildSut();
+        this.then_call_ViewDependencyView_ShowError___();
+    }
+
     protected virtual void BuildSut()
     {
         this.sut = this.testEnvironment.BuildSut();
@@ -67,5 +83,17 @@ public class ViewDependencyViewModelTests
     public virtual void when_ConfirmDeletion()
     {
         this.testEnvironment.getViewDependencyView().ConfirmDeletion();
+    }
+
+    // Then Helper Definitions
+    public virtual void then_call_ViewDependencyView_ShowError___()
+    {
+        var spy = this.testEnvironment.getViewDependencyView();
+        for (int callInfoIndex = 0; callInfoIndex <= spy.ShowErrorCallInfos.Count; callInfoIndex++)
+        {
+            var callInfo = spy.ShowErrorCallInfos[callInfoIndex - 1];
+            Assert.AreEqual("Error", callInfo.errorMessageValue, "ViewDependencyView.ShowError Call[" + Convert.ToString(callInfoIndex) + "]: Expected argument value 'errorMessage' is <" + "Error" + "> but was <" + callInfo.errorMessageValue + ">");
+        }
+        Assert.AreEqual(1, spy.ShowErrorCallInfos.Count, "Expected that ViewDependencyView.ShowError was called exactly 1 times, but was " + Convert.ToString(spy.ShowErrorCallInfos.Count));
     }
 }

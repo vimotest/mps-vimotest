@@ -3,7 +3,7 @@
 #include "ViewDependencyViewModelTestEnvironment.h"
 #include <memory>
 #include "ViewDependencyViewModel.h"
-#include "ViewDependencyView.h"
+#include "ViewDependencyViewSpy.h"
 
 namespace dependencies
 {
@@ -13,6 +13,6 @@ namespace dependencies
     void Init() override;
     void SetDependencyStubContext() override;
     std::shared_ptr<ViewDependencyViewModel> BuildSut() override;
-    std::shared_ptr<ViewDependencyView> getViewDependencyView() override;
+    std::shared_ptr<ViewDependencyViewSpy> getViewDependencyView() override;
   };
 }

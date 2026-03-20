@@ -2,6 +2,9 @@
 #include <memory>
 #include "ViewDependencyViewModelTestEnvironment.h"
 #include "ViewDependencyView.h"
+#include "ViewDependencyViewSpy.h"
+#include <vector>
+#include <string>
 #include "ViewDependencyViewModel.h"
 #include "ViewDependencyViewModelTestEnvironmentImpl.h"
 
@@ -18,6 +21,8 @@ namespace dependencies
     // When Helper Definitions
     virtual void when_Refresh();
     virtual void when_ConfirmDeletion();
+    // Then Helper Definitions
+    virtual void then_call_ViewDependencyView_ShowError___();
   protected:
     void SetUp() override;
   };
@@ -45,6 +50,15 @@ namespace dependencies
     this->BuildSut();
     this->when_ConfirmDeletion();
   }
+  /// Scenario: View Operation Spy
+  ///   given:
+  ///    when:
+  ///    then: call ViewDependencyView.ShowError(["])
+  TEST_F(ViewDependencyViewModelTests, View_Operation_Spy_given_when_then_call_ViewDependencyView_ShowError___)
+  {
+    this->BuildSut();
+    this->then_call_ViewDependencyView_ShowError___();
+  }
   void ViewDependencyViewModelTests::BuildSut()
   {
     this->sut = this->testEnvironment->BuildSut();
@@ -60,5 +74,15 @@ namespace dependencies
   void ViewDependencyViewModelTests::when_ConfirmDeletion()
   {
     this->testEnvironment->getViewDependencyView()->ConfirmDeletion();
+  }
+  void ViewDependencyViewModelTests::then_call_ViewDependencyView_ShowError___()
+  {
+    auto spy = this->testEnvironment->getViewDependencyView();
+    for (int callInfoIndex = 0; callInfoIndex <= spy->ShowErrorCallInfos.size(); callInfoIndex++)
+    {
+      auto& callInfo = spy->ShowErrorCallInfos.at(callInfoIndex - 1);
+      EXPECT_EQ(std::string("Error"), callInfo.errorMessageValue) << std::string("ViewDependencyView.ShowError Call[") + std::to_string(callInfoIndex) + std::string("]: Expected argument value 'errorMessage' is <") + std::string("Error") + std::string("> but was <") + callInfo.errorMessageValue + std::string(">");
+    }
+    EXPECT_EQ(1, spy->ShowErrorCallInfos.size()) << std::string("Expected that ViewDependencyView.ShowError was called exactly 1 times, but was ") + std::to_string(spy->ShowErrorCallInfos.size());
   }
 }

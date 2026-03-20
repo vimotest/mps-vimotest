@@ -15,7 +15,7 @@ class ViewDependencyViewModelTestEnvironmentImpl specializes ViewDependencyViewM
 
   }
   
-  public getViewDependencyView (  ) : ViewDependencyView  {
+  public getViewDependencyView (  ) : ViewDependencyViewSpy  {
     return null;
 
   }

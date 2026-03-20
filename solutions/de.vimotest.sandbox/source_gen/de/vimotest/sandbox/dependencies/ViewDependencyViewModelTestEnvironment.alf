@@ -10,5 +10,5 @@ abstract class ViewDependencyViewModelTestEnvironment {
   
   public abstract BuildSut (  ) : ViewDependencyViewModel  ;
   
-  public abstract getViewDependencyView (  ) : ViewDependencyView  ;
+  public abstract getViewDependencyView (  ) : ViewDependencyViewSpy  ;
 }

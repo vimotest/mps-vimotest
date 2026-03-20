@@ -9,4 +9,5 @@ public interface ViewDependencyView {
   Boolean ConfirmDeletion();
   MyEnum AskForEnum();
   List<String> GetSomeResultList(String scope);
+  void ShowError(String errorMessage);
 }

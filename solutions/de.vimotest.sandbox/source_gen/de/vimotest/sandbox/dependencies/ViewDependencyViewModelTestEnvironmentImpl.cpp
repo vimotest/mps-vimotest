@@ -1,7 +1,7 @@
 #include "ViewDependencyViewModelTestEnvironmentImpl.h"
 #include <memory>
 #include "ViewDependencyViewModel.h"
-#include "ViewDependencyView.h"
+#include "ViewDependencyViewSpy.h"
 
 namespace dependencies
 {
@@ -15,7 +15,7 @@ namespace dependencies
   {
     return nullptr;
   }
-  std::shared_ptr<ViewDependencyView> ViewDependencyViewModelTestEnvironmentImpl::getViewDependencyView()
+  std::shared_ptr<ViewDependencyViewSpy> ViewDependencyViewModelTestEnvironmentImpl::getViewDependencyView()
   {
     return nullptr;
   }

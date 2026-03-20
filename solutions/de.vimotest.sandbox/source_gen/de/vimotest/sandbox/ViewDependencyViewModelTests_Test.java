@@ -7,6 +7,8 @@ import de.vimotest.sandbox.dependencies.ViewDependencyViewModelTestEnvironment;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.dependencies.ViewDependencyViewModelTestEnvironmentImpl;
+import de.vimotest.sandbox.dependencies.ViewDependencyViewSpy;
+import org.junit.Assert;
 
 public class ViewDependencyViewModelTests_Test {
   private ViewDependencyViewModel sut;
@@ -21,6 +23,11 @@ public class ViewDependencyViewModelTests_Test {
     this.given_DependencyStubContext();
     this.BuildSut();
     this.when_ConfirmDeletion();
+  }
+  @Test
+  public void test_View_Operation_Spy_given_when_then_call_ViewDependencyView_ShowError___() throws Exception {
+    this.BuildSut();
+    this.then_call_ViewDependencyView_ShowError___();
   }
   @BeforeEach
   public void setUp() {
@@ -46,4 +53,12 @@ public class ViewDependencyViewModelTests_Test {
     this.testEnvironment.getViewDependencyView().ConfirmDeletion();
   }
 
+  public void then_call_ViewDependencyView_ShowError___() {
+    ViewDependencyViewSpy spy = this.testEnvironment.getViewDependencyView();
+    for (int callInfoIndex = 0; callInfoIndex <= spy.ShowErrorCallInfos.size(); callInfoIndex++) {
+      ViewDependencyViewSpy.ShowErrorCallInfo callInfo = spy.ShowErrorCallInfos.get(callInfoIndex - 1);
+      Assert.assertEquals("ViewDependencyView.ShowError Call[" + Integer.toString(callInfoIndex) + "]: Expected argument value 'errorMessage' is <" + "Error" + "> but was <" + callInfo.errorMessageValue + ">", "Error", callInfo.errorMessageValue);
+    }
+    Assert.assertEquals("Expected that ViewDependencyView.ShowError was called exactly 1 times, but was " + Integer.toString(spy.ShowErrorCallInfos.size()), Integer.valueOf(1), Integer.valueOf(spy.ShowErrorCallInfos.size()));
+  }
 }

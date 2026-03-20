@@ -1,0 +1,117 @@
+namespace dependencies ;
+
+
+
+class ViewDependencyViewSpy specializes ViewDependencyView {
+  
+  private wrapped : ViewDependencyView  ;
+  
+  
+  public setWrapped (   in wrappedObject: ViewDependencyView  ) {
+    this.wrapped = wrappedObject;
+
+  }
+  
+  
+  public datatype RefreshCallInfo {
+
+  }
+  
+  public datatype ConfirmDeletionCallInfo {
+
+  }
+  
+  public datatype AskForEnumCallInfo {
+
+  }
+  
+  public datatype GetSomeResultListCallInfo {
+    
+    public scopeValue : String  ;
+  }
+  
+  public datatype ShowErrorCallInfo {
+    
+    public errorMessageValue : String  ;
+  }
+  
+  public RefreshCallInfos : RefreshCallInfo [ * ]  ;
+  
+  public ConfirmDeletionCallInfos : ConfirmDeletionCallInfo [ * ]  ;
+  
+  public AskForEnumCallInfos : AskForEnumCallInfo [ * ]  ;
+  
+  public GetSomeResultListCallInfos : GetSomeResultListCallInfo [ * ]  ;
+  
+  public ShowErrorCallInfos : ShowErrorCallInfo [ * ]  ;
+  
+  public Refresh (  ) {
+    let callInfo: RefreshCallInfo = new RefreshCallInfo (  );
+
+    this.RefreshCallInfos->add ( callInfo );
+
+    if ( this.wrapped != null ) {
+      this.wrapped.Refresh (  );
+
+    } 
+
+  }
+  
+  public ConfirmDeletion (  ) : Boolean  {
+    let callInfo: ConfirmDeletionCallInfo = new ConfirmDeletionCallInfo (  );
+
+    this.ConfirmDeletionCallInfos->add ( callInfo );
+
+    if ( this.wrapped != null ) {
+      return this.wrapped.ConfirmDeletion (  );
+
+    } 
+
+    return false;
+
+  }
+  
+  public AskForEnum (  ) : MyEnum  {
+    let callInfo: AskForEnumCallInfo = new AskForEnumCallInfo (  );
+
+    this.AskForEnumCallInfos->add ( callInfo );
+
+    if ( this.wrapped != null ) {
+      return this.wrapped.AskForEnum (  );
+
+    } 
+
+    return null;
+
+  }
+  
+  public GetSomeResultList (   in scope: String  ) : String [ * ]  {
+    let callInfo: GetSomeResultListCallInfo = new GetSomeResultListCallInfo (  );
+
+    callInfo.scopeValue = scope;
+
+    this.GetSomeResultListCallInfos->add ( callInfo );
+
+    if ( this.wrapped != null ) {
+      return this.wrapped.GetSomeResultList ( scope );
+
+    } 
+
+    return null;
+
+  }
+  
+  public ShowError (   in errorMessage: String  ) {
+    let callInfo: ShowErrorCallInfo = new ShowErrorCallInfo (  );
+
+    callInfo.errorMessageValue = errorMessage;
+
+    this.ShowErrorCallInfos->add ( callInfo );
+
+    if ( this.wrapped != null ) {
+      this.wrapped.ShowError ( errorMessage );
+
+    } 
+
+  }
+}

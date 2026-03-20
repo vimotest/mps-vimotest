@@ -68,6 +68,7 @@ set(GENERATED_SOURCES
   ${CMAKE_CURRENT_LIST_DIR}/context/ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests.cpp
   ${CMAKE_CURRENT_LIST_DIR}/context/DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests.cpp
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/LoggerSpy.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewDependencyViewSpy.cpp
 )
 
 set(GENERATED_HEADERS
@@ -135,5 +136,6 @@ set(GENERATED_HEADERS
   ${CMAKE_CURRENT_LIST_DIR}/datadriven/DataDrivenViewModelTestEnvironment.h
   ${CMAKE_CURRENT_LIST_DIR}/datadriven/DataDrivenViewModelTestEnvironmentImpl.h
   ${CMAKE_CURRENT_LIST_DIR}/dependencies/LoggerSpy.h
+  ${CMAKE_CURRENT_LIST_DIR}/dependencies/ViewDependencyViewSpy.h
 )
 

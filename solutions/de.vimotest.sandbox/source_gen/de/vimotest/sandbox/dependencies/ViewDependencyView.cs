@@ -15,5 +15,7 @@ namespace dependencies
         dependencies.MyEnum AskForEnum();
 
         System.Collections.Generic.List<string> GetSomeResultList(string scope);
+
+        void ShowError(string errorMessage);
     }
 }

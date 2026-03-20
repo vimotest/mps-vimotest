@@ -7,5 +7,5 @@ public abstract class ViewDependencyViewModelTestEnvironment {
   public abstract void Init();
   public abstract void SetDependencyStubContext();
   public abstract ViewDependencyViewModel BuildSut();
-  public abstract ViewDependencyView getViewDependencyView();
+  public abstract ViewDependencyViewSpy getViewDependencyView();
 }

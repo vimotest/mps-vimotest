@@ -15,7 +15,7 @@ public class ViewDependencyViewModelTestEnvironmentImpl extends ViewDependencyVi
     return null;
   }
   @Override
-  public ViewDependencyView getViewDependencyView() {
+  public ViewDependencyViewSpy getViewDependencyView() {
     return null;
   }
 }

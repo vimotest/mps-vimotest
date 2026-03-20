@@ -14,5 +14,6 @@ namespace dependencies
     virtual bool ConfirmDeletion() = 0;
     virtual MyEnum AskForEnum() = 0;
     virtual std::vector<std::string> GetSomeResultList(std::string scope) = 0;
+    virtual void ShowError(std::string errorMessage) = 0;
   };
 }

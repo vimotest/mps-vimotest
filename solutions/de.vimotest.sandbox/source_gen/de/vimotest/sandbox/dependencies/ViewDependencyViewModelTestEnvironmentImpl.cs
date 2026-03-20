@@ -20,7 +20,7 @@ namespace dependencies
             return null;
         }
 
-        public override dependencies.ViewDependencyView getViewDependencyView()
+        public override dependencies.ViewDependencyViewSpy getViewDependencyView()
         {
             return null;
         }

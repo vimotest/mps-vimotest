@@ -13,6 +13,6 @@ namespace dependencies
 
         public abstract dependencies.ViewDependencyViewModel BuildSut();
 
-        public abstract dependencies.ViewDependencyView getViewDependencyView();
+        public abstract dependencies.ViewDependencyViewSpy getViewDependencyView();
     }
 }

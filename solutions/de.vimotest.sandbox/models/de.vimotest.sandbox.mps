@@ -6825,6 +6825,7 @@
     <node concept="103ZXB" id="5cPWD114oDC" role="103ZXF" />
     <node concept="2PDISX" id="5cPWD114oDD" role="2PDvFJ">
       <node concept="jXsxW" id="5cPWD11cezT" role="RSswE">
+        <property role="ft0au" value="true" />
         <node concept="RSsdF" id="5cPWD11obpb" role="RSskJ">
           <property role="TrG5h" value="Refresh" />
         </node>
@@ -6852,6 +6853,13 @@
             <node concept="1WnWvM" id="2L$sa54Qrcc" role="3xMlr6">
               <node concept="1nBS12" id="2L$sa54Qrcp" role="1WnWvN" />
             </node>
+          </node>
+        </node>
+        <node concept="RSsdF" id="3Jc1qihk2V3" role="RSskJ">
+          <property role="TrG5h" value="ShowError" />
+          <node concept="RSs3Z" id="3Jc1qihk2V4" role="RSs6f">
+            <property role="TrG5h" value="errorMessage" />
+            <node concept="1nBS12" id="3Jc1qihk2Vb" role="3xMlr6" />
           </node>
         </node>
       </node>
@@ -6890,6 +6898,25 @@
             <ref role="1DY3GJ" node="2L$sa54Qrai" resolve="_operationResult" />
             <node concept="_iklQ" id="2L$sa55M9ti" role="1DY3GG">
               <property role="_iklR" value="enumvalue" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3LKzX3" id="3Jc1qihk2VH" role="30n1Qb">
+      <property role="TrG5h" value="View Operation Spy" />
+      <node concept="1s$VFG" id="3Jc1qihk2VI" role="1s$QAY">
+        <node concept="DUd2R" id="3Jc1qihk2Wq" role="1s$QAX">
+          <node concept="w2mZS" id="3Jc1qihk2Wp" role="DUiSb">
+            <property role="w2msf" value="1" />
+            <property role="w2ms1" value="1" />
+            <ref role="w2ms5" node="5cPWD11cezT" resolve="ViewDependencyView" />
+            <ref role="w2ms6" node="3Jc1qihk2V3" resolve="ShowError" />
+            <node concept="w2mso" id="3Jc1qihk2XT" role="w2ms7">
+              <ref role="w2mvX" node="3Jc1qihk2V4" resolve="errorMessage" />
+              <node concept="_iklQ" id="3Jc1qihk2XU" role="w2msq">
+                <property role="_iklR" value="Error" />
+              </node>
             </node>
           </node>
         </node>

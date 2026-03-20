@@ -98,5 +98,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)context/ContextReference_ViewModel_ContextReference_ViewTests_OtherSuite_Tests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)context/DataTableContext_ViewModel_DataTableContext_ViewTests_Naming_Tests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)dependencies/LoggerSpy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)dependencies/ViewDependencyViewSpy.cs" />
   </ItemGroup>
 </Project>

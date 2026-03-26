@@ -19,6 +19,7 @@
     <language slang="l:e745d4a0-ccf7-4cb3-8db8-0f77222a00bf:alfi.toCppBaseLanguage" version="0" />
     <language slang="l:0f0152f2-19d3-46ec-9e98-47a1e2ed7e0b:alfi.toCsBaseLanguage" version="0" />
     <language slang="l:d0e1230a-72e3-4b6b-88f2-98d924f7de11:alfi.toJavaBaseLanguage" version="0" />
+    <language slang="l:45198cf2-80c5-4f3a-ba3a-92c8ecda811c:de.vimotest.coverage" version="0" />
     <language slang="l:5e0eeeb3-eed4-4b9b-abeb-23480a03ca33:de.vimotest.generation.preprocessing" version="0" />
     <language slang="l:611ecc9e-0703-4ab9-a13c-fb396c607716:de.vimotest.types" version="0" />
     <language slang="l:ce7915b5-36b4-4478-a67c-f5a8a72ed4a0:de.vimotest.viewmodel" version="2" />

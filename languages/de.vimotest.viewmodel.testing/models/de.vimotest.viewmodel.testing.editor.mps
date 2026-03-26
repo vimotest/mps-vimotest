@@ -810,6 +810,12 @@
         <node concept="VPM3Z" id="5S90xakqYOM" role="3F10Kt" />
       </node>
     </node>
+    <node concept="PMmxH" id="2tg4EP5ss7F" role="6VMZX">
+      <ref role="PMmxG" to="czmc:2tg4EP5gpmW" resolve="IHasTraceabilityLinks_EC" />
+      <node concept="pVoyu" id="2tg4EP5ss7G" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="6fZwY6ifDLY">
     <property role="3GE5qa" value="test.assert" />
@@ -1264,6 +1270,12 @@
         <node concept="3F0ifn" id="1qY9$mvKXhU" role="2fqkNU">
           <property role="3F0ifm" value="ignore" />
           <ref role="1k5W1q" to="dgt9:F907haMqPJ" resolve="ViMoTestKeyWord" />
+        </node>
+      </node>
+      <node concept="PMmxH" id="2tg4EP5srzU" role="3EZMnx">
+        <ref role="PMmxG" to="czmc:2tg4EP5gpmW" resolve="IHasTraceabilityLinks_EC" />
+        <node concept="pVoyu" id="2tg4EP5srzV" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
     </node>

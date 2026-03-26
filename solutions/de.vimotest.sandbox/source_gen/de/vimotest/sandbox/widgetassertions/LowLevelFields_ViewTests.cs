@@ -38,6 +38,22 @@ public class LowLevelFields_ViewTests
 
     /*
 
+    Scenario: Primitive Optional Boolean Asserts
+      given:
+       when:
+       then: MyOptBool is false and MyOptBool is true and MyOptBool is null
+   */
+    [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod]
+    public void Primitive_Optional_Boolean_Asserts_given_when_then_MyOptBool_is_false_and_MyOptBool_is_true_and_MyOptBool_is_null()
+    {
+        this.BuildSut();
+        this.then_MyOptBool_is_false();
+        this.then_MyOptBool_is_true();
+        this.then_MyOptBool_is_null();
+    }
+
+    /*
+
     Scenario: Primitive List Field Asserts
       given:
        when:
@@ -100,6 +116,24 @@ public class LowLevelFields_ViewTests
     public virtual void then_MyString_is_text_()
     {
         Assert.AreEqual("text", this.sut.getMyString(), "Expected field 'MyString' has value <" + "text" + ">, but it was <" + this.sut.getMyString() + ">");
+    }
+
+    public virtual void then_MyOptBool_is_false()
+    {
+        string actualMyOptBoolValue = (this.sut.getMyOptBool() == null) ? "null" : ((this.sut.getMyOptBool() == true) ? "true" : "false");
+        Assert.AreEqual("false", actualMyOptBoolValue, "Expected field 'MyOptBool' has optional boolean value <false>, but it was <" + actualMyOptBoolValue + ">");
+    }
+
+    public virtual void then_MyOptBool_is_true()
+    {
+        string actualMyOptBoolValue = (this.sut.getMyOptBool() == null) ? "null" : ((this.sut.getMyOptBool() == true) ? "true" : "false");
+        Assert.AreEqual("true", actualMyOptBoolValue, "Expected field 'MyOptBool' has optional boolean value <true>, but it was <" + actualMyOptBoolValue + ">");
+    }
+
+    public virtual void then_MyOptBool_is_null()
+    {
+        string actualMyOptBoolValue = (this.sut.getMyOptBool() == null) ? "null" : ((this.sut.getMyOptBool() == true) ? "true" : "false");
+        Assert.AreEqual("null", actualMyOptBoolValue, "Expected field 'MyOptBool' has optional boolean value <null>, but it was <" + actualMyOptBoolValue + ">");
     }
 
     public virtual void then_MyStrings_is_todo_listpattern()

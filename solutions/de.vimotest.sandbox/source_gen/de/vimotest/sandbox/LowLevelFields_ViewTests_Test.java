@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewModelTestEnvironmentImpl;
 import org.junit.Assert;
+import java.util.Objects;
 import java.util.List;
 import de.vimotest.sandbox.widgetassertions.MyAdditions;
 import de.vimotest.sandbox.widgetassertions.LowLevelFields_ViewModelCustomTableRowFieldRow;
@@ -23,6 +24,13 @@ public class LowLevelFields_ViewTests_Test {
     this.then_MyBool_is_true();
     this.then_MyInt_is_42();
     this.then_MyString_is_text_();
+  }
+  @Test
+  public void test_Primitive_Optional_Boolean_Asserts_given_when_then_MyOptBool_is_false_and_MyOptBool_is_true_and_MyOptBool_is_null() throws Exception {
+    this.BuildSut();
+    this.then_MyOptBool_is_false();
+    this.then_MyOptBool_is_true();
+    this.then_MyOptBool_is_null();
   }
   @Test
   public void test_Primitive_List_Field_Asserts_given_when_then_MyStrings_is_todo_listpattern() throws Exception {
@@ -65,6 +73,18 @@ public class LowLevelFields_ViewTests_Test {
   }
   public void then_MyString_is_text_() {
     Assert.assertEquals("Expected field 'MyString' has value <" + "text" + ">, but it was <" + this.sut.getMyString() + ">", "text", this.sut.getMyString());
+  }
+  public void then_MyOptBool_is_false() {
+    String actualMyOptBoolValue = ((Objects.equals(this.sut.getMyOptBool(), null)) ? "null" : (((Objects.equals(this.sut.getMyOptBool(), true)) ? "true" : "false")));
+    Assert.assertEquals("Expected field 'MyOptBool' has optional boolean value <false>, but it was <" + actualMyOptBoolValue + ">", "false", actualMyOptBoolValue);
+  }
+  public void then_MyOptBool_is_true() {
+    String actualMyOptBoolValue = ((Objects.equals(this.sut.getMyOptBool(), null)) ? "null" : (((Objects.equals(this.sut.getMyOptBool(), true)) ? "true" : "false")));
+    Assert.assertEquals("Expected field 'MyOptBool' has optional boolean value <true>, but it was <" + actualMyOptBoolValue + ">", "true", actualMyOptBoolValue);
+  }
+  public void then_MyOptBool_is_null() {
+    String actualMyOptBoolValue = ((Objects.equals(this.sut.getMyOptBool(), null)) ? "null" : (((Objects.equals(this.sut.getMyOptBool(), true)) ? "true" : "false")));
+    Assert.assertEquals("Expected field 'MyOptBool' has optional boolean value <null>, but it was <" + actualMyOptBoolValue + ">", "null", actualMyOptBoolValue);
   }
   public void then_MyStrings_is_todo_listpattern() {
     List<String> actualList = this.sut.getMyStrings();

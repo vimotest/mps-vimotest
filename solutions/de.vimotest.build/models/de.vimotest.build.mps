@@ -290,7 +290,7 @@
       </node>
       <node concept="3_J27D" id="220dcIkyAjd" role="m$_w8">
         <node concept="3Mxwew" id="220dcIkyAje" role="3MwsjC">
-          <property role="3MwjfP" value="2025.3.2-SNAPSHOT" />
+          <property role="3MwjfP" value="2025.3.2" />
         </node>
       </node>
       <node concept="m$f5U" id="220dcIkyAjf" role="m$_yh">
@@ -616,6 +616,63 @@
         <node concept="1SiIV0" id="7y9Sd3jj7I6" role="3bR37C">
           <node concept="3bR9La" id="7y9Sd3jj7I7" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="3B$45SP7ING" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="de.vimotest.coverage" />
+        <property role="3LESm3" value="45198cf2-80c5-4f3a-ba3a-92c8ecda811c" />
+        <node concept="55IIr" id="3B$45SP7INJ" role="3LF7KH">
+          <node concept="2Ry0Ak" id="3B$45SP7INM" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="3B$45SP7INP" role="2Ry0An">
+              <property role="2Ry0Am" value="de.vimotest.coverage" />
+              <node concept="2Ry0Ak" id="3B$45SP7INS" role="2Ry0An">
+                <property role="2Ry0Am" value="de.vimotest.coverage.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3B$45SP7IOb" role="3bR37C">
+          <node concept="3bR9La" id="3B$45SP7IOc" role="1SiIV1">
+            <ref role="3bR37D" node="JW9DBRQiDv" resolve="de.vimotest.viewmodel.testing" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3B$45SP7IOd" role="3bR37C">
+          <node concept="3bR9La" id="3B$45SP7IOe" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3B$45SP7IOf" role="3bR37C">
+          <node concept="3bR9La" id="3B$45SP7IOg" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:rD7wKO6k$" resolve="MPS.Generator" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3B$45SP7IOh" role="3bR37C">
+          <node concept="3bR9La" id="3B$45SP7IOi" role="1SiIV1">
+            <ref role="3bR37D" node="220dcIkyAiE" resolve="de.vimotest.viewmodel" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="3B$45SP7IOn" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="3B$45SP7IOo" role="1HemKq">
+            <node concept="55IIr" id="3B$45SP7IOj" role="3LXTmr">
+              <node concept="2Ry0Ak" id="3B$45SP7IOk" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3B$45SP7IOl" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.vimotest.coverage" />
+                  <node concept="2Ry0Ak" id="3B$45SP7IOm" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3B$45SP7IOp" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
           </node>
         </node>
       </node>
@@ -1269,6 +1326,9 @@
         </node>
         <node concept="3LEDTy" id="7y9Sd3jE6hI" role="3LEDUa">
           <ref role="3LEDTV" node="7y9Sd3jj7HN" resolve="de.vimotest.generation.preprocessing" />
+        </node>
+        <node concept="3LEDTy" id="3B$45SP7IQk" role="3LEDUa">
+          <ref role="3LEDTV" node="3B$45SP7ING" resolve="de.vimotest.coverage" />
         </node>
       </node>
       <node concept="3LEwk6" id="1tBFrJnfDUg" role="2G$12L">

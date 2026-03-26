@@ -1,5 +1,6 @@
 #pragma once
 
+#include <optional>
 #include <vector>
 #include "MyAdditions.h"
 #include <memory>
@@ -16,6 +17,7 @@ namespace widgetassertions
     virtual bool getMyBool();
     virtual int getMyInt();
     virtual std::string getMyString();
+    virtual std::optional<bool> getMyOptBool();
     virtual std::vector<std::string> getMyStrings();
     virtual MyAdditions getMyFieldAdditions();
     virtual std::vector<MyAdditions> getMyFieldAdditionsList();
@@ -26,6 +28,7 @@ namespace widgetassertions
     bool MyBool;
     int MyInt;
     std::string MyString;
+    std::optional<bool> MyOptBool;
     std::vector<std::string> MyStrings;
     MyAdditions MyFieldAdditions;
     std::vector<MyAdditions> MyFieldAdditionsList;

@@ -4974,7 +4974,7 @@
               <ref role="1YBMHb" node="6TFgjK3qg8$" resolve="comboBoxCheck" />
             </node>
             <node concept="2qgKlT" id="6TFgjK3qgxD" role="2OqNvi">
-              <ref role="37wK5l" to="fwln:6TFgjK2cfun" resolve="hasFixedChoices" />
+              <ref role="37wK5l" to="fwln:6TFgjK2cfun" resolve="isFixedEnumeration" />
             </node>
           </node>
         </node>

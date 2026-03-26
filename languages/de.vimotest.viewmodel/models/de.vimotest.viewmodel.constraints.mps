@@ -111,6 +111,7 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
@@ -2010,6 +2011,86 @@
         <node concept="3clFbF" id="10wtdZPqjOC" role="3cqZAp">
           <node concept="3clFbT" id="10wtdZPqjOB" role="3clFbG">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2tg4EP5IQFr">
+    <property role="3GE5qa" value="core.traceability" />
+    <ref role="1M2myG" to="at53:2tg4EP5gpmP" resolve="TraceabilityLink" />
+    <node concept="EnEH3" id="2tg4EP5IQFs" role="1MhHOB">
+      <ref role="EomxK" to="at53:2tg4EP5IQFq" resolve="requirementUrl" />
+      <node concept="Eqf_E" id="2tg4EP5IQHL" role="EtsB7">
+        <node concept="3clFbS" id="2tg4EP5IQHM" role="2VODD2">
+          <node concept="3cpWs8" id="2tg4EP5IVI1" role="3cqZAp">
+            <node concept="3cpWsn" id="2tg4EP5IVI2" role="3cpWs9">
+              <property role="TrG5h" value="projectConfig" />
+              <node concept="3Tqbb2" id="2tg4EP5IVDi" role="1tU5fm">
+                <ref role="ehGHo" to="at53:2tg4EP5gpYv" resolve="ProjectConfig" />
+              </node>
+              <node concept="2OqwBi" id="2tg4EP5IVI3" role="33vP2m">
+                <node concept="EsrRn" id="2tg4EP5IVI4" role="2Oq$k0" />
+                <node concept="2qgKlT" id="2tg4EP5IVI5" role="2OqNvi">
+                  <ref role="37wK5l" to="nrs2:2tg4EP5IRPc" resolve="getProjectConfig" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="2tg4EP5IQSV" role="3cqZAp">
+            <node concept="3clFbS" id="2tg4EP5IQSX" role="3clFbx">
+              <node concept="3cpWs6" id="2tg4EP5IXnv" role="3cqZAp">
+                <node concept="2OqwBi" id="2tg4EP5hhf0" role="3cqZAk">
+                  <node concept="2OqwBi" id="2tg4EP5hgDJ" role="2Oq$k0">
+                    <node concept="37vLTw" id="2tg4EP5IXl1" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2tg4EP5IVI2" resolve="projectConfig" />
+                    </node>
+                    <node concept="3TrcHB" id="2tg4EP5hgNz" role="2OqNvi">
+                      <ref role="3TsBF5" to="at53:2tg4EP5gpYy" resolve="issueTrackerUrlPattern" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="2tg4EP5hhMz" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
+                    <node concept="Xl_RD" id="2tg4EP5hhNN" role="37wK5m">
+                      <property role="Xl_RC" value="\\$requirementId" />
+                    </node>
+                    <node concept="2OqwBi" id="2tg4EP5hinx" role="37wK5m">
+                      <node concept="EsrRn" id="2tg4EP5IXvO" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="2tg4EP5hiy3" role="2OqNvi">
+                        <ref role="3TsBF5" to="at53:2tg4EP5gpmQ" resolve="requirementId" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1Wc70l" id="2tg4EP5hjqY" role="3clFbw">
+              <node concept="2OqwBi" id="2tg4EP5gPu5" role="3uHU7B">
+                <node concept="2OqwBi" id="2tg4EP5gOL1" role="2Oq$k0">
+                  <node concept="3TrcHB" id="2tg4EP5gOXb" role="2OqNvi">
+                    <ref role="3TsBF5" to="at53:2tg4EP5gpYy" resolve="issueTrackerUrlPattern" />
+                  </node>
+                  <node concept="37vLTw" id="2tg4EP5IXga" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2tg4EP5IVI2" resolve="projectConfig" />
+                  </node>
+                </node>
+                <node concept="17RvpY" id="2tg4EP5gQ2Q" role="2OqNvi" />
+              </node>
+              <node concept="2OqwBi" id="2tg4EP5hkxe" role="3uHU7w">
+                <node concept="2OqwBi" id="2tg4EP5hjAK" role="2Oq$k0">
+                  <node concept="EsrRn" id="2tg4EP5IXi$" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="2tg4EP5hjAM" role="2OqNvi">
+                    <ref role="3TsBF5" to="at53:2tg4EP5gpmQ" resolve="requirementId" />
+                  </node>
+                </node>
+                <node concept="17RvpY" id="2tg4EP5hkXg" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="2tg4EP5IQPx" role="3cqZAp">
+            <node concept="Xl_RD" id="2tg4EP5IQPw" role="3clFbG">
+              <property role="Xl_RC" value="" />
+            </node>
           </node>
         </node>
       </node>

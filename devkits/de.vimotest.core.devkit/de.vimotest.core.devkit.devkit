@@ -4,6 +4,7 @@
   <exported-language name="716e8717-88c0-4280-8c16-b4d88567596f(de.vimotest.viewmodel.testing)" />
   <exported-language name="611ecc9e-0703-4ab9-a13c-fb396c607716(de.vimotest.types)" />
   <exported-language name="5e0eeeb3-eed4-4b9b-abeb-23480a03ca33(de.vimotest.generation.preprocessing)" />
+  <exported-language name="45198cf2-80c5-4f3a-ba3a-92c8ecda811c(de.vimotest.coverage)" />
   <exported-solutions>
     <exported-solution>b28932ae-6b0e-4f97-ad77-84f278001d91(de.vimotest.genplan)</exported-solution>
   </exported-solutions>

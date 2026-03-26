@@ -1728,7 +1728,7 @@
   </node>
   <node concept="312cEu" id="5Po0rqd_MvI">
     <property role="3GE5qa" value="analyser" />
-    <property role="TrG5h" value="SemanticStatementCountAnalyser" />
+    <property role="TrG5h" value="VisualLinesOfCodeAnalyser" />
     <node concept="Wx3nA" id="5Po0rqdJRzG" role="jymVt">
       <property role="TrG5h" value="TEST_SUITE_COUNT" />
       <node concept="3Tm6S6" id="5Po0rqdJRzH" role="1B3o_S" />
@@ -1747,7 +1747,7 @@
     </node>
     <node concept="2tJIrI" id="5Po0rqdJIXO" role="jymVt" />
     <node concept="2YIFZL" id="5Po0rqdJI1x" role="jymVt">
-      <property role="TrG5h" value="calculateSemanticStatementCountForSuite" />
+      <property role="TrG5h" value="calculateVisibleLinesOfCodeForSuite" />
       <node concept="37vLTG" id="5Po0rqdJJzM" role="3clF46">
         <property role="TrG5h" value="suite" />
         <node concept="3Tqbb2" id="5Po0rqdJJzN" role="1tU5fm">
@@ -1798,7 +1798,7 @@
                           <ref role="3cqZAo" node="5Po0rqdK5oq" resolve="s" />
                         </node>
                         <node concept="1rXfSq" id="5Po0rqdK94s" role="3uHU7w">
-                          <ref role="37wK5l" node="5Po0rqd_QVq" resolve="calculateSemanticStatementCount" />
+                          <ref role="37wK5l" node="5Po0rqd_QVq" resolve="calculateVisibleLinesOfCode" />
                           <node concept="37vLTw" id="5Po0rqdK94t" role="37wK5m">
                             <ref role="3cqZAo" node="5Po0rqdK5os" resolve="it" />
                           </node>
@@ -1833,7 +1833,7 @@
     </node>
     <node concept="2tJIrI" id="5Po0rqdJJfG" role="jymVt" />
     <node concept="2YIFZL" id="5Po0rqd_QVq" role="jymVt">
-      <property role="TrG5h" value="calculateSemanticStatementCount" />
+      <property role="TrG5h" value="calculateVisibleLinesOfCode" />
       <node concept="3clFbS" id="5Po0rqd_QVt" role="3clF47">
         <node concept="3cpWs8" id="5Po0rqd_Rk7" role="3cqZAp">
           <node concept="3cpWsn" id="5Po0rqd_Rka" role="3cpWs9">
@@ -2173,16 +2173,19 @@
           <property role="3oM_SC" value="the" />
         </node>
         <node concept="3oM_SD" id="5Po0rqdMtQh" role="1PaTwD">
-          <property role="3oM_SC" value="Semantic" />
+          <property role="3oM_SC" value="Visible" />
         </node>
-        <node concept="3oM_SD" id="5Po0rqdMtQi" role="1PaTwD">
-          <property role="3oM_SC" value="Statement" />
+        <node concept="3oM_SD" id="4y1jlf7SE9$" role="1PaTwD">
+          <property role="3oM_SC" value="Lines" />
         </node>
-        <node concept="3oM_SD" id="5Po0rqdMtQj" role="1PaTwD">
-          <property role="3oM_SC" value="Count" />
+        <node concept="3oM_SD" id="4y1jlf7SE9_" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="4y1jlf7SE9B" role="1PaTwD">
+          <property role="3oM_SC" value="Code" />
         </node>
         <node concept="3oM_SD" id="5Po0rqdMtQk" role="1PaTwD">
-          <property role="3oM_SC" value="(SSC)" />
+          <property role="3oM_SC" value="(VLLC)" />
         </node>
         <node concept="3oM_SD" id="5Po0rqdMtQl" role="1PaTwD">
           <property role="3oM_SC" value="for" />
@@ -2246,14 +2249,8 @@
         <node concept="3oM_SD" id="5Po0rqdMuWX" role="1PaTwD">
           <property role="3oM_SC" value="to" />
         </node>
-        <node concept="3oM_SD" id="5Po0rqdMtPD" role="1PaTwD">
+        <node concept="3oM_SD" id="4y1jlf7SE9D" role="1PaTwD">
           <property role="3oM_SC" value="enable" />
-        </node>
-        <node concept="3oM_SD" id="5Po0rqdMtPE" role="1PaTwD">
-          <property role="3oM_SC" value="a" />
-        </node>
-        <node concept="3oM_SD" id="5Po0rqdMtPF" role="1PaTwD">
-          <property role="3oM_SC" value="fair," />
         </node>
         <node concept="3oM_SD" id="5Po0rqdMtPG" role="1PaTwD">
           <property role="3oM_SC" value="structural" />
@@ -2317,6 +2314,9 @@
         </node>
         <node concept="3oM_SD" id="5Po0rqdMtPS" role="1PaTwD">
           <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="4y1jlf7SE9E" role="1PaTwD">
+          <property role="3oM_SC" value="visible," />
         </node>
         <node concept="3oM_SD" id="5Po0rqdMtPT" role="1PaTwD">
           <property role="3oM_SC" value="logical" />

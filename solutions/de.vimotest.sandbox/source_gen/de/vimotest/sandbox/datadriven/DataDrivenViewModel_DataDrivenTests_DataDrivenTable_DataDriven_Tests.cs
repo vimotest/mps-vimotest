@@ -2,6 +2,7 @@
 ///     DataDrivenViewModel_DataDrivenTests_DataDrivenTable_DataDriven_Tests.cs
 /// </filename>
 using datadriven;
+using context;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using System;

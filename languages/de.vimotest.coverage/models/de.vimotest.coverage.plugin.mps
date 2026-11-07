@@ -66,6 +66,9 @@
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
     </language>
@@ -258,7 +261,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -1441,7 +1443,7 @@
                 <node concept="37vLTw" id="3B$45SOP3L1" role="2Oq$k0">
                   <ref role="3cqZAo" node="3B$45SOOBoQ" resolve="viewModel" />
                 </node>
-                <node concept="2qgKlT" id="3B$45SOP3L2" role="2OqNvi">
+                <node concept="3zqWPK" id="726f6VabTNW" role="2OqNvi">
                   <ref role="37wK5l" to="nrs2:3CJ09vZDbLB" resolve="getLinkedTests" />
                 </node>
               </node>
@@ -1499,7 +1501,7 @@
                           <node concept="37vLTw" id="3B$45SP62NC" role="2Oq$k0">
                             <ref role="3cqZAo" node="3B$45SOPbYG" resolve="it" />
                           </node>
-                          <node concept="2qgKlT" id="3B$45SP62ND" role="2OqNvi">
+                          <node concept="3zqWPK" id="726f6VabTNY" role="2OqNvi">
                             <ref role="37wK5l" to="fwln:3B$45SOPgUU" resolve="getFeatureToCheck" />
                           </node>
                         </node>
@@ -1596,7 +1598,7 @@
                           <node concept="37vLTw" id="3B$45SP645a" role="2Oq$k0">
                             <ref role="3cqZAo" node="3B$45SP2Q1C" resolve="it" />
                           </node>
-                          <node concept="2qgKlT" id="3B$45SP645b" role="2OqNvi">
+                          <node concept="3zqWPK" id="726f6VabTO0" role="2OqNvi">
                             <ref role="37wK5l" to="fwln:7T8HsuTTjmT" resolve="getCommand" />
                           </node>
                         </node>
@@ -2125,7 +2127,7 @@
             <node concept="37vLTw" id="5Po0rqdBh5N" role="2Oq$k0">
               <ref role="3cqZAo" node="5Po0rqdAOEV" resolve="context" />
             </node>
-            <node concept="2qgKlT" id="5Po0rqdBiNR" role="2OqNvi">
+            <node concept="3zqWPK" id="726f6VabTO2" role="2OqNvi">
               <ref role="37wK5l" to="fwln:5Po0rqdBgj7" resolve="getSemanticStatementCount" />
             </node>
           </node>
@@ -2148,7 +2150,7 @@
             <node concept="37vLTw" id="5Po0rqdBjML" role="2Oq$k0">
               <ref role="3cqZAo" node="5Po0rqdABKI" resolve="assertion" />
             </node>
-            <node concept="2qgKlT" id="5Po0rqdBlMX" role="2OqNvi">
+            <node concept="3zqWPK" id="726f6VabTO4" role="2OqNvi">
               <ref role="37wK5l" to="fwln:5Po0rqdBjuU" resolve="getSemanticStatementCount" />
             </node>
           </node>

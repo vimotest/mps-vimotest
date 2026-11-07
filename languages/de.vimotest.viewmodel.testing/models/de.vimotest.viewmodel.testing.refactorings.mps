@@ -17,6 +17,9 @@
     <import index="nrs2" ref="r:59f8d22f-5d8e-44d0-8b84-0508cea46b95(de.vimotest.viewmodel.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
@@ -143,7 +146,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
@@ -384,7 +386,7 @@
                                   <ref role="3Tt5mk" to="53m0:6RKU0s7_yzh" resolve="columnDefinition" />
                                 </node>
                               </node>
-                              <node concept="2qgKlT" id="4Bfut2qK5zd" role="2OqNvi">
+                              <node concept="3zqWPK" id="726f6VabU8O" role="2OqNvi">
                                 <ref role="37wK5l" to="nrs2:q9OOkGQoXY" resolve="getColumnWidgetType" />
                               </node>
                             </node>
@@ -421,7 +423,7 @@
                                             <node concept="37vLTw" id="4Bfut2qKOzW" role="2Oq$k0">
                                               <ref role="3cqZAo" node="4Bfut2qKOmj" resolve="it" />
                                             </node>
-                                            <node concept="2qgKlT" id="4Bfut2qKOzX" role="2OqNvi">
+                                            <node concept="3zqWPK" id="726f6VabU8Q" role="2OqNvi">
                                               <ref role="37wK5l" to="fwln:bZSVZcRcQe" resolve="determineWidgetToCheck" />
                                             </node>
                                           </node>
@@ -491,7 +493,7 @@
                                           <node concept="37vLTw" id="4Bfut2qL5bn" role="2Oq$k0">
                                             <ref role="3cqZAo" node="4Bfut2qL54M" resolve="it" />
                                           </node>
-                                          <node concept="2qgKlT" id="4Bfut2qL6cG" role="2OqNvi">
+                                          <node concept="3zqWPK" id="726f6VabU8S" role="2OqNvi">
                                             <ref role="37wK5l" to="fwln:4jKdMMdJYzD" resolve="getWidgetToCheck" />
                                           </node>
                                         </node>
@@ -566,7 +568,7 @@
                                           <node concept="37vLTw" id="4Bfut2qLoo_" role="2Oq$k0">
                                             <ref role="3cqZAo" node="4Bfut2qLooE" resolve="it" />
                                           </node>
-                                          <node concept="2qgKlT" id="4Bfut2qLooA" role="2OqNvi">
+                                          <node concept="3zqWPK" id="726f6VabU8U" role="2OqNvi">
                                             <ref role="37wK5l" to="fwln:4jKdMMdJYzD" resolve="getWidgetToCheck" />
                                           </node>
                                         </node>

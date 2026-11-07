@@ -27,6 +27,9 @@
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
       <concept id="1194033889146" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1XNTG" />
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -209,7 +212,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7236635212850979475" name="jetbrains.mps.lang.smodel.structure.Node_HasNextSiblingOperation" flags="nn" index="rvlfL" />
       <concept id="8432949284911505116" name="jetbrains.mps.lang.smodel.structure.Node_HasPrevSiblingOperation" flags="nn" index="2t3KhH" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
@@ -401,7 +403,7 @@
                     <node concept="37vLTw" id="4TqlykxdXrE" role="2Oq$k0">
                       <ref role="3cqZAo" node="4TqlykxdQyG" resolve="viewModel" />
                     </node>
-                    <node concept="2qgKlT" id="4TqlykxdXEL" role="2OqNvi">
+                    <node concept="3zqWPK" id="726f6VabU8A" role="2OqNvi">
                       <ref role="37wK5l" to="nrs2:3CJ09vZDbLB" resolve="getLinkedTests" />
                     </node>
                   </node>
@@ -418,7 +420,7 @@
               <node concept="37vLTw" id="4TqlykxdRBj" role="2Oq$k0">
                 <ref role="3cqZAo" node="4TqlykxdQyG" resolve="viewModel" />
               </node>
-              <node concept="2qgKlT" id="4TqlykxdTRt" role="2OqNvi">
+              <node concept="3zqWPK" id="726f6VabU8C" role="2OqNvi">
                 <ref role="37wK5l" to="nrs2:3CJ09vZDbLB" resolve="getLinkedTests" />
               </node>
             </node>
@@ -767,7 +769,7 @@
               <node concept="2OqwBi" id="6RKU0s7YB55" role="3uHU7w">
                 <node concept="2OqwBi" id="6RKU0s7Y_V1" role="2Oq$k0">
                   <node concept="2Sf5sV" id="6RKU0s7Y_LN" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="6RKU0s7YA6X" role="2OqNvi">
+                  <node concept="3zqWPK" id="726f6VabU8E" role="2OqNvi">
                     <ref role="37wK5l" to="fwln:7QMGS97JVnb" resolve="getWidget" />
                   </node>
                 </node>
@@ -1334,7 +1336,7 @@
                       <node concept="2OqwBi" id="12mSCTf2hDk" role="1y566C">
                         <node concept="2OqwBi" id="12mSCTf2fFf" role="2Oq$k0">
                           <node concept="2Sf5sV" id="12mSCTf2fFg" role="2Oq$k0" />
-                          <node concept="2qgKlT" id="5iuj9z7Q7ZA" role="2OqNvi">
+                          <node concept="3zqWPK" id="726f6VabU8G" role="2OqNvi">
                             <ref role="37wK5l" to="fwln:5iuj9z7PVFt" resolve="getHeadersRow" />
                           </node>
                         </node>
@@ -2385,7 +2387,7 @@
                 <node concept="37vLTw" id="yum1wjJhhk" role="2Oq$k0">
                   <ref role="3cqZAo" node="yum1wjJhhe" resolve="parentSuite" />
                 </node>
-                <node concept="2qgKlT" id="yum1wjI_bk" role="2OqNvi">
+                <node concept="3zqWPK" id="726f6VabU8I" role="2OqNvi">
                   <ref role="37wK5l" to="fwln:P0m5w1mq03" resolve="getTestSuitesOfSameViewModel" />
                 </node>
               </node>

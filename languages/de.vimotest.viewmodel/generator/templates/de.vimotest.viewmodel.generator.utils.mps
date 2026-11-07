@@ -14,6 +14,9 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
@@ -108,7 +111,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -346,7 +348,7 @@
               <node concept="37vLTw" id="5TPpQj7_jZu" role="2Oq$k0">
                 <ref role="3cqZAo" node="2evlxT94RVJ" resolve="command" />
               </node>
-              <node concept="2qgKlT" id="5TPpQj7_jZv" role="2OqNvi">
+              <node concept="3zqWPK" id="726f6VabTVD" role="2OqNvi">
                 <ref role="37wK5l" to="nrs2:1F_Q10zSZF3" resolve="getWidget" />
               </node>
             </node>
@@ -373,7 +375,7 @@
                 <node concept="37vLTw" id="5jkMFwuFl9r" role="2Oq$k0">
                   <ref role="3cqZAo" node="2evlxT94RVJ" resolve="command" />
                 </node>
-                <node concept="2qgKlT" id="5jkMFwuFm4C" role="2OqNvi">
+                <node concept="3zqWPK" id="726f6VabTVF" role="2OqNvi">
                   <ref role="37wK5l" to="nrs2:5jkMFwuFk23" resolve="getCommandOperationName" />
                 </node>
               </node>
@@ -605,7 +607,7 @@
               <node concept="37vLTw" id="rrd72s8Urg" role="2Oq$k0">
                 <ref role="3cqZAo" node="1mmsj6y4Lwi" resolve="viewWidget" />
               </node>
-              <node concept="2qgKlT" id="rrd72s8Urh" role="2OqNvi">
+              <node concept="3zqWPK" id="726f6VabTVH" role="2OqNvi">
                 <ref role="37wK5l" to="nrs2:1mmsj6xYUQM" resolve="getWidgetTypeNameSuffix" />
               </node>
             </node>
@@ -719,7 +721,7 @@
                 <node concept="Jnkvi" id="4PSlizivIJb" role="2Oq$k0">
                   <ref role="1M0zk5" node="4PSliziqTxb" resolve="subComponentViewWidget" />
                 </node>
-                <node concept="2qgKlT" id="4PSlizivK0$" role="2OqNvi">
+                <node concept="3zqWPK" id="726f6VabTVJ" role="2OqNvi">
                   <ref role="37wK5l" to="nrs2:4PSlizivFib" resolve="shouldPrefixParentWidgetNameForGeneration" />
                 </node>
               </node>
@@ -840,7 +842,7 @@
                 <node concept="37vLTw" id="4CJYu49mO6B" role="2Oq$k0">
                   <ref role="3cqZAo" node="2evlxT94TDh" resolve="feature" />
                 </node>
-                <node concept="2qgKlT" id="1mmsj6yLIKm" role="2OqNvi">
+                <node concept="3zqWPK" id="726f6VabTVL" role="2OqNvi">
                   <ref role="37wK5l" to="nrs2:1mmsj6yLGOp" resolve="getFeatureBaseName" />
                 </node>
               </node>
@@ -848,7 +850,7 @@
                 <node concept="37vLTw" id="4CJYu49mO6F" role="2Oq$k0">
                   <ref role="3cqZAo" node="2evlxT94TDh" resolve="feature" />
                 </node>
-                <node concept="2qgKlT" id="4CJYu49mO6G" role="2OqNvi">
+                <node concept="3zqWPK" id="726f6VabTVN" role="2OqNvi">
                   <ref role="37wK5l" to="nrs2:7nrre2bAr$N" resolve="isBooleanFeature" />
                 </node>
               </node>
@@ -1017,7 +1019,7 @@
                     <node concept="37vLTw" id="1mmsj6y5edJ" role="2Oq$k0">
                       <ref role="3cqZAo" node="5veytyjPqJD" resolve="feature" />
                     </node>
-                    <node concept="2qgKlT" id="1mmsj6y5eR5" role="2OqNvi">
+                    <node concept="3zqWPK" id="726f6VabTVP" role="2OqNvi">
                       <ref role="37wK5l" to="nrs2:26p1ZniI$M3" resolve="getWidget" />
                     </node>
                   </node>
@@ -1029,7 +1031,7 @@
             <node concept="37vLTw" id="1mmsj6y55Bn" role="2Oq$k0">
               <ref role="3cqZAo" node="5veytyjPqJD" resolve="feature" />
             </node>
-            <node concept="2qgKlT" id="1mmsj6y56rL" role="2OqNvi">
+            <node concept="3zqWPK" id="726f6VabTVR" role="2OqNvi">
               <ref role="37wK5l" to="nrs2:26p1ZniIAOm" resolve="needsWidgetPrefix" />
             </node>
           </node>
@@ -1044,7 +1046,7 @@
               <node concept="37vLTw" id="5veytyjRgtY" role="2Oq$k0">
                 <ref role="3cqZAo" node="5veytyjPqJD" resolve="feature" />
               </node>
-              <node concept="2qgKlT" id="26p1ZniI4bg" role="2OqNvi">
+              <node concept="3zqWPK" id="726f6VabTVT" role="2OqNvi">
                 <ref role="37wK5l" to="nrs2:26p1ZniHXI3" resolve="getPropertyBaseName" />
               </node>
             </node>
@@ -1052,7 +1054,7 @@
               <node concept="37vLTw" id="5veytyjPqJ_" role="2Oq$k0">
                 <ref role="3cqZAo" node="5veytyjPqJD" resolve="feature" />
               </node>
-              <node concept="2qgKlT" id="5veytyjPqJA" role="2OqNvi">
+              <node concept="3zqWPK" id="726f6VabTVV" role="2OqNvi">
                 <ref role="37wK5l" to="nrs2:5veytyjPRZR" resolve="isBooleanFeature" />
               </node>
             </node>
@@ -1607,7 +1609,7 @@
               <node concept="37vLTw" id="5veytyjJX_o" role="2Oq$k0">
                 <ref role="3cqZAo" node="247DgsTslfi" resolve="node" />
               </node>
-              <node concept="2qgKlT" id="5veytyjJX_p" role="2OqNvi">
+              <node concept="3zqWPK" id="726f6VabTVX" role="2OqNvi">
                 <ref role="37wK5l" to="nrs2:2w4bAIFM8vc" resolve="getRowBasedFeature" />
               </node>
             </node>

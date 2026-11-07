@@ -24,6 +24,9 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
@@ -129,7 +132,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -263,7 +265,7 @@
               </node>
               <node concept="nLn13" id="2N4oO4qvnSo" role="1m5AlR" />
             </node>
-            <node concept="2qgKlT" id="2N4oO4qvnSp" role="2OqNvi">
+            <node concept="3zqWPK" id="726f6VabTOI" role="2OqNvi">
               <ref role="37wK5l" to="45v0:2N4oO4qvn9C" resolve="isCustomFileNameSupported" />
             </node>
           </node>
@@ -285,7 +287,7 @@
               </node>
               <node concept="nLn13" id="5jkMFw_KPtN" role="1m5AlR" />
             </node>
-            <node concept="2qgKlT" id="5jkMFw_KQIS" role="2OqNvi">
+            <node concept="3zqWPK" id="726f6VabTOK" role="2OqNvi">
               <ref role="37wK5l" to="45v0:5jkMFw_KLIp" resolve="isCustomTypeNameSupported" />
             </node>
           </node>
@@ -319,7 +321,7 @@
                           <node concept="37vLTw" id="4p8dieZeXpC" role="2Oq$k0">
                             <ref role="3cqZAo" node="4p8dieZeXhi" resolve="it" />
                           </node>
-                          <node concept="2qgKlT" id="4p8dieZeYih" role="2OqNvi">
+                          <node concept="3zqWPK" id="726f6VabTOM" role="2OqNvi">
                             <ref role="37wK5l" to="45v0:4p8dieZeYFQ" resolve="isStringField" />
                           </node>
                         </node>
